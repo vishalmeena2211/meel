@@ -371,6 +371,16 @@ button { font: inherit; color: inherit; }
 .seats i.on { background: var(--sign); border-color: var(--sign); }
 .seats .hint { margin-left: 6px; }
 
+
+/* Pictures and credit */
+.hero { height: 190px; flex: none; position: relative; display: flex; align-items: flex-end; background:
+  linear-gradient(180deg, color-mix(in srgb, var(--ink) 0%, transparent) 45%, color-mix(in srgb, var(--ink) 70%, transparent)),
+  linear-gradient(160deg, #9DB7C9 0%, #C9D6DC 38%, #8C8377 39%, #6E665C 62%, #4E5A48 63%, #39432F 100%); }
+.hero-cap { color: var(--surface); font: 600 15px/1.2 var(--display); letter-spacing: 0.04em; padding: 10px 12px; }
+.credit-line { font-size: 11.5px; line-height: 16px; color: var(--ink-2); padding: 5px 12px; border-bottom: 1px solid var(--border); flex: none; }
+.input.err { border-color: var(--stale-fg); }
+.hint.err { color: var(--stale-fg); font-weight: 500; }
+
 /* Data sheet (last screen) */
 .sheet-card { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; overflow: hidden; }
 .scroll-x { overflow-x: auto; }
@@ -1614,6 +1624,93 @@ Name: Rahul N.</span><span class="send">${ICON.send}</span></div>
       ['Data', ['Per account: name, email, scrambled password, home city, bike, date joined.', 'Per request: trip, rider, note, answer, dates.', 'Kept on the site’s own server. Not given to anyone.']],
     ],
   },
+  /* trip states */
+  {
+    group: 'Riding together', title: 'A trip that is full, declined, or over',
+    lede: 'The states of a trip where the rider cannot simply join. Each one says why, and what the rider can do instead.',
+    render: () => {
+      const topT = (state) => `<div class="sec-h"><h3>Spiti circuit</h3>${state}</div>
+        <div class="keys"><div><span>Leaves</span><b>3 July</b></div><div><span>Back</span><b>11 July</b></div><div><span>From</span><b>Chandigarh</b></div></div>
+        <div class="rows"><div class="row"><span class="av">DR</span><span class="grow"><b>Led by Dev R.</b><span class="hint">On Meel since 2025 · led 5 trips · 23 facts confirmed</span></span></div></div>`;
+      return phone('1. Full', `
+        ${head('Trip', 'Spiti circuit · July 2027', { right: shareBtn })}
+        ${body(`${topT('<span class="badge b-plain">Full</span>')}
+          <div class="callout"><b>All 6 places are taken</b>Places open when a rider leaves. Two riders are already waiting for one.</div>
+          <div class="lbl">Other trips on roads nearby</div>
+          ${trip('Kinnaur: Sangla, Chitkul and Kalpa', '17 to 22 July 2027 · 6 days', 'From Chandigarh', 'Meera J.', 2, 6, 'Relaxed pace', '<span class="badge b-fresh">4 places left</span>')}`)}
+        <div class="pfoot"><span class="btn btn-soft btn-block">Tell me if a place opens</span></div>`)
+      + phone('2. Declined', `
+        ${head('Trip', 'Spiti circuit · July 2027', { right: shareBtn })}
+        ${body(`
+          <div class="callout"><b>Dev could not take you on this trip</b>Leaders do not have to give a reason. It says nothing about you as a rider.</div>
+          ${topT('<span class="badge b-fresh">1 place left</span>')}
+          <div class="lbl">Other trips on roads nearby</div>
+          ${trip('Kinnaur: Sangla, Chitkul and Kalpa', '17 to 22 July 2027 · 6 days', 'From Chandigarh', 'Meera J.', 2, 6, 'Relaxed pace', '<span class="badge b-fresh">4 places left</span>')}`)}
+        <div class="pfoot"><span class="btn btn-primary btn-block">${ICON.plus}Post your own trip</span></div>`)
+      + phone('3. Over, and reporting a trip', `
+        ${head('Trip', 'Manali to Leh · September 2026')}
+        ${body(`
+          <div class="callout info"><b>This trip was ridden from 5 to 13 September 2026</b>6 riders went. 4 sent a trip report afterwards.</div>
+          <div class="lbl">What came back from it</div>
+          <div class="rows">
+            <div class="row"><span class="grow"><b>11 facts confirmed</b><span class="hint">Fuel, mechanics and stays on this route</span></span>${chev}</div>
+            <div class="row"><span class="grow"><b>Riding hours for 5 legs</b></span>${chev}</div>
+            <div class="row"><span class="grow"><b>2 videos</b></span>${chev}</div>
+          </div>`)}
+        <div class="sheet-scrim"></div>
+        <div class="sheet"><span class="grab"></span>
+          <h3>Report this trip</h3>
+          <p>Reports go to the person who keeps Meel, not to the leader.</p>
+          <div class="radio-list">
+            <div><span class="radio"></span>It asks for money up front</div>
+            <div class="on"><span class="radio"></span>It is a tour company, not marked as one</div>
+            <div><span class="radio"></span>It is not a real trip</div>
+            <div><span class="radio"></span>Something else</div>
+          </div>
+          <span class="btn btn-primary btn-block" style="height:46px">Send report</span>
+        </div>`);
+    },
+    notes: [
+      ['Why blocked / Way forward', ['Full: the button becomes “Tell me if a place opens”. Other trips on nearby roads are listed.', 'Declined: no reason is shown, and the page says that this is normal. The way forward is another trip, or the rider’s own.', 'Over: the trip becomes a record of what it gave back to the route.']],
+      ['Reporting', ['Any rider who is logged in can report a trip. The leader is not told who reported.', 'A trip with three reports is hidden until the editor has looked.']],
+      ['Behaviour', ['“Tell me if a place opens” shows the notice on the rider’s own trips page. Meel sends no email and no text in the first build.']],
+    ],
+  },
+  /* sign-up errors */
+  {
+    group: 'Riding together', title: 'Creating an account: what can go wrong',
+    lede: 'Each mistake is shown beside the field it belongs to, says what is wrong, and says how to put it right.',
+    render: () => phone('1. Fields that need fixing', `
+      ${head('Create an account', 'Takes about a minute')}
+      ${body(`
+        <div class="callout" style="background:var(--stale-bg);border-color:color-mix(in srgb, var(--stale-fg) 30%, var(--surface))"><b>2 things need fixing</b>They are marked below.</div>
+        <div class="field"><label>Your name</label><div class="input filled">Rahul Negi</div></div>
+        <div class="field"><label>Email</label><div class="input filled err">rahul@example</div><span class="hint err">This does not look like an email address. It needs a part after the dot, such as .com or .in.</span></div>
+        <div class="field"><label>Password</label><div class="input filled err">••••••</div><span class="hint err">6 characters. It needs at least 10.</span></div>
+        <div class="field"><label>Home city</label><div class="input filled">Delhi</div></div>`)}
+      <div class="pfoot"><span class="btn btn-primary btn-block">Create account</span></div>`)
+    + phone('2. The email is already in use', `
+      ${head('Create an account', 'Takes about a minute')}
+      ${body(`
+        <div class="field"><label>Your name</label><div class="input filled">Rahul Negi</div></div>
+        <div class="field"><label>Email</label><div class="input filled err">rahul@example.com</div><span class="hint err">An account with this email already exists.</span></div>
+        <div class="callout info"><b>Is it yours?</b><span class="link">Log in</span> with this email, or use a different one here.</div>
+        <div class="field"><label>Password</label><div class="input filled">••••••••••••</div></div>`)}
+      <div class="pfoot"><span class="btn btn-primary btn-block">Create account</span></div>`)
+    + phone('3. A forgotten password', `
+      ${head('Forgotten password', 'Meel')}
+      ${body(`
+        <div class="callout warn"><b>Meel cannot send email yet</b>So a password cannot be reset by a link. This is being built.</div>
+        <div class="lbl">For now</div>
+        <div class="fact-d">Write to the person who keeps Meel from your chat app. Say which email the account uses. They will check it is you and set a one-time password.</div>
+        <span class="btn btn-primary btn-block" style="height:46px">${ICON.send}Open chat app</span>
+        <span class="hint">Your trips and reports are not lost.</span>`)}`),
+    notes: [
+      ['Layout', ['Errors sit under the field they belong to, in words. Colour alone is never the message.', 'A summary at the top counts what needs fixing, for a rider whose keyboard hides the rest.']],
+      ['Behaviour', ['What the rider typed is kept. Only the password is cleared after a failed try.', '“Already in use” is shown here because the rider has just typed the email. The log-in page stays vague on purpose.']],
+      ['Not built yet', ['Password reset by email. The third frame is what riders see until an email service is added.'], 'q'],
+    ],
+  },
   /* laptop */
   {
     group: 'Wider screens', title: 'A route page on a laptop',
@@ -1745,6 +1842,94 @@ Rahul N. · seen 13 June 2027 · sent from the chat app at 9:12 pm</div>
       ['Evidence next to the decision', ['The rider’s own words, the fact as it stands, and the fact as it would become, side by side.', 'Three checks, each a fact and not a verdict: how recent, the rider’s record, whether anyone else has said the same.', 'The wording can be edited before it is applied. Riders write in a hurry.']],
       ['Behaviour', ['Apply: the fact is rewritten, the old entry joins the history, the rider is credited.', 'Set aside: nothing on the site changes. The reason is kept, so the same report is not puzzled over twice.', 'Ask a question: opens the chat app to that rider.']],
       ['Open question', ['Is a rider’s record of past reports worth keeping? It helps the editor. It also means holding a little more about each person.'], 'q'],
+    ],
+  },
+  /* credit */
+  {
+    group: 'Credit where it is due', title: 'Pictures, sources and credits',
+    lede: 'Nothing on Meel is shown without saying where it came from. Pictures name their author and licence. Facts link to their source. Maps credit the people who drew them.',
+    render: () => phone('1. A route with its picture', `
+      ${head('Manali to Leh', 'Basic page · 41 facts', { right: shareBtn })}
+      <div class="pbody"><div class="hero"><span class="hero-cap">Baralacha La, looking towards Leh</span></div>
+        <div class="credit-line">Photo: Timothy Gonsalves · CC BY-SA 4.0 · <span class="link">Wikimedia Commons</span></div>
+        <div class="pscroll">
+        ${routeHead('Manali to Leh', 'NH 3', '434', 'Himachal Pradesh and Ladakh · over Baralacha La and Tanglang La')}
+        <div class="keys"><div><span>Usual days</span><b>2 to 3</b></div><div><span>Highest point</span><b>5,328 m</b></div><div><span>Usually open</span><b>Jun to Oct</b></div></div>
+        <div class="rows"><div class="row"><span class="ic">${ICON.flag}</span><span class="grow"><b>Is it open? Where to check today</b><span class="hint">5 official sources · we link, we do not guess</span></span>${chev}</div></div>
+      </div></div>`)
+    + phone('2. Where one fact came from', `
+      ${head('Manali to Leh', 'Fuel')}
+      ${body(`${fact(PUMPS[3])}`)}
+      <div class="sheet-scrim"></div>
+      <div class="sheet"><span class="grab"></span>
+        <div class="fact-h"><h3>Karu petrol pump</h3>${badge('unchecked')}</div>
+        <p>Indian Oil. 400 km from Manali, 34 km before Leh.</p>
+        <div class="lbl">Where this came from</div>
+        <div class="rows">
+          <div class="row"><span class="grow"><b>OpenStreetMap</b><span class="hint">Drawn on the open map by its contributors · read 28 September 2026</span></span>${ICON.ext}</div>
+        </div>
+        <div class="callout"><b>Not yet checked</b>No rider and no editor has confirmed this pump. It is on the map, which is not the same as being open.</div>
+        ${twoButtons}
+      </div>`)
+    + phone('3. The credits page', `
+      ${head('Credits and sources', 'Meel')}
+      ${body(`
+        <span class="hint" style="font-size:13px;color:var(--ink)">Meel is built on other people’s work. This page names all of it.</span>
+        <div class="lbl">Maps, distances and fuel pumps</div>
+        <div class="rows"><div class="row"><span class="grow"><b>© OpenStreetMap contributors</b><span class="hint">Open Database Licence. Routes worked out with the Open Source Routing Machine.</span></span>${ICON.ext}</div></div>
+        <div class="lbl">Heights</div>
+        <div class="rows"><div class="row"><span class="grow"><b>NASA Shuttle Radar Topography Mission</b><span class="hint">Public domain. Served by Open Topo Data.</span></span>${ICON.ext}</div></div>
+        <div class="lbl">Pictures · 50</div>
+        <div class="rows">
+          <div class="row"><span class="grow"><b>Manali to Leh</b><span class="hint">Timothy Gonsalves · CC BY-SA 4.0 · resized</span></span>${ICON.ext}</div>
+          <div class="row"><span class="grow"><b>Spiti circuit</b><span class="hint">Timothy Gonsalves · CC BY-SA 4.0 · resized</span></span>${ICON.ext}</div>
+        </div>
+        <div class="lbl">Facts · 612 sources</div>
+        <div class="rows"><div class="row"><span class="grow"><b>Every source, route by route</b><span class="hint">Official pages, news reports and published guides</span></span>${chev}</div></div>`)}`),
+    notes: [
+      ['Layout', ['The picture’s credit sits directly under it, not in a footer nobody reads.', 'A fact’s source is one tap away, in the same sheet as its history.', 'The credits page is linked from the foot of every page.']],
+      ['What each licence asks', ['Map data: show “© OpenStreetMap contributors” wherever the data appears.', 'Pictures: name the author and the licence, link to both, and say if the picture was changed. Here each is resized and nothing else.', 'Facts: a fact cannot be owned, but the page it came from is always linked. No sentence is copied from any source.']],
+      ['Videos', ['A video plays in the video site’s own player, under the maker’s channel name. It is never copied or re-uploaded.']],
+      ['Not legal advice', ['This follows what each licence plainly asks. It has not been reviewed by a lawyer. Before the site earns money, have one look at it.'], 'q'],
+    ],
+  },
+  /* tools and about */
+  {
+    group: 'Credit where it is due', title: 'Tools, and what Meel is',
+    lede: 'Two pages reached from the bottom bar and the foot of the page. The tools work on any route. The about page says who keeps the site and how far to trust it.',
+    render: () => phone('1. Tools', `
+      ${head('Tools', 'Work with no network', { back: false })}
+      ${body(`
+        <div class="field"><label>Route</label><div class="input filled">Manali to Leh</div></div>
+        <div class="rows">
+          <div class="row"><span class="ic">${ICON.fuel}</span><span class="grow"><b>Fuel check</b><span class="hint">Where you must carry extra fuel, for your bike</span></span>${chev}</div>
+          <div class="row"><span class="ic">${ICON.peak}</span><span class="grow"><b>Altitude and night halts</b><span class="hint">How steeply your nights climb</span></span>${chev}</div>
+          <div class="row"><span class="ic">${ICON.bag}</span><span class="grow"><b>Packing list</b><span class="hint">By route and month</span></span>${chev}</div>
+        </div>
+        <div class="callout"><b>Your bike is remembered on this phone</b>Royal Enfield Classic 350 · 13 litres. <span class="link">Change</span></div>`)}
+      ${tabbar('Tools')}`)
+    + phone('2. What Meel is', `
+      ${head('About Meel', 'rideplanner.in')}
+      ${body(`
+        <div class="khead"><div class="kstone"><div class="cap">MEEL</div><div class="km">50<small>ROUTES</small></div></div><div><h2>Every fact has a date</h2><p>Kept by riders, for riders</p></div></div>
+        <span class="fact-d">Riders ask the same questions every season. Is the pass open? Is there fuel at Tandi? The answers live in chat groups and are lost by the next year. Meel writes them down, with the date and the name of whoever saw it.</span>
+        <div class="lbl">How far to trust it</div>
+        <div class="checks">
+          <div class="check ok">${ICON.check}<span>Every fact shows where it came from and when it was last confirmed</span></div>
+          <div class="check wait">${ICON.clock}<span>Most facts are marked “not yet checked”. They were gathered at a desk and await a rider.</span></div>
+          <div class="check wait">${ICON.clock}<span>Meel never says a road is open. It links to the office that decides.</span></div>
+        </div>
+        <div class="callout"><b>Kept by one person, as a hobby</b>No advertising. No paid listings.</div>`)}`)
+    + phone('3. A page that does not exist', `
+      ${head('Meel', 'rideplanner.in', { back: false })}
+      ${body(`
+        <div class="empty"><b>There is no page at this address</b><span>The link may be old, or mistyped. Nothing is wrong with your phone.</span><span class="btn btn-soft">${ICON.map}See all routes</span></div>
+        <div class="input">${ICON.search}<span>Search a route or place</span></div>`)}
+      ${tabbar('')}`),
+    notes: [
+      ['Tools', ['The three tools are the same ones reached from a route page. Here the rider picks the route first.', 'The bike is kept on the phone, so the fuel check is one tap on any route. No account needed.']],
+      ['About', ['Says plainly what the site does not do, and that most facts are unchecked at the start.', 'This is the page a careful rider reads before trusting a fuel gap with their trip.']],
+      ['Not found', ['Says what happened and offers the two useful ways on: all routes, or search.']],
     ],
   },
   /* data */
