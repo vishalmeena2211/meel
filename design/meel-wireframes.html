@@ -1718,6 +1718,49 @@ Name: Rahul N.</span><span class="send">${ICON.send}</span></div>
       ['Not built yet', ['Password reset by email. The third frame is what riders see until an email service is added.'], 'q'],
     ],
   },
+  /* passwords */
+  {
+    group: 'Riding together', title: 'A password: changing it, and getting back in',
+    lede: 'Meel sends no email, so a lost password is put right by a person. These are the three screens that make that promise true.',
+    render: () => phone('1. Changing your password', `
+      ${head('Your account', 'Rahul N.', { back: false, right: `<span class="av">RN</span>` })}
+      ${body(`
+        <div class="lbl">Your password</div>
+        <div class="field"><label>Your password now</label><div class="input filled">••••••••••••</div></div>
+        <div class="field"><label>New password</label><div class="input filled">••••••••••••••</div><span class="hint">At least 10 characters.</span></div>
+        <span class="btn btn-soft btn-block" style="height:46px">Change password</span>
+        <span class="hint">Changing it logs out your other phones. This phone stays logged in.</span>`)}
+      ${tabbar('You')}`)
+    + phone('2. After a one-time password', `
+      ${head('Your account', 'Rahul N.', { back: false, right: `<span class="av">RN</span>` })}
+      ${body(`
+        <div class="callout warn"><b>Choose your own password now</b>You logged in with a one-time password. The person who set it has seen it.</div>
+        <div class="lbl">Your password</div>
+        <div class="field"><label>The one-time password</label><div class="input filled">••••••••••••••</div></div>
+        <div class="field"><label>New password</label><div class="input">Password</div><span class="hint">At least 10 characters.</span></div>
+        <span class="btn btn-primary btn-block" style="height:46px">Change password</span>
+        <span class="hint">Your trips and reports are as you left them.</span>`)}
+      ${tabbar('You')}`)
+    + phone('3. The editor lets a rider back in', `
+      ${head('Editor', 'A rider cannot get in')}
+      ${body(`
+        <div class="callout info"><b>Check it is them first</b>Ask something only they would know: a trip they joined, or their bike and home city.</div>
+        <div class="field"><label>The email on their account</label><div class="input filled">rahul@example.com</div></div>
+        <div class="fact"><div class="fact-h"><b>Rahul N.</b><span class="hint">Delhi</span></div><div class="fact-d">Royal Enfield Classic 350</div><div class="fact-src">On Meel since June 2027 · 1 trip · 2 facts confirmed</div></div>
+        <div class="callout stone"><b>One-time password</b><span class="num" style="display:block;font-size:21px;line-height:30px;font-weight:700;letter-spacing:.04em;color:var(--ink)">kesar-nadi-pul-4827</span>Shown once. Give it to Rahul yourself. It is not kept anywhere you can read it again.</div>
+        <div class="checks">
+          <div class="check ok">${ICON.check}<span>They are logged out everywhere</span></div>
+          <div class="check ok">${ICON.check}<span>They are asked to choose their own password when they log in</span></div>
+        </div>`)}
+      <div class="pfoot"><span class="btn btn-outline btn-block">Done</span></div>`),
+    notes: [
+      ['Behaviour', ['Changing a password asks for the present one. It logs out every other phone and keeps this one.', 'A one-time password works like any password, until the rider changes it. Until then the account page opens with the notice in frame 2.', 'Setting a one-time password logs the rider out everywhere and clears any rest after wrong tries.']],
+      ['Permissions', ['Only an editor can set a one-time password. An editor cannot set one for another editor.', 'The editor sees the rider’s name, city, bike and record, to help check who is asking. Never the email of anyone they did not type.']],
+      ['Why a person, not a link', ['A link by email needs a service that sends email, and an address that has been checked. Meel has neither yet.', 'The cost: the editor sees the one-time password. That is why the rider is asked to change it at once, and why the screen says so plainly.']],
+      ['Data', ['One more thing is held per account: whether its password is a one-time one.']],
+      ['Not built yet', ['Password reset by a link in an email.'], 'q'],
+    ],
+  },
   /* laptop */
   {
     group: 'Wider screens', title: 'A route page on a laptop',
@@ -2050,6 +2093,5 @@ let start = 0;
 try { start = Number(localStorage.getItem('meel-wireframe')) || 0; } catch (e) {}
 show(start);
 </script>
-
 </body>
 </html>
