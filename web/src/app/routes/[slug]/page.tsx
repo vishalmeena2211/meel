@@ -25,7 +25,7 @@ import { NightHalts } from "@/components/tools/night-halts";
 import { PackingList } from "@/components/tools/packing-list";
 import { Badge, Callout, Empty, KeyFacts, KmStone, SectionHeading, SourceLine } from "@/components/ui";
 import { getBikes, getFactKinds, getIndex, getPackingList, getRoute } from "@/lib/content";
-import { hostOf, hours, km, metres, plural, sayDate, sayMonths } from "@/lib/format";
+import { hostOf, hours, km, metres, plural, sayDate, sayMonths, stoneCap } from "@/lib/format";
 import type { Route, Source } from "@/lib/types";
 import { confirmationsFor, tripReportCount } from "@/server/reports";
 import { openTripsOnRoute } from "@/server/trips";
@@ -113,6 +113,9 @@ export default async function RoutePage(props: PageProps<"/routes/[slug]">) {
   const highEnough = (h.highest_point?.altitude_m ?? 0) >= 2500 && route.profile.length > 1;
   const sources = allSources(route);
   const unwritten = route.level === "unwritten";
+  const confirmed = new Set(
+    confirmations.filter((c) => c.kind === "still-true" && c.read !== false).map((c) => c.fact_id),
+  ).size;
 
   const sections = [
     { id: "open", label: "Is it open?", show: route.authorities.length > 0 || route.season.history.length > 0 },
@@ -164,7 +167,7 @@ export default async function RoutePage(props: PageProps<"/routes/[slug]">) {
       <header className="flex flex-col gap-3">
         <div className="flex items-center gap-3">
           <KmStone
-            cap={h.highway?.value.split(/[,;/]| and /)[0]?.trim().slice(0, 8) ?? "—"}
+            cap={stoneCap(h.highway?.value)}
             value={h.distance_km ? Math.round(h.distance_km).toLocaleString("en-IN") : "?"}
             unit="KM"
           />
@@ -182,10 +185,21 @@ export default async function RoutePage(props: PageProps<"/routes/[slug]">) {
             h.usual_season ? { label: "Usual season", value: h.usual_season.value } : null,
           ].filter((x): x is { label: string; value: string } => x !== null)}
         />
+        {h.highway ? (
+          <div className="flex flex-col gap-0.5">
+            <p className="text-sm">
+              <span className="label mr-1.5">Road</span>
+              {h.highway.value}
+            </p>
+            <SourceLine source={h.highway.source} />
+          </div>
+        ) : null}
         <p className="hint">
           <Badge tone={unwritten ? "unchecked" : "plain"}>{unwritten ? "Not written yet" : "Basic page"}</Badge>{" "}
-          {plural(route.counts.facts, "fact")} · gathered at a desk on {sayDate(route.built)} · no rider has confirmed
-          them yet.{" "}
+          {plural(route.counts.facts, "fact")} · gathered at a desk on {sayDate(route.built)} ·{" "}
+          {confirmed === 0
+            ? "no rider has confirmed them yet."
+            : `riders have confirmed ${confirmed} of them.`}{" "}
           <Link className="link font-medium" href="/about#trust">
             What that means
           </Link>

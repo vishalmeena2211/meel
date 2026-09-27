@@ -8,7 +8,7 @@ import { PageTitle } from "@/components/form";
 import { TripCardView } from "@/components/trips/trip-card";
 import { Badge, Empty, KeyFacts } from "@/components/ui";
 import { getIndex } from "@/lib/content";
-import { sayDate } from "@/lib/format";
+import { dayOf, sayDate } from "@/lib/format";
 import { currentUser } from "@/server/auth";
 import { all } from "@/server/db";
 import { tripsOf } from "@/server/trips";
@@ -39,7 +39,7 @@ export default async function AccountPage() {
 
   return (
     <div className="mx-auto flex w-full max-w-2xl flex-col gap-6">
-      <PageTitle title="Your account" lede={`${user.shown_as} · on Meel since ${sayDate(user.created_at.slice(0, 7))}`} />
+      <PageTitle title="Your account" lede={`${user.shown_as} · on Meel since ${sayDate(dayOf(user.created_at).slice(0, 7))}`} />
 
       <KeyFacts
         items={[

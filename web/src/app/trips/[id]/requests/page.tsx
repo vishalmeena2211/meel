@@ -7,7 +7,7 @@ import { PageTitle } from "@/components/form";
 import { IconCheck } from "@/components/icons";
 import { Badge, Callout, Empty } from "@/components/ui";
 import { getRoute } from "@/lib/content";
-import { plural, sayDate } from "@/lib/format";
+import { dayOf, plural, sayDate } from "@/lib/format";
 import { currentUser } from "@/server/auth";
 import { getTrip, membersOf } from "@/server/trips";
 
@@ -71,7 +71,7 @@ export default async function RequestsPage(props: PageProps<"/trips/[id]/request
                 </div>
                 <span className="text-sm">{m.bike ?? "Bike not given"}</span>
                 <span className="hint">
-                  On Meel since {sayDate(m.since.slice(0, 7))} · {plural(m.trips_done, "trip")} ridden ·{" "}
+                  On Meel since {sayDate(dayOf(m.since).slice(0, 7))} · {plural(m.trips_done, "trip")} ridden ·{" "}
                   {plural(m.facts_confirmed, "fact")} confirmed
                 </span>
                 {m.note ? <p className="border-l-[3px] border-line py-0.5 pl-2.5 text-sm">“{m.note}”</p> : null}
@@ -110,7 +110,7 @@ export default async function RequestsPage(props: PageProps<"/trips/[id]/request
                 <li key={m.user_id} className="flex items-center justify-between gap-2 border-b border-line px-3 py-2.5 last:border-b-0">
                   <span>
                     <b className="block text-[0.9375rem] leading-5">{m.name}</b>
-                    <span className="hint">{m.answered_at ? sayDate(m.answered_at.slice(0, 10)) : ""}</span>
+                    <span className="hint">{m.answered_at ? sayDate(dayOf(m.answered_at)) : ""}</span>
                   </span>
                   <Badge tone={words.tone}>{words.label}</Badge>
                 </li>

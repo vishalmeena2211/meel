@@ -8,7 +8,7 @@ import { AskToJoin, ReportTrip } from "@/components/trips/forms";
 import { PACE_WORDS, Seats, TripCardView, placesBadge, tripLength } from "@/components/trips/trip-card";
 import { Badge, Callout, KeyFacts } from "@/components/ui";
 import { getIndex, getRoute } from "@/lib/content";
-import { indiaDay, initials, km, metres, plural, sayDate } from "@/lib/format";
+import { dayOf, indiaDay, initials, km, metres, plural, sayDate } from "@/lib/format";
 import { nightGains } from "@/lib/trip-checks";
 import { currentUser } from "@/server/auth";
 import { getTrip, membersOf, membershipOf, openTripsOnRoute } from "@/server/trips";
@@ -125,7 +125,7 @@ export default async function TripPage(props: PageProps<"/trips/[id]">) {
         <div className="min-w-0 flex-1">
           <b className="block text-[0.9375rem] leading-5">Led by {trip.leader_name}</b>
           <span className="hint">
-            On Meel since {sayDate(trip.leader_since.slice(0, 7))} · {plural(trip.leader_trips, "trip")} posted ·{" "}
+            On Meel since {sayDate(dayOf(trip.leader_since).slice(0, 7))} · {plural(trip.leader_trips, "trip")} posted ·{" "}
             {plural(trip.leader_facts, "fact")} confirmed
           </span>
         </div>
@@ -267,7 +267,12 @@ export default async function TripPage(props: PageProps<"/trips/[id]">) {
           </button>
         </form>
       ) : mine === "asked" || mine === "waiting-for-place" ? (
-        <form action={takeBackAction}>
+        <form action={takeBackAction} className="flex flex-col gap-2">
+          <p role="status" className="rounded-lg border border-sign-line bg-sign-soft px-3 py-2.5 text-sm font-medium">
+            {mine === "asked"
+              ? `Your request is with ${trip.leader_name}. Look here again for the answer.`
+              : `You are in line for a place. ${trip.leader_name} is told when one opens.`}
+          </p>
           <input type="hidden" name="trip" value={trip.id} />
           <button type="submit" className="btn btn-outline btn-block">
             Take back my request

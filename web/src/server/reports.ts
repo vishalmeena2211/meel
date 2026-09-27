@@ -110,6 +110,7 @@ export function confirmationsFor(routeSlug: string): Confirmation[] {
     by: r.name ?? "a rider",
     kind: r.kind,
     note: r.status === "applied" ? r.note : null,
+    read: r.status === "applied",
   }));
 }
 

@@ -7,7 +7,7 @@ import { PageTitle } from "@/components/form";
 import { IconCheck, IconClock } from "@/components/icons";
 import { Badge, Callout, Empty } from "@/components/ui";
 import { getIndex } from "@/lib/content";
-import { daysBetween, plural, sayDate } from "@/lib/format";
+import { dayOf, daysBetween, plural, sayDate } from "@/lib/format";
 import { currentUser } from "@/server/auth";
 import { inbox, recordOf } from "@/server/reports";
 import { flagsOn, tripsForEditor } from "@/server/trips";
@@ -144,7 +144,7 @@ export default async function EditorPage() {
                       {flags.map((f) => (
                         <li key={f.at} className="border-b border-dashed border-line py-1 last:border-b-0">
                           {FLAG_WORDS[f.reason] ?? f.reason}
-                          {f.note ? `: “${f.note}”` : ""} <span className="hint">{sayDate(f.at.slice(0, 10))}</span>
+                          {f.note ? `: “${f.note}”` : ""} <span className="hint">{sayDate(dayOf(f.at))}</span>
                         </li>
                       ))}
                     </ul>
@@ -184,7 +184,7 @@ export default async function EditorPage() {
                     {nameOf(r.route_slug)} · {sayDate(r.month)} · {r.bike}
                   </b>
                   <span className="hint">
-                    From {r.name ?? "a rider with no name given"} · sent {sayDate(r.created_at.slice(0, 10))}
+                    From {r.name ?? "a rider with no name given"} · sent {sayDate(dayOf(r.created_at))}
                   </span>
                   <dl className="flex flex-col gap-1.5 text-sm">
                     {Object.entries(body)

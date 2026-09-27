@@ -286,4 +286,6 @@ export interface Confirmation {
   by: string;
   kind: "still-true" | "changed";
   note: string | null;
+  /** False while a report of a change waits for the editor. Its words are held back until then. */
+  read?: boolean;
 }

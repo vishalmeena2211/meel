@@ -27,6 +27,17 @@ export function sayDate(value: string | null | undefined): string | null {
   return `${Number(day)} ${name} ${year}`;
 }
 
+/**
+ * The few letters painted on the cap of a kilometre stone: "NH 5", "SH 49".
+ * The first road number in the words wins. No number found gives a plain stone.
+ */
+export function stoneCap(road: string | null | undefined): string {
+  const found = /\b(NH|SH|National Highway|State Highway)[\s-]?(\d+[A-Z]?)\b/i.exec(road ?? "");
+  if (!found) return "";
+  const kind = /^(SH|State)/i.test(found[1] ?? "") ? "SH" : "NH";
+  return `${kind} ${(found[2] ?? "").toUpperCase()}`;
+}
+
 export function km(value: number | null | undefined): string {
   if (value === null || value === undefined) return "—";
   return `${Math.round(value).toLocaleString("en-IN")} km`;
@@ -61,6 +72,12 @@ export function indiaDay(at: Date = new Date()): string {
   const parts = INDIA_DAY.formatToParts(at);
   const pick = (type: "year" | "month" | "day") => parts.find((p) => p.type === type)?.value ?? "";
   return `${pick("year")}-${pick("month")}-${pick("day")}`;
+}
+
+/** The India day on which a stored moment fell. Moments are stored in world time. */
+export function dayOf(moment: string): string {
+  const at = new Date(moment);
+  return Number.isNaN(at.getTime()) ? moment.slice(0, 10) : indiaDay(at);
 }
 
 /** India's calendar month, as "2026-09". */

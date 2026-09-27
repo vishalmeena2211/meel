@@ -52,7 +52,9 @@ export function FactCard({
       {latest && standing.daysOld !== null ? (
         <p className="hint num">
           {standing.state === "pending"
-            ? `A rider reported a change on ${sayDate(latest.seen_on)}. Being checked.`
+            ? latest.read === false
+              ? `A rider reported a change on ${sayDate(latest.seen_on)}. Being checked.`
+              : `${latest.by} saw a change on ${sayDate(latest.seen_on)}. Read by the editor. The words above are as the source has them.`
             : standing.state === "conflict"
               ? `Riders saw different things. Newest report: ${sayDate(latest.seen_on)}, from ${latest.by}.`
               : `Confirmed by ${latest.by} · ${sayDate(latest.seen_on)} · ${sayAge(standing.daysOld)}`}
