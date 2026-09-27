@@ -1,0 +1,593 @@
+{
+  "slug": "sach-pass-pangi",
+  "header": {
+    "highway": {
+      "value": null,
+      "source": null
+    },
+    "highest_point": {
+      "name": "Sach Pass (renamed Sache Jot in 2024)",
+      "altitude_m": 4414,
+      "source": {
+        "url": "https://www.tribuneindia.com/news/himachal/sache-jot-reopens-after-7-mth-freeze/",
+        "title": "Sache Jot reopens after 7-month freeze",
+        "kind": "news",
+        "opened": true,
+        "source_date": "2025-05-28",
+        "accessed": "2026-09-28"
+      }
+    },
+    "usual_days": {
+      "value": "5 to 6 from Delhi",
+      "source": {
+        "url": "https://discoverwithdheeraj.com/sach-pass-travel-guide-himachal-itinerary/",
+        "title": "Sach Pass Travel Guide 2026",
+        "kind": "blog",
+        "opened": true,
+        "source_date": "2026-07",
+        "accessed": "2026-09-28"
+      }
+    },
+    "usual_season": {
+      "value": "July to September",
+      "source": {
+        "url": "https://discoverwithdheeraj.com/sach-pass-travel-guide-himachal-itinerary/",
+        "title": "Sach Pass Travel Guide 2026",
+        "kind": "blog",
+        "opened": true,
+        "source_date": "2026-07",
+        "accessed": "2026-09-28"
+      }
+    },
+    "one_line": "Himachal Pradesh into Jammu and Kashmir, from Chamba over Sach Pass to Killar in Pangi, then down the Chenab to Kishtwar"
+  },
+  "rules": [
+    {
+      "id": "sach-pass-no-permit-identity-check-satrundi",
+      "kind": "document",
+      "title": "Sach Pass: no permit; identity checked at Satrundi",
+      "detail": "A rider blog reports no permit for Indian citizens. Police at Satrundi check identity and the rider signs an undertaking. No written order was found.",
+      "applies_to": "Indian citizens",
+      "set_by": "Chamba district police, as reported",
+      "official_url": null,
+      "has_official_order": false,
+      "source": {
+        "url": "https://discoverwithdheeraj.com/sach-pass-travel-guide-himachal-itinerary/",
+        "title": "Sach Pass Travel Guide 2026",
+        "kind": "blog",
+        "opened": true,
+        "source_date": "2026-07",
+        "accessed": "2026-09-28"
+      },
+      "history": []
+    },
+    {
+      "id": "sach-pass-winter-closure-order",
+      "kind": "timing",
+      "title": "Sach Pass: closed each winter by district order",
+      "detail": "The Deputy Commissioner of Chamba shuts the road under the Motor Vehicles Act once ice sets in. Newspapers give 15 October as the usual closing date.",
+      "applies_to": "All vehicles",
+      "set_by": "Deputy Commissioner, Chamba",
+      "official_url": null,
+      "has_official_order": true,
+      "source": {
+        "url": "https://www.tribuneindia.com/news/himachal/sach-pass-closed-for-winter/",
+        "title": "Sach Pass closed for winter",
+        "kind": "news",
+        "opened": true,
+        "source_date": "2024-12-03",
+        "accessed": "2026-09-28"
+      },
+      "history": [
+        {
+          "date": "2024-12-03",
+          "change": "Closure ordered under Section 115 of the Motor Vehicles Act 1988, until further notice.",
+          "source": {
+            "url": "https://www.tribuneindia.com/news/himachal/sach-pass-closed-for-winter/",
+            "title": "Sach Pass closed for winter",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2024-12-03",
+            "accessed": "2026-09-28"
+          }
+        }
+      ]
+    },
+    {
+      "id": "sach-pass-light-vehicles-first",
+      "kind": "motorcycle-rule",
+      "title": "Sach Pass opens to light vehicles first",
+      "detail": "After snow clearance only light motor vehicles may cross. Heavy vehicles and buses wait for a fitness certificate. Reports do not mention motorcycles.",
+      "applies_to": "All vehicles",
+      "set_by": "Himachal Pradesh Public Works Department and Chamba district administration",
+      "official_url": null,
+      "has_official_order": false,
+      "source": {
+        "url": "https://www.tribuneindia.com/news/himachal/after-seven-month-freeze-pangi-valleys-lifeline-sach-pass-opens-to-traffic/",
+        "title": "After seven-month freeze, Pangi valley's lifeline Sach Pass opens to traffic",
+        "kind": "news",
+        "opened": true,
+        "source_date": "2026-05-11",
+        "accessed": "2026-09-28"
+      },
+      "history": [
+        {
+          "date": "2024-06-08",
+          "change": "Opened to light motor vehicles; bus service followed on 20 July 2024.",
+          "source": {
+            "url": "https://www.tribuneindia.com/news/himachal/sach-pass-reopens-to-traffic-after-7-months-629066/",
+            "title": "Sach Pass reopens to traffic after 7 months",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2024-06-09",
+            "accessed": "2026-09-28"
+          }
+        },
+        {
+          "date": "2025-05",
+          "change": "Declared open to light motor vehicles in the last week of May.",
+          "source": {
+            "url": "https://www.tribuneindia.com/news/himachal/sache-jot-reopens-after-7-mth-freeze/",
+            "title": "Sache Jot reopens after 7-month freeze",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2025-05-28",
+            "accessed": "2026-09-28"
+          }
+        },
+        {
+          "date": "2026-07-01",
+          "change": "Bus service resumed after the road was certified fit for heavy vehicles.",
+          "source": {
+            "url": "https://www.tribuneindia.com/news/himachal/lifeline-restored-hrtc-resumes-direct-chamba-killar-bus-service/",
+            "title": "Lifeline restored: HRTC resumes direct Chamba-Killar bus service",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2026-07-02",
+            "accessed": "2026-09-28"
+          }
+        }
+      ]
+    },
+    {
+      "id": "killar-kishtwar-no-permit-check-posts",
+      "kind": "document",
+      "title": "Killar to Kishtwar: no permit; check posts on the way",
+      "detail": "A rider blog reports no permit for Indian citizens, a check post at the Sansari bridge state boundary, and registration at Gulabgarh during the Machail pilgrimage. No order found.",
+      "applies_to": "Indian citizens",
+      "set_by": "Not found",
+      "official_url": null,
+      "has_official_order": false,
+      "source": {
+        "url": "https://discoverwithdheeraj.com/killar-to-kishtwar-the-worlds-most-dangerous-road/",
+        "title": "Killar to Kishtwar Road 2026",
+        "kind": "blog",
+        "opened": true,
+        "source_date": "2026-08-25",
+        "accessed": "2026-09-28"
+      },
+      "history": [
+        {
+          "date": "2026-07-25",
+          "change": "Registration at Gulabgarh reported for the pilgrimage period, 25 July to 8 September 2026.",
+          "source": {
+            "url": "https://discoverwithdheeraj.com/killar-to-kishtwar-the-worlds-most-dangerous-road/",
+            "title": "Killar to Kishtwar Road 2026",
+            "kind": "blog",
+            "opened": true,
+            "source_date": "2026-08-25",
+            "accessed": "2026-09-28"
+          }
+        }
+      ]
+    },
+    {
+      "id": "himachal-entry-toll-other-state-vehicles",
+      "kind": "tax",
+      "title": "Himachal entry toll for vehicles from other states",
+      "detail": "Charged at entry barriers under the yearly toll policy. Notified rates name passenger and goods vehicles only. The Chief Minister said two-wheelers stay exempt. The policy document was not opened.",
+      "applies_to": "Vehicles registered outside Himachal Pradesh",
+      "set_by": "Department of State Taxes and Excise, Government of Himachal Pradesh",
+      "official_url": "https://www.hptax.gov.in/public/setpdf/Toll%20Policy%202026_27.pdf",
+      "has_official_order": true,
+      "source": {
+        "url": "https://www.tribuneindia.com/news/himachal/himachal-toll-tax-rates-revised-heres-what-you-need-to-know/",
+        "title": "Himachal toll tax rates revised: Here's what you need to know",
+        "kind": "news",
+        "opened": true,
+        "source_date": "2026-04-02",
+        "accessed": "2026-09-28"
+      },
+      "history": [
+        {
+          "date": "2026-02-20",
+          "change": "Toll Policy 2026-27 announced with higher rates from 1 April 2026; receipt reported valid 24 hours across the state.",
+          "source": {
+            "url": "https://www.businesstoday.in/india/story/himachal-pradesh-revises-toll-tax-rates-heres-how-much-vehicle-entry-fee-youll-have-to-pay-from-april-1-517204-2026-02-20",
+            "title": "Himachal Pradesh revises toll tax rates. Here's how much vehicle entry fee you'll have to pay from April 1",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2026-02-20",
+            "accessed": "2026-09-28"
+          }
+        },
+        {
+          "date": "2026-03-26",
+          "change": "Chief Minister told the assembly the tax would be reviewed and that light vehicles and two-wheelers remain exempt.",
+          "source": {
+            "url": "https://www.tribuneindia.com/news/himachal/himachal-govt-signals-rethink-on-entry-tax/",
+            "title": "Himachal Govt signals rethink on entry tax",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2026-03-26",
+            "accessed": "2026-09-28"
+          }
+        },
+        {
+          "date": "2026-04-02",
+          "change": "Revised rates reported, with a lower rate for passenger vehicles from other states; two-wheelers not listed.",
+          "source": {
+            "url": "https://www.tribuneindia.com/news/himachal/himachal-toll-tax-rates-revised-heres-what-you-need-to-know/",
+            "title": "Himachal toll tax rates revised: Here's what you need to know",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2026-04-02",
+            "accessed": "2026-09-28"
+          }
+        }
+      ]
+    }
+  ],
+  "season": {
+    "note": "The Public Works Department cuts through the snow between late April and early July, and the road shuts again with the first heavy snow between October and early December.",
+    "history": [
+      {
+        "year": 2022,
+        "connected": "2022-04-27",
+        "open_to_motorcycles": null,
+        "closed": null,
+        "note": "Opened to light vehicles only. Closing date not found.",
+        "sources": [
+          {
+            "url": "https://www.tribuneindia.com/news/himachal/saach-pass-reopens-for-light-vehicles-390031",
+            "title": "Chamba: Saach Pass reopens for light vehicles",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2022-04-28",
+            "accessed": "2026-09-28"
+          },
+          {
+            "url": "https://himachalheadlines.com/news/sach-pass-restored-for-the-movement-of-light-vehicles-dc/",
+            "title": "Sach-pass restored for the movement of light vehicles: DC",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2022-04-28",
+            "accessed": "2026-09-28"
+          }
+        ]
+      },
+      {
+        "year": 2023,
+        "connected": "2023-07-03",
+        "open_to_motorcycles": null,
+        "closed": null,
+        "note": "Opening date is quoted in a 2024 report. Closing date not found.",
+        "sources": [
+          {
+            "url": "https://www.tribuneindia.com/news/himachal/sach-pass-reopens-to-traffic-after-7-months-629066/",
+            "title": "Sach Pass reopens to traffic after 7 months",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2024-06-09",
+            "accessed": "2026-09-28"
+          }
+        ]
+      },
+      {
+        "year": 2024,
+        "connected": "2024-06-08",
+        "open_to_motorcycles": null,
+        "closed": "2024-11-30",
+        "note": "Light vehicles from 8 June, buses from 20 July. Shut from 30 November; closure order issued 3 December.",
+        "sources": [
+          {
+            "url": "https://www.tribuneindia.com/news/himachal/sach-pass-reopens-to-traffic-after-7-months-629066/",
+            "title": "Sach Pass reopens to traffic after 7 months",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2024-06-09",
+            "accessed": "2026-09-28"
+          },
+          {
+            "url": "https://www.tribuneindia.com/news/himachal/wait-over-bus-service-resumed-on-killar-chamba-route-641849/",
+            "title": "Wait over, bus service resumed on Killar-Chamba route",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2024-07-21",
+            "accessed": "2026-09-28"
+          },
+          {
+            "url": "https://www.tribuneindia.com/news/himachal/sache-jot-reopens-after-7-mth-freeze/",
+            "title": "Sache Jot reopens after 7-month freeze",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2025-05-28",
+            "accessed": "2026-09-28"
+          },
+          {
+            "url": "https://www.tribuneindia.com/news/himachal/sach-pass-closed-for-winter/",
+            "title": "Sach Pass closed for winter",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2024-12-03",
+            "accessed": "2026-09-28"
+          }
+        ]
+      },
+      {
+        "year": 2025,
+        "connected": "2025-05",
+        "open_to_motorcycles": null,
+        "closed": null,
+        "note": "Declared open to light vehicles in the last week of May. Blocked by snow on 6 October 2025; the final closing date was not found.",
+        "sources": [
+          {
+            "url": "https://www.tribuneindia.com/news/himachal/sache-jot-reopens-after-7-mth-freeze/",
+            "title": "Sache Jot reopens after 7-month freeze",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2025-05-28",
+            "accessed": "2026-09-28"
+          },
+          {
+            "url": "https://www.tribuneindia.com/news/himachal/white-october-pangi-wakes-up-to-snow-chamba-shivers-under-rain",
+            "title": "White October: Pangi wakes up to snow, Chamba shivers under rain",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2025-10-07",
+            "accessed": "2026-09-28"
+          }
+        ]
+      },
+      {
+        "year": 2026,
+        "connected": "2026-05",
+        "open_to_motorcycles": null,
+        "closed": null,
+        "note": "A report of 11 May says light vehicles were let through that week; a July report says late April. Buses from 1 July. Season still running.",
+        "sources": [
+          {
+            "url": "https://www.tribuneindia.com/news/himachal/after-seven-month-freeze-pangi-valleys-lifeline-sach-pass-opens-to-traffic/",
+            "title": "After seven-month freeze, Pangi valley's lifeline Sach Pass opens to traffic",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2026-05-11",
+            "accessed": "2026-09-28"
+          },
+          {
+            "url": "https://www.tribuneindia.com/news/himachal/lifeline-restored-hrtc-resumes-direct-chamba-killar-bus-service/",
+            "title": "Lifeline restored: HRTC resumes direct Chamba-Killar bus service",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2026-07-02",
+            "accessed": "2026-09-28"
+          }
+        ]
+      }
+    ]
+  },
+  "authorities": [
+    {
+      "office": "Himachal Pradesh Public Works Department, Pangi and Churah divisions",
+      "announces": "Snow clearance, reopening, and fitness of the road for heavy vehicles",
+      "stretch": "Bairagarh to Sach Pass to Killar",
+      "channel": "Statements to newspapers",
+      "url": "https://hppwd.in/",
+      "source": {
+        "url": "https://www.tribuneindia.com/news/himachal/after-seven-month-freeze-pangi-valleys-lifeline-sach-pass-opens-to-traffic/",
+        "title": "After seven-month freeze, Pangi valley's lifeline Sach Pass opens to traffic",
+        "kind": "news",
+        "opened": true,
+        "source_date": "2026-05-11",
+        "accessed": "2026-09-28"
+      }
+    },
+    {
+      "office": "Deputy Commissioner, Chamba",
+      "announces": "Winter closure order and reopening to light vehicles",
+      "stretch": "Chamba to Killar over Sach Pass",
+      "channel": "Orders, reported by newspapers",
+      "url": null,
+      "source": {
+        "url": "https://www.tribuneindia.com/news/himachal/sach-pass-closed-for-winter/",
+        "title": "Sach Pass closed for winter",
+        "kind": "news",
+        "opened": true,
+        "source_date": "2024-12-03",
+        "accessed": "2026-09-28"
+      }
+    },
+    {
+      "office": "Himachal Pradesh Public Works Department",
+      "announces": "Roads open, blocked or restored",
+      "stretch": "Department roads across Himachal Pradesh",
+      "channel": "Road Status Information System website and mobile apps",
+      "url": "https://hppwd.in/",
+      "source": {
+        "url": "https://hppwd.in/",
+        "title": "Himachal Pradesh Public Works Department",
+        "kind": "official",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      }
+    },
+    {
+      "office": "Border Roads Organisation",
+      "announces": "Clears snow and landslides and restores the road",
+      "stretch": "Sansari to Killar to Tandi, and Killar towards Kishtwar",
+      "channel": "Statements to newspapers",
+      "url": "https://bro.gov.in/",
+      "source": {
+        "url": "https://www.tribuneindia.com/news/himachal/bro-restores-road-to-pangi-valley-for-light-vehicles-595288/amp",
+        "title": "BRO restores road to Pangi valley for light vehicles",
+        "kind": "news",
+        "opened": true,
+        "source_date": "2024-02-28",
+        "accessed": "2026-09-28"
+      }
+    }
+  ],
+  "hazards": [
+    {
+      "title": "Snow walls and falling stones after opening",
+      "detail": "Snow walls line several stretches in the first weeks, with stones coming down and a slippery surface from melt.",
+      "months": [
+        5,
+        6
+      ],
+      "source": {
+        "url": "https://www.tribuneindia.com/news/himachal/after-seven-month-freeze-pangi-valleys-lifeline-sach-pass-opens-to-traffic/",
+        "title": "After seven-month freeze, Pangi valley's lifeline Sach Pass opens to traffic",
+        "kind": "news",
+        "opened": true,
+        "source_date": "2026-05-11",
+        "accessed": "2026-09-28"
+      }
+    },
+    {
+      "title": "Water crossings on the Sach Pass road",
+      "detail": "Melt streams run across the road and are deepest in the afternoon.",
+      "months": [
+        6,
+        7,
+        8,
+        9
+      ],
+      "source": {
+        "url": "https://discoverwithdheeraj.com/sach-pass-travel-guide-himachal-itinerary/",
+        "title": "Sach Pass Travel Guide 2026",
+        "kind": "blog",
+        "opened": true,
+        "source_date": "2026-07",
+        "accessed": "2026-09-28"
+      }
+    },
+    {
+      "title": "No fuel between Chamba and Killar",
+      "detail": "A rider blog reports the last petrol pump is in Chamba, with none on the way over the pass.",
+      "months": [],
+      "source": {
+        "url": "https://discoverwithdheeraj.com/sach-pass-travel-guide-himachal-itinerary/",
+        "title": "Sach Pass Travel Guide 2026",
+        "kind": "blog",
+        "opened": true,
+        "source_date": "2026-07",
+        "accessed": "2026-09-28"
+      }
+    },
+    {
+      "title": "No mobile network beyond Bairagarh",
+      "detail": "Signal is reported to drop out after Bairagarh, so help cannot be called from the pass.",
+      "months": [],
+      "source": {
+        "url": "https://discoverwithdheeraj.com/sach-pass-travel-guide-himachal-itinerary/",
+        "title": "Sach Pass Travel Guide 2026",
+        "kind": "blog",
+        "opened": true,
+        "source_date": "2026-07",
+        "accessed": "2026-09-28"
+      }
+    },
+    {
+      "title": "Early snow in October",
+      "detail": "Snow blocked the Satrundi to Sach Pass road on 6 October 2025, cutting Pangi off.",
+      "months": [
+        10,
+        11
+      ],
+      "source": {
+        "url": "https://www.tribuneindia.com/news/himachal/white-october-pangi-wakes-up-to-snow-chamba-shivers-under-rain",
+        "title": "White October: Pangi wakes up to snow, Chamba shivers under rain",
+        "kind": "news",
+        "opened": true,
+        "source_date": "2025-10-07",
+        "accessed": "2026-09-28"
+      }
+    },
+    {
+      "title": "Cliff road from Killar to Kishtwar",
+      "detail": "Single-lane and largely unpaved, with blind turns, loose gravel, overhanging rock and long drops. Landslides and mud in the monsoon.",
+      "months": [
+        7,
+        8,
+        9
+      ],
+      "source": {
+        "url": "https://discoverwithdheeraj.com/killar-to-kishtwar-the-worlds-most-dangerous-road/",
+        "title": "Killar to Kishtwar Road 2026",
+        "kind": "blog",
+        "opened": true,
+        "source_date": "2026-08-25",
+        "accessed": "2026-09-28"
+      }
+    },
+    {
+      "title": "No fuel between Killar and Gulabgarh",
+      "detail": "A rider blog reports no pump on this stretch and unreliable stock at the one pump in Killar.",
+      "months": [],
+      "source": {
+        "url": "https://discoverwithdheeraj.com/killar-to-kishtwar-the-worlds-most-dangerous-road/",
+        "title": "Killar to Kishtwar Road 2026",
+        "kind": "blog",
+        "opened": true,
+        "source_date": "2026-08-25",
+        "accessed": "2026-09-28"
+      }
+    },
+    {
+      "title": "Winter snow on the Killar to Kishtwar road",
+      "detail": "Heavy snow shut the road in January 2026; it was restored on 1 February 2026.",
+      "months": [
+        1,
+        2
+      ],
+      "source": {
+        "url": "https://discoverwithdheeraj.com/killar-to-kishtwar-the-worlds-most-dangerous-road/",
+        "title": "Killar to Kishtwar Road 2026",
+        "kind": "blog",
+        "opened": true,
+        "source_date": "2026-08-25",
+        "accessed": "2026-09-28"
+      }
+    }
+  ],
+  "videos": [
+    {
+      "url": "https://www.youtube.com/watch?v=s_jPI2nlqEs",
+      "title": "SACH PASS TO KILLAR | Most Dangerous Road of India | Off-Road Adventure with Himalayan 450",
+      "channel": "Roots And Roar Tales",
+      "stretch": "Sach Pass to Killar",
+      "filmed": null,
+      "bike": "Himalayan 450"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=3bYHeA_ysxY",
+      "title": "Chamba To Sach Pass Motorcycle Ride - Sach Pass Solo Part 2",
+      "channel": "Nishant Views",
+      "stretch": "Chamba to Sach Pass",
+      "filmed": null,
+      "bike": null
+    }
+  ],
+  "gaps": [
+    "No highway number found for the Chamba to Tissa to Killar road or for the Killar to Kishtwar road.",
+    "Closing dates for 2022, 2023 and 2025 were not found. Newspapers give 15 October as the official yearly closing date, but the 2024 order came on 3 December.",
+    "The 2026 opening date is unclear: two reports from the same newspaper give late April and the second week of May.",
+    "No report says when motorcycles, as distinct from light motor vehicles, are allowed over the pass.",
+    "The identity check and undertaking at Satrundi are reported by a rider blog only.",
+    "Himachal entry toll: the two-wheeler exemption rests on a newspaper report of the Chief Minister's statement (26 March 2026). The official Toll Policy 2026-27 document on hptax.gov.in failed to open (certificate error), so it is not confirmed for motorcycles registered in other states.",
+    "Jammu and Kashmir side (Killar to Gulabgarh to Kishtwar): rules, check posts and road status come from one rider blog; no official page or order was found, and no office that announces status was identified.",
+    "Videos: titles and channels were read from the video pages; filming dates are not confirmed."
+  ]
+}

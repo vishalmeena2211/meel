@@ -1,0 +1,596 @@
+{
+  "slug": "east-sikkim-silk-route",
+  "header": {
+    "highway": {
+      "value": "NH 310 (Jawaharlal Nehru Marg) from Gangtok to Nathu La",
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/Nathu_La",
+        "title": "Nathu La",
+        "kind": "encyclopedia",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      }
+    },
+    "highest_point": {
+      "name": "Nathu La",
+      "altitude_m": 4310,
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/Nathu_La",
+        "title": "Nathu La",
+        "kind": "encyclopedia",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      }
+    },
+    "usual_days": {
+      "value": "2 to 3",
+      "source": {
+        "url": "https://discoverwithdheeraj.com/zuluk-travel-guide-offbeat-sikkim/",
+        "title": "Zuluk Travel Guide 2026 | Silk Route Sikkim",
+        "kind": "blog",
+        "opened": true,
+        "source_date": "2026-08-26",
+        "accessed": "2026-09-28"
+      }
+    },
+    "usual_season": {
+      "value": "September to November, and March to May",
+      "source": {
+        "url": "https://discoverwithdheeraj.com/zuluk-travel-guide-offbeat-sikkim/",
+        "title": "Zuluk Travel Guide 2026 | Silk Route Sikkim",
+        "kind": "blog",
+        "opened": true,
+        "source_date": "2026-08-26",
+        "accessed": "2026-09-28"
+      }
+    },
+    "one_line": "East Sikkim, from Gangtok past Tsomgo Lake to Nathu La, then down the Zuluk loops to Rongli"
+  },
+  "rules": [
+    {
+      "id": "sikkim-protected-area-permit",
+      "kind": "permit",
+      "title": "Sikkim: Protected Area Permit for border areas",
+      "detail": "Needed for Tsomgo, Nathu La, Zuluk to Kupup, Lachen, Lachung, Thangu and Gurudongmar. Issued by the Permit Cell in Gangtok and district tourism offices. The page gives no fee amounts.",
+      "applies_to": "All visitors",
+      "set_by": "Tourism and Civil Aviation Department, Government of Sikkim",
+      "official_url": "https://www.sikkim.gov.in/department/departmentmenudetails?url=Menu%3Dtourism-civil-aviation-department%2Fgeneral-info",
+      "has_official_order": true,
+      "source": {
+        "url": "https://www.sikkim.gov.in/department/departmentmenudetails?url=Menu%3Dtourism-civil-aviation-department%2Fgeneral-info",
+        "title": "Tourism and Civil Aviation Department: general information",
+        "kind": "official",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      },
+      "history": [
+        {
+          "date": "2026-01",
+          "change": "Blogs report permits became digital with a scannable code, applied for online before arrival.",
+          "source": {
+            "url": "https://bestofnortheast.com/sikkim-permit-2026/",
+            "title": "The NEW Sikkim Permit (2026): Step-by-Step Guide",
+            "kind": "blog",
+            "opened": true,
+            "source_date": "2026-04-03",
+            "accessed": "2026-09-28"
+          }
+        },
+        {
+          "date": "2026-08-19",
+          "change": "Stakeholder meeting on an Integrated Online Permit System with digital verification at check posts.",
+          "source": {
+            "url": "https://www.indiatodayne.in/sikkim/story/sikkim-may-bar-two-wheelers-from-rap-pap-areas-under-proposed-permit-norms-1440153-2026-08-19",
+            "title": "Sikkim may bar two-wheelers from RAP, PAP areas under proposed permit norms",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2026-08-19",
+            "accessed": "2026-09-28"
+          }
+        }
+      ]
+    },
+    {
+      "id": "sikkim-own-motorcycle-only",
+      "kind": "motorcycle-rule",
+      "title": "Sikkim: motorcycle must be registered to the rider",
+      "detail": "The official page allows only self-registered, self-ridden motorcycles in permit areas. Apply one day ahead with the bank fee receipt. Two-wheeler permits run up to seven days.",
+      "applies_to": "Riders on their own motorcycles",
+      "set_by": "Tourism and Civil Aviation Department, Government of Sikkim",
+      "official_url": "https://www.sikkim.gov.in/department/departmentmenudetails?url=Menu%3Dtourism-civil-aviation-department%2Fgeneral-info",
+      "has_official_order": true,
+      "source": {
+        "url": "https://www.sikkim.gov.in/department/departmentmenudetails?url=Menu%3Dtourism-civil-aviation-department%2Fgeneral-info",
+        "title": "Tourism and Civil Aviation Department: general information",
+        "kind": "official",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      },
+      "history": []
+    },
+    {
+      "id": "sikkim-rented-motorcycle-through-operator",
+      "kind": "motorcycle-rule",
+      "title": "Sikkim: rented motorcycles apply through a registered operator",
+      "detail": "A motorcycle hired inside Sikkim gets its permit through a government-registered local tour operator, not directly by the rider.",
+      "applies_to": "Riders on motorcycles rented in Sikkim",
+      "set_by": "Tourism and Civil Aviation Department, Government of Sikkim",
+      "official_url": "https://www.sikkim.gov.in/department/departmentmenudetails?url=Menu%3Dtourism-civil-aviation-department%2Fgeneral-info",
+      "has_official_order": true,
+      "source": {
+        "url": "https://www.sikkim.gov.in/department/departmentmenudetails?url=Menu%3Dtourism-civil-aviation-department%2Fgeneral-info",
+        "title": "Tourism and Civil Aviation Department: general information",
+        "kind": "official",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      },
+      "history": []
+    },
+    {
+      "id": "sikkim-two-wheeler-bar-proposal-2026",
+      "kind": "motorcycle-rule",
+      "title": "Sikkim: proposed bar on two-wheelers in permit areas",
+      "detail": "Proposal discussed on 19 August 2026 would bar two-wheelers and vehicles registered outside Sikkim from permit areas. It needs Cabinet approval. No decision found as of 28 September 2026.",
+      "applies_to": "All two-wheelers; all vehicles registered outside Sikkim",
+      "set_by": "Government of Sikkim (Cabinet decision pending)",
+      "official_url": null,
+      "has_official_order": false,
+      "source": {
+        "url": "https://www.indiatodayne.in/sikkim/story/sikkim-may-bar-two-wheelers-from-rap-pap-areas-under-proposed-permit-norms-1440153-2026-08-19",
+        "title": "Sikkim may bar two-wheelers from RAP, PAP areas under proposed permit norms",
+        "kind": "news",
+        "opened": true,
+        "source_date": "2026-08-19",
+        "accessed": "2026-09-28"
+      },
+      "history": [
+        {
+          "date": "2026-08-19",
+          "change": "Proposal raised at a stakeholder meeting chaired by the Chief Minister; reported as not yet in effect.",
+          "source": {
+            "url": "https://www.indiatodayne.in/sikkim/story/sikkim-may-bar-two-wheelers-from-rap-pap-areas-under-proposed-permit-norms-1440153-2026-08-19",
+            "title": "Sikkim may bar two-wheelers from RAP, PAP areas under proposed permit norms",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2026-08-19",
+            "accessed": "2026-09-28"
+          }
+        }
+      ]
+    },
+    {
+      "id": "nathula-no-permits-for-monday",
+      "kind": "timing",
+      "title": "Nathu La: no permits for Mondays",
+      "detail": "The official page issues Nathu La permits for Tuesday to Sunday only. Other sources list fewer open days, so confirm in Gangtok the day before.",
+      "applies_to": "All visitors",
+      "set_by": "Tourism and Civil Aviation Department, Government of Sikkim",
+      "official_url": "https://www.sikkim.gov.in/department/departmentmenudetails?url=Menu%3Dtourism-civil-aviation-department%2Fgeneral-info",
+      "has_official_order": true,
+      "source": {
+        "url": "https://www.sikkim.gov.in/department/departmentmenudetails?url=Menu%3Dtourism-civil-aviation-department%2Fgeneral-info",
+        "title": "Tourism and Civil Aviation Department: general information",
+        "kind": "official",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      },
+      "history": []
+    },
+    {
+      "id": "nathula-indian-citizens-only",
+      "kind": "permit",
+      "title": "Nathu La: Indian citizens only, one-day visit",
+      "detail": "The official page limits Nathu La to Indian citizens on a day trip. A Tsomgo permit is also valid for one day only.",
+      "applies_to": "All visitors",
+      "set_by": "Tourism and Civil Aviation Department, Government of Sikkim",
+      "official_url": "https://www.sikkim.gov.in/department/departmentmenudetails?url=Menu%3Dtourism-civil-aviation-department%2Fgeneral-info",
+      "has_official_order": true,
+      "source": {
+        "url": "https://www.sikkim.gov.in/department/departmentmenudetails?url=Menu%3Dtourism-civil-aviation-department%2Fgeneral-info",
+        "title": "Tourism and Civil Aviation Department: general information",
+        "kind": "official",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      },
+      "history": []
+    },
+    {
+      "id": "nathula-environment-fee",
+      "kind": "fee",
+      "title": "Nathu La: environment fee paid through the bank",
+      "detail": "Paid through the State Bank of Sikkim. Sikkim-registered private motorcycles skip permit fees elsewhere but still pay for Nathu La. The page gives no amount.",
+      "applies_to": "All vehicles going to Nathu La",
+      "set_by": "Tourism and Civil Aviation Department, Government of Sikkim",
+      "official_url": "https://www.sikkim.gov.in/department/departmentmenudetails?url=Menu%3Dtourism-civil-aviation-department%2Fgeneral-info",
+      "has_official_order": true,
+      "source": {
+        "url": "https://www.sikkim.gov.in/department/departmentmenudetails?url=Menu%3Dtourism-civil-aviation-department%2Fgeneral-info",
+        "title": "Tourism and Civil Aviation Department: general information",
+        "kind": "official",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      },
+      "history": []
+    },
+    {
+      "id": "east-sikkim-snow-permit-suspension",
+      "kind": "permit",
+      "title": "Tsomgo and Nathu La: permits suspended after snowfall",
+      "detail": "The tourism department stops issuing permits when snow or black ice makes the road unsafe, and resumes once it is cleared.",
+      "applies_to": "All visitors",
+      "set_by": "Tourism and Civil Aviation Department, Government of Sikkim",
+      "official_url": "https://www.sikkim.gov.in/department/departmentmenudetails?url=Menu%3Dtourism-civil-aviation-department%2Fgeneral-info",
+      "has_official_order": false,
+      "source": {
+        "url": "https://www.nativeplanet.com/news/heavy-snowfall-in-sikkim-tourist-permits-suspended-road-nathula-tsomgo-lake-closed-015005.html",
+        "title": "Heavy Snowfall in Sikkim: Tourist Permits Suspended, Road, Nathula and Tsomgo Lake Closed",
+        "kind": "news",
+        "opened": true,
+        "source_date": "2025-01-10",
+        "accessed": "2026-09-28"
+      },
+      "history": [
+        {
+          "date": "2023-10",
+          "change": "Permits stopped after snowfall; the department notified their resumption in mid-October 2023.",
+          "source": {
+            "url": "https://www.indiatodayne.in/sikkim/story/sikkim-government-to-start-issuing-tourist-permits-for-tsomgo-lake-and-nathula-pass-694185-2023-10-13",
+            "title": "Sikkim government to start issuing tourist permits for Tsomgo Lake and Nathula Pass",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2023-10-13",
+            "accessed": "2026-09-28"
+          }
+        },
+        {
+          "date": "2025-01",
+          "change": "Permits suspended after heavy snowfall and black ice; reported 10 January 2025.",
+          "source": {
+            "url": "https://www.nativeplanet.com/news/heavy-snowfall-in-sikkim-tourist-permits-suspended-road-nathula-tsomgo-lake-closed-015005.html",
+            "title": "Heavy Snowfall in Sikkim: Tourist Permits Suspended, Road, Nathula and Tsomgo Lake Closed",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2025-01-10",
+            "accessed": "2026-09-28"
+          }
+        }
+      ]
+    },
+    {
+      "id": "zuluk-private-vehicles-conflict",
+      "kind": "motorcycle-rule",
+      "title": "Zuluk: sources disagree on private vehicles",
+      "detail": "One blog says only Sikkim-registered hired vehicles may run the Silk Route. A travel site describes riding it on a permit from Rongli. No official statement found.",
+      "applies_to": "Riders on their own motorcycles",
+      "set_by": "Not established",
+      "official_url": null,
+      "has_official_order": false,
+      "source": {
+        "url": "https://discoverwithdheeraj.com/zuluk-travel-guide-offbeat-sikkim/",
+        "title": "Zuluk Travel Guide 2026 | Silk Route Sikkim",
+        "kind": "blog",
+        "opened": true,
+        "source_date": "2026-08-26",
+        "accessed": "2026-09-28"
+      },
+      "history": []
+    },
+    {
+      "id": "zuluk-foreigners-not-allowed-claim",
+      "kind": "permit",
+      "title": "Zuluk: closed to foreign citizens, per blog",
+      "detail": "A blog updated in August 2026 says Zuluk and the Silk Route stay closed to foreign citizens even with a Restricted Area Permit. No official order found.",
+      "applies_to": "Foreign citizens",
+      "set_by": "Not established; reported by a blog",
+      "official_url": null,
+      "has_official_order": false,
+      "source": {
+        "url": "https://discoverwithdheeraj.com/zuluk-travel-guide-offbeat-sikkim/",
+        "title": "Zuluk Travel Guide 2026 | Silk Route Sikkim",
+        "kind": "blog",
+        "opened": true,
+        "source_date": "2026-08-26",
+        "accessed": "2026-09-28"
+      },
+      "history": []
+    },
+    {
+      "id": "sikkim-150cc-minimum-claim",
+      "kind": "motorcycle-rule",
+      "title": "Sikkim: 150cc minimum claimed for permit areas",
+      "detail": "Blogs say motorcycles under 150cc are refused permits for North Sikkim, Nathu La and Zuluk. The official page does not mention engine size; no order found.",
+      "applies_to": "All two-wheelers",
+      "set_by": "Not established; reported by blogs",
+      "official_url": null,
+      "has_official_order": false,
+      "source": {
+        "url": "https://northeastindiaconnect.com/sikkim-bike-permit-rules-2026/",
+        "title": "Sikkim Bike Permit Rules: What Every Rider Needs to Know Before Hitting North Sikkim in 2026",
+        "kind": "blog",
+        "opened": true,
+        "source_date": "2026-08-27",
+        "accessed": "2026-09-28"
+      },
+      "history": []
+    },
+    {
+      "id": "sikkim-aadhaar-not-proof-of-nationality",
+      "kind": "document",
+      "title": "Sikkim: Aadhaar not accepted as proof of nationality",
+      "detail": "The official tourism page says an Aadhaar card is not accepted as proof of citizenship or nationality when applying for permits.",
+      "applies_to": "Indian citizens",
+      "set_by": "Tourism and Civil Aviation Department, Government of Sikkim",
+      "official_url": "https://www.sikkim.gov.in/department/departmentmenudetails?url=Menu%3Dtourism-civil-aviation-department%2Fgeneral-info",
+      "has_official_order": true,
+      "source": {
+        "url": "https://www.sikkim.gov.in/department/departmentmenudetails?url=Menu%3Dtourism-civil-aviation-department%2Fgeneral-info",
+        "title": "Tourism and Civil Aviation Department: general information",
+        "kind": "official",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      },
+      "history": []
+    },
+    {
+      "id": "sikkim-motorcycle-permit-documents-claim",
+      "kind": "document",
+      "title": "Sikkim: papers riders are asked for",
+      "detail": "A travel site lists photo identity, driving licence, registration, insurance and pollution certificates, plus photographs, in duplicate. No official list found.",
+      "applies_to": "Riders on their own motorcycles",
+      "set_by": "Not established; reported by a travel site",
+      "official_url": null,
+      "has_official_order": false,
+      "source": {
+        "url": "https://www.darjeeling-tourism.com/darj_0001fc.htm",
+        "title": "How to self drive a motorbike or car in Sikkim",
+        "kind": "blog",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      },
+      "history": []
+    },
+    {
+      "id": "sikkim-foreigners-restricted-area-permit",
+      "kind": "permit",
+      "title": "Sikkim: foreign citizens need a Restricted Area Permit",
+      "detail": "Valid 30 days, extendable by 30 in Gangtok. Protected areas need a group routed through a registered operator. Bhutanese citizens are exempt.",
+      "applies_to": "Foreign citizens",
+      "set_by": "Tourism and Civil Aviation Department, Government of Sikkim",
+      "official_url": "https://www.sikkim.gov.in/department/departmentmenudetails?url=Menu%3Dtourism-civil-aviation-department%2Fgeneral-info",
+      "has_official_order": true,
+      "source": {
+        "url": "https://www.sikkim.gov.in/department/departmentmenudetails?url=Menu%3Dtourism-civil-aviation-department%2Fgeneral-info",
+        "title": "Tourism and Civil Aviation Department: general information",
+        "kind": "official",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      },
+      "history": []
+    },
+    {
+      "id": "sikkim-foreigners-international-driving-licence",
+      "kind": "document",
+      "title": "Sikkim: foreign riders need an International Driving Licence",
+      "detail": "Stated on the official tourism page. A foreigner's two-wheeler pass covers one day to Tsomgo, or up to five days in North Sikkim.",
+      "applies_to": "Foreign citizens on two-wheelers",
+      "set_by": "Tourism and Civil Aviation Department, Government of Sikkim",
+      "official_url": "https://www.sikkim.gov.in/department/departmentmenudetails?url=Menu%3Dtourism-civil-aviation-department%2Fgeneral-info",
+      "has_official_order": true,
+      "source": {
+        "url": "https://www.sikkim.gov.in/department/departmentmenudetails?url=Menu%3Dtourism-civil-aviation-department%2Fgeneral-info",
+        "title": "Tourism and Civil Aviation Department: general information",
+        "kind": "official",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      },
+      "history": []
+    }
+  ],
+  "season": {
+    "note": "There is no fixed seasonal closure; permits are suspended for days at a time after snowfall, mostly between December and February.",
+    "history": [
+      {
+        "year": 2023,
+        "connected": null,
+        "open_to_motorcycles": null,
+        "closed": "2023-10",
+        "note": "Permits stopped after snowfall in October; resumption notified for mid-October. Exact days are unclear in the report.",
+        "sources": [
+          {
+            "url": "https://www.indiatodayne.in/sikkim/story/sikkim-government-to-start-issuing-tourist-permits-for-tsomgo-lake-and-nathula-pass-694185-2023-10-13",
+            "title": "Sikkim government to start issuing tourist permits for Tsomgo Lake and Nathula Pass",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2023-10-13",
+            "accessed": "2026-09-28"
+          }
+        ]
+      },
+      {
+        "year": 2025,
+        "connected": null,
+        "open_to_motorcycles": null,
+        "closed": "2025-01",
+        "note": "Permits suspended after heavy snowfall; reported 10 January 2025. Resumption date not found.",
+        "sources": [
+          {
+            "url": "https://www.nativeplanet.com/news/heavy-snowfall-in-sikkim-tourist-permits-suspended-road-nathula-tsomgo-lake-closed-015005.html",
+            "title": "Heavy Snowfall in Sikkim: Tourist Permits Suspended, Road, Nathula and Tsomgo Lake Closed",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2025-01-10",
+            "accessed": "2026-09-28"
+          }
+        ]
+      }
+    ]
+  },
+  "authorities": [
+    {
+      "office": "Tourism and Civil Aviation Department, Government of Sikkim (Permit Cell, Gangtok)",
+      "announces": "Issues Protected Area Permits; stops and resumes permits after snow or landslides",
+      "stretch": "All permit areas in Sikkim",
+      "channel": "Permit counters; notifications reported by news",
+      "url": "https://www.sikkim.gov.in/department/departmentmenudetails?url=Menu%3Dtourism-civil-aviation-department%2Fgeneral-info",
+      "source": {
+        "url": "https://www.sikkim.gov.in/department/departmentmenudetails?url=Menu%3Dtourism-civil-aviation-department%2Fgeneral-info",
+        "title": "Tourism and Civil Aviation Department: general information",
+        "kind": "official",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      }
+    },
+    {
+      "office": "District Tourism Office, Rongli",
+      "announces": "Issues permits for the Zuluk side",
+      "stretch": "Rongli to Zuluk and Kupup",
+      "channel": "Office counter",
+      "url": "https://www.sikkim.gov.in/department/departmentmenudetails?url=Menu%3Dtourism-civil-aviation-department%2Fgeneral-info",
+      "source": {
+        "url": "https://www.sikkim.gov.in/department/departmentmenudetails?url=Menu%3Dtourism-civil-aviation-department%2Fgeneral-info",
+        "title": "Tourism and Civil Aviation Department: general information",
+        "kind": "official",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      }
+    },
+    {
+      "office": "National Highways and Infrastructure Development Corporation Limited",
+      "announces": "Restores National Highway 10 after landslides",
+      "stretch": "Sevoke to Rangpo along the Teesta",
+      "channel": "Statements carried by the public broadcaster",
+      "url": null,
+      "source": {
+        "url": "https://www.newsonair.gov.in/nh-10-reopens-after-six-days-of-landslide-disruption-in-sikkim-and-kalimpong",
+        "title": "NH-10 reopens after six days of landslide disruption in Sikkim and Kalimpong",
+        "kind": "news",
+        "opened": true,
+        "source_date": "2025-08-17",
+        "accessed": "2026-09-28"
+      }
+    },
+    {
+      "office": "Roads and Bridges Department, Government of Sikkim",
+      "announces": "Inspects and restores state roads after monsoon damage",
+      "stretch": "State roads across Sikkim",
+      "channel": "Statements reported by news",
+      "url": null,
+      "source": {
+        "url": "https://www.indiatodayne.in/sikkim/story/sikkim-begins-statewide-road-inspections-to-assess-monsoon-damage-1453517-2026-09-21",
+        "title": "Sikkim begins statewide road inspections to assess monsoon damage",
+        "kind": "news",
+        "opened": true,
+        "source_date": "2026-09-21",
+        "accessed": "2026-09-28"
+      }
+    },
+    {
+      "office": "Government of Sikkim, Cabinet",
+      "announces": "Decides whether the August 2026 two-wheeler proposal becomes a rule",
+      "stretch": "All permit areas in Sikkim",
+      "channel": "Reported by news",
+      "url": null,
+      "source": {
+        "url": "https://www.indiatodayne.in/sikkim/story/sikkim-may-bar-two-wheelers-from-rap-pap-areas-under-proposed-permit-norms-1440153-2026-08-19",
+        "title": "Sikkim may bar two-wheelers from RAP, PAP areas under proposed permit norms",
+        "kind": "news",
+        "opened": true,
+        "source_date": "2026-08-19",
+        "accessed": "2026-09-28"
+      }
+    }
+  ],
+  "hazards": [
+    {
+      "title": "Black ice on the road to Tsomgo",
+      "detail": "In January 2025 black ice formed at Thulo Khola after heavy snow and permits were suspended.",
+      "months": [
+        12,
+        1,
+        2
+      ],
+      "source": {
+        "url": "https://www.nativeplanet.com/news/heavy-snowfall-in-sikkim-tourist-permits-suspended-road-nathula-tsomgo-lake-closed-015005.html",
+        "title": "Heavy Snowfall in Sikkim: Tourist Permits Suspended, Road, Nathula and Tsomgo Lake Closed",
+        "kind": "news",
+        "opened": true,
+        "source_date": "2025-01-10",
+        "accessed": "2026-09-28"
+      }
+    },
+    {
+      "title": "Rain, fog and slides on the Zuluk loops",
+      "detail": "A blog warns of heavy rain, poor visibility and possible landslides on the Silk Route in the monsoon.",
+      "months": [
+        6,
+        7,
+        8
+      ],
+      "source": {
+        "url": "https://discoverwithdheeraj.com/zuluk-travel-guide-offbeat-sikkim/",
+        "title": "Zuluk Travel Guide 2026 | Silk Route Sikkim",
+        "kind": "blog",
+        "opened": true,
+        "source_date": "2026-08-26",
+        "accessed": "2026-09-28"
+      }
+    },
+    {
+      "title": "No fuel or cash machines on the Silk Route",
+      "detail": "A blog says Gangtok is the last place for fuel and that there are no cash machines at Zuluk or along the route.",
+      "months": [],
+      "source": {
+        "url": "https://discoverwithdheeraj.com/zuluk-travel-guide-offbeat-sikkim/",
+        "title": "Zuluk Travel Guide 2026 | Silk Route Sikkim",
+        "kind": "blog",
+        "opened": true,
+        "source_date": "2026-08-26",
+        "accessed": "2026-09-28"
+      }
+    },
+    {
+      "title": "Landslides on National Highway 10 into Sikkim",
+      "detail": "The road along the Teesta was shut for six days in August 2025 after it collapsed near 9th Mile. Repeated slides slowed repairs.",
+      "months": [
+        6,
+        7,
+        8,
+        9
+      ],
+      "source": {
+        "url": "https://www.newsonair.gov.in/nh-10-reopens-after-six-days-of-landslide-disruption-in-sikkim-and-kalimpong",
+        "title": "NH-10 reopens after six days of landslide disruption in Sikkim and Kalimpong",
+        "kind": "news",
+        "opened": true,
+        "source_date": "2025-08-17",
+        "accessed": "2026-09-28"
+      }
+    }
+  ],
+  "videos": [],
+  "gaps": [
+    "No report found of a Cabinet decision on the 19 August 2026 two-wheeler proposal: one web search and the Sikkim front pages of two news sites were checked on 28 September 2026.",
+    "Open days for Nathu La conflict: the official page says Tuesday to Sunday; Wikipedia says Thursday to Sunday; a travel site says Wednesday to Sunday.",
+    "No official statement found on whether a private motorcycle may ride the Zuluk route; two unofficial sources contradict each other.",
+    "No dated winter closure and reopening dates found for Nathu La for 2024 or 2026.",
+    "Highway number for the Zuluk to Rongli side not sourced.",
+    "No official source for the 150cc minimum or the documents list.",
+    "The vehicle pass portal vehiclepass.sikkim.gov.in could not be opened (certificate error).",
+    "Fee amounts are not on the official page and are left out.",
+    "Videos not collected."
+  ]
+}

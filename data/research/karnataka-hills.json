@@ -1,0 +1,420 @@
+{
+  "slug": "karnataka-hills",
+  "header": {
+    "highway": {
+      "value": "NH 275 (Bengaluru to Mysuru and Madikeri); NH 169A (Thirthahalli to Agumbe and Udupi)",
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/National_Highway_275_(India)",
+        "title": "National Highway 275 (India)",
+        "kind": "encyclopedia",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      }
+    },
+    "highest_point": {
+      "name": "Mullayanagiri",
+      "altitude_m": 1930,
+      "source": {
+        "url": "https://chikkamagaluru.nic.in/en/tourist-place/mullayanagiri/",
+        "title": "Mullayanagiri Hill | District Chikkamagaluru, Government of Karnataka | India",
+        "kind": "official",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      }
+    },
+    "hairpin_bends": {
+      "value": "14 to 16 on the Agumbe ghat, by different counts",
+      "source": {
+        "url": "https://www.deccanherald.com/content/368373/of-hairpin-bends-sharp-curves.html",
+        "title": "Of hairpin bends and sharp curves",
+        "kind": "news",
+        "opened": true,
+        "source_date": "2013-11-11",
+        "accessed": "2026-09-28"
+      }
+    },
+    "usual_days": null,
+    "usual_season": {
+      "value": "November to February",
+      "source": {
+        "url": "https://karnatakatourism.org/tour-item/agumbe/",
+        "title": "Agumbe - Karnataka Tourism",
+        "kind": "official",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      }
+    },
+    "one_line": "Karnataka's Western Ghats: coffee hills of Chikkamagaluru, the rainforest ghat at Agumbe, and Coorg"
+  },
+  "rules": [
+    {
+      "id": "mullayanagiri-slot-booking",
+      "kind": "permit",
+      "title": "Mullayanagiri: book a time slot online",
+      "detail": "Vehicles book a morning slot (6 am to noon) or afternoon slot (1 pm to 6 pm). Each slot takes 600 vehicles, 100 of them two-wheelers.",
+      "applies_to": "All visiting vehicles; buses and minibuses are barred",
+      "set_by": "Deputy Commissioner, Chikkamagaluru",
+      "official_url": "https://chikkamagaluru.nic.in/en/mullayanagiri-and-inam-dattathreya-peeta-online-toll-booking-portal/",
+      "has_official_order": true,
+      "source": {
+        "url": "https://daijiworld.com/news/newsDisplay?newsID=1290782",
+        "title": "Chikkamagaluru: Vehicle entry to popular hill destinations restricted from Sept…",
+        "kind": "news",
+        "opened": true,
+        "source_date": "2025-08-30",
+        "accessed": "2026-09-28"
+      },
+      "history": [
+        {
+          "date": "2024-08-15",
+          "change": "District website published the online booking link.",
+          "source": {
+            "url": "https://chikkamagaluru.nic.in/en/mullayanagiri-and-inam-dattathreya-peeta-online-toll-booking-portal/",
+            "title": "Mullayanagiri and Inam Dattathreya Peeta online Toll booking portal",
+            "kind": "official",
+            "opened": true,
+            "source_date": "2024-08-15",
+            "accessed": "2026-09-28"
+          }
+        },
+        {
+          "date": "2025-09-01",
+          "change": "Caps per slot took effect for Mullayanagiri, Seethalayanagiri, Bababudangiri and Manikyadhara.",
+          "source": {
+            "url": "https://daijiworld.com/news/newsDisplay?newsID=1290782",
+            "title": "Chikkamagaluru: Vehicle entry to popular hill destinations restricted from Sept…",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2025-08-30",
+            "accessed": "2026-09-28"
+          }
+        }
+      ]
+    },
+    {
+      "id": "mullayanagiri-toll-paid-online",
+      "kind": "fee",
+      "title": "Mullayanagiri: toll paid when booking",
+      "detail": "The booking form lists Bike as a vehicle type and charges the toll online. The amount appears only after a slot is chosen.",
+      "applies_to": "All visiting vehicles, motorcycles included",
+      "set_by": "District Tourism Development Committee, Chikkamagaluru",
+      "official_url": "https://pgbiz.omniware.in/chikkamagalurutourism",
+      "has_official_order": true,
+      "source": {
+        "url": "https://pgbiz.omniware.in/chikkamagalurutourism",
+        "title": "Omniware Generate Challan",
+        "kind": "official",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      },
+      "history": []
+    },
+    {
+      "id": "agumbe-ghat-monsoon-heavy-vehicle-ban",
+      "kind": "timing",
+      "title": "Agumbe ghat: heavy vehicles barred in monsoon",
+      "detail": "From 15 June to 30 September only light vehicles may use the ghat. Motorcycles may pass. Expect sudden closures after slides.",
+      "applies_to": "Heavy vehicles",
+      "set_by": "Deputy Commissioners of Shivamogga and Udupi",
+      "official_url": null,
+      "has_official_order": true,
+      "source": {
+        "url": "https://daijiworld.com/news/newsDisplay?newsID=1318273",
+        "title": "Udupi: Heavy vehicles barred on Agumbe Ghat till Sep 30…",
+        "kind": "news",
+        "opened": true,
+        "source_date": "2026-06-26",
+        "accessed": "2026-09-28"
+      },
+      "history": [
+        {
+          "date": "2026-06-15",
+          "change": "Shivamogga order barred heavy vehicles for the monsoon.",
+          "source": {
+            "url": "https://www.thehansindia.com/karnataka/heavy-vehicles-banned-in-agumbe-ghat-from-june-15-1085394",
+            "title": "Heavy vehicles banned in Agumbe Ghat from June 15",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2026-06-12",
+            "accessed": "2026-09-28"
+          }
+        },
+        {
+          "date": "2026-06-26",
+          "change": "Udupi order reported, running to 30 September.",
+          "source": {
+            "url": "https://daijiworld.com/news/newsDisplay?newsID=1318273",
+            "title": "Udupi: Heavy vehicles barred on Agumbe Ghat till Sep 30…",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2026-06-26",
+            "accessed": "2026-09-28"
+          }
+        }
+      ]
+    },
+    {
+      "id": "nagarahole-roads-daylight-only",
+      "kind": "motorcycle-rule",
+      "title": "Nagarahole: forest gates shut at 6 pm",
+      "detail": "Gates into the reserve close at 6 pm and entering later is an offence. A travel wiki adds that two-wheelers are refused on the Kutta road.",
+      "applies_to": "All vehicles; two-wheelers on the Kutta road",
+      "set_by": "Karnataka Forest Department, Nagarahole Tiger Reserve",
+      "official_url": null,
+      "has_official_order": false,
+      "source": {
+        "url": "https://www.deccanherald.com/india/karnataka/case-registered-against-five-for-driving-through-db-kuppe-range-of-nagarahole-tiger-reserve-2737130",
+        "title": "Case registered against five for driving through DB Kuppe range…",
+        "kind": "news",
+        "opened": true,
+        "source_date": "2023-10-22",
+        "accessed": "2026-09-28"
+      },
+      "history": [
+        {
+          "date": "2023-10",
+          "change": "Five people charged for driving in through a gate after closing time.",
+          "source": {
+            "url": "https://www.deccanherald.com/india/karnataka/case-registered-against-five-for-driving-through-db-kuppe-range-of-nagarahole-tiger-reserve-2737130",
+            "title": "Case registered against five for driving through DB Kuppe range…",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2023-10-22",
+            "accessed": "2026-09-28"
+          }
+        },
+        {
+          "date": null,
+          "change": "Travel wiki gives 6 am to 6 pm and says two-wheelers are not allowed from Kutta.",
+          "source": {
+            "url": "https://en.wikivoyage.org/wiki/Nagarhole_National_Park",
+            "title": "Nagarhole National Park",
+            "kind": "encyclopedia",
+            "opened": true,
+            "source_date": null,
+            "accessed": "2026-09-28"
+          }
+        }
+      ]
+    },
+    {
+      "id": "bengaluru-mysuru-expressway-no-two-wheelers",
+      "kind": "motorcycle-rule",
+      "title": "Bengaluru to Mysuru Expressway: no two-wheelers",
+      "detail": "Riders heading for Coorg through Mysuru must use the toll-free service road beside the expressway, not the main carriageway.",
+      "applies_to": "Two-wheelers, three-wheelers, tractors",
+      "set_by": "National Highways Authority of India",
+      "official_url": null,
+      "has_official_order": true,
+      "source": {
+        "url": "https://thefederal.com/states/south/karnataka/nhai-bans-two-wheelers-autos-on-bengaluru-mysuru-expressway",
+        "title": "NHAI bans two-wheelers, autos on Bengaluru-Mysuru Expressway",
+        "kind": "news",
+        "opened": true,
+        "source_date": "2023-07-26",
+        "accessed": "2026-09-28"
+      },
+      "history": [
+        {
+          "date": "2023-07-12",
+          "change": "Notification issued.",
+          "source": {
+            "url": "https://thefederal.com/states/south/karnataka/nhai-bans-two-wheelers-autos-on-bengaluru-mysuru-expressway",
+            "title": "NHAI bans two-wheelers, autos on Bengaluru-Mysuru Expressway",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2023-07-26",
+            "accessed": "2026-09-28"
+          }
+        },
+        {
+          "date": "2023-08-01",
+          "change": "Ban took effect.",
+          "source": {
+            "url": "https://thefederal.com/states/south/karnataka/nhai-bans-two-wheelers-autos-on-bengaluru-mysuru-expressway",
+            "title": "NHAI bans two-wheelers, autos on Bengaluru-Mysuru Expressway",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2023-07-26",
+            "accessed": "2026-09-28"
+          }
+        },
+        {
+          "date": "2023-08-03",
+          "change": "Service road named as the way for two-wheelers.",
+          "source": {
+            "url": "https://www.psuconnect.in/road-and-transport-news/alternate-route-for-2-or-3-wheelers-on-bengaluru-mysuru-expressway",
+            "title": "NHAI Provides Alternate Route for 2/3-Wheelers on Bengaluru-Mysuru Expressway",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2023-08-03",
+            "accessed": "2026-09-28"
+          }
+        }
+      ]
+    }
+  ],
+  "season": {
+    "note": "The state tourism office names November to February for Agumbe; July and August are the wettest months, when the ghat is prone to landslides.",
+    "history": []
+  },
+  "authorities": [
+    {
+      "office": "Deputy Commissioner, Chikkamagaluru",
+      "announces": "Slot booking and vehicle caps for the hill roads",
+      "stretch": "Chikkamagaluru to Mullayanagiri and Bababudangiri",
+      "channel": "District website",
+      "url": "https://chikkamagaluru.nic.in/en/",
+      "source": {
+        "url": "https://chikkamagaluru.nic.in/en/",
+        "title": "District Chikkamagaluru, Government of Karnataka | Land of Coffee |…",
+        "kind": "official",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      }
+    },
+    {
+      "office": "Deputy Commissioner, Udupi",
+      "announces": "Monsoon vehicle bans on the ghat",
+      "stretch": "Agumbe ghat, coast side",
+      "channel": "District website",
+      "url": "https://udupi.nic.in/en/",
+      "source": {
+        "url": "https://udupi.nic.in/en/",
+        "title": "Udupi District | Government of Karnataka | India",
+        "kind": "official",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      }
+    },
+    {
+      "office": "Deputy Commissioner, Shivamogga",
+      "announces": "Monsoon vehicle bans on the ghat",
+      "stretch": "Agumbe ghat, Thirthahalli side",
+      "channel": "District website",
+      "url": "https://shivamogga.nic.in/en/",
+      "source": {
+        "url": "https://shivamogga.nic.in/en/",
+        "title": "District Shivamogga, Government of Karnataka | Food Cradle of Karnataka…",
+        "kind": "official",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      }
+    },
+    {
+      "office": "Karnataka Forest Department",
+      "announces": "Check post hours on forest roads",
+      "stretch": "Nagarahole Tiger Reserve",
+      "channel": "Department website",
+      "url": "https://aranya.gov.in/",
+      "source": {
+        "url": "https://aranya.gov.in/",
+        "title": "ಕರ್ನಾಟಕ ಅರಣ್ಯ ಇಲಾಖೆ - ಮುಖ್ಯಪುಟ",
+        "kind": "official",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      }
+    }
+  ],
+  "hazards": [
+    {
+      "title": "Landslides on the Agumbe ghat",
+      "detail": "Slopes give way in heavy rain. Both district heads restrict traffic every monsoon.",
+      "months": [
+        6,
+        7,
+        8,
+        9
+      ],
+      "source": {
+        "url": "https://daijiworld.com/news/newsDisplay?newsID=1318273",
+        "title": "Udupi: Heavy vehicles barred on Agumbe Ghat till Sep 30…",
+        "kind": "news",
+        "opened": true,
+        "source_date": "2026-06-26",
+        "accessed": "2026-09-28"
+      }
+    },
+    {
+      "title": "Extreme rain at Agumbe",
+      "detail": "About 7,600 millimetres of rain a year, most of it in July and August. Carry waterproofs.",
+      "months": [
+        6,
+        7,
+        8,
+        9
+      ],
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/Agumbe",
+        "title": "Agumbe",
+        "kind": "encyclopedia",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      }
+    },
+    {
+      "title": "Narrow road on the Agumbe ghat",
+      "detail": "Between Someshwara and Agumbe the road is too narrow for full-size buses. Watch for oncoming vehicles on bends.",
+      "months": [],
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/National_Highway_169A_(India)",
+        "title": "National Highway 169A (India)",
+        "kind": "encyclopedia",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      }
+    },
+    {
+      "title": "Narrow, crowded road to Mullayanagiri",
+      "detail": "The district cites accidents and jams on the hill stretch as the reason for vehicle caps.",
+      "months": [],
+      "source": {
+        "url": "https://daijiworld.com/news/newsDisplay?newsID=1290782",
+        "title": "Chikkamagaluru: Vehicle entry to popular hill destinations restricted from Sept…",
+        "kind": "news",
+        "opened": true,
+        "source_date": "2025-08-30",
+        "accessed": "2026-09-28"
+      }
+    }
+  ],
+  "videos": [
+    {
+      "url": "https://www.youtube.com/watch?v=BjklukXlQWE",
+      "title": "Bangalore to Mullayanagiri Bike Ride in Monsoon | ಮುಳ್ಳಯ್ಯನಗಿರಿ | Chikmagalur Road Trip | #travel",
+      "channel": "Crazy Prayana",
+      "stretch": "Bengaluru to Mullayanagiri",
+      "filmed": null,
+      "bike": null
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=4hdgK8hscTk",
+      "title": "Bike ride to Mullayanagiri Peak | Baba Budangiri | Datta Peeta | Monsoon Ride | Apache RTR 200",
+      "channel": "Man Machine Trails",
+      "stretch": "Chikkamagaluru to Mullayanagiri and Bababudangiri",
+      "filmed": null,
+      "bike": "TVS Apache RTR 200"
+    }
+  ],
+  "gaps": [
+    "No official page found for the toll amount for motorcycles at Mullayanagiri; the booking form shows it only after a slot is picked.",
+    "Counts of hairpin bends on the Agumbe ghat differ: a newspaper says about 16, a trail guide seen only in search results says 14.",
+    "No source found for forest check post timings at Agumbe (Someshwara) or on the Mullayanagiri road beyond the slot hours.",
+    "No government order found for the Nagarahole gate hours or the two-wheeler restriction on the Kutta road; the second rests on a travel wiki alone.",
+    "Nothing found for Sringeri or Madikeri: no rule specific to motorcycles, and no entry fee from an official page.",
+    "The best months are sourced for Agumbe only, not for Coorg or Chikkamagaluru.",
+    "No source found for the usual number of days riders take.",
+    "Hairpin bend counts are added as header.hairpin_bends, which is not in the schema example.",
+    "No video kept for the Agumbe ghat or Coorg; filming dates of the two videos are not known."
+  ]
+}

@@ -1,0 +1,1201 @@
+{
+  "slug": "manali-leh",
+  "header": {
+    "highway": {
+      "value": "NH 3",
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/Leh%E2%80%93Manali_Highway",
+        "title": "Leh-Manali Highway",
+        "kind": "encyclopedia",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      }
+    },
+    "highest_point": {
+      "name": "Tanglang La",
+      "altitude_m": 5328,
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/Leh%E2%80%93Manali_Highway",
+        "title": "Leh-Manali Highway",
+        "kind": "encyclopedia",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      }
+    },
+    "usual_days": {
+      "value": "2",
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/Leh%E2%80%93Manali_Highway",
+        "title": "Leh-Manali Highway",
+        "kind": "encyclopedia",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      }
+    },
+    "usual_season": {
+      "value": "June to October",
+      "source": {
+        "url": "https://discoverwithdheeraj.com/manali-leh-highway-status-2026/",
+        "title": "Manali Leh Highway Status 2026",
+        "kind": "blog",
+        "opened": true,
+        "source_date": "2026-09-11",
+        "accessed": "2026-09-28"
+      }
+    },
+    "one_line": "Himachal Pradesh to Ladakh through the Atal Tunnel, over Baralacha La and Tanglang La"
+  },
+  "rules": [
+    {
+      "id": "ladakh-no-permit-indian-citizens",
+      "kind": "permit",
+      "title": "Ladakh: no permit for Indian citizens",
+      "detail": "Indian citizens carry identity proof and the fee receipt instead of a permit. A few border villages stay closed. The order itself was not found; news reports it.",
+      "applies_to": "Indian citizens",
+      "set_by": "Home Department, Union Territory of Ladakh",
+      "official_url": "https://www.lahdclehpermit.in/",
+      "has_official_order": true,
+      "source": {
+        "url": "https://www.freepressjournal.in/india/indian-tourists-visiting-ladakh-no-longer-require-inner-line-permit-heres-all-you-need-to-know",
+        "title": "Indian tourists visiting Ladakh no longer require Inner Line Permit",
+        "kind": "news",
+        "opened": true,
+        "source_date": "2021-08-07",
+        "accessed": "2026-09-28"
+      },
+      "history": [
+        {
+          "date": "2021-08",
+          "change": "Ladakh Home Department dropped the permit for Indian citizens visiting protected areas.",
+          "source": {
+            "url": "https://www.freepressjournal.in/india/indian-tourists-visiting-ladakh-no-longer-require-inner-line-permit-heres-all-you-need-to-know",
+            "title": "Indian tourists visiting Ladakh no longer require Inner Line Permit",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2021-08-07",
+            "accessed": "2026-09-28"
+          }
+        },
+        {
+          "date": "2021-08",
+          "change": "Report lists border villages expected to stay closed, including Thang, Demchok and Chumar.",
+          "source": {
+            "url": "https://thefederal.com/states/north/jammu-and-kashmir/ladakh-scraps-inner-line-permit-system-for-indian-citizens",
+            "title": "Ladakh scraps Inner Line Permit system for Indian citizens",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2021-08-09",
+            "accessed": "2026-09-28"
+          }
+        },
+        {
+          "date": "2021-08-10",
+          "change": "Leh council notice said the tourist fee continues as before.",
+          "source": {
+            "url": "https://leh.nic.in/green-fee-shall-continue-to-remain-in-effect-for-domestic-tourists-visiting-leh/",
+            "title": "Important update for domestic tourists visiting Leh",
+            "kind": "official",
+            "opened": true,
+            "source_date": "2021-08-10",
+            "accessed": "2026-09-28"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ladakh-tourist-fee-receipt",
+      "kind": "fee",
+      "title": "Ladakh: tourist fee paid online, receipt carried",
+      "detail": "One payment covers an environment fee, a Red Cross contribution and a wildlife fee. The official portal does not show the amounts on its landing page.",
+      "applies_to": "All tourists visiting Leh district",
+      "set_by": "Ladakh Autonomous Hill Development Council, Leh",
+      "official_url": "https://www.lahdclehpermit.in/",
+      "has_official_order": true,
+      "source": {
+        "url": "https://www.lahdclehpermit.in/",
+        "title": "Leh District Permit Tracking System",
+        "kind": "official",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      },
+      "history": [
+        {
+          "date": "2021-08-10",
+          "change": "Notice confirmed the existing fee structure stays in force.",
+          "source": {
+            "url": "https://leh.nic.in/green-fee-shall-continue-to-remain-in-effect-for-domestic-tourists-visiting-leh/",
+            "title": "Important update for domestic tourists visiting Leh",
+            "kind": "official",
+            "opened": true,
+            "source_date": "2021-08-10",
+            "accessed": "2026-09-28"
+          }
+        },
+        {
+          "date": "2021-08-10",
+          "change": "Ladakh administration release said the fee is paid online, with no visit to a government office.",
+          "source": {
+            "url": "https://ladakh.gov.in/green-fee-to-remain-in-effect-for-tourists-visiting-leh/",
+            "title": "Green fee to remain in effect for tourists visiting Leh",
+            "kind": "official",
+            "opened": true,
+            "source_date": "2021-08-10",
+            "accessed": "2026-09-28"
+          }
+        }
+      ]
+    },
+    {
+      "id": "manali-leh-foreigners-passport-check",
+      "kind": "document",
+      "title": "Foreign citizens show passport and visa at check posts",
+      "detail": "The highway needs no Protected Area Permit; passports are checked at the Koksar police post. Side trips beyond Leh need the permit. No written order found.",
+      "applies_to": "Foreign citizens",
+      "set_by": "Lahaul and Spiti Police",
+      "official_url": null,
+      "has_official_order": false,
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/Leh%E2%80%93Manali_Highway",
+        "title": "Leh-Manali Highway",
+        "kind": "encyclopedia",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      },
+      "history": [
+        {
+          "date": "2026-09-18",
+          "change": "Blogger states neither the Manali nor the Srinagar highway to Leh needs a separate permit.",
+          "source": {
+            "url": "https://discoverwithdheeraj.com/how-to-get-ladakh-inner-line-permits-online/",
+            "title": "Ladakh Permit 2026: No ILP for Indians",
+            "kind": "blog",
+            "opened": true,
+            "source_date": "2026-09-18",
+            "accessed": "2026-09-28"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ladakh-protected-area-permit-foreigners",
+      "kind": "permit",
+      "title": "Ladakh: foreign citizens need a Protected Area Permit",
+      "detail": "Needed for Nubra, Pangong, Tso Moriri and similar areas beyond Leh. Some nationalities and passport types must apply to central ministries instead.",
+      "applies_to": "Foreign citizens",
+      "set_by": "Ministry of Home Affairs; issued through Leh district administration",
+      "official_url": "https://www.lahdclehpermit.in/",
+      "has_official_order": true,
+      "source": {
+        "url": "https://www.lahdclehpermit.in/",
+        "title": "Leh District Permit Tracking System",
+        "kind": "official",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      },
+      "history": [
+        {
+          "date": "2021-08",
+          "change": "Permit kept for foreigners when it was dropped for Indian citizens.",
+          "source": {
+            "url": "https://thefederal.com/states/north/jammu-and-kashmir/ladakh-scraps-inner-line-permit-system-for-indian-citizens",
+            "title": "Ladakh scraps Inner Line Permit system for Indian citizens",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2021-08-09",
+            "accessed": "2026-09-28"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ladakh-outside-rental-motorcycles",
+      "kind": "motorcycle-rule",
+      "title": "Ladakh: rental motorcycles from outside are turned back",
+      "detail": "Outside rentals may reach Leh but not tour Nubra, Pangong or Hanle. Enforced by the local rental cooperative; no government order found. Own motorcycles are fine with papers.",
+      "applies_to": "Riders on motorcycles rented outside Ladakh",
+      "set_by": "Local motorcycle rental associations in Leh (no government order found)",
+      "official_url": null,
+      "has_official_order": false,
+      "source": {
+        "url": "https://www.tribuneindia.com/news/j-k/amid-tussle-ladakh-l-g-urged-to-ban-rental-bikes-from-manali-511473",
+        "title": "Amid tussle, Ladakh L-G urged to ban rental bikes from Manali",
+        "kind": "news",
+        "opened": true,
+        "source_date": "2023-05-26",
+        "accessed": "2026-09-28"
+      },
+      "history": [
+        {
+          "date": "2014",
+          "change": "Blogger dates the restriction on outside rental motorcycles to this year.",
+          "source": {
+            "url": "https://discoverwithdheeraj.com/5-tips-to-rent-bike-in-leh-ladakh/",
+            "title": "Rent Bike in Leh Ladakh 2026",
+            "kind": "blog",
+            "opened": true,
+            "source_date": "2026-08-01",
+            "accessed": "2026-09-28"
+          }
+        },
+        {
+          "date": "2019",
+          "change": "Leh and Manali rental associations agreed Manali rentals would not go to Pangong or Nubra.",
+          "source": {
+            "url": "https://www.tribuneindia.com/news/j-k/amid-tussle-ladakh-l-g-urged-to-ban-rental-bikes-from-manali-511473",
+            "title": "Amid tussle, Ladakh L-G urged to ban rental bikes from Manali",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2023-05-26",
+            "accessed": "2026-09-28"
+          }
+        },
+        {
+          "date": "2023-05",
+          "change": "Fifteen Manali rental motorcycles vandalised in Leh; Lieutenant Governor deferred to a central ministry ruling.",
+          "source": {
+            "url": "https://www.tribuneindia.com/news/j-k/amid-tussle-ladakh-l-g-urged-to-ban-rental-bikes-from-manali-511473",
+            "title": "Amid tussle, Ladakh L-G urged to ban rental bikes from Manali",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2023-05-26",
+            "accessed": "2026-09-28"
+          }
+        },
+        {
+          "date": "2026-08",
+          "change": "Blogger: a borrowed motorcycle needs a no-objection letter from its owner at check posts.",
+          "source": {
+            "url": "https://discoverwithdheeraj.com/5-tips-to-rent-bike-in-leh-ladakh/",
+            "title": "Rent Bike in Leh Ladakh 2026",
+            "kind": "blog",
+            "opened": true,
+            "source_date": "2026-08-01",
+            "accessed": "2026-09-28"
+          }
+        }
+      ]
+    },
+    {
+      "id": "rohtang-pass-permit",
+      "kind": "permit",
+      "title": "Rohtang Pass needs an online permit",
+      "detail": "Issued only through the Kullu district portal, with no cancellation once issued. The official pages opened do not state fees, quotas or any two-wheeler rule.",
+      "applies_to": "Vehicles driving over Rohtang Pass from Manali",
+      "set_by": "District Administration, Kullu",
+      "official_url": "https://rohtangpermits.hp.gov.in/",
+      "has_official_order": true,
+      "source": {
+        "url": "https://rohtangpermits.hp.gov.in/Content/FAQs.pdf",
+        "title": "Frequently Asked Questions, Rohtang Pass Permit MIS",
+        "kind": "official",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      },
+      "history": [
+        {
+          "date": "2026",
+          "change": "Old portal address stopped resolving; permits moved to the hp.gov.in address.",
+          "source": {
+            "url": "https://rohtangpermits.hp.gov.in/",
+            "title": "Rohtang Pass Permit portal",
+            "kind": "official",
+            "opened": true,
+            "source_date": null,
+            "accessed": "2026-09-28"
+          }
+        },
+        {
+          "date": "2026-05-04",
+          "change": "District order closed the Rohtang road every Tuesday until 19 May 2026 for road work.",
+          "source": {
+            "url": "https://manalitourplanner.com/rohtang-pass-permit/",
+            "title": "Rohtang Pass Permit 2026",
+            "kind": "operator",
+            "opened": true,
+            "source_date": "2026-05",
+            "accessed": "2026-09-28"
+          }
+        },
+        {
+          "date": "2026-05-15",
+          "change": "Operator guide says motorcycles need the permit too, checked at the Gulaba barrier.",
+          "source": {
+            "url": "https://milemarked.com/blog/rohtang-pass-ngt-permit-guide",
+            "title": "Rohtang Pass Permit 2026: A Step-by-Step Biker's Guide",
+            "kind": "operator",
+            "opened": true,
+            "source_date": "2026-05-15",
+            "accessed": "2026-09-28"
+          }
+        }
+      ]
+    },
+    {
+      "id": "atal-tunnel-not-covered-by-rohtang-permit",
+      "kind": "permit",
+      "title": "Atal Tunnel route is outside the Rohtang permit",
+      "detail": "Riders to Lahaul and Leh use the tunnel and skip Rohtang. No official page was found saying so; operator guides say no Rohtang permit is needed for the tunnel.",
+      "applies_to": "Vehicles going to Lahaul or Leh through the Atal Tunnel",
+      "set_by": "District Administration, Kullu",
+      "official_url": "https://rohtangpermits.hp.gov.in/",
+      "has_official_order": false,
+      "source": {
+        "url": "https://milemarked.com/blog/rohtang-pass-ngt-permit-guide",
+        "title": "Rohtang Pass Permit 2026: A Step-by-Step Biker's Guide",
+        "kind": "operator",
+        "opened": true,
+        "source_date": "2026-05-15",
+        "accessed": "2026-09-28"
+      },
+      "history": [
+        {
+          "date": "2020-10-03",
+          "change": "Atal Tunnel opened, bypassing Rohtang Pass.",
+          "source": {
+            "url": "https://en.wikipedia.org/wiki/Atal_Tunnel",
+            "title": "Atal Tunnel",
+            "kind": "encyclopedia",
+            "opened": true,
+            "source_date": null,
+            "accessed": "2026-09-28"
+          }
+        }
+      ]
+    },
+    {
+      "id": "lahaul-spiti-e-aagman-vehicle-pass",
+      "kind": "permit",
+      "title": "Lahaul and Spiti: online vehicle pass on e-Aagman",
+      "detail": "People entering the district with a vehicle are asked to apply online. The page speaks of vehicles in general and does not mention motorcycles. Enforcement on motorcycles was not confirmed.",
+      "applies_to": "Vehicles entering Lahaul and Spiti district",
+      "set_by": "Government of Himachal Pradesh, Department of Information Technology",
+      "official_url": "https://eaagman.hp.gov.in/",
+      "has_official_order": true,
+      "source": {
+        "url": "https://eaagman.hp.gov.in/",
+        "title": "e-Aagman",
+        "kind": "official",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      },
+      "history": []
+    },
+    {
+      "id": "manali-green-tax",
+      "kind": "tax",
+      "title": "Manali green tax at the entry barrier",
+      "detail": "Charged on tourist vehicles, two-wheelers included, valid seven days, collected at an automated barrier. No order was found, nor how motorcycles without an electronic tag pay.",
+      "applies_to": "Tourist vehicles entering Manali",
+      "set_by": "Tourism Development Council, Manali",
+      "official_url": null,
+      "has_official_order": false,
+      "source": {
+        "url": "https://www.tribuneindia.com/news/himachal/now-pay-green-tax-by-fastag-at-manali-368869",
+        "title": "Now, pay green tax by FASTag at Manali",
+        "kind": "news",
+        "opened": true,
+        "source_date": "2022-02-10",
+        "accessed": "2026-09-28"
+      },
+      "history": [
+        {
+          "date": "2004-06-19",
+          "change": "Green tax collection began, by hand.",
+          "source": {
+            "url": "https://www.tribuneindia.com/news/himachal/now-pay-green-tax-by-fastag-at-manali-368869",
+            "title": "Now, pay green tax by FASTag at Manali",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2022-02-10",
+            "accessed": "2026-09-28"
+          }
+        },
+        {
+          "date": "2022-02",
+          "change": "Collection moved to an automated barrier with electronic tag payment.",
+          "source": {
+            "url": "https://www.tribuneindia.com/news/himachal/now-pay-green-tax-by-fastag-at-manali-368869",
+            "title": "Now, pay green tax by FASTag at Manali",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2022-02-10",
+            "accessed": "2026-09-28"
+          }
+        }
+      ]
+    },
+    {
+      "id": "darcha-police-registration",
+      "kind": "document",
+      "title": "Registration at Darcha police check post",
+      "detail": "Travellers heading beyond Darcha register at the police post there. No written order was found; the practice is described in an encyclopedia entry.",
+      "applies_to": "All travellers beyond Darcha",
+      "set_by": "Lahaul and Spiti Police",
+      "official_url": null,
+      "has_official_order": false,
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/Leh%E2%80%93Manali_Highway",
+        "title": "Leh-Manali Highway",
+        "kind": "encyclopedia",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      },
+      "history": []
+    },
+    {
+      "id": "manali-leh-early-season-motorcycle-bar",
+      "kind": "motorcycle-rule",
+      "title": "Motorcycles are let through later than cars",
+      "detail": "When the road first opens, the district allows light vehicles first and holds two-wheelers and trucks until Baralacha La is judged safe.",
+      "applies_to": "Motorcycles, Darcha to Sarchu",
+      "set_by": "Deputy Commissioner, Lahaul and Spiti",
+      "official_url": "https://hplahaulspiti.nic.in/road-status/",
+      "has_official_order": true,
+      "source": {
+        "url": "https://www.tribuneindia.com/news/himachal/civil-traffic-on-manali-leh-highway-allowed-from-today-onwards-389297",
+        "title": "Civil traffic on Manali-Leh highway allowed from today onwards",
+        "kind": "news",
+        "opened": true,
+        "source_date": "2022-04-25",
+        "accessed": "2026-09-28"
+      },
+      "history": [
+        {
+          "date": "2022-04-25",
+          "change": "Light vehicles allowed beyond Darcha; two-wheelers and trucks barred for safety.",
+          "source": {
+            "url": "https://www.tribuneindia.com/news/himachal/civil-traffic-on-manali-leh-highway-allowed-from-today-onwards-389297",
+            "title": "Civil traffic on Manali-Leh highway allowed from today onwards",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2022-04-25",
+            "accessed": "2026-09-28"
+          }
+        },
+        {
+          "date": "2022-04-30",
+          "change": "Motorcycles and trucks allowed.",
+          "source": {
+            "url": "https://discoverlehladakh.in/manali-leh-highway-status.htm",
+            "title": "Manali Leh Highway Status in 2026",
+            "kind": "operator",
+            "opened": true,
+            "source_date": "2026-06-09",
+            "accessed": "2026-09-28"
+          }
+        },
+        {
+          "date": "2023-05",
+          "change": "Two-wheelers and heavy vehicles not allowed at first opening.",
+          "source": {
+            "url": "https://discoverwithdheeraj.com/manali-leh-highway-status/",
+            "title": "Manali Leh Highway Status 2026: Opening Date and Updates",
+            "kind": "blog",
+            "opened": true,
+            "source_date": "2026-07-31",
+            "accessed": "2026-09-28"
+          }
+        },
+        {
+          "date": "2024-05-24",
+          "change": "Motorcycles still barred five days after civilian opening.",
+          "source": {
+            "url": "https://discoverlehladakh.in/manali-leh-highway-status.htm",
+            "title": "Manali Leh Highway Status in 2026",
+            "kind": "operator",
+            "opened": true,
+            "source_date": "2026-06-09",
+            "accessed": "2026-09-28"
+          }
+        },
+        {
+          "date": "2024-06-02",
+          "change": "Two-wheelers allowed, on alternate-day one-way running.",
+          "source": {
+            "url": "https://discoverlehladakh.in/manali-leh-highway-status.htm",
+            "title": "Manali Leh Highway Status in 2026",
+            "kind": "operator",
+            "opened": true,
+            "source_date": "2026-06-09",
+            "accessed": "2026-09-28"
+          }
+        },
+        {
+          "date": "2025-05",
+          "change": "Motorcycles held back for several days after the road was connected.",
+          "source": {
+            "url": "https://discoverwithdheeraj.com/manali-leh-highway-status/",
+            "title": "Manali Leh Highway Status 2026: Opening Date and Updates",
+            "kind": "blog",
+            "opened": true,
+            "source_date": "2026-07-31",
+            "accessed": "2026-09-28"
+          }
+        }
+      ]
+    },
+    {
+      "id": "darcha-sarchu-time-windows",
+      "kind": "timing",
+      "title": "Darcha to Sarchu: time windows and alternate-day running",
+      "detail": "At the start and end of the season traffic must pass Darcha or Sarchu within set hours, sometimes one direction per day. The hours change every year.",
+      "applies_to": "All vehicles, Darcha to Sarchu",
+      "set_by": "Deputy Commissioner, Lahaul and Spiti",
+      "official_url": "https://hplahaulspiti.nic.in/road-status/",
+      "has_official_order": true,
+      "source": {
+        "url": "https://www.tribuneindia.com/news/himachal/traffic-movement-regulated-on-lahaul-spiti-passes-due-to-snowfall/",
+        "title": "Traffic movement regulated on Lahaul-Spiti passes due to snowfall",
+        "kind": "news",
+        "opened": true,
+        "source_date": "2024-11-19",
+        "accessed": "2026-09-28"
+      },
+      "history": [
+        {
+          "date": "2022-04-25",
+          "change": "Vehicles had to cross Darcha before 13:00.",
+          "source": {
+            "url": "https://www.tribuneindia.com/news/himachal/civil-traffic-on-manali-leh-highway-allowed-from-today-onwards-389297",
+            "title": "Civil traffic on Manali-Leh highway allowed from today onwards",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2022-04-25",
+            "accessed": "2026-09-28"
+          }
+        },
+        {
+          "date": "2023-05-16",
+          "change": "One-way local traffic from Darcha, 08:00 to 11:00, snow chains on two-wheel-drive vehicles.",
+          "source": {
+            "url": "https://discoverlehladakh.in/manali-leh-highway-status.htm",
+            "title": "Manali Leh Highway Status in 2026",
+            "kind": "operator",
+            "opened": true,
+            "source_date": "2026-06-09",
+            "accessed": "2026-09-28"
+          }
+        },
+        {
+          "date": "2023-05-31",
+          "change": "Both directions: from Darcha 09:00 to 11:00, from Sarchu 14:00 to 16:00.",
+          "source": {
+            "url": "https://discoverlehladakh.in/manali-leh-highway-status.htm",
+            "title": "Manali Leh Highway Status in 2026",
+            "kind": "operator",
+            "opened": true,
+            "source_date": "2026-06-09",
+            "accessed": "2026-09-28"
+          }
+        },
+        {
+          "date": "2024-05-19",
+          "change": "Alternate-day one-way running, leaving Darcha 07:00 to 12:00.",
+          "source": {
+            "url": "https://discoverlehladakh.in/manali-leh-highway-status.htm",
+            "title": "Manali Leh Highway Status in 2026",
+            "kind": "operator",
+            "opened": true,
+            "source_date": "2026-06-09",
+            "accessed": "2026-09-28"
+          }
+        },
+        {
+          "date": "2024-06-06",
+          "change": "All vehicles daily: from Darcha 07:00 to 11:00, from Sarchu 14:00 to 17:00.",
+          "source": {
+            "url": "https://discoverlehladakh.in/manali-leh-highway-status.htm",
+            "title": "Manali Leh Highway Status in 2026",
+            "kind": "operator",
+            "opened": true,
+            "source_date": "2026-06-09",
+            "accessed": "2026-09-28"
+          }
+        },
+        {
+          "date": "2024-06-07",
+          "change": "Newspaper confirms two-way traffic with the same windows, weather permitting.",
+          "source": {
+            "url": "https://www.tribuneindia.com/news/himachal/manali-leh-highway-opened-for-two-way-traffic-beyond-darcha-628429/",
+            "title": "Manali-Leh highway opened for two-way traffic beyond Darcha",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2024-06-07",
+            "accessed": "2026-09-28"
+          }
+        },
+        {
+          "date": "2024-11-19",
+          "change": "Darcha to Sarchu limited to 08:00 to 13:00 because of ice.",
+          "source": {
+            "url": "https://www.tribuneindia.com/news/himachal/traffic-movement-regulated-on-lahaul-spiti-passes-due-to-snowfall/",
+            "title": "Traffic movement regulated on Lahaul-Spiti passes due to snowfall",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2024-11-19",
+            "accessed": "2026-09-28"
+          }
+        }
+      ]
+    },
+    {
+      "id": "manali-leh-winter-closure-order",
+      "kind": "timing",
+      "title": "Winter closure by district order, usually around 20 November",
+      "detail": "The Lahaul and Spiti district closes the road beyond Darcha on the road builder's advice. Ladakh Police issue a separate notice for their side.",
+      "applies_to": "All vehicles",
+      "set_by": "Deputy Commissioner, Lahaul and Spiti; Ladakh Police",
+      "official_url": "https://hplahaulspiti.nic.in/road-status/",
+      "has_official_order": true,
+      "source": {
+        "url": "https://www.etvbharat.com/en/state/snowfall-fear-triggers-shutdown-manali-leh-highway-closed-for-tourists-from-november-20-enn25111804176",
+        "title": "Manali-Leh Highway closed for tourists from November 20",
+        "kind": "news",
+        "opened": true,
+        "source_date": "2025-11-18",
+        "accessed": "2026-09-28"
+      },
+      "history": [
+        {
+          "date": "2022-11-07",
+          "change": "Closed beyond Darcha by notice of the district magistrate.",
+          "source": {
+            "url": "https://discoverlehladakh.in/manali-leh-highway-status.htm",
+            "title": "Manali Leh Highway Status in 2026",
+            "kind": "operator",
+            "opened": true,
+            "source_date": "2026-06-09",
+            "accessed": "2026-09-28"
+          }
+        },
+        {
+          "date": "2023-11-20",
+          "change": "Closed, together with Darcha to Shinku La and Gramphu to Kaza.",
+          "source": {
+            "url": "https://www.outlooktraveller.com/News/manali-leh-highway-shut-here-are-some-alternative-routes-to-take",
+            "title": "Manali-Leh Highway closes, alternative routes to opt for",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2023-11-24",
+            "accessed": "2026-09-28"
+          }
+        },
+        {
+          "date": "2024-11-20",
+          "change": "Closed to tourists; local four-wheel-drive vehicles allowed 08:00 to 13:00.",
+          "source": {
+            "url": "https://discoverlehladakh.in/manali-leh-highway-status.htm",
+            "title": "Manali Leh Highway Status in 2026",
+            "kind": "operator",
+            "opened": true,
+            "source_date": "2026-06-09",
+            "accessed": "2026-09-28"
+          }
+        },
+        {
+          "date": "2025-11-20",
+          "change": "Closed from Zingzingbar to Sarchu by district notification.",
+          "source": {
+            "url": "https://www.etvbharat.com/en/state/snowfall-fear-triggers-shutdown-manali-leh-highway-closed-for-tourists-from-november-20-enn25111804176",
+            "title": "Manali-Leh Highway closed for tourists from November 20",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2025-11-18",
+            "accessed": "2026-09-28"
+          }
+        },
+        {
+          "date": "2025-12-08",
+          "change": "Ladakh Police notice closed the highway to all vehicles.",
+          "source": {
+            "url": "https://www.newsonair.gov.in/leh-manali-national-highway-closed-for-all-vehicles-due-to-winter-conditions/",
+            "title": "Leh-Manali National Highway closed for all vehicles due to winter conditions",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2025-12-08",
+            "accessed": "2026-09-28"
+          }
+        }
+      ]
+    }
+  ],
+  "season": {
+    "note": "The Border Roads Organisation connects the road weeks before the district lets tourists through, and motorcycles are usually the last class allowed.",
+    "history": [
+      {
+        "year": 2026,
+        "connected": "2026-05-12",
+        "open_to_motorcycles": "2026-06-01",
+        "closed": null,
+        "note": "Light vehicles from 14 May. 1 June is the date full two-way tourist traffic began; the source does not name motorcycles separately. Still open on 11 September 2026.",
+        "sources": [
+          {
+            "url": "https://discoverlehladakh.in/manali-leh-highway-status.htm",
+            "title": "Manali Leh Highway Status in 2026",
+            "kind": "operator",
+            "opened": true,
+            "source_date": "2026-06-09",
+            "accessed": "2026-09-28"
+          },
+          {
+            "url": "https://discoverwithdheeraj.com/manali-leh-highway-status/",
+            "title": "Manali Leh Highway Status 2026: Opening Date and Updates",
+            "kind": "blog",
+            "opened": true,
+            "source_date": "2026-07-31",
+            "accessed": "2026-09-28"
+          },
+          {
+            "url": "https://discoverwithdheeraj.com/manali-leh-highway-status-2026/",
+            "title": "Manali Leh Highway Status 2026",
+            "kind": "blog",
+            "opened": true,
+            "source_date": "2026-09-11",
+            "accessed": "2026-09-28"
+          }
+        ]
+      },
+      {
+        "year": 2025,
+        "connected": "2025-05-12",
+        "open_to_motorcycles": "2025-05-27",
+        "closed": "2025-11-20",
+        "note": "One source gives 13 May for the connection. Motorcycles were held back for several days; 27 May is when the road was reported open to all. Ladakh Police closed their side on 8 December.",
+        "sources": [
+          {
+            "url": "https://www.tribuneindia.com/news/himachal/leh-manali-national-highway-opens-to-traffic-after-bro-clears-snow/amp",
+            "title": "Leh-Manali National Highway opens to traffic after BRO clears snow",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2025-05-12",
+            "accessed": "2026-09-28"
+          },
+          {
+            "url": "https://discoverlehladakh.in/manali-leh-highway-status.htm",
+            "title": "Manali Leh Highway Status in 2026",
+            "kind": "operator",
+            "opened": true,
+            "source_date": "2026-06-09",
+            "accessed": "2026-09-28"
+          },
+          {
+            "url": "https://discoverwithdheeraj.com/manali-leh-highway-status/",
+            "title": "Manali Leh Highway Status 2026: Opening Date and Updates",
+            "kind": "blog",
+            "opened": true,
+            "source_date": "2026-07-31",
+            "accessed": "2026-09-28"
+          },
+          {
+            "url": "https://www.etvbharat.com/en/state/snowfall-fear-triggers-shutdown-manali-leh-highway-closed-for-tourists-from-november-20-enn25111804176",
+            "title": "Manali-Leh Highway closed for tourists from November 20",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2025-11-18",
+            "accessed": "2026-09-28"
+          },
+          {
+            "url": "https://www.newsonair.gov.in/leh-manali-national-highway-closed-for-all-vehicles-due-to-winter-conditions/",
+            "title": "Leh-Manali National Highway closed for all vehicles due to winter conditions",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2025-12-08",
+            "accessed": "2026-09-28"
+          }
+        ]
+      },
+      {
+        "year": 2024,
+        "connected": "2024-04-23",
+        "open_to_motorcycles": "2024-06-02",
+        "closed": "2024-11-20",
+        "note": "Civilians from 18 or 19 May on alternate-day one-way running. Motorcycles specifically allowed from 2 June. All vehicles daily from 6 June.",
+        "sources": [
+          {
+            "url": "https://discoverlehladakh.in/manali-leh-highway-status.htm",
+            "title": "Manali Leh Highway Status in 2026",
+            "kind": "operator",
+            "opened": true,
+            "source_date": "2026-06-09",
+            "accessed": "2026-09-28"
+          },
+          {
+            "url": "https://www.himalayan-routes.com/manali-leh-highway-status-2023/",
+            "title": "Manali Leh Highway: What's the Status?",
+            "kind": "operator",
+            "opened": true,
+            "source_date": null,
+            "accessed": "2026-09-28"
+          },
+          {
+            "url": "https://www.tribuneindia.com/news/himachal/manali-leh-highway-opened-for-two-way-traffic-beyond-darcha-628429/",
+            "title": "Manali-Leh highway opened for two-way traffic beyond Darcha",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2024-06-07",
+            "accessed": "2026-09-28"
+          },
+          {
+            "url": "https://www.tribuneindia.com/news/himachal/traffic-movement-regulated-on-lahaul-spiti-passes-due-to-snowfall/",
+            "title": "Traffic movement regulated on Lahaul-Spiti passes due to snowfall",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2024-11-19",
+            "accessed": "2026-09-28"
+          }
+        ]
+      },
+      {
+        "year": 2023,
+        "connected": "2023-03-26",
+        "open_to_motorcycles": null,
+        "closed": "2023-11-20",
+        "note": "One source gives 25 March for the connection. One-way local traffic from 16 May, both directions from 31 May. Two-wheelers were not allowed at first; the date they were let through was not found.",
+        "sources": [
+          {
+            "url": "https://discoverlehladakh.in/manali-leh-highway-status.htm",
+            "title": "Manali Leh Highway Status in 2026",
+            "kind": "operator",
+            "opened": true,
+            "source_date": "2026-06-09",
+            "accessed": "2026-09-28"
+          },
+          {
+            "url": "https://discoverwithdheeraj.com/manali-leh-highway-status/",
+            "title": "Manali Leh Highway Status 2026: Opening Date and Updates",
+            "kind": "blog",
+            "opened": true,
+            "source_date": "2026-07-31",
+            "accessed": "2026-09-28"
+          },
+          {
+            "url": "https://www.outlooktraveller.com/News/manali-leh-highway-shut-here-are-some-alternative-routes-to-take",
+            "title": "Manali-Leh Highway closes, alternative routes to opt for",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2023-11-24",
+            "accessed": "2026-09-28"
+          }
+        ]
+      },
+      {
+        "year": 2022,
+        "connected": "2022-03-26",
+        "open_to_motorcycles": "2022-04-30",
+        "closed": "2022-11-07",
+        "note": "Light vehicles from 25 April with motorcycles barred. Motorcycles and trucks allowed from 30 April; the same page also dates this to Sunday 1 May.",
+        "sources": [
+          {
+            "url": "https://www.tribuneindia.com/news/himachal/civil-traffic-on-manali-leh-highway-allowed-from-today-onwards-389297",
+            "title": "Civil traffic on Manali-Leh highway allowed from today onwards",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2022-04-25",
+            "accessed": "2026-09-28"
+          },
+          {
+            "url": "https://discoverlehladakh.in/manali-leh-highway-status.htm",
+            "title": "Manali Leh Highway Status in 2026",
+            "kind": "operator",
+            "opened": true,
+            "source_date": "2026-06-09",
+            "accessed": "2026-09-28"
+          }
+        ]
+      },
+      {
+        "year": 2021,
+        "connected": "2021-03-29",
+        "open_to_motorcycles": "2021-05-31",
+        "closed": null,
+        "note": "A supply convoy crossed on 29 March, then an avalanche at Baralacha La on 15 April closed it again. Opened on 31 May with repeated short closures; motorcycles are not named. The last convoy of the year moved on 29 November 2021.",
+        "sources": [
+          {
+            "url": "https://discoverwithdheeraj.com/manali-leh-highway-status/",
+            "title": "Manali Leh Highway Status 2026: Opening Date and Updates",
+            "kind": "blog",
+            "opened": true,
+            "source_date": "2026-07-31",
+            "accessed": "2026-09-28"
+          },
+          {
+            "url": "https://discoverlehladakh.in/manali-leh-highway-status.htm",
+            "title": "Manali Leh Highway Status in 2026",
+            "kind": "operator",
+            "opened": true,
+            "source_date": "2026-06-09",
+            "accessed": "2026-09-28"
+          }
+        ]
+      }
+    ]
+  },
+  "authorities": [
+    {
+      "office": "Border Roads Organisation",
+      "announces": "Snow clearance finished and road connected",
+      "stretch": "Manali to Leh",
+      "channel": "Statements to the press and its X account; its website has no road status section",
+      "url": "https://bro.gov.in/",
+      "source": {
+        "url": "https://www.tribuneindia.com/news/himachal/leh-manali-national-highway-opens-to-traffic-after-bro-clears-snow/amp",
+        "title": "Leh-Manali National Highway opens to traffic after BRO clears snow",
+        "kind": "news",
+        "opened": true,
+        "source_date": "2025-05-12",
+        "accessed": "2026-09-28"
+      }
+    },
+    {
+      "office": "Deputy Commissioner, Lahaul and Spiti (district disaster management authority)",
+      "announces": "Which vehicles may pass, time windows, and the winter closure order",
+      "stretch": "Darcha to Sarchu",
+      "channel": "Orders reported by newspapers; the district road status page has four rows only",
+      "url": "https://hplahaulspiti.nic.in/road-status/",
+      "source": {
+        "url": "https://hplahaulspiti.nic.in/road-status/",
+        "title": "Road Status, District Lahaul and Spiti",
+        "kind": "official",
+        "opened": true,
+        "source_date": "2026-08-29",
+        "accessed": "2026-09-28"
+      }
+    },
+    {
+      "office": "Lahaul and Spiti Police",
+      "announces": "Daily road and weather advisories",
+      "stretch": "Atal Tunnel to Sarchu",
+      "channel": "Facebook page",
+      "url": "https://www.facebook.com/splahhp/",
+      "source": {
+        "url": "https://www.facebook.com/splahhp/",
+        "title": "Lahaul and Spiti Police on Facebook",
+        "kind": "official",
+        "opened": false,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      }
+    },
+    {
+      "office": "Ladakh Police",
+      "announces": "Winter closure notice and traffic updates for the Ladakh side",
+      "stretch": "Sarchu to Leh",
+      "channel": "Public notice and the Traffic Updates block on its website",
+      "url": "https://police.ladakh.gov.in/",
+      "source": {
+        "url": "https://www.newsonair.gov.in/leh-manali-national-highway-closed-for-all-vehicles-due-to-winter-conditions/",
+        "title": "Leh-Manali National Highway closed for all vehicles due to winter conditions",
+        "kind": "news",
+        "opened": true,
+        "source_date": "2025-12-08",
+        "accessed": "2026-09-28"
+      }
+    },
+    {
+      "office": "Ladakh Police",
+      "announces": "Alerts and advisories for tourists",
+      "stretch": "Ladakh",
+      "channel": "Jullay 2.0 app, launched 12 September 2026 with a check post at Sarchu",
+      "url": "https://ladakh.gov.in/l-g-vinai-kumar-saxena-inaugurates-four-new-initiatives-of-ladakh-police/",
+      "source": {
+        "url": "https://ladakh.gov.in/l-g-vinai-kumar-saxena-inaugurates-four-new-initiatives-of-ladakh-police/",
+        "title": "Lieutenant Governor inaugurates four new initiatives of Ladakh Police",
+        "kind": "official",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      }
+    },
+    {
+      "office": "Himachal Pradesh Public Works Department",
+      "announces": "Roads open, blocked or restored",
+      "stretch": "Himachal Pradesh roads on the approach to Manali",
+      "channel": "Road Status Information System website and apps",
+      "url": "https://hppwd.in/",
+      "source": {
+        "url": "https://hppwd.in/",
+        "title": "Himachal Pradesh Public Works Department",
+        "kind": "official",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      }
+    },
+    {
+      "office": "District Administration, Kullu",
+      "announces": "Rohtang Pass permits and availability",
+      "stretch": "Manali to Rohtang Pass",
+      "channel": "Permit portal",
+      "url": "https://rohtangpermits.hp.gov.in/",
+      "source": {
+        "url": "https://rohtangpermits.hp.gov.in/",
+        "title": "Rohtang Pass Permit portal",
+        "kind": "official",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      }
+    }
+  ],
+  "hazards": [
+    {
+      "title": "Snow melt water crossings at Baralacha La",
+      "detail": "Melt water runs across the road around the pass, with slush early in the season.",
+      "months": [
+        6
+      ],
+      "source": {
+        "url": "https://discoverwithdheeraj.com/manali-leh-highway-status-2026/",
+        "title": "Manali Leh Highway Status 2026",
+        "kind": "blog",
+        "opened": true,
+        "source_date": "2026-09-11",
+        "accessed": "2026-09-28"
+      }
+    },
+    {
+      "title": "Fresh snowfall shuts Baralacha La after opening",
+      "detail": "The pass has closed again for days after opening, including an avalanche on 15 April 2021 that stranded travellers.",
+      "months": [
+        4,
+        5
+      ],
+      "source": {
+        "url": "https://discoverwithdheeraj.com/manali-leh-highway-status/",
+        "title": "Manali Leh Highway Status 2026: Opening Date and Updates",
+        "kind": "blog",
+        "opened": true,
+        "source_date": "2026-07-31",
+        "accessed": "2026-09-28"
+      }
+    },
+    {
+      "title": "Flash floods and landslides near Jispa",
+      "detail": "A flash flood on 30 June 2026 closed the road near Jispa until debris was cleared the same day.",
+      "months": [
+        6,
+        7,
+        8
+      ],
+      "source": {
+        "url": "https://discoverwithdheeraj.com/manali-leh-highway-status/",
+        "title": "Manali Leh Highway Status 2026: Opening Date and Updates",
+        "kind": "blog",
+        "opened": true,
+        "source_date": "2026-07-31",
+        "accessed": "2026-09-28"
+      }
+    },
+    {
+      "title": "Rough unpaved road between Sarchu and Pang",
+      "detail": "Described as the roughest stretch of the highway every year.",
+      "months": [],
+      "source": {
+        "url": "https://discoverwithdheeraj.com/manali-leh-highway-status-2026/",
+        "title": "Manali Leh Highway Status 2026",
+        "kind": "blog",
+        "opened": true,
+        "source_date": "2026-09-11",
+        "accessed": "2026-09-28"
+      }
+    },
+    {
+      "title": "No fuel pump between Keylong and Karu",
+      "detail": "Keylong is described as the last pump before a long gap; the next pump the source lists is at Karu.",
+      "months": [],
+      "source": {
+        "url": "https://discoverwithdheeraj.com/fuel-availability-in-leh-ladakh-ladakh-self-drive-tips/",
+        "title": "Fuel availability in Leh Ladakh",
+        "kind": "blog",
+        "opened": true,
+        "source_date": "2026-09-25",
+        "accessed": "2026-09-28"
+      }
+    },
+    {
+      "title": "Prepaid mobile connections from other states do not work",
+      "detail": "A blogger reports that only postpaid connections from outside work in Jammu and Kashmir and in Ladakh; no official source was found.",
+      "months": [],
+      "source": {
+        "url": "https://discoverwithdheeraj.com/mobile-phone-connectivity-in-leh-ladakh/",
+        "title": "Mobile phone connectivity in Leh Ladakh",
+        "kind": "blog",
+        "opened": true,
+        "source_date": "2026-08-14",
+        "accessed": "2026-09-28"
+      }
+    },
+    {
+      "title": "No mobile signal beyond Darcha",
+      "detail": "Signal drops after Darcha. Sarchu got one network in 2021; beyond it towards Pang and Tanglang La there is none.",
+      "months": [],
+      "source": {
+        "url": "https://discoverwithdheeraj.com/mobile-phone-connectivity-in-leh-ladakh/",
+        "title": "Mobile phone connectivity in Leh Ladakh",
+        "kind": "blog",
+        "opened": true,
+        "source_date": "2026-08-14",
+        "accessed": "2026-09-28"
+      }
+    },
+    {
+      "title": "Black ice from October",
+      "detail": "Shaded stretches near the high passes ice over from early October, and riding after mid-October is described as risky.",
+      "months": [
+        10,
+        11
+      ],
+      "source": {
+        "url": "https://discoverlehladakh.in/manali-leh-highway-status.htm",
+        "title": "Manali Leh Highway Status in 2026",
+        "kind": "operator",
+        "opened": true,
+        "source_date": "2026-06-09",
+        "accessed": "2026-09-28"
+      }
+    }
+  ],
+  "videos": [
+    {
+      "url": "https://www.youtube.com/watch?v=1fkwnz6i_0A",
+      "title": "Manali To Leh Road Trip | Jispa | Baralacha La Pass | Kolkata To Ladakh Bike Trip | EP6",
+      "channel": "Suurojit Palmal",
+      "stretch": "Manali to Baralacha La",
+      "filmed": null,
+      "bike": null
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=HQZMrJ4zkNs",
+      "title": "Sarchu To Manali Bike Ride | Baralacha La Pass | Leh Ladakh Adventure @GoRiders",
+      "channel": "Go Riders",
+      "stretch": "Sarchu to Manali",
+      "filmed": null,
+      "bike": null
+    }
+  ],
+  "gaps": [
+    "The Ladakh order of August 2021 that dropped the permit for Indian citizens was not found; only news reports of it.",
+    "No official page states the Ladakh tourist fee amounts, so they are left out.",
+    "No government order found for the restriction on rental motorcycles from outside Ladakh; the result of the central ministry ruling awaited in May 2023 is unknown.",
+    "Rohtang permit fees, daily quota and any two-wheeler rule are not on the official portal or its question-and-answer document.",
+    "No official statement found that the Atal Tunnel needs no permit.",
+    "Whether the e-Aagman vehicle pass is enforced on motorcycles was not confirmed.",
+    "Whether motorcycles pay under the Himachal Pradesh entry toll policy of 1 April 2026 was not verified; the policy itself comes from a search result only.",
+    "Date motorcycles were first allowed in 2023 not found.",
+    "Winter closure date for 2021 not found as an order; only the date of the last convoy.",
+    "Sources disagree on the 2025 connection date (12 or 13 May) and the 2023 one (25 or 26 March).",
+    "2026 winter closure had not happened by 28 September 2026.",
+    "Usual days is taken from an encyclopedia line that the trip normally needs one overnight halt; riders often take longer.",
+    "Whether motorcycles need an extra undertaking from the Manali magistrate's office for Rohtang appears in search results only and was not confirmed.",
+    "Video filming dates are not stated on the pages; they were published on 16 June 2025 and 3 March 2026."
+  ]
+}

@@ -1,0 +1,703 @@
+{
+  "slug": "umling-la",
+  "header": {
+    "highway": {
+      "value": "No national highway number found; Chisumle to Demchok road",
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/Umling_La",
+        "title": "Umling La",
+        "kind": "encyclopedia",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      }
+    },
+    "highest_point": {
+      "name": "Umling La",
+      "altitude_m": 5799,
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/Umling_La",
+        "title": "Umling La",
+        "kind": "encyclopedia",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      }
+    },
+    "usual_days": {
+      "value": "1 from Hanle and back; at least 5 from Leh counting acclimatisation",
+      "source": {
+        "url": "https://travelcoffee.in/blog/umling-la-ladakh-guide",
+        "title": "Umling La Ladakh Guide 2026: Route, Altitude and Permit",
+        "kind": "operator",
+        "opened": true,
+        "source_date": "2026-07-13",
+        "accessed": "2026-09-28"
+      }
+    },
+    "usual_season": {
+      "value": "Late May to early October",
+      "source": {
+        "url": "https://discoverwithdheeraj.com/plan-trip-umling-la-pass-highest-motorable-pass/",
+        "title": "Umling La Pass 2026 Guide",
+        "kind": "blog",
+        "opened": true,
+        "source_date": "2026-07-27",
+        "accessed": "2026-09-28"
+      }
+    },
+    "one_line": "Eastern Ladakh, from Hanle over Photi La to one of the highest roads in the world"
+  },
+  "rules": [
+    {
+      "id": "ladakh-no-permit-indian-citizens",
+      "kind": "permit",
+      "title": "Ladakh: no permit for Indian citizens",
+      "detail": "Indian citizens carry identity proof and the fee receipt instead of a permit. A few border villages stay closed. The order itself was not found; news reports it.",
+      "applies_to": "Indian citizens",
+      "set_by": "Home Department, Union Territory of Ladakh",
+      "official_url": "https://www.lahdclehpermit.in/",
+      "has_official_order": true,
+      "source": {
+        "url": "https://www.freepressjournal.in/india/indian-tourists-visiting-ladakh-no-longer-require-inner-line-permit-heres-all-you-need-to-know",
+        "title": "Indian tourists visiting Ladakh no longer require Inner Line Permit",
+        "kind": "news",
+        "opened": true,
+        "source_date": "2021-08-07",
+        "accessed": "2026-09-28"
+      },
+      "history": [
+        {
+          "date": "2021-08",
+          "change": "Ladakh Home Department dropped the permit for Indian citizens visiting protected areas.",
+          "source": {
+            "url": "https://www.freepressjournal.in/india/indian-tourists-visiting-ladakh-no-longer-require-inner-line-permit-heres-all-you-need-to-know",
+            "title": "Indian tourists visiting Ladakh no longer require Inner Line Permit",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2021-08-07",
+            "accessed": "2026-09-28"
+          }
+        },
+        {
+          "date": "2021-08",
+          "change": "Report lists border villages expected to stay closed, including Thang, Demchok and Chumar.",
+          "source": {
+            "url": "https://thefederal.com/states/north/jammu-and-kashmir/ladakh-scraps-inner-line-permit-system-for-indian-citizens",
+            "title": "Ladakh scraps Inner Line Permit system for Indian citizens",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2021-08-09",
+            "accessed": "2026-09-28"
+          }
+        },
+        {
+          "date": "2021-08-10",
+          "change": "Leh council notice said the tourist fee continues as before.",
+          "source": {
+            "url": "https://leh.nic.in/green-fee-shall-continue-to-remain-in-effect-for-domestic-tourists-visiting-leh/",
+            "title": "Important update for domestic tourists visiting Leh",
+            "kind": "official",
+            "opened": true,
+            "source_date": "2021-08-10",
+            "accessed": "2026-09-28"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ladakh-tourist-fee-receipt",
+      "kind": "fee",
+      "title": "Ladakh: tourist fee paid online, receipt carried",
+      "detail": "One payment covers an environment fee, a Red Cross contribution and a wildlife fee. The official portal does not show the amounts on its landing page.",
+      "applies_to": "All tourists visiting Leh district",
+      "set_by": "Ladakh Autonomous Hill Development Council, Leh",
+      "official_url": "https://www.lahdclehpermit.in/",
+      "has_official_order": true,
+      "source": {
+        "url": "https://www.lahdclehpermit.in/",
+        "title": "Leh District Permit Tracking System",
+        "kind": "official",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      },
+      "history": [
+        {
+          "date": "2021-08-10",
+          "change": "Notice confirmed the existing fee structure stays in force.",
+          "source": {
+            "url": "https://leh.nic.in/green-fee-shall-continue-to-remain-in-effect-for-domestic-tourists-visiting-leh/",
+            "title": "Important update for domestic tourists visiting Leh",
+            "kind": "official",
+            "opened": true,
+            "source_date": "2021-08-10",
+            "accessed": "2026-09-28"
+          }
+        },
+        {
+          "date": "2021-08-10",
+          "change": "Ladakh administration release said the fee is paid online, with no visit to a government office.",
+          "source": {
+            "url": "https://ladakh.gov.in/green-fee-to-remain-in-effect-for-tourists-visiting-leh/",
+            "title": "Green fee to remain in effect for tourists visiting Leh",
+            "kind": "official",
+            "opened": true,
+            "source_date": "2021-08-10",
+            "accessed": "2026-09-28"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ladakh-protected-area-permit-foreigners",
+      "kind": "permit",
+      "title": "Ladakh: foreign citizens need a Protected Area Permit",
+      "detail": "Needed for Nubra, Pangong, Tso Moriri and similar areas beyond Leh. Some nationalities and passport types must apply to central ministries instead.",
+      "applies_to": "Foreign citizens",
+      "set_by": "Ministry of Home Affairs; issued through Leh district administration",
+      "official_url": "https://www.lahdclehpermit.in/",
+      "has_official_order": true,
+      "source": {
+        "url": "https://www.lahdclehpermit.in/",
+        "title": "Leh District Permit Tracking System",
+        "kind": "official",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      },
+      "history": [
+        {
+          "date": "2021-08",
+          "change": "Permit kept for foreigners when it was dropped for Indian citizens.",
+          "source": {
+            "url": "https://thefederal.com/states/north/jammu-and-kashmir/ladakh-scraps-inner-line-permit-system-for-indian-citizens",
+            "title": "Ladakh scraps Inner Line Permit system for Indian citizens",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2021-08-09",
+            "accessed": "2026-09-28"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ladakh-outside-rental-motorcycles",
+      "kind": "motorcycle-rule",
+      "title": "Ladakh: rental motorcycles from outside are turned back",
+      "detail": "Outside rentals may reach Leh but not tour Nubra, Pangong or Hanle. Enforced by the local rental cooperative; no government order found. Own motorcycles are fine with papers.",
+      "applies_to": "Riders on motorcycles rented outside Ladakh",
+      "set_by": "Local motorcycle rental associations in Leh (no government order found)",
+      "official_url": null,
+      "has_official_order": false,
+      "source": {
+        "url": "https://www.tribuneindia.com/news/j-k/amid-tussle-ladakh-l-g-urged-to-ban-rental-bikes-from-manali-511473",
+        "title": "Amid tussle, Ladakh L-G urged to ban rental bikes from Manali",
+        "kind": "news",
+        "opened": true,
+        "source_date": "2023-05-26",
+        "accessed": "2026-09-28"
+      },
+      "history": [
+        {
+          "date": "2014",
+          "change": "Blogger dates the restriction on outside rental motorcycles to this year.",
+          "source": {
+            "url": "https://discoverwithdheeraj.com/5-tips-to-rent-bike-in-leh-ladakh/",
+            "title": "Rent Bike in Leh Ladakh 2026",
+            "kind": "blog",
+            "opened": true,
+            "source_date": "2026-08-01",
+            "accessed": "2026-09-28"
+          }
+        },
+        {
+          "date": "2019",
+          "change": "Leh and Manali rental associations agreed Manali rentals would not go to Pangong or Nubra.",
+          "source": {
+            "url": "https://www.tribuneindia.com/news/j-k/amid-tussle-ladakh-l-g-urged-to-ban-rental-bikes-from-manali-511473",
+            "title": "Amid tussle, Ladakh L-G urged to ban rental bikes from Manali",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2023-05-26",
+            "accessed": "2026-09-28"
+          }
+        },
+        {
+          "date": "2023-05",
+          "change": "Fifteen Manali rental motorcycles vandalised in Leh; Lieutenant Governor deferred to a central ministry ruling.",
+          "source": {
+            "url": "https://www.tribuneindia.com/news/j-k/amid-tussle-ladakh-l-g-urged-to-ban-rental-bikes-from-manali-511473",
+            "title": "Amid tussle, Ladakh L-G urged to ban rental bikes from Manali",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2023-05-26",
+            "accessed": "2026-09-28"
+          }
+        },
+        {
+          "date": "2026-08",
+          "change": "Blogger: a borrowed motorcycle needs a no-objection letter from its owner at check posts.",
+          "source": {
+            "url": "https://discoverwithdheeraj.com/5-tips-to-rent-bike-in-leh-ladakh/",
+            "title": "Rent Bike in Leh Ladakh 2026",
+            "kind": "blog",
+            "opened": true,
+            "source_date": "2026-08-01",
+            "accessed": "2026-09-28"
+          }
+        }
+      ]
+    },
+    {
+      "id": "leh-48-hour-acclimatisation",
+      "kind": "timing",
+      "title": "Leh: 48 hours of acclimatisation before going higher",
+      "detail": "Tourists arriving in Leh are told to rest two days before heading to places such as Khardung La and Pangong. No enforcement method was found.",
+      "applies_to": "Tourists arriving in Leh",
+      "set_by": "District Administration, Leh",
+      "official_url": "https://leh.nic.in/48-hours-acclimatization-for-tourists-arriving-in-leh/",
+      "has_official_order": true,
+      "source": {
+        "url": "https://leh.nic.in/48-hours-acclimatization-for-tourists-arriving-in-leh/",
+        "title": "48 hours acclimatization for tourists arriving in Leh",
+        "kind": "official",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      },
+      "history": [
+        {
+          "date": "2022",
+          "change": "Encyclopedia entry dates the two-day rule before crossing Khardung La to this year.",
+          "source": {
+            "url": "https://en.wikipedia.org/wiki/Khardung_La",
+            "title": "Khardung La",
+            "kind": "encyclopedia",
+            "opened": true,
+            "source_date": null,
+            "accessed": "2026-09-28"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ladakh-circuit-named-on-receipt",
+      "kind": "document",
+      "title": "Hanle and Chushul circuits must be chosen online",
+      "detail": "When paying the fee, the Hanle circuit and the Pangong to Tso Moriri circuit are picked on the form. Reported by a blogger; no official instruction found.",
+      "applies_to": "All tourists",
+      "set_by": "Ladakh Autonomous Hill Development Council, Leh",
+      "official_url": "https://www.lahdclehpermit.in/",
+      "has_official_order": false,
+      "source": {
+        "url": "https://discoverwithdheeraj.com/how-to-get-ladakh-inner-line-permits-online/",
+        "title": "Ladakh Permit 2026: No ILP for Indians",
+        "kind": "blog",
+        "opened": true,
+        "source_date": "2026-09-18",
+        "accessed": "2026-09-28"
+      },
+      "history": [
+        {
+          "date": "2022-03",
+          "change": "Hanle reported open to Indian tourists without a separate permit.",
+          "source": {
+            "url": "https://discoverwithdheeraj.com/how-to-get-ladakh-inner-line-permits-online/",
+            "title": "Ladakh Permit 2026: No ILP for Indians",
+            "kind": "blog",
+            "opened": true,
+            "source_date": "2026-09-18",
+            "accessed": "2026-09-28"
+          }
+        },
+        {
+          "date": "2022",
+          "change": "Army opened the Kaksang La route between Pangong and Tso Moriri to Indian tourists.",
+          "source": {
+            "url": "https://discoverwithdheeraj.com/tips-pangong-tso-to-tso-moriri-direct-route/",
+            "title": "Pangong to Tso Moriri Direct Route 2026 Guide",
+            "kind": "blog",
+            "opened": true,
+            "source_date": "2026-09-08",
+            "accessed": "2026-09-28"
+          }
+        }
+      ]
+    },
+    {
+      "id": "changthang-army-check-posts",
+      "kind": "document",
+      "title": "Army check posts can turn travellers back",
+      "detail": "Posts near the border, including Loma and Chushul, may refuse passage on the day for security reasons even when the receipt is in order. No written order found.",
+      "applies_to": "All civilians",
+      "set_by": "Indian Army",
+      "official_url": null,
+      "has_official_order": false,
+      "source": {
+        "url": "https://discoverwithdheeraj.com/how-to-get-ladakh-inner-line-permits-online/",
+        "title": "Ladakh Permit 2026: No ILP for Indians",
+        "kind": "blog",
+        "opened": true,
+        "source_date": "2026-09-18",
+        "accessed": "2026-09-28"
+      },
+      "history": []
+    },
+    {
+      "id": "hanle-dark-sky-no-high-beam",
+      "kind": "motorcycle-rule",
+      "title": "Hanle Dark Sky Reserve: no high-beam headlights",
+      "detail": "Within about 22 kilometres of Hanle, vehicle high beams are to be prohibited and outdoor lighting limited. The reserve boundary has been notified; the notification itself was not found.",
+      "applies_to": "All vehicles, including motorcycles",
+      "set_by": "Union Territory of Ladakh with the Indian Institute of Astrophysics",
+      "official_url": "https://www.iiap.res.in/centers/iao/hdsr/",
+      "has_official_order": true,
+      "source": {
+        "url": "https://www.iiap.res.in/centers/iao/hdsr/",
+        "title": "Hanle Dark Sky Reserve, Indian Institute of Astrophysics",
+        "kind": "official",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      },
+      "history": []
+    },
+    {
+      "id": "umling-la-open-to-indian-civilians",
+      "kind": "permit",
+      "title": "Umling La is open to Indian civilians",
+      "detail": "Reached from Hanle over Photi La with the ordinary fee receipt naming Hanle. Reported by bloggers and operators; no official page names the pass.",
+      "applies_to": "Indian citizens",
+      "set_by": "Home Department, Union Territory of Ladakh",
+      "official_url": "https://www.lahdclehpermit.in/",
+      "has_official_order": false,
+      "source": {
+        "url": "https://discoverwithdheeraj.com/plan-trip-umling-la-pass-highest-motorable-pass/",
+        "title": "Umling La Pass 2026 Guide",
+        "kind": "blog",
+        "opened": true,
+        "source_date": "2026-07-27",
+        "accessed": "2026-09-28"
+      },
+      "history": [
+        {
+          "date": "2022",
+          "change": "Blogger reports no permit needed for the pass from this year.",
+          "source": {
+            "url": "https://discoverwithdheeraj.com/plan-trip-umling-la-pass-highest-motorable-pass/",
+            "title": "Umling La Pass 2026 Guide",
+            "kind": "blog",
+            "opened": true,
+            "source_date": "2026-07-27",
+            "accessed": "2026-09-28"
+          }
+        }
+      ]
+    },
+    {
+      "id": "umling-la-foreigners",
+      "kind": "permit",
+      "title": "Foreign citizens at Umling La: sources disagree",
+      "detail": "A blogger said in September 2026 that foreigners are generally not allowed. Operator pages say the permit works if it names the Hanle to Umling La route. No order found.",
+      "applies_to": "Foreign citizens",
+      "set_by": "Ministry of Home Affairs; Leh district administration",
+      "official_url": "https://www.lahdclehpermit.in/",
+      "has_official_order": false,
+      "source": {
+        "url": "https://discoverwithdheeraj.com/protected-area-permit-in-ladakh-for-foreigners/",
+        "title": "Protected Area Permit Ladakh for Foreigners 2026",
+        "kind": "blog",
+        "opened": true,
+        "source_date": "2026-09-02",
+        "accessed": "2026-09-28"
+      },
+      "history": [
+        {
+          "date": "2024",
+          "change": "Operator page reports the pass opened to foreigners holding a Protected Area Permit.",
+          "source": {
+            "url": "https://www.extremetoursindia.com/umling-la-now-opened-to-foreign-tourists-ride-to-the-highest-road-on-earth/",
+            "title": "Umling La open to foreign tourists",
+            "kind": "operator",
+            "opened": true,
+            "source_date": null,
+            "accessed": "2026-09-28"
+          }
+        },
+        {
+          "date": "2026-07-13",
+          "change": "Operator guide says access depends on the route written on the permit.",
+          "source": {
+            "url": "https://travelcoffee.in/blog/umling-la-ladakh-guide",
+            "title": "Umling La Ladakh Guide 2026: Route, Altitude and Permit",
+            "kind": "operator",
+            "opened": true,
+            "source_date": "2026-07-13",
+            "accessed": "2026-09-28"
+          }
+        },
+        {
+          "date": "2026-09-02",
+          "change": "Blogger states foreigners are generally not permitted.",
+          "source": {
+            "url": "https://discoverwithdheeraj.com/protected-area-permit-in-ladakh-for-foreigners/",
+            "title": "Protected Area Permit Ladakh for Foreigners 2026",
+            "kind": "blog",
+            "opened": true,
+            "source_date": "2026-09-02",
+            "accessed": "2026-09-28"
+          }
+        }
+      ]
+    },
+    {
+      "id": "umling-la-no-descent-to-demchok",
+      "kind": "permit",
+      "title": "No civilian descent from Umling La to Demchok",
+      "detail": "The road onward to Demchok needs special army permission. Civilians return the way they came, to Hanle. No written order found.",
+      "applies_to": "All civilians",
+      "set_by": "Indian Army",
+      "official_url": null,
+      "has_official_order": false,
+      "source": {
+        "url": "https://discoverwithdheeraj.com/plan-trip-umling-la-pass-highest-motorable-pass/",
+        "title": "Umling La Pass 2026 Guide",
+        "kind": "blog",
+        "opened": true,
+        "source_date": "2026-07-27",
+        "accessed": "2026-09-28"
+      },
+      "history": [
+        {
+          "date": "2021-08",
+          "change": "News report listed Demchok among villages expected to stay closed.",
+          "source": {
+            "url": "https://thefederal.com/states/north/jammu-and-kashmir/ladakh-scraps-inner-line-permit-system-for-indian-citizens",
+            "title": "Ladakh scraps Inner Line Permit system for Indian citizens",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2021-08-09",
+            "accessed": "2026-09-28"
+          }
+        }
+      ]
+    },
+    {
+      "id": "umling-la-motorcycles",
+      "kind": "motorcycle-rule",
+      "title": "Umling La: no rule against motorcycles found",
+      "detail": "Riders reach the pass on ordinary touring motorcycles. No engine size limit or motorcycle ban was found in any source.",
+      "applies_to": "Motorcycles",
+      "set_by": "Not established",
+      "official_url": null,
+      "has_official_order": false,
+      "source": {
+        "url": "https://discoverwithdheeraj.com/plan-trip-umling-la-pass-highest-motorable-pass/",
+        "title": "Umling La Pass 2026 Guide",
+        "kind": "blog",
+        "opened": true,
+        "source_date": "2026-07-27",
+        "accessed": "2026-09-28"
+      },
+      "history": []
+    }
+  ],
+  "season": {
+    "note": "No opening or closing orders were found for any year; guides describe the road as usable from late May or June until early October.",
+    "history": []
+  },
+  "authorities": [
+    {
+      "office": "Border Roads Organisation",
+      "announces": "Built and maintains the road; snow clearance",
+      "stretch": "Chisumle to Umling La to Demchok",
+      "channel": "Statements to the press and its X account; no status page",
+      "url": "https://bro.gov.in/",
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/Umling_La",
+        "title": "Umling La",
+        "kind": "encyclopedia",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      }
+    },
+    {
+      "office": "Indian Army",
+      "announces": "Whether civilians may pass on the day",
+      "stretch": "Loma, Hanle and the road to Umling La",
+      "channel": "At the check post; nothing published",
+      "url": null,
+      "source": {
+        "url": "https://discoverwithdheeraj.com/how-to-get-ladakh-inner-line-permits-online/",
+        "title": "Ladakh Permit 2026: No ILP for Indians",
+        "kind": "blog",
+        "opened": true,
+        "source_date": "2026-09-18",
+        "accessed": "2026-09-28"
+      }
+    },
+    {
+      "office": "Ladakh Autonomous Hill Development Council, Leh",
+      "announces": "Tourist fee, circuits and permits",
+      "stretch": "Hanle circuit",
+      "channel": "Permit portal",
+      "url": "https://www.lahdclehpermit.in/",
+      "source": {
+        "url": "https://www.lahdclehpermit.in/",
+        "title": "Leh District Permit Tracking System",
+        "kind": "official",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      }
+    },
+    {
+      "office": "Ladakh Police",
+      "announces": "Tourist alerts and advisories",
+      "stretch": "Leh district",
+      "channel": "Website and the Jullay 2.0 app",
+      "url": "https://police.ladakh.gov.in/",
+      "source": {
+        "url": "https://police.ladakh.gov.in/",
+        "title": "Ladakh Police",
+        "kind": "official",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      }
+    }
+  ],
+  "hazards": [
+    {
+      "title": "Extreme altitude",
+      "detail": "The pass is close to 5,800 metres; guides advise two nights in Hanle first and warn of altitude sickness.",
+      "months": [],
+      "source": {
+        "url": "https://discoverwithdheeraj.com/plan-trip-umling-la-pass-highest-motorable-pass/",
+        "title": "Umling La Pass 2026 Guide",
+        "kind": "blog",
+        "opened": true,
+        "source_date": "2026-07-27",
+        "accessed": "2026-09-28"
+      }
+    },
+    {
+      "title": "No fuel beyond Karu that can be relied on",
+      "detail": "Karu is called the dependable pump, and supply at Nyoma is not to be counted on.",
+      "months": [],
+      "source": {
+        "url": "https://travelcoffee.in/blog/umling-la-ladakh-guide",
+        "title": "Umling La Ladakh Guide 2026: Route, Altitude and Permit",
+        "kind": "operator",
+        "opened": true,
+        "source_date": "2026-07-13",
+        "accessed": "2026-09-28"
+      }
+    },
+    {
+      "title": "Prepaid mobile connections from other states do not work",
+      "detail": "A blogger reports that only postpaid connections from outside work in Jammu and Kashmir and in Ladakh; no official source was found.",
+      "months": [],
+      "source": {
+        "url": "https://discoverwithdheeraj.com/mobile-phone-connectivity-in-leh-ladakh/",
+        "title": "Mobile phone connectivity in Leh Ladakh",
+        "kind": "blog",
+        "opened": true,
+        "source_date": "2026-08-14",
+        "accessed": "2026-09-28"
+      }
+    },
+    {
+      "title": "No mobile network beyond Hanle",
+      "detail": "There is no signal on the road from Hanle to the pass.",
+      "months": [],
+      "source": {
+        "url": "https://discoverwithdheeraj.com/plan-trip-umling-la-pass-highest-motorable-pass/",
+        "title": "Umling La Pass 2026 Guide",
+        "kind": "blog",
+        "opened": true,
+        "source_date": "2026-07-27",
+        "accessed": "2026-09-28"
+      }
+    },
+    {
+      "title": "Water crossings and rough gravel",
+      "detail": "Streams and broken gravel on the Photi La side in summer; the surface mixes tar and dirt.",
+      "months": [
+        6,
+        7,
+        8
+      ],
+      "source": {
+        "url": "https://travelcoffee.in/blog/umling-la-ladakh-guide",
+        "title": "Umling La Ladakh Guide 2026: Route, Altitude and Permit",
+        "kind": "operator",
+        "opened": true,
+        "source_date": "2026-07-13",
+        "accessed": "2026-09-28"
+      }
+    },
+    {
+      "title": "Snow and slush early in the season",
+      "detail": "Early May brings snow and slush; the road is usually clear from mid-June.",
+      "months": [
+        5
+      ],
+      "source": {
+        "url": "https://travelcoffee.in/blog/umling-la-ladakh-guide",
+        "title": "Umling La Ladakh Guide 2026: Route, Altitude and Permit",
+        "kind": "operator",
+        "opened": true,
+        "source_date": "2026-07-13",
+        "accessed": "2026-09-28"
+      }
+    },
+    {
+      "title": "Sudden snow in October",
+      "detail": "Fresh snow can close the road without warning late in the season.",
+      "months": [
+        10
+      ],
+      "source": {
+        "url": "https://travelcoffee.in/blog/umling-la-ladakh-guide",
+        "title": "Umling La Ladakh Guide 2026: Route, Altitude and Permit",
+        "kind": "operator",
+        "opened": true,
+        "source_date": "2026-07-13",
+        "accessed": "2026-09-28"
+      }
+    }
+  ],
+  "videos": [
+    {
+      "url": "https://www.youtube.com/watch?v=nlnMcGMMGoE",
+      "title": "THE REMOTE OFF-ROAD ROUTE TO UMLING LA | EP05",
+      "channel": "SpilTrez",
+      "stretch": "Leh to Hanle, then Hanle to Umling La",
+      "filmed": null,
+      "bike": "Royal Enfield Himalayan 450"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=mgUXQuCfhHA",
+      "title": "Umling La Pass Bike Ride | Pangong to Hanle | Hanle to Umling La Bike Ride | Ladakh Bike Trip | EP11",
+      "channel": "Suurojit Palmal",
+      "stretch": "Pangong to Hanle, then Hanle to Umling La",
+      "filmed": null,
+      "bike": null
+    }
+  ],
+  "gaps": [
+    "No official page names Umling La as open to civilians or to motorcycles; this rests on bloggers and operators.",
+    "No official source found on foreign citizens at Umling La; three unofficial sources disagree.",
+    "No yearly opening or closing dates found for any of the last five years.",
+    "Altitude of Photi La not sourced.",
+    "Sources give 5,798, 5,799 and 5,883 metres for Umling La; the encyclopedia figure of 5,799 is used.",
+    "An encyclopedia entry says a higher road at Mig La overtook Umling La in 2025; whether civilians may use it was not found.",
+    "No written order found for the army turning travellers back or for the bar on descending to Demchok.",
+    "No government order found for the restriction on rental motorcycles from outside Ladakh.",
+    "No official page states the Ladakh tourist fee amounts, so they are left out.",
+    "Video filming dates are not stated; they were published on 31 July 2026 and 22 July 2025."
+  ]
+}

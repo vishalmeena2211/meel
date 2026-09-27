@@ -1,0 +1,577 @@
+{
+  "slug": "gurez-valley",
+  "header": {
+    "highway": {
+      "value": "No highway number found; Bandipora to Gurez road",
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/Razdan_Pass",
+        "title": "Razdan Pass",
+        "kind": "encyclopedia",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      }
+    },
+    "highest_point": {
+      "name": "Razdan Pass",
+      "altitude_m": 3556,
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/Razdan_Pass",
+        "title": "Razdan Pass",
+        "kind": "encyclopedia",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      }
+    },
+    "usual_days": {
+      "value": "3",
+      "source": {
+        "url": "https://travelcoffee.in/blog/gurez-valley-travel-guide",
+        "title": "Gurez Valley Travel Guide 2026: Route, Permit, Cost",
+        "kind": "operator",
+        "opened": true,
+        "source_date": "2026-07-26",
+        "accessed": "2026-09-28"
+      }
+    },
+    "usual_season": {
+      "value": "May to October",
+      "source": {
+        "url": "https://travelcoffee.in/blog/gurez-valley-travel-guide",
+        "title": "Gurez Valley Travel Guide 2026: Route, Permit, Cost",
+        "kind": "operator",
+        "opened": true,
+        "source_date": "2026-07-26",
+        "accessed": "2026-09-28"
+      }
+    },
+    "one_line": "North Kashmir, from Srinagar through Bandipora and over Razdan Pass to Dawar near the Line of Control"
+  },
+  "rules": [
+    {
+      "id": "kashmir-tourist-spots-closed-after-april-2025",
+      "kind": "permit",
+      "title": "Kashmir: tourist spots shut in 2025, reopened in phases",
+      "detail": "After the attack near Pahalgam, 48 of 87 destinations were closed. Most have reopened by order of the Lieutenant Governor; check each place before riding to it.",
+      "applies_to": "All tourists",
+      "set_by": "Lieutenant Governor's administration, Jammu and Kashmir",
+      "official_url": null,
+      "has_official_order": true,
+      "source": {
+        "url": "https://www.outlooktraveller.com/News/jammu-and-kashmir-reopens-14-tourist-spots-after-2025-pahalgam-attack",
+        "title": "Jammu and Kashmir reopens 14 tourist spots after 2025 Pahalgam attack",
+        "kind": "news",
+        "opened": true,
+        "source_date": "2026-02-19",
+        "accessed": "2026-09-28"
+      },
+      "history": [
+        {
+          "date": "2025-04-29",
+          "change": "48 of 87 destinations reported closed, including Gurez for non-local tourists.",
+          "source": {
+            "url": "https://www.tribuneindia.com/news/j-k/pahalgam-attack-fallout-48-tourist-spots-closed-across-kashmir-for-security-reasons",
+            "title": "Pahalgam attack fallout: 48 tourist spots closed across Kashmir for security reasons",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2025-04-29",
+            "accessed": "2026-09-28"
+          }
+        },
+        {
+          "date": "2025-07",
+          "change": "Gurez reopened to local and non-local tourists.",
+          "source": {
+            "url": "https://www.tribuneindia.com/news/j-k/shut-since-pahalgam-gurez-valley-reopens/",
+            "title": "Shut since Pahalgam, Gurez valley reopens",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2025-07-25",
+            "accessed": "2026-09-28"
+          }
+        },
+        {
+          "date": "2026-02",
+          "change": "Fourteen more reopened, among them Thajwas Glacier, Pir Ki Gali and Dubjan.",
+          "source": {
+            "url": "https://www.outlooktraveller.com/News/jammu-and-kashmir-reopens-14-tourist-spots-after-2025-pahalgam-attack",
+            "title": "Jammu and Kashmir reopens 14 tourist spots after 2025 Pahalgam attack",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2026-02-19",
+            "accessed": "2026-09-28"
+          }
+        },
+        {
+          "date": "2026-04-08",
+          "change": "Government said all remaining closed destinations were expected to reopen by May 2026.",
+          "source": {
+            "url": "https://www.outlooktraveller.com/News/kashmirs-closed-tourist-destinations-set-to-reopen-by-may-after-2025-pahalgam-attack",
+            "title": "J&K to reopen all tourist destinations closed after Pahalgam attack by May",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2026-04-08",
+            "accessed": "2026-09-28"
+          }
+        }
+      ]
+    },
+    {
+      "id": "gurez-identity-check-posts",
+      "kind": "document",
+      "title": "Gurez: identity proof and photocopies at check posts",
+      "detail": "Indian citizens need no permit for Dawar but show original identity proof at Tragbal, Razdan Pass and Dawar, and leave photocopies. Reported by an operator; no order found.",
+      "applies_to": "Indian citizens",
+      "set_by": "Indian Army and Jammu and Kashmir Police",
+      "official_url": null,
+      "has_official_order": false,
+      "source": {
+        "url": "https://www.thealpinegurez.in/permits",
+        "title": "Permits and Travel Advisory, The Alpine Gurez",
+        "kind": "operator",
+        "opened": true,
+        "source_date": "2026",
+        "accessed": "2026-09-28"
+      },
+      "history": []
+    },
+    {
+      "id": "gurez-foreigners-clearance",
+      "kind": "permit",
+      "title": "Gurez: foreign citizens need clearance from Bandipora",
+      "detail": "An operator says foreigners apply to the Deputy Commissioner's office a week or more ahead with passport and visa copies. Another guide says access may be refused. No order found.",
+      "applies_to": "Foreign citizens",
+      "set_by": "Deputy Commissioner, Bandipora",
+      "official_url": null,
+      "has_official_order": false,
+      "source": {
+        "url": "https://www.thealpinegurez.in/permits",
+        "title": "Permits and Travel Advisory, The Alpine Gurez",
+        "kind": "operator",
+        "opened": true,
+        "source_date": "2026",
+        "accessed": "2026-09-28"
+      },
+      "history": [
+        {
+          "date": "2026-07-26",
+          "change": "Operator guide says foreign access may be restricted and should be confirmed in writing.",
+          "source": {
+            "url": "https://travelcoffee.in/blog/gurez-valley-travel-guide",
+            "title": "Gurez Valley Travel Guide 2026: Route, Permit, Cost",
+            "kind": "operator",
+            "opened": true,
+            "source_date": "2026-07-26",
+            "accessed": "2026-09-28"
+          }
+        }
+      ]
+    },
+    {
+      "id": "gurez-beyond-dawar",
+      "kind": "permit",
+      "title": "Beyond Dawar: local permission may be needed",
+      "detail": "Villages near the Line of Control, such as those in Tulail, may need permission or registration at Dawar police station. Rules are confirmed on the day. No order found.",
+      "applies_to": "All tourists",
+      "set_by": "Jammu and Kashmir Police, Dawar",
+      "official_url": null,
+      "has_official_order": false,
+      "source": {
+        "url": "https://www.thealpinegurez.in/permits",
+        "title": "Permits and Travel Advisory, The Alpine Gurez",
+        "kind": "operator",
+        "opened": true,
+        "source_date": "2026",
+        "accessed": "2026-09-28"
+      },
+      "history": []
+    },
+    {
+      "id": "bandipora-gurez-cut-off-and-chains",
+      "kind": "timing",
+      "title": "Cut-off times at Tragbal and Kanzalwan; chains in snow",
+      "detail": "Traffic must pass the control points at Tragbal and Kanzalwan before set cut-off times, which the sources do not state. After snow no vehicle runs without anti-skid chains.",
+      "applies_to": "All vehicles",
+      "set_by": "Sub-Divisional Magistrate, Gurez; traffic police",
+      "official_url": null,
+      "has_official_order": true,
+      "source": {
+        "url": "https://www.greaterkashmir.com/kashmir/gurez-road-opens-for-traffic-2/",
+        "title": "Gurez road opens for traffic",
+        "kind": "news",
+        "opened": true,
+        "source_date": "2024-11-26",
+        "accessed": "2026-09-28"
+      },
+      "history": [
+        {
+          "date": "2024-11-25",
+          "change": "Road reopened after two days with chains compulsory and cut-off times at both control points.",
+          "source": {
+            "url": "https://www.greaterkashmir.com/kashmir/gurez-road-opens-for-traffic-2/",
+            "title": "Gurez road opens for traffic",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2024-11-26",
+            "accessed": "2026-09-28"
+          }
+        },
+        {
+          "date": "2026-02-13",
+          "change": "Light vehicles only, one direction per day for about an hour, chains required, heavy vehicles barred.",
+          "source": {
+            "url": "https://www.greaterkashmir.com/kashmir/bandipora-gurez-road-reopens-after-20-day-closure",
+            "title": "Bandipora-Gurez road reopens after 20-day closure",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2026-02-13",
+            "accessed": "2026-09-28"
+          }
+        },
+        {
+          "date": "2026-03-07",
+          "change": "All movement suspended until further orders after snowfall at Razdan Pass.",
+          "source": {
+            "url": "https://thekashmirimages.com/2026/03/07/bandipora-gurez-road-closed-after-snowfall-at-razdan-top/",
+            "title": "Bandipora-Gurez road closed after snowfall at Razdan Top",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2026-03-07",
+            "accessed": "2026-09-28"
+          }
+        }
+      ]
+    },
+    {
+      "id": "gurez-motorcycles",
+      "kind": "motorcycle-rule",
+      "title": "Gurez: no rule against motorcycles found",
+      "detail": "An operator guide treats motorcycles as allowed. How the chain requirement is applied to two-wheelers after snow was not found. No order found either way.",
+      "applies_to": "Motorcycles",
+      "set_by": "Not established",
+      "official_url": null,
+      "has_official_order": false,
+      "source": {
+        "url": "https://travelcoffee.in/blog/gurez-valley-travel-guide",
+        "title": "Gurez Valley Travel Guide 2026: Route, Permit, Cost",
+        "kind": "operator",
+        "opened": true,
+        "source_date": "2026-07-26",
+        "accessed": "2026-09-28"
+      },
+      "history": []
+    }
+  ],
+  "season": {
+    "note": "Razdan Pass shuts for several winter months; dated opening and closing announcements were found only in fragments.",
+    "history": [
+      {
+        "year": 2026,
+        "connected": null,
+        "open_to_motorcycles": null,
+        "closed": null,
+        "note": "Shut about 23 January; reopened 13 February for light vehicles, one direction a day, with chains. Suspended again on 7 March. Snow clearance under way on 25 April. Full opening date not found.",
+        "sources": [
+          {
+            "url": "https://www.greaterkashmir.com/kashmir/bandipora-gurez-road-reopens-after-20-day-closure",
+            "title": "Bandipora-Gurez road reopens after 20-day closure",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2026-02-13",
+            "accessed": "2026-09-28"
+          },
+          {
+            "url": "https://thekashmirimages.com/2026/03/07/bandipora-gurez-road-closed-after-snowfall-at-razdan-top/",
+            "title": "Bandipora-Gurez road closed after snowfall at Razdan Top",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2026-03-07",
+            "accessed": "2026-09-28"
+          },
+          {
+            "url": "https://kashmirlife.net/bro-intensifies-snow-clearance-operations-on-bandipora-gurez-road-433652/",
+            "title": "BRO intensifies snow clearance operations on Bandipora-Gurez road",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2026-04-25",
+            "accessed": "2026-09-28"
+          }
+        ]
+      },
+      {
+        "year": 2025,
+        "connected": "2025-04",
+        "open_to_motorcycles": null,
+        "closed": null,
+        "note": "First tourist vehicles reported by 21 April. Closed to non-local tourists within days, after the Pahalgam attack, and reopened to them in July. Motorcycles not named.",
+        "sources": [
+          {
+            "url": "https://risingkashmir.com/gurez-opens-its-gates-to-tourists-as-summer-melts-winters-isolation",
+            "title": "Gurez opens its gates to tourists as summer melts winter's isolation",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2025-04-21",
+            "accessed": "2026-09-28"
+          },
+          {
+            "url": "https://www.tribuneindia.com/news/j-k/pahalgam-attack-fallout-48-tourist-spots-closed-across-kashmir-for-security-reasons",
+            "title": "Pahalgam attack fallout: 48 tourist spots closed across Kashmir for security reasons",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2025-04-29",
+            "accessed": "2026-09-28"
+          },
+          {
+            "url": "https://www.tribuneindia.com/news/j-k/shut-since-pahalgam-gurez-valley-reopens/",
+            "title": "Shut since Pahalgam, Gurez valley reopens",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2025-07-25",
+            "accessed": "2026-09-28"
+          }
+        ]
+      },
+      {
+        "year": 2024,
+        "connected": null,
+        "open_to_motorcycles": null,
+        "closed": null,
+        "note": "Open on 6 October despite fresh snow. Shut 23 to 25 November, then reopened with chains compulsory. Date of the winter closure not found.",
+        "sources": [
+          {
+            "url": "https://www.greaterkashmir.com/gk-top-news/bandipora-gurez-road-open-amid-snowfall-over-razdan-pass-officials/",
+            "title": "Bandipora-Gurez road open amid snowfall over Razdan Pass: officials",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2024-10-06",
+            "accessed": "2026-09-28"
+          },
+          {
+            "url": "https://www.greaterkashmir.com/kashmir/gurez-road-opens-for-traffic-2/",
+            "title": "Gurez road opens for traffic",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2024-11-26",
+            "accessed": "2026-09-28"
+          }
+        ]
+      }
+    ]
+  },
+  "authorities": [
+    {
+      "office": "Border Roads Organisation",
+      "announces": "Snow clearance over Razdan Pass",
+      "stretch": "Bandipora to Gurez",
+      "channel": "Statements to the press; no status page",
+      "url": "https://bro.gov.in/",
+      "source": {
+        "url": "https://kashmirlife.net/bro-intensifies-snow-clearance-operations-on-bandipora-gurez-road-433652/",
+        "title": "BRO intensifies snow clearance operations on Bandipora-Gurez road",
+        "kind": "news",
+        "opened": true,
+        "source_date": "2026-04-25",
+        "accessed": "2026-09-28"
+      }
+    },
+    {
+      "office": "Sub-Divisional Magistrate, Gurez",
+      "announces": "Suspends and restores traffic, sets direction and vehicle class after snow",
+      "stretch": "Bandipora to Gurez",
+      "channel": "Statements and orders reported by newspapers",
+      "url": null,
+      "source": {
+        "url": "https://thekashmirimages.com/2026/03/07/bandipora-gurez-road-closed-after-snowfall-at-razdan-top/",
+        "title": "Bandipora-Gurez road closed after snowfall at Razdan Top",
+        "kind": "news",
+        "opened": true,
+        "source_date": "2026-03-07",
+        "accessed": "2026-09-28"
+      }
+    },
+    {
+      "office": "Deputy Commissioner, Bandipora",
+      "announces": "Whether tourists, including non-locals, may enter Gurez",
+      "stretch": "Gurez valley",
+      "channel": "Statements to newspapers",
+      "url": null,
+      "source": {
+        "url": "https://www.tribuneindia.com/news/j-k/shut-since-pahalgam-gurez-valley-reopens/",
+        "title": "Shut since Pahalgam, Gurez valley reopens",
+        "kind": "news",
+        "opened": true,
+        "source_date": "2025-07-25",
+        "accessed": "2026-09-28"
+      }
+    },
+    {
+      "office": "Traffic control points at Tragbal and Kanzalwan",
+      "announces": "Cut-off times and the chain requirement on the day",
+      "stretch": "Bandipora to Dawar",
+      "channel": "At the control point; reported by newspapers",
+      "url": null,
+      "source": {
+        "url": "https://www.greaterkashmir.com/kashmir/gurez-road-opens-for-traffic-2/",
+        "title": "Gurez road opens for traffic",
+        "kind": "news",
+        "opened": true,
+        "source_date": "2024-11-26",
+        "accessed": "2026-09-28"
+      }
+    },
+    {
+      "office": "Traffic Police Headquarters, Jammu and Kashmir",
+      "announces": "Daily traffic plan; the 27 September 2026 edition did not list this road",
+      "stretch": "Kashmir division",
+      "channel": "Daily advisory, republished by news sites",
+      "url": null,
+      "source": {
+        "url": "https://jkadworld.com/jk-news-today/jammu-srinagar-highway-traffic-advisory-28th-sep-2026nh-44-traffic-update-travel-guidelines/",
+        "title": "Traffic advisory for 28 September 2026, Traffic Police Headquarters Jammu and Kashmir",
+        "kind": "news",
+        "opened": true,
+        "source_date": "2026-09-27",
+        "accessed": "2026-09-28"
+      }
+    }
+  ],
+  "hazards": [
+    {
+      "title": "Landslides on the only road in",
+      "detail": "The single road is described as treacherous, with landslides often stopping traffic.",
+      "months": [],
+      "source": {
+        "url": "https://risingkashmir.com/gurez-opens-its-gates-to-tourists-as-summer-melts-winters-isolation",
+        "title": "Gurez opens its gates to tourists as summer melts winter's isolation",
+        "kind": "news",
+        "opened": true,
+        "source_date": "2025-04-21",
+        "accessed": "2026-09-28"
+      }
+    },
+    {
+      "title": "Cloudburst landslides in the monsoon",
+      "detail": "A cloudburst on 23 August 2025 set off landslides that shut the road overnight; more slides were expected.",
+      "months": [
+        8
+      ],
+      "source": {
+        "url": "https://kashmirreader.com/2025/08/24/gurez-bandipora-road-reopens-after-night-long-operation-by-bro/",
+        "title": "Gurez-Bandipora road reopens after night-long operation by BRO",
+        "kind": "news",
+        "opened": true,
+        "source_date": "2025-08-24",
+        "accessed": "2026-09-28"
+      }
+    },
+    {
+      "title": "Snow slides on Razdan Pass in late winter",
+      "detail": "In February 2026 traffic was let through for about an hour a day because of the risk of snow slides.",
+      "months": [
+        1,
+        2,
+        3
+      ],
+      "source": {
+        "url": "https://www.greaterkashmir.com/kashmir/bandipora-gurez-road-reopens-after-20-day-closure",
+        "title": "Bandipora-Gurez road reopens after 20-day closure",
+        "kind": "news",
+        "opened": true,
+        "source_date": "2026-02-13",
+        "accessed": "2026-09-28"
+      }
+    },
+    {
+      "title": "Snow on Razdan Pass from October",
+      "detail": "Fresh snow fell on the pass in early October 2024 and shut the road for two days in late November.",
+      "months": [
+        10,
+        11
+      ],
+      "source": {
+        "url": "https://www.greaterkashmir.com/kashmir/gurez-road-opens-for-traffic-2/",
+        "title": "Gurez road opens for traffic",
+        "kind": "news",
+        "opened": true,
+        "source_date": "2024-11-26",
+        "accessed": "2026-09-28"
+      }
+    },
+    {
+      "title": "Unsettled conditions early in the season",
+      "detail": "May and June are described as the least predictable months.",
+      "months": [
+        5,
+        6
+      ],
+      "source": {
+        "url": "https://travelcoffee.in/blog/gurez-valley-travel-guide",
+        "title": "Gurez Valley Travel Guide 2026: Route, Permit, Cost",
+        "kind": "operator",
+        "opened": true,
+        "source_date": "2026-07-26",
+        "accessed": "2026-09-28"
+      }
+    },
+    {
+      "title": "Fuel limited beyond Bandipora",
+      "detail": "An operator guide warns that fuel may be hard to find after Bandipora.",
+      "months": [],
+      "source": {
+        "url": "https://travelcoffee.in/blog/gurez-valley-travel-guide",
+        "title": "Gurez Valley Travel Guide 2026: Route, Permit, Cost",
+        "kind": "operator",
+        "opened": true,
+        "source_date": "2026-07-26",
+        "accessed": "2026-09-28"
+      }
+    },
+    {
+      "title": "Patchy mobile signal",
+      "detail": "Signal is described as intermittent along the route.",
+      "months": [],
+      "source": {
+        "url": "https://travelcoffee.in/blog/gurez-valley-travel-guide",
+        "title": "Gurez Valley Travel Guide 2026: Route, Permit, Cost",
+        "kind": "operator",
+        "opened": true,
+        "source_date": "2026-07-26",
+        "accessed": "2026-09-28"
+      }
+    },
+    {
+      "title": "Prepaid mobile connections from other states do not work",
+      "detail": "A blogger reports that only postpaid connections from outside work in Jammu and Kashmir and in Ladakh; no official source was found.",
+      "months": [],
+      "source": {
+        "url": "https://discoverwithdheeraj.com/mobile-phone-connectivity-in-leh-ladakh/",
+        "title": "Mobile phone connectivity in Leh Ladakh",
+        "kind": "blog",
+        "opened": true,
+        "source_date": "2026-08-14",
+        "accessed": "2026-09-28"
+      }
+    }
+  ],
+  "videos": [
+    {
+      "url": "https://www.youtube.com/watch?v=NfWe3wVS6ME",
+      "title": "Angry Cop😡 Camera Band kar | Thotu😭 on Ladakh Ride 2026 🙏 | Episode - 6 Exploring Gurez Valley |",
+      "channel": "Aalyan vlogs",
+      "stretch": "Gurez valley",
+      "filmed": "2026",
+      "bike": null
+    }
+  ],
+  "gaps": [
+    "Whether Gurez is open to non-local tourists on 28 September 2026 was not confirmed; in February 2026 it was listed as awaiting snow clearance before reopening.",
+    "No official page found for any Gurez permit or registration rule; all come from operators.",
+    "Sources conflict on whether Indian citizens need a permit; one operator guide mentions a permit, another says identity proof is enough.",
+    "The cut-off times at Tragbal and Kanzalwan are not stated in any source opened.",
+    "Opening dates for 2021 to 2024 and 2026, and closing dates for every year, were not found.",
+    "No source says whether motorcycles were allowed when the road opened in any year.",
+    "No road number found for the Bandipora to Gurez road.",
+    "Only one rider video could be checked; a second, on crossing Razdan Pass in April 2025, could not be read."
+  ]
+}

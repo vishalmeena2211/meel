@@ -1,0 +1,217 @@
+{
+  "slug": "madhya-pradesh",
+  "header": {
+    "highway": {
+      "value": "State Highway 19 and 19A (Matkuli to Pachmarhi); NH 39 (Chhatarpur to Jhansi); NH 44 (Gwalior)",
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/Pachmarhi",
+        "title": "Pachmarhi",
+        "kind": "encyclopedia",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      }
+    },
+    "highest_point": {
+      "name": "Dhupgarh, Pachmarhi",
+      "altitude_m": 1352,
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/Pachmarhi",
+        "title": "Pachmarhi",
+        "kind": "encyclopedia",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      }
+    },
+    "usual_days": null,
+    "usual_season": {
+      "value": "October to March; Pachmarhi itself is open all year",
+      "source": {
+        "url": "https://forest.mponline.gov.in/Images/FAQSatpura.pdf",
+        "title": "FAQ's on visit to Satpura Tiger Reserve Hoshangabad",
+        "kind": "official",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      }
+    },
+    "one_line": "Madhya Pradesh, from the Satpura hills at Pachmarhi to the temples of Khajuraho and Orchha"
+  },
+  "rules": [
+    {
+      "id": "pachmarhi-view-points-two-wheeler-fee",
+      "kind": "fee",
+      "title": "Pachmarhi view points: two-wheelers allowed, for a fee",
+      "detail": "A motorcycle with up to two people pays 100 rupees for the view points, or 50 rupees for a single one, on the reserve's rate list.",
+      "applies_to": "Two-wheelers, up to two people",
+      "set_by": "Satpura Tiger Reserve, Madhya Pradesh Forest Department",
+      "official_url": "https://www.satpuratigerreserve.org/excursion-and-charges",
+      "has_official_order": true,
+      "source": {
+        "url": "https://www.satpuratigerreserve.org/excursion-and-charges",
+        "title": "Excursion and Charges - Satpura Tiger Reserve",
+        "kind": "official",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      },
+      "history": []
+    },
+    {
+      "id": "pachmarhi-guide-fee",
+      "kind": "fee",
+      "title": "Pachmarhi: trained guide fee for touring all areas",
+      "detail": "The rate list adds a fee of 600 rupees for a registered trained guide when touring all the tourist areas of Pachmarhi.",
+      "applies_to": "Visitors touring the forest view points",
+      "set_by": "Satpura Tiger Reserve, Madhya Pradesh Forest Department",
+      "official_url": "https://www.satpuratigerreserve.org/excursion-and-charges",
+      "has_official_order": true,
+      "source": {
+        "url": "https://www.satpuratigerreserve.org/excursion-and-charges",
+        "title": "Excursion and Charges - Satpura Tiger Reserve",
+        "kind": "official",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      },
+      "history": []
+    },
+    {
+      "id": "pachmarhi-zone-sunrise-to-sunset",
+      "kind": "timing",
+      "title": "Pachmarhi zone: open sunrise to sunset, all year",
+      "detail": "Private vehicles may enter the Pachmarhi zone, with no daily cap on vehicles. Visits run from sunrise to sunset and the zone stays open through the monsoon.",
+      "applies_to": "All visitors",
+      "set_by": "Satpura Tiger Reserve, Madhya Pradesh Forest Department",
+      "official_url": "https://forest.mponline.gov.in/Images/FAQSatpura.pdf",
+      "has_official_order": true,
+      "source": {
+        "url": "https://forest.mponline.gov.in/Images/FAQSatpura.pdf",
+        "title": "FAQ's on visit to Satpura Tiger Reserve Hoshangabad",
+        "kind": "official",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      },
+      "history": []
+    },
+    {
+      "id": "satpura-madhai-churna-monsoon-closure",
+      "kind": "timing",
+      "title": "Satpura safari zones: shut 16 June to 30 September",
+      "detail": "The Madhai and Churna zones close for the monsoon. Safaris also stop on Wednesday afternoons and on Holi and Diwali.",
+      "applies_to": "All visitors",
+      "set_by": "Satpura Tiger Reserve, Madhya Pradesh Forest Department",
+      "official_url": "https://forest.mponline.gov.in/Images/FAQSatpura.pdf",
+      "has_official_order": true,
+      "source": {
+        "url": "https://forest.mponline.gov.in/Images/FAQSatpura.pdf",
+        "title": "FAQ's on visit to Satpura Tiger Reserve Hoshangabad",
+        "kind": "official",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      },
+      "history": []
+    }
+  ],
+  "season": {
+    "note": "October to March is the comfortable window; the monsoon reaches Pachmarhi at the end of June and May is the hottest month on the plains.",
+    "history": []
+  },
+  "authorities": [
+    {
+      "office": "Satpura Tiger Reserve, Madhya Pradesh Forest Department",
+      "announces": "Entry charges, zone timings and closed periods for Pachmarhi and the safari zones",
+      "stretch": "Pachmarhi and the Satpura forest",
+      "channel": "Website",
+      "url": "https://www.satpuratigerreserve.org/",
+      "source": {
+        "url": "https://www.satpuratigerreserve.org/excursion-and-charges",
+        "title": "Excursion and Charges - Satpura Tiger Reserve",
+        "kind": "official",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      }
+    },
+    {
+      "office": "Madhya Pradesh Forest Department, online booking portal",
+      "announces": "Safari permits and the department's tourism notifications",
+      "stretch": "All forest reserves in Madhya Pradesh",
+      "channel": "Website",
+      "url": "https://forest.mponline.gov.in/",
+      "source": {
+        "url": "https://forest.mponline.gov.in/Images/FAQSatpura.pdf",
+        "title": "FAQ's on visit to Satpura Tiger Reserve Hoshangabad",
+        "kind": "official",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      }
+    }
+  ],
+  "hazards": [
+    {
+      "title": "Heavy monsoon rain on the Pachmarhi plateau",
+      "detail": "The monsoon arrives at the end of June; July and August each bring more than 500 millimetres, far more than the surrounding district.",
+      "months": [
+        7,
+        8
+      ],
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/Pachmarhi",
+        "title": "Pachmarhi",
+        "kind": "encyclopedia",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      }
+    },
+    {
+      "title": "Summer heat around Khajuraho",
+      "detail": "The average daily maximum is about 43 degrees Celsius in May and about 41 in June.",
+      "months": [
+        5,
+        6
+      ],
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/Khajuraho",
+        "title": "Khajuraho",
+        "kind": "encyclopedia",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      }
+    }
+  ],
+  "videos": [
+    {
+      "url": "https://www.youtube.com/watch?v=cQY6QB1qIT0",
+      "title": "Bhopal to Pachmarhi - DAY 4 || MOST DANGEROUS WATERCROSSING 😟| Flood 🌧️ Me Fas gye 🥵 !!",
+      "channel": "MOTOFY VLOGS",
+      "stretch": "Bhopal to Pachmarhi",
+      "filmed": null,
+      "bike": null
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=JdP1oxbqeWQ",
+      "title": "पचमढ़ी से भोपाल सिटी | Pachmarhi To Bhopal City Bike Ride | Pulsar 220F Bike | Vlogs Rahul",
+      "channel": "Vlogs Rahul",
+      "stretch": "Pachmarhi to Bhopal",
+      "filmed": null,
+      "bike": "Bajaj Pulsar 220F"
+    }
+  ],
+  "gaps": [
+    "The reserve's rate list and its question and answer document carry no date, and they give different light vehicle charges, so one of them is older. The two-wheeler fee is taken from the rate list on the reserve's own site.",
+    "Several travel sites say private vehicles are not allowed at Pachmarhi view points. The official rate list and the official question and answer document say otherwise; this was not checked on the ground.",
+    "No source found for where in Pachmarhi the view point tickets are issued.",
+    "No source found for rules affecting riders at Khajuraho, Orchha or Gwalior, or for any night closure of forest roads between Khajuraho and Panna.",
+    "No source found for winter fog on the Gwalior and Orchha stretch.",
+    "Usual number of riding days: no source found.",
+    "The highway value combines Wikipedia pages for Pachmarhi, National Highway 39 and National Highway 44; only one is cited. The road from Pachmarhi to Khajuraho was not sourced.",
+    "Videos: the pages give upload dates, not filming dates, so 'filmed' is filled only where the title names a date. Uploads, in order: 2022-10, 2023-02."
+  ]
+}

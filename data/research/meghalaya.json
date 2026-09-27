@@ -1,0 +1,385 @@
+{
+  "slug": "meghalaya",
+  "header": {
+    "highway": {
+      "value": "NH 6 from Jorabat to Shillong; the Dawki road is NH 206",
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/National_Highway_6_(India)",
+        "title": "National Highway 6 (India)",
+        "kind": "encyclopedia",
+        "opened": true,
+        "source_date": "2025-12-02",
+        "accessed": "2026-09-28"
+      }
+    },
+    "highest_point": {
+      "name": null,
+      "altitude_m": null,
+      "source": null
+    },
+    "usual_days": {
+      "value": null,
+      "source": null
+    },
+    "usual_season": {
+      "value": "All year; March to May is mild, June to September brings heavy rain",
+      "source": {
+        "url": "https://www.meghalayatourism.in/plan/travel-essentials/",
+        "title": "Meghalaya Tourism: travel essentials",
+        "kind": "official",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      }
+    },
+    "one_line": "Khasi Hills of Meghalaya: up from Guwahati to Shillong, out to Cherrapunji, and down to the border river at Dawki"
+  },
+  "rules": [
+    {
+      "id": "meghalaya-no-inner-line-permit",
+      "kind": "permit",
+      "title": "Meghalaya: no Inner Line Permit at present",
+      "detail": "A hotel company's site says Indian citizens need only a valid identity card and foreign citizens register with the Foreigners Registration Office. No official page stating this was found.",
+      "applies_to": "All visitors",
+      "set_by": "Not established",
+      "official_url": null,
+      "has_official_order": false,
+      "source": {
+        "url": "https://welcomemeghalaya.com/travel-info/ilp-requirement-clarification-not-required-for-meghalaya/",
+        "title": "ILP Requirement for Meghalaya - Do You Need a Permit?",
+        "kind": "operator",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      },
+      "history": []
+    },
+    {
+      "id": "meghalaya-visitor-registration-planned",
+      "kind": "permit",
+      "title": "Meghalaya: compulsory visitor registration planned, not in force",
+      "detail": "Announced in July 2026 by the Tourism Minister: visitors would register and have identity checked on entry, first at Umling. No start date or legal basis was given.",
+      "applies_to": "All visitors",
+      "set_by": "Government of Meghalaya (planned)",
+      "official_url": null,
+      "has_official_order": false,
+      "source": {
+        "url": "https://assamtribune.com/north-east/meghalaya-plans-mandatory-registration-for-tourists-visitors-on-ilp-lines-1614168",
+        "title": "Meghalaya plans mandatory registration for tourists, visitors on ILP lines",
+        "kind": "news",
+        "opened": true,
+        "source_date": "2026-07-12",
+        "accessed": "2026-09-28"
+      },
+      "history": [
+        {
+          "date": "2026-07-12",
+          "change": "Plan announced, with Umling as the first registration point and Berubari in the Garo Hills to follow.",
+          "source": {
+            "url": "https://assamtribune.com/north-east/meghalaya-plans-mandatory-registration-for-tourists-visitors-on-ilp-lines-1614168",
+            "title": "Meghalaya plans mandatory registration for tourists, visitors on ILP lines",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2026-07-12",
+            "accessed": "2026-09-28"
+          }
+        },
+        {
+          "date": "2026-07-15",
+          "change": "An opposition party asked which law the registration would rest on; no start date reported.",
+          "source": {
+            "url": "https://theshillongtimes.com/2026/07/15/move-for-compulsory-tourist-registration-on-the-anvil/",
+            "title": "Move for compulsory tourist registration on the anvil",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2026-07-15",
+            "accessed": "2026-09-28"
+          }
+        }
+      ]
+    },
+    {
+      "id": "meghalaya-guest-registration-at-stays",
+      "kind": "document",
+      "title": "Meghalaya: stays must register every guest",
+      "detail": "Hotels, homestays and landlords register guests through the state tourism app, which is linked to the police. Reported June 2025; carry identity proof for check-in.",
+      "applies_to": "All visitors staying overnight",
+      "set_by": "Government of Meghalaya",
+      "official_url": null,
+      "has_official_order": true,
+      "source": {
+        "url": "https://www.outlooktraveller.com/News/heres-why-meghalaya-has-made-tourist-registration-mandatory-at-all-accommodations",
+        "title": "Here's Why Meghalaya Has Made Tourist Registration Mandatory At All Accommodations",
+        "kind": "news",
+        "opened": true,
+        "source_date": "2025-06-19",
+        "accessed": "2026-09-28"
+      },
+      "history": [
+        {
+          "date": "2025-06",
+          "change": "Guest registration through the state tourism app made compulsory for all accommodation; reported 19 June 2025.",
+          "source": {
+            "url": "https://www.outlooktraveller.com/News/heres-why-meghalaya-has-made-tourist-registration-mandatory-at-all-accommodations",
+            "title": "Here's Why Meghalaya Has Made Tourist Registration Mandatory At All Accommodations",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2025-06-19",
+            "accessed": "2026-09-28"
+          }
+        }
+      ]
+    },
+    {
+      "id": "meghalaya-private-vehicle-rental-prohibited",
+      "kind": "motorcycle-rule",
+      "title": "Meghalaya: renting out private motorcycles is prohibited",
+      "detail": "A Transport Department notice of 13 June 2025 bars renting private two-wheelers and cars, citing the Motor Vehicles Act. No rent-a-motorcycle scheme is notified in the state.",
+      "applies_to": "Riders planning to rent a motorcycle in Meghalaya",
+      "set_by": "Commissioner of Transport, Government of Meghalaya",
+      "official_url": null,
+      "has_official_order": true,
+      "source": {
+        "url": "https://theshillongtimes.com/2025/06/16/govt-prohibits-use-of-private-vehicles-for-rental-services/",
+        "title": "Govt prohibits use of private vehicles for rental services",
+        "kind": "news",
+        "opened": true,
+        "source_date": "2025-06-16",
+        "accessed": "2026-09-28"
+      },
+      "history": [
+        {
+          "date": "2025-06-13",
+          "change": "Notice issued; vehicles used this way can be seized.",
+          "source": {
+            "url": "https://theshillongtimes.com/2025/06/16/govt-prohibits-use-of-private-vehicles-for-rental-services/",
+            "title": "Govt prohibits use of private vehicles for rental services",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2025-06-16",
+            "accessed": "2026-09-28"
+          }
+        },
+        {
+          "date": "2025-06-27",
+          "change": "Rental owners asked the government to withdraw the prohibition.",
+          "source": {
+            "url": "https://theshillongtimes.com/2025/06/27/revoke-ban-on-operation-of-vehicle-rental-services-owners-urge-govt/",
+            "title": "Revoke ban on operation of vehicle rental services, owners urge govt",
+            "kind": "news",
+            "opened": false,
+            "source_date": "2025-06-27",
+            "accessed": "2026-09-28"
+          }
+        }
+      ]
+    },
+    {
+      "id": "shillong-dawki-night-closure",
+      "kind": "timing",
+      "title": "Dawki road: shut from 10 pm to 5 am",
+      "detail": "The night closure between Laitlyngkot and Lyngkyrdem stayed in force when the stretch reopened on 10 August 2026. Emergency vehicles may pass with clearance.",
+      "applies_to": "All vehicles",
+      "set_by": "Sub-Divisional Officer (Civil), Pynursla",
+      "official_url": null,
+      "has_official_order": true,
+      "source": {
+        "url": "https://theshillongtimes.com/2026/08/10/damaged-stretch-of-shillong-dawki-road-set-to-reopen-today/",
+        "title": "Damaged stretch of Shillong-Dawki road set to reopen today",
+        "kind": "news",
+        "opened": true,
+        "source_date": "2026-08-10",
+        "accessed": "2026-09-28"
+      },
+      "history": [
+        {
+          "date": "2026-04-22",
+          "change": "Laitlyngkot to Mawlieh closed until further notice after a fatal rockslide on 20 April.",
+          "source": {
+            "url": "https://theshillongtimes.com/2026/04/22/shillong-dawki-road-stretch-closed-after-fatal-rockslide/",
+            "title": "Shillong-Dawki road stretch closed after fatal rockslide",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2026-04-22",
+            "accessed": "2026-09-28"
+          }
+        },
+        {
+          "date": "2026-06-21",
+          "change": "Deputy Commissioner closed the road beyond Laitlyngkot after a landslide cut it.",
+          "source": {
+            "url": "https://www.indiatodayne.in/meghalaya/story/meghalaya-shillong-dawki-highway-shut-after-landslide-disrupts-connectivity-in-east-khasi-hills-1411770-2026-06-21",
+            "title": "Meghalaya: Shillong-Dawki highway shut after landslide disrupts connectivity in East Khasi Hills",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2026-06-21",
+            "accessed": "2026-09-28"
+          }
+        },
+        {
+          "date": "2026-08-10",
+          "change": "Stretch reopened by notice; night closure retained.",
+          "source": {
+            "url": "https://theshillongtimes.com/2026/08/10/damaged-stretch-of-shillong-dawki-road-set-to-reopen-today/",
+            "title": "Damaged stretch of Shillong-Dawki road set to reopen today",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2026-08-10",
+            "accessed": "2026-09-28"
+          }
+        }
+      ]
+    }
+  ],
+  "season": {
+    "note": "No road on this route closes by season; the monsoon from June to September closes stretches by landslide.",
+    "history": []
+  },
+  "authorities": [
+    {
+      "office": "Deputy Commissioner, East Khasi Hills district",
+      "announces": "Orders closure of the Shillong to Dawki road after landslides",
+      "stretch": "Shillong to Dawki",
+      "channel": "Orders reported by news",
+      "url": null,
+      "source": {
+        "url": "https://www.indiatodayne.in/meghalaya/story/meghalaya-shillong-dawki-highway-shut-after-landslide-disrupts-connectivity-in-east-khasi-hills-1411770-2026-06-21",
+        "title": "Meghalaya: Shillong-Dawki highway shut after landslide disrupts connectivity in East Khasi Hills",
+        "kind": "news",
+        "opened": true,
+        "source_date": "2026-06-21",
+        "accessed": "2026-09-28"
+      }
+    },
+    {
+      "office": "Sub-Divisional Officer (Civil), Pynursla",
+      "announces": "Closure, reopening and night closure notices",
+      "stretch": "Laitlyngkot to Lyngkyrdem and Mawlieh",
+      "channel": "Notices reported by news",
+      "url": null,
+      "source": {
+        "url": "https://theshillongtimes.com/2026/08/10/damaged-stretch-of-shillong-dawki-road-set-to-reopen-today/",
+        "title": "Damaged stretch of Shillong-Dawki road set to reopen today",
+        "kind": "news",
+        "opened": true,
+        "source_date": "2026-08-10",
+        "accessed": "2026-09-28"
+      }
+    },
+    {
+      "office": "National Highways and Infrastructure Development Corporation Limited",
+      "announces": "Repairs National Highway 206 and reports repair time to the district",
+      "stretch": "Shillong to Dawki",
+      "channel": "Through the district administration",
+      "url": null,
+      "source": {
+        "url": "https://www.indiatodayne.in/meghalaya/story/meghalaya-shillong-dawki-highway-shut-after-landslide-disrupts-connectivity-in-east-khasi-hills-1411770-2026-06-21",
+        "title": "Meghalaya: Shillong-Dawki highway shut after landslide disrupts connectivity in East Khasi Hills",
+        "kind": "news",
+        "opened": true,
+        "source_date": "2026-06-21",
+        "accessed": "2026-09-28"
+      }
+    },
+    {
+      "office": "Commissioner of Transport, Government of Meghalaya",
+      "announces": "Decides whether vehicles may be rented out",
+      "stretch": "All of Meghalaya",
+      "channel": "Public notice reported by news",
+      "url": null,
+      "source": {
+        "url": "https://theshillongtimes.com/2025/06/16/govt-prohibits-use-of-private-vehicles-for-rental-services/",
+        "title": "Govt prohibits use of private vehicles for rental services",
+        "kind": "news",
+        "opened": true,
+        "source_date": "2025-06-16",
+        "accessed": "2026-09-28"
+      }
+    },
+    {
+      "office": "Meghalaya Tourism",
+      "announces": "General weather and travel advice for visitors",
+      "stretch": "All of Meghalaya",
+      "channel": "Tourism website",
+      "url": "https://www.meghalayatourism.in/plan/travel-essentials/",
+      "source": {
+        "url": "https://www.meghalayatourism.in/plan/travel-essentials/",
+        "title": "Meghalaya Tourism: travel essentials",
+        "kind": "official",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      }
+    }
+  ],
+  "hazards": [
+    {
+      "title": "Rockfall and landslides on the Dawki road",
+      "detail": "A rockslide at Mawlieh killed two people on 20 April 2026 and a landslide cut the road beyond Laitlyngkot in June. It reopened on 10 August.",
+      "months": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "source": {
+        "url": "https://theshillongtimes.com/2026/04/22/shillong-dawki-road-stretch-closed-after-fatal-rockslide/",
+        "title": "Shillong-Dawki road stretch closed after fatal rockslide",
+        "kind": "news",
+        "opened": true,
+        "source_date": "2026-04-22",
+        "accessed": "2026-09-28"
+      }
+    },
+    {
+      "title": "Heavy monsoon rain across the Khasi Hills",
+      "detail": "The tourism department tells visitors to check daily forecasts and heed warnings of heavy rain and landslides.",
+      "months": [
+        6,
+        7,
+        8,
+        9
+      ],
+      "source": {
+        "url": "https://www.meghalayatourism.in/plan/travel-essentials/",
+        "title": "Meghalaya Tourism: travel essentials",
+        "kind": "official",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      }
+    },
+    {
+      "title": "Avoid the Dawki road at night and after rain",
+      "detail": "The August 2026 reopening notice advised against travel in heavy rain, just after rain, and at night.",
+      "months": [
+        6,
+        7,
+        8,
+        9
+      ],
+      "source": {
+        "url": "https://theshillongtimes.com/2026/08/10/damaged-stretch-of-shillong-dawki-road-set-to-reopen-today/",
+        "title": "Damaged stretch of Shillong-Dawki road set to reopen today",
+        "kind": "news",
+        "opened": true,
+        "source_date": "2026-08-10",
+        "accessed": "2026-09-28"
+      }
+    }
+  ],
+  "videos": [],
+  "gaps": [
+    "No official page found stating that Indian citizens need no permit for Meghalaya; the statement comes from a hotel company's site.",
+    "Whether the planned compulsory visitor registration has started was not confirmed; the last report found is dated 15 July 2026.",
+    "The Transport Department notice of 13 June 2025 is known through a newspaper; the notice itself was not opened. Another outlet gives 13 May 2025 as its date.",
+    "Whether the rental prohibition has been relaxed since June 2025 was not checked.",
+    "Highest point on the route not sourced.",
+    "Usual number of days not sourced.",
+    "No source found on fuel availability or on the Shillong to Cherrapunji and Mawlynnong roads.",
+    "No source found on whether motorcycles from Assam rental firms face restrictions at tourist spots.",
+    "Videos not collected."
+  ]
+}

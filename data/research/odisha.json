@@ -1,0 +1,248 @@
+{
+  "slug": "odisha",
+  "header": {
+    "highway": {
+      "value": "NH 316 (Bhubaneswar to Puri); NH 16 (Bhubaneswar to Brahmapur, along Chilika lake)",
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/National_Highway_16_(India)",
+        "title": "National Highway 16 (India)",
+        "kind": "encyclopedia",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      }
+    },
+    "highest_point": {
+      "name": "Deomali",
+      "altitude_m": 1672,
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/Deomali_(mountain)",
+        "title": "Deomali (mountain)",
+        "kind": "encyclopedia",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      }
+    },
+    "usual_days": null,
+    "usual_season": {
+      "value": "October to February",
+      "source": {
+        "url": "https://www.ridekoraput.com/koraput-tourist-place/deomali-mountain-peak/",
+        "title": "Deomali Mountain Peak, Koraput - Travel Guide",
+        "kind": "operator",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      }
+    },
+    "one_line": "Odisha, from the temple coast at Puri and Konark past Chilika lake to the hills of Koraput"
+  },
+  "rules": [
+    {
+      "id": "deomali-visiting-hours",
+      "kind": "timing",
+      "title": "Deomali hilltop: no visitors at night",
+      "detail": "The Collector barred visitors from 8 pm to 5 am. In September 2026 entry was reported as 5 am to 5 pm, with the hilltop cleared by 8 pm.",
+      "applies_to": "All visitors, except guests booked in recognised cottages and camps",
+      "set_by": "Collector and District Magistrate, Koraput",
+      "official_url": null,
+      "has_official_order": true,
+      "source": {
+        "url": "https://www.orissapost.com/odishas-koraput-admin-bans-night-visit-to-deomali-hilltop/",
+        "title": "Odisha's Koraput admin bans night visit to Deomali hilltop",
+        "kind": "news",
+        "opened": true,
+        "source_date": "2025-04-12",
+        "accessed": "2026-09-28"
+      },
+      "history": [
+        {
+          "date": "2024-11",
+          "change": "Private camping on the hilltop was banned.",
+          "source": {
+            "url": "https://odishabytes.com/plastic-banned-on-odishas-deomali-check-other-restrictions-for-tourists/",
+            "title": "Plastic Banned On Odisha's Deomali; Check Other Restrictions For Tourists",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2025-04-12",
+            "accessed": "2026-09-28"
+          }
+        },
+        {
+          "date": "2025-04-11",
+          "change": "Collector's order barred visitors from 8 pm to 5 am and banned single-use plastic and unapproved picnics.",
+          "source": {
+            "url": "https://www.orissapost.com/odishas-koraput-admin-bans-night-visit-to-deomali-hilltop/",
+            "title": "Odisha's Koraput admin bans night visit to Deomali hilltop",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2025-04-12",
+            "accessed": "2026-09-28"
+          }
+        },
+        {
+          "date": "2026-09",
+          "change": "After assaults on tourists, entry was limited to 5 am to 5 pm, trekking stopped after 6 pm, and police and cameras were posted.",
+          "source": {
+            "url": "https://thefactnow.com/trekking-restricted-after-6-pm-as-koraput-admin-beefs-up-security-at-deomali/",
+            "title": "Trekking restricted after 6 PM as Koraput admin beefs up security at Deomali",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2026-09-06",
+            "accessed": "2026-09-28"
+          }
+        }
+      ]
+    },
+    {
+      "id": "deomali-main-road-closed-for-works",
+      "kind": "timing",
+      "title": "Deomali: last stretch to the top shut for roadworks",
+      "detail": "In November 2025 the 3.5 kilometre road from Deomali Chhak to the top was closed for construction, with a longer diversion by Semiliguda, Dudhari and Uparakanti. No reopening date found.",
+      "applies_to": "All vehicles",
+      "set_by": "Koraput district administration",
+      "official_url": null,
+      "has_official_order": false,
+      "source": {
+        "url": "https://odishatv.in/odisha/deomali-main-road-to-remain-closed-for-tourists-as-construction-work-continues-in-odishas-koraput-10805771",
+        "title": "Deomali main road to remain closed for tourists as construction work continues in Odisha's Koraput",
+        "kind": "news",
+        "opened": true,
+        "source_date": "2025-11-23",
+        "accessed": "2026-09-28"
+      },
+      "history": []
+    },
+    {
+      "id": "deomali-plastic-and-picnic-ban",
+      "kind": "document",
+      "title": "Deomali: no single-use plastic, no unapproved picnics",
+      "detail": "Single-use plastic and littering are banned on the hilltop, with a fine reported in the press. Picnics and parties need permission from the administration.",
+      "applies_to": "All visitors",
+      "set_by": "Collector and District Magistrate, Koraput",
+      "official_url": null,
+      "has_official_order": true,
+      "source": {
+        "url": "https://odishabytes.com/plastic-banned-on-odishas-deomali-check-other-restrictions-for-tourists/",
+        "title": "Plastic Banned On Odisha's Deomali; Check Other Restrictions For Tourists",
+        "kind": "news",
+        "opened": true,
+        "source_date": "2025-04-12",
+        "accessed": "2026-09-28"
+      },
+      "history": []
+    }
+  ],
+  "season": {
+    "note": "The cool dry months from October to February suit both coast and hills; July and August are the wettest months at Puri.",
+    "history": []
+  },
+  "authorities": [
+    {
+      "office": "Collector and District Magistrate, Koraput",
+      "announces": "Orders on visiting hours, camping, plastic and road closures at Deomali",
+      "stretch": "Koraput to Deomali",
+      "channel": "District order, reported in the press",
+      "url": "https://koraput.odisha.gov.in/en/tourism/tourist-places/deomali",
+      "source": {
+        "url": "https://www.orissapost.com/odishas-koraput-admin-bans-night-visit-to-deomali-hilltop/",
+        "title": "Odisha's Koraput admin bans night visit to Deomali hilltop",
+        "kind": "news",
+        "opened": true,
+        "source_date": "2025-04-12",
+        "accessed": "2026-09-28"
+      }
+    }
+  ],
+  "hazards": [
+    {
+      "title": "Slippery hill roads to Deomali in the monsoon",
+      "detail": "An operator warns that the winding road up from Koraput turns slippery in the rains.",
+      "months": [
+        7,
+        8,
+        9
+      ],
+      "source": {
+        "url": "https://www.ridekoraput.com/koraput-tourist-place/deomali-mountain-peak/",
+        "title": "Deomali Mountain Peak, Koraput - Travel Guide",
+        "kind": "operator",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      }
+    },
+    {
+      "title": "Heavy monsoon rain on the coast",
+      "detail": "July and August each bring more than 340 millimetres of rain to Puri.",
+      "months": [
+        7,
+        8
+      ],
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/Puri,_Odisha",
+        "title": "Puri",
+        "kind": "encyclopedia",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      }
+    },
+    {
+      "title": "Cyclones on the Puri coast",
+      "detail": "Cyclone Fani came ashore near Puri on 3 May 2019 with winds of 185 kilometres an hour, felling trees across roads.",
+      "months": [
+        5
+      ],
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/Cyclone_Fani",
+        "title": "Cyclone Fani",
+        "kind": "encyclopedia",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      }
+    },
+    {
+      "title": "Assaults on visitors at Deomali after dark",
+      "detail": "The district posted police and cameras at Deomali in September 2026 after tourists were assaulted; leave the hilltop before evening.",
+      "months": [],
+      "source": {
+        "url": "https://thefactnow.com/trekking-restricted-after-6-pm-as-koraput-admin-beefs-up-security-at-deomali/",
+        "title": "Trekking restricted after 6 PM as Koraput admin beefs up security at Deomali",
+        "kind": "news",
+        "opened": true,
+        "source_date": "2026-09-06",
+        "accessed": "2026-09-28"
+      }
+    }
+  ],
+  "videos": [
+    {
+      "url": "https://www.youtube.com/watch?v=b-MX-lmVoHo",
+      "title": "Deomali Ride Koraput | South Odisha | Bhubaneswar to Deomali Odisha | Day 3",
+      "channel": "Elegant Motorist",
+      "stretch": "Bhubaneswar to Deomali",
+      "filmed": null,
+      "bike": null
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=FioaG6wvxag",
+      "title": "Deomali Independence Day 2024 Solo Bike Ride | Koraput in Monsoon Episode 1",
+      "channel": "Odia Travel Stories",
+      "stretch": "Koraput to Deomali",
+      "filmed": "2024-08",
+      "bike": null
+    }
+  ],
+  "gaps": [
+    "Deomali's height: Wikipedia gives 1,672 metres; the official Koraput district page gives 1,762 metres. The Wikipedia figure is recorded.",
+    "The text of the Koraput Collector's orders was not found on an official page; only press reports were read. Whether the road to the hilltop has reopened since November 2025 is not known.",
+    "No source found for any rule on vehicles on the Puri to Konark coast road through the Balukhand and Konark sanctuary. The official tourism page says nothing on vehicles.",
+    "No source found for rules affecting riders at Puri, Konark, Chilika or Gopalpur, or for Odisha helmet rules.",
+    "No source found for cyclone months other than the single 2019 event, or for landslides on the ghats between the coast and Koraput.",
+    "The highway from the coast up to Koraput was not sourced. Usual number of riding days: no source found.",
+    "Videos: the pages give upload dates, not filming dates, so 'filmed' is filled only where the title names a date. Uploads, in order: 2021-09, 2025-07."
+  ]
+}

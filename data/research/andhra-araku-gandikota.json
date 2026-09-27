@@ -1,0 +1,226 @@
+{
+  "slug": "andhra-araku-gandikota",
+  "header": {
+    "highway": {
+      "value": "NH 516E (Araku, Paderu, Lambasingi, Chintapalli)",
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/National_Highway_516E_(India)",
+        "title": "National Highway 516E (India)",
+        "kind": "encyclopedia",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      }
+    },
+    "highest_point": {
+      "name": "Lambasingi",
+      "altitude_m": 1000,
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/Lambasingi",
+        "title": "Lambasingi",
+        "kind": "encyclopedia",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      }
+    },
+    "usual_days": null,
+    "usual_season": {
+      "value": "October to February",
+      "source": {
+        "url": "https://amaravatitourisminfo.blogspot.com/2026/05/gandikota-canyon-andhra-pradesh-indias.html",
+        "title": "Gandikota Canyon Andhra Pradesh: India's Hidden Grand Canyon Travel Guide 2026",
+        "kind": "blog",
+        "opened": true,
+        "source_date": "2026-05",
+        "accessed": "2026-09-28"
+      }
+    },
+    "one_line": "Andhra Pradesh, the Eastern Ghats above Visakhapatnam and the Penna river gorge at Gandikota"
+  },
+  "rules": [
+    {
+      "id": "asr-ghat-roads-night-ban-heavy-vehicles",
+      "kind": "timing",
+      "title": "Ghat roads: heavy vehicles barred at night in fog",
+      "detail": "In December 2025 police barred heavy goods and passenger vehicles from the district's ghat roads from 10 pm to 5 am. Other drivers were told to slow down.",
+      "applies_to": "Heavy vehicles; advice only for light vehicles and two-wheelers",
+      "set_by": "Superintendent of Police, Alluri Sitharama Raju district",
+      "official_url": null,
+      "has_official_order": true,
+      "source": {
+        "url": "https://www.deccanchronicle.com/southern-states/andhra-pradesh/cops-ban-night-travel-for-heavy-vehicles-on-asr-ghat-road-1923522",
+        "title": "Cops Ban Night travel for Heavy Vehicles on ASR Ghat Road",
+        "kind": "news",
+        "opened": true,
+        "source_date": "2025-12-12",
+        "accessed": "2026-09-28"
+      },
+      "history": [
+        {
+          "date": "2025-12",
+          "change": "Night ban imposed after a bus fell off the Chintur to Maredumilli ghat road, to last until fog eased. No end date was reported.",
+          "source": {
+            "url": "https://thecoastaltimes.in/night-ban-on-heavy-vehicles-on-asr-ghat-roads-after-bus-tragedy/",
+            "title": "Night ban on heavy vehicles on ASR ghat roads after bus tragedy",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2025-12-13",
+            "accessed": "2026-09-28"
+          }
+        }
+      ]
+    },
+    {
+      "id": "gandikota-fort-hours",
+      "kind": "timing",
+      "title": "Gandikota fort: daytime entry, no entry fee",
+      "detail": "A travel blog gives fort hours as 9 am to 6 pm with free entry; camping and activities are charged by operators. No government page was found.",
+      "applies_to": "All visitors",
+      "set_by": "Not stated",
+      "official_url": null,
+      "has_official_order": false,
+      "source": {
+        "url": "https://amaravatitourisminfo.blogspot.com/2026/05/gandikota-canyon-andhra-pradesh-indias.html",
+        "title": "Gandikota Canyon Andhra Pradesh: India's Hidden Grand Canyon Travel Guide 2026",
+        "kind": "blog",
+        "opened": true,
+        "source_date": "2026-05",
+        "accessed": "2026-09-28"
+      },
+      "history": []
+    }
+  ],
+  "season": {
+    "note": "October to February is the usual window; the hills get most of their rain from June to October and Gandikota is very hot from March to June.",
+    "history": []
+  },
+  "authorities": [
+    {
+      "office": "Superintendent of Police, Alluri Sitharama Raju district",
+      "announces": "Traffic orders for the ghat roads, such as night bans in fog",
+      "stretch": "Araku, Paderu and Lambasingi ghat roads",
+      "channel": "Police order, reported in the press",
+      "url": null,
+      "source": {
+        "url": "https://www.deccanchronicle.com/southern-states/andhra-pradesh/cops-ban-night-travel-for-heavy-vehicles-on-asr-ghat-road-1923522",
+        "title": "Cops Ban Night travel for Heavy Vehicles on ASR Ghat Road",
+        "kind": "news",
+        "opened": true,
+        "source_date": "2025-12-12",
+        "accessed": "2026-09-28"
+      }
+    }
+  ],
+  "hazards": [
+    {
+      "title": "Dense winter fog on the ghat roads",
+      "detail": "Fog in the hill district led police to bar heavy vehicles at night in December 2025 and to tell all drivers to slow down.",
+      "months": [
+        12,
+        1
+      ],
+      "source": {
+        "url": "https://www.deccanchronicle.com/southern-states/andhra-pradesh/cops-ban-night-travel-for-heavy-vehicles-on-asr-ghat-road-1923522",
+        "title": "Cops Ban Night travel for Heavy Vehicles on ASR Ghat Road",
+        "kind": "news",
+        "opened": true,
+        "source_date": "2025-12-12",
+        "accessed": "2026-09-28"
+      }
+    },
+    {
+      "title": "Near-freezing winter nights at Lambasingi",
+      "detail": "At about 1,000 metres, winter temperatures on rare occasions fall below freezing; mornings are foggy.",
+      "months": [
+        12,
+        1
+      ],
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/Lambasingi",
+        "title": "Lambasingi",
+        "kind": "encyclopedia",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      }
+    },
+    {
+      "title": "Heavy rain in the Araku hills",
+      "detail": "Araku gets about 1,700 millimetres of rain a year, most of it between June and October.",
+      "months": [
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/Araku_Valley",
+        "title": "Araku Valley",
+        "kind": "encyclopedia",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      }
+    },
+    {
+      "title": "Roadworks on the hill highway",
+      "detail": "The highway from Koyyuru through Lambasingi, Paderu and Araku is being widened under a national project.",
+      "months": [],
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/National_Highway_516E_(India)",
+        "title": "National Highway 516E (India)",
+        "kind": "encyclopedia",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      }
+    },
+    {
+      "title": "Summer heat and open cliff edges at Gandikota",
+      "detail": "March to June days are very hot, and the gorge viewpoints have unprotected edges; visit in daylight.",
+      "months": [
+        3,
+        4,
+        5,
+        6
+      ],
+      "source": {
+        "url": "https://amaravatitourisminfo.blogspot.com/2026/05/gandikota-canyon-andhra-pradesh-indias.html",
+        "title": "Gandikota Canyon Andhra Pradesh: India's Hidden Grand Canyon Travel Guide 2026",
+        "kind": "blog",
+        "opened": true,
+        "source_date": "2026-05",
+        "accessed": "2026-09-28"
+      }
+    }
+  ],
+  "videos": [
+    {
+      "url": "https://www.youtube.com/watch?v=cNgVNMPL-SY",
+      "title": "Vizag to Araku Bike Ride with Subscriber🏍️|Araku Valley Road Trip|Best Bike Ride in Andhra Pradesh 🌄",
+      "channel": "Sudheer The Explorer",
+      "stretch": "Visakhapatnam to Araku Valley",
+      "filmed": null,
+      "bike": null
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=sjBHS2l2aFY",
+      "title": "Lambasingi to paderu vanjangi road aruku small bike travelling | beautiful forest way.",
+      "channel": "Chinna art and vlogs",
+      "stretch": "Lambasingi to Paderu",
+      "filmed": null,
+      "bike": null
+    }
+  ],
+  "gaps": [
+    "No official page was found for any rule at Araku, Paderu, Lambasingi or Gandikota. The one dated order recorded is a police order reported in the press.",
+    "Whether the December 2025 night ban on heavy vehicles is still in force, and which ghat roads it names, was not stated in the reports read.",
+    "Highest point: Lambasingi is the only place on the road with a sourced height. Wikipedia gives two different heights for Araku Valley. Arma Konda, 1,680 metres, is the state's highest peak and lies north of Paderu, off the road.",
+    "No source found for the road from Visakhapatnam up to Araku or for the long link between the hills and Gandikota.",
+    "No source found for fuel gaps in the hill stretch or for landslides on the Araku ghat road.",
+    "Usual number of riding days: no source found.",
+    "Videos: the pages give upload dates, not filming dates, so 'filmed' is filled only where the title names a date. Uploads, in order: 2026-03, 2022-11."
+  ]
+}

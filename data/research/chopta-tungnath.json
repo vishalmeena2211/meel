@@ -1,0 +1,411 @@
+{
+  "slug": "chopta-tungnath",
+  "header": {
+    "highway": {
+      "value": "NH 7 from Rishikesh to Rudraprayag; NH 107A through Ukhimath, Chopta and Gopeshwar",
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/National_Highway_107A_(India)",
+        "title": "National Highway 107A (India)",
+        "kind": "encyclopedia",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      }
+    },
+    "highest_point": {
+      "name": "Chopta (Tungnath temple, 3,680 m, is reached on foot)",
+      "altitude_m": 2608,
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/Chopta",
+        "title": "Chopta",
+        "kind": "encyclopedia",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      }
+    },
+    "usual_days": {
+      "value": null,
+      "source": null
+    },
+    "usual_season": {
+      "value": "May to early November, while Tungnath temple is open; snow from November to March",
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/Chopta",
+        "title": "Chopta",
+        "kind": "encyclopedia",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      }
+    },
+    "one_line": "Uttarakhand, up the Alaknanda and Mandakini from Rishikesh, then through the forest of the Kedarnath sanctuary from Ukhimath to Gopeshwar"
+  },
+  "rules": [
+    {
+      "id": "tungnath-temple-dates-set-each-year",
+      "kind": "timing",
+      "title": "Tungnath temple dates are set each year",
+      "detail": "The temple committee declares the closing date on Vijayadashami. The temple closed on 4 November 2024 and 6 November 2025. Sources disagree on the 2026 opening date.",
+      "applies_to": "All visitors",
+      "set_by": "Shri Badarinath Kedarnath Temple Committee",
+      "official_url": "https://badrinath-kedarnath.gov.in/",
+      "has_official_order": true,
+      "source": {
+        "url": "https://www.etvbharat.com/en/state/portals-of-tungnath-temple-closed-for-winter-season-enn25110603706",
+        "title": "Portals Of Tungnath Temple Closed For Winter Season",
+        "kind": "news",
+        "opened": true,
+        "source_date": "2025-11-06",
+        "accessed": "2026-09-28"
+      },
+      "history": [
+        {
+          "date": "2024-10-12",
+          "change": "Closing date of 4 November 2024 declared.",
+          "source": {
+            "url": "https://www.indiatvnews.com/news/india/chardham-yatra-2024-uttarakhand-badrinath-dham-portals-to-close-on-november-17-kedarnath-gangotri-yamunotri-latest-updates-2024-10-12-956804",
+            "title": "Chardham Yatra 2024: Badrinath Dham portals to close on November 17",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2024-10-12",
+            "accessed": "2026-09-28"
+          }
+        },
+        {
+          "date": "2025-10-03",
+          "change": "Closing date of 6 November 2025 declared.",
+          "source": {
+            "url": "https://www.thedailyjagran.com/india/char-dham-yatra-2025-badrinath-panch-puja-date-announced-closing-dates-announced-for-badrinath-kedarnath-yamunotri-and-tungnath-check-complete-schedule-10271162",
+            "title": "Char Dham Yatra 2025: Badrinath Panch Puja Date Announced, When Are Kedarnath Gates Closing? Check Complete Schedule",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2025-10-03",
+            "accessed": "2026-09-28"
+          }
+        },
+        {
+          "date": "2025-11-06",
+          "change": "Temple closed for winter at about 11:30.",
+          "source": {
+            "url": "https://www.etvbharat.com/en/state/portals-of-tungnath-temple-closed-for-winter-season-enn25110603706",
+            "title": "Portals Of Tungnath Temple Closed For Winter Season",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2025-11-06",
+            "accessed": "2026-09-28"
+          }
+        }
+      ]
+    },
+    {
+      "id": "kedarnath-sanctuary-entry-and-camping",
+      "kind": "fee",
+      "title": "Kedarnath sanctuary: forest entry fee and camping limits",
+      "detail": "An operator guide reports a daily entry fee taken at forest check posts, no open fires, and camping only at marked sites. No official page could be read.",
+      "applies_to": "Visitors entering the sanctuary on foot",
+      "set_by": "Uttarakhand Forest Department, as reported",
+      "official_url": "https://uttarakhandtourism.gov.in/destination/kedarnath-wildlife-sanctuary",
+      "has_official_order": false,
+      "source": {
+        "url": "https://mountainiax.com/kedarnath-wildlife-sanctuary-panch-kedar/",
+        "title": "Kedarnath Wildlife Sanctuary & Panch Kedar: Permits & Rules",
+        "kind": "operator",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      },
+      "history": [
+        {
+          "date": "2019",
+          "change": "An operator page says the High Court banned camping on the Chopta meadows; the page could not be read in full.",
+          "source": {
+            "url": "https://choptatour.com/camping-in-chopta/",
+            "title": "Camping in Chopta",
+            "kind": "operator",
+            "opened": false,
+            "source_date": null,
+            "accessed": "2026-09-28"
+          }
+        }
+      ]
+    },
+    {
+      "id": "char-dham-night-travel-ban",
+      "kind": "timing",
+      "title": "Char Dham routes: no driving at night",
+      "detail": "News reports say vehicles may not move on the mountain routes from 22:00 to 04:00. An earlier operator report gave 20:00 to 05:00. The order itself was not found.",
+      "applies_to": "All vehicles",
+      "set_by": "Government of Uttarakhand, as reported",
+      "official_url": null,
+      "has_official_order": false,
+      "source": {
+        "url": "https://www.outlooktraveller.com/News/char-dham-yatra-2026-new-rules-registration-and-safety-guidelines-explained",
+        "title": "Char Dham Yatra 2026: New Rules, Registration And Safety Guidelines Explained",
+        "kind": "news",
+        "opened": true,
+        "source_date": "2026-04-21",
+        "accessed": "2026-09-28"
+      },
+      "history": [
+        {
+          "date": "2026-03-02",
+          "change": "Operator site reported a ban from 20:00 to 05:00 for commercial and private passenger vehicles.",
+          "source": {
+            "url": "https://www.triptotemples.com/news/char-dham/chardham-yatra-new-transport-rules-to-end-long-queues-at-checkposts",
+            "title": "New Char Dham Yatra 2026 Transportation & Checkpost Rules",
+            "kind": "operator",
+            "opened": true,
+            "source_date": "2026-03-02",
+            "accessed": "2026-09-28"
+          }
+        },
+        {
+          "date": "2026-04-21",
+          "change": "News reports give the hours as 22:00 to 04:00.",
+          "source": {
+            "url": "https://www.outlooktraveller.com/News/char-dham-yatra-2026-new-rules-registration-and-safety-guidelines-explained",
+            "title": "Char Dham Yatra 2026: New Rules, Registration And Safety Guidelines Explained",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2026-04-21",
+            "accessed": "2026-09-28"
+          }
+        }
+      ]
+    },
+    {
+      "id": "uttarakhand-green-cess-two-wheelers-exempt",
+      "kind": "tax",
+      "title": "Uttarakhand green cess: two-wheelers exempt",
+      "detail": "Vehicles from other states pay a green cess on entry, read by number-plate cameras at the border. Two-wheelers, electric and gas vehicles are exempt. Official order not found.",
+      "applies_to": "Vehicles registered outside Uttarakhand",
+      "set_by": "Transport Department, Government of Uttarakhand",
+      "official_url": null,
+      "has_official_order": false,
+      "source": {
+        "url": "https://www.etvbharat.com/en/state/green-cess-has-started-being-collected-from-vehicles-coming-to-uttarakhand-from-other-states-enn26011404744",
+        "title": "Uttarakhand Begins Green Cess Collection From Out-of-State Vehicles, Faces Initial Technical Glitches",
+        "kind": "news",
+        "opened": true,
+        "source_date": "2026-01-14",
+        "accessed": "2026-09-28"
+      },
+      "history": [
+        {
+          "date": "2024-12-07",
+          "change": "Cess announced, with two-wheelers among the exempt classes.",
+          "source": {
+            "url": "https://www.tribuneindia.com/news/uttarakhand/green-cess-to-be-imposed-on-vehicles-entering-uttarakhand-evs-bikes-exempted/amp",
+            "title": "Green cess to be imposed on vehicles entering Uttarakhand; EVs, bikes exempted",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2024-12-07",
+            "accessed": "2026-09-28"
+          }
+        },
+        {
+          "date": "2026-01-01",
+          "change": "Planned start date missed because the systems were not ready.",
+          "source": {
+            "url": "https://www.etvbharat.com/en/state/green-cess-has-started-being-collected-from-vehicles-coming-to-uttarakhand-from-other-states-enn26011404744",
+            "title": "Uttarakhand Begins Green Cess Collection From Out-of-State Vehicles, Faces Initial Technical Glitches",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2026-01-14",
+            "accessed": "2026-09-28"
+          }
+        },
+        {
+          "date": "2026-01-14",
+          "change": "Collection began at border check points, with some technical faults on the first day.",
+          "source": {
+            "url": "https://www.etvbharat.com/en/state/green-cess-has-started-being-collected-from-vehicles-coming-to-uttarakhand-from-other-states-enn26011404744",
+            "title": "Uttarakhand Begins Green Cess Collection From Out-of-State Vehicles, Faces Initial Technical Glitches",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2026-01-14",
+            "accessed": "2026-09-28"
+          }
+        }
+      ]
+    }
+  ],
+  "season": {
+    "note": "No order closes the Chopta road, but snow lies from November to March; the dates below are for Tungnath temple, which sets the visitor season.",
+    "history": [
+      {
+        "year": 2024,
+        "connected": null,
+        "open_to_motorcycles": null,
+        "closed": "2024-11-04",
+        "note": "Temple closing date as declared by the temple committee. Opening date not sourced.",
+        "sources": [
+          {
+            "url": "https://www.indiatvnews.com/news/india/chardham-yatra-2024-uttarakhand-badrinath-dham-portals-to-close-on-november-17-kedarnath-gangotri-yamunotri-latest-updates-2024-10-12-956804",
+            "title": "Chardham Yatra 2024: Badrinath Dham portals to close on November 17",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2024-10-12",
+            "accessed": "2026-09-28"
+          }
+        ]
+      },
+      {
+        "year": 2025,
+        "connected": null,
+        "open_to_motorcycles": null,
+        "closed": "2025-11-06",
+        "note": "Temple closed at about 11:30 on 6 November. Opening date not sourced.",
+        "sources": [
+          {
+            "url": "https://www.etvbharat.com/en/state/portals-of-tungnath-temple-closed-for-winter-season-enn25110603706",
+            "title": "Portals Of Tungnath Temple Closed For Winter Season",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2025-11-06",
+            "accessed": "2026-09-28"
+          },
+          {
+            "url": "https://www.thedailyjagran.com/india/char-dham-yatra-2025-badrinath-panch-puja-date-announced-closing-dates-announced-for-badrinath-kedarnath-yamunotri-and-tungnath-check-complete-schedule-10271162",
+            "title": "Char Dham Yatra 2025: Badrinath Panch Puja Date Announced, When Are Kedarnath Gates Closing? Check Complete Schedule",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2025-10-03",
+            "accessed": "2026-09-28"
+          }
+        ]
+      },
+      {
+        "year": 2026,
+        "connected": null,
+        "open_to_motorcycles": null,
+        "closed": null,
+        "note": "One operator page gives both 22 April and 2 May 2026 for the opening. Closing date not yet declared.",
+        "sources": [
+          {
+            "url": "https://www.pilgrimagetour.in/blog/tungnath-opening-closing-dates/",
+            "title": "Tungnath Opening Closing Dates 2026",
+            "kind": "operator",
+            "opened": true,
+            "source_date": "2023-12-15",
+            "accessed": "2026-09-28"
+          }
+        ]
+      }
+    ]
+  },
+  "authorities": [
+    {
+      "office": "Shri Badarinath Kedarnath Temple Committee",
+      "announces": "Opening and closing dates of Tungnath temple",
+      "stretch": "Tungnath",
+      "channel": "Announcements to the press; committee website",
+      "url": "https://badrinath-kedarnath.gov.in/",
+      "source": {
+        "url": "https://www.etvbharat.com/en/state/portals-of-tungnath-temple-closed-for-winter-season-enn25110603706",
+        "title": "Portals Of Tungnath Temple Closed For Winter Season",
+        "kind": "news",
+        "opened": true,
+        "source_date": "2025-11-06",
+        "accessed": "2026-09-28"
+      }
+    },
+    {
+      "office": "District Magistrate and District Disaster Management Officer, Rudraprayag",
+      "announces": "Advisories to halt travel during landslides",
+      "stretch": "Srinagar to Rudraprayag",
+      "channel": "Statements to the press",
+      "url": null,
+      "source": {
+        "url": "https://www.etvbharat.com/en/state/uttarakhand-rains-alaknanda-swells-badrinath-highway-shut-after-landslide-enn26070202718",
+        "title": "Uttarakhand Rains: Alaknanda Swells, Badrinath Highway Shut After Landslide",
+        "kind": "news",
+        "opened": true,
+        "source_date": "2026-07-02",
+        "accessed": "2026-09-28"
+      }
+    },
+    {
+      "office": "Uttarakhand Forest Department",
+      "announces": "Entry and camping rules inside the sanctuary, as reported by an operator",
+      "stretch": "Kedarnath Wildlife Sanctuary around Chopta",
+      "channel": "Forest check posts",
+      "url": "https://uttarakhandtourism.gov.in/destination/kedarnath-wildlife-sanctuary",
+      "source": {
+        "url": "https://mountainiax.com/kedarnath-wildlife-sanctuary-panch-kedar/",
+        "title": "Kedarnath Wildlife Sanctuary & Panch Kedar: Permits & Rules",
+        "kind": "operator",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      }
+    }
+  ],
+  "hazards": [
+    {
+      "title": "Sirobagad slide zone",
+      "detail": "Between Srinagar and Rudraprayag. It has blocked the highway in the monsoon for close to thirty years.",
+      "months": [
+        7,
+        8,
+        9
+      ],
+      "source": {
+        "url": "https://www.etvbharat.com/en/state/uttarakhand-rains-alaknanda-swells-badrinath-highway-shut-after-landslide-enn26070202718",
+        "title": "Uttarakhand Rains: Alaknanda Swells, Badrinath Highway Shut After Landslide",
+        "kind": "news",
+        "opened": true,
+        "source_date": "2026-07-02",
+        "accessed": "2026-09-28"
+      }
+    },
+    {
+      "title": "Tota Ghati and other slide zones below Rudraprayag",
+      "detail": "Researchers counted 164 landslides between Rishikesh and Badrinath after the road was widened.",
+      "months": [
+        7,
+        8,
+        9
+      ],
+      "source": {
+        "url": "https://scroll.in/article/1089352/on-the-road-to-chardham-a-landslide-every-two-kilometres",
+        "title": "Chardham Yatra: A landslide every two km on the road to Hinduism's holiest shrines in Uttarakhand",
+        "kind": "news",
+        "opened": true,
+        "source_date": "2026-01-09",
+        "accessed": "2026-09-28"
+      }
+    },
+    {
+      "title": "Snow on the Chopta road",
+      "detail": "Snow falls from November to March and can block the road between Ukhimath and Gopeshwar.",
+      "months": [
+        11,
+        12,
+        1,
+        2,
+        3
+      ],
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/Chopta",
+        "title": "Chopta",
+        "kind": "encyclopedia",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      }
+    }
+  ],
+  "videos": [],
+  "gaps": [
+    "Usual number of days: no source found.",
+    "No dated source found for winter closures of the Ukhimath to Chopta to Gopeshwar road, or for which office announces them.",
+    "Tungnath opening dates for 2024 and 2025 not sourced; the 2026 opening date is given as both 22 April and 2 May on the same operator page.",
+    "The camping ban on the Chopta meadows and the forest entry fee are reported by operator pages only; the state tourism page for the sanctuary could not be read in full. Fee amounts left out.",
+    "Whether Char Dham registration is asked of riders going only to Chopta was not found.",
+    "No source found on whether the road from Rudraprayag to Ukhimath carries the number NH 107 all the way.",
+    "Uttarakhand green cess: the exemption for two-wheelers is reported by two news outlets; no Transport Department order or official page was found.",
+    "No rider videos collected; the search budget ran out before this route."
+  ]
+}

@@ -1,0 +1,421 @@
+{
+  "slug": "kerala-hills",
+  "header": {
+    "highway": {
+      "value": "NH 85 (Kochi to Munnar); NH 766 (Thamarassery ghat to Kalpetta)",
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/National_Highway_85_(India)",
+        "title": "National Highway 85 (India)",
+        "kind": "encyclopedia",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      }
+    },
+    "highest_point": {
+      "name": "Top Station, 32 kilometres beyond Munnar",
+      "altitude_m": 1700,
+      "source": {
+        "url": "https://idukki.nic.in/en/tourist-place/munnar/",
+        "title": "Munnar | District Idukki, Government of Kerala | India",
+        "kind": "official",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      }
+    },
+    "hairpin_bends": {
+      "value": "9 on the Thamarassery ghat into Wayanad",
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/Thamarassery_Churam",
+        "title": "Thamarassery Churam",
+        "kind": "encyclopedia",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      }
+    },
+    "usual_days": null,
+    "usual_season": null,
+    "one_line": "Kerala's Western Ghats, from the tea hills of Munnar to Thekkady, Vagamon and Wayanad"
+  },
+  "rules": [
+    {
+      "id": "munnar-gap-road-rain-closures",
+      "kind": "timing",
+      "title": "Munnar Gap Road: night closures in heavy rain",
+      "detail": "The Idukki district collector shuts the Gap Road at night, or fully after a slide, whenever a rain alert is in force. Parking on it is banned too.",
+      "applies_to": "All vehicles",
+      "set_by": "District Collector, Idukki",
+      "official_url": null,
+      "has_official_order": true,
+      "source": {
+        "url": "https://www.onmanorama.com/news/kerala/2025/06/13/night-travel-banned-on-munnar-gap-road-until-june-17.html",
+        "title": "Night travel banned on Munnar gap road until June 17",
+        "kind": "news",
+        "opened": true,
+        "source_date": "2025-06-13",
+        "accessed": "2026-09-28"
+      },
+      "history": [
+        {
+          "date": "2024-07",
+          "change": "Road shut for two weeks after a landslide.",
+          "source": {
+            "url": "https://www.onmanorama.com/news/kerala/2025/05/12/idukki-munnar-gap-road-travel-ban.html",
+            "title": "Idukki district collector imposes travel ban on Munnar Gap Road…",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2025-05-12",
+            "accessed": "2026-09-28"
+          }
+        },
+        {
+          "date": "2025-05-12",
+          "change": "All travel banned after a landslide, the eighth since the road was widened.",
+          "source": {
+            "url": "https://www.onmanorama.com/news/kerala/2025/05/12/idukki-munnar-gap-road-travel-ban.html",
+            "title": "Idukki district collector imposes travel ban on Munnar Gap Road…",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2025-05-12",
+            "accessed": "2026-09-28"
+          }
+        },
+        {
+          "date": "2025-05-13",
+          "change": "Travel ban lifted.",
+          "source": {
+            "url": "https://www.onmanorama.com/news/kerala/2025/05/13/travel-ban-lifted-on-munnar-gap-poad.html",
+            "title": "Travel ban lifted on Munnar Gap Road",
+            "kind": "news",
+            "opened": false,
+            "source_date": "2025-05-13",
+            "accessed": "2026-09-28"
+          }
+        },
+        {
+          "date": "2025-06-13",
+          "change": "Night travel banned until 17 June under an orange rain alert.",
+          "source": {
+            "url": "https://www.onmanorama.com/news/kerala/2025/06/13/night-travel-banned-on-munnar-gap-road-until-june-17.html",
+            "title": "Night travel banned on Munnar gap road until June 17",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2025-06-13",
+            "accessed": "2026-09-28"
+          }
+        },
+        {
+          "date": "2025-06-25",
+          "change": "Night travel banned again for a day of very heavy rain.",
+          "source": {
+            "url": "https://www.onmanorama.com/news/kerala/2025/06/25/idukki-rain-munnar-gap-road-traffic-ban.html",
+            "title": "Night travel banned on Munnar gap road today",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2025-06-25",
+            "accessed": "2026-09-28"
+          }
+        }
+      ]
+    },
+    {
+      "id": "munnar-kumily-night-ban-after-slides",
+      "kind": "timing",
+      "title": "Munnar to Kumily road: night bans after landslides",
+      "detail": "In November 2023 the collector barred travel from 7 pm to 6 am between Udumbanchola and Cheriyar. Expect the same after fresh slides.",
+      "applies_to": "All vehicles",
+      "set_by": "District Collector, Idukki",
+      "official_url": null,
+      "has_official_order": true,
+      "source": {
+        "url": "https://english.janamtv.com/news/kerala/81210/night-travel-banned-on-munnar-kumily-state-highway-due-to-landslides-in-idukki/",
+        "title": "Night travel banned on Munnar-Kumily state highway due to landslides…",
+        "kind": "news",
+        "opened": true,
+        "source_date": "2023-11-07",
+        "accessed": "2026-09-28"
+      },
+      "history": [
+        {
+          "date": "2023-11",
+          "change": "Night travel barred from 7 pm to 6 am after landslides.",
+          "source": {
+            "url": "https://english.janamtv.com/news/kerala/81210/night-travel-banned-on-munnar-kumily-state-highway-due-to-landslides-in-idukki/",
+            "title": "Night travel banned on Munnar-Kumily state highway due to landslides…",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2023-11-07",
+            "accessed": "2026-09-28"
+          }
+        }
+      ]
+    },
+    {
+      "id": "thamarassery-ghat-restrictions",
+      "kind": "timing",
+      "title": "Thamarassery ghat: restrictions after landslips",
+      "detail": "After landslips in August 2025 heavy vehicles were barred and lighter ones let through in turns. Motorcycles were not named. Check before riding in the rains.",
+      "applies_to": "Heavy vehicles; others in a controlled flow",
+      "set_by": "District Collector, Kozhikode",
+      "official_url": null,
+      "has_official_order": true,
+      "source": {
+        "url": "https://www.deccanherald.com/india/kerala/traffic-restrictions-imposed-on-thamarassery-ghat-road-following-safety-risks-3703502",
+        "title": "Traffic restrictions on Thamarassery ghat road after landslips, cracks spotted",
+        "kind": "news",
+        "opened": true,
+        "source_date": "2025-08-29",
+        "accessed": "2026-09-28"
+      },
+      "history": [
+        {
+          "date": "2025-08-29",
+          "change": "Heavy vehicles barred after cracks were found at a hairpin bend.",
+          "source": {
+            "url": "https://www.deccanherald.com/india/kerala/traffic-restrictions-imposed-on-thamarassery-ghat-road-following-safety-risks-3703502",
+            "title": "Traffic restrictions on Thamarassery ghat road after landslips, cracks spotted",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2025-08-29",
+            "accessed": "2026-09-28"
+          }
+        }
+      ]
+    },
+    {
+      "id": "muthanga-bandipur-night-ban",
+      "kind": "timing",
+      "title": "Wayanad to Mysuru: forest road shut at night",
+      "detail": "The highway from Sulthan Bathery through Bandipur closes from 9 pm to 6 am. Two-wheelers are stopped from 6 pm.",
+      "applies_to": "All private vehicles; two-wheelers from 6 pm",
+      "set_by": "Karnataka government; upheld by the Karnataka High Court and the Supreme Court",
+      "official_url": null,
+      "has_official_order": true,
+      "source": {
+        "url": "https://www.onmanorama.com/news/kerala/2019/10/05/why-is-there-a-night-traffic-on-nh-766-bandipur-reserve-forest.html",
+        "title": "Explained | Why people in Wayanad protest traffic ban through…",
+        "kind": "news",
+        "opened": true,
+        "source_date": "2020-12-10",
+        "accessed": "2026-09-28"
+      },
+      "history": [
+        {
+          "date": "2009-06-03",
+          "change": "Night closure first ordered.",
+          "source": {
+            "url": "https://www.onmanorama.com/news/kerala/2019/10/05/why-is-there-a-night-traffic-on-nh-766-bandipur-reserve-forest.html",
+            "title": "Explained | Why people in Wayanad protest traffic ban through…",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2020-12-10",
+            "accessed": "2026-09-28"
+          }
+        },
+        {
+          "date": "2010",
+          "change": "Karnataka High Court upheld the closure.",
+          "source": {
+            "url": "https://www.onmanorama.com/news/kerala/2019/10/05/why-is-there-a-night-traffic-on-nh-766-bandipur-reserve-forest.html",
+            "title": "Explained | Why people in Wayanad protest traffic ban through…",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2020-12-10",
+            "accessed": "2026-09-28"
+          }
+        },
+        {
+          "date": "2019-08-07",
+          "change": "Supreme Court kept the closure in place.",
+          "source": {
+            "url": "https://india.mongabay.com/2019/11/bandipur-much-ado-about-a-highway/",
+            "title": "Much ado about a highway",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2019-11-08",
+            "accessed": "2026-09-28"
+          }
+        }
+      ]
+    },
+    {
+      "id": "kerala-hills-plastic-ban",
+      "kind": "motorcycle-rule",
+      "title": "Kerala hill stations: single-use plastic banned",
+      "detail": "Small water and soft drink bottles, plastic bags, plates and cutlery are banned in Munnar, Vagamon, Thekkady, Wayanad and other hill areas.",
+      "applies_to": "Everyone, visitors included",
+      "set_by": "Kerala High Court",
+      "official_url": null,
+      "has_official_order": true,
+      "source": {
+        "url": "https://www.etvbharat.com/en/!state/kerala-high-court-bans-single-use-plastic-objects-in-the-hills-enn25061705296",
+        "title": "Kerala High Court Bans Single Use Plastic Objects In The…",
+        "kind": "news",
+        "opened": true,
+        "source_date": "2025-06-17",
+        "accessed": "2026-09-28"
+      },
+      "history": [
+        {
+          "date": "2025-06",
+          "change": "High Court ordered the ban.",
+          "source": {
+            "url": "https://www.etvbharat.com/en/!state/kerala-high-court-bans-single-use-plastic-objects-in-the-hills-enn25061705296",
+            "title": "Kerala High Court Bans Single Use Plastic Objects In The…",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2025-06-17",
+            "accessed": "2026-09-28"
+          }
+        },
+        {
+          "date": "2025-10-02",
+          "change": "Ban took effect.",
+          "source": {
+            "url": "https://www.etvbharat.com/en/!state/kerala-high-court-bans-single-use-plastic-objects-in-the-hills-enn25061705296",
+            "title": "Kerala High Court Bans Single Use Plastic Objects In The…",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2025-06-17",
+            "accessed": "2026-09-28"
+          }
+        }
+      ]
+    }
+  ],
+  "season": {
+    "note": "Rain is heaviest from June to October, with July the wettest month in Munnar; this is when hill roads are closed for landslides.",
+    "history": []
+  },
+  "authorities": [
+    {
+      "office": "District Collector, Idukki",
+      "announces": "Road closures and night travel bans during rain alerts",
+      "stretch": "Munnar, Gap Road, Kumily, Vagamon",
+      "channel": "District website",
+      "url": "https://idukki.nic.in/",
+      "source": {
+        "url": "https://idukki.nic.in/",
+        "title": "ഇടുക്കി ജില്ല, കേരളാ സർക്കാർ | കേരളത്തിന്റെ സുഗന്ധവ്യഞ്ജന കലവറ | India",
+        "kind": "official",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      }
+    },
+    {
+      "office": "District Administration, Wayanad",
+      "announces": "District notices and disaster alerts",
+      "stretch": "Kalpetta and Wayanad",
+      "channel": "District website",
+      "url": "https://wayanad.gov.in/",
+      "source": {
+        "url": "https://wayanad.gov.in/",
+        "title": "വയനാട്ടിലേക്ക് സ്വാഗതം | പച്ച പറുദീസ | India",
+        "kind": "official",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      }
+    },
+    {
+      "office": "District Collector, Kozhikode",
+      "announces": "Restrictions on the Thamarassery ghat",
+      "stretch": "Adivaram to Lakkidi",
+      "channel": "News reports of the collector's orders",
+      "url": null,
+      "source": {
+        "url": "https://www.deccanherald.com/india/kerala/traffic-restrictions-imposed-on-thamarassery-ghat-road-following-safety-risks-3703502",
+        "title": "Traffic restrictions on Thamarassery ghat road after landslips, cracks spotted",
+        "kind": "news",
+        "opened": true,
+        "source_date": "2025-08-29",
+        "accessed": "2026-09-28"
+      }
+    }
+  ],
+  "hazards": [
+    {
+      "title": "Landslides and rockfall on the Munnar Gap Road",
+      "detail": "Eight slides since the road was widened. Rocks fall in heavy rain and the road can stay shut for weeks.",
+      "months": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "source": {
+        "url": "https://www.onmanorama.com/news/kerala/2025/05/12/idukki-munnar-gap-road-travel-ban.html",
+        "title": "Idukki district collector imposes travel ban on Munnar Gap Road…",
+        "kind": "news",
+        "opened": true,
+        "source_date": "2025-05-12",
+        "accessed": "2026-09-28"
+      }
+    },
+    {
+      "title": "Landslides in Wayanad",
+      "detail": "Heavy rain brought down hillsides on 30 July 2024, killing hundreds. The ghat road also slips in the monsoon.",
+      "months": [
+        6,
+        7,
+        8
+      ],
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/2024_Wayanad_landslides",
+        "title": "2024 Wayanad landslides",
+        "kind": "encyclopedia",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      }
+    },
+    {
+      "title": "Fog and rain at Vagamon",
+      "detail": "A cool, wet hill station at 1,100 metres where fog is common.",
+      "months": [],
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/Vagamon",
+        "title": "Vagamon",
+        "kind": "encyclopedia",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      }
+    }
+  ],
+  "videos": [
+    {
+      "url": "https://www.youtube.com/watch?v=AIsFv3pkqHQ",
+      "title": "Vagamon to Munnar Road Trip on Bullet | Scenic Kerala Bike Ride (Part 02)",
+      "channel": "TourWELL",
+      "stretch": "Vagamon to Munnar",
+      "filmed": null,
+      "bike": "Royal Enfield Bullet"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=FQ3N_q1ir68",
+      "title": "Kerala Road Trip: Munnar To Thekkady | Gap Road | Periyar National Park & Kathakali Show",
+      "channel": "Ghumakkad Rakesh",
+      "stretch": "Munnar to Thekkady by the Gap Road",
+      "filmed": null,
+      "bike": null
+    }
+  ],
+  "gaps": [
+    "No official source found for the best months; the season note rests on rainfall figures in an encyclopedia.",
+    "No source found for the usual number of days riders take.",
+    "The Idukki and Wayanad district websites showed no current road orders; every closure here comes from news reports of collectors' orders.",
+    "No source found for forest check post timings on the Munnar to Kumily or Kumily to Vagamon roads.",
+    "No official page found for the Kerala High Court plastic ban; the rule rests on a news report.",
+    "No official page found for entry fees for two-wheelers at any stop on this route.",
+    "The highway figure for Munnar differs by source: the district page still uses the old number 49, now 85.",
+    "Hairpin bend counts are added as header.hairpin_bends, which is not in the schema example.",
+    "Filming dates of the two videos are not known, and the motorcycle in the second is not named."
+  ]
+}

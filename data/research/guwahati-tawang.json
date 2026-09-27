@@ -1,0 +1,502 @@
+{
+  "slug": "guwahati-tawang",
+  "header": {
+    "highway": {
+      "value": "NH 13 over Sela, from Bomdila to Tawang",
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/Sela_Pass",
+        "title": "Sela Pass",
+        "kind": "encyclopedia",
+        "opened": true,
+        "source_date": "2026-08-27",
+        "accessed": "2026-09-28"
+      }
+    },
+    "highest_point": {
+      "name": "Sela Pass",
+      "altitude_m": 4170,
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/Sela_Pass",
+        "title": "Sela Pass",
+        "kind": "encyclopedia",
+        "opened": true,
+        "source_date": "2026-08-27",
+        "accessed": "2026-09-28"
+      }
+    },
+    "usual_days": {
+      "value": "9, Guwahati to Guwahati",
+      "source": {
+        "url": "https://thedreamridersgroup.com/blogs/guide-for-tawang-bike-tour",
+        "title": "Complete Guide for Tawang Motorcycle Tour",
+        "kind": "operator",
+        "opened": true,
+        "source_date": "2025-07-25",
+        "accessed": "2026-09-28"
+      }
+    },
+    "usual_season": {
+      "value": "October to May; June to September brings landslides",
+      "source": {
+        "url": "https://thedreamridersgroup.com/blogs/guide-for-tawang-bike-tour",
+        "title": "Complete Guide for Tawang Motorcycle Tour",
+        "kind": "operator",
+        "opened": true,
+        "source_date": "2025-07-25",
+        "accessed": "2026-09-28"
+      }
+    },
+    "one_line": "Assam plains to the Tawang valley in Arunachal Pradesh, over or under Sela Pass"
+  },
+  "rules": [
+    {
+      "id": "arunachal-inner-line-permit",
+      "kind": "permit",
+      "title": "Arunachal Pradesh: Inner Line Permit for Indian citizens",
+      "detail": "Applied for online. The tourist permit allows a stay of up to 14 days. The official page lists 300 rupees up to three days and 500 rupees up to 14.",
+      "applies_to": "Indian citizens from outside Arunachal Pradesh",
+      "set_by": "Government of Arunachal Pradesh",
+      "official_url": "https://www.eilp.arunachal.gov.in/preTuristEIlpKYC",
+      "has_official_order": true,
+      "source": {
+        "url": "https://www.eilp.arunachal.gov.in/preTuristEIlpKYC",
+        "title": "Tourist electronic Inner Line Permit: application page",
+        "kind": "official",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      },
+      "history": [
+        {
+          "date": "2022-11-17",
+          "change": "New online permit portal launched across the state.",
+          "source": {
+            "url": "https://eilp.arunachal.gov.in/",
+            "title": "Arunachal Pradesh electronic Inner Line Permit portal",
+            "kind": "official",
+            "opened": true,
+            "source_date": null,
+            "accessed": "2026-09-28"
+          }
+        }
+      ]
+    },
+    {
+      "id": "arunachal-inner-line-permit-counters",
+      "kind": "permit",
+      "title": "Arunachal Pradesh: permit counters outside the portal",
+      "detail": "A Tawang advisory names issuing offices at Delhi, Kolkata, Guwahati, Tezpur and Bhalukpong. West Kameng district also issues it at the Deputy Commissioner's office in Bomdila.",
+      "applies_to": "Indian citizens from outside Arunachal Pradesh",
+      "set_by": "Government of Arunachal Pradesh",
+      "official_url": "https://westkameng.nic.in/service/apply-e-ilp-online/",
+      "has_official_order": true,
+      "source": {
+        "url": "https://cdn.s3waas.gov.in/s39b70e8fe62e40c570a322f1b0b659098/uploads/2026/08/17878137188438.pdf",
+        "title": "Advisory, Office of the District Tourism Officer, Tawang",
+        "kind": "official",
+        "opened": true,
+        "source_date": "2026-08-27",
+        "accessed": "2026-09-28"
+      },
+      "history": []
+    },
+    {
+      "id": "tawang-bum-la-pass",
+      "kind": "permit",
+      "title": "Bum La: separate pass from the Tawang district administration",
+      "detail": "Apply on the district's portal or at the Deputy Commissioner's office. An order of 8 September 2026 says passes issued by anyone else are not legal.",
+      "applies_to": "All visitors; outsiders must already hold an Inner Line Permit",
+      "set_by": "Deputy Commissioner, Tawang district",
+      "official_url": "https://bumlapass.in/",
+      "has_official_order": true,
+      "source": {
+        "url": "https://cdn.s3waas.gov.in/s39b70e8fe62e40c570a322f1b0b659098/uploads/2026/09/17890360466046.pdf",
+        "title": "Order regarding issuance of Bumla Pass exclusively through authorized channels",
+        "kind": "official",
+        "opened": true,
+        "source_date": "2026-09-08",
+        "accessed": "2026-09-28"
+      },
+      "history": [
+        {
+          "date": "2026-09-08",
+          "change": "Order that Bum La passes come only from the district administration, through its portal or office.",
+          "source": {
+            "url": "https://cdn.s3waas.gov.in/s39b70e8fe62e40c570a322f1b0b659098/uploads/2026/09/17890360466046.pdf",
+            "title": "Order regarding issuance of Bumla Pass exclusively through authorized channels",
+            "kind": "official",
+            "opened": true,
+            "source_date": "2026-09-08",
+            "accessed": "2026-09-28"
+          }
+        }
+      ]
+    },
+    {
+      "id": "tawang-bum-la-timings",
+      "kind": "timing",
+      "title": "Bum La: enter by 10:30, leave by 14:00",
+      "detail": "The district portal gives an entry window of 7:00 to 10:30 in the morning and requires visitors to be out by 14:00 the same day.",
+      "applies_to": "All visitors",
+      "set_by": "Deputy Commissioner, Tawang district",
+      "official_url": "https://bumlapass.in/",
+      "has_official_order": true,
+      "source": {
+        "url": "https://bumlapass.in/",
+        "title": "Bumla Pass tourist permit portal",
+        "kind": "official",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      },
+      "history": []
+    },
+    {
+      "id": "tawang-bum-la-vehicles",
+      "kind": "motorcycle-rule",
+      "title": "Bum La: portal is silent on motorcycles",
+      "detail": "The district portal allows private vehicles and says commercial taxis must be registered in Tawang. It does not mention motorcycles. Several blogs say a local taxi is compulsory.",
+      "applies_to": "All vehicles",
+      "set_by": "Deputy Commissioner, Tawang district",
+      "official_url": "https://bumlapass.in/",
+      "has_official_order": true,
+      "source": {
+        "url": "https://bumlapass.in/",
+        "title": "Bumla Pass tourist permit portal",
+        "kind": "official",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      },
+      "history": []
+    },
+    {
+      "id": "tawang-bum-la-visitor-fee",
+      "kind": "fee",
+      "title": "Bum La: visitor fee of 50 rupees",
+      "detail": "Charged per person aged 12 and above who is not from an Arunachal Pradesh Scheduled Tribe, after the pass is approved.",
+      "applies_to": "Visitors from outside Arunachal Pradesh",
+      "set_by": "Deputy Commissioner, Tawang district",
+      "official_url": "https://bumlapass.in/",
+      "has_official_order": true,
+      "source": {
+        "url": "https://bumlapass.in/",
+        "title": "Bumla Pass tourist permit portal",
+        "kind": "official",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      },
+      "history": []
+    },
+    {
+      "id": "tawang-acclimatise-one-day",
+      "kind": "timing",
+      "title": "Tawang: one day of acclimatisation before high areas",
+      "detail": "The district tourism office's advisory of 27 August 2026 tells visitors to acclimatise for at least a day after arrival before Sela Pass, Bum La and the high lakes.",
+      "applies_to": "All visitors",
+      "set_by": "District Tourism Officer, Tawang",
+      "official_url": "https://tawang.nic.in/tourist-safety-advisory-high-altitude-travel-guidelines/",
+      "has_official_order": true,
+      "source": {
+        "url": "https://cdn.s3waas.gov.in/s39b70e8fe62e40c570a322f1b0b659098/uploads/2026/08/17878137188438.pdf",
+        "title": "Advisory, Office of the District Tourism Officer, Tawang",
+        "kind": "official",
+        "opened": true,
+        "source_date": "2026-08-27",
+        "accessed": "2026-09-28"
+      },
+      "history": [
+        {
+          "date": "2026-08-27",
+          "change": "Advisory issued; it also asks for non-skid chains on snow-covered roads.",
+          "source": {
+            "url": "https://cdn.s3waas.gov.in/s39b70e8fe62e40c570a322f1b0b659098/uploads/2026/08/17878137188438.pdf",
+            "title": "Advisory, Office of the District Tourism Officer, Tawang",
+            "kind": "official",
+            "opened": true,
+            "source_date": "2026-08-27",
+            "accessed": "2026-09-28"
+          }
+        }
+      ]
+    },
+    {
+      "id": "sela-traffic-regulated-in-snow",
+      "kind": "timing",
+      "title": "Sela Pass: one-way traffic on alternate days in snow",
+      "detail": "After heavy snow the district administration has allowed Tawang-bound and West Kameng-bound traffic on alternate dates. This predates the tunnel; no later order was found.",
+      "applies_to": "All vehicles",
+      "set_by": "Deputy Commissioner, Tawang district",
+      "official_url": null,
+      "has_official_order": false,
+      "source": {
+        "url": "https://nenews.in/arunachal-pradesh/snowfall-paralysis-in-arunachal-vehicles-stranded-on-balipara-charduar-tawang-route/6870/",
+        "title": "Snowfall paralysis in Arunachal: Vehicles stranded on Balipara-Charduar-Tawang route",
+        "kind": "news",
+        "opened": true,
+        "source_date": "2024-02-04",
+        "accessed": "2026-09-28"
+      },
+      "history": [
+        {
+          "date": "2024-02-02",
+          "change": "Advisory set alternate travel dates by direction from 5 to 12 February 2024.",
+          "source": {
+            "url": "https://nenews.in/arunachal-pradesh/snowfall-paralysis-in-arunachal-vehicles-stranded-on-balipara-charduar-tawang-route/6870/",
+            "title": "Snowfall paralysis in Arunachal: Vehicles stranded on Balipara-Charduar-Tawang route",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2024-02-04",
+            "accessed": "2026-09-28"
+          }
+        },
+        {
+          "date": "2024-03-09",
+          "change": "Sela Tunnel inaugurated, bypassing the pass.",
+          "source": {
+            "url": "https://en.wikipedia.org/wiki/Sela_Tunnel",
+            "title": "Sela Tunnel",
+            "kind": "encyclopedia",
+            "opened": true,
+            "source_date": "2026-08-30",
+            "accessed": "2026-09-28"
+          }
+        }
+      ]
+    },
+    {
+      "id": "arunachal-foreigners-protected-area-permit",
+      "kind": "permit",
+      "title": "Arunachal Pradesh: foreign citizens need a Protected Area Permit",
+      "detail": "The state permit portal is for Indian citizens only and sends foreign citizens to the Foreigners Regional Registration Office portal. Group size, validity and fee not found officially.",
+      "applies_to": "Foreign citizens",
+      "set_by": "Ministry of Home Affairs, Government of India",
+      "official_url": "https://www.eilp.arunachal.gov.in/preTuristEIlpKYC",
+      "has_official_order": true,
+      "source": {
+        "url": "https://www.eilp.arunachal.gov.in/preTuristEIlpKYC",
+        "title": "Tourist electronic Inner Line Permit: application page",
+        "kind": "official",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      },
+      "history": []
+    },
+    {
+      "id": "tawang-foreigners-restricted-area-order",
+      "kind": "permit",
+      "title": "Tawang: areas closed to foreign citizens",
+      "detail": "A District Magistrate's order of 15 May 2026 bars foreign citizens, without written permission, beyond Pangateng Tso, Gorsam Stupa in Zemithang, kilometre 4 at Khrimu, and Murga Bridge near Jang.",
+      "applies_to": "Foreign citizens",
+      "set_by": "District Magistrate, Tawang district",
+      "official_url": "https://tawang.nic.in/restricted-area-for-foreign-nationals/",
+      "has_official_order": true,
+      "source": {
+        "url": "https://cdn.s3waas.gov.in/s39b70e8fe62e40c570a322f1b0b659098/uploads/2026/05/17793544935292.pdf",
+        "title": "Order, Office of the District Magistrate, Tawang: areas restricted for foreign visitors",
+        "kind": "official",
+        "opened": true,
+        "source_date": "2026-05-15",
+        "accessed": "2026-09-28"
+      },
+      "history": [
+        {
+          "date": "2026-05-15",
+          "change": "Order issued after reports of foreign tourists moving beyond the permitted area near Pangateng Tso; hotels must verify permits.",
+          "source": {
+            "url": "https://cdn.s3waas.gov.in/s39b70e8fe62e40c570a322f1b0b659098/uploads/2026/05/17793544935292.pdf",
+            "title": "Order, Office of the District Magistrate, Tawang: areas restricted for foreign visitors",
+            "kind": "official",
+            "opened": true,
+            "source_date": "2026-05-15",
+            "accessed": "2026-09-28"
+          }
+        }
+      ]
+    }
+  ],
+  "season": {
+    "note": "Before the tunnel, snow shut or restricted Sela Pass for days at a time in winter; the Sela Tunnel has bypassed the pass since 9 March 2024.",
+    "history": [
+      {
+        "year": 2024,
+        "connected": "2024-03-09",
+        "open_to_motorcycles": null,
+        "closed": "2024-02",
+        "note": "About 30 vehicles were stranded by snow near Sela in early February; traffic then ran on alternate dates. The connected date is the tunnel's inauguration.",
+        "sources": [
+          {
+            "url": "https://nenews.in/arunachal-pradesh/snowfall-paralysis-in-arunachal-vehicles-stranded-on-balipara-charduar-tawang-route/6870/",
+            "title": "Snowfall paralysis in Arunachal: Vehicles stranded on Balipara-Charduar-Tawang route",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2024-02-04",
+            "accessed": "2026-09-28"
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/Sela_Tunnel",
+            "title": "Sela Tunnel",
+            "kind": "encyclopedia",
+            "opened": true,
+            "source_date": "2026-08-30",
+            "accessed": "2026-09-28"
+          }
+        ]
+      }
+    ]
+  },
+  "authorities": [
+    {
+      "office": "Department of Information Technology and Communication, Government of Arunachal Pradesh",
+      "announces": "Runs the online Inner Line Permit portal",
+      "stretch": "All of Arunachal Pradesh",
+      "channel": "Permit portal",
+      "url": "https://eilp.arunachal.gov.in/",
+      "source": {
+        "url": "https://eilp.arunachal.gov.in/",
+        "title": "Arunachal Pradesh electronic Inner Line Permit portal",
+        "kind": "official",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      }
+    },
+    {
+      "office": "Deputy Commissioner, Tawang district",
+      "announces": "Issues Bum La passes; issues traffic advisories when snow blocks Sela; publishes orders and advisories",
+      "stretch": "Jang to Tawang and Bum La",
+      "channel": "District website",
+      "url": "https://tawang.nic.in/",
+      "source": {
+        "url": "https://tawang.nic.in/",
+        "title": "Tawang District, Government of Arunachal Pradesh",
+        "kind": "official",
+        "opened": true,
+        "source_date": "2026-09-25",
+        "accessed": "2026-09-28"
+      }
+    },
+    {
+      "office": "District Tourism Officer, Tawang",
+      "announces": "Safety advisories for visitors",
+      "stretch": "Sela Pass, Tawang and the high lakes",
+      "channel": "District website",
+      "url": "https://tawang.nic.in/tourist-safety-advisory-high-altitude-travel-guidelines/",
+      "source": {
+        "url": "https://tawang.nic.in/tourist-safety-advisory-high-altitude-travel-guidelines/",
+        "title": "Tourist Safety Advisory - High Altitude & Travel Guidelines",
+        "kind": "official",
+        "opened": true,
+        "source_date": "2026-08-27",
+        "accessed": "2026-09-28"
+      }
+    },
+    {
+      "office": "Deputy Commissioner's office, Bomdila (West Kameng district)",
+      "announces": "Issues Inner Line Permits at its public service counter",
+      "stretch": "Bhalukpong to Dirang",
+      "channel": "Office counter and district website",
+      "url": "https://westkameng.nic.in/service/apply-e-ilp-online/",
+      "source": {
+        "url": "https://westkameng.nic.in/service/apply-e-ilp-online/",
+        "title": "West Kameng district: apply for Inner Line Permit online",
+        "kind": "official",
+        "opened": true,
+        "source_date": "2026-09-03",
+        "accessed": "2026-09-28"
+      }
+    },
+    {
+      "office": "Border Roads Organisation",
+      "announces": "Built the Sela Tunnel and maintains the road over Sela; publishes no road status page",
+      "stretch": "Balipara, Charduar, Tawang road",
+      "channel": "None found",
+      "url": "https://bro.gov.in/",
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/Sela_Pass",
+        "title": "Sela Pass",
+        "kind": "encyclopedia",
+        "opened": true,
+        "source_date": "2026-08-27",
+        "accessed": "2026-09-28"
+      }
+    }
+  ],
+  "hazards": [
+    {
+      "title": "Landslides between Dirang and Sela",
+      "detail": "In late August 2025 slides between Padma and Chepara and near Sapper Camp blocked about 120 metres of road and damaged two vehicles.",
+      "months": [
+        6,
+        7,
+        8,
+        9
+      ],
+      "source": {
+        "url": "https://arunachalobserver.org/2025/08/27/massive-landslide-snaps-dirang-tawang-road-link/",
+        "title": "Massive landslide snaps Dirang-Tawang road link",
+        "kind": "news",
+        "opened": true,
+        "source_date": "2025-08-27",
+        "accessed": "2026-09-28"
+      }
+    },
+    {
+      "title": "Snow on the old road over Sela Pass",
+      "detail": "In February 2024 snow between Jaswant Garh and Baisakhi stranded about 30 vehicles for three days. The district advisory asks for non-skid chains.",
+      "months": [
+        12,
+        1,
+        2,
+        3
+      ],
+      "source": {
+        "url": "https://nenews.in/arunachal-pradesh/snowfall-paralysis-in-arunachal-vehicles-stranded-on-balipara-charduar-tawang-route/6870/",
+        "title": "Snowfall paralysis in Arunachal: Vehicles stranded on Balipara-Charduar-Tawang route",
+        "kind": "news",
+        "opened": true,
+        "source_date": "2024-02-04",
+        "accessed": "2026-09-28"
+      }
+    },
+    {
+      "title": "Altitude at Sela and Bum La",
+      "detail": "The district advisory warns people with heart or altitude problems against Sela Pass and Bum La, and tells visitors to stay off frozen lakes.",
+      "months": [],
+      "source": {
+        "url": "https://cdn.s3waas.gov.in/s39b70e8fe62e40c570a322f1b0b659098/uploads/2026/08/17878137188438.pdf",
+        "title": "Advisory, Office of the District Tourism Officer, Tawang",
+        "kind": "official",
+        "opened": true,
+        "source_date": "2026-08-27",
+        "accessed": "2026-09-28"
+      }
+    },
+    {
+      "title": "Few fuel pumps between towns",
+      "detail": "An operator guide advises filling up at Tezpur, Bomdila and Tawang, as pumps are rare in between.",
+      "months": [],
+      "source": {
+        "url": "https://thedreamridersgroup.com/blogs/guide-for-tawang-bike-tour",
+        "title": "Complete Guide for Tawang Motorcycle Tour",
+        "kind": "operator",
+        "opened": true,
+        "source_date": "2025-07-25",
+        "accessed": "2026-09-28"
+      }
+    }
+  ],
+  "videos": [],
+  "gaps": [
+    "No source found stating whether the old road over Sela Pass stays open to traffic now that the tunnel is in use.",
+    "No official statement found on whether motorcycles may go to Bum La; the district portal mentions private vehicles, taxis and government vehicles only.",
+    "Protected Area Permit group size, validity and fee for foreign citizens not found on an official page.",
+    "No official road status page found for the Balipara, Charduar, Tawang road; blockages surface through regional news.",
+    "No dated snow closures of Sela Pass found for years other than 2024.",
+    "The Sela Tunnel inauguration date comes from Wikipedia; no official release was opened.",
+    "Usual days and season come from a tour operator's guide, not an official source.",
+    "Videos not collected."
+  ]
+}

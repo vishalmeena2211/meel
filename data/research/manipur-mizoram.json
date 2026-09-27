@@ -1,0 +1,306 @@
+{
+  "slug": "manipur-mizoram",
+  "header": {
+    "highway": {
+      "value": "NH 6 from Aizawl to Champhai",
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/National_Highway_6_(India)",
+        "title": "National Highway 6 (India)",
+        "kind": "encyclopedia",
+        "opened": true,
+        "source_date": "2025-12-02",
+        "accessed": "2026-09-28"
+      }
+    },
+    "highest_point": {
+      "name": null,
+      "altitude_m": null,
+      "source": null
+    },
+    "usual_days": {
+      "value": null,
+      "source": null
+    },
+    "usual_season": {
+      "value": null,
+      "source": null
+    },
+    "one_line": "Imphal valley and Loktak Lake at Moirang in Manipur, and the ridge-top road from Aizawl to Champhai in Mizoram"
+  },
+  "rules": [
+    {
+      "id": "manipur-inner-line-permit",
+      "kind": "permit",
+      "title": "Manipur: Inner Line Permit for Indian citizens",
+      "detail": "Every Indian citizen from outside Manipur needs one. The tourist permit runs 30 days and costs 100 rupees, online or at kiosks at Imphal airport, Mao Gate and Jiribam Gate.",
+      "applies_to": "Indian citizens from outside Manipur",
+      "set_by": "Government of Manipur",
+      "official_url": "https://manipurilponline.mn.gov.in/",
+      "has_official_order": true,
+      "source": {
+        "url": "https://manipurilponline.mn.gov.in/",
+        "title": "Manipur Inner Line Permit portal",
+        "kind": "official",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      },
+      "history": []
+    },
+    {
+      "id": "mizoram-inner-line-permit",
+      "kind": "permit",
+      "title": "Mizoram: Inner Line Permit for Indian citizens",
+      "detail": "All visitors who are not Mizo need one, applied for online before arrival. It is also issued at Mizoram Houses in six cities and at named entry points.",
+      "applies_to": "Indian citizens from outside Mizoram",
+      "set_by": "Government of Mizoram",
+      "official_url": "https://ilp.mizoram.gov.in/",
+      "has_official_order": true,
+      "source": {
+        "url": "https://mizoramtourism.com/about/4",
+        "title": "Mizoram Tourism: entry formalities",
+        "kind": "official",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      },
+      "history": []
+    },
+    {
+      "id": "mizoram-permit-on-arrival-points",
+      "kind": "permit",
+      "title": "Mizoram: entry points that issue permits on arrival",
+      "detail": "The tourism site names Vairengte, Farkawn, Bairabi, Sairang rail station, Lengpui airport and Kanhmun. It gives no validity or fee; blogs quote seven or fifteen days.",
+      "applies_to": "Indian citizens from outside Mizoram",
+      "set_by": "Government of Mizoram",
+      "official_url": "https://mizoramtourism.com/about/4",
+      "has_official_order": true,
+      "source": {
+        "url": "https://mizoramtourism.com/about/4",
+        "title": "Mizoram Tourism: entry formalities",
+        "kind": "official",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      },
+      "history": []
+    },
+    {
+      "id": "northeast-foreigners-protected-area-permit-2024",
+      "kind": "permit",
+      "title": "Nagaland, Manipur, Mizoram: Protected Area Permit for foreigners",
+      "detail": "Re-imposed in December 2024 after about 14 years of relaxation. Foreign citizens need prior permission and a Protected Area Permit before entering any of the three states.",
+      "applies_to": "Foreign citizens",
+      "set_by": "Ministry of Home Affairs, Government of India",
+      "official_url": null,
+      "has_official_order": true,
+      "source": {
+        "url": "https://eastmojo.com/manipur/2024/12/19/foreigners-now-require-special-permission-to-visit-manipur-nagaland-and-mizoram/",
+        "title": "Foreigners now require special permission to visit Manipur, Nagaland, and Mizoram",
+        "kind": "news",
+        "opened": true,
+        "source_date": "2024-12-19",
+        "accessed": "2026-09-28"
+      },
+      "history": [
+        {
+          "date": "2024-12-17",
+          "change": "Mizoram's official tourism site gives this as the date the new rules for foreign visitors took effect.",
+          "source": {
+            "url": "https://mizoramtourism.com/about/4",
+            "title": "Mizoram Tourism: entry formalities",
+            "kind": "official",
+            "opened": true,
+            "source_date": null,
+            "accessed": "2026-09-28"
+          }
+        },
+        {
+          "date": "2024-12-19",
+          "change": "News report that protected area rules were reinstated for the three states, ending a relaxation in place since about 2010.",
+          "source": {
+            "url": "https://eastmojo.com/manipur/2024/12/19/foreigners-now-require-special-permission-to-visit-manipur-nagaland-and-mizoram/",
+            "title": "Foreigners now require special permission to visit Manipur, Nagaland, and Mizoram",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2024-12-19",
+            "accessed": "2026-09-28"
+          }
+        }
+      ]
+    },
+    {
+      "id": "mizoram-foreigners-registration",
+      "kind": "document",
+      "title": "Mizoram: foreign visitors register within 24 hours",
+      "detail": "The permit is obtained online before arriving in India. After arrival the visitor registers online within 24 hours, and the place of stay files a guest form.",
+      "applies_to": "Foreign citizens",
+      "set_by": "Ministry of Home Affairs, Government of India",
+      "official_url": "https://mizoramtourism.com/about/4",
+      "has_official_order": true,
+      "source": {
+        "url": "https://mizoramtourism.com/about/4",
+        "title": "Mizoram Tourism: entry formalities",
+        "kind": "official",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      },
+      "history": []
+    }
+  ],
+  "season": {
+    "note": "No road on this route closes by season; monsoon landslides damage the highways into Aizawl.",
+    "history": []
+  },
+  "authorities": [
+    {
+      "office": "Government of Manipur (Inner Line Permit portal)",
+      "announces": "Issues Inner Line Permits online and at entry kiosks",
+      "stretch": "All of Manipur",
+      "channel": "Permit portal",
+      "url": "https://manipurilponline.mn.gov.in/",
+      "source": {
+        "url": "https://manipurilponline.mn.gov.in/",
+        "title": "Manipur Inner Line Permit portal",
+        "kind": "official",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      }
+    },
+    {
+      "office": "Government of Mizoram (Inner Line Pass portal)",
+      "announces": "Issues Inner Line Permits online",
+      "stretch": "All of Mizoram",
+      "channel": "Permit portal",
+      "url": "https://ilp.mizoram.gov.in/",
+      "source": {
+        "url": "https://ilp.mizoram.gov.in/",
+        "title": "Inner Line Pass, Government of Mizoram",
+        "kind": "official",
+        "opened": false,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      }
+    },
+    {
+      "office": "Mizoram Tourism, Government of Mizoram",
+      "announces": "Publishes entry formalities for Indian and foreign visitors",
+      "stretch": "All of Mizoram",
+      "channel": "Tourism website",
+      "url": "https://mizoramtourism.com/about/4",
+      "source": {
+        "url": "https://mizoramtourism.com/about/4",
+        "title": "Mizoram Tourism: entry formalities",
+        "kind": "official",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      }
+    },
+    {
+      "office": "Ministry of Home Affairs, Government of India",
+      "announces": "Decides Protected Area Permit rules for foreign citizens",
+      "stretch": "Nagaland, Manipur and Mizoram",
+      "channel": "Orders reported by news",
+      "url": null,
+      "source": {
+        "url": "https://eastmojo.com/manipur/2024/12/19/foreigners-now-require-special-permission-to-visit-manipur-nagaland-and-mizoram/",
+        "title": "Foreigners now require special permission to visit Manipur, Nagaland, and Mizoram",
+        "kind": "news",
+        "opened": true,
+        "source_date": "2024-12-19",
+        "accessed": "2026-09-28"
+      }
+    },
+    {
+      "office": "National Highways and Infrastructure Development Corporation Limited and Mizoram Public Works Department",
+      "announces": "Repair the highway from Assam to Aizawl",
+      "stretch": "Vairengte, Kawnpui, Sairang, Aizawl",
+      "channel": "Reported by regional news",
+      "url": null,
+      "source": {
+        "url": "https://nenews.in/mizoram/mizoram-commercial-vehicles-to-halt-operations-for-a-week-to-aid-nh-306-repair/30003/",
+        "title": "Mizoram commercial vehicles to halt operations for a week to aid NH-306 repair",
+        "kind": "news",
+        "opened": true,
+        "source_date": "2025-07-31",
+        "accessed": "2026-09-28"
+      }
+    }
+  ],
+  "hazards": [
+    {
+      "title": "Manipur: United Kingdom advises against non-essential travel",
+      "detail": "The United Kingdom's foreign office advises against all but essential travel to the whole state, citing insurgent groups, ethnic clashes, curfews and internet cuts.",
+      "months": [],
+      "source": {
+        "url": "https://www.gov.uk/foreign-travel-advice/india/regional-risks",
+        "title": "Foreign travel advice, India: regional risks",
+        "kind": "official",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      }
+    },
+    {
+      "title": "Manipur: Canada advises against non-essential travel",
+      "detail": "Canada's advisory, updated 24 September 2026, cites insurgent groups and ethnic tension, with violence since May 2023, curfews and disrupted services.",
+      "months": [],
+      "source": {
+        "url": "https://travel.gc.ca/destinations/india",
+        "title": "Travel advice and advisories for India",
+        "kind": "official",
+        "opened": true,
+        "source_date": "2026-09-24",
+        "accessed": "2026-09-28"
+      }
+    },
+    {
+      "title": "Manipur: visitor numbers have fallen sharply",
+      "detail": "On 27 September 2026 the Chief Minister said tourist arrivals had dropped drastically because of ethnic violence and that visitors would not come without peace.",
+      "months": [],
+      "source": {
+        "url": "https://english.punjabkesari.com/india/ethnic-violence-hits-tourism-in-manipur-tourist-inflow-declines-drastically-cm",
+        "title": "Ethnic violence hit tourism in Manipur, tourist inflow declined drastically: CM",
+        "kind": "news",
+        "opened": true,
+        "source_date": "2026-09-27",
+        "accessed": "2026-09-28"
+      }
+    },
+    {
+      "title": "Monsoon damage on the highway into Aizawl",
+      "detail": "The Sairang to Kawnpui stretch was badly damaged by slides and erosion in 2025; commercial vehicles stayed off it from 4 to 9 August for repairs.",
+      "months": [
+        6,
+        7,
+        8,
+        9
+      ],
+      "source": {
+        "url": "https://nenews.in/mizoram/mizoram-commercial-vehicles-to-halt-operations-for-a-week-to-aid-nh-306-repair/30003/",
+        "title": "Mizoram commercial vehicles to halt operations for a week to aid NH-306 repair",
+        "kind": "news",
+        "opened": true,
+        "source_date": "2025-07-31",
+        "accessed": "2026-09-28"
+      }
+    }
+  ],
+  "videos": [],
+  "gaps": [
+    "No travel advisory from the Government of India or the Government of Manipur was found; the advisories recorded are from the United Kingdom and Canada.",
+    "The United States advisory page returned an access error (HTTP 403) and was not read.",
+    "The United Kingdom page showed no last-updated date in the text retrieved.",
+    "No official or reputable dated source was found on which roads inside Manipur are open to visitors, so none is recorded.",
+    "No source found for a road between Imphal and Aizawl; how riders link the two states was not established.",
+    "Mizoram permit validity and fee for visitors not found on an official page; the permit portal returned only its title.",
+    "Highway number for Imphal to Moirang not sourced from an opened page.",
+    "Highest point, usual days and usual season not sourced.",
+    "No source found on the Aizawl to Champhai road's condition or on rules at the Zokhawthar border.",
+    "Protected Area Permit group size, validity and fee not found on an official page.",
+    "Videos not collected."
+  ]
+}

@@ -1,0 +1,298 @@
+{
+  "slug": "dharamshala-bir-billing",
+  "header": {
+    "highway": {
+      "value": "NH 503 reaches Dharamshala and McLeod Ganj; number for the Palampur to Baijnath road not confirmed",
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/National_Highway_503_(India)",
+        "title": "National Highway 503 (India)",
+        "kind": "encyclopedia",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      }
+    },
+    "highest_point": {
+      "name": "Billing",
+      "altitude_m": 2400,
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/Bir,_Himachal_Pradesh",
+        "title": "Bir, Himachal Pradesh",
+        "kind": "encyclopedia",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      }
+    },
+    "usual_days": {
+      "value": "3 to 6",
+      "source": {
+        "url": "https://himtrails.in/himachal-trip-itinerary-planner/",
+        "title": "Himachal trip itinerary planner",
+        "kind": "operator",
+        "opened": true,
+        "source_date": "2026-04",
+        "accessed": "2026-09-28"
+      }
+    },
+    "usual_season": {
+      "value": "March to June and September to November",
+      "source": {
+        "url": "https://himtrails.in/himachal-trip-itinerary-planner/",
+        "title": "Himachal trip itinerary planner",
+        "kind": "operator",
+        "opened": true,
+        "source_date": "2026-04",
+        "accessed": "2026-09-28"
+      }
+    },
+    "one_line": "Himachal Pradesh, along the foot of the Dhauladhar from Dharamshala through Palampur to Bir and up to Billing"
+  },
+  "rules": [
+    {
+      "id": "bir-billing-green-tax",
+      "kind": "tax",
+      "title": "Bir Billing green tax",
+      "detail": "Charged on vehicles entering Bir Billing, motorcycles included. Rates were revised in early 2025. Known from a newspaper report; no official page was found.",
+      "applies_to": "All vehicles entering Bir Billing",
+      "set_by": "Special Area Development Authority, Bir Billing, with state government approval",
+      "official_url": null,
+      "has_official_order": false,
+      "source": {
+        "url": "https://www.tribuneindia.com/news/himachal/green-tax-in-bir-billing-revised-to-boost-tourism-infrastructure",
+        "title": "Green tax in Bir-Billing revised to boost tourism infrastructure",
+        "kind": "news",
+        "opened": true,
+        "source_date": "2025-02-02",
+        "accessed": "2026-09-28"
+      },
+      "history": [
+        {
+          "date": "2025-02",
+          "change": "State government approved a revised rate list that includes motorcycles.",
+          "source": {
+            "url": "https://www.tribuneindia.com/news/himachal/green-tax-in-bir-billing-revised-to-boost-tourism-infrastructure",
+            "title": "Green tax in Bir-Billing revised to boost tourism infrastructure",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2025-02-02",
+            "accessed": "2026-09-28"
+          }
+        }
+      ]
+    },
+    {
+      "id": "bir-road-morning-bus-restriction",
+      "kind": "timing",
+      "title": "Bir: large buses barred from landing-site road, mornings",
+      "detail": "Large and multi-axle buses may not use the Bir Chowk to landing site road from 07:00 to 11:00. Motorcycles are not restricted.",
+      "applies_to": "Large and multi-axle buses",
+      "set_by": "District Magistrate, Kangra",
+      "official_url": null,
+      "has_official_order": true,
+      "source": {
+        "url": "https://www.uniindia.com/north-india/admin-kangra-vehicles/187980",
+        "title": "Heavy Vehicles Restricted on Bir Chowk-Landing Site Road",
+        "kind": "news",
+        "opened": true,
+        "source_date": "2026-09-21",
+        "accessed": "2026-09-28"
+      },
+      "history": [
+        {
+          "date": "2026-09-21",
+          "change": "Order reported, following a police report on traffic jams.",
+          "source": {
+            "url": "https://www.uniindia.com/north-india/admin-kangra-vehicles/187980",
+            "title": "Heavy Vehicles Restricted on Bir Chowk-Landing Site Road",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2026-09-21",
+            "accessed": "2026-09-28"
+          }
+        }
+      ]
+    },
+    {
+      "id": "himachal-entry-toll-other-state-vehicles",
+      "kind": "tax",
+      "title": "Himachal entry toll for vehicles from other states",
+      "detail": "Charged at entry barriers under the yearly toll policy. Notified rates name passenger and goods vehicles only. The Chief Minister said two-wheelers stay exempt. The policy document was not opened.",
+      "applies_to": "Vehicles registered outside Himachal Pradesh",
+      "set_by": "Department of State Taxes and Excise, Government of Himachal Pradesh",
+      "official_url": "https://www.hptax.gov.in/public/setpdf/Toll%20Policy%202026_27.pdf",
+      "has_official_order": true,
+      "source": {
+        "url": "https://www.tribuneindia.com/news/himachal/himachal-toll-tax-rates-revised-heres-what-you-need-to-know/",
+        "title": "Himachal toll tax rates revised: Here's what you need to know",
+        "kind": "news",
+        "opened": true,
+        "source_date": "2026-04-02",
+        "accessed": "2026-09-28"
+      },
+      "history": [
+        {
+          "date": "2026-02-20",
+          "change": "Toll Policy 2026-27 announced with higher rates from 1 April 2026; receipt reported valid 24 hours across the state.",
+          "source": {
+            "url": "https://www.businesstoday.in/india/story/himachal-pradesh-revises-toll-tax-rates-heres-how-much-vehicle-entry-fee-youll-have-to-pay-from-april-1-517204-2026-02-20",
+            "title": "Himachal Pradesh revises toll tax rates. Here's how much vehicle entry fee you'll have to pay from April 1",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2026-02-20",
+            "accessed": "2026-09-28"
+          }
+        },
+        {
+          "date": "2026-03-26",
+          "change": "Chief Minister told the assembly the tax would be reviewed and that light vehicles and two-wheelers remain exempt.",
+          "source": {
+            "url": "https://www.tribuneindia.com/news/himachal/himachal-govt-signals-rethink-on-entry-tax/",
+            "title": "Himachal Govt signals rethink on entry tax",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2026-03-26",
+            "accessed": "2026-09-28"
+          }
+        },
+        {
+          "date": "2026-04-02",
+          "change": "Revised rates reported, with a lower rate for passenger vehicles from other states; two-wheelers not listed.",
+          "source": {
+            "url": "https://www.tribuneindia.com/news/himachal/himachal-toll-tax-rates-revised-heres-what-you-need-to-know/",
+            "title": "Himachal toll tax rates revised: Here's what you need to know",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2026-04-02",
+            "accessed": "2026-09-28"
+          }
+        }
+      ]
+    }
+  ],
+  "season": {
+    "note": "No road on this route closes for winter; the paragliding season at Billing peaks in September and October.",
+    "history": []
+  },
+  "authorities": [
+    {
+      "office": "District Magistrate, Kangra",
+      "announces": "Traffic restrictions",
+      "stretch": "Bir Chowk to the landing site",
+      "channel": "Orders, reported by news agencies",
+      "url": null,
+      "source": {
+        "url": "https://www.uniindia.com/north-india/admin-kangra-vehicles/187980",
+        "title": "Heavy Vehicles Restricted on Bir Chowk-Landing Site Road",
+        "kind": "news",
+        "opened": true,
+        "source_date": "2026-09-21",
+        "accessed": "2026-09-28"
+      }
+    },
+    {
+      "office": "Special Area Development Authority, Bir Billing",
+      "announces": "Green tax rates",
+      "stretch": "Bir and Billing",
+      "channel": "Reported by newspapers",
+      "url": null,
+      "source": {
+        "url": "https://www.tribuneindia.com/news/himachal/green-tax-in-bir-billing-revised-to-boost-tourism-infrastructure",
+        "title": "Green tax in Bir-Billing revised to boost tourism infrastructure",
+        "kind": "news",
+        "opened": true,
+        "source_date": "2025-02-02",
+        "accessed": "2026-09-28"
+      }
+    },
+    {
+      "office": "Himachal Pradesh Public Works Department",
+      "announces": "Roads open, blocked or restored",
+      "stretch": "Department roads across Himachal Pradesh",
+      "channel": "Road Status Information System website and mobile apps",
+      "url": "https://hppwd.in/",
+      "source": {
+        "url": "https://hppwd.in/",
+        "title": "Himachal Pradesh Public Works Department",
+        "kind": "official",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      }
+    },
+    {
+      "office": "Himachal Pradesh Public Works Department",
+      "announces": "Repairs to the Dharamshala to McLeod Ganj roads",
+      "stretch": "Dharamshala to McLeod Ganj",
+      "channel": "Reported by newspapers",
+      "url": "https://hppwd.in/",
+      "source": {
+        "url": "https://www.tribuneindia.com/news/himachal/roads-leading-to-mcleodganj-hill-in-dharamsala-sinking/",
+        "title": "Roads leading to McLeodganj hill in Dharamsala sinking",
+        "kind": "news",
+        "opened": true,
+        "source_date": "2025-02-10",
+        "accessed": "2026-09-28"
+      }
+    }
+  ],
+  "hazards": [
+    {
+      "title": "Khada Danda short cut to McLeod Ganj",
+      "detail": "A monsoon landslide near Jogiwara washed the road out in August 2025. Traffic took a 13 km detour; riders were told not to use the remaining strip.",
+      "months": [
+        7,
+        8,
+        9
+      ],
+      "source": {
+        "url": "https://www.tribuneindia.com/news/himachal/khada-danda-road-sinks-after-landslide",
+        "title": "Khada Danda road sinks after landslide",
+        "kind": "news",
+        "opened": true,
+        "source_date": "2025-08-14",
+        "accessed": "2026-09-28"
+      }
+    },
+    {
+      "title": "Sinking roads below McLeod Ganj",
+      "detail": "The main road sinks near the army cantonment and Forsythganj, and keeps sinking after repairs.",
+      "months": [],
+      "source": {
+        "url": "https://www.tribuneindia.com/news/himachal/roads-leading-to-mcleodganj-hill-in-dharamsala-sinking/",
+        "title": "Roads leading to McLeodganj hill in Dharamsala sinking",
+        "kind": "news",
+        "opened": true,
+        "source_date": "2025-02-10",
+        "accessed": "2026-09-28"
+      }
+    }
+  ],
+  "videos": [
+    {
+      "url": "https://www.youtube.com/watch?v=KY-c37JV7WE",
+      "title": "Day 10 | RIDE to Beautiful DHARAMSHALA | McLeod Ganj",
+      "channel": "Sriman Kotaru",
+      "stretch": "Ride into Dharamshala and McLeod Ganj",
+      "filmed": null,
+      "bike": null
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=farBebTdGrY",
+      "title": "Epic Motorcycle Journey: Jalandhar to McLeod Ganj ⛰️ Part 1 | Vlog October 2024.",
+      "channel": "s4shubi",
+      "stretch": "Approach to McLeod Ganj",
+      "filmed": "2024-10",
+      "bike": null
+    }
+  ],
+  "gaps": [
+    "Himachal entry toll: the two-wheeler exemption rests on a newspaper report of the Chief Minister's statement (26 March 2026). The official Toll Policy 2026-27 document on hptax.gov.in failed to open (certificate error), so it is not confirmed for motorcycles registered in other states.",
+    "Highway number for the Palampur to Baijnath stretch not confirmed; the encyclopedia page for NH 154 lists only its end points.",
+    "Bir Billing green tax: amount, collection point and start date not confirmed on any official page; amount left out.",
+    "No source found for traffic or parking rules in McLeod Ganj.",
+    "The Kangra district page on Bir Billing gives no altitude, season or rules.",
+    "No sourced hazards found for the Bir to Billing road or the Palampur to Baijnath stretch.",
+    "No rider video found for the Bir to Billing road itself. Titles and channels were read from the video pages; motorcycles are not confirmed."
+  ]
+}

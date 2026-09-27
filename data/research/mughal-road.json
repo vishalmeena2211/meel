@@ -1,0 +1,570 @@
+{
+  "slug": "mughal-road",
+  "header": {
+    "highway": {
+      "value": "NH 701A",
+      "source": {
+        "url": "https://www.greaterkashmir.com/kashmir/mughal-road-to-reopen-for-traffic-today",
+        "title": "Mughal Road to reopen for traffic today",
+        "kind": "news",
+        "opened": true,
+        "source_date": "2026-02-27",
+        "accessed": "2026-09-28"
+      }
+    },
+    "highest_point": {
+      "name": "Pir Ki Gali",
+      "altitude_m": 3500,
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/Mughal_Road",
+        "title": "Mughal Road",
+        "kind": "encyclopedia",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      }
+    },
+    "usual_days": {
+      "value": null,
+      "source": null
+    },
+    "usual_season": {
+      "value": "May to November",
+      "source": {
+        "url": "https://www.greaterkashmir.com/kashmir/seasonal-closure-of-mughal-road-revives-calls-for-all-weather-connectivity/",
+        "title": "Seasonal closure of Mughal Road revives calls for all-weather connectivity",
+        "kind": "news",
+        "opened": true,
+        "source_date": "2025-11-03",
+        "accessed": "2026-09-28"
+      }
+    },
+    "one_line": "Kashmir valley to Rajouri and Poonch over Pir Ki Gali on the Pir Panjal range"
+  },
+  "rules": [
+    {
+      "id": "mughal-road-time-window",
+      "kind": "timing",
+      "title": "Mughal Road: entry only between 07:00 and 18:00",
+      "detail": "Vehicles may start from Chandimarh near Bafliaz towards Shopian, or from Heerpora towards Poonch, only inside the window and after the road agency clears the road.",
+      "applies_to": "All vehicles",
+      "set_by": "District Magistrates of Shopian and Poonch; announced by Traffic Police Headquarters, Jammu and Kashmir",
+      "official_url": null,
+      "has_official_order": true,
+      "source": {
+        "url": "https://jkadworld.com/jk-news-today/jammu-srinagar-highway-traffic-advisory-28th-sep-2026nh-44-traffic-update-travel-guidelines/",
+        "title": "Traffic advisory for 28 September 2026, Traffic Police Headquarters Jammu and Kashmir",
+        "kind": "news",
+        "opened": true,
+        "source_date": "2026-09-27",
+        "accessed": "2026-09-28"
+      },
+      "history": [
+        {
+          "date": "2023-05-13",
+          "change": "Reopened one way, Poonch side towards Shopian, alternate days, 10:00 to 14:00, light vehicles only.",
+          "source": {
+            "url": "https://www.tribuneindia.com/news/j-k/mughal-road-reopens-to-one-way-traffic-after-four-months-507469",
+            "title": "Mughal Road reopens to one-way traffic after four months",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2023-05-13",
+            "accessed": "2026-09-28"
+          }
+        },
+        {
+          "date": "2024-04-08",
+          "change": "Poonch district order allowed one-way traffic from Bafliaz to Pir Ki Gali, with check posts at Behramgalla, Bafliaz and Poshana.",
+          "source": {
+            "url": "https://kashmirreader.com/2024/04/08/mughal-road-opens-today/",
+            "title": "Mughal Road opens today",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2024-04-08",
+            "accessed": "2026-09-28"
+          }
+        },
+        {
+          "date": "2025-04-15",
+          "change": "Reopened one way on alternate days, 10:00 to 14:00, light vehicles only.",
+          "source": {
+            "url": "https://kashmirahead.com/mughal-road-reopens-after-4-month-snow-closure/",
+            "title": "Mughal Road reopens after 4-month snow closure",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2025-04-17",
+            "accessed": "2026-09-28"
+          }
+        },
+        {
+          "date": "2025-04-22",
+          "change": "Two-way for light vehicles, 09:00 to 15:00, with Heerpora as the cut-off point.",
+          "source": {
+            "url": "https://thekashmirimages.com/2025/04/22/two-way-traffic-with-lmvs-allowed-on-mughal-road-from-9-am-to-3-pm-officials/",
+            "title": "Two-way traffic with LMVs allowed on Mughal Road from 9 AM to 3 PM: officials",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2025-04-22",
+            "accessed": "2026-09-28"
+          }
+        },
+        {
+          "date": "2026-02-27",
+          "change": "District order reopened the Shopian to Pir Ki Gali stretch, subject to weather and police advisories.",
+          "source": {
+            "url": "https://www.greaterkashmir.com/kashmir/mughal-road-to-reopen-for-traffic-today",
+            "title": "Mughal Road to reopen for traffic today",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2026-02-27",
+            "accessed": "2026-09-28"
+          }
+        },
+        {
+          "date": "2026-03-14",
+          "change": "Light vehicles only; movement from Heerpora towards Poonch restricted between 11:00 and 15:00.",
+          "source": {
+            "url": "https://www.therightnews.in/2026/03/14/lmvs-allowed-on-jammu-srinagar-highway-mughal-road-open-for-lmvs-with-time-restrictions-kishtwar-anantnag-road-closed/",
+            "title": "Traffic advisory of 14 March 2026, Traffic Police Headquarters Jammu and Kashmir",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2026-03-14",
+            "accessed": "2026-09-28"
+          }
+        },
+        {
+          "date": "2026-07-03",
+          "change": "District order behind the 07:00 to 18:00 window, which also admits trucks of up to ten tyres.",
+          "source": {
+            "url": "https://jkadworld.com/jk-news-today/jammu-srinagar-highway-traffic-advisory-28th-sep-2026nh-44-traffic-update-travel-guidelines/",
+            "title": "Traffic advisory for 28 September 2026, Traffic Police Headquarters Jammu and Kashmir",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2026-09-27",
+            "accessed": "2026-09-28"
+          }
+        }
+      ]
+    },
+    {
+      "id": "mughal-road-motorcycles-not-named",
+      "kind": "motorcycle-rule",
+      "title": "Mughal Road: orders do not name motorcycles",
+      "detail": "Reopening orders speak of light motor vehicles; none opened says whether two-wheelers are included or barred. Ask the traffic control unit before setting out early in the season.",
+      "applies_to": "Motorcycles",
+      "set_by": "District Magistrate, Shopian; Traffic Police Headquarters, Jammu and Kashmir",
+      "official_url": null,
+      "has_official_order": false,
+      "source": {
+        "url": "https://www.tribuneindia.com/news/j-k/mughal-road-reopens-to-one-way-traffic-after-four-months-507469",
+        "title": "Mughal Road reopens to one-way traffic after four months",
+        "kind": "news",
+        "opened": true,
+        "source_date": "2023-05-13",
+        "accessed": "2026-09-28"
+      },
+      "history": []
+    },
+    {
+      "id": "kashmir-tourist-spots-closed-after-april-2025",
+      "kind": "permit",
+      "title": "Kashmir: tourist spots shut in 2025, reopened in phases",
+      "detail": "After the attack near Pahalgam, 48 of 87 destinations were closed. Most have reopened by order of the Lieutenant Governor; check each place before riding to it.",
+      "applies_to": "All tourists",
+      "set_by": "Lieutenant Governor's administration, Jammu and Kashmir",
+      "official_url": null,
+      "has_official_order": true,
+      "source": {
+        "url": "https://www.outlooktraveller.com/News/jammu-and-kashmir-reopens-14-tourist-spots-after-2025-pahalgam-attack",
+        "title": "Jammu and Kashmir reopens 14 tourist spots after 2025 Pahalgam attack",
+        "kind": "news",
+        "opened": true,
+        "source_date": "2026-02-19",
+        "accessed": "2026-09-28"
+      },
+      "history": [
+        {
+          "date": "2025-04-29",
+          "change": "48 of 87 destinations reported closed, including Gurez for non-local tourists.",
+          "source": {
+            "url": "https://www.tribuneindia.com/news/j-k/pahalgam-attack-fallout-48-tourist-spots-closed-across-kashmir-for-security-reasons",
+            "title": "Pahalgam attack fallout: 48 tourist spots closed across Kashmir for security reasons",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2025-04-29",
+            "accessed": "2026-09-28"
+          }
+        },
+        {
+          "date": "2025-07",
+          "change": "Gurez reopened to local and non-local tourists.",
+          "source": {
+            "url": "https://www.tribuneindia.com/news/j-k/shut-since-pahalgam-gurez-valley-reopens/",
+            "title": "Shut since Pahalgam, Gurez valley reopens",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2025-07-25",
+            "accessed": "2026-09-28"
+          }
+        },
+        {
+          "date": "2026-02",
+          "change": "Fourteen more reopened, among them Thajwas Glacier, Pir Ki Gali and Dubjan.",
+          "source": {
+            "url": "https://www.outlooktraveller.com/News/jammu-and-kashmir-reopens-14-tourist-spots-after-2025-pahalgam-attack",
+            "title": "Jammu and Kashmir reopens 14 tourist spots after 2025 Pahalgam attack",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2026-02-19",
+            "accessed": "2026-09-28"
+          }
+        },
+        {
+          "date": "2026-04-08",
+          "change": "Government said all remaining closed destinations were expected to reopen by May 2026.",
+          "source": {
+            "url": "https://www.outlooktraveller.com/News/kashmirs-closed-tourist-destinations-set-to-reopen-by-may-after-2025-pahalgam-attack",
+            "title": "J&K to reopen all tourist destinations closed after Pahalgam attack by May",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2026-04-08",
+            "accessed": "2026-09-28"
+          }
+        }
+      ]
+    }
+  ],
+  "season": {
+    "note": "The road used to shut from December or January until April or May; in the winter of 2025 to 2026 it was reopened after each snowfall, so closing dates can fall in the next calendar year.",
+    "history": [
+      {
+        "year": 2026,
+        "connected": "2026-02-27",
+        "open_to_motorcycles": null,
+        "closed": null,
+        "note": "Shut for about a week in early January and again in late February, then reopened by district order on 27 February for light vehicles. Shut again 16 to 19 March at least. Motorcycles are not named. Open on 27 September 2026.",
+        "sources": [
+          {
+            "url": "https://www.greaterkashmir.com/kashmir/mughal-road-to-reopen-for-traffic-today",
+            "title": "Mughal Road to reopen for traffic today",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2026-02-27",
+            "accessed": "2026-09-28"
+          },
+          {
+            "url": "https://www.dailyexcelsior.com/mughal-road-reopens-for-traffic-lmvs-ply-smoothly/",
+            "title": "Mughal Road reopens for traffic, LMVs ply smoothly",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2026-02-27",
+            "accessed": "2026-09-28"
+          },
+          {
+            "url": "https://freepresskashmir.news/2026/01/11/mughal-road-reopens-after-week-long-closure/",
+            "title": "Mughal Road reopens after week-long closure",
+            "kind": "news",
+            "opened": false,
+            "source_date": "2026-01-11",
+            "accessed": "2026-09-28"
+          },
+          {
+            "url": "https://www.newsonair.gov.in/jk-historic-mughal-road-remained-closed-for-vehicular-traffic-for-4th-consecutive-day",
+            "title": "Historic Mughal Road remained closed for vehicular traffic for 4th consecutive day",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2026-03-19",
+            "accessed": "2026-09-28"
+          },
+          {
+            "url": "https://jkadworld.com/jk-news-today/jammu-srinagar-highway-traffic-advisory-28th-sep-2026nh-44-traffic-update-travel-guidelines/",
+            "title": "Traffic advisory for 28 September 2026, Traffic Police Headquarters Jammu and Kashmir",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2026-09-27",
+            "accessed": "2026-09-28"
+          }
+        ]
+      },
+      {
+        "year": 2025,
+        "connected": "2025-04-15",
+        "open_to_motorcycles": null,
+        "closed": null,
+        "note": "One-way for light vehicles from 15 April, two-way from about 22 April. Motorcycles are not named. Still open on 3 November 2025; no long winter closure was found after that.",
+        "sources": [
+          {
+            "url": "https://kashmirahead.com/mughal-road-reopens-after-4-month-snow-closure/",
+            "title": "Mughal Road reopens after 4-month snow closure",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2025-04-17",
+            "accessed": "2026-09-28"
+          },
+          {
+            "url": "https://thekashmirimages.com/2025/04/22/two-way-traffic-with-lmvs-allowed-on-mughal-road-from-9-am-to-3-pm-officials/",
+            "title": "Two-way traffic with LMVs allowed on Mughal Road from 9 AM to 3 PM: officials",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2025-04-22",
+            "accessed": "2026-09-28"
+          },
+          {
+            "url": "https://www.greaterkashmir.com/kashmir/seasonal-closure-of-mughal-road-revives-calls-for-all-weather-connectivity/",
+            "title": "Seasonal closure of Mughal Road revives calls for all-weather connectivity",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2025-11-03",
+            "accessed": "2026-09-28"
+          }
+        ]
+      },
+      {
+        "year": 2024,
+        "connected": "2024-04-08",
+        "open_to_motorcycles": null,
+        "closed": "2024-12",
+        "note": "One-way traffic from the Poonch side up to Pir Ki Gali from 8 April by district order. Vehicle classes and motorcycles are not named. Closed by snow in December 2024.",
+        "sources": [
+          {
+            "url": "https://kashmirreader.com/2024/04/08/mughal-road-opens-today/",
+            "title": "Mughal Road opens today",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2024-04-08",
+            "accessed": "2026-09-28"
+          },
+          {
+            "url": "https://kashmirahead.com/mughal-road-reopens-after-4-month-snow-closure/",
+            "title": "Mughal Road reopens after 4-month snow closure",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2025-04-17",
+            "accessed": "2026-09-28"
+          }
+        ]
+      },
+      {
+        "year": 2023,
+        "connected": "2023-05-13",
+        "open_to_motorcycles": null,
+        "closed": null,
+        "note": "Reopened one way for light vehicles after more than four months; it had been due in March. Motorcycles are not named. Closing date not found.",
+        "sources": [
+          {
+            "url": "https://www.tribuneindia.com/news/j-k/mughal-road-reopens-to-one-way-traffic-after-four-months-507469",
+            "title": "Mughal Road reopens to one-way traffic after four months",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2023-05-13",
+            "accessed": "2026-09-28"
+          }
+        ]
+      },
+      {
+        "year": 2022,
+        "connected": null,
+        "open_to_motorcycles": null,
+        "closed": "2023-01-05",
+        "note": "Opening date not found. Closed on 5 January 2023 after heavy snow at Pir Ki Gali.",
+        "sources": [
+          {
+            "url": "https://www.tribuneindia.com/news/j-k/mughal-road-reopens-to-one-way-traffic-after-four-months-507469",
+            "title": "Mughal Road reopens to one-way traffic after four months",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2023-05-13",
+            "accessed": "2026-09-28"
+          }
+        ]
+      }
+    ]
+  },
+  "authorities": [
+    {
+      "office": "District Magistrate, Shopian",
+      "announces": "Orders opening the road and setting the time window",
+      "stretch": "Shopian to Pir Ki Gali",
+      "channel": "Orders reported by newspapers and cited in the daily traffic advisory",
+      "url": null,
+      "source": {
+        "url": "https://www.greaterkashmir.com/kashmir/mughal-road-to-reopen-for-traffic-today",
+        "title": "Mughal Road to reopen for traffic today",
+        "kind": "news",
+        "opened": true,
+        "source_date": "2026-02-27",
+        "accessed": "2026-09-28"
+      }
+    },
+    {
+      "office": "District Magistrate, Poonch",
+      "announces": "Orders opening the Poonch side and posting check posts",
+      "stretch": "Bafliaz to Pir Ki Gali",
+      "channel": "Orders reported by newspapers",
+      "url": null,
+      "source": {
+        "url": "https://kashmirreader.com/2024/04/08/mughal-road-opens-today/",
+        "title": "Mughal Road opens today",
+        "kind": "news",
+        "opened": true,
+        "source_date": "2024-04-08",
+        "accessed": "2026-09-28"
+      }
+    },
+    {
+      "office": "Traffic Police Headquarters, Jammu and Kashmir",
+      "announces": "Daily traffic plan with vehicle classes and cut-off times",
+      "stretch": "Poonch to Shopian",
+      "channel": "Traffic Plan and Advisory section of its website and its X account; republished by news sites",
+      "url": "https://trafficpolice.jk.gov.in/",
+      "source": {
+        "url": "https://trafficpolice.jk.gov.in/",
+        "title": "Jammu Kashmir Traffic Police",
+        "kind": "official",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      }
+    },
+    {
+      "office": "Traffic police, rural Kashmir",
+      "announces": "Closures after snowfall and advice not to travel",
+      "stretch": "Shopian to Pir Ki Gali",
+      "channel": "Statements carried by the public broadcaster",
+      "url": null,
+      "source": {
+        "url": "https://www.newsonair.gov.in/jk-historic-mughal-road-remained-closed-for-vehicular-traffic-for-4th-consecutive-day",
+        "title": "Historic Mughal Road remained closed for vehicular traffic for 4th consecutive day",
+        "kind": "news",
+        "opened": true,
+        "source_date": "2026-03-19",
+        "accessed": "2026-09-28"
+      }
+    },
+    {
+      "office": "Border Roads Organisation (General Reserve Engineer Force)",
+      "announces": "Snow clearance and response to slides",
+      "stretch": "Shopian to Pir Ki Gali",
+      "channel": "Through the district order; no status page",
+      "url": "https://bro.gov.in/",
+      "source": {
+        "url": "https://kashmirobserver.net/2026/02/26/mughal-road-to-reopen-for-traffic-from-feb-27/",
+        "title": "Mughal Road to reopen for traffic from Feb 27",
+        "kind": "news",
+        "opened": true,
+        "source_date": "2026-02-26",
+        "accessed": "2026-09-28"
+      }
+    },
+    {
+      "office": "Poonch and Shopian district administrations with police",
+      "announces": "Joint snow clearance and reopening",
+      "stretch": "Bafliaz to Pir Ki Gali to Shopian",
+      "channel": "Statements to newspapers",
+      "url": "https://poonch.nic.in/tourist-place/mughal-road-pir-ki-gali/",
+      "source": {
+        "url": "https://kashmirahead.com/mughal-road-reopens-after-4-month-snow-closure/",
+        "title": "Mughal Road reopens after 4-month snow closure",
+        "kind": "news",
+        "opened": true,
+        "source_date": "2025-04-17",
+        "accessed": "2026-09-28"
+      }
+    }
+  ],
+  "hazards": [
+    {
+      "title": "Landslides, avalanches and falling stones",
+      "detail": "The February 2026 district order told the road builders to keep men and machines ready for slides, avalanches and falling stones.",
+      "months": [
+        2,
+        3,
+        4
+      ],
+      "source": {
+        "url": "https://kashmirobserver.net/2026/02/26/mughal-road-to-reopen-for-traffic-from-feb-27/",
+        "title": "Mughal Road to reopen for traffic from Feb 27",
+        "kind": "news",
+        "opened": true,
+        "source_date": "2026-02-26",
+        "accessed": "2026-09-28"
+      }
+    },
+    {
+      "title": "Snow at Pir Ki Gali shuts the road suddenly",
+      "detail": "Snow collects at several points on the Pir Panjal range and has closed the road for a week at a time in winter.",
+      "months": [
+        12,
+        1,
+        2
+      ],
+      "source": {
+        "url": "https://www.dailyexcelsior.com/mughal-road-reopens-for-traffic-lmvs-ply-smoothly/",
+        "title": "Mughal Road reopens for traffic, LMVs ply smoothly",
+        "kind": "news",
+        "opened": true,
+        "source_date": "2026-02-27",
+        "accessed": "2026-09-28"
+      }
+    },
+    {
+      "title": "Narrow sections just after reopening",
+      "detail": "In the first weeks the cleared road is narrow in places, which is why traffic runs one way.",
+      "months": [
+        4,
+        5
+      ],
+      "source": {
+        "url": "https://kashmirahead.com/mughal-road-reopens-after-4-month-snow-closure/",
+        "title": "Mughal Road reopens after 4-month snow closure",
+        "kind": "news",
+        "opened": true,
+        "source_date": "2025-04-17",
+        "accessed": "2026-09-28"
+      }
+    },
+    {
+      "title": "Prepaid mobile connections from other states do not work",
+      "detail": "A blogger reports that only postpaid connections from outside work in Jammu and Kashmir and in Ladakh; no official source was found.",
+      "months": [],
+      "source": {
+        "url": "https://discoverwithdheeraj.com/mobile-phone-connectivity-in-leh-ladakh/",
+        "title": "Mobile phone connectivity in Leh Ladakh",
+        "kind": "blog",
+        "opened": true,
+        "source_date": "2026-08-14",
+        "accessed": "2026-09-28"
+      }
+    }
+  ],
+  "videos": [
+    {
+      "url": "https://www.youtube.com/watch?v=W3V76wmKxJo",
+      "title": "JAMMU TO SRINAGAR VIA MUGHAL ROAD | PEER KI GALI | LADAKH 2022 SOLO RIDE | EP.03 |",
+      "channel": "Ghumakkad Rakesh",
+      "stretch": "Rajouri and Bafliaz over Pir Ki Gali to Srinagar",
+      "filmed": "2022",
+      "bike": null
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=zpd3kT9oyO8",
+      "title": "KASHMIR ME AISE HUI ENTRY VIA PEER KI GALI MUGHAL ROAD 😳 EP. 03 REACHED SRINAGAR | KASHMIR RIDE 3.0",
+      "channel": "Dream Chaser",
+      "stretch": "Over Pir Ki Gali to Srinagar",
+      "filmed": null,
+      "bike": null
+    }
+  ],
+  "gaps": [
+    "No order or advisory opened says whether motorcycles are allowed when the road reopens for light motor vehicles.",
+    "No source found for the usual number of days riders take.",
+    "Opening dates for 2021 and 2022 not found; closing dates for 2021, 2023 and 2025 not found.",
+    "The text of the District Magistrate's order of 3 July 2026 was not found; it is known only through the traffic advisory.",
+    "The daily advisory prints a different highway number from the district order; the district order's number, NH 701A, is used.",
+    "The Poonch district page gives an altitude for Pir Ki Gali that looks like a misprint; the encyclopedia figure of 3,500 metres is used.",
+    "No permit is known to be needed, but no official statement of that was found; identity checks at police posts were not sourced.",
+    "No hazard or rule information found for the Bafliaz to Rajouri stretch.",
+    "The January 2026 reopening comes from a page that could not be opened.",
+    "No rider video newer than 2022 was found; the second video gives no filming date and was published on 28 June 2022."
+  ]
+}

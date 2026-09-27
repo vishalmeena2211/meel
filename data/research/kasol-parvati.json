@@ -1,0 +1,293 @@
+{
+  "slug": "kasol-parvati",
+  "header": {
+    "highway": {
+      "value": null,
+      "source": null
+    },
+    "highest_point": {
+      "name": "Manikaran (altitude of the road end at Barshaini not found)",
+      "altitude_m": 1760,
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/Manikaran",
+        "title": "Manikaran",
+        "kind": "encyclopedia",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      }
+    },
+    "usual_days": {
+      "value": "3 to 5",
+      "source": {
+        "url": "https://travelcoffee.in/blog/kasol-travel-guide",
+        "title": "Kasol Travel Guide 2026: Best Time, Cost & Tips",
+        "kind": "operator",
+        "opened": true,
+        "source_date": "2026-06-08",
+        "accessed": "2026-09-28"
+      }
+    },
+    "usual_season": {
+      "value": "March to June and September to November",
+      "source": {
+        "url": "https://travelcoffee.in/blog/kasol-travel-guide",
+        "title": "Kasol Travel Guide 2026: Best Time, Cost & Tips",
+        "kind": "operator",
+        "opened": true,
+        "source_date": "2026-06-08",
+        "accessed": "2026-09-28"
+      }
+    },
+    "one_line": "Himachal Pradesh, up the Parvati river from Bhuntar through Kasol and Manikaran to the road end at Barshaini"
+  },
+  "rules": [
+    {
+      "id": "kasol-barrier-fee",
+      "kind": "fee",
+      "title": "Kasol barrier fee",
+      "detail": "Charged at the barrier before Kasol, two-wheelers included. Since May 2026 Himachal vehicles pay too; Kullu and Lahaul and Spiti vehicles stay exempt. No official page found.",
+      "applies_to": "All vehicles except those registered in Kullu and in Lahaul and Spiti",
+      "set_by": "Special Area Development Authority, Manikaran",
+      "official_url": null,
+      "has_official_order": false,
+      "source": {
+        "url": "https://www.tribuneindia.com/news/himachal/exemption-withdrawn-himachal-vehicles-will-now-have-to-pay-fee-at-kullus-kasol-barrier/",
+        "title": "Exemption withdrawn, Himachal vehicles will now have to pay fee at Kullu's Kasol barrier",
+        "kind": "news",
+        "opened": true,
+        "source_date": "2026-05-15",
+        "accessed": "2026-09-28"
+      },
+      "history": [
+        {
+          "date": "2021-07",
+          "change": "Only vehicles from other states paid; all Himachal vehicles were exempt.",
+          "source": {
+            "url": "https://www.tribuneindia.com/news/himachal/exemption-withdrawn-himachal-vehicles-will-now-have-to-pay-fee-at-kullus-kasol-barrier/",
+            "title": "Exemption withdrawn, Himachal vehicles will now have to pay fee at Kullu's Kasol barrier",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2026-05-15",
+            "accessed": "2026-09-28"
+          }
+        },
+        {
+          "date": "2026-05-13",
+          "change": "Exemption withdrawn for Himachal vehicles from outside Kullu and Lahaul and Spiti.",
+          "source": {
+            "url": "https://www.tribuneindia.com/news/himachal/exemption-withdrawn-himachal-vehicles-will-now-have-to-pay-fee-at-kullus-kasol-barrier/",
+            "title": "Exemption withdrawn, Himachal vehicles will now have to pay fee at Kullu's Kasol barrier",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2026-05-15",
+            "accessed": "2026-09-28"
+          }
+        }
+      ]
+    },
+    {
+      "id": "parvati-valley-heavy-vehicles-night-only",
+      "kind": "timing",
+      "title": "Parvati valley: large buses and heavy vehicles at night only",
+      "detail": "An operator guide reports large buses and heavy vehicles may use the valley road only from 20:00 to 08:00 in the tourist season. Motorcycles are unaffected. Order not found.",
+      "applies_to": "Large buses and heavy vehicles",
+      "set_by": "Kullu district administration, as reported",
+      "official_url": null,
+      "has_official_order": false,
+      "source": {
+        "url": "https://travelcoffee.in/blog/kasol-travel-guide",
+        "title": "Kasol Travel Guide 2026: Best Time, Cost & Tips",
+        "kind": "operator",
+        "opened": true,
+        "source_date": "2026-06-08",
+        "accessed": "2026-09-28"
+      },
+      "history": [
+        {
+          "date": "2026-04-14",
+          "change": "Restriction reported to start, running to the end of the tourist season.",
+          "source": {
+            "url": "https://travelcoffee.in/blog/kasol-travel-guide",
+            "title": "Kasol Travel Guide 2026: Best Time, Cost & Tips",
+            "kind": "operator",
+            "opened": true,
+            "source_date": "2026-06-08",
+            "accessed": "2026-09-28"
+          }
+        }
+      ]
+    },
+    {
+      "id": "parvati-valley-no-permit-indian-citizens",
+      "kind": "permit",
+      "title": "Parvati valley: no permit for Indian citizens",
+      "detail": "An operator guide says Indian visitors need no permit for Kasol, Manikaran or Barshaini. No official page found.",
+      "applies_to": "Indian citizens",
+      "set_by": "Not found",
+      "official_url": null,
+      "has_official_order": false,
+      "source": {
+        "url": "https://travelcoffee.in/blog/kasol-travel-guide",
+        "title": "Kasol Travel Guide 2026: Best Time, Cost & Tips",
+        "kind": "operator",
+        "opened": true,
+        "source_date": "2026-06-08",
+        "accessed": "2026-09-28"
+      },
+      "history": []
+    },
+    {
+      "id": "himachal-entry-toll-other-state-vehicles",
+      "kind": "tax",
+      "title": "Himachal entry toll for vehicles from other states",
+      "detail": "Charged at entry barriers under the yearly toll policy. Notified rates name passenger and goods vehicles only. The Chief Minister said two-wheelers stay exempt. The policy document was not opened.",
+      "applies_to": "Vehicles registered outside Himachal Pradesh",
+      "set_by": "Department of State Taxes and Excise, Government of Himachal Pradesh",
+      "official_url": "https://www.hptax.gov.in/public/setpdf/Toll%20Policy%202026_27.pdf",
+      "has_official_order": true,
+      "source": {
+        "url": "https://www.tribuneindia.com/news/himachal/himachal-toll-tax-rates-revised-heres-what-you-need-to-know/",
+        "title": "Himachal toll tax rates revised: Here's what you need to know",
+        "kind": "news",
+        "opened": true,
+        "source_date": "2026-04-02",
+        "accessed": "2026-09-28"
+      },
+      "history": [
+        {
+          "date": "2026-02-20",
+          "change": "Toll Policy 2026-27 announced with higher rates from 1 April 2026; receipt reported valid 24 hours across the state.",
+          "source": {
+            "url": "https://www.businesstoday.in/india/story/himachal-pradesh-revises-toll-tax-rates-heres-how-much-vehicle-entry-fee-youll-have-to-pay-from-april-1-517204-2026-02-20",
+            "title": "Himachal Pradesh revises toll tax rates. Here's how much vehicle entry fee you'll have to pay from April 1",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2026-02-20",
+            "accessed": "2026-09-28"
+          }
+        },
+        {
+          "date": "2026-03-26",
+          "change": "Chief Minister told the assembly the tax would be reviewed and that light vehicles and two-wheelers remain exempt.",
+          "source": {
+            "url": "https://www.tribuneindia.com/news/himachal/himachal-govt-signals-rethink-on-entry-tax/",
+            "title": "Himachal Govt signals rethink on entry tax",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2026-03-26",
+            "accessed": "2026-09-28"
+          }
+        },
+        {
+          "date": "2026-04-02",
+          "change": "Revised rates reported, with a lower rate for passenger vehicles from other states; two-wheelers not listed.",
+          "source": {
+            "url": "https://www.tribuneindia.com/news/himachal/himachal-toll-tax-rates-revised-heres-what-you-need-to-know/",
+            "title": "Himachal toll tax rates revised: Here's what you need to know",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2026-04-02",
+            "accessed": "2026-09-28"
+          }
+        }
+      ]
+    }
+  ],
+  "season": {
+    "note": "The valley road stays open all year; the monsoon brings landslides, most of all beyond Manikaran.",
+    "history": []
+  },
+  "authorities": [
+    {
+      "office": "Special Area Development Authority, Manikaran",
+      "announces": "Barrier fee and who is exempt",
+      "stretch": "Barrier before Kasol",
+      "channel": "Reported by newspapers",
+      "url": null,
+      "source": {
+        "url": "https://www.tribuneindia.com/news/himachal/exemption-withdrawn-himachal-vehicles-will-now-have-to-pay-fee-at-kullus-kasol-barrier/",
+        "title": "Exemption withdrawn, Himachal vehicles will now have to pay fee at Kullu's Kasol barrier",
+        "kind": "news",
+        "opened": true,
+        "source_date": "2026-05-15",
+        "accessed": "2026-09-28"
+      }
+    },
+    {
+      "office": "Himachal Pradesh Public Works Department",
+      "announces": "Roads open, blocked or restored",
+      "stretch": "Department roads across Himachal Pradesh",
+      "channel": "Road Status Information System website and mobile apps",
+      "url": "https://hppwd.in/",
+      "source": {
+        "url": "https://hppwd.in/",
+        "title": "Himachal Pradesh Public Works Department",
+        "kind": "official",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      }
+    }
+  ],
+  "hazards": [
+    {
+      "title": "Landslides between Manikaran and Barshaini",
+      "detail": "Slides and falling stones block the link road; one at Ghatigarh shut it in February 2026.",
+      "months": [
+        2,
+        7,
+        8,
+        9
+      ],
+      "source": {
+        "url": "https://travelcoffee.in/blog/kasol-travel-guide",
+        "title": "Kasol Travel Guide 2026: Best Time, Cost & Tips",
+        "kind": "operator",
+        "opened": true,
+        "source_date": "2026-06-08",
+        "accessed": "2026-09-28"
+      }
+    },
+    {
+      "title": "Poor surface from Bhuntar to Manikaran",
+      "detail": "Residents told a newspaper in 2026 that the valley road was in bad condition.",
+      "months": [],
+      "source": {
+        "url": "https://www.tribuneindia.com/news/himachal/exemption-withdrawn-himachal-vehicles-will-now-have-to-pay-fee-at-kullus-kasol-barrier/",
+        "title": "Exemption withdrawn, Himachal vehicles will now have to pay fee at Kullu's Kasol barrier",
+        "kind": "news",
+        "opened": true,
+        "source_date": "2026-05-15",
+        "accessed": "2026-09-28"
+      }
+    }
+  ],
+  "videos": [
+    {
+      "url": "https://www.youtube.com/watch?v=ABl3R5Ly1-k",
+      "title": "KASOL TO TOSH | BIKE TRIP | PARVATI VALLEY | TOSH VILLAGE | HIMACHAL PRADESH",
+      "channel": "Mitesh Solanki",
+      "stretch": "Kasol to Barshaini and Tosh",
+      "filmed": null,
+      "bike": null
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=2K-FYp2IAI8",
+      "title": "Tosh | Tosh Village | Parvati Valley - Manikaran | Kasol to Tosh Bike ride | Forever Exploring",
+      "channel": "Forever Exploring",
+      "stretch": "Kasol to Manikaran and Tosh",
+      "filmed": null,
+      "bike": null
+    }
+  ],
+  "gaps": [
+    "Himachal entry toll: the two-wheeler exemption rests on a newspaper report of the Chief Minister's statement (26 March 2026). The official Toll Policy 2026-27 document on hptax.gov.in failed to open (certificate error), so it is not confirmed for motorcycles registered in other states.",
+    "No road number found for the Bhuntar to Manikaran to Barshaini road.",
+    "Altitude of Barshaini, the highest point reached by road, was not found; Manikaran is used instead.",
+    "Kasol barrier fee: amounts are reported by a newspaper only, so they are left out.",
+    "The night-only rule for heavy vehicles comes from an operator guide; the district order was not found.",
+    "No official source found on which office announces road status for the Parvati valley.",
+    "Videos: titles and channels were read from the video pages; filming dates and motorcycles are not confirmed."
+  ]
+}

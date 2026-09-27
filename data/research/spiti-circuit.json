@@ -1,0 +1,852 @@
+{
+  "slug": "spiti-circuit",
+  "header": {
+    "highway": {
+      "value": "NH 5 (Shimla to Khab) and NH 505 (Khab to Gramphu)",
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/National_Highway_505_(India)",
+        "title": "National Highway 505 (India)",
+        "kind": "encyclopedia",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      }
+    },
+    "highest_point": {
+      "name": "Kunzum La",
+      "altitude_m": 4551,
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/Kunzum_Pass",
+        "title": "Kunzum Pass",
+        "kind": "encyclopedia",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      }
+    },
+    "usual_days": {
+      "value": "8 to 11",
+      "source": {
+        "url": "https://himtrails.in/himachal-trip-itinerary-planner/",
+        "title": "Himachal trip itinerary planner",
+        "kind": "operator",
+        "opened": true,
+        "source_date": "2026-04",
+        "accessed": "2026-09-28"
+      }
+    },
+    "usual_season": {
+      "value": "June to October for the full circuit over Kunzum La",
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/Kunzum_Pass",
+        "title": "Kunzum Pass",
+        "kind": "encyclopedia",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      }
+    },
+    "one_line": "Himachal Pradesh, up the Sutlej through Kinnaur, along the Spiti river and over Kunzum La to Manali"
+  },
+  "rules": [
+    {
+      "id": "kinnaur-spiti-no-permit-indian-citizens",
+      "kind": "permit",
+      "title": "Kinnaur and Spiti: no permit for Indian citizens",
+      "detail": "Indian citizens ride through with a photo identity card, shown at check posts. The district page asks every visitor to carry identity. No separate order was found.",
+      "applies_to": "Indian citizens",
+      "set_by": "Not stated on an official page; reported by a rider blog",
+      "official_url": "https://hpkinnaur.nic.in/tourism-guide/",
+      "has_official_order": false,
+      "source": {
+        "url": "https://discoverwithdheeraj.com/inner-line-permits-for-kinnaur-lahaul-spiti-valley/",
+        "title": "Inner Line Permits for Kinnaur, Lahaul and Spiti Valley",
+        "kind": "blog",
+        "opened": true,
+        "source_date": "2026-08-22",
+        "accessed": "2026-09-28"
+      },
+      "history": []
+    },
+    {
+      "id": "kinnaur-spiti-protected-area-permit-foreign-citizens",
+      "kind": "permit",
+      "title": "Protected area permit for foreign citizens, Pooh to Kaza",
+      "detail": "Covers Pooh block villages in Kinnaur and the Sumdo, Tabo and Kaza stretch. Kinnaur's page says groups of two, thirty days, Rs 200 each. Lahaul and Spiti's page says four.",
+      "applies_to": "Foreign citizens",
+      "set_by": "Ministry of Home Affairs; issued by District Magistrates and Sub-Divisional Magistrates",
+      "official_url": "https://hpkinnaur.nic.in/tourism-guide/",
+      "has_official_order": true,
+      "source": {
+        "url": "https://hpkinnaur.nic.in/tourism-guide/",
+        "title": "Tourist Guidelines, District Kinnaur",
+        "kind": "official",
+        "opened": true,
+        "source_date": "2026-09-05",
+        "accessed": "2026-09-28"
+      },
+      "history": [
+        {
+          "date": "2026-08-29",
+          "change": "Lahaul and Spiti district page still states a minimum of four foreign citizens sponsored by a travel agency.",
+          "source": {
+            "url": "https://hplahaulspiti.nic.in/foreigner-section/",
+            "title": "Foreigner Section, District Lahaul and Spiti",
+            "kind": "official",
+            "opened": true,
+            "source_date": "2026-08-29",
+            "accessed": "2026-09-28"
+          }
+        },
+        {
+          "date": "2026-09-05",
+          "change": "Kinnaur district page states groups of two or more, agency sponsorship and a thirty-day limit.",
+          "source": {
+            "url": "https://hpkinnaur.nic.in/tourism-guide/",
+            "title": "Tourist Guidelines, District Kinnaur",
+            "kind": "official",
+            "opened": true,
+            "source_date": "2026-09-05",
+            "accessed": "2026-09-28"
+          }
+        },
+        {
+          "date": "2026-08-22",
+          "change": "Rider blog reports offices issue fifteen days in practice and sometimes accept solo applicants at Reckong Peo, Pooh and Kaza.",
+          "source": {
+            "url": "https://discoverwithdheeraj.com/inner-line-permits-for-kinnaur-lahaul-spiti-valley/",
+            "title": "Inner Line Permits for Kinnaur, Lahaul and Spiti Valley",
+            "kind": "blog",
+            "opened": true,
+            "source_date": "2026-08-22",
+            "accessed": "2026-09-28"
+          }
+        }
+      ]
+    },
+    {
+      "id": "kinnaur-identity-card-and-out-of-bounds-roads",
+      "kind": "document",
+      "title": "Kinnaur: carry identity; border roads are out of bounds",
+      "detail": "Every visitor carries a valid identity card. Roads towards Shipki La and Kaurik are closed to visitors, and security installations may not be photographed.",
+      "applies_to": "All visitors",
+      "set_by": "District administration, Kinnaur",
+      "official_url": "https://hpkinnaur.nic.in/tourism-guide/",
+      "has_official_order": true,
+      "source": {
+        "url": "https://hpkinnaur.nic.in/tourism-guide/",
+        "title": "Tourist Guidelines, District Kinnaur",
+        "kind": "official",
+        "opened": true,
+        "source_date": "2026-09-05",
+        "accessed": "2026-09-28"
+      },
+      "history": []
+    },
+    {
+      "id": "lahaul-spiti-e-aagman-vehicle-registration",
+      "kind": "permit",
+      "title": "Lahaul and Spiti: online vehicle registration (e-Aagman)",
+      "detail": "The state portal says vehicles entering the district apply for an e-pass. It names no fee and does not mention two-wheelers. Enforcement in 2026 was not confirmed.",
+      "applies_to": "All vehicles entering Lahaul and Spiti",
+      "set_by": "Government of Himachal Pradesh, for Lahaul and Spiti district",
+      "official_url": "https://eaagman.hp.gov.in/",
+      "has_official_order": true,
+      "source": {
+        "url": "https://eaagman.hp.gov.in/",
+        "title": "e-Aagman",
+        "kind": "official",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      },
+      "history": [
+        {
+          "date": "2021-03-23",
+          "change": "Portal launched with number-plate cameras and barriers, to track tourist flow through the Atal Tunnel.",
+          "source": {
+            "url": "https://himachalwatcher.com/2021/03/23/%EF%BB%BFonline-services-for-lahaul-spiti-district-e-office-e-heli-service-e-aagman-and-e-lahaul/",
+            "title": "Lahaul-Spiti: Four Online Services Launched for Tribal District",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2021-03-23",
+            "accessed": "2026-09-28"
+          }
+        }
+      ]
+    },
+    {
+      "id": "rohtang-permit-not-needed-via-atal-tunnel",
+      "kind": "permit",
+      "title": "Rohtang permit applies to the pass, not the tunnel",
+      "detail": "For tourist vehicles going over the pass: 800 petrol and 400 diesel permits a day, vehicles under ten years old, valid one day. The official page does not mention two-wheelers.",
+      "applies_to": "Vehicles going over Rohtang Pass",
+      "set_by": "District Administration Kullu, under National Green Tribunal limits",
+      "official_url": "https://rohtangpermits.hp.gov.in/",
+      "has_official_order": true,
+      "source": {
+        "url": "https://rohtangpermits.hp.gov.in/Home/InformatoryScreen",
+        "title": "Rohtang Pass permit information, Rohtang Pass Permit portal",
+        "kind": "official",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      },
+      "history": [
+        {
+          "date": "2026",
+          "change": "Permit portal found at a new address; the older address no longer resolves.",
+          "source": {
+            "url": "https://rohtangpermits.hp.gov.in/",
+            "title": "Rohtang Permits portal, District Administration Kullu",
+            "kind": "official",
+            "opened": true,
+            "source_date": null,
+            "accessed": "2026-09-28"
+          }
+        },
+        {
+          "date": "2026-08-04",
+          "change": "Operator guide says the Atal Tunnel route needs no Rohtang permit, and notes official pages disagree on quota and closed day.",
+          "source": {
+            "url": "https://travelcoffee.in/blog/manali-permit-guide",
+            "title": "Do You Need a Manali Permit in 2026? Full Guide",
+            "kind": "operator",
+            "opened": true,
+            "source_date": "2026-08-04",
+            "accessed": "2026-09-28"
+          }
+        },
+        {
+          "date": "2026-09-28",
+          "change": "As read on this date: permits released at 10:00 and 16:00, no weekly closed day listed, three permits a week per vehicle.",
+          "source": {
+            "url": "https://rohtangpermits.hp.gov.in/Home/InformatoryScreen",
+            "title": "Rohtang Pass permit information, Rohtang Pass Permit portal",
+            "kind": "official",
+            "opened": true,
+            "source_date": null,
+            "accessed": "2026-09-28"
+          }
+        },
+        {
+          "date": "2026-09-28",
+          "change": "As read on this date: the special permit page gives a separate quota of 60 petrol and 40 diesel vehicles a day.",
+          "source": {
+            "url": "https://rohtangpermits.hp.gov.in/SpecialPermit/InformatoryScreen",
+            "title": "Special Rohtang Pass permit information, Rohtang Pass Permit portal",
+            "kind": "official",
+            "opened": true,
+            "source_date": null,
+            "accessed": "2026-09-28"
+          }
+        }
+      ]
+    },
+    {
+      "id": "manali-green-tax",
+      "kind": "tax",
+      "title": "Manali green tax on vehicles from other states",
+      "detail": "Collected at the barrier entering Manali; two-wheelers are charged and the receipt lasts seven days. Known from a newspaper report; no official page was found.",
+      "applies_to": "Vehicles registered outside Himachal Pradesh",
+      "set_by": "Tourism Development Council, Manali",
+      "official_url": null,
+      "has_official_order": false,
+      "source": {
+        "url": "https://www.tribuneindia.com/news/himachal/now-pay-green-tax-by-fastag-at-manali-368869",
+        "title": "Now pay green tax by FASTag at Manali",
+        "kind": "news",
+        "opened": true,
+        "source_date": "2022-02",
+        "accessed": "2026-09-28"
+      },
+      "history": [
+        {
+          "date": "2004-06-19",
+          "change": "Green tax first collected at Manali.",
+          "source": {
+            "url": "https://www.tribuneindia.com/news/himachal/now-pay-green-tax-by-fastag-at-manali-368869",
+            "title": "Now pay green tax by FASTag at Manali",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2022-02",
+            "accessed": "2026-09-28"
+          }
+        },
+        {
+          "date": "2022-02-10",
+          "change": "Collection moved to electronic tag lanes with automatic barriers.",
+          "source": {
+            "url": "https://www.tribuneindia.com/news/himachal/now-pay-green-tax-by-fastag-at-manali-368869",
+            "title": "Now pay green tax by FASTag at Manali",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2022-02",
+            "accessed": "2026-09-28"
+          }
+        }
+      ]
+    },
+    {
+      "id": "himachal-entry-toll-other-state-vehicles",
+      "kind": "tax",
+      "title": "Himachal entry toll for vehicles from other states",
+      "detail": "Charged at entry barriers under the yearly toll policy. Notified rates name passenger and goods vehicles only. The Chief Minister said two-wheelers stay exempt. The policy document was not opened.",
+      "applies_to": "Vehicles registered outside Himachal Pradesh",
+      "set_by": "Department of State Taxes and Excise, Government of Himachal Pradesh",
+      "official_url": "https://www.hptax.gov.in/public/setpdf/Toll%20Policy%202026_27.pdf",
+      "has_official_order": true,
+      "source": {
+        "url": "https://www.tribuneindia.com/news/himachal/himachal-toll-tax-rates-revised-heres-what-you-need-to-know/",
+        "title": "Himachal toll tax rates revised: Here's what you need to know",
+        "kind": "news",
+        "opened": true,
+        "source_date": "2026-04-02",
+        "accessed": "2026-09-28"
+      },
+      "history": [
+        {
+          "date": "2026-02-20",
+          "change": "Toll Policy 2026-27 announced with higher rates from 1 April 2026; receipt reported valid 24 hours across the state.",
+          "source": {
+            "url": "https://www.businesstoday.in/india/story/himachal-pradesh-revises-toll-tax-rates-heres-how-much-vehicle-entry-fee-youll-have-to-pay-from-april-1-517204-2026-02-20",
+            "title": "Himachal Pradesh revises toll tax rates. Here's how much vehicle entry fee you'll have to pay from April 1",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2026-02-20",
+            "accessed": "2026-09-28"
+          }
+        },
+        {
+          "date": "2026-03-26",
+          "change": "Chief Minister told the assembly the tax would be reviewed and that light vehicles and two-wheelers remain exempt.",
+          "source": {
+            "url": "https://www.tribuneindia.com/news/himachal/himachal-govt-signals-rethink-on-entry-tax/",
+            "title": "Himachal Govt signals rethink on entry tax",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2026-03-26",
+            "accessed": "2026-09-28"
+          }
+        },
+        {
+          "date": "2026-04-02",
+          "change": "Revised rates reported, with a lower rate for passenger vehicles from other states; two-wheelers not listed.",
+          "source": {
+            "url": "https://www.tribuneindia.com/news/himachal/himachal-toll-tax-rates-revised-heres-what-you-need-to-know/",
+            "title": "Himachal toll tax rates revised: Here's what you need to know",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2026-04-02",
+            "accessed": "2026-09-28"
+          }
+        }
+      ]
+    },
+    {
+      "id": "spiti-development-authority-barrier-fee",
+      "kind": "fee",
+      "title": "Spiti entry barrier fee",
+      "detail": "An operator guide reports a local development fee taken at a barrier, at Sumdo or at Losar by season, including from two-wheelers. No official page found.",
+      "applies_to": "Vehicles entering Spiti",
+      "set_by": "Spiti Area Development Authority, as reported",
+      "official_url": null,
+      "has_official_order": false,
+      "source": {
+        "url": "https://travelcoffee.in/blog/spiti-valley-permit-guide",
+        "title": "Spiti Valley Permit Guide 2026: ILP, Rohtang Permit & SADA Fee",
+        "kind": "operator",
+        "opened": true,
+        "source_date": "2026-04-21",
+        "accessed": "2026-09-28"
+      },
+      "history": []
+    },
+    {
+      "id": "kunzum-la-winter-closure-order",
+      "kind": "timing",
+      "title": "Kunzum La: closed each winter by district order",
+      "detail": "The Deputy Commissioner closes Gramphu to Losar under the Disaster Management Act until the next summer. Before closure, travel windows and four-wheel-drive limits are set.",
+      "applies_to": "All vehicles",
+      "set_by": "Deputy Commissioner, Lahaul and Spiti, as chair of the District Disaster Management Authority",
+      "official_url": "https://hplahaulspiti.nic.in/road-status/",
+      "has_official_order": true,
+      "source": {
+        "url": "https://www.tribuneindia.com/news/himachal/gramphu-kaza-highway-officially-closed-for-traffic-via-kunzum-pass/",
+        "title": "Gramphu-Kaza highway officially closed for traffic via Kunzum pass",
+        "kind": "news",
+        "opened": true,
+        "source_date": "2024-11-23",
+        "accessed": "2026-09-28"
+      },
+      "history": [
+        {
+          "date": "2024-11-19",
+          "change": "Koksar to Losar limited to 11:00 to 13:00 for emergency and local four-wheel-drive vehicles; tourist vehicles barred.",
+          "source": {
+            "url": "https://www.tribuneindia.com/news/himachal/traffic-movement-regulated-on-lahaul-spiti-passes-due-to-snowfall/",
+            "title": "Traffic movement regulated on Lahaul-Spiti passes due to snowfall",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2024-11-19",
+            "accessed": "2026-09-28"
+          }
+        },
+        {
+          "date": "2024-11-23",
+          "change": "Gramphu to Losar formally closed under Section 51 of the Disaster Management Act 2005.",
+          "source": {
+            "url": "https://www.tribuneindia.com/news/himachal/gramphu-kaza-highway-officially-closed-for-traffic-via-kunzum-pass/",
+            "title": "Gramphu-Kaza highway officially closed for traffic via Kunzum pass",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2024-11-23",
+            "accessed": "2026-09-28"
+          }
+        }
+      ]
+    },
+    {
+      "id": "kunzum-la-opens-to-four-wheel-drive-first",
+      "kind": "motorcycle-rule",
+      "title": "Kunzum La opens to four-wheel-drive vehicles first",
+      "detail": "Each spring the road is restored for four-wheel-drive vehicles, and general traffic is allowed later. Reports do not say when motorcycles may cross. No written order found.",
+      "applies_to": "Motorcycles and other two-wheel-drive vehicles",
+      "set_by": "District administration, Lahaul and Spiti, on the Border Roads Organisation's advice",
+      "official_url": null,
+      "has_official_order": false,
+      "source": {
+        "url": "https://www.tribuneindia.com/news/himachal/closed-for-7-months-due-to-snow-gramphu-losar-road-restored/",
+        "title": "Closed for 7 months due to snow, Gramphu-Losar road restored",
+        "kind": "news",
+        "opened": true,
+        "source_date": "2025-05-24",
+        "accessed": "2026-09-28"
+      },
+      "history": [
+        {
+          "date": "2023-05-30",
+          "change": "Road restored; four-wheel-drive vehicles first, civilian traffic awaiting inspection.",
+          "source": {
+            "url": "https://www.tribuneindia.com/news/himachal/gramphu-kaza-road-restored-after-over-7-months-512793",
+            "title": "Gramphu-Kaza road restored after over 7 months",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2023-05-31",
+            "accessed": "2026-09-28"
+          }
+        },
+        {
+          "date": "2024-06-18",
+          "change": "District administration allowed all kinds of vehicles.",
+          "source": {
+            "url": "https://www.tribuneindia.com/news/himachal/cleared-of-snow-gramphu-kaza-road-opened-for-two-way-traffic-632633",
+            "title": "Cleared of snow, Gramphu-Kaza road opened for two-way traffic",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2024-06-21",
+            "accessed": "2026-09-28"
+          }
+        },
+        {
+          "date": "2025-05-24",
+          "change": "Road restored; only four-wheel-drive vehicles let through, civil traffic not yet formally allowed.",
+          "source": {
+            "url": "https://www.tribuneindia.com/news/himachal/closed-for-7-months-due-to-snow-gramphu-losar-road-restored/",
+            "title": "Closed for 7 months due to snow, Gramphu-Losar road restored",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2025-05-24",
+            "accessed": "2026-09-28"
+          }
+        },
+        {
+          "date": "2026-05",
+          "change": "Light four-wheel-drive vehicles permitted; heavy vehicles still barred.",
+          "source": {
+            "url": "https://www.tribuneindia.com/news/himachal/himachal-kunzum-pass-route-to-spiti-opens-after-6-month-closure/",
+            "title": "Himachal: Kunzum Pass route to Spiti opens after 6-month closure",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2026-05-20",
+            "accessed": "2026-09-28"
+          }
+        }
+      ]
+    }
+  ],
+  "season": {
+    "note": "Kunzum La is cleared by the Border Roads Organisation in late May or June and shut by district order in November; the Shimla side through Kinnaur stays open most of the year.",
+    "history": [
+      {
+        "year": 2021,
+        "connected": "2021-05",
+        "open_to_motorcycles": null,
+        "closed": "2021-11",
+        "note": "Blog table gives late May and November. In March 2021 the Border Roads Organisation had aimed for 15 April.",
+        "sources": [
+          {
+            "url": "https://discoverwithdheeraj.com/spiti-manali-kaza-road-status/",
+            "title": "Manali Kaza Road Status",
+            "kind": "blog",
+            "opened": true,
+            "source_date": "2026-09-11",
+            "accessed": "2026-09-28"
+          },
+          {
+            "url": "https://www.tribuneindia.com/news/himachal/strategic-spiti-road-to-reopen-2-months-earlier-228678/amp",
+            "title": "Strategic Spiti road to reopen 2 months earlier",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2021-03-22",
+            "accessed": "2026-09-28"
+          }
+        ]
+      },
+      {
+        "year": 2022,
+        "connected": "2022-05-03",
+        "open_to_motorcycles": null,
+        "closed": "2022-10",
+        "note": "Opening date is from a blog table only. A newspaper puts the closure in mid-October 2022; the blog says November.",
+        "sources": [
+          {
+            "url": "https://discoverwithdheeraj.com/spiti-manali-kaza-road-status/",
+            "title": "Manali Kaza Road Status",
+            "kind": "blog",
+            "opened": true,
+            "source_date": "2026-09-11",
+            "accessed": "2026-09-28"
+          },
+          {
+            "url": "https://www.tribuneindia.com/news/himachal/gramphu-kaza-road-restored-after-over-7-months-512793",
+            "title": "Gramphu-Kaza road restored after over 7 months",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2023-05-31",
+            "accessed": "2026-09-28"
+          }
+        ]
+      },
+      {
+        "year": 2023,
+        "connected": "2023-05-30",
+        "open_to_motorcycles": null,
+        "closed": "2023-10",
+        "note": "Restored for four-wheel-drive vehicles first. Closing month is from a blog table.",
+        "sources": [
+          {
+            "url": "https://www.tribuneindia.com/news/himachal/gramphu-kaza-road-restored-after-over-7-months-512793",
+            "title": "Gramphu-Kaza road restored after over 7 months",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2023-05-31",
+            "accessed": "2026-09-28"
+          },
+          {
+            "url": "https://discoverwithdheeraj.com/spiti-manali-kaza-road-status/",
+            "title": "Manali Kaza Road Status",
+            "kind": "blog",
+            "opened": true,
+            "source_date": "2026-09-11",
+            "accessed": "2026-09-28"
+          }
+        ]
+      },
+      {
+        "year": 2024,
+        "connected": null,
+        "open_to_motorcycles": "2024-06-18",
+        "closed": "2024-11-23",
+        "note": "All kinds of vehicles allowed from 18 June. Travel windows set on 19 November, formal closure on 23 November.",
+        "sources": [
+          {
+            "url": "https://www.tribuneindia.com/news/himachal/cleared-of-snow-gramphu-kaza-road-opened-for-two-way-traffic-632633",
+            "title": "Cleared of snow, Gramphu-Kaza road opened for two-way traffic",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2024-06-21",
+            "accessed": "2026-09-28"
+          },
+          {
+            "url": "https://www.tribuneindia.com/news/himachal/traffic-movement-regulated-on-lahaul-spiti-passes-due-to-snowfall/",
+            "title": "Traffic movement regulated on Lahaul-Spiti passes due to snowfall",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2024-11-19",
+            "accessed": "2026-09-28"
+          },
+          {
+            "url": "https://www.tribuneindia.com/news/himachal/gramphu-kaza-highway-officially-closed-for-traffic-via-kunzum-pass/",
+            "title": "Gramphu-Kaza highway officially closed for traffic via Kunzum pass",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2024-11-23",
+            "accessed": "2026-09-28"
+          }
+        ]
+      },
+      {
+        "year": 2025,
+        "connected": "2025-05-24",
+        "open_to_motorcycles": null,
+        "closed": "2025-11",
+        "note": "Four-wheel-drive only at first. Shut by snow 6 to 14 October, then reopened for four-wheel-drive. Closed in the first week of November.",
+        "sources": [
+          {
+            "url": "https://www.tribuneindia.com/news/himachal/closed-for-7-months-due-to-snow-gramphu-losar-road-restored/",
+            "title": "Closed for 7 months due to snow, Gramphu-Losar road restored",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2025-05-24",
+            "accessed": "2026-09-28"
+          },
+          {
+            "url": "https://www.tribuneindia.com/news/himachal/kunzum-pass-thrown-open-for-4x4-vehicles-residents-relieved/",
+            "title": "Kunzum Pass thrown open for 4x4 vehicles; residents relieved",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2025-10-14",
+            "accessed": "2026-09-28"
+          },
+          {
+            "url": "https://www.tribuneindia.com/news/himachal/himachal-kunzum-pass-route-to-spiti-opens-after-6-month-closure/",
+            "title": "Himachal: Kunzum Pass route to Spiti opens after 6-month closure",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2026-05-20",
+            "accessed": "2026-09-28"
+          }
+        ]
+      },
+      {
+        "year": 2026,
+        "connected": "2026-05",
+        "open_to_motorcycles": null,
+        "closed": null,
+        "note": "Light four-wheel-drive vehicles allowed by 20 May. An unopened blog page gives 12 May. Season still running on 28 September 2026.",
+        "sources": [
+          {
+            "url": "https://www.tribuneindia.com/news/himachal/himachal-kunzum-pass-route-to-spiti-opens-after-6-month-closure/",
+            "title": "Himachal: Kunzum Pass route to Spiti opens after 6-month closure",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2026-05-20",
+            "accessed": "2026-09-28"
+          },
+          {
+            "url": "https://highdairies.com/kunzum-pass-open-now/",
+            "title": "Kunzum Pass open now",
+            "kind": "blog",
+            "opened": false,
+            "source_date": null,
+            "accessed": "2026-09-28"
+          }
+        ]
+      }
+    ]
+  },
+  "authorities": [
+    {
+      "office": "Border Roads Organisation",
+      "announces": "Snow clearance and that the road is restored",
+      "stretch": "Sumdo to Kaza to Gramphu, including Kunzum La",
+      "channel": "Statements to newspapers; its own social media account",
+      "url": "https://bro.gov.in/",
+      "source": {
+        "url": "https://www.tribuneindia.com/news/himachal/closed-for-7-months-due-to-snow-gramphu-losar-road-restored/",
+        "title": "Closed for 7 months due to snow, Gramphu-Losar road restored",
+        "kind": "news",
+        "opened": true,
+        "source_date": "2025-05-24",
+        "accessed": "2026-09-28"
+      }
+    },
+    {
+      "office": "Deputy Commissioner, Lahaul and Spiti (District Disaster Management Authority)",
+      "announces": "Decides who may travel, travel windows and the winter closure",
+      "stretch": "Gramphu to Losar and Koksar to Losar",
+      "channel": "Orders, reported by newspapers",
+      "url": "https://hplahaulspiti.nic.in/road-status/",
+      "source": {
+        "url": "https://www.tribuneindia.com/news/himachal/gramphu-kaza-highway-officially-closed-for-traffic-via-kunzum-pass/",
+        "title": "Gramphu-Kaza highway officially closed for traffic via Kunzum pass",
+        "kind": "news",
+        "opened": true,
+        "source_date": "2024-11-23",
+        "accessed": "2026-09-28"
+      }
+    },
+    {
+      "office": "District administration, Lahaul and Spiti",
+      "announces": "Open or closed status of main roads, without dates per road",
+      "stretch": "Manali to Keylong, Keylong to Kaza",
+      "channel": "District website road status page",
+      "url": "https://hplahaulspiti.nic.in/road-status/",
+      "source": {
+        "url": "https://hplahaulspiti.nic.in/road-status/",
+        "title": "Road Status, District Lahaul and Spiti",
+        "kind": "official",
+        "opened": true,
+        "source_date": "2026-08-29",
+        "accessed": "2026-09-28"
+      }
+    },
+    {
+      "office": "Lahaul and Spiti Police",
+      "announces": "Road and weather advisories",
+      "stretch": "Lahaul and Spiti district",
+      "channel": "Facebook page",
+      "url": "https://www.facebook.com/splahhp/",
+      "source": {
+        "url": "https://www.facebook.com/splahhp/",
+        "title": "Lahaul and Spiti Police on Facebook",
+        "kind": "official",
+        "opened": false,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      }
+    },
+    {
+      "office": "Himachal Pradesh Public Works Department, National Highway wing",
+      "announces": "Clears landslides and restores traffic",
+      "stretch": "NH 5 through Kinnaur",
+      "channel": "Statements to newspapers",
+      "url": "https://hppwd.in/",
+      "source": {
+        "url": "https://www.tribuneindia.com/news/himachal/3rd-landslide-on-nh-5-at-kinnaur-in-a-month-debris-cleared-traffic-restored-551399",
+        "title": "3rd landslide on NH-5 at Kinnaur in a month; debris cleared, traffic restored",
+        "kind": "news",
+        "opened": true,
+        "source_date": "2023-10-07",
+        "accessed": "2026-09-28"
+      }
+    },
+    {
+      "office": "Himachal Pradesh Public Works Department",
+      "announces": "Roads open, blocked or restored",
+      "stretch": "Department roads across Himachal Pradesh",
+      "channel": "Road Status Information System website and mobile apps",
+      "url": "https://hppwd.in/",
+      "source": {
+        "url": "https://hppwd.in/",
+        "title": "Himachal Pradesh Public Works Department",
+        "kind": "official",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      }
+    }
+  ],
+  "hazards": [
+    {
+      "title": "Nigulsari and Chaura landslide zone on NH 5",
+      "detail": "Repeated slides cut Kinnaur and Spiti off from Shimla, once for about ten days. Debris keeps falling while crews work.",
+      "months": [
+        7,
+        8,
+        9,
+        10
+      ],
+      "source": {
+        "url": "https://www.tribuneindia.com/news/himachal/3rd-landslide-on-nh-5-at-kinnaur-in-a-month-debris-cleared-traffic-restored-551399",
+        "title": "3rd landslide on NH-5 at Kinnaur in a month; debris cleared, traffic restored",
+        "kind": "news",
+        "opened": true,
+        "source_date": "2023-10-07",
+        "accessed": "2026-09-28"
+      }
+    },
+    {
+      "title": "Highway collapse at Nigulsari, autumn 2024",
+      "detail": "A landslip broke the highway and stranded tourist vehicles and apple trucks on both sides.",
+      "months": [
+        9,
+        10
+      ],
+      "source": {
+        "url": "https://www.tribuneindia.com/news/himachal/kinnaur-cut-off-after-landslip-at-negulsari",
+        "title": "Kinnaur cut off after landslip at Negulsari",
+        "kind": "news",
+        "opened": true,
+        "source_date": "2024-10-02",
+        "accessed": "2026-09-28"
+      }
+    },
+    {
+      "title": "Water crossings between Batal and Gramphu",
+      "detail": "Streams run highest in the afternoon during the monsoon. Cross early in the day.",
+      "months": [
+        7,
+        8,
+        9
+      ],
+      "source": {
+        "url": "https://discoverwithdheeraj.com/spiti-manali-kaza-road-status/",
+        "title": "Manali Kaza Road Status",
+        "kind": "blog",
+        "opened": true,
+        "source_date": "2026-09-11",
+        "accessed": "2026-09-28"
+      }
+    },
+    {
+      "title": "No fuel between Kaza and Manali",
+      "detail": "A rider blog reports no petrol pump on the whole stretch over Kunzum La.",
+      "months": [],
+      "source": {
+        "url": "https://discoverwithdheeraj.com/spiti-manali-kaza-road-status/",
+        "title": "Manali Kaza Road Status",
+        "kind": "blog",
+        "opened": true,
+        "source_date": "2026-09-11",
+        "accessed": "2026-09-28"
+      }
+    },
+    {
+      "title": "Snow and ice on Kunzum La late in the season",
+      "detail": "October snowfall shut the pass for a week in 2025. Mornings and evenings are slippery before the winter closure.",
+      "months": [
+        10,
+        11
+      ],
+      "source": {
+        "url": "https://www.tribuneindia.com/news/himachal/kunzum-pass-thrown-open-for-4x4-vehicles-residents-relieved/",
+        "title": "Kunzum Pass thrown open for 4x4 vehicles; residents relieved",
+        "kind": "news",
+        "opened": true,
+        "source_date": "2025-10-14",
+        "accessed": "2026-09-28"
+      }
+    }
+  ],
+  "videos": [
+    {
+      "url": "https://www.youtube.com/watch?v=bkEoDkNhqbA",
+      "title": "Motorcycle Journey Through SPITI VALLEY | Riding the Deadliest Roads of the Spiti Circuit",
+      "channel": "Ghumnewala",
+      "stretch": "Spiti circuit",
+      "filmed": null,
+      "bike": null
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=09BgvTQ8U4s",
+      "title": "Kaza to Manali via Kunzum Pass | Spiti Valley | Part- 6 | Final Episode | Spiti Circuit 2022",
+      "channel": "Harsh Koli",
+      "stretch": "Kaza to Manali over Kunzum La",
+      "filmed": "2022",
+      "bike": null
+    }
+  ],
+  "gaps": [
+    "Himachal entry toll: the two-wheeler exemption rests on a newspaper report of the Chief Minister's statement (26 March 2026). The official Toll Policy 2026-27 document on hptax.gov.in failed to open (certificate error), so it is not confirmed for motorcycles registered in other states.",
+    "No source says on which date motorcycles were first allowed over Kunzum La in 2023, 2025 or 2026; reports name only four-wheel-drive vehicles.",
+    "Kunzum La 2021, 2022 and 2023 dates rest partly on one blog table; no newspaper or official page was found for the 2021 opening, 2021 closing or 2023 closing.",
+    "The two district pages disagree on the minimum group size for foreign citizens (two in Kinnaur, four in Lahaul and Spiti); no dated order was found for either.",
+    "Whether e-Aagman registration is enforced for motorcycles in 2026 was not confirmed.",
+    "Spiti barrier fee: no official page found; amount left out.",
+    "Manali green tax: amount for two-wheelers is reported by a newspaper only, so it is left out.",
+    "Rohtang permit: the official pages list fees for cars, jeeps and buses only; whether two-wheelers need a permit or pay is not stated. That the Atal Tunnel route needs no permit comes from an operator guide.",
+    "Videos: titles and channels were read from the video pages; filming dates and motorcycles are not confirmed unless the title states them."
+  ]
+}

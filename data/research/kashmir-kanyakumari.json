@@ -1,0 +1,439 @@
+{
+  "slug": "kashmir-kanyakumari",
+  "header": {
+    "highway": {
+      "value": "NH 44, from Srinagar to Kanyakumari",
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/National_Highway_44_(India)",
+        "title": "National Highway 44 (India)",
+        "kind": "encyclopedia",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      }
+    },
+    "highest_point": {
+      "name": "Banihal to Qazigund road tunnel",
+      "altitude_m": 1790,
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/Banihal_Qazigund_Road_Tunnel",
+        "title": "Banihal Qazigund Road Tunnel",
+        "kind": "encyclopedia",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      }
+    },
+    "usual_days": {
+      "value": "8 at a hard pace, by one rider's account",
+      "source": {
+        "url": "https://www.tripoto.com/trip/kashmir-to-kanyakumari-in-8-days-on-motorcycle-5c655e422af37",
+        "title": "Kashmir to kanyakumari in 8 days on motorcycle",
+        "kind": "blog",
+        "opened": true,
+        "source_date": "2018-07-07",
+        "accessed": "2026-09-28"
+      }
+    },
+    "usual_season": null,
+    "one_line": "The length of India on one highway, 4,113 kilometres from the Kashmir valley to the southern tip"
+  },
+  "rules": [
+    {
+      "id": "jammu-srinagar-daily-traffic-plan",
+      "kind": "timing",
+      "title": "Jammu to Srinagar: daily traffic plan",
+      "detail": "Traffic police publish each evening which vehicles may move next day and in which direction. Light vehicles are told to travel by day.",
+      "applies_to": "All vehicles",
+      "set_by": "Traffic Police Headquarters, Jammu and Kashmir",
+      "official_url": null,
+      "has_official_order": true,
+      "source": {
+        "url": "https://jkadworld.com/jk-news-today/jammu-srinagar-highway-traffic-advisory-26th-sep-2026nh-44-traffic-update-travel-guidelines/",
+        "title": "Jammu-Srinagar Highway Traffic Advisory 26th Sep 2026,NH-44 Traffic Update &…",
+        "kind": "news",
+        "opened": true,
+        "source_date": "2026-09-25",
+        "accessed": "2026-09-28"
+      },
+      "history": [
+        {
+          "date": "2026-02-01",
+          "change": "Heavy vehicles put on alternate days after snow and a sunken stretch; light vehicles by day only.",
+          "source": {
+            "url": "https://thekashmirimages.com/2026/02/01/traffic-curbs-imposed-on-jammu-srinagar-highway-hmvs-restricted-amid-snow-and-road-damage/",
+            "title": "Traffic curbs imposed on Jammu Srinagar highway, HMVs restricted amid…",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2026-02-01",
+            "accessed": "2026-09-28"
+          }
+        },
+        {
+          "date": "2026-09-25",
+          "change": "Light vehicles allowed both ways; night travel advised against; no limit on two-wheelers named.",
+          "source": {
+            "url": "https://jkadworld.com/jk-news-today/jammu-srinagar-highway-traffic-advisory-26th-sep-2026nh-44-traffic-update-travel-guidelines/",
+            "title": "Jammu-Srinagar Highway Traffic Advisory 26th Sep 2026,NH-44 Traffic Update &…",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2026-09-25",
+            "accessed": "2026-09-28"
+          }
+        }
+      ]
+    },
+    {
+      "id": "hyderabad-outer-ring-road-no-two-wheelers",
+      "kind": "motorcycle-rule",
+      "title": "Hyderabad Outer Ring Road: no two-wheelers",
+      "detail": "Motorcycles may not use the ring road's main carriageway. Riders use the service roads or cross the city.",
+      "applies_to": "Two-wheelers and three-wheelers",
+      "set_by": "Hyderabad Metropolitan Development Authority",
+      "official_url": null,
+      "has_official_order": false,
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/Outer_Ring_Road,_Hyderabad",
+        "title": "Outer Ring Road, Hyderabad",
+        "kind": "encyclopedia",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      },
+      "history": [
+        {
+          "date": "2026-04",
+          "change": "Newspaper reported riders still breaking the ban.",
+          "source": {
+            "url": "https://telanganatoday.com/two-wheeler-ban-violated-again-on-hyderabad-outer-ring-road",
+            "title": "Two-wheeler ban violated again on Hyderabad Outer Ring Road",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2026-04-14",
+            "accessed": "2026-09-28"
+          }
+        }
+      ]
+    },
+    {
+      "id": "yamuna-expressway-two-wheelers-and-winter-speed",
+      "kind": "motorcycle-rule",
+      "title": "Yamuna Expressway: two-wheeler access unclear; slower in winter",
+      "detail": "Sources disagree on whether two-wheelers may use it; no official page was found. From 15 December to 15 February light vehicles are held to 80.",
+      "applies_to": "Two-wheelers",
+      "set_by": "Yamuna Expressway Industrial Development Authority",
+      "official_url": null,
+      "has_official_order": false,
+      "source": {
+        "url": "https://tollguru.com/yamuna-expressway",
+        "title": "Yamuna Expressway Complete Guide: Toll Rates, FASTag & Travel 2025",
+        "kind": "blog",
+        "opened": true,
+        "source_date": "2025",
+        "accessed": "2026-09-28"
+      },
+      "history": [
+        {
+          "date": "2024-12-15",
+          "change": "Winter limit of 80 kilometres an hour for light vehicles began.",
+          "source": {
+            "url": "https://news24online.com/cities/delhi-ncr/good-news-for-commuters-speed-limits-on-yamuna-expressway-to-increase-from-february-16-details-inside/472748/",
+            "title": "Good News For Commuters! Speed Limits On Yamuna Expressway To…",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2025-02-13",
+            "accessed": "2026-09-28"
+          }
+        },
+        {
+          "date": "2025-02-16",
+          "change": "Limit returned to 100 kilometres an hour.",
+          "source": {
+            "url": "https://news24online.com/cities/delhi-ncr/good-news-for-commuters-speed-limits-on-yamuna-expressway-to-increase-from-february-16-details-inside/472748/",
+            "title": "Good News For Commuters! Speed Limits On Yamuna Expressway To…",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2025-02-13",
+            "accessed": "2026-09-28"
+          }
+        },
+        {
+          "date": "2025",
+          "change": "One toll guide lists two-wheelers as a paying class.",
+          "source": {
+            "url": "https://tollguru.com/yamuna-expressway",
+            "title": "Yamuna Expressway Complete Guide: Toll Rates, FASTag & Travel 2025",
+            "kind": "blog",
+            "opened": true,
+            "source_date": "2025",
+            "accessed": "2026-09-28"
+          }
+        },
+        {
+          "date": "2025",
+          "change": "Another page on the same site says two-wheelers are barred from all Uttar Pradesh expressways.",
+          "source": {
+            "url": "https://tollguru.com/expressway-safety-rules",
+            "title": "Uttar Pradesh Expressway Safety Rules 2025: Complete Guide & Regulations",
+            "kind": "blog",
+            "opened": true,
+            "source_date": "2025",
+            "accessed": "2026-09-28"
+          }
+        }
+      ]
+    },
+    {
+      "id": "national-highways-no-toll-for-two-wheelers",
+      "kind": "fee",
+      "title": "National highways: two-wheelers pay no toll",
+      "detail": "Motorcycles pass toll plazas on national highways free. The highways authority denied reports in June 2025 that this would end.",
+      "applies_to": "Two-wheelers",
+      "set_by": "National Highways Authority of India; Ministry of Road Transport and Highways",
+      "official_url": null,
+      "has_official_order": true,
+      "source": {
+        "url": "https://www.autocarindia.com/industry/no-toll-charges-for-bikes-and-scooters-confirms-nhai-435884",
+        "title": "No toll charges for bikes and scooters, confirms NHAI",
+        "kind": "news",
+        "opened": true,
+        "source_date": "2025-06-27",
+        "accessed": "2026-09-28"
+      },
+      "history": [
+        {
+          "date": "2025-06-27",
+          "change": "Authority and minister said the exemption continues.",
+          "source": {
+            "url": "https://www.autocarindia.com/industry/no-toll-charges-for-bikes-and-scooters-confirms-nhai-435884",
+            "title": "No toll charges for bikes and scooters, confirms NHAI",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2025-06-27",
+            "accessed": "2026-09-28"
+          }
+        }
+      ]
+    },
+    {
+      "id": "delhi-old-vehicles-refused-fuel",
+      "kind": "document",
+      "title": "Delhi: fuel refused to vehicles past age limit",
+      "detail": "Petrol vehicles over 15 years and diesel over 10 count as end-of-life. Reports opened do not say whether two-wheelers are covered. Carry a valid pollution certificate.",
+      "applies_to": "Vehicles older than the age limit",
+      "set_by": "Commission for Air Quality Management; Supreme Court",
+      "official_url": null,
+      "has_official_order": true,
+      "source": {
+        "url": "https://www.newsonair.gov.in/overage-vehicle-fuel-ban-in-delhi-ncr-to-be-enforced-from-november-1",
+        "title": "Overage vehicle fuel ban in Delhi-NCR to be enforced from…",
+        "kind": "news",
+        "opened": true,
+        "source_date": "2025-07-09",
+        "accessed": "2026-09-28"
+      },
+      "history": [
+        {
+          "date": "2025-07",
+          "change": "Fuel ban deferred to 1 November 2025 for Delhi and five neighbouring districts.",
+          "source": {
+            "url": "https://www.newsonair.gov.in/overage-vehicle-fuel-ban-in-delhi-ncr-to-be-enforced-from-november-1",
+            "title": "Overage vehicle fuel ban in Delhi-NCR to be enforced from…",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2025-07-09",
+            "accessed": "2026-09-28"
+          }
+        },
+        {
+          "date": "2025-12-17",
+          "change": "Supreme Court shielded vehicles of the fourth emission stage and newer from action on age alone.",
+          "source": {
+            "url": "https://www.scconline.com/blog/post/2026/03/30/delhi-end-of-life-vehicle-guidelines-dual-regime-analysis/",
+            "title": "Clarity or Confusion? Navigating the Dual Regime of Delhi's End-of-Life…",
+            "kind": "blog",
+            "opened": true,
+            "source_date": "2026-03-30",
+            "accessed": "2026-09-28"
+          }
+        },
+        {
+          "date": "2025-12-24",
+          "change": "Fuel refused in Delhi without a valid pollution certificate.",
+          "source": {
+            "url": "https://www.scconline.com/blog/post/2026/03/30/delhi-end-of-life-vehicle-guidelines-dual-regime-analysis/",
+            "title": "Clarity or Confusion? Navigating the Dual Regime of Delhi's End-of-Life…",
+            "kind": "blog",
+            "opened": true,
+            "source_date": "2026-03-30",
+            "accessed": "2026-09-28"
+          }
+        }
+      ]
+    }
+  ],
+  "season": {
+    "note": "No single season suits the whole route: snow restricts the Jammu to Srinagar stretch in winter and fog slows the northern plains from mid December to mid February.",
+    "history": []
+  },
+  "authorities": [
+    {
+      "office": "Traffic Police Headquarters, Jammu and Kashmir",
+      "announces": "Daily traffic plan and closures",
+      "stretch": "Jammu to Srinagar",
+      "channel": "Daily advisory, carried by local news sites",
+      "url": null,
+      "source": {
+        "url": "https://jkadworld.com/jk-news-today/jammu-srinagar-highway-traffic-advisory-26th-sep-2026nh-44-traffic-update-travel-guidelines/",
+        "title": "Jammu-Srinagar Highway Traffic Advisory 26th Sep 2026,NH-44 Traffic Update &…",
+        "kind": "news",
+        "opened": true,
+        "source_date": "2026-09-25",
+        "accessed": "2026-09-28"
+      }
+    },
+    {
+      "office": "National Highways Authority of India",
+      "announces": "Vehicle classes barred from expressways; toll rules",
+      "stretch": "Whole route",
+      "channel": "Authority website",
+      "url": "https://nhai.gov.in/",
+      "source": {
+        "url": "https://nhai.gov.in/",
+        "title": "National Highways Authority of India, Ministry of Road Transport &…",
+        "kind": "official",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      }
+    },
+    {
+      "office": "Hyderabad Metropolitan Development Authority",
+      "announces": "Rules for the Outer Ring Road",
+      "stretch": "Hyderabad",
+      "channel": "Authority website",
+      "url": "https://www.hmda.gov.in/",
+      "source": {
+        "url": "https://www.hmda.gov.in/",
+        "title": "Hyderabad Metropolitan Development Authority (HMDA)",
+        "kind": "official",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      }
+    },
+    {
+      "office": "Commission for Air Quality Management",
+      "announces": "Rules on old vehicles and pollution curbs",
+      "stretch": "Delhi and neighbouring districts",
+      "channel": "Commission website",
+      "url": "https://caqm.nic.in/",
+      "source": {
+        "url": "https://caqm.nic.in/",
+        "title": "CAQM",
+        "kind": "official",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      }
+    }
+  ],
+  "hazards": [
+    {
+      "title": "Falling stones between Ramban and Banihal",
+      "detail": "Stones and landslides hit this stretch. Police advise against riding it at night.",
+      "months": [],
+      "source": {
+        "url": "https://jkadworld.com/jk-news-today/jammu-srinagar-highway-traffic-advisory-26th-sep-2026nh-44-traffic-update-travel-guidelines/",
+        "title": "Jammu-Srinagar Highway Traffic Advisory 26th Sep 2026,NH-44 Traffic Update &…",
+        "kind": "news",
+        "opened": true,
+        "source_date": "2026-09-25",
+        "accessed": "2026-09-28"
+      }
+    },
+    {
+      "title": "Snow near the Navyug tunnel",
+      "detail": "Fresh snow between Nachlana and the tunnel makes the road slippery in winter.",
+      "months": [
+        12,
+        1,
+        2
+      ],
+      "source": {
+        "url": "https://thekashmirimages.com/2026/02/01/traffic-curbs-imposed-on-jammu-srinagar-highway-hmvs-restricted-amid-snow-and-road-damage/",
+        "title": "Traffic curbs imposed on Jammu Srinagar highway, HMVs restricted amid…",
+        "kind": "news",
+        "opened": true,
+        "source_date": "2026-02-01",
+        "accessed": "2026-09-28"
+      }
+    },
+    {
+      "title": "Single-lane stretches near Udhampur",
+      "detail": "The road narrows to one lane at Dawal, and animal herds cross near Banihal.",
+      "months": [],
+      "source": {
+        "url": "https://jkadworld.com/jk-news-today/jammu-srinagar-highway-traffic-advisory-26th-sep-2026nh-44-traffic-update-travel-guidelines/",
+        "title": "Jammu-Srinagar Highway Traffic Advisory 26th Sep 2026,NH-44 Traffic Update &…",
+        "kind": "news",
+        "opened": true,
+        "source_date": "2026-09-25",
+        "accessed": "2026-09-28"
+      }
+    },
+    {
+      "title": "Monsoon rain and crosswinds",
+      "detail": "One rider who set out in July met heavy rain in several states, a windstorm and four punctures.",
+      "months": [
+        7,
+        8
+      ],
+      "source": {
+        "url": "https://www.tripoto.com/trip/kashmir-to-kanyakumari-in-8-days-on-motorcycle-5c655e422af37",
+        "title": "Kashmir to kanyakumari in 8 days on motorcycle",
+        "kind": "blog",
+        "opened": true,
+        "source_date": "2018-07-07",
+        "accessed": "2026-09-28"
+      }
+    },
+    {
+      "title": "Fog on the northern plains",
+      "detail": "Dense winter fog brings lower speed limits on the Yamuna Expressway each year.",
+      "months": [
+        12,
+        1,
+        2
+      ],
+      "source": {
+        "url": "https://news24online.com/cities/delhi-ncr/good-news-for-commuters-speed-limits-on-yamuna-expressway-to-increase-from-february-16-details-inside/472748/",
+        "title": "Good News For Commuters! Speed Limits On Yamuna Expressway To…",
+        "kind": "news",
+        "opened": true,
+        "source_date": "2025-02-13",
+        "accessed": "2026-09-28"
+      }
+    }
+  ],
+  "videos": [
+    {
+      "url": "https://www.youtube.com/watch?v=CZ3L2DkeWCg",
+      "title": "Kashmir To Kanyakumari On Bike | Solo Ride | K2K Ride | Day 1 | Srinagar To Amritsar",
+      "channel": "Go Riders",
+      "stretch": "Srinagar to Amritsar",
+      "filmed": null,
+      "bike": null
+    }
+  ],
+  "gaps": [
+    "No official page found that settles whether two-wheelers may use the Yamuna Expressway; two pages on one toll guide contradict each other.",
+    "No government order found for the two-wheeler ban on the Hyderabad Outer Ring Road; the sources are an encyclopedia and a newspaper.",
+    "The Jammu and Kashmir traffic police website could not be reached, so the advisory is cited from a news site that reprints it.",
+    "No source opened says whether Delhi's age limit for vehicles is applied to motorcycles, or to motorcycles registered in other states.",
+    "No source found for the best months. The number of days rests on one rider's account of a fast run.",
+    "No source found for heat in central India or monsoon flooding on the route.",
+    "No rule found for Gwalior, Nagpur, Madurai or Kanyakumari.",
+    "One video only, and its filming date and motorcycle are not known."
+  ]
+}

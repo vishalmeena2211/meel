@@ -1,0 +1,503 @@
+{
+  "slug": "tamil-nadu-hill-roads",
+  "header": {
+    "highway": {
+      "value": "State Highway 78 (Pollachi to Valparai); State Highway 156 (Kodaikanal ghat); Kolli Hills ghat road from Karavalli",
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/Valparai",
+        "title": "Valparai",
+        "kind": "encyclopedia",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      }
+    },
+    "highest_point": {
+      "name": "Kodaikanal",
+      "altitude_m": 2225,
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/Kodaikanal",
+        "title": "Kodaikanal",
+        "kind": "encyclopedia",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      }
+    },
+    "hairpin_bends": {
+      "value": "70 to Kolli Hills; 40 to Valparai; 20 to Yercaud",
+      "source": {
+        "url": "https://www.dangerousroads.org/asia/india/3311-kolli-hills-road.html",
+        "title": "Kolli Hills is the road with 70 hairpin turns",
+        "kind": "blog",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      }
+    },
+    "usual_days": null,
+    "usual_season": {
+      "value": "April to June for Kodaikanal",
+      "source": {
+        "url": "https://www.tamilnadutourism.tn.gov.in/destinations/kodaikanal",
+        "title": "Kodaikanal | Hill Stations in Tamil Nadu | Tamil Nadu…",
+        "kind": "official",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      }
+    },
+    "one_line": "Four hairpin climbs in Tamil Nadu: Yercaud, Kolli Hills, Valparai and Kodaikanal"
+  },
+  "rules": [
+    {
+      "id": "kodaikanal-e-pass",
+      "kind": "permit",
+      "title": "Kodaikanal: electronic pass for visiting vehicles",
+      "detail": "Vehicles from outside need a free pass booked online and scanned at check points. A travel guide says two-wheelers are included.",
+      "applies_to": "Vehicles registered outside Kodaikanal",
+      "set_by": "Madras High Court; run by the Dindigul district administration",
+      "official_url": "https://epass.tnega.org/",
+      "has_official_order": true,
+      "source": {
+        "url": "https://www.dtnext.in/news/tamilnadu/e-pass-mandatory-for-tourists-visiting-kodaikanal-vehicles-being-checked-at-7-spots-811166",
+        "title": "E-pass mandatory for tourists visiting Kodaikanal, vehicles being checked at…",
+        "kind": "news",
+        "opened": true,
+        "source_date": "2024-11-14",
+        "accessed": "2026-09-28"
+      },
+      "history": [
+        {
+          "date": "2024-05",
+          "change": "Pass introduced on the High Court's direction.",
+          "source": {
+            "url": "https://www.outlooktraveller.com/News/e-pass-system-in-nilgiris-and-kodaikanal",
+            "title": "Explained: E-Pass System In Nilgiris And Kodaikanal",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2024-10-09",
+            "accessed": "2026-09-28"
+          }
+        },
+        {
+          "date": "2024-11-13",
+          "change": "Scanning began at seven check points.",
+          "source": {
+            "url": "https://www.dtnext.in/news/tamilnadu/e-pass-mandatory-for-tourists-visiting-kodaikanal-vehicles-being-checked-at-7-spots-811166",
+            "title": "E-pass mandatory for tourists visiting Kodaikanal, vehicles being checked at…",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2024-11-14",
+            "accessed": "2026-09-28"
+          }
+        },
+        {
+          "date": "2025-03",
+          "change": "High Court capped entries at 4,000 vehicles on weekdays and 6,000 at weekends.",
+          "source": {
+            "url": "https://www.dtnext.in/news/tamilnadu/madras-hc-orders-relaxation-on-e-pass-for-tourists-to-nilgiris-and-kodaikanal-826196",
+            "title": "Madras HC orders relaxation on e-pass for tourists to Nilgiris…",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2025-03-14",
+            "accessed": "2026-09-28"
+          }
+        },
+        {
+          "date": "2026-08",
+          "change": "Travel guide reports the pass still required, two-wheelers included.",
+          "source": {
+            "url": "https://hillscape.pages.dev/kodaikanal/guides/travel-tips/epass-guide-for-kodaikanal/",
+            "title": "Kodaikanal E-Pass 2026: How to Apply for TN Epass Online",
+            "kind": "blog",
+            "opened": true,
+            "source_date": "2026-08-21",
+            "accessed": "2026-09-28"
+          }
+        }
+      ]
+    },
+    {
+      "id": "valparai-e-pass",
+      "kind": "permit",
+      "title": "Valparai: electronic pass, two-wheelers included",
+      "detail": "Every visiting vehicle, motorcycles named, needs a pass. It is checked at Aliyar and Malakkappara, and can be made on the spot.",
+      "applies_to": "Two-wheelers, cars and tourist vehicles from outside Valparai",
+      "set_by": "Madras High Court; District Collector, Coimbatore",
+      "official_url": "https://epass.tnega.org/",
+      "has_official_order": true,
+      "source": {
+        "url": "https://www.dtnext.in/news/tamilnadu/e-pass-made-mandatory-for-vehicles-entering-valparai-851531",
+        "title": "E-pass made mandatory for vehicles entering Valparai",
+        "kind": "news",
+        "opened": true,
+        "source_date": "2025-11-01",
+        "accessed": "2026-09-28"
+      },
+      "history": [
+        {
+          "date": "2025-11-01",
+          "change": "Pass became compulsory.",
+          "source": {
+            "url": "https://www.dtnext.in/news/tamilnadu/e-pass-made-mandatory-for-vehicles-entering-valparai-851531",
+            "title": "E-pass made mandatory for vehicles entering Valparai",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2025-11-01",
+            "accessed": "2026-09-28"
+          }
+        },
+        {
+          "date": "2026-05",
+          "change": "Tour operator reports the pass still required and free.",
+          "source": {
+            "url": "https://mukundhatoursandtravels.in/step-by-step-how-to-apply-for-valparai-e-pass-online-2026-guide/",
+            "title": "How to Apply Valparai e-Pass Online 2026 - Simple Steps",
+            "kind": "operator",
+            "opened": true,
+            "source_date": "2026-05-28",
+            "accessed": "2026-09-28"
+          }
+        }
+      ]
+    },
+    {
+      "id": "valparai-aliyar-check-post-shuts-at-6pm",
+      "kind": "timing",
+      "title": "Valparai: Aliyar check post shuts at 6 pm",
+      "detail": "Forest staff stop visiting vehicles from 6 pm to 7 am. Buses and residents pass. No written order was found; one operator gives 10 pm instead.",
+      "applies_to": "Visiting private vehicles",
+      "set_by": "Tamil Nadu Forest Department, Anamalai Tiger Reserve",
+      "official_url": null,
+      "has_official_order": false,
+      "source": {
+        "url": "https://www.dtnext.in/news/tamilnadu/valparai-hit-by-dusk-to-dawn-restrictions-742197",
+        "title": "Valparai hit by dusk-to-dawn restrictions",
+        "kind": "news",
+        "opened": true,
+        "source_date": "2023-10-16",
+        "accessed": "2026-09-28"
+      },
+      "history": [
+        {
+          "date": "2023-08",
+          "change": "Forest department began stopping visitors at Aliyar after 6 pm.",
+          "source": {
+            "url": "https://www.dtnext.in/news/tamilnadu/valparai-hit-by-dusk-to-dawn-restrictions-742197",
+            "title": "Valparai hit by dusk-to-dawn restrictions",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2023-10-16",
+            "accessed": "2026-09-28"
+          }
+        },
+        {
+          "date": "2026-03",
+          "change": "Local guide still gives 6 pm as the cut-off.",
+          "source": {
+            "url": "https://valparai.com/pollachi-to-valparai-route-40-hairpin-bends-travel-guide/",
+            "title": "Pollachi To Valparai Route – 40 Hairpin Bends Travel Guide",
+            "kind": "blog",
+            "opened": true,
+            "source_date": "2026-03-05",
+            "accessed": "2026-09-28"
+          }
+        },
+        {
+          "date": "2026-05",
+          "change": "Tour operator gives 10 pm to 6 am for both check posts.",
+          "source": {
+            "url": "https://mukundhatoursandtravels.in/step-by-step-how-to-apply-for-valparai-e-pass-online-2026-guide/",
+            "title": "How to Apply Valparai e-Pass Online 2026 - Simple Steps",
+            "kind": "operator",
+            "opened": true,
+            "source_date": "2026-05-28",
+            "accessed": "2026-09-28"
+          }
+        }
+      ]
+    },
+    {
+      "id": "valparai-no-plastic",
+      "kind": "motorcycle-rule",
+      "title": "Valparai: no plastic to be carried up",
+      "detail": "Visitors may not bring plastic into the hills. Bags are checked at the pass check posts.",
+      "applies_to": "All visitors",
+      "set_by": "District Collector, Coimbatore",
+      "official_url": null,
+      "has_official_order": true,
+      "source": {
+        "url": "https://www.dtnext.in/news/tamilnadu/e-pass-made-mandatory-for-vehicles-entering-valparai-851531",
+        "title": "E-pass made mandatory for vehicles entering Valparai",
+        "kind": "news",
+        "opened": true,
+        "source_date": "2025-11-01",
+        "accessed": "2026-09-28"
+      },
+      "history": [
+        {
+          "date": "2025-11-01",
+          "change": "Plastic checks began with the pass.",
+          "source": {
+            "url": "https://www.dtnext.in/news/tamilnadu/e-pass-made-mandatory-for-vehicles-entering-valparai-851531",
+            "title": "E-pass made mandatory for vehicles entering Valparai",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2025-11-01",
+            "accessed": "2026-09-28"
+          }
+        }
+      ]
+    },
+    {
+      "id": "kodaikanal-small-plastic-bottles-banned",
+      "kind": "motorcycle-rule",
+      "title": "Kodaikanal: plastic bottles under five litres banned",
+      "detail": "Vehicles are searched for small plastic bottles while the pass is scanned. Carry a steel or refillable bottle.",
+      "applies_to": "All visitors",
+      "set_by": "Dindigul district administration",
+      "official_url": null,
+      "has_official_order": true,
+      "source": {
+        "url": "https://www.dtnext.in/news/tamilnadu/e-pass-mandatory-for-tourists-visiting-kodaikanal-vehicles-being-checked-at-7-spots-811166",
+        "title": "E-pass mandatory for tourists visiting Kodaikanal, vehicles being checked at…",
+        "kind": "news",
+        "opened": true,
+        "source_date": "2024-11-14",
+        "accessed": "2026-09-28"
+      },
+      "history": []
+    },
+    {
+      "id": "kolli-hills-check-post-register",
+      "kind": "document",
+      "title": "Kolli Hills: vehicle details taken at Karavalli",
+      "detail": "A travel blog says riders may be asked for identity and vehicle details at the foot of the ghat. No government order was found.",
+      "applies_to": "All vehicles",
+      "set_by": "Tamil Nadu Forest Department",
+      "official_url": null,
+      "has_official_order": false,
+      "source": {
+        "url": "https://mandakashayam.com/kollimalai-a-complete-travel-guide-to-kolli-hills/",
+        "title": "Kolli Hills Ghat Road Kollimalai Top Attractions, Safety Tips, and…",
+        "kind": "blog",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      },
+      "history": []
+    },
+    {
+      "id": "yercaud-ghat-speed-limit",
+      "kind": "motorcycle-rule",
+      "title": "Yercaud ghat: 30 kilometres an hour",
+      "detail": "After a bus fell into a gorge in 2024 the Salem collector told vehicles to keep to 30. Read from a search summary only.",
+      "applies_to": "All vehicles",
+      "set_by": "District Collector, Salem",
+      "official_url": null,
+      "has_official_order": false,
+      "source": {
+        "url": "https://www.pressreader.com/india/the-hindu-tiruchirapalli-9WWf/20240502/281681144952768",
+        "title": "Case registered against driver of private bus that plunged into…",
+        "kind": "news",
+        "opened": false,
+        "source_date": "2024-05-02",
+        "accessed": "2026-09-28"
+      },
+      "history": [
+        {
+          "date": "2024-05",
+          "change": "Speed limit announced after the bus accident.",
+          "source": {
+            "url": "https://www.pressreader.com/india/the-hindu-tiruchirapalli-9WWf/20240502/281681144952768",
+            "title": "Case registered against driver of private bus that plunged into…",
+            "kind": "news",
+            "opened": false,
+            "source_date": "2024-05-02",
+            "accessed": "2026-09-28"
+          }
+        }
+      ]
+    }
+  ],
+  "season": {
+    "note": "The state tourism office names April to June for Kodaikanal; Valparai is wettest from June to September and Kodaikanal in October and November.",
+    "history": []
+  },
+  "authorities": [
+    {
+      "office": "Tamil Nadu e-Governance Agency",
+      "announces": "Issues the electronic pass for the Nilgiris, Kodaikanal and Valparai",
+      "stretch": "Kodaikanal and Valparai entry points",
+      "channel": "Pass website",
+      "url": "https://epass.tnega.org/",
+      "source": {
+        "url": "https://epass.tnega.org/",
+        "title": "TN ePass",
+        "kind": "official",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      }
+    },
+    {
+      "office": "District Collector, Coimbatore",
+      "announces": "Valparai pass and plastic rules",
+      "stretch": "Aliyar to Valparai and Malakkappara",
+      "channel": "District website",
+      "url": "https://coimbatore.nic.in/",
+      "source": {
+        "url": "https://coimbatore.nic.in/",
+        "title": "Coimbatore District, Government of Tamil Nadu | City of Textiles…",
+        "kind": "official",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      }
+    },
+    {
+      "office": "District Collector, Dindigul",
+      "announces": "Kodaikanal pass, check points and plastic rules",
+      "stretch": "Palani and Batlagundu ghat roads to Kodaikanal",
+      "channel": "District website",
+      "url": "https://dindigul.nic.in/",
+      "source": {
+        "url": "https://dindigul.nic.in/",
+        "title": "Dindigul District | Land of Locks and Tannery | India",
+        "kind": "official",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      }
+    },
+    {
+      "office": "Namakkal District Administration",
+      "announces": "Visitor information for Kolli Hills",
+      "stretch": "Karavalli to Semmedu",
+      "channel": "District website",
+      "url": "https://namakkal.nic.in/tourist-place/kolli-hills/",
+      "source": {
+        "url": "https://namakkal.nic.in/tourist-place/kolli-hills/",
+        "title": "Kolli Hills | Namakkal District, Government of Tamilnadu | Land…",
+        "kind": "official",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      }
+    }
+  ],
+  "hazards": [
+    {
+      "title": "Seventy hairpin bends to Kolli Hills",
+      "detail": "The road is fair to about the 25th bend, then rough and potholed. Some bends fit one vehicle at a time.",
+      "months": [],
+      "source": {
+        "url": "https://www.dangerousroads.org/asia/india/3311-kolli-hills-road.html",
+        "title": "Kolli Hills is the road with 70 hairpin turns",
+        "kind": "blog",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      }
+    },
+    {
+      "title": "Elephants and leopards on the Valparai road",
+      "detail": "The forty-bend climb from Aliyar runs through a tiger reserve. Animals cross the road.",
+      "months": [],
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/Valparai",
+        "title": "Valparai",
+        "kind": "encyclopedia",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      }
+    },
+    {
+      "title": "Heavy rain at Valparai",
+      "detail": "Among the wettest places in the state; June to September bring the most rain.",
+      "months": [
+        6,
+        7,
+        8,
+        9
+      ],
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/Valparai",
+        "title": "Valparai",
+        "kind": "encyclopedia",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      }
+    },
+    {
+      "title": "Fog on the Yercaud ghat",
+      "detail": "Twenty hairpin bends with fog early and late in the day in winter. No street lights.",
+      "months": [
+        11,
+        12,
+        1,
+        2
+      ],
+      "source": {
+        "url": "https://mandakashayam.com/yercaud-loop-road/",
+        "title": "Yercaud Loop Road Scenic Drive, Safety Tips",
+        "kind": "blog",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      }
+    },
+    {
+      "title": "Rain and cold at Kodaikanal",
+      "detail": "October and November are the wettest months; winter nights fall close to freezing.",
+      "months": [
+        10,
+        11,
+        12,
+        1,
+        2
+      ],
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/Kodaikanal",
+        "title": "Kodaikanal",
+        "kind": "encyclopedia",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      }
+    }
+  ],
+  "videos": [
+    {
+      "url": "https://www.youtube.com/watch?v=Pn2kN1WXhhs",
+      "title": "Chennai To Kolli Hills In Meteor 350 | Dangerous 70 Hairpin Bends | Tamil Vlog | Bike Ride",
+      "channel": "NH Dream Rider Vlogs",
+      "stretch": "Chennai to Kolli Hills",
+      "filmed": null,
+      "bike": "Royal Enfield Meteor 350"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=WEWZ6OrEU-4",
+      "title": "Most Dangerous 70 Hairpin Bends / Kolli Hills / Ft. Suzuki V-Strom 250",
+      "channel": "Krupas Vlogs",
+      "stretch": "Kolli Hills ghat road",
+      "filmed": null,
+      "bike": "Suzuki V-Strom 250"
+    }
+  ],
+  "gaps": [
+    "No official page found that says in words whether motorcycles need the Kodaikanal pass; the pass website lists Kodaikanal and Valparai but its form would not load.",
+    "The Dindigul district pages on the Kodaikanal pass and green tax now return an error, so the green tax amount is left out.",
+    "No government order found for the Aliyar check post hours; a newspaper and a local guide give 6 pm, a tour operator gives 10 pm.",
+    "No official source found for Kolli Hills check post timings or any night closure of the ghat road.",
+    "No official source found for an entry fee or toll for two-wheelers at Yercaud, Kolli Hills, Valparai or Kodaikanal.",
+    "The Yercaud speed limit comes from a search summary of a newspaper page that could not be opened.",
+    "The Namakkal district page gives Kolli Hills as 1,200 metres; the encyclopedia gives 1,300 metres for the highest point.",
+    "No source found for the usual number of days riders take, or for fuel on the hill tops.",
+    "Hairpin bend counts are added as header.hairpin_bends, which is not in the schema example; the Valparai and Yercaud counts come from the sources on their hazard entries.",
+    "Both videos cover Kolli Hills; none kept for Valparai, Yercaud or Kodaikanal. Filming dates are not known."
+  ]
+}

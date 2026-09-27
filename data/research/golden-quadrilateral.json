@@ -1,0 +1,486 @@
+{
+  "slug": "golden-quadrilateral",
+  "header": {
+    "highway": {
+      "value": "NH 48 (Delhi to Mumbai and Chennai), NH 16 (Chennai to Kolkata), NH 19 and NH 44 (Kolkata to Delhi)",
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/Golden_Quadrilateral",
+        "title": "Golden Quadrilateral",
+        "kind": "encyclopedia",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      }
+    },
+    "highest_point": null,
+    "usual_days": null,
+    "usual_season": {
+      "value": "October to February",
+      "source": {
+        "url": "https://yourplatform.in/golden-quadrilateral-bike-trip/",
+        "title": "Golden Quadrilateral Bike Trip on Royal Enfield | Budget Tips…",
+        "kind": "blog",
+        "opened": true,
+        "source_date": "2025-07-11",
+        "accessed": "2026-09-28"
+      }
+    },
+    "one_line": "A 5,846-kilometre loop of national highways joining Delhi, Mumbai, Chennai and Kolkata"
+  },
+  "rules": [
+    {
+      "id": "mumbai-pune-expressway-no-two-wheelers",
+      "kind": "motorcycle-rule",
+      "title": "Mumbai to Pune Expressway: no two-wheelers",
+      "detail": "Two-wheelers, three-wheelers and tractors are barred. Riders take the old national highway through Khandala and Lonavala. No government order was found.",
+      "applies_to": "Two-wheelers, three-wheelers, tractors",
+      "set_by": "Maharashtra State Road Development Corporation",
+      "official_url": null,
+      "has_official_order": false,
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/Mumbai%E2%80%93Pune_Expressway",
+        "title": "Mumbai–Pune Expressway",
+        "kind": "encyclopedia",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      },
+      "history": []
+    },
+    {
+      "id": "delhi-mumbai-expressway-no-two-wheelers",
+      "kind": "motorcycle-rule",
+      "title": "Delhi to Mumbai Expressway: no two-wheelers",
+      "detail": "Motorcycles, scooters, three-wheelers and tractors are barred by gazette notice. Riders stay on the old highway through Jaipur.",
+      "applies_to": "Two-wheelers, three-wheelers, tractors",
+      "set_by": "National Highways Authority of India",
+      "official_url": null,
+      "has_official_order": true,
+      "source": {
+        "url": "https://www.dnaindia.com/india/report-delhi-mumbai-expressway-no-bikes-scooters-three-wheelers-allowed-on-delhi-dausa-stretch-know-rule-3024734",
+        "title": "Delhi-Mumbai Expressway: No bikes, scooters, three-wheelers allowed on Delhi-Dausa stretch;…",
+        "kind": "news",
+        "opened": true,
+        "source_date": "2023-02-19",
+        "accessed": "2026-09-28"
+      },
+      "history": [
+        {
+          "date": "2023-02",
+          "change": "Ban announced as the Sohna to Dausa stretch opened.",
+          "source": {
+            "url": "https://www.dnaindia.com/india/report-delhi-mumbai-expressway-no-bikes-scooters-three-wheelers-allowed-on-delhi-dausa-stretch-know-rule-3024734",
+            "title": "Delhi-Mumbai Expressway: No bikes, scooters, three-wheelers allowed on Delhi-Dausa stretch;…",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2023-02-19",
+            "accessed": "2026-09-28"
+          }
+        },
+        {
+          "date": "2026-06",
+          "change": "More of the expressway opened in Gujarat.",
+          "source": {
+            "url": "https://en.wikipedia.org/wiki/Delhi%E2%80%93Mumbai_Expressway",
+            "title": "Delhi–Mumbai Expressway",
+            "kind": "encyclopedia",
+            "opened": true,
+            "source_date": null,
+            "accessed": "2026-09-28"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ahmedabad-vadodara-expressway-no-two-wheelers",
+      "kind": "motorcycle-rule",
+      "title": "Ahmedabad to Vadodara Expressway: no two-wheelers",
+      "detail": "Two-wheelers of every kind have been barred since it opened. Riders use the national highway alongside. No government order was found.",
+      "applies_to": "Two-wheelers",
+      "set_by": "National Highways Authority of India",
+      "official_url": null,
+      "has_official_order": false,
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/Ahmedabad%E2%80%93Vadodara_Expressway",
+        "title": "Ahmedabad–Vadodara Expressway",
+        "kind": "encyclopedia",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      },
+      "history": [
+        {
+          "date": "2004",
+          "change": "Expressway opened with two-wheelers barred.",
+          "source": {
+            "url": "https://en.wikipedia.org/wiki/Ahmedabad%E2%80%93Vadodara_Expressway",
+            "title": "Ahmedabad–Vadodara Expressway",
+            "kind": "encyclopedia",
+            "opened": true,
+            "source_date": null,
+            "accessed": "2026-09-28"
+          }
+        }
+      ]
+    },
+    {
+      "id": "mumbai-sea-bridge-no-two-wheelers",
+      "kind": "motorcycle-rule",
+      "title": "Mumbai harbour sea bridge: no two-wheelers",
+      "detail": "The bridge from Sewri to Navi Mumbai bars two-wheelers and three-wheelers. Riders leave Mumbai by the older roads. No government order was found.",
+      "applies_to": "Two-wheelers and three-wheelers",
+      "set_by": "Mumbai Metropolitan Region Development Authority",
+      "official_url": null,
+      "has_official_order": false,
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/Mumbai_Trans_Harbour_Link",
+        "title": "Mumbai Trans Harbour Link",
+        "kind": "encyclopedia",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      },
+      "history": [
+        {
+          "date": "2024-01-12",
+          "change": "Bridge opened.",
+          "source": {
+            "url": "https://en.wikipedia.org/wiki/Mumbai_Trans_Harbour_Link",
+            "title": "Mumbai Trans Harbour Link",
+            "kind": "encyclopedia",
+            "opened": true,
+            "source_date": null,
+            "accessed": "2026-09-28"
+          }
+        }
+      ]
+    },
+    {
+      "id": "bengaluru-chennai-expressway-no-two-wheelers",
+      "kind": "motorcycle-rule",
+      "title": "Bengaluru to Chennai Expressway: no two-wheelers",
+      "detail": "Two-wheelers are barred from the open stretch in Karnataka after a fatal crash. Riders stay on the old national highway.",
+      "applies_to": "Two-wheelers",
+      "set_by": "National Highways Authority of India",
+      "official_url": null,
+      "has_official_order": true,
+      "source": {
+        "url": "https://odishabytes.com/two-wheelers-banned-on-bengaluru-chennai-expressway-know-why/",
+        "title": "Two-Wheelers Banned On Bengaluru-Chennai Expressway; Know Why",
+        "kind": "news",
+        "opened": true,
+        "source_date": "2025-03-04",
+        "accessed": "2026-09-28"
+      },
+      "history": [
+        {
+          "date": "2024-12-09",
+          "change": "Karnataka stretch from Hoskote to Bethamangala opened.",
+          "source": {
+            "url": "https://en.wikipedia.org/wiki/Bengaluru%E2%80%93Chennai_Expressway",
+            "title": "Bengaluru–Chennai Expressway",
+            "kind": "encyclopedia",
+            "opened": true,
+            "source_date": null,
+            "accessed": "2026-09-28"
+          }
+        },
+        {
+          "date": "2025-03",
+          "change": "Two-wheelers barred from the open stretch.",
+          "source": {
+            "url": "https://odishabytes.com/two-wheelers-banned-on-bengaluru-chennai-expressway-know-why/",
+            "title": "Two-Wheelers Banned On Bengaluru-Chennai Expressway; Know Why",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2025-03-04",
+            "accessed": "2026-09-28"
+          }
+        },
+        {
+          "date": "2026-06",
+          "change": "Andhra Pradesh stretch to Baireddypalle opened.",
+          "source": {
+            "url": "https://en.wikipedia.org/wiki/Bengaluru%E2%80%93Chennai_Expressway",
+            "title": "Bengaluru–Chennai Expressway",
+            "kind": "encyclopedia",
+            "opened": true,
+            "source_date": null,
+            "accessed": "2026-09-28"
+          }
+        }
+      ]
+    },
+    {
+      "id": "yamuna-expressway-two-wheelers-and-winter-speed",
+      "kind": "motorcycle-rule",
+      "title": "Yamuna Expressway: two-wheeler access unclear; slower in winter",
+      "detail": "Sources disagree on whether two-wheelers may use it; no official page was found. From 15 December to 15 February light vehicles are held to 80.",
+      "applies_to": "Two-wheelers",
+      "set_by": "Yamuna Expressway Industrial Development Authority",
+      "official_url": null,
+      "has_official_order": false,
+      "source": {
+        "url": "https://tollguru.com/yamuna-expressway",
+        "title": "Yamuna Expressway Complete Guide: Toll Rates, FASTag & Travel 2025",
+        "kind": "blog",
+        "opened": true,
+        "source_date": "2025",
+        "accessed": "2026-09-28"
+      },
+      "history": [
+        {
+          "date": "2024-12-15",
+          "change": "Winter limit of 80 kilometres an hour for light vehicles began.",
+          "source": {
+            "url": "https://news24online.com/cities/delhi-ncr/good-news-for-commuters-speed-limits-on-yamuna-expressway-to-increase-from-february-16-details-inside/472748/",
+            "title": "Good News For Commuters! Speed Limits On Yamuna Expressway To…",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2025-02-13",
+            "accessed": "2026-09-28"
+          }
+        },
+        {
+          "date": "2025-02-16",
+          "change": "Limit returned to 100 kilometres an hour.",
+          "source": {
+            "url": "https://news24online.com/cities/delhi-ncr/good-news-for-commuters-speed-limits-on-yamuna-expressway-to-increase-from-february-16-details-inside/472748/",
+            "title": "Good News For Commuters! Speed Limits On Yamuna Expressway To…",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2025-02-13",
+            "accessed": "2026-09-28"
+          }
+        },
+        {
+          "date": "2025",
+          "change": "One toll guide lists two-wheelers as a paying class.",
+          "source": {
+            "url": "https://tollguru.com/yamuna-expressway",
+            "title": "Yamuna Expressway Complete Guide: Toll Rates, FASTag & Travel 2025",
+            "kind": "blog",
+            "opened": true,
+            "source_date": "2025",
+            "accessed": "2026-09-28"
+          }
+        },
+        {
+          "date": "2025",
+          "change": "Another page on the same site says two-wheelers are barred from all Uttar Pradesh expressways.",
+          "source": {
+            "url": "https://tollguru.com/expressway-safety-rules",
+            "title": "Uttar Pradesh Expressway Safety Rules 2025: Complete Guide & Regulations",
+            "kind": "blog",
+            "opened": true,
+            "source_date": "2025",
+            "accessed": "2026-09-28"
+          }
+        }
+      ]
+    },
+    {
+      "id": "national-highways-no-toll-for-two-wheelers",
+      "kind": "fee",
+      "title": "National highways: two-wheelers pay no toll",
+      "detail": "Motorcycles pass toll plazas on national highways free. The highways authority denied reports in June 2025 that this would end.",
+      "applies_to": "Two-wheelers",
+      "set_by": "National Highways Authority of India; Ministry of Road Transport and Highways",
+      "official_url": null,
+      "has_official_order": true,
+      "source": {
+        "url": "https://www.autocarindia.com/industry/no-toll-charges-for-bikes-and-scooters-confirms-nhai-435884",
+        "title": "No toll charges for bikes and scooters, confirms NHAI",
+        "kind": "news",
+        "opened": true,
+        "source_date": "2025-06-27",
+        "accessed": "2026-09-28"
+      },
+      "history": [
+        {
+          "date": "2025-06-27",
+          "change": "Authority and minister said the exemption continues.",
+          "source": {
+            "url": "https://www.autocarindia.com/industry/no-toll-charges-for-bikes-and-scooters-confirms-nhai-435884",
+            "title": "No toll charges for bikes and scooters, confirms NHAI",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2025-06-27",
+            "accessed": "2026-09-28"
+          }
+        }
+      ]
+    },
+    {
+      "id": "delhi-old-vehicles-refused-fuel",
+      "kind": "document",
+      "title": "Delhi: fuel refused to vehicles past age limit",
+      "detail": "Petrol vehicles over 15 years and diesel over 10 count as end-of-life. Reports opened do not say whether two-wheelers are covered. Carry a valid pollution certificate.",
+      "applies_to": "Vehicles older than the age limit",
+      "set_by": "Commission for Air Quality Management; Supreme Court",
+      "official_url": null,
+      "has_official_order": true,
+      "source": {
+        "url": "https://www.newsonair.gov.in/overage-vehicle-fuel-ban-in-delhi-ncr-to-be-enforced-from-november-1",
+        "title": "Overage vehicle fuel ban in Delhi-NCR to be enforced from…",
+        "kind": "news",
+        "opened": true,
+        "source_date": "2025-07-09",
+        "accessed": "2026-09-28"
+      },
+      "history": [
+        {
+          "date": "2025-07",
+          "change": "Fuel ban deferred to 1 November 2025 for Delhi and five neighbouring districts.",
+          "source": {
+            "url": "https://www.newsonair.gov.in/overage-vehicle-fuel-ban-in-delhi-ncr-to-be-enforced-from-november-1",
+            "title": "Overage vehicle fuel ban in Delhi-NCR to be enforced from…",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2025-07-09",
+            "accessed": "2026-09-28"
+          }
+        },
+        {
+          "date": "2025-12-17",
+          "change": "Supreme Court shielded vehicles of the fourth emission stage and newer from action on age alone.",
+          "source": {
+            "url": "https://www.scconline.com/blog/post/2026/03/30/delhi-end-of-life-vehicle-guidelines-dual-regime-analysis/",
+            "title": "Clarity or Confusion? Navigating the Dual Regime of Delhi's End-of-Life…",
+            "kind": "blog",
+            "opened": true,
+            "source_date": "2026-03-30",
+            "accessed": "2026-09-28"
+          }
+        },
+        {
+          "date": "2025-12-24",
+          "change": "Fuel refused in Delhi without a valid pollution certificate.",
+          "source": {
+            "url": "https://www.scconline.com/blog/post/2026/03/30/delhi-end-of-life-vehicle-guidelines-dual-regime-analysis/",
+            "title": "Clarity or Confusion? Navigating the Dual Regime of Delhi's End-of-Life…",
+            "kind": "blog",
+            "opened": true,
+            "source_date": "2026-03-30",
+            "accessed": "2026-09-28"
+          }
+        }
+      ]
+    }
+  ],
+  "season": {
+    "note": "A rider's guide names October to February and warns against May to August; the Khandala ghat has had landslides in June and July.",
+    "history": []
+  },
+  "authorities": [
+    {
+      "office": "National Highways Authority of India",
+      "announces": "Vehicle classes barred from expressways; toll rules",
+      "stretch": "Whole loop",
+      "channel": "Authority website",
+      "url": "https://nhai.gov.in/",
+      "source": {
+        "url": "https://nhai.gov.in/",
+        "title": "National Highways Authority of India, Ministry of Road Transport &…",
+        "kind": "official",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      }
+    },
+    {
+      "office": "Ministry of Road Transport and Highways",
+      "announces": "National rules for highways and tolls",
+      "stretch": "Whole loop",
+      "channel": "Ministry website",
+      "url": "https://morth.nic.in/",
+      "source": {
+        "url": "https://morth.nic.in/",
+        "title": "Ministry of Road Transport & Highways, Government Of India",
+        "kind": "official",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      }
+    },
+    {
+      "office": "Commission for Air Quality Management",
+      "announces": "Rules on old vehicles and pollution curbs",
+      "stretch": "Delhi and neighbouring districts",
+      "channel": "Commission website",
+      "url": "https://caqm.nic.in/",
+      "source": {
+        "url": "https://caqm.nic.in/",
+        "title": "CAQM",
+        "kind": "official",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      }
+    }
+  ],
+  "hazards": [
+    {
+      "title": "Landslides on the Khandala ghat",
+      "detail": "Heavy rain has brought slides near Khandala and Lonavala, closing the expressway and pushing traffic onto the old highway.",
+      "months": [
+        6,
+        7
+      ],
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/Mumbai%E2%80%93Pune_Expressway",
+        "title": "Mumbai–Pune Expressway",
+        "kind": "encyclopedia",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      }
+    },
+    {
+      "title": "Fog on the northern plains",
+      "detail": "Dense winter fog brings lower speed limits on the Yamuna Expressway each year.",
+      "months": [
+        12,
+        1,
+        2
+      ],
+      "source": {
+        "url": "https://news24online.com/cities/delhi-ncr/good-news-for-commuters-speed-limits-on-yamuna-expressway-to-increase-from-february-16-details-inside/472748/",
+        "title": "Good News For Commuters! Speed Limits On Yamuna Expressway To…",
+        "kind": "news",
+        "opened": true,
+        "source_date": "2025-02-13",
+        "accessed": "2026-09-28"
+      }
+    }
+  ],
+  "videos": [
+    {
+      "url": "https://www.youtube.com/watch?v=JJxyhZdCxLU",
+      "title": "7000 Kms Long Road Trip | 13 States of India🇮🇳 on Bike🏍️ | Golden Quadrilateral 2021 | Rider soul",
+      "channel": "Rider Soul",
+      "stretch": "Whole loop",
+      "filmed": "2021",
+      "bike": null
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=F2w1k3T8hlc",
+      "title": "THE GOLDEN QUADRILATERAL | TRAILER | 125CC BIKE | 1 LAP OF INDIA | 6500 KMS | 13 STATES | 95 CITIES",
+      "channel": "Action Hero1",
+      "stretch": "Whole loop",
+      "filmed": null,
+      "bike": null
+    }
+  ],
+  "gaps": [
+    "No government order found for the two-wheeler bans on the Mumbai to Pune Expressway, the Ahmedabad to Vadodara Expressway or the Mumbai sea bridge; the sources are encyclopedia pages.",
+    "No source found on whether the two-wheeler ban also covers the Andhra Pradesh stretch of the Bengaluru to Chennai Expressway opened in 2026.",
+    "No official page found that settles whether two-wheelers may use the Yamuna Expressway; two pages on one toll guide contradict each other.",
+    "No source opened says whether Delhi's age limit for vehicles is applied to motorcycles.",
+    "Nothing found for the east coast leg: no rule, season or hazard sourced for Visakhapatnam, Bhubaneswar or Kolkata, including cyclones.",
+    "Nothing found for Varanasi, Kanpur, Udaipur or Jaipur.",
+    "No source found for the usual number of days riders take; the best months rest on one rider's guide.",
+    "No highest point recorded for the loop.",
+    "The first video is dated from its title; the second has no known filming date."
+  ]
+}

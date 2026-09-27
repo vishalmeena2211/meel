@@ -1,0 +1,243 @@
+{
+  "slug": "chhattisgarh-bastar",
+  "header": {
+    "highway": {
+      "value": "NH 30 (Raipur, Dhamtari, Kanker, Kondagaon, Jagdalpur)",
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/National_Highway_30_(India)",
+        "title": "National Highway 30 (India)",
+        "kind": "encyclopedia",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      }
+    },
+    "highest_point": null,
+    "usual_days": null,
+    "usual_season": {
+      "value": "November to June; the waterfalls are fullest from July to October",
+      "source": {
+        "url": "https://bastar.gov.in/en/tourism/",
+        "title": "Tourism, District Bastar",
+        "kind": "official",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      }
+    },
+    "one_line": "Chhattisgarh, south from Raipur over Keshkal ghat to the waterfalls around Jagdalpur"
+  },
+  "rules": [
+    {
+      "id": "keshkal-ghat-repair-closures",
+      "kind": "timing",
+      "title": "Keshkal ghat: closed at times for repairs",
+      "detail": "The ghat has no finished bypass, so repair work shuts the highway itself. It was closed to all traffic from 10 to 25 November 2024. Check before riding.",
+      "applies_to": "All vehicles; two-wheelers not named separately",
+      "set_by": "District administration and police, Kondagaon",
+      "official_url": null,
+      "has_official_order": true,
+      "source": {
+        "url": "https://bansalnews.com/chhattisgarh-kondagaon-keshkal-ghat-closed-busiest-route-bastar-ghat-closed-10-to-25-november-hindi-news-snj/",
+        "title": "CG Keshkal Ghat Closed: traffic on Keshkal ghat in Kondagaon to stay shut for 15 days",
+        "kind": "news",
+        "opened": true,
+        "source_date": "2024-11-10",
+        "accessed": "2026-09-28"
+      },
+      "history": [
+        {
+          "date": "2024-11-10",
+          "change": "Ghat closed to all vehicles until 25 November 2024 for concrete and tar work between kilometre 162 and 167; diversions were announced.",
+          "source": {
+            "url": "https://bansalnews.com/chhattisgarh-kondagaon-keshkal-ghat-closed-busiest-route-bastar-ghat-closed-10-to-25-november-hindi-news-snj/",
+            "title": "CG Keshkal Ghat Closed: traffic on Keshkal ghat in Kondagaon to stay shut for 15 days",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2024-11-10",
+            "accessed": "2026-09-28"
+          }
+        },
+        {
+          "date": "2024-11",
+          "change": "Repairs ran late; the contractor asked to move the finish date from 8 November to 7 December 2024, and a curb on heavy vehicles was extended.",
+          "source": {
+            "url": "https://www.thehitavada.com/Encyc/2024/11/10/Keshkal-Ghat-road-repair-facing-delays.html",
+            "title": "Keshkal Ghat road repair facing delays",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2024-11-10",
+            "accessed": "2026-09-28"
+          }
+        }
+      ]
+    },
+    {
+      "id": "kotumsar-cave-monsoon-closure",
+      "kind": "timing",
+      "title": "Kotumsar cave: shut through the monsoon",
+      "detail": "The cave in Kanger Valley National Park closes from about mid June to mid October because it floods. Wikipedia gives the dates as 15 June to 31 October.",
+      "applies_to": "All visitors",
+      "set_by": "Kanger Valley National Park, Chhattisgarh Forest Department",
+      "official_url": "https://bastar.gov.in/en/tourist-place/kotumsar-cave/",
+      "has_official_order": true,
+      "source": {
+        "url": "https://bastar.gov.in/en/tourist-place/kotumsar-cave/",
+        "title": "Kotumsar Cave, District Bastar",
+        "kind": "official",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      },
+      "history": []
+    },
+    {
+      "id": "kanger-valley-entry-barriers",
+      "kind": "permit",
+      "title": "Kanger Valley National Park: entry through two barriers",
+      "detail": "Wikipedia says entry to the park, for Tirathgarh Falls and the caves, is through the Kotamsar or Netanar barrier. No official page on fees or vehicle rules found.",
+      "applies_to": "All visitors",
+      "set_by": "Kanger Valley National Park, Chhattisgarh Forest Department",
+      "official_url": null,
+      "has_official_order": false,
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/Kanger_Ghati_National_Park",
+        "title": "Kanger Ghati National Park",
+        "kind": "encyclopedia",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      },
+      "history": []
+    }
+  ],
+  "season": {
+    "note": "The district recommends November to June and warns of heavy monsoon showers, though Chitrakote Falls is at its widest from July to October.",
+    "history": []
+  },
+  "authorities": [
+    {
+      "office": "District administration, Bastar",
+      "announces": "Tourism information for Chitrakote, Tirathgarh and Kanger Valley",
+      "stretch": "Jagdalpur and the falls around it",
+      "channel": "Website",
+      "url": "https://bastar.gov.in/en/tourism/",
+      "source": {
+        "url": "https://bastar.gov.in/en/tourism/",
+        "title": "Tourism, District Bastar",
+        "kind": "official",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      }
+    },
+    {
+      "office": "Collector's office and police, Kondagaon",
+      "announces": "Closures and diversions on Keshkal ghat",
+      "stretch": "Keshkal ghat, between Kanker and Kondagaon",
+      "channel": "Press briefing, reported in the press",
+      "url": null,
+      "source": {
+        "url": "https://bansalnews.com/chhattisgarh-kondagaon-keshkal-ghat-closed-busiest-route-bastar-ghat-closed-10-to-25-november-hindi-news-snj/",
+        "title": "CG Keshkal Ghat Closed: traffic on Keshkal ghat in Kondagaon to stay shut for 15 days",
+        "kind": "news",
+        "opened": true,
+        "source_date": "2024-11-10",
+        "accessed": "2026-09-28"
+      }
+    },
+    {
+      "office": "Inspector General of Police, Bastar range",
+      "announces": "Statements on security and the clearing of explosives",
+      "stretch": "Bastar region",
+      "channel": "Press statements",
+      "url": null,
+      "source": {
+        "url": "https://www.newkerala.com/news/a/bastar-free-from-naxal-activities-ig-sundarraj-terms-898.htm",
+        "title": "Bastar Naxal-Free: Focus Shifts to De-Mining and Development",
+        "kind": "news",
+        "opened": true,
+        "source_date": "2026-05-22",
+        "accessed": "2026-09-28"
+      }
+    }
+  ],
+  "hazards": [
+    {
+      "title": "Heavy traffic and worn surface on Keshkal ghat",
+      "detail": "About 25,000 vehicles a day use the ghat, the only through road to Bastar, and its surface has needed repeated repair.",
+      "months": [],
+      "source": {
+        "url": "https://www.thehitavada.com/Encyc/2024/11/10/Keshkal-Ghat-road-repair-facing-delays.html",
+        "title": "Keshkal Ghat road repair facing delays",
+        "kind": "news",
+        "opened": true,
+        "source_date": "2024-11-10",
+        "accessed": "2026-09-28"
+      }
+    },
+    {
+      "title": "Buried explosives remain in forest areas",
+      "detail": "Police said in May 2026 that mines laid in jungle, hills and near streams will take a couple of seasons to clear. Stay on made roads.",
+      "months": [],
+      "source": {
+        "url": "https://www.newkerala.com/news/a/bastar-free-from-naxal-activities-ig-sundarraj-terms-898.htm",
+        "title": "Bastar Naxal-Free: Focus Shifts to De-Mining and Development",
+        "kind": "news",
+        "opened": true,
+        "source_date": "2026-05-22",
+        "accessed": "2026-09-28"
+      }
+    },
+    {
+      "title": "Security situation: declared free of insurgency in 2026",
+      "detail": "The Union Home Minister said in Jagdalpur on 18 May 2026 that Bastar is free of Naxal insurgency. About 200 security camps remain in the region.",
+      "months": [],
+      "source": {
+        "url": "https://thenewsmill.com/2026/05/bastar-declared-naxal-free-as-amit-shah-pledges-regions-development-by-2047/",
+        "title": "Bastar declared Naxal-free as Amit Shah pledges region's development by 2047",
+        "kind": "news",
+        "opened": true,
+        "source_date": "2026-05-18",
+        "accessed": "2026-09-28"
+      }
+    },
+    {
+      "title": "Heavy monsoon showers and flooded caves",
+      "detail": "The district advises against the rainy season because of heavy showers; the caves flood and are shut.",
+      "months": [
+        6,
+        7,
+        8,
+        9
+      ],
+      "source": {
+        "url": "https://bastar.gov.in/en/tourism/",
+        "title": "Tourism, District Bastar",
+        "kind": "official",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      }
+    }
+  ],
+  "videos": [
+    {
+      "url": "https://www.youtube.com/watch?v=DgpCGung2mc",
+      "title": "धमतरी से चित्रकोट वाटरफॉल Bike Ride | Dhamtari to Chitrakote waterfall | Keshkal Ghati | PK Vlogs 07",
+      "channel": "PK Vlogs 07",
+      "stretch": "Dhamtari to Chitrakote Falls over Keshkal ghat",
+      "filmed": null,
+      "bike": null
+    }
+  ],
+  "gaps": [
+    "No official travel advisory for tourists in Bastar was found. What is recorded comes from two dated news reports of statements by the Union Home Minister and the regional police chief in May 2026.",
+    "Keshkal ghat: no source found for its altitude or its bends, for whether two-wheelers were let through during the 2024 closure, or for the state of the road and the bypass in 2026.",
+    "No official page found for entry fees, gate timings or two-wheeler rules in Kanger Valley National Park.",
+    "No source found for fuel gaps between Kanker and Jagdalpur.",
+    "Usual number of riding days: no source found.",
+    "No highest point recorded because the altitude of Keshkal ghat was not sourced.",
+    "Videos: the pages give upload dates, not filming dates, so 'filmed' is filled only where the title names a date. Uploads, in order: 2025-07."
+  ]
+}

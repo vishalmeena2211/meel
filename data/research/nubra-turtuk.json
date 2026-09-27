@@ -1,0 +1,635 @@
+{
+  "slug": "nubra-turtuk",
+  "header": {
+    "highway": {
+      "value": "No national highway number found; Leh to Nubra road over Khardung La",
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/Khardung_La",
+        "title": "Khardung La",
+        "kind": "encyclopedia",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      }
+    },
+    "highest_point": {
+      "name": "Khardung La",
+      "altitude_m": 5359,
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/Khardung_La",
+        "title": "Khardung La",
+        "kind": "encyclopedia",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      }
+    },
+    "usual_days": {
+      "value": "4",
+      "source": {
+        "url": "https://discoverwithdheeraj.com/turtuk-detailed-travel-guide/",
+        "title": "Turtuk 2026: Last Indian Village",
+        "kind": "blog",
+        "opened": true,
+        "source_date": "2026-09-12",
+        "accessed": "2026-09-28"
+      }
+    },
+    "usual_season": {
+      "value": "June to September",
+      "source": {
+        "url": "https://discoverwithdheeraj.com/turtuk-detailed-travel-guide/",
+        "title": "Turtuk 2026: Last Indian Village",
+        "kind": "blog",
+        "opened": true,
+        "source_date": "2026-09-12",
+        "accessed": "2026-09-28"
+      }
+    },
+    "one_line": "Ladakh, from Leh over Khardung La to the Shyok valley and the village of Turtuk"
+  },
+  "rules": [
+    {
+      "id": "ladakh-no-permit-indian-citizens",
+      "kind": "permit",
+      "title": "Ladakh: no permit for Indian citizens",
+      "detail": "Indian citizens carry identity proof and the fee receipt instead of a permit. A few border villages stay closed. The order itself was not found; news reports it.",
+      "applies_to": "Indian citizens",
+      "set_by": "Home Department, Union Territory of Ladakh",
+      "official_url": "https://www.lahdclehpermit.in/",
+      "has_official_order": true,
+      "source": {
+        "url": "https://www.freepressjournal.in/india/indian-tourists-visiting-ladakh-no-longer-require-inner-line-permit-heres-all-you-need-to-know",
+        "title": "Indian tourists visiting Ladakh no longer require Inner Line Permit",
+        "kind": "news",
+        "opened": true,
+        "source_date": "2021-08-07",
+        "accessed": "2026-09-28"
+      },
+      "history": [
+        {
+          "date": "2021-08",
+          "change": "Ladakh Home Department dropped the permit for Indian citizens visiting protected areas.",
+          "source": {
+            "url": "https://www.freepressjournal.in/india/indian-tourists-visiting-ladakh-no-longer-require-inner-line-permit-heres-all-you-need-to-know",
+            "title": "Indian tourists visiting Ladakh no longer require Inner Line Permit",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2021-08-07",
+            "accessed": "2026-09-28"
+          }
+        },
+        {
+          "date": "2021-08",
+          "change": "Report lists border villages expected to stay closed, including Thang, Demchok and Chumar.",
+          "source": {
+            "url": "https://thefederal.com/states/north/jammu-and-kashmir/ladakh-scraps-inner-line-permit-system-for-indian-citizens",
+            "title": "Ladakh scraps Inner Line Permit system for Indian citizens",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2021-08-09",
+            "accessed": "2026-09-28"
+          }
+        },
+        {
+          "date": "2021-08-10",
+          "change": "Leh council notice said the tourist fee continues as before.",
+          "source": {
+            "url": "https://leh.nic.in/green-fee-shall-continue-to-remain-in-effect-for-domestic-tourists-visiting-leh/",
+            "title": "Important update for domestic tourists visiting Leh",
+            "kind": "official",
+            "opened": true,
+            "source_date": "2021-08-10",
+            "accessed": "2026-09-28"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ladakh-tourist-fee-receipt",
+      "kind": "fee",
+      "title": "Ladakh: tourist fee paid online, receipt carried",
+      "detail": "One payment covers an environment fee, a Red Cross contribution and a wildlife fee. The official portal does not show the amounts on its landing page.",
+      "applies_to": "All tourists visiting Leh district",
+      "set_by": "Ladakh Autonomous Hill Development Council, Leh",
+      "official_url": "https://www.lahdclehpermit.in/",
+      "has_official_order": true,
+      "source": {
+        "url": "https://www.lahdclehpermit.in/",
+        "title": "Leh District Permit Tracking System",
+        "kind": "official",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      },
+      "history": [
+        {
+          "date": "2021-08-10",
+          "change": "Notice confirmed the existing fee structure stays in force.",
+          "source": {
+            "url": "https://leh.nic.in/green-fee-shall-continue-to-remain-in-effect-for-domestic-tourists-visiting-leh/",
+            "title": "Important update for domestic tourists visiting Leh",
+            "kind": "official",
+            "opened": true,
+            "source_date": "2021-08-10",
+            "accessed": "2026-09-28"
+          }
+        },
+        {
+          "date": "2021-08-10",
+          "change": "Ladakh administration release said the fee is paid online, with no visit to a government office.",
+          "source": {
+            "url": "https://ladakh.gov.in/green-fee-to-remain-in-effect-for-tourists-visiting-leh/",
+            "title": "Green fee to remain in effect for tourists visiting Leh",
+            "kind": "official",
+            "opened": true,
+            "source_date": "2021-08-10",
+            "accessed": "2026-09-28"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ladakh-protected-area-permit-foreigners",
+      "kind": "permit",
+      "title": "Ladakh: foreign citizens need a Protected Area Permit",
+      "detail": "Needed for Nubra, Pangong, Tso Moriri and similar areas beyond Leh. Some nationalities and passport types must apply to central ministries instead.",
+      "applies_to": "Foreign citizens",
+      "set_by": "Ministry of Home Affairs; issued through Leh district administration",
+      "official_url": "https://www.lahdclehpermit.in/",
+      "has_official_order": true,
+      "source": {
+        "url": "https://www.lahdclehpermit.in/",
+        "title": "Leh District Permit Tracking System",
+        "kind": "official",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      },
+      "history": [
+        {
+          "date": "2021-08",
+          "change": "Permit kept for foreigners when it was dropped for Indian citizens.",
+          "source": {
+            "url": "https://thefederal.com/states/north/jammu-and-kashmir/ladakh-scraps-inner-line-permit-system-for-indian-citizens",
+            "title": "Ladakh scraps Inner Line Permit system for Indian citizens",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2021-08-09",
+            "accessed": "2026-09-28"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ladakh-outside-rental-motorcycles",
+      "kind": "motorcycle-rule",
+      "title": "Ladakh: rental motorcycles from outside are turned back",
+      "detail": "Outside rentals may reach Leh but not tour Nubra, Pangong or Hanle. Enforced by the local rental cooperative; no government order found. Own motorcycles are fine with papers.",
+      "applies_to": "Riders on motorcycles rented outside Ladakh",
+      "set_by": "Local motorcycle rental associations in Leh (no government order found)",
+      "official_url": null,
+      "has_official_order": false,
+      "source": {
+        "url": "https://www.tribuneindia.com/news/j-k/amid-tussle-ladakh-l-g-urged-to-ban-rental-bikes-from-manali-511473",
+        "title": "Amid tussle, Ladakh L-G urged to ban rental bikes from Manali",
+        "kind": "news",
+        "opened": true,
+        "source_date": "2023-05-26",
+        "accessed": "2026-09-28"
+      },
+      "history": [
+        {
+          "date": "2014",
+          "change": "Blogger dates the restriction on outside rental motorcycles to this year.",
+          "source": {
+            "url": "https://discoverwithdheeraj.com/5-tips-to-rent-bike-in-leh-ladakh/",
+            "title": "Rent Bike in Leh Ladakh 2026",
+            "kind": "blog",
+            "opened": true,
+            "source_date": "2026-08-01",
+            "accessed": "2026-09-28"
+          }
+        },
+        {
+          "date": "2019",
+          "change": "Leh and Manali rental associations agreed Manali rentals would not go to Pangong or Nubra.",
+          "source": {
+            "url": "https://www.tribuneindia.com/news/j-k/amid-tussle-ladakh-l-g-urged-to-ban-rental-bikes-from-manali-511473",
+            "title": "Amid tussle, Ladakh L-G urged to ban rental bikes from Manali",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2023-05-26",
+            "accessed": "2026-09-28"
+          }
+        },
+        {
+          "date": "2023-05",
+          "change": "Fifteen Manali rental motorcycles vandalised in Leh; Lieutenant Governor deferred to a central ministry ruling.",
+          "source": {
+            "url": "https://www.tribuneindia.com/news/j-k/amid-tussle-ladakh-l-g-urged-to-ban-rental-bikes-from-manali-511473",
+            "title": "Amid tussle, Ladakh L-G urged to ban rental bikes from Manali",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2023-05-26",
+            "accessed": "2026-09-28"
+          }
+        },
+        {
+          "date": "2026-08",
+          "change": "Blogger: a borrowed motorcycle needs a no-objection letter from its owner at check posts.",
+          "source": {
+            "url": "https://discoverwithdheeraj.com/5-tips-to-rent-bike-in-leh-ladakh/",
+            "title": "Rent Bike in Leh Ladakh 2026",
+            "kind": "blog",
+            "opened": true,
+            "source_date": "2026-08-01",
+            "accessed": "2026-09-28"
+          }
+        }
+      ]
+    },
+    {
+      "id": "leh-48-hour-acclimatisation",
+      "kind": "timing",
+      "title": "Leh: 48 hours of acclimatisation before going higher",
+      "detail": "Tourists arriving in Leh are told to rest two days before heading to places such as Khardung La and Pangong. No enforcement method was found.",
+      "applies_to": "Tourists arriving in Leh",
+      "set_by": "District Administration, Leh",
+      "official_url": "https://leh.nic.in/48-hours-acclimatization-for-tourists-arriving-in-leh/",
+      "has_official_order": true,
+      "source": {
+        "url": "https://leh.nic.in/48-hours-acclimatization-for-tourists-arriving-in-leh/",
+        "title": "48 hours acclimatization for tourists arriving in Leh",
+        "kind": "official",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      },
+      "history": [
+        {
+          "date": "2022",
+          "change": "Encyclopedia entry dates the two-day rule before crossing Khardung La to this year.",
+          "source": {
+            "url": "https://en.wikipedia.org/wiki/Khardung_La",
+            "title": "Khardung La",
+            "kind": "encyclopedia",
+            "opened": true,
+            "source_date": null,
+            "accessed": "2026-09-28"
+          }
+        }
+      ]
+    },
+    {
+      "id": "khardung-la-receipt-check",
+      "kind": "document",
+      "title": "Receipt checked at South Pullu before Khardung La",
+      "detail": "An operator guide says papers are stamped at South Pullu on the way into Nubra. Carry printed copies of the receipt and identity proof. No order found.",
+      "applies_to": "All tourists",
+      "set_by": "Ladakh Police",
+      "official_url": "https://www.lahdclehpermit.in/",
+      "has_official_order": false,
+      "source": {
+        "url": "https://travelcoffee.in/places-to-visit/khardung-la-pass",
+        "title": "Khardung La 2026: Honest Guide to Altitude, Permit, Crossing",
+        "kind": "operator",
+        "opened": true,
+        "source_date": "2026-04",
+        "accessed": "2026-09-28"
+      },
+      "history": [
+        {
+          "date": "2026-09-14",
+          "change": "Tourist facilitation centre at North Pullu inaugurated by Ladakh Police.",
+          "source": {
+            "url": "https://ladakh.gov.in/l-g-vinai-kumar-saxena-inaugurates-four-new-initiatives-of-ladakh-police/",
+            "title": "Lieutenant Governor inaugurates four new initiatives of Ladakh Police",
+            "kind": "official",
+            "opened": true,
+            "source_date": null,
+            "accessed": "2026-09-28"
+          }
+        }
+      ]
+    },
+    {
+      "id": "khardung-la-traffic-hours",
+      "kind": "timing",
+      "title": "Khardung La traffic hours: sources disagree",
+      "detail": "One operator page gives 09:00 to 13:00 outbound from Leh and 13:00 to 17:00 back. Another says the pass has no fixed hours. No official order found.",
+      "applies_to": "All vehicles",
+      "set_by": "Not established",
+      "official_url": null,
+      "has_official_order": false,
+      "source": {
+        "url": "https://www.lehladakhindia.com/khardung-la-pass/",
+        "title": "Khardung La Pass Ladakh",
+        "kind": "operator",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      },
+      "history": [
+        {
+          "date": "2026-04",
+          "change": "Operator guide states there is no gate and no fixed hours at the pass.",
+          "source": {
+            "url": "https://travelcoffee.in/places-to-visit/khardung-la-pass",
+            "title": "Khardung La 2026: Honest Guide to Altitude, Permit, Crossing",
+            "kind": "operator",
+            "opened": true,
+            "source_date": "2026-04",
+            "accessed": "2026-09-28"
+          }
+        }
+      ]
+    },
+    {
+      "id": "turtuk-army-verification",
+      "kind": "document",
+      "title": "Army verification on the road to Turtuk",
+      "detail": "Identity and receipts are verified at an army post after the bridge over the Shyok near Chalunka. No written order found.",
+      "applies_to": "All civilians",
+      "set_by": "Indian Army",
+      "official_url": null,
+      "has_official_order": false,
+      "source": {
+        "url": "https://discoverwithdheeraj.com/turtuk-detailed-travel-guide/",
+        "title": "Turtuk 2026: Last Indian Village",
+        "kind": "blog",
+        "opened": true,
+        "source_date": "2026-09-12",
+        "accessed": "2026-09-28"
+      },
+      "history": [
+        {
+          "date": "2010",
+          "change": "Turtuk opened to tourists.",
+          "source": {
+            "url": "https://en.wikipedia.org/wiki/Turtuk",
+            "title": "Turtuk",
+            "kind": "encyclopedia",
+            "opened": true,
+            "source_date": null,
+            "accessed": "2026-09-28"
+          }
+        }
+      ]
+    },
+    {
+      "id": "nubra-foreigners-beyond-hunder",
+      "kind": "permit",
+      "title": "Foreign citizens beyond Hunder: sources disagree",
+      "detail": "One guide lists Turtuk as open to foreigners holding the Protected Area Permit; another page by the same author warns of restrictions beyond Hunder. No official source found.",
+      "applies_to": "Foreign citizens",
+      "set_by": "Ministry of Home Affairs; Leh district administration",
+      "official_url": "https://www.lahdclehpermit.in/",
+      "has_official_order": false,
+      "source": {
+        "url": "https://discoverwithdheeraj.com/protected-area-permit-in-ladakh-for-foreigners/",
+        "title": "Protected Area Permit Ladakh for Foreigners 2026",
+        "kind": "blog",
+        "opened": true,
+        "source_date": "2026-09-02",
+        "accessed": "2026-09-28"
+      },
+      "history": [
+        {
+          "date": "2026-09-12",
+          "change": "Turtuk guide says foreigners may face restrictions beyond Hunder.",
+          "source": {
+            "url": "https://discoverwithdheeraj.com/turtuk-detailed-travel-guide/",
+            "title": "Turtuk 2026: Last Indian Village",
+            "kind": "blog",
+            "opened": true,
+            "source_date": "2026-09-12",
+            "accessed": "2026-09-28"
+          }
+        }
+      ]
+    }
+  ],
+  "season": {
+    "note": "Khardung La has no fixed winter closure; it shuts for a day or more after heavy snow, so there are no yearly opening and closing dates to record.",
+    "history": []
+  },
+  "authorities": [
+    {
+      "office": "Border Roads Organisation, Project Himank",
+      "announces": "Snow clearance and road repair",
+      "stretch": "Leh to Khardung La to Nubra",
+      "channel": "Statements to the press and its X account; no status page",
+      "url": "https://bro.gov.in/",
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/Khardung_La",
+        "title": "Khardung La",
+        "kind": "encyclopedia",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      }
+    },
+    {
+      "office": "Ladakh Police",
+      "announces": "Traffic updates and tourist alerts; runs the check posts at South Pullu and North Pullu",
+      "stretch": "Leh to Nubra",
+      "channel": "Website Traffic Updates block and the Jullay 2.0 app",
+      "url": "https://police.ladakh.gov.in/",
+      "source": {
+        "url": "https://ladakh.gov.in/l-g-vinai-kumar-saxena-inaugurates-four-new-initiatives-of-ladakh-police/",
+        "title": "Lieutenant Governor inaugurates four new initiatives of Ladakh Police",
+        "kind": "official",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      }
+    },
+    {
+      "office": "Traffic Police, Ladakh Police",
+      "announces": "Traffic management in Leh and Kargil districts",
+      "stretch": "Leh district roads",
+      "channel": "Website and social media accounts",
+      "url": "https://police.ladakh.gov.in/pages/traffic.html",
+      "source": {
+        "url": "https://police.ladakh.gov.in/pages/traffic.html",
+        "title": "Traffic Police, Ladakh Police",
+        "kind": "official",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      }
+    },
+    {
+      "office": "Ladakh Autonomous Hill Development Council, Leh",
+      "announces": "Tourist fee and permits",
+      "stretch": "Nubra, including Turtuk",
+      "channel": "Permit portal",
+      "url": "https://www.lahdclehpermit.in/",
+      "source": {
+        "url": "https://www.lahdclehpermit.in/",
+        "title": "Leh District Permit Tracking System",
+        "kind": "official",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      }
+    },
+    {
+      "office": "Indian Army",
+      "announces": "Verification on the day near the border",
+      "stretch": "Chalunka to Turtuk",
+      "channel": "At the check post; nothing published",
+      "url": null,
+      "source": {
+        "url": "https://discoverwithdheeraj.com/turtuk-detailed-travel-guide/",
+        "title": "Turtuk 2026: Last Indian Village",
+        "kind": "blog",
+        "opened": true,
+        "source_date": "2026-09-12",
+        "accessed": "2026-09-28"
+      }
+    }
+  ],
+  "hazards": [
+    {
+      "title": "Slush, potholes and washouts on Khardung La",
+      "detail": "Melt and rain break up the surface near the top in high summer.",
+      "months": [
+        7,
+        8
+      ],
+      "source": {
+        "url": "https://travelcoffee.in/places-to-visit/khardung-la-pass",
+        "title": "Khardung La 2026: Honest Guide to Altitude, Permit, Crossing",
+        "kind": "operator",
+        "opened": true,
+        "source_date": "2026-04",
+        "accessed": "2026-09-28"
+      }
+    },
+    {
+      "title": "Ice and snow closures on Khardung La",
+      "detail": "The pass usually reopens within a day or two of heavy snow, but storms have shut it for three to five days.",
+      "months": [
+        11,
+        12,
+        1,
+        2,
+        3,
+        4
+      ],
+      "source": {
+        "url": "https://travelcoffee.in/places-to-visit/khardung-la-pass",
+        "title": "Khardung La 2026: Honest Guide to Altitude, Permit, Crossing",
+        "kind": "operator",
+        "opened": true,
+        "source_date": "2026-04",
+        "accessed": "2026-09-28"
+      }
+    },
+    {
+      "title": "Unpaved stretch between South Pullu and North Pullu",
+      "detail": "Dirt, loose rock and puddles across the top section of the pass.",
+      "months": [],
+      "source": {
+        "url": "https://www.lehladakhindia.com/khardung-la-pass/",
+        "title": "Khardung La Pass Ladakh",
+        "kind": "operator",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      }
+    },
+    {
+      "title": "Avalanches, rockfall and single-lane delays on Khardung La",
+      "detail": "Narrow one-lane sections cause long hold-ups, and the road is prone to washouts, avalanches and falling rocks.",
+      "months": [],
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/Khardung_La",
+        "title": "Khardung La",
+        "kind": "encyclopedia",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      }
+    },
+    {
+      "title": "Landslides and Shyok flooding towards Turtuk",
+      "detail": "Sections along the Shyok are landslide-prone in the rainy months and the river can flood.",
+      "months": [
+        7,
+        8
+      ],
+      "source": {
+        "url": "https://discoverwithdheeraj.com/turtuk-detailed-travel-guide/",
+        "title": "Turtuk 2026: Last Indian Village",
+        "kind": "blog",
+        "opened": true,
+        "source_date": "2026-09-12",
+        "accessed": "2026-09-28"
+      }
+    },
+    {
+      "title": "Loose gravel on the final approach to Turtuk",
+      "detail": "The last stretch is narrow with loose gravel.",
+      "months": [],
+      "source": {
+        "url": "https://discoverwithdheeraj.com/turtuk-detailed-travel-guide/",
+        "title": "Turtuk 2026: Last Indian Village",
+        "kind": "blog",
+        "opened": true,
+        "source_date": "2026-09-12",
+        "accessed": "2026-09-28"
+      }
+    },
+    {
+      "title": "No fuel beyond Diskit",
+      "detail": "Diskit has the last pump; there is none onward to Hunder and Turtuk.",
+      "months": [],
+      "source": {
+        "url": "https://discoverwithdheeraj.com/turtuk-detailed-travel-guide/",
+        "title": "Turtuk 2026: Last Indian Village",
+        "kind": "blog",
+        "opened": true,
+        "source_date": "2026-09-12",
+        "accessed": "2026-09-28"
+      }
+    },
+    {
+      "title": "Prepaid mobile connections from other states do not work",
+      "detail": "A blogger reports that only postpaid connections from outside work in Jammu and Kashmir and in Ladakh; no official source was found.",
+      "months": [],
+      "source": {
+        "url": "https://discoverwithdheeraj.com/mobile-phone-connectivity-in-leh-ladakh/",
+        "title": "Mobile phone connectivity in Leh Ladakh",
+        "kind": "blog",
+        "opened": true,
+        "source_date": "2026-08-14",
+        "accessed": "2026-09-28"
+      }
+    }
+  ],
+  "videos": [
+    {
+      "url": "https://www.youtube.com/watch?v=AJ5G3PgLIfs",
+      "title": "Ladakh Solo Bike Trip | Khardung La Pass | Nubra Valley | ladakh road trip bike latest videos",
+      "channel": "Traveling Eyesight",
+      "stretch": "Leh over Khardung La to Diskit, Hunder, Turtuk and Thang",
+      "filmed": null,
+      "bike": null
+    }
+  ],
+  "gaps": [
+    "No yearly opening or closing dates exist for Khardung La; no dated closure orders were found for the last five years.",
+    "No official order found for any traffic hours on Khardung La; two operator pages contradict each other.",
+    "Whether tourists may go beyond Turtuk to Tyakshi and Thang was not established; a 2021 news report expected Thang to stay closed, later pages describe it as visited.",
+    "Whether foreign citizens may go beyond Hunder to Turtuk is contradicted within one blogger's own pages.",
+    "The signboard at Khardung La shows a higher altitude than the measured 5,359 metres; the measured figure is used.",
+    "No government order found for the restriction on rental motorcycles from outside Ladakh.",
+    "No official page states the Ladakh tourist fee amounts, so they are left out.",
+    "The Ladakh order of August 2021 that dropped the permit for Indian citizens was not found; only news reports of it.",
+    "No road number found for the Leh to Nubra road.",
+    "Only one recent rider video found; it gives no filming date and was published on 10 July 2026. It shows the rider at Thang, beyond Turtuk."
+  ]
+}

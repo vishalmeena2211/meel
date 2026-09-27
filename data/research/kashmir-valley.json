@@ -1,0 +1,420 @@
+{
+  "slug": "kashmir-valley",
+  "header": {
+    "highway": {
+      "value": "NH 44 and NH 501 to Pahalgam; NH 1 to Sonamarg; no number found for the Gulmarg road",
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/National_Highway_501_(India)",
+        "title": "National Highway 501 (India)",
+        "kind": "encyclopedia",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      }
+    },
+    "highest_point": {
+      "name": "Sonamarg",
+      "altitude_m": 2730,
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/Sonamarg",
+        "title": "Sonamarg",
+        "kind": "encyclopedia",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      }
+    },
+    "usual_days": {
+      "value": null,
+      "source": null
+    },
+    "usual_season": {
+      "value": "All year; snow chains needed for Gulmarg in winter",
+      "source": {
+        "url": "https://kashmirobserver.net/2026/01/16/anti-skid-chains-mandatory-on-tangmarg-gulmarg-road/",
+        "title": "Anti-skid chains mandatory on Tangmarg-Gulmarg road",
+        "kind": "news",
+        "opened": true,
+        "source_date": "2026-01-16",
+        "accessed": "2026-09-28"
+      }
+    },
+    "one_line": "Jammu and Kashmir, day rides from Srinagar to Gulmarg, Pahalgam and Sonamarg"
+  },
+  "rules": [
+    {
+      "id": "kashmir-tourist-spots-closed-after-april-2025",
+      "kind": "permit",
+      "title": "Kashmir: tourist spots shut in 2025, reopened in phases",
+      "detail": "After the attack near Pahalgam, 48 of 87 destinations were closed. Most have reopened by order of the Lieutenant Governor; check each place before riding to it.",
+      "applies_to": "All tourists",
+      "set_by": "Lieutenant Governor's administration, Jammu and Kashmir",
+      "official_url": null,
+      "has_official_order": true,
+      "source": {
+        "url": "https://www.outlooktraveller.com/News/jammu-and-kashmir-reopens-14-tourist-spots-after-2025-pahalgam-attack",
+        "title": "Jammu and Kashmir reopens 14 tourist spots after 2025 Pahalgam attack",
+        "kind": "news",
+        "opened": true,
+        "source_date": "2026-02-19",
+        "accessed": "2026-09-28"
+      },
+      "history": [
+        {
+          "date": "2025-04-29",
+          "change": "48 of 87 destinations reported closed, including Gurez for non-local tourists.",
+          "source": {
+            "url": "https://www.tribuneindia.com/news/j-k/pahalgam-attack-fallout-48-tourist-spots-closed-across-kashmir-for-security-reasons",
+            "title": "Pahalgam attack fallout: 48 tourist spots closed across Kashmir for security reasons",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2025-04-29",
+            "accessed": "2026-09-28"
+          }
+        },
+        {
+          "date": "2025-07",
+          "change": "Gurez reopened to local and non-local tourists.",
+          "source": {
+            "url": "https://www.tribuneindia.com/news/j-k/shut-since-pahalgam-gurez-valley-reopens/",
+            "title": "Shut since Pahalgam, Gurez valley reopens",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2025-07-25",
+            "accessed": "2026-09-28"
+          }
+        },
+        {
+          "date": "2026-02",
+          "change": "Fourteen more reopened, among them Thajwas Glacier, Pir Ki Gali and Dubjan.",
+          "source": {
+            "url": "https://www.outlooktraveller.com/News/jammu-and-kashmir-reopens-14-tourist-spots-after-2025-pahalgam-attack",
+            "title": "Jammu and Kashmir reopens 14 tourist spots after 2025 Pahalgam attack",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2026-02-19",
+            "accessed": "2026-09-28"
+          }
+        },
+        {
+          "date": "2026-04-08",
+          "change": "Government said all remaining closed destinations were expected to reopen by May 2026.",
+          "source": {
+            "url": "https://www.outlooktraveller.com/News/kashmirs-closed-tourist-destinations-set-to-reopen-by-may-after-2025-pahalgam-attack",
+            "title": "J&K to reopen all tourist destinations closed after Pahalgam attack by May",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2026-04-08",
+            "accessed": "2026-09-28"
+          }
+        }
+      ]
+    },
+    {
+      "id": "kashmir-yatra-period-cut-off-times",
+      "kind": "timing",
+      "title": "Pilgrimage season: tourist traffic only 07:00 to 18:00",
+      "detail": "During the Amarnath pilgrimage, tourist vehicles may not leave Sonamarg for Srinagar after 16:00 or travel between Srinagar and Gulmarg after 17:00. Two-wheelers are not mentioned.",
+      "applies_to": "Tourist and non-convoy vehicles in the Kashmir valley",
+      "set_by": "Traffic Police Headquarters, Jammu and Kashmir",
+      "official_url": null,
+      "has_official_order": true,
+      "source": {
+        "url": "https://kashmirlife.net/traffic-police-issue-amarnath-yatra-traffic-advisory-announce-cut-off-timings-441384/",
+        "title": "Traffic Police issue Amarnath Yatra traffic advisory, announce cut-off timings",
+        "kind": "news",
+        "opened": true,
+        "source_date": "2026-06-30",
+        "accessed": "2026-09-28"
+      },
+      "history": [
+        {
+          "date": "2026-07-02",
+          "change": "Advisory in force from 2 July to 28 August 2026.",
+          "source": {
+            "url": "https://kashmirlife.net/traffic-police-issue-amarnath-yatra-traffic-advisory-announce-cut-off-timings-441384/",
+            "title": "Traffic Police issue Amarnath Yatra traffic advisory, announce cut-off timings",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2026-06-30",
+            "accessed": "2026-09-28"
+          }
+        }
+      ]
+    },
+    {
+      "id": "gulmarg-anti-skid-chains",
+      "kind": "motorcycle-rule",
+      "title": "Tangmarg to Gulmarg: anti-skid chains compulsory in snow",
+      "detail": "In snow and ice every vehicle on the climb must carry chains and heavy vehicles are barred. The order has no separate line for two-wheelers.",
+      "applies_to": "All vehicles, Tangmarg to Gulmarg",
+      "set_by": "Sub-Divisional Magistrate, Gulmarg",
+      "official_url": null,
+      "has_official_order": true,
+      "source": {
+        "url": "https://kashmirobserver.net/2026/01/16/anti-skid-chains-mandatory-on-tangmarg-gulmarg-road/",
+        "title": "Anti-skid chains mandatory on Tangmarg-Gulmarg road",
+        "kind": "news",
+        "opened": true,
+        "source_date": "2026-01-16",
+        "accessed": "2026-09-28"
+      },
+      "history": [
+        {
+          "date": "2022",
+          "change": "Earlier order allowed only four-wheel-drive vehicles and those with chains until the ice thawed.",
+          "source": {
+            "url": "https://risingkashmir.com/only-4x4-vehicles-and-those-with-anti-skid-chains-shall-be-allowed-on-tangmarg-gulmarg-road/",
+            "title": "Only 4x4 vehicles and those with anti-skid chains shall be allowed on Tangmarg-Gulmarg road",
+            "kind": "news",
+            "opened": false,
+            "source_date": null,
+            "accessed": "2026-09-28"
+          }
+        },
+        {
+          "date": "2026-01-16",
+          "change": "Chains made compulsory for all vehicles and heavy vehicles barred, until further orders.",
+          "source": {
+            "url": "https://kashmirobserver.net/2026/01/16/anti-skid-chains-mandatory-on-tangmarg-gulmarg-road/",
+            "title": "Anti-skid chains mandatory on Tangmarg-Gulmarg road",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2026-01-16",
+            "accessed": "2026-09-28"
+          }
+        }
+      ]
+    },
+    {
+      "id": "srinagar-sonamarg-daily-traffic-plan",
+      "kind": "timing",
+      "title": "Srinagar to Sonamarg road follows the daily traffic plan",
+      "detail": "The road onward from Sonamarg has daily cut-off times set by order and published each evening. In March 2026 motorcyclists were told not to travel on it.",
+      "applies_to": "All vehicles, Srinagar to Sonamarg and beyond",
+      "set_by": "Divisional Commissioner, Kashmir; Traffic Police Headquarters, Jammu and Kashmir",
+      "official_url": null,
+      "has_official_order": true,
+      "source": {
+        "url": "https://jkadworld.com/jk-news-today/jammu-srinagar-highway-traffic-advisory-28th-sep-2026nh-44-traffic-update-travel-guidelines/",
+        "title": "Traffic advisory for 28 September 2026, Traffic Police Headquarters Jammu and Kashmir",
+        "kind": "news",
+        "opened": true,
+        "source_date": "2026-09-27",
+        "accessed": "2026-09-28"
+      },
+      "history": [
+        {
+          "date": "2025-01-13",
+          "change": "Tunnel to Sonamarg opened, giving all-weather access from Srinagar.",
+          "source": {
+            "url": "https://discoverwithdheeraj.com/srinagar-leh-highway-status/",
+            "title": "Srinagar Leh Highway Status: Zojila Updates",
+            "kind": "blog",
+            "opened": true,
+            "source_date": "2026-08-06",
+            "accessed": "2026-09-28"
+          }
+        },
+        {
+          "date": "2026-03-14",
+          "change": "Advisory told motorcyclists not to travel on the Sonamarg to Gumri road.",
+          "source": {
+            "url": "https://www.therightnews.in/2026/03/14/lmvs-allowed-on-jammu-srinagar-highway-mughal-road-open-for-lmvs-with-time-restrictions-kishtwar-anantnag-road-closed/",
+            "title": "Traffic advisory of 14 March 2026, Traffic Police Headquarters Jammu and Kashmir",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2026-03-14",
+            "accessed": "2026-09-28"
+          }
+        },
+        {
+          "date": "2026-09-14",
+          "change": "Order set a 13:00 cut-off for light vehicles heading beyond Sonamarg.",
+          "source": {
+            "url": "https://jkadworld.com/jk-news-today/jammu-srinagar-highway-traffic-advisory-28th-sep-2026nh-44-traffic-update-travel-guidelines/",
+            "title": "Traffic advisory for 28 September 2026, Traffic Police Headquarters Jammu and Kashmir",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2026-09-27",
+            "accessed": "2026-09-28"
+          }
+        }
+      ]
+    }
+  ],
+  "season": {
+    "note": "The valley roads have no seasonal closure; Gulmarg needs snow chains in winter and Sonamarg has been reachable all year since its tunnel opened in January 2025.",
+    "history": []
+  },
+  "authorities": [
+    {
+      "office": "Traffic Police Headquarters, Jammu and Kashmir",
+      "announces": "Daily traffic plan, and the pilgrimage season advisory",
+      "stretch": "All main roads in the valley",
+      "channel": "Traffic Plan and Advisory section of its website and its X account; republished by news sites",
+      "url": "https://trafficpolice.jk.gov.in/",
+      "source": {
+        "url": "https://trafficpolice.jk.gov.in/",
+        "title": "Jammu Kashmir Traffic Police",
+        "kind": "official",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      }
+    },
+    {
+      "office": "Sub-Divisional Magistrate, Gulmarg",
+      "announces": "Winter orders on chains and vehicle classes",
+      "stretch": "Tangmarg to Gulmarg",
+      "channel": "Orders reported by newspapers",
+      "url": null,
+      "source": {
+        "url": "https://kashmirobserver.net/2026/01/16/anti-skid-chains-mandatory-on-tangmarg-gulmarg-road/",
+        "title": "Anti-skid chains mandatory on Tangmarg-Gulmarg road",
+        "kind": "news",
+        "opened": true,
+        "source_date": "2026-01-16",
+        "accessed": "2026-09-28"
+      }
+    },
+    {
+      "office": "Lieutenant Governor's administration, Jammu and Kashmir",
+      "announces": "Which tourist destinations are closed or reopened",
+      "stretch": "Whole valley",
+      "channel": "Orders reported by newspapers",
+      "url": null,
+      "source": {
+        "url": "https://www.outlooktraveller.com/News/jammu-and-kashmir-reopens-14-tourist-spots-after-2025-pahalgam-attack",
+        "title": "Jammu and Kashmir reopens 14 tourist spots after 2025 Pahalgam attack",
+        "kind": "news",
+        "opened": true,
+        "source_date": "2026-02-19",
+        "accessed": "2026-09-28"
+      }
+    },
+    {
+      "office": "Divisional Commissioner, Kashmir",
+      "announces": "Order behind the Srinagar to Sonamarg to Gumri traffic rules",
+      "stretch": "Srinagar to Sonamarg",
+      "channel": "Order cited in the daily traffic advisory",
+      "url": null,
+      "source": {
+        "url": "https://jkadworld.com/jk-news-today/jammu-srinagar-highway-traffic-advisory-28th-sep-2026nh-44-traffic-update-travel-guidelines/",
+        "title": "Traffic advisory for 28 September 2026, Traffic Police Headquarters Jammu and Kashmir",
+        "kind": "news",
+        "opened": true,
+        "source_date": "2026-09-27",
+        "accessed": "2026-09-28"
+      }
+    },
+    {
+      "office": "National Highways Authority of India",
+      "announces": "Maintains the highway to Pahalgam",
+      "stretch": "Khanabal to Pahalgam",
+      "channel": "No public status channel found",
+      "url": null,
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/National_Highway_501_(India)",
+        "title": "National Highway 501 (India)",
+        "kind": "encyclopedia",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      }
+    }
+  ],
+  "hazards": [
+    {
+      "title": "Snow and ice on the climb to Gulmarg",
+      "detail": "The uphill stretch from Tangmarg runs through forest and ices over; vehicles without chains are turned back.",
+      "months": [
+        12,
+        1,
+        2
+      ],
+      "source": {
+        "url": "https://kashmirobserver.net/2026/01/16/anti-skid-chains-mandatory-on-tangmarg-gulmarg-road/",
+        "title": "Anti-skid chains mandatory on Tangmarg-Gulmarg road",
+        "kind": "news",
+        "opened": true,
+        "source_date": "2026-01-16",
+        "accessed": "2026-09-28"
+      }
+    },
+    {
+      "title": "Convoys and early cut-offs in pilgrimage season",
+      "detail": "From 2 July to 28 August 2026 pilgrim convoys used the Pahalgam and Sonamarg roads and tourist traffic was stopped early each afternoon.",
+      "months": [
+        7,
+        8
+      ],
+      "source": {
+        "url": "https://kashmirlife.net/traffic-police-issue-amarnath-yatra-traffic-advisory-announce-cut-off-timings-441384/",
+        "title": "Traffic Police issue Amarnath Yatra traffic advisory, announce cut-off timings",
+        "kind": "news",
+        "opened": true,
+        "source_date": "2026-06-30",
+        "accessed": "2026-09-28"
+      }
+    },
+    {
+      "title": "Glacier collapse at Thajiwas near Sonamarg",
+      "detail": "Collapses in May and June 2024 killed tourists and workers.",
+      "months": [
+        5,
+        6
+      ],
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/Sonamarg",
+        "title": "Sonamarg",
+        "kind": "encyclopedia",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      }
+    },
+    {
+      "title": "Prepaid mobile connections from other states do not work",
+      "detail": "A blogger reports that only postpaid connections from outside work in Jammu and Kashmir and in Ladakh; no official source was found.",
+      "months": [],
+      "source": {
+        "url": "https://discoverwithdheeraj.com/mobile-phone-connectivity-in-leh-ladakh/",
+        "title": "Mobile phone connectivity in Leh Ladakh",
+        "kind": "blog",
+        "opened": true,
+        "source_date": "2026-08-14",
+        "accessed": "2026-09-28"
+      }
+    }
+  ],
+  "videos": [
+    {
+      "url": "https://www.youtube.com/watch?v=6GcWn5pqXro",
+      "title": "EP-2 PAHALGAM I SOLO RIDE I KASHMIR",
+      "channel": "Wanderer Queen Yash",
+      "stretch": "Srinagar to Pahalgam",
+      "filmed": null,
+      "bike": null
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=ETSSMvRl2tM",
+      "title": "Gulmarg Bike Ride In Heavy Snowfall - Unreal Experience! Kashmir Bike Road Trip 2025",
+      "channel": "THE TRAVELLER SAIF",
+      "stretch": "Tangmarg to Gulmarg in snow",
+      "filmed": "2025",
+      "bike": null
+    }
+  ],
+  "gaps": [
+    "No source found for the usual number of days riders take.",
+    "Whether Baisaran and other spots around Pahalgam have reopened was not confirmed.",
+    "No rule found on outside or rental motorcycles at Gulmarg, Pahalgam or Sonamarg; local transport union restrictions are often mentioned by travellers but no source was found.",
+    "The Jammu and Kashmir Traffic Police website was opened but showed no dated advisory; advisories were read on news sites.",
+    "No permit is known to be needed for these places, but no official statement of that was found.",
+    "The Gulmarg chain order does not say how it applies to motorcycles.",
+    "The 2022 Gulmarg order comes from a search result only and its exact date is unknown.",
+    "No official source found for the rule on prepaid mobile connections.",
+    "The first video gives no filming date; it was published on 13 June 2026."
+  ]
+}

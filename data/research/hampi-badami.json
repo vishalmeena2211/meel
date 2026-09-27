@@ -1,0 +1,152 @@
+{
+  "slug": "hampi-badami",
+  "header": {
+    "highway": {
+      "value": "NH 50 (through Hosapete); NH 367 (through Badami); State Highway 14 (Badami to Pattadakal)",
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/National_Highway_50_(India)",
+        "title": "National Highway 50 (India)",
+        "kind": "encyclopedia",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      }
+    },
+    "highest_point": null,
+    "usual_days": null,
+    "usual_season": {
+      "value": "October to March",
+      "source": {
+        "url": "https://karnatakatourism.org/tour-item/hampi/",
+        "title": "Hampi – Places to Visit, History & Travel Guide |…",
+        "kind": "official",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      }
+    },
+    "one_line": "North Karnataka plains, from the ruins of Hampi to the rock-cut temples of Badami, Pattadakal and Aihole"
+  },
+  "rules": [
+    {
+      "id": "hampi-vittala-temple-park-and-walk",
+      "kind": "motorcycle-rule",
+      "title": "Hampi: no private vehicles near the Vittala temple",
+      "detail": "Motorcycles stop at a parking area about one kilometre short. Visitors walk or take an electric cart. No government order was found.",
+      "applies_to": "All private vehicles",
+      "set_by": "Hampi World Heritage Area Management Authority",
+      "official_url": null,
+      "has_official_order": false,
+      "source": {
+        "url": "https://praveenmusafir.com/karnataka/hampi/vittala-temple/",
+        "title": "Vittala Temple, History, Timing - Hampi",
+        "kind": "blog",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      },
+      "history": []
+    },
+    {
+      "id": "hampi-vittala-temple-ticket",
+      "kind": "fee",
+      "title": "Hampi: ticket for the Vittala temple",
+      "detail": "The state tourism office gives about 40 rupees for Indian visitors and says most other temples are free. The temple opens 8:30 am to 5:30 pm.",
+      "applies_to": "All visitors",
+      "set_by": "Archaeological Survey of India",
+      "official_url": null,
+      "has_official_order": true,
+      "source": {
+        "url": "https://karnatakatourism.org/tour-item/hampi/",
+        "title": "Hampi – Places to Visit, History & Travel Guide |…",
+        "kind": "official",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      },
+      "history": []
+    }
+  ],
+  "season": {
+    "note": "The state tourism office names October to March; from March to June the plains reach 40 degrees, and rain falls from July to October.",
+    "history": []
+  },
+  "authorities": [
+    {
+      "office": "Archaeological Survey of India",
+      "announces": "Tickets and opening hours for protected monuments",
+      "stretch": "Hampi, Badami, Pattadakal, Aihole",
+      "channel": "Website",
+      "url": "https://asi.nic.in/",
+      "source": {
+        "url": "https://asi.nic.in/",
+        "title": "Archaeological Survey of India",
+        "kind": "official",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      }
+    }
+  ],
+  "hazards": [
+    {
+      "title": "Heat on the plains",
+      "detail": "Summer days reach 40 degrees at Badami. Ride early and carry water.",
+      "months": [
+        3,
+        4,
+        5,
+        6
+      ],
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/Badami",
+        "title": "Badami",
+        "kind": "encyclopedia",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      }
+    },
+    {
+      "title": "Monkeys at Badami",
+      "detail": "Large troops live around the caves and town. Keep food and loose items packed away.",
+      "months": [],
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/Badami",
+        "title": "Badami",
+        "kind": "encyclopedia",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      }
+    }
+  ],
+  "videos": [
+    {
+      "url": "https://www.youtube.com/watch?v=0rZPok5UqPk",
+      "title": "Hampi to Badami Ride | Interceptor 650 | Epic Trip Day 4",
+      "channel": "Volatile42",
+      "stretch": "Hampi to Badami",
+      "filmed": null,
+      "bike": "Royal Enfield Interceptor 650"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=AqMiFqPZT3E",
+      "title": "Badami To Hampi Bike Ride।। South India Road Trip ।। Ep#5",
+      "channel": "Musafir Man",
+      "stretch": "Badami to Hampi",
+      "filmed": null,
+      "bike": null
+    }
+  ],
+  "gaps": [
+    "No government order or official page found for the vehicle restriction at the Vittala temple; the source is a travel blog.",
+    "The ticket office website of the Archaeological Survey of India would not load its monument list, so ticket prices for Badami, Pattadakal and Aihole are not recorded.",
+    "No rule specific to motorcycles found anywhere on this route, and no two-wheeler parking fee from an official page.",
+    "No source found for stretches without fuel between Hosapete and Badami.",
+    "No source found for the usual number of days riders take.",
+    "No highest point recorded: this is a plains route. Badami stands at 586 metres.",
+    "No office found that announces road closures for this route.",
+    "Filming dates of the two videos are not known."
+  ]
+}

@@ -1,0 +1,235 @@
+{
+  "slug": "munsiyari-kumaon",
+  "header": {
+    "highway": {
+      "value": "NH 109 from Kathgodam to Almora; NH 309A from Almora through Bageshwar to Chaukori; Thal to Munsiyari road number not found",
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/National_Highway_109_(India)",
+        "title": "National Highway 109 (India)",
+        "kind": "encyclopedia",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      }
+    },
+    "highest_point": {
+      "name": "Kalamuni Top",
+      "altitude_m": 2896,
+      "source": {
+        "url": "https://munsiyari-tours.com/blog/pithoragarh-to-munsiyari-tour",
+        "title": "Pithoragarh to Munsiyari: A Scenic Journey into the Heart of Kumaon Himalayas",
+        "kind": "operator",
+        "opened": true,
+        "source_date": "2025-07-08",
+        "accessed": "2026-09-28"
+      }
+    },
+    "usual_days": {
+      "value": null,
+      "source": null
+    },
+    "usual_season": {
+      "value": "March to June and September to November",
+      "source": {
+        "url": "https://munsiyari-tours.com/blog/pithoragarh-to-munsiyari-tour",
+        "title": "Pithoragarh to Munsiyari: A Scenic Journey into the Heart of Kumaon Himalayas",
+        "kind": "operator",
+        "opened": true,
+        "source_date": "2025-07-08",
+        "accessed": "2026-09-28"
+      }
+    },
+    "one_line": "Uttarakhand, across the Kumaon hills from Kathgodam through Almora and Bageshwar, then over Kalamuni Top to Munsiyari"
+  },
+  "rules": [
+    {
+      "id": "binsar-sanctuary-two-wheelers-stop-at-check-post",
+      "kind": "motorcycle-rule",
+      "title": "Binsar sanctuary: two-wheelers stop at the check post",
+      "detail": "An operator guide, citing the state tourism corporation, says two-wheelers may not pass the forest check post. Gate hours are 07:00 to 18:00 in summer, 08:00 to 17:00 in winter.",
+      "applies_to": "Two-wheelers",
+      "set_by": "Uttarakhand Forest Department, as reported",
+      "official_url": null,
+      "has_official_order": false,
+      "source": {
+        "url": "https://www.chardhamtour.in/tourism/binsar/",
+        "title": "Binsar Uttarakhand Travel Guide: Places, Fees & Best Time",
+        "kind": "operator",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      },
+      "history": []
+    },
+    {
+      "id": "binsar-sanctuary-entry-fee",
+      "kind": "fee",
+      "title": "Binsar sanctuary: entry fee paid at the gate",
+      "detail": "A fee per person and per vehicle is paid at the single forest gate. No current official tariff was found, so amounts are left out.",
+      "applies_to": "All visitors and vehicles",
+      "set_by": "Uttarakhand Forest Department, as reported",
+      "official_url": null,
+      "has_official_order": false,
+      "source": {
+        "url": "https://www.chardhamtour.in/tourism/binsar/",
+        "title": "Binsar Uttarakhand Travel Guide: Places, Fees & Best Time",
+        "kind": "operator",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      },
+      "history": []
+    },
+    {
+      "id": "uttarakhand-green-cess-two-wheelers-exempt",
+      "kind": "tax",
+      "title": "Uttarakhand green cess: two-wheelers exempt",
+      "detail": "Vehicles from other states pay a green cess on entry, read by number-plate cameras at the border. Two-wheelers, electric and gas vehicles are exempt. Official order not found.",
+      "applies_to": "Vehicles registered outside Uttarakhand",
+      "set_by": "Transport Department, Government of Uttarakhand",
+      "official_url": null,
+      "has_official_order": false,
+      "source": {
+        "url": "https://www.etvbharat.com/en/state/green-cess-has-started-being-collected-from-vehicles-coming-to-uttarakhand-from-other-states-enn26011404744",
+        "title": "Uttarakhand Begins Green Cess Collection From Out-of-State Vehicles, Faces Initial Technical Glitches",
+        "kind": "news",
+        "opened": true,
+        "source_date": "2026-01-14",
+        "accessed": "2026-09-28"
+      },
+      "history": [
+        {
+          "date": "2024-12-07",
+          "change": "Cess announced, with two-wheelers among the exempt classes.",
+          "source": {
+            "url": "https://www.tribuneindia.com/news/uttarakhand/green-cess-to-be-imposed-on-vehicles-entering-uttarakhand-evs-bikes-exempted/amp",
+            "title": "Green cess to be imposed on vehicles entering Uttarakhand; EVs, bikes exempted",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2024-12-07",
+            "accessed": "2026-09-28"
+          }
+        },
+        {
+          "date": "2026-01-01",
+          "change": "Planned start date missed because the systems were not ready.",
+          "source": {
+            "url": "https://www.etvbharat.com/en/state/green-cess-has-started-being-collected-from-vehicles-coming-to-uttarakhand-from-other-states-enn26011404744",
+            "title": "Uttarakhand Begins Green Cess Collection From Out-of-State Vehicles, Faces Initial Technical Glitches",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2026-01-14",
+            "accessed": "2026-09-28"
+          }
+        },
+        {
+          "date": "2026-01-14",
+          "change": "Collection began at border check points, with some technical faults on the first day.",
+          "source": {
+            "url": "https://www.etvbharat.com/en/state/green-cess-has-started-being-collected-from-vehicles-coming-to-uttarakhand-from-other-states-enn26011404744",
+            "title": "Uttarakhand Begins Green Cess Collection From Out-of-State Vehicles, Faces Initial Technical Glitches",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2026-01-14",
+            "accessed": "2026-09-28"
+          }
+        }
+      ]
+    }
+  ],
+  "season": {
+    "note": "No road on this route closes for a season; the Thal to Munsiyari road is cut by landslides in the monsoon and by snow at Kalamuni in winter.",
+    "history": []
+  },
+  "authorities": [
+    {
+      "office": "Uttarakhand Forest Department",
+      "announces": "Gate hours and entry to Binsar sanctuary, as reported by an operator",
+      "stretch": "Binsar Wildlife Sanctuary",
+      "channel": "Forest gate",
+      "url": null,
+      "source": {
+        "url": "https://www.chardhamtour.in/tourism/binsar/",
+        "title": "Binsar Uttarakhand Travel Guide: Places, Fees & Best Time",
+        "kind": "operator",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      }
+    },
+    {
+      "office": "District administration, Pithoragarh",
+      "announces": "Watches road blockages in the monsoon",
+      "stretch": "Thal to Munsiyari",
+      "channel": "Statements to the press",
+      "url": "https://pithoragarh.nic.in/",
+      "source": {
+        "url": "https://www.etvbharat.com/english/videos/other-videos/thal-munsiyari-road-closed-due-to-landslide-in-pithoragarh/na20220801155945514514196",
+        "title": "Thal-Munsiyari road closed due to landslide in Pithoragarh",
+        "kind": "news",
+        "opened": true,
+        "source_date": "2022-08-01",
+        "accessed": "2026-09-28"
+      }
+    }
+  ],
+  "hazards": [
+    {
+      "title": "Landslides on the Thal to Munsiyari road",
+      "detail": "Two days of rain brought debris down near Hardia and shut the road in August 2022.",
+      "months": [
+        7,
+        8
+      ],
+      "source": {
+        "url": "https://www.etvbharat.com/english/videos/other-videos/thal-munsiyari-road-closed-due-to-landslide-in-pithoragarh/na20220801155945514514196",
+        "title": "Thal-Munsiyari road closed due to landslide in Pithoragarh",
+        "kind": "news",
+        "opened": true,
+        "source_date": "2022-08-01",
+        "accessed": "2026-09-28"
+      }
+    },
+    {
+      "title": "Snow from Kalamuni to Munsiyari",
+      "detail": "Snow lies on the road from Kalamuni towards Munsiyari town in winter.",
+      "months": [
+        12,
+        1,
+        2
+      ],
+      "source": {
+        "url": "https://www.tribuneindia.com/news/archive/features/snowfall-brings-tourists-to-munsiyari-368057",
+        "title": "Snowfall brings tourists to Munsiyari",
+        "kind": "news",
+        "opened": true,
+        "source_date": "2017-02-23",
+        "accessed": "2026-09-28"
+      }
+    },
+    {
+      "title": "Few petrol pumps beyond Thal",
+      "detail": "An operator guide advises filling up in Pithoragarh because pumps are scarce after Thal.",
+      "months": [],
+      "source": {
+        "url": "https://munsiyari-tours.com/blog/pithoragarh-to-munsiyari-tour",
+        "title": "Pithoragarh to Munsiyari: A Scenic Journey into the Heart of Kumaon Himalayas",
+        "kind": "operator",
+        "opened": true,
+        "source_date": "2025-07-08",
+        "accessed": "2026-09-28"
+      }
+    }
+  ],
+  "videos": [],
+  "gaps": [
+    "Usual number of days: no source found.",
+    "Kalamuni Top altitude is converted from the 9,500 feet given by an operator blog; no official figure found.",
+    "No road number found for the Bageshwar to Thal to Munsiyari stretch, and no source found for which office announces its status.",
+    "The Binsar two-wheeler rule comes from an operator page that cites the state tourism corporation's booking page; that page was not opened and no forest department order was found.",
+    "No source found on whether any permit applies at or beyond Munsiyari.",
+    "Kausani, Nainital and Almora: no local vehicle rules or entry taxes were researched.",
+    "Uttarakhand green cess: the exemption for two-wheelers is reported by two news outlets; no Transport Department order or official page was found.",
+    "No rider videos collected; the search budget ran out before this route."
+  ]
+}

@@ -1,0 +1,433 @@
+{
+  "slug": "jalori-tirthan",
+  "header": {
+    "highway": {
+      "value": "NH 305 (Aut to Banjar to Jalori Pass to Anni to Luhri)",
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/National_Highway_305_(India)",
+        "title": "National Highway 305 (India)",
+        "kind": "encyclopedia",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      }
+    },
+    "highest_point": {
+      "name": "Jalori Pass",
+      "altitude_m": 3120,
+      "source": {
+        "url": "https://jibhi.in/blog/best-time-to-visit-jalori-pass",
+        "title": "Jalori Pass Weather Guide: Snow, Seasons & Road Status 2026",
+        "kind": "blog",
+        "opened": true,
+        "source_date": "2026-02-06",
+        "accessed": "2026-09-28"
+      }
+    },
+    "usual_days": {
+      "value": "3 to 6",
+      "source": {
+        "url": "https://himtrails.in/himachal-trip-itinerary-planner/",
+        "title": "Himachal trip itinerary planner",
+        "kind": "operator",
+        "opened": true,
+        "source_date": "2026-04",
+        "accessed": "2026-09-28"
+      }
+    },
+    "usual_season": {
+      "value": "March to June and September to November",
+      "source": {
+        "url": "https://himtrails.in/himachal-trip-itinerary-planner/",
+        "title": "Himachal trip itinerary planner",
+        "kind": "operator",
+        "opened": true,
+        "source_date": "2026-04",
+        "accessed": "2026-09-28"
+      }
+    },
+    "one_line": "Himachal Pradesh, from the Beas at Aut up the Tirthan and Banjar valleys and over Jalori Pass to Anni"
+  },
+  "rules": [
+    {
+      "id": "nh-305-heavy-vehicle-restriction",
+      "kind": "timing",
+      "title": "NH 305: heavy vehicles restricted, Aut to Jalori Pass",
+      "detail": "District notices bar trucks, tippers and dumpers on set days and hours to ease jams. Motorcycles and light vehicles are not named in the restriction.",
+      "applies_to": "Heavy goods vehicles",
+      "set_by": "Sub-Divisional Magistrate, Banjar, and Kullu district administration",
+      "official_url": "https://hpkullu.nic.in/notice/the-movement-of-heavy-motor-vehicles-viz-tippers-dumpers-and-other-heavy-vehicles-is-restricted-on-nh-305-from-aut-to-jalori-pass-route/",
+      "has_official_order": true,
+      "source": {
+        "url": "https://hpkullu.nic.in/notice/the-movement-of-heavy-motor-vehicles-viz-tippers-dumpers-and-other-heavy-vehicles-is-restricted-on-nh-305-from-aut-to-jalori-pass-route/",
+        "title": "The movement of heavy motor vehicles viz. tippers, dumpers and other heavy vehicles is restricted on NH-305 from Aut to Jalori Pass route",
+        "kind": "official",
+        "opened": true,
+        "source_date": "2025-11-27",
+        "accessed": "2026-09-28"
+      },
+      "history": [
+        {
+          "date": "2024-04-10",
+          "change": "Heavy vehicles barred from Larji to Jalori between 08:00 and 11:00 and between 13:00 and 21:00, until further orders.",
+          "source": {
+            "url": "https://www.tribuneindia.com/news/himachal/heavy-vehicles-barred-from-larji-jalori-stretch-of-nh-305-to-ease-congestion-610570/",
+            "title": "Heavy vehicles barred from Larji-Jalori stretch of NH-305 to ease congestion",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2024-04-14",
+            "accessed": "2026-09-28"
+          }
+        },
+        {
+          "date": "2025-11-27",
+          "change": "District notice restricts heavy vehicles from Aut to Jalori Pass until 31 December 2025.",
+          "source": {
+            "url": "https://hpkullu.nic.in/notice/the-movement-of-heavy-motor-vehicles-viz-tippers-dumpers-and-other-heavy-vehicles-is-restricted-on-nh-305-from-aut-to-jalori-pass-route/",
+            "title": "The movement of heavy motor vehicles viz. tippers, dumpers and other heavy vehicles is restricted on NH-305 from Aut to Jalori Pass route",
+            "kind": "official",
+            "opened": true,
+            "source_date": "2025-11-27",
+            "accessed": "2026-09-28"
+          }
+        },
+        {
+          "date": "2026-08",
+          "change": "Weight limit of 18 tonnes reported on four bridges of the highway; page not opened.",
+          "source": {
+            "url": "https://himachaldastak.com/kullu-nh-305-four-bridges-heavy-vehicles-ban-18-ton-limit/",
+            "title": "Kullu: heavy vehicles barred on four bridges of NH-305, 18 tonne limit",
+            "kind": "news",
+            "opened": false,
+            "source_date": null,
+            "accessed": "2026-09-28"
+          }
+        }
+      ]
+    },
+    {
+      "id": "jalori-pass-four-wheel-drive-first-after-snow",
+      "kind": "timing",
+      "title": "Jalori Pass: four-wheel-drive first after snowfall",
+      "detail": "After each snow closure the highway is reopened to four-wheel-drive vehicles first, then to others and buses. Reports do not mention motorcycles. No written order found.",
+      "applies_to": "All vehicles",
+      "set_by": "National Highways Authority of India and Kullu district administration, as reported",
+      "official_url": null,
+      "has_official_order": false,
+      "source": {
+        "url": "https://www.tribuneindia.com/news/himachal/nhai-restores-aut-luhri-road-via-jalori-pass",
+        "title": "NHAI restores Aut-Luhri road via Jalori Pass",
+        "kind": "news",
+        "opened": true,
+        "source_date": "2025-02-09",
+        "accessed": "2026-09-28"
+      },
+      "history": [
+        {
+          "date": "2020-02-10",
+          "change": "Pass reopened after 37 days; officials called movement risky at first.",
+          "source": {
+            "url": "https://www.tribuneindia.com/news/himachal/jalori-pass-thrown-open-after-37-days-39027",
+            "title": "Jalori Pass thrown open after 37 days",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2020-02-11",
+            "accessed": "2026-09-28"
+          }
+        },
+        {
+          "date": "2024-03-19",
+          "change": "Blocked again by light snow days after reopening from a 45-day closure.",
+          "source": {
+            "url": "https://www.tribuneindia.com/news/himachal/opened-after-45-days-jalori-pass-blocked-again-after-mild-snowfall-602482/",
+            "title": "Opened after 45 days, Jalori Pass blocked again after mild snowfall",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2024-03-20",
+            "accessed": "2026-09-28"
+          }
+        },
+        {
+          "date": "2025-02-09",
+          "change": "Restored for four-wheel-drive vehicles after snow on 5 February.",
+          "source": {
+            "url": "https://www.tribuneindia.com/news/himachal/nhai-restores-aut-luhri-road-via-jalori-pass",
+            "title": "NHAI restores Aut-Luhri road via Jalori Pass",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2025-02-09",
+            "accessed": "2026-09-28"
+          }
+        }
+      ]
+    },
+    {
+      "id": "himachal-entry-toll-other-state-vehicles",
+      "kind": "tax",
+      "title": "Himachal entry toll for vehicles from other states",
+      "detail": "Charged at entry barriers under the yearly toll policy. Notified rates name passenger and goods vehicles only. The Chief Minister said two-wheelers stay exempt. The policy document was not opened.",
+      "applies_to": "Vehicles registered outside Himachal Pradesh",
+      "set_by": "Department of State Taxes and Excise, Government of Himachal Pradesh",
+      "official_url": "https://www.hptax.gov.in/public/setpdf/Toll%20Policy%202026_27.pdf",
+      "has_official_order": true,
+      "source": {
+        "url": "https://www.tribuneindia.com/news/himachal/himachal-toll-tax-rates-revised-heres-what-you-need-to-know/",
+        "title": "Himachal toll tax rates revised: Here's what you need to know",
+        "kind": "news",
+        "opened": true,
+        "source_date": "2026-04-02",
+        "accessed": "2026-09-28"
+      },
+      "history": [
+        {
+          "date": "2026-02-20",
+          "change": "Toll Policy 2026-27 announced with higher rates from 1 April 2026; receipt reported valid 24 hours across the state.",
+          "source": {
+            "url": "https://www.businesstoday.in/india/story/himachal-pradesh-revises-toll-tax-rates-heres-how-much-vehicle-entry-fee-youll-have-to-pay-from-april-1-517204-2026-02-20",
+            "title": "Himachal Pradesh revises toll tax rates. Here's how much vehicle entry fee you'll have to pay from April 1",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2026-02-20",
+            "accessed": "2026-09-28"
+          }
+        },
+        {
+          "date": "2026-03-26",
+          "change": "Chief Minister told the assembly the tax would be reviewed and that light vehicles and two-wheelers remain exempt.",
+          "source": {
+            "url": "https://www.tribuneindia.com/news/himachal/himachal-govt-signals-rethink-on-entry-tax/",
+            "title": "Himachal Govt signals rethink on entry tax",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2026-03-26",
+            "accessed": "2026-09-28"
+          }
+        },
+        {
+          "date": "2026-04-02",
+          "change": "Revised rates reported, with a lower rate for passenger vehicles from other states; two-wheelers not listed.",
+          "source": {
+            "url": "https://www.tribuneindia.com/news/himachal/himachal-toll-tax-rates-revised-heres-what-you-need-to-know/",
+            "title": "Himachal toll tax rates revised: Here's what you need to know",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2026-04-02",
+            "accessed": "2026-09-28"
+          }
+        }
+      ]
+    }
+  ],
+  "season": {
+    "note": "Jalori Pass has no fixed closing order; it shuts whenever snow falls between December and March and reopens when the highway authority clears it.",
+    "history": [
+      {
+        "year": 2020,
+        "connected": "2020-02-10",
+        "open_to_motorcycles": null,
+        "closed": null,
+        "note": "Reopened on the evening of 10 February after 37 days shut.",
+        "sources": [
+          {
+            "url": "https://www.tribuneindia.com/news/himachal/jalori-pass-thrown-open-after-37-days-39027",
+            "title": "Jalori Pass thrown open after 37 days",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2020-02-11",
+            "accessed": "2026-09-28"
+          }
+        ]
+      },
+      {
+        "year": 2024,
+        "connected": "2024-03",
+        "open_to_motorcycles": null,
+        "closed": null,
+        "note": "Shut by snow on 30 January 2024, reopened after 45 days in mid-March, blocked again on 19 March.",
+        "sources": [
+          {
+            "url": "https://www.tribuneindia.com/news/himachal/opened-after-45-days-jalori-pass-blocked-again-after-mild-snowfall-602482/",
+            "title": "Opened after 45 days, Jalori Pass blocked again after mild snowfall",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2024-03-20",
+            "accessed": "2026-09-28"
+          }
+        ]
+      },
+      {
+        "year": 2025,
+        "connected": "2025-02-09",
+        "open_to_motorcycles": null,
+        "closed": null,
+        "note": "Shut by snow on 5 February 2025; restored for four-wheel-drive vehicles on 9 February.",
+        "sources": [
+          {
+            "url": "https://www.tribuneindia.com/news/himachal/nhai-restores-aut-luhri-road-via-jalori-pass",
+            "title": "NHAI restores Aut-Luhri road via Jalori Pass",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2025-02-09",
+            "accessed": "2026-09-28"
+          }
+        ]
+      },
+      {
+        "year": 2026,
+        "connected": "2026-03",
+        "open_to_motorcycles": null,
+        "closed": null,
+        "note": "A local blog says the road has been open since mid-March 2026. Closing date for the 2025-26 winter not found.",
+        "sources": [
+          {
+            "url": "https://jibhi.in/blog/best-time-to-visit-jalori-pass",
+            "title": "Jalori Pass Weather Guide: Snow, Seasons & Road Status 2026",
+            "kind": "blog",
+            "opened": true,
+            "source_date": "2026-02-06",
+            "accessed": "2026-09-28"
+          }
+        ]
+      }
+    ]
+  },
+  "authorities": [
+    {
+      "office": "Sub-Divisional Magistrate, Banjar, and Kullu district administration",
+      "announces": "Traffic restrictions on the highway",
+      "stretch": "NH 305, Aut and Larji to Jalori Pass",
+      "channel": "Notices on the Kullu district website",
+      "url": "https://hpkullu.nic.in/",
+      "source": {
+        "url": "https://hpkullu.nic.in/notice/the-movement-of-heavy-motor-vehicles-viz-tippers-dumpers-and-other-heavy-vehicles-is-restricted-on-nh-305-from-aut-to-jalori-pass-route/",
+        "title": "The movement of heavy motor vehicles viz. tippers, dumpers and other heavy vehicles is restricted on NH-305 from Aut to Jalori Pass route",
+        "kind": "official",
+        "opened": true,
+        "source_date": "2025-11-27",
+        "accessed": "2026-09-28"
+      }
+    },
+    {
+      "office": "National Highways Authority of India",
+      "announces": "Clears snow and restores the highway",
+      "stretch": "NH 305, Banjar to Jalori Pass to Anni",
+      "channel": "Statements to newspapers",
+      "url": null,
+      "source": {
+        "url": "https://www.tribuneindia.com/news/himachal/nhai-restores-aut-luhri-road-via-jalori-pass",
+        "title": "NHAI restores Aut-Luhri road via Jalori Pass",
+        "kind": "news",
+        "opened": true,
+        "source_date": "2025-02-09",
+        "accessed": "2026-09-28"
+      }
+    },
+    {
+      "office": "Himachal Pradesh Public Works Department",
+      "announces": "Roads open, blocked or restored",
+      "stretch": "Department roads across Himachal Pradesh",
+      "channel": "Road Status Information System website and mobile apps",
+      "url": "https://hppwd.in/",
+      "source": {
+        "url": "https://hppwd.in/",
+        "title": "Himachal Pradesh Public Works Department",
+        "kind": "official",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      }
+    },
+    {
+      "office": "Union Ministry of Road Transport and Highways",
+      "announces": "Approved the alignment of a tunnel under the pass",
+      "stretch": "Shoja to Bhargol",
+      "channel": "Reported by newspapers",
+      "url": null,
+      "source": {
+        "url": "https://www.tribuneindia.com/news/himachal/centre-finalises-alignment-of-jalori-tunnel-on-nh-305/",
+        "title": "Centre finalises alignment of Jalori tunnel on NH-305",
+        "kind": "news",
+        "opened": true,
+        "source_date": "2024-12-29",
+        "accessed": "2026-09-28"
+      }
+    }
+  ],
+  "hazards": [
+    {
+      "title": "Snow closures on Jalori Pass",
+      "detail": "The pass shuts for days or weeks after snowfall and can close again within days of reopening.",
+      "months": [
+        12,
+        1,
+        2,
+        3
+      ],
+      "source": {
+        "url": "https://www.tribuneindia.com/news/himachal/opened-after-45-days-jalori-pass-blocked-again-after-mild-snowfall-602482/",
+        "title": "Opened after 45 days, Jalori Pass blocked again after mild snowfall",
+        "kind": "news",
+        "opened": true,
+        "source_date": "2024-03-20",
+        "accessed": "2026-09-28"
+      }
+    },
+    {
+      "title": "Landslides in the rains",
+      "detail": "A newspaper notes the pass road is also shut for days by landslides during the rains.",
+      "months": [
+        7,
+        8,
+        9
+      ],
+      "source": {
+        "url": "https://www.tribuneindia.com/news/himachal/opened-after-45-days-jalori-pass-blocked-again-after-mild-snowfall-602482/",
+        "title": "Opened after 45 days, Jalori Pass blocked again after mild snowfall",
+        "kind": "news",
+        "opened": true,
+        "source_date": "2024-03-20",
+        "accessed": "2026-09-28"
+      }
+    },
+    {
+      "title": "Steep, narrow climb from Jibhi and Shoja",
+      "detail": "A local guide calls the road steep, narrow and winding, easiest in dry conditions.",
+      "months": [],
+      "source": {
+        "url": "https://jibhi.in/blog/best-time-to-visit-jalori-pass",
+        "title": "Jalori Pass Weather Guide: Snow, Seasons & Road Status 2026",
+        "kind": "blog",
+        "opened": true,
+        "source_date": "2026-02-06",
+        "accessed": "2026-09-28"
+      }
+    }
+  ],
+  "videos": [
+    {
+      "url": "https://www.youtube.com/watch?v=24zqN-9k4o8",
+      "title": "Jibhi To Jalori Pass Via Shoja : The Most Scenic Bike Ride in Himachal #shoja #Jibhi #JaloriPass",
+      "channel": "Go Riders",
+      "stretch": "Jibhi to Shoja to Jalori Pass",
+      "filmed": null,
+      "bike": null
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=NW6dLYkdeJA",
+      "title": "Ride to Jalori Pass | Tirthan Valley | Jibhi | Shoja | Delhi to Jalori Pass",
+      "channel": "Rahul Sharma",
+      "stretch": "Tirthan valley and Jibhi to Jalori Pass",
+      "filmed": null,
+      "bike": null
+    }
+  ],
+  "gaps": [
+    "Himachal entry toll: the two-wheeler exemption rests on a newspaper report of the Chief Minister's statement (26 March 2026). The official Toll Policy 2026-27 document on hptax.gov.in failed to open (certificate error), so it is not confirmed for motorcycles registered in other states.",
+    "Jalori Pass altitude: a local blog gives 3,120 metres; newspapers give 10,280 feet and 10,800 feet. No official figure found.",
+    "No closing or reopening dates found for the winters of 2020-21, 2021-22 and 2022-23.",
+    "No source found for rules in the Tirthan valley, including any entry fee for the Great Himalayan National Park.",
+    "The hours of the November 2025 heavy vehicle restriction sit in a document attached to the district notice, which was not opened.",
+    "No source found on whether any office sets timings for two-wheelers on the pass.",
+    "Videos: titles and channels were read from the video pages; filming dates and motorcycles are not confirmed."
+  ]
+}

@@ -1,0 +1,494 @@
+{
+  "slug": "adi-kailash-om-parvat",
+  "header": {
+    "highway": {
+      "value": "No national highway number found; beyond Dharchula the route follows the Tawaghat to Lipulekh road",
+      "source": {
+        "url": "https://www.thestatesman.com/india/300-stranded-as-landslide-washes-away-vital-road-in-uttarakhands-pithoragarh-district-1503186371.html",
+        "title": "Uttarakhand's landslide: Crucial Lipulekh-Tawaghat road cut off",
+        "kind": "news",
+        "opened": false,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      }
+    },
+    "highest_point": {
+      "name": "Jolingkong",
+      "altitude_m": 4572,
+      "source": {
+        "url": "https://pithoragarh.nic.in/chotakailash/",
+        "title": "Chota Kailash, District Pithoragarh",
+        "kind": "official",
+        "opened": true,
+        "source_date": "2026-09-21",
+        "accessed": "2026-09-28"
+      }
+    },
+    "usual_days": {
+      "value": "7 to 8 from Delhi or Kathgodam",
+      "source": {
+        "url": "https://blog.explurger.com/delhi-to-adi-kailash-bike-ride-guide-with-itinerary/",
+        "title": "Delhi to Adi Kailash & Om Parvat Bike Ride : Ultimate Guide",
+        "kind": "blog",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      }
+    },
+    "usual_season": {
+      "value": "May and June, then mid-September to early November; permits pause in the monsoon",
+      "source": {
+        "url": "https://rudraanshyatra.com/blog/adi-kailash-yatra-2026-latest-status-monsoon-suspensions-reopening-updates",
+        "title": "Adi Kailash Yatra 2026 Latest Status: Reopening Sept 15, Road Updates & Permits",
+        "kind": "operator",
+        "opened": true,
+        "source_date": "2026-09-14",
+        "accessed": "2026-09-28"
+      }
+    },
+    "one_line": "Uttarakhand, up the Kali river from Dharchula to Gunji, then to Nabhidhang for Om Parvat and to Jolingkong for Adi Kailash"
+  },
+  "rules": [
+    {
+      "id": "adi-kailash-inner-line-permit",
+      "kind": "permit",
+      "title": "Inner Line Permit needed beyond Chiyalekh",
+      "detail": "The district portal says the permit is compulsory past Chiyalekh for Adi Kailash and Om Parvat. Operators list identity proof, photographs, a medical certificate and recent police verification.",
+      "applies_to": "All travellers",
+      "set_by": "District Administration Pithoragarh; issued through the Sub-Divisional Magistrate, Dharchula",
+      "official_url": "https://ilppithoragarh.uk.gov.in/",
+      "has_official_order": true,
+      "source": {
+        "url": "https://ilppithoragarh.uk.gov.in/",
+        "title": "Inner Line Permit Portal, District Administration Pithoragarh",
+        "kind": "official",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      },
+      "history": [
+        {
+          "date": "2025-04-30",
+          "change": "Permits for the 2025 season began to be issued, as reported by an operator.",
+          "source": {
+            "url": "https://nagarjunatravels.com/blog/adi-kailash-yatra-2025-inner-line-permits-begin-from-april-30",
+            "title": "Adi Kailash Yatra 2025: Inner Line Permits Begin from April 30",
+            "kind": "operator",
+            "opened": true,
+            "source_date": "2025-04-12",
+            "accessed": "2026-09-28"
+          }
+        },
+        {
+          "date": "2026-08-11",
+          "change": "An operator guide still says there is no online application, although the district portal offers one.",
+          "source": {
+            "url": "https://himalayandreamtreks.in/blog/adi-kailash-permit/",
+            "title": "How to get Adi Kailash Permit 2026",
+            "kind": "operator",
+            "opened": true,
+            "source_date": "2026-08-11",
+            "accessed": "2026-09-28"
+          }
+        },
+        {
+          "date": "2026-10-19",
+          "change": "Portal notice: no permits issued from 19 to 26 October 2026 because of a running event.",
+          "source": {
+            "url": "https://ilppithoragarh.uk.gov.in/",
+            "title": "Inner Line Permit Portal, District Administration Pithoragarh",
+            "kind": "official",
+            "opened": true,
+            "source_date": null,
+            "accessed": "2026-09-28"
+          }
+        }
+      ]
+    },
+    {
+      "id": "adi-kailash-monsoon-permit-pause",
+      "kind": "timing",
+      "title": "Permits are paused during the monsoon",
+      "detail": "Operators report permit issue stopped on 1 July 2026 and resumed in mid to late September. No official notice of the pause was found.",
+      "applies_to": "All travellers",
+      "set_by": "Sub-Divisional Magistrate, Dharchula, as reported",
+      "official_url": null,
+      "has_official_order": false,
+      "source": {
+        "url": "https://rudraanshyatra.com/blog/adi-kailash-yatra-2026-latest-status-monsoon-suspensions-reopening-updates",
+        "title": "Adi Kailash Yatra 2026 Latest Status: Reopening Sept 15, Road Updates & Permits",
+        "kind": "operator",
+        "opened": true,
+        "source_date": "2026-09-14",
+        "accessed": "2026-09-28"
+      },
+      "history": [
+        {
+          "date": "2026-07-01",
+          "change": "Permit issue paused for the monsoon, as reported.",
+          "source": {
+            "url": "https://rudraanshyatra.com/blog/adi-kailash-yatra-2026-latest-status-monsoon-suspensions-reopening-updates",
+            "title": "Adi Kailash Yatra 2026 Latest Status: Reopening Sept 15, Road Updates & Permits",
+            "kind": "operator",
+            "opened": true,
+            "source_date": "2026-09-14",
+            "accessed": "2026-09-28"
+          }
+        },
+        {
+          "date": "2026-09",
+          "change": "Reopening reported, with 15 and 20 September both given.",
+          "source": {
+            "url": "https://rudraanshyatra.com/blog/adi-kailash-yatra-2026-latest-status-monsoon-suspensions-reopening-updates",
+            "title": "Adi Kailash Yatra 2026 Latest Status: Reopening Sept 15, Road Updates & Permits",
+            "kind": "operator",
+            "opened": true,
+            "source_date": "2026-09-14",
+            "accessed": "2026-09-28"
+          }
+        }
+      ]
+    },
+    {
+      "id": "adi-kailash-vehicles-beyond-dharchula",
+      "kind": "motorcycle-rule",
+      "title": "Own motorcycles beyond Dharchula: sources disagree",
+      "detail": "A rider guide and one operator say own motorcycles ride to Gunji and beyond with the permit and vehicle papers. Another operator says private vehicles are barred. No order found.",
+      "applies_to": "Motorcycles and private vehicles",
+      "set_by": "Not found",
+      "official_url": null,
+      "has_official_order": false,
+      "source": {
+        "url": "https://blog.explurger.com/delhi-to-adi-kailash-bike-ride-guide-with-itinerary/",
+        "title": "Delhi to Adi Kailash & Om Parvat Bike Ride : Ultimate Guide",
+        "kind": "blog",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      },
+      "history": [
+        {
+          "date": "2025",
+          "change": "Rider guide describes riding an own motorcycle the whole way, with three or four permit checks a day.",
+          "source": {
+            "url": "https://blog.explurger.com/delhi-to-adi-kailash-bike-ride-guide-with-itinerary/",
+            "title": "Delhi to Adi Kailash & Om Parvat Bike Ride : Ultimate Guide",
+            "kind": "blog",
+            "opened": true,
+            "source_date": null,
+            "accessed": "2026-09-28"
+          }
+        },
+        {
+          "date": "2026-08-11",
+          "change": "Operator guide says motorcycles and private vehicles are allowed but commercial vehicles from outside are not.",
+          "source": {
+            "url": "https://himalayandreamtreks.in/blog/adi-kailash-permit/",
+            "title": "How to get Adi Kailash Permit 2026",
+            "kind": "operator",
+            "opened": true,
+            "source_date": "2026-08-11",
+            "accessed": "2026-09-28"
+          }
+        },
+        {
+          "date": "2026",
+          "change": "Another operator guide says private vehicles are not permitted beyond Dharchula.",
+          "source": {
+            "url": "https://mountainiax.com/how-to-reach-adi-kailash-from-delhi-complete-2026/",
+            "title": "How to Reach Adi Kailash from Delhi - Complete 2026 Guide",
+            "kind": "operator",
+            "opened": true,
+            "source_date": null,
+            "accessed": "2026-09-28"
+          }
+        }
+      ]
+    },
+    {
+      "id": "adi-kailash-foreign-citizens-not-permitted",
+      "kind": "permit",
+      "title": "Foreign citizens are reported not to get permits",
+      "detail": "An operator guide says permits are not issued to foreign citizens or non-resident Indians. No official statement was found.",
+      "applies_to": "Foreign citizens",
+      "set_by": "Not found",
+      "official_url": null,
+      "has_official_order": false,
+      "source": {
+        "url": "https://himalayandreamtreks.in/blog/adi-kailash-permit/",
+        "title": "How to get Adi Kailash Permit 2026",
+        "kind": "operator",
+        "opened": true,
+        "source_date": "2026-08-11",
+        "accessed": "2026-09-28"
+      },
+      "history": []
+    },
+    {
+      "id": "uttarakhand-green-cess-two-wheelers-exempt",
+      "kind": "tax",
+      "title": "Uttarakhand green cess: two-wheelers exempt",
+      "detail": "Vehicles from other states pay a green cess on entry, read by number-plate cameras at the border. Two-wheelers, electric and gas vehicles are exempt. Official order not found.",
+      "applies_to": "Vehicles registered outside Uttarakhand",
+      "set_by": "Transport Department, Government of Uttarakhand",
+      "official_url": null,
+      "has_official_order": false,
+      "source": {
+        "url": "https://www.etvbharat.com/en/state/green-cess-has-started-being-collected-from-vehicles-coming-to-uttarakhand-from-other-states-enn26011404744",
+        "title": "Uttarakhand Begins Green Cess Collection From Out-of-State Vehicles, Faces Initial Technical Glitches",
+        "kind": "news",
+        "opened": true,
+        "source_date": "2026-01-14",
+        "accessed": "2026-09-28"
+      },
+      "history": [
+        {
+          "date": "2024-12-07",
+          "change": "Cess announced, with two-wheelers among the exempt classes.",
+          "source": {
+            "url": "https://www.tribuneindia.com/news/uttarakhand/green-cess-to-be-imposed-on-vehicles-entering-uttarakhand-evs-bikes-exempted/amp",
+            "title": "Green cess to be imposed on vehicles entering Uttarakhand; EVs, bikes exempted",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2024-12-07",
+            "accessed": "2026-09-28"
+          }
+        },
+        {
+          "date": "2026-01-01",
+          "change": "Planned start date missed because the systems were not ready.",
+          "source": {
+            "url": "https://www.etvbharat.com/en/state/green-cess-has-started-being-collected-from-vehicles-coming-to-uttarakhand-from-other-states-enn26011404744",
+            "title": "Uttarakhand Begins Green Cess Collection From Out-of-State Vehicles, Faces Initial Technical Glitches",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2026-01-14",
+            "accessed": "2026-09-28"
+          }
+        },
+        {
+          "date": "2026-01-14",
+          "change": "Collection began at border check points, with some technical faults on the first day.",
+          "source": {
+            "url": "https://www.etvbharat.com/en/state/green-cess-has-started-being-collected-from-vehicles-coming-to-uttarakhand-from-other-states-enn26011404744",
+            "title": "Uttarakhand Begins Green Cess Collection From Out-of-State Vehicles, Faces Initial Technical Glitches",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2026-01-14",
+            "accessed": "2026-09-28"
+          }
+        }
+      ]
+    }
+  ],
+  "season": {
+    "note": "The route opens in May once the Border Roads Organisation clears snow, pauses for the monsoon in July and August, and shuts with snow in November.",
+    "history": [
+      {
+        "year": 2025,
+        "connected": "2025-05-02",
+        "open_to_motorcycles": null,
+        "closed": null,
+        "note": "Operator report: permits from 30 April, season opened 2 May 2025. Closing date not found.",
+        "sources": [
+          {
+            "url": "https://nagarjunatravels.com/blog/adi-kailash-yatra-2025-inner-line-permits-begin-from-april-30",
+            "title": "Adi Kailash Yatra 2025: Inner Line Permits Begin from April 30",
+            "kind": "operator",
+            "opened": true,
+            "source_date": "2025-04-12",
+            "accessed": "2026-09-28"
+          }
+        ]
+      },
+      {
+        "year": 2026,
+        "connected": "2026-05",
+        "open_to_motorcycles": null,
+        "closed": null,
+        "note": "Operators give 1 May and 15 May for the opening. Permits paused 1 July; reopening reported for 15 to 20 September. Closing date not found.",
+        "sources": [
+          {
+            "url": "https://gotrektravels.com/blogs/adi-kailash-yatra-status-monsoon-updates/",
+            "title": "Adi Kailash Yatra 2026 Status: Monsoon Suspension & Reopening Update",
+            "kind": "operator",
+            "opened": true,
+            "source_date": "2026-07",
+            "accessed": "2026-09-28"
+          },
+          {
+            "url": "https://rudraanshyatra.com/blog/adi-kailash-yatra-2026-latest-status-monsoon-suspensions-reopening-updates",
+            "title": "Adi Kailash Yatra 2026 Latest Status: Reopening Sept 15, Road Updates & Permits",
+            "kind": "operator",
+            "opened": true,
+            "source_date": "2026-09-14",
+            "accessed": "2026-09-28"
+          },
+          {
+            "url": "https://mountainiax.com/adi-kailash-yatra-opening-closing-dates-2026/",
+            "title": "Adi Kailash Yatra Opening & Closing Dates 2026",
+            "kind": "operator",
+            "opened": true,
+            "source_date": null,
+            "accessed": "2026-09-28"
+          }
+        ]
+      }
+    ]
+  },
+  "authorities": [
+    {
+      "office": "District Administration Pithoragarh",
+      "announces": "Permit rules and dates when permits are not issued",
+      "stretch": "Beyond Chiyalekh to Adi Kailash and Om Parvat",
+      "channel": "Inner Line Permit portal notices",
+      "url": "https://ilppithoragarh.uk.gov.in/",
+      "source": {
+        "url": "https://ilppithoragarh.uk.gov.in/",
+        "title": "Inner Line Permit Portal, District Administration Pithoragarh",
+        "kind": "official",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      }
+    },
+    {
+      "office": "Sub-Divisional Magistrate, Dharchula",
+      "announces": "Issues permits and announces pauses and reopening, as reported by operators",
+      "stretch": "Dharchula to Gunji, Nabhidhang and Jolingkong",
+      "channel": "Office in Dharchula",
+      "url": null,
+      "source": {
+        "url": "https://gotrektravels.com/blogs/adi-kailash-yatra-status-monsoon-updates/",
+        "title": "Adi Kailash Yatra 2026 Status: Monsoon Suspension & Reopening Update",
+        "kind": "operator",
+        "opened": true,
+        "source_date": "2026-07",
+        "accessed": "2026-09-28"
+      }
+    },
+    {
+      "office": "Border Roads Organisation",
+      "announces": "Clears snow and landslides, as reported by operators",
+      "stretch": "Tawaghat to Gunji and beyond",
+      "channel": "Not found",
+      "url": "https://bro.gov.in/",
+      "source": {
+        "url": "https://rudraanshyatra.com/blog/adi-kailash-yatra-2026-latest-status-monsoon-suspensions-reopening-updates",
+        "title": "Adi Kailash Yatra 2026 Latest Status: Reopening Sept 15, Road Updates & Permits",
+        "kind": "operator",
+        "opened": true,
+        "source_date": "2026-09-14",
+        "accessed": "2026-09-28"
+      }
+    }
+  ],
+  "hazards": [
+    {
+      "title": "Landslides between Tawaghat and Sobla",
+      "detail": "Operators report landslides and debris flows here through the monsoon.",
+      "months": [
+        7,
+        8
+      ],
+      "source": {
+        "url": "https://rudraanshyatra.com/blog/adi-kailash-yatra-2026-latest-status-monsoon-suspensions-reopening-updates",
+        "title": "Adi Kailash Yatra 2026 Latest Status: Reopening Sept 15, Road Updates & Permits",
+        "kind": "operator",
+        "opened": true,
+        "source_date": "2026-09-14",
+        "accessed": "2026-09-28"
+      }
+    },
+    {
+      "title": "Landslides from Dharchula to Gunji and Jolingkong",
+      "detail": "An operator says the whole upper stretch is prone to slides and blockages in July and August.",
+      "months": [
+        7,
+        8
+      ],
+      "source": {
+        "url": "https://gotrektravels.com/blogs/adi-kailash-yatra-status-monsoon-updates/",
+        "title": "Adi Kailash Yatra 2026 Status: Monsoon Suspension & Reopening Update",
+        "kind": "operator",
+        "opened": true,
+        "source_date": "2026-07",
+        "accessed": "2026-09-28"
+      }
+    },
+    {
+      "title": "Road washed away near Lakhanpur",
+      "detail": "A newspaper reported about 100 metres of road lost to a hill collapse, stranding some 300 people. The article could not be opened.",
+      "months": [
+        5,
+        6
+      ],
+      "source": {
+        "url": "https://www.thestatesman.com/india/300-stranded-as-landslide-washes-away-vital-road-in-uttarakhands-pithoragarh-district-1503186371.html",
+        "title": "Uttarakhand's landslide: Crucial Lipulekh-Tawaghat road cut off",
+        "kind": "news",
+        "opened": false,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      }
+    },
+    {
+      "title": "No fuel beyond Dharchula",
+      "detail": "A rider guide reports no petrol pump after Dharchula and advises carrying extra fuel.",
+      "months": [],
+      "source": {
+        "url": "https://blog.explurger.com/delhi-to-adi-kailash-bike-ride-guide-with-itinerary/",
+        "title": "Delhi to Adi Kailash & Om Parvat Bike Ride : Ultimate Guide",
+        "kind": "blog",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      }
+    },
+    {
+      "title": "Snow in late October",
+      "detail": "A rider guide warns that snow often blocks the road from late October.",
+      "months": [
+        10,
+        11
+      ],
+      "source": {
+        "url": "https://blog.explurger.com/delhi-to-adi-kailash-bike-ride-guide-with-itinerary/",
+        "title": "Delhi to Adi Kailash & Om Parvat Bike Ride : Ultimate Guide",
+        "kind": "blog",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      }
+    }
+  ],
+  "videos": [
+    {
+      "url": "https://www.youtube.com/watch?v=-FgvhvZxHdM",
+      "title": "Adi Kailash on Bike – Dharchula to Gunji | Into the Remote Himalayas | Offbeat Uttarakhand EP 5",
+      "channel": "The Young Monk",
+      "stretch": "Dharchula to Gunji",
+      "filmed": null,
+      "bike": null
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=fWKqmn1Zbxc",
+      "title": "Riding On KAILASH MANSAROVAR Road! 🏍️ Dharchula to Gunji Bike Expedition",
+      "channel": "OnTheWayAman",
+      "stretch": "Dharchula to Gunji",
+      "filmed": null,
+      "bike": null
+    }
+  ],
+  "gaps": [
+    "Season history: no opening or closing dates found for 2022, 2023 or 2024, and no closing date for 2025. All dates found come from tour operators, not from the administration or newspapers.",
+    "The 2026 opening date differs between operators (1 May and 15 May), as does the September 2026 reopening (15, 18 and 20 September).",
+    "Permit fee, validity and the exact document list are not on the official portal's front page; documents listed come from operators.",
+    "Jolingkong altitude: the district page gives 4,572 metres in its text and 4,770 metres in its table.",
+    "No highway number found; the road name comes from a newspaper headline seen in search results.",
+    "Uttarakhand green cess: the exemption for two-wheelers is reported by two news outlets; no Transport Department order or official page was found.",
+    "Own motorcycles beyond Dharchula: three unofficial guides disagree and no order from the district administration was found. Rider videos show motorcycles on the Dharchula to Gunji road.",
+    "The rider guide on own motorcycles shows no printed date; 2025 is taken from the addresses of its images.",
+    "Videos: titles and channels were read from the video pages; filming dates and motorcycles are not confirmed."
+  ]
+}

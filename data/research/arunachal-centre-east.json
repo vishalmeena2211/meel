@@ -1,0 +1,290 @@
+{
+  "slug": "arunachal-centre-east",
+  "header": {
+    "highway": {
+      "value": "NH 13 (Trans-Arunachal Highway), Ziro to Tezu",
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/National_Highway_13_(India)",
+        "title": "National Highway 13 (India)",
+        "kind": "encyclopedia",
+        "opened": true,
+        "source_date": "2025-08-07",
+        "accessed": "2026-09-28"
+      }
+    },
+    "highest_point": {
+      "name": "Mayodia Pass",
+      "altitude_m": 2655,
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/Mayodia_Pass",
+        "title": "Mayodia Pass",
+        "kind": "encyclopedia",
+        "opened": true,
+        "source_date": "2026-09-24",
+        "accessed": "2026-09-28"
+      }
+    },
+    "usual_days": {
+      "value": "13",
+      "source": {
+        "url": "https://www.ourguest.in/stories/anini-mechuka-walong-road-trip-arunachal",
+        "title": "Arunachal Pradesh Bike Trip: Mechuka, Anini & Walong Travel Guide",
+        "kind": "operator",
+        "opened": true,
+        "source_date": "2025-11-26",
+        "accessed": "2026-09-28"
+      }
+    },
+    "usual_season": {
+      "value": "Late October to early November, and April to May",
+      "source": {
+        "url": "https://www.ourguest.in/stories/anini-mechuka-walong-road-trip-arunachal",
+        "title": "Arunachal Pradesh Bike Trip: Mechuka, Anini & Walong Travel Guide",
+        "kind": "operator",
+        "opened": true,
+        "source_date": "2025-11-26",
+        "accessed": "2026-09-28"
+      }
+    },
+    "one_line": "Central and eastern Arunachal Pradesh: Ziro and Mechuka, then the Dibang valley to Anini and the Lohit valley to Walong"
+  },
+  "rules": [
+    {
+      "id": "arunachal-inner-line-permit",
+      "kind": "permit",
+      "title": "Arunachal Pradesh: Inner Line Permit for Indian citizens",
+      "detail": "Applied for online. The tourist permit allows a stay of up to 14 days. The official page lists 300 rupees up to three days and 500 rupees up to 14.",
+      "applies_to": "Indian citizens from outside Arunachal Pradesh",
+      "set_by": "Government of Arunachal Pradesh",
+      "official_url": "https://www.eilp.arunachal.gov.in/preTuristEIlpKYC",
+      "has_official_order": true,
+      "source": {
+        "url": "https://www.eilp.arunachal.gov.in/preTuristEIlpKYC",
+        "title": "Tourist electronic Inner Line Permit: application page",
+        "kind": "official",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      },
+      "history": [
+        {
+          "date": "2022-11-17",
+          "change": "New online permit portal launched across the state.",
+          "source": {
+            "url": "https://eilp.arunachal.gov.in/",
+            "title": "Arunachal Pradesh electronic Inner Line Permit portal",
+            "kind": "official",
+            "opened": true,
+            "source_date": null,
+            "accessed": "2026-09-28"
+          }
+        }
+      ]
+    },
+    {
+      "id": "arunachal-inner-line-permit-counters",
+      "kind": "permit",
+      "title": "Arunachal Pradesh: permit counters outside the portal",
+      "detail": "A Tawang advisory names issuing offices at Delhi, Kolkata, Guwahati, Tezpur and Bhalukpong. West Kameng district also issues it at the Deputy Commissioner's office in Bomdila.",
+      "applies_to": "Indian citizens from outside Arunachal Pradesh",
+      "set_by": "Government of Arunachal Pradesh",
+      "official_url": "https://westkameng.nic.in/service/apply-e-ilp-online/",
+      "has_official_order": true,
+      "source": {
+        "url": "https://cdn.s3waas.gov.in/s39b70e8fe62e40c570a322f1b0b659098/uploads/2026/08/17878137188438.pdf",
+        "title": "Advisory, Office of the District Tourism Officer, Tawang",
+        "kind": "official",
+        "opened": true,
+        "source_date": "2026-08-27",
+        "accessed": "2026-09-28"
+      },
+      "history": []
+    },
+    {
+      "id": "arunachal-border-posts-extra-permission-claim",
+      "kind": "permit",
+      "title": "Arunachal Pradesh: extra permission near the border, per guide",
+      "detail": "A 2025 rider guide says army check posts beyond Mechuka want prior permission from the district authority, which homestays help arrange. No official page found.",
+      "applies_to": "All visitors",
+      "set_by": "Not established; reported by a guide",
+      "official_url": null,
+      "has_official_order": false,
+      "source": {
+        "url": "https://www.ourguest.in/stories/anini-mechuka-walong-road-trip-arunachal",
+        "title": "Arunachal Pradesh Bike Trip: Mechuka, Anini & Walong Travel Guide",
+        "kind": "operator",
+        "opened": true,
+        "source_date": "2025-11-26",
+        "accessed": "2026-09-28"
+      },
+      "history": []
+    },
+    {
+      "id": "arunachal-foreigners-protected-area-permit",
+      "kind": "permit",
+      "title": "Arunachal Pradesh: foreign citizens need a Protected Area Permit",
+      "detail": "The state permit portal is for Indian citizens only and sends foreign citizens to the Foreigners Regional Registration Office portal. Group size, validity and fee not found officially.",
+      "applies_to": "Foreign citizens",
+      "set_by": "Ministry of Home Affairs, Government of India",
+      "official_url": "https://www.eilp.arunachal.gov.in/preTuristEIlpKYC",
+      "has_official_order": true,
+      "source": {
+        "url": "https://www.eilp.arunachal.gov.in/preTuristEIlpKYC",
+        "title": "Tourist electronic Inner Line Permit: application page",
+        "kind": "official",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      },
+      "history": []
+    }
+  ],
+  "season": {
+    "note": "No road on this route has an announced seasonal closure; Mayodia Pass gets snow from November to March and the monsoon closes roads by landslide.",
+    "history": []
+  },
+  "authorities": [
+    {
+      "office": "Department of Information Technology and Communication, Government of Arunachal Pradesh",
+      "announces": "Runs the online Inner Line Permit portal",
+      "stretch": "All of Arunachal Pradesh",
+      "channel": "Permit portal",
+      "url": "https://eilp.arunachal.gov.in/",
+      "source": {
+        "url": "https://eilp.arunachal.gov.in/",
+        "title": "Arunachal Pradesh electronic Inner Line Permit portal",
+        "kind": "official",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      }
+    },
+    {
+      "office": "National Highways and Infrastructure Development Corporation Limited",
+      "announces": "Maintains National Highway 313 through a contractor; clears landslides",
+      "stretch": "Roing to Anini",
+      "channel": "Reported by regional news",
+      "url": null,
+      "source": {
+        "url": "https://archive.arunachaltimes.in/index.php/2025/03/23/anini-roing-nh-devastated-by-landslides/",
+        "title": "Anini-Roing NH devastated by landslides",
+        "kind": "news",
+        "opened": true,
+        "source_date": "2025-03-23",
+        "accessed": "2026-09-28"
+      }
+    },
+    {
+      "office": "Border Roads Organisation, Project Brahmank",
+      "announces": "Widens and restores the road to Mechuka",
+      "stretch": "Aalo, Pene, Tato, Mechuka",
+      "channel": "Statements reported by regional news",
+      "url": "https://bro.gov.in/",
+      "source": {
+        "url": "https://arunachalobserver.org/2025/08/29/bro-to-complete-strategically-important-road-in-arunachal-by-march-2026-ce/",
+        "title": "BRO to complete strategically vital road by March 2026: CE",
+        "kind": "news",
+        "opened": true,
+        "source_date": "2025-08-29",
+        "accessed": "2026-09-28"
+      }
+    }
+  ],
+  "hazards": [
+    {
+      "title": "Landslides on the Roing to Anini highway",
+      "detail": "In March 2025 slides hit several points for two weeks, including Angolin, Kano and Akobe. Each block took six hours to a day to clear.",
+      "months": [
+        3,
+        4,
+        6,
+        7,
+        8,
+        9
+      ],
+      "source": {
+        "url": "https://archive.arunachaltimes.in/index.php/2025/03/23/anini-roing-nh-devastated-by-landslides/",
+        "title": "Anini-Roing NH devastated by landslides",
+        "kind": "news",
+        "opened": true,
+        "source_date": "2025-03-23",
+        "accessed": "2026-09-28"
+      }
+    },
+    {
+      "title": "Landslides and road works between Tato and Mechuka",
+      "detail": "A slide near Shene Nallah shut the road in August 2025; it was cleared within a day. Widening between Pene and Tato was due by March 2026.",
+      "months": [
+        6,
+        7,
+        8,
+        9
+      ],
+      "source": {
+        "url": "https://arunachal24.in/arunachal-bro-restores-tato-menchuka-road-in-shi-yomi-within-24-hours-after-massive-landslide/",
+        "title": "Arunachal: BRO Restores Tato-Menchuka Road in Shi-Yomi Within 24 Hours After Massive Landslide",
+        "kind": "news",
+        "opened": true,
+        "source_date": "2025-08-04",
+        "accessed": "2026-09-28"
+      }
+    },
+    {
+      "title": "Snow at Mayodia Pass",
+      "detail": "The pass between Roing and Anini gets snow from November to March, heaviest in January and February.",
+      "months": [
+        11,
+        12,
+        1,
+        2,
+        3
+      ],
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/Mayodia_Pass",
+        "title": "Mayodia Pass",
+        "kind": "encyclopedia",
+        "opened": true,
+        "source_date": "2026-09-24",
+        "accessed": "2026-09-28"
+      }
+    },
+    {
+      "title": "Fuel pumps are rare",
+      "detail": "A rider guide warns never to run down to reserve; some villages sell petrol informally at a higher price.",
+      "months": [],
+      "source": {
+        "url": "https://www.ourguest.in/stories/anini-mechuka-walong-road-trip-arunachal",
+        "title": "Arunachal Pradesh Bike Trip: Mechuka, Anini & Walong Travel Guide",
+        "kind": "operator",
+        "opened": true,
+        "source_date": "2025-11-26",
+        "accessed": "2026-09-28"
+      }
+    },
+    {
+      "title": "Rockfall and narrow tracks",
+      "detail": "The same guide reports loose stones, sudden rockfall and narrow muddy tracks, with 180 to 200 kilometres taking six to seven hours.",
+      "months": [],
+      "source": {
+        "url": "https://www.ourguest.in/stories/anini-mechuka-walong-road-trip-arunachal",
+        "title": "Arunachal Pradesh Bike Trip: Mechuka, Anini & Walong Travel Guide",
+        "kind": "operator",
+        "opened": true,
+        "source_date": "2025-11-26",
+        "accessed": "2026-09-28"
+      }
+    }
+  ],
+  "videos": [],
+  "gaps": [
+    "No official source found for any permit beyond the Inner Line Permit for Mechuka, Anini, Walong or Kibithoo; the claim comes from one guide.",
+    "Highway numbers for the Aalo to Mechuka road and the Tezu to Walong road not sourced.",
+    "Highest point is given as Mayodia Pass; a guide mentions a higher army post beyond Mechuka, which is off this route and unverified.",
+    "No official road status page found for Arunachal Pradesh; blockages surface only through regional news.",
+    "A February 2025 washout near Anini is known from a search result only and was not opened.",
+    "No dated source found for road conditions on the Ziro to Daporijo stretch or the Tezu to Walong stretch.",
+    "Whether the Pene to Tato widening met its March 2026 target was not checked.",
+    "Protected Area Permit details for foreign citizens not found on an official page.",
+    "Videos not collected."
+  ]
+}

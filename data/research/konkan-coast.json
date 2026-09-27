@@ -1,0 +1,357 @@
+{
+  "slug": "konkan-coast",
+  "header": {
+    "highway": {
+      "value": "NH 66 (Panvel to Panaji) inland; the coast itself is on smaller roads joined by ferries",
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/National_Highway_66_(India)",
+        "title": "National Highway 66 (India)",
+        "kind": "encyclopedia",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      }
+    },
+    "highest_point": null,
+    "usual_days": {
+      "value": "4 (Mumbai to Goa, one way, using the ferries)",
+      "source": {
+        "url": "https://motoringworld.in/bike-features/a-ferry-tale-konkan-coast-ride/",
+        "title": "A Ferry Tale: Konkan Coast Ride - Motoring World",
+        "kind": "news",
+        "opened": true,
+        "source_date": "2023-01-26",
+        "accessed": "2026-09-28"
+      }
+    },
+    "usual_season": null,
+    "one_line": "Maharashtra and Goa, down the coast from Mumbai to Panaji by small roads and creek ferries"
+  },
+  "rules": [
+    {
+      "id": "atal-setu-two-wheelers-barred",
+      "kind": "motorcycle-rule",
+      "title": "Atal Setu sea link: two-wheelers not allowed",
+      "detail": "Two-wheelers, three-wheelers, cycles and animal carts may not enter the Sewri to Nhava Sheva sea link. Riders leaving Mumbai must use another road or the ferry.",
+      "applies_to": "All two-wheelers",
+      "set_by": "Mumbai Metropolitan Region Development Authority",
+      "official_url": "https://mmrda.maharashtra.gov.in/sites/default/files/2024-04/faq_atal_setu_15-03-2024_final_1_1.pdf",
+      "has_official_order": true,
+      "source": {
+        "url": "https://mmrda.maharashtra.gov.in/sites/default/files/2024-04/faq_atal_setu_15-03-2024_final_1_1.pdf",
+        "title": "Frequently Asked Questions on Atal Bihari Vajpayee Sewri Nhava Sheva Atal Setu",
+        "kind": "official",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      },
+      "history": [
+        {
+          "date": "2024-01-12",
+          "change": "Sea link opened to traffic, with two-wheelers and three-wheelers barred from the start.",
+          "source": {
+            "url": "https://en.wikipedia.org/wiki/Mumbai_Trans_Harbour_Link",
+            "title": "Mumbai Trans Harbour Link",
+            "kind": "encyclopedia",
+            "opened": true,
+            "source_date": null,
+            "accessed": "2026-09-28"
+          }
+        }
+      ]
+    },
+    {
+      "id": "mumbai-coastal-road-two-wheelers-barred",
+      "kind": "motorcycle-rule",
+      "title": "Mumbai Coastal Road: two-wheelers not allowed",
+      "detail": "Only cars and buses may use the Coastal Road from Marine Lines to Worli. Stated by Wikipedia; no government order was read.",
+      "applies_to": "All two-wheelers",
+      "set_by": "Brihanmumbai Municipal Corporation",
+      "official_url": null,
+      "has_official_order": false,
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/Coastal_Road_(Mumbai)",
+        "title": "Coastal Road (Mumbai)",
+        "kind": "encyclopedia",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      },
+      "history": [
+        {
+          "date": "2024-03-11",
+          "change": "First phase of the Coastal Road opened.",
+          "source": {
+            "url": "https://en.wikipedia.org/wiki/Coastal_Road_(Mumbai)",
+            "title": "Coastal Road (Mumbai)",
+            "kind": "encyclopedia",
+            "opened": true,
+            "source_date": null,
+            "accessed": "2026-09-28"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ferry-mumbai-mandwa-vehicle-ferry",
+      "kind": "timing",
+      "title": "Mumbai to Mandwa vehicle ferry: took motorcycles in 2023",
+      "detail": "A magazine ride in 2023 put motorcycles on the vehicle ferry from Ferry Wharf to Mandwa, running since 2018. Sailings change often; the operator's timetable could not be read.",
+      "applies_to": "All vehicles and passengers",
+      "set_by": "M2M Ferries",
+      "official_url": "https://m2mferries.in/schedule",
+      "has_official_order": false,
+      "source": {
+        "url": "https://motoringworld.in/bike-features/a-ferry-tale-konkan-coast-ride/",
+        "title": "A Ferry Tale: Konkan Coast Ride - Motoring World",
+        "kind": "news",
+        "opened": true,
+        "source_date": "2023-01-26",
+        "accessed": "2026-09-28"
+      },
+      "history": [
+        {
+          "date": "2018",
+          "change": "Vehicle ferry between Ferry Wharf and Mandwa began running.",
+          "source": {
+            "url": "https://en.wikipedia.org/wiki/RORO_ferries_in_India",
+            "title": "RORO ferries in India",
+            "kind": "encyclopedia",
+            "opened": true,
+            "source_date": null,
+            "accessed": "2026-09-28"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ferry-agardanda-dighi",
+      "kind": "timing",
+      "title": "Agardanda to Dighi ferry: carries motorcycles",
+      "detail": "Two operators alternate. From Agardanda 8.00 am to 8.30 pm; from Dighi 8.00 am to 9.00 pm. Motorcycles with rider are on the rate card.",
+      "applies_to": "All vehicles and passengers",
+      "set_by": "Suvarnadurga Shipping and Marine Services, with Dighi Jalvahatuk Sahakari Sanstha",
+      "official_url": "https://carferry.in/dighi-agardande/",
+      "has_official_order": false,
+      "source": {
+        "url": "https://carferry.in/wp-content/uploads/2025/10/Agardanda-Dighi-Time-Table-3rd-OCT-2025.png",
+        "title": "Agardanda - Dighi ferry boat timetable",
+        "kind": "operator",
+        "opened": true,
+        "source_date": "2025-10-03",
+        "accessed": "2026-09-28"
+      },
+      "history": [
+        {
+          "date": "2025-10-03",
+          "change": "Revised timetable took effect.",
+          "source": {
+            "url": "https://carferry.in/dighi-agardande/",
+            "title": "Dighi - Agardande, Suvarnadurga Shipping and Marine Services",
+            "kind": "operator",
+            "opened": true,
+            "source_date": null,
+            "accessed": "2026-09-28"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ferry-veshvi-bagmandale",
+      "kind": "timing",
+      "title": "Bagmandale to Veshvi ferry: carries motorcycles",
+      "detail": "From Bagmandale 7.30 am to 10.10 pm; from Veshvi 7.00 am to 10.00 pm, roughly hourly. Motorcycles with rider are on the rate card.",
+      "applies_to": "All vehicles and passengers",
+      "set_by": "Suvarnadurga Shipping and Marine Services",
+      "official_url": "https://carferry.in/veshvi-bagmandale/",
+      "has_official_order": false,
+      "source": {
+        "url": "https://carferry.in/wp-content/uploads/2021/03/Veshvi-bagmandle-timetable.jpg",
+        "title": "Time Table of Veshvi - Bagmandale Ferry Service",
+        "kind": "operator",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      },
+      "history": []
+    },
+    {
+      "id": "ferry-dabhol-dhopave",
+      "kind": "timing",
+      "title": "Dabhol to Dhopave ferry: carries motorcycles",
+      "detail": "From Dabhol 6.30 am to 10.00 pm; from Dhopave 6.45 am to 10.10 pm, about every 45 minutes. Motorcycles with rider are on the rate card.",
+      "applies_to": "All vehicles and passengers",
+      "set_by": "Suvarnadurga Shipping and Marine Services",
+      "official_url": "https://carferry.in/dabhol-dhopave/",
+      "has_official_order": false,
+      "source": {
+        "url": "https://carferry.in/wp-content/uploads/2021/03/Dabhol-Dhopave-timetable-1.jpg",
+        "title": "Time Table for Dabhol - Dhopave Ferry Service",
+        "kind": "operator",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      },
+      "history": [
+        {
+          "date": "2022-04-01",
+          "change": "Operator's current rate card took effect; it lists motorcycles with rider.",
+          "source": {
+            "url": "https://carferry.in/wp-content/uploads/2022/04/Dabhol.pdf",
+            "title": "Dabhol - Dhopave ferry boat service, new ticket rates",
+            "kind": "operator",
+            "opened": true,
+            "source_date": "2022-04-01",
+            "accessed": "2026-09-28"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ferry-tavsal-jaigad",
+      "kind": "timing",
+      "title": "Tavsal to Jaigad ferry: carries motorcycles",
+      "detail": "From Tavsal 6.40 am to 9.40 pm; from Jaigad 7.00 am to 10.00 pm, roughly hourly. Motorcycles with rider are on the rate card.",
+      "applies_to": "All vehicles and passengers",
+      "set_by": "Suvarnadurga Shipping and Marine Services",
+      "official_url": "https://carferry.in/jaigad-tawsal/",
+      "has_official_order": false,
+      "source": {
+        "url": "https://carferry.in/wp-content/uploads/2021/03/Jaigad-tawsal-timetable.jpg",
+        "title": "Tawsal - Jaigad Ferry Service timetable",
+        "kind": "operator",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      },
+      "history": []
+    },
+    {
+      "id": "ferry-night-crossings-emergency-only",
+      "kind": "timing",
+      "title": "Creek ferries: no regular crossings late at night",
+      "detail": "Crossings between 11 pm and 6 am run only as emergency or extra services, and depend on season and tide. Plan to reach each jetty before the last boat.",
+      "applies_to": "All vehicles and passengers",
+      "set_by": "Suvarnadurga Shipping and Marine Services",
+      "official_url": "https://carferry.in/",
+      "has_official_order": false,
+      "source": {
+        "url": "https://carferry.in/wp-content/uploads/2021/03/Veshvi-bagmandle-timetable.jpg",
+        "title": "Time Table of Veshvi - Bagmandale Ferry Service",
+        "kind": "operator",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      },
+      "history": []
+    }
+  ],
+  "season": {
+    "note": "No sourced best months were found; the monsoon brings landslides on the ghats of the Mumbai to Goa highway in July.",
+    "history": []
+  },
+  "authorities": [
+    {
+      "office": "Suvarnadurga Shipping and Marine Services",
+      "announces": "Timetables and rate cards for the Dabhol, Jaigad, Veshvi and Agardanda creek ferries",
+      "stretch": "Murud to Ganpatipule, four creek crossings",
+      "channel": "Website",
+      "url": "https://carferry.in/",
+      "source": {
+        "url": "https://carferry.in/",
+        "title": "Suvarnadurga Shipping and Marine Services",
+        "kind": "operator",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      }
+    },
+    {
+      "office": "Mumbai Metropolitan Region Development Authority",
+      "announces": "Rules on which vehicles may use the Atal Setu sea link",
+      "stretch": "Sewri to Nhava Sheva",
+      "channel": "Website",
+      "url": "https://mmrda.maharashtra.gov.in/",
+      "source": {
+        "url": "https://mmrda.maharashtra.gov.in/sites/default/files/2024-04/faq_atal_setu_15-03-2024_final_1_1.pdf",
+        "title": "Frequently Asked Questions on Atal Bihari Vajpayee Sewri Nhava Sheva Atal Setu",
+        "kind": "official",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      }
+    }
+  ],
+  "hazards": [
+    {
+      "title": "Landslides at Kashedi Ghat in the monsoon",
+      "detail": "Landslides shut or disrupted the Mumbai to Goa highway here in July 2025 and July 2026; traffic was sent by the Mahad to Vinhere road in 2026.",
+      "months": [
+        7
+      ],
+      "source": {
+        "url": "https://www.lokshahi.com/news/landslide-on-mumbai-goa-highway-highway-completely-closed-motorists-urged-to-use-this-alternative-route-12137216",
+        "title": "Landslide on Mumbai-Goa Highway; highway completely closed",
+        "kind": "news",
+        "opened": true,
+        "source_date": "2026-07-06",
+        "accessed": "2026-09-28"
+      }
+    },
+    {
+      "title": "Narrow undivided stretches on the Mumbai to Goa highway",
+      "detail": "Much of the highway has no divider, which leads to head-on collisions; the surface is broken in places.",
+      "months": [],
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/National_Highway_66_(India)",
+        "title": "National Highway 66 (India)",
+        "kind": "encyclopedia",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      }
+    },
+    {
+      "title": "Gravel, cattle and buses on the coast roads",
+      "detail": "A magazine ride report notes loose gravel and rubble patches, cattle on the road and heavy state bus traffic on the village roads.",
+      "months": [],
+      "source": {
+        "url": "https://motoringworld.in/bike-features/a-ferry-tale-konkan-coast-ride/",
+        "title": "A Ferry Tale: Konkan Coast Ride - Motoring World",
+        "kind": "news",
+        "opened": true,
+        "source_date": "2023-01-26",
+        "accessed": "2026-09-28"
+      }
+    }
+  ],
+  "videos": [
+    {
+      "url": "https://www.youtube.com/watch?v=R-HEqQSaMyI",
+      "title": "Mumbai to Goa Bike Ride 2025 | Kokan Coastal Rout Adventure",
+      "channel": "Karthik Advento",
+      "stretch": "Mumbai to Goa by the coast",
+      "filmed": "2025",
+      "bike": null
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=Tizncl_6-zo",
+      "title": "Coastal Road Mumbai To Goa | Konkan Road Trip",
+      "channel": "Footloose Dev",
+      "stretch": "Mumbai to Goa by the coast",
+      "filmed": null,
+      "bike": null
+    }
+  ],
+  "gaps": [
+    "Best months and months to avoid: no source found. The Ratnagiri and Raigad district tourism pages do not state a season.",
+    "Mumbai to Mandwa vehicle ferry: the operator's two sites showed no readable text, so current sailings, and whether the ferry stops in the monsoon, are not recorded. Search results disagreed on monsoon running.",
+    "No source found for a ferry at Rohini, or for whether the creek ferries stop in the monsoon. The operator says only that the Dabhol service runs in all seasons.",
+    "Three of the four ferry timetables are images uploaded in 2021 with no date printed; they may be out of date. Fares are left out because the source is the operator, not a government page.",
+    "The Atal Setu document carries no printed date; its file name suggests March 2024.",
+    "No government order was read for the Mumbai Coastal Road rule.",
+    "Goa rules for the last stretch into Panaji are recorded in the file for the Goa, Gokarna and Karnataka coast route.",
+    "A landslide at Kashedi Ghat on 2025-07-15 is reported by All India Radio news at https://www.newsonair.gov.in/maharashtra-konkan-receives-heavy-rainfall-traffic-disruption-on-mumbai-goa-highway",
+    "Videos: the pages give upload dates, not filming dates, so 'filmed' is filled only where the title names a date. Uploads, in order: 2025-12, 2019-12."
+  ]
+}

@@ -1,0 +1,298 @@
+{
+  "slug": "mussoorie-dhanaulti-chakrata",
+  "header": {
+    "highway": {
+      "value": null,
+      "source": null
+    },
+    "highest_point": {
+      "name": "Dhanaulti",
+      "altitude_m": 2286,
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/Dhanaulti",
+        "title": "Dhanaulti",
+        "kind": "encyclopedia",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      }
+    },
+    "usual_days": {
+      "value": "2 to 3 nights for Mussoorie and nearby; 2 to 3 days more for Chakrata",
+      "source": {
+        "url": "https://www.waytoindia.com/travel-guide/uttarakhand/mussoorie",
+        "title": "Mussoorie Travel Guide: Best Time, How to Reach & Things to Do",
+        "kind": "operator",
+        "opened": true,
+        "source_date": "2026-06",
+        "accessed": "2026-09-28"
+      }
+    },
+    "usual_season": {
+      "value": "March to June and September to November",
+      "source": {
+        "url": "https://www.waytoindia.com/travel-guide/uttarakhand/mussoorie",
+        "title": "Mussoorie Travel Guide: Best Time, How to Reach & Things to Do",
+        "kind": "operator",
+        "opened": true,
+        "source_date": "2026-06",
+        "accessed": "2026-09-28"
+      }
+    },
+    "one_line": "Uttarakhand, from Dehradun up to Mussoorie, east to Dhanaulti, and west past Kempty Falls to the cantonment town of Chakrata"
+  },
+  "rules": [
+    {
+      "id": "mussoorie-tourist-registration",
+      "kind": "document",
+      "title": "Mussoorie: online registration before visiting",
+      "detail": "Visitors register online before arrival and give their vehicle number. Reports differ on the portal and on where passes are checked. Two-wheelers are not mentioned.",
+      "applies_to": "All tourists",
+      "set_by": "Government of Uttarakhand, on a National Green Tribunal direction as reported",
+      "official_url": "http://registrationandtouristcare.uk.gov.in/mussoorie/",
+      "has_official_order": true,
+      "source": {
+        "url": "https://www.etvbharat.com/en/!bharat/online-registration-mandatory-now-for-visiting-mussoorie-step-mooted-to-control-traffic-enn25073104544",
+        "title": "Online Registration Mandatory Now For Visiting Mussoorie: Step Mooted To Control Traffic",
+        "kind": "news",
+        "opened": true,
+        "source_date": "2025-07-31",
+        "accessed": "2026-09-28"
+      },
+      "history": [
+        {
+          "date": "2025-07-08",
+          "change": "Announced, with registration on the Dehradun Smart City portal and police checks at Kincraig and Picture Palace.",
+          "source": {
+            "url": "https://www.outlooktraveller.com/News/to-visit-mussoorie-this-season-youll-need-to-register-first-heres-why",
+            "title": "Mussoorie Introduces Mandatory Tourist Registration From August 1",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2025-07-08",
+            "accessed": "2026-09-28"
+          }
+        },
+        {
+          "date": "2025-08-01",
+          "change": "Registration became compulsory; hotels and homestays made to verify it.",
+          "source": {
+            "url": "https://www.etvbharat.com/en/!bharat/online-registration-mandatory-now-for-visiting-mussoorie-step-mooted-to-control-traffic-enn25073104544",
+            "title": "Online Registration Mandatory Now For Visiting Mussoorie: Step Mooted To Control Traffic",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2025-07-31",
+            "accessed": "2026-09-28"
+          }
+        }
+      ]
+    },
+    {
+      "id": "mussoorie-eco-tax-outside-vehicles",
+      "kind": "tax",
+      "title": "Mussoorie eco tax on vehicles from other states",
+      "detail": "An operator guide reports a tax taken at the barrier near Kuthal Gate from vehicles registered outside Uttarakhand. It does not say whether two-wheelers pay. No official page found.",
+      "applies_to": "Vehicles registered outside Uttarakhand",
+      "set_by": "Not found",
+      "official_url": null,
+      "has_official_order": false,
+      "source": {
+        "url": "https://www.waytoindia.com/travel-guide/uttarakhand/mussoorie",
+        "title": "Mussoorie Travel Guide: Best Time, How to Reach & Things to Do",
+        "kind": "operator",
+        "opened": true,
+        "source_date": "2026-06",
+        "accessed": "2026-09-28"
+      },
+      "history": []
+    },
+    {
+      "id": "mussoorie-mall-road-evening-vehicle-ban",
+      "kind": "timing",
+      "title": "Mussoorie Mall Road: no vehicles in the evening",
+      "detail": "An operator guide reports vehicles are kept off Mall Road from about 16:00 to 23:00, with hours changing by season. No official notice found.",
+      "applies_to": "All vehicles",
+      "set_by": "Mussoorie municipality, as reported",
+      "official_url": null,
+      "has_official_order": false,
+      "source": {
+        "url": "https://www.waytoindia.com/travel-guide/uttarakhand/mussoorie",
+        "title": "Mussoorie Travel Guide: Best Time, How to Reach & Things to Do",
+        "kind": "operator",
+        "opened": true,
+        "source_date": "2026-06",
+        "accessed": "2026-09-28"
+      },
+      "history": []
+    },
+    {
+      "id": "chakrata-foreign-citizens-restricted",
+      "kind": "permit",
+      "title": "Chakrata: restricted for foreign citizens",
+      "detail": "Chakrata is a military cantonment with restricted access. A blog says foreign citizens need a permit in advance from the District Magistrate, Dehradun. Indian citizens show identity. No order found.",
+      "applies_to": "Foreign citizens",
+      "set_by": "Not found; the cantonment is under the Ministry of Defence",
+      "official_url": "https://chakrata.cantt.gov.in/",
+      "has_official_order": false,
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/Chakrata",
+        "title": "Chakrata",
+        "kind": "encyclopedia",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      },
+      "history": [
+        {
+          "date": "2026-03-25",
+          "change": "Blog says those without a permit are turned back at military check posts.",
+          "source": {
+            "url": "https://exploreuttarakhandnow.com/chakrata-complete-travel-guide-offbeat-uttarakhand/",
+            "title": "Chakrata Travel Guide 2026: The Best Offbeat Hill Station in Uttarakhand",
+            "kind": "blog",
+            "opened": true,
+            "source_date": "2026-03-25",
+            "accessed": "2026-09-28"
+          }
+        }
+      ]
+    },
+    {
+      "id": "uttarakhand-green-cess-two-wheelers-exempt",
+      "kind": "tax",
+      "title": "Uttarakhand green cess: two-wheelers exempt",
+      "detail": "Vehicles from other states pay a green cess on entry, read by number-plate cameras at the border. Two-wheelers, electric and gas vehicles are exempt. Official order not found.",
+      "applies_to": "Vehicles registered outside Uttarakhand",
+      "set_by": "Transport Department, Government of Uttarakhand",
+      "official_url": null,
+      "has_official_order": false,
+      "source": {
+        "url": "https://www.etvbharat.com/en/state/green-cess-has-started-being-collected-from-vehicles-coming-to-uttarakhand-from-other-states-enn26011404744",
+        "title": "Uttarakhand Begins Green Cess Collection From Out-of-State Vehicles, Faces Initial Technical Glitches",
+        "kind": "news",
+        "opened": true,
+        "source_date": "2026-01-14",
+        "accessed": "2026-09-28"
+      },
+      "history": [
+        {
+          "date": "2024-12-07",
+          "change": "Cess announced, with two-wheelers among the exempt classes.",
+          "source": {
+            "url": "https://www.tribuneindia.com/news/uttarakhand/green-cess-to-be-imposed-on-vehicles-entering-uttarakhand-evs-bikes-exempted/amp",
+            "title": "Green cess to be imposed on vehicles entering Uttarakhand; EVs, bikes exempted",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2024-12-07",
+            "accessed": "2026-09-28"
+          }
+        },
+        {
+          "date": "2026-01-01",
+          "change": "Planned start date missed because the systems were not ready.",
+          "source": {
+            "url": "https://www.etvbharat.com/en/state/green-cess-has-started-being-collected-from-vehicles-coming-to-uttarakhand-from-other-states-enn26011404744",
+            "title": "Uttarakhand Begins Green Cess Collection From Out-of-State Vehicles, Faces Initial Technical Glitches",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2026-01-14",
+            "accessed": "2026-09-28"
+          }
+        },
+        {
+          "date": "2026-01-14",
+          "change": "Collection began at border check points, with some technical faults on the first day.",
+          "source": {
+            "url": "https://www.etvbharat.com/en/state/green-cess-has-started-being-collected-from-vehicles-coming-to-uttarakhand-from-other-states-enn26011404744",
+            "title": "Uttarakhand Begins Green Cess Collection From Out-of-State Vehicles, Faces Initial Technical Glitches",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2026-01-14",
+            "accessed": "2026-09-28"
+          }
+        }
+      ]
+    }
+  ],
+  "season": {
+    "note": "No road on this route closes for a season; Dhanaulti and Chakrata get snow in winter and the Chakrata road can shut in heavy monsoon rain.",
+    "history": []
+  },
+  "authorities": [
+    {
+      "office": "Uttarakhand Tourism Development Board",
+      "announces": "Mussoorie registration",
+      "stretch": "Mussoorie",
+      "channel": "Registration portal",
+      "url": "http://registrationandtouristcare.uk.gov.in/mussoorie/",
+      "source": {
+        "url": "http://registrationandtouristcare.uk.gov.in/mussoorie/",
+        "title": "Mussoorie registration portal, Uttarakhand Tourism Development Board",
+        "kind": "official",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      }
+    },
+    {
+      "office": "Chakrata Cantonment Board",
+      "announces": "Runs the cantonment; its website posts no visitor rules",
+      "stretch": "Chakrata",
+      "channel": "Website",
+      "url": "https://chakrata.cantt.gov.in/",
+      "source": {
+        "url": "https://chakrata.cantt.gov.in/",
+        "title": "Chakrata Cantonment Board",
+        "kind": "official",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      }
+    }
+  ],
+  "hazards": [
+    {
+      "title": "Landslides on the road to Chakrata",
+      "detail": "A blog reports a narrow, winding road with landslides in the monsoon, shut at times in heavy rain.",
+      "months": [
+        7,
+        8,
+        9
+      ],
+      "source": {
+        "url": "https://exploreuttarakhandnow.com/chakrata-complete-travel-guide-offbeat-uttarakhand/",
+        "title": "Chakrata Travel Guide 2026: The Best Offbeat Hill Station in Uttarakhand",
+        "kind": "blog",
+        "opened": true,
+        "source_date": "2026-03-25",
+        "accessed": "2026-09-28"
+      }
+    },
+    {
+      "title": "Winter snow at Chakrata and Dhanaulti",
+      "detail": "Snow can disrupt road access in December and January.",
+      "months": [
+        12,
+        1
+      ],
+      "source": {
+        "url": "https://exploreuttarakhandnow.com/chakrata-complete-travel-guide-offbeat-uttarakhand/",
+        "title": "Chakrata Travel Guide 2026: The Best Offbeat Hill Station in Uttarakhand",
+        "kind": "blog",
+        "opened": true,
+        "source_date": "2026-03-25",
+        "accessed": "2026-09-28"
+      }
+    }
+  ],
+  "videos": [],
+  "gaps": [
+    "No highway numbers sourced for the Dehradun to Mussoorie, Mussoorie to Dhanaulti or Kalsi to Chakrata roads.",
+    "Chakrata: no official page states the rule for foreign citizens. Sources disagree on who grants permission (the District Magistrate in Dehradun or the military command). The cantonment board website says nothing on visitors.",
+    "No source found for any gate timings on the Kalsi to Chakrata road.",
+    "Mussoorie registration: whether it applies to motorcycles, and whether it runs all year or only in peak periods, was not confirmed. The official Mussoorie page opened is for hotel owners; the guest registration page was not opened.",
+    "Mussoorie eco tax and the Mall Road vehicle ban are reported by one operator guide; no municipal notice found. Amounts left out.",
+    "No source found for rules or fees at Kempty Falls.",
+    "Uttarakhand green cess: the exemption for two-wheelers is reported by two news outlets; no Transport Department order or official page was found.",
+    "No rider videos collected; the search budget ran out before this route."
+  ]
+}

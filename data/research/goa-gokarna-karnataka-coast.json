@@ -1,0 +1,365 @@
+{
+  "slug": "goa-gokarna-karnataka-coast",
+  "header": {
+    "highway": {
+      "value": "NH 66 (Panaji, Karwar, Murudeshwar, Udupi, Mangaluru)",
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/National_Highway_66_(India)",
+        "title": "National Highway 66 (India)",
+        "kind": "encyclopedia",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      }
+    },
+    "highest_point": null,
+    "usual_days": null,
+    "usual_season": null,
+    "one_line": "Goa and Karnataka, down the west coast from Panaji to Mangaluru"
+  },
+  "rules": [
+    {
+      "id": "goa-helmet-rider-and-pillion",
+      "kind": "motorcycle-rule",
+      "title": "Goa: helmet compulsory for rider and pillion",
+      "detail": "Both people on a two-wheeler must wear a helmet. The Chief Minister told the assembly in January 2026 that the Transport Department has issued a circular.",
+      "applies_to": "All two-wheeler riders and pillion riders",
+      "set_by": "Directorate of Transport, Government of Goa, and Goa Traffic Police",
+      "official_url": null,
+      "has_official_order": true,
+      "source": {
+        "url": "https://www.prudentmedia.in/politics/helmets-mandatory-for-rider-and-pillion-cm/35481.html",
+        "title": "Helmets Mandatory for Rider and Pillion: CM",
+        "kind": "news",
+        "opened": true,
+        "source_date": "2026-01-14",
+        "accessed": "2026-09-28"
+      },
+      "history": [
+        {
+          "date": "2017-06-21",
+          "change": "Traffic police circular made certified helmets compulsory for riders and pillion riders, with both liable to prosecution.",
+          "source": {
+            "url": "https://www.dnaindia.com/india/report-helmets-made-mandatory-for-two-wheeler-riders-in-goa-2479346",
+            "title": "Helmets made mandatory for two-wheeler riders in Goa",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2017-06-21",
+            "accessed": "2026-09-28"
+          }
+        },
+        {
+          "date": "2026-01",
+          "change": "Chief Minister told the assembly that a Transport Department circular makes helmets mandatory for rider and pillion.",
+          "source": {
+            "url": "https://www.prudentmedia.in/politics/helmets-mandatory-for-rider-and-pillion-cm/35481.html",
+            "title": "Helmets Mandatory for Rider and Pillion: CM",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2026-01-14",
+            "accessed": "2026-09-28"
+          }
+        }
+      ]
+    },
+    {
+      "id": "goa-rented-motorcycles-licensed-scheme",
+      "kind": "document",
+      "title": "Goa: rented motorcycles run under a licensed scheme",
+      "detail": "Hire motorcycles are licensed under the Rent a Motorcycle Scheme, 1997, and the renter signs an undertaking. The Transport Department lists the orders and the form.",
+      "applies_to": "Anyone renting a motorcycle in Goa",
+      "set_by": "State Transport Authority and Directorate of Transport, Government of Goa",
+      "official_url": "https://www.goatransport.gov.in/Notification",
+      "has_official_order": true,
+      "source": {
+        "url": "https://www.goatransport.gov.in/Notification",
+        "title": "Notification, Department of Transport, Government of Goa",
+        "kind": "official",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      },
+      "history": [
+        {
+          "date": "2019-03-12",
+          "change": "State Transport Authority order set the procedure to renew, replace, transfer and add vehicles on a rent a motorcycle licence.",
+          "source": {
+            "url": "https://www.goatransport.gov.in/Notification",
+            "title": "Notification, Department of Transport, Government of Goa",
+            "kind": "official",
+            "opened": true,
+            "source_date": null,
+            "accessed": "2026-09-28"
+          }
+        },
+        {
+          "date": "2019-07-03",
+          "change": "State Transport Authority order on transfer of a rent a motorcycle licence.",
+          "source": {
+            "url": "https://www.goatransport.gov.in/Notification",
+            "title": "Notification, Department of Transport, Government of Goa",
+            "kind": "official",
+            "opened": true,
+            "source_date": null,
+            "accessed": "2026-09-28"
+          }
+        }
+      ]
+    },
+    {
+      "id": "goa-check-rental-permit-online",
+      "kind": "document",
+      "title": "Goa: check a hire vehicle's permit online",
+      "detail": "The Transport Department site has a lookup that takes a Goa registration number and shows whether the vehicle holds a permit.",
+      "applies_to": "Anyone renting a vehicle in Goa",
+      "set_by": "Directorate of Transport, Government of Goa",
+      "official_url": "https://www.goatransport.gov.in/KnowRentedVehicle",
+      "has_official_order": true,
+      "source": {
+        "url": "https://www.goatransport.gov.in/KnowRentedVehicle",
+        "title": "Know Vehicle Permit, Department of Transport, Government of Goa",
+        "kind": "official",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      },
+      "history": []
+    },
+    {
+      "id": "goa-private-two-wheelers-not-for-hire",
+      "kind": "motorcycle-rule",
+      "title": "Goa: hiring a privately registered two-wheeler is illegal",
+      "detail": "Only vehicles registered for hire may be rented. The government said in 2022 that owners renting out private vehicles face penalties and possible licence suspension.",
+      "applies_to": "Anyone renting a two-wheeler in Goa",
+      "set_by": "Directorate of Transport, Government of Goa",
+      "official_url": null,
+      "has_official_order": false,
+      "source": {
+        "url": "https://www.thegoan.net/goa-news/govt-pulls-brakes-on-those-hiring-private-vehicles/90411.html",
+        "title": "Govt pulls brakes on those hiring private vehicles",
+        "kind": "news",
+        "opened": true,
+        "source_date": "2022-10-20",
+        "accessed": "2026-09-28"
+      },
+      "history": [
+        {
+          "date": "2022-10",
+          "change": "Government announced action against private vehicles rented to tourists; the Transport Minister said hire operators would have to supply certified helmets.",
+          "source": {
+            "url": "https://www.thegoan.net/goa-news/govt-pulls-brakes-on-those-hiring-private-vehicles/90411.html",
+            "title": "Govt pulls brakes on those hiring private vehicles",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2022-10-20",
+            "accessed": "2026-09-28"
+          }
+        }
+      ]
+    },
+    {
+      "id": "goa-rented-motorcycles-stay-in-goa",
+      "kind": "motorcycle-rule",
+      "title": "Goa hire motorcycles usually may not leave the state",
+      "detail": "A rental company says many hire vehicles are tracked and fenced to stop them crossing the state border. This is a rental term; no government order was found.",
+      "applies_to": "Anyone renting a motorcycle in Goa",
+      "set_by": "Rental operators",
+      "official_url": null,
+      "has_official_order": false,
+      "source": {
+        "url": "https://motoshare.in/blog/bike-and-car-renting-laws-in-goa/",
+        "title": "Bike and Car Renting Laws in Goa",
+        "kind": "operator",
+        "opened": true,
+        "source_date": "2025-02-20",
+        "accessed": "2026-09-28"
+      },
+      "history": []
+    },
+    {
+      "id": "goa-no-vehicles-on-beaches",
+      "kind": "motorcycle-rule",
+      "title": "Goa: no riding on beaches",
+      "detail": "Driving any vehicle on a beach is an offence. Beaches are open from 7 am to sunset. Carry your licence while riding.",
+      "applies_to": "All visitors",
+      "set_by": "Department of Tourism, Government of Goa",
+      "official_url": "https://goatourism.gov.in/wp-content/uploads/2018/12/Tourism-Deparment-Do-and-Dont.pdf",
+      "has_official_order": true,
+      "source": {
+        "url": "https://goatourism.gov.in/wp-content/uploads/2018/12/Tourism-Deparment-Do-and-Dont.pdf",
+        "title": "Do and Don'ts Advice / Instruction to tourists by Tourism Department",
+        "kind": "official",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      },
+      "history": []
+    },
+    {
+      "id": "uttara-kannada-monsoon-waterfall-ban",
+      "kind": "timing",
+      "title": "Uttara Kannada: monsoon ban on waterfalls and danger spots",
+      "detail": "In July 2026 the district administration barred tourists from dangerous areas and from bathing in waterfalls, including those beside the highway near Karwar and Ankola.",
+      "applies_to": "All visitors",
+      "set_by": "Uttara Kannada district administration",
+      "official_url": null,
+      "has_official_order": true,
+      "source": {
+        "url": "https://newsable.asianetnews.com/gallery/karnataka-news/shirur-uttara-kannada-monsoon-alert-tourists-risk-lives-temporary-waterfalls-landslide-warnings-kkg88co",
+        "title": "Uttara Kannada Monsoon Alert: Tourists Risk Lives at Temporary Waterfalls Amid Landslide Warnings",
+        "kind": "news",
+        "opened": true,
+        "source_date": "2026-07-03",
+        "accessed": "2026-09-28"
+      },
+      "history": []
+    }
+  ],
+  "season": {
+    "note": "No sourced best months were found; June to August is the wettest stretch, with more than 600 millimetres of rain a month at Gokarna.",
+    "history": []
+  },
+  "authorities": [
+    {
+      "office": "Directorate of Transport, Government of Goa",
+      "announces": "Orders on hire motorcycles, helmet circulars, and a permit lookup for hire vehicles",
+      "stretch": "All of Goa",
+      "channel": "Website",
+      "url": "https://www.goatransport.gov.in/",
+      "source": {
+        "url": "https://www.goatransport.gov.in/Notification",
+        "title": "Notification, Department of Transport, Government of Goa",
+        "kind": "official",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      }
+    },
+    {
+      "office": "Goa Traffic Police",
+      "announces": "Circulars on helmet enforcement",
+      "stretch": "All of Goa",
+      "channel": "Circular, reported in the press",
+      "url": null,
+      "source": {
+        "url": "https://www.dnaindia.com/india/report-helmets-made-mandatory-for-two-wheeler-riders-in-goa-2479346",
+        "title": "Helmets made mandatory for two-wheeler riders in Goa",
+        "kind": "news",
+        "opened": true,
+        "source_date": "2017-06-21",
+        "accessed": "2026-09-28"
+      }
+    },
+    {
+      "office": "Department of Tourism, Government of Goa",
+      "announces": "Advice and instructions to tourists, including beach rules",
+      "stretch": "All of Goa",
+      "channel": "Website",
+      "url": "https://goatourism.gov.in/",
+      "source": {
+        "url": "https://goatourism.gov.in/",
+        "title": "Department of Tourism, Government of Goa",
+        "kind": "official",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      }
+    },
+    {
+      "office": "Uttara Kannada district administration",
+      "announces": "Monsoon orders barring tourists from waterfalls and danger spots",
+      "stretch": "Karwar to Kumta",
+      "channel": "District order, reported in the press",
+      "url": null,
+      "source": {
+        "url": "https://newsable.asianetnews.com/gallery/karnataka-news/shirur-uttara-kannada-monsoon-alert-tourists-risk-lives-temporary-waterfalls-landslide-warnings-kkg88co",
+        "title": "Uttara Kannada Monsoon Alert: Tourists Risk Lives at Temporary Waterfalls Amid Landslide Warnings",
+        "kind": "news",
+        "opened": true,
+        "source_date": "2026-07-03",
+        "accessed": "2026-09-28"
+      }
+    }
+  ],
+  "hazards": [
+    {
+      "title": "Landslides on the highway in Uttara Kannada",
+      "detail": "A landslide at Shirur near Ankola on 16 July 2024 buried vehicles and shut the highway. The district has 324 spots marked as prone to landslides.",
+      "months": [
+        6,
+        7,
+        8
+      ],
+      "source": {
+        "url": "https://www.newsonair.gov.in/karnataka-death-toll-in-nh-66-landslide-reached-6",
+        "title": "Karnataka: Death toll in NH 66 landslide reached 6",
+        "kind": "official",
+        "opened": true,
+        "source_date": "2024-07-18",
+        "accessed": "2026-09-28"
+      }
+    },
+    {
+      "title": "Parked vehicles at roadside waterfalls",
+      "detail": "In the rains, waterfalls form on the rock cuttings of the widened highway near Karwar and Ankola, and visitors stop their vehicles on the carriageway.",
+      "months": [
+        6,
+        7,
+        8
+      ],
+      "source": {
+        "url": "https://newsable.asianetnews.com/gallery/karnataka-news/shirur-uttara-kannada-monsoon-alert-tourists-risk-lives-temporary-waterfalls-landslide-warnings-kkg88co",
+        "title": "Uttara Kannada Monsoon Alert: Tourists Risk Lives at Temporary Waterfalls Amid Landslide Warnings",
+        "kind": "news",
+        "opened": true,
+        "source_date": "2026-07-03",
+        "accessed": "2026-09-28"
+      }
+    },
+    {
+      "title": "Very heavy monsoon rain and high waves",
+      "detail": "The monsoon reached coastal Karnataka in late May in 2025, with a red alert, fallen trees and flooding. June to August are the wettest months.",
+      "months": [
+        6,
+        7,
+        8
+      ],
+      "source": {
+        "url": "https://www.newsonair.gov.in/southwest-monsoon-hits-karnataka-red-alert-in-coastal-areas",
+        "title": "Southwest Monsoon hits Karnataka; red alert in coastal areas",
+        "kind": "official",
+        "opened": true,
+        "source_date": "2025-05-25",
+        "accessed": "2026-09-28"
+      }
+    }
+  ],
+  "videos": [
+    {
+      "url": "https://www.youtube.com/watch?v=Oc04Hmh7jb4",
+      "title": "Just Me, My Bike & the Sea | Malvan to Goa and Gokarna Solo Ride | Epic Konkan Ride | Ep-5",
+      "channel": "Bikerslane",
+      "stretch": "Malvan to Goa and Gokarna",
+      "filmed": null,
+      "bike": null
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=vt34UhW6oNE",
+      "title": "Bike ride from Udupi to Gokarna |via Marvanthe beach | EP-8",
+      "channel": "RoundTrip with Ashish",
+      "stretch": "Udupi to Gokarna by Maravanthe",
+      "filmed": null,
+      "bike": null
+    }
+  ],
+  "gaps": [
+    "Entry tax for vehicles from other states: an undated Deccan Herald report (https://www.deccanherald.com/india/karnataka/goa-hikes-entry-tax-for-vehicles-313796.html) lists charges from three-wheelers upward at Goa's border posts. The page could not be opened and no official page was found, so whether two-wheelers pay is not recorded.",
+    "The text of the Goa helmet circular was not found on the Transport Department site; only press reports were read.",
+    "The Goa Transport Department's list of rent a bike notifications could not be opened; only the titles on the main notifications page were read.",
+    "Best months and usual number of riding days: no source found.",
+    "No highest point recorded: this is a coastal route.",
+    "No source found for rules on hire motorcycles or helmets specific to coastal Karnataka.",
+    "The Press Information Bureau release on the 2024 Shirur landslide returned an access error.",
+    "Videos: the pages give upload dates, not filming dates, so 'filmed' is filled only where the title names a date. Uploads, in order: 2025-12, 2022-02."
+  ]
+}

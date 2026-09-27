@@ -1,0 +1,547 @@
+{
+  "slug": "nilgiris",
+  "header": {
+    "highway": {
+      "value": "NH 275 (Bengaluru to Mysuru), NH 766 (Mysuru to Gundlupet), NH 181 (Gundlupet to Ooty and Coonoor)",
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/National_Highway_181_(India)",
+        "title": "National Highway 181 (India)",
+        "kind": "encyclopedia",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      }
+    },
+    "highest_point": {
+      "name": "Ooty town",
+      "altitude_m": 2240,
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/Ooty",
+        "title": "Ooty",
+        "kind": "encyclopedia",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      }
+    },
+    "hairpin_bends": {
+      "value": "36 on the Kalhatti (Sigur) ghat; 14 on the Coonoor ghat",
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/Nilgiri_Ghat_Roads",
+        "title": "Nilgiri Ghat Roads",
+        "kind": "encyclopedia",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      }
+    },
+    "usual_days": null,
+    "usual_season": {
+      "value": "March to June",
+      "source": {
+        "url": "https://www.tamilnadutourism.tn.gov.in/destinations/ooty",
+        "title": "Ooty | Udhagamandalam | Hill stations in Tamil Nadu",
+        "kind": "official",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      }
+    },
+    "one_line": "Karnataka and Tamil Nadu, through the Bandipur and Mudumalai tiger reserves up to Ooty and Coonoor"
+  },
+  "rules": [
+    {
+      "id": "bandipur-night-traffic-ban",
+      "kind": "timing",
+      "title": "Bandipur: highways shut from 9 pm to 6 am",
+      "detail": "Both highways through the tiger reserve close overnight to private vehicles. A few buses and emergency vehicles are let through.",
+      "applies_to": "All private vehicles",
+      "set_by": "Chamarajanagar district administration; upheld by the Karnataka High Court and the Supreme Court",
+      "official_url": null,
+      "has_official_order": true,
+      "source": {
+        "url": "https://www.onmanorama.com/news/kerala/2019/10/05/why-is-there-a-night-traffic-on-nh-766-bandipur-reserve-forest.html",
+        "title": "Explained | Why people in Wayanad protest traffic ban through…",
+        "kind": "news",
+        "opened": true,
+        "source_date": "2020-12-10",
+        "accessed": "2026-09-28"
+      },
+      "history": [
+        {
+          "date": "2009-06-03",
+          "change": "Night closure of both highways first ordered.",
+          "source": {
+            "url": "https://www.onmanorama.com/news/kerala/2019/10/05/why-is-there-a-night-traffic-on-nh-766-bandipur-reserve-forest.html",
+            "title": "Explained | Why people in Wayanad protest traffic ban through…",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2020-12-10",
+            "accessed": "2026-09-28"
+          }
+        },
+        {
+          "date": "2009-06-10",
+          "change": "Closure lifted after objections from Kerala.",
+          "source": {
+            "url": "https://www.onmanorama.com/news/kerala/2019/10/05/why-is-there-a-night-traffic-on-nh-766-bandipur-reserve-forest.html",
+            "title": "Explained | Why people in Wayanad protest traffic ban through…",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2020-12-10",
+            "accessed": "2026-09-28"
+          }
+        },
+        {
+          "date": "2010",
+          "change": "Karnataka High Court upheld the closure and it returned.",
+          "source": {
+            "url": "https://www.onmanorama.com/news/kerala/2019/10/05/why-is-there-a-night-traffic-on-nh-766-bandipur-reserve-forest.html",
+            "title": "Explained | Why people in Wayanad protest traffic ban through…",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2020-12-10",
+            "accessed": "2026-09-28"
+          }
+        },
+        {
+          "date": "2018-01-10",
+          "change": "Supreme Court set up a committee to review the closure; it advised no change.",
+          "source": {
+            "url": "https://india.mongabay.com/2019/11/bandipur-much-ado-about-a-highway/",
+            "title": "Much ado about a highway",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2019-11-08",
+            "accessed": "2026-09-28"
+          }
+        },
+        {
+          "date": "2019-08-07",
+          "change": "Supreme Court kept the closure and asked for plans to improve the other road.",
+          "source": {
+            "url": "https://india.mongabay.com/2019/11/bandipur-much-ado-about-a-highway/",
+            "title": "Much ado about a highway",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2019-11-08",
+            "accessed": "2026-09-28"
+          }
+        }
+      ]
+    },
+    {
+      "id": "bandipur-two-wheelers-from-6pm",
+      "kind": "motorcycle-rule",
+      "title": "Bandipur: two-wheelers barred from 6 pm",
+      "detail": "The 2009 order stops two-wheelers three hours earlier than cars, from 6 pm to 6 am. Plan to clear the forest before dusk.",
+      "applies_to": "Two-wheelers",
+      "set_by": "Chamarajanagar district administration; enforced by the Karnataka Forest Department",
+      "official_url": null,
+      "has_official_order": true,
+      "source": {
+        "url": "https://www.onmanorama.com/news/kerala/2019/10/05/why-is-there-a-night-traffic-on-nh-766-bandipur-reserve-forest.html",
+        "title": "Explained | Why people in Wayanad protest traffic ban through…",
+        "kind": "news",
+        "opened": true,
+        "source_date": "2020-12-10",
+        "accessed": "2026-09-28"
+      },
+      "history": [
+        {
+          "date": "2009-06-03",
+          "change": "Order set 6 pm to 6 am for two-wheelers.",
+          "source": {
+            "url": "https://www.onmanorama.com/news/kerala/2019/10/05/why-is-there-a-night-traffic-on-nh-766-bandipur-reserve-forest.html",
+            "title": "Explained | Why people in Wayanad protest traffic ban through…",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2020-12-10",
+            "accessed": "2026-09-28"
+          }
+        }
+      ]
+    },
+    {
+      "id": "mudumalai-night-closure",
+      "kind": "timing",
+      "title": "Mudumalai: road shut from 9 pm to 6 am",
+      "detail": "The Tamil Nadu side, from Thorapalli to Masinagudi, closes overnight by state notification. Vehicles carrying farm produce are exempt.",
+      "applies_to": "All private vehicles",
+      "set_by": "Government of Tamil Nadu, Forest Department",
+      "official_url": null,
+      "has_official_order": true,
+      "source": {
+        "url": "https://www.deccanherald.com/india/karnataka/tn-bans-night-traffic-tiger-2506532",
+        "title": "TN bans night traffic in tiger territory",
+        "kind": "news",
+        "opened": true,
+        "source_date": "2010-08-12",
+        "accessed": "2026-09-28"
+      },
+      "history": [
+        {
+          "date": "2010-08",
+          "change": "State notification made the night closure official.",
+          "source": {
+            "url": "https://www.deccanherald.com/india/karnataka/tn-bans-night-traffic-tiger-2506532",
+            "title": "TN bans night traffic in tiger territory",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2010-08-12",
+            "accessed": "2026-09-28"
+          }
+        }
+      ]
+    },
+    {
+      "id": "nilgiris-e-pass",
+      "kind": "permit",
+      "title": "Nilgiris: electronic pass for visiting vehicles",
+      "detail": "Vehicles from outside the district book a free pass online. Daily numbers are capped. Travel guides say two-wheelers need it too; no official page says so.",
+      "applies_to": "Private vehicles registered outside the Nilgiris district",
+      "set_by": "Madras High Court; run by the Nilgiris district administration",
+      "official_url": "https://epass.tnega.org/",
+      "has_official_order": true,
+      "source": {
+        "url": "https://nilgiris.nic.in/",
+        "title": "The Nilgiris District, Tamilnadu | The Queen of Hill Stations…",
+        "kind": "official",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      },
+      "history": [
+        {
+          "date": "2024-05",
+          "change": "Pass introduced on the High Court's direction.",
+          "source": {
+            "url": "https://www.outlooktraveller.com/News/e-pass-system-in-nilgiris-and-kodaikanal",
+            "title": "Explained: E-Pass System In Nilgiris And Kodaikanal",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2024-10-09",
+            "accessed": "2026-09-28"
+          }
+        },
+        {
+          "date": "2025-03",
+          "change": "High Court capped entries at 6,000 vehicles on weekdays and 8,000 at weekends.",
+          "source": {
+            "url": "https://www.dtnext.in/news/tamilnadu/madras-hc-orders-relaxation-on-e-pass-for-tourists-to-nilgiris-and-kodaikanal-826196",
+            "title": "Madras HC orders relaxation on e-pass for tourists to Nilgiris…",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2025-03-14",
+            "accessed": "2026-09-28"
+          }
+        },
+        {
+          "date": "2026-05",
+          "change": "Reported as still required all year.",
+          "source": {
+            "url": "https://ootymade.com/pages/how-to-apply-for-ooty-e-pass-online-latest-updates-news",
+            "title": "Ooty E-Pass 2026: Apply Online, Price & TN ePass Login",
+            "kind": "blog",
+            "opened": true,
+            "source_date": "2026-05",
+            "accessed": "2026-09-28"
+          }
+        },
+        {
+          "date": null,
+          "change": "Independent guide says outside two-wheelers need the pass in the controlled season.",
+          "source": {
+            "url": "https://visitnilgiris.org/en/epass",
+            "title": "The Nilgiris vehicle e-pass, made simple",
+            "kind": "blog",
+            "opened": true,
+            "source_date": null,
+            "accessed": "2026-09-28"
+          }
+        }
+      ]
+    },
+    {
+      "id": "kalhatti-ghat-closed-to-visitors",
+      "kind": "motorcycle-rule",
+      "title": "Kalhatti ghat: closed to visiting vehicles",
+      "detail": "Outside vehicles were already barred from riding down. For summer 2026 the collector barred them both ways; a hotel blog says motorcycles are included. Use Gudalur.",
+      "applies_to": "Vehicles registered outside the Nilgiris district",
+      "set_by": "District Collector, the Nilgiris, following Madras High Court directions",
+      "official_url": null,
+      "has_official_order": true,
+      "source": {
+        "url": "https://thechenabtimes.com/2026/04/29/nilgiris-district-imposes-tourist-ban-on-kalhatti-ghat-road-amidst-environmental-concerns/",
+        "title": "Nilgiris: Kalhatti Ghat Road Closed to Tourists",
+        "kind": "news",
+        "opened": true,
+        "source_date": "2026-04-29",
+        "accessed": "2026-09-28"
+      },
+      "history": [
+        {
+          "date": "2026-04-29",
+          "change": "Visiting vehicles barred in both directions for the summer season.",
+          "source": {
+            "url": "https://thechenabtimes.com/2026/04/29/nilgiris-district-imposes-tourist-ban-on-kalhatti-ghat-road-amidst-environmental-concerns/",
+            "title": "Nilgiris: Kalhatti Ghat Road Closed to Tourists",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2026-04-29",
+            "accessed": "2026-09-28"
+          }
+        },
+        {
+          "date": "2026-05-08",
+          "change": "Hotel blog reports motorcycles turned back at Theppakadu and Sigur.",
+          "source": {
+            "url": "https://www.karpagamresidency.in/blog/ooty-kalhatty-road-blocked-2026-update",
+            "title": "Ooty Kalhatty Road Blocked 2026: Complete Guide",
+            "kind": "operator",
+            "opened": true,
+            "source_date": "2026-05-08",
+            "accessed": "2026-09-28"
+          }
+        }
+      ]
+    },
+    {
+      "id": "bengaluru-mysuru-expressway-no-two-wheelers",
+      "kind": "motorcycle-rule",
+      "title": "Bengaluru to Mysuru Expressway: no two-wheelers",
+      "detail": "Motorcycles may not use the main carriageway. Riders take the toll-free service road beside it, or the old Mysuru road where that breaks.",
+      "applies_to": "Two-wheelers, three-wheelers, tractors",
+      "set_by": "National Highways Authority of India",
+      "official_url": null,
+      "has_official_order": true,
+      "source": {
+        "url": "https://thefederal.com/states/south/karnataka/nhai-bans-two-wheelers-autos-on-bengaluru-mysuru-expressway",
+        "title": "NHAI bans two-wheelers, autos on Bengaluru-Mysuru Expressway",
+        "kind": "news",
+        "opened": true,
+        "source_date": "2023-07-26",
+        "accessed": "2026-09-28"
+      },
+      "history": [
+        {
+          "date": "2023-07-12",
+          "change": "Notification issued.",
+          "source": {
+            "url": "https://thefederal.com/states/south/karnataka/nhai-bans-two-wheelers-autos-on-bengaluru-mysuru-expressway",
+            "title": "NHAI bans two-wheelers, autos on Bengaluru-Mysuru Expressway",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2023-07-26",
+            "accessed": "2026-09-28"
+          }
+        },
+        {
+          "date": "2023-08-01",
+          "change": "Ban took effect.",
+          "source": {
+            "url": "https://thefederal.com/states/south/karnataka/nhai-bans-two-wheelers-autos-on-bengaluru-mysuru-expressway",
+            "title": "NHAI bans two-wheelers, autos on Bengaluru-Mysuru Expressway",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2023-07-26",
+            "accessed": "2026-09-28"
+          }
+        },
+        {
+          "date": "2023-08-03",
+          "change": "Service road named as the way for two-wheelers.",
+          "source": {
+            "url": "https://www.psuconnect.in/road-and-transport-news/alternate-route-for-2-or-3-wheelers-on-bengaluru-mysuru-expressway",
+            "title": "NHAI Provides Alternate Route for 2/3-Wheelers on Bengaluru-Mysuru Expressway",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2023-08-03",
+            "accessed": "2026-09-28"
+          }
+        }
+      ]
+    },
+    {
+      "id": "nilgiris-plastic-ban",
+      "kind": "motorcycle-rule",
+      "title": "Nilgiris: plastic bottles and bags banned",
+      "detail": "Single-use plastic is banned across the district, and so are small water and soft drink bottles. Check posts search vehicles and fine.",
+      "applies_to": "Everyone entering the district",
+      "set_by": "Nilgiris district administration; Madras High Court",
+      "official_url": "https://nilgiris.nic.in/plastic-free-nilgiris/",
+      "has_official_order": true,
+      "source": {
+        "url": "https://nilgiris.nic.in/plastic-free-nilgiris/",
+        "title": "Plastic Free Nilgiris",
+        "kind": "official",
+        "opened": true,
+        "source_date": "2026-09-25",
+        "accessed": "2026-09-28"
+      },
+      "history": [
+        {
+          "date": "2018-05",
+          "change": "Ban published in the district gazette.",
+          "source": {
+            "url": "https://nilgiris.nic.in/plastic-free-nilgiris/",
+            "title": "Plastic Free Nilgiris",
+            "kind": "official",
+            "opened": true,
+            "source_date": "2026-09-25",
+            "accessed": "2026-09-28"
+          }
+        }
+      ]
+    }
+  ],
+  "season": {
+    "note": "The state tourism office names March to June as the best months; both monsoons bring heavy rain to the hills.",
+    "history": []
+  },
+  "authorities": [
+    {
+      "office": "Nilgiris District Administration",
+      "announces": "Electronic pass, plastic ban and district notices",
+      "stretch": "Whole district",
+      "channel": "District website",
+      "url": "https://nilgiris.nic.in/",
+      "source": {
+        "url": "https://nilgiris.nic.in/",
+        "title": "The Nilgiris District, Tamilnadu | The Queen of Hill Stations…",
+        "kind": "official",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      }
+    },
+    {
+      "office": "Tamil Nadu e-Governance Agency",
+      "announces": "Issues the electronic pass",
+      "stretch": "Nilgiris district entry points",
+      "channel": "Pass website",
+      "url": "https://epass.tnega.org/",
+      "source": {
+        "url": "https://epass.tnega.org/",
+        "title": "TN ePass",
+        "kind": "official",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      }
+    },
+    {
+      "office": "Karnataka Forest Department",
+      "announces": "Runs the Bandipur check posts and night closure",
+      "stretch": "Gundlupet to the Tamil Nadu border",
+      "channel": "Department website",
+      "url": "https://aranya.gov.in/",
+      "source": {
+        "url": "https://aranya.gov.in/",
+        "title": "ಕರ್ನಾಟಕ ಅರಣ್ಯ ಇಲಾಖೆ - ಮುಖ್ಯಪುಟ",
+        "kind": "official",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      }
+    },
+    {
+      "office": "National Highways Authority of India",
+      "announces": "Vehicle classes barred from the expressway",
+      "stretch": "Bengaluru to Mysuru",
+      "channel": "Authority website",
+      "url": "https://nhai.gov.in/",
+      "source": {
+        "url": "https://nhai.gov.in/",
+        "title": "National Highways Authority of India, Ministry of Road Transport &…",
+        "kind": "official",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      }
+    }
+  ],
+  "hazards": [
+    {
+      "title": "Animals on the road in both tiger reserves",
+      "detail": "Elephants, deer and smaller animals cross the highway through Bandipur and Mudumalai. Many are killed by vehicles. Ride slowly and do not stop.",
+      "months": [],
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/Mudumalai_National_Park",
+        "title": "Mudumalai National Park",
+        "kind": "encyclopedia",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      }
+    },
+    {
+      "title": "Landslides on the ghat roads",
+      "detail": "Slides have shut the ghat roads for days or weeks at a time, mostly in the rains.",
+      "months": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/Nilgiri_Ghat_Roads",
+        "title": "Nilgiri Ghat Roads",
+        "kind": "encyclopedia",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      }
+    },
+    {
+      "title": "Roadkill on the Kalhatti ghat road",
+      "detail": "A ten-month study in the Mudumalai reserve counted 343 animals killed on roads.",
+      "months": [],
+      "source": {
+        "url": "https://thechenabtimes.com/2026/04/29/nilgiris-district-imposes-tourist-ban-on-kalhatti-ghat-road-amidst-environmental-concerns/",
+        "title": "Nilgiris: Kalhatti Ghat Road Closed to Tourists",
+        "kind": "news",
+        "opened": true,
+        "source_date": "2026-04-29",
+        "accessed": "2026-09-28"
+      }
+    },
+    {
+      "title": "Kalhatti ghat is very steep",
+      "detail": "Thirty-six hairpin bends on a sharp gradient. Brakes overheat on the way down.",
+      "months": [],
+      "source": {
+        "url": "https://www.karpagamresidency.in/blog/ooty-kalhatty-road-blocked-2026-update",
+        "title": "Ooty Kalhatty Road Blocked 2026: Complete Guide",
+        "kind": "operator",
+        "opened": true,
+        "source_date": "2026-05-08",
+        "accessed": "2026-09-28"
+      }
+    }
+  ],
+  "videos": [
+    {
+      "url": "https://www.youtube.com/watch?v=G478lnz9aTs",
+      "title": "Ooty To Bangalore Road Trip | How To Ride Bike In Hairpin Bends | CB350 | OOTY | Day4",
+      "channel": "DeepSumi Vlogs",
+      "stretch": "Ooty to Bengaluru",
+      "filmed": null,
+      "bike": "Honda CB350"
+    }
+  ],
+  "gaps": [
+    "No official page found that states whether motorcycles need the Nilgiris electronic pass; two independent guides say they do.",
+    "Guides disagree on whether the pass is needed all year or only in the controlled season from April to June.",
+    "The electronic pass website opened but its form would not load, so its own wording on who needs a pass is not recorded.",
+    "No official Karnataka page found for the Bandipur night closure hours; the hours, and the earlier cut-off for two-wheelers, come from news reports of the 2009 order.",
+    "Not confirmed whether the summer 2026 closure of the Kalhatti ghat to visiting vehicles is still in force in September 2026.",
+    "A green tax at Nilgiris check posts is reported by blogs; no official page states it or what motorcycles pay.",
+    "No source found for the usual number of days riders take.",
+    "Hairpin bend counts are added as header.hairpin_bends, which is not in the schema example.",
+    "One video only; filming date not known. A second candidate could not be checked."
+  ]
+}

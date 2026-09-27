@@ -1,0 +1,349 @@
+{
+  "slug": "east-coast",
+  "header": {
+    "highway": {
+      "value": "State Highway 49 and NH 32 (East Coast Road, Chennai to Ramanathapuram); NH 87 (Ramanathapuram to Rameswaram and Dhanushkodi)",
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/East_Coast_Road",
+        "title": "East Coast Road",
+        "kind": "encyclopedia",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      }
+    },
+    "highest_point": null,
+    "usual_days": null,
+    "usual_season": {
+      "value": "October to March",
+      "source": {
+        "url": "https://www.tamilnadutourism.tn.gov.in/destinations/rameswaram",
+        "title": "Rameswaram | Pilgrim Centres",
+        "kind": "official",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      }
+    },
+    "one_line": "Tamil Nadu and Puducherry, down the Bay of Bengal coast to the sand spit at Dhanushkodi"
+  },
+  "rules": [
+    {
+      "id": "dhanushkodi-daylight-only",
+      "kind": "timing",
+      "title": "Dhanushkodi: road open in daylight only",
+      "detail": "Travel writers give 6 am to 6 pm at the check post; visitor reviews say police clear the area from 5 pm. No government order was found.",
+      "applies_to": "All vehicles",
+      "set_by": "Ramanathapuram district police",
+      "official_url": null,
+      "has_official_order": false,
+      "source": {
+        "url": "https://twinsontoes.com/dhanushkodi-trip-guide/",
+        "title": "Dhanushkodi - Uncover The Secrets Of A Deserted Old Town",
+        "kind": "blog",
+        "opened": true,
+        "source_date": "2024-10-03",
+        "accessed": "2026-09-28"
+      },
+      "history": []
+    },
+    {
+      "id": "arichal-munai-vehicles-to-stop-at-kambipadu",
+      "kind": "motorcycle-rule",
+      "title": "Arichal Munai: visitors' vehicles to stop short soon",
+      "detail": "The forest department plans to halt visitors' vehicles at Kambipadu and carry people the last five kilometres in its own gas buses. No start date given.",
+      "applies_to": "Visitors' vehicles and government buses; two-wheelers not named",
+      "set_by": "Tamil Nadu Forest Department",
+      "official_url": null,
+      "has_official_order": false,
+      "source": {
+        "url": "https://www.dailythanthi.com/news/tamilnadu/ban-soon-on-tourist-vehicles-and-government-buses-going-to-arichal-munai",
+        "title": "அரிச்சல்முனைக்கு சுற்றுலா வாகனங்கள், அரசு பஸ்கள் செல்ல விரைவில் தடை",
+        "kind": "news",
+        "opened": true,
+        "source_date": "2026-09-20",
+        "accessed": "2026-09-28"
+      },
+      "history": [
+        {
+          "date": "2016",
+          "change": "Road from Mukundarayar Chathiram completed; before this only jeeps and walkers reached the town.",
+          "source": {
+            "url": "https://en.wikipedia.org/wiki/Dhanushkodi",
+            "title": "Dhanushkodi",
+            "kind": "encyclopedia",
+            "opened": true,
+            "source_date": null,
+            "accessed": "2026-09-28"
+          }
+        },
+        {
+          "date": "2017-02",
+          "change": "Rebuilt highway opened to vehicles with some restrictions.",
+          "source": {
+            "url": "https://en.wikipedia.org/wiki/National_Highway_87_(India)",
+            "title": "National Highway 87 (India)",
+            "kind": "encyclopedia",
+            "opened": true,
+            "source_date": null,
+            "accessed": "2026-09-28"
+          }
+        },
+        {
+          "date": "2026-09-20",
+          "change": "Plan reported to stop visitors' vehicles at Kambipadu.",
+          "source": {
+            "url": "https://www.dailythanthi.com/news/tamilnadu/ban-soon-on-tourist-vehicles-and-government-buses-going-to-arichal-munai",
+            "title": "அரிச்சல்முனைக்கு சுற்றுலா வாகனங்கள், அரசு பஸ்கள் செல்ல விரைவில் தடை",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2026-09-20",
+            "accessed": "2026-09-28"
+          }
+        }
+      ]
+    },
+    {
+      "id": "dhanushkodi-shut-on-sea-alerts",
+      "kind": "timing",
+      "title": "Dhanushkodi: closed when the sea is rough",
+      "detail": "Police turn visitors back during swell and storm alerts. Read from a search summary only; the newspaper page could not be opened.",
+      "applies_to": "All visitors",
+      "set_by": "Ramanathapuram district police",
+      "official_url": null,
+      "has_official_order": false,
+      "source": {
+        "url": "https://www.pressreader.com/india/dt-next/20260820/281522232926500",
+        "title": "State coasts on alert for swell surge; police bar tourists…",
+        "kind": "news",
+        "opened": false,
+        "source_date": "2026-08-20",
+        "accessed": "2026-09-28"
+      },
+      "history": [
+        {
+          "date": "2026-08-20",
+          "change": "Visitors barred during a swell surge alert along the coast.",
+          "source": {
+            "url": "https://www.pressreader.com/india/dt-next/20260820/281522232926500",
+            "title": "State coasts on alert for swell surge; police bar tourists…",
+            "kind": "news",
+            "opened": false,
+            "source_date": "2026-08-20",
+            "accessed": "2026-09-28"
+          }
+        }
+      ]
+    },
+    {
+      "id": "puducherry-helmets-rider-and-pillion",
+      "kind": "motorcycle-rule",
+      "title": "Puducherry: helmets for rider and pillion",
+      "detail": "Police began enforcing compulsory helmets for both people on a two-wheeler in January 2025.",
+      "applies_to": "Two-wheeler riders and pillion riders",
+      "set_by": "Government of Puducherry; Puducherry Police",
+      "official_url": null,
+      "has_official_order": true,
+      "source": {
+        "url": "https://www.etvbharat.com/en/!state/helmet-rule-comes-into-force-in-puducherry-enn25011205085",
+        "title": "Helmet Rule Comes Into Force In Puducherry",
+        "kind": "news",
+        "opened": true,
+        "source_date": "2025-01-13",
+        "accessed": "2026-09-28"
+      },
+      "history": [
+        {
+          "date": "2025-01-12",
+          "change": "Enforcement began.",
+          "source": {
+            "url": "https://www.etvbharat.com/en/!state/helmet-rule-comes-into-force-in-puducherry-enn25011205085",
+            "title": "Helmet Rule Comes Into Force In Puducherry",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2025-01-13",
+            "accessed": "2026-09-28"
+          }
+        }
+      ]
+    },
+    {
+      "id": "east-coast-road-speed-limit",
+      "kind": "motorcycle-rule",
+      "title": "East Coast Road toll stretch: 80 kilometres an hour",
+      "detail": "The tolled stretch from Uthandi towards Puducherry has 22 bends and an 80 limit. The source is an encyclopedia; no order was found.",
+      "applies_to": "All vehicles",
+      "set_by": "Tamil Nadu Road Development Company",
+      "official_url": null,
+      "has_official_order": false,
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/East_Coast_Road",
+        "title": "East Coast Road",
+        "kind": "encyclopedia",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      },
+      "history": [
+        {
+          "date": "2002-03",
+          "change": "Stretch became a toll road.",
+          "source": {
+            "url": "https://en.wikipedia.org/wiki/East_Coast_Road",
+            "title": "East Coast Road",
+            "kind": "encyclopedia",
+            "opened": true,
+            "source_date": null,
+            "accessed": "2026-09-28"
+          }
+        }
+      ]
+    }
+  ],
+  "season": {
+    "note": "The state tourism office names October to March; the northeast monsoon brings the wet season from August to December and the coast is prone to cyclones.",
+    "history": []
+  },
+  "authorities": [
+    {
+      "office": "Ramanathapuram District Administration",
+      "announces": "Visitor information for Rameswaram and Dhanushkodi",
+      "stretch": "Pamban to Arichal Munai",
+      "channel": "District website",
+      "url": "https://ramanathapuram.nic.in/",
+      "source": {
+        "url": "https://ramanathapuram.nic.in/tourist-place/dhanushkodi/",
+        "title": "Dhanushkodi | Ramanathapuram District, Tamil Nadu | India",
+        "kind": "official",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      }
+    },
+    {
+      "office": "Puducherry Police",
+      "announces": "Helmet and traffic enforcement",
+      "stretch": "Puducherry",
+      "channel": "Website",
+      "url": "https://police.py.gov.in/",
+      "source": {
+        "url": "https://police.py.gov.in/",
+        "title": "Puducherry Police",
+        "kind": "official",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      }
+    },
+    {
+      "office": "India Meteorological Department",
+      "announces": "Cyclone and heavy rain warnings",
+      "stretch": "Whole coast",
+      "channel": "Website",
+      "url": "https://mausam.imd.gov.in/",
+      "source": {
+        "url": "https://mausam.imd.gov.in/",
+        "title": "होम | भारत मौसम विज्ञान विभाग",
+        "kind": "official",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      }
+    }
+  ],
+  "hazards": [
+    {
+      "title": "Wind-blown sand on the Dhanushkodi road",
+      "detail": "Strong wind drives sand across the road hard enough to make it difficult for motorcycles.",
+      "months": [],
+      "source": {
+        "url": "https://twinsontoes.com/dhanushkodi-trip-guide/",
+        "title": "Dhanushkodi - Uncover The Secrets Of A Deserted Old Town",
+        "kind": "blog",
+        "opened": true,
+        "source_date": "2024-10-03",
+        "accessed": "2026-09-28"
+      }
+    },
+    {
+      "title": "Cyclones and monsoon rain on the coast",
+      "detail": "Nagapattinam lies in a cyclone-prone zone. The wet season runs from August to December.",
+      "months": [
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/Nagapattinam",
+        "title": "Nagapattinam",
+        "kind": "encyclopedia",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      }
+    },
+    {
+      "title": "Strong currents at Dhanushkodi beach",
+      "detail": "Visitors are kept out of the water because of strong currents where two seas meet.",
+      "months": [],
+      "source": {
+        "url": "https://twinsontoes.com/dhanushkodi-trip-guide/",
+        "title": "Dhanushkodi - Uncover The Secrets Of A Deserted Old Town",
+        "kind": "blog",
+        "opened": true,
+        "source_date": "2024-10-03",
+        "accessed": "2026-09-28"
+      }
+    },
+    {
+      "title": "No services at Dhanushkodi",
+      "detail": "No hotels or cash machines beyond Rameswaram. Be back before the check post shuts.",
+      "months": [],
+      "source": {
+        "url": "https://twinsontoes.com/dhanushkodi-trip-guide/",
+        "title": "Dhanushkodi - Uncover The Secrets Of A Deserted Old Town",
+        "kind": "blog",
+        "opened": true,
+        "source_date": "2024-10-03",
+        "accessed": "2026-09-28"
+      }
+    },
+    {
+      "title": "Busy bends on the East Coast Road",
+      "detail": "About 40,000 vehicles a day use the road near Chennai, and the toll stretch has 22 bends.",
+      "months": [],
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/East_Coast_Road",
+        "title": "East Coast Road",
+        "kind": "encyclopedia",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      }
+    }
+  ],
+  "videos": [
+    {
+      "url": "https://www.youtube.com/watch?v=_Difhv0AFyg",
+      "title": "Rameswaram to Dhanushkodi Bike ride / Royal Enfield ft",
+      "channel": "Krupas Vlogs",
+      "stretch": "Rameswaram to Dhanushkodi",
+      "filmed": null,
+      "bike": "Royal Enfield"
+    }
+  ],
+  "gaps": [
+    "No official page or order found for the Dhanushkodi check post hours; blogs give 6 am to 6 pm and visitor reviews, seen only in search results, give a 5 pm cut-off.",
+    "No source found that states plainly whether private motorcycles may ride all the way to Arichal Munai today, or whether the planned halt at Kambipadu will apply to them.",
+    "The newspaper report of police closing Dhanushkodi during a swell alert could not be opened.",
+    "No official source found for tolls or whether two-wheelers pay on the East Coast Road.",
+    "No official source found for any vehicle entry fee at Mahabalipuram.",
+    "No rule found for Chidambaram or Nagapattinam.",
+    "No source found for wind closures of the Pamban road bridge.",
+    "No source found for the usual number of days riders take.",
+    "No highest point recorded: this is a coastal route at sea level.",
+    "One video only, and its filming date is not known."
+  ]
+}

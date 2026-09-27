@@ -1,0 +1,425 @@
+{
+  "slug": "bhutan",
+  "header": {
+    "highway": {
+      "value": "Phuentsholing to Thimphu road and the East-West Highway (Lateral Road)",
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/Transport_in_Bhutan",
+        "title": "Transport in Bhutan",
+        "kind": "encyclopedia",
+        "opened": true,
+        "source_date": "2026-05-04",
+        "accessed": "2026-09-28"
+      }
+    },
+    "highest_point": {
+      "name": "Dochula",
+      "altitude_m": 3100,
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/Dochula_Pass",
+        "title": "Dochula Pass",
+        "kind": "encyclopedia",
+        "opened": true,
+        "source_date": "2026-09-26",
+        "accessed": "2026-09-28"
+      }
+    },
+    "usual_days": {
+      "value": null,
+      "source": null
+    },
+    "usual_season": {
+      "value": "Late September to late November; open all year",
+      "source": {
+        "url": "https://bhutan.travel/faqs",
+        "title": "Bhutan Travel: frequently asked questions",
+        "kind": "official",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      }
+    },
+    "one_line": "Western Bhutan from the border gate at Phuentsholing to Thimphu, over Dochula to Punakha, and across to Paro"
+  },
+  "rules": [
+    {
+      "id": "bhutan-entry-permit-indian-citizens",
+      "kind": "permit",
+      "title": "Bhutan: entry permit, not a visa, for Indians",
+      "detail": "Apply online before travel or at the point of entry, where waits can be long. Land permits are issued at Phuentsholing and three other border immigration offices.",
+      "applies_to": "Indian citizens",
+      "set_by": "Department of Immigration, Royal Government of Bhutan",
+      "official_url": "https://bhutan.travel/visa",
+      "has_official_order": true,
+      "source": {
+        "url": "https://bhutan.travel/visa",
+        "title": "Bhutan Travel: visa and permits",
+        "kind": "official",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      },
+      "history": [
+        {
+          "date": "2022-09-23",
+          "change": "Covid vaccination no longer required to enter, per the Indian embassy's guidelines.",
+          "source": {
+            "url": "https://www.indembthimphu.gov.in/public_files/assets/pdf/ticker_29nov.pdf",
+            "title": "Guidelines For Indians visiting Bhutan as Tourists",
+            "kind": "official",
+            "opened": true,
+            "source_date": null,
+            "accessed": "2026-09-28"
+          }
+        }
+      ]
+    },
+    {
+      "id": "bhutan-documents-indian-citizens",
+      "kind": "document",
+      "title": "Bhutan: passport or voter card",
+      "detail": "A passport valid six months or an original voter identity card, plus two photographs. Under-18s use a passport or birth certificate and travel with a legal guardian.",
+      "applies_to": "Indian citizens",
+      "set_by": "Department of Immigration, Royal Government of Bhutan",
+      "official_url": "https://www.indembthimphu.gov.in/pages/NDA5",
+      "has_official_order": true,
+      "source": {
+        "url": "https://www.indembthimphu.gov.in/public_files/assets/pdf/ticker_29nov.pdf",
+        "title": "Guidelines For Indians visiting Bhutan as Tourists",
+        "kind": "official",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      },
+      "history": []
+    },
+    {
+      "id": "bhutan-sustainable-development-fee-indians",
+      "kind": "fee",
+      "title": "Bhutan: 1,200 a night Sustainable Development Fee",
+      "detail": "Indian visitors pay 1,200 ngultrum or rupees per person per night when applying for the permit. Young children are exempt; older children pay half.",
+      "applies_to": "Indian citizens",
+      "set_by": "Department of Tourism, Royal Government of Bhutan",
+      "official_url": "https://bhutan.travel/faqs",
+      "has_official_order": true,
+      "source": {
+        "url": "https://bhutan.travel/faqs",
+        "title": "Bhutan Travel: frequently asked questions",
+        "kind": "official",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      },
+      "history": [
+        {
+          "date": "2022-06",
+          "change": "Fee policy revised; Wikipedia records the Indian visitor rate as unchanged since then.",
+          "source": {
+            "url": "https://en.wikipedia.org/wiki/Tourism_in_Bhutan",
+            "title": "Tourism in Bhutan",
+            "kind": "encyclopedia",
+            "opened": true,
+            "source_date": "2026-09-24",
+            "accessed": "2026-09-28"
+          }
+        },
+        {
+          "date": "2023-08",
+          "change": "Fee for other nationalities cut from 200 to 100 United States dollars a night; Indian rate not changed.",
+          "source": {
+            "url": "https://en.wikipedia.org/wiki/Tourism_in_Bhutan",
+            "title": "Tourism in Bhutan",
+            "kind": "encyclopedia",
+            "opened": true,
+            "source_date": "2026-09-24",
+            "accessed": "2026-09-28"
+          }
+        }
+      ]
+    },
+    {
+      "id": "bhutan-own-vehicle-daily-fee",
+      "kind": "fee",
+      "title": "Bhutan: 4,500 ngultrum a day for your vehicle",
+      "detail": "Charged per vehicle per day, two-wheelers included, and paid at the port of entry after documents and vehicle are inspected.",
+      "applies_to": "Visitors bringing their own vehicle",
+      "set_by": "Department of Tourism, Royal Government of Bhutan",
+      "official_url": "https://bhutan.travel/faqs",
+      "has_official_order": true,
+      "source": {
+        "url": "https://www.indembthimphu.gov.in/public_files/assets/pdf/ticker_29nov.pdf",
+        "title": "Guidelines For Indians visiting Bhutan as Tourists",
+        "kind": "official",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      },
+      "history": []
+    },
+    {
+      "id": "bhutan-vehicle-documents",
+      "kind": "document",
+      "title": "Bhutan: papers for an Indian-registered motorcycle",
+      "detail": "Original driving licence and registration certificate, insurance, and emission and roadworthiness certificate. The vehicle must be under ten years old and ridden by its owner, or carry an authority letter.",
+      "applies_to": "Visitors bringing their own vehicle",
+      "set_by": "Royal Government of Bhutan, as stated by the Embassy of India, Thimphu",
+      "official_url": "https://www.indembthimphu.gov.in/public_files/assets/pdf/ticker_29nov.pdf",
+      "has_official_order": true,
+      "source": {
+        "url": "https://www.indembthimphu.gov.in/public_files/assets/pdf/ticker_29nov.pdf",
+        "title": "Guidelines For Indians visiting Bhutan as Tourists",
+        "kind": "official",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      },
+      "history": []
+    },
+    {
+      "id": "bhutan-check-post-registration",
+      "kind": "document",
+      "title": "Bhutan: register the vehicle for police check posts",
+      "detail": "Visitors with their own vehicle register on the Royal Bhutan Police check post system before crossing check points.",
+      "applies_to": "Visitors bringing their own vehicle",
+      "set_by": "Royal Bhutan Police",
+      "official_url": "https://1010.bt/epass/apply/",
+      "has_official_order": true,
+      "source": {
+        "url": "https://www.indembthimphu.gov.in/public_files/assets/pdf/ticker_29nov.pdf",
+        "title": "Guidelines For Indians visiting Bhutan as Tourists",
+        "kind": "official",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      },
+      "history": []
+    },
+    {
+      "id": "bhutan-guide-compulsory",
+      "kind": "motorcycle-rule",
+      "title": "Bhutan: a guide must accompany self-riders",
+      "detail": "The tourism department says a guide must accompany visitors at all times, and those driving their own vehicle pay for the guide on top of the vehicle fee.",
+      "applies_to": "All visitors",
+      "set_by": "Department of Tourism, Royal Government of Bhutan",
+      "official_url": "https://bhutan.travel/faqs",
+      "has_official_order": true,
+      "source": {
+        "url": "https://bhutan.travel/faqs",
+        "title": "Bhutan Travel: frequently asked questions",
+        "kind": "official",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      },
+      "history": []
+    },
+    {
+      "id": "bhutan-certified-accommodation",
+      "kind": "permit",
+      "title": "Bhutan: stay only in certified accommodation",
+      "detail": "The Indian embassy's guidelines say visitors planning their own trip must stay in accommodation certified by the tourism department for the whole trip.",
+      "applies_to": "Indian citizens",
+      "set_by": "Department of Tourism, Royal Government of Bhutan",
+      "official_url": "https://www.indembthimphu.gov.in/public_files/assets/pdf/ticker_29nov.pdf",
+      "has_official_order": true,
+      "source": {
+        "url": "https://www.indembthimphu.gov.in/public_files/assets/pdf/ticker_29nov.pdf",
+        "title": "Guidelines For Indians visiting Bhutan as Tourists",
+        "kind": "official",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      },
+      "history": []
+    },
+    {
+      "id": "bhutan-route-permit-conflict",
+      "kind": "permit",
+      "title": "Bhutan: route permit beyond Thimphu and Paro unclear",
+      "detail": "The tourism department says no route permit is needed with a guide. The Indian embassy page still says one is needed beyond Thimphu and Paro, issued in Thimphu on weekdays.",
+      "applies_to": "All visitors going to Punakha",
+      "set_by": "Department of Immigration, Royal Government of Bhutan",
+      "official_url": "https://bhutan.travel/faqs",
+      "has_official_order": true,
+      "source": {
+        "url": "https://bhutan.travel/faqs",
+        "title": "Bhutan Travel: frequently asked questions",
+        "kind": "official",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      },
+      "history": []
+    },
+    {
+      "id": "bhutan-travel-insurance",
+      "kind": "document",
+      "title": "Bhutan: travel insurance, required or advised",
+      "detail": "The Indian embassy lists travel insurance among the entry permit papers and says it can be bought at the border. The tourism department calls it strongly recommended, not mandatory.",
+      "applies_to": "Indian citizens",
+      "set_by": "Department of Tourism, Royal Government of Bhutan",
+      "official_url": "https://bhutan.travel/faqs",
+      "has_official_order": true,
+      "source": {
+        "url": "https://www.indembthimphu.gov.in/public_files/assets/pdf/ticker_29nov.pdf",
+        "title": "Guidelines For Indians visiting Bhutan as Tourists",
+        "kind": "official",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      },
+      "history": []
+    },
+    {
+      "id": "bhutan-indian-currency-limits",
+      "kind": "document",
+      "title": "Bhutan: limits on Indian currency notes",
+      "detail": "The embassy page allows notes up to 500 rupees, to a total of 25,000 rupees; anything above that must be in notes of 100 rupees or less.",
+      "applies_to": "Indian citizens",
+      "set_by": "Royal Government of Bhutan, as stated by the Embassy of India, Thimphu",
+      "official_url": "https://www.indembthimphu.gov.in/pages/NDA5",
+      "has_official_order": true,
+      "source": {
+        "url": "https://www.indembthimphu.gov.in/pages/NDA5",
+        "title": "Embassy of India, Thimphu: information for Indian nationals entering Bhutan",
+        "kind": "official",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      },
+      "history": []
+    }
+  ],
+  "season": {
+    "note": "No road on this route has an announced seasonal closure; landslides in the monsoon and snow in winter can block it.",
+    "history": []
+  },
+  "authorities": [
+    {
+      "office": "Department of Tourism, Royal Government of Bhutan",
+      "announces": "Sets the Sustainable Development Fee and vehicle fee; takes permit applications online",
+      "stretch": "All of Bhutan",
+      "channel": "Tourism website",
+      "url": "https://bhutan.travel/",
+      "source": {
+        "url": "https://bhutan.travel/faqs",
+        "title": "Bhutan Travel: frequently asked questions",
+        "kind": "official",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      }
+    },
+    {
+      "office": "Department of Immigration, Royal Government of Bhutan (Regional Immigration Office, Phuentsholing)",
+      "announces": "Issues entry permits at the land border",
+      "stretch": "Phuentsholing",
+      "channel": "Office counter and immigration portal",
+      "url": "https://immi.gov.bt/home/",
+      "source": {
+        "url": "https://www.indembthimphu.gov.in/pages/NDA5",
+        "title": "Embassy of India, Thimphu: information for Indian nationals entering Bhutan",
+        "kind": "official",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      }
+    },
+    {
+      "office": "Royal Bhutan Police",
+      "announces": "Runs the check post registration system for vehicles",
+      "stretch": "Check posts on all roads",
+      "channel": "Online registration",
+      "url": "https://1010.bt/epass/apply/",
+      "source": {
+        "url": "https://www.indembthimphu.gov.in/public_files/assets/pdf/ticker_29nov.pdf",
+        "title": "Guidelines For Indians visiting Bhutan as Tourists",
+        "kind": "official",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      }
+    },
+    {
+      "office": "Embassy of India, Thimphu",
+      "announces": "Publishes guidelines for Indian visitors",
+      "stretch": "All of Bhutan",
+      "channel": "Embassy website",
+      "url": "https://www.indembthimphu.gov.in/",
+      "source": {
+        "url": "https://www.indembthimphu.gov.in/pages/NDA5",
+        "title": "Embassy of India, Thimphu: information for Indian nationals entering Bhutan",
+        "kind": "official",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      }
+    },
+    {
+      "office": "Project Dantak, Border Roads Organisation",
+      "announces": "Maintains the main roads of western Bhutan",
+      "stretch": "Phuentsholing, Thimphu, Paro",
+      "channel": "None found",
+      "url": null,
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/Transport_in_Bhutan",
+        "title": "Transport in Bhutan",
+        "kind": "encyclopedia",
+        "opened": true,
+        "source_date": "2026-05-04",
+        "accessed": "2026-09-28"
+      }
+    }
+  ],
+  "hazards": [
+    {
+      "title": "Landslides in the monsoon, snow and frost in winter",
+      "detail": "Wikipedia notes unstable geology with frequent slips, made worse by summer rain and by winter snowstorms and frost.",
+      "months": [
+        6,
+        7,
+        8,
+        9,
+        12,
+        1,
+        2
+      ],
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/Transport_in_Bhutan",
+        "title": "Transport in Bhutan",
+        "kind": "encyclopedia",
+        "opened": true,
+        "source_date": "2026-05-04",
+        "accessed": "2026-09-28"
+      }
+    },
+    {
+      "title": "Long wait for permits at the border",
+      "detail": "The tourism department warns that applying at the point of entry can mean a long wait, depending on how many applicants there are.",
+      "months": [],
+      "source": {
+        "url": "https://bhutan.travel/visa",
+        "title": "Bhutan Travel: visa and permits",
+        "kind": "official",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      }
+    }
+  ],
+  "videos": [],
+  "gaps": [
+    "The tourism department and the Indian embassy disagree on whether a route permit is needed for Punakha; not resolved.",
+    "The two sources also differ on travel insurance and on the age band for the half-rate fee (6 to 11 against 6 to 12).",
+    "The Indian embassy's guidelines carry no date; the file name suggests 29 November of an unknown year.",
+    "No Bhutanese transport authority page was found naming the office that inspects vehicles and collects the daily fee at Phuentsholing.",
+    "Whether the daily vehicle fee is waived inside Phuentsholing town was not found.",
+    "Office hours and closed days of the Phuentsholing immigration office not found.",
+    "The immigration portal returned only its title and was not read.",
+    "No dated news source found for landslides or fog on the Phuentsholing to Thimphu road.",
+    "Usual number of days not sourced; highway numbers not sourced.",
+    "Wikipedia names a higher pass at Chapcha on the main road without giving its altitude; Dochula is recorded as the highest sourced point.",
+    "Web search budget ran out before this route; all facts come from pages opened directly.",
+    "Videos not collected."
+  ]
+}

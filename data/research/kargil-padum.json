@@ -1,0 +1,366 @@
+{
+  "slug": "kargil-padum",
+  "header": {
+    "highway": {
+      "value": "NH 301",
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/National_Highway_301_(India)",
+        "title": "National Highway 301 (India)",
+        "kind": "encyclopedia",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      }
+    },
+    "highest_point": {
+      "name": "Pensi La",
+      "altitude_m": 4400,
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/Pensi_La",
+        "title": "Pensi La",
+        "kind": "encyclopedia",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      }
+    },
+    "usual_days": {
+      "value": "1 long day of 8 to 12 hours",
+      "source": {
+        "url": "https://discoverwithdheeraj.com/padum-kargil-long-run-zanskar-2012/",
+        "title": "Padum to Kargil Road Trip 2026: Route Guide",
+        "kind": "blog",
+        "opened": true,
+        "source_date": "2026-08-31",
+        "accessed": "2026-09-28"
+      }
+    },
+    "usual_season": {
+      "value": "June to October",
+      "source": {
+        "url": "https://discoverwithdheeraj.com/plan-journey-zanskar-valley/",
+        "title": "Zanskar Valley Trip 2026: Routes, Budget and Permits",
+        "kind": "blog",
+        "opened": true,
+        "source_date": "2026-08-18",
+        "accessed": "2026-09-28"
+      }
+    },
+    "one_line": "Ladakh, from Kargil up the Suru valley and over Pensi La to Padum in Zanskar"
+  },
+  "rules": [
+    {
+      "id": "zanskar-no-permit-indian-citizens",
+      "kind": "permit",
+      "title": "Zanskar: no permit for Indian citizens",
+      "detail": "A blogger reports no permit or fee for Zanskar itself, though another page of his lists the Ladakh fee for the Kargil road. No official page found.",
+      "applies_to": "Indian citizens",
+      "set_by": "Not established",
+      "official_url": null,
+      "has_official_order": false,
+      "source": {
+        "url": "https://discoverwithdheeraj.com/plan-journey-zanskar-valley/",
+        "title": "Zanskar Valley Trip 2026: Routes, Budget and Permits",
+        "kind": "blog",
+        "opened": true,
+        "source_date": "2026-08-18",
+        "accessed": "2026-09-28"
+      },
+      "history": [
+        {
+          "date": "2026-08-31",
+          "change": "Route guide by the same blogger lists the Ladakh fee for the Padum to Kargil road.",
+          "source": {
+            "url": "https://discoverwithdheeraj.com/padum-kargil-long-run-zanskar-2012/",
+            "title": "Padum to Kargil Road Trip 2026: Route Guide",
+            "kind": "blog",
+            "opened": true,
+            "source_date": "2026-08-31",
+            "accessed": "2026-09-28"
+          }
+        }
+      ]
+    },
+    {
+      "id": "kargil-police-road-alerts",
+      "kind": "timing",
+      "title": "Kargil police close roads by colour-coded alert",
+      "detail": "When snow or slides make the road unsafe, District Police Kargil issue a dated advisory with a red alert that stops all vehicles on the Kargil to Zanskar road.",
+      "applies_to": "All vehicles",
+      "set_by": "District Police Kargil",
+      "official_url": null,
+      "has_official_order": true,
+      "source": {
+        "url": "https://voiceofladakh.in/2025/04/key-roads-in-kargil-closed-due-to-heavy-snowfall-traffic-advisory-issued/",
+        "title": "Key roads in Kargil closed due to heavy snowfall, traffic advisory issued",
+        "kind": "news",
+        "opened": true,
+        "source_date": "2025-04-20",
+        "accessed": "2026-09-28"
+      },
+      "history": [
+        {
+          "date": "2025-04-20",
+          "change": "Red alert: no vehicle movement over Pensi La after heavy snowfall.",
+          "source": {
+            "url": "https://voiceofladakh.in/2025/04/key-roads-in-kargil-closed-due-to-heavy-snowfall-traffic-advisory-issued/",
+            "title": "Key roads in Kargil closed due to heavy snowfall, traffic advisory issued",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2025-04-20",
+            "accessed": "2026-09-28"
+          }
+        }
+      ]
+    }
+  ],
+  "season": {
+    "note": "Pensi La is open for six to seven months; guides give early June to October, but dated opening and closing announcements were found for one year only.",
+    "history": [
+      {
+        "year": 2025,
+        "connected": null,
+        "open_to_motorcycles": null,
+        "closed": null,
+        "note": "Closed by police red alert on 20 April after snow. An operator log records the Padum to Kargil road open on 15 May, 1 July and 16 September. No source names motorcycles.",
+        "sources": [
+          {
+            "url": "https://voiceofladakh.in/2025/04/key-roads-in-kargil-closed-due-to-heavy-snowfall-traffic-advisory-issued/",
+            "title": "Key roads in Kargil closed due to heavy snowfall, traffic advisory issued",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2025-04-20",
+            "accessed": "2026-09-28"
+          },
+          {
+            "url": "https://discoverlehladakh.in/manali-darcha-shinkula-padum-zanskar-road-status.htm",
+            "title": "Manali - Darcha - Shinkula - Padum (Zanskar) Road Status in 2026",
+            "kind": "operator",
+            "opened": true,
+            "source_date": "2026-05-08",
+            "accessed": "2026-09-28"
+          }
+        ]
+      }
+    ]
+  },
+  "authorities": [
+    {
+      "office": "District Police Kargil",
+      "announces": "Road closures and colour-coded alerts",
+      "stretch": "Kargil to Pensi La to Padum",
+      "channel": "Advisories on its social media accounts, carried by local news",
+      "url": "https://www.instagram.com/p/DWorp8cEfUI/",
+      "source": {
+        "url": "https://voiceofladakh.in/2025/04/key-roads-in-kargil-closed-due-to-heavy-snowfall-traffic-advisory-issued/",
+        "title": "Key roads in Kargil closed due to heavy snowfall, traffic advisory issued",
+        "kind": "news",
+        "opened": true,
+        "source_date": "2025-04-20",
+        "accessed": "2026-09-28"
+      }
+    },
+    {
+      "office": "National Highways and Infrastructure Development Corporation",
+      "announces": "Maintains the highway",
+      "stretch": "Kargil to Padum",
+      "channel": "No public status channel found",
+      "url": null,
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/National_Highway_301_(India)",
+        "title": "National Highway 301 (India)",
+        "kind": "encyclopedia",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      }
+    },
+    {
+      "office": "Traffic Police, Ladakh Police",
+      "announces": "Traffic management; headquartered in Kargil",
+      "stretch": "Kargil district roads",
+      "channel": "Website and social media accounts",
+      "url": "https://police.ladakh.gov.in/pages/traffic.html",
+      "source": {
+        "url": "https://police.ladakh.gov.in/pages/traffic.html",
+        "title": "Traffic Police, Ladakh Police",
+        "kind": "official",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      }
+    },
+    {
+      "office": "Zanskar district administration, Padum",
+      "announces": "District formed on 27 April 2026; its road announcements were not found",
+      "stretch": "Pensi La to Padum",
+      "channel": "Not found",
+      "url": null,
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/Zanskar_district",
+        "title": "Zanskar district",
+        "kind": "encyclopedia",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      }
+    }
+  ],
+  "hazards": [
+    {
+      "title": "No fuel between Kargil and Padum",
+      "detail": "There is no pump on the road; fill up in Kargil. Supply in Padum is limited.",
+      "months": [],
+      "source": {
+        "url": "https://discoverwithdheeraj.com/plan-journey-zanskar-valley/",
+        "title": "Zanskar Valley Trip 2026: Routes, Budget and Permits",
+        "kind": "blog",
+        "opened": true,
+        "source_date": "2026-08-18",
+        "accessed": "2026-09-28"
+      }
+    },
+    {
+      "title": "Rough dirt track from Parkachik to Padum",
+      "detail": "Described as very bumpy, with underbody damage likely for low vehicles; the climb from Rangdum to Pensi La is the hardest part.",
+      "months": [],
+      "source": {
+        "url": "https://discoverwithdheeraj.com/plan-journey-zanskar-valley/",
+        "title": "Zanskar Valley Trip 2026: Routes, Budget and Permits",
+        "kind": "blog",
+        "opened": true,
+        "source_date": "2026-08-18",
+        "accessed": "2026-09-28"
+      }
+    },
+    {
+      "title": "Snow shuts Pensi La in spring",
+      "detail": "Heavy snowfall stopped all movement over the pass on 20 April 2025.",
+      "months": [
+        4,
+        5
+      ],
+      "source": {
+        "url": "https://voiceofladakh.in/2025/04/key-roads-in-kargil-closed-due-to-heavy-snowfall-traffic-advisory-issued/",
+        "title": "Key roads in Kargil closed due to heavy snowfall, traffic advisory issued",
+        "kind": "news",
+        "opened": true,
+        "source_date": "2025-04-20",
+        "accessed": "2026-09-28"
+      }
+    },
+    {
+      "title": "Unstable road just after snow clearance",
+      "detail": "The surface is described as unstable in the first weeks after opening.",
+      "months": [
+        6
+      ],
+      "source": {
+        "url": "https://discoverwithdheeraj.com/plan-journey-zanskar-valley/",
+        "title": "Zanskar Valley Trip 2026: Routes, Budget and Permits",
+        "kind": "blog",
+        "opened": true,
+        "source_date": "2026-08-18",
+        "accessed": "2026-09-28"
+      }
+    },
+    {
+      "title": "Early snow from October",
+      "detail": "Closures begin with the first snow in October and November.",
+      "months": [
+        10,
+        11
+      ],
+      "source": {
+        "url": "https://discoverwithdheeraj.com/plan-journey-zanskar-valley/",
+        "title": "Zanskar Valley Trip 2026: Routes, Budget and Permits",
+        "kind": "blog",
+        "opened": true,
+        "source_date": "2026-08-18",
+        "accessed": "2026-09-28"
+      }
+    },
+    {
+      "title": "Hairpin bends below Pensi La",
+      "detail": "The descent into the Stod valley has many hairpin turns.",
+      "months": [],
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/Pensi_La",
+        "title": "Pensi La",
+        "kind": "encyclopedia",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      }
+    },
+    {
+      "title": "Road widening and blasting stops",
+      "detail": "Widening between Rangdum and Parkachik keeps the surface rough and brings frequent halts for blasting.",
+      "months": [],
+      "source": {
+        "url": "https://discoverwithdheeraj.com/padum-kargil-long-run-zanskar-2012/",
+        "title": "Padum to Kargil Road Trip 2026: Route Guide",
+        "kind": "blog",
+        "opened": true,
+        "source_date": "2026-08-31",
+        "accessed": "2026-09-28"
+      }
+    },
+    {
+      "title": "Prepaid mobile connections from other states do not work",
+      "detail": "A blogger reports that only postpaid connections from outside work in Jammu and Kashmir and in Ladakh; no official source was found.",
+      "months": [],
+      "source": {
+        "url": "https://discoverwithdheeraj.com/mobile-phone-connectivity-in-leh-ladakh/",
+        "title": "Mobile phone connectivity in Leh Ladakh",
+        "kind": "blog",
+        "opened": true,
+        "source_date": "2026-08-14",
+        "accessed": "2026-09-28"
+      }
+    },
+    {
+      "title": "No reliable signal between Rangdum and Padum",
+      "detail": "One postpaid network works now and then; there is nothing dependable past Rangdum.",
+      "months": [],
+      "source": {
+        "url": "https://discoverwithdheeraj.com/padum-kargil-long-run-zanskar-2012/",
+        "title": "Padum to Kargil Road Trip 2026: Route Guide",
+        "kind": "blog",
+        "opened": true,
+        "source_date": "2026-08-31",
+        "accessed": "2026-09-28"
+      }
+    }
+  ],
+  "videos": [
+    {
+      "url": "https://www.youtube.com/watch?v=vmgmHhNNBjw",
+      "title": "Underrated Bike, Unreal Route – Zanskar’s Padum to Kargil on 125cc !!",
+      "channel": "Travel & Bite",
+      "stretch": "Padum to Kargil",
+      "filmed": null,
+      "bike": "Honda CB125 Hornet"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=1RdMcMLh7Vo",
+      "title": "Pensi La Pass & Drang Drung Glacier | Into Zanskar Valley | Ladakh Bike Ride, Ep. 8 |",
+      "channel": "The Young Monk",
+      "stretch": "Padum over Pensi La to Rangdum",
+      "filmed": null,
+      "bike": null
+    }
+  ],
+  "gaps": [
+    "No dated opening or closing announcement for Pensi La found for 2021, 2022, 2023, 2024 or 2026.",
+    "No source says whether motorcycles were allowed at opening in any year.",
+    "No official source found for the rule that Zanskar needs no permit; whether foreign citizens need one was not established.",
+    "No timing or one-way rule found for Pensi La.",
+    "Which office decides the opening of Pensi La was not established; the highway is maintained by a central corporation and closures are announced by Kargil police.",
+    "Whether the restriction on rental motorcycles from outside Ladakh is enforced in Kargil and Zanskar was not found.",
+    "The official account of District Police Kargil was not opened; its advisory was read in local news.",
+    "No website found for the new Zanskar district.",
+    "A blogger's two pages disagree on whether the Ladakh tourist fee applies on this road.",
+    "Video filming dates are not stated; they were published on 8 October 2025 and 24 September 2025. Both run from Padum towards Kargil."
+  ]
+}

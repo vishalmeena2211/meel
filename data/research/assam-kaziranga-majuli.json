@@ -1,0 +1,338 @@
+{
+  "slug": "assam-kaziranga-majuli",
+  "header": {
+    "highway": {
+      "value": "NH 715 past Kaziranga (formerly NH 37)",
+      "source": {
+        "url": "https://www.india.com/news/india/assam-flood-vehicle-speed-limits-to-be-regulated-on-national-highway-715-safety-measures-issued-7053443/",
+        "title": "Assam Flood: Vehicle Speed Limits to Be Regulated on National Highway 715, Safety Measures Issued",
+        "kind": "news",
+        "opened": true,
+        "source_date": "2024-07-02",
+        "accessed": "2026-09-28"
+      }
+    },
+    "highest_point": {
+      "name": null,
+      "altitude_m": null,
+      "source": null
+    },
+    "usual_days": {
+      "value": null,
+      "source": null
+    },
+    "usual_season": {
+      "value": "October to March",
+      "source": {
+        "url": "https://thebetterindia.com/travel/nimati-ghat-ferry-majuli-island-brahmaputra-assam-travel-11880612",
+        "title": "This Ferry From Jorhat's Nimati Ghat to Majuli Island Is Assam's Most Memorable Brahmaputra Ride",
+        "kind": "news",
+        "opened": true,
+        "source_date": "2026-05-28",
+        "accessed": "2026-09-28"
+      }
+    },
+    "one_line": "Brahmaputra valley of Assam: past Kaziranga to Jorhat, then by ferry from Nimati Ghat to the river island of Majuli"
+  },
+  "rules": [
+    {
+      "id": "majuli-ferry-carries-motorcycles",
+      "kind": "motorcycle-rule",
+      "title": "Majuli ferry: motorcycles go aboard",
+      "detail": "A May 2026 article and an August 2026 guide both describe motorcycles being carried on the government ferries from Nimati Ghat. No official statement or fare table was found.",
+      "applies_to": "All motorcycles",
+      "set_by": "Directorate of Inland Water Transport, Government of Assam",
+      "official_url": "https://www.asiwt.in/",
+      "has_official_order": false,
+      "source": {
+        "url": "https://thebetterindia.com/travel/nimati-ghat-ferry-majuli-island-brahmaputra-assam-travel-11880612",
+        "title": "This Ferry From Jorhat's Nimati Ghat to Majuli Island Is Assam's Most Memorable Brahmaputra Ride",
+        "kind": "news",
+        "opened": true,
+        "source_date": "2026-05-28",
+        "accessed": "2026-09-28"
+      },
+      "history": [
+        {
+          "date": "2021-09-08",
+          "change": "A passenger boat sank after a collision near Nimati Ghat.",
+          "source": {
+            "url": "https://theshillongtimes.com/2021/09/15/ro-pax-trips-enhanced-for-majuli-jorhat-passengers/",
+            "title": "Ro-Pax trips enhanced for Majuli-Jorhat passengers",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2021-09-15",
+            "accessed": "2026-09-28"
+          }
+        },
+        {
+          "date": "2021-09",
+          "change": "Single-engine boats barred from the crossing and daily trips of the vehicle-carrying vessels raised; reported 15 September 2021.",
+          "source": {
+            "url": "https://theshillongtimes.com/2021/09/15/ro-pax-trips-enhanced-for-majuli-jorhat-passengers/",
+            "title": "Ro-Pax trips enhanced for Majuli-Jorhat passengers",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2021-09-15",
+            "accessed": "2026-09-28"
+          }
+        }
+      ]
+    },
+    {
+      "id": "majuli-ferry-timings",
+      "kind": "timing",
+      "title": "Majuli ferry: 7:30 am to 3:30 pm",
+      "detail": "The district website gives these hours for ferries from Nimati Ghat to Kamalabari or Aphalamukh and advises booking ahead. Winter timetables are cut as days shorten and water falls.",
+      "applies_to": "All passengers and vehicles",
+      "set_by": "Directorate of Inland Water Transport, Government of Assam",
+      "official_url": "https://majuli.assam.gov.in/tourist-place-detail/479",
+      "has_official_order": true,
+      "source": {
+        "url": "https://majuli.assam.gov.in/tourist-place-detail/479",
+        "title": "Majuli district: directions and stays",
+        "kind": "official",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      },
+      "history": [
+        {
+          "date": "2022-08",
+          "change": "Newspaper listed service hours of 7 am to 4 pm.",
+          "source": {
+            "url": "https://assamtribune.com/article/ferry-services-in-assam-fare-timing-and-location-of-iwt-1435824",
+            "title": "Ferry Services in Assam: Fare, Timing, and Location of IWT",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2022-08-27",
+            "accessed": "2026-09-28"
+          }
+        },
+        {
+          "date": "2023-10-01",
+          "change": "New timetable took effect because of shorter days and a receding river.",
+          "source": {
+            "url": "https://www.pratidintime.com/latest-assam-news-breaking-news-assam/majuli/assam-iwt-new-schedule-nimati-kamalabari-ferry-oct-1",
+            "title": "Assam: IWT Issues New Schedule for Nimati-Kamalabari Ferry Services Starting Oct 1",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2023-09-30",
+            "accessed": "2026-09-28"
+          }
+        }
+      ]
+    },
+    {
+      "id": "majuli-north-bank-approach",
+      "kind": "timing",
+      "title": "Majuli: road and short ferry from the north bank",
+      "detail": "The district website also describes driving in from Lakhimpur through Dhakuakhana or from Dibrugarh over Bogibeel Bridge, and a 15-minute ferry at Dhunaguri Ghat running 7 am to 5 pm.",
+      "applies_to": "All passengers and vehicles",
+      "set_by": "Majuli district administration",
+      "official_url": "https://majuli.assam.gov.in/tourist-place-detail/479",
+      "has_official_order": true,
+      "source": {
+        "url": "https://majuli.assam.gov.in/tourist-place-detail/479",
+        "title": "Majuli district: directions and stays",
+        "kind": "official",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      },
+      "history": []
+    },
+    {
+      "id": "majuli-ferry-online-ticket",
+      "kind": "document",
+      "title": "Majuli ferry: tickets online or at the counter",
+      "detail": "The state ferry portal lists Nimati and Kamalabari and sells tickets in advance. Online ticketing began at Nimati Ghat on 27 September 2021.",
+      "applies_to": "All passengers and vehicles",
+      "set_by": "Directorate of Inland Water Transport, Government of Assam",
+      "official_url": "https://www.asiwt.in/",
+      "has_official_order": true,
+      "source": {
+        "url": "https://negd.gov.in/isl/Directory/statedata/459",
+        "title": "Ferry E-Ticketing for Inland Water Transport Assam",
+        "kind": "official",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      },
+      "history": [
+        {
+          "date": "2021-09-27",
+          "change": "Online ferry ticketing launched at Nimati Ghat.",
+          "source": {
+            "url": "https://negd.gov.in/isl/Directory/statedata/459",
+            "title": "Ferry E-Ticketing for Inland Water Transport Assam",
+            "kind": "official",
+            "opened": true,
+            "source_date": null,
+            "accessed": "2026-09-28"
+          }
+        }
+      ]
+    },
+    {
+      "id": "kaziranga-highway-speed-limit",
+      "kind": "motorcycle-rule",
+      "title": "Kaziranga: flood-season speed limit on the highway",
+      "detail": "Magistrates cap speed at 20 or 40 kilometres an hour on the highway past the park while animals cross to higher ground. The 2024 order ran until further order.",
+      "applies_to": "All vehicles",
+      "set_by": "Sub-Divisional Magistrate, Kaliabor, and neighbouring district administrations",
+      "official_url": null,
+      "has_official_order": true,
+      "source": {
+        "url": "https://www.india.com/news/india/assam-flood-vehicle-speed-limits-to-be-regulated-on-national-highway-715-safety-measures-issued-7053443/",
+        "title": "Assam Flood: Vehicle Speed Limits to Be Regulated on National Highway 715, Safety Measures Issued",
+        "kind": "news",
+        "opened": true,
+        "source_date": "2024-07-02",
+        "accessed": "2026-09-28"
+      },
+      "history": [
+        {
+          "date": "2021-07",
+          "change": "Prohibitory order capped speed at 40 kilometres an hour in the corridor from Panbari to Haldhibari; reported 7 July 2021.",
+          "source": {
+            "url": "https://thenewsmill.com/section-144-kaziranga-animal-corridor",
+            "title": "Section 144 at Kaziranga's animal corridor; speed limit for vehicles on NH-715",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2021-07-07",
+            "accessed": "2026-09-28"
+          }
+        },
+        {
+          "date": "2024-07",
+          "change": "Order by the Sub-Divisional Magistrate, Kaliabor, set limits of 20 or 40 kilometres an hour; reported 2 July 2024.",
+          "source": {
+            "url": "https://www.india.com/news/india/assam-flood-vehicle-speed-limits-to-be-regulated-on-national-highway-715-safety-measures-issued-7053443/",
+            "title": "Assam Flood: Vehicle Speed Limits to Be Regulated on National Highway 715, Safety Measures Issued",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2024-07-02",
+            "accessed": "2026-09-28"
+          }
+        }
+      ]
+    }
+  ],
+  "season": {
+    "note": "No road on this route closes by season; the ferry to Majuli is disrupted by monsoon currents and winter fog.",
+    "history": []
+  },
+  "authorities": [
+    {
+      "office": "Majuli district administration",
+      "announces": "Publishes directions, ferry hours and the routes into the island",
+      "stretch": "Majuli and its ferry points",
+      "channel": "District website",
+      "url": "https://majuli.assam.gov.in/",
+      "source": {
+        "url": "https://majuli.assam.gov.in/tourist-place-detail/479",
+        "title": "Majuli district: directions and stays",
+        "kind": "official",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      }
+    },
+    {
+      "office": "Directorate of Inland Water Transport, Government of Assam",
+      "announces": "Runs the ferries, sets the timetable and sells tickets",
+      "stretch": "Nimati Ghat to Kamalabari",
+      "channel": "Ferry ticket portal",
+      "url": "https://www.asiwt.in/",
+      "source": {
+        "url": "https://www.asiwt.in/",
+        "title": "Inland Water Transport - Assam: ferry ticket booking",
+        "kind": "official",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      }
+    },
+    {
+      "office": "Sub-Divisional Magistrate, Kaliabor",
+      "announces": "Flood-season speed limits on the highway past Kaziranga",
+      "stretch": "National Highway 715 through the park's animal corridors",
+      "channel": "Orders reported by news",
+      "url": null,
+      "source": {
+        "url": "https://www.india.com/news/india/assam-flood-vehicle-speed-limits-to-be-regulated-on-national-highway-715-safety-measures-issued-7053443/",
+        "title": "Assam Flood: Vehicle Speed Limits to Be Regulated on National Highway 715, Safety Measures Issued",
+        "kind": "news",
+        "opened": true,
+        "source_date": "2024-07-02",
+        "accessed": "2026-09-28"
+      }
+    }
+  ],
+  "hazards": [
+    {
+      "title": "Ferry suspended when the river runs high",
+      "detail": "A guide says crossings can stop for days in the monsoon when the current is too strong.",
+      "months": [
+        7,
+        8,
+        9
+      ],
+      "source": {
+        "url": "https://trekgo.in/blog/how-to-reach-majuli-island-from-jorhat-nimati-ghat-ferry",
+        "title": "How to Reach Majuli Island from Jorhat: Nimati Ghat Ferry Guide",
+        "kind": "operator",
+        "opened": true,
+        "source_date": "2026-08-23",
+        "accessed": "2026-09-28"
+      }
+    },
+    {
+      "title": "Morning fog delays the ferry",
+      "detail": "The same guide says winter fog can hold morning departures until visibility improves.",
+      "months": [
+        12,
+        1
+      ],
+      "source": {
+        "url": "https://trekgo.in/blog/how-to-reach-majuli-island-from-jorhat-nimati-ghat-ferry",
+        "title": "How to Reach Majuli Island from Jorhat: Nimati Ghat Ferry Guide",
+        "kind": "operator",
+        "opened": true,
+        "source_date": "2026-08-23",
+        "accessed": "2026-09-28"
+      }
+    },
+    {
+      "title": "Wild animals on the highway in flood season",
+      "detail": "The 2024 order notes that animals leave the flooded park for the Karbi Anglong hills across the highway, risking collisions.",
+      "months": [
+        6,
+        7,
+        8,
+        9
+      ],
+      "source": {
+        "url": "https://www.india.com/news/india/assam-flood-vehicle-speed-limits-to-be-regulated-on-national-highway-715-safety-measures-issued-7053443/",
+        "title": "Assam Flood: Vehicle Speed Limits to Be Regulated on National Highway 715, Safety Measures Issued",
+        "kind": "news",
+        "opened": true,
+        "source_date": "2024-07-02",
+        "accessed": "2026-09-28"
+      }
+    }
+  ],
+  "videos": [],
+  "gaps": [
+    "No official statement found that the Majuli ferry carries motorcycles, nor an official fare for them; the ferry portal's landing page does not say.",
+    "Whether motorcycles go on every vessel or only on the larger vehicle-carrying vessels was not established.",
+    "The district website gives ferry hours but not a sailing-by-sailing timetable, and does not say whether vehicles are carried.",
+    "No flood-season speed order for 2025 or 2026 was found; the latest seen is July 2024.",
+    "Status of the bridge being built between Jorhat and Majuli not sourced.",
+    "Highest point and usual number of days not sourced; the route is in the plains.",
+    "No source found stating that Assam needs no permit for Indian or foreign citizens.",
+    "Kaziranga park opening and closing dates were not collected; they govern safaris, not the highway.",
+    "Videos not collected."
+  ]
+}

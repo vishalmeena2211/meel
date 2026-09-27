@@ -1,0 +1,260 @@
+{
+  "slug": "rajasthan-desert",
+  "header": {
+    "highway": {
+      "value": "NH 125 (Jodhpur to Pokhran), NH 11 (Pokhran to Jaisalmer), NH 70 (Longewala to Tanot)",
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/National_Highway_11_(India)",
+        "title": "National Highway 11 (India)",
+        "kind": "encyclopedia",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      }
+    },
+    "highest_point": null,
+    "usual_days": null,
+    "usual_season": {
+      "value": "October to February",
+      "source": {
+        "url": "https://jcrdesertsafaricamp.com/jaisalmer-indo-pak-border/",
+        "title": "Jaisalmer Indo Pak Border: Longewala and Tanot Guide 2026",
+        "kind": "operator",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      }
+    },
+    "one_line": "Rajasthan, across the Thar desert from Jaipur to the border posts beyond Jaisalmer"
+  },
+  "rules": [
+    {
+      "id": "bawliyanwala-border-pass-online",
+      "kind": "permit",
+      "title": "Bawliyanwala border point: online pass is mandatory",
+      "detail": "Every adult needs an individual pass, booked online on the Tanot temple trust website, to go past Tanot to the border viewing point. Notice on the issuer's site.",
+      "applies_to": "Indian citizens, each adult",
+      "set_by": "Border Security Force, through the Shri Tanot Mata Mandir Trust",
+      "official_url": "https://www.shritanotmatamandirtrust.com/",
+      "has_official_order": false,
+      "source": {
+        "url": "https://www.shritanotmatamandirtrust.com/",
+        "title": "Shri Tanot Mata Mandir Trust",
+        "kind": "official",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      },
+      "history": [
+        {
+          "date": "2022-02",
+          "change": "Border Security Force announced a visitor stadium and retreat ceremony at the Babliyan post; visitor rules were still to be decided.",
+          "source": {
+            "url": "https://www.theindianpanorama.news/india/bsf-to-start-beating-retreat-along-international-border-in-rajasthan-by-march/",
+            "title": "BSF to start Beating Retreat along international border in Rajasthan by March",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2022-02-05",
+            "accessed": "2026-09-28"
+          }
+        },
+        {
+          "date": "2024-08",
+          "change": "Online pass launched for Indian nationals. Before this, visitors registered with identity papers at a counter at Tanot temple.",
+          "source": {
+            "url": "https://www.freepressjournal.in/india/rajasthan-bsf-launches-e-pass-facility-for-tourists-visiting-india-pakistan-border-in-jaisalmer",
+            "title": "Rajasthan: BSF Launches E-Pass Facility For Tourists Visiting India-Pakistan Border In Jaisalmer",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2024-08-27",
+            "accessed": "2026-09-28"
+          }
+        },
+        {
+          "date": "2026-02-12",
+          "change": "Online booking of the border pass became mandatory.",
+          "source": {
+            "url": "https://www.shritanotmatamandirtrust.com/",
+            "title": "Shri Tanot Mata Mandir Trust",
+            "kind": "official",
+            "opened": true,
+            "source_date": null,
+            "accessed": "2026-09-28"
+          }
+        }
+      ]
+    },
+    {
+      "id": "tanot-longewala-no-permit-indian-citizens",
+      "kind": "permit",
+      "title": "Tanot and Longewala: no permit for Indian citizens",
+      "detail": "Indian visitors reach Tanot temple and the Longewala war memorial without a permit. Stated by a tour operator; no government order was found.",
+      "applies_to": "Indian citizens",
+      "set_by": "Border Security Force (practice on the ground)",
+      "official_url": null,
+      "has_official_order": false,
+      "source": {
+        "url": "https://jcrdesertsafaricamp.com/jaisalmer-indo-pak-border/",
+        "title": "Jaisalmer Indo Pak Border: Longewala and Tanot Guide 2026",
+        "kind": "operator",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      },
+      "history": []
+    },
+    {
+      "id": "longewala-tanot-identity-check",
+      "kind": "document",
+      "title": "Longewala to Tanot: identity checked at a checkpost",
+      "detail": "A traveller's account says a checkpost between Longewala and Tanot asks for identity papers and turns back anyone without valid ones. No government order was found.",
+      "applies_to": "All visitors",
+      "set_by": "Not stated",
+      "official_url": null,
+      "has_official_order": false,
+      "source": {
+        "url": "https://www.tripoto.com/jaisalmer/trips/longewala-war-memorial-the-pride-of-india-5f7d6fc24da54",
+        "title": "Longewala War Memorial - The pride of India",
+        "kind": "blog",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      },
+      "history": []
+    },
+    {
+      "id": "tanot-longewala-foreign-nationals-prior-permission",
+      "kind": "permit",
+      "title": "Foreign nationals: prior permission for Tanot and Longewala",
+      "detail": "A tour operator says foreigners must apply at least 15 days ahead through the District Collector's office in Jaisalmer. No government order was found.",
+      "applies_to": "Foreign nationals",
+      "set_by": "District Collector, Jaisalmer (as reported)",
+      "official_url": null,
+      "has_official_order": false,
+      "source": {
+        "url": "https://jcrdesertsafaricamp.com/jaisalmer-indo-pak-border/",
+        "title": "Jaisalmer Indo Pak Border: Longewala and Tanot Guide 2026",
+        "kind": "operator",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      },
+      "history": []
+    },
+    {
+      "id": "border-pillar-written-permission",
+      "kind": "permit",
+      "title": "Border pillar beyond Tanot: separate written permission",
+      "detail": "A 2017 rider account: form from the Jaisalmer Collector's office, then approval at a Border Security Force office on the Tanot road. No government order found; may be outdated.",
+      "applies_to": "All visitors",
+      "set_by": "District Collector, Jaisalmer, and Border Security Force (as reported)",
+      "official_url": null,
+      "has_official_order": false,
+      "source": {
+        "url": "https://www.thefreebird.net/travelblog/border-pillar-bp-609",
+        "title": "Permission for Border Pillar BP 609",
+        "kind": "blog",
+        "opened": true,
+        "source_date": "2017-10-26",
+        "accessed": "2026-09-28"
+      },
+      "history": []
+    }
+  ],
+  "season": {
+    "note": "Riders go between October and February; April to June is avoided because desert temperatures pass 45 degrees Celsius.",
+    "history": []
+  },
+  "authorities": [
+    {
+      "office": "Border Security Force, through the Shri Tanot Mata Mandir Trust",
+      "announces": "Issues the Bawliyanwala border pass and posts temple notices",
+      "stretch": "Tanot to the Bawliyanwala border point",
+      "channel": "Website",
+      "url": "https://www.shritanotmatamandirtrust.com/",
+      "source": {
+        "url": "https://www.freepressjournal.in/india/rajasthan-bsf-launches-e-pass-facility-for-tourists-visiting-india-pakistan-border-in-jaisalmer",
+        "title": "Rajasthan: BSF Launches E-Pass Facility For Tourists Visiting India-Pakistan Border In Jaisalmer",
+        "kind": "news",
+        "opened": true,
+        "source_date": "2024-08-27",
+        "accessed": "2026-09-28"
+      }
+    },
+    {
+      "office": "District Collector's office, Jaisalmer",
+      "announces": "Reported to issue the form for border pillar visits and permission for foreign nationals",
+      "stretch": "Border area beyond Tanot",
+      "channel": "In person",
+      "url": null,
+      "source": {
+        "url": "https://www.thefreebird.net/travelblog/border-pillar-bp-609",
+        "title": "Permission for Border Pillar BP 609",
+        "kind": "blog",
+        "opened": true,
+        "source_date": "2017-10-26",
+        "accessed": "2026-09-28"
+      }
+    }
+  ],
+  "hazards": [
+    {
+      "title": "Extreme summer heat in the Thar",
+      "detail": "Daytime temperatures pass 45 degrees Celsius; an operator advises against the border loop in these months.",
+      "months": [
+        4,
+        5,
+        6
+      ],
+      "source": {
+        "url": "https://jcrdesertsafaricamp.com/jaisalmer-indo-pak-border/",
+        "title": "Jaisalmer Indo Pak Border: Longewala and Tanot Guide 2026",
+        "kind": "operator",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      }
+    },
+    {
+      "title": "Few fuel pumps beyond Jaisalmer",
+      "detail": "Pumps are rare on the Ramgarh, Tanot and Longewala loop; fill up in Jaisalmer before leaving.",
+      "months": [],
+      "source": {
+        "url": "https://jcrdesertsafaricamp.com/jaisalmer-indo-pak-border/",
+        "title": "Jaisalmer Indo Pak Border: Longewala and Tanot Guide 2026",
+        "kind": "operator",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      }
+    }
+  ],
+  "videos": [
+    {
+      "url": "https://www.youtube.com/watch?v=4x_gIDxZFf0",
+      "title": "Jaisalmer To TANOT MATA Mandir & LONGEWALA BORDER Road Trip | Rajasthan Motorcycle Tour EP.04",
+      "channel": "The Fearless Traveller",
+      "stretch": "Jaisalmer to Tanot and Longewala",
+      "filmed": null,
+      "bike": null
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=eTy0Hc2f7HU",
+      "title": "Riding Interceptor650 to Longewala & Tanot | Riding in Rajasthan | Jaisalmer to Longewala",
+      "channel": "Wandering Som",
+      "stretch": "Jaisalmer to Longewala and Tanot",
+      "filmed": null,
+      "bike": "Royal Enfield Interceptor 650"
+    }
+  ],
+  "gaps": [
+    "No government page was found that states the permit rule for Tanot and Longewala. The Rajasthan tourism site loads its text by script and could not be read.",
+    "The fee for the Bawliyanwala border pass, the visiting hours at the border point, and whether motorcycles may ride to it are not stated on the pages read.",
+    "The 2017 account of border pillar permission could not be checked against a newer source; the rider who wrote it did not know if motorcycles were allowed.",
+    "Usual number of riding days: no source found.",
+    "No highest point recorded: this is a desert route, not a hill route.",
+    "The highway value combines three Wikipedia pages (National Highway 125, 11 and 70); only one is cited. The Jaipur to Jodhpur highway number was not sourced.",
+    "No source found for winter fog on this route.",
+    "Videos: the pages give upload dates, not filming dates, so 'filmed' is filled only where the title names a date. Uploads, in order: 2024-12, 2020-02."
+  ]
+}

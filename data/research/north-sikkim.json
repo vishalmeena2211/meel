@@ -1,0 +1,601 @@
+{
+  "slug": "north-sikkim",
+  "header": {
+    "highway": {
+      "value": "NH 310C from Chungthang to Gurudongmar",
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/Gurudongmar_Lake",
+        "title": "Gurudongmar Lake",
+        "kind": "encyclopedia",
+        "opened": true,
+        "source_date": "2026-07-25",
+        "accessed": "2026-09-28"
+      }
+    },
+    "highest_point": {
+      "name": "Gurudongmar Lake",
+      "altitude_m": 5425,
+      "source": {
+        "url": "https://mangan.nic.in/tourist-places/",
+        "title": "Mangan District: tourist places",
+        "kind": "official",
+        "opened": true,
+        "source_date": "2026-09-24",
+        "accessed": "2026-09-28"
+      }
+    },
+    "usual_days": {
+      "value": "3 from Gangtok at the least; 7 for the full circuit",
+      "source": {
+        "url": "https://discoverwithdheeraj.com/gurudongmar-lake-chopta-valley/",
+        "title": "Gurudongmar Lake 2026: Status, Permits & Cost Guide",
+        "kind": "blog",
+        "opened": true,
+        "source_date": "2026-08-24",
+        "accessed": "2026-09-28"
+      }
+    },
+    "usual_season": {
+      "value": "May to June and September to November",
+      "source": {
+        "url": "https://discoverwithdheeraj.com/gurudongmar-lake-chopta-valley/",
+        "title": "Gurudongmar Lake 2026: Status, Permits & Cost Guide",
+        "kind": "blog",
+        "opened": true,
+        "source_date": "2026-08-24",
+        "accessed": "2026-09-28"
+      }
+    },
+    "one_line": "North Sikkim, up the Teesta valley to Lachen and Gurudongmar Lake, and to Lachung and Yumthang"
+  },
+  "rules": [
+    {
+      "id": "sikkim-protected-area-permit",
+      "kind": "permit",
+      "title": "Sikkim: Protected Area Permit for border areas",
+      "detail": "Needed for Tsomgo, Nathu La, Zuluk to Kupup, Lachen, Lachung, Thangu and Gurudongmar. Issued by the Permit Cell in Gangtok and district tourism offices. The page gives no fee amounts.",
+      "applies_to": "All visitors",
+      "set_by": "Tourism and Civil Aviation Department, Government of Sikkim",
+      "official_url": "https://www.sikkim.gov.in/department/departmentmenudetails?url=Menu%3Dtourism-civil-aviation-department%2Fgeneral-info",
+      "has_official_order": true,
+      "source": {
+        "url": "https://www.sikkim.gov.in/department/departmentmenudetails?url=Menu%3Dtourism-civil-aviation-department%2Fgeneral-info",
+        "title": "Tourism and Civil Aviation Department: general information",
+        "kind": "official",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      },
+      "history": [
+        {
+          "date": "2026-01",
+          "change": "Blogs report permits became digital with a scannable code, applied for online before arrival.",
+          "source": {
+            "url": "https://bestofnortheast.com/sikkim-permit-2026/",
+            "title": "The NEW Sikkim Permit (2026): Step-by-Step Guide",
+            "kind": "blog",
+            "opened": true,
+            "source_date": "2026-04-03",
+            "accessed": "2026-09-28"
+          }
+        },
+        {
+          "date": "2026-08-19",
+          "change": "Stakeholder meeting on an Integrated Online Permit System with digital verification at check posts.",
+          "source": {
+            "url": "https://www.indiatodayne.in/sikkim/story/sikkim-may-bar-two-wheelers-from-rap-pap-areas-under-proposed-permit-norms-1440153-2026-08-19",
+            "title": "Sikkim may bar two-wheelers from RAP, PAP areas under proposed permit norms",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2026-08-19",
+            "accessed": "2026-09-28"
+          }
+        }
+      ]
+    },
+    {
+      "id": "sikkim-own-motorcycle-only",
+      "kind": "motorcycle-rule",
+      "title": "Sikkim: motorcycle must be registered to the rider",
+      "detail": "The official page allows only self-registered, self-ridden motorcycles in permit areas. Apply one day ahead with the bank fee receipt. Two-wheeler permits run up to seven days.",
+      "applies_to": "Riders on their own motorcycles",
+      "set_by": "Tourism and Civil Aviation Department, Government of Sikkim",
+      "official_url": "https://www.sikkim.gov.in/department/departmentmenudetails?url=Menu%3Dtourism-civil-aviation-department%2Fgeneral-info",
+      "has_official_order": true,
+      "source": {
+        "url": "https://www.sikkim.gov.in/department/departmentmenudetails?url=Menu%3Dtourism-civil-aviation-department%2Fgeneral-info",
+        "title": "Tourism and Civil Aviation Department: general information",
+        "kind": "official",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      },
+      "history": []
+    },
+    {
+      "id": "sikkim-rented-motorcycle-through-operator",
+      "kind": "motorcycle-rule",
+      "title": "Sikkim: rented motorcycles apply through a registered operator",
+      "detail": "A motorcycle hired inside Sikkim gets its permit through a government-registered local tour operator, not directly by the rider.",
+      "applies_to": "Riders on motorcycles rented in Sikkim",
+      "set_by": "Tourism and Civil Aviation Department, Government of Sikkim",
+      "official_url": "https://www.sikkim.gov.in/department/departmentmenudetails?url=Menu%3Dtourism-civil-aviation-department%2Fgeneral-info",
+      "has_official_order": true,
+      "source": {
+        "url": "https://www.sikkim.gov.in/department/departmentmenudetails?url=Menu%3Dtourism-civil-aviation-department%2Fgeneral-info",
+        "title": "Tourism and Civil Aviation Department: general information",
+        "kind": "official",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      },
+      "history": []
+    },
+    {
+      "id": "sikkim-two-wheeler-bar-proposal-2026",
+      "kind": "motorcycle-rule",
+      "title": "Sikkim: proposed bar on two-wheelers in permit areas",
+      "detail": "Proposal discussed on 19 August 2026 would bar two-wheelers and vehicles registered outside Sikkim from permit areas. It needs Cabinet approval. No decision found as of 28 September 2026.",
+      "applies_to": "All two-wheelers; all vehicles registered outside Sikkim",
+      "set_by": "Government of Sikkim (Cabinet decision pending)",
+      "official_url": null,
+      "has_official_order": false,
+      "source": {
+        "url": "https://www.indiatodayne.in/sikkim/story/sikkim-may-bar-two-wheelers-from-rap-pap-areas-under-proposed-permit-norms-1440153-2026-08-19",
+        "title": "Sikkim may bar two-wheelers from RAP, PAP areas under proposed permit norms",
+        "kind": "news",
+        "opened": true,
+        "source_date": "2026-08-19",
+        "accessed": "2026-09-28"
+      },
+      "history": [
+        {
+          "date": "2026-08-19",
+          "change": "Proposal raised at a stakeholder meeting chaired by the Chief Minister; reported as not yet in effect.",
+          "source": {
+            "url": "https://www.indiatodayne.in/sikkim/story/sikkim-may-bar-two-wheelers-from-rap-pap-areas-under-proposed-permit-norms-1440153-2026-08-19",
+            "title": "Sikkim may bar two-wheelers from RAP, PAP areas under proposed permit norms",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2026-08-19",
+            "accessed": "2026-09-28"
+          }
+        }
+      ]
+    },
+    {
+      "id": "north-sikkim-permit-suspensions",
+      "kind": "permit",
+      "title": "North Sikkim: permits stop when the road fails",
+      "detail": "Lachen and Gurudongmar permits stopped after the October 2023 flood and resumed in 2026. They can be suspended at short notice after landslides.",
+      "applies_to": "All visitors",
+      "set_by": "Tourism and Civil Aviation Department, Government of Sikkim and Mangan district administration",
+      "official_url": "https://www.sikkim.gov.in/department/departmentmenudetails?url=Menu%3Dtourism-civil-aviation-department%2Fgeneral-info",
+      "has_official_order": false,
+      "source": {
+        "url": "https://www.etvbharat.com/en/state/sikkim-lachen-lachung-route-reopens-for-tourists-enn26091103729",
+        "title": "Sikkim's Lachen-Lachung Route Reopens For Tourists After Three Years",
+        "kind": "news",
+        "opened": true,
+        "source_date": "2026-09-11",
+        "accessed": "2026-09-28"
+      },
+      "history": [
+        {
+          "date": "2023-10",
+          "change": "Flash flood on the Teesta destroyed roads and bridges; permits for Lachen stopped.",
+          "source": {
+            "url": "https://www.etvbharat.com/en/state/sikkim-lachen-lachung-route-reopens-for-tourists-enn26091103729",
+            "title": "Sikkim's Lachen-Lachung Route Reopens For Tourists After Three Years",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2026-09-11",
+            "accessed": "2026-09-28"
+          }
+        },
+        {
+          "date": "2026-03-09",
+          "change": "A blog records permits for Lachen and Gurudongmar resuming.",
+          "source": {
+            "url": "https://discoverwithdheeraj.com/gurudongmar-lake-chopta-valley/",
+            "title": "Gurudongmar Lake 2026: Status, Permits & Cost Guide",
+            "kind": "blog",
+            "opened": true,
+            "source_date": "2026-08-24",
+            "accessed": "2026-09-28"
+          }
+        },
+        {
+          "date": "2026-06",
+          "change": "The same blog records a fresh closure around June for a safety assessment.",
+          "source": {
+            "url": "https://discoverwithdheeraj.com/gurudongmar-lake-chopta-valley/",
+            "title": "Gurudongmar Lake 2026: Status, Permits & Cost Guide",
+            "kind": "blog",
+            "opened": true,
+            "source_date": "2026-08-24",
+            "accessed": "2026-09-28"
+          }
+        },
+        {
+          "date": "2026-09-11",
+          "change": "News report: permits for Lachen issued from this Friday; the road had carried traffic since February but slides kept permits shut.",
+          "source": {
+            "url": "https://www.etvbharat.com/en/state/sikkim-lachen-lachung-route-reopens-for-tourists-enn26091103729",
+            "title": "Sikkim's Lachen-Lachung Route Reopens For Tourists After Three Years",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2026-09-11",
+            "accessed": "2026-09-28"
+          }
+        }
+      ]
+    },
+    {
+      "id": "north-sikkim-toong-checkpost-cutoff",
+      "kind": "timing",
+      "title": "North Sikkim: cross Toong check post by 4 pm",
+      "detail": "Reported on 11 September 2026: vehicles going up and coming down must pass the Toong (Tung) check post by 4 pm. Heavy vehicles use a separate road. Order not seen.",
+      "applies_to": "All vehicles",
+      "set_by": "Mangan district administration",
+      "official_url": null,
+      "has_official_order": false,
+      "source": {
+        "url": "https://www.etvbharat.com/en/state/sikkim-lachen-lachung-route-reopens-for-tourists-enn26091103729",
+        "title": "Sikkim's Lachen-Lachung Route Reopens For Tourists After Three Years",
+        "kind": "news",
+        "opened": true,
+        "source_date": "2026-09-11",
+        "accessed": "2026-09-28"
+      },
+      "history": []
+    },
+    {
+      "id": "gurudongmar-two-night-minimum-claim",
+      "kind": "permit",
+      "title": "Gurudongmar: two-night minimum and no foreigners, per blog",
+      "detail": "A blog updated in August 2026 says one-night permits are no longer issued and foreign citizens are not allowed to the lake. No official order found.",
+      "applies_to": "All visitors",
+      "set_by": "Not established; reported by a blog",
+      "official_url": null,
+      "has_official_order": false,
+      "source": {
+        "url": "https://discoverwithdheeraj.com/gurudongmar-lake-chopta-valley/",
+        "title": "Gurudongmar Lake 2026: Status, Permits & Cost Guide",
+        "kind": "blog",
+        "opened": true,
+        "source_date": "2026-08-24",
+        "accessed": "2026-09-28"
+      },
+      "history": []
+    },
+    {
+      "id": "sikkim-150cc-minimum-claim",
+      "kind": "motorcycle-rule",
+      "title": "Sikkim: 150cc minimum claimed for permit areas",
+      "detail": "Blogs say motorcycles under 150cc are refused permits for North Sikkim, Nathu La and Zuluk. The official page does not mention engine size; no order found.",
+      "applies_to": "All two-wheelers",
+      "set_by": "Not established; reported by blogs",
+      "official_url": null,
+      "has_official_order": false,
+      "source": {
+        "url": "https://northeastindiaconnect.com/sikkim-bike-permit-rules-2026/",
+        "title": "Sikkim Bike Permit Rules: What Every Rider Needs to Know Before Hitting North Sikkim in 2026",
+        "kind": "blog",
+        "opened": true,
+        "source_date": "2026-08-27",
+        "accessed": "2026-09-28"
+      },
+      "history": []
+    },
+    {
+      "id": "sikkim-aadhaar-not-proof-of-nationality",
+      "kind": "document",
+      "title": "Sikkim: Aadhaar not accepted as proof of nationality",
+      "detail": "The official tourism page says an Aadhaar card is not accepted as proof of citizenship or nationality when applying for permits.",
+      "applies_to": "Indian citizens",
+      "set_by": "Tourism and Civil Aviation Department, Government of Sikkim",
+      "official_url": "https://www.sikkim.gov.in/department/departmentmenudetails?url=Menu%3Dtourism-civil-aviation-department%2Fgeneral-info",
+      "has_official_order": true,
+      "source": {
+        "url": "https://www.sikkim.gov.in/department/departmentmenudetails?url=Menu%3Dtourism-civil-aviation-department%2Fgeneral-info",
+        "title": "Tourism and Civil Aviation Department: general information",
+        "kind": "official",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      },
+      "history": []
+    },
+    {
+      "id": "sikkim-motorcycle-permit-documents-claim",
+      "kind": "document",
+      "title": "Sikkim: papers riders are asked for",
+      "detail": "A travel site lists photo identity, driving licence, registration, insurance and pollution certificates, plus photographs, in duplicate. No official list found.",
+      "applies_to": "Riders on their own motorcycles",
+      "set_by": "Not established; reported by a travel site",
+      "official_url": null,
+      "has_official_order": false,
+      "source": {
+        "url": "https://www.darjeeling-tourism.com/darj_0001fc.htm",
+        "title": "How to self drive a motorbike or car in Sikkim",
+        "kind": "blog",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      },
+      "history": []
+    },
+    {
+      "id": "sikkim-foreigners-restricted-area-permit",
+      "kind": "permit",
+      "title": "Sikkim: foreign citizens need a Restricted Area Permit",
+      "detail": "Valid 30 days, extendable by 30 in Gangtok. Protected areas need a group routed through a registered operator. Bhutanese citizens are exempt.",
+      "applies_to": "Foreign citizens",
+      "set_by": "Tourism and Civil Aviation Department, Government of Sikkim",
+      "official_url": "https://www.sikkim.gov.in/department/departmentmenudetails?url=Menu%3Dtourism-civil-aviation-department%2Fgeneral-info",
+      "has_official_order": true,
+      "source": {
+        "url": "https://www.sikkim.gov.in/department/departmentmenudetails?url=Menu%3Dtourism-civil-aviation-department%2Fgeneral-info",
+        "title": "Tourism and Civil Aviation Department: general information",
+        "kind": "official",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      },
+      "history": []
+    },
+    {
+      "id": "sikkim-foreigners-international-driving-licence",
+      "kind": "document",
+      "title": "Sikkim: foreign riders need an International Driving Licence",
+      "detail": "Stated on the official tourism page. A foreigner's two-wheeler pass covers one day to Tsomgo, or up to five days in North Sikkim.",
+      "applies_to": "Foreign citizens on two-wheelers",
+      "set_by": "Tourism and Civil Aviation Department, Government of Sikkim",
+      "official_url": "https://www.sikkim.gov.in/department/departmentmenudetails?url=Menu%3Dtourism-civil-aviation-department%2Fgeneral-info",
+      "has_official_order": true,
+      "source": {
+        "url": "https://www.sikkim.gov.in/department/departmentmenudetails?url=Menu%3Dtourism-civil-aviation-department%2Fgeneral-info",
+        "title": "Tourism and Civil Aviation Department: general information",
+        "kind": "official",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      },
+      "history": []
+    }
+  ],
+  "season": {
+    "note": "No seasonal opening dates are announced; the lake is frozen from November to mid-May, and access since 2023 has depended on flood repairs.",
+    "history": [
+      {
+        "year": 2023,
+        "connected": null,
+        "open_to_motorcycles": null,
+        "closed": "2023-10",
+        "note": "Closed by the October 2023 flood on the Teesta, not by snow.",
+        "sources": [
+          {
+            "url": "https://www.etvbharat.com/en/state/sikkim-lachen-lachung-route-reopens-for-tourists-enn26091103729",
+            "title": "Sikkim's Lachen-Lachung Route Reopens For Tourists After Three Years",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2026-09-11",
+            "accessed": "2026-09-28"
+          },
+          {
+            "url": "https://discoverwithdheeraj.com/gurudongmar-lake-chopta-valley/",
+            "title": "Gurudongmar Lake 2026: Status, Permits & Cost Guide",
+            "kind": "blog",
+            "opened": true,
+            "source_date": "2026-08-24",
+            "accessed": "2026-09-28"
+          }
+        ]
+      },
+      {
+        "year": 2026,
+        "connected": "2026-03-09",
+        "open_to_motorcycles": null,
+        "closed": null,
+        "note": "Blog: permits resumed 9 March, stopped again around June. News: road open to traffic by February, permits issued from 11 September. Motorcycles not mentioned.",
+        "sources": [
+          {
+            "url": "https://discoverwithdheeraj.com/gurudongmar-lake-chopta-valley/",
+            "title": "Gurudongmar Lake 2026: Status, Permits & Cost Guide",
+            "kind": "blog",
+            "opened": true,
+            "source_date": "2026-08-24",
+            "accessed": "2026-09-28"
+          },
+          {
+            "url": "https://www.etvbharat.com/en/state/sikkim-lachen-lachung-route-reopens-for-tourists-enn26091103729",
+            "title": "Sikkim's Lachen-Lachung Route Reopens For Tourists After Three Years",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2026-09-11",
+            "accessed": "2026-09-28"
+          }
+        ]
+      }
+    ]
+  },
+  "authorities": [
+    {
+      "office": "Tourism and Civil Aviation Department, Government of Sikkim (Permit Cell, Gangtok)",
+      "announces": "Issues Protected Area Permits; stops and resumes permits after snow or landslides",
+      "stretch": "All permit areas in Sikkim",
+      "channel": "Permit counters; notifications reported by news",
+      "url": "https://www.sikkim.gov.in/department/departmentmenudetails?url=Menu%3Dtourism-civil-aviation-department%2Fgeneral-info",
+      "source": {
+        "url": "https://www.sikkim.gov.in/department/departmentmenudetails?url=Menu%3Dtourism-civil-aviation-department%2Fgeneral-info",
+        "title": "Tourism and Civil Aviation Department: general information",
+        "kind": "official",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      }
+    },
+    {
+      "office": "Mangan District Administrative Centre",
+      "announces": "Road status by stretch, with the place of each block",
+      "stretch": "Dikchu, Mangan, Chungthang, Lachen, Thangu, Lachung",
+      "channel": "District website home page",
+      "url": "https://mangan.nic.in/",
+      "source": {
+        "url": "https://mangan.nic.in/",
+        "title": "Mangan District, Government of Sikkim",
+        "kind": "official",
+        "opened": true,
+        "source_date": "2026-09-24",
+        "accessed": "2026-09-28"
+      }
+    },
+    {
+      "office": "Border Roads Organisation",
+      "announces": "Restores and clears the road; publishes no road status page",
+      "stretch": "Chungthang to Lachen and beyond",
+      "channel": "Statements reported by news",
+      "url": "https://bro.gov.in/",
+      "source": {
+        "url": "https://www.etvbharat.com/en/state/sikkim-lachen-lachung-route-reopens-for-tourists-enn26091103729",
+        "title": "Sikkim's Lachen-Lachung Route Reopens For Tourists After Three Years",
+        "kind": "news",
+        "opened": true,
+        "source_date": "2026-09-11",
+        "accessed": "2026-09-28"
+      }
+    },
+    {
+      "office": "National Highways and Infrastructure Development Corporation Limited",
+      "announces": "Restores National Highway 10 after landslides",
+      "stretch": "Sevoke to Rangpo along the Teesta",
+      "channel": "Statements carried by the public broadcaster",
+      "url": null,
+      "source": {
+        "url": "https://www.newsonair.gov.in/nh-10-reopens-after-six-days-of-landslide-disruption-in-sikkim-and-kalimpong",
+        "title": "NH-10 reopens after six days of landslide disruption in Sikkim and Kalimpong",
+        "kind": "news",
+        "opened": true,
+        "source_date": "2025-08-17",
+        "accessed": "2026-09-28"
+      }
+    },
+    {
+      "office": "Roads and Bridges Department, Government of Sikkim",
+      "announces": "Inspects and restores state roads after monsoon damage",
+      "stretch": "State roads across Sikkim",
+      "channel": "Statements reported by news",
+      "url": null,
+      "source": {
+        "url": "https://www.indiatodayne.in/sikkim/story/sikkim-begins-statewide-road-inspections-to-assess-monsoon-damage-1453517-2026-09-21",
+        "title": "Sikkim begins statewide road inspections to assess monsoon damage",
+        "kind": "news",
+        "opened": true,
+        "source_date": "2026-09-21",
+        "accessed": "2026-09-28"
+      }
+    },
+    {
+      "office": "Government of Sikkim, Cabinet",
+      "announces": "Decides whether the August 2026 two-wheeler proposal becomes a rule",
+      "stretch": "All permit areas in Sikkim",
+      "channel": "Reported by news",
+      "url": null,
+      "source": {
+        "url": "https://www.indiatodayne.in/sikkim/story/sikkim-may-bar-two-wheelers-from-rap-pap-areas-under-proposed-permit-norms-1440153-2026-08-19",
+        "title": "Sikkim may bar two-wheelers from RAP, PAP areas under proposed permit norms",
+        "kind": "news",
+        "opened": true,
+        "source_date": "2026-08-19",
+        "accessed": "2026-09-28"
+      }
+    }
+  ],
+  "hazards": [
+    {
+      "title": "Landslides between Chungthang and Lachen",
+      "detail": "The district website listed a landslide block at Chapten on this stretch. A blog warns of slides from Gangtok to Lachen in the rains.",
+      "months": [
+        7,
+        8,
+        9
+      ],
+      "source": {
+        "url": "https://mangan.nic.in/",
+        "title": "Mangan District, Government of Sikkim",
+        "kind": "official",
+        "opened": true,
+        "source_date": "2026-09-24",
+        "accessed": "2026-09-28"
+      }
+    },
+    {
+      "title": "Snow blocks above Thangu and Yumthang",
+      "detail": "The district website listed the road beyond Zero Point as blocked by snow. The lake itself stays frozen from November to mid-May.",
+      "months": [
+        11,
+        12,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/Gurudongmar_Lake",
+        "title": "Gurudongmar Lake",
+        "kind": "encyclopedia",
+        "opened": true,
+        "source_date": "2026-07-25",
+        "accessed": "2026-09-28"
+      }
+    },
+    {
+      "title": "Mangan to Chungthang on the new Toong road",
+      "detail": "The district website listed this replacement road as cleared for light vehicles only.",
+      "months": [],
+      "source": {
+        "url": "https://mangan.nic.in/",
+        "title": "Mangan District, Government of Sikkim",
+        "kind": "official",
+        "opened": true,
+        "source_date": "2026-09-24",
+        "accessed": "2026-09-28"
+      }
+    },
+    {
+      "title": "Landslides on National Highway 10 into Sikkim",
+      "detail": "The road along the Teesta was shut for six days in August 2025 after it collapsed near 9th Mile. Repeated slides slowed repairs.",
+      "months": [
+        6,
+        7,
+        8,
+        9
+      ],
+      "source": {
+        "url": "https://www.newsonair.gov.in/nh-10-reopens-after-six-days-of-landslide-disruption-in-sikkim-and-kalimpong",
+        "title": "NH-10 reopens after six days of landslide disruption in Sikkim and Kalimpong",
+        "kind": "news",
+        "opened": true,
+        "source_date": "2025-08-17",
+        "accessed": "2026-09-28"
+      }
+    }
+  ],
+  "videos": [],
+  "gaps": [
+    "No report found of a Cabinet decision on the 19 August 2026 two-wheeler proposal: one web search and the Sikkim front pages of two news sites were checked on 28 September 2026.",
+    "The news report on permits resuming names only 'Friday'; it is dated Friday 11 September 2026, so that date is recorded.",
+    "Blog and news disagree on 2026: the blog records permits resuming on 9 March and stopping around June; the news report says no Lachen permits were issued until September.",
+    "Neither source says whether motorcycles were included when permits resumed in 2026.",
+    "Altitude of Gurudongmar Lake is converted from the district website's 17,800 feet; Wikipedia gives 5,154 metres from terrain maps.",
+    "Highway number from Gangtok to Chungthang not sourced.",
+    "No official source for the 150cc minimum, the two-night minimum, or the documents list.",
+    "The vehicle pass portal vehiclepass.sikkim.gov.in could not be opened (certificate error).",
+    "Road status lines on the Mangan district website carry no dates of their own; only the site's last-updated date (24 September 2026) is known.",
+    "No official acclimatisation advisory found for Gurudongmar.",
+    "Fee amounts are not on the official page and are left out.",
+    "Videos not collected."
+  ]
+}

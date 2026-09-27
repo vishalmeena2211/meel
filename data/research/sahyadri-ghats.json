@@ -1,0 +1,452 @@
+{
+  "slug": "sahyadri-ghats",
+  "header": {
+    "highway": {
+      "value": "NH 48 (the old Mumbai to Pune highway through Lonavala); NH 61 (Kalyan to Ale through Malshej Ghat)",
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/National_Highway_61_(India)",
+        "title": "National Highway 61 (India)",
+        "kind": "encyclopedia",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      }
+    },
+    "highest_point": {
+      "name": "Wilson Point, Mahabaleshwar",
+      "altitude_m": 1439,
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/Mahabaleshwar",
+        "title": "Mahabaleshwar",
+        "kind": "encyclopedia",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      }
+    },
+    "usual_days": null,
+    "usual_season": {
+      "value": "October to December (stated for Tamhini Ghat)",
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/Tamhini_Ghat",
+        "title": "Tamhini Ghat",
+        "kind": "encyclopedia",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      }
+    },
+    "one_line": "Maharashtra, the ghat roads between Mumbai, Pune and Mahabaleshwar"
+  },
+  "rules": [
+    {
+      "id": "mumbai-pune-expressway-two-wheelers-barred",
+      "kind": "motorcycle-rule",
+      "title": "Mumbai to Pune Expressway: two-wheelers not allowed",
+      "detail": "Two-wheelers, three-wheelers, tractors and cycles are barred; riders use the old highway, NH 48. Stated by Wikipedia; the official page could not be opened.",
+      "applies_to": "All two-wheelers",
+      "set_by": "Maharashtra State Road Development Corporation",
+      "official_url": null,
+      "has_official_order": false,
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/Mumbai%E2%80%93Pune_Expressway",
+        "title": "Mumbai-Pune Expressway",
+        "kind": "encyclopedia",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      },
+      "history": [
+        {
+          "date": "2002-04",
+          "change": "Expressway fully opened, with two-wheelers barred.",
+          "source": {
+            "url": "https://en.wikipedia.org/wiki/Mumbai%E2%80%93Pune_Expressway",
+            "title": "Mumbai-Pune Expressway",
+            "kind": "encyclopedia",
+            "opened": true,
+            "source_date": null,
+            "accessed": "2026-09-28"
+          }
+        },
+        {
+          "date": "2026-05-01",
+          "change": "A bypass of the ghat section, known as the missing link, opened.",
+          "source": {
+            "url": "https://en.wikipedia.org/wiki/Mumbai%E2%80%93Pune_Expressway",
+            "title": "Mumbai-Pune Expressway",
+            "kind": "encyclopedia",
+            "opened": true,
+            "source_date": null,
+            "accessed": "2026-09-28"
+          }
+        }
+      ]
+    },
+    {
+      "id": "atal-setu-two-wheelers-barred",
+      "kind": "motorcycle-rule",
+      "title": "Atal Setu sea link: two-wheelers not allowed",
+      "detail": "Two-wheelers, three-wheelers, cycles and animal carts may not enter the Sewri to Nhava Sheva sea link out of Mumbai.",
+      "applies_to": "All two-wheelers",
+      "set_by": "Mumbai Metropolitan Region Development Authority",
+      "official_url": "https://mmrda.maharashtra.gov.in/sites/default/files/2024-04/faq_atal_setu_15-03-2024_final_1_1.pdf",
+      "has_official_order": true,
+      "source": {
+        "url": "https://mmrda.maharashtra.gov.in/sites/default/files/2024-04/faq_atal_setu_15-03-2024_final_1_1.pdf",
+        "title": "Frequently Asked Questions on Atal Bihari Vajpayee Sewri Nhava Sheva Atal Setu",
+        "kind": "official",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      },
+      "history": [
+        {
+          "date": "2024-01-12",
+          "change": "Sea link opened to traffic, with two-wheelers and three-wheelers barred from the start.",
+          "source": {
+            "url": "https://en.wikipedia.org/wiki/Mumbai_Trans_Harbour_Link",
+            "title": "Mumbai Trans Harbour Link",
+            "kind": "encyclopedia",
+            "opened": true,
+            "source_date": null,
+            "accessed": "2026-09-28"
+          }
+        }
+      ]
+    },
+    {
+      "id": "pune-district-monsoon-prohibitory-orders",
+      "kind": "timing",
+      "title": "Pune district: monsoon orders shut waterfalls and dams",
+      "detail": "Each monsoon the district bars entry to waterfalls, dams and viewpoints around Lonavala, Mulshi, Tamhini and Malshej. The orders cover the spots, not travel on the road.",
+      "applies_to": "All visitors",
+      "set_by": "District Collector, Pune, and sub-divisional officers",
+      "official_url": null,
+      "has_official_order": true,
+      "source": {
+        "url": "https://www.tribuneindia.com/news/india/after-lonavala-waterfall-tragedy-prohibitory-orders-imposed-at-picnic-spots-in-maharashtras-pune-636329",
+        "title": "After Lonavala waterfall tragedy, prohibitory orders imposed at picnic spots in Maharashtra's Pune",
+        "kind": "news",
+        "opened": true,
+        "source_date": "2024-07-03",
+        "accessed": "2026-09-28"
+      },
+      "history": [
+        {
+          "date": "2020-06",
+          "change": "Collector barred entry to Bhushi dam, Lonavala, Mulshi dam, Tamhini Ghat, Malshej Ghat and other spots under the Disaster Management Act.",
+          "source": {
+            "url": "https://www.punekarnews.in/pune-collector-bans-entry-to-lonavala-tamhini-ghat-bhushi-mulshi-dam-and-other-tourist-places/",
+            "title": "Monsoon: Pune Collector bans entry to Lonavala, Tamhini ghat, Bhushi, Mulshi dam and other places",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2020-06-07",
+            "accessed": "2026-09-28"
+          }
+        },
+        {
+          "date": "2024-07-01",
+          "change": "After five drowned near Bhushi dam, the Collector barred visits to tourist spots in Lonavala and Mulshi after 6 pm.",
+          "source": {
+            "url": "https://www.mypunepulse.com/pune-district-collector-enforces-strict-tourism-ban-after-6-pm-in-lonavala-mulshi-following-tragic-incident/",
+            "title": "Pune District Collector Enforces Strict Tourism Ban After 6 PM in Lonavala and Mulshi Following Tragic Incident",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2024-07-01",
+            "accessed": "2026-09-28"
+          }
+        },
+        {
+          "date": "2024-07-02",
+          "change": "Prohibitory orders until 31 July 2024 at Bhushi dam, Tiger Point, Lion's Point, Mulshi dam, Tamhini Ghat, Malshej Ghat and others.",
+          "source": {
+            "url": "https://www.tribuneindia.com/news/india/after-lonavala-waterfall-tragedy-prohibitory-orders-imposed-at-picnic-spots-in-maharashtras-pune-636329",
+            "title": "After Lonavala waterfall tragedy, prohibitory orders imposed at picnic spots in Maharashtra's Pune",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2024-07-03",
+            "accessed": "2026-09-28"
+          }
+        },
+        {
+          "date": "2024-08-01",
+          "change": "Sub-divisional officer for Maval and Mulshi withdrew the orders as rain and dam releases eased.",
+          "source": {
+            "url": "https://www.freepressjournal.in/pune/good-news-for-punekars-ban-on-tourist-places-lifted-from-lonavla-to-tamhini-in-district",
+            "title": "Good News for Punekars: Ban on Tourist Places Lifted from Lonavla to Tamhini in District",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2024-08-01",
+            "accessed": "2026-09-28"
+          }
+        },
+        {
+          "date": "2026-07",
+          "change": "Sub-divisional officer barred vehicles, two-wheelers included, from the vicinity of waterfalls, dams and riverbanks at Malshej Ghat, Bhimashankar and other spots.",
+          "source": {
+            "url": "https://www.mypunepulse.com/pune-entry-curbs-imposed-at-bhimashankar-malshej-ghat-and-other-tourist-spots-amid-heavy-rain/",
+            "title": "Pune: Entry Curbs Imposed At Bhimashankar, Malshej Ghat and Other Tourist Spots Amid Heavy Rain",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2026-07-08",
+            "accessed": "2026-09-28"
+          }
+        }
+      ]
+    },
+    {
+      "id": "panchgani-mahabaleshwar-entry-and-pollution-tax",
+      "kind": "tax",
+      "title": "Panchgani and Mahabaleshwar: entry and pollution tax",
+      "detail": "Panchgani's council collects entry and pollution tax at the Dandegar checkpost; vehicles only passing through to Mahabaleshwar are not meant to pay. Reports do not mention two-wheelers.",
+      "applies_to": "Visiting vehicles; two-wheelers not stated",
+      "set_by": "Panchgani Giristhan Municipal Council",
+      "official_url": null,
+      "has_official_order": false,
+      "source": {
+        "url": "https://www.mypunepulse.com/tourists-raise-questions-over-toll-collection-on-mahabaleshwar-route-via-panchgani/",
+        "title": "Tourists Raise Questions Over Toll Collection On Mahabaleshwar Route Via Panchgani",
+        "kind": "news",
+        "opened": true,
+        "source_date": "2026-05-20",
+        "accessed": "2026-09-28"
+      },
+      "history": [
+        {
+          "date": "2022-06",
+          "change": "The two councils asked the state to bar tourists' private vehicles and allow only electric ones. No decision was reported.",
+          "source": {
+            "url": "https://www.punekarnews.in/ban-private-vehicles-of-tourists-in-mahabaleshwar-panchgani-municipal-council/",
+            "title": "Ban Private Vehicles Of Tourists In Mahabaleshwar, Panchgani: Municipal Council To Government",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2022-06-24",
+            "accessed": "2026-09-28"
+          }
+        },
+        {
+          "date": "2026-05",
+          "change": "After complaints, the council's chief officer said collectors were told not to charge vehicles heading straight to Mahabaleshwar.",
+          "source": {
+            "url": "https://www.mypunepulse.com/tourists-raise-questions-over-toll-collection-on-mahabaleshwar-route-via-panchgani/",
+            "title": "Tourists Raise Questions Over Toll Collection On Mahabaleshwar Route Via Panchgani",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2026-05-20",
+            "accessed": "2026-09-28"
+          }
+        }
+      ]
+    },
+    {
+      "id": "malshej-ghat-no-stopping-monsoon",
+      "kind": "motorcycle-rule",
+      "title": "Malshej Ghat in monsoon: ride through, no stopping",
+      "detail": "A travel company's 2026 summary says through traffic is allowed but stopping on the ghat road and entering the main waterfalls is barred. The order itself was not read.",
+      "applies_to": "All vehicles",
+      "set_by": "District administration (as reported)",
+      "official_url": null,
+      "has_official_order": false,
+      "source": {
+        "url": "https://www.stayvista.com/blog/monsoon-trekking-rules-2026/",
+        "title": "Monsoon Trekking Rules 2026: Banned Waterfalls, Dams and Fort Treks by State",
+        "kind": "blog",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      },
+      "history": []
+    },
+    {
+      "id": "tamhini-sanctuary-routes-monsoon-closure",
+      "kind": "timing",
+      "title": "Tamhini sanctuary side routes shut in monsoon",
+      "detail": "A travel company's 2026 summary says Raigad district shut six side routes in the Tamhini sanctuary from 1 July to 30 September 2026. The order itself was not read.",
+      "applies_to": "All visitors",
+      "set_by": "District Collector, Raigad (as reported)",
+      "official_url": null,
+      "has_official_order": false,
+      "source": {
+        "url": "https://www.stayvista.com/blog/monsoon-trekking-rules-2026/",
+        "title": "Monsoon Trekking Rules 2026: Banned Waterfalls, Dams and Fort Treks by State",
+        "kind": "blog",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      },
+      "history": []
+    }
+  ],
+  "season": {
+    "note": "The ghats are driest and clearest from October to December; July brings the heaviest rain and the yearly orders that shut waterfalls, dams and viewpoints.",
+    "history": [
+      {
+        "year": 2024,
+        "connected": null,
+        "open_to_motorcycles": null,
+        "closed": "2024-07-02",
+        "note": "Tourist spots, not roads, were shut until 31 July 2024. The order for Maval and Mulshi was withdrawn on 1 August 2024.",
+        "sources": [
+          {
+            "url": "https://www.tribuneindia.com/news/india/after-lonavala-waterfall-tragedy-prohibitory-orders-imposed-at-picnic-spots-in-maharashtras-pune-636329",
+            "title": "After Lonavala waterfall tragedy, prohibitory orders imposed at picnic spots in Maharashtra's Pune",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2024-07-03",
+            "accessed": "2026-09-28"
+          },
+          {
+            "url": "https://www.freepressjournal.in/pune/good-news-for-punekars-ban-on-tourist-places-lifted-from-lonavla-to-tamhini-in-district",
+            "title": "Good News for Punekars: Ban on Tourist Places Lifted from Lonavla to Tamhini in District",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2024-08-01",
+            "accessed": "2026-09-28"
+          }
+        ]
+      },
+      {
+        "year": 2026,
+        "connected": null,
+        "open_to_motorcycles": null,
+        "closed": "2026-07",
+        "note": "Orders in Junnar and Ambegaon barred vehicles from the vicinity of waterfalls and dams, Malshej Ghat included. No end date was reported.",
+        "sources": [
+          {
+            "url": "https://www.mypunepulse.com/pune-entry-curbs-imposed-at-bhimashankar-malshej-ghat-and-other-tourist-spots-amid-heavy-rain/",
+            "title": "Pune: Entry Curbs Imposed At Bhimashankar, Malshej Ghat and Other Tourist Spots Amid Heavy Rain",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2026-07-08",
+            "accessed": "2026-09-28"
+          }
+        ]
+      }
+    ]
+  },
+  "authorities": [
+    {
+      "office": "District Collector, Pune, as head of the district disaster management authority",
+      "announces": "Monsoon prohibitory orders for waterfalls, dams, forts and ghat viewpoints",
+      "stretch": "Lonavala, Mulshi, Tamhini Ghat, Malshej Ghat",
+      "channel": "District order, reported in the press",
+      "url": null,
+      "source": {
+        "url": "https://www.punekarnews.in/pune-collector-bans-entry-to-lonavala-tamhini-ghat-bhushi-mulshi-dam-and-other-tourist-places/",
+        "title": "Monsoon: Pune Collector bans entry to Lonavala, Tamhini ghat, Bhushi, Mulshi dam and other places",
+        "kind": "news",
+        "opened": true,
+        "source_date": "2020-06-07",
+        "accessed": "2026-09-28"
+      }
+    },
+    {
+      "office": "Sub-divisional officer, Maval and Mulshi",
+      "announces": "Imposes and withdraws the monsoon orders for Lonavala and Tamhini",
+      "stretch": "Lonavala, Bhushi dam, Pavana dam, Tamhini Ghat",
+      "channel": "District order, reported in the press",
+      "url": null,
+      "source": {
+        "url": "https://www.freepressjournal.in/pune/good-news-for-punekars-ban-on-tourist-places-lifted-from-lonavla-to-tamhini-in-district",
+        "title": "Good News for Punekars: Ban on Tourist Places Lifted from Lonavla to Tamhini in District",
+        "kind": "news",
+        "opened": true,
+        "source_date": "2024-08-01",
+        "accessed": "2026-09-28"
+      }
+    },
+    {
+      "office": "Panchgani Giristhan Municipal Council",
+      "announces": "Collects entry and pollution tax from visiting vehicles",
+      "stretch": "Pasarni Ghat and Panchgani, on the way to Mahabaleshwar",
+      "channel": "Checkpost at Dandegar",
+      "url": null,
+      "source": {
+        "url": "https://www.mypunepulse.com/tourists-raise-questions-over-toll-collection-on-mahabaleshwar-route-via-panchgani/",
+        "title": "Tourists Raise Questions Over Toll Collection On Mahabaleshwar Route Via Panchgani",
+        "kind": "news",
+        "opened": true,
+        "source_date": "2026-05-20",
+        "accessed": "2026-09-28"
+      }
+    },
+    {
+      "office": "Maharashtra State Road Development Corporation",
+      "announces": "Builds, runs and maintains the Mumbai to Pune Expressway",
+      "stretch": "Mumbai to Pune Expressway",
+      "channel": "Not stated",
+      "url": null,
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/Mumbai%E2%80%93Pune_Expressway",
+        "title": "Mumbai-Pune Expressway",
+        "kind": "encyclopedia",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      }
+    }
+  ],
+  "hazards": [
+    {
+      "title": "Sudden rise of water at waterfalls",
+      "detail": "On 30 June 2024 a stream near Bhushi dam rose without warning in heavy rain and swept away ten people; five died.",
+      "months": [
+        6,
+        7,
+        8
+      ],
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/2024_Lonavala_waterfall_tragedy",
+        "title": "2024 Lonavala waterfall tragedy",
+        "kind": "encyclopedia",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      }
+    },
+    {
+      "title": "Days of unbroken heavy rain at Mahabaleshwar",
+      "detail": "July usually has 10 to 12 days of continuous rain, with 100 to 200 millimetres falling each day.",
+      "months": [
+        7
+      ],
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/Mahabaleshwar",
+        "title": "Mahabaleshwar",
+        "kind": "encyclopedia",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      }
+    }
+  ],
+  "videos": [
+    {
+      "url": "https://www.youtube.com/watch?v=qtbgGORU74w",
+      "title": "Pune to Tamhini Ghat | Episode 1 | The Ultimate 4K Monsoon Ride 🌧️🏍️",
+      "channel": "Quick Lab ☁️",
+      "stretch": "Pune to Tamhini Ghat",
+      "filmed": null,
+      "bike": null
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=zLI9BaTQD1Q",
+      "title": "Monsoon Ride To Malshej Ghat On Honda CB350 RS | Weekend Ride After Lockdown | Vayu Vlogs",
+      "channel": "Manral Miles",
+      "stretch": "Malshej Ghat",
+      "filmed": null,
+      "bike": "Honda CB350 RS"
+    }
+  ],
+  "gaps": [
+    "No official page was read for the two-wheeler rule on the Mumbai to Pune Expressway; the Maharashtra State Road Development Corporation site failed with an expired certificate.",
+    "Whether two-wheelers may use the short ghat stretch near Khandala where the old highway joins the expressway, and how the May 2026 bypass changed this, was not sourced.",
+    "The text of the 2026 Pune district order for Lonavala was not found; a travel company gives its dates as 6 to 31 July 2026.",
+    "No source found for a monsoon closure order at Mahabaleshwar. No official page was found for the entry and pollution tax, or for whether two-wheelers pay it, so amounts are left out.",
+    "No source found for the altitude of Tamhini Ghat or Malshej Ghat, or for fog on the ghats.",
+    "Usual number of riding days: no source found.",
+    "The highway value combines Wikipedia pages for National Highway 48 and 61; only one is cited.",
+    "Videos: the pages give upload dates, not filming dates, so 'filmed' is filled only where the title names a date. Uploads, in order: 2025-11, 2021-07."
+  ]
+}

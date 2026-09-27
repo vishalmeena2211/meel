@@ -1,0 +1,373 @@
+{
+  "slug": "nagaland",
+  "header": {
+    "highway": {
+      "value": "NH 29 from Dimapur to Kohima",
+      "source": {
+        "url": "https://ipr.nagaland.gov.in/traffic-diversion-nh29-landslides",
+        "title": "Traffic diversion announced due to landslides on NH-29",
+        "kind": "official",
+        "opened": true,
+        "source_date": "2025-09-14",
+        "accessed": "2026-09-28"
+      }
+    },
+    "highest_point": {
+      "name": null,
+      "altitude_m": null,
+      "source": null
+    },
+    "usual_days": {
+      "value": "3 from Kohima to Mon, one way",
+      "source": {
+        "url": "https://beyondwildplaces.com/how-to-get-to-longwa-in-nagaland/",
+        "title": "How to Get to Longwa in Nagaland",
+        "kind": "blog",
+        "opened": true,
+        "source_date": "2021-12-05",
+        "accessed": "2026-09-28"
+      }
+    },
+    "usual_season": {
+      "value": "October to May",
+      "source": {
+        "url": "https://beyondwildplaces.com/how-to-get-to-longwa-in-nagaland/",
+        "title": "How to Get to Longwa in Nagaland",
+        "kind": "blog",
+        "opened": true,
+        "source_date": "2021-12-05",
+        "accessed": "2026-09-28"
+      }
+    },
+    "one_line": "Nagaland from the railhead at Dimapur to Kohima and the Dzukou trailheads, then north through Mokokchung to Mon"
+  },
+  "rules": [
+    {
+      "id": "nagaland-inner-line-permit",
+      "kind": "permit",
+      "title": "Nagaland: Inner Line Permit for everyone from outside",
+      "detail": "Anyone not indigenous to Nagaland needs one, applied for online. A domestic tourist permit costs 200 rupees for 30 days and is approved within four working hours.",
+      "applies_to": "Indian citizens from outside Nagaland",
+      "set_by": "Government of Nagaland",
+      "official_url": "https://ilp.nagaland.gov.in/",
+      "has_official_order": true,
+      "source": {
+        "url": "https://ilp.nagaland.gov.in/faq",
+        "title": "Nagaland Inner Line Permit: frequently asked questions",
+        "kind": "official",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      },
+      "history": [
+        {
+          "date": "2025-01-01",
+          "change": "All permit applications moved fully online, according to a state department page seen only as a search result.",
+          "source": {
+            "url": "https://ditc.nagaland.gov.in/project/online-inner-line-permit-ilp",
+            "title": "Online Inner Line Permit (ILP)",
+            "kind": "official",
+            "opened": false,
+            "source_date": null,
+            "accessed": "2026-09-28"
+          }
+        }
+      ]
+    },
+    {
+      "id": "nagaland-foreign-tourist-permit",
+      "kind": "permit",
+      "title": "Nagaland: state permit also listed for foreign tourists",
+      "detail": "The official list of permit types includes a foreign tourist permit at 500 rupees for 30 days. This is separate from the central Protected Area Permit.",
+      "applies_to": "Foreign citizens",
+      "set_by": "Government of Nagaland",
+      "official_url": "https://ilp.nagaland.gov.in/",
+      "has_official_order": true,
+      "source": {
+        "url": "https://ilp.nagaland.gov.in/faq",
+        "title": "Nagaland Inner Line Permit: frequently asked questions",
+        "kind": "official",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      },
+      "history": []
+    },
+    {
+      "id": "northeast-foreigners-protected-area-permit-2024",
+      "kind": "permit",
+      "title": "Nagaland, Manipur, Mizoram: Protected Area Permit for foreigners",
+      "detail": "Re-imposed in December 2024 after about 14 years of relaxation. Foreign citizens need prior permission and a Protected Area Permit before entering any of the three states.",
+      "applies_to": "Foreign citizens",
+      "set_by": "Ministry of Home Affairs, Government of India",
+      "official_url": null,
+      "has_official_order": true,
+      "source": {
+        "url": "https://eastmojo.com/manipur/2024/12/19/foreigners-now-require-special-permission-to-visit-manipur-nagaland-and-mizoram/",
+        "title": "Foreigners now require special permission to visit Manipur, Nagaland, and Mizoram",
+        "kind": "news",
+        "opened": true,
+        "source_date": "2024-12-19",
+        "accessed": "2026-09-28"
+      },
+      "history": [
+        {
+          "date": "2024-12-17",
+          "change": "Mizoram's official tourism site gives this as the date the new rules for foreign visitors took effect.",
+          "source": {
+            "url": "https://mizoramtourism.com/about/4",
+            "title": "Mizoram Tourism: entry formalities",
+            "kind": "official",
+            "opened": true,
+            "source_date": null,
+            "accessed": "2026-09-28"
+          }
+        },
+        {
+          "date": "2024-12-19",
+          "change": "News report that protected area rules were reinstated for the three states, ending a relaxation in place since about 2010.",
+          "source": {
+            "url": "https://eastmojo.com/manipur/2024/12/19/foreigners-now-require-special-permission-to-visit-manipur-nagaland-and-mizoram/",
+            "title": "Foreigners now require special permission to visit Manipur, Nagaland, and Mizoram",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2024-12-19",
+            "accessed": "2026-09-28"
+          }
+        }
+      ]
+    },
+    {
+      "id": "dzukou-entry-through-youth-organisation",
+      "kind": "permit",
+      "title": "Dzukou Valley: entry run by a village youth body",
+      "detail": "The Southern Angami Youth Organisation admits visitors only through Viswema and Jakhama, collects an entry fee and requires identity cards. It is a community body, not a government office.",
+      "applies_to": "All visitors",
+      "set_by": "Southern Angami Youth Organisation",
+      "official_url": null,
+      "has_official_order": false,
+      "source": {
+        "url": "https://easternmirrornagaland.com/dzukou-valley-now-opens-for-visitors-after-weeks-of-closure",
+        "title": "Dzukou valley now opens for visitors after weeks of closure",
+        "kind": "news",
+        "opened": true,
+        "source_date": "2021-07-15",
+        "accessed": "2026-09-28"
+      },
+      "history": [
+        {
+          "date": "2021-07",
+          "change": "Valley reopened with rules: two entry points, identity card, authorised local guide for visitors from outside.",
+          "source": {
+            "url": "https://easternmirrornagaland.com/dzukou-valley-now-opens-for-visitors-after-weeks-of-closure",
+            "title": "Dzukou valley now opens for visitors after weeks of closure",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2021-07-15",
+            "accessed": "2026-09-28"
+          }
+        },
+        {
+          "date": "2026-01",
+          "change": "Trekking through both entry points suspended after a wildfire; reported 28 January 2026.",
+          "source": {
+            "url": "https://nenews.in/nagaland/over-30-trekkers-evacuated-as-wildfire-breaks-out-in-nagalands-dzukou-valley/40291/",
+            "title": "Over 30 trekkers evacuated as wildfire breaks out in Nagaland's Dzukou Valley",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2026-01-28",
+            "accessed": "2026-09-28"
+          }
+        }
+      ]
+    },
+    {
+      "id": "nh29-police-diversions",
+      "kind": "timing",
+      "title": "Dimapur to Kohima: police diversions during landslides",
+      "detail": "When slides close the highway, Dimapur police send light vehicles over side roads, in 2025 between 6 am and 6 pm. The notices do not mention two-wheelers.",
+      "applies_to": "All vehicles",
+      "set_by": "Commissioner of Police, Dimapur",
+      "official_url": "https://ipr.nagaland.gov.in/traffic-diversion-nh29-landslides",
+      "has_official_order": true,
+      "source": {
+        "url": "https://ipr.nagaland.gov.in/traffic-diversion-nh29-landslides",
+        "title": "Traffic diversion announced due to landslides on NH-29",
+        "kind": "official",
+        "opened": true,
+        "source_date": "2025-09-14",
+        "accessed": "2026-09-28"
+      },
+      "history": [
+        {
+          "date": "2024-09-04",
+          "change": "Advisory after slides at Pherima, Piphema and Pagala Pahar; light vehicles sent through Niuland and Zhadima.",
+          "source": {
+            "url": "https://ipr.nagaland.gov.in/node/14503",
+            "title": "Landslides block NH-29: police issue advisory on alternate routes",
+            "kind": "official",
+            "opened": true,
+            "source_date": "2024-09-04",
+            "accessed": "2026-09-28"
+          }
+        },
+        {
+          "date": "2025-09-14",
+          "change": "Chathe Bridge to New Chumoukedima Bridge closed until repaired; two side routes named for light vehicles.",
+          "source": {
+            "url": "https://ipr.nagaland.gov.in/traffic-diversion-nh29-landslides",
+            "title": "Traffic diversion announced due to landslides on NH-29",
+            "kind": "official",
+            "opened": true,
+            "source_date": "2025-09-14",
+            "accessed": "2026-09-28"
+          }
+        }
+      ]
+    }
+  ],
+  "season": {
+    "note": "No road on this route closes by season; the Dimapur to Kohima highway is closed by landslides in the monsoon.",
+    "history": []
+  },
+  "authorities": [
+    {
+      "office": "Government of Nagaland (Inner Line Permit portal)",
+      "announces": "Issues Inner Line Permits online",
+      "stretch": "All of Nagaland",
+      "channel": "Permit portal",
+      "url": "https://ilp.nagaland.gov.in/",
+      "source": {
+        "url": "https://ilp.nagaland.gov.in/faq",
+        "title": "Nagaland Inner Line Permit: frequently asked questions",
+        "kind": "official",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      }
+    },
+    {
+      "office": "Commissioner of Police, Dimapur",
+      "announces": "Closures and diversions on National Highway 29",
+      "stretch": "Dimapur to Kohima",
+      "channel": "Notices on the state information department's website",
+      "url": "https://ipr.nagaland.gov.in/",
+      "source": {
+        "url": "https://ipr.nagaland.gov.in/traffic-diversion-nh29-landslides",
+        "title": "Traffic diversion announced due to landslides on NH-29",
+        "kind": "official",
+        "opened": true,
+        "source_date": "2025-09-14",
+        "accessed": "2026-09-28"
+      }
+    },
+    {
+      "office": "Department of Information and Public Relations, Government of Nagaland",
+      "announces": "Publishes police and district notices",
+      "stretch": "All of Nagaland",
+      "channel": "Website",
+      "url": "https://ipr.nagaland.gov.in/",
+      "source": {
+        "url": "https://ipr.nagaland.gov.in/traffic-diversion-nh29-landslides",
+        "title": "Traffic diversion announced due to landslides on NH-29",
+        "kind": "official",
+        "opened": true,
+        "source_date": "2025-09-14",
+        "accessed": "2026-09-28"
+      }
+    },
+    {
+      "office": "Southern Angami Youth Organisation",
+      "announces": "Opens and closes the Dzukou Valley trails",
+      "stretch": "Viswema and Jakhama to Dzukou Valley",
+      "channel": "Statements reported by local news",
+      "url": null,
+      "source": {
+        "url": "https://nenews.in/nagaland/over-30-trekkers-evacuated-as-wildfire-breaks-out-in-nagalands-dzukou-valley/40291/",
+        "title": "Over 30 trekkers evacuated as wildfire breaks out in Nagaland's Dzukou Valley",
+        "kind": "news",
+        "opened": true,
+        "source_date": "2026-01-28",
+        "accessed": "2026-09-28"
+      }
+    },
+    {
+      "office": "Ministry of Home Affairs, Government of India",
+      "announces": "Decides Protected Area Permit rules for foreign citizens",
+      "stretch": "Nagaland, Manipur and Mizoram",
+      "channel": "Orders reported by news",
+      "url": null,
+      "source": {
+        "url": "https://eastmojo.com/manipur/2024/12/19/foreigners-now-require-special-permission-to-visit-manipur-nagaland-and-mizoram/",
+        "title": "Foreigners now require special permission to visit Manipur, Nagaland, and Mizoram",
+        "kind": "news",
+        "opened": true,
+        "source_date": "2024-12-19",
+        "accessed": "2026-09-28"
+      }
+    }
+  ],
+  "hazards": [
+    {
+      "title": "Landslides between Dimapur and Kohima",
+      "detail": "Mudslides shut the highway at Chathe, Pagala Pahar and New Chumoukedima in September 2025, and at Pherima and Piphema in September 2024.",
+      "months": [
+        6,
+        7,
+        8,
+        9
+      ],
+      "source": {
+        "url": "https://ipr.nagaland.gov.in/traffic-diversion-nh29-landslides",
+        "title": "Traffic diversion announced due to landslides on NH-29",
+        "kind": "official",
+        "opened": true,
+        "source_date": "2025-09-14",
+        "accessed": "2026-09-28"
+      }
+    },
+    {
+      "title": "Poor roads north of Mokokchung",
+      "detail": "A 2021 account says roads in northern Nagaland were bad enough that public transport to Mon ran through Assam by way of Sonari.",
+      "months": [],
+      "source": {
+        "url": "https://beyondwildplaces.com/how-to-get-to-longwa-in-nagaland/",
+        "title": "How to Get to Longwa in Nagaland",
+        "kind": "blog",
+        "opened": true,
+        "source_date": "2021-12-05",
+        "accessed": "2026-09-28"
+      }
+    },
+    {
+      "title": "Wildfire in Dzukou Valley",
+      "detail": "A fire in late January 2026 led to more than 30 trekkers being evacuated and the trails being closed.",
+      "months": [
+        1,
+        2
+      ],
+      "source": {
+        "url": "https://nenews.in/nagaland/over-30-trekkers-evacuated-as-wildfire-breaks-out-in-nagalands-dzukou-valley/40291/",
+        "title": "Over 30 trekkers evacuated as wildfire breaks out in Nagaland's Dzukou Valley",
+        "kind": "news",
+        "opened": true,
+        "source_date": "2026-01-28",
+        "accessed": "2026-09-28"
+      }
+    }
+  ],
+  "videos": [],
+  "gaps": [
+    "The date of 1 January 2025 for fully online permits comes from a search result; the state page returned a certificate error.",
+    "The official permit questions page does not say whether Dimapur is covered or where permits are checked.",
+    "How the state's foreign tourist permit fits with the Protected Area Permit re-imposed in December 2024 was not found on an official page.",
+    "No official order of the Ministry of Home Affairs on the Protected Area Permit was opened; the rule is sourced to a news report.",
+    "Reopening date of Dzukou Valley after the January 2026 fire seen only in a search snippet (19 February 2026) and not recorded.",
+    "A claim that a registered guide is compulsory for Dzukou since October 2025 appeared only in a search snippet.",
+    "Dzukou entry fee amounts come from news and an operator, not an official page, and are left out.",
+    "No source found on whether a motorcycle can be ridden from Viswema to the trailhead.",
+    "Highest point on the route and highway numbers beyond Kohima not sourced.",
+    "Road condition north of Mokokchung rests on one 2021 blog; no recent source found.",
+    "Videos not collected."
+  ]
+}

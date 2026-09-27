@@ -1,0 +1,196 @@
+{
+  "slug": "rajasthan-hills",
+  "header": {
+    "highway": {
+      "value": "NH 27 (Udaipur to Pindwara and Abu Road)",
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/National_Highway_27_(India)",
+        "title": "National Highway 27 (India)",
+        "kind": "encyclopedia",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      }
+    },
+    "highest_point": {
+      "name": "Guru Shikhar, Mount Abu",
+      "altitude_m": 1722,
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/Guru_Shikhar",
+        "title": "Guru Shikhar",
+        "kind": "encyclopedia",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      }
+    },
+    "usual_days": null,
+    "usual_season": {
+      "value": "December to March (stated for the Kumbhalgarh sanctuary)",
+      "source": {
+        "url": "https://site.outlookindia.com/traveller/ot-getaway-guides/kumbhalgarh-wildlife-sanctuary/",
+        "title": "Kumbhalgarh Wildlife Sanctuary - Outlook Traveller",
+        "kind": "news",
+        "opened": true,
+        "source_date": "2017-05-13",
+        "accessed": "2026-09-28"
+      }
+    },
+    "one_line": "Southern Rajasthan, through the Aravalli hills from Udaipur to Mount Abu"
+  },
+  "rules": [
+    {
+      "id": "kumbhalgarh-sanctuary-entry-permit",
+      "kind": "permit",
+      "title": "Kumbhalgarh sanctuary: entry permit from forest office",
+      "detail": "A 2017 guide says the forest office at Sadri issues the entry permit, with a charge per visitor and per two-wheeler. No government order was found.",
+      "applies_to": "All visitors entering the sanctuary",
+      "set_by": "Forest Department, Government of Rajasthan",
+      "official_url": null,
+      "has_official_order": false,
+      "source": {
+        "url": "https://site.outlookindia.com/traveller/ot-getaway-guides/kumbhalgarh-wildlife-sanctuary/",
+        "title": "Kumbhalgarh Wildlife Sanctuary - Outlook Traveller",
+        "kind": "news",
+        "opened": true,
+        "source_date": "2017-05-13",
+        "accessed": "2026-09-28"
+      },
+      "history": []
+    },
+    {
+      "id": "kumbhalgarh-sanctuary-monsoon-closure",
+      "kind": "timing",
+      "title": "Kumbhalgarh sanctuary: shut 1 July to 30 September",
+      "detail": "Safaris in the sanctuary stop every year for the monsoon and resume on 1 October. Visits inside are by hired jeep from the gates. The order itself was not read.",
+      "applies_to": "All visitors entering the sanctuary",
+      "set_by": "Forest Department, Government of Rajasthan",
+      "official_url": null,
+      "has_official_order": false,
+      "source": {
+        "url": "https://curlytales.com/jeep-safari-resumes-at-jaisamand-kumbhalgarh-sanctuary-after-3-month-break/",
+        "title": "Jeep Safari Resumes At Jaisamand-Kumbhalgarh Sanctuary After 3-Month Break",
+        "kind": "news",
+        "opened": true,
+        "source_date": "2024-10-01",
+        "accessed": "2026-09-28"
+      },
+      "history": [
+        {
+          "date": "2024-10-01",
+          "change": "Jeep safaris resumed at Kumbhalgarh, Jaisamand and Bassi sanctuaries after the yearly monsoon closure.",
+          "source": {
+            "url": "https://curlytales.com/jeep-safari-resumes-at-jaisamand-kumbhalgarh-sanctuary-after-3-month-break/",
+            "title": "Jeep Safari Resumes At Jaisamand-Kumbhalgarh Sanctuary After 3-Month Break",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2024-10-01",
+            "accessed": "2026-09-28"
+          }
+        }
+      ]
+    }
+  ],
+  "season": {
+    "note": "The cool dry months suit this route; Mount Abu gets very heavy rain in July and August, and the Kumbhalgarh sanctuary is shut from July to September.",
+    "history": [
+      {
+        "year": 2024,
+        "connected": null,
+        "open_to_motorcycles": null,
+        "closed": "2024-07-01",
+        "note": "Yearly monsoon closure of safaris inside the Kumbhalgarh sanctuary, not of public roads. Safaris resumed on 1 October 2024.",
+        "sources": [
+          {
+            "url": "https://curlytales.com/jeep-safari-resumes-at-jaisamand-kumbhalgarh-sanctuary-after-3-month-break/",
+            "title": "Jeep Safari Resumes At Jaisamand-Kumbhalgarh Sanctuary After 3-Month Break",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2024-10-01",
+            "accessed": "2026-09-28"
+          }
+        ]
+      }
+    ]
+  },
+  "authorities": [
+    {
+      "office": "Assistant Conservator of Forests, Kumbhalgarh Wildlife Sanctuary, Sadri",
+      "announces": "Issues entry permits for the sanctuary",
+      "stretch": "Kumbhalgarh sanctuary, between Kumbhalgarh and Ranakpur",
+      "channel": "In person",
+      "url": null,
+      "source": {
+        "url": "https://site.outlookindia.com/traveller/ot-getaway-guides/kumbhalgarh-wildlife-sanctuary/",
+        "title": "Kumbhalgarh Wildlife Sanctuary - Outlook Traveller",
+        "kind": "news",
+        "opened": true,
+        "source_date": "2017-05-13",
+        "accessed": "2026-09-28"
+      }
+    }
+  ],
+  "hazards": [
+    {
+      "title": "Very heavy monsoon rain on Mount Abu",
+      "detail": "July and August each bring more than 500 millimetres of rain to the hill, on a climb of steady bends from Abu Road.",
+      "months": [
+        7,
+        8
+      ],
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/Mount_Abu",
+        "title": "Mount Abu",
+        "kind": "encyclopedia",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      }
+    },
+    {
+      "title": "Cold winter mornings on Mount Abu",
+      "detail": "Average winter minimums fall to between 3 and 12 degrees Celsius at 1,220 metres.",
+      "months": [
+        12,
+        1,
+        2
+      ],
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/Mount_Abu",
+        "title": "Mount Abu",
+        "kind": "encyclopedia",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      }
+    }
+  ],
+  "videos": [
+    {
+      "url": "https://www.youtube.com/watch?v=OtK7--I_1BI",
+      "title": "Mount Abu Road trip | Udaipur to Mount Abu | Mount Abu Travel | Mount Abu Route | Moto Vlog | 4K",
+      "channel": "Rides and Adventures",
+      "stretch": "Udaipur to Mount Abu",
+      "filmed": null,
+      "bike": null
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=zi9lioCFLa8",
+      "title": "Udaipur to Mount Abu Bike Ride on Commando Sand 350 | Most Scenic Route of Rajasthan | Road Trip",
+      "channel": "Buccaphela Rider",
+      "stretch": "Udaipur to Mount Abu",
+      "filmed": null,
+      "bike": "Commando Sand 350, as named in the title"
+    }
+  ],
+  "gaps": [
+    "Mount Abu entry toll for vehicles: two searches found no official or news page stating who collects it or whether two-wheelers pay.",
+    "Kumbhalgarh sanctuary fees and gate hours: only non-official pages give amounts, and they disagree, so amounts are left out. The Rajasthan Forest Department portal showed no readable content.",
+    "Whether a private motorcycle may enter the Kumbhalgarh sanctuary is unclear: a 2017 guide lists a two-wheeler charge, while a 2025 guide (https://roundglasssustain.com/habitats/guide-kumbhalgarh-and-todgarh-raoli) mentions only hired jeeps.",
+    "No source found for gate timings or two-wheeler rules inside the Mount Abu Wildlife Sanctuary. Its eco-sensitive zone was notified on 2020-11-11 per Wikipedia, with no rider rule stated.",
+    "The highway numbers for Udaipur to Kumbhalgarh and Kumbhalgarh to Ranakpur were not sourced.",
+    "Usual number of riding days: no source found.",
+    "The Rajasthan tourism site loads its text by script and could not be read.",
+    "Videos: the pages give upload dates, not filming dates, so 'filmed' is filled only where the title names a date. Uploads, in order: 2024-03, 2025-07."
+  ]
+}

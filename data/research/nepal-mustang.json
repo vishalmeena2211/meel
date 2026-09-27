@@ -1,0 +1,348 @@
+{
+  "slug": "nepal-mustang",
+  "header": {
+    "highway": {
+      "value": "NH47 (Siddhartha Highway) from the border to Pokhara",
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/Siddhartha_Highway",
+        "title": "Siddhartha Highway",
+        "kind": "encyclopedia",
+        "opened": true,
+        "source_date": "2026-09-14",
+        "accessed": "2026-09-28"
+      }
+    },
+    "highest_point": {
+      "name": "Muktinath",
+      "altitude_m": 3762,
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/Muktinath",
+        "title": "Muktinath",
+        "kind": "encyclopedia",
+        "opened": true,
+        "source_date": "2026-09-21",
+        "accessed": "2026-09-28"
+      }
+    },
+    "usual_days": {
+      "value": null,
+      "source": null
+    },
+    "usual_season": {
+      "value": "Spring, and October to November; the monsoon runs June to September",
+      "source": {
+        "url": "https://ntb.gov.np/en/plan-your-trip/about-nepal/climate",
+        "title": "Nepal Tourism Board: climate",
+        "kind": "official",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      }
+    },
+    "one_line": "Nepal from the border at Sunauli up the Siddhartha Highway to Pokhara, then the Kali Gandaki valley to Jomsom and Muktinath"
+  },
+  "rules": [
+    {
+      "id": "nepal-vehicle-customs-pass",
+      "kind": "permit",
+      "title": "Nepal: customs pass for an Indian-registered vehicle",
+      "detail": "Issued by Nepal Customs at the border for a stated number of days, two-wheelers included. The Indian embassy gives the charge as 100 to 500 Nepalese rupees a day.",
+      "applies_to": "Indian-registered vehicles",
+      "set_by": "Department of Customs, Government of Nepal",
+      "official_url": "https://indembkathmandu.gov.in/entry-of-indian-registered-vehicles-in-nepal",
+      "has_official_order": true,
+      "source": {
+        "url": "https://indembkathmandu.gov.in/entry-of-indian-registered-vehicles-in-nepal",
+        "title": "Embassy of India, Kathmandu: entry of Indian registered vehicles in Nepal",
+        "kind": "official",
+        "opened": true,
+        "source_date": "2026-09-28",
+        "accessed": "2026-09-28"
+      },
+      "history": []
+    },
+    {
+      "id": "nepal-vehicle-30-days-a-year",
+      "kind": "timing",
+      "title": "Nepal: 30 days a year for an Indian vehicle",
+      "detail": "An Indian-registered vehicle may stay 30 days in total in a calendar year. An extension must be sought at a Nepal Customs office before the pass expires.",
+      "applies_to": "Indian-registered vehicles",
+      "set_by": "Department of Customs, Government of Nepal",
+      "official_url": "https://indembkathmandu.gov.in/entry-of-indian-registered-vehicles-in-nepal",
+      "has_official_order": true,
+      "source": {
+        "url": "https://indembkathmandu.gov.in/entry-of-indian-registered-vehicles-in-nepal",
+        "title": "Embassy of India, Kathmandu: entry of Indian registered vehicles in Nepal",
+        "kind": "official",
+        "opened": true,
+        "source_date": "2026-09-28",
+        "accessed": "2026-09-28"
+      },
+      "history": []
+    },
+    {
+      "id": "nepal-vehicle-day-pass",
+      "kind": "permit",
+      "title": "Nepal: free day pass only to the nearest market",
+      "detail": "A day pass lets a vehicle visit the nearest town without customs charge. It must return to India the same day and hand the pass back.",
+      "applies_to": "Indian-registered vehicles",
+      "set_by": "Department of Customs, Government of Nepal",
+      "official_url": "https://indembkathmandu.gov.in/entry-of-indian-registered-vehicles-in-nepal",
+      "has_official_order": true,
+      "source": {
+        "url": "https://indembkathmandu.gov.in/entry-of-indian-registered-vehicles-in-nepal",
+        "title": "Embassy of India, Kathmandu: entry of Indian registered vehicles in Nepal",
+        "kind": "official",
+        "opened": true,
+        "source_date": "2026-09-28",
+        "accessed": "2026-09-28"
+      },
+      "history": []
+    },
+    {
+      "id": "nepal-vehicle-without-pass-seized",
+      "kind": "motorcycle-rule",
+      "title": "Nepal: vehicle without a valid pass is seized",
+      "detail": "A vehicle found without a pass, or with an expired one, is treated as smuggled, confiscated and later auctioned by Nepal Customs.",
+      "applies_to": "Indian-registered vehicles",
+      "set_by": "Department of Customs, Government of Nepal",
+      "official_url": "https://indembkathmandu.gov.in/entry-of-indian-registered-vehicles-in-nepal",
+      "has_official_order": true,
+      "source": {
+        "url": "https://indembkathmandu.gov.in/entry-of-indian-registered-vehicles-in-nepal",
+        "title": "Embassy of India, Kathmandu: entry of Indian registered vehicles in Nepal",
+        "kind": "official",
+        "opened": true,
+        "source_date": "2026-09-28",
+        "accessed": "2026-09-28"
+      },
+      "history": []
+    },
+    {
+      "id": "nepal-indian-citizen-documents",
+      "kind": "document",
+      "title": "Nepal: passport or original voter card",
+      "detail": "For air travel the embassy accepts only a passport or an original voter identity card; Aadhaar and driving licence are refused. The page does not cover land crossings.",
+      "applies_to": "Indian citizens",
+      "set_by": "Government of Nepal, as stated by the Embassy of India, Kathmandu",
+      "official_url": "https://indembkathmandu.gov.in/valid-travel-documents",
+      "has_official_order": true,
+      "source": {
+        "url": "https://indembkathmandu.gov.in/valid-travel-documents",
+        "title": "Embassy of India, Kathmandu: valid travel documents",
+        "kind": "official",
+        "opened": true,
+        "source_date": "2026-09-28",
+        "accessed": "2026-09-28"
+      },
+      "history": []
+    },
+    {
+      "id": "annapurna-conservation-area-permit",
+      "kind": "permit",
+      "title": "Annapurna Conservation Area: entry permit",
+      "detail": "Costs 1,000 Nepalese rupees for citizens of South Asian countries and 3,000 for other foreigners. Single entry; bought online or at a counter; shown at check posts.",
+      "applies_to": "Foreign visitors, including Indian citizens",
+      "set_by": "National Trust for Nature Conservation, Nepal",
+      "official_url": "https://epermit.ntnc.org.np",
+      "has_official_order": true,
+      "source": {
+        "url": "https://epermit.ntnc.org.np",
+        "title": "National Trust for Nature Conservation: online entry permit",
+        "kind": "official",
+        "opened": true,
+        "source_date": "2026",
+        "accessed": "2026-09-28"
+      },
+      "history": []
+    },
+    {
+      "id": "upper-mustang-restricted-area-permit",
+      "kind": "permit",
+      "title": "Upper Mustang: restricted area permit, 50 dollars a day",
+      "detail": "Covers Lomanthang and Lo-Ghekar Damodarkunda, plus ward 3 and Satang village of Baragung Muktichhetra. Issued by the immigration department in Kathmandu. Needed only beyond this route.",
+      "applies_to": "Foreign visitors going north of this route",
+      "set_by": "Department of Immigration, Government of Nepal",
+      "official_url": "https://ntb.gov.np/en/plan-your-trip/before-you-come/trekking-permit",
+      "has_official_order": true,
+      "source": {
+        "url": "https://ntb.gov.np/en/plan-your-trip/before-you-come/trekking-permit",
+        "title": "Nepal Tourism Board: trekking permit",
+        "kind": "official",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      },
+      "history": [
+        {
+          "date": null,
+          "change": "Wikipedia still records the older fee of 500 dollars for ten days, then 50 dollars a day; the date of the change was not found.",
+          "source": {
+            "url": "https://en.wikipedia.org/wiki/Upper_Mustang",
+            "title": "Upper Mustang",
+            "kind": "encyclopedia",
+            "opened": true,
+            "source_date": "2026-09-14",
+            "accessed": "2026-09-28"
+          }
+        }
+      ]
+    }
+  ],
+  "season": {
+    "note": "No seasonal closure of the road to Jomsom and Muktinath was found; the monsoon from June to September is the difficult season.",
+    "history": []
+  },
+  "authorities": [
+    {
+      "office": "Department of Customs, Government of Nepal",
+      "announces": "Issues and extends the vehicle pass; sets the daily charge",
+      "stretch": "Border at Sunauli and Belahiya, and customs offices inside Nepal",
+      "channel": "Border customs office",
+      "url": "https://www.customs.gov.np/",
+      "source": {
+        "url": "https://indembkathmandu.gov.in/entry-of-indian-registered-vehicles-in-nepal",
+        "title": "Embassy of India, Kathmandu: entry of Indian registered vehicles in Nepal",
+        "kind": "official",
+        "opened": true,
+        "source_date": "2026-09-28",
+        "accessed": "2026-09-28"
+      }
+    },
+    {
+      "office": "Embassy of India, Kathmandu",
+      "announces": "Publishes guidance on vehicles and travel documents for Indian citizens",
+      "stretch": "All of Nepal",
+      "channel": "Embassy website",
+      "url": "https://indembkathmandu.gov.in/",
+      "source": {
+        "url": "https://indembkathmandu.gov.in/entry-of-indian-registered-vehicles-in-nepal",
+        "title": "Embassy of India, Kathmandu: entry of Indian registered vehicles in Nepal",
+        "kind": "official",
+        "opened": true,
+        "source_date": "2026-09-28",
+        "accessed": "2026-09-28"
+      }
+    },
+    {
+      "office": "National Trust for Nature Conservation, Nepal",
+      "announces": "Issues the Annapurna Conservation Area entry permit",
+      "stretch": "Myagdi and Mustang sections of the route",
+      "channel": "Online permit portal and counters",
+      "url": "https://epermit.ntnc.org.np",
+      "source": {
+        "url": "https://epermit.ntnc.org.np",
+        "title": "National Trust for Nature Conservation: online entry permit",
+        "kind": "official",
+        "opened": true,
+        "source_date": "2026",
+        "accessed": "2026-09-28"
+      }
+    },
+    {
+      "office": "Department of Immigration, Government of Nepal",
+      "announces": "Issues restricted area permits for Upper Mustang",
+      "stretch": "North of Kagbeni",
+      "channel": "Office in Kathmandu",
+      "url": null,
+      "source": {
+        "url": "https://ntb.gov.np/en/plan-your-trip/before-you-come/trekking-permit",
+        "title": "Nepal Tourism Board: trekking permit",
+        "kind": "official",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      }
+    },
+    {
+      "office": "Nepal Tourism Board",
+      "announces": "Travel updates and weather alerts",
+      "stretch": "All of Nepal",
+      "channel": "Website",
+      "url": "https://ntb.gov.np/en/latest-travel-updates",
+      "source": {
+        "url": "https://ntb.gov.np/en/latest-travel-updates",
+        "title": "Nepal Tourism Board: latest travel updates",
+        "kind": "official",
+        "opened": false,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      }
+    }
+  ],
+  "hazards": [
+    {
+      "title": "Rockfall between Butwal and Palpa",
+      "detail": "Wikipedia describes this section of the Siddhartha Highway as rocky, with frequent rockfall that sometimes causes fatal accidents.",
+      "months": [],
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/Siddhartha_Highway",
+        "title": "Siddhartha Highway",
+        "kind": "encyclopedia",
+        "opened": true,
+        "source_date": "2026-09-14",
+        "accessed": "2026-09-28"
+      }
+    },
+    {
+      "title": "Monsoon rain south of the Himalaya",
+      "detail": "The tourism board says four-fifths of Nepal's rain falls from June to September. Mustang itself lies in a rain shadow and stays dry.",
+      "months": [
+        6,
+        7,
+        8,
+        9
+      ],
+      "source": {
+        "url": "https://ntb.gov.np/en/plan-your-trip/about-nepal/climate",
+        "title": "Nepal Tourism Board: climate",
+        "kind": "official",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      }
+    },
+    {
+      "title": "Strong daily wind in the Kali Gandaki valley",
+      "detail": "Wind blowing up the valley is strong enough to stop flights from Jomsom after about 11 in the morning.",
+      "months": [],
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/Jomsom",
+        "title": "Jomsom",
+        "kind": "encyclopedia",
+        "opened": true,
+        "source_date": "2026-09-27",
+        "accessed": "2026-09-28"
+      }
+    },
+    {
+      "title": "Road works on the Kali Gandaki corridor",
+      "detail": "Wikipedia lists the highway through Beni and Kagbeni as under construction since December 2018, with its completion status unclear.",
+      "months": [],
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/Kaligandaki_Corridor",
+        "title": "Kaligandaki Corridor",
+        "kind": "encyclopedia",
+        "opened": true,
+        "source_date": "2026-04-09",
+        "accessed": "2026-09-28"
+      }
+    }
+  ],
+  "videos": [],
+  "gaps": [
+    "Web search budget ran out before this route; all facts come from pages opened directly.",
+    "The exact daily customs charge for a motorcycle was not found; the embassy page gives only a range for all vehicles.",
+    "Nepal's Department of Customs site was not opened; the vehicle rules are as stated by the Embassy of India.",
+    "Documents asked for at the border for the vehicle (registration, licence, insurance) are not listed on the embassy page.",
+    "Documents for Indian citizens crossing by land are not stated on the embassy page, which covers air travel.",
+    "Whether Muktinath and Kagbeni fall outside the restricted wards was not confirmed from an official map; the rule records the wards as listed.",
+    "Whether Indian citizens need the Upper Mustang permit, and at what fee, was not found.",
+    "No source found on any local vehicle fee or check post rule for motorcycles in Mustang.",
+    "No dated source found for landslides or closures on the Beni to Jomsom road.",
+    "The highway number beyond Pokhara (NH48, Kali Gandaki corridor) comes from a separate Wikipedia article.",
+    "Usual number of days not sourced.",
+    "The tourism board's travel updates page was too large to open; the immigration department's site returned a certificate error.",
+    "Videos not collected."
+  ]
+}

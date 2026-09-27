@@ -1,0 +1,324 @@
+{
+  "slug": "darjeeling-kalimpong-sandakphu",
+  "header": {
+    "highway": {
+      "value": "NH 110 (Hill Cart Road) from Siliguri to Darjeeling",
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/National_Highway_110_(India)",
+        "title": "National Highway 110 (India)",
+        "kind": "encyclopedia",
+        "opened": true,
+        "source_date": "2026-07-17",
+        "accessed": "2026-09-28"
+      }
+    },
+    "highest_point": {
+      "name": "Sandakphu",
+      "altitude_m": 3636,
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/Sandakphu",
+        "title": "Sandakphu",
+        "kind": "encyclopedia",
+        "opened": true,
+        "source_date": "2026-09-14",
+        "accessed": "2026-09-28"
+      }
+    },
+    "usual_days": {
+      "value": "3 to 4 for the Sandakphu leg by hired vehicle",
+      "source": {
+        "url": "https://discoverwithdheeraj.com/sandakphu-travel-guide/",
+        "title": "A COMPLETE Sandakphu Travel Guide for all Trekkers and Tourists",
+        "kind": "blog",
+        "opened": true,
+        "source_date": "2026-09-17",
+        "accessed": "2026-09-28"
+      }
+    },
+    "usual_season": {
+      "value": "March to May and October to December",
+      "source": {
+        "url": "https://discoverwithdheeraj.com/sandakphu-travel-guide/",
+        "title": "A COMPLETE Sandakphu Travel Guide for all Trekkers and Tourists",
+        "kind": "blog",
+        "opened": true,
+        "source_date": "2026-09-17",
+        "accessed": "2026-09-28"
+      }
+    },
+    "one_line": "North Bengal hills: Siliguri up to Darjeeling, the Singalila ridge to Sandakphu, and across to Kalimpong"
+  },
+  "rules": [
+    {
+      "id": "sandakphu-motorcycles-not-allowed",
+      "kind": "motorcycle-rule",
+      "title": "Sandakphu: motorcycles stopped at Manebhanjan",
+      "detail": "Motorcycles are turned back at the Manebhanjan check post since April 2018, after a forest officer's notice. A blog updated September 2026 says this still holds. Notice text not found.",
+      "applies_to": "All motorcycles",
+      "set_by": "Divisional Forest Officer, Darjeeling Wildlife Division, West Bengal Forest Department",
+      "official_url": null,
+      "has_official_order": false,
+      "source": {
+        "url": "https://www.darjeeling-tourism.com/darj_0000ee.htm",
+        "title": "Tour of Sandakphu and Phalut by Car",
+        "kind": "blog",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      },
+      "history": [
+        {
+          "date": "2018-04",
+          "change": "Notice by the Divisional Forest Officer barred motorcycles from the Sandakphu road; reported 11 April 2018.",
+          "source": {
+            "url": "https://www.topfivebuzz.com/bikers-will-not-be-allowed-in-sandakphu-from-now-onwards-notice-by-divisional-forest-officer/",
+            "title": "Bikers Will Not be Allowed in Sandakphu from Now Onwards: Notice by Divisional Forest Officer",
+            "kind": "blog",
+            "opened": true,
+            "source_date": "2018-04-11",
+            "accessed": "2026-09-28"
+          }
+        },
+        {
+          "date": "2026-09-17",
+          "change": "Blog states that no motorcycles or private vehicles run inside the park as of 2026.",
+          "source": {
+            "url": "https://discoverwithdheeraj.com/sandakphu-travel-guide/",
+            "title": "A COMPLETE Sandakphu Travel Guide for all Trekkers and Tourists",
+            "kind": "blog",
+            "opened": true,
+            "source_date": "2026-09-17",
+            "accessed": "2026-09-28"
+          }
+        }
+      ]
+    },
+    {
+      "id": "sandakphu-private-cars-need-association-consent",
+      "kind": "motorcycle-rule",
+      "title": "Sandakphu: only association vehicles run the road",
+      "detail": "Visitors change at Manebhanjan to vehicles of the local Land Rover owners' association. A travel site says private cars need its consent, rarely given. No government order found.",
+      "applies_to": "All private vehicles",
+      "set_by": "Singalila Land Rover Owners' Welfare Association, in practice",
+      "official_url": null,
+      "has_official_order": false,
+      "source": {
+        "url": "https://www.darjeeling-tourism.com/darj_0000ee.htm",
+        "title": "Tour of Sandakphu and Phalut by Car",
+        "kind": "blog",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      },
+      "history": []
+    },
+    {
+      "id": "singalila-entry-permit",
+      "kind": "permit",
+      "title": "Singalila National Park: entry permit at Manebhanjan",
+      "detail": "Issued at the Forest Department office in Manebhanjan against photo identity; foreign citizens show a passport. A blog says a guide is compulsory inside the park.",
+      "applies_to": "All visitors",
+      "set_by": "West Bengal Forest Department",
+      "official_url": null,
+      "has_official_order": false,
+      "source": {
+        "url": "https://www.darjeeling-tourism.com/darj_0000ee.htm",
+        "title": "Tour of Sandakphu and Phalut by Car",
+        "kind": "blog",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      },
+      "history": []
+    },
+    {
+      "id": "singalila-monsoon-closure",
+      "kind": "timing",
+      "title": "Singalila National Park: closed in the monsoon",
+      "detail": "Closed to visitors from 16 June to 15 September every year. One travel site gives 15 June as the first day.",
+      "applies_to": "All visitors",
+      "set_by": "West Bengal Forest Department",
+      "official_url": null,
+      "has_official_order": false,
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/Singalila_National_Park",
+        "title": "Singalila National Park",
+        "kind": "encyclopedia",
+        "opened": true,
+        "source_date": "2026-09-21",
+        "accessed": "2026-09-28"
+      },
+      "history": []
+    },
+    {
+      "id": "sandakphu-police-health-advisory",
+      "kind": "document",
+      "title": "Sandakphu: police health advisory for visitors",
+      "detail": "Darjeeling Police host a health advisory for Sandakphu visitors on their website. The file could not be opened, so its contents are not recorded.",
+      "applies_to": "All visitors",
+      "set_by": "Darjeeling Police",
+      "official_url": "https://darjeelingpolice.wb.gov.in/tenancy/assets/uploads/2024112998.pdf",
+      "has_official_order": true,
+      "source": {
+        "url": "https://darjeelingpolice.wb.gov.in/tenancy/assets/uploads/2024112998.pdf",
+        "title": "Health advisory for tourists visiting Sandakphu",
+        "kind": "official",
+        "opened": false,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      },
+      "history": []
+    }
+  ],
+  "season": {
+    "note": "The Sandakphu road lies inside Singalila National Park, which shuts every monsoon on fixed dates; no year-by-year dates were found.",
+    "history": []
+  },
+  "authorities": [
+    {
+      "office": "Divisional Forest Officer, Darjeeling Wildlife Division, West Bengal Forest Department",
+      "announces": "Decides who and what may enter Singalila National Park; issues entry permits",
+      "stretch": "Manebhanjan to Sandakphu",
+      "channel": "Office and check post at Manebhanjan",
+      "url": null,
+      "source": {
+        "url": "https://www.darjeeling-tourism.com/darj_0000ee.htm",
+        "title": "Tour of Sandakphu and Phalut by Car",
+        "kind": "blog",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      }
+    },
+    {
+      "office": "Public Works Department, Government of West Bengal",
+      "announces": "Repairs state roads and bridges after landslides",
+      "stretch": "Siliguri to Mirik; Rohini Road",
+      "channel": "Statements reported by news",
+      "url": null,
+      "source": {
+        "url": "https://www.millenniumpost.in/bengal/dudhia-bridge-to-reopen-on-monday-rohini-slip-repair-underway-632803",
+        "title": "Dudhia Bridge to reopen on Monday; Rohini Slip repair underway",
+        "kind": "news",
+        "opened": true,
+        "source_date": "2025-10-27",
+        "accessed": "2026-09-28"
+      }
+    },
+    {
+      "office": "Darjeeling district administration",
+      "announces": "Leads the response when rain cuts the hill roads",
+      "stretch": "Darjeeling, Kurseong and Mirik",
+      "channel": "Statements carried by the public broadcaster",
+      "url": null,
+      "source": {
+        "url": "https://www.newsonair.gov.in/west-bengal-over-20-people-lost-lives-due-to-rainfall-landslides-in-darjeeling-district",
+        "title": "West Bengal: over 20 people lost lives due to rainfall, landslides in Darjeeling district",
+        "kind": "news",
+        "opened": true,
+        "source_date": "2025-10-05",
+        "accessed": "2026-09-28"
+      }
+    },
+    {
+      "office": "Darjeeling Police",
+      "announces": "Health advisory for Sandakphu visitors",
+      "stretch": "Sandakphu",
+      "channel": "Police website",
+      "url": "https://darjeelingpolice.wb.gov.in/tenancy/assets/uploads/2024112998.pdf",
+      "source": {
+        "url": "https://darjeelingpolice.wb.gov.in/tenancy/assets/uploads/2024112998.pdf",
+        "title": "Health advisory for tourists visiting Sandakphu",
+        "kind": "official",
+        "opened": false,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      }
+    },
+    {
+      "office": "National Highways and Infrastructure Development Corporation Limited",
+      "announces": "Restores National Highway 10 after landslides",
+      "stretch": "Sevoke to Rangpo along the Teesta",
+      "channel": "Statements carried by the public broadcaster",
+      "url": null,
+      "source": {
+        "url": "https://www.newsonair.gov.in/nh-10-reopens-after-six-days-of-landslide-disruption-in-sikkim-and-kalimpong",
+        "title": "NH-10 reopens after six days of landslide disruption in Sikkim and Kalimpong",
+        "kind": "news",
+        "opened": true,
+        "source_date": "2025-08-17",
+        "accessed": "2026-09-28"
+      }
+    }
+  ],
+  "hazards": [
+    {
+      "title": "Hill roads cut by rain, October 2025",
+      "detail": "Rain on 4 and 5 October 2025 brought down the Dudhia bridge and damaged Rohini Road. A temporary bridge opened on 27 October 2025.",
+      "months": [
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "source": {
+        "url": "https://www.millenniumpost.in/bengal/dudhia-bridge-to-reopen-on-monday-rohini-slip-repair-underway-632803",
+        "title": "Dudhia Bridge to reopen on Monday; Rohini Slip repair underway",
+        "kind": "news",
+        "opened": true,
+        "source_date": "2025-10-27",
+        "accessed": "2026-09-28"
+      }
+    },
+    {
+      "title": "Bypass roads can be closed or restricted",
+      "detail": "After the October 2025 damage one bypass was shut following a fatal accident and another was kept for emergency and school vehicles only.",
+      "months": [
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "source": {
+        "url": "https://www.millenniumpost.in/bengal/dudhia-bridge-to-reopen-on-monday-rohini-slip-repair-underway-632803",
+        "title": "Dudhia Bridge to reopen on Monday; Rohini Slip repair underway",
+        "kind": "news",
+        "opened": true,
+        "source_date": "2025-10-27",
+        "accessed": "2026-09-28"
+      }
+    },
+    {
+      "title": "Landslides on National Highway 10 into Sikkim",
+      "detail": "The road along the Teesta was shut for six days in August 2025 after it collapsed near 9th Mile. Repeated slides slowed repairs.",
+      "months": [
+        6,
+        7,
+        8,
+        9
+      ],
+      "source": {
+        "url": "https://www.newsonair.gov.in/nh-10-reopens-after-six-days-of-landslide-disruption-in-sikkim-and-kalimpong",
+        "title": "NH-10 reopens after six days of landslide disruption in Sikkim and Kalimpong",
+        "kind": "news",
+        "opened": true,
+        "source_date": "2025-08-17",
+        "accessed": "2026-09-28"
+      }
+    }
+  ],
+  "videos": [],
+  "gaps": [
+    "The text and number of the April 2018 forest notice barring motorcycles from the Sandakphu road were not found; it is known only from a blog and a travel site.",
+    "No official West Bengal Forest Department page found for Singalila entry rules, fees or closure dates.",
+    "Darjeeling Police health advisory for Sandakphu returned an access error (HTTP 403) and was not read.",
+    "No source found stating whether Indian or foreign citizens need any permit for Darjeeling and Kalimpong towns.",
+    "Usual number of days for the whole Siliguri, Darjeeling, Kalimpong loop not sourced; the figure given covers only the Sandakphu leg.",
+    "Highway number for the Kalimpong leg not sourced beyond National Highway 10 along the Teesta.",
+    "Entry fee amounts come only from a blog and are left out.",
+    "No year-by-year opening or closing dates found for the Sandakphu road.",
+    "Videos not collected."
+  ]
+}

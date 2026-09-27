@@ -1,0 +1,247 @@
+{
+  "slug": "rann-of-kutch",
+  "header": {
+    "highway": {
+      "value": "NH 341 (Bhuj to Khavda and on to the border camp at Dharamshala)",
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/National_Highway_341_(India)",
+        "title": "National Highway 341 (India)",
+        "kind": "encyclopedia",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      }
+    },
+    "highest_point": {
+      "name": "Kalo Dungar",
+      "altitude_m": 462,
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/Kalo_Dungar",
+        "title": "Kalo Dungar",
+        "kind": "encyclopedia",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      }
+    },
+    "usual_days": null,
+    "usual_season": {
+      "value": "December to February, the months of the Rann Utsav festival",
+      "source": {
+        "url": "https://kachchh.nic.in/tourist-place/white-rann-of-kachchh/",
+        "title": "White Rann Of Kachchh, District Kachchh",
+        "kind": "official",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      }
+    },
+    "one_line": "Gujarat, from Bhuj to the salt desert at Dhordo and across to Dholavira"
+  },
+  "rules": [
+    {
+      "id": "white-rann-entry-permit",
+      "kind": "permit",
+      "title": "White Rann: entry permit, online or at checkpost",
+      "detail": "Book online or at Bhirandiyara checkpost; the lead traveller uploads identity proof. Adults 100 rupees, children six to twelve 50 rupees, two-wheelers listed at no charge.",
+      "applies_to": "Indian citizens",
+      "set_by": "Kachchh district administration, Government of Gujarat",
+      "official_url": "https://rannpermit.gujarat.gov.in/",
+      "has_official_order": true,
+      "source": {
+        "url": "https://rannpermit.gujarat.gov.in/",
+        "title": "Online permit for Rann of Kutch",
+        "kind": "official",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      },
+      "history": [
+        {
+          "date": "2018-11",
+          "change": "District administration launched online permits on a separate website; checkpost permits continued. Two-wheelers were charged a fee at that time.",
+          "source": {
+            "url": "https://deshgujarat.com/2018/11/16/online-permit-system-for-visit-to-white-rann-of-kutch-launched-by-collector-with-dedicated-website/",
+            "title": "Online permit system for visit to White Rann of Kutch launched by Collector with dedicated website",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2018-11-16",
+            "accessed": "2026-09-28"
+          }
+        }
+      ]
+    },
+    {
+      "id": "white-rann-online-permit-indians-only",
+      "kind": "permit",
+      "title": "Online permit is for Indian nationals only",
+      "detail": "The government portal accepts Indian nationals only. An operator says foreign visitors give passport and visa details and should allow more time.",
+      "applies_to": "Foreign nationals",
+      "set_by": "Kachchh district administration, Government of Gujarat",
+      "official_url": "https://rannpermit.gujarat.gov.in/",
+      "has_official_order": true,
+      "source": {
+        "url": "https://rannpermit.gujarat.gov.in/",
+        "title": "Online permit for Rann of Kutch",
+        "kind": "official",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      },
+      "history": []
+    },
+    {
+      "id": "kalo-dungar-same-permit",
+      "kind": "permit",
+      "title": "Kalo Dungar: carry the same permit onward",
+      "detail": "An operator says the White Rann permit is checked again at a second checkpost on the way to Kalo Dungar. No government order was found.",
+      "applies_to": "All visitors",
+      "set_by": "Kachchh district administration (as reported)",
+      "official_url": null,
+      "has_official_order": false,
+      "source": {
+        "url": "https://www.rannutsavtickets.in/blog/rann-of-kutch-entry-permit-guide",
+        "title": "Rann of Kutch Entry Permit: The Complete Guide",
+        "kind": "operator",
+        "opened": true,
+        "source_date": "2026-08-14",
+        "accessed": "2026-09-28"
+      },
+      "history": []
+    },
+    {
+      "id": "india-bridge-civilian-limit",
+      "kind": "permit",
+      "title": "India Bridge: civilians stop here without special permission",
+      "detail": "Past India Bridge near Khavda the area is closed to civilians; entry needs special permission from the Border Security Force. No government order was found.",
+      "applies_to": "All civilians",
+      "set_by": "Border Security Force",
+      "official_url": null,
+      "has_official_order": false,
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/Kutch_Desert_Wildlife_Sanctuary",
+        "title": "Kutch Desert Wildlife Sanctuary",
+        "kind": "encyclopedia",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      },
+      "history": []
+    },
+    {
+      "id": "khavda-dholavira-road-identity-check",
+      "kind": "document",
+      "title": "Khavda to Dholavira road: original identity card checked",
+      "detail": "A travel site says an army checkpost near Khavda checks original photo identity, the road has no entry fee, and motorcycles are allowed. No government order found.",
+      "applies_to": "All visitors",
+      "set_by": "Not stated",
+      "official_url": null,
+      "has_official_order": false,
+      "source": {
+        "url": "https://kutchdiaries.com/destinations/road-to-heaven/",
+        "title": "Road to Heaven Kutch",
+        "kind": "blog",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      },
+      "history": []
+    }
+  ],
+  "season": {
+    "note": "The Rann is a shallow seasonal wetland after the monsoon and dries to white salt by October or November; winter is the riding season.",
+    "history": []
+  },
+  "authorities": [
+    {
+      "office": "Kachchh district administration, Government of Gujarat",
+      "announces": "Issues White Rann entry permits online and at the Bhirandiyara checkpost",
+      "stretch": "Bhirandiyara to Dhordo and the White Rann",
+      "channel": "Website",
+      "url": "https://rannpermit.gujarat.gov.in/",
+      "source": {
+        "url": "https://rannpermit.gujarat.gov.in/",
+        "title": "Online permit for Rann of Kutch",
+        "kind": "official",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      }
+    },
+    {
+      "office": "Border Security Force",
+      "announces": "Decides on special permission to go beyond India Bridge",
+      "stretch": "India Bridge and the border area north of Khavda",
+      "channel": "Not stated",
+      "url": null,
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/Kutch_Desert_Wildlife_Sanctuary",
+        "title": "Kutch Desert Wildlife Sanctuary",
+        "kind": "encyclopedia",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      }
+    }
+  ],
+  "hazards": [
+    {
+      "title": "No fuel on the Khavda to Dholavira road",
+      "detail": "No pumps on the 30 kilometre stretch across the Rann; fill up at Bhuj or Khavda first.",
+      "months": [],
+      "source": {
+        "url": "https://kutchdiaries.com/destinations/road-to-heaven/",
+        "title": "Road to Heaven Kutch",
+        "kind": "blog",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      }
+    },
+    {
+      "title": "Rann under water after the monsoon",
+      "detail": "The salt flats hold water about half a metre to one and a half metres deep until they dry in October or November.",
+      "months": [
+        7,
+        8,
+        9,
+        10
+      ],
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/Kutch_Desert_Wildlife_Sanctuary",
+        "title": "Kutch Desert Wildlife Sanctuary",
+        "kind": "encyclopedia",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      }
+    }
+  ],
+  "videos": [
+    {
+      "url": "https://www.youtube.com/watch?v=nrAxqT9_6v0",
+      "title": "Jawa 350 First Ride Review | Rann of Kutch | Road to Heaven",
+      "channel": "TopGear Mag India",
+      "stretch": "White Rann and the Khavda to Dholavira road",
+      "filmed": null,
+      "bike": "Jawa 350"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=HnTPCqgtAbQ",
+      "title": "Mount Abu to Dholavira, Gujarat | Jamshedpur to Rann of Kutch Ride Episode 6 | Dominar 400 moto vlog",
+      "channel": "GS Vlogs JSR",
+      "stretch": "Mount Abu to Dholavira",
+      "filmed": null,
+      "bike": "Bajaj Dominar 400"
+    }
+  ],
+  "gaps": [
+    "The official permit page gives no checkpost hours and does not name the places the permit covers beyond 'the Rann area'.",
+    "No official page was found for the rule at India Bridge or for how to ask the Border Security Force for permission beyond it. A forum thread that could not be opened (https://www.tripadvisor.com/ShowTopic-g303878-i11398-k7007777-Need_info_on_permits-Bhuj_Kutch_District_Gujarat.html) says no permit is needed up to the bridge and that permission to cross is given at the district office or the Border Security Force office in Bhuj.",
+    "The official Kachchh district pages for the White Rann and Dholavira say nothing about permits, timings or fees.",
+    "The highway number of the Khavda to Dholavira road was not sourced.",
+    "Usual number of riding days: no source found.",
+    "No source found for summer heat figures in Kutch.",
+    "Videos: the pages give upload dates, not filming dates, so 'filmed' is filled only where the title names a date. Uploads, in order: 2024-01, 2025-11."
+  ]
+}

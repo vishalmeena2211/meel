@@ -1,0 +1,821 @@
+{
+  "slug": "darcha-shinku-la-padum",
+  "header": {
+    "highway": {
+      "value": "No national highway number found; part of the Nimmu to Padum to Darcha road",
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/Shingo_La",
+        "title": "Shinku La",
+        "kind": "encyclopedia",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      }
+    },
+    "highest_point": {
+      "name": "Shinku La",
+      "altitude_m": 5091,
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/Shingo_La",
+        "title": "Shinku La",
+        "kind": "encyclopedia",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      }
+    },
+    "usual_days": {
+      "value": "1 long day",
+      "source": {
+        "url": "https://discoverwithdheeraj.com/plan-journey-zanskar-valley/",
+        "title": "Zanskar Valley Trip 2026: Routes, Budget and Permits",
+        "kind": "blog",
+        "opened": true,
+        "source_date": "2026-08-18",
+        "accessed": "2026-09-28"
+      }
+    },
+    "usual_season": {
+      "value": "June to September",
+      "source": {
+        "url": "https://discoverwithdheeraj.com/plan-journey-zanskar-valley/",
+        "title": "Zanskar Valley Trip 2026: Routes, Budget and Permits",
+        "kind": "blog",
+        "opened": true,
+        "source_date": "2026-08-18",
+        "accessed": "2026-09-28"
+      }
+    },
+    "one_line": "Himachal Pradesh to Zanskar in Ladakh, from Darcha over Shinku La to Padum"
+  },
+  "rules": [
+    {
+      "id": "zanskar-no-permit-indian-citizens",
+      "kind": "permit",
+      "title": "Zanskar: no permit for Indian citizens",
+      "detail": "A blogger reports no permit or fee for Zanskar itself, though another page of his lists the Ladakh fee for the Kargil road. No official page found.",
+      "applies_to": "Indian citizens",
+      "set_by": "Not established",
+      "official_url": null,
+      "has_official_order": false,
+      "source": {
+        "url": "https://discoverwithdheeraj.com/plan-journey-zanskar-valley/",
+        "title": "Zanskar Valley Trip 2026: Routes, Budget and Permits",
+        "kind": "blog",
+        "opened": true,
+        "source_date": "2026-08-18",
+        "accessed": "2026-09-28"
+      },
+      "history": [
+        {
+          "date": "2026-08-31",
+          "change": "Route guide by the same blogger lists the Ladakh fee for the Padum to Kargil road.",
+          "source": {
+            "url": "https://discoverwithdheeraj.com/padum-kargil-long-run-zanskar-2012/",
+            "title": "Padum to Kargil Road Trip 2026: Route Guide",
+            "kind": "blog",
+            "opened": true,
+            "source_date": "2026-08-31",
+            "accessed": "2026-09-28"
+          }
+        }
+      ]
+    },
+    {
+      "id": "lahaul-spiti-e-aagman-vehicle-pass",
+      "kind": "permit",
+      "title": "Lahaul and Spiti: online vehicle pass on e-Aagman",
+      "detail": "People entering the district with a vehicle are asked to apply online. The page speaks of vehicles in general and does not mention motorcycles. Enforcement on motorcycles was not confirmed.",
+      "applies_to": "Vehicles entering Lahaul and Spiti district",
+      "set_by": "Government of Himachal Pradesh, Department of Information Technology",
+      "official_url": "https://eaagman.hp.gov.in/",
+      "has_official_order": true,
+      "source": {
+        "url": "https://eaagman.hp.gov.in/",
+        "title": "e-Aagman",
+        "kind": "official",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      },
+      "history": []
+    },
+    {
+      "id": "darcha-police-registration",
+      "kind": "document",
+      "title": "Registration at Darcha police check post",
+      "detail": "Travellers heading beyond Darcha register at the police post there. No written order was found; the practice is described in an encyclopedia entry.",
+      "applies_to": "All travellers beyond Darcha",
+      "set_by": "Lahaul and Spiti Police",
+      "official_url": null,
+      "has_official_order": false,
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/Leh%E2%80%93Manali_Highway",
+        "title": "Leh-Manali Highway",
+        "kind": "encyclopedia",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      },
+      "history": []
+    },
+    {
+      "id": "shinku-la-early-season-four-wheel-drive-only",
+      "kind": "motorcycle-rule",
+      "title": "Shinku La: early season is four-wheel-drive only",
+      "detail": "In the first weeks the district and police allow only four-wheel-drive vehicles or those with snow chains, which keeps motorcycles out until the pass is declared fit.",
+      "applies_to": "Motorcycles, Darcha to Kargyak",
+      "set_by": "Deputy Commissioner, Lahaul and Spiti; Lahaul and Spiti Police",
+      "official_url": "https://hplahaulspiti.nic.in/road-status/",
+      "has_official_order": true,
+      "source": {
+        "url": "https://www.tribuneindia.com/news/himachal/shinku-la-deepak-taal-thrown-open-for-tourists/",
+        "title": "Shinku La, Deepak Taal thrown open for tourists",
+        "kind": "news",
+        "opened": true,
+        "source_date": "2025-04-11",
+        "accessed": "2026-09-28"
+      },
+      "history": [
+        {
+          "date": "2022-04-25",
+          "change": "Opened to all vehicles except two-wheelers and trucks.",
+          "source": {
+            "url": "https://discoverlehladakh.in/manali-leh-highway-status.htm",
+            "title": "Manali Leh Highway Status in 2026",
+            "kind": "operator",
+            "opened": true,
+            "source_date": "2026-06-09",
+            "accessed": "2026-09-28"
+          }
+        },
+        {
+          "date": "2022-04-30",
+          "change": "Reported open to cars and motorcycles.",
+          "source": {
+            "url": "https://discoverlehladakh.in/manali-leh-highway-status.htm",
+            "title": "Manali Leh Highway Status in 2026",
+            "kind": "operator",
+            "opened": true,
+            "source_date": "2026-06-09",
+            "accessed": "2026-09-28"
+          }
+        },
+        {
+          "date": "2024-04-22",
+          "change": "One-way traffic for four-wheel-drive vehicles with snow chains.",
+          "source": {
+            "url": "https://discoverlehladakh.in/manali-darcha-shinkula-padum-zanskar-road-status.htm",
+            "title": "Manali - Darcha - Shinkula - Padum (Zanskar) Road Status in 2026",
+            "kind": "operator",
+            "opened": true,
+            "source_date": "2026-05-08",
+            "accessed": "2026-09-28"
+          }
+        },
+        {
+          "date": "2024-05-28",
+          "change": "Open for light vehicles.",
+          "source": {
+            "url": "https://discoverlehladakh.in/manali-darcha-shinkula-padum-zanskar-road-status.htm",
+            "title": "Manali - Darcha - Shinkula - Padum (Zanskar) Road Status in 2026",
+            "kind": "operator",
+            "opened": true,
+            "source_date": "2026-05-08",
+            "accessed": "2026-09-28"
+          }
+        },
+        {
+          "date": "2025-04-10",
+          "change": "Tourists allowed in four-wheel-drive vehicles or with snow chains only.",
+          "source": {
+            "url": "https://www.tribuneindia.com/news/himachal/shinku-la-deepak-taal-thrown-open-for-tourists/",
+            "title": "Shinku La, Deepak Taal thrown open for tourists",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2025-04-11",
+            "accessed": "2026-09-28"
+          }
+        },
+        {
+          "date": "2026-04-25",
+          "change": "Open only for four-wheel-drive vehicles; ice near the pass.",
+          "source": {
+            "url": "https://discoverlehladakh.in/manali-darcha-shinkula-padum-zanskar-road-status.htm",
+            "title": "Manali - Darcha - Shinkula - Padum (Zanskar) Road Status in 2026",
+            "kind": "operator",
+            "opened": true,
+            "source_date": "2026-05-08",
+            "accessed": "2026-09-28"
+          }
+        },
+        {
+          "date": "2026-05-08",
+          "change": "Police advisory: four-wheel-drive only near the pass, all vehicles to the halfway point.",
+          "source": {
+            "url": "https://discoverlehladakh.in/manali-darcha-shinkula-padum-zanskar-road-status.htm",
+            "title": "Manali - Darcha - Shinkula - Padum (Zanskar) Road Status in 2026",
+            "kind": "operator",
+            "opened": true,
+            "source_date": "2026-05-08",
+            "accessed": "2026-09-28"
+          }
+        },
+        {
+          "date": "2026-05-10",
+          "change": "District formally opened the road; police to regulate traffic by conditions.",
+          "source": {
+            "url": "https://www.tribuneindia.com/news/himachal/strategic-darcha-shinkula-road-reopened-for-vehicles/",
+            "title": "Strategic Darcha-Shinkula road reopened for vehicles",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2026-05-10",
+            "accessed": "2026-09-28"
+          }
+        }
+      ]
+    },
+    {
+      "id": "shinku-la-time-windows",
+      "kind": "timing",
+      "title": "Shinku La: time windows and one direction per day",
+      "detail": "Early and late in the season traffic runs one way on alternate days inside a morning window, usually ending at 13:00. The pattern is set afresh each year.",
+      "applies_to": "All vehicles, Darcha to Kargyak",
+      "set_by": "Deputy Commissioner, Lahaul and Spiti",
+      "official_url": "https://hplahaulspiti.nic.in/road-status/",
+      "has_official_order": true,
+      "source": {
+        "url": "https://www.tribuneindia.com/news/himachal/shinku-la-deepak-taal-thrown-open-for-tourists/",
+        "title": "Shinku La, Deepak Taal thrown open for tourists",
+        "kind": "news",
+        "opened": true,
+        "source_date": "2025-04-11",
+        "accessed": "2026-09-28"
+      },
+      "history": [
+        {
+          "date": "2022-04-25",
+          "change": "No vehicle allowed beyond Darcha after 13:00.",
+          "source": {
+            "url": "https://discoverlehladakh.in/manali-leh-highway-status.htm",
+            "title": "Manali Leh Highway Status in 2026",
+            "kind": "operator",
+            "opened": true,
+            "source_date": "2026-06-09",
+            "accessed": "2026-09-28"
+          }
+        },
+        {
+          "date": "2024-05-16",
+          "change": "One-way traffic between Darcha and Padum on alternate days.",
+          "source": {
+            "url": "https://discoverlehladakh.in/manali-darcha-shinkula-padum-zanskar-road-status.htm",
+            "title": "Manali - Darcha - Shinkula - Padum (Zanskar) Road Status in 2026",
+            "kind": "operator",
+            "opened": true,
+            "source_date": "2026-05-08",
+            "accessed": "2026-09-28"
+          }
+        },
+        {
+          "date": "2024-11-19",
+          "change": "Darcha to Shinku La limited to 08:00 to 13:00 because of ice.",
+          "source": {
+            "url": "https://www.tribuneindia.com/news/himachal/traffic-movement-regulated-on-lahaul-spiti-passes-due-to-snowfall/",
+            "title": "Traffic movement regulated on Lahaul-Spiti passes due to snowfall",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2024-11-19",
+            "accessed": "2026-09-28"
+          }
+        },
+        {
+          "date": "2024-11-20",
+          "change": "Tourists allowed to the pass 09:00 to 13:00 in four-wheel-drive vehicles only.",
+          "source": {
+            "url": "https://discoverlehladakh.in/manali-leh-highway-status.htm",
+            "title": "Manali Leh Highway Status in 2026",
+            "kind": "operator",
+            "opened": true,
+            "source_date": "2026-06-09",
+            "accessed": "2026-09-28"
+          }
+        },
+        {
+          "date": "2025-04-10",
+          "change": "Lahaul to Zanskar one day, the reverse the next, 09:00 to 13:00.",
+          "source": {
+            "url": "https://www.tribuneindia.com/news/himachal/shinku-la-deepak-taal-thrown-open-for-tourists/",
+            "title": "Shinku La, Deepak Taal thrown open for tourists",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2025-04-11",
+            "accessed": "2026-09-28"
+          }
+        },
+        {
+          "date": "2025-04-24",
+          "change": "One-way running from Kargyak to Darcha, 09:00 to 13:00, to move stranded tourists; reverse next day.",
+          "source": {
+            "url": "https://discoverlehladakh.in/manali-darcha-shinkula-padum-zanskar-road-status.htm",
+            "title": "Manali - Darcha - Shinkula - Padum (Zanskar) Road Status in 2026",
+            "kind": "operator",
+            "opened": true,
+            "source_date": "2026-05-08",
+            "accessed": "2026-09-28"
+          }
+        }
+      ]
+    },
+    {
+      "id": "shinku-la-opening-needs-two-administrations",
+      "kind": "timing",
+      "title": "Civilian opening needs both Himachal and Ladakh to agree",
+      "detail": "After snow clearance, civilian traffic waits for the Lahaul and Spiti district and the Ladakh administration, which then publish an advisory.",
+      "applies_to": "All vehicles",
+      "set_by": "Deputy Commissioner, Lahaul and Spiti; Administration of the Union Territory of Ladakh",
+      "official_url": "https://ladakh.gov.in/padum-darcha-road-officially-reopened-for-traffic/",
+      "has_official_order": true,
+      "source": {
+        "url": "https://ladakh.gov.in/padum-darcha-road-officially-reopened-for-traffic/",
+        "title": "Padum-Darcha road officially reopened for traffic",
+        "kind": "official",
+        "opened": true,
+        "source_date": "2025-04-09",
+        "accessed": "2026-09-28"
+      },
+      "history": [
+        {
+          "date": "2025-04-08",
+          "change": "Road formally reopened by the two administrations and the Border Roads Organisation.",
+          "source": {
+            "url": "https://ladakh.gov.in/padum-darcha-road-officially-reopened-for-traffic/",
+            "title": "Padum-Darcha road officially reopened for traffic",
+            "kind": "official",
+            "opened": true,
+            "source_date": "2025-04-09",
+            "accessed": "2026-09-28"
+          }
+        },
+        {
+          "date": "2026-05-10",
+          "change": "District opened the road using powers under the Disaster Management Act 2005.",
+          "source": {
+            "url": "https://www.tribuneindia.com/news/himachal/strategic-darcha-shinkula-road-reopened-for-vehicles/",
+            "title": "Strategic Darcha-Shinkula road reopened for vehicles",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2026-05-10",
+            "accessed": "2026-09-28"
+          }
+        }
+      ]
+    },
+    {
+      "id": "shinku-la-winter-closure",
+      "kind": "timing",
+      "title": "Winter closure, by order or by snow",
+      "detail": "The road has been closed with the Manali to Leh highway around 20 November, or left to shut when heavy snow arrives. It is not cleared in midwinter.",
+      "applies_to": "All vehicles",
+      "set_by": "Deputy Commissioner, Lahaul and Spiti; Ladakh administration",
+      "official_url": "https://hplahaulspiti.nic.in/road-status/",
+      "has_official_order": true,
+      "source": {
+        "url": "https://www.outlooktraveller.com/News/manali-leh-highway-shut-here-are-some-alternative-routes-to-take",
+        "title": "Manali-Leh Highway closes, alternative routes to opt for",
+        "kind": "news",
+        "opened": true,
+        "source_date": "2023-11-24",
+        "accessed": "2026-09-28"
+      },
+      "history": [
+        {
+          "date": "2023-11-20",
+          "change": "Darcha to Shinku La closed along with the Manali to Leh highway.",
+          "source": {
+            "url": "https://www.outlooktraveller.com/News/manali-leh-highway-shut-here-are-some-alternative-routes-to-take",
+            "title": "Manali-Leh Highway closes, alternative routes to opt for",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2023-11-24",
+            "accessed": "2026-09-28"
+          }
+        },
+        {
+          "date": "2024-12-27",
+          "change": "Heavy snowfall blocked the road for the winter.",
+          "source": {
+            "url": "https://discoverlehladakh.in/manali-darcha-shinkula-padum-zanskar-road-status.htm",
+            "title": "Manali - Darcha - Shinkula - Padum (Zanskar) Road Status in 2026",
+            "kind": "operator",
+            "opened": true,
+            "source_date": "2026-05-08",
+            "accessed": "2026-09-28"
+          }
+        },
+        {
+          "date": "2025-01-06",
+          "change": "Border Roads Organisation said it would not clear the pass in peak winter.",
+          "source": {
+            "url": "https://discoverlehladakh.in/manali-darcha-shinkula-padum-zanskar-road-status.htm",
+            "title": "Manali - Darcha - Shinkula - Padum (Zanskar) Road Status in 2026",
+            "kind": "operator",
+            "opened": true,
+            "source_date": "2026-05-08",
+            "accessed": "2026-09-28"
+          }
+        }
+      ]
+    }
+  ],
+  "season": {
+    "note": "Snow clearance now finishes in April, but for the first weeks only four-wheel-drive vehicles are let over, and no source gives the day motorcycles were first allowed in most years.",
+    "history": [
+      {
+        "year": 2026,
+        "connected": "2026-04",
+        "open_to_motorcycles": null,
+        "closed": null,
+        "note": "Open to four-wheel-drive vehicles on 12 March, blocked again on 15 March, four-wheel-drive only from 25 April. District formally opened it on 10 May. No source names motorcycles.",
+        "sources": [
+          {
+            "url": "https://discoverlehladakh.in/manali-darcha-shinkula-padum-zanskar-road-status.htm",
+            "title": "Manali - Darcha - Shinkula - Padum (Zanskar) Road Status in 2026",
+            "kind": "operator",
+            "opened": true,
+            "source_date": "2026-05-08",
+            "accessed": "2026-09-28"
+          },
+          {
+            "url": "https://www.tribuneindia.com/news/himachal/strategic-darcha-shinkula-road-reopened-for-vehicles/",
+            "title": "Strategic Darcha-Shinkula road reopened for vehicles",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2026-05-10",
+            "accessed": "2026-09-28"
+          }
+        ]
+      },
+      {
+        "year": 2025,
+        "connected": "2025-04-08",
+        "open_to_motorcycles": null,
+        "closed": null,
+        "note": "Tourists from 10 April in four-wheel-drive vehicles or with snow chains. Closed by snow on 20 April; restored by 25 April, when 45 stranded tourists were moved out. Reported open on 15 May. Flash floods blocked it on 2 September.",
+        "sources": [
+          {
+            "url": "https://ladakh.gov.in/padum-darcha-road-officially-reopened-for-traffic/",
+            "title": "Padum-Darcha road officially reopened for traffic",
+            "kind": "official",
+            "opened": true,
+            "source_date": "2025-04-09",
+            "accessed": "2026-09-28"
+          },
+          {
+            "url": "https://www.tribuneindia.com/news/himachal/shinku-la-deepak-taal-thrown-open-for-tourists/",
+            "title": "Shinku La, Deepak Taal thrown open for tourists",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2025-04-11",
+            "accessed": "2026-09-28"
+          },
+          {
+            "url": "https://voiceofladakh.in/2025/04/key-roads-in-kargil-closed-due-to-heavy-snowfall-traffic-advisory-issued/",
+            "title": "Key roads in Kargil closed due to heavy snowfall, traffic advisory issued",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2025-04-20",
+            "accessed": "2026-09-28"
+          },
+          {
+            "url": "https://www.tribuneindia.com/news/himachal/darcha-shinku-la-padum-road-thrown-open-45-stranded-tourists-evacuated",
+            "title": "Darcha-Shinku La-Padum road thrown open, 45 stranded tourists evacuated",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2025-04-25",
+            "accessed": "2026-09-28"
+          },
+          {
+            "url": "https://discoverlehladakh.in/manali-darcha-shinkula-padum-zanskar-road-status.htm",
+            "title": "Manali - Darcha - Shinkula - Padum (Zanskar) Road Status in 2026",
+            "kind": "operator",
+            "opened": true,
+            "source_date": "2026-05-08",
+            "accessed": "2026-09-28"
+          }
+        ]
+      },
+      {
+        "year": 2024,
+        "connected": "2024-04-04",
+        "open_to_motorcycles": null,
+        "closed": "2024-12-27",
+        "note": "Pass declared open on 4 April. Four-wheel-drive one-way from 22 April, light vehicles from 28 May. Shut 4 to 9 August after a flood damaged a bridge. Tourists restricted from 20 November.",
+        "sources": [
+          {
+            "url": "https://discoverlehladakh.in/manali-leh-highway-status.htm",
+            "title": "Manali Leh Highway Status in 2026",
+            "kind": "operator",
+            "opened": true,
+            "source_date": "2026-06-09",
+            "accessed": "2026-09-28"
+          },
+          {
+            "url": "https://discoverlehladakh.in/manali-darcha-shinkula-padum-zanskar-road-status.htm",
+            "title": "Manali - Darcha - Shinkula - Padum (Zanskar) Road Status in 2026",
+            "kind": "operator",
+            "opened": true,
+            "source_date": "2026-05-08",
+            "accessed": "2026-09-28"
+          }
+        ]
+      },
+      {
+        "year": 2023,
+        "connected": null,
+        "open_to_motorcycles": null,
+        "closed": "2023-11-20",
+        "note": "Opening date not found; the pass took 55 days to clear that year. Closed to the public by order on 20 November, though the road builders kept the pass passable until 18 February 2024.",
+        "sources": [
+          {
+            "url": "https://www.outlooktraveller.com/News/manali-leh-highway-shut-here-are-some-alternative-routes-to-take",
+            "title": "Manali-Leh Highway closes, alternative routes to opt for",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2023-11-24",
+            "accessed": "2026-09-28"
+          },
+          {
+            "url": "https://discoverlehladakh.in/manali-leh-highway-status.htm",
+            "title": "Manali Leh Highway Status in 2026",
+            "kind": "operator",
+            "opened": true,
+            "source_date": "2026-06-09",
+            "accessed": "2026-09-28"
+          }
+        ]
+      },
+      {
+        "year": 2022,
+        "connected": null,
+        "open_to_motorcycles": "2022-04-30",
+        "closed": null,
+        "note": "Opened on 25 April to all vehicles except two-wheelers and trucks. Motorcycles specifically reported allowed from 30 April.",
+        "sources": [
+          {
+            "url": "https://discoverlehladakh.in/manali-leh-highway-status.htm",
+            "title": "Manali Leh Highway Status in 2026",
+            "kind": "operator",
+            "opened": true,
+            "source_date": "2026-06-09",
+            "accessed": "2026-09-28"
+          }
+        ]
+      },
+      {
+        "year": 2021,
+        "connected": "2021-05",
+        "open_to_motorcycles": null,
+        "closed": null,
+        "note": "Reopened on the Thursday before 28 May 2021, having closed in October 2020.",
+        "sources": [
+          {
+            "url": "https://discoverlehladakh.in/darcha-shinku-la-padum-road-reopens-ahead-of-schedule.htm",
+            "title": "Darcha-Shinku La-Padum road reopens ahead of schedule",
+            "kind": "operator",
+            "opened": true,
+            "source_date": "2021-05-28",
+            "accessed": "2026-09-28"
+          }
+        ]
+      }
+    ]
+  },
+  "authorities": [
+    {
+      "office": "Border Roads Organisation, Project Yojak",
+      "announces": "Snow clearance finished and pass declared open",
+      "stretch": "Darcha to Shinku La to Padum",
+      "channel": "Opening ceremony and statements to the press; no status page",
+      "url": "https://bro.gov.in/",
+      "source": {
+        "url": "https://discoverlehladakh.in/manali-leh-highway-status.htm",
+        "title": "Manali Leh Highway Status in 2026",
+        "kind": "operator",
+        "opened": true,
+        "source_date": "2026-06-09",
+        "accessed": "2026-09-28"
+      }
+    },
+    {
+      "office": "Deputy Commissioner, Lahaul and Spiti (district disaster management authority)",
+      "announces": "Which vehicles may pass, direction by day, time windows, closure",
+      "stretch": "Darcha to Shinku La",
+      "channel": "Orders reported by newspapers",
+      "url": "https://hplahaulspiti.nic.in/road-status/",
+      "source": {
+        "url": "https://www.tribuneindia.com/news/himachal/shinku-la-deepak-taal-thrown-open-for-tourists/",
+        "title": "Shinku La, Deepak Taal thrown open for tourists",
+        "kind": "news",
+        "opened": true,
+        "source_date": "2025-04-11",
+        "accessed": "2026-09-28"
+      }
+    },
+    {
+      "office": "Lahaul and Spiti Police",
+      "announces": "Stops and releases traffic at Darcha; daily advisories",
+      "stretch": "Darcha to Shinku La",
+      "channel": "Facebook page",
+      "url": "https://www.facebook.com/splahhp/",
+      "source": {
+        "url": "https://discoverlehladakh.in/manali-darcha-shinkula-padum-zanskar-road-status.htm",
+        "title": "Manali - Darcha - Shinkula - Padum (Zanskar) Road Status in 2026",
+        "kind": "operator",
+        "opened": true,
+        "source_date": "2026-05-08",
+        "accessed": "2026-09-28"
+      }
+    },
+    {
+      "office": "Administration of the Union Territory of Ladakh, with Kargil district and Zanskar administrations",
+      "announces": "Formal reopening on the Ladakh side",
+      "stretch": "Shinku La to Padum",
+      "channel": "Press release on the Ladakh administration website",
+      "url": "https://ladakh.gov.in/padum-darcha-road-officially-reopened-for-traffic/",
+      "source": {
+        "url": "https://ladakh.gov.in/padum-darcha-road-officially-reopened-for-traffic/",
+        "title": "Padum-Darcha road officially reopened for traffic",
+        "kind": "official",
+        "opened": true,
+        "source_date": "2025-04-09",
+        "accessed": "2026-09-28"
+      }
+    },
+    {
+      "office": "District Police Kargil",
+      "announces": "Colour-coded road alerts, including the Padum to Darcha road",
+      "stretch": "Zanskar side",
+      "channel": "Advisories on its social media accounts, carried by local news",
+      "url": "https://www.instagram.com/p/DWorp8cEfUI/",
+      "source": {
+        "url": "https://voiceofladakh.in/2025/04/key-roads-in-kargil-closed-due-to-heavy-snowfall-traffic-advisory-issued/",
+        "title": "Key roads in Kargil closed due to heavy snowfall, traffic advisory issued",
+        "kind": "news",
+        "opened": true,
+        "source_date": "2025-04-20",
+        "accessed": "2026-09-28"
+      }
+    }
+  ],
+  "hazards": [
+    {
+      "title": "Flash floods that take out bridges",
+      "detail": "A flood on 4 August 2024 damaged a major bridge beyond Darcha and shut the road for days; flash floods blocked it again on 2 September 2025.",
+      "months": [
+        7,
+        8,
+        9
+      ],
+      "source": {
+        "url": "https://discoverlehladakh.in/manali-darcha-shinkula-padum-zanskar-road-status.htm",
+        "title": "Manali - Darcha - Shinkula - Padum (Zanskar) Road Status in 2026",
+        "kind": "operator",
+        "opened": true,
+        "source_date": "2026-05-08",
+        "accessed": "2026-09-28"
+      }
+    },
+    {
+      "title": "Ice and packed snow near the pass",
+      "detail": "The surface near Shinku La is very slippery in the opening weeks; snow chains are advised.",
+      "months": [
+        4,
+        5
+      ],
+      "source": {
+        "url": "https://discoverlehladakh.in/manali-darcha-shinkula-padum-zanskar-road-status.htm",
+        "title": "Manali - Darcha - Shinkula - Padum (Zanskar) Road Status in 2026",
+        "kind": "operator",
+        "opened": true,
+        "source_date": "2026-05-08",
+        "accessed": "2026-09-28"
+      }
+    },
+    {
+      "title": "Avalanches and rockslides in spring",
+      "detail": "An April 2025 advisory warned of avalanches, rockslides and landslides and said travel was at the traveller's own risk.",
+      "months": [
+        4
+      ],
+      "source": {
+        "url": "https://discoverlehladakh.in/manali-darcha-shinkula-padum-zanskar-road-status.htm",
+        "title": "Manali - Darcha - Shinkula - Padum (Zanskar) Road Status in 2026",
+        "kind": "operator",
+        "opened": true,
+        "source_date": "2026-05-08",
+        "accessed": "2026-09-28"
+      }
+    },
+    {
+      "title": "Landslides and falling stones in the rains",
+      "detail": "The operator log warns of landslides and falling stones once the rainy season starts.",
+      "months": [
+        7,
+        8
+      ],
+      "source": {
+        "url": "https://discoverlehladakh.in/manali-darcha-shinkula-padum-zanskar-road-status.htm",
+        "title": "Manali - Darcha - Shinkula - Padum (Zanskar) Road Status in 2026",
+        "kind": "operator",
+        "opened": true,
+        "source_date": "2026-05-08",
+        "accessed": "2026-09-28"
+      }
+    },
+    {
+      "title": "Snow at the pass in early September",
+      "detail": "Snowfall was reported at Shinku La on 2 September 2025.",
+      "months": [
+        9
+      ],
+      "source": {
+        "url": "https://discoverlehladakh.in/manali-darcha-shinkula-padum-zanskar-road-status.htm",
+        "title": "Manali - Darcha - Shinkula - Padum (Zanskar) Road Status in 2026",
+        "kind": "operator",
+        "opened": true,
+        "source_date": "2026-05-08",
+        "accessed": "2026-09-28"
+      }
+    },
+    {
+      "title": "No fuel after Darcha until Padum",
+      "detail": "A blogger describes Darcha as the last fuel on this side and supply in Padum as limited.",
+      "months": [],
+      "source": {
+        "url": "https://discoverwithdheeraj.com/plan-journey-zanskar-valley/",
+        "title": "Zanskar Valley Trip 2026: Routes, Budget and Permits",
+        "kind": "blog",
+        "opened": true,
+        "source_date": "2026-08-18",
+        "accessed": "2026-09-28"
+      }
+    },
+    {
+      "title": "Almost no mobile network in Zanskar",
+      "detail": "Coverage in the valley is described as minimal.",
+      "months": [],
+      "source": {
+        "url": "https://discoverwithdheeraj.com/plan-journey-zanskar-valley/",
+        "title": "Zanskar Valley Trip 2026: Routes, Budget and Permits",
+        "kind": "blog",
+        "opened": true,
+        "source_date": "2026-08-18",
+        "accessed": "2026-09-28"
+      }
+    },
+    {
+      "title": "Prepaid mobile connections from other states do not work",
+      "detail": "A blogger reports that only postpaid connections from outside work in Jammu and Kashmir and in Ladakh; no official source was found.",
+      "months": [],
+      "source": {
+        "url": "https://discoverwithdheeraj.com/mobile-phone-connectivity-in-leh-ladakh/",
+        "title": "Mobile phone connectivity in Leh Ladakh",
+        "kind": "blog",
+        "opened": true,
+        "source_date": "2026-08-14",
+        "accessed": "2026-09-28"
+      }
+    }
+  ],
+  "videos": [
+    {
+      "url": "https://www.youtube.com/watch?v=pWN7XJJvj3o",
+      "title": "Delhi to Zanskar Valley on Xpulse 210 Motorcycle",
+      "channel": "Gaurav Deswal",
+      "stretch": "Over Shinku La to Gonbo Rangjon and Purne",
+      "filmed": null,
+      "bike": "Hero Xpulse 210"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=3YpIm_lT47Y",
+      "title": "Gonbo Rangjon to Padum | New Roads, Kurgiakh & Sheela Waterfall | Ladakh 2024 on BMW GSA 850",
+      "channel": "Nature Moto",
+      "stretch": "Gonbo Rangjon through Kargyak to Padum",
+      "filmed": "2024",
+      "bike": "BMW GSA 850"
+    }
+  ],
+  "gaps": [
+    "No source gives the date motorcycles were first allowed over Shinku La in 2023, 2024, 2025 or 2026.",
+    "Opening date for 2023 and closing dates for 2021, 2022 and 2025 not found.",
+    "A bridge collapse reported on 1 May 2026 comes from a search result only and was not confirmed.",
+    "No official source found for the rule that Zanskar needs no permit; whether foreign citizens need one was not established.",
+    "Whether the restriction on rental motorcycles from outside Ladakh is enforced in Zanskar was not found.",
+    "Whether the e-Aagman vehicle pass is enforced on motorcycles was not confirmed.",
+    "Sources give 5,091 metres and about 5,054 metres for Shinku La; the encyclopedia figure is used.",
+    "The fuel claim about Darcha is a blogger's; it was not checked against a pump list.",
+    "Usual days rests on a blogger's description of a long single-day drive.",
+    "The first video gives no filming date; it was published on 14 June 2025."
+  ]
+}

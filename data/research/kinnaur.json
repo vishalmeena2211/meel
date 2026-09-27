@@ -1,0 +1,353 @@
+{
+  "slug": "kinnaur",
+  "header": {
+    "highway": {
+      "value": "NH 5 from Rampur to Reckong Peo; side roads to Sangla, Chitkul and Kalpa",
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/National_Highway_5_(India)",
+        "title": "National Highway 5 (India)",
+        "kind": "encyclopedia",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      }
+    },
+    "highest_point": {
+      "name": "Chitkul",
+      "altitude_m": 3450,
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/Chitkul",
+        "title": "Chitkul",
+        "kind": "encyclopedia",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      }
+    },
+    "usual_days": {
+      "value": "6 to 8",
+      "source": {
+        "url": "https://himtrails.in/himachal-trip-itinerary-planner/",
+        "title": "Himachal trip itinerary planner",
+        "kind": "operator",
+        "opened": true,
+        "source_date": "2026-04",
+        "accessed": "2026-09-28"
+      }
+    },
+    "usual_season": {
+      "value": "April to October",
+      "source": {
+        "url": "https://himtrails.in/himachal-trip-itinerary-planner/",
+        "title": "Himachal trip itinerary planner",
+        "kind": "operator",
+        "opened": true,
+        "source_date": "2026-04",
+        "accessed": "2026-09-28"
+      }
+    },
+    "one_line": "Himachal Pradesh, up the Sutlej on the old Hindustan-Tibet road, then the Baspa valley to Chitkul"
+  },
+  "rules": [
+    {
+      "id": "kinnaur-spiti-no-permit-indian-citizens",
+      "kind": "permit",
+      "title": "Kinnaur and Spiti: no permit for Indian citizens",
+      "detail": "Indian citizens ride through with a photo identity card, shown at check posts. The district page asks every visitor to carry identity. No separate order was found.",
+      "applies_to": "Indian citizens",
+      "set_by": "Not stated on an official page; reported by a rider blog",
+      "official_url": "https://hpkinnaur.nic.in/tourism-guide/",
+      "has_official_order": false,
+      "source": {
+        "url": "https://discoverwithdheeraj.com/inner-line-permits-for-kinnaur-lahaul-spiti-valley/",
+        "title": "Inner Line Permits for Kinnaur, Lahaul and Spiti Valley",
+        "kind": "blog",
+        "opened": true,
+        "source_date": "2026-08-22",
+        "accessed": "2026-09-28"
+      },
+      "history": []
+    },
+    {
+      "id": "kinnaur-spiti-protected-area-permit-foreign-citizens",
+      "kind": "permit",
+      "title": "Protected area permit for foreign citizens, Pooh to Kaza",
+      "detail": "Applies in Pooh block, beyond this route. A rider blog says Sangla, Chitkul and Kalpa need none. Kinnaur's page: groups of two, thirty days, Rs 200 each.",
+      "applies_to": "Foreign citizens",
+      "set_by": "Ministry of Home Affairs; issued by District Magistrates and Sub-Divisional Magistrates",
+      "official_url": "https://hpkinnaur.nic.in/tourism-guide/",
+      "has_official_order": true,
+      "source": {
+        "url": "https://hpkinnaur.nic.in/tourism-guide/",
+        "title": "Tourist Guidelines, District Kinnaur",
+        "kind": "official",
+        "opened": true,
+        "source_date": "2026-09-05",
+        "accessed": "2026-09-28"
+      },
+      "history": [
+        {
+          "date": "2026-08-29",
+          "change": "Lahaul and Spiti district page still states a minimum of four foreign citizens sponsored by a travel agency.",
+          "source": {
+            "url": "https://hplahaulspiti.nic.in/foreigner-section/",
+            "title": "Foreigner Section, District Lahaul and Spiti",
+            "kind": "official",
+            "opened": true,
+            "source_date": "2026-08-29",
+            "accessed": "2026-09-28"
+          }
+        },
+        {
+          "date": "2026-09-05",
+          "change": "Kinnaur district page states groups of two or more, agency sponsorship and a thirty-day limit.",
+          "source": {
+            "url": "https://hpkinnaur.nic.in/tourism-guide/",
+            "title": "Tourist Guidelines, District Kinnaur",
+            "kind": "official",
+            "opened": true,
+            "source_date": "2026-09-05",
+            "accessed": "2026-09-28"
+          }
+        },
+        {
+          "date": "2026-08-22",
+          "change": "Rider blog reports offices issue fifteen days in practice and sometimes accept solo applicants at Reckong Peo, Pooh and Kaza.",
+          "source": {
+            "url": "https://discoverwithdheeraj.com/inner-line-permits-for-kinnaur-lahaul-spiti-valley/",
+            "title": "Inner Line Permits for Kinnaur, Lahaul and Spiti Valley",
+            "kind": "blog",
+            "opened": true,
+            "source_date": "2026-08-22",
+            "accessed": "2026-09-28"
+          }
+        }
+      ]
+    },
+    {
+      "id": "kinnaur-identity-card-and-out-of-bounds-roads",
+      "kind": "document",
+      "title": "Kinnaur: carry identity; border roads are out of bounds",
+      "detail": "Every visitor carries a valid identity card. Roads towards Shipki La and Kaurik are closed to visitors, and security installations may not be photographed.",
+      "applies_to": "All visitors",
+      "set_by": "District administration, Kinnaur",
+      "official_url": "https://hpkinnaur.nic.in/tourism-guide/",
+      "has_official_order": true,
+      "source": {
+        "url": "https://hpkinnaur.nic.in/tourism-guide/",
+        "title": "Tourist Guidelines, District Kinnaur",
+        "kind": "official",
+        "opened": true,
+        "source_date": "2026-09-05",
+        "accessed": "2026-09-28"
+      },
+      "history": []
+    },
+    {
+      "id": "chitkul-last-village-without-permit",
+      "kind": "permit",
+      "title": "Chitkul is the last point reachable without a permit",
+      "detail": "The road beyond Chitkul runs towards the border and is not open to visitors. Stated by an encyclopedia page; no order was found.",
+      "applies_to": "All visitors",
+      "set_by": "Not found",
+      "official_url": null,
+      "has_official_order": false,
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/Chitkul",
+        "title": "Chitkul",
+        "kind": "encyclopedia",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      },
+      "history": []
+    },
+    {
+      "id": "himachal-entry-toll-other-state-vehicles",
+      "kind": "tax",
+      "title": "Himachal entry toll for vehicles from other states",
+      "detail": "Charged at entry barriers under the yearly toll policy. Notified rates name passenger and goods vehicles only. The Chief Minister said two-wheelers stay exempt. The policy document was not opened.",
+      "applies_to": "Vehicles registered outside Himachal Pradesh",
+      "set_by": "Department of State Taxes and Excise, Government of Himachal Pradesh",
+      "official_url": "https://www.hptax.gov.in/public/setpdf/Toll%20Policy%202026_27.pdf",
+      "has_official_order": true,
+      "source": {
+        "url": "https://www.tribuneindia.com/news/himachal/himachal-toll-tax-rates-revised-heres-what-you-need-to-know/",
+        "title": "Himachal toll tax rates revised: Here's what you need to know",
+        "kind": "news",
+        "opened": true,
+        "source_date": "2026-04-02",
+        "accessed": "2026-09-28"
+      },
+      "history": [
+        {
+          "date": "2026-02-20",
+          "change": "Toll Policy 2026-27 announced with higher rates from 1 April 2026; receipt reported valid 24 hours across the state.",
+          "source": {
+            "url": "https://www.businesstoday.in/india/story/himachal-pradesh-revises-toll-tax-rates-heres-how-much-vehicle-entry-fee-youll-have-to-pay-from-april-1-517204-2026-02-20",
+            "title": "Himachal Pradesh revises toll tax rates. Here's how much vehicle entry fee you'll have to pay from April 1",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2026-02-20",
+            "accessed": "2026-09-28"
+          }
+        },
+        {
+          "date": "2026-03-26",
+          "change": "Chief Minister told the assembly the tax would be reviewed and that light vehicles and two-wheelers remain exempt.",
+          "source": {
+            "url": "https://www.tribuneindia.com/news/himachal/himachal-govt-signals-rethink-on-entry-tax/",
+            "title": "Himachal Govt signals rethink on entry tax",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2026-03-26",
+            "accessed": "2026-09-28"
+          }
+        },
+        {
+          "date": "2026-04-02",
+          "change": "Revised rates reported, with a lower rate for passenger vehicles from other states; two-wheelers not listed.",
+          "source": {
+            "url": "https://www.tribuneindia.com/news/himachal/himachal-toll-tax-rates-revised-heres-what-you-need-to-know/",
+            "title": "Himachal toll tax rates revised: Here's what you need to know",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2026-04-02",
+            "accessed": "2026-09-28"
+          }
+        }
+      ]
+    }
+  ],
+  "season": {
+    "note": "No pass closes this route; Chitkul and the upper Baspa valley lie under snow in winter and the highway is cut by landslides in the monsoon.",
+    "history": []
+  },
+  "authorities": [
+    {
+      "office": "Himachal Pradesh Public Works Department, National Highway wing",
+      "announces": "Clears landslides and restores traffic",
+      "stretch": "NH 5, Rampur to Reckong Peo",
+      "channel": "Statements to newspapers",
+      "url": "https://hppwd.in/",
+      "source": {
+        "url": "https://www.tribuneindia.com/news/himachal/3rd-landslide-on-nh-5-at-kinnaur-in-a-month-debris-cleared-traffic-restored-551399",
+        "title": "3rd landslide on NH-5 at Kinnaur in a month; debris cleared, traffic restored",
+        "kind": "news",
+        "opened": true,
+        "source_date": "2023-10-07",
+        "accessed": "2026-09-28"
+      }
+    },
+    {
+      "office": "Himachal Pradesh Public Works Department",
+      "announces": "Roads open, blocked or restored",
+      "stretch": "Department roads across Himachal Pradesh",
+      "channel": "Road Status Information System website and mobile apps",
+      "url": "https://hppwd.in/",
+      "source": {
+        "url": "https://hppwd.in/",
+        "title": "Himachal Pradesh Public Works Department",
+        "kind": "official",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      }
+    },
+    {
+      "office": "District administration, Kinnaur",
+      "announces": "Rules for visitors and permits for foreign citizens",
+      "stretch": "Kinnaur district",
+      "channel": "District website tourist guidelines page",
+      "url": "https://hpkinnaur.nic.in/tourism-guide/",
+      "source": {
+        "url": "https://hpkinnaur.nic.in/tourism-guide/",
+        "title": "Tourist Guidelines, District Kinnaur",
+        "kind": "official",
+        "opened": true,
+        "source_date": "2026-09-05",
+        "accessed": "2026-09-28"
+      }
+    }
+  ],
+  "hazards": [
+    {
+      "title": "Nigulsari and Chaura landslide zone on NH 5",
+      "detail": "Repeated slides cut Kinnaur off from Shimla, once for about ten days. Debris keeps falling while crews work.",
+      "months": [
+        7,
+        8,
+        9,
+        10
+      ],
+      "source": {
+        "url": "https://www.tribuneindia.com/news/himachal/3rd-landslide-on-nh-5-at-kinnaur-in-a-month-debris-cleared-traffic-restored-551399",
+        "title": "3rd landslide on NH-5 at Kinnaur in a month; debris cleared, traffic restored",
+        "kind": "news",
+        "opened": true,
+        "source_date": "2023-10-07",
+        "accessed": "2026-09-28"
+      }
+    },
+    {
+      "title": "Highway collapse at Nigulsari, autumn 2024",
+      "detail": "A landslip broke the highway and stranded tourist vehicles and apple trucks on both sides.",
+      "months": [
+        9,
+        10
+      ],
+      "source": {
+        "url": "https://www.tribuneindia.com/news/himachal/kinnaur-cut-off-after-landslip-at-negulsari",
+        "title": "Kinnaur cut off after landslip at Negulsari",
+        "kind": "news",
+        "opened": true,
+        "source_date": "2024-10-02",
+        "accessed": "2026-09-28"
+      }
+    },
+    {
+      "title": "Chitkul under snow in winter",
+      "detail": "The village is mostly snow-covered in winter and residents move lower down.",
+      "months": [
+        12,
+        1,
+        2,
+        3
+      ],
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/Chitkul",
+        "title": "Chitkul",
+        "kind": "encyclopedia",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      }
+    }
+  ],
+  "videos": [
+    {
+      "url": "https://www.youtube.com/watch?v=G2CfZmQBH-A",
+      "title": "Sangla to Chitkul Bike Ride | Complete Route & Exploration | Jaipur to Chitkul Part 4 #chitkul",
+      "channel": "Pushpendra Singh",
+      "stretch": "Sangla to Chitkul",
+      "filmed": null,
+      "bike": null
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=XsP7bZ2soMA",
+      "title": "INSANE ride to KALPA, Kinnaur district in Himachal Pradesh - India Motorcycle Vlog EP27",
+      "channel": "Frenchy",
+      "stretch": "NH 5 to Reckong Peo and Kalpa",
+      "filmed": null,
+      "bike": null
+    }
+  ],
+  "gaps": [
+    "Himachal entry toll: the two-wheeler exemption rests on a newspaper report of the Chief Minister's statement (26 March 2026). The official Toll Policy 2026-27 document on hptax.gov.in failed to open (certificate error), so it is not confirmed for motorcycles registered in other states.",
+    "No official source found for the road numbers of the Karcham to Sangla to Chitkul road or the Reckong Peo to Kalpa road.",
+    "No dated source found for winter closures of the Sangla to Chitkul road.",
+    "No source found for hazards on the Karcham to Sangla road itself.",
+    "That lower Kinnaur needs no permit for foreign citizens is stated by a rider blog only.",
+    "Videos: titles and channels were read from the video pages; filming dates and motorcycles are not confirmed."
+  ]
+}
