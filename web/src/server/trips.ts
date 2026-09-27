@@ -1,6 +1,6 @@
 import "server-only";
 
-import { shortName } from "@/lib/format";
+import { indiaDay, shortName } from "@/lib/format";
 
 import { all, newId, now, one, run, together } from "./db";
 
@@ -86,7 +86,7 @@ function toCard(r: CardRow): TripCard {
 }
 
 function today(): string {
-  return new Date().toISOString().slice(0, 10);
+  return indiaDay();
 }
 
 function safely<T>(work: () => T, otherwise: T): T {

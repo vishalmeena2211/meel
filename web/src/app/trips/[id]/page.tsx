@@ -8,7 +8,7 @@ import { AskToJoin, ReportTrip } from "@/components/trips/forms";
 import { PACE_WORDS, Seats, TripCardView, placesBadge, tripLength } from "@/components/trips/trip-card";
 import { Badge, Callout, KeyFacts } from "@/components/ui";
 import { getIndex, getRoute } from "@/lib/content";
-import { initials, km, metres, plural, sayDate } from "@/lib/format";
+import { indiaDay, initials, km, metres, plural, sayDate } from "@/lib/format";
 import { nightGains } from "@/lib/trip-checks";
 import { currentUser } from "@/server/auth";
 import { getTrip, membersOf, membershipOf, openTripsOnRoute } from "@/server/trips";
@@ -49,7 +49,7 @@ export default async function TripPage(props: PageProps<"/trips/[id]">) {
   const members = membersOf(trip.id);
   const going = members.filter((m) => m.status === "accepted");
   const waiting = members.filter((m) => m.status === "asked" || m.status === "waiting-for-place");
-  const today = new Date().toISOString().slice(0, 10);
+  const today = indiaDay();
   const over = trip.back_on < today;
   const full = trip.going >= trip.places;
   const gains = nightGains(route, trip.nights);

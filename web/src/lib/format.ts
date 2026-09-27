@@ -46,10 +46,32 @@ export function hours(value: number): string {
   return m === 0 ? `${h} h` : `${h} h ${m} min`;
 }
 
-/** Whole days between two dates. */
+const INDIA_DAY = new Intl.DateTimeFormat("en-GB", {
+  timeZone: "Asia/Kolkata",
+  year: "numeric",
+  month: "2-digit",
+  day: "2-digit",
+});
+
+/**
+ * India's calendar day, as "2026-09-28". Every "today" on the site is this one,
+ * on the server and on the phone, so a rider at 2 in the morning is not told that today has not happened yet.
+ */
+export function indiaDay(at: Date = new Date()): string {
+  const parts = INDIA_DAY.formatToParts(at);
+  const pick = (type: "year" | "month" | "day") => parts.find((p) => p.type === type)?.value ?? "";
+  return `${pick("year")}-${pick("month")}-${pick("day")}`;
+}
+
+/** India's calendar month, as "2026-09". */
+export function indiaMonth(at: Date = new Date()): string {
+  return indiaDay(at).slice(0, 7);
+}
+
+/** Whole days between two dates, counted in India's calendar. */
 export function daysBetween(from: string, to: Date): number {
   const then = new Date(`${from.slice(0, 10)}T00:00:00Z`).getTime();
-  const now = Date.UTC(to.getUTCFullYear(), to.getUTCMonth(), to.getUTCDate());
+  const now = new Date(`${indiaDay(to)}T00:00:00Z`).getTime();
   return Math.max(0, Math.round((now - then) / 86_400_000));
 }
 

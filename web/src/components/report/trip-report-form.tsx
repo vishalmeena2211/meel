@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useActionState } from "react";
 
 import { reportTrip, suggest } from "@/app/actions/reports";
+import { indiaMonth } from "@/lib/format";
 
 import { Area, Field, Select } from "../form";
 
@@ -18,7 +19,7 @@ interface Choice {
 export function TripReportForm({ routes, startRoute, loggedInAs }: { routes: Choice[]; startRoute: string; loggedInAs: string | null }) {
   const [state, action, pending] = useActionState(reportTrip, START);
   const regions = [...new Set(routes.map((r) => r.region_name))];
-  const thisMonth = new Date().toISOString().slice(0, 7);
+  const thisMonth = indiaMonth();
 
   if (state.ok) {
     return (

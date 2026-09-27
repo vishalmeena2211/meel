@@ -1,7 +1,7 @@
 import Link from "next/link";
 import type { ReactNode } from "react";
 
-import { daysBetween, sayDate } from "@/lib/format";
+import { daysBetween, indiaDay, sayDate } from "@/lib/format";
 import type { TripCard } from "@/server/trips";
 
 import { Badge } from "../ui";
@@ -21,7 +21,7 @@ export function placesBadge(trip: TripCard, today: Date): ReactNode {
   const left = trip.places - trip.going;
   if (trip.status === "waiting-for-editor") return <Badge tone="unchecked">Waiting for the editor</Badge>;
   if (trip.status === "hidden") return <Badge tone="stale">Hidden, being looked at</Badge>;
-  if (trip.back_on < today.toISOString().slice(0, 10)) return <Badge>Already ridden</Badge>;
+  if (trip.back_on < indiaDay(today)) return <Badge>Already ridden</Badge>;
   if (left <= 0) return <Badge>Full</Badge>;
   return <Badge tone="fresh">{left === 1 ? "1 place left" : `${left} places left`}</Badge>;
 }

@@ -6,6 +6,7 @@ import { z } from "zod";
 
 import type { FormState } from "@/components/form";
 import { getRoute } from "@/lib/content";
+import { indiaDay } from "@/lib/format";
 import { checkTrip, type Check } from "@/lib/trip-checks";
 import { currentUser } from "@/server/auth";
 import {
@@ -83,7 +84,7 @@ export async function postTripAction(_previous: TripFormState, form: FormData): 
   const parsed = tripForm.safeParse({ ...values, asks: values.asks || undefined, chat_link: values.chat_link || undefined });
   const errors = parsed.success ? {} : errorsOf(parsed.error);
 
-  const today = new Date().toISOString().slice(0, 10);
+  const today = indiaDay();
   if (!errors.leaves_on && values.leaves_on < today) errors.leaves_on = "That day has passed. Pick a day from today on.";
   if (!errors.back_on && !errors.leaves_on && values.back_on < values.leaves_on) {
     errors.back_on = "The trip cannot end before it starts.";
