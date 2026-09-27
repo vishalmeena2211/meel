@@ -1,7 +1,7 @@
 # India rider platform — first plan
 
 **Date:** 28 September 2026
-**Status:** DRAFT, awaiting your decisions. Nothing has been built.
+**Status:** DRAFT, awaiting your decisions. **A first version of the site was built on 28 September 2026, at your request, ahead of this plan's timeline.** Read "What was built on 28 September 2026" first. Where that section and the rest of this plan disagree, that section is what happened.
 **Built on:** `reports/India rider platform research.md`, which is interim and has not been through a verification pass.
 
 ---
@@ -15,6 +15,62 @@
 - Checkboxes are tasks. Nothing is ticked, because nothing is done.
 
 The framing from your knowledge document governs everything here: hobby first, the community is the goal, money is optional, and the test for any idea is whether one motivated person with limited time can keep it going.
+
+---
+
+## What was built on 28 September 2026
+
+You asked for wireframes, then the data, then the site itself, built overnight without questions. This section records what was decided on your behalf, so you can overrule any of it.
+
+### Where everything is
+
+| What | Where |
+|---|---|
+| Everything | The folder `meel/`, and the private repository `vishalmeena2211/meel` on GitHub |
+| Wireframes, 30 screens | `design/meel-wireframes.html` |
+| Data for 50 routes | `data/`, explained in `data/README.md` |
+| The website | `web/`, explained in `web/README.md` |
+
+### Decisions made for you
+
+| Decision | What was chosen | Why | Easy to change? |
+|---|---|---|---|
+| Name | **Meel** (मील, Hindi for mile) | Harley-Davidson has a tool called Ride Planner. A site named after its address would be confused with it. The address stays rideplanner.in | Yes, before launch |
+| Look | Kilometre-stone yellow, signboard green, tarmac black. Light only | Read outdoors, on a phone, in sunlight | Yes |
+| Accounts | Email and password. Asked for only to join or post a trip | You asked for login and sign-up for the community part. Reading and reporting stay open to all | No. Accounts now hold riders' details |
+| Riding together | A board of trips, not a forum. A rider posts a trip, others ask to join, the leader accepts | The research says forums die of spam and upkeep. A trip has a start, an end and a leader | Yes |
+| Database | One file on the server's own disk, made by the site itself | No outside service, no monthly cost. **This was decided without your usual approval step for database changes.** It has two numbered steps | Yes, but riders' data would have to be moved |
+| Map | The road is drawn as a line, with no map beneath it | A map of India's borders drawn wrongly is a legal risk. A line has no borders | Yes |
+| Road status | Never stated. The page links to the office that decides | One person cannot keep daily status true | This is the core rule. Keep it |
+| First trip | Read by the editor before it appears | The cheapest guard against fake trips | Yes |
+
+### What this plan said, and what happened instead
+
+| This plan said | What was built | Your call |
+|---|---|---|
+| Prove the page with three to five group admins in October, before any code | The site was built first | The October test is still worth doing. It now tests a real page, not a mock-up |
+| No database, no logins, no server | All three exist | They were added because you asked for the community part. The cost is a host with a disk that stays, and riders' data to look after |
+| One route at full depth, the rest as basic pages | All 50 are basic pages. None is at full depth | Full depth needs riders' reports. It cannot be written at a desk |
+| About 850 entries of data | About 3,800, of which 2,161 are fuel pumps from the open map | More was found than planned. None of it has been confirmed by a rider |
+
+### What the data is, and is not
+
+- [x] 50 routes, each with a road line, heights, fuel gaps and one credited picture
+- [x] 298 rules and permits, 191 official sources, 212 hazards, 60 years of opening and closing dates, 65 videos
+- [x] Every fact carries the page it came from and the date it was read
+- [ ] **No fact has been confirmed by a rider.** Every page says so at the top
+- [ ] **No second pass has checked the facts.** They were gathered once, by research agents, in one night
+- [ ] Fuel gaps are a worst case. A pump missing from the open map is missing here
+- [ ] Many bikes have no published mileage. The rider types their own
+
+### Before anyone else sees it
+
+- [ ] Read three route pages you know well, and mark what is wrong
+- [ ] Decide on the name
+- [ ] Choose a host with a disk that stays. See `web/README.md`
+- [ ] Make your editor's account, the safe way. See `web/README.md`
+- [ ] Have the picture credits and the use of open map data looked at by someone who knows Indian copyright law. They follow the licences as written, and no lawyer has read them
+- [ ] Write a privacy notice. The site holds names, emails, home cities and bikes. India's data protection law applies to that
 
 ---
 
@@ -293,6 +349,8 @@ That one report updates the bike section, the accessory section, the costs, the 
 | Map | OpenStreetMap-based, open-source map display | Ladakh and Lahaul–Spiti road data is good (71 to 81 percent of main roads tagged with surface type) |
 | Database, logins, server | None | Add only when the lack of them is the thing stopping you |
 
+**Overruled on 28 September 2026.** You asked for accounts and shared trips, so the site has a database, logins and a server. Pages about routes are still built ahead of time and served as plain pages.
+
 **Warning for later:** OpenStreetMap data in the North-East is thin (7 to 10 percent of main roads tagged in Nagaland and Arunachal Pradesh). A North-East corridor will need more hand work.
 
 ---
@@ -413,7 +471,7 @@ Hobby-scale measures. No traffic targets.
 - [ ] **Can you keep up the yearly review?** Fifty routes need roughly 140 hours a year of re-checking, every year, after the building is done.
 - [ ] **How many hours a week** can you give — in winter, and in peak season? The plan above assumes roughly 4 to 6 in winter and about an hour a day in May and June.
 - [ ] **Do you know people who run riding groups?** The October test needs three to five. If not, finding them becomes the first task.
-- [ ] **A name and a domain.**
+- [ ] **A name and a domain.** The domain is rideplanner.in, by your choice. The name Meel was chosen for you on 28 September 2026 and is yours to change.
 - [ ] **Finish the research first, or alongside?** See below.
 
 ---
