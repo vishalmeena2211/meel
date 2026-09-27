@@ -13,7 +13,7 @@ Dated facts and shared trips for Indian motorcycle routes. The site lives at **r
 | `data/` | Everything the site shows, for fifty routes, with the source of every fact |
 | `web/` | The website itself |
 
-Start with `docs/plan.md`, then open `design/meel-wireframes.html` in a browser.
+Start with `docs/morning-report-2026-09-28.md`, which says what exists and how far to trust it. Then read `docs/plan.md`, and open `design/meel-wireframes.html` in a browser.
 
 ## What is true of everything here
 
