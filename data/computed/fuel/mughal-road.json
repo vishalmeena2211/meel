@@ -1,0 +1,165 @@
+{
+ "slug": "mughal-road",
+ "fetched": "2026-09-28",
+ "search_radius_m": 900,
+ "pumps": [
+  {
+   "osm": "node/5936065435",
+   "name": "Bharat Petroleum Petrol Pump",
+   "brand": "Bharat Petroleum",
+   "lat": 34.07589,
+   "lon": 74.8251,
+   "km_from_start": 0.1,
+   "off_road_m": 366,
+   "opening_hours": null,
+   "petrol": null,
+   "diesel": null
+  },
+  {
+   "osm": "node/5984439369",
+   "name": "Hindustan Petroleum Petrol Pump",
+   "brand": null,
+   "lat": 34.07578,
+   "lon": 74.82462,
+   "km_from_start": 0.1,
+   "off_road_m": 320,
+   "opening_hours": null,
+   "petrol": null,
+   "diesel": null
+  },
+  {
+   "osm": "node/2836002981",
+   "name": null,
+   "brand": null,
+   "lat": 34.07565,
+   "lon": 74.79752,
+   "km_from_start": 1.8,
+   "off_road_m": 771,
+   "opening_hours": null,
+   "petrol": null,
+   "diesel": null
+  },
+  {
+   "osm": "node/9073507512",
+   "name": "Bharat Petroleum Petrol Pump",
+   "brand": null,
+   "lat": 34.0753,
+   "lon": 74.79738,
+   "km_from_start": 1.8,
+   "off_road_m": 757,
+   "opening_hours": null,
+   "petrol": null,
+   "diesel": null
+  },
+  {
+   "osm": "node/9073519593",
+   "name": "Indian Oil Petrol Pump",
+   "brand": null,
+   "lat": 34.07556,
+   "lon": 74.79752,
+   "km_from_start": 1.8,
+   "off_road_m": 765,
+   "opening_hours": null,
+   "petrol": null,
+   "diesel": null
+  },
+  {
+   "osm": "node/9073525326",
+   "name": "HP Petrol Pump",
+   "brand": null,
+   "lat": 34.07505,
+   "lon": 74.79718,
+   "km_from_start": 1.8,
+   "off_road_m": 757,
+   "opening_hours": null,
+   "petrol": null,
+   "diesel": null
+  },
+  {
+   "osm": "node/5984439329",
+   "name": "Indian Oil Petrol Pump",
+   "brand": null,
+   "lat": 34.05791,
+   "lon": 74.80283,
+   "km_from_start": 3.3,
+   "off_road_m": 27,
+   "opening_hours": null,
+   "petrol": null,
+   "diesel": null
+  },
+  {
+   "osm": "node/9094218168",
+   "name": "Hindustan Petroleum Petrol Pump",
+   "brand": null,
+   "lat": 34.04603,
+   "lon": 74.81263,
+   "km_from_start": 5.1,
+   "off_road_m": 46,
+   "opening_hours": null,
+   "petrol": null,
+   "diesel": null
+  },
+  {
+   "osm": "node/5984439579",
+   "name": "Sadda Bahar Indian Oil Petrol Pump",
+   "brand": null,
+   "lat": 34.02899,
+   "lon": 74.83177,
+   "km_from_start": 8.0,
+   "off_road_m": 650,
+   "opening_hours": null,
+   "petrol": null,
+   "diesel": null
+  },
+  {
+   "osm": "node/9101014085",
+   "name": "Bharat Petroleum Petrol Pump",
+   "brand": null,
+   "lat": 34.00816,
+   "lon": 74.8354,
+   "km_from_start": 10.2,
+   "off_road_m": 36,
+   "opening_hours": null,
+   "petrol": null,
+   "diesel": null
+  }
+ ],
+ "pump_count": 10,
+ "stops": 3,
+ "longest_gaps": [
+  {
+   "from_km": 10.2,
+   "to_km": 175.0,
+   "gap_km": 164.8,
+   "from_is": "pump",
+   "to_is": "end of route",
+   "near_from": "Srinagar",
+   "near_to": "Rajouri"
+  },
+  {
+   "from_km": 5.1,
+   "to_km": 8.0,
+   "gap_km": 2.9,
+   "from_is": "pump",
+   "to_is": "pump",
+   "near_from": "Srinagar",
+   "near_to": "Srinagar"
+  },
+  {
+   "from_km": 8.0,
+   "to_km": 10.2,
+   "gap_km": 2.2,
+   "from_is": "pump",
+   "to_is": "pump",
+   "near_from": "Srinagar",
+   "near_to": "Srinagar"
+  }
+ ],
+ "source": {
+  "service": "Overpass API",
+  "data": "OpenStreetMap contributors",
+  "licence": "Open Database Licence",
+  "url": "https://www.openstreetmap.org/copyright"
+ },
+ "note": "Pumps are those drawn on the open map within the search radius of the road. A pump missing from the map is missing here, so each gap is a worst case."
+}

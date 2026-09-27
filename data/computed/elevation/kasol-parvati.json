@@ -1,0 +1,128 @@
+{
+ "slug": "kasol-parvati",
+ "fetched": "2026-09-28",
+ "step_km": 2.1,
+ "profile": [
+  {
+   "km": 0.0,
+   "m": 1105
+  },
+  {
+   "km": 2.1,
+   "m": 1111
+  },
+  {
+   "km": 4.2,
+   "m": 1153
+  },
+  {
+   "km": 6.2,
+   "m": 1185
+  },
+  {
+   "km": 8.3,
+   "m": 1221
+  },
+  {
+   "km": 10.4,
+   "m": 1283
+  },
+  {
+   "km": 12.5,
+   "m": 1298
+  },
+  {
+   "km": 14.6,
+   "m": 1326
+  },
+  {
+   "km": 16.6,
+   "m": 1385
+  },
+  {
+   "km": 18.7,
+   "m": 1469
+  },
+  {
+   "km": 20.8,
+   "m": 1550
+  },
+  {
+   "km": 22.9,
+   "m": 1497
+  },
+  {
+   "km": 24.9,
+   "m": 1474
+  },
+  {
+   "km": 27.0,
+   "m": 1519
+  },
+  {
+   "km": 29.1,
+   "m": 1601
+  },
+  {
+   "km": 31.2,
+   "m": 1606
+  },
+  {
+   "km": 33.3,
+   "m": 1692
+  },
+  {
+   "km": 35.3,
+   "m": 1783
+  },
+  {
+   "km": 37.4,
+   "m": 1913
+  },
+  {
+   "km": 39.5,
+   "m": 1974
+  },
+  {
+   "km": 41.6,
+   "m": 2019
+  },
+  {
+   "km": 43.7,
+   "m": 2099
+  },
+  {
+   "km": 45.7,
+   "m": 2177
+  },
+  {
+   "km": 46.3,
+   "m": 2199
+  }
+ ],
+ "waypoints": [
+  {
+   "name": "Bhuntar",
+   "m": 1105
+  },
+  {
+   "name": "Kasol",
+   "m": 1577
+  },
+  {
+   "name": "Manikaran",
+   "m": 1730
+  },
+  {
+   "name": "Barshaini",
+   "m": 2199
+  }
+ ],
+ "source": {
+  "service": "Open Topo Data",
+  "data": "SRTM 90 m, NASA",
+  "licence": "Public domain",
+  "url": "https://www.opentopodata.org/datasets/srtm/"
+ },
+ "note": "Heights are read from a 90 m grid. A pass or a bridge can differ from its signboard by some tens of metres."
+}

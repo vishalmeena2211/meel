@@ -1,0 +1,138 @@
+{
+ "slug": "munsiyari-kumaon",
+ "fetched": "2026-09-28",
+ "search_radius_m": 900,
+ "pumps": [
+  {
+   "osm": "way/1188922833",
+   "name": "MS/HSD HARILEELA HIGHWAY",
+   "brand": "Hindustan Petroleum",
+   "lat": 29.26175,
+   "lon": 79.54361,
+   "km_from_start": 0.0,
+   "off_road_m": 507,
+   "opening_hours": null,
+   "petrol": null,
+   "diesel": null
+  },
+  {
+   "osm": "way/1225010342",
+   "name": "Bharat Petroleum",
+   "brand": "Bharat Petroleum",
+   "lat": 29.26321,
+   "lon": 79.54377,
+   "km_from_start": 0.0,
+   "off_road_m": 344,
+   "opening_hours": null,
+   "petrol": null,
+   "diesel": null
+  },
+  {
+   "osm": "way/1225010345",
+   "name": "Indian Oil",
+   "brand": "Indian Oil",
+   "lat": 29.26425,
+   "lon": 79.54423,
+   "km_from_start": 0.0,
+   "off_road_m": 229,
+   "opening_hours": null,
+   "petrol": null,
+   "diesel": null
+  },
+  {
+   "osm": "way/1016781298",
+   "name": "Indian Oil",
+   "brand": "Indian Oil",
+   "lat": 29.28182,
+   "lon": 79.54504,
+   "km_from_start": 1.9,
+   "off_road_m": 18,
+   "opening_hours": null,
+   "petrol": null,
+   "diesel": null
+  },
+  {
+   "osm": "way/1227103228",
+   "name": "Bharat Petroleum",
+   "brand": "Bharat Petroleum",
+   "lat": 29.33962,
+   "lon": 79.48437,
+   "km_from_start": 16.0,
+   "off_road_m": 33,
+   "opening_hours": null,
+   "petrol": null,
+   "diesel": null
+  },
+  {
+   "osm": "node/5580558726",
+   "name": "Indian Oil",
+   "brand": "Indian Oil",
+   "lat": 29.59826,
+   "lon": 79.65855,
+   "km_from_start": 144.0,
+   "off_road_m": 5,
+   "opening_hours": null,
+   "petrol": null,
+   "diesel": null
+  },
+  {
+   "osm": "node/8581796995",
+   "name": "HP fuel pump",
+   "brand": null,
+   "lat": 30.06528,
+   "lon": 80.24413,
+   "km_from_start": 546.7,
+   "off_road_m": 447,
+   "opening_hours": null,
+   "petrol": null,
+   "diesel": null
+  }
+ ],
+ "pump_count": 7,
+ "stops": 4,
+ "longest_gaps": [
+  {
+   "from_km": 144.0,
+   "to_km": 546.7,
+   "gap_km": 402.7,
+   "from_is": "pump",
+   "to_is": "pump",
+   "near_from": "Binsar",
+   "near_to": "Munsiyari"
+  },
+  {
+   "from_km": 16.0,
+   "to_km": 144.0,
+   "gap_km": 128.0,
+   "from_is": "pump",
+   "to_is": "pump",
+   "near_from": "Kathgodam",
+   "near_to": "Binsar"
+  },
+  {
+   "from_km": 1.9,
+   "to_km": 16.0,
+   "gap_km": 14.1,
+   "from_is": "pump",
+   "to_is": "pump",
+   "near_from": "Kathgodam",
+   "near_to": "Kathgodam"
+  },
+  {
+   "from_km": 546.7,
+   "to_km": 558.2,
+   "gap_km": 11.5,
+   "from_is": "pump",
+   "to_is": "end of route",
+   "near_from": "Munsiyari",
+   "near_to": "Munsiyari"
+  }
+ ],
+ "source": {
+  "service": "Overpass API",
+  "data": "OpenStreetMap contributors",
+  "licence": "Open Database Licence",
+  "url": "https://www.openstreetmap.org/copyright"
+ },
+ "note": "Pumps are those drawn on the open map within the search radius of the road. A pump missing from the map is missing here, so each gap is a worst case."
+}

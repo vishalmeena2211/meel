@@ -1,0 +1,62 @@
+{
+ "slug": "odisha",
+ "fetched": "2026-09-28",
+ "search_radius_m": 1500,
+ "pumps": [],
+ "pump_count": 339,
+ "stops": 163,
+ "longest_gaps": [
+  {
+   "from_km": 323.6,
+   "to_km": 684.4,
+   "gap_km": 360.8,
+   "from_is": "pump",
+   "to_is": "pump",
+   "near_from": "Gopalpur",
+   "near_to": "Koraput"
+  },
+  {
+   "from_km": 687.3,
+   "to_km": 895.0,
+   "gap_km": 207.7,
+   "from_is": "pump",
+   "to_is": "pump",
+   "near_from": "Koraput",
+   "near_to": "Koraput"
+  },
+  {
+   "from_km": 1255.9,
+   "to_km": 1405.2,
+   "gap_km": 149.3,
+   "from_is": "pump",
+   "to_is": "pump",
+   "near_from": "Koraput",
+   "near_to": "Koraput"
+  },
+  {
+   "from_km": 2310.9,
+   "to_km": 2436.9,
+   "gap_km": 126.0,
+   "from_is": "pump",
+   "to_is": "pump",
+   "near_from": "Deomali",
+   "near_to": "Deomali"
+  },
+  {
+   "from_km": 1405.2,
+   "to_km": 1505.0,
+   "gap_km": 99.8,
+   "from_is": "pump",
+   "to_is": "pump",
+   "near_from": "Koraput",
+   "near_to": "Koraput"
+  }
+ ],
+ "source": {
+  "service": "Overpass API",
+  "data": "OpenStreetMap contributors",
+  "licence": "Open Database Licence",
+  "url": "https://www.openstreetmap.org/copyright"
+ },
+ "note": "Pumps are those drawn on the open map within the search radius of the road. A pump missing from the map is missing here, so each gap is a worst case."
+}

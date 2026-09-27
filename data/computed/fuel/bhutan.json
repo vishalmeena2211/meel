@@ -1,0 +1,231 @@
+{
+ "slug": "bhutan",
+ "fetched": "2026-09-28",
+ "search_radius_m": 900,
+ "pumps": [
+  {
+   "osm": "node/7974865856",
+   "name": "Bharat Petroleum",
+   "brand": "Bharat Petroleum",
+   "lat": 26.86123,
+   "lon": 89.38122,
+   "km_from_start": 1.5,
+   "off_road_m": 0,
+   "opening_hours": null,
+   "petrol": null,
+   "diesel": null
+  },
+  {
+   "osm": "way/444868960",
+   "name": "Drul Petroleum Corp LTD",
+   "brand": null,
+   "lat": 26.86059,
+   "lon": 89.38804,
+   "km_from_start": 3.2,
+   "off_road_m": 16,
+   "opening_hours": null,
+   "petrol": null,
+   "diesel": null
+  },
+  {
+   "osm": "node/9894412719",
+   "name": "BoD",
+   "brand": null,
+   "lat": 27.41981,
+   "lon": 89.63111,
+   "km_from_start": 141.0,
+   "off_road_m": 26,
+   "opening_hours": null,
+   "petrol": null,
+   "diesel": null
+  },
+  {
+   "osm": "node/9894412718",
+   "name": "BoD",
+   "brand": null,
+   "lat": 27.44185,
+   "lon": 89.6594,
+   "km_from_start": 145.0,
+   "off_road_m": 34,
+   "opening_hours": null,
+   "petrol": null,
+   "diesel": null
+  },
+  {
+   "osm": "node/9840325287",
+   "name": "Motithang BoD",
+   "brand": null,
+   "lat": 27.47727,
+   "lon": 89.62475,
+   "km_from_start": 150.3,
+   "off_road_m": 791,
+   "opening_hours": null,
+   "petrol": null,
+   "diesel": null
+  },
+  {
+   "osm": "node/4369775090",
+   "name": null,
+   "brand": null,
+   "lat": 27.46739,
+   "lon": 89.6411,
+   "km_from_start": 151.6,
+   "off_road_m": 267,
+   "opening_hours": null,
+   "petrol": null,
+   "diesel": null
+  },
+  {
+   "osm": "node/11932105869",
+   "name": "Electric Vehicle Charge",
+   "brand": null,
+   "lat": 27.4672,
+   "lon": 89.64289,
+   "km_from_start": 151.6,
+   "off_road_m": 440,
+   "opening_hours": null,
+   "petrol": null,
+   "diesel": null
+  },
+  {
+   "osm": "way/439926917",
+   "name": "Indian Oil petrol",
+   "brand": "Indian Oil petrol",
+   "lat": 27.54822,
+   "lon": 89.86962,
+   "km_from_start": 227.5,
+   "off_road_m": 20,
+   "opening_hours": null,
+   "petrol": null,
+   "diesel": null
+  },
+  {
+   "osm": "node/2031591217",
+   "name": null,
+   "brand": null,
+   "lat": 27.51558,
+   "lon": 89.86609,
+   "km_from_start": 234.6,
+   "off_road_m": 12,
+   "opening_hours": null,
+   "petrol": null,
+   "diesel": null
+  },
+  {
+   "osm": "node/4377499005",
+   "name": null,
+   "brand": null,
+   "lat": 27.46406,
+   "lon": 89.64288,
+   "km_from_start": 292.5,
+   "off_road_m": 271,
+   "opening_hours": null,
+   "petrol": null,
+   "diesel": null
+  },
+  {
+   "osm": "node/11934013169",
+   "name": "Gas Station",
+   "brand": null,
+   "lat": 27.36982,
+   "lon": 89.56924,
+   "km_from_start": 313.2,
+   "off_road_m": 20,
+   "opening_hours": null,
+   "petrol": null,
+   "diesel": null
+  },
+  {
+   "osm": "node/3933397238",
+   "name": "Gas Station",
+   "brand": "Indian Oil",
+   "lat": 27.38695,
+   "lon": 89.44251,
+   "km_from_start": 339.0,
+   "off_road_m": 27,
+   "opening_hours": null,
+   "petrol": null,
+   "diesel": null
+  },
+  {
+   "osm": "node/11930786269",
+   "name": null,
+   "brand": null,
+   "lat": 27.41573,
+   "lon": 89.41964,
+   "km_from_start": 343.8,
+   "off_road_m": 3,
+   "opening_hours": null,
+   "petrol": null,
+   "diesel": null
+  },
+  {
+   "osm": "node/2491166287",
+   "name": "BP",
+   "brand": "BP",
+   "lat": 27.43126,
+   "lon": 89.41163,
+   "km_from_start": 346.1,
+   "off_road_m": 145,
+   "opening_hours": null,
+   "petrol": null,
+   "diesel": "yes"
+  }
+ ],
+ "pump_count": 14,
+ "stops": 11,
+ "longest_gaps": [
+  {
+   "from_km": 3.2,
+   "to_km": 141.0,
+   "gap_km": 137.8,
+   "from_is": "pump",
+   "to_is": "pump",
+   "near_from": "Phuentsholing",
+   "near_to": "Thimphu"
+  },
+  {
+   "from_km": 151.6,
+   "to_km": 227.5,
+   "gap_km": 75.9,
+   "from_is": "pump",
+   "to_is": "pump",
+   "near_from": "Thimphu",
+   "near_to": "Punakha"
+  },
+  {
+   "from_km": 234.6,
+   "to_km": 292.5,
+   "gap_km": 57.9,
+   "from_is": "pump",
+   "to_is": "pump",
+   "near_from": "Punakha",
+   "near_to": "Thimphu"
+  },
+  {
+   "from_km": 313.2,
+   "to_km": 339.0,
+   "gap_km": 25.8,
+   "from_is": "pump",
+   "to_is": "pump",
+   "near_from": "Thimphu",
+   "near_to": "Paro"
+  },
+  {
+   "from_km": 292.5,
+   "to_km": 313.2,
+   "gap_km": 20.7,
+   "from_is": "pump",
+   "to_is": "pump",
+   "near_from": "Thimphu",
+   "near_to": "Thimphu"
+  }
+ ],
+ "source": {
+  "service": "Overpass API",
+  "data": "OpenStreetMap contributors",
+  "licence": "Open Database Licence",
+  "url": "https://www.openstreetmap.org/copyright"
+ },
+ "note": "Pumps are those drawn on the open map within the search radius of the road. A pump missing from the map is missing here, so each gap is a worst case."
+}

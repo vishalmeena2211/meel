@@ -1,0 +1,90 @@
+{
+ "slug": "jalori-tirthan",
+ "fetched": "2026-09-28",
+ "search_radius_m": 900,
+ "pumps": [
+  {
+   "osm": "node/10955984309",
+   "name": null,
+   "brand": "Hindustan Petroleum",
+   "lat": 31.72652,
+   "lon": 77.22597,
+   "km_from_start": 5.5,
+   "off_road_m": 23,
+   "opening_hours": null,
+   "petrol": null,
+   "diesel": null
+  },
+  {
+   "osm": "node/10955993525",
+   "name": null,
+   "brand": "Hindustan Petroleum",
+   "lat": 31.70256,
+   "lon": 77.26141,
+   "km_from_start": 11.7,
+   "off_road_m": 25,
+   "opening_hours": null,
+   "petrol": null,
+   "diesel": null
+  },
+  {
+   "osm": "node/10955982493",
+   "name": null,
+   "brand": "Indian Oil",
+   "lat": 31.66571,
+   "lon": 77.30427,
+   "km_from_start": 18.7,
+   "off_road_m": 13,
+   "opening_hours": null,
+   "petrol": null,
+   "diesel": null
+  }
+ ],
+ "pump_count": 3,
+ "stops": 3,
+ "longest_gaps": [
+  {
+   "from_km": 18.7,
+   "to_km": 97.2,
+   "gap_km": 78.5,
+   "from_is": "pump",
+   "to_is": "end of route",
+   "near_from": "Banjar",
+   "near_to": "Anni"
+  },
+  {
+   "from_km": 11.7,
+   "to_km": 18.7,
+   "gap_km": 7.0,
+   "from_is": "pump",
+   "to_is": "pump",
+   "near_from": "Aut",
+   "near_to": "Banjar"
+  },
+  {
+   "from_km": 5.5,
+   "to_km": 11.7,
+   "gap_km": 6.2,
+   "from_is": "pump",
+   "to_is": "pump",
+   "near_from": "Aut",
+   "near_to": "Aut"
+  },
+  {
+   "from_km": 0.0,
+   "to_km": 5.5,
+   "gap_km": 5.5,
+   "from_is": "start of route",
+   "to_is": "pump",
+   "near_from": "Aut",
+   "near_to": "Aut"
+  }
+ ],
+ "source": {
+  "service": "Overpass API",
+  "data": "OpenStreetMap contributors",
+  "licence": "Open Database Licence",
+  "url": "https://www.openstreetmap.org/copyright"
+ },
+ "note": "Pumps are those drawn on the open map within the search radius of the road. A pump missing from the map is missing here, so each gap is a worst case."
+}

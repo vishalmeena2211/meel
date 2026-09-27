@@ -1,0 +1,207 @@
+{
+ "slug": "chhattisgarh-bastar",
+ "fetched": "2026-09-28",
+ "search_radius_m": 900,
+ "pumps": [
+  {
+   "osm": "node/4445102207",
+   "name": "BP petrol bunk",
+   "brand": null,
+   "lat": 21.24376,
+   "lon": 81.63636,
+   "km_from_start": 0.2,
+   "off_road_m": 651,
+   "opening_hours": null,
+   "petrol": null,
+   "diesel": null
+  },
+  {
+   "osm": "node/4445087639",
+   "name": "Star indian oil",
+   "brand": null,
+   "lat": 21.23138,
+   "lon": 81.64002,
+   "km_from_start": 1.1,
+   "off_road_m": 12,
+   "opening_hours": null,
+   "petrol": null,
+   "diesel": null
+  },
+  {
+   "osm": "way/1360654227",
+   "name": "Indian Oil",
+   "brand": "Indian Oil",
+   "lat": 21.22397,
+   "lon": 81.6438,
+   "km_from_start": 2.2,
+   "off_road_m": 26,
+   "opening_hours": null,
+   "petrol": null,
+   "diesel": null
+  },
+  {
+   "osm": "node/14183164981",
+   "name": null,
+   "brand": null,
+   "lat": 21.08126,
+   "lon": 81.75216,
+   "km_from_start": 22.6,
+   "off_road_m": 40,
+   "opening_hours": null,
+   "petrol": null,
+   "diesel": null
+  },
+  {
+   "osm": "node/14183164982",
+   "name": null,
+   "brand": null,
+   "lat": 21.07905,
+   "lon": 81.75206,
+   "km_from_start": 22.8,
+   "off_road_m": 45,
+   "opening_hours": null,
+   "petrol": null,
+   "diesel": null
+  },
+  {
+   "osm": "node/8115416797",
+   "name": null,
+   "brand": null,
+   "lat": 20.47425,
+   "lon": 81.37646,
+   "km_from_start": 112.5,
+   "off_road_m": 35,
+   "opening_hours": null,
+   "petrol": null,
+   "diesel": null
+  },
+  {
+   "osm": "way/871209598",
+   "name": null,
+   "brand": null,
+   "lat": 20.47417,
+   "lon": 81.37639,
+   "km_from_start": 112.5,
+   "off_road_m": 45,
+   "opening_hours": null,
+   "petrol": null,
+   "diesel": null
+  },
+  {
+   "osm": "node/8499141818",
+   "name": "Agni Bricks",
+   "brand": null,
+   "lat": 20.26987,
+   "lon": 81.49217,
+   "km_from_start": 139.0,
+   "off_road_m": 108,
+   "opening_hours": null,
+   "petrol": null,
+   "diesel": null
+  },
+  {
+   "osm": "node/13243374686",
+   "name": null,
+   "brand": null,
+   "lat": 20.22472,
+   "lon": 81.51223,
+   "km_from_start": 145.7,
+   "off_road_m": 41,
+   "opening_hours": null,
+   "petrol": null,
+   "diesel": null
+  },
+  {
+   "osm": "node/13201425785",
+   "name": null,
+   "brand": null,
+   "lat": 19.61478,
+   "lon": 81.66598,
+   "km_from_start": 222.8,
+   "off_road_m": 57,
+   "opening_hours": null,
+   "petrol": null,
+   "diesel": null
+  },
+  {
+   "osm": "node/13201425783",
+   "name": null,
+   "brand": null,
+   "lat": 19.56958,
+   "lon": 81.67069,
+   "km_from_start": 228.3,
+   "off_road_m": 28,
+   "opening_hours": null,
+   "petrol": null,
+   "diesel": null
+  },
+  {
+   "osm": "node/13201425784",
+   "name": null,
+   "brand": null,
+   "lat": 19.56019,
+   "lon": 81.67714,
+   "km_from_start": 229.5,
+   "off_road_m": 57,
+   "opening_hours": null,
+   "petrol": null,
+   "diesel": null
+  }
+ ],
+ "pump_count": 12,
+ "stops": 7,
+ "longest_gaps": [
+  {
+   "from_km": 229.5,
+   "to_km": 393.1,
+   "gap_km": 163.6,
+   "from_is": "pump",
+   "to_is": "end of route",
+   "near_from": "Keshkal",
+   "near_to": "Tirathgarh Falls"
+  },
+  {
+   "from_km": 22.8,
+   "to_km": 112.5,
+   "gap_km": 89.7,
+   "from_is": "pump",
+   "to_is": "pump",
+   "near_from": "Raipur",
+   "near_to": "Kanker"
+  },
+  {
+   "from_km": 145.7,
+   "to_km": 222.8,
+   "gap_km": 77.1,
+   "from_is": "pump",
+   "to_is": "pump",
+   "near_from": "Kanker",
+   "near_to": "Keshkal"
+  },
+  {
+   "from_km": 112.5,
+   "to_km": 139.0,
+   "gap_km": 26.5,
+   "from_is": "pump",
+   "to_is": "pump",
+   "near_from": "Kanker",
+   "near_to": "Kanker"
+  },
+  {
+   "from_km": 2.2,
+   "to_km": 22.6,
+   "gap_km": 20.4,
+   "from_is": "pump",
+   "to_is": "pump",
+   "near_from": "Raipur",
+   "near_to": "Raipur"
+  }
+ ],
+ "source": {
+  "service": "Overpass API",
+  "data": "OpenStreetMap contributors",
+  "licence": "Open Database Licence",
+  "url": "https://www.openstreetmap.org/copyright"
+ },
+ "note": "Pumps are those drawn on the open map within the search radius of the road. A pump missing from the map is missing here, so each gap is a worst case."
+}

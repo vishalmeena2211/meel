@@ -1,0 +1,111 @@
+{
+ "slug": "kargil-padum",
+ "fetched": "2026-09-28",
+ "search_radius_m": 900,
+ "pumps": [
+  {
+   "osm": "node/12465668700",
+   "name": "HP",
+   "brand": "Hindustan Petroleum",
+   "lat": 34.53955,
+   "lon": 76.14011,
+   "km_from_start": 3.6,
+   "off_road_m": 15,
+   "opening_hours": null,
+   "petrol": null,
+   "diesel": null
+  },
+  {
+   "osm": "node/12465668130",
+   "name": null,
+   "brand": null,
+   "lat": 34.50508,
+   "lon": 76.12528,
+   "km_from_start": 7.8,
+   "off_road_m": 16,
+   "opening_hours": null,
+   "petrol": null,
+   "diesel": null
+  },
+  {
+   "osm": "node/9781314888",
+   "name": "Sankoo Petrol Station",
+   "brand": null,
+   "lat": 34.3006,
+   "lon": 75.9608,
+   "km_from_start": 39.5,
+   "off_road_m": 37,
+   "opening_hours": null,
+   "petrol": null,
+   "diesel": null
+  },
+  {
+   "osm": "node/9888799401",
+   "name": null,
+   "brand": null,
+   "lat": 33.48065,
+   "lon": 76.85722,
+   "km_from_start": 229.0,
+   "off_road_m": 6,
+   "opening_hours": null,
+   "petrol": null,
+   "diesel": null
+  }
+ ],
+ "pump_count": 4,
+ "stops": 4,
+ "longest_gaps": [
+  {
+   "from_km": 39.5,
+   "to_km": 229.0,
+   "gap_km": 189.5,
+   "from_is": "pump",
+   "to_is": "pump",
+   "near_from": "Sankoo",
+   "near_to": "Padum"
+  },
+  {
+   "from_km": 7.8,
+   "to_km": 39.5,
+   "gap_km": 31.7,
+   "from_is": "pump",
+   "to_is": "pump",
+   "near_from": "Kargil",
+   "near_to": "Sankoo"
+  },
+  {
+   "from_km": 3.6,
+   "to_km": 7.8,
+   "gap_km": 4.2,
+   "from_is": "pump",
+   "to_is": "pump",
+   "near_from": "Kargil",
+   "near_to": "Kargil"
+  },
+  {
+   "from_km": 0.0,
+   "to_km": 3.6,
+   "gap_km": 3.6,
+   "from_is": "start of route",
+   "to_is": "pump",
+   "near_from": "Kargil",
+   "near_to": "Kargil"
+  },
+  {
+   "from_km": 229.0,
+   "to_km": 231.4,
+   "gap_km": 2.4,
+   "from_is": "pump",
+   "to_is": "end of route",
+   "near_from": "Padum",
+   "near_to": "Padum"
+  }
+ ],
+ "source": {
+  "service": "Overpass API",
+  "data": "OpenStreetMap contributors",
+  "licence": "Open Database Licence",
+  "url": "https://www.openstreetmap.org/copyright"
+ },
+ "note": "Pumps are those drawn on the open map within the search radius of the road. A pump missing from the map is missing here, so each gap is a worst case."
+}

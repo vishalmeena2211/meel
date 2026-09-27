@@ -1,0 +1,171 @@
+{
+ "slug": "manipur-mizoram",
+ "fetched": "2026-09-28",
+ "search_radius_m": 900,
+ "pumps": [
+  {
+   "osm": "node/6562425686",
+   "name": "Assam Oil",
+   "brand": null,
+   "lat": 24.79536,
+   "lon": 93.94046,
+   "km_from_start": 0.0,
+   "off_road_m": 587,
+   "opening_hours": null,
+   "petrol": null,
+   "diesel": null
+  },
+  {
+   "osm": "node/10947433057",
+   "name": "Indian Oil",
+   "brand": "Indian Oil",
+   "lat": 24.79524,
+   "lon": 93.92981,
+   "km_from_start": 1.0,
+   "off_road_m": 30,
+   "opening_hours": null,
+   "petrol": null,
+   "diesel": null
+  },
+  {
+   "osm": "node/6387635529",
+   "name": null,
+   "brand": null,
+   "lat": 24.78041,
+   "lon": 93.91357,
+   "km_from_start": 3.4,
+   "off_road_m": 9,
+   "opening_hours": null,
+   "petrol": null,
+   "diesel": null
+  },
+  {
+   "osm": "node/6387635524",
+   "name": null,
+   "brand": null,
+   "lat": 24.72264,
+   "lon": 93.84399,
+   "km_from_start": 13.4,
+   "off_road_m": 24,
+   "opening_hours": null,
+   "petrol": null,
+   "diesel": null
+  },
+  {
+   "osm": "node/11356662423",
+   "name": "M/S Bitej Gasoline Centre",
+   "brand": "Indian Oil",
+   "lat": 24.61282,
+   "lon": 93.7618,
+   "km_from_start": 29.8,
+   "off_road_m": 10,
+   "opening_hours": null,
+   "petrol": null,
+   "diesel": null
+  },
+  {
+   "osm": "node/8778588406",
+   "name": "New Lamka Petrol Pump",
+   "brand": null,
+   "lat": 24.33018,
+   "lon": 93.69351,
+   "km_from_start": 68.1,
+   "off_road_m": 28,
+   "opening_hours": null,
+   "petrol": null,
+   "diesel": null
+  },
+  {
+   "osm": "node/7007512785",
+   "name": null,
+   "brand": null,
+   "lat": 23.73503,
+   "lon": 92.83922,
+   "km_from_start": 391.8,
+   "off_road_m": 1,
+   "opening_hours": null,
+   "petrol": null,
+   "diesel": null
+  },
+  {
+   "osm": "node/8439990161",
+   "name": "Indian Oil",
+   "brand": "Indian Oil",
+   "lat": 23.72616,
+   "lon": 92.71857,
+   "km_from_start": 425.9,
+   "off_road_m": 129,
+   "opening_hours": null,
+   "petrol": null,
+   "diesel": null
+  },
+  {
+   "osm": "node/13073458651",
+   "name": "IndianOil",
+   "brand": null,
+   "lat": 23.47466,
+   "lon": 93.31578,
+   "km_from_start": 607.8,
+   "off_road_m": 4,
+   "opening_hours": null,
+   "petrol": null,
+   "diesel": null
+  }
+ ],
+ "pump_count": 9,
+ "stops": 8,
+ "longest_gaps": [
+  {
+   "from_km": 68.1,
+   "to_km": 391.8,
+   "gap_km": 323.7,
+   "from_is": "pump",
+   "to_is": "pump",
+   "near_from": "Moirang",
+   "near_to": "Aizawl"
+  },
+  {
+   "from_km": 425.9,
+   "to_km": 607.8,
+   "gap_km": 181.9,
+   "from_is": "pump",
+   "to_is": "pump",
+   "near_from": "Aizawl",
+   "near_to": "Champhai"
+  },
+  {
+   "from_km": 29.8,
+   "to_km": 68.1,
+   "gap_km": 38.3,
+   "from_is": "pump",
+   "to_is": "pump",
+   "near_from": "Moirang",
+   "near_to": "Moirang"
+  },
+  {
+   "from_km": 391.8,
+   "to_km": 425.9,
+   "gap_km": 34.1,
+   "from_is": "pump",
+   "to_is": "pump",
+   "near_from": "Aizawl",
+   "near_to": "Aizawl"
+  },
+  {
+   "from_km": 13.4,
+   "to_km": 29.8,
+   "gap_km": 16.4,
+   "from_is": "pump",
+   "to_is": "pump",
+   "near_from": "Imphal",
+   "near_to": "Moirang"
+  }
+ ],
+ "source": {
+  "service": "Overpass API",
+  "data": "OpenStreetMap contributors",
+  "licence": "Open Database Licence",
+  "url": "https://www.openstreetmap.org/copyright"
+ },
+ "note": "Pumps are those drawn on the open map within the search radius of the road. A pump missing from the map is missing here, so each gap is a worst case."
+}

@@ -1,0 +1,62 @@
+{
+ "slug": "arunachal-centre-east",
+ "fetched": "2026-09-28",
+ "search_radius_m": 1500,
+ "pumps": [],
+ "pump_count": 11,
+ "stops": 6,
+ "longest_gaps": [
+  {
+   "from_km": 1088.5,
+   "to_km": 1461.1,
+   "gap_km": 372.6,
+   "from_is": "pump",
+   "to_is": "pump",
+   "near_from": "Anini",
+   "near_to": "Tezu"
+  },
+  {
+   "from_km": 309.9,
+   "to_km": 648.9,
+   "gap_km": 339.0,
+   "from_is": "pump",
+   "to_is": "pump",
+   "near_from": "Aalo",
+   "near_to": "Aalo"
+  },
+  {
+   "from_km": 768.8,
+   "to_km": 1088.5,
+   "gap_km": 319.7,
+   "from_is": "pump",
+   "to_is": "pump",
+   "near_from": "Pasighat",
+   "near_to": "Anini"
+  },
+  {
+   "from_km": 0.0,
+   "to_km": 309.9,
+   "gap_km": 309.9,
+   "from_is": "start of route",
+   "to_is": "pump",
+   "near_from": "Ziro",
+   "near_to": "Aalo"
+  },
+  {
+   "from_km": 1461.1,
+   "to_km": 1569.5,
+   "gap_km": 108.4,
+   "from_is": "pump",
+   "to_is": "end of route",
+   "near_from": "Tezu",
+   "near_to": "Walong"
+  }
+ ],
+ "source": {
+  "service": "Overpass API",
+  "data": "OpenStreetMap contributors",
+  "licence": "Open Database Licence",
+  "url": "https://www.openstreetmap.org/copyright"
+ },
+ "note": "Pumps are those drawn on the open map within the search radius of the road. A pump missing from the map is missing here, so each gap is a worst case."
+}

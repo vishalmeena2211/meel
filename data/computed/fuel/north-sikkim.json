@@ -1,0 +1,123 @@
+{
+ "slug": "north-sikkim",
+ "fetched": "2026-09-28",
+ "search_radius_m": 900,
+ "pumps": [
+  {
+   "osm": "node/8196909803",
+   "name": "Indian Oil Petrol Pump",
+   "brand": "Indian Oil",
+   "lat": 27.33452,
+   "lon": 88.61426,
+   "km_from_start": 0.8,
+   "off_road_m": 93,
+   "opening_hours": null,
+   "petrol": null,
+   "diesel": null
+  },
+  {
+   "osm": "node/6927198012",
+   "name": null,
+   "brand": null,
+   "lat": 27.36014,
+   "lon": 88.62227,
+   "km_from_start": 4.8,
+   "off_road_m": 120,
+   "opening_hours": null,
+   "petrol": null,
+   "diesel": null
+  },
+  {
+   "osm": "node/13196993725",
+   "name": "Bharat Petroleum",
+   "brand": null,
+   "lat": 27.36573,
+   "lon": 88.62149,
+   "km_from_start": 5.7,
+   "off_road_m": 4,
+   "opening_hours": null,
+   "petrol": null,
+   "diesel": null
+  },
+  {
+   "osm": "node/4925330433",
+   "name": "Bharat",
+   "brand": null,
+   "lat": 27.46439,
+   "lon": 88.52526,
+   "km_from_start": 56.2,
+   "off_road_m": 8,
+   "opening_hours": null,
+   "petrol": null,
+   "diesel": null
+  },
+  {
+   "osm": "node/8196909798",
+   "name": "Indian Oil Petrol Pump",
+   "brand": "Indian Oil",
+   "lat": 27.49235,
+   "lon": 88.52831,
+   "km_from_start": 64.1,
+   "off_road_m": 13,
+   "opening_hours": null,
+   "petrol": null,
+   "diesel": null
+  }
+ ],
+ "pump_count": 5,
+ "stops": 4,
+ "longest_gaps": [
+  {
+   "from_km": 64.1,
+   "to_km": 394.5,
+   "gap_km": 330.4,
+   "from_is": "pump",
+   "to_is": "end of route",
+   "near_from": "Gangtok",
+   "near_to": "Yumthang"
+  },
+  {
+   "from_km": 5.7,
+   "to_km": 56.2,
+   "gap_km": 50.5,
+   "from_is": "pump",
+   "to_is": "pump",
+   "near_from": "Gangtok",
+   "near_to": "Gangtok"
+  },
+  {
+   "from_km": 56.2,
+   "to_km": 64.1,
+   "gap_km": 7.9,
+   "from_is": "pump",
+   "to_is": "pump",
+   "near_from": "Gangtok",
+   "near_to": "Gangtok"
+  },
+  {
+   "from_km": 0.8,
+   "to_km": 4.8,
+   "gap_km": 4.0,
+   "from_is": "pump",
+   "to_is": "pump",
+   "near_from": "Gangtok",
+   "near_to": "Gangtok"
+  },
+  {
+   "from_km": 0.0,
+   "to_km": 0.8,
+   "gap_km": 0.8,
+   "from_is": "start of route",
+   "to_is": "pump",
+   "near_from": "Gangtok",
+   "near_to": "Gangtok"
+  }
+ ],
+ "source": {
+  "service": "Overpass API",
+  "data": "OpenStreetMap contributors",
+  "licence": "Open Database Licence",
+  "url": "https://www.openstreetmap.org/copyright"
+ },
+ "note": "Pumps are those drawn on the open map within the search radius of the road. A pump missing from the map is missing here, so each gap is a worst case."
+}

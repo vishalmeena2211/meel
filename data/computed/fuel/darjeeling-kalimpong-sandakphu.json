@@ -1,0 +1,267 @@
+{
+ "slug": "darjeeling-kalimpong-sandakphu",
+ "fetched": "2026-09-28",
+ "search_radius_m": 900,
+ "pumps": [
+  {
+   "osm": "way/1417886025",
+   "name": "HP",
+   "brand": "Hindustan Petroleum",
+   "lat": 26.71902,
+   "lon": 88.42529,
+   "km_from_start": 1.1,
+   "off_road_m": 31,
+   "opening_hours": null,
+   "petrol": null,
+   "diesel": null
+  },
+  {
+   "osm": "way/1346163845",
+   "name": "Bharat Petroleum",
+   "brand": "Bharat Petroleum",
+   "lat": 26.71763,
+   "lon": 88.42089,
+   "km_from_start": 1.9,
+   "off_road_m": 29,
+   "opening_hours": null,
+   "petrol": "yes",
+   "diesel": "yes"
+  },
+  {
+   "osm": "way/1346163857",
+   "name": "Indian Oil",
+   "brand": "Indian Oil",
+   "lat": 26.71792,
+   "lon": 88.42079,
+   "km_from_start": 1.9,
+   "off_road_m": 20,
+   "opening_hours": "Mo-Su 06:30-21:30",
+   "petrol": "yes",
+   "diesel": "yes"
+  },
+  {
+   "osm": "node/4925330432",
+   "name": "Bharat Petroleum",
+   "brand": "Bharat Petroleum",
+   "lat": 26.72413,
+   "lon": 88.41618,
+   "km_from_start": 2.8,
+   "off_road_m": 20,
+   "opening_hours": null,
+   "petrol": null,
+   "diesel": null
+  },
+  {
+   "osm": "way/1416054286",
+   "name": "Indian Oil",
+   "brand": "Indian Oil",
+   "lat": 26.72551,
+   "lon": 88.4152,
+   "km_from_start": 3.0,
+   "off_road_m": 17,
+   "opening_hours": "Mo-Su 06:30-22:00",
+   "petrol": "yes",
+   "diesel": "yes"
+  },
+  {
+   "osm": "way/1447364776",
+   "name": "HP",
+   "brand": "Hindustan Petroleum",
+   "lat": 26.73053,
+   "lon": 88.41233,
+   "km_from_start": 3.6,
+   "off_road_m": 53,
+   "opening_hours": null,
+   "petrol": null,
+   "diesel": null
+  },
+  {
+   "osm": "way/1447364782",
+   "name": null,
+   "brand": null,
+   "lat": 26.7329,
+   "lon": 88.41233,
+   "km_from_start": 3.9,
+   "off_road_m": 199,
+   "opening_hours": null,
+   "petrol": null,
+   "diesel": null
+  },
+  {
+   "osm": "way/1385914841",
+   "name": "Indian Oil",
+   "brand": "Indian Oil",
+   "lat": 26.74731,
+   "lon": 88.39523,
+   "km_from_start": 6.6,
+   "off_road_m": 22,
+   "opening_hours": "Mo-Su 06:00-22:00",
+   "petrol": "yes",
+   "diesel": "yes"
+  },
+  {
+   "osm": "way/1364484275",
+   "name": "Bharat Petroleum",
+   "brand": "Bharat Petroleum",
+   "lat": 26.77026,
+   "lon": 88.3785,
+   "km_from_start": 9.8,
+   "off_road_m": 24,
+   "opening_hours": null,
+   "petrol": "yes",
+   "diesel": "yes"
+  },
+  {
+   "osm": "way/1452327787",
+   "name": "Indian Oil",
+   "brand": "Indian Oil",
+   "lat": 26.79079,
+   "lon": 88.36288,
+   "km_from_start": 12.6,
+   "off_road_m": 275,
+   "opening_hours": "Mo-Su 06:00-22:00",
+   "petrol": "yes",
+   "diesel": "yes"
+  },
+  {
+   "osm": "way/1452327800",
+   "name": "Indian Oil",
+   "brand": "Indian Oil",
+   "lat": 26.87797,
+   "lon": 88.27899,
+   "km_from_start": 37.1,
+   "off_road_m": 6,
+   "opening_hours": "Mo-Su 06:00-22:00",
+   "petrol": null,
+   "diesel": null
+  },
+  {
+   "osm": "way/1452327826",
+   "name": "Indian Oil",
+   "brand": "Indian Oil",
+   "lat": 27.01308,
+   "lon": 88.25176,
+   "km_from_start": 62.9,
+   "off_road_m": 110,
+   "opening_hours": "Mo-Su 06:00-22:00",
+   "petrol": null,
+   "diesel": null
+  },
+  {
+   "osm": "node/11949554957",
+   "name": "Bharat Petroleum",
+   "brand": "Bharat Petroleum",
+   "lat": 27.02421,
+   "lon": 88.25354,
+   "km_from_start": 65.2,
+   "off_road_m": 237,
+   "opening_hours": null,
+   "petrol": null,
+   "diesel": null
+  },
+  {
+   "osm": "way/1452327834",
+   "name": "Indian Oil",
+   "brand": "Indian Oil",
+   "lat": 27.04534,
+   "lon": 88.26548,
+   "km_from_start": 68.7,
+   "off_road_m": 533,
+   "opening_hours": "Mo-Su 07:00-19:00",
+   "petrol": null,
+   "diesel": null
+  },
+  {
+   "osm": "way/1083882229",
+   "name": null,
+   "brand": null,
+   "lat": 27.14938,
+   "lon": 87.74978,
+   "km_from_start": 217.7,
+   "off_road_m": 27,
+   "opening_hours": null,
+   "petrol": null,
+   "diesel": null
+  },
+  {
+   "osm": "node/5330416630",
+   "name": "Ilam Oils Station ( NOC)",
+   "brand": null,
+   "lat": 26.90691,
+   "lon": 87.93356,
+   "km_from_start": 406.8,
+   "off_road_m": 7,
+   "opening_hours": "24/7",
+   "petrol": null,
+   "diesel": null
+  },
+  {
+   "osm": "way/352754283",
+   "name": "Indian Oil",
+   "brand": "Indian Oil",
+   "lat": 27.03927,
+   "lon": 88.26397,
+   "km_from_start": 481.9,
+   "off_road_m": 7,
+   "opening_hours": "Mo-Su 07:00-19:00",
+   "petrol": null,
+   "diesel": null
+  }
+ ],
+ "pump_count": 17,
+ "stops": 11,
+ "longest_gaps": [
+  {
+   "from_km": 217.7,
+   "to_km": 406.8,
+   "gap_km": 189.1,
+   "from_is": "pump",
+   "to_is": "pump",
+   "near_from": "Sandakphu",
+   "near_to": "Darjeeling"
+  },
+  {
+   "from_km": 68.7,
+   "to_km": 217.7,
+   "gap_km": 149.0,
+   "from_is": "pump",
+   "to_is": "pump",
+   "near_from": "Darjeeling",
+   "near_to": "Sandakphu"
+  },
+  {
+   "from_km": 406.8,
+   "to_km": 481.9,
+   "gap_km": 75.1,
+   "from_is": "pump",
+   "to_is": "pump",
+   "near_from": "Darjeeling",
+   "near_to": "Darjeeling"
+  },
+  {
+   "from_km": 481.9,
+   "to_km": 533.4,
+   "gap_km": 51.5,
+   "from_is": "pump",
+   "to_is": "end of route",
+   "near_from": "Darjeeling",
+   "near_to": "Kalimpong"
+  },
+  {
+   "from_km": 37.1,
+   "to_km": 62.9,
+   "gap_km": 25.8,
+   "from_is": "pump",
+   "to_is": "pump",
+   "near_from": "Kurseong",
+   "near_to": "Darjeeling"
+  }
+ ],
+ "source": {
+  "service": "Overpass API",
+  "data": "OpenStreetMap contributors",
+  "licence": "Open Database Licence",
+  "url": "https://www.openstreetmap.org/copyright"
+ },
+ "note": "Pumps are those drawn on the open map within the search radius of the road. A pump missing from the map is missing here, so each gap is a worst case."
+}

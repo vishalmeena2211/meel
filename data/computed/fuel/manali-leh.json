@@ -1,0 +1,195 @@
+{
+ "slug": "manali-leh",
+ "fetched": "2026-09-28",
+ "search_radius_m": 900,
+ "pumps": [
+  {
+   "osm": "node/856402274",
+   "name": null,
+   "brand": null,
+   "lat": 32.23956,
+   "lon": 77.18829,
+   "km_from_start": 0.0,
+   "off_road_m": 644,
+   "opening_hours": null,
+   "petrol": null,
+   "diesel": null
+  },
+  {
+   "osm": "node/795826239",
+   "name": "Indian oil",
+   "brand": "Indian Oil",
+   "lat": 32.25837,
+   "lon": 77.188,
+   "km_from_start": 1.8,
+   "off_road_m": 12,
+   "opening_hours": null,
+   "petrol": null,
+   "diesel": null
+  },
+  {
+   "osm": "node/4135407790",
+   "name": "HP",
+   "brand": "Hindustan Petroleum",
+   "lat": 32.27137,
+   "lon": 77.18106,
+   "km_from_start": 3.4,
+   "off_road_m": 15,
+   "opening_hours": null,
+   "petrol": null,
+   "diesel": "yes"
+  },
+  {
+   "osm": "node/299659791",
+   "name": "Indian Oil",
+   "brand": "Indian Oil",
+   "lat": 32.54545,
+   "lon": 76.97422,
+   "km_from_start": 61.1,
+   "off_road_m": 12,
+   "opening_hours": null,
+   "petrol": null,
+   "diesel": null
+  },
+  {
+   "osm": "node/9888976528",
+   "name": null,
+   "brand": null,
+   "lat": 32.57376,
+   "lon": 77.01834,
+   "km_from_start": 72.5,
+   "off_road_m": 7,
+   "opening_hours": null,
+   "petrol": null,
+   "diesel": null
+  },
+  {
+   "osm": "way/233526495",
+   "name": "Karu Fuel Station.",
+   "brand": "Indian Oil",
+   "lat": 33.94603,
+   "lon": 77.72718,
+   "km_from_start": 401.8,
+   "off_road_m": 41,
+   "opening_hours": null,
+   "petrol": null,
+   "diesel": null
+  },
+  {
+   "osm": "node/299707818",
+   "name": "Indian Oil",
+   "brand": "Indian Oil",
+   "lat": 34.11706,
+   "lon": 77.58883,
+   "km_from_start": 427.7,
+   "off_road_m": 35,
+   "opening_hours": null,
+   "petrol": null,
+   "diesel": null
+  },
+  {
+   "osm": "node/3702776638",
+   "name": "HP",
+   "brand": null,
+   "lat": 34.14181,
+   "lon": 77.5853,
+   "km_from_start": 430.5,
+   "off_road_m": 45,
+   "opening_hours": null,
+   "petrol": null,
+   "diesel": null
+  },
+  {
+   "osm": "node/299707352",
+   "name": "Indian Oil",
+   "brand": "Indian Oil",
+   "lat": 34.15228,
+   "lon": 77.57703,
+   "km_from_start": 432.1,
+   "off_road_m": 25,
+   "opening_hours": null,
+   "petrol": null,
+   "diesel": null
+  },
+  {
+   "osm": "node/5537610024",
+   "name": "KH Garden, 한식당",
+   "brand": null,
+   "lat": 34.16767,
+   "lon": 77.58042,
+   "km_from_start": 434.1,
+   "off_road_m": 591,
+   "opening_hours": null,
+   "petrol": null,
+   "diesel": null
+  },
+  {
+   "osm": "way/1212069710",
+   "name": "HP Chubi Filling Station",
+   "brand": null,
+   "lat": 34.16939,
+   "lon": 77.58933,
+   "km_from_start": 434.1,
+   "off_road_m": 757,
+   "opening_hours": null,
+   "petrol": null,
+   "diesel": null
+  }
+ ],
+ "pump_count": 11,
+ "stops": 6,
+ "longest_gaps": [
+  {
+   "from_km": 72.5,
+   "to_km": 401.8,
+   "gap_km": 329.3,
+   "from_is": "pump",
+   "to_is": "pump",
+   "near_from": "Keylong",
+   "near_to": "Karu"
+  },
+  {
+   "from_km": 3.4,
+   "to_km": 61.1,
+   "gap_km": 57.7,
+   "from_is": "pump",
+   "to_is": "pump",
+   "near_from": "Manali",
+   "near_to": "Tandi"
+  },
+  {
+   "from_km": 401.8,
+   "to_km": 427.7,
+   "gap_km": 25.9,
+   "from_is": "pump",
+   "to_is": "pump",
+   "near_from": "Karu",
+   "near_to": "Leh"
+  },
+  {
+   "from_km": 61.1,
+   "to_km": 72.5,
+   "gap_km": 11.4,
+   "from_is": "pump",
+   "to_is": "pump",
+   "near_from": "Tandi",
+   "near_to": "Keylong"
+  },
+  {
+   "from_km": 427.7,
+   "to_km": 430.5,
+   "gap_km": 2.8,
+   "from_is": "pump",
+   "to_is": "pump",
+   "near_from": "Leh",
+   "near_to": "Leh"
+  }
+ ],
+ "source": {
+  "service": "Overpass API",
+  "data": "OpenStreetMap contributors",
+  "licence": "Open Database Licence",
+  "url": "https://www.openstreetmap.org/copyright"
+ },
+ "note": "Pumps are those drawn on the open map within the search radius of the road. A pump missing from the map is missing here, so each gap is a worst case."
+}

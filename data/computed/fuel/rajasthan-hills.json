@@ -1,0 +1,231 @@
+{
+ "slug": "rajasthan-hills",
+ "fetched": "2026-09-28",
+ "search_radius_m": 900,
+ "pumps": [
+  {
+   "osm": "node/2595261673",
+   "name": "Bharat Petroleum",
+   "brand": null,
+   "lat": 24.59069,
+   "lon": 73.68971,
+   "km_from_start": 1.6,
+   "off_road_m": 12,
+   "opening_hours": null,
+   "petrol": null,
+   "diesel": null
+  },
+  {
+   "osm": "node/7017910395",
+   "name": "Indian Oil",
+   "brand": "Indian Oil",
+   "lat": 24.59062,
+   "lon": 73.69204,
+   "km_from_start": 1.7,
+   "off_road_m": 219,
+   "opening_hours": null,
+   "petrol": null,
+   "diesel": null
+  },
+  {
+   "osm": "node/10880997845",
+   "name": "HP Petrol Pump",
+   "brand": "Hindustan Petroleum",
+   "lat": 24.5904,
+   "lon": 73.69467,
+   "km_from_start": 1.7,
+   "off_road_m": 483,
+   "opening_hours": null,
+   "petrol": null,
+   "diesel": null
+  },
+  {
+   "osm": "node/2591733397",
+   "name": "Indian Oil",
+   "brand": "Indian Oil",
+   "lat": 24.59749,
+   "lon": 73.69324,
+   "km_from_start": 2.4,
+   "off_road_m": 147,
+   "opening_hours": null,
+   "petrol": null,
+   "diesel": null
+  },
+  {
+   "osm": "node/3776199889",
+   "name": "Nayara",
+   "brand": "Nayara",
+   "lat": 24.60646,
+   "lon": 73.69005,
+   "km_from_start": 3.5,
+   "off_road_m": 14,
+   "opening_hours": null,
+   "petrol": null,
+   "diesel": null
+  },
+  {
+   "osm": "node/7244856025",
+   "name": null,
+   "brand": null,
+   "lat": 24.60726,
+   "lon": 73.69859,
+   "km_from_start": 4.7,
+   "off_road_m": 1,
+   "opening_hours": null,
+   "petrol": null,
+   "diesel": null
+  },
+  {
+   "osm": "node/7244850849",
+   "name": null,
+   "brand": null,
+   "lat": 24.63901,
+   "lon": 73.71587,
+   "km_from_start": 8.8,
+   "off_road_m": 20,
+   "opening_hours": null,
+   "petrol": null,
+   "diesel": null
+  },
+  {
+   "osm": "node/2595261645",
+   "name": "Essar",
+   "brand": null,
+   "lat": 24.95285,
+   "lon": 73.41594,
+   "km_from_start": 128.9,
+   "off_road_m": 160,
+   "opening_hours": null,
+   "petrol": null,
+   "diesel": null
+  },
+  {
+   "osm": "node/12398117860",
+   "name": null,
+   "brand": "Nayara",
+   "lat": 24.91974,
+   "lon": 73.40591,
+   "km_from_start": 133.5,
+   "off_road_m": 56,
+   "opening_hours": null,
+   "petrol": null,
+   "diesel": null
+  },
+  {
+   "osm": "node/8813282757",
+   "name": "Petrol Pump",
+   "brand": null,
+   "lat": 24.65858,
+   "lon": 72.92885,
+   "km_from_start": 227.7,
+   "off_road_m": 285,
+   "opening_hours": null,
+   "petrol": null,
+   "diesel": null
+  },
+  {
+   "osm": "way/955364044",
+   "name": null,
+   "brand": null,
+   "lat": 24.65863,
+   "lon": 72.92887,
+   "km_from_start": 227.7,
+   "off_road_m": 285,
+   "opening_hours": null,
+   "petrol": null,
+   "diesel": null
+  },
+  {
+   "osm": "node/6053701991",
+   "name": "Hindustan Petroleum",
+   "brand": null,
+   "lat": 24.59888,
+   "lon": 72.88532,
+   "km_from_start": 236.0,
+   "off_road_m": 60,
+   "opening_hours": null,
+   "petrol": null,
+   "diesel": null
+  },
+  {
+   "osm": "node/6084626487",
+   "name": "Bharat Petroleum",
+   "brand": null,
+   "lat": 24.56734,
+   "lon": 72.85967,
+   "km_from_start": 240.3,
+   "off_road_m": 50,
+   "opening_hours": null,
+   "petrol": null,
+   "diesel": null
+  },
+  {
+   "osm": "node/5498162088",
+   "name": null,
+   "brand": null,
+   "lat": 24.10037,
+   "lon": 71.93742,
+   "km_from_start": 371.3,
+   "off_road_m": 36,
+   "opening_hours": null,
+   "petrol": null,
+   "diesel": null
+  }
+ ],
+ "pump_count": 14,
+ "stops": 8,
+ "longest_gaps": [
+  {
+   "from_km": 371.3,
+   "to_km": 566.7,
+   "gap_km": 195.4,
+   "from_is": "pump",
+   "to_is": "end of route",
+   "near_from": "Ranakpur",
+   "near_to": "Mount Abu"
+  },
+  {
+   "from_km": 240.3,
+   "to_km": 371.3,
+   "gap_km": 131.0,
+   "from_is": "pump",
+   "to_is": "pump",
+   "near_from": "Kumbhalgarh",
+   "near_to": "Ranakpur"
+  },
+  {
+   "from_km": 8.8,
+   "to_km": 128.9,
+   "gap_km": 120.1,
+   "from_is": "pump",
+   "to_is": "pump",
+   "near_from": "Udaipur",
+   "near_to": "Kumbhalgarh"
+  },
+  {
+   "from_km": 133.5,
+   "to_km": 227.7,
+   "gap_km": 94.2,
+   "from_is": "pump",
+   "to_is": "pump",
+   "near_from": "Kumbhalgarh",
+   "near_to": "Kumbhalgarh"
+  },
+  {
+   "from_km": 227.7,
+   "to_km": 236.0,
+   "gap_km": 8.3,
+   "from_is": "pump",
+   "to_is": "pump",
+   "near_from": "Kumbhalgarh",
+   "near_to": "Kumbhalgarh"
+  }
+ ],
+ "source": {
+  "service": "Overpass API",
+  "data": "OpenStreetMap contributors",
+  "licence": "Open Database Licence",
+  "url": "https://www.openstreetmap.org/copyright"
+ },
+ "note": "Pumps are those drawn on the open map within the search radius of the road. A pump missing from the map is missing here, so each gap is a worst case."
+}

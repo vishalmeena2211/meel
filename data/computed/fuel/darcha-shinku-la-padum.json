@@ -1,0 +1,26 @@
+{
+ "slug": "darcha-shinku-la-padum",
+ "fetched": "2026-09-28",
+ "search_radius_m": 900,
+ "pumps": [],
+ "pump_count": 0,
+ "stops": 0,
+ "longest_gaps": [
+  {
+   "from_km": 0.0,
+   "to_km": 144.6,
+   "gap_km": 144.6,
+   "from_is": "start of route",
+   "to_is": "end of route",
+   "near_from": "Darcha",
+   "near_to": "Padum"
+  }
+ ],
+ "source": {
+  "service": "Overpass API",
+  "data": "OpenStreetMap contributors",
+  "licence": "Open Database Licence",
+  "url": "https://www.openstreetmap.org/copyright"
+ },
+ "note": "Pumps are those drawn on the open map within the search radius of the road. A pump missing from the map is missing here, so each gap is a worst case."
+}

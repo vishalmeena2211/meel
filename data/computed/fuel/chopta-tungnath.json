@@ -1,0 +1,279 @@
+{
+ "slug": "chopta-tungnath",
+ "fetched": "2026-09-28",
+ "search_radius_m": 900,
+ "pumps": [
+  {
+   "osm": "node/3810076825",
+   "name": "Indian Oil",
+   "brand": "Indian Oil",
+   "lat": 30.10236,
+   "lon": 78.29267,
+   "km_from_start": 0.0,
+   "off_road_m": 716,
+   "opening_hours": null,
+   "petrol": null,
+   "diesel": null
+  },
+  {
+   "osm": "node/3869767161",
+   "name": "Indian Oil",
+   "brand": "Indian Oil",
+   "lat": 30.10236,
+   "lon": 78.29266,
+   "km_from_start": 0.0,
+   "off_road_m": 716,
+   "opening_hours": null,
+   "petrol": null,
+   "diesel": null
+  },
+  {
+   "osm": "node/3810078049",
+   "name": "Bharat Petroleum",
+   "brand": "Bharat Petroleum",
+   "lat": 30.10746,
+   "lon": 78.29981,
+   "km_from_start": 1.2,
+   "off_road_m": 2,
+   "opening_hours": null,
+   "petrol": null,
+   "diesel": null
+  },
+  {
+   "osm": "node/3824372942",
+   "name": "Indian Oil",
+   "brand": "Indian Oil",
+   "lat": 30.10768,
+   "lon": 78.30028,
+   "km_from_start": 1.2,
+   "off_road_m": 1,
+   "opening_hours": null,
+   "petrol": null,
+   "diesel": null
+  },
+  {
+   "osm": "way/630557579",
+   "name": "Indian Oil",
+   "brand": "Indian Oil",
+   "lat": 30.11199,
+   "lon": 78.30274,
+   "km_from_start": 1.8,
+   "off_road_m": 19,
+   "opening_hours": null,
+   "petrol": null,
+   "diesel": null
+  },
+  {
+   "osm": "way/630557584",
+   "name": "HP",
+   "brand": "Hindustan Petroleum",
+   "lat": 30.11152,
+   "lon": 78.30267,
+   "km_from_start": 1.8,
+   "off_road_m": 22,
+   "opening_hours": null,
+   "petrol": null,
+   "diesel": null
+  },
+  {
+   "osm": "node/12030751387",
+   "name": "HP",
+   "brand": "Hindustan Petroleum",
+   "lat": 30.11243,
+   "lon": 78.30268,
+   "km_from_start": 1.9,
+   "off_road_m": 27,
+   "opening_hours": null,
+   "petrol": null,
+   "diesel": null
+  },
+  {
+   "osm": "way/630557577",
+   "name": "HP",
+   "brand": "Hindustan Petroleum",
+   "lat": 30.11245,
+   "lon": 78.30273,
+   "km_from_start": 1.9,
+   "off_road_m": 23,
+   "opening_hours": null,
+   "petrol": null,
+   "diesel": null
+  },
+  {
+   "osm": "node/3810077667",
+   "name": "Indian Oil",
+   "brand": "Indian Oil",
+   "lat": 30.12599,
+   "lon": 78.31625,
+   "km_from_start": 4.1,
+   "off_road_m": 13,
+   "opening_hours": null,
+   "petrol": null,
+   "diesel": null
+  },
+  {
+   "osm": "node/3869765723",
+   "name": "Indian Oil",
+   "brand": "Indian Oil",
+   "lat": 30.13228,
+   "lon": 78.38558,
+   "km_from_start": 15.1,
+   "off_road_m": 14,
+   "opening_hours": null,
+   "petrol": null,
+   "diesel": null
+  },
+  {
+   "osm": "node/12049302324",
+   "name": null,
+   "brand": null,
+   "lat": 30.08444,
+   "lon": 78.57507,
+   "km_from_start": 54.8,
+   "off_road_m": 47,
+   "opening_hours": null,
+   "petrol": null,
+   "diesel": null
+  },
+  {
+   "osm": "node/9364668467",
+   "name": "Ioc",
+   "brand": null,
+   "lat": 30.1252,
+   "lon": 78.59048,
+   "km_from_start": 64.6,
+   "off_road_m": 20,
+   "opening_hours": null,
+   "petrol": null,
+   "diesel": null
+  },
+  {
+   "osm": "node/9364650012",
+   "name": "hp",
+   "brand": null,
+   "lat": 30.22591,
+   "lon": 78.67838,
+   "km_from_start": 87.7,
+   "off_road_m": 27,
+   "opening_hours": null,
+   "petrol": null,
+   "diesel": null
+  },
+  {
+   "osm": "node/12049281398",
+   "name": null,
+   "brand": null,
+   "lat": 30.23078,
+   "lon": 78.72509,
+   "km_from_start": 95.3,
+   "off_road_m": 30,
+   "opening_hours": null,
+   "petrol": null,
+   "diesel": null
+  },
+  {
+   "osm": "node/9364665065",
+   "name": "ioc",
+   "brand": null,
+   "lat": 30.23037,
+   "lon": 78.72553,
+   "km_from_start": 95.4,
+   "off_road_m": 37,
+   "opening_hours": null,
+   "petrol": null,
+   "diesel": null
+  },
+  {
+   "osm": "node/6574740114",
+   "name": "Bharat Petroleum",
+   "brand": null,
+   "lat": 30.22767,
+   "lon": 78.82243,
+   "km_from_start": 107.3,
+   "off_road_m": 2,
+   "opening_hours": null,
+   "petrol": null,
+   "diesel": null
+  },
+  {
+   "osm": "node/12049318496",
+   "name": null,
+   "brand": "Indian Oil",
+   "lat": 30.2676,
+   "lon": 78.94802,
+   "km_from_start": 131.7,
+   "off_road_m": 7,
+   "opening_hours": null,
+   "petrol": null,
+   "diesel": null
+  },
+  {
+   "osm": "node/12595986328",
+   "name": "INDIAN OIL FUEL STATION",
+   "brand": null,
+   "lat": 30.40848,
+   "lon": 79.31947,
+   "km_from_start": 358.8,
+   "off_road_m": 11,
+   "opening_hours": null,
+   "petrol": null,
+   "diesel": null
+  }
+ ],
+ "pump_count": 18,
+ "stops": 10,
+ "longest_gaps": [
+  {
+   "from_km": 131.7,
+   "to_km": 358.8,
+   "gap_km": 227.1,
+   "from_is": "pump",
+   "to_is": "pump",
+   "near_from": "Rudraprayag",
+   "near_to": "Gopeshwar"
+  },
+  {
+   "from_km": 15.1,
+   "to_km": 54.8,
+   "gap_km": 39.7,
+   "from_is": "pump",
+   "to_is": "pump",
+   "near_from": "Rishikesh",
+   "near_to": "Devprayag"
+  },
+  {
+   "from_km": 107.3,
+   "to_km": 131.7,
+   "gap_km": 24.4,
+   "from_is": "pump",
+   "to_is": "pump",
+   "near_from": "Devprayag",
+   "near_to": "Rudraprayag"
+  },
+  {
+   "from_km": 64.6,
+   "to_km": 87.7,
+   "gap_km": 23.1,
+   "from_is": "pump",
+   "to_is": "pump",
+   "near_from": "Devprayag",
+   "near_to": "Devprayag"
+  },
+  {
+   "from_km": 95.4,
+   "to_km": 107.3,
+   "gap_km": 11.9,
+   "from_is": "pump",
+   "to_is": "pump",
+   "near_from": "Devprayag",
+   "near_to": "Devprayag"
+  }
+ ],
+ "source": {
+  "service": "Overpass API",
+  "data": "OpenStreetMap contributors",
+  "licence": "Open Database Licence",
+  "url": "https://www.openstreetmap.org/copyright"
+ },
+ "note": "Pumps are those drawn on the open map within the search radius of the road. A pump missing from the map is missing here, so each gap is a worst case."
+}

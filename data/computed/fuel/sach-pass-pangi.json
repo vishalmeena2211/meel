@@ -1,0 +1,81 @@
+{
+ "slug": "sach-pass-pangi",
+ "fetched": "2026-09-28",
+ "search_radius_m": 900,
+ "pumps": [
+  {
+   "osm": "node/716314061",
+   "name": "Hindustan Petroleum Corporation Limited",
+   "brand": "Thakur Fuel Station",
+   "lat": 32.46369,
+   "lon": 76.47798,
+   "km_from_start": 24.0,
+   "off_road_m": 40,
+   "opening_hours": null,
+   "petrol": null,
+   "diesel": null
+  },
+  {
+   "osm": "node/10224645808",
+   "name": null,
+   "brand": null,
+   "lat": 32.54928,
+   "lon": 76.13324,
+   "km_from_start": 75.2,
+   "off_road_m": 12,
+   "opening_hours": null,
+   "petrol": null,
+   "diesel": null
+  },
+  {
+   "osm": "node/716376700",
+   "name": "Indian Oil Corporation Limited",
+   "brand": "Indian Oil",
+   "lat": 32.55775,
+   "lon": 76.11819,
+   "km_from_start": 76.9,
+   "off_road_m": 382,
+   "opening_hours": null,
+   "petrol": null,
+   "diesel": null
+  }
+ ],
+ "pump_count": 3,
+ "stops": 2,
+ "longest_gaps": [
+  {
+   "from_km": 76.9,
+   "to_km": 356.4,
+   "gap_km": 279.5,
+   "from_is": "pump",
+   "to_is": "end of route",
+   "near_from": "Tissa",
+   "near_to": "Kishtwar"
+  },
+  {
+   "from_km": 24.0,
+   "to_km": 75.2,
+   "gap_km": 51.2,
+   "from_is": "pump",
+   "to_is": "pump",
+   "near_from": "Chamba",
+   "near_to": "Tissa"
+  },
+  {
+   "from_km": 0.0,
+   "to_km": 24.0,
+   "gap_km": 24.0,
+   "from_is": "start of route",
+   "to_is": "pump",
+   "near_from": "Chamba",
+   "near_to": "Chamba"
+  }
+ ],
+ "source": {
+  "service": "Overpass API",
+  "data": "OpenStreetMap contributors",
+  "licence": "Open Database Licence",
+  "url": "https://www.openstreetmap.org/copyright"
+ },
+ "note": "Pumps are those drawn on the open map within the search radius of the road. A pump missing from the map is missing here, so each gap is a worst case."
+}

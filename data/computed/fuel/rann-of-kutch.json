@@ -1,0 +1,60 @@
+{
+ "slug": "rann-of-kutch",
+ "fetched": "2026-09-28",
+ "search_radius_m": 900,
+ "pumps": [
+  {
+   "osm": "node/1545193233",
+   "name": "BP",
+   "brand": "BP",
+   "lat": 23.24923,
+   "lon": 69.67265,
+   "km_from_start": 0.7,
+   "off_road_m": 35,
+   "opening_hours": null,
+   "petrol": "yes",
+   "diesel": "yes"
+  },
+  {
+   "osm": "node/3299344424",
+   "name": null,
+   "brand": "Bharat Petroleum",
+   "lat": 23.25448,
+   "lon": 69.6772,
+   "km_from_start": 1.5,
+   "off_road_m": 7,
+   "opening_hours": null,
+   "petrol": null,
+   "diesel": null
+  }
+ ],
+ "pump_count": 2,
+ "stops": 1,
+ "longest_gaps": [
+  {
+   "from_km": 1.5,
+   "to_km": 180.0,
+   "gap_km": 178.5,
+   "from_is": "pump",
+   "to_is": "end of route",
+   "near_from": "Bhuj",
+   "near_to": "Dholavira"
+  },
+  {
+   "from_km": 0.0,
+   "to_km": 0.7,
+   "gap_km": 0.7,
+   "from_is": "start of route",
+   "to_is": "pump",
+   "near_from": "Bhuj",
+   "near_to": "Bhuj"
+  }
+ ],
+ "source": {
+  "service": "Overpass API",
+  "data": "OpenStreetMap contributors",
+  "licence": "Open Database Licence",
+  "url": "https://www.openstreetmap.org/copyright"
+ },
+ "note": "Pumps are those drawn on the open map within the search radius of the road. A pump missing from the map is missing here, so each gap is a worst case."
+}
