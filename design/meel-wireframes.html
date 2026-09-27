@@ -1,0 +1,1870 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+</head>
+<body>
+<!--
+  Meel wireframes, 28 September 2026. Meel (मील) is Hindi for mile; the site lives at rideplanner.in.
+  Method: one frame per state, notes are the spec,
+  one example world). 
+  The look below is a first proposal for this product, taken from Indian road furniture:
+  kilometre stones (white body, yellow cap, black letters) and green highway signboards.
+  The product is drawn light-only on purpose: it is read outdoors, on a phone, in sunlight.
+-->
+<title>Meel Wireframes</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Hind:wght@400;500;600&display=swap">
+<style>
+:root {
+  color-scheme: light;
+  /* Proposed product palette */
+  --ink: #16201C;            /* tarmac: text */
+  --ink-2: #55615B;          /* secondary text */
+  --rule: #8A948F;           /* rules and decoration only */
+  --border: #D9DEDA;
+  --surface: #FFFFFF;
+  --surface-2: #F4F6F4;
+  --sign: #0F5F4B;           /* highway signboard green: primary actions and links */
+  --stone: #F2B807;          /* kilometre-stone yellow: fills only, never text */
+  --danger: #B42318;
+  /* Fact age: semantic, separate from the brand colours */
+  --fresh-bg: #E7F6EC;   --fresh-fg: #17663A;
+  --ageing-bg: #FFF4DB;  --ageing-fg: #8A4B06;
+  --stale-bg: #FDECEA;   --stale-fg: #A1241A;
+  --unchecked-bg: #EEF1F4; --unchecked-fg: #3F4A57;
+  --conflict-bg: #F1ECFB; --conflict-fg: #4E2F8F;
+  /* The chat app drawn in some frames (not our product) */
+  --chat-ground: #E9E3D8; --chat-out: #DDF3CB; --chat-in: #FFFFFF; --chat-bar: #1F3B33;
+  /* Derived */
+  --sign-soft: color-mix(in srgb, var(--sign) 9%, var(--surface));
+  --sign-line: color-mix(in srgb, var(--sign) 35%, var(--surface));
+  --stone-soft: color-mix(in srgb, var(--stone) 18%, var(--surface));
+  --overlay: color-mix(in srgb, var(--ink) 45%, transparent);
+  --ground: #E8ECE9;
+  --frame-shadow: 0 1px 2px color-mix(in srgb, var(--ink) 10%, transparent), 0 14px 34px color-mix(in srgb, var(--ink) 14%, transparent);
+  --curve: cubic-bezier(0.16, 1, 0.3, 1);
+  --display: "Barlow Condensed", "Arial Narrow", "Helvetica Neue", sans-serif;
+  --body: Hind, "Noto Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--ground); color: var(--ink); font: 14px/1.45 var(--body); -webkit-font-smoothing: antialiased; }
+button { font: inherit; color: inherit; }
+:focus-visible { outline: 2px solid var(--sign); outline-offset: 2px; }
+
+/* ── Gallery chrome ───────────────────────────────────────────── */
+.doc { display: grid; grid-template-columns: 272px minmax(0, 1fr); min-height: 100vh; }
+.index { position: sticky; top: 0; height: 100vh; overflow-y: auto; padding: 22px 16px; background: var(--surface); border-right: 1px solid var(--border); display: flex; flex-direction: column; gap: 18px; }
+.index h1 { font: 700 24px/1.05 var(--display); letter-spacing: 0.01em; margin: 0; text-wrap: balance; text-transform: uppercase; }
+.index .lede { font-size: 12.5px; line-height: 18px; color: var(--ink-2); margin: 6px 0 0; }
+.group-label { font: 600 12px/1 var(--display); letter-spacing: 0.1em; text-transform: uppercase; color: var(--ink-2); margin: 0 0 6px 8px; }
+.index ol { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 2px; }
+.index button { width: 100%; text-align: left; border: 0; background: transparent; padding: 7px 8px; border-radius: 4px; font-size: 13px; line-height: 18px; cursor: pointer; display: flex; gap: 8px; align-items: baseline; }
+.index button:hover { background: var(--surface-2); }
+.index button[aria-current="true"] { background: var(--sign-soft); color: var(--sign); font-weight: 600; }
+.index .code { font-variant-numeric: tabular-nums; color: var(--ink-2); min-width: 20px; font-size: 12px; }
+.index .foot { margin-top: auto; font-size: 11.5px; line-height: 17px; color: var(--ink-2); border-top: 1px solid var(--border); padding-top: 12px; }
+.stage { padding: 24px 28px 48px; display: flex; flex-direction: column; gap: 16px; min-width: 0; }
+.stage-head { display: flex; justify-content: space-between; align-items: flex-end; gap: 16px; flex-wrap: wrap; }
+.eyebrow { font: 600 13px/1 var(--display); letter-spacing: 0.1em; text-transform: uppercase; color: var(--sign); }
+.stage-head h2 { margin: 4px 0 0; font: 700 30px/1.05 var(--display); text-wrap: balance; }
+.stage-head p { margin: 6px 0 0; color: var(--ink-2); max-width: 70ch; font-size: 13.5px; }
+.stage-nav { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
+.stage-nav button { height: 34px; padding: 0 12px; border-radius: 6px; border: 1px solid var(--border); background: var(--surface); font-size: 13px; font-weight: 500; cursor: pointer; }
+.stage-nav button:hover { border-color: var(--sign); }
+.sample-flag { font-size: 11.5px; color: var(--ink-2); background: var(--surface); border: 1px dashed var(--rule); border-radius: 4px; padding: 3px 8px; }
+.frame-fit { width: 100%; overflow: hidden; }
+.frame { width: max-content; transform-origin: top left; display: flex; gap: 32px; align-items: flex-start; padding: 6px 0 10px; }
+.frame.stacked { flex-direction: column; gap: 28px; }
+.frame.plain { width: 100%; display: block; padding: 0; }
+.pw { margin: 0; display: flex; flex-direction: column; gap: 10px; align-items: center; }
+.pw figcaption { font: 600 14px/1.2 var(--display); letter-spacing: 0.06em; text-transform: uppercase; color: var(--ink-2); text-align: center; max-width: 360px; }
+.notes { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 14px; }
+.note { background: var(--surface); border: 1px solid var(--border); border-radius: 6px; padding: 14px 16px; }
+.note h3 { margin: 0 0 6px; font: 600 13px/1 var(--display); letter-spacing: 0.1em; text-transform: uppercase; color: var(--ink-2); }
+.note.q h3 { color: var(--conflict-fg); }
+.note ul { margin: 0; padding-left: 18px; display: flex; flex-direction: column; gap: 5px; font-size: 13.5px; line-height: 20px; max-width: 65ch; }
+
+/* ── Phone shell ──────────────────────────────────────────────── */
+.phone { width: 390px; height: 820px; border-radius: 40px; border: 10px solid var(--ink); background: var(--surface); overflow: hidden; display: flex; flex-direction: column; font-size: 13.5px; box-shadow: var(--frame-shadow); position: relative; flex: none; }
+.status-bar { height: 34px; display: flex; justify-content: space-between; align-items: center; padding: 0 22px; font-size: 12px; font-weight: 600; flex: none; }
+.status-bar span:last-child { letter-spacing: 1px; }
+.ptop { min-height: 54px; border-bottom: 1px solid var(--border); display: flex; align-items: center; gap: 10px; padding: 0 12px; flex: none; }
+.ptop .ttl { flex: 1; min-width: 0; }
+.ptop .ttl b { font: 700 19px/1.1 var(--display); letter-spacing: 0.01em; display: block; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.ptop .ttl span { font-size: 11.5px; color: var(--ink-2); }
+.iconbtn { width: 38px; height: 38px; border-radius: 8px; border: 1px solid var(--border); display: grid; place-items: center; flex: none; }
+.iconbtn svg { width: 18px; height: 18px; stroke: var(--ink); }
+.mark { width: 34px; height: 38px; border-radius: 16px 16px 4px 4px; border: 2px solid var(--ink); overflow: hidden; display: flex; flex-direction: column; flex: none; background: var(--surface); }
+.mark i { height: 12px; background: var(--stone); border-bottom: 2px solid var(--ink); }
+.mark b { flex: 1; display: grid; place-items: center; font: 700 12px/1 var(--display); }
+.pbody { flex: 1; overflow: hidden; display: flex; flex-direction: column; min-height: 0; }
+.pscroll { padding: 12px; display: flex; flex-direction: column; gap: 12px; }
+.pfoot { border-top: 1px solid var(--border); padding: 10px 12px 22px; display: flex; flex-direction: column; gap: 8px; background: var(--surface); flex: none; }
+.pfoot .btns { display: grid; grid-template-columns: 1fr 1.3fr; gap: 8px; }
+.pfoot .btn { height: 46px; font-size: 14.5px; }
+
+/* ── Pieces ───────────────────────────────────────────────────── */
+.badge { display: inline-flex; align-items: center; border-radius: 4px; padding: 2px 7px; font: 600 11.5px/15px var(--display); letter-spacing: 0.08em; text-transform: uppercase; white-space: nowrap; flex: none; }
+.b-fresh { background: var(--fresh-bg); color: var(--fresh-fg); }
+.b-ageing { background: var(--ageing-bg); color: var(--ageing-fg); }
+.b-stale { background: var(--stale-bg); color: var(--stale-fg); }
+.b-unchecked { background: var(--unchecked-bg); color: var(--unchecked-fg); outline: 1px dashed var(--rule); outline-offset: -1px; }
+.b-conflict { background: var(--conflict-bg); color: var(--conflict-fg); }
+.b-plain { background: var(--surface-2); color: var(--ink-2); }
+.b-full { background: var(--sign); color: var(--surface); }
+.b-stone { background: var(--stone); color: var(--ink); }
+.btn { height: 38px; padding: 0 12px; border-radius: 8px; border: 1px solid transparent; font-size: 13.5px; font-weight: 600; display: inline-flex; align-items: center; justify-content: center; gap: 6px; white-space: nowrap; }
+.btn svg { width: 15px; height: 15px; stroke: currentColor; flex: none; }
+.btn-primary { background: var(--sign); color: var(--surface); }
+.btn-outline { background: var(--surface); color: var(--ink); border-color: var(--border); }
+.btn-soft { background: var(--sign-soft); color: var(--sign); border-color: var(--sign-line); }
+.btn-disabled { background: var(--surface-2); color: var(--rule); border-color: var(--border); }
+.btn-block { width: 100%; }
+.link { color: var(--sign); font-weight: 600; text-decoration: underline; text-underline-offset: 2px; }
+.input { height: 44px; border: 1px solid var(--border); border-radius: 8px; padding: 0 12px; display: flex; align-items: center; gap: 8px; color: var(--ink-2); background: var(--surface); }
+.input svg { width: 16px; height: 16px; stroke: var(--ink-2); flex: none; }
+.input.filled { color: var(--ink); }
+.input.focus { border-color: var(--sign); box-shadow: 0 0 0 3px var(--sign-soft); }
+.field { display: flex; flex-direction: column; gap: 5px; }
+.field > label { font-size: 12.5px; font-weight: 600; }
+.field > label em { font-style: normal; font-weight: 400; color: var(--ink-2); }
+.hint { font-size: 12px; line-height: 17px; color: var(--ink-2); }
+.lbl { font: 600 12.5px/1 var(--display); letter-spacing: 0.1em; text-transform: uppercase; color: var(--ink-2); }
+.hscroll { display: flex; gap: 6px; overflow: hidden; flex: none; }
+.chip { height: 40px; padding: 0 14px; border-radius: 20px; border: 1px solid var(--border); display: inline-flex; align-items: center; gap: 6px; font-size: 13px; background: var(--surface); flex: none; white-space: nowrap; }
+.chip.on { border-color: var(--sign); background: var(--sign-soft); color: var(--sign); font-weight: 600; }
+.chip svg { width: 14px; height: 14px; stroke: currentColor; }
+.callout { border-radius: 8px; padding: 10px 12px; font-size: 13px; line-height: 19px; border: 1px solid var(--border); background: var(--surface-2); }
+.callout b { display: block; margin-bottom: 1px; }
+.callout.info { background: var(--sign-soft); border-color: var(--sign-line); }
+.callout.warn { background: var(--ageing-bg); border-color: color-mix(in srgb, var(--ageing-fg) 30%, var(--surface)); }
+.callout.stone { background: var(--stone-soft); border-color: color-mix(in srgb, var(--stone) 60%, var(--surface)); }
+.sec-h { display: flex; justify-content: space-between; align-items: baseline; gap: 8px; }
+.sec-h h3 { margin: 0; font: 700 21px/1.1 var(--display); letter-spacing: 0.01em; }
+
+/* Route header: the kilometre stone */
+.khead { display: grid; grid-template-columns: 66px 1fr; gap: 12px; align-items: center; }
+.kstone { width: 66px; height: 82px; border-radius: 32px 32px 6px 6px; border: 2px solid var(--ink); overflow: hidden; display: flex; flex-direction: column; background: var(--surface); }
+.kstone .cap { height: 27px; background: var(--stone); border-bottom: 2px solid var(--ink); display: grid; place-items: end center; padding-bottom: 3px; font: 700 13px/1 var(--display); letter-spacing: 0.06em; }
+.kstone .km { flex: 1; display: grid; place-content: center; text-align: center; font: 700 22px/0.95 var(--display); font-variant-numeric: tabular-nums; }
+.kstone .km small { display: block; font-size: 11px; letter-spacing: 0.1em; font-weight: 600; }
+.khead h2 { margin: 0; font: 700 28px/1 var(--display); text-transform: uppercase; letter-spacing: 0.01em; }
+.khead p { margin: 4px 0 0; font-size: 12.5px; color: var(--ink-2); }
+.keys { display: grid; grid-template-columns: repeat(3, 1fr); border: 1px solid var(--border); border-radius: 8px; overflow: hidden; }
+.keys div { padding: 8px 10px; border-right: 1px solid var(--border); }
+.keys div:last-child { border-right: 0; }
+.keys span { display: block; font-size: 11.5px; color: var(--ink-2); }
+.keys b { font: 700 18px/1.15 var(--display); font-variant-numeric: tabular-nums; }
+
+/* Facts */
+.fact { border: 1px solid var(--border); border-radius: 8px; padding: 10px 12px; display: flex; flex-direction: column; gap: 4px; background: var(--surface); }
+.fact.hi { border-color: var(--ink); box-shadow: 0 0 0 3px var(--stone-soft); }
+.fact-h { display: flex; justify-content: space-between; align-items: flex-start; gap: 8px; }
+.fact-h b { font-size: 14.5px; line-height: 19px; }
+.fact-d { font-size: 13px; line-height: 19px; }
+.fact-src { font-size: 12px; line-height: 17px; color: var(--ink-2); font-variant-numeric: tabular-nums; }
+.fact-a { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-top: 6px; }
+.fact-a .btn { height: 44px; }
+.rows { border: 1px solid var(--border); border-radius: 8px; background: var(--surface); }
+.row { display: flex; align-items: center; gap: 10px; padding: 10px 12px; border-bottom: 1px solid var(--border); min-height: 48px; }
+.row:last-child { border-bottom: 0; }
+.row .grow { flex: 1; min-width: 0; }
+.row b { display: block; font-size: 14px; line-height: 19px; }
+.row .hint { display: block; }
+.row > svg { width: 16px; height: 16px; stroke: var(--ink-2); flex: none; }
+.row .ic { width: 32px; height: 32px; border-radius: 6px; background: var(--surface-2); display: grid; place-items: center; flex: none; }
+.row .ic svg { width: 16px; height: 16px; stroke: var(--ink); }
+.num { font-variant-numeric: tabular-nums; }
+
+/* Fuel gap strip, drawn to scale */
+.gap-strip { position: relative; height: 96px; margin: 0 8px; }
+.gap-strip .line { position: absolute; left: 0; right: 0; top: 46px; height: 6px; background: var(--sign); border-radius: 3px; }
+.gap-strip .dry { position: absolute; top: 46px; height: 6px; background: repeating-linear-gradient(90deg, var(--stale-fg) 0 6px, var(--surface) 6px 10px); }
+.gap-strip .pt { position: absolute; top: 40px; width: 2px; height: 18px; background: var(--ink); }
+.gap-strip .pt span { position: absolute; left: 50%; transform: translateX(-50%); font-size: 11.5px; line-height: 13px; white-space: nowrap; text-align: center; font-weight: 600; }
+.gap-strip .pt.up span { bottom: 22px; }
+.gap-strip .pt.dn span { top: 22px; }
+.gap-strip .pt.first span { left: 0; transform: none; text-align: left; }
+.gap-strip .pt.last span { left: auto; right: 0; transform: none; text-align: right; }
+.gap-strip .pt.lab span { left: -22px; transform: none; text-align: left; }
+.gap-strip .pt small { display: block; font-weight: 400; color: var(--ink-2); font-variant-numeric: tabular-nums; }
+.gap-strip .tag { position: absolute; top: 58px; font: 600 12px/1 var(--display); letter-spacing: 0.08em; text-transform: uppercase; color: var(--stale-fg); transform: translateX(-50%); white-space: nowrap; }
+.meter { height: 12px; border-radius: 6px; background: var(--surface-2); border: 1px solid var(--border); position: relative; overflow: hidden; }
+.meter i { position: absolute; left: 0; top: 0; bottom: 0; background: var(--sign); }
+.meter i.short { background: var(--stale-fg); }
+.meter u { position: absolute; top: -2px; bottom: -2px; width: 2px; background: var(--ink); }
+.big { font: 700 34px/1 var(--display); font-variant-numeric: tabular-nums; }
+.big small { font: 500 13px/1 var(--body); color: var(--ink-2); }
+.result { border-radius: 10px; padding: 14px; display: flex; flex-direction: column; gap: 8px; border: 1px solid var(--border); }
+.result.bad { background: var(--stale-bg); border-color: color-mix(in srgb, var(--stale-fg) 30%, var(--surface)); }
+.result.ok { background: var(--fresh-bg); border-color: color-mix(in srgb, var(--fresh-fg) 30%, var(--surface)); }
+
+/* Map placeholder: a region, never a country outline */
+.map { height: 270px; border-radius: 10px; border: 1px solid var(--border); position: relative; overflow: hidden; background: var(--surface-2); flex: none; }
+.map svg { position: absolute; inset: 0; width: 100%; height: 100%; }
+.map .credit { position: absolute; right: 6px; bottom: 5px; font-size: 10.5px; color: var(--ink-2); background: color-mix(in srgb, var(--surface) 85%, transparent); padding: 1px 5px; border-radius: 3px; }
+.pin { position: absolute; transform: translate(-50%, -100%); font: 600 11.5px/1 var(--display); letter-spacing: 0.04em; white-space: nowrap; display: flex; flex-direction: column; align-items: center; gap: 2px; }
+.pin span { background: var(--surface); border: 1.5px solid var(--ink); border-radius: 4px; padding: 3px 6px; }
+.pin i { width: 8px; height: 8px; border-radius: 50%; background: var(--ink); border: 2px solid var(--surface); }
+.pin.full span { background: var(--sign); color: var(--surface); border-color: var(--sign); }
+.pin.none span { border-style: dashed; color: var(--ink-2); }
+
+/* Route cards */
+.rcard { border: 1px solid var(--border); border-radius: 8px; padding: 10px 12px; display: flex; flex-direction: column; gap: 3px; }
+.rcard.unwritten { border-style: dashed; background: var(--surface-2); }
+.rcard .r1 { display: flex; justify-content: space-between; gap: 8px; align-items: flex-start; }
+.rcard b { font: 700 18px/1.15 var(--display); letter-spacing: 0.01em; }
+
+/* Chat app frames */
+.chat { background: var(--chat-ground); flex: 1; display: flex; flex-direction: column; min-height: 0; }
+.chat-top { background: var(--chat-bar); color: var(--surface); min-height: 56px; display: flex; align-items: center; gap: 10px; padding: 0 12px; flex: none; }
+.chat-top svg { width: 20px; height: 20px; stroke: var(--surface); }
+.chat-top b { display: block; font-size: 15px; line-height: 19px; }
+.chat-top span { font-size: 11.5px; opacity: 0.8; }
+.chat-av { width: 36px; height: 36px; border-radius: 50%; background: var(--stone); color: var(--ink); display: grid; place-items: center; font: 700 14px/1 var(--display); flex: none; }
+.chat-body { flex: 1; padding: 12px 10px; display: flex; flex-direction: column; gap: 8px; overflow: hidden; }
+.msg { max-width: 84%; border-radius: 10px; padding: 6px 9px 5px; font-size: 13.5px; line-height: 19px; background: var(--chat-in); align-self: flex-start; box-shadow: 0 1px 0 color-mix(in srgb, var(--ink) 12%, transparent); }
+.msg.out { background: var(--chat-out); align-self: flex-end; }
+.msg .who { font-size: 12px; font-weight: 600; color: var(--sign); display: block; }
+.msg .t { display: block; text-align: right; font-size: 10.5px; color: var(--ink-2); font-variant-numeric: tabular-nums; }
+.preview { border-radius: 8px; overflow: hidden; background: color-mix(in srgb, var(--ink) 7%, var(--chat-out)); margin-bottom: 5px; }
+.preview .pic { height: 96px; background: var(--ink); color: var(--surface); display: flex; align-items: center; gap: 12px; padding: 0 14px; }
+.preview .pic .mark { border-color: var(--surface); }
+.preview .pic .mark i { border-color: var(--surface); }
+.preview .pic .mark b { color: var(--ink); background: var(--surface); }
+.preview .pic strong { font: 700 22px/1.05 var(--display); text-transform: uppercase; letter-spacing: 0.01em; }
+.preview .pic em { display: block; font: 600 13px/1.2 var(--display); letter-spacing: 0.08em; color: var(--stone); font-style: normal; text-transform: uppercase; margin-top: 3px; }
+.preview .txt { padding: 7px 9px; }
+.preview .txt b { display: block; font-size: 13.5px; line-height: 18px; }
+.preview .txt span { display: block; font-size: 12px; line-height: 17px; color: var(--ink-2); }
+.chat-in { background: var(--surface); margin: 0 8px 10px; border-radius: 22px; min-height: 44px; padding: 10px 14px; font-size: 13.5px; line-height: 19px; flex: none; display: flex; gap: 8px; align-items: flex-end; }
+.chat-in .send { width: 30px; height: 30px; border-radius: 50%; background: var(--sign); display: grid; place-items: center; flex: none; margin: -3px -6px -3px 0; }
+.chat-in .send svg { width: 15px; height: 15px; stroke: var(--surface); }
+
+/* Sheets, toasts, lists */
+.sheet-scrim { position: absolute; inset: 0; background: var(--overlay); }
+.sheet { position: absolute; left: 0; right: 0; bottom: 0; background: var(--surface); border-radius: 18px 18px 0 0; padding: 8px 16px 24px; display: flex; flex-direction: column; gap: 12px; }
+.sheet .grab { width: 40px; height: 4px; border-radius: 2px; background: var(--border); align-self: center; margin-bottom: 2px; }
+.sheet h3 { margin: 0; font: 700 22px/1.1 var(--display); }
+.sheet p { margin: 0; font-size: 13.5px; line-height: 20px; color: var(--ink-2); }
+.radio-list { display: flex; flex-direction: column; border: 1px solid var(--border); border-radius: 8px; }
+.radio-list div { display: flex; align-items: center; gap: 10px; padding: 0 12px; min-height: 46px; border-bottom: 1px solid var(--border); font-size: 14px; }
+.radio-list div:last-child { border-bottom: 0; }
+.radio { width: 18px; height: 18px; border-radius: 50%; border: 1.5px solid var(--rule); flex: none; }
+.on > .radio { border: 5px solid var(--sign); }
+.box { width: 18px; height: 18px; border-radius: 4px; border: 1.5px solid var(--rule); flex: none; display: grid; place-items: center; }
+.box.on { background: var(--sign); border-color: var(--sign); }
+.box svg { width: 12px; height: 12px; stroke: var(--surface); }
+.quote { border-left: 3px solid var(--border); padding: 2px 0 2px 10px; font-size: 13px; line-height: 19px; color: var(--ink); white-space: pre-line; }
+.tl { display: flex; flex-direction: column; }
+.tl div { display: grid; grid-template-columns: 92px 1fr; gap: 10px; padding: 8px 0; border-bottom: 1px dashed var(--border); font-size: 13px; line-height: 18px; }
+.tl div:last-child { border-bottom: 0; }
+.tl span { color: var(--ink-2); font-variant-numeric: tabular-nums; }
+.acc { border: 1px solid var(--border); border-radius: 8px; }
+.acc-h { display: flex; justify-content: space-between; align-items: center; gap: 8px; padding: 0 12px; min-height: 46px; font-weight: 600; font-size: 14px; }
+.acc-h svg { width: 16px; height: 16px; stroke: var(--ink-2); flex: none; }
+.acc-h .hint { font-weight: 400; }
+.acc-b { padding: 0 12px 12px; display: flex; flex-direction: column; gap: 10px; }
+.steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 4px; }
+.steps i { height: 4px; border-radius: 2px; background: var(--border); }
+.steps i.on { background: var(--sign); }
+.vid { display: grid; grid-template-columns: 112px 1fr; gap: 10px; align-items: center; }
+.vid .thumb { height: 64px; border-radius: 6px; background: var(--ink); display: grid; place-items: center; position: relative; }
+.vid .thumb svg { width: 22px; height: 22px; fill: var(--surface); stroke: none; }
+.vid .thumb u { position: absolute; right: 4px; bottom: 4px; font-size: 10.5px; text-decoration: none; color: var(--surface); background: color-mix(in srgb, var(--ink) 70%, transparent); padding: 0 4px; border-radius: 3px; font-variant-numeric: tabular-nums; }
+.vid b { display: block; font-size: 13.5px; line-height: 18px; }
+.empty { border: 1px dashed var(--rule); border-radius: 8px; padding: 18px 14px; text-align: center; color: var(--ink-2); display: flex; flex-direction: column; gap: 8px; align-items: center; }
+.empty b { color: var(--ink); font-size: 14.5px; }
+.bars { display: flex; flex-direction: column; gap: 9px; }
+.bar { display: grid; grid-template-columns: 1fr 34px; gap: 4px 8px; align-items: center; font-size: 13px; }
+.bar .track { grid-column: 1 / -1; height: 8px; background: var(--surface-2); border-radius: 4px; overflow: hidden; }
+.bar .fill { height: 100%; background: var(--sign); border-radius: 4px; }
+.bar .n { text-align: right; font-variant-numeric: tabular-nums; color: var(--ink-2); }
+.locked { opacity: 0.55; }
+
+
+.legend { display: flex; flex-wrap: wrap; gap: 4px 14px; font-size: 12px; color: var(--ink-2); }
+.legend span { display: inline-flex; align-items: center; gap: 6px; }
+.legend i { width: 22px; height: 0; border-top: 3px solid var(--sign); }
+.legend i.l-basic { border-top: 3px dotted var(--ink); }
+.legend i.l-none { border-top: 3px dashed var(--rule); }
+
+/* Elevation profile, drawn to one scale */
+.profile { border: 1px solid var(--border); border-radius: 8px; padding: 8px 6px 2px; background: var(--surface); }
+.profile svg { display: block; width: 100%; height: auto; overflow: visible; }
+.profile .grid { stroke: var(--border); stroke-width: 1; }
+.profile .area { fill: var(--sign-soft); stroke: none; }
+.profile .ln { fill: none; stroke: var(--sign); stroke-width: 2.5; stroke-linejoin: round; stroke-linecap: round; }
+.profile text { font: 600 10px var(--body); fill: var(--ink); }
+.profile text.ax { font-weight: 400; fill: var(--ink-2); }
+.profile .dot { fill: var(--surface); stroke: var(--ink); stroke-width: 2; }
+.profile .night { fill: var(--stone); stroke: var(--ink); stroke-width: 2; }
+.profile .night.bad { fill: var(--stale-fg); stroke: var(--ink); }
+.nights { border: 1px solid var(--border); border-radius: 8px; }
+.night-row { display: grid; grid-template-columns: 30px 1fr auto; gap: 10px; align-items: center; padding: 9px 12px; border-bottom: 1px solid var(--border); min-height: 52px; }
+.night-row:last-child { border-bottom: 0; }
+.night-row .n { width: 30px; height: 30px; border-radius: 50%; background: var(--stone); display: grid; place-items: center; font: 700 15px/1 var(--display); }
+.night-row b { display: block; font-size: 14px; line-height: 19px; }
+.gain { font: 700 17px/1 var(--display); font-variant-numeric: tabular-nums; text-align: right; }
+.gain small { display: block; font: 400 11px/14px var(--body); color: var(--ink-2); }
+.gain.bad { color: var(--stale-fg); } .gain.ok { color: var(--fresh-fg); } .gain.mid { color: var(--ageing-fg); }
+
+/* Network grid */
+.grid-net { border: 1px solid var(--border); border-radius: 8px; overflow: hidden; }
+.grid-net .gr { display: grid; grid-template-columns: 1.25fr 1fr 1fr 1fr; border-bottom: 1px solid var(--border); }
+.grid-net .gr:last-child { border-bottom: 0; }
+.grid-net .gr > span { padding: 7px 8px; font-size: 12.5px; line-height: 16px; border-right: 1px solid var(--border); }
+.grid-net .gr > span:last-child { border-right: 0; }
+.grid-net .gh > span { font: 600 12px/16px var(--display); letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-2); background: var(--surface-2); }
+.grid-net b { display: block; font-size: 13px; }
+.grid-net small { display: block; font-size: 11px; line-height: 14px; color: var(--ink-2); font-variant-numeric: tabular-nums; }
+.cy b { color: var(--fresh-fg); } .cn b { color: var(--stale-fg); } .cu b { color: var(--rule); font-weight: 400; }
+
+/* Riding hours: a range, drawn to one scale of 0 to 8 hours */
+.leg { border: 1px solid var(--border); border-radius: 8px; padding: 10px 12px; display: flex; flex-direction: column; gap: 4px; }
+.leg .r1 { display: flex; justify-content: space-between; align-items: baseline; gap: 8px; }
+.leg .r1 b { font-size: 14.5px; }
+.range { position: relative; height: 24px; }
+.range .track { position: absolute; left: 0; right: 0; top: 10px; height: 4px; background: var(--surface-2); border-radius: 2px; }
+.range .span { position: absolute; top: 7px; height: 10px; background: var(--sign-line); border-radius: 5px; }
+.range .typ { position: absolute; top: 3px; width: 4px; height: 18px; background: var(--sign); border-radius: 2px; margin-left: -2px; }
+.range .mapt { position: absolute; top: 2px; height: 20px; border-left: 2px dashed var(--ink-2); }
+.scale { display: flex; justify-content: space-between; font-size: 10.5px; color: var(--ink-2); font-variant-numeric: tabular-nums; }
+
+/* Offline banner */
+.offline { display: flex; gap: 8px; align-items: center; padding: 8px 12px; background: var(--ink); color: var(--surface); font-size: 12.5px; line-height: 17px; flex: none; }
+.offline svg { width: 16px; height: 16px; stroke: var(--stone); flex: none; }
+.map.gone { display: grid; place-items: center; text-align: center; color: var(--ink-2); font-size: 12.5px; height: 120px; border-style: dashed; }
+
+/* Laptop frames */
+.desk { width: 1280px; height: 800px; border-radius: 10px; overflow: hidden; background: var(--surface); box-shadow: var(--frame-shadow); display: flex; flex-direction: column; font-size: 14px; flex: none; border: 1px solid var(--border); }
+.desk-top { height: 62px; border-bottom: 1px solid var(--border); display: flex; align-items: center; gap: 16px; padding: 0 24px; flex: none; }
+.desk-top .brand { font: 700 22px/1 var(--display); text-transform: uppercase; letter-spacing: 0.02em; }
+.desk-top .input { width: 320px; height: 40px; }
+.desk-top .sp { flex: 1; }
+.desk-main { flex: 1; display: grid; grid-template-columns: 236px minmax(0, 1fr) 348px; min-height: 0; }
+.desk-nav { border-right: 1px solid var(--border); padding: 18px 12px; display: flex; flex-direction: column; gap: 2px; overflow: hidden; }
+.desk-nav .it { display: flex; align-items: center; gap: 10px; padding: 9px 10px; border-radius: 6px; font-weight: 500; font-size: 13.5px; }
+.desk-nav .it.on { background: var(--sign-soft); color: var(--sign); font-weight: 600; }
+.desk-nav .it svg { width: 16px; height: 16px; stroke: currentColor; flex: none; }
+.desk-nav .it .badge { margin-left: auto; }
+.desk-mid { padding: 22px 28px; display: flex; flex-direction: column; gap: 16px; overflow: hidden; min-width: 0; }
+.desk-side { border-left: 1px solid var(--border); background: var(--surface-2); padding: 20px; display: flex; flex-direction: column; gap: 14px; overflow: hidden; }
+.cols2 { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; align-items: start; }
+.msgrow { padding: 10px 12px; border-radius: 6px; display: flex; flex-direction: column; gap: 2px; border: 1px solid transparent; }
+.msgrow.on { background: var(--sign-soft); border-color: var(--sign-line); }
+.msgrow .r1 { display: flex; justify-content: space-between; gap: 8px; align-items: baseline; }
+.msgrow b { font-size: 13.5px; }
+.compare { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.compare > div { display: flex; flex-direction: column; gap: 6px; }
+.checks { display: flex; flex-direction: column; gap: 8px; }
+.check { display: flex; gap: 8px; align-items: flex-start; font-size: 13px; line-height: 19px; }
+.check svg { width: 16px; height: 16px; flex: none; margin-top: 2px; }
+.check.ok svg { stroke: var(--fresh-fg); } .check.wait svg { stroke: var(--ageing-fg); }
+
+
+/* Bottom bar */
+.tabbar { display: grid; grid-template-columns: repeat(4, 1fr); border-top: 1px solid var(--border); background: var(--surface); padding: 6px 4px 18px; flex: none; }
+.tabbar span { display: flex; flex-direction: column; align-items: center; gap: 2px; font-size: 11.5px; color: var(--ink-2); min-height: 44px; justify-content: center; }
+.tabbar span svg { width: 20px; height: 20px; stroke: currentColor; }
+.tabbar span.on { color: var(--sign); font-weight: 600; }
+
+/* Riding together */
+.av { width: 36px; height: 36px; border-radius: 50%; background: var(--stone); color: var(--ink); display: grid; place-items: center; font: 700 14px/1 var(--display); letter-spacing: 0.02em; flex: none; border: 1.5px solid var(--ink); }
+.seats { display: flex; align-items: center; gap: 4px; margin-top: 4px; }
+.seats i { width: 14px; height: 14px; border-radius: 50%; border: 1.5px solid var(--rule); }
+.seats i.on { background: var(--sign); border-color: var(--sign); }
+.seats .hint { margin-left: 6px; }
+
+/* Data sheet (last screen) */
+.sheet-card { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; overflow: hidden; }
+.scroll-x { overflow-x: auto; }
+table.data { border-collapse: collapse; width: 100%; min-width: 760px; font-size: 13.5px; }
+table.data th { text-align: left; font: 600 12.5px/1.2 var(--display); letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-2); padding: 10px 12px; border-bottom: 1px solid var(--border); background: var(--surface-2); }
+table.data td { padding: 9px 12px; border-bottom: 1px solid var(--border); vertical-align: top; line-height: 19px; }
+table.data tr:last-child td { border-bottom: 0; }
+table.data td.n, table.data th.n { text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }
+table.data tr.sum td { font-weight: 600; background: var(--stone-soft); }
+.tiles { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 12px; margin-bottom: 14px; }
+.tile { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 12px 14px; }
+.tile .big { font-size: 38px; }
+.tile span { display: block; font-size: 12.5px; color: var(--ink-2); margin-top: 4px; }
+
+@media (prefers-reduced-motion: no-preference) {
+  .index button, .stage-nav button { transition: background-color 140ms var(--curve), border-color 140ms var(--curve); }
+}
+@media (max-width: 900px) {
+  .doc { grid-template-columns: minmax(0, 1fr); }
+  .index { position: static; height: auto; border-right: 0; border-bottom: 1px solid var(--border); padding: 16px; gap: 12px; }
+  .index #index-groups { display: flex; gap: 14px; overflow-x: auto; padding-bottom: 6px; }
+  .index #index-groups > div { flex: none; width: 210px; }
+  .index .foot { margin-top: 0; }
+  .stage { padding: 18px 16px 40px; }
+  .stage-head h2 { font-size: 26px; }
+}
+</style>
+
+<div class="doc">
+  <nav class="index" aria-label="Screens">
+    <div>
+      <h1>Meel wireframes</h1>
+      <p class="lede">A phone-first website for Indian motorcycle touring, at rideplanner.in. One frame for each situation a rider can be in. “Meel” is Hindi for mile, as in the kilometre stones beside every Indian road.</p>
+    </div>
+    <div id="index-groups"></div>
+    <p class="foot">Riders, shops, dates, distances and bike figures are example data. The example day is Monday 14 June 2027. The colours and type are a first proposal, not a decided brand.</p>
+  </nav>
+
+  <main class="stage">
+    <div class="stage-head">
+      <div>
+        <div class="eyebrow" id="screen-eyebrow"></div>
+        <h2 id="screen-title"></h2>
+        <p id="screen-lede"></p>
+      </div>
+      <div class="stage-nav">
+        <span class="sample-flag">Example data</span>
+        <button type="button" id="prev">← Previous</button>
+        <button type="button" id="next">Next →</button>
+      </div>
+    </div>
+    <div class="frame-fit" id="fit"><div class="frame" id="frame"></div></div>
+    <section class="notes" id="notes" aria-label="Notes for this screen"></section>
+  </main>
+</div>
+
+<script>
+/* ── Icons: one stroke set, lucide geometry ───────────────────── */
+const I = (d) => `<svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">${d}</svg>`;
+const ICON = {
+  back: I('<path d="m15 18-6-6 6-6"/>'),
+  right: I('<path d="m9 18 6-6-6-6"/>'),
+  down: I('<path d="m6 9 6 6 6-6"/>'),
+  search: I('<circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/>'),
+  check: I('<path d="M20 6 9 17l-5-5"/>'),
+  ext: I('<path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14 21 3"/>'),
+  fuel: I('<path d="M3 22V5a2 2 0 0 1 2-2h7a2 2 0 0 1 2 2v17M2 22h13M6 8h5M14 11h2a2 2 0 0 1 2 2v3a2 2 0 0 0 4 0V8l-3-3"/>'),
+  wrench: I('<path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.8-3.8a6 6 0 0 1-7.9 7.9l-6.9 6.9a2.1 2.1 0 0 1-3-3l6.9-6.9a6 6 0 0 1 7.9-7.9z"/>'),
+  signal: I('<path d="M2 20h.01M7 20v-4M12 20v-8M17 20V8M22 4v16"/>'),
+  peak: I('<path d="m8 3 4 8 5-5 5 15H2z"/>'),
+  bed: I('<path d="M2 4v16M2 8h18a2 2 0 0 1 2 2v10M2 17h20M6 8v9"/>'),
+  play: '<svg viewBox="0 0 24 24"><path d="M7 4v16l13-8z"/></svg>',
+  list: I('<path d="M8 6h13M8 12h13M8 18h13M3 6h.01M3 12h.01M3 18h.01"/>'),
+  map: I('<path d="M9 3 3 6v15l6-3 6 3 6-3V3l-6 3zM9 3v15M15 6v15"/>'),
+  clock: I('<circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/>'),
+  shield: I('<path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>'),
+  send: I('<path d="m22 2-7 20-4-9-9-4zM22 2 11 13"/>'),
+  bag: I('<path d="M6 7V6a6 6 0 0 1 12 0v1M4 7h16l-1 14H5z"/>'),
+  card: I('<rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/>'),
+  lock: I('<rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/>'),
+  phone: I('<path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/>'),
+  plus: I('<path d="M12 5v14M5 12h14"/>'),
+  share: I('<circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="m8.6 13.5 6.8 4M15.4 6.5l-6.8 4"/>'),
+  save: I('<path d="M12 3v12M7 10l5 5 5-5M5 21h14"/>'),
+  wifiOff: I('<path d="M2 2l20 20M8.5 16.4a5 5 0 0 1 7 0M5 12.9a10 10 0 0 1 5.2-2.7M19 12.9a10 10 0 0 0-2-1.5M2 8.8a15 15 0 0 1 4.2-2.6M22 8.8a15 15 0 0 0-11.3-3.9M12 20h.01"/>'),
+  inbox: I('<path d="M22 12h-6l-2 3h-4l-2-3H2"/><path d="M5.5 5.1 2 12v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-6l-3.5-6.9A2 2 0 0 0 16.8 4H7.2a2 2 0 0 0-1.7 1.1z"/>'),
+  flag: I('<path d="M4 22V4M4 4h13l-2 4 2 4H4"/>'),
+};
+const esc = (s) => String(s).replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+
+/* ── Shell helpers ────────────────────────────────────────────── */
+const SITE = 'rideplanner.in';
+const statusBar = (t) => `<div class="status-bar"><span>${t}</span><span>●●● ▮</span></div>`;
+const mark = (t = 'M') => `<span class="mark"><i></i><b>${t}</b></span>`;
+const head = (title, sub, { back = true, right = '' } = {}) =>
+  `<div class="ptop">${back ? `<span class="iconbtn">${ICON.back}</span>` : mark()}<span class="ttl"><b>${title}</b>${sub ? `<span>${sub}</span>` : ''}</span>${right}</div>`;
+const body = (html) => `<div class="pbody"><div class="pscroll">${html}</div></div>`;
+const phone = (cap, inner, time = '4:26') => `<figure class="pw"><div class="phone">${statusBar(time)}${inner}</div><figcaption>${cap}</figcaption></figure>`;
+const chev = ICON.right;
+
+const STATE = {
+  fresh: ['Fresh', 'b-fresh'], ageing: ['Ageing', 'b-ageing'], stale: ['Stale', 'b-stale'],
+  unchecked: ['Not yet checked', 'b-unchecked'], conflict: ['Reports disagree', 'b-conflict'],
+  pending: ['Change reported', 'b-ageing'],
+};
+const badge = (k) => `<span class="badge ${STATE[k][1]}">${STATE[k][0]}</span>`;
+const twoButtons = `<div class="fact-a"><span class="btn btn-soft">${ICON.check}Still true</span><span class="btn btn-outline">This has changed</span></div>`;
+function fact({ t, d, state, line, open = false, hi = false, extra = '' }) {
+  return `<div class="fact ${hi ? 'hi' : ''}">
+    <div class="fact-h"><b>${t}</b>${badge(state)}</div>
+    ${d ? `<div class="fact-d">${d}</div>` : ''}
+    <div class="fact-src">${line}</div>${extra}${open ? twoButtons : ''}
+  </div>`;
+}
+
+/* ── Example world ────────────────────────────────────────────── */
+const ROUTE = 'Manali to Leh';
+const PUMPS = [
+  { t: 'Tandi petrol pump', d: 'Petrol and diesel. Open 7 am to 7 pm. 61 km from Manali.', state: 'fresh', line: 'Confirmed working by Imran S. · 12 June 2027 · 2 days ago' },
+  { t: 'Keylong petrol pump', d: 'Petrol and diesel. Last pump before a 323 km gap.', state: 'ageing', line: 'Confirmed working by Anjali T. · 30 May 2027 · 15 days ago' },
+  { t: 'Karu petrol pump', d: 'First pump after the gap. 35 km before Leh.', state: 'stale', line: 'Confirmed working by Dev R. · 2 October 2026 · 8 months ago' },
+  { t: 'Leh, two pumps in town', d: 'Petrol and diesel.', state: 'unchecked', line: 'From the oil company’s pump finder · entered 3 November 2026 · no rider has confirmed it' },
+];
+const gapStrip = `<div class="gap-strip" role="img" aria-label="Fuel pumps along the route, drawn to scale. No pump for 323 km between Keylong and Karu.">
+  <div class="line"></div><div class="dry" style="left:16.2%;width:75.6%"></div>
+  <div class="pt up first" style="left:0"><span>Manali<small>0 km</small></span></div>
+  <div class="pt dn" style="left:14.3%"></div>
+  <div class="pt dn lab" style="left:16.2%"><span>Tandi · Keylong<small>61 km · 69 km</small></span></div>
+  <div class="tag" style="left:54%;top:22px">323 km · no pump</div>
+  <div class="pt dn" style="left:91.8%"><span>Karu<small>392 km</small></span></div>
+  <div class="pt up last" style="left:calc(100% - 2px)"><span>Leh<small>427 km</small></span></div>
+</div>`;
+const routeHead = (name, nh, km, sub) => `<div class="khead">
+  <div class="kstone"><div class="cap">${nh}</div><div class="km">${km}<small>KM</small></div></div>
+  <div><h2>${name}</h2><p>${sub}</p></div></div>`;
+const sectionChips = (on) => `<div class="hscroll">${[['fuel', 'Fuel'], ['shield', 'Bike rules'], ['peak', 'Altitude'], ['signal', 'Network'], ['wrench', 'Mechanics']]
+  .map(([ic, l]) => `<span class="chip ${l === on ? 'on' : ''}">${ICON[ic]}${l}</span>`).join('')}</div>`;
+
+/* ── More of the example world ────────────────────────────────── */
+const shareBtn = `<span class="iconbtn">${ICON.share}</span>`;
+/* Place, distance from Manali in km, altitude in metres. Example figures. */
+const ALT = [
+  ['Manali', 0, 2050], ['Tandi', 61, 2570], ['Keylong', 69, 3080], ['Jispa', 91, 3310],
+  ['Baralacha La', 140, 4890], ['Sarchu', 175, 4290], ['Lachulung La', 229, 5059],
+  ['Pang', 250, 4600], ['Tanglang La', 319, 5328], ['Karu', 392, 3400], ['Leh', 427, 3500],
+];
+function profile(nights = [], bad = []) {
+  const W = 346, H = 178, L = 36, R = 10, T = 24, B = 30;
+  const x = (km) => L + (km / 427) * (W - L - R);
+  const y = (m) => T + (1 - (m - 2000) / 3500) * (H - T - B);
+  const pts = ALT.map(([, km, m]) => `${x(km).toFixed(1)},${y(m).toFixed(1)}`).join(' ');
+  const lab = { 'Manali': [14, 'start'], 'Jispa': [15, 'middle'], 'Baralacha La': [-9, 'middle'], 'Sarchu': [16, 'middle'], 'Pang': [16, 'middle'], 'Tanglang La': [-9, 'middle'], 'Leh': [15, 'end'] };
+  const grid = [2000, 3500, 5000].map((m) => `<line class="grid" x1="${L}" x2="${W - R}" y1="${y(m)}" y2="${y(m)}"/><text class="ax" x="${L - 4}" y="${y(m) + 3}" text-anchor="end">${m.toLocaleString('en-IN')}</text>`).join('');
+  const ticks = [0, 100, 200, 300, 427].map((km) => `<text class="ax" x="${x(km)}" y="${H - 8}" text-anchor="${km === 0 ? 'start' : km === 427 ? 'end' : 'middle'}">${km}${km === 427 ? ' km' : ''}</text>`).join('');
+  const marks = ALT.map(([n, km, m]) => {
+    const ni = nights.indexOf(n);
+    const dot = ni >= 0
+      ? `<circle class="night ${bad.includes(n) ? 'bad' : ''}" cx="${x(km)}" cy="${y(m)}" r="7.5"/><text x="${x(km)}" y="${y(m) + 3.5}" text-anchor="middle" style="font-size:9px;${bad.includes(n) ? 'fill:var(--surface)' : ''}">${ni + 1}</text>`
+      : (lab[n] ? `<circle class="dot" cx="${x(km)}" cy="${y(m)}" r="3.5"/>` : '');
+    const off = lab[n] ? lab[n][0] + (ni >= 0 ? (lab[n][0] > 0 ? 5 : -5) : 0) : 0;
+    const t = lab[n] ? `<text x="${x(km)}" y="${y(m) + off}" text-anchor="${lab[n][1]}">${n}</text>` : '';
+    return dot + t;
+  }).join('');
+  return `<div class="profile"><svg viewBox="0 0 ${W} ${H}" role="img" aria-label="Altitude along the route from Manali to Leh, drawn to scale.">
+    ${grid}
+    <polygon class="area" points="${x(0)},${y(2000)} ${pts} ${x(427)},${y(2000)}"/>
+    <polyline class="ln" points="${pts}"/>
+    ${marks}${ticks}
+    <text class="ax" x="${L - 4}" y="12" text-anchor="end">metres</text>
+  </svg></div>`;
+}
+const fmtH = (h) => { const m = Math.round(h * 60); return `${Math.floor(m / 60)} h${m % 60 ? ' ' + (m % 60) + ' min' : ''}`; };
+function leg(name, km, typ, lo, hi, mapt, n) {
+  const pc = (h) => `${(h / 8) * 100}%`;
+  return `<div class="leg"><div class="r1"><b>${name}</b><span class="hint num">${km} km</span></div>
+    <div class="range"><span class="track"></span><span class="span" style="left:${pc(lo)};width:${pc(hi - lo)}"></span><span class="mapt" style="left:${pc(mapt)}"></span><span class="typ" style="left:${pc(typ)}"></span></div>
+    <div class="fact-src">Riders usually took <b style="color:var(--ink)">${fmtH(typ)}</b> · quickest ${fmtH(lo)}, slowest ${fmtH(hi)} · ${n} reports<br>A map app says ${fmtH(mapt)}</div></div>`;
+}
+const trip = (route, when, from, by, going, places, pace, state) => `<div class="rcard"><div class="r1"><b>${route}</b>${state}</div>
+  <span class="fact-d">${when}</span>
+  <span class="hint">${from} · led by ${by} · ${pace}</span>
+  <div class="seats" role="img" aria-label="${going} of ${places} places taken">${Array.from({ length: places }, (_, i) => `<i class="${i < going ? 'on' : ''}"></i>`).join('')}<span class="hint num">${going} of ${places} going</span></div></div>`;
+const tabbar = (on) => `<div class="tabbar">${[['map', 'Routes'], ['flag', 'Trips'], ['fuel', 'Tools'], ['list', 'You']].map(([ic, l]) => `<span class="${l === on ? 'on' : ''}">${ICON[ic]}${l}</span>`).join('')}</div>`;
+const desk = (cap, inner) => `<figure class="pw"><div class="desk">${inner}</div><figcaption>${cap}</figcaption></figure>`;
+const deskTop = (right = '') => `<div class="desk-top">${mark()}<span class="brand">Meel</span><span class="input">${ICON.search}<span>Search a route or place</span></span><span class="sp"></span>${right}</div>`;
+
+/* ── Screens ──────────────────────────────────────────────────── */
+const SCREENS = [
+  /* 1 */
+  {
+    group: 'Arriving', title: 'A link pasted into the group',
+    lede: 'The main way riders reach the site. Someone asks the seasonal question in a chat group, and someone else pastes a link instead of typing the answer from memory.',
+    render: () => phone('1. The question, and the link as the answer', `
+      <div class="chat">
+        <div class="chat-top">${ICON.back}<span class="chat-av">DR</span><span><b>Delhi Riders · Ladakh 2027</b><span>48 members</span></span></div>
+        <div class="chat-body">
+          <div class="msg"><span class="who">Rahul Negi</span>Leaving Manali on Thursday on my Classic 350. Is the Tandi pump working? Do I need a jerry can?<span class="t">4:12 pm</span></div>
+          <div class="msg out">
+            <div class="preview">
+              <div class="pic">${mark('NH 3')}<span><strong>Tandi petrol pump</strong><em>Working · 12 June 2027</em></span></div>
+              <div class="txt"><b>Tandi petrol pump · Manali to Leh</b><span>Confirmed working on 12 June 2027 by Imran S. Next pump: Keylong, 8 km on.</span><span>${SITE}</span></div>
+            </div>
+            <span class="link">${SITE}/manali-leh/fuel/tandi</span><br>It has a fuel check for your bike too.<span class="t">4:14 pm</span></div>
+          <div class="msg"><span class="who">Rahul Negi</span>Perfect, it even has the date. Thanks.<span class="t">4:15 pm</span></div>
+        </div>
+        <div class="chat-in"><span style="flex:1;color:var(--ink-2)">Message</span></div>
+      </div>`, '4:15')
+    + phone('2. The link opens on that one fact', `
+      ${head('Manali to Leh', 'Fuel', { right: `<span class="iconbtn">${ICON.share}</span>` })}
+      ${body(`
+        <div class="callout stone"><b>You opened one fact from a link</b>The rest of the route is below it.</div>
+        ${fact({ ...PUMPS[0], open: true, hi: true })}
+        <div class="sec-h"><h3>Fuel on this route</h3><span class="hint">4 pumps</span></div>
+        ${gapStrip}
+        <span class="btn btn-primary btn-block" style="height:46px">${ICON.fuel}Check fuel for your bike</span>
+        ${fact(PUMPS[1])}
+        ${fact(PUMPS[2])}`)}`),
+    notes: [
+      ['Layout', ['The preview card carries the answer and its date, so a rider who never taps the link still gets a dated fact.', 'The opened page shows the linked fact first, outlined, with its two buttons already visible.', 'Everything else on the route sits below, so one link leads into the whole page.']],
+      ['Behaviour', ['Every fact has its own short address.', 'The preview text is fixed when the chat app first fetches it. It will not update later. That is acceptable because the date is written into the text.', 'The share button copies the fact’s address.']],
+      ['Data', ['Per fact: a title, one line of detail, a state, who confirmed it, and the date.', 'Per fuel fact: distance to the next pump.', 'One preview picture per fact, made when the site is built.']],
+    ],
+  },
+  /* 2 */
+  {
+    group: 'Arriving', title: 'All routes on the map',
+    lede: 'The front page. All fifty routes are here from the first day, whether or not their page is written.',
+    render: () => {
+      const regionChips = (on) => `<div class="hscroll">${['All', 'Ladakh', 'Himachal', 'Uttarakhand', 'North-East'].map((l) => `<span class="chip ${l === on ? 'on' : ''}">${l}</span>`).join('')}</div>`;
+      const card = (n, level, sub, cls = '') => `<div class="rcard ${cls}"><div class="r1"><b>${n}</b>${level}</div><span class="hint">${sub}</span></div>`;
+      const full = '<span class="badge b-full">Full page</span>', basic = '<span class="badge b-plain">Basic page</span>', none = '<span class="badge b-unchecked">Not written yet</span>';
+      return phone('1. Map, with every route', `
+        ${head('Meel', '50 routes · 3 written in full', { back: false, right: `<span class="iconbtn">${ICON.list}</span>` })}
+        ${body(`
+          <span class="hint" style="font-size:13px;color:var(--ink)">Dated facts for Indian motorcycle routes. Every fact shows who confirmed it, and when.</span>
+          <div class="input">${ICON.search}<span>Search a route or place</span></div>
+          ${regionChips('Himachal')}
+          <div class="map">
+            <svg viewBox="0 0 366 270" preserveAspectRatio="none" aria-hidden="true">
+              <path d="M0 210 C60 180 90 200 140 170 S230 120 366 140" fill="none" stroke="var(--border)" stroke-width="18"/>
+              <path d="M0 80 C80 70 120 110 200 80 S300 40 366 60" fill="none" stroke="var(--border)" stroke-width="12"/>
+              <path d="M96 236 C110 200 120 180 138 160 S170 120 196 96 S240 60 286 40" fill="none" stroke="var(--sign)" stroke-width="4" stroke-linecap="round"/>
+              <path d="M60 250 C90 240 130 236 170 214 S230 170 262 150 S220 120 196 96" fill="none" stroke="var(--ink)" stroke-width="3" stroke-dasharray="1 7" stroke-linecap="round"/>
+              <path d="M30 150 C50 140 70 150 92 160" fill="none" stroke="var(--rule)" stroke-width="3" stroke-dasharray="6 6" stroke-linecap="round"/>
+            </svg>
+            <div class="pin full" style="left:58%;top:30%"><span>Manali to Leh</span><i></i></div>
+            <div class="pin" style="left:62%;top:74%"><span>Spiti circuit</span><i></i></div>
+            <div class="pin none" style="left:20%;top:52%"><span>Sach Pass</span><i></i></div>
+            <span class="credit">Map data: OpenStreetMap contributors</span>
+          </div>
+          <div class="legend"><span><i class="l-full"></i>Full page</span><span><i class="l-basic"></i>Basic page</span><span><i class="l-none"></i>Not written yet</span></div>
+          <div class="sec-h"><h3>Himachal</h3><span class="hint">6 routes</span></div>
+          ${card('Spiti circuit', basic, 'Shimla, Kaza, Kunzum La, Manali · 23 facts')}
+          ${card('Sach Pass and Pangi valley', none, '2 riders have sent a trip report', 'unwritten')}`)}
+        ${tabbar('Routes')}`)
+      + phone('2. The same, as a list', `
+        ${head('Meel', '50 routes · 3 written in full', { back: false, right: `<span class="iconbtn">${ICON.map}</span>` })}
+        ${body(`
+          <div class="input">${ICON.search}<span>Search a route or place</span></div>
+          ${regionChips('Ladakh')}
+          <div class="sec-h"><h3>Ladakh</h3><span class="hint">5 routes</span></div>
+          ${card('Manali to Leh', full, '104 facts · 12 confirmed by riders this week')}
+          ${card('Srinagar to Leh', basic, '21 facts · checked by the editor in March 2027')}
+          ${card('Nubra valley and Turtuk', basic, '19 facts · checked by the editor in March 2027')}
+          ${card('Pangong, Hanle and Tso Moriri', basic, '22 facts · 6 riders have sent a trip report')}
+          ${card('Umling La', none, 'No page yet. Ridden it? Send a trip report.', 'unwritten')}`)}
+        ${tabbar('Routes')}`)
+      + phone('3. Search finds nothing', `
+        ${head('Meel', '50 routes · 3 written in full', { back: false, right: `<span class="iconbtn">${ICON.map}</span>` })}
+        ${body(`
+          <div class="input filled focus">${ICON.search}<span>Valley of Flowers</span></div>
+          <div class="empty"><b>No route called “Valley of Flowers” yet</b><span>Meel has 50 routes so far. Tell us about this one and it goes on the list.</span><span class="btn btn-soft">${ICON.plus}Suggest this place</span></div>
+          <div class="lbl">Nearby routes that are here</div>
+          ${card('Char Dham', basic, 'Yamunotri, Gangotri, Kedarnath, Badrinath · 24 facts')}
+          ${card('Chopta and Tungnath', basic, '18 facts')}`)}
+        ${tabbar('Routes')}`);
+    },
+    notes: [
+      ['Layout', ['Three kinds of route card: full page, basic page, not written yet. The dashed card is the unwritten one.', 'A card says how much is behind it: number of facts, and how recently riders confirmed them.', 'Region filters scroll sideways. South, West, Central and the rest sit further along the row.']],
+      ['Behaviour', ['Search looks at route names and at the places inside each route.', 'No match is not an error. It offers to take the suggestion and shows the nearest routes that exist.', '“Suggest this place” opens the chat app with a message ready, the same way the fact buttons do.']],
+      ['Data', ['Per route: name, region, the places along it, a line on the map, page level, number of facts.', '“Confirmed this week” is counted when the site is rebuilt, not live.']],
+      ['Open question', ['The map must show India’s borders the way Indian law requires. Which map source does that needs checking before launch. The frames deliberately show a region, never a country outline.'], 'q'],
+    ],
+  },
+  /* no network */
+  {
+    group: 'Arriving', title: 'No network on the road',
+    lede: 'Most of this route has no signal. A page the rider saved must still open, still show its dates, and still let them report. The example day here is Friday 18 June 2027.',
+    render: () => phone('1. Saving a route before leaving', `
+      ${head('Manali to Leh', 'Full page · 104 facts', { right: shareBtn })}
+      ${body(`
+        ${routeHead('Manali to Leh', 'NH 3', '427', 'Himachal Pradesh and Ladakh · over Baralacha La and Tanglang La')}
+        <div class="keys"><div><span>Usual days</span><b>2 to 3</b></div><div><span>Highest point</span><b>5,328 m</b></div><div><span>Usually open</span><b>Jun to Oct</b></div></div>`)}
+      <div class="sheet-scrim"></div>
+      <div class="sheet"><span class="grab"></span>
+        <h3>Save Manali to Leh to this phone?</h3>
+        <p>It will open with no network. You get every fact with its date, the fuel check, the altitude plan and the packing list.</p>
+        <div class="rows">
+          <div class="row"><span class="grow"><b>Saved</b><span class="hint">104 facts and 4 tools</span></span><span class="num">1.2 MB</span></div>
+          <div class="row"><span class="grow"><b>Not saved</b><span class="hint">The map and the videos need a network</span></span></div>
+        </div>
+        <div class="callout warn"><b>Saved facts do not update themselves</b>Open this page once more while you still have signal, on the morning you leave.</div>
+        <span class="btn btn-primary btn-block" style="height:46px">${ICON.save}Save to this phone</span>
+      </div>`)
+    + phone('2. Opened with no network', `
+      ${head('Manali to Leh', 'Fuel')}
+      <div class="offline">${ICON.wifiOff}<span>No network. Showing what this phone saved on Thursday 17 June, 6:40 am.</span></div>
+      ${body(`
+        ${sectionChips('Fuel')}
+        <div class="sec-h"><h3>Fuel</h3><span class="hint">4 pumps</span></div>
+        ${gapStrip}
+        ${fact({ t: 'Tandi petrol pump', d: 'Petrol and diesel. Open 7 am to 7 pm. 61 km from Manali.', state: 'fresh', line: 'Confirmed working by Imran S. · 12 June 2027 · 6 days ago' })}
+        ${fact({ t: 'Keylong petrol pump', d: 'Petrol and diesel. Last pump before a 323 km gap.', state: 'fresh', line: 'Confirmed working by Rahul N. · 14 June 2027 · 4 days ago' })}
+        ${fact({ t: 'Karu petrol pump', d: 'First pump after the gap. 35 km before Leh.', state: 'stale', line: 'Confirmed working by Dev R. · 2 October 2026 · 8 months ago' })}`)}`, '2:15')
+    + phone('3. Reporting with no network', `
+      ${head('Manali to Leh', 'Fuel')}
+      <div class="offline">${ICON.wifiOff}<span>No network. Showing what this phone saved on Thursday 17 June, 6:40 am.</span></div>
+      ${body(`${fact({ t: 'Karu petrol pump', d: 'First pump after the gap. 35 km before Leh.', state: 'stale', line: 'Confirmed working by Dev R. · 2 October 2026 · 8 months ago', open: true })}`)}
+      <div class="sheet-scrim"></div>
+      <div class="sheet"><span class="grab"></span>
+        <h3>Karu petrol pump is still working?</h3>
+        <p>You have no network. Your chat app will hold the message and send it by itself when the signal returns.</p>
+        <div class="field"><label>When were you there?</label>
+          <div class="radio-list"><div class="on"><span class="radio"></span>Today, 18 June</div><div><span class="radio"></span>Yesterday, 17 June</div><div><span class="radio"></span>Another day</div></div></div>
+        <div class="callout"><b>The day you saw it is what counts</b>The message carries 18 June, even if it is sent two days from now.</div>
+        <span class="btn btn-primary btn-block" style="height:46px">${ICON.send}Open chat app</span>
+      </div>`, '2:16'),
+    notes: [
+      ['Why this screen exists', ['Between Darcha and Upshi there is almost no signal. That is where a rider most needs the page.', 'A site that only works with a network fails on the road it describes.']],
+      ['Behaviour', ['Saving is the rider’s choice, one route at a time. Nothing is saved without asking.', 'The dark bar says when the saved copy was made. Ages are still worked out from today’s date, so a fact keeps ageing while the phone is offline.', 'With no network, “Send without a chat app” is hidden. The chat app can hold a message for later. A web form cannot.']],
+      ['Data', ['Nothing new. The saved copy is the same facts, stored on the phone.', 'Videos and the map are left out to keep the saved copy small.']],
+      ['Open question', ['Can the map be saved for one route? It would make the saved copy many times larger. Proposed: not in the first version.'], 'q'],
+    ],
+  },
+  /* 3 */
+  {
+    group: 'A route', title: 'Full page: Manali to Leh',
+    lede: 'A route that riders report on. Every section is a short list of dated facts, not an article.',
+    render: () => phone('1. Top of the page', `
+      ${head('Manali to Leh', 'Full page · 104 facts', { right: `<span class="iconbtn">${ICON.share}</span>` })}
+      ${body(`
+        ${routeHead('Manali to Leh', 'NH 3', '427', 'Himachal Pradesh and Ladakh · over Baralacha La and Tanglang La')}
+        <div class="keys"><div><span>Usual days</span><b>2 to 3</b></div><div><span>Highest point</span><b>5,328 m</b></div><div><span>Usually open</span><b>Jun to Oct</b></div></div>
+        <div class="rows">
+          <div class="row"><span class="ic">${ICON.flag}</span><span class="grow"><b>Is it open? Where to check today</b><span class="hint">5 official sources · we link, we do not guess</span></span>${chev}</div>
+          <div class="row"><span class="ic">${ICON.save}</span><span class="grow"><b>Save for the road</b><span class="hint">Works with no network</span></span>${chev}</div>
+        </div>
+        <div class="lbl">On this page</div>
+        <div class="rows">
+          <div class="row"><span class="ic">${ICON.fuel}</span><span class="grow"><b>Fuel</b><span class="hint">4 pumps · longest gap 323 km</span></span><span class="badge b-ageing">1 ageing</span>${chev}</div>
+          <div class="row"><span class="ic">${ICON.shield}</span><span class="grow"><b>Rules for motorcycles</b><span class="hint">Permits, fees, rental bikes · 9 facts</span></span>${chev}</div>
+          <div class="row"><span class="ic">${ICON.peak}</span><span class="grow"><b>Altitude and night halts</b><span class="hint">6 halts</span></span>${chev}</div>
+          <div class="row"><span class="ic">${ICON.signal}</span><span class="grow"><b>Mobile network</b><span class="hint">8 halts</span></span><span class="badge b-stale">3 stale</span>${chev}</div>
+          <div class="row"><span class="ic">${ICON.wrench}</span><span class="grow"><b>Mechanics and puncture repair</b><span class="hint">6 shops</span></span>${chev}</div>
+          <div class="row"><span class="ic">${ICON.clock}</span><span class="grow"><b>Real riding hours</b><span class="hint">5 legs · from 23 trip reports</span></span>${chev}</div>
+          <div class="row"><span class="ic">${ICON.bed}</span><span class="grow"><b>Stays</b><span class="hint">8 places</span></span>${chev}</div>
+        </div>`)}`)
+    + phone('2. Fuel', `
+      ${head('Manali to Leh', 'Fuel')}
+      ${body(`
+        ${sectionChips('Fuel')}
+        <div class="sec-h"><h3>Fuel</h3><span class="hint">4 pumps</span></div>
+        ${gapStrip}
+        <span class="btn btn-primary btn-block" style="height:46px">${ICON.fuel}Check fuel for your bike</span>
+        ${PUMPS.map((p) => fact(p)).join('')}`)}`)
+    + phone('3. Mechanics', `
+      ${head('Manali to Leh', 'Mechanics and puncture repair')}
+      ${body(`
+        ${sectionChips('Mechanics')}
+        <div class="sec-h"><h3>Mechanics</h3><span class="hint">6 shops</span></div>
+        ${fact({ t: 'Tashi Motor Works, Keylong', d: 'Royal Enfield and KTM. Tubeless and tube punctures. Carries clutch and brake cables.<br><span class="link num">+91 94180 •• 012</span>', state: 'fresh', line: 'Confirmed by Imran S. · 12 June 2027 · 2 days ago' })}
+        ${fact({ t: 'Negi Puncture Shop, Jispa', d: 'Punctures only. No spares.<br><span class="link num">+91 98160 •• 447</span>', state: 'ageing', line: 'Confirmed by Kavya M. · 9 November 2026 · 7 months ago' })}
+        ${fact({ t: 'Tent mechanic, Sarchu', d: 'Seasonal. Sets up beside the dhabas in summer.', state: 'conflict', line: 'Dev R. found it closed on 10 June 2027 · Anjali T. used it on 8 June 2027' })}
+        ${fact({ t: 'Stanzin Bike Point, Upshi', d: 'General repairs. Welding.<br><span class="link num">+91 94191 •• 380</span>', state: 'stale', line: 'Confirmed by Dev R. · 14 August 2025 · 22 months ago' })}`)}`),
+    notes: [
+      ['Layout', ['The route header is drawn as a kilometre stone: highway number on the yellow cap, distance on the body.', 'The section list shows a warning pill only when something inside is ageing or stale. Most rows stay quiet.', 'In a list, a fact is compact. Tapping it opens the fact with its history and the two buttons.']],
+      ['Behaviour', ['“Is it open?” never answers yes or no. It leads to the official sources. See the next screen.', 'The fuel strip is drawn to scale, so the 323 km gap looks as long as it is.', 'Phone numbers are tap-to-call.']],
+      ['Data', ['Route header: highway number, distance, usual days, highest point, usual season.', 'Per mechanic: name, village, phone, what they can fix, who confirmed, date.', 'Phone numbers are masked in this example.']],
+      ['Open question', ['Should a shop’s phone number be shown only with the shop’s agreement? A number in a chat group is private. A number on a website is public.'], 'q'],
+    ],
+  },
+  /* 4 */
+  {
+    group: 'A route', title: 'Is it open? Where to check today',
+    lede: 'The site never says a road is open or closed. It shows who decides, where they announce it, and when they last spoke.',
+    render: () => {
+      const src = (who, what, where, when, st) => `<div class="fact"><div class="fact-h"><b>${who}</b>${st}</div><div class="fact-d">${what}</div><div class="fact-src">${where} · ${when}</div><span class="btn btn-soft" style="align-self:flex-start;height:44px;margin-top:4px">${ICON.ext}Open their page</span></div>`;
+      return phone('1. In season', `
+        ${head('Manali to Leh', 'Is it open?')}
+        ${body(`
+          <div class="callout info"><b>We do not say open or closed</b>Conditions change by the hour. These are the offices that decide, and where each one announces it.</div>
+          ${src('Lahaul and Spiti Police', 'Daily road and weather advisories for Manali to Sarchu.', 'Their social media page', 'last post seen 13 June 2027', '<span class="badge b-fresh">Posted yesterday</span>')}
+          ${src('Border Roads Organisation', 'Says when snow clearance is finished and the road is connected.', 'Their social media page', 'last post seen 2 June 2027', '<span class="badge b-plain">12 days ago</span>')}
+          ${src('Ladakh Police', 'Notices for Sarchu to Leh, including winter closure.', 'Tourist app and notices', 'last notice seen 28 May 2027', '<span class="badge b-plain">17 days ago</span>')}`)}`)
+      + phone('2. What riders saw, with dates', `
+        ${head('Manali to Leh', 'Is it open?')}
+        ${body(`
+          <div class="sec-h"><h3>Riders’ sightings</h3><span class="hint">Not official</span></div>
+          ${fact({ t: 'Gata Loops are a dirt track', d: 'Detour at Whisky Nala, steep and narrow. Leh to Jispa took 8 hours.', state: 'fresh', line: 'Seen by Imran S. on a Himalayan 450 · 12 June 2027' })}
+          ${fact({ t: 'Water crossing before Zingzingbar', d: 'Knee deep after 2 pm. Shallow before 10 am.', state: 'fresh', line: 'Seen by Kavya M. on a Classic 350 · 11 June 2027' })}
+          <div class="sec-h"><h3>Were motorcycles allowed?</h3></div>
+          <div class="tl">
+            <div><span>1 June 2027</span><b>Open to all vehicles, both ways</b></div>
+            <div><span>19 May 2027</span><b>Connected. Four-wheel drive only. Motorcycles not allowed.</b></div>
+            <div><span>8 Dec 2026</span><b>Closed for winter</b></div>
+          </div>
+          <span class="hint">Each line links to the order or news report it came from.</span>`)}`)
+      + phone('3. In winter', `
+        ${head('Manali to Leh', 'Is it open?')}
+        ${body(`
+          <div class="callout warn"><b>Last official word: closed for winter</b>Ladakh Police notice, 8 December 2026. We have seen no opening notice since.<br><span class="link">Read the notice</span></div>
+          <div class="sec-h"><h3>When it opened before</h3><span class="hint">5 years</span></div>
+          <div class="tl">
+            <div><span>2027</span><b>Connected 19 May · open to bikes 1 June</b></div>
+            <div><span>2026</span><b>Connected mid-May · open to bikes 1 June</b></div>
+            <div><span>2025</span><b>Connected 12 May · bikes a few days later</b></div>
+            <div><span>2024</span><b>Not yet entered</b></div>
+            <div><span>2023</span><b>Not yet entered</b></div>
+          </div>
+          <div class="callout"><b>Planning for next season?</b>The road has opened to motorcycles in the first week of June in each year we have on record.</div>`, )}`, '9:10');
+    },
+    notes: [
+      ['Why it works this way', ['One person cannot keep daily road status. The best existing site was 16 and 53 days behind when checked.', 'A wrong “open” could put a rider on a closed pass. A link with a date cannot be wrong in that way.', '“Is it open?” is really four questions: which vehicles, which direction, which hours, which days. The motorcycle line answers the one nobody else records.']],
+      ['Behaviour', ['“Last post seen” is the date the editor last looked, typed by hand. It is not fetched automatically in the first version.', 'Riders’ sightings are kept apart from official sources and labelled “not official”.', 'A year with no entry says “not yet entered”. It is never left blank or guessed.']],
+      ['Data', ['Per source: office, what it announces, which stretch, where it announces, date last seen.', 'Per year: date connected, date opened to motorcycles, date closed, and a link for each.', 'Per sighting: what, where, who, bike, date.']],
+      ['Open question', ['Should the editor look at each source daily in season, or only record the date when a rider reports a change? The first is about ten minutes a day.'], 'q'],
+    ],
+  },
+  /* permits and rules */
+  {
+    group: 'A route', title: 'Rules and permits, with their history',
+    lede: 'Rules changed about once a year between 2021 and 2026. The page keeps every change with its date, so a rider can tell a current rule from an old blog post.',
+    render: () => phone('1. Rules for motorcycles', `
+      ${head('Manali to Leh', 'Rules for motorcycles')}
+      ${body(`
+        ${sectionChips('Bike rules')}
+        <div class="sec-h"><h3>Rules for motorcycles</h3><span class="hint">9 facts</span></div>
+        ${fact({ t: 'Ladakh: no permit for Indian citizens', d: 'You pay a fee online before you arrive. Carry the receipt.', state: 'fresh', line: 'Checked by the editor against the Leh permit site · 2 June 2027' })}
+        ${fact({ t: 'Atal Tunnel: no Rohtang permit needed', d: 'The permit is only for riding over Rohtang Pass itself.', state: 'ageing', line: 'Checked by the editor against the Kullu permit site · 12 November 2026 · 7 months ago' })}
+        ${fact({ t: 'Rental bikes from outside Ladakh', d: 'Riders report being turned back beyond Leh town. Your own bike is not affected.', state: 'unchecked', line: 'No government order found · reported by riders and by a newspaper in May 2023' })}
+        ${fact({ t: 'First days after the road opens', d: 'Motorcycles have been kept off for some days after the road is first connected.', state: 'fresh', line: 'From the season history · last seen May 2027' })}`)}`)
+    + phone('2. One rule, with every change', `
+      ${head('Manali to Leh', 'Rules for motorcycles')}
+      ${body(`${fact({ t: 'Ladakh: no permit for Indian citizens', d: 'You pay a fee online before you arrive.', state: 'fresh', line: 'Checked by the editor · 2 June 2027' })}`)}
+      <div class="sheet-scrim"></div>
+      <div class="sheet"><span class="grab"></span>
+        <div class="fact-h"><h3>Ladakh permit and fee</h3>${badge('fresh')}</div>
+        <p>Indian citizens need no permit. A fee is paid online and the receipt is carried. Foreign citizens still need a permit, through a registered agent in Leh.</p>
+        <span class="btn btn-soft" style="align-self:flex-start;height:44px">${ICON.ext}Open the official permit site</span>
+        <div class="lbl">What changed, and when</div>
+        <div class="tl">
+          <div><span>2 June 2027</span><b>Checked. No change.</b></div>
+          <div><span>10 Aug 2021</span><b>Fee continues for Indian tourists. <span class="link">Official notice</span></b></div>
+          <div><span>Aug 2021</span><b>Permit dropped for Indian citizens.</b></div>
+          <div><span>Before 2021</span><b>Permit needed for Nubra, Pangong and Tso Moriri.</b></div>
+        </div>
+        ${twoButtons}
+      </div>`)
+    + phone('3. Changed since your last visit', `
+      ${head('Manali to Leh', 'Rules for motorcycles')}
+      ${body(`
+        <div class="callout stone"><b>1 rule has changed since you were here on 2 May</b>It is outlined below.</div>
+        ${fact({ t: 'Rohtang permit site has moved', d: 'The old address no longer opens. Many guides still link to it.', state: 'fresh', line: 'Changed early 2026 · checked by the editor · 2 June 2027', hi: true,
+          extra: '<span class="btn btn-soft" style="align-self:flex-start;height:44px;margin-top:6px">' + ICON.ext + 'Open the new permit site</span>' })}
+        ${fact({ t: 'Ladakh: no permit for Indian citizens', d: 'You pay a fee online before you arrive. Carry the receipt.', state: 'fresh', line: 'Checked by the editor against the Leh permit site · 2 June 2027' })}
+        ${fact({ t: 'Atal Tunnel: no Rohtang permit needed', state: 'ageing', line: 'Checked by the editor · 12 November 2026 · 7 months ago' })}`)}`),
+    notes: [
+      ['Layout', ['Each rule is a fact like any other, with the same states and the same two buttons.', 'A rule with no official order behind it says so. The rental-bike rule is enforced by local unions, and the page does not dress it up as law.', 'The official site is one tap away from the rule.']],
+      ['Behaviour', ['“Checked. No change.” is recorded too. It proves the rule was looked at, which an untouched page cannot.', 'The page remembers, on the rider’s own phone, when they last visited, and outlines what changed since.', 'A rule ages after 6 months and goes stale after 12.']],
+      ['Data', ['Per rule: the rule in one sentence, who set it, the official link, the date checked.', 'Per change: date, what changed, a link to the notice or report.', 'Fee amounts are left out of these frames. They came only from tour operators’ pages and have not been checked.']],
+    ],
+  },
+  /* network, hours, stays */
+  {
+    group: 'A route', title: 'Network, riding hours and stays',
+    lede: 'Three sections that only riders can fill. Each one answers a question that a map app gets wrong or cannot answer.',
+    render: () => {
+      const c = (k, t, d) => `<span class="${k}"><b>${t}</b>${d ? `<small>${d}</small>` : ''}</span>`;
+      const Y = (d) => c('cy', 'Worked', d), N = (d) => c('cn', 'No signal', d), U = () => c('cu', 'No report', '');
+      const row = (h, a, b, d) => `<div class="gr"><span><b>${h}</b></span>${a}${b}${d}</div>`;
+      const stay = (t, d, st, line) => fact({ t, d, state: st, line });
+      return phone('1. Mobile network, halt by halt', `
+        ${head('Manali to Leh', 'Mobile network')}
+        ${body(`
+          ${sectionChips('Network')}
+          <div class="callout warn"><b>Bring a postpaid SIM</b>Riders report that prepaid SIMs from other states do not work in Ladakh. No official order found.</div>
+          <div class="grid-net">
+            <div class="gr gh"><span>Halt</span><span>Jio</span><span>Airtel</span><span>BSNL</span></div>
+            ${row('Keylong', Y('Jun 2027'), Y('Jun 2027'), Y('May 2027'))}
+            ${row('Jispa', Y('Jun 2027'), N('Jun 2027'), Y('Sept 2026'))}
+            ${row('Sarchu', Y('Jun 2027'), N('Jun 2027'), U())}
+            ${row('Pang', N('Jun 2027'), N('Jun 2027'), N('Aug 2026'))}
+            ${row('Upshi', Y('Jun 2027'), Y('Sept 2026'), Y('Sept 2026'))}
+            ${row('Leh', Y('Jun 2027'), Y('Jun 2027'), Y('Jun 2027'))}
+          </div>
+          <span class="hint">Each cell is the newest report. Tap one to see who reported it and the older ones.</span>`)}`)
+      + phone('2. Real riding hours', `
+        ${head('Manali to Leh', 'Real riding hours')}
+        ${body(`
+          <div class="callout"><b>Map apps are wrong here</b>They assume a car on a good road. These are hours riders took, with stops.</div>
+          ${leg('Manali to Jispa', 91, 3.5, 2.75, 5, 2.5, 23)}
+          ${leg('Jispa to Sarchu', 84, 4.5, 3.5, 6.5, 2.75, 21)}
+          ${leg('Sarchu to Pang', 75, 4, 3, 6, 2.25, 19)}
+          ${leg('Pang to Tanglang La', 69, 2.5, 2, 3.5, 1.75, 19)}
+          <div class="scale"><span>0</span><span>2 h</span><span>4 h</span><span>6 h</span><span>8 h</span></div>
+          <div class="legend"><span><i style="border-top:10px solid var(--sign-line);border-radius:5px"></i>Quickest to slowest</span><span><i style="width:4px;height:14px;border:0;background:var(--sign);border-radius:2px"></i>Usual</span><span><i style="width:0;height:14px;border:0;border-left:2px dashed var(--ink-2)"></i>Map app</span></div>`)}`)
+      + phone('3. Stays with no online listing', `
+        ${head('Manali to Leh', 'Stays')}
+        ${body(`
+          <div class="hscroll"><span class="chip on">All halts</span><span class="chip">Jispa</span><span class="chip">Sarchu</span><span class="chip">Pang</span></div>
+          <div class="sec-h"><h3>Stays</h3><span class="hint">8 places</span></div>
+          ${stay('Padma Homestay, Jispa', 'Bikes park inside the gate. Hot water by the bucket. Dinner cooked at home.<br><span class="link num">+91 94182 •• 655</span>', 'fresh', 'Stayed and confirmed by Kavya M. · 11 June 2027 · 3 days ago')}
+          ${stay('Roadside tents, Sarchu', 'Open June to September. Bikes park beside the tent. Very cold at night.', 'fresh', 'Stayed and confirmed by Imran S. · 12 June 2027 · 2 days ago')}
+          ${stay('Dorje’s Dhaba, Pang', 'Beds in a shared room behind the dhaba. No phone.', 'ageing', 'Stayed and confirmed by Dev R. · 20 September 2026 · 9 months ago')}`)}`);
+    },
+    notes: [
+      ['Layout', ['Network is a grid because riders compare operators across halts. Each cell carries its own month.', 'Riding hours are drawn as a range on one scale of 0 to 8 hours, so legs can be compared at a glance. The dashed line is what a map app claims.', 'A stay records what a rider cares about: where the bike sleeps.']],
+      ['Behaviour', ['“No report” is different from “no signal”. One is a gap in our knowledge, the other is a fact.', 'Riding hours show the usual time and the spread. One slow rider does not move the usual figure much.', 'A leg with fewer than 5 reports shows the reports themselves and no range.']],
+      ['Data', ['Per network report: halt, operator, worked or not, month, who.', 'Per leg: each rider’s hours, month and bike. The map app’s figure is entered once by the editor.', 'Per stay: name, village, phone if the owner agrees, bike parking, notes, who, date.']],
+      ['Open question', ['Prices for stays change every season. Show them with a date, or leave them out?'], 'q'],
+    ],
+  },
+  /* 5 */
+  {
+    group: 'A route', title: 'Basic page: Kolli Hills',
+    lede: 'A route with a page but no rider reports yet. It holds only facts that change slowly, gathered from official and published sources.',
+    render: () => phone('1. Top of the page', `
+      ${head('Kolli Hills', 'Basic page · 14 facts', { right: `<span class="iconbtn">${ICON.share}</span>` })}
+      ${body(`
+        ${routeHead('Kolli Hills', 'SH 161', '46', 'Tamil Nadu · 70 hairpin bends from Karavalli to Semmedu')}
+        <div class="keys"><div><span>Usual days</span><b>1</b></div><div><span>Highest point</span><b>1,300 m</b></div><div><span>Best months</span><b>Oct to Feb</b></div></div>
+        <div class="callout"><b>This is a basic page</b>No rider has reported on this route yet. What is here comes from official and published sources.</div>
+        <div class="lbl">On this page</div>
+        <div class="rows">
+          <div class="row"><span class="ic">${ICON.fuel}</span><span class="grow"><b>Fuel</b><span class="hint">2 pumps · longest gap 38 km</span></span>${chev}</div>
+          <div class="row"><span class="ic">${ICON.shield}</span><span class="grow"><b>Rules for motorcycles</b><span class="hint">Forest check post timings · 3 facts</span></span>${chev}</div>
+          <div class="row"><span class="ic">${ICON.bag}</span><span class="grow"><b>Packing list</b><span class="hint">By month</span></span>${chev}</div>
+          <div class="row"><span class="ic">${ICON.play}</span><span class="grow"><b>Videos</b><span class="hint">4 rider videos</span></span>${chev}</div>
+        </div>`)}`)
+    + phone('2. What is missing, and how it arrives', `
+      ${head('Kolli Hills', 'Basic page · 14 facts')}
+      ${body(`
+        <div class="lbl">Not here yet</div>
+        <div class="rows locked">
+          <div class="row"><span class="ic">${ICON.wrench}</span><span class="grow"><b>Mechanics and puncture repair</b></span>${ICON.lock}</div>
+          <div class="row"><span class="ic">${ICON.signal}</span><span class="grow"><b>Mobile network</b></span>${ICON.lock}</div>
+          <div class="row"><span class="ic">${ICON.clock}</span><span class="grow"><b>Real riding hours</b></span>${ICON.lock}</div>
+          <div class="row"><span class="ic">${ICON.bed}</span><span class="grow"><b>Stays</b></span>${ICON.lock}</div>
+        </div>
+        <div class="callout info"><b>These come from riders, not from us</b>They appear when riders who have done this route send a trip report. It takes about three minutes.</div>
+        <div class="lbl">What a trip report asks</div>
+        <div class="rows">
+          <div class="row"><span class="grow"><b>Route, month and bike</b><span class="hint">Needed</span></span></div>
+          <div class="row"><span class="grow"><b>Riding hours, fuel stops, mechanics, gear, cost, a video</b><span class="hint">Optional. Fill in what you remember.</span></span></div>
+        </div>`)}
+      <div class="pfoot"><span class="hint">0 trip reports for Kolli Hills so far</span><span class="btn btn-primary btn-block">I have ridden this · send a trip report</span></div>`)
+    + phone('3. A fact not yet checked', `
+      ${head('Kolli Hills', 'Rules for motorcycles')}
+      ${body(`
+        <div class="sec-h"><h3>Rules for motorcycles</h3><span class="hint">3 facts</span></div>
+        ${fact({ t: 'No permit needed', d: 'The hill road is a public state highway.', state: 'fresh', line: 'Checked by the editor against the district website · 2 March 2027' })}
+        ${fact({ t: 'Forest check post at the foot of the ghat', d: 'Reported to close to vehicles at night.', state: 'unchecked', line: 'From a published travel guide · entered 20 February 2027 · the editor has not confirmed the hours', open: true })}
+        ${fact({ t: 'Helmets for rider and pillion', d: 'Checked at the foot of the ghat.', state: 'unchecked', line: 'From a published travel guide · entered 20 February 2027' })}`)}`),
+    notes: [
+      ['Layout', ['Same header and same fact cards as a full page, so a rider learns the site once.', 'The missing sections are listed, dimmed and locked. The page is open about what it does not know.', 'The one call to action is pinned at the bottom: send a trip report.']],
+      ['Behaviour', ['A fact that was gathered but not yet checked is shown, with a dashed “not yet checked” pill. It is never shown as confirmed.', 'When the first trip report for a route arrives, its locked sections start to open one by one.']],
+      ['Data', ['A basic page needs about 14 to 20 facts: header, season, fuel, rules, packing, videos.', 'None of it needs a rider. All of it can be gathered at a desk.', 'Kolli Hills figures here are examples and have not been researched.']],
+    ],
+  },
+  /* 6 */
+  {
+    group: 'A route', title: 'A route not written yet',
+    lede: 'The route is on the map, but its page has no facts. The page says so and asks for one thing.',
+    render: () => phone('1. Nobody has reported yet', `
+      ${head('Umling La', 'Not written yet')}
+      ${body(`
+        ${routeHead('Umling La', '—', '?', 'Ladakh · beyond Hanle')}
+        <div class="empty"><b>This page is not written yet</b><span>We have no checked facts for Umling La. We would rather show nothing than show a guess.</span></div>
+        <div class="callout info"><b>Ridden it?</b>Your trip report is how this page starts. Route, month and bike are enough. Everything else is optional.</div>
+        <div class="lbl">Written routes nearby</div>
+        <div class="rcard"><div class="r1"><b>Pangong, Hanle and Tso Moriri</b><span class="badge b-plain">Basic page</span></div><span class="hint">22 facts</span></div>`)}
+      <div class="pfoot"><span class="btn btn-primary btn-block">I have ridden this · send a trip report</span></div>`)
+    + phone('2. Reports are arriving', `
+      ${head('Sach Pass and Pangi valley', 'Not written yet')}
+      ${body(`
+        ${routeHead('Sach Pass', '—', '?', 'Himachal Pradesh · Pangi valley, Killar to Kishtwar')}
+        <div class="callout stone"><b>2 riders have sent a trip report</b>The page is being written. It moves up the list with each report.</div>
+        <div class="sec-h"><h3>What riders told us</h3><span class="hint">Not yet checked</span></div>
+        ${fact({ t: 'Rode it in July on an Xpulse 200', d: 'Bairagarh to Killar took 7 hours.', state: 'unchecked', line: 'Trip report from Dev R. · July 2026' })}
+        ${fact({ t: 'Rode it in September on a Himalayan 411', d: 'Carried 5 litres of extra fuel and used it.', state: 'unchecked', line: 'Trip report from Kavya M. · September 2026' })}`)}
+      <div class="pfoot"><span class="btn btn-primary btn-block">I have ridden this · send a trip report</span></div>`),
+    notes: [
+      ['Empty is not an error', ['An unwritten page is an invitation, not a dead end.', 'It shows nearby routes that do have pages, so the visit is not wasted.', 'The count of reports received tells riders their report will not be the only one.']],
+      ['Behaviour', ['Reports for unwritten routes decide which page gets written next.', 'A route’s first reports are shown as received, marked “not yet checked”, until the editor builds the page.']],
+      ['Data', ['An unwritten route needs only: name, region, and the places along it.', 'The distance and highway number stay blank until someone has checked them.']],
+    ],
+  },
+  /* 7 */
+  {
+    group: 'Facts', title: 'The five states of a fact',
+    lede: 'Every fact shows its age. This is the part of the design everything else depends on.',
+    render: () => phone('1. All five, side by side', `
+      ${head('Manali to Leh', 'How to read a fact')}
+      ${body(`
+        ${fact({ t: 'Tandi petrol pump', state: 'fresh', line: 'Confirmed by Imran S. · 12 June 2027 · 2 days ago' })}
+        ${fact({ t: 'Keylong petrol pump', state: 'ageing', line: 'Confirmed by Anjali T. · 30 May 2027 · 15 days ago' })}
+        ${fact({ t: 'Karu petrol pump', state: 'stale', line: 'Confirmed by Dev R. · 2 October 2026 · 8 months ago' })}
+        ${fact({ t: 'Leh, two pumps in town', state: 'unchecked', line: 'From the oil company’s pump finder · no rider has confirmed it' })}
+        ${fact({ t: 'Tent mechanic, Sarchu', state: 'conflict', line: 'Closed on 10 June 2027 · open on 8 June 2027' })}
+        <div class="callout"><b>A stale fact stays on the page</b>Hiding it would lose the record. Showing it as current would mislead. So it stays, marked stale.</div>`)}`)
+    + phone('2. One fact opened, with its history', `
+      ${head('Manali to Leh', 'Fuel')}
+      ${body(`${fact(PUMPS[0])}${fact(PUMPS[1])}${fact(PUMPS[2])}`)}
+      <div class="sheet-scrim"></div>
+      <div class="sheet"><span class="grab"></span>
+        <div class="fact-h"><h3>Keylong petrol pump</h3>${badge('ageing')}</div>
+        <p>Petrol and diesel. Last pump before a 323 km gap.</p>
+        <div class="callout warn"><b>Ageing: last confirmed 15 days ago</b>A pump turns ageing after 7 days and stale after 21.</div>
+        <div class="lbl">History</div>
+        <div class="tl">
+          <div><span>30 May 2027</span><b>Confirmed working by Anjali T.</b></div>
+          <div><span>11 Oct 2026</span><b>Confirmed working by Dev R.</b></div>
+          <div><span>2 Sept 2026</span><b>First entered from the oil company’s pump finder</b></div>
+        </div>
+        ${twoButtons}
+      </div>`)
+    + phone('3. Reports disagree', `
+      ${head('Manali to Leh', 'Mechanics')}
+      ${body(`
+        ${fact({ t: 'Tashi Motor Works, Keylong', d: 'Royal Enfield and KTM. Tubeless and tube punctures.', state: 'fresh', line: 'Confirmed by Imran S. · 12 June 2027 · 2 days ago' })}
+        ${fact({ t: 'Negi Puncture Shop, Jispa', d: 'Punctures only. No spares.', state: 'ageing', line: 'Confirmed by Kavya M. · 9 November 2026 · 7 months ago' })}
+        ${fact({ t: 'Tent mechanic, Sarchu', d: 'Seasonal.', state: 'conflict', line: 'Closed on 10 June 2027 · open on 8 June 2027' })}`)}
+      <div class="sheet-scrim"></div>
+      <div class="sheet"><span class="grab"></span>
+        <div class="fact-h"><h3>Tent mechanic, Sarchu</h3>${badge('conflict')}</div>
+        <p>Seasonal. Sets up beside the dhabas in summer.</p>
+        <div class="callout"><b>Two riders saw different things</b>We show both, newest first. Do not count on this shop.</div>
+        <div class="tl">
+          <div><span>10 June 2027</span><b>Closed. Tent was there, nobody in it. Dev R.</b></div>
+          <div><span>8 June 2027</span><b>Open. Fixed a tube puncture. Anjali T.</b></div>
+        </div>
+        <span class="hint">Were you there after 10 June?</span>
+        ${twoButtons}
+      </div>`),
+    notes: [
+      ['The states', ['Fresh, ageing, stale: set by the age of the last confirmation, against limits for that kind of fact.', 'Not yet checked: gathered from a source, but neither the editor nor a rider has confirmed it.', 'Reports disagree: two riders reported different things. Both are shown. The site does not pick a winner.']],
+      ['Behaviour', ['Limits differ by kind of fact. A pump ages in 7 days. A permit rule ages in 6 months.', 'The age is worked out in the rider’s own browser from the date, so a page built last week still shows today’s age.', 'History is never deleted. A correction is added above the old entry.']],
+      ['Data', ['Per fact: kind, and a list of confirmations. Each confirmation has a date, a name, and a note.', 'Per kind of fact: the two limits, ageing and stale. About eight kinds in all.']],
+      ['Open question', ['Who settles a disagreement? Proposed: nobody. The newest report leads, and the next rider to pass breaks the tie.'], 'q'],
+    ],
+  },
+  /* 8 */
+  {
+    group: 'Facts', title: 'Still true',
+    lede: 'A rider confirms a fact without leaving their chat app and without an account.',
+    render: () => phone('1. The rider taps “Still true”', `
+      ${head('Manali to Leh', 'Fuel')}
+      ${body(`${fact({ ...PUMPS[1], open: true })}${fact(PUMPS[2])}`)}
+      <div class="sheet-scrim"></div>
+      <div class="sheet"><span class="grab"></span>
+        <h3>Keylong petrol pump is still working?</h3>
+        <p>This opens your chat app with a message ready to send to Meel. Nothing is sent until you press send there.</p>
+        <div class="field"><label>When were you there?</label>
+          <div class="radio-list"><div class="on"><span class="radio"></span>Today, 14 June</div><div><span class="radio"></span>Yesterday, 13 June</div><div><span class="radio"></span>Another day</div></div></div>
+        <div class="field"><label>Your name <em>optional, shown beside the fact</em></label><div class="input filled">Rahul N.</div></div>
+        <span class="btn btn-primary btn-block" style="height:46px">${ICON.send}Open chat app</span>
+        <span class="link" style="align-self:center">Send without a chat app</span>
+      </div>`)
+    + phone('2. The message, ready to send', `
+      <div class="chat">
+        <div class="chat-top">${ICON.back}<span class="chat-av">M</span><span><b>Meel</b><span>Business account</span></span></div>
+        <div class="chat-body"><div class="msg" style="align-self:center;max-width:92%;text-align:center;font-size:12px;color:var(--ink-2)">Messages here are read by the person who keeps Meel.</div></div>
+        <div class="chat-in"><span style="flex:1;white-space:pre-line">Still true: Keylong petrol pump
+Route: Manali to Leh
+Seen: 14 June 2027
+Name: Rahul N.</span><span class="send">${ICON.send}</span></div>
+      </div>`, '4:27')
+    + phone('3. Later, after the editor has read it', `
+      ${head('Manali to Leh', 'Fuel')}
+      ${body(`
+        ${fact({ t: 'Keylong petrol pump', d: 'Petrol and diesel. Last pump before a 323 km gap.', state: 'fresh', line: 'Confirmed working by Rahul N. · 14 June 2027 · today', hi: true })}
+        <div class="lbl">History</div>
+        <div class="tl">
+          <div><span>14 June 2027</span><b>Confirmed working by Rahul N.</b></div>
+          <div><span>30 May 2027</span><b>Confirmed working by Anjali T.</b></div>
+          <div><span>11 Oct 2026</span><b>Confirmed working by Dev R.</b></div>
+        </div>`)}`, '9:40'),
+    notes: [
+      ['Behaviour', ['The sheet says plainly what will happen: the chat app opens, and nothing is sent until the rider sends it.', 'The site cannot know whether the message was sent. So when the rider returns, the page does not say “sent” or “thank you”. The fact changes only after the editor has read the message.', 'The name is optional. With no name, the fact reads “confirmed by a rider”.']],
+      ['Way forward without a chat app', ['“Send without a chat app” opens a short web form with the same three fields.', 'Both paths reach the same inbox.']],
+      ['Data', ['Per confirmation: fact, date seen, name if given.', 'The editor updates the fact by hand. At hobby scale that is a minute per message.']],
+      ['Open question', ['Meel’s number is public. It should be a separate number, not a personal one. Which number?'], 'q'],
+    ],
+  },
+  /* 9 */
+  {
+    group: 'Facts', title: 'This has changed',
+    lede: 'A rider reports that a fact is wrong. The old fact is not overwritten.',
+    render: () => phone('1. What changed?', `
+      ${head('Manali to Leh', 'Mechanics')}
+      ${body(`${fact({ t: 'Stanzin Bike Point, Upshi', d: 'General repairs. Welding.', state: 'stale', line: 'Confirmed by Dev R. · 14 August 2025 · 22 months ago', open: true })}`)}
+      <div class="sheet-scrim"></div>
+      <div class="sheet"><span class="grab"></span>
+        <h3>What has changed at Stanzin Bike Point?</h3>
+        <div class="radio-list">
+          <div><span class="radio"></span>It has closed for good</div>
+          <div class="on"><span class="radio"></span>It has moved</div>
+          <div><span class="radio"></span>The phone number is wrong</div>
+          <div><span class="radio"></span>What they can fix is different</div>
+          <div><span class="radio"></span>Something else</div>
+        </div>
+        <div class="field"><label>Tell us what you saw</label><div class="input filled" style="height:auto;padding:10px 12px;line-height:19px">Moved about 2 km towards Leh, next to the petrol pump.</div></div>
+        <div class="field"><label>When were you there?</label><div class="input filled">13 June 2027</div></div>
+        <span class="btn btn-primary btn-block" style="height:46px">${ICON.send}Open chat app</span>
+      </div>`)
+    + phone('2. Before the editor has checked', `
+      ${head('Manali to Leh', 'Mechanics')}
+      ${body(`
+        ${fact({ t: 'Stanzin Bike Point, Upshi', d: 'General repairs. Welding.', state: 'pending', line: 'A rider reported a change on 13 June 2027. Being checked.', hi: true,
+          extra: '<div class="callout warn" style="margin-top:6px"><b>Reported: it has moved</b>“Moved about 2 km towards Leh, next to the petrol pump.” Rahul N., 13 June 2027</div>' })}
+        ${fact({ t: 'Tashi Motor Works, Keylong', state: 'fresh', line: 'Confirmed by Imran S. · 12 June 2027 · 2 days ago' })}`)}`, '9:40')
+    + phone('3. After the editor has checked', `
+      ${head('Manali to Leh', 'Mechanics')}
+      ${body(`
+        ${fact({ t: 'Stanzin Bike Point, Upshi', d: 'General repairs. Welding. Beside the petrol pump, 2 km from Upshi towards Leh.', state: 'fresh', line: 'Updated from Rahul N.’s report · 13 June 2027 · 1 day ago', hi: true })}
+        <div class="lbl">History</div>
+        <div class="tl">
+          <div><span>13 June 2027</span><b>Moved 2 km towards Leh. Reported by Rahul N.</b></div>
+          <div><span>14 Aug 2025</span><b>Confirmed at the old place in Upshi by Dev R.</b></div>
+        </div>`)}`, '11:05'),
+    notes: [
+      ['Behaviour', ['The report shows on the fact at once, in the rider’s own words, marked “being checked”. Other riders see the warning before the editor has acted.', 'The editor then rewrites the fact. The old entry moves into the history.', '“It has closed for good” does not delete the shop. The fact stays, marked closed, with the date.']],
+      ['Why the first step shows before checking', ['A rider about to rely on that shop needs the warning today, not after the editor’s next sitting.', 'The risk is a false report. At this scale the editor reads every message, and the report carries a name and a date.']],
+      ['Data', ['Per report: fact, what kind of change, the rider’s words, date seen, name if given.', 'Showing a report before checking needs the site to rebuild when a message arrives. Not possible with hand editing alone.']],
+      ['Open question', ['Frame 2 needs a small automatic step between the inbox and the site. Build that, or accept that reports only show after the editor acts?'], 'q'],
+    ],
+  },
+  /* 10 */
+  {
+    group: 'Tools', title: 'Fuel check',
+    lede: 'The rider picks a bike. The page says where on this route they must carry extra fuel.',
+    render: () => {
+      const bike = (n, t, on) => `<div class="${on ? 'on' : ''}"><span class="radio"></span><span style="flex:1">${n}</span><span class="hint num">${t}</span></div>`;
+      return phone('1. Pick a bike', `
+        ${head('Fuel check', 'Manali to Leh')}
+        ${body(`
+          <div class="input">${ICON.search}<span>Search your bike</span></div>
+          <div class="lbl">Bikes riders take most</div>
+          <div class="radio-list">
+            ${bike('Royal Enfield Classic 350', '13 litres', true)}
+            ${bike('Royal Enfield Himalayan 450', '17 litres')}
+            ${bike('KTM 390 Adventure', '14.5 litres')}
+            ${bike('Hero Xpulse 200 4V', '13 litres')}
+            ${bike('Royal Enfield Hunter 350', '13 litres')}
+            ${bike('Bajaj Dominar 400', '13 litres')}
+          </div>
+          <span class="link">My bike is not here</span>`)}
+        <div class="pfoot"><span class="btn btn-primary btn-block">Check this route</span></div>`)
+      + phone('2. Not enough: carry fuel', `
+        ${head('Fuel check', 'Classic 350 · Manali to Leh')}
+        ${body(`
+          <div class="result bad"><span class="lbl" style="color:var(--stale-fg)">Carry extra fuel</span>
+            <div class="big">2 litres <small>at least, from Keylong</small></div>
+            <span>Your safe range is 312 km. The gap from Keylong to Karu is 323 km.</span></div>
+          <div class="field"><label>Keylong to Karu · 323 km with no pump</label>
+            <div class="meter"><i class="short" style="width:96.6%"></i><u style="left:calc(100% - 2px)"></u></div>
+            <span class="hint num">Safe range 312 km · the line marks 323 km · 11 km short</span></div>
+          <div class="rows">
+            <div class="row"><span class="grow"><b>Tank</b></span><span class="num">13 litres</span></div>
+            <div class="row"><span class="grow"><b>Mileage at altitude</b><span class="hint">From 9 trip reports on this route</span></span><span class="num">30 km a litre</span></div>
+            <div class="row"><span class="grow"><b>Kept in reserve</b><span class="hint">One fifth of the tank</span></span><span class="num">2.6 litres</span></div>
+          </div>
+          <div class="callout warn"><b>Fill up at Keylong, not Tandi</b>Keylong’s pump was last confirmed 15 days ago. Check it before you count on it.</div>`)}`)
+      + phone('3. Enough: no extra fuel', `
+        ${head('Fuel check', 'Himalayan 450 · Manali to Leh')}
+        ${body(`
+          <div class="result ok"><span class="lbl" style="color:var(--fresh-fg)">No extra fuel needed</span>
+            <div class="big">44 km <small>to spare on the longest gap</small></div>
+            <span>Your safe range is 367 km. The gap from Keylong to Karu is 323 km.</span></div>
+          <div class="field"><label>Keylong to Karu · 323 km with no pump</label>
+            <div class="meter"><i style="width:100%"></i><u style="left:88%"></u></div>
+            <span class="hint num">Safe range 367 km · the line marks 323 km</span></div>
+          <div class="rows">
+            <div class="row"><span class="grow"><b>Tank</b></span><span class="num">17 litres</span></div>
+            <div class="row"><span class="grow"><b>Mileage at altitude</b><span class="hint">Maker’s figure, less one fifth. No trip reports yet.</span></span><span class="num">27 km a litre</span></div>
+            <div class="row"><span class="grow"><b>Kept in reserve</b><span class="hint">One fifth of the tank</span></span><span class="num">3.4 litres</span></div>
+          </div>
+          <div class="callout"><b>This assumes every pump is working</b>If Keylong has no fuel, the gap from Tandi is 331 km.</div>`)}`);
+    },
+    notes: [
+      ['The sum', ['Safe range = tank × mileage at altitude × four fifths. One fifth of the tank is never counted.', 'If the safe range is shorter than a gap, the shortfall is turned into litres, rounded up, plus one litre spare.', 'Classic 350: 13 × 30 × 0.8 = 312 km. Short by 11 km. Carry 2 litres.']],
+      ['Behaviour', ['The result says where the mileage figure came from: riders’ trip reports, or the maker’s figure reduced.', 'It warns when the pump it depends on has not been confirmed lately.', '“My bike is not here” asks for tank size and mileage by hand.', 'All of it runs on the page itself. No account, nothing sent anywhere.']],
+      ['Data', ['Per route: the distance between each pair of pumps.', 'Per bike, once for the whole site: tank size and mileage. About ten bikes to start.', 'Mileage at altitude improves as trip reports arrive.']],
+      ['Open question', ['Is one fifth in reserve the right margin? It is a guess. Riders who have done the route should set it.'], 'q'],
+    ],
+  },
+  /* altitude */
+  {
+    group: 'Tools', title: 'Altitude and night halts',
+    lede: 'The official rule is written for people who fly into Leh. A rider climbs over several days, and where they sleep matters more than how high they ride.',
+    render: () => {
+      const night = (n, place, alt, gain, cls, note) => `<div class="night-row"><span class="n">${n}</span><span><b>${place}</b><span class="hint num">Sleeps at ${alt} m</span></span><span class="gain ${cls}">${gain}<small>${note}</small></span></div>`;
+      return phone('1. The climb, drawn to scale', `
+        ${head('Altitude', 'Manali to Leh')}
+        ${body(`
+          ${profile()}
+          <div class="sec-h"><h3>Where riders sleep</h3><span class="hint">6 halts</span></div>
+          <div class="rows">
+            <div class="row"><span class="grow"><b>Manali</b></span><span class="num">2,050 m</span></div>
+            <div class="row"><span class="grow"><b>Keylong</b></span><span class="num">3,080 m</span></div>
+            <div class="row"><span class="grow"><b>Jispa</b></span><span class="num">3,310 m</span></div>
+            <div class="row"><span class="grow"><b>Sarchu</b><span class="hint">Higher than any night halt in Ladakh’s towns</span></span><span class="num">4,290 m</span></div>
+            <div class="row"><span class="grow"><b>Pang</b></span><span class="num">4,600 m</span></div>
+            <div class="row"><span class="grow"><b>Leh</b></span><span class="num">3,500 m</span></div>
+          </div>`)}
+        <div class="pfoot"><span class="btn btn-primary btn-block">Check my night halts</span></div>`)
+      + phone('2. A plan that climbs too fast', `
+        ${head('Altitude', 'Your night halts')}
+        ${body(`
+          ${profile(['Manali', 'Sarchu', 'Leh'], ['Sarchu'])}
+          <div class="result bad"><span class="lbl" style="color:var(--stale-fg)">Night 2 climbs too fast</span>
+            <div class="big">+2,240 m <small>between two nights</small></div>
+            <span>Manali to Sarchu in one day. Sleep at Keylong or Jispa first.</span></div>
+          <div class="nights">
+            ${night(1, 'Manali', '2,050', '—', '', 'start')}
+            ${night(2, 'Sarchu', '4,290', '+2,240 m', 'bad', 'too steep')}
+            ${night(3, 'Leh', '3,500', '−790 m', 'ok', 'descends')}
+          </div>
+          <span class="hint">This is not medical advice. It compares the height of your beds, nothing more.</span>`)}
+        <div class="pfoot"><span class="btn btn-primary btn-block">Add a night at Jispa</span></div>`)
+      + phone('3. The gentlest plan the road allows', `
+        ${head('Altitude', 'Your night halts')}
+        ${body(`
+          ${profile(['Manali', 'Jispa', 'Sarchu', 'Leh'])}
+          <div class="callout warn"><b>Steep, but the gentlest this road allows</b>Walkers are told to gain no more than about 500 m a night. No plan on this road can do that. This one spreads the climb over two nights.</div>
+          <div class="nights">
+            ${night(1, 'Manali', '2,050', '—', '', 'start')}
+            ${night(2, 'Jispa', '3,310', '+1,260 m', 'mid', 'steep')}
+            ${night(3, 'Sarchu', '4,290', '+980 m', 'mid', 'steep')}
+            ${night(4, 'Leh', '3,500', '−790 m', 'ok', 'descends')}
+          </div>
+          <div class="callout"><b>If you fly into Leh instead</b>The district asks for 48 hours of rest in Leh before going higher. <span class="link">Official notice</span></div>
+          <span class="hint">This is not medical advice.</span>`)}`);
+    },
+    notes: [
+      ['Layout', ['The profile is drawn to one scale: distance along the bottom, height up the side. Night halts are the numbered yellow dots.', 'The answer comes first, as one number: the biggest climb between two beds.', 'The official rule for people who fly in is shown, clearly apart from the advice for riders.']],
+      ['Behaviour', ['The check looks only at sleeping height, night to night.', 'Proposed limits: up to 500 m is fine, 500 to 1,500 m is steep, over 1,500 m is too steep.', 'The tool never says a plan is safe. The best it says is “the gentlest this road allows”.', 'Runs on the page itself. Works with no network.']],
+      ['Data', ['Per route: every halt and every pass, with its height and its distance from the start. About ten points.', 'Heights do not change, so this is entered once and never again.', 'The official notice, with its link and the date it was checked.']],
+      ['Open question', ['The limits and the wording must be read by a doctor who knows altitude before this goes live. Who?'], 'q'],
+    ],
+  },
+  /* 11 */
+  {
+    group: 'Tools', title: 'Packing list and videos',
+    lede: 'Two sections that need no contributors to be useful on the first day.',
+    render: () => {
+      const item = (t, why, on) => `<div class="row"><span class="box ${on ? 'on' : ''}">${on ? ICON.check : ''}</span><span class="grow"><b>${t}</b><span class="hint">${why}</span></span></div>`;
+      const vid = (t, by, when, len) => `<div class="fact"><div class="vid"><span class="thumb">${ICON.play}<u>${len}</u></span><span><b>${t}</b><span class="fact-src">${by}<br>Filmed ${when}</span></span></div></div>`;
+      return phone('1. Packing list, by month', `
+        ${head('Packing list', 'Manali to Leh')}
+        ${body(`
+          <div class="hscroll"><span class="chip">May</span><span class="chip on">June</span><span class="chip">July</span><span class="chip">Aug</span><span class="chip">Sept</span><span class="chip">Oct</span></div>
+          <div class="lbl">For this route in June</div>
+          <div class="rows">
+            ${item('Waterproof boots or gaiters', 'Water crossings are deepest in the afternoon', true)}
+            ${item('Thermal layer and winter gloves', 'Sarchu and Pang fall below freezing at night', true)}
+            ${item('Puncture kit and a hand pump', 'Nearest repair can be 100 km away', false)}
+            ${item('Extra fuel can', 'Only if the fuel check says so for your bike', false)}
+            ${item('Postpaid SIM', 'Prepaid SIMs from other states do not work in Ladakh', false)}
+            ${item('Fee receipt for Ladakh', 'Paid online before you leave', false)}
+          </div>
+          <span class="hint">Your ticks are kept on this phone only.</span>`)}`)
+      + phone('2. Videos, pinned to stretches', `
+        ${head('Videos', 'Manali to Leh')}
+        ${body(`
+          <div class="callout"><b>Watch the date, not the view</b>Each video shows the road as it was that month.</div>
+          <div class="sec-h"><h3>Sarchu to Pang</h3><span class="hint">Gata Loops · 75 km</span></div>
+          ${vid('Gata Loops after the rain', 'Imran S. · Himalayan 450', 'June 2027', '14:20')}
+          ${vid('Sarchu to Pang, full stretch', 'Kavya M. · Classic 350', 'September 2026', '31:05')}
+          <div class="sec-h"><h3>Jispa to Sarchu</h3><span class="hint">Baralacha La · 84 km</span></div>
+          ${vid('Water crossings before Zingzingbar', 'Dev R. · Xpulse 200', 'July 2026', '9:48')}`)}`)
+      + phone('3. A stretch with no video', `
+        ${head('Videos', 'Manali to Leh')}
+        ${body(`
+          <div class="sec-h"><h3>Pang to Tanglang La</h3><span class="hint">More Plains · 69 km</span></div>
+          <div class="empty"><b>No video of this stretch yet</b><span>Filmed it? Send the link. It plays on the video site, with your name and the month.</span><span class="btn btn-soft">${ICON.plus}Add a video</span></div>
+          <div class="sec-h"><h3>Tanglang La to Leh</h3><span class="hint">Upshi, Karu · 108 km</span></div>
+          ${vid('Tanglang La to Leh in one take', 'Anjali T. · KTM 390 Adventure', 'June 2027', '22:10')}`)}`);
+    },
+    notes: [
+      ['Packing list', ['Each item gives its reason, tied to this route and month.', 'Some items depend on other parts of the site: the fuel can points to the fuel check.', 'Ticks are kept on the rider’s phone. No account.']],
+      ['Videos', ['Grouped by stretch of road, not by popularity.', 'The month filmed is the most important detail. A video from last September says nothing certain about this June.', 'Videos play on the video site itself, crediting the rider. Nothing is copied.']],
+      ['Data', ['Per packing item: name, reason, which months.', 'Per video: link, stretch, month filmed, rider, bike, length.', 'Per route: its stretches, with a name and a distance. About five per route.']],
+    ],
+  },
+  /* 12 */
+  {
+    group: 'Trip reports', title: 'Sending a trip report',
+    lede: 'One short form after a trip. It feeds leg timings, bikes, gear, costs, videos and the dates on the facts.',
+    render: () => {
+      const steps = (n) => `<div class="steps">${[1, 2, 3].map((i) => `<i class="${i <= n ? 'on' : ''}"></i>`).join('')}</div>`;
+      const fold = (t, h, open = '') => `<div class="acc"><div class="acc-h"><span>${t} <span class="hint">${h}</span></span>${open ? ICON.down : ICON.right}</div>${open}</div>`;
+      return phone('1. The three things we need', `
+        ${head('Trip report', 'Step 1 of 3')}
+        ${body(`
+          ${steps(1)}
+          <div class="sec-h"><h3>Your trip</h3></div>
+          <div class="field"><label>Route</label><div class="input filled">Manali to Leh</div></div>
+          <div class="field"><label>Month</label><div class="input filled">June 2027</div></div>
+          <div class="field"><label>Bike</label><div class="input filled">Royal Enfield Classic 350</div></div>
+          <div class="callout info"><b>That is enough to send</b>Everything on the next step is optional. Fill in what you remember.</div>`)}
+        <div class="pfoot"><div class="btns"><span class="btn btn-outline">Send now</span><span class="btn btn-primary">Add details</span></div></div>`)
+      + phone('2. Optional details, folded', `
+        ${head('Trip report', 'Step 2 of 3')}
+        ${body(`
+          ${steps(2)}
+          ${fold('Riding hours', '2 of 5 legs filled', `<div class="acc-b">
+            <div class="field"><label>Manali to Jispa <em>91 km</em></label><div class="input filled num">3 hours 30 min</div></div>
+            <div class="field"><label>Jispa to Sarchu <em>84 km</em></label><div class="input filled num">4 hours 30 min</div></div>
+            <div class="field"><label>Sarchu to Pang <em>75 km</em></label><div class="input">Hours</div></div></div>`)}
+          ${fold('Fuel stops and mechanics', 'not filled')}
+          ${fold('Gear that helped, gear that failed', 'not filled')}
+          ${fold('What the trip cost', 'not filled')}
+          ${fold('Video link', 'not filled')}`)}
+        <div class="pfoot"><div class="btns"><span class="btn btn-outline">Back</span><span class="btn btn-primary">Review</span></div></div>`)
+      + phone('3. Review, then send', `
+        ${head('Trip report', 'Step 3 of 3')}
+        ${body(`
+          ${steps(3)}
+          <div class="sec-h"><h3>Your report</h3></div>
+          <div class="rows">
+            <div class="row"><span class="grow"><b>Manali to Leh</b><span class="hint">June 2027 · Royal Enfield Classic 350</span></span></div>
+            <div class="row"><span class="grow"><b>Riding hours</b><span class="hint">2 legs</span></span><span class="link">Change</span></div>
+          </div>
+          <div class="field"><label>Your name <em>optional, shown beside what you reported</em></label><div class="input filled">Rahul N.</div></div>
+          <div class="callout"><b>What happens next</b>The person who keeps Meel reads it. Your riding hours join the others for this route. Nothing else about you is kept.</div>`)}
+        <div class="pfoot"><span class="btn btn-primary btn-block">${ICON.send}Open chat app to send</span><span class="link" style="align-self:center">Send without a chat app</span></div>`);
+    },
+    notes: [
+      ['Layout', ['Three fields are required: route, month, bike. A rider can send after the first step.', 'Optional parts are folded, each showing how much is filled.', 'The form can be opened with the route already filled, from any route page.']],
+      ['Behaviour', ['The legs offered for riding hours come from the route’s own stretches.', 'A half-filled report is kept on the phone, so closing the page does not lose it.', 'Sending works the same way as the fact buttons.']],
+      ['Data', ['Required: route, month, bike.', 'Optional: hours per leg; pumps and mechanics used; gear and a verdict on each; total cost and its parts; a video link; a name.', 'One report can touch six sections of a route page.']],
+      ['Open question', ['Cost is personal. Ask for one total, or for parts such as fuel, stay and food? Parts are more useful and more work.'], 'q'],
+    ],
+  },
+  /* 13 */
+  {
+    group: 'Trip reports', title: 'Bikes, gear and costs',
+    lede: 'The second version. These sections stay locked until a route has ten trip reports, so they never show one person’s opinion as a recommendation.',
+    render: () => {
+      const bar = (l, n, max) => `<div class="bar"><span>${l}</span><span class="n">${n}</span><span class="track"><span class="fill" style="display:block;width:${(n / max) * 100}%"></span></span></div>`;
+      return phone('1. Locked: not enough reports', `
+        ${head('Pangong, Hanle and Tso Moriri', 'Bikes riders took')}
+        ${body(`
+          <div class="empty">${ICON.lock.replace('<svg', '<svg width="22" height="22" stroke="var(--ink-2)"')}<b>Shows after 10 trip reports</b><span>6 so far for this route. With fewer, this would be a handful of opinions, not a pattern.</span></div>
+          <div class="field"><label>6 of 10 reports</label><div class="meter"><i style="width:60%"></i></div></div>
+          <div class="lbl">Locked until then</div>
+          <div class="rows locked">
+            <div class="row"><span class="grow"><b>Bikes riders took</b></span>${ICON.lock}</div>
+            <div class="row"><span class="grow"><b>Gear that helped and failed</b></span>${ICON.lock}</div>
+            <div class="row"><span class="grow"><b>What the trip cost</b></span>${ICON.lock}</div>
+          </div>`)}
+        <div class="pfoot"><span class="btn btn-primary btn-block">I have ridden this · send a trip report</span></div>`)
+      + phone('2. Bikes riders took', `
+        ${head('Manali to Leh', 'Bikes riders took')}
+        ${body(`
+          <div class="sec-h"><h3>Bikes on this route</h3><span class="hint">From 23 trip reports</span></div>
+          <div class="bars">
+            ${bar('Royal Enfield Himalayan 450', 8, 8)}
+            ${bar('Royal Enfield Classic 350', 6, 8)}
+            ${bar('KTM 390 Adventure', 4, 8)}
+            ${bar('Hero Xpulse 200 4V', 3, 8)}
+            ${bar('Others', 2, 8)}
+          </div>
+          <div class="sec-h"><h3>What went wrong</h3><span class="hint">9 of 23 reports</span></div>
+          ${fact({ t: 'Classic 350 · clutch cable snapped', d: 'Near Pang. Carried a spare. 2 of 6 riders.', state: 'fresh', line: 'Latest: Rahul N. · June 2027' })}
+          ${fact({ t: 'Himalayan 450 · front puncture', d: 'Gata Loops. Tubeless plug held to Leh. 1 of 8 riders.', state: 'fresh', line: 'Latest: Imran S. · June 2027' })}
+          <div class="callout"><b>This is what riders reported, not a ranking</b>More Himalayans on the list means more riders took one. It does not mean it is the better bike.</div>`)}`)
+      + phone('3. What the trip cost', `
+        ${head('Manali to Leh', 'What the trip cost')}
+        ${body(`
+          <div class="sec-h"><h3>Manali to Leh and back</h3><span class="hint">From 14 trip reports</span></div>
+          <div class="result"><span class="lbl">Most riders spent</span>
+            <div class="big" style="font-size:30px">₹18,000 to ₹26,000</div><span>for one rider, 9 days, own bike</span>
+            <span class="hint">The middle half of 14 reports. Lowest ₹12,500, highest ₹41,000.</span></div>
+          <div class="rows">
+            <div class="row"><span class="grow"><b>Fuel</b></span><span class="num">₹5,200</span></div>
+            <div class="row"><span class="grow"><b>Stays</b><span class="hint">8 nights</span></span><span class="num">₹9,600</span></div>
+            <div class="row"><span class="grow"><b>Food</b></span><span class="num">₹4,500</span></div>
+            <div class="row"><span class="grow"><b>Permits and fees</b></span><span class="num">₹1,100</span></div>
+            <div class="row"><span class="grow"><b>Repairs</b></span><span class="num">₹800</span></div>
+          </div>
+          <span class="hint">Typical figures from reports in 2026 and 2027. Prices from 2025 and earlier are left out.</span>`)}`);
+    },
+    notes: [
+      ['Why locked', ['Below ten reports, a “recommendation” is one or two people’s experience.', 'The lock shows its own progress, which is a reason to send a report.', 'Ten is a proposed number. It can change.']],
+      ['Behaviour', ['Bikes are counted, never ranked. The page says so.', 'Problems are shown as “2 of 6 riders”, so a rider can judge how common it is.', 'Costs show a range, the middle half of reports, and the lowest and highest. Old prices drop out.', 'No gear item links to a shop in this version. If that changes, paid links are marked.']],
+      ['Data', ['All of it comes from trip reports. Nothing here is typed by the editor.', 'Per report: bike; problems; gear with a verdict; cost total and parts.']],
+      ['Open question', ['Are costs shown for each rider, or for a group of two sharing rooms? The form has to ask, or the figures cannot be compared.'], 'q'],
+    ],
+  },
+  /* trips board */
+  {
+    group: 'Riding together', title: 'Trips riders are planning',
+    lede: 'The community part. A rider posts a trip, others ask to join. It is a board of structured trips, not a forum, so there are no open threads to fill with spam.',
+    render: () => phone('1. The board', `
+      ${head('Trips', '14 coming up', { back: false, right: `<span class="av">RN</span>` })}
+      ${body(`
+        <div class="hscroll"><span class="chip on">All</span><span class="chip">This month</span><span class="chip">From Delhi</span><span class="chip">Ladakh</span></div>
+        ${trip('Manali to Leh', '19 to 27 June 2027 · 9 days', 'From Delhi', 'Anjali T.', 5, 8, 'Relaxed pace', '<span class="badge b-fresh">3 places left</span>')}
+        ${trip('Spiti circuit', '3 to 11 July 2027 · 9 days', 'From Chandigarh', 'Dev R.', 6, 6, 'Steady pace', '<span class="badge b-plain">Full</span>')}
+        ${trip('Kolli Hills', 'Sunday 20 June 2027 · 1 day', 'From Bengaluru', 'Kavya M.', 3, 10, 'Relaxed pace', '<span class="badge b-ageing">Leaves in 6 days</span>')}
+        ${trip('Guwahati to Tawang', '2 to 10 October 2027 · 9 days', 'From Guwahati', 'Imran S.', 2, 6, 'Steady pace', '<span class="badge b-fresh">4 places left</span>')}`)}
+      <div class="pfoot" style="padding-bottom:10px"><span class="btn btn-primary btn-block">${ICON.plus}Post a trip</span></div>
+      ${tabbar('Trips')}`)
+    + phone('2. Trips on one route', `
+      ${head('Manali to Leh', 'Trips on this route')}
+      ${body(`
+        <div class="callout info"><b>2 trips are planned on this route</b>Both fall inside the months it is usually open.</div>
+        ${trip('Manali to Leh', '19 to 27 June 2027 · 9 days', 'From Delhi', 'Anjali T.', 5, 8, 'Relaxed pace', '<span class="badge b-fresh">3 places left</span>')}
+        ${trip('Manali to Leh and back by Srinagar', '4 to 16 August 2027 · 13 days', 'From Chandigarh', 'Imran S.', 4, 8, 'Steady pace', '<span class="badge b-fresh">4 places left</span>')}
+        <div class="lbl">Already ridden</div>
+        <div class="rows"><div class="row"><span class="grow"><b>Manali to Leh · September 2026</b><span class="hint">6 riders · led by Dev R. · 4 trip reports came from it</span></span>${chev}</div></div>`)}
+      <div class="pfoot"><span class="btn btn-primary btn-block">${ICON.plus}Post a trip on this route</span></div>`)
+    + phone('3. No trips yet', `
+      ${head('Sach Pass and Pangi valley', 'Trips on this route')}
+      ${body(`
+        <div class="empty"><b>Nobody has posted a trip here yet</b><span>Planning one? Post it, and riders who want this road will find you.</span><span class="btn btn-soft">${ICON.plus}Post a trip on this route</span></div>
+        <div class="lbl">Trips on roads nearby</div>
+        ${trip('Spiti circuit', '3 to 11 July 2027 · 9 days', 'From Chandigarh', 'Dev R.', 6, 6, 'Steady pace', '<span class="badge b-plain">Full</span>')}`)}`),
+    notes: [
+      ['Layout', ['A trip card answers five things: which road, when, from where, who leads, and how many places are left.', 'The board can be read without an account. An account is asked for only to join or to post.', 'Each route page links to the trips on that route.']],
+      ['Behaviour', ['A trip leaves the board the day after it ends and moves to “already ridden”.', 'A full trip stays visible, marked full, so riders can see what is happening.', 'Trips are sorted by leaving date, soonest first.']],
+      ['Why a board and not a forum', ['The forum that ran beside the best-known Himalayan travel site was shut by its owner over spam and upkeep.', 'A trip has fixed fields and an end date. There is nothing to reply to in public, so there is little for spam to attach to.', 'Conversation happens in the riders’ own chat group, once they are accepted.']],
+      ['Data', ['Per trip: route, dates, starting city, leader, places, pace, who may join, a note, and how accepted riders reach the leader.', 'All of it comes from riders. None is gathered at a desk.']],
+    ],
+  },
+  /* one trip */
+  {
+    group: 'Riding together', title: 'One trip, and asking to join',
+    lede: 'The trip page borrows from the route page: the night halts are checked for altitude, and the fuel gap is shown. Contact details stay hidden until the leader accepts.',
+    render: () => {
+      const rider = (n, b, c) => `<div class="row"><span class="av">${n.split(' ').map((x) => x[0]).join('')}</span><span class="grow"><b>${n}</b><span class="hint">${b} · ${c}</span></span></div>`;
+      const top5 = `
+        <div class="sec-h"><h3>Manali to Leh</h3><span class="badge b-fresh">3 places left</span></div>
+        <div class="keys"><div><span>Leaves</span><b>19 June</b></div><div><span>Back</span><b>27 June</b></div><div><span>From</span><b>Delhi</b></div></div>
+        <div class="rows"><div class="row"><span class="av">AT</span><span class="grow"><b>Led by Anjali T.</b><span class="hint">On Meel since 2026 · led 3 trips · 11 facts confirmed</span></span></div></div>`;
+      return phone('1. The trip, before joining', `
+        ${head('Trip', 'Manali to Leh · June 2027', { right: shareBtn })}
+        ${body(`${top5}
+          <div class="lbl">Night by night</div>
+          <div class="nights">
+            <div class="night-row"><span class="n">1</span><span><b>Manali</b><span class="hint num">Sleeps at 2,050 m</span></span><span class="gain">—</span></div>
+            <div class="night-row"><span class="n">2</span><span><b>Jispa</b><span class="hint num">Sleeps at 3,310 m</span></span><span class="gain mid">+1,260 m<small>steep</small></span></div>
+            <div class="night-row"><span class="n">3</span><span><b>Sarchu</b><span class="hint num">Sleeps at 4,290 m</span></span><span class="gain mid">+980 m<small>steep</small></span></div>
+          </div>
+          <div class="callout"><b>Fuel: 323 km with no pump</b>Keylong to Karu. <span class="link">Check your bike</span></div>
+          <div class="lbl">What Anjali asks</div>
+          <div class="rows"><div class="row"><span class="grow"><b>Relaxed pace, 350 cc and above</b><span class="hint">Full riding gear. No riding after dark.</span></span></div></div>`)}
+        <div class="pfoot"><span class="btn btn-primary btn-block">Ask to join</span></div>`)
+      + phone('2. Asked, and waiting', `
+        ${head('Trip', 'Manali to Leh · June 2027', { right: shareBtn })}
+        ${body(`
+          <div class="callout warn"><b>You asked to join on 14 June</b>Anjali has not answered yet. You will see it here when she does.</div>
+          ${top5}
+          <div class="lbl">Going · 5 of 8</div>
+          <div class="rows">
+            ${rider('Anjali T.', 'KTM 390 Adventure', 'Delhi')}
+            ${rider('Imran S.', 'Himalayan 450', 'Gurugram')}
+            ${rider('Kavya M.', 'Classic 350', 'Delhi')}
+          </div>
+          <span class="hint">How to reach the group is shown once Anjali accepts you.</span>`)}
+        <div class="pfoot"><span class="btn btn-outline btn-block">Take back my request</span></div>`)
+      + phone('3. Accepted', `
+        ${head('Trip', 'Manali to Leh · June 2027', { right: shareBtn })}
+        ${body(`
+          <div class="callout info"><b>You are in</b>Anjali accepted you on 15 June. 6 of 8 places are taken.</div>
+          <div class="lbl">Reaching the group</div>
+          <div class="rows">
+            <div class="row"><span class="ic">${ICON.send}</span><span class="grow"><b>Join the trip’s chat group</b><span class="hint">Opens your chat app</span></span>${chev}</div>
+          </div>
+          <div class="lbl">Before you leave</div>
+          <div class="rows">
+            <div class="row"><span class="box on">${ICON.check}</span><span class="grow"><b>Fuel check for your Classic 350</b><span class="hint">Carry at least 2 litres from Keylong</span></span></div>
+            <div class="row"><span class="box"></span><span class="grow"><b>Packing list for June</b><span class="hint">2 of 14 ticked</span></span>${chev}</div>
+            <div class="row"><span class="box"></span><span class="grow"><b>Save the route to this phone</b><span class="hint">Most of this road has no network</span></span>${chev}</div>
+          </div>
+          <div class="callout"><b>You are riding with people you have not met</b>Meet in a public place first. Tell someone at home your route and dates. <span class="link">More on riding with strangers</span></div>`)}
+        <div class="pfoot"><span class="btn btn-outline btn-block">Leave this trip</span></div>`);
+    },
+    notes: [
+      ['Layout', ['The trip page reuses what the route page knows: altitude between nights, the fuel gap, the packing list.', 'The leader is shown with a short record: how long on Meel, trips led, facts confirmed. It is evidence, not a rating.', 'Once accepted, the page turns into a checklist for leaving.']],
+      ['Behaviour', ['Asking to join sends the leader the rider’s name, home city, bike and a short note. Nothing else.', 'The chat group link and the leader’s contact are shown only to accepted riders.', 'A rider can take back a request, or leave a trip, at any time. The leader is told.', 'Every trip page carries “report this trip” at the bottom.']],
+      ['Why blocked / Way forward', ['A full trip shows “Full” in place of the button, with “Tell me if a place opens”.', 'A rider whose request was declined sees “Anjali could not take you on this trip” and a list of other trips on the same road.']],
+      ['Open question', ['Should riders be able to rate a leader after a trip? It helps trust. It also invites grudges. Proposed: not in the first version.'], 'q'],
+    ],
+  },
+  /* account */
+  {
+    group: 'Riding together', title: 'An account, only when it is needed',
+    lede: 'Reading routes, using the tools and sending a report never need an account. Joining or posting a trip does, and the page says why at the moment it asks.',
+    render: () => phone('1. Asked for at the right moment', `
+      ${head('Trip', 'Manali to Leh · June 2027')}
+      ${body(`<div class="sec-h"><h3>Manali to Leh</h3><span class="badge b-fresh">3 places left</span></div>
+        <div class="keys"><div><span>Leaves</span><b>19 June</b></div><div><span>Back</span><b>27 June</b></div><div><span>From</span><b>Delhi</b></div></div>`)}
+      <div class="sheet-scrim"></div>
+      <div class="sheet"><span class="grab"></span>
+        <h3>Joining a trip needs an account</h3>
+        <p>Anjali is taking strangers on a mountain road. She needs to know who is asking.</p>
+        <div class="checks">
+          <div class="check ok">${ICON.check}<span>Your name, home city and bike are shown to the leader</span></div>
+          <div class="check ok">${ICON.check}<span>Your email is never shown to anyone</span></div>
+          <div class="check ok">${ICON.check}<span>Reading routes and sending reports stay open to all</span></div>
+        </div>
+        <span class="btn btn-primary btn-block" style="height:46px">Create an account</span>
+        <span class="btn btn-outline btn-block" style="height:46px">I already have one</span>
+      </div>`)
+    + phone('2. Creating an account', `
+      ${head('Create an account', 'Takes about a minute')}
+      ${body(`
+        <div class="field"><label>Your name</label><div class="input filled">Rahul Negi</div><span class="hint">Shown as “Rahul N.”</span></div>
+        <div class="field"><label>Email</label><div class="input filled">rahul@example.com</div><span class="hint">For logging in. Never shown.</span></div>
+        <div class="field"><label>Password</label><div class="input filled">••••••••••••</div><span class="hint">At least 10 characters</span></div>
+        <div class="field"><label>Home city</label><div class="input filled">Delhi</div></div>
+        <div class="field"><label>Your bike <em>optional</em></label><div class="input filled">Royal Enfield Classic 350</div></div>
+        <div class="row" style="border:0;padding:0;align-items:flex-start"><span class="box on" style="margin-top:2px">${ICON.check}</span><span class="grow"><b style="font-weight:500">I am 18 or older, and I have read the <span class="link">rules for riding together</span></b></span></div>`)}
+      <div class="pfoot"><span class="btn btn-primary btn-block">Create account</span></div>`)
+    + phone('3. Logging in, and getting it wrong', `
+      ${head('Log in', 'Meel')}
+      ${body(`
+        <div class="callout" style="background:var(--stale-bg);border-color:color-mix(in srgb, var(--stale-fg) 30%, var(--surface))"><b>That email and password do not match</b>Check both and try again. After 5 tries the account rests for 15 minutes.</div>
+        <div class="field"><label>Email</label><div class="input filled">rahul@example.com</div></div>
+        <div class="field"><label>Password</label><div class="input filled focus">••••••••</div></div>
+        <span class="link">I have forgotten my password</span>
+        <div class="callout"><b>New here?</b><span class="link">Create an account</span></div>`)}
+      <div class="pfoot"><span class="btn btn-primary btn-block">Log in</span></div>`),
+    notes: [
+      ['Layout', ['The account is never asked for at the door. It is asked for at the first action that needs one, with the reason.', 'Every field says who will see it.', 'The error does not say which of the two was wrong. That would tell a stranger which emails have accounts.']],
+      ['What needs an account, and what does not', ['Needs one: asking to join a trip, posting a trip, answering requests.', 'Does not: reading any route, the fuel check, the altitude check, the packing list, confirming a fact, sending a trip report.', 'A rider who is logged in gets their name on their reports without typing it.']],
+      ['Behaviour', ['Passwords are stored scrambled, never as typed.', 'Five wrong tries rests the account for 15 minutes.', 'Logging in lasts 30 days on that phone.']],
+      ['Not built yet', ['“I have forgotten my password” needs a service that sends email. The first build shows the link and explains that resetting is done by writing to the editor.', 'Logging in with a phone number and a texted code is what most Indian riders expect. It needs a paid texting service. Proposed for later.'], 'q'],
+    ],
+  },
+  /* posting a trip */
+  {
+    group: 'Riding together', title: 'Posting a trip',
+    lede: 'The leader fills in a short form. Before it is published, the page checks the plan against what the route page knows.',
+    render: () => {
+      const steps = (n) => `<div class="steps">${[1, 2, 3].map((i) => `<i class="${i <= n ? 'on' : ''}"></i>`).join('')}</div>`;
+      return phone('1. Where and when', `
+        ${head('Post a trip', 'Step 1 of 3')}
+        ${body(`${steps(1)}
+          <div class="field"><label>Route</label><div class="input filled">Manali to Leh</div></div>
+          <div class="field"><label>Leaving</label><div class="input filled">Saturday 19 June 2027</div></div>
+          <div class="field"><label>Back</label><div class="input filled">Sunday 27 June 2027</div></div>
+          <div class="field"><label>Starting from</label><div class="input filled">Delhi</div></div>
+          <div class="field"><label>Places, counting you</label><div class="input filled num">8</div><span class="hint">Between 2 and 12</span></div>`)}
+        <div class="pfoot"><div class="btns"><span class="btn btn-outline">Cancel</span><span class="btn btn-primary">Next</span></div></div>`)
+      + phone('2. How you ride', `
+        ${head('Post a trip', 'Step 2 of 3')}
+        ${body(`${steps(2)}
+          <div class="field"><label>Pace</label>
+            <div class="radio-list"><div class="on"><span class="radio"></span><span><b style="font-weight:600">Relaxed</b><span class="hint" style="display:block">Many stops. Nobody left behind.</span></span></div><div><span class="radio"></span>Steady</div><div><span class="radio"></span>Fast</div></div></div>
+          <div class="field"><label>Who can join</label><div class="input filled">350 cc and above</div></div>
+          <div class="field"><label>What you ask of riders <em>optional</em></label><div class="input filled" style="height:auto;padding:10px 12px;line-height:19px">Full riding gear. No riding after dark.</div></div>
+          <div class="field"><label>Chat group link <em>shown only to riders you accept</em></label><div class="input filled">chat.example/invite/…</div></div>`)}
+        <div class="pfoot"><div class="btns"><span class="btn btn-outline">Back</span><span class="btn btn-primary">Next</span></div></div>`)
+      + phone('3. Checked against the route', `
+        ${head('Post a trip', 'Step 3 of 3')}
+        ${body(`${steps(3)}
+          <div class="sec-h"><h3>Before you publish</h3></div>
+          <div class="checks">
+            <div class="check ok">${ICON.check}<span><b>Season.</b> Your dates fall inside the months this road is usually open.</span></div>
+            <div class="check wait">${ICON.clock}<span><b>Opening.</b> The road has opened to motorcycles in the first week of June in each year on record. 19 June leaves little room if it is late.</span></div>
+            <div class="check wait">${ICON.clock}<span><b>Altitude.</b> Night 2 at Jispa climbs 1,260 m. Steep, but the gentlest this road allows.</span></div>
+            <div class="check ok">${ICON.check}<span><b>Fuel.</b> 323 km with no pump. Riders will be told to check their bike.</span></div>
+          </div>
+          <div class="callout info"><b>Publishing puts this on the board</b>Anyone can read it. Only riders you accept see the chat group link. You can change or withdraw the trip at any time.</div>`)}
+        <div class="pfoot"><div class="btns"><span class="btn btn-outline">Back</span><span class="btn btn-primary">Publish trip</span></div></div>`);
+    },
+    notes: [
+      ['Layout', ['Three short steps: where and when, how you ride, and a check.', 'The check is the part no chat group can do. It reads the season, the opening dates, the altitude between nights and the fuel gap from the route page.']],
+      ['Behaviour', ['The checks warn. They never stop a leader from publishing.', 'Night halts are picked from the route’s own halts, so the altitude check has heights to work with.', 'A leader can have at most 3 open trips at a time.', 'The first trip a new account posts is looked at by the editor before it appears. After that, trips appear at once.']],
+      ['Data', ['Nothing gathered at a desk. The checks use the route’s season history, its halts and heights, and its fuel gaps.']],
+      ['Open question', ['Trips run for money by tour companies: allowed, marked as such, or kept off the board? Proposed: allowed, clearly marked “run by a tour company”, and listed after riders’ own trips.'], 'q'],
+    ],
+  },
+  /* leader and account */
+  {
+    group: 'Riding together', title: 'The leader’s requests, and your account',
+    lede: 'Two screens for a rider who is logged in: answering people who ask to join, and looking after what Meel holds about you.',
+    render: () => {
+      const req = (n, bike, city, rec, note, foot) => `<div class="fact"><div class="fact-h"><b>${n}</b><span class="hint">${city}</span></div><div class="fact-d">${bike}</div><div class="fact-src">${rec}</div>${note ? `<div class="quote" style="margin-top:4px">${note}</div>` : ''}${foot}</div>`;
+      const ask = `<div class="fact-a"><span class="btn btn-outline">Decline</span><span class="btn btn-soft">${ICON.check}Accept</span></div>`;
+      return phone('1. People asking to join', `
+        ${head('Requests', 'Manali to Leh · June 2027')}
+        ${body(`
+          <div class="callout info"><b>2 riders are waiting for your answer</b>3 places are left.</div>
+          ${req('Rahul N.', 'Royal Enfield Classic 350', 'Delhi', 'On Meel since June 2027 · no trips yet · 2 facts confirmed', '“First time to Ladakh. Done Spiti last year on the same bike.”', ask)}
+          ${req('Meera J.', 'Hero Xpulse 200 4V', 'Noida', 'On Meel since 2026 · 2 trips · 6 facts confirmed', '', '<div class="callout warn" style="margin-top:6px"><b>200 cc. You asked for 350 cc and above.</b>You can still accept.</div>' + ask)}
+          <div class="lbl">Answered</div>
+          <div class="rows"><div class="row"><span class="grow"><b>Imran S.</b><span class="hint">Accepted 12 June</span></span><span class="badge b-fresh">Going</span></div></div>`)}`)
+      + phone('2. Your account', `
+        ${head('Your account', 'Rahul N.', { back: false, right: `<span class="av">RN</span>` })}
+        ${body(`
+          <div class="rows">
+            <div class="row"><span class="grow"><b>Rahul N.</b><span class="hint">Delhi · Royal Enfield Classic 350</span></span><span class="link">Change</span></div>
+          </div>
+          <div class="keys"><div><span>Trips</span><b>1</b></div><div><span>Facts confirmed</span><b>2</b></div><div><span>Trip reports</span><b>0</b></div></div>
+          <div class="lbl">Your trips</div>
+          ${trip('Manali to Leh', '19 to 27 June 2027 · 9 days', 'From Delhi', 'Anjali T.', 6, 8, 'Relaxed pace', '<span class="badge b-fresh">You are in</span>')}
+          <div class="lbl">What Meel holds about you</div>
+          <div class="rows">
+            <div class="row"><span class="grow"><b>Get a copy of everything</b><span class="hint">Your details, trips and reports</span></span>${chev}</div>
+            <div class="row"><span class="grow"><b style="color:var(--danger)">Delete my account</b></span>${chev}</div>
+            <div class="row"><span class="grow"><b>Log out</b></span>${chev}</div>
+          </div>`)}
+        ${tabbar('You')}`)
+      + phone('3. Deleting an account', `
+        ${head('Your account', 'Rahul N.', { back: false, right: `<span class="av">RN</span>` })}
+        ${body(`
+          <div class="rows"><div class="row"><span class="grow"><b>Rahul N.</b><span class="hint">Delhi · Royal Enfield Classic 350</span></span><span class="link">Change</span></div></div>
+          <div class="keys"><div><span>Trips</span><b>1</b></div><div><span>Facts confirmed</span><b>2</b></div><div><span>Trip reports</span><b>0</b></div></div>`)}
+        <div class="sheet-scrim"></div>
+        <div class="sheet"><span class="grab"></span>
+          <h3>Delete Rahul N.’s account?</h3>
+          <p>This cannot be undone.</p>
+          <div class="checks">
+            <div class="check ok">${ICON.check}<span>Your name, email, city and bike are removed</span></div>
+            <div class="check ok">${ICON.check}<span>You leave the 1 trip you have joined. Its leader is told a place has opened.</span></div>
+            <div class="check wait">${ICON.clock}<span>The 2 facts you confirmed stay, shown as “confirmed by a rider”</span></div>
+          </div>
+          <div class="field"><label>Type your password to go ahead</label><div class="input">Password</div></div>
+          <div class="pfoot" style="border:0;padding:0"><div class="btns"><span class="btn btn-outline">Keep my account</span><span class="btn" style="background:var(--danger);color:var(--surface)">Delete account</span></div></div>
+        </div>`);
+    },
+    notes: [
+      ['Evidence next to the decision', ['A request shows what the leader needs to decide: bike, home city, the rider’s record on Meel, and the rider’s own note.', 'Where the rider does not meet what the leader asked for, the request says so. The leader can still accept.', 'Declining sends no reason. The rider sees only that the leader could not take them.']],
+      ['Your account', ['Everything Meel holds about a rider is on one screen.', 'A rider can take a copy of it, and can delete it, without writing to anyone.', 'Deleting removes the person and keeps the facts. A confirmed pump is still confirmed.']],
+      ['Behaviour', ['Accepting the last place marks the trip full and tells riders still waiting.', 'Deleting an account that leads an open trip asks first: withdraw the trip, or hand it to another rider who is going.']],
+      ['Data', ['Per account: name, email, scrambled password, home city, bike, date joined.', 'Per request: trip, rider, note, answer, dates.', 'Kept on the site’s own server. Not given to anyone.']],
+    ],
+  },
+  /* laptop */
+  {
+    group: 'Wider screens', title: 'A route page on a laptop',
+    lede: 'Riders plan at a desk before they leave. It is the same page, with room for the official sources and the map to stay in view.',
+    desk: true,
+    render: () => {
+      const it = (ic, l, on, b = '') => `<div class="it ${on ? 'on' : ''}">${ICON[ic]}<span>${l}</span>${b}</div>`;
+      const src = (who, when, st) => `<div class="row"><span class="grow"><b>${who}</b><span class="hint">${when}</span></span>${st}${ICON.ext}</div>`;
+      return desk('The fuel section, with the sources and the map beside it', `
+        ${deskTop(`<span class="btn btn-outline">${ICON.save}Save for the road</span><span class="btn btn-primary">Send a trip report</span>`)}
+        <div class="desk-main">
+          <nav class="desk-nav">
+            <div class="lbl" style="padding:0 10px 8px">Manali to Leh</div>
+            ${it('flag', 'Is it open?', false)}
+            ${it('fuel', 'Fuel', true, '<span class="badge b-ageing">1 ageing</span>')}
+            ${it('shield', 'Rules for motorcycles', false)}
+            ${it('peak', 'Altitude and night halts', false)}
+            ${it('signal', 'Mobile network', false, '<span class="badge b-stale">3 stale</span>')}
+            ${it('wrench', 'Mechanics', false)}
+            ${it('clock', 'Real riding hours', false)}
+            ${it('bed', 'Stays', false)}
+            ${it('play', 'Videos', false)}
+            ${it('bag', 'Packing list', false)}
+            <div class="lbl" style="padding:16px 10px 8px">From trip reports</div>
+            ${it('list', 'Bikes riders took', false)}
+            ${it('card', 'What the trip cost', false)}
+          </nav>
+          <section class="desk-mid">
+            <div style="display:grid;grid-template-columns:1fr 300px;gap:20px;align-items:center">
+              ${routeHead('Manali to Leh', 'NH 3', '427', 'Himachal Pradesh and Ladakh · over Baralacha La and Tanglang La')}
+              <div class="keys"><div><span>Usual days</span><b>2 to 3</b></div><div><span>Highest</span><b>5,328 m</b></div><div><span>Usually open</span><b>Jun to Oct</b></div></div>
+            </div>
+            <div class="sec-h"><h3>Fuel</h3><span class="hint">4 pumps · longest gap 323 km</span></div>
+            ${gapStrip}
+            <div class="cols2">
+              ${fact(PUMPS[0])}
+              ${fact({ ...PUMPS[1], open: true, hi: true })}
+              ${fact(PUMPS[2])}
+              ${fact(PUMPS[3])}
+            </div>
+            <div class="sec-h"><h3>Rules for motorcycles</h3><span class="hint">9 facts</span></div>
+            <div class="cols2">
+              ${fact({ t: 'Ladakh: no permit for Indian citizens', d: 'You pay a fee online before you arrive. Carry the receipt.', state: 'fresh', line: 'Checked by the editor against the Leh permit site · 2 June 2027' })}
+              ${fact({ t: 'Atal Tunnel: no Rohtang permit needed', d: 'The permit is only for riding over Rohtang Pass itself.', state: 'ageing', line: 'Checked by the editor · 12 November 2026 · 7 months ago' })}
+            </div>
+          </section>
+          <aside class="desk-side">
+            <div class="sec-h"><h3>Is it open?</h3><span class="hint">We link, we do not guess</span></div>
+            <div class="rows">
+              ${src('Lahaul and Spiti Police', 'Last post seen 13 June 2027', '<span class="badge b-fresh">Yesterday</span>')}
+              ${src('Border Roads Organisation', 'Last post seen 2 June 2027', '<span class="badge b-plain">12 days</span>')}
+              ${src('Ladakh Police', 'Last notice seen 28 May 2027', '<span class="badge b-plain">17 days</span>')}
+            </div>
+            <div class="map" style="height:210px">
+              <svg viewBox="0 0 308 210" preserveAspectRatio="none" aria-hidden="true">
+                <path d="M0 160 C50 140 80 150 120 130 S200 90 308 110" fill="none" stroke="var(--border)" stroke-width="16"/>
+                <path d="M40 196 C60 160 80 140 100 126 S140 96 170 76 S220 40 270 22" fill="none" stroke="var(--sign)" stroke-width="4" stroke-linecap="round"/>
+              </svg>
+              <div class="pin" style="left:22%;top:88%"><span>Manali</span><i></i></div>
+              <div class="pin full" style="left:34%;top:62%"><span>Keylong</span><i></i></div>
+              <div class="pin" style="left:86%;top:16%"><span>Leh</span><i></i></div>
+              <span class="credit">Map data: OpenStreetMap contributors</span>
+            </div>
+            <span class="btn btn-primary btn-block" style="height:44px">${ICON.fuel}Check fuel for your bike</span>
+          </aside>
+        </div>`);
+    },
+    notes: [
+      ['Layout', ['Three columns: the sections, the facts, and a side column that stays in view.', 'The side column holds what a rider checks again and again: the official sources, the map, the fuel check.', 'Facts sit two across. An opened fact keeps its place and shows its buttons.']],
+      ['Behaviour', ['Below about 1,000 pixels wide the side column drops under the facts. Below about 700 it becomes the phone layout.', 'Nothing exists on the laptop that the phone lacks. The phone is the first design, the laptop the roomier one.']],
+      ['Data', ['Nothing new.']],
+    ],
+  },
+  /* editor */
+  {
+    group: 'The editor', title: 'The editor’s morning',
+    lede: 'Your side of the site. Seven messages came in since yesterday. Each is read, weighed against what is already known, and applied or set aside.',
+    desk: true,
+    render: () => {
+      const m = (kind, what, who, when, on) => `<div class="msgrow ${on ? 'on' : ''}"><div class="r1"><b>${what}</b><span class="hint num">${when}</span></div><span class="hint">${kind} · ${who}</span></div>`;
+      return desk('Reading one report, and applying it', `
+        <div class="desk-top">${mark()}<span class="brand">Meel</span><span class="badge b-stone">Editor</span><span class="sp"></span><span class="hint">Monday 14 June 2027 · 7 new since yesterday</span></div>
+        <div class="desk-main" style="grid-template-columns:330px minmax(0,1fr) 340px">
+          <nav class="desk-nav" style="padding:16px 12px;gap:4px">
+            <div class="lbl" style="padding:0 12px 8px">To read · 7</div>
+            ${m('This has changed', 'Stanzin Bike Point, Upshi', 'Rahul N.', '9:12 pm', true)}
+            ${m('This has changed', 'Tent mechanic, Sarchu', 'Dev R.', '8:40 pm')}
+            ${m('Still true', 'Keylong petrol pump', 'Rahul N.', '4:27 pm')}
+            ${m('Still true', 'Tandi petrol pump', 'Imran S.', '2:05 pm')}
+            ${m('Trip report', 'Manali to Leh · Classic 350', 'Kavya M.', '1:30 pm')}
+            ${m('Video', 'Pang to Tanglang La', 'Anjali T.', '11:02 am')}
+            ${m('Suggested place', 'Valley of Flowers', 'No name given', '9:15 am')}
+          </nav>
+          <section class="desk-mid">
+            <div class="sec-h"><h3>Stanzin Bike Point, Upshi has moved</h3><span class="hint">Manali to Leh · Mechanics</span></div>
+            <div class="quote">“Moved about 2 km towards Leh, next to the petrol pump.”
+Rahul N. · seen 13 June 2027 · sent from the chat app at 9:12 pm</div>
+            <div class="compare">
+              <div><span class="lbl">On the page now</span>
+                ${fact({ t: 'Stanzin Bike Point, Upshi', d: 'General repairs. Welding.', state: 'stale', line: 'Confirmed by Dev R. · 14 August 2025 · 22 months ago' })}</div>
+              <div><span class="lbl">After you apply</span>
+                ${fact({ t: 'Stanzin Bike Point, Upshi', d: 'General repairs. Welding. Beside the petrol pump, 2 km from Upshi towards Leh.', state: 'fresh', line: 'Updated from Rahul N.’s report · 13 June 2027', hi: true })}</div>
+            </div>
+            <div class="field"><label>Wording on the page <em>you can edit this before applying</em></label>
+              <div class="input filled" style="height:auto;padding:10px 12px;line-height:20px">General repairs. Welding. Beside the petrol pump, 2 km from Upshi towards Leh.</div></div>
+            <div class="lbl">This fact’s history</div>
+            <div class="tl">
+              <div><span>14 Aug 2025</span><b>Confirmed at the old place in Upshi by Dev R.</b></div>
+              <div><span>2 July 2024</span><b>Confirmed by Kavya M.</b></div>
+              <div><span>9 June 2024</span><b>First entered from Anjali T.’s trip report</b></div>
+            </div>
+          </section>
+          <aside class="desk-side">
+            <div class="sec-h"><h3>Before you apply</h3></div>
+            <div class="checks">
+              <div class="check ok">${ICON.check}<span>Seen within the last 3 days</span></div>
+              <div class="check ok">${ICON.check}<span>Rahul N. has sent 4 reports before. All 4 were applied.</span></div>
+              <div class="check wait">${ICON.clock}<span>No other rider has reported this move yet</span></div>
+            </div>
+            <div class="callout info"><b>Nothing is lost</b>Applying rewrites the fact and moves the old entry into its history. The site rebuilds in about two minutes.</div>
+            <span class="btn btn-primary btn-block" style="height:44px">${ICON.check}Apply to the page</span>
+            <span class="btn btn-outline btn-block" style="height:44px">Ask Rahul a question</span>
+            <span class="btn btn-outline btn-block" style="height:44px">Set aside, with a reason</span>
+          </aside>
+        </div>`);
+    },
+    notes: [
+      ['Not in the first version', ['The first version has no editor screen. You read messages in the chat app and change the fact files by hand.', 'That is fine up to about ten messages a day. This frame is the tool to build when it stops being fine.']],
+      ['Evidence next to the decision', ['The rider’s own words, the fact as it stands, and the fact as it would become, side by side.', 'Three checks, each a fact and not a verdict: how recent, the rider’s record, whether anyone else has said the same.', 'The wording can be edited before it is applied. Riders write in a hurry.']],
+      ['Behaviour', ['Apply: the fact is rewritten, the old entry joins the history, the rider is credited.', 'Set aside: nothing on the site changes. The reason is kept, so the same report is not puzzled over twice.', 'Ask a question: opens the chat app to that rider.']],
+      ['Open question', ['Is a rider’s record of past reports worth keeping? It helps the editor. It also means holding a little more about each person.'], 'q'],
+    ],
+  },
+  /* data */
+  {
+    group: 'Data', title: 'What data these screens need',
+    lede: 'Counted from the frames above, with Manali to Leh as the example. This is the list to fill, route by route.',
+    plain: true,
+    render: () => {
+      const rows = [
+        ['Route header', 'Name, region, places along it, highway number, distance, usual days, highest point, usual season', 1, 'Basic', 'Desk work'],
+        ['Line on the map', 'The places the route passes, each with its position', 1, 'Basic', 'Desk work'],
+        ['Stretches', 'Name, from, to, distance, and what a map app says it takes', 5, 'Basic', 'Desk work'],
+        ['Halts and passes', 'Place, height, distance from the start', 10, 'Basic', 'Desk work'],
+        ['Fuel pumps', 'Name, place, distance from the start, fuels, hours, source', 4, 'Basic', 'Desk work, then riders confirm'],
+        ['Rules for motorcycles', 'The rule in one sentence, who set it, official link, date checked', 5, 'Basic', 'Desk work'],
+        ['Permits and fees', 'Rule, official link, date checked, and each past change with its date', 3, 'Basic', 'Desk work'],
+        ['Packing list', 'Item, reason, which months', 20, 'Basic', 'Desk work. Mostly shared across a region.'],
+        ['Videos', 'Link, stretch, month filmed, rider, bike, length', 4, 'Basic', 'Editor picks, riders add'],
+        ['Where to check today', 'Office, what it announces, which stretch, where, date last seen', 5, 'Full', 'Editor'],
+        ['Season history', 'Year, date connected, date open to motorcycles, date closed, a link for each', 5, 'Full', 'Editor, from news and orders'],
+        ['Riders’ sightings', 'What, where, who, bike, date', 8, 'Full', 'Riders'],
+        ['Mobile network', 'Halt, operator, worked or not, month, who', 18, 'Full', 'Riders'],
+        ['Mechanics', 'Name, village, phone if agreed, what they fix, date, who', 6, 'Full', 'Riders'],
+        ['Riding hours', 'Leg, hours, month, bike, who', 5, 'Full', 'Riders, from trip reports'],
+        ['Stays', 'Name, village, phone if agreed, bike parking, date, who', 8, 'Full', 'Riders'],
+      ];
+      const basic = rows.filter((r) => r[3] === 'Basic').reduce((a, r) => a + r[2], 0);
+      const full = rows.reduce((a, r) => a + r[2], 0);
+      return `
+      <div class="tiles">
+        <div class="tile"><div class="big">${basic}</div><span>entries on a basic page. None needs a rider.</span></div>
+        <div class="tile"><div class="big">${full}</div><span>entries on a full page. ${full - basic} of them come from riders, or from the editor watching official sources.</span></div>
+        <div class="tile"><div class="big">1,700</div><span>entries, roughly, for fifty basic pages, once packing lists are shared by region.</span></div>
+        <div class="tile"><div class="big">470</div><span>of those need an official source: rules, permits and pumps. The rest are heights, distances and links.</span></div>
+      </div>
+      <div class="sheet-card"><div class="scroll-x"><table class="data">
+        <thead><tr><th>Section</th><th>What each entry holds</th><th class="n">Entries</th><th>Page level</th><th>Who supplies it</th></tr></thead>
+        <tbody>
+          ${rows.map((r) => `<tr><td><b>${r[0]}</b></td><td>${r[1]}</td><td class="n">${r[2]}</td><td><span class="badge ${r[3] === 'Full' ? 'b-full' : 'b-plain'}">${r[3]}</span></td><td>${r[4]}</td></tr>`).join('')}
+          <tr class="sum"><td>Basic page</td><td>The first nine rows</td><td class="n">${basic}</td><td></td><td>Desk work</td></tr>
+          <tr class="sum"><td>Full page</td><td>All sixteen rows</td><td class="n">${full}</td><td></td><td>Desk work and riders</td></tr>
+        </tbody></table></div></div>`;
+    },
+    notes: [
+      ['How to read the counts', ['“Entries” is the number for Manali to Leh in these frames. A mountain route is at the high end.', 'An entry is not one field. A fuel pump is one entry with six fields.', 'A coastal or plains route has no permits, fewer passes and shorter fuel gaps. Its basic page is nearer 26 entries.']],
+      ['What this changes in the plan', ['The plan counted about 850 facts for fifty routes. Drawn out, it is about 1,700 entries.', 'The difference is stretches, heights, the line on the map and videos. The plan had not counted them.', 'Most of the extra entries are quick: a height, a distance, a link. About 470 need checking against an official source.']],
+      ['Entered once, for the whole site', ['About ten bikes: model, tank size, mileage.', 'About eight kinds of fact, each with two age limits.', 'About nine regional packing lists of twenty items each.']],
+      ['Not counted here', ['Accounts, trips and requests to join. Riders create them.', 'Trip reports, which arrive from riders.', 'Preview pictures, which the site makes when it is built.', 'Bikes, gear and costs. They are worked out from trip reports.']],
+    ],
+  },
+];
+
+/* ── Gallery behaviour ────────────────────────────────────────── */
+const frame = document.getElementById('frame');
+const fit = document.getElementById('fit');
+let current = 0;
+
+function buildIndex() {
+  const groups = [];
+  SCREENS.forEach((s, i) => {
+    let g = groups.find((x) => x.name === s.group);
+    if (!g) groups.push((g = { name: s.group, items: [] }));
+    g.items.push([i, s.title]);
+  });
+  document.getElementById('index-groups').innerHTML = groups.map((g) => `
+    <div><div class="group-label">${esc(g.name)}</div><ol>
+      ${g.items.map(([i, t]) => `<li><button type="button" data-i="${i}"><span class="code">${String(i + 1).padStart(2, '0')}</span><span>${esc(t)}</span></button></li>`).join('')}
+    </ol></div>`).join('');
+  document.querySelectorAll('.index button').forEach((b) => b.addEventListener('click', () => show(Number(b.dataset.i))));
+}
+
+function scaleFrame() {
+  const s = SCREENS[current];
+  if (s.plain) { frame.style.transform = 'none'; frame.style.marginLeft = '0'; fit.style.height = 'auto'; return; }
+  frame.classList.toggle('stacked', fit.clientWidth < 760 && !s.desk);
+  frame.style.transform = 'none';
+  frame.style.marginLeft = '0';
+  const natural = frame.offsetWidth;
+  const k = Math.min(1, fit.clientWidth / natural);
+  frame.style.transform = `scale(${k})`;
+  frame.style.marginLeft = `${Math.max(0, (fit.clientWidth - natural * k) / 2)}px`;
+  fit.style.height = `${frame.offsetHeight * k}px`;
+}
+
+function show(i) {
+  current = (i + SCREENS.length) % SCREENS.length;
+  const s = SCREENS[current];
+  frame.className = 'frame' + (s.plain ? ' plain' : '');
+  frame.innerHTML = s.render();
+  document.getElementById('screen-eyebrow').textContent = `${s.group} · ${current + 1} of ${SCREENS.length}`;
+  document.getElementById('screen-title').textContent = s.title;
+  document.getElementById('screen-lede').textContent = s.lede || '';
+  document.getElementById('notes').innerHTML = (s.notes || []).map(([h, items, cls]) => `
+    <div class="note ${cls || ''}"><h3>${esc(h)}</h3><ul>${items.map((x) => `<li>${esc(x)}</li>`).join('')}</ul></div>`).join('');
+  document.querySelectorAll('.index button').forEach((b) => b.setAttribute('aria-current', String(Number(b.dataset.i) === current)));
+  try { localStorage.setItem('meel-wireframe', String(current)); } catch (e) {}
+  requestAnimationFrame(scaleFrame);
+}
+
+document.getElementById('prev').addEventListener('click', () => show(current - 1));
+document.getElementById('next').addEventListener('click', () => show(current + 1));
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'ArrowRight') show(current + 1);
+  if (e.key === 'ArrowLeft') show(current - 1);
+});
+new ResizeObserver(scaleFrame).observe(fit);
+if (document.fonts && document.fonts.ready) document.fonts.ready.then(scaleFrame);
+
+buildIndex();
+let start = 0;
+try { start = Number(localStorage.getItem('meel-wireframe')) || 0; } catch (e) {}
+show(start);
+</script>
+
+</body>
+</html>
