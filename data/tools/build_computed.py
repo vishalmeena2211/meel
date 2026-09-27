@@ -198,43 +198,50 @@ def route(args):
             print(f"route {r['slug']}: SKIPPED, no position for",
                   [n for (n, q), p in zip(pairs, pts) if p is None])
             continue
-        coords = ";".join(f"{lon:.6f},{lat:.6f}" for lat, lon in pts)
-        url = (f"https://router.project-osrm.org/route/v1/driving/{coords}"
-               "?overview=full&geometries=geojson&steps=false&continue_straight=false")
-        try:
-            res = get(url, timeout=90)
-        except Exception as e:  # noqa: BLE001
-            print(f"route {r['slug']}: FAILED {e}")
+        line, legs, wps, km, hours, failed = [], [], [], 0.0, 0.0, None
+        for i in range(len(pts) - 1):
+            (la1, lo1), (la2, lo2) = pts[i], pts[i + 1]
+            url = (f"https://router.project-osrm.org/route/v1/driving/{lo1:.6f},{la1:.6f};{lo2:.6f},{la2:.6f}"
+                   "?overview=full&geometries=geojson&steps=false")
+            try:
+                res = get(url, timeout=90)
+            except Exception as e:  # noqa: BLE001
+                failed = f"{pairs[i][0]} -> {pairs[i + 1][0]}: {e}"
+                break
+            if res.get("code") != "Ok":
+                failed = f"{pairs[i][0]} -> {pairs[i + 1][0]}: {res.get('code')} {res.get('message')}"
+                break
+            rt, w = res["routes"][0], res["waypoints"]
+            if i == 0:
+                wps.append({"name": pairs[0][0], "lat": round(w[0]["location"][1], 5), "lon": round(w[0]["location"][0], 5),
+                            "asked_lat": round(la1, 5), "asked_lon": round(lo1, 5),
+                            "moved_to_road_m": round(w[0].get("distance", 0)), "km_from_start": 0.0,
+                            "kind": "pass" if pairs[0][0] in r.get("passes", []) else "place"})
+            d_km = rt["distance"] / 1000
+            legs.append({"from": pairs[i][0], "to": pairs[i + 1][0], "distance_km": round(d_km, 1),
+                         "map_app_hours": round(rt["duration"] / 3600, 2),
+                         "straight_km": round(hav(pts[i], pts[i + 1]), 1)})
+            km += d_km
+            hours += rt["duration"] / 3600
+            wps.append({"name": pairs[i + 1][0], "lat": round(w[1]["location"][1], 5), "lon": round(w[1]["location"][0], 5),
+                        "asked_lat": round(la2, 5), "asked_lon": round(lo2, 5),
+                        "moved_to_road_m": round(w[1].get("distance", 0)), "km_from_start": round(km, 1),
+                        "kind": "pass" if pairs[i + 1][0] in r.get("passes", []) else "place"})
+            seg = rt["geometry"]["coordinates"]
+            line += seg if not line else seg[1:]
+            time.sleep(1.1)
+        if failed:
+            print(f"route {r['slug']}: FAILED {failed}")
             continue
-        if res.get("code") != "Ok":
-            print(f"route {r['slug']}: OSRM said {res.get('code')} {res.get('message')}")
-            continue
-        rt = res["routes"][0]
-        line = rt["geometry"]["coordinates"]
-        total = rt["distance"] / 1000
+        total = km
         eps = 0.0003 if total < 800 else 0.002
         thin = rdp(line, eps)
-        legs, km = [], 0.0
-        wps = []
-        for i, (name, q) in enumerate(pairs):
-            w = res["waypoints"][i]
-            wps.append({"name": name, "lat": round(w["location"][1], 5), "lon": round(w["location"][0], 5),
-                        "asked_lat": round(pts[i][0], 5), "asked_lon": round(pts[i][1], 5),
-                        "moved_to_road_m": round(w.get("distance", 0)),
-                        "km_from_start": round(km, 1),
-                        "kind": "pass" if name in r.get("passes", []) else "place"})
-            if i < len(rt["legs"]):
-                leg = rt["legs"][i]
-                legs.append({"from": name, "to": pairs[i + 1][0],
-                             "distance_km": round(leg["distance"] / 1000, 1),
-                             "map_app_hours": round(leg["duration"] / 3600, 2),
-                             "straight_km": round(hav(pts[i], pts[i + 1]), 1)})
-                km += leg["distance"] / 1000
         save(path, {"slug": r["slug"], "fetched": TODAY, "distance_km": round(total, 1),
-                    "map_app_hours": round(rt["duration"] / 3600, 2),
+                    "map_app_hours": round(hours, 2),
                     "waypoints": wps, "legs": legs,
                     "line": [[round(x, 5), round(y, 5)] for x, y in thin],
                     "line_points_before_thinning": len(line),
+                    "unplaced": r.get("unplaced", []),
                     "source": {"service": "OSRM demo server", "data": "OpenStreetMap",
                                "licence": "Open Database Licence", "url": "https://project-osrm.org/"}})
         flags = [f"{w['name']} moved {w['moved_to_road_m']} m" for w in wps if w["moved_to_road_m"] > 2500]

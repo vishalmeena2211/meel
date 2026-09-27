@@ -1,0 +1,16 @@
+{
+  "terrain": "coast",
+  "written_by": "Editor's list. Not taken from any source. To be corrected by trip reports.",
+  "items": [
+    { "item": "Rain suit", "reason": "The coast takes the full monsoon", "months": [6, 7, 8, 9, 10] },
+    { "item": "Mesh jacket", "reason": "Heat and humidity all year", "months": [] },
+    { "item": "Chain lube and a rag", "reason": "Salt air and sand wear a chain quickly", "months": [] },
+    { "item": "A wash for the bike after beach roads", "reason": "Salt starts rust within days", "months": [] },
+    { "item": "Puncture kit and a pump", "reason": "Village roads between towns have few shops", "months": [] },
+    { "item": "Cash in small notes", "reason": "Ferries and small stalls often take only cash", "months": [] },
+    { "item": "Ferry timings for the day", "reason": "A missed last ferry can add hours by road", "months": [], "links_to": "rules" },
+    { "item": "Licence, registration, insurance and pollution certificate", "reason": "Asked for at state borders", "months": [] },
+    { "item": "Water, two litres on the bike", "reason": "Humidity dries you out", "months": [] },
+    { "item": "Sunscreen and sunglasses", "reason": "Long days in open sun, with glare off the water", "months": [] }
+  ]
+}

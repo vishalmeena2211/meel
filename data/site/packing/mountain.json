@@ -1,0 +1,24 @@
+{
+  "terrain": "mountain",
+  "written_by": "Editor's list. Not taken from any source. To be corrected by trip reports.",
+  "items": [
+    { "item": "Waterproof boots or gaiters", "reason": "Water crossings run deepest in the afternoon, when snow melt peaks", "months": [5, 6, 7, 8, 9] },
+    { "item": "Thermal layer and winter gloves", "reason": "High halts fall below freezing at night, even in summer", "months": [] },
+    { "item": "Rain suit that fits over riding gear", "reason": "Weather turns within the hour near the passes", "months": [] },
+    { "item": "Puncture kit and a pump", "reason": "The nearest repair can be a hundred kilometres away", "months": [] },
+    { "item": "Spare clutch and throttle cables", "reason": "Cheap, light, and a broken one ends the day", "months": [] },
+    { "item": "Spare tube, if your tyres use tubes", "reason": "A torn tube cannot be patched", "months": [] },
+    { "item": "Chain lube", "reason": "Water crossings and dust strip it in a day", "months": [] },
+    { "item": "Extra fuel can", "reason": "Only if the fuel check says so for your bike", "months": [], "links_to": "fuel-check" },
+    { "item": "Postpaid SIM", "reason": "Riders report that prepaid SIMs from other states do not work in Ladakh or Jammu and Kashmir", "months": [] },
+    { "item": "Cash in small notes", "reason": "Card machines and phone payments need a network", "months": [] },
+    { "item": "Licence, registration, insurance and pollution certificate", "reason": "Asked for at check posts. Carry paper copies.", "months": [] },
+    { "item": "Identity proof, and permits or fee receipts where they apply", "reason": "See this route's rules", "months": [], "links_to": "rules" },
+    { "item": "Sunscreen, lip balm and sunglasses", "reason": "The sun burns faster at height, and snow doubles it", "months": [] },
+    { "item": "Water, two litres on the bike", "reason": "Drinking enough is the simplest help against altitude sickness", "months": [] },
+    { "item": "Basic medicines, and any your doctor advises for altitude", "reason": "Ask a doctor before the trip, not a chemist on the way", "months": [] },
+    { "item": "Torch or head lamp", "reason": "Camps and villages lose power", "months": [] },
+    { "item": "Bungee cords and a tarpaulin", "reason": "Luggage shifts on broken roads", "months": [] },
+    { "item": "This route saved to your phone", "reason": "Most of the road has no network", "months": [], "links_to": "save" }
+  ]
+}

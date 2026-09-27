@@ -1,0 +1,18 @@
+{
+  "terrain": "hills",
+  "written_by": "Editor's list. Not taken from any source. To be corrected by trip reports.",
+  "items": [
+    { "item": "Rain suit that fits over riding gear", "reason": "Hill weather turns quickly, and the monsoon is heavy", "months": [6, 7, 8, 9, 10] },
+    { "item": "A warm layer", "reason": "Hill stations are cold after dark, even when the plains are hot", "months": [11, 12, 1, 2] },
+    { "item": "Puncture kit and a pump", "reason": "Ghat roads have few shops between towns", "months": [] },
+    { "item": "Clear visor or clear glasses", "reason": "Mist and early dusk under the trees", "months": [] },
+    { "item": "Brake check before you leave", "reason": "Long descents with hairpin bends are hard on pads and fluid", "months": [] },
+    { "item": "Chain lube", "reason": "Rain washes it off", "months": [6, 7, 8, 9] },
+    { "item": "Cash in small notes", "reason": "Forest gates and small stalls often take only cash", "months": [] },
+    { "item": "Licence, registration, insurance and pollution certificate", "reason": "Asked for at forest and state check posts", "months": [] },
+    { "item": "Any pass or permit this route needs", "reason": "See this route's rules", "months": [], "links_to": "rules" },
+    { "item": "Water and something to eat", "reason": "Forest stretches have no stalls, and stopping may not be allowed", "months": [] },
+    { "item": "A bag for your rubbish", "reason": "Many hill districts ban plastic and fine for litter", "months": [] },
+    { "item": "This route saved to your phone", "reason": "Network drops in the ghats and forests", "months": [], "links_to": "save" }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "note": "How long each kind of fact stays fresh. Days since it was last confirmed. Proposed by the editor; riders who know the roads should tune these.",
+  "kinds": [
+    { "id": "fuel-stock", "name": "Fuel in stock", "ageing_after_days": 7, "stale_after_days": 21 },
+    { "id": "fuel-pump", "name": "Pump exists and works", "ageing_after_days": 180, "stale_after_days": 420 },
+    { "id": "mechanic", "name": "Mechanic or puncture shop", "ageing_after_days": 180, "stale_after_days": 420 },
+    { "id": "stay", "name": "Place to stay", "ageing_after_days": 180, "stale_after_days": 420 },
+    { "id": "network", "name": "Mobile network", "ageing_after_days": 180, "stale_after_days": 365 },
+    { "id": "rule", "name": "Rule, permit or fee", "ageing_after_days": 180, "stale_after_days": 365 },
+    { "id": "authority", "name": "Who announces road status", "ageing_after_days": 365, "stale_after_days": 730 },
+    { "id": "hazard", "name": "Hazard on the road", "ageing_after_days": 365, "stale_after_days": 730 }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "terrain": "plains",
+  "written_by": "Editor's list. Not taken from any source. To be corrected by trip reports.",
+  "items": [
+    { "item": "Hydration pack or two litres of water", "reason": "Heat on open highways dries you out before you feel thirsty", "months": [3, 4, 5, 6] },
+    { "item": "Mesh jacket or a cooling vest", "reason": "Full gear in summer heat is safer if air moves through it", "months": [3, 4, 5, 6] },
+    { "item": "A warm layer and a clear visor", "reason": "Winter mornings bring cold and thick fog", "months": [12, 1] },
+    { "item": "Rain suit", "reason": "Monsoon showers are sudden and heavy", "months": [6, 7, 8, 9] },
+    { "item": "Puncture kit and a pump", "reason": "Highway shoulders collect nails and wire", "months": [] },
+    { "item": "Ear plugs", "reason": "Hours of wind noise tire you faster than the riding does", "months": [] },
+    { "item": "Reflective strips or a bright vest", "reason": "Trucks see you late at dusk", "months": [] },
+    { "item": "Licence, registration, insurance and pollution certificate", "reason": "Asked for at state borders", "months": [] },
+    { "item": "A way to pay tolls where two-wheelers are charged", "reason": "See this route's rules", "months": [], "links_to": "rules" },
+    { "item": "Sunscreen and sunglasses", "reason": "Long days in open sun", "months": [] },
+    { "item": "Extra fuel can", "reason": "Only if the fuel check says so for your bike", "months": [], "links_to": "fuel-check" }
+  ]
+}
