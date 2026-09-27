@@ -1,10 +1,12 @@
 "use server";
 
+import { revalidatePath } from "next/cache";
 import { redirect } from "next/navigation";
 import { z } from "zod";
 
 import type { FormState } from "@/components/form";
 import {
+  changePassword,
   checkPassword,
   currentUser,
   deleteAccount,
@@ -133,6 +135,8 @@ export async function logInAction(_previous: FormState, form: FormData): Promise
           : "That email and password do not match. Check both and try again. After 5 tries the account rests for 15 minutes.",
     };
   }
+  // A one-time password is changed before anything else.
+  if (result.mustChangePassword) redirect("/account#password");
   redirect(safeNext(text(form, "next")));
 }
 
@@ -153,6 +157,33 @@ export async function updateProfileAction(_previous: FormState, form: FormData):
   }
   updateProfile(user.id, { name: parsed.data.name, homeCity: parsed.data.home_city, bike: parsed.data.bike ?? null });
   return { ok: true, message: "Saved.", errors: {}, values };
+}
+
+export async function changePasswordAction(_previous: FormState, form: FormData): Promise<FormState> {
+  const user = await currentUser();
+  if (!user) redirect("/login?next=/account");
+  const present = text(form, "present");
+  const next = text(form, "next_password");
+  const errors: Record<string, string> = {};
+  if (!present) errors.present = user.must_change_password ? "Type the one-time password." : "Type your password as it is now.";
+  if (next.length < 10) {
+    errors.next_password = `${next.length} ${next.length === 1 ? "character" : "characters"}. It needs at least 10.`;
+  } else if (next.length > 200) {
+    errors.next_password = "That password is too long. 200 characters at most.";
+  } else if (next === present) {
+    errors.next_password = "That is the same as the one you have. Choose a different one.";
+  }
+  if (Object.keys(errors).length > 0) return { ok: false, message: "Something needs fixing.", errors };
+
+  if (!(await changePassword(user.id, present, next))) {
+    return {
+      ok: false,
+      message: "Something needs fixing.",
+      errors: { present: "That is not your password as it is now. Nothing was changed." },
+    };
+  }
+  revalidatePath("/account");
+  return { ok: true, message: "Changed. Your other phones are logged out.", errors: {} };
 }
 
 export async function deleteAccountAction(_previous: FormState, form: FormData): Promise<FormState> {

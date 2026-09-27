@@ -3,7 +3,13 @@
 import Link from "next/link";
 import { useActionState, useEffect, useRef, useState } from "react";
 
-import { deleteAccountAction, logInAction, signUpAction, updateProfileAction } from "@/app/actions/auth";
+import {
+  changePasswordAction,
+  deleteAccountAction,
+  logInAction,
+  signUpAction,
+  updateProfileAction,
+} from "@/app/actions/auth";
 
 import { BLANK, ErrorSummary, Field } from "../form";
 import { Callout } from "../ui";
@@ -156,6 +162,41 @@ export function ProfileForm({ name, homeCity, bike }: { name: string; homeCity: 
       <button type="submit" className="btn btn-soft self-start" disabled={pending}>
         {pending ? "Saving" : "Save changes"}
       </button>
+    </form>
+  );
+}
+
+export function ChangePassword({ oneTime }: { oneTime: boolean }) {
+  const [state, action, pending] = useActionState(changePasswordAction, BLANK);
+  return (
+    <form action={action} className="flex flex-col gap-3" noValidate>
+      <ErrorSummary state={state} />
+      {state.ok ? (
+        <p role="status" className="rounded-lg border border-sign-line bg-sign-soft px-3 py-2 text-sm font-medium">
+          {state.message}
+        </p>
+      ) : null}
+      <Field
+        label={oneTime ? "The one-time password" : "Your password now"}
+        name="present"
+        type="password"
+        autoComplete="current-password"
+        error={state.errors.present}
+        required
+      />
+      <Field
+        label="New password"
+        name="next_password"
+        type="password"
+        autoComplete="new-password"
+        error={state.errors.next_password}
+        hint="At least 10 characters."
+        required
+      />
+      <button type="submit" className={`btn self-start ${oneTime ? "btn-primary" : "btn-soft"}`} disabled={pending}>
+        {pending ? "Changing" : "Change password"}
+      </button>
+      <p className="hint">Anywhere else you are logged in will ask for the new password. This phone stays logged in.</p>
     </form>
   );
 }

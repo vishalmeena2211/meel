@@ -17,8 +17,8 @@ export default function ForgottenPasswordPage() {
       </Callout>
       <h2 className="label">For now</h2>
       <p className="text-[0.9375rem]">
-        Write to the person who keeps Meel. Say which email the account uses. They will check it is you and set a
-        one-time password.
+        Write to the person who keeps Meel. Say which email the account uses. They will check it is you and give you
+        a one-time password. You choose your own again as soon as you log in.
       </p>
       {chat ? (
         <a

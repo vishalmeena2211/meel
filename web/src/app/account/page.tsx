@@ -3,10 +3,10 @@ import Link from "next/link";
 import { redirect } from "next/navigation";
 
 import { logOutAction } from "@/app/actions/auth";
-import { DeleteAccount, ProfileForm } from "@/components/account/forms";
+import { ChangePassword, DeleteAccount, ProfileForm } from "@/components/account/forms";
 import { PageTitle } from "@/components/form";
 import { TripCardView } from "@/components/trips/trip-card";
-import { Badge, Empty, KeyFacts } from "@/components/ui";
+import { Badge, Callout, Empty, KeyFacts } from "@/components/ui";
 import { getIndex } from "@/lib/content";
 import { dayOf, sayDate } from "@/lib/format";
 import { currentUser } from "@/server/auth";
@@ -37,9 +37,26 @@ export default async function AccountPage() {
   const reports = all<{ n: number }>("SELECT COUNT(*) AS n FROM trip_reports WHERE user_id = ?", user.id)[0]?.n ?? 0;
   const live = trips.filter((t) => t.mine === "leading" || t.mine === "accepted").length;
 
+  // After a one-time password this comes first on the page. Otherwise it sits with the rest of the details.
+  const password = (
+    <section id="password" className="flex scroll-mt-24 flex-col gap-3">
+      <h2 className="label">Your password</h2>
+      <ChangePassword oneTime={user.must_change_password} />
+    </section>
+  );
+
   return (
     <div className="mx-auto flex w-full max-w-2xl flex-col gap-6">
       <PageTitle title="Your account" lede={`${user.shown_as} · on Meel since ${sayDate(dayOf(user.created_at).slice(0, 7))}`} />
+
+      {user.must_change_password ? (
+        <>
+          <Callout tone="warn" title="Choose your own password now">
+            You logged in with a one-time password. The person who set it has seen it.
+          </Callout>
+          {password}
+        </>
+      ) : null}
 
       <KeyFacts
         items={[
@@ -85,6 +102,8 @@ export default async function AccountPage() {
         </p>
         <ProfileForm name={user.name} homeCity={user.home_city} bike={user.bike} />
       </section>
+
+      {user.must_change_password ? null : password}
 
       <section className="flex flex-col gap-3">
         <h2 className="label">What Meel holds about you</h2>

@@ -3,7 +3,7 @@
 import { revalidatePath } from "next/cache";
 import { redirect } from "next/navigation";
 
-import { currentUser } from "@/server/auth";
+import { currentUser, findRider, type RiderFound, setOneTimePassword } from "@/server/auth";
 import { decideFactReport, decideTripReport, factReport } from "@/server/reports";
 import { getTrip, setTripStatus } from "@/server/trips";
 
@@ -45,4 +45,30 @@ export async function decideTripAction(form: FormData): Promise<void> {
   revalidatePath(`/routes/${trip.route_slug}`);
   revalidatePath(`/trips/${trip.id}`);
   revalidatePath("/editor");
+}
+
+export interface LetInState {
+  email: string;
+  error: string;
+  rider: RiderFound | null;
+  /** Given once, straight after it is set. It cannot be read again. */
+  password: string | null;
+}
+
+const NOBODY =
+  "No rider’s account uses that email. Check the spelling with them. An editor’s own account cannot be opened this way.";
+
+export async function letRiderInAction(_previous: LetInState, form: FormData): Promise<LetInState> {
+  await editorOnly();
+  const email = text(form, "email").trim().toLowerCase();
+  const blank: LetInState = { email, error: "", rider: null, password: null };
+  if (!email) return { ...blank, error: "Type the email on the rider’s account." };
+
+  const found = findRider(email);
+  if (!found.ok) return { ...blank, error: NOBODY };
+  if (text(form, "intent") !== "set") return { ...blank, rider: found.rider };
+
+  const set = await setOneTimePassword(email);
+  if (!set.ok) return { ...blank, error: NOBODY };
+  return { ...blank, rider: found.rider, password: set.password };
 }

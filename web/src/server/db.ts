@@ -119,6 +119,10 @@ const MIGRATIONS: string[] = [
     created_at TEXT NOT NULL
   );
   `,
+  // Step 2. A password set by the editor for a rider who is locked out is a one-time one.
+  `
+  ALTER TABLE users ADD COLUMN password_is_temporary INTEGER NOT NULL DEFAULT 0;
+  `,
 ];
 
 type Row = Record<string, SQLInputValue>;

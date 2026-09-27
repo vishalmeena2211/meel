@@ -3,6 +3,7 @@ import Link from "next/link";
 import { notFound, redirect } from "next/navigation";
 
 import { decideFactAction, decideTripAction, decideTripReportAction } from "@/app/actions/editor";
+import { LetRiderIn } from "@/components/editor/let-rider-in";
 import { PageTitle } from "@/components/form";
 import { IconCheck, IconClock } from "@/components/icons";
 import { Badge, Callout, Empty } from "@/components/ui";
@@ -229,6 +230,11 @@ export default async function EditorPage() {
             ))}
           </ul>
         )}
+      </section>
+
+      <section id="let-in" className="flex scroll-mt-24 flex-col gap-2">
+        <h2 className="display text-2xl">A rider cannot get in</h2>
+        <LetRiderIn />
       </section>
     </div>
   );

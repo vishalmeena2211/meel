@@ -1,6 +1,6 @@
 import "server-only";
 
-import { createHash, randomBytes, scrypt, timingSafeEqual } from "node:crypto";
+import { createHash, randomBytes, randomInt, scrypt, timingSafeEqual } from "node:crypto";
 import { promisify } from "node:util";
 
 import { cookies } from "next/headers";
@@ -34,6 +34,8 @@ export interface User {
   bike: string | null;
   created_at: string;
   is_editor: boolean;
+  /** True after the editor has set a one-time password, until the rider chooses their own. */
+  must_change_password: boolean;
 }
 
 interface UserRow {
@@ -44,6 +46,7 @@ interface UserRow {
   home_city: string;
   bike: string | null;
   created_at: string;
+  password_is_temporary: number;
 }
 
 function editors(): string[] {
@@ -74,6 +77,7 @@ function toUser(row: UserRow): User {
     bike: row.bike,
     created_at: row.created_at,
     is_editor: editors().includes(row.email),
+    must_change_password: row.password_is_temporary === 1,
   };
 }
 
@@ -192,7 +196,9 @@ export async function signUp(input: {
   return { ok: true };
 }
 
-export type LogInResult = { ok: true } | { ok: false; reason: "no-match" | "resting"; minutes?: number };
+export type LogInResult =
+  | { ok: true; mustChangePassword: boolean }
+  | { ok: false; reason: "no-match" | "resting"; minutes?: number };
 
 export async function logIn(emailTyped: string, password: string): Promise<LogInResult> {
   const email = emailTyped.trim().toLowerCase();
@@ -216,13 +222,107 @@ export async function logIn(emailTyped: string, password: string): Promise<LogIn
   }
   run("DELETE FROM login_attempts WHERE email = ?", email);
   await startSession(row.id);
-  return { ok: true };
+  return { ok: true, mustChangePassword: row.password_is_temporary === 1 };
 }
 
 export async function checkPassword(userId: string, password: string): Promise<boolean> {
   const row = one<UserRow>("SELECT * FROM users WHERE id = ?", userId);
   if (!row) return false;
   return passwordMatches(password, row.password_hash);
+}
+
+/**
+ * A rider chooses a new password. Every other phone is logged out; this one stays.
+ * False means the present password was not right, and nothing was changed.
+ */
+export async function changePassword(userId: string, present: string, next: string): Promise<boolean> {
+  if (!(await checkPassword(userId, present))) return false;
+  const hash = await hashPassword(next);
+  const jar = await cookies();
+  const token = jar.get(COOKIE)?.value;
+  together(() => {
+    run("UPDATE users SET password_hash = ?, password_is_temporary = 0 WHERE id = ?", hash, userId);
+    run("DELETE FROM sessions WHERE user_id = ? AND token_hash <> ?", userId, token ? hashToken(token) : "");
+  });
+  return true;
+}
+
+export interface RiderFound {
+  shown_as: string;
+  home_city: string;
+  bike: string | null;
+  since: string;
+  trips: number;
+  facts: number;
+}
+
+export type FindRiderResult = { ok: true; rider: RiderFound } | { ok: false; reason: "no-account" | "is-editor" };
+
+function riderRow(emailTyped: string): UserRow | null {
+  return one<UserRow>("SELECT * FROM users WHERE email = ?", emailTyped.trim().toLowerCase());
+}
+
+/** What the editor sees of a rider who says they are locked out, to help check who is asking. */
+export function findRider(emailTyped: string): FindRiderResult {
+  const row = riderRow(emailTyped);
+  if (!row) return { ok: false, reason: "no-account" };
+  if (editors().includes(row.email)) return { ok: false, reason: "is-editor" };
+  const trips = one<{ n: number }>(
+    `SELECT (SELECT COUNT(*) FROM trips WHERE leader_id = ? AND status <> 'withdrawn')
+          + (SELECT COUNT(*) FROM trip_members WHERE user_id = ? AND status = 'accepted') AS n`,
+    row.id,
+    row.id,
+  );
+  const facts = one<{ n: number }>(
+    "SELECT COUNT(*) AS n FROM fact_reports WHERE user_id = ? AND status = 'applied'",
+    row.id,
+  );
+  return {
+    ok: true,
+    rider: {
+      shown_as: shortName(row.name),
+      home_city: row.home_city,
+      bike: row.bike,
+      since: row.created_at,
+      trips: trips?.n ?? 0,
+      facts: facts?.n ?? 0,
+    },
+  };
+}
+
+// Short words that are easy to say aloud and hard to mishear. Three of them and four digits make a one-time password.
+const WORDS = [
+  "nadi", "kesar", "pahad", "sadak", "chai", "dhaba", "tara", "badal", "barf", "dhoop", "rasta", "gaon",
+  "pul", "ghati", "jheel", "mitti", "patta", "phool", "megh", "suraj", "chand", "hawa", "pani", "neem",
+  "aam", "kela", "moti", "sona", "loha", "tamba", "resham", "kapas", "haldi", "mirch", "namak", "gud",
+  "roti", "dal", "kheer", "lassi", "topi", "jhola", "rassi", "diya", "ghanta", "dhol", "bansi", "sitar",
+  "mor", "hiran", "bagh", "hathi", "tota", "maina", "koyal", "titli", "machli", "kachua", "ghoda", "unt",
+  "naav", "rail", "gaadi", "pahiya",
+] as const;
+
+function oneTimePassword(): string {
+  const word = () => WORDS[randomInt(WORDS.length)] ?? "nadi";
+  return `${word()}-${word()}-${word()}-${String(randomInt(10_000)).padStart(4, "0")}`;
+}
+
+export type OneTimeResult = { ok: true; password: string } | { ok: false; reason: "no-account" | "is-editor" };
+
+/**
+ * The editor lets a locked-out rider back in. The password is given back once, to be passed on by hand,
+ * and is never kept as typed. The rider is logged out everywhere and any rest after wrong tries is cleared.
+ */
+export async function setOneTimePassword(emailTyped: string): Promise<OneTimeResult> {
+  const row = riderRow(emailTyped);
+  if (!row) return { ok: false, reason: "no-account" };
+  if (editors().includes(row.email)) return { ok: false, reason: "is-editor" };
+  const password = oneTimePassword();
+  const hash = await hashPassword(password);
+  together(() => {
+    run("UPDATE users SET password_hash = ?, password_is_temporary = 1 WHERE id = ?", hash, row.id);
+    run("DELETE FROM sessions WHERE user_id = ?", row.id);
+    run("DELETE FROM login_attempts WHERE email = ?", row.email);
+  });
+  return { ok: true, password };
 }
 
 export function updateProfile(userId: string, input: { name: string; homeCity: string; bike: string | null }): void {
@@ -253,8 +353,9 @@ export async function deleteAccount(userId: string): Promise<void> {
 export function everythingAbout(userId: string): Record<string, unknown> {
   const user = one<UserRow>("SELECT * FROM users WHERE id = ?", userId);
   if (!user) return {};
-  const { password_hash: _hidden, ...details } = user;
+  const { password_hash: _hidden, password_is_temporary: _flag, ...details } = user;
   void _hidden;
+  void _flag;
   return {
     taken_on: now(),
     your_details: details,
