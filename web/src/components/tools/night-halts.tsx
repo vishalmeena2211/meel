@@ -39,13 +39,10 @@ export function NightHalts({
   distanceKm: number;
 }) {
   const halts = useMemo(() => haltsOf(waypoints), [waypoints]);
-  const first = halts[0];
-  const last = halts[halts.length - 1];
-  const [nights, setNights] = useState<string[]>(() => (first && last ? [first.name, last.name] : []));
+  const [nights, setNights] = useState<string[]>([]);
 
-  const chosen = nights
-    .map((n) => halts.find((h) => h.name === n))
-    .filter((h): h is Halt => h !== undefined);
+  // Nights are always in the order the road meets them.
+  const chosen = halts.filter((h) => nights.includes(h.name));
 
   const rows = chosen.map((h, i) => {
     const before = chosen[i - 1];
@@ -68,16 +65,8 @@ export function NightHalts({
     ...rows.map((r) => ({ name: r.name, km: r.km, m: r.m, night: r.night, tooSteep: r.verdict === "too-steep" })),
   ].sort((a, b) => a.km - b.km);
 
-  const unused = halts.filter((h) => !nights.includes(h.name));
-
-  function add(name: string) {
-    if (!name) return;
-    const next = [...nights, name].sort((a, b) => {
-      const ka = halts.find((h) => h.name === a)?.km ?? 0;
-      const kb = halts.find((h) => h.name === b)?.km ?? 0;
-      return ka - kb;
-    });
-    setNights(next);
+  function toggle(name: string) {
+    setNights(nights.includes(name) ? nights.filter((n) => n !== name) : [...nights, name]);
   }
 
   if (halts.length < 2) {
@@ -88,7 +77,11 @@ export function NightHalts({
     <div className="flex flex-col gap-3">
       <Profile profile={profile} distanceKm={distanceKm} marks={marks} />
 
-      {worst && worst.gain !== null && worst.gain > STEEP ? (
+      {rows.length < 2 ? (
+        <Callout title="Tick the places you will sleep">
+          Two or more. The check then compares the height of each night with the one before.
+        </Callout>
+      ) : worst && worst.gain !== null && worst.gain > STEEP ? (
         <div
           role="status"
           className={`flex flex-col gap-1.5 rounded-xl border p-3.5 ${
@@ -108,76 +101,67 @@ export function NightHalts({
           </p>
         </div>
       ) : (
-        <Callout tone="info" title="No night climbs more than 500 m above the one before">
-          That is the limit walkers are given. It is not a promise of how you will feel.
-        </Callout>
+        <div role="status">
+          <Callout tone="info" title="No night climbs more than 500 m above the one before">
+            That is the limit walkers are given. It is not a promise of how you will feel.
+          </Callout>
+        </div>
       )}
 
-      <ol className="card flex flex-col">
-        {rows.map((r) => (
-          <li
-            key={r.name}
-            className="grid min-h-[52px] grid-cols-[30px_1fr_auto_auto] items-center gap-2.5 border-b border-line px-3 py-2 last:border-b-0"
-          >
-            <span className="font-display grid size-[30px] place-items-center rounded-full bg-stone text-[0.9375rem] font-bold">
-              {r.night}
-            </span>
-            <span>
-              <b className="block text-[0.9375rem] leading-5">{r.name}</b>
-              <span className="hint num">Sleeps at {metres(r.m)}</span>
-            </span>
-            <span
-              className={`font-display num text-right text-[1.0625rem] leading-none font-bold ${
-                r.verdict === "too-steep"
-                  ? "text-stale-fg"
-                  : r.verdict === "steep"
-                    ? "text-ageing-fg"
-                    : r.verdict === "start"
-                      ? "text-ink-2"
-                      : "text-fresh-fg"
-              }`}
-            >
-              {r.gain === null ? "—" : `${r.gain > 0 ? "+" : "−"}${metres(Math.abs(r.gain))}`}
-              <small className="block font-sans text-[0.6875rem] leading-4 font-normal text-ink-2">
-                {r.verdict === "start"
-                  ? "start"
-                  : r.verdict === "too-steep"
-                    ? "too steep"
-                    : r.verdict === "steep"
-                      ? "steep"
-                      : r.verdict === "descends"
-                        ? "descends"
-                        : "fine"}
-              </small>
-            </span>
-            <button
-              type="button"
-              className="link min-h-11 px-1 text-sm disabled:text-rule disabled:no-underline"
-              disabled={rows.length <= 2}
-              onClick={() => setNights(nights.filter((n) => n !== r.name))}
-              aria-label={`Remove the night at ${r.name}`}
-            >
-              Remove
-            </button>
-          </li>
-        ))}
-      </ol>
-
-      {unused.length > 0 ? (
-        <div className="flex flex-col gap-1">
-          <label htmlFor="add-night" className="text-sm font-semibold">
-            Add a night
-          </label>
-          <select id="add-night" className="field-input" value="" onChange={(e) => add(e.target.value)}>
-            <option value="">Pick a halt</option>
-            {unused.map((h) => (
-              <option key={h.name} value={h.name}>
-                {h.name} · {metres(h.m)}
-              </option>
-            ))}
-          </select>
-        </div>
-      ) : null}
+      <fieldset className="flex flex-col gap-1">
+        <legend className="label mb-1">Where you will sleep</legend>
+        <ul className="card flex flex-col">
+          {halts.map((h) => {
+            const row = rows.find((r) => r.name === h.name);
+            return (
+              <li key={h.name} className="border-b border-line last:border-b-0">
+                <label className="grid min-h-[52px] cursor-pointer grid-cols-[30px_1fr_auto] items-center gap-2.5 px-3 py-2">
+                  <span className="relative grid size-[30px] place-items-center">
+                    <input
+                      type="checkbox"
+                      checked={row !== undefined}
+                      onChange={() => toggle(h.name)}
+                      className="peer absolute inset-0 size-full cursor-pointer opacity-0"
+                    />
+                    <span
+                      aria-hidden="true"
+                      className={`font-display grid size-[30px] place-items-center rounded-full border-[1.5px] text-[0.9375rem] font-bold peer-focus-visible:outline-2 peer-focus-visible:outline-offset-2 peer-focus-visible:outline-sign ${
+                        row ? "border-ink bg-stone" : "border-rule bg-surface text-transparent"
+                      }`}
+                    >
+                      {row ? row.night : "0"}
+                    </span>
+                  </span>
+                  <span>
+                    <b className="block text-[0.9375rem] leading-5">{h.name}</b>
+                    <span className="hint num">
+                      {metres(h.m)} · {Math.round(h.km).toLocaleString("en-IN")} km from the start
+                    </span>
+                  </span>
+                  {row ? (
+                    <span
+                      className={`font-display num text-right text-[1.0625rem] leading-none font-bold ${
+                        row.verdict === "too-steep"
+                          ? "text-stale-fg"
+                          : row.verdict === "steep"
+                            ? "text-ageing-fg"
+                            : row.verdict === "start"
+                              ? "text-ink-2"
+                              : "text-fresh-fg"
+                      }`}
+                    >
+                      {row.gain === null ? "—" : `${row.gain > 0 ? "+" : "−"}${metres(Math.abs(row.gain))}`}
+                      <small className="block font-sans text-[0.6875rem] leading-4 font-normal text-ink-2">
+                        {row.verdict === "start" ? "first night" : row.verdict === "too-steep" ? "too steep" : row.verdict}
+                      </small>
+                    </span>
+                  ) : null}
+                </label>
+              </li>
+            );
+          })}
+        </ul>
+      </fieldset>
 
       <p className="hint">
         This is not medical advice. It compares the height of your beds, nothing more. Heights are read from a 90 m
