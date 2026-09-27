@@ -16,8 +16,10 @@ import {
   IconAlert,
 } from "@/components/icons";
 import { GapStrip, RouteLine } from "@/components/route/drawings";
+import { FactReporter } from "@/components/route/fact-actions";
 import { FactCard, type FactContext } from "@/components/route/fact-card";
 import { ShareButton } from "@/components/route/share-button";
+import { ShowMore } from "@/components/show-more";
 import { FuelCheck } from "@/components/tools/fuel-check";
 import { NightHalts } from "@/components/tools/night-halts";
 import { PackingList } from "@/components/tools/packing-list";
@@ -27,6 +29,9 @@ import { hostOf, hours, km, metres, plural, sayDate, sayMonths } from "@/lib/for
 import type { Route, Source } from "@/lib/types";
 import { confirmationsFor, tripReportCount } from "@/server/reports";
 import { openTripsOnRoute } from "@/server/trips";
+
+// A fact grows older every day, so a built page is made again at most once an hour.
+export const revalidate = 3600;
 
 export async function generateStaticParams() {
   const index = await getIndex();
@@ -123,6 +128,7 @@ export default async function RoutePage(props: PageProps<"/routes/[slug]">) {
 
   return (
     <div className="flex flex-col gap-5">
+      <FactReporter routeSlug={route.slug} routeName={route.name} chatNumber={context.chatNumber} />
       <nav aria-label="Where you are" className="hint">
         <Link className="link font-medium" href="/">
           All routes
@@ -214,7 +220,7 @@ export default async function RoutePage(props: PageProps<"/routes/[slug]">) {
               <Callout tone="info" title="Meel does not say open or closed">
                 Conditions change by the hour. These are the offices that decide, and where each one announces it.
               </Callout>
-              <div className="grid gap-2 md:grid-cols-2">
+              <ShowMore first={4} noun="sources" className="grid gap-2 md:grid-cols-2">
                 {route.authorities.map((a) => (
                   <FactCard
                     key={a.id}
@@ -237,7 +243,7 @@ export default async function RoutePage(props: PageProps<"/routes/[slug]">) {
                     {a.channel ? <span className="hint block">Announces on: {a.channel}</span> : null}
                   </FactCard>
                 ))}
-              </div>
+              </ShowMore>
 
               {route.season.note ? <p className="text-sm">{route.season.note}</p> : null}
               {route.season.history.length > 0 ? (
@@ -339,7 +345,7 @@ export default async function RoutePage(props: PageProps<"/routes/[slug]">) {
               ) : null}
 
               {route.fuel.listed ? (
-                <details open={route.fuel.pumps.length <= 8}>
+                <details open={route.fuel.pumps.length <= 4}>
                   <summary className="link cursor-pointer text-sm font-medium">
                     Every pump on the map, {route.fuel.pumps.length} in all
                   </summary>
@@ -381,7 +387,7 @@ export default async function RoutePage(props: PageProps<"/routes/[slug]">) {
           {route.rules.length > 0 ? (
             <section aria-labelledby="rules" className="flex flex-col gap-3">
               <SectionHeading id="rules" title="Rules, permits and fees" aside={plural(route.rules.length, "fact")} />
-              <div className="grid gap-2 md:grid-cols-2">
+              <ShowMore first={6} noun="rules" className="grid gap-2 md:grid-cols-2">
                 {route.rules.map((r) => (
                   <FactCard
                     key={r.id}
@@ -433,7 +439,7 @@ export default async function RoutePage(props: PageProps<"/routes/[slug]">) {
                     ) : null}
                   </FactCard>
                 ))}
-              </div>
+              </ShowMore>
             </section>
           ) : null}
 
@@ -452,14 +458,14 @@ export default async function RoutePage(props: PageProps<"/routes/[slug]">) {
           {route.hazards.length > 0 ? (
             <section aria-labelledby="hazards" className="flex flex-col gap-3">
               <SectionHeading id="hazards" title="Hazards on the road" aside={plural(route.hazards.length, "fact")} />
-              <div className="grid gap-2 md:grid-cols-2">
+              <ShowMore first={4} noun="hazards" className="grid gap-2 md:grid-cols-2">
                 {route.hazards.map((z) => (
                   <FactCard key={z.id} id={z.id} title={z.title} source={z.source} context={context}>
                     {z.detail}
                     <span className="hint block">{sayMonths(z.months)}</span>
                   </FactCard>
                 ))}
-              </div>
+              </ShowMore>
             </section>
           ) : null}
 
@@ -586,14 +592,19 @@ export default async function RoutePage(props: PageProps<"/routes/[slug]">) {
             <section aria-labelledby="gaps" className="flex flex-col gap-2">
               <SectionHeading id="gaps" title="What we could not find" aside={plural(route.gaps.length, "gap")} />
               <p className="hint">A gap is not a fact. It means we looked and found no source.</p>
-              <ul className="card flex flex-col text-sm">
-                {route.gaps.map((g) => (
-                  <li key={g} className="flex gap-2 border-b border-line px-3 py-2 last:border-b-0">
-                    <IconAlert className="mt-0.5 size-4 shrink-0 text-ageing-fg" />
-                    <span>{g}</span>
-                  </li>
-                ))}
-              </ul>
+              <details open={route.gaps.length <= 3}>
+                <summary className="link cursor-pointer text-sm font-medium">
+                  Show what is missing for {route.name}
+                </summary>
+                <ul className="card mt-2 flex flex-col text-sm">
+                  {route.gaps.map((g) => (
+                    <li key={g} className="flex gap-2 border-b border-line px-3 py-2 last:border-b-0">
+                      <IconAlert className="mt-0.5 size-4 shrink-0 text-ageing-fg" />
+                      <span>{g}</span>
+                    </li>
+                  ))}
+                </ul>
+              </details>
             </section>
           ) : null}
 

@@ -63,6 +63,26 @@ export function sendFactReport(input: {
   return id;
 }
 
+// No account is needed to report, so the inbox has a lid.
+const UNREAD_PER_FACT = 5;
+const UNREAD_PER_HOUR = 60;
+
+/** False when one fact, or the whole inbox, already has more unread reports than one editor can read. */
+export function inboxHasRoom(routeSlug: string, factId: string): boolean {
+  const forFact = one<{ n: number }>(
+    "SELECT COUNT(*) AS n FROM fact_reports WHERE route_slug = ? AND fact_id = ? AND status = 'new'",
+    routeSlug,
+    factId,
+  );
+  if ((forFact?.n ?? 0) >= UNREAD_PER_FACT) return false;
+  const hourAgo = new Date(Date.now() - 3_600_000).toISOString();
+  const lately = one<{ n: number }>(
+    "SELECT COUNT(*) AS n FROM fact_reports WHERE status = 'new' AND created_at > ?",
+    hourAgo,
+  );
+  return (lately?.n ?? 0) < UNREAD_PER_HOUR;
+}
+
 /**
  * What riders have said about the facts on one route.
  *

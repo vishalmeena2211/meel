@@ -82,15 +82,7 @@ export function FactCard({
         </details>
       ) : null}
 
-      {actions ? (
-        <FactActions
-          routeSlug={context.routeSlug}
-          routeName={context.routeName}
-          factId={id}
-          title={title}
-          chatNumber={context.chatNumber}
-        />
-      ) : null}
+      {actions ? <FactActions factId={id} title={title} /> : null}
     </article>
   );
 }
