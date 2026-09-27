@@ -1,0 +1,159 @@
+{
+ "slug": "pangong-hanle-tso-moriri",
+ "fetched": "2026-09-28",
+ "search_radius_m": 900,
+ "pumps": [
+  {
+   "osm": "node/5537610024",
+   "name": "KH Garden, 한식당",
+   "brand": null,
+   "lat": 34.16767,
+   "lon": 77.58042,
+   "km_from_start": 0.0,
+   "off_road_m": 591,
+   "opening_hours": null,
+   "petrol": null,
+   "diesel": null
+  },
+  {
+   "osm": "way/1212069710",
+   "name": "HP Chubi Filling Station",
+   "brand": null,
+   "lat": 34.16939,
+   "lon": 77.58933,
+   "km_from_start": 0.0,
+   "off_road_m": 757,
+   "opening_hours": null,
+   "petrol": null,
+   "diesel": null
+  },
+  {
+   "osm": "way/233526495",
+   "name": "Karu Fuel Station.",
+   "brand": "Indian Oil",
+   "lat": 33.94603,
+   "lon": 77.72718,
+   "km_from_start": 31.6,
+   "off_road_m": 37,
+   "opening_hours": null,
+   "petrol": null,
+   "diesel": null
+  },
+  {
+   "osm": "node/13020894957",
+   "name": "Nyoma Fuel Station",
+   "brand": null,
+   "lat": 33.19045,
+   "lon": 78.65031,
+   "km_from_start": 465.4,
+   "off_road_m": 40,
+   "opening_hours": null,
+   "petrol": null,
+   "diesel": null
+  },
+  {
+   "osm": "node/11877038420",
+   "name": null,
+   "brand": null,
+   "lat": 33.20077,
+   "lon": 78.64222,
+   "km_from_start": 466.8,
+   "off_road_m": 6,
+   "opening_hours": null,
+   "petrol": null,
+   "diesel": null
+  },
+  {
+   "osm": "node/299707818",
+   "name": "Indian Oil",
+   "brand": "Indian Oil",
+   "lat": 34.11706,
+   "lon": 77.58883,
+   "km_from_start": 761.2,
+   "off_road_m": 35,
+   "opening_hours": null,
+   "petrol": null,
+   "diesel": null
+  },
+  {
+   "osm": "node/3702776638",
+   "name": "HP",
+   "brand": null,
+   "lat": 34.14181,
+   "lon": 77.5853,
+   "km_from_start": 764.0,
+   "off_road_m": 45,
+   "opening_hours": null,
+   "petrol": null,
+   "diesel": null
+  },
+  {
+   "osm": "node/299707352",
+   "name": "Indian Oil",
+   "brand": "Indian Oil",
+   "lat": 34.15228,
+   "lon": 77.57703,
+   "km_from_start": 765.6,
+   "off_road_m": 25,
+   "opening_hours": null,
+   "petrol": null,
+   "diesel": null
+  }
+ ],
+ "pump_count": 8,
+ "stops": 5,
+ "longest_gaps": [
+  {
+   "from_km": 31.6,
+   "to_km": 465.4,
+   "gap_km": 433.8,
+   "from_is": "pump",
+   "to_is": "pump",
+   "near_from": "Karu",
+   "near_to": "Nyoma"
+  },
+  {
+   "from_km": 466.8,
+   "to_km": 761.2,
+   "gap_km": 294.4,
+   "from_is": "pump",
+   "to_is": "pump",
+   "near_from": "Nyoma",
+   "near_to": "Leh"
+  },
+  {
+   "from_km": 0.0,
+   "to_km": 31.6,
+   "gap_km": 31.6,
+   "from_is": "pump",
+   "to_is": "pump",
+   "near_from": "Leh",
+   "near_to": "Karu"
+  },
+  {
+   "from_km": 761.2,
+   "to_km": 764.0,
+   "gap_km": 2.8,
+   "from_is": "pump",
+   "to_is": "pump",
+   "near_from": "Leh",
+   "near_to": "Leh"
+  },
+  {
+   "from_km": 765.6,
+   "to_km": 767.6,
+   "gap_km": 2.0,
+   "from_is": "pump",
+   "to_is": "end of route",
+   "near_from": "Leh",
+   "near_to": "Leh"
+  }
+ ],
+ "source": {
+  "service": "Overpass API",
+  "data": "OpenStreetMap contributors",
+  "licence": "Open Database Licence",
+  "url": "https://www.openstreetmap.org/copyright"
+ },
+ "note": "Pumps are those drawn on the open map within the search radius of the road. A pump missing from the map is missing here, so each gap is a worst case."
+}

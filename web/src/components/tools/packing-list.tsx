@@ -1,9 +1,10 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 import { monthName } from "@/lib/format";
 import type { PackingList as List } from "@/lib/types";
+import { parseStored, useStored } from "@/lib/use-stored";
 
 const LINK_WORDS: Record<string, { label: string; hash: string }> = {
   "fuel-check": { label: "Fuel check", hash: "#fuel" },
@@ -13,29 +14,13 @@ const LINK_WORDS: Record<string, { label: string; hash: string }> = {
 
 export function PackingList({ list, routeSlug }: { list: List; routeSlug: string }) {
   const [month, setMonth] = useState<number>(() => new Date().getMonth() + 1);
-  const [ticked, setTicked] = useState<string[]>([]);
-  const key = `meel:packing:${routeSlug}`;
-
-  useEffect(() => {
-    try {
-      const raw = window.localStorage.getItem(key);
-      if (raw) {
-        const saved = JSON.parse(raw) as unknown;
-        if (Array.isArray(saved)) setTicked(saved.filter((s): s is string => typeof s === "string"));
-      }
-    } catch {
-      // Ticks are not remembered on this phone.
-    }
-  }, [key]);
+  const [raw, setRaw] = useStored(`meel:packing:${routeSlug}`);
+  const ticked =
+    parseStored(raw, (v): v is string[] => Array.isArray(v) && v.every((x) => typeof x === "string")) ?? [];
 
   function toggle(item: string) {
     const next = ticked.includes(item) ? ticked.filter((t) => t !== item) : [...ticked, item];
-    setTicked(next);
-    try {
-      window.localStorage.setItem(key, JSON.stringify(next));
-    } catch {
-      // Not remembered. The list still works.
-    }
+    setRaw(JSON.stringify(next));
   }
 
   const items = list.items.filter((i) => i.months.length === 0 || i.months.includes(month));
@@ -82,7 +67,7 @@ export function PackingList({ list, routeSlug }: { list: List; routeSlug: string
         })}
       </ul>
       <p className="hint">
-        {ticked.length} of {items.length} ticked. Your ticks are kept on this phone only. {list.written_by}
+        {items.filter((i) => ticked.includes(i.item)).length} of {items.length} ticked. Your ticks are kept on this phone only. {list.written_by}
       </p>
     </div>
   );

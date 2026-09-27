@@ -3,6 +3,7 @@
 import { useActionState, useEffect, useId, useRef, useState } from "react";
 
 import { reportFact, type FormState } from "@/app/actions/reports";
+import { useStored } from "@/lib/use-stored";
 
 import { IconCheck, IconSend } from "../icons";
 
@@ -42,7 +43,9 @@ export function FactActions({
   const [state, action, pending] = useActionState(reportFact, START);
   const [seenOn, setSeenOn] = useState(today);
   const [note, setNote] = useState("");
-  const [name, setName] = useState("");
+  const [storedName, setStoredName] = useStored("meel:name");
+  const [typedName, setTypedName] = useState<string | null>(null);
+  const name = typedName ?? storedName ?? "";
   const dialog = useRef<HTMLDialogElement>(null);
   const id = useId();
 
@@ -52,15 +55,6 @@ export function FactActions({
     if (open && !el.open) el.showModal();
     if (!open && el.open) el.close();
   }, [open]);
-
-  useEffect(() => {
-    try {
-      const saved = window.localStorage.getItem("meel:name");
-      if (saved) setName(saved);
-    } catch {
-      // The phone will not let us remember. The rider types their name again.
-    }
-  }, []);
 
   const chatText = [
     open === "changed" ? `This has changed: ${title}` : `Still true: ${title}`,
@@ -193,12 +187,8 @@ export function FactActions({
                   maxLength={60}
                   autoComplete="name"
                   onChange={(e) => {
-                    setName(e.target.value);
-                    try {
-                      window.localStorage.setItem("meel:name", e.target.value);
-                    } catch {
-                      // Not remembered. Nothing else is affected.
-                    }
+                    setTypedName(e.target.value);
+                    setStoredName(e.target.value || null);
                   }}
                   className="field-input"
                 />

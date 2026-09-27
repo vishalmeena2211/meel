@@ -1,0 +1,69 @@
+{
+ "slug": "kasol-parvati",
+ "fetched": "2026-09-28",
+ "search_radius_m": 900,
+ "pumps": [
+  {
+   "osm": "node/5569194021",
+   "name": "Indian oil",
+   "brand": "Indian Oil",
+   "lat": 31.8905,
+   "lon": 77.14901,
+   "km_from_start": 1.0,
+   "off_road_m": 17,
+   "opening_hours": null,
+   "petrol": null,
+   "diesel": null
+  },
+  {
+   "osm": "node/13288407502",
+   "name": null,
+   "brand": null,
+   "lat": 32.00331,
+   "lon": 77.25517,
+   "km_from_start": 23.8,
+   "off_road_m": 2,
+   "opening_hours": null,
+   "petrol": null,
+   "diesel": null
+  }
+ ],
+ "pump_count": 2,
+ "stops": 2,
+ "longest_gaps": [
+  {
+   "from_km": 1.0,
+   "to_km": 23.8,
+   "gap_km": 22.8,
+   "from_is": "pump",
+   "to_is": "pump",
+   "near_from": "Bhuntar",
+   "near_to": "Kasol"
+  },
+  {
+   "from_km": 23.8,
+   "to_km": 46.3,
+   "gap_km": 22.5,
+   "from_is": "pump",
+   "to_is": "end of route",
+   "near_from": "Kasol",
+   "near_to": "Barshaini"
+  },
+  {
+   "from_km": 0.0,
+   "to_km": 1.0,
+   "gap_km": 1.0,
+   "from_is": "start of route",
+   "to_is": "pump",
+   "near_from": "Bhuntar",
+   "near_to": "Bhuntar"
+  }
+ ],
+ "source": {
+  "service": "Overpass API",
+  "data": "OpenStreetMap contributors",
+  "licence": "Open Database Licence",
+  "url": "https://www.openstreetmap.org/copyright"
+ },
+ "note": "Pumps are those drawn on the open map within the search radius of the road. A pump missing from the map is missing here, so each gap is a worst case."
+}

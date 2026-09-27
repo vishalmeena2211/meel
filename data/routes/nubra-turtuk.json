@@ -3129,13 +3129,75 @@
   ]
  ],
  "fuel": {
-  "listed": false,
-  "pumps": [],
-  "pump_count": 0,
-  "stops": 0,
-  "longest_gaps": [],
-  "note": null,
-  "fetched": null
+  "listed": true,
+  "pumps": [
+   {
+    "id": "fuel:way-1212069710",
+    "name": "HP Chubi Filling Station",
+    "brand": null,
+    "near": "Leh",
+    "km_from_start": 1.1,
+    "lat": 34.16939,
+    "lon": 77.58933,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/way/1212069710"
+   },
+   {
+    "id": "fuel:way-1210566272",
+    "name": "HPCL Siachen Filling Station",
+    "brand": null,
+    "near": "Leh",
+    "km_from_start": 3.2,
+    "lat": 34.18233,
+    "lon": 77.59529,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/way/1210566272"
+   },
+   {
+    "id": "fuel:node-3699683316",
+    "name": "Petrol pump",
+    "brand": null,
+    "near": "Diskit",
+    "km_from_start": 114.2,
+    "lat": 34.55144,
+    "lon": 77.53699,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/node/3699683316"
+   }
+  ],
+  "pump_count": 4,
+  "stops": 3,
+  "longest_gaps": [
+   {
+    "from_km": 3.2,
+    "to_km": 114.2,
+    "gap_km": 111.0,
+    "from_is": "pump",
+    "to_is": "pump",
+    "near_from": "Leh",
+    "near_to": "Diskit"
+   },
+   {
+    "from_km": 114.2,
+    "to_km": 205.5,
+    "gap_km": 91.3,
+    "from_is": "pump",
+    "to_is": "end of route",
+    "near_from": "Diskit",
+    "near_to": "Turtuk"
+   },
+   {
+    "from_km": 1.1,
+    "to_km": 3.2,
+    "gap_km": 2.1,
+    "from_is": "pump",
+    "to_is": "pump",
+    "near_from": "Leh",
+    "near_to": "Leh"
+   }
+  ],
+  "note": "Pumps are those drawn on the open map within the search radius of the road. A pump missing from the map is missing here, so each gap is a worst case.",
+  "fetched": "2026-09-28"
  },
  "rules": [
   {
@@ -3751,7 +3813,7 @@
   "Only one recent rider video found; it gives no filming date and was published on 10 July 2026. It shows the rider at Thang, beyond Turtuk."
  ],
  "counts": {
-  "facts": 40
+  "facts": 43
  },
  "built": "2026-09-28"
 }

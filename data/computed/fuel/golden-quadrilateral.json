@@ -1,0 +1,62 @@
+{
+ "slug": "golden-quadrilateral",
+ "fetched": "2026-09-28",
+ "search_radius_m": 1500,
+ "pumps": [],
+ "pump_count": 1412,
+ "stops": 498,
+ "longest_gaps": [
+  {
+   "from_km": 4757.0,
+   "to_km": 4953.6,
+   "gap_km": 196.6,
+   "from_is": "pump",
+   "to_is": "pump",
+   "near_from": "Kolkata",
+   "near_to": "Varanasi"
+  },
+  {
+   "from_km": 1699.6,
+   "to_km": 1888.6,
+   "gap_km": 189.0,
+   "from_is": "pump",
+   "to_is": "pump",
+   "near_from": "Pune",
+   "near_to": "Pune"
+  },
+  {
+   "from_km": 4181.6,
+   "to_km": 4328.4,
+   "gap_km": 146.8,
+   "from_is": "pump",
+   "to_is": "pump",
+   "near_from": "Bhubaneswar",
+   "near_to": "Kolkata"
+  },
+  {
+   "from_km": 5308.9,
+   "to_km": 5432.2,
+   "gap_km": 123.3,
+   "from_is": "pump",
+   "to_is": "pump",
+   "near_from": "Kanpur",
+   "near_to": "Kanpur"
+  },
+  {
+   "from_km": 1009.4,
+   "to_km": 1131.3,
+   "gap_km": 121.9,
+   "from_is": "pump",
+   "to_is": "pump",
+   "near_from": "Ahmedabad",
+   "near_to": "Ahmedabad"
+  }
+ ],
+ "source": {
+  "service": "Overpass API",
+  "data": "OpenStreetMap contributors",
+  "licence": "Open Database Licence",
+  "url": "https://www.openstreetmap.org/copyright"
+ },
+ "note": "Pumps are those drawn on the open map within the search radius of the road. A pump missing from the map is missing here, so each gap is a worst case."
+}

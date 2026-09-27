@@ -5886,9 +5886,19 @@
   "pumps": [],
   "pump_count": 0,
   "stops": 0,
-  "longest_gaps": [],
-  "note": null,
-  "fetched": null
+  "longest_gaps": [
+   {
+    "from_km": 0.0,
+    "to_km": 3669.2,
+    "gap_km": 3669.2,
+    "from_is": "start of route",
+    "to_is": "end of route",
+    "near_from": "Srinagar",
+    "near_to": "Kanyakumari"
+   }
+  ],
+  "note": "Pumps are those drawn on the open map within the search radius of the road. A pump missing from the map is missing here, so each gap is a worst case.",
+  "fetched": "2026-09-28"
  },
  "rules": [
   {

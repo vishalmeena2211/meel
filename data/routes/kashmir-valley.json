@@ -3338,13 +3338,643 @@
   ]
  ],
  "fuel": {
-  "listed": false,
-  "pumps": [],
-  "pump_count": 0,
-  "stops": 0,
-  "longest_gaps": [],
-  "note": null,
-  "fetched": null
+  "listed": true,
+  "pumps": [
+   {
+    "id": "fuel:way-682463968",
+    "name": "Indian Oil Petrol Pump",
+    "brand": null,
+    "near": "Srinagar",
+    "km_from_start": 5.6,
+    "lat": 34.09178,
+    "lon": 74.77682,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/way/682463968"
+   },
+   {
+    "id": "fuel:node-9087718081",
+    "name": "Bharat Petroleum Petrol Pump",
+    "brand": null,
+    "near": "Srinagar",
+    "km_from_start": 6.1,
+    "lat": 34.09611,
+    "lon": 74.77374,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/node/9087718081"
+   },
+   {
+    "id": "fuel:node-13523987881",
+    "name": "Bharat Petroleum",
+    "brand": "Bharat Petroleum",
+    "near": "Srinagar",
+    "km_from_start": 7.0,
+    "lat": 34.09428,
+    "lon": 74.76006,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/node/13523987881"
+   },
+   {
+    "id": "fuel:node-13523954637",
+    "name": "Petrol pump",
+    "brand": null,
+    "near": "Srinagar",
+    "km_from_start": 10.2,
+    "lat": 34.11025,
+    "lon": 74.73462,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/node/13523954637"
+   },
+   {
+    "id": "fuel:node-12738785032",
+    "name": "Indian Oil Filling Station",
+    "brand": "Indian Oil",
+    "near": "Srinagar",
+    "km_from_start": 14.9,
+    "lat": 34.11971,
+    "lon": 74.6855,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/node/12738785032"
+   },
+   {
+    "id": "fuel:node-13513728793",
+    "name": "Indian Oil",
+    "brand": "Indian Oil",
+    "near": "Srinagar",
+    "km_from_start": 14.9,
+    "lat": 34.11966,
+    "lon": 74.68555,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/node/13513728793"
+   },
+   {
+    "id": "fuel:node-12739254015",
+    "name": "Khan Filling Station",
+    "brand": "Bharat Petroleum",
+    "near": "Tangmarg",
+    "km_from_start": 23.3,
+    "lat": 34.09582,
+    "lon": 74.60182,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/node/12739254015"
+   },
+   {
+    "id": "fuel:node-13513777084",
+    "name": "Indian Oil",
+    "brand": "Indian Oil",
+    "near": "Tangmarg",
+    "km_from_start": 23.3,
+    "lat": 34.09575,
+    "lon": 74.60184,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/node/13513777084"
+   },
+   {
+    "id": "fuel:node-13523897198",
+    "name": "Petrol pump",
+    "brand": null,
+    "near": "Tangmarg",
+    "km_from_start": 26.5,
+    "lat": 34.09218,
+    "lon": 74.56813,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/node/13523897198"
+   },
+   {
+    "id": "fuel:node-13513772157",
+    "name": "Indian Oil",
+    "brand": "Indian Oil",
+    "near": "Tangmarg",
+    "km_from_start": 31.3,
+    "lat": 34.08765,
+    "lon": 74.51676,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/node/13513772157"
+   },
+   {
+    "id": "fuel:node-5936064831",
+    "name": "Indian Oil",
+    "brand": "Indian Oil",
+    "near": "Gulmarg",
+    "km_from_start": 64.5,
+    "lat": 34.06534,
+    "lon": 74.43975,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/node/5936064831"
+   },
+   {
+    "id": "fuel:node-331119285",
+    "name": "Petrol pump",
+    "brand": null,
+    "near": "Gulmarg",
+    "km_from_start": 64.8,
+    "lat": 34.06655,
+    "lon": 74.44263,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/node/331119285"
+   },
+   {
+    "id": "fuel:node-13513738335",
+    "name": "Bharat Petroleum",
+    "brand": "Bharat Petroleum",
+    "near": "Gulmarg",
+    "km_from_start": 73.1,
+    "lat": 34.08815,
+    "lon": 74.52706,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/node/13513738335"
+   },
+   {
+    "id": "fuel:node-331119767",
+    "name": "Indian Oil",
+    "brand": "Indian Oil",
+    "near": "Srinagar",
+    "km_from_start": 80.1,
+    "lat": 34.09578,
+    "lon": 74.59995,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/node/331119767"
+   },
+   {
+    "id": "fuel:node-331119772",
+    "name": "Narbal Fuel Filling Station",
+    "brand": "Hindustan Petroleum",
+    "near": "Srinagar",
+    "km_from_start": 88.4,
+    "lat": 34.12069,
+    "lon": 74.68364,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/node/331119772"
+   },
+   {
+    "id": "fuel:node-705828732",
+    "name": "Anyees Filling Station",
+    "brand": "Hindustan Petroleum",
+    "near": "Srinagar",
+    "km_from_start": 91.7,
+    "lat": 34.11286,
+    "lon": 74.71773,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/node/705828732"
+   },
+   {
+    "id": "fuel:node-331119815",
+    "name": "Indian Oil Petrol Pump",
+    "brand": null,
+    "near": "Srinagar",
+    "km_from_start": 94.4,
+    "lat": 34.10912,
+    "lon": 74.74673,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/node/331119815"
+   },
+   {
+    "id": "fuel:node-9087689058",
+    "name": "Indian Oil Petrol Pump",
+    "brand": null,
+    "near": "Srinagar",
+    "km_from_start": 95.1,
+    "lat": 34.10626,
+    "lon": 74.75299,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/node/9087689058"
+   },
+   {
+    "id": "fuel:node-7944685791",
+    "name": "Bharat Petroleum Petrol Pump",
+    "brand": null,
+    "near": "Srinagar",
+    "km_from_start": 99.6,
+    "lat": 34.08179,
+    "lon": 74.78818,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/node/7944685791"
+   },
+   {
+    "id": "fuel:node-9113502199",
+    "name": "Indian Oil Petrol Pump",
+    "brand": null,
+    "near": "Srinagar",
+    "km_from_start": 100.3,
+    "lat": 34.08087,
+    "lon": 74.80055,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/node/9113502199"
+   },
+   {
+    "id": "fuel:node-2836002981",
+    "name": "Petrol pump",
+    "brand": null,
+    "near": "Srinagar",
+    "km_from_start": 101.0,
+    "lat": 34.07565,
+    "lon": 74.79752,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/node/2836002981"
+   },
+   {
+    "id": "fuel:node-9073507512",
+    "name": "Bharat Petroleum Petrol Pump",
+    "brand": null,
+    "near": "Srinagar",
+    "km_from_start": 101.0,
+    "lat": 34.0753,
+    "lon": 74.79738,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/node/9073507512"
+   },
+   {
+    "id": "fuel:node-9073519593",
+    "name": "Indian Oil Petrol Pump",
+    "brand": null,
+    "near": "Srinagar",
+    "km_from_start": 101.0,
+    "lat": 34.07556,
+    "lon": 74.79752,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/node/9073519593"
+   },
+   {
+    "id": "fuel:node-9073525326",
+    "name": "HP Petrol Pump",
+    "brand": null,
+    "near": "Srinagar",
+    "km_from_start": 101.0,
+    "lat": 34.07505,
+    "lon": 74.79718,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/node/9073525326"
+   },
+   {
+    "id": "fuel:node-5984439369",
+    "name": "Hindustan Petroleum Petrol Pump",
+    "brand": null,
+    "near": "Srinagar",
+    "km_from_start": 103.7,
+    "lat": 34.07578,
+    "lon": 74.82462,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/node/5984439369"
+   },
+   {
+    "id": "fuel:node-5936065435",
+    "name": "Bharat Petroleum Petrol Pump",
+    "brand": "Bharat Petroleum",
+    "near": "Srinagar",
+    "km_from_start": 103.8,
+    "lat": 34.07589,
+    "lon": 74.8251,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/node/5936065435"
+   },
+   {
+    "id": "fuel:node-2379445975",
+    "name": "Bharat Petroleum",
+    "brand": null,
+    "near": "Srinagar",
+    "km_from_start": 104.3,
+    "lat": 34.07657,
+    "lon": 74.83003,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/node/2379445975"
+   },
+   {
+    "id": "fuel:node-2379445986",
+    "name": "HP",
+    "brand": "Hindustan Petroleum",
+    "near": "Srinagar",
+    "km_from_start": 104.5,
+    "lat": 34.07512,
+    "lon": 74.83141,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/node/2379445986"
+   },
+   {
+    "id": "fuel:node-5984427590",
+    "name": "Petrol pump",
+    "brand": null,
+    "near": "Srinagar",
+    "km_from_start": 105.0,
+    "lat": 34.07335,
+    "lon": 74.83637,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/node/5984427590"
+   },
+   {
+    "id": "fuel:node-9073522826",
+    "name": "Bharat Petroleum Petrol Pump",
+    "brand": "Bharat Petroleum",
+    "near": "Srinagar",
+    "km_from_start": 105.0,
+    "lat": 34.0731,
+    "lon": 74.83668,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/node/9073522826"
+   },
+   {
+    "id": "fuel:node-9101080391",
+    "name": "Indian Oil Petrol Pump",
+    "brand": null,
+    "near": "Srinagar",
+    "km_from_start": 110.3,
+    "lat": 34.04103,
+    "lon": 74.87694,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/node/9101080391"
+   },
+   {
+    "id": "fuel:node-5984439372",
+    "name": "Bharat Petroleum Petrol Pump",
+    "brand": null,
+    "near": "Srinagar",
+    "km_from_start": 110.4,
+    "lat": 34.03938,
+    "lon": 74.88183,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/node/5984439372"
+   },
+   {
+    "id": "fuel:node-5984438281",
+    "name": "Indian Oil Petrol Pump",
+    "brand": null,
+    "near": "Srinagar",
+    "km_from_start": 111.5,
+    "lat": 34.03694,
+    "lon": 74.8674,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/node/5984438281"
+   },
+   {
+    "id": "fuel:node-10605592844",
+    "name": "Saffron Filling Station",
+    "brand": null,
+    "near": "Srinagar",
+    "km_from_start": 119.1,
+    "lat": 33.99316,
+    "lon": 74.91048,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/node/10605592844"
+   },
+   {
+    "id": "fuel:node-9658985403",
+    "name": "HP",
+    "brand": "Hindustan Petroleum",
+    "near": "Srinagar",
+    "km_from_start": 128.8,
+    "lat": 33.94328,
+    "lon": 74.99222,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/node/9658985403"
+   },
+   {
+    "id": "fuel:node-9658991355",
+    "name": "Indian Oil",
+    "brand": "Indian Oil",
+    "near": "Srinagar",
+    "km_from_start": 129.1,
+    "lat": 33.93946,
+    "lon": 74.99537,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/node/9658991355"
+   },
+   {
+    "id": "fuel:node-9658913673",
+    "name": "Filling Station",
+    "brand": null,
+    "near": "Anantnag",
+    "km_from_start": 133.9,
+    "lat": 33.91148,
+    "lon": 75.01762,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/node/9658913673"
+   },
+   {
+    "id": "fuel:node-7170007013",
+    "name": "Petrol station",
+    "brand": null,
+    "near": "Anantnag",
+    "km_from_start": 151.6,
+    "lat": 33.77721,
+    "lon": 75.10805,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/node/7170007013"
+   },
+   {
+    "id": "fuel:node-2882855810",
+    "name": "fuel station",
+    "brand": null,
+    "near": "Pahalgam",
+    "km_from_start": 181.3,
+    "lat": 33.85771,
+    "lon": 75.27563,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/node/2882855810"
+   },
+   {
+    "id": "fuel:node-10965534861",
+    "name": "Petrol Pump",
+    "brand": null,
+    "near": "Srinagar",
+    "km_from_start": 284.0,
+    "lat": 33.99499,
+    "lon": 74.90331,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/node/10965534861"
+   },
+   {
+    "id": "fuel:node-10965557030",
+    "name": "Zabarwan Highway Care",
+    "brand": "Hindustan Petroleum",
+    "near": "Srinagar",
+    "km_from_start": 287.5,
+    "lat": 34.02105,
+    "lon": 74.88372,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/node/10965557030"
+   },
+   {
+    "id": "fuel:node-5984439371",
+    "name": "Bharat Petroleum Petrol Pump",
+    "brand": "Indian oil",
+    "near": "Srinagar",
+    "km_from_start": 293.6,
+    "lat": 34.04817,
+    "lon": 74.86663,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/node/5984439371"
+   },
+   {
+    "id": "fuel:node-9073525194",
+    "name": "Indian Oil Petrol Pump",
+    "brand": "Indian Oil",
+    "near": "Srinagar",
+    "km_from_start": 297.3,
+    "lat": 34.07149,
+    "lon": 74.8391,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/node/9073525194"
+   },
+   {
+    "id": "fuel:node-5936064837",
+    "name": "Petrol pump",
+    "brand": null,
+    "near": "Srinagar",
+    "km_from_start": 297.4,
+    "lat": 34.07163,
+    "lon": 74.83877,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/node/5936064837"
+   },
+   {
+    "id": "fuel:node-2836002982",
+    "name": "Indian Oil Petrol Pump",
+    "brand": null,
+    "near": "Srinagar",
+    "km_from_start": 301.4,
+    "lat": 34.08518,
+    "lon": 74.81933,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/node/2836002982"
+   },
+   {
+    "id": "fuel:node-9002196272",
+    "name": "Rainawari Petrol Pump",
+    "brand": null,
+    "near": "Srinagar",
+    "km_from_start": 302.4,
+    "lat": 34.09548,
+    "lon": 74.8213,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/node/9002196272"
+   },
+   {
+    "id": "fuel:node-9144990567",
+    "name": "Bharat Petroleum Petrol Pump",
+    "brand": null,
+    "near": "Srinagar",
+    "km_from_start": 302.4,
+    "lat": 34.0955,
+    "lon": 74.82139,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/node/9144990567"
+   },
+   {
+    "id": "fuel:way-1465360673",
+    "name": "HP Petrol Pump",
+    "brand": "Hindustan Petroleum",
+    "near": "Srinagar",
+    "km_from_start": 305.9,
+    "lat": 34.12035,
+    "lon": 74.80794,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/way/1465360673"
+   },
+   {
+    "id": "fuel:way-1197631541",
+    "name": "Indian Oil Petrol Pump Nowshera",
+    "brand": "Indian Oil",
+    "near": "Srinagar",
+    "km_from_start": 307.4,
+    "lat": 34.1336,
+    "lon": 74.80385,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/way/1197631541"
+   },
+   {
+    "id": "fuel:way-1465592662",
+    "name": "Indian Oil",
+    "brand": "Indian Oil",
+    "near": "Srinagar",
+    "km_from_start": 309.3,
+    "lat": 34.14526,
+    "lon": 74.80243,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/way/1465592662"
+   },
+   {
+    "id": "fuel:node-9131837068",
+    "name": "Hindustan Petroleum Ahad Filling Petrol Pump",
+    "brand": null,
+    "near": "Srinagar",
+    "km_from_start": 312.9,
+    "lat": 34.17772,
+    "lon": 74.8073,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/node/9131837068"
+   },
+   {
+    "id": "fuel:node-7827752902",
+    "name": "Nagbal filling station",
+    "brand": null,
+    "near": "Srinagar",
+    "km_from_start": 315.3,
+    "lat": 34.19857,
+    "lon": 74.80617,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/node/7827752902"
+   },
+   {
+    "id": "fuel:node-5936064828",
+    "name": "Petrol pump",
+    "brand": null,
+    "near": "Srinagar",
+    "km_from_start": 330.9,
+    "lat": 34.28435,
+    "lon": 74.84645,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/node/5936064828"
+   }
+  ],
+  "pump_count": 53,
+  "stops": 29,
+  "longest_gaps": [
+   {
+    "from_km": 181.3,
+    "to_km": 284.0,
+    "gap_km": 102.7,
+    "from_is": "pump",
+    "to_is": "pump",
+    "near_from": "Pahalgam",
+    "near_to": "Srinagar"
+   },
+   {
+    "from_km": 330.9,
+    "to_km": 379.5,
+    "gap_km": 48.6,
+    "from_is": "pump",
+    "to_is": "end of route",
+    "near_from": "Srinagar",
+    "near_to": "Sonamarg"
+   },
+   {
+    "from_km": 31.3,
+    "to_km": 64.5,
+    "gap_km": 33.2,
+    "from_is": "pump",
+    "to_is": "pump",
+    "near_from": "Tangmarg",
+    "near_to": "Gulmarg"
+   },
+   {
+    "from_km": 151.6,
+    "to_km": 181.3,
+    "gap_km": 29.7,
+    "from_is": "pump",
+    "to_is": "pump",
+    "near_from": "Anantnag",
+    "near_to": "Pahalgam"
+   },
+   {
+    "from_km": 133.9,
+    "to_km": 151.6,
+    "gap_km": 17.7,
+    "from_is": "pump",
+    "to_is": "pump",
+    "near_from": "Anantnag",
+    "near_to": "Anantnag"
+   }
+  ],
+  "note": "Pumps are those drawn on the open map within the search radius of the road. A pump missing from the map is missing here, so each gap is a worst case.",
+  "fetched": "2026-09-28"
  },
  "rules": [
   {
@@ -3750,7 +4380,7 @@
   "The first video gives no filming date; it was published on 13 June 2026."
  ],
  "counts": {
-  "facts": 33
+  "facts": 86
  },
  "built": "2026-09-28"
 }

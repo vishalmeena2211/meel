@@ -2901,18 +2901,18 @@
   {
    "id": "rule:majuli-ferry-timings",
    "kind": "timing",
-   "title": "Majuli ferry: daytime only, last boat mid-afternoon",
-   "detail": "Sources give a first ferry around 7 am and a last one between 3 and 4 pm. The winter timetable is cut as days shorten and water falls.",
+   "title": "Majuli ferry: 7:30 am to 3:30 pm",
+   "detail": "The district website gives these hours for ferries from Nimati Ghat to Kamalabari or Aphalamukh and advises booking ahead. Winter timetables are cut as days shorten and water falls.",
    "applies_to": "All passengers and vehicles",
    "set_by": "Directorate of Inland Water Transport, Government of Assam",
-   "official_url": "https://www.asiwt.in/",
-   "has_official_order": false,
+   "official_url": "https://majuli.assam.gov.in/tourist-place-detail/479",
+   "has_official_order": true,
    "source": {
-    "url": "https://trekgo.in/blog/how-to-reach-majuli-island-from-jorhat-nimati-ghat-ferry",
-    "title": "How to Reach Majuli Island from Jorhat: Nimati Ghat Ferry Guide",
-    "kind": "operator",
+    "url": "https://majuli.assam.gov.in/tourist-place-detail/479",
+    "title": "Majuli district: directions and stays",
+    "kind": "official",
     "opened": true,
-    "source_date": "2026-08-23",
+    "source_date": null,
     "accessed": "2026-09-28"
    },
    "history": [
@@ -2941,6 +2941,25 @@
      }
     }
    ]
+  },
+  {
+   "id": "rule:majuli-north-bank-approach",
+   "kind": "timing",
+   "title": "Majuli: road and short ferry from the north bank",
+   "detail": "The district website also describes driving in from Lakhimpur through Dhakuakhana or from Dibrugarh over Bogibeel Bridge, and a 15-minute ferry at Dhunaguri Ghat running 7 am to 5 pm.",
+   "applies_to": "All passengers and vehicles",
+   "set_by": "Majuli district administration",
+   "official_url": "https://majuli.assam.gov.in/tourist-place-detail/479",
+   "has_official_order": true,
+   "source": {
+    "url": "https://majuli.assam.gov.in/tourist-place-detail/479",
+    "title": "Majuli district: directions and stays",
+    "kind": "official",
+    "opened": true,
+    "source_date": null,
+    "accessed": "2026-09-28"
+   },
+   "history": []
   },
   {
    "id": "rule:majuli-ferry-online-ticket",
@@ -3024,6 +3043,22 @@
   "history": []
  },
  "authorities": [
+  {
+   "id": "authority:majuli-district-administration",
+   "office": "Majuli district administration",
+   "announces": "Publishes directions, ferry hours and the routes into the island",
+   "stretch": "Majuli and its ferry points",
+   "channel": "District website",
+   "url": "https://majuli.assam.gov.in/",
+   "source": {
+    "url": "https://majuli.assam.gov.in/tourist-place-detail/479",
+    "title": "Majuli district: directions and stays",
+    "kind": "official",
+    "opened": true,
+    "source_date": null,
+    "accessed": "2026-09-28"
+   }
+  },
   {
    "id": "authority:directorate-of-inland-water-transport-government-of-assam",
    "office": "Directorate of Inland Water Transport, Government of Assam",
@@ -3131,16 +3166,16 @@
  "gaps": [
   "No official statement found that the Majuli ferry carries motorcycles, nor an official fare for them; the ferry portal's landing page does not say.",
   "Whether motorcycles go on every vessel or only on the larger vehicle-carrying vessels was not established.",
-  "Current ferry timetable not found on an official page; times come from a guide and older news.",
+  "The district website gives ferry hours but not a sailing-by-sailing timetable, and does not say whether vehicles are carried.",
   "No flood-season speed order for 2025 or 2026 was found; the latest seen is July 2024.",
-  "Status of the bridge to Majuli and of the road approach from the north bank not sourced.",
+  "Status of the bridge being built between Jorhat and Majuli not sourced.",
   "Highest point and usual number of days not sourced; the route is in the plains.",
   "No source found stating that Assam needs no permit for Indian or foreign citizens.",
   "Kaziranga park opening and closing dates were not collected; they govern safaris, not the highway.",
   "Videos not collected."
  ],
  "counts": {
-  "facts": 57
+  "facts": 59
  },
  "built": "2026-09-28"
 }

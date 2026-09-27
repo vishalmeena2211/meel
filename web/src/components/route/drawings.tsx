@@ -107,13 +107,12 @@ export function Profile({
   ticks[ticks.length - 1] = Math.round(distanceKm);
 
   // Keep labels apart: a label is dropped if it would sit on top of the one before it.
-  let lastX = -100;
-  const labelled = marks.map((mark) => {
+  const labelled = marks.reduce<Array<ProfileMark & { px: number; py: number; show: boolean }>>((done, mark) => {
     const px = x(mark.km);
-    const show = mark.night !== undefined || px - lastX > 46;
-    if (show) lastX = px;
-    return { ...mark, px, py: y(mark.m), show };
-  });
+    const lastShown = [...done].reverse().find((d) => d.show);
+    const show = mark.night !== undefined || lastShown === undefined || px - lastShown.px > 46;
+    return [...done, { ...mark, px, py: y(mark.m), show }];
+  }, []);
 
   return (
     <figure className="card px-1.5 pt-2 pb-0.5">

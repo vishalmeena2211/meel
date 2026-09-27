@@ -1,9 +1,10 @@
 "use client";
 
-import { useEffect, useMemo, useState } from "react";
+import { useMemo, useState } from "react";
 
 import { km } from "@/lib/format";
 import type { Bike, FuelGap, Terrain } from "@/lib/types";
+import { parseStored, useStored } from "@/lib/use-stored";
 
 import { Callout } from "../ui";
 
@@ -15,26 +16,10 @@ interface Saved {
   kmpl: number;
 }
 
-function remember(value: Saved): void {
-  try {
-    window.localStorage.setItem("meel:bike", JSON.stringify(value));
-  } catch {
-    // Not remembered on this phone. The check still works.
-  }
-}
-
-function recall(): Saved | null {
-  try {
-    const raw = window.localStorage.getItem("meel:bike");
-    if (!raw) return null;
-    const v = JSON.parse(raw) as Partial<Saved>;
-    if (typeof v.bikeId === "string" && typeof v.tank === "number" && typeof v.kmpl === "number") {
-      return { bikeId: v.bikeId, tank: v.tank, kmpl: v.kmpl };
-    }
-  } catch {
-    // Unreadable. Start again.
-  }
-  return null;
+function isSaved(v: unknown): v is Saved {
+  if (typeof v !== "object" || v === null) return false;
+  const s = v as Partial<Saved>;
+  return typeof s.bikeId === "string" && typeof s.tank === "number" && typeof s.kmpl === "number";
 }
 
 /** On a climb, at height, a bike does worse than its maker says. How much worse is a guess, and the page says so. */
@@ -57,18 +42,14 @@ export function FuelCheck({
   routeName: string;
   pumpsListed: boolean;
 }) {
-  const [bikeId, setBikeId] = useState<string>("");
-  const [tank, setTank] = useState<string>("");
-  const [kmpl, setKmpl] = useState<string>("");
-
-  useEffect(() => {
-    const saved = recall();
-    if (saved) {
-      setBikeId(saved.bikeId);
-      setTank(String(saved.tank));
-      setKmpl(String(saved.kmpl));
-    }
-  }, []);
+  // What the rider has typed on this visit wins. Until they type, the bike remembered on this phone is used.
+  const [raw, setRaw] = useStored("meel:bike");
+  const saved = parseStored(raw, isSaved);
+  const [typed, setTyped] = useState<{ bikeId?: string; tank?: string; kmpl?: string }>({});
+  const bikeId = typed.bikeId ?? saved?.bikeId ?? "";
+  const tank = typed.tank ?? (saved ? String(saved.tank) : "");
+  const kmpl = typed.kmpl ?? (saved ? String(saved.kmpl) : "");
+  const remember = (value: Saved) => setRaw(JSON.stringify(value));
 
   const bike = bikes.find((b) => b.id === bikeId) ?? null;
   const longest = gaps[0] ?? null;
@@ -86,13 +67,14 @@ export function FuelCheck({
   }, [ready, longest, tankL, mileage]);
 
   function pick(id: string) {
-    setBikeId(id);
     const chosen = bikes.find((b) => b.id === id);
-    if (!chosen) return;
+    if (!chosen) {
+      setTyped({ ...typed, bikeId: id });
+      return;
+    }
     const t = chosen.tank_litres ?? 0;
     const k = likelyKmpl(chosen, terrain) ?? 0;
-    setTank(t ? String(t) : "");
-    setKmpl(k ? String(k) : "");
+    setTyped({ bikeId: id, tank: t ? String(t) : "", kmpl: k ? String(k) : "" });
     if (t && k) remember({ bikeId: id, tank: t, kmpl: k });
   }
 
@@ -137,7 +119,7 @@ export function FuelCheck({
             inputMode="decimal"
             value={tank}
             onChange={(e) => {
-              setTank(e.target.value);
+              setTyped({ ...typed, tank: e.target.value });
               save(e.target.value, kmpl);
             }}
           />
@@ -152,7 +134,7 @@ export function FuelCheck({
             inputMode="decimal"
             value={kmpl}
             onChange={(e) => {
-              setKmpl(e.target.value);
+              setTyped({ ...typed, kmpl: e.target.value });
               save(tank, e.target.value);
             }}
             aria-describedby="fuel-kmpl-hint"

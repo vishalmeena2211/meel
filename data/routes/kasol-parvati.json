@@ -932,13 +932,64 @@
   ]
  ],
  "fuel": {
-  "listed": false,
-  "pumps": [],
-  "pump_count": 0,
-  "stops": 0,
-  "longest_gaps": [],
-  "note": null,
-  "fetched": null
+  "listed": true,
+  "pumps": [
+   {
+    "id": "fuel:node-5569194021",
+    "name": "Indian oil",
+    "brand": "Indian Oil",
+    "near": "Bhuntar",
+    "km_from_start": 1.0,
+    "lat": 31.8905,
+    "lon": 77.14901,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/node/5569194021"
+   },
+   {
+    "id": "fuel:node-13288407502",
+    "name": "Petrol pump",
+    "brand": null,
+    "near": "Kasol",
+    "km_from_start": 23.8,
+    "lat": 32.00331,
+    "lon": 77.25517,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/node/13288407502"
+   }
+  ],
+  "pump_count": 2,
+  "stops": 2,
+  "longest_gaps": [
+   {
+    "from_km": 1.0,
+    "to_km": 23.8,
+    "gap_km": 22.8,
+    "from_is": "pump",
+    "to_is": "pump",
+    "near_from": "Bhuntar",
+    "near_to": "Kasol"
+   },
+   {
+    "from_km": 23.8,
+    "to_km": 46.3,
+    "gap_km": 22.5,
+    "from_is": "pump",
+    "to_is": "end of route",
+    "near_from": "Kasol",
+    "near_to": "Barshaini"
+   },
+   {
+    "from_km": 0.0,
+    "to_km": 1.0,
+    "gap_km": 1.0,
+    "from_is": "start of route",
+    "to_is": "pump",
+    "near_from": "Bhuntar",
+    "near_to": "Bhuntar"
+   }
+  ],
+  "note": "Pumps are those drawn on the open map within the search radius of the road. A pump missing from the map is missing here, so each gap is a worst case.",
+  "fetched": "2026-09-28"
  },
  "rules": [
   {
@@ -1212,7 +1263,7 @@
   "Videos: titles and channels were read from the video pages; filming dates and motorcycles are not confirmed."
  ],
  "counts": {
-  "facts": 20
+  "facts": 22
  },
  "built": "2026-09-28"
 }
