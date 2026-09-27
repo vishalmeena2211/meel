@@ -3,18 +3,23 @@
 import { revalidatePath } from "next/cache";
 import { z } from "zod";
 
+import type { FormState } from "@/components/form";
 import { getRoute } from "@/lib/content";
 import { indiaMonth, shortName } from "@/lib/format";
 import { currentUser } from "@/server/auth";
 import { sendTripReport, suggestPlace } from "@/server/reports";
 
-export interface FormState {
-  ok: boolean;
-  message: string;
-  errors: Record<string, string>;
-}
-
 const blank: FormState = { ok: false, message: "", errors: {} };
+
+/** What the rider typed, so that a form with one mistake in it comes back full, not empty. */
+function typed(form: FormData, names: readonly string[]): Record<string, string> {
+  const out: Record<string, string> = {};
+  for (const name of names) {
+    const value = form.get(name);
+    out[name] = typeof value === "string" ? value : "";
+  }
+  return out;
+}
 
 function errorsOf(error: z.ZodError): Record<string, string> {
   const out: Record<string, string> = {};
@@ -43,6 +48,7 @@ const tripReport = z.object({
 });
 
 export async function reportTrip(_previous: FormState, form: FormData): Promise<FormState> {
+  const values = typed(form, ["route", "month", "bike", "name", "hours", "fuel", "gear", "cost", "video"]);
   const parsed = tripReport.safeParse({
     route: form.get("route"),
     month: form.get("month"),
@@ -55,14 +61,14 @@ export async function reportTrip(_previous: FormState, form: FormData): Promise<
     video: form.get("video") || undefined,
   });
   if (!parsed.success) {
-    return { ...blank, message: "Something needs fixing.", errors: errorsOf(parsed.error) };
+    return { ...blank, message: "Something needs fixing.", errors: errorsOf(parsed.error), values };
   }
   const input = parsed.data;
   if (input.month > indiaMonth()) {
-    return { ...blank, message: "Something needs fixing.", errors: { month: "That month has not happened yet." } };
+    return { ...blank, message: "Something needs fixing.", errors: { month: "That month has not happened yet." }, values };
   }
   const route = await getRoute(input.route);
-  if (!route) return { ...blank, message: "Something needs fixing.", errors: { route: "Pick a route." } };
+  if (!route) return { ...blank, message: "Something needs fixing.", errors: { route: "Pick a route." }, values };
 
   const user = await currentUser();
   const { route: slug, month, bike, name, ...body } = input;
@@ -85,13 +91,14 @@ const suggestion = z.object({
 });
 
 export async function suggest(_previous: FormState, form: FormData): Promise<FormState> {
+  const values = typed(form, ["place", "note", "name"]);
   const parsed = suggestion.safeParse({
     place: form.get("place"),
     note: form.get("note") || undefined,
     name: form.get("name") || undefined,
   });
   if (!parsed.success) {
-    return { ...blank, message: "Something needs fixing.", errors: errorsOf(parsed.error) };
+    return { ...blank, message: "Something needs fixing.", errors: errorsOf(parsed.error), values };
   }
   suggestPlace(parsed.data.place, parsed.data.note ?? null, parsed.data.name ? shortName(parsed.data.name) : null);
   return { ok: true, errors: {}, message: `Sent. “${parsed.data.place}” is on the list to look at.` };

@@ -3,6 +3,7 @@
 import { useActionState, useEffect, useRef, useState } from "react";
 
 import { askAction, flagAction, postTripAction, type TripFormState } from "@/app/actions/trips";
+import { sayDate } from "@/lib/format";
 import type { Check } from "@/lib/trip-checks";
 
 import { Area, BLANK, ErrorSummary, Field, Select } from "../form";
@@ -33,7 +34,7 @@ export function PostTripForm({
   const [route, setRoute] = useState(v.route ?? startRoute);
   const [checks, setChecks] = useState<Check[] | null>(null);
   const reviewing = state.step === "review";
-  const chosen = routes.find((r) => r.slug === (v.route ?? route));
+  const chosen = routes.find((r) => r.slug === route);
   const regions = [...new Set(routes.map((r) => r.region_name))];
 
   useEffect(() => {
@@ -49,7 +50,7 @@ export function PostTripForm({
 
   if (reviewing) {
     return (
-      <form action={action} className="flex flex-col gap-4">
+      <form key="review" action={action} className="flex flex-col gap-4">
         {Object.entries(v).map(([k, val]) => (
           <input key={k} type="hidden" name={k} value={val} />
         ))}
@@ -62,7 +63,7 @@ export function PostTripForm({
           <dd className="font-semibold">{chosen?.name}</dd>
           <dt className="hint">Dates</dt>
           <dd className="num">
-            {v.leaves_on} to {v.back_on}
+            {sayDate(v.leaves_on)} to {sayDate(v.back_on)}
           </dd>
           <dt className="hint">From</dt>
           <dd>{v.from_city}</dd>
@@ -114,10 +115,17 @@ export function PostTripForm({
   }
 
   return (
-    <form action={action} className="flex flex-col gap-3" noValidate>
+    <form key="form" action={action} className="flex flex-col gap-3" noValidate>
       <ErrorSummary state={state} />
       <h2 className="label">Where and when</h2>
-      <Select label="Route" name="route" value={route} onChange={(e) => setRoute(e.target.value)} error={state.errors.route}>
+      {/* Not a controlled box: a form is reset after it is sent, and a reset must land on the route picked. */}
+      <Select
+        label="Route"
+        name="route"
+        defaultValue={route}
+        onChange={(e) => setRoute(e.target.value)}
+        error={state.errors.route}
+      >
         <option value="">Pick a route</option>
         {regions.map((region) => (
           <optgroup key={region} label={region}>
@@ -169,7 +177,7 @@ export function PostTripForm({
       ) : null}
 
       <h2 className="label mt-2">How you ride</h2>
-      <fieldset className="flex flex-col gap-1">
+      <fieldset id="pace" className="flex scroll-mt-24 flex-col gap-1">
         <legend className="text-sm font-semibold">Pace</legend>
         <div className="card flex flex-col">
           {(
@@ -234,11 +242,6 @@ export function PostTripForm({
         </span>
       </label>
 
-      {state.message && Object.keys(state.errors).length === 0 ? (
-        <p role="alert" className="text-sm font-medium text-stale-fg">
-          {state.message}
-        </p>
-      ) : null}
       <button type="submit" name="intent" value="review" className="btn btn-primary btn-block" disabled={pending}>
         {pending ? "Checking" : "Check against the route"}
       </button>
@@ -335,7 +338,7 @@ export function ReportTrip({ tripId }: { tripId: string }) {
                 ))}
               </fieldset>
               {state.errors.reason ? <p className="text-sm font-medium text-stale-fg">{state.errors.reason}</p> : null}
-              <Area label="Anything to add" name="note" optional="optional" maxLength={300} />
+              <Area label="Anything to add" name="note" id="flag-note" optional="optional" maxLength={300} />
               <div className="grid grid-cols-2 gap-2">
                 <button type="button" className="btn btn-outline" onClick={() => setOpen(false)}>
                   Cancel

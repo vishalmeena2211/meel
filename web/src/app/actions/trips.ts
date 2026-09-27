@@ -35,12 +35,12 @@ function errorsOf(error: z.ZodError): Record<string, string> {
   return out;
 }
 
-const day = z.string().regex(/^\d{4}-\d{2}-\d{2}$/, "Pick a date.");
+const day = (words: string) => z.string().regex(/^\d{4}-\d{2}-\d{2}$/, words);
 
 const tripForm = z.object({
   route: z.string().regex(/^[a-z0-9-]{1,80}$/, "Pick a route."),
-  leaves_on: day,
-  back_on: day,
+  leaves_on: day("Pick the day you leave."),
+  back_on: day("Pick the day you are back."),
   from_city: z.string().trim().min(2, "Say which city the trip starts from.").max(60),
   places: z.coerce.number().int().min(2, "At least 2, counting you.").max(12, "At most 12, counting you."),
   pace: z.enum(["relaxed", "steady", "fast"], { message: "Pick a pace." }),

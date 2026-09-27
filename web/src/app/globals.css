@@ -169,6 +169,8 @@ body {
     background: var(--color-surface);
     color: var(--color-ink);
     font: inherit;
+    /* A link from the error summary must not land the box under the header. */
+    scroll-margin-top: 7rem;
   }
   .field-input:focus {
     outline: none;

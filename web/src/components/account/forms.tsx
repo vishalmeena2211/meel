@@ -64,7 +64,14 @@ export function SignUpForm({ next }: { next: string }) {
       />
       <div className="flex flex-col gap-1">
         <label className="flex items-start gap-2.5 text-[0.9375rem]">
-          <input type="checkbox" name="agreed" value="yes" className="mt-0.5 size-[18px] shrink-0 accent-sign" />
+          <input
+            id="agreed"
+            type="checkbox"
+            name="agreed"
+            value="yes"
+            aria-invalid={state.errors.agreed ? true : undefined}
+            className="mt-0.5 size-[18px] shrink-0 accent-sign"
+          />
           <span>
             I am 18 or older, and I have read the{" "}
             <Link className="link" href="/rules" target="_blank">

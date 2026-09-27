@@ -13,24 +13,26 @@ export const BLANK: FormState = { ok: false, message: "", errors: {} };
 interface Common {
   label: string;
   name: string;
+  /** Only needed when two boxes on one page share a name. */
+  id?: string;
   hint?: string;
   optional?: string;
   error?: string;
 }
 
-function Wrap({ label, name, hint, optional, error, children }: Common & { children: ReactNode }) {
+function Wrap({ label, name, id = name, hint, optional, error, children }: Common & { children: ReactNode }) {
   return (
     <div className="flex flex-col gap-1">
-      <label htmlFor={name} className="text-sm font-semibold">
+      <label htmlFor={id} className="text-sm font-semibold">
         {label} {optional ? <span className="font-normal text-ink-2">{optional}</span> : null}
       </label>
       {children}
       {error ? (
-        <p id={`${name}-error`} className="text-sm font-medium text-stale-fg">
+        <p id={`${id}-error`} className="text-sm font-medium text-stale-fg">
           {error}
         </p>
       ) : hint ? (
-        <p id={`${name}-hint`} className="hint">
+        <p id={`${id}-hint`} className="hint">
           {hint}
         </p>
       ) : null}
@@ -38,27 +40,28 @@ function Wrap({ label, name, hint, optional, error, children }: Common & { child
   );
 }
 
-function described(name: string, hint?: string, error?: string): string | undefined {
-  if (error) return `${name}-error`;
-  if (hint) return `${name}-hint`;
+function described(id: string, hint?: string, error?: string): string | undefined {
+  if (error) return `${id}-error`;
+  if (hint) return `${id}-hint`;
   return undefined;
 }
 
 export function Field({
   label,
   name,
+  id = name,
   hint,
   optional,
   error,
   ...rest
 }: Common & Omit<InputHTMLAttributes<HTMLInputElement>, "name" | "id">) {
   return (
-    <Wrap label={label} name={name} hint={hint} optional={optional} error={error}>
+    <Wrap label={label} name={name} id={id} hint={hint} optional={optional} error={error}>
       <input
-        id={name}
+        id={id}
         name={name}
         aria-invalid={error ? true : undefined}
-        aria-describedby={described(name, hint, error)}
+        aria-describedby={described(id, hint, error)}
         className="field-input"
         {...rest}
       />
@@ -69,19 +72,20 @@ export function Field({
 export function Area({
   label,
   name,
+  id = name,
   hint,
   optional,
   error,
   ...rest
 }: Common & Omit<TextareaHTMLAttributes<HTMLTextAreaElement>, "name" | "id">) {
   return (
-    <Wrap label={label} name={name} hint={hint} optional={optional} error={error}>
+    <Wrap label={label} name={name} id={id} hint={hint} optional={optional} error={error}>
       <textarea
-        id={name}
+        id={id}
         name={name}
         rows={3}
         aria-invalid={error ? true : undefined}
-        aria-describedby={described(name, hint, error)}
+        aria-describedby={described(id, hint, error)}
         className="field-input"
         {...rest}
       />
@@ -92,6 +96,7 @@ export function Area({
 export function Select({
   label,
   name,
+  id = name,
   hint,
   optional,
   error,
@@ -99,12 +104,12 @@ export function Select({
   ...rest
 }: Common & Omit<SelectHTMLAttributes<HTMLSelectElement>, "name" | "id"> & { children: ReactNode }) {
   return (
-    <Wrap label={label} name={name} hint={hint} optional={optional} error={error}>
+    <Wrap label={label} name={name} id={id} hint={hint} optional={optional} error={error}>
       <select
-        id={name}
+        id={id}
         name={name}
         aria-invalid={error ? true : undefined}
-        aria-describedby={described(name, hint, error)}
+        aria-describedby={described(id, hint, error)}
         className="field-input"
         {...rest}
       >
@@ -114,19 +119,7 @@ export function Select({
   );
 }
 
-/** Counts what needs fixing, for a rider whose keyboard hides the rest of the form. */
-export function ErrorSummary({ state }: { state: FormState }) {
-  const count = Object.keys(state.errors).length;
-  if (state.ok || (!state.message && count === 0)) return null;
-  return (
-    <div role="alert" className="rounded-lg border border-stale-fg/30 bg-stale-bg px-3 py-2.5 text-sm">
-      <b className="block">
-        {count > 0 ? `${count} ${count === 1 ? "thing needs" : "things need"} fixing` : state.message}
-      </b>
-      {count > 0 ? "Each is marked below." : null}
-    </div>
-  );
-}
+export { ErrorSummary } from "./error-summary";
 
 export function PageTitle({ title, lede }: { title: string; lede?: string }) {
   return (
