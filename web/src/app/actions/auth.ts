@@ -4,7 +4,16 @@ import { redirect } from "next/navigation";
 import { z } from "zod";
 
 import type { FormState } from "@/components/form";
-import { checkPassword, currentUser, deleteAccount, endSession, logIn, signUp, updateProfile } from "@/server/auth";
+import {
+  checkPassword,
+  currentUser,
+  deleteAccount,
+  endSession,
+  logIn,
+  mayNotSignUp,
+  signUp,
+  updateProfile,
+} from "@/server/auth";
 
 function errorsOf(error: z.ZodError): Record<string, string> {
   const out: Record<string, string> = {};
@@ -66,6 +75,16 @@ export async function signUpAction(_previous: FormState, form: FormData): Promis
   }
   if (!parsed.success || Object.keys(errors).length > 0) {
     return { ok: false, message: "Something needs fixing.", errors, values };
+  }
+
+  if (mayNotSignUp(parsed.data.email)) {
+    // The same words as for an email already taken, so that nothing is given away.
+    return {
+      ok: false,
+      message: "Something needs fixing.",
+      errors: { email: "An account with this email already exists. Log in with it, or use a different one here." },
+      values,
+    };
   }
 
   const result = await signUp({

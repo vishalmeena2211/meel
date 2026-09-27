@@ -53,6 +53,16 @@ function editors(): string[] {
     .filter(Boolean);
 }
 
+/**
+ * An editor's email can only be signed up while the owner has opened the door, by setting
+ * MEEL_EDITOR_SIGNUP to "open". Emails are not checked by post, so without this, anyone who
+ * guessed the address and signed up first would hold the editor's rights.
+ */
+export function mayNotSignUp(email: string): boolean {
+  if (!editors().includes(email.trim().toLowerCase())) return false;
+  return process.env.MEEL_EDITOR_SIGNUP !== "open";
+}
+
 function toUser(row: UserRow): User {
   return {
     id: row.id,
