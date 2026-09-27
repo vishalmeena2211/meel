@@ -1,0 +1,232 @@
+@import "tailwindcss";
+
+/*
+  Meel's look comes from Indian road furniture:
+  kilometre stones (white body, yellow cap, black letters) and green highway signboards.
+  The site is light only on purpose. It is read outdoors, on a phone, in sunlight.
+*/
+@theme {
+  --color-ink: #16201c;
+  --color-ink-2: #55615b;
+  --color-rule: #8a948f;
+  --color-line: #d9deda;
+  --color-surface: #ffffff;
+  --color-surface-2: #f4f6f4;
+  --color-ground: #e8ece9;
+
+  /* highway signboard green: actions and links */
+  --color-sign: #0f5f4b;
+  --color-sign-dark: #0a4a3a;
+  --color-sign-soft: #e9f1ee;
+  --color-sign-line: #abc9bf;
+
+  /* kilometre-stone yellow: fills only, never text */
+  --color-stone: #f2b807;
+  --color-stone-soft: #fdf3d4;
+
+  --color-danger: #b42318;
+
+  /* how much a fact can be trusted: separate from the brand colours */
+  --color-fresh-bg: #e7f6ec;
+  --color-fresh-fg: #17663a;
+  --color-ageing-bg: #fff4db;
+  --color-ageing-fg: #8a4b06;
+  --color-stale-bg: #fdecea;
+  --color-stale-fg: #a1241a;
+  --color-unchecked-bg: #eef1f4;
+  --color-unchecked-fg: #3f4a57;
+  --color-conflict-bg: #f1ecfb;
+  --color-conflict-fg: #4e2f8f;
+
+  --ease-out-soft: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@theme inline {
+  --font-display: var(--font-barlow-condensed), "Arial Narrow", "Helvetica Neue", sans-serif;
+  --font-sans: var(--font-hind), "Noto Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+
+:root {
+  color-scheme: light;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  scroll-padding-top: 5rem;
+}
+
+body {
+  background: var(--color-ground);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+  font-size: 15px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-sign);
+  outline-offset: 2px;
+}
+
+@layer components {
+  /* Display type: condensed, like lettering on a signboard */
+  .display {
+    font-family: var(--font-display);
+    font-weight: 700;
+    letter-spacing: 0.01em;
+    line-height: 1.05;
+    text-wrap: balance;
+  }
+
+  .label {
+    font-family: var(--font-display);
+    font-weight: 600;
+    font-size: 0.8125rem;
+    line-height: 1;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--color-ink-2);
+  }
+
+  .hint {
+    font-size: 0.8125rem;
+    line-height: 1.4;
+    color: var(--color-ink-2);
+  }
+
+  .link {
+    color: var(--color-sign);
+    font-weight: 600;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+  }
+  .link:hover {
+    color: var(--color-sign-dark);
+  }
+
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.4rem;
+    min-height: 44px;
+    padding: 0 1rem;
+    border-radius: 0.5rem;
+    border: 1px solid transparent;
+    font-weight: 600;
+    font-size: 0.9375rem;
+    white-space: nowrap;
+    cursor: pointer;
+    transition:
+      background-color 140ms var(--ease-out-soft),
+      border-color 140ms var(--ease-out-soft);
+  }
+  .btn:disabled,
+  .btn[aria-disabled="true"] {
+    cursor: not-allowed;
+    background: var(--color-surface-2);
+    color: var(--color-rule);
+    border-color: var(--color-line);
+  }
+  .btn-primary {
+    background: var(--color-sign);
+    color: var(--color-surface);
+  }
+  .btn-primary:hover:not(:disabled) {
+    background: var(--color-sign-dark);
+  }
+  .btn-soft {
+    background: var(--color-sign-soft);
+    color: var(--color-sign);
+    border-color: var(--color-sign-line);
+  }
+  .btn-soft:hover:not(:disabled) {
+    border-color: var(--color-sign);
+  }
+  .btn-outline {
+    background: var(--color-surface);
+    color: var(--color-ink);
+    border-color: var(--color-line);
+  }
+  .btn-outline:hover:not(:disabled) {
+    border-color: var(--color-ink-2);
+  }
+  .btn-danger {
+    background: var(--color-danger);
+    color: var(--color-surface);
+  }
+  .btn-block {
+    width: 100%;
+  }
+
+  .field-input {
+    width: 100%;
+    min-height: 46px;
+    padding: 0.6rem 0.75rem;
+    border: 1px solid var(--color-line);
+    border-radius: 0.5rem;
+    background: var(--color-surface);
+    color: var(--color-ink);
+    font: inherit;
+  }
+  .field-input:focus {
+    outline: none;
+    border-color: var(--color-sign);
+    box-shadow: 0 0 0 3px var(--color-sign-soft);
+  }
+  .field-input[aria-invalid="true"] {
+    border-color: var(--color-stale-fg);
+  }
+
+  .card {
+    background: var(--color-surface);
+    border: 1px solid var(--color-line);
+    border-radius: 0.5rem;
+  }
+
+  .chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    min-height: 40px;
+    padding: 0 0.875rem;
+    border-radius: 1.25rem;
+    border: 1px solid var(--color-line);
+    background: var(--color-surface);
+    font-size: 0.875rem;
+    white-space: nowrap;
+    cursor: pointer;
+  }
+  .chip[aria-pressed="true"],
+  .chip[aria-current="true"] {
+    border-color: var(--color-sign);
+    background: var(--color-sign-soft);
+    color: var(--color-sign);
+    font-weight: 600;
+  }
+
+  /* A row of chips that scrolls sideways on a phone */
+  .scroll-row {
+    display: flex;
+    gap: 0.4rem;
+    overflow-x: auto;
+    scrollbar-width: none;
+    padding-bottom: 2px;
+  }
+  .scroll-row::-webkit-scrollbar {
+    display: none;
+  }
+
+  .num {
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    transition: none !important;
+    animation: none !important;
+    scroll-behavior: auto !important;
+  }
+}
