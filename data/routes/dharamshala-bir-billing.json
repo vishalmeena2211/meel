@@ -1,0 +1,2296 @@
+{
+ "slug": "dharamshala-bir-billing",
+ "name": "Dharamshala, McLeod Ganj and Bir Billing",
+ "region": "himachal",
+ "region_name": "Himachal",
+ "batch": 1,
+ "terrain": "mountain",
+ "country": "in",
+ "level": "basic",
+ "one_line": "Himachal Pradesh, along the foot of the Dhauladhar from Dharamshala through Palampur to Bir and up to Billing",
+ "places": [
+  "Dharamshala",
+  "McLeod Ganj",
+  "Palampur",
+  "Baijnath",
+  "Bir",
+  "Billing"
+ ],
+ "header": {
+  "highway": {
+   "value": "NH 503 reaches Dharamshala and McLeod Ganj; number for the Palampur to Baijnath road not confirmed",
+   "source": {
+    "url": "https://en.wikipedia.org/wiki/National_Highway_503_(India)",
+    "title": "National Highway 503 (India)",
+    "kind": "encyclopedia",
+    "opened": true,
+    "source_date": null,
+    "accessed": "2026-09-28"
+   }
+  },
+  "distance_km": 88.4,
+  "map_app_hours": 2.66,
+  "usual_days": {
+   "value": "3 to 6",
+   "source": {
+    "url": "https://himtrails.in/himachal-trip-itinerary-planner/",
+    "title": "Himachal trip itinerary planner",
+    "kind": "operator",
+    "opened": true,
+    "source_date": "2026-04",
+    "accessed": "2026-09-28"
+   }
+  },
+  "highest_point": {
+   "name": "Billing",
+   "altitude_m": 2400,
+   "source": {
+    "url": "https://en.wikipedia.org/wiki/Bir,_Himachal_Pradesh",
+    "title": "Bir, Himachal Pradesh",
+    "kind": "encyclopedia",
+    "opened": true,
+    "source_date": null,
+    "accessed": "2026-09-28"
+   },
+   "computed": false
+  },
+  "usual_season": {
+   "value": "March to June and September to November",
+   "source": {
+    "url": "https://himtrails.in/himachal-trip-itinerary-planner/",
+    "title": "Himachal trip itinerary planner",
+    "kind": "operator",
+    "opened": true,
+    "source_date": "2026-04",
+    "accessed": "2026-09-28"
+   }
+  }
+ },
+ "waypoints": [
+  {
+   "name": "Dharamshala",
+   "lat": 32.21448,
+   "lon": 76.31996,
+   "km_from_start": 0.0,
+   "altitude_m": 1310,
+   "kind": "place",
+   "moved_to_road_m": 34
+  },
+  {
+   "name": "McLeod Ganj",
+   "lat": 32.23524,
+   "lon": 76.32623,
+   "km_from_start": 4.8,
+   "altitude_m": 1745,
+   "kind": "place",
+   "moved_to_road_m": 3
+  },
+  {
+   "name": "Palampur",
+   "lat": 32.10956,
+   "lon": 76.53585,
+   "km_from_start": 45.6,
+   "altitude_m": 1262,
+   "kind": "place",
+   "moved_to_road_m": 9
+  },
+  {
+   "name": "Baijnath",
+   "lat": 32.05011,
+   "lon": 76.64508,
+   "km_from_start": 62.1,
+   "altitude_m": 1002,
+   "kind": "place",
+   "moved_to_road_m": 41
+  },
+  {
+   "name": "Bir",
+   "lat": 32.04437,
+   "lon": 76.72554,
+   "km_from_start": 74.9,
+   "altitude_m": 1552,
+   "kind": "place",
+   "moved_to_road_m": 17
+  },
+  {
+   "name": "Billing",
+   "lat": 32.05826,
+   "lon": 76.7442,
+   "km_from_start": 88.4,
+   "altitude_m": 2401,
+   "kind": "place",
+   "moved_to_road_m": 45
+  }
+ ],
+ "stretches": [
+  {
+   "from": "Dharamshala",
+   "to": "McLeod Ganj",
+   "distance_km": 4.8,
+   "map_app_hours": 0.18,
+   "doubtful": false
+  },
+  {
+   "from": "McLeod Ganj",
+   "to": "Palampur",
+   "distance_km": 40.8,
+   "map_app_hours": 1.06,
+   "doubtful": false
+  },
+  {
+   "from": "Palampur",
+   "to": "Baijnath",
+   "distance_km": 16.5,
+   "map_app_hours": 0.47,
+   "doubtful": false
+  },
+  {
+   "from": "Baijnath",
+   "to": "Bir",
+   "distance_km": 12.8,
+   "map_app_hours": 0.39,
+   "doubtful": false
+  },
+  {
+   "from": "Bir",
+   "to": "Billing",
+   "distance_km": 13.5,
+   "map_app_hours": 0.56,
+   "doubtful": false
+  }
+ ],
+ "profile": [
+  {
+   "km": 0.0,
+   "m": 1310
+  },
+  {
+   "km": 2.1,
+   "m": 1558
+  },
+  {
+   "km": 4.1,
+   "m": 1728
+  },
+  {
+   "km": 6.2,
+   "m": 1590
+  },
+  {
+   "km": 8.3,
+   "m": 1385
+  },
+  {
+   "km": 10.4,
+   "m": 1201
+  },
+  {
+   "km": 12.4,
+   "m": 1172
+  },
+  {
+   "km": 14.5,
+   "m": 1163
+  },
+  {
+   "km": 16.6,
+   "m": 1283
+  },
+  {
+   "km": 18.7,
+   "m": 1154
+  },
+  {
+   "km": 20.7,
+   "m": 1132
+  },
+  {
+   "km": 22.8,
+   "m": 1125
+  },
+  {
+   "km": 24.9,
+   "m": 1074
+  },
+  {
+   "km": 27.0,
+   "m": 1071
+  },
+  {
+   "km": 29.0,
+   "m": 1164
+  },
+  {
+   "km": 31.1,
+   "m": 1264
+  },
+  {
+   "km": 33.2,
+   "m": 1271
+  },
+  {
+   "km": 35.3,
+   "m": 1274
+  },
+  {
+   "km": 37.3,
+   "m": 1190
+  },
+  {
+   "km": 39.4,
+   "m": 1081
+  },
+  {
+   "km": 41.5,
+   "m": 1169
+  },
+  {
+   "km": 43.5,
+   "m": 1253
+  },
+  {
+   "km": 45.6,
+   "m": 1264
+  },
+  {
+   "km": 47.7,
+   "m": 1288
+  },
+  {
+   "km": 49.8,
+   "m": 1306
+  },
+  {
+   "km": 51.8,
+   "m": 1221
+  },
+  {
+   "km": 53.9,
+   "m": 1166
+  },
+  {
+   "km": 56.0,
+   "m": 1073
+  },
+  {
+   "km": 58.1,
+   "m": 978
+  },
+  {
+   "km": 60.1,
+   "m": 968
+  },
+  {
+   "km": 62.2,
+   "m": 1002
+  },
+  {
+   "km": 64.3,
+   "m": 1089
+  },
+  {
+   "km": 66.4,
+   "m": 1213
+  },
+  {
+   "km": 68.4,
+   "m": 1218
+  },
+  {
+   "km": 70.5,
+   "m": 1284
+  },
+  {
+   "km": 72.6,
+   "m": 1358
+  },
+  {
+   "km": 74.7,
+   "m": 1539
+  },
+  {
+   "km": 76.7,
+   "m": 1640
+  },
+  {
+   "km": 78.8,
+   "m": 1804
+  },
+  {
+   "km": 80.9,
+   "m": 1931
+  },
+  {
+   "km": 82.9,
+   "m": 2068
+  },
+  {
+   "km": 85.0,
+   "m": 2203
+  },
+  {
+   "km": 87.1,
+   "m": 2331
+  },
+  {
+   "km": 88.4,
+   "m": 2401
+  }
+ ],
+ "line": [
+  [
+   76.31996,
+   32.21448
+  ],
+  [
+   76.31868,
+   32.21587
+  ],
+  [
+   76.3184,
+   32.21989
+  ],
+  [
+   76.32111,
+   32.22295
+  ],
+  [
+   76.32227,
+   32.22321
+  ],
+  [
+   76.32037,
+   32.22383
+  ],
+  [
+   76.32124,
+   32.22379
+  ],
+  [
+   76.32258,
+   32.22476
+  ],
+  [
+   76.32201,
+   32.22528
+  ],
+  [
+   76.32344,
+   32.22554
+  ],
+  [
+   76.3223,
+   32.22592
+  ],
+  [
+   76.32542,
+   32.2273
+  ],
+  [
+   76.3268,
+   32.23006
+  ],
+  [
+   76.32657,
+   32.23223
+  ],
+  [
+   76.3277,
+   32.23324
+  ],
+  [
+   76.32734,
+   32.23357
+  ],
+  [
+   76.32808,
+   32.2345
+  ],
+  [
+   76.32756,
+   32.23541
+  ],
+  [
+   76.32429,
+   32.23718
+  ],
+  [
+   76.32385,
+   32.23573
+  ],
+  [
+   76.32474,
+   32.23436
+  ],
+  [
+   76.32465,
+   32.23321
+  ],
+  [
+   76.32703,
+   32.23476
+  ],
+  [
+   76.32623,
+   32.23524
+  ],
+  [
+   76.32699,
+   32.23454
+  ],
+  [
+   76.32465,
+   32.23321
+  ],
+  [
+   76.32527,
+   32.23261
+  ],
+  [
+   76.32511,
+   32.23209
+  ],
+  [
+   76.32622,
+   32.23307
+  ],
+  [
+   76.3277,
+   32.23324
+  ],
+  [
+   76.32657,
+   32.23223
+  ],
+  [
+   76.3268,
+   32.23006
+  ],
+  [
+   76.32542,
+   32.2273
+  ],
+  [
+   76.3223,
+   32.22592
+  ],
+  [
+   76.32344,
+   32.22554
+  ],
+  [
+   76.32194,
+   32.22525
+  ],
+  [
+   76.32258,
+   32.22476
+  ],
+  [
+   76.32124,
+   32.22379
+  ],
+  [
+   76.32037,
+   32.22383
+  ],
+  [
+   76.3205,
+   32.22352
+  ],
+  [
+   76.31924,
+   32.22504
+  ],
+  [
+   76.31926,
+   32.22447
+  ],
+  [
+   76.31878,
+   32.22482
+  ],
+  [
+   76.31852,
+   32.22428
+  ],
+  [
+   76.3182,
+   32.22455
+  ],
+  [
+   76.31845,
+   32.22311
+  ],
+  [
+   76.31779,
+   32.22227
+  ],
+  [
+   76.31889,
+   32.22089
+  ],
+  [
+   76.31835,
+   32.21975
+  ],
+  [
+   76.31871,
+   32.21927
+  ],
+  [
+   76.3184,
+   32.21849
+  ],
+  [
+   76.31894,
+   32.21364
+  ],
+  [
+   76.32024,
+   32.21307
+  ],
+  [
+   76.32532,
+   32.20464
+  ],
+  [
+   76.32573,
+   32.20318
+  ],
+  [
+   76.3261,
+   32.2046
+  ],
+  [
+   76.32838,
+   32.20564
+  ],
+  [
+   76.33581,
+   32.20015
+  ],
+  [
+   76.33834,
+   32.2001
+  ],
+  [
+   76.33935,
+   32.19964
+  ],
+  [
+   76.341,
+   32.20055
+  ],
+  [
+   76.34199,
+   32.19996
+  ],
+  [
+   76.34366,
+   32.20039
+  ],
+  [
+   76.34434,
+   32.19953
+  ],
+  [
+   76.34385,
+   32.19806
+  ],
+  [
+   76.34427,
+   32.19772
+  ],
+  [
+   76.34364,
+   32.19664
+  ],
+  [
+   76.34553,
+   32.19451
+  ],
+  [
+   76.35012,
+   32.19149
+  ],
+  [
+   76.35464,
+   32.18984
+  ],
+  [
+   76.35546,
+   32.19031
+  ],
+  [
+   76.35552,
+   32.19095
+  ],
+  [
+   76.35741,
+   32.19208
+  ],
+  [
+   76.35847,
+   32.19502
+  ],
+  [
+   76.35972,
+   32.19609
+  ],
+  [
+   76.36589,
+   32.19958
+  ],
+  [
+   76.36701,
+   32.20109
+  ],
+  [
+   76.36843,
+   32.2008
+  ],
+  [
+   76.36719,
+   32.19855
+  ],
+  [
+   76.36538,
+   32.19706
+  ],
+  [
+   76.36262,
+   32.19078
+  ],
+  [
+   76.36316,
+   32.18853
+  ],
+  [
+   76.36483,
+   32.18619
+  ],
+  [
+   76.36959,
+   32.18446
+  ],
+  [
+   76.37415,
+   32.18345
+  ],
+  [
+   76.38063,
+   32.1766
+  ],
+  [
+   76.38582,
+   32.17309
+  ],
+  [
+   76.38642,
+   32.17187
+  ],
+  [
+   76.38834,
+   32.17194
+  ],
+  [
+   76.39004,
+   32.17082
+  ],
+  [
+   76.39149,
+   32.16784
+  ],
+  [
+   76.39298,
+   32.1668
+  ],
+  [
+   76.39805,
+   32.16432
+  ],
+  [
+   76.40171,
+   32.16342
+  ],
+  [
+   76.40424,
+   32.16121
+  ],
+  [
+   76.40564,
+   32.16193
+  ],
+  [
+   76.40428,
+   32.16052
+  ],
+  [
+   76.40671,
+   32.1616
+  ],
+  [
+   76.40685,
+   32.1606
+  ],
+  [
+   76.40589,
+   32.15962
+  ],
+  [
+   76.4059,
+   32.15725
+  ],
+  [
+   76.40628,
+   32.15935
+  ],
+  [
+   76.40737,
+   32.1603
+  ],
+  [
+   76.41171,
+   32.1584
+  ],
+  [
+   76.41642,
+   32.15456
+  ],
+  [
+   76.41725,
+   32.15334
+  ],
+  [
+   76.41696,
+   32.15114
+  ],
+  [
+   76.41907,
+   32.15049
+  ],
+  [
+   76.42184,
+   32.14755
+  ],
+  [
+   76.42311,
+   32.14833
+  ],
+  [
+   76.42236,
+   32.14728
+  ],
+  [
+   76.42071,
+   32.14703
+  ],
+  [
+   76.42225,
+   32.14704
+  ],
+  [
+   76.42612,
+   32.14892
+  ],
+  [
+   76.43183,
+   32.15028
+  ],
+  [
+   76.43481,
+   32.15203
+  ],
+  [
+   76.43533,
+   32.15172
+  ],
+  [
+   76.43434,
+   32.15088
+  ],
+  [
+   76.43383,
+   32.14739
+  ],
+  [
+   76.43444,
+   32.14822
+  ],
+  [
+   76.43576,
+   32.14572
+  ],
+  [
+   76.43655,
+   32.14579
+  ],
+  [
+   76.43728,
+   32.14691
+  ],
+  [
+   76.43936,
+   32.1463
+  ],
+  [
+   76.44203,
+   32.14637
+  ],
+  [
+   76.44352,
+   32.14517
+  ],
+  [
+   76.44733,
+   32.14551
+  ],
+  [
+   76.45458,
+   32.1415
+  ],
+  [
+   76.4565,
+   32.14108
+  ],
+  [
+   76.45586,
+   32.13965
+  ],
+  [
+   76.45655,
+   32.13855
+  ],
+  [
+   76.45929,
+   32.13789
+  ],
+  [
+   76.46356,
+   32.1357
+  ],
+  [
+   76.46737,
+   32.13483
+  ],
+  [
+   76.46855,
+   32.13512
+  ],
+  [
+   76.47194,
+   32.13208
+  ],
+  [
+   76.47495,
+   32.13196
+  ],
+  [
+   76.4762,
+   32.13115
+  ],
+  [
+   76.47709,
+   32.13169
+  ],
+  [
+   76.48053,
+   32.13139
+  ],
+  [
+   76.48093,
+   32.13043
+  ],
+  [
+   76.48314,
+   32.13241
+  ],
+  [
+   76.48304,
+   32.13173
+  ],
+  [
+   76.48192,
+   32.13102
+  ],
+  [
+   76.48247,
+   32.12904
+  ],
+  [
+   76.48193,
+   32.12689
+  ],
+  [
+   76.48293,
+   32.12434
+  ],
+  [
+   76.48405,
+   32.1229
+  ],
+  [
+   76.4868,
+   32.12266
+  ],
+  [
+   76.48773,
+   32.12301
+  ],
+  [
+   76.48945,
+   32.1226
+  ],
+  [
+   76.48983,
+   32.12316
+  ],
+  [
+   76.49093,
+   32.12056
+  ],
+  [
+   76.48932,
+   32.1185
+  ],
+  [
+   76.49013,
+   32.11606
+  ],
+  [
+   76.48845,
+   32.1157
+  ],
+  [
+   76.48819,
+   32.10938
+  ],
+  [
+   76.49184,
+   32.11136
+  ],
+  [
+   76.49226,
+   32.11053
+  ],
+  [
+   76.49377,
+   32.10989
+  ],
+  [
+   76.49616,
+   32.10989
+  ],
+  [
+   76.49981,
+   32.1114
+  ],
+  [
+   76.50214,
+   32.11112
+  ],
+  [
+   76.50536,
+   32.11158
+  ],
+  [
+   76.50656,
+   32.11239
+  ],
+  [
+   76.50791,
+   32.11423
+  ],
+  [
+   76.51148,
+   32.11445
+  ],
+  [
+   76.51319,
+   32.11514
+  ],
+  [
+   76.5167,
+   32.11419
+  ],
+  [
+   76.5215,
+   32.11405
+  ],
+  [
+   76.52479,
+   32.11328
+  ],
+  [
+   76.52635,
+   32.11367
+  ],
+  [
+   76.5289,
+   32.11337
+  ],
+  [
+   76.53205,
+   32.11096
+  ],
+  [
+   76.53336,
+   32.11069
+  ],
+  [
+   76.53488,
+   32.114
+  ],
+  [
+   76.53663,
+   32.10989
+  ],
+  [
+   76.53666,
+   32.1093
+  ],
+  [
+   76.53579,
+   32.10926
+  ],
+  [
+   76.53633,
+   32.11052
+  ],
+  [
+   76.53666,
+   32.10858
+  ],
+  [
+   76.53817,
+   32.10987
+  ],
+  [
+   76.53803,
+   32.11138
+  ],
+  [
+   76.53859,
+   32.112
+  ],
+  [
+   76.53903,
+   32.11062
+  ],
+  [
+   76.54049,
+   32.10986
+  ],
+  [
+   76.5396,
+   32.10965
+  ],
+  [
+   76.53949,
+   32.10879
+  ],
+  [
+   76.54453,
+   32.10826
+  ],
+  [
+   76.54632,
+   32.10715
+  ],
+  [
+   76.5477,
+   32.10495
+  ],
+  [
+   76.54855,
+   32.10451
+  ],
+  [
+   76.55336,
+   32.10458
+  ],
+  [
+   76.55542,
+   32.10371
+  ],
+  [
+   76.55706,
+   32.10363
+  ],
+  [
+   76.55849,
+   32.10265
+  ],
+  [
+   76.56045,
+   32.10283
+  ],
+  [
+   76.56092,
+   32.10199
+  ],
+  [
+   76.56531,
+   32.09954
+  ],
+  [
+   76.56765,
+   32.09722
+  ],
+  [
+   76.56875,
+   32.09541
+  ],
+  [
+   76.57023,
+   32.0944
+  ],
+  [
+   76.57137,
+   32.09429
+  ],
+  [
+   76.57186,
+   32.09231
+  ],
+  [
+   76.57477,
+   32.09123
+  ],
+  [
+   76.57528,
+   32.0922
+  ],
+  [
+   76.57506,
+   32.09402
+  ],
+  [
+   76.57581,
+   32.09367
+  ],
+  [
+   76.57602,
+   32.09226
+  ],
+  [
+   76.57768,
+   32.09277
+  ],
+  [
+   76.578,
+   32.09337
+  ],
+  [
+   76.57861,
+   32.09303
+  ],
+  [
+   76.57991,
+   32.08979
+  ],
+  [
+   76.58179,
+   32.08955
+  ],
+  [
+   76.58315,
+   32.08679
+  ],
+  [
+   76.58478,
+   32.08606
+  ],
+  [
+   76.58767,
+   32.08264
+  ],
+  [
+   76.5894,
+   32.08172
+  ],
+  [
+   76.58961,
+   32.07925
+  ],
+  [
+   76.5933,
+   32.07452
+  ],
+  [
+   76.59558,
+   32.07388
+  ],
+  [
+   76.59935,
+   32.07382
+  ],
+  [
+   76.60253,
+   32.07232
+  ],
+  [
+   76.60596,
+   32.07146
+  ],
+  [
+   76.61695,
+   32.06463
+  ],
+  [
+   76.62051,
+   32.06422
+  ],
+  [
+   76.62067,
+   32.06319
+  ],
+  [
+   76.62134,
+   32.06522
+  ],
+  [
+   76.62334,
+   32.06488
+  ],
+  [
+   76.62315,
+   32.06261
+  ],
+  [
+   76.62501,
+   32.06236
+  ],
+  [
+   76.62786,
+   32.06016
+  ],
+  [
+   76.62824,
+   32.05848
+  ],
+  [
+   76.63173,
+   32.0576
+  ],
+  [
+   76.63241,
+   32.05503
+  ],
+  [
+   76.63399,
+   32.05439
+  ],
+  [
+   76.63507,
+   32.05222
+  ],
+  [
+   76.63758,
+   32.05224
+  ],
+  [
+   76.63894,
+   32.05285
+  ],
+  [
+   76.64197,
+   32.05238
+  ],
+  [
+   76.64292,
+   32.05289
+  ],
+  [
+   76.644,
+   32.05192
+  ],
+  [
+   76.64285,
+   32.05256
+  ],
+  [
+   76.64165,
+   32.05174
+  ],
+  [
+   76.64214,
+   32.05108
+  ],
+  [
+   76.64603,
+   32.04966
+  ],
+  [
+   76.64651,
+   32.05062
+  ],
+  [
+   76.64894,
+   32.05238
+  ],
+  [
+   76.6499,
+   32.05452
+  ],
+  [
+   76.65146,
+   32.05627
+  ],
+  [
+   76.65329,
+   32.05604
+  ],
+  [
+   76.65387,
+   32.05546
+  ],
+  [
+   76.65694,
+   32.05602
+  ],
+  [
+   76.65776,
+   32.0557
+  ],
+  [
+   76.65901,
+   32.0542
+  ],
+  [
+   76.6577,
+   32.05507
+  ],
+  [
+   76.65736,
+   32.05384
+  ],
+  [
+   76.65747,
+   32.05112
+  ],
+  [
+   76.65848,
+   32.05004
+  ],
+  [
+   76.6582,
+   32.04962
+  ],
+  [
+   76.65885,
+   32.04724
+  ],
+  [
+   76.66003,
+   32.04693
+  ],
+  [
+   76.66051,
+   32.04601
+  ],
+  [
+   76.66182,
+   32.04545
+  ],
+  [
+   76.66263,
+   32.04424
+  ],
+  [
+   76.66416,
+   32.04329
+  ],
+  [
+   76.66789,
+   32.03832
+  ],
+  [
+   76.67031,
+   32.03627
+  ],
+  [
+   76.67311,
+   32.03519
+  ],
+  [
+   76.67345,
+   32.03457
+  ],
+  [
+   76.67816,
+   32.03272
+  ],
+  [
+   76.67849,
+   32.03222
+  ],
+  [
+   76.68054,
+   32.03206
+  ],
+  [
+   76.68194,
+   32.0306
+  ],
+  [
+   76.68366,
+   32.02999
+  ],
+  [
+   76.6861,
+   32.02807
+  ],
+  [
+   76.69165,
+   32.02647
+  ],
+  [
+   76.69485,
+   32.02672
+  ],
+  [
+   76.69675,
+   32.02526
+  ],
+  [
+   76.70395,
+   32.02463
+  ],
+  [
+   76.70691,
+   32.02948
+  ],
+  [
+   76.70294,
+   32.03177
+  ],
+  [
+   76.7041,
+   32.03195
+  ],
+  [
+   76.70585,
+   32.03358
+  ],
+  [
+   76.70534,
+   32.03643
+  ],
+  [
+   76.71268,
+   32.03909
+  ],
+  [
+   76.71492,
+   32.04124
+  ],
+  [
+   76.71888,
+   32.04386
+  ],
+  [
+   76.7189,
+   32.04472
+  ],
+  [
+   76.71976,
+   32.04581
+  ],
+  [
+   76.7196,
+   32.04641
+  ],
+  [
+   76.72058,
+   32.04646
+  ],
+  [
+   76.72501,
+   32.04431
+  ],
+  [
+   76.72633,
+   32.04455
+  ],
+  [
+   76.72834,
+   32.04218
+  ],
+  [
+   76.72936,
+   32.04235
+  ],
+  [
+   76.72922,
+   32.0419
+  ],
+  [
+   76.73089,
+   32.0408
+  ],
+  [
+   76.73192,
+   32.04204
+  ],
+  [
+   76.73273,
+   32.04228
+  ],
+  [
+   76.73418,
+   32.04102
+  ],
+  [
+   76.73522,
+   32.04143
+  ],
+  [
+   76.73785,
+   32.04109
+  ],
+  [
+   76.7379,
+   32.04202
+  ],
+  [
+   76.73743,
+   32.0413
+  ],
+  [
+   76.7342,
+   32.04232
+  ],
+  [
+   76.7339,
+   32.04312
+  ],
+  [
+   76.73255,
+   32.04396
+  ],
+  [
+   76.73105,
+   32.04362
+  ],
+  [
+   76.73268,
+   32.04423
+  ],
+  [
+   76.73473,
+   32.04279
+  ],
+  [
+   76.73639,
+   32.04284
+  ],
+  [
+   76.73668,
+   32.0433
+  ],
+  [
+   76.73601,
+   32.04561
+  ],
+  [
+   76.73686,
+   32.04659
+  ],
+  [
+   76.73576,
+   32.04593
+  ],
+  [
+   76.73531,
+   32.04427
+  ],
+  [
+   76.73319,
+   32.04554
+  ],
+  [
+   76.73191,
+   32.04565
+  ],
+  [
+   76.73146,
+   32.04638
+  ],
+  [
+   76.73206,
+   32.04997
+  ],
+  [
+   76.73242,
+   32.04744
+  ],
+  [
+   76.73314,
+   32.04673
+  ],
+  [
+   76.73543,
+   32.04742
+  ],
+  [
+   76.73651,
+   32.04842
+  ],
+  [
+   76.73841,
+   32.0486
+  ],
+  [
+   76.7394,
+   32.04836
+  ],
+  [
+   76.74087,
+   32.04654
+  ],
+  [
+   76.7425,
+   32.04653
+  ],
+  [
+   76.74108,
+   32.04677
+  ],
+  [
+   76.7402,
+   32.04749
+  ],
+  [
+   76.73985,
+   32.04864
+  ],
+  [
+   76.73882,
+   32.0493
+  ],
+  [
+   76.73781,
+   32.04956
+  ],
+  [
+   76.73446,
+   32.04912
+  ],
+  [
+   76.73804,
+   32.05015
+  ],
+  [
+   76.74048,
+   32.0493
+  ],
+  [
+   76.7411,
+   32.04829
+  ],
+  [
+   76.74506,
+   32.04881
+  ],
+  [
+   76.74163,
+   32.04875
+  ],
+  [
+   76.74066,
+   32.05033
+  ],
+  [
+   76.73738,
+   32.0515
+  ],
+  [
+   76.73999,
+   32.05343
+  ],
+  [
+   76.73991,
+   32.05473
+  ],
+  [
+   76.73916,
+   32.05579
+  ],
+  [
+   76.74108,
+   32.05654
+  ],
+  [
+   76.74038,
+   32.05744
+  ],
+  [
+   76.74059,
+   32.05851
+  ],
+  [
+   76.73937,
+   32.05992
+  ],
+  [
+   76.74126,
+   32.05839
+  ],
+  [
+   76.74112,
+   32.05784
+  ],
+  [
+   76.74135,
+   32.05845
+  ],
+  [
+   76.7406,
+   32.0594
+  ],
+  [
+   76.74163,
+   32.05972
+  ],
+  [
+   76.74251,
+   32.06089
+  ],
+  [
+   76.74248,
+   32.06195
+  ],
+  [
+   76.74152,
+   32.06309
+  ],
+  [
+   76.74349,
+   32.06364
+  ],
+  [
+   76.74417,
+   32.06341
+  ],
+  [
+   76.74348,
+   32.06354
+  ],
+  [
+   76.74235,
+   32.0627
+  ],
+  [
+   76.74346,
+   32.06177
+  ],
+  [
+   76.74361,
+   32.06059
+  ],
+  [
+   76.74298,
+   32.0603
+  ],
+  [
+   76.74278,
+   32.05944
+  ],
+  [
+   76.74342,
+   32.05896
+  ],
+  [
+   76.74337,
+   32.05734
+  ],
+  [
+   76.74401,
+   32.05646
+  ],
+  [
+   76.7444,
+   32.05676
+  ],
+  [
+   76.7442,
+   32.05826
+  ]
+ ],
+ "fuel": {
+  "listed": true,
+  "pumps": [
+   {
+    "id": "fuel:node-11348411579",
+    "name": "Indian Oil",
+    "brand": "Indian Oil",
+    "near": "McLeod Ganj",
+    "km_from_start": 8.7,
+    "lat": 32.21677,
+    "lon": 76.31588,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/node/11348411579"
+   },
+   {
+    "id": "fuel:way-555263891",
+    "name": "Mann Filling Station",
+    "brand": "Bharat Petroleum Corporation Limited",
+    "near": "McLeod Ganj",
+    "km_from_start": 8.9,
+    "lat": 32.21458,
+    "lon": 76.31697,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/way/555263891"
+   },
+   {
+    "id": "fuel:node-560446714",
+    "name": "Indian Oil",
+    "brand": "Indian Oil",
+    "near": "McLeod Ganj",
+    "km_from_start": 13.5,
+    "lat": 32.19458,
+    "lon": 76.34517,
+    "opening_hours": "Mo-Su 06:00-23:00",
+    "osm_url": "https://www.openstreetmap.org/node/560446714"
+   },
+   {
+    "id": "fuel:node-8045757873",
+    "name": "Kiran Filling Station",
+    "brand": "Bharat Petroleum",
+    "near": "McLeod Ganj",
+    "km_from_start": 21.9,
+    "lat": 32.16862,
+    "lon": 76.39128,
+    "opening_hours": "24/7",
+    "osm_url": "https://www.openstreetmap.org/node/8045757873"
+   },
+   {
+    "id": "fuel:way-1244515077",
+    "name": "Chamunda Filling Station",
+    "brand": "Indian Oil",
+    "near": "McLeod Ganj",
+    "km_from_start": 22.6,
+    "lat": 32.16516,
+    "lon": 76.39664,
+    "opening_hours": "Mo-Su 06:00-22:00",
+    "osm_url": "https://www.openstreetmap.org/way/1244515077"
+   },
+   {
+    "id": "fuel:node-676474643",
+    "name": "Indian Oil Corporation Limited",
+    "brand": "Indian Oil",
+    "near": "Palampur",
+    "km_from_start": 45.9,
+    "lat": 32.1026,
+    "lon": 76.5341,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/node/676474643"
+   },
+   {
+    "id": "fuel:node-5124034522",
+    "name": "HRTC Gas Station",
+    "brand": "HRTC",
+    "near": "Palampur",
+    "km_from_start": 45.9,
+    "lat": 32.10237,
+    "lon": 76.5335,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/node/5124034522"
+   },
+   {
+    "id": "fuel:node-10965795033",
+    "name": "Indian Oil",
+    "brand": "Indian Oil",
+    "near": "Palampur",
+    "km_from_start": 48.1,
+    "lat": 32.10449,
+    "lon": 76.5495,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/node/10965795033"
+   },
+   {
+    "id": "fuel:node-2945675334",
+    "name": "Indian Oil",
+    "brand": "Indian Oil",
+    "near": "Palampur",
+    "km_from_start": 52.0,
+    "lat": 32.09284,
+    "lon": 76.57678,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/node/2945675334"
+   },
+   {
+    "id": "fuel:node-13980881532",
+    "name": "Nayara",
+    "brand": null,
+    "near": "Palampur",
+    "km_from_start": 53.3,
+    "lat": 32.08586,
+    "lon": 76.58491,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/node/13980881532"
+   },
+   {
+    "id": "fuel:node-971638814",
+    "name": "Petrol pump",
+    "brand": null,
+    "near": "Baijnath",
+    "km_from_start": 59.8,
+    "lat": 32.05781,
+    "lon": 76.63121,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/node/971638814"
+   },
+   {
+    "id": "fuel:way-1525652454",
+    "name": "Petrol pump",
+    "brand": null,
+    "near": "Baijnath",
+    "km_from_start": 59.9,
+    "lat": 32.05749,
+    "lon": 76.63202,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/way/1525652454"
+   },
+   {
+    "id": "fuel:node-4213689991",
+    "name": "HP Petrol",
+    "brand": "Hindustan Petroleum",
+    "near": "Baijnath",
+    "km_from_start": 63.1,
+    "lat": 32.05452,
+    "lon": 76.65028,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/node/4213689991"
+   }
+  ],
+  "pump_count": 13,
+  "stops": 8,
+  "longest_gaps": [
+   {
+    "from_km": 63.1,
+    "to_km": 88.4,
+    "gap_km": 25.3,
+    "from_is": "pump",
+    "to_is": "end of route",
+    "near_from": "Baijnath",
+    "near_to": "Billing"
+   },
+   {
+    "from_km": 22.6,
+    "to_km": 45.9,
+    "gap_km": 23.3,
+    "from_is": "pump",
+    "to_is": "pump",
+    "near_from": "McLeod Ganj",
+    "near_to": "Palampur"
+   },
+   {
+    "from_km": 0.0,
+    "to_km": 8.7,
+    "gap_km": 8.7,
+    "from_is": "start of route",
+    "to_is": "pump",
+    "near_from": "Dharamshala",
+    "near_to": "McLeod Ganj"
+   },
+   {
+    "from_km": 13.5,
+    "to_km": 21.9,
+    "gap_km": 8.4,
+    "from_is": "pump",
+    "to_is": "pump",
+    "near_from": "McLeod Ganj",
+    "near_to": "McLeod Ganj"
+   },
+   {
+    "from_km": 53.3,
+    "to_km": 59.8,
+    "gap_km": 6.5,
+    "from_is": "pump",
+    "to_is": "pump",
+    "near_from": "Palampur",
+    "near_to": "Baijnath"
+   }
+  ],
+  "note": "Pumps are those drawn on the open map within the search radius of the road. A pump missing from the map is missing here, so each gap is a worst case.",
+  "fetched": "2026-09-28"
+ },
+ "rules": [
+  {
+   "id": "rule:bir-billing-green-tax",
+   "kind": "tax",
+   "title": "Bir Billing green tax",
+   "detail": "Charged on vehicles entering Bir Billing, motorcycles included. Rates were revised in early 2025. Known from a newspaper report; no official page was found.",
+   "applies_to": "All vehicles entering Bir Billing",
+   "set_by": "Special Area Development Authority, Bir Billing, with state government approval",
+   "official_url": null,
+   "has_official_order": false,
+   "source": {
+    "url": "https://www.tribuneindia.com/news/himachal/green-tax-in-bir-billing-revised-to-boost-tourism-infrastructure",
+    "title": "Green tax in Bir-Billing revised to boost tourism infrastructure",
+    "kind": "news",
+    "opened": true,
+    "source_date": "2025-02-02",
+    "accessed": "2026-09-28"
+   },
+   "history": [
+    {
+     "date": "2025-02",
+     "change": "State government approved a revised rate list that includes motorcycles.",
+     "source": {
+      "url": "https://www.tribuneindia.com/news/himachal/green-tax-in-bir-billing-revised-to-boost-tourism-infrastructure",
+      "title": "Green tax in Bir-Billing revised to boost tourism infrastructure",
+      "kind": "news",
+      "opened": true,
+      "source_date": "2025-02-02",
+      "accessed": "2026-09-28"
+     }
+    }
+   ]
+  },
+  {
+   "id": "rule:bir-road-morning-bus-restriction",
+   "kind": "timing",
+   "title": "Bir: large buses barred from landing-site road, mornings",
+   "detail": "Large and multi-axle buses may not use the Bir Chowk to landing site road from 07:00 to 11:00. Motorcycles are not restricted.",
+   "applies_to": "Large and multi-axle buses",
+   "set_by": "District Magistrate, Kangra",
+   "official_url": null,
+   "has_official_order": true,
+   "source": {
+    "url": "https://www.uniindia.com/north-india/admin-kangra-vehicles/187980",
+    "title": "Heavy Vehicles Restricted on Bir Chowk-Landing Site Road",
+    "kind": "news",
+    "opened": true,
+    "source_date": "2026-09-21",
+    "accessed": "2026-09-28"
+   },
+   "history": [
+    {
+     "date": "2026-09-21",
+     "change": "Order reported, following a police report on traffic jams.",
+     "source": {
+      "url": "https://www.uniindia.com/north-india/admin-kangra-vehicles/187980",
+      "title": "Heavy Vehicles Restricted on Bir Chowk-Landing Site Road",
+      "kind": "news",
+      "opened": true,
+      "source_date": "2026-09-21",
+      "accessed": "2026-09-28"
+     }
+    }
+   ]
+  },
+  {
+   "id": "rule:himachal-entry-toll-other-state-vehicles",
+   "kind": "tax",
+   "title": "Himachal entry toll for vehicles from other states",
+   "detail": "Charged at entry barriers under the yearly toll policy. Notified rates name passenger and goods vehicles only. The Chief Minister said two-wheelers stay exempt. The policy document was not opened.",
+   "applies_to": "Vehicles registered outside Himachal Pradesh",
+   "set_by": "Department of State Taxes and Excise, Government of Himachal Pradesh",
+   "official_url": "https://www.hptax.gov.in/public/setpdf/Toll%20Policy%202026_27.pdf",
+   "has_official_order": true,
+   "source": {
+    "url": "https://www.tribuneindia.com/news/himachal/himachal-toll-tax-rates-revised-heres-what-you-need-to-know/",
+    "title": "Himachal toll tax rates revised: Here's what you need to know",
+    "kind": "news",
+    "opened": true,
+    "source_date": "2026-04-02",
+    "accessed": "2026-09-28"
+   },
+   "history": [
+    {
+     "date": "2026-02-20",
+     "change": "Toll Policy 2026-27 announced with higher rates from 1 April 2026; receipt reported valid 24 hours across the state.",
+     "source": {
+      "url": "https://www.businesstoday.in/india/story/himachal-pradesh-revises-toll-tax-rates-heres-how-much-vehicle-entry-fee-youll-have-to-pay-from-april-1-517204-2026-02-20",
+      "title": "Himachal Pradesh revises toll tax rates. Here's how much vehicle entry fee you'll have to pay from April 1",
+      "kind": "news",
+      "opened": true,
+      "source_date": "2026-02-20",
+      "accessed": "2026-09-28"
+     }
+    },
+    {
+     "date": "2026-03-26",
+     "change": "Chief Minister told the assembly the tax would be reviewed and that light vehicles and two-wheelers remain exempt.",
+     "source": {
+      "url": "https://www.tribuneindia.com/news/himachal/himachal-govt-signals-rethink-on-entry-tax/",
+      "title": "Himachal Govt signals rethink on entry tax",
+      "kind": "news",
+      "opened": true,
+      "source_date": "2026-03-26",
+      "accessed": "2026-09-28"
+     }
+    },
+    {
+     "date": "2026-04-02",
+     "change": "Revised rates reported, with a lower rate for passenger vehicles from other states; two-wheelers not listed.",
+     "source": {
+      "url": "https://www.tribuneindia.com/news/himachal/himachal-toll-tax-rates-revised-heres-what-you-need-to-know/",
+      "title": "Himachal toll tax rates revised: Here's what you need to know",
+      "kind": "news",
+      "opened": true,
+      "source_date": "2026-04-02",
+      "accessed": "2026-09-28"
+     }
+    }
+   ]
+  }
+ ],
+ "season": {
+  "note": "No road on this route closes for winter; the paragliding season at Billing peaks in September and October.",
+  "history": []
+ },
+ "authorities": [
+  {
+   "id": "authority:district-magistrate-kangra",
+   "office": "District Magistrate, Kangra",
+   "announces": "Traffic restrictions",
+   "stretch": "Bir Chowk to the landing site",
+   "channel": "Orders, reported by news agencies",
+   "url": null,
+   "source": {
+    "url": "https://www.uniindia.com/north-india/admin-kangra-vehicles/187980",
+    "title": "Heavy Vehicles Restricted on Bir Chowk-Landing Site Road",
+    "kind": "news",
+    "opened": true,
+    "source_date": "2026-09-21",
+    "accessed": "2026-09-28"
+   }
+  },
+  {
+   "id": "authority:special-area-development-authority-bir-billing",
+   "office": "Special Area Development Authority, Bir Billing",
+   "announces": "Green tax rates",
+   "stretch": "Bir and Billing",
+   "channel": "Reported by newspapers",
+   "url": null,
+   "source": {
+    "url": "https://www.tribuneindia.com/news/himachal/green-tax-in-bir-billing-revised-to-boost-tourism-infrastructure",
+    "title": "Green tax in Bir-Billing revised to boost tourism infrastructure",
+    "kind": "news",
+    "opened": true,
+    "source_date": "2025-02-02",
+    "accessed": "2026-09-28"
+   }
+  },
+  {
+   "id": "authority:himachal-pradesh-public-works-department",
+   "office": "Himachal Pradesh Public Works Department",
+   "announces": "Roads open, blocked or restored",
+   "stretch": "Department roads across Himachal Pradesh",
+   "channel": "Road Status Information System website and mobile apps",
+   "url": "https://hppwd.in/",
+   "source": {
+    "url": "https://hppwd.in/",
+    "title": "Himachal Pradesh Public Works Department",
+    "kind": "official",
+    "opened": true,
+    "source_date": null,
+    "accessed": "2026-09-28"
+   }
+  },
+  {
+   "id": "authority:himachal-pradesh-public-works-department",
+   "office": "Himachal Pradesh Public Works Department",
+   "announces": "Repairs to the Dharamshala to McLeod Ganj roads",
+   "stretch": "Dharamshala to McLeod Ganj",
+   "channel": "Reported by newspapers",
+   "url": "https://hppwd.in/",
+   "source": {
+    "url": "https://www.tribuneindia.com/news/himachal/roads-leading-to-mcleodganj-hill-in-dharamsala-sinking/",
+    "title": "Roads leading to McLeodganj hill in Dharamsala sinking",
+    "kind": "news",
+    "opened": true,
+    "source_date": "2025-02-10",
+    "accessed": "2026-09-28"
+   }
+  }
+ ],
+ "hazards": [
+  {
+   "id": "hazard:khada-danda-short-cut-to-mcleod-ganj",
+   "title": "Khada Danda short cut to McLeod Ganj",
+   "detail": "A monsoon landslide near Jogiwara washed the road out in August 2025. Traffic took a 13 km detour; riders were told not to use the remaining strip.",
+   "months": [
+    7,
+    8,
+    9
+   ],
+   "source": {
+    "url": "https://www.tribuneindia.com/news/himachal/khada-danda-road-sinks-after-landslide",
+    "title": "Khada Danda road sinks after landslide",
+    "kind": "news",
+    "opened": true,
+    "source_date": "2025-08-14",
+    "accessed": "2026-09-28"
+   }
+  },
+  {
+   "id": "hazard:sinking-roads-below-mcleod-ganj",
+   "title": "Sinking roads below McLeod Ganj",
+   "detail": "The main road sinks near the army cantonment and Forsythganj, and keeps sinking after repairs.",
+   "months": [],
+   "source": {
+    "url": "https://www.tribuneindia.com/news/himachal/roads-leading-to-mcleodganj-hill-in-dharamsala-sinking/",
+    "title": "Roads leading to McLeodganj hill in Dharamsala sinking",
+    "kind": "news",
+    "opened": true,
+    "source_date": "2025-02-10",
+    "accessed": "2026-09-28"
+   }
+  }
+ ],
+ "videos": [
+  {
+   "id": "KY-c37JV7WE",
+   "url": "https://www.youtube.com/watch?v=KY-c37JV7WE",
+   "title": "Day 10 | RIDE to Beautiful DHARAMSHALA | McLeod Ganj",
+   "channel": "Sriman Kotaru",
+   "stretch": "Ride into Dharamshala and McLeod Ganj",
+   "filmed": null,
+   "bike": null,
+   "checked": false
+  },
+  {
+   "id": "farBebTdGrY",
+   "url": "https://www.youtube.com/watch?v=farBebTdGrY",
+   "title": "Epic Motorcycle Journey: Jalandhar to McLeod Ganj ⛰️ Part 1 | Vlog October 2024.",
+   "channel": "s4shubi",
+   "stretch": "Approach to McLeod Ganj",
+   "filmed": "2024-10",
+   "bike": null,
+   "checked": false
+  }
+ ],
+ "image": {
+  "file": "dharamshala-bir-billing.jpg",
+  "small": "dharamshala-bir-billing-small.jpg",
+  "title": "Tea garden at Nagri in the Kangra Valley of Himachal Pradesh, India.jpg",
+  "shows": "A tea garden in the Kangra valley, below the Dhauladhar range",
+  "author": "UnpetitproleX",
+  "licence": "CC BY-SA 4.0",
+  "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+  "source_page": "https://commons.wikimedia.org/wiki/File:Tea_garden_at_Nagri_in_the_Kangra_Valley_of_Himachal_Pradesh,_India.jpg",
+  "source": "Wikimedia Commons",
+  "taken": "2026-05-12 18:05:39",
+  "changes": "Resized. Not otherwise changed.",
+  "fetched": "2026-09-28"
+ },
+ "gaps": [
+  "Himachal entry toll: the two-wheeler exemption rests on a newspaper report of the Chief Minister's statement (26 March 2026). The official Toll Policy 2026-27 document on hptax.gov.in failed to open (certificate error), so it is not confirmed for motorcycles registered in other states.",
+  "Highway number for the Palampur to Baijnath stretch not confirmed; the encyclopedia page for NH 154 lists only its end points.",
+  "Bir Billing green tax: amount, collection point and start date not confirmed on any official page; amount left out.",
+  "No source found for traffic or parking rules in McLeod Ganj.",
+  "The Kangra district page on Bir Billing gives no altitude, season or rules.",
+  "No sourced hazards found for the Bir to Billing road or the Palampur to Baijnath stretch.",
+  "No rider video found for the Bir to Billing road itself. Titles and channels were read from the video pages; motorcycles are not confirmed."
+ ],
+ "counts": {
+  "facts": 39
+ },
+ "built": "2026-09-28"
+}

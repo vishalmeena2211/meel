@@ -1,0 +1,6050 @@
+{
+ "slug": "karnataka-hills",
+ "name": "Karnataka hills: Coorg, Chikmagalur and Agumbe",
+ "region": "south",
+ "region_name": "South",
+ "batch": 2,
+ "terrain": "hills",
+ "country": "in",
+ "level": "basic",
+ "one_line": "Karnataka's Western Ghats: coffee hills of Chikkamagaluru, the rainforest ghat at Agumbe, and Coorg",
+ "places": [
+  "Bengaluru",
+  "Chikkamagaluru",
+  "Mullayanagiri",
+  "Sringeri",
+  "Agumbe",
+  "Madikeri"
+ ],
+ "header": {
+  "highway": {
+   "value": "NH 275 (Bengaluru to Mysuru and Madikeri); NH 169A (Thirthahalli to Agumbe and Udupi)",
+   "source": {
+    "url": "https://en.wikipedia.org/wiki/National_Highway_275_(India)",
+    "title": "National Highway 275 (India)",
+    "kind": "encyclopedia",
+    "opened": true,
+    "source_date": null,
+    "accessed": "2026-09-28"
+   }
+  },
+  "distance_km": 873.1,
+  "map_app_hours": 12.29,
+  "usual_days": null,
+  "highest_point": {
+   "name": "Mullayanagiri",
+   "altitude_m": 1930,
+   "source": {
+    "url": "https://chikkamagaluru.nic.in/en/tourist-place/mullayanagiri/",
+    "title": "Mullayanagiri Hill | District Chikkamagaluru, Government of Karnataka | India",
+    "kind": "official",
+    "opened": true,
+    "source_date": null,
+    "accessed": "2026-09-28"
+   },
+   "computed": false
+  },
+  "usual_season": {
+   "value": "November to February",
+   "source": {
+    "url": "https://karnatakatourism.org/tour-item/agumbe/",
+    "title": "Agumbe - Karnataka Tourism",
+    "kind": "official",
+    "opened": true,
+    "source_date": null,
+    "accessed": "2026-09-28"
+   }
+  }
+ },
+ "waypoints": [
+  {
+   "name": "Bengaluru",
+   "lat": 12.97647,
+   "lon": 77.59003,
+   "km_from_start": 0.0,
+   "altitude_m": 920,
+   "kind": "place",
+   "moved_to_road_m": 37
+  },
+  {
+   "name": "Chikkamagaluru",
+   "lat": 13.31799,
+   "lon": 75.77363,
+   "km_from_start": 249.6,
+   "altitude_m": 1043,
+   "kind": "place",
+   "moved_to_road_m": 27
+  },
+  {
+   "name": "Mullayanagiri",
+   "lat": 13.38988,
+   "lon": 75.71965,
+   "km_from_start": 271.2,
+   "altitude_m": 1837,
+   "kind": "place",
+   "moved_to_road_m": 222
+  },
+  {
+   "name": "Sringeri",
+   "lat": 13.42614,
+   "lon": 75.25535,
+   "km_from_start": 378.5,
+   "altitude_m": 646,
+   "kind": "place",
+   "moved_to_road_m": 4
+  },
+  {
+   "name": "Agumbe",
+   "lat": 13.50895,
+   "lon": 75.09611,
+   "km_from_start": 403.8,
+   "altitude_m": 646,
+   "kind": "place",
+   "moved_to_road_m": 53
+  },
+  {
+   "name": "Madikeri",
+   "lat": 12.42131,
+   "lon": 75.73876,
+   "km_from_start": 617.6,
+   "altitude_m": 1162,
+   "kind": "place",
+   "moved_to_road_m": 19
+  },
+  {
+   "name": "Bengaluru",
+   "lat": 12.97647,
+   "lon": 77.59003,
+   "km_from_start": 873.1,
+   "altitude_m": 920,
+   "kind": "place",
+   "moved_to_road_m": 37
+  }
+ ],
+ "stretches": [
+  {
+   "from": "Bengaluru",
+   "to": "Chikkamagaluru",
+   "distance_km": 249.6,
+   "map_app_hours": 3.11,
+   "doubtful": false
+  },
+  {
+   "from": "Chikkamagaluru",
+   "to": "Mullayanagiri",
+   "distance_km": 21.6,
+   "map_app_hours": 0.52,
+   "doubtful": false
+  },
+  {
+   "from": "Mullayanagiri",
+   "to": "Sringeri",
+   "distance_km": 107.3,
+   "map_app_hours": 1.81,
+   "doubtful": false
+  },
+  {
+   "from": "Sringeri",
+   "to": "Agumbe",
+   "distance_km": 25.3,
+   "map_app_hours": 0.4,
+   "doubtful": false
+  },
+  {
+   "from": "Agumbe",
+   "to": "Madikeri",
+   "distance_km": 213.8,
+   "map_app_hours": 3.05,
+   "doubtful": false
+  },
+  {
+   "from": "Madikeri",
+   "to": "Bengaluru",
+   "distance_km": 255.5,
+   "map_app_hours": 3.4,
+   "doubtful": false
+  }
+ ],
+ "profile": [
+  {
+   "km": 0.0,
+   "m": 920
+  },
+  {
+   "km": 9.7,
+   "m": 924
+  },
+  {
+   "km": 19.4,
+   "m": 839
+  },
+  {
+   "km": 29.1,
+   "m": 904
+  },
+  {
+   "km": 38.8,
+   "m": 889
+  },
+  {
+   "km": 48.5,
+   "m": 918
+  },
+  {
+   "km": 58.3,
+   "m": 859
+  },
+  {
+   "km": 67.9,
+   "m": 819
+  },
+  {
+   "km": 77.6,
+   "m": 805
+  },
+  {
+   "km": 87.3,
+   "m": 778
+  },
+  {
+   "km": 97.0,
+   "m": 784
+  },
+  {
+   "km": 106.7,
+   "m": 828
+  },
+  {
+   "km": 116.4,
+   "m": 881
+  },
+  {
+   "km": 126.2,
+   "m": 846
+  },
+  {
+   "km": 135.8,
+   "m": 881
+  },
+  {
+   "km": 145.5,
+   "m": 848
+  },
+  {
+   "km": 155.2,
+   "m": 885
+  },
+  {
+   "km": 164.9,
+   "m": 879
+  },
+  {
+   "km": 174.7,
+   "m": 818
+  },
+  {
+   "km": 184.3,
+   "m": 799
+  },
+  {
+   "km": 194.0,
+   "m": 776
+  },
+  {
+   "km": 203.7,
+   "m": 733
+  },
+  {
+   "km": 213.4,
+   "m": 752
+  },
+  {
+   "km": 223.1,
+   "m": 775
+  },
+  {
+   "km": 232.8,
+   "m": 866
+  },
+  {
+   "km": 242.6,
+   "m": 876
+  },
+  {
+   "km": 252.2,
+   "m": 1041
+  },
+  {
+   "km": 261.9,
+   "m": 1078
+  },
+  {
+   "km": 271.6,
+   "m": 1390
+  },
+  {
+   "km": 281.3,
+   "m": 1603
+  },
+  {
+   "km": 291.1,
+   "m": 1123
+  },
+  {
+   "km": 300.7,
+   "m": 1040
+  },
+  {
+   "km": 310.5,
+   "m": 1075
+  },
+  {
+   "km": 320.1,
+   "m": 953
+  },
+  {
+   "km": 329.8,
+   "m": 730
+  },
+  {
+   "km": 339.6,
+   "m": 731
+  },
+  {
+   "km": 349.2,
+   "m": 790
+  },
+  {
+   "km": 359.0,
+   "m": 677
+  },
+  {
+   "km": 368.6,
+   "m": 753
+  },
+  {
+   "km": 378.4,
+   "m": 692
+  },
+  {
+   "km": 388.0,
+   "m": 646
+  },
+  {
+   "km": 397.7,
+   "m": 644
+  },
+  {
+   "km": 407.5,
+   "m": 257
+  },
+  {
+   "km": 417.1,
+   "m": 99
+  },
+  {
+   "km": 426.9,
+   "m": 48
+  },
+  {
+   "km": 436.5,
+   "m": 61
+  },
+  {
+   "km": 446.3,
+   "m": 77
+  },
+  {
+   "km": 456.0,
+   "m": 100
+  },
+  {
+   "km": 465.6,
+   "m": 117
+  },
+  {
+   "km": 475.4,
+   "m": 75
+  },
+  {
+   "km": 485.0,
+   "m": 96
+  },
+  {
+   "km": 494.8,
+   "m": 99
+  },
+  {
+   "km": 504.4,
+   "m": 32
+  },
+  {
+   "km": 514.2,
+   "m": 81
+  },
+  {
+   "km": 523.9,
+   "m": 129
+  },
+  {
+   "km": 533.5,
+   "m": 95
+  },
+  {
+   "km": 543.3,
+   "m": 112
+  },
+  {
+   "km": 552.9,
+   "m": 94
+  },
+  {
+   "km": 562.7,
+   "m": 107
+  },
+  {
+   "km": 572.4,
+   "m": 126
+  },
+  {
+   "km": 582.0,
+   "m": 139
+  },
+  {
+   "km": 591.8,
+   "m": 272
+  },
+  {
+   "km": 601.4,
+   "m": 802
+  },
+  {
+   "km": 611.2,
+   "m": 1139
+  },
+  {
+   "km": 620.9,
+   "m": 1027
+  },
+  {
+   "km": 630.6,
+   "m": 948
+  },
+  {
+   "km": 640.3,
+   "m": 844
+  },
+  {
+   "km": 649.9,
+   "m": 909
+  },
+  {
+   "km": 659.7,
+   "m": 854
+  },
+  {
+   "km": 669.3,
+   "m": 841
+  },
+  {
+   "km": 679.1,
+   "m": 843
+  },
+  {
+   "km": 688.8,
+   "m": 807
+  },
+  {
+   "km": 698.5,
+   "m": 794
+  },
+  {
+   "km": 708.2,
+   "m": 809
+  },
+  {
+   "km": 717.8,
+   "m": 807
+  },
+  {
+   "km": 727.6,
+   "m": 763
+  },
+  {
+   "km": 737.3,
+   "m": 693
+  },
+  {
+   "km": 747.0,
+   "m": 708
+  },
+  {
+   "km": 756.7,
+   "m": 767
+  },
+  {
+   "km": 766.4,
+   "m": 698
+  },
+  {
+   "km": 776.1,
+   "m": 678
+  },
+  {
+   "km": 785.7,
+   "m": 660
+  },
+  {
+   "km": 795.5,
+   "m": 640
+  },
+  {
+   "km": 805.2,
+   "m": 662
+  },
+  {
+   "km": 814.9,
+   "m": 740
+  },
+  {
+   "km": 824.6,
+   "m": 694
+  },
+  {
+   "km": 834.3,
+   "m": 764
+  },
+  {
+   "km": 844.0,
+   "m": 764
+  },
+  {
+   "km": 853.7,
+   "m": 762
+  },
+  {
+   "km": 863.4,
+   "m": 822
+  },
+  {
+   "km": 873.1,
+   "m": 920
+  },
+  {
+   "km": 873.1,
+   "m": 920
+  }
+ ],
+ "line": [
+  [
+   77.59003,
+   12.97647
+  ],
+  [
+   77.57478,
+   12.98062
+  ],
+  [
+   77.5741,
+   12.98878
+  ],
+  [
+   77.56637,
+   12.99486
+  ],
+  [
+   77.55057,
+   13.02263
+  ],
+  [
+   77.51598,
+   13.04186
+  ],
+  [
+   77.46413,
+   13.05936
+  ],
+  [
+   77.43301,
+   13.07682
+  ],
+  [
+   77.38797,
+   13.09567
+  ],
+  [
+   77.37766,
+   13.11129
+  ],
+  [
+   77.35317,
+   13.13749
+  ],
+  [
+   77.28713,
+   13.18268
+  ],
+  [
+   77.24214,
+   13.22669
+  ],
+  [
+   77.23816,
+   13.23763
+  ],
+  [
+   77.19804,
+   13.27013
+  ],
+  [
+   77.17859,
+   13.2917
+  ],
+  [
+   77.1541,
+   13.30688
+  ],
+  [
+   77.09013,
+   13.31638
+  ],
+  [
+   77.087,
+   13.33685
+  ],
+  [
+   77.08898,
+   13.3457
+  ],
+  [
+   77.04089,
+   13.34216
+  ],
+  [
+   76.99141,
+   13.33031
+  ],
+  [
+   76.97672,
+   13.33314
+  ],
+  [
+   76.9459,
+   13.32869
+  ],
+  [
+   76.90174,
+   13.31493
+  ],
+  [
+   76.87714,
+   13.31598
+  ],
+  [
+   76.82063,
+   13.33402
+  ],
+  [
+   76.78051,
+   13.33914
+  ],
+  [
+   76.7591,
+   13.32655
+  ],
+  [
+   76.73874,
+   13.32882
+  ],
+  [
+   76.72297,
+   13.32129
+  ],
+  [
+   76.70118,
+   13.31992
+  ],
+  [
+   76.63202,
+   13.30517
+  ],
+  [
+   76.61891,
+   13.30828
+  ],
+  [
+   76.59454,
+   13.30374
+  ],
+  [
+   76.58927,
+   13.2978
+  ],
+  [
+   76.57016,
+   13.29021
+  ],
+  [
+   76.56181,
+   13.28319
+  ],
+  [
+   76.54571,
+   13.28325
+  ],
+  [
+   76.51938,
+   13.2756
+  ],
+  [
+   76.50386,
+   13.26651
+  ],
+  [
+   76.48662,
+   13.26205
+  ],
+  [
+   76.48359,
+   13.25762
+  ],
+  [
+   76.45181,
+   13.26324
+  ],
+  [
+   76.44549,
+   13.26709
+  ],
+  [
+   76.3994,
+   13.26643
+  ],
+  [
+   76.32844,
+   13.27764
+  ],
+  [
+   76.31403,
+   13.2921
+  ],
+  [
+   76.30071,
+   13.29494
+  ],
+  [
+   76.28187,
+   13.29617
+  ],
+  [
+   76.26989,
+   13.28451
+  ],
+  [
+   76.25987,
+   13.28269
+  ],
+  [
+   76.25073,
+   13.28767
+  ],
+  [
+   76.23371,
+   13.30897
+  ],
+  [
+   76.23252,
+   13.34144
+  ],
+  [
+   76.18605,
+   13.38785
+  ],
+  [
+   76.17201,
+   13.41529
+  ],
+  [
+   76.15761,
+   13.41996
+  ],
+  [
+   76.13316,
+   13.4509
+  ],
+  [
+   76.11154,
+   13.47214
+  ],
+  [
+   76.02793,
+   13.53189
+  ],
+  [
+   76.01829,
+   13.54843
+  ],
+  [
+   76.00471,
+   13.54851
+  ],
+  [
+   75.99057,
+   13.53508
+  ],
+  [
+   75.97129,
+   13.50804
+  ],
+  [
+   75.92799,
+   13.46685
+  ],
+  [
+   75.90879,
+   13.41778
+  ],
+  [
+   75.88431,
+   13.3928
+  ],
+  [
+   75.8668,
+   13.36831
+  ],
+  [
+   75.83163,
+   13.34103
+  ],
+  [
+   75.80473,
+   13.3375
+  ],
+  [
+   75.78531,
+   13.32801
+  ],
+  [
+   75.77729,
+   13.32712
+  ],
+  [
+   75.7742,
+   13.32558
+  ],
+  [
+   75.77369,
+   13.3173
+  ],
+  [
+   75.77204,
+   13.32376
+  ],
+  [
+   75.77488,
+   13.33264
+  ],
+  [
+   75.75974,
+   13.35365
+  ],
+  [
+   75.75542,
+   13.36584
+  ],
+  [
+   75.74313,
+   13.37165
+  ],
+  [
+   75.73242,
+   13.3654
+  ],
+  [
+   75.72431,
+   13.36458
+  ],
+  [
+   75.72344,
+   13.3797
+  ],
+  [
+   75.72671,
+   13.38014
+  ],
+  [
+   75.72134,
+   13.37916
+  ],
+  [
+   75.72402,
+   13.38389
+  ],
+  [
+   75.71806,
+   13.38035
+  ],
+  [
+   75.70243,
+   13.38733
+  ],
+  [
+   75.70788,
+   13.3888
+  ],
+  [
+   75.71135,
+   13.38616
+  ],
+  [
+   75.71316,
+   13.39025
+  ],
+  [
+   75.71594,
+   13.38645
+  ],
+  [
+   75.71965,
+   13.38988
+  ],
+  [
+   75.71594,
+   13.38645
+  ],
+  [
+   75.71316,
+   13.39025
+  ],
+  [
+   75.71135,
+   13.38616
+  ],
+  [
+   75.70788,
+   13.3888
+  ],
+  [
+   75.70241,
+   13.38728
+  ],
+  [
+   75.71806,
+   13.38035
+  ],
+  [
+   75.72402,
+   13.38389
+  ],
+  [
+   75.72134,
+   13.37916
+  ],
+  [
+   75.72671,
+   13.38014
+  ],
+  [
+   75.72344,
+   13.3797
+  ],
+  [
+   75.72431,
+   13.36458
+  ],
+  [
+   75.73242,
+   13.3654
+  ],
+  [
+   75.74313,
+   13.37165
+  ],
+  [
+   75.75542,
+   13.36584
+  ],
+  [
+   75.75974,
+   13.35365
+  ],
+  [
+   75.77488,
+   13.33264
+  ],
+  [
+   75.7712,
+   13.31334
+  ],
+  [
+   75.75011,
+   13.28692
+  ],
+  [
+   75.72525,
+   13.27497
+  ],
+  [
+   75.72153,
+   13.26797
+  ],
+  [
+   75.70567,
+   13.26459
+  ],
+  [
+   75.69333,
+   13.26957
+  ],
+  [
+   75.68693,
+   13.263
+  ],
+  [
+   75.68071,
+   13.26345
+  ],
+  [
+   75.67931,
+   13.25957
+  ],
+  [
+   75.67604,
+   13.26289
+  ],
+  [
+   75.67393,
+   13.26051
+  ],
+  [
+   75.67086,
+   13.26215
+  ],
+  [
+   75.66856,
+   13.25637
+  ],
+  [
+   75.6635,
+   13.25576
+  ],
+  [
+   75.65773,
+   13.24613
+  ],
+  [
+   75.65061,
+   13.24248
+  ],
+  [
+   75.64415,
+   13.24619
+  ],
+  [
+   75.63407,
+   13.25989
+  ],
+  [
+   75.62544,
+   13.2625
+  ],
+  [
+   75.62373,
+   13.2722
+  ],
+  [
+   75.61908,
+   13.26903
+  ],
+  [
+   75.61232,
+   13.27098
+  ],
+  [
+   75.60311,
+   13.28127
+  ],
+  [
+   75.60107,
+   13.28961
+  ],
+  [
+   75.58451,
+   13.30752
+  ],
+  [
+   75.5717,
+   13.31372
+  ],
+  [
+   75.55717,
+   13.33195
+  ],
+  [
+   75.544,
+   13.34214
+  ],
+  [
+   75.54039,
+   13.35232
+  ],
+  [
+   75.52176,
+   13.36619
+  ],
+  [
+   75.50333,
+   13.36236
+  ],
+  [
+   75.49626,
+   13.35369
+  ],
+  [
+   75.48269,
+   13.34871
+  ],
+  [
+   75.47114,
+   13.3531
+  ],
+  [
+   75.45692,
+   13.3438
+  ],
+  [
+   75.44716,
+   13.3456
+  ],
+  [
+   75.44198,
+   13.34274
+  ],
+  [
+   75.43793,
+   13.34567
+  ],
+  [
+   75.42977,
+   13.34488
+  ],
+  [
+   75.42736,
+   13.34998
+  ],
+  [
+   75.41342,
+   13.35431
+  ],
+  [
+   75.39326,
+   13.37451
+  ],
+  [
+   75.39345,
+   13.37897
+  ],
+  [
+   75.38462,
+   13.3825
+  ],
+  [
+   75.37993,
+   13.39234
+  ],
+  [
+   75.37428,
+   13.39328
+  ],
+  [
+   75.37239,
+   13.40297
+  ],
+  [
+   75.36574,
+   13.39857
+  ],
+  [
+   75.3443,
+   13.39733
+  ],
+  [
+   75.32815,
+   13.38418
+  ],
+  [
+   75.31316,
+   13.38264
+  ],
+  [
+   75.31308,
+   13.3902
+  ],
+  [
+   75.30533,
+   13.38504
+  ],
+  [
+   75.3026,
+   13.38726
+  ],
+  [
+   75.29927,
+   13.38521
+  ],
+  [
+   75.29431,
+   13.39217
+  ],
+  [
+   75.28627,
+   13.3952
+  ],
+  [
+   75.28226,
+   13.41275
+  ],
+  [
+   75.25621,
+   13.4249
+  ],
+  [
+   75.25495,
+   13.43224
+  ],
+  [
+   75.24344,
+   13.43617
+  ],
+  [
+   75.24263,
+   13.44224
+  ],
+  [
+   75.23472,
+   13.44788
+  ],
+  [
+   75.23208,
+   13.46037
+  ],
+  [
+   75.20995,
+   13.47742
+  ],
+  [
+   75.20334,
+   13.4929
+  ],
+  [
+   75.2034,
+   13.50032
+  ],
+  [
+   75.1798,
+   13.51012
+  ],
+  [
+   75.16871,
+   13.51392
+  ],
+  [
+   75.15628,
+   13.51135
+  ],
+  [
+   75.13168,
+   13.51414
+  ],
+  [
+   75.1262,
+   13.51093
+  ],
+  [
+   75.10675,
+   13.51401
+  ],
+  [
+   75.10583,
+   13.50963
+  ],
+  [
+   75.09514,
+   13.50884
+  ],
+  [
+   75.08726,
+   13.49764
+  ],
+  [
+   75.07755,
+   13.49642
+  ],
+  [
+   75.0797,
+   13.49301
+  ],
+  [
+   75.07582,
+   13.4956
+  ],
+  [
+   75.07849,
+   13.48628
+  ],
+  [
+   75.0714,
+   13.4944
+  ],
+  [
+   75.07088,
+   13.49164
+  ],
+  [
+   75.05414,
+   13.48601
+  ],
+  [
+   75.04331,
+   13.47307
+  ],
+  [
+   75.02711,
+   13.47563
+  ],
+  [
+   75.01693,
+   13.43895
+  ],
+  [
+   74.99988,
+   13.42611
+  ],
+  [
+   74.99833,
+   13.40568
+  ],
+  [
+   75.00502,
+   13.39457
+  ],
+  [
+   75.00521,
+   13.36882
+  ],
+  [
+   75.01229,
+   13.35354
+  ],
+  [
+   75.01049,
+   13.34774
+  ],
+  [
+   74.99936,
+   13.33944
+  ],
+  [
+   75.00044,
+   13.32214
+  ],
+  [
+   74.99012,
+   13.31643
+  ],
+  [
+   74.98837,
+   13.2979
+  ],
+  [
+   74.98316,
+   13.29572
+  ],
+  [
+   74.98618,
+   13.28653
+  ],
+  [
+   74.98155,
+   13.2777
+  ],
+  [
+   74.98498,
+   13.22232
+  ],
+  [
+   74.99742,
+   13.21424
+  ],
+  [
+   74.9964,
+   13.18653
+  ],
+  [
+   74.99194,
+   13.17469
+  ],
+  [
+   74.99462,
+   13.15993
+  ],
+  [
+   74.99134,
+   13.14964
+  ],
+  [
+   74.99748,
+   13.13594
+  ],
+  [
+   74.99504,
+   13.11518
+  ],
+  [
+   74.99941,
+   13.09756
+  ],
+  [
+   74.99635,
+   13.083
+  ],
+  [
+   74.9997,
+   13.07115
+  ],
+  [
+   74.9738,
+   13.05936
+  ],
+  [
+   74.9661,
+   13.03658
+  ],
+  [
+   74.96917,
+   13.00923
+  ],
+  [
+   74.95272,
+   12.97732
+  ],
+  [
+   74.9345,
+   12.96398
+  ],
+  [
+   74.93303,
+   12.94556
+  ],
+  [
+   74.93767,
+   12.94333
+  ],
+  [
+   74.93968,
+   12.93523
+  ],
+  [
+   74.94295,
+   12.9355
+  ],
+  [
+   74.95033,
+   12.92708
+  ],
+  [
+   74.96533,
+   12.93091
+  ],
+  [
+   74.97915,
+   12.92703
+  ],
+  [
+   74.98197,
+   12.92229
+  ],
+  [
+   74.98781,
+   12.9209
+  ],
+  [
+   74.993,
+   12.91452
+  ],
+  [
+   74.99253,
+   12.90576
+  ],
+  [
+   75.01734,
+   12.8973
+  ],
+  [
+   75.01852,
+   12.88635
+  ],
+  [
+   75.02249,
+   12.88064
+  ],
+  [
+   75.03253,
+   12.88234
+  ],
+  [
+   75.04664,
+   12.87954
+  ],
+  [
+   75.05521,
+   12.85896
+  ],
+  [
+   75.0722,
+   12.84345
+  ],
+  [
+   75.10541,
+   12.84056
+  ],
+  [
+   75.12094,
+   12.83621
+  ],
+  [
+   75.12685,
+   12.82822
+  ],
+  [
+   75.12568,
+   12.82386
+  ],
+  [
+   75.14089,
+   12.81029
+  ],
+  [
+   75.14727,
+   12.79084
+  ],
+  [
+   75.15991,
+   12.78376
+  ],
+  [
+   75.1679,
+   12.78378
+  ],
+  [
+   75.17925,
+   12.77868
+  ],
+  [
+   75.19178,
+   12.76809
+  ],
+  [
+   75.20475,
+   12.75009
+  ],
+  [
+   75.2174,
+   12.74836
+  ],
+  [
+   75.22115,
+   12.7229
+  ],
+  [
+   75.24593,
+   12.69781
+  ],
+  [
+   75.25103,
+   12.68371
+  ],
+  [
+   75.26188,
+   12.67558
+  ],
+  [
+   75.26817,
+   12.65543
+  ],
+  [
+   75.27238,
+   12.65335
+  ],
+  [
+   75.27662,
+   12.64291
+  ],
+  [
+   75.29015,
+   12.63684
+  ],
+  [
+   75.29651,
+   12.62309
+  ],
+  [
+   75.32778,
+   12.60376
+  ],
+  [
+   75.33248,
+   12.5951
+  ],
+  [
+   75.33893,
+   12.59405
+  ],
+  [
+   75.3461,
+   12.58776
+  ],
+  [
+   75.3614,
+   12.58888
+  ],
+  [
+   75.36425,
+   12.58401
+  ],
+  [
+   75.37671,
+   12.58486
+  ],
+  [
+   75.38395,
+   12.5815
+  ],
+  [
+   75.39106,
+   12.55927
+  ],
+  [
+   75.40357,
+   12.53827
+  ],
+  [
+   75.4199,
+   12.52565
+  ],
+  [
+   75.45961,
+   12.51715
+  ],
+  [
+   75.47249,
+   12.52111
+  ],
+  [
+   75.48297,
+   12.5199
+  ],
+  [
+   75.49331,
+   12.51498
+  ],
+  [
+   75.52176,
+   12.5107
+  ],
+  [
+   75.53512,
+   12.50204
+  ],
+  [
+   75.57049,
+   12.49194
+  ],
+  [
+   75.57797,
+   12.48102
+  ],
+  [
+   75.5927,
+   12.47338
+  ],
+  [
+   75.60677,
+   12.47218
+  ],
+  [
+   75.62245,
+   12.4602
+  ],
+  [
+   75.63048,
+   12.45943
+  ],
+  [
+   75.63062,
+   12.456
+  ],
+  [
+   75.6397,
+   12.44954
+  ],
+  [
+   75.6437,
+   12.45176
+  ],
+  [
+   75.65424,
+   12.43846
+  ],
+  [
+   75.65923,
+   12.43613
+  ],
+  [
+   75.65988,
+   12.44064
+  ],
+  [
+   75.66825,
+   12.4387
+  ],
+  [
+   75.68644,
+   12.41941
+  ],
+  [
+   75.7006,
+   12.4214
+  ],
+  [
+   75.71723,
+   12.41316
+  ],
+  [
+   75.72239,
+   12.41467
+  ],
+  [
+   75.73257,
+   12.41074
+  ],
+  [
+   75.74183,
+   12.4156
+  ],
+  [
+   75.73876,
+   12.42131
+  ],
+  [
+   75.74876,
+   12.4152
+  ],
+  [
+   75.75347,
+   12.43068
+  ],
+  [
+   75.75814,
+   12.43064
+  ],
+  [
+   75.75907,
+   12.42729
+  ],
+  [
+   75.76689,
+   12.43034
+  ],
+  [
+   75.78273,
+   12.42942
+  ],
+  [
+   75.79274,
+   12.44107
+  ],
+  [
+   75.80382,
+   12.43531
+  ],
+  [
+   75.81045,
+   12.43944
+  ],
+  [
+   75.81467,
+   12.4469
+  ],
+  [
+   75.82065,
+   12.44662
+  ],
+  [
+   75.83067,
+   12.4527
+  ],
+  [
+   75.84627,
+   12.44767
+  ],
+  [
+   75.85028,
+   12.44094
+  ],
+  [
+   75.87223,
+   12.44117
+  ],
+  [
+   75.8911,
+   12.43259
+  ],
+  [
+   75.94156,
+   12.44836
+  ],
+  [
+   75.96075,
+   12.4574
+  ],
+  [
+   75.99312,
+   12.43428
+  ],
+  [
+   76.02458,
+   12.39016
+  ],
+  [
+   76.08425,
+   12.33701
+  ],
+  [
+   76.1433,
+   12.33888
+  ],
+  [
+   76.15291,
+   12.33478
+  ],
+  [
+   76.17123,
+   12.33981
+  ],
+  [
+   76.1776,
+   12.33726
+  ],
+  [
+   76.18862,
+   12.33959
+  ],
+  [
+   76.22987,
+   12.3144
+  ],
+  [
+   76.24603,
+   12.31567
+  ],
+  [
+   76.26421,
+   12.31031
+  ],
+  [
+   76.28262,
+   12.31374
+  ],
+  [
+   76.29864,
+   12.30832
+  ],
+  [
+   76.31016,
+   12.30819
+  ],
+  [
+   76.40027,
+   12.34184
+  ],
+  [
+   76.42763,
+   12.34691
+  ],
+  [
+   76.46271,
+   12.33196
+  ],
+  [
+   76.49113,
+   12.33455
+  ],
+  [
+   76.50497,
+   12.33882
+  ],
+  [
+   76.51499,
+   12.35282
+  ],
+  [
+   76.5316,
+   12.36036
+  ],
+  [
+   76.54165,
+   12.35974
+  ],
+  [
+   76.54698,
+   12.35335
+  ],
+  [
+   76.56345,
+   12.3502
+  ],
+  [
+   76.59829,
+   12.33314
+  ],
+  [
+   76.60173,
+   12.35153
+  ],
+  [
+   76.60736,
+   12.35356
+  ],
+  [
+   76.66086,
+   12.35068
+  ],
+  [
+   76.6619,
+   12.36913
+  ],
+  [
+   76.66686,
+   12.37754
+  ],
+  [
+   76.6695,
+   12.39853
+  ],
+  [
+   76.69726,
+   12.40978
+  ],
+  [
+   76.724,
+   12.44013
+  ],
+  [
+   76.73409,
+   12.44605
+  ],
+  [
+   76.7472,
+   12.46403
+  ],
+  [
+   76.78343,
+   12.4901
+  ],
+  [
+   76.82075,
+   12.49966
+  ],
+  [
+   76.85798,
+   12.51637
+  ],
+  [
+   76.86556,
+   12.53716
+  ],
+  [
+   76.87473,
+   12.54463
+  ],
+  [
+   76.95952,
+   12.54753
+  ],
+  [
+   76.99892,
+   12.56845
+  ],
+  [
+   77.03702,
+   12.58266
+  ],
+  [
+   77.05202,
+   12.59476
+  ],
+  [
+   77.07396,
+   12.60155
+  ],
+  [
+   77.08828,
+   12.61675
+  ],
+  [
+   77.10546,
+   12.62773
+  ],
+  [
+   77.12546,
+   12.63621
+  ],
+  [
+   77.1722,
+   12.64543
+  ],
+  [
+   77.17634,
+   12.65599
+  ],
+  [
+   77.18608,
+   12.66235
+  ],
+  [
+   77.19011,
+   12.67167
+  ],
+  [
+   77.21587,
+   12.69774
+  ],
+  [
+   77.2347,
+   12.72659
+  ],
+  [
+   77.25578,
+   12.74863
+  ],
+  [
+   77.26346,
+   12.75026
+  ],
+  [
+   77.28995,
+   12.74001
+  ],
+  [
+   77.30902,
+   12.7446
+  ],
+  [
+   77.33363,
+   12.76754
+  ],
+  [
+   77.35192,
+   12.77131
+  ],
+  [
+   77.36831,
+   12.78033
+  ],
+  [
+   77.37287,
+   12.78594
+  ],
+  [
+   77.3758,
+   12.80463
+  ],
+  [
+   77.3873,
+   12.81553
+  ],
+  [
+   77.40901,
+   12.81879
+  ],
+  [
+   77.4133,
+   12.83261
+  ],
+  [
+   77.42683,
+   12.85561
+  ],
+  [
+   77.46153,
+   12.89721
+  ],
+  [
+   77.47316,
+   12.90666
+  ],
+  [
+   77.48435,
+   12.91067
+  ],
+  [
+   77.51114,
+   12.93496
+  ],
+  [
+   77.52056,
+   12.93715
+  ],
+  [
+   77.5377,
+   12.95309
+  ],
+  [
+   77.56979,
+   12.96421
+  ],
+  [
+   77.58522,
+   12.96394
+  ],
+  [
+   77.59372,
+   12.97195
+  ],
+  [
+   77.59003,
+   12.97647
+  ]
+ ],
+ "fuel": {
+  "listed": true,
+  "pumps": [
+   {
+    "id": "fuel:way-1254315988",
+    "name": "Bharati Petrol / Gas Station",
+    "brand": "Hindustan Petroleum",
+    "near": "Bengaluru",
+    "km_from_start": 0.0,
+    "lat": 12.98232,
+    "lon": 77.59418,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/way/1254315988"
+   },
+   {
+    "id": "fuel:way-1310872540",
+    "name": "Indian Oil",
+    "brand": "Indian Oil",
+    "near": "Bengaluru",
+    "km_from_start": 0.8,
+    "lat": 12.9733,
+    "lon": 77.58148,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/way/1310872540"
+   },
+   {
+    "id": "fuel:node-2466476118",
+    "name": "Bharat Petroleum",
+    "brand": "Bharat Petroleum",
+    "near": "Bengaluru",
+    "km_from_start": 1.1,
+    "lat": 12.97651,
+    "lon": 77.57991,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/node/2466476118"
+   },
+   {
+    "id": "fuel:way-1047549733",
+    "name": "Shell",
+    "brand": "Shell",
+    "near": "Bengaluru",
+    "km_from_start": 2.1,
+    "lat": 12.98223,
+    "lon": 77.56641,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/way/1047549733"
+   },
+   {
+    "id": "fuel:node-7276500272",
+    "name": "Aegis Auto Gas",
+    "brand": null,
+    "near": "Bengaluru",
+    "km_from_start": 2.5,
+    "lat": 12.98629,
+    "lon": 77.57242,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/node/7276500272"
+   },
+   {
+    "id": "fuel:node-2467854906",
+    "name": "Vijees Auto Gas",
+    "brand": null,
+    "near": "Bengaluru",
+    "km_from_start": 2.6,
+    "lat": 12.98735,
+    "lon": 77.57239,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/node/2467854906"
+   },
+   {
+    "id": "fuel:node-1614366547",
+    "name": "Bharat Petroleum",
+    "brand": "Bharat Petroleum",
+    "near": "Bengaluru",
+    "km_from_start": 2.7,
+    "lat": 12.9883,
+    "lon": 77.57744,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/node/1614366547"
+   },
+   {
+    "id": "fuel:way-1195571016",
+    "name": "Indian Oil",
+    "brand": "Indian Oil",
+    "near": "Bengaluru",
+    "km_from_start": 2.8,
+    "lat": 12.99631,
+    "lon": 77.58028,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/way/1195571016"
+   },
+   {
+    "id": "fuel:way-1195571017",
+    "name": "Trigaz",
+    "brand": "Trigaz",
+    "near": "Bengaluru",
+    "km_from_start": 2.8,
+    "lat": 12.99507,
+    "lon": 77.57914,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/way/1195571017"
+   },
+   {
+    "id": "fuel:way-1353661366",
+    "name": "Petrol pump",
+    "brand": null,
+    "near": "Bengaluru",
+    "km_from_start": 2.8,
+    "lat": 12.98997,
+    "lon": 77.57416,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/way/1353661366"
+   },
+   {
+    "id": "fuel:way-249661874",
+    "name": "Hindustan Petroleum",
+    "brand": "Hindustan Petroleum",
+    "near": "Bengaluru",
+    "km_from_start": 2.9,
+    "lat": 12.98948,
+    "lon": 77.57265,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/way/249661874"
+   },
+   {
+    "id": "fuel:way-192043993",
+    "name": "Indian Oil",
+    "brand": "Indian Oil",
+    "near": "Bengaluru",
+    "km_from_start": 3.1,
+    "lat": 12.99079,
+    "lon": 77.57187,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/way/192043993"
+   },
+   {
+    "id": "fuel:node-2249053699",
+    "name": "Indian Oil",
+    "brand": "Indian Oil",
+    "near": "Bengaluru",
+    "km_from_start": 3.6,
+    "lat": 12.98106,
+    "lon": 77.55839,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/node/2249053699"
+   },
+   {
+    "id": "fuel:node-2016215963",
+    "name": "Petrol pump",
+    "brand": null,
+    "near": "Bengaluru",
+    "km_from_start": 3.7,
+    "lat": 12.98412,
+    "lon": 77.56002,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/node/2016215963"
+   },
+   {
+    "id": "fuel:node-2249047993",
+    "name": "HP",
+    "brand": "Hindustan Petroleum",
+    "near": "Bengaluru",
+    "km_from_start": 4.0,
+    "lat": 12.99164,
+    "lon": 77.55783,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/node/2249047993"
+   },
+   {
+    "id": "fuel:way-1195571025",
+    "name": "Indian Oil",
+    "brand": "Indian Oil",
+    "near": "Bengaluru",
+    "km_from_start": 4.5,
+    "lat": 12.99745,
+    "lon": 77.5605,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/way/1195571025"
+   },
+   {
+    "id": "fuel:way-346825827",
+    "name": "Bharat Petroleum",
+    "brand": "Bharat Petroleum",
+    "near": "Bengaluru",
+    "km_from_start": 5.2,
+    "lat": 12.99723,
+    "lon": 77.54677,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/way/346825827"
+   },
+   {
+    "id": "fuel:way-1370050104",
+    "name": "Go Gas",
+    "brand": null,
+    "near": "Bengaluru",
+    "km_from_start": 5.4,
+    "lat": 13.00294,
+    "lon": 77.55362,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/way/1370050104"
+   },
+   {
+    "id": "fuel:way-1306491451",
+    "name": "Varadaraja Petrol / Gas Station",
+    "brand": "Indane Oil",
+    "near": "Bengaluru",
+    "km_from_start": 5.7,
+    "lat": 13.00579,
+    "lon": 77.55441,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/way/1306491451"
+   },
+   {
+    "id": "fuel:way-1163334246",
+    "name": "Nayara",
+    "brand": "Nayara",
+    "near": "Bengaluru",
+    "km_from_start": 6.4,
+    "lat": 13.00801,
+    "lon": 77.54601,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/way/1163334246"
+   },
+   {
+    "id": "fuel:way-1297586915",
+    "name": "Shell",
+    "brand": "Shell",
+    "near": "Bengaluru",
+    "km_from_start": 6.4,
+    "lat": 13.01232,
+    "lon": 77.55372,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/way/1297586915"
+   },
+   {
+    "id": "fuel:node-2090829415",
+    "name": "HP Petrol",
+    "brand": "Hindustan Petroleum",
+    "near": "Bengaluru",
+    "km_from_start": 8.2,
+    "lat": 13.01035,
+    "lon": 77.53674,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/node/2090829415"
+   },
+   {
+    "id": "fuel:way-781532338",
+    "name": "Bharat Petroleum",
+    "brand": "Bharat Petroleum",
+    "near": "Bengaluru",
+    "km_from_start": 9.3,
+    "lat": 13.02232,
+    "lon": 77.53307,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/way/781532338"
+   },
+   {
+    "id": "fuel:node-1794675779",
+    "name": "Petrol pump",
+    "brand": null,
+    "near": "Bengaluru",
+    "km_from_start": 10.4,
+    "lat": 13.02308,
+    "lon": 77.52256,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/node/1794675779"
+   },
+   {
+    "id": "fuel:way-1280618999",
+    "name": "Bharath Petroluem",
+    "brand": "Bharath Petroluem",
+    "near": "Bengaluru",
+    "km_from_start": 10.7,
+    "lat": 13.02576,
+    "lon": 77.52114,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/way/1280618999"
+   },
+   {
+    "id": "fuel:way-1326487983",
+    "name": "HP",
+    "brand": null,
+    "near": "Bengaluru",
+    "km_from_start": 15.5,
+    "lat": 13.05144,
+    "lon": 77.48834,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/way/1326487983"
+   },
+   {
+    "id": "fuel:way-1331849876",
+    "name": "Petrol pump",
+    "brand": null,
+    "near": "Bengaluru",
+    "km_from_start": 17.9,
+    "lat": 13.05876,
+    "lon": 77.46809,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/way/1331849876"
+   },
+   {
+    "id": "fuel:way-1280079710",
+    "name": "Petrol pump",
+    "brand": null,
+    "near": "Bengaluru",
+    "km_from_start": 18.6,
+    "lat": 13.06083,
+    "lon": 77.46251,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/way/1280079710"
+   },
+   {
+    "id": "fuel:node-12144112008",
+    "name": "Bharat Petroleum",
+    "brand": "Bharat Petroleum",
+    "near": "Bengaluru",
+    "km_from_start": 20.2,
+    "lat": 13.06783,
+    "lon": 77.45068,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/node/12144112008"
+   },
+   {
+    "id": "fuel:way-1280079730",
+    "name": "Bharat Petroleum",
+    "brand": null,
+    "near": "Bengaluru",
+    "km_from_start": 22.6,
+    "lat": 13.07775,
+    "lon": 77.43195,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/way/1280079730"
+   },
+   {
+    "id": "fuel:node-12143861406",
+    "name": "HP",
+    "brand": "Hindustan Petroleum",
+    "near": "Bengaluru",
+    "km_from_start": 23.6,
+    "lat": 13.07965,
+    "lon": 77.42344,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/node/12143861406"
+   },
+   {
+    "id": "fuel:way-1280079725",
+    "name": "Petrol pump",
+    "brand": null,
+    "near": "Bengaluru",
+    "km_from_start": 25.4,
+    "lat": 13.08735,
+    "lon": 77.40893,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/way/1280079725"
+   },
+   {
+    "id": "fuel:node-3838415694",
+    "name": "Petrol pump",
+    "brand": null,
+    "near": "Bengaluru",
+    "km_from_start": 26.3,
+    "lat": 13.09505,
+    "lon": 77.40427,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/node/3838415694"
+   },
+   {
+    "id": "fuel:way-1280079721",
+    "name": "Petrol pump",
+    "brand": null,
+    "near": "Bengaluru",
+    "km_from_start": 26.4,
+    "lat": 13.08967,
+    "lon": 77.40112,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/way/1280079721"
+   },
+   {
+    "id": "fuel:way-1280079731",
+    "name": "Petrol pump",
+    "brand": null,
+    "near": "Bengaluru",
+    "km_from_start": 27.5,
+    "lat": 13.09314,
+    "lon": 77.39202,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/way/1280079731"
+   },
+   {
+    "id": "fuel:way-704797934",
+    "name": "SBT Fuel Station",
+    "brand": null,
+    "near": "Bengaluru",
+    "km_from_start": 28.0,
+    "lat": 13.08869,
+    "lon": 77.37645,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/way/704797934"
+   },
+   {
+    "id": "fuel:way-1283108180",
+    "name": "Petrol pump",
+    "brand": null,
+    "near": "Bengaluru",
+    "km_from_start": 28.4,
+    "lat": 13.09853,
+    "lon": 77.38667,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/way/1283108180"
+   },
+   {
+    "id": "fuel:way-1280079717",
+    "name": "Petrol pump",
+    "brand": null,
+    "near": "Bengaluru",
+    "km_from_start": 28.6,
+    "lat": 13.09908,
+    "lon": 77.38439,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/way/1280079717"
+   },
+   {
+    "id": "fuel:way-1280079719",
+    "name": "Petrol pump",
+    "brand": null,
+    "near": "Bengaluru",
+    "km_from_start": 29.2,
+    "lat": 13.10405,
+    "lon": 77.38161,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/way/1280079719"
+   },
+   {
+    "id": "fuel:way-1280079720",
+    "name": "Bharat Petroleum",
+    "brand": "Bharat Petroleum",
+    "near": "Bengaluru",
+    "km_from_start": 29.3,
+    "lat": 13.10479,
+    "lon": 77.38123,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/way/1280079720"
+   },
+   {
+    "id": "fuel:way-845587712",
+    "name": "Indian Oil Fuel Pump",
+    "brand": "Indian Oil",
+    "near": "Bengaluru",
+    "km_from_start": 30.9,
+    "lat": 13.11551,
+    "lon": 77.37308,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/way/845587712"
+   },
+   {
+    "id": "fuel:way-1441649170",
+    "name": "Petrol pump",
+    "brand": null,
+    "near": "Bengaluru",
+    "km_from_start": 32.5,
+    "lat": 13.12538,
+    "lon": 77.36375,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/way/1441649170"
+   },
+   {
+    "id": "fuel:way-1349591911",
+    "name": "Capital Fuels",
+    "brand": "Bharat Petroleum",
+    "near": "Bengaluru",
+    "km_from_start": 32.9,
+    "lat": 13.12825,
+    "lon": 77.36092,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/way/1349591911"
+   },
+   {
+    "id": "fuel:way-1349591914",
+    "name": "Petrol pump",
+    "brand": null,
+    "near": "Bengaluru",
+    "km_from_start": 33.2,
+    "lat": 13.1302,
+    "lon": 77.35901,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/way/1349591914"
+   },
+   {
+    "id": "fuel:way-1280758265",
+    "name": "Petrol pump",
+    "brand": null,
+    "near": "Bengaluru",
+    "km_from_start": 33.8,
+    "lat": 13.13362,
+    "lon": 77.35614,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/way/1280758265"
+   },
+   {
+    "id": "fuel:way-1441649172",
+    "name": "Petrol pump",
+    "brand": null,
+    "near": "Bengaluru",
+    "km_from_start": 34.7,
+    "lat": 13.13999,
+    "lon": 77.35085,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/way/1441649172"
+   },
+   {
+    "id": "fuel:way-1349591968",
+    "name": "Bharat Petroleum",
+    "brand": "Bharat Petroleum",
+    "near": "Bengaluru",
+    "km_from_start": 35.8,
+    "lat": 13.14518,
+    "lon": 77.3423,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/way/1349591968"
+   },
+   {
+    "id": "fuel:way-1441649176",
+    "name": "Petrol pump",
+    "brand": null,
+    "near": "Bengaluru",
+    "km_from_start": 37.1,
+    "lat": 13.15299,
+    "lon": 77.33468,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/way/1441649176"
+   },
+   {
+    "id": "fuel:way-1416785515",
+    "name": "Indian Oil",
+    "brand": "Indian Oil",
+    "near": "Bengaluru",
+    "km_from_start": 37.7,
+    "lat": 13.155,
+    "lon": 77.32898,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/way/1416785515"
+   },
+   {
+    "id": "fuel:way-1441649148",
+    "name": "Bharat Petroleum",
+    "brand": "Bharat Petroleum",
+    "near": "Bengaluru",
+    "km_from_start": 38.8,
+    "lat": 13.17041,
+    "lon": 77.32851,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/way/1441649148"
+   },
+   {
+    "id": "fuel:way-1441649164",
+    "name": "Petrol pump",
+    "brand": null,
+    "near": "Bengaluru",
+    "km_from_start": 43.1,
+    "lat": 13.18011,
+    "lon": 77.28927,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/way/1441649164"
+   },
+   {
+    "id": "fuel:way-1441649162",
+    "name": "Petrol pump",
+    "brand": null,
+    "near": "Bengaluru",
+    "km_from_start": 44.3,
+    "lat": 13.18712,
+    "lon": 77.28202,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/way/1441649162"
+   },
+   {
+    "id": "fuel:node-4991915432",
+    "name": "Essar Fuel Pump",
+    "brand": "Essar",
+    "near": "Bengaluru",
+    "km_from_start": 47.0,
+    "lat": 13.20399,
+    "lon": 77.26508,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/node/4991915432"
+   },
+   {
+    "id": "fuel:node-4991915433",
+    "name": "HPCL",
+    "brand": "HP",
+    "near": "Bengaluru",
+    "km_from_start": 47.1,
+    "lat": 13.2042,
+    "lon": 77.26484,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/node/4991915433"
+   },
+   {
+    "id": "fuel:way-1441649159",
+    "name": "Petrol pump",
+    "brand": null,
+    "near": "Bengaluru",
+    "km_from_start": 48.0,
+    "lat": 13.211,
+    "lon": 77.25966,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/way/1441649159"
+   },
+   {
+    "id": "fuel:way-186429164",
+    "name": "Hindustan Petroleum",
+    "brand": "Hindustan Petroleum",
+    "near": "Bengaluru",
+    "km_from_start": 48.2,
+    "lat": 13.21119,
+    "lon": 77.25788,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/way/186429164"
+   },
+   {
+    "id": "fuel:node-2850977534",
+    "name": "Indian Oil",
+    "brand": "Indian Oil",
+    "near": "Bengaluru",
+    "km_from_start": 53.2,
+    "lat": 13.24402,
+    "lon": 77.23055,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/node/2850977534"
+   },
+   {
+    "id": "fuel:node-3508275102",
+    "name": "HP Petrol Diesel Station",
+    "brand": "HP Petrol Diesel Station",
+    "near": "Bengaluru",
+    "km_from_start": 53.8,
+    "lat": 13.24644,
+    "lon": 77.22605,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/node/3508275102"
+   },
+   {
+    "id": "fuel:node-3514792027",
+    "name": "Reliance Indsutries Petrol Station",
+    "brand": null,
+    "near": "Bengaluru",
+    "km_from_start": 54.2,
+    "lat": 13.24908,
+    "lon": 77.22358,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/node/3514792027"
+   },
+   {
+    "id": "fuel:node-11906872667",
+    "name": "Indian Oil",
+    "brand": "Indian Oil",
+    "near": "Bengaluru",
+    "km_from_start": 56.8,
+    "lat": 13.26311,
+    "lon": 77.20604,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/node/11906872667"
+   },
+   {
+    "id": "fuel:node-4991915435",
+    "name": "Petrol pump",
+    "brand": null,
+    "near": "Bengaluru",
+    "km_from_start": 59.5,
+    "lat": 13.27953,
+    "lon": 77.18905,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/node/4991915435"
+   },
+   {
+    "id": "fuel:node-3557531176",
+    "name": "Petrol pump",
+    "brand": null,
+    "near": "Bengaluru",
+    "km_from_start": 65.9,
+    "lat": 13.31488,
+    "lon": 77.14476,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/node/3557531176"
+   },
+   {
+    "id": "fuel:node-3362873504",
+    "name": "Indian Oil",
+    "brand": "Indian Oil",
+    "near": "Bengaluru",
+    "km_from_start": 67.8,
+    "lat": 13.31065,
+    "lon": 77.12689,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/node/3362873504"
+   },
+   {
+    "id": "fuel:way-1282834890",
+    "name": "HP Petrol Bunk",
+    "brand": "Hindustan Petroleum",
+    "near": "Bengaluru",
+    "km_from_start": 69.1,
+    "lat": 13.31341,
+    "lon": 77.11601,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/way/1282834890"
+   },
+   {
+    "id": "fuel:way-1282772953",
+    "name": "KS Fuel Station  (MRPL)",
+    "brand": null,
+    "near": "Bengaluru",
+    "km_from_start": 70.4,
+    "lat": 13.31451,
+    "lon": 77.10404,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/way/1282772953"
+   },
+   {
+    "id": "fuel:way-1225159340",
+    "name": "Petrol pump",
+    "brand": null,
+    "near": "Bengaluru",
+    "km_from_start": 73.9,
+    "lat": 13.33345,
+    "lon": 77.09569,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/way/1225159340"
+   },
+   {
+    "id": "fuel:node-2467875957",
+    "name": "Sri Someshwara Auto Gas",
+    "brand": "Aegis Logistics Ltd.",
+    "near": "Bengaluru",
+    "km_from_start": 74.3,
+    "lat": 13.33604,
+    "lon": 77.08682,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/node/2467875957"
+   },
+   {
+    "id": "fuel:node-3362873502",
+    "name": "Bharat Petroleum",
+    "brand": "Bharat Petroleum",
+    "near": "Bengaluru",
+    "km_from_start": 74.3,
+    "lat": 13.33545,
+    "lon": 77.0868,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/node/3362873502"
+   },
+   {
+    "id": "fuel:node-3362873505",
+    "name": "Indian Oil",
+    "brand": "Indian Oil",
+    "near": "Bengaluru",
+    "km_from_start": 74.7,
+    "lat": 13.33907,
+    "lon": 77.08688,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/node/3362873505"
+   },
+   {
+    "id": "fuel:node-4130692841",
+    "name": "Indian Oil",
+    "brand": "Indian Oil",
+    "near": "Bengaluru",
+    "km_from_start": 75.4,
+    "lat": 13.34406,
+    "lon": 77.09368,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/node/4130692841"
+   },
+   {
+    "id": "fuel:node-3362873506",
+    "name": "Hindustan Petroleum",
+    "brand": "Hindustan Petroleum",
+    "near": "Bengaluru",
+    "km_from_start": 76.1,
+    "lat": 13.34528,
+    "lon": 77.08338,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/node/3362873506"
+   },
+   {
+    "id": "fuel:node-3362873503",
+    "name": "Bharat Petroleum",
+    "brand": "Bharat Petroleum",
+    "near": "Bengaluru",
+    "km_from_start": 78.7,
+    "lat": 13.34328,
+    "lon": 77.06126,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/node/3362873503"
+   },
+   {
+    "id": "fuel:node-3362875707",
+    "name": "Hindustan Petroleum",
+    "brand": "Hindustan Petroleum",
+    "near": "Bengaluru",
+    "km_from_start": 85.6,
+    "lat": 13.33181,
+    "lon": 77.00123,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/node/3362875707"
+   },
+   {
+    "id": "fuel:way-1290668298",
+    "name": "Indian Oil",
+    "brand": "Indian Oil",
+    "near": "Bengaluru",
+    "km_from_start": 88.0,
+    "lat": 13.33295,
+    "lon": 76.98118,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/way/1290668298"
+   },
+   {
+    "id": "fuel:way-1290668288",
+    "name": "Hindustan Petroleum",
+    "brand": "Hindustan Petroleum",
+    "near": "Bengaluru",
+    "km_from_start": 98.7,
+    "lat": 13.31734,
+    "lon": 76.88889,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/way/1290668288"
+   },
+   {
+    "id": "fuel:way-1290668285",
+    "name": "Indian Oil",
+    "brand": "Indian Oil",
+    "near": "Bengaluru",
+    "km_from_start": 102.6,
+    "lat": 13.32308,
+    "lon": 76.85576,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/way/1290668285"
+   },
+   {
+    "id": "fuel:node-4117105619",
+    "name": "Indian Oil",
+    "brand": "Indian Oil",
+    "near": "Bengaluru",
+    "km_from_start": 116.9,
+    "lat": 13.32771,
+    "lon": 76.73617,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/node/4117105619"
+   },
+   {
+    "id": "fuel:node-3496892165",
+    "name": "HP",
+    "brand": "Hindustan Petroleum",
+    "near": "Bengaluru",
+    "km_from_start": 122.1,
+    "lat": 13.31888,
+    "lon": 76.69228,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/node/3496892165"
+   },
+   {
+    "id": "fuel:node-2453943107",
+    "name": "Petrol pump",
+    "brand": null,
+    "near": "Bengaluru",
+    "km_from_start": 123.0,
+    "lat": 13.31716,
+    "lon": 76.68382,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/node/2453943107"
+   },
+   {
+    "id": "fuel:node-4117117014",
+    "name": "Bharat Petroleum",
+    "brand": "Bharat Petroleum",
+    "near": "Chikkamagaluru",
+    "km_from_start": 125.5,
+    "lat": 13.31268,
+    "lon": 76.66241,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/node/4117117014"
+   },
+   {
+    "id": "fuel:node-4117117013",
+    "name": "Bharat Petroleum",
+    "brand": "Bharat Petroleum",
+    "near": "Chikkamagaluru",
+    "km_from_start": 126.3,
+    "lat": 13.31131,
+    "lon": 76.6556,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/node/4117117013"
+   },
+   {
+    "id": "fuel:node-1789670614",
+    "name": "Rahul Service Station",
+    "brand": "Indian Oil",
+    "near": "Chikkamagaluru",
+    "km_from_start": 145.5,
+    "lat": 13.26529,
+    "lon": 76.49956,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/node/1789670614"
+   },
+   {
+    "id": "fuel:node-4117117012",
+    "name": "Hindustan Petroleum",
+    "brand": "Hindustan Petroleum",
+    "near": "Chikkamagaluru",
+    "km_from_start": 146.8,
+    "lat": 13.26167,
+    "lon": 76.4883,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/node/4117117012"
+   },
+   {
+    "id": "fuel:node-1802702374",
+    "name": "Indian Oil",
+    "brand": "Indian Oil",
+    "near": "Chikkamagaluru",
+    "km_from_start": 147.3,
+    "lat": 13.25949,
+    "lon": 76.48493,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/node/1802702374"
+   },
+   {
+    "id": "fuel:node-4117105615",
+    "name": "Indian Oil",
+    "brand": "Indian Oil",
+    "near": "Chikkamagaluru",
+    "km_from_start": 147.3,
+    "lat": 13.25995,
+    "lon": 76.48471,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/node/4117105615"
+   },
+   {
+    "id": "fuel:way-1389079334",
+    "name": "Petrol pump",
+    "brand": null,
+    "near": "Chikkamagaluru",
+    "km_from_start": 147.3,
+    "lat": 13.25935,
+    "lon": 76.48509,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/way/1389079334"
+   },
+   {
+    "id": "fuel:node-1789675450",
+    "name": "Petrol pump",
+    "brand": null,
+    "near": "Chikkamagaluru",
+    "km_from_start": 147.6,
+    "lat": 13.25201,
+    "lon": 76.48777,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/node/1789675450"
+   },
+   {
+    "id": "fuel:node-663939130",
+    "name": "Indian Oil",
+    "brand": "Indian Oil",
+    "near": "Chikkamagaluru",
+    "km_from_start": 151.1,
+    "lat": 13.26319,
+    "lon": 76.45314,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/node/663939130"
+   },
+   {
+    "id": "fuel:way-1368970472",
+    "name": "Petrol pump",
+    "brand": null,
+    "near": "Chikkamagaluru",
+    "km_from_start": 176.4,
+    "lat": 13.29183,
+    "lon": 76.24832,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/way/1368970472"
+   },
+   {
+    "id": "fuel:node-4744467587",
+    "name": "Petrol pump",
+    "brand": null,
+    "near": "Chikkamagaluru",
+    "km_from_start": 176.6,
+    "lat": 13.29976,
+    "lon": 76.25624,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/node/4744467587"
+   },
+   {
+    "id": "fuel:node-4117117015",
+    "name": "Hindustan Petroleum",
+    "brand": "Hindustan Petroleum",
+    "near": "Chikkamagaluru",
+    "km_from_start": 180.7,
+    "lat": 13.32391,
+    "lon": 76.249,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/node/4117117015"
+   },
+   {
+    "id": "fuel:node-4117105621",
+    "name": "Indian Oil",
+    "brand": "Indian Oil",
+    "near": "Chikkamagaluru",
+    "km_from_start": 182.5,
+    "lat": 13.33898,
+    "lon": 76.23685,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/node/4117105621"
+   },
+   {
+    "id": "fuel:node-4117105622",
+    "name": "Indian Oil",
+    "brand": "Indian Oil",
+    "near": "Chikkamagaluru",
+    "km_from_start": 195.3,
+    "lat": 13.41687,
+    "lon": 76.16005,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/node/4117105622"
+   },
+   {
+    "id": "fuel:way-1369229488",
+    "name": "Petrol pump",
+    "brand": null,
+    "near": "Chikkamagaluru",
+    "km_from_start": 209.5,
+    "lat": 13.50089,
+    "lon": 76.06989,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/way/1369229488"
+   },
+   {
+    "id": "fuel:way-1369229473",
+    "name": "Petrol pump",
+    "brand": null,
+    "near": "Chikkamagaluru",
+    "km_from_start": 212.4,
+    "lat": 13.51515,
+    "lon": 76.04912,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/way/1369229473"
+   },
+   {
+    "id": "fuel:node-4117105623",
+    "name": "Hindustan Petroleum",
+    "brand": "Hindustan Petroleum",
+    "near": "Chikkamagaluru",
+    "km_from_start": 218.0,
+    "lat": 13.55359,
+    "lon": 76.0153,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/node/4117105623"
+   },
+   {
+    "id": "fuel:node-4117105624",
+    "name": "Indian Oil",
+    "brand": "Indian Oil",
+    "near": "Chikkamagaluru",
+    "km_from_start": 218.4,
+    "lat": 13.55796,
+    "lon": 76.0118,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/node/4117105624"
+   },
+   {
+    "id": "fuel:node-13324218853",
+    "name": "HP",
+    "brand": "Hindustan Petroleum",
+    "near": "Chikkamagaluru",
+    "km_from_start": 218.4,
+    "lat": 13.55746,
+    "lon": 76.01188,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/node/13324218853"
+   },
+   {
+    "id": "fuel:way-1389079310",
+    "name": "Petrol pump",
+    "brand": null,
+    "near": "Chikkamagaluru",
+    "km_from_start": 221.3,
+    "lat": 13.53653,
+    "lon": 75.99156,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/way/1389079310"
+   },
+   {
+    "id": "fuel:node-3732393739",
+    "name": "HP Petrol station",
+    "brand": "HP",
+    "near": "Chikkamagaluru",
+    "km_from_start": 259.7,
+    "lat": 13.32494,
+    "lon": 75.77229,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/node/3732393739"
+   },
+   {
+    "id": "fuel:node-9162360058",
+    "name": "Petrol pump",
+    "brand": null,
+    "near": "Mullayanagiri",
+    "km_from_start": 293.8,
+    "lat": 13.3424,
+    "lon": 75.76702,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/node/9162360058"
+   },
+   {
+    "id": "fuel:node-2465384520",
+    "name": "HP Petrol Pump",
+    "brand": null,
+    "near": "Mullayanagiri",
+    "km_from_start": 298.8,
+    "lat": 13.30439,
+    "lon": 75.76516,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/node/2465384520"
+   },
+   {
+    "id": "fuel:node-2465387874",
+    "name": "Indian Oil",
+    "brand": "Indian Oil",
+    "near": "Mullayanagiri",
+    "km_from_start": 299.1,
+    "lat": 13.30255,
+    "lon": 75.76285,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/node/2465387874"
+   },
+   {
+    "id": "fuel:node-5300830363",
+    "name": "HP Petrol Bunk",
+    "brand": null,
+    "near": "Sringeri",
+    "km_from_start": 376.9,
+    "lat": 13.42352,
+    "lon": 75.26251,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/node/5300830363"
+   },
+   {
+    "id": "fuel:node-3700800615",
+    "name": "Mangalore Road Petrol Bunk",
+    "brand": null,
+    "near": "Sringeri",
+    "km_from_start": 377.6,
+    "lat": 13.42085,
+    "lon": 75.24754,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/node/3700800615"
+   },
+   {
+    "id": "fuel:node-5300830362",
+    "name": "Indian Oil Petrol Bunk",
+    "brand": "Indian Oil",
+    "near": "Sringeri",
+    "km_from_start": 377.6,
+    "lat": 13.42483,
+    "lon": 75.25578,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/node/5300830362"
+   },
+   {
+    "id": "fuel:node-5300827673",
+    "name": "Hindustan Petroleum",
+    "brand": null,
+    "near": "Sringeri",
+    "km_from_start": 377.7,
+    "lat": 13.425,
+    "lon": 75.25261,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/node/5300827673"
+   },
+   {
+    "id": "fuel:node-1818573128",
+    "name": "Indian Oil",
+    "brand": "Indian Oil",
+    "near": "Agumbe",
+    "km_from_start": 409.4,
+    "lat": 13.4897,
+    "lon": 75.06569,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/node/1818573128"
+   },
+   {
+    "id": "fuel:way-1280348173",
+    "name": "ಇಂಡಿಯನ್ ಆಯಿಲ್ ಪೆಟ್ರೋಲ್ ಬಂಕ್",
+    "brand": null,
+    "near": "Agumbe",
+    "km_from_start": 446.0,
+    "lat": 13.23604,
+    "lon": 74.9845,
+    "opening_hours": "Mo-Su,PH 06:00-22:00",
+    "osm_url": "https://www.openstreetmap.org/way/1280348173"
+   },
+   {
+    "id": "fuel:way-1280429479",
+    "name": "Petrol pump",
+    "brand": null,
+    "near": "Agumbe",
+    "km_from_start": 447.6,
+    "lat": 13.21628,
+    "lon": 74.97724,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/way/1280429479"
+   },
+   {
+    "id": "fuel:node-13597421935",
+    "name": "Nayara",
+    "brand": "Nayara",
+    "near": "Agumbe",
+    "km_from_start": 450.0,
+    "lat": 13.20804,
+    "lon": 74.98965,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/node/13597421935"
+   },
+   {
+    "id": "fuel:way-1280429473",
+    "name": "Pradeep Fuel Station",
+    "brand": "Hindustan Petroleum",
+    "near": "Agumbe",
+    "km_from_start": 450.4,
+    "lat": 13.20448,
+    "lon": 74.99581,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/way/1280429473"
+   },
+   {
+    "id": "fuel:node-13597405366",
+    "name": "Total Energies",
+    "brand": "Total Energies",
+    "near": "Agumbe",
+    "km_from_start": 451.0,
+    "lat": 13.199,
+    "lon": 74.99629,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/node/13597405366"
+   },
+   {
+    "id": "fuel:node-10171386848",
+    "name": "HP",
+    "brand": null,
+    "near": "Agumbe",
+    "km_from_start": 451.7,
+    "lat": 13.19336,
+    "lon": 74.99342,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/node/10171386848"
+   },
+   {
+    "id": "fuel:node-13597416144",
+    "name": "Indian Oil",
+    "brand": "Indian Oil",
+    "near": "Agumbe",
+    "km_from_start": 453.5,
+    "lat": 13.17831,
+    "lon": 74.99449,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/node/13597416144"
+   },
+   {
+    "id": "fuel:node-2467486884",
+    "name": "Manjunatheshwara Petrol / Gas Station",
+    "brand": "HP",
+    "near": "Agumbe",
+    "km_from_start": 466.5,
+    "lat": 13.06542,
+    "lon": 75.00667,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/node/2467486884"
+   },
+   {
+    "id": "fuel:node-1733357717",
+    "name": "Bharat Petroleum",
+    "brand": "Bharat Petroleum",
+    "near": "Agumbe",
+    "km_from_start": 467.2,
+    "lat": 13.06764,
+    "lon": 74.9938,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/node/1733357717"
+   },
+   {
+    "id": "fuel:way-1146427321",
+    "name": "Petrol pump",
+    "brand": null,
+    "near": "Agumbe",
+    "km_from_start": 467.2,
+    "lat": 13.0677,
+    "lon": 74.99386,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/way/1146427321"
+   },
+   {
+    "id": "fuel:node-2487714402",
+    "name": "Indian Oil",
+    "brand": "Indian Oil",
+    "near": "Agumbe",
+    "km_from_start": 500.1,
+    "lat": 12.88288,
+    "lon": 75.0259,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/node/2487714402"
+   },
+   {
+    "id": "fuel:node-1813680209",
+    "name": "Bharath Petroleum",
+    "brand": null,
+    "near": "Agumbe",
+    "km_from_start": 500.3,
+    "lat": 12.88243,
+    "lon": 75.02853,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/node/1813680209"
+   },
+   {
+    "id": "fuel:way-1491385475",
+    "name": "Indian Oil",
+    "brand": "Indian Oil",
+    "near": "Agumbe",
+    "km_from_start": 504.8,
+    "lat": 12.8607,
+    "lon": 75.05476,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/way/1491385475"
+   },
+   {
+    "id": "fuel:node-13586877515",
+    "name": "Indian Oil",
+    "brand": "Indian Oil",
+    "near": "Agumbe",
+    "km_from_start": 510.7,
+    "lat": 12.84119,
+    "lon": 75.09886,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/node/13586877515"
+   },
+   {
+    "id": "fuel:way-1491385466",
+    "name": "HP",
+    "brand": "HP",
+    "near": "Madikeri",
+    "km_from_start": 511.9,
+    "lat": 12.83963,
+    "lon": 75.10936,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/way/1491385466"
+   },
+   {
+    "id": "fuel:way-1368437653",
+    "name": "Petrol pump",
+    "brand": null,
+    "near": "Madikeri",
+    "km_from_start": 518.6,
+    "lat": 12.79978,
+    "lon": 75.14291,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/way/1368437653"
+   },
+   {
+    "id": "fuel:way-1533184576",
+    "name": "Indian Oil",
+    "brand": "Indian Oil",
+    "near": "Madikeri",
+    "km_from_start": 524.6,
+    "lat": 12.77295,
+    "lon": 75.18472,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/way/1533184576"
+   },
+   {
+    "id": "fuel:node-2467813978",
+    "name": "Puttur Gas Station",
+    "brand": "Elf Gas India Ltd.",
+    "near": "Madikeri",
+    "km_from_start": 524.7,
+    "lat": 12.7718,
+    "lon": 75.18496,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/node/2467813978"
+   },
+   {
+    "id": "fuel:way-1533419671",
+    "name": "Bharat Petroleum",
+    "brand": "Bharat Petroleum",
+    "near": "Madikeri",
+    "km_from_start": 525.2,
+    "lat": 12.76969,
+    "lon": 75.18879,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/way/1533419671"
+   },
+   {
+    "id": "fuel:way-1533419677",
+    "name": "Shell",
+    "brand": "Shell",
+    "near": "Madikeri",
+    "km_from_start": 525.4,
+    "lat": 12.76957,
+    "lon": 75.1907,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/way/1533419677"
+   },
+   {
+    "id": "fuel:node-2467802351",
+    "name": "K.V.Shenoy Petrol / Gas Station",
+    "brand": "HP",
+    "near": "Madikeri",
+    "km_from_start": 527.3,
+    "lat": 12.76075,
+    "lon": 75.20746,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/node/2467802351"
+   },
+   {
+    "id": "fuel:node-1988177222",
+    "name": "Petrol pump",
+    "brand": null,
+    "near": "Madikeri",
+    "km_from_start": 560.5,
+    "lat": 12.57494,
+    "lon": 75.38618,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/node/1988177222"
+   },
+   {
+    "id": "fuel:way-1368138166",
+    "name": "Petrol pump",
+    "brand": null,
+    "near": "Madikeri",
+    "km_from_start": 561.0,
+    "lat": 12.57155,
+    "lon": 75.3889,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/way/1368138166"
+   },
+   {
+    "id": "fuel:node-1987148328",
+    "name": "Petrol pump",
+    "brand": null,
+    "near": "Madikeri",
+    "km_from_start": 562.6,
+    "lat": 12.55787,
+    "lon": 75.39179,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/node/1987148328"
+   },
+   {
+    "id": "fuel:node-1662639260",
+    "name": "Petrol pump",
+    "brand": null,
+    "near": "Madikeri",
+    "km_from_start": 610.3,
+    "lat": 12.41785,
+    "lon": 75.74081,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/node/1662639260"
+   },
+   {
+    "id": "fuel:node-12535447334",
+    "name": "Bharat Petroleum",
+    "brand": "Bharat Petroleum",
+    "near": "Madikeri",
+    "km_from_start": 610.4,
+    "lat": 12.41825,
+    "lon": 75.74042,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/node/12535447334"
+   },
+   {
+    "id": "fuel:way-100577240",
+    "name": "East end service station",
+    "brand": "Hindustan Petroleum",
+    "near": "Madikeri",
+    "km_from_start": 611.5,
+    "lat": 12.41772,
+    "lon": 75.74423,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/way/100577240"
+   },
+   {
+    "id": "fuel:node-1160661671",
+    "name": "Kamadenu",
+    "brand": "Indian Oil",
+    "near": "Madikeri",
+    "km_from_start": 612.1,
+    "lat": 12.41535,
+    "lon": 75.74867,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/node/1160661671"
+   },
+   {
+    "id": "fuel:node-11868373693",
+    "name": "Indian Oil",
+    "brand": "Indian Oil",
+    "near": "Madikeri",
+    "km_from_start": 628.3,
+    "lat": 12.44161,
+    "lon": 75.85655,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/node/11868373693"
+   },
+   {
+    "id": "fuel:node-6630658828",
+    "name": "HP",
+    "brand": "Hindustan Petroleum",
+    "near": "Madikeri",
+    "km_from_start": 637.1,
+    "lat": 12.44606,
+    "lon": 75.92919,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/node/6630658828"
+   },
+   {
+    "id": "fuel:node-11868333563",
+    "name": "HP",
+    "brand": "Hindustan Petroleum",
+    "near": "Madikeri",
+    "km_from_start": 638.6,
+    "lat": 12.4492,
+    "lon": 75.94217,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/node/11868333563"
+   },
+   {
+    "id": "fuel:node-1662640092",
+    "name": "Indian Oil",
+    "brand": "Indian Oil",
+    "near": "Madikeri",
+    "km_from_start": 639.9,
+    "lat": 12.45473,
+    "lon": 75.95206,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/node/1662640092"
+   },
+   {
+    "id": "fuel:node-11248335785",
+    "name": "Indian Oil",
+    "brand": "Indian Oil",
+    "near": "Madikeri",
+    "km_from_start": 641.0,
+    "lat": 12.46186,
+    "lon": 75.96392,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/node/11248335785"
+   },
+   {
+    "id": "fuel:node-11248335784",
+    "name": "Bharat Petroleum",
+    "brand": "Bharat Petroleum",
+    "near": "Madikeri",
+    "km_from_start": 642.1,
+    "lat": 12.45059,
+    "lon": 75.96842,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/node/11248335784"
+   },
+   {
+    "id": "fuel:way-1234889532",
+    "name": "Moulya Fuel Station",
+    "brand": "Indian Oil",
+    "near": "Madikeri",
+    "km_from_start": 643.3,
+    "lat": 12.4448,
+    "lon": 75.97657,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/way/1234889532"
+   },
+   {
+    "id": "fuel:way-1234889527",
+    "name": "Hindustan Petroleum",
+    "brand": "Hindustan Petroleum",
+    "near": "Madikeri",
+    "km_from_start": 643.8,
+    "lat": 12.4437,
+    "lon": 75.98125,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/way/1234889527"
+   },
+   {
+    "id": "fuel:way-1234889471",
+    "name": "Indian Oil",
+    "brand": "Indian Oil",
+    "near": "Madikeri",
+    "km_from_start": 646.9,
+    "lat": 12.42447,
+    "lon": 75.9993,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/way/1234889471"
+   },
+   {
+    "id": "fuel:way-1234890851",
+    "name": "Hindustan Petroleum",
+    "brand": null,
+    "near": "Madikeri",
+    "km_from_start": 652.8,
+    "lat": 12.38397,
+    "lon": 76.03069,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/way/1234890851"
+   },
+   {
+    "id": "fuel:node-6630703191",
+    "name": "Indian Oil",
+    "brand": "Indian Oil",
+    "near": "Madikeri",
+    "km_from_start": 659.1,
+    "lat": 12.34832,
+    "lon": 76.07187,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/node/6630703191"
+   },
+   {
+    "id": "fuel:way-1234890848",
+    "name": "Indian Oil",
+    "brand": "Indian Oil",
+    "near": "Madikeri",
+    "km_from_start": 661.4,
+    "lat": 12.33645,
+    "lon": 76.08735,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/way/1234890848"
+   },
+   {
+    "id": "fuel:node-6630708686",
+    "name": "Bharatiya Petroleum",
+    "brand": null,
+    "near": "Madikeri",
+    "km_from_start": 662.5,
+    "lat": 12.33852,
+    "lon": 76.09773,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/node/6630708686"
+   },
+   {
+    "id": "fuel:way-1234891915",
+    "name": "Indian Oil",
+    "brand": "Indian Oil",
+    "near": "Madikeri",
+    "km_from_start": 662.9,
+    "lat": 12.33832,
+    "lon": 76.10101,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/way/1234891915"
+   },
+   {
+    "id": "fuel:node-11248334145",
+    "name": "HP",
+    "brand": "Hindustan Petroleum",
+    "near": "Madikeri",
+    "km_from_start": 663.4,
+    "lat": 12.33743,
+    "lon": 76.10494,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/node/11248334145"
+   },
+   {
+    "id": "fuel:way-1234891910",
+    "name": "HP",
+    "brand": "Hindustan Petroleum",
+    "near": "Madikeri",
+    "km_from_start": 664.7,
+    "lat": 12.33633,
+    "lon": 76.11711,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/way/1234891910"
+   },
+   {
+    "id": "fuel:node-11248323751",
+    "name": "Indian Oil",
+    "brand": "Indian Oil",
+    "near": "Madikeri",
+    "km_from_start": 668.3,
+    "lat": 12.33792,
+    "lon": 76.14795,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/node/11248323751"
+   },
+   {
+    "id": "fuel:node-6630720806",
+    "name": "Hindustan Petroleum",
+    "brand": "Hindustan Petroleum",
+    "near": "Madikeri",
+    "km_from_start": 670.2,
+    "lat": 12.33771,
+    "lon": 76.16385,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/node/6630720806"
+   },
+   {
+    "id": "fuel:node-11248279565",
+    "name": "Indian Oil",
+    "brand": "Indian Oil",
+    "near": "Madikeri",
+    "km_from_start": 685.4,
+    "lat": 12.3125,
+    "lon": 76.28721,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/node/11248279565"
+   },
+   {
+    "id": "fuel:node-2354824530",
+    "name": "Bharat Petroleum",
+    "brand": "Bharat Petroleum",
+    "near": "Madikeri",
+    "km_from_start": 685.5,
+    "lat": 12.31245,
+    "lon": 76.28842,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/node/2354824530"
+   },
+   {
+    "id": "fuel:node-2354824512",
+    "name": "Bharath Petrol bunk",
+    "brand": "Bharath",
+    "near": "Madikeri",
+    "km_from_start": 685.9,
+    "lat": 12.30868,
+    "lon": 76.29061,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/node/2354824512"
+   },
+   {
+    "id": "fuel:node-2354824542",
+    "name": "HP Petrol Bunk",
+    "brand": "Hindustan Petroleum",
+    "near": "Madikeri",
+    "km_from_start": 686.5,
+    "lat": 12.31001,
+    "lon": 76.29637,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/node/2354824542"
+   },
+   {
+    "id": "fuel:node-2353097440",
+    "name": "Indian Oil petrol Bunk",
+    "brand": "Indian Oil",
+    "near": "Madikeri",
+    "km_from_start": 686.6,
+    "lat": 12.30652,
+    "lon": 76.29654,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/node/2353097440"
+   },
+   {
+    "id": "fuel:node-2353058301",
+    "name": "HP",
+    "brand": "Hindustan Petroleum",
+    "near": "Madikeri",
+    "km_from_start": 686.8,
+    "lat": 12.30529,
+    "lon": 76.29854,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/node/2353058301"
+   },
+   {
+    "id": "fuel:way-1297644796",
+    "name": "Indian Oil",
+    "brand": "Indian Oil",
+    "near": "Madikeri",
+    "km_from_start": 687.9,
+    "lat": 12.30851,
+    "lon": 76.30841,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/way/1297644796"
+   },
+   {
+    "id": "fuel:node-13739213975",
+    "name": "Nayara",
+    "brand": "Nayara",
+    "near": "Madikeri",
+    "km_from_start": 688.9,
+    "lat": 12.30947,
+    "lon": 76.31711,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/node/13739213975"
+   },
+   {
+    "id": "fuel:node-6630859799",
+    "name": "Indian Oil",
+    "brand": "Indian Oil",
+    "near": "Madikeri",
+    "km_from_start": 692.9,
+    "lat": 12.32394,
+    "lon": 76.34851,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/node/6630859799"
+   },
+   {
+    "id": "fuel:node-8557604107",
+    "name": "HP",
+    "brand": null,
+    "near": "Madikeri",
+    "km_from_start": 693.9,
+    "lat": 12.32581,
+    "lon": 76.35741,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/node/8557604107"
+   },
+   {
+    "id": "fuel:node-13739213982",
+    "name": "Indian Oil",
+    "brand": "Indian Oil",
+    "near": "Madikeri",
+    "km_from_start": 695.3,
+    "lat": 12.32916,
+    "lon": 76.36908,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/node/13739213982"
+   },
+   {
+    "id": "fuel:way-1366275268",
+    "name": "Indian Oil",
+    "brand": "Indian Oil",
+    "near": "Madikeri",
+    "km_from_start": 703.0,
+    "lat": 12.34633,
+    "lon": 76.43383,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/way/1366275268"
+   },
+   {
+    "id": "fuel:way-1297649651",
+    "name": "Bharat Petroleum",
+    "brand": "Bharat Petroleum",
+    "near": "Madikeri",
+    "km_from_start": 705.8,
+    "lat": 12.33574,
+    "lon": 76.45597,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/way/1297649651"
+   },
+   {
+    "id": "fuel:node-3701410617",
+    "name": "HP",
+    "brand": null,
+    "near": "Madikeri",
+    "km_from_start": 707.1,
+    "lat": 12.33178,
+    "lon": 76.46676,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/node/3701410617"
+   },
+   {
+    "id": "fuel:node-3701434351",
+    "name": "Indian Oil",
+    "brand": "Indian Oil",
+    "near": "Madikeri",
+    "km_from_start": 716.1,
+    "lat": 12.35981,
+    "lon": 76.53591,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/node/3701434351"
+   },
+   {
+    "id": "fuel:node-11248332959",
+    "name": "HP",
+    "brand": "Hindustan Petroleum",
+    "near": "Madikeri",
+    "km_from_start": 716.4,
+    "lat": 12.35977,
+    "lon": 76.53792,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/node/11248332959"
+   },
+   {
+    "id": "fuel:node-3702873768",
+    "name": "Indian Oil",
+    "brand": "Indian Oil",
+    "near": "Madikeri",
+    "km_from_start": 721.0,
+    "lat": 12.34571,
+    "lon": 76.57406,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/node/3702873768"
+   },
+   {
+    "id": "fuel:node-13739214650",
+    "name": "Indian Oil",
+    "brand": "Indian Oil",
+    "near": "Madikeri",
+    "km_from_start": 721.3,
+    "lat": 12.34972,
+    "lon": 76.57927,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/node/13739214650"
+   },
+   {
+    "id": "fuel:node-13739214648",
+    "name": "Bharat Petroleum",
+    "brand": "Bharat Petroleum",
+    "near": "Madikeri",
+    "km_from_start": 721.4,
+    "lat": 12.34842,
+    "lon": 76.57982,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/node/13739214648"
+   },
+   {
+    "id": "fuel:node-13739214649",
+    "name": "Indian Oil",
+    "brand": "Indian Oil",
+    "near": "Madikeri",
+    "km_from_start": 721.5,
+    "lat": 12.34709,
+    "lon": 76.58016,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/node/13739214649"
+   },
+   {
+    "id": "fuel:node-13739214644",
+    "name": "Bharat Petroleum",
+    "brand": "Bharat Petroleum",
+    "near": "Madikeri",
+    "km_from_start": 723.6,
+    "lat": 12.33448,
+    "lon": 76.59366,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/node/13739214644"
+   },
+   {
+    "id": "fuel:node-3702873773",
+    "name": "HP",
+    "brand": null,
+    "near": "Madikeri",
+    "km_from_start": 724.0,
+    "lat": 12.33328,
+    "lon": 76.59694,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/node/3702873773"
+   },
+   {
+    "id": "fuel:way-1421131521",
+    "name": "Petrol pump",
+    "brand": null,
+    "near": "Madikeri",
+    "km_from_start": 724.1,
+    "lat": 12.32666,
+    "lon": 76.60983,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/way/1421131521"
+   },
+   {
+    "id": "fuel:way-1421131523",
+    "name": "Shell",
+    "brand": null,
+    "near": "Madikeri",
+    "km_from_start": 724.1,
+    "lat": 12.32788,
+    "lon": 76.60831,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/way/1421131523"
+   },
+   {
+    "id": "fuel:way-1421131887",
+    "name": "Aishwarya Petrol Bunk",
+    "brand": "Indian Oil",
+    "near": "Madikeri",
+    "km_from_start": 724.1,
+    "lat": 12.32386,
+    "lon": 76.61301,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/way/1421131887"
+   },
+   {
+    "id": "fuel:node-1645792670",
+    "name": "Hindustan Petrol",
+    "brand": "Hindustan Petrol",
+    "near": "Madikeri",
+    "km_from_start": 728.1,
+    "lat": 12.33897,
+    "lon": 76.61646,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/node/1645792670"
+   },
+   {
+    "id": "fuel:way-1334830231",
+    "name": "Bharat Petroleum",
+    "brand": "Bharat Petroleum",
+    "near": "Madikeri",
+    "km_from_start": 730.6,
+    "lat": 12.3503,
+    "lon": 76.63893,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/way/1334830231"
+   },
+   {
+    "id": "fuel:way-1372040881",
+    "name": "Petrol pump",
+    "brand": null,
+    "near": "Madikeri",
+    "km_from_start": 732.7,
+    "lat": 12.35027,
+    "lon": 76.65729,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/way/1372040881"
+   },
+   {
+    "id": "fuel:way-1198020333",
+    "name": "Hindustan Petrol",
+    "brand": "Hindustan Petrol",
+    "near": "Madikeri",
+    "km_from_start": 733.8,
+    "lat": 12.35706,
+    "lon": 76.66139,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/way/1198020333"
+   },
+   {
+    "id": "fuel:way-1198020334",
+    "name": "Indian Oil",
+    "brand": "Indian Oil",
+    "near": "Madikeri",
+    "km_from_start": 734.6,
+    "lat": 12.36332,
+    "lon": 76.6612,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/way/1198020334"
+   },
+   {
+    "id": "fuel:node-11868267640",
+    "name": "Bharat Petroleum",
+    "brand": "Bharat Petroleum",
+    "near": "Madikeri",
+    "km_from_start": 734.9,
+    "lat": 12.36642,
+    "lon": 76.66219,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/node/11868267640"
+   },
+   {
+    "id": "fuel:way-1198020335",
+    "name": "Bharath Petroleum",
+    "brand": "Bharath Petroleum",
+    "near": "Madikeri",
+    "km_from_start": 735.1,
+    "lat": 12.36759,
+    "lon": 76.66143,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/way/1198020335"
+   },
+   {
+    "id": "fuel:way-1198020336",
+    "name": "Indian Oil",
+    "brand": "Indian Oil",
+    "near": "Madikeri",
+    "km_from_start": 735.7,
+    "lat": 12.37218,
+    "lon": 76.66359,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/way/1198020336"
+   },
+   {
+    "id": "fuel:node-380048989",
+    "name": "Sri Prabhudeva Service Station",
+    "brand": "Indian Oil",
+    "near": "Madikeri",
+    "km_from_start": 738.1,
+    "lat": 12.39275,
+    "lon": 76.66696,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/node/380048989"
+   },
+   {
+    "id": "fuel:node-3454698799",
+    "name": "Indian Oil",
+    "brand": "Indian Oil",
+    "near": "Madikeri",
+    "km_from_start": 741.3,
+    "lat": 12.41662,
+    "lon": 76.68516,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/node/3454698799"
+   },
+   {
+    "id": "fuel:node-3668052845",
+    "name": "Bharat Petroleum",
+    "brand": "Bharat Petroleum",
+    "near": "Madikeri",
+    "km_from_start": 743.8,
+    "lat": 12.4279,
+    "lon": 76.69639,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/node/3668052845"
+   },
+   {
+    "id": "fuel:node-11248353141",
+    "name": "HP",
+    "brand": "Hindustan Petroleum",
+    "near": "Madikeri",
+    "km_from_start": 744.0,
+    "lat": 12.42923,
+    "lon": 76.69775,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/node/11248353141"
+   },
+   {
+    "id": "fuel:way-1423630846",
+    "name": "Petrol pump",
+    "brand": null,
+    "near": "Madikeri",
+    "km_from_start": 744.2,
+    "lat": 12.42327,
+    "lon": 76.70716,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/way/1423630846"
+   },
+   {
+    "id": "fuel:node-6630960133",
+    "name": "Indian Oil",
+    "brand": "Indian Oil",
+    "near": "Madikeri",
+    "km_from_start": 744.6,
+    "lat": 12.43075,
+    "lon": 76.70304,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/node/6630960133"
+   },
+   {
+    "id": "fuel:node-11248353145",
+    "name": "Indian Oil",
+    "brand": "Indian Oil",
+    "near": "Bengaluru",
+    "km_from_start": 747.3,
+    "lat": 12.44173,
+    "lon": 76.72681,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/node/11248353145"
+   },
+   {
+    "id": "fuel:node-11248309830",
+    "name": "Indian Oil",
+    "brand": "Indian Oil",
+    "near": "Bengaluru",
+    "km_from_start": 752.9,
+    "lat": 12.47325,
+    "lon": 76.76234,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/node/11248309830"
+   },
+   {
+    "id": "fuel:node-11248346697",
+    "name": "Indian Oil",
+    "brand": "Indian Oil",
+    "near": "Bengaluru",
+    "km_from_start": 759.8,
+    "lat": 12.49817,
+    "lon": 76.81557,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/node/11248346697"
+   },
+   {
+    "id": "fuel:node-4067978666",
+    "name": "Hindustan Petroleum",
+    "brand": "Hindustan Petroleum",
+    "near": "Bengaluru",
+    "km_from_start": 760.8,
+    "lat": 12.50071,
+    "lon": 76.82374,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/node/4067978666"
+   },
+   {
+    "id": "fuel:node-3668052843",
+    "name": "Bharat Petroleum",
+    "brand": "Bharat Petroleum",
+    "near": "Bengaluru",
+    "km_from_start": 761.2,
+    "lat": 12.5031,
+    "lon": 76.82712,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/node/3668052843"
+   },
+   {
+    "id": "fuel:node-3668052840",
+    "name": "HP",
+    "brand": "HP",
+    "near": "Bengaluru",
+    "km_from_start": 765.9,
+    "lat": 12.52118,
+    "lon": 76.8664,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/node/3668052840"
+   },
+   {
+    "id": "fuel:node-4067978667",
+    "name": "Bharat Petroleum",
+    "brand": "Bharat Petroleum",
+    "near": "Bengaluru",
+    "km_from_start": 766.1,
+    "lat": 12.5222,
+    "lon": 76.86942,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/node/4067978667"
+   },
+   {
+    "id": "fuel:node-3668052837",
+    "name": "Indian Oil",
+    "brand": "Indian Oil",
+    "near": "Bengaluru",
+    "km_from_start": 766.5,
+    "lat": 12.52458,
+    "lon": 76.87276,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/node/3668052837"
+   },
+   {
+    "id": "fuel:node-3668052830",
+    "name": "Indian Oil",
+    "brand": "Indian Oil",
+    "near": "Bengaluru",
+    "km_from_start": 770.4,
+    "lat": 12.52752,
+    "lon": 76.88761,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/node/3668052830"
+   },
+   {
+    "id": "fuel:node-3668052829",
+    "name": "HP",
+    "brand": "HP",
+    "near": "Bengaluru",
+    "km_from_start": 770.7,
+    "lat": 12.52765,
+    "lon": 76.89031,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/node/3668052829"
+   },
+   {
+    "id": "fuel:node-3668052828",
+    "name": "Hp Petrol Bunk",
+    "brand": null,
+    "near": "Bengaluru",
+    "km_from_start": 770.8,
+    "lat": 12.52771,
+    "lon": 76.89089,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/node/3668052828"
+   },
+   {
+    "id": "fuel:node-6779117740",
+    "name": "HP Petrol station",
+    "brand": null,
+    "near": "Bengaluru",
+    "km_from_start": 772.2,
+    "lat": 12.52871,
+    "lon": 76.90373,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/node/6779117740"
+   },
+   {
+    "id": "fuel:node-6779111097",
+    "name": "Hp Petrol Pump",
+    "brand": null,
+    "near": "Bengaluru",
+    "km_from_start": 772.3,
+    "lat": 12.52926,
+    "lon": 76.9047,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/node/6779111097"
+   },
+   {
+    "id": "fuel:node-6779120597",
+    "name": "Indian Oil Petrol Bunk",
+    "brand": "Indian Oil",
+    "near": "Bengaluru",
+    "km_from_start": 772.3,
+    "lat": 12.52865,
+    "lon": 76.90426,
+    "opening_hours": "Mo-Su 06:00-12:00",
+    "osm_url": "https://www.openstreetmap.org/node/6779120597"
+   },
+   {
+    "id": "fuel:node-6779120598",
+    "name": "Indian Oil",
+    "brand": "Indian Oil",
+    "near": "Bengaluru",
+    "km_from_start": 772.3,
+    "lat": 12.52854,
+    "lon": 76.90415,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/node/6779120598"
+   },
+   {
+    "id": "fuel:node-6779122506",
+    "name": "Indian Oil",
+    "brand": "Indian Oil",
+    "near": "Bengaluru",
+    "km_from_start": 772.3,
+    "lat": 12.52853,
+    "lon": 76.90412,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/node/6779122506"
+   },
+   {
+    "id": "fuel:node-6779129577",
+    "name": "Indian Oil Petrol Pump",
+    "brand": null,
+    "near": "Bengaluru",
+    "km_from_start": 772.3,
+    "lat": 12.52813,
+    "lon": 76.90391,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/node/6779129577"
+   },
+   {
+    "id": "fuel:node-4067978668",
+    "name": "Hindustan Petroleum",
+    "brand": "Hindustan Petroleum",
+    "near": "Bengaluru",
+    "km_from_start": 773.0,
+    "lat": 12.53225,
+    "lon": 76.91014,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/node/4067978668"
+   },
+   {
+    "id": "fuel:node-4067978669",
+    "name": "Indian Oil",
+    "brand": "Indian Oil",
+    "near": "Bengaluru",
+    "km_from_start": 773.6,
+    "lat": 12.53628,
+    "lon": 76.91533,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/node/4067978669"
+   },
+   {
+    "id": "fuel:way-399605386",
+    "name": "Panchalingeshwara Petrol Bunk",
+    "brand": null,
+    "near": "Bengaluru",
+    "km_from_start": 774.3,
+    "lat": 12.5422,
+    "lon": 76.92158,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/way/399605386"
+   },
+   {
+    "id": "fuel:node-2467736617",
+    "name": "HP",
+    "brand": "HP",
+    "near": "Bengaluru",
+    "km_from_start": 775.6,
+    "lat": 12.5461,
+    "lon": 76.93277,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/node/2467736617"
+   },
+   {
+    "id": "fuel:node-11757447377",
+    "name": "Reliance",
+    "brand": null,
+    "near": "Bengaluru",
+    "km_from_start": 775.6,
+    "lat": 12.54661,
+    "lon": 76.93263,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/node/11757447377"
+   },
+   {
+    "id": "fuel:node-4067968082",
+    "name": "Indian Oil",
+    "brand": "Indian Oil",
+    "near": "Bengaluru",
+    "km_from_start": 780.7,
+    "lat": 12.55675,
+    "lon": 76.97518,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/node/4067968082"
+   },
+   {
+    "id": "fuel:node-3965809902",
+    "name": "Bharat Petroleum",
+    "brand": "Bharat Petroleum",
+    "near": "Bengaluru",
+    "km_from_start": 781.4,
+    "lat": 12.55878,
+    "lon": 76.98046,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/node/3965809902"
+   },
+   {
+    "id": "fuel:node-11248323627",
+    "name": "HP",
+    "brand": "Hindustan Petroleum",
+    "near": "Bengaluru",
+    "km_from_start": 785.1,
+    "lat": 12.57186,
+    "lon": 77.00972,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/node/11248323627"
+   },
+   {
+    "id": "fuel:way-1200332455",
+    "name": "Indian Oil",
+    "brand": "Indian Oil",
+    "near": "Bengaluru",
+    "km_from_start": 785.3,
+    "lat": 12.57189,
+    "lon": 77.0119,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/way/1200332455"
+   },
+   {
+    "id": "fuel:way-1046569127",
+    "name": "MRPL Petrol",
+    "brand": "MRPL Petrol",
+    "near": "Bengaluru",
+    "km_from_start": 789.7,
+    "lat": 12.5903,
+    "lon": 77.04558,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/way/1046569127"
+   },
+   {
+    "id": "fuel:node-9624319300",
+    "name": "Reliance Petrol",
+    "brand": "Reliance Petrol",
+    "near": "Bengaluru",
+    "km_from_start": 790.8,
+    "lat": 12.59779,
+    "lon": 77.05295,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/node/9624319300"
+   },
+   {
+    "id": "fuel:way-1046569126",
+    "name": "Bharat Petroleum",
+    "brand": "Bharat Petroleum",
+    "near": "Bengaluru",
+    "km_from_start": 791.1,
+    "lat": 12.60674,
+    "lon": 77.0523,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/way/1046569126"
+   },
+   {
+    "id": "fuel:node-3308665580",
+    "name": "Petrol pump",
+    "brand": null,
+    "near": "Bengaluru",
+    "km_from_start": 791.2,
+    "lat": 12.60546,
+    "lon": 77.05346,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/node/3308665580"
+   },
+   {
+    "id": "fuel:node-9624319294",
+    "name": "Hindustan Petroleum",
+    "brand": "Hindustan Petroleum",
+    "near": "Bengaluru",
+    "km_from_start": 791.3,
+    "lat": 12.60786,
+    "lon": 77.05363,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/node/9624319294"
+   },
+   {
+    "id": "fuel:node-9624319291",
+    "name": "Indian Oil",
+    "brand": "Indian Oil",
+    "near": "Bengaluru",
+    "km_from_start": 792.1,
+    "lat": 12.61337,
+    "lon": 77.05966,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/node/9624319291"
+   },
+   {
+    "id": "fuel:node-4067968083",
+    "name": "Hindustan Petroleum",
+    "brand": "Hindustan Petroleum",
+    "near": "Bengaluru",
+    "km_from_start": 794.3,
+    "lat": 12.61358,
+    "lon": 77.0746,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/node/4067968083"
+   },
+   {
+    "id": "fuel:relation-12740019",
+    "name": "Petrol pump",
+    "brand": null,
+    "near": "Bengaluru",
+    "km_from_start": 794.3,
+    "lat": 12.61352,
+    "lon": 77.07459,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/relation/12740019"
+   },
+   {
+    "id": "fuel:node-9624319285",
+    "name": "Bharat Petroleum",
+    "brand": "Bharat Petroleum",
+    "near": "Bengaluru",
+    "km_from_start": 797.0,
+    "lat": 12.62381,
+    "lon": 77.09758,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/node/9624319285"
+   },
+   {
+    "id": "fuel:node-1662668936",
+    "name": "Bharat Petroleum",
+    "brand": "Bharat Petroleum",
+    "near": "Bengaluru",
+    "km_from_start": 799.6,
+    "lat": 12.63199,
+    "lon": 77.11859,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/node/1662668936"
+   },
+   {
+    "id": "fuel:node-11248335796",
+    "name": "Nayara",
+    "brand": "Nayara",
+    "near": "Bengaluru",
+    "km_from_start": 804.2,
+    "lat": 12.64297,
+    "lon": 77.15689,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/node/11248335796"
+   },
+   {
+    "id": "fuel:way-705766015",
+    "name": "Bharath Petroleum",
+    "brand": "Bharath Petroleum",
+    "near": "Bengaluru",
+    "km_from_start": 806.8,
+    "lat": 12.64926,
+    "lon": 77.18241,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/way/705766015"
+   },
+   {
+    "id": "fuel:node-2745972084",
+    "name": "Petrol pump",
+    "brand": null,
+    "near": "Bengaluru",
+    "km_from_start": 807.9,
+    "lat": 12.64849,
+    "lon": 77.188,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/node/2745972084"
+   },
+   {
+    "id": "fuel:way-591891592",
+    "name": "HP Petrol Pump",
+    "brand": "HP",
+    "near": "Bengaluru",
+    "km_from_start": 807.9,
+    "lat": 12.64847,
+    "lon": 77.18802,
+    "opening_hours": "24/7",
+    "osm_url": "https://www.openstreetmap.org/way/591891592"
+   },
+   {
+    "id": "fuel:way-705761908",
+    "name": "Hindustan Petroleum",
+    "brand": "Hindustan Petroleum",
+    "near": "Bengaluru",
+    "km_from_start": 831.3,
+    "lat": 12.76508,
+    "lon": 77.33022,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/way/705761908"
+   },
+   {
+    "id": "fuel:way-1459250606",
+    "name": "Petrol pump",
+    "brand": null,
+    "near": "Bengaluru",
+    "km_from_start": 835.0,
+    "lat": 12.77666,
+    "lon": 77.36039,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/way/1459250606"
+   },
+   {
+    "id": "fuel:way-705761906",
+    "name": "Petrol pump",
+    "brand": null,
+    "near": "Bengaluru",
+    "km_from_start": 835.5,
+    "lat": 12.77856,
+    "lon": 77.36399,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/way/705761906"
+   },
+   {
+    "id": "fuel:way-1239595245",
+    "name": "Bharat Petroleum",
+    "brand": "Bharat Petroleum",
+    "near": "Bengaluru",
+    "km_from_start": 837.5,
+    "lat": 12.7908,
+    "lon": 77.37794,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/way/1239595245"
+   },
+   {
+    "id": "fuel:way-705761903",
+    "name": "Indian Oil",
+    "brand": "Indian Oil",
+    "near": "Bengaluru",
+    "km_from_start": 838.1,
+    "lat": 12.79552,
+    "lon": 77.38303,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/way/705761903"
+   },
+   {
+    "id": "fuel:node-6631455139",
+    "name": "Essar Fuels",
+    "brand": null,
+    "near": "Bengaluru",
+    "km_from_start": 841.8,
+    "lat": 12.80311,
+    "lon": 77.39767,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/node/6631455139"
+   },
+   {
+    "id": "fuel:way-230945040",
+    "name": "Indian Oil Corporation",
+    "brand": "Indian Oil Corporation",
+    "near": "Bengaluru",
+    "km_from_start": 843.3,
+    "lat": 12.81606,
+    "lon": 77.40848,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/way/230945040"
+   },
+   {
+    "id": "fuel:way-1200857627",
+    "name": "Hindustan Petroleum",
+    "brand": "Hindustan Petroleum",
+    "near": "Bengaluru",
+    "km_from_start": 844.4,
+    "lat": 12.82691,
+    "lon": 77.41229,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/way/1200857627"
+   },
+   {
+    "id": "fuel:way-1200332473",
+    "name": "Indian Oil Fuel Station",
+    "brand": "Indian Oil",
+    "near": "Bengaluru",
+    "km_from_start": 845.2,
+    "lat": 12.83332,
+    "lon": 77.41446,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/way/1200332473"
+   },
+   {
+    "id": "fuel:way-705761879",
+    "name": "Bharat Petroleum",
+    "brand": "Bharat Petroleum",
+    "near": "Bengaluru",
+    "km_from_start": 846.3,
+    "lat": 12.84093,
+    "lon": 77.41985,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/way/705761879"
+   },
+   {
+    "id": "fuel:way-1050574684",
+    "name": "Indian Oil",
+    "brand": "Indian Oil",
+    "near": "Bengaluru",
+    "km_from_start": 846.5,
+    "lat": 12.8428,
+    "lon": 77.42136,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/way/1050574684"
+   },
+   {
+    "id": "fuel:way-1050574683",
+    "name": "Indian Oil",
+    "brand": "Indian Oil",
+    "near": "Bengaluru",
+    "km_from_start": 846.8,
+    "lat": 12.84545,
+    "lon": 77.42153,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/way/1050574683"
+   },
+   {
+    "id": "fuel:way-1347465113",
+    "name": "Petrol pump",
+    "brand": null,
+    "near": "Bengaluru",
+    "km_from_start": 847.5,
+    "lat": 12.85558,
+    "lon": 77.41454,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/way/1347465113"
+   },
+   {
+    "id": "fuel:way-1257185815",
+    "name": "Hindustan Petroleum",
+    "brand": "Hindustan Petroleum",
+    "near": "Bengaluru",
+    "km_from_start": 850.4,
+    "lat": 12.87053,
+    "lon": 77.43905,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/way/1257185815"
+   },
+   {
+    "id": "fuel:node-12507515761",
+    "name": "Nayara",
+    "brand": "Nayara",
+    "near": "Bengaluru",
+    "km_from_start": 851.1,
+    "lat": 12.86825,
+    "lon": 77.45175,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/node/12507515761"
+   },
+   {
+    "id": "fuel:way-1327758223",
+    "name": "GAIL",
+    "brand": "GAIL",
+    "near": "Bengaluru",
+    "km_from_start": 852.0,
+    "lat": 12.88928,
+    "lon": 77.43788,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/way/1327758223"
+   },
+   {
+    "id": "fuel:way-1050574679",
+    "name": "Hindustan Petroleum",
+    "brand": "Hindustan Petroleum",
+    "near": "Bengaluru",
+    "km_from_start": 852.1,
+    "lat": 12.88184,
+    "lon": 77.448,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/way/1050574679"
+   },
+   {
+    "id": "fuel:way-705755085",
+    "name": "Indian Oil",
+    "brand": "Indian Oil",
+    "near": "Bengaluru",
+    "km_from_start": 854.0,
+    "lat": 12.89378,
+    "lon": 77.45941,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/way/705755085"
+   },
+   {
+    "id": "fuel:way-1264388230",
+    "name": "Hindustan Petroleum",
+    "brand": "Hindustan Petroleum",
+    "near": "Bengaluru",
+    "km_from_start": 854.8,
+    "lat": 12.89857,
+    "lon": 77.46457,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/way/1264388230"
+   },
+   {
+    "id": "fuel:way-1050574668",
+    "name": "Essar",
+    "brand": "Essar",
+    "near": "Bengaluru",
+    "km_from_start": 855.4,
+    "lat": 12.90184,
+    "lon": 77.46922,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/way/1050574668"
+   },
+   {
+    "id": "fuel:way-1364170752",
+    "name": "Shell",
+    "brand": "Shell",
+    "near": "Bengaluru",
+    "km_from_start": 856.1,
+    "lat": 12.90698,
+    "lon": 77.47311,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/way/1364170752"
+   },
+   {
+    "id": "fuel:node-14086195977",
+    "name": "Indian Oil",
+    "brand": "Indian Oil",
+    "near": "Bengaluru",
+    "km_from_start": 857.4,
+    "lat": 12.90092,
+    "lon": 77.48757,
+    "opening_hours": "24 hours",
+    "osm_url": "https://www.openstreetmap.org/node/14086195977"
+   },
+   {
+    "id": "fuel:node-14087131396",
+    "name": "Essay Petroleum Auto LPG",
+    "brand": "Essay Petroleum",
+    "near": "Bengaluru",
+    "km_from_start": 857.6,
+    "lat": 12.908,
+    "lon": 77.48816,
+    "opening_hours": "Mo-Su 05:00-23:00",
+    "osm_url": "https://www.openstreetmap.org/node/14087131396"
+   },
+   {
+    "id": "fuel:way-347572849",
+    "name": "Bharat Petroleum",
+    "brand": "Bharat Petroleum",
+    "near": "Bengaluru",
+    "km_from_start": 857.6,
+    "lat": 12.91218,
+    "lon": 77.48472,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/way/347572849"
+   },
+   {
+    "id": "fuel:way-1365489282",
+    "name": "Petrol pump",
+    "brand": null,
+    "near": "Bengaluru",
+    "km_from_start": 857.6,
+    "lat": 12.90853,
+    "lon": 77.48752,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/way/1365489282"
+   },
+   {
+    "id": "fuel:way-347532410",
+    "name": "Shell",
+    "brand": "Shell",
+    "near": "Bengaluru",
+    "km_from_start": 857.7,
+    "lat": 12.91571,
+    "lon": 77.48177,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/way/347532410"
+   },
+   {
+    "id": "fuel:way-347572801",
+    "name": "Indian Oil",
+    "brand": "Indian Oil",
+    "near": "Bengaluru",
+    "km_from_start": 857.7,
+    "lat": 12.91521,
+    "lon": 77.48209,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/way/347572801"
+   },
+   {
+    "id": "fuel:way-437563236",
+    "name": "Madhu Petrol / Gas Station",
+    "brand": "Indianoil",
+    "near": "Bengaluru",
+    "km_from_start": 857.8,
+    "lat": 12.91273,
+    "lon": 77.4857,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/way/437563236"
+   },
+   {
+    "id": "fuel:node-9192964457",
+    "name": "Nayara",
+    "brand": "Nayara",
+    "near": "Bengaluru",
+    "km_from_start": 858.4,
+    "lat": 12.9202,
+    "lon": 77.48561,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/node/9192964457"
+   },
+   {
+    "id": "fuel:way-727261796",
+    "name": "Reliance",
+    "brand": "Reliance",
+    "near": "Bengaluru",
+    "km_from_start": 860.1,
+    "lat": 12.92596,
+    "lon": 77.50077,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/way/727261796"
+   },
+   {
+    "id": "fuel:way-727261795",
+    "name": "Indian Oil",
+    "brand": "Indian Oil",
+    "near": "Bengaluru",
+    "km_from_start": 860.2,
+    "lat": 12.92643,
+    "lon": 77.50131,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/way/727261795"
+   },
+   {
+    "id": "fuel:node-10218082461",
+    "name": "Bharat Petroleum",
+    "brand": "Bharat Petroleum",
+    "near": "Bengaluru",
+    "km_from_start": 860.5,
+    "lat": 12.92858,
+    "lon": 77.5029,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/node/10218082461"
+   },
+   {
+    "id": "fuel:node-12145547063",
+    "name": "HP",
+    "brand": "Hindustan Petroleum",
+    "near": "Bengaluru",
+    "km_from_start": 860.6,
+    "lat": 12.92943,
+    "lon": 77.50399,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/node/12145547063"
+   },
+   {
+    "id": "fuel:way-1286468238",
+    "name": "Hindustan Petroleum",
+    "brand": "Hindustan Petroleum",
+    "near": "Bengaluru",
+    "km_from_start": 860.6,
+    "lat": 12.92956,
+    "lon": 77.50392,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/way/1286468238"
+   },
+   {
+    "id": "fuel:way-1286468237",
+    "name": "Nayara",
+    "brand": "Nayara",
+    "near": "Bengaluru",
+    "km_from_start": 860.7,
+    "lat": 12.92972,
+    "lon": 77.50459,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/way/1286468237"
+   },
+   {
+    "id": "fuel:way-1265721171",
+    "name": "Shell",
+    "brand": "Shell",
+    "near": "Bengaluru",
+    "km_from_start": 861.3,
+    "lat": 12.92708,
+    "lon": 77.51466,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/way/1265721171"
+   },
+   {
+    "id": "fuel:way-1265721147",
+    "name": "Bharat Petroleum",
+    "brand": "Bharat Petroleum",
+    "near": "Bengaluru",
+    "km_from_start": 861.5,
+    "lat": 12.92932,
+    "lon": 77.51419,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/way/1265721147"
+   },
+   {
+    "id": "fuel:way-1427963451",
+    "name": "Total Gaz",
+    "brand": null,
+    "near": "Bengaluru",
+    "km_from_start": 862.1,
+    "lat": 12.93246,
+    "lon": 77.5162,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/way/1427963451"
+   },
+   {
+    "id": "fuel:node-6952164918",
+    "name": "Go Gas",
+    "brand": "Go Gas",
+    "near": "Bengaluru",
+    "km_from_start": 862.2,
+    "lat": 12.93646,
+    "lon": 77.51591,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/node/6952164918"
+   },
+   {
+    "id": "fuel:way-1257194251",
+    "name": "HP",
+    "brand": "Hindustan Petroleum",
+    "near": "Bengaluru",
+    "km_from_start": 862.2,
+    "lat": 12.9359,
+    "lon": 77.51552,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/way/1257194251"
+   },
+   {
+    "id": "fuel:way-1265721190",
+    "name": "Indian Oil",
+    "brand": "Indian Oil",
+    "near": "Bengaluru",
+    "km_from_start": 862.2,
+    "lat": 12.9327,
+    "lon": 77.51655,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/way/1265721190"
+   },
+   {
+    "id": "fuel:way-1265721216",
+    "name": "Indian Oil",
+    "brand": "Indian Oil",
+    "near": "Bengaluru",
+    "km_from_start": 862.9,
+    "lat": 12.93836,
+    "lon": 77.52137,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/way/1265721216"
+   },
+   {
+    "id": "fuel:way-1265721214",
+    "name": "Indian Oil",
+    "brand": "Indian Oil",
+    "near": "Bengaluru",
+    "km_from_start": 863.0,
+    "lat": 12.93818,
+    "lon": 77.52221,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/way/1265721214"
+   },
+   {
+    "id": "fuel:node-1474854798",
+    "name": "Indian Oil Petrol Pump",
+    "brand": "Indian Oil",
+    "near": "Bengaluru",
+    "km_from_start": 863.2,
+    "lat": 12.93972,
+    "lon": 77.52388,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/node/1474854798"
+   },
+   {
+    "id": "fuel:way-1217250856",
+    "name": "Go Gas",
+    "brand": "Go Gas",
+    "near": "Bengaluru",
+    "km_from_start": 863.9,
+    "lat": 12.93767,
+    "lon": 77.53417,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/way/1217250856"
+   },
+   {
+    "id": "fuel:way-1559316926",
+    "name": "Petrol pump",
+    "brand": null,
+    "near": "Bengaluru",
+    "km_from_start": 863.9,
+    "lat": 12.94849,
+    "lon": 77.52298,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/way/1559316926"
+   },
+   {
+    "id": "fuel:node-1433646771",
+    "name": "Sri Mahadeshwara Filling Station",
+    "brand": "Hindustan Petroleum",
+    "near": "Bengaluru",
+    "km_from_start": 864.1,
+    "lat": 12.93237,
+    "lon": 77.54142,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/node/1433646771"
+   },
+   {
+    "id": "fuel:way-1217250869",
+    "name": "Total Gas",
+    "brand": "Total",
+    "near": "Bengaluru",
+    "km_from_start": 864.1,
+    "lat": 12.94422,
+    "lon": 77.53035,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/way/1217250869"
+   },
+   {
+    "id": "fuel:way-1291004769",
+    "name": "Kalabhyraveshwara Service Station",
+    "brand": "Indian Oil",
+    "near": "Bengaluru",
+    "km_from_start": 864.1,
+    "lat": 12.93422,
+    "lon": 77.53929,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/way/1291004769"
+   },
+   {
+    "id": "fuel:way-1443180034",
+    "name": "Petrol pump",
+    "brand": null,
+    "near": "Bengaluru",
+    "km_from_start": 864.1,
+    "lat": 12.94438,
+    "lon": 77.52945,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/way/1443180034"
+   },
+   {
+    "id": "fuel:way-1443180035",
+    "name": "HP",
+    "brand": "Hindustan Petroleum",
+    "near": "Bengaluru",
+    "km_from_start": 864.1,
+    "lat": 12.94412,
+    "lon": 77.52955,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/way/1443180035"
+   },
+   {
+    "id": "fuel:way-1443180028",
+    "name": "Petrol pump",
+    "brand": null,
+    "near": "Bengaluru",
+    "km_from_start": 864.5,
+    "lat": 12.94683,
+    "lon": 77.53264,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/way/1443180028"
+   },
+   {
+    "id": "fuel:node-1474854801",
+    "name": "Shell",
+    "brand": "Shell",
+    "near": "Bengaluru",
+    "km_from_start": 864.6,
+    "lat": 12.94791,
+    "lon": 77.53271,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/node/1474854801"
+   },
+   {
+    "id": "fuel:way-1393102826",
+    "name": "Nayara",
+    "brand": "Nayara",
+    "near": "Bengaluru",
+    "km_from_start": 864.8,
+    "lat": 12.94369,
+    "lon": 77.53882,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/way/1393102826"
+   },
+   {
+    "id": "fuel:way-1309995712",
+    "name": "Petrol pump",
+    "brand": null,
+    "near": "Bengaluru",
+    "km_from_start": 865.9,
+    "lat": 12.95369,
+    "lon": 77.54211,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/way/1309995712"
+   },
+   {
+    "id": "fuel:way-1257194263",
+    "name": "Petrol pump",
+    "brand": null,
+    "near": "Bengaluru",
+    "km_from_start": 866.2,
+    "lat": 12.95447,
+    "lon": 77.54374,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/way/1257194263"
+   },
+   {
+    "id": "fuel:node-4101097390",
+    "name": "Shell",
+    "brand": "Shell",
+    "near": "Bengaluru",
+    "km_from_start": 866.8,
+    "lat": 12.95696,
+    "lon": 77.54919,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/node/4101097390"
+   },
+   {
+    "id": "fuel:way-1257194266",
+    "name": "Indian Oil",
+    "brand": "Indian Oil",
+    "near": "Bengaluru",
+    "km_from_start": 866.8,
+    "lat": 12.95644,
+    "lon": 77.54873,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/way/1257194266"
+   },
+   {
+    "id": "fuel:node-12145536674",
+    "name": "Bharat Petroleum",
+    "brand": "Bharat Petroleum",
+    "near": "Bengaluru",
+    "km_from_start": 867.0,
+    "lat": 12.95725,
+    "lon": 77.55093,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/node/12145536674"
+   },
+   {
+    "id": "fuel:node-11248255458",
+    "name": "Bharat Petroleum",
+    "brand": "Bharat Petroleum",
+    "near": "Bengaluru",
+    "km_from_start": 867.1,
+    "lat": 12.95736,
+    "lon": 77.55115,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/node/11248255458"
+   },
+   {
+    "id": "fuel:way-1298716883",
+    "name": "Shell",
+    "brand": "Shell",
+    "near": "Bengaluru",
+    "km_from_start": 867.1,
+    "lat": 12.95763,
+    "lon": 77.55188,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/way/1298716883"
+   },
+   {
+    "id": "fuel:way-1348696401",
+    "name": "Indian Oil",
+    "brand": "Indian Oil",
+    "near": "Bengaluru",
+    "km_from_start": 867.6,
+    "lat": 12.95911,
+    "lon": 77.5558,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/way/1348696401"
+   },
+   {
+    "id": "fuel:node-4130913293",
+    "name": "Bharat Petroleum",
+    "brand": "Bharat Petroleum",
+    "near": "Bengaluru",
+    "km_from_start": 867.8,
+    "lat": 12.9603,
+    "lon": 77.55728,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/node/4130913293"
+   },
+   {
+    "id": "fuel:way-1459447005",
+    "name": "Anjandri Petrol / Gas Station",
+    "brand": "Indian Oil",
+    "near": "Bengaluru",
+    "km_from_start": 868.3,
+    "lat": 12.95722,
+    "lon": 77.56236,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/way/1459447005"
+   },
+   {
+    "id": "fuel:way-1562139036",
+    "name": "Petrol pump",
+    "brand": null,
+    "near": "Bengaluru",
+    "km_from_start": 868.4,
+    "lat": 12.96135,
+    "lon": 77.56187,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/way/1562139036"
+   },
+   {
+    "id": "fuel:way-1052004252",
+    "name": "Bharat Petroleum",
+    "brand": "Bharat Petroleum",
+    "near": "Bengaluru",
+    "km_from_start": 868.6,
+    "lat": 12.96192,
+    "lon": 77.56416,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/way/1052004252"
+   },
+   {
+    "id": "fuel:way-1206037819",
+    "name": "Shell",
+    "brand": "Shell",
+    "near": "Bengaluru",
+    "km_from_start": 868.6,
+    "lat": 12.95357,
+    "lon": 77.56724,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/way/1206037819"
+   },
+   {
+    "id": "fuel:way-1203406064",
+    "name": "Petrol pump",
+    "brand": null,
+    "near": "Bengaluru",
+    "km_from_start": 868.9,
+    "lat": 12.95739,
+    "lon": 77.56839,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/way/1203406064"
+   },
+   {
+    "id": "fuel:way-1504018450",
+    "name": "Shree Krishna Auto Gas",
+    "brand": "AEGIS AUTO GAS",
+    "near": "Bengaluru",
+    "km_from_start": 869.3,
+    "lat": 12.96727,
+    "lon": 77.56997,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/way/1504018450"
+   },
+   {
+    "id": "fuel:way-1208844935",
+    "name": "HP",
+    "brand": "Hindustan Petroleum",
+    "near": "Bengaluru",
+    "km_from_start": 870.0,
+    "lat": 12.95925,
+    "lon": 77.57557,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/way/1208844935"
+   },
+   {
+    "id": "fuel:way-1312140915",
+    "name": "Petrol pump",
+    "brand": null,
+    "near": "Bengaluru",
+    "km_from_start": 870.1,
+    "lat": 12.95618,
+    "lon": 77.57685,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/way/1312140915"
+   },
+   {
+    "id": "fuel:way-688824197",
+    "name": "Hindustan Petroleum",
+    "brand": "Hindustan Petroleum",
+    "near": "Bengaluru",
+    "km_from_start": 870.6,
+    "lat": 12.95579,
+    "lon": 77.58079,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/way/688824197"
+   },
+   {
+    "id": "fuel:node-1617398481",
+    "name": "BP",
+    "brand": "BP",
+    "near": "Bengaluru",
+    "km_from_start": 870.8,
+    "lat": 12.95966,
+    "lon": 77.58293,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/node/1617398481"
+   },
+   {
+    "id": "fuel:way-1311064569",
+    "name": "Bharat Petroleum",
+    "brand": "Bharat Petroleum",
+    "near": "Bengaluru",
+    "km_from_start": 870.8,
+    "lat": 12.95885,
+    "lon": 77.58253,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/way/1311064569"
+   },
+   {
+    "id": "fuel:way-1309994351",
+    "name": "Shell",
+    "brand": "Shell",
+    "near": "Bengaluru",
+    "km_from_start": 870.9,
+    "lat": 12.95991,
+    "lon": 77.58357,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/way/1309994351"
+   },
+   {
+    "id": "fuel:node-5983455179",
+    "name": "Gogas",
+    "brand": null,
+    "near": "Bengaluru",
+    "km_from_start": 871.1,
+    "lat": 12.95881,
+    "lon": 77.58688,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/node/5983455179"
+   },
+   {
+    "id": "fuel:way-1311064544",
+    "name": "Petrol pump",
+    "brand": null,
+    "near": "Bengaluru",
+    "km_from_start": 871.1,
+    "lat": 12.96151,
+    "lon": 77.58572,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/way/1311064544"
+   },
+   {
+    "id": "fuel:way-781001557",
+    "name": "Indian Oil",
+    "brand": "Indian Oil",
+    "near": "Bengaluru",
+    "km_from_start": 871.8,
+    "lat": 12.97206,
+    "lon": 77.58652,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/way/781001557"
+   },
+   {
+    "id": "fuel:way-639010032",
+    "name": "Indian Oil",
+    "brand": "Indian Oil",
+    "near": "Bengaluru",
+    "km_from_start": 872.1,
+    "lat": 12.96642,
+    "lon": 77.59531,
+    "opening_hours": "24/7",
+    "osm_url": "https://www.openstreetmap.org/way/639010032"
+   },
+   {
+    "id": "fuel:node-663313913",
+    "name": "Bharat Petroleum",
+    "brand": "Bharat Petroleum",
+    "near": "Bengaluru",
+    "km_from_start": 872.4,
+    "lat": 12.97584,
+    "lon": 77.59857,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/node/663313913"
+   },
+   {
+    "id": "fuel:way-208701344",
+    "name": "Indian Oil",
+    "brand": "Indian Oil",
+    "near": "Bengaluru",
+    "km_from_start": 872.4,
+    "lat": 12.97522,
+    "lon": 77.60131,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/way/208701344"
+   },
+   {
+    "id": "fuel:way-1066006344",
+    "name": "Shell",
+    "brand": "Shell",
+    "near": "Bengaluru",
+    "km_from_start": 872.4,
+    "lat": 12.97138,
+    "lon": 77.59707,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/way/1066006344"
+   },
+   {
+    "id": "fuel:way-327551791",
+    "name": "HP",
+    "brand": "Hindustan Petroleum",
+    "near": "Bengaluru",
+    "km_from_start": 872.5,
+    "lat": 12.97597,
+    "lon": 77.59784,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/way/327551791"
+   }
+  ],
+  "pump_count": 316,
+  "stops": 80,
+  "longest_gaps": [
+   {
+    "from_km": 299.1,
+    "to_km": 376.9,
+    "gap_km": 77.8,
+    "from_is": "pump",
+    "to_is": "pump",
+    "near_from": "Mullayanagiri",
+    "near_to": "Sringeri"
+   },
+   {
+    "from_km": 562.6,
+    "to_km": 610.3,
+    "gap_km": 47.7,
+    "from_is": "pump",
+    "to_is": "pump",
+    "near_from": "Madikeri",
+    "near_to": "Madikeri"
+   },
+   {
+    "from_km": 221.3,
+    "to_km": 259.7,
+    "gap_km": 38.4,
+    "from_is": "pump",
+    "to_is": "pump",
+    "near_from": "Chikkamagaluru",
+    "near_to": "Chikkamagaluru"
+   },
+   {
+    "from_km": 409.4,
+    "to_km": 446.0,
+    "gap_km": 36.6,
+    "from_is": "pump",
+    "to_is": "pump",
+    "near_from": "Agumbe",
+    "near_to": "Agumbe"
+   },
+   {
+    "from_km": 259.7,
+    "to_km": 293.8,
+    "gap_km": 34.1,
+    "from_is": "pump",
+    "to_is": "pump",
+    "near_from": "Chikkamagaluru",
+    "near_to": "Mullayanagiri"
+   }
+  ],
+  "note": "Pumps are those drawn on the open map within the search radius of the road. A pump missing from the map is missing here, so each gap is a worst case.",
+  "fetched": "2026-09-28"
+ },
+ "rules": [
+  {
+   "id": "rule:mullayanagiri-slot-booking",
+   "kind": "permit",
+   "title": "Mullayanagiri: book a time slot online",
+   "detail": "Vehicles book a morning slot (6 am to noon) or afternoon slot (1 pm to 6 pm). Each slot takes 600 vehicles, 100 of them two-wheelers.",
+   "applies_to": "All visiting vehicles; buses and minibuses are barred",
+   "set_by": "Deputy Commissioner, Chikkamagaluru",
+   "official_url": "https://chikkamagaluru.nic.in/en/mullayanagiri-and-inam-dattathreya-peeta-online-toll-booking-portal/",
+   "has_official_order": true,
+   "source": {
+    "url": "https://daijiworld.com/news/newsDisplay?newsID=1290782",
+    "title": "Chikkamagaluru: Vehicle entry to popular hill destinations restricted from Sept…",
+    "kind": "news",
+    "opened": true,
+    "source_date": "2025-08-30",
+    "accessed": "2026-09-28"
+   },
+   "history": [
+    {
+     "date": "2024-08-15",
+     "change": "District website published the online booking link.",
+     "source": {
+      "url": "https://chikkamagaluru.nic.in/en/mullayanagiri-and-inam-dattathreya-peeta-online-toll-booking-portal/",
+      "title": "Mullayanagiri and Inam Dattathreya Peeta online Toll booking portal",
+      "kind": "official",
+      "opened": true,
+      "source_date": "2024-08-15",
+      "accessed": "2026-09-28"
+     }
+    },
+    {
+     "date": "2025-09-01",
+     "change": "Caps per slot took effect for Mullayanagiri, Seethalayanagiri, Bababudangiri and Manikyadhara.",
+     "source": {
+      "url": "https://daijiworld.com/news/newsDisplay?newsID=1290782",
+      "title": "Chikkamagaluru: Vehicle entry to popular hill destinations restricted from Sept…",
+      "kind": "news",
+      "opened": true,
+      "source_date": "2025-08-30",
+      "accessed": "2026-09-28"
+     }
+    }
+   ]
+  },
+  {
+   "id": "rule:mullayanagiri-toll-paid-online",
+   "kind": "fee",
+   "title": "Mullayanagiri: toll paid when booking",
+   "detail": "The booking form lists Bike as a vehicle type and charges the toll online. The amount appears only after a slot is chosen.",
+   "applies_to": "All visiting vehicles, motorcycles included",
+   "set_by": "District Tourism Development Committee, Chikkamagaluru",
+   "official_url": "https://pgbiz.omniware.in/chikkamagalurutourism",
+   "has_official_order": true,
+   "source": {
+    "url": "https://pgbiz.omniware.in/chikkamagalurutourism",
+    "title": "Omniware Generate Challan",
+    "kind": "official",
+    "opened": true,
+    "source_date": null,
+    "accessed": "2026-09-28"
+   },
+   "history": []
+  },
+  {
+   "id": "rule:agumbe-ghat-monsoon-heavy-vehicle-ban",
+   "kind": "timing",
+   "title": "Agumbe ghat: heavy vehicles barred in monsoon",
+   "detail": "From 15 June to 30 September only light vehicles may use the ghat. Motorcycles may pass. Expect sudden closures after slides.",
+   "applies_to": "Heavy vehicles",
+   "set_by": "Deputy Commissioners of Shivamogga and Udupi",
+   "official_url": null,
+   "has_official_order": true,
+   "source": {
+    "url": "https://daijiworld.com/news/newsDisplay?newsID=1318273",
+    "title": "Udupi: Heavy vehicles barred on Agumbe Ghat till Sep 30…",
+    "kind": "news",
+    "opened": true,
+    "source_date": "2026-06-26",
+    "accessed": "2026-09-28"
+   },
+   "history": [
+    {
+     "date": "2026-06-15",
+     "change": "Shivamogga order barred heavy vehicles for the monsoon.",
+     "source": {
+      "url": "https://www.thehansindia.com/karnataka/heavy-vehicles-banned-in-agumbe-ghat-from-june-15-1085394",
+      "title": "Heavy vehicles banned in Agumbe Ghat from June 15",
+      "kind": "news",
+      "opened": true,
+      "source_date": "2026-06-12",
+      "accessed": "2026-09-28"
+     }
+    },
+    {
+     "date": "2026-06-26",
+     "change": "Udupi order reported, running to 30 September.",
+     "source": {
+      "url": "https://daijiworld.com/news/newsDisplay?newsID=1318273",
+      "title": "Udupi: Heavy vehicles barred on Agumbe Ghat till Sep 30…",
+      "kind": "news",
+      "opened": true,
+      "source_date": "2026-06-26",
+      "accessed": "2026-09-28"
+     }
+    }
+   ]
+  },
+  {
+   "id": "rule:nagarahole-roads-daylight-only",
+   "kind": "motorcycle-rule",
+   "title": "Nagarahole: forest gates shut at 6 pm",
+   "detail": "Gates into the reserve close at 6 pm and entering later is an offence. A travel wiki adds that two-wheelers are refused on the Kutta road.",
+   "applies_to": "All vehicles; two-wheelers on the Kutta road",
+   "set_by": "Karnataka Forest Department, Nagarahole Tiger Reserve",
+   "official_url": null,
+   "has_official_order": false,
+   "source": {
+    "url": "https://www.deccanherald.com/india/karnataka/case-registered-against-five-for-driving-through-db-kuppe-range-of-nagarahole-tiger-reserve-2737130",
+    "title": "Case registered against five for driving through DB Kuppe range…",
+    "kind": "news",
+    "opened": true,
+    "source_date": "2023-10-22",
+    "accessed": "2026-09-28"
+   },
+   "history": [
+    {
+     "date": "2023-10",
+     "change": "Five people charged for driving in through a gate after closing time.",
+     "source": {
+      "url": "https://www.deccanherald.com/india/karnataka/case-registered-against-five-for-driving-through-db-kuppe-range-of-nagarahole-tiger-reserve-2737130",
+      "title": "Case registered against five for driving through DB Kuppe range…",
+      "kind": "news",
+      "opened": true,
+      "source_date": "2023-10-22",
+      "accessed": "2026-09-28"
+     }
+    },
+    {
+     "date": null,
+     "change": "Travel wiki gives 6 am to 6 pm and says two-wheelers are not allowed from Kutta.",
+     "source": {
+      "url": "https://en.wikivoyage.org/wiki/Nagarhole_National_Park",
+      "title": "Nagarhole National Park",
+      "kind": "encyclopedia",
+      "opened": true,
+      "source_date": null,
+      "accessed": "2026-09-28"
+     }
+    }
+   ]
+  },
+  {
+   "id": "rule:bengaluru-mysuru-expressway-no-two-wheelers",
+   "kind": "motorcycle-rule",
+   "title": "Bengaluru to Mysuru Expressway: no two-wheelers",
+   "detail": "Riders heading for Coorg through Mysuru must use the toll-free service road beside the expressway, not the main carriageway.",
+   "applies_to": "Two-wheelers, three-wheelers, tractors",
+   "set_by": "National Highways Authority of India",
+   "official_url": null,
+   "has_official_order": true,
+   "source": {
+    "url": "https://thefederal.com/states/south/karnataka/nhai-bans-two-wheelers-autos-on-bengaluru-mysuru-expressway",
+    "title": "NHAI bans two-wheelers, autos on Bengaluru-Mysuru Expressway",
+    "kind": "news",
+    "opened": true,
+    "source_date": "2023-07-26",
+    "accessed": "2026-09-28"
+   },
+   "history": [
+    {
+     "date": "2023-07-12",
+     "change": "Notification issued.",
+     "source": {
+      "url": "https://thefederal.com/states/south/karnataka/nhai-bans-two-wheelers-autos-on-bengaluru-mysuru-expressway",
+      "title": "NHAI bans two-wheelers, autos on Bengaluru-Mysuru Expressway",
+      "kind": "news",
+      "opened": true,
+      "source_date": "2023-07-26",
+      "accessed": "2026-09-28"
+     }
+    },
+    {
+     "date": "2023-08-01",
+     "change": "Ban took effect.",
+     "source": {
+      "url": "https://thefederal.com/states/south/karnataka/nhai-bans-two-wheelers-autos-on-bengaluru-mysuru-expressway",
+      "title": "NHAI bans two-wheelers, autos on Bengaluru-Mysuru Expressway",
+      "kind": "news",
+      "opened": true,
+      "source_date": "2023-07-26",
+      "accessed": "2026-09-28"
+     }
+    },
+    {
+     "date": "2023-08-03",
+     "change": "Service road named as the way for two-wheelers.",
+     "source": {
+      "url": "https://www.psuconnect.in/road-and-transport-news/alternate-route-for-2-or-3-wheelers-on-bengaluru-mysuru-expressway",
+      "title": "NHAI Provides Alternate Route for 2/3-Wheelers on Bengaluru-Mysuru Expressway",
+      "kind": "news",
+      "opened": true,
+      "source_date": "2023-08-03",
+      "accessed": "2026-09-28"
+     }
+    }
+   ]
+  }
+ ],
+ "season": {
+  "note": "The state tourism office names November to February for Agumbe; July and August are the wettest months, when the ghat is prone to landslides.",
+  "history": []
+ },
+ "authorities": [
+  {
+   "id": "authority:deputy-commissioner-chikkamagaluru",
+   "office": "Deputy Commissioner, Chikkamagaluru",
+   "announces": "Slot booking and vehicle caps for the hill roads",
+   "stretch": "Chikkamagaluru to Mullayanagiri and Bababudangiri",
+   "channel": "District website",
+   "url": "https://chikkamagaluru.nic.in/en/",
+   "source": {
+    "url": "https://chikkamagaluru.nic.in/en/",
+    "title": "District Chikkamagaluru, Government of Karnataka | Land of Coffee |…",
+    "kind": "official",
+    "opened": true,
+    "source_date": null,
+    "accessed": "2026-09-28"
+   }
+  },
+  {
+   "id": "authority:deputy-commissioner-udupi",
+   "office": "Deputy Commissioner, Udupi",
+   "announces": "Monsoon vehicle bans on the ghat",
+   "stretch": "Agumbe ghat, coast side",
+   "channel": "District website",
+   "url": "https://udupi.nic.in/en/",
+   "source": {
+    "url": "https://udupi.nic.in/en/",
+    "title": "Udupi District | Government of Karnataka | India",
+    "kind": "official",
+    "opened": true,
+    "source_date": null,
+    "accessed": "2026-09-28"
+   }
+  },
+  {
+   "id": "authority:deputy-commissioner-shivamogga",
+   "office": "Deputy Commissioner, Shivamogga",
+   "announces": "Monsoon vehicle bans on the ghat",
+   "stretch": "Agumbe ghat, Thirthahalli side",
+   "channel": "District website",
+   "url": "https://shivamogga.nic.in/en/",
+   "source": {
+    "url": "https://shivamogga.nic.in/en/",
+    "title": "District Shivamogga, Government of Karnataka | Food Cradle of Karnataka…",
+    "kind": "official",
+    "opened": true,
+    "source_date": null,
+    "accessed": "2026-09-28"
+   }
+  },
+  {
+   "id": "authority:karnataka-forest-department",
+   "office": "Karnataka Forest Department",
+   "announces": "Check post hours on forest roads",
+   "stretch": "Nagarahole Tiger Reserve",
+   "channel": "Department website",
+   "url": "https://aranya.gov.in/",
+   "source": {
+    "url": "https://aranya.gov.in/",
+    "title": "ಕರ್ನಾಟಕ ಅರಣ್ಯ ಇಲಾಖೆ - ಮುಖ್ಯಪುಟ",
+    "kind": "official",
+    "opened": true,
+    "source_date": null,
+    "accessed": "2026-09-28"
+   }
+  }
+ ],
+ "hazards": [
+  {
+   "id": "hazard:landslides-on-the-agumbe-ghat",
+   "title": "Landslides on the Agumbe ghat",
+   "detail": "Slopes give way in heavy rain. Both district heads restrict traffic every monsoon.",
+   "months": [
+    6,
+    7,
+    8,
+    9
+   ],
+   "source": {
+    "url": "https://daijiworld.com/news/newsDisplay?newsID=1318273",
+    "title": "Udupi: Heavy vehicles barred on Agumbe Ghat till Sep 30…",
+    "kind": "news",
+    "opened": true,
+    "source_date": "2026-06-26",
+    "accessed": "2026-09-28"
+   }
+  },
+  {
+   "id": "hazard:extreme-rain-at-agumbe",
+   "title": "Extreme rain at Agumbe",
+   "detail": "About 7,600 millimetres of rain a year, most of it in July and August. Carry waterproofs.",
+   "months": [
+    6,
+    7,
+    8,
+    9
+   ],
+   "source": {
+    "url": "https://en.wikipedia.org/wiki/Agumbe",
+    "title": "Agumbe",
+    "kind": "encyclopedia",
+    "opened": true,
+    "source_date": null,
+    "accessed": "2026-09-28"
+   }
+  },
+  {
+   "id": "hazard:narrow-road-on-the-agumbe-ghat",
+   "title": "Narrow road on the Agumbe ghat",
+   "detail": "Between Someshwara and Agumbe the road is too narrow for full-size buses. Watch for oncoming vehicles on bends.",
+   "months": [],
+   "source": {
+    "url": "https://en.wikipedia.org/wiki/National_Highway_169A_(India)",
+    "title": "National Highway 169A (India)",
+    "kind": "encyclopedia",
+    "opened": true,
+    "source_date": null,
+    "accessed": "2026-09-28"
+   }
+  },
+  {
+   "id": "hazard:narrow-crowded-road-to-mullayanagiri",
+   "title": "Narrow, crowded road to Mullayanagiri",
+   "detail": "The district cites accidents and jams on the hill stretch as the reason for vehicle caps.",
+   "months": [],
+   "source": {
+    "url": "https://daijiworld.com/news/newsDisplay?newsID=1290782",
+    "title": "Chikkamagaluru: Vehicle entry to popular hill destinations restricted from Sept…",
+    "kind": "news",
+    "opened": true,
+    "source_date": "2025-08-30",
+    "accessed": "2026-09-28"
+   }
+  }
+ ],
+ "videos": [
+  {
+   "id": "BjklukXlQWE",
+   "url": "https://www.youtube.com/watch?v=BjklukXlQWE",
+   "title": "Bangalore to Mullayanagiri Bike Ride in Monsoon | ಮುಳ್ಳಯ್ಯನಗಿರಿ | Chikmagalur Road Trip | #travel",
+   "channel": "Crazy Prayana",
+   "stretch": "Bengaluru to Mullayanagiri",
+   "filmed": null,
+   "bike": null,
+   "checked": false
+  },
+  {
+   "id": "4hdgK8hscTk",
+   "url": "https://www.youtube.com/watch?v=4hdgK8hscTk",
+   "title": "Bike ride to Mullayanagiri Peak | Baba Budangiri | Datta Peeta | Monsoon Ride | Apache RTR 200",
+   "channel": "Man Machine Trails",
+   "stretch": "Chikkamagaluru to Mullayanagiri and Bababudangiri",
+   "filmed": null,
+   "bike": "TVS Apache RTR 200",
+   "checked": false
+  }
+ ],
+ "image": {
+  "file": "karnataka-hills.jpg",
+  "small": "karnataka-hills-small.jpg",
+  "title": "Mullayanagiri, Chikmagalur district of Karnataka.jpg",
+  "shows": "The hills at Mullayanagiri, Chikkamagaluru",
+  "author": "RakeshRaju M",
+  "licence": "CC BY-SA 4.0",
+  "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+  "source_page": "https://commons.wikimedia.org/wiki/File:Mullayanagiri,_Chikmagalur_district_of_Karnataka.jpg",
+  "source": "Wikimedia Commons",
+  "taken": "2015-12-30 09:09:36",
+  "changes": "Resized. Not otherwise changed.",
+  "fetched": "2026-09-28"
+ },
+ "gaps": [
+  "No official page found for the toll amount for motorcycles at Mullayanagiri; the booking form shows it only after a slot is picked.",
+  "Counts of hairpin bends on the Agumbe ghat differ: a newspaper says about 16, a trail guide seen only in search results says 14.",
+  "No source found for forest check post timings at Agumbe (Someshwara) or on the Mullayanagiri road beyond the slot hours.",
+  "No government order found for the Nagarahole gate hours or the two-wheeler restriction on the Kutta road; the second rests on a travel wiki alone.",
+  "Nothing found for Sringeri or Madikeri: no rule specific to motorcycles, and no entry fee from an official page.",
+  "The best months are sourced for Agumbe only, not for Coorg or Chikkamagaluru.",
+  "No source found for the usual number of days riders take.",
+  "Hairpin bend counts are added as header.hairpin_bends, which is not in the schema example.",
+  "No video kept for the Agumbe ghat or Coorg; filming dates of the two videos are not known."
+ ],
+ "counts": {
+  "facts": 347
+ },
+ "built": "2026-09-28"
+}

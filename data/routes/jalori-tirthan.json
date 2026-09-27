@@ -1,0 +1,2518 @@
+{
+ "slug": "jalori-tirthan",
+ "name": "Jalori Pass, Tirthan valley and Shoja",
+ "region": "himachal",
+ "region_name": "Himachal",
+ "batch": 1,
+ "terrain": "mountain",
+ "country": "in",
+ "level": "basic",
+ "one_line": "Himachal Pradesh, from the Beas at Aut up the Tirthan and Banjar valleys and over Jalori Pass to Anni",
+ "places": [
+  "Aut",
+  "Banjar",
+  "Gushaini",
+  "Jibhi",
+  "Shoja",
+  "Jalori Pass",
+  "Anni"
+ ],
+ "header": {
+  "highway": {
+   "value": "NH 305 (Aut to Banjar to Jalori Pass to Anni to Luhri)",
+   "source": {
+    "url": "https://en.wikipedia.org/wiki/National_Highway_305_(India)",
+    "title": "National Highway 305 (India)",
+    "kind": "encyclopedia",
+    "opened": true,
+    "source_date": null,
+    "accessed": "2026-09-28"
+   }
+  },
+  "distance_km": 97.2,
+  "map_app_hours": 1.41,
+  "usual_days": {
+   "value": "3 to 6",
+   "source": {
+    "url": "https://himtrails.in/himachal-trip-itinerary-planner/",
+    "title": "Himachal trip itinerary planner",
+    "kind": "operator",
+    "opened": true,
+    "source_date": "2026-04",
+    "accessed": "2026-09-28"
+   }
+  },
+  "highest_point": {
+   "name": "Jalori Pass",
+   "altitude_m": 3120,
+   "source": {
+    "url": "https://jibhi.in/blog/best-time-to-visit-jalori-pass",
+    "title": "Jalori Pass Weather Guide: Snow, Seasons & Road Status 2026",
+    "kind": "blog",
+    "opened": true,
+    "source_date": "2026-02-06",
+    "accessed": "2026-09-28"
+   },
+   "computed": false
+  },
+  "usual_season": {
+   "value": "March to June and September to November",
+   "source": {
+    "url": "https://himtrails.in/himachal-trip-itinerary-planner/",
+    "title": "Himachal trip itinerary planner",
+    "kind": "operator",
+    "opened": true,
+    "source_date": "2026-04",
+    "accessed": "2026-09-28"
+   }
+  }
+ },
+ "waypoints": [
+  {
+   "name": "Aut",
+   "lat": 31.74276,
+   "lon": 77.20807,
+   "km_from_start": 0.0,
+   "altitude_m": 997,
+   "kind": "place",
+   "moved_to_road_m": 37
+  },
+  {
+   "name": "Banjar",
+   "lat": 31.63718,
+   "lon": 77.34525,
+   "km_from_start": 25.5,
+   "altitude_m": 1450,
+   "kind": "place",
+   "moved_to_road_m": 15
+  },
+  {
+   "name": "Gushaini",
+   "lat": 31.63748,
+   "lon": 77.42761,
+   "km_from_start": 35.7,
+   "altitude_m": 1576,
+   "kind": "place",
+   "moved_to_road_m": 17
+  },
+  {
+   "name": "Banjar",
+   "lat": 31.63718,
+   "lon": 77.34525,
+   "km_from_start": 46.0,
+   "altitude_m": 1450,
+   "kind": "place",
+   "moved_to_road_m": 15
+  },
+  {
+   "name": "Jibhi",
+   "lat": 31.59249,
+   "lon": 77.35227,
+   "km_from_start": 53.4,
+   "altitude_m": 1788,
+   "kind": "place",
+   "moved_to_road_m": 41
+  },
+  {
+   "name": "Shoja",
+   "lat": 31.5645,
+   "lon": 77.37114,
+   "km_from_start": 60.9,
+   "altitude_m": 2532,
+   "kind": "place",
+   "moved_to_road_m": 10
+  },
+  {
+   "name": "Jalori Pass",
+   "lat": 31.53739,
+   "lon": 77.37176,
+   "km_from_start": 66.5,
+   "altitude_m": 3134,
+   "kind": "pass",
+   "moved_to_road_m": 15
+  },
+  {
+   "name": "Anni",
+   "lat": 31.43461,
+   "lon": 77.41876,
+   "km_from_start": 97.2,
+   "altitude_m": 1182,
+   "kind": "place",
+   "moved_to_road_m": 71
+  }
+ ],
+ "stretches": [
+  {
+   "from": "Aut",
+   "to": "Banjar",
+   "distance_km": 25.5,
+   "map_app_hours": 0.32,
+   "doubtful": false
+  },
+  {
+   "from": "Banjar",
+   "to": "Gushaini",
+   "distance_km": 10.2,
+   "map_app_hours": 0.24,
+   "doubtful": false
+  },
+  {
+   "from": "Gushaini",
+   "to": "Banjar",
+   "distance_km": 10.2,
+   "map_app_hours": 0.24,
+   "doubtful": false
+  },
+  {
+   "from": "Banjar",
+   "to": "Jibhi",
+   "distance_km": 7.5,
+   "map_app_hours": 0.09,
+   "doubtful": false
+  },
+  {
+   "from": "Jibhi",
+   "to": "Shoja",
+   "distance_km": 7.5,
+   "map_app_hours": 0.09,
+   "doubtful": false
+  },
+  {
+   "from": "Shoja",
+   "to": "Jalori Pass",
+   "distance_km": 5.7,
+   "map_app_hours": 0.07,
+   "doubtful": false
+  },
+  {
+   "from": "Jalori Pass",
+   "to": "Anni",
+   "distance_km": 30.7,
+   "map_app_hours": 0.36,
+   "doubtful": false
+  }
+ ],
+ "profile": [
+  {
+   "km": 0.0,
+   "m": 997
+  },
+  {
+   "km": 2.1,
+   "m": 1435
+  },
+  {
+   "km": 4.1,
+   "m": 977
+  },
+  {
+   "km": 6.2,
+   "m": 1003
+  },
+  {
+   "km": 8.3,
+   "m": 1057
+  },
+  {
+   "km": 10.3,
+   "m": 1064
+  },
+  {
+   "km": 12.4,
+   "m": 1124
+  },
+  {
+   "km": 14.5,
+   "m": 1143
+  },
+  {
+   "km": 16.6,
+   "m": 1184
+  },
+  {
+   "km": 18.6,
+   "m": 1209
+  },
+  {
+   "km": 20.7,
+   "m": 1261
+  },
+  {
+   "km": 22.8,
+   "m": 1293
+  },
+  {
+   "km": 24.8,
+   "m": 1355
+  },
+  {
+   "km": 26.9,
+   "m": 1358
+  },
+  {
+   "km": 29.0,
+   "m": 1383
+  },
+  {
+   "km": 31.0,
+   "m": 1429
+  },
+  {
+   "km": 33.1,
+   "m": 1468
+  },
+  {
+   "km": 35.2,
+   "m": 1541
+  },
+  {
+   "km": 37.3,
+   "m": 1526
+  },
+  {
+   "km": 39.3,
+   "m": 1477
+  },
+  {
+   "km": 41.4,
+   "m": 1419
+  },
+  {
+   "km": 43.5,
+   "m": 1386
+  },
+  {
+   "km": 45.5,
+   "m": 1371
+  },
+  {
+   "km": 47.6,
+   "m": 1484
+  },
+  {
+   "km": 49.7,
+   "m": 1668
+  },
+  {
+   "km": 51.7,
+   "m": 1766
+  },
+  {
+   "km": 53.8,
+   "m": 1785
+  },
+  {
+   "km": 55.9,
+   "m": 1921
+  },
+  {
+   "km": 58.0,
+   "m": 2107
+  },
+  {
+   "km": 60.0,
+   "m": 2430
+  },
+  {
+   "km": 62.1,
+   "m": 2623
+  },
+  {
+   "km": 64.2,
+   "m": 2872
+  },
+  {
+   "km": 66.2,
+   "m": 3080
+  },
+  {
+   "km": 68.3,
+   "m": 2992
+  },
+  {
+   "km": 70.4,
+   "m": 2727
+  },
+  {
+   "km": 72.4,
+   "m": 2486
+  },
+  {
+   "km": 74.5,
+   "m": 2354
+  },
+  {
+   "km": 76.6,
+   "m": 2279
+  },
+  {
+   "km": 78.7,
+   "m": 2245
+  },
+  {
+   "km": 80.7,
+   "m": 2151
+  },
+  {
+   "km": 82.8,
+   "m": 2014
+  },
+  {
+   "km": 84.9,
+   "m": 1900
+  },
+  {
+   "km": 86.9,
+   "m": 1820
+  },
+  {
+   "km": 89.0,
+   "m": 1667
+  },
+  {
+   "km": 91.1,
+   "m": 1563
+  },
+  {
+   "km": 93.1,
+   "m": 1402
+  },
+  {
+   "km": 95.2,
+   "m": 1320
+  },
+  {
+   "km": 97.2,
+   "m": 1182
+  }
+ ],
+ "line": [
+  [
+   77.20807,
+   31.74276
+  ],
+  [
+   77.20701,
+   31.74048
+  ],
+  [
+   77.209,
+   31.71602
+  ],
+  [
+   77.21025,
+   31.71724
+  ],
+  [
+   77.21034,
+   31.71919
+  ],
+  [
+   77.21251,
+   31.7194
+  ],
+  [
+   77.21577,
+   31.72248
+  ],
+  [
+   77.21869,
+   31.72406
+  ],
+  [
+   77.21855,
+   31.72519
+  ],
+  [
+   77.22035,
+   31.7254
+  ],
+  [
+   77.22397,
+   31.72727
+  ],
+  [
+   77.22609,
+   31.72719
+  ],
+  [
+   77.22606,
+   31.72677
+  ],
+  [
+   77.22256,
+   31.72569
+  ],
+  [
+   77.22204,
+   31.72483
+  ],
+  [
+   77.22972,
+   31.72211
+  ],
+  [
+   77.23446,
+   31.72124
+  ],
+  [
+   77.23729,
+   31.71884
+  ],
+  [
+   77.23949,
+   31.71806
+  ],
+  [
+   77.24016,
+   31.71733
+  ],
+  [
+   77.24104,
+   31.71735
+  ],
+  [
+   77.24186,
+   31.71633
+  ],
+  [
+   77.2425,
+   31.71378
+  ],
+  [
+   77.24394,
+   31.71266
+  ],
+  [
+   77.24612,
+   31.71328
+  ],
+  [
+   77.24831,
+   31.71302
+  ],
+  [
+   77.25037,
+   31.71213
+  ],
+  [
+   77.25114,
+   31.71273
+  ],
+  [
+   77.25193,
+   31.71257
+  ],
+  [
+   77.25332,
+   31.71061
+  ],
+  [
+   77.25347,
+   31.71023
+  ],
+  [
+   77.25274,
+   31.70965
+  ],
+  [
+   77.25353,
+   31.70845
+  ],
+  [
+   77.25491,
+   31.70848
+  ],
+  [
+   77.25639,
+   31.70978
+  ],
+  [
+   77.25723,
+   31.70948
+  ],
+  [
+   77.25933,
+   31.70759
+  ],
+  [
+   77.25946,
+   31.70595
+  ],
+  [
+   77.26011,
+   31.70514
+  ],
+  [
+   77.25945,
+   31.70478
+  ],
+  [
+   77.25904,
+   31.70376
+  ],
+  [
+   77.26346,
+   31.70198
+  ],
+  [
+   77.26717,
+   31.69948
+  ],
+  [
+   77.27094,
+   31.69842
+  ],
+  [
+   77.27324,
+   31.69647
+  ],
+  [
+   77.27617,
+   31.69565
+  ],
+  [
+   77.27794,
+   31.69378
+  ],
+  [
+   77.27848,
+   31.6899
+  ],
+  [
+   77.27936,
+   31.68784
+  ],
+  [
+   77.28077,
+   31.68683
+  ],
+  [
+   77.2831,
+   31.68682
+  ],
+  [
+   77.2859,
+   31.68544
+  ],
+  [
+   77.28589,
+   31.6847
+  ],
+  [
+   77.28495,
+   31.68448
+  ],
+  [
+   77.28394,
+   31.6831
+  ],
+  [
+   77.28516,
+   31.6821
+  ],
+  [
+   77.28753,
+   31.67871
+  ],
+  [
+   77.28989,
+   31.67782
+  ],
+  [
+   77.2913,
+   31.67675
+  ],
+  [
+   77.29219,
+   31.67523
+  ],
+  [
+   77.29244,
+   31.67329
+  ],
+  [
+   77.29451,
+   31.67253
+  ],
+  [
+   77.29574,
+   31.67295
+  ],
+  [
+   77.2978,
+   31.6724
+  ],
+  [
+   77.29909,
+   31.66984
+  ],
+  [
+   77.30202,
+   31.66824
+  ],
+  [
+   77.3021,
+   31.6669
+  ],
+  [
+   77.30293,
+   31.66688
+  ],
+  [
+   77.30358,
+   31.66776
+  ],
+  [
+   77.30348,
+   31.66671
+  ],
+  [
+   77.30398,
+   31.66584
+  ],
+  [
+   77.30494,
+   31.66582
+  ],
+  [
+   77.30579,
+   31.66652
+  ],
+  [
+   77.3068,
+   31.66613
+  ],
+  [
+   77.30822,
+   31.66482
+  ],
+  [
+   77.30901,
+   31.66282
+  ],
+  [
+   77.31566,
+   31.66089
+  ],
+  [
+   77.31789,
+   31.66067
+  ],
+  [
+   77.31754,
+   31.66037
+  ],
+  [
+   77.31782,
+   31.65932
+  ],
+  [
+   77.31897,
+   31.65847
+  ],
+  [
+   77.32165,
+   31.65784
+  ],
+  [
+   77.32666,
+   31.65476
+  ],
+  [
+   77.32915,
+   31.65469
+  ],
+  [
+   77.33189,
+   31.65311
+  ],
+  [
+   77.33283,
+   31.65194
+  ],
+  [
+   77.33562,
+   31.65198
+  ],
+  [
+   77.33936,
+   31.65037
+  ],
+  [
+   77.34392,
+   31.64656
+  ],
+  [
+   77.34617,
+   31.64758
+  ],
+  [
+   77.34679,
+   31.64726
+  ],
+  [
+   77.34895,
+   31.64769
+  ],
+  [
+   77.34684,
+   31.64707
+  ],
+  [
+   77.34564,
+   31.64585
+  ],
+  [
+   77.34553,
+   31.64498
+  ],
+  [
+   77.3442,
+   31.64425
+  ],
+  [
+   77.34401,
+   31.64245
+  ],
+  [
+   77.34337,
+   31.64144
+  ],
+  [
+   77.34414,
+   31.64064
+  ],
+  [
+   77.34429,
+   31.63752
+  ],
+  [
+   77.34525,
+   31.63643
+  ],
+  [
+   77.34525,
+   31.63718
+  ],
+  [
+   77.34525,
+   31.63643
+  ],
+  [
+   77.34429,
+   31.63752
+  ],
+  [
+   77.34414,
+   31.64064
+  ],
+  [
+   77.34337,
+   31.64144
+  ],
+  [
+   77.34401,
+   31.64245
+  ],
+  [
+   77.34426,
+   31.64438
+  ],
+  [
+   77.34553,
+   31.64498
+  ],
+  [
+   77.34572,
+   31.64597
+  ],
+  [
+   77.34761,
+   31.6474
+  ],
+  [
+   77.35167,
+   31.64678
+  ],
+  [
+   77.35462,
+   31.64804
+  ],
+  [
+   77.35809,
+   31.64668
+  ],
+  [
+   77.36183,
+   31.64607
+  ],
+  [
+   77.36289,
+   31.64635
+  ],
+  [
+   77.36468,
+   31.64539
+  ],
+  [
+   77.36775,
+   31.64491
+  ],
+  [
+   77.37246,
+   31.64517
+  ],
+  [
+   77.37411,
+   31.64483
+  ],
+  [
+   77.37846,
+   31.64541
+  ],
+  [
+   77.38387,
+   31.64109
+  ],
+  [
+   77.38752,
+   31.64166
+  ],
+  [
+   77.3927,
+   31.63909
+  ],
+  [
+   77.39506,
+   31.6396
+  ],
+  [
+   77.39777,
+   31.63952
+  ],
+  [
+   77.39952,
+   31.6382
+  ],
+  [
+   77.40288,
+   31.64002
+  ],
+  [
+   77.40818,
+   31.64191
+  ],
+  [
+   77.41107,
+   31.64087
+  ],
+  [
+   77.41459,
+   31.64123
+  ],
+  [
+   77.41926,
+   31.63846
+  ],
+  [
+   77.42032,
+   31.63846
+  ],
+  [
+   77.42141,
+   31.63981
+  ],
+  [
+   77.42761,
+   31.63748
+  ],
+  [
+   77.42141,
+   31.63981
+  ],
+  [
+   77.42032,
+   31.63846
+  ],
+  [
+   77.41926,
+   31.63846
+  ],
+  [
+   77.41459,
+   31.64123
+  ],
+  [
+   77.41107,
+   31.64087
+  ],
+  [
+   77.40818,
+   31.64191
+  ],
+  [
+   77.40288,
+   31.64002
+  ],
+  [
+   77.39936,
+   31.6382
+  ],
+  [
+   77.39777,
+   31.63952
+  ],
+  [
+   77.39195,
+   31.63923
+  ],
+  [
+   77.38956,
+   31.64091
+  ],
+  [
+   77.38752,
+   31.64166
+  ],
+  [
+   77.38387,
+   31.64109
+  ],
+  [
+   77.37832,
+   31.64544
+  ],
+  [
+   77.37411,
+   31.64483
+  ],
+  [
+   77.37246,
+   31.64517
+  ],
+  [
+   77.36879,
+   31.64484
+  ],
+  [
+   77.36468,
+   31.64539
+  ],
+  [
+   77.36289,
+   31.64635
+  ],
+  [
+   77.36183,
+   31.64607
+  ],
+  [
+   77.35809,
+   31.64668
+  ],
+  [
+   77.35462,
+   31.64804
+  ],
+  [
+   77.35167,
+   31.64678
+  ],
+  [
+   77.34761,
+   31.6474
+  ],
+  [
+   77.34572,
+   31.64597
+  ],
+  [
+   77.34553,
+   31.64498
+  ],
+  [
+   77.3442,
+   31.64425
+  ],
+  [
+   77.34401,
+   31.64245
+  ],
+  [
+   77.34337,
+   31.64144
+  ],
+  [
+   77.34414,
+   31.64064
+  ],
+  [
+   77.34429,
+   31.63752
+  ],
+  [
+   77.34525,
+   31.63643
+  ],
+  [
+   77.34525,
+   31.63718
+  ],
+  [
+   77.34525,
+   31.63643
+  ],
+  [
+   77.34429,
+   31.63752
+  ],
+  [
+   77.34453,
+   31.6363
+  ],
+  [
+   77.34364,
+   31.63597
+  ],
+  [
+   77.34323,
+   31.63491
+  ],
+  [
+   77.34276,
+   31.63207
+  ],
+  [
+   77.34328,
+   31.63043
+  ],
+  [
+   77.34278,
+   31.62941
+  ],
+  [
+   77.34292,
+   31.62841
+  ],
+  [
+   77.34036,
+   31.62658
+  ],
+  [
+   77.34149,
+   31.62682
+  ],
+  [
+   77.34071,
+   31.62646
+  ],
+  [
+   77.3406,
+   31.62448
+  ],
+  [
+   77.34203,
+   31.62407
+  ],
+  [
+   77.34259,
+   31.62267
+  ],
+  [
+   77.3434,
+   31.62213
+  ],
+  [
+   77.34295,
+   31.62103
+  ],
+  [
+   77.34505,
+   31.61894
+  ],
+  [
+   77.34461,
+   31.61651
+  ],
+  [
+   77.3456,
+   31.61789
+  ],
+  [
+   77.34443,
+   31.61395
+  ],
+  [
+   77.34561,
+   31.61322
+  ],
+  [
+   77.3466,
+   31.61348
+  ],
+  [
+   77.34691,
+   31.61165
+  ],
+  [
+   77.34804,
+   31.61083
+  ],
+  [
+   77.34682,
+   31.6091
+  ],
+  [
+   77.34824,
+   31.60707
+  ],
+  [
+   77.34773,
+   31.60573
+  ],
+  [
+   77.3486,
+   31.60425
+  ],
+  [
+   77.34786,
+   31.60242
+  ],
+  [
+   77.35022,
+   31.6021
+  ],
+  [
+   77.35105,
+   31.60277
+  ],
+  [
+   77.35334,
+   31.60256
+  ],
+  [
+   77.35238,
+   31.60176
+  ],
+  [
+   77.35163,
+   31.59892
+  ],
+  [
+   77.35149,
+   31.59691
+  ],
+  [
+   77.3525,
+   31.59496
+  ],
+  [
+   77.35278,
+   31.59314
+  ],
+  [
+   77.35118,
+   31.59168
+  ],
+  [
+   77.35136,
+   31.58909
+  ],
+  [
+   77.35238,
+   31.5883
+  ],
+  [
+   77.35352,
+   31.58828
+  ],
+  [
+   77.35478,
+   31.58717
+  ],
+  [
+   77.35566,
+   31.58756
+  ],
+  [
+   77.35917,
+   31.58614
+  ],
+  [
+   77.35963,
+   31.58547
+  ],
+  [
+   77.35944,
+   31.58455
+  ],
+  [
+   77.36042,
+   31.58446
+  ],
+  [
+   77.36081,
+   31.58338
+  ],
+  [
+   77.36011,
+   31.58157
+  ],
+  [
+   77.36016,
+   31.57997
+  ],
+  [
+   77.35957,
+   31.57925
+  ],
+  [
+   77.35958,
+   31.57751
+  ],
+  [
+   77.36149,
+   31.57652
+  ],
+  [
+   77.36377,
+   31.5762
+  ],
+  [
+   77.36336,
+   31.57566
+  ],
+  [
+   77.361,
+   31.57542
+  ],
+  [
+   77.36238,
+   31.57333
+  ],
+  [
+   77.36298,
+   31.57094
+  ],
+  [
+   77.36267,
+   31.5692
+  ],
+  [
+   77.36155,
+   31.56837
+  ],
+  [
+   77.36158,
+   31.56726
+  ],
+  [
+   77.36203,
+   31.56668
+  ],
+  [
+   77.3627,
+   31.56717
+  ],
+  [
+   77.36432,
+   31.56657
+  ],
+  [
+   77.36485,
+   31.56595
+  ],
+  [
+   77.36443,
+   31.56529
+  ],
+  [
+   77.36449,
+   31.56368
+  ],
+  [
+   77.36859,
+   31.56154
+  ],
+  [
+   77.3687,
+   31.56093
+  ],
+  [
+   77.36806,
+   31.56042
+  ],
+  [
+   77.36918,
+   31.55812
+  ],
+  [
+   77.36893,
+   31.55652
+  ],
+  [
+   77.36938,
+   31.55576
+  ],
+  [
+   77.36931,
+   31.55655
+  ],
+  [
+   77.3698,
+   31.55592
+  ],
+  [
+   77.37029,
+   31.55969
+  ],
+  [
+   77.37208,
+   31.56051
+  ],
+  [
+   77.37222,
+   31.56146
+  ],
+  [
+   77.37112,
+   31.56427
+  ],
+  [
+   77.37114,
+   31.56828
+  ],
+  [
+   77.37269,
+   31.56473
+  ],
+  [
+   77.37502,
+   31.56172
+  ],
+  [
+   77.37519,
+   31.55985
+  ],
+  [
+   77.37457,
+   31.55895
+  ],
+  [
+   77.37613,
+   31.55662
+  ],
+  [
+   77.37582,
+   31.55284
+  ],
+  [
+   77.37632,
+   31.55061
+  ],
+  [
+   77.37718,
+   31.54994
+  ],
+  [
+   77.37754,
+   31.54854
+  ],
+  [
+   77.37872,
+   31.54801
+  ],
+  [
+   77.37833,
+   31.54652
+  ],
+  [
+   77.37979,
+   31.54637
+  ],
+  [
+   77.37955,
+   31.5459
+  ],
+  [
+   77.3808,
+   31.54534
+  ],
+  [
+   77.38104,
+   31.54431
+  ],
+  [
+   77.38292,
+   31.5435
+  ],
+  [
+   77.38357,
+   31.54263
+  ],
+  [
+   77.38192,
+   31.54203
+  ],
+  [
+   77.38069,
+   31.54218
+  ],
+  [
+   77.37869,
+   31.53891
+  ],
+  [
+   77.37667,
+   31.53954
+  ],
+  [
+   77.37607,
+   31.5384
+  ],
+  [
+   77.37495,
+   31.5376
+  ],
+  [
+   77.37301,
+   31.53719
+  ],
+  [
+   77.3707,
+   31.53759
+  ],
+  [
+   77.37236,
+   31.53685
+  ],
+  [
+   77.37386,
+   31.53367
+  ],
+  [
+   77.37503,
+   31.53302
+  ],
+  [
+   77.37514,
+   31.53197
+  ],
+  [
+   77.37565,
+   31.53157
+  ],
+  [
+   77.37679,
+   31.53146
+  ],
+  [
+   77.37882,
+   31.53223
+  ],
+  [
+   77.38433,
+   31.53053
+  ],
+  [
+   77.38767,
+   31.52881
+  ],
+  [
+   77.38862,
+   31.52934
+  ],
+  [
+   77.39055,
+   31.53274
+  ],
+  [
+   77.39132,
+   31.53312
+  ],
+  [
+   77.39132,
+   31.53369
+  ],
+  [
+   77.39208,
+   31.53381
+  ],
+  [
+   77.39311,
+   31.5331
+  ],
+  [
+   77.39415,
+   31.53366
+  ],
+  [
+   77.39508,
+   31.53307
+  ],
+  [
+   77.39581,
+   31.5339
+  ],
+  [
+   77.39903,
+   31.53175
+  ],
+  [
+   77.4004,
+   31.52982
+  ],
+  [
+   77.40031,
+   31.52907
+  ],
+  [
+   77.4009,
+   31.52905
+  ],
+  [
+   77.402,
+   31.52779
+  ],
+  [
+   77.40405,
+   31.52455
+  ],
+  [
+   77.40235,
+   31.5221
+  ],
+  [
+   77.40251,
+   31.52116
+  ],
+  [
+   77.40163,
+   31.51924
+  ],
+  [
+   77.40235,
+   31.51866
+  ],
+  [
+   77.40305,
+   31.51638
+  ],
+  [
+   77.40664,
+   31.51709
+  ],
+  [
+   77.40608,
+   31.52018
+  ],
+  [
+   77.41043,
+   31.52027
+  ],
+  [
+   77.41384,
+   31.51894
+  ],
+  [
+   77.41595,
+   31.51877
+  ],
+  [
+   77.41836,
+   31.51959
+  ],
+  [
+   77.4181,
+   31.51787
+  ],
+  [
+   77.41691,
+   31.51634
+  ],
+  [
+   77.41686,
+   31.51532
+  ],
+  [
+   77.41748,
+   31.51439
+  ],
+  [
+   77.4142,
+   31.51315
+  ],
+  [
+   77.41338,
+   31.51206
+  ],
+  [
+   77.4143,
+   31.51167
+  ],
+  [
+   77.41493,
+   31.51242
+  ],
+  [
+   77.4191,
+   31.512
+  ],
+  [
+   77.42178,
+   31.51233
+  ],
+  [
+   77.42066,
+   31.51115
+  ],
+  [
+   77.41979,
+   31.5109
+  ],
+  [
+   77.42135,
+   31.50956
+  ],
+  [
+   77.42058,
+   31.50927
+  ],
+  [
+   77.41879,
+   31.50999
+  ],
+  [
+   77.41836,
+   31.50956
+  ],
+  [
+   77.41844,
+   31.50843
+  ],
+  [
+   77.41755,
+   31.50763
+  ],
+  [
+   77.41818,
+   31.50615
+  ],
+  [
+   77.41779,
+   31.50319
+  ],
+  [
+   77.41958,
+   31.50134
+  ],
+  [
+   77.41918,
+   31.49995
+  ],
+  [
+   77.42194,
+   31.49692
+  ],
+  [
+   77.42177,
+   31.49355
+  ],
+  [
+   77.42223,
+   31.49276
+  ],
+  [
+   77.42624,
+   31.48929
+  ],
+  [
+   77.42968,
+   31.48886
+  ],
+  [
+   77.42879,
+   31.48752
+  ],
+  [
+   77.42912,
+   31.48675
+  ],
+  [
+   77.42858,
+   31.48639
+  ],
+  [
+   77.42912,
+   31.48539
+  ],
+  [
+   77.4287,
+   31.48332
+  ],
+  [
+   77.42754,
+   31.48209
+  ],
+  [
+   77.429,
+   31.48039
+  ],
+  [
+   77.42911,
+   31.47915
+  ],
+  [
+   77.43114,
+   31.47717
+  ],
+  [
+   77.43136,
+   31.47622
+  ],
+  [
+   77.43254,
+   31.47524
+  ],
+  [
+   77.43315,
+   31.47384
+  ],
+  [
+   77.43423,
+   31.4733
+  ],
+  [
+   77.43466,
+   31.46929
+  ],
+  [
+   77.4369,
+   31.46601
+  ],
+  [
+   77.43337,
+   31.46896
+  ],
+  [
+   77.43127,
+   31.47331
+  ],
+  [
+   77.42892,
+   31.47481
+  ],
+  [
+   77.42774,
+   31.4767
+  ],
+  [
+   77.42687,
+   31.47701
+  ],
+  [
+   77.42514,
+   31.47879
+  ],
+  [
+   77.42524,
+   31.4795
+  ],
+  [
+   77.42365,
+   31.48029
+  ],
+  [
+   77.42434,
+   31.48128
+  ],
+  [
+   77.42373,
+   31.48191
+  ],
+  [
+   77.42364,
+   31.48285
+  ],
+  [
+   77.42503,
+   31.48459
+  ],
+  [
+   77.42448,
+   31.48471
+  ],
+  [
+   77.42338,
+   31.48382
+  ],
+  [
+   77.42201,
+   31.48372
+  ],
+  [
+   77.42035,
+   31.48273
+  ],
+  [
+   77.41917,
+   31.48325
+  ],
+  [
+   77.41866,
+   31.4841
+  ],
+  [
+   77.41767,
+   31.48426
+  ],
+  [
+   77.41733,
+   31.48508
+  ],
+  [
+   77.41525,
+   31.48563
+  ],
+  [
+   77.41443,
+   31.48716
+  ],
+  [
+   77.415,
+   31.48788
+  ],
+  [
+   77.41395,
+   31.48832
+  ],
+  [
+   77.41415,
+   31.4889
+  ],
+  [
+   77.4122,
+   31.48935
+  ],
+  [
+   77.41013,
+   31.49107
+  ],
+  [
+   77.41299,
+   31.48703
+  ],
+  [
+   77.41389,
+   31.48407
+  ],
+  [
+   77.41512,
+   31.48353
+  ],
+  [
+   77.41807,
+   31.48089
+  ],
+  [
+   77.41953,
+   31.47942
+  ],
+  [
+   77.41984,
+   31.47834
+  ],
+  [
+   77.42234,
+   31.47648
+  ],
+  [
+   77.42337,
+   31.47442
+  ],
+  [
+   77.42328,
+   31.47232
+  ],
+  [
+   77.42479,
+   31.46972
+  ],
+  [
+   77.42614,
+   31.46545
+  ],
+  [
+   77.42957,
+   31.46048
+  ],
+  [
+   77.42899,
+   31.45793
+  ],
+  [
+   77.42946,
+   31.4567
+  ],
+  [
+   77.42953,
+   31.45381
+  ],
+  [
+   77.43047,
+   31.45198
+  ],
+  [
+   77.43007,
+   31.45123
+  ],
+  [
+   77.43261,
+   31.4519
+  ],
+  [
+   77.43008,
+   31.44997
+  ],
+  [
+   77.4298,
+   31.44856
+  ],
+  [
+   77.42817,
+   31.44714
+  ],
+  [
+   77.42798,
+   31.44527
+  ],
+  [
+   77.42862,
+   31.4446
+  ],
+  [
+   77.42685,
+   31.44303
+  ],
+  [
+   77.42613,
+   31.44175
+  ],
+  [
+   77.42652,
+   31.44348
+  ],
+  [
+   77.42564,
+   31.44182
+  ],
+  [
+   77.42562,
+   31.44064
+  ],
+  [
+   77.42284,
+   31.43865
+  ],
+  [
+   77.41985,
+   31.43487
+  ],
+  [
+   77.41876,
+   31.43461
+  ]
+ ],
+ "fuel": {
+  "listed": true,
+  "pumps": [
+   {
+    "id": "fuel:node-10955984309",
+    "name": "Hindustan Petroleum",
+    "brand": "Hindustan Petroleum",
+    "near": "Aut",
+    "km_from_start": 5.5,
+    "lat": 31.72652,
+    "lon": 77.22597,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/node/10955984309"
+   },
+   {
+    "id": "fuel:node-10955993525",
+    "name": "Hindustan Petroleum",
+    "brand": "Hindustan Petroleum",
+    "near": "Aut",
+    "km_from_start": 11.7,
+    "lat": 31.70256,
+    "lon": 77.26141,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/node/10955993525"
+   },
+   {
+    "id": "fuel:node-10955982493",
+    "name": "Indian Oil",
+    "brand": "Indian Oil",
+    "near": "Banjar",
+    "km_from_start": 18.7,
+    "lat": 31.66571,
+    "lon": 77.30427,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/node/10955982493"
+   }
+  ],
+  "pump_count": 3,
+  "stops": 3,
+  "longest_gaps": [
+   {
+    "from_km": 18.7,
+    "to_km": 97.2,
+    "gap_km": 78.5,
+    "from_is": "pump",
+    "to_is": "end of route",
+    "near_from": "Banjar",
+    "near_to": "Anni"
+   },
+   {
+    "from_km": 11.7,
+    "to_km": 18.7,
+    "gap_km": 7.0,
+    "from_is": "pump",
+    "to_is": "pump",
+    "near_from": "Aut",
+    "near_to": "Banjar"
+   },
+   {
+    "from_km": 5.5,
+    "to_km": 11.7,
+    "gap_km": 6.2,
+    "from_is": "pump",
+    "to_is": "pump",
+    "near_from": "Aut",
+    "near_to": "Aut"
+   },
+   {
+    "from_km": 0.0,
+    "to_km": 5.5,
+    "gap_km": 5.5,
+    "from_is": "start of route",
+    "to_is": "pump",
+    "near_from": "Aut",
+    "near_to": "Aut"
+   }
+  ],
+  "note": "Pumps are those drawn on the open map within the search radius of the road. A pump missing from the map is missing here, so each gap is a worst case.",
+  "fetched": "2026-09-28"
+ },
+ "rules": [
+  {
+   "id": "rule:nh-305-heavy-vehicle-restriction",
+   "kind": "timing",
+   "title": "NH 305: heavy vehicles restricted, Aut to Jalori Pass",
+   "detail": "District notices bar trucks, tippers and dumpers on set days and hours to ease jams. Motorcycles and light vehicles are not named in the restriction.",
+   "applies_to": "Heavy goods vehicles",
+   "set_by": "Sub-Divisional Magistrate, Banjar, and Kullu district administration",
+   "official_url": "https://hpkullu.nic.in/notice/the-movement-of-heavy-motor-vehicles-viz-tippers-dumpers-and-other-heavy-vehicles-is-restricted-on-nh-305-from-aut-to-jalori-pass-route/",
+   "has_official_order": true,
+   "source": {
+    "url": "https://hpkullu.nic.in/notice/the-movement-of-heavy-motor-vehicles-viz-tippers-dumpers-and-other-heavy-vehicles-is-restricted-on-nh-305-from-aut-to-jalori-pass-route/",
+    "title": "The movement of heavy motor vehicles viz. tippers, dumpers and other heavy vehicles is restricted on NH-305 from Aut to Jalori Pass route",
+    "kind": "official",
+    "opened": true,
+    "source_date": "2025-11-27",
+    "accessed": "2026-09-28"
+   },
+   "history": [
+    {
+     "date": "2024-04-10",
+     "change": "Heavy vehicles barred from Larji to Jalori between 08:00 and 11:00 and between 13:00 and 21:00, until further orders.",
+     "source": {
+      "url": "https://www.tribuneindia.com/news/himachal/heavy-vehicles-barred-from-larji-jalori-stretch-of-nh-305-to-ease-congestion-610570/",
+      "title": "Heavy vehicles barred from Larji-Jalori stretch of NH-305 to ease congestion",
+      "kind": "news",
+      "opened": true,
+      "source_date": "2024-04-14",
+      "accessed": "2026-09-28"
+     }
+    },
+    {
+     "date": "2025-11-27",
+     "change": "District notice restricts heavy vehicles from Aut to Jalori Pass until 31 December 2025.",
+     "source": {
+      "url": "https://hpkullu.nic.in/notice/the-movement-of-heavy-motor-vehicles-viz-tippers-dumpers-and-other-heavy-vehicles-is-restricted-on-nh-305-from-aut-to-jalori-pass-route/",
+      "title": "The movement of heavy motor vehicles viz. tippers, dumpers and other heavy vehicles is restricted on NH-305 from Aut to Jalori Pass route",
+      "kind": "official",
+      "opened": true,
+      "source_date": "2025-11-27",
+      "accessed": "2026-09-28"
+     }
+    },
+    {
+     "date": "2026-08",
+     "change": "Weight limit of 18 tonnes reported on four bridges of the highway; page not opened.",
+     "source": {
+      "url": "https://himachaldastak.com/kullu-nh-305-four-bridges-heavy-vehicles-ban-18-ton-limit/",
+      "title": "Kullu: heavy vehicles barred on four bridges of NH-305, 18 tonne limit",
+      "kind": "news",
+      "opened": false,
+      "source_date": null,
+      "accessed": "2026-09-28"
+     }
+    }
+   ]
+  },
+  {
+   "id": "rule:jalori-pass-four-wheel-drive-first-after-snow",
+   "kind": "timing",
+   "title": "Jalori Pass: four-wheel-drive first after snowfall",
+   "detail": "After each snow closure the highway is reopened to four-wheel-drive vehicles first, then to others and buses. Reports do not mention motorcycles. No written order found.",
+   "applies_to": "All vehicles",
+   "set_by": "National Highways Authority of India and Kullu district administration, as reported",
+   "official_url": null,
+   "has_official_order": false,
+   "source": {
+    "url": "https://www.tribuneindia.com/news/himachal/nhai-restores-aut-luhri-road-via-jalori-pass",
+    "title": "NHAI restores Aut-Luhri road via Jalori Pass",
+    "kind": "news",
+    "opened": true,
+    "source_date": "2025-02-09",
+    "accessed": "2026-09-28"
+   },
+   "history": [
+    {
+     "date": "2020-02-10",
+     "change": "Pass reopened after 37 days; officials called movement risky at first.",
+     "source": {
+      "url": "https://www.tribuneindia.com/news/himachal/jalori-pass-thrown-open-after-37-days-39027",
+      "title": "Jalori Pass thrown open after 37 days",
+      "kind": "news",
+      "opened": true,
+      "source_date": "2020-02-11",
+      "accessed": "2026-09-28"
+     }
+    },
+    {
+     "date": "2024-03-19",
+     "change": "Blocked again by light snow days after reopening from a 45-day closure.",
+     "source": {
+      "url": "https://www.tribuneindia.com/news/himachal/opened-after-45-days-jalori-pass-blocked-again-after-mild-snowfall-602482/",
+      "title": "Opened after 45 days, Jalori Pass blocked again after mild snowfall",
+      "kind": "news",
+      "opened": true,
+      "source_date": "2024-03-20",
+      "accessed": "2026-09-28"
+     }
+    },
+    {
+     "date": "2025-02-09",
+     "change": "Restored for four-wheel-drive vehicles after snow on 5 February.",
+     "source": {
+      "url": "https://www.tribuneindia.com/news/himachal/nhai-restores-aut-luhri-road-via-jalori-pass",
+      "title": "NHAI restores Aut-Luhri road via Jalori Pass",
+      "kind": "news",
+      "opened": true,
+      "source_date": "2025-02-09",
+      "accessed": "2026-09-28"
+     }
+    }
+   ]
+  },
+  {
+   "id": "rule:himachal-entry-toll-other-state-vehicles",
+   "kind": "tax",
+   "title": "Himachal entry toll for vehicles from other states",
+   "detail": "Charged at entry barriers under the yearly toll policy. Notified rates name passenger and goods vehicles only. The Chief Minister said two-wheelers stay exempt. The policy document was not opened.",
+   "applies_to": "Vehicles registered outside Himachal Pradesh",
+   "set_by": "Department of State Taxes and Excise, Government of Himachal Pradesh",
+   "official_url": "https://www.hptax.gov.in/public/setpdf/Toll%20Policy%202026_27.pdf",
+   "has_official_order": true,
+   "source": {
+    "url": "https://www.tribuneindia.com/news/himachal/himachal-toll-tax-rates-revised-heres-what-you-need-to-know/",
+    "title": "Himachal toll tax rates revised: Here's what you need to know",
+    "kind": "news",
+    "opened": true,
+    "source_date": "2026-04-02",
+    "accessed": "2026-09-28"
+   },
+   "history": [
+    {
+     "date": "2026-02-20",
+     "change": "Toll Policy 2026-27 announced with higher rates from 1 April 2026; receipt reported valid 24 hours across the state.",
+     "source": {
+      "url": "https://www.businesstoday.in/india/story/himachal-pradesh-revises-toll-tax-rates-heres-how-much-vehicle-entry-fee-youll-have-to-pay-from-april-1-517204-2026-02-20",
+      "title": "Himachal Pradesh revises toll tax rates. Here's how much vehicle entry fee you'll have to pay from April 1",
+      "kind": "news",
+      "opened": true,
+      "source_date": "2026-02-20",
+      "accessed": "2026-09-28"
+     }
+    },
+    {
+     "date": "2026-03-26",
+     "change": "Chief Minister told the assembly the tax would be reviewed and that light vehicles and two-wheelers remain exempt.",
+     "source": {
+      "url": "https://www.tribuneindia.com/news/himachal/himachal-govt-signals-rethink-on-entry-tax/",
+      "title": "Himachal Govt signals rethink on entry tax",
+      "kind": "news",
+      "opened": true,
+      "source_date": "2026-03-26",
+      "accessed": "2026-09-28"
+     }
+    },
+    {
+     "date": "2026-04-02",
+     "change": "Revised rates reported, with a lower rate for passenger vehicles from other states; two-wheelers not listed.",
+     "source": {
+      "url": "https://www.tribuneindia.com/news/himachal/himachal-toll-tax-rates-revised-heres-what-you-need-to-know/",
+      "title": "Himachal toll tax rates revised: Here's what you need to know",
+      "kind": "news",
+      "opened": true,
+      "source_date": "2026-04-02",
+      "accessed": "2026-09-28"
+     }
+    }
+   ]
+  }
+ ],
+ "season": {
+  "note": "Jalori Pass has no fixed closing order; it shuts whenever snow falls between December and March and reopens when the highway authority clears it.",
+  "history": [
+   {
+    "year": 2026,
+    "connected": "2026-03",
+    "open_to_motorcycles": null,
+    "closed": null,
+    "note": "A local blog says the road has been open since mid-March 2026. Closing date for the 2025-26 winter not found.",
+    "sources": [
+     {
+      "url": "https://jibhi.in/blog/best-time-to-visit-jalori-pass",
+      "title": "Jalori Pass Weather Guide: Snow, Seasons & Road Status 2026",
+      "kind": "blog",
+      "opened": true,
+      "source_date": "2026-02-06",
+      "accessed": "2026-09-28"
+     }
+    ]
+   },
+   {
+    "year": 2025,
+    "connected": "2025-02-09",
+    "open_to_motorcycles": null,
+    "closed": null,
+    "note": "Shut by snow on 5 February 2025; restored for four-wheel-drive vehicles on 9 February.",
+    "sources": [
+     {
+      "url": "https://www.tribuneindia.com/news/himachal/nhai-restores-aut-luhri-road-via-jalori-pass",
+      "title": "NHAI restores Aut-Luhri road via Jalori Pass",
+      "kind": "news",
+      "opened": true,
+      "source_date": "2025-02-09",
+      "accessed": "2026-09-28"
+     }
+    ]
+   },
+   {
+    "year": 2024,
+    "connected": "2024-03",
+    "open_to_motorcycles": null,
+    "closed": null,
+    "note": "Shut by snow on 30 January 2024, reopened after 45 days in mid-March, blocked again on 19 March.",
+    "sources": [
+     {
+      "url": "https://www.tribuneindia.com/news/himachal/opened-after-45-days-jalori-pass-blocked-again-after-mild-snowfall-602482/",
+      "title": "Opened after 45 days, Jalori Pass blocked again after mild snowfall",
+      "kind": "news",
+      "opened": true,
+      "source_date": "2024-03-20",
+      "accessed": "2026-09-28"
+     }
+    ]
+   },
+   {
+    "year": 2020,
+    "connected": "2020-02-10",
+    "open_to_motorcycles": null,
+    "closed": null,
+    "note": "Reopened on the evening of 10 February after 37 days shut.",
+    "sources": [
+     {
+      "url": "https://www.tribuneindia.com/news/himachal/jalori-pass-thrown-open-after-37-days-39027",
+      "title": "Jalori Pass thrown open after 37 days",
+      "kind": "news",
+      "opened": true,
+      "source_date": "2020-02-11",
+      "accessed": "2026-09-28"
+     }
+    ]
+   }
+  ]
+ },
+ "authorities": [
+  {
+   "id": "authority:sub-divisional-magistrate-banjar-and-kullu-district-administ",
+   "office": "Sub-Divisional Magistrate, Banjar, and Kullu district administration",
+   "announces": "Traffic restrictions on the highway",
+   "stretch": "NH 305, Aut and Larji to Jalori Pass",
+   "channel": "Notices on the Kullu district website",
+   "url": "https://hpkullu.nic.in/",
+   "source": {
+    "url": "https://hpkullu.nic.in/notice/the-movement-of-heavy-motor-vehicles-viz-tippers-dumpers-and-other-heavy-vehicles-is-restricted-on-nh-305-from-aut-to-jalori-pass-route/",
+    "title": "The movement of heavy motor vehicles viz. tippers, dumpers and other heavy vehicles is restricted on NH-305 from Aut to Jalori Pass route",
+    "kind": "official",
+    "opened": true,
+    "source_date": "2025-11-27",
+    "accessed": "2026-09-28"
+   }
+  },
+  {
+   "id": "authority:national-highways-authority-of-india",
+   "office": "National Highways Authority of India",
+   "announces": "Clears snow and restores the highway",
+   "stretch": "NH 305, Banjar to Jalori Pass to Anni",
+   "channel": "Statements to newspapers",
+   "url": null,
+   "source": {
+    "url": "https://www.tribuneindia.com/news/himachal/nhai-restores-aut-luhri-road-via-jalori-pass",
+    "title": "NHAI restores Aut-Luhri road via Jalori Pass",
+    "kind": "news",
+    "opened": true,
+    "source_date": "2025-02-09",
+    "accessed": "2026-09-28"
+   }
+  },
+  {
+   "id": "authority:himachal-pradesh-public-works-department",
+   "office": "Himachal Pradesh Public Works Department",
+   "announces": "Roads open, blocked or restored",
+   "stretch": "Department roads across Himachal Pradesh",
+   "channel": "Road Status Information System website and mobile apps",
+   "url": "https://hppwd.in/",
+   "source": {
+    "url": "https://hppwd.in/",
+    "title": "Himachal Pradesh Public Works Department",
+    "kind": "official",
+    "opened": true,
+    "source_date": null,
+    "accessed": "2026-09-28"
+   }
+  },
+  {
+   "id": "authority:union-ministry-of-road-transport-and-highways",
+   "office": "Union Ministry of Road Transport and Highways",
+   "announces": "Approved the alignment of a tunnel under the pass",
+   "stretch": "Shoja to Bhargol",
+   "channel": "Reported by newspapers",
+   "url": null,
+   "source": {
+    "url": "https://www.tribuneindia.com/news/himachal/centre-finalises-alignment-of-jalori-tunnel-on-nh-305/",
+    "title": "Centre finalises alignment of Jalori tunnel on NH-305",
+    "kind": "news",
+    "opened": true,
+    "source_date": "2024-12-29",
+    "accessed": "2026-09-28"
+   }
+  }
+ ],
+ "hazards": [
+  {
+   "id": "hazard:snow-closures-on-jalori-pass",
+   "title": "Snow closures on Jalori Pass",
+   "detail": "The pass shuts for days or weeks after snowfall and can close again within days of reopening.",
+   "months": [
+    12,
+    1,
+    2,
+    3
+   ],
+   "source": {
+    "url": "https://www.tribuneindia.com/news/himachal/opened-after-45-days-jalori-pass-blocked-again-after-mild-snowfall-602482/",
+    "title": "Opened after 45 days, Jalori Pass blocked again after mild snowfall",
+    "kind": "news",
+    "opened": true,
+    "source_date": "2024-03-20",
+    "accessed": "2026-09-28"
+   }
+  },
+  {
+   "id": "hazard:landslides-in-the-rains",
+   "title": "Landslides in the rains",
+   "detail": "A newspaper notes the pass road is also shut for days by landslides during the rains.",
+   "months": [
+    7,
+    8,
+    9
+   ],
+   "source": {
+    "url": "https://www.tribuneindia.com/news/himachal/opened-after-45-days-jalori-pass-blocked-again-after-mild-snowfall-602482/",
+    "title": "Opened after 45 days, Jalori Pass blocked again after mild snowfall",
+    "kind": "news",
+    "opened": true,
+    "source_date": "2024-03-20",
+    "accessed": "2026-09-28"
+   }
+  },
+  {
+   "id": "hazard:steep-narrow-climb-from-jibhi-and-shoja",
+   "title": "Steep, narrow climb from Jibhi and Shoja",
+   "detail": "A local guide calls the road steep, narrow and winding, easiest in dry conditions.",
+   "months": [],
+   "source": {
+    "url": "https://jibhi.in/blog/best-time-to-visit-jalori-pass",
+    "title": "Jalori Pass Weather Guide: Snow, Seasons & Road Status 2026",
+    "kind": "blog",
+    "opened": true,
+    "source_date": "2026-02-06",
+    "accessed": "2026-09-28"
+   }
+  }
+ ],
+ "videos": [
+  {
+   "id": "24zqN-9k4o8",
+   "url": "https://www.youtube.com/watch?v=24zqN-9k4o8",
+   "title": "Jibhi To Jalori Pass Via Shoja : The Most Scenic Bike Ride in Himachal #shoja #Jibhi #JaloriPass",
+   "channel": "Go Riders",
+   "stretch": "Jibhi to Shoja to Jalori Pass",
+   "filmed": null,
+   "bike": null,
+   "checked": false
+  },
+  {
+   "id": "NW6dLYkdeJA",
+   "url": "https://www.youtube.com/watch?v=NW6dLYkdeJA",
+   "title": "Ride to Jalori Pass | Tirthan Valley | Jibhi | Shoja | Delhi to Jalori Pass",
+   "channel": "Rahul Sharma",
+   "stretch": "Tirthan valley and Jibhi to Jalori Pass",
+   "filmed": null,
+   "bike": null,
+   "checked": false
+  }
+ ],
+ "image": {
+  "file": "jalori-tirthan.jpg",
+  "small": "jalori-tirthan-small.jpg",
+  "title": "GHNP view from Jalori pass.jpg",
+  "shows": "The view from Jalori Pass",
+  "author": "Manish57335",
+  "licence": "CC BY-SA 4.0",
+  "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+  "source_page": "https://commons.wikimedia.org/wiki/File:GHNP_view_from_Jalori_pass.jpg",
+  "source": "Wikimedia Commons",
+  "taken": "2017-06-10 14:45:01",
+  "changes": "Resized. Not otherwise changed.",
+  "fetched": "2026-09-28"
+ },
+ "gaps": [
+  "Himachal entry toll: the two-wheeler exemption rests on a newspaper report of the Chief Minister's statement (26 March 2026). The official Toll Policy 2026-27 document on hptax.gov.in failed to open (certificate error), so it is not confirmed for motorcycles registered in other states.",
+  "Jalori Pass altitude: a local blog gives 3,120 metres; newspapers give 10,280 feet and 10,800 feet. No official figure found.",
+  "No closing or reopening dates found for the winters of 2020-21, 2021-22 and 2022-23.",
+  "No source found for rules in the Tirthan valley, including any entry fee for the Great Himalayan National Park.",
+  "The hours of the November 2025 heavy vehicle restriction sit in a document attached to the district notice, which was not opened.",
+  "No source found on whether any office sets timings for two-wheelers on the pass.",
+  "Videos: titles and channels were read from the video pages; filming dates and motorcycles are not confirmed."
+ ],
+ "counts": {
+  "facts": 38
+ },
+ "built": "2026-09-28"
+}

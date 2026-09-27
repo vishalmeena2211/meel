@@ -1,0 +1,3146 @@
+{
+ "slug": "gurez-valley",
+ "name": "Gurez valley",
+ "region": "kashmir-jammu",
+ "region_name": "Kashmir and Jammu",
+ "batch": 1,
+ "terrain": "mountain",
+ "country": "in",
+ "level": "basic",
+ "one_line": "North Kashmir, from Srinagar through Bandipora and over Razdan Pass to Dawar near the Line of Control",
+ "places": [
+  "Srinagar",
+  "Bandipora",
+  "Razdan Pass",
+  "Dawar"
+ ],
+ "header": {
+  "highway": {
+   "value": "No highway number found; Bandipora to Gurez road",
+   "source": {
+    "url": "https://en.wikipedia.org/wiki/Razdan_Pass",
+    "title": "Razdan Pass",
+    "kind": "encyclopedia",
+    "opened": true,
+    "source_date": null,
+    "accessed": "2026-09-28"
+   }
+  },
+  "distance_km": 140.8,
+  "map_app_hours": 2.46,
+  "usual_days": {
+   "value": "3",
+   "source": {
+    "url": "https://travelcoffee.in/blog/gurez-valley-travel-guide",
+    "title": "Gurez Valley Travel Guide 2026: Route, Permit, Cost",
+    "kind": "operator",
+    "opened": true,
+    "source_date": "2026-07-26",
+    "accessed": "2026-09-28"
+   }
+  },
+  "highest_point": {
+   "name": "Razdan Pass",
+   "altitude_m": 3556,
+   "source": {
+    "url": "https://en.wikipedia.org/wiki/Razdan_Pass",
+    "title": "Razdan Pass",
+    "kind": "encyclopedia",
+    "opened": true,
+    "source_date": null,
+    "accessed": "2026-09-28"
+   },
+   "computed": false
+  },
+  "usual_season": {
+   "value": "May to October",
+   "source": {
+    "url": "https://travelcoffee.in/blog/gurez-valley-travel-guide",
+    "title": "Gurez Valley Travel Guide 2026: Route, Permit, Cost",
+    "kind": "operator",
+    "opened": true,
+    "source_date": "2026-07-26",
+    "accessed": "2026-09-28"
+   }
+  }
+ },
+ "waypoints": [
+  {
+   "name": "Srinagar",
+   "lat": 34.07457,
+   "lon": 74.8205,
+   "km_from_start": 0.0,
+   "altitude_m": 1590,
+   "kind": "place",
+   "moved_to_road_m": 20
+  },
+  {
+   "name": "Bandipora",
+   "lat": 34.42307,
+   "lon": 74.63596,
+   "km_from_start": 60.5,
+   "altitude_m": 1595,
+   "kind": "place",
+   "moved_to_road_m": 19
+  },
+  {
+   "name": "Razdan Pass",
+   "lat": 34.5407,
+   "lon": 74.63597,
+   "km_from_start": 102.3,
+   "altitude_m": 3520,
+   "kind": "pass",
+   "moved_to_road_m": 92
+  },
+  {
+   "name": "Dawar",
+   "lat": 34.63493,
+   "lon": 74.81651,
+   "km_from_start": 140.8,
+   "altitude_m": 2402,
+   "kind": "place",
+   "moved_to_road_m": 86
+  }
+ ],
+ "stretches": [
+  {
+   "from": "Srinagar",
+   "to": "Bandipora",
+   "distance_km": 60.5,
+   "map_app_hours": 0.87,
+   "doubtful": false
+  },
+  {
+   "from": "Bandipora",
+   "to": "Razdan Pass",
+   "distance_km": 41.8,
+   "map_app_hours": 0.78,
+   "doubtful": false
+  },
+  {
+   "from": "Razdan Pass",
+   "to": "Dawar",
+   "distance_km": 38.5,
+   "map_app_hours": 0.82,
+   "doubtful": false
+  }
+ ],
+ "profile": [
+  {
+   "km": 0.0,
+   "m": 1590
+  },
+  {
+   "km": 2.1,
+   "m": 1585
+  },
+  {
+   "km": 4.1,
+   "m": 1582
+  },
+  {
+   "km": 6.2,
+   "m": 1586
+  },
+  {
+   "km": 8.2,
+   "m": 1585
+  },
+  {
+   "km": 10.3,
+   "m": 1584
+  },
+  {
+   "km": 12.3,
+   "m": 1583
+  },
+  {
+   "km": 14.4,
+   "m": 1583
+  },
+  {
+   "km": 16.4,
+   "m": 1581
+  },
+  {
+   "km": 18.5,
+   "m": 1584
+  },
+  {
+   "km": 20.6,
+   "m": 1578
+  },
+  {
+   "km": 22.6,
+   "m": 1583
+  },
+  {
+   "km": 24.7,
+   "m": 1584
+  },
+  {
+   "km": 26.7,
+   "m": 1585
+  },
+  {
+   "km": 28.8,
+   "m": 1583
+  },
+  {
+   "km": 30.8,
+   "m": 1586
+  },
+  {
+   "km": 32.9,
+   "m": 1594
+  },
+  {
+   "km": 35.0,
+   "m": 1597
+  },
+  {
+   "km": 37.0,
+   "m": 1588
+  },
+  {
+   "km": 39.1,
+   "m": 1585
+  },
+  {
+   "km": 41.1,
+   "m": 1592
+  },
+  {
+   "km": 43.2,
+   "m": 1600
+  },
+  {
+   "km": 45.2,
+   "m": 1595
+  },
+  {
+   "km": 47.3,
+   "m": 1591
+  },
+  {
+   "km": 49.3,
+   "m": 1627
+  },
+  {
+   "km": 51.4,
+   "m": 1597
+  },
+  {
+   "km": 53.5,
+   "m": 1586
+  },
+  {
+   "km": 55.5,
+   "m": 1589
+  },
+  {
+   "km": 57.6,
+   "m": 1594
+  },
+  {
+   "km": 59.6,
+   "m": 1594
+  },
+  {
+   "km": 61.7,
+   "m": 1601
+  },
+  {
+   "km": 63.7,
+   "m": 1633
+  },
+  {
+   "km": 65.8,
+   "m": 1691
+  },
+  {
+   "km": 67.9,
+   "m": 1806
+  },
+  {
+   "km": 69.9,
+   "m": 1902
+  },
+  {
+   "km": 72.0,
+   "m": 2002
+  },
+  {
+   "km": 74.0,
+   "m": 2096
+  },
+  {
+   "km": 76.1,
+   "m": 2191
+  },
+  {
+   "km": 78.1,
+   "m": 2331
+  },
+  {
+   "km": 80.2,
+   "m": 2429
+  },
+  {
+   "km": 82.2,
+   "m": 2537
+  },
+  {
+   "km": 84.3,
+   "m": 2625
+  },
+  {
+   "km": 86.4,
+   "m": 2765
+  },
+  {
+   "km": 88.4,
+   "m": 2836
+  },
+  {
+   "km": 90.5,
+   "m": 2891
+  },
+  {
+   "km": 92.5,
+   "m": 3011
+  },
+  {
+   "km": 94.6,
+   "m": 3155
+  },
+  {
+   "km": 96.6,
+   "m": 3241
+  },
+  {
+   "km": 98.7,
+   "m": 3337
+  },
+  {
+   "km": 100.7,
+   "m": 3499
+  },
+  {
+   "km": 102.8,
+   "m": 3506
+  },
+  {
+   "km": 104.9,
+   "m": 3410
+  },
+  {
+   "km": 106.9,
+   "m": 3300
+  },
+  {
+   "km": 109.0,
+   "m": 3177
+  },
+  {
+   "km": 111.0,
+   "m": 3084
+  },
+  {
+   "km": 113.1,
+   "m": 2998
+  },
+  {
+   "km": 115.1,
+   "m": 2865
+  },
+  {
+   "km": 117.2,
+   "m": 2874
+  },
+  {
+   "km": 119.3,
+   "m": 2765
+  },
+  {
+   "km": 121.3,
+   "m": 2673
+  },
+  {
+   "km": 123.4,
+   "m": 2521
+  },
+  {
+   "km": 125.4,
+   "m": 2420
+  },
+  {
+   "km": 127.5,
+   "m": 2354
+  },
+  {
+   "km": 129.5,
+   "m": 2403
+  },
+  {
+   "km": 131.6,
+   "m": 2391
+  },
+  {
+   "km": 133.6,
+   "m": 2452
+  },
+  {
+   "km": 135.7,
+   "m": 2457
+  },
+  {
+   "km": 137.8,
+   "m": 2435
+  },
+  {
+   "km": 139.8,
+   "m": 2399
+  },
+  {
+   "km": 140.8,
+   "m": 2402
+  }
+ ],
+ "line": [
+  [
+   74.8205,
+   34.07457
+  ],
+  [
+   74.82141,
+   34.07467
+  ],
+  [
+   74.80874,
+   34.0716
+  ],
+  [
+   74.80409,
+   34.0715
+  ],
+  [
+   74.79502,
+   34.07533
+  ],
+  [
+   74.79465,
+   34.07575
+  ],
+  [
+   74.79421,
+   34.08053
+  ],
+  [
+   74.79263,
+   34.08164
+  ],
+  [
+   74.78459,
+   34.08159
+  ],
+  [
+   74.78365,
+   34.08198
+  ],
+  [
+   74.77408,
+   34.09595
+  ],
+  [
+   74.76439,
+   34.10275
+  ],
+  [
+   74.75666,
+   34.1057
+  ],
+  [
+   74.74543,
+   34.10906
+  ],
+  [
+   74.73628,
+   34.11024
+  ],
+  [
+   74.74549,
+   34.10916
+  ],
+  [
+   74.73675,
+   34.11832
+  ],
+  [
+   74.73197,
+   34.12419
+  ],
+  [
+   74.72783,
+   34.12625
+  ],
+  [
+   74.71681,
+   34.12726
+  ],
+  [
+   74.70633,
+   34.13308
+  ],
+  [
+   74.70484,
+   34.14119
+  ],
+  [
+   74.70057,
+   34.15305
+  ],
+  [
+   74.6955,
+   34.15778
+  ],
+  [
+   74.68224,
+   34.17195
+  ],
+  [
+   74.67729,
+   34.17854
+  ],
+  [
+   74.67346,
+   34.18021
+  ],
+  [
+   74.67131,
+   34.18757
+  ],
+  [
+   74.66348,
+   34.20129
+  ],
+  [
+   74.66383,
+   34.20254
+  ],
+  [
+   74.66318,
+   34.20391
+  ],
+  [
+   74.65089,
+   34.21471
+  ],
+  [
+   74.64935,
+   34.21899
+  ],
+  [
+   74.65126,
+   34.22618
+  ],
+  [
+   74.65088,
+   34.22818
+  ],
+  [
+   74.65364,
+   34.22901
+  ],
+  [
+   74.65268,
+   34.23194
+  ],
+  [
+   74.65112,
+   34.2337
+  ],
+  [
+   74.6478,
+   34.23546
+  ],
+  [
+   74.64784,
+   34.24071
+  ],
+  [
+   74.64843,
+   34.24215
+  ],
+  [
+   74.65024,
+   34.24402
+  ],
+  [
+   74.65162,
+   34.24847
+  ],
+  [
+   74.65332,
+   34.25193
+  ],
+  [
+   74.66319,
+   34.25657
+  ],
+  [
+   74.66474,
+   34.25917
+  ],
+  [
+   74.66622,
+   34.25977
+  ],
+  [
+   74.66622,
+   34.26197
+  ],
+  [
+   74.66731,
+   34.2647
+  ],
+  [
+   74.66897,
+   34.2668
+  ],
+  [
+   74.67486,
+   34.27103
+  ],
+  [
+   74.67745,
+   34.27235
+  ],
+  [
+   74.67579,
+   34.27638
+  ],
+  [
+   74.67373,
+   34.27833
+  ],
+  [
+   74.67429,
+   34.28144
+  ],
+  [
+   74.67241,
+   34.28353
+  ],
+  [
+   74.66923,
+   34.28466
+  ],
+  [
+   74.66927,
+   34.28722
+  ],
+  [
+   74.66845,
+   34.28943
+  ],
+  [
+   74.66489,
+   34.29137
+  ],
+  [
+   74.66242,
+   34.29425
+  ],
+  [
+   74.65969,
+   34.29491
+  ],
+  [
+   74.65593,
+   34.29713
+  ],
+  [
+   74.65582,
+   34.29781
+  ],
+  [
+   74.65698,
+   34.30035
+  ],
+  [
+   74.65685,
+   34.30125
+  ],
+  [
+   74.65619,
+   34.30193
+  ],
+  [
+   74.65322,
+   34.30263
+  ],
+  [
+   74.65605,
+   34.30466
+  ],
+  [
+   74.65933,
+   34.30265
+  ],
+  [
+   74.66267,
+   34.30312
+  ],
+  [
+   74.66528,
+   34.30643
+  ],
+  [
+   74.66965,
+   34.3055
+  ],
+  [
+   74.67266,
+   34.30826
+  ],
+  [
+   74.67421,
+   34.31317
+  ],
+  [
+   74.67451,
+   34.31568
+  ],
+  [
+   74.67873,
+   34.3182
+  ],
+  [
+   74.68101,
+   34.31822
+  ],
+  [
+   74.68115,
+   34.32081
+  ],
+  [
+   74.6829,
+   34.32469
+  ],
+  [
+   74.68202,
+   34.32586
+  ],
+  [
+   74.67984,
+   34.32657
+  ],
+  [
+   74.67438,
+   34.32998
+  ],
+  [
+   74.67259,
+   34.33363
+  ],
+  [
+   74.66947,
+   34.33642
+  ],
+  [
+   74.66823,
+   34.33669
+  ],
+  [
+   74.66558,
+   34.33631
+  ],
+  [
+   74.66344,
+   34.33788
+  ],
+  [
+   74.66282,
+   34.33875
+  ],
+  [
+   74.66437,
+   34.34259
+  ],
+  [
+   74.66347,
+   34.34568
+  ],
+  [
+   74.66175,
+   34.34777
+  ],
+  [
+   74.65826,
+   34.34931
+  ],
+  [
+   74.66046,
+   34.3519
+  ],
+  [
+   74.66121,
+   34.35202
+  ],
+  [
+   74.66369,
+   34.35403
+  ],
+  [
+   74.66501,
+   34.35741
+  ],
+  [
+   74.66293,
+   34.36077
+  ],
+  [
+   74.65979,
+   34.36201
+  ],
+  [
+   74.65734,
+   34.36359
+  ],
+  [
+   74.66327,
+   34.3635
+  ],
+  [
+   74.66873,
+   34.36782
+  ],
+  [
+   74.6702,
+   34.36963
+  ],
+  [
+   74.67171,
+   34.37039
+  ],
+  [
+   74.67316,
+   34.37268
+  ],
+  [
+   74.67312,
+   34.37669
+  ],
+  [
+   74.67218,
+   34.3783
+  ],
+  [
+   74.6729,
+   34.38164
+  ],
+  [
+   74.66817,
+   34.38768
+  ],
+  [
+   74.65694,
+   34.39462
+  ],
+  [
+   74.65583,
+   34.39724
+  ],
+  [
+   74.65593,
+   34.39956
+  ],
+  [
+   74.65499,
+   34.40101
+  ],
+  [
+   74.65399,
+   34.40526
+  ],
+  [
+   74.65315,
+   34.40693
+  ],
+  [
+   74.65513,
+   34.40859
+  ],
+  [
+   74.65459,
+   34.40931
+  ],
+  [
+   74.65238,
+   34.4088
+  ],
+  [
+   74.64648,
+   34.40881
+  ],
+  [
+   74.64199,
+   34.40747
+  ],
+  [
+   74.64051,
+   34.40747
+  ],
+  [
+   74.64082,
+   34.40964
+  ],
+  [
+   74.64212,
+   34.41101
+  ],
+  [
+   74.64324,
+   34.41365
+  ],
+  [
+   74.6433,
+   34.41491
+  ],
+  [
+   74.64077,
+   34.41843
+  ],
+  [
+   74.63951,
+   34.4192
+  ],
+  [
+   74.63596,
+   34.42307
+  ],
+  [
+   74.63949,
+   34.42482
+  ],
+  [
+   74.63992,
+   34.42557
+  ],
+  [
+   74.64017,
+   34.42701
+  ],
+  [
+   74.63944,
+   34.42868
+  ],
+  [
+   74.63993,
+   34.43209
+  ],
+  [
+   74.64071,
+   34.43382
+  ],
+  [
+   74.64182,
+   34.43436
+  ],
+  [
+   74.6428,
+   34.43617
+  ],
+  [
+   74.64445,
+   34.43742
+  ],
+  [
+   74.64635,
+   34.44282
+  ],
+  [
+   74.64782,
+   34.44501
+  ],
+  [
+   74.64745,
+   34.44687
+  ],
+  [
+   74.64784,
+   34.44974
+  ],
+  [
+   74.65306,
+   34.45418
+  ],
+  [
+   74.6533,
+   34.45501
+  ],
+  [
+   74.65267,
+   34.45582
+  ],
+  [
+   74.65387,
+   34.45579
+  ],
+  [
+   74.65462,
+   34.45716
+  ],
+  [
+   74.6546,
+   34.45911
+  ],
+  [
+   74.65532,
+   34.45984
+  ],
+  [
+   74.65571,
+   34.46193
+  ],
+  [
+   74.65377,
+   34.46081
+  ],
+  [
+   74.65118,
+   34.46202
+  ],
+  [
+   74.65343,
+   34.46131
+  ],
+  [
+   74.65448,
+   34.462
+  ],
+  [
+   74.65357,
+   34.4635
+  ],
+  [
+   74.65102,
+   34.4649
+  ],
+  [
+   74.64969,
+   34.46509
+  ],
+  [
+   74.64934,
+   34.46585
+  ],
+  [
+   74.65022,
+   34.46689
+  ],
+  [
+   74.65046,
+   34.46881
+  ],
+  [
+   74.65326,
+   34.47163
+  ],
+  [
+   74.65456,
+   34.47137
+  ],
+  [
+   74.65718,
+   34.47344
+  ],
+  [
+   74.65705,
+   34.47489
+  ],
+  [
+   74.66112,
+   34.47433
+  ],
+  [
+   74.66401,
+   34.4732
+  ],
+  [
+   74.66617,
+   34.47363
+  ],
+  [
+   74.66782,
+   34.47467
+  ],
+  [
+   74.66596,
+   34.47392
+  ],
+  [
+   74.66387,
+   34.47415
+  ],
+  [
+   74.66043,
+   34.47683
+  ],
+  [
+   74.65724,
+   34.47857
+  ],
+  [
+   74.65544,
+   34.48175
+  ],
+  [
+   74.65439,
+   34.4798
+  ],
+  [
+   74.65328,
+   34.47911
+  ],
+  [
+   74.65363,
+   34.47864
+  ],
+  [
+   74.65247,
+   34.47749
+  ],
+  [
+   74.65232,
+   34.47617
+  ],
+  [
+   74.65083,
+   34.47518
+  ],
+  [
+   74.64931,
+   34.47541
+  ],
+  [
+   74.64883,
+   34.47432
+  ],
+  [
+   74.64638,
+   34.47278
+  ],
+  [
+   74.64384,
+   34.47257
+  ],
+  [
+   74.64438,
+   34.47149
+  ],
+  [
+   74.64311,
+   34.47049
+  ],
+  [
+   74.64126,
+   34.47096
+  ],
+  [
+   74.64037,
+   34.47175
+  ],
+  [
+   74.63809,
+   34.47131
+  ],
+  [
+   74.63776,
+   34.47258
+  ],
+  [
+   74.63563,
+   34.47206
+  ],
+  [
+   74.63496,
+   34.47269
+  ],
+  [
+   74.63305,
+   34.4721
+  ],
+  [
+   74.63188,
+   34.47301
+  ],
+  [
+   74.62962,
+   34.47232
+  ],
+  [
+   74.62911,
+   34.47319
+  ],
+  [
+   74.62766,
+   34.47339
+  ],
+  [
+   74.62732,
+   34.47501
+  ],
+  [
+   74.62608,
+   34.475
+  ],
+  [
+   74.62509,
+   34.47597
+  ],
+  [
+   74.62496,
+   34.47751
+  ],
+  [
+   74.62419,
+   34.47875
+  ],
+  [
+   74.62329,
+   34.47907
+  ],
+  [
+   74.62337,
+   34.48037
+  ],
+  [
+   74.62212,
+   34.48077
+  ],
+  [
+   74.62098,
+   34.48024
+  ],
+  [
+   74.62006,
+   34.48068
+  ],
+  [
+   74.61948,
+   34.48188
+  ],
+  [
+   74.61943,
+   34.4839
+  ],
+  [
+   74.61867,
+   34.48454
+  ],
+  [
+   74.61955,
+   34.48501
+  ],
+  [
+   74.61938,
+   34.48648
+  ],
+  [
+   74.61835,
+   34.48704
+  ],
+  [
+   74.61964,
+   34.48656
+  ],
+  [
+   74.61997,
+   34.48496
+  ],
+  [
+   74.61961,
+   34.48448
+  ],
+  [
+   74.62042,
+   34.48235
+  ],
+  [
+   74.62398,
+   34.48283
+  ],
+  [
+   74.62457,
+   34.48197
+  ],
+  [
+   74.62624,
+   34.48184
+  ],
+  [
+   74.62564,
+   34.48074
+  ],
+  [
+   74.62704,
+   34.47732
+  ],
+  [
+   74.62914,
+   34.47697
+  ],
+  [
+   74.62999,
+   34.47569
+  ],
+  [
+   74.632,
+   34.47605
+  ],
+  [
+   74.63343,
+   34.47546
+  ],
+  [
+   74.63522,
+   34.47616
+  ],
+  [
+   74.6366,
+   34.47585
+  ],
+  [
+   74.63902,
+   34.47754
+  ],
+  [
+   74.63906,
+   34.47815
+  ],
+  [
+   74.64101,
+   34.47816
+  ],
+  [
+   74.64133,
+   34.47935
+  ],
+  [
+   74.64432,
+   34.48146
+  ],
+  [
+   74.64441,
+   34.48258
+  ],
+  [
+   74.64515,
+   34.48257
+  ],
+  [
+   74.64518,
+   34.48348
+  ],
+  [
+   74.64635,
+   34.48441
+  ],
+  [
+   74.6465,
+   34.48572
+  ],
+  [
+   74.64852,
+   34.486
+  ],
+  [
+   74.64624,
+   34.48593
+  ],
+  [
+   74.64563,
+   34.48446
+  ],
+  [
+   74.64415,
+   34.4836
+  ],
+  [
+   74.6433,
+   34.48373
+  ],
+  [
+   74.64312,
+   34.48189
+  ],
+  [
+   74.63912,
+   34.48013
+  ],
+  [
+   74.63455,
+   34.48042
+  ],
+  [
+   74.63329,
+   34.47968
+  ],
+  [
+   74.63308,
+   34.47844
+  ],
+  [
+   74.63084,
+   34.47998
+  ],
+  [
+   74.63068,
+   34.48114
+  ],
+  [
+   74.63144,
+   34.47997
+  ],
+  [
+   74.63162,
+   34.48065
+  ],
+  [
+   74.63506,
+   34.48188
+  ],
+  [
+   74.635,
+   34.48259
+  ],
+  [
+   74.63529,
+   34.48224
+  ],
+  [
+   74.63806,
+   34.48218
+  ],
+  [
+   74.64075,
+   34.48324
+  ],
+  [
+   74.63789,
+   34.48266
+  ],
+  [
+   74.63551,
+   34.48312
+  ],
+  [
+   74.63246,
+   34.4827
+  ],
+  [
+   74.63351,
+   34.48363
+  ],
+  [
+   74.63231,
+   34.48414
+  ],
+  [
+   74.63395,
+   34.48414
+  ],
+  [
+   74.63634,
+   34.48512
+  ],
+  [
+   74.63827,
+   34.48451
+  ],
+  [
+   74.63852,
+   34.48481
+  ],
+  [
+   74.63845,
+   34.48544
+  ],
+  [
+   74.63799,
+   34.48494
+  ],
+  [
+   74.6367,
+   34.48593
+  ],
+  [
+   74.63622,
+   34.48698
+  ],
+  [
+   74.63452,
+   34.48696
+  ],
+  [
+   74.6337,
+   34.48778
+  ],
+  [
+   74.63492,
+   34.48844
+  ],
+  [
+   74.63456,
+   34.4893
+  ],
+  [
+   74.63575,
+   34.49112
+  ],
+  [
+   74.63549,
+   34.49348
+  ],
+  [
+   74.63604,
+   34.49418
+  ],
+  [
+   74.63355,
+   34.49552
+  ],
+  [
+   74.63311,
+   34.49621
+  ],
+  [
+   74.63365,
+   34.49663
+  ],
+  [
+   74.63365,
+   34.49599
+  ],
+  [
+   74.63543,
+   34.49536
+  ],
+  [
+   74.63753,
+   34.49562
+  ],
+  [
+   74.63565,
+   34.49567
+  ],
+  [
+   74.63462,
+   34.49664
+  ],
+  [
+   74.63595,
+   34.49604
+  ],
+  [
+   74.63502,
+   34.49725
+  ],
+  [
+   74.6363,
+   34.49632
+  ],
+  [
+   74.63716,
+   34.49692
+  ],
+  [
+   74.63738,
+   34.49748
+  ],
+  [
+   74.63626,
+   34.49803
+  ],
+  [
+   74.63611,
+   34.4986
+  ],
+  [
+   74.63905,
+   34.49759
+  ],
+  [
+   74.63914,
+   34.49867
+  ],
+  [
+   74.63973,
+   34.49921
+  ],
+  [
+   74.63843,
+   34.49999
+  ],
+  [
+   74.63938,
+   34.50054
+  ],
+  [
+   74.63861,
+   34.5012
+  ],
+  [
+   74.6399,
+   34.50166
+  ],
+  [
+   74.64257,
+   34.5042
+  ],
+  [
+   74.63961,
+   34.50284
+  ],
+  [
+   74.64023,
+   34.50587
+  ],
+  [
+   74.63969,
+   34.50667
+  ],
+  [
+   74.63984,
+   34.50741
+  ],
+  [
+   74.6377,
+   34.50836
+  ],
+  [
+   74.63708,
+   34.51114
+  ],
+  [
+   74.63481,
+   34.5122
+  ],
+  [
+   74.63306,
+   34.51214
+  ],
+  [
+   74.63482,
+   34.51243
+  ],
+  [
+   74.63762,
+   34.51144
+  ],
+  [
+   74.63857,
+   34.50908
+  ],
+  [
+   74.64022,
+   34.50881
+  ],
+  [
+   74.64102,
+   34.50731
+  ],
+  [
+   74.64231,
+   34.5069
+  ],
+  [
+   74.64573,
+   34.50887
+  ],
+  [
+   74.6451,
+   34.50938
+  ],
+  [
+   74.64349,
+   34.50921
+  ],
+  [
+   74.64277,
+   34.51026
+  ],
+  [
+   74.63914,
+   34.51068
+  ],
+  [
+   74.6388,
+   34.51215
+  ],
+  [
+   74.63579,
+   34.51391
+  ],
+  [
+   74.63443,
+   34.51568
+  ],
+  [
+   74.63351,
+   34.51613
+  ],
+  [
+   74.63509,
+   34.51559
+  ],
+  [
+   74.63617,
+   34.51676
+  ],
+  [
+   74.6376,
+   34.51699
+  ],
+  [
+   74.63827,
+   34.519
+  ],
+  [
+   74.63594,
+   34.51922
+  ],
+  [
+   74.63536,
+   34.52063
+  ],
+  [
+   74.63713,
+   34.52146
+  ],
+  [
+   74.63751,
+   34.52228
+  ],
+  [
+   74.63702,
+   34.5226
+  ],
+  [
+   74.63689,
+   34.52501
+  ],
+  [
+   74.63994,
+   34.52799
+  ],
+  [
+   74.63816,
+   34.52886
+  ],
+  [
+   74.63652,
+   34.53109
+  ],
+  [
+   74.63523,
+   34.53176
+  ],
+  [
+   74.63705,
+   34.53891
+  ],
+  [
+   74.6308,
+   34.54705
+  ],
+  [
+   74.62947,
+   34.55211
+  ],
+  [
+   74.62966,
+   34.55366
+  ],
+  [
+   74.62907,
+   34.55514
+  ],
+  [
+   74.62937,
+   34.5566
+  ],
+  [
+   74.62878,
+   34.55857
+  ],
+  [
+   74.6311,
+   34.56175
+  ],
+  [
+   74.63226,
+   34.56152
+  ],
+  [
+   74.63107,
+   34.55714
+  ],
+  [
+   74.63203,
+   34.55652
+  ],
+  [
+   74.63183,
+   34.55472
+  ],
+  [
+   74.63256,
+   34.55423
+  ],
+  [
+   74.63208,
+   34.55468
+  ],
+  [
+   74.63256,
+   34.55647
+  ],
+  [
+   74.63204,
+   34.55722
+  ],
+  [
+   74.63294,
+   34.55795
+  ],
+  [
+   74.63263,
+   34.55867
+  ],
+  [
+   74.63464,
+   34.55912
+  ],
+  [
+   74.63429,
+   34.56079
+  ],
+  [
+   74.63629,
+   34.56187
+  ],
+  [
+   74.63671,
+   34.56351
+  ],
+  [
+   74.63786,
+   34.56466
+  ],
+  [
+   74.64026,
+   34.56576
+  ],
+  [
+   74.64426,
+   34.56906
+  ],
+  [
+   74.64173,
+   34.56598
+  ],
+  [
+   74.63865,
+   34.56345
+  ],
+  [
+   74.63937,
+   34.56215
+  ],
+  [
+   74.6383,
+   34.56122
+  ],
+  [
+   74.63817,
+   34.56023
+  ],
+  [
+   74.63708,
+   34.55981
+  ],
+  [
+   74.63738,
+   34.55907
+  ],
+  [
+   74.63665,
+   34.55785
+  ],
+  [
+   74.63757,
+   34.55899
+  ],
+  [
+   74.63746,
+   34.55964
+  ],
+  [
+   74.63834,
+   34.55985
+  ],
+  [
+   74.63893,
+   34.5609
+  ],
+  [
+   74.63985,
+   34.56128
+  ],
+  [
+   74.64047,
+   34.56297
+  ],
+  [
+   74.64118,
+   34.56354
+  ],
+  [
+   74.64524,
+   34.5662
+  ],
+  [
+   74.64868,
+   34.56667
+  ],
+  [
+   74.64886,
+   34.56849
+  ],
+  [
+   74.64779,
+   34.56954
+  ],
+  [
+   74.64847,
+   34.57081
+  ],
+  [
+   74.64806,
+   34.57255
+  ],
+  [
+   74.64647,
+   34.57192
+  ],
+  [
+   74.64396,
+   34.57216
+  ],
+  [
+   74.64332,
+   34.57149
+  ],
+  [
+   74.64163,
+   34.57131
+  ],
+  [
+   74.64019,
+   34.5701
+  ],
+  [
+   74.63779,
+   34.56992
+  ],
+  [
+   74.63618,
+   34.56924
+  ],
+  [
+   74.63735,
+   34.57001
+  ],
+  [
+   74.63979,
+   34.57043
+  ],
+  [
+   74.64122,
+   34.57176
+  ],
+  [
+   74.6438,
+   34.57295
+  ],
+  [
+   74.64642,
+   34.57342
+  ],
+  [
+   74.64577,
+   34.57371
+  ],
+  [
+   74.64619,
+   34.57404
+  ],
+  [
+   74.64964,
+   34.57493
+  ],
+  [
+   74.65201,
+   34.5746
+  ],
+  [
+   74.6541,
+   34.57926
+  ],
+  [
+   74.65353,
+   34.58071
+  ],
+  [
+   74.6557,
+   34.5807
+  ],
+  [
+   74.65743,
+   34.58264
+  ],
+  [
+   74.65824,
+   34.58836
+  ],
+  [
+   74.65725,
+   34.59305
+  ],
+  [
+   74.65561,
+   34.59341
+  ],
+  [
+   74.6547,
+   34.5924
+  ],
+  [
+   74.65347,
+   34.59209
+  ],
+  [
+   74.65269,
+   34.5924
+  ],
+  [
+   74.65259,
+   34.59292
+  ],
+  [
+   74.65347,
+   34.59344
+  ],
+  [
+   74.65426,
+   34.5948
+  ],
+  [
+   74.65697,
+   34.59564
+  ],
+  [
+   74.65915,
+   34.59728
+  ],
+  [
+   74.66095,
+   34.6012
+  ],
+  [
+   74.66313,
+   34.60258
+  ],
+  [
+   74.66449,
+   34.60551
+  ],
+  [
+   74.66842,
+   34.60937
+  ],
+  [
+   74.66934,
+   34.61181
+  ],
+  [
+   74.67464,
+   34.61659
+  ],
+  [
+   74.67499,
+   34.61731
+  ],
+  [
+   74.67464,
+   34.61787
+  ],
+  [
+   74.67627,
+   34.61806
+  ],
+  [
+   74.67921,
+   34.62194
+  ],
+  [
+   74.68121,
+   34.62211
+  ],
+  [
+   74.68316,
+   34.62331
+  ],
+  [
+   74.68491,
+   34.62554
+  ],
+  [
+   74.68795,
+   34.62702
+  ],
+  [
+   74.68733,
+   34.62845
+  ],
+  [
+   74.69005,
+   34.63304
+  ],
+  [
+   74.69259,
+   34.63446
+  ],
+  [
+   74.69567,
+   34.63544
+  ],
+  [
+   74.69669,
+   34.6353
+  ],
+  [
+   74.69906,
+   34.63652
+  ],
+  [
+   74.69982,
+   34.63776
+  ],
+  [
+   74.69995,
+   34.63936
+  ],
+  [
+   74.70129,
+   34.64015
+  ],
+  [
+   74.70151,
+   34.64253
+  ],
+  [
+   74.70237,
+   34.64352
+  ],
+  [
+   74.70671,
+   34.64323
+  ],
+  [
+   74.70704,
+   34.64372
+  ],
+  [
+   74.71253,
+   34.64374
+  ],
+  [
+   74.71512,
+   34.64521
+  ],
+  [
+   74.71799,
+   34.64563
+  ],
+  [
+   74.71993,
+   34.64711
+  ],
+  [
+   74.72195,
+   34.64783
+  ],
+  [
+   74.72385,
+   34.6497
+  ],
+  [
+   74.72564,
+   34.6499
+  ],
+  [
+   74.72715,
+   34.64907
+  ],
+  [
+   74.72832,
+   34.649
+  ],
+  [
+   74.72944,
+   34.64975
+  ],
+  [
+   74.73074,
+   34.64976
+  ],
+  [
+   74.73135,
+   34.6506
+  ],
+  [
+   74.73576,
+   34.65265
+  ],
+  [
+   74.74165,
+   34.65277
+  ],
+  [
+   74.74587,
+   34.65382
+  ],
+  [
+   74.74705,
+   34.65362
+  ],
+  [
+   74.74878,
+   34.65252
+  ],
+  [
+   74.74972,
+   34.65098
+  ],
+  [
+   74.75253,
+   34.64962
+  ],
+  [
+   74.75405,
+   34.64806
+  ],
+  [
+   74.76027,
+   34.64792
+  ],
+  [
+   74.76182,
+   34.64912
+  ],
+  [
+   74.76512,
+   34.6504
+  ],
+  [
+   74.76522,
+   34.65132
+  ],
+  [
+   74.76623,
+   34.65196
+  ],
+  [
+   74.76692,
+   34.65316
+  ],
+  [
+   74.76664,
+   34.65413
+  ],
+  [
+   74.76837,
+   34.6562
+  ],
+  [
+   74.76886,
+   34.6583
+  ],
+  [
+   74.77577,
+   34.65974
+  ],
+  [
+   74.77836,
+   34.66083
+  ],
+  [
+   74.77918,
+   34.66071
+  ],
+  [
+   74.77945,
+   34.65997
+  ],
+  [
+   74.7794,
+   34.66115
+  ],
+  [
+   74.77978,
+   34.65965
+  ],
+  [
+   74.78123,
+   34.65903
+  ],
+  [
+   74.78,
+   34.65893
+  ],
+  [
+   74.78155,
+   34.65842
+  ],
+  [
+   74.78373,
+   34.65605
+  ],
+  [
+   74.78477,
+   34.65574
+  ],
+  [
+   74.78548,
+   34.65443
+  ],
+  [
+   74.78819,
+   34.65338
+  ],
+  [
+   74.78945,
+   34.65116
+  ],
+  [
+   74.79216,
+   34.64988
+  ],
+  [
+   74.80455,
+   34.64103
+  ],
+  [
+   74.8092,
+   34.63982
+  ],
+  [
+   74.80821,
+   34.63863
+  ],
+  [
+   74.8131,
+   34.63686
+  ],
+  [
+   74.81651,
+   34.63493
+  ]
+ ],
+ "fuel": {
+  "listed": true,
+  "pumps": [
+   {
+    "id": "fuel:node-5936065435",
+    "name": "Bharat Petroleum Petrol Pump",
+    "brand": "Bharat Petroleum",
+    "near": "Srinagar",
+    "km_from_start": 0.1,
+    "lat": 34.07589,
+    "lon": 74.8251,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/node/5936065435"
+   },
+   {
+    "id": "fuel:node-5984439369",
+    "name": "Hindustan Petroleum Petrol Pump",
+    "brand": null,
+    "near": "Srinagar",
+    "km_from_start": 0.1,
+    "lat": 34.07578,
+    "lon": 74.82462,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/node/5984439369"
+   },
+   {
+    "id": "fuel:node-2836002981",
+    "name": "Petrol pump",
+    "brand": null,
+    "near": "Srinagar",
+    "km_from_start": 2.5,
+    "lat": 34.07565,
+    "lon": 74.79752,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/node/2836002981"
+   },
+   {
+    "id": "fuel:node-9073507512",
+    "name": "Bharat Petroleum Petrol Pump",
+    "brand": null,
+    "near": "Srinagar",
+    "km_from_start": 2.5,
+    "lat": 34.0753,
+    "lon": 74.79738,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/node/9073507512"
+   },
+   {
+    "id": "fuel:node-9073519593",
+    "name": "Indian Oil Petrol Pump",
+    "brand": null,
+    "near": "Srinagar",
+    "km_from_start": 2.5,
+    "lat": 34.07556,
+    "lon": 74.79752,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/node/9073519593"
+   },
+   {
+    "id": "fuel:node-9073525326",
+    "name": "HP Petrol Pump",
+    "brand": null,
+    "near": "Srinagar",
+    "km_from_start": 2.5,
+    "lat": 34.07505,
+    "lon": 74.79718,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/node/9073525326"
+   },
+   {
+    "id": "fuel:node-9113502199",
+    "name": "Indian Oil Petrol Pump",
+    "brand": null,
+    "near": "Srinagar",
+    "km_from_start": 3.3,
+    "lat": 34.08087,
+    "lon": 74.80055,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/node/9113502199"
+   },
+   {
+    "id": "fuel:node-7944685791",
+    "name": "Bharat Petroleum Petrol Pump",
+    "brand": null,
+    "near": "Srinagar",
+    "km_from_start": 4.0,
+    "lat": 34.08179,
+    "lon": 74.78818,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/node/7944685791"
+   },
+   {
+    "id": "fuel:way-682463968",
+    "name": "Indian Oil Petrol Pump",
+    "brand": null,
+    "near": "Srinagar",
+    "km_from_start": 5.7,
+    "lat": 34.09178,
+    "lon": 74.77682,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/way/682463968"
+   },
+   {
+    "id": "fuel:node-9087718081",
+    "name": "Bharat Petroleum Petrol Pump",
+    "brand": null,
+    "near": "Srinagar",
+    "km_from_start": 6.3,
+    "lat": 34.09611,
+    "lon": 74.77374,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/node/9087718081"
+   },
+   {
+    "id": "fuel:node-9087689058",
+    "name": "Indian Oil Petrol Pump",
+    "brand": null,
+    "near": "Srinagar",
+    "km_from_start": 8.6,
+    "lat": 34.10626,
+    "lon": 74.75299,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/node/9087689058"
+   },
+   {
+    "id": "fuel:node-331119815",
+    "name": "Indian Oil Petrol Pump",
+    "brand": null,
+    "near": "Srinagar",
+    "km_from_start": 9.3,
+    "lat": 34.10912,
+    "lon": 74.74673,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/node/331119815"
+   },
+   {
+    "id": "fuel:node-13523954637",
+    "name": "Petrol pump",
+    "brand": null,
+    "near": "Srinagar",
+    "km_from_start": 10.3,
+    "lat": 34.11025,
+    "lon": 74.73462,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/node/13523954637"
+   },
+   {
+    "id": "fuel:node-4374600090",
+    "name": "HP",
+    "brand": "Hindustan Petroleum",
+    "near": "Bandipora",
+    "km_from_start": 35.6,
+    "lat": 34.27497,
+    "lon": 74.67594,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/node/4374600090"
+   },
+   {
+    "id": "fuel:node-9835896166",
+    "name": "Dawar fuel pump",
+    "brand": null,
+    "near": "Dawar",
+    "km_from_start": 140.8,
+    "lat": 34.63356,
+    "lon": 74.81979,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/node/9835896166"
+   },
+   {
+    "id": "fuel:node-9835919017",
+    "name": "Dawar Petrol Pump",
+    "brand": null,
+    "near": "Dawar",
+    "km_from_start": 140.8,
+    "lat": 34.63357,
+    "lon": 74.8196,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/node/9835919017"
+   }
+  ],
+  "pump_count": 16,
+  "stops": 5,
+  "longest_gaps": [
+   {
+    "from_km": 35.6,
+    "to_km": 140.8,
+    "gap_km": 105.2,
+    "from_is": "pump",
+    "to_is": "pump",
+    "near_from": "Bandipora",
+    "near_to": "Dawar"
+   },
+   {
+    "from_km": 10.3,
+    "to_km": 35.6,
+    "gap_km": 25.3,
+    "from_is": "pump",
+    "to_is": "pump",
+    "near_from": "Srinagar",
+    "near_to": "Bandipora"
+   },
+   {
+    "from_km": 0.1,
+    "to_km": 2.5,
+    "gap_km": 2.4,
+    "from_is": "pump",
+    "to_is": "pump",
+    "near_from": "Srinagar",
+    "near_to": "Srinagar"
+   },
+   {
+    "from_km": 6.3,
+    "to_km": 8.6,
+    "gap_km": 2.3,
+    "from_is": "pump",
+    "to_is": "pump",
+    "near_from": "Srinagar",
+    "near_to": "Srinagar"
+   }
+  ],
+  "note": "Pumps are those drawn on the open map within the search radius of the road. A pump missing from the map is missing here, so each gap is a worst case.",
+  "fetched": "2026-09-28"
+ },
+ "rules": [
+  {
+   "id": "rule:kashmir-tourist-spots-closed-after-april-2025",
+   "kind": "permit",
+   "title": "Kashmir: tourist spots shut in 2025, reopened in phases",
+   "detail": "After the attack near Pahalgam, 48 of 87 destinations were closed. Most have reopened by order of the Lieutenant Governor; check each place before riding to it.",
+   "applies_to": "All tourists",
+   "set_by": "Lieutenant Governor's administration, Jammu and Kashmir",
+   "official_url": null,
+   "has_official_order": true,
+   "source": {
+    "url": "https://www.outlooktraveller.com/News/jammu-and-kashmir-reopens-14-tourist-spots-after-2025-pahalgam-attack",
+    "title": "Jammu and Kashmir reopens 14 tourist spots after 2025 Pahalgam attack",
+    "kind": "news",
+    "opened": true,
+    "source_date": "2026-02-19",
+    "accessed": "2026-09-28"
+   },
+   "history": [
+    {
+     "date": "2025-04-29",
+     "change": "48 of 87 destinations reported closed, including Gurez for non-local tourists.",
+     "source": {
+      "url": "https://www.tribuneindia.com/news/j-k/pahalgam-attack-fallout-48-tourist-spots-closed-across-kashmir-for-security-reasons",
+      "title": "Pahalgam attack fallout: 48 tourist spots closed across Kashmir for security reasons",
+      "kind": "news",
+      "opened": true,
+      "source_date": "2025-04-29",
+      "accessed": "2026-09-28"
+     }
+    },
+    {
+     "date": "2025-07",
+     "change": "Gurez reopened to local and non-local tourists.",
+     "source": {
+      "url": "https://www.tribuneindia.com/news/j-k/shut-since-pahalgam-gurez-valley-reopens/",
+      "title": "Shut since Pahalgam, Gurez valley reopens",
+      "kind": "news",
+      "opened": true,
+      "source_date": "2025-07-25",
+      "accessed": "2026-09-28"
+     }
+    },
+    {
+     "date": "2026-02",
+     "change": "Fourteen more reopened, among them Thajwas Glacier, Pir Ki Gali and Dubjan.",
+     "source": {
+      "url": "https://www.outlooktraveller.com/News/jammu-and-kashmir-reopens-14-tourist-spots-after-2025-pahalgam-attack",
+      "title": "Jammu and Kashmir reopens 14 tourist spots after 2025 Pahalgam attack",
+      "kind": "news",
+      "opened": true,
+      "source_date": "2026-02-19",
+      "accessed": "2026-09-28"
+     }
+    },
+    {
+     "date": "2026-04-08",
+     "change": "Government said all remaining closed destinations were expected to reopen by May 2026.",
+     "source": {
+      "url": "https://www.outlooktraveller.com/News/kashmirs-closed-tourist-destinations-set-to-reopen-by-may-after-2025-pahalgam-attack",
+      "title": "J&K to reopen all tourist destinations closed after Pahalgam attack by May",
+      "kind": "news",
+      "opened": true,
+      "source_date": "2026-04-08",
+      "accessed": "2026-09-28"
+     }
+    }
+   ]
+  },
+  {
+   "id": "rule:gurez-identity-check-posts",
+   "kind": "document",
+   "title": "Gurez: identity proof and photocopies at check posts",
+   "detail": "Indian citizens need no permit for Dawar but show original identity proof at Tragbal, Razdan Pass and Dawar, and leave photocopies. Reported by an operator; no order found.",
+   "applies_to": "Indian citizens",
+   "set_by": "Indian Army and Jammu and Kashmir Police",
+   "official_url": null,
+   "has_official_order": false,
+   "source": {
+    "url": "https://www.thealpinegurez.in/permits",
+    "title": "Permits and Travel Advisory, The Alpine Gurez",
+    "kind": "operator",
+    "opened": true,
+    "source_date": "2026",
+    "accessed": "2026-09-28"
+   },
+   "history": []
+  },
+  {
+   "id": "rule:gurez-foreigners-clearance",
+   "kind": "permit",
+   "title": "Gurez: foreign citizens need clearance from Bandipora",
+   "detail": "An operator says foreigners apply to the Deputy Commissioner's office a week or more ahead with passport and visa copies. Another guide says access may be refused. No order found.",
+   "applies_to": "Foreign citizens",
+   "set_by": "Deputy Commissioner, Bandipora",
+   "official_url": null,
+   "has_official_order": false,
+   "source": {
+    "url": "https://www.thealpinegurez.in/permits",
+    "title": "Permits and Travel Advisory, The Alpine Gurez",
+    "kind": "operator",
+    "opened": true,
+    "source_date": "2026",
+    "accessed": "2026-09-28"
+   },
+   "history": [
+    {
+     "date": "2026-07-26",
+     "change": "Operator guide says foreign access may be restricted and should be confirmed in writing.",
+     "source": {
+      "url": "https://travelcoffee.in/blog/gurez-valley-travel-guide",
+      "title": "Gurez Valley Travel Guide 2026: Route, Permit, Cost",
+      "kind": "operator",
+      "opened": true,
+      "source_date": "2026-07-26",
+      "accessed": "2026-09-28"
+     }
+    }
+   ]
+  },
+  {
+   "id": "rule:gurez-beyond-dawar",
+   "kind": "permit",
+   "title": "Beyond Dawar: local permission may be needed",
+   "detail": "Villages near the Line of Control, such as those in Tulail, may need permission or registration at Dawar police station. Rules are confirmed on the day. No order found.",
+   "applies_to": "All tourists",
+   "set_by": "Jammu and Kashmir Police, Dawar",
+   "official_url": null,
+   "has_official_order": false,
+   "source": {
+    "url": "https://www.thealpinegurez.in/permits",
+    "title": "Permits and Travel Advisory, The Alpine Gurez",
+    "kind": "operator",
+    "opened": true,
+    "source_date": "2026",
+    "accessed": "2026-09-28"
+   },
+   "history": []
+  },
+  {
+   "id": "rule:bandipora-gurez-cut-off-and-chains",
+   "kind": "timing",
+   "title": "Cut-off times at Tragbal and Kanzalwan; chains in snow",
+   "detail": "Traffic must pass the control points at Tragbal and Kanzalwan before set cut-off times, which the sources do not state. After snow no vehicle runs without anti-skid chains.",
+   "applies_to": "All vehicles",
+   "set_by": "Sub-Divisional Magistrate, Gurez; traffic police",
+   "official_url": null,
+   "has_official_order": true,
+   "source": {
+    "url": "https://www.greaterkashmir.com/kashmir/gurez-road-opens-for-traffic-2/",
+    "title": "Gurez road opens for traffic",
+    "kind": "news",
+    "opened": true,
+    "source_date": "2024-11-26",
+    "accessed": "2026-09-28"
+   },
+   "history": [
+    {
+     "date": "2024-11-25",
+     "change": "Road reopened after two days with chains compulsory and cut-off times at both control points.",
+     "source": {
+      "url": "https://www.greaterkashmir.com/kashmir/gurez-road-opens-for-traffic-2/",
+      "title": "Gurez road opens for traffic",
+      "kind": "news",
+      "opened": true,
+      "source_date": "2024-11-26",
+      "accessed": "2026-09-28"
+     }
+    },
+    {
+     "date": "2026-02-13",
+     "change": "Light vehicles only, one direction per day for about an hour, chains required, heavy vehicles barred.",
+     "source": {
+      "url": "https://www.greaterkashmir.com/kashmir/bandipora-gurez-road-reopens-after-20-day-closure",
+      "title": "Bandipora-Gurez road reopens after 20-day closure",
+      "kind": "news",
+      "opened": true,
+      "source_date": "2026-02-13",
+      "accessed": "2026-09-28"
+     }
+    },
+    {
+     "date": "2026-03-07",
+     "change": "All movement suspended until further orders after snowfall at Razdan Pass.",
+     "source": {
+      "url": "https://thekashmirimages.com/2026/03/07/bandipora-gurez-road-closed-after-snowfall-at-razdan-top/",
+      "title": "Bandipora-Gurez road closed after snowfall at Razdan Top",
+      "kind": "news",
+      "opened": true,
+      "source_date": "2026-03-07",
+      "accessed": "2026-09-28"
+     }
+    }
+   ]
+  },
+  {
+   "id": "rule:gurez-motorcycles",
+   "kind": "motorcycle-rule",
+   "title": "Gurez: no rule against motorcycles found",
+   "detail": "An operator guide treats motorcycles as allowed. How the chain requirement is applied to two-wheelers after snow was not found. No order found either way.",
+   "applies_to": "Motorcycles",
+   "set_by": "Not established",
+   "official_url": null,
+   "has_official_order": false,
+   "source": {
+    "url": "https://travelcoffee.in/blog/gurez-valley-travel-guide",
+    "title": "Gurez Valley Travel Guide 2026: Route, Permit, Cost",
+    "kind": "operator",
+    "opened": true,
+    "source_date": "2026-07-26",
+    "accessed": "2026-09-28"
+   },
+   "history": []
+  }
+ ],
+ "season": {
+  "note": "Razdan Pass shuts for several winter months; dated opening and closing announcements were found only in fragments.",
+  "history": [
+   {
+    "year": 2026,
+    "connected": null,
+    "open_to_motorcycles": null,
+    "closed": null,
+    "note": "Shut about 23 January; reopened 13 February for light vehicles, one direction a day, with chains. Suspended again on 7 March. Snow clearance under way on 25 April. Full opening date not found.",
+    "sources": [
+     {
+      "url": "https://www.greaterkashmir.com/kashmir/bandipora-gurez-road-reopens-after-20-day-closure",
+      "title": "Bandipora-Gurez road reopens after 20-day closure",
+      "kind": "news",
+      "opened": true,
+      "source_date": "2026-02-13",
+      "accessed": "2026-09-28"
+     },
+     {
+      "url": "https://thekashmirimages.com/2026/03/07/bandipora-gurez-road-closed-after-snowfall-at-razdan-top/",
+      "title": "Bandipora-Gurez road closed after snowfall at Razdan Top",
+      "kind": "news",
+      "opened": true,
+      "source_date": "2026-03-07",
+      "accessed": "2026-09-28"
+     },
+     {
+      "url": "https://kashmirlife.net/bro-intensifies-snow-clearance-operations-on-bandipora-gurez-road-433652/",
+      "title": "BRO intensifies snow clearance operations on Bandipora-Gurez road",
+      "kind": "news",
+      "opened": true,
+      "source_date": "2026-04-25",
+      "accessed": "2026-09-28"
+     }
+    ]
+   },
+   {
+    "year": 2025,
+    "connected": "2025-04",
+    "open_to_motorcycles": null,
+    "closed": null,
+    "note": "First tourist vehicles reported by 21 April. Closed to non-local tourists within days, after the Pahalgam attack, and reopened to them in July. Motorcycles not named.",
+    "sources": [
+     {
+      "url": "https://risingkashmir.com/gurez-opens-its-gates-to-tourists-as-summer-melts-winters-isolation",
+      "title": "Gurez opens its gates to tourists as summer melts winter's isolation",
+      "kind": "news",
+      "opened": true,
+      "source_date": "2025-04-21",
+      "accessed": "2026-09-28"
+     },
+     {
+      "url": "https://www.tribuneindia.com/news/j-k/pahalgam-attack-fallout-48-tourist-spots-closed-across-kashmir-for-security-reasons",
+      "title": "Pahalgam attack fallout: 48 tourist spots closed across Kashmir for security reasons",
+      "kind": "news",
+      "opened": true,
+      "source_date": "2025-04-29",
+      "accessed": "2026-09-28"
+     },
+     {
+      "url": "https://www.tribuneindia.com/news/j-k/shut-since-pahalgam-gurez-valley-reopens/",
+      "title": "Shut since Pahalgam, Gurez valley reopens",
+      "kind": "news",
+      "opened": true,
+      "source_date": "2025-07-25",
+      "accessed": "2026-09-28"
+     }
+    ]
+   },
+   {
+    "year": 2024,
+    "connected": null,
+    "open_to_motorcycles": null,
+    "closed": null,
+    "note": "Open on 6 October despite fresh snow. Shut 23 to 25 November, then reopened with chains compulsory. Date of the winter closure not found.",
+    "sources": [
+     {
+      "url": "https://www.greaterkashmir.com/gk-top-news/bandipora-gurez-road-open-amid-snowfall-over-razdan-pass-officials/",
+      "title": "Bandipora-Gurez road open amid snowfall over Razdan Pass: officials",
+      "kind": "news",
+      "opened": true,
+      "source_date": "2024-10-06",
+      "accessed": "2026-09-28"
+     },
+     {
+      "url": "https://www.greaterkashmir.com/kashmir/gurez-road-opens-for-traffic-2/",
+      "title": "Gurez road opens for traffic",
+      "kind": "news",
+      "opened": true,
+      "source_date": "2024-11-26",
+      "accessed": "2026-09-28"
+     }
+    ]
+   }
+  ]
+ },
+ "authorities": [
+  {
+   "id": "authority:border-roads-organisation",
+   "office": "Border Roads Organisation",
+   "announces": "Snow clearance over Razdan Pass",
+   "stretch": "Bandipora to Gurez",
+   "channel": "Statements to the press; no status page",
+   "url": "https://bro.gov.in/",
+   "source": {
+    "url": "https://kashmirlife.net/bro-intensifies-snow-clearance-operations-on-bandipora-gurez-road-433652/",
+    "title": "BRO intensifies snow clearance operations on Bandipora-Gurez road",
+    "kind": "news",
+    "opened": true,
+    "source_date": "2026-04-25",
+    "accessed": "2026-09-28"
+   }
+  },
+  {
+   "id": "authority:sub-divisional-magistrate-gurez",
+   "office": "Sub-Divisional Magistrate, Gurez",
+   "announces": "Suspends and restores traffic, sets direction and vehicle class after snow",
+   "stretch": "Bandipora to Gurez",
+   "channel": "Statements and orders reported by newspapers",
+   "url": null,
+   "source": {
+    "url": "https://thekashmirimages.com/2026/03/07/bandipora-gurez-road-closed-after-snowfall-at-razdan-top/",
+    "title": "Bandipora-Gurez road closed after snowfall at Razdan Top",
+    "kind": "news",
+    "opened": true,
+    "source_date": "2026-03-07",
+    "accessed": "2026-09-28"
+   }
+  },
+  {
+   "id": "authority:deputy-commissioner-bandipora",
+   "office": "Deputy Commissioner, Bandipora",
+   "announces": "Whether tourists, including non-locals, may enter Gurez",
+   "stretch": "Gurez valley",
+   "channel": "Statements to newspapers",
+   "url": null,
+   "source": {
+    "url": "https://www.tribuneindia.com/news/j-k/shut-since-pahalgam-gurez-valley-reopens/",
+    "title": "Shut since Pahalgam, Gurez valley reopens",
+    "kind": "news",
+    "opened": true,
+    "source_date": "2025-07-25",
+    "accessed": "2026-09-28"
+   }
+  },
+  {
+   "id": "authority:traffic-control-points-at-tragbal-and-kanzalwan",
+   "office": "Traffic control points at Tragbal and Kanzalwan",
+   "announces": "Cut-off times and the chain requirement on the day",
+   "stretch": "Bandipora to Dawar",
+   "channel": "At the control point; reported by newspapers",
+   "url": null,
+   "source": {
+    "url": "https://www.greaterkashmir.com/kashmir/gurez-road-opens-for-traffic-2/",
+    "title": "Gurez road opens for traffic",
+    "kind": "news",
+    "opened": true,
+    "source_date": "2024-11-26",
+    "accessed": "2026-09-28"
+   }
+  },
+  {
+   "id": "authority:traffic-police-headquarters-jammu-and-kashmir",
+   "office": "Traffic Police Headquarters, Jammu and Kashmir",
+   "announces": "Daily traffic plan; the 27 September 2026 edition did not list this road",
+   "stretch": "Kashmir division",
+   "channel": "Daily advisory, republished by news sites",
+   "url": null,
+   "source": {
+    "url": "https://jkadworld.com/jk-news-today/jammu-srinagar-highway-traffic-advisory-28th-sep-2026nh-44-traffic-update-travel-guidelines/",
+    "title": "Traffic advisory for 28 September 2026, Traffic Police Headquarters Jammu and Kashmir",
+    "kind": "news",
+    "opened": true,
+    "source_date": "2026-09-27",
+    "accessed": "2026-09-28"
+   }
+  }
+ ],
+ "hazards": [
+  {
+   "id": "hazard:landslides-on-the-only-road-in",
+   "title": "Landslides on the only road in",
+   "detail": "The single road is described as treacherous, with landslides often stopping traffic.",
+   "months": [],
+   "source": {
+    "url": "https://risingkashmir.com/gurez-opens-its-gates-to-tourists-as-summer-melts-winters-isolation",
+    "title": "Gurez opens its gates to tourists as summer melts winter's isolation",
+    "kind": "news",
+    "opened": true,
+    "source_date": "2025-04-21",
+    "accessed": "2026-09-28"
+   }
+  },
+  {
+   "id": "hazard:cloudburst-landslides-in-the-monsoon",
+   "title": "Cloudburst landslides in the monsoon",
+   "detail": "A cloudburst on 23 August 2025 set off landslides that shut the road overnight; more slides were expected.",
+   "months": [
+    8
+   ],
+   "source": {
+    "url": "https://kashmirreader.com/2025/08/24/gurez-bandipora-road-reopens-after-night-long-operation-by-bro/",
+    "title": "Gurez-Bandipora road reopens after night-long operation by BRO",
+    "kind": "news",
+    "opened": true,
+    "source_date": "2025-08-24",
+    "accessed": "2026-09-28"
+   }
+  },
+  {
+   "id": "hazard:snow-slides-on-razdan-pass-in-late-winter",
+   "title": "Snow slides on Razdan Pass in late winter",
+   "detail": "In February 2026 traffic was let through for about an hour a day because of the risk of snow slides.",
+   "months": [
+    1,
+    2,
+    3
+   ],
+   "source": {
+    "url": "https://www.greaterkashmir.com/kashmir/bandipora-gurez-road-reopens-after-20-day-closure",
+    "title": "Bandipora-Gurez road reopens after 20-day closure",
+    "kind": "news",
+    "opened": true,
+    "source_date": "2026-02-13",
+    "accessed": "2026-09-28"
+   }
+  },
+  {
+   "id": "hazard:snow-on-razdan-pass-from-october",
+   "title": "Snow on Razdan Pass from October",
+   "detail": "Fresh snow fell on the pass in early October 2024 and shut the road for two days in late November.",
+   "months": [
+    10,
+    11
+   ],
+   "source": {
+    "url": "https://www.greaterkashmir.com/kashmir/gurez-road-opens-for-traffic-2/",
+    "title": "Gurez road opens for traffic",
+    "kind": "news",
+    "opened": true,
+    "source_date": "2024-11-26",
+    "accessed": "2026-09-28"
+   }
+  },
+  {
+   "id": "hazard:unsettled-conditions-early-in-the-season",
+   "title": "Unsettled conditions early in the season",
+   "detail": "May and June are described as the least predictable months.",
+   "months": [
+    5,
+    6
+   ],
+   "source": {
+    "url": "https://travelcoffee.in/blog/gurez-valley-travel-guide",
+    "title": "Gurez Valley Travel Guide 2026: Route, Permit, Cost",
+    "kind": "operator",
+    "opened": true,
+    "source_date": "2026-07-26",
+    "accessed": "2026-09-28"
+   }
+  },
+  {
+   "id": "hazard:fuel-limited-beyond-bandipora",
+   "title": "Fuel limited beyond Bandipora",
+   "detail": "An operator guide warns that fuel may be hard to find after Bandipora.",
+   "months": [],
+   "source": {
+    "url": "https://travelcoffee.in/blog/gurez-valley-travel-guide",
+    "title": "Gurez Valley Travel Guide 2026: Route, Permit, Cost",
+    "kind": "operator",
+    "opened": true,
+    "source_date": "2026-07-26",
+    "accessed": "2026-09-28"
+   }
+  },
+  {
+   "id": "hazard:patchy-mobile-signal",
+   "title": "Patchy mobile signal",
+   "detail": "Signal is described as intermittent along the route.",
+   "months": [],
+   "source": {
+    "url": "https://travelcoffee.in/blog/gurez-valley-travel-guide",
+    "title": "Gurez Valley Travel Guide 2026: Route, Permit, Cost",
+    "kind": "operator",
+    "opened": true,
+    "source_date": "2026-07-26",
+    "accessed": "2026-09-28"
+   }
+  },
+  {
+   "id": "hazard:prepaid-mobile-connections-from-other-states-do-not-work",
+   "title": "Prepaid mobile connections from other states do not work",
+   "detail": "A blogger reports that only postpaid connections from outside work in Jammu and Kashmir and in Ladakh; no official source was found.",
+   "months": [],
+   "source": {
+    "url": "https://discoverwithdheeraj.com/mobile-phone-connectivity-in-leh-ladakh/",
+    "title": "Mobile phone connectivity in Leh Ladakh",
+    "kind": "blog",
+    "opened": true,
+    "source_date": "2026-08-14",
+    "accessed": "2026-09-28"
+   }
+  }
+ ],
+ "videos": [
+  {
+   "id": "NfWe3wVS6ME",
+   "url": "https://www.youtube.com/watch?v=NfWe3wVS6ME",
+   "title": "Angry Cop😡 Camera Band kar | Thotu😭 on Ladakh Ride 2026 🙏 | Episode - 6 Exploring Gurez Valley |",
+   "channel": "Aalyan vlogs",
+   "stretch": "Gurez valley",
+   "filmed": "2026",
+   "bike": null,
+   "checked": false
+  }
+ ],
+ "image": {
+  "file": "gurez-valley.jpg",
+  "small": "gurez-valley-small.jpg",
+  "title": "Gurez Valley 04.jpg",
+  "shows": "The Gurez valley",
+  "author": "Journo Mohsin",
+  "licence": "CC BY-SA 4.0",
+  "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+  "source_page": "https://commons.wikimedia.org/wiki/File:Gurez_Valley_04.jpg",
+  "source": "Wikimedia Commons",
+  "taken": "2022-08-14 20:47:31",
+  "changes": "Resized. Not otherwise changed.",
+  "fetched": "2026-09-28"
+ },
+ "gaps": [
+  "Whether Gurez is open to non-local tourists on 28 September 2026 was not confirmed; in February 2026 it was listed as awaiting snow clearance before reopening.",
+  "No official page found for any Gurez permit or registration rule; all come from operators.",
+  "Sources conflict on whether Indian citizens need a permit; one operator guide mentions a permit, another says identity proof is enough.",
+  "The cut-off times at Tragbal and Kanzalwan are not stated in any source opened.",
+  "Opening dates for 2021 to 2024 and 2026, and closing dates for every year, were not found.",
+  "No source says whether motorcycles were allowed when the road opened in any year.",
+  "No road number found for the Bandipora to Gurez road.",
+  "Only one rider video could be checked; a second, on crossing Razdan Pass in April 2025, could not be read."
+ ],
+ "counts": {
+  "facts": 50
+ },
+ "built": "2026-09-28"
+}

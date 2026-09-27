@@ -1,0 +1,1329 @@
+{
+ "slug": "rann-of-kutch",
+ "name": "Rann of Kutch",
+ "region": "rajasthan-gujarat",
+ "region_name": "Rajasthan and Gujarat",
+ "batch": 2,
+ "terrain": "plains",
+ "country": "in",
+ "level": "basic",
+ "one_line": "Gujarat, from Bhuj to the salt desert at Dhordo and across to Dholavira",
+ "places": [
+  "Bhuj",
+  "Dhordo",
+  "Khavda",
+  "Dholavira"
+ ],
+ "header": {
+  "highway": {
+   "value": "NH 341 (Bhuj to Khavda and on to the border camp at Dharamshala)",
+   "source": {
+    "url": "https://en.wikipedia.org/wiki/National_Highway_341_(India)",
+    "title": "National Highway 341 (India)",
+    "kind": "encyclopedia",
+    "opened": true,
+    "source_date": null,
+    "accessed": "2026-09-28"
+   }
+  },
+  "distance_km": 180.0,
+  "map_app_hours": 2.63,
+  "usual_days": null,
+  "highest_point": {
+   "name": "Kalo Dungar",
+   "altitude_m": 462,
+   "source": {
+    "url": "https://en.wikipedia.org/wiki/Kalo_Dungar",
+    "title": "Kalo Dungar",
+    "kind": "encyclopedia",
+    "opened": true,
+    "source_date": null,
+    "accessed": "2026-09-28"
+   },
+   "computed": false
+  },
+  "usual_season": {
+   "value": "December to February, the months of the Rann Utsav festival",
+   "source": {
+    "url": "https://kachchh.nic.in/tourist-place/white-rann-of-kachchh/",
+    "title": "White Rann Of Kachchh, District Kachchh",
+    "kind": "official",
+    "opened": true,
+    "source_date": null,
+    "accessed": "2026-09-28"
+   }
+  }
+ },
+ "waypoints": [
+  {
+   "name": "Bhuj",
+   "lat": 23.24732,
+   "lon": 69.66836,
+   "km_from_start": 0.0,
+   "altitude_m": 103,
+   "kind": "place",
+   "moved_to_road_m": 8
+  },
+  {
+   "name": "Dhordo",
+   "lat": 23.7584,
+   "lon": 69.5108,
+   "km_from_start": 77.3,
+   "altitude_m": 7,
+   "kind": "place",
+   "moved_to_road_m": 26
+  },
+  {
+   "name": "Khavda",
+   "lat": 23.82453,
+   "lon": 69.72972,
+   "km_from_start": 120.5,
+   "altitude_m": 16,
+   "kind": "place",
+   "moved_to_road_m": 13
+  },
+  {
+   "name": "Dholavira",
+   "lat": 23.87493,
+   "lon": 70.21861,
+   "km_from_start": 180.0,
+   "altitude_m": 21,
+   "kind": "place",
+   "moved_to_road_m": 67
+  }
+ ],
+ "stretches": [
+  {
+   "from": "Bhuj",
+   "to": "Dhordo",
+   "distance_km": 77.3,
+   "map_app_hours": 1.04,
+   "doubtful": false
+  },
+  {
+   "from": "Dhordo",
+   "to": "Khavda",
+   "distance_km": 43.2,
+   "map_app_hours": 0.62,
+   "doubtful": false
+  },
+  {
+   "from": "Khavda",
+   "to": "Dholavira",
+   "distance_km": 59.5,
+   "map_app_hours": 0.98,
+   "doubtful": false
+  }
+ ],
+ "profile": [
+  {
+   "km": 0.0,
+   "m": 103
+  },
+  {
+   "km": 2.0,
+   "m": 95
+  },
+  {
+   "km": 4.0,
+   "m": 89
+  },
+  {
+   "km": 6.0,
+   "m": 78
+  },
+  {
+   "km": 8.0,
+   "m": 71
+  },
+  {
+   "km": 10.0,
+   "m": 63
+  },
+  {
+   "km": 12.0,
+   "m": 53
+  },
+  {
+   "km": 14.0,
+   "m": 44
+  },
+  {
+   "km": 16.0,
+   "m": 43
+  },
+  {
+   "km": 18.0,
+   "m": 40
+  },
+  {
+   "km": 20.0,
+   "m": 31
+  },
+  {
+   "km": 22.0,
+   "m": 22
+  },
+  {
+   "km": 24.0,
+   "m": 10
+  },
+  {
+   "km": 26.0,
+   "m": 10
+  },
+  {
+   "km": 28.0,
+   "m": 9
+  },
+  {
+   "km": 30.0,
+   "m": 8
+  },
+  {
+   "km": 32.0,
+   "m": 6
+  },
+  {
+   "km": 34.0,
+   "m": 4
+  },
+  {
+   "km": 36.0,
+   "m": 3
+  },
+  {
+   "km": 38.0,
+   "m": 7
+  },
+  {
+   "km": 40.0,
+   "m": 5
+  },
+  {
+   "km": 42.0,
+   "m": 6
+  },
+  {
+   "km": 44.0,
+   "m": 7
+  },
+  {
+   "km": 46.0,
+   "m": 6
+  },
+  {
+   "km": 48.0,
+   "m": 9
+  },
+  {
+   "km": 50.0,
+   "m": 7
+  },
+  {
+   "km": 52.0,
+   "m": 6
+  },
+  {
+   "km": 54.0,
+   "m": 8
+  },
+  {
+   "km": 56.0,
+   "m": 8
+  },
+  {
+   "km": 58.0,
+   "m": 7
+  },
+  {
+   "km": 60.1,
+   "m": 7
+  },
+  {
+   "km": 62.1,
+   "m": 6
+  },
+  {
+   "km": 64.1,
+   "m": 6
+  },
+  {
+   "km": 66.1,
+   "m": 5
+  },
+  {
+   "km": 68.1,
+   "m": 5
+  },
+  {
+   "km": 70.1,
+   "m": 4
+  },
+  {
+   "km": 72.1,
+   "m": 6
+  },
+  {
+   "km": 74.1,
+   "m": 3
+  },
+  {
+   "km": 76.1,
+   "m": 5
+  },
+  {
+   "km": 78.1,
+   "m": 5
+  },
+  {
+   "km": 80.1,
+   "m": 4
+  },
+  {
+   "km": 82.1,
+   "m": 6
+  },
+  {
+   "km": 84.1,
+   "m": 4
+  },
+  {
+   "km": 86.1,
+   "m": 7
+  },
+  {
+   "km": 88.1,
+   "m": 5
+  },
+  {
+   "km": 90.1,
+   "m": 6
+  },
+  {
+   "km": 92.1,
+   "m": 8
+  },
+  {
+   "km": 94.1,
+   "m": 7
+  },
+  {
+   "km": 96.1,
+   "m": 8
+  },
+  {
+   "km": 98.1,
+   "m": 7
+  },
+  {
+   "km": 100.1,
+   "m": 7
+  },
+  {
+   "km": 102.1,
+   "m": 7
+  },
+  {
+   "km": 104.1,
+   "m": 7
+  },
+  {
+   "km": 106.1,
+   "m": 7
+  },
+  {
+   "km": 108.1,
+   "m": 6
+  },
+  {
+   "km": 110.1,
+   "m": 7
+  },
+  {
+   "km": 112.1,
+   "m": 8
+  },
+  {
+   "km": 114.1,
+   "m": 7
+  },
+  {
+   "km": 116.1,
+   "m": 6
+  },
+  {
+   "km": 118.1,
+   "m": 6
+  },
+  {
+   "km": 120.1,
+   "m": 11
+  },
+  {
+   "km": 122.1,
+   "m": 15
+  },
+  {
+   "km": 124.1,
+   "m": 33
+  },
+  {
+   "km": 126.1,
+   "m": 47
+  },
+  {
+   "km": 128.1,
+   "m": 52
+  },
+  {
+   "km": 130.1,
+   "m": 67
+  },
+  {
+   "km": 132.1,
+   "m": 63
+  },
+  {
+   "km": 134.1,
+   "m": 50
+  },
+  {
+   "km": 136.1,
+   "m": 38
+  },
+  {
+   "km": 138.1,
+   "m": 28
+  },
+  {
+   "km": 140.1,
+   "m": 28
+  },
+  {
+   "km": 142.1,
+   "m": 19
+  },
+  {
+   "km": 144.1,
+   "m": 10
+  },
+  {
+   "km": 146.1,
+   "m": 7
+  },
+  {
+   "km": 148.1,
+   "m": 1
+  },
+  {
+   "km": 150.1,
+   "m": -1
+  },
+  {
+   "km": 152.1,
+   "m": 3
+  },
+  {
+   "km": 154.1,
+   "m": 3
+  },
+  {
+   "km": 156.1,
+   "m": 0
+  },
+  {
+   "km": 158.1,
+   "m": 1
+  },
+  {
+   "km": 160.1,
+   "m": 3
+  },
+  {
+   "km": 162.1,
+   "m": 2
+  },
+  {
+   "km": 164.1,
+   "m": 7
+  },
+  {
+   "km": 166.1,
+   "m": 2
+  },
+  {
+   "km": 168.1,
+   "m": -5
+  },
+  {
+   "km": 170.1,
+   "m": -2
+  },
+  {
+   "km": 172.1,
+   "m": -1
+  },
+  {
+   "km": 174.1,
+   "m": 0
+  },
+  {
+   "km": 176.2,
+   "m": 2
+  },
+  {
+   "km": 178.2,
+   "m": 11
+  },
+  {
+   "km": 180.0,
+   "m": 21
+  }
+ ],
+ "line": [
+  [
+   69.66836,
+   23.24732
+  ],
+  [
+   69.66963,
+   23.24743
+  ],
+  [
+   69.66976,
+   23.2495
+  ],
+  [
+   69.67403,
+   23.24956
+  ],
+  [
+   69.67649,
+   23.25187
+  ],
+  [
+   69.67731,
+   23.25416
+  ],
+  [
+   69.67629,
+   23.25582
+  ],
+  [
+   69.67465,
+   23.25728
+  ],
+  [
+   69.67145,
+   23.25971
+  ],
+  [
+   69.67008,
+   23.25989
+  ],
+  [
+   69.67009,
+   23.26279
+  ],
+  [
+   69.67058,
+   23.2645
+  ],
+  [
+   69.67489,
+   23.26964
+  ],
+  [
+   69.6764,
+   23.27234
+  ],
+  [
+   69.6789,
+   23.27904
+  ],
+  [
+   69.68027,
+   23.29125
+  ],
+  [
+   69.68386,
+   23.29784
+  ],
+  [
+   69.68245,
+   23.30241
+  ],
+  [
+   69.68335,
+   23.3079
+  ],
+  [
+   69.69264,
+   23.33492
+  ],
+  [
+   69.69296,
+   23.35358
+  ],
+  [
+   69.69731,
+   23.36393
+  ],
+  [
+   69.69604,
+   23.36659
+  ],
+  [
+   69.6959,
+   23.36825
+  ],
+  [
+   69.69745,
+   23.37005
+  ],
+  [
+   69.70606,
+   23.37577
+  ],
+  [
+   69.70674,
+   23.38067
+  ],
+  [
+   69.70628,
+   23.38176
+  ],
+  [
+   69.70111,
+   23.38738
+  ],
+  [
+   69.69391,
+   23.39755
+  ],
+  [
+   69.6914,
+   23.40367
+  ],
+  [
+   69.67942,
+   23.42697
+  ],
+  [
+   69.6616,
+   23.43223
+  ],
+  [
+   69.66163,
+   23.50823
+  ],
+  [
+   69.69436,
+   23.64249
+  ],
+  [
+   69.70998,
+   23.66884
+  ],
+  [
+   69.70634,
+   23.6688
+  ],
+  [
+   69.69166,
+   23.66664
+  ],
+  [
+   69.68177,
+   23.6668
+  ],
+  [
+   69.6639,
+   23.66797
+  ],
+  [
+   69.64526,
+   23.66587
+  ],
+  [
+   69.63932,
+   23.6636
+  ],
+  [
+   69.63708,
+   23.66326
+  ],
+  [
+   69.62949,
+   23.66517
+  ],
+  [
+   69.61591,
+   23.6661
+  ],
+  [
+   69.60947,
+   23.66714
+  ],
+  [
+   69.60281,
+   23.6689
+  ],
+  [
+   69.59893,
+   23.67122
+  ],
+  [
+   69.59361,
+   23.6772
+  ],
+  [
+   69.58996,
+   23.68539
+  ],
+  [
+   69.58869,
+   23.68745
+  ],
+  [
+   69.58603,
+   23.69024
+  ],
+  [
+   69.57756,
+   23.69868
+  ],
+  [
+   69.56773,
+   23.70445
+  ],
+  [
+   69.56233,
+   23.70933
+  ],
+  [
+   69.5466,
+   23.72948
+  ],
+  [
+   69.53823,
+   23.73802
+  ],
+  [
+   69.53122,
+   23.74216
+  ],
+  [
+   69.52853,
+   23.74924
+  ],
+  [
+   69.51187,
+   23.76074
+  ],
+  [
+   69.51079,
+   23.75964
+  ],
+  [
+   69.5108,
+   23.7584
+  ],
+  [
+   69.51065,
+   23.75939
+  ],
+  [
+   69.51187,
+   23.76074
+  ],
+  [
+   69.52853,
+   23.74924
+  ],
+  [
+   69.53122,
+   23.74216
+  ],
+  [
+   69.53823,
+   23.73802
+  ],
+  [
+   69.5466,
+   23.72948
+  ],
+  [
+   69.56233,
+   23.70933
+  ],
+  [
+   69.56773,
+   23.70445
+  ],
+  [
+   69.57756,
+   23.69868
+  ],
+  [
+   69.58603,
+   23.69024
+  ],
+  [
+   69.58869,
+   23.68745
+  ],
+  [
+   69.58996,
+   23.68539
+  ],
+  [
+   69.59361,
+   23.6772
+  ],
+  [
+   69.59893,
+   23.67122
+  ],
+  [
+   69.60281,
+   23.6689
+  ],
+  [
+   69.60947,
+   23.66714
+  ],
+  [
+   69.61591,
+   23.6661
+  ],
+  [
+   69.62949,
+   23.66517
+  ],
+  [
+   69.63708,
+   23.66326
+  ],
+  [
+   69.63932,
+   23.6636
+  ],
+  [
+   69.64526,
+   23.66587
+  ],
+  [
+   69.6639,
+   23.66797
+  ],
+  [
+   69.68177,
+   23.6668
+  ],
+  [
+   69.69166,
+   23.66664
+  ],
+  [
+   69.70634,
+   23.6688
+  ],
+  [
+   69.70998,
+   23.66884
+  ],
+  [
+   69.71134,
+   23.67164
+  ],
+  [
+   69.7297,
+   23.75021
+  ],
+  [
+   69.72903,
+   23.76417
+  ],
+  [
+   69.7303,
+   23.82525
+  ],
+  [
+   69.72975,
+   23.82509
+  ],
+  [
+   69.72972,
+   23.82453
+  ],
+  [
+   69.72975,
+   23.82509
+  ],
+  [
+   69.7303,
+   23.82525
+  ],
+  [
+   69.73053,
+   23.83446
+  ],
+  [
+   69.72855,
+   23.84316
+  ],
+  [
+   69.72901,
+   23.84587
+  ],
+  [
+   69.73115,
+   23.84802
+  ],
+  [
+   69.73194,
+   23.84979
+  ],
+  [
+   69.7381,
+   23.84891
+  ],
+  [
+   69.75372,
+   23.85107
+  ],
+  [
+   69.76068,
+   23.85106
+  ],
+  [
+   69.76799,
+   23.85039
+  ],
+  [
+   69.7751,
+   23.84801
+  ],
+  [
+   69.78244,
+   23.84647
+  ],
+  [
+   69.81015,
+   23.83871
+  ],
+  [
+   69.8195,
+   23.83381
+  ],
+  [
+   69.82327,
+   23.8311
+  ],
+  [
+   69.82578,
+   23.83171
+  ],
+  [
+   69.83651,
+   23.83231
+  ],
+  [
+   69.84711,
+   23.82406
+  ],
+  [
+   69.85637,
+   23.82116
+  ],
+  [
+   69.86113,
+   23.81503
+  ],
+  [
+   69.86486,
+   23.81344
+  ],
+  [
+   69.86716,
+   23.8129
+  ],
+  [
+   69.86901,
+   23.81406
+  ],
+  [
+   69.87288,
+   23.81542
+  ],
+  [
+   69.89648,
+   23.81914
+  ],
+  [
+   69.90117,
+   23.81676
+  ],
+  [
+   69.90445,
+   23.81376
+  ],
+  [
+   69.90361,
+   23.81006
+  ],
+  [
+   69.90416,
+   23.80904
+  ],
+  [
+   69.91033,
+   23.80704
+  ],
+  [
+   69.91604,
+   23.80798
+  ],
+  [
+   69.92,
+   23.807
+  ],
+  [
+   70.06642,
+   23.83156
+  ],
+  [
+   70.09221,
+   23.82868
+  ],
+  [
+   70.10488,
+   23.82873
+  ],
+  [
+   70.2238,
+   23.84637
+  ],
+  [
+   70.2209,
+   23.85299
+  ],
+  [
+   70.22096,
+   23.85829
+  ],
+  [
+   70.22165,
+   23.86009
+  ],
+  [
+   70.2177,
+   23.87275
+  ],
+  [
+   70.21699,
+   23.87376
+  ],
+  [
+   70.21688,
+   23.87546
+  ],
+  [
+   70.21777,
+   23.87567
+  ],
+  [
+   70.21774,
+   23.8762
+  ],
+  [
+   70.21861,
+   23.87493
+  ]
+ ],
+ "fuel": {
+  "listed": true,
+  "pumps": [
+   {
+    "id": "fuel:node-1545193233",
+    "name": "BP",
+    "brand": "BP",
+    "near": "Bhuj",
+    "km_from_start": 0.7,
+    "lat": 23.24923,
+    "lon": 69.67265,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/node/1545193233"
+   },
+   {
+    "id": "fuel:node-3299344424",
+    "name": "Bharat Petroleum",
+    "brand": "Bharat Petroleum",
+    "near": "Bhuj",
+    "km_from_start": 1.5,
+    "lat": 23.25448,
+    "lon": 69.6772,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/node/3299344424"
+   }
+  ],
+  "pump_count": 2,
+  "stops": 1,
+  "longest_gaps": [
+   {
+    "from_km": 1.5,
+    "to_km": 180.0,
+    "gap_km": 178.5,
+    "from_is": "pump",
+    "to_is": "end of route",
+    "near_from": "Bhuj",
+    "near_to": "Dholavira"
+   },
+   {
+    "from_km": 0.0,
+    "to_km": 0.7,
+    "gap_km": 0.7,
+    "from_is": "start of route",
+    "to_is": "pump",
+    "near_from": "Bhuj",
+    "near_to": "Bhuj"
+   }
+  ],
+  "note": "Pumps are those drawn on the open map within the search radius of the road. A pump missing from the map is missing here, so each gap is a worst case.",
+  "fetched": "2026-09-28"
+ },
+ "rules": [
+  {
+   "id": "rule:white-rann-entry-permit",
+   "kind": "permit",
+   "title": "White Rann: entry permit, online or at checkpost",
+   "detail": "Book online or at Bhirandiyara checkpost; the lead traveller uploads identity proof. Adults 100 rupees, children six to twelve 50 rupees, two-wheelers listed at no charge.",
+   "applies_to": "Indian citizens",
+   "set_by": "Kachchh district administration, Government of Gujarat",
+   "official_url": "https://rannpermit.gujarat.gov.in/",
+   "has_official_order": true,
+   "source": {
+    "url": "https://rannpermit.gujarat.gov.in/",
+    "title": "Online permit for Rann of Kutch",
+    "kind": "official",
+    "opened": true,
+    "source_date": null,
+    "accessed": "2026-09-28"
+   },
+   "history": [
+    {
+     "date": "2018-11",
+     "change": "District administration launched online permits on a separate website; checkpost permits continued. Two-wheelers were charged a fee at that time.",
+     "source": {
+      "url": "https://deshgujarat.com/2018/11/16/online-permit-system-for-visit-to-white-rann-of-kutch-launched-by-collector-with-dedicated-website/",
+      "title": "Online permit system for visit to White Rann of Kutch launched by Collector with dedicated website",
+      "kind": "news",
+      "opened": true,
+      "source_date": "2018-11-16",
+      "accessed": "2026-09-28"
+     }
+    }
+   ]
+  },
+  {
+   "id": "rule:white-rann-online-permit-indians-only",
+   "kind": "permit",
+   "title": "Online permit is for Indian nationals only",
+   "detail": "The government portal accepts Indian nationals only. An operator says foreign visitors give passport and visa details and should allow more time.",
+   "applies_to": "Foreign nationals",
+   "set_by": "Kachchh district administration, Government of Gujarat",
+   "official_url": "https://rannpermit.gujarat.gov.in/",
+   "has_official_order": true,
+   "source": {
+    "url": "https://rannpermit.gujarat.gov.in/",
+    "title": "Online permit for Rann of Kutch",
+    "kind": "official",
+    "opened": true,
+    "source_date": null,
+    "accessed": "2026-09-28"
+   },
+   "history": []
+  },
+  {
+   "id": "rule:kalo-dungar-same-permit",
+   "kind": "permit",
+   "title": "Kalo Dungar: carry the same permit onward",
+   "detail": "An operator says the White Rann permit is checked again at a second checkpost on the way to Kalo Dungar. No government order was found.",
+   "applies_to": "All visitors",
+   "set_by": "Kachchh district administration (as reported)",
+   "official_url": null,
+   "has_official_order": false,
+   "source": {
+    "url": "https://www.rannutsavtickets.in/blog/rann-of-kutch-entry-permit-guide",
+    "title": "Rann of Kutch Entry Permit: The Complete Guide",
+    "kind": "operator",
+    "opened": true,
+    "source_date": "2026-08-14",
+    "accessed": "2026-09-28"
+   },
+   "history": []
+  },
+  {
+   "id": "rule:india-bridge-civilian-limit",
+   "kind": "permit",
+   "title": "India Bridge: civilians stop here without special permission",
+   "detail": "Past India Bridge near Khavda the area is closed to civilians; entry needs special permission from the Border Security Force. No government order was found.",
+   "applies_to": "All civilians",
+   "set_by": "Border Security Force",
+   "official_url": null,
+   "has_official_order": false,
+   "source": {
+    "url": "https://en.wikipedia.org/wiki/Kutch_Desert_Wildlife_Sanctuary",
+    "title": "Kutch Desert Wildlife Sanctuary",
+    "kind": "encyclopedia",
+    "opened": true,
+    "source_date": null,
+    "accessed": "2026-09-28"
+   },
+   "history": []
+  },
+  {
+   "id": "rule:khavda-dholavira-road-identity-check",
+   "kind": "document",
+   "title": "Khavda to Dholavira road: original identity card checked",
+   "detail": "A travel site says an army checkpost near Khavda checks original photo identity, the road has no entry fee, and motorcycles are allowed. No government order found.",
+   "applies_to": "All visitors",
+   "set_by": "Not stated",
+   "official_url": null,
+   "has_official_order": false,
+   "source": {
+    "url": "https://kutchdiaries.com/destinations/road-to-heaven/",
+    "title": "Road to Heaven Kutch",
+    "kind": "blog",
+    "opened": true,
+    "source_date": null,
+    "accessed": "2026-09-28"
+   },
+   "history": []
+  }
+ ],
+ "season": {
+  "note": "The Rann is a shallow seasonal wetland after the monsoon and dries to white salt by October or November; winter is the riding season.",
+  "history": []
+ },
+ "authorities": [
+  {
+   "id": "authority:kachchh-district-administration-government-of-gujarat",
+   "office": "Kachchh district administration, Government of Gujarat",
+   "announces": "Issues White Rann entry permits online and at the Bhirandiyara checkpost",
+   "stretch": "Bhirandiyara to Dhordo and the White Rann",
+   "channel": "Website",
+   "url": "https://rannpermit.gujarat.gov.in/",
+   "source": {
+    "url": "https://rannpermit.gujarat.gov.in/",
+    "title": "Online permit for Rann of Kutch",
+    "kind": "official",
+    "opened": true,
+    "source_date": null,
+    "accessed": "2026-09-28"
+   }
+  },
+  {
+   "id": "authority:border-security-force",
+   "office": "Border Security Force",
+   "announces": "Decides on special permission to go beyond India Bridge",
+   "stretch": "India Bridge and the border area north of Khavda",
+   "channel": "Not stated",
+   "url": null,
+   "source": {
+    "url": "https://en.wikipedia.org/wiki/Kutch_Desert_Wildlife_Sanctuary",
+    "title": "Kutch Desert Wildlife Sanctuary",
+    "kind": "encyclopedia",
+    "opened": true,
+    "source_date": null,
+    "accessed": "2026-09-28"
+   }
+  }
+ ],
+ "hazards": [
+  {
+   "id": "hazard:no-fuel-on-the-khavda-to-dholavira-road",
+   "title": "No fuel on the Khavda to Dholavira road",
+   "detail": "No pumps on the 30 kilometre stretch across the Rann; fill up at Bhuj or Khavda first.",
+   "months": [],
+   "source": {
+    "url": "https://kutchdiaries.com/destinations/road-to-heaven/",
+    "title": "Road to Heaven Kutch",
+    "kind": "blog",
+    "opened": true,
+    "source_date": null,
+    "accessed": "2026-09-28"
+   }
+  },
+  {
+   "id": "hazard:rann-under-water-after-the-monsoon",
+   "title": "Rann under water after the monsoon",
+   "detail": "The salt flats hold water about half a metre to one and a half metres deep until they dry in October or November.",
+   "months": [
+    7,
+    8,
+    9,
+    10
+   ],
+   "source": {
+    "url": "https://en.wikipedia.org/wiki/Kutch_Desert_Wildlife_Sanctuary",
+    "title": "Kutch Desert Wildlife Sanctuary",
+    "kind": "encyclopedia",
+    "opened": true,
+    "source_date": null,
+    "accessed": "2026-09-28"
+   }
+  }
+ ],
+ "videos": [
+  {
+   "id": "nrAxqT9_6v0",
+   "url": "https://www.youtube.com/watch?v=nrAxqT9_6v0",
+   "title": "Jawa 350 First Ride Review | Rann of Kutch | Road to Heaven",
+   "channel": "TopGear Mag India",
+   "stretch": "White Rann and the Khavda to Dholavira road",
+   "filmed": null,
+   "bike": "Jawa 350",
+   "checked": false
+  },
+  {
+   "id": "HnTPCqgtAbQ",
+   "url": "https://www.youtube.com/watch?v=HnTPCqgtAbQ",
+   "title": "Mount Abu to Dholavira, Gujarat | Jamshedpur to Rann of Kutch Ride Episode 6 | Dominar 400 moto vlog",
+   "channel": "GS Vlogs JSR",
+   "stretch": "Mount Abu to Dholavira",
+   "filmed": null,
+   "bike": "Bajaj Dominar 400",
+   "checked": false
+  }
+ ],
+ "image": {
+  "file": "rann-of-kutch.jpg",
+  "small": "rann-of-kutch-small.jpg",
+  "title": "Sunset at Rann of Kutch, Dhordo, Gujarat.jpg",
+  "shows": "Sunset over the Rann of Kutch at Dhordo",
+  "author": "NandaMunish",
+  "licence": "CC BY-SA 4.0",
+  "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+  "source_page": "https://commons.wikimedia.org/wiki/File:Sunset_at_Rann_of_Kutch,_Dhordo,_Gujarat.jpg",
+  "source": "Wikimedia Commons",
+  "taken": "2018-12-29",
+  "changes": "Resized. Not otherwise changed.",
+  "fetched": "2026-09-28"
+ },
+ "gaps": [
+  "The official permit page gives no checkpost hours and does not name the places the permit covers beyond 'the Rann area'.",
+  "No official page was found for the rule at India Bridge or for how to ask the Border Security Force for permission beyond it. A forum thread that could not be opened (https://www.tripadvisor.com/ShowTopic-g303878-i11398-k7007777-Need_info_on_permits-Bhuj_Kutch_District_Gujarat.html) says no permit is needed up to the bridge and that permission to cross is given at the district office or the Border Security Force office in Bhuj.",
+  "The official Kachchh district pages for the White Rann and Dholavira say nothing about permits, timings or fees.",
+  "The highway number of the Khavda to Dholavira road was not sourced.",
+  "Usual number of riding days: no source found.",
+  "No source found for summer heat figures in Kutch.",
+  "Videos: the pages give upload dates, not filming dates, so 'filmed' is filled only where the title names a date. Uploads, in order: 2024-01, 2025-11."
+ ],
+ "counts": {
+  "facts": 23
+ },
+ "built": "2026-09-28"
+}

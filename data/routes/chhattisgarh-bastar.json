@@ -1,0 +1,2385 @@
+{
+ "slug": "chhattisgarh-bastar",
+ "name": "Chhattisgarh: Bastar and Chitrakote",
+ "region": "central-east",
+ "region_name": "Central and East",
+ "batch": 2,
+ "terrain": "hills",
+ "country": "in",
+ "level": "basic",
+ "one_line": "Chhattisgarh, south from Raipur over Keshkal ghat to the waterfalls around Jagdalpur",
+ "places": [
+  "Raipur",
+  "Kanker",
+  "Keshkal",
+  "Jagdalpur",
+  "Chitrakote Falls",
+  "Tirathgarh Falls"
+ ],
+ "header": {
+  "highway": {
+   "value": "NH 30 (Raipur, Dhamtari, Kanker, Kondagaon, Jagdalpur)",
+   "source": {
+    "url": "https://en.wikipedia.org/wiki/National_Highway_30_(India)",
+    "title": "National Highway 30 (India)",
+    "kind": "encyclopedia",
+    "opened": true,
+    "source_date": null,
+    "accessed": "2026-09-28"
+   }
+  },
+  "distance_km": 393.1,
+  "map_app_hours": 5.22,
+  "usual_days": null,
+  "highest_point": {
+   "name": "near Keshkal",
+   "altitude_m": 666,
+   "source": null,
+   "computed": true
+  },
+  "usual_season": {
+   "value": "November to June; the waterfalls are fullest from July to October",
+   "source": {
+    "url": "https://bastar.gov.in/en/tourism/",
+    "title": "Tourism, District Bastar",
+    "kind": "official",
+    "opened": true,
+    "source_date": null,
+    "accessed": "2026-09-28"
+   }
+  }
+ },
+ "waypoints": [
+  {
+   "name": "Raipur",
+   "lat": 21.2382,
+   "lon": 81.63372,
+   "km_from_start": 0.0,
+   "altitude_m": 309,
+   "kind": "place",
+   "moved_to_road_m": 12
+  },
+  {
+   "name": "Kanker",
+   "lat": 20.26919,
+   "lon": 81.49345,
+   "km_from_start": 139.4,
+   "altitude_m": 398,
+   "kind": "place",
+   "moved_to_road_m": 27
+  },
+  {
+   "name": "Keshkal",
+   "lat": 20.08343,
+   "lon": 81.58873,
+   "km_from_start": 169.1,
+   "altitude_m": 666,
+   "kind": "place",
+   "moved_to_road_m": 38
+  },
+  {
+   "name": "Jagdalpur",
+   "lat": 19.08707,
+   "lon": 82.02357,
+   "km_from_start": 296.5,
+   "altitude_m": 556,
+   "kind": "place",
+   "moved_to_road_m": 1
+  },
+  {
+   "name": "Chitrakote Falls",
+   "lat": 19.20482,
+   "lon": 81.69981,
+   "km_from_start": 334.6,
+   "altitude_m": 531,
+   "kind": "place",
+   "moved_to_road_m": 182
+  },
+  {
+   "name": "Tirathgarh Falls",
+   "lat": 18.91516,
+   "lon": 81.86469,
+   "km_from_start": 393.1,
+   "altitude_m": 591,
+   "kind": "place",
+   "moved_to_road_m": 68
+  }
+ ],
+ "stretches": [
+  {
+   "from": "Raipur",
+   "to": "Kanker",
+   "distance_km": 139.4,
+   "map_app_hours": 1.69,
+   "doubtful": false
+  },
+  {
+   "from": "Kanker",
+   "to": "Keshkal",
+   "distance_km": 29.7,
+   "map_app_hours": 0.39,
+   "doubtful": false
+  },
+  {
+   "from": "Keshkal",
+   "to": "Jagdalpur",
+   "distance_km": 127.4,
+   "map_app_hours": 1.54,
+   "doubtful": false
+  },
+  {
+   "from": "Jagdalpur",
+   "to": "Chitrakote Falls",
+   "distance_km": 38.1,
+   "map_app_hours": 0.63,
+   "doubtful": false
+  },
+  {
+   "from": "Chitrakote Falls",
+   "to": "Tirathgarh Falls",
+   "distance_km": 58.5,
+   "map_app_hours": 0.97,
+   "doubtful": false
+  }
+ ],
+ "profile": [
+  {
+   "km": 0.0,
+   "m": 309
+  },
+  {
+   "km": 4.4,
+   "m": 296
+  },
+  {
+   "km": 8.7,
+   "m": 303
+  },
+  {
+   "km": 13.1,
+   "m": 306
+  },
+  {
+   "km": 17.5,
+   "m": 317
+  },
+  {
+   "km": 21.8,
+   "m": 324
+  },
+  {
+   "km": 26.2,
+   "m": 321
+  },
+  {
+   "km": 30.5,
+   "m": 313
+  },
+  {
+   "km": 34.9,
+   "m": 312
+  },
+  {
+   "km": 39.3,
+   "m": 311
+  },
+  {
+   "km": 43.6,
+   "m": 319
+  },
+  {
+   "km": 48.0,
+   "m": 312
+  },
+  {
+   "km": 52.4,
+   "m": 317
+  },
+  {
+   "km": 56.7,
+   "m": 316
+  },
+  {
+   "km": 61.1,
+   "m": 321
+  },
+  {
+   "km": 65.6,
+   "m": 321
+  },
+  {
+   "km": 69.9,
+   "m": 321
+  },
+  {
+   "km": 74.3,
+   "m": 322
+  },
+  {
+   "km": 78.7,
+   "m": 320
+  },
+  {
+   "km": 83.0,
+   "m": 326
+  },
+  {
+   "km": 87.4,
+   "m": 336
+  },
+  {
+   "km": 91.7,
+   "m": 362
+  },
+  {
+   "km": 96.1,
+   "m": 411
+  },
+  {
+   "km": 100.5,
+   "m": 429
+  },
+  {
+   "km": 104.8,
+   "m": 357
+  },
+  {
+   "km": 109.2,
+   "m": 352
+  },
+  {
+   "km": 113.6,
+   "m": 380
+  },
+  {
+   "km": 117.9,
+   "m": 395
+  },
+  {
+   "km": 122.3,
+   "m": 381
+  },
+  {
+   "km": 126.7,
+   "m": 374
+  },
+  {
+   "km": 131.0,
+   "m": 398
+  },
+  {
+   "km": 135.4,
+   "m": 397
+  },
+  {
+   "km": 139.8,
+   "m": 398
+  },
+  {
+   "km": 144.1,
+   "m": 411
+  },
+  {
+   "km": 148.5,
+   "m": 424
+  },
+  {
+   "km": 152.8,
+   "m": 442
+  },
+  {
+   "km": 157.2,
+   "m": 453
+  },
+  {
+   "km": 161.6,
+   "m": 502
+  },
+  {
+   "km": 165.9,
+   "m": 646
+  },
+  {
+   "km": 170.3,
+   "m": 664
+  },
+  {
+   "km": 174.7,
+   "m": 665
+  },
+  {
+   "km": 179.0,
+   "m": 638
+  },
+  {
+   "km": 183.4,
+   "m": 640
+  },
+  {
+   "km": 187.9,
+   "m": 629
+  },
+  {
+   "km": 192.2,
+   "m": 606
+  },
+  {
+   "km": 196.6,
+   "m": 640
+  },
+  {
+   "km": 201.0,
+   "m": 623
+  },
+  {
+   "km": 205.3,
+   "m": 610
+  },
+  {
+   "km": 209.7,
+   "m": 595
+  },
+  {
+   "km": 214.0,
+   "m": 615
+  },
+  {
+   "km": 218.4,
+   "m": 608
+  },
+  {
+   "km": 222.8,
+   "m": 579
+  },
+  {
+   "km": 227.1,
+   "m": 615
+  },
+  {
+   "km": 231.5,
+   "m": 593
+  },
+  {
+   "km": 235.9,
+   "m": 587
+  },
+  {
+   "km": 240.2,
+   "m": 568
+  },
+  {
+   "km": 244.6,
+   "m": 587
+  },
+  {
+   "km": 249.0,
+   "m": 577
+  },
+  {
+   "km": 253.3,
+   "m": 561
+  },
+  {
+   "km": 257.7,
+   "m": 576
+  },
+  {
+   "km": 262.1,
+   "m": 578
+  },
+  {
+   "km": 266.4,
+   "m": 560
+  },
+  {
+   "km": 270.8,
+   "m": 545
+  },
+  {
+   "km": 275.1,
+   "m": 571
+  },
+  {
+   "km": 279.5,
+   "m": 554
+  },
+  {
+   "km": 283.9,
+   "m": 547
+  },
+  {
+   "km": 288.2,
+   "m": 542
+  },
+  {
+   "km": 292.6,
+   "m": 553
+  },
+  {
+   "km": 297.0,
+   "m": 559
+  },
+  {
+   "km": 301.3,
+   "m": 557
+  },
+  {
+   "km": 305.7,
+   "m": 552
+  },
+  {
+   "km": 310.1,
+   "m": 545
+  },
+  {
+   "km": 314.5,
+   "m": 563
+  },
+  {
+   "km": 318.9,
+   "m": 549
+  },
+  {
+   "km": 323.3,
+   "m": 548
+  },
+  {
+   "km": 327.6,
+   "m": 546
+  },
+  {
+   "km": 332.0,
+   "m": 544
+  },
+  {
+   "km": 336.3,
+   "m": 541
+  },
+  {
+   "km": 340.7,
+   "m": 532
+  },
+  {
+   "km": 345.1,
+   "m": 553
+  },
+  {
+   "km": 349.4,
+   "m": 540
+  },
+  {
+   "km": 353.8,
+   "m": 556
+  },
+  {
+   "km": 358.2,
+   "m": 543
+  },
+  {
+   "km": 362.5,
+   "m": 541
+  },
+  {
+   "km": 366.9,
+   "m": 557
+  },
+  {
+   "km": 371.3,
+   "m": 560
+  },
+  {
+   "km": 375.6,
+   "m": 549
+  },
+  {
+   "km": 380.0,
+   "m": 565
+  },
+  {
+   "km": 384.4,
+   "m": 583
+  },
+  {
+   "km": 388.7,
+   "m": 551
+  },
+  {
+   "km": 393.1,
+   "m": 591
+  }
+ ],
+ "line": [
+  [
+   81.63372,
+   21.2382
+  ],
+  [
+   81.63718,
+   21.23774
+  ],
+  [
+   81.63777,
+   21.23575
+  ],
+  [
+   81.63985,
+   21.23199
+  ],
+  [
+   81.64038,
+   21.22612
+  ],
+  [
+   81.64079,
+   21.22544
+  ],
+  [
+   81.6729,
+   21.20687
+  ],
+  [
+   81.69,
+   21.19855
+  ],
+  [
+   81.70987,
+   21.18206
+  ],
+  [
+   81.71098,
+   21.1801
+  ],
+  [
+   81.71269,
+   21.17442
+  ],
+  [
+   81.7248,
+   21.14418
+  ],
+  [
+   81.73022,
+   21.13207
+  ],
+  [
+   81.73391,
+   21.12176
+  ],
+  [
+   81.75204,
+   21.08518
+  ],
+  [
+   81.75136,
+   21.07499
+  ],
+  [
+   81.75009,
+   21.0695
+  ],
+  [
+   81.75123,
+   21.06526
+  ],
+  [
+   81.75098,
+   21.06409
+  ],
+  [
+   81.74962,
+   21.06283
+  ],
+  [
+   81.74509,
+   21.06251
+  ],
+  [
+   81.74384,
+   21.06175
+  ],
+  [
+   81.73898,
+   21.05059
+  ],
+  [
+   81.73577,
+   21.04788
+  ],
+  [
+   81.73437,
+   21.04607
+  ],
+  [
+   81.72966,
+   21.0366
+  ],
+  [
+   81.72919,
+   21.03179
+  ],
+  [
+   81.72956,
+   21.02797
+  ],
+  [
+   81.72411,
+   20.99685
+  ],
+  [
+   81.698,
+   20.95036
+  ],
+  [
+   81.6952,
+   20.94118
+  ],
+  [
+   81.69272,
+   20.92052
+  ],
+  [
+   81.69056,
+   20.91005
+  ],
+  [
+   81.68837,
+   20.90609
+  ],
+  [
+   81.68692,
+   20.89984
+  ],
+  [
+   81.68783,
+   20.88202
+  ],
+  [
+   81.6886,
+   20.88033
+  ],
+  [
+   81.69425,
+   20.87464
+  ],
+  [
+   81.69542,
+   20.8726
+  ],
+  [
+   81.70026,
+   20.85459
+  ],
+  [
+   81.70282,
+   20.84995
+  ],
+  [
+   81.7029,
+   20.8452
+  ],
+  [
+   81.70632,
+   20.83216
+  ],
+  [
+   81.70604,
+   20.82946
+  ],
+  [
+   81.70494,
+   20.82755
+  ],
+  [
+   81.70312,
+   20.82625
+  ],
+  [
+   81.68339,
+   20.8179
+  ],
+  [
+   81.68207,
+   20.81694
+  ],
+  [
+   81.65254,
+   20.77276
+  ],
+  [
+   81.62754,
+   20.76234
+  ],
+  [
+   81.60222,
+   20.75702
+  ],
+  [
+   81.57704,
+   20.74106
+  ],
+  [
+   81.57451,
+   20.74116
+  ],
+  [
+   81.56377,
+   20.74531
+  ],
+  [
+   81.56165,
+   20.74521
+  ],
+  [
+   81.55691,
+   20.74385
+  ],
+  [
+   81.55282,
+   20.74356
+  ],
+  [
+   81.54414,
+   20.73852
+  ],
+  [
+   81.52923,
+   20.73091
+  ],
+  [
+   81.52028,
+   20.72379
+  ],
+  [
+   81.51847,
+   20.7214
+  ],
+  [
+   81.51771,
+   20.71855
+  ],
+  [
+   81.51774,
+   20.71632
+  ],
+  [
+   81.5199,
+   20.70537
+  ],
+  [
+   81.51912,
+   20.70057
+  ],
+  [
+   81.51599,
+   20.69444
+  ],
+  [
+   81.51624,
+   20.69279
+  ],
+  [
+   81.51781,
+   20.68942
+  ],
+  [
+   81.51766,
+   20.68773
+  ],
+  [
+   81.51682,
+   20.68628
+  ],
+  [
+   81.50543,
+   20.67789
+  ],
+  [
+   81.50334,
+   20.67209
+  ],
+  [
+   81.48033,
+   20.66357
+  ],
+  [
+   81.45261,
+   20.64465
+  ],
+  [
+   81.43653,
+   20.62237
+  ],
+  [
+   81.39978,
+   20.58476
+  ],
+  [
+   81.37435,
+   20.56618
+  ],
+  [
+   81.37149,
+   20.56453
+  ],
+  [
+   81.37128,
+   20.56304
+  ],
+  [
+   81.3724,
+   20.56007
+  ],
+  [
+   81.37061,
+   20.55748
+  ],
+  [
+   81.36654,
+   20.51936
+  ],
+  [
+   81.36393,
+   20.50631
+  ],
+  [
+   81.36785,
+   20.4948
+  ],
+  [
+   81.37795,
+   20.47168
+  ],
+  [
+   81.38289,
+   20.46475
+  ],
+  [
+   81.38857,
+   20.45797
+  ],
+  [
+   81.38938,
+   20.45606
+  ],
+  [
+   81.3912,
+   20.45373
+  ],
+  [
+   81.39506,
+   20.445
+  ],
+  [
+   81.39521,
+   20.44144
+  ],
+  [
+   81.39776,
+   20.43179
+  ],
+  [
+   81.4161,
+   20.41552
+  ],
+  [
+   81.42781,
+   20.39908
+  ],
+  [
+   81.42817,
+   20.39482
+  ],
+  [
+   81.4567,
+   20.33438
+  ],
+  [
+   81.45755,
+   20.33226
+  ],
+  [
+   81.45766,
+   20.32947
+  ],
+  [
+   81.4633,
+   20.31512
+  ],
+  [
+   81.46622,
+   20.31149
+  ],
+  [
+   81.46572,
+   20.30702
+  ],
+  [
+   81.46604,
+   20.30565
+  ],
+  [
+   81.4818,
+   20.28581
+  ],
+  [
+   81.48244,
+   20.28416
+  ],
+  [
+   81.48955,
+   20.28007
+  ],
+  [
+   81.49107,
+   20.27839
+  ],
+  [
+   81.49271,
+   20.2749
+  ],
+  [
+   81.49283,
+   20.27297
+  ],
+  [
+   81.49116,
+   20.27018
+  ],
+  [
+   81.4909,
+   20.26825
+  ],
+  [
+   81.49227,
+   20.26744
+  ],
+  [
+   81.49345,
+   20.26919
+  ],
+  [
+   81.49296,
+   20.26711
+  ],
+  [
+   81.49703,
+   20.2641
+  ],
+  [
+   81.50525,
+   20.26332
+  ],
+  [
+   81.50705,
+   20.26184
+  ],
+  [
+   81.50844,
+   20.25714
+  ],
+  [
+   81.50798,
+   20.25294
+  ],
+  [
+   81.51275,
+   20.23008
+  ],
+  [
+   81.50983,
+   20.21306
+  ],
+  [
+   81.50864,
+   20.20937
+  ],
+  [
+   81.50652,
+   20.20622
+  ],
+  [
+   81.50689,
+   20.19925
+  ],
+  [
+   81.50356,
+   20.19446
+  ],
+  [
+   81.50258,
+   20.19084
+  ],
+  [
+   81.50392,
+   20.18359
+  ],
+  [
+   81.50971,
+   20.1778
+  ],
+  [
+   81.51244,
+   20.1766
+  ],
+  [
+   81.51335,
+   20.17572
+  ],
+  [
+   81.51528,
+   20.17026
+  ],
+  [
+   81.52136,
+   20.15873
+  ],
+  [
+   81.5314,
+   20.14907
+  ],
+  [
+   81.53297,
+   20.14632
+  ],
+  [
+   81.53652,
+   20.14227
+  ],
+  [
+   81.54067,
+   20.13973
+  ],
+  [
+   81.54736,
+   20.13701
+  ],
+  [
+   81.55497,
+   20.13279
+  ],
+  [
+   81.55845,
+   20.12924
+  ],
+  [
+   81.5598,
+   20.12682
+  ],
+  [
+   81.5601,
+   20.12485
+  ],
+  [
+   81.56292,
+   20.12179
+  ],
+  [
+   81.56378,
+   20.11979
+  ],
+  [
+   81.56579,
+   20.11711
+  ],
+  [
+   81.57166,
+   20.11327
+  ],
+  [
+   81.57678,
+   20.11232
+  ],
+  [
+   81.58033,
+   20.11027
+  ],
+  [
+   81.58141,
+   20.10814
+  ],
+  [
+   81.58503,
+   20.10593
+  ],
+  [
+   81.58384,
+   20.10607
+  ],
+  [
+   81.58333,
+   20.10565
+  ],
+  [
+   81.58379,
+   20.10468
+  ],
+  [
+   81.58227,
+   20.10339
+  ],
+  [
+   81.58183,
+   20.10158
+  ],
+  [
+   81.58253,
+   20.10326
+  ],
+  [
+   81.58333,
+   20.10393
+  ],
+  [
+   81.58748,
+   20.10487
+  ],
+  [
+   81.58697,
+   20.10432
+  ],
+  [
+   81.58568,
+   20.10438
+  ],
+  [
+   81.58318,
+   20.1028
+  ],
+  [
+   81.58584,
+   20.10383
+  ],
+  [
+   81.58827,
+   20.10378
+  ],
+  [
+   81.58616,
+   20.10298
+  ],
+  [
+   81.58777,
+   20.10274
+  ],
+  [
+   81.58658,
+   20.10258
+  ],
+  [
+   81.58743,
+   20.10259
+  ],
+  [
+   81.58829,
+   20.10193
+  ],
+  [
+   81.58686,
+   20.10228
+  ],
+  [
+   81.58862,
+   20.10112
+  ],
+  [
+   81.59303,
+   20.09269
+  ],
+  [
+   81.58811,
+   20.08207
+  ],
+  [
+   81.58388,
+   20.06692
+  ],
+  [
+   81.57916,
+   20.06013
+  ],
+  [
+   81.57856,
+   20.05889
+  ],
+  [
+   81.57835,
+   20.05644
+  ],
+  [
+   81.58484,
+   20.02681
+  ],
+  [
+   81.59957,
+   19.99958
+  ],
+  [
+   81.60229,
+   19.99378
+  ],
+  [
+   81.62734,
+   19.90629
+  ],
+  [
+   81.63438,
+   19.89052
+  ],
+  [
+   81.6344,
+   19.88899
+  ],
+  [
+   81.63245,
+   19.88303
+  ],
+  [
+   81.63795,
+   19.84496
+  ],
+  [
+   81.63887,
+   19.84084
+  ],
+  [
+   81.64275,
+   19.83044
+  ],
+  [
+   81.64345,
+   19.8271
+  ],
+  [
+   81.64325,
+   19.81567
+  ],
+  [
+   81.64556,
+   19.80026
+  ],
+  [
+   81.64964,
+   19.76341
+  ],
+  [
+   81.65212,
+   19.75559
+  ],
+  [
+   81.65346,
+   19.74712
+  ],
+  [
+   81.65373,
+   19.74424
+  ],
+  [
+   81.65134,
+   19.74045
+  ],
+  [
+   81.65153,
+   19.72243
+  ],
+  [
+   81.659,
+   19.66539
+  ],
+  [
+   81.66361,
+   19.63464
+  ],
+  [
+   81.66648,
+   19.62572
+  ],
+  [
+   81.66734,
+   19.62119
+  ],
+  [
+   81.66648,
+   19.61589
+  ],
+  [
+   81.66659,
+   19.61329
+  ],
+  [
+   81.66829,
+   19.60105
+  ],
+  [
+   81.66784,
+   19.5996
+  ],
+  [
+   81.66346,
+   19.59314
+  ],
+  [
+   81.66212,
+   19.59003
+  ],
+  [
+   81.66152,
+   19.58699
+  ],
+  [
+   81.66214,
+   19.5846
+  ],
+  [
+   81.68104,
+   19.55252
+  ],
+  [
+   81.69926,
+   19.49427
+  ],
+  [
+   81.70811,
+   19.48033
+  ],
+  [
+   81.71302,
+   19.47847
+  ],
+  [
+   81.7157,
+   19.47456
+  ],
+  [
+   81.72303,
+   19.46941
+  ],
+  [
+   81.75352,
+   19.44521
+  ],
+  [
+   81.75935,
+   19.43225
+  ],
+  [
+   81.7655,
+   19.41164
+  ],
+  [
+   81.77002,
+   19.40446
+  ],
+  [
+   81.77219,
+   19.40259
+  ],
+  [
+   81.7751,
+   19.40192
+  ],
+  [
+   81.7773,
+   19.40034
+  ],
+  [
+   81.79,
+   19.37836
+  ],
+  [
+   81.81409,
+   19.35111
+  ],
+  [
+   81.82058,
+   19.34613
+  ],
+  [
+   81.87429,
+   19.27943
+  ],
+  [
+   81.88638,
+   19.27091
+  ],
+  [
+   81.88818,
+   19.26812
+  ],
+  [
+   81.89246,
+   19.25853
+  ],
+  [
+   81.90135,
+   19.24975
+  ],
+  [
+   81.91302,
+   19.23216
+  ],
+  [
+   81.91328,
+   19.22854
+  ],
+  [
+   81.91759,
+   19.22075
+  ],
+  [
+   81.92947,
+   19.20941
+  ],
+  [
+   81.93362,
+   19.20791
+  ],
+  [
+   81.93671,
+   19.20502
+  ],
+  [
+   81.94418,
+   19.19412
+  ],
+  [
+   81.96124,
+   19.17681
+  ],
+  [
+   82.00098,
+   19.15074
+  ],
+  [
+   82.01591,
+   19.14363
+  ],
+  [
+   82.02105,
+   19.13817
+  ],
+  [
+   82.02486,
+   19.11012
+  ],
+  [
+   82.02452,
+   19.10895
+  ],
+  [
+   82.02235,
+   19.10676
+  ],
+  [
+   82.02317,
+   19.10213
+  ],
+  [
+   82.02276,
+   19.09752
+  ],
+  [
+   82.01997,
+   19.09215
+  ],
+  [
+   82.02023,
+   19.09093
+  ],
+  [
+   82.02093,
+   19.0902
+  ],
+  [
+   82.02456,
+   19.08843
+  ],
+  [
+   82.02282,
+   19.08573
+  ],
+  [
+   82.02004,
+   19.08691
+  ],
+  [
+   82.0186,
+   19.08626
+  ],
+  [
+   82.01199,
+   19.08834
+  ],
+  [
+   82.00635,
+   19.08877
+  ],
+  [
+   81.99697,
+   19.09449
+  ],
+  [
+   81.97966,
+   19.09786
+  ],
+  [
+   81.97537,
+   19.09656
+  ],
+  [
+   81.96968,
+   19.09669
+  ],
+  [
+   81.96152,
+   19.09494
+  ],
+  [
+   81.95023,
+   19.09688
+  ],
+  [
+   81.9351,
+   19.10129
+  ],
+  [
+   81.93138,
+   19.1054
+  ],
+  [
+   81.92058,
+   19.11304
+  ],
+  [
+   81.90344,
+   19.12038
+  ],
+  [
+   81.88552,
+   19.12548
+  ],
+  [
+   81.88274,
+   19.12798
+  ],
+  [
+   81.88121,
+   19.13225
+  ],
+  [
+   81.87342,
+   19.13706
+  ],
+  [
+   81.86943,
+   19.13716
+  ],
+  [
+   81.86158,
+   19.13912
+  ],
+  [
+   81.84087,
+   19.14034
+  ],
+  [
+   81.83373,
+   19.13971
+  ],
+  [
+   81.82937,
+   19.14041
+  ],
+  [
+   81.82309,
+   19.14449
+  ],
+  [
+   81.8191,
+   19.14631
+  ],
+  [
+   81.81218,
+   19.14872
+  ],
+  [
+   81.80167,
+   19.15123
+  ],
+  [
+   81.79961,
+   19.1545
+  ],
+  [
+   81.7957,
+   19.15648
+  ],
+  [
+   81.76408,
+   19.16544
+  ],
+  [
+   81.73841,
+   19.17844
+  ],
+  [
+   81.7352,
+   19.18142
+  ],
+  [
+   81.72767,
+   19.18673
+  ],
+  [
+   81.70692,
+   19.20385
+  ],
+  [
+   81.69981,
+   19.20482
+  ],
+  [
+   81.70692,
+   19.20385
+  ],
+  [
+   81.72767,
+   19.18673
+  ],
+  [
+   81.7352,
+   19.18142
+  ],
+  [
+   81.73841,
+   19.17844
+  ],
+  [
+   81.76408,
+   19.16544
+  ],
+  [
+   81.7957,
+   19.15648
+  ],
+  [
+   81.79961,
+   19.1545
+  ],
+  [
+   81.80167,
+   19.15123
+  ],
+  [
+   81.81218,
+   19.14872
+  ],
+  [
+   81.8191,
+   19.14631
+  ],
+  [
+   81.82309,
+   19.14449
+  ],
+  [
+   81.82937,
+   19.14041
+  ],
+  [
+   81.83373,
+   19.13971
+  ],
+  [
+   81.84087,
+   19.14034
+  ],
+  [
+   81.86158,
+   19.13912
+  ],
+  [
+   81.86943,
+   19.13716
+  ],
+  [
+   81.87342,
+   19.13706
+  ],
+  [
+   81.88121,
+   19.13225
+  ],
+  [
+   81.88274,
+   19.12798
+  ],
+  [
+   81.88552,
+   19.12548
+  ],
+  [
+   81.90344,
+   19.12038
+  ],
+  [
+   81.92058,
+   19.11304
+  ],
+  [
+   81.93138,
+   19.1054
+  ],
+  [
+   81.9351,
+   19.10129
+  ],
+  [
+   81.94917,
+   19.09719
+  ],
+  [
+   81.94778,
+   19.09406
+  ],
+  [
+   81.95061,
+   19.09089
+  ],
+  [
+   81.95065,
+   19.08745
+  ],
+  [
+   81.95246,
+   19.08534
+  ],
+  [
+   81.95211,
+   19.07903
+  ],
+  [
+   81.94921,
+   19.06999
+  ],
+  [
+   81.94908,
+   19.06843
+  ],
+  [
+   81.95118,
+   19.06741
+  ],
+  [
+   81.95139,
+   19.06464
+  ],
+  [
+   81.95654,
+   19.06296
+  ],
+  [
+   81.95867,
+   19.06152
+  ],
+  [
+   81.93323,
+   19.03908
+  ],
+  [
+   81.91607,
+   19.01775
+  ],
+  [
+   81.91731,
+   19.01426
+  ],
+  [
+   81.91522,
+   19.01207
+  ],
+  [
+   81.90717,
+   18.99342
+  ],
+  [
+   81.90512,
+   18.98431
+  ],
+  [
+   81.901,
+   18.97702
+  ],
+  [
+   81.89981,
+   18.97598
+  ],
+  [
+   81.89901,
+   18.97317
+  ],
+  [
+   81.89746,
+   18.97143
+  ],
+  [
+   81.89444,
+   18.96534
+  ],
+  [
+   81.8965,
+   18.95931
+  ],
+  [
+   81.89551,
+   18.9549
+  ],
+  [
+   81.89882,
+   18.94789
+  ],
+  [
+   81.89841,
+   18.94535
+  ],
+  [
+   81.89604,
+   18.94479
+  ],
+  [
+   81.89542,
+   18.94238
+  ],
+  [
+   81.89396,
+   18.94101
+  ],
+  [
+   81.89544,
+   18.93639
+  ],
+  [
+   81.89469,
+   18.93101
+  ],
+  [
+   81.89271,
+   18.92387
+  ],
+  [
+   81.89407,
+   18.92202
+  ],
+  [
+   81.89344,
+   18.92013
+  ],
+  [
+   81.89496,
+   18.9198
+  ],
+  [
+   81.89567,
+   18.91819
+  ],
+  [
+   81.89465,
+   18.91758
+  ],
+  [
+   81.89433,
+   18.9184
+  ],
+  [
+   81.8934,
+   18.91806
+  ],
+  [
+   81.89029,
+   18.91905
+  ],
+  [
+   81.88948,
+   18.91869
+  ],
+  [
+   81.88852,
+   18.91934
+  ],
+  [
+   81.8847,
+   18.91977
+  ],
+  [
+   81.87733,
+   18.92284
+  ],
+  [
+   81.87257,
+   18.92164
+  ],
+  [
+   81.87066,
+   18.92202
+  ],
+  [
+   81.86831,
+   18.92136
+  ],
+  [
+   81.868,
+   18.92093
+  ],
+  [
+   81.86842,
+   18.91589
+  ],
+  [
+   81.86765,
+   18.91601
+  ],
+  [
+   81.86457,
+   18.91854
+  ],
+  [
+   81.86412,
+   18.9181
+  ],
+  [
+   81.8649,
+   18.91585
+  ],
+  [
+   81.86469,
+   18.91516
+  ]
+ ],
+ "fuel": {
+  "listed": true,
+  "pumps": [
+   {
+    "id": "fuel:node-4445102207",
+    "name": "BP petrol bunk",
+    "brand": null,
+    "near": "Raipur",
+    "km_from_start": 0.2,
+    "lat": 21.24376,
+    "lon": 81.63636,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/node/4445102207"
+   },
+   {
+    "id": "fuel:node-4445087639",
+    "name": "Star indian oil",
+    "brand": null,
+    "near": "Raipur",
+    "km_from_start": 1.1,
+    "lat": 21.23138,
+    "lon": 81.64002,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/node/4445087639"
+   },
+   {
+    "id": "fuel:way-1360654227",
+    "name": "Indian Oil",
+    "brand": "Indian Oil",
+    "near": "Raipur",
+    "km_from_start": 2.2,
+    "lat": 21.22397,
+    "lon": 81.6438,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/way/1360654227"
+   },
+   {
+    "id": "fuel:node-14183164981",
+    "name": "Petrol pump",
+    "brand": null,
+    "near": "Raipur",
+    "km_from_start": 22.6,
+    "lat": 21.08126,
+    "lon": 81.75216,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/node/14183164981"
+   },
+   {
+    "id": "fuel:node-14183164982",
+    "name": "Petrol pump",
+    "brand": null,
+    "near": "Raipur",
+    "km_from_start": 22.8,
+    "lat": 21.07905,
+    "lon": 81.75206,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/node/14183164982"
+   },
+   {
+    "id": "fuel:node-8115416797",
+    "name": "Petrol pump",
+    "brand": null,
+    "near": "Kanker",
+    "km_from_start": 112.5,
+    "lat": 20.47425,
+    "lon": 81.37646,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/node/8115416797"
+   },
+   {
+    "id": "fuel:way-871209598",
+    "name": "Petrol pump",
+    "brand": null,
+    "near": "Kanker",
+    "km_from_start": 112.5,
+    "lat": 20.47417,
+    "lon": 81.37639,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/way/871209598"
+   },
+   {
+    "id": "fuel:node-8499141818",
+    "name": "Agni Bricks",
+    "brand": null,
+    "near": "Kanker",
+    "km_from_start": 139.0,
+    "lat": 20.26987,
+    "lon": 81.49217,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/node/8499141818"
+   },
+   {
+    "id": "fuel:node-13243374686",
+    "name": "Petrol pump",
+    "brand": null,
+    "near": "Kanker",
+    "km_from_start": 145.7,
+    "lat": 20.22472,
+    "lon": 81.51223,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/node/13243374686"
+   },
+   {
+    "id": "fuel:node-13201425785",
+    "name": "Petrol pump",
+    "brand": null,
+    "near": "Keshkal",
+    "km_from_start": 222.8,
+    "lat": 19.61478,
+    "lon": 81.66598,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/node/13201425785"
+   },
+   {
+    "id": "fuel:node-13201425783",
+    "name": "Petrol pump",
+    "brand": null,
+    "near": "Keshkal",
+    "km_from_start": 228.3,
+    "lat": 19.56958,
+    "lon": 81.67069,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/node/13201425783"
+   },
+   {
+    "id": "fuel:node-13201425784",
+    "name": "Petrol pump",
+    "brand": null,
+    "near": "Keshkal",
+    "km_from_start": 229.5,
+    "lat": 19.56019,
+    "lon": 81.67714,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/node/13201425784"
+   }
+  ],
+  "pump_count": 12,
+  "stops": 7,
+  "longest_gaps": [
+   {
+    "from_km": 229.5,
+    "to_km": 393.1,
+    "gap_km": 163.6,
+    "from_is": "pump",
+    "to_is": "end of route",
+    "near_from": "Keshkal",
+    "near_to": "Tirathgarh Falls"
+   },
+   {
+    "from_km": 22.8,
+    "to_km": 112.5,
+    "gap_km": 89.7,
+    "from_is": "pump",
+    "to_is": "pump",
+    "near_from": "Raipur",
+    "near_to": "Kanker"
+   },
+   {
+    "from_km": 145.7,
+    "to_km": 222.8,
+    "gap_km": 77.1,
+    "from_is": "pump",
+    "to_is": "pump",
+    "near_from": "Kanker",
+    "near_to": "Keshkal"
+   },
+   {
+    "from_km": 112.5,
+    "to_km": 139.0,
+    "gap_km": 26.5,
+    "from_is": "pump",
+    "to_is": "pump",
+    "near_from": "Kanker",
+    "near_to": "Kanker"
+   },
+   {
+    "from_km": 2.2,
+    "to_km": 22.6,
+    "gap_km": 20.4,
+    "from_is": "pump",
+    "to_is": "pump",
+    "near_from": "Raipur",
+    "near_to": "Raipur"
+   }
+  ],
+  "note": "Pumps are those drawn on the open map within the search radius of the road. A pump missing from the map is missing here, so each gap is a worst case.",
+  "fetched": "2026-09-28"
+ },
+ "rules": [
+  {
+   "id": "rule:keshkal-ghat-repair-closures",
+   "kind": "timing",
+   "title": "Keshkal ghat: closed at times for repairs",
+   "detail": "The ghat has no finished bypass, so repair work shuts the highway itself. It was closed to all traffic from 10 to 25 November 2024. Check before riding.",
+   "applies_to": "All vehicles; two-wheelers not named separately",
+   "set_by": "District administration and police, Kondagaon",
+   "official_url": null,
+   "has_official_order": true,
+   "source": {
+    "url": "https://bansalnews.com/chhattisgarh-kondagaon-keshkal-ghat-closed-busiest-route-bastar-ghat-closed-10-to-25-november-hindi-news-snj/",
+    "title": "CG Keshkal Ghat Closed: traffic on Keshkal ghat in Kondagaon to stay shut for 15 days",
+    "kind": "news",
+    "opened": true,
+    "source_date": "2024-11-10",
+    "accessed": "2026-09-28"
+   },
+   "history": [
+    {
+     "date": "2024-11-10",
+     "change": "Ghat closed to all vehicles until 25 November 2024 for concrete and tar work between kilometre 162 and 167; diversions were announced.",
+     "source": {
+      "url": "https://bansalnews.com/chhattisgarh-kondagaon-keshkal-ghat-closed-busiest-route-bastar-ghat-closed-10-to-25-november-hindi-news-snj/",
+      "title": "CG Keshkal Ghat Closed: traffic on Keshkal ghat in Kondagaon to stay shut for 15 days",
+      "kind": "news",
+      "opened": true,
+      "source_date": "2024-11-10",
+      "accessed": "2026-09-28"
+     }
+    },
+    {
+     "date": "2024-11",
+     "change": "Repairs ran late; the contractor asked to move the finish date from 8 November to 7 December 2024, and a curb on heavy vehicles was extended.",
+     "source": {
+      "url": "https://www.thehitavada.com/Encyc/2024/11/10/Keshkal-Ghat-road-repair-facing-delays.html",
+      "title": "Keshkal Ghat road repair facing delays",
+      "kind": "news",
+      "opened": true,
+      "source_date": "2024-11-10",
+      "accessed": "2026-09-28"
+     }
+    }
+   ]
+  },
+  {
+   "id": "rule:kotumsar-cave-monsoon-closure",
+   "kind": "timing",
+   "title": "Kotumsar cave: shut through the monsoon",
+   "detail": "The cave in Kanger Valley National Park closes from about mid June to mid October because it floods. Wikipedia gives the dates as 15 June to 31 October.",
+   "applies_to": "All visitors",
+   "set_by": "Kanger Valley National Park, Chhattisgarh Forest Department",
+   "official_url": "https://bastar.gov.in/en/tourist-place/kotumsar-cave/",
+   "has_official_order": true,
+   "source": {
+    "url": "https://bastar.gov.in/en/tourist-place/kotumsar-cave/",
+    "title": "Kotumsar Cave, District Bastar",
+    "kind": "official",
+    "opened": true,
+    "source_date": null,
+    "accessed": "2026-09-28"
+   },
+   "history": []
+  },
+  {
+   "id": "rule:kanger-valley-entry-barriers",
+   "kind": "permit",
+   "title": "Kanger Valley National Park: entry through two barriers",
+   "detail": "Wikipedia says entry to the park, for Tirathgarh Falls and the caves, is through the Kotamsar or Netanar barrier. No official page on fees or vehicle rules found.",
+   "applies_to": "All visitors",
+   "set_by": "Kanger Valley National Park, Chhattisgarh Forest Department",
+   "official_url": null,
+   "has_official_order": false,
+   "source": {
+    "url": "https://en.wikipedia.org/wiki/Kanger_Ghati_National_Park",
+    "title": "Kanger Ghati National Park",
+    "kind": "encyclopedia",
+    "opened": true,
+    "source_date": null,
+    "accessed": "2026-09-28"
+   },
+   "history": []
+  }
+ ],
+ "season": {
+  "note": "The district recommends November to June and warns of heavy monsoon showers, though Chitrakote Falls is at its widest from July to October.",
+  "history": []
+ },
+ "authorities": [
+  {
+   "id": "authority:district-administration-bastar",
+   "office": "District administration, Bastar",
+   "announces": "Tourism information for Chitrakote, Tirathgarh and Kanger Valley",
+   "stretch": "Jagdalpur and the falls around it",
+   "channel": "Website",
+   "url": "https://bastar.gov.in/en/tourism/",
+   "source": {
+    "url": "https://bastar.gov.in/en/tourism/",
+    "title": "Tourism, District Bastar",
+    "kind": "official",
+    "opened": true,
+    "source_date": null,
+    "accessed": "2026-09-28"
+   }
+  },
+  {
+   "id": "authority:collector-s-office-and-police-kondagaon",
+   "office": "Collector's office and police, Kondagaon",
+   "announces": "Closures and diversions on Keshkal ghat",
+   "stretch": "Keshkal ghat, between Kanker and Kondagaon",
+   "channel": "Press briefing, reported in the press",
+   "url": null,
+   "source": {
+    "url": "https://bansalnews.com/chhattisgarh-kondagaon-keshkal-ghat-closed-busiest-route-bastar-ghat-closed-10-to-25-november-hindi-news-snj/",
+    "title": "CG Keshkal Ghat Closed: traffic on Keshkal ghat in Kondagaon to stay shut for 15 days",
+    "kind": "news",
+    "opened": true,
+    "source_date": "2024-11-10",
+    "accessed": "2026-09-28"
+   }
+  },
+  {
+   "id": "authority:inspector-general-of-police-bastar-range",
+   "office": "Inspector General of Police, Bastar range",
+   "announces": "Statements on security and the clearing of explosives",
+   "stretch": "Bastar region",
+   "channel": "Press statements",
+   "url": null,
+   "source": {
+    "url": "https://www.newkerala.com/news/a/bastar-free-from-naxal-activities-ig-sundarraj-terms-898.htm",
+    "title": "Bastar Naxal-Free: Focus Shifts to De-Mining and Development",
+    "kind": "news",
+    "opened": true,
+    "source_date": "2026-05-22",
+    "accessed": "2026-09-28"
+   }
+  }
+ ],
+ "hazards": [
+  {
+   "id": "hazard:heavy-traffic-and-worn-surface-on-keshkal-ghat",
+   "title": "Heavy traffic and worn surface on Keshkal ghat",
+   "detail": "About 25,000 vehicles a day use the ghat, the only through road to Bastar, and its surface has needed repeated repair.",
+   "months": [],
+   "source": {
+    "url": "https://www.thehitavada.com/Encyc/2024/11/10/Keshkal-Ghat-road-repair-facing-delays.html",
+    "title": "Keshkal Ghat road repair facing delays",
+    "kind": "news",
+    "opened": true,
+    "source_date": "2024-11-10",
+    "accessed": "2026-09-28"
+   }
+  },
+  {
+   "id": "hazard:buried-explosives-remain-in-forest-areas",
+   "title": "Buried explosives remain in forest areas",
+   "detail": "Police said in May 2026 that mines laid in jungle, hills and near streams will take a couple of seasons to clear. Stay on made roads.",
+   "months": [],
+   "source": {
+    "url": "https://www.newkerala.com/news/a/bastar-free-from-naxal-activities-ig-sundarraj-terms-898.htm",
+    "title": "Bastar Naxal-Free: Focus Shifts to De-Mining and Development",
+    "kind": "news",
+    "opened": true,
+    "source_date": "2026-05-22",
+    "accessed": "2026-09-28"
+   }
+  },
+  {
+   "id": "hazard:security-situation-declared-free-of-insurgency-in-2026",
+   "title": "Security situation: declared free of insurgency in 2026",
+   "detail": "The Union Home Minister said in Jagdalpur on 18 May 2026 that Bastar is free of Naxal insurgency. About 200 security camps remain in the region.",
+   "months": [],
+   "source": {
+    "url": "https://thenewsmill.com/2026/05/bastar-declared-naxal-free-as-amit-shah-pledges-regions-development-by-2047/",
+    "title": "Bastar declared Naxal-free as Amit Shah pledges region's development by 2047",
+    "kind": "news",
+    "opened": true,
+    "source_date": "2026-05-18",
+    "accessed": "2026-09-28"
+   }
+  },
+  {
+   "id": "hazard:heavy-monsoon-showers-and-flooded-caves",
+   "title": "Heavy monsoon showers and flooded caves",
+   "detail": "The district advises against the rainy season because of heavy showers; the caves flood and are shut.",
+   "months": [
+    6,
+    7,
+    8,
+    9
+   ],
+   "source": {
+    "url": "https://bastar.gov.in/en/tourism/",
+    "title": "Tourism, District Bastar",
+    "kind": "official",
+    "opened": true,
+    "source_date": null,
+    "accessed": "2026-09-28"
+   }
+  }
+ ],
+ "videos": [
+  {
+   "id": "DgpCGung2mc",
+   "url": "https://www.youtube.com/watch?v=DgpCGung2mc",
+   "title": "धमतरी से चित्रकोट वाटरफॉल Bike Ride | Dhamtari to Chitrakote waterfall | Keshkal Ghati | PK Vlogs 07",
+   "channel": "PK Vlogs 07",
+   "stretch": "Dhamtari to Chitrakote Falls over Keshkal ghat",
+   "filmed": null,
+   "bike": null,
+   "checked": false
+  }
+ ],
+ "image": {
+  "file": "chhattisgarh-bastar.jpg",
+  "small": "chhattisgarh-bastar-small.jpg",
+  "title": "Chitrakote Falls.jpg",
+  "shows": "Chitrakote falls",
+  "author": "Ksh85",
+  "licence": "CC BY-SA 4.0",
+  "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+  "source_page": "https://commons.wikimedia.org/wiki/File:Chitrakote_Falls.jpg",
+  "source": "Wikimedia Commons",
+  "taken": "2017-01-24 10:26:49",
+  "changes": "Resized. Not otherwise changed.",
+  "fetched": "2026-09-28"
+ },
+ "gaps": [
+  "No official travel advisory for tourists in Bastar was found. What is recorded comes from two dated news reports of statements by the Union Home Minister and the regional police chief in May 2026.",
+  "Keshkal ghat: no source found for its altitude or its bends, for whether two-wheelers were let through during the 2024 closure, or for the state of the road and the bypass in 2026.",
+  "No official page found for entry fees, gate timings or two-wheeler rules in Kanger Valley National Park.",
+  "No source found for fuel gaps between Kanker and Jagdalpur.",
+  "Usual number of riding days: no source found.",
+  "No highest point recorded because the altitude of Keshkal ghat was not sourced.",
+  "Videos: the pages give upload dates, not filming dates, so 'filmed' is filled only where the title names a date. Uploads, in order: 2025-07."
+ ],
+ "counts": {
+  "facts": 37
+ },
+ "built": "2026-09-28"
+}

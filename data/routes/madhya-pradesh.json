@@ -1,0 +1,2174 @@
+{
+ "slug": "madhya-pradesh",
+ "name": "Madhya Pradesh: Pachmarhi, Khajuraho and Orchha",
+ "region": "central-east",
+ "region_name": "Central and East",
+ "batch": 2,
+ "terrain": "plains",
+ "country": "in",
+ "level": "basic",
+ "one_line": "Madhya Pradesh, from the Satpura hills at Pachmarhi to the temples of Khajuraho and Orchha",
+ "places": [
+  "Bhopal",
+  "Pachmarhi",
+  "Khajuraho",
+  "Orchha",
+  "Gwalior"
+ ],
+ "header": {
+  "highway": {
+   "value": "State Highway 19 and 19A (Matkuli to Pachmarhi); NH 39 (Chhatarpur to Jhansi); NH 44 (Gwalior)",
+   "source": {
+    "url": "https://en.wikipedia.org/wiki/Pachmarhi",
+    "title": "Pachmarhi",
+    "kind": "encyclopedia",
+    "opened": true,
+    "source_date": null,
+    "accessed": "2026-09-28"
+   }
+  },
+  "distance_km": 935.4,
+  "map_app_hours": 12.92,
+  "usual_days": null,
+  "highest_point": {
+   "name": "Dhupgarh, Pachmarhi",
+   "altitude_m": 1352,
+   "source": {
+    "url": "https://en.wikipedia.org/wiki/Pachmarhi",
+    "title": "Pachmarhi",
+    "kind": "encyclopedia",
+    "opened": true,
+    "source_date": null,
+    "accessed": "2026-09-28"
+   },
+   "computed": false
+  },
+  "usual_season": {
+   "value": "October to March; Pachmarhi itself is open all year",
+   "source": {
+    "url": "https://forest.mponline.gov.in/Images/FAQSatpura.pdf",
+    "title": "FAQ's on visit to Satpura Tiger Reserve Hoshangabad",
+    "kind": "official",
+    "opened": true,
+    "source_date": null,
+    "accessed": "2026-09-28"
+   }
+  }
+ },
+ "waypoints": [
+  {
+   "name": "Bhopal",
+   "lat": 23.2584,
+   "lon": 77.402,
+   "km_from_start": 0.0,
+   "altitude_m": 521,
+   "kind": "place",
+   "moved_to_road_m": 10
+  },
+  {
+   "name": "Pachmarhi",
+   "lat": 22.47369,
+   "lon": 78.43599,
+   "km_from_start": 221.4,
+   "altitude_m": 1059,
+   "kind": "place",
+   "moved_to_road_m": 7
+  },
+  {
+   "name": "Khajuraho",
+   "lat": 24.85156,
+   "lon": 79.92582,
+   "km_from_start": 640.8,
+   "altitude_m": 221,
+   "kind": "place",
+   "moved_to_road_m": 17
+  },
+  {
+   "name": "Orchha",
+   "lat": 25.35305,
+   "lon": 78.64036,
+   "km_from_start": 814.7,
+   "altitude_m": 217,
+   "kind": "place",
+   "moved_to_road_m": 22
+  },
+  {
+   "name": "Gwalior",
+   "lat": 26.20382,
+   "lon": 78.15725,
+   "km_from_start": 935.4,
+   "altitude_m": 220,
+   "kind": "place",
+   "moved_to_road_m": 16
+  }
+ ],
+ "stretches": [
+  {
+   "from": "Bhopal",
+   "to": "Pachmarhi",
+   "distance_km": 221.4,
+   "map_app_hours": 3.44,
+   "doubtful": false
+  },
+  {
+   "from": "Pachmarhi",
+   "to": "Khajuraho",
+   "distance_km": 419.4,
+   "map_app_hours": 5.87,
+   "doubtful": false
+  },
+  {
+   "from": "Khajuraho",
+   "to": "Orchha",
+   "distance_km": 173.8,
+   "map_app_hours": 2.1,
+   "doubtful": false
+  },
+  {
+   "from": "Orchha",
+   "to": "Gwalior",
+   "distance_km": 120.8,
+   "map_app_hours": 1.51,
+   "doubtful": false
+  }
+ ],
+ "profile": [
+  {
+   "km": 0.0,
+   "m": 521
+  },
+  {
+   "km": 10.3,
+   "m": 483
+  },
+  {
+   "km": 20.8,
+   "m": 448
+  },
+  {
+   "km": 31.1,
+   "m": 442
+  },
+  {
+   "km": 41.6,
+   "m": 448
+  },
+  {
+   "km": 51.9,
+   "m": 460
+  },
+  {
+   "km": 62.4,
+   "m": 379
+  },
+  {
+   "km": 72.7,
+   "m": 289
+  },
+  {
+   "km": 83.2,
+   "m": 305
+  },
+  {
+   "km": 93.5,
+   "m": 319
+  },
+  {
+   "km": 104.0,
+   "m": 320
+  },
+  {
+   "km": 114.3,
+   "m": 333
+  },
+  {
+   "km": 124.7,
+   "m": 331
+  },
+  {
+   "km": 135.1,
+   "m": 330
+  },
+  {
+   "km": 145.5,
+   "m": 331
+  },
+  {
+   "km": 155.9,
+   "m": 356
+  },
+  {
+   "km": 166.3,
+   "m": 356
+  },
+  {
+   "km": 176.7,
+   "m": 391
+  },
+  {
+   "km": 187.1,
+   "m": 437
+  },
+  {
+   "km": 197.5,
+   "m": 415
+  },
+  {
+   "km": 207.9,
+   "m": 747
+  },
+  {
+   "km": 218.3,
+   "m": 1058
+  },
+  {
+   "km": 228.7,
+   "m": 790
+  },
+  {
+   "km": 239.0,
+   "m": 436
+  },
+  {
+   "km": 249.5,
+   "m": 432
+  },
+  {
+   "km": 259.8,
+   "m": 414
+  },
+  {
+   "km": 270.2,
+   "m": 361
+  },
+  {
+   "km": 280.6,
+   "m": 348
+  },
+  {
+   "km": 291.0,
+   "m": 348
+  },
+  {
+   "km": 301.4,
+   "m": 346
+  },
+  {
+   "km": 311.8,
+   "m": 346
+  },
+  {
+   "km": 322.2,
+   "m": 331
+  },
+  {
+   "km": 332.5,
+   "m": 338
+  },
+  {
+   "km": 343.0,
+   "m": 356
+  },
+  {
+   "km": 353.3,
+   "m": 449
+  },
+  {
+   "km": 363.8,
+   "m": 481
+  },
+  {
+   "km": 374.1,
+   "m": 495
+  },
+  {
+   "km": 384.6,
+   "m": 447
+  },
+  {
+   "km": 394.9,
+   "m": 428
+  },
+  {
+   "km": 405.4,
+   "m": 475
+  },
+  {
+   "km": 415.7,
+   "m": 540
+  },
+  {
+   "km": 426.2,
+   "m": 518
+  },
+  {
+   "km": 436.5,
+   "m": 513
+  },
+  {
+   "km": 446.9,
+   "m": 494
+  },
+  {
+   "km": 457.3,
+   "m": 490
+  },
+  {
+   "km": 467.7,
+   "m": 470
+  },
+  {
+   "km": 478.1,
+   "m": 496
+  },
+  {
+   "km": 488.5,
+   "m": 472
+  },
+  {
+   "km": 498.9,
+   "m": 442
+  },
+  {
+   "km": 509.3,
+   "m": 389
+  },
+  {
+   "km": 519.7,
+   "m": 390
+  },
+  {
+   "km": 530.1,
+   "m": 349
+  },
+  {
+   "km": 540.5,
+   "m": 321
+  },
+  {
+   "km": 550.8,
+   "m": 293
+  },
+  {
+   "km": 561.2,
+   "m": 290
+  },
+  {
+   "km": 571.6,
+   "m": 309
+  },
+  {
+   "km": 582.0,
+   "m": 310
+  },
+  {
+   "km": 592.4,
+   "m": 313
+  },
+  {
+   "km": 602.8,
+   "m": 299
+  },
+  {
+   "km": 613.2,
+   "m": 262
+  },
+  {
+   "km": 623.6,
+   "m": 239
+  },
+  {
+   "km": 634.0,
+   "m": 213
+  },
+  {
+   "km": 644.4,
+   "m": 223
+  },
+  {
+   "km": 654.8,
+   "m": 250
+  },
+  {
+   "km": 665.2,
+   "m": 276
+  },
+  {
+   "km": 675.5,
+   "m": 302
+  },
+  {
+   "km": 686.0,
+   "m": 290
+  },
+  {
+   "km": 696.3,
+   "m": 266
+  },
+  {
+   "km": 706.8,
+   "m": 239
+  },
+  {
+   "km": 717.1,
+   "m": 217
+  },
+  {
+   "km": 727.6,
+   "m": 201
+  },
+  {
+   "km": 737.9,
+   "m": 195
+  },
+  {
+   "km": 748.4,
+   "m": 193
+  },
+  {
+   "km": 758.7,
+   "m": 216
+  },
+  {
+   "km": 769.2,
+   "m": 237
+  },
+  {
+   "km": 779.5,
+   "m": 242
+  },
+  {
+   "km": 789.9,
+   "m": 221
+  },
+  {
+   "km": 800.3,
+   "m": 206
+  },
+  {
+   "km": 810.6,
+   "m": 206
+  },
+  {
+   "km": 821.1,
+   "m": 219
+  },
+  {
+   "km": 831.4,
+   "m": 223
+  },
+  {
+   "km": 841.9,
+   "m": 230
+  },
+  {
+   "km": 852.2,
+   "m": 233
+  },
+  {
+   "km": 862.7,
+   "m": 253
+  },
+  {
+   "km": 873.0,
+   "m": 205
+  },
+  {
+   "km": 883.4,
+   "m": 186
+  },
+  {
+   "km": 893.8,
+   "m": 211
+  },
+  {
+   "km": 904.2,
+   "m": 231
+  },
+  {
+   "km": 914.6,
+   "m": 252
+  },
+  {
+   "km": 925.0,
+   "m": 231
+  },
+  {
+   "km": 935.4,
+   "m": 220
+  },
+  {
+   "km": 935.4,
+   "m": 220
+  }
+ ],
+ "line": [
+  [
+   77.402,
+   23.2584
+  ],
+  [
+   77.40192,
+   23.2556
+  ],
+  [
+   77.42034,
+   23.2506
+  ],
+  [
+   77.4308,
+   23.25228
+  ],
+  [
+   77.43255,
+   23.24684
+  ],
+  [
+   77.44001,
+   23.24177
+  ],
+  [
+   77.44284,
+   23.21292
+  ],
+  [
+   77.45171,
+   23.1884
+  ],
+  [
+   77.4637,
+   23.16944
+  ],
+  [
+   77.50781,
+   23.11361
+  ],
+  [
+   77.55562,
+   23.0403
+  ],
+  [
+   77.57634,
+   23.01421
+  ],
+  [
+   77.60381,
+   23.00354
+  ],
+  [
+   77.6004,
+   22.97852
+  ],
+  [
+   77.60668,
+   22.96932
+  ],
+  [
+   77.64606,
+   22.9457
+  ],
+  [
+   77.6519,
+   22.91788
+  ],
+  [
+   77.65198,
+   22.89465
+  ],
+  [
+   77.65764,
+   22.88229
+  ],
+  [
+   77.65159,
+   22.87374
+  ],
+  [
+   77.6526,
+   22.85944
+  ],
+  [
+   77.66385,
+   22.83749
+  ],
+  [
+   77.67627,
+   22.82875
+  ],
+  [
+   77.71129,
+   22.78886
+  ],
+  [
+   77.72588,
+   22.78206
+  ],
+  [
+   77.75353,
+   22.77869
+  ],
+  [
+   77.77217,
+   22.75645
+  ],
+  [
+   77.77547,
+   22.74651
+  ],
+  [
+   77.77057,
+   22.73515
+  ],
+  [
+   77.78526,
+   22.72518
+  ],
+  [
+   77.81827,
+   22.71397
+  ],
+  [
+   77.82884,
+   22.70673
+  ],
+  [
+   77.8468,
+   22.71043
+  ],
+  [
+   77.90591,
+   22.70954
+  ],
+  [
+   77.95147,
+   22.70114
+  ],
+  [
+   78.11085,
+   22.68996
+  ],
+  [
+   78.13814,
+   22.69206
+  ],
+  [
+   78.18978,
+   22.70294
+  ],
+  [
+   78.19093,
+   22.69687
+  ],
+  [
+   78.19721,
+   22.70124
+  ],
+  [
+   78.20145,
+   22.69992
+  ],
+  [
+   78.23045,
+   22.73112
+  ],
+  [
+   78.26193,
+   22.77226
+  ],
+  [
+   78.29564,
+   22.77151
+  ],
+  [
+   78.30618,
+   22.76804
+  ],
+  [
+   78.33345,
+   22.76941
+  ],
+  [
+   78.34651,
+   22.7636
+  ],
+  [
+   78.34958,
+   22.76851
+  ],
+  [
+   78.35768,
+   22.76988
+  ],
+  [
+   78.41735,
+   22.77362
+  ],
+  [
+   78.44458,
+   22.76709
+  ],
+  [
+   78.48201,
+   22.7698
+  ],
+  [
+   78.49497,
+   22.76436
+  ],
+  [
+   78.52352,
+   22.76754
+  ],
+  [
+   78.53146,
+   22.76375
+  ],
+  [
+   78.52583,
+   22.75733
+  ],
+  [
+   78.51444,
+   22.73001
+  ],
+  [
+   78.51369,
+   22.69788
+  ],
+  [
+   78.52193,
+   22.67928
+  ],
+  [
+   78.53596,
+   22.66989
+  ],
+  [
+   78.54144,
+   22.6606
+  ],
+  [
+   78.55169,
+   22.6576
+  ],
+  [
+   78.55664,
+   22.65084
+  ],
+  [
+   78.55891,
+   22.63258
+  ],
+  [
+   78.55388,
+   22.63013
+  ],
+  [
+   78.55299,
+   22.62529
+  ],
+  [
+   78.53768,
+   22.62059
+  ],
+  [
+   78.52561,
+   22.60951
+  ],
+  [
+   78.51994,
+   22.60859
+  ],
+  [
+   78.51708,
+   22.59735
+  ],
+  [
+   78.5104,
+   22.59325
+  ],
+  [
+   78.48926,
+   22.59936
+  ],
+  [
+   78.45803,
+   22.5937
+  ],
+  [
+   78.46186,
+   22.58467
+  ],
+  [
+   78.46897,
+   22.58317
+  ],
+  [
+   78.48164,
+   22.56814
+  ],
+  [
+   78.48034,
+   22.55073
+  ],
+  [
+   78.49054,
+   22.54345
+  ],
+  [
+   78.48631,
+   22.5406
+  ],
+  [
+   78.4643,
+   22.53846
+  ],
+  [
+   78.46449,
+   22.53583
+  ],
+  [
+   78.45451,
+   22.53046
+  ],
+  [
+   78.43685,
+   22.52982
+  ],
+  [
+   78.42783,
+   22.52605
+  ],
+  [
+   78.42878,
+   22.52092
+  ],
+  [
+   78.43257,
+   22.52176
+  ],
+  [
+   78.43414,
+   22.51652
+  ],
+  [
+   78.4552,
+   22.50145
+  ],
+  [
+   78.44742,
+   22.49893
+  ],
+  [
+   78.44964,
+   22.49779
+  ],
+  [
+   78.44936,
+   22.4843
+  ],
+  [
+   78.43742,
+   22.47365
+  ],
+  [
+   78.44936,
+   22.4843
+  ],
+  [
+   78.44964,
+   22.49779
+  ],
+  [
+   78.44742,
+   22.49893
+  ],
+  [
+   78.4552,
+   22.50145
+  ],
+  [
+   78.43414,
+   22.51652
+  ],
+  [
+   78.43257,
+   22.52176
+  ],
+  [
+   78.42878,
+   22.52092
+  ],
+  [
+   78.42783,
+   22.52605
+  ],
+  [
+   78.43685,
+   22.52982
+  ],
+  [
+   78.45451,
+   22.53046
+  ],
+  [
+   78.46449,
+   22.53583
+  ],
+  [
+   78.4643,
+   22.53846
+  ],
+  [
+   78.48631,
+   22.5406
+  ],
+  [
+   78.49054,
+   22.54345
+  ],
+  [
+   78.48034,
+   22.55073
+  ],
+  [
+   78.48164,
+   22.56814
+  ],
+  [
+   78.46897,
+   22.58317
+  ],
+  [
+   78.46186,
+   22.58467
+  ],
+  [
+   78.45803,
+   22.5937
+  ],
+  [
+   78.48926,
+   22.59936
+  ],
+  [
+   78.5104,
+   22.59325
+  ],
+  [
+   78.51708,
+   22.59735
+  ],
+  [
+   78.51994,
+   22.60859
+  ],
+  [
+   78.52561,
+   22.60951
+  ],
+  [
+   78.53768,
+   22.62059
+  ],
+  [
+   78.55299,
+   22.62529
+  ],
+  [
+   78.55388,
+   22.63013
+  ],
+  [
+   78.55891,
+   22.63258
+  ],
+  [
+   78.55664,
+   22.65084
+  ],
+  [
+   78.55169,
+   22.6576
+  ],
+  [
+   78.54144,
+   22.6606
+  ],
+  [
+   78.53596,
+   22.66989
+  ],
+  [
+   78.52193,
+   22.67928
+  ],
+  [
+   78.51369,
+   22.69788
+  ],
+  [
+   78.51444,
+   22.73001
+  ],
+  [
+   78.52622,
+   22.75809
+  ],
+  [
+   78.53456,
+   22.76707
+  ],
+  [
+   78.53432,
+   22.77357
+  ],
+  [
+   78.52787,
+   22.77481
+  ],
+  [
+   78.54177,
+   22.77791
+  ],
+  [
+   78.55751,
+   22.79291
+  ],
+  [
+   78.57504,
+   22.80258
+  ],
+  [
+   78.5857,
+   22.81466
+  ],
+  [
+   78.58793,
+   22.82309
+  ],
+  [
+   78.60533,
+   22.83689
+  ],
+  [
+   78.64614,
+   22.84951
+  ],
+  [
+   78.65092,
+   22.85607
+  ],
+  [
+   78.66067,
+   22.85977
+  ],
+  [
+   78.70061,
+   22.89187
+  ],
+  [
+   78.70754,
+   22.89158
+  ],
+  [
+   78.73892,
+   22.90781
+  ],
+  [
+   78.77422,
+   22.91898
+  ],
+  [
+   78.77893,
+   22.92754
+  ],
+  [
+   78.79111,
+   22.93114
+  ],
+  [
+   78.79282,
+   22.97637
+  ],
+  [
+   78.78619,
+   23.00017
+  ],
+  [
+   78.77967,
+   23.01158
+  ],
+  [
+   78.78393,
+   23.02636
+  ],
+  [
+   78.78428,
+   23.03871
+  ],
+  [
+   78.7813,
+   23.04158
+  ],
+  [
+   78.78745,
+   23.04549
+  ],
+  [
+   78.79492,
+   23.06065
+  ],
+  [
+   78.81092,
+   23.06668
+  ],
+  [
+   78.81492,
+   23.07153
+  ],
+  [
+   78.81913,
+   23.0844
+  ],
+  [
+   78.81602,
+   23.0919
+  ],
+  [
+   78.81878,
+   23.09823
+  ],
+  [
+   78.82854,
+   23.11657
+  ],
+  [
+   78.83967,
+   23.1248
+  ],
+  [
+   78.84554,
+   23.13662
+  ],
+  [
+   78.85576,
+   23.14725
+  ],
+  [
+   78.86666,
+   23.17629
+  ],
+  [
+   78.8694,
+   23.17647
+  ],
+  [
+   78.86306,
+   23.18523
+  ],
+  [
+   78.8569,
+   23.20933
+  ],
+  [
+   78.85898,
+   23.21974
+  ],
+  [
+   78.8672,
+   23.22766
+  ],
+  [
+   78.87163,
+   23.24193
+  ],
+  [
+   78.86454,
+   23.2679
+  ],
+  [
+   78.84729,
+   23.29284
+  ],
+  [
+   78.83628,
+   23.3005
+  ],
+  [
+   78.83843,
+   23.3043
+  ],
+  [
+   78.83202,
+   23.30603
+  ],
+  [
+   78.82627,
+   23.31718
+  ],
+  [
+   78.81516,
+   23.32561
+  ],
+  [
+   78.80533,
+   23.34318
+  ],
+  [
+   78.79165,
+   23.35823
+  ],
+  [
+   78.78583,
+   23.37143
+  ],
+  [
+   78.78771,
+   23.38648
+  ],
+  [
+   78.81444,
+   23.43882
+  ],
+  [
+   78.82348,
+   23.45018
+  ],
+  [
+   78.86413,
+   23.45732
+  ],
+  [
+   78.88662,
+   23.47264
+  ],
+  [
+   78.89993,
+   23.48937
+  ],
+  [
+   78.91814,
+   23.4987
+  ],
+  [
+   78.93336,
+   23.51181
+  ],
+  [
+   78.92595,
+   23.51707
+  ],
+  [
+   78.91236,
+   23.53624
+  ],
+  [
+   78.89303,
+   23.54994
+  ],
+  [
+   78.86926,
+   23.5872
+  ],
+  [
+   78.84684,
+   23.60541
+  ],
+  [
+   78.83856,
+   23.62237
+  ],
+  [
+   78.84541,
+   23.63321
+  ],
+  [
+   78.81855,
+   23.659
+  ],
+  [
+   78.81084,
+   23.68979
+  ],
+  [
+   78.81289,
+   23.69548
+  ],
+  [
+   78.80764,
+   23.74387
+  ],
+  [
+   78.80995,
+   23.75448
+  ],
+  [
+   78.80714,
+   23.79143
+  ],
+  [
+   78.81834,
+   23.80254
+  ],
+  [
+   78.83295,
+   23.8349
+  ],
+  [
+   78.83229,
+   23.87995
+  ],
+  [
+   78.82248,
+   23.89178
+  ],
+  [
+   78.82285,
+   23.88914
+  ],
+  [
+   78.85259,
+   23.91454
+  ],
+  [
+   78.86417,
+   23.9322
+  ],
+  [
+   78.89425,
+   23.95638
+  ],
+  [
+   78.90795,
+   23.98794
+  ],
+  [
+   78.92396,
+   24.00449
+  ],
+  [
+   78.9387,
+   24.01243
+  ],
+  [
+   78.94224,
+   24.02173
+  ],
+  [
+   78.94301,
+   24.0452
+  ],
+  [
+   78.97357,
+   24.07301
+  ],
+  [
+   79.01003,
+   24.1233
+  ],
+  [
+   79.0188,
+   24.12918
+  ],
+  [
+   79.02172,
+   24.13825
+  ],
+  [
+   79.01631,
+   24.15419
+  ],
+  [
+   79.02124,
+   24.17279
+  ],
+  [
+   79.01978,
+   24.17996
+  ],
+  [
+   79.03406,
+   24.20061
+  ],
+  [
+   79.04653,
+   24.20331
+  ],
+  [
+   79.0559,
+   24.21099
+  ],
+  [
+   79.06614,
+   24.24005
+  ],
+  [
+   79.0642,
+   24.25536
+  ],
+  [
+   79.07168,
+   24.26608
+  ],
+  [
+   79.08943,
+   24.27966
+  ],
+  [
+   79.09038,
+   24.28778
+  ],
+  [
+   79.09968,
+   24.3042
+  ],
+  [
+   79.10493,
+   24.30668
+  ],
+  [
+   79.10146,
+   24.3097
+  ],
+  [
+   79.16576,
+   24.34335
+  ],
+  [
+   79.186,
+   24.34677
+  ],
+  [
+   79.18918,
+   24.35306
+  ],
+  [
+   79.21709,
+   24.36923
+  ],
+  [
+   79.22868,
+   24.38113
+  ],
+  [
+   79.23808,
+   24.39985
+  ],
+  [
+   79.24932,
+   24.40636
+  ],
+  [
+   79.25276,
+   24.4134
+  ],
+  [
+   79.25724,
+   24.41236
+  ],
+  [
+   79.26107,
+   24.41676
+  ],
+  [
+   79.27225,
+   24.44276
+  ],
+  [
+   79.26451,
+   24.46007
+  ],
+  [
+   79.26801,
+   24.48057
+  ],
+  [
+   79.29879,
+   24.52571
+  ],
+  [
+   79.30631,
+   24.55108
+  ],
+  [
+   79.30786,
+   24.60813
+  ],
+  [
+   79.32607,
+   24.63765
+  ],
+  [
+   79.34419,
+   24.6491
+  ],
+  [
+   79.35534,
+   24.66179
+  ],
+  [
+   79.37444,
+   24.71048
+  ],
+  [
+   79.44387,
+   24.76121
+  ],
+  [
+   79.47083,
+   24.79432
+  ],
+  [
+   79.50108,
+   24.82163
+  ],
+  [
+   79.57873,
+   24.90363
+  ],
+  [
+   79.58416,
+   24.90639
+  ],
+  [
+   79.63428,
+   24.86608
+  ],
+  [
+   79.70202,
+   24.82041
+  ],
+  [
+   79.73439,
+   24.80857
+  ],
+  [
+   79.74414,
+   24.80953
+  ],
+  [
+   79.75026,
+   24.80547
+  ],
+  [
+   79.77073,
+   24.80115
+  ],
+  [
+   79.82814,
+   24.77906
+  ],
+  [
+   79.87337,
+   24.76891
+  ],
+  [
+   79.87938,
+   24.78075
+  ],
+  [
+   79.90527,
+   24.80149
+  ],
+  [
+   79.91641,
+   24.82161
+  ],
+  [
+   79.92317,
+   24.85192
+  ],
+  [
+   79.92582,
+   24.85156
+  ],
+  [
+   79.92318,
+   24.85181
+  ],
+  [
+   79.91648,
+   24.82152
+  ],
+  [
+   79.90523,
+   24.80126
+  ],
+  [
+   79.87947,
+   24.78072
+  ],
+  [
+   79.87367,
+   24.76839
+  ],
+  [
+   79.82811,
+   24.77896
+  ],
+  [
+   79.77152,
+   24.80076
+  ],
+  [
+   79.7505,
+   24.80523
+  ],
+  [
+   79.74409,
+   24.80942
+  ],
+  [
+   79.73435,
+   24.80847
+  ],
+  [
+   79.70049,
+   24.82109
+  ],
+  [
+   79.62747,
+   24.8714
+  ],
+  [
+   79.62083,
+   24.8843
+  ],
+  [
+   79.62395,
+   24.90708
+  ],
+  [
+   79.61864,
+   24.92104
+  ],
+  [
+   79.60963,
+   24.9307
+  ],
+  [
+   79.57305,
+   24.9513
+  ],
+  [
+   79.54375,
+   24.97439
+  ],
+  [
+   79.53182,
+   25.01088
+  ],
+  [
+   79.52189,
+   25.02341
+  ],
+  [
+   79.44785,
+   25.08883
+  ],
+  [
+   79.43648,
+   25.09066
+  ],
+  [
+   79.41953,
+   25.08381
+  ],
+  [
+   79.41143,
+   25.0887
+  ],
+  [
+   79.35808,
+   25.15792
+  ],
+  [
+   79.33361,
+   25.17682
+  ],
+  [
+   79.31951,
+   25.19943
+  ],
+  [
+   79.31114,
+   25.22096
+  ],
+  [
+   79.30301,
+   25.22531
+  ],
+  [
+   79.29595,
+   25.2343
+  ],
+  [
+   79.21912,
+   25.22595
+  ],
+  [
+   79.1726,
+   25.24045
+  ],
+  [
+   79.15574,
+   25.26425
+  ],
+  [
+   79.14613,
+   25.27068
+  ],
+  [
+   79.135,
+   25.27189
+  ],
+  [
+   79.11388,
+   25.26763
+  ],
+  [
+   79.06392,
+   25.28073
+  ],
+  [
+   79.0367,
+   25.29724
+  ],
+  [
+   78.96934,
+   25.32835
+  ],
+  [
+   78.79195,
+   25.3759
+  ],
+  [
+   78.77039,
+   25.37829
+  ],
+  [
+   78.75982,
+   25.3856
+  ],
+  [
+   78.71256,
+   25.38813
+  ],
+  [
+   78.6873,
+   25.40055
+  ],
+  [
+   78.6793,
+   25.40769
+  ],
+  [
+   78.65984,
+   25.41528
+  ],
+  [
+   78.65105,
+   25.41629
+  ],
+  [
+   78.6405,
+   25.35287
+  ],
+  [
+   78.65111,
+   25.41653
+  ],
+  [
+   78.64561,
+   25.42196
+  ],
+  [
+   78.63778,
+   25.44579
+  ],
+  [
+   78.648,
+   25.46635
+  ],
+  [
+   78.65175,
+   25.46509
+  ],
+  [
+   78.6068,
+   25.47205
+  ],
+  [
+   78.58004,
+   25.49729
+  ],
+  [
+   78.54842,
+   25.49937
+  ],
+  [
+   78.5192,
+   25.52193
+  ],
+  [
+   78.49491,
+   25.56121
+  ],
+  [
+   78.49052,
+   25.58977
+  ],
+  [
+   78.47145,
+   25.63417
+  ],
+  [
+   78.45945,
+   25.64337
+  ],
+  [
+   78.45012,
+   25.65444
+  ],
+  [
+   78.44593,
+   25.66643
+  ],
+  [
+   78.42786,
+   25.68482
+  ],
+  [
+   78.43231,
+   25.69806
+  ],
+  [
+   78.42932,
+   25.712
+  ],
+  [
+   78.41272,
+   25.73878
+  ],
+  [
+   78.41024,
+   25.75069
+  ],
+  [
+   78.39847,
+   25.76757
+  ],
+  [
+   78.38228,
+   25.82212
+  ],
+  [
+   78.37181,
+   25.83128
+  ],
+  [
+   78.36927,
+   25.84465
+  ],
+  [
+   78.36192,
+   25.85013
+  ],
+  [
+   78.34355,
+   25.91228
+  ],
+  [
+   78.32207,
+   25.921
+  ],
+  [
+   78.28409,
+   25.98512
+  ],
+  [
+   78.26713,
+   25.98638
+  ],
+  [
+   78.2524,
+   25.99883
+  ],
+  [
+   78.24964,
+   26.01318
+  ],
+  [
+   78.25285,
+   26.02595
+  ],
+  [
+   78.24694,
+   26.03797
+  ],
+  [
+   78.2476,
+   26.05044
+  ],
+  [
+   78.24199,
+   26.07619
+  ],
+  [
+   78.24347,
+   26.08761
+  ],
+  [
+   78.2282,
+   26.10102
+  ],
+  [
+   78.21516,
+   26.12332
+  ],
+  [
+   78.20229,
+   26.12929
+  ],
+  [
+   78.18942,
+   26.14285
+  ],
+  [
+   78.18447,
+   26.159
+  ],
+  [
+   78.17462,
+   26.16592
+  ],
+  [
+   78.17364,
+   26.19924
+  ],
+  [
+   78.16725,
+   26.20056
+  ],
+  [
+   78.16602,
+   26.198
+  ],
+  [
+   78.15725,
+   26.20382
+  ]
+ ],
+ "fuel": {
+  "listed": false,
+  "pumps": [],
+  "pump_count": 0,
+  "stops": 0,
+  "longest_gaps": [],
+  "note": null,
+  "fetched": null
+ },
+ "rules": [
+  {
+   "id": "rule:pachmarhi-view-points-two-wheeler-fee",
+   "kind": "fee",
+   "title": "Pachmarhi view points: two-wheelers allowed, for a fee",
+   "detail": "A motorcycle with up to two people pays 100 rupees for the view points, or 50 rupees for a single one, on the reserve's rate list.",
+   "applies_to": "Two-wheelers, up to two people",
+   "set_by": "Satpura Tiger Reserve, Madhya Pradesh Forest Department",
+   "official_url": "https://www.satpuratigerreserve.org/excursion-and-charges",
+   "has_official_order": true,
+   "source": {
+    "url": "https://www.satpuratigerreserve.org/excursion-and-charges",
+    "title": "Excursion and Charges - Satpura Tiger Reserve",
+    "kind": "official",
+    "opened": true,
+    "source_date": null,
+    "accessed": "2026-09-28"
+   },
+   "history": []
+  },
+  {
+   "id": "rule:pachmarhi-guide-fee",
+   "kind": "fee",
+   "title": "Pachmarhi: trained guide fee for touring all areas",
+   "detail": "The rate list adds a fee of 600 rupees for a registered trained guide when touring all the tourist areas of Pachmarhi.",
+   "applies_to": "Visitors touring the forest view points",
+   "set_by": "Satpura Tiger Reserve, Madhya Pradesh Forest Department",
+   "official_url": "https://www.satpuratigerreserve.org/excursion-and-charges",
+   "has_official_order": true,
+   "source": {
+    "url": "https://www.satpuratigerreserve.org/excursion-and-charges",
+    "title": "Excursion and Charges - Satpura Tiger Reserve",
+    "kind": "official",
+    "opened": true,
+    "source_date": null,
+    "accessed": "2026-09-28"
+   },
+   "history": []
+  },
+  {
+   "id": "rule:pachmarhi-zone-sunrise-to-sunset",
+   "kind": "timing",
+   "title": "Pachmarhi zone: open sunrise to sunset, all year",
+   "detail": "Private vehicles may enter the Pachmarhi zone, with no daily cap on vehicles. Visits run from sunrise to sunset and the zone stays open through the monsoon.",
+   "applies_to": "All visitors",
+   "set_by": "Satpura Tiger Reserve, Madhya Pradesh Forest Department",
+   "official_url": "https://forest.mponline.gov.in/Images/FAQSatpura.pdf",
+   "has_official_order": true,
+   "source": {
+    "url": "https://forest.mponline.gov.in/Images/FAQSatpura.pdf",
+    "title": "FAQ's on visit to Satpura Tiger Reserve Hoshangabad",
+    "kind": "official",
+    "opened": true,
+    "source_date": null,
+    "accessed": "2026-09-28"
+   },
+   "history": []
+  },
+  {
+   "id": "rule:satpura-madhai-churna-monsoon-closure",
+   "kind": "timing",
+   "title": "Satpura safari zones: shut 16 June to 30 September",
+   "detail": "The Madhai and Churna zones close for the monsoon. Safaris also stop on Wednesday afternoons and on Holi and Diwali.",
+   "applies_to": "All visitors",
+   "set_by": "Satpura Tiger Reserve, Madhya Pradesh Forest Department",
+   "official_url": "https://forest.mponline.gov.in/Images/FAQSatpura.pdf",
+   "has_official_order": true,
+   "source": {
+    "url": "https://forest.mponline.gov.in/Images/FAQSatpura.pdf",
+    "title": "FAQ's on visit to Satpura Tiger Reserve Hoshangabad",
+    "kind": "official",
+    "opened": true,
+    "source_date": null,
+    "accessed": "2026-09-28"
+   },
+   "history": []
+  }
+ ],
+ "season": {
+  "note": "October to March is the comfortable window; the monsoon reaches Pachmarhi at the end of June and May is the hottest month on the plains.",
+  "history": []
+ },
+ "authorities": [
+  {
+   "id": "authority:satpura-tiger-reserve-madhya-pradesh-forest-department",
+   "office": "Satpura Tiger Reserve, Madhya Pradesh Forest Department",
+   "announces": "Entry charges, zone timings and closed periods for Pachmarhi and the safari zones",
+   "stretch": "Pachmarhi and the Satpura forest",
+   "channel": "Website",
+   "url": "https://www.satpuratigerreserve.org/",
+   "source": {
+    "url": "https://www.satpuratigerreserve.org/excursion-and-charges",
+    "title": "Excursion and Charges - Satpura Tiger Reserve",
+    "kind": "official",
+    "opened": true,
+    "source_date": null,
+    "accessed": "2026-09-28"
+   }
+  },
+  {
+   "id": "authority:madhya-pradesh-forest-department-online-booking-portal",
+   "office": "Madhya Pradesh Forest Department, online booking portal",
+   "announces": "Safari permits and the department's tourism notifications",
+   "stretch": "All forest reserves in Madhya Pradesh",
+   "channel": "Website",
+   "url": "https://forest.mponline.gov.in/",
+   "source": {
+    "url": "https://forest.mponline.gov.in/Images/FAQSatpura.pdf",
+    "title": "FAQ's on visit to Satpura Tiger Reserve Hoshangabad",
+    "kind": "official",
+    "opened": true,
+    "source_date": null,
+    "accessed": "2026-09-28"
+   }
+  }
+ ],
+ "hazards": [
+  {
+   "id": "hazard:heavy-monsoon-rain-on-the-pachmarhi-plateau",
+   "title": "Heavy monsoon rain on the Pachmarhi plateau",
+   "detail": "The monsoon arrives at the end of June; July and August each bring more than 500 millimetres, far more than the surrounding district.",
+   "months": [
+    7,
+    8
+   ],
+   "source": {
+    "url": "https://en.wikipedia.org/wiki/Pachmarhi",
+    "title": "Pachmarhi",
+    "kind": "encyclopedia",
+    "opened": true,
+    "source_date": null,
+    "accessed": "2026-09-28"
+   }
+  },
+  {
+   "id": "hazard:summer-heat-around-khajuraho",
+   "title": "Summer heat around Khajuraho",
+   "detail": "The average daily maximum is about 43 degrees Celsius in May and about 41 in June.",
+   "months": [
+    5,
+    6
+   ],
+   "source": {
+    "url": "https://en.wikipedia.org/wiki/Khajuraho",
+    "title": "Khajuraho",
+    "kind": "encyclopedia",
+    "opened": true,
+    "source_date": null,
+    "accessed": "2026-09-28"
+   }
+  }
+ ],
+ "videos": [
+  {
+   "id": "cQY6QB1qIT0",
+   "url": "https://www.youtube.com/watch?v=cQY6QB1qIT0",
+   "title": "Bhopal to Pachmarhi - DAY 4 || MOST DANGEROUS WATERCROSSING 😟| Flood 🌧️ Me Fas gye 🥵 !!",
+   "channel": "MOTOFY VLOGS",
+   "stretch": "Bhopal to Pachmarhi",
+   "filmed": null,
+   "bike": null,
+   "checked": false
+  },
+  {
+   "id": "JdP1oxbqeWQ",
+   "url": "https://www.youtube.com/watch?v=JdP1oxbqeWQ",
+   "title": "पचमढ़ी से भोपाल सिटी | Pachmarhi To Bhopal City Bike Ride | Pulsar 220F Bike | Vlogs Rahul",
+   "channel": "Vlogs Rahul",
+   "stretch": "Pachmarhi to Bhopal",
+   "filmed": null,
+   "bike": "Bajaj Pulsar 220F",
+   "checked": false
+  }
+ ],
+ "image": {
+  "file": "madhya-pradesh.jpg",
+  "small": "madhya-pradesh-small.jpg",
+  "title": "Jahangir Mahal Orchha 01.jpg",
+  "shows": "Jahangir Mahal, Orchha",
+  "author": "Suyash Dwivedi",
+  "licence": "CC BY-SA 4.0",
+  "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+  "source_page": "https://commons.wikimedia.org/wiki/File:Jahangir_Mahal_Orchha_01.jpg",
+  "source": "Wikimedia Commons",
+  "taken": "2018-03-11 14:26:02",
+  "changes": "Resized. Not otherwise changed.",
+  "fetched": "2026-09-28"
+ },
+ "gaps": [
+  "The reserve's rate list and its question and answer document carry no date, and they give different light vehicle charges, so one of them is older. The two-wheeler fee is taken from the rate list on the reserve's own site.",
+  "Several travel sites say private vehicles are not allowed at Pachmarhi view points. The official rate list and the official question and answer document say otherwise; this was not checked on the ground.",
+  "No source found for where in Pachmarhi the view point tickets are issued.",
+  "No source found for rules affecting riders at Khajuraho, Orchha or Gwalior, or for any night closure of forest roads between Khajuraho and Panna.",
+  "No source found for winter fog on the Gwalior and Orchha stretch.",
+  "Usual number of riding days: no source found.",
+  "The highway value combines Wikipedia pages for Pachmarhi, National Highway 39 and National Highway 44; only one is cited. The road from Pachmarhi to Khajuraho was not sourced.",
+  "Videos: the pages give upload dates, not filming dates, so 'filmed' is filled only where the title names a date. Uploads, in order: 2022-10, 2023-02."
+ ],
+ "counts": {
+  "facts": 22
+ },
+ "built": "2026-09-28"
+}
