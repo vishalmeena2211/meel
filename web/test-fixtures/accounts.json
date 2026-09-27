@@ -1,0 +1,26 @@
+{
+  "_read_me": "Accounts for testing on a scratch database on this machine only. They exist nowhere else. The editor address only has editor rights when MEEL_EDITOR_EMAILS names it.",
+  "accounts": [
+    {
+      "role": "trip leader",
+      "name": "Asha Leader",
+      "email": "leader@meel.test",
+      "home_town": "Chandigarh",
+      "password": "horsq-iwxgi-6395"
+    },
+    {
+      "role": "rider who joins",
+      "name": "Ravi Rider",
+      "email": "rider@meel.test",
+      "home_town": "Delhi",
+      "password": "egsea-ruqfd-4153"
+    },
+    {
+      "role": "editor",
+      "name": "Meel Editor",
+      "email": "editor@meel.test",
+      "home_town": "Manali",
+      "password": "oxubu-xzfnp-6862"
+    }
+  ]
+}
