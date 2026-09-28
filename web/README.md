@@ -1,29 +1,44 @@
 # Meel, the website
 
-The website for **rideplanner.in**. Built with Next.js 16, React 19, Tailwind CSS 4 and TypeScript in strict mode.
+The website for **rideplanner.in**. Built with Next.js 16, React 19, Tailwind CSS 4 and TypeScript in strict mode. Accounts, trips and reports are kept in Postgres through Prisma. Logging in is done by Auth.js, with an email and a password, or with Google.
 
 ## How to read this file
 
 - **Setting:** a value the site reads from the environment when it starts. None is kept in a file in this repository.
+- **Settings file:** `web/.env.local`, a file on your own machine that Next.js and Prisma both read. It is never committed.
 - **Editor:** the person who keeps Meel. They read reports and approve first trips.
-- **Scratch database:** a throwaway database for testing, in a folder you can delete.
+- **Migration:** one numbered change to the database's tables, kept in `prisma/migrations/`.
+- **Scratch database:** a throwaway database for testing, which you can drop.
 
 ## What you need
 
 | Thing | Version |
 |---|---|
-| Node.js | 22.13 or newer. The database is the one built into Node, so nothing else is installed |
+| Node.js | 22.13 or newer |
 | pnpm | 9 |
+| Postgres | 14 or newer. On a Mac, Homebrew's `postgresql@16` is what this was built against |
 
 ## Run it on your machine
 
-Install once:
+Install once. This also makes the Prisma client in `src/generated/`:
 
 ```bash
 pnpm install
 ```
 
-Run while you work on it:
+Make the database once. On a Homebrew Postgres it belongs to your own user:
+
+```bash
+createdb meel
+```
+
+Make its tables, and again whenever someone adds a migration:
+
+```bash
+pnpm db:migrate
+```
+
+Make the settings file. It needs at least a secret for the login cookie; see Settings below. Then run the site while you work on it:
 
 ```bash
 pnpm dev
@@ -51,18 +66,36 @@ Do not run the build while `pnpm dev` or `pnpm start` is running from the same f
 
 ## Settings
 
-All four are optional on your own machine. Set them where the site is hosted, in the host's own settings screen.
+Put them in `web/.env.local` on your own machine, one per line, as `NAME=value`. Where the site is hosted, set them in the host's own settings screen instead.
 
 | Setting | What it does | If it is not set |
 |---|---|---|
-| `MEEL_DATA_DIR` | The folder that holds the database file `meel.sqlite` | `web/.data/` is used |
+| `AUTH_SECRET` | Seals the login cookie. Make one with `openssl rand -base64 32`. Changing it logs everyone out | **Nobody can log in.** A production server refuses to serve any page and says why in its log. A development server says so loudly |
+| `DATABASE_URL` | Where Postgres is, such as `postgresql://user:password@host:5432/meel` | On your own machine: the database `meel` at `localhost:5432`, as your own user. Where the site is hosted, the site stops with an error |
+| `AUTH_URL` | The site's own address, such as `https://rideplanner.in`. Google sends riders back to it | Worked out from each request. Set it where the site is hosted |
+| `AUTH_GOOGLE_ID` | The Google client id. See "Setting up Google" | "Continue with Google" is not shown. Email and password still work |
+| `AUTH_GOOGLE_SECRET` | The Google client secret, from the same place | As above |
 | `MEEL_EDITOR_EMAILS` | The email of each editor, with commas between them | Nobody is an editor, and the inbox at `/editor` cannot be opened |
-| `MEEL_EDITOR_SIGNUP` | Set to `open` to let an editor's email sign up | An editor's email cannot sign up |
+| `MEEL_EDITOR_SIGNUP` | Set to `open` to let an editor's email sign up with a password | An editor's email cannot sign up with a password. Logging in with Google still works |
 | `NEXT_PUBLIC_MEEL_CHAT_NUMBER` | A WhatsApp number, with country code, digits only. Adds "Send from my chat app instead" to the report sheet | That button is not shown |
+
+### Setting up Google
+
+Only you can do this, because it is done in your own Google account.
+
+1. Open https://console.cloud.google.com, and make a project called Meel.
+2. Under **Google Auth Platform**, fill in the consent screen: the app's name is Meel, and give your own email for support. Meel asks for nothing beyond the name, the email and a sign-in, so no extra scopes are needed.
+3. While the consent screen is in testing, only the Google accounts you list as test users can log in. Publish it when riders should.
+4. Under **Clients**, make a client of the type **Web application**. Under **Authorised redirect URIs**, add both:
+   - `http://localhost:3000/api/auth/callback/google`
+   - `https://rideplanner.in/api/auth/callback/google`
+5. Copy the client id into `AUTH_GOOGLE_ID` and the secret into `AUTH_GOOGLE_SECRET`, and restart the site.
 
 ### Making the editor's account
 
-Emails are not checked by post. So the site will not let anyone sign up with an editor's email unless you open the door first.
+The easy way: set `MEEL_EDITOR_EMAILS` to your email, restart, and log in with Google using that email. Google has checked the email is yours, so nothing else is needed.
+
+With a password instead: Meel does not check emails, so the site will not let anyone sign up with an editor's email unless you open the door first.
 
 1. Set `MEEL_EDITOR_EMAILS` to your email.
 2. Set `MEEL_EDITOR_SIGNUP` to `open` and restart the site.
@@ -75,52 +108,108 @@ Do step 4 the same day. While the door is open, anyone who knows the email could
 
 Meel sends no email. The rider writes to you. You check it is them, then open `/editor`, go to "A rider cannot get in", type their email and set a one-time password. It is shown once. Give it to them yourself. They are asked to choose their own password as soon as they log in.
 
-An editor's own account cannot be opened this way. If you lose your own password, open the door as in "Making the editor's account", delete your row from the `users` table, and sign up again.
+A rider who logs in with Google usually needs only to press "Continue with Google". The editor's screen says so. A one-time password still works for them, if they have lost their Google account: it adds a password to the account.
+
+An editor's own account cannot be opened this way. Log in with Google instead. If that is not possible, open the door as in "Making the editor's account", delete your own row, and sign up again:
+
+```bash
+psql meel -c "DELETE FROM users WHERE email = 'you@example.com'"
+```
+
+### When Google takes over an account
+
+If someone logs in with Google and their email already has a Meel account made with a password, the two become one account, and **Google takes over**: the password is removed and every phone is logged out. Meel never checked that whoever set that password owned the email; Google has. This stops anyone who signed up first with someone else's email from keeping a way in. The account page says what happened for two weeks, and the rider can add a new password there.
 
 ## Where things are kept
 
 | What | Where | In git |
 |---|---|---|
 | Routes, facts, sources, picture credits | `../data/` | Yes |
-| Accounts, trips, reports | One database file in `MEEL_DATA_DIR` | No |
+| Accounts, trips, reports, Google links | The Postgres database in `DATABASE_URL` | No |
+| The shape of those tables | `prisma/schema.prisma` and `prisma/migrations/` | Yes |
+| Who is logged in on a phone | A sealed cookie on that phone. It holds the rider's id and a session number, nothing else | No |
 | A rider's bike, packing ticks and name | That rider's own phone | No |
 
-The database is one file. **Back it up by copying that file.** If the host wipes its disk on every deploy, accounts and trips are lost with it, so choose a host with a disk that stays.
+**Back up the database** with:
 
-The tables are made by the site itself the first time it starts. There is nothing to run by hand.
+```bash
+pg_dump meel > meel-backup.sql
+```
+
+Where the site is hosted, run the migrations before starting a new version:
+
+```bash
+pnpm db:deploy
+```
+
+### Changing a table
+
+Edit `prisma/schema.prisma`, then make and run a migration with a name that says what changed:
+
+```bash
+pnpm db:migrate --name what-changed
+```
+
+Never edit a migration that has already run. `pnpm db:studio` opens a page for looking through the tables by hand.
 
 ## How the code is laid out
 
 | Folder | What is in it |
 |---|---|
-| `src/app/` | One folder for each page. `actions/` holds what forms send to |
+| `src/app/` | One folder for each page. `actions/` holds what forms send to. `api/auth/` is Auth.js |
 | `src/components/` | The pieces pages are built from |
 | `src/lib/` | Plain helpers: dates, words, fact states, trip checks |
 | `src/server/` | The database, accounts, trips and reports. Never sent to the browser |
+| `src/server/session.ts` | The Auth.js setup: the two ways in, and what goes in the cookie |
+| `src/generated/` | The Prisma client, made by `prisma generate`. Not in git |
+| `prisma/` | The tables and their migrations |
 | `scripts/` | The copy of data into the site |
 | `test-fixtures/` | Made-up accounts for testing on a scratch database |
 
 ## Testing by hand with a scratch database
 
-Build, then start the site against a folder you can throw away:
+Make a scratch database and its tables:
+
+```bash
+createdb meel_scratch
+```
+
+```bash
+DATABASE_URL=postgresql://localhost:5432/meel_scratch pnpm db:deploy
+```
+
+Build, then start the site against it:
 
 ```bash
 pnpm build
 ```
 
 ```bash
-MEEL_DATA_DIR=/tmp/meel-scratch MEEL_EDITOR_EMAILS=editor@meel.test MEEL_EDITOR_SIGNUP=open pnpm start -p 3100
+DATABASE_URL=postgresql://localhost:5432/meel_scratch AUTH_SECRET=scratch-only-secret MEEL_EDITOR_EMAILS=editor@meel.test MEEL_EDITOR_SIGNUP=open pnpm start -p 3100
 ```
 
-The accounts in `test-fixtures/accounts.json` are for this. Sign each one up, then walk through: post a trip, approve it as the editor, ask to join as the second rider, accept as the leader.
+The accounts in `test-fixtures/accounts.json` are for this. Sign each one up, then walk through: post a trip, approve it as the editor, ask to join as the second rider, accept as the leader. Drop the scratch database afterwards:
+
+```bash
+dropdb meel_scratch
+```
 
 ## Rules the site keeps
 
 - **It never says a road is open.** It links to the office that decides.
 - **Every "today" is India's calendar day**, on the server and on the phone.
-- **A report needs no account.** The inbox takes 5 unread reports for one fact and 60 in an hour, then asks the rider to try later.
+- **A report needs no account.** The inbox takes 5 unread reports for one fact and 60 in an hour, then asks the rider to try later. A report is only taken from a page of this site.
 - **A chat group link is shown only to riders the leader has accepted.** It is not in the page at all for anyone else.
 - **A rider's first trip waits for the editor.** Later trips appear at once. Three reports hide a trip until the editor has looked.
+- **Two answers at the same moment cannot fill one place twice.** Accepting a rider holds the trip still until the answer is saved.
+- **A rider who came in through Google gives a home city before joining or posting a trip**, because the leader sees it.
+
+## Good to know
+
+- **Logging out works on this phone only.** It removes this phone's cookie. A copy of that cookie taken from this phone would still work until it runs out after 30 days. Changing the password, or the editor setting a one-time password, logs out every phone at once.
+- **Pages that ask who is logged in read the cookie through `cookies()`, not Auth.js's `auth()`.** After a form logs a phone in, Next.js re-renders the page in the same request, and only `cookies()` already holds the new cookie. See `currentUser` in `src/server/auth.ts`.
+- **The Prisma CLI is pinned to 7.10.0.** On npm its "latest" tag has pointed at a release candidate of version 8.
+- **`prisma init` installs files for AI coding tools** (`.claude/skills`, `.agents`, `.windsurf`) into the folder it runs in. It is not needed again here; if you run it, run it somewhere else.
 
 ## Not built yet
 
@@ -128,4 +217,4 @@ The accounts in `test-fixtures/accounts.json` are for this. Sign each one up, th
 - [ ] Saving a whole route for use with no network.
 - [ ] Logging in with a phone number.
 - [ ] Changing the words of a fact from the editor's inbox. The words live in `../data` and need a rebuild.
-- [ ] Automatic tests. Everything so far was checked by hand in a browser.
+- [ ] Automatic tests. Everything so far was checked by hand, and by a browser script run once on a scratch database.

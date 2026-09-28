@@ -37,9 +37,9 @@ You asked for wireframes, then the data, then the site itself, built overnight w
 |---|---|---|---|
 | Name | **Meel** (मील, Hindi for mile) | Harley-Davidson has a tool called Ride Planner. A site named after its address would be confused with it. The address stays rideplanner.in | Yes, before launch |
 | Look | Kilometre-stone yellow, signboard green, tarmac black. Light only | Read outdoors, on a phone, in sunlight | Yes |
-| Accounts | Email and password. Asked for only to join or post a trip | You asked for login and sign-up for the community part. Reading and reporting stay open to all | No. Accounts now hold riders' details |
+| Accounts | Google, or an email and a password, through Auth.js. Asked for only to join or post a trip. **Changed later on 28 September at your request:** Google added. When a Google email matches an account made with a password, Google takes over and the password is removed, which you chose | You asked for login and sign-up for the community part, then for Google. Reading and reporting stay open to all | No. Accounts now hold riders' details |
 | Riding together | A board of trips, not a forum. A rider posts a trip, others ask to join, the leader accepts | The research says forums die of spam and upkeep. A trip has a start, an end and a leader | Yes |
-| Database | One file on the server's own disk, made by the site itself | No outside service, no monthly cost. **This was decided without your usual approval step for database changes.** It has two numbered steps | Yes, but riders' data would have to be moved |
+| Database | Postgres, through Prisma. On your own machine, the database `meel` on your Homebrew Postgres | **Changed later on 28 September at your request, with your approval of the tables.** The first version used one SQLite file on the server's disk, chosen without your usual approval step; it never held real data, so nothing was moved | Yes, but riders' data would have to be moved |
 | Map | The road is drawn as a line, with no map beneath it | A map of India's borders drawn wrongly is a legal risk. A line has no borders | Yes |
 | Road status | Never stated. The page links to the office that decides | One person cannot keep daily status true | This is the core rule. Keep it |
 | First trip | Read by the editor before it appears | The cheapest guard against fake trips | Yes |
