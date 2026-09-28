@@ -4,14 +4,14 @@
   "private": true,
   "scripts": {
     "sync-data": "node scripts/sync-data.mjs",
-    "postinstall": "prisma generate",
-    "predev": "prisma generate && node scripts/sync-data.mjs",
+    "postinstall": "prisma generate --no-hints",
+    "predev": "prisma generate --no-hints && node scripts/sync-data.mjs",
     "dev": "next dev",
-    "prebuild": "prisma generate && node scripts/sync-data.mjs",
+    "prebuild": "prisma generate --no-hints && node scripts/sync-data.mjs",
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "typecheck": "prisma generate && next typegen && tsc --noEmit",
+    "typecheck": "prisma generate --no-hints && next typegen && tsc --noEmit",
     "db:migrate": "prisma migrate dev",
     "db:deploy": "prisma migrate deploy",
     "db:studio": "prisma studio"

@@ -209,7 +209,7 @@ dropdb meel_scratch
 - **Logging out works on this phone only.** It removes this phone's cookie. A copy of that cookie taken from this phone would still work until it runs out after 30 days. Changing the password, or the editor setting a one-time password, logs out every phone at once.
 - **Pages that ask who is logged in read the cookie through `cookies()`, not Auth.js's `auth()`.** After a form logs a phone in, Next.js re-renders the page in the same request, and only `cookies()` already holds the new cookie. See `currentUser` in `src/server/auth.ts`.
 - **The Prisma CLI is pinned to 7.10.0.** On npm its "latest" tag has pointed at a release candidate of version 8.
-- **`prisma init` installs files for AI coding tools** (`.claude/skills`, `.agents`, `.windsurf`) into the folder it runs in. It is not needed again here; if you run it, run it somewhere else.
+- **Prisma offers to install files for AI coding tools** (`.claude/skills`, `.agents`, `.windsurf`) into the folder it runs in. `prisma init` does it without asking; `prisma generate` asks, with Yes as the answer if you press Enter or wait 30 seconds. This site's scripts pass `--no-hints`, so `pnpm dev` never asks. If you run Prisma by hand here, add `--no-hints` too.
 
 ## Not built yet
 
