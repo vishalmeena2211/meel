@@ -4,8 +4,10 @@ import Link from "next/link";
 import { useActionState, useEffect, useRef, useState } from "react";
 
 import {
+  addPasswordAction,
   changePasswordAction,
   deleteAccountAction,
+  finishProfileAction,
   logInAction,
   signUpAction,
   updateProfileAction,
@@ -159,6 +161,80 @@ export function LogInForm({ next }: { next: string }) {
   );
 }
 
+/** The first time with Google: what Google does not know. */
+export function FinishProfileForm({ name, email, next }: { name: string; email: string; next: string }) {
+  const [state, action, pending] = useActionState(finishProfileAction, BLANK);
+  const v = state.values ?? { name };
+  return (
+    <form action={action} className="flex flex-col gap-3" noValidate>
+      <Callout tone="info" title="Google gave Meel your name and email">
+        Nothing else. Meel still needs what Google does not know.
+      </Callout>
+      <ErrorSummary state={state} />
+      <input type="hidden" name="next" value={next} />
+      <Field
+        label="Your name"
+        name="name"
+        autoComplete="name"
+        defaultValue={v.name}
+        error={state.errors.name}
+        hint="From Google. Shown as first name and one letter, such as “Rahul N.” Change it if you like."
+        required
+      />
+      <Field
+        label="Email"
+        name="email_shown"
+        type="email"
+        value={email}
+        readOnly
+        className="field-input bg-surface-2"
+        hint="Checked by Google. For logging in. Never shown to anyone."
+      />
+      <Field
+        label="Home city"
+        name="home_city"
+        autoComplete="address-level2"
+        defaultValue={v.home_city}
+        error={state.errors.home_city}
+        hint="Shown to the leader of a trip you ask to join."
+        required
+      />
+      <Field
+        label="Your bike"
+        name="bike"
+        optional="optional"
+        defaultValue={v.bike}
+        error={state.errors.bike}
+        hint="Such as Royal Enfield Classic 350."
+      />
+      <div className="flex flex-col gap-1">
+        <label className="flex items-start gap-2.5 text-[0.9375rem]">
+          <input
+            id="agreed"
+            type="checkbox"
+            name="agreed"
+            value="yes"
+            aria-invalid={state.errors.agreed ? true : undefined}
+            className="mt-0.5 size-[18px] shrink-0 accent-sign"
+          />
+          <span>
+            I am 18 or older, and I have read the{" "}
+            <Link className="link" href="/rules" target="_blank">
+              rules for riding together
+            </Link>
+          </span>
+        </label>
+        {state.errors.agreed ? <p className="text-sm font-medium text-stale-fg">{state.errors.agreed}</p> : null}
+      </div>
+      <Foot>
+        <button type="submit" className="btn btn-primary btn-block" disabled={pending}>
+          {pending ? "Saving" : "Finish"}
+        </button>
+      </Foot>
+    </form>
+  );
+}
+
 export function ProfileForm({ name, homeCity, bike }: { name: string; homeCity: string; bike: string | null }) {
   const [state, action, pending] = useActionState(updateProfileAction, BLANK);
   const v = state.values ?? { name, home_city: homeCity, bike: bike ?? "" };
@@ -215,6 +291,33 @@ export function ChangePassword({ oneTime }: { oneTime: boolean }) {
   );
 }
 
+/** A rider who logs in with Google adds a password of their own. Optional. */
+export function AddPassword() {
+  const [state, action, pending] = useActionState(addPasswordAction, BLANK);
+  return (
+    <form action={action} className="flex flex-col gap-3" noValidate>
+      <ErrorSummary state={state} />
+      {state.ok ? (
+        <p role="status" className="rounded-lg border border-sign-line bg-sign-soft px-3 py-2 text-sm font-medium">
+          {state.message}
+        </p>
+      ) : null}
+      <Field
+        label="New password"
+        optional="optional"
+        name="next_password"
+        type="password"
+        autoComplete="new-password"
+        error={state.errors.next_password}
+        hint="Only if you also want to log in without Google. At least 10 characters."
+      />
+      <button type="submit" className="btn btn-soft self-start" disabled={pending}>
+        {pending ? "Adding" : "Add a password"}
+      </button>
+    </form>
+  );
+}
+
 export interface LedTrip {
   id: string;
   name: string;
@@ -223,11 +326,18 @@ export interface LedTrip {
 
 export function DeleteAccount({
   shownAs,
+  email,
+  hasPassword,
+  usesGoogle,
   joined,
   leads,
   confirmed,
 }: {
   shownAs: string;
+  /** Typed to go ahead by a rider who has no password. */
+  email: string;
+  hasPassword: boolean;
+  usesGoogle: boolean;
   joined: number;
   /** Trips this rider leads that have not been ridden yet, with the riders going on each. */
   leads: LedTrip[];
@@ -265,6 +375,12 @@ export function DeleteAccount({
               <IconCheck className="mt-0.5 size-4 shrink-0 text-fresh-fg" />
               Your name, email, city and bike are removed
             </li>
+            {usesGoogle ? (
+              <li className="flex items-start gap-2">
+                <IconCheck className="mt-0.5 size-4 shrink-0 text-fresh-fg" />
+                Meel forgets your Google account. Your Google account itself is not touched.
+              </li>
+            ) : null}
             <li className="flex items-start gap-2">
               <IconCheck className="mt-0.5 size-4 shrink-0 text-fresh-fg" />
               {joined > 0
@@ -294,13 +410,26 @@ export function DeleteAccount({
               {t.riders.length === 0 ? <p className="hint">Nobody else is going yet, so it can only be withdrawn.</p> : null}
             </div>
           ))}
-          <Field
-            label="Type your password to go ahead"
-            name="password"
-            type="password"
-            autoComplete="current-password"
-            error={state.errors.password}
-          />
+          {hasPassword ? (
+            <Field
+              label="Type your password to go ahead"
+              name="password"
+              type="password"
+              autoComplete="current-password"
+              error={state.errors.password}
+            />
+          ) : (
+            <Field
+              label="Type your email to go ahead"
+              name="email"
+              type="email"
+              inputMode="email"
+              autoComplete="off"
+              autoCapitalize="none"
+              error={state.errors.email}
+              hint={`Type ${email}. You log in with Google and have no password, so your email stands in for it.`}
+            />
+          )}
           <div className="grid grid-cols-2 gap-2">
             <button type="button" className="btn btn-outline" onClick={() => setOpen(false)}>
               Keep my account

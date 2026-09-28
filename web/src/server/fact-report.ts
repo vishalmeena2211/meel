@@ -62,7 +62,7 @@ export async function takeFactReport(form: FormData): Promise<FactReportAnswer> 
   const route = await getRoute(input.route);
   if (!route) return { ...blank, message: "That route is not on Meel." };
 
-  if (!inboxHasRoom(input.route, input.fact)) {
+  if (!(await inboxHasRoom(input.route, input.fact))) {
     return {
       ...blank,
       message: "The editor has a pile of reports to read first. Try again in an hour.",
@@ -70,7 +70,7 @@ export async function takeFactReport(form: FormData): Promise<FactReportAnswer> 
   }
 
   const user = await currentUser();
-  sendFactReport({
+  await sendFactReport({
     routeSlug: input.route,
     factId: input.fact,
     factTitle: input.title,

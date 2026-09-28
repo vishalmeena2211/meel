@@ -49,7 +49,7 @@ export default async function HomePage() {
         routes={index.routes}
         regions={index.regions}
         lines={lines}
-        confirmed={confirmedLately()}
+        confirmed={await confirmedLately()}
       />
     </div>
   );

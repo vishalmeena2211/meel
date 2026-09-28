@@ -5,17 +5,21 @@ import { redirect } from "next/navigation";
 import { z } from "zod";
 
 import type { FormState } from "@/components/form";
+import { safeNext } from "@/lib/next-page";
 import {
+  addPassword,
   changePassword,
   checkPassword,
   currentUser,
   deleteAccount,
   endSession,
+  googleIsOn,
   logIn,
   mayNotSignUp,
   signUp,
   updateProfile,
 } from "@/server/auth";
+import { signIn } from "@/server/session";
 
 function errorsOf(error: z.ZodError): Record<string, string> {
   const out: Record<string, string> = {};
@@ -29,11 +33,6 @@ function errorsOf(error: z.ZodError): Record<string, string> {
 function text(form: FormData, key: string): string {
   const v = form.get(key);
   return typeof v === "string" ? v : "";
-}
-
-/** Only ever send a rider to a page on this site. */
-function safeNext(value: string): string {
-  return /^\/(?!\/)[\w\-./?=&%#]*$/.test(value) ? value : "/account";
 }
 
 const name = z
@@ -140,6 +139,37 @@ export async function logInAction(_previous: FormState, form: FormData): Promise
   redirect(safeNext(text(form, "next")));
 }
 
+/**
+ * Off to Google, and back to /welcome, which asks a first-time rider for what Google does not know
+ * and then carries on to the page they came from.
+ */
+export async function googleLogInAction(form: FormData): Promise<void> {
+  const next = safeNext(text(form, "next"));
+  if (!googleIsOn) redirect(`/login?next=${encodeURIComponent(next)}`);
+  await signIn("google", { redirectTo: `/welcome?next=${encodeURIComponent(next)}` });
+}
+
+const finishForm = z.object({
+  name,
+  home_city: city,
+  bike,
+  agreed: z.literal("yes", { message: "Tick this box to go ahead." }),
+});
+
+/** The first time with Google: a home city, a bike if they like, and the rules. */
+export async function finishProfileAction(_previous: FormState, form: FormData): Promise<FormState> {
+  const next = safeNext(text(form, "next"));
+  const user = await currentUser();
+  if (!user) redirect(`/login?next=${encodeURIComponent(next)}`);
+  const values = { name: text(form, "name"), home_city: text(form, "home_city"), bike: text(form, "bike") };
+  const parsed = finishForm.safeParse({ ...values, bike: values.bike || undefined, agreed: text(form, "agreed") });
+  if (!parsed.success) {
+    return { ok: false, message: "Something needs fixing.", errors: errorsOf(parsed.error), values };
+  }
+  await updateProfile(user.id, { name: parsed.data.name, homeCity: parsed.data.home_city, bike: parsed.data.bike ?? null });
+  redirect(next);
+}
+
 export async function logOutAction(): Promise<void> {
   await endSession();
   redirect("/");
@@ -155,7 +185,7 @@ export async function updateProfileAction(_previous: FormState, form: FormData):
   if (!parsed.success) {
     return { ok: false, message: "Something needs fixing.", errors: errorsOf(parsed.error), values };
   }
-  updateProfile(user.id, { name: parsed.data.name, homeCity: parsed.data.home_city, bike: parsed.data.bike ?? null });
+  await updateProfile(user.id, { name: parsed.data.name, homeCity: parsed.data.home_city, bike: parsed.data.bike ?? null });
   return { ok: true, message: "Saved.", errors: {}, values };
 }
 
@@ -186,15 +216,47 @@ export async function changePasswordAction(_previous: FormState, form: FormData)
   return { ok: true, message: "Changed. Your other phones are logged out.", errors: {} };
 }
 
+/** For a rider who logs in with Google only: a password of their own, to log in without Google too. */
+export async function addPasswordAction(_previous: FormState, form: FormData): Promise<FormState> {
+  const user = await currentUser();
+  if (!user) redirect("/login?next=/account");
+  const next = text(form, "next_password");
+  if (next.length < 10) {
+    return {
+      ok: false,
+      message: "Something needs fixing.",
+      errors: { next_password: `${next.length} ${next.length === 1 ? "character" : "characters"}. It needs at least 10.` },
+    };
+  }
+  if (next.length > 200) {
+    return { ok: false, message: "Something needs fixing.", errors: { next_password: "That password is too long. 200 characters at most." } };
+  }
+  if (!(await addPassword(user.id, next))) {
+    return { ok: false, message: "This account already has a password. Change it with the form above.", errors: {} };
+  }
+  // The password section turns into "Change password" once there is one, so the word that it worked is carried
+  // to the page itself.
+  redirect("/account?password=added#password");
+}
+
 export async function deleteAccountAction(_previous: FormState, form: FormData): Promise<FormState> {
   const user = await currentUser();
   if (!user) redirect("/login?next=/account");
-  const password = text(form, "password");
-  if (!password) {
-    return { ok: false, message: "", errors: { password: "Type your password to go ahead." } };
-  }
-  if (!(await checkPassword(user.id, password))) {
-    return { ok: false, message: "", errors: { password: "That is not your password. Nothing was deleted." } };
+  if (user.has_password) {
+    const password = text(form, "password");
+    if (!password) {
+      return { ok: false, message: "", errors: { password: "Type your password to go ahead." } };
+    }
+    if (!(await checkPassword(user.id, password))) {
+      return { ok: false, message: "", errors: { password: "That is not your password. Nothing was deleted." } };
+    }
+  } else {
+    // No password to ask for. Typing the account's own email stands in for it.
+    const typed = text(form, "email").trim().toLowerCase();
+    if (!typed) return { ok: false, message: "", errors: { email: "Type your email to go ahead." } };
+    if (typed !== user.email) {
+      return { ok: false, message: "", errors: { email: `That is not ${user.email}. Nothing was deleted.` } };
+    }
   }
   const handTo: Record<string, string> = {};
   for (const [key, value] of form.entries()) {

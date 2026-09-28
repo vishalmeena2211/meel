@@ -23,12 +23,12 @@ async function editorOnly(): Promise<void> {
 export async function decideFactAction(form: FormData): Promise<void> {
   await editorOnly();
   const id = text(form, "id");
-  const report = factReport(id);
+  const report = await factReport(id);
   if (!report) return;
   const decision = text(form, "decision") === "apply" ? "applied" : "set-aside";
   const wording = text(form, "wording").trim().slice(0, 400);
   const reason = text(form, "reason").trim().slice(0, 300);
-  decideFactReport(
+  await decideFactReport(
     id,
     decision,
     decision === "applied" && report.kind === "changed" && wording ? wording : undefined,
@@ -40,19 +40,19 @@ export async function decideFactAction(form: FormData): Promise<void> {
 
 export async function decideTripReportAction(form: FormData): Promise<void> {
   await editorOnly();
-  const report = tripReport(text(form, "id"));
+  const report = await tripReport(text(form, "id"));
   if (!report) return;
   const reason = text(form, "reason").trim().slice(0, 300);
-  decideTripReport(report.id, text(form, "decision") === "apply" ? "applied" : "set-aside", reason || undefined);
+  await decideTripReport(report.id, text(form, "decision") === "apply" ? "applied" : "set-aside", reason || undefined);
   refreshRoute(report.route_slug);
   redirect("/editor");
 }
 
 export async function decideTripAction(form: FormData): Promise<void> {
   await editorOnly();
-  const trip = getTrip(text(form, "id"));
+  const trip = await getTrip(text(form, "id"));
   if (!trip) return;
-  setTripStatus(trip.id, text(form, "decision") === "show" ? "open" : "withdrawn");
+  await setTripStatus(trip.id, text(form, "decision") === "show" ? "open" : "withdrawn");
   refreshRoute(trip.route_slug);
   revalidatePath(`/trips/${trip.id}`);
   redirect("/editor");
@@ -75,7 +75,7 @@ export async function letRiderInAction(_previous: LetInState, form: FormData): P
   const blank: LetInState = { email, error: "", rider: null, password: null };
   if (!email) return { ...blank, error: "Type the email on the rider’s account." };
 
-  const found = findRider(email);
+  const found = await findRider(email);
   if (!found.ok) return { ...blank, error: NOBODY };
   if (text(form, "intent") !== "set") return { ...blank, rider: found.rider };
 

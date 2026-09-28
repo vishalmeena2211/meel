@@ -1,8 +1,9 @@
 import "server-only";
 
+import type { Prisma } from "@/generated/prisma/client";
 import type { Confirmation } from "@/lib/types";
 
-import { all, newId, now, one, run } from "./db";
+import { asDate, asDay, asMoment, db, newId } from "./db";
 
 export interface FactReportRow {
   id: string;
@@ -25,6 +26,7 @@ export interface TripReportRow {
   route_slug: string;
   month: string;
   bike: string;
+  /** As the rider sent it. Kept as text here, as the editor's desk reads it. */
   body: string;
   name: string | null;
   user_id: string | null;
@@ -32,7 +34,46 @@ export interface TripReportRow {
   created_at: string;
 }
 
-export function sendFactReport(input: {
+type FactData = Prisma.FactReportGetPayload<object>;
+type TripData = Prisma.TripReportGetPayload<object>;
+
+function toFactRow(r: FactData): FactReportRow {
+  return {
+    id: r.id,
+    route_slug: r.routeSlug,
+    fact_id: r.factId,
+    fact_title: r.factTitle,
+    kind: r.kind as FactReportRow["kind"],
+    change_kind: r.changeKind,
+    note: r.note,
+    seen_on: asDay(r.seenOn),
+    name: r.name,
+    user_id: r.userId,
+    status: r.status as FactReportRow["status"],
+    created_at: asMoment(r.createdAt),
+    decided_at: r.decidedAt ? asMoment(r.decidedAt) : null,
+  };
+}
+
+function toTripRow(r: TripData): TripReportRow {
+  return {
+    id: r.id,
+    route_slug: r.routeSlug,
+    month: r.month,
+    bike: r.bike,
+    body: JSON.stringify(r.body),
+    name: r.name,
+    user_id: r.userId,
+    status: r.status as TripReportRow["status"],
+    created_at: asMoment(r.createdAt),
+  };
+}
+
+function asObject(value: Prisma.JsonValue): Record<string, unknown> {
+  return value && typeof value === "object" && !Array.isArray(value) ? (value as Record<string, unknown>) : {};
+}
+
+export async function sendFactReport(input: {
   routeSlug: string;
   factId: string;
   factTitle: string;
@@ -42,24 +83,23 @@ export function sendFactReport(input: {
   seenOn: string;
   name: string | null;
   userId: string | null;
-}): string {
+}): Promise<string> {
   const id = newId();
-  run(
-    `INSERT INTO fact_reports
-       (id, route_slug, fact_id, fact_title, kind, change_kind, note, seen_on, name, user_id, status, created_at)
-     VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, 'new', ?)`,
-    id,
-    input.routeSlug,
-    input.factId,
-    input.factTitle,
-    input.kind,
-    input.changeKind,
-    input.note,
-    input.seenOn,
-    input.name,
-    input.userId,
-    now(),
-  );
+  await db().factReport.create({
+    data: {
+      id,
+      routeSlug: input.routeSlug,
+      factId: input.factId,
+      factTitle: input.factTitle,
+      kind: input.kind,
+      changeKind: input.changeKind,
+      note: input.note,
+      seenOn: asDate(input.seenOn),
+      name: input.name,
+      userId: input.userId,
+      status: "new",
+    },
+  });
   return id;
 }
 
@@ -68,19 +108,13 @@ const UNREAD_PER_FACT = 5;
 const UNREAD_PER_HOUR = 60;
 
 /** False when one fact, or the whole inbox, already has more unread reports than one editor can read. */
-export function inboxHasRoom(routeSlug: string, factId: string): boolean {
-  const forFact = one<{ n: number }>(
-    "SELECT COUNT(*) AS n FROM fact_reports WHERE route_slug = ? AND fact_id = ? AND status = 'new'",
-    routeSlug,
-    factId,
-  );
-  if ((forFact?.n ?? 0) >= UNREAD_PER_FACT) return false;
-  const hourAgo = new Date(Date.now() - 3_600_000).toISOString();
-  const lately = one<{ n: number }>(
-    "SELECT COUNT(*) AS n FROM fact_reports WHERE status = 'new' AND created_at > ?",
-    hourAgo,
-  );
-  return (lately?.n ?? 0) < UNREAD_PER_HOUR;
+export async function inboxHasRoom(routeSlug: string, factId: string): Promise<boolean> {
+  const forFact = await db().factReport.count({ where: { routeSlug, factId, status: "new" } });
+  if (forFact >= UNREAD_PER_FACT) return false;
+  const lately = await db().factReport.count({
+    where: { status: "new", createdAt: { gt: new Date(Date.now() - 3_600_000) } },
+  });
+  return lately < UNREAD_PER_HOUR;
 }
 
 /**
@@ -90,182 +124,176 @@ export function inboxHasRoom(routeSlug: string, factId: string): boolean {
  * A report of a change that the editor has not yet read counts too, as a warning,
  * but its words are not shown until it has been read.
  */
-export function confirmationsFor(routeSlug: string): Confirmation[] {
-  let rows: FactReportRow[] = [];
+export async function confirmationsFor(routeSlug: string): Promise<Confirmation[]> {
+  let rows: FactData[] = [];
   try {
-    rows = all<FactReportRow>(
-      `SELECT * FROM fact_reports
-        WHERE route_slug = ? AND (status = 'applied' OR (status = 'new' AND kind = 'changed'))
-        ORDER BY seen_on DESC`,
-      routeSlug,
-    );
+    rows = await db().factReport.findMany({
+      where: { routeSlug, OR: [{ status: "applied" }, { status: "new", kind: "changed" }] },
+      orderBy: { seenOn: "desc" },
+    });
   } catch {
-    // No database yet, as when the site is first built. Every fact is then "not yet checked".
+    // No database to reach, as when the site is built on a machine without one. Every fact is then "not yet checked".
     return [];
   }
   return rows.map((r) => ({
-    fact_id: r.fact_id,
-    route_slug: r.route_slug,
-    seen_on: r.seen_on,
+    fact_id: r.factId,
+    route_slug: r.routeSlug,
+    seen_on: asDay(r.seenOn),
     by: r.name ?? "a rider",
-    kind: r.kind,
+    kind: r.kind as Confirmation["kind"],
     note: r.status === "applied" ? r.note : null,
     read: r.status === "applied",
-    applied_on: r.status === "applied" ? r.decided_at : null,
+    applied_on: r.status === "applied" && r.decidedAt ? asMoment(r.decidedAt) : null,
   }));
 }
 
-export function sendTripReport(input: {
+export async function sendTripReport(input: {
   routeSlug: string;
   month: string;
   bike: string;
   body: Record<string, unknown>;
   name: string | null;
   userId: string | null;
-}): string {
+}): Promise<string> {
   const id = newId();
-  run(
-    `INSERT INTO trip_reports (id, route_slug, month, bike, body, name, user_id, status, created_at)
-     VALUES (?, ?, ?, ?, ?, ?, ?, 'new', ?)`,
-    id,
-    input.routeSlug,
-    input.month,
-    input.bike,
-    JSON.stringify(input.body),
-    input.name,
-    input.userId,
-    now(),
-  );
+  await db().tripReport.create({
+    data: {
+      id,
+      routeSlug: input.routeSlug,
+      month: input.month,
+      bike: input.bike,
+      body: input.body as Prisma.InputJsonObject,
+      name: input.name,
+      userId: input.userId,
+      status: "new",
+    },
+  });
   return id;
 }
 
-export function tripReportCount(routeSlug: string): number {
+export async function tripReportCount(routeSlug: string): Promise<number> {
   try {
-    return one<{ n: number }>("SELECT COUNT(*) AS n FROM trip_reports WHERE route_slug = ?", routeSlug)?.n ?? 0;
+    return await db().tripReport.count({ where: { routeSlug } });
   } catch {
     return 0;
   }
 }
 
 /** For each route, how many facts riders confirmed in the last seven days. */
-export function confirmedLately(): Record<string, number> {
+export async function confirmedLately(): Promise<Record<string, number>> {
   try {
-    const since = new Date(Date.now() - 7 * 86_400_000).toISOString().slice(0, 10);
-    const rows = all<{ route_slug: string; n: number }>(
-      `SELECT route_slug, COUNT(DISTINCT fact_id) AS n FROM fact_reports
-        WHERE status = 'applied' AND seen_on >= ? GROUP BY route_slug`,
-      since,
-    );
-    return Object.fromEntries(rows.map((r) => [r.route_slug, r.n]));
+    const since = asDate(asDay(new Date(Date.now() - 7 * 86_400_000)));
+    // One row per route and fact, so a fact confirmed twice counts once.
+    const rows = await db().factReport.groupBy({
+      by: ["routeSlug", "factId"],
+      where: { status: "applied", seenOn: { gte: since } },
+    });
+    const counts: Record<string, number> = {};
+    for (const r of rows) counts[r.routeSlug] = (counts[r.routeSlug] ?? 0) + 1;
+    return counts;
   } catch {
     return {};
   }
 }
 
 /** Trip reports the editor has read and used, for working out bikes, hours and costs. Newest first. */
-export function tripReportsUsed(
+export async function tripReportsUsed(
   routeSlug: string,
-): Array<{ month: string; bike: string; by: string | null; body: Record<string, unknown> }> {
-  let rows: TripReportRow[] = [];
+): Promise<Array<{ month: string; bike: string; by: string | null; body: Record<string, unknown> }>> {
+  let rows: TripData[] = [];
   try {
-    rows = all<TripReportRow>(
-      "SELECT * FROM trip_reports WHERE route_slug = ? AND status = 'applied' ORDER BY month DESC LIMIT 500",
-      routeSlug,
-    );
+    rows = await db().tripReport.findMany({
+      where: { routeSlug, status: "applied" },
+      orderBy: { month: "desc" },
+      take: 500,
+    });
   } catch {
     return [];
   }
-  return rows.map((r) => {
-    let body: Record<string, unknown> = {};
-    try {
-      const parsed = JSON.parse(r.body) as unknown;
-      if (parsed && typeof parsed === "object" && !Array.isArray(parsed)) body = parsed as Record<string, unknown>;
-    } catch {
-      body = {};
-    }
-    return { month: r.month, bike: r.bike, by: r.name, body };
-  });
+  return rows.map((r) => ({ month: r.month, bike: r.bike, by: r.name, body: asObject(r.body) }));
 }
 
-export function suggestPlace(place: string, note: string | null, name: string | null): void {
-  run(
-    "INSERT INTO suggestions (id, place, note, name, created_at) VALUES (?, ?, ?, ?, ?)",
-    newId(),
-    place,
-    note,
-    name,
-    now(),
-  );
+export async function suggestPlace(place: string, note: string | null, name: string | null): Promise<void> {
+  await db().suggestion.create({ data: { id: newId(), place, note, name } });
 }
 
 // ── the editor's side ────────────────────────────────────────────────────
 
-export function inbox(): { facts: FactReportRow[]; trips: TripReportRow[]; places: Array<Record<string, string>> } {
+export async function inbox(): Promise<{
+  facts: FactReportRow[];
+  trips: TripReportRow[];
+  places: Array<Record<string, string>>;
+}> {
+  const [facts, trips, places] = await Promise.all([
+    db().factReport.findMany({ where: { status: "new" }, orderBy: { createdAt: "desc" }, take: 200 }),
+    db().tripReport.findMany({ where: { status: "new" }, orderBy: { createdAt: "desc" }, take: 200 }),
+    db().suggestion.findMany({ orderBy: { createdAt: "desc" }, take: 100 }),
+  ]);
   return {
-    facts: all<FactReportRow>("SELECT * FROM fact_reports WHERE status = 'new' ORDER BY created_at DESC LIMIT 200"),
-    trips: all<TripReportRow>("SELECT * FROM trip_reports WHERE status = 'new' ORDER BY created_at DESC LIMIT 200"),
-    places: all<Record<string, string>>("SELECT * FROM suggestions ORDER BY created_at DESC LIMIT 100"),
+    facts: facts.map(toFactRow),
+    trips: trips.map(toTripRow),
+    // The desk reads these by their column names, as it did before.
+    places: places.map((s) => {
+      const row: Record<string, string> = { id: s.id, place: s.place, created_at: asMoment(s.createdAt) };
+      if (s.note !== null) row.note = s.note;
+      if (s.name !== null) row.name = s.name;
+      return row;
+    }),
   };
 }
 
-export function factReport(id: string): FactReportRow | null {
-  return one<FactReportRow>("SELECT * FROM fact_reports WHERE id = ?", id);
+export async function factReport(id: string): Promise<FactReportRow | null> {
+  const r = await db().factReport.findUnique({ where: { id } });
+  return r ? toFactRow(r) : null;
 }
 
-export function decideFactReport(
+export async function decideFactReport(
   id: string,
   decision: "applied" | "set-aside",
   wording?: string,
   reason?: string,
-): void {
-  if (wording !== undefined) {
-    run("UPDATE fact_reports SET status = ?, decided_at = ?, note = ? WHERE id = ?", decision, now(), wording, id);
-  } else {
-    run(
-      "UPDATE fact_reports SET status = ?, decided_at = ?, editor_note = ? WHERE id = ?",
-      decision,
-      now(),
-      reason ?? null,
-      id,
-    );
-  }
+): Promise<void> {
+  const decidedAt = new Date();
+  await db().factReport.updateMany({
+    where: { id },
+    data:
+      wording !== undefined
+        ? { status: decision, decidedAt, note: wording }
+        : { status: decision, decidedAt, editorNote: reason ?? null },
+  });
 }
 
-export function decideTripReport(id: string, decision: "applied" | "set-aside", reason?: string): void {
-  run("UPDATE trip_reports SET status = ?, editor_note = ? WHERE id = ?", decision, reason ?? null, id);
+export async function decideTripReport(id: string, decision: "applied" | "set-aside", reason?: string): Promise<void> {
+  await db().tripReport.updateMany({ where: { id }, data: { status: decision, editorNote: reason ?? null } });
 }
 
-export function tripReport(id: string): TripReportRow | null {
-  return one<TripReportRow>("SELECT * FROM trip_reports WHERE id = ?", id);
+export async function tripReport(id: string): Promise<TripReportRow | null> {
+  const r = await db().tripReport.findUnique({ where: { id } });
+  return r ? toTripRow(r) : null;
 }
 
 /** How many other riders have said the same of the same fact, in the thirty days around this report. */
-export function othersSaying(report: FactReportRow): number {
-  const from = new Date(new Date(`${report.seen_on}T00:00:00Z`).getTime() - 30 * 86_400_000).toISOString().slice(0, 10);
-  return (
-    one<{ n: number }>(
-      `SELECT COUNT(*) AS n FROM fact_reports
-        WHERE route_slug = ? AND fact_id = ? AND kind = ? AND id <> ? AND status <> 'set-aside' AND seen_on >= ?`,
-      report.route_slug,
-      report.fact_id,
-      report.kind,
-      report.id,
-      from,
-    )?.n ?? 0
-  );
+export function othersSaying(report: FactReportRow): Promise<number> {
+  const from = new Date(asDate(report.seen_on).getTime() - 30 * 86_400_000);
+  return db().factReport.count({
+    where: {
+      routeSlug: report.route_slug,
+      factId: report.fact_id,
+      kind: report.kind,
+      id: { not: report.id },
+      status: { not: "set-aside" },
+      seenOn: { gte: from },
+    },
+  });
 }
 
 /** How many earlier reports from the same person were applied. Shown to the editor as evidence. */
-export function recordOf(userId: string | null, name: string | null): { sent: number; applied: number } {
+export async function recordOf(userId: string | null, name: string | null): Promise<{ sent: number; applied: number }> {
   if (!userId && !name) return { sent: 0, applied: 0 };
-  const row = userId
-    ? one<{ sent: number; applied: number }>(
-        `SELECT COUNT(*) AS sent, COALESCE(SUM(status = 'applied'), 0) AS applied FROM fact_reports WHERE user_id = ?`,
-        userId,
-      )
-    : one<{ sent: number; applied: number }>(
-        `SELECT COUNT(*) AS sent, COALESCE(SUM(status = 'applied'), 0) AS applied FROM fact_reports WHERE name = ?`,
-        name,
-      );
-  return row ?? { sent: 0, applied: 0 };
+  const who: Prisma.FactReportWhereInput = userId ? { userId } : { name };
+  const [sent, applied] = await Promise.all([
+    db().factReport.count({ where: who }),
+    db().factReport.count({ where: { ...who, status: "applied" } }),
+  ]);
+  return { sent, applied };
 }

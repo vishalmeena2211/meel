@@ -130,7 +130,7 @@ export default async function SectionPage(props: PageProps<"/routes/[slug]/[sect
       const near = new Set(view.nearby.map((r) => r.slug));
       const index = await getIndex();
       const nameOf = (s: string) => index.routes.find((r) => r.slug === s)?.name ?? s;
-      const others = openTrips().filter((t) => near.has(t.route_slug)).slice(0, 3);
+      const others = (await openTrips()).filter((t) => near.has(t.route_slug)).slice(0, 3);
       return (
         <div className="flex flex-col gap-3">
           <BackHead title={route.name} sub="Trips on this route" back={top} />

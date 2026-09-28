@@ -40,7 +40,7 @@ export function LetRiderIn() {
         <div className="card flex flex-col gap-0.5 px-3 py-2.5">
           <div className="flex items-start justify-between gap-2">
             <b className="text-[0.9375rem]">{rider.shown_as}</b>
-            <span className="hint">{rider.home_city}</span>
+            <span className="hint">{rider.home_city ?? "No home city yet"}</span>
           </div>
           <span className="text-sm">{rider.bike ?? "No bike given"}</span>
           <span className="hint">
@@ -48,6 +48,17 @@ export function LetRiderIn() {
             {plural(rider.facts, "fact")} confirmed
           </span>
         </div>
+      ) : null}
+
+      {rider?.uses_google && !password ? (
+        <>
+          <Callout tone="info" title={`${rider.shown_as.split(" ")[0] ?? rider.shown_as} logs in with Google`}>
+            Ask them to press “Continue with Google” on the log-in page. That is usually all they need.
+          </Callout>
+          <p className="text-sm">
+            If they have lost their Google account, a one-time password still works. It adds a password to this account.
+          </p>
+        </>
       ) : null}
 
       {password ? (
@@ -72,7 +83,13 @@ export function LetRiderIn() {
           </ul>
         </>
       ) : rider ? (
-        <button type="submit" name="intent" value="set" className="btn btn-primary self-start" disabled={pending}>
+        <button
+          type="submit"
+          name="intent"
+          value="set"
+          className={`btn self-start ${rider.uses_google ? "btn-soft" : "btn-primary"}`}
+          disabled={pending}
+        >
           {pending ? "Setting" : "Set a one-time password"}
         </button>
       ) : (

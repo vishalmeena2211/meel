@@ -99,7 +99,7 @@ async function FactDetail({ report, nameOf }: { report: FactReportRow; nameOf: (
   let now: FactView | null = null;
   let after: FactView | null = null;
   if (route) {
-    const said = confirmationsFor(report.route_slug);
+    const said = await confirmationsFor(report.route_slug);
     now = factViews(route, said, kinds, today).all.find((v) => v.id === report.fact_id) ?? null;
     const applied = [
       ...said.filter((c) => !(c.fact_id === report.fact_id && c.read === false && c.seen_on === report.seen_on)),
@@ -116,9 +116,8 @@ async function FactDetail({ report, nameOf }: { report: FactReportRow; nameOf: (
     ];
     after = factViews(route, applied, kinds, today).all.find((v) => v.id === report.fact_id) ?? null;
   }
-  const record = recordOf(report.user_id, report.name);
+  const [record, others] = await Promise.all([recordOf(report.user_id, report.name), othersSaying(report)]);
   const age = daysBetween(report.seen_on, today);
-  const others = othersSaying(report);
   const who = report.name ?? "a rider with no name given";
   const first = (report.name ?? "the rider").split(" ")[0] ?? "the rider";
 
@@ -315,9 +314,8 @@ function TripReportDetail({ report, nameOf }: { report: TripReportRow; nameOf: (
 // ── one trip that waits, or that riders reported ─────────────────────────
 
 async function TripDetail({ card, nameOf }: { card: TripCard; nameOf: (slug: string) => string }) {
-  const trip = getTrip(card.id);
+  const [trip, flags] = await Promise.all([getTrip(card.id), flagsOn(card.id)]);
   const route = trip ? await getRoute(trip.route_slug) : null;
-  const flags = flagsOn(card.id);
   const checks = trip && route ? checkTrip(route, trip.leaves_on, trip.back_on, trip.nights) : [];
   return {
     head: `${nameOf(card.route_slug)}, ${sayDate(card.leaves_on)}`,
@@ -397,10 +395,8 @@ export default async function EditorPage(props: PageProps<"/editor">) {
   if (!user.is_editor) notFound();
 
   const query = await props.searchParams;
-  const index = await getIndex();
+  const [index, box, trips] = await Promise.all([getIndex(), inbox(), tripsForEditor()]);
   const nameOf = (slug: string) => index.routes.find((r) => r.slug === slug)?.name ?? slug;
-  const box = inbox();
-  const trips = tripsForEditor();
 
   const items: Item[] = [
     ...box.facts.map((r) => ({

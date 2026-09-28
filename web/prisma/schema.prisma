@@ -1,0 +1,193 @@
+// Accounts, trips and reports. Routes and facts are not here: they live in ../data and are built into the site.
+//
+// Table and column names are the same as in the first, SQLite, version of Meel, in snake_case,
+// so that anything written by hand against the database still reads the same.
+//
+// To change a table: edit this file, then run `pnpm db:migrate --name what-changed`.
+// Never edit a migration that has already run.
+
+generator client {
+  provider = "prisma-client"
+  output   = "../src/generated/prisma"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+/// A rider. Other riders only ever see the short name ("Rahul N."), the home city and the bike.
+model User {
+  id                  String    @id
+  /// Always stored in lower case.
+  email               String    @unique
+  name                String
+  /// Scrambled with scrypt, never as typed. Null for a rider who logs in with Google only.
+  passwordHash        String?   @map("password_hash")
+  /// True after the editor has set a one-time password, until the rider chooses their own.
+  passwordIsTemporary Boolean   @default(false) @map("password_is_temporary")
+  /// When Google took over an account that had a password. The account page says so for two weeks.
+  passwordRemovedAt   DateTime? @map("password_removed_at") @db.Timestamptz(3)
+  /// Null until a rider who came in through Google has finished their profile.
+  homeCity            String?   @map("home_city")
+  bike                String?
+  /// Raised by one to log the rider out on every phone. Each logged-in phone carries the number it was given.
+  sessionVersion      Int       @default(0) @map("session_version")
+  createdAt           DateTime  @default(now()) @map("created_at") @db.Timestamptz(3)
+
+  accounts    Account[]
+  tripsLed    Trip[]       @relation("TripLeader")
+  memberships TripMember[]
+  flags       TripFlag[]
+  factReports FactReport[]
+  tripReports TripReport[]
+
+  @@map("users")
+}
+
+/// A way in from outside Meel. Today only Google. The id is the number Google gives the account, never a password.
+model Account {
+  provider          String
+  providerAccountId String   @map("provider_account_id")
+  userId            String   @map("user_id")
+  createdAt         DateTime @default(now()) @map("created_at") @db.Timestamptz(3)
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@id([provider, providerAccountId])
+  @@index([userId])
+  @@map("accounts")
+}
+
+/// Wrong passwords, kept for fifteen minutes' worth of counting.
+model LoginAttempt {
+  id    BigInt   @id @default(autoincrement())
+  email String
+  at    DateTime @default(now()) @db.Timestamptz(3)
+
+  @@index([email, at])
+  @@map("login_attempts")
+}
+
+model Trip {
+  id         String   @id
+  routeSlug  String   @map("route_slug")
+  leaderId   String   @map("leader_id")
+  /// A calendar day in India.
+  leavesOn   DateTime @map("leaves_on") @db.Date
+  /// A calendar day in India.
+  backOn     DateTime @map("back_on") @db.Date
+  fromCity   String   @map("from_city")
+  places     Int
+  /// relaxed, steady or fast
+  pace       String
+  whoCanJoin String   @map("who_can_join")
+  asks       String?
+  /// Only ever sent to the leader and to riders the leader has accepted.
+  chatLink   String?  @map("chat_link")
+  /// The place each night is spent, in order.
+  nights     String[] @default([])
+  isCompany  Boolean  @default(false) @map("is_company")
+  /// waiting-for-editor, open, withdrawn or hidden
+  status     String
+  createdAt  DateTime @default(now()) @map("created_at") @db.Timestamptz(3)
+
+  leader  User         @relation("TripLeader", fields: [leaderId], references: [id], onDelete: Cascade)
+  members TripMember[]
+  flags   TripFlag[]
+
+  @@index([routeSlug, leavesOn])
+  @@index([leaderId])
+  @@map("trips")
+}
+
+model TripMember {
+  tripId     String    @map("trip_id")
+  userId     String    @map("user_id")
+  /// asked, accepted, declined, left, took-back or waiting-for-place
+  status     String
+  note       String?
+  askedAt    DateTime  @map("asked_at") @db.Timestamptz(3)
+  answeredAt DateTime? @map("answered_at") @db.Timestamptz(3)
+
+  trip Trip @relation(fields: [tripId], references: [id], onDelete: Cascade)
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@id([tripId, userId])
+  @@index([userId])
+  @@map("trip_members")
+}
+
+model TripFlag {
+  tripId String   @map("trip_id")
+  userId String   @map("user_id")
+  reason String
+  note   String?
+  at     DateTime @db.Timestamptz(3)
+
+  trip Trip @relation(fields: [tripId], references: [id], onDelete: Cascade)
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@id([tripId, userId])
+  @@map("trip_flags")
+}
+
+/// A rider saying a fact is still true, or has changed. No account is needed.
+model FactReport {
+  id         String    @id
+  routeSlug  String    @map("route_slug")
+  factId     String    @map("fact_id")
+  factTitle  String    @map("fact_title")
+  /// still-true or changed
+  kind       String
+  changeKind String?   @map("change_kind")
+  note       String?
+  /// The calendar day in India the rider saw it.
+  seenOn     DateTime  @map("seen_on") @db.Date
+  name       String?
+  userId     String?   @map("user_id")
+  /// new, applied or set-aside
+  status     String
+  /// Why the editor set it aside, so the same report is not puzzled over twice.
+  editorNote String?   @map("editor_note")
+  createdAt  DateTime  @default(now()) @map("created_at") @db.Timestamptz(3)
+  decidedAt  DateTime? @map("decided_at") @db.Timestamptz(3)
+
+  user User? @relation(fields: [userId], references: [id], onDelete: SetNull)
+
+  @@index([routeSlug, status])
+  @@index([userId])
+  @@map("fact_reports")
+}
+
+model TripReport {
+  id         String   @id
+  routeSlug  String   @map("route_slug")
+  /// YYYY-MM
+  month      String
+  bike       String
+  /// Legs, hours, costs and the rest, as the rider sent them.
+  body       Json
+  name       String?
+  userId     String?  @map("user_id")
+  /// new, applied or set-aside
+  status     String
+  editorNote String?  @map("editor_note")
+  createdAt  DateTime @default(now()) @map("created_at") @db.Timestamptz(3)
+
+  user User? @relation(fields: [userId], references: [id], onDelete: SetNull)
+
+  @@index([routeSlug])
+  @@index([userId])
+  @@map("trip_reports")
+}
+
+/// A place a rider would like Meel to write about.
+model Suggestion {
+  id        String   @id
+  place     String
+  note      String?
+  name      String?
+  createdAt DateTime @default(now()) @map("created_at") @db.Timestamptz(3)
+
+  @@map("suggestions")
+}

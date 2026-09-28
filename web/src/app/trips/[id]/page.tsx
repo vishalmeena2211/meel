@@ -3,6 +3,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 
 import { leaveAction, takeBackAction, withdrawAction } from "@/app/actions/trips";
+import { GoogleButton, OrWithEmail } from "@/components/account/google";
 import { IconPlus, IconRight } from "@/components/icons";
 import { SaveRoute } from "@/components/offline/save-route";
 import { ShareButton } from "@/components/route/share-button";
@@ -14,14 +15,14 @@ import { Badge, Callout, KeyFacts } from "@/components/ui";
 import { getIndex } from "@/lib/content";
 import { dayOf, indiaDay, initials, km, metres, monthName, plural, sayDate } from "@/lib/format";
 import { nightGains } from "@/lib/trip-checks";
-import { currentUser } from "@/server/auth";
+import { currentUser, googleIsOn } from "@/server/auth";
 import { savedPages } from "@/server/route-pages";
 import { getRouteView } from "@/server/route-view";
 import { cameBackFrom, getTrip, membersOf, openTrips } from "@/server/trips";
 
 export async function generateMetadata(props: PageProps<"/trips/[id]">): Promise<Metadata> {
   const { id } = await props.params;
-  const trip = getTrip(id);
+  const trip = await getTrip(id);
   if (!trip) return { title: "No such trip" };
   const view = await getRouteView(trip.route_slug);
   return {
@@ -55,10 +56,16 @@ function span(from: string, to: string): string {
 export default async function TripPage(props: PageProps<"/trips/[id]">) {
   const { id } = await props.params;
   const query = await props.searchParams;
-  const trip = getTrip(id);
+  const trip = await getTrip(id);
   if (!trip || trip.status === "withdrawn") notFound();
 
-  const [view, user, index] = await Promise.all([getRouteView(trip.route_slug), currentUser(), getIndex()]);
+  const [view, user, index, members, openNow] = await Promise.all([
+    getRouteView(trip.route_slug),
+    currentUser(),
+    getIndex(),
+    membersOf(trip.id),
+    openTrips(),
+  ]);
   if (!view) notFound();
   const { route } = view;
 
@@ -66,7 +73,6 @@ export default async function TripPage(props: PageProps<"/trips/[id]">) {
   // A trip the editor has not yet read, or has hidden, is seen only by its leader and the editor.
   if (trip.status !== "open" && !isLeader && !user?.is_editor) notFound();
 
-  const members = membersOf(trip.id);
   const me = user && !isLeader ? (members.find((m) => m.user_id === user.id) ?? null) : null;
   const mine = me?.status ?? null;
   const going = members.filter((m) => m.status === "accepted");
@@ -82,7 +88,7 @@ export default async function TripPage(props: PageProps<"/trips/[id]">) {
 
   // Trips a rider might take in its place: the same road first, then roads in the same region.
   const near = new Set([trip.route_slug, ...view.nearby.map((r) => r.slug)]);
-  const others = openTrips()
+  const others = openNow
     .filter((t) => t.id !== trip.id && near.has(t.route_slug) && t.going < t.places)
     .slice(0, 3);
 
@@ -91,7 +97,7 @@ export default async function TripPage(props: PageProps<"/trips/[id]">) {
     .filter((i) => i.months.length === 0 || i.months.includes(Number(trip.leaves_on.slice(5, 7))))
     .map((i) => i.item);
   const saving = savedPages(view);
-  const back = over ? cameBackFrom(trip) : null;
+  const back = over ? await cameBackFrom(trip) : null;
   const gave = back
     ? [
         back.facts > 0 ? { title: `${plural(back.facts, "fact")} confirmed`, sub: "On this route, by riders of this trip" } : null,
@@ -405,6 +411,12 @@ export default async function TripPage(props: PageProps<"/trips/[id]">) {
             <li>Your email is never shown to anyone</li>
             <li>Reading routes and sending reports stay open to all</li>
           </ul>
+          {googleIsOn ? (
+            <>
+              <GoogleButton next={`/trips/${trip.id}`} />
+              <OrWithEmail />
+            </>
+          ) : null}
           <Link className="btn btn-primary" href={`/signup?next=/trips/${trip.id}`}>
             Create an account
           </Link>

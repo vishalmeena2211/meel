@@ -1,16 +1,18 @@
 import type { Metadata } from "next";
 import { redirect } from "next/navigation";
 
+import { GoogleButton, OrWithEmail } from "@/components/account/google";
 import { SignUpForm } from "@/components/account/forms";
 import { PageTitle } from "@/components/form";
 import { Callout } from "@/components/ui";
-import { currentUser } from "@/server/auth";
+import { safeNext } from "@/lib/next-page";
+import { currentUser, googleIsOn } from "@/server/auth";
 
 export const metadata: Metadata = { title: "Create an account" };
 
 export default async function SignUpPage(props: PageProps<"/signup">) {
   const query = await props.searchParams;
-  const next = typeof query.next === "string" ? query.next : "/account";
+  const next = safeNext(typeof query.next === "string" ? query.next : null);
   if (await currentUser()) redirect("/account");
 
   return (
@@ -20,6 +22,12 @@ export default async function SignUpPage(props: PageProps<"/signup">) {
         The leader of a trip needs to know who is asking. Reading routes, using the tools and sending reports stay open
         to everyone.
       </Callout>
+      {googleIsOn ? (
+        <>
+          <GoogleButton next={next} />
+          <OrWithEmail />
+        </>
+      ) : null}
       <SignUpForm next={next} />
     </div>
   );

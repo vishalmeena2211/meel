@@ -8,7 +8,7 @@ import type { FormState } from "@/components/form";
 import { getRoute } from "@/lib/content";
 import { indiaDay } from "@/lib/format";
 import { checkTrip, type Check } from "@/lib/trip-checks";
-import { currentUser } from "@/server/auth";
+import { currentUser, profileFirst } from "@/server/auth";
 import {
   answer,
   askToJoin,
@@ -65,6 +65,7 @@ export interface TripFormState extends FormState {
 export async function postTripAction(_previous: TripFormState, form: FormData): Promise<TripFormState> {
   const user = await currentUser();
   if (!user) redirect("/login?next=/trips/new");
+  profileFirst(user, "/trips/new");
 
   const nights = form.getAll("nights").filter((n): n is string => typeof n === "string" && n.length > 0);
   const values = {
@@ -96,7 +97,7 @@ export async function postTripAction(_previous: TripFormState, form: FormData): 
   if (!parsed.success || !route || Object.keys(errors).length > 0) {
     return { ok: false, message: "Something needs fixing.", errors, values, nights, step: "form" };
   }
-  if (openTripCount(user.id) >= 3) {
+  if ((await openTripCount(user.id)) >= 3) {
     return {
       ok: false,
       message: "You already have 3 trips open. Withdraw one, or wait for one to finish, before posting another.",
@@ -115,7 +116,7 @@ export async function postTripAction(_previous: TripFormState, form: FormData): 
     return { ok: false, message: "", errors: {}, values, nights: ordered, step: "review" };
   }
 
-  const made = postTrip({
+  const made = await postTrip({
     routeSlug: route.slug,
     leaderId: user.id,
     leavesOn: parsed.data.leaves_on,
@@ -139,10 +140,11 @@ export async function askAction(_previous: FormState, form: FormData): Promise<F
   const tripId = text(form, "trip");
   const user = await currentUser();
   if (!user) redirect(`/signup?next=/trips/${tripId}`);
+  profileFirst(user, `/trips/${tripId}`);
   const parsed = note.safeParse(text(form, "note") || undefined);
   if (!parsed.success) return { ok: false, message: "", errors: { note: "That note is too long. 300 letters at most." } };
 
-  const result = askToJoin(tripId, user.id, parsed.data ?? null);
+  const result = await askToJoin(tripId, user.id, parsed.data ?? null);
   revalidatePath(`/trips/${tripId}`);
   switch (result) {
     case "asked":
@@ -162,7 +164,7 @@ export async function takeBackAction(form: FormData): Promise<void> {
   const tripId = text(form, "trip");
   const user = await currentUser();
   if (!user) redirect(`/login?next=/trips/${tripId}`);
-  takeBack(tripId, user.id);
+  await takeBack(tripId, user.id);
   revalidatePath(`/trips/${tripId}`);
 }
 
@@ -170,9 +172,9 @@ export async function leaveAction(form: FormData): Promise<void> {
   const tripId = text(form, "trip");
   const user = await currentUser();
   if (!user) redirect(`/login?next=/trips/${tripId}`);
-  leave(tripId, user.id);
+  await leave(tripId, user.id);
   revalidatePath(`/trips/${tripId}`);
-  const trip = getTrip(tripId);
+  const trip = await getTrip(tripId);
   if (trip) refreshRoute(trip.route_slug);
 }
 
@@ -180,10 +182,10 @@ export async function answerAction(form: FormData): Promise<void> {
   const tripId = text(form, "trip");
   const user = await currentUser();
   if (!user) redirect(`/login?next=/trips/${tripId}/requests`);
-  const result = answer(tripId, user.id, text(form, "rider"), text(form, "answer") === "accept");
+  const result = await answer(tripId, user.id, text(form, "rider"), text(form, "answer") === "accept");
   revalidatePath(`/trips/${tripId}`);
   revalidatePath(`/trips/${tripId}/requests`);
-  const trip = getTrip(tripId);
+  const trip = await getTrip(tripId);
   if (trip) refreshRoute(trip.route_slug);
   if (result === "full") redirect(`/trips/${tripId}/requests?full=1`);
 }
@@ -192,8 +194,8 @@ export async function withdrawAction(form: FormData): Promise<void> {
   const tripId = text(form, "trip");
   const user = await currentUser();
   if (!user) redirect(`/login?next=/trips/${tripId}`);
-  const trip = getTrip(tripId);
-  withdrawTrip(tripId, user.id);
+  const trip = await getTrip(tripId);
+  await withdrawTrip(tripId, user.id);
   if (trip) refreshRoute(trip.route_slug);
   redirect("/account");
 }
@@ -209,8 +211,8 @@ export async function flagAction(_previous: FormState, form: FormData): Promise<
   if (!user) redirect(`/login?next=/trips/${tripId}`);
   const parsed = flagForm.safeParse({ reason: text(form, "reason"), note: text(form, "note") || undefined });
   if (!parsed.success) return { ok: false, message: "Something needs fixing.", errors: errorsOf(parsed.error) };
-  if (!getTrip(tripId)) return { ok: false, message: "This trip is no longer here.", errors: {} };
-  flagTrip(tripId, user.id, parsed.data.reason, parsed.data.note ?? null);
+  if (!(await getTrip(tripId))) return { ok: false, message: "This trip is no longer here.", errors: {} };
+  await flagTrip(tripId, user.id, parsed.data.reason, parsed.data.note ?? null);
   revalidatePath(`/trips/${tripId}`);
   return { ok: true, errors: {}, message: "Sent to the person who keeps Meel. The leader is not told who reported." };
 }

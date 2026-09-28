@@ -46,3 +46,6 @@ next-env.d.ts
 
 # accounts, trips and reports live here
 /.data/
+
+# Prisma client, made by `prisma generate` from prisma/schema.prisma
+/src/generated/

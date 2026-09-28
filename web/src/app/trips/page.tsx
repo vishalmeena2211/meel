@@ -21,8 +21,7 @@ export const dynamic = "force-dynamic";
 
 export default async function TripsPage(props: PageProps<"/trips">) {
   const query = await props.searchParams;
-  const [index, user] = await Promise.all([getIndex(), currentUser()]);
-  const all = openTrips();
+  const [index, user, all] = await Promise.all([getIndex(), currentUser(), openTrips()]);
   const routeOf = (slug: string) => index.routes.find((r) => r.slug === slug);
   const nameOf = (slug: string) => routeOf(slug)?.name ?? slug;
 
@@ -33,7 +32,7 @@ export default async function TripsPage(props: PageProps<"/trips">) {
 
   // The chips: this month, the city the rider starts from, and each region that has a trip.
   const cities = [...new Set(all.map((t) => t.from_city))];
-  const home = user && cities.includes(user.home_city) ? user.home_city : (cities[0] ?? null);
+  const home = user?.home_city && cities.includes(user.home_city) ? user.home_city : (cities[0] ?? null);
   const regions = index.regions.filter((r) => all.some((t) => routeOf(t.route_slug)?.region === r.id)).slice(0, 4);
 
   const trips = all.filter(

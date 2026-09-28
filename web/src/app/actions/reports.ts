@@ -146,7 +146,7 @@ export async function reportTrip(_previous: FormState, form: FormData): Promise<
     nights: nights ? Number(nights) : undefined,
     video: rest.video,
   };
-  sendTripReport({
+  await sendTripReport({
     routeSlug: slug,
     month,
     bike,
@@ -174,6 +174,6 @@ export async function suggest(_previous: FormState, form: FormData): Promise<For
   if (!parsed.success) {
     return { ...blank, message: "Something needs fixing.", errors: errorsOf(parsed.error), values };
   }
-  suggestPlace(parsed.data.place, parsed.data.note ?? null, parsed.data.name ? shortName(parsed.data.name) : null);
+  await suggestPlace(parsed.data.place, parsed.data.note ?? null, parsed.data.name ? shortName(parsed.data.name) : null);
   return { ok: true, errors: {}, message: `Sent. “${parsed.data.place}” is on the list to look at.` };
 }

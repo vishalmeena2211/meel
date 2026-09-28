@@ -83,9 +83,17 @@ function ruleWords(route: Route): string {
 export const getRouteView = cache(async (slug: string): Promise<RouteView | null> => {
   const route = await getRoute(slug);
   if (!route) return null;
-  const [kinds, index, packing] = await Promise.all([getFactKinds(), getIndex(), getPackingList(route.terrain)]);
-  const views = factViews(route, confirmationsFor(slug), kinds, new Date());
-  const used = tripReportsUsed(slug);
+  const [kinds, index, packing, confirmations, used, reportCount, trips, pastTrips] = await Promise.all([
+    getFactKinds(),
+    getIndex(),
+    getPackingList(route.terrain),
+    confirmationsFor(slug),
+    tripReportsUsed(slug),
+    tripReportCount(slug),
+    openTripsOnRoute(slug),
+    pastTripsOnRoute(slug),
+  ]);
+  const views = factViews(route, confirmations, kinds, new Date());
 
   const halts = new Set(route.waypoints.filter((w) => w.kind === "place" && w.altitude_m !== null).map((w) => w.name)).size;
   const highEnough = (route.header.highest_point?.altitude_m ?? 0) >= 2500 && route.profile.length > 1 && halts >= 2;
@@ -162,10 +170,10 @@ export const getRouteView = cache(async (slug: string): Promise<RouteView | null
     missing,
     packing,
     seasonMonths: season ? monthsFrom(season) : null,
-    reports: Math.max(used.length, tripReportCount(slug)),
+    reports: Math.max(used.length, reportCount),
     used,
-    trips: openTripsOnRoute(slug),
-    pastTrips: pastTripsOnRoute(slug),
+    trips,
+    pastTrips,
     confirmed: views.all.filter((v) => v.state === "fresh" || v.state === "ageing" || v.state === "stale").length,
     nearby,
     halts,

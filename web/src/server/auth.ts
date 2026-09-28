@@ -1,27 +1,20 @@
 import "server-only";
 
-import { createHash, randomBytes, randomInt, scrypt, timingSafeEqual } from "node:crypto";
-import { promisify } from "node:util";
+import { randomInt } from "node:crypto";
 
+import { CredentialsSignin } from "next-auth";
+import { decode } from "next-auth/jwt";
 import { cookies } from "next/headers";
+import { redirect, unstable_rethrow } from "next/navigation";
 import { cache } from "react";
 
 import { initials, shortName } from "@/lib/format";
 
-import { all, newId, now, one, run, together } from "./db";
+import { asMoment, db, newId, together } from "./db";
+import { hashPassword, normalEmail, passwordMatches } from "./riders";
+import { googleIsOn, SESSION_COOKIE, signIn, signOut } from "./session";
 
-const scryptAsync = promisify(scrypt) as (
-  password: string,
-  salt: Buffer,
-  keylen: number,
-  options: { N: number; r: number; p: number; maxmem: number },
-) => Promise<Buffer>;
-
-const COOKIE = "meel_session";
-const SESSION_DAYS = 30;
-const MAX_TRIES = 5;
-const REST_MINUTES = 15;
-const SCRYPT = { N: 32768, r: 8, p: 1, maxmem: 64 * 1024 * 1024 } as const;
+export { googleIsOn };
 
 export interface User {
   id: string;
@@ -30,24 +23,40 @@ export interface User {
   /** "Rahul N." — the only form of the name other riders see. */
   shown_as: string;
   initials: string;
-  home_city: string;
+  /** Null until a rider who came in through Google has finished their profile. */
+  home_city: string | null;
   bike: string | null;
   created_at: string;
   is_editor: boolean;
   /** True after the editor has set a one-time password, until the rider chooses their own. */
   must_change_password: boolean;
+  /** False for a rider who logs in with Google only. */
+  has_password: boolean;
+  uses_google: boolean;
+  /** Home city not given yet. Such a rider can read everything, but cannot join or post a trip. */
+  needs_profile: boolean;
+  /** When Google took over this account's password, if it did. */
+  password_removed_at: string | null;
+  /** Google took over the password in the last two weeks, and no new one has been added. The account page says so. */
+  google_took_over: boolean;
 }
 
-interface UserRow {
+const TOOK_OVER_NOTICE_MS = 14 * 86_400_000;
+
+interface UserData {
   id: string;
   email: string;
   name: string;
-  password_hash: string;
-  home_city: string;
+  passwordHash: string | null;
+  passwordIsTemporary: boolean;
+  passwordRemovedAt: Date | null;
+  homeCity: string | null;
   bike: string | null;
-  created_at: string;
-  password_is_temporary: number;
+  createdAt: Date;
+  accounts: Array<{ provider: string }>;
 }
+
+const WITH_ACCOUNTS = { accounts: { select: { provider: true } } } as const;
 
 function editors(): string[] {
   return (process.env.MEEL_EDITOR_EMAILS ?? "")
@@ -57,108 +66,111 @@ function editors(): string[] {
 }
 
 /**
- * An editor's email can only be signed up while the owner has opened the door, by setting
- * MEEL_EDITOR_SIGNUP to "open". Emails are not checked by post, so without this, anyone who
- * guessed the address and signed up first would hold the editor's rights.
+ * An editor's email can only be signed up with a password while the owner has opened the door, by setting
+ * MEEL_EDITOR_SIGNUP to "open". Meel does not check emails, so without this, anyone who guessed the address and
+ * signed up first would hold the editor's rights. Logging in with Google needs no door: Google has checked the email.
  */
 export function mayNotSignUp(email: string): boolean {
-  if (!editors().includes(email.trim().toLowerCase())) return false;
+  if (!editors().includes(normalEmail(email))) return false;
   return process.env.MEEL_EDITOR_SIGNUP !== "open";
 }
 
-function toUser(row: UserRow): User {
+function toUser(row: UserData): User {
   return {
     id: row.id,
     email: row.email,
     name: row.name,
     shown_as: shortName(row.name),
     initials: initials(row.name),
-    home_city: row.home_city,
+    home_city: row.homeCity,
     bike: row.bike,
-    created_at: row.created_at,
+    created_at: asMoment(row.createdAt),
     is_editor: editors().includes(row.email),
-    must_change_password: row.password_is_temporary === 1,
+    must_change_password: row.passwordIsTemporary,
+    has_password: row.passwordHash !== null,
+    uses_google: row.accounts.some((a) => a.provider === "google"),
+    needs_profile: !row.homeCity,
+    password_removed_at: row.passwordRemovedAt ? asMoment(row.passwordRemovedAt) : null,
+    google_took_over:
+      row.passwordHash === null &&
+      row.passwordRemovedAt !== null &&
+      Date.now() - row.passwordRemovedAt.getTime() < TOOK_OVER_NOTICE_MS,
   };
 }
 
-// ── passwords ────────────────────────────────────────────────────────────
+// ── who is logged in ─────────────────────────────────────────────────────
 
-/** Passwords are stored scrambled with scrypt and a salt of their own. Never as typed. */
-export async function hashPassword(password: string): Promise<string> {
-  const salt = randomBytes(16);
-  const key = await scryptAsync(password, salt, 64, SCRYPT);
-  return ["scrypt", SCRYPT.N, SCRYPT.r, SCRYPT.p, salt.toString("base64"), key.toString("base64")].join("$");
-}
-
-async function passwordMatches(password: string, stored: string): Promise<boolean> {
-  const [scheme, n, r, p, salt, key] = stored.split("$");
-  if (scheme !== "scrypt" || !n || !r || !p || !salt || !key) return false;
-  const expected = Buffer.from(key, "base64");
-  const actual = await scryptAsync(password, Buffer.from(salt, "base64"), expected.length, {
-    N: Number(n),
-    r: Number(r),
-    p: Number(p),
-    maxmem: SCRYPT.maxmem,
-  });
-  return actual.length === expected.length && timingSafeEqual(actual, expected);
-}
-
-// A hash to compare against when no account exists, so a wrong email takes as long as a wrong password.
-let decoy: Promise<string> | null = null;
-function decoyHash(): Promise<string> {
-  decoy ??= hashPassword(randomBytes(12).toString("hex"));
-  return decoy;
-}
-
-// ── sessions ─────────────────────────────────────────────────────────────
-
-function hashToken(token: string): string {
-  return createHash("sha256").update(token).digest("hex");
-}
-
-async function startSession(userId: string): Promise<void> {
-  const token = randomBytes(32).toString("base64url");
-  const expires = new Date(Date.now() + SESSION_DAYS * 86_400_000);
-  run(
-    "INSERT INTO sessions (token_hash, user_id, created_at, expires_at) VALUES (?, ?, ?, ?)",
-    hashToken(token),
-    userId,
-    now(),
-    expires.toISOString(),
-  );
+/**
+ * The rider id and session number in this phone's login cookie, or null.
+ *
+ * Read through cookies(), not Auth.js's auth(). After a form logs a phone in (or back in, after a password
+ * change), Next.js re-renders the page in the same request. cookies() already holds the new cookie there;
+ * auth() reads the request's original headers, which still hold the old one, and would see a logged-out rider.
+ * The cookie is opened with Auth.js's own decode, with the same secret and the cookie's name as the salt.
+ */
+async function sessionOnThisPhone(): Promise<{ uid: string; sv: number } | null> {
+  // cookies() comes first, always. It is what tells Next.js a page depends on who is asking. Checked after the
+  // secret, a build with no AUTH_SECRET would bake "logged out" into pages such as /account for everyone.
   const jar = await cookies();
-  jar.set(COOKIE, token, {
-    httpOnly: true,
-    secure: process.env.NODE_ENV === "production",
-    sameSite: "lax",
-    path: "/",
-    expires,
-  });
-}
-
-export async function endSession(): Promise<void> {
-  const jar = await cookies();
-  const token = jar.get(COOKIE)?.value;
-  if (token) run("DELETE FROM sessions WHERE token_hash = ?", hashToken(token));
-  jar.delete(COOKIE);
+  const secret = process.env.AUTH_SECRET;
+  if (!secret) return null;
+  // On https Auth.js names it with a __Secure- prefix. A long cookie is split into .0, .1 and so on.
+  for (const name of [`__Secure-${SESSION_COOKIE}`, SESSION_COOKIE]) {
+    const pieces = jar
+      .getAll()
+      .filter((c) => c.name === name || c.name.startsWith(`${name}.`))
+      .sort((a, b) => a.name.localeCompare(b.name, "en", { numeric: true }));
+    if (pieces.length === 0) continue;
+    const token = await decode({ token: pieces.map((c) => c.value).join(""), secret, salt: name });
+    return typeof token?.uid === "string" && typeof token.sv === "number" ? { uid: token.uid, sv: token.sv } : null;
+  }
+  return null;
 }
 
 /** Who is logged in, or null. Checked against the database on every request that asks. */
 export const currentUser = cache(async (): Promise<User | null> => {
-  const jar = await cookies();
-  const token = jar.get(COOKIE)?.value;
-  if (!token) return null;
-  const row = one<UserRow & { expires_at: string }>(
-    `SELECT u.*, s.expires_at FROM sessions s JOIN users u ON u.id = s.user_id WHERE s.token_hash = ?`,
-    hashToken(token),
-  );
-  if (!row) return null;
-  if (row.expires_at < now()) {
-    run("DELETE FROM sessions WHERE token_hash = ?", hashToken(token));
+  let session: { uid: string; sv: number } | null;
+  try {
+    session = await sessionOnThisPhone();
+  } catch (error) {
+    // A cookie that cannot be opened: tampered with, or sealed with another secret. Nobody is logged in.
+    // This fails closed, never open.
+    unstable_rethrow(error);
     return null;
   }
+  if (!session) return null;
+  const row = await db().user.findUnique({ where: { id: session.uid }, include: WITH_ACCOUNTS });
+  // A phone that logged in before the session number was raised is logged out.
+  if (!row || row.sessionVersion !== session.sv) return null;
   return toUser(row);
 });
+
+/**
+ * Joining, posting and answering trips show a rider's home city to others. A rider who came in through Google
+ * and has not given one yet is sent to finish their profile first, and brought back afterwards.
+ */
+export function profileFirst(user: User, next: string): void {
+  if (user.needs_profile) redirect(`/welcome?next=${encodeURIComponent(next)}`);
+}
+
+/** Log this phone in, after its email and password have been set or checked. Never throws for a wrong password. */
+async function startSession(email: string, password: string): Promise<LogInResult> {
+  try {
+    await signIn("credentials", { email, password, redirect: false });
+  } catch (error) {
+    if (error instanceof CredentialsSignin) {
+      const resting = /^resting:(\d+)$/.exec(error.code);
+      return resting ? { ok: false, reason: "resting", minutes: Number(resting[1]) } : { ok: false, reason: "no-match" };
+    }
+    throw error;
+  }
+  const row = await db().user.findUnique({ where: { email: normalEmail(email) }, select: { passwordIsTemporary: true } });
+  return { ok: true, mustChangePassword: row?.passwordIsTemporary ?? false };
+}
+
+export async function endSession(): Promise<void> {
+  await signOut({ redirect: false });
+}
 
 // ── signing up and logging in ────────────────────────────────────────────
 
@@ -171,28 +183,27 @@ export async function signUp(input: {
   homeCity: string;
   bike: string | null;
 }): Promise<SignUpResult> {
-  const email = input.email.trim().toLowerCase();
-  if (one<{ id: string }>("SELECT id FROM users WHERE email = ?", email)) {
+  const email = normalEmail(input.email);
+  if (await db().user.findUnique({ where: { email }, select: { id: true } })) {
     return { ok: false, reason: "email-in-use" };
   }
-  const id = newId();
   const hash = await hashPassword(input.password);
   try {
-    run(
-      `INSERT INTO users (id, email, name, password_hash, home_city, bike, created_at) VALUES (?, ?, ?, ?, ?, ?, ?)`,
-      id,
-      email,
-      input.name.trim(),
-      hash,
-      input.homeCity.trim(),
-      input.bike?.trim() || null,
-      now(),
-    );
+    await db().user.create({
+      data: {
+        id: newId(),
+        email,
+        name: input.name.trim(),
+        passwordHash: hash,
+        homeCity: input.homeCity.trim(),
+        bike: input.bike?.trim() || null,
+      },
+    });
   } catch {
     // Two sign-ups with the same email at the same moment: the second one loses.
     return { ok: false, reason: "email-in-use" };
   }
-  await startSession(id);
+  await startSession(email, input.password);
   return { ok: true };
 }
 
@@ -200,35 +211,15 @@ export type LogInResult =
   | { ok: true; mustChangePassword: boolean }
   | { ok: false; reason: "no-match" | "resting"; minutes?: number };
 
-export async function logIn(emailTyped: string, password: string): Promise<LogInResult> {
-  const email = emailTyped.trim().toLowerCase();
-  const since = new Date(Date.now() - REST_MINUTES * 60_000).toISOString();
-  const tries = one<{ n: number; first: string | null }>(
-    "SELECT COUNT(*) AS n, MIN(at) AS first FROM login_attempts WHERE email = ? AND at > ?",
-    email,
-    since,
-  );
-  if (tries && tries.n >= MAX_TRIES) {
-    const first = tries.first ? new Date(tries.first).getTime() : Date.now();
-    const minutes = Math.max(1, Math.ceil((first + REST_MINUTES * 60_000 - Date.now()) / 60_000));
-    return { ok: false, reason: "resting", minutes };
-  }
-
-  const row = one<UserRow>("SELECT * FROM users WHERE email = ?", email);
-  const matches = await passwordMatches(password, row?.password_hash ?? (await decoyHash()));
-  if (!row || !matches) {
-    run("INSERT INTO login_attempts (email, at) VALUES (?, ?)", email, now());
-    return { ok: false, reason: "no-match" };
-  }
-  run("DELETE FROM login_attempts WHERE email = ?", email);
-  await startSession(row.id);
-  return { ok: true, mustChangePassword: row.password_is_temporary === 1 };
+export function logIn(emailTyped: string, password: string): Promise<LogInResult> {
+  return startSession(emailTyped, password);
 }
 
+/** The rider's password matches. False for a rider who has none. Wrong tries here are not counted. */
 export async function checkPassword(userId: string, password: string): Promise<boolean> {
-  const row = one<UserRow>("SELECT * FROM users WHERE id = ?", userId);
-  if (!row) return false;
-  return passwordMatches(password, row.password_hash);
+  const row = await db().user.findUnique({ where: { id: userId }, select: { passwordHash: true } });
+  if (!row?.passwordHash) return false;
+  return passwordMatches(password, row.passwordHash);
 }
 
 /**
@@ -238,54 +229,75 @@ export async function checkPassword(userId: string, password: string): Promise<b
 export async function changePassword(userId: string, present: string, next: string): Promise<boolean> {
   if (!(await checkPassword(userId, present))) return false;
   const hash = await hashPassword(next);
-  const jar = await cookies();
-  const token = jar.get(COOKIE)?.value;
-  together(() => {
-    run("UPDATE users SET password_hash = ?, password_is_temporary = 0 WHERE id = ?", hash, userId);
-    run("DELETE FROM sessions WHERE user_id = ? AND token_hash <> ?", userId, token ? hashToken(token) : "");
+  const row = await together(async (tx) => {
+    const changed = await tx.user.update({
+      where: { id: userId },
+      data: { passwordHash: hash, passwordIsTemporary: false, sessionVersion: { increment: 1 } },
+      select: { email: true },
+    });
+    // The rider has just shown the present password, so wrong tries by anyone else no longer count against them.
+    await tx.loginAttempt.deleteMany({ where: { email: changed.email } });
+    return changed;
   });
+  // Raising the session number logged out every phone, this one too. Log this one back in with the new password.
+  await startSession(row.email, next);
   return true;
 }
 
+/**
+ * A rider who logs in with Google adds a password, to log in without Google too.
+ * Nothing more is asked: logging in through Google has already shown who they are. No phone is logged out.
+ * False if the account already has a password; that is changed with changePassword.
+ */
+export async function addPassword(userId: string, next: string): Promise<boolean> {
+  const hash = await hashPassword(next);
+  const changed = await db().user.updateMany({
+    where: { id: userId, passwordHash: null },
+    data: { passwordHash: hash, passwordIsTemporary: false },
+  });
+  return changed.count > 0;
+}
+
+// ── the editor letting a rider back in ───────────────────────────────────
+
 export interface RiderFound {
   shown_as: string;
-  home_city: string;
+  home_city: string | null;
   bike: string | null;
   since: string;
   trips: number;
   facts: number;
+  uses_google: boolean;
+  has_password: boolean;
 }
 
 export type FindRiderResult = { ok: true; rider: RiderFound } | { ok: false; reason: "no-account" | "is-editor" };
 
-function riderRow(emailTyped: string): UserRow | null {
-  return one<UserRow>("SELECT * FROM users WHERE email = ?", emailTyped.trim().toLowerCase());
+async function riderRow(emailTyped: string): Promise<(UserData & { sessionVersion: number }) | null> {
+  return db().user.findUnique({ where: { email: normalEmail(emailTyped) }, include: WITH_ACCOUNTS });
 }
 
 /** What the editor sees of a rider who says they are locked out, to help check who is asking. */
-export function findRider(emailTyped: string): FindRiderResult {
-  const row = riderRow(emailTyped);
+export async function findRider(emailTyped: string): Promise<FindRiderResult> {
+  const row = await riderRow(emailTyped);
   if (!row) return { ok: false, reason: "no-account" };
   if (editors().includes(row.email)) return { ok: false, reason: "is-editor" };
-  const trips = one<{ n: number }>(
-    `SELECT (SELECT COUNT(*) FROM trips WHERE leader_id = ? AND status <> 'withdrawn')
-          + (SELECT COUNT(*) FROM trip_members WHERE user_id = ? AND status = 'accepted') AS n`,
-    row.id,
-    row.id,
-  );
-  const facts = one<{ n: number }>(
-    "SELECT COUNT(*) AS n FROM fact_reports WHERE user_id = ? AND status = 'applied'",
-    row.id,
-  );
+  const [led, joined, facts] = await Promise.all([
+    db().trip.count({ where: { leaderId: row.id, status: { not: "withdrawn" } } }),
+    db().tripMember.count({ where: { userId: row.id, status: "accepted" } }),
+    db().factReport.count({ where: { userId: row.id, status: "applied" } }),
+  ]);
   return {
     ok: true,
     rider: {
       shown_as: shortName(row.name),
-      home_city: row.home_city,
+      home_city: row.homeCity,
       bike: row.bike,
-      since: row.created_at,
-      trips: trips?.n ?? 0,
-      facts: facts?.n ?? 0,
+      since: asMoment(row.createdAt),
+      trips: led + joined,
+      facts,
+      uses_google: row.accounts.some((a) => a.provider === "google"),
+      has_password: row.passwordHash !== null,
     },
   };
 }
@@ -310,29 +322,35 @@ export type OneTimeResult = { ok: true; password: string } | { ok: false; reason
 /**
  * The editor lets a locked-out rider back in. The password is given back once, to be passed on by hand,
  * and is never kept as typed. The rider is logged out everywhere and any rest after wrong tries is cleared.
+ * For a rider who uses Google, this adds a password to the account; Google still works as well.
  */
 export async function setOneTimePassword(emailTyped: string): Promise<OneTimeResult> {
-  const row = riderRow(emailTyped);
+  const row = await riderRow(emailTyped);
   if (!row) return { ok: false, reason: "no-account" };
   if (editors().includes(row.email)) return { ok: false, reason: "is-editor" };
   const password = oneTimePassword();
   const hash = await hashPassword(password);
-  together(() => {
-    run("UPDATE users SET password_hash = ?, password_is_temporary = 1 WHERE id = ?", hash, row.id);
-    run("DELETE FROM sessions WHERE user_id = ?", row.id);
-    run("DELETE FROM login_attempts WHERE email = ?", row.email);
+  await together(async (tx) => {
+    await tx.user.update({
+      where: { id: row.id },
+      data: { passwordHash: hash, passwordIsTemporary: true, sessionVersion: { increment: 1 } },
+    });
+    await tx.loginAttempt.deleteMany({ where: { email: row.email } });
   });
   return { ok: true, password };
 }
 
-export function updateProfile(userId: string, input: { name: string; homeCity: string; bike: string | null }): void {
-  run(
-    "UPDATE users SET name = ?, home_city = ?, bike = ? WHERE id = ?",
-    input.name.trim(),
-    input.homeCity.trim(),
-    input.bike?.trim() || null,
-    userId,
-  );
+// ── the rider's own details ──────────────────────────────────────────────
+
+/** Also finishes the profile of a rider who came in through Google: that is only a home city being given. */
+export async function updateProfile(
+  userId: string,
+  input: { name: string; homeCity: string; bike: string | null },
+): Promise<void> {
+  await db().user.update({
+    where: { id: userId },
+    data: { name: input.name.trim(), homeCity: input.homeCity.trim(), bike: input.bike?.trim() || null },
+  });
 }
 
 /**
@@ -340,40 +358,53 @@ export function updateProfile(userId: string, input: { name: string; homeCity: s
  * Their trips and requests go. Reports they sent stay, with no name on them.
  */
 export async function deleteAccount(userId: string, handTo: Record<string, string> = {}): Promise<void> {
-  together(() => {
-    // A trip the rider leads goes to the rider they named, if that rider is going on it. Otherwise it is withdrawn.
+  await together(async (tx) => {
+    // A trip the rider leads goes to the rider they named, if that rider is going on it. Otherwise it goes with them.
     for (const [tripId, riderId] of Object.entries(handTo)) {
-      const going = one<{ user_id: string }>(
-        "SELECT user_id FROM trip_members WHERE trip_id = ? AND user_id = ? AND status = 'accepted'",
-        tripId,
-        riderId,
-      );
-      const mine = one<{ id: string }>("SELECT id FROM trips WHERE id = ? AND leader_id = ?", tripId, userId);
+      const going = await tx.tripMember.findFirst({ where: { tripId, userId: riderId, status: "accepted" }, select: { userId: true } });
+      const mine = await tx.trip.findFirst({ where: { id: tripId, leaderId: userId }, select: { id: true } });
       if (!going || !mine) continue;
-      run("UPDATE trips SET leader_id = ? WHERE id = ?", riderId, tripId);
-      run("DELETE FROM trip_members WHERE trip_id = ? AND user_id = ?", tripId, riderId);
+      await tx.trip.update({ where: { id: tripId }, data: { leaderId: riderId } });
+      await tx.tripMember.delete({ where: { tripId_userId: { tripId, userId: riderId } } });
     }
-    run("UPDATE fact_reports SET name = NULL WHERE user_id = ?", userId);
-    run("UPDATE trip_reports SET name = NULL WHERE user_id = ?", userId);
-    run("DELETE FROM users WHERE id = ?", userId);
+    await tx.factReport.updateMany({ where: { userId }, data: { name: null } });
+    await tx.tripReport.updateMany({ where: { userId }, data: { name: null } });
+    // Google links, trips led, requests and flags go with the row.
+    await tx.user.delete({ where: { id: userId } });
   });
-  const jar = await cookies();
-  jar.delete(COOKIE);
+  await endSession();
 }
 
-/** Everything held about one rider, for them to take away. */
-export function everythingAbout(userId: string): Record<string, unknown> {
-  const user = one<UserRow>("SELECT * FROM users WHERE id = ?", userId);
+/** Everything held about one rider, for them to take away. Never a password, scrambled or not. */
+export async function everythingAbout(userId: string): Promise<Record<string, unknown>> {
+  const user = await db().user.findUnique({
+    where: { id: userId },
+    select: {
+      id: true,
+      email: true,
+      name: true,
+      homeCity: true,
+      bike: true,
+      createdAt: true,
+      passwordRemovedAt: true,
+      accounts: { select: { provider: true, providerAccountId: true, createdAt: true } },
+    },
+  });
   if (!user) return {};
-  const { password_hash: _hidden, password_is_temporary: _flag, ...details } = user;
-  void _hidden;
-  void _flag;
+  const { accounts, ...details } = user;
+  const [led, asked, facts, reports] = await Promise.all([
+    db().trip.findMany({ where: { leaderId: userId } }),
+    db().tripMember.findMany({ where: { userId } }),
+    db().factReport.findMany({ where: { userId } }),
+    db().tripReport.findMany({ where: { userId } }),
+  ]);
   return {
-    taken_on: now(),
+    taken_on: new Date().toISOString(),
     your_details: details,
-    trips_you_lead: all("SELECT * FROM trips WHERE leader_id = ?", userId),
-    trips_you_asked_to_join: all("SELECT * FROM trip_members WHERE user_id = ?", userId),
-    facts_you_reported: all("SELECT * FROM fact_reports WHERE user_id = ?", userId),
-    trip_reports_you_sent: all("SELECT * FROM trip_reports WHERE user_id = ?", userId),
+    ways_you_log_in: accounts,
+    trips_you_lead: led,
+    trips_you_asked_to_join: asked,
+    facts_you_reported: facts,
+    trip_reports_you_sent: reports,
   };
 }

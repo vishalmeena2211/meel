@@ -25,11 +25,11 @@ export default async function RequestsPage(props: PageProps<"/trips/[id]/request
   const query = await props.searchParams;
   const user = await currentUser();
   if (!user) redirect(`/login?next=/trips/${id}/requests`);
-  const trip = getTrip(id);
+  const trip = await getTrip(id);
   if (!trip || trip.leader_id !== user.id) notFound();
   const route = await getRoute(trip.route_slug);
 
-  const members = membersOf(trip.id);
+  const members = await membersOf(trip.id);
   const waiting = members.filter((m) => m.status === "asked" || m.status === "waiting-for-place");
   const answered = members.filter((m) => !(m.status === "asked" || m.status === "waiting-for-place"));
   const left = trip.places - trip.going;

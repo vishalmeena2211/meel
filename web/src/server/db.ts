@@ -1,197 +1,70 @@
 import "server-only";
 
-import { mkdirSync } from "node:fs";
-import path from "node:path";
-import { DatabaseSync, type SQLInputValue } from "node:sqlite";
+import { userInfo } from "node:os";
+
+import { PrismaPg } from "@prisma/adapter-pg";
+
+import { Prisma, PrismaClient } from "@/generated/prisma/client";
 
 /*
-  Accounts, trips and reports live in one SQLite file on this server's disk.
-  Nothing here talks to any outside service.
+  Accounts, trips and reports live in Postgres. Routes and facts do not: they are built into the site from ../data.
 
-  Where the file lives: MEEL_DATA_DIR if it is set, otherwise .data/ beside the app.
-  That folder is never committed.
+  Where the database is: DATABASE_URL. On your own machine, if that is not set, the database called meel on the
+  Postgres at localhost:5432, as your own user, which is how a Homebrew Postgres is set up.
 
-  The tables are created here the first time the app runs. To change their shape later,
-  add a numbered step to MIGRATIONS below; never edit a step that has already run.
+  The tables are made by the migrations in prisma/migrations. To change one, edit prisma/schema.prisma and run
+  `pnpm db:migrate --name what-changed`. Never edit a migration that has already run.
 */
 
-const MIGRATIONS: string[] = [
-  `
-  CREATE TABLE users (
-    id            TEXT PRIMARY KEY,
-    email         TEXT NOT NULL UNIQUE,
-    name          TEXT NOT NULL,
-    password_hash TEXT NOT NULL,
-    home_city     TEXT NOT NULL,
-    bike          TEXT,
-    created_at    TEXT NOT NULL
-  );
+export type Client = PrismaClient | Prisma.TransactionClient;
 
-  CREATE TABLE sessions (
-    token_hash TEXT PRIMARY KEY,
-    user_id    TEXT NOT NULL REFERENCES users(id) ON DELETE CASCADE,
-    created_at TEXT NOT NULL,
-    expires_at TEXT NOT NULL
-  );
-  CREATE INDEX sessions_user ON sessions(user_id);
-
-  CREATE TABLE login_attempts (
-    email TEXT NOT NULL,
-    at    TEXT NOT NULL
-  );
-  CREATE INDEX login_attempts_email ON login_attempts(email, at);
-
-  CREATE TABLE trips (
-    id           TEXT PRIMARY KEY,
-    route_slug   TEXT NOT NULL,
-    leader_id    TEXT NOT NULL REFERENCES users(id) ON DELETE CASCADE,
-    leaves_on    TEXT NOT NULL,
-    back_on      TEXT NOT NULL,
-    from_city    TEXT NOT NULL,
-    places       INTEGER NOT NULL,
-    pace         TEXT NOT NULL,
-    who_can_join TEXT NOT NULL,
-    asks         TEXT,
-    chat_link    TEXT,
-    nights       TEXT NOT NULL DEFAULT '[]',
-    is_company   INTEGER NOT NULL DEFAULT 0,
-    status       TEXT NOT NULL,
-    created_at   TEXT NOT NULL
-  );
-  CREATE INDEX trips_route ON trips(route_slug, leaves_on);
-  CREATE INDEX trips_leader ON trips(leader_id);
-
-  CREATE TABLE trip_members (
-    trip_id     TEXT NOT NULL REFERENCES trips(id) ON DELETE CASCADE,
-    user_id     TEXT NOT NULL REFERENCES users(id) ON DELETE CASCADE,
-    status      TEXT NOT NULL,
-    note        TEXT,
-    asked_at    TEXT NOT NULL,
-    answered_at TEXT,
-    PRIMARY KEY (trip_id, user_id)
-  );
-  CREATE INDEX trip_members_user ON trip_members(user_id);
-
-  CREATE TABLE trip_flags (
-    trip_id TEXT NOT NULL REFERENCES trips(id) ON DELETE CASCADE,
-    user_id TEXT NOT NULL REFERENCES users(id) ON DELETE CASCADE,
-    reason  TEXT NOT NULL,
-    note    TEXT,
-    at      TEXT NOT NULL,
-    PRIMARY KEY (trip_id, user_id)
-  );
-
-  CREATE TABLE fact_reports (
-    id          TEXT PRIMARY KEY,
-    route_slug  TEXT NOT NULL,
-    fact_id     TEXT NOT NULL,
-    fact_title  TEXT NOT NULL,
-    kind        TEXT NOT NULL,
-    change_kind TEXT,
-    note        TEXT,
-    seen_on     TEXT NOT NULL,
-    name        TEXT,
-    user_id     TEXT REFERENCES users(id) ON DELETE SET NULL,
-    status      TEXT NOT NULL,
-    created_at  TEXT NOT NULL,
-    decided_at  TEXT
-  );
-  CREATE INDEX fact_reports_route ON fact_reports(route_slug, status);
-
-  CREATE TABLE trip_reports (
-    id         TEXT PRIMARY KEY,
-    route_slug TEXT NOT NULL,
-    month      TEXT NOT NULL,
-    bike       TEXT NOT NULL,
-    body       TEXT NOT NULL,
-    name       TEXT,
-    user_id    TEXT REFERENCES users(id) ON DELETE SET NULL,
-    status     TEXT NOT NULL,
-    created_at TEXT NOT NULL
-  );
-  CREATE INDEX trip_reports_route ON trip_reports(route_slug);
-
-  CREATE TABLE suggestions (
-    id         TEXT PRIMARY KEY,
-    place      TEXT NOT NULL,
-    note       TEXT,
-    name       TEXT,
-    created_at TEXT NOT NULL
-  );
-  `,
-  // Step 2. A password set by the editor for a rider who is locked out is a one-time one.
-  `
-  ALTER TABLE users ADD COLUMN password_is_temporary INTEGER NOT NULL DEFAULT 0;
-  `,
-  // Step 3. When the editor sets a report aside, the reason is kept, so the same report is not puzzled over twice.
-  `
-  ALTER TABLE fact_reports ADD COLUMN editor_note TEXT;
-  ALTER TABLE trip_reports ADD COLUMN editor_note TEXT;
-  `,
-];
-
-type Row = Record<string, SQLInputValue>;
-
-let handle: DatabaseSync | null = null;
-
-function open(): DatabaseSync {
-  if (handle) return handle;
-  const dir = process.env.MEEL_DATA_DIR ?? path.join(process.cwd(), ".data");
-  mkdirSync(dir, { recursive: true });
-  const db = new DatabaseSync(path.join(dir, "meel.sqlite"));
-  db.exec("PRAGMA journal_mode = WAL; PRAGMA foreign_keys = ON; PRAGMA busy_timeout = 4000;");
-  db.exec("CREATE TABLE IF NOT EXISTS schema_steps (step INTEGER PRIMARY KEY, ran_at TEXT NOT NULL)");
-  const done = db.prepare("SELECT COALESCE(MAX(step), 0) AS step FROM schema_steps").get() as { step: number };
-  for (let i = done.step; i < MIGRATIONS.length; i += 1) {
-    const sql = MIGRATIONS[i];
-    if (!sql) continue;
-    db.exec("BEGIN");
-    try {
-      db.exec(sql);
-      db.prepare("INSERT INTO schema_steps (step, ran_at) VALUES (?, ?)").run(i + 1, new Date().toISOString());
-      db.exec("COMMIT");
-    } catch (error) {
-      db.exec("ROLLBACK");
-      throw error;
-    }
+function databaseUrl(): string {
+  const url = process.env.DATABASE_URL;
+  if (url) return url;
+  if (process.env.NODE_ENV === "production") {
+    throw new Error("DATABASE_URL is not set. Meel cannot reach its database. See web/README.md, Settings.");
   }
-  handle = db;
-  return db;
+  return `postgresql://${userInfo().username}@localhost:5432/meel`;
 }
 
-export function all<T>(sql: string, ...params: SQLInputValue[]): T[] {
-  return open().prepare(sql).all(...params) as unknown as T[];
-}
+// One pool of connections for the whole server. In development Next.js reloads this file on every change,
+// so the client is kept on globalThis; otherwise each reload would open a new pool.
+const kept = globalThis as unknown as { meelDb?: PrismaClient };
 
-export function one<T>(sql: string, ...params: SQLInputValue[]): T | null {
-  const row = open().prepare(sql).get(...params) as unknown as T | undefined;
-  return row ?? null;
-}
-
-export function run(sql: string, ...params: SQLInputValue[]): number {
-  return Number(open().prepare(sql).run(...params).changes);
+/** The database. Made on first use, so a build with no database still works and a missing setting fails loudly. */
+export function db(): PrismaClient {
+  kept.meelDb ??= new PrismaClient({ adapter: new PrismaPg({ connectionString: databaseUrl() }) });
+  return kept.meelDb;
 }
 
 /** Several changes that must all happen, or none. */
-export function together<T>(work: () => T): T {
-  const db = open();
-  db.exec("BEGIN IMMEDIATE");
-  try {
-    const result = work();
-    db.exec("COMMIT");
-    return result;
-  } catch (error) {
-    db.exec("ROLLBACK");
-    throw error;
-  }
+export function together<T>(work: (tx: Prisma.TransactionClient) => Promise<T>): Promise<T> {
+  return db().$transaction(work);
+}
+
+/** True when a write failed because the row is already there, as when two riders press the same button at once. */
+export function isDuplicate(error: unknown): boolean {
+  return error instanceof Prisma.PrismaClientKnownRequestError && error.code === "P2002";
 }
 
 export function newId(): string {
   return crypto.randomUUID().replace(/-/g, "").slice(0, 16);
 }
 
-export function now(): string {
-  return new Date().toISOString();
+// Days such as the day a trip leaves are calendar days in India, kept in Postgres as a DATE.
+// Prisma hands a DATE over as midnight in world time on that day, and takes one back the same way.
+
+/** "2027-06-19" to the value Prisma writes into a DATE column. */
+export function asDate(day: string): Date {
+  return new Date(`${day}T00:00:00.000Z`);
 }
 
-export type { Row };
+/** A DATE column's value back to "2027-06-19". */
+export function asDay(value: Date): string {
+  return value.toISOString().slice(0, 10);
+}
+
+/** A moment, such as when a report was sent, as the text the pages already read. */
+export function asMoment(value: Date): string {
+  return value.toISOString();
+}
