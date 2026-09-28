@@ -23,7 +23,7 @@ import {
   IconSignal,
   IconWrench,
 } from "../icons";
-import { Badge, Callout, KeyFacts, KmStone } from "../ui";
+import { Badge, Callout, KeyFacts, KmStone, type KeyFact } from "../ui";
 import { ShowCurrentChip } from "./show-current-chip";
 
 export function SectionIcon({ id, className }: { id: SectionId; className?: string }) {
@@ -103,6 +103,7 @@ export function RouteHead({ view, as: Name = "h2" }: { view: RouteView; as?: "h1
   const h = route.header;
   const unwritten = route.level === "unwritten";
   const mountain = route.terrain === "mountain";
+  const gap = route.fuel.longest_gaps[0];
   return (
     <div className="flex flex-col gap-3 lg:grid lg:grid-cols-[minmax(0,1fr)_320px] lg:items-center lg:gap-5">
       <div className="flex items-center gap-3">
@@ -120,13 +121,19 @@ export function RouteHead({ view, as: Name = "h2" }: { view: RouteView; as?: "h1
       </div>
       {unwritten ? null : (
         <KeyFacts
-          items={[
-            h.usual_days ? { label: "Usual days", value: h.usual_days.value } : null,
-            h.highest_point ? { label: "Highest point", value: metres(h.highest_point.altitude_m) } : null,
-            h.usual_season
-              ? { label: mountain ? "Usually open" : "Best months", value: shortSeason(h.usual_season.value) }
-              : null,
-          ].filter((x): x is { label: string; value: string } => x !== null)}
+          items={(
+            [
+              h.usual_days ? { label: "Usual days", value: h.usual_days.value } : null,
+              h.highest_point ? { label: "Highest point", value: metres(h.highest_point.altitude_m) } : null,
+              h.usual_season
+                ? { label: mountain ? "Usually open" : "Best months", value: shortSeason(h.usual_season.value) }
+                : null,
+              // The question riders ask most. It opens the fuel section, and turns red past 150 km.
+              gap && route.fuel.pump_count > 0
+                ? { label: "No fuel for", value: km(gap.gap_km), href: `/routes/${route.slug}/fuel`, warn: gap.gap_km >= 150 }
+                : null,
+            ] as Array<KeyFact | null>
+          ).filter((x): x is KeyFact => x !== null)}
         />
       )}
     </div>

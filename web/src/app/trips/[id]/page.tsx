@@ -120,6 +120,7 @@ export default async function TripPage(props: PageProps<"/trips/[id]">) {
   const canShare = trip.status === "open" && !over;
   const shareText = tripShareText({ ...trip, route: route.name });
   const tripPath = `/trips/${trip.id}`;
+  const leaderFirst = isLeader && query.posted !== "open";
 
   const details = (
     <>
@@ -175,6 +176,10 @@ export default async function TripPage(props: PageProps<"/trips/[id]">) {
           {route.name}
         </Link>
       </nav>
+
+      {/* A leader looking at their own trip sees the trip first, then what is happening to it (frame 21.5). Straight after
+          publishing, the prompt to share it comes first instead (frame 21.4). */}
+      {leaderFirst ? details : null}
 
       {query.posted === "waiting" || trip.status === "waiting-for-editor" ? (
         <Callout tone="warn" title="Your trip is waiting for the editor">
@@ -288,7 +293,7 @@ export default async function TripPage(props: PageProps<"/trips/[id]">) {
         </section>
       ) : null}
 
-      {details}
+      {leaderFirst ? null : details}
 
       {full && !inside && !over && mine !== "declined" ? (
         <Callout title={`All ${trip.places} places are taken`}>

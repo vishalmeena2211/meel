@@ -31,6 +31,8 @@ export function FactRow({
   open = false,
   hi = false,
   full = false,
+  short = false,
+  mark,
 }: {
   view: FactView;
   /** Show the two buttons on the row itself. */
@@ -39,6 +41,10 @@ export function FactRow({
   hi?: boolean;
   /** Show all of the words, not the first two lines. */
   full?: boolean;
+  /** Leave out the state and the line on where it came from, when the list above has said them once for all. */
+  short?: boolean;
+  /** Said in place of the state, such as "Last fuel for 329 km". */
+  mark?: { words: string; tone: "stale" | "plain" };
 }) {
   return (
     <article
@@ -53,10 +59,16 @@ export function FactRow({
             {view.title}
           </a>
         </h3>
-        {view.aside ? <Badge>{view.aside}</Badge> : <StateBadge state={view.state} />}
+        {mark ? (
+          <Badge tone={mark.tone}>{mark.words}</Badge>
+        ) : view.aside ? (
+          <Badge>{view.aside}</Badge>
+        ) : short ? null : (
+          <StateBadge state={view.state} />
+        )}
       </div>
       {view.short ? <p className={`text-sm leading-5 ${full ? "" : "line-clamp-2"}`}>{view.short}</p> : null}
-      <p className="hint num">{view.line}</p>
+      {short ? null : <p className="hint num">{view.line}</p>}
       {view.rowLink ? (
         <a
           className="btn btn-soft fact-over mt-1.5 self-start"

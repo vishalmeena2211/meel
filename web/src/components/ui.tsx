@@ -164,19 +164,39 @@ export function SourceLine({ source, prefix = "From" }: { source: Source; prefix
   );
 }
 
-export function KeyFacts({ items }: { items: Array<{ label: string; value: string }> }) {
+export interface KeyFact {
+  label: string;
+  value: string;
+  /** The number opens the part of the page it comes from. */
+  href?: string;
+  /** Said in red, as a warning. */
+  warn?: boolean;
+}
+
+/** A row of the numbers riders ask first. Four sit two by two. */
+export function KeyFacts({ items }: { items: KeyFact[] }) {
   if (items.length === 0) return null;
+  const cols = items.length === 4 ? 2 : items.length;
   return (
-    <dl
-      className="card grid overflow-hidden"
-      style={{ gridTemplateColumns: `repeat(${items.length}, minmax(0, 1fr))` }}
-    >
-      {items.map((item, i) => (
-        <div key={item.label} className={cx("px-2.5 py-2", i > 0 && "border-l border-line")}>
-          <dt className="hint text-xs">{item.label}</dt>
-          <dd className="display num text-lg leading-tight">{item.value}</dd>
-        </div>
-      ))}
+    <dl className="card grid overflow-hidden" style={{ gridTemplateColumns: `repeat(${cols}, minmax(0, 1fr))` }}>
+      {items.map((item, i) => {
+        const inner = (
+          <>
+            <dt className="hint text-xs">{item.label}</dt>
+            <dd className={cx("display num text-lg leading-tight", item.warn && "text-stale-fg")}>{item.value}</dd>
+          </>
+        );
+        const edge = cx("px-2.5 py-2", i % cols > 0 && "border-l border-line", i >= cols && "border-t border-line");
+        return item.href ? (
+          <Link key={item.label} href={item.href} className={cx(edge, "block hover:bg-surface-2")}>
+            {inner}
+          </Link>
+        ) : (
+          <div key={item.label} className={edge}>
+            {inner}
+          </div>
+        );
+      })}
     </dl>
   );
 }

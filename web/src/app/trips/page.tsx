@@ -2,10 +2,10 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 import { PageTitle } from "@/components/form";
-import { IconPlus } from "@/components/icons";
+import { IconPlus, IconRight } from "@/components/icons";
 import { Foot } from "@/components/shell";
-import { TripCardView } from "@/components/trips/trip-card";
-import { Empty } from "@/components/ui";
+import { Seats, TripCardView } from "@/components/trips/trip-card";
+import { Badge, Empty } from "@/components/ui";
 import { getIndex } from "@/lib/content";
 import { indiaMonth, plural } from "@/lib/format";
 import { currentUser } from "@/server/auth";
@@ -16,6 +16,14 @@ export const metadata: Metadata = {
   alternates: { canonical: "/trips" },
   description: "Trips posted by riders, with dates, starting city and places left. Read without an account; join with one.",
 };
+
+const STEPS = [
+  "A rider posts a trip: the road, the dates, and the city it starts from.",
+  "Others ask to join. The leader says yes or no.",
+  "Only riders the leader accepts see the chat group link.",
+];
+
+const PLAN_ON = ["manali-leh", "srinagar-leh", "spiti-circuit"];
 
 // The board changes whenever a rider posts or joins, so it is built on each visit.
 export const dynamic = "force-dynamic";
@@ -42,6 +50,8 @@ export default async function TripsPage(props: PageProps<"/trips">) {
       (!from || t.from_city === from) &&
       (!region || routeOf(t.route_slug)?.region === region),
   );
+  // Three roads to plan on, for an empty board. No claim is made that they are the most popular.
+  const planOn = PLAN_ON.map((slug) => routeOf(slug)).filter((r) => r !== undefined);
   const own = trips.filter((t) => !t.is_company);
   const company = trips.filter((t) => t.is_company);
   const filtered = when !== null || from !== null || region !== null;
@@ -70,9 +80,58 @@ export default async function TripsPage(props: PageProps<"/trips">) {
       ) : null}
 
       {all.length === 0 ? (
-        <Empty title="Nobody has posted a trip yet">
-          <span className="text-sm">Planning one? Post it, and riders who want that road will find you.</span>
-        </Empty>
+        <>
+          <Empty title="Nobody has posted a trip yet">
+            <span className="text-sm">Planning one? Post it, and riders who want that road will find you.</span>
+          </Empty>
+
+          {/* Until the first trip, the board says how riding together works (wireframes, frame 18.4). */}
+          <section className="flex flex-col gap-2">
+            <h2 className="label">How riding together works</h2>
+            <ol className="flex flex-col gap-2">
+              {STEPS.map((step, i) => (
+                <li key={step} className="flex items-start gap-2.5 text-[0.9375rem]">
+                  <span className="display grid size-6 shrink-0 place-items-center rounded-full bg-stone text-sm">{i + 1}</span>
+                  {step}
+                </li>
+              ))}
+            </ol>
+          </section>
+
+          <section className="flex flex-col gap-2">
+            <h2 className="label">What a trip looks like</h2>
+            <div className="card flex flex-col gap-0.5 border-dashed px-3 py-2.5 opacity-85" aria-label="An example trip, not a real one">
+              <span className="flex items-start justify-between gap-2">
+                <b className="display text-lg leading-tight">Manali to Leh</b>
+                <Badge tone="unchecked">Example</Badge>
+              </span>
+              <span className="num text-sm">In June · 9 days</span>
+              <span className="hint">From Delhi · led by a rider like you · Relaxed pace</span>
+              <Seats going={3} places={8} />
+            </div>
+          </section>
+
+          {planOn.length > 0 ? (
+            <section className="flex flex-col gap-2">
+              <h2 className="label">Plan on a route</h2>
+              <div className="card flex flex-col">
+                {planOn.map((r) => (
+                  <Link
+                    key={r.slug}
+                    href={`/routes/${r.slug}/trips`}
+                    className="flex min-h-12 items-center gap-2.5 border-b border-line px-3 py-2.5 last:border-b-0 hover:bg-surface-2"
+                  >
+                    <span className="min-w-0 flex-1">
+                      <b className="block text-[0.9375rem] leading-5">{r.name}</b>
+                      <span className="hint">Trips on this route</span>
+                    </span>
+                    <IconRight className="size-4 shrink-0 text-ink-2" />
+                  </Link>
+                ))}
+              </div>
+            </section>
+          ) : null}
+        </>
       ) : trips.length === 0 ? (
         <Empty title="No trips match that">
           <Link className="link text-sm" href="/trips">

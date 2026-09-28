@@ -39,37 +39,39 @@ Audit of the site as it runs on this machine, 28 September 2026, after the searc
 
 ## Next
 
-- [ ] **On a phone, the drawing comes before the routes, and says little.** It takes about 450 px above the first route. With all 50 routes the same grey, it shows roads but no names. Its key lists "Full page" and "Not written yet", though every route is a basic page today.
+All eleven done on 28 September 2026, drawn first (see `docs/wireframe-match-2026-09-28.md`).
+
+- [x] **On a phone, the drawing comes before the routes, and says little.** It takes about 450 px above the first route. With all 50 routes the same grey, it shows roads but no names. Its key lists "Full page" and "Not written yet", though every route is a basic page today.
   *Fix:* put the list first, and open the drawing from a small "See them drawn" link, or put it after the list. Show only the key entries that apply. *Size:* small, plus a drawing change.
 
-- [ ] **"Basic page" is on every card, and the header says "none written in full yet".** When all 50 are basic pages, the badge tells a rider nothing, and the header reads as an apology to a first visitor.
+- [x] **"Basic page" is on every card, and the header says "none written in full yet".** When all 50 are basic pages, the badge tells a rider nothing, and the header reads as an apology to a first visitor.
   *Fix:* show the badge only once routes differ. Make the header "50 routes · 13 regions". The honesty stays, in "How far to trust it" and on each route. *Size:* small.
 
-- [ ] **A route's overview does not show the longest stretch with no fuel.** On a phone, the photo, its credit, the "basic page" note and two links come first. The stretch with no fuel is the question riders ask most, and it is already worked out (`longest_gaps` in the route's data).
+- [x] **A route's overview does not show the longest stretch with no fuel.** On a phone, the photo, its credit, the "basic page" note and two links come first. The stretch with no fuel is the question riders ask most, and it is already worked out (`longest_gaps` in the route's data).
   *Fix:* add "No fuel for 329 km, Keylong to Karu" to the row of three numbers (usual days, highest point, usually open), or as a fourth. *Size:* small, plus a drawing change.
 
-- [ ] **The fuel list says the same thing eleven times.** Every pump card carries the same "NOT YET CHECKED" badge and the same line: "From the open map · read 28 September 2026 · no rider has confirmed it".
+- [x] **The fuel list says the same thing eleven times.** Every pump card carries the same "NOT YET CHECKED" badge and the same line: "From the open map · read 28 September 2026 · no rider has confirmed it".
   *Fix:* say it once above the list: "All 11 are from the open map, read 28 September 2026. No rider has confirmed any yet." Each card then shows its name, its km, and anything that differs. Mark the last pump before the gap: "Last fuel for 329 km". *Size:* medium, plus a drawing change.
 
-- [ ] **Some pump names read badly.** Examples: "Karu Fuel Station., near Karu" (stray full stop), "Indian oil" and "Indian Oil" on the same page, and "Petrol pump, near Manali" with "0 km from Manali."
+- [x] **Some pump names read badly.** Examples: "Karu Fuel Station., near Karu" (stray full stop), "Indian oil" and "Indian Oil" on the same page, and "Petrol pump, near Manali" with "0 km from Manali."
   *Fix:* tidy names in the data tool: trim stray punctuation, spell the fuel companies one way, and drop "0 km from". *Size:* small (data).
 
-- [ ] **A leader's own trip page hides the trip.** The route, dates and leader start about 1,100 px down on a phone. The waiting notice, the chat link note, "Before you leave" and the safety note all come first.
+- [x] **A leader's own trip page hides the trip.** The route, dates and leader start about 1,100 px down on a phone. The waiting notice, the chat link note, "Before you leave" and the safety note all come first.
   *Fix:* trip summary first, then a one-line status, then the rest. *Size:* small, plus a drawing change.
 
-- [ ] **On Tools, the three tools look tappable before a route is picked.** They are only slightly greyed, and tapping one does nothing.
+- [x] **On Tools, the three tools look tappable before a route is picked.** They are only slightly greyed, and tapping one does nothing.
   *Fix:* tapping a tool opens the route list, then goes to that tool for the route picked. Or show them plainly shut, with the words "Pick a route to open". *Size:* small.
 
-- [ ] **Tools says "Work with no network", which is only true for saved routes.** The tools page itself is not kept on the phone.
+- [x] **Tools says "Work with no network", which is only true for saved routes.** The tools page itself is not kept on the phone.
   *Fix:* "Work with no network, on a route you have saved". *Size:* small.
 
-- [ ] **The trips board is empty, and looks it.** A first visitor sees one dashed box.
+- [x] **The trips board is empty, and looks it.** A first visitor sees one dashed box.
   *Fix:* show what a trip looks like, as one card plainly marked "Example". Also add a line on how joining works, and links to the three most-read routes' "Trips on this route". *Size:* medium, plus a drawing change.
 
-- [ ] **On a phone, a route page always shows "I have ridden this · send a trip report" at the foot.** Most visitors will be planning, not back from a ride. The big green bar competes with reading and covers about 90 px of the screen.
+- [x] **On a phone, a route page always shows "I have ridden this · send a trip report" at the foot.** Most visitors will be planning, not back from a ride. The big green bar competes with reading and covers about 90 px of the screen.
   *Fix:* make it a quieter button at the end of the page, and let "Save for the road" be the stronger action for planners. *Size:* small, plus a drawing change.
 
-- [ ] **Fuel check needs one tap too many.** After picking a bike, the rider must press "Check this route".
+- [x] **Fuel check needs one tap too many.** After picking a bike, the rider must press "Check this route".
   *Fix:* show the answer as soon as a bike is picked. *Size:* small.
 
 ## Later

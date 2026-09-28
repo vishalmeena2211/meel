@@ -11,7 +11,7 @@ const BAR = "sticky top-0 z-30 -mx-4 -mt-4 mb-1 flex min-h-14 items-center gap-2
  * The header of one of the four top-level screens, on a phone:
  * the mark, the name of the screen, and who is logged in.
  */
-export function TopHead({ title, sub }: { title: string; sub?: string }) {
+export function TopHead({ title, sub, right }: { title: string; sub?: string; right?: ReactNode }) {
   return (
     <header data-head="top" className={BAR}>
       <Link href="/" aria-label="Meel, all routes" className="shrink-0">
@@ -21,6 +21,7 @@ export function TopHead({ title, sub }: { title: string; sub?: string }) {
         <h1 className="display truncate text-[1.1875rem] leading-6">{title}</h1>
         {sub ? <p className="hint num truncate text-xs leading-4">{sub}</p> : null}
       </div>
+      {right}
       <MeBadge />
     </header>
   );

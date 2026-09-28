@@ -5194,7 +5194,7 @@
    },
    {
     "id": "fuel:node-3289545012",
-    "name": "Petrol Pump",
+    "name": "Petrol pump",
     "brand": "HP",
     "near": "Mumbai",
     "km_from_start": 2.8,
@@ -5227,7 +5227,7 @@
    },
    {
     "id": "fuel:way-353174227",
-    "name": "Hindustan Petroleum Baxis Singh and Co.",
+    "name": "Hindustan Petroleum Baxis Singh and Co",
     "brand": "Hindustan Petroleum",
     "near": "Mumbai",
     "km_from_start": 2.8,
@@ -5283,7 +5283,7 @@
    {
     "id": "fuel:node-5601795153",
     "name": "Mahanagar Gas",
-    "brand": "Reliance",
+    "brand": "Jio-bp",
     "near": "Mumbai",
     "km_from_start": 20.2,
     "lat": 19.06318,
@@ -5359,8 +5359,8 @@
    },
    {
     "id": "fuel:way-826893915",
-    "name": "BP",
-    "brand": "BP",
+    "name": "Bharat Petroleum",
+    "brand": "Bharat Petroleum",
     "near": "Mumbai",
     "km_from_start": 33.5,
     "lat": 19.02121,
@@ -5514,7 +5514,7 @@
    {
     "id": "fuel:way-813473805",
     "name": "Essar Petrol Pump",
-    "brand": "Essar",
+    "brand": "Nayara",
     "near": "Lonavala",
     "km_from_start": 71.8,
     "lat": 18.79089,
@@ -5932,7 +5932,7 @@
    {
     "id": "fuel:way-241110645",
     "name": "Gayakwad Service Station",
-    "brand": "HPCL",
+    "brand": "HP",
     "near": "Pune",
     "km_from_start": 140.5,
     "lat": 18.55787,
@@ -5998,7 +5998,7 @@
    {
     "id": "fuel:way-238842685",
     "name": "Autolines Petrol Pump",
-    "brand": "HPCL",
+    "brand": "HP",
     "near": "Pune",
     "km_from_start": 145.8,
     "lat": 18.53163,
@@ -6064,7 +6064,7 @@
    {
     "id": "fuel:way-218059567",
     "name": "Kulkarni Petrol Pump",
-    "brand": "BPCL",
+    "brand": "Bharat Petroleum",
     "near": "Pune",
     "km_from_start": 150.2,
     "lat": 18.51309,
@@ -6074,8 +6074,8 @@
    },
    {
     "id": "fuel:way-210718058",
-    "name": "BPCL",
-    "brand": "BPCL",
+    "name": "Bharat Petroleum",
+    "brand": "Bharat Petroleum",
     "near": "Pune",
     "km_from_start": 150.4,
     "lat": 18.50783,
@@ -6085,8 +6085,8 @@
    },
    {
     "id": "fuel:way-230078121",
-    "name": "HPCL",
-    "brand": "HPCL",
+    "name": "HP",
+    "brand": "HP",
     "near": "Pune",
     "km_from_start": 151.2,
     "lat": 18.50994,
@@ -6097,7 +6097,7 @@
    {
     "id": "fuel:way-230078114",
     "name": "Gogate Petrol Pump",
-    "brand": "BPCL",
+    "brand": "Bharat Petroleum",
     "near": "Pune",
     "km_from_start": 151.3,
     "lat": 18.51006,
@@ -6108,7 +6108,7 @@
    {
     "id": "fuel:way-230078117",
     "name": "Sure Petroleum",
-    "brand": "IOCL",
+    "brand": "Indian Oil",
     "near": "Pune",
     "km_from_start": 151.4,
     "lat": 18.50984,
@@ -6119,7 +6119,7 @@
    {
     "id": "fuel:way-218697331",
     "name": "Kasat Petroleum",
-    "brand": "BPCL",
+    "brand": "Bharat Petroleum",
     "near": "Pune",
     "km_from_start": 152.4,
     "lat": 18.50453,
@@ -6316,7 +6316,7 @@
    },
    {
     "id": "fuel:way-547362975",
-    "name": "IOC",
+    "name": "Indian Oil",
     "brand": null,
     "near": "Mahabaleshwar",
     "km_from_start": 290.3,
@@ -6383,7 +6383,7 @@
    {
     "id": "fuel:way-293714113",
     "name": "Bharat Petroleum",
-    "brand": "BPCL",
+    "brand": "Bharat Petroleum",
     "near": "Pune",
     "km_from_start": 430.1,
     "lat": 18.27239,
@@ -6393,8 +6393,8 @@
    },
    {
     "id": "fuel:node-2973043894",
-    "name": "Reliance",
-    "brand": "Reliance",
+    "name": "Jio-bp",
+    "brand": "Jio-bp",
     "near": "Pune",
     "km_from_start": 431.6,
     "lat": 18.28573,
@@ -6416,7 +6416,7 @@
    {
     "id": "fuel:node-2973043891",
     "name": "Hindustan Petroleum",
-    "brand": "HPCL",
+    "brand": "HP",
     "near": "Pune",
     "km_from_start": 432.1,
     "lat": 18.28973,
@@ -6460,7 +6460,7 @@
    {
     "id": "fuel:node-2973043893",
     "name": "Rajgad Petroleum",
-    "brand": "HPCL",
+    "brand": "HP",
     "near": "Pune",
     "km_from_start": 436.4,
     "lat": 18.32244,
@@ -6591,8 +6591,8 @@
    },
    {
     "id": "fuel:way-256157771",
-    "name": "HPCL",
-    "brand": "HPCL",
+    "name": "HP",
+    "brand": "HP",
     "near": "Pune",
     "km_from_start": 461.1,
     "lat": 18.50498,
@@ -6701,8 +6701,8 @@
    },
    {
     "id": "fuel:way-210788895",
-    "name": "BPCL",
-    "brand": "BPCL",
+    "name": "Bharat Petroleum",
+    "brand": "Bharat Petroleum",
     "near": "Pune",
     "km_from_start": 473.7,
     "lat": 18.59839,
@@ -6745,8 +6745,8 @@
    },
    {
     "id": "fuel:node-8937735777",
-    "name": "Essar",
-    "brand": "Essar",
+    "name": "Nayara",
+    "brand": "Nayara",
     "near": "Pune",
     "km_from_start": 477.4,
     "lat": 18.62141,
@@ -6778,7 +6778,7 @@
    },
    {
     "id": "fuel:node-13380453522",
-    "name": "Indian oil",
+    "name": "Indian Oil",
     "brand": null,
     "near": "Pune",
     "km_from_start": 481.1,
@@ -6811,7 +6811,7 @@
    },
    {
     "id": "fuel:node-13381090117",
-    "name": "petrol pump",
+    "name": "Petrol pump",
     "brand": "Hindustan Petroleum",
     "near": "Pune",
     "km_from_start": 481.5,

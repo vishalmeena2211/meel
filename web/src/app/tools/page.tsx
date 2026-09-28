@@ -20,7 +20,7 @@ export default async function ToolsPage() {
   }));
   return (
     <div className="mx-auto flex w-full max-w-xl flex-col gap-4">
-      <TopHead title="Tools" sub="Work with no network" />
+      <TopHead title="Tools" sub="Work offline on a saved route" />
       <WideTitle
         title="Tools"
         lede="Three tools that work on any route. They run on your phone, need no account, and send nothing anywhere."

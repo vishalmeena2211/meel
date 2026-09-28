@@ -58,6 +58,19 @@ def slugify(t):
     return re.sub(r"[^a-z0-9]+", "-", str(t).lower()).strip("-")[:60]
 
 
+# One spelling for each fuel company, as the open map spells them several ways.
+COMPANIES = {
+    "indian oil": "Indian Oil", "indianoil": "Indian Oil", "iocl": "Indian Oil", "indian oil corporation": "Indian Oil",
+    "hp": "HP", "hpcl": "HP", "hp petrol pump": "HP petrol pump", "hindustan petroleum": "Hindustan Petroleum",
+    "bharat petroleum": "Bharat Petroleum", "bpcl": "Bharat Petroleum", "bp": "Bharat Petroleum",
+    "nayara": "Nayara", "nayara energy": "Nayara", "essar": "Nayara", "reliance": "Jio-bp", "jio-bp": "Jio-bp", "jio bp": "Jio-bp",
+    "shell": "Shell", "petrol pump": "Petrol pump", "petrol bunk": "Petrol pump", "fuel station": "Fuel station",
+    "filling station": "Filling station", "gas station": "Petrol pump", "ioc": "Indian Oil",
+    "indian oil corporation limited": "Indian Oil", "bharath petroleum": "Bharat Petroleum",
+    "hindustan petroleum corporation limited": "Hindustan Petroleum", "hindustan petrol": "Hindustan Petroleum",
+}
+
+
 def through_tunnels(profile, tunnels):
     """The height grid gives the mountain above a tunnel, not the road inside it: on Manali to Leh it read 4,687 m
     above the Atal Tunnel, which runs at about 3,000 m. Heights inside a tunnel are drawn on a straight line between
@@ -223,14 +236,20 @@ def build(r):
 
     # ── fuel ─────────────────────────────────────────────────────────────
     fuel = {"listed": False, "pumps": [], "pump_count": 0, "stops": 0, "longest_gaps": [], "note": None, "fetched": None}
+
+    def tidy(name):
+        """A pump's name as a rider would say it: no stray full stop, and one spelling for each fuel company."""
+        name = re.sub(r"[\s.,;:]+$", "", re.sub(r"\s+", " ", str(name))).strip()
+        return COMPANIES.get(name.lower(), name)
+
     if fu:
         pumps = []
         for p in fu.get("pumps", []):
-            label = p.get("name") or p.get("brand") or "Petrol pump"
+            label = tidy(p.get("name") or p.get("brand") or "Petrol pump")
             if re.search(r"restaurant|garden|hotel|dhaba|[가-힣]", label, re.I):
                 continue
             near = min(waypoints, key=lambda w: abs(w["km_from_start"] - p["km_from_start"])) if waypoints else None
-            pumps.append({"id": "fuel:" + p["osm"].replace("/", "-"), "name": label, "brand": p.get("brand"),
+            pumps.append({"id": "fuel:" + p["osm"].replace("/", "-"), "name": label, "brand": tidy(p["brand"]) if p.get("brand") else None,
                           "near": near["name"] if near else None, "km_from_start": p["km_from_start"],
                           "lat": p["lat"], "lon": p["lon"], "opening_hours": p.get("opening_hours"),
                           "osm_url": "https://www.openstreetmap.org/" + p["osm"]})

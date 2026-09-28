@@ -223,6 +223,13 @@ button { font: inherit; color: inherit; }
 .keys div:last-child { border-right: 0; }
 .keys span { display: block; font-size: 11.5px; color: var(--ink-2); }
 .keys b { font: 700 18px/1.15 var(--display); font-variant-numeric: tabular-nums; }
+.keys.four { grid-template-columns: repeat(2, 1fr); }
+.keys.four div:nth-child(2) { border-right: 0; }
+.keys.four div:nth-child(-n+2) { border-bottom: 1px solid var(--border); }
+.keys .gapk b { color: var(--stale-fg); }
+.steps-list { display: flex; flex-direction: column; gap: 8px; }
+.steps-list div { display: flex; gap: 10px; align-items: flex-start; font-size: 13px; line-height: 19px; }
+.steps-list i { font: 700 13px/22px var(--display); font-style: normal; width: 22px; height: 22px; border-radius: 50%; background: var(--stone); color: var(--ink); text-align: center; flex: none; }
 
 /* Facts */
 .fact { border: 1px solid var(--border); border-radius: 8px; padding: 10px 12px; display: flex; flex-direction: column; gap: 4px; background: var(--surface); }
@@ -804,6 +811,7 @@ const SCREENS = [
         </div>`);
     },
     notes: [
+      ['On a phone (frames 1 and 2)', ['The list comes first (frame 2). The button at the top right shows the roads drawn instead (frame 1), and turns back into a list button.', 'The key under the drawing lists only the kinds of page that exist. While every route is a basic page, it says so in one line.', 'While no route is written in full, the line under the name says how many regions there are: “50 routes · 13 regions”. A card’s badge shows only once routes differ in how fully they are written.']],
       ['On a laptop (frame 6)', ['The routes come first. The drawing of the roads sits beside the list, at most 360 wide, and stays in view as the list scrolls. Picking a region redraws it.', 'The region chips wrap onto a second line, so every region can be reached with a mouse. On a phone they still scroll sideways.', 'Between a phone and a laptop, on a tablet, the drawing sits above the list, no taller than 360.']],
       ['Layout', ['Three kinds of route card: full page, basic page, not written yet. The dashed card is the unwritten one.', 'A card says how much is behind it: number of facts, and how recently riders confirmed them.', 'Region filters scroll sideways. South, West, Central and the rest sit further along the row.']],
       ['Suggestions (frames 4 and 5)', ['From the second letter, suggestions open under the box: in the header on a laptop, from any page, and on the front page on a phone.', 'Routes whose names match come first, then places along a route, each saying which route it is on. When nothing matches, the routes spelt most like it.', 'Arrow keys move through them, Enter opens the one picked, and Escape closes the list. A screen reader is told how many there are.', 'Nothing is picked until an arrow key is pressed (the shaded rows above). Enter with nothing picked searches every route on a laptop, and on the front page closes the list to show the routes below.', 'Two letters match only at the start of a word, so “sp” brings up Spiti, not Jispa.', 'On the front page, the routes below still narrow as you type.']],
@@ -820,7 +828,7 @@ const SCREENS = [
       ${head('Manali to Leh', 'Full page · 104 facts', { right: shareBtn })}
       ${body(`
         ${routeHead('Manali to Leh', 'NH 3', '427', 'Himachal Pradesh and Ladakh · over Baralacha La and Tanglang La')}
-        <div class="keys"><div><span>Usual days</span><b>2 to 3</b></div><div><span>Highest point</span><b>5,328 m</b></div><div><span>Usually open</span><b>Jun to Oct</b></div></div>`)}
+        <div class="keys four"><div><span>Usual days</span><b>2 to 3</b></div><div><span>Highest point</span><b>5,328 m</b></div><div><span>Usually open</span><b>Jun to Oct</b></div><div class="gapk"><span>No fuel for</span><b>323 km</b></div></div>`)}
       <div class="sheet-scrim"></div>
       <div class="sheet"><span class="grab"></span>
         <h3>Save Manali to Leh to this phone?</h3>
@@ -870,7 +878,7 @@ const SCREENS = [
       ${head('Manali to Leh', 'Full page · 104 facts', { right: `<span class="iconbtn">${ICON.share}</span>` })}
       ${body(`
         ${routeHead('Manali to Leh', 'NH 3', '427', 'Himachal Pradesh and Ladakh · over Baralacha La and Tanglang La')}
-        <div class="keys"><div><span>Usual days</span><b>2 to 3</b></div><div><span>Highest point</span><b>5,328 m</b></div><div><span>Usually open</span><b>Jun to Oct</b></div></div>
+        <div class="keys four"><div><span>Usual days</span><b>2 to 3</b></div><div><span>Highest point</span><b>5,328 m</b></div><div><span>Usually open</span><b>Jun to Oct</b></div><div class="gapk"><span>No fuel for</span><b>323 km</b></div></div>
         <div class="rows">
           <div class="row"><span class="ic">${ICON.flag}</span><span class="grow"><b>Is it open? Where to check today</b><span class="hint">5 official sources · we link, we do not guess</span></span>${chev}</div>
           <div class="row"><span class="ic">${ICON.save}</span><span class="grow"><b>Save for the road</b><span class="hint">Works with no network</span></span>${chev}</div>
@@ -901,10 +909,24 @@ const SCREENS = [
         ${fact({ t: 'Tashi Motor Works, Keylong', d: 'Royal Enfield and KTM. Tubeless and tube punctures. Carries clutch and brake cables.<br><span class="link num">+91 94180 •• 012</span>', state: 'fresh', line: 'Confirmed by Imran S. · 12 June 2027 · 2 days ago' })}
         ${fact({ t: 'Negi Puncture Shop, Jispa', d: 'Punctures only. No spares.<br><span class="link num">+91 98160 •• 447</span>', state: 'ageing', line: 'Confirmed by Kavya M. · 9 November 2026 · 7 months ago' })}
         ${fact({ t: 'Tent mechanic, Sarchu', d: 'Seasonal. Sets up beside the dhabas in summer.', state: 'conflict', line: 'Dev R. found it closed on 10 June 2027 · Anjali T. used it on 8 June 2027' })}
-        ${fact({ t: 'Stanzin Bike Point, Upshi', d: 'General repairs. Welding.<br><span class="link num">+91 94191 •• 380</span>', state: 'stale', line: 'Confirmed by Dev R. · 14 August 2025 · 22 months ago' })}`)}`),
+        ${fact({ t: 'Stanzin Bike Point, Upshi', d: 'General repairs. Welding.<br><span class="link num">+91 94191 •• 380</span>', state: 'stale', line: 'Confirmed by Dev R. · 14 August 2025 · 22 months ago' })}`)}`)
+    + phone('4. Fuel, before any rider has confirmed a pump', `
+      ${head('Manali to Leh', 'Fuel')}
+      ${body(`
+        ${sectionChips('Fuel')}
+        <div class="sec-h"><h3>Fuel</h3><span class="hint">11 pumps</span></div>
+        ${gapStrip}
+        <span class="btn btn-primary btn-block" style="height:46px">${ICON.fuel}Check fuel for your bike</span>
+        <div class="callout"><b>From the open map, not yet checked</b>All 11 pumps were read from OpenStreetMap on 28 September 2026. No rider has confirmed any of them yet.</div>
+        <div class="fact"><div class="fact-h"><b>Indian Oil, near Manali</b></div><div class="fact-src">At the start, in Manali</div></div>
+        <div class="fact"><div class="fact-h"><b>Indian Oil, near Tandi</b></div><div class="fact-src">61 km from Manali</div></div>
+        <div class="fact hi"><div class="fact-h"><b>Petrol pump, near Keylong</b><span class="badge b-stale">Last fuel for 323 km</span></div><div class="fact-src">73 km from Manali</div></div>
+        <div class="fact"><div class="fact-h"><b>Karu Fuel Station, near Karu</b><span class="badge b-plain">First fuel after the gap</span></div><div class="fact-src">396 km from Manali</div></div>`)}`),
     notes: [
       ['Layout', ['The route header is drawn as a kilometre stone: highway number on the yellow cap, distance on the body.', 'The section list shows a warning pill only when something inside is ageing or stale. Most rows stay quiet.', 'In a list, a fact is compact. Tapping it opens the fact with its history and the two buttons.']],
       ['Behaviour', ['“Is it open?” never answers yes or no. It leads to the official sources. See the next screen.', 'The fuel strip is drawn to scale, so the 323 km gap looks as long as it is.', 'Phone numbers are tap-to-call.']],
+      ['The top of a page (frame 1)', ['Four numbers, not three: the fourth is the longest stretch with no fuel, the question riders ask most. It opens the fuel section.']],
+      ['Fuel before any rider has checked (frame 4)', ['When every pump has the same source and the same state, that is said once above the list, not on every card.', 'Each card then says only its name and where it is. The last pump before the longest gap is marked “Last fuel for 323 km”, and the first after it says so.', 'Pump names are tidied: one spelling for each fuel company, no stray full stops, and “At the start, in Manali” instead of “0 km from Manali”.']],
       ['Data', ['Route header: highway number, distance, usual days, highest point, usual season.', 'Per mechanic: name, village, phone, what they can fix, who confirmed, date.', 'Phone numbers are masked in this example.']],
       ['Open question', ['Should a shop’s phone number be shown only with the shop’s agreement? A number in a chat group is private. A number on a website is public.'], 'q'],
     ],
@@ -1058,7 +1080,7 @@ const SCREENS = [
       ${head('Kolli Hills', 'Basic page · 14 facts', { right: `<span class="iconbtn">${ICON.share}</span>` })}
       ${body(`
         ${routeHead('Kolli Hills', 'SH 161', '46', 'Tamil Nadu · 70 hairpin bends from Karavalli to Semmedu')}
-        <div class="keys"><div><span>Usual days</span><b>1</b></div><div><span>Highest point</span><b>1,300 m</b></div><div><span>Best months</span><b>Oct to Feb</b></div></div>
+        <div class="keys four"><div><span>Usual days</span><b>1</b></div><div><span>Highest point</span><b>1,300 m</b></div><div><span>Best months</span><b>Oct to Feb</b></div><div class="gapk"><span>No fuel for</span><b>38 km</b></div></div>
         <div class="callout"><b>This is a basic page</b>No rider has reported on this route yet. What is here comes from official and published sources.</div>
         <div class="lbl">On this page</div>
         <div class="rows">
@@ -1082,8 +1104,9 @@ const SCREENS = [
         <div class="rows">
           <div class="row"><span class="grow"><b>Route, month and bike</b><span class="hint">Needed</span></span></div>
           <div class="row"><span class="grow"><b>Riding hours, fuel stops, mechanics, gear, cost, a video</b><span class="hint">Optional. Fill in what you remember.</span></span></div>
-        </div>`)}
-      <div class="pfoot"><span class="hint">0 trip reports for Kolli Hills so far</span><span class="btn btn-primary btn-block">I have ridden this · send a trip report</span></div>`)
+        </div>
+        <span class="hint">0 trip reports for Kolli Hills so far</span>
+        <span class="btn btn-outline btn-block" style="height:46px">Ridden it? Send a trip report</span>`)}`)
     + phone('3. A fact not yet checked', `
       ${head('Kolli Hills', 'Rules for motorcycles')}
       ${body(`
@@ -1282,8 +1305,7 @@ Name: Rahul N.</span><span class="send">${ICON.send}</span></div>
             ${bike('Royal Enfield Hunter 350', '13 litres')}
             ${bike('Bajaj Dominar 400', '13 litres')}
           </div>
-          <span class="link">My bike is not here</span>`)}
-        <div class="pfoot"><span class="btn btn-primary btn-block">Check this route</span></div>`)
+          <span class="link">My bike is not here</span>`)}`)
       + phone('2. Not enough: carry fuel', `
         ${head('Fuel check', 'Classic 350 · Manali to Leh')}
         ${body(`
@@ -1316,6 +1338,7 @@ Name: Rahul N.</span><span class="send">${ICON.send}</span></div>
           <div class="callout"><b>This assumes every pump is working</b>If Keylong has no fuel, the gap from Tandi is 331 km.</div>`)}`);
     },
     notes: [
+      ['Picking (frame 1)', ['Picking a bike shows the answer at once. There is no button to press first.', 'A bike that is not listed is typed in, with its tank and mileage, and then checked.']],
       ['The sum', ['Safe range = tank × mileage at altitude × four fifths. One fifth of the tank is never counted.', 'If the safe range is shorter than a gap, the shortfall is turned into litres, rounded up, plus one litre spare.', 'Classic 350: 13 × 30 × 0.8 = 312 km. Short by 11 km. Carry 2 litres.']],
       ['Behaviour', ['The result says where the mileage figure came from: riders’ trip reports, or the maker’s figure reduced.', 'It warns when the pump it depends on has not been confirmed lately.', '“My bike is not here” asks for tank size and mileage by hand.', 'All of it runs on the page itself. No account, nothing sent anywhere.']],
       ['Data', ['Per route: the distance between each pair of pumps.', 'Per bike, once for the whole site: tank size and mileage. About ten bikes to start.', 'Mileage at altitude improves as trip reports arrive.']],
@@ -1556,8 +1579,29 @@ Name: Rahul N.</span><span class="send">${ICON.send}</span></div>
       ${body(`
         <div class="empty"><b>Nobody has posted a trip here yet</b><span>Planning one? Post it, and riders who want this road will find you.</span><span class="btn btn-soft">${ICON.plus}Post a trip on this route</span></div>
         <div class="lbl">Trips on roads nearby</div>
-        ${trip('Spiti circuit', '3 to 11 July 2027 · 9 days', 'From Chandigarh', 'Dev R.', 6, 6, 'Steady pace', '<span class="badge b-plain">Full</span>')}`)}`),
+        ${trip('Spiti circuit', '3 to 11 July 2027 · 9 days', 'From Chandigarh', 'Dev R.', 6, 6, 'Steady pace', '<span class="badge b-plain">Full</span>')}`)}`)
+    + phone('4. Nobody has posted a trip yet', `
+      ${head('Trips', '0 coming up', { back: false })}
+      ${body(`
+        <div class="empty"><b>Nobody has posted a trip yet</b><span>Planning one? Post it, and riders who want that road will find you.</span></div>
+        <div class="lbl">How riding together works</div>
+        <div class="steps-list">
+          <div><i>1</i><span>A rider posts a trip: the road, the dates, and the city it starts from.</span></div>
+          <div><i>2</i><span>Others ask to join. The leader says yes or no.</span></div>
+          <div><i>3</i><span>Only riders the leader accepts see the chat group link.</span></div>
+        </div>
+        <div class="lbl">What a trip looks like</div>
+        <div style="opacity:.85">${trip('Manali to Leh', 'In June · 9 days', 'From Delhi', 'a rider like you', 3, 8, 'Relaxed pace', '<span class="badge b-unchecked">Example</span>').replace('class="rcard"', 'class="rcard unwritten"')}</div>
+        <div class="lbl">Plan on a route</div>
+        <div class="rows">
+          <div class="row"><span class="grow"><b>Manali to Leh</b><span class="hint">Trips on this route</span></span>${chev}</div>
+          <div class="row"><span class="grow"><b>Srinagar to Leh</b><span class="hint">Trips on this route</span></span>${chev}</div>
+          <div class="row"><span class="grow"><b>Spiti circuit</b><span class="hint">Trips on this route</span></span>${chev}</div>
+        </div>`)}
+      <div class="pfoot" style="padding-bottom:10px"><span class="btn btn-primary btn-block">${ICON.plus}Post a trip</span></div>
+      ${tabbar('Trips')}`),
     notes: [
+      ['An empty board (frame 4)', ['Until the first trip, the board says how riding together works, in three steps, and shows one trip card plainly marked “Example”.', 'It offers three routes to plan on, each opening its “Trips on this route”. No claim is made that they are the most popular.']],
       ['Layout', ['A trip card answers five things: which road, when, from where, who leads, and how many places are left.', 'The board can be read without an account. An account is asked for only to join or to post.', 'Each route page links to the trips on that route.']],
       ['Behaviour', ['A trip leaves the board the day after it ends and moves to “already ridden”.', 'A full trip stays visible, marked full, so riders can see what is happening.', 'Trips are sorted by leaving date, soonest first.']],
       ['Why a board and not a forum', ['The forum that ran beside the best-known Himalayan travel site was shut by its owner over spam and upkeep.', 'A trip has fixed fields and an end date. There is nothing to reply to in public, so there is little for spam to attach to.', 'Conversation happens in the riders’ own chat group, once they are accepted.']],
@@ -1747,9 +1791,23 @@ Name: Rahul N.</span><span class="send">${ICON.send}</span></div>
           <span class="btn btn-outline btn-block" style="height:46px">Copy the link</span>
           <span class="hint">The chat group link is not in the message. Only riders you accept see it.</span>
           <div class="sec-h"><h3>Manali to Leh</h3><span class="badge b-fresh">7 places left</span></div>
-          <div class="keys"><div><span>Leaves</span><b>19 June</b></div><div><span>Back</span><b>27 June</b></div><div><span>From</span><b>Delhi</b></div></div>`)}`);
+          <div class="keys"><div><span>Leaves</span><b>19 June</b></div><div><span>Back</span><b>27 June</b></div><div><span>From</span><b>Delhi</b></div></div>`)}`)
+      + phone('5. Your trip, waiting for the editor', `
+        ${head('Trip', 'Manali to Leh · June 2027', { right: shareBtn })}
+        ${body(`
+          <div class="sec-h"><h3>Manali to Leh</h3><span class="badge b-unchecked">Waiting for the editor</span></div>
+          <span class="hint">9 days · Relaxed pace</span>
+          <div class="keys"><div><span>Leaves</span><b>19 June</b></div><div><span>Back</span><b>27 June</b></div><div><span>From</span><b>Delhi</b></div></div>
+          <div class="rcard"><div class="r1"><b>Led by you</b></div><span class="hint">On Meel since June 2027 · your first trip</span></div>
+          <div class="callout stone"><b>Your trip is waiting for the editor</b>A rider’s first trip is read before it appears on the board. After that, your trips appear at once.</div>
+          <div class="lbl">Before you leave</div>
+          <div class="rows">
+            <div class="row"><span class="ic">${ICON.fuel}</span><span class="grow"><b>Fuel check for your bike</b><span class="hint">Where you must carry extra fuel</span></span>${chev}</div>
+            <div class="row"><span class="ic">${ICON.bag}</span><span class="grow"><b>Packing list for June</b><span class="hint">0 of 17 ticked</span></span>${chev}</div>
+          </div>`)}`);
     },
     notes: [
+      ['A leader’s own trip (frame 5)', ['The trip itself comes first: road, state, dates, and who leads. Notices about it come after.']],
       ['After publishing (frame 4)', ['The trip page opens with the trip on the board and asks the leader to share it, with the message ready.', 'A rider’s first trip waits for the editor, and a link to it would not open for anyone else yet. So the prompt comes only once the trip is on the board.']],
       ['Layout', ['Three short steps: where and when, how you ride, and a check.', 'The check is the part no chat group can do. It reads the season, the opening dates, the altitude between nights and the fuel gap from the route page.']],
       ['Behaviour', ['The checks warn. They never stop a leader from publishing.', 'Night halts are picked from the route’s own halts, so the altitude check has heights to work with.', 'A leader can have at most 3 open trips at a time.', 'The first trip a new account posts is looked at by the editor before it appears. After that, trips appear at once.']],
@@ -2151,7 +2209,7 @@ Rahul N. · seen 13 June 2027 · sent from the chat app at 9:12 pm</div>
         <div class="credit-line">Photo: Timothy Gonsalves · CC BY-SA 4.0 · <span class="link">Wikimedia Commons</span></div>
         <div class="pscroll">
         ${routeHead('Manali to Leh', 'NH 3', '434', 'Himachal Pradesh and Ladakh · over Baralacha La and Tanglang La')}
-        <div class="keys"><div><span>Usual days</span><b>2 to 3</b></div><div><span>Highest point</span><b>5,328 m</b></div><div><span>Usually open</span><b>Jun to Oct</b></div></div>
+        <div class="keys four"><div><span>Usual days</span><b>2 to 3</b></div><div><span>Highest point</span><b>5,328 m</b></div><div><span>Usually open</span><b>Jun to Oct</b></div><div class="gapk"><span>No fuel for</span><b>323 km</b></div></div>
         <div class="rows"><div class="row"><span class="ic">${ICON.flag}</span><span class="grow"><b>Is it open? Where to check today</b><span class="hint">5 official sources · we link, we do not guess</span></span>${chev}</div></div>
       </div></div>`)
     + phone('2. Where one fact came from', `
@@ -2195,7 +2253,7 @@ Rahul N. · seen 13 June 2027 · sent from the chat app at 9:12 pm</div>
     group: 'Credit where it is due', title: 'Tools, and what Meel is',
     lede: 'Two pages reached from the bottom bar and the foot of the page. The tools work on any route. The about page says who keeps the site and how far to trust it.',
     render: () => phone('1. Tools', `
-      ${head('Tools', 'Work with no network', { back: false })}
+      ${head('Tools', 'Work offline on a saved route', { back: false })}
       ${body(`
         <div class="field"><label>Route</label><div class="input filled pick">Manali to Leh${ICON.down}</div></div>
         <div class="rows">
@@ -2224,7 +2282,7 @@ Rahul N. · seen 13 June 2027 · sent from the chat app at 9:12 pm</div>
         <div class="input">${ICON.search}<span>Search a route or place</span></div>`)}
       ${tabbar('')}`),
     notes: [
-      ['Tools', ['The three tools are the same ones reached from a route page. Here the rider picks the route first.', 'The bike is kept on the phone, so the fuel check is one tap on any route. No account needed.']],
+      ['Tools', ['The three tools are the same ones reached from a route page. Here the rider picks the route first.', 'Before a route is picked, tapping a tool opens the list of routes, and picking one goes straight to that tool for it.', 'They work with no network only on a route saved with “Save for the road”, and the line under the name says so.', 'The bike is kept on the phone, so the fuel check is one tap on any route. No account needed.']],
       ['About', ['Says plainly what the site does not do, and that most facts are unchecked at the start.', 'This is the page a careful rider reads before trusting a fuel gap with their trip.']],
       ['Not found', ['Says what happened and offers the two useful ways on: all routes, or search.']],
     ],

@@ -245,12 +245,15 @@ export function ListPicker({
   value,
   defaultValue = "",
   onValueChange,
+  onDismiss,
   placeholder,
 }: Common & {
   groups: ChoiceGroup[];
   value?: string;
   defaultValue?: string;
   onValueChange?: (value: string) => void;
+  /** The list was closed with nothing picked. */
+  onDismiss?: () => void;
   placeholder: string;
 }) {
   const [own, setOwn] = useState(defaultValue);
@@ -285,6 +288,7 @@ export function ListPicker({
   function close(how: Closed) {
     setOpen(false);
     if (how !== "away") box.current?.focus();
+    if (how !== "picked") onDismiss?.();
   }
 
   function pick(choice: Choice) {

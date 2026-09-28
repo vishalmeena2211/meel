@@ -243,11 +243,24 @@ export default async function RoutePage(props: PageProps<"/routes/[slug]">) {
 
       {unwritten && view.reports === 0 ? <Empty title="Nobody has reported yet" /> : null}
 
-      <Foot>
-        <Link className="btn btn-primary btn-block md:w-auto md:self-start" href={`/report?route=${slug}`}>
-          I have ridden this · send a trip report
-        </Link>
-      </Foot>
+      {/* A trip report is the one thing an unwritten page asks for, so it stays at the foot of the screen. On a written
+          page most readers are planning, so it is asked for at the end, not in a bar over what they are reading. */}
+      {unwritten ? (
+        <Foot>
+          <Link className="btn btn-primary btn-block md:w-auto md:self-start" href={`/report?route=${slug}`}>
+            I have ridden this · send a trip report
+          </Link>
+        </Foot>
+      ) : (
+        <div className="flex flex-col gap-1.5 md:items-start">
+          <p className="hint">
+            {plural(view.reports, "trip report")} for {route.name} so far
+          </p>
+          <Link className="btn btn-outline btn-block md:w-auto" href={`/report?route=${slug}`}>
+            Ridden it? Send a trip report
+          </Link>
+        </div>
+      )}
     </div>
   );
 }

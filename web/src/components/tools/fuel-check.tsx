@@ -106,6 +106,21 @@ export function FuelCheckScreen({
     setPicking(false);
   }
 
+  // A bike on the list with a maker's figure has all the answer needs, so picking it shows the answer at once.
+  function pickBike(b: Bike) {
+    setBikeId(b.id);
+    setKmpl("");
+    const figure = b.claimed_kmpl ? Math.round(b.claimed_kmpl * cut(terrain).factor) : null;
+    if (!figure || !b.tank_litres) return;
+    const value: SavedBike = { bikeId: b.id, name: `${b.maker} ${b.model}`, tank: b.tank_litres, kmpl: figure, from: "maker" };
+    setRaw(JSON.stringify(value));
+    setPicking(false);
+  }
+
+  // The button is needed only when the rider has something to type: their own bike, a bike with no maker's figure,
+  // or a mileage of their own.
+  const typing = own || (chosen !== null && (!makers || kmpl !== ""));
+
   function change() {
     setBikeId(saved?.bikeId ?? null);
     setTank(saved && saved.bikeId === "own" ? String(saved.tank) : "");
@@ -254,10 +269,7 @@ export function FuelCheckScreen({
                 name="bike"
                 value={b.id}
                 checked={bikeId === b.id}
-                onChange={() => {
-                  setBikeId(b.id);
-                  setKmpl("");
-                }}
+                onChange={() => pickBike(b)}
                 className="size-[18px] shrink-0 accent-sign"
               />
               <span className="min-w-0 flex-1 text-[0.9375rem] font-semibold">
@@ -326,11 +338,13 @@ export function FuelCheckScreen({
         </button>
       ) : null}
 
-      <Foot>
-        <button type="button" className="btn btn-primary btn-block" disabled={!ready} onClick={check}>
-          Check this route
-        </button>
-      </Foot>
+      {typing ? (
+        <Foot>
+          <button type="button" className="btn btn-primary btn-block" disabled={!ready} onClick={check}>
+            Check this route
+          </button>
+        </Foot>
+      ) : null}
       <Link className="sr-only" href={back}>
         Back to fuel on {routeName}
       </Link>

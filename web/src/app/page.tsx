@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 
+import { HomeViewButton } from "@/components/home-view-button";
 import { JsonLd } from "@/components/json-ld";
 import { RouteBrowser, type RoadLine } from "@/components/route-browser";
 import { TopHead } from "@/components/shell";
@@ -34,7 +35,8 @@ export default async function HomePage() {
   const [index, routes] = await Promise.all([getIndex(), getAllRoutes()]);
   const full = index.routes.filter((r) => r.level === "full").length;
   const lines: RoadLine[] = routes.map((r) => ({ slug: r.slug, line: thin(r.line) }));
-  const sub = `${index.routes.length} routes · ${full === 0 ? "none written in full yet" : `${full} written in full`}`;
+  // Until a route is written in full, the count of regions says more than "none written in full yet" does.
+  const sub = `${index.routes.length} routes · ${full === 0 ? `${index.regions.length} regions` : `${full} written in full`}`;
 
   return (
     <div className="flex flex-col gap-4">
@@ -55,7 +57,7 @@ export default async function HomePage() {
           },
         }}
       />
-      <TopHead title="Meel" sub={sub} />
+      <TopHead title="Meel" sub={sub} right={<HomeViewButton />} />
       <section className="flex flex-col gap-2">
         <p role="heading" aria-level={1} className="display hidden text-5xl uppercase md:block">
           Every fact has a date

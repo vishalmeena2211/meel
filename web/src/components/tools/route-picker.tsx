@@ -1,6 +1,8 @@
 "use client";
 
 import Link from "next/link";
+import { useRouter } from "next/navigation";
+import { useState } from "react";
 
 import { parseStored, useStored } from "@/lib/use-stored";
 
@@ -24,8 +26,18 @@ export function RoutePicker({ routes }: { routes: Choice[] }) {
   const bike = saved ? `${saved.name} · ${saved.tank} litres` : null;
   const chosen = routes.find((r) => r.slug === slug);
 
+  const router = useRouter();
+  // A tool tapped before a route was picked: it opens once the route is picked.
+  const [waiting, setWaiting] = useState<string | null>(null);
+
   function pick(value: string) {
     setLast(value || null);
+    if (value && waiting) router.push(`/routes/${value}/${waiting}`);
+  }
+
+  function askForRoute(hash: string) {
+    setWaiting(hash);
+    document.getElementById("tool-route")?.click();
   }
 
   const tools = [
@@ -47,6 +59,7 @@ export function RoutePicker({ routes }: { routes: Choice[] }) {
           groups={routeGroups(routes)}
           value={slug}
           onValueChange={pick}
+          onDismiss={() => setWaiting(null)}
           placeholder="Pick a route"
         />
       </div>
@@ -72,15 +85,19 @@ export function RoutePicker({ routes }: { routes: Choice[] }) {
                   {inner}
                 </Link>
               ) : (
-                <span className="flex min-h-12 items-center gap-2.5 px-3 py-2.5 text-ink-2" aria-disabled="true">
+                <button
+                  type="button"
+                  onClick={() => askForRoute(hash)}
+                  className="flex min-h-12 w-full items-center gap-2.5 px-3 py-2.5 text-left hover:bg-surface-2"
+                >
                   {inner}
-                </span>
+                </button>
               )}
             </li>
           );
         })}
       </ul>
-      {!chosen ? <p className="hint">Pick a route first. The tools use that road’s own fuel gaps and heights.</p> : null}
+      {!chosen ? <p className="hint">Each tool works on one road’s own fuel gaps and heights. Tapping one asks which road.</p> : null}
 
       {bike ? (
         <div className="rounded-lg border border-line bg-surface-2 px-3 py-2.5 text-sm">

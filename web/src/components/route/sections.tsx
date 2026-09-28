@@ -209,6 +209,14 @@ export function OpenSection({ view }: { view: RouteView }) {
 export function FuelSection({ view }: { view: RouteView }) {
   const { route, views, start, end } = view;
   const distance = route.header.distance_km ?? 0;
+  // When every pump comes from the same source, read the same day, and no rider has said anything different about
+  // any of them, that is said once above the list and each card says only where it is.
+  const first = views.fuel[0];
+  const same = views.fuel.length > 1 && views.fuel.every((v) => v.state === first?.state && v.line === first?.line);
+  // The last pump before the longest stretch with no fuel, and the first after it, are marked. A short gap is not.
+  const longest = route.fuel.longest_gaps[0];
+  const gap = longest && longest.gap_km >= 60 ? longest : undefined;
+  const pumpKm = new Map(route.fuel.pumps.map((p) => [p.id, p.km_from_start]));
   return (
     <Section id="fuel">
       <SectionHeading
@@ -229,11 +237,35 @@ export function FuelSection({ view }: { view: RouteView }) {
           Check fuel for your bike
         </Link>
       ) : null}
+      {route.fuel.listed && same && first ? (
+        <Callout title={first.state === "unchecked" ? "From the open map, not yet checked" : "Every pump here was checked the same way"}>
+          {first.state === "unchecked"
+            ? `All ${plural(views.fuel.length, "pump")} were read from OpenStreetMap on ${sayDate(route.fuel.fetched ?? route.built)}. No rider has confirmed any of them yet.`
+            : first.line}
+        </Callout>
+      ) : null}
       {route.fuel.listed ? (
         <ShowMore first={8} noun="pumps" className={GRID}>
-          {views.fuel.map((v) => (
-            <FactRow key={v.slug} view={v} />
-          ))}
+          {views.fuel.map((v) => {
+            const at = pumpKm.get(v.id);
+            const last = gap && at !== undefined && Math.abs(at - gap.from_km) < 0.05 && gap.from_is === "pump";
+            const next = gap && at !== undefined && Math.abs(at - gap.to_km) < 0.05 && gap.to_is === "pump";
+            return (
+              <FactRow
+                key={v.slug}
+                view={v}
+                short={same}
+                hi={Boolean(last)}
+                mark={
+                  last
+                    ? { words: `Last fuel for ${km(gap.gap_km)}`, tone: "stale" }
+                    : next
+                      ? { words: "First fuel after the gap", tone: "plain" }
+                      : undefined
+                }
+              />
+            );
+          })}
         </ShowMore>
       ) : route.fuel.pump_count > 0 ? (
         <p className="hint">

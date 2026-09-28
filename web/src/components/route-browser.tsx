@@ -5,6 +5,7 @@ import Link from "next/link";
 import { useMemo, useState, useSyncExternalStore } from "react";
 
 import { km, plural } from "@/lib/format";
+import { useHomeView } from "@/lib/home-view";
 import { spelledLike } from "@/lib/search";
 import type { Region, RouteSummary } from "@/lib/types";
 
@@ -24,7 +25,7 @@ function LevelBadge({ level }: { level: RouteSummary["level"] }) {
   return <Badge tone="unchecked">Not written yet</Badge>;
 }
 
-function RouteCard({ route, confirmed }: { route: RouteSummary; confirmed: number }) {
+function RouteCard({ route, confirmed, showLevel }: { route: RouteSummary; confirmed: number; showLevel: boolean }) {
   const unwritten = route.level === "unwritten";
   return (
     <Link
@@ -46,7 +47,7 @@ function RouteCard({ route, confirmed }: { route: RouteSummary; confirmed: numbe
       <span className="flex min-w-0 flex-1 flex-col gap-1 px-3 py-2.5">
         <span className="flex items-start justify-between gap-2">
           <b className="display text-lg leading-tight">{route.name}</b>
-          <LevelBadge level={route.level} />
+          {showLevel ? <LevelBadge level={route.level} /> : null}
         </span>
         <span className="hint line-clamp-2">{route.places.join(", ")}</span>
         <span className="hint num">
@@ -67,6 +68,12 @@ const STROKE: Record<RouteSummary["level"], { colour: string; dash?: string; wid
   unwritten: { colour: "var(--color-rule)", dash: "4 4", width: 2 },
 };
 
+const KEY: Record<RouteSummary["level"], { name: string; one: string; line: string }> = {
+  full: { name: "Full page", one: "a full page", line: "h-0.5 w-5 bg-sign" },
+  basic: { name: "Basic page", one: "a basic page", line: "h-0.5 w-5 bg-ink-2" },
+  unwritten: { name: "Not written yet", one: "a route not written yet", line: "w-5 border-t-2 border-dashed border-rule" },
+};
+
 /**
  * Every route, drawn as a road. There is no map beneath and no border is drawn:
  * a road has no border, and a border drawn wrongly is against Indian law.
@@ -75,6 +82,9 @@ const STROKE: Record<RouteSummary["level"], { colour: string; dash?: string; wid
 function Roads({ routes, lines, named }: { routes: RouteSummary[]; lines: RoadLine[]; named: boolean }) {
   const mine = lines.filter((l) => routes.some((r) => r.slug === l.slug) && l.line.length > 1);
   if (mine.length === 0) return null;
+  const kinds = (["full", "basic", "unwritten"] as const).filter((k) =>
+    mine.some((l) => routes.find((r) => r.slug === l.slug)?.level === k),
+  );
   const W = 343;
   const H = 214;
   const pad = 18;
@@ -143,18 +153,17 @@ function Roads({ routes, lines, named }: { routes: RouteSummary[]; lines: RoadLi
         </text>
       </svg>
       <figcaption className="hint flex flex-wrap items-center gap-x-3 gap-y-1 border-t border-line px-3 py-1.5 text-xs">
-        <span className="flex items-center gap-1.5">
-          <i className="h-0.5 w-5 bg-sign" />
-          Full page
-        </span>
-        <span className="flex items-center gap-1.5">
-          <i className="h-0.5 w-5 bg-ink-2" />
-          Basic page
-        </span>
-        <span className="flex items-center gap-1.5">
-          <i className="w-5 border-t-2 border-dashed border-rule" />
-          Not written yet
-        </span>
+        {/* The key lists only the kinds of page drawn. One kind is said in words. */}
+        {kinds.length === 1 ? (
+          <span>Every road drawn here is {KEY[kinds[0] ?? "basic"].one}.</span>
+        ) : (
+          kinds.map((k) => (
+            <span key={k} className="flex items-center gap-1.5">
+              <i className={KEY[k].line} />
+              {KEY[k].name}
+            </span>
+          ))
+        )}
         <span className="basis-full">
           Roads only, with nothing beneath. Drawn from{" "}
           <a className="link font-medium" href="https://www.openstreetmap.org/copyright" target="_blank" rel="noreferrer noopener">
@@ -189,6 +198,10 @@ export function RouteBrowser({
   confirmed: Record<string, number>;
 }) {
   const [region, setRegion] = useState<string>("all");
+  // On a phone, the list or the drawing, chosen in the header. From a tablet up, both.
+  const view = useHomeView();
+  // A card's badge says how fully a route is written. While every route is written the same way, it says nothing.
+  const showLevel = new Set(routes.map((r) => r.level)).size > 1;
   // A search typed elsewhere on the site arrives in the address. What is typed here takes over from it.
   const asked = useSyncExternalStore(onAddress, askedInAddress, () => "");
   const [typed, setTyped] = useState<string | null>(null);
@@ -239,7 +252,7 @@ export function RouteBrowser({
               <h2 className="label">Routes with names like it</h2>
               <div className="grid gap-2 md:grid-cols-2">
                 {like.map((r) => (
-                  <RouteCard key={r.slug} route={r} confirmed={confirmed[r.slug] ?? 0} />
+                  <RouteCard key={r.slug} route={r} confirmed={confirmed[r.slug] ?? 0} showLevel={showLevel} />
                 ))}
               </div>
             </section>
@@ -267,11 +280,11 @@ export function RouteBrowser({
 
           {/* On a laptop the routes come first, with the drawing beside them, in view as the list scrolls. */}
           <div className="flex flex-col gap-4 lg:grid lg:grid-cols-[minmax(0,1fr)_360px] lg:items-start lg:gap-6">
-            <div className="lg:sticky lg:top-20 lg:order-2">
+            <div className={`lg:sticky lg:top-20 lg:order-2 ${view === "map" ? "" : "hidden md:block"}`}>
               <Roads routes={shown} lines={lines} named={region !== "all" || shown.length <= 8} />
             </div>
 
-            <div className="flex flex-col gap-4 lg:order-1">
+            <div className={`flex-col gap-4 lg:order-1 ${view === "map" ? "hidden md:flex" : "flex"}`}>
               {groups.map((g) => (
                 <section key={g.id} aria-labelledby={`region-${g.id}`} className="flex flex-col gap-2">
                   <div className="flex items-baseline justify-between">
@@ -282,7 +295,7 @@ export function RouteBrowser({
                   </div>
                   <div className="grid gap-2 md:grid-cols-2">
                     {g.routes.map((r) => (
-                      <RouteCard key={r.slug} route={r} confirmed={confirmed[r.slug] ?? 0} />
+                      <RouteCard key={r.slug} route={r} confirmed={confirmed[r.slug] ?? 0} showLevel={showLevel} />
                     ))}
                   </div>
                 </section>

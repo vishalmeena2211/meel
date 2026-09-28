@@ -330,3 +330,25 @@ Not checked: a real phone's screen reader. The parts carry the labels a screen r
 How it was checked: on the site running on this machine, in a real browser, at phone and laptop sizes, with 15 checks. The six routes whose data changed most all open.
 
 The data behind it: a new step in `data/tools/build_computed.py` asks the open map for road tunnels of 250 m or more on each route's line, and `assemble.py` draws the height straight through them. It found tunnels on 13 of the 50 routes. The heights changed on six, where a height sample fell inside a tunnel: Manali to Leh and the Spiti circuit (Atal Tunnel), Srinagar to Leh and the Kashmir valley (Z-Morh Tunnel), Jalori and Tirthan (Aut Tunnel), and a 0.4 km tunnel on the Goa coast. No route's highest point changed. Three office lines that read like news were reworded in `data/research`.
+
+---
+
+## The eleven "Next" items from the screen audit, checked the same day
+
+**Asked by:** Vishal: "do the next items too".
+**Drawn first:** new frames 4.4 (fuel, before any rider has confirmed a pump), 18.4 (an empty trips board) and 21.5 (a leader's own trip, waiting for the editor). Frames 4.1 and 8.1 gained a fourth number, "No fuel for". Frame 8.2 asks for a trip report at the end, not in a fixed bar. Frame 13.1 lost its button, and frame 29.1 its old line. Notes were added to screens 2, 4, 13, 18, 21 and 29. The gallery now has 104 frames.
+
+| Frame | What it shows | First check | What differed | Now |
+|---|---|---|---|---|
+| 2.1, 2.2 | On a phone, the list first; the header button shows the roads drawn, and back | Matches | Until now the phone showed the drawing above the list, with no button. The header now says "50 routes · 13 regions". Cards carry no badge while every route is a basic page, and the key says so in one line | [x] |
+| 4.1, 8.1 | Four numbers, the fourth "No fuel for 329 km" in red, opening the fuel section | Matches | | [x] |
+| 4.4 | Fuel before any rider has confirmed a pump: said once, short cards, "Last fuel for 329 km" and "First fuel after the gap" | Close | The drawing named pumps "Indian Oil, Tandi"; the site says "Indian Oil, near Tandi", as the position is only near a place | [x] Drawing changed |
+| 8.2 | A written page asks for a trip report at its end | Matches | A route not written yet still keeps the bar at the foot, as drawn in screen 6 | [x] |
+| 13.1 | Picking a bike shows the answer at once | Matches | A bike with no maker's mileage asks for one, and keeps the button, as the notes say | [x] |
+| 18.4 | An empty board: three steps, an example trip, three routes to plan on | Matches | | [x] |
+| 21.5 | A leader's own trip: the trip first, the notice after | Matches | Straight after publishing, the prompt to share still comes first, as in 21.4 | [x] |
+| 29.1 | Tools: "Work offline on a saved route"; tapping a tool before a route asks for the route | Matches | Closing the list without picking forgets the tool | [x] |
+
+Pump names were tidied in `data/tools/assemble.py`: stray full stops removed, one spelling for each fuel company. Pump ids did not change, so reports already filed still match. The first pump says "At the start, in Manali".
+
+How it was checked: 35 checks in a real browser, on the site running on this machine, at phone and laptop sizes, with test accounts deleted afterwards. One check at first picked Royal Enfield Classic 350, which has no maker's mileage, so the page rightly asked for one. It was run again with the Himalayan 450.

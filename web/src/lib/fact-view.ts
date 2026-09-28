@@ -277,7 +277,13 @@ export function factViews(route: Route, confirmations: Confirmation[], kinds: Fa
 
   const fuel = route.fuel.listed
     ? route.fuel.pumps.map((p) => {
-        const where = `${km(p.km_from_start)} from ${start}`;
+        const total = route.header.distance_km ?? 0;
+        const where =
+          p.km_from_start < 0.5
+            ? `At the start, in ${start}`
+            : total > 0 && total - p.km_from_start < 0.5
+              ? "At the end of the route"
+              : `${km(p.km_from_start)} from ${start}`;
         const brand = p.brand && p.brand !== p.name ? `${p.brand}. ` : "";
         const hours = p.opening_hours ? ` Hours on the map: ${p.opening_hours}.` : "";
         return make({
