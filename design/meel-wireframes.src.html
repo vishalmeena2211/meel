@@ -620,8 +620,6 @@ const SCREENS = [
           ${regionChips('Himachal')}
           <div class="map">
             <svg viewBox="0 0 366 270" preserveAspectRatio="none" aria-hidden="true">
-              <path d="M0 210 C60 180 90 200 140 170 S230 120 366 140" fill="none" stroke="var(--border)" stroke-width="18"/>
-              <path d="M0 80 C80 70 120 110 200 80 S300 40 366 60" fill="none" stroke="var(--border)" stroke-width="12"/>
               <path d="M96 236 C110 200 120 180 138 160 S170 120 196 96 S240 60 286 40" fill="none" stroke="var(--sign)" stroke-width="4" stroke-linecap="round"/>
               <path d="M60 250 C90 240 130 236 170 214 S230 170 262 150 S220 120 196 96" fill="none" stroke="var(--ink)" stroke-width="3" stroke-dasharray="1 7" stroke-linecap="round"/>
               <path d="M30 150 C50 140 70 150 92 160" fill="none" stroke="var(--rule)" stroke-width="3" stroke-dasharray="6 6" stroke-linecap="round"/>
@@ -629,7 +627,7 @@ const SCREENS = [
             <div class="pin full" style="left:58%;top:30%"><span>Manali to Leh</span><i></i></div>
             <div class="pin" style="left:62%;top:74%"><span>Spiti circuit</span><i></i></div>
             <div class="pin none" style="left:20%;top:52%"><span>Sach Pass</span><i></i></div>
-            <span class="credit">Map data: OpenStreetMap contributors</span>
+            <span class="credit">Roads only, with nothing beneath · OpenStreetMap contributors</span>
           </div>
           <div class="legend"><span><i class="l-full"></i>Full page</span><span><i class="l-basic"></i>Basic page</span><span><i class="l-none"></i>Not written yet</span></div>
           <div class="sec-h"><h3>Himachal</h3><span class="hint">6 routes</span></div>
@@ -653,16 +651,15 @@ const SCREENS = [
         ${body(`
           <div class="input filled focus">${ICON.search}<span>Valley of Flowers</span></div>
           <div class="empty"><b>No route called “Valley of Flowers” yet</b><span>Meel has 50 routes so far. Tell us about this one and it goes on the list.</span><span class="btn btn-soft">${ICON.plus}Suggest this place</span></div>
-          <div class="lbl">Nearby routes that are here</div>
-          ${card('Char Dham', basic, 'Yamunotri, Gangotri, Kedarnath, Badrinath · 24 facts')}
-          ${card('Chopta and Tungnath', basic, '18 facts')}`)}
+          <div class="lbl">Routes with names like it</div>
+          ${card('Kinnaur: Sangla, Chitkul and Kalpa', basic, 'Rampur, Karcham, Sangla, Chitkul · 39 facts')}`)}
         ${tabbar('Routes')}`);
     },
     notes: [
       ['Layout', ['Three kinds of route card: full page, basic page, not written yet. The dashed card is the unwritten one.', 'A card says how much is behind it: number of facts, and how recently riders confirmed them.', 'Region filters scroll sideways. South, West, Central and the rest sit further along the row.']],
-      ['Behaviour', ['Search looks at route names and at the places inside each route.', 'No match is not an error. It offers to take the suggestion and shows the nearest routes that exist.', '“Suggest this place” opens the chat app with a message ready, the same way the fact buttons do.']],
+      ['Behaviour', ['Search looks at route names and at the places inside each route.', 'No match is not an error. It offers to take the suggestion and shows routes whose names are spelt like what was typed.', 'The site cannot know where a place it has never heard of lies, so it does not claim to show routes near it.', '“Suggest this place” opens a short form. It goes to the editor’s inbox.']],
       ['Data', ['Per route: name, region, the places along it, a line on the map, page level, number of facts.', '“Confirmed this week” is counted when the site is rebuilt, not live.']],
-      ['Open question', ['The map must show India’s borders the way Indian law requires. Which map source does that needs checking before launch. The frames deliberately show a region, never a country outline.'], 'q'],
+      ['Decided, 28 September 2026', ['The roads are drawn alone, with no map beneath and no border. A road has no border, and a border drawn wrongly is against Indian law.', 'A map beneath the roads can be added later, from a source that draws India’s borders as the law requires.']],
     ],
   },
   /* no network */
@@ -702,15 +699,15 @@ const SCREENS = [
       <div class="sheet-scrim"></div>
       <div class="sheet"><span class="grab"></span>
         <h3>Karu petrol pump is still working?</h3>
-        <p>You have no network. Your chat app will hold the message and send it by itself when the signal returns.</p>
+        <p>You have no network. Your report is kept on this phone and sent by itself when the signal returns.</p>
         <div class="field"><label>When were you there?</label>
           <div class="radio-list"><div class="on"><span class="radio"></span>Today, 18 June</div><div><span class="radio"></span>Yesterday, 17 June</div><div><span class="radio"></span>Another day</div></div></div>
-        <div class="callout"><b>The day you saw it is what counts</b>The message carries 18 June, even if it is sent two days from now.</div>
-        <span class="btn btn-primary btn-block" style="height:46px">${ICON.send}Open chat app</span>
+        <div class="callout"><b>The day you saw it is what counts</b>The report carries 18 June, even if it is sent two days from now.</div>
+        <span class="btn btn-primary btn-block" style="height:46px">${ICON.send}Keep it and send later</span>
       </div>`, '2:16'),
     notes: [
       ['Why this screen exists', ['Between Darcha and Upshi there is almost no signal. That is where a rider most needs the page.', 'A site that only works with a network fails on the road it describes.']],
-      ['Behaviour', ['Saving is the rider’s choice, one route at a time. Nothing is saved without asking.', 'The dark bar says when the saved copy was made. Ages are still worked out from today’s date, so a fact keeps ageing while the phone is offline.', 'With no network, “Send without a chat app” is hidden. The chat app can hold a message for later. A web form cannot.']],
+      ['Behaviour', ['Saving is the rider’s choice, one route at a time. Nothing is saved without asking.', 'The dark bar says when the saved copy was made. Ages are still worked out from today’s date, so a fact keeps ageing while the phone is offline.', 'With no network, the report is kept on the phone, with the day the rider saw it, and sent by itself when the signal returns. The chat app is not offered, since it too would wait.']],
       ['Data', ['Nothing new. The saved copy is the same facts, stored on the phone.', 'Videos and the map are left out to keep the saved copy small.']],
       ['Open question', ['Can the map be saved for one route? It would make the saved copy many times larger. Proposed: not in the first version.'], 'q'],
     ],
@@ -968,13 +965,11 @@ const SCREENS = [
       ${body(`
         ${routeHead('Sach Pass', '—', '?', 'Himachal Pradesh · Pangi valley, Killar to Kishtwar')}
         <div class="callout stone"><b>2 riders have sent a trip report</b>The page is being written. It moves up the list with each report.</div>
-        <div class="sec-h"><h3>What riders told us</h3><span class="hint">Not yet checked</span></div>
-        ${fact({ t: 'Rode it in July on an Xpulse 200', d: 'Bairagarh to Killar took 7 hours.', state: 'unchecked', line: 'Trip report from Dev R. · July 2026' })}
-        ${fact({ t: 'Rode it in September on a Himalayan 411', d: 'Carried 5 litres of extra fuel and used it.', state: 'unchecked', line: 'Trip report from Kavya M. · September 2026' })}`)}
+        <div class="callout info"><b>Ridden it?</b>Your trip report is how this page starts. Route, month and bike are enough. Everything else is optional.</div>`)}
       <div class="pfoot"><span class="btn btn-primary btn-block">I have ridden this · send a trip report</span></div>`),
     notes: [
       ['Empty is not an error', ['An unwritten page is an invitation, not a dead end.', 'It shows nearby routes that do have pages, so the visit is not wasted.', 'The count of reports received tells riders their report will not be the only one.']],
-      ['Behaviour', ['Reports for unwritten routes decide which page gets written next.', 'A route’s first reports are shown as received, marked “not yet checked”, until the editor builds the page.']],
+      ['Behaviour', ['Reports for unwritten routes decide which page gets written next.', 'A route’s first reports are counted, not shown. Anyone can send one with no account, so their words wait until the editor has read them.']],
       ['Data', ['An unwritten route needs only: name, region, and the places along it.', 'The distance and highway number stay blank until someone has checked them.']],
     ],
   },
@@ -1042,12 +1037,12 @@ const SCREENS = [
       <div class="sheet-scrim"></div>
       <div class="sheet"><span class="grab"></span>
         <h3>Keylong petrol pump is still working?</h3>
-        <p>This opens your chat app with a message ready to send to Meel. Nothing is sent until you press send there.</p>
+        <p>You are saying you saw this yourself. It goes to the person who keeps Meel, and the fact’s date changes once they have read it.</p>
         <div class="field"><label>When were you there?</label>
           <div class="radio-list"><div class="on"><span class="radio"></span>Today, 14 June</div><div><span class="radio"></span>Yesterday, 13 June</div><div><span class="radio"></span>Another day</div></div></div>
         <div class="field"><label>Your name <em>optional, shown beside the fact</em></label><div class="input filled">Rahul N.</div></div>
-        <span class="btn btn-primary btn-block" style="height:46px">${ICON.send}Open chat app</span>
-        <span class="link" style="align-self:center">Send without a chat app</span>
+        <span class="btn btn-primary btn-block" style="height:46px">${ICON.send}Send to Meel</span>
+        <span class="link" style="align-self:center">Send from my chat app instead</span>
       </div>`)
     + phone('2. The message, ready to send', `
       <div class="chat">
@@ -1069,8 +1064,8 @@ Name: Rahul N.</span><span class="send">${ICON.send}</span></div>
           <div><span>11 Oct 2026</span><b>Confirmed working by Dev R.</b></div>
         </div>`)}`, '9:40'),
     notes: [
-      ['Behaviour', ['The sheet says plainly what will happen: the chat app opens, and nothing is sent until the rider sends it.', 'The site cannot know whether the message was sent. So when the rider returns, the page does not say “sent” or “thank you”. The fact changes only after the editor has read the message.', 'The name is optional. With no name, the fact reads “confirmed by a rider”.']],
-      ['Way forward without a chat app', ['“Send without a chat app” opens a short web form with the same three fields.', 'Both paths reach the same inbox.']],
+      ['Behaviour', ['The sheet says plainly what will happen: the report goes to the person who keeps Meel. The fact changes only after they have read it.', 'The name is optional. With no name, the fact reads “confirmed by a rider”.']],
+      ['Decided, 28 September 2026', ['“Send to Meel” comes first. The site has its own inbox, so a report sent from the page needs no typing by the editor.', '“Send from my chat app instead” is offered only once the site has a chat number. It opens the chat app with the message ready, as frame 2 shows.']],
       ['Data', ['Per confirmation: fact, date seen, name if given.', 'The editor updates the fact by hand. At hobby scale that is a minute per message.']],
       ['Open question', ['Meel’s number is public. It should be a separate number, not a personal one. Which number?'], 'q'],
     ],
@@ -1094,13 +1089,13 @@ Name: Rahul N.</span><span class="send">${ICON.send}</span></div>
         </div>
         <div class="field"><label>Tell us what you saw</label><div class="input filled" style="height:auto;padding:10px 12px;line-height:19px">Moved about 2 km towards Leh, next to the petrol pump.</div></div>
         <div class="field"><label>When were you there?</label><div class="input filled">13 June 2027</div></div>
-        <span class="btn btn-primary btn-block" style="height:46px">${ICON.send}Open chat app</span>
+        <span class="btn btn-primary btn-block" style="height:46px">${ICON.send}Send to Meel</span>
       </div>`)
     + phone('2. Before the editor has checked', `
       ${head('Manali to Leh', 'Mechanics')}
       ${body(`
         ${fact({ t: 'Stanzin Bike Point, Upshi', d: 'General repairs. Welding.', state: 'pending', line: 'A rider reported a change on 13 June 2027. Being checked.', hi: true,
-          extra: '<div class="callout warn" style="margin-top:6px"><b>Reported: it has moved</b>“Moved about 2 km towards Leh, next to the petrol pump.” Rahul N., 13 June 2027</div>' })}
+          extra: '<div class="callout warn" style="margin-top:6px"><b>A rider says this has changed</b>The editor has not read the report yet. Until then, the words here are as the source has them.</div>' })}
         ${fact({ t: 'Tashi Motor Works, Keylong', state: 'fresh', line: 'Confirmed by Imran S. · 12 June 2027 · 2 days ago' })}`)}`, '9:40')
     + phone('3. After the editor has checked', `
       ${head('Manali to Leh', 'Mechanics')}
@@ -1112,10 +1107,10 @@ Name: Rahul N.</span><span class="send">${ICON.send}</span></div>
           <div><span>14 Aug 2025</span><b>Confirmed at the old place in Upshi by Dev R.</b></div>
         </div>`)}`, '11:05'),
     notes: [
-      ['Behaviour', ['The report shows on the fact at once, in the rider’s own words, marked “being checked”. Other riders see the warning before the editor has acted.', 'The editor then rewrites the fact. The old entry moves into the history.', '“It has closed for good” does not delete the shop. The fact stays, marked closed, with the date.']],
-      ['Why the first step shows before checking', ['A rider about to rely on that shop needs the warning today, not after the editor’s next sitting.', 'The risk is a false report. At this scale the editor reads every message, and the report carries a name and a date.']],
+      ['Behaviour', ['The warning shows on the fact at once, marked “change reported”. Other riders see it before the editor has acted.', 'The rider’s own words wait until the editor has read them. Anyone can report, with no account, and words nobody has read should not appear on a public page.', 'The editor then rewrites the fact. The old entry moves into the history.', '“It has closed for good” does not delete the shop. The fact stays, marked closed, with the date.']],
+      ['Why the warning shows before checking', ['A rider about to rely on that shop needs the warning today, not after the editor’s next sitting.', 'The risk is a false report. The warning says only that something may have changed, never what.']],
       ['Data', ['Per report: fact, what kind of change, the rider’s words, date seen, name if given.', 'Showing a report before checking needs the site to rebuild when a message arrives. Not possible with hand editing alone.']],
-      ['Open question', ['Frame 2 needs a small automatic step between the inbox and the site. Build that, or accept that reports only show after the editor acts?'], 'q'],
+      ['Decided, 28 September 2026', ['Built: a report reaches the site’s own inbox, and the fact’s page is made again at once, showing the warning.']],
     ],
   },
   /* 10 */
@@ -1317,7 +1312,7 @@ Name: Rahul N.</span><span class="send">${ICON.send}</span></div>
           </div>
           <div class="field"><label>Your name <em>optional, shown beside what you reported</em></label><div class="input filled">Rahul N.</div></div>
           <div class="callout"><b>What happens next</b>The person who keeps Meel reads it. Your riding hours join the others for this route. Nothing else about you is kept.</div>`)}
-        <div class="pfoot"><span class="btn btn-primary btn-block">${ICON.send}Open chat app to send</span><span class="link" style="align-self:center">Send without a chat app</span></div>`);
+        <div class="pfoot"><span class="btn btn-primary btn-block">${ICON.send}Send to Meel</span><span class="link" style="align-self:center">Send from my chat app instead</span></div>`);
     },
     notes: [
       ['Layout', ['Three fields are required: route, month, bike. A rider can send after the first step.', 'Optional parts are folded, each showing how much is filled.', 'The form can be opened with the route already filled, from any route page.']],
@@ -1702,7 +1697,7 @@ Name: Rahul N.</span><span class="send">${ICON.send}</span></div>
       ${body(`
         <div class="callout warn"><b>Meel cannot send email yet</b>So a password cannot be reset by a link. This is being built.</div>
         <div class="lbl">For now</div>
-        <div class="fact-d">Write to the person who keeps Meel from your chat app. Say which email the account uses. They will check it is you and set a one-time password.</div>
+        <div class="fact-d">Write to the person who keeps Meel from your chat app. Say which email the account uses. They will check it is you and give you a one-time password. You choose your own again as soon as you log in.</div>
         <span class="btn btn-primary btn-block" style="height:46px">${ICON.send}Open chat app</span>
         <span class="hint">Your trips and reports are not lost.</span>`)}`),
     notes: [
@@ -1875,15 +1870,15 @@ Rahul N. · seen 13 June 2027 · sent from the chat app at 9:12 pm</div>
             </div>
             <div class="callout info"><b>Nothing is lost</b>Applying rewrites the fact and moves the old entry into its history. The site rebuilds in about two minutes.</div>
             <span class="btn btn-primary btn-block" style="height:44px">${ICON.check}Apply to the page</span>
-            <span class="btn btn-outline btn-block" style="height:44px">Ask Rahul a question</span>
             <span class="btn btn-outline btn-block" style="height:44px">Set aside, with a reason</span>
           </aside>
         </div>`);
     },
     notes: [
-      ['Not in the first version', ['The first version has no editor screen. You read messages in the chat app and change the fact files by hand.', 'That is fine up to about ten messages a day. This frame is the tool to build when it stops being fine.']],
+      ['Built on 28 September 2026', ['This screen exists. On a phone the list comes first, and each report opens on a screen of its own.', 'A change to a fact’s words is kept with the report. The fact files themselves are still changed by hand.']],
       ['Evidence next to the decision', ['The rider’s own words, the fact as it stands, and the fact as it would become, side by side.', 'Three checks, each a fact and not a verdict: how recent, the rider’s record, whether anyone else has said the same.', 'The wording can be edited before it is applied. Riders write in a hurry.']],
-      ['Behaviour', ['Apply: the fact is rewritten, the old entry joins the history, the rider is credited.', 'Set aside: nothing on the site changes. The reason is kept, so the same report is not puzzled over twice.', 'Ask a question: opens the chat app to that rider.']],
+      ['Behaviour', ['Apply: the fact is rewritten, the old entry joins the history, the rider is credited.', 'Set aside: nothing on the site changes. The reason is kept, so the same report is not puzzled over twice.']],
+      ['Not built yet', ['Asking the rider a question. Meel holds no phone number for a rider, so there is no way to reach them yet.'], 'q'],
       ['Open question', ['Is a rider’s record of past reports worth keeping? It helps the editor. It also means holding a little more about each person.'], 'q'],
     ],
   },
