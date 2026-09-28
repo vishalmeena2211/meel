@@ -253,7 +253,8 @@ def build(r):
                           "near": near["name"] if near else None, "km_from_start": p["km_from_start"],
                           "lat": p["lat"], "lon": p["lon"], "opening_hours": p.get("opening_hours"),
                           "osm_url": "https://www.openstreetmap.org/" + p["osm"]})
-        fuel = {"listed": bool(pumps), "pumps": pumps, "pump_count": fu.get("pump_count", len(pumps)),
+        # Listed pumps are counted after the ones that are not pumps are dropped, so the count matches the list.
+        fuel = {"listed": bool(pumps), "pumps": pumps, "pump_count": len(pumps) if pumps else fu.get("pump_count", 0),
                 "stops": fu.get("stops", 0), "longest_gaps": fu.get("longest_gaps", []),
                 "note": fu.get("note"), "fetched": fu.get("fetched")}
 

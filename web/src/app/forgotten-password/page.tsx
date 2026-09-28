@@ -11,6 +11,8 @@ export default function ForgottenPasswordPage() {
   const message = "I have forgotten my Meel password. The email on my account is: ";
   return (
     <div className="mx-auto flex w-full max-w-md flex-col gap-4">
+      {/* A form taken in steps: the foot of the page is one line (see globals.css). */}
+      <span hidden data-form-page />
       <PageTitle title="Forgotten password" phone={{ sub: "Meel", back: "/login" }} />
       <Callout tone="warn" title="Meel cannot send email yet">
         So a password cannot be reset by a link. This is being built.

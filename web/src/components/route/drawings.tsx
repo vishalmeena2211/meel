@@ -26,11 +26,11 @@ export function GapStrip({ fuel, distanceKm, from, to }: { fuel: Fuel; distanceK
       <div role="img" aria-label={label} className="relative mx-1 h-[5.25rem]">
         <span className="absolute top-0 left-0 text-xs leading-4 font-semibold">
           {from}
-          <small className="hint num block text-[0.6875rem] font-normal">0 km</small>
+          <small className="hint num block text-xs font-normal">0 km</small>
         </span>
         <span className="absolute top-0 right-0 text-right text-xs leading-4 font-semibold">
           {to}
-          <small className="hint num block text-[0.6875rem] font-normal">{km(distanceKm)}</small>
+          <small className="hint num block text-xs font-normal">{km(distanceKm)}</small>
         </span>
         <div className="absolute inset-x-0 top-[2.625rem] h-1.5 rounded-full bg-sign" />
         {longest && longest.gap_km >= 40 ? (
@@ -62,7 +62,7 @@ export function GapStrip({ fuel, distanceKm, from, to }: { fuel: Fuel; distanceK
             style={{ left: pct(n.at) }}
           >
             {n.name}
-            <small className="hint num block text-[0.6875rem] font-normal">{km(n.at)}</small>
+            <small className="hint num block text-xs font-normal">{km(n.at)}</small>
           </span>
         ))}
       </div>
@@ -112,6 +112,9 @@ function tunnelWords(tunnels: Tunnel[]): string {
   return all.length > 1 ? `${all.slice(0, -1).join("; ")} and ${all.at(-1)}` : (all[0] ?? "");
 }
 
+/** Lettering on the chart, in its own units: about 12 px on a phone. */
+const LABEL = 12;
+
 export function Profile({
   profile,
   tunnels = [],
@@ -147,13 +150,35 @@ export function Profile({
   const ticks = [0, 0.25, 0.5, 0.75, 1].map((f) => Math.round((distanceKm * f) / 10) * 10);
   ticks[ticks.length - 1] = Math.round(distanceKm);
 
-  // Keep labels apart: a label is dropped if it would sit on top of the one before it.
-  const labelled = marks.reduce<Array<ProfileMark & { px: number; py: number; show: boolean }>>((done, mark) => {
-    const px = x(mark.km);
-    const lastShown = [...done].reverse().find((d) => d.show);
-    const show = mark.night !== undefined || lastShown === undefined || px - lastShown.px > 46;
-    return [...done, { ...mark, px, py: y(mark.m), show }];
-  }, []);
+  // Keep labels clear of each other and of every dot. Each label tries its own side of the line, then the other.
+  // A place nobody sleeps at loses its label if neither side is clear; a night halt always keeps its own.
+  type Box = { x0: number; x1: number; y0: number; y1: number };
+  const dots = marks.map((m) => ({ px: x(m.km), py: y(m.m), r: m.night !== undefined ? 9 : 4 }));
+  const labelled = marks.reduce<Array<ProfileMark & { px: number; py: number; show: boolean; ty: number; anchor: "start" | "middle" | "end"; box: Box | null }>>(
+    (done, mark, i) => {
+      const px = x(mark.km);
+      const py = y(mark.m);
+      const night = mark.night !== undefined;
+      const width = mark.name.length * LABEL * 0.6;
+      const anchor = px < L + 30 ? "start" : px > W - R - 30 ? "end" : "middle";
+      const left = anchor === "start" ? px : anchor === "end" ? px - width : px - width / 2;
+      const at = (above: boolean) => {
+        const ty = above ? py - (night ? 15 : 11) : py + (night ? 23 : 18);
+        // Letters such as p and g hang below the line, so the box reaches 5 under it.
+        return { ty, box: { x0: left - 2, x1: left + width + 2, y0: ty - LABEL + 2, y1: ty + 5 } };
+      };
+      const clear = (b: Box) =>
+        b.y0 >= 0 &&
+        b.y1 <= H - B + 6 &&
+        dots.every((d, j) => j === i || d.px + d.r < b.x0 || d.px - d.r > b.x1 || d.py + d.r < b.y0 || d.py - d.r > b.y1) &&
+        done.every((o) => !o.box || o.box.x1 < b.x0 || o.box.x0 > b.x1 || o.box.y1 < b.y0 || o.box.y0 > b.y1);
+      const first = at(py > T + 26 && i % 2 === 1);
+      const second = at(!(py > T + 26 && i % 2 === 1));
+      const pick = clear(first.box) ? first : clear(second.box) ? second : night ? first : null;
+      return [...done, { ...mark, px, py, show: pick !== null, ty: pick?.ty ?? 0, anchor, box: pick?.box ?? null }];
+    },
+    [],
+  );
 
   return (
     <figure className="card px-1.5 pt-2 pb-0.5">
@@ -166,12 +191,12 @@ export function Profile({
         {lines.map((v) => (
           <g key={v}>
             <line x1={L} x2={W - R} y1={y(v)} y2={y(v)} stroke="var(--color-line)" strokeWidth={1} />
-            <text x={L - 4} y={y(v) + 3} textAnchor="end" fontSize={10} fill="var(--color-ink-2)">
+            <text x={L - 4} y={y(v) + 3} textAnchor="end" fontSize={LABEL} fill="var(--color-ink-2)">
               {v.toLocaleString("en-IN")}
             </text>
           </g>
         ))}
-        <text x={L - 4} y={12} textAnchor="end" fontSize={10} fill="var(--color-ink-2)">
+        <text x={L - 4} y={12} textAnchor="end" fontSize={LABEL} fill="var(--color-ink-2)">
           metres
         </text>
         <polygon
@@ -186,9 +211,7 @@ export function Profile({
           strokeLinejoin="round"
           strokeLinecap="round"
         />
-        {labelled.map((m, i) => {
-          const above = m.py > T + 26 && i % 2 === 1;
-          const anchor = m.px < L + 30 ? "start" : m.px > W - R - 30 ? "end" : "middle";
+        {labelled.map((m) => {
           return (
             <g key={`${m.name}-${m.km}`}>
               {m.night !== undefined ? (
@@ -196,18 +219,18 @@ export function Profile({
                   <circle
                     cx={m.px}
                     cy={m.py}
-                    r={7.5}
+                    r={9}
                     fill={m.tooSteep ? "var(--color-stale-fg)" : "var(--color-stone)"}
                     stroke="var(--color-ink)"
                     strokeWidth={2}
                   />
                   <text
                     x={m.px}
-                    y={m.py + 3.5}
+                    y={m.py + 4}
                     textAnchor="middle"
-                    fontSize={9}
+                    fontSize={11}
                     fontWeight={700}
-                    fill={m.tooSteep ? "var(--color-surface)" : "var(--color-ink)"}
+                    fill={m.tooSteep ? "var(--color-surface)" : "var(--color-stone-ink)"}
                   >
                     {m.night}
                   </text>
@@ -218,11 +241,14 @@ export function Profile({
               {m.show ? (
                 <text
                   x={m.px}
-                  y={above ? m.py - (m.night ? 13 : 9) : m.py + (m.night ? 20 : 15)}
-                  textAnchor={anchor}
-                  fontSize={10}
+                  y={m.ty}
+                  textAnchor={m.anchor}
+                  fontSize={LABEL}
                   fontWeight={600}
                   fill="var(--color-ink)"
+                  stroke="var(--color-surface)"
+                  strokeWidth={3}
+                  paintOrder="stroke"
                 >
                   {m.name}
                 </text>
@@ -236,7 +262,7 @@ export function Profile({
             x={x(t)}
             y={H - 8}
             textAnchor={i === 0 ? "start" : i === ticks.length - 1 ? "end" : "middle"}
-            fontSize={10}
+            fontSize={LABEL}
             fill="var(--color-ink-2)"
           >
             {t.toLocaleString("en-IN")}
@@ -334,7 +360,7 @@ export function RouteLine({ line, waypoints }: { line: [number, number][]; waypo
                 x={d.x > W - 70 ? d.x - 8 : d.x + 8}
                 y={d.y + 3.5}
                 textAnchor={d.x > W - 70 ? "end" : "start"}
-                fontSize={10.5}
+                fontSize={12}
                 fontWeight={600}
                 fill="var(--color-ink)"
                 stroke="var(--color-surface-2)"
@@ -346,7 +372,7 @@ export function RouteLine({ line, waypoints }: { line: [number, number][]; waypo
             ) : null}
           </g>
         ))}
-        <text x={W - 10} y={16} textAnchor="end" fontSize={10} fill="var(--color-ink-2)">
+        <text x={W - 10} y={17} textAnchor="end" fontSize={12} fill="var(--color-ink-2)">
           North is up
         </text>
       </svg>

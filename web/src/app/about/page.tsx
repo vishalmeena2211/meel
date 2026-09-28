@@ -88,7 +88,8 @@ export default async function AboutPage() {
             </div>
           ))}
         </dl>
-        <div className="card overflow-x-auto">
+        {/* On a phone it scrolls sideways, so the keyboard can reach it too. */}
+        <div className="card overflow-x-auto" tabIndex={0} role="region" aria-label="How long each kind of fact stays fresh">
           <table className="num w-full min-w-[420px] border-collapse text-sm">
             <caption className="hint px-3 pt-2.5 text-left">How long each kind of fact stays fresh, in days</caption>
             <thead>

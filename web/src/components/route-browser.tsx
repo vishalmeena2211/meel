@@ -106,7 +106,8 @@ function Roads({ routes, lines, named }: { routes: RouteSummary[]; lines: RoadLi
   const placed: Array<{ x: number; y: number }> = [];
   return (
     <figure className="card overflow-hidden">
-      <svg viewBox={`0 0 ${W} ${H}`} className="block h-auto max-h-[360px] w-full bg-surface-2" role="img" aria-label={`${plural(mine.length, "route")}, each drawn as a road. North is up.`}>
+      <span className="sr-only">{plural(mine.length, "route")} drawn as roads, north up. The same routes are in the list.</span>
+      <svg viewBox={`0 0 ${W} ${H}`} className="block h-auto max-h-[360px] w-full bg-surface-2" aria-hidden="true">
         {mine.map((l) => {
           const route = routes.find((r) => r.slug === l.slug);
           if (!route) return null;
@@ -119,7 +120,7 @@ function Roads({ routes, lines, named }: { routes: RouteSummary[]; lines: RoadLi
           const label = named && clear;
           if (label) placed.push({ x, y });
           return (
-            <a key={l.slug} href={`/routes/${l.slug}`} aria-label={route.name}>
+            <a key={l.slug} href={`/routes/${l.slug}`} tabIndex={-1}>
               <polyline points={points} fill="none" stroke="transparent" strokeWidth={14} />
               <polyline
                 points={points}
@@ -135,7 +136,7 @@ function Roads({ routes, lines, named }: { routes: RouteSummary[]; lines: RoadLi
                   x={x > W - 90 ? x - 6 : x + 6}
                   y={y - 5}
                   textAnchor={x > W - 90 ? "end" : "start"}
-                  fontSize={10.5}
+                  fontSize={12}
                   fontWeight={600}
                   fill="var(--color-ink)"
                   stroke="var(--color-surface-2)"
@@ -148,7 +149,7 @@ function Roads({ routes, lines, named }: { routes: RouteSummary[]; lines: RoadLi
             </a>
           );
         })}
-        <text x={W - 8} y={14} textAnchor="end" fontSize={10} fill="var(--color-ink-2)">
+        <text x={W - 8} y={15} textAnchor="end" fontSize={12} fill="var(--color-ink-2)">
           North is up
         </text>
       </svg>

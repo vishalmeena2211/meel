@@ -76,33 +76,35 @@ All eleven done on 28 September 2026, drawn first (see `docs/wireframe-match-202
 
 ## Later
 
-- [ ] **Some text is very small.** Badges such as "NOT YET CHECKED" and "DATED 17 MONTHS AGO" are 10.5 to 11 px, in narrow capitals. Labels on the road drawing are 10 px. These are hard to read in sunlight at a halt.
+All done on 28 September 2026, drawn first (see `docs/wireframe-match-2026-09-28.md`). The dark look follows the phone's setting.
+
+- [x] **Some text is very small.** Badges such as "NOT YET CHECKED" and "DATED 17 MONTHS AGO" are 10.5 to 11 px, in narrow capitals. Labels on the road drawing are 10 px. These are hard to read in sunlight at a halt.
   *Fix:* at least 12 px. *Size:* small.
 
-- [ ] **Two buttons are small on a phone.** The back arrow and "Log in" are 36 px tall.
+- [x] **Two buttons are small on a phone.** The back arrow and "Log in" are 36 px tall.
   *Fix:* 44 px. *Size:* small.
 
-- [ ] **The site's foot shows under step-by-step forms.** On the trip report, posting a trip, signing up and logging in, the full dark foot sits right under the form and pulls the eye away.
+- [x] **The site's foot shows under step-by-step forms.** On the trip report, posting a trip, signing up and logging in, the full dark foot sits right under the form and pulls the eye away.
   *Fix:* hide it on those pages, or show a one-line foot. *Size:* small.
 
-- [ ] **The account page does not say a trip is waiting for the editor.** The trip card shows "You lead this", but not that nobody can see it yet.
+- [x] **The account page does not say a trip is waiting for the editor.** The trip card shows "You lead this", but not that nobody can see it yet.
   *Fix:* add the waiting badge the trip page already has. *Size:* small.
 
-- [ ] **Two page titles.** A trip that is not on the board is titled "A trip on Meel · Meel", with Meel twice. The page that does not exist uses the front page's title.
+- [x] **Two page titles.** A trip that is not on the board is titled "A trip on Meel · Meel", with Meel twice. The page that does not exist uses the front page's title.
   *Fix:* "A trip · Meel" and "No page here · Meel". *Size:* small.
 
-- [ ] **The three problems the accessibility scan found:**
-  - [ ] The front page's road drawing is marked as a picture but holds links, so screen readers treat it unevenly. The list below has the same links, so mark the drawing as decoration, or drop the picture role and label the group. *Size:* small.
-  - [ ] On a fact's own page, the headings jump from level 2 to level 4: "History" and "Where this came from" are level 4 under the fact's level-2 name. *Size:* small.
-  - [ ] On About, a table that scrolls sideways cannot be scrolled with the keyboard. Let it take the focus, and give it a label. *Size:* small.
+- [x] **The three problems the accessibility scan found:**
+  - [x] The front page's road drawing is marked as a picture but holds links, so screen readers treat it unevenly. The list below has the same links, so mark the drawing as decoration, or drop the picture role and label the group. *Size:* small.
+  - [x] On a fact's own page, the headings jump from level 2 to level 4: "History" and "Where this came from" are level 4 under the fact's level-2 name. *Size:* small.
+  - [x] On About, a table that scrolls sideways cannot be scrolled with the keyboard. Let it take the focus, and give it a label. *Size:* small.
 
-- [ ] **Altitude chart labels touch the markers at phone width**, for example "Keylong" and "Pang".
+- [x] **Altitude chart labels touch the markers at phone width**, for example "Keylong" and "Pang".
   *Fix:* nudge labels clear of the dots. *Size:* small.
 
-- [ ] **The laptop side panel cuts office notes mid-sentence**, for example "Snow clearance finished an…".
+- [x] **The laptop side panel cuts office notes mid-sentence**, for example "Snow clearance finished an…".
   *Fix:* show a short full line instead. This goes with the "Is it open?" fix above. *Size:* small.
 
-- [ ] **No dark look.** Reading at night at a halt would be easier on the eyes. *Size:* large.
+- [x] **No dark look.** Reading at night at a halt would be easier on the eyes. *Size:* large.
 
 ## Found while fixing the first four
 

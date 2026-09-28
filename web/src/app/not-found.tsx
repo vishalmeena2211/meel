@@ -1,9 +1,12 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 
 import { IconMap, IconSearch } from "@/components/icons";
 import { SearchSuggest } from "@/components/search-suggest";
 import { TopHead } from "@/components/shell";
 import { Callout } from "@/components/ui";
+
+export const metadata: Metadata = { title: "No page here", robots: { index: false } };
 
 export default function NotFound() {
   return (

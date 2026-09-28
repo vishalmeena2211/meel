@@ -352,3 +352,30 @@ The data behind it: a new step in `data/tools/build_computed.py` asks the open m
 Pump names were tidied in `data/tools/assemble.py`: stray full stops removed, one spelling for each fuel company. Pump ids did not change, so reports already filed still match. The first pump says "At the start, in Manali".
 
 How it was checked: 35 checks in a real browser, on the site running on this machine, at phone and laptop sizes, with test accounts deleted afterwards. One check at first picked Royal Enfield Classic 350, which has no maker's mileage, so the page rightly asked for one. It was run again with the Himalayan 450.
+
+---
+
+## The "Later" items from the screen audit, checked the same day
+
+**Asked by:** Vishal: "do the later items too".
+**Drawn first:** a new screen, 33 "At night", drawn from frames 2.2, 4.1 and 4.4 with the dark colours. Frame 31.3 adds one line under a form, and 22.2 a trip waiting for the editor. Every drawing's buttons are now 44 px, and its chart and strip lettering 12 px. The gallery now has 33 screens and 108 frames.
+
+| Frame | What it shows | First check | What differed | Now |
+|---|---|---|---|---|
+| 33.1 to 33.3 | The front page, a route and its fuel, with the phone set to dark | Matches | The kilometre stone stays white. The foot is darker than the page. All six pages checked for text contrast at night pass | [x] |
+| 31.3 | Under a form taken in steps, the foot is one line with the map credit | Matches | Checked on the trip report, logging in and signing up. Posting a trip, the welcome page and a forgotten password carry the same mark | [x] |
+| 22.2 | Your account: a trip you lead that the editor has not read says so | Matches | | [x] |
+| 14.1 | The chart's lettering is 12 px, and no label sits on a dot | Close | Checked on eight routes. A label that cannot find a clear side is left out, unless it is a night halt | [x] |
+| 4.4 | The fuel strip's small lettering is 12 px | Matches | | [x] |
+
+Not drawn, as they change nothing to look at:
+- A missing page is titled "No page here · Meel".
+- A trip not on the board is titled "A trip · Meel".
+- The accessibility scan finds nothing on the front page, a fact's page or About.
+- The laptop side panel says when each office was last seen ("Last notice seen 12 May 2025"), as drawn in the laptop fuel frame, instead of a cut-off line.
+
+The fuel heading said "11 pumps" over a list of 10: one entry on the map is not a pump and was left out of the list but not the count. The data tools now count what they list; four routes changed.
+
+How it was checked: 26 checks in a real browser on the site running on this machine, at phone and laptop sizes and with the phone set to dark, plus a label check on eight routes. The test accounts were deleted afterwards.
+
+**A decision this reverses:** the stylesheet said the site was "light only on purpose". The dark look follows the phone's own setting, and there is no switch on the site, so a phone left light in the sun still gets the light look.

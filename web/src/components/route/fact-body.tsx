@@ -9,6 +9,8 @@ import { Callout, StateBadge } from "../ui";
  * who confirmed it, and where it came from.
  */
 export function FactBody({ view, as: Title = "h3" }: { view: FactView; as?: "h1" | "h2" | "h3" }) {
+  // The parts of a fact sit one level under its name.
+  const Part = Title === "h1" ? "h2" : Title === "h2" ? "h3" : "h4";
   return (
     <>
       <div className="flex items-start justify-between gap-2">
@@ -42,7 +44,7 @@ export function FactBody({ view, as: Title = "h3" }: { view: FactView; as?: "h1"
 
       {view.changes.length > 0 ? (
         <section className="flex flex-col gap-1">
-          <h4 className="label">What changed, and when</h4>
+          <Part className="label">What changed, and when</Part>
           <ol className="timeline">
             {view.changes.map((c) => (
               <li key={`${c.when}-${c.what}`}>
@@ -63,7 +65,7 @@ export function FactBody({ view, as: Title = "h3" }: { view: FactView; as?: "h1"
 
       {view.history.length > 0 ? (
         <section className="flex flex-col gap-1">
-          <h4 className="label">History</h4>
+          <Part className="label">History</Part>
           <ol className="timeline">
             {view.history.map((h) => (
               <li key={`${h.when}-${h.what}`}>
@@ -77,7 +79,7 @@ export function FactBody({ view, as: Title = "h3" }: { view: FactView; as?: "h1"
 
       {view.sources.length > 0 ? (
         <section className="flex flex-col gap-1.5">
-          <h4 className="label">Where this came from</h4>
+          <Part className="label">Where this came from</Part>
           <ul className="card flex flex-col">
             {view.sources.map((s) => (
               <li key={s.url} className="border-b border-line last:border-b-0">

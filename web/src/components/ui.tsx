@@ -122,13 +122,13 @@ export function KmStone({
   return (
     <div
       className={cx(
-        "flex shrink-0 flex-col overflow-hidden border-2 border-ink bg-surface",
+        "flex shrink-0 flex-col overflow-hidden border-2 border-stone-ink bg-stone-body text-stone-ink",
         big ? "h-[86px] w-[70px] rounded-t-[34px] rounded-b-md" : "h-10 w-9 rounded-t-[16px] rounded-b",
       )}
     >
       <div
         className={cx(
-          "font-display grid place-items-end justify-center border-b-2 border-ink bg-stone font-bold tracking-wider",
+          "font-display grid place-items-end justify-center border-b-2 border-stone-ink bg-stone font-bold tracking-wider",
           big ? "h-7 pb-0.5 text-[0.8125rem] leading-none" : "h-3",
         )}
       >
@@ -141,7 +141,7 @@ export function KmStone({
         )}
       >
         {value}
-        {big ? <small className="block text-[0.6875rem] font-semibold tracking-widest">{unit}</small> : null}
+        {big ? <small className="block text-xs font-semibold tracking-widest">{unit}</small> : null}
       </div>
     </div>
   );

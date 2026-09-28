@@ -28,7 +28,7 @@ export async function generateMetadata(props: PageProps<"/trips/[id]">): Promise
   if (!trip) return { title: "No such trip" };
   // Only a trip on the board says what it is. Anything else, such as a first trip the editor has not read,
   // shows Meel's card, so a pasted link never gives away a trip that is not on the board.
-  if (trip.status !== "open") return { title: "A trip on Meel", robots: { index: false } };
+  if (trip.status !== "open") return { title: "A trip", robots: { index: false } };
   const view = await getRouteView(trip.route_slug);
   const name = view?.route.name ?? trip.route_slug;
   const title = `Trip: ${name}, ${sayDate(trip.leaves_on)}`;
@@ -43,7 +43,7 @@ export async function generateMetadata(props: PageProps<"/trips/[id]">): Promise
 
 function Avatar({ name }: { name: string }) {
   return (
-    <span className="font-display grid size-9 shrink-0 place-items-center rounded-full border-[1.5px] border-ink bg-stone text-sm font-bold">
+    <span className="font-display grid size-9 shrink-0 place-items-center rounded-full border-[1.5px] border-stone-ink bg-stone text-sm font-bold text-stone-ink">
       {initials(name)}
     </span>
   );
@@ -308,7 +308,7 @@ export default async function TripPage(props: PageProps<"/trips/[id]">) {
           <ol className="card flex flex-col">
             {gains.map((g) => (
               <li key={g.place} className="grid min-h-[52px] grid-cols-[30px_1fr_auto] items-center gap-2.5 border-b border-line px-3 py-2 last:border-b-0">
-                <span className="font-display grid size-[30px] place-items-center rounded-full border-[1.5px] border-ink bg-stone text-[0.9375rem] font-bold">
+                <span className="font-display grid size-[30px] place-items-center rounded-full border-[1.5px] border-stone-ink bg-stone text-[0.9375rem] font-bold text-stone-ink">
                   {g.night}
                 </span>
                 <span>

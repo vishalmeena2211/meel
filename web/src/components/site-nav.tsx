@@ -81,12 +81,12 @@ export function MeBadge({ me }: { me?: Me | null }) {
     <Link
       href="/account"
       aria-label={`Your account, ${who.name}`}
-      className="font-display ml-1 grid size-9 shrink-0 place-items-center rounded-full border-[1.5px] border-ink bg-stone text-sm font-bold"
+      className="font-display ml-1 grid size-11 shrink-0 place-items-center rounded-full border-[1.5px] border-stone-ink bg-stone text-sm font-bold text-stone-ink md:size-9"
     >
       {who.initials}
     </Link>
   ) : (
-    <Link href="/login" className="btn btn-outline ml-1 !min-h-9 shrink-0 px-3 text-sm">
+    <Link href="/login" className="btn btn-outline ml-1 !min-h-11 shrink-0 px-3 text-sm md:!min-h-9">
       Log in
     </Link>
   );

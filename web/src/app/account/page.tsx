@@ -174,7 +174,11 @@ export default async function AccountPage(props: PageProps<"/account">) {
           </Empty>
         ) : (
           trips.map((t) => {
-            const words = MINE_WORDS[t.mine] ?? { label: t.mine, tone: "plain" as const };
+            // A trip you lead that nobody can see yet says so, before anything else about it.
+            const words =
+              t.mine === "leading" && t.status === "waiting-for-editor"
+                ? { label: "Waiting for the editor", tone: "plain" as const }
+                : (MINE_WORDS[t.mine] ?? { label: t.mine, tone: "plain" as const });
             return (
               <TripCardView
                 key={`${t.id}-${t.mine}`}

@@ -41,6 +41,24 @@
   --display: "Barlow Condensed", "Arial Narrow", "Helvetica Neue", sans-serif;
   --body: Hind, "Noto Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
 }
+/* At night (last screen): the same tokens, as the site redefines them when a phone is set to dark */
+.dark {
+  color-scheme: dark;
+  --ink: #E8ECE9; --ink-2: #A3AEA8; --rule: #6B7671; --border: #2E3935;
+  --surface: #18201D; --surface-2: #1F2925; --ground: #0F1513;
+  --sign: #5FC4A1; --stone: #F2B807; --danger: #F0776D;
+  --fresh-bg: #16301F;   --fresh-fg: #7FD49C;
+  --ageing-bg: #33270F;  --ageing-fg: #F0B861;
+  --stale-bg: #3A1A17;   --stale-fg: #F28B82;
+  --unchecked-bg: #252C33; --unchecked-fg: #B4BFCB;
+  --conflict-bg: #2A2140; --conflict-fg: #C3A8F5;
+  --sign-soft: #1C332B; --sign-line: #2F5C4D; --stone-soft: #3A3113;
+  --overlay: rgb(0 0 0 / 0.55);
+  color: var(--ink);
+  background: var(--surface);
+}
+.dark .pbody { background: var(--ground); }
+.dark .kstone { --surface: #FFFFFF; --ink: #16201C; color: #16201C; }
 * { box-sizing: border-box; }
 body { margin: 0; background: var(--ground); color: var(--ink); font: 14px/1.45 var(--body); -webkit-font-smoothing: antialiased; }
 button { font: inherit; color: inherit; }
@@ -87,7 +105,7 @@ button { font: inherit; color: inherit; }
 .ptop .ttl { flex: 1; min-width: 0; }
 .ptop .ttl b { font: 700 19px/1.1 var(--display); letter-spacing: 0.01em; display: block; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 .ptop .ttl span { font-size: 11.5px; color: var(--ink-2); }
-.iconbtn { width: 38px; height: 38px; border-radius: 8px; border: 1px solid var(--border); display: grid; place-items: center; flex: none; }
+.iconbtn { width: 44px; height: 44px; border-radius: 8px; border: 1px solid var(--border); display: grid; place-items: center; flex: none; }
 .iconbtn svg { width: 18px; height: 18px; stroke: var(--ink); }
 .mark { width: 34px; height: 38px; border-radius: 16px 16px 4px 4px; border: 2px solid var(--ink); overflow: hidden; display: flex; flex-direction: column; flex: none; background: var(--surface); }
 .mark i { height: 12px; background: var(--stone); border-bottom: 2px solid var(--ink); }
@@ -208,7 +226,7 @@ button { font: inherit; color: inherit; }
 .kstone { width: 66px; height: 82px; border-radius: 32px 32px 6px 6px; border: 2px solid var(--ink); overflow: hidden; display: flex; flex-direction: column; background: var(--surface); }
 .kstone .cap { height: 27px; background: var(--stone); border-bottom: 2px solid var(--ink); display: grid; place-items: end center; padding-bottom: 3px; font: 700 13px/1 var(--display); letter-spacing: 0.06em; }
 .kstone .km { flex: 1; display: grid; place-content: center; text-align: center; font: 700 22px/0.95 var(--display); font-variant-numeric: tabular-nums; }
-.kstone .km small { display: block; font-size: 11px; letter-spacing: 0.1em; font-weight: 600; }
+.kstone .km small { display: block; font-size: 12px; letter-spacing: 0.1em; font-weight: 600; }
 .khead h2 { margin: 0; font: 700 28px/1 var(--display); text-transform: uppercase; letter-spacing: 0.01em; }
 .khead p { margin: 4px 0 0; font-size: 12.5px; color: var(--ink-2); }
 .keys { display: grid; grid-template-columns: repeat(3, 1fr); border: 1px solid var(--border); border-radius: 8px; overflow: hidden; }
@@ -255,7 +273,7 @@ button { font: inherit; color: inherit; }
 .gap-strip .pt.first span { left: 0; transform: none; text-align: left; }
 .gap-strip .pt.last span { left: auto; right: 0; transform: none; text-align: right; }
 .gap-strip .pt.lab span { left: -22px; transform: none; text-align: left; }
-.gap-strip .pt small { display: block; font-weight: 400; color: var(--ink-2); font-variant-numeric: tabular-nums; }
+.gap-strip .pt small { display: block; font-size: 12px; font-weight: 400; color: var(--ink-2); font-variant-numeric: tabular-nums; }
 .gap-strip .tag { position: absolute; top: 58px; font: 600 12px/1 var(--display); letter-spacing: 0.08em; text-transform: uppercase; color: var(--stale-fg); transform: translateX(-50%); white-space: nowrap; }
 .meter { height: 12px; border-radius: 6px; background: var(--surface-2); border: 1px solid var(--border); position: relative; overflow: hidden; }
 .meter i { position: absolute; left: 0; top: 0; bottom: 0; background: var(--sign); }
@@ -361,7 +379,7 @@ button { font: inherit; color: inherit; }
 .profile .grid { stroke: var(--border); stroke-width: 1; }
 .profile .area { fill: var(--sign-soft); stroke: none; }
 .profile .ln { fill: none; stroke: var(--sign); stroke-width: 2.5; stroke-linejoin: round; stroke-linecap: round; }
-.profile text { font: 600 10px var(--body); fill: var(--ink); }
+.profile text { font: 600 12px var(--body); fill: var(--ink); }
 .profile text.ax { font-weight: 400; fill: var(--ink-2); }
 .profile .dot { fill: var(--surface); stroke: var(--ink); stroke-width: 2; }
 .profile .night { fill: var(--stone); stroke: var(--ink); stroke-width: 2; }
@@ -1832,6 +1850,7 @@ Name: Rahul N.</span><span class="send">${ICON.send}</span></div>
           <div class="keys"><div><span>Trips</span><b>1</b></div><div><span>Facts confirmed</span><b>2</b></div><div><span>Trip reports</span><b>0</b></div></div>
           <div class="lbl">Your trips</div>
           ${trip('Manali to Leh', '19 to 27 June 2027 · 9 days', 'From Delhi', 'Anjali T.', 6, 8, 'Relaxed pace', '<span class="badge b-fresh">You are in</span>')}
+          ${trip('Spiti circuit', '3 to 11 July 2027 · 9 days', 'From Delhi', 'you', 1, 6, 'Steady pace', '<span class="badge b-unchecked">Waiting for the editor</span>')}
           <div class="lbl">What Meel holds about you</div>
           <div class="rows">
             <div class="row"><span class="grow"><b>Get a copy of everything</b><span class="hint">Your details, trips and reports</span></span>${chev}</div>
@@ -2371,9 +2390,22 @@ Rahul N. · seen 13 June 2027 · sent from the chat app at 9:12 pm</div>
           <div class="road"></div>
           <div class="fbottom">${promise}<span class="fine">rideplanner.in</span></div>
           ${credit}
-        </footer>`);
+        </footer>`)
+      + phone('3. Under a form, one line', `
+        ${head('Trip report', 'Step 1 of 3')}
+        <div class="pbody"><div class="pscroll" style="padding:0;gap:0;min-height:100%">
+          <div style="padding:12px;display:flex;flex-direction:column;gap:12px;flex:1">
+            <div class="field"><label>Route</label><div class="input filled pick">Manali to Leh${ICON.down}</div></div>
+            <div class="field"><label>Month</label><div class="input filled pick">June 2027${ICON.cal}</div></div>
+            <div class="field"><label>Bike</label><div class="input filled">Royal Enfield Classic 350</div></div>
+            <div class="callout info"><b>That is enough to send</b>Everything on the next step is optional.</div>
+          </div>
+          <footer class="sfoot sf-phone" style="padding:12px 14px;gap:0"><p class="fine" style="margin:0">Meel · <span class="fl u">Credits and sources</span> · Map data © <span class="fl u">OpenStreetMap contributors</span></p></footer>
+        </div></div>
+        <div class="pfoot"><div class="btns"><span class="btn btn-outline">Send now</span><span class="btn btn-primary">Add details</span></div></div>`);
     },
     notes: [
+      ['Under a form (frame 3)', ['A form taken in steps (a trip report, posting a trip, signing up, logging in) ends with one line, not the whole foot, so nothing pulls the eye from the form. The map credit stays in it.']],
       ['Layout', ['A dark band, the colour of tarmac, so the end of a page is never mistaken for more of the page.', 'The Meel mark and one line on what Meel is. Three groups of links, named for what a rider came to do. A dashed yellow line, like the middle of a road, before the small print.', 'On a phone the groups sit two across, above the tab bar and above any button fixed to the foot of the screen. On a laptop they sit in one row beside the mark.']],
       ['The one promise', ['“Meel never says a road is open” has a line of its own. It is the rule the whole site keeps, so every page says it.']],
       ['Credits', ['OpenStreetMap asks for “© OpenStreetMap contributors” wherever its data appears. Its data is on nearly every page, so the credit is in the foot of every page.', 'A picture’s credit still sits under the picture. The foot only says where the pictures come from.']],
@@ -2497,6 +2529,30 @@ Rahul N. · seen 13 June 2027 · sent from the chat app at 9:12 pm</div>
     ],
   },
 ];
+
+/* ── At night ─────────────────────────────────────────────────── */
+SCREENS.push({
+  group: 'Every page', title: 'At night',
+  lede: 'When a phone is set to dark, Meel is dark too. The same screens, the same colours in their places, darker.',
+  render: () => {
+    const pick = (title, n, cap) => {
+      const t = document.createElement('template');
+      t.innerHTML = SCREENS.find((x) => x.title === title).render();
+      const f = t.content.querySelectorAll('figure')[n - 1];
+      f.querySelector('.phone').classList.add('dark');
+      f.querySelector('figcaption').textContent = cap;
+      return f.outerHTML;
+    };
+    return pick('All routes on the map', 2, '1. The front page, at night')
+      + pick('Full page: Manali to Leh', 1, '2. A route, at night')
+      + pick('Full page: Manali to Leh', 4, '3. Fuel, at night');
+  },
+  notes: [
+    ['When', ['It follows the phone. A phone set to dark, or to change at sunset, gets the dark look. There is no switch on the site.', 'In daylight, most phones stay light, which reads best in the sun.']],
+    ['Colours', ['The page is near-black green, the colour of a road at night. Cards sit a step lighter.', 'Signboard green is lighter, so links and buttons can still be read. A green button has dark words on it.', 'The states of a fact keep their meaning: green fresh, amber ageing, red stale, grey not yet checked, violet where riders disagree.']],
+    ['What stays the same', ['The kilometre stone stays white with a yellow cap, as it is on the road.', 'Pictures are not dimmed.', 'The foot of the page is darker than the page, so it still reads as the end.']],
+  ],
+});
 
 /* ── Gallery behaviour ────────────────────────────────────────── */
 const frame = document.getElementById('frame');

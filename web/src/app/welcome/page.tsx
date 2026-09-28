@@ -21,6 +21,8 @@ export default async function WelcomePage(props: PageProps<"/welcome">) {
 
   return (
     <div className="mx-auto flex w-full max-w-md flex-col gap-4">
+      {/* A form taken in steps: the foot of the page is one line (see globals.css). */}
+      <span hidden data-form-page />
       <PageTitle title="Nearly done" phone={{ sub: "Meel", back: "/" }} />
       <FinishProfileForm name={user.name} email={user.email} next={next} />
     </div>

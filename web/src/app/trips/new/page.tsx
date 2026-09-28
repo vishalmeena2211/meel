@@ -24,6 +24,8 @@ export default async function NewTripPage(props: PageProps<"/trips/new">) {
 
   return (
     <div className="mx-auto flex w-full max-w-xl flex-col gap-4">
+      {/* A form taken in steps: the foot of the page is one line (see globals.css). */}
+      <span hidden data-form-page />
       <div className="hidden md:block">
         <PageTitle
           title="Post a trip"

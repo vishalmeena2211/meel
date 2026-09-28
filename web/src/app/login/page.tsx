@@ -20,6 +20,8 @@ export default async function LogInPage(props: PageProps<"/login">) {
 
   return (
     <div className="mx-auto flex w-full max-w-md flex-col gap-4">
+      {/* A form taken in steps: the foot of the page is one line (see globals.css). */}
+      <span hidden data-form-page />
       <PageTitle title="Log in" phone={{ sub: "Meel", back: "/" }} />
       {googleSaidNo ? (
         <Callout tone="danger" title="Google did not let you in">

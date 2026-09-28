@@ -3,7 +3,8 @@
 /*
   Meel's look comes from Indian road furniture:
   kilometre stones (white body, yellow cap, black letters) and green highway signboards.
-  The site is light only on purpose. It is read outdoors, on a phone, in sunlight.
+  It is read outdoors, on a phone, in sunlight, so it is light by day. A phone set to dark gets the dark look below
+  (wireframes, "At night"). There is no switch on the site: it follows the phone.
 */
 @theme {
   --color-ink: #16201c;
@@ -25,6 +26,12 @@
   --color-stone-soft: #fdf3d4;
 
   --color-danger: #b42318;
+
+  /* the kilometre stone and the foot of the page keep their road colours, day and night */
+  --color-stone-body: #ffffff;
+  --color-stone-ink: #16201c;
+  --color-tarmac: #16201c;
+  --color-on-tarmac: #ffffff;
 
   /* how much a fact can be trusted: separate from the brand colours */
   --color-fresh-bg: #e7f6ec;
@@ -48,6 +55,44 @@
 
 :root {
   color-scheme: light;
+}
+
+/* At night: the same names, darker. The page is the colour of a road at night; cards a step lighter. */
+@media (prefers-color-scheme: dark) {
+  :root {
+    color-scheme: dark;
+    --color-ink: #e8ece9;
+    --color-ink-2: #a3aea8;
+    --color-rule: #6b7671;
+    --color-line: #2e3935;
+    --color-surface: #18201d;
+    --color-surface-2: #1f2925;
+    --color-ground: #0f1513;
+
+    /* lighter signboard green, so links can be read; a green button carries dark words */
+    --color-sign: #5fc4a1;
+    --color-sign-dark: #86d6ba;
+    --color-sign-soft: #1c332b;
+    --color-sign-line: #2f5c4d;
+
+    --color-stone-soft: #3a3113;
+    --color-danger: #f0776d;
+
+    --color-fresh-bg: #16301f;
+    --color-fresh-fg: #7fd49c;
+    --color-ageing-bg: #33270f;
+    --color-ageing-fg: #f0b861;
+    --color-stale-bg: #3a1a17;
+    --color-stale-fg: #f28b82;
+    --color-unchecked-bg: #252c33;
+    --color-unchecked-fg: #b4bfcb;
+    --color-conflict-bg: #2a2140;
+    --color-conflict-fg: #c3a8f5;
+
+    /* darker than the page, so the foot still reads as the end */
+    --color-tarmac: #070b09;
+    --color-on-tarmac: #e8ece9;
+  }
 }
 
 html {
@@ -97,6 +142,11 @@ body {
     background: var(--color-sign)
       url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M20 6 9 17l-5-5'/%3E%3C/svg%3E")
       center / 12px no-repeat;
+  }
+  @media (prefers-color-scheme: dark) {
+    input[type="checkbox"]:checked {
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%2318201d' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M20 6 9 17l-5-5'/%3E%3C/svg%3E");
+    }
   }
   input[type="radio"] {
     border-radius: 50%;
@@ -421,6 +471,14 @@ body {
   body:has([data-foot="with-tabs"]) .site-foot {
     padding-bottom: 9.5rem;
   }
+}
+
+/* Under a form taken in steps, the foot of the page is one line (wireframes, frame 31.3). */
+body:has([data-form-page]) .site-foot .foot-full {
+  display: none;
+}
+body:has([data-form-page]) .site-foot .foot-line {
+  display: block;
 }
 
 /* On a wider screen a route fills the window: sections on the left, facts in the middle, what is checked often on the right. */

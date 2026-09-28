@@ -8,7 +8,7 @@ import { FactSheet } from "@/components/route/fact-sheet";
 import { HeadSlot, RouteNav, type NavItem } from "@/components/route/route-nav";
 import { SectionIcon } from "@/components/route/route-parts";
 import { Badge, SectionHeading } from "@/components/ui";
-import { plural } from "@/lib/format";
+import { plural, sayDate } from "@/lib/format";
 import { REPORTS_NEEDED } from "@/lib/sections";
 import { savedPages } from "@/server/route-pages";
 import { getRouteView } from "@/server/route-view";
@@ -24,6 +24,10 @@ export default async function RouteLayout(props: LayoutProps<"/routes/[slug]">) 
   if (!view) notFound();
   const { route, sections, views } = view;
   const top = `/routes/${slug}`;
+  // The side panel says when each office was last seen speaking, as drawn. What it announces is on "Is it open?".
+  const noticeSeen = new Map(
+    route.authorities.map((a) => [a.id, a.source.source_date ? `Last notice seen ${sayDate(a.source.source_date)}` : null]),
+  );
 
   const nav: NavItem[] = sections
     .filter((s) => s.id !== "bikes" && s.id !== "costs")
@@ -85,7 +89,7 @@ export default async function RouteLayout(props: LayoutProps<"/routes/[slug]">) 
                   >
                     <span className="min-w-0 flex-1">
                       <b className="block text-sm leading-5">{v.title}</b>
-                      <span className="hint num block truncate">{v.short}</span>
+                      <span className="hint num block">{noticeSeen.get(v.id) ?? "No date found"}</span>
                     </span>
                     {v.aside ? <Badge>{v.aside.replace(/^Dated /, "")}</Badge> : null}
                     <IconExternal className="size-4 shrink-0 text-ink-2" />

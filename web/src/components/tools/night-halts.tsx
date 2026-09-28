@@ -158,8 +158,8 @@ export function AltitudeScreen({
           {rows.map((r) => (
             <li key={r.name} className="grid grid-cols-[30px_1fr_auto] items-center gap-2.5 border-b border-line px-3 py-2.5 last:border-b-0">
               <span
-                className={`font-display grid size-[30px] place-items-center rounded-full border-[1.5px] border-ink text-[0.9375rem] font-bold ${
-                  r.verdict === "too-steep" ? "bg-stale-fg text-surface" : "bg-stone"
+                className={`font-display grid size-[30px] place-items-center rounded-full border-[1.5px] border-stone-ink text-[0.9375rem] font-bold ${
+                  r.verdict === "too-steep" ? "bg-stale-fg text-surface" : "bg-stone text-stone-ink"
                 }`}
               >
                 {r.night}
@@ -180,7 +180,7 @@ export function AltitudeScreen({
                 }`}
               >
                 {r.gain === null ? "—" : `${r.gain > 0 ? "+" : "−"}${metres(Math.abs(r.gain))}`}
-                <small className="block font-sans text-[0.6875rem] leading-4 font-normal text-ink-2">
+                <small className="block font-sans text-xs leading-4 font-normal text-ink-2">
                   {r.verdict === "too-steep" ? "too steep" : r.verdict}
                 </small>
               </span>

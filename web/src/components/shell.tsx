@@ -45,7 +45,7 @@ export function BackHead({
       <Link
         href={back}
         aria-label="Back"
-        className="grid size-9 shrink-0 place-items-center rounded-lg border border-line bg-surface hover:border-ink-2"
+        className="grid size-11 shrink-0 place-items-center rounded-lg border border-line bg-surface hover:border-ink-2"
       >
         <IconBack className="size-[18px]" />
       </Link>
