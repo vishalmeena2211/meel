@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 
-import { PageTitle } from "@/components/form";
+import { TopHead, WideTitle } from "@/components/shell";
 import { RoutePicker } from "@/components/tools/route-picker";
 import { getIndex } from "@/lib/content";
 
@@ -19,10 +19,12 @@ export default async function ToolsPage() {
   }));
   return (
     <div className="mx-auto flex w-full max-w-xl flex-col gap-4">
-      <PageTitle
+      <TopHead title="Tools" sub="Work with no network" />
+      <WideTitle
         title="Tools"
         lede="Three tools that work on any route. They run on your phone, need no account, and send nothing anywhere."
       />
+      <p className="hint md:hidden">They run on your phone, need no account, and send nothing anywhere.</p>
       <RoutePicker routes={routes} />
     </div>
   );

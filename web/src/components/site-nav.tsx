@@ -48,7 +48,7 @@ export function SiteNav() {
   const pathname = usePathname();
   const me = useMe();
   return (
-    <nav aria-label="Main" className="ml-auto flex items-center gap-1">
+    <nav aria-label="Main" className="ml-auto flex items-center gap-1 lg:ml-2">
       <div className="hidden items-center gap-1 md:flex">
         {TABS.slice(0, 3).map((t) => (
           <Link
@@ -68,20 +68,27 @@ export function SiteNav() {
           About
         </Link>
       </div>
-      {me ? (
-        <Link
-          href="/account"
-          aria-label={`Your account, ${me.name}`}
-          className="font-display ml-1 grid size-9 place-items-center rounded-full border-[1.5px] border-ink bg-stone text-sm font-bold"
-        >
-          {me.initials}
-        </Link>
-      ) : (
-        <Link href="/login" className="btn btn-outline ml-1 !min-h-9 px-3 text-sm">
-          Log in
-        </Link>
-      )}
+      <MeBadge me={me} />
     </nav>
+  );
+}
+
+/** Who is logged in, as a round badge. Or the way to log in. */
+export function MeBadge({ me }: { me?: Me | null }) {
+  const asked = useMe();
+  const who = me === undefined ? asked : me;
+  return who ? (
+    <Link
+      href="/account"
+      aria-label={`Your account, ${who.name}`}
+      className="font-display ml-1 grid size-9 shrink-0 place-items-center rounded-full border-[1.5px] border-ink bg-stone text-sm font-bold"
+    >
+      {who.initials}
+    </Link>
+  ) : (
+    <Link href="/login" className="btn btn-outline ml-1 !min-h-9 shrink-0 px-3 text-sm">
+      Log in
+    </Link>
   );
 }
 
@@ -90,7 +97,7 @@ export function TabBar() {
   return (
     <nav
       aria-label="Sections"
-      className="fixed inset-x-0 bottom-0 z-30 grid grid-cols-4 border-t border-line bg-surface px-1 pt-1.5 pb-[max(0.5rem,env(safe-area-inset-bottom))] md:hidden"
+      className="tab-bar fixed inset-x-0 bottom-0 z-30 grid grid-cols-4 border-t border-line bg-surface px-1 pt-1.5 pb-[max(0.5rem,env(safe-area-inset-bottom))] md:hidden"
     >
       {TABS.map(({ href, label, match, Icon }) => (
         <Link

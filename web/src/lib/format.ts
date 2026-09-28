@@ -15,14 +15,17 @@ export function monthName(month: number, short = false): string {
   return list[month - 1] ?? "";
 }
 
-/** "2026-06-01" becomes "1 June 2026". "2026-06" becomes "June 2026". "2026" stays. */
-export function sayDate(value: string | null | undefined): string | null {
+/**
+ * "2026-06-01" becomes "1 June 2026". "2026-06" becomes "June 2026". "2026" stays.
+ * In a narrow column, ask for the short form: "1 June 2026", "11 Oct 2026".
+ */
+export function sayDate(value: string | null | undefined, short = false): string | null {
   if (!value) return null;
   const match = /^(\d{4})(?:-(\d{2}))?(?:-(\d{2}))?/.exec(value);
   if (!match) return value;
   const [, year, month, day] = match;
   if (!month) return year ?? value;
-  const name = monthName(Number(month));
+  const name = monthName(Number(month), short);
   if (!day) return `${name} ${year}`;
   return `${Number(day)} ${name} ${year}`;
 }

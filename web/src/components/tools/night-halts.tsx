@@ -6,7 +6,8 @@ import { metres } from "@/lib/format";
 import type { ProfilePoint, Waypoint } from "@/lib/types";
 
 import { Profile, type ProfileMark } from "../route/drawings";
-import { Callout } from "../ui";
+import { BackHead, Foot } from "../shell";
+import { Callout, SectionHeading } from "../ui";
 
 // Proposed limits, in metres gained between two nights. To be read by a doctor who knows altitude.
 const STEEP = 500;
@@ -17,6 +18,8 @@ interface Halt {
   km: number;
   m: number;
 }
+
+type Verdict = "start" | "fine" | "steep" | "too-steep" | "descends";
 
 function haltsOf(waypoints: Waypoint[]): Halt[] {
   const seen = new Set<string>();
@@ -29,144 +32,219 @@ function haltsOf(waypoints: Waypoint[]): Halt[] {
   return out;
 }
 
-export function NightHalts({
+function verdictOf(gain: number | null): Verdict {
+  if (gain === null) return "start";
+  if (gain < 0) return "descends";
+  if (gain > TOO_STEEP) return "too-steep";
+  return gain > STEEP ? "steep" : "fine";
+}
+
+/**
+ * Between two nights, the halt that splits the climb most evenly.
+ * Null when no halt lies between them, or none would make the climb any gentler.
+ */
+function gentler(before: Halt, after: Halt, halts: Halt[]): Halt | null {
+  const now = after.m - before.m;
+  let best: Halt | null = null;
+  let bestWorst = now;
+  for (const h of halts) {
+    if (h.km <= before.km || h.km >= after.km) continue;
+    const worst = Math.max(h.m - before.m, after.m - h.m);
+    if (worst < bestWorst - 50) {
+      best = h;
+      bestWorst = worst;
+    }
+  }
+  return best;
+}
+
+export function AltitudeScreen({
   waypoints,
   profile,
   distanceKm,
+  routeName,
+  routeSlug,
+  highest,
 }: {
   waypoints: Waypoint[];
   profile: ProfilePoint[];
   distanceKm: number;
+  routeName: string;
+  routeSlug: string;
+  /** The highest place anyone sleeps on this road. */
+  highest: string | null;
 }) {
   const halts = useMemo(() => haltsOf(waypoints), [waypoints]);
   const [nights, setNights] = useState<string[]>([]);
+  const [checked, setChecked] = useState(false);
+  const back = `/routes/${routeSlug}`;
 
   // Nights are always in the order the road meets them.
   const chosen = halts.filter((h) => nights.includes(h.name));
-
   const rows = chosen.map((h, i) => {
     const before = chosen[i - 1];
     const gain = before ? h.m - before.m : null;
-    const verdict: "start" | "fine" | "steep" | "too-steep" | "descends" =
-      gain === null ? "start" : gain < 0 ? "descends" : gain > TOO_STEEP ? "too-steep" : gain > STEEP ? "steep" : "fine";
-    return { ...h, night: i + 1, gain, verdict };
+    return { ...h, night: i + 1, gain, verdict: verdictOf(gain), before: before ?? null };
   });
-
   const worst = rows.reduce<(typeof rows)[number] | null>(
     (w, r) => (r.gain !== null && (w === null || (w.gain ?? 0) < r.gain) ? r : w),
     null,
   );
+  const add = worst && worst.before && (worst.gain ?? 0) > STEEP ? gentler(worst.before, worst, halts) : null;
 
   const passes: ProfileMark[] = waypoints
     .filter((w) => w.kind === "pass" && w.altitude_m !== null)
     .map((w) => ({ name: w.name, km: w.km_from_start, m: w.altitude_m ?? 0 }));
   const marks: ProfileMark[] = [
     ...passes,
-    ...rows.map((r) => ({ name: r.name, km: r.km, m: r.m, night: r.night, tooSteep: r.verdict === "too-steep" })),
+    ...(checked ? rows : halts.map((h) => ({ ...h, night: undefined, verdict: "fine" as Verdict }))).map((r) => ({
+      name: r.name,
+      km: r.km,
+      m: r.m,
+      night: "night" in r ? r.night : undefined,
+      tooSteep: r.verdict === "too-steep",
+    })),
   ].sort((a, b) => a.km - b.km);
 
-  function toggle(name: string) {
+  const toggle = (name: string) =>
     setNights(nights.includes(name) ? nights.filter((n) => n !== name) : [...nights, name]);
-  }
 
   if (halts.length < 2) {
-    return <Callout title="Not enough heights to check">This route has fewer than two halts with a known height.</Callout>;
+    return (
+      <div className="flex flex-col gap-3">
+        <BackHead title="Altitude" sub={routeName} back={back} />
+        <Callout title="Not enough heights to check">This route has fewer than two halts with a known height.</Callout>
+      </div>
+    );
+  }
+
+  if (checked && rows.length >= 2) {
+    const gain = worst?.gain ?? 0;
+    return (
+      <div className="flex flex-col gap-3">
+        <BackHead title="Altitude" sub="Your night halts" back={back} />
+        <Profile profile={profile} distanceKm={distanceKm} marks={marks} />
+
+        {worst && worst.verdict === "too-steep" ? (
+          <div role="status" className="flex flex-col gap-1.5 rounded-xl border border-stale-fg/30 bg-stale-bg p-3.5">
+            <span className="label !text-stale-fg">Night {worst.night} climbs too fast</span>
+            <p className="display num text-[2.125rem]">
+              +{metres(gain)} <small className="font-sans text-sm font-medium text-ink-2">between two nights</small>
+            </p>
+            <p className="text-sm">
+              {worst.before?.name} to {worst.name} in one day.{" "}
+              {add ? `Sleep at ${add.name} first.` : "No halt lies between them to break the climb."}
+            </p>
+          </div>
+        ) : worst && worst.verdict === "steep" ? (
+          <div role="status">
+            <Callout tone="warn" title={add ? `Night ${worst.night} is a steep climb` : "Steep, but the gentlest this road allows"}>
+              {add
+                ? `+${metres(gain)} between two nights. A night at ${add.name} would spread it.`
+                : `Walkers are told to gain no more than about ${STEEP} m a night. No plan between these halts can do that. This one spreads the climb over ${rows.length - 1} ${rows.length - 1 === 1 ? "day" : "days"}.`}
+            </Callout>
+          </div>
+        ) : (
+          <div role="status">
+            <Callout tone="info" title={`No night climbs more than ${STEEP} m above the one before`}>
+              That is the limit walkers are given. It is not a promise of how you will feel.
+            </Callout>
+          </div>
+        )}
+
+        <ol className="card flex flex-col">
+          {rows.map((r) => (
+            <li key={r.name} className="grid grid-cols-[30px_1fr_auto] items-center gap-2.5 border-b border-line px-3 py-2.5 last:border-b-0">
+              <span
+                className={`font-display grid size-[30px] place-items-center rounded-full border-[1.5px] border-ink text-[0.9375rem] font-bold ${
+                  r.verdict === "too-steep" ? "bg-stale-fg text-surface" : "bg-stone"
+                }`}
+              >
+                {r.night}
+              </span>
+              <span>
+                <b className="block text-[0.9375rem] leading-5">{r.name}</b>
+                <span className="hint num">Sleeps at {metres(r.m)}</span>
+              </span>
+              <span
+                className={`font-display num text-right text-[1.0625rem] leading-none font-bold ${
+                  r.verdict === "too-steep"
+                    ? "text-stale-fg"
+                    : r.verdict === "steep"
+                      ? "text-ageing-fg"
+                      : r.verdict === "start"
+                        ? "text-ink-2"
+                        : "text-fresh-fg"
+                }`}
+              >
+                {r.gain === null ? "—" : `${r.gain > 0 ? "+" : "−"}${metres(Math.abs(r.gain))}`}
+                <small className="block font-sans text-[0.6875rem] leading-4 font-normal text-ink-2">
+                  {r.verdict === "too-steep" ? "too steep" : r.verdict}
+                </small>
+              </span>
+            </li>
+          ))}
+        </ol>
+
+        <p className="hint">
+          This is not medical advice. It compares the height of your beds, nothing more. Heights are read from a 90 m
+          grid and can differ from a signboard by some tens of metres.
+        </p>
+        <button type="button" className="link self-start text-sm" onClick={() => setChecked(false)}>
+          Change my night halts
+        </button>
+
+        {add ? (
+          <Foot>
+            <button type="button" className="btn btn-primary btn-block" onClick={() => setNights([...nights, add.name])}>
+              Add a night at {add.name}
+            </button>
+          </Foot>
+        ) : null}
+      </div>
+    );
   }
 
   return (
     <div className="flex flex-col gap-3">
+      <BackHead title="Altitude" sub={routeName} back={back} />
       <Profile profile={profile} distanceKm={distanceKm} marks={marks} />
-
-      {rows.length < 2 ? (
-        <Callout title="Tick the places you will sleep">
-          Two or more. The check then compares the height of each night with the one before.
-        </Callout>
-      ) : worst && worst.gain !== null && worst.gain > STEEP ? (
-        <div
-          role="status"
-          className={`flex flex-col gap-1.5 rounded-xl border p-3.5 ${
-            worst.verdict === "too-steep" ? "border-stale-fg/30 bg-stale-bg" : "border-ageing-fg/30 bg-ageing-bg"
-          }`}
+      <SectionHeading title="Where riders sleep" aside={`${halts.length} halts`} />
+      <p className="hint">Tick the places you will sleep. Two or more.</p>
+      <ul className="card flex flex-col">
+        {halts.map((h) => {
+          const on = nights.includes(h.name);
+          return (
+            <li key={h.name} className="border-b border-line last:border-b-0">
+              <label className="flex min-h-12 cursor-pointer items-center gap-2.5 px-3 py-2 has-checked:bg-sign-soft">
+                <input
+                  type="checkbox"
+                  checked={on}
+                  onChange={() => toggle(h.name)}
+                  aria-label={`${h.name}, ${metres(h.m)}`}
+                  className="size-[18px] shrink-0 accent-sign"
+                />
+                <span className="min-w-0 flex-1">
+                  <b className="block text-[0.9375rem] leading-5">{h.name}</b>
+                  {h.name === highest ? <span className="hint">The highest place riders sleep on this road</span> : null}
+                </span>
+                <span className="num text-[0.9375rem] font-semibold">{metres(h.m)}</span>
+              </label>
+            </li>
+          );
+        })}
+      </ul>
+      <p className="hint">Runs on this phone. It works with no network.</p>
+      <Foot>
+        <button
+          type="button"
+          className="btn btn-primary btn-block"
+          disabled={chosen.length < 2}
+          onClick={() => setChecked(true)}
         >
-          <span className={`label ${worst.verdict === "too-steep" ? "!text-stale-fg" : "!text-ageing-fg"}`}>
-            Night {worst.night} {worst.verdict === "too-steep" ? "climbs too fast" : "is a steep climb"}
-          </span>
-          <p className="display num text-[2.125rem]">
-            +{metres(worst.gain)} <small className="font-sans text-sm font-medium text-ink-2">between two nights</small>
-          </p>
-          <p className="text-sm">
-            {worst.verdict === "too-steep"
-              ? `Add a night lower down before ${worst.name}.`
-              : "Walkers are told to gain no more than about 500 m a night. Few mountain roads allow that, so spread the climb as widely as the road lets you."}
-          </p>
-        </div>
-      ) : (
-        <div role="status">
-          <Callout tone="info" title="No night climbs more than 500 m above the one before">
-            That is the limit walkers are given. It is not a promise of how you will feel.
-          </Callout>
-        </div>
-      )}
-
-      <fieldset className="flex flex-col gap-1">
-        <legend className="label mb-1">Where you will sleep</legend>
-        <ul className="card flex flex-col">
-          {halts.map((h) => {
-            const row = rows.find((r) => r.name === h.name);
-            return (
-              <li key={h.name} className="border-b border-line last:border-b-0">
-                <label className="grid min-h-[52px] cursor-pointer grid-cols-[30px_1fr_auto] items-center gap-2.5 px-3 py-2">
-                  <span className="relative grid size-[30px] place-items-center">
-                    <input
-                      type="checkbox"
-                      checked={row !== undefined}
-                      onChange={() => toggle(h.name)}
-                      className="peer absolute inset-0 size-full cursor-pointer opacity-0"
-                    />
-                    <span
-                      aria-hidden="true"
-                      className={`font-display grid size-[30px] place-items-center rounded-full border-[1.5px] text-[0.9375rem] font-bold peer-focus-visible:outline-2 peer-focus-visible:outline-offset-2 peer-focus-visible:outline-sign ${
-                        row ? "border-ink bg-stone" : "border-rule bg-surface text-transparent"
-                      }`}
-                    >
-                      {row ? row.night : "0"}
-                    </span>
-                  </span>
-                  <span>
-                    <b className="block text-[0.9375rem] leading-5">{h.name}</b>
-                    <span className="hint num">
-                      {metres(h.m)} · {Math.round(h.km).toLocaleString("en-IN")} km from the start
-                    </span>
-                  </span>
-                  {row ? (
-                    <span
-                      className={`font-display num text-right text-[1.0625rem] leading-none font-bold ${
-                        row.verdict === "too-steep"
-                          ? "text-stale-fg"
-                          : row.verdict === "steep"
-                            ? "text-ageing-fg"
-                            : row.verdict === "start"
-                              ? "text-ink-2"
-                              : "text-fresh-fg"
-                      }`}
-                    >
-                      {row.gain === null ? "—" : `${row.gain > 0 ? "+" : "−"}${metres(Math.abs(row.gain))}`}
-                      <small className="block font-sans text-[0.6875rem] leading-4 font-normal text-ink-2">
-                        {row.verdict === "start" ? "first night" : row.verdict === "too-steep" ? "too steep" : row.verdict}
-                      </small>
-                    </span>
-                  ) : null}
-                </label>
-              </li>
-            );
-          })}
-        </ul>
-      </fieldset>
-
-      <p className="hint">
-        This is not medical advice. It compares the height of your beds, nothing more. Heights are read from a 90 m
-        grid and can differ from a signboard by some tens of metres.
-      </p>
+          Check my night halts
+        </button>
+      </Foot>
     </div>
   );
 }

@@ -1,13 +1,14 @@
 import "server-only";
 
-import { revalidatePath } from "next/cache";
 import { z } from "zod";
 
+import { CHANGE_VALUES } from "@/lib/change-choices";
 import { getRoute } from "@/lib/content";
 import { indiaDay, shortName } from "@/lib/format";
 
 import { currentUser } from "./auth";
 import { inboxHasRoom, sendFactReport } from "./reports";
+import { refreshRoute } from "./refresh";
 
 export interface FactReportAnswer {
   ok: boolean;
@@ -22,7 +23,7 @@ const factReport = z.object({
   fact: z.string().min(3).max(120),
   title: z.string().min(1).max(160),
   kind: z.enum(["still-true", "changed"]),
-  change: z.enum(["closed", "moved", "wrong-detail", "rule-changed", "other"]).optional(),
+  change: z.enum(CHANGE_VALUES).optional(),
   note: z.string().trim().max(400).optional(),
   seen_on: z
     .string()
@@ -80,7 +81,7 @@ export async function takeFactReport(form: FormData): Promise<FactReportAnswer> 
     name: user ? user.shown_as : input.name ? shortName(input.name) : null,
     userId: user?.id ?? null,
   });
-  revalidatePath(`/routes/${input.route}`);
+  refreshRoute(input.route);
   return {
     ok: true,
     errors: {},

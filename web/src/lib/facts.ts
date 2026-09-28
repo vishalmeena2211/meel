@@ -12,18 +12,25 @@ export const STATE_WORDS: Record<FactState, string> = {
 
 export interface FactStanding {
   state: FactState;
-  /** The newest confirmation, if any. */
+  /** The newest report the editor has read, if any. */
   latest: Confirmation | null;
+  /** The one before it. */
+  previous: Confirmation | null;
   daysOld: number | null;
+  /** True when the newest report the editor read was of a change: the fact was updated from it. */
+  updated: boolean;
+  /** A report of a change that the editor has not read yet. */
+  waiting: Confirmation | null;
 }
 
 /**
  * Work out how much a fact can be trusted today.
  *
- * - No confirmation at all: not yet checked.
- * - The two newest confirmations disagree, within 30 days of each other: reports disagree.
- * - The newest says something changed: change reported.
- * - Otherwise its age decides, against the limits for that kind of fact.
+ * - A change has been reported and the editor has not read it: change reported.
+ * - Nothing the editor has read: not yet checked.
+ * - The two newest reports disagree, within 30 days of each other: reports disagree.
+ * - Otherwise the age of the newest report decides, against the limits for that kind of fact.
+ *   That holds whether the newest report confirmed the fact or updated it.
  */
 export function standingOf(
   confirmations: Confirmation[],
@@ -31,24 +38,28 @@ export function standingOf(
   today: Date,
 ): FactStanding {
   const sorted = [...confirmations].sort((a, b) => b.seen_on.localeCompare(a.seen_on));
-  const latest = sorted[0] ?? null;
-  if (!latest) return { state: "unchecked", latest: null, daysOld: null };
+  const read = sorted.filter((c) => c.read !== false);
+  const waiting = sorted.find((c) => c.read === false) ?? null;
+  const latest = read[0] ?? null;
+  const previous = read[1] ?? null;
+  const daysOld = latest ? daysBetween(latest.seen_on, today) : null;
+  const updated = latest?.kind === "changed";
 
-  const daysOld = daysBetween(latest.seen_on, today);
-  const previous = sorted[1];
-  if (previous && previous.kind !== latest.kind) {
-    const apart = Math.abs(
-      daysBetween(previous.seen_on, new Date(`${latest.seen_on.slice(0, 10)}T00:00:00Z`)),
-    );
-    if (apart <= 30) return { state: "conflict", latest, daysOld };
+  if (waiting && (!latest || waiting.seen_on >= latest.seen_on)) {
+    return { state: "pending", latest, previous, daysOld, updated, waiting };
   }
-  if (latest.kind === "changed") return { state: "pending", latest, daysOld };
+  if (!latest || daysOld === null) {
+    return { state: "unchecked", latest: null, previous: null, daysOld: null, updated: false, waiting: null };
+  }
+  if (previous && previous.kind !== latest.kind) {
+    const apart = Math.abs(daysBetween(previous.seen_on, new Date(`${latest.seen_on.slice(0, 10)}T00:00:00Z`)));
+    if (apart <= 30) return { state: "conflict", latest, previous, daysOld, updated, waiting: null };
+  }
 
   const ageing = kind?.ageing_after_days ?? 180;
   const stale = kind?.stale_after_days ?? 365;
-  if (daysOld > stale) return { state: "stale", latest, daysOld };
-  if (daysOld > ageing) return { state: "ageing", latest, daysOld };
-  return { state: "fresh", latest, daysOld };
+  const state: FactState = daysOld > stale ? "stale" : daysOld > ageing ? "ageing" : "fresh";
+  return { state, latest, previous, daysOld, updated, waiting: null };
 }
 
 /** Which kind of fact an id belongs to, from its prefix. */
@@ -62,6 +73,12 @@ export function kindIdOf(factId: string): string {
     case "authority":
       return "authority";
     case "hazard":
+      return "hazard";
+    case "mechanic":
+      return "mechanic";
+    case "stay":
+      return "stay";
+    case "sighting":
       return "hazard";
     default:
       return "rule";

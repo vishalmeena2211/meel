@@ -6,19 +6,37 @@ import type { Fuel, ProfilePoint, Waypoint } from "@/lib/types";
 
 export function GapStrip({ fuel, distanceKm, from, to }: { fuel: Fuel; distanceKm: number; from: string; to: string }) {
   const longest = fuel.longest_gaps[0];
-  const pct = (value: number) => `${Math.max(0, Math.min(100, (value / distanceKm) * 100))}%`;
+  const share = (value: number) => Math.max(0, Math.min(100, (value / distanceKm) * 100));
+  const pct = (value: number) => `${share(value)}%`;
   const stops = collapse(fuel.pumps.map((p) => p.km_from_start));
   const label = longest
     ? `Fuel pumps along the road, drawn to scale. The longest stretch with no pump is ${km(longest.gap_km)}, from near ${longest.near_from} to near ${longest.near_to}.`
     : "Fuel pumps along the road, drawn to scale.";
+
+  // The pump on each side of the longest gap is named, where there is room for the name.
+  const named = longest && longest.gap_km >= 40
+    ? [
+        { at: longest.from_km, name: longest.near_from, side: "right" as const },
+        { at: longest.to_km, name: longest.near_to, side: "left" as const },
+      ].filter((n) => share(n.at) > 9 && share(n.at) < 91)
+    : [];
+
   return (
     <figure className="flex flex-col gap-1">
-      <div role="img" aria-label={label} className="relative mx-1 h-16">
-        <div className="absolute inset-x-0 top-7 h-1.5 rounded-full bg-sign" />
+      <div role="img" aria-label={label} className="relative mx-1 h-[5.25rem]">
+        <span className="absolute top-0 left-0 text-xs leading-4 font-semibold">
+          {from}
+          <small className="hint num block text-[0.6875rem] font-normal">0 km</small>
+        </span>
+        <span className="absolute top-0 right-0 text-right text-xs leading-4 font-semibold">
+          {to}
+          <small className="hint num block text-[0.6875rem] font-normal">{km(distanceKm)}</small>
+        </span>
+        <div className="absolute inset-x-0 top-[2.625rem] h-1.5 rounded-full bg-sign" />
         {longest && longest.gap_km >= 40 ? (
           <>
             <div
-              className="absolute top-7 h-1.5"
+              className="absolute top-[2.625rem] h-1.5"
               style={{
                 left: pct(longest.from_km),
                 width: pct(longest.gap_km),
@@ -27,20 +45,26 @@ export function GapStrip({ fuel, distanceKm, from, to }: { fuel: Fuel; distanceK
               }}
             />
             <span
-              className="font-display absolute top-1 -translate-x-1/2 text-xs font-semibold tracking-wider whitespace-nowrap text-stale-fg uppercase"
-              style={{ left: pct(longest.from_km + longest.gap_km / 2) }}
+              className="font-display absolute top-[1.375rem] -translate-x-1/2 text-xs font-semibold tracking-wider whitespace-nowrap text-stale-fg uppercase"
+              style={{ left: `${Math.max(22, Math.min(78, share(longest.from_km + longest.gap_km / 2)))}%` }}
             >
               {km(longest.gap_km)} · no pump
             </span>
           </>
         ) : null}
         {stops.map((at) => (
-          <span key={at} className="absolute top-5 h-5 w-0.5 bg-ink" style={{ left: pct(at) }} />
+          <span key={at} className="absolute top-[2.125rem] h-5 w-0.5 bg-ink" style={{ left: pct(at) }} />
         ))}
-        <span className="hint num absolute top-11 left-0 text-xs font-semibold text-ink">{from}</span>
-        <span className="hint num absolute top-11 right-0 text-right text-xs font-semibold text-ink">
-          {to} · {km(distanceKm)}
-        </span>
+        {named.map((n) => (
+          <span
+            key={n.name + n.at}
+            className={`absolute top-[3.5rem] text-xs leading-4 font-semibold ${n.side === "left" ? "-translate-x-full pr-1 text-right" : "pl-1"}`}
+            style={{ left: pct(n.at) }}
+          >
+            {n.name}
+            <small className="hint num block text-[0.6875rem] font-normal">{km(n.at)}</small>
+          </span>
+        ))}
       </div>
       <figcaption className="hint">
         Each mark is a pump on the open map. A pump missing from the map is missing here, so the gap is a worst case.

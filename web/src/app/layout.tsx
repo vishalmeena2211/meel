@@ -2,6 +2,8 @@ import type { Metadata, Viewport } from "next";
 import { Barlow_Condensed, Hind } from "next/font/google";
 import Link from "next/link";
 
+import { IconSearch } from "@/components/icons";
+import { OutboxSender } from "@/components/offline/outbox-sender";
 import { SiteNav, TabBar } from "@/components/site-nav";
 import { KmStone } from "@/components/ui";
 
@@ -47,12 +49,23 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
           Skip to the page
         </a>
 
-        <header className="sticky top-0 z-30 border-b border-line bg-surface">
-          <div className="mx-auto flex h-14 w-full max-w-6xl items-center gap-3 px-4">
+        <header className="site-head sticky top-0 z-30 border-b border-line bg-surface">
+          <div className="site-bar mx-auto flex h-14 w-full max-w-6xl items-center gap-3 px-4">
             <Link href="/" className="flex items-center gap-2" aria-label="Meel, all routes">
               <KmStone cap="" value="M" unit="" size="sm" />
               <span className="display text-[1.375rem] tracking-wide uppercase">Meel</span>
             </Link>
+            <form action="/" role="search" className="relative ml-3 hidden w-72 lg:block">
+              <IconSearch className="absolute top-1/2 left-3 size-4 -translate-y-1/2 text-ink-2" />
+              <input
+                type="search"
+                name="q"
+                aria-label="Search a route or place"
+                placeholder="Search a route or place"
+                className="field-input !min-h-10 !py-1.5 !pl-9 text-sm"
+              />
+            </form>
+            <div id="head-slot" className="ml-auto hidden items-center gap-2 lg:flex" />
             <SiteNav />
           </div>
         </header>
@@ -61,7 +74,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
           {children}
         </main>
 
-        <footer className="border-t border-line bg-surface pb-24 md:pb-0">
+        <footer className="site-foot border-t border-line bg-surface pb-24 md:pb-0">
           <div className="hint mx-auto flex w-full max-w-6xl flex-col gap-2 px-4 py-5">
             <p>
               Map data ©{" "}
@@ -81,6 +94,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         </footer>
 
         <TabBar />
+        <OutboxSender />
       </body>
     </html>
   );

@@ -223,6 +223,122 @@ body {
   .num {
     font-variant-numeric: tabular-nums;
   }
+
+  /* One fact in a list: short, and the whole of it can be tapped. */
+  .fact {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    padding: 0.625rem 0.75rem;
+    background: var(--color-surface);
+    border: 1px solid var(--color-line);
+    border-radius: 0.5rem;
+    scroll-margin-top: 7rem;
+  }
+  .fact:hover {
+    border-color: var(--color-ink-2);
+  }
+  .fact:target,
+  .fact[data-hi="true"] {
+    border-color: var(--color-ink);
+    box-shadow: 0 0 0 3px var(--color-stone-soft);
+  }
+  .fact-open::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+  }
+  .fact-over {
+    position: relative;
+    z-index: 1;
+  }
+
+  /* Dates down the left, what happened on the right. */
+  .timeline {
+    display: flex;
+    flex-direction: column;
+  }
+  .timeline > li {
+    display: grid;
+    grid-template-columns: 92px 1fr;
+    gap: 0.625rem;
+    padding: 0.5rem 0;
+    border-bottom: 1px dashed var(--color-line);
+    font-size: 0.8125rem;
+    line-height: 1.125rem;
+  }
+  .timeline > li:last-child {
+    border-bottom: 0;
+  }
+  .timeline > li > span:first-child {
+    color: var(--color-ink-2);
+    font-variant-numeric: tabular-nums;
+  }
+
+  /* A sheet that rises from the foot of a phone, and sits in the middle of a wider screen. */
+  .sheet {
+    margin: auto auto 0;
+    width: 100%;
+    max-width: none;
+    max-height: 92dvh;
+    overflow-y: auto;
+    padding: 0;
+    border-radius: 1.125rem 1.125rem 0 0;
+    background: var(--color-surface);
+    color: var(--color-ink);
+  }
+  .sheet::backdrop {
+    background: rgb(22 32 28 / 0.45);
+  }
+  @media (min-width: 768px) {
+    .sheet {
+      margin: auto;
+      max-width: 28rem;
+      border-radius: 1rem;
+    }
+  }
+}
+
+/*
+  On a phone each screen brings its own header, as drawn in the wireframes.
+  The four top-level screens keep the bar of tabs. Every other screen has a way back and no tabs.
+  The site's own bar is for wider screens, and for a page that brings no header.
+*/
+@media (max-width: 767px) {
+  body:has([data-head]) .site-head {
+    display: none;
+  }
+  body:has([data-inner]) .tab-bar,
+  body:has([data-foot="alone"]) .tab-bar {
+    display: none;
+  }
+  body:has([data-inner]) .site-foot {
+    padding-bottom: 1.25rem;
+  }
+  body:has([data-foot]) .site-foot {
+    padding-bottom: 6rem;
+  }
+  body:has([data-foot="with-tabs"]) .site-foot {
+    padding-bottom: 9.5rem;
+  }
+}
+
+/* On a wider screen a route fills the window: sections on the left, facts in the middle, what is checked often on the right. */
+@media (min-width: 1024px) {
+  main:has(> [data-desk]) {
+    max-width: none;
+    padding: 0;
+  }
+  body:has([data-desk]) .site-bar {
+    max-width: none;
+    padding-inline: 1.5rem;
+  }
+  body:has([data-desk]) .site-foot > div {
+    max-width: none;
+    padding-inline: 1.5rem;
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {

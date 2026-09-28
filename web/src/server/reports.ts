@@ -111,6 +111,7 @@ export function confirmationsFor(routeSlug: string): Confirmation[] {
     kind: r.kind,
     note: r.status === "applied" ? r.note : null,
     read: r.status === "applied",
+    applied_on: r.status === "applied" ? r.decided_at : null,
   }));
 }
 
@@ -146,6 +147,46 @@ export function tripReportCount(routeSlug: string): number {
   }
 }
 
+/** For each route, how many facts riders confirmed in the last seven days. */
+export function confirmedLately(): Record<string, number> {
+  try {
+    const since = new Date(Date.now() - 7 * 86_400_000).toISOString().slice(0, 10);
+    const rows = all<{ route_slug: string; n: number }>(
+      `SELECT route_slug, COUNT(DISTINCT fact_id) AS n FROM fact_reports
+        WHERE status = 'applied' AND seen_on >= ? GROUP BY route_slug`,
+      since,
+    );
+    return Object.fromEntries(rows.map((r) => [r.route_slug, r.n]));
+  } catch {
+    return {};
+  }
+}
+
+/** Trip reports the editor has read and used, for working out bikes, hours and costs. Newest first. */
+export function tripReportsUsed(
+  routeSlug: string,
+): Array<{ month: string; bike: string; by: string | null; body: Record<string, unknown> }> {
+  let rows: TripReportRow[] = [];
+  try {
+    rows = all<TripReportRow>(
+      "SELECT * FROM trip_reports WHERE route_slug = ? AND status = 'applied' ORDER BY month DESC LIMIT 500",
+      routeSlug,
+    );
+  } catch {
+    return [];
+  }
+  return rows.map((r) => {
+    let body: Record<string, unknown> = {};
+    try {
+      const parsed = JSON.parse(r.body) as unknown;
+      if (parsed && typeof parsed === "object" && !Array.isArray(parsed)) body = parsed as Record<string, unknown>;
+    } catch {
+      body = {};
+    }
+    return { month: r.month, bike: r.bike, by: r.name, body };
+  });
+}
+
 export function suggestPlace(place: string, note: string | null, name: string | null): void {
   run(
     "INSERT INTO suggestions (id, place, note, name, created_at) VALUES (?, ?, ?, ?, ?)",
@@ -171,16 +212,47 @@ export function factReport(id: string): FactReportRow | null {
   return one<FactReportRow>("SELECT * FROM fact_reports WHERE id = ?", id);
 }
 
-export function decideFactReport(id: string, decision: "applied" | "set-aside", note?: string): void {
-  if (note !== undefined) {
-    run("UPDATE fact_reports SET status = ?, decided_at = ?, note = ? WHERE id = ?", decision, now(), note, id);
+export function decideFactReport(
+  id: string,
+  decision: "applied" | "set-aside",
+  wording?: string,
+  reason?: string,
+): void {
+  if (wording !== undefined) {
+    run("UPDATE fact_reports SET status = ?, decided_at = ?, note = ? WHERE id = ?", decision, now(), wording, id);
   } else {
-    run("UPDATE fact_reports SET status = ?, decided_at = ? WHERE id = ?", decision, now(), id);
+    run(
+      "UPDATE fact_reports SET status = ?, decided_at = ?, editor_note = ? WHERE id = ?",
+      decision,
+      now(),
+      reason ?? null,
+      id,
+    );
   }
 }
 
-export function decideTripReport(id: string, decision: "applied" | "set-aside"): void {
-  run("UPDATE trip_reports SET status = ? WHERE id = ?", decision, id);
+export function decideTripReport(id: string, decision: "applied" | "set-aside", reason?: string): void {
+  run("UPDATE trip_reports SET status = ?, editor_note = ? WHERE id = ?", decision, reason ?? null, id);
+}
+
+export function tripReport(id: string): TripReportRow | null {
+  return one<TripReportRow>("SELECT * FROM trip_reports WHERE id = ?", id);
+}
+
+/** How many other riders have said the same of the same fact, in the thirty days around this report. */
+export function othersSaying(report: FactReportRow): number {
+  const from = new Date(new Date(`${report.seen_on}T00:00:00Z`).getTime() - 30 * 86_400_000).toISOString().slice(0, 10);
+  return (
+    one<{ n: number }>(
+      `SELECT COUNT(*) AS n FROM fact_reports
+        WHERE route_slug = ? AND fact_id = ? AND kind = ? AND id <> ? AND status <> 'set-aside' AND seen_on >= ?`,
+      report.route_slug,
+      report.fact_id,
+      report.kind,
+      report.id,
+      from,
+    )?.n ?? 0
+  );
 }
 
 /** How many earlier reports from the same person were applied. Shown to the editor as evidence. */

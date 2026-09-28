@@ -6,14 +6,27 @@ import { monthName } from "@/lib/format";
 import type { PackingList as List } from "@/lib/types";
 import { parseStored, useStored } from "@/lib/use-stored";
 
-const LINK_WORDS: Record<string, { label: string; hash: string }> = {
-  "fuel-check": { label: "Fuel check", hash: "#fuel" },
-  rules: { label: "Rules", hash: "#rules" },
-  save: { label: "How to save", hash: "#save" },
+const LINK_WORDS: Record<string, { label: string; to: string }> = {
+  "fuel-check": { label: "Fuel check", to: "fuel-check" },
+  rules: { label: "Rules", to: "rules" },
+  save: { label: "Save this route", to: "" },
 };
 
-export function PackingList({ list, routeSlug }: { list: List; routeSlug: string }) {
-  const [month, setMonth] = useState<number>(() => new Date().getMonth() + 1);
+export function PackingList({
+  list,
+  routeSlug,
+  months,
+}: {
+  list: List;
+  routeSlug: string;
+  /** The months this road is usually ridden. Only these are offered. Null means every month. */
+  months: number[] | null;
+}) {
+  const offered = months && months.length > 0 ? months : Array.from({ length: 12 }, (_, i) => i + 1);
+  const [month, setMonth] = useState<number>(() => {
+    const now = new Date().getMonth() + 1;
+    return offered.includes(now) ? now : (offered[0] ?? now);
+  });
   const [raw, setRaw] = useStored(`meel:packing:${routeSlug}`);
   const ticked =
     parseStored(raw, (v): v is string[] => Array.isArray(v) && v.every((x) => typeof x === "string")) ?? [];
@@ -28,7 +41,7 @@ export function PackingList({ list, routeSlug }: { list: List; routeSlug: string
   return (
     <div className="flex flex-col gap-3">
       <div className="scroll-row" role="group" aria-label="Month of your ride">
-        {Array.from({ length: 12 }, (_, i) => i + 1).map((m) => (
+        {offered.map((m) => (
           <button key={m} type="button" className="chip" aria-pressed={m === month} onClick={() => setMonth(m)}>
             {monthName(m, true)}
           </button>
@@ -55,7 +68,7 @@ export function PackingList({ list, routeSlug }: { list: List; routeSlug: string
                   {link ? (
                     <>
                       {" "}
-                      <a className="link font-medium" href={link.hash}>
+                      <a className="link font-medium" href={`/routes/${routeSlug}/${link.to}`}>
                         {link.label}
                       </a>
                     </>

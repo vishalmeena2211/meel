@@ -179,6 +179,63 @@ export interface RouteHeader {
   usual_season: Sourced<string> | null;
 }
 
+/*
+  The five kinds below come only from riders. No route has any yet.
+  The site shows each section as soon as its list is not empty.
+*/
+
+/** A mechanic or puncture shop a rider used. A phone number is shown only if the shop agreed to it. */
+export interface Mechanic {
+  id: string;
+  name: string;
+  village: string;
+  fixes: string;
+  phone: string | null;
+  phone_agreed: boolean;
+  source: Source | null;
+}
+
+/** A place to sleep that has no listing online. */
+export interface Stay {
+  id: string;
+  name: string;
+  village: string;
+  notes: string;
+  phone: string | null;
+  phone_agreed: boolean;
+  source: Source | null;
+}
+
+/** What a rider saw on the road, on one day. Not official. */
+export interface Sighting {
+  id: string;
+  title: string;
+  detail: string;
+  seen_on: string;
+  by: string;
+  bike: string | null;
+}
+
+/** Whether one operator's network worked at one halt, in one month. */
+export interface NetworkReport {
+  halt: string;
+  operator: string;
+  worked: boolean;
+  /** "2027-06" */
+  month: string;
+  by: string;
+}
+
+/** How long one rider took over one stretch, with stops. */
+export interface LegHours {
+  from: string;
+  to: string;
+  hours: number;
+  month: string;
+  bike: string | null;
+  by: string;
+}
+
 export interface Route {
   slug: string;
   name: string;
@@ -206,6 +263,11 @@ export interface Route {
   gaps: string[];
   counts: { facts: number };
   built: string;
+  mechanics?: Mechanic[];
+  stays?: Stay[];
+  sightings?: Sighting[];
+  network?: NetworkReport[];
+  leg_hours?: LegHours[];
 }
 
 export interface RouteSummary {
@@ -288,4 +350,6 @@ export interface Confirmation {
   note: string | null;
   /** False while a report of a change waits for the editor. Its words are held back until then. */
   read?: boolean;
+  /** The moment the editor applied it to the page. */
+  applied_on?: string | null;
 }

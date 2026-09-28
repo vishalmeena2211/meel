@@ -90,6 +90,8 @@ export const IconUser = icon(
     <path d="M4 21a8 8 0 0 1 16 0" />
   </>,
 );
+export const IconSave = icon(<path d="M12 3v12M7 10l5 5 5-5M5 21h14" />);
+export const IconCloudOff = icon(<path d="M2 2l20 20M5.8 9.6A5 5 0 0 0 7 19h10M9.6 5.5A7 7 0 0 1 19 12a4 4 0 0 1 1.7 6.6" />);
 export const IconPlay = ({ className }: IconProps) => (
   <svg viewBox="0 0 24 24" aria-hidden="true" className={className ?? "size-4"} fill="currentColor">
     <path d="M7 4v16l13-8z" />

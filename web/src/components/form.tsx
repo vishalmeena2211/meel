@@ -1,5 +1,7 @@
 import type { InputHTMLAttributes, ReactNode, SelectHTMLAttributes, TextareaHTMLAttributes } from "react";
 
+import { BackHead, TopHead } from "./shell";
+
 export interface FormState {
   ok: boolean;
   message: string;
@@ -121,11 +123,38 @@ export function Select({
 
 export { ErrorSummary } from "./error-summary";
 
-export function PageTitle({ title, lede }: { title: string; lede?: string }) {
+/**
+ * The name of a page. On a wider screen it is a heading.
+ * On a phone it is the screen's own header: with a way back, or, on the four top-level screens, with the mark.
+ */
+export function PageTitle({
+  title,
+  lede,
+  phone,
+}: {
+  title: string;
+  lede?: string;
+  phone?: { title?: string; sub?: string; back?: string; right?: ReactNode };
+}) {
   return (
-    <header className="flex flex-col gap-1">
-      <h1 className="display text-[1.75rem] md:text-4xl">{title}</h1>
-      {lede ? <p className="hint max-w-[60ch] text-[0.9375rem]">{lede}</p> : null}
-    </header>
+    <>
+      {phone ? (
+        phone.back ? (
+          <BackHead title={phone.title ?? title} sub={phone.sub} back={phone.back} right={phone.right} />
+        ) : (
+          <TopHead title={phone.title ?? title} sub={phone.sub} />
+        )
+      ) : null}
+      <header className={phone ? "hidden flex-col gap-1 md:flex" : "flex flex-col gap-1"}>
+        {phone ? (
+          <p role="heading" aria-level={1} className="display text-4xl">
+            {title}
+          </p>
+        ) : (
+          <h1 className="display text-[1.75rem] md:text-4xl">{title}</h1>
+        )}
+        {lede ? <p className="hint max-w-[60ch] text-[0.9375rem]">{lede}</p> : null}
+      </header>
+    </>
   );
 }

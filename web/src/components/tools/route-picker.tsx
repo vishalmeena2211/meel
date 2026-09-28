@@ -5,6 +5,7 @@ import Link from "next/link";
 import { parseStored, useStored } from "@/lib/use-stored";
 
 import { IconBag, IconFuel, IconPeak, IconRight } from "../icons";
+import { isSavedBike } from "./fuel-check";
 
 interface Choice {
   slug: string;
@@ -17,12 +18,8 @@ export function RoutePicker({ routes }: { routes: Choice[] }) {
   const [last, setLast] = useStored("meel:route");
   const [bikeRaw] = useStored("meel:bike");
   const slug = last && routes.some((r) => r.slug === last) ? last : "";
-  const saved = parseStored(
-    bikeRaw,
-    (v): v is { tank: number; kmpl: number } =>
-      typeof v === "object" && v !== null && typeof (v as { tank?: unknown }).tank === "number" && typeof (v as { kmpl?: unknown }).kmpl === "number",
-  );
-  const bike = saved ? `${saved.tank} litres · ${saved.kmpl} km to a litre` : null;
+  const saved = parseStored(bikeRaw, isSavedBike);
+  const bike = saved ? `${saved.name} · ${saved.tank} litres` : null;
   const regions = [...new Set(routes.map((r) => r.region_name))];
   const chosen = routes.find((r) => r.slug === slug);
 
@@ -31,7 +28,7 @@ export function RoutePicker({ routes }: { routes: Choice[] }) {
   }
 
   const tools = [
-    { hash: "fuel", title: "Fuel check", hint: "Where you must carry extra fuel, for your bike", Icon: IconFuel, show: true },
+    { hash: "fuel-check", title: "Fuel check", hint: "Where you must carry extra fuel, for your bike", Icon: IconFuel, show: true },
     { hash: "altitude", title: "Altitude and night halts", hint: "How steeply your nights climb", Icon: IconPeak, show: chosen?.high ?? true },
     { hash: "packing", title: "Packing list", hint: "By route and month", Icon: IconBag, show: true },
   ].filter((t) => t.show);
@@ -75,7 +72,7 @@ export function RoutePicker({ routes }: { routes: Choice[] }) {
           return (
             <li key={hash} className="border-b border-line last:border-b-0">
               {chosen ? (
-                <Link href={`/routes/${chosen.slug}#${hash}`} className="flex min-h-12 items-center gap-2.5 px-3 py-2.5 hover:bg-surface-2">
+                <Link href={`/routes/${chosen.slug}/${hash}`} className="flex min-h-12 items-center gap-2.5 px-3 py-2.5 hover:bg-surface-2">
                   {inner}
                 </Link>
               ) : (
@@ -92,7 +89,14 @@ export function RoutePicker({ routes }: { routes: Choice[] }) {
       {bike ? (
         <div className="rounded-lg border border-line bg-surface-2 px-3 py-2.5 text-sm">
           <b className="block">Your bike is remembered on this phone</b>
-          {bike}. Change it in any fuel check.
+          {bike}.{" "}
+          {chosen ? (
+            <Link className="link" href={`/routes/${chosen.slug}/fuel-check`}>
+              Change
+            </Link>
+          ) : (
+            "Change it in any fuel check."
+          )}
         </div>
       ) : null}
     </div>
