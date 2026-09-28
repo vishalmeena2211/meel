@@ -3633,10 +3633,12 @@
     "brand": "Bharat Petroleum",
     "near": "Chennai",
     "km_from_start": 0.7,
+    "off_road_m": 505,
     "lat": 13.08054,
     "lon": 80.26658,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/12460941246"
+    "osm_url": "https://www.openstreetmap.org/node/12460941246",
+    "source": null
    },
    {
     "id": "fuel:node-303284326",
@@ -3644,10 +3646,12 @@
     "brand": null,
     "near": "Chennai",
     "km_from_start": 1.9,
+    "off_road_m": 369,
     "lat": 13.08516,
     "lon": 80.28355,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/303284326"
+    "osm_url": "https://www.openstreetmap.org/node/303284326",
+    "source": null
    },
    {
     "id": "fuel:node-303284327",
@@ -3655,10 +3659,12 @@
     "brand": null,
     "near": "Chennai",
     "km_from_start": 1.9,
+    "off_road_m": 430,
     "lat": 13.08622,
     "lon": 80.28125,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/303284327"
+    "osm_url": "https://www.openstreetmap.org/node/303284327",
+    "source": null
    },
    {
     "id": "fuel:node-308489028",
@@ -3666,10 +3672,12 @@
     "brand": "Hindustan Petroleum",
     "near": "Chennai",
     "km_from_start": 9.6,
+    "off_road_m": 705,
     "lat": 13.02602,
     "lon": 80.26612,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/308489028"
+    "osm_url": "https://www.openstreetmap.org/node/308489028",
+    "source": null
    },
    {
     "id": "fuel:node-13707153402",
@@ -3677,10 +3685,12 @@
     "brand": "Indian Oil",
     "near": "Chennai",
     "km_from_start": 10.4,
+    "off_road_m": 581,
     "lat": 13.02429,
     "lon": 80.26436,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/13707153402"
+    "osm_url": "https://www.openstreetmap.org/node/13707153402",
+    "source": null
    },
    {
     "id": "fuel:node-317821274",
@@ -3688,10 +3698,12 @@
     "brand": "Hindustan Petroleum",
     "near": "Chennai",
     "km_from_start": 10.7,
+    "off_road_m": 17,
     "lat": 13.01847,
     "lon": 80.2614,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/317821274"
+    "osm_url": "https://www.openstreetmap.org/node/317821274",
+    "source": null
    },
    {
     "id": "fuel:way-397280116",
@@ -3699,10 +3711,12 @@
     "brand": null,
     "near": "Chennai",
     "km_from_start": 11.6,
+    "off_road_m": 24,
     "lat": 13.01096,
     "lon": 80.25898,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/way/397280116"
+    "osm_url": "https://www.openstreetmap.org/way/397280116",
+    "source": null
    },
    {
     "id": "fuel:node-10296799043",
@@ -3710,10 +3724,12 @@
     "brand": "Bharat Petroleum",
     "near": "Chennai",
     "km_from_start": 11.7,
+    "off_road_m": 32,
     "lat": 13.01034,
     "lon": 80.25888,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/10296799043"
+    "osm_url": "https://www.openstreetmap.org/node/10296799043",
+    "source": null
    },
    {
     "id": "fuel:way-252713949",
@@ -3721,10 +3737,12 @@
     "brand": "Indian Oil",
     "near": "Chennai",
     "km_from_start": 12.3,
+    "off_road_m": 765,
     "lat": 12.99972,
     "lon": 80.25596,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/way/252713949"
+    "osm_url": "https://www.openstreetmap.org/way/252713949",
+    "source": null
    },
    {
     "id": "fuel:node-1275649007",
@@ -3732,10 +3750,12 @@
     "brand": "Indian Oil",
     "near": "Chennai",
     "km_from_start": 17.5,
+    "off_road_m": 863,
     "lat": 12.9771,
     "lon": 80.2511,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/1275649007"
+    "osm_url": "https://www.openstreetmap.org/node/1275649007",
+    "source": null
    },
    {
     "id": "fuel:node-1450886364",
@@ -3743,10 +3763,12 @@
     "brand": "Indian Oil",
     "near": "Chennai",
     "km_from_start": 18.3,
+    "off_road_m": 47,
     "lat": 12.96865,
     "lon": 80.25713,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/1450886364"
+    "osm_url": "https://www.openstreetmap.org/node/1450886364",
+    "source": null
    },
    {
     "id": "fuel:node-1453437494",
@@ -3754,10 +3776,12 @@
     "brand": "Indian Oil",
     "near": "Chennai",
     "km_from_start": 18.4,
+    "off_road_m": 10,
     "lat": 12.96769,
     "lon": 80.25748,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/1453437494"
+    "osm_url": "https://www.openstreetmap.org/node/1453437494",
+    "source": null
    },
    {
     "id": "fuel:node-1451948429",
@@ -3765,10 +3789,12 @@
     "brand": "Bharat Petroleum",
     "near": "Chennai",
     "km_from_start": 18.5,
+    "off_road_m": 6,
     "lat": 12.96722,
     "lon": 80.25736,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/1451948429"
+    "osm_url": "https://www.openstreetmap.org/node/1451948429",
+    "source": null
    },
    {
     "id": "fuel:node-11148087398",
@@ -3776,10 +3802,12 @@
     "brand": "Bharat Petroleum",
     "near": "Chennai",
     "km_from_start": 20.8,
+    "off_road_m": 34,
     "lat": 12.94699,
     "lon": 80.2538,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/11148087398"
+    "osm_url": "https://www.openstreetmap.org/node/11148087398",
+    "source": null
    },
    {
     "id": "fuel:node-11148087378",
@@ -3787,10 +3815,12 @@
     "brand": "Indian Oil",
     "near": "Chennai",
     "km_from_start": 21.3,
+    "off_road_m": 38,
     "lat": 12.94247,
     "lon": 80.25303,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/11148087378"
+    "osm_url": "https://www.openstreetmap.org/node/11148087378",
+    "source": null
    },
    {
     "id": "fuel:node-11832803585",
@@ -3798,10 +3828,12 @@
     "brand": "Hindustan Petroleum",
     "near": "Chennai",
     "km_from_start": 23.0,
+    "off_road_m": 22,
     "lat": 12.92698,
     "lon": 80.25157,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/11832803585"
+    "osm_url": "https://www.openstreetmap.org/node/11832803585",
+    "source": null
    },
    {
     "id": "fuel:node-325787817",
@@ -3809,10 +3841,12 @@
     "brand": "Indian Oil",
     "near": "Chennai",
     "km_from_start": 25.0,
+    "off_road_m": 34,
     "lat": 12.9097,
     "lon": 80.2503,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/325787817"
+    "osm_url": "https://www.openstreetmap.org/node/325787817",
+    "source": null
    },
    {
     "id": "fuel:node-11668983770",
@@ -3820,10 +3854,12 @@
     "brand": "Shell",
     "near": "Chennai",
     "km_from_start": 25.1,
+    "off_road_m": 33,
     "lat": 12.90851,
     "lon": 80.25019,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/11668983770"
+    "osm_url": "https://www.openstreetmap.org/node/11668983770",
+    "source": null
    },
    {
     "id": "fuel:node-9249922878",
@@ -3831,10 +3867,12 @@
     "brand": "Bharat Petroleum",
     "near": "Chennai",
     "km_from_start": 28.1,
+    "off_road_m": 33,
     "lat": 12.88152,
     "lon": 80.2451,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/9249922878"
+    "osm_url": "https://www.openstreetmap.org/node/9249922878",
+    "source": null
    },
    {
     "id": "fuel:node-12470987701",
@@ -3842,10 +3880,12 @@
     "brand": "Hindustan Petroleum",
     "near": "Mahabalipuram",
     "km_from_start": 29.8,
+    "off_road_m": 27,
     "lat": 12.86706,
     "lon": 80.24291,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/12470987701"
+    "osm_url": "https://www.openstreetmap.org/node/12470987701",
+    "source": null
    },
    {
     "id": "fuel:node-325783885",
@@ -3853,10 +3893,12 @@
     "brand": "Indian Oil",
     "near": "Mahabalipuram",
     "km_from_start": 56.6,
+    "off_road_m": 23,
     "lat": 12.63799,
     "lon": 80.19841,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/325783885"
+    "osm_url": "https://www.openstreetmap.org/node/325783885",
+    "source": null
    },
    {
     "id": "fuel:node-314081167",
@@ -3864,10 +3906,12 @@
     "brand": "Nayara",
     "near": "Mahabalipuram",
     "km_from_start": 70.2,
+    "off_road_m": 144,
     "lat": 12.55084,
     "lon": 80.14242,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/314081167"
+    "osm_url": "https://www.openstreetmap.org/node/314081167",
+    "source": null
    },
    {
     "id": "fuel:node-3379349774",
@@ -3875,10 +3919,12 @@
     "brand": "Indian Oil",
     "near": "Mahabalipuram",
     "km_from_start": 70.7,
+    "off_road_m": 27,
     "lat": 12.54632,
     "lon": 80.14245,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/3379349774"
+    "osm_url": "https://www.openstreetmap.org/node/3379349774",
+    "source": null
    },
    {
     "id": "fuel:node-6307724616",
@@ -3886,10 +3932,12 @@
     "brand": "Indian Oil",
     "near": "Mahabalipuram",
     "km_from_start": 76.5,
+    "off_road_m": 53,
     "lat": 12.49784,
     "lon": 80.14407,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/6307724616"
+    "osm_url": "https://www.openstreetmap.org/node/6307724616",
+    "source": null
    },
    {
     "id": "fuel:node-325783806",
@@ -3897,10 +3945,12 @@
     "brand": "Indian Oil Petrol Pump",
     "near": "Puducherry",
     "km_from_start": 122.8,
+    "off_road_m": 33,
     "lat": 12.1836,
     "lon": 79.93957,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/325783806"
+    "osm_url": "https://www.openstreetmap.org/node/325783806",
+    "source": null
    },
    {
     "id": "fuel:node-9818721585",
@@ -3908,10 +3958,12 @@
     "brand": "Indian Oil",
     "near": "Puducherry",
     "km_from_start": 140.3,
+    "off_road_m": 35,
     "lat": 12.04348,
     "lon": 79.86909,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/9818721585"
+    "osm_url": "https://www.openstreetmap.org/node/9818721585",
+    "source": null
    },
    {
     "id": "fuel:node-9818721618",
@@ -3919,10 +3971,12 @@
     "brand": "Hindustan Petroleum",
     "near": "Puducherry",
     "km_from_start": 140.7,
+    "off_road_m": 26,
     "lat": 12.03937,
     "lon": 79.86797,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/9818721618"
+    "osm_url": "https://www.openstreetmap.org/node/9818721618",
+    "source": null
    },
    {
     "id": "fuel:node-9818721619",
@@ -3930,10 +3984,12 @@
     "brand": "Indian Oil",
     "near": "Puducherry",
     "km_from_start": 140.8,
+    "off_road_m": 31,
     "lat": 12.03898,
     "lon": 79.86785,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/9818721619"
+    "osm_url": "https://www.openstreetmap.org/node/9818721619",
+    "source": null
    },
    {
     "id": "fuel:node-9818721620",
@@ -3941,10 +3997,12 @@
     "brand": "Bharat Petroleum",
     "near": "Puducherry",
     "km_from_start": 141.0,
+    "off_road_m": 29,
     "lat": 12.03744,
     "lon": 79.86717,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/9818721620"
+    "osm_url": "https://www.openstreetmap.org/node/9818721620",
+    "source": null
    },
    {
     "id": "fuel:node-325781398",
@@ -3952,10 +4010,12 @@
     "brand": "Bharat Petroleum",
     "near": "Puducherry",
     "km_from_start": 142.4,
+    "off_road_m": 34,
     "lat": 12.02609,
     "lon": 79.86171,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/325781398"
+    "osm_url": "https://www.openstreetmap.org/node/325781398",
+    "source": null
    },
    {
     "id": "fuel:node-325781393",
@@ -3963,10 +4023,12 @@
     "brand": "Indian Oil",
     "near": "Puducherry",
     "km_from_start": 143.7,
+    "off_road_m": 23,
     "lat": 12.01435,
     "lon": 79.85831,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/325781393"
+    "osm_url": "https://www.openstreetmap.org/node/325781393",
+    "source": null
    },
    {
     "id": "fuel:node-5361839149",
@@ -3974,10 +4036,12 @@
     "brand": "Indian Oil",
     "near": "Puducherry",
     "km_from_start": 151.5,
+    "off_road_m": 709,
     "lat": 11.95296,
     "lon": 79.82933,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/5361839149"
+    "osm_url": "https://www.openstreetmap.org/node/5361839149",
+    "source": null
    },
    {
     "id": "fuel:node-2022611744",
@@ -3985,10 +4049,12 @@
     "brand": "Hindustan Petroleum",
     "near": "Puducherry",
     "km_from_start": 151.6,
+    "off_road_m": 573,
     "lat": 11.95194,
     "lon": 79.83038,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/2022611744"
+    "osm_url": "https://www.openstreetmap.org/node/2022611744",
+    "source": null
    },
    {
     "id": "fuel:node-10956759416",
@@ -3996,10 +4062,12 @@
     "brand": "Indian Oil",
     "near": "Puducherry",
     "km_from_start": 152.6,
+    "off_road_m": 227,
     "lat": 11.94349,
     "lon": 79.83084,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/10956759416"
+    "osm_url": "https://www.openstreetmap.org/node/10956759416",
+    "source": null
    },
    {
     "id": "fuel:way-1192794856",
@@ -4007,10 +4075,12 @@
     "brand": null,
     "near": "Puducherry",
     "km_from_start": 153.6,
+    "off_road_m": 143,
     "lat": 11.93356,
     "lon": 79.83214,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/way/1192794856"
+    "osm_url": "https://www.openstreetmap.org/way/1192794856",
+    "source": null
    },
    {
     "id": "fuel:node-4316621642",
@@ -4018,10 +4088,12 @@
     "brand": "Hindustan Petroleum",
     "near": "Puducherry",
     "km_from_start": 154.1,
+    "off_road_m": 481,
     "lat": 11.92508,
     "lon": 79.83164,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/4316621642"
+    "osm_url": "https://www.openstreetmap.org/node/4316621642",
+    "source": null
    },
    {
     "id": "fuel:way-720854168",
@@ -4029,10 +4101,12 @@
     "brand": "Hindustan Petroleum",
     "near": "Puducherry",
     "km_from_start": 154.1,
+    "off_road_m": 581,
     "lat": 11.92514,
     "lon": 79.83348,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/way/720854168"
+    "osm_url": "https://www.openstreetmap.org/way/720854168",
+    "source": null
    },
    {
     "id": "fuel:node-5321336986",
@@ -4040,10 +4114,12 @@
     "brand": "Bharat Petroleum",
     "near": "Puducherry",
     "km_from_start": 154.7,
+    "off_road_m": 82,
     "lat": 11.93044,
     "lon": 79.82403,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/5321336986"
+    "osm_url": "https://www.openstreetmap.org/node/5321336986",
+    "source": null
    },
    {
     "id": "fuel:way-591642098",
@@ -4051,10 +4127,12 @@
     "brand": "Hindustan Petroleum",
     "near": "Puducherry",
     "km_from_start": 154.7,
+    "off_road_m": 28,
     "lat": 11.93037,
     "lon": 79.82458,
     "opening_hours": "PH,Mo-Su 06:00-18:00+",
-    "osm_url": "https://www.openstreetmap.org/way/591642098"
+    "osm_url": "https://www.openstreetmap.org/way/591642098",
+    "source": null
    },
    {
     "id": "fuel:way-1192556558",
@@ -4062,10 +4140,12 @@
     "brand": null,
     "near": "Puducherry",
     "km_from_start": 154.7,
+    "off_road_m": 358,
     "lat": 11.93106,
     "lon": 79.82158,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/way/1192556558"
+    "osm_url": "https://www.openstreetmap.org/way/1192556558",
+    "source": null
    },
    {
     "id": "fuel:way-690015073",
@@ -4073,10 +4153,12 @@
     "brand": "Indian Oil",
     "near": "Puducherry",
     "km_from_start": 156.6,
+    "off_road_m": 560,
     "lat": 11.92383,
     "lon": 79.81093,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/way/690015073"
+    "osm_url": "https://www.openstreetmap.org/way/690015073",
+    "source": null
    },
    {
     "id": "fuel:node-5301922899",
@@ -4084,10 +4166,12 @@
     "brand": "Bharat Petroleum",
     "near": "Puducherry",
     "km_from_start": 157.0,
+    "off_road_m": 20,
     "lat": 11.9176,
     "lon": 79.81252,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/5301922899"
+    "osm_url": "https://www.openstreetmap.org/node/5301922899",
+    "source": null
    },
    {
     "id": "fuel:way-568688813",
@@ -4095,10 +4179,12 @@
     "brand": "Indian Oil",
     "near": "Puducherry",
     "km_from_start": 157.3,
+    "off_road_m": 46,
     "lat": 11.91529,
     "lon": 79.81096,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/way/568688813"
+    "osm_url": "https://www.openstreetmap.org/way/568688813",
+    "source": null
    },
    {
     "id": "fuel:node-10703105221",
@@ -4106,10 +4192,12 @@
     "brand": "Indian Oil",
     "near": "Puducherry",
     "km_from_start": 160.4,
+    "off_road_m": 34,
     "lat": 11.88994,
     "lon": 79.80132,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/10703105221"
+    "osm_url": "https://www.openstreetmap.org/node/10703105221",
+    "source": null
    },
    {
     "id": "fuel:node-10949444080",
@@ -4117,10 +4205,12 @@
     "brand": "Indian Oil",
     "near": "Puducherry",
     "km_from_start": 160.9,
+    "off_road_m": 37,
     "lat": 11.88556,
     "lon": 79.80067,
     "opening_hours": "Mo-Su 06:00-22:00",
-    "osm_url": "https://www.openstreetmap.org/node/10949444080"
+    "osm_url": "https://www.openstreetmap.org/node/10949444080",
+    "source": null
    },
    {
     "id": "fuel:node-11799298370",
@@ -4128,10 +4218,12 @@
     "brand": "Hindustan Petroleum",
     "near": "Puducherry",
     "km_from_start": 163.7,
+    "off_road_m": 367,
     "lat": 11.85866,
     "lon": 79.79142,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/11799298370"
+    "osm_url": "https://www.openstreetmap.org/node/11799298370",
+    "source": null
    },
    {
     "id": "fuel:node-11799298371",
@@ -4139,10 +4231,12 @@
     "brand": "Bharat Petroleum",
     "near": "Puducherry",
     "km_from_start": 163.7,
+    "off_road_m": 68,
     "lat": 11.86133,
     "lon": 79.79223,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/11799298371"
+    "osm_url": "https://www.openstreetmap.org/node/11799298371",
+    "source": null
    },
    {
     "id": "fuel:node-13288549244",
@@ -4150,10 +4244,12 @@
     "brand": null,
     "near": "Puducherry",
     "km_from_start": 176.5,
+    "off_road_m": 75,
     "lat": 11.79132,
     "lon": 79.74152,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/13288549244"
+    "osm_url": "https://www.openstreetmap.org/node/13288549244",
+    "source": null
    },
    {
     "id": "fuel:way-1413259098",
@@ -4161,10 +4257,12 @@
     "brand": null,
     "near": "Chidambaram",
     "km_from_start": 217.3,
+    "off_road_m": 271,
     "lat": 11.46545,
     "lon": 79.70891,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/way/1413259098"
+    "osm_url": "https://www.openstreetmap.org/way/1413259098",
+    "source": null
    },
    {
     "id": "fuel:way-645416076",
@@ -4172,10 +4270,12 @@
     "brand": null,
     "near": "Chidambaram",
     "km_from_start": 223.3,
+    "off_road_m": 33,
     "lat": 11.41549,
     "lon": 79.69263,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/way/645416076"
+    "osm_url": "https://www.openstreetmap.org/way/645416076",
+    "source": null
    },
    {
     "id": "fuel:node-3197680765",
@@ -4183,10 +4283,12 @@
     "brand": null,
     "near": "Chidambaram",
     "km_from_start": 223.4,
+    "off_road_m": 88,
     "lat": 11.41499,
     "lon": 79.69201,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/3197680765"
+    "osm_url": "https://www.openstreetmap.org/node/3197680765",
+    "source": null
    },
    {
     "id": "fuel:node-6105462819",
@@ -4194,10 +4296,12 @@
     "brand": "Hindustan Petrolium",
     "near": "Chidambaram",
     "km_from_start": 227.9,
+    "off_road_m": 16,
     "lat": 11.3825,
     "lon": 79.68405,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/6105462819"
+    "osm_url": "https://www.openstreetmap.org/node/6105462819",
+    "source": null
    },
    {
     "id": "fuel:node-11174423128",
@@ -4205,10 +4309,12 @@
     "brand": "Indian Oil",
     "near": "Chidambaram",
     "km_from_start": 228.3,
+    "off_road_m": 58,
     "lat": 11.37916,
     "lon": 79.68587,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/11174423128"
+    "osm_url": "https://www.openstreetmap.org/node/11174423128",
+    "source": null
    },
    {
     "id": "fuel:node-11174460337",
@@ -4216,10 +4322,12 @@
     "brand": "Hindustan Petroleum",
     "near": "Chidambaram",
     "km_from_start": 231.9,
+    "off_road_m": 460,
     "lat": 11.35479,
     "lon": 79.70483,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/11174460337"
+    "osm_url": "https://www.openstreetmap.org/node/11174460337",
+    "source": null
    },
    {
     "id": "fuel:node-11174451812",
@@ -4227,10 +4335,12 @@
     "brand": "Bharat Petroleum",
     "near": "Chidambaram",
     "km_from_start": 235.6,
+    "off_road_m": 851,
     "lat": 11.32513,
     "lon": 79.71434,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/11174451812"
+    "osm_url": "https://www.openstreetmap.org/node/11174451812",
+    "source": null
    },
    {
     "id": "fuel:node-7186914451",
@@ -4238,10 +4348,12 @@
     "brand": null,
     "near": "Chidambaram",
     "km_from_start": 235.8,
+    "off_road_m": 655,
     "lat": 11.32041,
     "lon": 79.71355,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/7186914451"
+    "osm_url": "https://www.openstreetmap.org/node/7186914451",
+    "source": null
    },
    {
     "id": "fuel:node-11174451817",
@@ -4249,10 +4361,12 @@
     "brand": "Indian Oil",
     "near": "Chidambaram",
     "km_from_start": 243.3,
+    "off_road_m": 26,
     "lat": 11.26181,
     "lon": 79.72355,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/11174451817"
+    "osm_url": "https://www.openstreetmap.org/node/11174451817",
+    "source": null
    },
    {
     "id": "fuel:node-11174419924",
@@ -4260,10 +4374,12 @@
     "brand": "Indian Oil",
     "near": "Chidambaram",
     "km_from_start": 267.1,
+    "off_road_m": 33,
     "lat": 11.09734,
     "lon": 79.79956,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/11174419924"
+    "osm_url": "https://www.openstreetmap.org/node/11174419924",
+    "source": null
    },
    {
     "id": "fuel:node-11898263194",
@@ -4271,10 +4387,12 @@
     "brand": null,
     "near": "Nagapattinam",
     "km_from_start": 286.8,
+    "off_road_m": 32,
     "lat": 10.95572,
     "lon": 79.8251,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/11898263194"
+    "osm_url": "https://www.openstreetmap.org/node/11898263194",
+    "source": null
    },
    {
     "id": "fuel:node-2019366437",
@@ -4282,10 +4400,12 @@
     "brand": "Hindustan Petroleum",
     "near": "Nagapattinam",
     "km_from_start": 289.6,
+    "off_road_m": 455,
     "lat": 10.93213,
     "lon": 79.83604,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/2019366437"
+    "osm_url": "https://www.openstreetmap.org/node/2019366437",
+    "source": null
    },
    {
     "id": "fuel:node-13108585201",
@@ -4293,10 +4413,12 @@
     "brand": null,
     "near": "Nagapattinam",
     "km_from_start": 291.7,
+    "off_road_m": 903,
     "lat": 10.91781,
     "lon": 79.84384,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/13108585201"
+    "osm_url": "https://www.openstreetmap.org/node/13108585201",
+    "source": null
    },
    {
     "id": "fuel:node-3866501688",
@@ -4304,10 +4426,12 @@
     "brand": null,
     "near": "Nagapattinam",
     "km_from_start": 325.6,
+    "off_road_m": 11,
     "lat": 10.64911,
     "lon": 79.82061,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/3866501688"
+    "osm_url": "https://www.openstreetmap.org/node/3866501688",
+    "source": null
    },
    {
     "id": "fuel:node-3869426283",
@@ -4315,10 +4439,12 @@
     "brand": null,
     "near": "Nagapattinam",
     "km_from_start": 349.9,
+    "off_road_m": 27,
     "lat": 10.53158,
     "lon": 79.65258,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/3869426283"
+    "osm_url": "https://www.openstreetmap.org/node/3869426283",
+    "source": null
    },
    {
     "id": "fuel:node-12705215004",
@@ -4326,10 +4452,12 @@
     "brand": null,
     "near": "Nagapattinam",
     "km_from_start": 377.9,
+    "off_road_m": 6,
     "lat": 10.39429,
     "lon": 79.48251,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/12705215004"
+    "osm_url": "https://www.openstreetmap.org/node/12705215004",
+    "source": null
    },
    {
     "id": "fuel:node-12705217001",
@@ -4337,10 +4465,12 @@
     "brand": null,
     "near": "Nagapattinam",
     "km_from_start": 378.6,
+    "off_road_m": 46,
     "lat": 10.39279,
     "lon": 79.47602,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/12705217001"
+    "osm_url": "https://www.openstreetmap.org/node/12705217001",
+    "source": null
    },
    {
     "id": "fuel:node-12705216902",
@@ -4348,10 +4478,12 @@
     "brand": null,
     "near": "Nagapattinam",
     "km_from_start": 379.3,
+    "off_road_m": 12,
     "lat": 10.38998,
     "lon": 79.47073,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/12705216902"
+    "osm_url": "https://www.openstreetmap.org/node/12705216902",
+    "source": null
    },
    {
     "id": "fuel:node-5908214697",
@@ -4359,10 +4491,12 @@
     "brand": "Private",
     "near": "Nagapattinam",
     "km_from_start": 390.6,
+    "off_road_m": 808,
     "lat": 10.34578,
     "lon": 79.38231,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/5908214697"
+    "osm_url": "https://www.openstreetmap.org/node/5908214697",
+    "source": null
    },
    {
     "id": "fuel:way-611836627",
@@ -4370,10 +4504,12 @@
     "brand": "Hindustan Petroleum",
     "near": "Nagapattinam",
     "km_from_start": 390.6,
+    "off_road_m": 809,
     "lat": 10.34581,
     "lon": 79.38236,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/way/611836627"
+    "osm_url": "https://www.openstreetmap.org/way/611836627",
+    "source": null
    },
    {
     "id": "fuel:node-5893838794",
@@ -4381,10 +4517,12 @@
     "brand": "Bharat Petroleum",
     "near": "Nagapattinam",
     "km_from_start": 391.8,
+    "off_road_m": 35,
     "lat": 10.33389,
     "lon": 79.37601,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/5893838794"
+    "osm_url": "https://www.openstreetmap.org/node/5893838794",
+    "source": null
    },
    {
     "id": "fuel:way-1070592214",
@@ -4392,10 +4530,12 @@
     "brand": "Indian Oil",
     "near": "Nagapattinam",
     "km_from_start": 433.8,
+    "off_road_m": 26,
     "lat": 10.02272,
     "lon": 79.23025,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/way/1070592214"
+    "osm_url": "https://www.openstreetmap.org/way/1070592214",
+    "source": null
    },
    {
     "id": "fuel:way-1064314568",
@@ -4403,10 +4543,12 @@
     "brand": null,
     "near": "Rameswaram",
     "km_from_start": 505.9,
+    "off_road_m": 19,
     "lat": 9.4969,
     "lon": 78.89712,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/way/1064314568"
+    "osm_url": "https://www.openstreetmap.org/way/1064314568",
+    "source": null
    },
    {
     "id": "fuel:way-1395443588",
@@ -4414,10 +4556,12 @@
     "brand": null,
     "near": "Rameswaram",
     "km_from_start": 518.0,
+    "off_road_m": 63,
     "lat": 9.39932,
     "lon": 78.85683,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/way/1395443588"
+    "osm_url": "https://www.openstreetmap.org/way/1395443588",
+    "source": null
    },
    {
     "id": "fuel:node-11806680477",
@@ -4425,10 +4569,12 @@
     "brand": "Bharat Petroleum",
     "near": "Rameswaram",
     "km_from_start": 570.9,
+    "off_road_m": 70,
     "lat": 9.28608,
     "lon": 79.27908,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/11806680477"
+    "osm_url": "https://www.openstreetmap.org/node/11806680477",
+    "source": null
    },
    {
     "id": "fuel:node-11806680478",
@@ -4436,10 +4582,12 @@
     "brand": "Hindustan Petroleum",
     "near": "Rameswaram",
     "km_from_start": 572.5,
+    "off_road_m": 18,
     "lat": 9.28456,
     "lon": 79.29344,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/11806680478"
+    "osm_url": "https://www.openstreetmap.org/node/11806680478",
+    "source": null
    },
    {
     "id": "fuel:node-7200338018",
@@ -4447,10 +4595,12 @@
     "brand": "Indian Oil",
     "near": "Rameswaram",
     "km_from_start": 573.1,
+    "off_road_m": 54,
     "lat": 9.28504,
     "lon": 79.29923,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/7200338018"
+    "osm_url": "https://www.openstreetmap.org/node/7200338018",
+    "source": null
    }
   ],
   "pump_count": 75,

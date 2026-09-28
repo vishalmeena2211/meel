@@ -498,5 +498,378 @@
     "The Sela Tunnel inauguration date comes from Wikipedia; no official release was opened.",
     "Usual days and season come from a tour operator's guide, not an official source.",
     "Videos not collected."
-  ]
+  ],
+  "pumps_from_companies": {
+    "why": "The open map has no pump between Tezpur and Jang, though Bhalukpong, Bomdila and Dirang are towns. These are from IndianOil's own locator, read on 28 September 2026. Other companies' pumps are not added.",
+    "pumps": [
+      {
+        "id": "iocl-278009",
+        "name": "Maa Kamakhya Energy Station",
+        "brand": "Indian Oil",
+        "town": "Dhula",
+        "lat": 26.48217,
+        "lon": 92.08662,
+        "source": {
+          "url": "https://locator.iocl.com/indianoil-maa-kamakhya-energy-station-petrol-pump-dhula-sonitpur-278009/Home",
+          "title": "IndianOil locator: Maa Kamakhya Energy Station, Dhula",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-09-28"
+        }
+      },
+      {
+        "id": "iocl-241053",
+        "name": "Sirajuli Kb Filling Station",
+        "brand": "Indian Oil",
+        "town": "Joradia",
+        "lat": 26.69882,
+        "lon": 92.40952,
+        "source": {
+          "url": "https://locator.iocl.com/indianoil-sirajuli-kb-filling-station-petrol-pump-joradia-sonitpur-241053/Home",
+          "title": "IndianOil locator: Sirajuli Kb Filling Station, Joradia",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-09-28"
+        }
+      },
+      {
+        "id": "iocl-241308",
+        "name": "Dey's Service Station",
+        "brand": "Indian Oil",
+        "town": "Dhekiajuli",
+        "lat": 26.70168,
+        "lon": 92.43619,
+        "source": {
+          "url": "https://locator.iocl.com/indianoil-dey-s-service-station-petrol-pump-dhekiajuli-sonitpur-241308/Home",
+          "title": "IndianOil locator: Dey's Service Station, Dhekiajuli",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-09-28"
+        }
+      },
+      {
+        "id": "iocl-241325",
+        "name": "Jyoti Service Station",
+        "brand": "Indian Oil",
+        "town": "Rangapara",
+        "lat": 26.70508,
+        "lon": 92.49983,
+        "source": {
+          "url": "https://locator.iocl.com/indianoil-jyoti-service-station-petrol-pump-rangapara-sonitpur-241325/Home",
+          "title": "IndianOil locator: Jyoti Service Station, Rangapara",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-09-28"
+        }
+      },
+      {
+        "id": "iocl-241190",
+        "name": "Sonitpur Service Station",
+        "brand": "Indian Oil",
+        "town": "Thelamara",
+        "lat": 26.69459,
+        "lon": 92.58641,
+        "source": {
+          "url": "https://locator.iocl.com/indianoil-sonitpur-service-station-petrol-pump-thelamara-sonitpur-241190/Home",
+          "title": "IndianOil locator: Sonitpur Service Station, Thelamara",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-09-28"
+        }
+      },
+      {
+        "id": "iocl-241300",
+        "name": "Tumuki Filling Station",
+        "brand": "Indian Oil",
+        "town": "Bapu Bheti Gaon",
+        "lat": 26.68491,
+        "lon": 92.64403,
+        "source": {
+          "url": "https://locator.iocl.com/indianoil-tumuki-filling-station-petrol-pump-bapu-bheti-gaon-sonitpur-241300/Home",
+          "title": "IndianOil locator: Tumuki Filling Station, Bapu Bheti Gaon",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-09-28"
+        }
+      },
+      {
+        "id": "iocl-241043",
+        "name": "Binduguri Kisan Seva Kendra",
+        "brand": "Indian Oil",
+        "town": "Dekargaon",
+        "lat": 26.67419,
+        "lon": 92.74817,
+        "source": {
+          "url": "https://locator.iocl.com/indianoil-binduguri-kisan-seva-kendra-petrol-pump-dekargaon-sonitpur-241043/Home",
+          "title": "IndianOil locator: Binduguri Kisan Seva Kendra, Dekargaon",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-09-28"
+        }
+      },
+      {
+        "id": "iocl-241464",
+        "name": "Mayur Corporation",
+        "brand": "Indian Oil",
+        "town": "Behali",
+        "lat": 26.65295,
+        "lon": 92.79427,
+        "source": {
+          "url": "https://locator.iocl.com/indianoil-mayur-corporation-petrol-pump-behali-sonitpur-241464/Home",
+          "title": "IndianOil locator: Mayur Corporation, Behali",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-09-28"
+        }
+      },
+      {
+        "id": "iocl-241516",
+        "name": "Fuel Stop Hq",
+        "brand": "Indian Oil",
+        "town": "Behali",
+        "lat": 26.64413,
+        "lon": 92.78154,
+        "source": {
+          "url": "https://locator.iocl.com/indianoil-fuel-stop-hq-petrol-pump-behali-sonitpur-241516/Home",
+          "title": "IndianOil locator: Fuel Stop Hq, Behali",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-09-28"
+        }
+      },
+      {
+        "id": "iocl-241465",
+        "name": "Kuljit Singh & Co",
+        "brand": "Indian Oil",
+        "town": "Dhanua Nagar",
+        "lat": 26.6423,
+        "lon": 92.79879,
+        "source": {
+          "url": "https://locator.iocl.com/indianoil-kuljit-singh-co-petrol-pump-dhanua-nagar-sonitpur-241465/Home",
+          "title": "IndianOil locator: Kuljit Singh & Co, Dhanua Nagar",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-09-28"
+        }
+      },
+      {
+        "id": "iocl-241408",
+        "name": "Tezpur Petroleum Co",
+        "brand": "Indian Oil",
+        "town": "Behali",
+        "lat": 26.62017,
+        "lon": 92.79532,
+        "source": {
+          "url": "https://locator.iocl.com/indianoil-tezpur-petroleum-co-petrol-pump-behali-sonitpur-241408/Home",
+          "title": "IndianOil locator: Tezpur Petroleum Co, Behali",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-09-28"
+        }
+      },
+      {
+        "id": "iocl-241152",
+        "name": "Maa Kalyani Fuel Station",
+        "brand": "Indian Oil",
+        "town": "Chariduar",
+        "lat": 26.73235,
+        "lon": 92.77033,
+        "source": {
+          "url": "https://locator.iocl.com/indianoil-maa-kalyani-fuel-station-petrol-pump-chariduar-sonitpur-241152/Home",
+          "title": "IndianOil locator: Maa Kalyani Fuel Station, Chariduar",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-09-28"
+        }
+      },
+      {
+        "id": "iocl-241492",
+        "name": "Goel Trading Co",
+        "brand": "Indian Oil",
+        "town": "Balipara",
+        "lat": 26.82356,
+        "lon": 92.7778,
+        "source": {
+          "url": "https://locator.iocl.com/indianoil-goel-trading-co-petrol-pump-balipara-sonitpur-241492/Home",
+          "title": "IndianOil locator: Goel Trading Co, Balipara",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-09-28"
+        }
+      },
+      {
+        "id": "iocl-238235",
+        "name": "Kameng Tpt Co Op Soc Ltd",
+        "brand": "Indian Oil",
+        "town": "Bhalukpong",
+        "lat": 27.01215,
+        "lon": 92.64463,
+        "source": {
+          "url": "https://locator.iocl.com/indianoil-kameng-tpt-co-op-soc-ltd-petrol-pump-bhalukpong-west-kameng-238235/Home",
+          "title": "IndianOil locator: Kameng Tpt Co Op Soc Ltd, Bhalukpong",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-09-28"
+        }
+      },
+      {
+        "id": "iocl-238458",
+        "name": "Lokin Refilling Centre",
+        "brand": "Indian Oil",
+        "town": "Upper Bhalukpong",
+        "lat": 27.03235,
+        "lon": 92.60806,
+        "source": {
+          "url": "https://locator.iocl.com/indianoil-lokin-refilling-centre-petrol-pump-upper-bhalukpong-west-kameng-238458/Home",
+          "title": "IndianOil locator: Lokin Refilling Centre, Upper Bhalukpong",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-09-28"
+        }
+      },
+      {
+        "id": "iocl-564251",
+        "name": "George D Filling Station",
+        "brand": "Indian Oil",
+        "town": "Village Jamiri",
+        "lat": 27.19512,
+        "lon": 92.5675,
+        "source": {
+          "url": "https://locator.iocl.com/indianoil-george-d-filling-station-petrol-pump-village-jamiri-west-kameng-564251/Home",
+          "title": "IndianOil locator: George D Filling Station, Village Jamiri",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-09-28"
+        }
+      },
+      {
+        "id": "iocl-239164",
+        "name": "Rupa Auto Agency",
+        "brand": "Indian Oil",
+        "town": "Rupa",
+        "lat": 27.20142,
+        "lon": 92.39848,
+        "source": {
+          "url": "https://locator.iocl.com/indianoil-rupa-auto-agency-petrol-pump-rupa-west-kameng-239164/Home",
+          "title": "IndianOil locator: Rupa Auto Agency, Rupa",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-09-28"
+        }
+      },
+      {
+        "id": "iocl-237768",
+        "name": "Kameng Tpt Coop Socy Ltd Bomdila",
+        "brand": "Indian Oil",
+        "town": "Bomdila",
+        "lat": 27.26537,
+        "lon": 92.41551,
+        "source": {
+          "url": "https://locator.iocl.com/indianoil-kameng-tpt-coop-socy-ltd-bomdila-petrol-pump-bomdila-west-kameng-237768/Home",
+          "title": "IndianOil locator: Kameng Tpt Coop Socy Ltd Bomdila, Bomdila",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-09-28"
+        }
+      },
+      {
+        "id": "iocl-572247",
+        "name": "Sonam Servo Station",
+        "brand": "Indian Oil",
+        "town": "Dirang",
+        "lat": 27.35474,
+        "lon": 92.24773,
+        "source": {
+          "url": "https://locator.iocl.com/indianoil-sonam-servo-station-petrol-pump-dirang-west-kameng-572247/Home",
+          "title": "IndianOil locator: Sonam Servo Station, Dirang",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-09-28"
+        }
+      },
+      {
+        "id": "iocl-277906",
+        "name": "Norgyunma Filling Station",
+        "brand": "Indian Oil",
+        "town": "Dirang",
+        "lat": 27.38241,
+        "lon": 92.22198,
+        "source": {
+          "url": "https://locator.iocl.com/indianoil-norgyunma-filling-station-petrol-pump-dirang-west-kameng-277906/Home",
+          "title": "IndianOil locator: Norgyunma Filling Station, Dirang",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-09-28"
+        }
+      },
+      {
+        "id": "iocl-238461",
+        "name": "Jang Kisan Seva Kendra",
+        "brand": "Indian Oil",
+        "town": "Jang",
+        "lat": 27.57696,
+        "lon": 91.987,
+        "source": {
+          "url": "https://locator.iocl.com/indianoil-jang-kisan-seva-kendra-petrol-pump-jang-tawang-238461/Home",
+          "title": "IndianOil locator: Jang Kisan Seva Kendra, Jang",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-09-28"
+        }
+      },
+      {
+        "id": "iocl-277908",
+        "name": "Keekhar Filling Station, Kharsa",
+        "brand": "Indian Oil",
+        "town": "Jang",
+        "lat": 27.58387,
+        "lon": 91.97398,
+        "source": {
+          "url": "https://locator.iocl.com/indianoil-keekhar-filling-station-kharsa-ja-petrol-pump-jang-tawang-277908/Home",
+          "title": "IndianOil locator: Keekhar Filling Station, Kharsa, Jang",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-09-28"
+        }
+      },
+      {
+        "id": "iocl-238233",
+        "name": "Himalaya Filling Station",
+        "brand": "Indian Oil",
+        "town": "B Supply",
+        "lat": 27.59947,
+        "lon": 91.8796,
+        "source": {
+          "url": "https://locator.iocl.com/indianoil-himalaya-filling-station-petrol-pump-b-supply-tawang-238233/Home",
+          "title": "IndianOil locator: Himalaya Filling Station, B Supply",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-09-28"
+        }
+      }
+    ]
+  }
 }

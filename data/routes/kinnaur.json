@@ -3981,10 +3981,12 @@
     "brand": null,
     "near": "Rampur",
     "km_from_start": 1.2,
+    "off_road_m": 4,
     "lat": 31.45432,
     "lon": 77.63909,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/13923345192"
+    "osm_url": "https://www.openstreetmap.org/node/13923345192",
+    "source": null
    },
    {
     "id": "fuel:node-627280307",
@@ -3992,10 +3994,12 @@
     "brand": null,
     "near": "Rampur",
     "km_from_start": 3.4,
+    "off_road_m": 9,
     "lat": 31.45806,
     "lon": 77.65936,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/627280307"
+    "osm_url": "https://www.openstreetmap.org/node/627280307",
+    "source": null
    },
    {
     "id": "fuel:node-13923345193",
@@ -4003,10 +4007,12 @@
     "brand": "Indian Oil",
     "near": "Rampur",
     "km_from_start": 4.3,
+    "off_road_m": 26,
     "lat": 31.45975,
     "lon": 77.66817,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/13923345193"
+    "osm_url": "https://www.openstreetmap.org/node/13923345193",
+    "source": null
    },
    {
     "id": "fuel:node-627282284",
@@ -4014,10 +4020,12 @@
     "brand": "Indian Oil",
     "near": "Rampur",
     "km_from_start": 21.6,
+    "off_road_m": 10,
     "lat": 31.52124,
     "lon": 77.7679,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/627282284"
+    "osm_url": "https://www.openstreetmap.org/node/627282284",
+    "source": null
    },
    {
     "id": "fuel:node-13923346248",
@@ -4025,10 +4033,12 @@
     "brand": null,
     "near": "Rampur",
     "km_from_start": 28.6,
+    "off_road_m": 10,
     "lat": 31.54238,
     "lon": 77.81455,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/13923346248"
+    "osm_url": "https://www.openstreetmap.org/node/13923346248",
+    "source": null
    },
    {
     "id": "fuel:node-5907443863",
@@ -4036,10 +4046,12 @@
     "brand": null,
     "near": "Karcham",
     "km_from_start": 50.7,
+    "off_road_m": 20,
     "lat": 31.56082,
     "lon": 77.95677,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/5907443863"
+    "osm_url": "https://www.openstreetmap.org/node/5907443863",
+    "source": null
    },
    {
     "id": "fuel:node-299644026",
@@ -4047,10 +4059,12 @@
     "brand": null,
     "near": "Reckong Peo",
     "km_from_start": 211.7,
+    "off_road_m": 2,
     "lat": 31.53708,
     "lon": 78.28062,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/299644026"
+    "osm_url": "https://www.openstreetmap.org/node/299644026",
+    "source": null
    },
    {
     "id": "fuel:node-299644025",
@@ -4058,10 +4072,12 @@
     "brand": null,
     "near": "Reckong Peo",
     "km_from_start": 219.0,
+    "off_road_m": 2,
     "lat": 31.53846,
     "lon": 78.27376,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/299644025"
+    "osm_url": "https://www.openstreetmap.org/node/299644025",
+    "source": null
    },
    {
     "id": "fuel:node-3719759493",
@@ -4069,10 +4085,12 @@
     "brand": "Indian Oil",
     "near": "Reckong Peo",
     "km_from_start": 220.9,
+    "off_road_m": 290,
     "lat": 31.53141,
     "lon": 78.27169,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/3719759493"
+    "osm_url": "https://www.openstreetmap.org/node/3719759493",
+    "source": null
    }
   ],
   "pump_count": 9,

@@ -7303,10 +7303,12 @@
     "brand": "Indian Oil",
     "near": "Gangtok",
     "km_from_start": 0.8,
+    "off_road_m": 93,
     "lat": 27.33452,
     "lon": 88.61426,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/8196909803"
+    "osm_url": "https://www.openstreetmap.org/node/8196909803",
+    "source": null
    },
    {
     "id": "fuel:node-6927198012",
@@ -7314,10 +7316,12 @@
     "brand": null,
     "near": "Gangtok",
     "km_from_start": 4.8,
+    "off_road_m": 120,
     "lat": 27.36014,
     "lon": 88.62227,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/6927198012"
+    "osm_url": "https://www.openstreetmap.org/node/6927198012",
+    "source": null
    },
    {
     "id": "fuel:node-13196993725",
@@ -7325,10 +7329,12 @@
     "brand": null,
     "near": "Gangtok",
     "km_from_start": 5.7,
+    "off_road_m": 4,
     "lat": 27.36573,
     "lon": 88.62149,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/13196993725"
+    "osm_url": "https://www.openstreetmap.org/node/13196993725",
+    "source": null
    },
    {
     "id": "fuel:node-4925330433",
@@ -7336,10 +7342,12 @@
     "brand": null,
     "near": "Gangtok",
     "km_from_start": 56.2,
+    "off_road_m": 8,
     "lat": 27.46439,
     "lon": 88.52526,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/4925330433"
+    "osm_url": "https://www.openstreetmap.org/node/4925330433",
+    "source": null
    },
    {
     "id": "fuel:node-8196909798",
@@ -7347,10 +7355,12 @@
     "brand": "Indian Oil",
     "near": "Gangtok",
     "km_from_start": 64.1,
+    "off_road_m": 13,
     "lat": 27.49235,
     "lon": 88.52831,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/8196909798"
+    "osm_url": "https://www.openstreetmap.org/node/8196909798",
+    "source": null
    }
   ],
   "pump_count": 5,

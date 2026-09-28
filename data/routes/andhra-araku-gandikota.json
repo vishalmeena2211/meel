@@ -2087,10 +2087,12 @@
     "brand": "Hindustan Petroleum",
     "near": "Visakhapatnam",
     "km_from_start": 1.7,
+    "off_road_m": 447,
     "lat": 17.70949,
     "lon": 83.30096,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/12713010157"
+    "osm_url": "https://www.openstreetmap.org/node/12713010157",
+    "source": null
    },
    {
     "id": "fuel:node-11801296960",
@@ -2098,10 +2100,12 @@
     "brand": "Indian Oil",
     "near": "Visakhapatnam",
     "km_from_start": 3.1,
+    "off_road_m": 58,
     "lat": 17.71717,
     "lon": 83.28918,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/11801296960"
+    "osm_url": "https://www.openstreetmap.org/node/11801296960",
+    "source": null
    },
    {
     "id": "fuel:node-13096777779",
@@ -2109,10 +2113,12 @@
     "brand": "Indian Oil",
     "near": "Visakhapatnam",
     "km_from_start": 3.8,
+    "off_road_m": 976,
     "lat": 17.72766,
     "lon": 83.29318,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/13096777779"
+    "osm_url": "https://www.openstreetmap.org/node/13096777779",
+    "source": null
    },
    {
     "id": "fuel:node-11818010606",
@@ -2120,10 +2126,12 @@
     "brand": null,
     "near": "Visakhapatnam",
     "km_from_start": 4.8,
+    "off_road_m": 1132,
     "lat": 17.7355,
     "lon": 83.28894,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/11818010606"
+    "osm_url": "https://www.openstreetmap.org/node/11818010606",
+    "source": null
    },
    {
     "id": "fuel:node-11609443014",
@@ -2131,10 +2139,12 @@
     "brand": "Hindustan Petroleum",
     "near": "Visakhapatnam",
     "km_from_start": 6.3,
+    "off_road_m": 86,
     "lat": 17.7353,
     "lon": 83.26852,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/11609443014"
+    "osm_url": "https://www.openstreetmap.org/node/11609443014",
+    "source": null
    },
    {
     "id": "fuel:node-12438492364",
@@ -2142,10 +2152,12 @@
     "brand": "Indian Oil",
     "near": "Visakhapatnam",
     "km_from_start": 6.9,
+    "off_road_m": 671,
     "lat": 17.74177,
     "lon": 83.26398,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/12438492364"
+    "osm_url": "https://www.openstreetmap.org/node/12438492364",
+    "source": null
    },
    {
     "id": "fuel:node-5007138368",
@@ -2153,10 +2165,12 @@
     "brand": "Hindustan Petroleum",
     "near": "Visakhapatnam",
     "km_from_start": 8.5,
+    "off_road_m": 176,
     "lat": 17.74063,
     "lon": 83.2493,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/5007138368"
+    "osm_url": "https://www.openstreetmap.org/node/5007138368",
+    "source": null
    },
    {
     "id": "fuel:node-11568906528",
@@ -2164,10 +2178,12 @@
     "brand": "Bharat Petroleum",
     "near": "Visakhapatnam",
     "km_from_start": 8.7,
+    "off_road_m": 142,
     "lat": 17.74088,
     "lon": 83.24693,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/11568906528"
+    "osm_url": "https://www.openstreetmap.org/node/11568906528",
+    "source": null
    },
    {
     "id": "fuel:node-11568906525",
@@ -2175,10 +2191,12 @@
     "brand": "Indian Oil",
     "near": "Visakhapatnam",
     "km_from_start": 9.1,
+    "off_road_m": 15,
     "lat": 17.74068,
     "lon": 83.24278,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/11568906525"
+    "osm_url": "https://www.openstreetmap.org/node/11568906525",
+    "source": null
    },
    {
     "id": "fuel:node-12184382957",
@@ -2186,10 +2204,12 @@
     "brand": "Jio-bp",
     "near": "Visakhapatnam",
     "km_from_start": 9.6,
+    "off_road_m": 576,
     "lat": 17.74649,
     "lon": 83.24016,
     "opening_hours": "24/7",
-    "osm_url": "https://www.openstreetmap.org/node/12184382957"
+    "osm_url": "https://www.openstreetmap.org/node/12184382957",
+    "source": null
    },
    {
     "id": "fuel:node-5007138358",
@@ -2197,10 +2217,12 @@
     "brand": "Indian Oil",
     "near": "Visakhapatnam",
     "km_from_start": 10.0,
+    "off_road_m": 114,
     "lat": 17.7433,
     "lon": 83.2355,
     "opening_hours": "24/7",
-    "osm_url": "https://www.openstreetmap.org/node/5007138358"
+    "osm_url": "https://www.openstreetmap.org/node/5007138358",
+    "source": null
    },
    {
     "id": "fuel:node-11568906512",
@@ -2208,10 +2230,12 @@
     "brand": "Bharat Petroleum",
     "near": "Visakhapatnam",
     "km_from_start": 11.2,
+    "off_road_m": 12,
     "lat": 17.74524,
     "lon": 83.22434,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/11568906512"
+    "osm_url": "https://www.openstreetmap.org/node/11568906512",
+    "source": null
    },
    {
     "id": "fuel:node-1467983566",
@@ -2219,10 +2243,12 @@
     "brand": "Hindustan Petroleum",
     "near": "Visakhapatnam",
     "km_from_start": 12.3,
+    "off_road_m": 0,
     "lat": 17.75239,
     "lon": 83.21791,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/1467983566"
+    "osm_url": "https://www.openstreetmap.org/node/1467983566",
+    "source": null
    },
    {
     "id": "fuel:node-11568880943",
@@ -2230,10 +2256,12 @@
     "brand": "Indian Oil",
     "near": "Visakhapatnam",
     "km_from_start": 14.6,
+    "off_road_m": 7,
     "lat": 17.77196,
     "lon": 83.21641,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/11568880943"
+    "osm_url": "https://www.openstreetmap.org/node/11568880943",
+    "source": null
    },
    {
     "id": "fuel:node-11568880935",
@@ -2241,10 +2269,12 @@
     "brand": "Hindustan Petroleum",
     "near": "Visakhapatnam",
     "km_from_start": 16.3,
+    "off_road_m": 15,
     "lat": 17.78646,
     "lon": 83.21374,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/11568880935"
+    "osm_url": "https://www.openstreetmap.org/node/11568880935",
+    "source": null
    },
    {
     "id": "fuel:node-11568858430",
@@ -2252,10 +2282,12 @@
     "brand": "Hindustan Petroleum",
     "near": "Visakhapatnam",
     "km_from_start": 17.5,
+    "off_road_m": 107,
     "lat": 17.79681,
     "lon": 83.21161,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/11568858430"
+    "osm_url": "https://www.openstreetmap.org/node/11568858430",
+    "source": null
    },
    {
     "id": "fuel:node-13953416691",
@@ -2263,10 +2295,12 @@
     "brand": "Nayara",
     "near": "Visakhapatnam",
     "km_from_start": 19.8,
+    "off_road_m": 141,
     "lat": 17.81692,
     "lon": 83.20606,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/13953416691"
+    "osm_url": "https://www.openstreetmap.org/node/13953416691",
+    "source": null
    },
    {
     "id": "fuel:node-11568858411",
@@ -2274,10 +2308,12 @@
     "brand": "Bharat Petroleum",
     "near": "Visakhapatnam",
     "km_from_start": 20.6,
+    "off_road_m": 213,
     "lat": 17.82348,
     "lon": 83.20484,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/11568858411"
+    "osm_url": "https://www.openstreetmap.org/node/11568858411",
+    "source": null
    },
    {
     "id": "fuel:node-12632599511",
@@ -2285,10 +2321,12 @@
     "brand": null,
     "near": "Visakhapatnam",
     "km_from_start": 20.6,
+    "off_road_m": 1273,
     "lat": 17.82594,
     "lon": 83.21452,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/12632599511"
+    "osm_url": "https://www.openstreetmap.org/node/12632599511",
+    "source": null
    },
    {
     "id": "fuel:node-11568858410",
@@ -2296,10 +2334,12 @@
     "brand": "Hindustan Petroleum",
     "near": "Visakhapatnam",
     "km_from_start": 20.8,
+    "off_road_m": 211,
     "lat": 17.82523,
     "lon": 83.20431,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/11568858410"
+    "osm_url": "https://www.openstreetmap.org/node/11568858410",
+    "source": null
    },
    {
     "id": "fuel:node-11508441379",
@@ -2307,10 +2347,12 @@
     "brand": "Bharat Petroleum",
     "near": "Visakhapatnam",
     "km_from_start": 22.8,
+    "off_road_m": 156,
     "lat": 17.84184,
     "lon": 83.1989,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/11508441379"
+    "osm_url": "https://www.openstreetmap.org/node/11508441379",
+    "source": null
    },
    {
     "id": "fuel:node-11508491125",
@@ -2318,10 +2360,12 @@
     "brand": "Bharat Petroleum",
     "near": "Visakhapatnam",
     "km_from_start": 27.7,
+    "off_road_m": 54,
     "lat": 17.88364,
     "lon": 83.18839,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/11508491125"
+    "osm_url": "https://www.openstreetmap.org/node/11508491125",
+    "source": null
    },
    {
     "id": "fuel:way-1238839951",
@@ -2329,10 +2373,12 @@
     "brand": "Indian Oil",
     "near": "Visakhapatnam",
     "km_from_start": 27.9,
+    "off_road_m": 50,
     "lat": 17.88505,
     "lon": 83.18808,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/way/1238839951"
+    "osm_url": "https://www.openstreetmap.org/way/1238839951",
+    "source": null
    },
    {
     "id": "fuel:node-11725370385",
@@ -2340,10 +2386,12 @@
     "brand": "Hindustan Petroleum",
     "near": "Visakhapatnam",
     "km_from_start": 29.8,
+    "off_road_m": 32,
     "lat": 17.90206,
     "lon": 83.1858,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/11725370385"
+    "osm_url": "https://www.openstreetmap.org/node/11725370385",
+    "source": null
    },
    {
     "id": "fuel:node-11559118571",
@@ -2351,10 +2399,12 @@
     "brand": "Indian Oil",
     "near": "Visakhapatnam",
     "km_from_start": 36.3,
+    "off_road_m": 167,
     "lat": 17.95769,
     "lon": 83.17756,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/11559118571"
+    "osm_url": "https://www.openstreetmap.org/node/11559118571",
+    "source": null
    },
    {
     "id": "fuel:node-11744893105",
@@ -2362,10 +2412,12 @@
     "brand": "Nayara",
     "near": "Visakhapatnam",
     "km_from_start": 38.3,
+    "off_road_m": 45,
     "lat": 17.97469,
     "lon": 83.17463,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/11744893105"
+    "osm_url": "https://www.openstreetmap.org/node/11744893105",
+    "source": null
    },
    {
     "id": "fuel:node-11744893096",
@@ -2373,10 +2425,12 @@
     "brand": "Indian Oil",
     "near": "Visakhapatnam",
     "km_from_start": 39.3,
+    "off_road_m": 72,
     "lat": 17.98188,
     "lon": 83.16974,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/11744893096"
+    "osm_url": "https://www.openstreetmap.org/node/11744893096",
+    "source": null
    },
    {
     "id": "fuel:node-13604620938",
@@ -2384,10 +2438,12 @@
     "brand": "Nayara",
     "near": "Visakhapatnam",
     "km_from_start": 48.1,
+    "off_road_m": 52,
     "lat": 18.05505,
     "lon": 83.14531,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/13604620938"
+    "osm_url": "https://www.openstreetmap.org/node/13604620938",
+    "source": null
    },
    {
     "id": "fuel:node-11744892914",
@@ -2395,10 +2451,12 @@
     "brand": null,
     "near": "Visakhapatnam",
     "km_from_start": 53.3,
+    "off_road_m": 53,
     "lat": 18.09942,
     "lon": 83.13674,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/11744892914"
+    "osm_url": "https://www.openstreetmap.org/node/11744892914",
+    "source": null
    },
    {
     "id": "fuel:node-11881049250",
@@ -2406,10 +2464,12 @@
     "brand": "Indian Oil",
     "near": "Visakhapatnam",
     "km_from_start": 53.5,
+    "off_road_m": 45,
     "lat": 18.10175,
     "lon": 83.13728,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/11881049250"
+    "osm_url": "https://www.openstreetmap.org/node/11881049250",
+    "source": null
    },
    {
     "id": "fuel:node-11744892874",
@@ -2417,10 +2477,12 @@
     "brand": null,
     "near": "Visakhapatnam",
     "km_from_start": 53.7,
+    "off_road_m": 43,
     "lat": 18.10307,
     "lon": 83.13756,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/11744892874"
+    "osm_url": "https://www.openstreetmap.org/node/11744892874",
+    "source": null
    },
    {
     "id": "fuel:way-1513065488",
@@ -2428,10 +2490,12 @@
     "brand": null,
     "near": "Visakhapatnam",
     "km_from_start": 54.8,
+    "off_road_m": 6,
     "lat": 18.11277,
     "lon": 83.13885,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/way/1513065488"
+    "osm_url": "https://www.openstreetmap.org/way/1513065488",
+    "source": null
    },
    {
     "id": "fuel:node-12096889743",
@@ -2439,10 +2503,12 @@
     "brand": null,
     "near": "Araku Valley",
     "km_from_start": 82.4,
+    "off_road_m": 108,
     "lat": 18.23915,
     "lon": 83.02926,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/12096889743"
+    "osm_url": "https://www.openstreetmap.org/node/12096889743",
+    "source": null
    },
    {
     "id": "fuel:node-12096889739",
@@ -2450,10 +2516,12 @@
     "brand": null,
     "near": "Araku Valley",
     "km_from_start": 110.0,
+    "off_road_m": 390,
     "lat": 18.32012,
     "lon": 82.88395,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/12096889739"
+    "osm_url": "https://www.openstreetmap.org/node/12096889739",
+    "source": null
    },
    {
     "id": "fuel:node-12096889737",
@@ -2461,10 +2529,12 @@
     "brand": null,
     "near": "Paderu",
     "km_from_start": 147.6,
+    "off_road_m": 167,
     "lat": 18.14726,
     "lon": 82.69325,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/12096889737"
+    "osm_url": "https://www.openstreetmap.org/node/12096889737",
+    "source": null
    },
    {
     "id": "fuel:node-14022957473",
@@ -2472,10 +2542,12 @@
     "brand": null,
     "near": "Paderu",
     "km_from_start": 153.6,
+    "off_road_m": 137,
     "lat": 18.09953,
     "lon": 82.67267,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/14022957473"
+    "osm_url": "https://www.openstreetmap.org/node/14022957473",
+    "source": null
    },
    {
     "id": "fuel:node-14022957467",
@@ -2483,10 +2555,12 @@
     "brand": null,
     "near": "Paderu",
     "km_from_start": 154.7,
+    "off_road_m": 1,
     "lat": 18.09031,
     "lon": 82.66879,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/14022957467"
+    "osm_url": "https://www.openstreetmap.org/node/14022957467",
+    "source": null
    },
    {
     "id": "fuel:node-12096889742",
@@ -2494,10 +2568,12 @@
     "brand": null,
     "near": "Paderu",
     "km_from_start": 155.6,
+    "off_road_m": 1047,
     "lat": 18.07825,
     "lon": 82.67529,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/12096889742"
+    "osm_url": "https://www.openstreetmap.org/node/12096889742",
+    "source": null
    },
    {
     "id": "fuel:node-12096889740",
@@ -2505,10 +2581,12 @@
     "brand": "Bharat Petroleum",
     "near": "Paderu",
     "km_from_start": 155.7,
+    "off_road_m": 31,
     "lat": 18.08206,
     "lon": 82.66553,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/12096889740"
+    "osm_url": "https://www.openstreetmap.org/node/12096889740",
+    "source": null
    },
    {
     "id": "fuel:node-12096889744",
@@ -2516,10 +2594,12 @@
     "brand": null,
     "near": "Paderu",
     "km_from_start": 177.2,
+    "off_road_m": 25,
     "lat": 18.00859,
     "lon": 82.5267,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/12096889744"
+    "osm_url": "https://www.openstreetmap.org/node/12096889744",
+    "source": null
    },
    {
     "id": "fuel:node-13953433841",
@@ -2527,10 +2607,12 @@
     "brand": "Nayara",
     "near": "Lambasingi",
     "km_from_start": 220.4,
+    "off_road_m": 39,
     "lat": 17.73984,
     "lon": 82.57867,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/13953433841"
+    "osm_url": "https://www.openstreetmap.org/node/13953433841",
+    "source": null
    },
    {
     "id": "fuel:node-13953436814",
@@ -2538,10 +2620,12 @@
     "brand": "Indian Oil",
     "near": "Narsipatnam",
     "km_from_start": 225.4,
+    "off_road_m": 5,
     "lat": 17.69979,
     "lon": 82.59832,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/13953436814"
+    "osm_url": "https://www.openstreetmap.org/node/13953436814",
+    "source": null
    },
    {
     "id": "fuel:node-13953436816",
@@ -2549,10 +2633,12 @@
     "brand": "Indian Oil",
     "near": "Narsipatnam",
     "km_from_start": 226.0,
+    "off_road_m": 54,
     "lat": 17.69534,
     "lon": 82.60005,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/13953436816"
+    "osm_url": "https://www.openstreetmap.org/node/13953436816",
+    "source": null
    },
    {
     "id": "fuel:node-12097242210",
@@ -2560,10 +2646,12 @@
     "brand": null,
     "near": "Narsipatnam",
     "km_from_start": 229.6,
+    "off_road_m": 11,
     "lat": 17.66722,
     "lon": 82.61086,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/12097242210"
+    "osm_url": "https://www.openstreetmap.org/node/12097242210",
+    "source": null
    },
    {
     "id": "fuel:node-13953436830",
@@ -2571,10 +2659,12 @@
     "brand": "Indian Oil",
     "near": "Narsipatnam",
     "km_from_start": 229.7,
+    "off_road_m": 911,
     "lat": 17.66271,
     "lon": 82.6183,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/13953436830"
+    "osm_url": "https://www.openstreetmap.org/node/13953436830",
+    "source": null
    },
    {
     "id": "fuel:way-510267532",
@@ -2582,10 +2672,12 @@
     "brand": null,
     "near": "Narsipatnam",
     "km_from_start": 229.7,
+    "off_road_m": 756,
     "lat": 17.66364,
     "lon": 82.61713,
     "opening_hours": "24/7",
-    "osm_url": "https://www.openstreetmap.org/way/510267532"
+    "osm_url": "https://www.openstreetmap.org/way/510267532",
+    "source": null
    },
    {
     "id": "fuel:way-510267556",
@@ -2593,10 +2685,12 @@
     "brand": null,
     "near": "Narsipatnam",
     "km_from_start": 229.7,
+    "off_road_m": 551,
     "lat": 17.6638,
     "lon": 82.61508,
     "opening_hours": "24/7",
-    "osm_url": "https://www.openstreetmap.org/way/510267556"
+    "osm_url": "https://www.openstreetmap.org/way/510267556",
+    "source": null
    },
    {
     "id": "fuel:node-12097242215",
@@ -2604,10 +2698,12 @@
     "brand": null,
     "near": "Narsipatnam",
     "km_from_start": 232.5,
+    "off_road_m": 51,
     "lat": 17.64624,
     "lon": 82.60433,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/12097242215"
+    "osm_url": "https://www.openstreetmap.org/node/12097242215",
+    "source": null
    },
    {
     "id": "fuel:node-12097242217",
@@ -2615,10 +2711,12 @@
     "brand": null,
     "near": "Narsipatnam",
     "km_from_start": 242.2,
+    "off_road_m": 30,
     "lat": 17.58311,
     "lon": 82.55054,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/12097242217"
+    "osm_url": "https://www.openstreetmap.org/node/12097242217",
+    "source": null
    },
    {
     "id": "fuel:node-12097242208",
@@ -2626,10 +2724,12 @@
     "brand": null,
     "near": "Narsipatnam",
     "km_from_start": 251.3,
+    "off_road_m": 32,
     "lat": 17.51469,
     "lon": 82.50979,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/12097242208"
+    "osm_url": "https://www.openstreetmap.org/node/12097242208",
+    "source": null
    },
    {
     "id": "fuel:node-12097242218",
@@ -2637,10 +2737,12 @@
     "brand": "Indian Oil",
     "near": "Narsipatnam",
     "km_from_start": 257.3,
+    "off_road_m": 36,
     "lat": 17.46827,
     "lon": 82.50272,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/12097242218"
+    "osm_url": "https://www.openstreetmap.org/node/12097242218",
+    "source": null
    },
    {
     "id": "fuel:node-12097242247",
@@ -2648,10 +2750,12 @@
     "brand": null,
     "near": "Narsipatnam",
     "km_from_start": 267.4,
+    "off_road_m": 197,
     "lat": 17.39025,
     "lon": 82.53354,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/12097242247"
+    "osm_url": "https://www.openstreetmap.org/node/12097242247",
+    "source": null
    },
    {
     "id": "fuel:node-12097242229",
@@ -2659,10 +2763,12 @@
     "brand": null,
     "near": "Narsipatnam",
     "km_from_start": 269.1,
+    "off_road_m": 2,
     "lat": 17.37721,
     "lon": 82.54118,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/12097242229"
+    "osm_url": "https://www.openstreetmap.org/node/12097242229",
+    "source": null
    },
    {
     "id": "fuel:node-5325128455",
@@ -2670,10 +2776,12 @@
     "brand": null,
     "near": "Narsipatnam",
     "km_from_start": 270.9,
+    "off_road_m": 1454,
     "lat": 17.36736,
     "lon": 82.5668,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/5325128455"
+    "osm_url": "https://www.openstreetmap.org/node/5325128455",
+    "source": null
    },
    {
     "id": "fuel:node-5328507608",
@@ -2681,10 +2789,12 @@
     "brand": null,
     "near": "Narsipatnam",
     "km_from_start": 270.9,
+    "off_road_m": 1455,
     "lat": 17.36735,
     "lon": 82.56681,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/5328507608"
+    "osm_url": "https://www.openstreetmap.org/node/5328507608",
+    "source": null
    },
    {
     "id": "fuel:way-549076149",
@@ -2692,10 +2802,12 @@
     "brand": null,
     "near": "Narsipatnam",
     "km_from_start": 271.1,
+    "off_road_m": 611,
     "lat": 17.36254,
     "lon": 82.55165,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/way/549076149"
+    "osm_url": "https://www.openstreetmap.org/way/549076149",
+    "source": null
    },
    {
     "id": "fuel:node-5040215949",
@@ -2703,10 +2815,12 @@
     "brand": null,
     "near": "Narsipatnam",
     "km_from_start": 272.8,
+    "off_road_m": 816,
     "lat": 17.35811,
     "lon": 82.54289,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/5040215949"
+    "osm_url": "https://www.openstreetmap.org/node/5040215949",
+    "source": null
    },
    {
     "id": "fuel:node-5041287396",
@@ -2714,10 +2828,12 @@
     "brand": "Indian Oil",
     "near": "Narsipatnam",
     "km_from_start": 272.9,
+    "off_road_m": 619,
     "lat": 17.35858,
     "lon": 82.5408,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/5041287396"
+    "osm_url": "https://www.openstreetmap.org/node/5041287396",
+    "source": null
    },
    {
     "id": "fuel:node-5039500558",
@@ -2725,10 +2841,12 @@
     "brand": null,
     "near": "Narsipatnam",
     "km_from_start": 273.9,
+    "off_road_m": 363,
     "lat": 17.35391,
     "lon": 82.53275,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/5039500558"
+    "osm_url": "https://www.openstreetmap.org/node/5039500558",
+    "source": null
    },
    {
     "id": "fuel:node-13529342215",
@@ -2736,10 +2854,12 @@
     "brand": "Indian Oil",
     "near": "Narsipatnam",
     "km_from_start": 276.6,
+    "off_road_m": 1,
     "lat": 17.34094,
     "lon": 82.51236,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/13529342215"
+    "osm_url": "https://www.openstreetmap.org/node/13529342215",
+    "source": null
    },
    {
     "id": "fuel:way-1524280484",
@@ -2747,10 +2867,12 @@
     "brand": "Hindustan Petroleum",
     "near": "Narsipatnam",
     "km_from_start": 278.8,
+    "off_road_m": 96,
     "lat": 17.33157,
     "lon": 82.49426,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/way/1524280484"
+    "osm_url": "https://www.openstreetmap.org/way/1524280484",
+    "source": null
    },
    {
     "id": "fuel:node-12097242226",
@@ -2758,10 +2880,12 @@
     "brand": "Hindustan Petroleum",
     "near": "Narsipatnam",
     "km_from_start": 280.6,
+    "off_road_m": 65,
     "lat": 17.32351,
     "lon": 82.48079,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/12097242226"
+    "osm_url": "https://www.openstreetmap.org/node/12097242226",
+    "source": null
    },
    {
     "id": "fuel:node-13529427414",
@@ -2769,10 +2893,12 @@
     "brand": "Indian Oil",
     "near": "Narsipatnam",
     "km_from_start": 281.3,
+    "off_road_m": 34,
     "lat": 17.32032,
     "lon": 82.47469,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/13529427414"
+    "osm_url": "https://www.openstreetmap.org/node/13529427414",
+    "source": null
    },
    {
     "id": "fuel:node-11647507629",
@@ -2780,10 +2906,12 @@
     "brand": "Bharat Petroleum",
     "near": "Narsipatnam",
     "km_from_start": 284.3,
+    "off_road_m": 29,
     "lat": 17.31042,
     "lon": 82.44952,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/11647507629"
+    "osm_url": "https://www.openstreetmap.org/node/11647507629",
+    "source": null
    },
    {
     "id": "fuel:node-13529599448",
@@ -2791,10 +2919,12 @@
     "brand": "Indian Oil",
     "near": "Narsipatnam",
     "km_from_start": 292.3,
+    "off_road_m": 31,
     "lat": 17.27005,
     "lon": 82.40187,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/13529599448"
+    "osm_url": "https://www.openstreetmap.org/node/13529599448",
+    "source": null
    },
    {
     "id": "fuel:node-11647511589",
@@ -2802,10 +2932,12 @@
     "brand": "Hindustan Petroleum",
     "near": "Narsipatnam",
     "km_from_start": 292.5,
+    "off_road_m": 867,
     "lat": 17.27766,
     "lon": 82.40088,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/11647511589"
+    "osm_url": "https://www.openstreetmap.org/node/11647511589",
+    "source": null
    },
    {
     "id": "fuel:node-11647511590",
@@ -2813,10 +2945,12 @@
     "brand": "Nayara",
     "near": "Narsipatnam",
     "km_from_start": 293.1,
+    "off_road_m": 321,
     "lat": 17.2732,
     "lon": 82.39474,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/11647511590"
+    "osm_url": "https://www.openstreetmap.org/node/11647511590",
+    "source": null
    },
    {
     "id": "fuel:node-13529599449",
@@ -2824,10 +2958,12 @@
     "brand": "Hindustan Petroleum",
     "near": "Narsipatnam",
     "km_from_start": 293.2,
+    "off_road_m": 18,
     "lat": 17.27021,
     "lon": 82.39382,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/13529599449"
+    "osm_url": "https://www.openstreetmap.org/node/13529599449",
+    "source": null
    },
    {
     "id": "fuel:node-11647511591",
@@ -2835,10 +2971,12 @@
     "brand": "Bharat Petroleum",
     "near": "Narsipatnam",
     "km_from_start": 293.3,
+    "off_road_m": 185,
     "lat": 17.27212,
     "lon": 82.3928,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/11647511591"
+    "osm_url": "https://www.openstreetmap.org/node/11647511591",
+    "source": null
    },
    {
     "id": "fuel:node-11647785350",
@@ -2846,10 +2984,12 @@
     "brand": "Bharat Petroleum",
     "near": "Narsipatnam",
     "km_from_start": 296.4,
+    "off_road_m": 82,
     "lat": 17.25467,
     "lon": 82.37142,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/11647785350"
+    "osm_url": "https://www.openstreetmap.org/node/11647785350",
+    "source": null
    },
    {
     "id": "fuel:node-11647785351",
@@ -2857,10 +2997,12 @@
     "brand": "Indian Oil",
     "near": "Narsipatnam",
     "km_from_start": 298.3,
+    "off_road_m": 133,
     "lat": 17.24086,
     "lon": 82.36227,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/11647785351"
+    "osm_url": "https://www.openstreetmap.org/node/11647785351",
+    "source": null
    },
    {
     "id": "fuel:node-11647785352",
@@ -2868,10 +3010,12 @@
     "brand": "Hindustan Petroleum",
     "near": "Narsipatnam",
     "km_from_start": 298.4,
+    "off_road_m": 36,
     "lat": 17.24181,
     "lon": 82.36209,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/11647785352"
+    "osm_url": "https://www.openstreetmap.org/node/11647785352",
+    "source": null
    },
    {
     "id": "fuel:node-11647785354",
@@ -2879,10 +3023,12 @@
     "brand": "Indian Oil",
     "near": "Narsipatnam",
     "km_from_start": 299.6,
+    "off_road_m": 64,
     "lat": 17.24327,
     "lon": 82.35148,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/11647785354"
+    "osm_url": "https://www.openstreetmap.org/node/11647785354",
+    "source": null
    },
    {
     "id": "fuel:node-11647785355",
@@ -2890,10 +3036,12 @@
     "brand": "Hindustan Petroleum",
     "near": "Narsipatnam",
     "km_from_start": 300.6,
+    "off_road_m": 143,
     "lat": 17.2422,
     "lon": 82.34171,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/11647785355"
+    "osm_url": "https://www.openstreetmap.org/node/11647785355",
+    "source": null
    },
    {
     "id": "fuel:node-12098306307",
@@ -2901,10 +3049,12 @@
     "brand": null,
     "near": "Narsipatnam",
     "km_from_start": 312.8,
+    "off_road_m": 142,
     "lat": 17.22545,
     "lon": 82.23774,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/12098306307"
+    "osm_url": "https://www.openstreetmap.org/node/12098306307",
+    "source": null
    },
    {
     "id": "fuel:node-11647853084",
@@ -2912,10 +3062,12 @@
     "brand": "Indian Oil",
     "near": "Narsipatnam",
     "km_from_start": 316.5,
+    "off_road_m": 24,
     "lat": 17.2294,
     "lon": 82.20379,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/11647853084"
+    "osm_url": "https://www.openstreetmap.org/node/11647853084",
+    "source": null
    },
    {
     "id": "fuel:way-1530745272",
@@ -2923,10 +3075,12 @@
     "brand": "Hindustan Petroleum",
     "near": "Narsipatnam",
     "km_from_start": 319.5,
+    "off_road_m": 58,
     "lat": 17.23715,
     "lon": 82.17796,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/way/1530745272"
+    "osm_url": "https://www.openstreetmap.org/way/1530745272",
+    "source": null
    },
    {
     "id": "fuel:way-1530745260",
@@ -2934,10 +3088,12 @@
     "brand": null,
     "near": "Narsipatnam",
     "km_from_start": 323.1,
+    "off_road_m": 23,
     "lat": 17.23581,
     "lon": 82.14645,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/way/1530745260"
+    "osm_url": "https://www.openstreetmap.org/way/1530745260",
+    "source": null
    },
    {
     "id": "fuel:node-12098306304",
@@ -2945,10 +3101,12 @@
     "brand": null,
     "near": "Narsipatnam",
     "km_from_start": 325.6,
+    "off_road_m": 609,
     "lat": 17.23515,
     "lon": 82.12224,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/12098306304"
+    "osm_url": "https://www.openstreetmap.org/node/12098306304",
+    "source": null
    },
    {
     "id": "fuel:way-1530745228",
@@ -2956,10 +3114,12 @@
     "brand": null,
     "near": "Narsipatnam",
     "km_from_start": 331.0,
+    "off_road_m": 48,
     "lat": 17.19472,
     "lon": 82.09153,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/way/1530745228"
+    "osm_url": "https://www.openstreetmap.org/way/1530745228",
+    "source": null
    },
    {
     "id": "fuel:way-1530745230",
@@ -2967,10 +3127,12 @@
     "brand": "Indian Oil",
     "near": "Narsipatnam",
     "km_from_start": 331.1,
+    "off_road_m": 52,
     "lat": 17.19502,
     "lon": 82.09045,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/way/1530745230"
+    "osm_url": "https://www.openstreetmap.org/way/1530745230",
+    "source": null
    },
    {
     "id": "fuel:node-11647855013",
@@ -2978,10 +3140,12 @@
     "brand": "Bharat Petroleum",
     "near": "Narsipatnam",
     "km_from_start": 333.1,
+    "off_road_m": 68,
     "lat": 17.18527,
     "lon": 82.07573,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/11647855013"
+    "osm_url": "https://www.openstreetmap.org/node/11647855013",
+    "source": null
    },
    {
     "id": "fuel:node-11647855015",
@@ -2989,10 +3153,12 @@
     "brand": "Hindustan Petroleum",
     "near": "Narsipatnam",
     "km_from_start": 335.5,
+    "off_road_m": 179,
     "lat": 17.17311,
     "lon": 82.05809,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/11647855015"
+    "osm_url": "https://www.openstreetmap.org/node/11647855015",
+    "source": null
    },
    {
     "id": "fuel:node-11647855017",
@@ -3000,10 +3166,12 @@
     "brand": "Indian Oil",
     "near": "Narsipatnam",
     "km_from_start": 338.1,
+    "off_road_m": 95,
     "lat": 17.16748,
     "lon": 82.03505,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/11647855017"
+    "osm_url": "https://www.openstreetmap.org/node/11647855017",
+    "source": null
    },
    {
     "id": "fuel:node-11647855019",
@@ -3011,10 +3179,12 @@
     "brand": "Bharat Petroleum",
     "near": "Narsipatnam",
     "km_from_start": 340.3,
+    "off_road_m": 10,
     "lat": 17.15788,
     "lon": 82.01796,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/11647855019"
+    "osm_url": "https://www.openstreetmap.org/node/11647855019",
+    "source": null
    },
    {
     "id": "fuel:node-11647855020",
@@ -3022,10 +3192,12 @@
     "brand": "Indian Oil",
     "near": "Narsipatnam",
     "km_from_start": 341.0,
+    "off_road_m": 45,
     "lat": 17.15464,
     "lon": 82.01173,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/11647855020"
+    "osm_url": "https://www.openstreetmap.org/node/11647855020",
+    "source": null
    },
    {
     "id": "fuel:node-11647855021",
@@ -3033,10 +3205,12 @@
     "brand": "Bharat Petroleum",
     "near": "Narsipatnam",
     "km_from_start": 341.4,
+    "off_road_m": 76,
     "lat": 17.15411,
     "lon": 82.00835,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/11647855021"
+    "osm_url": "https://www.openstreetmap.org/node/11647855021",
+    "source": null
    },
    {
     "id": "fuel:node-11647859731",
@@ -3044,10 +3218,12 @@
     "brand": "Hindustan Petroleum",
     "near": "Narsipatnam",
     "km_from_start": 344.7,
+    "off_road_m": 136,
     "lat": 17.14777,
     "lon": 81.98348,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/11647859731"
+    "osm_url": "https://www.openstreetmap.org/node/11647859731",
+    "source": null
    },
    {
     "id": "fuel:node-11647859732",
@@ -3055,10 +3231,12 @@
     "brand": "Indian Oil",
     "near": "Narsipatnam",
     "km_from_start": 345.9,
+    "off_road_m": 29,
     "lat": 17.14106,
     "lon": 81.975,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/11647859732"
+    "osm_url": "https://www.openstreetmap.org/node/11647859732",
+    "source": null
    },
    {
     "id": "fuel:node-11648189539",
@@ -3066,10 +3244,12 @@
     "brand": "Nayara",
     "near": "Narsipatnam",
     "km_from_start": 356.3,
+    "off_road_m": 165,
     "lat": 17.08561,
     "lon": 81.90885,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/11648189539"
+    "osm_url": "https://www.openstreetmap.org/node/11648189539",
+    "source": null
    },
    {
     "id": "fuel:node-11648189541",
@@ -3077,10 +3257,12 @@
     "brand": "Indian Oil",
     "near": "Narsipatnam",
     "km_from_start": 358.2,
+    "off_road_m": 113,
     "lat": 17.07731,
     "lon": 81.89478,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/11648189541"
+    "osm_url": "https://www.openstreetmap.org/node/11648189541",
+    "source": null
    },
    {
     "id": "fuel:node-11648189537",
@@ -3088,10 +3270,12 @@
     "brand": "Bharat Petroleum",
     "near": "Narsipatnam",
     "km_from_start": 358.4,
+    "off_road_m": 118,
     "lat": 17.07522,
     "lon": 81.89358,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/11648189537"
+    "osm_url": "https://www.openstreetmap.org/node/11648189537",
+    "source": null
    },
    {
     "id": "fuel:node-11648189547",
@@ -3099,10 +3283,12 @@
     "brand": "Hindustan Petroleum",
     "near": "Narsipatnam",
     "km_from_start": 359.7,
+    "off_road_m": 16,
     "lat": 17.06918,
     "lon": 81.88627,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/11648189547"
+    "osm_url": "https://www.openstreetmap.org/node/11648189547",
+    "source": null
    },
    {
     "id": "fuel:node-13529613361",
@@ -3110,10 +3296,12 @@
     "brand": "Bharat Petroleum",
     "near": "Narsipatnam",
     "km_from_start": 361.5,
+    "off_road_m": 94,
     "lat": 17.0606,
     "lon": 81.87257,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/13529613361"
+    "osm_url": "https://www.openstreetmap.org/node/13529613361",
+    "source": null
    },
    {
     "id": "fuel:node-11648189554",
@@ -3121,10 +3309,12 @@
     "brand": "Indian Oil",
     "near": "Narsipatnam",
     "km_from_start": 363.6,
+    "off_road_m": 49,
     "lat": 17.05099,
     "lon": 81.856,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/11648189554"
+    "osm_url": "https://www.openstreetmap.org/node/11648189554",
+    "source": null
    },
    {
     "id": "fuel:node-11885383365",
@@ -3132,10 +3322,12 @@
     "brand": "Hindustan Petroleum",
     "near": "Narsipatnam",
     "km_from_start": 369.9,
+    "off_road_m": 1081,
     "lat": 17.06129,
     "lon": 81.80692,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/11885383365"
+    "osm_url": "https://www.openstreetmap.org/node/11885383365",
+    "source": null
    },
    {
     "id": "fuel:node-9919080268",
@@ -3143,10 +3335,12 @@
     "brand": "Nayara",
     "near": "Narsipatnam",
     "km_from_start": 373.2,
+    "off_road_m": 363,
     "lat": 17.05224,
     "lon": 81.77419,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/9919080268"
+    "osm_url": "https://www.openstreetmap.org/node/9919080268",
+    "source": null
    },
    {
     "id": "fuel:node-12171616033",
@@ -3154,10 +3348,12 @@
     "brand": null,
     "near": "Narsipatnam",
     "km_from_start": 379.5,
+    "off_road_m": 670,
     "lat": 17.02269,
     "lon": 81.72457,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/12171616033"
+    "osm_url": "https://www.openstreetmap.org/node/12171616033",
+    "source": null
    },
    {
     "id": "fuel:node-12171616034",
@@ -3165,10 +3361,12 @@
     "brand": null,
     "near": "Narsipatnam",
     "km_from_start": 379.5,
+    "off_road_m": 648,
     "lat": 17.02277,
     "lon": 81.72426,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/12171616034"
+    "osm_url": "https://www.openstreetmap.org/node/12171616034",
+    "source": null
    },
    {
     "id": "fuel:way-679642987",
@@ -3176,10 +3374,12 @@
     "brand": null,
     "near": "Narsipatnam",
     "km_from_start": 379.8,
+    "off_road_m": 427,
     "lat": 17.02338,
     "lon": 81.72034,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/way/679642987"
+    "osm_url": "https://www.openstreetmap.org/way/679642987",
+    "source": null
    },
    {
     "id": "fuel:node-12171616053",
@@ -3187,10 +3387,12 @@
     "brand": null,
     "near": "Narsipatnam",
     "km_from_start": 381.6,
+    "off_road_m": 932,
     "lat": 17.02955,
     "lon": 81.7023,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/12171616053"
+    "osm_url": "https://www.openstreetmap.org/node/12171616053",
+    "source": null
    },
    {
     "id": "fuel:way-674605638",
@@ -3198,10 +3400,12 @@
     "brand": null,
     "near": "Narsipatnam",
     "km_from_start": 381.7,
+    "off_road_m": 915,
     "lat": 17.02939,
     "lon": 81.70219,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/way/674605638"
+    "osm_url": "https://www.openstreetmap.org/way/674605638",
+    "source": null
    },
    {
     "id": "fuel:node-12171616052",
@@ -3209,10 +3413,12 @@
     "brand": null,
     "near": "Narsipatnam",
     "km_from_start": 381.8,
+    "off_road_m": 50,
     "lat": 17.02154,
     "lon": 81.7022,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/12171616052"
+    "osm_url": "https://www.openstreetmap.org/node/12171616052",
+    "source": null
    },
    {
     "id": "fuel:way-674612738",
@@ -3220,10 +3426,12 @@
     "brand": null,
     "near": "Narsipatnam",
     "km_from_start": 382.0,
+    "off_road_m": 815,
     "lat": 17.0281,
     "lon": 81.69936,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/way/674612738"
+    "osm_url": "https://www.openstreetmap.org/way/674612738",
+    "source": null
    },
    {
     "id": "fuel:way-674605635",
@@ -3231,10 +3439,12 @@
     "brand": null,
     "near": "Narsipatnam",
     "km_from_start": 385.9,
+    "off_road_m": 50,
     "lat": 17.02056,
     "lon": 81.66558,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/way/674605635"
+    "osm_url": "https://www.openstreetmap.org/way/674605635",
+    "source": null
    },
    {
     "id": "fuel:way-674605636",
@@ -3242,10 +3452,12 @@
     "brand": null,
     "near": "Narsipatnam",
     "km_from_start": 386.5,
+    "off_road_m": 650,
     "lat": 17.01846,
     "lon": 81.65788,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/way/674605636"
+    "osm_url": "https://www.openstreetmap.org/way/674605636",
+    "source": null
    },
    {
     "id": "fuel:way-674613098",
@@ -3253,10 +3465,12 @@
     "brand": null,
     "near": "Narsipatnam",
     "km_from_start": 387.1,
+    "off_road_m": 915,
     "lat": 17.01895,
     "lon": 81.65182,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/way/674613098"
+    "osm_url": "https://www.openstreetmap.org/way/674613098",
+    "source": null
    },
    {
     "id": "fuel:node-11885379033",
@@ -3264,10 +3478,12 @@
     "brand": "Jio-bp",
     "near": "Narsipatnam",
     "km_from_start": 387.5,
+    "off_road_m": 47,
     "lat": 17.02749,
     "lon": 81.65255,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/11885379033"
+    "osm_url": "https://www.openstreetmap.org/node/11885379033",
+    "source": null
    },
    {
     "id": "fuel:way-674605637",
@@ -3275,10 +3491,12 @@
     "brand": null,
     "near": "Narsipatnam",
     "km_from_start": 387.7,
+    "off_road_m": 1285,
     "lat": 17.01842,
     "lon": 81.64564,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/way/674605637"
+    "osm_url": "https://www.openstreetmap.org/way/674605637",
+    "source": null
    },
    {
     "id": "fuel:node-6393168127",
@@ -3286,10 +3504,12 @@
     "brand": null,
     "near": "Narsipatnam",
     "km_from_start": 398.2,
+    "off_road_m": 1854,
     "lat": 17.03511,
     "lon": 81.56345,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/6393168127"
+    "osm_url": "https://www.openstreetmap.org/node/6393168127",
+    "source": null
    },
    {
     "id": "fuel:node-6393168126",
@@ -3297,10 +3517,12 @@
     "brand": null,
     "near": "Narsipatnam",
     "km_from_start": 398.3,
+    "off_road_m": 1878,
     "lat": 17.03483,
     "lon": 81.56274,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/6393168126"
+    "osm_url": "https://www.openstreetmap.org/node/6393168126",
+    "source": null
    },
    {
     "id": "fuel:node-9974926699",
@@ -3308,10 +3530,12 @@
     "brand": "Hindustan Petroleum",
     "near": "Narsipatnam",
     "km_from_start": 409.5,
+    "off_road_m": 13,
     "lat": 16.99697,
     "lon": 81.49126,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/9974926699"
+    "osm_url": "https://www.openstreetmap.org/node/9974926699",
+    "source": null
    },
    {
     "id": "fuel:way-1539512166",
@@ -3319,10 +3543,12 @@
     "brand": null,
     "near": "Narsipatnam",
     "km_from_start": 413.1,
+    "off_road_m": 26,
     "lat": 16.98425,
     "lon": 81.46673,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/way/1539512166"
+    "osm_url": "https://www.openstreetmap.org/way/1539512166",
+    "source": null
    },
    {
     "id": "fuel:way-1539512168",
@@ -3330,10 +3556,12 @@
     "brand": null,
     "near": "Narsipatnam",
     "km_from_start": 413.1,
+    "off_road_m": 125,
     "lat": 16.98514,
     "lon": 81.46677,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/way/1539512168"
+    "osm_url": "https://www.openstreetmap.org/way/1539512168",
+    "source": null
    },
    {
     "id": "fuel:node-12109849215",
@@ -3341,10 +3569,12 @@
     "brand": "Indian Oil",
     "near": "Narsipatnam",
     "km_from_start": 420.8,
+    "off_road_m": 676,
     "lat": 16.94862,
     "lon": 81.4079,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/12109849215"
+    "osm_url": "https://www.openstreetmap.org/node/12109849215",
+    "source": null
    },
    {
     "id": "fuel:node-11885322575",
@@ -3352,10 +3582,12 @@
     "brand": "Nayara",
     "near": "Narsipatnam",
     "km_from_start": 424.1,
+    "off_road_m": 102,
     "lat": 16.93353,
     "lon": 81.39014,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/11885322575"
+    "osm_url": "https://www.openstreetmap.org/node/11885322575",
+    "source": null
    },
    {
     "id": "fuel:node-12109849251",
@@ -3363,10 +3595,12 @@
     "brand": null,
     "near": "Narsipatnam",
     "km_from_start": 427.9,
+    "off_road_m": 141,
     "lat": 16.91536,
     "lon": 81.36139,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/12109849251"
+    "osm_url": "https://www.openstreetmap.org/node/12109849251",
+    "source": null
    },
    {
     "id": "fuel:node-11885309809",
@@ -3374,10 +3608,12 @@
     "brand": "Hindustan Petroleum",
     "near": "Narsipatnam",
     "km_from_start": 435.1,
+    "off_road_m": 36,
     "lat": 16.87543,
     "lon": 81.31286,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/11885309809"
+    "osm_url": "https://www.openstreetmap.org/node/11885309809",
+    "source": null
    },
    {
     "id": "fuel:node-11885254137",
@@ -3385,10 +3621,12 @@
     "brand": "Nayara",
     "near": "Narsipatnam",
     "km_from_start": 439.3,
+    "off_road_m": 43,
     "lat": 16.84862,
     "lon": 81.28628,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/11885254137"
+    "osm_url": "https://www.openstreetmap.org/node/11885254137",
+    "source": null
    },
    {
     "id": "fuel:node-4797199835",
@@ -3396,10 +3634,12 @@
     "brand": "Hindustan Petroleum",
     "near": "Narsipatnam",
     "km_from_start": 444.7,
+    "off_road_m": 1054,
     "lat": 16.82093,
     "lon": 81.25955,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/4797199835"
+    "osm_url": "https://www.openstreetmap.org/node/4797199835",
+    "source": null
    },
    {
     "id": "fuel:node-11885377576",
@@ -3407,10 +3647,12 @@
     "brand": "Bharat Petroleum",
     "near": "Narsipatnam",
     "km_from_start": 449.6,
+    "off_road_m": 110,
     "lat": 16.79269,
     "lon": 81.22282,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/11885377576"
+    "osm_url": "https://www.openstreetmap.org/node/11885377576",
+    "source": null
    },
    {
     "id": "fuel:node-11885260879",
@@ -3418,10 +3660,12 @@
     "brand": "Hindustan Petroleum",
     "near": "Narsipatnam",
     "km_from_start": 457.6,
+    "off_road_m": 0,
     "lat": 16.74921,
     "lon": 81.17384,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/11885260879"
+    "osm_url": "https://www.openstreetmap.org/node/11885260879",
+    "source": null
    },
    {
     "id": "fuel:node-11974329715",
@@ -3429,10 +3673,12 @@
     "brand": "Indian Oil",
     "near": "Narsipatnam",
     "km_from_start": 461.9,
+    "off_road_m": 459,
     "lat": 16.73301,
     "lon": 81.1363,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/11974329715"
+    "osm_url": "https://www.openstreetmap.org/node/11974329715",
+    "source": null
    },
    {
     "id": "fuel:node-12114092304",
@@ -3440,10 +3686,12 @@
     "brand": null,
     "near": "Narsipatnam",
     "km_from_start": 466.4,
+    "off_road_m": 1645,
     "lat": 16.72619,
     "lon": 81.0941,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/12114092304"
+    "osm_url": "https://www.openstreetmap.org/node/12114092304",
+    "source": null
    },
    {
     "id": "fuel:node-12114092303",
@@ -3451,10 +3699,12 @@
     "brand": null,
     "near": "Narsipatnam",
     "km_from_start": 467.1,
+    "off_road_m": 903,
     "lat": 16.73339,
     "lon": 81.0888,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/12114092303"
+    "osm_url": "https://www.openstreetmap.org/node/12114092303",
+    "source": null
    },
    {
     "id": "fuel:node-11885260465",
@@ -3462,10 +3712,12 @@
     "brand": "Nayara",
     "near": "Narsipatnam",
     "km_from_start": 477.0,
+    "off_road_m": 40,
     "lat": 16.69381,
     "lon": 81.02473,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/11885260465"
+    "osm_url": "https://www.openstreetmap.org/node/11885260465",
+    "source": null
    },
    {
     "id": "fuel:node-12114092330",
@@ -3473,10 +3725,12 @@
     "brand": null,
     "near": "Narsipatnam",
     "km_from_start": 479.8,
+    "off_road_m": 67,
     "lat": 16.67215,
     "lon": 81.01657,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/12114092330"
+    "osm_url": "https://www.openstreetmap.org/node/12114092330",
+    "source": null
    },
    {
     "id": "fuel:node-11648556381",
@@ -3484,10 +3738,12 @@
     "brand": "Indian Oil",
     "near": "Narsipatnam",
     "km_from_start": 480.9,
+    "off_road_m": 168,
     "lat": 16.66558,
     "lon": 81.00856,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/11648556381"
+    "osm_url": "https://www.openstreetmap.org/node/11648556381",
+    "source": null
    },
    {
     "id": "fuel:node-12116049987",
@@ -3495,10 +3751,12 @@
     "brand": null,
     "near": "Narsipatnam",
     "km_from_start": 487.8,
+    "off_road_m": 1470,
     "lat": 16.63602,
     "lon": 80.9723,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/12116049987"
+    "osm_url": "https://www.openstreetmap.org/node/12116049987",
+    "source": null
    },
    {
     "id": "fuel:node-12116299418",
@@ -3506,10 +3764,12 @@
     "brand": null,
     "near": "Narsipatnam",
     "km_from_start": 487.8,
+    "off_road_m": 1038,
     "lat": 16.6135,
     "lon": 80.9711,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/12116299418"
+    "osm_url": "https://www.openstreetmap.org/node/12116299418",
+    "source": null
    },
    {
     "id": "fuel:node-12116049992",
@@ -3517,10 +3777,12 @@
     "brand": null,
     "near": "Narsipatnam",
     "km_from_start": 488.0,
+    "off_road_m": 1363,
     "lat": 16.63513,
     "lon": 80.97051,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/12116049992"
+    "osm_url": "https://www.openstreetmap.org/node/12116049992",
+    "source": null
    },
    {
     "id": "fuel:node-11648542621",
@@ -3528,10 +3790,12 @@
     "brand": "Indian Oil",
     "near": "Narsipatnam",
     "km_from_start": 491.2,
+    "off_road_m": 53,
     "lat": 16.62739,
     "lon": 80.9429,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/11648542621"
+    "osm_url": "https://www.openstreetmap.org/node/11648542621",
+    "source": null
    },
    {
     "id": "fuel:node-11648544461",
@@ -3539,10 +3803,12 @@
     "brand": "Hindustan Petroleum",
     "near": "Narsipatnam",
     "km_from_start": 496.8,
+    "off_road_m": 68,
     "lat": 16.604,
     "lon": 80.90185,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/11648544461"
+    "osm_url": "https://www.openstreetmap.org/node/11648544461",
+    "source": null
    },
    {
     "id": "fuel:node-11648544462",
@@ -3550,10 +3816,12 @@
     "brand": "Jio-bp",
     "near": "Narsipatnam",
     "km_from_start": 497.7,
+    "off_road_m": 90,
     "lat": 16.59984,
     "lon": 80.89516,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/11648544462"
+    "osm_url": "https://www.openstreetmap.org/node/11648544462",
+    "source": null
    },
    {
     "id": "fuel:node-11648544463",
@@ -3561,10 +3829,12 @@
     "brand": "Hindustan Petroleum",
     "near": "Narsipatnam",
     "km_from_start": 499.9,
+    "off_road_m": 58,
     "lat": 16.58594,
     "lon": 80.88039,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/11648544463"
+    "osm_url": "https://www.openstreetmap.org/node/11648544463",
+    "source": null
    },
    {
     "id": "fuel:node-12116049997",
@@ -3572,10 +3842,12 @@
     "brand": null,
     "near": "Narsipatnam",
     "km_from_start": 503.1,
+    "off_road_m": 60,
     "lat": 16.5685,
     "lon": 80.85752,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/12116049997"
+    "osm_url": "https://www.openstreetmap.org/node/12116049997",
+    "source": null
    },
    {
     "id": "fuel:way-1547283656",
@@ -3583,10 +3855,12 @@
     "brand": null,
     "near": "Narsipatnam",
     "km_from_start": 504.5,
+    "off_road_m": 20,
     "lat": 16.56299,
     "lon": 80.84628,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/way/1547283656"
+    "osm_url": "https://www.openstreetmap.org/way/1547283656",
+    "source": null
    },
    {
     "id": "fuel:node-11648586209",
@@ -3594,10 +3868,12 @@
     "brand": "Bharat Petroleum",
     "near": "Narsipatnam",
     "km_from_start": 508.4,
+    "off_road_m": 16,
     "lat": 16.54712,
     "lon": 80.81487,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/11648586209"
+    "osm_url": "https://www.openstreetmap.org/node/11648586209",
+    "source": null
    },
    {
     "id": "fuel:node-12792065913",
@@ -3605,10 +3881,12 @@
     "brand": "Hindustan Petroleum",
     "near": "Narsipatnam",
     "km_from_start": 512.0,
+    "off_road_m": 42,
     "lat": 16.5294,
     "lon": 80.78746,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/12792065913"
+    "osm_url": "https://www.openstreetmap.org/node/12792065913",
+    "source": null
    },
    {
     "id": "fuel:node-11648586218",
@@ -3616,10 +3894,12 @@
     "brand": "Indian Oil",
     "near": "Narsipatnam",
     "km_from_start": 513.0,
+    "off_road_m": 73,
     "lat": 16.52283,
     "lon": 80.78109,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/11648586218"
+    "osm_url": "https://www.openstreetmap.org/node/11648586218",
+    "source": null
    },
    {
     "id": "fuel:node-11648586227",
@@ -3627,10 +3907,12 @@
     "brand": "Hindustan Petroleum",
     "near": "Narsipatnam",
     "km_from_start": 517.7,
+    "off_road_m": 78,
     "lat": 16.51096,
     "lon": 80.74087,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/11648586227"
+    "osm_url": "https://www.openstreetmap.org/node/11648586227",
+    "source": null
    },
    {
     "id": "fuel:node-11601532952",
@@ -3638,10 +3920,12 @@
     "brand": "Indian Oil",
     "near": "Narsipatnam",
     "km_from_start": 518.6,
+    "off_road_m": 45,
     "lat": 16.51103,
     "lon": 80.73235,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/11601532952"
+    "osm_url": "https://www.openstreetmap.org/node/11601532952",
+    "source": null
    },
    {
     "id": "fuel:node-11648586230",
@@ -3649,10 +3933,12 @@
     "brand": "Bharat Petroleum",
     "near": "Narsipatnam",
     "km_from_start": 519.0,
+    "off_road_m": 59,
     "lat": 16.51079,
     "lon": 80.72817,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/11648586230"
+    "osm_url": "https://www.openstreetmap.org/node/11648586230",
+    "source": null
    },
    {
     "id": "fuel:node-12994069526",
@@ -3660,10 +3946,12 @@
     "brand": null,
     "near": "Narsipatnam",
     "km_from_start": 519.0,
+    "off_road_m": 33,
     "lat": 16.51104,
     "lon": 80.72847,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/12994069526"
+    "osm_url": "https://www.openstreetmap.org/node/12994069526",
+    "source": null
    },
    {
     "id": "fuel:node-12993614242",
@@ -3671,10 +3959,12 @@
     "brand": null,
     "near": "Narsipatnam",
     "km_from_start": 519.1,
+    "off_road_m": 108,
     "lat": 16.51033,
     "lon": 80.72741,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/12993614242"
+    "osm_url": "https://www.openstreetmap.org/node/12993614242",
+    "source": null
    },
    {
     "id": "fuel:node-11696818262",
@@ -3682,10 +3972,12 @@
     "brand": "Hindustan Petroleum",
     "near": "Narsipatnam",
     "km_from_start": 521.3,
+    "off_road_m": 401,
     "lat": 16.51057,
     "lon": 80.70654,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/11696818262"
+    "osm_url": "https://www.openstreetmap.org/node/11696818262",
+    "source": null
    },
    {
     "id": "fuel:node-11648586236",
@@ -3693,10 +3985,12 @@
     "brand": "Hindustan Petroleum",
     "near": "Narsipatnam",
     "km_from_start": 522.4,
+    "off_road_m": 65,
     "lat": 16.517,
     "lon": 80.69901,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/11648586236"
+    "osm_url": "https://www.openstreetmap.org/node/11648586236",
+    "source": null
    },
    {
     "id": "fuel:node-12992236595",
@@ -3704,10 +3998,12 @@
     "brand": null,
     "near": "Narsipatnam",
     "km_from_start": 522.4,
+    "off_road_m": 80,
     "lat": 16.51687,
     "lon": 80.69897,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/12992236595"
+    "osm_url": "https://www.openstreetmap.org/node/12992236595",
+    "source": null
    },
    {
     "id": "fuel:node-12994063125",
@@ -3715,10 +4011,12 @@
     "brand": null,
     "near": "Narsipatnam",
     "km_from_start": 522.4,
+    "off_road_m": 52,
     "lat": 16.51715,
     "lon": 80.69896,
     "opening_hours": "06:00-24:00",
-    "osm_url": "https://www.openstreetmap.org/node/12994063125"
+    "osm_url": "https://www.openstreetmap.org/node/12994063125",
+    "source": null
    },
    {
     "id": "fuel:node-12994068044",
@@ -3726,10 +4024,12 @@
     "brand": null,
     "near": "Narsipatnam",
     "km_from_start": 522.4,
+    "off_road_m": 27,
     "lat": 16.51743,
     "lon": 80.69888,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/12994068044"
+    "osm_url": "https://www.openstreetmap.org/node/12994068044",
+    "source": null
    },
    {
     "id": "fuel:node-13021198101",
@@ -3737,10 +4037,12 @@
     "brand": null,
     "near": "Narsipatnam",
     "km_from_start": 523.1,
+    "off_road_m": 123,
     "lat": 16.51906,
     "lon": 80.69273,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/13021198101"
+    "osm_url": "https://www.openstreetmap.org/node/13021198101",
+    "source": null
    },
    {
     "id": "fuel:node-12993638780",
@@ -3748,10 +4050,12 @@
     "brand": "Petronas",
     "near": "Narsipatnam",
     "km_from_start": 526.1,
+    "off_road_m": 1005,
     "lat": 16.50988,
     "lon": 80.67692,
     "opening_hours": "Mo-Sa 06:00-10:00",
-    "osm_url": "https://www.openstreetmap.org/node/12993638780"
+    "osm_url": "https://www.openstreetmap.org/node/12993638780",
+    "source": null
    },
    {
     "id": "fuel:node-12993607974",
@@ -3759,10 +4063,12 @@
     "brand": "Bharat Petroleum",
     "near": "Narsipatnam",
     "km_from_start": 526.2,
+    "off_road_m": 1174,
     "lat": 16.50835,
     "lon": 80.6776,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/12993607974"
+    "osm_url": "https://www.openstreetmap.org/node/12993607974",
+    "source": null
    },
    {
     "id": "fuel:node-12993702349",
@@ -3770,10 +4076,12 @@
     "brand": null,
     "near": "Narsipatnam",
     "km_from_start": 526.2,
+    "off_road_m": 948,
     "lat": 16.50991,
     "lon": 80.67622,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/12993702349"
+    "osm_url": "https://www.openstreetmap.org/node/12993702349",
+    "source": null
    },
    {
     "id": "fuel:node-12993726398",
@@ -3781,10 +4089,12 @@
     "brand": null,
     "near": "Narsipatnam",
     "km_from_start": 526.2,
+    "off_road_m": 811,
     "lat": 16.51078,
     "lon": 80.6753,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/12993726398"
+    "osm_url": "https://www.openstreetmap.org/node/12993726398",
+    "source": null
    },
    {
     "id": "fuel:node-12993699749",
@@ -3792,10 +4102,12 @@
     "brand": "Indian Oil",
     "near": "Narsipatnam",
     "km_from_start": 526.3,
+    "off_road_m": 1344,
     "lat": 16.50701,
     "lon": 80.67847,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/12993699749"
+    "osm_url": "https://www.openstreetmap.org/node/12993699749",
+    "source": null
    },
    {
     "id": "fuel:way-407666579",
@@ -3803,10 +4115,12 @@
     "brand": null,
     "near": "Narsipatnam",
     "km_from_start": 526.3,
+    "off_road_m": 22,
     "lat": 16.51514,
     "lon": 80.66942,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/way/407666579"
+    "osm_url": "https://www.openstreetmap.org/way/407666579",
+    "source": null
    },
    {
     "id": "fuel:node-12993638688",
@@ -3814,10 +4128,12 @@
     "brand": "Indian Oil",
     "near": "Narsipatnam",
     "km_from_start": 526.4,
+    "off_road_m": 1227,
     "lat": 16.50654,
     "lon": 80.67653,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/12993638688"
+    "osm_url": "https://www.openstreetmap.org/node/12993638688",
+    "source": null
    },
    {
     "id": "fuel:node-12991176857",
@@ -3825,10 +4141,12 @@
     "brand": "Indian Oil",
     "near": "Narsipatnam",
     "km_from_start": 526.8,
+    "off_road_m": 1280,
     "lat": 16.50397,
     "lon": 80.67471,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/12991176857"
+    "osm_url": "https://www.openstreetmap.org/node/12991176857",
+    "source": null
    },
    {
     "id": "fuel:node-12991249144",
@@ -3836,10 +4154,12 @@
     "brand": null,
     "near": "Narsipatnam",
     "km_from_start": 527.0,
+    "off_road_m": 1390,
     "lat": 16.50225,
     "lon": 80.67445,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/12991249144"
+    "osm_url": "https://www.openstreetmap.org/node/12991249144",
+    "source": null
    },
    {
     "id": "fuel:node-12991241743",
@@ -3847,10 +4167,12 @@
     "brand": null,
     "near": "Narsipatnam",
     "km_from_start": 527.4,
+    "off_road_m": 1558,
     "lat": 16.49811,
     "lon": 80.6726,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/12991241743"
+    "osm_url": "https://www.openstreetmap.org/node/12991241743",
+    "source": null
    },
    {
     "id": "fuel:node-12991258507",
@@ -3858,10 +4180,12 @@
     "brand": null,
     "near": "Narsipatnam",
     "km_from_start": 527.5,
+    "off_road_m": 1620,
     "lat": 16.49733,
     "lon": 80.67264,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/12991258507"
+    "osm_url": "https://www.openstreetmap.org/node/12991258507",
+    "source": null
    },
    {
     "id": "fuel:node-12991240540",
@@ -3869,10 +4193,12 @@
     "brand": "Indian Oil",
     "near": "Narsipatnam",
     "km_from_start": 527.6,
+    "off_road_m": 1558,
     "lat": 16.49679,
     "lon": 80.67132,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/12991240540"
+    "osm_url": "https://www.openstreetmap.org/node/12991240540",
+    "source": null
    },
    {
     "id": "fuel:node-12852464147",
@@ -3880,10 +4206,12 @@
     "brand": "Bharat Petroleum",
     "near": "Narsipatnam",
     "km_from_start": 528.7,
+    "off_road_m": 1132,
     "lat": 16.50622,
     "lon": 80.64604,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/12852464147"
+    "osm_url": "https://www.openstreetmap.org/node/12852464147",
+    "source": null
    },
    {
     "id": "fuel:node-12994373640",
@@ -3891,10 +4219,12 @@
     "brand": "Petrol Ofisi",
     "near": "Narsipatnam",
     "km_from_start": 528.7,
+    "off_road_m": 1128,
     "lat": 16.50622,
     "lon": 80.6461,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/12994373640"
+    "osm_url": "https://www.openstreetmap.org/node/12994373640",
+    "source": null
    },
    {
     "id": "fuel:node-4378608521",
@@ -3902,10 +4232,12 @@
     "brand": "Indian Oil",
     "near": "Narsipatnam",
     "km_from_start": 528.9,
+    "off_road_m": 84,
     "lat": 16.49779,
     "lon": 80.65345,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/4378608521"
+    "osm_url": "https://www.openstreetmap.org/node/4378608521",
+    "source": null
    },
    {
     "id": "fuel:node-11581043540",
@@ -3913,10 +4245,12 @@
     "brand": "Hindustan Petroleum",
     "near": "Narsipatnam",
     "km_from_start": 530.5,
+    "off_road_m": 1187,
     "lat": 16.5069,
     "lon": 80.64504,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/11581043540"
+    "osm_url": "https://www.openstreetmap.org/node/11581043540",
+    "source": null
    },
    {
     "id": "fuel:node-11575842328",
@@ -3924,10 +4258,12 @@
     "brand": "Bharat Petroleum",
     "near": "Narsipatnam",
     "km_from_start": 530.6,
+    "off_road_m": 542,
     "lat": 16.50169,
     "lon": 80.64238,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/11575842328"
+    "osm_url": "https://www.openstreetmap.org/node/11575842328",
+    "source": null
    },
    {
     "id": "fuel:node-11570555690",
@@ -3935,10 +4271,12 @@
     "brand": "Indian Oil",
     "near": "Narsipatnam",
     "km_from_start": 530.7,
+    "off_road_m": 1171,
     "lat": 16.50737,
     "lon": 80.64354,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/11570555690"
+    "osm_url": "https://www.openstreetmap.org/node/11570555690",
+    "source": null
    },
    {
     "id": "fuel:node-11573979327",
@@ -3946,10 +4284,12 @@
     "brand": "Bharat Petroleum",
     "near": "Narsipatnam",
     "km_from_start": 531.3,
+    "off_road_m": 509,
     "lat": 16.50389,
     "lon": 80.63628,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/11573979327"
+    "osm_url": "https://www.openstreetmap.org/node/11573979327",
+    "source": null
    },
    {
     "id": "fuel:node-11573979318",
@@ -3957,10 +4297,12 @@
     "brand": "Hindustan Petroleum",
     "near": "Narsipatnam",
     "km_from_start": 531.5,
+    "off_road_m": 1357,
     "lat": 16.50952,
     "lon": 80.62407,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/11573979318"
+    "osm_url": "https://www.openstreetmap.org/node/11573979318",
+    "source": null
    },
    {
     "id": "fuel:node-11573979319",
@@ -3968,10 +4310,12 @@
     "brand": "Indian Oil",
     "near": "Narsipatnam",
     "km_from_start": 531.5,
+    "off_road_m": 1298,
     "lat": 16.50916,
     "lon": 80.62449,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/11573979319"
+    "osm_url": "https://www.openstreetmap.org/node/11573979319",
+    "source": null
    },
    {
     "id": "fuel:node-5036962992",
@@ -3979,10 +4323,12 @@
     "brand": "Indian Oil",
     "near": "Narsipatnam",
     "km_from_start": 534.3,
+    "off_road_m": 87,
     "lat": 16.48106,
     "lon": 80.61719,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/5036962992"
+    "osm_url": "https://www.openstreetmap.org/node/5036962992",
+    "source": null
    },
    {
     "id": "fuel:node-5844233929",
@@ -3990,10 +4336,12 @@
     "brand": "Hindustan Petroleum",
     "near": "Narsipatnam",
     "km_from_start": 534.4,
+    "off_road_m": 98,
     "lat": 16.47988,
     "lon": 80.61672,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/5844233929"
+    "osm_url": "https://www.openstreetmap.org/node/5844233929",
+    "source": null
    },
    {
     "id": "fuel:node-11778362321",
@@ -4001,10 +4349,12 @@
     "brand": "Hindustan Petroleum",
     "near": "Narsipatnam",
     "km_from_start": 536.5,
+    "off_road_m": 1886,
     "lat": 16.47173,
     "lon": 80.59656,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/11778362321"
+    "osm_url": "https://www.openstreetmap.org/node/11778362321",
+    "source": null
    },
    {
     "id": "fuel:node-11778362322",
@@ -4012,10 +4362,12 @@
     "brand": "Indian Oil",
     "near": "Narsipatnam",
     "km_from_start": 536.6,
+    "off_road_m": 1911,
     "lat": 16.47114,
     "lon": 80.59586,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/11778362322"
+    "osm_url": "https://www.openstreetmap.org/node/11778362322",
+    "source": null
    },
    {
     "id": "fuel:node-5036962989",
@@ -4023,10 +4375,12 @@
     "brand": "Hindustan Petroleum",
     "near": "Narsipatnam",
     "km_from_start": 539.1,
+    "off_road_m": 60,
     "lat": 16.44646,
     "lon": 80.59474,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/5036962989"
+    "osm_url": "https://www.openstreetmap.org/node/5036962989",
+    "source": null
    },
    {
     "id": "fuel:node-5036963677",
@@ -4034,10 +4388,12 @@
     "brand": "Indian Oil",
     "near": "Narsipatnam",
     "km_from_start": 541.3,
+    "off_road_m": 149,
     "lat": 16.43128,
     "lon": 80.58268,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/5036963677"
+    "osm_url": "https://www.openstreetmap.org/node/5036963677",
+    "source": null
    },
    {
     "id": "fuel:node-8389241382",
@@ -4045,10 +4401,12 @@
     "brand": null,
     "near": "Narsipatnam",
     "km_from_start": 542.0,
+    "off_road_m": 257,
     "lat": 16.42831,
     "lon": 80.57533,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/8389241382"
+    "osm_url": "https://www.openstreetmap.org/node/8389241382",
+    "source": null
    },
    {
     "id": "fuel:node-8389268533",
@@ -4056,10 +4414,12 @@
     "brand": null,
     "near": "Narsipatnam",
     "km_from_start": 542.0,
+    "off_road_m": 48,
     "lat": 16.42719,
     "lon": 80.5769,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/8389268533"
+    "osm_url": "https://www.openstreetmap.org/node/8389268533",
+    "source": null
    },
    {
     "id": "fuel:node-11613022194",
@@ -4067,10 +4427,12 @@
     "brand": "Bharat Petroleum",
     "near": "Narsipatnam",
     "km_from_start": 542.3,
+    "off_road_m": 94,
     "lat": 16.42438,
     "lon": 80.57626,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/11613022194"
+    "osm_url": "https://www.openstreetmap.org/node/11613022194",
+    "source": null
    },
    {
     "id": "fuel:node-11585567653",
@@ -4078,10 +4440,12 @@
     "brand": "Indian Oil",
     "near": "Narsipatnam",
     "km_from_start": 542.5,
+    "off_road_m": 1179,
     "lat": 16.43024,
     "lon": 80.56587,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/11585567653"
+    "osm_url": "https://www.openstreetmap.org/node/11585567653",
+    "source": null
    },
    {
     "id": "fuel:node-11585567656",
@@ -4089,10 +4453,12 @@
     "brand": "Hindustan Petroleum",
     "near": "Narsipatnam",
     "km_from_start": 542.8,
+    "off_road_m": 962,
     "lat": 16.42699,
     "lon": 80.56577,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/11585567656"
+    "osm_url": "https://www.openstreetmap.org/node/11585567656",
+    "source": null
    },
    {
     "id": "fuel:node-11585567663",
@@ -4100,10 +4466,12 @@
     "brand": "Hindustan Petroleum",
     "near": "Narsipatnam",
     "km_from_start": 544.5,
+    "off_road_m": 131,
     "lat": 16.41373,
     "lon": 80.55978,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/11585567663"
+    "osm_url": "https://www.openstreetmap.org/node/11585567663",
+    "source": null
    },
    {
     "id": "fuel:node-11687250226",
@@ -4111,10 +4479,12 @@
     "brand": "Indian Oil",
     "near": "Narsipatnam",
     "km_from_start": 545.6,
+    "off_road_m": 63,
     "lat": 16.40577,
     "lon": 80.55348,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/11687250226"
+    "osm_url": "https://www.openstreetmap.org/node/11687250226",
+    "source": null
    },
    {
     "id": "fuel:node-5036963298",
@@ -4122,10 +4492,12 @@
     "brand": "Bharat Petroleum",
     "near": "Narsipatnam",
     "km_from_start": 553.3,
+    "off_road_m": 47,
     "lat": 16.36247,
     "lon": 80.50097,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/5036963298"
+    "osm_url": "https://www.openstreetmap.org/node/5036963298",
+    "source": null
    },
    {
     "id": "fuel:node-11693230152",
@@ -4133,10 +4505,12 @@
     "brand": "Hindustan Petroleum",
     "near": "Narsipatnam",
     "km_from_start": 556.7,
+    "off_road_m": 32,
     "lat": 16.33529,
     "lon": 80.48852,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/11693230152"
+    "osm_url": "https://www.openstreetmap.org/node/11693230152",
+    "source": null
    },
    {
     "id": "fuel:node-11693230154",
@@ -4144,10 +4518,12 @@
     "brand": "Indian Oil",
     "near": "Narsipatnam",
     "km_from_start": 558.4,
+    "off_road_m": 405,
     "lat": 16.31752,
     "lon": 80.48418,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/11693230154"
+    "osm_url": "https://www.openstreetmap.org/node/11693230154",
+    "source": null
    },
    {
     "id": "fuel:node-11696441486",
@@ -4155,10 +4531,12 @@
     "brand": "Indian Oil",
     "near": "Narsipatnam",
     "km_from_start": 558.4,
+    "off_road_m": 640,
     "lat": 16.31557,
     "lon": 80.48273,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/11696441486"
+    "osm_url": "https://www.openstreetmap.org/node/11696441486",
+    "source": null
    },
    {
     "id": "fuel:node-11687222943",
@@ -4166,10 +4544,12 @@
     "brand": "Bharat Petroleum",
     "near": "Narsipatnam",
     "km_from_start": 559.2,
+    "off_road_m": 67,
     "lat": 16.323,
     "lon": 80.47763,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/11687222943"
+    "osm_url": "https://www.openstreetmap.org/node/11687222943",
+    "source": null
    },
    {
     "id": "fuel:node-11687222941",
@@ -4177,10 +4557,12 @@
     "brand": "Hindustan Petroleum",
     "near": "Narsipatnam",
     "km_from_start": 559.4,
+    "off_road_m": 62,
     "lat": 16.32201,
     "lon": 80.47618,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/11687222941"
+    "osm_url": "https://www.openstreetmap.org/node/11687222941",
+    "source": null
    },
    {
     "id": "fuel:node-11687222934",
@@ -4188,10 +4570,12 @@
     "brand": null,
     "near": "Narsipatnam",
     "km_from_start": 559.9,
+    "off_road_m": 69,
     "lat": 16.31925,
     "lon": 80.47214,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/11687222934"
+    "osm_url": "https://www.openstreetmap.org/node/11687222934",
+    "source": null
    },
    {
     "id": "fuel:node-12768439913",
@@ -4199,10 +4583,12 @@
     "brand": "Indian Oil",
     "near": "Narsipatnam",
     "km_from_start": 559.9,
+    "off_road_m": 716,
     "lat": 16.32369,
     "lon": 80.46808,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/12768439913"
+    "osm_url": "https://www.openstreetmap.org/node/12768439913",
+    "source": null
    },
    {
     "id": "fuel:node-11687222927",
@@ -4210,10 +4596,12 @@
     "brand": "Hindustan Petroleum",
     "near": "Narsipatnam",
     "km_from_start": 560.9,
+    "off_road_m": 181,
     "lat": 16.31279,
     "lon": 80.46652,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/11687222927"
+    "osm_url": "https://www.openstreetmap.org/node/11687222927",
+    "source": null
    },
    {
     "id": "fuel:node-11687222926",
@@ -4221,10 +4609,12 @@
     "brand": "Shell",
     "near": "Narsipatnam",
     "km_from_start": 561.0,
+    "off_road_m": 171,
     "lat": 16.31147,
     "lon": 80.46574,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/11687222926"
+    "osm_url": "https://www.openstreetmap.org/node/11687222926",
+    "source": null
    },
    {
     "id": "fuel:node-7246549552",
@@ -4232,10 +4622,12 @@
     "brand": "Indian Oil",
     "near": "Narsipatnam",
     "km_from_start": 562.0,
+    "off_road_m": 181,
     "lat": 16.30415,
     "lon": 80.46068,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/7246549552"
+    "osm_url": "https://www.openstreetmap.org/node/7246549552",
+    "source": null
    },
    {
     "id": "fuel:node-11687222919",
@@ -4243,10 +4635,12 @@
     "brand": "Bharat Petroleum",
     "near": "Narsipatnam",
     "km_from_start": 562.8,
+    "off_road_m": 204,
     "lat": 16.29903,
     "lon": 80.45696,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/11687222919"
+    "osm_url": "https://www.openstreetmap.org/node/11687222919",
+    "source": null
    },
    {
     "id": "fuel:node-11687222911",
@@ -4254,10 +4648,12 @@
     "brand": "Indian Oil",
     "near": "Narsipatnam",
     "km_from_start": 563.1,
+    "off_road_m": 188,
     "lat": 16.29649,
     "lon": 80.45541,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/11687222911"
+    "osm_url": "https://www.openstreetmap.org/node/11687222911",
+    "source": null
    },
    {
     "id": "fuel:way-411569138",
@@ -4265,10 +4661,12 @@
     "brand": null,
     "near": "Narsipatnam",
     "km_from_start": 564.0,
+    "off_road_m": 75,
     "lat": 16.29261,
     "lon": 80.45056,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/way/411569138"
+    "osm_url": "https://www.openstreetmap.org/way/411569138",
+    "source": null
    },
    {
     "id": "fuel:node-7244254213",
@@ -4276,10 +4674,12 @@
     "brand": null,
     "near": "Narsipatnam",
     "km_from_start": 564.1,
+    "off_road_m": 201,
     "lat": 16.29368,
     "lon": 80.44915,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/7244254213"
+    "osm_url": "https://www.openstreetmap.org/node/7244254213",
+    "source": null
    },
    {
     "id": "fuel:way-411569155",
@@ -4287,10 +4687,12 @@
     "brand": null,
     "near": "Narsipatnam",
     "km_from_start": 564.7,
+    "off_road_m": 194,
     "lat": 16.2934,
     "lon": 80.44376,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/way/411569155"
+    "osm_url": "https://www.openstreetmap.org/way/411569155",
+    "source": null
    },
    {
     "id": "fuel:node-7244127302",
@@ -4298,10 +4700,12 @@
     "brand": null,
     "near": "Narsipatnam",
     "km_from_start": 564.8,
+    "off_road_m": 240,
     "lat": 16.29379,
     "lon": 80.44315,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/7244127302"
+    "osm_url": "https://www.openstreetmap.org/node/7244127302",
+    "source": null
    },
    {
     "id": "fuel:node-7246549558",
@@ -4309,10 +4713,12 @@
     "brand": null,
     "near": "Narsipatnam",
     "km_from_start": 564.9,
+    "off_road_m": 70,
     "lat": 16.29097,
     "lon": 80.4425,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/7246549558"
+    "osm_url": "https://www.openstreetmap.org/node/7246549558",
+    "source": null
    },
    {
     "id": "fuel:node-7244254195",
@@ -4320,10 +4726,12 @@
     "brand": null,
     "near": "Narsipatnam",
     "km_from_start": 565.5,
+    "off_road_m": 1928,
     "lat": 16.30868,
     "lon": 80.43564,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/7244254195"
+    "osm_url": "https://www.openstreetmap.org/node/7244254195",
+    "source": null
    },
    {
     "id": "fuel:way-411704432",
@@ -4331,10 +4739,12 @@
     "brand": "Indian Oil",
     "near": "Narsipatnam",
     "km_from_start": 565.5,
+    "off_road_m": 1735,
     "lat": 16.30697,
     "lon": 80.43649,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/way/411704432"
+    "osm_url": "https://www.openstreetmap.org/way/411704432",
+    "source": null
    },
    {
     "id": "fuel:way-776427342",
@@ -4342,10 +4752,12 @@
     "brand": null,
     "near": "Narsipatnam",
     "km_from_start": 565.6,
+    "off_road_m": 1930,
     "lat": 16.30869,
     "lon": 80.43559,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/way/776427342"
+    "osm_url": "https://www.openstreetmap.org/way/776427342",
+    "source": null
    },
    {
     "id": "fuel:node-12001964903",
@@ -4353,10 +4765,12 @@
     "brand": "Hindustan Petroleum",
     "near": "Narsipatnam",
     "km_from_start": 566.4,
+    "off_road_m": 45,
     "lat": 16.29144,
     "lon": 80.42863,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/12001964903"
+    "osm_url": "https://www.openstreetmap.org/node/12001964903",
+    "source": null
    },
    {
     "id": "fuel:node-12001964904",
@@ -4364,10 +4778,12 @@
     "brand": "Bharat Petroleum",
     "near": "Narsipatnam",
     "km_from_start": 566.5,
+    "off_road_m": 24,
     "lat": 16.29121,
     "lon": 80.42774,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/12001964904"
+    "osm_url": "https://www.openstreetmap.org/node/12001964904",
+    "source": null
    },
    {
     "id": "fuel:node-11696444319",
@@ -4375,10 +4791,12 @@
     "brand": "Hindustan Petroleum",
     "near": "Narsipatnam",
     "km_from_start": 566.7,
+    "off_road_m": 353,
     "lat": 16.28775,
     "lon": 80.42533,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/11696444319"
+    "osm_url": "https://www.openstreetmap.org/node/11696444319",
+    "source": null
    },
    {
     "id": "fuel:node-12001964905",
@@ -4386,10 +4804,12 @@
     "brand": "Hindustan Petroleum",
     "near": "Narsipatnam",
     "km_from_start": 567.0,
+    "off_road_m": 208,
     "lat": 16.28966,
     "lon": 80.42271,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/12001964905"
+    "osm_url": "https://www.openstreetmap.org/node/12001964905",
+    "source": null
    },
    {
     "id": "fuel:node-11696444316",
@@ -4397,10 +4817,12 @@
     "brand": "Bharat Petroleum",
     "near": "Narsipatnam",
     "km_from_start": 567.3,
+    "off_road_m": 77,
     "lat": 16.29279,
     "lon": 80.4206,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/11696444316"
+    "osm_url": "https://www.openstreetmap.org/node/11696444316",
+    "source": null
    },
    {
     "id": "fuel:node-12001964906",
@@ -4408,10 +4830,12 @@
     "brand": "Jio-bp",
     "near": "Narsipatnam",
     "km_from_start": 567.3,
+    "off_road_m": 401,
     "lat": 16.28861,
     "lon": 80.41956,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/12001964906"
+    "osm_url": "https://www.openstreetmap.org/node/12001964906",
+    "source": null
    },
    {
     "id": "fuel:node-7246549561",
@@ -4419,10 +4843,12 @@
     "brand": null,
     "near": "Narsipatnam",
     "km_from_start": 568.7,
+    "off_road_m": 10,
     "lat": 16.29493,
     "lon": 80.40801,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/7246549561"
+    "osm_url": "https://www.openstreetmap.org/node/7246549561",
+    "source": null
    },
    {
     "id": "fuel:node-13341817843",
@@ -4430,10 +4856,12 @@
     "brand": null,
     "near": "Narsipatnam",
     "km_from_start": 574.6,
+    "off_road_m": 53,
     "lat": 16.3148,
     "lon": 80.35876,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/13341817843"
+    "osm_url": "https://www.openstreetmap.org/node/13341817843",
+    "source": null
    },
    {
     "id": "fuel:node-12106345331",
@@ -4441,10 +4869,12 @@
     "brand": null,
     "near": "Gandikota",
     "km_from_start": 585.2,
+    "off_road_m": 46,
     "lat": 16.29298,
     "lon": 80.27098,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/12106345331"
+    "osm_url": "https://www.openstreetmap.org/node/12106345331",
+    "source": null
    },
    {
     "id": "fuel:node-9848073448",
@@ -4452,10 +4882,12 @@
     "brand": null,
     "near": "Gandikota",
     "km_from_start": 594.3,
+    "off_road_m": 25,
     "lat": 16.27136,
     "lon": 80.19297,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/9848073448"
+    "osm_url": "https://www.openstreetmap.org/node/9848073448",
+    "source": null
    },
    {
     "id": "fuel:node-12106345332",
@@ -4463,10 +4895,12 @@
     "brand": null,
     "near": "Gandikota",
     "km_from_start": 595.6,
+    "off_road_m": 116,
     "lat": 16.2712,
     "lon": 80.18203,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/12106345332"
+    "osm_url": "https://www.openstreetmap.org/node/12106345332",
+    "source": null
    },
    {
     "id": "fuel:node-12817171345",
@@ -4474,10 +4908,12 @@
     "brand": null,
     "near": "Gandikota",
     "km_from_start": 604.6,
+    "off_road_m": 33,
     "lat": 16.24803,
     "lon": 80.10392,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/12817171345"
+    "osm_url": "https://www.openstreetmap.org/node/12817171345",
+    "source": null
    },
    {
     "id": "fuel:node-5449848724",
@@ -4485,10 +4921,12 @@
     "brand": null,
     "near": "Gandikota",
     "km_from_start": 607.6,
+    "off_road_m": 75,
     "lat": 16.23988,
     "lon": 80.07769,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/5449848724"
+    "osm_url": "https://www.openstreetmap.org/node/5449848724",
+    "source": null
    },
    {
     "id": "fuel:node-12817171309",
@@ -4496,10 +4934,12 @@
     "brand": null,
     "near": "Gandikota",
     "km_from_start": 607.9,
+    "off_road_m": 60,
     "lat": 16.23927,
     "lon": 80.07495,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/12817171309"
+    "osm_url": "https://www.openstreetmap.org/node/12817171309",
+    "source": null
    },
    {
     "id": "fuel:node-12106345346",
@@ -4507,10 +4947,12 @@
     "brand": null,
     "near": "Gandikota",
     "km_from_start": 608.4,
+    "off_road_m": 35,
     "lat": 16.23913,
     "lon": 80.07111,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/12106345346"
+    "osm_url": "https://www.openstreetmap.org/node/12106345346",
+    "source": null
    },
    {
     "id": "fuel:node-5447259722",
@@ -4518,10 +4960,12 @@
     "brand": null,
     "near": "Gandikota",
     "km_from_start": 609.1,
+    "off_road_m": 1441,
     "lat": 16.23802,
     "lon": 80.05449,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/5447259722"
+    "osm_url": "https://www.openstreetmap.org/node/5447259722",
+    "source": null
    },
    {
     "id": "fuel:node-5444447027",
@@ -4529,10 +4973,12 @@
     "brand": "Indian Oil",
     "near": "Gandikota",
     "km_from_start": 609.7,
+    "off_road_m": 504,
     "lat": 16.23078,
     "lon": 80.06158,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/5444447027"
+    "osm_url": "https://www.openstreetmap.org/node/5444447027",
+    "source": null
    },
    {
     "id": "fuel:node-5444685824",
@@ -4540,10 +4986,12 @@
     "brand": null,
     "near": "Gandikota",
     "km_from_start": 609.7,
+    "off_road_m": 328,
     "lat": 16.22994,
     "lon": 80.06305,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/5444685824"
+    "osm_url": "https://www.openstreetmap.org/node/5444685824",
+    "source": null
    },
    {
     "id": "fuel:node-5444715825",
@@ -4551,10 +4999,12 @@
     "brand": "Indian Oil",
     "near": "Gandikota",
     "km_from_start": 609.7,
+    "off_road_m": 535,
     "lat": 16.23092,
     "lon": 80.06131,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/5444715825"
+    "osm_url": "https://www.openstreetmap.org/node/5444715825",
+    "source": null
    },
    {
     "id": "fuel:node-5444428323",
@@ -4562,10 +5012,12 @@
     "brand": "Indian Oil",
     "near": "Gandikota",
     "km_from_start": 610.0,
+    "off_road_m": 209,
     "lat": 16.22609,
     "lon": 80.06719,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/5444428323"
+    "osm_url": "https://www.openstreetmap.org/node/5444428323",
+    "source": null
    },
    {
     "id": "fuel:node-5444434121",
@@ -4573,10 +5025,12 @@
     "brand": null,
     "near": "Gandikota",
     "km_from_start": 610.1,
+    "off_road_m": 189,
     "lat": 16.22551,
     "lon": 80.06683,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/5444434121"
+    "osm_url": "https://www.openstreetmap.org/node/5444434121",
+    "source": null
    },
    {
     "id": "fuel:node-5447547136",
@@ -4584,10 +5038,12 @@
     "brand": null,
     "near": "Gandikota",
     "km_from_start": 612.2,
+    "off_road_m": 39,
     "lat": 16.21189,
     "lon": 80.05323,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/5447547136"
+    "osm_url": "https://www.openstreetmap.org/node/5447547136",
+    "source": null
    },
    {
     "id": "fuel:node-12116989736",
@@ -4595,10 +5051,12 @@
     "brand": "Indian Oil",
     "near": "Gandikota",
     "km_from_start": 614.1,
+    "off_road_m": 39,
     "lat": 16.2051,
     "lon": 80.03753,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/12116989736"
+    "osm_url": "https://www.openstreetmap.org/node/12116989736",
+    "source": null
    },
    {
     "id": "fuel:node-11778825127",
@@ -4606,10 +5064,12 @@
     "brand": null,
     "near": "Gandikota",
     "km_from_start": 628.7,
+    "off_road_m": 53,
     "lat": 16.11881,
     "lon": 79.94405,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/11778825127"
+    "osm_url": "https://www.openstreetmap.org/node/11778825127",
+    "source": null
    },
    {
     "id": "fuel:node-12116989713",
@@ -4617,10 +5077,12 @@
     "brand": null,
     "near": "Gandikota",
     "km_from_start": 629.1,
+    "off_road_m": 44,
     "lat": 16.11967,
     "lon": 79.94027,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/12116989713"
+    "osm_url": "https://www.openstreetmap.org/node/12116989713",
+    "source": null
    },
    {
     "id": "fuel:node-11778825126",
@@ -4628,10 +5090,12 @@
     "brand": null,
     "near": "Gandikota",
     "km_from_start": 630.1,
+    "off_road_m": 30,
     "lat": 16.11949,
     "lon": 79.93087,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/11778825126"
+    "osm_url": "https://www.openstreetmap.org/node/11778825126",
+    "source": null
    },
    {
     "id": "fuel:node-11359876642",
@@ -4639,10 +5103,12 @@
     "brand": null,
     "near": "Gandikota",
     "km_from_start": 630.2,
+    "off_road_m": 243,
     "lat": 16.11703,
     "lon": 79.92993,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/11359876642"
+    "osm_url": "https://www.openstreetmap.org/node/11359876642",
+    "source": null
    },
    {
     "id": "fuel:node-11359876639",
@@ -4650,10 +5116,12 @@
     "brand": "Hindustan Petroleum",
     "near": "Gandikota",
     "km_from_start": 630.3,
+    "off_road_m": 26,
     "lat": 16.11945,
     "lon": 79.92907,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/11359876639"
+    "osm_url": "https://www.openstreetmap.org/node/11359876639",
+    "source": null
    },
    {
     "id": "fuel:node-12116967096",
@@ -4661,10 +5129,12 @@
     "brand": null,
     "near": "Gandikota",
     "km_from_start": 634.6,
+    "off_road_m": 45,
     "lat": 16.12363,
     "lon": 79.89043,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/12116967096"
+    "osm_url": "https://www.openstreetmap.org/node/12116967096",
+    "source": null
    },
    {
     "id": "fuel:node-11778825117",
@@ -4672,10 +5142,12 @@
     "brand": "Hindustan Petroleum",
     "near": "Gandikota",
     "km_from_start": 642.5,
+    "off_road_m": 27,
     "lat": 16.10996,
     "lon": 79.82276,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/11778825117"
+    "osm_url": "https://www.openstreetmap.org/node/11778825117",
+    "source": null
    },
    {
     "id": "fuel:node-11778825116",
@@ -4683,10 +5155,12 @@
     "brand": null,
     "near": "Gandikota",
     "km_from_start": 643.3,
+    "off_road_m": 33,
     "lat": 16.10583,
     "lon": 79.81756,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/11778825116"
+    "osm_url": "https://www.openstreetmap.org/node/11778825116",
+    "source": null
    },
    {
     "id": "fuel:node-12492038544",
@@ -4694,10 +5168,12 @@
     "brand": "Bharat Petroleum",
     "near": "Gandikota",
     "km_from_start": 652.3,
+    "off_road_m": 58,
     "lat": 16.05801,
     "lon": 79.75336,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/12492038544"
+    "osm_url": "https://www.openstreetmap.org/node/12492038544",
+    "source": null
    },
    {
     "id": "fuel:node-12492038545",
@@ -4705,10 +5181,12 @@
     "brand": "Jio-bp",
     "near": "Gandikota",
     "km_from_start": 652.8,
+    "off_road_m": 38,
     "lat": 16.05615,
     "lon": 79.74972,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/12492038545"
+    "osm_url": "https://www.openstreetmap.org/node/12492038545",
+    "source": null
    },
    {
     "id": "fuel:node-12116989704",
@@ -4716,10 +5194,12 @@
     "brand": null,
     "near": "Gandikota",
     "km_from_start": 653.9,
+    "off_road_m": 97,
     "lat": 16.05004,
     "lon": 79.74147,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/12116989704"
+    "osm_url": "https://www.openstreetmap.org/node/12116989704",
+    "source": null
    },
    {
     "id": "fuel:node-11778825032",
@@ -4727,10 +5207,12 @@
     "brand": null,
     "near": "Gandikota",
     "km_from_start": 654.6,
+    "off_road_m": 47,
     "lat": 16.04533,
     "lon": 79.73783,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/11778825032"
+    "osm_url": "https://www.openstreetmap.org/node/11778825032",
+    "source": null
    },
    {
     "id": "fuel:node-11778825015",
@@ -4738,10 +5220,12 @@
     "brand": null,
     "near": "Gandikota",
     "km_from_start": 655.1,
+    "off_road_m": 10,
     "lat": 16.0427,
     "lon": 79.73384,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/11778825015"
+    "osm_url": "https://www.openstreetmap.org/node/11778825015",
+    "source": null
    },
    {
     "id": "fuel:node-11778825006",
@@ -4749,10 +5233,12 @@
     "brand": null,
     "near": "Gandikota",
     "km_from_start": 655.6,
+    "off_road_m": 112,
     "lat": 16.04056,
     "lon": 79.72977,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/11778825006"
+    "osm_url": "https://www.openstreetmap.org/node/11778825006",
+    "source": null
    },
    {
     "id": "fuel:node-11778824987",
@@ -4760,10 +5246,12 @@
     "brand": null,
     "near": "Gandikota",
     "km_from_start": 656.1,
+    "off_road_m": 87,
     "lat": 16.03762,
     "lon": 79.72656,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/11778824987"
+    "osm_url": "https://www.openstreetmap.org/node/11778824987",
+    "source": null
    },
    {
     "id": "fuel:node-11778824975",
@@ -4771,10 +5259,12 @@
     "brand": null,
     "near": "Gandikota",
     "km_from_start": 662.0,
+    "off_road_m": 4,
     "lat": 16.00353,
     "lon": 79.68581,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/11778824975"
+    "osm_url": "https://www.openstreetmap.org/node/11778824975",
+    "source": null
    },
    {
     "id": "fuel:node-12116967084",
@@ -4782,10 +5272,12 @@
     "brand": null,
     "near": "Gandikota",
     "km_from_start": 688.2,
+    "off_road_m": 470,
     "lat": 16.00631,
     "lon": 79.46017,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/12116967084"
+    "osm_url": "https://www.openstreetmap.org/node/12116967084",
+    "source": null
    },
    {
     "id": "fuel:node-12116989728",
@@ -4793,10 +5285,12 @@
     "brand": "Nayara",
     "near": "Gandikota",
     "km_from_start": 690.4,
+    "off_road_m": 25,
     "lat": 15.99325,
     "lon": 79.44784,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/12116989728"
+    "osm_url": "https://www.openstreetmap.org/node/12116989728",
+    "source": null
    },
    {
     "id": "fuel:node-2155842343",
@@ -4804,10 +5298,12 @@
     "brand": null,
     "near": "Gandikota",
     "km_from_start": 710.8,
+    "off_road_m": 21,
     "lat": 15.90284,
     "lon": 79.30468,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/2155842343"
+    "osm_url": "https://www.openstreetmap.org/node/2155842343",
+    "source": null
    },
    {
     "id": "fuel:node-12116989769",
@@ -4815,10 +5311,12 @@
     "brand": null,
     "near": "Gandikota",
     "km_from_start": 711.1,
+    "off_road_m": 12,
     "lat": 15.90258,
     "lon": 79.3024,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/12116989769"
+    "osm_url": "https://www.openstreetmap.org/node/12116989769",
+    "source": null
    },
    {
     "id": "fuel:node-12116989718",
@@ -4826,10 +5324,12 @@
     "brand": null,
     "near": "Gandikota",
     "km_from_start": 724.6,
+    "off_road_m": 35,
     "lat": 15.79639,
     "lon": 79.25763,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/12116989718"
+    "osm_url": "https://www.openstreetmap.org/node/12116989718",
+    "source": null
    },
    {
     "id": "fuel:node-12116989746",
@@ -4837,10 +5337,12 @@
     "brand": null,
     "near": "Gandikota",
     "km_from_start": 755.1,
+    "off_road_m": 727,
     "lat": 15.57666,
     "lon": 79.10737,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/12116989746"
+    "osm_url": "https://www.openstreetmap.org/node/12116989746",
+    "source": null
    },
    {
     "id": "fuel:node-12116989729",
@@ -4848,10 +5350,12 @@
     "brand": "Nayara",
     "near": "Gandikota",
     "km_from_start": 756.4,
+    "off_road_m": 54,
     "lat": 15.56454,
     "lon": 79.11176,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/12116989729"
+    "osm_url": "https://www.openstreetmap.org/node/12116989729",
+    "source": null
    },
    {
     "id": "fuel:node-12116967087",
@@ -4859,10 +5363,12 @@
     "brand": "Indian Oil",
     "near": "Gandikota",
     "km_from_start": 759.6,
+    "off_road_m": 85,
     "lat": 15.54029,
     "lon": 79.09919,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/12116967087"
+    "osm_url": "https://www.openstreetmap.org/node/12116967087",
+    "source": null
    },
    {
     "id": "fuel:node-12116967086",
@@ -4870,10 +5376,12 @@
     "brand": "Indian Oil",
     "near": "Gandikota",
     "km_from_start": 759.8,
+    "off_road_m": 7,
     "lat": 15.53935,
     "lon": 79.09809,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/12116967086"
+    "osm_url": "https://www.openstreetmap.org/node/12116967086",
+    "source": null
    },
    {
     "id": "fuel:node-12116967088",
@@ -4881,10 +5389,12 @@
     "brand": "Bharat Petroleum",
     "near": "Gandikota",
     "km_from_start": 759.9,
+    "off_road_m": 57,
     "lat": 15.53807,
     "lon": 79.09813,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/12116967088"
+    "osm_url": "https://www.openstreetmap.org/node/12116967088",
+    "source": null
    },
    {
     "id": "fuel:node-12116967068",
@@ -4892,10 +5402,12 @@
     "brand": "Nayara",
     "near": "Gandikota",
     "km_from_start": 776.4,
+    "off_road_m": 1,
     "lat": 15.40268,
     "lon": 79.04501,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/12116967068"
+    "osm_url": "https://www.openstreetmap.org/node/12116967068",
+    "source": null
    },
    {
     "id": "fuel:node-12116989717",
@@ -4903,10 +5415,12 @@
     "brand": "Hindustan Petroleum",
     "near": "Gandikota",
     "km_from_start": 778.3,
+    "off_road_m": 88,
     "lat": 15.38768,
     "lon": 79.03794,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/12116989717"
+    "osm_url": "https://www.openstreetmap.org/node/12116989717",
+    "source": null
    },
    {
     "id": "fuel:node-12116967055",
@@ -4914,10 +5428,12 @@
     "brand": "Hindustan Petroleum",
     "near": "Gandikota",
     "km_from_start": 789.8,
+    "off_road_m": 9,
     "lat": 15.37978,
     "lon": 78.93723,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/12116967055"
+    "osm_url": "https://www.openstreetmap.org/node/12116967055",
+    "source": null
    },
    {
     "id": "fuel:node-12116967057",
@@ -4925,10 +5441,12 @@
     "brand": "Bharat Petroleum",
     "near": "Gandikota",
     "km_from_start": 790.3,
+    "off_road_m": 38,
     "lat": 15.37919,
     "lon": 78.93329,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/12116967057"
+    "osm_url": "https://www.openstreetmap.org/node/12116967057",
+    "source": null
    },
    {
     "id": "fuel:node-12116967056",
@@ -4936,10 +5454,12 @@
     "brand": "Indian Oil",
     "near": "Gandikota",
     "km_from_start": 793.3,
+    "off_road_m": 42,
     "lat": 15.37424,
     "lon": 78.90617,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/12116967056"
+    "osm_url": "https://www.openstreetmap.org/node/12116967056",
+    "source": null
    },
    {
     "id": "fuel:node-12116967079",
@@ -4947,10 +5467,12 @@
     "brand": "Nayara",
     "near": "Gandikota",
     "km_from_start": 796.6,
+    "off_road_m": 160,
     "lat": 15.37384,
     "lon": 78.87769,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/12116967079"
+    "osm_url": "https://www.openstreetmap.org/node/12116967079",
+    "source": null
    },
    {
     "id": "fuel:node-12106365022",
@@ -4958,10 +5480,12 @@
     "brand": null,
     "near": "Gandikota",
     "km_from_start": 831.3,
+    "off_road_m": 6,
     "lat": 15.40083,
     "lon": 78.61322,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/12106365022"
+    "osm_url": "https://www.openstreetmap.org/node/12106365022",
+    "source": null
    },
    {
     "id": "fuel:node-12106365045",
@@ -4969,10 +5493,12 @@
     "brand": null,
     "near": "Gandikota",
     "km_from_start": 844.3,
+    "off_road_m": 1080,
     "lat": 15.3984,
     "lon": 78.5098,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/12106365045"
+    "osm_url": "https://www.openstreetmap.org/node/12106365045",
+    "source": null
    },
    {
     "id": "fuel:node-12106365010",
@@ -4980,10 +5506,12 @@
     "brand": null,
     "near": "Gandikota",
     "km_from_start": 874.4,
+    "off_road_m": 840,
     "lat": 15.13599,
     "lon": 78.50314,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/12106365010"
+    "osm_url": "https://www.openstreetmap.org/node/12106365010",
+    "source": null
    },
    {
     "id": "fuel:node-12106365036",
@@ -4991,10 +5519,12 @@
     "brand": null,
     "near": "Gandikota",
     "km_from_start": 890.3,
+    "off_road_m": 15,
     "lat": 15.02606,
     "lon": 78.45423,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/12106365036"
+    "osm_url": "https://www.openstreetmap.org/node/12106365036",
+    "source": null
    }
   ],
   "pump_count": 265,

@@ -3994,10 +3994,12 @@
     "brand": null,
     "near": "Dehradun",
     "km_from_start": 0.0,
+    "off_road_m": 3,
     "lat": 30.32556,
     "lon": 78.04322,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/11733093202"
+    "osm_url": "https://www.openstreetmap.org/node/11733093202",
+    "source": null
    },
    {
     "id": "fuel:node-2387027579",
@@ -4005,10 +4007,12 @@
     "brand": "Bharat Petroleum",
     "near": "Dehradun",
     "km_from_start": 0.6,
+    "off_road_m": 10,
     "lat": 30.32624,
     "lon": 78.04392,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/2387027579"
+    "osm_url": "https://www.openstreetmap.org/node/2387027579",
+    "source": null
    },
    {
     "id": "fuel:node-1854126680",
@@ -4016,10 +4020,12 @@
     "brand": null,
     "near": "Dehradun",
     "km_from_start": 0.9,
+    "off_road_m": 215,
     "lat": 30.32661,
     "lon": 78.04752,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/1854126680"
+    "osm_url": "https://www.openstreetmap.org/node/1854126680",
+    "source": null
    },
    {
     "id": "fuel:node-6269078060",
@@ -4027,10 +4033,12 @@
     "brand": null,
     "near": "Dehradun",
     "km_from_start": 0.9,
+    "off_road_m": 18,
     "lat": 30.32781,
     "lon": 78.04553,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/6269078060"
+    "osm_url": "https://www.openstreetmap.org/node/6269078060",
+    "source": null
    },
    {
     "id": "fuel:node-5871905860",
@@ -4038,10 +4046,12 @@
     "brand": "Indian Oil",
     "near": "Dehradun",
     "km_from_start": 6.0,
+    "off_road_m": 32,
     "lat": 30.36391,
     "lon": 78.06964,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/5871905860"
+    "osm_url": "https://www.openstreetmap.org/node/5871905860",
+    "source": null
    },
    {
     "id": "fuel:node-13789355685",
@@ -4049,10 +4059,12 @@
     "brand": null,
     "near": "Dehradun",
     "km_from_start": 7.5,
+    "off_road_m": 9,
     "lat": 30.37391,
     "lon": 78.07815,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/13789355685"
+    "osm_url": "https://www.openstreetmap.org/node/13789355685",
+    "source": null
    },
    {
     "id": "fuel:node-5871807920",
@@ -4060,10 +4072,12 @@
     "brand": null,
     "near": "Dehradun",
     "km_from_start": 9.1,
+    "off_road_m": 22,
     "lat": 30.38555,
     "lon": 78.07402,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/5871807920"
+    "osm_url": "https://www.openstreetmap.org/node/5871807920",
+    "source": null
    },
    {
     "id": "fuel:node-2618876586",
@@ -4071,10 +4085,12 @@
     "brand": "Indian Oil",
     "near": "Mussoorie",
     "km_from_start": 25.7,
+    "off_road_m": 32,
     "lat": 30.4435,
     "lon": 78.07874,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/2618876586"
+    "osm_url": "https://www.openstreetmap.org/node/2618876586",
+    "source": null
    },
    {
     "id": "fuel:node-506119101",
@@ -4082,10 +4098,12 @@
     "brand": null,
     "near": "Mussoorie",
     "km_from_start": 27.4,
+    "off_road_m": 47,
     "lat": 30.45185,
     "lon": 78.08017,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/506119101"
+    "osm_url": "https://www.openstreetmap.org/node/506119101",
+    "source": null
    }
   ],
   "pump_count": 9,

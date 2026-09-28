@@ -10961,10 +10961,12 @@
     "brand": "Hindustan Petroleum",
     "near": "Siliguri",
     "km_from_start": 1.1,
+    "off_road_m": 31,
     "lat": 26.71902,
     "lon": 88.42529,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/way/1417886025"
+    "osm_url": "https://www.openstreetmap.org/way/1417886025",
+    "source": null
    },
    {
     "id": "fuel:way-1346163845",
@@ -10972,10 +10974,12 @@
     "brand": "Bharat Petroleum",
     "near": "Siliguri",
     "km_from_start": 1.9,
+    "off_road_m": 29,
     "lat": 26.71763,
     "lon": 88.42089,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/way/1346163845"
+    "osm_url": "https://www.openstreetmap.org/way/1346163845",
+    "source": null
    },
    {
     "id": "fuel:way-1346163857",
@@ -10983,10 +10987,12 @@
     "brand": "Indian Oil",
     "near": "Siliguri",
     "km_from_start": 1.9,
+    "off_road_m": 20,
     "lat": 26.71792,
     "lon": 88.42079,
     "opening_hours": "Mo-Su 06:30-21:30",
-    "osm_url": "https://www.openstreetmap.org/way/1346163857"
+    "osm_url": "https://www.openstreetmap.org/way/1346163857",
+    "source": null
    },
    {
     "id": "fuel:node-4925330432",
@@ -10994,10 +11000,12 @@
     "brand": "Bharat Petroleum",
     "near": "Siliguri",
     "km_from_start": 2.8,
+    "off_road_m": 20,
     "lat": 26.72413,
     "lon": 88.41618,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/4925330432"
+    "osm_url": "https://www.openstreetmap.org/node/4925330432",
+    "source": null
    },
    {
     "id": "fuel:way-1416054286",
@@ -11005,10 +11013,12 @@
     "brand": "Indian Oil",
     "near": "Siliguri",
     "km_from_start": 3.0,
+    "off_road_m": 17,
     "lat": 26.72551,
     "lon": 88.4152,
     "opening_hours": "Mo-Su 06:30-22:00",
-    "osm_url": "https://www.openstreetmap.org/way/1416054286"
+    "osm_url": "https://www.openstreetmap.org/way/1416054286",
+    "source": null
    },
    {
     "id": "fuel:way-1447364776",
@@ -11016,10 +11026,12 @@
     "brand": "Hindustan Petroleum",
     "near": "Siliguri",
     "km_from_start": 3.6,
+    "off_road_m": 53,
     "lat": 26.73053,
     "lon": 88.41233,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/way/1447364776"
+    "osm_url": "https://www.openstreetmap.org/way/1447364776",
+    "source": null
    },
    {
     "id": "fuel:way-1447364782",
@@ -11027,10 +11039,12 @@
     "brand": null,
     "near": "Siliguri",
     "km_from_start": 3.9,
+    "off_road_m": 199,
     "lat": 26.7329,
     "lon": 88.41233,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/way/1447364782"
+    "osm_url": "https://www.openstreetmap.org/way/1447364782",
+    "source": null
    },
    {
     "id": "fuel:way-1385914841",
@@ -11038,10 +11052,12 @@
     "brand": "Indian Oil",
     "near": "Siliguri",
     "km_from_start": 6.6,
+    "off_road_m": 22,
     "lat": 26.74731,
     "lon": 88.39523,
     "opening_hours": "Mo-Su 06:00-22:00",
-    "osm_url": "https://www.openstreetmap.org/way/1385914841"
+    "osm_url": "https://www.openstreetmap.org/way/1385914841",
+    "source": null
    },
    {
     "id": "fuel:way-1364484275",
@@ -11049,10 +11065,12 @@
     "brand": "Bharat Petroleum",
     "near": "Siliguri",
     "km_from_start": 9.8,
+    "off_road_m": 24,
     "lat": 26.77026,
     "lon": 88.3785,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/way/1364484275"
+    "osm_url": "https://www.openstreetmap.org/way/1364484275",
+    "source": null
    },
    {
     "id": "fuel:way-1452327787",
@@ -11060,10 +11078,12 @@
     "brand": "Indian Oil",
     "near": "Siliguri",
     "km_from_start": 12.6,
+    "off_road_m": 275,
     "lat": 26.79079,
     "lon": 88.36288,
     "opening_hours": "Mo-Su 06:00-22:00",
-    "osm_url": "https://www.openstreetmap.org/way/1452327787"
+    "osm_url": "https://www.openstreetmap.org/way/1452327787",
+    "source": null
    },
    {
     "id": "fuel:way-1452327800",
@@ -11071,10 +11091,12 @@
     "brand": "Indian Oil",
     "near": "Kurseong",
     "km_from_start": 37.1,
+    "off_road_m": 6,
     "lat": 26.87797,
     "lon": 88.27899,
     "opening_hours": "Mo-Su 06:00-22:00",
-    "osm_url": "https://www.openstreetmap.org/way/1452327800"
+    "osm_url": "https://www.openstreetmap.org/way/1452327800",
+    "source": null
    },
    {
     "id": "fuel:way-1452327826",
@@ -11082,10 +11104,12 @@
     "brand": "Indian Oil",
     "near": "Darjeeling",
     "km_from_start": 62.9,
+    "off_road_m": 110,
     "lat": 27.01308,
     "lon": 88.25176,
     "opening_hours": "Mo-Su 06:00-22:00",
-    "osm_url": "https://www.openstreetmap.org/way/1452327826"
+    "osm_url": "https://www.openstreetmap.org/way/1452327826",
+    "source": null
    },
    {
     "id": "fuel:node-11949554957",
@@ -11093,10 +11117,12 @@
     "brand": "Bharat Petroleum",
     "near": "Darjeeling",
     "km_from_start": 65.2,
+    "off_road_m": 237,
     "lat": 27.02421,
     "lon": 88.25354,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/11949554957"
+    "osm_url": "https://www.openstreetmap.org/node/11949554957",
+    "source": null
    },
    {
     "id": "fuel:way-1452327834",
@@ -11104,10 +11130,12 @@
     "brand": "Indian Oil",
     "near": "Darjeeling",
     "km_from_start": 68.7,
+    "off_road_m": 533,
     "lat": 27.04534,
     "lon": 88.26548,
     "opening_hours": "Mo-Su 07:00-19:00",
-    "osm_url": "https://www.openstreetmap.org/way/1452327834"
+    "osm_url": "https://www.openstreetmap.org/way/1452327834",
+    "source": null
    },
    {
     "id": "fuel:way-1083882229",
@@ -11115,10 +11143,12 @@
     "brand": null,
     "near": "Sandakphu",
     "km_from_start": 217.7,
+    "off_road_m": 27,
     "lat": 27.14938,
     "lon": 87.74978,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/way/1083882229"
+    "osm_url": "https://www.openstreetmap.org/way/1083882229",
+    "source": null
    },
    {
     "id": "fuel:node-5330416630",
@@ -11126,10 +11156,12 @@
     "brand": null,
     "near": "Darjeeling",
     "km_from_start": 406.8,
+    "off_road_m": 7,
     "lat": 26.90691,
     "lon": 87.93356,
     "opening_hours": "24/7",
-    "osm_url": "https://www.openstreetmap.org/node/5330416630"
+    "osm_url": "https://www.openstreetmap.org/node/5330416630",
+    "source": null
    },
    {
     "id": "fuel:way-352754283",
@@ -11137,10 +11169,12 @@
     "brand": "Indian Oil",
     "near": "Darjeeling",
     "km_from_start": 481.9,
+    "off_road_m": 7,
     "lat": 27.03927,
     "lon": 88.26397,
     "opening_hours": "Mo-Su 07:00-19:00",
-    "osm_url": "https://www.openstreetmap.org/way/352754283"
+    "osm_url": "https://www.openstreetmap.org/way/352754283",
+    "source": null
    }
   ],
   "pump_count": 17,

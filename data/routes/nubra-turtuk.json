@@ -3138,10 +3138,12 @@
     "brand": null,
     "near": "Leh",
     "km_from_start": 1.1,
+    "off_road_m": 18,
     "lat": 34.16939,
     "lon": 77.58933,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/way/1212069710"
+    "osm_url": "https://www.openstreetmap.org/way/1212069710",
+    "source": null
    },
    {
     "id": "fuel:way-1210566272",
@@ -3149,10 +3151,12 @@
     "brand": null,
     "near": "Leh",
     "km_from_start": 3.2,
+    "off_road_m": 16,
     "lat": 34.18233,
     "lon": 77.59529,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/way/1210566272"
+    "osm_url": "https://www.openstreetmap.org/way/1210566272",
+    "source": null
    },
    {
     "id": "fuel:node-3699683316",
@@ -3160,10 +3164,12 @@
     "brand": null,
     "near": "Diskit",
     "km_from_start": 114.2,
+    "off_road_m": 68,
     "lat": 34.55144,
     "lon": 77.53699,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/3699683316"
+    "osm_url": "https://www.openstreetmap.org/node/3699683316",
+    "source": null
    }
   ],
   "pump_count": 3,

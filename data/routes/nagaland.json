@@ -8189,10 +8189,12 @@
     "brand": null,
     "near": "Dimapur",
     "km_from_start": 0.1,
+    "off_road_m": 930,
     "lat": 25.91732,
     "lon": 93.72963,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/6255128244"
+    "osm_url": "https://www.openstreetmap.org/node/6255128244",
+    "source": null
    },
    {
     "id": "fuel:node-6255128245",
@@ -8200,10 +8202,12 @@
     "brand": null,
     "near": "Dimapur",
     "km_from_start": 0.4,
+    "off_road_m": 64,
     "lat": 25.9118,
     "lon": 93.72025,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/6255128245"
+    "osm_url": "https://www.openstreetmap.org/node/6255128245",
+    "source": null
    },
    {
     "id": "fuel:node-6255128243",
@@ -8211,10 +8215,12 @@
     "brand": null,
     "near": "Dimapur",
     "km_from_start": 1.3,
+    "off_road_m": 557,
     "lat": 25.914,
     "lon": 93.72791,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/6255128243"
+    "osm_url": "https://www.openstreetmap.org/node/6255128243",
+    "source": null
    },
    {
     "id": "fuel:node-6255130919",
@@ -8222,10 +8228,12 @@
     "brand": null,
     "near": "Dimapur",
     "km_from_start": 1.7,
+    "off_road_m": 458,
     "lat": 25.90407,
     "lon": 93.72717,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/6255130919"
+    "osm_url": "https://www.openstreetmap.org/node/6255130919",
+    "source": null
    },
    {
     "id": "fuel:node-6255151462",
@@ -8233,10 +8241,12 @@
     "brand": null,
     "near": "Dimapur",
     "km_from_start": 2.9,
+    "off_road_m": 23,
     "lat": 25.90626,
     "lon": 93.74111,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/6255151462"
+    "osm_url": "https://www.openstreetmap.org/node/6255151462",
+    "source": null
    },
    {
     "id": "fuel:node-6255128242",
@@ -8244,10 +8254,12 @@
     "brand": null,
     "near": "Dimapur",
     "km_from_start": 3.6,
+    "off_road_m": 29,
     "lat": 25.90701,
     "lon": 93.74776,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/6255128242"
+    "osm_url": "https://www.openstreetmap.org/node/6255128242",
+    "source": null
    },
    {
     "id": "fuel:node-6255128241",
@@ -8255,10 +8267,12 @@
     "brand": null,
     "near": "Dimapur",
     "km_from_start": 5.4,
+    "off_road_m": 40,
     "lat": 25.89351,
     "lon": 93.75631,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/6255128241"
+    "osm_url": "https://www.openstreetmap.org/node/6255128241",
+    "source": null
    },
    {
     "id": "fuel:node-6255128240",
@@ -8266,10 +8280,12 @@
     "brand": null,
     "near": "Dimapur",
     "km_from_start": 5.9,
+    "off_road_m": 49,
     "lat": 25.88986,
     "lon": 93.7579,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/6255128240"
+    "osm_url": "https://www.openstreetmap.org/node/6255128240",
+    "source": null
    },
    {
     "id": "fuel:node-6255128237",
@@ -8277,10 +8293,12 @@
     "brand": null,
     "near": "Dimapur",
     "km_from_start": 10.1,
+    "off_road_m": 55,
     "lat": 25.855,
     "lon": 93.7695,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/6255128237"
+    "osm_url": "https://www.openstreetmap.org/node/6255128237",
+    "source": null
    },
    {
     "id": "fuel:node-6255128236",
@@ -8288,10 +8306,12 @@
     "brand": null,
     "near": "Dimapur",
     "km_from_start": 11.3,
+    "off_road_m": 3,
     "lat": 25.84474,
     "lon": 93.77326,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/6255128236"
+    "osm_url": "https://www.openstreetmap.org/node/6255128236",
+    "source": null
    },
    {
     "id": "fuel:node-6255128233",
@@ -8299,10 +8319,12 @@
     "brand": null,
     "near": "Dimapur",
     "km_from_start": 14.6,
+    "off_road_m": 7,
     "lat": 25.8179,
     "lon": 93.78253,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/6255128233"
+    "osm_url": "https://www.openstreetmap.org/node/6255128233",
+    "source": null
    },
    {
     "id": "fuel:node-6255128232",
@@ -8310,10 +8332,12 @@
     "brand": null,
     "near": "Dimapur",
     "km_from_start": 15.2,
+    "off_road_m": 33,
     "lat": 25.81304,
     "lon": 93.78555,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/6255128232"
+    "osm_url": "https://www.openstreetmap.org/node/6255128232",
+    "source": null
    },
    {
     "id": "fuel:node-6255128225",
@@ -8321,10 +8345,12 @@
     "brand": null,
     "near": "Dimapur",
     "km_from_start": 25.9,
+    "off_road_m": 24,
     "lat": 25.75987,
     "lon": 93.83555,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/6255128225"
+    "osm_url": "https://www.openstreetmap.org/node/6255128225",
+    "source": null
    },
    {
     "id": "fuel:node-6255128224",
@@ -8332,10 +8358,12 @@
     "brand": null,
     "near": "Dimapur",
     "km_from_start": 27.3,
+    "off_road_m": 15,
     "lat": 25.75764,
     "lon": 93.84781,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/6255128224"
+    "osm_url": "https://www.openstreetmap.org/node/6255128224",
+    "source": null
    },
    {
     "id": "fuel:node-6255099044",
@@ -8343,10 +8371,12 @@
     "brand": null,
     "near": "Kohima",
     "km_from_start": 53.0,
+    "off_road_m": 43,
     "lat": 25.73189,
     "lon": 94.02625,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/6255099044"
+    "osm_url": "https://www.openstreetmap.org/node/6255099044",
+    "source": null
    },
    {
     "id": "fuel:node-6255099045",
@@ -8354,10 +8384,12 @@
     "brand": null,
     "near": "Kohima",
     "km_from_start": 53.6,
+    "off_road_m": 25,
     "lat": 25.72692,
     "lon": 94.02965,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/6255099045"
+    "osm_url": "https://www.openstreetmap.org/node/6255099045",
+    "source": null
    },
    {
     "id": "fuel:node-6255128222",
@@ -8365,10 +8397,12 @@
     "brand": null,
     "near": "Kohima",
     "km_from_start": 62.0,
+    "off_road_m": 23,
     "lat": 25.68837,
     "lon": 94.05577,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/6255128222"
+    "osm_url": "https://www.openstreetmap.org/node/6255128222",
+    "source": null
    },
    {
     "id": "fuel:node-6265884537",
@@ -8376,10 +8410,12 @@
     "brand": "Indian Oil",
     "near": "Kohima",
     "km_from_start": 62.0,
+    "off_road_m": 37,
     "lat": 25.68811,
     "lon": 94.05555,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/6265884537"
+    "osm_url": "https://www.openstreetmap.org/node/6265884537",
+    "source": null
    },
    {
     "id": "fuel:node-6255118162",
@@ -8387,10 +8423,12 @@
     "brand": null,
     "near": "Kohima",
     "km_from_start": 66.5,
+    "off_road_m": 25,
     "lat": 25.6757,
     "lon": 94.08621,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/6255118162"
+    "osm_url": "https://www.openstreetmap.org/node/6255118162",
+    "source": null
    },
    {
     "id": "fuel:node-6255118163",
@@ -8398,10 +8436,12 @@
     "brand": null,
     "near": "Kohima",
     "km_from_start": 67.8,
+    "off_road_m": 19,
     "lat": 25.66642,
     "lon": 94.08833,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/6255118163"
+    "osm_url": "https://www.openstreetmap.org/node/6255118163",
+    "source": null
    },
    {
     "id": "fuel:way-854173758",
@@ -8409,10 +8449,12 @@
     "brand": null,
     "near": "Kohima",
     "km_from_start": 67.8,
+    "off_road_m": 27,
     "lat": 25.66632,
     "lon": 94.08837,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/way/854173758"
+    "osm_url": "https://www.openstreetmap.org/way/854173758",
+    "source": null
    },
    {
     "id": "fuel:node-6255118164",
@@ -8420,10 +8462,12 @@
     "brand": null,
     "near": "Kohima",
     "km_from_start": 68.4,
+    "off_road_m": 9,
     "lat": 25.66812,
     "lon": 94.09136,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/6255118164"
+    "osm_url": "https://www.openstreetmap.org/node/6255118164",
+    "source": null
    },
    {
     "id": "fuel:node-6255118165",
@@ -8431,10 +8475,12 @@
     "brand": null,
     "near": "Kohima",
     "km_from_start": 71.2,
+    "off_road_m": 38,
     "lat": 25.66525,
     "lon": 94.10115,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/6255118165"
+    "osm_url": "https://www.openstreetmap.org/node/6255118165",
+    "source": null
    },
    {
     "id": "fuel:node-6255118354",
@@ -8442,10 +8488,12 @@
     "brand": null,
     "near": "Viswema",
     "km_from_start": 81.9,
+    "off_road_m": 10,
     "lat": 25.61511,
     "lon": 94.1164,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/6255118354"
+    "osm_url": "https://www.openstreetmap.org/node/6255118354",
+    "source": null
    },
    {
     "id": "fuel:node-6255118166",
@@ -8453,10 +8501,12 @@
     "brand": null,
     "near": "Kohima",
     "km_from_start": 114.1,
+    "off_road_m": 8,
     "lat": 25.65393,
     "lon": 94.09943,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/6255118166"
+    "osm_url": "https://www.openstreetmap.org/node/6255118166",
+    "source": null
    },
    {
     "id": "fuel:node-6255118351",
@@ -8464,10 +8514,12 @@
     "brand": null,
     "near": "Kohima",
     "km_from_start": 116.8,
+    "off_road_m": 237,
     "lat": 25.67061,
     "lon": 94.10429,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/6255118351"
+    "osm_url": "https://www.openstreetmap.org/node/6255118351",
+    "source": null
    },
    {
     "id": "fuel:node-6255118352",
@@ -8475,10 +8527,12 @@
     "brand": null,
     "near": "Kohima",
     "km_from_start": 119.8,
+    "off_road_m": 15,
     "lat": 25.68759,
     "lon": 94.09967,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/6255118352"
+    "osm_url": "https://www.openstreetmap.org/node/6255118352",
+    "source": null
    },
    {
     "id": "fuel:node-6255118353",
@@ -8486,10 +8540,12 @@
     "brand": null,
     "near": "Kohima",
     "km_from_start": 120.6,
+    "off_road_m": 391,
     "lat": 25.69138,
     "lon": 94.10285,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/6255118353"
+    "osm_url": "https://www.openstreetmap.org/node/6255118353",
+    "source": null
    },
    {
     "id": "fuel:node-11314074395",
@@ -8497,10 +8553,12 @@
     "brand": null,
     "near": "Kohima",
     "km_from_start": 120.7,
+    "off_road_m": 544,
     "lat": 25.69491,
     "lon": 94.10379,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/11314074395"
+    "osm_url": "https://www.openstreetmap.org/node/11314074395",
+    "source": null
    },
    {
     "id": "fuel:node-7972633986",
@@ -8508,10 +8566,12 @@
     "brand": null,
     "near": "Kohima",
     "km_from_start": 188.8,
+    "off_road_m": 19,
     "lat": 26.0738,
     "lon": 94.25997,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/7972633986"
+    "osm_url": "https://www.openstreetmap.org/node/7972633986",
+    "source": null
    },
    {
     "id": "fuel:node-2683533449",
@@ -8519,10 +8579,12 @@
     "brand": "Nayara",
     "near": "Mokokchung",
     "km_from_start": 258.2,
+    "off_road_m": 16,
     "lat": 26.31351,
     "lon": 94.51037,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/2683533449"
+    "osm_url": "https://www.openstreetmap.org/node/2683533449",
+    "source": null
    },
    {
     "id": "fuel:node-2665548160",
@@ -8530,10 +8592,12 @@
     "brand": "Indian Oil",
     "near": "Mokokchung",
     "km_from_start": 260.6,
+    "off_road_m": 37,
     "lat": 26.32871,
     "lon": 94.50808,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/2665548160"
+    "osm_url": "https://www.openstreetmap.org/node/2665548160",
+    "source": null
    },
    {
     "id": "fuel:node-2682271112",
@@ -8541,10 +8605,12 @@
     "brand": "NRL",
     "near": "Mokokchung",
     "km_from_start": 262.2,
+    "off_road_m": 20,
     "lat": 26.33577,
     "lon": 94.4985,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/2682271112"
+    "osm_url": "https://www.openstreetmap.org/node/2682271112",
+    "source": null
    },
    {
     "id": "fuel:node-11357588466",
@@ -8552,10 +8618,12 @@
     "brand": "Hindustan Petroleum",
     "near": "Mon",
     "km_from_start": 385.5,
+    "off_road_m": 23,
     "lat": 26.80908,
     "lon": 94.52317,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/11357588466"
+    "osm_url": "https://www.openstreetmap.org/node/11357588466",
+    "source": null
    },
    {
     "id": "fuel:node-12144804565",
@@ -8563,10 +8631,12 @@
     "brand": null,
     "near": "Mon",
     "km_from_start": 425.9,
+    "off_road_m": 16,
     "lat": 26.84803,
     "lon": 94.80013,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/12144804565"
+    "osm_url": "https://www.openstreetmap.org/node/12144804565",
+    "source": null
    },
    {
     "id": "fuel:node-12144953535",
@@ -8574,10 +8644,12 @@
     "brand": null,
     "near": "Mon",
     "km_from_start": 426.2,
+    "off_road_m": 24,
     "lat": 26.84519,
     "lon": 94.80145,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/12144953535"
+    "osm_url": "https://www.openstreetmap.org/node/12144953535",
+    "source": null
    },
    {
     "id": "fuel:node-12144953548",
@@ -8585,10 +8657,12 @@
     "brand": null,
     "near": "Mon",
     "km_from_start": 426.9,
+    "off_road_m": 13,
     "lat": 26.83986,
     "lon": 94.80363,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/12144953548"
+    "osm_url": "https://www.openstreetmap.org/node/12144953548",
+    "source": null
    }
   ],
   "pump_count": 37,

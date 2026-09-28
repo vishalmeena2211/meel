@@ -1845,10 +1845,12 @@
     "brand": null,
     "near": "Jaipur",
     "km_from_start": 0.0,
+    "off_road_m": 983,
     "lat": 26.91371,
     "lon": 75.82948,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/4466633240"
+    "osm_url": "https://www.openstreetmap.org/node/4466633240",
+    "source": null
    },
    {
     "id": "fuel:node-10936813194",
@@ -1856,10 +1858,12 @@
     "brand": "Indian Oil",
     "near": "Jaipur",
     "km_from_start": 0.0,
+    "off_road_m": 1140,
     "lat": 26.91362,
     "lon": 75.83107,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/10936813194"
+    "osm_url": "https://www.openstreetmap.org/node/10936813194",
+    "source": null
    },
    {
     "id": "fuel:node-10936829402",
@@ -1867,10 +1871,12 @@
     "brand": null,
     "near": "Jaipur",
     "km_from_start": 0.0,
+    "off_road_m": 1479,
     "lat": 26.91307,
     "lon": 75.83443,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/10936829402"
+    "osm_url": "https://www.openstreetmap.org/node/10936829402",
+    "source": null
    },
    {
     "id": "fuel:node-3083894933",
@@ -1878,10 +1884,12 @@
     "brand": "Hindustan Petroleum",
     "near": "Jaipur",
     "km_from_start": 0.3,
+    "off_road_m": 75,
     "lat": 26.91694,
     "lon": 75.81692,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/3083894933"
+    "osm_url": "https://www.openstreetmap.org/node/3083894933",
+    "source": null
    },
    {
     "id": "fuel:way-375202964",
@@ -1889,10 +1897,12 @@
     "brand": "Hindustan Petroleum",
     "near": "Jaipur",
     "km_from_start": 0.3,
+    "off_road_m": 132,
     "lat": 26.91706,
     "lon": 75.81616,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/way/375202964"
+    "osm_url": "https://www.openstreetmap.org/way/375202964",
+    "source": null
    },
    {
     "id": "fuel:way-375734807",
@@ -1900,10 +1910,12 @@
     "brand": "Bharat Petroleum",
     "near": "Jaipur",
     "km_from_start": 1.5,
+    "off_road_m": 309,
     "lat": 26.91658,
     "lon": 75.80909,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/way/375734807"
+    "osm_url": "https://www.openstreetmap.org/way/375734807",
+    "source": null
    },
    {
     "id": "fuel:node-3677353031",
@@ -1911,10 +1923,12 @@
     "brand": "Hindustan Petroleum",
     "near": "Jaipur",
     "km_from_start": 1.8,
+    "off_road_m": 286,
     "lat": 26.91692,
     "lon": 75.80632,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/3677353031"
+    "osm_url": "https://www.openstreetmap.org/node/3677353031",
+    "source": null
    },
    {
     "id": "fuel:node-10936787897",
@@ -1922,10 +1936,12 @@
     "brand": "Hindustan Petroleum",
     "near": "Jaipur",
     "km_from_start": 1.9,
+    "off_road_m": 233,
     "lat": 26.91671,
     "lon": 75.80486,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/10936787897"
+    "osm_url": "https://www.openstreetmap.org/node/10936787897",
+    "source": null
    },
    {
     "id": "fuel:node-8665176577",
@@ -1933,10 +1949,12 @@
     "brand": null,
     "near": "Jaipur",
     "km_from_start": 2.4,
+    "off_road_m": 183,
     "lat": 26.91708,
     "lon": 75.80067,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/8665176577"
+    "osm_url": "https://www.openstreetmap.org/node/8665176577",
+    "source": null
    },
    {
     "id": "fuel:way-862568917",
@@ -1944,10 +1962,12 @@
     "brand": "Hindustan Petroleum",
     "near": "Jaipur",
     "km_from_start": 3.9,
+    "off_road_m": 3,
     "lat": 26.91141,
     "lon": 75.78631,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/way/862568917"
+    "osm_url": "https://www.openstreetmap.org/way/862568917",
+    "source": null
    },
    {
     "id": "fuel:node-2690970281",
@@ -1955,10 +1975,12 @@
     "brand": "Hindustan Petroleum",
     "near": "Jaipur",
     "km_from_start": 4.0,
+    "off_road_m": 1140,
     "lat": 26.90265,
     "lon": 75.79237,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/2690970281"
+    "osm_url": "https://www.openstreetmap.org/node/2690970281",
+    "source": null
    },
    {
     "id": "fuel:node-8167940763",
@@ -1966,10 +1988,12 @@
     "brand": "Bharat Petroleum",
     "near": "Jaipur",
     "km_from_start": 4.0,
+    "off_road_m": 89,
     "lat": 26.91154,
     "lon": 75.78502,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/8167940763"
+    "osm_url": "https://www.openstreetmap.org/node/8167940763",
+    "source": null
    },
    {
     "id": "fuel:way-263480573",
@@ -1977,10 +2001,12 @@
     "brand": "Hindustan Petroleum",
     "near": "Jaipur",
     "km_from_start": 4.0,
+    "off_road_m": 1196,
     "lat": 26.90206,
     "lon": 75.79243,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/way/263480573"
+    "osm_url": "https://www.openstreetmap.org/way/263480573",
+    "source": null
    },
    {
     "id": "fuel:way-862568920",
@@ -1988,10 +2014,12 @@
     "brand": "Bharat Petroleum",
     "near": "Jaipur",
     "km_from_start": 4.0,
+    "off_road_m": 87,
     "lat": 26.91155,
     "lon": 75.78506,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/way/862568920"
+    "osm_url": "https://www.openstreetmap.org/way/862568920",
+    "source": null
    },
    {
     "id": "fuel:node-11747571769",
@@ -1999,10 +2027,12 @@
     "brand": null,
     "near": "Jaipur",
     "km_from_start": 4.1,
+    "off_road_m": 1020,
     "lat": 26.9027,
     "lon": 75.79038,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/11747571769"
+    "osm_url": "https://www.openstreetmap.org/node/11747571769",
+    "source": null
    },
    {
     "id": "fuel:node-11765964116",
@@ -2010,10 +2040,12 @@
     "brand": "Indian Oil",
     "near": "Jaipur",
     "km_from_start": 4.1,
+    "off_road_m": 1555,
     "lat": 26.89881,
     "lon": 75.79355,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/11765964116"
+    "osm_url": "https://www.openstreetmap.org/node/11765964116",
+    "source": null
    },
    {
     "id": "fuel:way-754223043",
@@ -2021,10 +2053,12 @@
     "brand": "Bharat Petroleum",
     "near": "Jaipur",
     "km_from_start": 4.1,
+    "off_road_m": 1385,
     "lat": 26.89996,
     "lon": 75.79241,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/way/754223043"
+    "osm_url": "https://www.openstreetmap.org/way/754223043",
+    "source": null
    },
    {
     "id": "fuel:way-754223044",
@@ -2032,10 +2066,12 @@
     "brand": "Indian Oil",
     "near": "Jaipur",
     "km_from_start": 4.1,
+    "off_road_m": 1562,
     "lat": 26.89874,
     "lon": 75.79356,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/way/754223044"
+    "osm_url": "https://www.openstreetmap.org/way/754223044",
+    "source": null
    },
    {
     "id": "fuel:node-11747573469",
@@ -2043,10 +2079,12 @@
     "brand": null,
     "near": "Jaipur",
     "km_from_start": 4.2,
+    "off_road_m": 846,
     "lat": 26.90355,
     "lon": 75.7887,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/11747573469"
+    "osm_url": "https://www.openstreetmap.org/node/11747573469",
+    "source": null
    },
    {
     "id": "fuel:way-867257525",
@@ -2054,10 +2092,12 @@
     "brand": "Indian Oil",
     "near": "Jaipur",
     "km_from_start": 4.7,
+    "off_road_m": 787,
     "lat": 26.90145,
     "lon": 75.7844,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/way/867257525"
+    "osm_url": "https://www.openstreetmap.org/way/867257525",
+    "source": null
    },
    {
     "id": "fuel:node-4466634254",
@@ -2065,10 +2105,12 @@
     "brand": null,
     "near": "Jaipur",
     "km_from_start": 4.8,
+    "off_road_m": 679,
     "lat": 26.90156,
     "lon": 75.7827,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/4466634254"
+    "osm_url": "https://www.openstreetmap.org/node/4466634254",
+    "source": null
    },
    {
     "id": "fuel:node-11765686547",
@@ -2076,10 +2118,12 @@
     "brand": "Indian Oil",
     "near": "Jaipur",
     "km_from_start": 4.8,
+    "off_road_m": 660,
     "lat": 26.9017,
     "lon": 75.78259,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/11765686547"
+    "osm_url": "https://www.openstreetmap.org/node/11765686547",
+    "source": null
    },
    {
     "id": "fuel:node-6968230713",
@@ -2087,10 +2131,12 @@
     "brand": "Indian Oil",
     "near": "Jaipur",
     "km_from_start": 5.8,
+    "off_road_m": 22,
     "lat": 26.90135,
     "lon": 75.77099,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/6968230713"
+    "osm_url": "https://www.openstreetmap.org/node/6968230713",
+    "source": null
    },
    {
     "id": "fuel:node-6968230712",
@@ -2098,10 +2144,12 @@
     "brand": "Hindustan Petroleum",
     "near": "Jaipur",
     "km_from_start": 6.0,
+    "off_road_m": 3,
     "lat": 26.90043,
     "lon": 75.76911,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/6968230712"
+    "osm_url": "https://www.openstreetmap.org/node/6968230712",
+    "source": null
    },
    {
     "id": "fuel:node-6968230709",
@@ -2109,10 +2157,12 @@
     "brand": "Hindustan Petroleum",
     "near": "Jaipur",
     "km_from_start": 7.3,
+    "off_road_m": 950,
     "lat": 26.90599,
     "lon": 75.75199,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/6968230709"
+    "osm_url": "https://www.openstreetmap.org/node/6968230709",
+    "source": null
    },
    {
     "id": "fuel:node-6968230711",
@@ -2120,10 +2170,12 @@
     "brand": "Hindustan Petroleum",
     "near": "Jaipur",
     "km_from_start": 7.7,
+    "off_road_m": 40,
     "lat": 26.89725,
     "lon": 75.75327,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/6968230711"
+    "osm_url": "https://www.openstreetmap.org/node/6968230711",
+    "source": null
    },
    {
     "id": "fuel:node-8142083094",
@@ -2131,10 +2183,12 @@
     "brand": null,
     "near": "Jaipur",
     "km_from_start": 15.4,
+    "off_road_m": 69,
     "lat": 26.86564,
     "lon": 75.68479,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/8142083094"
+    "osm_url": "https://www.openstreetmap.org/node/8142083094",
+    "source": null
    },
    {
     "id": "fuel:node-8176314457",
@@ -2142,10 +2196,12 @@
     "brand": null,
     "near": "Jaipur",
     "km_from_start": 30.3,
+    "off_road_m": 70,
     "lat": 26.82271,
     "lon": 75.54432,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/8176314457"
+    "osm_url": "https://www.openstreetmap.org/node/8176314457",
+    "source": null
    },
    {
     "id": "fuel:node-8176626444",
@@ -2153,10 +2209,12 @@
     "brand": null,
     "near": "Jaipur",
     "km_from_start": 47.5,
+    "off_road_m": 35,
     "lat": 26.77669,
     "lon": 75.38124,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/8176626444"
+    "osm_url": "https://www.openstreetmap.org/node/8176626444",
+    "source": null
    },
    {
     "id": "fuel:node-8176686231",
@@ -2164,10 +2222,12 @@
     "brand": null,
     "near": "Jaipur",
     "km_from_start": 50.9,
+    "off_road_m": 20,
     "lat": 26.76205,
     "lon": 75.35094,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/8176686231"
+    "osm_url": "https://www.openstreetmap.org/node/8176686231",
+    "source": null
    },
    {
     "id": "fuel:node-8177125386",
@@ -2175,10 +2235,12 @@
     "brand": "Nayara",
     "near": "Jaipur",
     "km_from_start": 55.5,
+    "off_road_m": 2,
     "lat": 26.74047,
     "lon": 75.31296,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/8177125386"
+    "osm_url": "https://www.openstreetmap.org/node/8177125386",
+    "source": null
    },
    {
     "id": "fuel:node-5008832822",
@@ -2186,10 +2248,12 @@
     "brand": null,
     "near": "Jaipur",
     "km_from_start": 60.9,
+    "off_road_m": 30,
     "lat": 26.70836,
     "lon": 75.27174,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/5008832822"
+    "osm_url": "https://www.openstreetmap.org/node/5008832822",
+    "source": null
    },
    {
     "id": "fuel:node-5008832821",
@@ -2197,10 +2261,12 @@
     "brand": null,
     "near": "Jaipur",
     "km_from_start": 61.0,
+    "off_road_m": 48,
     "lat": 26.70881,
     "lon": 75.27112,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/5008832821"
+    "osm_url": "https://www.openstreetmap.org/node/5008832821",
+    "source": null
    },
    {
     "id": "fuel:node-8127081083",
@@ -2208,10 +2274,12 @@
     "brand": null,
     "near": "Jaipur",
     "km_from_start": 110.6,
+    "off_road_m": 57,
     "lat": 26.57997,
     "lon": 74.82064,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/8127081083"
+    "osm_url": "https://www.openstreetmap.org/node/8127081083",
+    "source": null
    },
    {
     "id": "fuel:node-8127081088",
@@ -2219,10 +2287,12 @@
     "brand": null,
     "near": "Jaipur",
     "km_from_start": 147.6,
+    "off_road_m": 5,
     "lat": 26.35992,
     "lon": 74.59278,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/8127081088"
+    "osm_url": "https://www.openstreetmap.org/node/8127081088",
+    "source": null
    },
    {
     "id": "fuel:node-5008679022",
@@ -2230,10 +2300,12 @@
     "brand": null,
     "near": "Jaipur",
     "km_from_start": 152.4,
+    "off_road_m": 58,
     "lat": 26.32875,
     "lon": 74.56113,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/5008679022"
+    "osm_url": "https://www.openstreetmap.org/node/5008679022",
+    "source": null
    },
    {
     "id": "fuel:node-5006870822",
@@ -2241,10 +2313,12 @@
     "brand": null,
     "near": "Jaipur",
     "km_from_start": 157.0,
+    "off_road_m": 92,
     "lat": 26.29679,
     "lon": 74.53196,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/5006870822"
+    "osm_url": "https://www.openstreetmap.org/node/5006870822",
+    "source": null
    },
    {
     "id": "fuel:node-7030319496",
@@ -2252,10 +2326,12 @@
     "brand": null,
     "near": "Jodhpur",
     "km_from_start": 182.5,
+    "off_road_m": 42,
     "lat": 26.14603,
     "lon": 74.35783,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/7030319496"
+    "osm_url": "https://www.openstreetmap.org/node/7030319496",
+    "source": null
    },
    {
     "id": "fuel:node-2592749384",
@@ -2263,10 +2339,12 @@
     "brand": null,
     "near": "Jodhpur",
     "km_from_start": 296.7,
+    "off_road_m": 771,
     "lat": 26.28567,
     "lon": 73.3573,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/2592749384"
+    "osm_url": "https://www.openstreetmap.org/node/2592749384",
+    "source": null
    },
    {
     "id": "fuel:node-2592749385",
@@ -2274,10 +2352,12 @@
     "brand": "Indian Oil",
     "near": "Jodhpur",
     "km_from_start": 304.7,
+    "off_road_m": 116,
     "lat": 26.26713,
     "lon": 73.27854,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/2592749385"
+    "osm_url": "https://www.openstreetmap.org/node/2592749385",
+    "source": null
    },
    {
     "id": "fuel:node-2592749410",
@@ -2285,10 +2365,12 @@
     "brand": "Indian Oil",
     "near": "Jodhpur",
     "km_from_start": 306.0,
+    "off_road_m": 152,
     "lat": 26.26705,
     "lon": 73.26617,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/2592749410"
+    "osm_url": "https://www.openstreetmap.org/node/2592749410",
+    "source": null
    },
    {
     "id": "fuel:node-3685075889",
@@ -2296,10 +2378,12 @@
     "brand": null,
     "near": "Jodhpur",
     "km_from_start": 330.2,
+    "off_road_m": 142,
     "lat": 26.27197,
     "lon": 73.0367,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/3685075889"
+    "osm_url": "https://www.openstreetmap.org/node/3685075889",
+    "source": null
    },
    {
     "id": "fuel:node-12390390738",
@@ -2307,10 +2391,12 @@
     "brand": "Indian Oil",
     "near": "Jodhpur",
     "km_from_start": 330.2,
+    "off_road_m": 245,
     "lat": 26.2712,
     "lon": 73.03613,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/12390390738"
+    "osm_url": "https://www.openstreetmap.org/node/12390390738",
+    "source": null
    },
    {
     "id": "fuel:node-3685077226",
@@ -2318,10 +2404,12 @@
     "brand": "Indian Oil",
     "near": "Jodhpur",
     "km_from_start": 331.0,
+    "off_road_m": 54,
     "lat": 26.27948,
     "lon": 73.03751,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/3685077226"
+    "osm_url": "https://www.openstreetmap.org/node/3685077226",
+    "source": null
    },
    {
     "id": "fuel:node-2933698748",
@@ -2329,10 +2417,12 @@
     "brand": "Bharat Petroleum",
     "near": "Jodhpur",
     "km_from_start": 331.6,
+    "off_road_m": 52,
     "lat": 26.28437,
     "lon": 73.03837,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/2933698748"
+    "osm_url": "https://www.openstreetmap.org/node/2933698748",
+    "source": null
    },
    {
     "id": "fuel:node-1456166185",
@@ -2340,10 +2430,12 @@
     "brand": null,
     "near": "Jodhpur",
     "km_from_start": 332.0,
+    "off_road_m": 859,
     "lat": 26.28934,
     "lon": 73.03,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/1456166185"
+    "osm_url": "https://www.openstreetmap.org/node/1456166185",
+    "source": null
    },
    {
     "id": "fuel:node-7023548949",
@@ -2351,10 +2443,12 @@
     "brand": null,
     "near": "Jodhpur",
     "km_from_start": 334.8,
+    "off_road_m": 4,
     "lat": 26.31001,
     "lon": 73.03861,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/7023548949"
+    "osm_url": "https://www.openstreetmap.org/node/7023548949",
+    "source": null
    },
    {
     "id": "fuel:node-12386446617",
@@ -2362,10 +2456,12 @@
     "brand": "Nayara",
     "near": "Jodhpur",
     "km_from_start": 335.8,
+    "off_road_m": 50,
     "lat": 26.31761,
     "lon": 73.04353,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/12386446617"
+    "osm_url": "https://www.openstreetmap.org/node/12386446617",
+    "source": null
    },
    {
     "id": "fuel:node-12384964884",
@@ -2373,10 +2469,12 @@
     "brand": null,
     "near": "Jodhpur",
     "km_from_start": 336.9,
+    "off_road_m": 61,
     "lat": 26.32719,
     "lon": 73.04286,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/12384964884"
+    "osm_url": "https://www.openstreetmap.org/node/12384964884",
+    "source": null
    },
    {
     "id": "fuel:node-12384964889",
@@ -2384,10 +2482,12 @@
     "brand": "HP",
     "near": "Jodhpur",
     "km_from_start": 337.5,
+    "off_road_m": 578,
     "lat": 26.33349,
     "lon": 73.04779,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/12384964889"
+    "osm_url": "https://www.openstreetmap.org/node/12384964889",
+    "source": null
    },
    {
     "id": "fuel:node-10266928571",
@@ -2395,10 +2495,12 @@
     "brand": null,
     "near": "Jodhpur",
     "km_from_start": 380.3,
+    "off_road_m": 40,
     "lat": 26.29726,
     "lon": 72.65896,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/10266928571"
+    "osm_url": "https://www.openstreetmap.org/node/10266928571",
+    "source": null
    },
    {
     "id": "fuel:node-10266899887",
@@ -2406,10 +2508,12 @@
     "brand": null,
     "near": "Jodhpur",
     "km_from_start": 381.1,
+    "off_road_m": 49,
     "lat": 26.29242,
     "lon": 72.6532,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/10266899887"
+    "osm_url": "https://www.openstreetmap.org/node/10266899887",
+    "source": null
    },
    {
     "id": "fuel:node-10266898950",
@@ -2417,10 +2521,12 @@
     "brand": null,
     "near": "Jodhpur",
     "km_from_start": 382.8,
+    "off_road_m": 23,
     "lat": 26.28549,
     "lon": 72.6384,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/10266898950"
+    "osm_url": "https://www.openstreetmap.org/node/10266898950",
+    "source": null
    },
    {
     "id": "fuel:node-10721192367",
@@ -2428,10 +2534,12 @@
     "brand": "Nayara",
     "near": "Jodhpur",
     "km_from_start": 412.3,
+    "off_road_m": 117,
     "lat": 26.43339,
     "lon": 72.4522,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/10721192367"
+    "osm_url": "https://www.openstreetmap.org/node/10721192367",
+    "source": null
    },
    {
     "id": "fuel:node-10721206556",
@@ -2439,10 +2547,12 @@
     "brand": null,
     "near": "Jodhpur",
     "km_from_start": 419.5,
+    "off_road_m": 18,
     "lat": 26.47322,
     "lon": 72.40337,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/10721206556"
+    "osm_url": "https://www.openstreetmap.org/node/10721206556",
+    "source": null
    },
    {
     "id": "fuel:node-10721208278",
@@ -2450,10 +2560,12 @@
     "brand": "Indian Oil",
     "near": "Pokhran",
     "km_from_start": 444.9,
+    "off_road_m": 11,
     "lat": 26.6647,
     "lon": 72.32505,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/10721208278"
+    "osm_url": "https://www.openstreetmap.org/node/10721208278",
+    "source": null
    },
    {
     "id": "fuel:node-10721116696",
@@ -2461,10 +2573,12 @@
     "brand": "Bharat Petroleum",
     "near": "Pokhran",
     "km_from_start": 447.8,
+    "off_road_m": 55,
     "lat": 26.69064,
     "lon": 72.32389,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/10721116696"
+    "osm_url": "https://www.openstreetmap.org/node/10721116696",
+    "source": null
    },
    {
     "id": "fuel:node-10721169084",
@@ -2472,10 +2586,12 @@
     "brand": "Hindustan Petroleum",
     "near": "Pokhran",
     "km_from_start": 449.7,
+    "off_road_m": 4,
     "lat": 26.70671,
     "lon": 72.32123,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/10721169084"
+    "osm_url": "https://www.openstreetmap.org/node/10721169084",
+    "source": null
    },
    {
     "id": "fuel:node-10721199039",
@@ -2483,10 +2599,12 @@
     "brand": "Hindustan Petroleum",
     "near": "Pokhran",
     "km_from_start": 460.1,
+    "off_road_m": 41,
     "lat": 26.79324,
     "lon": 72.31583,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/10721199039"
+    "osm_url": "https://www.openstreetmap.org/node/10721199039",
+    "source": null
    },
    {
     "id": "fuel:node-10721175065",
@@ -2494,10 +2612,12 @@
     "brand": "Indian Oil",
     "near": "Pokhran",
     "km_from_start": 460.7,
+    "off_road_m": 9,
     "lat": 26.79818,
     "lon": 72.31355,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/10721175065"
+    "osm_url": "https://www.openstreetmap.org/node/10721175065",
+    "source": null
    },
    {
     "id": "fuel:node-10721194561",
@@ -2505,10 +2625,12 @@
     "brand": "Nayara",
     "near": "Pokhran",
     "km_from_start": 469.5,
+    "off_road_m": 57,
     "lat": 26.82511,
     "lon": 72.25068,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/10721194561"
+    "osm_url": "https://www.openstreetmap.org/node/10721194561",
+    "source": null
    },
    {
     "id": "fuel:node-10721201250",
@@ -2516,10 +2638,12 @@
     "brand": "Hindustan Petroleum",
     "near": "Pokhran",
     "km_from_start": 476.2,
+    "off_road_m": 118,
     "lat": 26.84422,
     "lon": 72.19336,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/10721201250"
+    "osm_url": "https://www.openstreetmap.org/node/10721201250",
+    "source": null
    },
    {
     "id": "fuel:node-10721210605",
@@ -2527,10 +2651,12 @@
     "brand": "Hindustan Petroleum",
     "near": "Pokhran",
     "km_from_start": 500.6,
+    "off_road_m": 123,
     "lat": 26.89488,
     "lon": 71.96349,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/10721210605"
+    "osm_url": "https://www.openstreetmap.org/node/10721210605",
+    "source": null
    },
    {
     "id": "fuel:node-10721194560",
@@ -2538,10 +2664,12 @@
     "brand": "Indian Oil",
     "near": "Pokhran",
     "km_from_start": 505.5,
+    "off_road_m": 27,
     "lat": 26.91968,
     "lon": 71.92416,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/10721194560"
+    "osm_url": "https://www.openstreetmap.org/node/10721194560",
+    "source": null
    },
    {
     "id": "fuel:node-10721200914",
@@ -2549,10 +2677,12 @@
     "brand": "Hindustan Petroleum",
     "near": "Pokhran",
     "km_from_start": 507.0,
+    "off_road_m": 69,
     "lat": 26.92586,
     "lon": 71.91889,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/10721200914"
+    "osm_url": "https://www.openstreetmap.org/node/10721200914",
+    "source": null
    },
    {
     "id": "fuel:node-5219057304",
@@ -2560,10 +2690,12 @@
     "brand": null,
     "near": "Pokhran",
     "km_from_start": 510.4,
+    "off_road_m": 22,
     "lat": 26.93059,
     "lon": 71.8868,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/5219057304"
+    "osm_url": "https://www.openstreetmap.org/node/5219057304",
+    "source": null
    },
    {
     "id": "fuel:node-7250006165",
@@ -2571,10 +2703,12 @@
     "brand": "Hindustan Petroleum",
     "near": "Pokhran",
     "km_from_start": 510.5,
+    "off_road_m": 23,
     "lat": 26.93064,
     "lon": 71.88632,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/7250006165"
+    "osm_url": "https://www.openstreetmap.org/node/7250006165",
+    "source": null
    },
    {
     "id": "fuel:node-5219071667",
@@ -2582,10 +2716,12 @@
     "brand": null,
     "near": "Pokhran",
     "km_from_start": 511.0,
+    "off_road_m": 48,
     "lat": 26.93193,
     "lon": 71.88123,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/5219071667"
+    "osm_url": "https://www.openstreetmap.org/node/5219071667",
+    "source": null
    },
    {
     "id": "fuel:node-7019094869",
@@ -2593,10 +2729,12 @@
     "brand": null,
     "near": "Jaisalmer",
     "km_from_start": 570.0,
+    "off_road_m": 54,
     "lat": 26.99878,
     "lon": 71.33886,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/7019094869"
+    "osm_url": "https://www.openstreetmap.org/node/7019094869",
+    "source": null
    },
    {
     "id": "fuel:node-7019094992",
@@ -2604,10 +2742,12 @@
     "brand": null,
     "near": "Jaisalmer",
     "km_from_start": 574.0,
+    "off_road_m": 93,
     "lat": 26.98869,
     "lon": 71.30185,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/7019094992"
+    "osm_url": "https://www.openstreetmap.org/node/7019094992",
+    "source": null
    },
    {
     "id": "fuel:node-7019094868",
@@ -2615,10 +2755,12 @@
     "brand": "Indian Oil",
     "near": "Jaisalmer",
     "km_from_start": 577.2,
+    "off_road_m": 79,
     "lat": 26.97495,
     "lon": 71.27411,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/7019094868"
+    "osm_url": "https://www.openstreetmap.org/node/7019094868",
+    "source": null
    },
    {
     "id": "fuel:node-7019094998",
@@ -2626,10 +2768,12 @@
     "brand": "Indian Oil",
     "near": "Jaisalmer",
     "km_from_start": 589.5,
+    "off_road_m": 90,
     "lat": 26.93877,
     "lon": 71.15949,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/7019094998"
+    "osm_url": "https://www.openstreetmap.org/node/7019094998",
+    "source": null
    },
    {
     "id": "fuel:node-12397933103",
@@ -2637,10 +2781,12 @@
     "brand": null,
     "near": "Jaisalmer",
     "km_from_start": 614.9,
+    "off_road_m": 18,
     "lat": 26.91226,
     "lon": 70.92365,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/12397933103"
+    "osm_url": "https://www.openstreetmap.org/node/12397933103",
+    "source": null
    },
    {
     "id": "fuel:node-353703053",
@@ -2648,10 +2794,12 @@
     "brand": null,
     "near": "Jaisalmer",
     "km_from_start": 615.0,
+    "off_road_m": 22,
     "lat": 26.91185,
     "lon": 70.92253,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/353703053"
+    "osm_url": "https://www.openstreetmap.org/node/353703053",
+    "source": null
    },
    {
     "id": "fuel:node-6115749985",
@@ -2659,10 +2807,12 @@
     "brand": null,
     "near": "Jaisalmer",
     "km_from_start": 616.4,
+    "off_road_m": 36,
     "lat": 26.91034,
     "lon": 70.9094,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/6115749985"
+    "osm_url": "https://www.openstreetmap.org/node/6115749985",
+    "source": null
    },
    {
     "id": "fuel:node-13668839712",
@@ -2670,10 +2820,12 @@
     "brand": "Bharat Petroleum",
     "near": "Jaisalmer",
     "km_from_start": 621.8,
+    "off_road_m": 34,
     "lat": 26.94523,
     "lon": 70.88951,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/13668839712"
+    "osm_url": "https://www.openstreetmap.org/node/13668839712",
+    "source": null
    },
    {
     "id": "fuel:node-353703055",
@@ -2681,10 +2833,12 @@
     "brand": null,
     "near": "Jaisalmer",
     "km_from_start": 937.0,
+    "off_road_m": 88,
     "lat": 26.91565,
     "lon": 70.90808,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/353703055"
+    "osm_url": "https://www.openstreetmap.org/node/353703055",
+    "source": null
    }
   ],
   "pump_count": 77,

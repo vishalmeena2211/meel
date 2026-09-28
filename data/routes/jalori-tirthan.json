@@ -2042,10 +2042,12 @@
     "brand": "Hindustan Petroleum",
     "near": "Aut",
     "km_from_start": 5.5,
+    "off_road_m": 23,
     "lat": 31.72652,
     "lon": 77.22597,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/10955984309"
+    "osm_url": "https://www.openstreetmap.org/node/10955984309",
+    "source": null
    },
    {
     "id": "fuel:node-10955993525",
@@ -2053,10 +2055,12 @@
     "brand": "Hindustan Petroleum",
     "near": "Aut",
     "km_from_start": 11.7,
+    "off_road_m": 25,
     "lat": 31.70256,
     "lon": 77.26141,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/10955993525"
+    "osm_url": "https://www.openstreetmap.org/node/10955993525",
+    "source": null
    },
    {
     "id": "fuel:node-10955982493",
@@ -2064,10 +2068,12 @@
     "brand": "Indian Oil",
     "near": "Banjar",
     "km_from_start": 18.7,
+    "off_road_m": 13,
     "lat": 31.66571,
     "lon": 77.30427,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/10955982493"
+    "osm_url": "https://www.openstreetmap.org/node/10955982493",
+    "source": null
    }
   ],
   "pump_count": 3,

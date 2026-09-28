@@ -3149,10 +3149,12 @@
     "brand": "Indian Oil",
     "near": "Gangtok",
     "km_from_start": 0.8,
+    "off_road_m": 92,
     "lat": 27.33452,
     "lon": 88.61426,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/8196909803"
+    "osm_url": "https://www.openstreetmap.org/node/8196909803",
+    "source": null
    },
    {
     "id": "fuel:node-8221551095",
@@ -3160,10 +3162,12 @@
     "brand": null,
     "near": "Gangtok",
     "km_from_start": 3.1,
+    "off_road_m": 22,
     "lat": 27.33778,
     "lon": 88.62324,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/8221551095"
+    "osm_url": "https://www.openstreetmap.org/node/8221551095",
+    "source": null
    }
   ],
   "pump_count": 2,

@@ -6275,10 +6275,12 @@
     "brand": "Bharat Petroleum",
     "near": "Phuentsholing",
     "km_from_start": 1.5,
+    "off_road_m": 0,
     "lat": 26.86123,
     "lon": 89.38122,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/7974865856"
+    "osm_url": "https://www.openstreetmap.org/node/7974865856",
+    "source": null
    },
    {
     "id": "fuel:way-444868960",
@@ -6286,10 +6288,12 @@
     "brand": null,
     "near": "Phuentsholing",
     "km_from_start": 3.2,
+    "off_road_m": 16,
     "lat": 26.86059,
     "lon": 89.38804,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/way/444868960"
+    "osm_url": "https://www.openstreetmap.org/way/444868960",
+    "source": null
    },
    {
     "id": "fuel:node-9894412719",
@@ -6297,10 +6301,12 @@
     "brand": null,
     "near": "Thimphu",
     "km_from_start": 141.0,
+    "off_road_m": 26,
     "lat": 27.41981,
     "lon": 89.63111,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/9894412719"
+    "osm_url": "https://www.openstreetmap.org/node/9894412719",
+    "source": null
    },
    {
     "id": "fuel:node-9894412718",
@@ -6308,10 +6314,12 @@
     "brand": null,
     "near": "Thimphu",
     "km_from_start": 145.0,
+    "off_road_m": 34,
     "lat": 27.44185,
     "lon": 89.6594,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/9894412718"
+    "osm_url": "https://www.openstreetmap.org/node/9894412718",
+    "source": null
    },
    {
     "id": "fuel:node-9840325287",
@@ -6319,10 +6327,12 @@
     "brand": null,
     "near": "Thimphu",
     "km_from_start": 150.3,
+    "off_road_m": 791,
     "lat": 27.47727,
     "lon": 89.62475,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/9840325287"
+    "osm_url": "https://www.openstreetmap.org/node/9840325287",
+    "source": null
    },
    {
     "id": "fuel:node-4369775090",
@@ -6330,10 +6340,12 @@
     "brand": null,
     "near": "Thimphu",
     "km_from_start": 151.6,
+    "off_road_m": 267,
     "lat": 27.46739,
     "lon": 89.6411,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/4369775090"
+    "osm_url": "https://www.openstreetmap.org/node/4369775090",
+    "source": null
    },
    {
     "id": "fuel:node-11932105869",
@@ -6341,10 +6353,12 @@
     "brand": null,
     "near": "Thimphu",
     "km_from_start": 151.6,
+    "off_road_m": 440,
     "lat": 27.4672,
     "lon": 89.64289,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/11932105869"
+    "osm_url": "https://www.openstreetmap.org/node/11932105869",
+    "source": null
    },
    {
     "id": "fuel:way-439926917",
@@ -6352,10 +6366,12 @@
     "brand": "Indian Oil petrol",
     "near": "Punakha",
     "km_from_start": 227.5,
+    "off_road_m": 20,
     "lat": 27.54822,
     "lon": 89.86962,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/way/439926917"
+    "osm_url": "https://www.openstreetmap.org/way/439926917",
+    "source": null
    },
    {
     "id": "fuel:node-2031591217",
@@ -6363,10 +6379,12 @@
     "brand": null,
     "near": "Punakha",
     "km_from_start": 234.6,
+    "off_road_m": 12,
     "lat": 27.51558,
     "lon": 89.86609,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/2031591217"
+    "osm_url": "https://www.openstreetmap.org/node/2031591217",
+    "source": null
    },
    {
     "id": "fuel:node-4377499005",
@@ -6374,10 +6392,12 @@
     "brand": null,
     "near": "Thimphu",
     "km_from_start": 292.5,
+    "off_road_m": 271,
     "lat": 27.46406,
     "lon": 89.64288,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/4377499005"
+    "osm_url": "https://www.openstreetmap.org/node/4377499005",
+    "source": null
    },
    {
     "id": "fuel:node-11934013169",
@@ -6385,10 +6405,12 @@
     "brand": null,
     "near": "Thimphu",
     "km_from_start": 313.2,
+    "off_road_m": 20,
     "lat": 27.36982,
     "lon": 89.56924,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/11934013169"
+    "osm_url": "https://www.openstreetmap.org/node/11934013169",
+    "source": null
    },
    {
     "id": "fuel:node-3933397238",
@@ -6396,10 +6418,12 @@
     "brand": "Indian Oil",
     "near": "Paro",
     "km_from_start": 339.0,
+    "off_road_m": 27,
     "lat": 27.38695,
     "lon": 89.44251,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/3933397238"
+    "osm_url": "https://www.openstreetmap.org/node/3933397238",
+    "source": null
    },
    {
     "id": "fuel:node-11930786269",
@@ -6407,10 +6431,12 @@
     "brand": null,
     "near": "Paro",
     "km_from_start": 343.8,
+    "off_road_m": 3,
     "lat": 27.41573,
     "lon": 89.41964,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/11930786269"
+    "osm_url": "https://www.openstreetmap.org/node/11930786269",
+    "source": null
    },
    {
     "id": "fuel:node-2491166287",
@@ -6418,10 +6444,12 @@
     "brand": "Bharat Petroleum",
     "near": "Paro",
     "km_from_start": 346.1,
+    "off_road_m": 145,
     "lat": 27.43126,
     "lon": 89.41163,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/2491166287"
+    "osm_url": "https://www.openstreetmap.org/node/2491166287",
+    "source": null
    }
   ],
   "pump_count": 14,

@@ -367,6 +367,18 @@ def fuel(args):
                           "lat": round(la, 5), "lon": round(lo, 5), "km_from_start": round(km * scale, 1),
                           "off_road_m": round(off), "opening_hours": t.get("opening_hours"),
                           "petrol": t.get("fuel:octane_91") or t.get("fuel:petrol"), "diesel": t.get("fuel:diesel")})
+        # Where the open map has no pump in a town, pumps from the oil company's own locator, kept in the route's
+        # research file with their source. One within 300 m of a pump already on the map is the same pump.
+        extra = (load(os.path.join(HERE, "..", "research", r["slug"] + ".json"), {}) or {}).get("pumps_from_companies") or {}
+        added = 0
+        for x in extra.get("pumps", []):
+            km, off = project(line, cum, (x["lat"], x["lon"]))
+            if off > 2500 or any(hav((x["lat"], x["lon"]), (p["lat"], p["lon"])) < 0.3 for p in pumps):
+                continue
+            pumps.append({"osm": None, "company_id": x["id"], "name": x["name"], "brand": x.get("brand"), "town": x.get("town"),
+                          "lat": x["lat"], "lon": x["lon"], "km_from_start": round(km * scale, 1), "off_road_m": round(off),
+                          "opening_hours": None, "petrol": None, "diesel": None, "source": x["source"]})
+            added += 1
         pumps.sort(key=lambda p: p["km_from_start"])
         # stops: pumps within 2 km of each other count as one stop
         stops = []
@@ -398,10 +410,13 @@ def fuel(args):
                     "longest_gaps": gaps[:5],
                     "source": {"service": "Overpass API", "data": "OpenStreetMap contributors",
                                "licence": "Open Database Licence", "url": "https://www.openstreetmap.org/copyright"},
-                    "note": "Pumps are those drawn on the open map within the search radius of the road. "
-                            "A pump missing from the map is missing here, so each gap is a worst case."})
+                    "note": ("Pumps are those drawn on the open map within the search radius of the road, and, where the "
+                             "map has none, those on the oil company's own locator. A pump missing from both is missing here, "
+                             "so each gap is a worst case.") if added else
+                            ("Pumps are those drawn on the open map within the search radius of the road. "
+                             "A pump missing from the map is missing here, so each gap is a worst case.")})
         g = gaps[0]["gap_km"] if gaps else 0
-        print(f"fuel {r['slug']}: {len(pumps)} pumps, {len(stops)} stops, longest gap {g} km")
+        print(f"fuel {r['slug']}: {len(pumps)} pumps ({added} from a company's locator), {len(stops)} stops, longest gap {g} km")
         time.sleep(6)
 
 

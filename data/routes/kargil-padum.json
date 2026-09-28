@@ -3113,10 +3113,12 @@
     "brand": "Hindustan Petroleum",
     "near": "Kargil",
     "km_from_start": 3.6,
+    "off_road_m": 15,
     "lat": 34.53955,
     "lon": 76.14011,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/12465668700"
+    "osm_url": "https://www.openstreetmap.org/node/12465668700",
+    "source": null
    },
    {
     "id": "fuel:node-12465668130",
@@ -3124,10 +3126,12 @@
     "brand": null,
     "near": "Kargil",
     "km_from_start": 7.8,
+    "off_road_m": 16,
     "lat": 34.50508,
     "lon": 76.12528,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/12465668130"
+    "osm_url": "https://www.openstreetmap.org/node/12465668130",
+    "source": null
    },
    {
     "id": "fuel:node-9781314888",
@@ -3135,10 +3139,12 @@
     "brand": null,
     "near": "Sankoo",
     "km_from_start": 39.5,
+    "off_road_m": 37,
     "lat": 34.3006,
     "lon": 75.9608,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/9781314888"
+    "osm_url": "https://www.openstreetmap.org/node/9781314888",
+    "source": null
    },
    {
     "id": "fuel:node-9888799401",
@@ -3146,10 +3152,12 @@
     "brand": null,
     "near": "Padum",
     "km_from_start": 229.0,
+    "off_road_m": 6,
     "lat": 33.48065,
     "lon": 76.85722,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/9888799401"
+    "osm_url": "https://www.openstreetmap.org/node/9888799401",
+    "source": null
    }
   ],
   "pump_count": 4,

@@ -2371,10 +2371,12 @@
     "brand": "Bharat Petroleum",
     "near": "Srinagar",
     "km_from_start": 0.1,
+    "off_road_m": 366,
     "lat": 34.07589,
     "lon": 74.8251,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/5936065435"
+    "osm_url": "https://www.openstreetmap.org/node/5936065435",
+    "source": null
    },
    {
     "id": "fuel:node-5984439369",
@@ -2382,10 +2384,12 @@
     "brand": null,
     "near": "Srinagar",
     "km_from_start": 0.1,
+    "off_road_m": 320,
     "lat": 34.07578,
     "lon": 74.82462,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/5984439369"
+    "osm_url": "https://www.openstreetmap.org/node/5984439369",
+    "source": null
    },
    {
     "id": "fuel:node-2836002981",
@@ -2393,10 +2397,12 @@
     "brand": null,
     "near": "Srinagar",
     "km_from_start": 2.5,
+    "off_road_m": 136,
     "lat": 34.07565,
     "lon": 74.79752,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/2836002981"
+    "osm_url": "https://www.openstreetmap.org/node/2836002981",
+    "source": null
    },
    {
     "id": "fuel:node-9073507512",
@@ -2404,10 +2410,12 @@
     "brand": null,
     "near": "Srinagar",
     "km_from_start": 2.5,
+    "off_road_m": 96,
     "lat": 34.0753,
     "lon": 74.79738,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/9073507512"
+    "osm_url": "https://www.openstreetmap.org/node/9073507512",
+    "source": null
    },
    {
     "id": "fuel:node-9073519593",
@@ -2415,10 +2423,12 @@
     "brand": null,
     "near": "Srinagar",
     "km_from_start": 2.5,
+    "off_road_m": 128,
     "lat": 34.07556,
     "lon": 74.79752,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/9073519593"
+    "osm_url": "https://www.openstreetmap.org/node/9073519593",
+    "source": null
    },
    {
     "id": "fuel:node-9073525326",
@@ -2426,10 +2436,12 @@
     "brand": null,
     "near": "Srinagar",
     "km_from_start": 2.5,
+    "off_road_m": 63,
     "lat": 34.07505,
     "lon": 74.79718,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/9073525326"
+    "osm_url": "https://www.openstreetmap.org/node/9073525326",
+    "source": null
    },
    {
     "id": "fuel:node-9113502199",
@@ -2437,10 +2449,12 @@
     "brand": null,
     "near": "Srinagar",
     "km_from_start": 3.3,
+    "off_road_m": 585,
     "lat": 34.08087,
     "lon": 74.80055,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/9113502199"
+    "osm_url": "https://www.openstreetmap.org/node/9113502199",
+    "source": null
    },
    {
     "id": "fuel:node-7944685791",
@@ -2448,10 +2462,12 @@
     "brand": null,
     "near": "Srinagar",
     "km_from_start": 4.0,
+    "off_road_m": 20,
     "lat": 34.08179,
     "lon": 74.78818,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/7944685791"
+    "osm_url": "https://www.openstreetmap.org/node/7944685791",
+    "source": null
    },
    {
     "id": "fuel:way-682463968",
@@ -2459,10 +2475,12 @@
     "brand": null,
     "near": "Srinagar",
     "km_from_start": 5.7,
+    "off_road_m": 9,
     "lat": 34.09178,
     "lon": 74.77682,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/way/682463968"
+    "osm_url": "https://www.openstreetmap.org/way/682463968",
+    "source": null
    },
    {
     "id": "fuel:node-9087718081",
@@ -2470,10 +2488,12 @@
     "brand": null,
     "near": "Srinagar",
     "km_from_start": 6.3,
+    "off_road_m": 6,
     "lat": 34.09611,
     "lon": 74.77374,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/9087718081"
+    "osm_url": "https://www.openstreetmap.org/node/9087718081",
+    "source": null
    },
    {
     "id": "fuel:node-9087689058",
@@ -2481,10 +2501,12 @@
     "brand": null,
     "near": "Srinagar",
     "km_from_start": 8.6,
+    "off_road_m": 56,
     "lat": 34.10626,
     "lon": 74.75299,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/9087689058"
+    "osm_url": "https://www.openstreetmap.org/node/9087689058",
+    "source": null
    },
    {
     "id": "fuel:node-331119815",
@@ -2492,10 +2514,12 @@
     "brand": null,
     "near": "Srinagar",
     "km_from_start": 9.3,
+    "off_road_m": 47,
     "lat": 34.10912,
     "lon": 74.74673,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/331119815"
+    "osm_url": "https://www.openstreetmap.org/node/331119815",
+    "source": null
    },
    {
     "id": "fuel:node-13523954637",
@@ -2503,10 +2527,12 @@
     "brand": null,
     "near": "Srinagar",
     "km_from_start": 10.3,
+    "off_road_m": 153,
     "lat": 34.11025,
     "lon": 74.73462,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/13523954637"
+    "osm_url": "https://www.openstreetmap.org/node/13523954637",
+    "source": null
    },
    {
     "id": "fuel:node-4374600090",
@@ -2514,10 +2540,12 @@
     "brand": "Hindustan Petroleum",
     "near": "Bandipora",
     "km_from_start": 35.6,
+    "off_road_m": 37,
     "lat": 34.27497,
     "lon": 74.67594,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/4374600090"
+    "osm_url": "https://www.openstreetmap.org/node/4374600090",
+    "source": null
    },
    {
     "id": "fuel:node-9835896166",
@@ -2525,10 +2553,12 @@
     "brand": null,
     "near": "Dawar",
     "km_from_start": 140.8,
+    "off_road_m": 337,
     "lat": 34.63356,
     "lon": 74.81979,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/9835896166"
+    "osm_url": "https://www.openstreetmap.org/node/9835896166",
+    "source": null
    },
    {
     "id": "fuel:node-9835919017",
@@ -2536,10 +2566,12 @@
     "brand": null,
     "near": "Dawar",
     "km_from_start": 140.8,
+    "off_road_m": 321,
     "lat": 34.63357,
     "lon": 74.8196,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/9835919017"
+    "osm_url": "https://www.openstreetmap.org/node/9835919017",
+    "source": null
    }
   ],
   "pump_count": 16,

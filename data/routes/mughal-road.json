@@ -2990,10 +2990,12 @@
     "brand": "Bharat Petroleum",
     "near": "Srinagar",
     "km_from_start": 0.1,
+    "off_road_m": 366,
     "lat": 34.07589,
     "lon": 74.8251,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/5936065435"
+    "osm_url": "https://www.openstreetmap.org/node/5936065435",
+    "source": null
    },
    {
     "id": "fuel:node-5984439369",
@@ -3001,10 +3003,12 @@
     "brand": null,
     "near": "Srinagar",
     "km_from_start": 0.1,
+    "off_road_m": 320,
     "lat": 34.07578,
     "lon": 74.82462,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/5984439369"
+    "osm_url": "https://www.openstreetmap.org/node/5984439369",
+    "source": null
    },
    {
     "id": "fuel:node-2836002981",
@@ -3012,10 +3016,12 @@
     "brand": null,
     "near": "Srinagar",
     "km_from_start": 1.8,
+    "off_road_m": 771,
     "lat": 34.07565,
     "lon": 74.79752,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/2836002981"
+    "osm_url": "https://www.openstreetmap.org/node/2836002981",
+    "source": null
    },
    {
     "id": "fuel:node-9073507512",
@@ -3023,10 +3029,12 @@
     "brand": null,
     "near": "Srinagar",
     "km_from_start": 1.8,
+    "off_road_m": 757,
     "lat": 34.0753,
     "lon": 74.79738,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/9073507512"
+    "osm_url": "https://www.openstreetmap.org/node/9073507512",
+    "source": null
    },
    {
     "id": "fuel:node-9073519593",
@@ -3034,10 +3042,12 @@
     "brand": null,
     "near": "Srinagar",
     "km_from_start": 1.8,
+    "off_road_m": 765,
     "lat": 34.07556,
     "lon": 74.79752,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/9073519593"
+    "osm_url": "https://www.openstreetmap.org/node/9073519593",
+    "source": null
    },
    {
     "id": "fuel:node-9073525326",
@@ -3045,10 +3055,12 @@
     "brand": null,
     "near": "Srinagar",
     "km_from_start": 1.8,
+    "off_road_m": 757,
     "lat": 34.07505,
     "lon": 74.79718,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/9073525326"
+    "osm_url": "https://www.openstreetmap.org/node/9073525326",
+    "source": null
    },
    {
     "id": "fuel:node-5984439329",
@@ -3056,10 +3068,12 @@
     "brand": null,
     "near": "Srinagar",
     "km_from_start": 3.3,
+    "off_road_m": 27,
     "lat": 34.05791,
     "lon": 74.80283,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/5984439329"
+    "osm_url": "https://www.openstreetmap.org/node/5984439329",
+    "source": null
    },
    {
     "id": "fuel:node-9094218168",
@@ -3067,10 +3081,12 @@
     "brand": null,
     "near": "Srinagar",
     "km_from_start": 5.1,
+    "off_road_m": 46,
     "lat": 34.04603,
     "lon": 74.81263,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/9094218168"
+    "osm_url": "https://www.openstreetmap.org/node/9094218168",
+    "source": null
    },
    {
     "id": "fuel:node-5984439579",
@@ -3078,10 +3094,12 @@
     "brand": null,
     "near": "Srinagar",
     "km_from_start": 8.0,
+    "off_road_m": 650,
     "lat": 34.02899,
     "lon": 74.83177,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/5984439579"
+    "osm_url": "https://www.openstreetmap.org/node/5984439579",
+    "source": null
    },
    {
     "id": "fuel:node-9101014085",
@@ -3089,10 +3107,12 @@
     "brand": null,
     "near": "Srinagar",
     "km_from_start": 10.2,
+    "off_road_m": 36,
     "lat": 34.00816,
     "lon": 74.8354,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/9101014085"
+    "osm_url": "https://www.openstreetmap.org/node/9101014085",
+    "source": null
    }
   ],
   "pump_count": 10,

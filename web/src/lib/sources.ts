@@ -19,5 +19,7 @@ export function allSources(route: Route): Source[] {
   for (const z of route.hazards) add(z.source);
   for (const m of route.mechanics ?? []) add(m.source);
   for (const s of route.stays ?? []) add(s.source);
+  // Pumps taken from an oil company's own locator, where the open map had none.
+  for (const p of route.fuel.pumps) add(p.source);
   return found;
 }

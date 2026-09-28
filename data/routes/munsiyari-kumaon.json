@@ -10705,10 +10705,12 @@
     "brand": "Hindustan Petroleum",
     "near": "Kathgodam",
     "km_from_start": 0.0,
+    "off_road_m": 507,
     "lat": 29.26175,
     "lon": 79.54361,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/way/1188922833"
+    "osm_url": "https://www.openstreetmap.org/way/1188922833",
+    "source": null
    },
    {
     "id": "fuel:way-1225010342",
@@ -10716,10 +10718,12 @@
     "brand": "Bharat Petroleum",
     "near": "Kathgodam",
     "km_from_start": 0.0,
+    "off_road_m": 344,
     "lat": 29.26321,
     "lon": 79.54377,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/way/1225010342"
+    "osm_url": "https://www.openstreetmap.org/way/1225010342",
+    "source": null
    },
    {
     "id": "fuel:way-1225010345",
@@ -10727,10 +10731,12 @@
     "brand": "Indian Oil",
     "near": "Kathgodam",
     "km_from_start": 0.0,
+    "off_road_m": 229,
     "lat": 29.26425,
     "lon": 79.54423,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/way/1225010345"
+    "osm_url": "https://www.openstreetmap.org/way/1225010345",
+    "source": null
    },
    {
     "id": "fuel:way-1016781298",
@@ -10738,10 +10744,12 @@
     "brand": "Indian Oil",
     "near": "Kathgodam",
     "km_from_start": 1.9,
+    "off_road_m": 18,
     "lat": 29.28182,
     "lon": 79.54504,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/way/1016781298"
+    "osm_url": "https://www.openstreetmap.org/way/1016781298",
+    "source": null
    },
    {
     "id": "fuel:way-1227103228",
@@ -10749,10 +10757,12 @@
     "brand": "Bharat Petroleum",
     "near": "Kathgodam",
     "km_from_start": 16.0,
+    "off_road_m": 33,
     "lat": 29.33962,
     "lon": 79.48437,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/way/1227103228"
+    "osm_url": "https://www.openstreetmap.org/way/1227103228",
+    "source": null
    },
    {
     "id": "fuel:node-5580558726",
@@ -10760,10 +10770,12 @@
     "brand": "Indian Oil",
     "near": "Binsar",
     "km_from_start": 144.0,
+    "off_road_m": 5,
     "lat": 29.59826,
     "lon": 79.65855,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/5580558726"
+    "osm_url": "https://www.openstreetmap.org/node/5580558726",
+    "source": null
    },
    {
     "id": "fuel:node-8581796995",
@@ -10771,10 +10783,12 @@
     "brand": null,
     "near": "Munsiyari",
     "km_from_start": 546.7,
+    "off_road_m": 447,
     "lat": 30.06528,
     "lon": 80.24413,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/8581796995"
+    "osm_url": "https://www.openstreetmap.org/node/8581796995",
+    "source": null
    }
   ],
   "pump_count": 7,

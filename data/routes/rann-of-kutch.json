@@ -1053,10 +1053,12 @@
     "brand": "Bharat Petroleum",
     "near": "Bhuj",
     "km_from_start": 0.7,
+    "off_road_m": 35,
     "lat": 23.24923,
     "lon": 69.67265,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/1545193233"
+    "osm_url": "https://www.openstreetmap.org/node/1545193233",
+    "source": null
    },
    {
     "id": "fuel:node-3299344424",
@@ -1064,10 +1066,12 @@
     "brand": "Bharat Petroleum",
     "near": "Bhuj",
     "km_from_start": 1.5,
+    "off_road_m": 7,
     "lat": 23.25448,
     "lon": 69.6772,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/3299344424"
+    "osm_url": "https://www.openstreetmap.org/node/3299344424",
+    "source": null
    }
   ],
   "pump_count": 2,

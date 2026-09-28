@@ -12236,10 +12236,12 @@
     "brand": null,
     "near": "Imphal",
     "km_from_start": 0.0,
+    "off_road_m": 587,
     "lat": 24.79536,
     "lon": 93.94046,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/6562425686"
+    "osm_url": "https://www.openstreetmap.org/node/6562425686",
+    "source": null
    },
    {
     "id": "fuel:node-10947433057",
@@ -12247,10 +12249,12 @@
     "brand": "Indian Oil",
     "near": "Imphal",
     "km_from_start": 1.0,
+    "off_road_m": 30,
     "lat": 24.79524,
     "lon": 93.92981,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/10947433057"
+    "osm_url": "https://www.openstreetmap.org/node/10947433057",
+    "source": null
    },
    {
     "id": "fuel:node-6387635529",
@@ -12258,10 +12262,12 @@
     "brand": null,
     "near": "Imphal",
     "km_from_start": 3.4,
+    "off_road_m": 9,
     "lat": 24.78041,
     "lon": 93.91357,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/6387635529"
+    "osm_url": "https://www.openstreetmap.org/node/6387635529",
+    "source": null
    },
    {
     "id": "fuel:node-6387635524",
@@ -12269,10 +12275,12 @@
     "brand": null,
     "near": "Imphal",
     "km_from_start": 13.4,
+    "off_road_m": 24,
     "lat": 24.72264,
     "lon": 93.84399,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/6387635524"
+    "osm_url": "https://www.openstreetmap.org/node/6387635524",
+    "source": null
    },
    {
     "id": "fuel:node-11356662423",
@@ -12280,10 +12288,12 @@
     "brand": "Indian Oil",
     "near": "Moirang",
     "km_from_start": 29.8,
+    "off_road_m": 10,
     "lat": 24.61282,
     "lon": 93.7618,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/11356662423"
+    "osm_url": "https://www.openstreetmap.org/node/11356662423",
+    "source": null
    },
    {
     "id": "fuel:node-8778588406",
@@ -12291,10 +12301,12 @@
     "brand": null,
     "near": "Moirang",
     "km_from_start": 68.1,
+    "off_road_m": 28,
     "lat": 24.33018,
     "lon": 93.69351,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/8778588406"
+    "osm_url": "https://www.openstreetmap.org/node/8778588406",
+    "source": null
    },
    {
     "id": "fuel:node-7007512785",
@@ -12302,10 +12314,12 @@
     "brand": null,
     "near": "Aizawl",
     "km_from_start": 391.8,
+    "off_road_m": 1,
     "lat": 23.73503,
     "lon": 92.83922,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/7007512785"
+    "osm_url": "https://www.openstreetmap.org/node/7007512785",
+    "source": null
    },
    {
     "id": "fuel:node-8439990161",
@@ -12313,10 +12327,12 @@
     "brand": "Indian Oil",
     "near": "Aizawl",
     "km_from_start": 425.9,
+    "off_road_m": 129,
     "lat": 23.72616,
     "lon": 92.71857,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/8439990161"
+    "osm_url": "https://www.openstreetmap.org/node/8439990161",
+    "source": null
    },
    {
     "id": "fuel:node-13073458651",
@@ -12324,10 +12340,12 @@
     "brand": null,
     "near": "Champhai",
     "km_from_start": 607.8,
+    "off_road_m": 4,
     "lat": 23.47466,
     "lon": 93.31578,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/13073458651"
+    "osm_url": "https://www.openstreetmap.org/node/13073458651",
+    "source": null
    }
   ],
   "pump_count": 9,

@@ -1539,10 +1539,12 @@
     "brand": "Indian Oil",
     "near": "Hampi",
     "km_from_start": 21.3,
+    "off_road_m": 10,
     "lat": 15.28133,
     "lon": 76.41933,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/9925995519"
+    "osm_url": "https://www.openstreetmap.org/node/9925995519",
+    "source": null
    },
    {
     "id": "fuel:node-1153240370",
@@ -1550,10 +1552,12 @@
     "brand": null,
     "near": "Hampi",
     "km_from_start": 24.4,
+    "off_road_m": 10,
     "lat": 15.27389,
     "lon": 76.39158,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/1153240370"
+    "osm_url": "https://www.openstreetmap.org/node/1153240370",
+    "source": null
    },
    {
     "id": "fuel:node-3157767614",
@@ -1561,10 +1565,12 @@
     "brand": null,
     "near": "Hampi",
     "km_from_start": 25.0,
+    "off_road_m": 42,
     "lat": 15.27107,
     "lon": 76.3881,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/3157767614"
+    "osm_url": "https://www.openstreetmap.org/node/3157767614",
+    "source": null
    },
    {
     "id": "fuel:node-3157752537",
@@ -1572,10 +1578,12 @@
     "brand": null,
     "near": "Hampi",
     "km_from_start": 26.5,
+    "off_road_m": 29,
     "lat": 15.26144,
     "lon": 76.37969,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/3157752537"
+    "osm_url": "https://www.openstreetmap.org/node/3157752537",
+    "source": null
    },
    {
     "id": "fuel:way-313450451",
@@ -1583,10 +1591,12 @@
     "brand": null,
     "near": "Hampi",
     "km_from_start": 27.3,
+    "off_road_m": 324,
     "lat": 15.26425,
     "lon": 76.37297,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/way/313450451"
+    "osm_url": "https://www.openstreetmap.org/way/313450451",
+    "source": null
    },
    {
     "id": "fuel:node-2467671211",
@@ -1594,10 +1604,12 @@
     "brand": "TotalEnergies",
     "near": "Hampi",
     "km_from_start": 27.4,
+    "off_road_m": 703,
     "lat": 15.26772,
     "lon": 76.37293,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/2467671211"
+    "osm_url": "https://www.openstreetmap.org/node/2467671211",
+    "source": null
    },
    {
     "id": "fuel:node-3906127697",
@@ -1605,10 +1617,12 @@
     "brand": "Indian Oil",
     "near": "Hampi",
     "km_from_start": 30.3,
+    "off_road_m": 87,
     "lat": 15.26726,
     "lon": 76.34754,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/3906127697"
+    "osm_url": "https://www.openstreetmap.org/node/3906127697",
+    "source": null
    },
    {
     "id": "fuel:node-14114670817",
@@ -1616,10 +1630,12 @@
     "brand": "Indian Oil",
     "near": "Hampi",
     "km_from_start": 36.0,
+    "off_road_m": 57,
     "lat": 15.30443,
     "lon": 76.31886,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/14114670817"
+    "osm_url": "https://www.openstreetmap.org/node/14114670817",
+    "source": null
    },
    {
     "id": "fuel:node-3906085939",
@@ -1627,10 +1643,12 @@
     "brand": "Jio-bp",
     "near": "Hampi",
     "km_from_start": 36.1,
+    "off_road_m": 53,
     "lat": 15.3053,
     "lon": 76.31744,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/3906085939"
+    "osm_url": "https://www.openstreetmap.org/node/3906085939",
+    "source": null
    },
    {
     "id": "fuel:way-1346376008",
@@ -1638,10 +1656,12 @@
     "brand": null,
     "near": "Hampi",
     "km_from_start": 36.8,
+    "off_road_m": 42,
     "lat": 15.31108,
     "lon": 76.31541,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/way/1346376008"
+    "osm_url": "https://www.openstreetmap.org/way/1346376008",
+    "source": null
    },
    {
     "id": "fuel:way-1346376006",
@@ -1649,10 +1669,12 @@
     "brand": "HP",
     "near": "Hampi",
     "km_from_start": 38.0,
+    "off_road_m": 45,
     "lat": 15.31989,
     "lon": 76.31075,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/way/1346376006"
+    "osm_url": "https://www.openstreetmap.org/way/1346376006",
+    "source": null
    },
    {
     "id": "fuel:node-3894530074",
@@ -1660,10 +1682,12 @@
     "brand": "Hindustan Petroleum",
     "near": "Hampi",
     "km_from_start": 44.6,
+    "off_road_m": 79,
     "lat": 15.36858,
     "lon": 76.31485,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/3894530074"
+    "osm_url": "https://www.openstreetmap.org/node/3894530074",
+    "source": null
    },
    {
     "id": "fuel:node-3893682131",
@@ -1671,10 +1695,12 @@
     "brand": null,
     "near": "Hampi",
     "km_from_start": 45.0,
+    "off_road_m": 121,
     "lat": 15.37213,
     "lon": 76.31276,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/3893682131"
+    "osm_url": "https://www.openstreetmap.org/node/3893682131",
+    "source": null
    },
    {
     "id": "fuel:node-3893687772",
@@ -1682,10 +1708,12 @@
     "brand": null,
     "near": "Hampi",
     "km_from_start": 47.6,
+    "off_road_m": 60,
     "lat": 15.39396,
     "lon": 76.30669,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/3893687772"
+    "osm_url": "https://www.openstreetmap.org/node/3893687772",
+    "source": null
    },
    {
     "id": "fuel:node-13389079024",
@@ -1693,10 +1721,12 @@
     "brand": "Indian Oil",
     "near": "Hampi",
     "km_from_start": 51.4,
+    "off_road_m": 77,
     "lat": 15.4271,
     "lon": 76.29956,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/13389079024"
+    "osm_url": "https://www.openstreetmap.org/node/13389079024",
+    "source": null
    },
    {
     "id": "fuel:way-1458079736",
@@ -1704,10 +1734,12 @@
     "brand": "HP",
     "near": "Hampi",
     "km_from_start": 61.3,
+    "off_road_m": 22,
     "lat": 15.50713,
     "lon": 76.2659,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/way/1458079736"
+    "osm_url": "https://www.openstreetmap.org/way/1458079736",
+    "source": null
    },
    {
     "id": "fuel:node-13389079025",
@@ -1715,10 +1747,12 @@
     "brand": null,
     "near": "Hampi",
     "km_from_start": 70.7,
+    "off_road_m": 46,
     "lat": 15.58391,
     "lon": 76.23694,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/13389079025"
+    "osm_url": "https://www.openstreetmap.org/node/13389079025",
+    "source": null
    },
    {
     "id": "fuel:node-14081373259",
@@ -1726,10 +1760,12 @@
     "brand": "Hindustan Petroleum",
     "near": "Hampi",
     "km_from_start": 73.7,
+    "off_road_m": 40,
     "lat": 15.60805,
     "lon": 76.22769,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/14081373259"
+    "osm_url": "https://www.openstreetmap.org/node/14081373259",
+    "source": null
    },
    {
     "id": "fuel:node-13389079026",
@@ -1737,10 +1773,12 @@
     "brand": null,
     "near": "Badami",
     "km_from_start": 84.7,
+    "off_road_m": 42,
     "lat": 15.64644,
     "lon": 76.15269,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/13389079026"
+    "osm_url": "https://www.openstreetmap.org/node/13389079026",
+    "source": null
    },
    {
     "id": "fuel:node-14076403768",
@@ -1748,10 +1786,12 @@
     "brand": "Bharat Petroleum",
     "near": "Badami",
     "km_from_start": 102.7,
+    "off_road_m": 34,
     "lat": 15.73649,
     "lon": 76.04853,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/14076403768"
+    "osm_url": "https://www.openstreetmap.org/node/14076403768",
+    "source": null
    },
    {
     "id": "fuel:node-14076421658",
@@ -1759,10 +1799,12 @@
     "brand": "Nayara",
     "near": "Badami",
     "km_from_start": 103.9,
+    "off_road_m": 40,
     "lat": 15.73638,
     "lon": 76.03803,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/14076421658"
+    "osm_url": "https://www.openstreetmap.org/node/14076421658",
+    "source": null
    },
    {
     "id": "fuel:node-14076356818",
@@ -1770,10 +1812,12 @@
     "brand": "Hindustan Petroleum",
     "near": "Badami",
     "km_from_start": 110.2,
+    "off_road_m": 41,
     "lat": 15.73274,
     "lon": 75.98053,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/14076356818"
+    "osm_url": "https://www.openstreetmap.org/node/14076356818",
+    "source": null
    },
    {
     "id": "fuel:node-14076356860",
@@ -1781,10 +1825,12 @@
     "brand": "Indian Oil",
     "near": "Badami",
     "km_from_start": 110.7,
+    "off_road_m": 39,
     "lat": 15.73143,
     "lon": 75.97684,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/14076356860"
+    "osm_url": "https://www.openstreetmap.org/node/14076356860",
+    "source": null
    },
    {
     "id": "fuel:node-13389079027",
@@ -1792,10 +1838,12 @@
     "brand": "Bharat Petroleum",
     "near": "Badami",
     "km_from_start": 110.8,
+    "off_road_m": 18,
     "lat": 15.73072,
     "lon": 75.97539,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/13389079027"
+    "osm_url": "https://www.openstreetmap.org/node/13389079027",
+    "source": null
    },
    {
     "id": "fuel:node-3862516371",
@@ -1803,10 +1851,12 @@
     "brand": null,
     "near": "Badami",
     "km_from_start": 111.6,
+    "off_road_m": 42,
     "lat": 15.72979,
     "lon": 75.96854,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/3862516371"
+    "osm_url": "https://www.openstreetmap.org/node/3862516371",
+    "source": null
    },
    {
     "id": "fuel:node-13389079028",
@@ -1814,10 +1864,12 @@
     "brand": "Indian Oil",
     "near": "Badami",
     "km_from_start": 112.2,
+    "off_road_m": 12,
     "lat": 15.73287,
     "lon": 75.96389,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/13389079028"
+    "osm_url": "https://www.openstreetmap.org/node/13389079028",
+    "source": null
    },
    {
     "id": "fuel:node-14076356888",
@@ -1825,10 +1877,12 @@
     "brand": "Bharat Petroleum",
     "near": "Badami",
     "km_from_start": 113.9,
+    "off_road_m": 33,
     "lat": 15.73735,
     "lon": 75.94906,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/14076356888"
+    "osm_url": "https://www.openstreetmap.org/node/14076356888",
+    "source": null
    },
    {
     "id": "fuel:node-14076356884",
@@ -1836,10 +1890,12 @@
     "brand": "Indian Oil",
     "near": "Badami",
     "km_from_start": 129.2,
+    "off_road_m": 25,
     "lat": 15.80091,
     "lon": 75.85504,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/14076356884"
+    "osm_url": "https://www.openstreetmap.org/node/14076356884",
+    "source": null
    },
    {
     "id": "fuel:node-13389079029",
@@ -1847,10 +1903,12 @@
     "brand": "Indian Oil",
     "near": "Badami",
     "km_from_start": 129.3,
+    "off_road_m": 16,
     "lat": 15.80131,
     "lon": 75.85401,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/13389079029"
+    "osm_url": "https://www.openstreetmap.org/node/13389079029",
+    "source": null
    },
    {
     "id": "fuel:node-14076356849",
@@ -1858,10 +1916,12 @@
     "brand": "Hindustan Petroleum",
     "near": "Badami",
     "km_from_start": 129.9,
+    "off_road_m": 77,
     "lat": 15.80309,
     "lon": 75.84817,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/14076356849"
+    "osm_url": "https://www.openstreetmap.org/node/14076356849",
+    "source": null
    },
    {
     "id": "fuel:node-5793318459",
@@ -1869,10 +1929,12 @@
     "brand": "Indian Oil",
     "near": "Badami",
     "km_from_start": 144.3,
+    "off_road_m": 48,
     "lat": 15.8612,
     "lon": 75.73919,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/5793318459"
+    "osm_url": "https://www.openstreetmap.org/node/5793318459",
+    "source": null
    },
    {
     "id": "fuel:node-3913878350",
@@ -1880,10 +1942,12 @@
     "brand": "Bharat Petroleum",
     "near": "Badami",
     "km_from_start": 151.4,
+    "off_road_m": 42,
     "lat": 15.89388,
     "lon": 75.6996,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/3913878350"
+    "osm_url": "https://www.openstreetmap.org/node/3913878350",
+    "source": null
    },
    {
     "id": "fuel:node-13389079030",
@@ -1891,10 +1955,12 @@
     "brand": "Indian Oil",
     "near": "Badami",
     "km_from_start": 152.8,
+    "off_road_m": 19,
     "lat": 15.90356,
     "lon": 75.69058,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/13389079030"
+    "osm_url": "https://www.openstreetmap.org/node/13389079030",
+    "source": null
    },
    {
     "id": "fuel:node-14076356891",
@@ -1902,10 +1968,12 @@
     "brand": "Hindustan Petroleum",
     "near": "Badami",
     "km_from_start": 153.6,
+    "off_road_m": 18,
     "lat": 15.90971,
     "lon": 75.68625,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/14076356891"
+    "osm_url": "https://www.openstreetmap.org/node/14076356891",
+    "source": null
    },
    {
     "id": "fuel:node-14074750462",
@@ -1913,10 +1981,12 @@
     "brand": null,
     "near": "Badami",
     "km_from_start": 156.2,
+    "off_road_m": 22,
     "lat": 15.92961,
     "lon": 75.67715,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/14074750462"
+    "osm_url": "https://www.openstreetmap.org/node/14074750462",
+    "source": null
    },
    {
     "id": "fuel:way-1130964983",
@@ -1924,10 +1994,12 @@
     "brand": null,
     "near": "Badami",
     "km_from_start": 157.2,
+    "off_road_m": 26,
     "lat": 15.93793,
     "lon": 75.67576,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/way/1130964983"
+    "osm_url": "https://www.openstreetmap.org/way/1130964983",
+    "source": null
    }
   ],
   "pump_count": 36,

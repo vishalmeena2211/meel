@@ -60,7 +60,7 @@ One file per route, in `routes/`. Parts that are empty are kept as empty lists, 
 | `stretches` | Each leg: distance, and what a map app says it takes | Script |
 | `profile` | Height every few kilometres, for the altitude drawing | Script |
 | `line` | The route on the map | Script |
-| `fuel` | Each pump near the road: name, brand, distance from the start | Script, from open map data |
+| `fuel` | Each pump near the road: name, brand, distance from the start | Script, from open map data; where the map has none in a town, from the oil company's own locator (`pumps_from_companies` in the route's research file), with that page as the pump's source |
 | `fuel_gaps` | The longest stretches with no pump | Script |
 | `rules` | Permits, fees, taxes, rules for motorcycles, each with its history | Research |
 | `season` | Usual window, and what happened each year | Research |
@@ -74,7 +74,7 @@ One file per route, in `routes/`. Parts that are empty are kept as empty lists, 
 
 ## Known weaknesses
 
-- **Fuel pumps come from open map data, which is incomplete in places.** In the North-East especially, a missing pump on the map does not mean a missing pump on the road. Every computed fuel gap is a *worst case* and says so.
+- **Fuel pumps come from open map data, which is incomplete in places.** In the North-East especially, a missing pump on the map does not mean a missing pump on the road. Every computed fuel gap is a *worst case* and says so. On Guwahati to Tawang the map had no pump between Tezpur and Jang, so pumps from IndianOil's own locator were added (read 28 September 2026); other companies' pumps were not.
 - **"What a map app says" is a car on a clear road.** It is recorded so the site can show how wrong it is, once riders report real hours.
 - **Seasonal roads are routed as if open.**
 - **Research was done in one pass.** No fact has been through a second, adversarial check.

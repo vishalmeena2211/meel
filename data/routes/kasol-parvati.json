@@ -941,10 +941,12 @@
     "brand": "Indian Oil",
     "near": "Bhuntar",
     "km_from_start": 1.0,
+    "off_road_m": 17,
     "lat": 31.8905,
     "lon": 77.14901,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/5569194021"
+    "osm_url": "https://www.openstreetmap.org/node/5569194021",
+    "source": null
    },
    {
     "id": "fuel:node-13288407502",
@@ -952,10 +954,12 @@
     "brand": null,
     "near": "Kasol",
     "km_from_start": 23.8,
+    "off_road_m": 2,
     "lat": 32.00331,
     "lon": 77.25517,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/13288407502"
+    "osm_url": "https://www.openstreetmap.org/node/13288407502",
+    "source": null
    }
   ],
   "pump_count": 2,

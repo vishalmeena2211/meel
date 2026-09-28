@@ -67,10 +67,15 @@ export interface Pump {
   brand: string | null;
   near: string | null;
   km_from_start: number;
+  /** How far the pump is from the road line, in metres. */
+  off_road_m?: number | null;
   lat: number;
   lon: number;
   opening_hours: string | null;
-  osm_url: string;
+  /** Its page on the open map. Absent for a pump taken from an oil company's own locator. */
+  osm_url: string | null;
+  /** Where a pump that is not on the open map came from: the oil company's own locator. */
+  source?: Source | null;
 }
 
 export interface FuelGap {

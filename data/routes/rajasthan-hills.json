@@ -3921,10 +3921,12 @@
     "brand": null,
     "near": "Udaipur",
     "km_from_start": 1.6,
+    "off_road_m": 12,
     "lat": 24.59069,
     "lon": 73.68971,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/2595261673"
+    "osm_url": "https://www.openstreetmap.org/node/2595261673",
+    "source": null
    },
    {
     "id": "fuel:node-7017910395",
@@ -3932,10 +3934,12 @@
     "brand": "Indian Oil",
     "near": "Udaipur",
     "km_from_start": 1.7,
+    "off_road_m": 219,
     "lat": 24.59062,
     "lon": 73.69204,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/7017910395"
+    "osm_url": "https://www.openstreetmap.org/node/7017910395",
+    "source": null
    },
    {
     "id": "fuel:node-10880997845",
@@ -3943,10 +3947,12 @@
     "brand": "Hindustan Petroleum",
     "near": "Udaipur",
     "km_from_start": 1.7,
+    "off_road_m": 483,
     "lat": 24.5904,
     "lon": 73.69467,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/10880997845"
+    "osm_url": "https://www.openstreetmap.org/node/10880997845",
+    "source": null
    },
    {
     "id": "fuel:node-2591733397",
@@ -3954,10 +3960,12 @@
     "brand": "Indian Oil",
     "near": "Udaipur",
     "km_from_start": 2.4,
+    "off_road_m": 147,
     "lat": 24.59749,
     "lon": 73.69324,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/2591733397"
+    "osm_url": "https://www.openstreetmap.org/node/2591733397",
+    "source": null
    },
    {
     "id": "fuel:node-3776199889",
@@ -3965,10 +3973,12 @@
     "brand": "Nayara",
     "near": "Udaipur",
     "km_from_start": 3.5,
+    "off_road_m": 14,
     "lat": 24.60646,
     "lon": 73.69005,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/3776199889"
+    "osm_url": "https://www.openstreetmap.org/node/3776199889",
+    "source": null
    },
    {
     "id": "fuel:node-7244856025",
@@ -3976,10 +3986,12 @@
     "brand": null,
     "near": "Udaipur",
     "km_from_start": 4.7,
+    "off_road_m": 1,
     "lat": 24.60726,
     "lon": 73.69859,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/7244856025"
+    "osm_url": "https://www.openstreetmap.org/node/7244856025",
+    "source": null
    },
    {
     "id": "fuel:node-7244850849",
@@ -3987,10 +3999,12 @@
     "brand": null,
     "near": "Udaipur",
     "km_from_start": 8.8,
+    "off_road_m": 20,
     "lat": 24.63901,
     "lon": 73.71587,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/7244850849"
+    "osm_url": "https://www.openstreetmap.org/node/7244850849",
+    "source": null
    },
    {
     "id": "fuel:node-2595261645",
@@ -3998,10 +4012,12 @@
     "brand": null,
     "near": "Kumbhalgarh",
     "km_from_start": 128.9,
+    "off_road_m": 160,
     "lat": 24.95285,
     "lon": 73.41594,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/2595261645"
+    "osm_url": "https://www.openstreetmap.org/node/2595261645",
+    "source": null
    },
    {
     "id": "fuel:node-12398117860",
@@ -4009,10 +4025,12 @@
     "brand": "Nayara",
     "near": "Kumbhalgarh",
     "km_from_start": 133.5,
+    "off_road_m": 56,
     "lat": 24.91974,
     "lon": 73.40591,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/12398117860"
+    "osm_url": "https://www.openstreetmap.org/node/12398117860",
+    "source": null
    },
    {
     "id": "fuel:node-8813282757",
@@ -4020,10 +4038,12 @@
     "brand": null,
     "near": "Kumbhalgarh",
     "km_from_start": 227.7,
+    "off_road_m": 285,
     "lat": 24.65858,
     "lon": 72.92885,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/8813282757"
+    "osm_url": "https://www.openstreetmap.org/node/8813282757",
+    "source": null
    },
    {
     "id": "fuel:way-955364044",
@@ -4031,10 +4051,12 @@
     "brand": null,
     "near": "Kumbhalgarh",
     "km_from_start": 227.7,
+    "off_road_m": 285,
     "lat": 24.65863,
     "lon": 72.92887,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/way/955364044"
+    "osm_url": "https://www.openstreetmap.org/way/955364044",
+    "source": null
    },
    {
     "id": "fuel:node-6053701991",
@@ -4042,10 +4064,12 @@
     "brand": null,
     "near": "Kumbhalgarh",
     "km_from_start": 236.0,
+    "off_road_m": 60,
     "lat": 24.59888,
     "lon": 72.88532,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/6053701991"
+    "osm_url": "https://www.openstreetmap.org/node/6053701991",
+    "source": null
    },
    {
     "id": "fuel:node-6084626487",
@@ -4053,10 +4077,12 @@
     "brand": null,
     "near": "Kumbhalgarh",
     "km_from_start": 240.3,
+    "off_road_m": 50,
     "lat": 24.56734,
     "lon": 72.85967,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/6084626487"
+    "osm_url": "https://www.openstreetmap.org/node/6084626487",
+    "source": null
    },
    {
     "id": "fuel:node-5498162088",
@@ -4064,10 +4090,12 @@
     "brand": null,
     "near": "Ranakpur",
     "km_from_start": 371.3,
+    "off_road_m": 36,
     "lat": 24.10037,
     "lon": 71.93742,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/5498162088"
+    "osm_url": "https://www.openstreetmap.org/node/5498162088",
+    "source": null
    }
   ],
   "pump_count": 14,

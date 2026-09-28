@@ -5898,10 +5898,12 @@
     "brand": null,
     "near": "Manali",
     "km_from_start": 0.0,
+    "off_road_m": 644,
     "lat": 32.23956,
     "lon": 77.18829,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/856402274"
+    "osm_url": "https://www.openstreetmap.org/node/856402274",
+    "source": null
    },
    {
     "id": "fuel:node-795826239",
@@ -5909,10 +5911,12 @@
     "brand": "Indian Oil",
     "near": "Manali",
     "km_from_start": 1.8,
+    "off_road_m": 12,
     "lat": 32.25837,
     "lon": 77.188,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/795826239"
+    "osm_url": "https://www.openstreetmap.org/node/795826239",
+    "source": null
    },
    {
     "id": "fuel:node-4135407790",
@@ -5920,10 +5924,12 @@
     "brand": "Hindustan Petroleum",
     "near": "Manali",
     "km_from_start": 3.4,
+    "off_road_m": 15,
     "lat": 32.27137,
     "lon": 77.18106,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/4135407790"
+    "osm_url": "https://www.openstreetmap.org/node/4135407790",
+    "source": null
    },
    {
     "id": "fuel:node-299659791",
@@ -5931,10 +5937,12 @@
     "brand": "Indian Oil",
     "near": "Tandi",
     "km_from_start": 61.1,
+    "off_road_m": 12,
     "lat": 32.54545,
     "lon": 76.97422,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/299659791"
+    "osm_url": "https://www.openstreetmap.org/node/299659791",
+    "source": null
    },
    {
     "id": "fuel:node-9888976528",
@@ -5942,10 +5950,12 @@
     "brand": null,
     "near": "Keylong",
     "km_from_start": 72.5,
+    "off_road_m": 7,
     "lat": 32.57376,
     "lon": 77.01834,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/9888976528"
+    "osm_url": "https://www.openstreetmap.org/node/9888976528",
+    "source": null
    },
    {
     "id": "fuel:way-233526495",
@@ -5953,10 +5963,12 @@
     "brand": "Indian Oil",
     "near": "Karu",
     "km_from_start": 401.8,
+    "off_road_m": 41,
     "lat": 33.94603,
     "lon": 77.72718,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/way/233526495"
+    "osm_url": "https://www.openstreetmap.org/way/233526495",
+    "source": null
    },
    {
     "id": "fuel:node-299707818",
@@ -5964,10 +5976,12 @@
     "brand": "Indian Oil",
     "near": "Leh",
     "km_from_start": 427.7,
+    "off_road_m": 35,
     "lat": 34.11706,
     "lon": 77.58883,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/299707818"
+    "osm_url": "https://www.openstreetmap.org/node/299707818",
+    "source": null
    },
    {
     "id": "fuel:node-3702776638",
@@ -5975,10 +5989,12 @@
     "brand": null,
     "near": "Leh",
     "km_from_start": 430.5,
+    "off_road_m": 45,
     "lat": 34.14181,
     "lon": 77.5853,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/3702776638"
+    "osm_url": "https://www.openstreetmap.org/node/3702776638",
+    "source": null
    },
    {
     "id": "fuel:node-299707352",
@@ -5986,10 +6002,12 @@
     "brand": "Indian Oil",
     "near": "Leh",
     "km_from_start": 432.1,
+    "off_road_m": 25,
     "lat": 34.15228,
     "lon": 77.57703,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/299707352"
+    "osm_url": "https://www.openstreetmap.org/node/299707352",
+    "source": null
    },
    {
     "id": "fuel:way-1212069710",
@@ -5997,10 +6015,12 @@
     "brand": null,
     "near": "Leh",
     "km_from_start": 434.1,
+    "off_road_m": 757,
     "lat": 34.16939,
     "lon": 77.58933,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/way/1212069710"
+    "osm_url": "https://www.openstreetmap.org/way/1212069710",
+    "source": null
    }
   ],
   "pump_count": 10,

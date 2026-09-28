@@ -1964,10 +1964,12 @@
     "brand": null,
     "near": "Raipur",
     "km_from_start": 0.2,
+    "off_road_m": 651,
     "lat": 21.24376,
     "lon": 81.63636,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/4445102207"
+    "osm_url": "https://www.openstreetmap.org/node/4445102207",
+    "source": null
    },
    {
     "id": "fuel:node-4445087639",
@@ -1975,10 +1977,12 @@
     "brand": null,
     "near": "Raipur",
     "km_from_start": 1.1,
+    "off_road_m": 12,
     "lat": 21.23138,
     "lon": 81.64002,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/4445087639"
+    "osm_url": "https://www.openstreetmap.org/node/4445087639",
+    "source": null
    },
    {
     "id": "fuel:way-1360654227",
@@ -1986,10 +1990,12 @@
     "brand": "Indian Oil",
     "near": "Raipur",
     "km_from_start": 2.2,
+    "off_road_m": 26,
     "lat": 21.22397,
     "lon": 81.6438,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/way/1360654227"
+    "osm_url": "https://www.openstreetmap.org/way/1360654227",
+    "source": null
    },
    {
     "id": "fuel:node-14183164981",
@@ -1997,10 +2003,12 @@
     "brand": null,
     "near": "Raipur",
     "km_from_start": 22.6,
+    "off_road_m": 40,
     "lat": 21.08126,
     "lon": 81.75216,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/14183164981"
+    "osm_url": "https://www.openstreetmap.org/node/14183164981",
+    "source": null
    },
    {
     "id": "fuel:node-14183164982",
@@ -2008,10 +2016,12 @@
     "brand": null,
     "near": "Raipur",
     "km_from_start": 22.8,
+    "off_road_m": 45,
     "lat": 21.07905,
     "lon": 81.75206,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/14183164982"
+    "osm_url": "https://www.openstreetmap.org/node/14183164982",
+    "source": null
    },
    {
     "id": "fuel:node-8115416797",
@@ -2019,10 +2029,12 @@
     "brand": null,
     "near": "Kanker",
     "km_from_start": 112.5,
+    "off_road_m": 35,
     "lat": 20.47425,
     "lon": 81.37646,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/8115416797"
+    "osm_url": "https://www.openstreetmap.org/node/8115416797",
+    "source": null
    },
    {
     "id": "fuel:way-871209598",
@@ -2030,10 +2042,12 @@
     "brand": null,
     "near": "Kanker",
     "km_from_start": 112.5,
+    "off_road_m": 45,
     "lat": 20.47417,
     "lon": 81.37639,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/way/871209598"
+    "osm_url": "https://www.openstreetmap.org/way/871209598",
+    "source": null
    },
    {
     "id": "fuel:node-8499141818",
@@ -2041,10 +2055,12 @@
     "brand": null,
     "near": "Kanker",
     "km_from_start": 139.0,
+    "off_road_m": 108,
     "lat": 20.26987,
     "lon": 81.49217,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/8499141818"
+    "osm_url": "https://www.openstreetmap.org/node/8499141818",
+    "source": null
    },
    {
     "id": "fuel:node-13243374686",
@@ -2052,10 +2068,12 @@
     "brand": null,
     "near": "Kanker",
     "km_from_start": 145.7,
+    "off_road_m": 41,
     "lat": 20.22472,
     "lon": 81.51223,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/13243374686"
+    "osm_url": "https://www.openstreetmap.org/node/13243374686",
+    "source": null
    },
    {
     "id": "fuel:node-13201425785",
@@ -2063,10 +2081,12 @@
     "brand": null,
     "near": "Keshkal",
     "km_from_start": 222.8,
+    "off_road_m": 57,
     "lat": 19.61478,
     "lon": 81.66598,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/13201425785"
+    "osm_url": "https://www.openstreetmap.org/node/13201425785",
+    "source": null
    },
    {
     "id": "fuel:node-13201425783",
@@ -2074,10 +2094,12 @@
     "brand": null,
     "near": "Keshkal",
     "km_from_start": 228.3,
+    "off_road_m": 28,
     "lat": 19.56958,
     "lon": 81.67069,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/13201425783"
+    "osm_url": "https://www.openstreetmap.org/node/13201425783",
+    "source": null
    },
    {
     "id": "fuel:node-13201425784",
@@ -2085,10 +2107,12 @@
     "brand": null,
     "near": "Keshkal",
     "km_from_start": 229.5,
+    "off_road_m": 57,
     "lat": 19.56019,
     "lon": 81.67714,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/13201425784"
+    "osm_url": "https://www.openstreetmap.org/node/13201425784",
+    "source": null
    }
   ],
   "pump_count": 12,

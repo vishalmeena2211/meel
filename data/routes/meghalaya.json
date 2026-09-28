@@ -5739,10 +5739,12 @@
     "brand": null,
     "near": "Guwahati",
     "km_from_start": 0.0,
+    "off_road_m": 531,
     "lat": 26.18543,
     "lon": 91.7539,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/1578252832"
+    "osm_url": "https://www.openstreetmap.org/node/1578252832",
+    "source": null
    },
    {
     "id": "fuel:node-13511642002",
@@ -5750,10 +5752,12 @@
     "brand": "Indian Oil",
     "near": "Guwahati",
     "km_from_start": 0.0,
+    "off_road_m": 807,
     "lat": 26.1851,
     "lon": 91.76037,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/13511642002"
+    "osm_url": "https://www.openstreetmap.org/node/13511642002",
+    "source": null
    },
    {
     "id": "fuel:node-13512607813",
@@ -5761,10 +5765,12 @@
     "brand": "Indian Oil",
     "near": "Guwahati",
     "km_from_start": 0.0,
+    "off_road_m": 516,
     "lat": 26.1853,
     "lon": 91.7539,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/13512607813"
+    "osm_url": "https://www.openstreetmap.org/node/13512607813",
+    "source": null
    },
    {
     "id": "fuel:node-13516794569",
@@ -5772,10 +5778,12 @@
     "brand": "Indian Oil",
     "near": "Guwahati",
     "km_from_start": 0.0,
+    "off_road_m": 503,
     "lat": 26.18519,
     "lon": 91.75405,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/13516794569"
+    "osm_url": "https://www.openstreetmap.org/node/13516794569",
+    "source": null
    },
    {
     "id": "fuel:node-11934276960",
@@ -5783,10 +5791,12 @@
     "brand": "Indian Oil",
     "near": "Guwahati",
     "km_from_start": 0.3,
+    "off_road_m": 663,
     "lat": 26.18056,
     "lon": 91.74687,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/11934276960"
+    "osm_url": "https://www.openstreetmap.org/node/11934276960",
+    "source": null
    },
    {
     "id": "fuel:node-11942695747",
@@ -5794,10 +5804,12 @@
     "brand": null,
     "near": "Guwahati",
     "km_from_start": 0.5,
+    "off_road_m": 13,
     "lat": 26.17703,
     "lon": 91.75423,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/11942695747"
+    "osm_url": "https://www.openstreetmap.org/node/11942695747",
+    "source": null
    },
    {
     "id": "fuel:node-11933530082",
@@ -5805,10 +5817,12 @@
     "brand": null,
     "near": "Guwahati",
     "km_from_start": 0.6,
+    "off_road_m": 28,
     "lat": 26.17676,
     "lon": 91.7553,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/11933530082"
+    "osm_url": "https://www.openstreetmap.org/node/11933530082",
+    "source": null
    },
    {
     "id": "fuel:node-13511648588",
@@ -5816,10 +5830,12 @@
     "brand": null,
     "near": "Guwahati",
     "km_from_start": 1.5,
+    "off_road_m": 15,
     "lat": 26.17138,
     "lon": 91.76182,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/13511648588"
+    "osm_url": "https://www.openstreetmap.org/node/13511648588",
+    "source": null
    },
    {
     "id": "fuel:node-11393290969",
@@ -5827,10 +5843,12 @@
     "brand": null,
     "near": "Guwahati",
     "km_from_start": 1.7,
+    "off_road_m": 16,
     "lat": 26.1702,
     "lon": 91.76313,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/11393290969"
+    "osm_url": "https://www.openstreetmap.org/node/11393290969",
+    "source": null
    },
    {
     "id": "fuel:node-13511365107",
@@ -5838,10 +5856,12 @@
     "brand": "Indian Oil",
     "near": "Guwahati",
     "km_from_start": 1.7,
+    "off_road_m": 4,
     "lat": 26.17024,
     "lon": 91.76291,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/13511365107"
+    "osm_url": "https://www.openstreetmap.org/node/13511365107",
+    "source": null
    },
    {
     "id": "fuel:node-13516600023",
@@ -5849,10 +5869,12 @@
     "brand": "Hindustan Petroleum",
     "near": "Guwahati",
     "km_from_start": 1.9,
+    "off_road_m": 19,
     "lat": 26.16881,
     "lon": 91.76417,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/13516600023"
+    "osm_url": "https://www.openstreetmap.org/node/13516600023",
+    "source": null
    },
    {
     "id": "fuel:node-12976374616",
@@ -5860,10 +5882,12 @@
     "brand": null,
     "near": "Guwahati",
     "km_from_start": 2.1,
+    "off_road_m": 975,
     "lat": 26.17394,
     "lon": 91.77254,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/12976374616"
+    "osm_url": "https://www.openstreetmap.org/node/12976374616",
+    "source": null
    },
    {
     "id": "fuel:node-13516615164",
@@ -5871,10 +5895,12 @@
     "brand": "Indian Oil",
     "near": "Guwahati",
     "km_from_start": 2.9,
+    "off_road_m": 9,
     "lat": 26.16303,
     "lon": 91.77069,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/13516615164"
+    "osm_url": "https://www.openstreetmap.org/node/13516615164",
+    "source": null
    },
    {
     "id": "fuel:node-6132425491",
@@ -5882,10 +5908,12 @@
     "brand": "Indian Oil",
     "near": "Guwahati",
     "km_from_start": 3.6,
+    "off_road_m": 653,
     "lat": 26.16255,
     "lon": 91.78057,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/6132425491"
+    "osm_url": "https://www.openstreetmap.org/node/6132425491",
+    "source": null
    },
    {
     "id": "fuel:node-13506189523",
@@ -5893,10 +5921,12 @@
     "brand": null,
     "near": "Guwahati",
     "km_from_start": 4.0,
+    "off_road_m": 472,
     "lat": 26.15905,
     "lon": 91.78188,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/13506189523"
+    "osm_url": "https://www.openstreetmap.org/node/13506189523",
+    "source": null
    },
    {
     "id": "fuel:node-6168644664",
@@ -5904,10 +5934,12 @@
     "brand": null,
     "near": "Guwahati",
     "km_from_start": 4.8,
+    "off_road_m": 15,
     "lat": 26.15096,
     "lon": 91.78436,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/6168644664"
+    "osm_url": "https://www.openstreetmap.org/node/6168644664",
+    "source": null
    },
    {
     "id": "fuel:node-11393514569",
@@ -5915,10 +5947,12 @@
     "brand": null,
     "near": "Guwahati",
     "km_from_start": 5.5,
+    "off_road_m": 9,
     "lat": 26.14676,
     "lon": 91.7888,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/11393514569"
+    "osm_url": "https://www.openstreetmap.org/node/11393514569",
+    "source": null
    },
    {
     "id": "fuel:node-4905329371",
@@ -5926,10 +5960,12 @@
     "brand": "Indian Oil",
     "near": "Guwahati",
     "km_from_start": 7.3,
+    "off_road_m": 32,
     "lat": 26.1361,
     "lon": 91.80187,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/4905329371"
+    "osm_url": "https://www.openstreetmap.org/node/4905329371",
+    "source": null
    },
    {
     "id": "fuel:way-289681591",
@@ -5937,10 +5973,12 @@
     "brand": null,
     "near": "Guwahati",
     "km_from_start": 8.2,
+    "off_road_m": 333,
     "lat": 26.1289,
     "lon": 91.80639,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/way/289681591"
+    "osm_url": "https://www.openstreetmap.org/way/289681591",
+    "source": null
    },
    {
     "id": "fuel:node-4905437995",
@@ -5948,10 +5986,12 @@
     "brand": "Indian Oil",
     "near": "Guwahati",
     "km_from_start": 12.5,
+    "off_road_m": 45,
     "lat": 26.11055,
     "lon": 91.84024,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/4905437995"
+    "osm_url": "https://www.openstreetmap.org/node/4905437995",
+    "source": null
    },
    {
     "id": "fuel:node-4905431922",
@@ -5959,10 +5999,12 @@
     "brand": "Indian Oil",
     "near": "Guwahati",
     "km_from_start": 14.2,
+    "off_road_m": 23,
     "lat": 26.10589,
     "lon": 91.85471,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/4905431922"
+    "osm_url": "https://www.openstreetmap.org/node/4905431922",
+    "source": null
    },
    {
     "id": "fuel:node-13371568901",
@@ -5970,10 +6012,12 @@
     "brand": null,
     "near": "Guwahati",
     "km_from_start": 28.0,
+    "off_road_m": 40,
     "lat": 26.01239,
     "lon": 91.86575,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/13371568901"
+    "osm_url": "https://www.openstreetmap.org/node/13371568901",
+    "source": null
    },
    {
     "id": "fuel:node-4871899047",
@@ -5981,10 +6025,12 @@
     "brand": null,
     "near": "Guwahati",
     "km_from_start": 43.6,
+    "off_road_m": 44,
     "lat": 25.91804,
     "lon": 91.87725,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/4871899047"
+    "osm_url": "https://www.openstreetmap.org/node/4871899047",
+    "source": null
    },
    {
     "id": "fuel:node-11744696788",
@@ -5992,10 +6038,12 @@
     "brand": null,
     "near": "Shillong",
     "km_from_start": 86.0,
+    "off_road_m": 45,
     "lat": 25.63932,
     "lon": 91.89216,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/11744696788"
+    "osm_url": "https://www.openstreetmap.org/node/11744696788",
+    "source": null
    },
    {
     "id": "fuel:node-11744691117",
@@ -6003,10 +6051,12 @@
     "brand": null,
     "near": "Shillong",
     "km_from_start": 86.4,
+    "off_road_m": 25,
     "lat": 25.63724,
     "lon": 91.89324,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/11744691117"
+    "osm_url": "https://www.openstreetmap.org/node/11744691117",
+    "source": null
    },
    {
     "id": "fuel:node-11744703827",
@@ -6014,10 +6064,12 @@
     "brand": null,
     "near": "Shillong",
     "km_from_start": 86.6,
+    "off_road_m": 45,
     "lat": 25.63542,
     "lon": 91.89239,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/11744703827"
+    "osm_url": "https://www.openstreetmap.org/node/11744703827",
+    "source": null
    },
    {
     "id": "fuel:node-11758174546",
@@ -6025,10 +6077,12 @@
     "brand": null,
     "near": "Shillong",
     "km_from_start": 87.9,
+    "off_road_m": 24,
     "lat": 25.62634,
     "lon": 91.88599,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/11758174546"
+    "osm_url": "https://www.openstreetmap.org/node/11758174546",
+    "source": null
    },
    {
     "id": "fuel:node-6959992082",
@@ -6036,10 +6090,12 @@
     "brand": null,
     "near": "Shillong",
     "km_from_start": 92.8,
+    "off_road_m": 3,
     "lat": 25.59188,
     "lon": 91.87334,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/6959992082"
+    "osm_url": "https://www.openstreetmap.org/node/6959992082",
+    "source": null
    },
    {
     "id": "fuel:node-11747475337",
@@ -6047,10 +6103,12 @@
     "brand": null,
     "near": "Shillong",
     "km_from_start": 93.7,
+    "off_road_m": 1,
     "lat": 25.58604,
     "lon": 91.8724,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/11747475337"
+    "osm_url": "https://www.openstreetmap.org/node/11747475337",
+    "source": null
    },
    {
     "id": "fuel:node-1429695985",
@@ -6058,10 +6116,12 @@
     "brand": null,
     "near": "Shillong",
     "km_from_start": 96.1,
+    "off_road_m": 7,
     "lat": 25.57189,
     "lon": 91.87679,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/1429695985"
+    "osm_url": "https://www.openstreetmap.org/node/1429695985",
+    "source": null
    },
    {
     "id": "fuel:node-2854434377",
@@ -6069,10 +6129,12 @@
     "brand": null,
     "near": "Shillong",
     "km_from_start": 98.1,
+    "off_road_m": 246,
     "lat": 25.57817,
     "lon": 91.88381,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/2854434377"
+    "osm_url": "https://www.openstreetmap.org/node/2854434377",
+    "source": null
    },
    {
     "id": "fuel:node-1366451651",
@@ -6080,10 +6142,12 @@
     "brand": null,
     "near": "Shillong",
     "km_from_start": 99.0,
+    "off_road_m": 580,
     "lat": 25.5665,
     "lon": 91.88953,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/1366451651"
+    "osm_url": "https://www.openstreetmap.org/node/1366451651",
+    "source": null
    },
    {
     "id": "fuel:way-122522987",
@@ -6091,10 +6155,12 @@
     "brand": null,
     "near": "Shillong",
     "km_from_start": 99.0,
+    "off_road_m": 720,
     "lat": 25.56621,
     "lon": 91.89154,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/way/122522987"
+    "osm_url": "https://www.openstreetmap.org/way/122522987",
+    "source": null
    },
    {
     "id": "fuel:node-1365562981",
@@ -6102,10 +6168,12 @@
     "brand": "Indian Oil",
     "near": "Shillong",
     "km_from_start": 99.6,
+    "off_road_m": 362,
     "lat": 25.5657,
     "lon": 91.88657,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/1365562981"
+    "osm_url": "https://www.openstreetmap.org/node/1365562981",
+    "source": null
    },
    {
     "id": "fuel:node-11752773939",
@@ -6113,10 +6181,12 @@
     "brand": null,
     "near": "Shillong",
     "km_from_start": 105.6,
+    "off_road_m": 39,
     "lat": 25.55406,
     "lon": 91.8456,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/11752773939"
+    "osm_url": "https://www.openstreetmap.org/node/11752773939",
+    "source": null
    },
    {
     "id": "fuel:node-11752719698",
@@ -6124,10 +6194,12 @@
     "brand": null,
     "near": "Shillong",
     "km_from_start": 112.3,
+    "off_road_m": 46,
     "lat": 25.51041,
     "lon": 91.8121,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/11752719698"
+    "osm_url": "https://www.openstreetmap.org/node/11752719698",
+    "source": null
    },
    {
     "id": "fuel:node-11752744338",
@@ -6135,10 +6207,12 @@
     "brand": null,
     "near": "Shillong",
     "km_from_start": 116.3,
+    "off_road_m": 43,
     "lat": 25.48125,
     "lon": 91.81939,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/11752744338"
+    "osm_url": "https://www.openstreetmap.org/node/11752744338",
+    "source": null
    },
    {
     "id": "fuel:node-3701091175",
@@ -6146,10 +6220,12 @@
     "brand": null,
     "near": "Cherrapunji",
     "km_from_start": 149.3,
+    "off_road_m": 725,
     "lat": 25.27194,
     "lon": 91.73252,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/3701091175"
+    "osm_url": "https://www.openstreetmap.org/node/3701091175",
+    "source": null
    },
    {
     "id": "fuel:node-11752778000",
@@ -6157,10 +6233,12 @@
     "brand": null,
     "near": "Cherrapunji",
     "km_from_start": 168.1,
+    "off_road_m": 28,
     "lat": 25.40026,
     "lon": 91.77052,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/11752778000"
+    "osm_url": "https://www.openstreetmap.org/node/11752778000",
+    "source": null
    },
    {
     "id": "fuel:node-11758296612",
@@ -6168,10 +6246,12 @@
     "brand": null,
     "near": "Dawki",
     "km_from_start": 265.4,
+    "off_road_m": 38,
     "lat": 25.22225,
     "lon": 91.96402,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/11758296612"
+    "osm_url": "https://www.openstreetmap.org/node/11758296612",
+    "source": null
    },
    {
     "id": "fuel:node-11758300264",
@@ -6179,10 +6259,12 @@
     "brand": null,
     "near": "Dawki",
     "km_from_start": 284.8,
+    "off_road_m": 22,
     "lat": 25.32109,
     "lon": 91.89021,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/11758300264"
+    "osm_url": "https://www.openstreetmap.org/node/11758300264",
+    "source": null
    }
   ],
   "pump_count": 41,

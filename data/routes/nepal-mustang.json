@@ -6256,10 +6256,12 @@
     "brand": null,
     "near": "Sunauli",
     "km_from_start": 1.2,
+    "off_road_m": 31,
     "lat": 27.4795,
     "lon": 83.46714,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/9809042469"
+    "osm_url": "https://www.openstreetmap.org/node/9809042469",
+    "source": null
    },
    {
     "id": "fuel:node-9812687395",
@@ -6267,10 +6269,12 @@
     "brand": null,
     "near": "Sunauli",
     "km_from_start": 5.3,
+    "off_road_m": 42,
     "lat": 27.5126,
     "lon": 83.45464,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/9812687395"
+    "osm_url": "https://www.openstreetmap.org/node/9812687395",
+    "source": null
    },
    {
     "id": "fuel:node-9805533803",
@@ -6278,10 +6282,12 @@
     "brand": null,
     "near": "Sunauli",
     "km_from_start": 5.6,
+    "off_road_m": 81,
     "lat": 27.5145,
     "lon": 83.45276,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/9805533803"
+    "osm_url": "https://www.openstreetmap.org/node/9805533803",
+    "source": null
    },
    {
     "id": "fuel:node-9803807127",
@@ -6289,10 +6295,12 @@
     "brand": null,
     "near": "Sunauli",
     "km_from_start": 5.8,
+    "off_road_m": 728,
     "lat": 27.51828,
     "lon": 83.44619,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/9803807127"
+    "osm_url": "https://www.openstreetmap.org/node/9803807127",
+    "source": null
    },
    {
     "id": "fuel:node-9804007896",
@@ -6300,10 +6308,12 @@
     "brand": null,
     "near": "Sunauli",
     "km_from_start": 5.8,
+    "off_road_m": 728,
     "lat": 27.51828,
     "lon": 83.44619,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/9804007896"
+    "osm_url": "https://www.openstreetmap.org/node/9804007896",
+    "source": null
    },
    {
     "id": "fuel:node-9804007899",
@@ -6311,10 +6321,12 @@
     "brand": null,
     "near": "Sunauli",
     "km_from_start": 5.8,
+    "off_road_m": 750,
     "lat": 27.51822,
     "lon": 83.44595,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/9804007899"
+    "osm_url": "https://www.openstreetmap.org/node/9804007899",
+    "source": null
    },
    {
     "id": "fuel:node-4520759990",
@@ -6322,10 +6334,12 @@
     "brand": null,
     "near": "Sunauli",
     "km_from_start": 5.9,
+    "off_road_m": 151,
     "lat": 27.51767,
     "lon": 83.45205,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/4520759990"
+    "osm_url": "https://www.openstreetmap.org/node/4520759990",
+    "source": null
    },
    {
     "id": "fuel:node-5300595425",
@@ -6333,10 +6347,12 @@
     "brand": null,
     "near": "Sunauli",
     "km_from_start": 5.9,
+    "off_road_m": 252,
     "lat": 27.51783,
     "lon": 83.45104,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/5300595425"
+    "osm_url": "https://www.openstreetmap.org/node/5300595425",
+    "source": null
    },
    {
     "id": "fuel:node-4520983295",
@@ -6344,10 +6360,12 @@
     "brand": null,
     "near": "Sunauli",
     "km_from_start": 6.3,
+    "off_road_m": 30,
     "lat": 27.52052,
     "lon": 83.45475,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/4520983295"
+    "osm_url": "https://www.openstreetmap.org/node/4520983295",
+    "source": null
    },
    {
     "id": "fuel:node-9808568303",
@@ -6355,10 +6373,12 @@
     "brand": null,
     "near": "Sunauli",
     "km_from_start": 6.8,
+    "off_road_m": 36,
     "lat": 27.52462,
     "lon": 83.45522,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/9808568303"
+    "osm_url": "https://www.openstreetmap.org/node/9808568303",
+    "source": null
    },
    {
     "id": "fuel:node-4730082989",
@@ -6366,10 +6386,12 @@
     "brand": null,
     "near": "Sunauli",
     "km_from_start": 7.0,
+    "off_road_m": 36,
     "lat": 27.52684,
     "lon": 83.45585,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/4730082989"
+    "osm_url": "https://www.openstreetmap.org/node/4730082989",
+    "source": null
    },
    {
     "id": "fuel:node-4147031715",
@@ -6377,10 +6399,12 @@
     "brand": null,
     "near": "Sunauli",
     "km_from_start": 8.3,
+    "off_road_m": 9,
     "lat": 27.53778,
     "lon": 83.45922,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/4147031715"
+    "osm_url": "https://www.openstreetmap.org/node/4147031715",
+    "source": null
    },
    {
     "id": "fuel:node-5300595238",
@@ -6388,10 +6412,12 @@
     "brand": null,
     "near": "Sunauli",
     "km_from_start": 11.0,
+    "off_road_m": 627,
     "lat": 27.56067,
     "lon": 83.46624,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/5300595238"
+    "osm_url": "https://www.openstreetmap.org/node/5300595238",
+    "source": null
    },
    {
     "id": "fuel:node-4146976968",
@@ -6399,10 +6425,12 @@
     "brand": null,
     "near": "Butwal",
     "km_from_start": 15.5,
+    "off_road_m": 920,
     "lat": 27.59707,
     "lon": 83.47272,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/4146976968"
+    "osm_url": "https://www.openstreetmap.org/node/4146976968",
+    "source": null
    },
    {
     "id": "fuel:node-9688304797",
@@ -6410,10 +6438,12 @@
     "brand": null,
     "near": "Butwal",
     "km_from_start": 15.6,
+    "off_road_m": 918,
     "lat": 27.59805,
     "lon": 83.47284,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/9688304797"
+    "osm_url": "https://www.openstreetmap.org/node/9688304797",
+    "source": null
    },
    {
     "id": "fuel:node-9685438543",
@@ -6421,10 +6451,12 @@
     "brand": null,
     "near": "Butwal",
     "km_from_start": 15.9,
+    "off_road_m": 893,
     "lat": 27.6009,
     "lon": 83.473,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/9685438543"
+    "osm_url": "https://www.openstreetmap.org/node/9685438543",
+    "source": null
    },
    {
     "id": "fuel:node-4146976969",
@@ -6432,10 +6464,12 @@
     "brand": null,
     "near": "Butwal",
     "km_from_start": 16.4,
+    "off_road_m": 851,
     "lat": 27.60476,
     "lon": 83.47314,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/4146976969"
+    "osm_url": "https://www.openstreetmap.org/node/4146976969",
+    "source": null
    },
    {
     "id": "fuel:node-9688357646",
@@ -6443,10 +6477,12 @@
     "brand": null,
     "near": "Butwal",
     "km_from_start": 16.4,
+    "off_road_m": 901,
     "lat": 27.60484,
     "lon": 83.47366,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/9688357646"
+    "osm_url": "https://www.openstreetmap.org/node/9688357646",
+    "source": null
    },
    {
     "id": "fuel:node-4147031665",
@@ -6454,10 +6490,12 @@
     "brand": null,
     "near": "Butwal",
     "km_from_start": 16.8,
+    "off_road_m": 854,
     "lat": 27.60817,
     "lon": 83.47366,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/4147031665"
+    "osm_url": "https://www.openstreetmap.org/node/4147031665",
+    "source": null
    },
    {
     "id": "fuel:node-9692029572",
@@ -6465,10 +6503,12 @@
     "brand": null,
     "near": "Butwal",
     "km_from_start": 18.1,
+    "off_road_m": 734,
     "lat": 27.61999,
     "lon": 83.47416,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/9692029572"
+    "osm_url": "https://www.openstreetmap.org/node/9692029572",
+    "source": null
    },
    {
     "id": "fuel:node-9692011078",
@@ -6476,10 +6516,12 @@
     "brand": null,
     "near": "Butwal",
     "km_from_start": 18.6,
+    "off_road_m": 708,
     "lat": 27.624,
     "lon": 83.47439,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/9692011078"
+    "osm_url": "https://www.openstreetmap.org/node/9692011078",
+    "source": null
    },
    {
     "id": "fuel:node-10172103285",
@@ -6487,10 +6529,12 @@
     "brand": null,
     "near": "Butwal",
     "km_from_start": 20.6,
+    "off_road_m": 41,
     "lat": 27.6393,
     "lon": 83.47077,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/10172103285"
+    "osm_url": "https://www.openstreetmap.org/node/10172103285",
+    "source": null
    },
    {
     "id": "fuel:node-4562951089",
@@ -6498,10 +6542,12 @@
     "brand": null,
     "near": "Butwal",
     "km_from_start": 24.1,
+    "off_road_m": 13,
     "lat": 27.66932,
     "lon": 83.46456,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/4562951089"
+    "osm_url": "https://www.openstreetmap.org/node/4562951089",
+    "source": null
    },
    {
     "id": "fuel:node-4339823097",
@@ -6509,10 +6555,12 @@
     "brand": null,
     "near": "Butwal",
     "km_from_start": 26.0,
+    "off_road_m": 696,
     "lat": 27.68589,
     "lon": 83.47203,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/4339823097"
+    "osm_url": "https://www.openstreetmap.org/node/4339823097",
+    "source": null
    },
    {
     "id": "fuel:node-5045575723",
@@ -6520,10 +6568,12 @@
     "brand": null,
     "near": "Butwal",
     "km_from_start": 100.0,
+    "off_road_m": 49,
     "lat": 27.93226,
     "lon": 83.66836,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/5045575723"
+    "osm_url": "https://www.openstreetmap.org/node/5045575723",
+    "source": null
    },
    {
     "id": "fuel:node-5045581522",
@@ -6531,10 +6581,12 @@
     "brand": null,
     "near": "Butwal",
     "km_from_start": 102.1,
+    "off_road_m": 13,
     "lat": 27.94123,
     "lon": 83.67161,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/5045581522"
+    "osm_url": "https://www.openstreetmap.org/node/5045581522",
+    "source": null
    },
    {
     "id": "fuel:node-2469730998",
@@ -6542,10 +6594,12 @@
     "brand": null,
     "near": "Pokhara",
     "km_from_start": 120.1,
+    "off_road_m": 7,
     "lat": 27.9848,
     "lon": 83.7635,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/2469730998"
+    "osm_url": "https://www.openstreetmap.org/node/2469730998",
+    "source": null
    },
    {
     "id": "fuel:node-10067984133",
@@ -6553,10 +6607,12 @@
     "brand": null,
     "near": "Pokhara",
     "km_from_start": 129.4,
+    "off_road_m": 41,
     "lat": 28.03848,
     "lon": 83.789,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/10067984133"
+    "osm_url": "https://www.openstreetmap.org/node/10067984133",
+    "source": null
    },
    {
     "id": "fuel:node-3492601745",
@@ -6564,10 +6620,12 @@
     "brand": null,
     "near": "Pokhara",
     "km_from_start": 155.0,
+    "off_road_m": 18,
     "lat": 28.13571,
     "lon": 83.86067,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/3492601745"
+    "osm_url": "https://www.openstreetmap.org/node/3492601745",
+    "source": null
    },
    {
     "id": "fuel:node-4196839717",
@@ -6575,10 +6633,12 @@
     "brand": null,
     "near": "Pokhara",
     "km_from_start": 178.2,
+    "off_road_m": 18,
     "lat": 28.19106,
     "lon": 83.95549,
     "opening_hours": "Su-Sa 7:00-19:30",
-    "osm_url": "https://www.openstreetmap.org/node/4196839717"
+    "osm_url": "https://www.openstreetmap.org/node/4196839717",
+    "source": null
    },
    {
     "id": "fuel:node-4196839721",
@@ -6586,10 +6646,12 @@
     "brand": null,
     "near": "Pokhara",
     "km_from_start": 179.7,
+    "off_road_m": 14,
     "lat": 28.19161,
     "lon": 83.96898,
     "opening_hours": "6:00-20:00",
-    "osm_url": "https://www.openstreetmap.org/node/4196839721"
+    "osm_url": "https://www.openstreetmap.org/node/4196839721",
+    "source": null
    },
    {
     "id": "fuel:node-4196839715",
@@ -6597,10 +6659,12 @@
     "brand": null,
     "near": "Pokhara",
     "km_from_start": 180.2,
+    "off_road_m": 17,
     "lat": 28.19338,
     "lon": 83.97265,
     "opening_hours": "Su-Sa 6:30-20:00",
-    "osm_url": "https://www.openstreetmap.org/node/4196839715"
+    "osm_url": "https://www.openstreetmap.org/node/4196839715",
+    "source": null
    },
    {
     "id": "fuel:node-4196839722",
@@ -6608,10 +6672,12 @@
     "brand": null,
     "near": "Pokhara",
     "km_from_start": 182.1,
+    "off_road_m": 15,
     "lat": 28.20656,
     "lon": 83.98356,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/4196839722"
+    "osm_url": "https://www.openstreetmap.org/node/4196839722",
+    "source": null
    },
    {
     "id": "fuel:node-4196839720",
@@ -6619,10 +6685,12 @@
     "brand": null,
     "near": "Pokhara",
     "km_from_start": 182.3,
+    "off_road_m": 14,
     "lat": 28.20819,
     "lon": 83.98428,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/4196839720"
+    "osm_url": "https://www.openstreetmap.org/node/4196839720",
+    "source": null
    },
    {
     "id": "fuel:node-4061489855",
@@ -6630,10 +6698,12 @@
     "brand": "National Trading Limited",
     "near": "Pokhara",
     "km_from_start": 183.0,
+    "off_road_m": 61,
     "lat": 28.2088,
     "lon": 83.98907,
     "opening_hours": "08:00-17:00",
-    "osm_url": "https://www.openstreetmap.org/node/4061489855"
+    "osm_url": "https://www.openstreetmap.org/node/4061489855",
+    "source": null
    },
    {
     "id": "fuel:node-4180305491",
@@ -6641,10 +6711,12 @@
     "brand": null,
     "near": "Pokhara",
     "km_from_start": 183.0,
+    "off_road_m": 285,
     "lat": 28.20701,
     "lon": 83.99195,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/4180305491"
+    "osm_url": "https://www.openstreetmap.org/node/4180305491",
+    "source": null
    },
    {
     "id": "fuel:node-4225164789",
@@ -6652,10 +6724,12 @@
     "brand": null,
     "near": "Pokhara",
     "km_from_start": 183.1,
+    "off_road_m": 596,
     "lat": 28.20592,
     "lon": 83.995,
     "opening_hours": "sunrise-sunset",
-    "osm_url": "https://www.openstreetmap.org/node/4225164789"
+    "osm_url": "https://www.openstreetmap.org/node/4225164789",
+    "source": null
    },
    {
     "id": "fuel:node-4172777604",
@@ -6663,10 +6737,12 @@
     "brand": null,
     "near": "Pokhara",
     "km_from_start": 183.2,
+    "off_road_m": 647,
     "lat": 28.20621,
     "lon": 83.99591,
     "opening_hours": "sunrise-sunset",
-    "osm_url": "https://www.openstreetmap.org/node/4172777604"
+    "osm_url": "https://www.openstreetmap.org/node/4172777604",
+    "source": null
    },
    {
     "id": "fuel:node-4196839718",
@@ -6674,10 +6750,12 @@
     "brand": null,
     "near": "Pokhara",
     "km_from_start": 183.2,
+    "off_road_m": 653,
     "lat": 28.21558,
     "lon": 83.98906,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/4196839718"
+    "osm_url": "https://www.openstreetmap.org/node/4196839718",
+    "source": null
    },
    {
     "id": "fuel:node-4178426277",
@@ -6685,10 +6763,12 @@
     "brand": null,
     "near": "Pokhara",
     "km_from_start": 183.7,
+    "off_road_m": 24,
     "lat": 28.20847,
     "lon": 83.98745,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/4178426277"
+    "osm_url": "https://www.openstreetmap.org/node/4178426277",
+    "source": null
    },
    {
     "id": "fuel:node-3808120883",
@@ -6696,10 +6776,12 @@
     "brand": null,
     "near": "Pokhara",
     "km_from_start": 185.0,
+    "off_road_m": 462,
     "lat": 28.21311,
     "lon": 83.97079,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/3808120883"
+    "osm_url": "https://www.openstreetmap.org/node/3808120883",
+    "source": null
    },
    {
     "id": "fuel:node-4255908142",
@@ -6707,10 +6789,12 @@
     "brand": null,
     "near": "Pokhara",
     "km_from_start": 185.1,
+    "off_road_m": 1,
     "lat": 28.21386,
     "lon": 83.97573,
     "opening_hours": "sunrise-sunset",
-    "osm_url": "https://www.openstreetmap.org/node/4255908142"
+    "osm_url": "https://www.openstreetmap.org/node/4255908142",
+    "source": null
    },
    {
     "id": "fuel:way-419437276",
@@ -6718,10 +6802,12 @@
     "brand": "Armed Police Force (APF)",
     "near": "Pokhara",
     "km_from_start": 185.7,
+    "off_road_m": 32,
     "lat": 28.21869,
     "lon": 83.97764,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/way/419437276"
+    "osm_url": "https://www.openstreetmap.org/way/419437276",
+    "source": null
    },
    {
     "id": "fuel:way-417146468",
@@ -6729,10 +6815,12 @@
     "brand": null,
     "near": "Pokhara",
     "km_from_start": 186.0,
+    "off_road_m": 25,
     "lat": 28.22159,
     "lon": 83.97798,
     "opening_hours": "Mo-Su 06:00-22:00",
-    "osm_url": "https://www.openstreetmap.org/way/417146468"
+    "osm_url": "https://www.openstreetmap.org/way/417146468",
+    "source": null
    },
    {
     "id": "fuel:node-4184923271",
@@ -6740,10 +6828,12 @@
     "brand": null,
     "near": "Pokhara",
     "km_from_start": 187.0,
+    "off_road_m": 16,
     "lat": 28.22947,
     "lon": 83.98189,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/4184923271"
+    "osm_url": "https://www.openstreetmap.org/node/4184923271",
+    "source": null
    },
    {
     "id": "fuel:node-1350136297",
@@ -6751,10 +6841,12 @@
     "brand": null,
     "near": "Pokhara",
     "km_from_start": 187.8,
+    "off_road_m": 32,
     "lat": 28.23624,
     "lon": 83.98343,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/1350136297"
+    "osm_url": "https://www.openstreetmap.org/node/1350136297",
+    "source": null
    },
    {
     "id": "fuel:node-6108193897",
@@ -6762,10 +6854,12 @@
     "brand": null,
     "near": "Pokhara",
     "km_from_start": 187.8,
+    "off_road_m": 38,
     "lat": 28.23624,
     "lon": 83.98349,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/6108193897"
+    "osm_url": "https://www.openstreetmap.org/node/6108193897",
+    "source": null
    },
    {
     "id": "fuel:node-5552007317",
@@ -6773,10 +6867,12 @@
     "brand": "private",
     "near": "Pokhara",
     "km_from_start": 188.2,
+    "off_road_m": 0,
     "lat": 28.23951,
     "lon": 83.98362,
     "opening_hours": "10:00 - 16:00",
-    "osm_url": "https://www.openstreetmap.org/node/5552007317"
+    "osm_url": "https://www.openstreetmap.org/node/5552007317",
+    "source": null
    },
    {
     "id": "fuel:node-4196788262",
@@ -6784,10 +6880,12 @@
     "brand": null,
     "near": "Pokhara",
     "km_from_start": 188.6,
+    "off_road_m": 5,
     "lat": 28.24299,
     "lon": 83.98412,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/4196788262"
+    "osm_url": "https://www.openstreetmap.org/node/4196788262",
+    "source": null
    },
    {
     "id": "fuel:node-4196839723",
@@ -6795,10 +6893,12 @@
     "brand": null,
     "near": "Pokhara",
     "km_from_start": 189.0,
+    "off_road_m": 9,
     "lat": 28.24523,
     "lon": 83.98084,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/4196839723"
+    "osm_url": "https://www.openstreetmap.org/node/4196839723",
+    "source": null
    },
    {
     "id": "fuel:way-427953438",
@@ -6806,10 +6906,12 @@
     "brand": null,
     "near": "Pokhara",
     "km_from_start": 192.9,
+    "off_road_m": 33,
     "lat": 28.26711,
     "lon": 83.95354,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/way/427953438"
+    "osm_url": "https://www.openstreetmap.org/way/427953438",
+    "source": null
    },
    {
     "id": "fuel:way-233077966",
@@ -6817,10 +6919,12 @@
     "brand": null,
     "near": "Pokhara",
     "km_from_start": 194.2,
+    "off_road_m": 15,
     "lat": 28.27275,
     "lon": 83.94351,
     "opening_hours": "sunrise-sunset",
-    "osm_url": "https://www.openstreetmap.org/way/233077966"
+    "osm_url": "https://www.openstreetmap.org/way/233077966",
+    "source": null
    },
    {
     "id": "fuel:way-549693720",
@@ -6828,10 +6932,12 @@
     "brand": null,
     "near": "Pokhara",
     "km_from_start": 195.0,
+    "off_road_m": 50,
     "lat": 28.27718,
     "lon": 83.93801,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/way/549693720"
+    "osm_url": "https://www.openstreetmap.org/way/549693720",
+    "source": null
    },
    {
     "id": "fuel:node-6105947986",
@@ -6839,10 +6945,12 @@
     "brand": null,
     "near": "Beni",
     "km_from_start": 227.6,
+    "off_road_m": 2,
     "lat": 28.29492,
     "lon": 83.76581,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/6105947986"
+    "osm_url": "https://www.openstreetmap.org/node/6105947986",
+    "source": null
    },
    {
     "id": "fuel:node-7409522485",
@@ -6850,10 +6958,12 @@
     "brand": null,
     "near": "Beni",
     "km_from_start": 236.8,
+    "off_road_m": 25,
     "lat": 28.24152,
     "lon": 83.713,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/7409522485"
+    "osm_url": "https://www.openstreetmap.org/node/7409522485",
+    "source": null
    },
    {
     "id": "fuel:way-1152576175",
@@ -6861,10 +6971,12 @@
     "brand": null,
     "near": "Beni",
     "km_from_start": 250.2,
+    "off_road_m": 43,
     "lat": 28.24713,
     "lon": 83.63256,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/way/1152576175"
+    "osm_url": "https://www.openstreetmap.org/way/1152576175",
+    "source": null
    },
    {
     "id": "fuel:node-10068290135",
@@ -6872,10 +6984,12 @@
     "brand": null,
     "near": "Jomsom",
     "km_from_start": 318.7,
+    "off_road_m": 12,
     "lat": 28.60226,
     "lon": 83.64312,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/10068290135"
+    "osm_url": "https://www.openstreetmap.org/node/10068290135",
+    "source": null
    }
   ],
   "pump_count": 57,

@@ -260,10 +260,15 @@ def build(r):
             if re.search(r"restaurant|garden|hotel|dhaba|[가-힣]", label, re.I):
                 continue
             near = min(waypoints, key=lambda w: abs(w["km_from_start"] - p["km_from_start"])) if waypoints else None
-            pumps.append({"id": "fuel:" + p["osm"].replace("/", "-"), "name": label, "brand": tidy(p["brand"]) if p.get("brand") else None,
-                          "near": near["name"] if near else None, "km_from_start": p["km_from_start"],
+            # A pump from the open map, or one from an oil company's own locator, which carries its source.
+            company = p.get("osm") is None
+            pumps.append({"id": "fuel:" + (p["company_id"] if company else p["osm"].replace("/", "-")), "name": label,
+                          "brand": tidy(p["brand"]) if p.get("brand") else None,
+                          "near": (p.get("town") or (near["name"] if near else None)) if company else (near["name"] if near else None),
+                          "km_from_start": p["km_from_start"], "off_road_m": p.get("off_road_m"),
                           "lat": p["lat"], "lon": p["lon"], "opening_hours": p.get("opening_hours"),
-                          "osm_url": "https://www.openstreetmap.org/" + p["osm"]})
+                          "osm_url": None if company else "https://www.openstreetmap.org/" + p["osm"],
+                          "source": clean_source(p.get("source")) if company else None})
         # Listed pumps are counted after the ones that are not pumps are dropped, so the count matches the list.
         fuel = {"listed": bool(pumps), "pumps": pumps, "pump_count": len(pumps) if pumps else fu.get("pump_count", 0),
                 "stops": fu.get("stops", 0), "longest_gaps": fu.get("longest_gaps", []),

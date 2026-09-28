@@ -6871,10 +6871,12 @@
     "brand": "Indian Oil",
     "near": "Rishikesh",
     "km_from_start": 0.0,
+    "off_road_m": 716,
     "lat": 30.10236,
     "lon": 78.29267,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/3810076825"
+    "osm_url": "https://www.openstreetmap.org/node/3810076825",
+    "source": null
    },
    {
     "id": "fuel:node-3869767161",
@@ -6882,10 +6884,12 @@
     "brand": "Indian Oil",
     "near": "Rishikesh",
     "km_from_start": 0.0,
+    "off_road_m": 716,
     "lat": 30.10236,
     "lon": 78.29266,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/3869767161"
+    "osm_url": "https://www.openstreetmap.org/node/3869767161",
+    "source": null
    },
    {
     "id": "fuel:node-3810078049",
@@ -6893,10 +6897,12 @@
     "brand": "Bharat Petroleum",
     "near": "Rishikesh",
     "km_from_start": 1.2,
+    "off_road_m": 2,
     "lat": 30.10746,
     "lon": 78.29981,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/3810078049"
+    "osm_url": "https://www.openstreetmap.org/node/3810078049",
+    "source": null
    },
    {
     "id": "fuel:node-3824372942",
@@ -6904,10 +6910,12 @@
     "brand": "Indian Oil",
     "near": "Rishikesh",
     "km_from_start": 1.2,
+    "off_road_m": 1,
     "lat": 30.10768,
     "lon": 78.30028,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/3824372942"
+    "osm_url": "https://www.openstreetmap.org/node/3824372942",
+    "source": null
    },
    {
     "id": "fuel:way-630557579",
@@ -6915,10 +6923,12 @@
     "brand": "Indian Oil",
     "near": "Rishikesh",
     "km_from_start": 1.8,
+    "off_road_m": 19,
     "lat": 30.11199,
     "lon": 78.30274,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/way/630557579"
+    "osm_url": "https://www.openstreetmap.org/way/630557579",
+    "source": null
    },
    {
     "id": "fuel:way-630557584",
@@ -6926,10 +6936,12 @@
     "brand": "Hindustan Petroleum",
     "near": "Rishikesh",
     "km_from_start": 1.8,
+    "off_road_m": 22,
     "lat": 30.11152,
     "lon": 78.30267,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/way/630557584"
+    "osm_url": "https://www.openstreetmap.org/way/630557584",
+    "source": null
    },
    {
     "id": "fuel:node-12030751387",
@@ -6937,10 +6949,12 @@
     "brand": "Hindustan Petroleum",
     "near": "Rishikesh",
     "km_from_start": 1.9,
+    "off_road_m": 27,
     "lat": 30.11243,
     "lon": 78.30268,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/12030751387"
+    "osm_url": "https://www.openstreetmap.org/node/12030751387",
+    "source": null
    },
    {
     "id": "fuel:way-630557577",
@@ -6948,10 +6962,12 @@
     "brand": "Hindustan Petroleum",
     "near": "Rishikesh",
     "km_from_start": 1.9,
+    "off_road_m": 23,
     "lat": 30.11245,
     "lon": 78.30273,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/way/630557577"
+    "osm_url": "https://www.openstreetmap.org/way/630557577",
+    "source": null
    },
    {
     "id": "fuel:node-3810077667",
@@ -6959,10 +6975,12 @@
     "brand": "Indian Oil",
     "near": "Rishikesh",
     "km_from_start": 4.1,
+    "off_road_m": 13,
     "lat": 30.12599,
     "lon": 78.31625,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/3810077667"
+    "osm_url": "https://www.openstreetmap.org/node/3810077667",
+    "source": null
    },
    {
     "id": "fuel:node-3869765723",
@@ -6970,10 +6988,12 @@
     "brand": "Indian Oil",
     "near": "Rishikesh",
     "km_from_start": 15.1,
+    "off_road_m": 14,
     "lat": 30.13228,
     "lon": 78.38558,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/3869765723"
+    "osm_url": "https://www.openstreetmap.org/node/3869765723",
+    "source": null
    },
    {
     "id": "fuel:node-12049302324",
@@ -6981,10 +7001,12 @@
     "brand": null,
     "near": "Devprayag",
     "km_from_start": 54.8,
+    "off_road_m": 47,
     "lat": 30.08444,
     "lon": 78.57507,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/12049302324"
+    "osm_url": "https://www.openstreetmap.org/node/12049302324",
+    "source": null
    },
    {
     "id": "fuel:node-9364668467",
@@ -6992,10 +7014,12 @@
     "brand": null,
     "near": "Devprayag",
     "km_from_start": 64.6,
+    "off_road_m": 20,
     "lat": 30.1252,
     "lon": 78.59048,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/9364668467"
+    "osm_url": "https://www.openstreetmap.org/node/9364668467",
+    "source": null
    },
    {
     "id": "fuel:node-9364650012",
@@ -7003,10 +7027,12 @@
     "brand": null,
     "near": "Devprayag",
     "km_from_start": 87.7,
+    "off_road_m": 27,
     "lat": 30.22591,
     "lon": 78.67838,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/9364650012"
+    "osm_url": "https://www.openstreetmap.org/node/9364650012",
+    "source": null
    },
    {
     "id": "fuel:node-12049281398",
@@ -7014,10 +7040,12 @@
     "brand": null,
     "near": "Devprayag",
     "km_from_start": 95.3,
+    "off_road_m": 30,
     "lat": 30.23078,
     "lon": 78.72509,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/12049281398"
+    "osm_url": "https://www.openstreetmap.org/node/12049281398",
+    "source": null
    },
    {
     "id": "fuel:node-9364665065",
@@ -7025,10 +7053,12 @@
     "brand": null,
     "near": "Devprayag",
     "km_from_start": 95.4,
+    "off_road_m": 37,
     "lat": 30.23037,
     "lon": 78.72553,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/9364665065"
+    "osm_url": "https://www.openstreetmap.org/node/9364665065",
+    "source": null
    },
    {
     "id": "fuel:node-6574740114",
@@ -7036,10 +7066,12 @@
     "brand": null,
     "near": "Devprayag",
     "km_from_start": 107.3,
+    "off_road_m": 2,
     "lat": 30.22767,
     "lon": 78.82243,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/6574740114"
+    "osm_url": "https://www.openstreetmap.org/node/6574740114",
+    "source": null
    },
    {
     "id": "fuel:node-12049318496",
@@ -7047,10 +7079,12 @@
     "brand": "Indian Oil",
     "near": "Rudraprayag",
     "km_from_start": 131.7,
+    "off_road_m": 7,
     "lat": 30.2676,
     "lon": 78.94802,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/12049318496"
+    "osm_url": "https://www.openstreetmap.org/node/12049318496",
+    "source": null
    },
    {
     "id": "fuel:node-12595986328",
@@ -7058,10 +7092,12 @@
     "brand": null,
     "near": "Gopeshwar",
     "km_from_start": 358.8,
+    "off_road_m": 11,
     "lat": 30.40848,
     "lon": 79.31947,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/12595986328"
+    "osm_url": "https://www.openstreetmap.org/node/12595986328",
+    "source": null
    }
   ],
   "pump_count": 18,

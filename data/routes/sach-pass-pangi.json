@@ -5963,10 +5963,12 @@
     "brand": "Thakur Fuel Station",
     "near": "Chamba",
     "km_from_start": 24.0,
+    "off_road_m": 40,
     "lat": 32.46369,
     "lon": 76.47798,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/716314061"
+    "osm_url": "https://www.openstreetmap.org/node/716314061",
+    "source": null
    },
    {
     "id": "fuel:node-10224645808",
@@ -5974,10 +5976,12 @@
     "brand": null,
     "near": "Tissa",
     "km_from_start": 75.2,
+    "off_road_m": 12,
     "lat": 32.54928,
     "lon": 76.13324,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/10224645808"
+    "osm_url": "https://www.openstreetmap.org/node/10224645808",
+    "source": null
    },
    {
     "id": "fuel:node-716376700",
@@ -5985,10 +5989,12 @@
     "brand": "Indian Oil",
     "near": "Tissa",
     "km_from_start": 76.9,
+    "off_road_m": 382,
     "lat": 32.55775,
     "lon": 76.11819,
     "opening_hours": null,
-    "osm_url": "https://www.openstreetmap.org/node/716376700"
+    "osm_url": "https://www.openstreetmap.org/node/716376700",
+    "source": null
    }
   ],
   "pump_count": 3,

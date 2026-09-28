@@ -286,14 +286,18 @@ export function factViews(route: Route, confirmations: Confirmation[], kinds: Fa
               : `${km(p.km_from_start)} from ${start}`;
         const brand = p.brand && p.brand !== p.name ? `${p.brand}. ` : "";
         const hours = p.opening_hours ? ` Hours on the map: ${p.opening_hours}.` : "";
+        // A pump in a town can sit off the road. Past half a kilometre, that is said.
+        const off = p.off_road_m && p.off_road_m >= 500 ? `, ${km(p.off_road_m / 1000)} off the road` : "";
+        // A pump from the oil company's own locator names it; every other pump is from the open map.
+        const fromCompany = p.source ?? null;
         return make({
           id: p.id,
           section: "fuel",
           title: `${p.name}${p.near ? `, near ${p.near}` : ""}`,
-          short: `${brand}${where}.`,
-          long: `${brand}${where}.${hours}`,
-          source: {
-            url: p.osm_url,
+          short: `${brand}${where}${off}.`,
+          long: `${brand}${where}${off}.${hours}`,
+          source: fromCompany ?? {
+            url: p.osm_url ?? "https://www.openstreetmap.org/copyright",
             title: "OpenStreetMap",
             kind: "map",
             opened: true,
@@ -302,8 +306,9 @@ export function factViews(route: Route, confirmations: Confirmation[], kinds: Fa
           },
           verb: "Confirmed working",
           noun: "pump",
-          unchecked:
-            "No rider and no editor has confirmed this pump. It is on the map, which is not the same as being open.",
+          unchecked: fromCompany
+            ? "No rider and no editor has confirmed this pump. It is on the oil company's own list, which is not the same as being open."
+            : "No rider and no editor has confirmed this pump. It is on the map, which is not the same as being open.",
           choices: "pump",
           question: "is still working?",
         });
