@@ -1,5 +1,7 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "buildCommand": "if [ \"$VERCEL_ENV\" = \"production\" ]; then pnpm db:deploy; fi && pnpm build",
-  "regions": ["bom1"]
+  "regions": [
+    "sin1"
+  ]
 }
