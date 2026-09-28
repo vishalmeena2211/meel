@@ -224,7 +224,7 @@ dropdb meel_scratch
 ## Not built yet
 
 - [ ] Resetting a forgotten password by a link in an email. Until then the editor sets a one-time password by hand.
-- [ ] Saving a whole route for use with no network.
+- [ ] Saving a route for no network is built ("Save for the road"), but has not yet been tried on a real phone somewhere with no signal.
 - [ ] Logging in with a phone number.
 - [ ] Changing the words of a fact from the editor's inbox. The words live in `../data` and need a rebuild.
 - [ ] Automatic tests. Everything so far was checked by hand, and by a browser script run once on a scratch database.
