@@ -115,6 +115,11 @@ button { font: inherit; color: inherit; }
 .btn-soft { background: var(--sign-soft); color: var(--sign); border-color: var(--sign-line); }
 .btn-disabled { background: var(--surface-2); color: var(--rule); border-color: var(--border); }
 .btn-block { width: 100%; }
+/* Google asks that its button stay white with its own mark. It is never recoloured to Meel's green. */
+.btn-google { background: var(--surface); color: var(--ink); border-color: var(--border); }
+.btn-google svg, .gm svg { width: 18px; height: 18px; flex: none; display: block; }
+.or { display: flex; align-items: center; gap: 10px; font-size: 12px; color: var(--ink-2); }
+.or::before, .or::after { content: ''; flex: 1; border-top: 1px solid var(--border); }
 .link { color: var(--sign); font-weight: 600; text-decoration: underline; text-underline-offset: 2px; }
 .input { height: 44px; border: 1px solid var(--border); border-radius: 8px; padding: 0 12px; display: flex; align-items: center; gap: 8px; color: var(--ink-2); background: var(--surface); }
 .input svg { width: 16px; height: 16px; stroke: var(--ink-2); flex: none; }
@@ -480,6 +485,10 @@ const head = (title, sub, { back = true, right = '' } = {}) =>
 const body = (html) => `<div class="pbody"><div class="pscroll">${html}</div></div>`;
 const phone = (cap, inner, time = '4:26') => `<figure class="pw"><div class="phone">${statusBar(time)}${inner}</div><figcaption>${cap}</figcaption></figure>`;
 const chev = ICON.right;
+// Google's own mark in Google's colours. Used only beside the words "Google", as Google asks.
+const GMARK = `<svg viewBox="0 0 48 48" aria-hidden="true"><path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"/><path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"/><path fill="#FBBC05" d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z"/><path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"/></svg>`;
+const google = (words = 'Continue with Google') => `<span class="btn btn-google btn-block" style="height:46px">${GMARK}${words}</span>`;
+const or = (words = 'or') => `<div class="or">${words}</div>`;
 
 const STATE = {
   fresh: ['Fresh', 'b-fresh'], ageing: ['Ageing', 'b-ageing'], stale: ['Stale', 'b-stale'],
@@ -1490,12 +1499,16 @@ Name: Rahul N.</span><span class="send">${ICON.send}</span></div>
           <div class="check ok">${ICON.check}<span>Your email is never shown to anyone</span></div>
           <div class="check ok">${ICON.check}<span>Reading routes and sending reports stay open to all</span></div>
         </div>
+        ${google()}
+        ${or('or with your email')}
         <span class="btn btn-primary btn-block" style="height:46px">Create an account</span>
         <span class="btn btn-outline btn-block" style="height:46px">I already have one</span>
       </div>`)
     + phone('2. Creating an account', `
       ${head('Create an account', 'Takes about a minute')}
       ${body(`
+        ${google()}
+        ${or('or with your email')}
         <div class="field"><label>Your name</label><div class="input filled">Rahul Negi</div><span class="hint">Shown as “Rahul N.”</span></div>
         <div class="field"><label>Email</label><div class="input filled">rahul@example.com</div><span class="hint">For logging in. Never shown.</span></div>
         <div class="field"><label>Password</label><div class="input filled">••••••••••••</div><span class="hint">At least 10 characters</span></div>
@@ -1506,16 +1519,29 @@ Name: Rahul N.</span><span class="send">${ICON.send}</span></div>
     + phone('3. Logging in, and getting it wrong', `
       ${head('Log in', 'Meel')}
       ${body(`
+        ${google()}
+        ${or('or with your email')}
         <div class="callout" style="background:var(--stale-bg);border-color:color-mix(in srgb, var(--stale-fg) 30%, var(--surface))"><b>That email and password do not match</b>Check both and try again. After 5 tries the account rests for 15 minutes.</div>
         <div class="field"><label>Email</label><div class="input filled">rahul@example.com</div></div>
         <div class="field"><label>Password</label><div class="input filled focus">••••••••</div></div>
         <span class="link">I have forgotten my password</span>
         <div class="callout"><b>New here?</b><span class="link">Create an account</span></div>`)}
-      <div class="pfoot"><span class="btn btn-primary btn-block">Log in</span></div>`),
+      <div class="pfoot"><span class="btn btn-primary btn-block">Log in</span></div>`)
+    + phone('4. The first time with Google', `
+      ${head('Nearly done', 'Meel')}
+      ${body(`
+        <div class="callout info"><b>Google gave Meel your name and email</b>Nothing else. Meel still needs what Google does not know.</div>
+        <div class="field"><label>Your name</label><div class="input filled">Rahul Negi</div><span class="hint">From Google. Shown as “Rahul N.” Change it if you like.</span></div>
+        <div class="field"><label>Email</label><div class="input filled" style="background:var(--surface-2)">rahul@example.com</div><span class="hint">Checked by Google. For logging in. Never shown.</span></div>
+        <div class="field"><label>Home city</label><div class="input focus">City you ride from</div></div>
+        <div class="field"><label>Your bike <em>optional</em></label><div class="input">Bike</div></div>
+        <div class="row" style="border:0;padding:0;align-items:flex-start"><span class="box" style="margin-top:2px"></span><span class="grow"><b style="font-weight:500">I am 18 or older, and I have read the <span class="link">rules for riding together</span></b></span></div>`)}
+      <div class="pfoot"><span class="btn btn-primary btn-block">Finish</span></div>`),
     notes: [
-      ['Layout', ['The account is never asked for at the door. It is asked for at the first action that needs one, with the reason.', 'Every field says who will see it.', 'The error does not say which of the two was wrong. That would tell a stranger which emails have accounts.']],
+      ['Layout', ['The account is never asked for at the door. It is asked for at the first action that needs one, with the reason.', '“Continue with Google” comes first. It needs no password and takes one tap. An email and a password stay, for riders who would rather not use Google.', 'Every field says who will see it.', 'The error does not say which of the two was wrong. That would tell a stranger which emails have accounts.']],
+      ['Google', ['Meel asks Google for a name and an email that Google has checked. Nothing else: no contacts, no pictures, no files.', 'The first time, frame 4 asks for what Google does not know: home city, bike, and the rules. Until it is finished the rider can read everything, but cannot join or post a trip.', 'If the email already has a Meel account made with a password, Google takes over that account. See “A password”, frame 5.']],
       ['What needs an account, and what does not', ['Needs one: asking to join a trip, posting a trip, answering requests.', 'Does not: reading any route, the fuel check, the altitude check, the packing list, confirming a fact, sending a trip report.', 'A rider who is logged in gets their name on their reports without typing it.']],
-      ['Behaviour', ['Passwords are stored scrambled, never as typed.', 'Five wrong tries rests the account for 15 minutes.', 'Logging in lasts 30 days on that phone.']],
+      ['Behaviour', ['Passwords are stored scrambled, never as typed.', 'Five wrong tries rests the account for 15 minutes.', 'Logging in lasts 30 days on that phone, whichever way the rider came in.']],
       ['Not built yet', ['“I have forgotten my password” needs a service that sends email. The first build shows the link and explains that resetting is done by writing to the editor.', 'Logging in with a phone number and a texted code is what most Indian riders expect. It needs a paid texting service. Proposed for later.'], 'q'],
     ],
   },
@@ -1610,13 +1636,30 @@ Name: Rahul N.</span><span class="send">${ICON.send}</span></div>
           </div>
           <div class="field"><label>Type your password to go ahead</label><div class="input">Password</div></div>
           <div class="pfoot" style="border:0;padding:0"><div class="btns"><span class="btn btn-outline">Keep my account</span><span class="btn" style="background:var(--danger);color:var(--surface)">Delete account</span></div></div>
+        </div>`)
+      + phone('4. Deleting an account that logs in with Google', `
+        ${head('Your account', 'Rahul N.', { back: false, right: `<span class="av">RN</span>` })}
+        ${body(`
+          <div class="rows"><div class="row"><span class="grow"><b>Rahul N.</b><span class="hint">Delhi · Royal Enfield Classic 350</span></span><span class="link">Change</span></div></div>
+          <div class="keys"><div><span>Trips</span><b>1</b></div><div><span>Facts confirmed</span><b>2</b></div><div><span>Trip reports</span><b>0</b></div></div>`)}
+        <div class="sheet-scrim"></div>
+        <div class="sheet"><span class="grab"></span>
+          <h3>Delete Rahul N.’s account?</h3>
+          <p>This cannot be undone.</p>
+          <div class="checks">
+            <div class="check ok">${ICON.check}<span>Your name, email, city and bike are removed</span></div>
+            <div class="check ok">${ICON.check}<span>Meel forgets your Google account. Your Google account itself is not touched.</span></div>
+            <div class="check wait">${ICON.clock}<span>The 2 facts you confirmed stay, shown as “confirmed by a rider”</span></div>
+          </div>
+          <div class="field"><label>Type your email to go ahead</label><div class="input">Email</div><span class="hint">Type rahul@example.com. You log in with Google and have no password, so your email stands in for it.</span></div>
+          <div class="pfoot" style="border:0;padding:0"><div class="btns"><span class="btn btn-outline">Keep my account</span><span class="btn" style="background:var(--danger);color:var(--surface)">Delete account</span></div></div>
         </div>`);
     },
     notes: [
       ['Evidence next to the decision', ['A request shows what the leader needs to decide: bike, home city, the rider’s record on Meel, and the rider’s own note.', 'Where the rider does not meet what the leader asked for, the request says so. The leader can still accept.', 'Declining sends no reason. The rider sees only that the leader could not take them.']],
       ['Your account', ['Everything Meel holds about a rider is on one screen.', 'A rider can take a copy of it, and can delete it, without writing to anyone.', 'Deleting removes the person and keeps the facts. A confirmed pump is still confirmed.']],
-      ['Behaviour', ['Accepting the last place marks the trip full and tells riders still waiting.', 'Deleting an account that leads an open trip asks first: withdraw the trip, or hand it to another rider who is going.']],
-      ['Data', ['Per account: name, email, scrambled password, home city, bike, date joined.', 'Per request: trip, rider, note, answer, dates.', 'Kept on the site’s own server. Not given to anyone.']],
+      ['Behaviour', ['Accepting the last place marks the trip full and tells riders still waiting.', 'Deleting an account that leads an open trip asks first: withdraw the trip, or hand it to another rider who is going.', 'A rider with no password confirms by typing the email of the account (frame 4).']],
+      ['Data', ['Per account: name, email, home city, bike, date joined. A scrambled password, if the rider chose one. For a rider who uses Google, the number Google gives that account.', 'Never a Google password. Meel never sees one.', 'Per request: trip, rider, note, answer, dates.', 'Kept on the site’s own server. Not given to anyone.']],
     ],
   },
   /* trip states */
@@ -1699,17 +1742,26 @@ Name: Rahul N.</span><span class="send">${ICON.send}</span></div>
         <div class="lbl">For now</div>
         <div class="fact-d">Write to the person who keeps Meel from your chat app. Say which email the account uses. They will check it is you and give you a one-time password. You choose your own again as soon as you log in.</div>
         <span class="btn btn-primary btn-block" style="height:46px">${ICON.send}Open chat app</span>
-        <span class="hint">Your trips and reports are not lost.</span>`)}`),
+        <span class="hint">Your trips and reports are not lost.</span>`)}`)
+    + phone('4. Google did not let you in', `
+      ${head('Log in', 'Meel')}
+      ${body(`
+        <div class="callout" style="background:var(--stale-bg);border-color:color-mix(in srgb, var(--stale-fg) 30%, var(--surface))"><b>Google did not let you in</b>You pressed Cancel, or Google could not say this email is yours. Nothing was saved.</div>
+        ${google('Try Google again')}
+        ${or('or with your email')}
+        <div class="field"><label>Email</label><div class="input">Email</div></div>
+        <div class="field"><label>Password</label><div class="input">Password</div></div>`)}
+      <div class="pfoot"><span class="btn btn-primary btn-block">Log in</span></div>`),
     notes: [
       ['Layout', ['Errors sit under the field they belong to, in words. Colour alone is never the message.', 'A summary at the top counts what needs fixing, for a rider whose keyboard hides the rest.']],
-      ['Behaviour', ['What the rider typed is kept. Only the password is cleared after a failed try.', '“Already in use” is shown here because the rider has just typed the email. The log-in page stays vague on purpose.']],
+      ['Behaviour', ['What the rider typed is kept. Only the password is cleared after a failed try.', '“Already in use” is shown here because the rider has just typed the email. The log-in page stays vague on purpose.', 'When Google says no, the rider comes back to the log-in page with frame 4. Google’s own error words are written for developers, so they are not shown.', 'An email that Google has not checked is refused. A Gmail address is always checked.']],
       ['Not built yet', ['Password reset by email. The third frame is what riders see until an email service is added.'], 'q'],
     ],
   },
   /* passwords */
   {
     group: 'Riding together', title: 'A password: changing it, and getting back in',
-    lede: 'Meel sends no email, so a lost password is put right by a person. These are the three screens that make that promise true.',
+    lede: 'Meel sends no email, so a lost password is put right by a person. The first three frames make that promise true. The last three show what changes for a rider who logs in with Google.',
     render: () => phone('1. Changing your password', `
       ${head('Your account', 'Rahul N.', { back: false, right: `<span class="av">RN</span>` })}
       ${body(`
@@ -1740,12 +1792,44 @@ Name: Rahul N.</span><span class="send">${ICON.send}</span></div>
           <div class="check ok">${ICON.check}<span>They are logged out everywhere</span></div>
           <div class="check ok">${ICON.check}<span>They are asked to choose their own password when they log in</span></div>
         </div>`)}
-      <div class="pfoot"><span class="btn btn-outline btn-block">Done</span></div>`),
+      <div class="pfoot"><span class="btn btn-outline btn-block">Done</span></div>`)
+    + phone('4. A rider who logs in with Google', `
+      ${head('Your account', 'Rahul N.', { back: false, right: `<span class="av">RN</span>` })}
+      ${body(`
+        <div class="lbl">How you log in</div>
+        <div class="rows"><div class="row"><span class="gm">${GMARK}</span><span class="grow"><b>Google</b><span class="hint">rahul@example.com</span></span><span class="badge b-fresh">In use</span></div></div>
+        <div class="lbl">Your password</div>
+        <div class="fact-d">You have no Meel password, and you do not need one.</div>
+        <div class="field"><label>New password <em>optional</em></label><div class="input">Password</div><span class="hint">Only if you also want to log in without Google. At least 10 characters.</span></div>
+        <span class="btn btn-soft btn-block" style="height:46px">Add a password</span>`)}
+      ${tabbar('You')}`)
+    + phone('5. When Google takes over an account', `
+      ${head('Your account', 'Rahul N.', { back: false, right: `<span class="av">RN</span>` })}
+      ${body(`
+        <div class="callout info"><b>You now log in with Google</b>This account had a password. Google has checked that this email is yours, so the password was removed and every other phone was logged out.</div>
+        <div class="checks">
+          <div class="check ok">${ICON.check}<span>Your trips and reports are as you left them</span></div>
+          <div class="check ok">${ICON.check}<span>Anyone who knew the old password can no longer get in</span></div>
+        </div>
+        <div class="lbl">Your password</div>
+        <div class="fact-d">Add a new one if you want to log in without Google too.</div>
+        <div class="field"><label>New password <em>optional</em></label><div class="input">Password</div><span class="hint">At least 10 characters.</span></div>
+        <span class="btn btn-soft btn-block" style="height:46px">Add a password</span>`)}
+      ${tabbar('You')}`)
+    + phone('6. The editor, and a rider who uses Google', `
+      ${head('Editor', 'A rider cannot get in')}
+      ${body(`
+        <div class="field"><label>The email on their account</label><div class="input filled">rahul@example.com</div></div>
+        <div class="fact"><div class="fact-h"><b>Rahul N.</b><span class="hint">Delhi</span></div><div class="fact-d">Royal Enfield Classic 350</div><div class="fact-src">On Meel since June 2027 · 1 trip · 2 facts confirmed</div></div>
+        <div class="callout info"><b>Rahul logs in with Google</b>Ask them to press “Continue with Google” on the log-in page. That is usually all they need.</div>
+        <div class="fact-d">If they have lost their Google account, a one-time password still works. It adds a password to this account.</div>`)}
+      <div class="pfoot"><div class="btns"><span class="btn btn-outline">Done</span><span class="btn btn-soft">Set a one-time password</span></div></div>`),
     notes: [
-      ['Behaviour', ['Changing a password asks for the present one. It logs out every other phone and keeps this one.', 'A one-time password works like any password, until the rider changes it. Until then the account page opens with the notice in frame 2.', 'Setting a one-time password logs the rider out everywhere and clears any rest after wrong tries.']],
-      ['Permissions', ['Only an editor can set a one-time password. An editor cannot set one for another editor.', 'The editor sees the rider’s name, city, bike and record, to help check who is asking. Never the email of anyone they did not type.']],
+      ['Behaviour', ['Changing a password asks for the present one. It logs out every other phone and keeps this one.', 'A one-time password works like any password, until the rider changes it. Until then the account page opens with the notice in frame 2.', 'Setting a one-time password logs the rider out everywhere and clears any rest after wrong tries.', 'A rider who logs in with Google has no password until they add one (frame 4). Adding one asks for nothing more: logging in through Google has already shown who they are.']],
+      ['When Google takes over', ['Meel never checked that whoever set a password owned the email. Google has. So when a rider comes in through Google with an email that already has a password, the password is removed and every phone is logged out (frame 5).', 'This stops anyone who signed up first with someone else’s email from keeping a way in.', 'The notice shows for two weeks, or until the rider adds a new password.']],
+      ['Permissions', ['Only an editor can set a one-time password. An editor cannot set one for another editor.', 'The editor sees the rider’s name, city, bike and record, to help check who is asking. Never the email of anyone they did not type.', 'For a rider who uses Google, the editor is told so first (frame 6). A one-time password is still possible, for a rider who has lost their Google account.']],
       ['Why a person, not a link', ['A link by email needs a service that sends email, and an address that has been checked. Meel has neither yet.', 'The cost: the editor sees the one-time password. That is why the rider is asked to change it at once, and why the screen says so plainly.']],
-      ['Data', ['One more thing is held per account: whether its password is a one-time one.']],
+      ['Data', ['Held per account: whether its password is a one-time one, and when Google took over a password, if it did.']],
       ['Not built yet', ['Password reset by a link in an email.'], 'q'],
     ],
   },
