@@ -14,7 +14,7 @@ export default async function LogInPage(props: PageProps<"/login">) {
 
   return (
     <div className="mx-auto flex w-full max-w-md flex-col gap-4">
-      <PageTitle title="Log in" />
+      <PageTitle title="Log in" phone={{ sub: "Meel", back: "/" }} />
       <LogInForm next={next} />
     </div>
   );

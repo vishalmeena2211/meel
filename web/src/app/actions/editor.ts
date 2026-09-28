@@ -4,8 +4,9 @@ import { revalidatePath } from "next/cache";
 import { redirect } from "next/navigation";
 
 import { currentUser, findRider, type RiderFound, setOneTimePassword } from "@/server/auth";
-import { decideFactReport, decideTripReport, factReport } from "@/server/reports";
+import { decideFactReport, decideTripReport, factReport, tripReport } from "@/server/reports";
 import { getTrip, setTripStatus } from "@/server/trips";
+import { refreshRoute } from "@/server/refresh";
 
 function text(form: FormData, key: string): string {
   const v = form.get(key);
@@ -26,15 +27,25 @@ export async function decideFactAction(form: FormData): Promise<void> {
   if (!report) return;
   const decision = text(form, "decision") === "apply" ? "applied" : "set-aside";
   const wording = text(form, "wording").trim().slice(0, 400);
-  decideFactReport(id, decision, decision === "applied" && report.kind === "changed" && wording ? wording : undefined);
-  revalidatePath(`/routes/${report.route_slug}`);
-  revalidatePath("/editor");
+  const reason = text(form, "reason").trim().slice(0, 300);
+  decideFactReport(
+    id,
+    decision,
+    decision === "applied" && report.kind === "changed" && wording ? wording : undefined,
+    decision === "set-aside" && reason ? reason : undefined,
+  );
+  refreshRoute(report.route_slug);
+  redirect("/editor");
 }
 
 export async function decideTripReportAction(form: FormData): Promise<void> {
   await editorOnly();
-  decideTripReport(text(form, "id"), text(form, "decision") === "apply" ? "applied" : "set-aside");
-  revalidatePath("/editor");
+  const report = tripReport(text(form, "id"));
+  if (!report) return;
+  const reason = text(form, "reason").trim().slice(0, 300);
+  decideTripReport(report.id, text(form, "decision") === "apply" ? "applied" : "set-aside", reason || undefined);
+  refreshRoute(report.route_slug);
+  redirect("/editor");
 }
 
 export async function decideTripAction(form: FormData): Promise<void> {
@@ -42,9 +53,9 @@ export async function decideTripAction(form: FormData): Promise<void> {
   const trip = getTrip(text(form, "id"));
   if (!trip) return;
   setTripStatus(trip.id, text(form, "decision") === "show" ? "open" : "withdrawn");
-  revalidatePath(`/routes/${trip.route_slug}`);
+  refreshRoute(trip.route_slug);
   revalidatePath(`/trips/${trip.id}`);
-  revalidatePath("/editor");
+  redirect("/editor");
 }
 
 export interface LetInState {

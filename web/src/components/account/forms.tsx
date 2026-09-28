@@ -12,6 +12,8 @@ import {
 } from "@/app/actions/auth";
 
 import { BLANK, ErrorSummary, Field } from "../form";
+import { IconCheck, IconClock, IconRight } from "../icons";
+import { Foot } from "../shell";
 import { Callout } from "../ui";
 
 export function SignUpForm({ next }: { next: string }) {
@@ -42,6 +44,14 @@ export function SignUpForm({ next }: { next: string }) {
         hint="For logging in. Never shown to anyone."
         required
       />
+      {state.errors.email?.startsWith("An account with this email") ? (
+        <Callout tone="info" title="Is it yours?">
+          <Link className="link" href={`/login?next=${encodeURIComponent(next)}`}>
+            Log in
+          </Link>{" "}
+          with this email, or use a different one here.
+        </Callout>
+      ) : null}
       <Field
         label="Password"
         name="password"
@@ -87,9 +97,11 @@ export function SignUpForm({ next }: { next: string }) {
         </label>
         {state.errors.agreed ? <p className="text-sm font-medium text-stale-fg">{state.errors.agreed}</p> : null}
       </div>
-      <button type="submit" className="btn btn-primary btn-block" disabled={pending}>
-        {pending ? "Creating your account" : "Create account"}
-      </button>
+      <Foot>
+        <button type="submit" className="btn btn-primary btn-block" disabled={pending}>
+          {pending ? "Creating your account" : "Create account"}
+        </button>
+      </Foot>
       <p className="hint text-center">
         Already have one?{" "}
         <Link className="link" href={`/login?next=${encodeURIComponent(next)}`}>
@@ -133,14 +145,16 @@ export function LogInForm({ next }: { next: string }) {
       <Link className="link self-start text-sm" href="/forgotten-password">
         I have forgotten my password
       </Link>
-      <button type="submit" className="btn btn-primary btn-block" disabled={pending}>
-        {pending ? "Logging in" : "Log in"}
-      </button>
       <Callout title="New here?">
         <Link className="link" href={`/signup?next=${encodeURIComponent(next)}`}>
           Create an account
         </Link>
       </Callout>
+      <Foot>
+        <button type="submit" className="btn btn-primary btn-block" disabled={pending}>
+          {pending ? "Logging in" : "Log in"}
+        </button>
+      </Foot>
     </form>
   );
 }
@@ -201,7 +215,24 @@ export function ChangePassword({ oneTime }: { oneTime: boolean }) {
   );
 }
 
-export function DeleteAccount({ shownAs, joined, confirmed }: { shownAs: string; joined: number; confirmed: number }) {
+export interface LedTrip {
+  id: string;
+  name: string;
+  riders: Array<{ id: string; name: string }>;
+}
+
+export function DeleteAccount({
+  shownAs,
+  joined,
+  leads,
+  confirmed,
+}: {
+  shownAs: string;
+  joined: number;
+  /** Trips this rider leads that have not been ridden yet, with the riders going on each. */
+  leads: LedTrip[];
+  confirmed: number;
+}) {
   const [open, setOpen] = useState(false);
   const [state, action, pending] = useActionState(deleteAccountAction, BLANK);
   const dialog = useRef<HTMLDialogElement>(null);
@@ -215,33 +246,54 @@ export function DeleteAccount({ shownAs, joined, confirmed }: { shownAs: string;
 
   return (
     <>
-      <button type="button" className="link self-start !text-danger" onClick={() => setOpen(true)}>
-        Delete my account
-      </button>
-      <dialog
-        ref={dialog}
-        onClose={() => setOpen(false)}
-        aria-labelledby="delete-title"
-        className="m-0 mt-auto w-full max-w-none rounded-t-2xl bg-surface p-0 text-ink backdrop:bg-ink/45 md:m-auto md:max-w-md md:rounded-2xl"
+      <button
+        type="button"
+        className="flex min-h-12 w-full items-center gap-2.5 border-b border-line px-3 py-2.5 text-left hover:bg-surface-2"
+        onClick={() => setOpen(true)}
       >
+        <b className="min-w-0 flex-1 text-[0.9375rem] leading-5 text-danger">Delete my account</b>
+        <IconRight className="size-4 shrink-0 text-ink-2" />
+      </button>
+      <dialog ref={dialog} onClose={() => setOpen(false)} aria-labelledby="delete-title" className="sheet">
         <form action={action} className="flex flex-col gap-3 px-4 pt-4 pb-6">
           <h3 id="delete-title" className="display text-[1.375rem]">
             Delete {shownAs}’s account?
           </h3>
           <p className="hint text-sm">This cannot be undone.</p>
           <ul className="flex flex-col gap-2 text-sm">
-            <li>Your name, email, city and bike are removed.</li>
-            <li>
-              {joined > 0
-                ? `You leave the ${joined} ${joined === 1 ? "trip" : "trips"} you have joined or lead. Trips you lead are withdrawn.`
-                : "You have no trips to leave."}
+            <li className="flex items-start gap-2">
+              <IconCheck className="mt-0.5 size-4 shrink-0 text-fresh-fg" />
+              Your name, email, city and bike are removed
             </li>
-            <li>
+            <li className="flex items-start gap-2">
+              <IconCheck className="mt-0.5 size-4 shrink-0 text-fresh-fg" />
+              {joined > 0
+                ? `You leave the ${joined} ${joined === 1 ? "trip" : "trips"} you have joined. Its leader sees that a place has opened.`
+                : "You have joined no trip, so there is none to leave"}
+            </li>
+            <li className="flex items-start gap-2">
+              <IconClock className="mt-0.5 size-4 shrink-0 text-ageing-fg" />
               {confirmed > 0
-                ? `The ${confirmed} ${confirmed === 1 ? "fact" : "facts"} you confirmed stay, shown as “confirmed by a rider”.`
-                : "Reports you sent stay, with no name on them."}
+                ? `The ${confirmed} ${confirmed === 1 ? "fact" : "facts"} you confirmed stay, shown as “confirmed by a rider”`
+                : "Reports you sent stay, with no name on them"}
             </li>
           </ul>
+          {leads.map((t) => (
+            <div key={t.id} className="flex flex-col gap-1">
+              <label htmlFor={`hand-${t.id}`} className="text-sm font-semibold">
+                You lead {t.name}. What happens to it?
+              </label>
+              <select id={`hand-${t.id}`} name={`hand:${t.id}`} className="field-input" defaultValue="withdraw">
+                <option value="withdraw">Withdraw the trip</option>
+                {t.riders.map((r) => (
+                  <option key={r.id} value={r.id}>
+                    Hand it to {r.name}, who is going
+                  </option>
+                ))}
+              </select>
+              {t.riders.length === 0 ? <p className="hint">Nobody else is going yet, so it can only be withdrawn.</p> : null}
+            </div>
+          ))}
           <Field
             label="Type your password to go ahead"
             name="password"

@@ -123,6 +123,11 @@ const MIGRATIONS: string[] = [
   `
   ALTER TABLE users ADD COLUMN password_is_temporary INTEGER NOT NULL DEFAULT 0;
   `,
+  // Step 3. When the editor sets a report aside, the reason is kept, so the same report is not puzzled over twice.
+  `
+  ALTER TABLE fact_reports ADD COLUMN editor_note TEXT;
+  ALTER TABLE trip_reports ADD COLUMN editor_note TEXT;
+  `,
 ];
 
 type Row = Record<string, SQLInputValue>;

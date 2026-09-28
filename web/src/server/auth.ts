@@ -339,8 +339,20 @@ export function updateProfile(userId: string, input: { name: string; homeCity: s
  * Remove a person and keep the facts.
  * Their trips and requests go. Reports they sent stay, with no name on them.
  */
-export async function deleteAccount(userId: string): Promise<void> {
+export async function deleteAccount(userId: string, handTo: Record<string, string> = {}): Promise<void> {
   together(() => {
+    // A trip the rider leads goes to the rider they named, if that rider is going on it. Otherwise it is withdrawn.
+    for (const [tripId, riderId] of Object.entries(handTo)) {
+      const going = one<{ user_id: string }>(
+        "SELECT user_id FROM trip_members WHERE trip_id = ? AND user_id = ? AND status = 'accepted'",
+        tripId,
+        riderId,
+      );
+      const mine = one<{ id: string }>("SELECT id FROM trips WHERE id = ? AND leader_id = ?", tripId, userId);
+      if (!going || !mine) continue;
+      run("UPDATE trips SET leader_id = ? WHERE id = ?", riderId, tripId);
+      run("DELETE FROM trip_members WHERE trip_id = ? AND user_id = ?", tripId, riderId);
+    }
     run("UPDATE fact_reports SET name = NULL WHERE user_id = ?", userId);
     run("UPDATE trip_reports SET name = NULL WHERE user_id = ?", userId);
     run("DELETE FROM users WHERE id = ?", userId);

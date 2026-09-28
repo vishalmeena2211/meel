@@ -203,6 +203,59 @@ export function membersOf(tripId: string): Member[] {
   ).map(({ full, ...rest }) => ({ ...rest, name: shortName(full) }));
 }
 
+export interface CameBack {
+  /** Riders who sent a trip report after it. */
+  reports: number;
+  facts: number;
+  legs: number;
+  videos: number;
+}
+
+/** What a trip that is over gave back to its route: the reports and confirmations its riders sent. */
+export function cameBackFrom(trip: Trip): CameBack {
+  return safely(() => {
+    const riders = [
+      trip.leader_id,
+      ...all<{ user_id: string }>(
+        "SELECT user_id FROM trip_members WHERE trip_id = ? AND status = 'accepted'",
+        trip.id,
+      ).map((m) => m.user_id),
+    ];
+    const marks = riders.map(() => "?").join(", ");
+    // A rider may write up a trip some weeks after coming home.
+    const until = new Date(new Date(`${trip.back_on}T00:00:00Z`).getTime() + 45 * 86_400_000).toISOString().slice(0, 10);
+    const facts =
+      one<{ n: number }>(
+        `SELECT COUNT(*) AS n FROM fact_reports
+          WHERE route_slug = ? AND status = 'applied' AND seen_on >= ? AND seen_on <= ? AND user_id IN (${marks})`,
+        trip.route_slug,
+        trip.leaves_on,
+        until,
+        ...riders,
+      )?.n ?? 0;
+    const sent = all<{ body: string }>(
+      `SELECT body FROM trip_reports
+        WHERE route_slug = ? AND month >= ? AND month <= ? AND user_id IN (${marks})`,
+      trip.route_slug,
+      trip.leaves_on.slice(0, 7),
+      until.slice(0, 7),
+      ...riders,
+    );
+    const legs = new Set<string>();
+    let videos = 0;
+    for (const r of sent) {
+      try {
+        const body = JSON.parse(r.body) as { legs?: Array<{ from?: string; to?: string }>; video?: string };
+        for (const l of body.legs ?? []) if (l.from && l.to) legs.add(`${l.from}|${l.to}`);
+        if (typeof body.video === "string" && body.video.trim()) videos += 1;
+      } catch {
+        // A report in an older shape. It still counts as a report.
+      }
+    }
+    return { reports: sent.length, facts, legs: legs.size, videos };
+  }, { reports: 0, facts: 0, legs: 0, videos: 0 });
+}
+
 export function membershipOf(tripId: string, userId: string): MemberStatus | null {
   return one<{ status: MemberStatus }>("SELECT status FROM trip_members WHERE trip_id = ? AND user_id = ?", tripId, userId)?.status ?? null;
 }

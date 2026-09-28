@@ -17,12 +17,29 @@ export function tripLength(leaves: string, back: string): string {
   return days === 1 ? "1 day" : `${days} days`;
 }
 
+/** "19 to 27 June 2027". One day is said with its weekday: "Sunday 20 June 2027". */
+export function tripDates(leaves: string, back: string): string {
+  const to = sayDate(back) ?? back;
+  if (leaves === back) {
+    const weekday = new Intl.DateTimeFormat("en-GB", { weekday: "long", timeZone: "UTC" }).format(new Date(`${leaves}T00:00:00Z`));
+    return `${weekday} ${to}`;
+  }
+  if (leaves.slice(0, 7) === back.slice(0, 7)) return `${Number(leaves.slice(8, 10))} to ${to}`;
+  const from = sayDate(leaves) ?? leaves;
+  return leaves.slice(0, 4) === back.slice(0, 4) ? `${from.replace(/ \d{4}$/, "")} to ${to}` : `${from} to ${to}`;
+}
+
 export function placesBadge(trip: TripCard, today: Date): ReactNode {
   const left = trip.places - trip.going;
   if (trip.status === "waiting-for-editor") return <Badge tone="unchecked">Waiting for the editor</Badge>;
   if (trip.status === "hidden") return <Badge tone="stale">Hidden, being looked at</Badge>;
   if (trip.back_on < indiaDay(today)) return <Badge>Already ridden</Badge>;
   if (left <= 0) return <Badge>Full</Badge>;
+  // A trip that leaves within the week says so. There is little time left to ask.
+  const days = daysBetween(indiaDay(today), new Date(`${trip.leaves_on}T00:00:00Z`));
+  if (trip.leaves_on > indiaDay(today) && days <= 7) {
+    return <Badge tone="ageing">{days === 1 ? "Leaves tomorrow" : `Leaves in ${days} days`}</Badge>;
+  }
   return <Badge tone="fresh">{left === 1 ? "1 place left" : `${left} places left`}</Badge>;
 }
 
@@ -58,7 +75,7 @@ export function TripCardView({
         {state ?? placesBadge(trip, new Date())}
       </span>
       <span className="num text-sm">
-        {sayDate(trip.leaves_on)} to {sayDate(trip.back_on)} · {tripLength(trip.leaves_on, trip.back_on)}
+        {tripDates(trip.leaves_on, trip.back_on)} · {tripLength(trip.leaves_on, trip.back_on)}
       </span>
       <span className="hint">
         From {trip.from_city} · led by {trip.leader_name} · {PACE_WORDS[trip.pace] ?? trip.pace}

@@ -54,6 +54,7 @@ export default function RulesPage() {
   return (
     <div className="mx-auto flex w-full max-w-2xl flex-col gap-6">
       <PageTitle
+        phone={{ sub: "Meel", back: "/trips" }}
         title="Rules for riding together"
         lede="Meel puts riders in touch. It does not run trips, check riders, or take responsibility for what happens on the road."
       />

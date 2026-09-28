@@ -33,7 +33,12 @@ export default async function CreditsPage() {
 
   return (
     <div className="mx-auto flex w-full max-w-3xl flex-col gap-6">
-      <PageTitle title="Credits and sources" lede="Meel is built on other people’s work. This page names all of it." />
+      <PageTitle
+        title="Credits and sources"
+        lede="Meel is built on other people’s work. This page names all of it."
+        phone={{ sub: "Meel", back: "/" }}
+      />
+      <p className="text-sm md:hidden">Meel is built on other people’s work. This page names all of it.</p>
 
       <section className="flex flex-col gap-2">
         <h2 className="display text-2xl">Maps, distances and fuel pumps</h2>

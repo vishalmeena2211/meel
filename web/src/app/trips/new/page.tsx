@@ -24,10 +24,12 @@ export default async function NewTripPage(props: PageProps<"/trips/new">) {
 
   return (
     <div className="mx-auto flex w-full max-w-xl flex-col gap-4">
-      <PageTitle
-        title="Post a trip"
-        lede="A short form. Before it is published, the plan is checked against what the route page knows."
-      />
+      <div className="hidden md:block">
+        <PageTitle
+          title="Post a trip"
+          lede="A short form. Before it is published, the plan is checked against what the route page knows."
+        />
+      </div>
       <PostTripForm
         routes={routes}
         startRoute={routes.some((r) => r.slug === start) ? start : ""}

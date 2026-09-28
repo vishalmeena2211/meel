@@ -84,7 +84,7 @@ export async function signUpAction(_previous: FormState, form: FormData): Promis
     return {
       ok: false,
       message: "Something needs fixing.",
-      errors: { email: "An account with this email already exists. Log in with it, or use a different one here." },
+      errors: { email: "An account with this email already exists." },
       values,
     };
   }
@@ -100,7 +100,7 @@ export async function signUpAction(_previous: FormState, form: FormData): Promis
     return {
       ok: false,
       message: "Something needs fixing.",
-      errors: { email: "An account with this email already exists. Log in with it, or use a different one here." },
+      errors: { email: "An account with this email already exists." },
       values,
     };
   }
@@ -196,6 +196,10 @@ export async function deleteAccountAction(_previous: FormState, form: FormData):
   if (!(await checkPassword(user.id, password))) {
     return { ok: false, message: "", errors: { password: "That is not your password. Nothing was deleted." } };
   }
-  await deleteAccount(user.id);
+  const handTo: Record<string, string> = {};
+  for (const [key, value] of form.entries()) {
+    if (key.startsWith("hand:") && typeof value === "string" && value !== "withdraw") handTo[key.slice(5)] = value;
+  }
+  await deleteAccount(user.id, handTo);
   redirect("/?gone=1");
 }

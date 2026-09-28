@@ -20,6 +20,7 @@ import {
   takeBack,
   withdrawTrip,
 } from "@/server/trips";
+import { refreshRoute } from "@/server/refresh";
 
 function text(form: FormData, key: string): string {
   const v = form.get(key);
@@ -128,7 +129,7 @@ export async function postTripAction(_previous: TripFormState, form: FormData): 
     nights: ordered,
     isCompany: parsed.data.is_company === "yes",
   });
-  revalidatePath(`/routes/${route.slug}`);
+  refreshRoute(route.slug);
   redirect(`/trips/${made.id}?posted=${made.status === "open" ? "open" : "waiting"}`);
 }
 
@@ -172,7 +173,7 @@ export async function leaveAction(form: FormData): Promise<void> {
   leave(tripId, user.id);
   revalidatePath(`/trips/${tripId}`);
   const trip = getTrip(tripId);
-  if (trip) revalidatePath(`/routes/${trip.route_slug}`);
+  if (trip) refreshRoute(trip.route_slug);
 }
 
 export async function answerAction(form: FormData): Promise<void> {
@@ -183,7 +184,7 @@ export async function answerAction(form: FormData): Promise<void> {
   revalidatePath(`/trips/${tripId}`);
   revalidatePath(`/trips/${tripId}/requests`);
   const trip = getTrip(tripId);
-  if (trip) revalidatePath(`/routes/${trip.route_slug}`);
+  if (trip) refreshRoute(trip.route_slug);
   if (result === "full") redirect(`/trips/${tripId}/requests?full=1`);
 }
 
@@ -193,7 +194,7 @@ export async function withdrawAction(form: FormData): Promise<void> {
   if (!user) redirect(`/login?next=/trips/${tripId}`);
   const trip = getTrip(tripId);
   withdrawTrip(tripId, user.id);
-  if (trip) revalidatePath(`/routes/${trip.route_slug}`);
+  if (trip) refreshRoute(trip.route_slug);
   redirect("/account");
 }
 

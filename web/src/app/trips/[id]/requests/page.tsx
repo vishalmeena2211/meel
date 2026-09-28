@@ -37,12 +37,20 @@ export default async function RequestsPage(props: PageProps<"/trips/[id]/request
 
   return (
     <div className="mx-auto flex w-full max-w-2xl flex-col gap-5">
-      <nav aria-label="Where you are" className="hint">
+      <nav aria-label="Where you are" className="hint hidden md:block">
         <Link className="link font-medium" href={`/trips/${trip.id}`}>
           Back to the trip
         </Link>
       </nav>
-      <PageTitle title="Requests to join" lede={`${route?.name ?? trip.route_slug} · ${sayDate(trip.leaves_on)}`} />
+      <PageTitle
+        title="Requests to join"
+        lede={`${route?.name ?? trip.route_slug} · ${sayDate(trip.leaves_on)}`}
+        phone={{
+          title: "Requests",
+          sub: `${route?.name ?? trip.route_slug} · ${sayDate(trip.leaves_on.slice(0, 7))}`,
+          back: `/trips/${trip.id}`,
+        }}
+      />
 
       {query.full ? (
         <Callout tone="warn" title="The trip is full">

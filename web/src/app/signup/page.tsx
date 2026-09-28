@@ -15,7 +15,7 @@ export default async function SignUpPage(props: PageProps<"/signup">) {
 
   return (
     <div className="mx-auto flex w-full max-w-md flex-col gap-4">
-      <PageTitle title="Create an account" lede="Takes about a minute." />
+      <PageTitle title="Create an account" lede="Takes about a minute." phone={{ sub: "Takes about a minute", back: next.startsWith("/trips/") ? next : "/" }} />
       <Callout tone="info" title="You need an account only to join or post a trip">
         The leader of a trip needs to know who is asking. Reading routes, using the tools and sending reports stay open
         to everyone.

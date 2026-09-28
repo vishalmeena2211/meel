@@ -17,7 +17,11 @@ export default async function AboutPage() {
     <div className="mx-auto flex w-full max-w-2xl flex-col gap-6">
       <div className="flex items-center gap-3">
         <KmStone cap="MEEL" value={String(index.routes.length)} unit="ROUTES" />
-        <PageTitle title="Every fact has a date" lede="Kept by riders, for riders. At rideplanner.in." />
+        <PageTitle
+          title="Every fact has a date"
+          lede="Kept by riders, for riders. At rideplanner.in."
+          phone={{ title: "About Meel", sub: "rideplanner.in", back: "/" }}
+        />
       </div>
 
       <section className="flex flex-col gap-2 text-[0.9375rem]">
