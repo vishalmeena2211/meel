@@ -115,6 +115,25 @@ button { font: inherit; color: inherit; }
 .btn-soft { background: var(--sign-soft); color: var(--sign); border-color: var(--sign-line); }
 .btn-disabled { background: var(--surface-2); color: var(--rule); border-color: var(--border); }
 .btn-block { width: 100%; }
+/* The foot of every page: a band the colour of tarmac, closed off by the dashed middle line of a road. */
+.sfoot { background: var(--ink); color: color-mix(in srgb, var(--surface) 78%, var(--ink)); display: flex; flex-direction: column; flex: none; }
+.sfoot p { margin: 0; }
+.sfoot .fmark { display: flex; align-items: center; gap: 8px; }
+.sfoot .mark b { color: var(--ink); }
+.sfoot .fmark > b { font: 700 20px/1 var(--display); letter-spacing: .06em; text-transform: uppercase; color: var(--surface); }
+.sfoot .fbrand { display: flex; flex-direction: column; gap: 6px; }
+.sfoot .fcol { display: flex; flex-direction: column; gap: 8px; }
+.sfoot .fh { font: 600 11.5px/1.2 var(--display); letter-spacing: .12em; text-transform: uppercase; color: var(--stone); }
+.sfoot .fl { color: var(--surface); font-weight: 500; }
+.sfoot .fl.u { text-decoration: underline; text-underline-offset: 2px; }
+.sfoot .road { border-top: 2px dashed color-mix(in srgb, var(--stone) 75%, var(--ink)); }
+.sfoot .frule { color: var(--surface); font-weight: 500; }
+.sfoot .fine { font-size: 11.5px; line-height: 17px; color: color-mix(in srgb, var(--surface) 62%, var(--ink)); }
+.sf-phone { padding: 18px 16px 16px; gap: 14px; font-size: 13px; line-height: 18px; }
+.sf-phone .fgrid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px 12px; }
+.sf-desk { padding: 26px 40px 22px; gap: 16px; font-size: 13.5px; line-height: 19px; }
+.sf-desk .frow { display: grid; grid-template-columns: 1.4fr 1fr 1fr 1fr; gap: 32px; }
+.sf-desk .fbottom { display: flex; justify-content: space-between; align-items: baseline; gap: 24px; }
 /* Google asks that its button stay white with its own mark. It is never recoloured to Meel's green. */
 .btn-google { background: var(--surface); color: var(--ink); border-color: var(--border); }
 .btn-google svg, .gm svg { width: 18px; height: 18px; flex: none; display: block; }
@@ -2107,6 +2126,58 @@ Rahul N. · seen 13 June 2027 · sent from the chat app at 9:12 pm</div>
       ['What this changes in the plan', ['The plan counted about 850 facts for fifty routes. Drawn out, it is about 1,700 entries.', 'The difference is stretches, heights, the line on the map and videos. The plan had not counted them.', 'Most of the extra entries are quick: a height, a distance, a link. About 470 need checking against an official source.']],
       ['Entered once, for the whole site', ['About ten bikes: model, tank size, mileage.', 'About eight kinds of fact, each with two age limits.', 'About nine regional packing lists of twenty items each.']],
       ['Not counted here', ['Accounts, trips and requests to join. Riders create them.', 'Trip reports, which arrive from riders.', 'Preview pictures, which the site makes when it is built.', 'Bikes, gear and costs. They are worked out from trip reports.']],
+    ],
+  },  /* the foot of every page */
+  {
+    group: 'Every page', title: 'The foot of every page',
+    lede: 'The same foot closes every page. It says the one thing Meel never does, where to go next, and whose map and pictures these are.',
+    render: () => {
+      const col = (h, links) => `<div class="fcol"><span class="fh">${h}</span>${links.map((l) => `<span class="fl">${l}</span>`).join('')}</div>`;
+      const cols = [
+        col('Routes', ['All routes', 'Fuel, altitude and packing', 'Send a trip report']),
+        col('Riding together', ['Trips riders are planning', 'Post a trip', 'Rules for riding together']),
+        col('Meel', ['About Meel', 'Credits and sources', 'Your account']),
+      ].join('');
+      const brand = `<div class="fbrand"><div class="fmark">${mark()}<b>Meel</b></div><p>Dated facts for Indian motorcycle routes.</p><p class="fine">Kept by one person, as a hobby. No advertising.</p></div>`;
+      const promise = `<p class="frule">Meel never says a road is open. It links to the office that decides.</p>`;
+      const credit = `<p class="fine">Map data © <span class="fl u">OpenStreetMap contributors</span> · Heights from NASA · Pictures from Wikimedia Commons, credited beside each one</p>`;
+      return phone('1. On a phone, above the tab bar', `
+        ${head('About Meel', 'What Meel is')}
+        <div class="pbody"><div class="pscroll" style="padding:0;gap:0;min-height:100%">
+          <div style="padding:12px 12px 20px;display:flex;flex-direction:column;gap:12px">
+            <div class="callout"><b>Kept by one person, as a hobby</b>No advertising. No paid listings. If that ever changes, every paid link will be marked as such.</div>
+          </div>
+          <footer class="sfoot sf-phone" style="flex:1">
+            ${brand}
+            <div class="fgrid">${cols}</div>
+            <div class="road"></div>
+            ${promise}
+            <p class="fine">rideplanner.in</p>
+            ${credit}
+          </footer>
+        </div></div>
+        ${tabbar('')}`)
+      + desk('2. On a laptop', `
+        ${deskTop(`<span class="btn btn-outline">Log in</span>`)}
+        <div style="flex:1;min-height:0;background:var(--ground);padding:30px 0;overflow:hidden">
+          <div style="max-width:760px;margin:0 auto;display:flex;flex-direction:column;gap:14px">
+            <h3 style="margin:0;font:700 26px/1.1 var(--display)">What needs an account, and what does not</h3>
+            <p style="margin:0;font-size:15px;line-height:23px">Reading any route, the fuel check, the altitude check, the packing list, confirming a fact and sending a trip report need no account. Asking to join a trip, or posting one, does: the leader needs to know who is asking.</p>
+            <div class="callout"><b>Kept by one person, as a hobby</b>No advertising. No paid listings. If that ever changes, every paid link will be marked as such.</div>
+          </div>
+        </div>
+        <footer class="sfoot sf-desk">
+          <div class="frow">${brand}${cols}</div>
+          <div class="road"></div>
+          <div class="fbottom">${promise}<span class="fine">rideplanner.in</span></div>
+          ${credit}
+        </footer>`);
+    },
+    notes: [
+      ['Layout', ['A dark band, the colour of tarmac, so the end of a page is never mistaken for more of the page.', 'The Meel mark and one line on what Meel is. Three groups of links, named for what a rider came to do. A dashed yellow line, like the middle of a road, before the small print.', 'On a phone the groups sit two across, above the tab bar and above any button fixed to the foot of the screen. On a laptop they sit in one row beside the mark.']],
+      ['The one promise', ['“Meel never says a road is open” has a line of its own. It is the rule the whole site keeps, so every page says it.']],
+      ['Credits', ['OpenStreetMap asks for “© OpenStreetMap contributors” wherever its data appears. Its data is on nearly every page, so the credit is in the foot of every page.', 'A picture’s credit still sits under the picture. The foot only says where the pictures come from.']],
+      ['Behaviour', ['“Your account” opens the log-in page for a rider who is not logged in, and brings them back to their account afterwards.', 'Every link is a plain link: nothing to open, nothing that needs a script.']],
     ],
   },
 ];

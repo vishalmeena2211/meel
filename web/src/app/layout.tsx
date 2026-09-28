@@ -4,6 +4,7 @@ import Link from "next/link";
 
 import { IconSearch } from "@/components/icons";
 import { OutboxSender } from "@/components/offline/outbox-sender";
+import { SiteFoot } from "@/components/site-foot";
 import { SiteNav, TabBar } from "@/components/site-nav";
 import { KmStone } from "@/components/ui";
 
@@ -74,24 +75,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
           {children}
         </main>
 
-        <footer className="site-foot border-t border-line bg-surface pb-24 md:pb-0">
-          <div className="hint mx-auto flex w-full max-w-6xl flex-col gap-2 px-4 py-5">
-            <p>
-              Map data ©{" "}
-              <a className="link font-medium" href="https://www.openstreetmap.org/copyright" target="_blank" rel="noreferrer noopener">
-                OpenStreetMap contributors
-              </a>
-              . Heights from NASA. Pictures from Wikimedia Commons, each credited beside it.
-            </p>
-            <nav aria-label="About this site" className="flex flex-wrap gap-x-4 gap-y-1">
-              <Link className="link font-medium" href="/credits">Credits and sources</Link>
-              <Link className="link font-medium" href="/about">About Meel</Link>
-              <Link className="link font-medium" href="/rules">Rules for riding together</Link>
-              <Link className="link font-medium" href="/report">Send a trip report</Link>
-            </nav>
-            <p>Meel never says a road is open. It links to the office that decides. Kept by one person, as a hobby.</p>
-          </div>
-        </footer>
+        <SiteFoot />
 
         <TabBar />
         <OutboxSender />

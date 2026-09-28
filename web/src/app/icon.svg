@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <!-- Meel's mark: an Indian kilometre stone. Yellow cap, white face, dark edge, and M for Meel.
+       The M is drawn, not typed, so it looks the same without the site's fonts. -->
+  <defs>
+    <clipPath id="stone"><path d="M4 30.3V13.8a12 12 0 0 1 24 0v16.5z"/></clipPath>
+  </defs>
+  <path d="M4 30.3V13.8a12 12 0 0 1 24 0v16.5z" fill="#ffffff"/>
+  <rect x="0" y="0" width="32" height="12.2" fill="#f2b807" clip-path="url(#stone)"/>
+  <path d="M4 12.2h24" stroke="#16201c" stroke-width="2.4"/>
+  <path d="M10.2 26.2v-9.6l5.8 6 5.8-6v9.6" fill="none" stroke="#16201c" stroke-width="3" stroke-linejoin="miter" stroke-linecap="square"/>
+  <path d="M4 30.3V13.8a12 12 0 0 1 24 0v16.5z" fill="none" stroke="#16201c" stroke-width="2.4" stroke-linejoin="round"/>
+</svg>

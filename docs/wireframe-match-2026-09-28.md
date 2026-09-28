@@ -227,3 +227,21 @@ How it was checked: a scratch database was filled with the drawings' own example
 What was not compared, because it cannot be seen without your Google settings:
 
 - [ ] Google's own screen, where a rider picks an account and agrees. The test stopped at the moment the browser reached accounts.google.com, and checked only what Meel sent there: its Google id, the address to come back to, and the three things it asks for (a sign-in, the email, the name).
+
+---
+
+## The foot of every page, checked the same day
+
+**Asked by:** Vishal: "make the footer proper".
+**Drawn first:** a new last screen, 31, "The foot of every page", with a phone frame and a laptop frame. No earlier number moved. The gallery now has 31 screens and 89 frames.
+
+Before this, the footer had never been drawn. It was three lines of small text: the map credit first, then four links, then the promise.
+
+| Frame | What it shows | First check | What differed | Now |
+|---|---|---|---|---|
+| 31.1 | On a phone | Matches | The drawing shows the tab bar beneath. The built About page has none, as before; pages that have one keep the footer clear of it | [x] |
+| 31.2 | On a laptop | Matches | | [x] |
+
+How it was checked: the About page and the log-in page, on the site running on this machine, at phone width and laptop width, scrolled to the bottom. On the log-in page, the button fixed to the foot of the screen was checked not to cover the footer's last line.
+
+One word changed in the drawing to agree with the site: "All routes", not "All 50 routes", so the footer cannot go out of date when a route is added.
