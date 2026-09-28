@@ -221,7 +221,7 @@ export function RouteBrowser({
         onValueChange={setQuery}
         className="field-input flex items-center gap-2 !py-0 focus-within:border-sign focus-within:shadow-[0_0_0_3px_var(--color-sign-soft)]"
         // The frame shows the focus, so the box inside it draws none of its own.
-        inputClassName="min-h-[44px] w-full bg-transparent !outline-none"
+        inputClassName="min-h-[44px] w-full bg-transparent outline-none"
       >
         <IconSearch className="size-4 shrink-0 text-ink-2" />
       </SearchSuggest>

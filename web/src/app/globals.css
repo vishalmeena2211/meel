@@ -64,9 +64,15 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-:focus-visible {
-  outline: 2px solid var(--color-sign);
-  outline-offset: 2px;
+/*
+  The ring anything shows when it has the keyboard's focus. It sits in the base layer so a part that draws its own
+  focus wins over it: a typing box shows a green border and a soft glow (.field-input), not this ring as well.
+*/
+@layer base {
+  :focus-visible {
+    outline: 2px solid var(--color-sign);
+    outline-offset: 2px;
+  }
 }
 
 @layer components {
