@@ -1,22 +1,2 @@
-# local data: accounts, trips, the development secret
-.data/
-*.sqlite
-*.sqlite-journal
-*.sqlite-wal
-*.sqlite-shm
-
-# environment files are yours to manage
-.env
-.env.*
-
-# dependencies and builds
-node_modules/
-.next/
-out/
-dist/
-
-# pipeline logs and scratch
-data/computed/_log_*.txt
-__pycache__/
-*.pyc
-.DS_Store
+# Vercel CLI link for this folder: project and account ids, nothing secret. Never committed.
+.vercel
