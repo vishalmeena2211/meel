@@ -1656,6 +1656,7 @@ Name: Rahul N.</span><span class="send">${ICON.send}</span></div>
           <div class="checks">
             <div class="check ok">${ICON.check}<span>Your name, email, city and bike are removed</span></div>
             <div class="check ok">${ICON.check}<span>Meel forgets your Google account. Your Google account itself is not touched.</span></div>
+            <div class="check ok">${ICON.check}<span>You leave the 1 trip you have joined. Its leader is told a place has opened.</span></div>
             <div class="check wait">${ICON.clock}<span>The 2 facts you confirmed stay, shown as “confirmed by a rider”</span></div>
           </div>
           <div class="field"><label>Type your email to go ahead</label><div class="input">Email</div><span class="hint">Type rahul@example.com. You log in with Google and have no password, so your email stands in for it.</span></div>
@@ -1757,7 +1758,9 @@ Name: Rahul N.</span><span class="send">${ICON.send}</span></div>
         ${google('Try Google again')}
         ${or('or with your email')}
         <div class="field"><label>Email</label><div class="input">Email</div></div>
-        <div class="field"><label>Password</label><div class="input">Password</div></div>`)}
+        <div class="field"><label>Password</label><div class="input">Password</div></div>
+        <span class="link">I have forgotten my password</span>
+        <div class="callout"><b>New here?</b><span class="link">Create an account</span></div>`)}
       <div class="pfoot"><span class="btn btn-primary btn-block">Log in</span></div>`),
     notes: [
       ['Layout', ['Errors sit under the field they belong to, in words. Colour alone is never the message.', 'A summary at the top counts what needs fixing, for a rider whose keyboard hides the rest.']],
@@ -1818,6 +1821,8 @@ Name: Rahul N.</span><span class="send">${ICON.send}</span></div>
           <div class="check ok">${ICON.check}<span>Your trips and reports are as you left them</span></div>
           <div class="check ok">${ICON.check}<span>Anyone who knew the old password can no longer get in</span></div>
         </div>
+        <div class="lbl">How you log in</div>
+        <div class="rows"><div class="row"><span class="gm">${GMARK}</span><span class="grow"><b>Google</b><span class="hint">rahul@example.com</span></span><span class="badge b-fresh">In use</span></div></div>
         <div class="lbl">Your password</div>
         <div class="fact-d">Add a new one if you want to log in without Google too.</div>
         <div class="field"><label>New password <em>optional</em></label><div class="input">Password</div><span class="hint">At least 10 characters.</span></div>
@@ -1826,11 +1831,13 @@ Name: Rahul N.</span><span class="send">${ICON.send}</span></div>
     + phone('6. The editor, and a rider who uses Google', `
       ${head('Editor', 'A rider cannot get in')}
       ${body(`
+        <div class="callout info"><b>Check it is them first</b>Ask something only they would know: a trip they joined, or their bike and home city.</div>
         <div class="field"><label>The email on their account</label><div class="input filled">rahul@example.com</div></div>
         <div class="fact"><div class="fact-h"><b>Rahul N.</b><span class="hint">Delhi</span></div><div class="fact-d">Royal Enfield Classic 350</div><div class="fact-src">On Meel since June 2027 · 1 trip · 2 facts confirmed</div></div>
         <div class="callout info"><b>Rahul logs in with Google</b>Ask them to press “Continue with Google” on the log-in page. That is usually all they need.</div>
-        <div class="fact-d">If they have lost their Google account, a one-time password still works. It adds a password to this account.</div>`)}
-      <div class="pfoot"><div class="btns"><span class="btn btn-outline">Done</span><span class="btn btn-soft">Set a one-time password</span></div></div>`),
+        <div class="fact-d">If they have lost their Google account, a one-time password still works. It adds a password to this account.</div>
+        <span class="btn btn-soft" style="align-self:flex-start">Set a one-time password</span>`)}
+      <div class="pfoot"><span class="btn btn-outline btn-block">Done</span></div>`),
     notes: [
       ['Behaviour', ['Changing a password asks for the present one. It logs out every other phone and keeps this one.', 'A one-time password works like any password, until the rider changes it. Until then the account page opens with the notice in frame 2.', 'Setting a one-time password logs the rider out everywhere and clears any rest after wrong tries.', 'A rider who logs in with Google has no password until they add one (frame 4). Adding one asks for nothing more: logging in through Google has already shown who they are.']],
       ['When Google takes over', ['Meel never checked that whoever set a password owned the email. Google has. So when a rider comes in through Google with an email that already has a password, the password is removed and every phone is logged out (frame 5).', 'This stops anyone who signed up first with someone else’s email from keeping a way in.', 'The notice shows for two weeks, or until the rider adds a new password.']],

@@ -201,3 +201,29 @@ These are yours to overrule. In each case the drawing was changed on 28 Septembe
 - [x] Type check and lint clean
 - [ ] Mechanics, network, riding hours, stays, bikes and costs were seen with made-up riders' data on a test copy. No route has real riders' data yet, so on the live site these still show as "not here yet"
 - [ ] Saving a route for no network was tested for what it stores. It has not been tried on a real phone in a real valley
+
+---
+
+## Logging in with Google, checked the same day
+
+**Asked by:** Vishal, who asked for Google log-in through Auth.js and for the accounts to move to Postgres.
+**Drawn first:** six new frames, added at the end of four screens so no earlier number moved. The gallery now has 87 frames.
+**Short answer:** all 9 frames that Google touches were compared with the built screen in the same situation. 5 matched at once. In 4 the build was right and the drawing had left something out, so the drawing was changed to agree.
+
+How it was checked: a scratch database was filled with the drawings' own example world (Rahul Negi from Delhi, Anjali leading Manali to Leh, Meera Joshi, whose password Google takes over). Each screen was opened on a phone, as that rider, and set beside its frame. A rider who came in through Google was given the login cookie Auth.js would have given them, because a real Google login needs your own Google settings. The scratch database was deleted afterwards.
+
+| Frame | What it shows | First check | What differed | Now |
+|---|---|---|---|---|
+| 20.1 | Joining a trip needs an account, with Google first | Matches | | [x] |
+| 20.2 | Creating an account, with Google above the form | Matches | The notice about why an account is needed sits above Google, as it did before | [x] |
+| 20.3 | Logging in, and getting it wrong, with Google above the form | Matches | | [x] |
+| 20.4 | The first time with Google: "Nearly done" | Matches | | [x] |
+| 22.4 | Deleting an account that logs in with Google | Close | The site also says you leave the trips you joined. The drawing had dropped that line | [x] Drawing changed: a rider who uses Google still leaves their trips |
+| 24.4 | Google did not let you in | Close | The site also shows "I have forgotten my password" and "New here?" | [x] Drawing changed: it is the same log-in form as 20.3 |
+| 25.4 | A rider who logs in with Google | Matches | | [x] |
+| 25.5 | When Google takes over an account | Close | The site shows "How you log in" before "Your password" | [x] Drawing changed, to match frame 25.4 |
+| 25.6 | The editor, and a rider who uses Google | Close | The site keeps "Check it is them first" from frame 25.3, and "Set a one-time password" sits under the words, with "Done" at the foot | [x] Drawing changed to agree |
+
+What was not compared, because it cannot be seen without your Google settings:
+
+- [ ] Google's own screen, where a rider picks an account and agrees. The test stopped at the moment the browser reached accounts.google.com, and checked only what Meel sent there: its Google id, the address to come back to, and the three things it asks for (a sign-in, the email, the name).
