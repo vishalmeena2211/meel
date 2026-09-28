@@ -70,6 +70,13 @@ export const IconLock = icon(
   </>,
 );
 export const IconFlag = icon(<path d="M4 22V4M4 4h13l-2 4 2 4H4" />);
+export const IconX = icon(<path d="M18 6 6 18M6 6l12 12" />);
+export const IconCalendar = icon(
+  <>
+    <rect x="3" y="4" width="18" height="18" rx="2" />
+    <path d="M16 2v4M8 2v4M3 10h18" />
+  </>,
+);
 export const IconShare = icon(
   <>
     <circle cx="18" cy="5" r="3" />

@@ -24,7 +24,8 @@ const ROUTES = 5;
 const PLACES = 4;
 const LIKE = 3;
 
-function fold(text: string): string {
+/** Lower case, with accents taken off, for matching what a rider types. */
+export function fold(text: string): string {
   return text.toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, "");
 }
 

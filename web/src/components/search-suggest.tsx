@@ -6,7 +6,7 @@ import { useEffect, useId, useMemo, useRef, useState, type KeyboardEvent, type R
 
 import { suggest, type SearchRoute, type Suggestion } from "@/lib/search";
 
-import { IconFlag, IconMap, IconSearch } from "./icons";
+import { IconFlag, IconMap, IconSearch, IconX } from "./icons";
 
 /*
   A search box that suggests routes and places as a rider types (wireframes, screen 2, frames 4 and 5).
@@ -60,9 +60,12 @@ export function SearchSuggest({
   routes?: SearchRoute[];
   value?: string;
   onValueChange?: (value: string) => void;
-  /** Set when the box sits in a form, so Enter with nothing picked still searches with no JavaScript. */
+  /**
+   * Set when the box sits in a search form. Enter with nothing picked then searches every route, as it does with
+   * no JavaScript, and the list ends with a row that does the same.
+   */
   name?: string;
-  /** In the header, the list is wider than the box and ends with a way to search every route. */
+  /** In the header, the list is wider than the box. */
   placement?: "header" | "page";
   inputClassName?: string;
   className?: string;
@@ -83,8 +86,8 @@ export function SearchSuggest({
   const typed = value.trim();
   const found = useMemo(() => suggest(typed, routes), [typed, routes]);
   const header = placement === "header";
-  // The header's last row searches every route for what was typed: the front page, narrowed to it.
-  const everywhere = header && typed.length >= 2 ? `/?q=${encodeURIComponent(typed)}` : null;
+  // A box in a search form ends its list with a row that searches every route: the front page, narrowed to it.
+  const everywhere = name && typed.length >= 2 ? `/?q=${encodeURIComponent(typed)}` : null;
   const rows = found.length + (everywhere ? 1 : 0);
   const shown = open && rows > 0;
 
@@ -142,13 +145,13 @@ export function SearchSuggest({
       if (shown && active >= 0) {
         event.preventDefault();
         go(active);
-      } else if (!header) {
+      } else if (!name) {
         // On the front page the routes below are already narrowed. Close the list, and the phone's keyboard, to show them.
         event.preventDefault();
         setOpen(false);
         input.current?.blur();
       }
-      // In the header with nothing picked, the form searches every route.
+      // In a search form with nothing picked, the form searches every route.
     } else if (event.key === "Escape") {
       if (shown) {
         // Only close the list. A search box would otherwise empty itself too.
@@ -211,6 +214,20 @@ export function SearchSuggest({
         enterKeyHint="search"
         className={inputClassName}
       />
+      {value ? (
+        <button
+          type="button"
+          aria-label="Empty the search box"
+          onMouseDown={(e) => e.preventDefault()}
+          onClick={() => {
+            setValue("");
+            input.current?.focus();
+          }}
+          className="absolute top-1/2 right-2 grid size-7 -translate-y-1/2 place-items-center rounded-full bg-surface-2 text-ink-2 hover:text-ink"
+        >
+          <IconX className="size-3.5" />
+        </button>
+      ) : null}
       <div
         id={listId}
         role="listbox"

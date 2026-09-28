@@ -9,6 +9,7 @@ import { keep } from "@/lib/outbox";
 import { useStored } from "@/lib/use-stored";
 
 import { IconCheck, IconSend } from "../icons";
+import { DayPicker } from "../pickers";
 import { FactBody } from "./fact-body";
 
 type Mode = "fact" | "still-true" | "changed";
@@ -339,18 +340,17 @@ function ReportForm({
                 ) : null}
               </div>
               <div className="flex flex-col gap-1">
-                <label htmlFor={`${id}-seen`} className="text-sm font-semibold">
+                <label htmlFor={`${id}-seen`} id={`${id}-seen-label`} className="text-sm font-semibold">
                   When were you there?
                 </label>
-                <input
+                <DayPicker
                   id={`${id}-seen`}
-                  type="date"
+                  labelId={`${id}-seen-label`}
+                  title="When were you there?"
                   value={other}
+                  onValueChange={setOther}
                   max={days.today}
-                  onChange={(e) => setOther(e.target.value)}
-                  aria-invalid={state.errors.seen_on ? true : undefined}
-                  className="field-input num"
-                  required
+                  invalid={!!state.errors.seen_on}
                 />
               </div>
             </>
@@ -382,16 +382,20 @@ function ReportForm({
                 ))}
               </div>
               {when === "other" ? (
-                <input
-                  type="date"
-                  aria-label="The day you were there"
-                  value={other}
-                  max={days.today}
-                  onChange={(e) => setOther(e.target.value)}
-                  aria-invalid={state.errors.seen_on ? true : undefined}
-                  className="field-input num mt-1"
-                  required
-                />
+                <div className="mt-1">
+                  <span id={`${id}-other-label`} className="sr-only">
+                    The day you were there
+                  </span>
+                  <DayPicker
+                    id={`${id}-other`}
+                    labelId={`${id}-other-label`}
+                    title="The day you were there"
+                    value={other}
+                    onValueChange={setOther}
+                    max={days.today}
+                    invalid={!!state.errors.seen_on}
+                  />
+                </div>
               ) : null}
             </fieldset>
           )}

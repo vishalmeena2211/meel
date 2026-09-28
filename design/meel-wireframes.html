@@ -133,6 +133,37 @@ button { font: inherit; color: inherit; }
 .sugg .so u { text-decoration-thickness: 2px; text-underline-offset: 2px; }
 .sugg .so .hint { display: block; }
 .sugg .all { border-top: 1px solid var(--border); color: var(--sign); font-weight: 600; }
+/* Meel's own lists, days and months, drawn instead of the browser's (last screen) */
+.input.pick > svg:last-child { width: 16px; height: 16px; stroke: var(--ink-2); margin-left: auto; flex: none; }
+.input.bad { border-color: var(--stale-fg); }
+.err { font-size: 12.5px; font-weight: 500; color: var(--stale-fg); }
+.input .clear { margin-left: auto; width: 26px; height: 26px; border-radius: 50%; background: var(--surface-2); display: grid; place-items: center; flex: none; }
+.input .clear svg { width: 13px; height: 13px; stroke: var(--ink-2); }
+.optl { display: flex; flex-direction: column; }
+.optl .oh { font: 600 11.5px/1 var(--display); letter-spacing: .1em; text-transform: uppercase; color: var(--ink-2); padding: 12px 8px 6px; }
+.optl .oo { display: flex; align-items: center; gap: 10px; min-height: 44px; padding: 0 8px; border-radius: 8px; font-size: 14px; }
+.optl .oo.on { font-weight: 600; }
+.optl .oo.act { background: var(--sign-soft); }
+.optl .oo svg { width: 16px; height: 16px; stroke: var(--sign); margin-left: auto; flex: none; }
+.sheet .sh-h { display: flex; align-items: center; justify-content: space-between; }
+.sheet .sh-h b { font: 700 20px/1.1 var(--display); }
+.sheet .sh-h .iconbtn svg, .pop .iconbtn svg { width: 16px; height: 16px; }
+.cal { display: flex; flex-direction: column; gap: 4px; }
+.cal .ch { display: flex; align-items: center; justify-content: space-between; padding-bottom: 4px; }
+.cal .ch b { font: 700 18px/1 var(--display); letter-spacing: .02em; }
+.cal .wk, .cal .dg { display: grid; grid-template-columns: repeat(7, 1fr); text-align: center; }
+.cal .wk span { font-size: 11.5px; color: var(--ink-2); font-weight: 600; padding: 4px 0; }
+.cal .dg span { width: 40px; height: 40px; margin: 1px auto; display: grid; place-items: center; font-size: 14px; border-radius: 50%; font-variant-numeric: tabular-nums; }
+.cal .dg .off { color: var(--rule); opacity: .55; }
+.cal .dg .today { box-shadow: inset 0 0 0 1.5px var(--ink-2); font-weight: 600; }
+.cal .dg .on { background: var(--sign); color: var(--surface); font-weight: 600; box-shadow: none; }
+.cal .dg .act { outline: 2px solid var(--sign); outline-offset: 2px; }
+.cal .said { font-size: 12.5px; color: var(--ink-2); text-align: center; padding-top: 4px; }
+.mg { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; }
+.mg span { height: 46px; display: grid; place-items: center; border: 1px solid var(--border); border-radius: 8px; font-size: 14px; }
+.mg .on { background: var(--sign); border-color: var(--sign); color: var(--surface); font-weight: 600; }
+.mg .off { color: var(--rule); background: var(--surface-2); }
+.pop { position: absolute; background: var(--surface); border: 1px solid var(--border); border-radius: 10px; box-shadow: 0 10px 28px color-mix(in srgb, var(--ink) 16%, transparent); padding: 8px; z-index: 2; }
 /* The foot of every page: a band the colour of tarmac, closed off by the dashed middle line of a road. */
 .sfoot { background: var(--ink); color: color-mix(in srgb, var(--surface) 78%, var(--ink)); display: flex; flex-direction: column; flex: none; }
 .sfoot p { margin: 0; }
@@ -508,6 +539,8 @@ const ICON = {
   wifiOff: I('<path d="M2 2l20 20M8.5 16.4a5 5 0 0 1 7 0M5 12.9a10 10 0 0 1 5.2-2.7M19 12.9a10 10 0 0 0-2-1.5M2 8.8a15 15 0 0 1 4.2-2.6M22 8.8a15 15 0 0 0-11.3-3.9M12 20h.01"/>'),
   inbox: I('<path d="M22 12h-6l-2 3h-4l-2-3H2"/><path d="M5.5 5.1 2 12v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-6l-3.5-6.9A2 2 0 0 0 16.8 4H7.2a2 2 0 0 0-1.7 1.1z"/>'),
   flag: I('<path d="M4 22V4M4 4h13l-2 4 2 4H4"/>'),
+  cal: I('<rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/>'),
+  x: I('<path d="M18 6 6 18M6 6l12 12"/>'),
 };
 const esc = (s) => String(s).replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
 
@@ -1176,7 +1209,7 @@ Name: Rahul N.</span><span class="send">${ICON.send}</span></div>
           <div><span class="radio"></span>Something else</div>
         </div>
         <div class="field"><label>Tell us what you saw</label><div class="input filled" style="height:auto;padding:10px 12px;line-height:19px">Moved about 2 km towards Leh, next to the petrol pump.</div></div>
-        <div class="field"><label>When were you there?</label><div class="input filled">13 June 2027</div></div>
+        <div class="field"><label>When were you there?</label><div class="input filled pick">Sunday 13 June 2027${ICON.cal}</div></div>
         <span class="btn btn-primary btn-block" style="height:46px">${ICON.send}Send to Meel</span>
       </div>`)
     + phone('2. Before the editor has checked', `
@@ -1371,8 +1404,8 @@ Name: Rahul N.</span><span class="send">${ICON.send}</span></div>
         ${body(`
           ${steps(1)}
           <div class="sec-h"><h3>Your trip</h3></div>
-          <div class="field"><label>Route</label><div class="input filled">Manali to Leh</div></div>
-          <div class="field"><label>Month</label><div class="input filled">June 2027</div></div>
+          <div class="field"><label>Route</label><div class="input filled pick">Manali to Leh${ICON.down}</div></div>
+          <div class="field"><label>Month</label><div class="input filled pick">June 2027${ICON.cal}</div></div>
           <div class="field"><label>Bike</label><div class="input filled">Royal Enfield Classic 350</div></div>
           <div class="callout info"><b>That is enough to send</b>Everything on the next step is optional. Fill in what you remember.</div>`)}
         <div class="pfoot"><div class="btns"><span class="btn btn-outline">Send now</span><span class="btn btn-primary">Add details</span></div></div>`)
@@ -1649,9 +1682,9 @@ Name: Rahul N.</span><span class="send">${ICON.send}</span></div>
       return phone('1. Where and when', `
         ${head('Post a trip', 'Step 1 of 3')}
         ${body(`${steps(1)}
-          <div class="field"><label>Route</label><div class="input filled">Manali to Leh</div></div>
-          <div class="field"><label>Leaving</label><div class="input filled">Saturday 19 June 2027</div></div>
-          <div class="field"><label>Back</label><div class="input filled">Sunday 27 June 2027</div></div>
+          <div class="field"><label>Route</label><div class="input filled pick">Manali to Leh${ICON.down}</div></div>
+          <div class="field"><label>Leaving</label><div class="input filled pick">Saturday 19 June 2027${ICON.cal}</div></div>
+          <div class="field"><label>Back</label><div class="input filled pick">Sunday 27 June 2027${ICON.cal}</div></div>
           <div class="field"><label>Starting from</label><div class="input filled">Delhi</div></div>
           <div class="field"><label>Places, counting you</label><div class="input filled num">8</div><span class="hint">Between 2 and 12</span></div>`)}
         <div class="pfoot"><div class="btns"><span class="btn btn-outline">Cancel</span><span class="btn btn-primary">Next</span></div></div>`)
@@ -2134,7 +2167,7 @@ Rahul N. · seen 13 June 2027 · sent from the chat app at 9:12 pm</div>
     render: () => phone('1. Tools', `
       ${head('Tools', 'Work with no network', { back: false })}
       ${body(`
-        <div class="field"><label>Route</label><div class="input filled">Manali to Leh</div></div>
+        <div class="field"><label>Route</label><div class="input filled pick">Manali to Leh${ICON.down}</div></div>
         <div class="rows">
           <div class="row"><span class="ic">${ICON.fuel}</span><span class="grow"><b>Fuel check</b><span class="hint">Where you must carry extra fuel, for your bike</span></span>${chev}</div>
           <div class="row"><span class="ic">${ICON.peak}</span><span class="grow"><b>Altitude and night halts</b><span class="hint">How steeply your nights climb</span></span>${chev}</div>
@@ -2264,6 +2297,122 @@ Rahul N. · seen 13 June 2027 · sent from the chat app at 9:12 pm</div>
       ['The one promise', ['“Meel never says a road is open” has a line of its own. It is the rule the whole site keeps, so every page says it.']],
       ['Credits', ['OpenStreetMap asks for “© OpenStreetMap contributors” wherever its data appears. Its data is on nearly every page, so the credit is in the foot of every page.', 'A picture’s credit still sits under the picture. The foot only says where the pictures come from.']],
       ['Behaviour', ['“Your account” opens the log-in page for a rider who is not logged in, and brings them back to their account afterwards.', 'Every link is a plain link: nothing to open, nothing that needs a script.']],
+    ],
+  },
+  {
+    group: 'Every page', title: 'Picking from a list, a day or a month',
+    lede: 'Meel draws its own lists, calendars and ticks instead of the browser’s. They look the same on every phone, and a day always reads the Indian way: Saturday 19 June 2027.',
+    render: () => {
+      const tick = ICON.check;
+      const opt = (t, cls = '') => `<div class="oo ${cls}">${t}${cls.includes('on') ? tick : ''}</div>`;
+      const WEEK = ['Su', 'Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa'];
+      // June 2027: the 1st is a Tuesday, the example day is Monday 14 June.
+      const june = ({ on, off }) => {
+        const cells = ['<span></span>', '<span></span>'];
+        for (let d = 1; d <= 30; d += 1) {
+          const cls = [off(d) ? 'off' : '', d === 14 ? 'today' : '', d === on ? 'on' : ''].filter(Boolean).join(' ');
+          cells.push(`<span class="${cls}">${d}</span>`);
+        }
+        return `<div class="wk">${WEEK.map((w) => `<span>${w}</span>`).join('')}</div><div class="dg">${cells.join('')}</div>`;
+      };
+      const monthHead = (t) => `<div class="ch"><span class="iconbtn">${ICON.back}</span><b>${t}</b><span class="iconbtn">${ICON.right}</span></div>`;
+      const pick = (label, value, icon, extra = '') => `<div class="field"><label>${label}</label><div class="input ${value ? 'filled' : ''} pick ${extra}">${value || `<span>${icon === ICON.cal ? 'Pick a day' : 'Pick a route'}</span>`}${icon}</div></div>`;
+      const steps = (n) => `<div class="steps">${[1, 2, 3].map((i) => `<i class="${i <= n ? 'on' : ''}"></i>`).join('')}</div>`;
+      const tripForm = `${head('Post a trip', 'Step 1 of 3')}
+        ${body(`${steps(1)}
+          ${pick('Route', 'Manali to Leh', ICON.down)}
+          ${pick('Leaving', 'Saturday 19 June 2027', ICON.cal)}
+          ${pick('Back', 'Sunday 27 June 2027', ICON.cal)}
+          <div class="field"><label>Starting from</label><div class="input filled">Delhi</div></div>`)}`;
+      const MONTHS = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'June', 'July', 'Aug', 'Sept', 'Oct', 'Nov', 'Dec'];
+
+      return phone('1. A list, on a phone', `
+        ${tripForm}
+        <div class="sheet-scrim"></div>
+        <div class="sheet" style="gap:6px;max-height:640px"><span class="grab"></span>
+          <div class="sh-h"><b>Route</b><span class="iconbtn">${ICON.x}</span></div>
+          <div class="input">${ICON.search}<span>Type to narrow the list</span></div>
+          <div class="optl">
+            <div class="oh">Ladakh</div>
+            ${opt('Manali to Leh', 'on')}${opt('Srinagar to Leh')}${opt('Nubra valley and Turtuk')}${opt('Pangong, Hanle and Tso Moriri')}${opt('Umling La')}
+            <div class="oh">Zanskar and Kargil</div>
+            ${opt('Darcha, Shinku La and Padum')}${opt('Kargil to Padum')}
+          </div>
+        </div>`)
+      + phone('2. A day, on a phone', `
+        ${tripForm}
+        <div class="sheet-scrim"></div>
+        <div class="sheet" style="gap:8px"><span class="grab"></span>
+          <div class="sh-h"><b>Leaving</b><span class="iconbtn">${ICON.x}</span></div>
+          <div class="cal">${monthHead('June 2027')}${june({ on: 19, off: (d) => d < 14 })}
+            <div class="said">Days before today cannot be picked.</div></div>
+        </div>`)
+      + phone('3. A month, on a phone', `
+        ${head('Trip report', 'Step 1 of 3')}
+        ${body(`${steps(1)}
+          ${pick('Route', 'Manali to Leh', ICON.down)}
+          ${pick('Month', 'June 2027', ICON.cal)}
+          <div class="field"><label>Bike</label><div class="input filled">Royal Enfield Classic 350</div></div>`)}
+        <div class="sheet-scrim"></div>
+        <div class="sheet" style="gap:10px"><span class="grab"></span>
+          <div class="sh-h"><b>Month you rode</b><span class="iconbtn">${ICON.x}</span></div>
+          <div class="cal">${monthHead('2027')}</div>
+          <div class="mg">${MONTHS.map((m, i) => `<span class="${i === 5 ? 'on' : i > 5 ? 'off' : ''}">${m}</span>`).join('')}</div>
+          <div class="cal"><div class="said">Months still to come cannot be picked.</div></div>
+        </div>`)
+      + desk('4. A list, on a laptop', `
+        ${deskTop(`<span class="btn btn-outline">Log in</span>`)}
+        <div style="flex:1;min-height:0;background:var(--ground);padding:28px 0;overflow:hidden">
+          <div style="width:480px;margin:0 auto;display:flex;flex-direction:column;gap:12px;position:relative">
+            <h3 style="margin:0;font:700 30px/1.1 var(--display)">Post a trip</h3>
+            <span class="hint">Step 1 of 3</span>
+            <div class="field"><label>Route</label><div class="input filled pick focus">Manali to Leh${ICON.down}</div></div>
+            <div class="pop" style="left:0;right:0;top:132px;max-height:340px;overflow:hidden">
+              <div class="input">${ICON.search}<span>Type to narrow the list</span></div>
+              <div class="optl">
+                <div class="oh">Ladakh</div>
+                ${opt('Manali to Leh', 'on')}${opt('Srinagar to Leh', 'act')}${opt('Nubra valley and Turtuk')}${opt('Pangong, Hanle and Tso Moriri')}
+                <div class="oh">Zanskar and Kargil</div>
+              </div>
+            </div>
+            ${pick('Leaving', 'Saturday 19 June 2027', ICON.cal)}
+            ${pick('Back', 'Sunday 27 June 2027', ICON.cal)}
+            <div class="field"><label>Starting from</label><div class="input filled">Delhi</div></div>
+          </div>
+        </div>`)
+      + desk('5. A day, on a laptop, inside a fact’s sheet', `
+        ${deskTop(`<span class="btn btn-outline">Log in</span>`)}
+        <div style="flex:1;min-height:0;background:color-mix(in srgb, var(--ink) 45%, var(--ground));display:grid;place-items:start center;padding-top:40px;position:relative">
+          <div style="width:448px;background:var(--surface);border-radius:14px;padding:18px;display:flex;flex-direction:column;gap:12px;position:relative">
+            <h3 style="margin:0;font:700 22px/1.15 var(--display)">What has changed at Keylong petrol pump?</h3>
+            <div class="radio-list"><div><span class="radio"></span>It has closed</div><div class="on"><span class="radio"></span>Something else</div></div>
+            <div class="field"><label>When were you there?</label><div class="input filled pick focus">Sunday 13 June 2027${ICON.cal}</div></div>
+            <div class="pop" style="left:18px;width:330px;top:246px">
+              <div class="cal">${monthHead('June 2027')}${june({ on: 13, off: (d) => d > 14 })}
+                <div class="said">Days still to come cannot be picked.</div></div>
+            </div>
+            <div class="field"><label>Your name <em>optional, shown beside the fact</em></label><div class="input filled">Rahul N.</div></div>
+          </div>
+        </div>`)
+      + phone('6. Closed, before a tap', `
+        ${head('The parts', 'As they sit in a form')}
+        ${body(`
+          ${pick('Route', '', ICON.down)}
+          ${pick('Leaving', 'Saturday 19 June 2027', ICON.cal)}
+          <div class="field"><label>Back</label><div class="input filled pick bad">Friday 18 June 2027${ICON.cal}</div><span class="err">The trip cannot end before it starts.</span></div>
+          <div class="field"><label>Pace</label>
+            <div class="radio-list"><div class="on"><span class="radio"></span>Relaxed</div><div><span class="radio"></span>Steady</div></div></div>
+          <div class="field"><label>Where you will sleep <em>optional</em></label>
+            <div class="radio-list"><div><span class="box on">${ICON.check}</span>Keylong</div><div><span class="box"></span>Sarchu</div></div></div>
+          <div class="input filled focus">${ICON.search}<span>Spiti</span><span class="clear">${ICON.x}</span></div>`)}`);
+    },
+    notes: [
+      ['Why Meel draws its own', ['A browser draws its own list, calendar and ticks, and every phone draws them differently. One phone shows a day as 19/06/2027, another as 06/19/2027, and a laptop opens a calendar in a different language.', 'Meel’s own always read the same, on every phone: Saturday 19 June 2027, and a week that starts on Sunday, as Indian calendars do.']],
+      ['Layout (frames 1 to 5)', ['On a phone, a list, a day or a month rises in a sheet from the foot of the screen, like a fact’s sheet. Its title is the box’s own label, and a cross closes it.', 'On a laptop it opens right under the box, over what is below. With no room below, it opens above.', 'A list of more than ten has a box at the top to narrow it. The routes are grouped by region, as on the front page. The one chosen is in bold, with a tick. The shaded row is the keyboard’s (frame 4); on a phone no row is shaded until the rider types.', 'A calendar shows one month. Today has a ring. The day chosen is filled in green. Days that cannot be picked are pale, and the line under the calendar says why.']],
+      ['Closed (frame 6)', ['A closed list has a down arrow at its right. A day or a month has a calendar.', 'An empty box says what to do: “Pick a route”, “Pick a day”, “Pick a month”.', 'A mistake turns the box’s border red, with the reason under it, as for any typed box.', 'Ticks are square and round choices are round, drawn in Meel’s green. The search box’s cross is Meel’s own, and empties the box.']],
+      ['Behaviour', ['Tapping a route, a day or a month picks it and closes the sheet. Tapping outside, or the cross, closes it with nothing changed.', 'Leaving: days before today are pale. Back: the calendar opens on the leaving month, and days before leaving are pale. When you were there: days still to come are pale. Month you rode: months still to come are pale.', 'The arrows beside the month move a month. Beside the year, a year.']],
+      ['Keyboard', ['A list: up and down move, Enter picks, Escape closes. Typing letters narrows the list.', 'A calendar: the arrow keys move a day, or a week up and down. Page Up and Page Down move a month. Enter picks, Escape closes, and the box has the focus again.', 'A screen reader hears each day in full, such as “Saturday 19 June 2027”, and whether it can be picked.']],
+      ['Data', ['A day is sent as 2027-06-19, a month as 2027-06, and a route as its short name, such as manali-leh, as before. Nothing changes on the server.', 'These parts need the page’s script, as the forms that use them already do.']],
     ],
   },
 ];

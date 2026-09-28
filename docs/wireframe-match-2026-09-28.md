@@ -293,3 +293,23 @@ What the notes now also say: nothing is picked until an arrow key is pressed. En
 How it was checked: 24 steps in a real browser, on the site running on this machine, at phone and laptop sizes. They included the arrow keys, Enter, Escape, tapping and clicking a suggestion, clicking away, and what a screen reader is told. The header's box asks for the route list (about 10 KB) only the first time it is used. The front page asks for nothing, as it already has the routes. No errors appeared in the browser.
 
 **Focus on a typing box, fixed after this check.** Vishal saw a thick double ring around the header's search box when clicked. Every typing box on the site had it: the site-wide keyboard ring was drawn on top of the box's own focus style, because the ring's rule outranked it. The drawings show a focused box as a green border with a soft glow and no ring (`.input.focus`). The ring now gives way to a part's own focus style, so all eleven screens with typing boxes match that. Links, buttons and chips still show the ring when reached with the keyboard. The footer's links now show their ring in yellow, as written, where before the green one overrode it.
+
+---
+
+## Meel's own lists, days and months, checked the same day
+
+**Asked by:** Vishal: many places used the browser's own controls ("select, dates and all"). The browser drew the route lists, the day boxes on a trip, the month on a trip report, the day in a fact's report, the hand-over list when deleting an account, and every tick and round choice. Each phone drew them differently: a day read 28/09/2026 on one and 09/28/2026 on another. The search boxes also showed the browser's blue cross, and one fold-out showed the browser's triangle.
+**Drawn first:** screen 32, "Picking from a list, a day or a month", with six frames. The closed lists, days and months in screens 18, 20, 21, 23 and 26 now show their arrow or calendar. The gallery now has 32 screens and 100 frames.
+
+| Frame | What it shows | First check | What differed | Now |
+|---|---|---|---|---|
+| 32.1 | A list on a phone: a sheet with the label as its title, a box to narrow it, routes grouped by region | Close | The built sheet shaded the first row before anything was picked. The drawing shades nothing | [x] Build changed: on a phone no row is shaded until the rider types |
+| 32.2 | A day on a phone: a month, today ringed, days before today pale, and why | Matches | The line saying why ends with a full stop in the build | [x] Drawing changed to match |
+| 32.3 | A month on a phone: a year of months, months still to come pale | Close | The drawing shortened June, July and September to Jun, Jul and Sep. The site's own short forms are June, July and Sept | [x] Drawing changed to the site's short forms |
+| 32.4 | A list on a laptop: a panel right under the box, the keyboard's row shaded | Matches | | [x] |
+| 32.5 | A day on a laptop, inside a fact's sheet | Matches | Checked in a window 800 high. With no room under the box, the calendar opened above it, as the notes say | [x] |
+| 32.6 | Closed: arrow, calendar, "Pick a…", a mistake in red, ticks, round choices, the search box's own cross | Matches | | [x] |
+
+How it was checked: 47 steps in a real browser, on the site running on this machine, at phone and laptop sizes. They covered Tools, a trip report, a fact's two report sheets, signing up, posting a trip, the account page's delete sheet, the front page and the page that does not exist. On the keyboard: arrows, Page Up, Enter, Escape, and typing to narrow a list. Escape inside a fact's sheet closed only the calendar. Pale days and months could not be picked. The server saved the days exactly as picked: 10 to 15 October 2026. The test accounts and trips were deleted afterwards, and the local database is empty again.
+
+Not checked: a real phone's screen reader. The parts carry the labels a screen reader needs: each day is read in full, such as "Saturday 10 October 2026".

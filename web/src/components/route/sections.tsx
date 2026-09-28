@@ -7,7 +7,7 @@ import { REPORTS_NEEDED } from "@/lib/sections";
 import type { LegHours, NetworkReport, SeasonYear, Video } from "@/lib/types";
 import type { RouteView } from "@/server/route-view";
 
-import { IconAlert, IconExternal, IconFuel, IconPlay, IconPlus } from "../icons";
+import { IconAlert, IconDown, IconExternal, IconFuel, IconPlay, IconPlus } from "../icons";
 import { ShowMore } from "../show-more";
 import { TripCardView } from "../trips/trip-card";
 import { Badge, Callout, Empty, SectionHeading, SourceLine } from "../ui";
@@ -171,8 +171,11 @@ export function OpenSection({ view }: { view: RouteView }) {
             ))}
           </ol>
           {route.season.note ? <p className="text-sm">{route.season.note}</p> : null}
-          <details className="hint">
-            <summary className="link cursor-pointer text-sm font-medium">Notes and sources for each year</summary>
+          <details className="hint group">
+            <summary className="flex cursor-pointer list-none items-center gap-1 text-sm font-medium text-sign [&::-webkit-details-marker]:hidden">
+              <span className="link">Notes and sources for each year</span>
+              <IconDown className="size-4 shrink-0 transition-transform group-open:rotate-180" />
+            </summary>
             <ul className="mt-1 flex flex-col gap-2">
               {history.map((y) => (
                 <li key={y.year}>

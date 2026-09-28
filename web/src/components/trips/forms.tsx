@@ -7,7 +7,7 @@ import { askAction, flagAction, postTripAction, type TripFormState } from "@/app
 import { sayDate } from "@/lib/format";
 import type { Check } from "@/lib/trip-checks";
 
-import { Area, BLANK, ErrorSummary, Field, Select } from "../form";
+import { Area, BLANK, DayField, ErrorSummary, Field, ListField, routeGroups } from "../form";
 import { IconCheck, IconClock } from "../icons";
 import { BackHead, Foot } from "../shell";
 import { Callout } from "../ui";
@@ -42,6 +42,8 @@ export function PostTripForm({
   const [state, action, pending] = useActionState(postTripAction, START);
   const v = state.values ?? {};
   const [route, setRoute] = useState(v.route ?? startRoute);
+  // The day leaving, so the calendar for the day back opens on it and starts there.
+  const [leaving, setLeaving] = useState(v.leaves_on ?? "");
   const [checks, setChecks] = useState<Check[] | null>(null);
   // The step the rider has moved to, since the form last came back from the server.
   const [moved, setMoved] = useState<{ since: TripFormState; step: 1 | 2 } | null>(null);
@@ -49,7 +51,6 @@ export function PostTripForm({
   const form = useRef<HTMLFormElement>(null);
   const reviewing = state.step === "review";
   const chosen = routes.find((r) => r.slug === route);
-  const regions = [...new Set(routes.map((r) => r.region_name))];
   const untouched = state === START;
   const step: 1 | 2 = moved && moved.since === state ? moved.step : untouched ? 1 : stepOf(state.errors);
   const errors = { ...state.errors, ...missing };
@@ -162,30 +163,19 @@ export function PostTripForm({
 
       {/* Both steps stay in the form, so nothing typed is lost when the rider moves between them. */}
       <div hidden={step !== 1} className="flex flex-col gap-3">
-        {/* Not a controlled box: a form is reset after it is sent, and a reset must land on the route picked. */}
-        <Select
+        {/* The list keeps its own pick, which a form's reset after sending leaves alone. `route` follows it, for the night halts below. */}
+        <ListField
           label="Route"
           name="route"
+          groups={routeGroups(routes)}
           defaultValue={route}
-          onChange={(e) => setRoute(e.target.value)}
+          onValueChange={setRoute}
+          placeholder="Pick a route"
           error={errors.route}
-        >
-          <option value="">Pick a route</option>
-          {regions.map((region) => (
-            <optgroup key={region} label={region}>
-              {routes
-                .filter((r) => r.region_name === region)
-                .map((r) => (
-                  <option key={r.slug} value={r.slug}>
-                    {r.name}
-                  </option>
-                ))}
-            </optgroup>
-          ))}
-        </Select>
+        />
         <div className="grid grid-cols-2 gap-3">
-          <Field label="Leaving" name="leaves_on" type="date" defaultValue={v.leaves_on} error={errors.leaves_on} />
-          <Field label="Back" name="back_on" type="date" defaultValue={v.back_on} error={errors.back_on} />
+          <DayField label="Leaving" name="leaves_on" min="today" defaultValue={v.leaves_on} onValueChange={setLeaving} error={errors.leaves_on} />
+          <DayField label="Back" name="back_on" min={leaving || "today"} defaultValue={v.back_on} error={errors.back_on} />
         </div>
         <Field label="Starting from" name="from_city" defaultValue={v.from_city} error={errors.from_city} hint="The city riders gather in." />
         <Field

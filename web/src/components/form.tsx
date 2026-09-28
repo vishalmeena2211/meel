@@ -1,5 +1,6 @@
-import type { InputHTMLAttributes, ReactNode, SelectHTMLAttributes, TextareaHTMLAttributes } from "react";
+import type { InputHTMLAttributes, ReactNode, TextareaHTMLAttributes } from "react";
 
+import { DayPicker, ListPicker, MonthPicker, type ChoiceGroup } from "./pickers";
 import { BackHead, TopHead } from "./shell";
 
 export interface FormState {
@@ -25,7 +26,7 @@ interface Common {
 function Wrap({ label, name, id = name, hint, optional, error, children }: Common & { children: ReactNode }) {
   return (
     <div className="flex flex-col gap-1">
-      <label htmlFor={id} className="text-sm font-semibold">
+      <label htmlFor={id} id={`${id}-label`} className="text-sm font-semibold">
         {label} {optional ? <span className="font-normal text-ink-2">{optional}</span> : null}
       </label>
       {children}
@@ -95,30 +96,107 @@ export function Area({
   );
 }
 
-export function Select({
+/** A list to pick one from, drawn by Meel rather than the browser. */
+export function ListField({
   label,
   name,
   id = name,
   hint,
   optional,
   error,
-  children,
-  ...rest
-}: Common & Omit<SelectHTMLAttributes<HTMLSelectElement>, "name" | "id"> & { children: ReactNode }) {
+  groups,
+  defaultValue,
+  onValueChange,
+  placeholder,
+}: Common & { groups: ChoiceGroup[]; defaultValue?: string; onValueChange?: (value: string) => void; placeholder: string }) {
   return (
     <Wrap label={label} name={name} id={id} hint={hint} optional={optional} error={error}>
-      <select
+      <ListPicker
         id={id}
+        labelId={`${id}-label`}
+        title={label}
         name={name}
-        aria-invalid={error ? true : undefined}
-        aria-describedby={described(id, hint, error)}
-        className="field-input"
-        {...rest}
-      >
-        {children}
-      </select>
+        groups={groups}
+        defaultValue={defaultValue}
+        onValueChange={onValueChange}
+        placeholder={placeholder}
+        invalid={!!error}
+        describedBy={described(id, hint, error)}
+      />
     </Wrap>
   );
+}
+
+/** A day, picked from Meel's own calendar. Sent as "2027-06-19". */
+export function DayField({
+  label,
+  name,
+  id = name,
+  hint,
+  optional,
+  error,
+  defaultValue,
+  onValueChange,
+  min,
+  max,
+}: Common & { defaultValue?: string; onValueChange?: (value: string) => void; min?: string; max?: string }) {
+  return (
+    <Wrap label={label} name={name} id={id} hint={hint} optional={optional} error={error}>
+      <DayPicker
+        id={id}
+        labelId={`${id}-label`}
+        title={label}
+        name={name}
+        defaultValue={defaultValue}
+        onValueChange={onValueChange}
+        min={min}
+        max={max}
+        invalid={!!error}
+        describedBy={described(id, hint, error)}
+      />
+    </Wrap>
+  );
+}
+
+/** A month, picked from Meel's own grid of months. Sent as "2027-06". */
+export function MonthField({
+  label,
+  name,
+  id = name,
+  hint,
+  optional,
+  error,
+  defaultValue,
+  onValueChange,
+  min,
+  max,
+  title,
+}: Common & { defaultValue?: string; onValueChange?: (value: string) => void; min?: string; max?: string; title?: string }) {
+  return (
+    <Wrap label={label} name={name} id={id} hint={hint} optional={optional} error={error}>
+      <MonthPicker
+        id={id}
+        labelId={`${id}-label`}
+        title={title ?? label}
+        name={name}
+        defaultValue={defaultValue}
+        onValueChange={onValueChange}
+        min={min}
+        max={max}
+        invalid={!!error}
+        describedBy={described(id, hint, error)}
+      />
+    </Wrap>
+  );
+}
+
+/** Routes grouped by region, in the order they came, for a list of routes. */
+export function routeGroups(routes: ReadonlyArray<{ slug: string; name: string; region_name: string }>): ChoiceGroup[] {
+  const regions = [...new Set(routes.map((r) => r.region_name))];
+  return regions.map((region) => ({
+    label: region,
+    choices: routes.filter((r) => r.region_name === region).map((r) => ({ value: r.slug, label: r.name })),
+  }));
 }
 
 export { ErrorSummary } from "./error-summary";

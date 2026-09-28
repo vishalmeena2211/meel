@@ -15,6 +15,7 @@ import {
 
 import { BLANK, ErrorSummary, Field } from "../form";
 import { IconCheck, IconClock, IconRight } from "../icons";
+import { ListPicker } from "../pickers";
 import { Foot } from "../shell";
 import { Callout } from "../ui";
 
@@ -396,17 +397,26 @@ export function DeleteAccount({
           </ul>
           {leads.map((t) => (
             <div key={t.id} className="flex flex-col gap-1">
-              <label htmlFor={`hand-${t.id}`} className="text-sm font-semibold">
+              <label htmlFor={`hand-${t.id}`} id={`hand-${t.id}-label`} className="text-sm font-semibold">
                 You lead {t.name}. What happens to it?
               </label>
-              <select id={`hand-${t.id}`} name={`hand:${t.id}`} className="field-input" defaultValue="withdraw">
-                <option value="withdraw">Withdraw the trip</option>
-                {t.riders.map((r) => (
-                  <option key={r.id} value={r.id}>
-                    Hand it to {r.name}, who is going
-                  </option>
-                ))}
-              </select>
+              <ListPicker
+                id={`hand-${t.id}`}
+                labelId={`hand-${t.id}-label`}
+                title="What happens to your trip"
+                name={`hand:${t.id}`}
+                defaultValue="withdraw"
+                placeholder="Withdraw the trip"
+                groups={[
+                  {
+                    label: "",
+                    choices: [
+                      { value: "withdraw", label: "Withdraw the trip" },
+                      ...t.riders.map((r) => ({ value: r.id, label: `Hand it to ${r.name}, who is going` })),
+                    ],
+                  },
+                ]}
+              />
               {t.riders.length === 0 ? <p className="hint">Nobody else is going yet, so it can only be withdrawn.</p> : null}
             </div>
           ))}

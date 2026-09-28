@@ -73,6 +73,49 @@ body {
     outline: 2px solid var(--color-sign);
     outline-offset: 2px;
   }
+
+  /*
+    Ticks and round choices are drawn as in the wireframes, not left to the browser, which draws them its own way
+    on every phone. They stay real checkboxes and radio buttons, so forms, keyboards and screen readers work as before.
+  */
+  input[type="checkbox"],
+  input[type="radio"] {
+    appearance: none;
+    flex: none;
+    width: 18px;
+    height: 18px;
+    margin: 0;
+    border: 1.5px solid var(--color-rule);
+    background: var(--color-surface);
+    cursor: pointer;
+  }
+  input[type="checkbox"] {
+    border-radius: 4px;
+  }
+  input[type="checkbox"]:checked {
+    border-color: var(--color-sign);
+    background: var(--color-sign)
+      url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M20 6 9 17l-5-5'/%3E%3C/svg%3E")
+      center / 12px no-repeat;
+  }
+  input[type="radio"] {
+    border-radius: 50%;
+  }
+  input[type="radio"]:checked {
+    border: 5px solid var(--color-sign);
+  }
+  input[type="checkbox"]:disabled,
+  input[type="radio"]:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+  }
+
+  /* A search box's cross is Meel's own (search-suggest.tsx). */
+  input[type="search"]::-webkit-search-cancel-button,
+  input[type="search"]::-webkit-search-decoration {
+    appearance: none;
+    display: none;
+  }
 }
 
 @layer components {
@@ -185,6 +228,55 @@ body {
   }
   .field-input[aria-invalid="true"] {
     border-color: var(--color-stale-fg);
+  }
+  /* A browser that fills a box for the rider paints it yellow. It stays white, like every other box. */
+  .field-input:-webkit-autofill {
+    -webkit-text-fill-color: var(--color-ink);
+    box-shadow: inset 0 0 0 100px var(--color-surface);
+  }
+  .field-input:-webkit-autofill:focus {
+    box-shadow:
+      inset 0 0 0 100px var(--color-surface),
+      0 0 0 3px var(--color-sign-soft);
+  }
+
+  /*
+    The sheet or panel a list, day or month picker opens (pickers.tsx). On a phone it rises from the foot of the
+    screen, like a fact's sheet. On a laptop it sits under its box, placed by the script.
+  */
+  .picker {
+    position: fixed;
+    inset: auto 0 0 0;
+    width: 100%;
+    max-width: none;
+    max-height: 85dvh;
+    margin: 0;
+    padding: 0.5rem 1rem calc(1.25rem + env(safe-area-inset-bottom));
+    border: 0;
+    border-radius: 1.125rem 1.125rem 0 0;
+    background: var(--color-surface);
+    color: var(--color-ink);
+    overflow: hidden;
+  }
+  .picker:popover-open {
+    display: flex;
+    flex-direction: column;
+  }
+  .picker::backdrop {
+    background: rgb(22 32 28 / 0.45);
+  }
+  @media (min-width: 768px) {
+    .picker {
+      inset: auto;
+      max-height: min(26rem, 80vh);
+      padding: 0.5rem;
+      border: 1px solid var(--color-line);
+      border-radius: 0.625rem;
+      box-shadow: 0 10px 28px rgb(22 32 28 / 0.16);
+    }
+    .picker::backdrop {
+      background: transparent;
+    }
   }
 
   .card {

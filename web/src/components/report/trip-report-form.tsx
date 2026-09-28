@@ -7,7 +7,7 @@ import { reportTrip, suggest } from "@/app/actions/reports";
 import type { FormState } from "@/components/form";
 import { indiaMonth, km, sayDate } from "@/lib/format";
 
-import { Area, BLANK, ErrorSummary, Field, Select } from "../form";
+import { Area, BLANK, ErrorSummary, Field, ListField, MonthField, routeGroups } from "../form";
 import { IconSend } from "../icons";
 import { BackHead, Foot } from "../shell";
 import { Callout } from "../ui";
@@ -115,7 +115,7 @@ function ReportSteps({ routes, startRoute, loggedInAs, chatNumber, openAt }: Pro
   const live: Values = { ...v, ...now };
   const routeSlug = live.route ?? startRoute;
   const route = routes.find((r) => r.slug === routeSlug) ?? null;
-  const regions = [...new Set(routes.map((r) => r.region_name))];
+  const groups = routeGroups(routes);
   const thisMonth = indiaMonth();
   const errors = { ...state.errors, ...missing };
   const firstStep = ["route", "month", "bike"].some((n) => errors[n]);
@@ -125,6 +125,13 @@ function ReportSteps({ routes, startRoute, loggedInAs, chatNumber, openAt }: Pro
 
   function changed(event: FormEvent<HTMLFormElement>) {
     const values = read(event.currentTarget);
+    setNow(values);
+    writeDraft(values);
+  }
+
+  // A pick from a list or a month is not a typed change, so it asks for the form to be read again itself.
+  function reread() {
+    const values = read(form.current);
     setNow(values);
     writeDraft(values);
   }
@@ -205,21 +212,16 @@ function ReportSteps({ routes, startRoute, loggedInAs, chatNumber, openAt }: Pro
       {/* ── step 1: the three things we need ─────────────────────────── */}
       <div hidden={step !== 1} className="flex flex-col gap-3">
         <h2 className="label">Your trip</h2>
-        <Select label="Route" name="route" defaultValue={v.route ?? startRoute} error={errors.route}>
-          <option value="">Pick a route</option>
-          {regions.map((region) => (
-            <optgroup key={region} label={region}>
-              {routes
-                .filter((r) => r.region_name === region)
-                .map((r) => (
-                  <option key={r.slug} value={r.slug}>
-                    {r.name}
-                  </option>
-                ))}
-            </optgroup>
-          ))}
-        </Select>
-        <Field label="Month" name="month" type="month" max={thisMonth} defaultValue={v.month} error={errors.month} />
+        <ListField
+          label="Route"
+          name="route"
+          groups={groups}
+          defaultValue={v.route ?? startRoute}
+          onValueChange={reread}
+          placeholder="Pick a route"
+          error={errors.route}
+        />
+        <MonthField label="Month" title="Month you rode" name="month" max={thisMonth} defaultValue={v.month} onValueChange={reread} error={errors.month} />
         <Field label="Bike" name="bike" defaultValue={v.bike} error={errors.bike} hint="Such as Royal Enfield Classic 350." />
         <Callout tone="info" title="That is enough to send">
           Everything on the next step is optional. Fill in what you remember.

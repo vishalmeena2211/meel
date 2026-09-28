@@ -4,7 +4,9 @@ import Link from "next/link";
 
 import { parseStored, useStored } from "@/lib/use-stored";
 
+import { routeGroups } from "../form";
 import { IconBag, IconFuel, IconPeak, IconRight } from "../icons";
+import { ListPicker } from "../pickers";
 import { isSavedBike } from "./fuel-check";
 
 interface Choice {
@@ -20,7 +22,6 @@ export function RoutePicker({ routes }: { routes: Choice[] }) {
   const slug = last && routes.some((r) => r.slug === last) ? last : "";
   const saved = parseStored(bikeRaw, isSavedBike);
   const bike = saved ? `${saved.name} · ${saved.tank} litres` : null;
-  const regions = [...new Set(routes.map((r) => r.region_name))];
   const chosen = routes.find((r) => r.slug === slug);
 
   function pick(value: string) {
@@ -36,23 +37,18 @@ export function RoutePicker({ routes }: { routes: Choice[] }) {
   return (
     <div className="flex flex-col gap-4">
       <div className="flex flex-col gap-1">
-        <label htmlFor="tool-route" className="text-sm font-semibold">
+        <label htmlFor="tool-route" id="tool-route-label" className="text-sm font-semibold">
           Route
         </label>
-        <select id="tool-route" className="field-input" value={slug} onChange={(e) => pick(e.target.value)}>
-          <option value="">Pick a route</option>
-          {regions.map((region) => (
-            <optgroup key={region} label={region}>
-              {routes
-                .filter((r) => r.region_name === region)
-                .map((r) => (
-                  <option key={r.slug} value={r.slug}>
-                    {r.name}
-                  </option>
-                ))}
-            </optgroup>
-          ))}
-        </select>
+        <ListPicker
+          id="tool-route"
+          labelId="tool-route-label"
+          title="Route"
+          groups={routeGroups(routes)}
+          value={slug}
+          onValueChange={pick}
+          placeholder="Pick a route"
+        />
       </div>
 
       <ul className="card flex flex-col">

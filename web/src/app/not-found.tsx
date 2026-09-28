@@ -1,6 +1,7 @@
 import Link from "next/link";
 
 import { IconMap, IconSearch } from "@/components/icons";
+import { SearchSuggest } from "@/components/search-suggest";
 import { TopHead } from "@/components/shell";
 import { Callout } from "@/components/ui";
 
@@ -15,15 +16,10 @@ export default function NotFound() {
         <IconMap />
         See all routes
       </Link>
-      <form action="/" role="search" className="relative">
-        <IconSearch className="absolute top-1/2 left-3 size-4 -translate-y-1/2 text-ink-2" />
-        <input
-          type="search"
-          name="q"
-          aria-label="Search a route or place"
-          placeholder="Search a route or place"
-          className="field-input !pl-9"
-        />
+      <form action="/" role="search">
+        <SearchSuggest name="q" inputClassName="field-input !pr-10 !pl-9">
+          <IconSearch className="pointer-events-none absolute top-1/2 left-3 size-4 -translate-y-1/2 text-ink-2" />
+        </SearchSuggest>
       </form>
     </div>
   );

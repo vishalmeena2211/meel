@@ -62,7 +62,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
             </Link>
             {/* With no JavaScript, Enter still searches: the form sends ?q= to the front page. */}
             <form action="/" role="search" className="ml-3 hidden w-72 lg:block">
-              <SearchSuggest name="q" placement="header" inputClassName="field-input !min-h-10 !py-1.5 !pl-9 text-sm">
+              <SearchSuggest name="q" placement="header" inputClassName="field-input !min-h-10 !py-1.5 !pr-10 !pl-9 text-sm">
                 <IconSearch className="pointer-events-none absolute top-1/2 left-3 size-4 -translate-y-1/2 text-ink-2" />
               </SearchSuggest>
             </form>
