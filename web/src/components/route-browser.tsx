@@ -5,9 +5,11 @@ import Link from "next/link";
 import { useMemo, useState, useSyncExternalStore } from "react";
 
 import { km, plural } from "@/lib/format";
+import { spelledLike } from "@/lib/search";
 import type { Region, RouteSummary } from "@/lib/types";
 
 import { IconSearch } from "./icons";
+import { SearchSuggest } from "./search-suggest";
 import { Badge, Callout } from "./ui";
 
 export interface RoadLine {
@@ -174,35 +176,6 @@ function askedInAddress(): string {
   return (new URLSearchParams(window.location.search).get("q") ?? "").slice(0, 80);
 }
 
-function grams(text: string): Set<string> {
-  const t = ` ${text.toLowerCase().replace(/[^a-z0-9]+/g, " ").trim()} `;
-  const out = new Set<string>();
-  for (let i = 0; i < t.length - 2; i += 1) out.add(t.slice(i, i + 3));
-  return out;
-}
-
-/** Routes whose names or places are spelt most like what was typed. Spelling only: the site does not know where a strange place is. */
-function spelledLike(query: string, routes: RouteSummary[]): RouteSummary[] {
-  const q = grams(query);
-  if (q.size < 2) return [];
-  return routes
-    .map((r) => {
-      const best = Math.max(
-        ...[r.name, ...r.places].map((name) => {
-          const g = grams(name);
-          let shared = 0;
-          for (const x of q) if (g.has(x)) shared += 1;
-          return shared / Math.max(q.size, 1);
-        }),
-      );
-      return { route: r, best };
-    })
-    .filter((x) => x.best >= 0.34)
-    .sort((a, b) => b.best - a.best)
-    .slice(0, 3)
-    .map((x) => x.route);
-}
-
 export function RouteBrowser({
   routes,
   regions,
@@ -242,19 +215,16 @@ export function RouteBrowser({
 
   return (
     <div className="flex flex-col gap-4">
-      <label className="field-input flex items-center gap-2 !py-0">
+      <SearchSuggest
+        routes={routes}
+        value={query}
+        onValueChange={setQuery}
+        className="field-input flex items-center gap-2 !py-0 focus-within:border-sign focus-within:shadow-[0_0_0_3px_var(--color-sign-soft)]"
+        // The frame shows the focus, so the box inside it draws none of its own.
+        inputClassName="min-h-[44px] w-full bg-transparent !outline-none"
+      >
         <IconSearch className="size-4 shrink-0 text-ink-2" />
-        <span className="sr-only">Search a route or place</span>
-        <input
-          id="route-search"
-          type="search"
-          value={query}
-          onChange={(e) => setQuery(e.target.value)}
-          placeholder="Search a route or place"
-          className="min-h-[44px] w-full bg-transparent outline-none"
-          autoComplete="off"
-        />
-      </label>
+      </SearchSuggest>
 
       {groups.length === 0 ? (
         <>

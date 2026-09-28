@@ -275,3 +275,19 @@ How it was checked: the card was made by the site running on this machine and se
 How it was checked: on the site running on this machine, as a visitor with no account, with a test trip that was deleted afterwards. The test trip's chat group link held a marker; it appeared in none of the page, the message or the card. A trip waiting for the editor gave Meel's own card, byte for byte. A full trip's message said so, and its card said "Full".
 
 Not checked: WhatsApp itself fetching the card. That needs the site public, since a private site shows WhatsApp only Vercel's log-in page.
+
+---
+
+## Search suggestions as you type, checked the same day
+
+**Asked by:** Vishal: "search bar is not suggesting things when typing". The box in the header only searched when Enter was pressed. The one on the front page did narrow the routes, but below the big road drawing, out of sight on a phone.
+**Drawn first:** frame 2.4, suggestions under the front page's box on a phone; frame 2.5, the header's box on a laptop, from a route page, with a word spelt wrong. The gallery now has 94 frames.
+
+| Frame | What it shows | First check | What differed | Now |
+|---|---|---|---|---|
+| 2.4 | "Leh" typed: two routes, then Leh on two other routes | Close | The drawing listed the places Pangong first. The built list puts them in the order of their routes' names, Nubra first | [x] Drawing changed to Nubra first |
+| 2.5 | "spitti" typed in the header: Spiti circuit, then "Search all routes for “spitti”" | Matches | | [x] |
+
+What the notes now also say: nothing is picked until an arrow key is pressed. Enter with nothing picked searches every route from the header, and on the front page closes the list so the routes below show. Two letters match only at the start of a word, so "sp" brings up Spiti, not Jispa.
+
+How it was checked: 24 steps in a real browser, on the site running on this machine, at phone and laptop sizes. They included the arrow keys, Enter, Escape, tapping and clicking a suggestion, clicking away, and what a screen reader is told. The header's box asks for the route list (about 10 KB) only the first time it is used. The front page asks for nothing, as it already has the routes. No errors appeared in the browser.

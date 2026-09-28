@@ -115,6 +115,17 @@ button { font: inherit; color: inherit; }
 .btn-soft { background: var(--sign-soft); color: var(--sign); border-color: var(--sign-line); }
 .btn-disabled { background: var(--surface-2); color: var(--rule); border-color: var(--border); }
 .btn-block { width: 100%; }
+/* Suggestions under a search box, as the rider types. */
+.sugg { border: 1px solid var(--border); border-radius: 10px; background: var(--surface); box-shadow: 0 10px 28px color-mix(in srgb, var(--ink) 16%, transparent); overflow: hidden; }
+.sugg .sh { font: 600 11.5px/1 var(--display); letter-spacing: .1em; text-transform: uppercase; color: var(--ink-2); padding: 10px 12px 4px; }
+.sugg .so { display: flex; align-items: center; gap: 10px; padding: 7px 12px; min-height: 44px; }
+.sugg .so svg { width: 16px; height: 16px; stroke: var(--ink-2); flex: none; }
+.sugg .so.on { background: var(--sign-soft); }
+.sugg .so .grow { flex: 1; min-width: 0; }
+.sugg .so b { display: block; font-weight: 600; font-size: 14px; line-height: 19px; }
+.sugg .so u { text-decoration-thickness: 2px; text-underline-offset: 2px; }
+.sugg .so .hint { display: block; }
+.sugg .all { border-top: 1px solid var(--border); color: var(--sign); font-weight: 600; }
 /* The foot of every page: a band the colour of tarmac, closed off by the dashed middle line of a road. */
 .sfoot { background: var(--ink); color: color-mix(in srgb, var(--surface) 78%, var(--ink)); display: flex; flex-direction: column; flex: none; }
 .sfoot p { margin: 0; }
@@ -694,10 +705,39 @@ const SCREENS = [
           <div class="empty"><b>No route called “Valley of Flowers” yet</b><span>Meel has 50 routes so far. Tell us about this one and it goes on the list.</span><span class="btn btn-soft">${ICON.plus}Suggest this place</span></div>
           <div class="lbl">Routes with names like it</div>
           ${card('Kinnaur: Sangla, Chitkul and Kalpa', basic, 'Rampur, Karcham, Sangla, Chitkul · 39 facts')}`)}
-        ${tabbar('Routes')}`);
+        ${tabbar('Routes')}`)
+      + phone('4. Suggestions as you type', `
+        ${head('Meel', '50 routes · 3 written in full', { back: false, right: `<span class="iconbtn">${ICON.map}</span>` })}
+        ${body(`
+          <div class="input filled focus">${ICON.search}<span>Leh</span></div>
+          <div class="sugg">
+            <div class="sh">Routes</div>
+            <div class="so on">${ICON.map}<span class="grow"><b>Manali to <u>Leh</u></b><span class="hint">Ladakh · 434 km</span></span></div>
+            <div class="so">${ICON.map}<span class="grow"><b>Srinagar to <u>Leh</u></b><span class="hint">Ladakh · 421 km</span></span></div>
+            <div class="sh">Places on a route</div>
+            <div class="so">${ICON.flag}<span class="grow"><b><u>Leh</u></b><span class="hint">On Nubra valley and Turtuk</span></span></div>
+            <div class="so">${ICON.flag}<span class="grow"><b><u>Leh</u></b><span class="hint">On Pangong, Hanle and Tso Moriri</span></span></div>
+          </div>`)}
+        ${tabbar('Routes')}`)
+      + desk('5. On a laptop, from any page, spelt wrong', `
+        <div class="desk-top" style="position:relative">${mark()}<span class="brand">Meel</span>
+          <span class="input filled focus">${ICON.search}<span>spitti</span></span><span class="sp"></span><span class="btn btn-outline">Log in</span>
+          <div class="sugg" style="position:absolute;left:150px;top:56px;width:420px;z-index:2">
+            <div class="sh">No route called “spitti”. Spelt like it</div>
+            <div class="so on">${ICON.map}<span class="grow"><b>Spiti circuit</b><span class="hint">Himachal · 616 km</span></span></div>
+            <div class="so all">${ICON.search}<span class="grow">Search all routes for “spitti”</span></div>
+          </div>
+        </div>
+        <div style="flex:1;background:var(--ground);padding:28px 40px;opacity:.55">
+          <div style="max-width:760px;display:flex;flex-direction:column;gap:12px">
+            <h3 style="margin:0;font:700 26px/1.1 var(--display)">Fuel</h3>
+            ${gapStrip}
+          </div>
+        </div>`);
     },
     notes: [
       ['Layout', ['Three kinds of route card: full page, basic page, not written yet. The dashed card is the unwritten one.', 'A card says how much is behind it: number of facts, and how recently riders confirmed them.', 'Region filters scroll sideways. South, West, Central and the rest sit further along the row.']],
+      ['Suggestions (frames 4 and 5)', ['From the second letter, suggestions open under the box: in the header on a laptop, from any page, and on the front page on a phone.', 'Routes whose names match come first, then places along a route, each saying which route it is on. When nothing matches, the routes spelt most like it.', 'Arrow keys move through them, Enter opens the one picked, and Escape closes the list. A screen reader is told how many there are.', 'Nothing is picked until an arrow key is pressed (the shaded rows above). Enter with nothing picked searches every route on a laptop, and on the front page closes the list to show the routes below.', 'Two letters match only at the start of a word, so “sp” brings up Spiti, not Jispa.', 'On the front page, the routes below still narrow as you type.']],
       ['Behaviour', ['Search looks at route names and at the places inside each route.', 'No match is not an error. It offers to take the suggestion and shows routes whose names are spelt like what was typed.', 'The site cannot know where a place it has never heard of lies, so it does not claim to show routes near it.', '“Suggest this place” opens a short form. It goes to the editor’s inbox.']],
       ['Data', ['Per route: name, region, the places along it, a line on the map, page level, number of facts.', '“Confirmed this week” is counted when the site is rebuilt, not live.']],
       ['Decided, 28 September 2026', ['The roads are drawn alone, with no map beneath and no border. A road has no border, and a border drawn wrongly is against Indian law.', 'A map beneath the roads can be added later, from a source that draws India’s borders as the law requires.']],

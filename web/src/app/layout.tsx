@@ -5,6 +5,7 @@ import Link from "next/link";
 
 import { IconSearch } from "@/components/icons";
 import { OutboxSender } from "@/components/offline/outbox-sender";
+import { SearchSuggest } from "@/components/search-suggest";
 import { SiteFoot } from "@/components/site-foot";
 import { SiteNav, TabBar } from "@/components/site-nav";
 import { KmStone } from "@/components/ui";
@@ -59,15 +60,11 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
               <KmStone cap="" value="M" unit="" size="sm" />
               <span className="display text-[1.375rem] tracking-wide uppercase">Meel</span>
             </Link>
-            <form action="/" role="search" className="relative ml-3 hidden w-72 lg:block">
-              <IconSearch className="absolute top-1/2 left-3 size-4 -translate-y-1/2 text-ink-2" />
-              <input
-                type="search"
-                name="q"
-                aria-label="Search a route or place"
-                placeholder="Search a route or place"
-                className="field-input !min-h-10 !py-1.5 !pl-9 text-sm"
-              />
+            {/* With no JavaScript, Enter still searches: the form sends ?q= to the front page. */}
+            <form action="/" role="search" className="ml-3 hidden w-72 lg:block">
+              <SearchSuggest name="q" placement="header" inputClassName="field-input !min-h-10 !py-1.5 !pl-9 text-sm">
+                <IconSearch className="pointer-events-none absolute top-1/2 left-3 size-4 -translate-y-1/2 text-ink-2" />
+              </SearchSuggest>
             </form>
             <div id="head-slot" className="ml-auto hidden items-center gap-2 lg:flex" />
             <SiteNav />
