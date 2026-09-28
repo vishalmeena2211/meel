@@ -99,12 +99,23 @@ def through_tunnels(profile, tunnels):
     return out, used
 
 
+# Steep stretches a person has looked at, with heights read every 200 m, and found to be the road itself.
+# (route, from km, to km): what was found. The step on the page is then left as it is.
+STEEP_CHECKED = {
+    ("jalori-tirthan", 55, 73): "28 Sep 2026: a smooth climb of about 1,000 m in 8 km to Jalori Pass, then down; no spike. "
+                                "The road is known for being very steep.",
+    ("darjeeling-kalimpong-sandakphu", 506, 518): "28 Sep 2026: a smooth drop of about 1,200 m in 10 km to the Teesta; no spike.",
+}
+
+
 def steep(slug, profile):
     """A road rarely climbs more than one metre in eight for kilometres on end. A steeper jump between two heights is
-    more likely a tunnel or a cliff the grid caught, so it is named for a person to look at."""
+    more likely a tunnel or a cliff the grid caught, so it is named for a person to look at, unless one already has."""
     for a, b in zip(profile, profile[1:]):
         run = (b["km"] - a["km"]) * 1000
         if run > 0 and abs(b["m"] - a["m"]) / run > 0.125:
+            if any(s == slug and lo <= a["km"] and b["km"] <= hi for (s, lo, hi) in STEEP_CHECKED):
+                continue
             print(f"  check {slug}: {a['m']} m at km {a['km']} to {b['m']} m at km {b['km']}")
 
 

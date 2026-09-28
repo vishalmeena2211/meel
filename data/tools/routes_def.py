@@ -145,9 +145,10 @@ ROUTES = [
     # ── North-East ─────────────────────────────────────────────────────────
     dict(slug="guwahati-tawang", name="Guwahati to Tawang", region="north-east", batch=3, terrain="mountain",
          places=[("Guwahati", "Guwahati"), ("Tezpur", "Tezpur"), ("Bhalukpong", "Bhalukpong"),
-                 ("Bomdila", "Bomdila"), ("Dirang", "Dirang"), ("Sela Pass", "Sela Pass"),
-                 ("Jang", "Jang, Tawang"), ("Tawang", "Tawang")],
-         passes=["Sela Pass"]),
+                 ("Bomdila", "Bomdila"), ("Dirang", "Dirang"),
+                 # Through the Sela Tunnel, opened 9 March 2024, not over Sela Pass: a stop at the pass would force
+                 # the line over it. The page says both ways.
+                 ("Jang", "Jang, Tawang"), ("Tawang", "Tawang")]),
     dict(slug="arunachal-centre-east", name="Arunachal: Ziro, Mechuka, Anini and Walong", region="north-east", batch=3, terrain="mountain",
          places=[("Ziro", "Ziro, Arunachal Pradesh"), ("Daporijo", "Daporijo"), ("Aalo", "Aalo, Arunachal Pradesh"),
                  ("Mechuka", "Mechuka"), ("Aalo", "Aalo, Arunachal Pradesh"), ("Pasighat", "Pasighat"),

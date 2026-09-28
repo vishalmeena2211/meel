@@ -2,25 +2,25 @@
   "slug": "guwahati-tawang",
   "header": {
     "highway": {
-      "value": "NH 13 over Sela, from Bomdila to Tawang",
+      "value": "NH 13, through the Sela Tunnel, from Bomdila to Tawang",
       "source": {
-        "url": "https://en.wikipedia.org/wiki/Sela_Pass",
-        "title": "Sela Pass",
+        "url": "https://en.wikipedia.org/wiki/Sela_Tunnel",
+        "title": "Sela Tunnel",
         "kind": "encyclopedia",
         "opened": true,
-        "source_date": "2026-08-27",
+        "source_date": null,
         "accessed": "2026-09-28"
       }
     },
     "highest_point": {
-      "name": "Sela Pass",
-      "altitude_m": 4170,
+      "name": "Sela Tunnel",
+      "altitude_m": 3962,
       "source": {
-        "url": "https://en.wikipedia.org/wiki/Sela_Pass",
-        "title": "Sela Pass",
-        "kind": "encyclopedia",
+        "url": "https://www.pib.gov.in/PressReleaseIframePage.aspx?PRID=2012962",
+        "title": "Prime Minister dedicates to the nation Sela Tunnel (13,000 feet)",
+        "kind": "official",
         "opened": true,
-        "source_date": "2026-08-27",
+        "source_date": "2024-03-09",
         "accessed": "2026-09-28"
       }
     },
@@ -46,7 +46,7 @@
         "accessed": "2026-09-28"
       }
     },
-    "one_line": "Assam plains to the Tawang valley in Arunachal Pradesh, over or under Sela Pass"
+    "one_line": "Assam plains to the Tawang valley in Arunachal Pradesh, through the Sela Tunnel, or over Sela Pass at 4,170 m"
   },
   "rules": [
     {

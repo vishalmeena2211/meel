@@ -1,7 +1,27 @@
 {
  "slug": "guwahati-tawang",
  "fetched": "2026-09-28",
- "tunnels": [],
+ "tunnels": [
+  {
+   "name": "Sela Tunnel",
+   "osm": [
+    "way/1260641177"
+   ],
+   "from_km": 419.4,
+   "to_km": 420.3,
+   "length_km": 0.9
+  },
+  {
+   "name": "Sela Tunnel",
+   "osm": [
+    "way/1260641181",
+    "way/1089360981"
+   ],
+   "from_km": 421.5,
+   "to_km": 423.1,
+   "length_km": 1.6
+  }
+ ],
  "source": {
   "service": "Overpass API",
   "data": "OpenStreetMap contributors",
