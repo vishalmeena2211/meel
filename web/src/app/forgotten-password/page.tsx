@@ -4,7 +4,7 @@ import Link from "next/link";
 import { PageTitle } from "@/components/form";
 import { Callout } from "@/components/ui";
 
-export const metadata: Metadata = { title: "Forgotten password" };
+export const metadata: Metadata = { title: "Forgotten password", robots: { index: false } };
 
 export default function ForgottenPasswordPage() {
   const chat = process.env.NEXT_PUBLIC_MEEL_CHAT_NUMBER?.replace(/\D/g, "") || null;

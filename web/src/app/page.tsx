@@ -1,12 +1,18 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 
+import { JsonLd } from "@/components/json-ld";
 import { RouteBrowser, type RoadLine } from "@/components/route-browser";
 import { TopHead } from "@/components/shell";
 import { getAllRoutes, getIndex } from "@/lib/content";
+import { SITE_LINE, SITE_NAME, SITE_URL } from "@/lib/site";
 import { confirmedLately } from "@/server/reports";
 
 // The count of facts confirmed this week is worked out when the page is built, not live. It is built again hourly.
 export const revalidate = 3600;
+
+// The title is the site's own, from the layout. Only the address is said here.
+export const metadata: Metadata = { alternates: { canonical: "/" } };
 
 /** A road thinned to a few dozen points. Enough to draw its shape on the front page. */
 function thin(line: [number, number][], keep = 28): [number, number][] {
@@ -32,6 +38,23 @@ export default async function HomePage() {
 
   return (
     <div className="flex flex-col gap-4">
+      {/* Tells search engines what the site is, and that its search takes ?q=, as the header's search does. */}
+      <JsonLd
+        data={{
+          "@context": "https://schema.org",
+          "@type": "WebSite",
+          name: SITE_NAME,
+          alternateName: "rideplanner.in",
+          url: `${SITE_URL}/`,
+          description: `${SITE_LINE}. Fuel gaps, permits, passes and night halts, each with its source and the day it was last confirmed.`,
+          inLanguage: "en-IN",
+          potentialAction: {
+            "@type": "SearchAction",
+            target: { "@type": "EntryPoint", urlTemplate: `${SITE_URL}/?q={search_term_string}` },
+            "query-input": "required name=search_term_string",
+          },
+        }}
+      />
       <TopHead title="Meel" sub={sub} />
       <section className="flex flex-col gap-2">
         <p role="heading" aria-level={1} className="display hidden text-5xl uppercase md:block">

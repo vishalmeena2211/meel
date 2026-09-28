@@ -17,6 +17,13 @@ const nextConfig: NextConfig = {
           { key: "Permissions-Policy", value: "camera=(), microphone=(), geolocation=()" },
         ],
       },
+      {
+        // Only rideplanner.in belongs in search results. The same site on meel-livid.vercel.app, on a
+        // deployment's own address, or on this machine is kept out, so search engines never list a copy.
+        source: "/:path*",
+        missing: [{ type: "host", value: "rideplanner.in" }],
+        headers: [{ key: "X-Robots-Tag", value: "noindex, nofollow" }],
+      },
     ];
   },
 };

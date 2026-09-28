@@ -8,6 +8,7 @@ import { getFactKinds, getIndex } from "@/lib/content";
 
 export const metadata: Metadata = {
   title: "About Meel",
+  alternates: { canonical: "/about" },
   description: "What Meel is, who keeps it, and how far to trust what it says.",
 };
 

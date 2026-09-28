@@ -7,7 +7,7 @@ import { PostTripForm } from "@/components/trips/forms";
 import { getAllRoutes } from "@/lib/content";
 import { currentUser } from "@/server/auth";
 
-export const metadata: Metadata = { title: "Post a trip" };
+export const metadata: Metadata = { title: "Post a trip", robots: { index: false } };
 
 export default async function NewTripPage(props: PageProps<"/trips/new">) {
   const query = await props.searchParams;

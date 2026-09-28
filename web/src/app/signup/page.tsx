@@ -8,7 +8,7 @@ import { Callout } from "@/components/ui";
 import { safeNext } from "@/lib/next-page";
 import { currentUser, googleIsOn } from "@/server/auth";
 
-export const metadata: Metadata = { title: "Create an account" };
+export const metadata: Metadata = { title: "Create an account", robots: { index: false } };
 
 export default async function SignUpPage(props: PageProps<"/signup">) {
   const query = await props.searchParams;

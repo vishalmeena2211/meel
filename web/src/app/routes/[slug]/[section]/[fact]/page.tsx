@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 
+import { breadcrumbs, JsonLd } from "@/components/json-ld";
 import { FactBody } from "@/components/route/fact-body";
 import { FactButtons, FactRow } from "@/components/route/fact-row";
 import { ShareButton } from "@/components/route/share-button";
@@ -10,6 +11,7 @@ import { Callout, SectionHeading } from "@/components/ui";
 import { STATE_WORDS } from "@/lib/facts";
 import { plural } from "@/lib/format";
 import { isSection, SECTION_NAMES } from "@/lib/sections";
+import { SITE_URL } from "@/lib/site";
 import { getRouteView } from "@/server/route-view";
 
 // One fact has an address of its own, so it can be pasted into a chat group. Made when first asked for.
@@ -33,7 +35,8 @@ export async function generateMetadata(props: PageProps<"/routes/[slug]/[section
   return {
     title,
     description,
-    openGraph: { title, description, url: f.href, type: "article" },
+    alternates: { canonical: f.href },
+    openGraph: { title, description, url: f.href, type: "article", siteName: "Meel", locale: "en_IN" },
     twitter: { card: "summary_large_image", title, description },
   };
 }
@@ -48,6 +51,14 @@ export default async function FactPage(props: PageProps<"/routes/[slug]/[section
 
   return (
     <div className="flex flex-col gap-3">
+      <JsonLd
+        data={breadcrumbs(SITE_URL, [
+          ["Meel", "/"],
+          [view.route.name, `/routes/${view.route.slug}`],
+          [names.name, `/routes/${view.route.slug}/${found.section}`],
+          [f.title, f.href],
+        ])}
+      />
       <BackHead
         title={view.route.name}
         sub={names.name}

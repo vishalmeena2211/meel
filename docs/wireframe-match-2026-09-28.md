@@ -245,3 +245,16 @@ Before this, the footer had never been drawn. It was three lines of small text: 
 How it was checked: the About page and the log-in page, on the site running on this machine, at phone width and laptop width, scrolled to the bottom. On the log-in page, the button fixed to the foot of the screen was checked not to cover the footer's last line.
 
 One word changed in the drawing to agree with the site: "All routes", not "All 50 routes", so the footer cannot go out of date when a route is added.
+
+---
+
+## Meel's own share card, checked the same day
+
+**Asked by:** Vishal: "do its proper SEO things". Most of that work changes no screen (addresses, search-engine files, structured data). One part does: a link to rideplanner.in itself had no preview card.
+**Drawn first:** frame 1.3, "A link to Meel itself", added at the end of screen 1. The gallery now has 90 frames.
+
+| Frame | What it shows | First check | What differed | Now |
+|---|---|---|---|---|
+| 1.3 | A link to Meel itself, with Meel's own card | Close | The drawing sketched the card's picture as a dark band. The built card is white, like every fact's card | [x] Drawing changed: the preview in frames 1.1 and 1.3 is now drawn white, as both cards are built |
+
+How it was checked: the card was made by the site running on this machine and set beside the frame. Its route count is read from the data when the site is built.

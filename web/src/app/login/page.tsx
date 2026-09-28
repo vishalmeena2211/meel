@@ -8,7 +8,7 @@ import { Callout } from "@/components/ui";
 import { safeNext } from "@/lib/next-page";
 import { currentUser, googleIsOn } from "@/server/auth";
 
-export const metadata: Metadata = { title: "Log in" };
+export const metadata: Metadata = { title: "Log in", robots: { index: false } };
 
 export default async function LogInPage(props: PageProps<"/login">) {
   const query = await props.searchParams;

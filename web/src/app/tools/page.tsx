@@ -5,7 +5,8 @@ import { RoutePicker } from "@/components/tools/route-picker";
 import { getIndex } from "@/lib/content";
 
 export const metadata: Metadata = {
-  title: "Tools",
+  title: "Fuel check, altitude check and packing list",
+  alternates: { canonical: "/tools" },
   description: "Fuel check, altitude check and packing list for any of fifty Indian motorcycle routes.",
 };
 

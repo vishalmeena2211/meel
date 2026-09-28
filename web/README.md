@@ -204,6 +204,16 @@ dropdb meel_scratch
 - **Two answers at the same moment cannot fill one place twice.** Accepting a rider holds the trip still until the answer is saved.
 - **A rider who came in through Google gives a home city before joining or posting a trip**, because the leader sees it.
 
+## Search engines
+
+- **Only rideplanner.in can be listed.** Every other address the site answers on (meel-livid.vercel.app, a deployment's own address, this machine) sends `X-Robots-Tag: noindex`. See `next.config.ts`.
+- `/robots.txt` and `/sitemap.xml` are made by `src/app/robots.ts` and `src/app/sitemap.ts`. The sitemap lists every route, section, tool and fact page, about 3,400 addresses.
+- Every public page names its own address on rideplanner.in as the canonical one. Pages for one rider, and the pages on the way to logging in, say `noindex`.
+- Search results can show a trail (Meel › Manali to Leh › Fuel) and a search box, from structured data in the pages.
+- Share cards: every fact has its own, Meel has one for the site (`src/app/opengraph-image.tsx`), and a route uses its picture.
+
+**When the site goes public on rideplanner.in**, add it to [Google Search Console](https://search.google.com/search-console) and [Bing Webmaster Tools](https://www.bing.com/webmasters), prove you own the domain, and submit `https://rideplanner.in/sitemap.xml`. Until the domain points at the site, share cards made in production point at rideplanner.in and will not load.
+
 ## Good to know
 
 - **Logging out works on this phone only.** It removes this phone's cookie. A copy of that cookie taken from this phone would still work until it runs out after 30 days. Changing the password, or the editor setting a one-time password, logs out every phone at once.

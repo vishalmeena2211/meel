@@ -6,7 +6,7 @@ import { PageTitle } from "@/components/form";
 import { safeNext } from "@/lib/next-page";
 import { currentUser } from "@/server/auth";
 
-export const metadata: Metadata = { title: "Nearly done" };
+export const metadata: Metadata = { title: "Nearly done", robots: { index: false } };
 
 /**
  * Where Google sends a rider back to. The first time, it asks for what Google does not know.

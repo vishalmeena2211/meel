@@ -254,12 +254,10 @@ button { font: inherit; color: inherit; }
 .msg .who { font-size: 12px; font-weight: 600; color: var(--sign); display: block; }
 .msg .t { display: block; text-align: right; font-size: 10.5px; color: var(--ink-2); font-variant-numeric: tabular-nums; }
 .preview { border-radius: 8px; overflow: hidden; background: color-mix(in srgb, var(--ink) 7%, var(--chat-out)); margin-bottom: 5px; }
-.preview .pic { height: 96px; background: var(--ink); color: var(--surface); display: flex; align-items: center; gap: 12px; padding: 0 14px; }
-.preview .pic .mark { border-color: var(--surface); }
-.preview .pic .mark i { border-color: var(--surface); }
-.preview .pic .mark b { color: var(--ink); background: var(--surface); }
-.preview .pic strong { font: 700 22px/1.05 var(--display); text-transform: uppercase; letter-spacing: 0.01em; }
-.preview .pic em { display: block; font: 600 13px/1.2 var(--display); letter-spacing: 0.08em; color: var(--stone); font-style: normal; text-transform: uppercase; margin-top: 3px; }
+/* The card a chat app shows, as built: white, the stone on the left, the words on the right. */
+.preview .pic { height: 96px; background: var(--surface); color: var(--ink); display: flex; align-items: center; gap: 12px; padding: 0 14px; border-bottom: 1px solid var(--border); }
+.preview .pic strong { font: 700 22px/1.05 var(--display); letter-spacing: 0.01em; }
+.preview .pic em { display: block; font: 600 13px/1.2 var(--display); letter-spacing: 0.04em; color: var(--ink-2); font-style: normal; margin-top: 3px; }
 .preview .txt { padding: 7px 9px; }
 .preview .txt b { display: block; font-size: 13.5px; line-height: 18px; }
 .preview .txt span { display: block; font-size: 12px; line-height: 17px; color: var(--ink-2); }
@@ -632,10 +630,25 @@ const SCREENS = [
         ${gapStrip}
         <span class="btn btn-primary btn-block" style="height:46px">${ICON.fuel}Check fuel for your bike</span>
         ${fact(PUMPS[1])}
-        ${fact(PUMPS[2])}`)}`),
+        ${fact(PUMPS[2])}`)}`)
+    + phone('3. A link to Meel itself', `
+      <div class="chat">
+        <div class="chat-top">${ICON.back}<span class="chat-av">DR</span><span><b>Delhi Riders · Ladakh 2027</b><span>48 members</span></span></div>
+        <div class="chat-body">
+          <div class="msg"><span class="who">Meera Joshi</span>First time planning Spiti. Is there one place with the fuel stops, permits and passes for these roads?<span class="t">9:02 pm</span></div>
+          <div class="msg out">
+            <div class="preview">
+              <div class="pic">${mark()}<span><strong>Meel</strong><em>Dated facts for Indian motorcycle routes</em></span></div>
+              <div class="txt"><b>Meel · dated facts for Indian motorcycle routes</b><span>Fuel gaps, permits, passes and night halts for 50 routes. Every fact shows where it came from and when it was last confirmed.</span><span>${SITE}</span></div>
+            </div>
+            <span class="link">${SITE}</span><br>Spiti is on it. Check the dates on each fact.<span class="t">9:05 pm</span></div>
+        </div>
+        <div class="chat-in"><span style="flex:1;color:var(--ink-2)">Message</span></div>
+      </div>`, '9:05'),
     notes: [
       ['Layout', ['The preview card carries the answer and its date, so a rider who never taps the link still gets a dated fact.', 'The opened page shows the linked fact first, outlined, with its two buttons already visible.', 'Everything else on the route sits below, so one link leads into the whole page.']],
       ['Behaviour', ['Every fact has its own short address.', 'The preview text is fixed when the chat app first fetches it. It will not update later. That is acceptable because the date is written into the text.', 'The share button copies the fact’s address.']],
+      ['Meel itself (frame 3)', ['A link to rideplanner.in with no fact in it shows Meel’s own card: the stone, what Meel is, and how many routes it covers.', 'The number of routes is counted when the site is built, so the card never claims a route that is not there.']],
       ['Data', ['Per fact: a title, one line of detail, a state, who confirmed it, and the date.', 'Per fuel fact: distance to the next pump.', 'One preview picture per fact, made when the site is built.']],
     ],
   },

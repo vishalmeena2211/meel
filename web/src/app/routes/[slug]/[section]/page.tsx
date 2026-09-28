@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 import type { ReactNode } from "react";
 
 import { IconPlus } from "@/components/icons";
+import { breadcrumbs, JsonLd } from "@/components/json-ld";
 import {
   BikesSection,
   CostsSection,
@@ -30,6 +31,7 @@ import { Callout, SectionHeading } from "@/components/ui";
 import { getBikes, getIndex } from "@/lib/content";
 import { sayAge, daysBetween } from "@/lib/format";
 import { isSection, isTool, REPORTS_NEEDED, SECTION_NAMES, type SectionId, type ToolId } from "@/lib/sections";
+import { SITE_URL } from "@/lib/site";
 import { allSources } from "@/lib/sources";
 import { routePaths } from "@/server/route-pages";
 import { getRouteView, type RouteView } from "@/server/route-view";
@@ -65,6 +67,7 @@ export async function generateMetadata(props: PageProps<"/routes/[slug]/[section
   const found = view.sections.find((s) => s.id === section);
   return {
     title: `${name} · ${view.route.name}`,
+    alternates: { canonical: `/routes/${slug}/${section}` },
     description: `${name} on ${view.route.name}${found ? `: ${found.sub}` : ""}. Every fact shows where it came from and when it was last confirmed.`,
   };
 }
@@ -101,6 +104,27 @@ function gapNote(view: RouteView): GapNote {
 }
 
 export default async function SectionPage(props: PageProps<"/routes/[slug]/[section]">) {
+  const { slug, section } = await props.params;
+  // The same cached lookup the body makes, so this costs nothing more.
+  const view = await getRouteView(slug);
+  const name = isSection(section) ? SECTION_NAMES[section].name : isTool(section) ? TOOL_NAMES[section] : null;
+  return (
+    <>
+      {view && name ? (
+        <JsonLd
+          data={breadcrumbs(SITE_URL, [
+            ["Meel", "/"],
+            [view.route.name, `/routes/${slug}`],
+            [name, `/routes/${slug}/${section}`],
+          ])}
+        />
+      ) : null}
+      <SectionBody params={props.params} searchParams={props.searchParams} />
+    </>
+  );
+}
+
+async function SectionBody(props: PageProps<"/routes/[slug]/[section]">) {
   const { slug, section } = await props.params;
   const view = await getRouteView(slug);
   if (!view) notFound();

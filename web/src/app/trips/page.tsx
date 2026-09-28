@@ -12,7 +12,8 @@ import { currentUser } from "@/server/auth";
 import { openTrips } from "@/server/trips";
 
 export const metadata: Metadata = {
-  title: "Trips riders are planning",
+  title: "Motorcycle trips riders are planning",
+  alternates: { canonical: "/trips" },
   description: "Trips posted by riders, with dates, starting city and places left. Read without an account; join with one.",
 };
 

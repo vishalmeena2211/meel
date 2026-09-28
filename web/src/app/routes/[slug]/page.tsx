@@ -3,6 +3,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 
 import { IconFlag, IconList, IconRight } from "@/components/icons";
+import { breadcrumbs, JsonLd } from "@/components/json-ld";
 import { SaveRoute } from "@/components/offline/save-route";
 import {
   FirstRows,
@@ -28,6 +29,7 @@ import { BackHead, Foot } from "@/components/shell";
 import { Callout, Empty } from "@/components/ui";
 import { getIndex } from "@/lib/content";
 import { km, metres, plural } from "@/lib/format";
+import { SITE_URL } from "@/lib/site";
 import { allSources } from "@/lib/sources";
 import { savedPages } from "@/server/route-pages";
 import { getRouteView } from "@/server/route-view";
@@ -52,13 +54,23 @@ export async function generateMetadata(props: PageProps<"/routes/[slug]">): Prom
     gap && gap.gap_km >= 60 ? `longest stretch with no pump ${km(gap.gap_km)}` : null,
   ].filter(Boolean);
   const description = `${route.name}: ${parts.join(", ")}. ${plural(route.counts.facts, "fact")}, each with its source.`;
+  // "by motorcycle" is what riders type into a search box, and it is what the page is about.
+  const title = `${route.name} by motorcycle`;
+  const canonical = `/routes/${route.slug}`;
   return {
-    title: route.name,
+    title,
     description,
+    alternates: { canonical },
+    // A route not written yet has too little on it to be worth a search result.
+    robots: route.level === "unwritten" ? { index: false } : undefined,
     openGraph: {
-      title: `${route.name} · Meel`,
+      title: `${title} · Meel`,
       description,
-      images: route.image ? [{ url: `/route-images/${route.image.file}` }] : undefined,
+      url: canonical,
+      siteName: "Meel",
+      locale: "en_IN",
+      type: "article",
+      images: route.image ? [{ url: `/route-images/${route.image.file}`, alt: route.image.shows }] : undefined,
     },
   };
 }
@@ -73,8 +85,39 @@ export default async function RoutePage(props: PageProps<"/routes/[slug]">) {
   const has = (id: string) => sections.some((s) => s.id === id);
   const sources = allSources(route);
 
+  const places = route.waypoints.filter((w) => w.kind === "place");
+
   return (
     <div className="flex flex-col gap-4">
+      <JsonLd
+        data={[
+          breadcrumbs(SITE_URL, [
+            ["Meel", "/"],
+            [route.name, `/routes/${route.slug}`],
+          ]),
+          {
+            "@context": "https://schema.org",
+            "@type": "TouristTrip",
+            name: `${route.name} by motorcycle`,
+            description: route.one_line ?? undefined,
+            url: `${SITE_URL}/routes/${route.slug}`,
+            touristType: "Motorcycle touring",
+            itinerary: {
+              "@type": "ItemList",
+              numberOfItems: places.length,
+              itemListElement: places.map((w, i) => ({
+                "@type": "ListItem",
+                position: i + 1,
+                item: {
+                  "@type": "Place",
+                  name: w.name,
+                  geo: { "@type": "GeoCoordinates", latitude: w.lat, longitude: w.lon, elevation: w.altitude_m ?? undefined },
+                },
+              })),
+            },
+          },
+        ]}
+      />
       <BackHead title={route.name} sub={levelWords(view)} back="/" right={<ShareButton title={`${route.name} · Meel`} />} />
       <RoutePicture view={view} />
       <RouteHead view={view} as="h2" />

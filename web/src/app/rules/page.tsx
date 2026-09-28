@@ -6,6 +6,7 @@ import { Callout } from "@/components/ui";
 
 export const metadata: Metadata = {
   title: "Rules for riding together",
+  alternates: { canonical: "/rules" },
   description: "What Meel asks of riders who post or join a trip, and how to stay safe riding with people you have not met.",
 };
 

@@ -7,6 +7,7 @@ import { currentUser } from "@/server/auth";
 
 export const metadata: Metadata = {
   title: "Send a trip report",
+  alternates: { canonical: "/report" },
   description: "Rode one of these routes? Three fields are enough. Your report keeps the facts fresh for the next rider.",
 };
 

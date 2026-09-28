@@ -9,6 +9,7 @@ import { hostOf, plural } from "@/lib/format";
 
 export const metadata: Metadata = {
   title: "Credits and sources",
+  alternates: { canonical: "/credits" },
   description: "Everything Meel is built on: the open map, NASA's heights, fifty photographers, and the source of every fact.",
 };
 

@@ -15,7 +15,7 @@ import { currentUser } from "@/server/auth";
 import { db } from "@/server/db";
 import { membersOf, tripsOf } from "@/server/trips";
 
-export const metadata: Metadata = { title: "Your account" };
+export const metadata: Metadata = { title: "Your account", robots: { index: false } };
 
 const MINE_WORDS: Record<string, { label: string; tone: "fresh" | "ageing" | "plain" | "stone" }> = {
   leading: { label: "You lead this", tone: "stone" },
