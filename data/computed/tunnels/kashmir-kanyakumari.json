@@ -1,0 +1,22 @@
+{
+ "slug": "kashmir-kanyakumari",
+ "fetched": "2026-09-28",
+ "tunnels": [
+  {
+   "name": "TCE subway",
+   "osm": [
+    "way/755264601"
+   ],
+   "from_km": 3433.9,
+   "to_km": 3434.0,
+   "length_km": 0.1
+  }
+ ],
+ "source": {
+  "service": "Overpass API",
+  "data": "OpenStreetMap contributors",
+  "licence": "Open Database Licence",
+  "url": "https://www.openstreetmap.org/copyright"
+ },
+ "note": "Road tunnels of 250 m or more that the route runs through, as drawn on the open map."
+}

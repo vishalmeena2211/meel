@@ -49,6 +49,16 @@ export interface Stretch {
 export interface ProfilePoint {
   km: number;
   m: number;
+  /** Inside this tunnel. The height grid gives the mountain above it, so the height is drawn straight between its ends. */
+  tunnel?: string;
+}
+
+/** A tunnel the height line runs straight through. */
+export interface Tunnel {
+  name: string;
+  from_km: number;
+  to_km: number;
+  length_km: number;
 }
 
 export interface Pump {
@@ -251,6 +261,8 @@ export interface Route {
   waypoints: Waypoint[];
   stretches: Stretch[];
   profile: ProfilePoint[];
+  /** Absent on a route assembled before tunnels were known (28 September 2026). */
+  tunnels?: Tunnel[];
   /** [longitude, latitude] pairs. */
   line: [number, number][];
   fuel: Fuel;

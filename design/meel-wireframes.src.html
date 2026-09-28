@@ -359,6 +359,7 @@ button { font: inherit; color: inherit; }
 .profile .dot { fill: var(--surface); stroke: var(--ink); stroke-width: 2; }
 .profile .night { fill: var(--stone); stroke: var(--ink); stroke-width: 2; }
 .profile .night.bad { fill: var(--stale-fg); stroke: var(--ink); }
+.profile .pcap { margin: 2px 6px 6px; font-size: 11.5px; line-height: 16px; color: var(--ink-2); }
 .nights { border: 1px solid var(--border); border-radius: 8px; }
 .night-row { display: grid; grid-template-columns: 30px 1fr auto; gap: 10px; align-items: center; padding: 9px 12px; border-bottom: 1px solid var(--border); min-height: 52px; }
 .night-row:last-child { border-bottom: 0; }
@@ -597,7 +598,7 @@ const ALT = [
   ['Baralacha La', 140, 4890], ['Sarchu', 175, 4290], ['Lachulung La', 229, 5059],
   ['Pang', 250, 4600], ['Tanglang La', 319, 5328], ['Karu', 392, 3400], ['Leh', 427, 3500],
 ];
-function profile(nights = [], bad = []) {
+function profile(nights = [], bad = [], caption = '') {
   const W = 346, H = 178, L = 36, R = 10, T = 24, B = 30;
   const x = (km) => L + (km / 427) * (W - L - R);
   const y = (m) => T + (1 - (m - 2000) / 3500) * (H - T - B);
@@ -620,7 +621,7 @@ function profile(nights = [], bad = []) {
     <polyline class="ln" points="${pts}"/>
     ${marks}${ticks}
     <text class="ax" x="${L - 4}" y="12" text-anchor="end">metres</text>
-  </svg></div>`;
+  </svg>${caption ? `<p class="pcap">${caption}</p>` : ''}</div>`;
 }
 const fmtH = (h) => { const m = Math.round(h * 60); return `${Math.floor(m / 60)} h${m % 60 ? ' ' + (m % 60) + ' min' : ''}`; };
 function leg(name, km, typ, lo, hi, mapt, n) {
@@ -766,9 +767,37 @@ const SCREENS = [
             <h3 style="margin:0;font:700 26px/1.1 var(--display)">Fuel</h3>
             ${gapStrip}
           </div>
+        </div>`)
+      + desk('6. On a laptop: the routes first, the roads beside them', `
+        ${deskTop(`<span class="btn btn-outline">Log in</span>`)}
+        <div style="flex:1;min-height:0;background:var(--ground);padding:22px 0;overflow:hidden">
+          <div style="width:1120px;margin:0 auto;display:flex;flex-direction:column;gap:12px">
+            <h3 style="margin:0;font:700 40px/1 var(--display);text-transform:uppercase">Every fact has a date</h3>
+            <span class="hint" style="font-size:14px;color:var(--ink)">Dated facts for Indian motorcycle routes. Every fact shows who confirmed it, and when. <span class="link">How far to trust it</span></span>
+            <div class="input">${ICON.search}<span>Search a route or place</span></div>
+            <div style="display:flex;flex-wrap:wrap;gap:6px">${['All', 'Ladakh', 'Zanskar and Kargil', 'Kashmir and Jammu', 'Himachal', 'Uttarakhand', 'Sikkim and North Bengal', 'North-East', 'Across the border', 'Rajasthan and Gujarat', 'Maharashtra and Goa', 'Central and East', 'South', 'The long ones'].map((l) => `<span class="chip ${l === 'All' ? 'on' : ''}">${l}</span>`).join('')}</div>
+            <div style="display:grid;grid-template-columns:minmax(0,1fr) 360px;gap:20px;align-items:start">
+              <div style="display:flex;flex-direction:column;gap:10px">
+                <div class="sec-h"><h3>Ladakh</h3><span class="hint">5 routes</span></div>
+                <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px">
+                  ${card('Manali to Leh', basic, '434 km · 77 facts')}${card('Srinagar to Leh', basic, '421 km · 58 facts')}
+                  ${card('Nubra valley and Turtuk', basic, '206 km · 41 facts')}${card('Pangong, Hanle and Tso Moriri', basic, '768 km · 66 facts')}
+                </div>
+                <div class="sec-h"><h3>Zanskar and Kargil</h3><span class="hint">2 routes</span></div>
+              </div>
+              <div class="map" style="height:300px"><span class="credit">Every route drawn as a road · North is up · OpenStreetMap contributors</span>
+                <svg viewBox="0 0 366 270" preserveAspectRatio="xMidYMid meet" aria-hidden="true">
+                  <path d="M150 30 C170 60 176 90 190 120 S230 170 250 200 S270 230 262 250" fill="none" stroke="var(--ink-2)" stroke-width="3" stroke-linecap="round"/>
+                  <path d="M130 70 C120 100 118 140 132 170 S150 220 170 240" fill="none" stroke="var(--ink-2)" stroke-width="3" stroke-linecap="round"/>
+                  <path d="M190 120 C220 110 250 112 290 96" fill="none" stroke="var(--ink-2)" stroke-width="3" stroke-linecap="round"/>
+                </svg>
+              </div>
+            </div>
+          </div>
         </div>`);
     },
     notes: [
+      ['On a laptop (frame 6)', ['The routes come first. The drawing of the roads sits beside the list, at most 360 wide, and stays in view as the list scrolls. Picking a region redraws it.', 'The region chips wrap onto a second line, so every region can be reached with a mouse. On a phone they still scroll sideways.', 'Between a phone and a laptop, on a tablet, the drawing sits above the list, no taller than 360.']],
       ['Layout', ['Three kinds of route card: full page, basic page, not written yet. The dashed card is the unwritten one.', 'A card says how much is behind it: number of facts, and how recently riders confirmed them.', 'Region filters scroll sideways. South, West, Central and the rest sit further along the row.']],
       ['Suggestions (frames 4 and 5)', ['From the second letter, suggestions open under the box: in the header on a laptop, from any page, and on the front page on a phone.', 'Routes whose names match come first, then places along a route, each saying which route it is on. When nothing matches, the routes spelt most like it.', 'Arrow keys move through them, Enter opens the one picked, and Escape closes the list. A screen reader is told how many there are.', 'Nothing is picked until an arrow key is pressed (the shaded rows above). Enter with nothing picked searches every route on a laptop, and on the front page closes the list to show the routes below.', 'Two letters match only at the start of a word, so “sp” brings up Spiti, not Jispa.', 'On the front page, the routes below still narrow as you type.']],
       ['Behaviour', ['Search looks at route names and at the places inside each route.', 'No match is not an error. It offers to take the suggestion and shows routes whose names are spelt like what was typed.', 'The site cannot know where a place it has never heard of lies, so it does not claim to show routes near it.', '“Suggest this place” opens a short form. It goes to the editor’s inbox.']],
@@ -1295,7 +1324,7 @@ Name: Rahul N.</span><span class="send">${ICON.send}</span></div>
       return phone('1. The climb, drawn to scale', `
         ${head('Altitude', 'Manali to Leh')}
         ${body(`
-          ${profile()}
+          ${profile([], [], 'Through the Atal Tunnel, 9 km, the line runs straight from one end to the other: the road goes inside the mountain, not over it.')}
           <div class="sec-h"><h3>Where riders sleep</h3><span class="hint">6 halts</span></div>
           <div class="rows">
             <div class="row"><span class="grow"><b>Manali</b></span><span class="num">2,050 m</span></div>
@@ -1335,6 +1364,7 @@ Name: Rahul N.</span><span class="send">${ICON.send}</span></div>
           <span class="hint">This is not medical advice.</span>`)}`);
     },
     notes: [
+      ['Tunnels (frame 1)', ['The height grid gives the mountain above a tunnel, not the road inside it. On Manali to Leh it read 4,687 m above the Atal Tunnel, which runs at about 3,000 m.', 'Inside a tunnel the line runs straight from one end to the other, and a line under the chart names the tunnel and its length.']],
       ['Layout', ['The profile is drawn to one scale: distance along the bottom, height up the side. Night halts are the numbered yellow dots.', 'The answer comes first, as one number: the biggest climb between two beds.', 'The official rule for people who fly in is shown, clearly apart from the advice for riders.']],
       ['Behaviour', ['The check looks only at sleeping height, night to night.', 'Proposed limits: up to 500 m is fine, 500 to 1,500 m is steep, over 1,500 m is too steep.', 'The tool never says a plan is safe. The best it says is “the gentlest this road allows”.', 'Runs on the page itself. Works with no network.']],
       ['Data', ['Per route: every halt and every pass, with its height and its distance from the start. About ten points.', 'Heights do not change, so this is entered once and never again.', 'The official notice, with its link and the date it was checked.']],

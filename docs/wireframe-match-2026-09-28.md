@@ -313,3 +313,20 @@ How it was checked: 24 steps in a real browser, on the site running on this mach
 How it was checked: 47 steps in a real browser, on the site running on this machine, at phone and laptop sizes. They covered Tools, a trip report, a fact's two report sheets, signing up, posting a trip, the account page's delete sheet, the front page and the page that does not exist. On the keyboard: arrows, Page Up, Enter, Escape, and typing to narrow a list. Escape inside a fact's sheet closed only the calendar. Pale days and months could not be picked. The server saved the days exactly as picked: 10 to 15 October 2026. The test accounts and trips were deleted afterwards, and the local database is empty again.
 
 Not checked: a real phone's screen reader. The parts carry the labels a screen reader needs: each day is read in full, such as "Saturday 10 October 2026".
+
+---
+
+## The four "Fix first" items from the screen audit, checked the same day
+
+**Asked by:** Vishal, after the audit in `docs/ui-ux-audit-2026-09-28.md`: "do the fix first items".
+**Drawn first:** frame 2.6, the front page on a laptop, which had never been drawn; and a line under the altitude chart in frame 14.1 naming the tunnel the line runs through. "Is it open?" (frame 5.1) already said what an office announces, so only the data had to change to match it. The gallery now has 32 screens and 101 frames.
+
+| Frame | What it shows | First check | What differed | Now |
+|---|---|---|---|---|
+| 2.6 | On a laptop, the routes first and the drawing of the roads beside them; the region chips on two lines | Matches | Checked at 1280 wide: all 13 region chips are on screen, the first route is 396 px down (it was about 1,000), and the drawing stays in view as the list scrolls. On a tablet the drawing sits above the list, 360 px tall at most, as the notes say | [x] |
+| 14.1 | The climb, with "Through the Atal Tunnel, 9 km, the line runs straight…" under it | Matches | The false peak of 4,687 m at km 29 is gone: 2,997 m now | [x] |
+| 5.1 | Each office says what it announces | Matches, after a data fix | The Border Roads Organisation card said "Snow clearance finished and road connected". It now says "Says when snow clearance is finished and the road is connected", as drawn | [x] |
+
+How it was checked: on the site running on this machine, in a real browser, at phone and laptop sizes, with 15 checks. The six routes whose data changed most all open.
+
+The data behind it: a new step in `data/tools/build_computed.py` asks the open map for road tunnels of 250 m or more on each route's line, and `assemble.py` draws the height straight through them. It found tunnels on 13 of the 50 routes. The heights changed on six, where a height sample fell inside a tunnel: Manali to Leh and the Spiti circuit (Atal Tunnel), Srinagar to Leh and the Kashmir valley (Z-Morh Tunnel), Jalori and Tirthan (Aut Tunnel), and a 0.4 km tunnel on the Goa coast. No route's highest point changed. Three office lines that read like news were reworded in `data/research`.

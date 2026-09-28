@@ -3,7 +3,7 @@
 import { useMemo, useState } from "react";
 
 import { metres } from "@/lib/format";
-import type { ProfilePoint, Waypoint } from "@/lib/types";
+import type { ProfilePoint, Tunnel, Waypoint } from "@/lib/types";
 
 import { Profile, type ProfileMark } from "../route/drawings";
 import { BackHead, Foot } from "../shell";
@@ -61,6 +61,7 @@ function gentler(before: Halt, after: Halt, halts: Halt[]): Halt | null {
 export function AltitudeScreen({
   waypoints,
   profile,
+  tunnels,
   distanceKm,
   routeName,
   routeSlug,
@@ -68,6 +69,7 @@ export function AltitudeScreen({
 }: {
   waypoints: Waypoint[];
   profile: ProfilePoint[];
+  tunnels: Tunnel[];
   distanceKm: number;
   routeName: string;
   routeSlug: string;
@@ -123,7 +125,7 @@ export function AltitudeScreen({
     return (
       <div className="flex flex-col gap-3">
         <BackHead title="Altitude" sub="Your night halts" back={back} />
-        <Profile profile={profile} distanceKm={distanceKm} marks={marks} />
+        <Profile profile={profile} tunnels={tunnels} distanceKm={distanceKm} marks={marks} />
 
         {worst && worst.verdict === "too-steep" ? (
           <div role="status" className="flex flex-col gap-1.5 rounded-xl border border-stale-fg/30 bg-stale-bg p-3.5">
@@ -208,7 +210,7 @@ export function AltitudeScreen({
   return (
     <div className="flex flex-col gap-3">
       <BackHead title="Altitude" sub={routeName} back={back} />
-      <Profile profile={profile} distanceKm={distanceKm} marks={marks} />
+      <Profile profile={profile} tunnels={tunnels} distanceKm={distanceKm} marks={marks} />
       <SectionHeading title="Where riders sleep" aside={`${halts.length} halts`} />
       <p className="hint">Tick the places you will sleep. Two or more.</p>
       <ul className="card flex flex-col">

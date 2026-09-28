@@ -318,11 +318,13 @@
   },
   {
    "km": 24.2,
-   "m": 3212
+   "m": 2923,
+   "tunnel": "Atal Tunnel"
   },
   {
    "km": 28.9,
-   "m": 4687
+   "m": 2997,
+   "tunnel": "Atal Tunnel"
   },
   {
    "km": 33.7,
@@ -663,6 +665,14 @@
   {
    "km": 434.1,
    "m": 3499
+  }
+ ],
+ "tunnels": [
+  {
+   "name": "Atal Tunnel",
+   "from_km": 23.4,
+   "to_km": 32.7,
+   "length_km": 9.3
   }
  ],
  "line": [
@@ -6940,7 +6950,7 @@
   {
    "id": "authority:border-roads-organisation",
    "office": "Border Roads Organisation",
-   "announces": "Snow clearance finished and road connected",
+   "announces": "Says when snow clearance is finished and the road is connected",
    "stretch": "Manali to Leh",
    "channel": "Statements to the press and its X account; its website has no road status section",
    "url": "https://bro.gov.in/",

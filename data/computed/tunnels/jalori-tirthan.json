@@ -1,0 +1,22 @@
+{
+ "slug": "jalori-tirthan",
+ "fetched": "2026-09-28",
+ "tunnels": [
+  {
+   "name": "Aut Tunnel",
+   "osm": [
+    "way/197908472"
+   ],
+   "from_km": 0.3,
+   "to_km": 3.1,
+   "length_km": 2.8
+  }
+ ],
+ "source": {
+  "service": "Overpass API",
+  "data": "OpenStreetMap contributors",
+  "licence": "Open Database Licence",
+  "url": "https://www.openstreetmap.org/copyright"
+ },
+ "note": "Road tunnels of 250 m or more that the route runs through, as drawn on the open map."
+}

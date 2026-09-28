@@ -1,0 +1,81 @@
+{
+ "slug": "golden-quadrilateral",
+ "fetched": "2026-09-28",
+ "tunnels": [
+  {
+   "name": "A tunnel",
+   "osm": [
+    "way/1341418196"
+   ],
+   "from_km": 14.3,
+   "to_km": 14.7,
+   "length_km": 0.4
+  },
+  {
+   "name": "A tunnel",
+   "osm": [
+    "way/1431093144",
+    "way/1431236197",
+    "way/1431236203"
+   ],
+   "from_km": 15.3,
+   "to_km": 19.3,
+   "length_km": 4.0
+  },
+  {
+   "name": "A tunnel",
+   "osm": [
+    "way/1116321333"
+   ],
+   "from_km": 22.0,
+   "to_km": 22.2,
+   "length_km": 0.2
+  },
+  {
+   "name": "A tunnel",
+   "osm": [
+    "way/667961827",
+    "way/667961828"
+   ],
+   "from_km": 657.0,
+   "to_km": 657.5,
+   "length_km": 0.5
+  },
+  {
+   "name": "Khandala Tunnel",
+   "osm": [
+    "way/22842049",
+    "way/149003178"
+   ],
+   "from_km": 1508.6,
+   "to_km": 1509.3,
+   "length_km": 0.7
+  },
+  {
+   "name": "Hospet Tunnel",
+   "osm": [
+    "way/387326921",
+    "way/387325756"
+   ],
+   "from_km": 2096.8,
+   "to_km": 2097.2,
+   "length_km": 0.4
+  },
+  {
+   "name": "Underpass",
+   "osm": [
+    "way/1328762402"
+   ],
+   "from_km": 3557.4,
+   "to_km": 3557.8,
+   "length_km": 0.4
+  }
+ ],
+ "source": {
+  "service": "Overpass API",
+  "data": "OpenStreetMap contributors",
+  "licence": "Open Database Licence",
+  "url": "https://www.openstreetmap.org/copyright"
+ },
+ "note": "Road tunnels of 250 m or more that the route runs through, as drawn on the open map."
+}

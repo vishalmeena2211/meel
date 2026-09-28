@@ -1,0 +1,23 @@
+{
+ "slug": "kashmir-valley",
+ "fetched": "2026-09-28",
+ "tunnels": [
+  {
+   "name": "Z-Morh Tunnel",
+   "osm": [
+    "way/988326168",
+    "way/988326166"
+   ],
+   "from_km": 369.1,
+   "to_km": 375.4,
+   "length_km": 6.3
+  }
+ ],
+ "source": {
+  "service": "Overpass API",
+  "data": "OpenStreetMap contributors",
+  "licence": "Open Database Licence",
+  "url": "https://www.openstreetmap.org/copyright"
+ },
+ "note": "Road tunnels of 250 m or more that the route runs through, as drawn on the open map."
+}

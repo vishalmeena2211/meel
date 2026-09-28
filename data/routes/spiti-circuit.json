@@ -625,7 +625,8 @@
   },
   {
    "km": 588.1,
-   "m": 3902
+   "m": 2978,
+   "tunnel": "Atal Tunnel"
   },
   {
    "km": 595.0,
@@ -646,6 +647,14 @@
   {
    "km": 615.5,
    "m": 1906
+  }
+ ],
+ "tunnels": [
+  {
+   "name": "Atal Tunnel",
+   "from_km": 582.0,
+   "to_km": 591.3,
+   "length_km": 9.3
   }
  ],
  "line": [
@@ -10309,7 +10318,7 @@
   {
    "id": "authority:border-roads-organisation",
    "office": "Border Roads Organisation",
-   "announces": "Snow clearance and that the road is restored",
+   "announces": "Says when snow is cleared and the road is restored",
    "stretch": "Sumdo to Kaza to Gramphu, including Kunzum La",
    "channel": "Statements to newspapers; its own social media account",
    "url": "https://bro.gov.in/",

@@ -1,0 +1,22 @@
+{
+ "slug": "north-sikkim",
+ "fetched": "2026-09-28",
+ "tunnels": [
+  {
+   "name": "North Sikkim Highway",
+   "osm": [
+    "way/1021879547"
+   ],
+   "from_km": 86.7,
+   "to_km": 87.4,
+   "length_km": 0.7
+  }
+ ],
+ "source": {
+  "service": "Overpass API",
+  "data": "OpenStreetMap contributors",
+  "licence": "Open Database Licence",
+  "url": "https://www.openstreetmap.org/copyright"
+ },
+ "note": "Road tunnels of 250 m or more that the route runs through, as drawn on the open map."
+}

@@ -7,8 +7,9 @@ Stages, each cached under ../computed/ so a re-run only fetches what is missing:
   route      positions  -> road line, legs   (OSRM demo server, OpenStreetMap data)
   elevation  positions  -> height            (Open Topo Data, SRTM 90 m, NASA)
   fuel       road line  -> pumps near it     (Overpass, OpenStreetMap)
+  tunnels    road line  -> tunnels on it     (Overpass, OpenStreetMap)
 
-Usage:  python3 build_computed.py geocode|route|elevation|fuel|all [slug ...]
+Usage:  python3 build_computed.py geocode|route|elevation|fuel|tunnels|all [slug ...]
 
 Every service here is free and asks for light use. The script waits between calls.
 """
@@ -404,12 +405,80 @@ def fuel(args):
         time.sleep(6)
 
 
+# ── tunnels ────────────────────────────────────────────────────────────────
+def tunnels(args):
+    """Tunnels the road goes through. The height grid gives the mountain above a tunnel, not the road inside it,
+    so assemble.py draws the road straight through each one instead."""
+    for r in selected(args):
+        rpath = os.path.join(OUT, "route", r["slug"] + ".json")
+        path = os.path.join(OUT, "tunnels", r["slug"] + ".json")
+        if not os.path.exists(rpath) or (os.path.exists(path) and "--force" not in sys.argv):
+            continue
+        rt = load(rpath, None)
+        line = rt["line"]
+        total = rt["distance_km"]
+        cum = [0.0]
+        for a, b in zip(line, line[1:]):
+            cum.append(cum[-1] + hav((a[1], a[0]), (b[1], b[0])))
+        scale = total / cum[-1] if cum[-1] else 1.0
+        # A box round the route is far cheaper for the server than a band along it. Tunnels on other roads in the box
+        # are dropped below, as they do not lie on the route's line.
+        lons, lats = [x for x, _ in line], [y for _, y in line]
+        box = f"{min(lats) - 0.02:.4f},{min(lons) - 0.02:.4f},{max(lats) + 0.02:.4f},{max(lons) + 0.02:.4f}"
+        roads = "motorway|trunk|primary|secondary|tertiary|unclassified|motorway_link|trunk_link|primary_link"
+        q = f'[out:json][timeout:120];way["highway"~"^({roads})$"]["tunnel"="yes"]({box})(if:length()>250);out tags geom;'
+        try:
+            d = get("https://overpass-api.de/api/interpreter",
+                    data=urllib.parse.urlencode({"data": q}).encode(), timeout=150, tries=4, wait=8)
+        except Exception as e:  # noqa: BLE001
+            print(f"tunnels {r['slug']}: FAILED {e}")
+            time.sleep(10)
+            continue
+        found = []
+        for e in d.get("elements", []):
+            geom = e.get("geometry") or []
+            if len(geom) < 2:
+                continue
+            length = sum(hav((a["lat"], a["lon"]), (b["lat"], b["lon"])) for a, b in zip(geom, geom[1:]))
+            if length < 0.25:
+                continue
+            # Only a tunnel the road itself runs through: both ends and the middle lie on the road line.
+            ends = [project(line, cum, (g["lat"], g["lon"])) for g in (geom[0], geom[len(geom) // 2], geom[-1])]
+            if any(off > 150 for _, off in ends):
+                continue
+            kms = sorted(k * scale for k, _ in ends)
+            t = e.get("tags", {})
+            found.append({"name": t.get("tunnel:name") or t.get("name") or "A tunnel", "osm": [f"way/{e['id']}"],
+                          "from_km": kms[0], "to_km": kms[-1]})
+        # One tunnel can be drawn as several ways, or as one way for each direction.
+        found.sort(key=lambda x: x["from_km"])
+        merged = []
+        for t in found:
+            if merged and t["from_km"] <= merged[-1]["to_km"] + 0.2:
+                m = merged[-1]
+                m["to_km"] = max(m["to_km"], t["to_km"])
+                m["osm"] += t["osm"]
+                if m["name"] == "A tunnel":
+                    m["name"] = t["name"]
+            else:
+                merged.append(dict(t))
+        for m in merged:
+            m["from_km"], m["to_km"] = round(m["from_km"], 1), round(m["to_km"], 1)
+            m["length_km"] = round(m["to_km"] - m["from_km"], 1)
+        save(path, {"slug": r["slug"], "fetched": TODAY, "tunnels": merged,
+                    "source": {"service": "Overpass API", "data": "OpenStreetMap contributors",
+                               "licence": "Open Database Licence", "url": "https://www.openstreetmap.org/copyright"},
+                    "note": "Road tunnels of 250 m or more that the route runs through, as drawn on the open map."})
+        print(f"tunnels {r['slug']}: " + (", ".join(f"{m['name']} {m['length_km']} km at km {m['from_km']}" for m in merged) or "none"), flush=True)
+        time.sleep(3)
+
+
 if __name__ == "__main__":
     if len(sys.argv) < 2:
         print(__doc__)
         sys.exit(1)
     stage = sys.argv[1]
     rest = [a for a in sys.argv[2:] if not a.startswith("--")]
-    for name, fn in (("geocode", geocode), ("route", route), ("elevation", elevation), ("fuel", fuel)):
+    for name, fn in (("geocode", geocode), ("route", route), ("elevation", elevation), ("fuel", fuel), ("tunnels", tunnels)):
         if stage in (name, "all"):
             fn(rest)

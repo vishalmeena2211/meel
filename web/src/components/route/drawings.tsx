@@ -1,6 +1,6 @@
 // Drawings made from the route's own numbers. Each uses one scale, and says what it shows.
 import { km, metres } from "@/lib/format";
-import type { Fuel, ProfilePoint, Waypoint } from "@/lib/types";
+import type { Fuel, ProfilePoint, Tunnel, Waypoint } from "@/lib/types";
 
 // ── fuel along the road ──────────────────────────────────────────────────
 
@@ -100,16 +100,33 @@ export function niceStep(range: number): number {
   return (n >= 5 ? 5 : n >= 2 ? 2 : 1) * pow;
 }
 
+/**
+ * "the Atal Tunnel, 9 km", or several joined with "and". A length is read off the road line, so it is only close:
+ * past 2 km it is given in whole kilometres.
+ */
+function tunnelWords(tunnels: Tunnel[]): string {
+  const km = (n: number) => (n >= 2 ? Math.round(n) : n).toLocaleString("en-IN");
+  const name = (t: Tunnel) => (t.name === "A tunnel" ? "a tunnel" : /tunnel/i.test(t.name) ? `the ${t.name}` : t.name);
+  const one = (t: Tunnel) => `${name(t)}, ${km(t.length_km)} km`;
+  const all = tunnels.map(one);
+  return all.length > 1 ? `${all.slice(0, -1).join("; ")} and ${all.at(-1)}` : (all[0] ?? "");
+}
+
 export function Profile({
   profile,
+  tunnels = [],
   distanceKm,
   marks,
 }: {
   profile: ProfilePoint[];
+  /** Tunnels the line runs straight through, named under the chart. */
+  tunnels?: Tunnel[];
   distanceKm: number;
   marks: ProfileMark[];
 }) {
   if (profile.length < 2) return null;
+  // A tunnel under a kilometre barely bends the line, so only longer ones are named.
+  const long = tunnels.filter((t) => t.length_km >= 1);
   const W = 346;
   const H = 180;
   const L = 38;
@@ -227,6 +244,11 @@ export function Profile({
           </text>
         ))}
       </svg>
+      {long.length > 0 ? (
+        <figcaption className="hint px-1.5 pt-0.5 pb-1.5 text-xs">
+          Through {tunnelWords(long)}, the line runs straight from one end to the other: the road goes inside the mountain, not over it.
+        </figcaption>
+      ) : null}
     </figure>
   );
 }

@@ -96,7 +96,7 @@ function Roads({ routes, lines, named }: { routes: RouteSummary[]; lines: RoadLi
   const placed: Array<{ x: number; y: number }> = [];
   return (
     <figure className="card overflow-hidden">
-      <svg viewBox={`0 0 ${W} ${H}`} className="block h-auto w-full bg-surface-2" role="img" aria-label={`${plural(mine.length, "route")}, each drawn as a road. North is up.`}>
+      <svg viewBox={`0 0 ${W} ${H}`} className="block h-auto max-h-[360px] w-full bg-surface-2" role="img" aria-label={`${plural(mine.length, "route")}, each drawn as a road. North is up.`}>
         {mine.map((l) => {
           const route = routes.find((r) => r.slug === l.slug);
           if (!route) return null;
@@ -247,7 +247,8 @@ export function RouteBrowser({
         </>
       ) : (
         <>
-          <div className="scroll-row -mx-4 px-4 md:mx-0 md:px-0" role="group" aria-label="Region">
+          {/* Sideways on a phone. From a tablet up the chips wrap, so a mouse can reach every region. */}
+          <div className="scroll-row -mx-4 px-4 md:mx-0 md:flex-wrap md:overflow-visible md:px-0" role="group" aria-label="Region">
             <button type="button" className="chip" aria-pressed={region === "all"} onClick={() => setRegion("all")}>
               All
             </button>
@@ -264,23 +265,30 @@ export function RouteBrowser({
             ))}
           </div>
 
-          <Roads routes={shown} lines={lines} named={region !== "all" || shown.length <= 8} />
+          {/* On a laptop the routes come first, with the drawing beside them, in view as the list scrolls. */}
+          <div className="flex flex-col gap-4 lg:grid lg:grid-cols-[minmax(0,1fr)_360px] lg:items-start lg:gap-6">
+            <div className="lg:sticky lg:top-20 lg:order-2">
+              <Roads routes={shown} lines={lines} named={region !== "all" || shown.length <= 8} />
+            </div>
 
-          {groups.map((g) => (
-            <section key={g.id} aria-labelledby={`region-${g.id}`} className="flex flex-col gap-2">
-              <div className="flex items-baseline justify-between">
-                <h2 id={`region-${g.id}`} className="display text-2xl">
-                  {g.name}
-                </h2>
-                <span className="hint">{plural(g.routes.length, "route")}</span>
-              </div>
-              <div className="grid gap-2 md:grid-cols-2">
-                {g.routes.map((r) => (
-                  <RouteCard key={r.slug} route={r} confirmed={confirmed[r.slug] ?? 0} />
-                ))}
-              </div>
-            </section>
-          ))}
+            <div className="flex flex-col gap-4 lg:order-1">
+              {groups.map((g) => (
+                <section key={g.id} aria-labelledby={`region-${g.id}`} className="flex flex-col gap-2">
+                  <div className="flex items-baseline justify-between">
+                    <h2 id={`region-${g.id}`} className="display text-2xl">
+                      {g.name}
+                    </h2>
+                    <span className="hint">{plural(g.routes.length, "route")}</span>
+                  </div>
+                  <div className="grid gap-2 md:grid-cols-2">
+                    {g.routes.map((r) => (
+                      <RouteCard key={r.slug} route={r} confirmed={confirmed[r.slug] ?? 0} />
+                    ))}
+                  </div>
+                </section>
+              ))}
+            </div>
+          </div>
         </>
       )}
     </div>

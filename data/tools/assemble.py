@@ -58,6 +58,43 @@ def slugify(t):
     return re.sub(r"[^a-z0-9]+", "-", str(t).lower()).strip("-")[:60]
 
 
+def through_tunnels(profile, tunnels):
+    """The height grid gives the mountain above a tunnel, not the road inside it: on Manali to Leh it read 4,687 m
+    above the Atal Tunnel, which runs at about 3,000 m. Heights inside a tunnel are drawn on a straight line between
+    the nearest heights outside it, and say which tunnel they are in."""
+    if not tunnels:
+        return profile, []
+
+    def inside(km):
+        return next((t for t in tunnels if t["from_km"] < km < t["to_km"]), None)
+
+    out = [dict(p) for p in profile]
+    for i, p in enumerate(out):
+        t = inside(p["km"])
+        if not t:
+            continue
+        before = next((q for q in reversed(out[:i]) if not inside(q["km"])), None)
+        after = next((q for q in out[i + 1:] if not inside(q["km"])), None)
+        if before and after:
+            f = (p["km"] - before["km"]) / (after["km"] - before["km"])
+            p["m"] = round(before["m"] + f * (after["m"] - before["m"]))
+        elif before or after:
+            p["m"] = (before or after)["m"]
+        p["tunnel"] = t["name"]
+    used = [{"name": t["name"], "from_km": t["from_km"], "to_km": t["to_km"], "length_km": t["length_km"]}
+            for t in tunnels if any(p.get("tunnel") == t["name"] and t["from_km"] < p["km"] < t["to_km"] for p in out)]
+    return out, used
+
+
+def steep(slug, profile):
+    """A road rarely climbs more than one metre in eight for kilometres on end. A steeper jump between two heights is
+    more likely a tunnel or a cliff the grid caught, so it is named for a person to look at."""
+    for a, b in zip(profile, profile[1:]):
+        run = (b["km"] - a["km"]) * 1000
+        if run > 0 and abs(b["m"] - a["m"]) / run > 0.125:
+            print(f"  check {slug}: {a['m']} m at km {a['km']} to {b['m']} m at km {b['km']}")
+
+
 def build(r):
     slug = r["slug"]
     rt = load(os.path.join(DATA, "computed", "route", slug + ".json"))
@@ -74,7 +111,7 @@ def build(r):
             names.append(n)
 
     # ── map data ─────────────────────────────────────────────────────────
-    waypoints, stretches, profile, line = [], [], [], []
+    waypoints, stretches, profile, line, tunnels = [], [], [], [], []
     distance = hours = None
     if rt:
         heights = {w["name"]: w["m"] for w in (el or {}).get("waypoints", [])}
@@ -92,6 +129,8 @@ def build(r):
                               "map_app_hours": leg["map_app_hours"], "doubtful": bool(doubtful)})
         distance, hours, line = rt["distance_km"], rt["map_app_hours"], rt["line"]
         profile = [p for p in (el or {}).get("profile", []) if p.get("m") is not None]
+        profile, tunnels = through_tunnels(profile, (load(os.path.join(DATA, "computed", "tunnels", slug + ".json")) or {}).get("tunnels", []))
+        steep(slug, profile)
         for u in rt.get("unplaced", []):
             gaps.append("Not on the line: " + u)
         if any(s["doubtful"] for s in stretches):
@@ -149,6 +188,11 @@ def build(r):
     authorities = []
     for i, a in enumerate(rs.get("authorities", []) or []):
         src = clean_source(a.get("source"))
+        # Says what an office announces, never what it last said: "Snow clearance finished and road connected"
+        # reads as if the road is open today, which Meel never says.
+        said = str(a.get("announces") or "")
+        if " or " not in said and re.match(r"^\S+( \S+)? (finished|connected|opened|reopened|closed|restored|declared)\b", said, re.I):
+            print(f"  check {slug}: {a.get('office')} reads like news, not what it announces: {a.get('announces')}")
         if a.get("office") and src:
             authorities.append({"id": f"authority:{slugify(a['office'])}", "office": str(a["office"]),
                                 "announces": str(a.get("announces") or ""), "stretch": a.get("stretch") or None,
@@ -203,7 +247,7 @@ def build(r):
         "slug": slug, "name": r["name"], "region": r["region"], "region_name": REGION_NAME[r["region"]],
         "batch": r["batch"], "terrain": r["terrain"], "country": r.get("country", "in"),
         "level": "basic" if written else "unwritten", "one_line": one_line, "places": names,
-        "header": header, "waypoints": waypoints, "stretches": stretches, "profile": profile, "line": line,
+        "header": header, "waypoints": waypoints, "stretches": stretches, "profile": profile, "tunnels": tunnels, "line": line,
         "fuel": fuel, "rules": rules, "season": {"note": se.get("note") or None, "history": years},
         "authorities": authorities, "hazards": hazards, "videos": videos,
         "image": credits.get(slug), "gaps": gaps, "counts": {"facts": facts},

@@ -1,0 +1,33 @@
+{
+ "slug": "rajasthan-hills",
+ "fetched": "2026-09-28",
+ "tunnels": [
+  {
+   "name": "A tunnel",
+   "osm": [
+    "way/667961827",
+    "way/667961828"
+   ],
+   "from_km": 14.8,
+   "to_km": 15.3,
+   "length_km": 0.5
+  },
+  {
+   "name": "A tunnel",
+   "osm": [
+    "way/173417975",
+    "way/173417972"
+   ],
+   "from_km": 160.5,
+   "to_km": 160.9,
+   "length_km": 0.4
+  }
+ ],
+ "source": {
+  "service": "Overpass API",
+  "data": "OpenStreetMap contributors",
+  "licence": "Open Database Licence",
+  "url": "https://www.openstreetmap.org/copyright"
+ },
+ "note": "Road tunnels of 250 m or more that the route runs through, as drawn on the open map."
+}

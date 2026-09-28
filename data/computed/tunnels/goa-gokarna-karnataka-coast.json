@@ -1,0 +1,33 @@
+{
+ "slug": "goa-gokarna-karnataka-coast",
+ "fetched": "2026-09-28",
+ "tunnels": [
+  {
+   "name": "A tunnel",
+   "osm": [
+    "way/956687757",
+    "way/956687758"
+   ],
+   "from_km": 101.1,
+   "to_km": 101.5,
+   "length_km": 0.4
+  },
+  {
+   "name": "A tunnel",
+   "osm": [
+    "way/956687754",
+    "way/956687753"
+   ],
+   "from_km": 101.7,
+   "to_km": 102.1,
+   "length_km": 0.4
+  }
+ ],
+ "source": {
+  "service": "Overpass API",
+  "data": "OpenStreetMap contributors",
+  "licence": "Open Database Licence",
+  "url": "https://www.openstreetmap.org/copyright"
+ },
+ "note": "Road tunnels of 250 m or more that the route runs through, as drawn on the open map."
+}

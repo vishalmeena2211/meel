@@ -1,0 +1,12 @@
+{
+ "slug": "rann-of-kutch",
+ "fetched": "2026-09-28",
+ "tunnels": [],
+ "source": {
+  "service": "Overpass API",
+  "data": "OpenStreetMap contributors",
+  "licence": "Open Database Licence",
+  "url": "https://www.openstreetmap.org/copyright"
+ },
+ "note": "Road tunnels of 250 m or more that the route runs through, as drawn on the open map."
+}

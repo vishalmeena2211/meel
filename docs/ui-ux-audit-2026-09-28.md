@@ -25,16 +25,16 @@ Audit of the site as it runs on this machine, 28 September 2026, after the searc
 
 ## Fix first
 
-- [ ] **The altitude chart shows a peak that is not on the road.** On Manali to Leh (`/routes/manali-leh/altitude`), the line jumps to 4,687 m at km 29, then drops back to 3,073 m. That height is the mountain above the Atal Tunnel; the road goes through it at about 3,000 m. A rider planning a slow climb for their body sees a false peak on day one.
+- [x] **The altitude chart shows a peak that is not on the road.** *Done 28 September: tunnels are taken from the open map, and the line runs straight through them on 6 routes; the chart names a tunnel of 1 km or more.* On Manali to Leh (`/routes/manali-leh/altitude`), the line jumps to 4,687 m at km 29, then drops back to 3,073 m. That height is the mountain above the Atal Tunnel; the road goes through it at about 3,000 m. A rider planning a slow climb for their body sees a false peak on day one.
   *Fix:* in the data tools, find stretches the map marks as tunnels, and draw a straight line between the two ends instead of the ground above. Then check every route with a tunnel: Atal, Chenani–Nashri, Banihal (Navyug), and Zoji La once it opens. *Size:* medium (data).
 
-- [ ] **"Is it open?" leads with old news that reads like a road status.** The Border Roads Organisation card says "Snow clearance finished and road connected", dated May 2025, 17 months ago. On a laptop, the side panel shows it cut off, next to a small date badge. The site's one promise is that it never says a road is open, and this line reads as if it does.
+- [x] **"Is it open?" leads with old news that reads like a road status.** *Done 28 September: three office lines reworded to say what the office announces, and the data tools now warn when a line reads like news.* The Border Roads Organisation card says "Snow clearance finished and road connected", dated May 2025, 17 months ago. On a laptop, the side panel shows it cut off, next to a small date badge. The site's one promise is that it never says a road is open, and this line reads as if it does.
   *Fix:* lead each card with what that office announces, such as "Announces snow clearance and when the road opens". Show the last notice only as "Last notice we saw, 12 May 2025: …", smaller, or drop it. *Size:* small (words), plus a drawing change.
 
-- [ ] **On a laptop, the region chips past the right edge cannot be reached with a mouse.** The chip row on the front page scrolls sideways with its scrollbar hidden. A trackpad can swipe it, but a plain mouse wheel cannot (only Shift with the wheel does), so for most mouse users "Rajasthan" and everything after it is out of reach.
+- [x] **On a laptop, the region chips past the right edge cannot be reached with a mouse.** *Done 28 September: they wrap from tablet width up.* The chip row on the front page scrolls sideways with its scrollbar hidden. A trackpad can swipe it, but a plain mouse wheel cannot (only Shift with the wheel does), so for most mouse users "Rajasthan" and everything after it is out of reach.
   *Fix:* on laptop widths, let the chips wrap onto a second line, and keep sideways scrolling on phones. *Size:* small.
 
-- [ ] **On a laptop, the front page is mostly the road drawing.** The drawing stretches to the full width, about 1,120 × 700 px, and its "North is up" grows to about 33 px text. The first route appears only after about 1,000 px of scrolling. The page is 4,971 px tall.
+- [x] **On a laptop, the front page is mostly the road drawing.** *Done 28 September: the routes come first, with the drawing beside them (drawn as frame 2.6).* The drawing stretches to the full width, about 1,120 × 700 px, and its "North is up" grows to about 33 px text. The first route appears only after about 1,000 px of scrolling. The page is 4,971 px tall.
   *Fix:* cap the drawing's height (about 360 px), or put it beside the list, so the routes come first. *Size:* small, plus a drawing change.
 
 ## Next
@@ -101,6 +101,11 @@ Audit of the site as it runs on this machine, 28 September 2026, after the searc
   *Fix:* show a short full line instead. This goes with the "Is it open?" fix above. *Size:* small.
 
 - [ ] **No dark look.** Reading at night at a halt would be easier on the eyes. *Size:* large.
+
+## Found while fixing the first four
+
+- [ ] **Guwahati to Tawang still goes over Sela Pass, not through the Sela Tunnel.** The tunnel opened in 2024, but the road line comes from a routing service that sends it over the pass (4,175 m). The heights are right for that line. Riders now mostly take the tunnel, which is lower. *Fix:* route that stretch through the tunnel, then say both ways on the page. *Size:* medium (data).
+- [ ] **Three steep jumps on the altitude charts, to look at by hand.** The data tools now name any jump steeper than one in eight between two height samples. Jalori and Tirthan has two, near Jalori Pass, which may be real, because that road is famously steep. Darjeeling and Sandakphu has one, a drop of 786 m in 6 km towards the Teesta. *Size:* small, each.
 
 ## What already works well, and should stay
 

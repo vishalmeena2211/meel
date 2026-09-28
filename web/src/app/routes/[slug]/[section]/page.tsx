@@ -226,6 +226,7 @@ async function SectionBody(props: PageProps<"/routes/[slug]/[section]">) {
       <AltitudeScreen
         waypoints={route.waypoints}
         profile={route.profile}
+        tunnels={route.tunnels ?? []}
         distanceKm={route.header.distance_km ?? 0}
         routeName={route.name}
         routeSlug={slug}

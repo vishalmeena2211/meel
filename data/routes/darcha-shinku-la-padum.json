@@ -432,6 +432,7 @@
    "m": 3566
   }
  ],
+ "tunnels": [],
  "line": [
   [
    77.21612,
@@ -2948,7 +2949,7 @@
   {
    "id": "authority:border-roads-organisation-project-yojak",
    "office": "Border Roads Organisation, Project Yojak",
-   "announces": "Snow clearance finished and pass declared open",
+   "announces": "Says when snow clearance is finished and the pass is declared open",
    "stretch": "Darcha to Shinku La to Padum",
    "channel": "Opening ceremony and statements to the press; no status page",
    "url": "https://bro.gov.in/",
