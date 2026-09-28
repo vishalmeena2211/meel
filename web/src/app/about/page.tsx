@@ -121,7 +121,7 @@ export default async function AboutPage() {
       </section>
 
       <Callout title="Kept by one person, as a hobby">
-        No advertising. No paid listings. If that ever changes, every paid link will be marked as such.
+        No advertising. No paid listings. If that ever changes, every paid link will be marked as such. Visits are counted with Vercel’s Web Analytics, which uses no cookies and keeps nothing that names you.
       </Callout>
 
       <nav className="flex flex-wrap gap-x-4 gap-y-1">

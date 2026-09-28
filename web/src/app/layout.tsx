@@ -1,3 +1,4 @@
+import { Analytics } from "@vercel/analytics/next";
 import type { Metadata, Viewport } from "next";
 import { Barlow_Condensed, Hind } from "next/font/google";
 import Link from "next/link";
@@ -81,6 +82,8 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
 
         <TabBar />
         <OutboxSender />
+        {/* Counts page views on Vercel: no cookies, nothing that names a rider. Sends nothing in development. */}
+        <Analytics />
       </body>
     </html>
   );
