@@ -18,6 +18,7 @@
 <br>
 [![Status: early](https://img.shields.io/badge/status-early,_facts_not_yet_confirmed_by_riders-f2b807)](#how-far-to-trust-it)
 [![Kept as a hobby](https://img.shields.io/badge/kept_by-one_person,_as_a_hobby-f2b807)](#the-rules-it-keeps)
+[![Licence: MIT for the code](https://img.shields.io/badge/licence-MIT_for_the_code-0f5f4b)](#licence)
 
 [What it does](#what-it-does) · [How far to trust it](#how-far-to-trust-it) · [How it works](#how-it-works) · [Run it yourself](#run-it-on-your-machine) · [The wireframes](design)
 
@@ -185,7 +186,9 @@ The full list, source by source, is on the site's credits page, and in [`data/RE
 
 ## Licence
 
-**Not chosen yet.** Until it is, all rights are reserved. Whatever is chosen for the code, the data keeps the licences of its sources: map data under the Open Database Licence, and each picture under the licence named beside it.
+**The code is under the [MIT licence](LICENSE).** Use it, change it and share it, keeping the copyright notice.
+
+**The data is not.** It keeps the licences of its sources, which cannot be changed here: map data under the Open Database Licence, heights in the public domain, and each picture under the licence named beside it. See [`data/LICENSE.md`](data/LICENSE.md).
 
 ## Words used here
 

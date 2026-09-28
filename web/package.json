@@ -2,6 +2,7 @@
   "name": "meel-web",
   "version": "0.1.0",
   "private": true,
+  "license": "MIT",
   "scripts": {
     "sync-data": "node scripts/sync-data.mjs",
     "postinstall": "prisma generate --no-hints",
