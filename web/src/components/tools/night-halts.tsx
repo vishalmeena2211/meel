@@ -2,7 +2,7 @@
 
 import { useMemo, useState } from "react";
 
-import { metres } from "@/lib/format";
+import { feet } from "@/lib/format";
 import type { ProfilePoint, Tunnel, Waypoint } from "@/lib/types";
 
 import { Profile, type ProfileMark } from "../route/drawings";
@@ -10,6 +10,7 @@ import { BackHead, Foot } from "../shell";
 import { Callout, SectionHeading } from "../ui";
 
 // Proposed limits, in metres gained between two nights. To be read by a doctor who knows altitude.
+// The check works in metres; riders are told in feet: about 1,600 and 4,900 feet.
 const STEEP = 500;
 const TOO_STEEP = 1500;
 
@@ -131,7 +132,7 @@ export function AltitudeScreen({
           <div role="status" className="flex flex-col gap-1.5 rounded-xl border border-stale-fg/30 bg-stale-bg p-3.5">
             <span className="label !text-stale-fg">Night {worst.night} climbs too fast</span>
             <p className="display num text-[2.125rem]">
-              +{metres(gain)} <small className="font-sans text-sm font-medium text-ink-2">between two nights</small>
+              +{feet(gain)} <small className="font-sans text-sm font-medium text-ink-2">between two nights</small>
             </p>
             <p className="text-sm">
               {worst.before?.name} to {worst.name} in one day.{" "}
@@ -142,13 +143,13 @@ export function AltitudeScreen({
           <div role="status">
             <Callout tone="warn" title={add ? `Night ${worst.night} is a steep climb` : "Steep, but the gentlest this road allows"}>
               {add
-                ? `+${metres(gain)} between two nights. A night at ${add.name} would spread it.`
-                : `Walkers are told to gain no more than about ${STEEP} m a night. No plan between these halts can do that. This one spreads the climb over ${rows.length - 1} ${rows.length - 1 === 1 ? "day" : "days"}.`}
+                ? `+${feet(gain)} between two nights. A night at ${add.name} would spread it.`
+                : `Walkers are told to gain no more than about 1,600 feet a night. No plan between these halts can do that. This one spreads the climb over ${rows.length - 1} ${rows.length - 1 === 1 ? "day" : "days"}.`}
             </Callout>
           </div>
         ) : (
           <div role="status">
-            <Callout tone="info" title={`No night climbs more than ${STEEP} m above the one before`}>
+            <Callout tone="info" title="No night climbs more than about 1,600 feet above the one before">
               That is the limit walkers are given. It is not a promise of how you will feel.
             </Callout>
           </div>
@@ -166,7 +167,7 @@ export function AltitudeScreen({
               </span>
               <span>
                 <b className="block text-[0.9375rem] leading-5">{r.name}</b>
-                <span className="hint num">Sleeps at {metres(r.m)}</span>
+                <span className="hint num">Sleeps at {feet(r.m)}</span>
               </span>
               <span
                 className={`font-display num text-right text-[1.0625rem] leading-none font-bold ${
@@ -179,7 +180,7 @@ export function AltitudeScreen({
                         : "text-fresh-fg"
                 }`}
               >
-                {r.gain === null ? "—" : `${r.gain > 0 ? "+" : "−"}${metres(Math.abs(r.gain))}`}
+                {r.gain === null ? "—" : `${r.gain > 0 ? "+" : "−"}${feet(Math.abs(r.gain))}`}
                 <small className="block font-sans text-xs leading-4 font-normal text-ink-2">
                   {r.verdict === "too-steep" ? "too steep" : r.verdict}
                 </small>
@@ -190,7 +191,7 @@ export function AltitudeScreen({
 
         <p className="hint">
           This is not medical advice. It compares the height of your beds, nothing more. Heights are read from a 90 m
-          grid and can differ from a signboard by some tens of metres.
+          grid and can differ from a signboard by a hundred feet or so.
         </p>
         <button type="button" className="link self-start text-sm" onClick={() => setChecked(false)}>
           Change my night halts
@@ -223,14 +224,14 @@ export function AltitudeScreen({
                   type="checkbox"
                   checked={on}
                   onChange={() => toggle(h.name)}
-                  aria-label={`${h.name}, ${metres(h.m)}`}
+                  aria-label={`${h.name}, ${feet(h.m)}`}
                   className="size-[18px] shrink-0 accent-sign"
                 />
                 <span className="min-w-0 flex-1">
                   <b className="block text-[0.9375rem] leading-5">{h.name}</b>
                   {h.name === highest ? <span className="hint">The highest place riders sleep on this road</span> : null}
                 </span>
-                <span className="num text-[0.9375rem] font-semibold">{metres(h.m)}</span>
+                <span className="num text-[0.9375rem] font-semibold">{feet(h.m)}</span>
               </label>
             </li>
           );

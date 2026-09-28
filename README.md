@@ -44,7 +44,7 @@ Meel is the memory those groups don't have. It keeps **one page per route**, spl
 
 | | |
 |---|---|
-| **50 routes, section by section** | From Manali to Leh and the Spiti circuit to the Konkan coast and the North-East: 13 regions and about 33,600 km of road. The highest point on any route is Umling La, at 5,799 m. |
+| **50 routes, section by section** | From Manali to Leh and the Spiti circuit to the Konkan coast and the North-East: 13 regions and about 33,600 km of road. The highest point on any route is Umling La, at 19,030 ft. Heights are given in feet, as pass signboards give them. |
 | **Every fact dated and sourced** | 3,846 facts, each with its source, the day it was read, and a state: fresh, ageing, stale, not yet checked, or riders disagree. |
 | **Fuel check** | Pick your bike, and the route says where your tank runs short and how much extra to carry. |
 | **Altitude check** | Choose where you will sleep, and the route warns you if a night climbs too fast for your body to cope. |

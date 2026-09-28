@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import type { ReactNode } from "react";
 
-import { km, metres, plural, stoneCap } from "@/lib/format";
+import { km, feet, plural, stoneCap } from "@/lib/format";
 import { REPORTS_NEEDED, type SectionId } from "@/lib/sections";
 import type { RouteView } from "@/server/route-view";
 
@@ -124,7 +124,7 @@ export function RouteHead({ view, as: Name = "h2" }: { view: RouteView; as?: "h1
           items={(
             [
               h.usual_days ? { label: "Usual days", value: h.usual_days.value } : null,
-              h.highest_point ? { label: "Highest point", value: metres(h.highest_point.altitude_m) } : null,
+              h.highest_point ? { label: "Highest point", value: feet(h.highest_point.altitude_m) } : null,
               h.usual_season
                 ? { label: mountain ? "Usually open" : "Best months", value: shortSeason(h.usual_season.value) }
                 : null,

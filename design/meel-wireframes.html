@@ -624,7 +624,7 @@ const sectionChips = (on) => `<div class="hscroll">${[['fuel', 'Fuel'], ['shield
 
 /* ── More of the example world ────────────────────────────────── */
 const shareBtn = `<span class="iconbtn">${ICON.share}</span>`;
-/* Place, distance from Manali in km, altitude in metres. Example figures. */
+/* Place, distance from Manali in km, altitude in metres (shown in feet). Example figures. */
 const ALT = [
   ['Manali', 0, 2050], ['Tandi', 61, 2570], ['Keylong', 69, 3080], ['Jispa', 91, 3310],
   ['Baralacha La', 140, 4890], ['Sarchu', 175, 4290], ['Lachulung La', 229, 5059],
@@ -636,7 +636,8 @@ function profile(nights = [], bad = [], caption = '') {
   const y = (m) => T + (1 - (m - 2000) / 3500) * (H - T - B);
   const pts = ALT.map(([, km, m]) => `${x(km).toFixed(1)},${y(m).toFixed(1)}`).join(' ');
   const lab = { 'Manali': [14, 'start'], 'Jispa': [15, 'middle'], 'Baralacha La': [-9, 'middle'], 'Sarchu': [16, 'middle'], 'Pang': [16, 'middle'], 'Tanglang La': [-9, 'middle'], 'Leh': [15, 'end'] };
-  const grid = [2000, 3500, 5000].map((m) => `<line class="grid" x1="${L}" x2="${W - R}" y1="${y(m)}" y2="${y(m)}"/><text class="ax" x="${L - 4}" y="${y(m) + 3}" text-anchor="end">${m.toLocaleString('en-IN')}</text>`).join('');
+  // Heights are drawn in feet, as riders and pass signboards give them.
+  const grid = [8000, 12000, 16000].map((f) => { const m = f / 3.28084; return `<line class="grid" x1="${L}" x2="${W - R}" y1="${y(m)}" y2="${y(m)}"/><text class="ax" x="${L - 4}" y="${y(m) + 3}" text-anchor="end">${f.toLocaleString('en-IN')}</text>`; }).join('');
   const ticks = [0, 100, 200, 300, 427].map((km) => `<text class="ax" x="${x(km)}" y="${H - 8}" text-anchor="${km === 0 ? 'start' : km === 427 ? 'end' : 'middle'}">${km}${km === 427 ? ' km' : ''}</text>`).join('');
   const marks = ALT.map(([n, km, m]) => {
     const ni = nights.indexOf(n);
@@ -652,7 +653,7 @@ function profile(nights = [], bad = [], caption = '') {
     <polygon class="area" points="${x(0)},${y(2000)} ${pts} ${x(427)},${y(2000)}"/>
     <polyline class="ln" points="${pts}"/>
     ${marks}${ticks}
-    <text class="ax" x="${L - 4}" y="12" text-anchor="end">metres</text>
+    <text class="ax" x="${L - 4}" y="12" text-anchor="end">feet</text>
   </svg>${caption ? `<p class="pcap">${caption}</p>` : ''}</div>`;
 }
 const fmtH = (h) => { const m = Math.round(h * 60); return `${Math.floor(m / 60)} h${m % 60 ? ' ' + (m % 60) + ' min' : ''}`; };
@@ -846,7 +847,7 @@ const SCREENS = [
       ${head('Manali to Leh', 'Full page · 104 facts', { right: shareBtn })}
       ${body(`
         ${routeHead('Manali to Leh', 'NH 3', '427', 'Himachal Pradesh and Ladakh · over Baralacha La and Tanglang La')}
-        <div class="keys four"><div><span>Usual days</span><b>2 to 3</b></div><div><span>Highest point</span><b>5,328 m</b></div><div><span>Usually open</span><b>Jun to Oct</b></div><div class="gapk"><span>No fuel for</span><b>323 km</b></div></div>`)}
+        <div class="keys four"><div><span>Usual days</span><b>2 to 3</b></div><div><span>Highest point</span><b>17,480 ft</b></div><div><span>Usually open</span><b>Jun to Oct</b></div><div class="gapk"><span>No fuel for</span><b>323 km</b></div></div>`)}
       <div class="sheet-scrim"></div>
       <div class="sheet"><span class="grab"></span>
         <h3>Save Manali to Leh to this phone?</h3>
@@ -896,7 +897,7 @@ const SCREENS = [
       ${head('Manali to Leh', 'Full page · 104 facts', { right: `<span class="iconbtn">${ICON.share}</span>` })}
       ${body(`
         ${routeHead('Manali to Leh', 'NH 3', '427', 'Himachal Pradesh and Ladakh · over Baralacha La and Tanglang La')}
-        <div class="keys four"><div><span>Usual days</span><b>2 to 3</b></div><div><span>Highest point</span><b>5,328 m</b></div><div><span>Usually open</span><b>Jun to Oct</b></div><div class="gapk"><span>No fuel for</span><b>323 km</b></div></div>
+        <div class="keys four"><div><span>Usual days</span><b>2 to 3</b></div><div><span>Highest point</span><b>17,480 ft</b></div><div><span>Usually open</span><b>Jun to Oct</b></div><div class="gapk"><span>No fuel for</span><b>323 km</b></div></div>
         <div class="rows">
           <div class="row"><span class="ic">${ICON.flag}</span><span class="grow"><b>Is it open? Where to check today</b><span class="hint">5 official sources · we link, we do not guess</span></span>${chev}</div>
           <div class="row"><span class="ic">${ICON.save}</span><span class="grow"><b>Save for the road</b><span class="hint">Works with no network</span></span>${chev}</div>
@@ -1098,7 +1099,7 @@ const SCREENS = [
       ${head('Kolli Hills', 'Basic page · 14 facts', { right: `<span class="iconbtn">${ICON.share}</span>` })}
       ${body(`
         ${routeHead('Kolli Hills', 'SH 161', '46', 'Tamil Nadu · 70 hairpin bends from Karavalli to Semmedu')}
-        <div class="keys four"><div><span>Usual days</span><b>1</b></div><div><span>Highest point</span><b>1,300 m</b></div><div><span>Best months</span><b>Oct to Feb</b></div><div class="gapk"><span>No fuel for</span><b>38 km</b></div></div>
+        <div class="keys four"><div><span>Usual days</span><b>1</b></div><div><span>Highest point</span><b>4,270 ft</b></div><div><span>Best months</span><b>Oct to Feb</b></div><div class="gapk"><span>No fuel for</span><b>38 km</b></div></div>
         <div class="callout"><b>This is a basic page</b>No rider has reported on this route yet. What is here comes from official and published sources.</div>
         <div class="lbl">On this page</div>
         <div class="rows">
@@ -1368,19 +1369,19 @@ Name: Rahul N.</span><span class="send">${ICON.send}</span></div>
     group: 'Tools', title: 'Altitude and night halts',
     lede: 'The official rule is written for people who fly into Leh. A rider climbs over several days, and where they sleep matters more than how high they ride.',
     render: () => {
-      const night = (n, place, alt, gain, cls, note) => `<div class="night-row"><span class="n">${n}</span><span><b>${place}</b><span class="hint num">Sleeps at ${alt} m</span></span><span class="gain ${cls}">${gain}<small>${note}</small></span></div>`;
+      const night = (n, place, alt, gain, cls, note) => `<div class="night-row"><span class="n">${n}</span><span><b>${place}</b><span class="hint num">Sleeps at ${alt} ft</span></span><span class="gain ${cls}">${gain}<small>${note}</small></span></div>`;
       return phone('1. The climb, drawn to scale', `
         ${head('Altitude', 'Manali to Leh')}
         ${body(`
           ${profile([], [], 'Through the Atal Tunnel, 9 km, the line runs straight from one end to the other: the road goes inside the mountain, not over it.')}
           <div class="sec-h"><h3>Where riders sleep</h3><span class="hint">6 halts</span></div>
           <div class="rows">
-            <div class="row"><span class="grow"><b>Manali</b></span><span class="num">2,050 m</span></div>
-            <div class="row"><span class="grow"><b>Keylong</b></span><span class="num">3,080 m</span></div>
-            <div class="row"><span class="grow"><b>Jispa</b></span><span class="num">3,310 m</span></div>
-            <div class="row"><span class="grow"><b>Sarchu</b><span class="hint">Higher than any night halt in Ladakh’s towns</span></span><span class="num">4,290 m</span></div>
-            <div class="row"><span class="grow"><b>Pang</b></span><span class="num">4,600 m</span></div>
-            <div class="row"><span class="grow"><b>Leh</b></span><span class="num">3,500 m</span></div>
+            <div class="row"><span class="grow"><b>Manali</b></span><span class="num">6,730 ft</span></div>
+            <div class="row"><span class="grow"><b>Keylong</b></span><span class="num">10,100 ft</span></div>
+            <div class="row"><span class="grow"><b>Jispa</b></span><span class="num">10,860 ft</span></div>
+            <div class="row"><span class="grow"><b>Sarchu</b><span class="hint">Higher than any night halt in Ladakh’s towns</span></span><span class="num">14,070 ft</span></div>
+            <div class="row"><span class="grow"><b>Pang</b></span><span class="num">15,090 ft</span></div>
+            <div class="row"><span class="grow"><b>Leh</b></span><span class="num">11,480 ft</span></div>
           </div>`)}
         <div class="pfoot"><span class="btn btn-primary btn-block">Check my night halts</span></div>`)
       + phone('2. A plan that climbs too fast', `
@@ -1388,12 +1389,12 @@ Name: Rahul N.</span><span class="send">${ICON.send}</span></div>
         ${body(`
           ${profile(['Manali', 'Sarchu', 'Leh'], ['Sarchu'])}
           <div class="result bad"><span class="lbl" style="color:var(--stale-fg)">Night 2 climbs too fast</span>
-            <div class="big">+2,240 m <small>between two nights</small></div>
+            <div class="big">+7,350 ft <small>between two nights</small></div>
             <span>Manali to Sarchu in one day. Sleep at Keylong or Jispa first.</span></div>
           <div class="nights">
-            ${night(1, 'Manali', '2,050', '—', '', 'start')}
-            ${night(2, 'Sarchu', '4,290', '+2,240 m', 'bad', 'too steep')}
-            ${night(3, 'Leh', '3,500', '−790 m', 'ok', 'descends')}
+            ${night(1, 'Manali', '6,730', '—', '', 'start')}
+            ${night(2, 'Sarchu', '14,070', '+7,350 ft', 'bad', 'too steep')}
+            ${night(3, 'Leh', '11,480', '−2,590 ft', 'ok', 'descends')}
           </div>
           <span class="hint">This is not medical advice. It compares the height of your beds, nothing more.</span>`)}
         <div class="pfoot"><span class="btn btn-primary btn-block">Add a night at Jispa</span></div>`)
@@ -1401,20 +1402,20 @@ Name: Rahul N.</span><span class="send">${ICON.send}</span></div>
         ${head('Altitude', 'Your night halts')}
         ${body(`
           ${profile(['Manali', 'Jispa', 'Sarchu', 'Leh'])}
-          <div class="callout warn"><b>Steep, but the gentlest this road allows</b>Walkers are told to gain no more than about 500 m a night. No plan on this road can do that. This one spreads the climb over two nights.</div>
+          <div class="callout warn"><b>Steep, but the gentlest this road allows</b>Walkers are told to gain no more than about 1,600 feet a night. No plan on this road can do that. This one spreads the climb over two nights.</div>
           <div class="nights">
-            ${night(1, 'Manali', '2,050', '—', '', 'start')}
-            ${night(2, 'Jispa', '3,310', '+1,260 m', 'mid', 'steep')}
-            ${night(3, 'Sarchu', '4,290', '+980 m', 'mid', 'steep')}
-            ${night(4, 'Leh', '3,500', '−790 m', 'ok', 'descends')}
+            ${night(1, 'Manali', '6,730', '—', '', 'start')}
+            ${night(2, 'Jispa', '10,860', '+4,130 ft', 'mid', 'steep')}
+            ${night(3, 'Sarchu', '14,070', '+3,220 ft', 'mid', 'steep')}
+            ${night(4, 'Leh', '11,480', '−2,590 ft', 'ok', 'descends')}
           </div>
           <div class="callout"><b>If you fly into Leh instead</b>The district asks for 48 hours of rest in Leh before going higher. <span class="link">Official notice</span></div>
           <span class="hint">This is not medical advice.</span>`)}`);
     },
     notes: [
-      ['Tunnels (frame 1)', ['The height grid gives the mountain above a tunnel, not the road inside it. On Manali to Leh it read 4,687 m above the Atal Tunnel, which runs at about 3,000 m.', 'Inside a tunnel the line runs straight from one end to the other, and a line under the chart names the tunnel and its length.']],
+      ['Tunnels (frame 1)', ['The height grid gives the mountain above a tunnel, not the road inside it. On Manali to Leh it read 15,380 feet above the Atal Tunnel, which runs at about 10,000 feet.', 'Inside a tunnel the line runs straight from one end to the other, and a line under the chart names the tunnel and its length.']],
       ['Layout', ['The profile is drawn to one scale: distance along the bottom, height up the side. Night halts are the numbered yellow dots.', 'The answer comes first, as one number: the biggest climb between two beds.', 'The official rule for people who fly in is shown, clearly apart from the advice for riders.']],
-      ['Behaviour', ['The check looks only at sleeping height, night to night.', 'Proposed limits: up to 500 m is fine, 500 to 1,500 m is steep, over 1,500 m is too steep.', 'The tool never says a plan is safe. The best it says is “the gentlest this road allows”.', 'Runs on the page itself. Works with no network.']],
+      ['Behaviour', ['The check looks only at sleeping height, night to night.', 'Proposed limits: up to about 1,600 feet is fine, 1,600 to 4,900 feet is steep, over 4,900 feet is too steep. The check works in metres (500 and 1,500) and says the result in feet.', 'Every height is in feet, as riders and pass signboards give them: worked out from metres and rounded to the nearest 10 feet, so it can differ from a signboard by a few feet.', 'The tool never says a plan is safe. The best it says is “the gentlest this road allows”.', 'Runs on the page itself. Works with no network.']],
       ['Data', ['Per route: every halt and every pass, with its height and its distance from the start. About ten points.', 'Heights do not change, so this is entered once and never again.', 'The official notice, with its link and the date it was checked.']],
       ['Open question', ['The limits and the wording must be read by a doctor who knows altitude before this goes live. Who?'], 'q'],
     ],
@@ -1642,9 +1643,9 @@ Name: Rahul N.</span><span class="send">${ICON.send}</span></div>
         ${body(`${top5}
           <div class="lbl">Night by night</div>
           <div class="nights">
-            <div class="night-row"><span class="n">1</span><span><b>Manali</b><span class="hint num">Sleeps at 2,050 m</span></span><span class="gain">—</span></div>
-            <div class="night-row"><span class="n">2</span><span><b>Jispa</b><span class="hint num">Sleeps at 3,310 m</span></span><span class="gain mid">+1,260 m<small>steep</small></span></div>
-            <div class="night-row"><span class="n">3</span><span><b>Sarchu</b><span class="hint num">Sleeps at 4,290 m</span></span><span class="gain mid">+980 m<small>steep</small></span></div>
+            <div class="night-row"><span class="n">1</span><span><b>Manali</b><span class="hint num">Sleeps at 6,730 ft</span></span><span class="gain">—</span></div>
+            <div class="night-row"><span class="n">2</span><span><b>Jispa</b><span class="hint num">Sleeps at 10,860 ft</span></span><span class="gain mid">+4,130 ft<small>steep</small></span></div>
+            <div class="night-row"><span class="n">3</span><span><b>Sarchu</b><span class="hint num">Sleeps at 14,070 ft</span></span><span class="gain mid">+3,220 ft<small>steep</small></span></div>
           </div>
           <div class="callout"><b>Fuel: 323 km with no pump</b>Keylong to Karu. <span class="link">Check your bike</span></div>
           <div class="lbl">What Anjali asks</div>
@@ -1796,7 +1797,7 @@ Name: Rahul N.</span><span class="send">${ICON.send}</span></div>
           <div class="checks">
             <div class="check ok">${ICON.check}<span><b>Season.</b> Your dates fall inside the months this road is usually open.</span></div>
             <div class="check wait">${ICON.clock}<span><b>Opening.</b> The road has opened to motorcycles in the first week of June in each year on record. 19 June leaves little room if it is late.</span></div>
-            <div class="check wait">${ICON.clock}<span><b>Altitude.</b> Night 2 at Jispa climbs 1,260 m. Steep, but the gentlest this road allows.</span></div>
+            <div class="check wait">${ICON.clock}<span><b>Altitude.</b> Night 2 at Jispa climbs 4,130 feet. Steep, but the gentlest this road allows.</span></div>
             <div class="check ok">${ICON.check}<span><b>Fuel.</b> 323 km with no pump. Riders will be told to check their bike.</span></div>
           </div>
           <div class="callout info"><b>Publishing puts this on the board</b>Anyone can read it. Only riders you accept see the chat group link. You can change or withdraw the trip at any time.</div>`)}
@@ -2115,7 +2116,7 @@ Name: Rahul N.</span><span class="send">${ICON.send}</span></div>
           <section class="desk-mid">
             <div style="display:grid;grid-template-columns:1fr 300px;gap:20px;align-items:center">
               ${routeHead('Manali to Leh', 'NH 3', '427', 'Himachal Pradesh and Ladakh · over Baralacha La and Tanglang La')}
-              <div class="keys"><div><span>Usual days</span><b>2 to 3</b></div><div><span>Highest</span><b>5,328 m</b></div><div><span>Usually open</span><b>Jun to Oct</b></div></div>
+              <div class="keys"><div><span>Usual days</span><b>2 to 3</b></div><div><span>Highest</span><b>17,480 ft</b></div><div><span>Usually open</span><b>Jun to Oct</b></div></div>
             </div>
             <div class="sec-h"><h3>Fuel</h3><span class="hint">4 pumps · longest gap 323 km</span></div>
             ${gapStrip}
@@ -2228,7 +2229,7 @@ Rahul N. · seen 13 June 2027 · sent from the chat app at 9:12 pm</div>
         <div class="credit-line">Photo: Timothy Gonsalves · CC BY-SA 4.0 · <span class="link">Wikimedia Commons</span></div>
         <div class="pscroll">
         ${routeHead('Manali to Leh', 'NH 3', '434', 'Himachal Pradesh and Ladakh · over Baralacha La and Tanglang La')}
-        <div class="keys four"><div><span>Usual days</span><b>2 to 3</b></div><div><span>Highest point</span><b>5,328 m</b></div><div><span>Usually open</span><b>Jun to Oct</b></div><div class="gapk"><span>No fuel for</span><b>323 km</b></div></div>
+        <div class="keys four"><div><span>Usual days</span><b>2 to 3</b></div><div><span>Highest point</span><b>17,480 ft</b></div><div><span>Usually open</span><b>Jun to Oct</b></div><div class="gapk"><span>No fuel for</span><b>323 km</b></div></div>
         <div class="rows"><div class="row"><span class="ic">${ICON.flag}</span><span class="grow"><b>Is it open? Where to check today</b><span class="hint">5 official sources · we link, we do not guess</span></span>${chev}</div></div>
       </div></div>`)
     + phone('2. Where one fact came from', `

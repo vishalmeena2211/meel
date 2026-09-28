@@ -14,7 +14,7 @@ import { ShareTrip } from "@/components/trips/share-trip";
 import { PACE_WORDS, Seats, TripCardView, placesBadge, tripLength } from "@/components/trips/trip-card";
 import { Badge, Callout, KeyFacts } from "@/components/ui";
 import { getIndex } from "@/lib/content";
-import { dayOf, indiaDay, initials, km, metres, monthName, plural, sayDate } from "@/lib/format";
+import { dayOf, indiaDay, initials, km, feet, monthName, plural, sayDate } from "@/lib/format";
 import { nightGains } from "@/lib/trip-checks";
 import { currentUser, googleIsOn } from "@/server/auth";
 import { tripCardLine, tripShareText } from "@/lib/trip-share";
@@ -313,14 +313,14 @@ export default async function TripPage(props: PageProps<"/trips/[id]">) {
                 </span>
                 <span>
                   <b className="block text-[0.9375rem] leading-5">{g.place}</b>
-                  <span className="hint num">{g.altitude_m === null ? "Height not known" : `Sleeps at ${metres(g.altitude_m)}`}</span>
+                  <span className="hint num">{g.altitude_m === null ? "Height not known" : `Sleeps at ${feet(g.altitude_m)}`}</span>
                 </span>
                 <span
                   className={`font-display num text-right text-[1.0625rem] leading-none font-bold ${
                     g.verdict === "too-steep" ? "text-stale-fg" : g.verdict === "steep" ? "text-ageing-fg" : "text-ink-2"
                   }`}
                 >
-                  {g.gain_m === null ? "—" : `${g.gain_m > 0 ? "+" : "−"}${metres(Math.abs(g.gain_m))}`}
+                  {g.gain_m === null ? "—" : `${g.gain_m > 0 ? "+" : "−"}${feet(Math.abs(g.gain_m))}`}
                   <small className="block font-sans text-[0.6875rem] leading-4 font-normal text-ink-2">
                     {g.verdict === "too-steep" ? "too steep" : g.verdict === "unknown" || g.verdict === "start" ? "" : g.verdict}
                   </small>

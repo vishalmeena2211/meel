@@ -46,9 +46,15 @@ export function km(value: number | null | undefined): string {
   return `${Math.round(value).toLocaleString("en-IN")} km`;
 }
 
-export function metres(value: number | null | undefined): string {
-  if (value === null || value === undefined) return "—";
-  return `${Math.round(value).toLocaleString("en-IN")} m`;
+export const FEET_PER_METRE = 3.28084;
+
+/**
+ * A height, given in metres, said in feet, as riders and pass signboards say it: 5328 becomes "17,480 ft".
+ * Rounded to the nearest 10 feet, as the metres behind it are rounded too, so it can differ from a signboard by a few feet.
+ */
+export function feet(metresValue: number | null | undefined): string {
+  if (metresValue === null || metresValue === undefined) return "—";
+  return `${(Math.round((metresValue * FEET_PER_METRE) / 10) * 10).toLocaleString("en-IN")} ft`;
 }
 
 /** 4.5 becomes "4 h 30 min". */

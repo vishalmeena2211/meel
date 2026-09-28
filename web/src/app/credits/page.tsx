@@ -73,7 +73,7 @@ export default async function CreditsPage() {
             <a className="link font-medium" href="https://www.opentopodata.org/datasets/srtm/" target="_blank" rel="noreferrer noopener">
               Open Topo Data
             </a>
-            . Heights are read from a 90 m grid and can differ from a signboard by some tens of metres.
+            . Heights are read from a 90 m grid and can differ from a signboard by a hundred feet or so. They are shown in feet.
           </span>
         </div>
       </section>

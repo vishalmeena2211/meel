@@ -1,5 +1,5 @@
 // Drawings made from the route's own numbers. Each uses one scale, and says what it shows.
-import { km, metres } from "@/lib/format";
+import { FEET_PER_METRE, feet, km } from "@/lib/format";
 import type { Fuel, ProfilePoint, Tunnel, Waypoint } from "@/lib/types";
 
 // ── fuel along the road ──────────────────────────────────────────────────
@@ -132,18 +132,20 @@ export function Profile({
   const long = tunnels.filter((t) => t.length_km >= 1);
   const W = 346;
   const H = 180;
-  const L = 38;
+  const L = 44;
   const R = 10;
   const T = 24;
   const B = 28;
   const heights = profile.map((p) => p.m).concat(marks.map((m) => m.m));
   const lo = Math.min(...heights);
   const hi = Math.max(...heights);
-  const step = niceStep(Math.max(hi - lo, 200));
-  const floor = Math.floor(lo / step) * step;
-  const ceil = Math.ceil(hi / step) * step;
+  // Heights come in metres and are drawn against a scale in feet, as riders and signboards give them.
+  const step = niceStep(Math.max((hi - lo) * FEET_PER_METRE, 600));
+  const floor = Math.floor((lo * FEET_PER_METRE) / step) * step;
+  const ceil = Math.ceil((hi * FEET_PER_METRE) / step) * step;
   const x = (k: number) => L + (k / distanceKm) * (W - L - R);
-  const y = (m: number) => T + (1 - (m - floor) / Math.max(ceil - floor, 1)) * (H - T - B);
+  const y = (m: number) => T + (1 - (m * FEET_PER_METRE - floor) / Math.max(ceil - floor, 1)) * (H - T - B);
+  const yFeet = (f: number) => y(f / FEET_PER_METRE);
   const points = profile.map((p) => `${x(p.km).toFixed(1)},${y(p.m).toFixed(1)}`).join(" ");
   const lines: number[] = [];
   for (let v = floor; v <= ceil; v += step) lines.push(v);
@@ -185,22 +187,22 @@ export function Profile({
       <svg
         viewBox={`0 0 ${W} ${H}`}
         role="img"
-        aria-label={`Height along the road, drawn to scale, from ${metres(lo)} to ${metres(hi)}.`}
+        aria-label={`Height along the road, drawn to scale, from ${feet(lo)} to ${feet(hi)}.`}
         className="block h-auto w-full overflow-visible"
       >
         {lines.map((v) => (
           <g key={v}>
-            <line x1={L} x2={W - R} y1={y(v)} y2={y(v)} stroke="var(--color-line)" strokeWidth={1} />
-            <text x={L - 4} y={y(v) + 3} textAnchor="end" fontSize={LABEL} fill="var(--color-ink-2)">
+            <line x1={L} x2={W - R} y1={yFeet(v)} y2={yFeet(v)} stroke="var(--color-line)" strokeWidth={1} />
+            <text x={L - 4} y={yFeet(v) + 3} textAnchor="end" fontSize={LABEL} fill="var(--color-ink-2)">
               {v.toLocaleString("en-IN")}
             </text>
           </g>
         ))}
         <text x={L - 4} y={12} textAnchor="end" fontSize={LABEL} fill="var(--color-ink-2)">
-          metres
+          feet
         </text>
         <polygon
-          points={`${x(0)},${y(floor)} ${points} ${x(distanceKm)},${y(floor)}`}
+          points={`${x(0)},${yFeet(floor)} ${points} ${x(distanceKm)},${yFeet(floor)}`}
           fill="var(--color-sign-soft)"
         />
         <polyline

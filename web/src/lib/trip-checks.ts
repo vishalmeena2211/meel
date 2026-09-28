@@ -1,4 +1,4 @@
-import { km, metres, sayDate } from "./format";
+import { feet, km, sayDate } from "./format";
 import type { Route } from "./types";
 
 export interface Check {
@@ -102,8 +102,8 @@ export function checkTrip(route: Route, leavesOn: string, backOn: string, nights
       title: "Altitude",
       words:
         worst.verdict === "too-steep"
-          ? `Night ${worst.night} at ${worst.place} climbs ${metres(worst.gain_m)} above the night before. That is too steep. Add a night lower down.`
-          : `Night ${worst.night} at ${worst.place} climbs ${metres(worst.gain_m)} above the night before. Steep. Walkers are told 500 m a night.`,
+          ? `Night ${worst.night} at ${worst.place} climbs ${feet(worst.gain_m)} above the night before. That is too steep. Add a night lower down.`
+          : `Night ${worst.night} at ${worst.place} climbs ${feet(worst.gain_m)} above the night before. Steep. Walkers are told about 1,600 feet a night.`,
     });
   } else if (gains.length > 1 && (route.header.highest_point?.altitude_m ?? 0) >= 2500) {
     checks.push({ id: "altitude", tone: "ok", title: "Altitude", words: "No night climbs more than 500 m above the one before." });

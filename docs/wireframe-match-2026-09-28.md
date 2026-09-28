@@ -379,3 +379,21 @@ The fuel heading said "11 pumps" over a list of 10: one entry on the map is not 
 How it was checked: 26 checks in a real browser on the site running on this machine, at phone and laptop sizes and with the phone set to dark, plus a label check on eight routes. The test accounts were deleted afterwards.
 
 **A decision this reverses:** the stylesheet said the site was "light only on purpose". The dark look follows the phone's own setting, and there is no switch on the site, so a phone left light in the sun still gets the light look.
+
+---
+
+## Heights in feet, checked the same day
+
+**Asked by:** Vishal: "height should be in feet, not meter".
+**Drawn first:** every height in the drawings is now in feet: the key numbers ("Highest point 17,480 ft"), the altitude chart's scale ("feet": 8,000, 12,000, 16,000), the night halts ("Sleeps at 10,100 ft"), the climbs ("+7,350 ft") and the notes. A note on screen 14 says how heights are worked out.
+
+| Frame | What it shows | First check | What differed | Now |
+|---|---|---|---|---|
+| 4.1, 8.1, 33.2 | Highest point in feet | Matches | Manali to Leh 17,480 ft, Guwahati to Tawang 13,000 ft, Umling La 19,030 ft | [x] |
+| 14.1 to 14.3 | The chart's scale, the halts, the climbs and the limits in feet | Matches | The check still works in metres (500 and 1,500) and says the result in feet: "about 1,600 feet a night" | [x] |
+
+How heights are worked out: the data keeps metres, and the site says them in feet, rounded to the nearest 10. A height can therefore differ from a pass signboard by a few feet: Umling La shows 19,030 ft where its signboard says 19,024 ft.
+
+In the route data, heights written in the research notes were changed to feet. Where a note compares what sources say, the metres they gave stay in brackets. Lengths and depths stay in metres, such as "120 metres of road" and "half a metre deep". So does the size of the height grid, "a 90 m grid".
+
+How it was checked: in a real browser on the site running on this machine, at phone size, on ten pages and the altitude check itself.

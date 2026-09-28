@@ -28,7 +28,7 @@ import { SinceLastVisit } from "@/components/route/since-last-visit";
 import { BackHead, Foot } from "@/components/shell";
 import { Callout, Empty } from "@/components/ui";
 import { getIndex } from "@/lib/content";
-import { km, metres, plural } from "@/lib/format";
+import { km, feet, plural } from "@/lib/format";
 import { SITE_URL } from "@/lib/site";
 import { allSources } from "@/lib/sources";
 import { savedPages } from "@/server/route-pages";
@@ -50,7 +50,7 @@ export async function generateMetadata(props: PageProps<"/routes/[slug]">): Prom
   const gap = route.fuel.longest_gaps[0];
   const parts = [
     route.header.distance_km ? km(route.header.distance_km) : null,
-    route.header.highest_point ? `highest point ${metres(route.header.highest_point.altitude_m)}` : null,
+    route.header.highest_point ? `highest point ${feet(route.header.highest_point.altitude_m)}` : null,
     gap && gap.gap_km >= 60 ? `longest stretch with no pump ${km(gap.gap_km)}` : null,
   ].filter(Boolean);
   const description = `${route.name}: ${parts.join(", ")}. ${plural(route.counts.facts, "fact")}, each with its source.`;
