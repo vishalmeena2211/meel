@@ -258,3 +258,20 @@ One word changed in the drawing to agree with the site: "All routes", not "All 5
 | 1.3 | A link to Meel itself, with Meel's own card | Close | The drawing sketched the card's picture as a dark band. The built card is white, like every fact's card | [x] Drawing changed: the preview in frames 1.1 and 1.3 is now drawn white, as both cards are built |
 
 How it was checked: the card was made by the site running on this machine and set beside the frame. Its route count is read from the data when the site is built.
+
+---
+
+## Sharing a trip on WhatsApp, checked the same day
+
+**Asked by:** Vishal: a way to share trips into WhatsApp groups so riders can join.
+**Drawn first:** a "Share on WhatsApp" button in the trip summary that frames 19.1 and 19.2 share; frame 19.4, the message and the trip's own card in a riding group; frame 21.4, the trip page straight after publishing. The gallery now has 92 frames.
+
+| Frame | What it shows | First check | What differed | Now |
+|---|---|---|---|---|
+| 19.1 | The trip, with "Share on WhatsApp" under the leader | Matches | | [x] |
+| 19.4 | Shared into a riding group: the written message and the trip's card | Matches | The card's words are the route, "Trip · led by", the places left, the dates and the starting city, as drawn | [x] |
+| 21.4 | On the board, and ready to share | Matches | | [x] |
+
+How it was checked: on the site running on this machine, as a visitor with no account, with a test trip that was deleted afterwards. The test trip's chat group link held a marker; it appeared in none of the page, the message or the card. A trip waiting for the editor gave Meel's own card, byte for byte. A full trip's message said so, and its card said "Full".
+
+Not checked: WhatsApp itself fetching the card. That needs the site public, since a private site shows WhatsApp only Vercel's log-in page.

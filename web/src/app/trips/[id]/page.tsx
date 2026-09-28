@@ -10,12 +10,14 @@ import { ShareButton } from "@/components/route/share-button";
 import { BackHead, Foot } from "@/components/shell";
 import { FuelRow, PackingRow } from "@/components/trips/checklist";
 import { AskToJoin, ReportTrip } from "@/components/trips/forms";
+import { ShareTrip } from "@/components/trips/share-trip";
 import { PACE_WORDS, Seats, TripCardView, placesBadge, tripLength } from "@/components/trips/trip-card";
 import { Badge, Callout, KeyFacts } from "@/components/ui";
 import { getIndex } from "@/lib/content";
 import { dayOf, indiaDay, initials, km, metres, monthName, plural, sayDate } from "@/lib/format";
 import { nightGains } from "@/lib/trip-checks";
 import { currentUser, googleIsOn } from "@/server/auth";
+import { tripCardLine, tripShareText } from "@/lib/trip-share";
 import { savedPages } from "@/server/route-pages";
 import { getRouteView } from "@/server/route-view";
 import { cameBackFrom, getTrip, membersOf, openTrips } from "@/server/trips";
@@ -24,10 +26,18 @@ export async function generateMetadata(props: PageProps<"/trips/[id]">): Promise
   const { id } = await props.params;
   const trip = await getTrip(id);
   if (!trip) return { title: "No such trip" };
+  // Only a trip on the board says what it is. Anything else, such as a first trip the editor has not read,
+  // shows Meel's card, so a pasted link never gives away a trip that is not on the board.
+  if (trip.status !== "open") return { title: "A trip on Meel", robots: { index: false } };
   const view = await getRouteView(trip.route_slug);
+  const name = view?.route.name ?? trip.route_slug;
+  const title = `Trip: ${name}, ${sayDate(trip.leaves_on)}`;
+  const description = tripCardLine({ ...trip, route: name });
   return {
-    title: `Trip: ${view?.route.name ?? trip.route_slug}, ${sayDate(trip.leaves_on)}`,
+    title,
+    description,
     robots: { index: false },
+    openGraph: { title, description, url: `/trips/${trip.id}`, siteName: "Meel", locale: "en_IN", type: "article" },
   };
 }
 
@@ -106,6 +116,11 @@ export default async function TripPage(props: PageProps<"/trips/[id]">) {
       ].filter((x): x is { title: string; sub: string | null } => x !== null)
     : [];
 
+  // Anyone may share a trip that is on the board and still to be ridden. The message never holds the chat link.
+  const canShare = trip.status === "open" && !over;
+  const shareText = tripShareText({ ...trip, route: route.name });
+  const tripPath = `/trips/${trip.id}`;
+
   const details = (
     <>
       <header className="flex items-start gap-3">
@@ -137,6 +152,9 @@ export default async function TripPage(props: PageProps<"/trips/[id]">) {
           </span>
         </div>
       </div>
+
+      {/* Straight after publishing, the prompt at the top carries the share buttons instead. */}
+      {canShare && query.posted !== "open" ? <ShareTrip text={shareText} path={tripPath} /> : null}
     </>
   );
 
@@ -163,7 +181,13 @@ export default async function TripPage(props: PageProps<"/trips/[id]">) {
           A rider’s first trip is read before it appears on the board. After that, your trips appear at once.
         </Callout>
       ) : query.posted === "open" ? (
-        <Callout tone="info" title="Your trip is on the board" />
+        <section className="flex flex-col gap-2">
+          <Callout tone="info" title="Your trip is on the board">
+            Share it with your riding groups. The message carries the dates, the places left and a link to ask to join.
+          </Callout>
+          {canShare ? <ShareTrip text={shareText} path={tripPath} primary withCopy /> : null}
+          <p className="hint">The chat group link is not in the message. Only riders you accept see it.</p>
+        </section>
       ) : null}
       {trip.status === "hidden" ? <Badge tone="stale">Hidden while the editor looks at reports about it</Badge> : null}
 

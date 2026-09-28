@@ -1470,7 +1470,8 @@ Name: Rahul N.</span><span class="send">${ICON.send}</span></div>
       const top5 = `
         <div class="sec-h"><h3>Manali to Leh</h3><span class="badge b-fresh">3 places left</span></div>
         <div class="keys"><div><span>Leaves</span><b>19 June</b></div><div><span>Back</span><b>27 June</b></div><div><span>From</span><b>Delhi</b></div></div>
-        <div class="rows"><div class="row"><span class="av">AT</span><span class="grow"><b>Led by Anjali T.</b><span class="hint">On Meel since 2026 · led 3 trips · 11 facts confirmed</span></span></div></div>`;
+        <div class="rows"><div class="row"><span class="av">AT</span><span class="grow"><b>Led by Anjali T.</b><span class="hint">On Meel since 2026 · led 3 trips · 11 facts confirmed</span></span></div></div>
+        <span class="btn btn-outline btn-block">${ICON.send}Share on WhatsApp</span>`;
       return phone('1. The trip, before joining', `
         ${head('Trip', 'Manali to Leh · June 2027', { right: shareBtn })}
         ${body(`${top5}
@@ -1512,9 +1513,24 @@ Name: Rahul N.</span><span class="send">${ICON.send}</span></div>
             <div class="row"><span class="box"></span><span class="grow"><b>Save the route to this phone</b><span class="hint">Most of this road has no network</span></span>${chev}</div>
           </div>
           <div class="callout"><b>You are riding with people you have not met</b>Meet in a public place first. Tell someone at home your route and dates. <span class="link">More on riding with strangers</span></div>`)}
-        <div class="pfoot"><span class="btn btn-outline btn-block">Leave this trip</span></div>`);
+        <div class="pfoot"><span class="btn btn-outline btn-block">Leave this trip</span></div>`)
+      + phone('4. Shared into a riding group', `
+        <div class="chat">
+          <div class="chat-top">${ICON.back}<span class="chat-av">NR</span><span><b>North India Riders</b><span>212 members</span></span></div>
+          <div class="chat-body">
+            <div class="msg out">
+              <div class="preview">
+                <div class="pic">${mark('NH 3')}<span><strong>Manali to Leh</strong><em>19 to 27 June · 3 of 8 places left</em></span></div>
+                <div class="txt"><b>Trip: Manali to Leh, 19 June 2027 · Meel</b><span>From Delhi. Relaxed pace, 350 cc and above. 3 of 8 places left. Led by Anjali T.</span><span>${SITE}</span></div>
+              </div>
+              Riding Manali to Leh, Saturday 19 June to Sunday 27 June 2027, from Delhi. Relaxed pace, 350 cc and above. 3 of 8 places left.<br>Ask to join on Meel: <span class="link">${SITE}/trips/4f2a9c</span><span class="t">8:40 pm</span></div>
+            <div class="msg"><span class="who">Imran S.</span>Asked to join. My Himalayan is ready.<span class="t">8:52 pm</span></div>
+          </div>
+          <div class="chat-in"><span style="flex:1;color:var(--ink-2)">Message</span></div>
+        </div>`, '8:52');
     },
     notes: [
+      ['Sharing (frame 4)', ['Anyone can share a trip that is on the board, before or after asking to join.', '“Share on WhatsApp” opens WhatsApp with the message already written: the route, the dates, the starting city, the pace, who can join, the places left and a link. On a laptop it opens WhatsApp Web.', 'The link shows the trip’s own card in the chat. A trip still waiting for the editor, hidden, or withdrawn shows only Meel’s card, so a preview never gives away a trip that is not on the board.', 'The chat group link is never in the message or the card.']],
       ['Layout', ['The trip page reuses what the route page knows: altitude between nights, the fuel gap, the packing list.', 'The leader is shown with a short record: how long on Meel, trips led, facts confirmed. It is evidence, not a rating.', 'Once accepted, the page turns into a checklist for leaving.']],
       ['Behaviour', ['Asking to join sends the leader the rider’s name, home city, bike and a short note. Nothing else.', 'The chat group link and the leader’s contact are shown only to accepted riders.', 'A rider can take back a request, or leave a trip, at any time. The leader is told.', 'Every trip page carries “report this trip” at the bottom.']],
       ['Why blocked / Way forward', ['A full trip shows “Full” in place of the button, with “Tell me if a place opens”.', 'A rider whose request was declined sees “Anjali could not take you on this trip” and a list of other trips on the same road.']],
@@ -1619,9 +1635,19 @@ Name: Rahul N.</span><span class="send">${ICON.send}</span></div>
             <div class="check ok">${ICON.check}<span><b>Fuel.</b> 323 km with no pump. Riders will be told to check their bike.</span></div>
           </div>
           <div class="callout info"><b>Publishing puts this on the board</b>Anyone can read it. Only riders you accept see the chat group link. You can change or withdraw the trip at any time.</div>`)}
-        <div class="pfoot"><div class="btns"><span class="btn btn-outline">Back</span><span class="btn btn-primary">Publish trip</span></div></div>`);
+        <div class="pfoot"><div class="btns"><span class="btn btn-outline">Back</span><span class="btn btn-primary">Publish trip</span></div></div>`)
+      + phone('4. On the board, and ready to share', `
+        ${head('Trip', 'Manali to Leh · June 2027', { right: shareBtn })}
+        ${body(`
+          <div class="callout info"><b>Your trip is on the board</b>Share it with your riding groups. The message carries the dates, the places left and a link to ask to join.</div>
+          <span class="btn btn-primary btn-block" style="height:46px">${ICON.send}Share on WhatsApp</span>
+          <span class="btn btn-outline btn-block" style="height:46px">Copy the link</span>
+          <span class="hint">The chat group link is not in the message. Only riders you accept see it.</span>
+          <div class="sec-h"><h3>Manali to Leh</h3><span class="badge b-fresh">7 places left</span></div>
+          <div class="keys"><div><span>Leaves</span><b>19 June</b></div><div><span>Back</span><b>27 June</b></div><div><span>From</span><b>Delhi</b></div></div>`)}`);
     },
     notes: [
+      ['After publishing (frame 4)', ['The trip page opens with the trip on the board and asks the leader to share it, with the message ready.', 'A rider’s first trip waits for the editor, and a link to it would not open for anyone else yet. So the prompt comes only once the trip is on the board.']],
       ['Layout', ['Three short steps: where and when, how you ride, and a check.', 'The check is the part no chat group can do. It reads the season, the opening dates, the altitude between nights and the fuel gap from the route page.']],
       ['Behaviour', ['The checks warn. They never stop a leader from publishing.', 'Night halts are picked from the route’s own halts, so the altitude check has heights to work with.', 'A leader can have at most 3 open trips at a time.', 'The first trip a new account posts is looked at by the editor before it appears. After that, trips appear at once.']],
       ['Data', ['Nothing gathered at a desk. The checks use the route’s season history, its halts and heights, and its fuel gaps.']],
