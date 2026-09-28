@@ -86,10 +86,13 @@ Only you can do this, because it is done in your own Google account.
 1. Open https://console.cloud.google.com, and make a project called Meel.
 2. Under **Google Auth Platform**, fill in the consent screen: the app's name is Meel, and give your own email for support. Meel asks for nothing beyond the name, the email and a sign-in, so no extra scopes are needed.
 3. While the consent screen is in testing, only the Google accounts you list as test users can log in. Publish it when riders should.
-4. Under **Clients**, make a client of the type **Web application**. Under **Authorised redirect URIs**, add both:
+4. Under **Clients**, make a client of the type **Web application**. Under **Authorised redirect URIs**, add all three:
    - `http://localhost:3000/api/auth/callback/google`
+   - `https://meel-livid.vercel.app/api/auth/callback/google`, the address the site has on Vercel until the domain points at it
    - `https://rideplanner.in/api/auth/callback/google`
-5. Copy the client id into `AUTH_GOOGLE_ID` and the secret into `AUTH_GOOGLE_SECRET`, and restart the site.
+5. Copy the client id into `AUTH_GOOGLE_ID` and the secret into `AUTH_GOOGLE_SECRET`, and restart the site. Google shows the secret only once, when the client is made: download its JSON file then, and keep it outside this folder.
+
+This was done on 28 September 2026, in the Google Cloud project `meel-project` (client "Meel website"). Both settings are on Vercel for production. The consent screen is still in testing, so only the test users listed under **Audience** can log in with Google. Publish it there when riders should.
 
 ### Making the editor's account
 
