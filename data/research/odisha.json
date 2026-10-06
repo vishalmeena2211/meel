@@ -244,5 +244,346 @@
     "No source found for cyclone months other than the single 2019 event, or for landslides on the ghats between the coast and Koraput.",
     "The highway from the coast up to Koraput was not sourced. Usual number of riding days: no source found.",
     "Videos: the pages give upload dates, not filming dates, so 'filmed' is filled only where the title names a date. Uploads, in order: 2021-09, 2025-07."
-  ]
+  ],
+  "pumps_from_companies": {
+    "why": "The open map had no pump between Gopalpur and Koraput, and none between Koraput and Deomali, though Brahmapur, Rayagada, Koraput and Semiliguda are towns. These are from IndianOil's and HP's own locators, read on 6 October 2026, only for the districts those stretches cross, and only where no pump on the map lies within 5 km along the road.",
+    "pumps": [
+      {
+        "id": "iocl-240638",
+        "name": "Manorama Fuel Point",
+        "brand": "Indian Oil",
+        "town": "Humma",
+        "lat": 19.43039,
+        "lon": 85.0704,
+        "source": {
+          "url": "https://locator.iocl.com/indianoil-manorama-fuel-point-petrol-pump-humma-ganjam-240638/Home",
+          "title": "IndianOil locator: Manorama Fuel Point, Humma",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "iocl-295098",
+        "name": "Jaga Filling Station",
+        "brand": "Indian Oil",
+        "town": "Palibandha",
+        "lat": 19.39451,
+        "lon": 85.06597,
+        "source": {
+          "url": "https://locator.iocl.com/indianoil-jaga-filling-station-petrol-pump-palibandha-ganjam-295098/Home",
+          "title": "IndianOil locator: Jaga Filling Station, Palibandha",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "iocl-240353",
+        "name": "Pramod Kisan Seva Kendra",
+        "brand": "Indian Oil",
+        "town": "Badaputi",
+        "lat": 19.26389,
+        "lon": 84.89906,
+        "source": {
+          "url": "https://locator.iocl.com/indianoil-pramod-kisan-seva-kendra-petrol-pump-badaputi-ganjam-240353/Home",
+          "title": "IndianOil locator: Pramod Kisan Seva Kendra, Badaputi",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "iocl-240119",
+        "name": "Satyanarayan Filling Station",
+        "brand": "Indian Oil",
+        "town": "Gopinathpur",
+        "lat": 19.37126,
+        "lon": 84.6349,
+        "source": {
+          "url": "https://locator.iocl.com/indianoil-satyanarayan-filling-station-petrol-pump-gopinathpur-ganjam-240119/Home",
+          "title": "IndianOil locator: Satyanarayan Filling Station, Gopinathpur",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "iocl-240339",
+        "name": "Saikrupa Filling Station",
+        "brand": "Indian Oil",
+        "town": "Digapahandi",
+        "lat": 19.38015,
+        "lon": 84.56396,
+        "source": {
+          "url": "https://locator.iocl.com/indianoil-saikrupa-filling-station-petrol-pump-digapahandi-ganjam-240339/Home",
+          "title": "IndianOil locator: Saikrupa Filling Station, Digapahandi",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "iocl-240570",
+        "name": "Gouri Filling Station",
+        "brand": "Indian Oil",
+        "town": "Badakhani",
+        "lat": 19.45527,
+        "lon": 84.35892,
+        "source": {
+          "url": "https://locator.iocl.com/indianoil-gouri-filling-station-petrol-pump-badakhani-gajapati-240570/Home",
+          "title": "IndianOil locator: Gouri Filling Station, Badakhani",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "iocl-240214",
+        "name": "Purusottam Filling Station",
+        "brand": "Indian Oil",
+        "town": "Khilamunda",
+        "lat": 19.26343,
+        "lon": 83.84064,
+        "source": {
+          "url": "https://locator.iocl.com/indianoil-purusottam-filling-station-petrol-pump-khilamunda-rayagada-240214/Home",
+          "title": "IndianOil locator: Purusottam Filling Station, Khilamunda",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "iocl-240768",
+        "name": "Samaleswari Ksk",
+        "brand": "Indian Oil",
+        "town": "Akhusingi",
+        "lat": 19.23843,
+        "lon": 83.82224,
+        "source": {
+          "url": "https://locator.iocl.com/indianoil-samaleswari-ksk-petrol-pump-akhusingi-rayagada-240768/Home",
+          "title": "IndianOil locator: Samaleswari Ksk, Akhusingi",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "iocl-240068",
+        "name": "Sri Jaganath Filling Station",
+        "brand": "Indian Oil",
+        "town": "Bhamini",
+        "lat": 19.22668,
+        "lon": 83.77813,
+        "source": {
+          "url": "https://locator.iocl.com/indianoil-sri-jaganath-filling-station-petrol-pump-bhamini-rayagada-240068/Home",
+          "title": "IndianOil locator: Sri Jaganath Filling Station, Bhamini",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "iocl-520066",
+        "name": "Amit Filling Station",
+        "brand": "Indian Oil",
+        "town": "Anakabadi",
+        "lat": 19.24089,
+        "lon": 83.57244,
+        "source": {
+          "url": "https://locator.iocl.com/indianoil-amit-filling-station-petrol-pump-anakabadi-rayagada-520066/Home",
+          "title": "IndianOil locator: Amit Filling Station, Anakabadi",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "iocl-240363",
+        "name": "Hemalata Filling Station",
+        "brand": "Indian Oil",
+        "town": "Kolnara",
+        "lat": 19.25197,
+        "lon": 83.46313,
+        "source": {
+          "url": "https://locator.iocl.com/indianoil-hemalata-filling-station-petrol-pump-kolnara-rayagada-240363/Home",
+          "title": "IndianOil locator: Hemalata Filling Station, Kolnara",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "iocl-240376",
+        "name": "Yeshvik Filling Station",
+        "brand": "Indian Oil",
+        "town": "J K Pur",
+        "lat": 19.25491,
+        "lon": 83.42931,
+        "source": {
+          "url": "https://locator.iocl.com/indianoil-yeshvik-filling-station-petrol-pump-j-k-pur-rayagada-240376/Home",
+          "title": "IndianOil locator: Yeshvik Filling Station, J K Pur",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "iocl-240070",
+        "name": "Shri Jalaram Filling Station",
+        "brand": "Indian Oil",
+        "town": "Antamoda",
+        "lat": 19.26653,
+        "lon": 83.4271,
+        "source": {
+          "url": "https://locator.iocl.com/indianoil-shri-jalaram-filling-station-petrol-pump-antamoda-rayagada-240070/Home",
+          "title": "IndianOil locator: Shri Jalaram Filling Station, Antamoda",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "iocl-240090",
+        "name": "M S Gourishankar F Stn Ksk",
+        "brand": "Indian Oil",
+        "town": "Laxmipur",
+        "lat": 18.98693,
+        "lon": 83.1089,
+        "source": {
+          "url": "https://locator.iocl.com/indianoil-m-s-gourishankar-f-stn-ksk-petrol-pump-laxmipur-koraput-240090/Home",
+          "title": "IndianOil locator: M S Gourishankar F Stn Ksk, Laxmipur",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "iocl-240203",
+        "name": "Indu Filling Station Ksk",
+        "brand": "Indian Oil",
+        "town": "Bhitarguda",
+        "lat": 18.7469,
+        "lon": 82.9155,
+        "source": {
+          "url": "https://locator.iocl.com/indianoil-indu-filling-station-ksk-petrol-pump-bhitarguda-koraput-240203/Home",
+          "title": "IndianOil locator: Indu Filling Station Ksk, Bhitarguda",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "iocl-240017",
+        "name": "Gupteswar Filling Station Ksk",
+        "brand": "Indian Oil",
+        "town": "Semiliguda",
+        "lat": 18.7027,
+        "lon": 82.8818,
+        "source": {
+          "url": "https://locator.iocl.com/indianoil-gupteswar-filling-station-ksk-petrol-pump-semiliguda-koraput-240017/Home",
+          "title": "IndianOil locator: Gupteswar Filling Station Ksk, Semiliguda",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "iocl-240183",
+        "name": "Jai Hanuman Filling Station",
+        "brand": "Indian Oil",
+        "town": "D Padar",
+        "lat": 18.70295,
+        "lon": 82.85846,
+        "source": {
+          "url": "https://locator.iocl.com/indianoil-jai-hanuman-filling-station-petrol-pump-d-padar-koraput-240183/Home",
+          "title": "IndianOil locator: Jai Hanuman Filling Station, D Padar",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "iocl-240080",
+        "name": "Shiv Shankar Filling Station",
+        "brand": "Indian Oil",
+        "town": "D Padar",
+        "lat": 18.69651,
+        "lon": 82.86567,
+        "source": {
+          "url": "https://locator.iocl.com/indianoil-shiv-shankar-filling-station-petrol-pump-d-padar-koraput-240080/Home",
+          "title": "IndianOil locator: Shiv Shankar Filling Station, D Padar",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "hp-421566",
+        "name": "Ranjan Filling Station",
+        "brand": "HP",
+        "town": "Semliguda",
+        "lat": 18.7061,
+        "lon": 82.85492,
+        "source": {
+          "url": "https://petrolpump.hpretail.in/hindustan-petroleum-corporation-limited-m-s-ranjan-filling-station-petrol-pump-semliguda-koraput-421566/Home",
+          "title": "HP locator: Ranjan Filling Station, Semliguda",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "hp-418588",
+        "name": "Gupteswar Fuel Station",
+        "brand": "HP",
+        "town": "Lunguri",
+        "lat": 18.68811,
+        "lon": 82.8719,
+        "source": {
+          "url": "https://petrolpump.hpretail.in/hindustan-petroleum-corporation-limited-gupteswar-fuel-station-petrol-pump-lunguri-koraput-418588/Home",
+          "title": "HP locator: Gupteswar Fuel Station, Lunguri",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "iocl-240233",
+        "name": "Gangeswari Filling Station",
+        "brand": "Indian Oil",
+        "town": "Ampawalli",
+        "lat": 18.5865,
+        "lon": 82.91505,
+        "source": {
+          "url": "https://locator.iocl.com/indianoil-gangeswari-filling-station-petrol-pump-ampawalli-koraput-240233/Home",
+          "title": "IndianOil locator: Gangeswari Filling Station, Ampawalli",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      }
+    ]
+  }
 }

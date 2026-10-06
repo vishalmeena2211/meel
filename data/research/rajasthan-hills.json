@@ -192,5 +192,346 @@
     "Usual number of riding days: no source found.",
     "The Rajasthan tourism site loads its text by script and could not be read.",
     "Videos: the pages give upload dates, not filming dates, so 'filmed' is filled only where the title names a date. Uploads, in order: 2024-03, 2025-07."
-  ]
+  ],
+  "pumps_from_companies": {
+    "why": "The open map had no pump for about 200 km between Udaipur and Mount Abu, though Kumbhalgarh, Ranakpur and Sirohi lie on the way. These are from IndianOil's and HP's own locators, read on 6 October 2026, only for the districts that stretch crosses, and only where no pump on the map lies within 5 km along the road.",
+    "pumps": [
+      {
+        "id": "iocl-214960",
+        "name": "Shree Ji Fuels",
+        "brand": "Indian Oil",
+        "town": "Bilota",
+        "lat": 24.71054,
+        "lon": 73.73138,
+        "source": {
+          "url": "https://locator.iocl.com/indianoil-shree-ji-fuels-petrol-pump-bilota-rajsamand-214960/Home",
+          "title": "IndianOil locator: Shree Ji Fuels, Bilota",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "iocl-214848",
+        "name": "Smart Fuel India",
+        "brand": "Indian Oil",
+        "town": "Bagol",
+        "lat": 24.78776,
+        "lon": 73.75253,
+        "source": {
+          "url": "https://locator.iocl.com/indianoil-smart-fuel-india-petrol-pump-bagol-rajsamand-214848/Home",
+          "title": "IndianOil locator: Smart Fuel India, Bagol",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "hp-421779",
+        "name": "Bhagwan HP Filling",
+        "brand": "HP",
+        "town": "Negdiya",
+        "lat": 24.8383,
+        "lon": 73.7675,
+        "source": {
+          "url": "https://petrolpump.hpretail.in/hindustan-petroleum-corporation-limited-bhagwan-hp-filling-petrol-pump-negdiya-rajsamand-421779/Home",
+          "title": "HP locator: Bhagwan HP Filling, Negdiya",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "iocl-214913",
+        "name": "RKPetrol Pump",
+        "brand": "Indian Oil",
+        "town": "Bagol",
+        "lat": 24.90969,
+        "lon": 73.80481,
+        "source": {
+          "url": "https://locator.iocl.com/indianoil-rkpetrol-pump-petrol-pump-bagol-rajsamand-214913/Home",
+          "title": "IndianOil locator: RKPetrol Pump, Bagol",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "iocl-213900",
+        "name": "Chaudhary Chaganlal & Sons",
+        "brand": "Indian Oil",
+        "town": "Bagol",
+        "lat": 24.93138,
+        "lon": 73.82661,
+        "source": {
+          "url": "https://locator.iocl.com/indianoil-chaudhary-chaganlal-sons-petrol-pump-bagol-rajsamand-213900/Home",
+          "title": "IndianOil locator: Chaudhary Chaganlal & Sons, Bagol",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "iocl-519141",
+        "name": "Shree Jee Filling Station",
+        "brand": "Indian Oil",
+        "town": "Telion Ka Talav",
+        "lat": 24.94049,
+        "lon": 73.78855,
+        "source": {
+          "url": "https://locator.iocl.com/indianoil-shree-jee-filling-station-petrol-pump-telion-ka-talav-rajsamand-519141/Home",
+          "title": "IndianOil locator: Shree Jee Filling Station, Telion Ka Talav",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "iocl-214933",
+        "name": "Shreenath K S K",
+        "brand": "Indian Oil",
+        "town": "Bagol",
+        "lat": 24.96667,
+        "lon": 73.78169,
+        "source": {
+          "url": "https://locator.iocl.com/indianoil-shreenath-k-s-k-petrol-pump-bagol-rajsamand-214933/Home",
+          "title": "IndianOil locator: Shreenath K S K, Bagol",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "iocl-213137",
+        "name": "Shree Kunteshwar Mahadev F/Stn Ksk",
+        "brand": "Indian Oil",
+        "town": "Bagol",
+        "lat": 24.95819,
+        "lon": 73.75661,
+        "source": {
+          "url": "https://locator.iocl.com/indianoil-shree-kunteshwar-mahadev-f-stn-ksk-petrol-pump-bagol-rajsamand-213137/Home",
+          "title": "IndianOil locator: Shree Kunteshwar Mahadev F/Stn Ksk, Bagol",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "iocl-214928",
+        "name": "Shree Ram KSK",
+        "brand": "Indian Oil",
+        "town": "Bhada Bhanuja",
+        "lat": 24.9998,
+        "lon": 73.66048,
+        "source": {
+          "url": "https://locator.iocl.com/indianoil-shree-ram-ksk-petrol-pump-bhada-bhanuja-rajsamand-214928/Home",
+          "title": "IndianOil locator: Shree Ram KSK, Bhada Bhanuja",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "iocl-519075",
+        "name": "Vishwakarma Fuel Station",
+        "brand": "Indian Oil",
+        "town": "Majhera",
+        "lat": 25.12831,
+        "lon": 73.60894,
+        "source": {
+          "url": "https://locator.iocl.com/indianoil-vishwakarma-fuel-station-petrol-pump-majhera-rajsamand-519075/Home",
+          "title": "IndianOil locator: Vishwakarma Fuel Station, Majhera",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "iocl-213611",
+        "name": "Gayatari Kisan Seva Kendra",
+        "brand": "Indian Oil",
+        "town": "Kumbhalgarh",
+        "lat": 25.11473,
+        "lon": 73.60094,
+        "source": {
+          "url": "https://locator.iocl.com/indianoil-gayatari-kisan-seva-kendra-petrol-pump-kumbhalgarh-rajsamand-213611/Home",
+          "title": "IndianOil locator: Gayatari Kisan Seva Kendra, Kumbhalgarh",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "hp-419231",
+        "name": "Maa Ashapura HP Filling Station",
+        "brand": "HP",
+        "town": "Sadri",
+        "lat": 25.15816,
+        "lon": 73.45654,
+        "source": {
+          "url": "https://petrolpump.hpretail.in/hindustan-petroleum-corporation-limited-maa-ashapura-hp-filling-station-petrol-pump-sadri-pali-419231/Home",
+          "title": "HP locator: Maa Ashapura HP Filling Station, Sadri",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "hp-400130",
+        "name": "Suresh Kumar Ghisoolal & Co",
+        "brand": "HP",
+        "town": "Sadri",
+        "lat": 25.18923,
+        "lon": 73.44032,
+        "source": {
+          "url": "https://petrolpump.hpretail.in/hindustan-petroleum-corporation-limited-suresh-kumar-ghisoolal-co-petrol-pump-sadri-pali-400130/Home",
+          "title": "HP locator: Suresh Kumar Ghisoolal & Co, Sadri",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "iocl-215092",
+        "name": "Shri Nagnechi Mata Ksk",
+        "brand": "Indian Oil",
+        "town": "Bali",
+        "lat": 25.10126,
+        "lon": 73.29485,
+        "source": {
+          "url": "https://locator.iocl.com/indianoil-shri-nagnechi-mata-ksk-petrol-pump-bali-pali-215092/Home",
+          "title": "IndianOil locator: Shri Nagnechi Mata Ksk, Bali",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "hp-405988",
+        "name": "Shree Chamunda Petroleum",
+        "brand": "HP",
+        "town": "Amli",
+        "lat": 24.83157,
+        "lon": 73.10825,
+        "source": {
+          "url": "https://petrolpump.hpretail.in/hindustan-petroleum-corporation-limited-m-s-shree-chamunda-petroleum-petrol-pump-amli-sirohi-405988/Home",
+          "title": "HP locator: Shree Chamunda Petroleum, Amli",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "iocl-214626",
+        "name": "Balaji Petrol Pump",
+        "brand": "Indian Oil",
+        "town": "Bhawari",
+        "lat": 24.75154,
+        "lon": 73.01407,
+        "source": {
+          "url": "https://locator.iocl.com/indianoil-balaji-petrol-pump-petrol-pump-bhawari-sirohi-214626/Home",
+          "title": "IndianOil locator: Balaji Petrol Pump, Bhawari",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "hp-390264",
+        "name": "Shambhu Singh HP Petroleum",
+        "brand": "HP",
+        "town": "Kojra",
+        "lat": 24.75193,
+        "lon": 73.00668,
+        "source": {
+          "url": "https://petrolpump.hpretail.in/hindustan-petroleum-corporation-limited-shambhu-singh-hp-petroleum-petrol-pump-kojra-sirohi-390264/Home",
+          "title": "HP locator: Shambhu Singh HP Petroleum, Kojra",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "iocl-213976",
+        "name": "Gayatri Petroleum Point",
+        "brand": "Indian Oil",
+        "town": "Basantgarh",
+        "lat": 24.74833,
+        "lon": 73.0108,
+        "source": {
+          "url": "https://locator.iocl.com/indianoil-gayatri-petroleum-point-petrol-pump-basantgarh-sirohi-213976/Home",
+          "title": "IndianOil locator: Gayatri Petroleum Point, Basantgarh",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "iocl-213683",
+        "name": "Maa Tanot Filling Station",
+        "brand": "Indian Oil",
+        "town": "Basantgarh",
+        "lat": 24.7147,
+        "lon": 72.9826,
+        "source": {
+          "url": "https://locator.iocl.com/indianoil-maa-tanot-filling-station-petrol-pump-basantgarh-sirohi-213683/Home",
+          "title": "IndianOil locator: Maa Tanot Filling Station, Basantgarh",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "hp-404046",
+        "name": "Jai Gurudev Filling Station",
+        "brand": "HP",
+        "town": "Kodarla",
+        "lat": 24.70209,
+        "lon": 72.96593,
+        "source": {
+          "url": "https://petrolpump.hpretail.in/hindustan-petroleum-corporation-limited-jai-gurudev-filling-station-petrol-pump-kodarla-sirohi-404046/Home",
+          "title": "HP locator: Jai Gurudev Filling Station, Kodarla",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "hp-408278",
+        "name": "Goyal Service Station",
+        "brand": "HP",
+        "town": "Mount Abu",
+        "lat": 24.58778,
+        "lon": 72.71514,
+        "source": {
+          "url": "https://petrolpump.hpretail.in/hindustan-petroleum-corporation-limited-goyal-service-station-petrol-pump-mount-abu-sirohi-408278/Home",
+          "title": "HP locator: Goyal Service Station, Mount Abu",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      }
+    ]
+  }
 }

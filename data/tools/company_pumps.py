@@ -104,6 +104,15 @@ DISTRICTS = {
                               "maharashtra/ratnagiri", "maharashtra/kudal", "maharashtra/sindhudurg"],
                      "hp": ["maharashtra/alibag", "maharashtra/raigad", "maharashtra/raigarh_mh", "maharashtra/chiplun",
                             "maharashtra/ratnagiri", "maharashtra/kudal", "maharashtra/sindhudurg"]},
+    # The two routes whose lines were fixed on 6 October: only the districts their long gaps cross.
+    "odisha": {"iocl": ["odisha/ganjam", "odisha/brahmapur", "odisha/gajapati", "odisha/rayagada", "odisha/koraput", "odisha/jeypore"],
+               "hp": ["odisha/ganjam", "odisha/brahmapur", "odisha/gajapati", "odisha/rayagada", "odisha/koraput", "odisha/jeypore"]},
+    "rajasthan-hills": {"iocl": ["rajasthan/rajsamand", "rajasthan/sirohi", "rajasthan/sumerpur",
+                                 "rajasthan/pali:sadri|desuri|ranakpur|bali|falna|kumbhalgarh|kelwara",
+                                 "rajasthan/udaipur:gogunda|iswal|kelwara|bargaon|sayra"],
+                        "hp": ["rajasthan/rajsamand", "rajasthan/sirohi", "rajasthan/sumerpur",
+                               "rajasthan/pali:sadri|desuri|ranakpur|bali|falna|kumbhalgarh|kelwara",
+                               "rajasthan/udaipur:gogunda|iswal|kelwara|bargaon|sayra"]},
     "madhya-pradesh": {"iocl": ["madhya_pradesh/narmadapuram", "madhya_pradesh/hoshangabad", "madhya_pradesh/narsinghpur", "madhya_pradesh/sagar"],
                        "hp": ["madhya_pradesh/narmadapuram", "madhya_pradesh/hoshangabad", "madhya_pradesh/narsinghpur", "madhya_pradesh/sagar"]},
 }

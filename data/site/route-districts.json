@@ -2493,169 +2493,43 @@
     "district": "Khordha",
     "state": "Odisha",
     "km_from": 0.0,
-    "km_to": 1041.0,
+    "km_to": 220.4,
     "lgd": "362"
    },
    {
     "district": "Puri",
     "state": "Odisha",
-    "km_from": 40.6,
-    "km_to": 120.9,
+    "km_from": 20.0,
+    "km_to": 141.1,
     "lgd": "369"
-   },
-   {
-    "district": "Nayagarh",
-    "state": "Odisha",
-    "km_from": 200.0,
-    "km_to": 200.0,
-    "lgd": "367"
    },
    {
     "district": "Ganjam",
     "state": "Odisha",
-    "km_from": 259.3,
-    "km_to": 921.9,
+    "km_from": 241.3,
+    "km_to": 360.7,
     "lgd": "354"
    },
    {
     "district": "Gajapati",
     "state": "Odisha",
-    "km_from": 401.4,
-    "km_to": 800.3,
+    "km_from": 380.3,
+    "km_to": 420.2,
     "lgd": "353"
    },
    {
     "district": "Rayagada",
     "state": "Odisha",
-    "km_from": 440.1,
-    "km_to": 760.6,
+    "km_from": 440.2,
+    "km_to": 540.1,
     "lgd": "370"
    },
    {
     "district": "Koraput",
     "state": "Odisha",
-    "km_from": 560.7,
-    "km_to": 640.5,
+    "km_from": 560.5,
+    "km_to": 689.1,
     "lgd": "363"
-   },
-   {
-    "district": "Cuttack",
-    "state": "Odisha",
-    "km_from": 1080.4,
-    "km_to": 1080.4,
-    "lgd": "350"
-   },
-   {
-    "district": "Jajpur",
-    "state": "Odisha",
-    "km_from": 1123.1,
-    "km_to": 1123.1,
-    "lgd": "356"
-   },
-   {
-    "district": "Bhadrak",
-    "state": "Odisha",
-    "km_from": 1160.2,
-    "km_to": 1160.2,
-    "lgd": "348"
-   },
-   {
-    "district": "Baleshwar",
-    "state": "Odisha",
-    "km_from": 1201.0,
-    "km_to": 1280.0,
-    "lgd": "346"
-   },
-   {
-    "district": "Paschim Medinipur",
-    "state": "West Bengal",
-    "km_from": 1323.3,
-    "km_to": 1400.6,
-    "lgd": "318"
-   },
-   {
-    "district": "Howrah",
-    "state": "West Bengal",
-    "km_from": 1442.9,
-    "km_to": 1483.2,
-    "lgd": "313"
-   },
-   {
-    "district": "North 24 Parganas",
-    "state": "West Bengal",
-    "km_from": 1520.8,
-    "km_to": 1561.6,
-    "lgd": "303"
-   },
-   {
-    "district": "East Khasi Hills",
-    "state": "Meghalaya",
-    "km_from": 2120.3,
-    "km_to": 2161.0,
-    "lgd": "274"
-   },
-   {
-    "district": "Ri-Bhoi",
-    "state": "Meghalaya",
-    "km_from": 2200.5,
-    "km_to": 2200.5,
-    "lgd": "276"
-   },
-   {
-    "district": "Kamrup Metropolitan",
-    "state": "Assam",
-    "km_from": 2241.1,
-    "km_to": 2241.1,
-    "lgd": "618"
-   },
-   {
-    "district": "Marigaon",
-    "state": "Assam",
-    "km_from": 2281.2,
-    "km_to": 2281.2,
-    "lgd": "296"
-   },
-   {
-    "district": "Nagaon",
-    "state": "Assam",
-    "km_from": 2322.6,
-    "km_to": 2400.0,
-    "lgd": null
-   },
-   {
-    "district": "Golaghat",
-    "state": "Assam",
-    "km_from": 2446.6,
-    "km_to": 2481.2,
-    "lgd": "288"
-   },
-   {
-    "district": "Jorhat",
-    "state": "Assam",
-    "km_from": 2523.8,
-    "km_to": 2523.8,
-    "lgd": "290"
-   },
-   {
-    "district": "Sivasagar",
-    "state": "Assam",
-    "km_from": 2563.7,
-    "km_to": 2603.5,
-    "lgd": "300"
-   },
-   {
-    "district": "Charaideo",
-    "state": "Assam",
-    "km_from": 2643.1,
-    "km_to": 2643.1,
-    "lgd": "708"
-   },
-   {
-    "district": "Tirap",
-    "state": "Arunachal Pradesh",
-    "km_from": 2680.2,
-    "km_to": 2680.2,
-    "lgd": "239"
    }
   ],
   "pangong-hanle-tso-moriri": [
@@ -2723,29 +2597,29 @@
     "district": "Udaipur",
     "state": "Rajasthan",
     "km_from": 0.0,
-    "km_to": 180.2,
+    "km_to": 120.0,
     "lgd": "117"
    },
    {
     "district": "Rajsamand",
     "state": "Rajasthan",
-    "km_from": 40.3,
-    "km_to": 100.2,
+    "km_from": 40.1,
+    "km_to": 100.1,
     "lgd": "112"
+   },
+   {
+    "district": "Pali",
+    "state": "Rajasthan",
+    "km_from": 130.5,
+    "km_to": 200.6,
+    "lgd": "111"
    },
    {
     "district": "Sirohi",
     "state": "Rajasthan",
-    "km_from": 200.4,
-    "km_to": 566.7,
+    "km_from": 220.6,
+    "km_to": 276.3,
     "lgd": "115"
-   },
-   {
-    "district": "Banaskantha",
-    "state": "Gujarat",
-    "km_from": 280.3,
-    "km_to": 520.6,
-    "lgd": "441"
    }
   ],
   "rann-of-kutch": [
