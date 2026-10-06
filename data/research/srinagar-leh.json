@@ -861,5 +861,74 @@
     "No official page states the Ladakh tourist fee amounts, so they are left out.",
     "Kargil district website carries no road status or traffic notices.",
     "The second video gives no filming date; it was published on 9 November 2024."
-  ]
+  ],
+  "pumps_from_companies": {
+    "why": "The open map had no pump between Kangan and Kargil, though Dras is a town, and none at Nimmu. Neither locator lists a pump between Kangan and Dras, over Zoji La. These are from the oil companies' own locators, IndianOil's (locator.iocl.com) and HP's (petrolpump.hpretail.in), read on 6 October 2026 for the districts the road runs through. A pump within 5 km along the road of one already on the map is left out. Bharat Petroleum's locator did not answer, and other companies' pumps are not added.",
+    "pumps": [
+      {
+        "id": "hp-418967",
+        "name": "Marwah Filling Station",
+        "brand": "HP",
+        "town": "Shahpora",
+        "lat": 34.23688,
+        "lon": 74.783,
+        "source": {
+          "url": "https://petrolpump.hpretail.in/hindustan-petroleum-corporation-limited-marwah-filling-station-petrol-pump-shahpora-srinagar-418967/Home",
+          "title": "HP locator: Marwah Filling Station, Shahpora",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "iocl-519672",
+        "name": "Haarson Filling Station",
+        "brand": "Indian Oil",
+        "town": "Cherwan",
+        "lat": 34.26175,
+        "lon": 74.90483,
+        "source": {
+          "url": "https://locator.iocl.com/indianoil-haarson-filling-station-petrol-pump-cherwan-srinagar-519672/Home",
+          "title": "IndianOil locator: Haarson Filling Station, Cherwan",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "iocl-237929",
+        "name": "Khan Brothers Filling Station",
+        "brand": "Indian Oil",
+        "town": "Dras",
+        "lat": 34.4326,
+        "lon": 75.76937,
+        "source": {
+          "url": "https://locator.iocl.com/indianoil-khan-brothers-filling-station-petrol-pump-dras-kargil-237929/Home",
+          "title": "IndianOil locator: Khan Brothers Filling Station, Dras",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "iocl-237882",
+        "name": "Chhepal Barcha Filling Station",
+        "brand": "Indian Oil",
+        "town": "Nimmu",
+        "lat": 34.19963,
+        "lon": 77.3281,
+        "source": {
+          "url": "https://locator.iocl.com/indianoil-chhepal-barcha-filling-station-petrol-pump-nimmu-leh-237882/Home",
+          "title": "IndianOil locator: Chhepal Barcha Filling Station, Nimmu",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      }
+    ]
+  }
 }

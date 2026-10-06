@@ -3943,8 +3943,8 @@
    },
    {
     "id": "fuel:node-10880997845",
-    "name": "HP petrol pump",
-    "brand": "Hindustan Petroleum",
+    "name": "HP",
+    "brand": "HP",
     "near": "Udaipur",
     "km_from_start": 1.7,
     "off_road_m": 483,
@@ -4060,7 +4060,7 @@
    },
    {
     "id": "fuel:node-6053701991",
-    "name": "Hindustan Petroleum",
+    "name": "HP",
     "brand": null,
     "near": "Kumbhalgarh",
     "km_from_start": 236.0,
@@ -4329,5 +4329,5 @@
  "counts": {
   "facts": 32
  },
- "built": "2026-09-28"
+ "built": "2026-10-06"
 }

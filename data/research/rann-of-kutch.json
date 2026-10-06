@@ -243,5 +243,74 @@
     "Usual number of riding days: no source found.",
     "No source found for summer heat figures in Kutch.",
     "Videos: the pages give upload dates, not filming dates, so 'filmed' is filled only where the title names a date. Uploads, in order: 2024-01, 2025-11."
-  ]
+  ],
+  "pumps_from_companies": {
+    "why": "The open map had no pump between the edge of Bhuj and Dholavira; HP lists one at Khavda. These are from the oil companies' own locators, IndianOil's (locator.iocl.com) and HP's (petrolpump.hpretail.in), read on 6 October 2026 for the districts the road runs through. A pump within 5 km along the road of one already on the map is left out. Bharat Petroleum's locator did not answer, and other companies' pumps are not added.",
+    "pumps": [
+      {
+        "id": "hp-391557",
+        "name": "Hira Petroleum",
+        "brand": "HP",
+        "town": "Palara",
+        "lat": 23.32659,
+        "lon": 69.68931,
+        "source": {
+          "url": "https://petrolpump.hpretail.in/hindustan-petroleum-corporation-limited-m-s-hira-petroleum-petrol-pump-palara-bhuj-391557/Home",
+          "title": "HP locator: Hira Petroleum, Palara",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "hp-400367",
+        "name": "Jay Shree Chamunda Petroleum",
+        "brand": "HP",
+        "town": "Kunariya",
+        "lat": 23.4002,
+        "lon": 69.6925,
+        "source": {
+          "url": "https://petrolpump.hpretail.in/hindustan-petroleum-corporation-limited-jay-shree-chamunda-petroleum-petrol-pump-kunariya-bhuj-400367/Home",
+          "title": "HP locator: Jay Shree Chamunda Petroleum, Kunariya",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "iocl-519942",
+        "name": "Jogmaya Petroleum",
+        "brand": "Indian Oil",
+        "town": "Bhuj Taluka",
+        "lat": 23.45009,
+        "lon": 69.66105,
+        "source": {
+          "url": "https://locator.iocl.com/indianoil-jogmaya-petroleum-petrol-pump-bhuj-taluka-bhuj-519942/Home",
+          "title": "IndianOil locator: Jogmaya Petroleum, Bhuj Taluka",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "hp-391668",
+        "name": "Khavda Petroleum",
+        "brand": "HP",
+        "town": "Khavda",
+        "lat": 23.83689,
+        "lon": 69.73006,
+        "source": {
+          "url": "https://petrolpump.hpretail.in/hindustan-petroleum-corporation-limited-khavda-petroleum-petrol-pump-khavda-kachchh-391668/Home",
+          "title": "HP locator: Khavda Petroleum, Khavda",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      }
+    ]
+  }
 }

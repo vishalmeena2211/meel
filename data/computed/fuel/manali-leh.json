@@ -1,6 +1,6 @@
 {
  "slug": "manali-leh",
- "fetched": "2026-09-28",
+ "fetched": "2026-10-06",
  "search_radius_m": 900,
  "pumps": [
   {
@@ -40,6 +40,28 @@
    "diesel": "yes"
   },
   {
+   "osm": null,
+   "company_id": "iocl-278095",
+   "name": "The Lahoul Potato Growers Sissu",
+   "brand": "Indian Oil",
+   "town": "Sissu",
+   "lat": 32.48347,
+   "lon": 77.11329,
+   "km_from_start": 40.8,
+   "off_road_m": 16,
+   "opening_hours": null,
+   "petrol": null,
+   "diesel": null,
+   "source": {
+    "url": "https://locator.iocl.com/indianoil-the-lahoul-potato-growers-sissu-petrol-pump-sissu-lahul-spiti-278095/Home",
+    "title": "IndianOil locator: The Lahoul Potato Growers Sissu, Sissu",
+    "kind": "official",
+    "opened": true,
+    "source_date": null,
+    "accessed": "2026-10-06"
+   }
+  },
+  {
    "osm": "node/299659791",
    "name": "Indian Oil",
    "brand": "Indian Oil",
@@ -74,6 +96,28 @@
    "opening_hours": null,
    "petrol": null,
    "diesel": null
+  },
+  {
+   "osm": null,
+   "company_id": "iocl-519696",
+   "name": "Thiksey Filling Station",
+   "brand": "Indian Oil",
+   "town": "Choglamsar",
+   "lat": 34.05294,
+   "lon": 77.66489,
+   "km_from_start": 416.2,
+   "off_road_m": 2112,
+   "opening_hours": null,
+   "petrol": null,
+   "diesel": null,
+   "source": {
+    "url": "https://locator.iocl.com/indianoil-thiksey-filling-station-petrol-pump-choglamsar-leh-519696/Home",
+    "title": "IndianOil locator: Thiksey Filling Station, Choglamsar",
+    "kind": "official",
+    "opened": true,
+    "source_date": null,
+    "accessed": "2026-10-06"
+   }
   },
   {
    "osm": "node/299707818",
@@ -136,8 +180,8 @@
    "diesel": null
   }
  ],
- "pump_count": 11,
- "stops": 6,
+ "pump_count": 13,
+ "stops": 8,
  "longest_gaps": [
   {
    "from_km": 72.5,
@@ -150,38 +194,38 @@
   },
   {
    "from_km": 3.4,
-   "to_km": 61.1,
-   "gap_km": 57.7,
+   "to_km": 40.8,
+   "gap_km": 37.4,
    "from_is": "pump",
    "to_is": "pump",
    "near_from": "Manali",
+   "near_to": "Sissu"
+  },
+  {
+   "from_km": 40.8,
+   "to_km": 61.1,
+   "gap_km": 20.3,
+   "from_is": "pump",
+   "to_is": "pump",
+   "near_from": "Sissu",
    "near_to": "Tandi"
   },
   {
    "from_km": 401.8,
-   "to_km": 427.7,
-   "gap_km": 25.9,
+   "to_km": 416.2,
+   "gap_km": 14.4,
    "from_is": "pump",
    "to_is": "pump",
    "near_from": "Karu",
-   "near_to": "Leh"
+   "near_to": "Karu"
   },
   {
-   "from_km": 61.1,
-   "to_km": 72.5,
-   "gap_km": 11.4,
+   "from_km": 416.2,
+   "to_km": 427.7,
+   "gap_km": 11.5,
    "from_is": "pump",
    "to_is": "pump",
-   "near_from": "Tandi",
-   "near_to": "Keylong"
-  },
-  {
-   "from_km": 427.7,
-   "to_km": 430.5,
-   "gap_km": 2.8,
-   "from_is": "pump",
-   "to_is": "pump",
-   "near_from": "Leh",
+   "near_from": "Karu",
    "near_to": "Leh"
   }
  ],
@@ -191,5 +235,5 @@
   "licence": "Open Database Licence",
   "url": "https://www.openstreetmap.org/copyright"
  },
- "note": "Pumps are those drawn on the open map within the search radius of the road. A pump missing from the map is missing here, so each gap is a worst case."
+ "note": "Pumps are those drawn on the open map within the search radius of the road, and, where the map has none, those on the oil companies' own locators. A pump missing from both is missing here, so each gap is a worst case."
 }

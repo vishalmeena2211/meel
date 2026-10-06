@@ -3535,7 +3535,7 @@
    {
     "id": "fuel:node-331119772",
     "name": "Narbal Fuel Filling Station",
-    "brand": "Hindustan Petroleum",
+    "brand": "HP",
     "near": "Srinagar",
     "km_from_start": 88.4,
     "off_road_m": 33,
@@ -3548,7 +3548,7 @@
    {
     "id": "fuel:node-705828732",
     "name": "Anyees Filling Station",
-    "brand": "Hindustan Petroleum",
+    "brand": "HP",
     "near": "Srinagar",
     "km_from_start": 91.7,
     "off_road_m": 33,
@@ -3651,7 +3651,7 @@
    },
    {
     "id": "fuel:node-9073525326",
-    "name": "HP petrol pump",
+    "name": "HP",
     "brand": null,
     "near": "Srinagar",
     "km_from_start": 101.0,
@@ -3704,7 +3704,7 @@
    {
     "id": "fuel:node-2379445986",
     "name": "HP",
-    "brand": "Hindustan Petroleum",
+    "brand": "HP",
     "near": "Srinagar",
     "km_from_start": 104.5,
     "off_road_m": 38,
@@ -3795,7 +3795,7 @@
    {
     "id": "fuel:node-9658985403",
     "name": "HP",
-    "brand": "Hindustan Petroleum",
+    "brand": "HP",
     "near": "Srinagar",
     "km_from_start": 128.8,
     "off_road_m": 390,
@@ -3873,7 +3873,7 @@
    {
     "id": "fuel:node-10965557030",
     "name": "Zabarwan Highway Care",
-    "brand": "Hindustan Petroleum",
+    "brand": "HP",
     "near": "Srinagar",
     "km_from_start": 287.5,
     "off_road_m": 28,
@@ -3963,8 +3963,8 @@
    },
    {
     "id": "fuel:way-1465360673",
-    "name": "HP petrol pump",
-    "brand": "Hindustan Petroleum",
+    "name": "HP",
+    "brand": "HP",
     "near": "Srinagar",
     "km_from_start": 305.9,
     "off_road_m": 116,
@@ -4498,5 +4498,5 @@
  "counts": {
   "facts": 86
  },
- "built": "2026-09-28"
+ "built": "2026-10-06"
 }

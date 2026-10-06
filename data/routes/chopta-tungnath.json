@@ -6933,7 +6933,7 @@
    {
     "id": "fuel:way-630557584",
     "name": "HP",
-    "brand": "Hindustan Petroleum",
+    "brand": "HP",
     "near": "Rishikesh",
     "km_from_start": 1.8,
     "off_road_m": 22,
@@ -6946,7 +6946,7 @@
    {
     "id": "fuel:node-12030751387",
     "name": "HP",
-    "brand": "Hindustan Petroleum",
+    "brand": "HP",
     "near": "Rishikesh",
     "km_from_start": 1.9,
     "off_road_m": 27,
@@ -6959,7 +6959,7 @@
    {
     "id": "fuel:way-630557577",
     "name": "HP",
-    "brand": "Hindustan Petroleum",
+    "brand": "HP",
     "near": "Rishikesh",
     "km_from_start": 1.9,
     "off_road_m": 23,
@@ -7061,6 +7061,26 @@
     "source": null
    },
    {
+    "id": "fuel:iocl-238062",
+    "name": "Parvat Filling Stn Srinagar",
+    "brand": "Indian Oil",
+    "near": "Dungripanth",
+    "km_from_start": 101.0,
+    "off_road_m": 13,
+    "lat": 30.2179,
+    "lon": 78.76689,
+    "opening_hours": null,
+    "osm_url": null,
+    "source": {
+     "url": "https://locator.iocl.com/indianoil-parvat-filling-stn-srinagar-petrol-pump-dungripanth-srinagar-238062/Home",
+     "title": "IndianOil locator: Parvat Filling Stn Srinagar, Dungripanth",
+     "kind": "official",
+     "opened": true,
+     "source_date": null,
+     "accessed": "2026-10-06"
+    }
+   },
+   {
     "id": "fuel:node-6574740114",
     "name": "Bharat Petroleum",
     "brand": null,
@@ -7087,6 +7107,226 @@
     "source": null
    },
    {
+    "id": "fuel:iocl-574356",
+    "name": "Maharishi Agastya Filling Station",
+    "brand": "Indian Oil",
+    "near": "Sandar",
+    "km_from_start": 139.1,
+    "off_road_m": 39,
+    "lat": 30.30721,
+    "lon": 78.98076,
+    "opening_hours": null,
+    "osm_url": null,
+    "source": {
+     "url": "https://locator.iocl.com/indianoil-maharishi-agastya-filling-station-petrol-pump-sandar-rudraprayag-574356/Home",
+     "title": "IndianOil locator: Maharishi Agastya Filling Station, Sandar",
+     "kind": "official",
+     "opened": true,
+     "source_date": null,
+     "accessed": "2026-10-06"
+    }
+   },
+   {
+    "id": "fuel:hp-393482",
+    "name": "Bhagwan Singh Service Station",
+    "brand": "HP",
+    "near": "Tilwara",
+    "km_from_start": 144.2,
+    "off_road_m": 9,
+    "lat": 30.34029,
+    "lon": 78.96833,
+    "opening_hours": null,
+    "osm_url": null,
+    "source": {
+     "url": "https://petrolpump.hpretail.in/hindustan-petroleum-corporation-limited-bhagwan-singh-service-station-petrol-pump-tilwara-rudraprayag-393482/Home",
+     "title": "HP locator: Bhagwan Singh Service Station, Tilwara",
+     "kind": "official",
+     "opened": true,
+     "source_date": null,
+     "accessed": "2026-10-06"
+    }
+   },
+   {
+    "id": "fuel:hp-410805",
+    "name": "Garhwal Motor Owners Union",
+    "brand": "HP",
+    "near": "Sisau",
+    "km_from_start": 148.9,
+    "off_road_m": 91,
+    "lat": 30.36611,
+    "lon": 78.99176,
+    "opening_hours": null,
+    "osm_url": null,
+    "source": {
+     "url": "https://petrolpump.hpretail.in/hindustan-petroleum-corporation-limited-garhwal-motor-owners-union-petrol-pump-sisau-rudraprayag-410805/Home",
+     "title": "HP locator: Garhwal Motor Owners Union, Sisau",
+     "kind": "official",
+     "opened": true,
+     "source_date": null,
+     "accessed": "2026-10-06"
+    }
+   },
+   {
+    "id": "fuel:iocl-238212",
+    "name": "Amar Shaheed Govind Singh",
+    "brand": "Indian Oil",
+    "near": "Serabhardar",
+    "km_from_start": 176.4,
+    "off_road_m": 1019,
+    "lat": 30.53816,
+    "lon": 79.08344,
+    "opening_hours": null,
+    "osm_url": null,
+    "source": {
+     "url": "https://locator.iocl.com/indianoil-amar-shaheed-govind-singh-petrol-pump-serabhardar-rudraprayag-238212/Home",
+     "title": "IndianOil locator: Amar Shaheed Govind Singh, Serabhardar",
+     "kind": "official",
+     "opened": true,
+     "source_date": null,
+     "accessed": "2026-10-06"
+    }
+   },
+   {
+    "id": "fuel:iocl-518257",
+    "name": "Kedarnath Filling Station",
+    "brand": "Indian Oil",
+    "near": "Bhainsari",
+    "km_from_start": 206.3,
+    "off_road_m": 21,
+    "lat": 30.51358,
+    "lon": 79.07126,
+    "opening_hours": null,
+    "osm_url": null,
+    "source": {
+     "url": "https://locator.iocl.com/indianoil-kedarnath-filling-station-petrol-pump-bhainsari-rudraprayag-518257/Home",
+     "title": "IndianOil locator: Kedarnath Filling Station, Bhainsari",
+     "kind": "official",
+     "opened": true,
+     "source_date": null,
+     "accessed": "2026-10-06"
+    }
+   },
+   {
+    "id": "fuel:hp-394321",
+    "name": "Chardham Filling Station",
+    "brand": "HP",
+    "near": "Kedarnath Road",
+    "km_from_start": 213.8,
+    "off_road_m": 10,
+    "lat": 30.5119,
+    "lon": 79.08558,
+    "opening_hours": null,
+    "osm_url": null,
+    "source": {
+     "url": "https://petrolpump.hpretail.in/hindustan-petroleum-corporation-limited-chardham-filling-station-petrol-pump-kedarnath-road-rudraprayag-394321/Home",
+     "title": "HP locator: Chardham Filling Station, Kedarnath Road",
+     "kind": "official",
+     "opened": true,
+     "source_date": null,
+     "accessed": "2026-10-06"
+    }
+   },
+   {
+    "id": "fuel:hp-483714",
+    "name": "Madhuganga Filling Station",
+    "brand": "HP",
+    "near": "Kund",
+    "km_from_start": 225.4,
+    "off_road_m": 12,
+    "lat": 30.5179,
+    "lon": 79.09222,
+    "opening_hours": null,
+    "osm_url": null,
+    "source": {
+     "url": "https://petrolpump.hpretail.in/hindustan-petroleum-corporation-limited-madhuganga-filling-station-petrol-pump-kund-rudraprayag-483714/Home",
+     "title": "HP locator: Madhuganga Filling Station, Kund",
+     "kind": "official",
+     "opened": true,
+     "source_date": null,
+     "accessed": "2026-10-06"
+    }
+   },
+   {
+    "id": "fuel:iocl-519244",
+    "name": "Bamnath Filling Station",
+    "brand": "Indian Oil",
+    "near": "Pokhri",
+    "km_from_start": 297.0,
+    "off_road_m": 3,
+    "lat": 30.34557,
+    "lon": 79.20172,
+    "opening_hours": null,
+    "osm_url": null,
+    "source": {
+     "url": "https://locator.iocl.com/indianoil-bamnath-filling-station-petrol-pump-pokhri-chamoli-519244/Home",
+     "title": "IndianOil locator: Bamnath Filling Station, Pokhri",
+     "kind": "official",
+     "opened": true,
+     "source_date": null,
+     "accessed": "2026-10-06"
+    }
+   },
+   {
+    "id": "fuel:hp-420314",
+    "name": "Bartwal Filling Station",
+    "brand": "HP",
+    "near": "Devsthan",
+    "km_from_start": 297.3,
+    "off_road_m": 534,
+    "lat": 30.34125,
+    "lon": 79.20652,
+    "opening_hours": null,
+    "osm_url": null,
+    "source": {
+     "url": "https://petrolpump.hpretail.in/hindustan-petroleum-corporation-limited-ms-hsd-bartwal-filling-station-petrol-pump-devsthan-chamoli-420314/Home",
+     "title": "HP locator: Bartwal Filling Station, Devsthan",
+     "kind": "official",
+     "opened": true,
+     "source_date": null,
+     "accessed": "2026-10-06"
+    }
+   },
+   {
+    "id": "fuel:iocl-237907",
+    "name": "Amar Sd Himmat Singh Negi F St",
+    "brand": "Indian Oil",
+    "near": "Sonla",
+    "km_from_start": 329.5,
+    "off_road_m": 2187,
+    "lat": 30.3208,
+    "lon": 79.30407,
+    "opening_hours": null,
+    "osm_url": null,
+    "source": {
+     "url": "https://locator.iocl.com/indianoil-amar-sd-himmat-singh-negi-f-st-petrol-pump-sonla-chamoli-237907/Home",
+     "title": "IndianOil locator: Amar Sd Himmat Singh Negi F St, Sonla",
+     "kind": "official",
+     "opened": true,
+     "source_date": null,
+     "accessed": "2026-10-06"
+    }
+   },
+   {
+    "id": "fuel:iocl-519447",
+    "name": "Maa Chandika Energy Station",
+    "brand": "Indian Oil",
+    "near": "Nandaprayag",
+    "km_from_start": 331.0,
+    "off_road_m": 1553,
+    "lat": 30.34137,
+    "lon": 79.31736,
+    "opening_hours": null,
+    "osm_url": null,
+    "source": {
+     "url": "https://locator.iocl.com/indianoil-maa-chandika-energy-station-petrol-pump-nandaprayag-chamoli-519447/Home",
+     "title": "IndianOil locator: Maa Chandika Energy Station, Nandaprayag",
+     "kind": "official",
+     "opened": true,
+     "source_date": null,
+     "accessed": "2026-10-06"
+    }
+   },
+   {
     "id": "fuel:node-12595986328",
     "name": "INDIAN OIL FUEL STATION",
     "brand": null,
@@ -7100,17 +7340,17 @@
     "source": null
    }
   ],
-  "pump_count": 18,
-  "stops": 10,
+  "pump_count": 30,
+  "stops": 20,
   "longest_gaps": [
    {
-    "from_km": 131.7,
-    "to_km": 358.8,
-    "gap_km": 227.1,
+    "from_km": 225.4,
+    "to_km": 297.0,
+    "gap_km": 71.6,
     "from_is": "pump",
     "to_is": "pump",
-    "near_from": "Rudraprayag",
-    "near_to": "Gopeshwar"
+    "near_from": "Ukhimath",
+    "near_to": "Chopta"
    },
    {
     "from_km": 15.1,
@@ -7122,35 +7362,35 @@
     "near_to": "Devprayag"
    },
    {
-    "from_km": 107.3,
-    "to_km": 131.7,
-    "gap_km": 24.4,
+    "from_km": 297.3,
+    "to_km": 329.5,
+    "gap_km": 32.2,
     "from_is": "pump",
     "to_is": "pump",
-    "near_from": "Devprayag",
+    "near_from": "Chopta",
+    "near_to": "Gopeshwar"
+   },
+   {
+    "from_km": 176.4,
+    "to_km": 206.3,
+    "gap_km": 29.9,
+    "from_is": "pump",
+    "to_is": "pump",
+    "near_from": "Rudraprayag",
     "near_to": "Rudraprayag"
    },
    {
-    "from_km": 64.6,
-    "to_km": 87.7,
-    "gap_km": 23.1,
+    "from_km": 331.0,
+    "to_km": 358.8,
+    "gap_km": 27.8,
     "from_is": "pump",
     "to_is": "pump",
-    "near_from": "Devprayag",
-    "near_to": "Devprayag"
-   },
-   {
-    "from_km": 95.4,
-    "to_km": 107.3,
-    "gap_km": 11.9,
-    "from_is": "pump",
-    "to_is": "pump",
-    "near_from": "Devprayag",
-    "near_to": "Devprayag"
+    "near_from": "Gopeshwar",
+    "near_to": "Gopeshwar"
    }
   ],
-  "note": "Pumps are those drawn on the open map within the search radius of the road. A pump missing from the map is missing here, so each gap is a worst case.",
-  "fetched": "2026-09-28"
+  "note": "Pumps are those drawn on the open map within the search radius of the road, and, where the map has none, those on the oil companies' own locators. A pump missing from both is missing here, so each gap is a worst case.",
+  "fetched": "2026-10-06"
  },
  "rules": [
   {
@@ -7541,7 +7781,7 @@
   "Some stretch distances are doubtful. The open map may not know the road riders use, so the routing service went the long way round."
  ],
  "counts": {
-  "facts": 45
+  "facts": 57
  },
- "built": "2026-09-28"
+ "built": "2026-10-06"
 }

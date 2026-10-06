@@ -1,6 +1,6 @@
 {
  "slug": "sach-pass-pangi",
- "fetched": "2026-09-28",
+ "fetched": "2026-10-06",
  "search_radius_m": 900,
  "pumps": [
   {
@@ -38,17 +38,215 @@
    "opening_hours": null,
    "petrol": null,
    "diesel": null
+  },
+  {
+   "osm": null,
+   "company_id": "iocl-518208",
+   "name": "N D Filling Station",
+   "brand": "Indian Oil",
+   "town": "Tikri Khas",
+   "lat": 32.6557,
+   "lon": 76.04607,
+   "km_from_start": 95.1,
+   "off_road_m": 18,
+   "opening_hours": null,
+   "petrol": null,
+   "diesel": null,
+   "source": {
+    "url": "https://locator.iocl.com/indianoil-n-d-filling-station-petrol-pump-tikri-khas-chamba-518208/Home",
+    "title": "IndianOil locator: N D Filling Station, Tikri Khas",
+    "kind": "official",
+    "opened": true,
+    "source_date": null,
+    "accessed": "2026-10-06"
+   }
+  },
+  {
+   "osm": null,
+   "company_id": "iocl-238083",
+   "name": "Bhalei Filling Station",
+   "brand": "Indian Oil",
+   "town": "Bhalei",
+   "lat": 32.6552,
+   "lon": 76.0233,
+   "km_from_start": 96.7,
+   "off_road_m": 1573,
+   "opening_hours": null,
+   "petrol": null,
+   "diesel": null,
+   "source": {
+    "url": "https://locator.iocl.com/indianoil-bhalei-filling-station-petrol-pump-bhalei-chamba-238083/Home",
+    "title": "IndianOil locator: Bhalei Filling Station, Bhalei",
+    "kind": "official",
+    "opened": true,
+    "source_date": null,
+    "accessed": "2026-10-06"
+   }
+  },
+  {
+   "osm": null,
+   "company_id": "hp-393339",
+   "name": "SR Filling Station",
+   "brand": "HP",
+   "town": "Koti",
+   "lat": 32.66422,
+   "lon": 76.03052,
+   "km_from_start": 96.8,
+   "off_road_m": 703,
+   "opening_hours": null,
+   "petrol": null,
+   "diesel": null,
+   "source": {
+    "url": "https://petrolpump.hpretail.in/hindustan-petroleum-corporation-limited-m-s-sr-filling-station-petrol-pump-koti-chamba-393339/Home",
+    "title": "HP locator: SR Filling Station, Koti",
+    "kind": "official",
+    "opened": true,
+    "source_date": null,
+    "accessed": "2026-10-06"
+   }
+  },
+  {
+   "osm": null,
+   "company_id": "hp-419098",
+   "name": "Bhagwati Filling Station",
+   "brand": "HP",
+   "town": "Bhatyund",
+   "lat": 32.72588,
+   "lon": 76.06925,
+   "km_from_start": 105.5,
+   "off_road_m": 1993,
+   "opening_hours": null,
+   "petrol": null,
+   "diesel": null,
+   "source": {
+    "url": "https://petrolpump.hpretail.in/hindustan-petroleum-corporation-limited-bhagwati-filling-station-petrol-pump-bhatyund-chamba-419098/Home",
+    "title": "HP locator: Bhagwati Filling Station, Bhatyund",
+    "kind": "official",
+    "opened": true,
+    "source_date": null,
+    "accessed": "2026-10-06"
+   }
+  },
+  {
+   "osm": null,
+   "company_id": "iocl-238254",
+   "name": "Churah Kisan Seva Kendra",
+   "brand": "Indian Oil",
+   "town": "Ail",
+   "lat": 32.82447,
+   "lon": 76.14035,
+   "km_from_start": 139.3,
+   "off_road_m": 105,
+   "opening_hours": null,
+   "petrol": null,
+   "diesel": null,
+   "source": {
+    "url": "https://locator.iocl.com/indianoil-churah-kisan-seva-kendra-petrol-pump-ail-chamba-238254/Home",
+    "title": "IndianOil locator: Churah Kisan Seva Kendra, Ail",
+    "kind": "official",
+    "opened": true,
+    "source_date": null,
+    "accessed": "2026-10-06"
+   }
+  },
+  {
+   "osm": null,
+   "company_id": "hp-394573",
+   "name": "Batt Filling Station",
+   "brand": "HP",
+   "town": "Kutehr",
+   "lat": 32.85459,
+   "lon": 76.15615,
+   "km_from_start": 144.5,
+   "off_road_m": 6,
+   "opening_hours": null,
+   "petrol": null,
+   "diesel": null,
+   "source": {
+    "url": "https://petrolpump.hpretail.in/hindustan-petroleum-corporation-limited-batt-filling-station-petrol-pump-kutehr-chamba-394573/Home",
+    "title": "HP locator: Batt Filling Station, Kutehr",
+    "kind": "official",
+    "opened": true,
+    "source_date": null,
+    "accessed": "2026-10-06"
+   }
+  },
+  {
+   "osm": null,
+   "company_id": "iocl-239027",
+   "name": "Sen Filling Station",
+   "brand": "Indian Oil",
+   "town": "Badhat",
+   "lat": 33.3381,
+   "lon": 75.7602,
+   "km_from_start": 352.6,
+   "off_road_m": 448,
+   "opening_hours": null,
+   "petrol": null,
+   "diesel": null,
+   "source": {
+    "url": "https://locator.iocl.com/indianoil-sen-filling-station-petrol-pump-badhat-doda-239027/Home",
+    "title": "IndianOil locator: Sen Filling Station, Badhat",
+    "kind": "official",
+    "opened": true,
+    "source_date": null,
+    "accessed": "2026-10-06"
+   }
+  },
+  {
+   "osm": null,
+   "company_id": "hp-391912",
+   "name": "Shaheed Ishtiyaq Filling Station",
+   "brand": "HP",
+   "town": "Sangrambhata",
+   "lat": 33.3322,
+   "lon": 75.75542,
+   "km_from_start": 353.5,
+   "off_road_m": 6,
+   "opening_hours": null,
+   "petrol": null,
+   "diesel": null,
+   "source": {
+    "url": "https://petrolpump.hpretail.in/hindustan-petroleum-corporation-limited-shaheed-ishtiyaq-filling-station-petrol-pump-sangrambhata-doda-391912/Home",
+    "title": "HP locator: Shaheed Ishtiyaq Filling Station, Sangrambhata",
+    "kind": "official",
+    "opened": true,
+    "source_date": null,
+    "accessed": "2026-10-06"
+   }
+  },
+  {
+   "osm": null,
+   "company_id": "hp-410680",
+   "name": "Hill View Service Station",
+   "brand": "HP",
+   "town": "Kishtwar",
+   "lat": 33.32274,
+   "lon": 75.76207,
+   "km_from_start": 354.8,
+   "off_road_m": 25,
+   "opening_hours": null,
+   "petrol": null,
+   "diesel": null,
+   "source": {
+    "url": "https://petrolpump.hpretail.in/hindustan-petroleum-corporation-limited-hill-view-service-station-petrol-pump-kishtwar-doda-410680/Home",
+    "title": "HP locator: Hill View Service Station, Kishtwar",
+    "kind": "official",
+    "opened": true,
+    "source_date": null,
+    "accessed": "2026-10-06"
+   }
   }
  ],
- "pump_count": 3,
- "stops": 2,
+ "pump_count": 12,
+ "stops": 7,
  "longest_gaps": [
   {
-   "from_km": 76.9,
-   "to_km": 356.4,
-   "gap_km": 279.5,
+   "from_km": 144.5,
+   "to_km": 352.6,
+   "gap_km": 208.1,
    "from_is": "pump",
-   "to_is": "end of route",
+   "to_is": "pump",
    "near_from": "Tissa",
    "near_to": "Kishtwar"
   },
@@ -62,6 +260,15 @@
    "near_to": "Tissa"
   },
   {
+   "from_km": 105.5,
+   "to_km": 139.3,
+   "gap_km": 33.8,
+   "from_is": "pump",
+   "to_is": "pump",
+   "near_from": "Tissa",
+   "near_to": "Tissa"
+  },
+  {
    "from_km": 0.0,
    "to_km": 24.0,
    "gap_km": 24.0,
@@ -69,6 +276,15 @@
    "to_is": "pump",
    "near_from": "Chamba",
    "near_to": "Chamba"
+  },
+  {
+   "from_km": 76.9,
+   "to_km": 95.1,
+   "gap_km": 18.2,
+   "from_is": "pump",
+   "to_is": "pump",
+   "near_from": "Tissa",
+   "near_to": "Tissa"
   }
  ],
  "source": {
@@ -77,5 +293,5 @@
   "licence": "Open Database Licence",
   "url": "https://www.openstreetmap.org/copyright"
  },
- "note": "Pumps are those drawn on the open map within the search radius of the road. A pump missing from the map is missing here, so each gap is a worst case."
+ "note": "Pumps are those drawn on the open map within the search radius of the road, and, where the map has none, those on the oil companies' own locators. A pump missing from both is missing here, so each gap is a worst case."
 }

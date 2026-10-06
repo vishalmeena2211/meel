@@ -1,6 +1,6 @@
 {
  "slug": "mussoorie-dhanaulti-chakrata",
- "fetched": "2026-09-28",
+ "fetched": "2026-10-06",
  "search_radius_m": 900,
  "pumps": [
   {
@@ -110,19 +110,94 @@
    "opening_hours": null,
    "petrol": null,
    "diesel": null
+  },
+  {
+   "osm": null,
+   "company_id": "iocl-238337",
+   "name": "Abhyuday Filling Station",
+   "brand": "Indian Oil",
+   "town": "suwakholai",
+   "lat": 30.45117,
+   "lon": 78.15616,
+   "km_from_start": 43.9,
+   "off_road_m": 9,
+   "opening_hours": null,
+   "petrol": null,
+   "diesel": null,
+   "source": {
+    "url": "https://locator.iocl.com/indianoil-abhyuday-filling-station-petrol-pump-suwakholai-tehri-garhwal-238337/Home",
+    "title": "IndianOil locator: Abhyuday Filling Station, suwakholai",
+    "kind": "official",
+    "opened": true,
+    "source_date": null,
+    "accessed": "2026-10-06"
+   }
+  },
+  {
+   "osm": null,
+   "company_id": "hp-390773",
+   "name": "Kempty Filling Station",
+   "brand": "HP",
+   "town": "Siya Kempti",
+   "lat": 30.48627,
+   "lon": 78.04377,
+   "km_from_start": 96.9,
+   "off_road_m": 0,
+   "opening_hours": null,
+   "petrol": null,
+   "diesel": null,
+   "source": {
+    "url": "https://petrolpump.hpretail.in/hindustan-petroleum-corporation-limited-kempty-filling-station-petrol-pump-siya-kempti-dehradun-390773/Home",
+    "title": "HP locator: Kempty Filling Station, Siya Kempti",
+    "kind": "official",
+    "opened": true,
+    "source_date": null,
+    "accessed": "2026-10-06"
+   }
+  },
+  {
+   "osm": null,
+   "company_id": "hp-418930",
+   "name": "Ms Prem Narayan Filling Station",
+   "brand": "HP",
+   "town": "Koruwa",
+   "lat": 30.66231,
+   "lon": 77.8562,
+   "km_from_start": 162.4,
+   "off_road_m": 2416,
+   "opening_hours": null,
+   "petrol": null,
+   "diesel": null,
+   "source": {
+    "url": "https://petrolpump.hpretail.in/hindustan-petroleum-corporation-limited-ms-prem-narayan-filling-station-petrol-pump-koruwa-dehradun-418930/Home",
+    "title": "HP locator: Ms Prem Narayan Filling Station, Koruwa",
+    "kind": "official",
+    "opened": true,
+    "source_date": null,
+    "accessed": "2026-10-06"
+   }
   }
  ],
- "pump_count": 9,
- "stops": 3,
+ "pump_count": 12,
+ "stops": 6,
  "longest_gaps": [
   {
-   "from_km": 27.4,
-   "to_km": 167.2,
-   "gap_km": 139.8,
+   "from_km": 96.9,
+   "to_km": 162.4,
+   "gap_km": 65.5,
    "from_is": "pump",
-   "to_is": "end of route",
-   "near_from": "Mussoorie",
+   "to_is": "pump",
+   "near_from": "Kempty Falls",
    "near_to": "Chakrata"
+  },
+  {
+   "from_km": 43.9,
+   "to_km": 96.9,
+   "gap_km": 53.0,
+   "from_is": "pump",
+   "to_is": "pump",
+   "near_from": "Mussoorie",
+   "near_to": "Kempty Falls"
   },
   {
    "from_km": 9.1,
@@ -131,6 +206,15 @@
    "from_is": "pump",
    "to_is": "pump",
    "near_from": "Dehradun",
+   "near_to": "Mussoorie"
+  },
+  {
+   "from_km": 27.4,
+   "to_km": 43.9,
+   "gap_km": 16.5,
+   "from_is": "pump",
+   "to_is": "pump",
+   "near_from": "Mussoorie",
    "near_to": "Mussoorie"
   },
   {
@@ -149,5 +233,5 @@
   "licence": "Open Database Licence",
   "url": "https://www.openstreetmap.org/copyright"
  },
- "note": "Pumps are those drawn on the open map within the search radius of the road. A pump missing from the map is missing here, so each gap is a worst case."
+ "note": "Pumps are those drawn on the open map within the search radius of the road, and, where the map has none, those on the oil companies' own locators. A pump missing from both is missing here, so each gap is a worst case."
 }

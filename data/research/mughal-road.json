@@ -566,5 +566,474 @@
     "No hazard or rule information found for the Bafliaz to Rajouri stretch.",
     "The January 2026 reopening comes from a page that could not be opened.",
     "No rider video newer than 2022 was found; the second video gives no filming date and was published on 28 June 2022."
-  ]
+  ],
+  "pumps_from_companies": {
+    "why": "The open map had no pump between the edge of Srinagar and Rajouri, though Shopian is a town. Neither locator lists a pump on the Mughal Road itself, between Shopian and Bafliaz, so that gap stays. These are from the oil companies' own locators, IndianOil's (locator.iocl.com) and HP's (petrolpump.hpretail.in), read on 6 October 2026 for the districts the road runs through. A pump within 5 km along the road of one already on the map is left out. Bharat Petroleum's locator did not answer, and other companies' pumps are not added.",
+    "pumps": [
+      {
+        "id": "iocl-239303",
+        "name": "Haji Ali Ksk",
+        "brand": "Indian Oil",
+        "town": "Herman",
+        "lat": 33.95281,
+        "lon": 74.87118,
+        "source": {
+          "url": "https://locator.iocl.com/indianoil-haji-ali-ksk-petrol-pump-herman-pulwama-239303/Home",
+          "title": "IndianOil locator: Haji Ali Ksk, Herman",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "hp-403410",
+        "name": "Malik Filling Station",
+        "brand": "HP",
+        "town": "Gangoo",
+        "lat": 33.89381,
+        "lon": 74.91639,
+        "source": {
+          "url": "https://petrolpump.hpretail.in/hindustan-petroleum-corporation-limited-malik-filling-station-petrol-pump-gangoo-pulwama-403410/Home",
+          "title": "HP locator: Malik Filling Station, Gangoo",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "iocl-238951",
+        "name": "Bhat Filling Station",
+        "brand": "Indian Oil",
+        "town": "Bandzoo",
+        "lat": 33.88543,
+        "lon": 74.91135,
+        "source": {
+          "url": "https://locator.iocl.com/indianoil-bhat-filling-station-petrol-pump-bandzoo-pulwama-238951/Home",
+          "title": "IndianOil locator: Bhat Filling Station, Bandzoo",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "iocl-238276",
+        "name": "Kisan Seva Kendra Sirnoo",
+        "brand": "Indian Oil",
+        "town": "Bandzoo",
+        "lat": 33.87124,
+        "lon": 74.88715,
+        "source": {
+          "url": "https://locator.iocl.com/indianoil-kisan-seva-kendra-sirnoo-petrol-pump-bandzoo-pulwama-238276/Home",
+          "title": "IndianOil locator: Kisan Seva Kendra Sirnoo, Bandzoo",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "iocl-238376",
+        "name": "Linkway Filling Centre",
+        "brand": "Indian Oil",
+        "town": "Bandzoo",
+        "lat": 33.8708,
+        "lon": 74.9184,
+        "source": {
+          "url": "https://locator.iocl.com/indianoil-linkway-filling-centre-petrol-pump-bandzoo-pulwama-238376/Home",
+          "title": "IndianOil locator: Linkway Filling Centre, Bandzoo",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "iocl-238505",
+        "name": "Zainab Filling Station",
+        "brand": "Indian Oil",
+        "town": "Bandzoo",
+        "lat": 33.86827,
+        "lon": 74.89365,
+        "source": {
+          "url": "https://locator.iocl.com/indianoil-zainab-filling-station-petrol-pump-bandzoo-pulwama-238505/Home",
+          "title": "IndianOil locator: Zainab Filling Station, Bandzoo",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "iocl-239023",
+        "name": "M M Filling Station",
+        "brand": "Indian Oil",
+        "town": "Bandzoo",
+        "lat": 33.85559,
+        "lon": 74.91343,
+        "source": {
+          "url": "https://locator.iocl.com/indianoil-m-m-filling-station-petrol-pump-bandzoo-pulwama-239023/Home",
+          "title": "IndianOil locator: M M Filling Station, Bandzoo",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "hp-391959",
+        "name": "Hamara Pump",
+        "brand": "HP",
+        "town": "Boonera",
+        "lat": 33.85068,
+        "lon": 74.89205,
+        "source": {
+          "url": "https://petrolpump.hpretail.in/hindustan-petroleum-corporation-limited-hamara-pump-petrol-pump-boonera-pulwama-391959/Home",
+          "title": "HP locator: Hamara Pump, Boonera",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "iocl-238503",
+        "name": "Magray Filling Station",
+        "brand": "Indian Oil",
+        "town": "Bandzoo",
+        "lat": 33.83645,
+        "lon": 74.88824,
+        "source": {
+          "url": "https://locator.iocl.com/indianoil-magray-filling-station-petrol-pump-bandzoo-pulwama-238503/Home",
+          "title": "IndianOil locator: Magray Filling Station, Bandzoo",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "iocl-238834",
+        "name": "Nikas Filling Station",
+        "brand": "Indian Oil",
+        "town": "Ahagam",
+        "lat": 33.81243,
+        "lon": 74.86808,
+        "source": {
+          "url": "https://locator.iocl.com/indianoil-nikas-filling-station-petrol-pump-ahagam-pulwama-238834/Home",
+          "title": "IndianOil locator: Nikas Filling Station, Ahagam",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "hp-420481",
+        "name": "Rehman Hp Fuels",
+        "brand": "HP",
+        "town": "Rajpora",
+        "lat": 33.82545,
+        "lon": 74.85364,
+        "source": {
+          "url": "https://petrolpump.hpretail.in/hindustan-petroleum-corporation-limited-rehman-hp-fuels-petrol-pump-rajpora-pulwama-420481/Home",
+          "title": "HP locator: Rehman Hp Fuels, Rajpora",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "iocl-238520",
+        "name": "Taymur Filling Station",
+        "brand": "Indian Oil",
+        "town": "Herman",
+        "lat": 33.7677,
+        "lon": 74.84852,
+        "source": {
+          "url": "https://locator.iocl.com/indianoil-taymur-filling-station-petrol-pump-herman-pulwama-238520/Home",
+          "title": "IndianOil locator: Taymur Filling Station, Herman",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "hp-403570",
+        "name": "Khan Filling Station",
+        "brand": "HP",
+        "town": "Aglar",
+        "lat": 33.75217,
+        "lon": 74.84631,
+        "source": {
+          "url": "https://petrolpump.hpretail.in/hindustan-petroleum-corporation-limited-khan-filling-station-petrol-pump-aglar-pulwama-403570/Home",
+          "title": "HP locator: Khan Filling Station, Aglar",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "iocl-238394",
+        "name": "Shopian Filling Station",
+        "brand": "Indian Oil",
+        "town": "Herman",
+        "lat": 33.74091,
+        "lon": 74.84061,
+        "source": {
+          "url": "https://locator.iocl.com/indianoil-shopian-filling-station-petrol-pump-herman-pulwama-238394/Home",
+          "title": "IndianOil locator: Shopian Filling Station, Herman",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "hp-403374",
+        "name": "Mughal Filling Station",
+        "brand": "HP",
+        "town": "Bongam",
+        "lat": 33.73156,
+        "lon": 74.83528,
+        "source": {
+          "url": "https://petrolpump.hpretail.in/hindustan-petroleum-corporation-limited-mughal-filling-station-petrol-pump-bongam-pulwama-403374/Home",
+          "title": "HP locator: Mughal Filling Station, Bongam",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "hp-403567",
+        "name": "Star Filling Station",
+        "brand": "HP",
+        "town": "Shopian",
+        "lat": 33.72169,
+        "lon": 74.82699,
+        "source": {
+          "url": "https://petrolpump.hpretail.in/hindustan-petroleum-corporation-limited-star-filling-station-petrol-pump-shopian-pulwama-403567/Home",
+          "title": "HP locator: Star Filling Station, Shopian",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "iocl-239255",
+        "name": "Sodagar F/Stn",
+        "brand": "Indian Oil",
+        "town": "Herman",
+        "lat": 33.71699,
+        "lon": 74.84299,
+        "source": {
+          "url": "https://locator.iocl.com/indianoil-sodagar-f-stn-petrol-pump-herman-pulwama-239255/Home",
+          "title": "IndianOil locator: Sodagar F/Stn, Herman",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "hp-398608",
+        "name": "Blueline Hp Filling Station",
+        "brand": "HP",
+        "town": "Memander",
+        "lat": 33.70728,
+        "lon": 74.84041,
+        "source": {
+          "url": "https://petrolpump.hpretail.in/hindustan-petroleum-corporation-limited-blueline-hp-filling-station-petrol-pump-memander-pulwama-398608/Home",
+          "title": "HP locator: Blueline Hp Filling Station, Memander",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "iocl-238518",
+        "name": "Ellahi Filling Station",
+        "brand": "Indian Oil",
+        "town": "Herman",
+        "lat": 33.70119,
+        "lon": 74.84519,
+        "source": {
+          "url": "https://locator.iocl.com/indianoil-ellahi-filling-station-petrol-pump-herman-pulwama-238518/Home",
+          "title": "IndianOil locator: Ellahi Filling Station, Herman",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "iocl-239322",
+        "name": "Ksk Chowgam",
+        "brand": "Indian Oil",
+        "town": "Herman",
+        "lat": 33.70607,
+        "lon": 74.82075,
+        "source": {
+          "url": "https://locator.iocl.com/indianoil-ksk-chowgam-petrol-pump-herman-pulwama-239322/Home",
+          "title": "IndianOil locator: Ksk Chowgam, Herman",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "hp-418958",
+        "name": "Sajad Motors",
+        "brand": "HP",
+        "town": "Hir Pora",
+        "lat": 33.68446,
+        "lon": 74.77757,
+        "source": {
+          "url": "https://petrolpump.hpretail.in/hindustan-petroleum-corporation-limited-sajad-motors-petrol-pump-hir-pora-pulwama-418958/Home",
+          "title": "HP locator: Sajad Motors, Hir Pora",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "iocl-238838",
+        "name": "Ahmed Filling Station",
+        "brand": "Indian Oil",
+        "town": "Bathuni",
+        "lat": 33.41798,
+        "lon": 74.3194,
+        "source": {
+          "url": "https://locator.iocl.com/indianoil-ahmed-filling-station-petrol-pump-bathuni-rajauri-238838/Home",
+          "title": "IndianOil locator: Ahmed Filling Station, Bathuni",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "iocl-277594",
+        "name": "Hsbg Filling Station",
+        "brand": "Indian Oil",
+        "town": "Aitey",
+        "lat": 33.40431,
+        "lon": 74.32467,
+        "source": {
+          "url": "https://locator.iocl.com/indianoil-hsbg-filling-station-petrol-pump-aitey-rajauri-277594/Home",
+          "title": "IndianOil locator: Hsbg Filling Station, Aitey",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "hp-418676",
+        "name": "SMB Filling Station",
+        "brand": "HP",
+        "town": "Darhali Morh",
+        "lat": 33.40303,
+        "lon": 74.31625,
+        "source": {
+          "url": "https://petrolpump.hpretail.in/hindustan-petroleum-corporation-limited-smb-filling-station-petrol-pump-darhali-morh-rajauri-418676/Home",
+          "title": "HP locator: SMB Filling Station, Darhali Morh",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "hp-418942",
+        "name": "Kalas Auto Filling Station",
+        "brand": "HP",
+        "town": "Atti",
+        "lat": 33.39632,
+        "lon": 74.31723,
+        "source": {
+          "url": "https://petrolpump.hpretail.in/hindustan-petroleum-corporation-limited-kalas-auto-filling-station-petrol-pump-atti-rajauri-418942/Home",
+          "title": "HP locator: Kalas Auto Filling Station, Atti",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "hp-425363",
+        "name": "H Raza Filling Station",
+        "brand": "HP",
+        "town": "Khyora",
+        "lat": 33.38561,
+        "lon": 74.31239,
+        "source": {
+          "url": "https://petrolpump.hpretail.in/hindustan-petroleum-corporation-limited-h-raza-filling-station-petrol-pump-khyora-rajauri-425363/Home",
+          "title": "HP locator: H Raza Filling Station, Khyora",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "iocl-239227",
+        "name": "Vijay Auto Aids",
+        "brand": "Indian Oil",
+        "town": "Bafliaz",
+        "lat": 33.3721,
+        "lon": 74.3064,
+        "source": {
+          "url": "https://locator.iocl.com/indianoil-vijay-auto-aids-petrol-pump-bafliaz-poonch-239227/Home",
+          "title": "IndianOil locator: Vijay Auto Aids, Bafliaz",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "iocl-238946",
+        "name": "Choudhary Auto Fuels",
+        "brand": "Indian Oil",
+        "town": "Bathuni",
+        "lat": 33.36341,
+        "lon": 74.32685,
+        "source": {
+          "url": "https://locator.iocl.com/indianoil-choudhary-auto-fuels-petrol-pump-bathuni-rajauri-238946/Home",
+          "title": "IndianOil locator: Choudhary Auto Fuels, Bathuni",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "hp-418968",
+        "name": "Gurukripa Filling Station",
+        "brand": "HP",
+        "town": "Jawahar Nagar",
+        "lat": 33.36609,
+        "lon": 74.32051,
+        "source": {
+          "url": "https://petrolpump.hpretail.in/hindustan-petroleum-corporation-limited-gurukripa-filling-station-petrol-pump-jawahar-nagar-rajauri-418968/Home",
+          "title": "HP locator: Gurukripa Filling Station, Jawahar Nagar",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      }
+    ]
+  }
 }

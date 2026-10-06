@@ -817,5 +817,26 @@
     "The fuel claim about Darcha is a blogger's; it was not checked against a pump list.",
     "Usual days rests on a blogger's description of a long single-day drive.",
     "The first video gives no filming date; it was published on 14 June 2025."
-  ]
+  ],
+  "pumps_from_companies": {
+    "why": "The open map had no pump on this route. Neither locator lists one between Darcha and Padum; IndianOil's at Karsha, beside Padum, is the first. These are from the oil companies' own locators, IndianOil's (locator.iocl.com) and HP's (petrolpump.hpretail.in), read on 6 October 2026 for the districts the road runs through. A pump within 5 km along the road of one already on the map is left out. Bharat Petroleum's locator did not answer, and other companies' pumps are not added.",
+    "pumps": [
+      {
+        "id": "iocl-238399",
+        "name": "Zanskar Filling Station",
+        "brand": "Indian Oil",
+        "town": "Karsha",
+        "lat": 33.48094,
+        "lon": 76.85656,
+        "source": {
+          "url": "https://locator.iocl.com/indianoil-zanskar-filling-station-petrol-pump-karsha-kargil-238399/Home",
+          "title": "IndianOil locator: Zanskar Filling Station, Karsha",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      }
+    ]
+  }
 }

@@ -353,5 +353,474 @@
     "Goa rules for the last stretch into Panaji are recorded in the file for the Goa, Gokarna and Karnataka coast route.",
     "A landslide at Kashedi Ghat on 2025-07-15 is reported by All India Radio news at https://www.newsonair.gov.in/maharashtra-konkan-receives-heavy-rainfall-traffic-disruption-on-mumbai-goa-highway",
     "Videos: the pages give upload dates, not filming dates, so 'filmed' is filled only where the title names a date. Uploads, in order: 2025-12, 2019-12."
-  ]
+  ],
+  "pumps_from_companies": {
+    "why": "The open map missed many pumps on the coast roads between Alibag and Malvan, though Ratnagiri, Lanja, Kankavli and Malvan are towns. These are from the oil companies' own locators, IndianOil's (locator.iocl.com) and HP's (petrolpump.hpretail.in), read on 6 October 2026 for the districts the road runs through. A pump within 5 km along the road of one already on the map is left out. Bharat Petroleum's locator did not answer, and other companies' pumps are not added.",
+    "pumps": [
+      {
+        "id": "iocl-206761",
+        "name": "Radha Auto Care",
+        "brand": "Indian Oil",
+        "town": "Jaskhar, Sector 1",
+        "lat": 18.90717,
+        "lon": 73.01892,
+        "source": {
+          "url": "https://locator.iocl.com/indianoil-petrol-pump-jaskhar-sector-1-radha-auto-care-petrol-pump-jaskhar-sector-1-raigarh-206761/Home",
+          "title": "IndianOil locator: Radha Auto Care, Jaskhar, Sector 1",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "iocl-208213",
+        "name": "Shree Swami Samarth Fuel Station",
+        "brand": "Indian Oil",
+        "town": "Ambeghar",
+        "lat": 18.8208,
+        "lon": 73.09251,
+        "source": {
+          "url": "https://locator.iocl.com/indianoil-petrol-pump-ambeghar-shree-swami-samarth-fuel-station-petrol-pump-ambeghar-raigad-208213/Home",
+          "title": "IndianOil locator: Shree Swami Samarth Fuel Station, Ambeghar",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "hp-387669",
+        "name": "Jite Fuel Plaza, Jite",
+        "brand": "HP",
+        "town": "Jite",
+        "lat": 18.81583,
+        "lon": 73.08995,
+        "source": {
+          "url": "https://petrolpump.hpretail.in/hindustan-petroleum-corporation-limited-m-s-jite-fuel-plaza-jite-petrol-pump-jite-raigad-387669/Home",
+          "title": "HP locator: Jite Fuel Plaza, Jite, Jite",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "hp-388377",
+        "name": "Shree Siddhivinayak Petroleum",
+        "brand": "HP",
+        "town": "Jite",
+        "lat": 18.80447,
+        "lon": 73.09162,
+        "source": {
+          "url": "https://petrolpump.hpretail.in/hindustan-petroleum-corporation-limited-shree-siddhivinayak-petroleum-petrol-pump-jite-raigad-388377/Home",
+          "title": "HP locator: Shree Siddhivinayak Petroleum, Jite",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "hp-387958",
+        "name": "Vandana Automobiles, Karle Khin",
+        "brand": "HP",
+        "town": "Karle Khind",
+        "lat": 18.69561,
+        "lon": 72.93377,
+        "source": {
+          "url": "https://petrolpump.hpretail.in/hindustan-petroleum-corporation-limited-m-s-vandana-automobiles-karle-khin-petrol-pump-karle-khind-alibag-387958/Home",
+          "title": "HP locator: Vandana Automobiles, Karle Khin, Karle Khind",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "hp-387765",
+        "name": "Shree Sharada Automobiles, Chaul",
+        "brand": "HP",
+        "town": "Chaul",
+        "lat": 18.59372,
+        "lon": 72.9247,
+        "source": {
+          "url": "https://petrolpump.hpretail.in/hindustan-petroleum-corporation-limited-m-s-shree-sharada-automobiles-chaul-petrol-pump-chaul-raigad-387765/Home",
+          "title": "HP locator: Shree Sharada Automobiles, Chaul, Chaul",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "iocl-207159",
+        "name": "Sabina Automobiles",
+        "brand": "Indian Oil",
+        "town": "Bhoste",
+        "lat": 18.05504,
+        "lon": 73.03333,
+        "source": {
+          "url": "https://locator.iocl.com/indianoil-petrol-pump-bhoste-sabina-automobiles-petrol-pump-bhoste-raigarh-207159/Home",
+          "title": "IndianOil locator: Sabina Automobiles, Bhoste",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "iocl-583968",
+        "name": "Raviraj Petroleum",
+        "brand": "Indian Oil",
+        "town": "Adhkal",
+        "lat": 17.81563,
+        "lon": 73.10811,
+        "source": {
+          "url": "https://locator.iocl.com/indianoil-raviraj-petroleum-petrol-pump-adhkal-ratnagiri-583968/Home",
+          "title": "IndianOil locator: Raviraj Petroleum, Adhkal",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "iocl-279077",
+        "name": "Jaigad Cha Raja Petroleum",
+        "brand": "Indian Oil",
+        "town": "Chaferi",
+        "lat": 17.24421,
+        "lon": 73.24626,
+        "source": {
+          "url": "https://locator.iocl.com/indianoil-jaigad-cha-raja-petroleum-petrol-pump-chaferi-ratnagiri-279077/Home",
+          "title": "IndianOil locator: Jaigad Cha Raja Petroleum, Chaferi",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "hp-388077",
+        "name": "Suvarnarekha Petrolines, Jaygad",
+        "brand": "HP",
+        "town": "Chaferi",
+        "lat": 17.24333,
+        "lon": 73.24624,
+        "source": {
+          "url": "https://petrolpump.hpretail.in/hindustan-petroleum-corporation-limited-m-s-suvarnarekha-petrolines-jaygad-petrol-pump-chaferi-ratnagiri-388077/Home",
+          "title": "HP locator: Suvarnarekha Petrolines, Jaygad, Chaferi",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "hp-391282",
+        "name": "Shraddha Petrol Pump",
+        "brand": "HP",
+        "town": "Shirgaon",
+        "lat": 17.03326,
+        "lon": 73.29065,
+        "source": {
+          "url": "https://petrolpump.hpretail.in/hindustan-petroleum-corporation-limited-m-s-shraddha-petrol-pump-petrol-pump-shirgaon-ratnagiri-391282/Home",
+          "title": "HP locator: Shraddha Petrol Pump, Shirgaon",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "hp-418057",
+        "name": "Shri Swami Samarth Petroleum",
+        "brand": "HP",
+        "town": "Hathkhamba",
+        "lat": 17.02249,
+        "lon": 73.4067,
+        "source": {
+          "url": "https://petrolpump.hpretail.in/hindustan-petroleum-corporation-limited-m-s-shri-swami-samarth-petroleum-petrol-pump-hathkhamba-ratnagiri-418057/Home",
+          "title": "HP locator: Shri Swami Samarth Petroleum, Hathkhamba",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "hp-387707",
+        "name": "Sahil - Shanti Petroleum, Hathkhamba",
+        "brand": "HP",
+        "town": "Nivali",
+        "lat": 17.03369,
+        "lon": 73.41559,
+        "source": {
+          "url": "https://petrolpump.hpretail.in/hindustan-petroleum-corporation-limited-m-s-sahil-shanti-petroleum-hathkhamba-petrol-pump-nivali-ratnagiri-387707/Home",
+          "title": "HP locator: Sahil - Shanti Petroleum, Hathkhamba, Nivali",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "hp-388194",
+        "name": "Urja Petroleums, Pali",
+        "brand": "HP",
+        "town": "Pali",
+        "lat": 16.99103,
+        "lon": 73.46777,
+        "source": {
+          "url": "https://petrolpump.hpretail.in/hindustan-petroleum-corporation-limited-m-s-urja-petroleums-pali-petrol-pump-pali-ratnagiri-388194/Home",
+          "title": "HP locator: Urja Petroleums, Pali, Pali",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "hp-388241",
+        "name": "Adhoc Samarth Traders",
+        "brand": "HP",
+        "town": "Lanja",
+        "lat": 16.85844,
+        "lon": 73.54932,
+        "source": {
+          "url": "https://petrolpump.hpretail.in/hindustan-petroleum-corporation-limited-m-s-adhoc-samarth-traders-petrol-pump-lanja-ratnagiri-388241/Home",
+          "title": "HP locator: Adhoc Samarth Traders, Lanja",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "iocl-207240",
+        "name": "Shri Advait Petroleum",
+        "brand": "Indian Oil",
+        "town": "Bapere",
+        "lat": 16.84686,
+        "lon": 73.54858,
+        "source": {
+          "url": "https://locator.iocl.com/indianoil-shri-advait-petroleum-petrol-pump-bapere-ratnagiri-207240/Home",
+          "title": "IndianOil locator: Shri Advait Petroleum, Bapere",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "hp-387900",
+        "name": "Sunita & Sons",
+        "brand": "HP",
+        "town": "Kuve",
+        "lat": 16.83505,
+        "lon": 73.55142,
+        "source": {
+          "url": "https://petrolpump.hpretail.in/hindustan-petroleum-corporation-limited-m-s-sunita-sons-petrol-pump-kuve-ratnagiri-387900/Home",
+          "title": "HP locator: Sunita & Sons, Kuve",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "iocl-207870",
+        "name": "Narmadaa Petroleum",
+        "brand": "Indian Oil",
+        "town": "Angale",
+        "lat": 16.60154,
+        "lon": 73.56431,
+        "source": {
+          "url": "https://locator.iocl.com/indianoil-narmadaa-petroleum-petrol-pump-angale-ratnagiri-207870/Home",
+          "title": "IndianOil locator: Narmadaa Petroleum, Angale",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "hp-388727",
+        "name": "Kasarde Petroleum",
+        "brand": "HP",
+        "town": "Kasarde",
+        "lat": 16.41881,
+        "lon": 73.67702,
+        "source": {
+          "url": "https://petrolpump.hpretail.in/hindustan-petroleum-corporation-limited-kasarde-petroleum-petrol-pump-kasarde-sindhudurg-388727/Home",
+          "title": "HP locator: Kasarde Petroleum, Kasarde",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "hp-389048",
+        "name": "Shree Krupa Petroleum",
+        "brand": "HP",
+        "town": "Jambhulwadi",
+        "lat": 16.41427,
+        "lon": 73.68018,
+        "source": {
+          "url": "https://petrolpump.hpretail.in/hindustan-petroleum-corporation-limited-m-s-shree-krupa-petroleum-petrol-pump-jambhulwadi-sindhudurg-389048/Home",
+          "title": "HP locator: Shree Krupa Petroleum, Jambhulwadi",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "iocl-208083",
+        "name": "Shree Fuel Station",
+        "brand": "Indian Oil",
+        "town": "Asalade",
+        "lat": 16.39024,
+        "lon": 73.6859,
+        "source": {
+          "url": "https://locator.iocl.com/indianoil-shree-fuel-station-petrol-pump-asalade-sindhudurg-208083/Home",
+          "title": "IndianOil locator: Shree Fuel Station, Asalade",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "iocl-206716",
+        "name": "Shri Siddhi Agencies",
+        "brand": "Indian Oil",
+        "town": "Asrondi",
+        "lat": 16.28877,
+        "lon": 73.7087,
+        "source": {
+          "url": "https://locator.iocl.com/indianoil-shri-siddhi-agencies-petrol-pump-asrondi-sindhudurg-206716/Home",
+          "title": "IndianOil locator: Shri Siddhi Agencies, Asrondi",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "hp-388659",
+        "name": "Sindhudurg Police Fuels, Kankavli",
+        "brand": "HP",
+        "town": "Kankavli",
+        "lat": 16.26541,
+        "lon": 73.70557,
+        "source": {
+          "url": "https://petrolpump.hpretail.in/hindustan-petroleum-corporation-limited-m-s-sindhudurg-police-fuels-kankavli-petrol-pump-kankavli-sindhudurg-388659/Home",
+          "title": "HP locator: Sindhudurg Police Fuels, Kankavli, Kankavli",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "hp-388230",
+        "name": "Naik Petroleum, Kankavli",
+        "brand": "HP",
+        "town": "Kankavli",
+        "lat": 16.25384,
+        "lon": 73.70741,
+        "source": {
+          "url": "https://petrolpump.hpretail.in/hindustan-petroleum-corporation-limited-m-s-naik-petroleum-kankavli-petrol-pump-kankavli-sindhudurg-388230/Home",
+          "title": "HP locator: Naik Petroleum, Kankavli, Kankavli",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "iocl-208270",
+        "name": "Amol Petroleum",
+        "brand": "Indian Oil",
+        "town": "Bordave",
+        "lat": 16.18324,
+        "lon": 73.69776,
+        "source": {
+          "url": "https://locator.iocl.com/indianoil-amol-petroleum-petrol-pump-bordave-sindhudurg-208270/Home",
+          "title": "IndianOil locator: Amol Petroleum, Bordave",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "iocl-519383",
+        "name": "Vetoba Petroleum",
+        "brand": "Indian Oil",
+        "town": "Kasal",
+        "lat": 16.14174,
+        "lon": 73.67599,
+        "source": {
+          "url": "https://locator.iocl.com/indianoil-vetoba-petroleum-petrol-pump-kasal-sindhudurg-519383/Home",
+          "title": "IndianOil locator: Vetoba Petroleum, Kasal",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "iocl-518129",
+        "name": "Kadam Petroleum",
+        "brand": "Indian Oil",
+        "town": "Varchi Guramwad",
+        "lat": 16.06151,
+        "lon": 73.50328,
+        "source": {
+          "url": "https://locator.iocl.com/indianoil-kadam-petroleum-petrol-pump-varchi-guramwad-sindhudurg-518129/Home",
+          "title": "IndianOil locator: Kadam Petroleum, Varchi Guramwad",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "hp-387819",
+        "name": "Shree Bhagvati Petroleum, Malvan",
+        "brand": "HP",
+        "town": "Malvan",
+        "lat": 16.05071,
+        "lon": 73.55316,
+        "source": {
+          "url": "https://petrolpump.hpretail.in/hindustan-petroleum-corporation-limited-m-s-shree-bhagvati-petroleum-malvan-petrol-pump-malvan-sindhudurg-387819/Home",
+          "title": "HP locator: Shree Bhagvati Petroleum, Malvan, Malvan",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "hp-394740",
+        "name": "Zarap Petroleum",
+        "brand": "HP",
+        "town": "Zarap",
+        "lat": 15.94181,
+        "lon": 73.74961,
+        "source": {
+          "url": "https://petrolpump.hpretail.in/hindustan-petroleum-corporation-limited-zarap-petroleum-petrol-pump-zarap-kudal-394740/Home",
+          "title": "HP locator: Zarap Petroleum, Zarap",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      }
+    ]
+  }
 }

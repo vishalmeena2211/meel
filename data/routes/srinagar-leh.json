@@ -5821,8 +5821,8 @@
    },
    {
     "id": "fuel:way-1465360673",
-    "name": "HP petrol pump",
-    "brand": "Hindustan Petroleum",
+    "name": "HP",
+    "brand": "HP",
     "near": "Srinagar",
     "km_from_start": 5.9,
     "off_road_m": 116,
@@ -5885,6 +5885,26 @@
     "source": null
    },
    {
+    "id": "fuel:hp-418967",
+    "name": "Marwah Filling Station",
+    "brand": "HP",
+    "near": "Shahpora",
+    "km_from_start": 21.4,
+    "off_road_m": 15,
+    "lat": 34.23688,
+    "lon": 74.783,
+    "opening_hours": null,
+    "osm_url": null,
+    "source": {
+     "url": "https://petrolpump.hpretail.in/hindustan-petroleum-corporation-limited-marwah-filling-station-petrol-pump-shahpora-srinagar-418967/Home",
+     "title": "HP locator: Marwah Filling Station, Shahpora",
+     "kind": "official",
+     "opened": true,
+     "source_date": null,
+     "accessed": "2026-10-06"
+    }
+   },
+   {
     "id": "fuel:node-5936064828",
     "name": "Petrol pump",
     "brand": null,
@@ -5896,6 +5916,46 @@
     "opening_hours": null,
     "osm_url": "https://www.openstreetmap.org/node/5936064828",
     "source": null
+   },
+   {
+    "id": "fuel:iocl-519672",
+    "name": "Haarson Filling Station",
+    "brand": "Indian Oil",
+    "near": "Cherwan",
+    "km_from_start": 37.4,
+    "off_road_m": 9,
+    "lat": 34.26175,
+    "lon": 74.90483,
+    "opening_hours": null,
+    "osm_url": null,
+    "source": {
+     "url": "https://locator.iocl.com/indianoil-haarson-filling-station-petrol-pump-cherwan-srinagar-519672/Home",
+     "title": "IndianOil locator: Haarson Filling Station, Cherwan",
+     "kind": "official",
+     "opened": true,
+     "source_date": null,
+     "accessed": "2026-10-06"
+    }
+   },
+   {
+    "id": "fuel:iocl-237929",
+    "name": "Khan Brothers Filling Station",
+    "brand": "Indian Oil",
+    "near": "Dras",
+    "km_from_start": 145.7,
+    "off_road_m": 12,
+    "lat": 34.4326,
+    "lon": 75.76937,
+    "opening_hours": null,
+    "osm_url": null,
+    "source": {
+     "url": "https://locator.iocl.com/indianoil-khan-brothers-filling-station-petrol-pump-dras-kargil-237929/Home",
+     "title": "IndianOil locator: Khan Brothers Filling Station, Dras",
+     "kind": "official",
+     "opened": true,
+     "source_date": null,
+     "accessed": "2026-10-06"
+    }
    },
    {
     "id": "fuel:node-5936063635",
@@ -5926,7 +5986,7 @@
    {
     "id": "fuel:node-12465668700",
     "name": "HP",
-    "brand": "Hindustan Petroleum",
+    "brand": "HP",
     "near": "Kargil",
     "km_from_start": 205.5,
     "off_road_m": 972,
@@ -5987,6 +6047,26 @@
     "opening_hours": null,
     "osm_url": "https://www.openstreetmap.org/node/3912531349",
     "source": null
+   },
+   {
+    "id": "fuel:iocl-237882",
+    "name": "Chhepal Barcha Filling Station",
+    "brand": "Indian Oil",
+    "near": "Nimmu",
+    "km_from_start": 383.8,
+    "off_road_m": 19,
+    "lat": 34.19963,
+    "lon": 77.3281,
+    "opening_hours": null,
+    "osm_url": null,
+    "source": {
+     "url": "https://locator.iocl.com/indianoil-chhepal-barcha-filling-station-petrol-pump-nimmu-leh-237882/Home",
+     "title": "IndianOil locator: Chhepal Barcha Filling Station, Nimmu",
+     "kind": "official",
+     "opened": true,
+     "source_date": null,
+     "accessed": "2026-10-06"
+    }
    },
    {
     "id": "fuel:node-9880708641",
@@ -6080,17 +6160,17 @@
     "source": null
    }
   ],
-  "pump_count": 25,
-  "stops": 14,
+  "pump_count": 29,
+  "stops": 18,
   "longest_gaps": [
    {
-    "from_km": 31.1,
-    "to_km": 199.0,
-    "gap_km": 167.9,
+    "from_km": 37.4,
+    "to_km": 145.7,
+    "gap_km": 108.3,
     "from_is": "pump",
     "to_is": "pump",
     "near_from": "Srinagar",
-    "near_to": "Kargil"
+    "near_to": "Drass"
    },
    {
     "from_km": 242.7,
@@ -6103,12 +6183,21 @@
    },
    {
     "from_km": 326.3,
-    "to_km": 393.2,
-    "gap_km": 66.9,
+    "to_km": 383.8,
+    "gap_km": 57.5,
     "from_is": "pump",
     "to_is": "pump",
     "near_from": "Khaltse",
     "near_to": "Nimmu"
+   },
+   {
+    "from_km": 145.7,
+    "to_km": 199.0,
+    "gap_km": 53.3,
+    "from_is": "pump",
+    "to_is": "pump",
+    "near_from": "Drass",
+    "near_to": "Kargil"
    },
    {
     "from_km": 205.6,
@@ -6118,19 +6207,10 @@
     "to_is": "pump",
     "near_from": "Kargil",
     "near_to": "Mulbekh"
-   },
-   {
-    "from_km": 15.3,
-    "to_km": 31.1,
-    "gap_km": 15.8,
-    "from_is": "pump",
-    "to_is": "pump",
-    "near_from": "Srinagar",
-    "near_to": "Srinagar"
    }
   ],
-  "note": "Pumps are those drawn on the open map within the search radius of the road. A pump missing from the map is missing here, so each gap is a worst case.",
-  "fetched": "2026-09-28"
+  "note": "Pumps are those drawn on the open map within the search radius of the road, and, where the map has none, those on the oil companies' own locators. A pump missing from both is missing here, so each gap is a worst case.",
+  "fetched": "2026-10-06"
  },
  "rules": [
   {
@@ -6978,7 +7058,7 @@
   "The second video gives no filming date; it was published on 9 November 2024."
  ],
  "counts": {
-  "facts": 80
+  "facts": 84
  },
- "built": "2026-09-28"
+ "built": "2026-10-06"
 }

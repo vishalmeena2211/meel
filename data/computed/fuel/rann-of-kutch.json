@@ -1,6 +1,6 @@
 {
  "slug": "rann-of-kutch",
- "fetched": "2026-09-28",
+ "fetched": "2026-10-06",
  "search_radius_m": 900,
  "pumps": [
   {
@@ -26,25 +26,140 @@
    "opening_hours": null,
    "petrol": null,
    "diesel": null
+  },
+  {
+   "osm": null,
+   "company_id": "hp-391557",
+   "name": "Hira Petroleum",
+   "brand": "HP",
+   "town": "Palara",
+   "lat": 23.32659,
+   "lon": 69.68931,
+   "km_from_start": 10.3,
+   "off_road_m": 45,
+   "opening_hours": null,
+   "petrol": null,
+   "diesel": null,
+   "source": {
+    "url": "https://petrolpump.hpretail.in/hindustan-petroleum-corporation-limited-m-s-hira-petroleum-petrol-pump-palara-bhuj-391557/Home",
+    "title": "HP locator: Hira Petroleum, Palara",
+    "kind": "official",
+    "opened": true,
+    "source_date": null,
+    "accessed": "2026-10-06"
+   }
+  },
+  {
+   "osm": null,
+   "company_id": "hp-400367",
+   "name": "Jay Shree Chamunda Petroleum",
+   "brand": "HP",
+   "town": "Kunariya",
+   "lat": 23.4002,
+   "lon": 69.6925,
+   "km_from_start": 19.6,
+   "off_road_m": 31,
+   "opening_hours": null,
+   "petrol": null,
+   "diesel": null,
+   "source": {
+    "url": "https://petrolpump.hpretail.in/hindustan-petroleum-corporation-limited-jay-shree-chamunda-petroleum-petrol-pump-kunariya-bhuj-400367/Home",
+    "title": "HP locator: Jay Shree Chamunda Petroleum, Kunariya",
+    "kind": "official",
+    "opened": true,
+    "source_date": null,
+    "accessed": "2026-10-06"
+   }
+  },
+  {
+   "osm": null,
+   "company_id": "iocl-519942",
+   "name": "Jogmaya Petroleum",
+   "brand": "Indian Oil",
+   "town": "Bhuj Taluka",
+   "lat": 23.45009,
+   "lon": 69.66105,
+   "km_from_start": 26.8,
+   "off_road_m": 57,
+   "opening_hours": null,
+   "petrol": null,
+   "diesel": null,
+   "source": {
+    "url": "https://locator.iocl.com/indianoil-jogmaya-petroleum-petrol-pump-bhuj-taluka-bhuj-519942/Home",
+    "title": "IndianOil locator: Jogmaya Petroleum, Bhuj Taluka",
+    "kind": "official",
+    "opened": true,
+    "source_date": null,
+    "accessed": "2026-10-06"
+   }
+  },
+  {
+   "osm": null,
+   "company_id": "hp-391668",
+   "name": "Khavda Petroleum",
+   "brand": "HP",
+   "town": "Khavda",
+   "lat": 23.83689,
+   "lon": 69.73006,
+   "km_from_start": 122.0,
+   "off_road_m": 8,
+   "opening_hours": null,
+   "petrol": null,
+   "diesel": null,
+   "source": {
+    "url": "https://petrolpump.hpretail.in/hindustan-petroleum-corporation-limited-khavda-petroleum-petrol-pump-khavda-kachchh-391668/Home",
+    "title": "HP locator: Khavda Petroleum, Khavda",
+    "kind": "official",
+    "opened": true,
+    "source_date": null,
+    "accessed": "2026-10-06"
+   }
   }
  ],
- "pump_count": 2,
- "stops": 1,
+ "pump_count": 6,
+ "stops": 5,
  "longest_gaps": [
   {
-   "from_km": 1.5,
+   "from_km": 26.8,
+   "to_km": 122.0,
+   "gap_km": 95.2,
+   "from_is": "pump",
+   "to_is": "pump",
+   "near_from": "Bhuj",
+   "near_to": "Khavda"
+  },
+  {
+   "from_km": 122.0,
    "to_km": 180.0,
-   "gap_km": 178.5,
+   "gap_km": 58.0,
    "from_is": "pump",
    "to_is": "end of route",
-   "near_from": "Bhuj",
+   "near_from": "Khavda",
    "near_to": "Dholavira"
   },
   {
-   "from_km": 0.0,
-   "to_km": 0.7,
-   "gap_km": 0.7,
-   "from_is": "start of route",
+   "from_km": 10.3,
+   "to_km": 19.6,
+   "gap_km": 9.3,
+   "from_is": "pump",
+   "to_is": "pump",
+   "near_from": "Bhuj",
+   "near_to": "Bhuj"
+  },
+  {
+   "from_km": 1.5,
+   "to_km": 10.3,
+   "gap_km": 8.8,
+   "from_is": "pump",
+   "to_is": "pump",
+   "near_from": "Bhuj",
+   "near_to": "Bhuj"
+  },
+  {
+   "from_km": 19.6,
+   "to_km": 26.8,
+   "gap_km": 7.2,
+   "from_is": "pump",
    "to_is": "pump",
    "near_from": "Bhuj",
    "near_to": "Bhuj"
@@ -56,5 +171,5 @@
   "licence": "Open Database Licence",
   "url": "https://www.openstreetmap.org/copyright"
  },
- "note": "Pumps are those drawn on the open map within the search radius of the road. A pump missing from the map is missing here, so each gap is a worst case."
+ "note": "Pumps are those drawn on the open map within the search radius of the road, and, where the map has none, those on the oil companies' own locators. A pump missing from both is missing here, so each gap is a worst case."
 }

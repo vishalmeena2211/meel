@@ -2384,23 +2384,44 @@
   ]
  ],
  "fuel": {
-  "listed": false,
-  "pumps": [],
-  "pump_count": 0,
-  "stops": 0,
+  "listed": true,
+  "pumps": [
+   {
+    "id": "fuel:iocl-238399",
+    "name": "Zanskar Filling Station",
+    "brand": "Indian Oil",
+    "near": "Karsha",
+    "km_from_start": 144.6,
+    "off_road_m": 2374,
+    "lat": 33.48094,
+    "lon": 76.85656,
+    "opening_hours": null,
+    "osm_url": null,
+    "source": {
+     "url": "https://locator.iocl.com/indianoil-zanskar-filling-station-petrol-pump-karsha-kargil-238399/Home",
+     "title": "IndianOil locator: Zanskar Filling Station, Karsha",
+     "kind": "official",
+     "opened": true,
+     "source_date": null,
+     "accessed": "2026-10-06"
+    }
+   }
+  ],
+  "pump_count": 1,
+  "stops": 1,
   "longest_gaps": [
    {
     "from_km": 0.0,
     "to_km": 144.6,
     "gap_km": 144.6,
     "from_is": "start of route",
-    "to_is": "end of route",
+    "to_is": "pump",
     "near_from": "Darcha",
     "near_to": "Padum"
    }
   ],
-  "note": "Pumps are those drawn on the open map within the search radius of the road. A pump missing from the map is missing here, so each gap is a worst case.",
-  "fetched": "2026-09-28"
+  "note": "Pumps are those drawn on the open map within the search radius of the road, and, where the map has none, those on the oil companies' own locators. A pump missing from both is missing here, so each gap is a worst case.",
+  "fetched": "2026-10-06"
  },
  "rules": [
   {
@@ -3204,7 +3225,7 @@
   "The first video gives no filming date; it was published on 14 June 2025."
  ],
  "counts": {
-  "facts": 41
+  "facts": 42
  },
- "built": "2026-09-28"
+ "built": "2026-10-06"
 }

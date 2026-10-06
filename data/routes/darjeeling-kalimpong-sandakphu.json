@@ -10958,7 +10958,7 @@
    {
     "id": "fuel:way-1417886025",
     "name": "HP",
-    "brand": "Hindustan Petroleum",
+    "brand": "HP",
     "near": "Siliguri",
     "km_from_start": 1.1,
     "off_road_m": 31,
@@ -11023,7 +11023,7 @@
    {
     "id": "fuel:way-1447364776",
     "name": "HP",
-    "brand": "Hindustan Petroleum",
+    "brand": "HP",
     "near": "Siliguri",
     "km_from_start": 3.6,
     "off_road_m": 53,
@@ -11175,10 +11175,50 @@
     "opening_hours": "Mo-Su 07:00-19:00",
     "osm_url": "https://www.openstreetmap.org/way/352754283",
     "source": null
+   },
+   {
+    "id": "fuel:iocl-232897",
+    "name": "Bishwa Kiran Fuels",
+    "brand": "Indian Oil",
+    "near": "Kalimpong",
+    "km_from_start": 528.0,
+    "off_road_m": 116,
+    "lat": 27.06297,
+    "lon": 88.4472,
+    "opening_hours": null,
+    "osm_url": null,
+    "source": {
+     "url": "https://locator.iocl.com/indianoil-petrol-pump-kalimpong-bishwa-kiran-fuels-petrol-pump-kalimpong-kalimpong-232897/Home",
+     "title": "IndianOil locator: Bishwa Kiran Fuels, Kalimpong",
+     "kind": "official",
+     "opened": true,
+     "source_date": null,
+     "accessed": "2026-10-06"
+    }
+   },
+   {
+    "id": "fuel:hp-410889",
+    "name": "Tashis Service Station",
+    "brand": "HP",
+    "near": "Lower Bridle Road",
+    "km_from_start": 531.7,
+    "off_road_m": 4,
+    "lat": 27.06264,
+    "lon": 88.46163,
+    "opening_hours": null,
+    "osm_url": null,
+    "source": {
+     "url": "https://petrolpump.hpretail.in/hindustan-petroleum-corporation-limited-tashis-service-station-petrol-pump-lower-bridle-road-kalimpong-410889/Home",
+     "title": "HP locator: Tashis Service Station, Lower Bridle Road",
+     "kind": "official",
+     "opened": true,
+     "source_date": null,
+     "accessed": "2026-10-06"
+    }
    }
   ],
-  "pump_count": 17,
-  "stops": 11,
+  "pump_count": 19,
+  "stops": 13,
   "longest_gaps": [
    {
     "from_km": 217.7,
@@ -11209,10 +11249,10 @@
    },
    {
     "from_km": 481.9,
-    "to_km": 533.4,
-    "gap_km": 51.5,
+    "to_km": 528.0,
+    "gap_km": 46.1,
     "from_is": "pump",
-    "to_is": "end of route",
+    "to_is": "pump",
     "near_from": "Darjeeling",
     "near_to": "Kalimpong"
    },
@@ -11226,8 +11266,8 @@
     "near_to": "Darjeeling"
    }
   ],
-  "note": "Pumps are those drawn on the open map within the search radius of the road. A pump missing from the map is missing here, so each gap is a worst case.",
-  "fetched": "2026-09-28"
+  "note": "Pumps are those drawn on the open map within the search radius of the road, and, where the map has none, those on the oil companies' own locators. A pump missing from both is missing here, so each gap is a worst case.",
+  "fetched": "2026-10-06"
  },
  "rules": [
   {
@@ -11526,7 +11566,7 @@
   "Some stretch distances are doubtful. The open map may not know the road riders use, so the routing service went the long way round."
  ],
  "counts": {
-  "facts": 47
+  "facts": 49
  },
- "built": "2026-09-28"
+ "built": "2026-10-06"
 }

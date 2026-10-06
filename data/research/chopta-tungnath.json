@@ -407,5 +407,202 @@
     "No source found on whether the road from Rudraprayag to Ukhimath carries the number NH 107 all the way.",
     "Uttarakhand green cess: the exemption for two-wheelers is reported by two news outlets; no Transport Department order or official page was found.",
     "No rider videos collected; the search budget ran out before this route."
-  ]
+  ],
+  "pumps_from_companies": {
+    "why": "The open map had no pump between Rudraprayag and Gopeshwar, though Tilwara, Kund and Pokhri lie on the way. These are from the oil companies' own locators, IndianOil's (locator.iocl.com) and HP's (petrolpump.hpretail.in), read on 6 October 2026 for the districts the road runs through. A pump within 5 km along the road of one already on the map is left out. Bharat Petroleum's locator did not answer, and other companies' pumps are not added.",
+    "pumps": [
+      {
+        "id": "iocl-238062",
+        "name": "Parvat Filling Stn Srinagar",
+        "brand": "Indian Oil",
+        "town": "Dungripanth",
+        "lat": 30.2179,
+        "lon": 78.76689,
+        "source": {
+          "url": "https://locator.iocl.com/indianoil-parvat-filling-stn-srinagar-petrol-pump-dungripanth-srinagar-238062/Home",
+          "title": "IndianOil locator: Parvat Filling Stn Srinagar, Dungripanth",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "iocl-574356",
+        "name": "Maharishi Agastya Filling Station",
+        "brand": "Indian Oil",
+        "town": "Sandar",
+        "lat": 30.30721,
+        "lon": 78.98076,
+        "source": {
+          "url": "https://locator.iocl.com/indianoil-maharishi-agastya-filling-station-petrol-pump-sandar-rudraprayag-574356/Home",
+          "title": "IndianOil locator: Maharishi Agastya Filling Station, Sandar",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "hp-393482",
+        "name": "Bhagwan Singh Service Station",
+        "brand": "HP",
+        "town": "Tilwara",
+        "lat": 30.34029,
+        "lon": 78.96833,
+        "source": {
+          "url": "https://petrolpump.hpretail.in/hindustan-petroleum-corporation-limited-bhagwan-singh-service-station-petrol-pump-tilwara-rudraprayag-393482/Home",
+          "title": "HP locator: Bhagwan Singh Service Station, Tilwara",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "hp-410805",
+        "name": "Garhwal Motor Owners Union",
+        "brand": "HP",
+        "town": "Sisau",
+        "lat": 30.36611,
+        "lon": 78.99176,
+        "source": {
+          "url": "https://petrolpump.hpretail.in/hindustan-petroleum-corporation-limited-garhwal-motor-owners-union-petrol-pump-sisau-rudraprayag-410805/Home",
+          "title": "HP locator: Garhwal Motor Owners Union, Sisau",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "iocl-238212",
+        "name": "Amar Shaheed Govind Singh",
+        "brand": "Indian Oil",
+        "town": "Serabhardar",
+        "lat": 30.53816,
+        "lon": 79.08344,
+        "source": {
+          "url": "https://locator.iocl.com/indianoil-amar-shaheed-govind-singh-petrol-pump-serabhardar-rudraprayag-238212/Home",
+          "title": "IndianOil locator: Amar Shaheed Govind Singh, Serabhardar",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "iocl-518257",
+        "name": "Kedarnath Filling Station",
+        "brand": "Indian Oil",
+        "town": "Bhainsari",
+        "lat": 30.51358,
+        "lon": 79.07126,
+        "source": {
+          "url": "https://locator.iocl.com/indianoil-kedarnath-filling-station-petrol-pump-bhainsari-rudraprayag-518257/Home",
+          "title": "IndianOil locator: Kedarnath Filling Station, Bhainsari",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "hp-394321",
+        "name": "Chardham Filling Station",
+        "brand": "HP",
+        "town": "Kedarnath Road",
+        "lat": 30.5119,
+        "lon": 79.08558,
+        "source": {
+          "url": "https://petrolpump.hpretail.in/hindustan-petroleum-corporation-limited-chardham-filling-station-petrol-pump-kedarnath-road-rudraprayag-394321/Home",
+          "title": "HP locator: Chardham Filling Station, Kedarnath Road",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "hp-483714",
+        "name": "Madhuganga Filling Station",
+        "brand": "HP",
+        "town": "Kund",
+        "lat": 30.5179,
+        "lon": 79.09222,
+        "source": {
+          "url": "https://petrolpump.hpretail.in/hindustan-petroleum-corporation-limited-madhuganga-filling-station-petrol-pump-kund-rudraprayag-483714/Home",
+          "title": "HP locator: Madhuganga Filling Station, Kund",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "iocl-519244",
+        "name": "Bamnath Filling Station",
+        "brand": "Indian Oil",
+        "town": "Pokhri",
+        "lat": 30.34557,
+        "lon": 79.20172,
+        "source": {
+          "url": "https://locator.iocl.com/indianoil-bamnath-filling-station-petrol-pump-pokhri-chamoli-519244/Home",
+          "title": "IndianOil locator: Bamnath Filling Station, Pokhri",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "hp-420314",
+        "name": "Bartwal Filling Station",
+        "brand": "HP",
+        "town": "Devsthan",
+        "lat": 30.34125,
+        "lon": 79.20652,
+        "source": {
+          "url": "https://petrolpump.hpretail.in/hindustan-petroleum-corporation-limited-ms-hsd-bartwal-filling-station-petrol-pump-devsthan-chamoli-420314/Home",
+          "title": "HP locator: Bartwal Filling Station, Devsthan",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "iocl-237907",
+        "name": "Amar Sd Himmat Singh Negi F St",
+        "brand": "Indian Oil",
+        "town": "Sonla",
+        "lat": 30.3208,
+        "lon": 79.30407,
+        "source": {
+          "url": "https://locator.iocl.com/indianoil-amar-sd-himmat-singh-negi-f-st-petrol-pump-sonla-chamoli-237907/Home",
+          "title": "IndianOil locator: Amar Sd Himmat Singh Negi F St, Sonla",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "iocl-519447",
+        "name": "Maa Chandika Energy Station",
+        "brand": "Indian Oil",
+        "town": "Nandaprayag",
+        "lat": 30.34137,
+        "lon": 79.31736,
+        "source": {
+          "url": "https://locator.iocl.com/indianoil-maa-chandika-energy-station-petrol-pump-nandaprayag-chamoli-519447/Home",
+          "title": "IndianOil locator: Maa Chandika Energy Station, Nandaprayag",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      }
+    ]
+  }
 }

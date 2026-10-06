@@ -2432,7 +2432,7 @@
    },
    {
     "id": "fuel:node-9073525326",
-    "name": "HP petrol pump",
+    "name": "HP",
     "brand": null,
     "near": "Srinagar",
     "km_from_start": 2.5,
@@ -2535,9 +2535,49 @@
     "source": null
    },
    {
+    "id": "fuel:iocl-277811",
+    "name": "Ali Filling Station",
+    "brand": "Indian Oil",
+    "near": "Dangerpora",
+    "km_from_start": 20.1,
+    "off_road_m": 22,
+    "lat": 34.16529,
+    "lon": 74.68878,
+    "opening_hours": null,
+    "osm_url": null,
+    "source": {
+     "url": "https://locator.iocl.com/indianoil-ali-filling-station-petrol-pump-dangerpora-baramulla-277811/Home",
+     "title": "IndianOil locator: Ali Filling Station, Dangerpora",
+     "kind": "official",
+     "opened": true,
+     "source_date": null,
+     "accessed": "2026-10-06"
+    }
+   },
+   {
+    "id": "fuel:iocl-238390",
+    "name": "Mudasir Service Station",
+    "brand": "Indian Oil",
+    "near": "Amchikundal",
+    "km_from_start": 25.1,
+    "off_road_m": 46,
+    "lat": 34.20193,
+    "lon": 74.66315,
+    "opening_hours": null,
+    "osm_url": null,
+    "source": {
+     "url": "https://locator.iocl.com/indianoil-mudasir-service-station-petrol-pump-amchikundal-baramulla-238390/Home",
+     "title": "IndianOil locator: Mudasir Service Station, Amchikundal",
+     "kind": "official",
+     "opened": true,
+     "source_date": null,
+     "accessed": "2026-10-06"
+    }
+   },
+   {
     "id": "fuel:node-4374600090",
     "name": "HP",
-    "brand": "Hindustan Petroleum",
+    "brand": "HP",
     "near": "Bandipora",
     "km_from_start": 35.6,
     "off_road_m": 37,
@@ -2546,6 +2586,106 @@
     "opening_hours": null,
     "osm_url": "https://www.openstreetmap.org/node/4374600090",
     "source": null
+   },
+   {
+    "id": "fuel:iocl-237838",
+    "name": "Shaheen Service Station",
+    "brand": "Indian Oil",
+    "near": "Ajas",
+    "km_from_start": 57.1,
+    "off_road_m": 18,
+    "lat": 34.40174,
+    "lon": 74.65462,
+    "opening_hours": null,
+    "osm_url": null,
+    "source": {
+     "url": "https://locator.iocl.com/indianoil-shaheen-service-station-petrol-pump-ajas-baramulla-237838/Home",
+     "title": "IndianOil locator: Shaheen Service Station, Ajas",
+     "kind": "official",
+     "opened": true,
+     "source_date": null,
+     "accessed": "2026-10-06"
+    }
+   },
+   {
+    "id": "fuel:hp-410958",
+    "name": "Town View Filling Station",
+    "brand": "HP",
+    "near": "Nebripora",
+    "km_from_start": 60.1,
+    "off_road_m": 120,
+    "lat": 34.41182,
+    "lon": 74.64385,
+    "opening_hours": null,
+    "osm_url": null,
+    "source": {
+     "url": "https://petrolpump.hpretail.in/hindustan-petroleum-corporation-limited-town-view-filling-station-petrol-pump-nebripora-baramulla-410958/Home",
+     "title": "HP locator: Town View Filling Station, Nebripora",
+     "kind": "official",
+     "opened": true,
+     "source_date": null,
+     "accessed": "2026-10-06"
+    }
+   },
+   {
+    "id": "fuel:iocl-237879",
+    "name": "Babaji Filling And Service Stn",
+    "brand": "Indian Oil",
+    "near": "Ajas",
+    "km_from_start": 61.6,
+    "off_road_m": 1786,
+    "lat": 34.42935,
+    "lon": 74.61804,
+    "opening_hours": null,
+    "osm_url": null,
+    "source": {
+     "url": "https://locator.iocl.com/indianoil-babaji-filling-and-service-stn-petrol-pump-ajas-baramulla-237879/Home",
+     "title": "IndianOil locator: Babaji Filling And Service Stn, Ajas",
+     "kind": "official",
+     "opened": true,
+     "source_date": null,
+     "accessed": "2026-10-06"
+    }
+   },
+   {
+    "id": "fuel:iocl-237971",
+    "name": "Gareeb Nawaz Filling Station",
+    "brand": "Indian Oil",
+    "near": "Naushera Colony",
+    "km_from_start": 61.6,
+    "off_road_m": 1510,
+    "lat": 34.42419,
+    "lon": 74.61955,
+    "opening_hours": null,
+    "osm_url": null,
+    "source": {
+     "url": "https://locator.iocl.com/indianoil-gareeb-nawaz-filling-station-petrol-pump-naushera-colony-baramulla-237971/Home",
+     "title": "IndianOil locator: Gareeb Nawaz Filling Station, Naushera Colony",
+     "kind": "official",
+     "opened": true,
+     "source_date": null,
+     "accessed": "2026-10-06"
+    }
+   },
+   {
+    "id": "fuel:hp-403346",
+    "name": "Hamara Pump",
+    "brand": "HP",
+    "near": "Kaloosa",
+    "km_from_start": 61.6,
+    "off_road_m": 1481,
+    "lat": 34.42826,
+    "lon": 74.62109,
+    "opening_hours": null,
+    "osm_url": null,
+    "source": {
+     "url": "https://petrolpump.hpretail.in/hindustan-petroleum-corporation-limited-hamara-pump-petrol-pump-kaloosa-baramulla-403346/Home",
+     "title": "HP locator: Hamara Pump, Kaloosa",
+     "kind": "official",
+     "opened": true,
+     "source_date": null,
+     "accessed": "2026-10-06"
+    }
    },
    {
     "id": "fuel:node-9835896166",
@@ -2574,48 +2714,57 @@
     "source": null
    }
   ],
-  "pump_count": 16,
-  "stops": 5,
+  "pump_count": 23,
+  "stops": 9,
   "longest_gaps": [
    {
-    "from_km": 35.6,
+    "from_km": 61.6,
     "to_km": 140.8,
-    "gap_km": 105.2,
+    "gap_km": 79.2,
     "from_is": "pump",
     "to_is": "pump",
     "near_from": "Bandipora",
     "near_to": "Dawar"
    },
    {
-    "from_km": 10.3,
+    "from_km": 35.6,
+    "to_km": 57.1,
+    "gap_km": 21.5,
+    "from_is": "pump",
+    "to_is": "pump",
+    "near_from": "Bandipora",
+    "near_to": "Bandipora"
+   },
+   {
+    "from_km": 25.1,
     "to_km": 35.6,
-    "gap_km": 25.3,
+    "gap_km": 10.5,
     "from_is": "pump",
     "to_is": "pump",
     "near_from": "Srinagar",
     "near_to": "Bandipora"
    },
    {
-    "from_km": 0.1,
-    "to_km": 2.5,
-    "gap_km": 2.4,
+    "from_km": 10.3,
+    "to_km": 20.1,
+    "gap_km": 9.8,
     "from_is": "pump",
     "to_is": "pump",
     "near_from": "Srinagar",
     "near_to": "Srinagar"
    },
    {
-    "from_km": 6.3,
-    "to_km": 8.6,
-    "gap_km": 2.3,
+    "from_km": 20.1,
+    "to_km": 25.1,
+    "gap_km": 5.0,
     "from_is": "pump",
     "to_is": "pump",
     "near_from": "Srinagar",
     "near_to": "Srinagar"
    }
   ],
-  "note": "Pumps are those drawn on the open map within the search radius of the road. A pump missing from the map is missing here, so each gap is a worst case.",
-  "fetched": "2026-09-28"
+  "note": "Pumps are those drawn on the open map within the search radius of the road, and, where the map has none, those on the oil companies' own locators. A pump missing from both is missing here, so each gap is a worst case.",
+  "fetched": "2026-10-06"
  },
  "rules": [
   {
@@ -3173,7 +3322,7 @@
   "Only one rider video could be checked; a second, on crossing Razdan Pass in April 2025, could not be read."
  ],
  "counts": {
-  "facts": 50
+  "facts": 57
  },
- "built": "2026-09-28"
+ "built": "2026-10-06"
 }

@@ -6353,8 +6353,8 @@
    },
    {
     "id": "fuel:node-6093122438",
-    "name": "Hindustan Petroleum",
-    "brand": "Hindustan Petroleum",
+    "name": "HP",
+    "brand": "HP",
     "near": "Guwahati",
     "km_from_start": 30.2,
     "off_road_m": 34,
@@ -6590,8 +6590,8 @@
    },
    {
     "id": "fuel:node-6096300648",
-    "name": "Hindustan Petroleum",
-    "brand": "Hindustan Petroleum",
+    "name": "HP",
+    "brand": "HP",
     "near": "Tezpur",
     "km_from_start": 161.3,
     "off_road_m": 23,
@@ -6917,7 +6917,7 @@
     "near_to": "Bhalukpong"
    }
   ],
-  "note": "Pumps are those drawn on the open map within the search radius of the road, and, where the map has none, those on the oil company's own locator. A pump missing from both is missing here, so each gap is a worst case.",
+  "note": "Pumps are those drawn on the open map within the search radius of the road, and, where the map has none, those on the oil companies' own locators. A pump missing from both is missing here, so each gap is a worst case.",
   "fetched": "2026-09-28"
  },
  "rules": [
@@ -7397,5 +7397,5 @@
  "counts": {
   "facts": 82
  },
- "built": "2026-09-28"
+ "built": "2026-10-06"
 }

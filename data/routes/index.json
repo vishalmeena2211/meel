@@ -1,5 +1,5 @@
 {
- "built": "2026-09-28",
+ "built": "2026-10-06",
  "regions": [
   {
    "id": "ladakh",
@@ -81,7 +81,7 @@
     "Leh"
    ],
    "distance_km": 434.1,
-   "facts": 77,
+   "facts": 79,
    "highest_m": 5328,
    "image": "manali-leh-small.jpg",
    "has_line": true
@@ -110,7 +110,7 @@
     "Leh"
    ],
    "distance_km": 421.1,
-   "facts": 80,
+   "facts": 84,
    "highest_m": 4108,
    "image": "srinagar-leh-small.jpg",
    "has_line": true
@@ -134,7 +134,7 @@
     "Turtuk"
    ],
    "distance_km": 205.5,
-   "facts": 43,
+   "facts": 44,
    "highest_m": 5359,
    "image": "nubra-turtuk-small.jpg",
    "has_line": true
@@ -164,7 +164,7 @@
     "Upshi"
    ],
    "distance_km": 767.6,
-   "facts": 64,
+   "facts": 68,
    "highest_m": 5360,
    "image": "pangong-hanle-tso-moriri-small.jpg",
    "has_line": true
@@ -206,7 +206,7 @@
     "Padum"
    ],
    "distance_km": 144.6,
-   "facts": 41,
+   "facts": 42,
    "highest_m": 5091,
    "image": "darcha-shinku-la-padum-small.jpg",
    "has_line": true
@@ -273,7 +273,7 @@
     "Dawar"
    ],
    "distance_km": 140.8,
-   "facts": 50,
+   "facts": 57,
    "highest_m": 3556,
    "image": "gurez-valley-small.jpg",
    "has_line": true
@@ -295,7 +295,7 @@
     "Rajouri"
    ],
    "distance_km": 175.0,
-   "facts": 42,
+   "facts": 71,
    "highest_m": 3500,
    "image": "mughal-road-small.jpg",
    "has_line": true
@@ -325,7 +325,7 @@
     "Manali"
    ],
    "distance_km": 615.5,
-   "facts": 81,
+   "facts": 90,
    "highest_m": 4551,
    "image": "spiti-circuit-small.jpg",
    "has_line": true
@@ -348,7 +348,7 @@
     "Kalpa"
    ],
    "distance_km": 228.8,
-   "facts": 39,
+   "facts": 41,
    "highest_m": 3450,
    "image": "kinnaur-small.jpg",
    "has_line": true
@@ -371,7 +371,7 @@
     "Kishtwar"
    ],
    "distance_km": 356.4,
-   "facts": 41,
+   "facts": 50,
    "highest_m": 4414,
    "image": "sach-pass-pangi-small.jpg",
    "has_line": true
@@ -467,7 +467,7 @@
     "Mana"
    ],
    "distance_km": 1057.0,
-   "facts": 100,
+   "facts": 118,
    "highest_m": 3200,
    "image": "char-dham-small.jpg",
    "has_line": true
@@ -490,7 +490,7 @@
     "Gopeshwar"
    ],
    "distance_km": 358.9,
-   "facts": 45,
+   "facts": 57,
    "highest_m": 2608,
    "image": "chopta-tungnath-small.jpg",
    "has_line": true
@@ -515,7 +515,7 @@
     "Munsiyari"
    ],
    "distance_km": 558.2,
-   "facts": 33,
+   "facts": 50,
    "highest_m": 2896,
    "image": "munsiyari-kumaon-small.jpg",
    "has_line": true
@@ -538,7 +538,7 @@
     "Jolingkong"
    ],
    "distance_km": 355.7,
-   "facts": 34,
+   "facts": 44,
    "highest_m": 4572,
    "image": "adi-kailash-om-parvat-small.jpg",
    "has_line": true
@@ -560,7 +560,7 @@
     "Chakrata"
    ],
    "distance_km": 167.2,
-   "facts": 32,
+   "facts": 35,
    "highest_m": 2286,
    "image": "mussoorie-dhanaulti-chakrata-small.jpg",
    "has_line": true
@@ -631,7 +631,7 @@
     "Kalimpong"
    ],
    "distance_km": 533.4,
-   "facts": 47,
+   "facts": 49,
    "highest_m": 3636,
    "image": "darjeeling-kalimpong-sandakphu-small.jpg",
    "has_line": true
@@ -725,7 +725,7 @@
     "Mon"
    ],
    "distance_km": 443.9,
-   "facts": 65,
+   "facts": 84,
    "highest_m": 1662,
    "image": "nagaland-small.jpg",
    "has_line": true
@@ -747,7 +747,7 @@
     "Kamalabari"
    ],
    "distance_km": 333.4,
-   "facts": 59,
+   "facts": 84,
    "highest_m": 152,
    "image": "assam-kaziranga-majuli-small.jpg",
    "has_line": true
@@ -768,7 +768,7 @@
     "Champhai"
    ],
    "distance_km": 609.4,
-   "facts": 32,
+   "facts": 50,
    "highest_m": 1542,
    "image": "manipur-mizoram-small.jpg",
    "has_line": true
@@ -839,7 +839,7 @@
     "Longewala"
    ],
    "distance_km": 937.8,
-   "facts": 106,
+   "facts": 115,
    "highest_m": 504,
    "image": "rajasthan-desert-small.jpg",
    "has_line": true
@@ -881,7 +881,7 @@
     "Dholavira"
    ],
    "distance_km": 180.0,
-   "facts": 23,
+   "facts": 27,
    "highest_m": 462,
    "image": "rann-of-kutch-small.jpg",
    "has_line": true
@@ -908,7 +908,7 @@
     "Panaji"
    ],
    "distance_km": 673.1,
-   "facts": 93,
+   "facts": 121,
    "highest_m": 235,
    "image": "konkan-coast-small.jpg",
    "has_line": true
@@ -979,7 +979,7 @@
     "Gwalior"
    ],
    "distance_km": 935.4,
-   "facts": 96,
+   "facts": 125,
    "highest_m": 1352,
    "image": "madhya-pradesh-small.jpg",
    "has_line": true
@@ -1002,7 +1002,7 @@
     "Tirathgarh Falls"
    ],
    "distance_km": 393.1,
-   "facts": 37,
+   "facts": 78,
    "highest_m": 666,
    "image": "chhattisgarh-bastar-small.jpg",
    "has_line": true
@@ -1164,7 +1164,7 @@
     "Kodaikanal"
    ],
    "distance_km": 618.7,
-   "facts": 113,
+   "facts": 115,
    "highest_m": 2225,
    "image": "tamil-nadu-hill-roads-small.jpg",
    "has_line": true

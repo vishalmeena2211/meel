@@ -301,5 +301,762 @@
     "Whether the Pene to Tato widening met its March 2026 target was not checked.",
     "Protected Area Permit details for foreign citizens not found on an official page.",
     "Videos not collected."
-  ]
+  ],
+  "pumps_from_companies": {
+    "why": "The open map had only a handful of pumps on this route, though Ziro, Daporijo, Aalo, Pasighat, Roing and Tezu are district towns. Neither locator lists a pump between Aalo and Mechuka or between Roing and Anini, so those gaps stay. These are from the oil companies' own locators, IndianOil's (locator.iocl.com) and HP's (petrolpump.hpretail.in), read on 6 October 2026 for the districts the road runs through. A pump within 5 km along the road of one already on the map is left out. Bharat Petroleum's locator did not answer, and other companies' pumps are not added.",
+    "pumps": [
+      {
+        "id": "iocl-519425",
+        "name": "Ry Filling Station",
+        "brand": "Indian Oil",
+        "town": "Yachuli Adc",
+        "lat": 27.54565,
+        "lon": 93.79979,
+        "source": {
+          "url": "https://locator.iocl.com/indianoil-ry-filling-station-petrol-pump-yachuli-adc-lower-subansiri-519425/Home",
+          "title": "IndianOil locator: Ry Filling Station, Yachuli Adc",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "iocl-237856",
+        "name": "Arunachl Prad Coop Mkt Sup Fed",
+        "brand": "Indian Oil",
+        "town": "Boasimla",
+        "lat": 27.54394,
+        "lon": 93.81176,
+        "source": {
+          "url": "https://locator.iocl.com/indianoil-arunachl-prad-coop-mkt-sup-fed-petrol-pump-boasimla-lower-subansiri-237856/Home",
+          "title": "IndianOil locator: Arunachl Prad Coop Mkt Sup Fed, Boasimla",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "iocl-564219",
+        "name": "S Y Fuel Junction",
+        "brand": "Indian Oil",
+        "town": "Ziro Circle",
+        "lat": 27.54345,
+        "lon": 93.81515,
+        "source": {
+          "url": "https://locator.iocl.com/indianoil-s-y-fuel-junction-petrol-pump-ziro-circle-lower-subansiri-564219/Home",
+          "title": "IndianOil locator: S Y Fuel Junction, Ziro Circle",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "hp-403621",
+        "name": "Dilang Pengu Filling Station",
+        "brand": "HP",
+        "town": "Ziro",
+        "lat": 27.57534,
+        "lon": 93.83246,
+        "source": {
+          "url": "https://petrolpump.hpretail.in/hindustan-petroleum-corporation-limited-dilang-pengu-filling-station-petrol-pump-ziro-lower-subansiri-403621/Home",
+          "title": "HP locator: Dilang Pengu Filling Station, Ziro",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "iocl-238919",
+        "name": "Madokoto Auto Agency",
+        "brand": "Indian Oil",
+        "town": "Boasimla",
+        "lat": 27.72726,
+        "lon": 93.96912,
+        "source": {
+          "url": "https://locator.iocl.com/indianoil-madokoto-auto-agency-petrol-pump-boasimla-lower-subansiri-238919/Home",
+          "title": "IndianOil locator: Madokoto Auto Agency, Boasimla",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "hp-425314",
+        "name": "M Tania Refilling Station",
+        "brand": "HP",
+        "town": "Raga",
+        "lat": 27.7903,
+        "lon": 94.07437,
+        "source": {
+          "url": "https://petrolpump.hpretail.in/hindustan-petroleum-corporation-limited-m-tania-refilling-station-petrol-pump-raga-lower-subansiri-425314/Home",
+          "title": "HP locator: M Tania Refilling Station, Raga",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "iocl-237858",
+        "name": "Keshi Filling Station",
+        "brand": "Indian Oil",
+        "town": "Boasimla",
+        "lat": 27.79797,
+        "lon": 94.0711,
+        "source": {
+          "url": "https://locator.iocl.com/indianoil-keshi-filling-station-petrol-pump-boasimla-lower-subansiri-237858/Home",
+          "title": "IndianOil locator: Keshi Filling Station, Boasimla",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "hp-425592",
+        "name": "Rlm Hp",
+        "brand": "HP",
+        "town": "Daporijo",
+        "lat": 27.97972,
+        "lon": 94.23361,
+        "source": {
+          "url": "https://petrolpump.hpretail.in/hindustan-petroleum-corporation-limited-m-s-rlm-hp-petrol-pump-daporijo-upper-subansiri-425592/Home",
+          "title": "HP locator: Rlm Hp, Daporijo",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "iocl-238069",
+        "name": "Tatuk Ligu Filling Station",
+        "brand": "Indian Oil",
+        "town": "Daporijo",
+        "lat": 27.9797,
+        "lon": 94.22396,
+        "source": {
+          "url": "https://locator.iocl.com/indianoil-tatuk-ligu-filling-station-petrol-pump-daporijo-upper-subansiri-238069/Home",
+          "title": "IndianOil locator: Tatuk Ligu Filling Station, Daporijo",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "iocl-239166",
+        "name": "Rijo Auto Agency",
+        "brand": "Indian Oil",
+        "town": "Daporijo",
+        "lat": 27.98452,
+        "lon": 94.21709,
+        "source": {
+          "url": "https://locator.iocl.com/indianoil-rijo-auto-agency-petrol-pump-daporijo-upper-subansiri-239166/Home",
+          "title": "IndianOil locator: Rijo Auto Agency, Daporijo",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "iocl-519765",
+        "name": "Kamda Brothers Filling Station",
+        "brand": "Indian Oil",
+        "town": "Daporijo",
+        "lat": 27.99133,
+        "lon": 94.22077,
+        "source": {
+          "url": "https://locator.iocl.com/indianoil-kamda-brothers-filling-station-petrol-pump-daporijo-upper-subansiri-519765/Home",
+          "title": "IndianOil locator: Kamda Brothers Filling Station, Daporijo",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "iocl-239115",
+        "name": "Sapak Auto Agency",
+        "brand": "Indian Oil",
+        "town": "Daporijo",
+        "lat": 27.98293,
+        "lon": 94.27049,
+        "source": {
+          "url": "https://locator.iocl.com/indianoil-sapak-auto-agency-petrol-pump-daporijo-upper-subansiri-239115/Home",
+          "title": "IndianOil locator: Sapak Auto Agency, Daporijo",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "iocl-238923",
+        "name": "Maro Filling Station",
+        "brand": "Indian Oil",
+        "town": "Daporijo",
+        "lat": 27.98667,
+        "lon": 94.41417,
+        "source": {
+          "url": "https://locator.iocl.com/indianoil-maro-filling-station-petrol-pump-daporijo-upper-subansiri-238923/Home",
+          "title": "IndianOil locator: Maro Filling Station, Daporijo",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "iocl-564236",
+        "name": "K&T Filling Station",
+        "brand": "Indian Oil",
+        "town": "Leparada",
+        "lat": 28.02733,
+        "lon": 94.57214,
+        "source": {
+          "url": "https://locator.iocl.com/indianoil-k-t-filling-station-petrol-pump-leparada-west-siang-564236/Home",
+          "title": "IndianOil locator: K&T Filling Station, Leparada",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "hp-490587",
+        "name": "Shankara Refill Station",
+        "brand": "HP",
+        "town": "Tirbin",
+        "lat": 28.02103,
+        "lon": 94.57969,
+        "source": {
+          "url": "https://petrolpump.hpretail.in/hindustan-petroleum-corporation-limited-shankara-refill-station-petrol-pump-tirbin-west-siang-490587/Home",
+          "title": "HP locator: Shankara Refill Station, Tirbin",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "iocl-237797",
+        "name": "MS Bam T N Automobile Services",
+        "brand": "Indian Oil",
+        "town": "Bame",
+        "lat": 28.03199,
+        "lon": 94.6783,
+        "source": {
+          "url": "https://locator.iocl.com/indianoil-ms-bam-t-n-automobile-services-petrol-pump-bame-west-siang-237797/Home",
+          "title": "IndianOil locator: MS Bam T N Automobile Services, Bame",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "iocl-238234",
+        "name": "Kemy Automobiles Service",
+        "brand": "Indian Oil",
+        "town": "Along",
+        "lat": 28.15708,
+        "lon": 94.78987,
+        "source": {
+          "url": "https://locator.iocl.com/indianoil-kemy-automobiles-service-petrol-pump-along-west-siang-238234/Home",
+          "title": "IndianOil locator: Kemy Automobiles Service, Along",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "iocl-238149",
+        "name": "Siang Oil Service Station",
+        "brand": "Indian Oil",
+        "town": "Along",
+        "lat": 28.15923,
+        "lon": 94.79111,
+        "source": {
+          "url": "https://locator.iocl.com/indianoil-siang-oil-service-station-petrol-pump-along-west-siang-238149/Home",
+          "title": "IndianOil locator: Siang Oil Service Station, Along",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "iocl-239273",
+        "name": "Jehovah Jireh",
+        "brand": "Indian Oil",
+        "town": "Along",
+        "lat": 28.17621,
+        "lon": 94.78098,
+        "source": {
+          "url": "https://locator.iocl.com/indianoil-jehovah-jireh-petrol-pump-along-west-siang-239273/Home",
+          "title": "IndianOil locator: Jehovah Jireh, Along",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "iocl-238459",
+        "name": "Mechuka Energy Station",
+        "brand": "Indian Oil",
+        "town": "Kumari Kachari",
+        "lat": 28.59968,
+        "lon": 94.1329,
+        "source": {
+          "url": "https://locator.iocl.com/indianoil-mechuka-energy-station-petrol-pump-kumari-kachari-lohit-238459/Home",
+          "title": "IndianOil locator: Mechuka Energy Station, Kumari Kachari",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "iocl-564207",
+        "name": "Bkl Filling Station",
+        "brand": "Indian Oil",
+        "town": "Kamba Circle",
+        "lat": 28.27193,
+        "lon": 94.67698,
+        "source": {
+          "url": "https://locator.iocl.com/indianoil-bkl-filling-station-petrol-pump-kamba-circle-west-siang-564207/Home",
+          "title": "IndianOil locator: Bkl Filling Station, Kamba Circle",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "iocl-237834",
+        "name": "Kamba Hirik Hiru Energy Station",
+        "brand": "Indian Oil",
+        "town": "Along",
+        "lat": 28.25468,
+        "lon": 94.68211,
+        "source": {
+          "url": "https://locator.iocl.com/indianoil-kamba-hirik-hiru-energy-station-petrol-pump-along-west-siang-237834/Home",
+          "title": "IndianOil locator: Kamba Hirik Hiru Energy Station, Along",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "iocl-238343",
+        "name": "Kenggam Filling Station",
+        "brand": "Indian Oil",
+        "town": "Along",
+        "lat": 28.16906,
+        "lon": 94.79486,
+        "source": {
+          "url": "https://locator.iocl.com/indianoil-kenggam-filling-station-petrol-pump-along-west-siang-238343/Home",
+          "title": "IndianOil locator: Kenggam Filling Station, Along",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "iocl-564217",
+        "name": "Ngomdir Filling Station",
+        "brand": "Indian Oil",
+        "town": "Aalo",
+        "lat": 28.17447,
+        "lon": 94.80648,
+        "source": {
+          "url": "https://locator.iocl.com/indianoil-ngomdir-filling-station-petrol-pump-aalo-west-siang-564217/Home",
+          "title": "IndianOil locator: Ngomdir Filling Station, Aalo",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "iocl-238068",
+        "name": "Yomgo Automobiles Services",
+        "brand": "Indian Oil",
+        "town": "Along",
+        "lat": 28.17795,
+        "lon": 94.80524,
+        "source": {
+          "url": "https://locator.iocl.com/indianoil-yomgo-automobiles-services-petrol-pump-along-west-siang-238068/Home",
+          "title": "IndianOil locator: Yomgo Automobiles Services, Along",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "iocl-238347",
+        "name": "Mani Aabing Automobiles",
+        "brand": "Indian Oil",
+        "town": "Adipasi",
+        "lat": 28.21419,
+        "lon": 94.99153,
+        "source": {
+          "url": "https://locator.iocl.com/indianoil-mani-aabing-automobiles-petrol-pump-adipasi-east-siang-238347/Home",
+          "title": "IndianOil locator: Mani Aabing Automobiles, Adipasi",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "hp-416979",
+        "name": "Olak Perme",
+        "brand": "HP",
+        "town": "Mebo",
+        "lat": 28.12431,
+        "lon": 95.29179,
+        "source": {
+          "url": "https://petrolpump.hpretail.in/hindustan-petroleum-corporation-limited-olak-perme-petrol-pump-mebo-east-siang-416979/Home",
+          "title": "HP locator: Olak Perme, Mebo",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "iocl-239066",
+        "name": "Mrs Mamang Borang",
+        "brand": "Indian Oil",
+        "town": "Adipasi",
+        "lat": 28.05774,
+        "lon": 95.33128,
+        "source": {
+          "url": "https://locator.iocl.com/indianoil-mrs-mamang-borang-petrol-pump-adipasi-east-siang-239066/Home",
+          "title": "IndianOil locator: Mrs Mamang Borang, Adipasi",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "iocl-564250",
+        "name": "Orin Filling Station",
+        "brand": "Indian Oil",
+        "town": "Saw Mill Area",
+        "lat": 28.0551,
+        "lon": 95.33122,
+        "source": {
+          "url": "https://locator.iocl.com/indianoil-orin-filling-station-petrol-pump-saw-mill-area-east-siang-564250/Home",
+          "title": "IndianOil locator: Orin Filling Station, Saw Mill Area",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "iocl-238236",
+        "name": "Pasighat Service Station",
+        "brand": "Indian Oil",
+        "town": "Adipasi",
+        "lat": 28.04546,
+        "lon": 95.33163,
+        "source": {
+          "url": "https://locator.iocl.com/indianoil-pasighat-service-station-petrol-pump-adipasi-east-siang-238236/Home",
+          "title": "IndianOil locator: Pasighat Service Station, Adipasi",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "iocl-238783",
+        "name": "Debbi Filling Station",
+        "brand": "Indian Oil",
+        "town": "Adipasi",
+        "lat": 28.06276,
+        "lon": 95.32076,
+        "source": {
+          "url": "https://locator.iocl.com/indianoil-debbi-filling-station-petrol-pump-adipasi-east-siang-238783/Home",
+          "title": "IndianOil locator: Debbi Filling Station, Adipasi",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "iocl-238238",
+        "name": "Ayeng Pt Filling Station",
+        "brand": "Indian Oil",
+        "town": "Adipasi",
+        "lat": 28.14586,
+        "lon": 95.35586,
+        "source": {
+          "url": "https://locator.iocl.com/indianoil-ayeng-pt-filling-station-petrol-pump-adipasi-east-siang-238238/Home",
+          "title": "IndianOil locator: Ayeng Pt Filling Station, Adipasi",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "iocl-239163",
+        "name": "Mebo Automobiles",
+        "brand": "Indian Oil",
+        "town": "Ayeng",
+        "lat": 28.1636,
+        "lon": 95.4072,
+        "source": {
+          "url": "https://locator.iocl.com/indianoil-mebo-automobiles-petrol-pump-ayeng-east-siang-239163/Home",
+          "title": "IndianOil locator: Mebo Automobiles, Ayeng",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "iocl-238465",
+        "name": "Dambuk Service Station",
+        "brand": "Indian Oil",
+        "town": "Abango",
+        "lat": 28.27222,
+        "lon": 95.61479,
+        "source": {
+          "url": "https://locator.iocl.com/indianoil-dambuk-service-station-petrol-pump-abango-lower-dibang-valley-238465/Home",
+          "title": "IndianOil locator: Dambuk Service Station, Abango",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "iocl-519785",
+        "name": "Apum Filling Station",
+        "brand": "Indian Oil",
+        "town": "Xindika",
+        "lat": 28.27055,
+        "lon": 95.63135,
+        "source": {
+          "url": "https://locator.iocl.com/indianoil-apum-filling-station-petrol-pump-xindika-lower-dibang-valley-519785/Home",
+          "title": "IndianOil locator: Apum Filling Station, Xindika",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "hp-420391",
+        "name": "Midland Filling Agency",
+        "brand": "HP",
+        "town": "Midland",
+        "lat": 28.12947,
+        "lon": 95.83623,
+        "source": {
+          "url": "https://petrolpump.hpretail.in/hindustan-petroleum-corporation-limited-midland-filling-agency-petrol-pump-midland-lower-dibang-valley-420391/Home",
+          "title": "HP locator: Midland Filling Agency, Midland",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "iocl-238342",
+        "name": "Patchup Filling Station",
+        "brand": "Indian Oil",
+        "town": "Abango",
+        "lat": 28.13967,
+        "lon": 95.84374,
+        "source": {
+          "url": "https://locator.iocl.com/indianoil-patchup-filling-station-petrol-pump-abango-lower-dibang-valley-238342/Home",
+          "title": "IndianOil locator: Patchup Filling Station, Abango",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "iocl-238779",
+        "name": "Anini Filling Station",
+        "brand": "Indian Oil",
+        "town": "Alinye",
+        "lat": 28.79178,
+        "lon": 95.8975,
+        "source": {
+          "url": "https://locator.iocl.com/indianoil-anini-filling-station-petrol-pump-alinye-dibang-valley-238779/Home",
+          "title": "IndianOil locator: Anini Filling Station, Alinye",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "iocl-239006",
+        "name": "Dibang Fuel Station",
+        "brand": "Indian Oil",
+        "town": "Alinye",
+        "lat": 28.7982,
+        "lon": 95.90055,
+        "source": {
+          "url": "https://locator.iocl.com/indianoil-dibang-fuel-station-petrol-pump-alinye-dibang-valley-239006/Home",
+          "title": "IndianOil locator: Dibang Fuel Station, Alinye",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "iocl-278792",
+        "name": "Kabang Gamno Energy Station",
+        "brand": "Indian Oil",
+        "town": "Miuli Ati Mayudia",
+        "lat": 28.18987,
+        "lon": 95.80347,
+        "source": {
+          "url": "https://locator.iocl.com/indianoil-kabang-gamno-energy-station-petrol-pump-miuli-ati-mayudia-lower-dibang-valley-278792/Home",
+          "title": "IndianOil locator: Kabang Gamno Energy Station, Miuli Ati Mayudia",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "iocl-238341",
+        "name": "Mayudia Filling Station",
+        "brand": "Indian Oil",
+        "town": "Abango",
+        "lat": 28.11863,
+        "lon": 95.82345,
+        "source": {
+          "url": "https://locator.iocl.com/indianoil-mayudia-filling-station-petrol-pump-abango-lower-dibang-valley-238341/Home",
+          "title": "IndianOil locator: Mayudia Filling Station, Abango",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "iocl-564209",
+        "name": "Pulu Filling Station",
+        "brand": "Indian Oil",
+        "town": "Roing",
+        "lat": 28.06065,
+        "lon": 95.9292,
+        "source": {
+          "url": "https://locator.iocl.com/indianoil-pulu-filling-station-petrol-pump-roing-lower-dibang-valley-564209/Home",
+          "title": "IndianOil locator: Pulu Filling Station, Roing",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "hp-390955",
+        "name": "Kos Filling Station",
+        "brand": "HP",
+        "town": "Danglat",
+        "lat": 27.91048,
+        "lon": 96.08802,
+        "source": {
+          "url": "https://petrolpump.hpretail.in/hindustan-petroleum-corporation-limited-m-s-kos-filling-station-petrol-pump-danglat-lohit-390955/Home",
+          "title": "HP locator: Kos Filling Station, Danglat",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "hp-403334",
+        "name": "HP Tezu Service Station",
+        "brand": "HP",
+        "town": "Telluliang",
+        "lat": 27.92694,
+        "lon": 96.15583,
+        "source": {
+          "url": "https://petrolpump.hpretail.in/hindustan-petroleum-corporation-limited-m-s-hp-tezu-service-station-petrol-pump-telluliang-lohit-403334/Home",
+          "title": "HP locator: HP Tezu Service Station, Telluliang",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "iocl-239250",
+        "name": "Lohit Agencies",
+        "brand": "Indian Oil",
+        "town": "Changliang",
+        "lat": 27.92603,
+        "lon": 96.1589,
+        "source": {
+          "url": "https://locator.iocl.com/indianoil-lohit-agencies-petrol-pump-changliang-lohit-239250/Home",
+          "title": "IndianOil locator: Lohit Agencies, Changliang",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "iocl-564257",
+        "name": "Drufu Filling Station",
+        "brand": "Indian Oil",
+        "town": "Khoraliang Village",
+        "lat": 27.91796,
+        "lon": 96.18539,
+        "source": {
+          "url": "https://locator.iocl.com/indianoil-drufu-filling-station-petrol-pump-khoraliang-village-lohit-564257/Home",
+          "title": "IndianOil locator: Drufu Filling Station, Khoraliang Village",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "iocl-239251",
+        "name": "Tello Agencies",
+        "brand": "Indian Oil",
+        "town": "Alubari",
+        "lat": 28.06525,
+        "lon": 96.49218,
+        "source": {
+          "url": "https://locator.iocl.com/indianoil-tello-agencies-petrol-pump-alubari-lohit-239251/Home",
+          "title": "IndianOil locator: Tello Agencies, Alubari",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      }
+    ]
+  }
 }

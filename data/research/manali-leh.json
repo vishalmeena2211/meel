@@ -1197,5 +1197,42 @@
     "Usual days is taken from an encyclopedia line that the trip normally needs one overnight halt; riders often take longer.",
     "Whether motorcycles need an extra undertaking from the Manali magistrate's office for Rohtang appears in search results only and was not confirmed.",
     "Video filming dates are not stated on the pages; they were published on 16 June 2025 and 3 March 2026."
-  ]
+  ],
+  "pumps_from_companies": {
+    "why": "The open map had no pump at Sissu. Neither locator lists a pump between Keylong and Karu, so that gap stays. These are from the oil companies' own locators, IndianOil's (locator.iocl.com) and HP's (petrolpump.hpretail.in), read on 6 October 2026 for the districts the road runs through. A pump within 5 km along the road of one already on the map is left out. Bharat Petroleum's locator did not answer, and other companies' pumps are not added.",
+    "pumps": [
+      {
+        "id": "iocl-278095",
+        "name": "The Lahoul Potato Growers Sissu",
+        "brand": "Indian Oil",
+        "town": "Sissu",
+        "lat": 32.48347,
+        "lon": 77.11329,
+        "source": {
+          "url": "https://locator.iocl.com/indianoil-the-lahoul-potato-growers-sissu-petrol-pump-sissu-lahul-spiti-278095/Home",
+          "title": "IndianOil locator: The Lahoul Potato Growers Sissu, Sissu",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "iocl-519696",
+        "name": "Thiksey Filling Station",
+        "brand": "Indian Oil",
+        "town": "Choglamsar",
+        "lat": 34.05294,
+        "lon": 77.66489,
+        "source": {
+          "url": "https://locator.iocl.com/indianoil-thiksey-filling-station-petrol-pump-choglamsar-leh-519696/Home",
+          "title": "IndianOil locator: Thiksey Filling Station, Choglamsar",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      }
+    ]
+  }
 }

@@ -1881,7 +1881,7 @@
    {
     "id": "fuel:node-3083894933",
     "name": "HP",
-    "brand": "Hindustan Petroleum",
+    "brand": "HP",
     "near": "Jaipur",
     "km_from_start": 0.3,
     "off_road_m": 75,
@@ -1894,7 +1894,7 @@
    {
     "id": "fuel:way-375202964",
     "name": "HP",
-    "brand": "Hindustan Petroleum",
+    "brand": "HP",
     "near": "Jaipur",
     "km_from_start": 0.3,
     "off_road_m": 132,
@@ -1920,7 +1920,7 @@
    {
     "id": "fuel:node-3677353031",
     "name": "HP",
-    "brand": "Hindustan Petroleum",
+    "brand": "HP",
     "near": "Jaipur",
     "km_from_start": 1.8,
     "off_road_m": 286,
@@ -1933,7 +1933,7 @@
    {
     "id": "fuel:node-10936787897",
     "name": "HP",
-    "brand": "Hindustan Petroleum",
+    "brand": "HP",
     "near": "Jaipur",
     "km_from_start": 1.9,
     "off_road_m": 233,
@@ -1959,7 +1959,7 @@
    {
     "id": "fuel:way-862568917",
     "name": "MS HSD Auto Care Center",
-    "brand": "Hindustan Petroleum",
+    "brand": "HP",
     "near": "Jaipur",
     "km_from_start": 3.9,
     "off_road_m": 3,
@@ -1972,7 +1972,7 @@
    {
     "id": "fuel:node-2690970281",
     "name": "HP",
-    "brand": "Hindustan Petroleum",
+    "brand": "HP",
     "near": "Jaipur",
     "km_from_start": 4.0,
     "off_road_m": 1140,
@@ -1998,7 +1998,7 @@
    {
     "id": "fuel:way-263480573",
     "name": "HP",
-    "brand": "Hindustan Petroleum",
+    "brand": "HP",
     "near": "Jaipur",
     "km_from_start": 4.0,
     "off_road_m": 1196,
@@ -2141,7 +2141,7 @@
    {
     "id": "fuel:node-6968230712",
     "name": "HP",
-    "brand": "Hindustan Petroleum",
+    "brand": "HP",
     "near": "Jaipur",
     "km_from_start": 6.0,
     "off_road_m": 3,
@@ -2154,7 +2154,7 @@
    {
     "id": "fuel:node-6968230709",
     "name": "HP - GURU JAMBESHWAR PETRO SERVICES",
-    "brand": "Hindustan Petroleum",
+    "brand": "HP",
     "near": "Jaipur",
     "km_from_start": 7.3,
     "off_road_m": 950,
@@ -2167,7 +2167,7 @@
    {
     "id": "fuel:node-6968230711",
     "name": "HP",
-    "brand": "Hindustan Petroleum",
+    "brand": "HP",
     "near": "Jaipur",
     "km_from_start": 7.7,
     "off_road_m": 40,
@@ -2332,6 +2332,106 @@
     "opening_hours": null,
     "osm_url": "https://www.openstreetmap.org/node/7030319496",
     "source": null
+   },
+   {
+    "id": "fuel:hp-410227",
+    "name": "Shanti Saini Filling Station",
+    "brand": "HP",
+    "near": "Nayanagar",
+    "km_from_start": 187.9,
+    "off_road_m": 67,
+    "lat": 26.10728,
+    "lon": 74.32499,
+    "opening_hours": null,
+    "osm_url": null,
+    "source": {
+     "url": "https://petrolpump.hpretail.in/hindustan-petroleum-corporation-limited-shanti-saini-filling-station-petrol-pump-nayanagar-beawar-410227/Home",
+     "title": "HP locator: Shanti Saini Filling Station, Nayanagar",
+     "kind": "official",
+     "opened": true,
+     "source_date": null,
+     "accessed": "2026-10-06"
+    }
+   },
+   {
+    "id": "fuel:iocl-525866",
+    "name": "Garv Vijay Filling Station",
+    "brand": "Indian Oil",
+    "near": "Nayanaga",
+    "km_from_start": 188.2,
+    "off_road_m": 1762,
+    "lat": 26.08939,
+    "lon": 74.32703,
+    "opening_hours": null,
+    "osm_url": null,
+    "source": {
+     "url": "https://locator.iocl.com/indianoil-garv-vijay-filling-station-petrol-pump-nayanaga-beawar-525866/Home",
+     "title": "IndianOil locator: Garv Vijay Filling Station, Nayanaga",
+     "kind": "official",
+     "opened": true,
+     "source_date": null,
+     "accessed": "2026-10-06"
+    }
+   },
+   {
+    "id": "fuel:hp-404461",
+    "name": "Narayan Dass Lohiya",
+    "brand": "HP",
+    "near": "Bhagat Chauraha",
+    "km_from_start": 188.6,
+    "off_road_m": 74,
+    "lat": 26.10431,
+    "lon": 74.31981,
+    "opening_hours": null,
+    "osm_url": null,
+    "source": {
+     "url": "https://petrolpump.hpretail.in/hindustan-petroleum-corporation-limited-m-s-narayan-dass-lohiya-petrol-pump-bhagat-chauraha-beawar-404461/Home",
+     "title": "HP locator: Narayan Dass Lohiya, Bhagat Chauraha",
+     "kind": "official",
+     "opened": true,
+     "source_date": null,
+     "accessed": "2026-10-06"
+    }
+   },
+   {
+    "id": "fuel:iocl-214008",
+    "name": "Kanchan Service Station",
+    "brand": "Indian Oil",
+    "near": "Andheri Deori",
+    "km_from_start": 189.2,
+    "off_road_m": 30,
+    "lat": 26.10523,
+    "lon": 74.31408,
+    "opening_hours": null,
+    "osm_url": null,
+    "source": {
+     "url": "https://locator.iocl.com/indianoil-kanchan-service-station-petrol-pump-andheri-deori-beawar-214008/Home",
+     "title": "IndianOil locator: Kanchan Service Station, Andheri Deori",
+     "kind": "official",
+     "opened": true,
+     "source_date": null,
+     "accessed": "2026-10-06"
+    }
+   },
+   {
+    "id": "fuel:iocl-213529",
+    "name": "Jay Bhawani Filling Station",
+    "brand": "Indian Oil",
+    "near": "Sabalpura",
+    "km_from_start": 198.3,
+    "off_road_m": 169,
+    "lat": 26.09474,
+    "lon": 74.23141,
+    "opening_hours": null,
+    "osm_url": null,
+    "source": {
+     "url": "https://locator.iocl.com/indianoil-jay-bhawani-filling-station-petrol-pump-sabalpura-beawar-213529/Home",
+     "title": "IndianOil locator: Jay Bhawani Filling Station, Sabalpura",
+     "kind": "official",
+     "opened": true,
+     "source_date": null,
+     "accessed": "2026-10-06"
+    }
    },
    {
     "id": "fuel:node-2592749384",
@@ -2583,7 +2683,7 @@
    {
     "id": "fuel:node-10721169084",
     "name": "HP",
-    "brand": "Hindustan Petroleum",
+    "brand": "HP",
     "near": "Pokhran",
     "km_from_start": 449.7,
     "off_road_m": 4,
@@ -2596,7 +2696,7 @@
    {
     "id": "fuel:node-10721199039",
     "name": "HP",
-    "brand": "Hindustan Petroleum",
+    "brand": "HP",
     "near": "Pokhran",
     "km_from_start": 460.1,
     "off_road_m": 41,
@@ -2635,7 +2735,7 @@
    {
     "id": "fuel:node-10721201250",
     "name": "HP",
-    "brand": "Hindustan Petroleum",
+    "brand": "HP",
     "near": "Pokhran",
     "km_from_start": 476.2,
     "off_road_m": 118,
@@ -2646,9 +2746,29 @@
     "source": null
    },
    {
+    "id": "fuel:iocl-518469",
+    "name": "Lanwa Filling Station",
+    "brand": "Indian Oil",
+    "near": "Morani",
+    "km_from_start": 493.7,
+    "off_road_m": 71,
+    "lat": 26.87461,
+    "lon": 72.02732,
+    "opening_hours": null,
+    "osm_url": null,
+    "source": {
+     "url": "https://locator.iocl.com/indianoil-lanwa-filling-station-petrol-pump-morani-jaisalmer-518469/Home",
+     "title": "IndianOil locator: Lanwa Filling Station, Morani",
+     "kind": "official",
+     "opened": true,
+     "source_date": null,
+     "accessed": "2026-10-06"
+    }
+   },
+   {
     "id": "fuel:node-10721210605",
     "name": "HP",
-    "brand": "Hindustan Petroleum",
+    "brand": "HP",
     "near": "Pokhran",
     "km_from_start": 500.6,
     "off_road_m": 123,
@@ -2674,7 +2794,7 @@
    {
     "id": "fuel:node-10721200914",
     "name": "HP",
-    "brand": "Hindustan Petroleum",
+    "brand": "HP",
     "near": "Pokhran",
     "km_from_start": 507.0,
     "off_road_m": 69,
@@ -2700,7 +2820,7 @@
    {
     "id": "fuel:node-7250006165",
     "name": "HP",
-    "brand": "Hindustan Petroleum",
+    "brand": "HP",
     "near": "Pokhran",
     "km_from_start": 510.5,
     "off_road_m": 23,
@@ -2722,6 +2842,26 @@
     "opening_hours": null,
     "osm_url": "https://www.openstreetmap.org/node/5219071667",
     "source": null
+   },
+   {
+    "id": "fuel:hp-410758",
+    "name": "Shri Balaji Filling Station",
+    "brand": "HP",
+    "near": "Dholiya",
+    "km_from_start": 544.4,
+    "off_road_m": 73,
+    "lat": 27.03336,
+    "lon": 71.58494,
+    "opening_hours": null,
+    "osm_url": null,
+    "source": {
+     "url": "https://petrolpump.hpretail.in/hindustan-petroleum-corporation-limited-shri-balaji-filling-station-petrol-pump-dholiya-jaisalmer-410758/Home",
+     "title": "HP locator: Shri Balaji Filling Station, Dholiya",
+     "kind": "official",
+     "opened": true,
+     "source_date": null,
+     "accessed": "2026-10-06"
+    }
    },
    {
     "id": "fuel:node-7019094869",
@@ -2828,6 +2968,46 @@
     "source": null
    },
    {
+    "id": "fuel:iocl-213241",
+    "name": "Shree Tanot Rai Ji Automobiles",
+    "brand": "Indian Oil",
+    "near": "Adabala",
+    "km_from_start": 641.2,
+    "off_road_m": 54,
+    "lat": 27.08745,
+    "lon": 70.79598,
+    "opening_hours": null,
+    "osm_url": null,
+    "source": {
+     "url": "https://locator.iocl.com/indianoil-shree-tanot-rai-ji-automobiles-petrol-pump-adabala-jaisalmer-213241/Home",
+     "title": "IndianOil locator: Shree Tanot Rai Ji Automobiles, Adabala",
+     "kind": "official",
+     "opened": true,
+     "source_date": null,
+     "accessed": "2026-10-06"
+    }
+   },
+   {
+    "id": "fuel:hp-394612",
+    "name": "LR Fuel Station",
+    "brand": "HP",
+    "near": "Ramgarh",
+    "km_from_start": 683.0,
+    "off_road_m": 62,
+    "lat": 27.35997,
+    "lon": 70.51474,
+    "opening_hours": null,
+    "osm_url": null,
+    "source": {
+     "url": "https://petrolpump.hpretail.in/hindustan-petroleum-corporation-limited-lr-fuel-station-petrol-pump-ramgarh-jaisalmer-394612/Home",
+     "title": "HP locator: LR Fuel Station, Ramgarh",
+     "kind": "official",
+     "opened": true,
+     "source_date": null,
+     "accessed": "2026-10-06"
+    }
+   },
+   {
     "id": "fuel:node-353703055",
     "name": "Bharat Petroleum",
     "brand": null,
@@ -2841,35 +3021,26 @@
     "source": null
    }
   ],
-  "pump_count": 77,
-  "stops": 34,
+  "pump_count": 86,
+  "stops": 40,
   "longest_gaps": [
    {
-    "from_km": 621.8,
+    "from_km": 683.0,
     "to_km": 937.0,
-    "gap_km": 315.2,
+    "gap_km": 254.0,
     "from_is": "pump",
     "to_is": "pump",
-    "near_from": "Jaisalmer",
+    "near_from": "Ramgarh",
     "near_to": "Jaisalmer"
    },
    {
-    "from_km": 182.5,
+    "from_km": 198.3,
     "to_km": 296.7,
-    "gap_km": 114.2,
+    "gap_km": 98.4,
     "from_is": "pump",
     "to_is": "pump",
     "near_from": "Jodhpur",
     "near_to": "Jodhpur"
-   },
-   {
-    "from_km": 511.0,
-    "to_km": 570.0,
-    "gap_km": 59.0,
-    "from_is": "pump",
-    "to_is": "pump",
-    "near_from": "Pokhran",
-    "near_to": "Jaisalmer"
    },
    {
     "from_km": 61.0,
@@ -2888,10 +3059,19 @@
     "to_is": "pump",
     "near_from": "Jodhpur",
     "near_to": "Jodhpur"
+   },
+   {
+    "from_km": 641.2,
+    "to_km": 683.0,
+    "gap_km": 41.8,
+    "from_is": "pump",
+    "to_is": "pump",
+    "near_from": "Jaisalmer",
+    "near_to": "Ramgarh"
    }
   ],
-  "note": "Pumps are those drawn on the open map within the search radius of the road. A pump missing from the map is missing here, so each gap is a worst case.",
-  "fetched": "2026-09-28"
+  "note": "Pumps are those drawn on the open map within the search radius of the road, and, where the map has none, those on the oil companies' own locators. A pump missing from both is missing here, so each gap is a worst case.",
+  "fetched": "2026-10-06"
  },
  "rules": [
   {
@@ -3146,7 +3326,7 @@
   "Videos: the pages give upload dates, not filming dates, so 'filmed' is filled only where the title names a date. Uploads, in order: 2024-12, 2020-02."
  ],
  "counts": {
-  "facts": 106
+  "facts": 115
  },
- "built": "2026-09-28"
+ "built": "2026-10-06"
 }

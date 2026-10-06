@@ -848,5 +848,154 @@
     "Manali green tax: amount for two-wheelers is reported by a newspaper only, so it is left out.",
     "Rohtang permit: the official pages list fees for cars, jeeps and buses only; whether two-wheelers need a permit or pay is not stated. That the Atal Tunnel route needs no permit comes from an operator guide.",
     "Videos: titles and channels were read from the video pages; filming dates and motorcycles are not confirmed unless the title states them."
-  ]
+  ],
+  "pumps_from_companies": {
+    "why": "The open map had no pump between Shimla and Rampur, though Theog and Kumarsain are towns. Neither locator lists a pump between Nako and Kaza or between Kaza and Manali, so those gaps stay. These are from the oil companies' own locators, IndianOil's (locator.iocl.com) and HP's (petrolpump.hpretail.in), read on 6 October 2026 for the districts the road runs through. A pump within 5 km along the road of one already on the map is left out. Bharat Petroleum's locator did not answer, and other companies' pumps are not added.",
+    "pumps": [
+      {
+        "id": "iocl-519747",
+        "name": "Jai Maa Jawala Filling Station",
+        "brand": "Indian Oil",
+        "town": "Kufri",
+        "lat": 31.10189,
+        "lon": 77.26299,
+        "source": {
+          "url": "https://locator.iocl.com/indianoil-jai-maa-jawala-filling-station-petrol-pump-kufri-shimla-519747/Home",
+          "title": "IndianOil locator: Jai Maa Jawala Filling Station, Kufri",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "iocl-518553",
+        "name": "Rising Filling Station",
+        "brand": "Indian Oil",
+        "town": "Dewarighat",
+        "lat": 31.11231,
+        "lon": 77.31891,
+        "source": {
+          "url": "https://locator.iocl.com/indianoil-rising-filling-station-petrol-pump-dewarighat-shimla-518553/Home",
+          "title": "IndianOil locator: Rising Filling Station, Dewarighat",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "iocl-199746",
+        "name": "Himfed Filling Station",
+        "brand": "Indian Oil",
+        "town": "Theog",
+        "lat": 31.12676,
+        "lon": 77.33937,
+        "source": {
+          "url": "https://locator.iocl.com/indianoil-himfed-filling-station-petrol-pump-theog-shimla-199746/Home",
+          "title": "IndianOil locator: Himfed Filling Station, Theog",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "hp-391399",
+        "name": "Snowline Filling Station",
+        "brand": "HP",
+        "town": "Theog",
+        "lat": 31.12129,
+        "lon": 77.35673,
+        "source": {
+          "url": "https://petrolpump.hpretail.in/hindustan-petroleum-corporation-limited-snowline-filling-station-petrol-pump-theog-shimla-391399/Home",
+          "title": "HP locator: Snowline Filling Station, Theog",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "iocl-278197",
+        "name": "Himalayan Fill And Fly",
+        "brand": "Indian Oil",
+        "town": "Theog",
+        "lat": 31.20514,
+        "lon": 77.3959,
+        "source": {
+          "url": "https://locator.iocl.com/indianoil-himalayan-fill-and-fly-petrol-pump-theog-shimla-278197/Home",
+          "title": "IndianOil locator: Himalayan Fill And Fly, Theog",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "hp-422912",
+        "name": "Bhagat Filling Station",
+        "brand": "HP",
+        "town": "Kumarsain",
+        "lat": 31.23705,
+        "lon": 77.42803,
+        "source": {
+          "url": "https://petrolpump.hpretail.in/hindustan-petroleum-corporation-limited-m-s-bhagat-filling-station-petrol-pump-kumarsain-shimla-422912/Home",
+          "title": "HP locator: Bhagat Filling Station, Kumarsain",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "iocl-199751",
+        "name": "Urja Filling Station",
+        "brand": "Indian Oil",
+        "town": "Kumarsain",
+        "lat": 31.24615,
+        "lon": 77.44704,
+        "source": {
+          "url": "https://locator.iocl.com/indianoil-urja-filling-station-petrol-pump-kumarsain-shimla-199751/Home",
+          "title": "IndianOil locator: Urja Filling Station, Kumarsain",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "iocl-199732",
+        "name": "Shahid Anant Filling Station",
+        "brand": "Indian Oil",
+        "town": "Bhutti",
+        "lat": 31.3498,
+        "lon": 77.4797,
+        "source": {
+          "url": "https://locator.iocl.com/indianoil-shahid-anant-filling-station-petrol-pump-bhutti-shimla-199732/Home",
+          "title": "IndianOil locator: Shahid Anant Filling Station, Bhutti",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "hp-403713",
+        "name": "Donbusche HP Centre",
+        "brand": "HP",
+        "town": "Tapri",
+        "lat": 31.51993,
+        "lon": 78.0923,
+        "source": {
+          "url": "https://petrolpump.hpretail.in/hindustan-petroleum-corporation-limited-m-s-donbusche-hp-centre-petrol-pump-tapri-kinnaur-403713/Home",
+          "title": "HP locator: Donbusche HP Centre, Tapri",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      }
+    ]
+  }
 }

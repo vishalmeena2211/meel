@@ -573,5 +573,122 @@
     "No source says whether motorcycles were allowed when the road opened in any year.",
     "No road number found for the Bandipora to Gurez road.",
     "Only one rider video could be checked; a second, on crossing Razdan Pass in April 2025, could not be read."
-  ]
+  ],
+  "pumps_from_companies": {
+    "why": "The open map had few pumps between Srinagar and Bandipora. Neither locator lists a pump past Bandipora, over Razdan Pass to Dawar, so that gap stays. These are from the oil companies' own locators, IndianOil's (locator.iocl.com) and HP's (petrolpump.hpretail.in), read on 6 October 2026 for the districts the road runs through. A pump within 5 km along the road of one already on the map is left out. Bharat Petroleum's locator did not answer, and other companies' pumps are not added.",
+    "pumps": [
+      {
+        "id": "iocl-277811",
+        "name": "Ali Filling Station",
+        "brand": "Indian Oil",
+        "town": "Dangerpora",
+        "lat": 34.16529,
+        "lon": 74.68878,
+        "source": {
+          "url": "https://locator.iocl.com/indianoil-ali-filling-station-petrol-pump-dangerpora-baramulla-277811/Home",
+          "title": "IndianOil locator: Ali Filling Station, Dangerpora",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "iocl-238390",
+        "name": "Mudasir Service Station",
+        "brand": "Indian Oil",
+        "town": "Amchikundal",
+        "lat": 34.20193,
+        "lon": 74.66315,
+        "source": {
+          "url": "https://locator.iocl.com/indianoil-mudasir-service-station-petrol-pump-amchikundal-baramulla-238390/Home",
+          "title": "IndianOil locator: Mudasir Service Station, Amchikundal",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "iocl-237838",
+        "name": "Shaheen Service Station",
+        "brand": "Indian Oil",
+        "town": "Ajas",
+        "lat": 34.40174,
+        "lon": 74.65462,
+        "source": {
+          "url": "https://locator.iocl.com/indianoil-shaheen-service-station-petrol-pump-ajas-baramulla-237838/Home",
+          "title": "IndianOil locator: Shaheen Service Station, Ajas",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "hp-410958",
+        "name": "Town View Filling Station",
+        "brand": "HP",
+        "town": "Nebripora",
+        "lat": 34.41182,
+        "lon": 74.64385,
+        "source": {
+          "url": "https://petrolpump.hpretail.in/hindustan-petroleum-corporation-limited-town-view-filling-station-petrol-pump-nebripora-baramulla-410958/Home",
+          "title": "HP locator: Town View Filling Station, Nebripora",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "iocl-237879",
+        "name": "Babaji Filling And Service Stn",
+        "brand": "Indian Oil",
+        "town": "Ajas",
+        "lat": 34.42935,
+        "lon": 74.61804,
+        "source": {
+          "url": "https://locator.iocl.com/indianoil-babaji-filling-and-service-stn-petrol-pump-ajas-baramulla-237879/Home",
+          "title": "IndianOil locator: Babaji Filling And Service Stn, Ajas",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "iocl-237971",
+        "name": "Gareeb Nawaz Filling Station",
+        "brand": "Indian Oil",
+        "town": "Naushera Colony",
+        "lat": 34.42419,
+        "lon": 74.61955,
+        "source": {
+          "url": "https://locator.iocl.com/indianoil-gareeb-nawaz-filling-station-petrol-pump-naushera-colony-baramulla-237971/Home",
+          "title": "IndianOil locator: Gareeb Nawaz Filling Station, Naushera Colony",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "hp-403346",
+        "name": "Hamara Pump",
+        "brand": "HP",
+        "town": "Kaloosa",
+        "lat": 34.42826,
+        "lon": 74.62109,
+        "source": {
+          "url": "https://petrolpump.hpretail.in/hindustan-petroleum-corporation-limited-hamara-pump-petrol-pump-kaloosa-baramulla-403346/Home",
+          "title": "HP locator: Hamara Pump, Kaloosa",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      }
+    ]
+  }
 }

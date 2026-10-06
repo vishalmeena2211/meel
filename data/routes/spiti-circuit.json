@@ -9463,8 +9463,168 @@
     "source": null
    },
    {
+    "id": "fuel:iocl-519747",
+    "name": "Jai Maa Jawala Filling Station",
+    "brand": "Indian Oil",
+    "near": "Kufri",
+    "km_from_start": 14.6,
+    "off_road_m": 24,
+    "lat": 31.10189,
+    "lon": 77.26299,
+    "opening_hours": null,
+    "osm_url": null,
+    "source": {
+     "url": "https://locator.iocl.com/indianoil-jai-maa-jawala-filling-station-petrol-pump-kufri-shimla-519747/Home",
+     "title": "IndianOil locator: Jai Maa Jawala Filling Station, Kufri",
+     "kind": "official",
+     "opened": true,
+     "source_date": null,
+     "accessed": "2026-10-06"
+    }
+   },
+   {
+    "id": "fuel:iocl-518553",
+    "name": "Rising Filling Station",
+    "brand": "Indian Oil",
+    "near": "Dewarighat",
+    "km_from_start": 23.3,
+    "off_road_m": 13,
+    "lat": 31.11231,
+    "lon": 77.31891,
+    "opening_hours": null,
+    "osm_url": null,
+    "source": {
+     "url": "https://locator.iocl.com/indianoil-rising-filling-station-petrol-pump-dewarighat-shimla-518553/Home",
+     "title": "IndianOil locator: Rising Filling Station, Dewarighat",
+     "kind": "official",
+     "opened": true,
+     "source_date": null,
+     "accessed": "2026-10-06"
+    }
+   },
+   {
+    "id": "fuel:iocl-199746",
+    "name": "Himfed Filling Station",
+    "brand": "Indian Oil",
+    "near": "Theog",
+    "km_from_start": 26.3,
+    "off_road_m": 2,
+    "lat": 31.12676,
+    "lon": 77.33937,
+    "opening_hours": null,
+    "osm_url": null,
+    "source": {
+     "url": "https://locator.iocl.com/indianoil-himfed-filling-station-petrol-pump-theog-shimla-199746/Home",
+     "title": "IndianOil locator: Himfed Filling Station, Theog",
+     "kind": "official",
+     "opened": true,
+     "source_date": null,
+     "accessed": "2026-10-06"
+    }
+   },
+   {
+    "id": "fuel:hp-391399",
+    "name": "Snowline Filling Station",
+    "brand": "HP",
+    "near": "Theog",
+    "km_from_start": 28.8,
+    "off_road_m": 34,
+    "lat": 31.12129,
+    "lon": 77.35673,
+    "opening_hours": null,
+    "osm_url": null,
+    "source": {
+     "url": "https://petrolpump.hpretail.in/hindustan-petroleum-corporation-limited-snowline-filling-station-petrol-pump-theog-shimla-391399/Home",
+     "title": "HP locator: Snowline Filling Station, Theog",
+     "kind": "official",
+     "opened": true,
+     "source_date": null,
+     "accessed": "2026-10-06"
+    }
+   },
+   {
+    "id": "fuel:iocl-278197",
+    "name": "Himalayan Fill And Fly",
+    "brand": "Indian Oil",
+    "near": "Theog",
+    "km_from_start": 44.0,
+    "off_road_m": 1,
+    "lat": 31.20514,
+    "lon": 77.3959,
+    "opening_hours": null,
+    "osm_url": null,
+    "source": {
+     "url": "https://locator.iocl.com/indianoil-himalayan-fill-and-fly-petrol-pump-theog-shimla-278197/Home",
+     "title": "IndianOil locator: Himalayan Fill And Fly, Theog",
+     "kind": "official",
+     "opened": true,
+     "source_date": null,
+     "accessed": "2026-10-06"
+    }
+   },
+   {
+    "id": "fuel:hp-422912",
+    "name": "Bhagat Filling Station",
+    "brand": "HP",
+    "near": "Kumarsain",
+    "km_from_start": 54.1,
+    "off_road_m": 41,
+    "lat": 31.23705,
+    "lon": 77.42803,
+    "opening_hours": null,
+    "osm_url": null,
+    "source": {
+     "url": "https://petrolpump.hpretail.in/hindustan-petroleum-corporation-limited-m-s-bhagat-filling-station-petrol-pump-kumarsain-shimla-422912/Home",
+     "title": "HP locator: Bhagat Filling Station, Kumarsain",
+     "kind": "official",
+     "opened": true,
+     "source_date": null,
+     "accessed": "2026-10-06"
+    }
+   },
+   {
+    "id": "fuel:iocl-199751",
+    "name": "Urja Filling Station",
+    "brand": "Indian Oil",
+    "near": "Kumarsain",
+    "km_from_start": 58.2,
+    "off_road_m": 19,
+    "lat": 31.24615,
+    "lon": 77.44704,
+    "opening_hours": null,
+    "osm_url": null,
+    "source": {
+     "url": "https://locator.iocl.com/indianoil-urja-filling-station-petrol-pump-kumarsain-shimla-199751/Home",
+     "title": "IndianOil locator: Urja Filling Station, Kumarsain",
+     "kind": "official",
+     "opened": true,
+     "source_date": null,
+     "accessed": "2026-10-06"
+    }
+   },
+   {
+    "id": "fuel:iocl-199732",
+    "name": "Shahid Anant Filling Station",
+    "brand": "Indian Oil",
+    "near": "Bhutti",
+    "km_from_start": 96.3,
+    "off_road_m": 761,
+    "lat": 31.3498,
+    "lon": 77.4797,
+    "opening_hours": null,
+    "osm_url": null,
+    "source": {
+     "url": "https://locator.iocl.com/indianoil-shahid-anant-filling-station-petrol-pump-bhutti-shimla-199732/Home",
+     "title": "IndianOil locator: Shahid Anant Filling Station, Bhutti",
+     "kind": "official",
+     "opened": true,
+     "source_date": null,
+     "accessed": "2026-10-06"
+    }
+   },
+   {
     "id": "fuel:node-627276723",
-    "name": "Hindustan Petroleum",
+    "name": "HP",
     "brand": null,
     "near": "Rampur",
     "km_from_start": 106.4,
@@ -9503,7 +9663,7 @@
    },
    {
     "id": "fuel:node-627278610",
-    "name": "Hindustan Petroleum",
+    "name": "HP",
     "brand": null,
     "near": "Rampur",
     "km_from_start": 109.9,
@@ -9606,6 +9766,26 @@
     "source": null
    },
    {
+    "id": "fuel:hp-403713",
+    "name": "Donbusche HP Centre",
+    "brand": "HP",
+    "near": "Tapri",
+    "km_from_start": 188.5,
+    "off_road_m": 15,
+    "lat": 31.51993,
+    "lon": 78.0923,
+    "opening_hours": null,
+    "osm_url": null,
+    "source": {
+     "url": "https://petrolpump.hpretail.in/hindustan-petroleum-corporation-limited-m-s-donbusche-hp-centre-petrol-pump-tapri-kinnaur-403713/Home",
+     "title": "HP locator: Donbusche HP Centre, Tapri",
+     "kind": "official",
+     "opened": true,
+     "source_date": null,
+     "accessed": "2026-10-06"
+    }
+   },
+   {
     "id": "fuel:node-3719759493",
     "name": "Indian Oil",
     "brand": "Indian Oil",
@@ -9673,7 +9853,7 @@
    {
     "id": "fuel:node-4135407790",
     "name": "HP",
-    "brand": "Hindustan Petroleum",
+    "brand": "HP",
     "near": "Manali",
     "km_from_start": 611.5,
     "off_road_m": 15,
@@ -9710,8 +9890,8 @@
     "source": null
    }
   ],
-  "pump_count": 23,
-  "stops": 14,
+  "pump_count": 32,
+  "stops": 23,
   "longest_gaps": [
    {
     "from_km": 433.0,
@@ -9732,15 +9912,6 @@
     "near_to": "Kaza"
    },
    {
-    "from_km": 6.7,
-    "to_km": 106.4,
-    "gap_km": 99.7,
-    "from_is": "pump",
-    "to_is": "pump",
-    "near_from": "Shimla",
-    "near_to": "Rampur"
-   },
-   {
     "from_km": 219.8,
     "to_km": 284.9,
     "gap_km": 65.1,
@@ -9750,17 +9921,26 @@
     "near_to": "Pooh"
    },
    {
-    "from_km": 172.5,
-    "to_km": 210.1,
-    "gap_km": 37.6,
+    "from_km": 58.2,
+    "to_km": 96.3,
+    "gap_km": 38.1,
     "from_is": "pump",
     "to_is": "pump",
-    "near_from": "Reckong Peo",
+    "near_from": "Narkanda",
+    "near_to": "Rampur"
+   },
+   {
+    "from_km": 150.6,
+    "to_km": 172.5,
+    "gap_km": 21.9,
+    "from_is": "pump",
+    "to_is": "pump",
+    "near_from": "Rampur",
     "near_to": "Reckong Peo"
    }
   ],
-  "note": "Pumps are those drawn on the open map within the search radius of the road. A pump missing from the map is missing here, so each gap is a worst case.",
-  "fetched": "2026-09-28"
+  "note": "Pumps are those drawn on the open map within the search radius of the road, and, where the map has none, those on the oil companies' own locators. A pump missing from both is missing here, so each gap is a worst case.",
+  "fetched": "2026-10-06"
  },
  "rules": [
   {
@@ -10593,7 +10773,7 @@
   "Videos: titles and channels were read from the video pages; filming dates and motorcycles are not confirmed unless the title states them."
  ],
  "counts": {
-  "facts": 81
+  "facts": 90
  },
- "built": "2026-09-28"
+ "built": "2026-10-06"
 }

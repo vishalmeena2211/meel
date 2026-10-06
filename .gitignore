@@ -1,2 +1,9 @@
 # Vercel CLI link for this folder: project and account ids, nothing secret. Never committed.
 .vercel
+
+# Oil companies' locator pages, cached by data/tools/company_pumps.py so a rerun asks nothing twice. 62 MB of their
+# pages; the pumps taken from them are in data/research with each page's address. Rebuilt by running the tool again.
+data/computed/locators/
+
+# Python's own compiled copies of the data tools.
+__pycache__/

@@ -294,5 +294,58 @@
     "No source found for rules or fees at Kempty Falls.",
     "Uttarakhand green cess: the exemption for two-wheelers is reported by two news outlets; no Transport Department order or official page was found.",
     "No rider videos collected; the search budget ran out before this route."
-  ]
+  ],
+  "pumps_from_companies": {
+    "why": "The open map had no pump between Mussoorie and Chakrata, though Suwakholi and Kempty have one each. These are from the oil companies' own locators, IndianOil's (locator.iocl.com) and HP's (petrolpump.hpretail.in), read on 6 October 2026 for the districts the road runs through. A pump within 5 km along the road of one already on the map is left out. Bharat Petroleum's locator did not answer, and other companies' pumps are not added.",
+    "pumps": [
+      {
+        "id": "iocl-238337",
+        "name": "Abhyuday Filling Station",
+        "brand": "Indian Oil",
+        "town": "suwakholai",
+        "lat": 30.45117,
+        "lon": 78.15616,
+        "source": {
+          "url": "https://locator.iocl.com/indianoil-abhyuday-filling-station-petrol-pump-suwakholai-tehri-garhwal-238337/Home",
+          "title": "IndianOil locator: Abhyuday Filling Station, suwakholai",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "hp-390773",
+        "name": "Kempty Filling Station",
+        "brand": "HP",
+        "town": "Siya Kempti",
+        "lat": 30.48627,
+        "lon": 78.04377,
+        "source": {
+          "url": "https://petrolpump.hpretail.in/hindustan-petroleum-corporation-limited-kempty-filling-station-petrol-pump-siya-kempti-dehradun-390773/Home",
+          "title": "HP locator: Kempty Filling Station, Siya Kempti",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "hp-418930",
+        "name": "Ms Prem Narayan Filling Station",
+        "brand": "HP",
+        "town": "Koruwa",
+        "lat": 30.66231,
+        "lon": 77.8562,
+        "source": {
+          "url": "https://petrolpump.hpretail.in/hindustan-petroleum-corporation-limited-ms-prem-narayan-filling-station-petrol-pump-koruwa-dehradun-418930/Home",
+          "title": "HP locator: Ms Prem Narayan Filling Station, Koruwa",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      }
+    ]
+  }
 }

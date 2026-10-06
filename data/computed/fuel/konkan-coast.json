@@ -1,6 +1,6 @@
 {
  "slug": "konkan-coast",
- "fetched": "2026-09-28",
+ "fetched": "2026-10-06",
  "search_radius_m": 900,
  "pumps": [
   {
@@ -100,6 +100,94 @@
    "diesel": null
   },
   {
+   "osm": null,
+   "company_id": "iocl-206761",
+   "name": "Radha Auto Care",
+   "brand": "Indian Oil",
+   "town": "Jaskhar, Sector 1",
+   "lat": 18.90717,
+   "lon": 73.01892,
+   "km_from_start": 35.3,
+   "off_road_m": 2207,
+   "opening_hours": null,
+   "petrol": null,
+   "diesel": null,
+   "source": {
+    "url": "https://locator.iocl.com/indianoil-petrol-pump-jaskhar-sector-1-radha-auto-care-petrol-pump-jaskhar-sector-1-raigarh-206761/Home",
+    "title": "IndianOil locator: Radha Auto Care, Jaskhar, Sector 1",
+    "kind": "official",
+    "opened": true,
+    "source_date": null,
+    "accessed": "2026-10-06"
+   }
+  },
+  {
+   "osm": null,
+   "company_id": "iocl-208213",
+   "name": "Shree Swami Samarth Fuel Station",
+   "brand": "Indian Oil",
+   "town": "Ambeghar",
+   "lat": 18.8208,
+   "lon": 73.09251,
+   "km_from_start": 53.3,
+   "off_road_m": 20,
+   "opening_hours": null,
+   "petrol": null,
+   "diesel": null,
+   "source": {
+    "url": "https://locator.iocl.com/indianoil-petrol-pump-ambeghar-shree-swami-samarth-fuel-station-petrol-pump-ambeghar-raigad-208213/Home",
+    "title": "IndianOil locator: Shree Swami Samarth Fuel Station, Ambeghar",
+    "kind": "official",
+    "opened": true,
+    "source_date": null,
+    "accessed": "2026-10-06"
+   }
+  },
+  {
+   "osm": null,
+   "company_id": "hp-387669",
+   "name": "Jite Fuel Plaza, Jite",
+   "brand": "HP",
+   "town": "Jite",
+   "lat": 18.81583,
+   "lon": 73.08995,
+   "km_from_start": 53.9,
+   "off_road_m": 58,
+   "opening_hours": null,
+   "petrol": null,
+   "diesel": null,
+   "source": {
+    "url": "https://petrolpump.hpretail.in/hindustan-petroleum-corporation-limited-m-s-jite-fuel-plaza-jite-petrol-pump-jite-raigad-387669/Home",
+    "title": "HP locator: Jite Fuel Plaza, Jite, Jite",
+    "kind": "official",
+    "opened": true,
+    "source_date": null,
+    "accessed": "2026-10-06"
+   }
+  },
+  {
+   "osm": null,
+   "company_id": "hp-388377",
+   "name": "Shree Siddhivinayak Petroleum",
+   "brand": "HP",
+   "town": "Jite",
+   "lat": 18.80447,
+   "lon": 73.09162,
+   "km_from_start": 55.2,
+   "off_road_m": 28,
+   "opening_hours": null,
+   "petrol": null,
+   "diesel": null,
+   "source": {
+    "url": "https://petrolpump.hpretail.in/hindustan-petroleum-corporation-limited-shree-siddhivinayak-petroleum-petrol-pump-jite-raigad-388377/Home",
+    "title": "HP locator: Shree Siddhivinayak Petroleum, Jite",
+    "kind": "official",
+    "opened": true,
+    "source_date": null,
+    "accessed": "2026-10-06"
+   }
+  },
+  {
    "osm": "node/2686107820",
    "name": "Hindustan Petroleum",
    "brand": "HPCL",
@@ -172,6 +260,28 @@
    "diesel": "yes"
   },
   {
+   "osm": null,
+   "company_id": "hp-387958",
+   "name": "Vandana Automobiles, Karle Khin",
+   "brand": "HP",
+   "town": "Karle Khind",
+   "lat": 18.69561,
+   "lon": 72.93377,
+   "km_from_start": 82.5,
+   "off_road_m": 42,
+   "opening_hours": null,
+   "petrol": null,
+   "diesel": null,
+   "source": {
+    "url": "https://petrolpump.hpretail.in/hindustan-petroleum-corporation-limited-m-s-vandana-automobiles-karle-khin-petrol-pump-karle-khind-alibag-387958/Home",
+    "title": "HP locator: Vandana Automobiles, Karle Khin, Karle Khind",
+    "kind": "official",
+    "opened": true,
+    "source_date": null,
+    "accessed": "2026-10-06"
+   }
+  },
+  {
    "osm": "way/262972500",
    "name": "Indian Oil",
    "brand": "IOCL",
@@ -194,6 +304,28 @@
    "opening_hours": null,
    "petrol": "yes",
    "diesel": "yes"
+  },
+  {
+   "osm": null,
+   "company_id": "hp-387765",
+   "name": "Shree Sharada Automobiles, Chaul",
+   "brand": "HP",
+   "town": "Chaul",
+   "lat": 18.59372,
+   "lon": 72.9247,
+   "km_from_start": 102.9,
+   "off_road_m": 58,
+   "opening_hours": null,
+   "petrol": null,
+   "diesel": null,
+   "source": {
+    "url": "https://petrolpump.hpretail.in/hindustan-petroleum-corporation-limited-m-s-shree-sharada-automobiles-chaul-petrol-pump-chaul-raigad-387765/Home",
+    "title": "HP locator: Shree Sharada Automobiles, Chaul, Chaul",
+    "kind": "official",
+    "opened": true,
+    "source_date": null,
+    "accessed": "2026-10-06"
+   }
   },
   {
    "osm": "node/6993050985",
@@ -220,6 +352,50 @@
    "diesel": null
   },
   {
+   "osm": null,
+   "company_id": "iocl-207159",
+   "name": "Sabina Automobiles",
+   "brand": "Indian Oil",
+   "town": "Bhoste",
+   "lat": 18.05504,
+   "lon": 73.03333,
+   "km_from_start": 200.3,
+   "off_road_m": 1588,
+   "opening_hours": null,
+   "petrol": null,
+   "diesel": null,
+   "source": {
+    "url": "https://locator.iocl.com/indianoil-petrol-pump-bhoste-sabina-automobiles-petrol-pump-bhoste-raigarh-207159/Home",
+    "title": "IndianOil locator: Sabina Automobiles, Bhoste",
+    "kind": "official",
+    "opened": true,
+    "source_date": null,
+    "accessed": "2026-10-06"
+   }
+  },
+  {
+   "osm": null,
+   "company_id": "iocl-583968",
+   "name": "Raviraj Petroleum",
+   "brand": "Indian Oil",
+   "town": "Adhkal",
+   "lat": 17.81563,
+   "lon": 73.10811,
+   "km_from_start": 263.9,
+   "off_road_m": 1285,
+   "opening_hours": null,
+   "petrol": null,
+   "diesel": null,
+   "source": {
+    "url": "https://locator.iocl.com/indianoil-raviraj-petroleum-petrol-pump-adhkal-ratnagiri-583968/Home",
+    "title": "IndianOil locator: Raviraj Petroleum, Adhkal",
+    "kind": "official",
+    "opened": true,
+    "source_date": null,
+    "accessed": "2026-10-06"
+   }
+  },
+  {
    "osm": "node/7917250876",
    "name": "Bharat Petrlium, Dabhol Road",
    "brand": "BP",
@@ -244,6 +420,28 @@
    "diesel": null
   },
   {
+   "osm": null,
+   "company_id": "iocl-279077",
+   "name": "Jaigad Cha Raja Petroleum",
+   "brand": "Indian Oil",
+   "town": "Chaferi",
+   "lat": 17.24421,
+   "lon": 73.24626,
+   "km_from_start": 360.6,
+   "off_road_m": 859,
+   "opening_hours": null,
+   "petrol": null,
+   "diesel": null,
+   "source": {
+    "url": "https://locator.iocl.com/indianoil-jaigad-cha-raja-petroleum-petrol-pump-chaferi-ratnagiri-279077/Home",
+    "title": "IndianOil locator: Jaigad Cha Raja Petroleum, Chaferi",
+    "kind": "official",
+    "opened": true,
+    "source_date": null,
+    "accessed": "2026-10-06"
+   }
+  },
+  {
    "osm": "way/1035351912",
    "name": "Bharat Petrol Pump",
    "brand": null,
@@ -254,6 +452,28 @@
    "opening_hours": null,
    "petrol": null,
    "diesel": null
+  },
+  {
+   "osm": null,
+   "company_id": "hp-391282",
+   "name": "Shraddha Petrol Pump",
+   "brand": "HP",
+   "town": "Shirgaon",
+   "lat": 17.03326,
+   "lon": 73.29065,
+   "km_from_start": 390.8,
+   "off_road_m": 20,
+   "opening_hours": null,
+   "petrol": null,
+   "diesel": null,
+   "source": {
+    "url": "https://petrolpump.hpretail.in/hindustan-petroleum-corporation-limited-m-s-shraddha-petrol-pump-petrol-pump-shirgaon-ratnagiri-391282/Home",
+    "title": "HP locator: Shraddha Petrol Pump, Shirgaon",
+    "kind": "official",
+    "opened": true,
+    "source_date": null,
+    "accessed": "2026-10-06"
+   }
   },
   {
    "osm": "node/9789443424",
@@ -280,6 +500,138 @@
    "diesel": null
   },
   {
+   "osm": null,
+   "company_id": "hp-418057",
+   "name": "Shri Swami Samarth Petroleum",
+   "brand": "HP",
+   "town": "Hathkhamba",
+   "lat": 17.02249,
+   "lon": 73.4067,
+   "km_from_start": 409.4,
+   "off_road_m": 814,
+   "opening_hours": null,
+   "petrol": null,
+   "diesel": null,
+   "source": {
+    "url": "https://petrolpump.hpretail.in/hindustan-petroleum-corporation-limited-m-s-shri-swami-samarth-petroleum-petrol-pump-hathkhamba-ratnagiri-418057/Home",
+    "title": "HP locator: Shri Swami Samarth Petroleum, Hathkhamba",
+    "kind": "official",
+    "opened": true,
+    "source_date": null,
+    "accessed": "2026-10-06"
+   }
+  },
+  {
+   "osm": null,
+   "company_id": "hp-387707",
+   "name": "Sahil - Shanti Petroleum, Hathkhamba",
+   "brand": "HP",
+   "town": "Nivali",
+   "lat": 17.03369,
+   "lon": 73.41559,
+   "km_from_start": 410.0,
+   "off_road_m": 2091,
+   "opening_hours": null,
+   "petrol": null,
+   "diesel": null,
+   "source": {
+    "url": "https://petrolpump.hpretail.in/hindustan-petroleum-corporation-limited-m-s-sahil-shanti-petroleum-hathkhamba-petrol-pump-nivali-ratnagiri-387707/Home",
+    "title": "HP locator: Sahil - Shanti Petroleum, Hathkhamba, Nivali",
+    "kind": "official",
+    "opened": true,
+    "source_date": null,
+    "accessed": "2026-10-06"
+   }
+  },
+  {
+   "osm": null,
+   "company_id": "hp-388194",
+   "name": "Urja Petroleums, Pali",
+   "brand": "HP",
+   "town": "Pali",
+   "lat": 16.99103,
+   "lon": 73.46777,
+   "km_from_start": 417.8,
+   "off_road_m": 6,
+   "opening_hours": null,
+   "petrol": null,
+   "diesel": null,
+   "source": {
+    "url": "https://petrolpump.hpretail.in/hindustan-petroleum-corporation-limited-m-s-urja-petroleums-pali-petrol-pump-pali-ratnagiri-388194/Home",
+    "title": "HP locator: Urja Petroleums, Pali, Pali",
+    "kind": "official",
+    "opened": true,
+    "source_date": null,
+    "accessed": "2026-10-06"
+   }
+  },
+  {
+   "osm": null,
+   "company_id": "hp-388241",
+   "name": "Adhoc Samarth Traders",
+   "brand": "HP",
+   "town": "Lanja",
+   "lat": 16.85844,
+   "lon": 73.54932,
+   "km_from_start": 437.7,
+   "off_road_m": 5,
+   "opening_hours": null,
+   "petrol": null,
+   "diesel": null,
+   "source": {
+    "url": "https://petrolpump.hpretail.in/hindustan-petroleum-corporation-limited-m-s-adhoc-samarth-traders-petrol-pump-lanja-ratnagiri-388241/Home",
+    "title": "HP locator: Adhoc Samarth Traders, Lanja",
+    "kind": "official",
+    "opened": true,
+    "source_date": null,
+    "accessed": "2026-10-06"
+   }
+  },
+  {
+   "osm": null,
+   "company_id": "iocl-207240",
+   "name": "Shri Advait Petroleum",
+   "brand": "Indian Oil",
+   "town": "Bapere",
+   "lat": 16.84686,
+   "lon": 73.54858,
+   "km_from_start": 439.1,
+   "off_road_m": 59,
+   "opening_hours": null,
+   "petrol": null,
+   "diesel": null,
+   "source": {
+    "url": "https://locator.iocl.com/indianoil-shri-advait-petroleum-petrol-pump-bapere-ratnagiri-207240/Home",
+    "title": "IndianOil locator: Shri Advait Petroleum, Bapere",
+    "kind": "official",
+    "opened": true,
+    "source_date": null,
+    "accessed": "2026-10-06"
+   }
+  },
+  {
+   "osm": null,
+   "company_id": "hp-387900",
+   "name": "Sunita & Sons",
+   "brand": "HP",
+   "town": "Kuve",
+   "lat": 16.83505,
+   "lon": 73.55142,
+   "km_from_start": 440.4,
+   "off_road_m": 73,
+   "opening_hours": null,
+   "petrol": null,
+   "diesel": null,
+   "source": {
+    "url": "https://petrolpump.hpretail.in/hindustan-petroleum-corporation-limited-m-s-sunita-sons-petrol-pump-kuve-ratnagiri-387900/Home",
+    "title": "HP locator: Sunita & Sons, Kuve",
+    "kind": "official",
+    "opened": true,
+    "source_date": null,
+    "accessed": "2026-10-06"
+   }
+  },
+  {
    "osm": "way/991879645",
    "name": "HP",
    "brand": "Hindustan Petroleum",
@@ -304,6 +656,28 @@
    "diesel": null
   },
   {
+   "osm": null,
+   "company_id": "iocl-207870",
+   "name": "Narmadaa Petroleum",
+   "brand": "Indian Oil",
+   "town": "Angale",
+   "lat": 16.60154,
+   "lon": 73.56431,
+   "km_from_start": 475.7,
+   "off_road_m": 0,
+   "opening_hours": null,
+   "petrol": null,
+   "diesel": null,
+   "source": {
+    "url": "https://locator.iocl.com/indianoil-narmadaa-petroleum-petrol-pump-angale-ratnagiri-207870/Home",
+    "title": "IndianOil locator: Narmadaa Petroleum, Angale",
+    "kind": "official",
+    "opened": true,
+    "source_date": null,
+    "accessed": "2026-10-06"
+   }
+  },
+  {
    "osm": "node/5256935981",
    "name": null,
    "brand": null,
@@ -314,6 +688,226 @@
    "opening_hours": null,
    "petrol": null,
    "diesel": null
+  },
+  {
+   "osm": null,
+   "company_id": "hp-388727",
+   "name": "Kasarde Petroleum",
+   "brand": "HP",
+   "town": "Kasarde",
+   "lat": 16.41881,
+   "lon": 73.67702,
+   "km_from_start": 503.4,
+   "off_road_m": 10,
+   "opening_hours": null,
+   "petrol": null,
+   "diesel": null,
+   "source": {
+    "url": "https://petrolpump.hpretail.in/hindustan-petroleum-corporation-limited-kasarde-petroleum-petrol-pump-kasarde-sindhudurg-388727/Home",
+    "title": "HP locator: Kasarde Petroleum, Kasarde",
+    "kind": "official",
+    "opened": true,
+    "source_date": null,
+    "accessed": "2026-10-06"
+   }
+  },
+  {
+   "osm": null,
+   "company_id": "hp-389048",
+   "name": "Shree Krupa Petroleum",
+   "brand": "HP",
+   "town": "Jambhulwadi",
+   "lat": 16.41427,
+   "lon": 73.68018,
+   "km_from_start": 504.0,
+   "off_road_m": 39,
+   "opening_hours": null,
+   "petrol": null,
+   "diesel": null,
+   "source": {
+    "url": "https://petrolpump.hpretail.in/hindustan-petroleum-corporation-limited-m-s-shree-krupa-petroleum-petrol-pump-jambhulwadi-sindhudurg-389048/Home",
+    "title": "HP locator: Shree Krupa Petroleum, Jambhulwadi",
+    "kind": "official",
+    "opened": true,
+    "source_date": null,
+    "accessed": "2026-10-06"
+   }
+  },
+  {
+   "osm": null,
+   "company_id": "iocl-208083",
+   "name": "Shree Fuel Station",
+   "brand": "Indian Oil",
+   "town": "Asalade",
+   "lat": 16.39024,
+   "lon": 73.6859,
+   "km_from_start": 506.8,
+   "off_road_m": 91,
+   "opening_hours": null,
+   "petrol": null,
+   "diesel": null,
+   "source": {
+    "url": "https://locator.iocl.com/indianoil-shree-fuel-station-petrol-pump-asalade-sindhudurg-208083/Home",
+    "title": "IndianOil locator: Shree Fuel Station, Asalade",
+    "kind": "official",
+    "opened": true,
+    "source_date": null,
+    "accessed": "2026-10-06"
+   }
+  },
+  {
+   "osm": null,
+   "company_id": "iocl-206716",
+   "name": "Shri Siddhi Agencies",
+   "brand": "Indian Oil",
+   "town": "Asrondi",
+   "lat": 16.28877,
+   "lon": 73.7087,
+   "km_from_start": 519.6,
+   "off_road_m": 53,
+   "opening_hours": null,
+   "petrol": null,
+   "diesel": null,
+   "source": {
+    "url": "https://locator.iocl.com/indianoil-shri-siddhi-agencies-petrol-pump-asrondi-sindhudurg-206716/Home",
+    "title": "IndianOil locator: Shri Siddhi Agencies, Asrondi",
+    "kind": "official",
+    "opened": true,
+    "source_date": null,
+    "accessed": "2026-10-06"
+   }
+  },
+  {
+   "osm": null,
+   "company_id": "hp-388659",
+   "name": "Sindhudurg Police Fuels, Kankavli",
+   "brand": "HP",
+   "town": "Kankavli",
+   "lat": 16.26541,
+   "lon": 73.70557,
+   "km_from_start": 522.3,
+   "off_road_m": 309,
+   "opening_hours": null,
+   "petrol": null,
+   "diesel": null,
+   "source": {
+    "url": "https://petrolpump.hpretail.in/hindustan-petroleum-corporation-limited-m-s-sindhudurg-police-fuels-kankavli-petrol-pump-kankavli-sindhudurg-388659/Home",
+    "title": "HP locator: Sindhudurg Police Fuels, Kankavli, Kankavli",
+    "kind": "official",
+    "opened": true,
+    "source_date": null,
+    "accessed": "2026-10-06"
+   }
+  },
+  {
+   "osm": null,
+   "company_id": "hp-388230",
+   "name": "Naik Petroleum, Kankavli",
+   "brand": "HP",
+   "town": "Kankavli",
+   "lat": 16.25384,
+   "lon": 73.70741,
+   "km_from_start": 524.8,
+   "off_road_m": 7,
+   "opening_hours": null,
+   "petrol": null,
+   "diesel": null,
+   "source": {
+    "url": "https://petrolpump.hpretail.in/hindustan-petroleum-corporation-limited-m-s-naik-petroleum-kankavli-petrol-pump-kankavli-sindhudurg-388230/Home",
+    "title": "HP locator: Naik Petroleum, Kankavli, Kankavli",
+    "kind": "official",
+    "opened": true,
+    "source_date": null,
+    "accessed": "2026-10-06"
+   }
+  },
+  {
+   "osm": null,
+   "company_id": "iocl-208270",
+   "name": "Amol Petroleum",
+   "brand": "Indian Oil",
+   "town": "Bordave",
+   "lat": 16.18324,
+   "lon": 73.69776,
+   "km_from_start": 533.2,
+   "off_road_m": 72,
+   "opening_hours": null,
+   "petrol": null,
+   "diesel": null,
+   "source": {
+    "url": "https://locator.iocl.com/indianoil-amol-petroleum-petrol-pump-bordave-sindhudurg-208270/Home",
+    "title": "IndianOil locator: Amol Petroleum, Bordave",
+    "kind": "official",
+    "opened": true,
+    "source_date": null,
+    "accessed": "2026-10-06"
+   }
+  },
+  {
+   "osm": null,
+   "company_id": "iocl-519383",
+   "name": "Vetoba Petroleum",
+   "brand": "Indian Oil",
+   "town": "Kasal",
+   "lat": 16.14174,
+   "lon": 73.67599,
+   "km_from_start": 539.1,
+   "off_road_m": 25,
+   "opening_hours": null,
+   "petrol": null,
+   "diesel": null,
+   "source": {
+    "url": "https://locator.iocl.com/indianoil-vetoba-petroleum-petrol-pump-kasal-sindhudurg-519383/Home",
+    "title": "IndianOil locator: Vetoba Petroleum, Kasal",
+    "kind": "official",
+    "opened": true,
+    "source_date": null,
+    "accessed": "2026-10-06"
+   }
+  },
+  {
+   "osm": null,
+   "company_id": "iocl-518129",
+   "name": "Kadam Petroleum",
+   "brand": "Indian Oil",
+   "town": "Varchi Guramwad",
+   "lat": 16.06151,
+   "lon": 73.50328,
+   "km_from_start": 564.3,
+   "off_road_m": 36,
+   "opening_hours": null,
+   "petrol": null,
+   "diesel": null,
+   "source": {
+    "url": "https://locator.iocl.com/indianoil-kadam-petroleum-petrol-pump-varchi-guramwad-sindhudurg-518129/Home",
+    "title": "IndianOil locator: Kadam Petroleum, Varchi Guramwad",
+    "kind": "official",
+    "opened": true,
+    "source_date": null,
+    "accessed": "2026-10-06"
+   }
+  },
+  {
+   "osm": null,
+   "company_id": "hp-387819",
+   "name": "Shree Bhagvati Petroleum, Malvan",
+   "brand": "HP",
+   "town": "Malvan",
+   "lat": 16.05071,
+   "lon": 73.55316,
+   "km_from_start": 579.8,
+   "off_road_m": 71,
+   "opening_hours": null,
+   "petrol": null,
+   "diesel": null,
+   "source": {
+    "url": "https://petrolpump.hpretail.in/hindustan-petroleum-corporation-limited-m-s-shree-bhagvati-petroleum-malvan-petrol-pump-malvan-sindhudurg-387819/Home",
+    "title": "HP locator: Shree Bhagvati Petroleum, Malvan, Malvan",
+    "kind": "official",
+    "opened": true,
+    "source_date": null,
+    "accessed": "2026-10-06"
+   }
   },
   {
    "osm": "node/13786285001",
@@ -362,6 +956,28 @@
    "opening_hours": null,
    "petrol": null,
    "diesel": null
+  },
+  {
+   "osm": null,
+   "company_id": "hp-394740",
+   "name": "Zarap Petroleum",
+   "brand": "HP",
+   "town": "Zarap",
+   "lat": 15.94181,
+   "lon": 73.74961,
+   "km_from_start": 608.5,
+   "off_road_m": 13,
+   "opening_hours": null,
+   "petrol": null,
+   "diesel": null,
+   "source": {
+    "url": "https://petrolpump.hpretail.in/hindustan-petroleum-corporation-limited-zarap-petroleum-petrol-pump-zarap-kudal-394740/Home",
+    "title": "HP locator: Zarap Petroleum, Zarap",
+    "kind": "official",
+    "opened": true,
+    "source_date": null,
+    "accessed": "2026-10-06"
+   }
   },
   {
    "osm": "node/10147788394",
@@ -676,35 +1292,17 @@
    "diesel": null
   }
  ],
- "pump_count": 56,
- "stops": 27,
+ "pump_count": 84,
+ "stops": 49,
  "longest_gaps": [
   {
-   "from_km": 498.0,
-   "to_km": 598.6,
-   "gap_km": 100.6,
-   "from_is": "pump",
-   "to_is": "pump",
-   "near_from": "Malvan",
-   "near_to": "Malvan"
-  },
-  {
-   "from_km": 90.6,
+   "from_km": 102.9,
    "to_km": 184.5,
-   "gap_km": 93.9,
+   "gap_km": 81.6,
    "from_is": "pump",
    "to_is": "pump",
    "near_from": "Alibag",
    "near_to": "Harihareshwar"
-  },
-  {
-   "from_km": 184.5,
-   "to_km": 278.2,
-   "gap_km": 93.7,
-   "from_is": "pump",
-   "to_is": "pump",
-   "near_from": "Harihareshwar",
-   "near_to": "Dapoli"
   },
   {
    "from_km": 278.2,
@@ -716,13 +1314,31 @@
    "near_to": "Ganpatipule"
   },
   {
-   "from_km": 401.6,
-   "to_km": 454.7,
-   "gap_km": 53.1,
+   "from_km": 200.3,
+   "to_km": 263.9,
+   "gap_km": 63.6,
    "from_is": "pump",
    "to_is": "pump",
-   "near_from": "Ratnagiri",
-   "near_to": "Ratnagiri"
+   "near_from": "Harihareshwar",
+   "near_to": "Dapoli"
+  },
+  {
+   "from_km": 539.1,
+   "to_km": 564.3,
+   "gap_km": 25.2,
+   "from_is": "pump",
+   "to_is": "pump",
+   "near_from": "Malvan",
+   "near_to": "Malvan"
+  },
+  {
+   "from_km": 10.6,
+   "to_km": 35.3,
+   "gap_km": 24.7,
+   "from_is": "pump",
+   "to_is": "pump",
+   "near_from": "Mumbai",
+   "near_to": "Mumbai"
   }
  ],
  "source": {
@@ -731,5 +1347,5 @@
   "licence": "Open Database Licence",
   "url": "https://www.openstreetmap.org/copyright"
  },
- "note": "Pumps are those drawn on the open map within the search radius of the road. A pump missing from the map is missing here, so each gap is a worst case."
+ "note": "Pumps are those drawn on the open map within the search radius of the road, and, where the map has none, those on the oil companies' own locators. A pump missing from both is missing here, so each gap is a worst case."
 }

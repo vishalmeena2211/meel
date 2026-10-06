@@ -5921,7 +5921,7 @@
    {
     "id": "fuel:node-4135407790",
     "name": "HP",
-    "brand": "Hindustan Petroleum",
+    "brand": "HP",
     "near": "Manali",
     "km_from_start": 3.4,
     "off_road_m": 15,
@@ -5930,6 +5930,26 @@
     "opening_hours": null,
     "osm_url": "https://www.openstreetmap.org/node/4135407790",
     "source": null
+   },
+   {
+    "id": "fuel:iocl-278095",
+    "name": "The Lahoul Potato Growers Sissu",
+    "brand": "Indian Oil",
+    "near": "Sissu",
+    "km_from_start": 40.8,
+    "off_road_m": 16,
+    "lat": 32.48347,
+    "lon": 77.11329,
+    "opening_hours": null,
+    "osm_url": null,
+    "source": {
+     "url": "https://locator.iocl.com/indianoil-the-lahoul-potato-growers-sissu-petrol-pump-sissu-lahul-spiti-278095/Home",
+     "title": "IndianOil locator: The Lahoul Potato Growers Sissu, Sissu",
+     "kind": "official",
+     "opened": true,
+     "source_date": null,
+     "accessed": "2026-10-06"
+    }
    },
    {
     "id": "fuel:node-299659791",
@@ -5969,6 +5989,26 @@
     "opening_hours": null,
     "osm_url": "https://www.openstreetmap.org/way/233526495",
     "source": null
+   },
+   {
+    "id": "fuel:iocl-519696",
+    "name": "Thiksey Filling Station",
+    "brand": "Indian Oil",
+    "near": "Choglamsar",
+    "km_from_start": 416.2,
+    "off_road_m": 2112,
+    "lat": 34.05294,
+    "lon": 77.66489,
+    "opening_hours": null,
+    "osm_url": null,
+    "source": {
+     "url": "https://locator.iocl.com/indianoil-thiksey-filling-station-petrol-pump-choglamsar-leh-519696/Home",
+     "title": "IndianOil locator: Thiksey Filling Station, Choglamsar",
+     "kind": "official",
+     "opened": true,
+     "source_date": null,
+     "accessed": "2026-10-06"
+    }
    },
    {
     "id": "fuel:node-299707818",
@@ -6023,8 +6063,8 @@
     "source": null
    }
   ],
-  "pump_count": 10,
-  "stops": 6,
+  "pump_count": 12,
+  "stops": 8,
   "longest_gaps": [
    {
     "from_km": 72.5,
@@ -6037,43 +6077,43 @@
    },
    {
     "from_km": 3.4,
-    "to_km": 61.1,
-    "gap_km": 57.7,
+    "to_km": 40.8,
+    "gap_km": 37.4,
     "from_is": "pump",
     "to_is": "pump",
     "near_from": "Manali",
+    "near_to": "Sissu"
+   },
+   {
+    "from_km": 40.8,
+    "to_km": 61.1,
+    "gap_km": 20.3,
+    "from_is": "pump",
+    "to_is": "pump",
+    "near_from": "Sissu",
     "near_to": "Tandi"
    },
    {
     "from_km": 401.8,
+    "to_km": 416.2,
+    "gap_km": 14.4,
+    "from_is": "pump",
+    "to_is": "pump",
+    "near_from": "Karu",
+    "near_to": "Karu"
+   },
+   {
+    "from_km": 416.2,
     "to_km": 427.7,
-    "gap_km": 25.9,
+    "gap_km": 11.5,
     "from_is": "pump",
     "to_is": "pump",
     "near_from": "Karu",
     "near_to": "Leh"
-   },
-   {
-    "from_km": 61.1,
-    "to_km": 72.5,
-    "gap_km": 11.4,
-    "from_is": "pump",
-    "to_is": "pump",
-    "near_from": "Tandi",
-    "near_to": "Keylong"
-   },
-   {
-    "from_km": 427.7,
-    "to_km": 430.5,
-    "gap_km": 2.8,
-    "from_is": "pump",
-    "to_is": "pump",
-    "near_from": "Leh",
-    "near_to": "Leh"
    }
   ],
-  "note": "Pumps are those drawn on the open map within the search radius of the road. A pump missing from the map is missing here, so each gap is a worst case.",
-  "fetched": "2026-09-28"
+  "note": "Pumps are those drawn on the open map within the search radius of the road, and, where the map has none, those on the oil companies' own locators. A pump missing from both is missing here, so each gap is a worst case.",
+  "fetched": "2026-10-06"
  },
  "rules": [
   {
@@ -7259,7 +7299,7 @@
   "Video filming dates are not stated on the pages; they were published on 16 June 2025 and 3 March 2026."
  ],
  "counts": {
-  "facts": 77
+  "facts": 79
  },
- "built": "2026-09-28"
+ "built": "2026-10-06"
 }

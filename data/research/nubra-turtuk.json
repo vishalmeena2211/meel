@@ -631,5 +631,26 @@
     "The Ladakh order of August 2021 that dropped the permit for Indian citizens was not found; only news reports of it.",
     "No road number found for the Leh to Nubra road.",
     "Only one recent rider video found; it gives no filming date and was published on 10 July 2026. It shows the rider at Thang, beyond Turtuk."
-  ]
+  ],
+  "pumps_from_companies": {
+    "why": "The open map had no pump between Leh and Diskit; IndianOil lists one at Khalsar. These are from the oil companies' own locators, IndianOil's (locator.iocl.com) and HP's (petrolpump.hpretail.in), read on 6 October 2026 for the districts the road runs through. A pump within 5 km along the road of one already on the map is left out. Bharat Petroleum's locator did not answer, and other companies' pumps are not added.",
+    "pumps": [
+      {
+        "id": "iocl-237979",
+        "name": "Nubra Valley Filling Station",
+        "brand": "Indian Oil",
+        "town": "Khalsar",
+        "lat": 34.52767,
+        "lon": 77.68645,
+        "source": {
+          "url": "https://locator.iocl.com/indianoil-nubra-valley-filling-station-petrol-pump-khalsar-leh-237979/Home",
+          "title": "IndianOil locator: Nubra Valley Filling Station, Khalsar",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      }
+    ]
+  }
 }

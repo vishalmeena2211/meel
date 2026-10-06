@@ -58,16 +58,17 @@ def slugify(t):
     return re.sub(r"[^a-z0-9]+", "-", str(t).lower()).strip("-")[:60]
 
 
-# One spelling for each fuel company, as the open map spells them several ways.
+# One spelling for each fuel company, as the open map spells them several ways. Hindustan Petroleum is HP, as its
+# pumps' signboards say, the way IndianOil is Indian Oil.
 COMPANIES = {
     "indian oil": "Indian Oil", "indianoil": "Indian Oil", "iocl": "Indian Oil", "indian oil corporation": "Indian Oil",
-    "hp": "HP", "hpcl": "HP", "hp petrol pump": "HP petrol pump", "hindustan petroleum": "Hindustan Petroleum",
+    "hp": "HP", "hpcl": "HP", "hp petrol pump": "HP", "hindustan petroleum": "HP", "hindustan petrolium": "HP",
     "bharat petroleum": "Bharat Petroleum", "bpcl": "Bharat Petroleum", "bp": "Bharat Petroleum",
     "nayara": "Nayara", "nayara energy": "Nayara", "essar": "Nayara", "reliance": "Jio-bp", "jio-bp": "Jio-bp", "jio bp": "Jio-bp",
     "shell": "Shell", "petrol pump": "Petrol pump", "petrol bunk": "Petrol pump", "fuel station": "Fuel station",
     "filling station": "Filling station", "gas station": "Petrol pump", "ioc": "Indian Oil",
     "indian oil corporation limited": "Indian Oil", "bharath petroleum": "Bharat Petroleum",
-    "hindustan petroleum corporation limited": "Hindustan Petroleum", "hindustan petrol": "Hindustan Petroleum",
+    "hindustan petroleum corporation limited": "HP", "hindustan petroleum corporation ltd": "HP", "hindustan petrol": "HP",
 }
 
 

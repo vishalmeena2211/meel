@@ -3668,8 +3668,8 @@
    },
    {
     "id": "fuel:node-308489028",
-    "name": "Hindustan Petroleum",
-    "brand": "Hindustan Petroleum",
+    "name": "HP",
+    "brand": "HP",
     "near": "Chennai",
     "km_from_start": 9.6,
     "off_road_m": 705,
@@ -3695,7 +3695,7 @@
    {
     "id": "fuel:node-317821274",
     "name": "HP",
-    "brand": "Hindustan Petroleum",
+    "brand": "HP",
     "near": "Chennai",
     "km_from_start": 10.7,
     "off_road_m": 17,
@@ -3825,7 +3825,7 @@
    {
     "id": "fuel:node-11832803585",
     "name": "HP",
-    "brand": "Hindustan Petroleum",
+    "brand": "HP",
     "near": "Chennai",
     "km_from_start": 23.0,
     "off_road_m": 22,
@@ -3876,8 +3876,8 @@
    },
    {
     "id": "fuel:node-12470987701",
-    "name": "Hindustan Petroleum",
-    "brand": "Hindustan Petroleum",
+    "name": "HP",
+    "brand": "HP",
     "near": "Mahabalipuram",
     "km_from_start": 29.8,
     "off_road_m": 27,
@@ -3968,7 +3968,7 @@
    {
     "id": "fuel:node-9818721618",
     "name": "HP",
-    "brand": "Hindustan Petroleum",
+    "brand": "HP",
     "near": "Puducherry",
     "km_from_start": 140.7,
     "off_road_m": 26,
@@ -4046,7 +4046,7 @@
    {
     "id": "fuel:node-2022611744",
     "name": "HP",
-    "brand": "Hindustan Petroleum",
+    "brand": "HP",
     "near": "Puducherry",
     "km_from_start": 151.6,
     "off_road_m": 573,
@@ -4084,8 +4084,8 @@
    },
    {
     "id": "fuel:node-4316621642",
-    "name": "HP petrol pump",
-    "brand": "Hindustan Petroleum",
+    "name": "HP",
+    "brand": "HP",
     "near": "Puducherry",
     "km_from_start": 154.1,
     "off_road_m": 481,
@@ -4098,7 +4098,7 @@
    {
     "id": "fuel:way-720854168",
     "name": "HP Fuel Station",
-    "brand": "Hindustan Petroleum",
+    "brand": "HP",
     "near": "Puducherry",
     "km_from_start": 154.1,
     "off_road_m": 581,
@@ -4124,7 +4124,7 @@
    {
     "id": "fuel:way-591642098",
     "name": "HP",
-    "brand": "Hindustan Petroleum",
+    "brand": "HP",
     "near": "Puducherry",
     "km_from_start": 154.7,
     "off_road_m": 28,
@@ -4215,7 +4215,7 @@
    {
     "id": "fuel:node-11799298370",
     "name": "HP",
-    "brand": "Hindustan Petroleum",
+    "brand": "HP",
     "near": "Puducherry",
     "km_from_start": 163.7,
     "off_road_m": 367,
@@ -4293,7 +4293,7 @@
    {
     "id": "fuel:node-6105462819",
     "name": "HP Petrol Pump (R.R & Sons , HPCL Outlet)",
-    "brand": "Hindustan Petrolium",
+    "brand": "HP",
     "near": "Chidambaram",
     "km_from_start": 227.9,
     "off_road_m": 16,
@@ -4319,7 +4319,7 @@
    {
     "id": "fuel:node-11174460337",
     "name": "G.M Agencies",
-    "brand": "Hindustan Petroleum",
+    "brand": "HP",
     "near": "Chidambaram",
     "km_from_start": 231.9,
     "off_road_m": 460,
@@ -4397,7 +4397,7 @@
    {
     "id": "fuel:node-2019366437",
     "name": "HP Fuel Station",
-    "brand": "Hindustan Petroleum",
+    "brand": "HP",
     "near": "Nagapattinam",
     "km_from_start": 289.6,
     "off_road_m": 455,
@@ -4501,7 +4501,7 @@
    {
     "id": "fuel:way-611836627",
     "name": "Vandipettai",
-    "brand": "Hindustan Petroleum",
+    "brand": "HP",
     "near": "Nagapattinam",
     "km_from_start": 390.6,
     "off_road_m": 809,
@@ -4579,7 +4579,7 @@
    {
     "id": "fuel:node-11806680478",
     "name": "HP",
-    "brand": "Hindustan Petroleum",
+    "brand": "HP",
     "near": "Rameswaram",
     "km_from_start": 572.5,
     "off_road_m": 18,
@@ -5001,5 +5001,5 @@
  "counts": {
   "facts": 105
  },
- "built": "2026-09-28"
+ "built": "2026-10-06"
 }

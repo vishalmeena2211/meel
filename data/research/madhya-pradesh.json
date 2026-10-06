@@ -213,5 +213,474 @@
     "Usual number of riding days: no source found.",
     "The highway value combines Wikipedia pages for Pachmarhi, National Highway 39 and National Highway 44; only one is cited. The road from Pachmarhi to Khajuraho was not sourced.",
     "Videos: the pages give upload dates, not filming dates, so 'filmed' is filled only where the title names a date. Uploads, in order: 2022-10, 2023-02."
-  ]
+  ],
+  "pumps_from_companies": {
+    "why": "The open map had no pump between Pachmarhi and Deori, though Pachmarhi, Bankhedi, Tendukheda and Kesli have them. Only the Narmadapuram, Hoshangabad, Narsinghpur and Sagar lists were read, for that stretch. These are from the oil companies' own locators, IndianOil's (locator.iocl.com) and HP's (petrolpump.hpretail.in), read on 6 October 2026 for the districts the road runs through. A pump within 5 km along the road of one already on the map is left out. Bharat Petroleum's locator did not answer, and other companies' pumps are not added.",
+    "pumps": [
+      {
+        "id": "hp-421743",
+        "name": "Vinayak Petroleum",
+        "brand": "HP",
+        "town": "Nimsadiya",
+        "lat": 22.71475,
+        "lon": 77.81725,
+        "source": {
+          "url": "https://petrolpump.hpretail.in/hindustan-petroleum-corporation-limited-m-s-vinayak-petroleum-petrol-pump-nimsadiya-narmadapuram-421743/Home",
+          "title": "HP locator: Vinayak Petroleum, Nimsadiya",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "hp-420434",
+        "name": "Dhan Laxmi Petroleum",
+        "brand": "HP",
+        "town": "Guradiya Kalan",
+        "lat": 22.69676,
+        "lon": 78.01696,
+        "source": {
+          "url": "https://petrolpump.hpretail.in/hindustan-petroleum-corporation-limited-dhan-laxmi-petroleum-petrol-pump-guradiya-kalan-hoshangabad-420434/Home",
+          "title": "HP locator: Dhan Laxmi Petroleum, Guradiya Kalan",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "iocl-222846",
+        "name": "Shiv Shakti Petrol Pump",
+        "brand": "Indian Oil",
+        "town": "Shobhapur",
+        "lat": 22.7645,
+        "lon": 78.2553,
+        "source": {
+          "url": "https://locator.iocl.com/indianoil-shiv-shakti-petrol-pump-petrol-pump-shobhapur-hoshangabad-222846/Home",
+          "title": "IndianOil locator: Shiv Shakti Petrol Pump, Shobhapur",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "hp-410505",
+        "name": "Dr Vyas Petroleum",
+        "brand": "HP",
+        "town": "Jhirmita",
+        "lat": 22.77113,
+        "lon": 78.28393,
+        "source": {
+          "url": "https://petrolpump.hpretail.in/hindustan-petroleum-corporation-limited-dr-vyas-petroleum-petrol-pump-jhirmita-hoshangabad-410505/Home",
+          "title": "HP locator: Dr Vyas Petroleum, Jhirmita",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "iocl-223032",
+        "name": "Saraswati Fuel Centre",
+        "brand": "Indian Oil",
+        "town": "Anhai",
+        "lat": 22.7672,
+        "lon": 78.5158,
+        "source": {
+          "url": "https://locator.iocl.com/indianoil-saraswati-fuel-centre-petrol-pump-anhai-hoshangabad-223032/Home",
+          "title": "IndianOil locator: Saraswati Fuel Centre, Anhai",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "iocl-222036",
+        "name": "PTS Pachmarhi Filling Station",
+        "brand": "Indian Oil",
+        "town": "Pachmarhi Bazar",
+        "lat": 22.46017,
+        "lon": 78.42738,
+        "source": {
+          "url": "https://locator.iocl.com/indianoil-pts-pachmarhi-filling-station-petrol-pump-pachmarhi-bazar-hoshangabad-222036/Home",
+          "title": "IndianOil locator: PTS Pachmarhi Filling Station, Pachmarhi Bazar",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "hp-418792",
+        "name": "Dr Vyas Filling Station",
+        "brand": "HP",
+        "town": "Bankhedi",
+        "lat": 22.77617,
+        "lon": 78.53311,
+        "source": {
+          "url": "https://petrolpump.hpretail.in/hindustan-petroleum-corporation-limited-m-s-dr-vyas-filling-station-petrol-pump-bankhedi-hoshangabad-418792/Home",
+          "title": "HP locator: Dr Vyas Filling Station, Bankhedi",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "iocl-223510",
+        "name": "Mehra Indian Oil",
+        "brand": "Indian Oil",
+        "town": "Anhai",
+        "lat": 22.78456,
+        "lon": 78.54804,
+        "source": {
+          "url": "https://locator.iocl.com/indianoil-mehra-indian-oil-petrol-pump-anhai-hoshangabad-223510/Home",
+          "title": "IndianOil locator: Mehra Indian Oil, Anhai",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "iocl-222167",
+        "name": "Palia Piparia Kisan Sewakendra",
+        "brand": "Indian Oil",
+        "town": "Bankhedi",
+        "lat": 22.80636,
+        "lon": 78.57939,
+        "source": {
+          "url": "https://locator.iocl.com/indianoil-palia-piparia-kisan-sewakendra-petrol-pump-bankhedi-hoshangabad-222167/Home",
+          "title": "IndianOil locator: Palia Piparia Kisan Sewakendra, Bankhedi",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "iocl-222815",
+        "name": "Anand Kisan Seva Kendra",
+        "brand": "Indian Oil",
+        "town": "Amada",
+        "lat": 22.84119,
+        "lon": 78.67156,
+        "source": {
+          "url": "https://locator.iocl.com/indianoil-anand-kisan-seva-kendra-petrol-pump-amada-narsinghpur-222815/Home",
+          "title": "IndianOil locator: Anand Kisan Seva Kendra, Amada",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "iocl-222329",
+        "name": "Shree Gitanjali Fuel Station",
+        "brand": "Indian Oil",
+        "town": "Amgaon Chhota",
+        "lat": 22.89201,
+        "lon": 78.70665,
+        "source": {
+          "url": "https://locator.iocl.com/indianoil-shree-gitanjali-fuel-station-petrol-pump-amgaon-chhota-narsinghpur-222329/Home",
+          "title": "IndianOil locator: Shree Gitanjali Fuel Station, Amgaon Chhota",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "iocl-222614",
+        "name": "Rajnandini Filling Centre",
+        "brand": "Indian Oil",
+        "town": "Amgaonchhota",
+        "lat": 22.90867,
+        "lon": 78.74372,
+        "source": {
+          "url": "https://locator.iocl.com/indianoil-rajnandini-filling-centre-petrol-pump-amgaonchhota-narsinghpur-222614/Home",
+          "title": "IndianOil locator: Rajnandini Filling Centre, Amgaonchhota",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "iocl-222678",
+        "name": "Preeti Kisan Seva Kendra",
+        "brand": "Indian Oil",
+        "town": "Amgaonchhota",
+        "lat": 22.9007,
+        "lon": 78.77598,
+        "source": {
+          "url": "https://locator.iocl.com/indianoil-preeti-kisan-seva-kendra-petrol-pump-amgaonchhota-narsinghpur-222678/Home",
+          "title": "IndianOil locator: Preeti Kisan Seva Kendra, Amgaonchhota",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "hp-406260",
+        "name": "Vishnoi Fuel Station",
+        "brand": "HP",
+        "town": "Patlon",
+        "lat": 22.90682,
+        "lon": 78.78924,
+        "source": {
+          "url": "https://petrolpump.hpretail.in/hindustan-petroleum-corporation-limited-vishnoi-fuel-station-petrol-pump-patlon-narsinghpur-406260/Home",
+          "title": "HP locator: Vishnoi Fuel Station, Patlon",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "iocl-226923",
+        "name": "Rajendra & Company",
+        "brand": "Indian Oil",
+        "town": "Amgaon",
+        "lat": 22.9198,
+        "lon": 78.7755,
+        "source": {
+          "url": "https://locator.iocl.com/indianoil-rajendra-company-petrol-pump-amgaon-narsinghpur-226923/Home",
+          "title": "IndianOil locator: Rajendra & Company, Amgaon",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "hp-406285",
+        "name": "Shree Laxmi Petroleum",
+        "brand": "HP",
+        "town": "Niranjan Ward",
+        "lat": 22.93342,
+        "lon": 78.79349,
+        "source": {
+          "url": "https://petrolpump.hpretail.in/hindustan-petroleum-corporation-limited-shree-laxmi-petroleum-petrol-pump-niranjan-ward-narsinghpur-406285/Home",
+          "title": "HP locator: Shree Laxmi Petroleum, Niranjan Ward",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "iocl-222609",
+        "name": "Sarthak Kisan Sewa Kendra",
+        "brand": "Indian Oil",
+        "town": "Amgaonchhota",
+        "lat": 22.9966,
+        "lon": 78.7864,
+        "source": {
+          "url": "https://locator.iocl.com/indianoil-sarthak-kisan-sewa-kendra-petrol-pump-amgaonchhota-narsinghpur-222609/Home",
+          "title": "IndianOil locator: Sarthak Kisan Sewa Kendra, Amgaonchhota",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "hp-406625",
+        "name": "Nandishvar Dvip Filling Station",
+        "brand": "HP",
+        "town": "Tendukheda",
+        "lat": 23.16838,
+        "lon": 78.86495,
+        "source": {
+          "url": "https://petrolpump.hpretail.in/hindustan-petroleum-corporation-limited-mshsd-nandishvar-dvip-filling-station-petrol-pump-tendukheda-narsinghpur-406625/Home",
+          "title": "HP locator: Nandishvar Dvip Filling Station, Tendukheda",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "hp-406815",
+        "name": "Ashirwad Petroleum",
+        "brand": "HP",
+        "town": "Jaitpur",
+        "lat": 23.17147,
+        "lon": 78.85735,
+        "source": {
+          "url": "https://petrolpump.hpretail.in/hindustan-petroleum-corporation-limited-ashirwad-petroleum-petrol-pump-jaitpur-narsinghpur-406815/Home",
+          "title": "HP locator: Ashirwad Petroleum, Jaitpur",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "iocl-279166",
+        "name": "Rb Traders",
+        "brand": "Indian Oil",
+        "town": "Tendukhed",
+        "lat": 23.1762,
+        "lon": 78.8927,
+        "source": {
+          "url": "https://locator.iocl.com/indianoil-rb-traders-petrol-pump-tendukhed-narsinghpur-279166/Home",
+          "title": "IndianOil locator: Rb Traders, Tendukhed",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "hp-404502",
+        "name": "Om Sai Ram Petrol Pump",
+        "brand": "HP",
+        "town": "Kesli",
+        "lat": 23.42516,
+        "lon": 78.80851,
+        "source": {
+          "url": "https://petrolpump.hpretail.in/hindustan-petroleum-corporation-limited-om-sai-ram-petrol-pump-petrol-pump-kesli-sagar-404502/Home",
+          "title": "HP locator: Om Sai Ram Petrol Pump, Kesli",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "iocl-222190",
+        "name": "Maa Narmada Ji Filling Station",
+        "brand": "Indian Oil",
+        "town": "Bamhori Bika",
+        "lat": 23.76419,
+        "lon": 78.83143,
+        "source": {
+          "url": "https://locator.iocl.com/indianoil-maa-narmada-ji-filling-station-petrol-pump-bamhori-bika-sagar-222190/Home",
+          "title": "IndianOil locator: Maa Narmada Ji Filling Station, Bamhori Bika",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "iocl-223823",
+        "name": "Samaysaar Petroleum",
+        "brand": "Indian Oil",
+        "town": "Bamhori Bika",
+        "lat": 23.7717,
+        "lon": 78.8093,
+        "source": {
+          "url": "https://locator.iocl.com/indianoil-samaysaar-petroleum-petrol-pump-bamhori-bika-sagar-223823/Home",
+          "title": "IndianOil locator: Samaysaar Petroleum, Bamhori Bika",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "hp-391597",
+        "name": "Pandit Motilal Petrol Pump",
+        "brand": "HP",
+        "town": "Pathariya Jat",
+        "lat": 23.80446,
+        "lon": 78.79579,
+        "source": {
+          "url": "https://petrolpump.hpretail.in/hindustan-petroleum-corporation-limited-pandit-motilal-petrol-pump-petrol-pump-pathariya-jat-sagar-391597/Home",
+          "title": "HP locator: Pandit Motilal Petrol Pump, Pathariya Jat",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "iocl-222051",
+        "name": "Sarvashresta Petroleum Services",
+        "brand": "Indian Oil",
+        "town": "Sironja",
+        "lat": 23.8183,
+        "lon": 78.8023,
+        "source": {
+          "url": "https://locator.iocl.com/indianoil-sarvashresta-petroleum-services-petrol-pump-sironja-sagar-222051/Home",
+          "title": "IndianOil locator: Sarvashresta Petroleum Services, Sironja",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "hp-406861",
+        "name": "Gyanoday Petrol Station",
+        "brand": "HP",
+        "town": "Sonpur",
+        "lat": 24.07743,
+        "lon": 78.97743,
+        "source": {
+          "url": "https://petrolpump.hpretail.in/hindustan-petroleum-corporation-limited-gyanoday-petrol-station-petrol-pump-sonpur-sagar-406861/Home",
+          "title": "HP locator: Gyanoday Petrol Station, Sonpur",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "hp-417500",
+        "name": "Avatar Filling Station",
+        "brand": "HP",
+        "town": "Kaneri",
+        "lat": 24.15949,
+        "lon": 79.01666,
+        "source": {
+          "url": "https://petrolpump.hpretail.in/hindustan-petroleum-corporation-limited-avatar-filling-station-petrol-pump-kaneri-sagar-417500/Home",
+          "title": "HP locator: Avatar Filling Station, Kaneri",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "hp-421542",
+        "name": "Bhojak Filling Station",
+        "brand": "HP",
+        "town": "Mohari",
+        "lat": 24.19889,
+        "lon": 79.03338,
+        "source": {
+          "url": "https://petrolpump.hpretail.in/hindustan-petroleum-corporation-limited-m-s-bhojak-filling-station-petrol-pump-mohari-sagar-421542/Home",
+          "title": "HP locator: Bhojak Filling Station, Mohari",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "hp-579469",
+        "name": "Shri Shivai Filling Station",
+        "brand": "HP",
+        "town": "Kanpur Sagar Highway",
+        "lat": 24.25841,
+        "lon": 79.06613,
+        "source": {
+          "url": "https://petrolpump.hpretail.in/hindustan-petroleum-corporation-limited-shri-shivai-filling-station-petrol-pump-kanpur-sagar-highway-sagar-579469/Home",
+          "title": "HP locator: Shri Shivai Filling Station, Kanpur Sagar Highway",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      }
+    ]
+  }
 }

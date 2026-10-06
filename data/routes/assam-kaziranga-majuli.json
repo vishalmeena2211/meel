@@ -2538,7 +2538,7 @@
    {
     "id": "fuel:node-13516600023",
     "name": "CLUB HP",
-    "brand": "Hindustan Petroleum",
+    "brand": "HP",
     "near": "Guwahati",
     "km_from_start": 1.9,
     "off_road_m": 19,
@@ -2705,6 +2705,66 @@
     "source": null
    },
    {
+    "id": "fuel:iocl-241208",
+    "name": "Krishna Filling Station",
+    "brand": "Indian Oil",
+    "near": "Dhopguri",
+    "km_from_start": 37.1,
+    "off_road_m": 57,
+    "lat": 26.1156,
+    "lon": 92.05469,
+    "opening_hours": null,
+    "osm_url": null,
+    "source": {
+     "url": "https://locator.iocl.com/indianoil-krishna-filling-station-petrol-pump-dhopguri-kamrup-241208/Home",
+     "title": "IndianOil locator: Krishna Filling Station, Dhopguri",
+     "kind": "official",
+     "opened": true,
+     "source_date": null,
+     "accessed": "2026-10-06"
+    }
+   },
+   {
+    "id": "fuel:iocl-241275",
+    "name": "Purnima Filling Centre",
+    "brand": "Indian Oil",
+    "near": "Ahatguri",
+    "km_from_start": 73.5,
+    "off_road_m": 6,
+    "lat": 26.14039,
+    "lon": 92.3549,
+    "opening_hours": null,
+    "osm_url": null,
+    "source": {
+     "url": "https://locator.iocl.com/indianoil-purnima-filling-centre-petrol-pump-ahatguri-morigaon-241275/Home",
+     "title": "IndianOil locator: Purnima Filling Centre, Ahatguri",
+     "kind": "official",
+     "opened": true,
+     "source_date": null,
+     "accessed": "2026-10-06"
+    }
+   },
+   {
+    "id": "fuel:iocl-240941",
+    "name": "Bangaldhara Ganga Service Station",
+    "brand": "Indian Oil",
+    "near": "Ahatguri",
+    "km_from_start": 80.7,
+    "off_road_m": 59,
+    "lat": 26.18989,
+    "lon": 92.37977,
+    "opening_hours": null,
+    "osm_url": null,
+    "source": {
+     "url": "https://locator.iocl.com/indianoil-bangaldhara-ganga-service-station-petrol-pump-ahatguri-morigaon-240941/Home",
+     "title": "IndianOil locator: Bangaldhara Ganga Service Station, Ahatguri",
+     "kind": "official",
+     "opened": true,
+     "source_date": null,
+     "accessed": "2026-10-06"
+    }
+   },
+   {
     "id": "fuel:node-11124764716",
     "name": "Bharat Petroleum",
     "brand": "Bharat Petroleum",
@@ -2729,6 +2789,386 @@
     "opening_hours": null,
     "osm_url": "https://www.openstreetmap.org/node/11122066668",
     "source": null
+   },
+   {
+    "id": "fuel:iocl-241225",
+    "name": "Sarma Barua Engg Depot",
+    "brand": "Indian Oil",
+    "near": "Barchila",
+    "km_from_start": 110.2,
+    "off_road_m": 1548,
+    "lat": 26.30357,
+    "lon": 92.62647,
+    "opening_hours": null,
+    "osm_url": null,
+    "source": {
+     "url": "https://locator.iocl.com/indianoil-sarma-barua-engg-depot-petrol-pump-barchila-nagaon-241225/Home",
+     "title": "IndianOil locator: Sarma Barua Engg Depot, Barchila",
+     "kind": "official",
+     "opened": true,
+     "source_date": null,
+     "accessed": "2026-10-06"
+    }
+   },
+   {
+    "id": "fuel:iocl-241172",
+    "name": "Kamakhya Service Station",
+    "brand": "Indian Oil",
+    "near": "Barchila",
+    "km_from_start": 111.0,
+    "off_road_m": 2053,
+    "lat": 26.30865,
+    "lon": 92.63473,
+    "opening_hours": null,
+    "osm_url": null,
+    "source": {
+     "url": "https://locator.iocl.com/indianoil-kamakhya-service-station-petrol-pump-barchila-nagaon-241172/Home",
+     "title": "IndianOil locator: Kamakhya Service Station, Barchila",
+     "kind": "official",
+     "opened": true,
+     "source_date": null,
+     "accessed": "2026-10-06"
+    }
+   },
+   {
+    "id": "fuel:iocl-240916",
+    "name": "Jaranigaon Sgs Higway Refill Servic",
+    "brand": "Indian Oil",
+    "near": "Baralimari",
+    "km_from_start": 115.1,
+    "off_road_m": 52,
+    "lat": 26.30065,
+    "lon": 92.6738,
+    "opening_hours": null,
+    "osm_url": null,
+    "source": {
+     "url": "https://locator.iocl.com/indianoil-jaranigaon-sgs-higway-refill-servic-petrol-pump-baralimari-nagaon-240916/Home",
+     "title": "IndianOil locator: Jaranigaon Sgs Higway Refill Servic, Baralimari",
+     "kind": "official",
+     "opened": true,
+     "source_date": null,
+     "accessed": "2026-10-06"
+    }
+   },
+   {
+    "id": "fuel:hp-398696",
+    "name": "Hp Dewdhar",
+    "brand": "HP",
+    "near": "Dewdhar",
+    "km_from_start": 117.0,
+    "off_road_m": 327,
+    "lat": 26.30847,
+    "lon": 92.69105,
+    "opening_hours": null,
+    "osm_url": null,
+    "source": {
+     "url": "https://petrolpump.hpretail.in/hindustan-petroleum-corporation-limited-hp-dewdhar-petrol-pump-dewdhar-nagaon-398696/Home",
+     "title": "HP locator: Hp Dewdhar, Dewdhar",
+     "kind": "official",
+     "opened": true,
+     "source_date": null,
+     "accessed": "2026-10-06"
+    }
+   },
+   {
+    "id": "fuel:hp-398400",
+    "name": "Star Hp",
+    "brand": "HP",
+    "near": "Morakolong",
+    "km_from_start": 120.7,
+    "off_road_m": 2070,
+    "lat": 26.33944,
+    "lon": 92.70056,
+    "opening_hours": null,
+    "osm_url": null,
+    "source": {
+     "url": "https://petrolpump.hpretail.in/hindustan-petroleum-corporation-limited-m-s-star-hp-petrol-pump-morakolong-nagaon-398400/Home",
+     "title": "HP locator: Star Hp, Morakolong",
+     "kind": "official",
+     "opened": true,
+     "source_date": null,
+     "accessed": "2026-10-06"
+    }
+   },
+   {
+    "id": "fuel:hp-398411",
+    "name": "Laxmi Service Station",
+    "brand": "HP",
+    "near": "Dimoruguri",
+    "km_from_start": 122.1,
+    "off_road_m": 1582,
+    "lat": 26.34632,
+    "lon": 92.71845,
+    "opening_hours": null,
+    "osm_url": null,
+    "source": {
+     "url": "https://petrolpump.hpretail.in/hindustan-petroleum-corporation-limited-m-s-laxmi-service-station-petrol-pump-dimoruguri-nagaon-398411/Home",
+     "title": "HP locator: Laxmi Service Station, Dimoruguri",
+     "kind": "official",
+     "opened": true,
+     "source_date": null,
+     "accessed": "2026-10-06"
+    }
+   },
+   {
+    "id": "fuel:iocl-518447",
+    "name": "Coco Wsa Uriagaon Adhoc Highway Car",
+    "brand": "Indian Oil",
+    "near": "Uriagaon",
+    "km_from_start": 123.9,
+    "off_road_m": 39,
+    "lat": 26.345,
+    "lon": 92.7409,
+    "opening_hours": null,
+    "osm_url": null,
+    "source": {
+     "url": "https://locator.iocl.com/indianoil-coco-wsa-uriagaon-adhoc-highway-car-petrol-pump-uriagaon-nagaon-518447/Home",
+     "title": "IndianOil locator: Coco Wsa Uriagaon Adhoc Highway Car, Uriagaon",
+     "kind": "official",
+     "opened": true,
+     "source_date": null,
+     "accessed": "2026-10-06"
+    }
+   },
+   {
+    "id": "fuel:hp-403557",
+    "name": "Bajrang Filling Station",
+    "brand": "HP",
+    "near": "Samaguri",
+    "km_from_start": 139.7,
+    "off_road_m": 6,
+    "lat": 26.42099,
+    "lon": 92.84873,
+    "opening_hours": null,
+    "osm_url": null,
+    "source": {
+     "url": "https://petrolpump.hpretail.in/hindustan-petroleum-corporation-limited-bajrang-filling-station-petrol-pump-samaguri-nagaon-403557/Home",
+     "title": "HP locator: Bajrang Filling Station, Samaguri",
+     "kind": "official",
+     "opened": true,
+     "source_date": null,
+     "accessed": "2026-10-06"
+    }
+   },
+   {
+    "id": "fuel:iocl-241372",
+    "name": "Amoni Service Centre",
+    "brand": "Indian Oil",
+    "near": "Amoni",
+    "km_from_start": 147.5,
+    "off_road_m": 43,
+    "lat": 26.45431,
+    "lon": 92.90908,
+    "opening_hours": null,
+    "osm_url": null,
+    "source": {
+     "url": "https://locator.iocl.com/indianoil-amoni-service-centre-petrol-pump-amoni-nagaon-241372/Home",
+     "title": "IndianOil locator: Amoni Service Centre, Amoni",
+     "kind": "official",
+     "opened": true,
+     "source_date": null,
+     "accessed": "2026-10-06"
+    }
+   },
+   {
+    "id": "fuel:iocl-241268",
+    "name": "J J Enterprise Missa",
+    "brand": "Indian Oil",
+    "near": "Amoni",
+    "km_from_start": 151.8,
+    "off_road_m": 9,
+    "lat": 26.47929,
+    "lon": 92.93989,
+    "opening_hours": null,
+    "osm_url": null,
+    "source": {
+     "url": "https://locator.iocl.com/indianoil-j-j-enterprise-missa-petrol-pump-amoni-nagaon-241268/Home",
+     "title": "IndianOil locator: J J Enterprise Missa, Amoni",
+     "kind": "official",
+     "opened": true,
+     "source_date": null,
+     "accessed": "2026-10-06"
+    }
+   },
+   {
+    "id": "fuel:hp-407008",
+    "name": "Askaran Begraj Rathi",
+    "brand": "HP",
+    "near": "Misa",
+    "km_from_start": 152.1,
+    "off_road_m": 10,
+    "lat": 26.48151,
+    "lon": 92.94177,
+    "opening_hours": null,
+    "osm_url": null,
+    "source": {
+     "url": "https://petrolpump.hpretail.in/hindustan-petroleum-corporation-limited-askaran-begraj-rathi-petrol-pump-misa-nagaon-407008/Home",
+     "title": "HP locator: Askaran Begraj Rathi, Misa",
+     "kind": "official",
+     "opened": true,
+     "source_date": null,
+     "accessed": "2026-10-06"
+    }
+   },
+   {
+    "id": "fuel:iocl-518284",
+    "name": "Kaliabor Energy Station",
+    "brand": "Indian Oil",
+    "near": "Missa Cantonment",
+    "km_from_start": 154.5,
+    "off_road_m": 25,
+    "lat": 26.49986,
+    "lon": 92.95255,
+    "opening_hours": null,
+    "osm_url": null,
+    "source": {
+     "url": "https://locator.iocl.com/indianoil-kaliabor-energy-station-petrol-pump-missa-cantonment-nagaon-518284/Home",
+     "title": "IndianOil locator: Kaliabor Energy Station, Missa Cantonment",
+     "kind": "official",
+     "opened": true,
+     "source_date": null,
+     "accessed": "2026-10-06"
+    }
+   },
+   {
+    "id": "fuel:iocl-564274",
+    "name": "Bnk Petroleum Services",
+    "brand": "Indian Oil",
+    "near": "Darigaji",
+    "km_from_start": 158.1,
+    "off_road_m": 16,
+    "lat": 26.5292,
+    "lon": 92.94743,
+    "opening_hours": null,
+    "osm_url": null,
+    "source": {
+     "url": "https://locator.iocl.com/indianoil-bnk-petroleum-services-petrol-pump-darigaji-nagaon-564274/Home",
+     "title": "IndianOil locator: Bnk Petroleum Services, Darigaji",
+     "kind": "official",
+     "opened": true,
+     "source_date": null,
+     "accessed": "2026-10-06"
+    }
+   },
+   {
+    "id": "fuel:iocl-241228",
+    "name": "Anupama Service Station",
+    "brand": "Indian Oil",
+    "near": "Kuwaritol",
+    "km_from_start": 163.6,
+    "off_road_m": 0,
+    "lat": 26.56077,
+    "lon": 92.94346,
+    "opening_hours": null,
+    "osm_url": null,
+    "source": {
+     "url": "https://locator.iocl.com/indianoil-anupama-service-station-petrol-pump-kuwaritol-nagaon-241228/Home",
+     "title": "IndianOil locator: Anupama Service Station, Kuwaritol",
+     "kind": "official",
+     "opened": true,
+     "source_date": null,
+     "accessed": "2026-10-06"
+    }
+   },
+   {
+    "id": "fuel:iocl-564237",
+    "name": "Joyshree Parkar Servo Service Stati",
+    "brand": "Indian Oil",
+    "near": "Village Chatial",
+    "km_from_start": 165.0,
+    "off_road_m": 17,
+    "lat": 26.5689,
+    "lon": 92.95335,
+    "opening_hours": null,
+    "osm_url": null,
+    "source": {
+     "url": "https://locator.iocl.com/indianoil-joyshree-parkar-servo-service-stati-petrol-pump-village-chatial-nagaon-564237/Home",
+     "title": "IndianOil locator: Joyshree Parkar Servo Service Stati, Village Chatial",
+     "kind": "official",
+     "opened": true,
+     "source_date": null,
+     "accessed": "2026-10-06"
+    }
+   },
+   {
+    "id": "fuel:iocl-241160",
+    "name": "J B Fuel Centre Jakhla",
+    "brand": "Indian Oil",
+    "near": "Jakhalabandha",
+    "km_from_start": 169.5,
+    "off_road_m": 12,
+    "lat": 26.58507,
+    "lon": 92.98608,
+    "opening_hours": null,
+    "osm_url": null,
+    "source": {
+     "url": "https://locator.iocl.com/indianoil-j-b-fuel-centre-jakhla-petrol-pump-jakhalabandha-nagaon-241160/Home",
+     "title": "IndianOil locator: J B Fuel Centre Jakhla, Jakhalabandha",
+     "kind": "official",
+     "opened": true,
+     "source_date": null,
+     "accessed": "2026-10-06"
+    }
+   },
+   {
+    "id": "fuel:iocl-241487",
+    "name": "J B Fuel Centre",
+    "brand": "Indian Oil",
+    "near": "Sekoni",
+    "km_from_start": 174.6,
+    "off_road_m": 53,
+    "lat": 26.56832,
+    "lon": 93.03013,
+    "opening_hours": null,
+    "osm_url": null,
+    "source": {
+     "url": "https://locator.iocl.com/indianoil-j-b-fuel-centre-petrol-pump-sekoni-nagaon-241487/Home",
+     "title": "IndianOil locator: J B Fuel Centre, Sekoni",
+     "kind": "official",
+     "opened": true,
+     "source_date": null,
+     "accessed": "2026-10-06"
+    }
+   },
+   {
+    "id": "fuel:hp-422394",
+    "name": "Duarbagari Coop Society Ltd",
+    "brand": "HP",
+    "near": "Kuthari",
+    "km_from_start": 201.5,
+    "off_road_m": 2,
+    "lat": 26.57691,
+    "lon": 93.28159,
+    "opening_hours": null,
+    "osm_url": null,
+    "source": {
+     "url": "https://petrolpump.hpretail.in/hindustan-petroleum-corporation-limited-duarbagari-coop-society-ltd-petrol-pump-kuthari-nagaon-422394/Home",
+     "title": "HP locator: Duarbagari Coop Society Ltd, Kuthari",
+     "kind": "official",
+     "opened": true,
+     "source_date": null,
+     "accessed": "2026-10-06"
+    }
+   },
+   {
+    "id": "fuel:iocl-241134",
+    "name": "Kaziranga Filling Station",
+    "brand": "Indian Oil",
+    "near": "Kohora",
+    "km_from_start": 214.3,
+    "off_road_m": 18,
+    "lat": 26.58923,
+    "lon": 93.40646,
+    "opening_hours": null,
+    "osm_url": null,
+    "source": {
+     "url": "https://locator.iocl.com/indianoil-kaziranga-filling-station-petrol-pump-kohora-bokakhat-241134/Home",
+     "title": "IndianOil locator: Kaziranga Filling Station, Kohora",
+     "kind": "official",
+     "opened": true,
+     "source_date": null,
+     "accessed": "2026-10-06"
+    }
    },
    {
     "id": "fuel:node-12091028549",
@@ -2809,6 +3249,66 @@
     "source": null
    },
    {
+    "id": "fuel:iocl-240966",
+    "name": "Ladulal Jain & Sons",
+    "brand": "Indian Oil",
+    "near": "Behora",
+    "km_from_start": 248.2,
+    "off_road_m": 31,
+    "lat": 26.63166,
+    "lon": 93.72375,
+    "opening_hours": null,
+    "osm_url": null,
+    "source": {
+     "url": "https://locator.iocl.com/indianoil-ladulal-jain-sons-petrol-pump-behora-golaghat-240966/Home",
+     "title": "IndianOil locator: Ladulal Jain & Sons, Behora",
+     "kind": "official",
+     "opened": true,
+     "source_date": null,
+     "accessed": "2026-10-06"
+    }
+   },
+   {
+    "id": "fuel:iocl-278700",
+    "name": "G.s. Boruah Fuel Station",
+    "brand": "Indian Oil",
+    "near": "Dhudang",
+    "km_from_start": 250.9,
+    "off_road_m": 13,
+    "lat": 26.6415,
+    "lon": 93.74453,
+    "opening_hours": null,
+    "osm_url": null,
+    "source": {
+     "url": "https://locator.iocl.com/indianoil-m-s-g-s-boruah-fuel-station-petrol-pump-dhudang-golaghat-278700/Home",
+     "title": "IndianOil locator: G.s. Boruah Fuel Station, Dhudang",
+     "kind": "official",
+     "opened": true,
+     "source_date": null,
+     "accessed": "2026-10-06"
+    }
+   },
+   {
+    "id": "fuel:iocl-240991",
+    "name": "Universal Agencies",
+    "brand": "Indian Oil",
+    "near": "Bholaguri",
+    "km_from_start": 263.9,
+    "off_road_m": 33,
+    "lat": 26.66351,
+    "lon": 93.86513,
+    "opening_hours": null,
+    "osm_url": null,
+    "source": {
+     "url": "https://locator.iocl.com/indianoil-universal-agencies-petrol-pump-bholaguri-golaghat-240991/Home",
+     "title": "IndianOil locator: Universal Agencies, Bholaguri",
+     "kind": "official",
+     "opened": true,
+     "source_date": null,
+     "accessed": "2026-10-06"
+    }
+   },
+   {
     "id": "fuel:node-12090192258",
     "name": "Petrol pump",
     "brand": null,
@@ -2874,27 +3374,9 @@
     "source": null
    }
   ],
-  "pump_count": 36,
-  "stops": 14,
+  "pump_count": 61,
+  "stops": 33,
   "longest_gaps": [
-   {
-    "from_km": 96.9,
-    "to_km": 222.2,
-    "gap_km": 125.3,
-    "from_is": "pump",
-    "to_is": "pump",
-    "near_from": "Guwahati",
-    "near_to": "Kohora"
-   },
-   {
-    "from_km": 27.3,
-    "to_km": 93.8,
-    "gap_km": 66.5,
-    "from_is": "pump",
-    "to_is": "pump",
-    "near_from": "Guwahati",
-    "near_to": "Guwahati"
-   },
    {
     "from_km": 295.4,
     "to_km": 333.4,
@@ -2905,13 +3387,22 @@
     "near_to": "Kamalabari"
    },
    {
-    "from_km": 240.4,
-    "to_km": 272.3,
-    "gap_km": 31.9,
+    "from_km": 37.1,
+    "to_km": 73.5,
+    "gap_km": 36.4,
+    "from_is": "pump",
+    "to_is": "pump",
+    "near_from": "Guwahati",
+    "near_to": "Guwahati"
+   },
+   {
+    "from_km": 174.6,
+    "to_km": 201.5,
+    "gap_km": 26.9,
     "from_is": "pump",
     "to_is": "pump",
     "near_from": "Kohora",
-    "near_to": "Jorhat"
+    "near_to": "Kohora"
    },
    {
     "from_km": 276.6,
@@ -2921,10 +3412,19 @@
     "to_is": "pump",
     "near_from": "Jorhat",
     "near_to": "Jorhat"
+   },
+   {
+    "from_km": 123.9,
+    "to_km": 139.7,
+    "gap_km": 15.8,
+    "from_is": "pump",
+    "to_is": "pump",
+    "near_from": "Kohora",
+    "near_to": "Kohora"
    }
   ],
-  "note": "Pumps are those drawn on the open map within the search radius of the road. A pump missing from the map is missing here, so each gap is a worst case.",
-  "fetched": "2026-09-28"
+  "note": "Pumps are those drawn on the open map within the search radius of the road, and, where the map has none, those on the oil companies' own locators. A pump missing from both is missing here, so each gap is a worst case.",
+  "fetched": "2026-10-06"
  },
  "rules": [
   {
@@ -3248,7 +3748,7 @@
   "Videos not collected."
  ],
  "counts": {
-  "facts": 59
+  "facts": 84
  },
- "built": "2026-09-28"
+ "built": "2026-10-06"
 }

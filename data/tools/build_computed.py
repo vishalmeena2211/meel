@@ -28,6 +28,9 @@ from routes_def import ROUTES  # noqa: E402
 
 UA = "meel-rideplanner/0.1 (hobby route notebook; https://rideplanner.in)"
 TODAY = time.strftime("%Y-%m-%d")
+# The main Overpass server often times out. Another can be named for a run, for example
+# OVERPASS_URL=https://maps.mail.ru/osm/tools/overpass/api/interpreter
+OVERPASS = os.environ.get("OVERPASS_URL") or "https://overpass-api.de/api/interpreter"
 
 # Positions fixed by hand, where the geocoder finds nothing or finds the wrong place.
 # Each one says where the position came from.
@@ -347,7 +350,7 @@ def fuel(args):
         pts = ",".join(f"{y:.4f},{x:.4f}" for x, y in q_line)
         q = f'[out:json][timeout:120];nwr["amenity"="fuel"](around:{radius},{pts});out center tags;'
         try:
-            d = get("https://overpass-api.de/api/interpreter",
+            d = get(OVERPASS,
                     data=urllib.parse.urlencode({"data": q}).encode(), timeout=150, tries=4, wait=8)
         except Exception as e:  # noqa: BLE001
             print(f"fuel {r['slug']}: FAILED {e}")
@@ -367,8 +370,8 @@ def fuel(args):
                           "lat": round(la, 5), "lon": round(lo, 5), "km_from_start": round(km * scale, 1),
                           "off_road_m": round(off), "opening_hours": t.get("opening_hours"),
                           "petrol": t.get("fuel:octane_91") or t.get("fuel:petrol"), "diesel": t.get("fuel:diesel")})
-        # Where the open map has no pump in a town, pumps from the oil company's own locator, kept in the route's
-        # research file with their source. One within 300 m of a pump already on the map is the same pump.
+        # Where the open map has no pump in a town, pumps from the oil companies' own locators (company_pumps.py), kept
+        # in the route's research file with their source. One within 300 m of a pump already on the map is the same pump.
         extra = (load(os.path.join(HERE, "..", "research", r["slug"] + ".json"), {}) or {}).get("pumps_from_companies") or {}
         added = 0
         for x in extra.get("pumps", []):
@@ -411,7 +414,7 @@ def fuel(args):
                     "source": {"service": "Overpass API", "data": "OpenStreetMap contributors",
                                "licence": "Open Database Licence", "url": "https://www.openstreetmap.org/copyright"},
                     "note": ("Pumps are those drawn on the open map within the search radius of the road, and, where the "
-                             "map has none, those on the oil company's own locator. A pump missing from both is missing here, "
+                             "map has none, those on the oil companies' own locators. A pump missing from both is missing here, "
                              "so each gap is a worst case.") if added else
                             ("Pumps are those drawn on the open map within the search radius of the road. "
                              "A pump missing from the map is missing here, so each gap is a worst case.")})
@@ -443,7 +446,7 @@ def tunnels(args):
         roads = "motorway|trunk|primary|secondary|tertiary|unclassified|motorway_link|trunk_link|primary_link"
         q = f'[out:json][timeout:120];way["highway"~"^({roads})$"]["tunnel"="yes"]({box})(if:length()>250);out tags geom;'
         try:
-            d = get("https://overpass-api.de/api/interpreter",
+            d = get(OVERPASS,
                     data=urllib.parse.urlencode({"data": q}).encode(), timeout=150, tries=4, wait=8)
         except Exception as e:  # noqa: BLE001
             print(f"tunnels {r['slug']}: FAILED {e}")

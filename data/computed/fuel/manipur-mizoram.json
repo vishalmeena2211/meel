@@ -1,6 +1,6 @@
 {
  "slug": "manipur-mizoram",
- "fetched": "2026-09-28",
+ "fetched": "2026-10-06",
  "search_radius_m": 900,
  "pumps": [
   {
@@ -52,6 +52,28 @@
    "diesel": null
   },
   {
+   "osm": null,
+   "company_id": "iocl-239282",
+   "name": "Dp Sasa Fuels",
+   "brand": "Indian Oil",
+   "town": "Awangjiri",
+   "lat": 24.68956,
+   "lon": 93.79697,
+   "km_from_start": 19.7,
+   "off_road_m": 19,
+   "opening_hours": null,
+   "petrol": null,
+   "diesel": null,
+   "source": {
+    "url": "https://locator.iocl.com/indianoil-dp-sasa-fuels-petrol-pump-awangjiri-bishnupur-239282/Home",
+    "title": "IndianOil locator: Dp Sasa Fuels, Awangjiri",
+    "kind": "official",
+    "opened": true,
+    "source_date": null,
+    "accessed": "2026-10-06"
+   }
+  },
+  {
    "osm": "node/11356662423",
    "name": "M/S Bitej Gasoline Centre",
    "brand": "Indian Oil",
@@ -62,6 +84,138 @@
    "opening_hours": null,
    "petrol": null,
    "diesel": null
+  },
+  {
+   "osm": null,
+   "company_id": "hp-483856",
+   "name": "Jn Gas Station",
+   "brand": "HP",
+   "town": "Ningthoukhong",
+   "lat": 24.56151,
+   "lon": 93.76149,
+   "km_from_start": 35.9,
+   "off_road_m": 5,
+   "opening_hours": null,
+   "petrol": null,
+   "diesel": null,
+   "source": {
+    "url": "https://petrolpump.hpretail.in/hindustan-petroleum-corporation-limited-ms-hsd-jn-gas-station-petrol-pump-ningthoukhong-bishnupur-483856/Home",
+    "title": "HP locator: Jn Gas Station, Ningthoukhong",
+    "kind": "official",
+    "opened": true,
+    "source_date": null,
+    "accessed": "2026-10-06"
+   }
+  },
+  {
+   "osm": null,
+   "company_id": "iocl-238851",
+   "name": "Motor Service Station",
+   "brand": "Indian Oil",
+   "town": "Borayangbi",
+   "lat": 24.50335,
+   "lon": 93.76162,
+   "km_from_start": 42.8,
+   "off_road_m": 12,
+   "opening_hours": null,
+   "petrol": null,
+   "diesel": null,
+   "source": {
+    "url": "https://locator.iocl.com/indianoil-motor-service-station-petrol-pump-borayangbi-bishnupur-238851/Home",
+    "title": "IndianOil locator: Motor Service Station, Borayangbi",
+    "kind": "official",
+    "opened": true,
+    "source_date": null,
+    "accessed": "2026-10-06"
+   }
+  },
+  {
+   "osm": null,
+   "company_id": "iocl-526733",
+   "name": "Ebudhou Thangjing Oil Station",
+   "brand": "Indian Oil",
+   "town": "Moirang",
+   "lat": 24.49593,
+   "lon": 93.78047,
+   "km_from_start": 44.9,
+   "off_road_m": 676,
+   "opening_hours": null,
+   "petrol": null,
+   "diesel": null,
+   "source": {
+    "url": "https://locator.iocl.com/indianoil-ebudhou-thangjing-oil-station-petrol-pump-moirang-bishnupur-526733/Home",
+    "title": "IndianOil locator: Ebudhou Thangjing Oil Station, Moirang",
+    "kind": "official",
+    "opened": true,
+    "source_date": null,
+    "accessed": "2026-10-06"
+   }
+  },
+  {
+   "osm": null,
+   "company_id": "hp-417982",
+   "name": "Kip Filling Station",
+   "brand": "HP",
+   "town": "Kokilbon",
+   "lat": 24.48253,
+   "lon": 93.78063,
+   "km_from_start": 45.3,
+   "off_road_m": 1958,
+   "opening_hours": null,
+   "petrol": null,
+   "diesel": null,
+   "source": {
+    "url": "https://petrolpump.hpretail.in/hindustan-petroleum-corporation-limited-m-s-kip-filling-station-petrol-pump-kokilbon-bishnupur-417982/Home",
+    "title": "HP locator: Kip Filling Station, Kokilbon",
+    "kind": "official",
+    "opened": true,
+    "source_date": null,
+    "accessed": "2026-10-06"
+   }
+  },
+  {
+   "osm": null,
+   "company_id": "iocl-276949",
+   "name": "Estys Petroleum Station",
+   "brand": "Indian Oil",
+   "town": "Torbung Bangla",
+   "lat": 24.42289,
+   "lon": 93.71603,
+   "km_from_start": 56.5,
+   "off_road_m": 9,
+   "opening_hours": null,
+   "petrol": null,
+   "diesel": null,
+   "source": {
+    "url": "https://locator.iocl.com/indianoil-estys-petroleum-station-petrol-pump-torbung-bangla-churachandpur-276949/Home",
+    "title": "IndianOil locator: Estys Petroleum Station, Torbung Bangla",
+    "kind": "official",
+    "opened": true,
+    "source_date": null,
+    "accessed": "2026-10-06"
+   }
+  },
+  {
+   "osm": null,
+   "company_id": "iocl-238284",
+   "name": "Touthang Service Station",
+   "brand": "Indian Oil",
+   "town": "Aina",
+   "lat": 24.38536,
+   "lon": 93.70451,
+   "km_from_start": 61.3,
+   "off_road_m": 17,
+   "opening_hours": null,
+   "petrol": null,
+   "diesel": null,
+   "source": {
+    "url": "https://locator.iocl.com/indianoil-touthang-service-station-petrol-pump-aina-churachandpur-238284/Home",
+    "title": "IndianOil locator: Touthang Service Station, Aina",
+    "kind": "official",
+    "opened": true,
+    "source_date": null,
+    "accessed": "2026-10-06"
+   }
   },
   {
    "osm": "node/8778588406",
@@ -76,6 +230,138 @@
    "diesel": null
   },
   {
+   "osm": null,
+   "company_id": "iocl-237884",
+   "name": "Niangchiin Service Station",
+   "brand": "Indian Oil",
+   "town": "Aina",
+   "lat": 24.27755,
+   "lon": 93.6667,
+   "km_from_start": 75.3,
+   "off_road_m": 25,
+   "opening_hours": null,
+   "petrol": null,
+   "diesel": null,
+   "source": {
+    "url": "https://locator.iocl.com/indianoil-niangchiin-service-station-petrol-pump-aina-churachandpur-237884/Home",
+    "title": "IndianOil locator: Niangchiin Service Station, Aina",
+    "kind": "official",
+    "opened": true,
+    "source_date": null,
+    "accessed": "2026-10-06"
+   }
+  },
+  {
+   "osm": null,
+   "company_id": "iocl-278084",
+   "name": "Ebenezer Ksk",
+   "brand": "Indian Oil",
+   "town": "Singhat",
+   "lat": 24.14559,
+   "lon": 93.59437,
+   "km_from_start": 100.5,
+   "off_road_m": 345,
+   "opening_hours": null,
+   "petrol": null,
+   "diesel": null,
+   "source": {
+    "url": "https://locator.iocl.com/indianoil-ebenezer-ksk-petrol-pump-singhat-churachandpur-278084/Home",
+    "title": "IndianOil locator: Ebenezer Ksk, Singhat",
+    "kind": "official",
+    "opened": true,
+    "source_date": null,
+    "accessed": "2026-10-06"
+   }
+  },
+  {
+   "osm": null,
+   "company_id": "iocl-278094",
+   "name": "Niangzen Service Center",
+   "brand": "Indian Oil",
+   "town": "Mualnuam",
+   "lat": 24.19704,
+   "lon": 93.38777,
+   "km_from_start": 156.3,
+   "off_road_m": 141,
+   "opening_hours": null,
+   "petrol": null,
+   "diesel": null,
+   "source": {
+    "url": "https://locator.iocl.com/indianoil-niangzen-service-center-petrol-pump-mualnuam-churachandpur-278094/Home",
+    "title": "IndianOil locator: Niangzen Service Center, Mualnuam",
+    "kind": "official",
+    "opened": true,
+    "source_date": null,
+    "accessed": "2026-10-06"
+   }
+  },
+  {
+   "osm": null,
+   "company_id": "iocl-238042",
+   "name": "Ngopa Filling Station Ksk",
+   "brand": "Indian Oil",
+   "town": "Hrianghmun",
+   "lat": 23.86354,
+   "lon": 93.19818,
+   "km_from_start": 256.7,
+   "off_road_m": 38,
+   "opening_hours": null,
+   "petrol": null,
+   "diesel": null,
+   "source": {
+    "url": "https://locator.iocl.com/indianoil-ngopa-filling-station-ksk-petrol-pump-hrianghmun-champhai-238042/Home",
+    "title": "IndianOil locator: Ngopa Filling Station Ksk, Hrianghmun",
+    "kind": "official",
+    "opened": true,
+    "source_date": null,
+    "accessed": "2026-10-06"
+   }
+  },
+  {
+   "osm": null,
+   "company_id": "hp-417045",
+   "name": "Ms Caroline Filling Station",
+   "brand": "HP",
+   "town": "Keifang",
+   "lat": 23.67905,
+   "lon": 92.96296,
+   "km_from_start": 355.2,
+   "off_road_m": 1099,
+   "opening_hours": null,
+   "petrol": null,
+   "diesel": null,
+   "source": {
+    "url": "https://petrolpump.hpretail.in/hindustan-petroleum-corporation-limited-ms-caroline-filling-station-petrol-pump-keifang-aizawl-417045/Home",
+    "title": "HP locator: Ms Caroline Filling Station, Keifang",
+    "kind": "official",
+    "opened": true,
+    "source_date": null,
+    "accessed": "2026-10-06"
+   }
+  },
+  {
+   "osm": null,
+   "company_id": "iocl-200143",
+   "name": "L T Brothers Filling Station",
+   "brand": "Indian Oil",
+   "town": "Aiduzawl",
+   "lat": 23.65355,
+   "lon": 92.94255,
+   "km_from_start": 360.6,
+   "off_road_m": 46,
+   "opening_hours": null,
+   "petrol": null,
+   "diesel": null,
+   "source": {
+    "url": "https://locator.iocl.com/indianoil-l-t-brothers-filling-station-petrol-pump-aiduzawl-aizawl-200143/Home",
+    "title": "IndianOil locator: L T Brothers Filling Station, Aiduzawl",
+    "kind": "official",
+    "opened": true,
+    "source_date": null,
+    "accessed": "2026-10-06"
+   }
+  },
+  {
    "osm": "node/7007512785",
    "name": null,
    "brand": null,
@@ -86,6 +372,28 @@
    "opening_hours": null,
    "petrol": null,
    "diesel": null
+  },
+  {
+   "osm": null,
+   "company_id": "iocl-519245",
+   "name": "Akhawli Filling Station",
+   "brand": "Indian Oil",
+   "town": "Bungbangla Zemabawk",
+   "lat": 23.73278,
+   "lon": 92.78087,
+   "km_from_start": 411.4,
+   "off_road_m": 45,
+   "opening_hours": null,
+   "petrol": null,
+   "diesel": null,
+   "source": {
+    "url": "https://locator.iocl.com/indianoil-akhawli-filling-station-petrol-pump-bungbangla-zemabawk-aizawl-519245/Home",
+    "title": "IndianOil locator: Akhawli Filling Station, Bungbangla Zemabawk",
+    "kind": "official",
+    "opened": true,
+    "source_date": null,
+    "accessed": "2026-10-06"
+   }
   },
   {
    "osm": "node/8439990161",
@@ -100,6 +408,94 @@
    "diesel": null
   },
   {
+   "osm": null,
+   "company_id": "iocl-277115",
+   "name": "Eldee Filling Station",
+   "brand": "Indian Oil",
+   "town": "Puilo",
+   "lat": 23.56648,
+   "lon": 93.08,
+   "km_from_start": 552.7,
+   "off_road_m": 2046,
+   "opening_hours": null,
+   "petrol": null,
+   "diesel": null,
+   "source": {
+    "url": "https://locator.iocl.com/indianoil-eldee-filling-station-petrol-pump-puilo-champhai-277115/Home",
+    "title": "IndianOil locator: Eldee Filling Station, Puilo",
+    "kind": "official",
+    "opened": true,
+    "source_date": null,
+    "accessed": "2026-10-06"
+   }
+  },
+  {
+   "osm": null,
+   "company_id": "iocl-278384",
+   "name": "David Filling Station",
+   "brand": "Indian Oil",
+   "town": "Darngawn",
+   "lat": 23.53275,
+   "lon": 93.17084,
+   "km_from_start": 566.3,
+   "off_road_m": 5,
+   "opening_hours": null,
+   "petrol": null,
+   "diesel": null,
+   "source": {
+    "url": "https://locator.iocl.com/indianoil-david-filling-station-petrol-pump-darngawn-champhai-278384/Home",
+    "title": "IndianOil locator: David Filling Station, Darngawn",
+    "kind": "official",
+    "opened": true,
+    "source_date": null,
+    "accessed": "2026-10-06"
+   }
+  },
+  {
+   "osm": null,
+   "company_id": "iocl-238201",
+   "name": "Ltm Filling Station Ksk",
+   "brand": "Indian Oil",
+   "town": "Chalrang",
+   "lat": 23.54151,
+   "lon": 93.19034,
+   "km_from_start": 568.1,
+   "off_road_m": 2076,
+   "opening_hours": null,
+   "petrol": null,
+   "diesel": null,
+   "source": {
+    "url": "https://locator.iocl.com/indianoil-ltm-filling-station-ksk-petrol-pump-chalrang-champhai-238201/Home",
+    "title": "IndianOil locator: Ltm Filling Station Ksk, Chalrang",
+    "kind": "official",
+    "opened": true,
+    "source_date": null,
+    "accessed": "2026-10-06"
+   }
+  },
+  {
+   "osm": null,
+   "company_id": "iocl-238114",
+   "name": "Mizoram Police Petrol Pump",
+   "brand": "Indian Oil",
+   "town": "Chalrang",
+   "lat": 23.50311,
+   "lon": 93.19532,
+   "km_from_start": 571.9,
+   "off_road_m": 25,
+   "opening_hours": null,
+   "petrol": null,
+   "diesel": null,
+   "source": {
+    "url": "https://locator.iocl.com/indianoil-mizoram-police-petrol-pump-petrol-pump-chalrang-champhai-238114/Home",
+    "title": "IndianOil locator: Mizoram Police Petrol Pump, Chalrang",
+    "kind": "official",
+    "opened": true,
+    "source_date": null,
+    "accessed": "2026-10-06"
+   }
+  },
+  {
    "osm": "node/13073458651",
    "name": "IndianOil",
    "brand": null,
@@ -112,53 +508,53 @@
    "diesel": null
   }
  ],
- "pump_count": 9,
- "stops": 8,
+ "pump_count": 27,
+ "stops": 24,
  "longest_gaps": [
   {
-   "from_km": 68.1,
-   "to_km": 391.8,
-   "gap_km": 323.7,
-   "from_is": "pump",
-   "to_is": "pump",
-   "near_from": "Moirang",
-   "near_to": "Aizawl"
-  },
-  {
    "from_km": 425.9,
-   "to_km": 607.8,
-   "gap_km": 181.9,
+   "to_km": 552.7,
+   "gap_km": 126.8,
    "from_is": "pump",
    "to_is": "pump",
    "near_from": "Aizawl",
    "near_to": "Champhai"
   },
   {
-   "from_km": 29.8,
-   "to_km": 68.1,
-   "gap_km": 38.3,
+   "from_km": 156.3,
+   "to_km": 256.7,
+   "gap_km": 100.4,
    "from_is": "pump",
    "to_is": "pump",
    "near_from": "Moirang",
-   "near_to": "Moirang"
+   "near_to": "Aizawl"
   },
   {
-   "from_km": 391.8,
-   "to_km": 425.9,
-   "gap_km": 34.1,
+   "from_km": 256.7,
+   "to_km": 355.2,
+   "gap_km": 98.5,
    "from_is": "pump",
    "to_is": "pump",
    "near_from": "Aizawl",
    "near_to": "Aizawl"
   },
   {
-   "from_km": 13.4,
-   "to_km": 29.8,
-   "gap_km": 16.4,
+   "from_km": 100.5,
+   "to_km": 156.3,
+   "gap_km": 55.8,
    "from_is": "pump",
    "to_is": "pump",
-   "near_from": "Imphal",
+   "near_from": "Moirang",
    "near_to": "Moirang"
+  },
+  {
+   "from_km": 571.9,
+   "to_km": 607.8,
+   "gap_km": 35.9,
+   "from_is": "pump",
+   "to_is": "pump",
+   "near_from": "Champhai",
+   "near_to": "Champhai"
   }
  ],
  "source": {
@@ -167,5 +563,5 @@
   "licence": "Open Database Licence",
   "url": "https://www.openstreetmap.org/copyright"
  },
- "note": "Pumps are those drawn on the open map within the search radius of the road. A pump missing from the map is missing here, so each gap is a worst case."
+ "note": "Pumps are those drawn on the open map within the search radius of the road, and, where the map has none, those on the oil companies' own locators. A pump missing from both is missing here, so each gap is a worst case."
 }

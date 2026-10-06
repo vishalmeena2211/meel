@@ -8668,6 +8668,66 @@
     "source": null
    },
    {
+    "id": "fuel:iocl-238845",
+    "name": "Saboo Filling Station",
+    "brand": "Indian Oil",
+    "near": "Saboo",
+    "km_from_start": 5.7,
+    "off_road_m": 911,
+    "lat": 34.11971,
+    "lon": 77.59877,
+    "opening_hours": null,
+    "osm_url": null,
+    "source": {
+     "url": "https://locator.iocl.com/indianoil-saboo-filling-station-petrol-pump-saboo-leh-238845/Home",
+     "title": "IndianOil locator: Saboo Filling Station, Saboo",
+     "kind": "official",
+     "opened": true,
+     "source_date": null,
+     "accessed": "2026-10-06"
+    }
+   },
+   {
+    "id": "fuel:iocl-238956",
+    "name": "Shey Filling Station",
+    "brand": "Indian Oil",
+    "near": "Chamray",
+    "km_from_start": 9.8,
+    "off_road_m": 1324,
+    "lat": 34.08825,
+    "lon": 77.61362,
+    "opening_hours": null,
+    "osm_url": null,
+    "source": {
+     "url": "https://locator.iocl.com/indianoil-shey-filling-station-petrol-pump-chamray-leh-238956/Home",
+     "title": "IndianOil locator: Shey Filling Station, Chamray",
+     "kind": "official",
+     "opened": true,
+     "source_date": null,
+     "accessed": "2026-10-06"
+    }
+   },
+   {
+    "id": "fuel:iocl-519696",
+    "name": "Thiksey Filling Station",
+    "brand": "Indian Oil",
+    "near": "Choglamsar",
+    "km_from_start": 17.3,
+    "off_road_m": 2112,
+    "lat": 34.05294,
+    "lon": 77.66489,
+    "opening_hours": null,
+    "osm_url": null,
+    "source": {
+     "url": "https://locator.iocl.com/indianoil-thiksey-filling-station-petrol-pump-choglamsar-leh-519696/Home",
+     "title": "IndianOil locator: Thiksey Filling Station, Choglamsar",
+     "kind": "official",
+     "opened": true,
+     "source_date": null,
+     "accessed": "2026-10-06"
+    }
+   },
+   {
     "id": "fuel:way-233526495",
     "name": "Karu Fuel Station",
     "brand": "Indian Oil",
@@ -8679,6 +8739,26 @@
     "opening_hours": null,
     "osm_url": "https://www.openstreetmap.org/way/233526495",
     "source": null
+   },
+   {
+    "id": "fuel:iocl-277694",
+    "name": "Tangtse Pangong Filling Station",
+    "brand": "Indian Oil",
+    "near": "Tagste",
+    "km_from_start": 113.5,
+    "off_road_m": 54,
+    "lat": 34.03986,
+    "lon": 78.16485,
+    "opening_hours": null,
+    "osm_url": null,
+    "source": {
+     "url": "https://locator.iocl.com/indianoil-tangtse-pangong-filling-station-petrol-pump-tagste-leh-277694/Home",
+     "title": "IndianOil locator: Tangtse Pangong Filling Station, Tagste",
+     "kind": "official",
+     "opened": true,
+     "source_date": null,
+     "accessed": "2026-10-06"
+    }
    },
    {
     "id": "fuel:node-13020894957",
@@ -8746,16 +8826,16 @@
     "source": null
    }
   ],
-  "pump_count": 7,
-  "stops": 5,
+  "pump_count": 11,
+  "stops": 9,
   "longest_gaps": [
    {
-    "from_km": 31.6,
+    "from_km": 113.5,
     "to_km": 465.4,
-    "gap_km": 433.8,
+    "gap_km": 351.9,
     "from_is": "pump",
     "to_is": "pump",
-    "near_from": "Karu",
+    "near_from": "Durbuk",
     "near_to": "Nyoma"
    },
    {
@@ -8768,35 +8848,35 @@
     "near_to": "Leh"
    },
    {
-    "from_km": 0.0,
+    "from_km": 31.6,
+    "to_km": 113.5,
+    "gap_km": 81.9,
+    "from_is": "pump",
+    "to_is": "pump",
+    "near_from": "Karu",
+    "near_to": "Durbuk"
+   },
+   {
+    "from_km": 17.3,
     "to_km": 31.6,
-    "gap_km": 31.6,
+    "gap_km": 14.3,
+    "from_is": "pump",
+    "to_is": "pump",
+    "near_from": "Karu",
+    "near_to": "Karu"
+   },
+   {
+    "from_km": 9.8,
+    "to_km": 17.3,
+    "gap_km": 7.5,
     "from_is": "pump",
     "to_is": "pump",
     "near_from": "Leh",
     "near_to": "Karu"
-   },
-   {
-    "from_km": 761.2,
-    "to_km": 764.0,
-    "gap_km": 2.8,
-    "from_is": "pump",
-    "to_is": "pump",
-    "near_from": "Leh",
-    "near_to": "Leh"
-   },
-   {
-    "from_km": 765.6,
-    "to_km": 767.6,
-    "gap_km": 2.0,
-    "from_is": "pump",
-    "to_is": "end of route",
-    "near_from": "Leh",
-    "near_to": "Leh"
    }
   ],
-  "note": "Pumps are those drawn on the open map within the search radius of the road. A pump missing from the map is missing here, so each gap is a worst case.",
-  "fetched": "2026-09-28"
+  "note": "Pumps are those drawn on the open map within the search radius of the road, and, where the map has none, those on the oil companies' own locators. A pump missing from both is missing here, so each gap is a worst case.",
+  "fetched": "2026-10-06"
  },
  "rules": [
   {
@@ -9456,7 +9536,7 @@
   "Some stretch distances are doubtful. The open map may not know the road riders use, so the routing service went the long way round."
  ],
  "counts": {
-  "facts": 64
+  "facts": 68
  },
- "built": "2026-09-28"
+ "built": "2026-10-06"
 }

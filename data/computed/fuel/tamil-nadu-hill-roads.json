@@ -1,6 +1,6 @@
 {
  "slug": "tamil-nadu-hill-roads",
- "fetched": "2026-09-28",
+ "fetched": "2026-10-06",
  "search_radius_m": 900,
  "pumps": [
   {
@@ -808,6 +808,28 @@
    "diesel": null
   },
   {
+   "osm": null,
+   "company_id": "iocl-204108",
+   "name": "Sun Fuels",
+   "brand": "Indian Oil",
+   "town": "Venkatesa Mills",
+   "lat": 10.58037,
+   "lon": 77.30703,
+   "km_from_start": 534.4,
+   "off_road_m": 1860,
+   "opening_hours": null,
+   "petrol": null,
+   "diesel": null,
+   "source": {
+    "url": "https://locator.iocl.com/indianoil-sun-fuels-petrol-pump-venkatesa-mills-udumalpet-204108/Home",
+    "title": "IndianOil locator: Sun Fuels, Venkatesa Mills",
+    "kind": "official",
+    "opened": true,
+    "source_date": null,
+    "accessed": "2026-10-06"
+   }
+  },
+  {
    "osm": "node/12078456886",
    "name": "Indian Oil",
    "brand": "Indian Oil",
@@ -818,6 +840,28 @@
    "opening_hours": null,
    "petrol": null,
    "diesel": null
+  },
+  {
+   "osm": null,
+   "company_id": "iocl-202921",
+   "name": "Baladhandayuthapani Agencies",
+   "brand": "Indian Oil",
+   "town": "Palani Bazaar",
+   "lat": 10.36981,
+   "lon": 77.5144,
+   "km_from_start": 576.1,
+   "off_road_m": 20,
+   "opening_hours": null,
+   "petrol": null,
+   "diesel": null,
+   "source": {
+    "url": "https://locator.iocl.com/indianoil-baladhandayuthapani-agencies-petrol-pump-palani-bazaar-palani-202921/Home",
+    "title": "IndianOil locator: Baladhandayuthapani Agencies, Palani Bazaar",
+    "kind": "official",
+    "opened": true,
+    "source_date": null,
+    "accessed": "2026-10-06"
+   }
   },
   {
    "osm": "way/476218906",
@@ -856,8 +900,8 @@
    "diesel": null
   }
  ],
- "pump_count": 71,
- "stops": 39,
+ "pump_count": 73,
+ "stops": 41,
  "longest_gaps": [
   {
    "from_km": 388.6,
@@ -878,15 +922,6 @@
    "near_to": "Namakkal"
   },
   {
-   "from_km": 563.4,
-   "to_km": 615.5,
-   "gap_km": 52.1,
-   "from_is": "pump",
-   "to_is": "pump",
-   "near_from": "Palani",
-   "near_to": "Kodaikanal"
-  },
-  {
    "from_km": 318.6,
    "to_km": 368.8,
    "gap_km": 50.2,
@@ -903,6 +938,15 @@
    "to_is": "pump",
    "near_from": "Salem",
    "near_to": "Salem"
+  },
+  {
+   "from_km": 576.1,
+   "to_km": 615.5,
+   "gap_km": 39.4,
+   "from_is": "pump",
+   "to_is": "pump",
+   "near_from": "Palani",
+   "near_to": "Kodaikanal"
   }
  ],
  "source": {
@@ -911,5 +955,5 @@
   "licence": "Open Database Licence",
   "url": "https://www.openstreetmap.org/copyright"
  },
- "note": "Pumps are those drawn on the open map within the search radius of the road. A pump missing from the map is missing here, so each gap is a worst case."
+ "note": "Pumps are those drawn on the open map within the search radius of the road, and, where the map has none, those on the oil companies' own locators. A pump missing from both is missing here, so each gap is a worst case."
 }

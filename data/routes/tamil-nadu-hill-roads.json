@@ -7561,7 +7561,7 @@
    {
     "id": "fuel:node-13889314247",
     "name": "HP",
-    "brand": "Hindustan Petroleum",
+    "brand": "HP",
     "near": "Namakkal",
     "km_from_start": 98.1,
     "off_road_m": 41,
@@ -7625,8 +7625,8 @@
    },
    {
     "id": "fuel:node-1458522194",
-    "name": "Hindustan Petroleum",
-    "brand": "Hindustan Petroleum",
+    "name": "HP",
+    "brand": "HP",
     "near": "Namakkal",
     "km_from_start": 102.4,
     "off_road_m": 12,
@@ -7730,7 +7730,7 @@
    {
     "id": "fuel:node-12621954797",
     "name": "HP",
-    "brand": "Hindustan Petroleum",
+    "brand": "HP",
     "near": "Namakkal",
     "km_from_start": 224.2,
     "off_road_m": 68,
@@ -7755,8 +7755,8 @@
    },
    {
     "id": "fuel:node-6169754351",
-    "name": "Hindustan Petroleum",
-    "brand": "Hindustan Petroleum",
+    "name": "HP",
+    "brand": "HP",
     "near": "Namakkal",
     "km_from_start": 227.5,
     "off_road_m": 826,
@@ -7782,7 +7782,7 @@
    {
     "id": "fuel:node-12621944781",
     "name": "HP",
-    "brand": "Hindustan Petroleum",
+    "brand": "HP",
     "near": "Namakkal",
     "km_from_start": 232.2,
     "off_road_m": 549,
@@ -7833,8 +7833,8 @@
    },
    {
     "id": "fuel:way-690782172",
-    "name": "Hindustan Petroleum",
-    "brand": "Hindustan Petroleum",
+    "name": "HP",
+    "brand": "HP",
     "near": "Namakkal",
     "km_from_start": 286.7,
     "off_road_m": 49,
@@ -7846,8 +7846,8 @@
    },
    {
     "id": "fuel:way-691363946",
-    "name": "Hindustan Petroleum",
-    "brand": "Hindustan Petroleum",
+    "name": "HP",
+    "brand": "HP",
     "near": "Namakkal",
     "km_from_start": 286.7,
     "off_road_m": 723,
@@ -7925,7 +7925,7 @@
    {
     "id": "fuel:way-691981486",
     "name": "HP",
-    "brand": "Hindustan Petroleum",
+    "brand": "HP",
     "near": "Pollachi",
     "km_from_start": 302.7,
     "off_road_m": 40,
@@ -7990,7 +7990,7 @@
    {
     "id": "fuel:way-691986167",
     "name": "HP",
-    "brand": "Hindustan Petroleum",
+    "brand": "HP",
     "near": "Pollachi",
     "km_from_start": 318.6,
     "off_road_m": 10,
@@ -8131,6 +8131,26 @@
     "source": null
    },
    {
+    "id": "fuel:iocl-204108",
+    "name": "Sun Fuels",
+    "brand": "Indian Oil",
+    "near": "Venkatesa Mills",
+    "km_from_start": 534.4,
+    "off_road_m": 1860,
+    "lat": 10.58037,
+    "lon": 77.30703,
+    "opening_hours": null,
+    "osm_url": null,
+    "source": {
+     "url": "https://locator.iocl.com/indianoil-sun-fuels-petrol-pump-venkatesa-mills-udumalpet-204108/Home",
+     "title": "IndianOil locator: Sun Fuels, Venkatesa Mills",
+     "kind": "official",
+     "opened": true,
+     "source_date": null,
+     "accessed": "2026-10-06"
+    }
+   },
+   {
     "id": "fuel:node-12078456886",
     "name": "Indian Oil",
     "brand": "Indian Oil",
@@ -8142,6 +8162,26 @@
     "opening_hours": null,
     "osm_url": "https://www.openstreetmap.org/node/12078456886",
     "source": null
+   },
+   {
+    "id": "fuel:iocl-202921",
+    "name": "Baladhandayuthapani Agencies",
+    "brand": "Indian Oil",
+    "near": "Palani Bazaar",
+    "km_from_start": 576.1,
+    "off_road_m": 20,
+    "lat": 10.36981,
+    "lon": 77.5144,
+    "opening_hours": null,
+    "osm_url": null,
+    "source": {
+     "url": "https://locator.iocl.com/indianoil-baladhandayuthapani-agencies-petrol-pump-palani-bazaar-palani-202921/Home",
+     "title": "IndianOil locator: Baladhandayuthapani Agencies, Palani Bazaar",
+     "kind": "official",
+     "opened": true,
+     "source_date": null,
+     "accessed": "2026-10-06"
+    }
    },
    {
     "id": "fuel:way-476218906",
@@ -8183,8 +8223,8 @@
     "source": null
    }
   ],
-  "pump_count": 71,
-  "stops": 39,
+  "pump_count": 73,
+  "stops": 41,
   "longest_gaps": [
    {
     "from_km": 388.6,
@@ -8205,15 +8245,6 @@
     "near_to": "Namakkal"
    },
    {
-    "from_km": 563.4,
-    "to_km": 615.5,
-    "gap_km": 52.1,
-    "from_is": "pump",
-    "to_is": "pump",
-    "near_from": "Palani",
-    "near_to": "Kodaikanal"
-   },
-   {
     "from_km": 318.6,
     "to_km": 368.8,
     "gap_km": 50.2,
@@ -8230,10 +8261,19 @@
     "to_is": "pump",
     "near_from": "Salem",
     "near_to": "Salem"
+   },
+   {
+    "from_km": 576.1,
+    "to_km": 615.5,
+    "gap_km": 39.4,
+    "from_is": "pump",
+    "to_is": "pump",
+    "near_from": "Palani",
+    "near_to": "Kodaikanal"
    }
   ],
-  "note": "Pumps are those drawn on the open map within the search radius of the road. A pump missing from the map is missing here, so each gap is a worst case.",
-  "fetched": "2026-09-28"
+  "note": "Pumps are those drawn on the open map within the search radius of the road, and, where the map has none, those on the oil companies' own locators. A pump missing from both is missing here, so each gap is a worst case.",
+  "fetched": "2026-10-06"
  },
  "rules": [
   {
@@ -8714,7 +8754,7 @@
   "Both videos cover Kolli Hills; none kept for Valparai, Yercaud or Kodaikanal. Filming dates are not known."
  ],
  "counts": {
-  "facts": 113
+  "facts": 115
  },
- "built": "2026-09-28"
+ "built": "2026-10-06"
 }

@@ -4054,6 +4054,46 @@
     "source": null
    },
    {
+    "id": "fuel:iocl-238244",
+    "name": "Monal Kissan Sewa Kendra",
+    "brand": "Indian Oil",
+    "near": "Batseri",
+    "km_from_start": 94.0,
+    "off_road_m": 31,
+    "lat": 31.43352,
+    "lon": 78.24145,
+    "opening_hours": null,
+    "osm_url": null,
+    "source": {
+     "url": "https://locator.iocl.com/indianoil-monal-kissan-sewa-kendra-petrol-pump-batseri-kinnaur-238244/Home",
+     "title": "IndianOil locator: Monal Kissan Sewa Kendra, Batseri",
+     "kind": "official",
+     "opened": true,
+     "source_date": null,
+     "accessed": "2026-10-06"
+    }
+   },
+   {
+    "id": "fuel:hp-403713",
+    "name": "Donbusche HP Centre",
+    "brand": "HP",
+    "near": "Tapri",
+    "km_from_start": 171.8,
+    "off_road_m": 15,
+    "lat": 31.51993,
+    "lon": 78.0923,
+    "opening_hours": null,
+    "osm_url": null,
+    "source": {
+     "url": "https://petrolpump.hpretail.in/hindustan-petroleum-corporation-limited-m-s-donbusche-hp-centre-petrol-pump-tapri-kinnaur-403713/Home",
+     "title": "HP locator: Donbusche HP Centre, Tapri",
+     "kind": "official",
+     "opened": true,
+     "source_date": null,
+     "accessed": "2026-10-06"
+    }
+   },
+   {
     "id": "fuel:node-299644026",
     "name": "Powari petrol",
     "brand": null,
@@ -4093,13 +4133,31 @@
     "source": null
    }
   ],
-  "pump_count": 9,
-  "stops": 7,
+  "pump_count": 11,
+  "stops": 9,
   "longest_gaps": [
    {
+    "from_km": 94.0,
+    "to_km": 171.8,
+    "gap_km": 77.8,
+    "from_is": "pump",
+    "to_is": "pump",
+    "near_from": "Sangla",
+    "near_to": "Karcham"
+   },
+   {
     "from_km": 50.7,
+    "to_km": 94.0,
+    "gap_km": 43.3,
+    "from_is": "pump",
+    "to_is": "pump",
+    "near_from": "Karcham",
+    "near_to": "Sangla"
+   },
+   {
+    "from_km": 171.8,
     "to_km": 211.7,
-    "gap_km": 161.0,
+    "gap_km": 39.9,
     "from_is": "pump",
     "to_is": "pump",
     "near_from": "Karcham",
@@ -4122,28 +4180,10 @@
     "to_is": "pump",
     "near_from": "Rampur",
     "near_to": "Rampur"
-   },
-   {
-    "from_km": 220.9,
-    "to_km": 228.8,
-    "gap_km": 7.9,
-    "from_is": "pump",
-    "to_is": "end of route",
-    "near_from": "Reckong Peo",
-    "near_to": "Kalpa"
-   },
-   {
-    "from_km": 211.7,
-    "to_km": 219.0,
-    "gap_km": 7.3,
-    "from_is": "pump",
-    "to_is": "pump",
-    "near_from": "Reckong Peo",
-    "near_to": "Reckong Peo"
    }
   ],
-  "note": "Pumps are those drawn on the open map within the search radius of the road. A pump missing from the map is missing here, so each gap is a worst case.",
-  "fetched": "2026-09-28"
+  "note": "Pumps are those drawn on the open map within the search radius of the road, and, where the map has none, those on the oil companies' own locators. A pump missing from both is missing here, so each gap is a worst case.",
+  "fetched": "2026-10-06"
  },
  "rules": [
   {
@@ -4472,7 +4512,7 @@
   "Videos: titles and channels were read from the video pages; filming dates and motorcycles are not confirmed."
  ],
  "counts": {
-  "facts": 39
+  "facts": 41
  },
- "built": "2026-09-28"
+ "built": "2026-10-06"
 }

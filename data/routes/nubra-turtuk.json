@@ -3159,6 +3159,26 @@
     "source": null
    },
    {
+    "id": "fuel:iocl-237979",
+    "name": "Nubra Valley Filling Station",
+    "brand": "Indian Oil",
+    "near": "Khalsar",
+    "km_from_start": 98.1,
+    "off_road_m": 15,
+    "lat": 34.52767,
+    "lon": 77.68645,
+    "opening_hours": null,
+    "osm_url": null,
+    "source": {
+     "url": "https://locator.iocl.com/indianoil-nubra-valley-filling-station-petrol-pump-khalsar-leh-237979/Home",
+     "title": "IndianOil locator: Nubra Valley Filling Station, Khalsar",
+     "kind": "official",
+     "opened": true,
+     "source_date": null,
+     "accessed": "2026-10-06"
+    }
+   },
+   {
     "id": "fuel:node-3699683316",
     "name": "Petrol pump",
     "brand": null,
@@ -3172,17 +3192,17 @@
     "source": null
    }
   ],
-  "pump_count": 3,
-  "stops": 3,
+  "pump_count": 4,
+  "stops": 4,
   "longest_gaps": [
    {
     "from_km": 3.2,
-    "to_km": 114.2,
-    "gap_km": 111.0,
+    "to_km": 98.1,
+    "gap_km": 94.9,
     "from_is": "pump",
     "to_is": "pump",
     "near_from": "Leh",
-    "near_to": "Diskit"
+    "near_to": "Khalsar"
    },
    {
     "from_km": 114.2,
@@ -3194,6 +3214,15 @@
     "near_to": "Turtuk"
    },
    {
+    "from_km": 98.1,
+    "to_km": 114.2,
+    "gap_km": 16.1,
+    "from_is": "pump",
+    "to_is": "pump",
+    "near_from": "Khalsar",
+    "near_to": "Diskit"
+   },
+   {
     "from_km": 1.1,
     "to_km": 3.2,
     "gap_km": 2.1,
@@ -3203,8 +3232,8 @@
     "near_to": "Leh"
    }
   ],
-  "note": "Pumps are those drawn on the open map within the search radius of the road. A pump missing from the map is missing here, so each gap is a worst case.",
-  "fetched": "2026-09-28"
+  "note": "Pumps are those drawn on the open map within the search radius of the road, and, where the map has none, those on the oil companies' own locators. A pump missing from both is missing here, so each gap is a worst case.",
+  "fetched": "2026-10-06"
  },
  "rules": [
   {
@@ -3820,7 +3849,7 @@
   "Only one recent rider video found; it gives no filming date and was published on 10 July 2026. It shows the rider at Thang, beyond Turtuk."
  ],
  "counts": {
-  "facts": 43
+  "facts": 44
  },
- "built": "2026-09-28"
+ "built": "2026-10-06"
 }

@@ -499,5 +499,42 @@
     "No source found for the usual number of days riders take, or for fuel on the hill tops.",
     "Hairpin bend counts are added as header.hairpin_bends, which is not in the schema example; the Valparai and Yercaud counts come from the sources on their hazard entries.",
     "Both videos cover Kolli Hills; none kept for Valparai, Yercaud or Kodaikanal. Filming dates are not known."
-  ]
+  ],
+  "pumps_from_companies": {
+    "why": "The open map missed pumps near Udumalpet and Palani. Neither locator lists a pump at Valparai, so the climb from Pollachi stays a gap. These are from the oil companies' own locators, IndianOil's (locator.iocl.com) and HP's (petrolpump.hpretail.in), read on 6 October 2026 for the districts the road runs through. A pump within 5 km along the road of one already on the map is left out. Bharat Petroleum's locator did not answer, and other companies' pumps are not added.",
+    "pumps": [
+      {
+        "id": "iocl-204108",
+        "name": "Sun Fuels",
+        "brand": "Indian Oil",
+        "town": "Venkatesa Mills",
+        "lat": 10.58037,
+        "lon": 77.30703,
+        "source": {
+          "url": "https://locator.iocl.com/indianoil-sun-fuels-petrol-pump-venkatesa-mills-udumalpet-204108/Home",
+          "title": "IndianOil locator: Sun Fuels, Venkatesa Mills",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "iocl-202921",
+        "name": "Baladhandayuthapani Agencies",
+        "brand": "Indian Oil",
+        "town": "Palani Bazaar",
+        "lat": 10.36981,
+        "lon": 77.5144,
+        "source": {
+          "url": "https://locator.iocl.com/indianoil-baladhandayuthapani-agencies-petrol-pump-palani-bazaar-palani-202921/Home",
+          "title": "IndianOil locator: Baladhandayuthapani Agencies, Palani Bazaar",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      }
+    ]
+  }
 }

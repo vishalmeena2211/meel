@@ -6014,43 +6014,43 @@
  "fuel": {
   "listed": false,
   "pumps": [],
-  "pump_count": 11,
-  "stops": 6,
+  "pump_count": 49,
+  "stops": 31,
   "longest_gaps": [
    {
-    "from_km": 1088.5,
-    "to_km": 1461.1,
-    "gap_km": 372.6,
+    "from_km": 875.8,
+    "to_km": 1087.1,
+    "gap_km": 211.3,
     "from_is": "pump",
     "to_is": "pump",
-    "near_from": "Anini",
-    "near_to": "Tezu"
-   },
-   {
-    "from_km": 309.9,
-    "to_km": 648.9,
-    "gap_km": 339.0,
-    "from_is": "pump",
-    "to_is": "pump",
-    "near_from": "Aalo",
-    "near_to": "Aalo"
-   },
-   {
-    "from_km": 768.8,
-    "to_km": 1088.5,
-    "gap_km": 319.7,
-    "from_is": "pump",
-    "to_is": "pump",
-    "near_from": "Pasighat",
+    "near_from": "Roing",
     "near_to": "Anini"
    },
    {
-    "from_km": 0.0,
-    "to_km": 309.9,
-    "gap_km": 309.9,
-    "from_is": "start of route",
+    "from_km": 1088.5,
+    "to_km": 1287.8,
+    "gap_km": 199.3,
+    "from_is": "pump",
     "to_is": "pump",
-    "near_from": "Ziro",
+    "near_from": "Anini",
+    "near_to": "Roing"
+   },
+   {
+    "from_km": 309.9,
+    "to_km": 478.6,
+    "gap_km": 168.7,
+    "from_is": "pump",
+    "to_is": "pump",
+    "near_from": "Aalo",
+    "near_to": "Mechuka"
+   },
+   {
+    "from_km": 478.6,
+    "to_km": 624.6,
+    "gap_km": 146.0,
+    "from_is": "pump",
+    "to_is": "pump",
+    "near_from": "Mechuka",
     "near_to": "Aalo"
    },
    {
@@ -6063,8 +6063,8 @@
     "near_to": "Walong"
    }
   ],
-  "note": "Pumps are those drawn on the open map within the search radius of the road. A pump missing from the map is missing here, so each gap is a worst case.",
-  "fetched": "2026-09-28"
+  "note": "Pumps are those drawn on the open map within the search radius of the road, and, where the map has none, those on the oil companies' own locators. A pump missing from both is missing here, so each gap is a worst case.",
+  "fetched": "2026-10-06"
  },
  "rules": [
   {
@@ -6346,5 +6346,5 @@
  "counts": {
   "facts": 38
  },
- "built": "2026-09-28"
+ "built": "2026-10-06"
 }

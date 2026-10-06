@@ -239,5 +239,682 @@
     "Usual number of riding days: no source found.",
     "No highest point recorded because the altitude of Keshkal ghat was not sourced.",
     "Videos: the pages give upload dates, not filming dates, so 'filmed' is filled only where the title names a date. Uploads, in order: 2025-07."
-  ]
+  ],
+  "pumps_from_companies": {
+    "why": "The open map missed most pumps on the highway from Raipur to Jagdalpur and on to the falls, though Dhamtari, Kanker, Kondagaon and Jagdalpur are towns. These are from the oil companies' own locators, IndianOil's (locator.iocl.com) and HP's (petrolpump.hpretail.in), read on 6 October 2026 for the districts the road runs through. A pump within 5 km along the road of one already on the map is left out. Bharat Petroleum's locator did not answer, and other companies' pumps are not added.",
+    "pumps": [
+      {
+        "id": "iocl-277623",
+        "name": "Ajay Highway Services",
+        "brand": "Indian Oil",
+        "town": "Kodebo",
+        "lat": 20.91531,
+        "lon": 81.691,
+        "source": {
+          "url": "https://locator.iocl.com/indianoil-ajay-highway-services-petrol-pump-kodebo-dhamtari-277623/Home",
+          "title": "IndianOil locator: Ajay Highway Services, Kodebo",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "hp-404278",
+        "name": "Krishna Fuels",
+        "brand": "HP",
+        "town": "Charmudia",
+        "lat": 20.85886,
+        "lon": 81.69832,
+        "source": {
+          "url": "https://petrolpump.hpretail.in/hindustan-petroleum-corporation-limited-krishna-fuels-petrol-pump-charmudia-dhamtari-404278/Home",
+          "title": "HP locator: Krishna Fuels, Charmudia",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "iocl-239620",
+        "name": "Maa Sharda Ser.Stn",
+        "brand": "Indian Oil",
+        "town": "Achhoti",
+        "lat": 20.8448,
+        "lon": 81.7027,
+        "source": {
+          "url": "https://locator.iocl.com/indianoil-maa-sharda-ser-stn-petrol-pump-achhoti-dhamtari-239620/Home",
+          "title": "IndianOil locator: Maa Sharda Ser.Stn, Achhoti",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "iocl-239655",
+        "name": "Arihant Fuels Ksk",
+        "brand": "Indian Oil",
+        "town": "Kurud",
+        "lat": 20.838,
+        "lon": 81.713,
+        "source": {
+          "url": "https://locator.iocl.com/indianoil-arihant-fuels-ksk-petrol-pump-kurud-dhamtari-239655/Home",
+          "title": "IndianOil locator: Arihant Fuels Ksk, Kurud",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "hp-406540",
+        "name": "Sarveshwar Auto Fuels",
+        "brand": "HP",
+        "town": "Kurud",
+        "lat": 20.82561,
+        "lon": 81.70263,
+        "source": {
+          "url": "https://petrolpump.hpretail.in/hindustan-petroleum-corporation-limited-sarveshwar-auto-fuels-petrol-pump-kurud-dhamtari-406540/Home",
+          "title": "HP locator: Sarveshwar Auto Fuels, Kurud",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "iocl-239826",
+        "name": "Suneelam Fuel",
+        "brand": "Indian Oil",
+        "town": "Achhoti",
+        "lat": 20.8006,
+        "lon": 81.6711,
+        "source": {
+          "url": "https://locator.iocl.com/indianoil-suneelam-fuel-petrol-pump-achhoti-dhamtari-239826/Home",
+          "title": "IndianOil locator: Suneelam Fuel, Achhoti",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "hp-416946",
+        "name": "Shri Balaji Fuels",
+        "brand": "HP",
+        "town": "Arjuni",
+        "lat": 20.73588,
+        "lon": 81.56858,
+        "source": {
+          "url": "https://petrolpump.hpretail.in/hindustan-petroleum-corporation-limited-shri-balaji-fuels-petrol-pump-arjuni-dhamtari-416946/Home",
+          "title": "HP locator: Shri Balaji Fuels, Arjuni",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "iocl-239419",
+        "name": "Shri Danteshwari Petroleum",
+        "brand": "Indian Oil",
+        "town": "Demar",
+        "lat": 20.7587,
+        "lon": 81.5642,
+        "source": {
+          "url": "https://locator.iocl.com/indianoil-shri-danteshwari-petroleum-petrol-pump-demar-dhamtari-239419/Home",
+          "title": "IndianOil locator: Shri Danteshwari Petroleum, Demar",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "iocl-239732",
+        "name": "RV Kumar & Co",
+        "brand": "Indian Oil",
+        "town": "Achhota",
+        "lat": 20.7027,
+        "lon": 81.5371,
+        "source": {
+          "url": "https://locator.iocl.com/indianoil-rv-kumar-co-petrol-pump-achhota-dhamtari-239732/Home",
+          "title": "IndianOil locator: RV Kumar & Co, Achhota",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "hp-404487",
+        "name": "Dhamtari Enterprises",
+        "brand": "HP",
+        "town": "Bastar Road",
+        "lat": 20.70814,
+        "lon": 81.54297,
+        "source": {
+          "url": "https://petrolpump.hpretail.in/hindustan-petroleum-corporation-limited-dhamtari-enterprises-petrol-pump-bastar-road-dhamtari-404487/Home",
+          "title": "HP locator: Dhamtari Enterprises, Bastar Road",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "hp-405256",
+        "name": "Nirmal Fuels",
+        "brand": "HP",
+        "town": "Chitaud",
+        "lat": 20.6814,
+        "lon": 81.50944,
+        "source": {
+          "url": "https://petrolpump.hpretail.in/hindustan-petroleum-corporation-limited-nirmal-fuels-petrol-pump-chitaud-dhamtari-405256/Home",
+          "title": "HP locator: Nirmal Fuels, Chitaud",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "iocl-239849",
+        "name": "Manish Fuels",
+        "brand": "Indian Oil",
+        "town": "Chinauri",
+        "lat": 20.3835,
+        "lon": 81.4332,
+        "source": {
+          "url": "https://locator.iocl.com/indianoil-manish-fuels-petrol-pump-chinauri-kanker-239849/Home",
+          "title": "IndianOil locator: Manish Fuels, Chinauri",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "iocl-239490",
+        "name": "Dhruv Highway Services",
+        "brand": "Indian Oil",
+        "town": "Aturgaon",
+        "lat": 20.3236,
+        "lon": 81.4596,
+        "source": {
+          "url": "https://locator.iocl.com/indianoil-dhruv-highway-services-petrol-pump-aturgaon-kanker-239490/Home",
+          "title": "IndianOil locator: Dhruv Highway Services, Aturgaon",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "hp-394838",
+        "name": "Rekha Fuels",
+        "brand": "HP",
+        "town": "Makrikhuna",
+        "lat": 20.31464,
+        "lon": 81.46092,
+        "source": {
+          "url": "https://petrolpump.hpretail.in/hindustan-petroleum-corporation-limited-m-s-rekha-fuels-petrol-pump-makrikhuna-kanker-394838/Home",
+          "title": "HP locator: Rekha Fuels, Makrikhuna",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "iocl-519445",
+        "name": "Sumeet Fuels",
+        "brand": "Indian Oil",
+        "town": "Kondagaon",
+        "lat": 20.09355,
+        "lon": 81.59302,
+        "source": {
+          "url": "https://locator.iocl.com/indianoil-sumeet-fuels-petrol-pump-kondagaon-bastar-519445/Home",
+          "title": "IndianOil locator: Sumeet Fuels, Kondagaon",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "iocl-276730",
+        "name": "Swastik Traders",
+        "brand": "Indian Oil",
+        "town": "Main Road",
+        "lat": 20.0887,
+        "lon": 81.591,
+        "source": {
+          "url": "https://locator.iocl.com/indianoil-swastik-traders-petrol-pump-main-road-bastar-276730/Home",
+          "title": "IndianOil locator: Swastik Traders, Main Road",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "hp-406269",
+        "name": "Mukesh Fuels HP",
+        "brand": "HP",
+        "town": "Keshkal",
+        "lat": 20.08694,
+        "lon": 81.59011,
+        "source": {
+          "url": "https://petrolpump.hpretail.in/hindustan-petroleum-corporation-limited-mukesh-fuels-hp-petrol-pump-keshkal-bastar-406269/Home",
+          "title": "HP locator: Mukesh Fuels HP, Keshkal",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "iocl-519528",
+        "name": "Shri Mala Fuels",
+        "brand": "Indian Oil",
+        "town": "Kondagaon",
+        "lat": 20.07388,
+        "lon": 81.58614,
+        "source": {
+          "url": "https://locator.iocl.com/indianoil-shri-mala-fuels-petrol-pump-kondagaon-bastar-519528/Home",
+          "title": "IndianOil locator: Shri Mala Fuels, Kondagaon",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "hp-406153",
+        "name": "Meman Fuels",
+        "brand": "HP",
+        "town": "Singanpur",
+        "lat": 20.02233,
+        "lon": 81.58669,
+        "source": {
+          "url": "https://petrolpump.hpretail.in/hindustan-petroleum-corporation-limited-meman-fuels-petrol-pump-singanpur-bastar-406153/Home",
+          "title": "HP locator: Meman Fuels, Singanpur",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "hp-483398",
+        "name": "Pandey Fuel Hp",
+        "brand": "HP",
+        "town": "Bdema",
+        "lat": 19.98702,
+        "lon": 81.60434,
+        "source": {
+          "url": "https://petrolpump.hpretail.in/hindustan-petroleum-corporation-limited-mshsd-pandey-fuel-hp-petrol-pump-bdema-bastar-483398/Home",
+          "title": "HP locator: Pandey Fuel Hp, Bdema",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "iocl-239754",
+        "name": "Rituja Ser Stn",
+        "brand": "Indian Oil",
+        "town": "Alor",
+        "lat": 19.864,
+        "lon": 81.636,
+        "source": {
+          "url": "https://locator.iocl.com/indianoil-rituja-ser-stn-petrol-pump-alor-bastar-239754/Home",
+          "title": "IndianOil locator: Rituja Ser Stn, Alor",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "hp-483370",
+        "name": "Patel Energy Point",
+        "brand": "HP",
+        "town": "Bhanpuri",
+        "lat": 19.35885,
+        "lon": 81.80723,
+        "source": {
+          "url": "https://petrolpump.hpretail.in/hindustan-petroleum-corporation-limited-mshsd-patel-energy-point-petrol-pump-bhanpuri-bastar-483370/Home",
+          "title": "HP locator: Patel Energy Point, Bhanpuri",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "hp-405244",
+        "name": "SG Automotive",
+        "brand": "HP",
+        "town": "Jagdalpur",
+        "lat": 19.18928,
+        "lon": 81.94916,
+        "source": {
+          "url": "https://petrolpump.hpretail.in/hindustan-petroleum-corporation-limited-sg-automotive-petrol-pump-jagdalpur-bastar-405244/Home",
+          "title": "HP locator: SG Automotive, Jagdalpur",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "iocl-239857",
+        "name": "S.R.K. Fuels",
+        "brand": "Indian Oil",
+        "town": "Adawal",
+        "lat": 19.1597,
+        "lon": 81.9879,
+        "source": {
+          "url": "https://locator.iocl.com/indianoil-s-r-k-fuels-petrol-pump-adawal-jagdalpur-239857/Home",
+          "title": "IndianOil locator: S.R.K. Fuels, Adawal",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "iocl-239760",
+        "name": "Delaxi Fuel Ksk",
+        "brand": "Indian Oil",
+        "town": "Adawal",
+        "lat": 19.11129,
+        "lon": 82.0412,
+        "source": {
+          "url": "https://locator.iocl.com/indianoil-delaxi-fuel-ksk-petrol-pump-adawal-jagdalpur-239760/Home",
+          "title": "IndianOil locator: Delaxi Fuel Ksk, Adawal",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "hp-410933",
+        "name": "B Damodar & Co",
+        "brand": "HP",
+        "town": "Motitalab Para",
+        "lat": 19.09187,
+        "lon": 82.0197,
+        "source": {
+          "url": "https://petrolpump.hpretail.in/hindustan-petroleum-corporation-limited-b-damodar-co-petrol-pump-motitalab-para-jagdalpur-410933/Home",
+          "title": "HP locator: B Damodar & Co, Motitalab Para",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "iocl-239702",
+        "name": "MR Sodhi & Sons",
+        "brand": "Indian Oil",
+        "town": "Adawal",
+        "lat": 19.0912,
+        "lon": 82.043,
+        "source": {
+          "url": "https://locator.iocl.com/indianoil-mr-sodhi-sons-petrol-pump-adawal-jagdalpur-239702/Home",
+          "title": "IndianOil locator: MR Sodhi & Sons, Adawal",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "iocl-239628",
+        "name": "Police Petrol Pump",
+        "brand": "Indian Oil",
+        "town": "Adawal",
+        "lat": 19.0868,
+        "lon": 82.0303,
+        "source": {
+          "url": "https://locator.iocl.com/indianoil-police-petrol-pump-petrol-pump-adawal-jagdalpur-239628/Home",
+          "title": "IndianOil locator: Police Petrol Pump, Adawal",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "iocl-239804",
+        "name": "Subhash Fuels",
+        "brand": "Indian Oil",
+        "town": "Adawal",
+        "lat": 19.0807,
+        "lon": 82.0447,
+        "source": {
+          "url": "https://locator.iocl.com/indianoil-subhash-fuels-petrol-pump-adawal-jagdalpur-239804/Home",
+          "title": "IndianOil locator: Subhash Fuels, Adawal",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "hp-410966",
+        "name": "Sugan Petroleum",
+        "brand": "HP",
+        "town": "Garawand Kalan",
+        "lat": 19.08668,
+        "lon": 82.0435,
+        "source": {
+          "url": "https://petrolpump.hpretail.in/hindustan-petroleum-corporation-limited-sugan-petroleum-petrol-pump-garawand-kalan-jagdalpur-410966/Home",
+          "title": "HP locator: Sugan Petroleum, Garawand Kalan",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "iocl-239538",
+        "name": "Adhoc Subhash Fuels",
+        "brand": "Indian Oil",
+        "town": "Adawal",
+        "lat": 19.08,
+        "lon": 82.0167,
+        "source": {
+          "url": "https://locator.iocl.com/indianoil-adhoc-subhash-fuels-petrol-pump-adawal-jagdalpur-239538/Home",
+          "title": "IndianOil locator: Adhoc Subhash Fuels, Adawal",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "hp-399503",
+        "name": "Shri Venkatesh Fuels",
+        "brand": "HP",
+        "town": "Anupama Chowk",
+        "lat": 19.08735,
+        "lon": 82.01643,
+        "source": {
+          "url": "https://petrolpump.hpretail.in/hindustan-petroleum-corporation-limited-shri-venkatesh-fuels-petrol-pump-anupama-chowk-jagdalpur-399503/Home",
+          "title": "HP locator: Shri Venkatesh Fuels, Anupama Chowk",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "iocl-239803",
+        "name": "Radhika Fuels",
+        "brand": "Indian Oil",
+        "town": "Adawal",
+        "lat": 19.0728,
+        "lon": 81.9947,
+        "source": {
+          "url": "https://locator.iocl.com/indianoil-radhika-fuels-petrol-pump-adawal-jagdalpur-239803/Home",
+          "title": "IndianOil locator: Radhika Fuels, Adawal",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "iocl-239815",
+        "name": "Mithila Fuels",
+        "brand": "Indian Oil",
+        "town": "Adawal",
+        "lat": 19.09694,
+        "lon": 81.97742,
+        "source": {
+          "url": "https://locator.iocl.com/indianoil-mithila-fuels-petrol-pump-adawal-jagdalpur-239815/Home",
+          "title": "IndianOil locator: Mithila Fuels, Adawal",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "iocl-239731",
+        "name": "Ram Ratan Fuels",
+        "brand": "Indian Oil",
+        "town": "Adawal",
+        "lat": 19.1768,
+        "lon": 81.74245,
+        "source": {
+          "url": "https://locator.iocl.com/indianoil-ram-ratan-fuels-petrol-pump-adawal-jagdalpur-239731/Home",
+          "title": "IndianOil locator: Ram Ratan Fuels, Adawal",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "iocl-239756",
+        "name": "Vimal Fuels Ksk",
+        "brand": "Indian Oil",
+        "town": "Badanji",
+        "lat": 19.14862,
+        "lon": 81.81288,
+        "source": {
+          "url": "https://locator.iocl.com/indianoil-vimal-fuels-ksk-petrol-pump-badanji-bastar-239756/Home",
+          "title": "IndianOil locator: Vimal Fuels Ksk, Badanji",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "iocl-239743",
+        "name": "Jagdalpur Fuels",
+        "brand": "Indian Oil",
+        "town": "Adawal",
+        "lat": 19.0662,
+        "lon": 81.9646,
+        "source": {
+          "url": "https://locator.iocl.com/indianoil-jagdalpur-fuels-petrol-pump-adawal-jagdalpur-239743/Home",
+          "title": "IndianOil locator: Jagdalpur Fuels, Adawal",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "hp-418248",
+        "name": "Prabal Fuels HP",
+        "brand": "HP",
+        "town": "Pandripan",
+        "lat": 19.06269,
+        "lon": 81.96008,
+        "source": {
+          "url": "https://petrolpump.hpretail.in/hindustan-petroleum-corporation-limited-m-s-prabal-fuels-hp-petrol-pump-pandripan-jagdalpur-418248/Home",
+          "title": "HP locator: Prabal Fuels HP, Pandripan",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "iocl-239717",
+        "name": "MR Dhruw & Sons",
+        "brand": "Indian Oil",
+        "town": "Bade Marenga",
+        "lat": 19.0414,
+        "lon": 81.9362,
+        "source": {
+          "url": "https://locator.iocl.com/indianoil-mr-dhruw-sons-petrol-pump-bade-marenga-bastar-239717/Home",
+          "title": "IndianOil locator: MR Dhruw & Sons, Bade Marenga",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "hp-404584",
+        "name": "Khanda Mudia Fuels",
+        "brand": "HP",
+        "town": "Telemaren",
+        "lat": 19.02994,
+        "lon": 81.92664,
+        "source": {
+          "url": "https://petrolpump.hpretail.in/hindustan-petroleum-corporation-limited-khanda-mudia-fuels-petrol-pump-telemaren-bastar-404584/Home",
+          "title": "HP locator: Khanda Mudia Fuels, Telemaren",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "hp-406180",
+        "name": "Sumeet Petroleum",
+        "brand": "HP",
+        "town": "Tokapal",
+        "lat": 19.00839,
+        "lon": 81.8941,
+        "source": {
+          "url": "https://petrolpump.hpretail.in/hindustan-petroleum-corporation-limited-m-s-sumeet-petroleum-petrol-pump-tokapal-bastar-406180/Home",
+          "title": "HP locator: Sumeet Petroleum, Tokapal",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "hp-418261",
+        "name": "MS Baghel Fuels HP",
+        "brand": "HP",
+        "town": "Neganar",
+        "lat": 18.95281,
+        "lon": 81.89667,
+        "source": {
+          "url": "https://petrolpump.hpretail.in/hindustan-petroleum-corporation-limited-ms-baghel-fuels-hp-petrol-pump-neganar-bastar-418261/Home",
+          "title": "HP locator: MS Baghel Fuels HP, Neganar",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      }
+    ]
+  }
 }

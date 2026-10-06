@@ -320,5 +320,42 @@
     "Entry fee amounts come only from a blog and are left out.",
     "No year-by-year opening or closing dates found for the Sandakphu road.",
     "Videos not collected."
-  ]
+  ],
+  "pumps_from_companies": {
+    "why": "The open map had no pump in Kalimpong. The long gaps around Sandakphu are not filled: the line on the map runs through Nepal there, where these locators do not reach. These are from the oil companies' own locators, IndianOil's (locator.iocl.com) and HP's (petrolpump.hpretail.in), read on 6 October 2026 for the districts the road runs through. A pump within 5 km along the road of one already on the map is left out. Bharat Petroleum's locator did not answer, and other companies' pumps are not added.",
+    "pumps": [
+      {
+        "id": "iocl-232897",
+        "name": "Bishwa Kiran Fuels",
+        "brand": "Indian Oil",
+        "town": "Kalimpong",
+        "lat": 27.06297,
+        "lon": 88.4472,
+        "source": {
+          "url": "https://locator.iocl.com/indianoil-petrol-pump-kalimpong-bishwa-kiran-fuels-petrol-pump-kalimpong-kalimpong-232897/Home",
+          "title": "IndianOil locator: Bishwa Kiran Fuels, Kalimpong",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "hp-410889",
+        "name": "Tashis Service Station",
+        "brand": "HP",
+        "town": "Lower Bridle Road",
+        "lat": 27.06264,
+        "lon": 88.46163,
+        "source": {
+          "url": "https://petrolpump.hpretail.in/hindustan-petroleum-corporation-limited-tashis-service-station-petrol-pump-lower-bridle-road-kalimpong-410889/Home",
+          "title": "HP locator: Tashis Service Station, Lower Bridle Road",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      }
+    ]
+  }
 }

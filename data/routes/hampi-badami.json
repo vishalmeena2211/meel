@@ -1679,7 +1679,7 @@
    {
     "id": "fuel:node-3894530074",
     "name": "HP",
-    "brand": "Hindustan Petroleum",
+    "brand": "HP",
     "near": "Hampi",
     "km_from_start": 44.6,
     "off_road_m": 79,
@@ -1757,7 +1757,7 @@
    {
     "id": "fuel:node-14081373259",
     "name": "HP",
-    "brand": "Hindustan Petroleum",
+    "brand": "HP",
     "near": "Hampi",
     "km_from_start": 73.7,
     "off_road_m": 40,
@@ -1809,7 +1809,7 @@
    {
     "id": "fuel:node-14076356818",
     "name": "HP",
-    "brand": "Hindustan Petroleum",
+    "brand": "HP",
     "near": "Badami",
     "km_from_start": 110.2,
     "off_road_m": 41,
@@ -1913,7 +1913,7 @@
    {
     "id": "fuel:node-14076356849",
     "name": "HP",
-    "brand": "Hindustan Petroleum",
+    "brand": "HP",
     "near": "Badami",
     "km_from_start": 129.9,
     "off_road_m": 77,
@@ -1965,7 +1965,7 @@
    {
     "id": "fuel:node-14076356891",
     "name": "HP",
-    "brand": "Hindustan Petroleum",
+    "brand": "HP",
     "near": "Badami",
     "km_from_start": 153.6,
     "off_road_m": 18,
@@ -2200,5 +2200,5 @@
  "counts": {
   "facts": 55
  },
- "built": "2026-09-28"
+ "built": "2026-10-06"
 }

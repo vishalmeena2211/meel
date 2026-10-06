@@ -3480,7 +3480,7 @@
    {
     "id": "fuel:node-4075501852",
     "name": "HP",
-    "brand": "Hindustan Petroleum",
+    "brand": "HP",
     "near": "Panaji",
     "km_from_start": 0.6,
     "off_road_m": 25,
@@ -3506,7 +3506,7 @@
    {
     "id": "fuel:node-4281490190",
     "name": "HP",
-    "brand": "Hindustan Petroleum",
+    "brand": "HP",
     "near": "Panaji",
     "km_from_start": 0.9,
     "off_road_m": 17,
@@ -3597,7 +3597,7 @@
    {
     "id": "fuel:way-1465779095",
     "name": "Pereira HP Pump",
-    "brand": "Hindustan Petroleum",
+    "brand": "HP",
     "near": "Panaji",
     "km_from_start": 22.3,
     "off_road_m": 42,
@@ -3675,7 +3675,7 @@
    {
     "id": "fuel:node-11073589324",
     "name": "Furtado Fuel Station",
-    "brand": "Hindustan Petroleum",
+    "brand": "HP",
     "near": "Palolem",
     "km_from_start": 36.9,
     "off_road_m": 34,
@@ -3727,7 +3727,7 @@
    {
     "id": "fuel:node-2614414665",
     "name": "Hindustan Petroleum Aryadurga Station",
-    "brand": "Hindustan Petroleum",
+    "brand": "HP",
     "near": "Palolem",
     "km_from_start": 66.2,
     "off_road_m": 25,
@@ -3753,7 +3753,7 @@
    {
     "id": "fuel:way-1018582438",
     "name": "G B Mahajan Petrol Pump",
-    "brand": "Hindustan Petroleum",
+    "brand": "HP",
     "near": "Karwar",
     "km_from_start": 85.6,
     "off_road_m": 42,
@@ -4299,7 +4299,7 @@
    {
     "id": "fuel:way-134018677",
     "name": "HP",
-    "brand": "Hindustan Petroleum",
+    "brand": "HP",
     "near": "Udupi",
     "km_from_start": 341.1,
     "off_road_m": 32,
@@ -4364,7 +4364,7 @@
    {
     "id": "fuel:node-11201334523",
     "name": "HP",
-    "brand": "Hindustan Petroleum",
+    "brand": "HP",
     "near": "Udupi",
     "km_from_start": 360.0,
     "off_road_m": 68,
@@ -4597,7 +4597,7 @@
    },
    {
     "id": "fuel:node-3352196317",
-    "name": "HP petrol pump",
+    "name": "HP",
     "brand": "HP",
     "near": "Mangaluru",
     "km_from_start": 387.7,
@@ -5216,5 +5216,5 @@
  "counts": {
   "facts": 137
  },
- "built": "2026-09-28"
+ "built": "2026-10-06"
 }

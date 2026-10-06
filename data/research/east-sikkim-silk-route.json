@@ -592,5 +592,9 @@
     "The vehicle pass portal vehiclepass.sikkim.gov.in could not be opened (certificate error).",
     "Fee amounts are not on the official page and are left out.",
     "Videos not collected."
-  ]
+  ],
+  "pumps_from_companies": {
+    "why": "The open map has no pump between Gangtok and Rongli, over Nathu La and Zuluk. Neither IndianOil's nor HP's own locator, read on 6 October 2026 for Gangtok and East Sikkim, lists one there either, so nothing is added.",
+    "pumps": []
+  }
 }

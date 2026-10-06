@@ -490,5 +490,170 @@
     "Own motorcycles beyond Dharchula: three unofficial guides disagree and no order from the district administration was found. Rider videos show motorcycles on the Dharchula to Gunji road.",
     "The rider guide on own motorcycles shows no printed date; 2025 is taken from the addresses of its images.",
     "Videos: titles and channels were read from the video pages; filming dates and motorcycles are not confirmed."
-  ]
+  ],
+  "pumps_from_companies": {
+    "why": "The open map had no pump at all on this route, not even at Pithoragarh or Dharchula. Neither locator lists a pump past Dharchula, so the road to Gunji and Jolingkong has none. These are from the oil companies' own locators, IndianOil's (locator.iocl.com) and HP's (petrolpump.hpretail.in), read on 6 October 2026 for the districts the road runs through. A pump within 5 km along the road of one already on the map is left out. Bharat Petroleum's locator did not answer, and other companies' pumps are not added.",
+    "pumps": [
+      {
+        "id": "iocl-237996",
+        "name": "Harlal Sah Thulgharia & Sons",
+        "brand": "Indian Oil",
+        "town": "Bans",
+        "lat": 29.5824,
+        "lon": 80.2144,
+        "source": {
+          "url": "https://locator.iocl.com/indianoil-harlal-sah-thulgharia-sons-petrol-pump-bans-pithoragarh-237996/Home",
+          "title": "IndianOil locator: Harlal Sah Thulgharia & Sons, Bans",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "hp-390817",
+        "name": "Dev Fuels",
+        "brand": "HP",
+        "town": "Kumor",
+        "lat": 29.57967,
+        "lon": 80.21289,
+        "source": {
+          "url": "https://petrolpump.hpretail.in/hindustan-petroleum-corporation-limited-m-s-dev-fuels-petrol-pump-kumor-pithoragarh-390817/Home",
+          "title": "HP locator: Dev Fuels, Kumor",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "hp-399541",
+        "name": "Om Diesels",
+        "brand": "HP",
+        "town": "APS Road",
+        "lat": 29.5806,
+        "lon": 80.23131,
+        "source": {
+          "url": "https://petrolpump.hpretail.in/hindustan-petroleum-corporation-limited-hsd-om-diesels-petrol-pump-aps-road-pithoragarh-399541/Home",
+          "title": "HP locator: Om Diesels, APS Road",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "iocl-238754",
+        "name": "Kumaun Service Station",
+        "brand": "Indian Oil",
+        "town": "Bans",
+        "lat": 29.6062,
+        "lon": 80.2313,
+        "source": {
+          "url": "https://locator.iocl.com/indianoil-kumaun-service-station-petrol-pump-bans-pithoragarh-238754/Home",
+          "title": "IndianOil locator: Kumaun Service Station, Bans",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "hp-481482",
+        "name": "Shiv Bajrang Diesels",
+        "brand": "HP",
+        "town": "Gaithana",
+        "lat": 29.61053,
+        "lon": 80.23446,
+        "source": {
+          "url": "https://petrolpump.hpretail.in/hindustan-petroleum-corporation-limited-shiv-bajrang-diesels-petrol-pump-gaithana-pithoragarh-481482/Home",
+          "title": "HP locator: Shiv Bajrang Diesels, Gaithana",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "iocl-238147",
+        "name": "Shri Malay Filling Station",
+        "brand": "Indian Oil",
+        "town": "Bagjibala",
+        "lat": 29.75693,
+        "lon": 80.27679,
+        "source": {
+          "url": "https://locator.iocl.com/indianoil-shri-malay-filling-station-petrol-pump-bagjibala-pithoragarh-238147/Home",
+          "title": "IndianOil locator: Shri Malay Filling Station, Bagjibala",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "iocl-238223",
+        "name": "Jai Golju Filling Station",
+        "brand": "Indian Oil",
+        "town": "Narayan Nagar",
+        "lat": 29.773,
+        "lon": 80.2859,
+        "source": {
+          "url": "https://locator.iocl.com/indianoil-jai-golju-filling-station-petrol-pump-narayan-nagar-pithoragarh-238223/Home",
+          "title": "IndianOil locator: Jai Golju Filling Station, Narayan Nagar",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "hp-483521",
+        "name": "Ullash Diesel",
+        "brand": "HP",
+        "town": "Jogyura",
+        "lat": 29.75954,
+        "lon": 80.36882,
+        "source": {
+          "url": "https://petrolpump.hpretail.in/hindustan-petroleum-corporation-limited-ms-hsd-ullash-diesel-petrol-pump-jogyura-pithoragarh-483521/Home",
+          "title": "HP locator: Ullash Diesel, Jogyura",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "iocl-238988",
+        "name": "Punera F/S Dharchula",
+        "brand": "Indian Oil",
+        "town": "Nigalpani",
+        "lat": 29.8279,
+        "lon": 80.5142,
+        "source": {
+          "url": "https://locator.iocl.com/indianoil-punera-f-s-dharchula-petrol-pump-nigalpani-pithoragarh-238988/Home",
+          "title": "IndianOil locator: Punera F/S Dharchula, Nigalpani",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "hp-483512",
+        "name": "Kalika Oil Company",
+        "brand": "HP",
+        "town": "Dharchula",
+        "lat": 29.83352,
+        "lon": 80.52243,
+        "source": {
+          "url": "https://petrolpump.hpretail.in/hindustan-petroleum-corporation-limited-ms-hsd-kalika-oil-company-petrol-pump-dharchula-pithoragarh-483512/Home",
+          "title": "HP locator: Kalika Oil Company, Dharchula",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      }
+    ]
+  }
 }

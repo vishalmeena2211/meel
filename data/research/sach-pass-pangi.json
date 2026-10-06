@@ -589,5 +589,154 @@
     "Himachal entry toll: the two-wheeler exemption rests on a newspaper report of the Chief Minister's statement (26 March 2026). The official Toll Policy 2026-27 document on hptax.gov.in failed to open (certificate error), so it is not confirmed for motorcycles registered in other states.",
     "Jammu and Kashmir side (Killar to Gulabgarh to Kishtwar): rules, check posts and road status come from one rider blog; no official page or order was found, and no office that announces status was identified.",
     "Videos: titles and channels were read from the video pages; filming dates are not confirmed."
-  ]
+  ],
+  "pumps_from_companies": {
+    "why": "The open map had no pump between Tissa and Kishtwar. Neither locator lists a pump in Pangi or Paddar, between Kutehr and Kishtwar, so that gap stays. These are from the oil companies' own locators, IndianOil's (locator.iocl.com) and HP's (petrolpump.hpretail.in), read on 6 October 2026 for the districts the road runs through. A pump within 5 km along the road of one already on the map is left out. Bharat Petroleum's locator did not answer, and other companies' pumps are not added.",
+    "pumps": [
+      {
+        "id": "iocl-518208",
+        "name": "N D Filling Station",
+        "brand": "Indian Oil",
+        "town": "Tikri Khas",
+        "lat": 32.6557,
+        "lon": 76.04607,
+        "source": {
+          "url": "https://locator.iocl.com/indianoil-n-d-filling-station-petrol-pump-tikri-khas-chamba-518208/Home",
+          "title": "IndianOil locator: N D Filling Station, Tikri Khas",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "iocl-238083",
+        "name": "Bhalei Filling Station",
+        "brand": "Indian Oil",
+        "town": "Bhalei",
+        "lat": 32.6552,
+        "lon": 76.0233,
+        "source": {
+          "url": "https://locator.iocl.com/indianoil-bhalei-filling-station-petrol-pump-bhalei-chamba-238083/Home",
+          "title": "IndianOil locator: Bhalei Filling Station, Bhalei",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "hp-393339",
+        "name": "SR Filling Station",
+        "brand": "HP",
+        "town": "Koti",
+        "lat": 32.66422,
+        "lon": 76.03052,
+        "source": {
+          "url": "https://petrolpump.hpretail.in/hindustan-petroleum-corporation-limited-m-s-sr-filling-station-petrol-pump-koti-chamba-393339/Home",
+          "title": "HP locator: SR Filling Station, Koti",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "hp-419098",
+        "name": "Bhagwati Filling Station",
+        "brand": "HP",
+        "town": "Bhatyund",
+        "lat": 32.72588,
+        "lon": 76.06925,
+        "source": {
+          "url": "https://petrolpump.hpretail.in/hindustan-petroleum-corporation-limited-bhagwati-filling-station-petrol-pump-bhatyund-chamba-419098/Home",
+          "title": "HP locator: Bhagwati Filling Station, Bhatyund",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "iocl-238254",
+        "name": "Churah Kisan Seva Kendra",
+        "brand": "Indian Oil",
+        "town": "Ail",
+        "lat": 32.82447,
+        "lon": 76.14035,
+        "source": {
+          "url": "https://locator.iocl.com/indianoil-churah-kisan-seva-kendra-petrol-pump-ail-chamba-238254/Home",
+          "title": "IndianOil locator: Churah Kisan Seva Kendra, Ail",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "hp-394573",
+        "name": "Batt Filling Station",
+        "brand": "HP",
+        "town": "Kutehr",
+        "lat": 32.85459,
+        "lon": 76.15615,
+        "source": {
+          "url": "https://petrolpump.hpretail.in/hindustan-petroleum-corporation-limited-batt-filling-station-petrol-pump-kutehr-chamba-394573/Home",
+          "title": "HP locator: Batt Filling Station, Kutehr",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "iocl-239027",
+        "name": "Sen Filling Station",
+        "brand": "Indian Oil",
+        "town": "Badhat",
+        "lat": 33.3381,
+        "lon": 75.7602,
+        "source": {
+          "url": "https://locator.iocl.com/indianoil-sen-filling-station-petrol-pump-badhat-doda-239027/Home",
+          "title": "IndianOil locator: Sen Filling Station, Badhat",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "hp-391912",
+        "name": "Shaheed Ishtiyaq Filling Station",
+        "brand": "HP",
+        "town": "Sangrambhata",
+        "lat": 33.3322,
+        "lon": 75.75542,
+        "source": {
+          "url": "https://petrolpump.hpretail.in/hindustan-petroleum-corporation-limited-shaheed-ishtiyaq-filling-station-petrol-pump-sangrambhata-doda-391912/Home",
+          "title": "HP locator: Shaheed Ishtiyaq Filling Station, Sangrambhata",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "hp-410680",
+        "name": "Hill View Service Station",
+        "brand": "HP",
+        "town": "Kishtwar",
+        "lat": 33.32274,
+        "lon": 75.76207,
+        "source": {
+          "url": "https://petrolpump.hpretail.in/hindustan-petroleum-corporation-limited-hill-view-service-station-petrol-pump-kishtwar-doda-410680/Home",
+          "title": "HP locator: Hill View Service Station, Kishtwar",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      }
+    ]
+  }
 }

@@ -370,5 +370,330 @@
     "The Nagaland tourism site timed out and the Kohima district site shows no Dzukou or road notices.",
     "Road condition north of Mokokchung rests on one 2021 blog; no recent source found.",
     "Videos not collected."
-  ]
+  ],
+  "pumps_from_companies": {
+    "why": "The open map missed many pumps between Kohima and Mokokchung and on to Mon. These are from the oil companies' own locators, IndianOil's (locator.iocl.com) and HP's (petrolpump.hpretail.in), read on 6 October 2026 for the districts the road runs through. A pump within 5 km along the road of one already on the map is left out. Bharat Petroleum's locator did not answer, and other companies' pumps are not added.",
+    "pumps": [
+      {
+        "id": "hp-425654",
+        "name": "LB Service Station",
+        "brand": "HP",
+        "town": "Mengujuma",
+        "lat": 25.75117,
+        "lon": 93.98226,
+        "source": {
+          "url": "https://petrolpump.hpretail.in/hindustan-petroleum-corporation-limited-lb-service-station-petrol-pump-mengujuma-kohima-425654/Home",
+          "title": "HP locator: LB Service Station, Mengujuma",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "iocl-200161",
+        "name": "Northern Highway Gas Station",
+        "brand": "Indian Oil",
+        "town": "Meriema",
+        "lat": 25.72833,
+        "lon": 94.07698,
+        "source": {
+          "url": "https://locator.iocl.com/indianoil-northern-highway-gas-station-petrol-pump-meriema-kohima-200161/Home",
+          "title": "IndianOil locator: Northern Highway Gas Station, Meriema",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "hp-425575",
+        "name": "Ahile Service Station",
+        "brand": "HP",
+        "town": "Kohima Mokokchung Road",
+        "lat": 25.73557,
+        "lon": 94.08326,
+        "source": {
+          "url": "https://petrolpump.hpretail.in/hindustan-petroleum-corporation-limited-m-s-ahile-service-station-petrol-pump-kohima-mokokchung-road-kohima-425575/Home",
+          "title": "HP locator: Ahile Service Station, Kohima Mokokchung Road",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "iocl-564245",
+        "name": "A S Enterprise",
+        "brand": "Indian Oil",
+        "town": "Village Chiechama",
+        "lat": 25.83448,
+        "lon": 94.15417,
+        "source": {
+          "url": "https://locator.iocl.com/indianoil-a-s-enterprise-petrol-pump-village-chiechama-kohima-564245/Home",
+          "title": "IndianOil locator: A S Enterprise, Village Chiechama",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "iocl-200171",
+        "name": "Marcofed Tseminyu",
+        "brand": "Indian Oil",
+        "town": "Ghathashi",
+        "lat": 25.87305,
+        "lon": 94.17482,
+        "source": {
+          "url": "https://locator.iocl.com/indianoil-marcofed-tseminyu-petrol-pump-ghathashi-kohima-200171/Home",
+          "title": "IndianOil locator: Marcofed Tseminyu, Ghathashi",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "iocl-200158",
+        "name": "Holojwi Memorial Delivery Station",
+        "brand": "Indian Oil",
+        "town": "Ghathashi",
+        "lat": 25.9195,
+        "lon": 94.21765,
+        "source": {
+          "url": "https://locator.iocl.com/indianoil-holojwi-memorial-delivery-station-petrol-pump-ghathashi-kohima-200158/Home",
+          "title": "IndianOil locator: Holojwi Memorial Delivery Station, Ghathashi",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "hp-425589",
+        "name": "Marcofed",
+        "brand": "HP",
+        "town": "Longjongkong",
+        "lat": 26.42417,
+        "lon": 94.42361,
+        "source": {
+          "url": "https://petrolpump.hpretail.in/hindustan-petroleum-corporation-limited-m-s-marcofed-petrol-pump-longjongkong-mokokchung-425589/Home",
+          "title": "HP locator: Marcofed, Longjongkong",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "iocl-239138",
+        "name": "Tuli Auto Station",
+        "brand": "Indian Oil",
+        "town": "Tuli",
+        "lat": 26.67534,
+        "lon": 94.64377,
+        "source": {
+          "url": "https://locator.iocl.com/indianoil-tuli-auto-station-petrol-pump-tuli-mokokchung-239138/Home",
+          "title": "IndianOil locator: Tuli Auto Station, Tuli",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "iocl-238975",
+        "name": "Aong Filling Station",
+        "brand": "Indian Oil",
+        "town": "Tuli",
+        "lat": 26.68069,
+        "lon": 94.63947,
+        "source": {
+          "url": "https://locator.iocl.com/indianoil-aong-filling-station-petrol-pump-tuli-mokokchung-238975/Home",
+          "title": "IndianOil locator: Aong Filling Station, Tuli",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "iocl-239096",
+        "name": "Marcofed Tzudikong",
+        "brand": "Indian Oil",
+        "town": "Geleky",
+        "lat": 26.71222,
+        "lon": 94.63028,
+        "source": {
+          "url": "https://locator.iocl.com/indianoil-marcofed-tzudikong-petrol-pump-geleky-sivasagar-239096/Home",
+          "title": "IndianOil locator: Marcofed Tzudikong, Geleky",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "hp-425680",
+        "name": "Mams Retailers",
+        "brand": "HP",
+        "town": "Mokokchung Amguri Road",
+        "lat": 26.72949,
+        "lon": 94.61582,
+        "source": {
+          "url": "https://petrolpump.hpretail.in/hindustan-petroleum-corporation-limited-mams-retailers-petrol-pump-mokokchung-amguri-road-mokokchung-425680/Home",
+          "title": "HP locator: Mams Retailers, Mokokchung Amguri Road",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "hp-417953",
+        "name": "Marcofed",
+        "brand": "HP",
+        "town": "Tzudikong",
+        "lat": 26.72944,
+        "lon": 94.61306,
+        "source": {
+          "url": "https://petrolpump.hpretail.in/hindustan-petroleum-corporation-limited-m-s-marcofed-petrol-pump-tzudikong-mokokchung-417953/Home",
+          "title": "HP locator: Marcofed, Tzudikong",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "iocl-564199",
+        "name": "Marcofed Watiyonpang",
+        "brand": "Indian Oil",
+        "town": "Watiyonpang",
+        "lat": 26.74676,
+        "lon": 94.59421,
+        "source": {
+          "url": "https://locator.iocl.com/indianoil-marcofed-watiyonpang-petrol-pump-watiyonpang-mokokchung-564199/Home",
+          "title": "IndianOil locator: Marcofed Watiyonpang, Watiyonpang",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "iocl-278823",
+        "name": "A K Fuel Junction",
+        "brand": "Indian Oil",
+        "town": "Sumdar",
+        "lat": 26.86305,
+        "lon": 94.60326,
+        "source": {
+          "url": "https://locator.iocl.com/indianoil-a-k-fuel-junction-petrol-pump-sumdar-sivasagar-278823/Home",
+          "title": "IndianOil locator: A K Fuel Junction, Sumdar",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "iocl-241236",
+        "name": "Gogoi Kisan Seva Kendra",
+        "brand": "Indian Oil",
+        "town": "Namtidoll",
+        "lat": 26.87697,
+        "lon": 94.6266,
+        "source": {
+          "url": "https://locator.iocl.com/indianoil-gogoi-kisan-seva-kendra-petrol-pump-namtidoll-sivasagar-241236/Home",
+          "title": "IndianOil locator: Gogoi Kisan Seva Kendra, Namtidoll",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "hp-483850",
+        "name": "G M Filling Station",
+        "brand": "HP",
+        "town": "Kharikortia",
+        "lat": 26.89524,
+        "lon": 94.63648,
+        "source": {
+          "url": "https://petrolpump.hpretail.in/hindustan-petroleum-corporation-limited-g-m-filling-station-petrol-pump-kharikortia-sivasagar-483850/Home",
+          "title": "HP locator: G M Filling Station, Kharikortia",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "iocl-241400",
+        "name": "Bezbarua Enterprise",
+        "brand": "Indian Oil",
+        "town": "Nazira",
+        "lat": 26.9122,
+        "lon": 94.73223,
+        "source": {
+          "url": "https://locator.iocl.com/indianoil-bezbarua-enterprise-petrol-pump-nazira-sivasagar-241400/Home",
+          "title": "IndianOil locator: Bezbarua Enterprise, Nazira",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "hp-410610",
+        "name": "Lahoty Bros PLD",
+        "brand": "HP",
+        "town": "Nazira",
+        "lat": 26.91682,
+        "lon": 94.73716,
+        "source": {
+          "url": "https://petrolpump.hpretail.in/hindustan-petroleum-corporation-limited-lahoty-bros-pld-petrol-pump-nazira-sivasagar-410610/Home",
+          "title": "HP locator: Lahoty Bros PLD, Nazira",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "iocl-241216",
+        "name": "Trishul Service Station",
+        "brand": "Indian Oil",
+        "town": "Simaluguri",
+        "lat": 26.93504,
+        "lon": 94.73526,
+        "source": {
+          "url": "https://locator.iocl.com/indianoil-trishul-service-station-petrol-pump-simaluguri-sivasagar-241216/Home",
+          "title": "IndianOil locator: Trishul Service Station, Simaluguri",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      },
+      {
+        "id": "iocl-519754",
+        "name": "Clean Energy",
+        "brand": "Indian Oil",
+        "town": "Garhgaon",
+        "lat": 26.92561,
+        "lon": 94.77569,
+        "source": {
+          "url": "https://locator.iocl.com/indianoil-clean-energy-petrol-pump-garhgaon-sivasagar-519754/Home",
+          "title": "IndianOil locator: Clean Energy, Garhgaon",
+          "kind": "official",
+          "opened": true,
+          "source_date": null,
+          "accessed": "2026-10-06"
+        }
+      }
+    ]
+  }
 }

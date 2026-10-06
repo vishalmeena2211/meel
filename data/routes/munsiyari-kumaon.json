@@ -10702,7 +10702,7 @@
    {
     "id": "fuel:way-1188922833",
     "name": "MS/HSD HARILEELA HIGHWAY",
-    "brand": "Hindustan Petroleum",
+    "brand": "HP",
     "near": "Kathgodam",
     "km_from_start": 0.0,
     "off_road_m": 507,
@@ -10765,6 +10765,86 @@
     "source": null
    },
    {
+    "id": "fuel:iocl-238747",
+    "name": "Parvat Filling Station",
+    "brand": "Indian Oil",
+    "near": "Khurpatal",
+    "km_from_start": 41.3,
+    "off_road_m": 1523,
+    "lat": 29.3927,
+    "lon": 79.4459,
+    "opening_hours": null,
+    "osm_url": null,
+    "source": {
+     "url": "https://locator.iocl.com/indianoil-parvat-filling-station-petrol-pump-khurpatal-nainital-238747/Home",
+     "title": "IndianOil locator: Parvat Filling Station, Khurpatal",
+     "kind": "official",
+     "opened": true,
+     "source_date": null,
+     "accessed": "2026-10-06"
+    }
+   },
+   {
+    "id": "fuel:iocl-239313",
+    "name": "Durga Stores",
+    "brand": "Indian Oil",
+    "near": "Tallital",
+    "km_from_start": 43.3,
+    "off_road_m": 145,
+    "lat": 29.38009,
+    "lon": 79.4621,
+    "opening_hours": null,
+    "osm_url": null,
+    "source": {
+     "url": "https://locator.iocl.com/indianoil-durga-stores-petrol-pump-tallital-nainital-239313/Home",
+     "title": "IndianOil locator: Durga Stores, Tallital",
+     "kind": "official",
+     "opened": true,
+     "source_date": null,
+     "accessed": "2026-10-06"
+    }
+   },
+   {
+    "id": "fuel:hp-395279",
+    "name": "Himalayan Petroleum Stopover",
+    "brand": "HP",
+    "near": "Khairna",
+    "km_from_start": 72.0,
+    "off_road_m": 33,
+    "lat": 29.49109,
+    "lon": 79.47925,
+    "opening_hours": null,
+    "osm_url": null,
+    "source": {
+     "url": "https://petrolpump.hpretail.in/hindustan-petroleum-corporation-limited-himalayan-petroleum-stopover-petrol-pump-khairna-nainital-395279/Home",
+     "title": "HP locator: Himalayan Petroleum Stopover, Khairna",
+     "kind": "official",
+     "opened": true,
+     "source_date": null,
+     "accessed": "2026-10-06"
+    }
+   },
+   {
+    "id": "fuel:hp-392395",
+    "name": "Kapisha Petroleum Stopover",
+    "brand": "HP",
+    "near": "Talla Cheena Khan",
+    "km_from_start": 106.9,
+    "off_road_m": 294,
+    "lat": 29.60019,
+    "lon": 79.66643,
+    "opening_hours": null,
+    "osm_url": null,
+    "source": {
+     "url": "https://petrolpump.hpretail.in/hindustan-petroleum-corporation-limited-kapisha-petroleum-stopover-petrol-pump-talla-cheena-khan-almora-392395/Home",
+     "title": "HP locator: Kapisha Petroleum Stopover, Talla Cheena Khan",
+     "kind": "official",
+     "opened": true,
+     "source_date": null,
+     "accessed": "2026-10-06"
+    }
+   },
+   {
     "id": "fuel:node-5580558726",
     "name": "Indian Oil",
     "brand": "Indian Oil",
@@ -10776,6 +10856,266 @@
     "opening_hours": null,
     "osm_url": "https://www.openstreetmap.org/node/5580558726",
     "source": null
+   },
+   {
+    "id": "fuel:hp-395321",
+    "name": "Dipti Filling Station",
+    "brand": "HP",
+    "near": "Bhowali",
+    "km_from_start": 196.3,
+    "off_road_m": 12,
+    "lat": 29.38961,
+    "lon": 79.51483,
+    "opening_hours": null,
+    "osm_url": null,
+    "source": {
+     "url": "https://petrolpump.hpretail.in/hindustan-petroleum-corporation-limited-dipti-filling-station-petrol-pump-bhowali-nainital-395321/Home",
+     "title": "HP locator: Dipti Filling Station, Bhowali",
+     "kind": "official",
+     "opened": true,
+     "source_date": null,
+     "accessed": "2026-10-06"
+    }
+   },
+   {
+    "id": "fuel:iocl-238128",
+    "name": "Shaheed Harish Deori F St",
+    "brand": "Indian Oil",
+    "near": "Almora College Road",
+    "km_from_start": 294.4,
+    "off_road_m": 56,
+    "lat": 29.61172,
+    "lon": 79.65195,
+    "opening_hours": null,
+    "osm_url": null,
+    "source": {
+     "url": "https://locator.iocl.com/indianoil-shaheed-harish-deori-f-st-petrol-pump-almora-college-road-almora-238128/Home",
+     "title": "IndianOil locator: Shaheed Harish Deori F St, Almora College Road",
+     "kind": "official",
+     "opened": true,
+     "source_date": null,
+     "accessed": "2026-10-06"
+    }
+   },
+   {
+    "id": "fuel:hp-394848",
+    "name": "Himalaya Highway Filling Station",
+    "brand": "HP",
+    "near": "Matela",
+    "km_from_start": 300.9,
+    "off_road_m": 4,
+    "lat": 29.62365,
+    "lon": 79.63052,
+    "opening_hours": null,
+    "osm_url": null,
+    "source": {
+     "url": "https://petrolpump.hpretail.in/hindustan-petroleum-corporation-limited-himalaya-highway-filling-station-petrol-pump-matela-almora-394848/Home",
+     "title": "HP locator: Himalaya Highway Filling Station, Matela",
+     "kind": "official",
+     "opened": true,
+     "source_date": null,
+     "accessed": "2026-10-06"
+    }
+   },
+   {
+    "id": "fuel:hp-403784",
+    "name": "Rana Filling Station",
+    "brand": "HP",
+    "near": "Someshwar",
+    "km_from_start": 330.1,
+    "off_road_m": 10,
+    "lat": 29.78121,
+    "lon": 79.60359,
+    "opening_hours": null,
+    "osm_url": null,
+    "source": {
+     "url": "https://petrolpump.hpretail.in/hindustan-petroleum-corporation-limited-rana-filling-station-petrol-pump-someshwar-bageshwar-403784/Home",
+     "title": "HP locator: Rana Filling Station, Someshwar",
+     "kind": "official",
+     "opened": true,
+     "source_date": null,
+     "accessed": "2026-10-06"
+    }
+   },
+   {
+    "id": "fuel:iocl-238053",
+    "name": "Sd R S Bora Filling Station",
+    "brand": "Indian Oil",
+    "near": "Dhaularh",
+    "km_from_start": 330.4,
+    "off_road_m": 1972,
+    "lat": 29.7989,
+    "lon": 79.6087,
+    "opening_hours": null,
+    "osm_url": null,
+    "source": {
+     "url": "https://locator.iocl.com/indianoil-sd-r-s-bora-filling-station-petrol-pump-dhaularh-almora-238053/Home",
+     "title": "IndianOil locator: Sd R S Bora Filling Station, Dhaularh",
+     "kind": "official",
+     "opened": true,
+     "source_date": null,
+     "accessed": "2026-10-06"
+    }
+   },
+   {
+    "id": "fuel:hp-409884",
+    "name": "Parihar Filling Station",
+    "brand": "HP",
+    "near": "Mihniya",
+    "km_from_start": 361.4,
+    "off_road_m": 540,
+    "lat": 29.84378,
+    "lon": 79.75895,
+    "opening_hours": null,
+    "osm_url": null,
+    "source": {
+     "url": "https://petrolpump.hpretail.in/hindustan-petroleum-corporation-limited-m-s-parihar-filling-station-petrol-pump-mihniya-bageshwar-409884/Home",
+     "title": "HP locator: Parihar Filling Station, Mihniya",
+     "kind": "official",
+     "opened": true,
+     "source_date": null,
+     "accessed": "2026-10-06"
+    }
+   },
+   {
+    "id": "fuel:hp-410260",
+    "name": "Baghnath Fuels",
+    "brand": "HP",
+    "near": "Bilonasera",
+    "km_from_start": 362.4,
+    "off_road_m": 1716,
+    "lat": 29.82022,
+    "lon": 79.77416,
+    "opening_hours": null,
+    "osm_url": null,
+    "source": {
+     "url": "https://petrolpump.hpretail.in/hindustan-petroleum-corporation-limited-baghnath-fuels-petrol-pump-bilonasera-bageshwar-410260/Home",
+     "title": "HP locator: Baghnath Fuels, Bilonasera",
+     "kind": "official",
+     "opened": true,
+     "source_date": null,
+     "accessed": "2026-10-06"
+    }
+   },
+   {
+    "id": "fuel:hp-405466",
+    "name": "Ashoka Filling Station",
+    "brand": "HP",
+    "near": "Majiyakhet",
+    "km_from_start": 362.5,
+    "off_road_m": 477,
+    "lat": 29.83108,
+    "lon": 79.77117,
+    "opening_hours": null,
+    "osm_url": null,
+    "source": {
+     "url": "https://petrolpump.hpretail.in/hindustan-petroleum-corporation-limited-ashoka-filling-station-petrol-pump-majiyakhet-bageshwar-405466/Home",
+     "title": "HP locator: Ashoka Filling Station, Majiyakhet",
+     "kind": "official",
+     "opened": true,
+     "source_date": null,
+     "accessed": "2026-10-06"
+    }
+   },
+   {
+    "id": "fuel:hp-410199",
+    "name": "Balaji Fuels",
+    "brand": "HP",
+    "near": "Faltania",
+    "km_from_start": 362.9,
+    "off_road_m": 133,
+    "lat": 29.83811,
+    "lon": 79.76929,
+    "opening_hours": null,
+    "osm_url": null,
+    "source": {
+     "url": "https://petrolpump.hpretail.in/hindustan-petroleum-corporation-limited-m-s-balaji-fuels-petrol-pump-faltania-bageshwar-410199/Home",
+     "title": "HP locator: Balaji Fuels, Faltania",
+     "kind": "official",
+     "opened": true,
+     "source_date": null,
+     "accessed": "2026-10-06"
+    }
+   },
+   {
+    "id": "fuel:iocl-238891",
+    "name": "Kohli Filling Station",
+    "brand": "Indian Oil",
+    "near": "Amsarkote",
+    "km_from_start": 363.8,
+    "off_road_m": 1267,
+    "lat": 29.8361,
+    "lon": 79.7858,
+    "opening_hours": null,
+    "osm_url": null,
+    "source": {
+     "url": "https://locator.iocl.com/indianoil-kohli-filling-station-petrol-pump-amsarkote-bageshwar-238891/Home",
+     "title": "IndianOil locator: Kohli Filling Station, Amsarkote",
+     "kind": "official",
+     "opened": true,
+     "source_date": null,
+     "accessed": "2026-10-06"
+    }
+   },
+   {
+    "id": "fuel:hp-403340",
+    "name": "Bajrang Fuels",
+    "brand": "HP",
+    "near": "Are",
+    "km_from_start": 366.1,
+    "off_road_m": 17,
+    "lat": 29.8594,
+    "lon": 79.78018,
+    "opening_hours": null,
+    "osm_url": null,
+    "source": {
+     "url": "https://petrolpump.hpretail.in/hindustan-petroleum-corporation-limited-bajrang-fuels-petrol-pump-are-bageshwar-403340/Home",
+     "title": "HP locator: Bajrang Fuels, Are",
+     "kind": "official",
+     "opened": true,
+     "source_date": null,
+     "accessed": "2026-10-06"
+    }
+   },
+   {
+    "id": "fuel:iocl-574373",
+    "name": "Jangpangi Energy Station",
+    "brand": "Indian Oil",
+    "near": "Bhainskhal",
+    "km_from_start": 460.3,
+    "off_road_m": 18,
+    "lat": 29.92999,
+    "lon": 80.14953,
+    "opening_hours": null,
+    "osm_url": null,
+    "source": {
+     "url": "https://locator.iocl.com/indianoil-jangpangi-energy-station-petrol-pump-bhainskhal-pithoragarh-574373/Home",
+     "title": "IndianOil locator: Jangpangi Energy Station, Bhainskhal",
+     "kind": "official",
+     "opened": true,
+     "source_date": null,
+     "accessed": "2026-10-06"
+    }
+   },
+   {
+    "id": "fuel:hp-390727",
+    "name": "Shiv Fuels",
+    "brand": "HP",
+    "near": "Thal",
+    "km_from_start": 478.1,
+    "off_road_m": 31,
+    "lat": 29.82718,
+    "lon": 80.14239,
+    "opening_hours": null,
+    "osm_url": null,
+    "source": {
+     "url": "https://petrolpump.hpretail.in/hindustan-petroleum-corporation-limited-m-s-shiv-fuels-petrol-pump-thal-pithoragarh-390727/Home",
+     "title": "HP locator: Shiv Fuels, Thal",
+     "kind": "official",
+     "opened": true,
+     "source_date": null,
+     "accessed": "2026-10-06"
+    }
    },
    {
     "id": "fuel:node-8581796995",
@@ -10791,48 +11131,57 @@
     "source": null
    }
   ],
-  "pump_count": 7,
-  "stops": 4,
+  "pump_count": 24,
+  "stops": 15,
   "longest_gaps": [
    {
-    "from_km": 144.0,
+    "from_km": 196.3,
+    "to_km": 294.4,
+    "gap_km": 98.1,
+    "from_is": "pump",
+    "to_is": "pump",
+    "near_from": "Kausani",
+    "near_to": "Kausani"
+   },
+   {
+    "from_km": 366.1,
+    "to_km": 460.3,
+    "gap_km": 94.2,
+    "from_is": "pump",
+    "to_is": "pump",
+    "near_from": "Bageshwar",
+    "near_to": "Thal"
+   },
+   {
+    "from_km": 478.1,
     "to_km": 546.7,
-    "gap_km": 402.7,
+    "gap_km": 68.6,
+    "from_is": "pump",
+    "to_is": "pump",
+    "near_from": "Thal",
+    "near_to": "Munsiyari"
+   },
+   {
+    "from_km": 144.0,
+    "to_km": 196.3,
+    "gap_km": 52.3,
     "from_is": "pump",
     "to_is": "pump",
     "near_from": "Binsar",
-    "near_to": "Munsiyari"
+    "near_to": "Kausani"
    },
    {
-    "from_km": 16.0,
+    "from_km": 106.9,
     "to_km": 144.0,
-    "gap_km": 128.0,
+    "gap_km": 37.1,
     "from_is": "pump",
     "to_is": "pump",
-    "near_from": "Kathgodam",
+    "near_from": "Almora",
     "near_to": "Binsar"
-   },
-   {
-    "from_km": 1.9,
-    "to_km": 16.0,
-    "gap_km": 14.1,
-    "from_is": "pump",
-    "to_is": "pump",
-    "near_from": "Kathgodam",
-    "near_to": "Kathgodam"
-   },
-   {
-    "from_km": 546.7,
-    "to_km": 558.2,
-    "gap_km": 11.5,
-    "from_is": "pump",
-    "to_is": "end of route",
-    "near_from": "Munsiyari",
-    "near_to": "Munsiyari"
    }
   ],
-  "note": "Pumps are those drawn on the open map within the search radius of the road. A pump missing from the map is missing here, so each gap is a worst case.",
-  "fetched": "2026-09-28"
+  "note": "Pumps are those drawn on the open map within the search radius of the road, and, where the map has none, those on the oil companies' own locators. A pump missing from both is missing here, so each gap is a worst case.",
+  "fetched": "2026-10-06"
  },
  "rules": [
   {
@@ -11045,7 +11394,7 @@
   "No rider videos collected; the search budget ran out before this route."
  ],
  "counts": {
-  "facts": 33
+  "facts": 50
  },
- "built": "2026-09-28"
+ "built": "2026-10-06"
 }
