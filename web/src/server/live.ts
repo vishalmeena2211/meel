@@ -20,9 +20,24 @@ import type { Authority, Route, RouteDistrict } from "@/lib/types";
 
 const UA = "Meel rider site (+https://rideplanner.in)";
 
-async function readText(
+/** Reads under way, so pages made at the same moment share one request to an office instead of each sending their own. */
+const underWay = new Map<string, Promise<{ text: string; headers: Headers } | null>>();
+
+function readText(
   url: string,
-  { timeoutMs = 10_000, headers = {} }: { timeoutMs?: number; headers?: Record<string, string> } = {},
+  options: { timeoutMs?: number; headers?: Record<string, string> } = {},
+): Promise<{ text: string; headers: Headers } | null> {
+  const key = `${url}|${JSON.stringify(options.headers ?? {})}`;
+  const running = underWay.get(key);
+  if (running) return running;
+  const read = readOnce(url, options).finally(() => underWay.delete(key));
+  underWay.set(key, read);
+  return read;
+}
+
+async function readOnce(
+  url: string,
+  { timeoutMs = 10_000, headers = {} }: { timeoutMs?: number; headers?: Record<string, string> },
 ): Promise<{ text: string; headers: Headers } | null> {
   try {
     const res = await fetch(url, {
