@@ -1,0 +1,495 @@
+{
+ "fetched": "2026-10-06",
+ "hospitals": [
+  {
+   "name": "Remedy Hospital",
+   "km_from_start": 0.0,
+   "off_road_m": 1210,
+   "lat": 24.80297,
+   "lon": 93.94754,
+   "osm_url": "https://www.openstreetmap.org/node/7580090619"
+  },
+  {
+   "name": "Advanced Hospital",
+   "km_from_start": 0.0,
+   "off_road_m": 988,
+   "lat": 24.79826,
+   "lon": 93.94609,
+   "osm_url": "https://www.openstreetmap.org/node/7580090651"
+  },
+  {
+   "name": "Suba Hospital and Assisted Reproductive Centre",
+   "km_from_start": 0.1,
+   "off_road_m": 1757,
+   "lat": 24.81269,
+   "lon": 93.92521,
+   "osm_url": "https://www.openstreetmap.org/node/6908093911"
+  },
+  {
+   "name": "Care Foundation Hospital",
+   "km_from_start": 0.1,
+   "off_road_m": 1282,
+   "lat": 24.80498,
+   "lon": 93.94734,
+   "osm_url": "https://www.openstreetmap.org/node/7580090635"
+  },
+  {
+   "name": "Peace Hospital And Research Institute",
+   "km_from_start": 0.1,
+   "off_road_m": 1377,
+   "lat": 24.81205,
+   "lon": 93.93202,
+   "osm_url": "https://www.openstreetmap.org/node/7580090658"
+  },
+  {
+   "name": "Vision Plus Hospital",
+   "km_from_start": 0.1,
+   "off_road_m": 1728,
+   "lat": 24.81333,
+   "lon": 93.92672,
+   "osm_url": "https://www.openstreetmap.org/node/7580090677"
+  },
+  {
+   "name": "Maipakpi Maternity and Child Hospital",
+   "km_from_start": 0.1,
+   "off_road_m": 1845,
+   "lat": 24.81551,
+   "lon": 93.94273,
+   "osm_url": "https://www.openstreetmap.org/node/7580090683"
+  },
+  {
+   "name": "Chamber Hospital",
+   "km_from_start": 0.1,
+   "off_road_m": 1070,
+   "lat": 24.80974,
+   "lon": 93.93658,
+   "osm_url": "https://www.openstreetmap.org/node/7580090685"
+  },
+  {
+   "name": "Sky Hospital & Research Centre",
+   "km_from_start": 0.1,
+   "off_road_m": 1630,
+   "lat": 24.81303,
+   "lon": 93.92809,
+   "osm_url": "https://www.openstreetmap.org/node/7580090687"
+  },
+  {
+   "name": "Imphal Hospital and Research Centre",
+   "km_from_start": 0.1,
+   "off_road_m": 1502,
+   "lat": 24.81222,
+   "lon": 93.92914,
+   "osm_url": "https://www.openstreetmap.org/way/665563432"
+  },
+  {
+   "name": "Mothers Care Children Hospital and Research Centre",
+   "km_from_start": 0.5,
+   "off_road_m": 916,
+   "lat": 24.80359,
+   "lon": 93.92668,
+   "osm_url": "https://www.openstreetmap.org/node/6908093887"
+  },
+  {
+   "name": "Iboyaima Hospital & Research Centre",
+   "km_from_start": 1.2,
+   "off_road_m": 1473,
+   "lat": 24.78435,
+   "lon": 93.93884,
+   "osm_url": "https://www.openstreetmap.org/node/7580090679"
+  },
+  {
+   "name": "Igastrocare Hospital",
+   "km_from_start": 1.7,
+   "off_road_m": 17,
+   "lat": 24.79043,
+   "lon": 93.92503,
+   "osm_url": "https://www.openstreetmap.org/node/7580090698"
+  },
+  {
+   "name": "Asian Hospital",
+   "km_from_start": 2.1,
+   "off_road_m": 29,
+   "lat": 24.78795,
+   "lon": 93.92241,
+   "osm_url": "https://www.openstreetmap.org/node/7580090672"
+  },
+  {
+   "name": "Apex Hospital & Research Centre",
+   "km_from_start": 2.5,
+   "off_road_m": 1184,
+   "lat": 24.7782,
+   "lon": 93.92777,
+   "osm_url": "https://www.openstreetmap.org/node/7580090647"
+  },
+  {
+   "name": "Nambol Hospital",
+   "km_from_start": 13.5,
+   "off_road_m": 501,
+   "lat": 24.71903,
+   "lon": 93.84673,
+   "osm_url": "https://www.openstreetmap.org/node/7588412962"
+  },
+  {
+   "name": "ACS Hospital",
+   "km_from_start": 14.8,
+   "off_road_m": 116,
+   "lat": 24.71705,
+   "lon": 93.83289,
+   "osm_url": "https://www.openstreetmap.org/node/7588412969"
+  },
+  {
+   "name": "Tuberculosis Hospital",
+   "km_from_start": 27.1,
+   "off_road_m": 52,
+   "lat": 24.63566,
+   "lon": 93.76509,
+   "osm_url": "https://www.openstreetmap.org/node/7588412945"
+  },
+  {
+   "name": "District Hospital, Bishnupur",
+   "km_from_start": 27.6,
+   "off_road_m": 108,
+   "lat": 24.63198,
+   "lon": 93.76192,
+   "osm_url": "https://www.openstreetmap.org/node/6387635521"
+  },
+  {
+   "name": "Sielmat Christian Hospital and Research Center",
+   "km_from_start": 65.7,
+   "off_road_m": 37,
+   "lat": 24.34942,
+   "lon": 93.70142,
+   "osm_url": "https://www.openstreetmap.org/node/6908120441"
+  },
+  {
+   "name": "Nazaret Hospital",
+   "km_from_start": 66.7,
+   "off_road_m": 299,
+   "lat": 24.34279,
+   "lon": 93.69512,
+   "osm_url": "https://www.openstreetmap.org/node/7588412948"
+  },
+  {
+   "name": "Churachandpur District Hospital",
+   "km_from_start": 66.8,
+   "off_road_m": 514,
+   "lat": 24.34299,
+   "lon": 93.69287,
+   "osm_url": "https://www.openstreetmap.org/node/7095155813"
+  },
+  {
+   "name": "Peoples Health Foundation Centre",
+   "km_from_start": 68.3,
+   "off_road_m": 439,
+   "lat": 24.33062,
+   "lon": 93.68865,
+   "osm_url": "https://www.openstreetmap.org/node/6908120436"
+  },
+  {
+   "name": "CHC Ngopa",
+   "km_from_start": 252.4,
+   "off_road_m": 86,
+   "lat": 23.88173,
+   "lon": 93.21183,
+   "osm_url": "https://www.openstreetmap.org/node/6433556155"
+  },
+  {
+   "name": "Sub-District Hospital,Saitual",
+   "km_from_start": 355.2,
+   "off_road_m": 1441,
+   "lat": 23.68214,
+   "lon": 92.96301,
+   "osm_url": "https://www.openstreetmap.org/node/6909859305"
+  },
+  {
+   "name": "Presbyterian Hospital",
+   "km_from_start": 377.6,
+   "off_road_m": 1839,
+   "lat": 23.68782,
+   "lon": 92.85946,
+   "osm_url": "https://www.openstreetmap.org/node/6911271641"
+  },
+  {
+   "name": "Greenwood Hospital",
+   "km_from_start": 421.4,
+   "off_road_m": 99,
+   "lat": 23.75554,
+   "lon": 92.73108,
+   "osm_url": "https://www.openstreetmap.org/node/6909859294"
+  },
+  {
+   "name": "LRM Hospital",
+   "km_from_start": 423.4,
+   "off_road_m": 388,
+   "lat": 23.74432,
+   "lon": 92.72344,
+   "osm_url": "https://www.openstreetmap.org/node/7621733288"
+  },
+  {
+   "name": "Rosewood Hospital",
+   "km_from_start": 425.2,
+   "off_road_m": 66,
+   "lat": 23.73117,
+   "lon": 92.71796,
+   "osm_url": "https://www.openstreetmap.org/node/7621733298"
+  },
+  {
+   "name": "Ebenezar Hospital",
+   "km_from_start": 425.4,
+   "off_road_m": 854,
+   "lat": 23.73119,
+   "lon": 92.70784,
+   "osm_url": "https://www.openstreetmap.org/node/11378893230"
+  },
+  {
+   "name": "Ebenezar Hospital Area",
+   "km_from_start": 425.4,
+   "off_road_m": 855,
+   "lat": 23.73133,
+   "lon": 92.70787,
+   "osm_url": "https://www.openstreetmap.org/way/641625290"
+  },
+  {
+   "name": "Alpha Hospital",
+   "km_from_start": 425.9,
+   "off_road_m": 1977,
+   "lat": 23.70931,
+   "lon": 92.71953,
+   "osm_url": "https://www.openstreetmap.org/node/6909859524"
+  },
+  {
+   "name": "Aizawl Hospital & Research Centre",
+   "km_from_start": 425.9,
+   "off_road_m": 901,
+   "lat": 23.71891,
+   "lon": 92.71755,
+   "osm_url": "https://www.openstreetmap.org/node/7127376542"
+  },
+  {
+   "name": "B.N. Hospital,Kulikawn",
+   "km_from_start": 425.9,
+   "off_road_m": 1778,
+   "lat": 23.71109,
+   "lon": 92.71938,
+   "osm_url": "https://www.openstreetmap.org/node/7127376552"
+  },
+  {
+   "name": "City Hospital",
+   "km_from_start": 425.9,
+   "off_road_m": 1163,
+   "lat": 23.71662,
+   "lon": 92.71642,
+   "osm_url": "https://www.openstreetmap.org/node/7621733301"
+  },
+  {
+   "name": "Aizawl Civil Hospital",
+   "km_from_start": 426.6,
+   "off_road_m": 47,
+   "lat": 23.73192,
+   "lon": 92.71663,
+   "osm_url": "https://www.openstreetmap.org/way/487812363"
+  },
+  {
+   "name": "Vaivenga Hospital",
+   "km_from_start": 426.8,
+   "off_road_m": 105,
+   "lat": 23.73341,
+   "lon": 92.71594,
+   "osm_url": "https://www.openstreetmap.org/node/7127376539"
+  },
+  {
+   "name": "Aizawl Adventist Hospital",
+   "km_from_start": 427.3,
+   "off_road_m": 768,
+   "lat": 23.73663,
+   "lon": 92.70936,
+   "osm_url": "https://www.openstreetmap.org/way/662506631"
+  },
+  {
+   "name": "Nazareth Hospitals",
+   "km_from_start": 428.9,
+   "off_road_m": 21,
+   "lat": 23.74898,
+   "lon": 92.72242,
+   "osm_url": "https://www.openstreetmap.org/node/6909859549"
+  },
+  {
+   "name": "Bethesda Hospital",
+   "km_from_start": 429.6,
+   "off_road_m": 54,
+   "lat": 23.75046,
+   "lon": 92.72662,
+   "osm_url": "https://www.openstreetmap.org/node/6911271636"
+  },
+  {
+   "name": "District Hospital,Champhai",
+   "km_from_start": 607.8,
+   "off_road_m": 919,
+   "lat": 23.481,
+   "lon": 93.3096,
+   "osm_url": "https://www.openstreetmap.org/node/7127376561"
+  },
+  {
+   "name": "DM Hospital",
+   "km_from_start": 608.9,
+   "off_road_m": 208,
+   "lat": 23.47754,
+   "lon": 93.32569,
+   "osm_url": "https://www.openstreetmap.org/node/7621733290"
+  },
+  {
+   "name": "Med Aim Adventist Hospital",
+   "km_from_start": 608.9,
+   "off_road_m": 1214,
+   "lat": 23.47263,
+   "lon": 93.33438,
+   "osm_url": "https://www.openstreetmap.org/node/7621733294"
+  }
+ ],
+ "police": [
+  {
+   "name": "IMPHAL POLICE STATION",
+   "km_from_start": 0.0,
+   "off_road_m": 448,
+   "lat": 24.79993,
+   "lon": 93.94068,
+   "osm_url": "https://www.openstreetmap.org/way/1096522181"
+  },
+  {
+   "name": "SP IMPHAL WEST",
+   "km_from_start": 0.0,
+   "off_road_m": 442,
+   "lat": 24.79982,
+   "lon": 93.94064,
+   "osm_url": "https://www.openstreetmap.org/way/1096522182"
+  },
+  {
+   "name": "DIGP(R-I) OFFICE",
+   "km_from_start": 0.0,
+   "off_road_m": 456,
+   "lat": 24.79972,
+   "lon": 93.9408,
+   "osm_url": "https://www.openstreetmap.org/way/1096522183"
+  },
+  {
+   "name": "Kwakeithel Police Station",
+   "km_from_start": 2.3,
+   "off_road_m": 33,
+   "lat": 24.7868,
+   "lon": 93.92115,
+   "osm_url": "https://www.openstreetmap.org/node/6387635527"
+  },
+  {
+   "name": null,
+   "km_from_start": 13.7,
+   "off_road_m": 55,
+   "lat": 24.72067,
+   "lon": 93.84234,
+   "osm_url": "https://www.openstreetmap.org/node/6387635523"
+  },
+  {
+   "name": "Bishnupur Police Station",
+   "km_from_start": 29.1,
+   "off_road_m": 29,
+   "lat": 24.619,
+   "lon": 93.76177,
+   "osm_url": "https://www.openstreetmap.org/node/6387635522"
+  },
+  {
+   "name": "Lamka Police Station",
+   "km_from_start": 66.1,
+   "off_road_m": 34,
+   "lat": 24.34633,
+   "lon": 93.69985,
+   "osm_url": "https://www.openstreetmap.org/node/6514727868"
+  },
+  {
+   "name": "Ngopa Police Station",
+   "km_from_start": 252.4,
+   "off_road_m": 180,
+   "lat": 23.88177,
+   "lon": 93.21281,
+   "osm_url": "https://www.openstreetmap.org/node/6433556156"
+  },
+  {
+   "name": "Keifang Police Station",
+   "km_from_start": 355.2,
+   "off_road_m": 930,
+   "lat": 23.6775,
+   "lon": 92.96283,
+   "osm_url": "https://www.openstreetmap.org/node/10817754470"
+  },
+  {
+   "name": "Bawngkawn Police Station",
+   "km_from_start": 421.7,
+   "off_road_m": 41,
+   "lat": 23.75345,
+   "lon": 92.7281,
+   "osm_url": "https://www.openstreetmap.org/node/10807355551"
+  },
+  {
+   "name": "Kulikawn Police Station",
+   "km_from_start": 425.9,
+   "off_road_m": 1728,
+   "lat": 23.71156,
+   "lon": 92.71958,
+   "osm_url": "https://www.openstreetmap.org/node/10807376498"
+  },
+  {
+   "name": "Aizwal Police Station",
+   "km_from_start": 426.7,
+   "off_road_m": 42,
+   "lat": 23.73323,
+   "lon": 92.71654,
+   "osm_url": "https://www.openstreetmap.org/node/10807355550"
+  },
+  {
+   "name": "Vaivakawn Police Station",
+   "km_from_start": 427.4,
+   "off_road_m": 569,
+   "lat": 23.73813,
+   "lon": 92.71108,
+   "osm_url": "https://www.openstreetmap.org/node/10807335377"
+  },
+  {
+   "name": "Zonuam Police Out Post",
+   "km_from_start": 427.4,
+   "off_road_m": 1957,
+   "lat": 23.73597,
+   "lon": 92.69765,
+   "osm_url": "https://www.openstreetmap.org/node/10807391978"
+  },
+  {
+   "name": null,
+   "km_from_start": 566.2,
+   "off_road_m": 12,
+   "lat": 23.53359,
+   "lon": 93.17028,
+   "osm_url": "https://www.openstreetmap.org/node/13081510840"
+  },
+  {
+   "name": "Khawzawl Police Station",
+   "km_from_start": 571.8,
+   "off_road_m": 4,
+   "lat": 23.50383,
+   "lon": 93.19543,
+   "osm_url": "https://www.openstreetmap.org/node/10817727753"
+  },
+  {
+   "name": null,
+   "km_from_start": 605.4,
+   "off_road_m": 11,
+   "lat": 23.46802,
+   "lon": 93.31127,
+   "osm_url": "https://www.openstreetmap.org/node/13069700300"
+  },
+  {
+   "name": "Champhai Police Station",
+   "km_from_start": 607.8,
+   "off_road_m": 260,
+   "lat": 23.47743,
+   "lon": 93.31546,
+   "osm_url": "https://www.openstreetmap.org/node/10817755424"
+  }
+ ]
+}

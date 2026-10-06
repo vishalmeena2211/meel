@@ -83,6 +83,31 @@ export function indiaDay(at: Date = new Date()): string {
   return `${pick("year")}-${pick("month")}-${pick("day")}`;
 }
 
+const INDIA_CLOCK = new Intl.DateTimeFormat("en-GB", {
+  timeZone: "Asia/Kolkata",
+  hour: "numeric",
+  minute: "2-digit",
+  hour12: true,
+});
+
+/** A moment as an Indian clock reads it: "4:20 pm". */
+export function sayClock(moment: string | Date): string {
+  const at = typeof moment === "string" ? new Date(moment) : moment;
+  if (Number.isNaN(at.getTime())) return "";
+  return INDIA_CLOCK.format(at).replace(/\s/g, " ").toLowerCase().replace(/^0/, "");
+}
+
+/**
+ * A moment with its day and its time in India: "6 Oct, 4:20 pm".
+ * Never "today": a page made an hour ago may be read tomorrow.
+ */
+export function sayMoment(moment: string | Date): string {
+  const at = typeof moment === "string" ? new Date(moment) : moment;
+  if (Number.isNaN(at.getTime())) return typeof moment === "string" ? moment : "";
+  const day = indiaDay(at);
+  return `${Number(day.slice(8, 10))} ${monthName(Number(day.slice(5, 7)), true)}, ${sayClock(at)}`;
+}
+
 /** The India day on which a stored moment fell. Moments are stored in world time. */
 export function dayOf(moment: string): string {
   const at = new Date(moment);

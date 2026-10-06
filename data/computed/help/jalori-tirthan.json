@@ -1,0 +1,63 @@
+{
+ "fetched": "2026-10-06",
+ "hospitals": [
+  {
+   "name": "Government Hospital, Balichowki",
+   "km_from_start": 14.4,
+   "off_road_m": 102,
+   "lat": 31.68831,
+   "lon": 77.28037,
+   "osm_url": "https://www.openstreetmap.org/node/7165541982"
+  },
+  {
+   "name": "Primary Health Center Gushaini",
+   "km_from_start": 36.1,
+   "off_road_m": 77,
+   "lat": 31.63792,
+   "lon": 77.42824,
+   "osm_url": "https://www.openstreetmap.org/node/10934159864"
+  },
+  {
+   "name": "Civil Hospital, Banjar",
+   "km_from_start": 46.8,
+   "off_road_m": 11,
+   "lat": 31.63672,
+   "lon": 77.34433,
+   "osm_url": "https://www.openstreetmap.org/node/4586872621"
+  },
+  {
+   "name": "Government Hospital, Anni",
+   "km_from_start": 97.2,
+   "off_road_m": 233,
+   "lat": 31.43316,
+   "lon": 77.41698,
+   "osm_url": "https://www.openstreetmap.org/node/7165506428"
+  }
+ ],
+ "police": [
+  {
+   "name": "Police station Aut",
+   "km_from_start": 0.0,
+   "off_road_m": 100,
+   "lat": 31.74363,
+   "lon": 77.20832,
+   "osm_url": "https://www.openstreetmap.org/node/2902782566"
+  },
+  {
+   "name": "Aut Police Station",
+   "km_from_start": 3.1,
+   "off_road_m": 802,
+   "lat": 31.712,
+   "lon": 77.20196,
+   "osm_url": "https://www.openstreetmap.org/node/9838860010"
+  },
+  {
+   "name": "Police Station Banjar",
+   "km_from_start": 25.6,
+   "off_road_m": 40,
+   "lat": 31.63814,
+   "lon": 77.34468,
+   "osm_url": "https://www.openstreetmap.org/node/2903119811"
+  }
+ ]
+}

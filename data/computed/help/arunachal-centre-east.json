@@ -1,0 +1,127 @@
+{
+ "fetched": "2026-10-06",
+ "hospitals": [
+  {
+   "name": "Government Hospital",
+   "km_from_start": 0.5,
+   "off_road_m": 541,
+   "lat": 27.53895,
+   "lon": 93.82218,
+   "osm_url": "https://www.openstreetmap.org/way/451566625"
+  },
+  {
+   "name": "Community Health Center",
+   "km_from_start": 7.9,
+   "off_road_m": 87,
+   "lat": 27.59425,
+   "lon": 93.82641,
+   "osm_url": "https://www.openstreetmap.org/node/4483884014"
+  },
+  {
+   "name": "General hospital",
+   "km_from_start": 666.8,
+   "off_road_m": 413,
+   "lat": 28.16884,
+   "lon": 94.80102,
+   "osm_url": "https://www.openstreetmap.org/node/5320288022"
+  },
+  {
+   "name": "Bakin Pertin Hospital, Pasighat",
+   "km_from_start": 767.0,
+   "off_road_m": 163,
+   "lat": 28.07121,
+   "lon": 95.32478,
+   "osm_url": "https://www.openstreetmap.org/way/472035462"
+  },
+  {
+   "name": "Community Health Centre",
+   "km_from_start": 831.7,
+   "off_road_m": 286,
+   "lat": 28.267,
+   "lon": 95.61366,
+   "osm_url": "https://www.openstreetmap.org/node/4474581844"
+  },
+  {
+   "name": "Primary Health Center Etalin",
+   "km_from_start": 1040.3,
+   "off_road_m": 11,
+   "lat": 28.60759,
+   "lon": 95.87123,
+   "osm_url": "https://www.openstreetmap.org/node/5187608025"
+  },
+  {
+   "name": "District hospital",
+   "km_from_start": 1087.5,
+   "off_road_m": 516,
+   "lat": 28.79679,
+   "lon": 95.91033,
+   "osm_url": "https://www.openstreetmap.org/node/5187607837"
+  },
+  {
+   "name": "District Hospital",
+   "km_from_start": 1298.8,
+   "off_road_m": 387,
+   "lat": 28.14154,
+   "lon": 95.84051,
+   "osm_url": "https://www.openstreetmap.org/node/7615441767"
+  },
+  {
+   "name": "District Hospital",
+   "km_from_start": 1374.8,
+   "off_road_m": 159,
+   "lat": 27.92805,
+   "lon": 96.15817,
+   "osm_url": "https://www.openstreetmap.org/node/7615441770"
+  },
+  {
+   "name": "Hayuliang Hospital",
+   "km_from_start": 1466.8,
+   "off_road_m": 176,
+   "lat": 28.08211,
+   "lon": 96.52456,
+   "osm_url": "https://www.openstreetmap.org/node/9140652038"
+  }
+ ],
+ "police": [
+  {
+   "name": null,
+   "km_from_start": 478.9,
+   "off_road_m": 14,
+   "lat": 28.5993,
+   "lon": 94.13598,
+   "osm_url": "https://www.openstreetmap.org/node/5329822035"
+  },
+  {
+   "name": "Kamba Police Station",
+   "km_from_start": 625.4,
+   "off_road_m": 14,
+   "lat": 28.26619,
+   "lon": 94.67422,
+   "osm_url": "https://www.openstreetmap.org/node/9568801594"
+  },
+  {
+   "name": "Aalo Police Station",
+   "km_from_start": 667.1,
+   "off_road_m": 2,
+   "lat": 28.17313,
+   "lon": 94.80002,
+   "osm_url": "https://www.openstreetmap.org/node/6897140885"
+  },
+  {
+   "name": "Police Station",
+   "km_from_start": 831.7,
+   "off_road_m": 551,
+   "lat": 28.26592,
+   "lon": 95.61611,
+   "osm_url": "https://www.openstreetmap.org/node/4474603519"
+  },
+  {
+   "name": "Superintendent of police office",
+   "km_from_start": 1086.6,
+   "off_road_m": 88,
+   "lat": 28.79444,
+   "lon": 95.89886,
+   "osm_url": "https://www.openstreetmap.org/node/5187607436"
+  }
+ ]
+}

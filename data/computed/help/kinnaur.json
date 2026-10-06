@@ -1,0 +1,87 @@
+{
+ "fetched": "2026-10-06",
+ "hospitals": [
+  {
+   "name": "Primary Health Centre, Rampur",
+   "km_from_start": 0.0,
+   "off_road_m": 61,
+   "lat": 31.44814,
+   "lon": 77.62956,
+   "osm_url": "https://www.openstreetmap.org/node/7010670228"
+  },
+  {
+   "name": "Dr. B K Arora Hospital",
+   "km_from_start": 2.4,
+   "off_road_m": 1,
+   "lat": 31.45327,
+   "lon": 77.65165,
+   "osm_url": "https://www.openstreetmap.org/node/7642218122"
+  },
+  {
+   "name": "Shrikhand Hospital",
+   "km_from_start": 4.2,
+   "off_road_m": 21,
+   "lat": 31.45881,
+   "lon": 77.66735,
+   "osm_url": "https://www.openstreetmap.org/node/7642218100"
+  },
+  {
+   "name": "Leelawati Nursing Home",
+   "km_from_start": 4.5,
+   "off_road_m": 16,
+   "lat": 31.46038,
+   "lon": 77.67021,
+   "osm_url": "https://www.openstreetmap.org/node/7642218136"
+  },
+  {
+   "name": "Sushil Clinic",
+   "km_from_start": 219.8,
+   "off_road_m": 55,
+   "lat": 31.54071,
+   "lon": 78.27052,
+   "osm_url": "https://www.openstreetmap.org/node/7637726881"
+  },
+  {
+   "name": null,
+   "km_from_start": 220.0,
+   "off_road_m": 63,
+   "lat": 31.53943,
+   "lon": 78.27143,
+   "osm_url": "https://www.openstreetmap.org/node/4780416526"
+  },
+  {
+   "name": "District Ayurvedic Hospital, Reckong Peo",
+   "km_from_start": 222.2,
+   "off_road_m": 5,
+   "lat": 31.53915,
+   "lon": 78.26784,
+   "osm_url": "https://www.openstreetmap.org/node/7012998941"
+  },
+  {
+   "name": "Reckong Peo Regional Hospital",
+   "km_from_start": 222.6,
+   "off_road_m": 57,
+   "lat": 31.53941,
+   "lon": 78.26704,
+   "osm_url": "https://www.openstreetmap.org/node/6990600592"
+  }
+ ],
+ "police": [
+  {
+   "name": "Chaura Police Post",
+   "km_from_start": 34.0,
+   "off_road_m": 12,
+   "lat": 31.56502,
+   "lon": 77.84278,
+   "osm_url": "https://www.openstreetmap.org/node/627282368"
+  },
+  {
+   "name": "Police Station Bhabhanagar",
+   "km_from_start": 48.0,
+   "off_road_m": 12,
+   "lat": 31.5654,
+   "lon": 77.93465,
+   "osm_url": "https://www.openstreetmap.org/node/627290792"
+  }
+ ]
+}

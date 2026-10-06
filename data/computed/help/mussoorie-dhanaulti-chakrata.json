@@ -1,0 +1,423 @@
+{
+ "fetched": "2026-10-06",
+ "hospitals": [
+  {
+   "name": "General Hospital",
+   "km_from_start": 0.0,
+   "off_road_m": 938,
+   "lat": 30.3194,
+   "lon": 78.05032,
+   "osm_url": "https://www.openstreetmap.org/node/1697822276"
+  },
+  {
+   "name": "Yash Respiratory and Medical Disease Centre",
+   "km_from_start": 0.0,
+   "off_road_m": 1455,
+   "lat": 30.31635,
+   "lon": 78.05441,
+   "osm_url": "https://www.openstreetmap.org/node/6950904473"
+  },
+  {
+   "name": "City Heart Centre",
+   "km_from_start": 0.0,
+   "off_road_m": 914,
+   "lat": 30.31969,
+   "lon": 78.05031,
+   "osm_url": "https://www.openstreetmap.org/node/7479937303"
+  },
+  {
+   "name": "Heart Clinic",
+   "km_from_start": 0.2,
+   "off_road_m": 1030,
+   "lat": 30.31794,
+   "lon": 78.05002,
+   "osm_url": "https://www.openstreetmap.org/node/1697822274"
+  },
+  {
+   "name": "CMI",
+   "km_from_start": 0.2,
+   "off_road_m": 1429,
+   "lat": 30.31219,
+   "lon": 78.04749,
+   "osm_url": "https://www.openstreetmap.org/node/1854105148"
+  },
+  {
+   "name": "Government Doon Hospital",
+   "km_from_start": 0.2,
+   "off_road_m": 508,
+   "lat": 30.3196,
+   "lon": 78.0423,
+   "osm_url": "https://www.openstreetmap.org/node/4254504792"
+  },
+  {
+   "name": "wedding by fourth munky",
+   "km_from_start": 0.2,
+   "off_road_m": 639,
+   "lat": 30.31843,
+   "lon": 78.04248,
+   "osm_url": "https://www.openstreetmap.org/node/4255814491"
+  },
+  {
+   "name": "Guru Teg Bahadur Sahib Hospital",
+   "km_from_start": 0.2,
+   "off_road_m": 1542,
+   "lat": 30.31122,
+   "lon": 78.04785,
+   "osm_url": "https://www.openstreetmap.org/node/6951986574"
+  },
+  {
+   "name": "Kamra`s Urinary and Surgical Diseasea Centre",
+   "km_from_start": 0.2,
+   "off_road_m": 1477,
+   "lat": 30.31431,
+   "lon": 78.05239,
+   "osm_url": "https://www.openstreetmap.org/node/6952139077"
+  },
+  {
+   "name": "Sharda Surgical and Urology Centre",
+   "km_from_start": 0.2,
+   "off_road_m": 1316,
+   "lat": 30.31534,
+   "lon": 78.0512,
+   "osm_url": "https://www.openstreetmap.org/node/6953301797"
+  },
+  {
+   "name": "Oli Eye Hospital",
+   "km_from_start": 0.2,
+   "off_road_m": 1656,
+   "lat": 30.31035,
+   "lon": 78.04852,
+   "osm_url": "https://www.openstreetmap.org/node/6953552504"
+  },
+  {
+   "name": "Renal Care and Dialysis Center",
+   "km_from_start": 0.2,
+   "off_road_m": 1335,
+   "lat": 30.3152,
+   "lon": 78.05132,
+   "osm_url": "https://www.openstreetmap.org/node/6953935730"
+  },
+  {
+   "name": "Doon Valley Hospital",
+   "km_from_start": 0.2,
+   "off_road_m": 1468,
+   "lat": 30.312,
+   "lon": 78.048,
+   "osm_url": "https://www.openstreetmap.org/node/6957204721"
+  },
+  {
+   "name": "Singh Eye Clinic and Hospital",
+   "km_from_start": 0.2,
+   "off_road_m": 1884,
+   "lat": 30.30836,
+   "lon": 78.04917,
+   "osm_url": "https://www.openstreetmap.org/node/6958096955"
+  },
+  {
+   "name": "Aarogyadham Super Speciality Hospital",
+   "km_from_start": 0.2,
+   "off_road_m": 563,
+   "lat": 30.31916,
+   "lon": 78.04302,
+   "osm_url": "https://www.openstreetmap.org/node/7479937227"
+  },
+  {
+   "name": "CMI Hospital",
+   "km_from_start": 0.2,
+   "off_road_m": 835,
+   "lat": 30.31679,
+   "lon": 78.04376,
+   "osm_url": "https://www.openstreetmap.org/node/7479937256"
+  },
+  {
+   "name": "Dr. Ajay Sharma Hospital",
+   "km_from_start": 0.2,
+   "off_road_m": 881,
+   "lat": 30.31744,
+   "lon": 78.04692,
+   "osm_url": "https://www.openstreetmap.org/node/7479937286"
+  },
+  {
+   "name": "Param Hospital",
+   "km_from_start": 0.2,
+   "off_road_m": 1594,
+   "lat": 30.31012,
+   "lon": 78.04545,
+   "osm_url": "https://www.openstreetmap.org/node/7479937310"
+  },
+  {
+   "name": "ART Plus Centre",
+   "km_from_start": 0.2,
+   "off_road_m": 395,
+   "lat": 30.32062,
+   "lon": 78.04179,
+   "osm_url": "https://www.openstreetmap.org/node/8818519318"
+  },
+  {
+   "name": "ART Plus Centre Doon Hospital",
+   "km_from_start": 0.2,
+   "off_road_m": 390,
+   "lat": 30.32066,
+   "lon": 78.0418,
+   "osm_url": "https://www.openstreetmap.org/node/9385639317"
+  },
+  {
+   "name": "Ashadeep Hospital",
+   "km_from_start": 0.3,
+   "off_road_m": 1373,
+   "lat": 30.31844,
+   "lon": 78.02905,
+   "osm_url": "https://www.openstreetmap.org/node/6953276771"
+  },
+  {
+   "name": "Luthra Maternity & Infertility Centre",
+   "km_from_start": 0.3,
+   "off_road_m": 1295,
+   "lat": 30.32992,
+   "lon": 78.02993,
+   "osm_url": "https://www.openstreetmap.org/node/7479937304"
+  },
+  {
+   "name": "Deen Dayal Upadhyay hospital",
+   "km_from_start": 0.8,
+   "off_road_m": 1385,
+   "lat": 30.32078,
+   "lon": 78.05767,
+   "osm_url": "https://www.openstreetmap.org/node/6581821447"
+  },
+  {
+   "name": "Fortis Escorts Hospital, Dehradun",
+   "km_from_start": 0.8,
+   "off_road_m": 1392,
+   "lat": 30.32066,
+   "lon": 78.05767,
+   "osm_url": "https://www.openstreetmap.org/node/7479937323"
+  },
+  {
+   "name": "Disaster Relief Center",
+   "km_from_start": 1.3,
+   "off_road_m": 1400,
+   "lat": 30.33999,
+   "lon": 78.03788,
+   "osm_url": "https://www.openstreetmap.org/way/1357944888"
+  },
+  {
+   "name": "S. K. Memorial Hospital",
+   "km_from_start": 1.5,
+   "off_road_m": 456,
+   "lat": 30.32882,
+   "lon": 78.05248,
+   "osm_url": "https://www.openstreetmap.org/node/6957931047"
+  },
+  {
+   "name": "Jan Kalyan Hospital And Research Insititute",
+   "km_from_start": 1.8,
+   "off_road_m": 298,
+   "lat": 30.33164,
+   "lon": 78.05384,
+   "osm_url": "https://www.openstreetmap.org/node/6952104642"
+  },
+  {
+   "name": null,
+   "km_from_start": 2.0,
+   "off_road_m": 870,
+   "lat": 30.34071,
+   "lon": 78.04746,
+   "osm_url": "https://www.openstreetmap.org/way/629798229"
+  },
+  {
+   "name": "VAISH NURSING HOME",
+   "km_from_start": 2.3,
+   "off_road_m": 602,
+   "lat": 30.33216,
+   "lon": 78.05955,
+   "osm_url": "https://www.openstreetmap.org/node/11718292127"
+  },
+  {
+   "name": "Healing Touch Hospital",
+   "km_from_start": 2.4,
+   "off_road_m": 1416,
+   "lat": 30.32713,
+   "lon": 78.06582,
+   "osm_url": "https://www.openstreetmap.org/node/6951994311"
+  },
+  {
+   "name": "Healing Touch Hospital",
+   "km_from_start": 2.6,
+   "off_road_m": 1295,
+   "lat": 30.3287,
+   "lon": 78.06605,
+   "osm_url": "https://www.openstreetmap.org/node/11691647039"
+  },
+  {
+   "name": null,
+   "km_from_start": 2.6,
+   "off_road_m": 1271,
+   "lat": 30.32885,
+   "lon": 78.06587,
+   "osm_url": "https://www.openstreetmap.org/way/1442071333"
+  },
+  {
+   "name": "Saini Ivf and Fertility Research Centre",
+   "km_from_start": 3.0,
+   "off_road_m": 102,
+   "lat": 30.34099,
+   "lon": 78.05934,
+   "osm_url": "https://www.openstreetmap.org/node/6956686298"
+  },
+  {
+   "name": "Dr Smriti Eye Centre",
+   "km_from_start": 4.5,
+   "off_road_m": 353,
+   "lat": 30.35195,
+   "lon": 78.06658,
+   "osm_url": "https://www.openstreetmap.org/node/8512755850"
+  },
+  {
+   "name": "Sanjay Orthopaedic and Spine Centre",
+   "km_from_start": 5.9,
+   "off_road_m": 146,
+   "lat": 30.36441,
+   "lon": 78.06775,
+   "osm_url": "https://www.openstreetmap.org/node/6953552525"
+  },
+  {
+   "name": "Max Super Speciality Hospital",
+   "km_from_start": 7.7,
+   "off_road_m": 113,
+   "lat": 30.37377,
+   "lon": 78.07481,
+   "osm_url": "https://www.openstreetmap.org/way/621301948"
+  },
+  {
+   "name": "Tulas owner",
+   "km_from_start": 7.8,
+   "off_road_m": 875,
+   "lat": 30.37637,
+   "lon": 78.06715,
+   "osm_url": "https://www.openstreetmap.org/node/12593415466"
+  },
+  {
+   "name": "Uttranchal Ayurvedic Hospital",
+   "km_from_start": 8.3,
+   "off_road_m": 1215,
+   "lat": 30.38206,
+   "lon": 78.08864,
+   "osm_url": "https://www.openstreetmap.org/node/6951002353"
+  },
+  {
+   "name": "Sakya Hospital",
+   "km_from_start": 8.3,
+   "off_road_m": 1114,
+   "lat": 30.37926,
+   "lon": 78.08816,
+   "osm_url": "https://www.openstreetmap.org/node/6958050453"
+  },
+  {
+   "name": "Wynberg Health Center",
+   "km_from_start": 32.4,
+   "off_road_m": 89,
+   "lat": 30.44881,
+   "lon": 78.09017,
+   "osm_url": "https://www.openstreetmap.org/node/2054741736"
+  },
+  {
+   "name": "Landour Community hospital",
+   "km_from_start": 34.5,
+   "off_road_m": 247,
+   "lat": 30.45898,
+   "lon": 78.09511,
+   "osm_url": "https://www.openstreetmap.org/node/583884416"
+  },
+  {
+   "name": "St. Marry Hospital Mussoorie",
+   "km_from_start": 88.3,
+   "off_road_m": 82,
+   "lat": 30.45643,
+   "lon": 78.08091,
+   "osm_url": "https://www.openstreetmap.org/node/7121752339"
+  },
+  {
+   "name": "Government Hospital Chakrata",
+   "km_from_start": 167.2,
+   "off_road_m": 1560,
+   "lat": 30.70516,
+   "lon": 77.85479,
+   "osm_url": "https://www.openstreetmap.org/node/7127949336"
+  }
+ ],
+ "police": [
+  {
+   "name": "Reporting Police Chowki Lakshmibagh",
+   "km_from_start": 0.3,
+   "off_road_m": 1230,
+   "lat": 30.31631,
+   "lon": 78.03274,
+   "osm_url": "https://www.openstreetmap.org/node/13971414465"
+  },
+  {
+   "name": "Cyber Crime Police Station",
+   "km_from_start": 0.3,
+   "off_road_m": 692,
+   "lat": 30.31817,
+   "lon": 78.04,
+   "osm_url": "https://www.openstreetmap.org/node/13971468891"
+  },
+  {
+   "name": "Police Station",
+   "km_from_start": 0.5,
+   "off_road_m": 21,
+   "lat": 30.32578,
+   "lon": 78.04287,
+   "osm_url": "https://www.openstreetmap.org/node/1854138785"
+  },
+  {
+   "name": "Daalanwala Police Station",
+   "km_from_start": 1.1,
+   "off_road_m": 833,
+   "lat": 30.32506,
+   "lon": 78.05404,
+   "osm_url": "https://www.openstreetmap.org/node/1697822631"
+  },
+  {
+   "name": "Police Nideshalaya",
+   "km_from_start": 1.4,
+   "off_road_m": 214,
+   "lat": 30.33011,
+   "lon": 78.05031,
+   "osm_url": "https://www.openstreetmap.org/node/3519362070"
+  },
+  {
+   "name": "Mayur Vihar Police Chowki",
+   "km_from_start": 3.2,
+   "off_road_m": 860,
+   "lat": 30.34006,
+   "lon": 78.06946,
+   "osm_url": "https://www.openstreetmap.org/node/5893335680"
+  },
+  {
+   "name": "Police Station Jakhan",
+   "km_from_start": 5.8,
+   "off_road_m": 20,
+   "lat": 30.36313,
+   "lon": 78.06831,
+   "osm_url": "https://www.openstreetmap.org/node/6327434932"
+  },
+  {
+   "name": "Kotwali Massoouri",
+   "km_from_start": 89.3,
+   "off_road_m": 16,
+   "lat": 30.45779,
+   "lon": 78.07451,
+   "osm_url": "https://www.openstreetmap.org/node/13971627596"
+  },
+  {
+   "name": null,
+   "km_from_start": 99.8,
+   "off_road_m": 3,
+   "lat": 30.4891,
+   "lon": 78.04186,
+   "osm_url": "https://www.openstreetmap.org/node/14248051073"
+  }
+ ]
+}

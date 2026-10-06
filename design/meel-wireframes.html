@@ -365,6 +365,27 @@ button { font: inherit; color: inherit; }
 .vid .thumb u { position: absolute; right: 4px; bottom: 4px; font-size: 10.5px; text-decoration: none; color: var(--surface); background: color-mix(in srgb, var(--ink) 70%, transparent); padding: 0 4px; border-radius: 3px; font-variant-numeric: tabular-nums; }
 .vid b { display: block; font-size: 13.5px; line-height: 18px; }
 .empty { border: 1px dashed var(--rule); border-radius: 8px; padding: 18px 14px; text-align: center; color: var(--ink-2); display: flex; flex-direction: column; gap: 8px; align-items: center; }
+/* Weather at the passes: one place a block, three days across. */
+.wx { border: 1px solid var(--border); border-radius: 8px; background: var(--surface); }
+.wx-h { display: flex; justify-content: space-between; align-items: baseline; gap: 8px; padding: 8px 12px 6px; }
+.wx-h b { font-size: 14px; }
+.wx-t { width: 100%; border-collapse: collapse; font-size: 12.5px; font-variant-numeric: tabular-nums; }
+.wx-t th { text-align: left; font-weight: 400; color: var(--ink-2); font-size: 11.5px; padding: 4px 12px 2px; border-top: 1px solid var(--border); }
+.wx-t td { padding: 4px 12px; border-top: 1px dashed var(--border); }
+.wx-t td:first-child { font-weight: 600; }
+.wx-t .snow { color: var(--stale-fg); font-weight: 600; }
+.wx-t .fl td { border-top: 0; padding-top: 0; color: var(--stale-fg); font-size: 11.5px; }
+/* The last three answers on a fact, newest first. */
+.ans { display: flex; gap: 6px; flex-wrap: wrap; }
+.ans span { display: inline-flex; align-items: center; gap: 4px; height: 26px; padding: 0 9px; border-radius: 13px; border: 1px solid var(--border); font-size: 12px; font-variant-numeric: tabular-nums; }
+.ans .y { background: var(--fresh-bg); color: var(--fresh-fg); border-color: transparent; }
+.ans .n { background: var(--stale-bg); color: var(--stale-fg); border-color: transparent; }
+/* The emergency card's numbers. */
+.sos { display: grid; grid-template-columns: 1fr; gap: 8px; }
+.sos div { display: flex; align-items: center; gap: 12px; border: 1px solid var(--border); border-radius: 8px; padding: 10px 12px; background: var(--surface); }
+.sos b.n { font: 700 28px/1 var(--display); font-variant-numeric: tabular-nums; min-width: 64px; }
+.sos .hint { display: block; }
+.msg-preview { border: 1px solid var(--border); border-radius: 8px; padding: 10px 12px; background: var(--surface-2); font-size: 13px; line-height: 19px; white-space: pre-line; }
 .empty b { color: var(--ink); font-size: 14.5px; }
 .bars { display: flex; flex-direction: column; gap: 9px; }
 .bar { display: grid; grid-template-columns: 1fr 34px; gap: 4px 8px; align-items: center; font-size: 13px; }
@@ -992,7 +1013,7 @@ const SCREENS = [
     },
     notes: [
       ['Why it works this way', ['One person cannot keep daily road status. The best existing site was 16 and 53 days behind when checked.', 'A wrong “open” could put a rider on a closed pass. A link with a date cannot be wrong in that way.', '“Is it open?” is really four questions: which vehicles, which direction, which hours, which days. The motorcycle line answers the one nobody else records.']],
-      ['Behaviour', ['“Last post seen” is the date the editor last looked, typed by hand. It is not fetched automatically in the first version.', 'Riders’ sightings are kept apart from official sources and labelled “not official”.', 'A year with no entry says “not yet entered”. It is never left blank or guessed.']],
+      ['Behaviour', ['“Last post seen” is the date the editor last looked, typed by hand. Where an office’s own page carries a date a computer can read, Meel reads it every hour instead: see “Is it open? What the offices say today”.', 'Riders’ sightings are kept apart from official sources and labelled “not official”.', 'A year with no entry says “not yet entered”. It is never left blank or guessed.']],
       ['Data', ['Per source: office, what it announces, which stretch, where it announces, date last seen.', 'Per year: date connected, date opened to motorcycles, date closed, and a link for each.', 'Per sighting: what, where, who, bike, date.']],
       ['Open question', ['Should the editor look at each source daily in season, or only record the date when a rider reports a change? The first is about ten minutes a day.'], 'q'],
     ],
@@ -1211,8 +1232,27 @@ const SCREENS = [
         </div>
         <span class="hint">Were you there after 10 June?</span>
         ${twoButtons}
+      </div>`)
+    + phone('4. The last three answers', `
+      ${head('Manali to Leh', 'Fuel')}
+      ${body(`${fact(PUMPS[0])}${fact(PUMPS[1])}${fact(PUMPS[2])}`)}
+      <div class="sheet-scrim"></div>
+      <div class="sheet"><span class="grab"></span>
+        <div class="fact-h"><h3>Tandi petrol pump</h3>${badge('fresh')}</div>
+        <p>Petrol and diesel. Open 7 am to 7 pm. 61 km from Manali.</p>
+        <div class="lbl">Last three answers</div>
+        <div class="ans"><span class="y">${ICON.check}12 Jun 2027</span><span class="y">${ICON.check}3 Jun 2027</span><span class="n">${ICON.x}28 May 2027</span></div>
+        <span class="hint">Newest first. A tick is “still true”, a cross is “this has changed”. No score, no average.</span>
+        <div class="lbl">History</div>
+        <div class="tl">
+          <div><span>12 Jun 2027</span><b>Confirmed working by Imran S.</b></div>
+          <div><span>3 Jun 2027</span><b>Confirmed working by Kavya M.</b></div>
+          <div><span>28 May 2027</span><b>No fuel that morning, tanker due. Reported by Dev R.</b></div>
+        </div>
+        ${twoButtons}
       </div>`),
     notes: [
+      ['The last three answers (frame 4)', ['An opened fact shows the last three answers riders gave, each with its date, newest first. Plug-in car charger maps found that recent answers tell a rider more than an all-time score.', 'Only answers the editor has read are shown. A change waiting for the editor shows as “Change reported”, as before.', '“This has changed” asks for a short reason, at least a few words, before it can be sent.']],
       ['The states', ['Fresh, ageing, stale: set by the age of the last confirmation, against limits for that kind of fact.', 'Not yet checked: gathered from a source, but neither the editor nor a rider has confirmed it.', 'Reports disagree: two riders reported different things. Both are shown. The site does not pick a winner.']],
       ['Behaviour', ['Limits differ by kind of fact. A pump ages in 7 days. A permit rule ages in 6 months.', 'The age is worked out in the rider’s own browser from the date, so a page built last week still shows today’s age.', 'History is never deleted. A correction is added above the old entry.']],
       ['Data', ['Per fact: kind, and a list of confirmations. Each confirmation has a date, a name, and a note.', 'Per kind of fact: the two limits, ageing and stale. About eight kinds in all.']],
@@ -2559,6 +2599,145 @@ SCREENS.push({
     ['When', ['It follows the phone. A phone set to dark, or to change at sunset, gets the dark look. There is no switch on the site.', 'In daylight, most phones stay light, which reads best in the sun.']],
     ['Colours', ['The page is near-black green, the colour of a road at night. Cards sit a step lighter.', 'Signboard green is lighter, so links and buttons can still be read. A green button has dark words on it.', 'The states of a fact keep their meaning: green fresh, amber ageing, red stale, grey not yet checked, violet where riders disagree.']],
     ['What stays the same', ['The kilometre stone stays white with a yellow cap, as it is on the road.', 'Pictures are not dimmed.', 'The foot of the page is darker than the page, so it still reads as the end.']],
+  ],
+});
+
+/* ── What the offices say today ───────────────────────────────── */
+SCREENS.push({
+  group: 'A route', title: 'Is it open? What the offices say today',
+  lede: 'Some offices publish in a way a computer can read. Meel reads them every hour and shows what they say, in their words, with their time. It still never says open or closed.',
+  render: () => {
+    const alertCard = (event, sev, words, where, who, from, to) => `<div class="fact">
+      <div class="fact-h"><b>${event}</b><span class="badge ${sev === 'Severe' ? 'b-stale' : 'b-ageing'}">${sev}</span></div>
+      <div class="fact-d">“${words}”</div>
+      <div class="fact-src">${where} · ${who}<br>Issued ${from} · until ${to}</div>
+      <span class="link" style="font-size:13px">Read it on SACHET</span></div>`;
+    const office = (who, what, said, st) => `<div class="fact"><div class="fact-h"><b>${who}</b>${st}</div><div class="fact-d">${what}</div><div class="fact-src">${said}</div><span class="btn btn-soft" style="align-self:flex-start;height:44px;margin-top:4px">${ICON.ext}Open their page</span></div>`;
+    const day = (d, snow, low, gust, fl) => `<tr><td>${d}</td><td class="${snow !== '—' ? 'snow' : ''}">${snow}</td><td>${low}</td><td>${gust}</td></tr>${fl ? `<tr class="fl"><td></td><td colspan="3">Freezing level ${fl}</td></tr>` : ''}`;
+    const wx = (place, ft, sunset, days) => `<div class="wx"><div class="wx-h"><b>${place}</b><span class="hint num">${ft} · sunset ${sunset}</span></div><table class="wx-t"><tr><th></th><th>Snow</th><th>Low</th><th>Gusts</th></tr>${days}</table></div>`;
+    return phone('1. Official alerts, then the offices', `
+        ${head('Manali to Leh', 'Is it open?')}
+        ${body(`
+          <div class="callout info"><b>We do not say open or closed</b>Conditions change by the hour. Below are official alerts in force, and the offices that decide.</div>
+          <div class="sec-h"><h3>Official alerts</h3><span class="hint">2 in force</span></div>
+          ${alertCard('Heavy snowfall', 'Severe', 'Heavy snowfall very likely at isolated places over higher reaches in the next 24 hours. Avoid travel to high passes.', 'Lahaul and Spiti district', 'IMD Shimla', '14 Jun, 1:30 pm', '15 Jun, 1:30 pm')}
+          ${alertCard('Thunderstorm with lightning', 'Moderate', 'Light to moderate thunderstorm with gusty wind (30–40 kmph) likely in the next 3 hours.', 'Kullu district', 'IMD Shimla', '14 Jun, 3:45 pm', '14 Jun, 6:45 pm')}
+          <span class="hint">From the government’s alert feed (NDMA SACHET), read 4:20 pm today, for the 3 districts this road crosses. In the issuer’s words.</span>
+          <div class="sec-h"><h3>Who decides</h3></div>
+          ${office('Lahaul and Spiti district', 'Road status page for Manali to Sarchu.', 'Their page says “Last updated 14 May 2024” · read 4:20 pm today', '<span class="badge b-stale">Dated 2 years ago</span>')}
+          ${office('Ladakh Police', 'Notices for Sarchu to Leh, including winter closure.', 'No date on their page · last notice seen 28 May 2027', '<span class="badge b-plain">17 days ago</span>')}`)}`)
+      + phone('2. Weather at the passes', `
+        ${head('Manali to Leh', 'Is it open?')}
+        ${body(`
+          <div class="sec-h"><h3>Weather at the passes</h3><span class="hint">Next 3 days</span></div>
+          <div class="callout"><b>A forecast, not a road status</b>Snow on the forecast does not mean the road is shut, and none does not mean it is open.</div>
+          ${wx('Baralacha La', '16,040 ft', '7:21 pm', day('Mon 14', '—', '−4°C', '38 km/h') + day('Tue 15', '6 cm', '−9°C', '61 km/h', 'below the pass') + day('Wed 16', '1 cm', '−7°C', '44 km/h'))}
+          ${wx('Sarchu', '14,070 ft', '7:22 pm', day('Mon 14', '—', '−1°C', '30 km/h') + day('Tue 15', '2 cm', '−5°C', '52 km/h') + day('Wed 16', '—', '−4°C', '35 km/h'))}
+          ${wx('Tanglang La', '17,480 ft', '7:18 pm', day('Mon 14', '—', '−6°C', '41 km/h') + day('Tue 15', '9 cm', '−12°C', '67 km/h', 'below the pass') + day('Wed 16', '2 cm', '−10°C', '50 km/h'))}
+          <span class="hint">From Open-Meteo, read 4:20 pm today. Global weather models, a grid about 10 km apart: a pass can be colder and windier than this.</span>`)}`)
+      + phone('3. Roads an office lists as closed', `
+        ${head('Char Dham', 'Is it open?')}
+        ${body(`
+          <div class="sec-h"><h3>Closures the PWD lists</h3><span class="hint">3 on main roads</span></div>
+          <div class="callout"><b>Uttarakhand PWD’s own list</b>National and state highways in the 5 districts this route crosses. A road not on the list is not known to be open.</div>
+          ${fact({ t: 'Rishikesh to Badrinath road (NH 7), km 386', d: 'Closed 14 Jun, 1:51 pm · expected to open 6:51 pm', state: 'stale', line: 'Chamoli · Uttarakhand PWD, listed 1:51 pm today' }).replace(badge('stale'), '<span class="badge b-stale">Closed</span>')}
+          ${fact({ t: 'Gangotri road (NH 34), km 213', d: 'Partly closed since 13 Jun, 9:10 am · one lane open', state: 'ageing', line: 'Uttarkashi · Uttarakhand PWD, listed 9:10 am yesterday' }).replace(badge('ageing'), '<span class="badge b-ageing">Partly closed</span>')}
+          ${fact({ t: 'Gaurikund road (SH), km 42', d: 'Partly reopened 14 Jun, 11:05 am', state: 'ageing', line: 'Rudraprayag · Uttarakhand PWD, listed 11:05 am today' }).replace(badge('ageing'), '<span class="badge b-plain">Partly reopened</span>')}
+          <span class="btn btn-soft" style="align-self:flex-start;height:44px">${ICON.ext}Open the PWD’s full list</span>
+          <span class="hint">Read 2:05 pm today. Village roads are left out. Names of officers on the list are not copied.</span>`)}`)
+      + phone('4. Nothing in force, or nothing read', `
+        ${head('Manali to Leh', 'Is it open?')}
+        ${body(`
+          <div class="sec-h"><h3>Official alerts</h3></div>
+          <div class="callout"><b>None in force for this road</b>No alert from the government’s feed for Kullu, Lahaul and Spiti or Leh district, read 4:20 pm today. That is not the same as clear weather.</div>
+          <div class="sec-h"><h3>Weather at the passes</h3></div>
+          <div class="callout warn"><b>Could not read the forecast</b>The weather service did not answer at 4:20 pm. Meel tries again within the hour.<br><span class="link">Open the forecast yourself</span></div>
+          <div class="lbl">On the route page</div>
+          <div class="rows"><div class="row"><span class="ic">${ICON.flag}</span><span class="grow"><b>Is it open? Where to check today</b><span class="hint">5 official sources · we link, we do not guess</span></span><span class="badge b-stale">2 alerts</span>${chev}</div></div>
+          <span class="hint">When an alert is in force, the route page says how many beside “Is it open?”.</span>`)}`);
+  },
+  notes: [
+    ['What is read, and how often', ['Every hour, when the page is next opened: the government’s alert feed (NDMA SACHET), a weather forecast for each pass and night halt (Open-Meteo), and a few offices’ own pages.', 'Each thing shows the time Meel read it, and, where the office gives one, the office’s own date.', 'If a source does not answer, the box says so and links to it. The page never fills the gap with a guess.']],
+    ['Official alerts (frame 1)', ['Alerts are matched to a route by district: each route lists the districts its road passes through, worked out from the open map.', 'Shown in the issuer’s own words, with who issued it, when, and until when. An alert past its end time is dropped.', 'The severity word is the issuer’s: Extreme, Severe, Moderate or Minor.']],
+    ['Offices read by themselves (frame 1)', ['Where an office’s page carries its own date, Meel reads it: Jammu and Kashmir Traffic Police’s daily advisory (the file’s date) and Lahaul and Spiti’s road status page (“Last updated”).', 'The badge says the age as other offices’ badges do, “Dated 2 years ago”, and turns red past 30 days. Lahaul and Spiti’s page said 14 May 2024 when checked.', 'Offices with no readable date keep the date the editor last saw, as before.']],
+    ['Weather (frame 2)', ['For each pass and each place on the route at 9,800 ft or more, six at most, passes first: snow, lowest temperature, strongest gusts, and sunset, for three days.', 'A high place is not called a night halt: not every high village is somewhere to sleep.', 'Where the freezing level drops below the pass, the day says so; for a place, “Freezing level below Sarchu”.', 'Read every three hours, not every hour: weather models run every six hours, and it keeps Meel well inside the free service’s daily limit.', 'Labelled “a forecast, not a road status” every time it appears.']],
+    ['Closures (frame 3)', ['Only for routes in Uttarakhand, whose PWD keeps a public list of closed roads.', 'Each road is named as the PWD names it, which is often long: “Paonta Sahib Badrinath Mana Pass national highway”. The drawing shortens them.', 'Only national and state highways, in the districts the route crosses, and only those still closed or partly closed.', 'The list also names officers and their staff numbers. Meel leaves those out.']],
+    ['Data', ['Per route: districts crossed, with their state, worked out once from the road line.', 'Nothing read here is kept in Meel’s database. It lives in the page for an hour.']],
+  ],
+});
+
+/* ── Before you leave ─────────────────────────────────────────── */
+SCREENS.push({
+  group: 'Tools', title: 'Before you leave',
+  lede: 'Three things a rider does the night before: put the road in their map app, keep the emergency numbers, and tell someone at home the plan.',
+  render: () => phone('1. On the route page', `
+      ${head('Manali to Leh', 'Full page · 104 facts', { right: shareBtn })}
+      ${body(`
+        <div class="rows">
+          <div class="row"><span class="ic">${ICON.flag}</span><span class="grow"><b>Is it open? Where to check today</b><span class="hint">5 official sources · we link, we do not guess</span></span><span class="badge b-stale">2 alerts</span>${chev}</div>
+          <div class="row"><span class="ic">${ICON.save}</span><span class="grow"><b>Save for the road</b><span class="hint">Works with no network</span></span>${chev}</div>
+        </div>
+        <div class="lbl">Before you leave</div>
+        <div class="rows">
+          <div class="row"><span class="ic">${ICON.map}</span><span class="grow"><b>Route file for your map app</b><span class="hint">GPX · Organic Maps, OsmAnd, Google Maps</span></span>${chev}</div>
+          <div class="row"><span class="ic">${ICON.phone}</span><span class="grow"><b>Emergency card</b><span class="hint">112 · 6 hospitals · 9 police stations</span></span>${chev}</div>
+          <div class="row"><span class="ic">${ICON.send}</span><span class="grow"><b>Tell someone at home</b><span class="hint">Your plan, in one message</span></span>${chev}</div>
+        </div>
+        <div class="lbl">On this page</div>
+        <div class="rows">
+          <div class="row"><span class="ic">${ICON.fuel}</span><span class="grow"><b>Fuel</b><span class="hint">4 pumps · longest gap 323 km</span></span><span class="badge b-ageing">1 ageing</span>${chev}</div>
+          <div class="row"><span class="ic">${ICON.shield}</span><span class="grow"><b>Rules for motorcycles</b><span class="hint">Permits, fees, rental bikes · 9 facts</span></span>${chev}</div>
+        </div>`)}`)
+    + phone('2. Route file and map apps', `
+      ${head('Manali to Leh', 'Route file')}
+      ${body(`
+        <div class="callout info"><b>Meel draws no map</b>Your map app draws the road on its own map. The file carries the road line and the places on it.</div>
+        <span class="btn btn-primary btn-block" style="height:46px">${ICON.save}Download the route file (GPX)</span>
+        <span class="hint">Opens in Organic Maps, OsmAnd, Google Earth and most riding apps. 427 km of road, 11 places, 4 pumps. Saved with the route for no network.</span>
+        <div class="lbl">Or open it straight in an app</div>
+        <div class="rows">
+          <div class="row"><span class="ic">${ICON.map}</span><span class="grow"><b>Open in Organic Maps</b><span class="hint">Free, works with no network once its map is downloaded</span></span>${ICON.ext}</div>
+          <div class="row"><span class="ic">${ICON.map}</span><span class="grow"><b>Open in Google Maps</b><span class="hint">Two-wheeler directions through 9 places on the way</span></span>${ICON.ext}</div>
+        </div>
+        <div class="callout"><b>Check the line before you ride</b>An app picks its own road between the places. Google Maps on a phone browser may keep only the first three stops.</div>
+        <span class="hint">Road line from OpenStreetMap contributors, Open Database Licence. The credit travels inside the file.</span>`)}`)
+    + phone('3. Emergency card', `
+      ${head('Manali to Leh', 'Emergency card')}
+      ${body(`
+        <div class="sos">
+          <div><b class="n">112</b><span><b>Police, fire, ambulance</b><span class="hint">One number for all of India</span></span></div>
+          <div><b class="n">1033</b><span><b>National highway helpline</b><span class="hint">NHAI. On national highways only: NH 3 on this route</span></span></div>
+        </div>
+        <div class="sec-h"><h3>Hospitals on the way</h3><span class="hint">6</span></div>
+        <div class="rows">
+          <div class="row"><span class="grow"><b>Mission Hospital, Manali</b><span class="hint">0 km · from the open map</span></span></div>
+          <div class="row"><span class="grow"><b>Regional Hospital, Keylong</b><span class="hint">69 km · from the open map</span></span></div>
+          <div class="row"><span class="grow"><b>SNM Hospital, Leh</b><span class="hint">427 km · from the open map</span></span></div>
+        </div>
+        <span class="hint">Then police stations, the same way. 255 km with no hospital on the map, Keylong to Karu.</span>
+        <div class="callout warn"><b>Satellite phones and messengers</b>Thuraya and Iridium satellite phones are not allowed in India; a Garmin inReach uses Iridium. They can be seized and the owner fined.<br><span class="link">Embassy of India notice</span></div>
+        <div class="lbl">Where this came from</div>
+        <span class="hint">112: 112.gov.in. 1033: Press Information Bureau. Hospitals and police: OpenStreetMap contributors, nobody has checked them. Satellite phones: the Embassy of India’s notice.</span>
+        <span class="hint">Saved with the route, so it opens with no network.</span>`)}`)
+    + phone('4. Tell someone at home', `
+      ${head('Manali to Leh', 'Tell someone at home')}
+      ${body(`
+        <div class="field"><label>Leaving</label><div class="input filled pick">Saturday 19 June 2027${ICON.cal}</div></div>
+        <div class="field"><label>Back by</label><div class="input filled pick">Tuesday 22 June 2027${ICON.cal}</div></div>
+        <div class="field"><label>Riding with <em>optional</em></label><div class="input filled">Rahul, 98100 ••• 21</div></div>
+        <div class="field"><label>I will message every evening by</label><div class="input filled pick">8 pm${ICON.down}</div></div>
+        <div class="lbl">The message</div>
+        <div class="msg-preview">Riding Manali to Leh, 19 to 22 June.
+Manali, Keylong, Sarchu, Pang, Leh.
+No fuel for 323 km after Keylong. Highest point 17,480 ft.
+I will message every evening by 8 pm. If no word by 8 pm: call Rahul, 98100 ••• 21. Then 112.
+rideplanner.in/routes/manali-leh</div>`)}
+      <div class="pfoot"><div class="btns"><span class="btn btn-outline">Copy</span><span class="btn btn-primary">${ICON.send}Send on WhatsApp</span></div><span class="hint" style="text-align:center">Nothing you type here is sent to Meel.</span></div>`),
+  notes: [
+    ['Where (frame 1)', ['Three rows under “Save for the road”, headed “Before you leave”. On a laptop they sit in the side panel, under the route line.']],
+    ['Route file (frame 2)', ['A GPX file made when the site is built: the road line, the named places, the passes and the pumps, each with its kilometre.', 'Organic Maps and Google Maps open through their own links, with the start, the end and the places between. Nothing is embedded.', 'Saved with the route, like its pages.']],
+    ['Emergency card (frame 3)', ['112 always. 1033 only when the route runs on a national highway.', 'Hospitals and police stations within 2 km of the road, from the open map, with their kilometre. Not checked by anyone: the card says so.', 'The longest stretch with no hospital on the map is said, as the fuel gap is.', 'The satellite rule comes from the Embassy of India’s notice. The telecom department’s own page could not be opened when checked.', 'Every number and list says where it came from, at the foot of the card.', '1033 is answered from NHAI’s toll plazas, so the card says that a mountain highway run by the BRO or the state may not be covered.']],
+    ['Tell someone at home (frame 4)', ['The rider picks two days, an optional riding partner and a check-in hour. The message is written in the page and goes nowhere until the rider sends it.', 'It lists the places in order, the longest fuel gap and the highest point, so the person at home knows what “no signal” may mean.', 'Nothing is stored. Leaving the page forgets it.']],
   ],
 });
 

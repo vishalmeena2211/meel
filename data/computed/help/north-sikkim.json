@@ -1,0 +1,95 @@
+{
+ "fetched": "2026-10-06",
+ "hospitals": [
+  {
+   "name": "Central Referral Hospital",
+   "km_from_start": 0.0,
+   "off_road_m": 1998,
+   "lat": 27.31636,
+   "lon": 88.59758,
+   "osm_url": "https://www.openstreetmap.org/node/6908120518"
+  },
+  {
+   "name": "Sikkim Manipal Institute of Medical Sciences",
+   "km_from_start": 0.0,
+   "off_road_m": 1916,
+   "lat": 27.31742,
+   "lon": 88.59758,
+   "osm_url": "https://www.openstreetmap.org/node/6908120519"
+  },
+  {
+   "name": null,
+   "km_from_start": 0.3,
+   "off_road_m": 26,
+   "lat": 27.33134,
+   "lon": 88.61359,
+   "osm_url": "https://www.openstreetmap.org/node/4925330128"
+  },
+  {
+   "name": "STNM Hospital",
+   "km_from_start": 1.9,
+   "off_road_m": 1109,
+   "lat": 27.34667,
+   "lon": 88.60265,
+   "osm_url": "https://www.openstreetmap.org/way/349556187"
+  },
+  {
+   "name": "Mangan District Hospital",
+   "km_from_start": 63.8,
+   "off_road_m": 221,
+   "lat": 27.49088,
+   "lon": 88.53188,
+   "osm_url": "https://www.openstreetmap.org/node/7615097197"
+  },
+  {
+   "name": "Lachen Hospital",
+   "km_from_start": 123.2,
+   "off_road_m": 17,
+   "lat": 27.7296,
+   "lon": 88.55089,
+   "osm_url": "https://www.openstreetmap.org/node/7615097189"
+  }
+ ],
+ "police": [
+  {
+   "name": "Police Boot Arithang",
+   "km_from_start": 0.1,
+   "off_road_m": 257,
+   "lat": 27.33168,
+   "lon": 88.61026,
+   "osm_url": "https://www.openstreetmap.org/node/6927218676"
+  },
+  {
+   "name": "Sikkim Police Headquarters",
+   "km_from_start": 0.1,
+   "off_road_m": 30,
+   "lat": 27.33017,
+   "lon": 88.61192,
+   "osm_url": "https://www.openstreetmap.org/way/346766232"
+  },
+  {
+   "name": "Traffic police",
+   "km_from_start": 0.2,
+   "off_road_m": 10,
+   "lat": 27.33023,
+   "lon": 88.61255,
+   "osm_url": "https://www.openstreetmap.org/node/13187715860"
+  },
+  {
+   "name": "Sadar Police Station",
+   "km_from_start": 0.7,
+   "off_road_m": 3,
+   "lat": 27.33393,
+   "lon": 88.61531,
+   "osm_url": "https://www.openstreetmap.org/node/9948372815"
+  },
+  {
+   "name": "Check point for Tsomgo (but ok to go to Hanuman tok)",
+   "km_from_start": 2.6,
+   "off_road_m": 1730,
+   "lat": 27.34549,
+   "lon": 88.63447,
+   "osm_url": "https://www.openstreetmap.org/node/10845711420"
+  }
+ ]
+}

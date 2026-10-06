@@ -1,0 +1,111 @@
+{
+ "fetched": "2026-10-06",
+ "hospitals": [
+  {
+   "name": "Mahabodhi Charitable Hospital Devachan",
+   "km_from_start": 8.0,
+   "off_road_m": 1575,
+   "lat": 34.10492,
+   "lon": 77.61239,
+   "osm_url": "https://www.openstreetmap.org/way/253298994"
+  },
+  {
+   "name": "Primary Health Center Tangtse",
+   "km_from_start": 114.4,
+   "off_road_m": 22,
+   "lat": 34.03291,
+   "lon": 78.16803,
+   "osm_url": "https://www.openstreetmap.org/node/485617329"
+  },
+  {
+   "name": "Tibetian Health Centre",
+   "km_from_start": 760.2,
+   "off_road_m": 97,
+   "lat": 34.10842,
+   "lon": 77.59121,
+   "osm_url": "https://www.openstreetmap.org/node/2592452175"
+  },
+  {
+   "name": "Dispensary",
+   "km_from_start": 760.3,
+   "off_road_m": 320,
+   "lat": 34.10886,
+   "lon": 77.59361,
+   "osm_url": "https://www.openstreetmap.org/way/423190955"
+  },
+  {
+   "name": "Army Hospital Leh",
+   "km_from_start": 765.5,
+   "off_road_m": 1370,
+   "lat": 34.16143,
+   "lon": 77.56646,
+   "osm_url": "https://www.openstreetmap.org/way/158343131"
+  },
+  {
+   "name": "Sonam Norboo Memorial Hospital Leh",
+   "km_from_start": 766.0,
+   "off_road_m": 102,
+   "lat": 34.15394,
+   "lon": 77.58048,
+   "osm_url": "https://www.openstreetmap.org/way/27761109"
+  }
+ ],
+ "police": [
+  {
+   "name": "Police station Leh",
+   "km_from_start": 0.0,
+   "off_road_m": 326,
+   "lat": 34.16602,
+   "lon": 77.58252,
+   "osm_url": "https://www.openstreetmap.org/node/9848099392"
+  },
+  {
+   "name": "SSP and FRO",
+   "km_from_start": 0.4,
+   "off_road_m": 252,
+   "lat": 34.16088,
+   "lon": 77.58867,
+   "osm_url": "https://www.openstreetmap.org/node/2575456627"
+  },
+  {
+   "name": "Police Checkpoint",
+   "km_from_start": 76.4,
+   "off_road_m": 8,
+   "lat": 34.04737,
+   "lon": 77.93036,
+   "osm_url": "https://www.openstreetmap.org/node/6912437586"
+  },
+  {
+   "name": "Police Check point",
+   "km_from_start": 113.5,
+   "off_road_m": 61,
+   "lat": 34.03969,
+   "lon": 78.16387,
+   "osm_url": "https://www.openstreetmap.org/node/3912389984"
+  },
+  {
+   "name": null,
+   "km_from_start": 468.6,
+   "off_road_m": 1,
+   "lat": 33.2029,
+   "lon": 78.64657,
+   "osm_url": "https://www.openstreetmap.org/node/2455468469"
+  },
+  {
+   "name": "J&K Police Check-Post Mahe",
+   "km_from_start": 493.0,
+   "off_road_m": 12,
+   "lat": 33.26889,
+   "lon": 78.46922,
+   "osm_url": "https://www.openstreetmap.org/node/2418793696"
+  },
+  {
+   "name": "J&K Police Check-post.",
+   "km_from_start": 719.2,
+   "off_road_m": 9,
+   "lat": 33.83005,
+   "lon": 77.81446,
+   "osm_url": "https://www.openstreetmap.org/node/2418794695"
+  }
+ ]
+}

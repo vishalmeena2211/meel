@@ -21,7 +21,7 @@ export type SectionId =
   | "costs";
 
 /** Screens of a route that are not sections of facts. */
-export type ToolId = "fuel-check" | "trips" | "sources";
+export type ToolId = "fuel-check" | "trips" | "sources" | "map-apps" | "emergency" | "tell-home";
 
 export const SECTION_NAMES: Record<SectionId, { name: string; chip: string }> = {
   open: { name: "Is it open?", chip: "Is it open?" },
@@ -63,7 +63,10 @@ export const FROM_RIDERS: SectionId[] = ["mechanics", "network", "hours", "stays
 export const FROM_REPORTS: SectionId[] = ["bikes", "costs"];
 export const REPORTS_NEEDED = 10;
 
-export const TOOL_IDS: ToolId[] = ["fuel-check", "trips", "sources"];
+export const TOOL_IDS: ToolId[] = ["fuel-check", "trips", "sources", "map-apps", "emergency", "tell-home"];
+
+/** The three screens a rider opens the night before. Each needs the road's line. */
+export const BEFORE_YOU_LEAVE: ToolId[] = ["map-apps", "emergency", "tell-home"];
 
 export function isSection(value: string): value is SectionId {
   return value in SECTION_NAMES;

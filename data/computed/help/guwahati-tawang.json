@@ -1,0 +1,359 @@
+{
+ "fetched": "2026-10-06",
+ "hospitals": [
+  {
+   "name": "Wintrobe Hospital",
+   "km_from_start": 0.0,
+   "off_road_m": 575,
+   "lat": 26.1855,
+   "lon": 91.756,
+   "osm_url": "https://www.openstreetmap.org/node/6913054952"
+  },
+  {
+   "name": "City Heart Hospital",
+   "km_from_start": 0.1,
+   "off_road_m": 1905,
+   "lat": 26.1725,
+   "lon": 91.77143,
+   "osm_url": "https://www.openstreetmap.org/node/6913054978"
+  },
+  {
+   "name": "APOLLO HOSPITAL",
+   "km_from_start": 0.1,
+   "off_road_m": 1942,
+   "lat": 26.17458,
+   "lon": 91.77276,
+   "osm_url": "https://www.openstreetmap.org/node/12976374613"
+  },
+  {
+   "name": "Arya Hospital (A Unit Of North Eastern Medical Research Institute Ltd)",
+   "km_from_start": 0.3,
+   "off_road_m": 376,
+   "lat": 26.17463,
+   "lon": 91.75259,
+   "osm_url": "https://www.openstreetmap.org/node/6913054638"
+  },
+  {
+   "name": "Guwahati Eye Hospital",
+   "km_from_start": 0.3,
+   "off_road_m": 1055,
+   "lat": 26.17178,
+   "lon": 91.76082,
+   "osm_url": "https://www.openstreetmap.org/node/6913054942"
+  },
+  {
+   "name": null,
+   "km_from_start": 0.3,
+   "off_road_m": 1277,
+   "lat": 26.17066,
+   "lon": 91.76268,
+   "osm_url": "https://www.openstreetmap.org/way/1334976165"
+  },
+  {
+   "name": "Satribari Christian Hospital",
+   "km_from_start": 0.9,
+   "off_road_m": 291,
+   "lat": 26.17693,
+   "lon": 91.74656,
+   "osm_url": "https://www.openstreetmap.org/node/6913054830"
+  },
+  {
+   "name": "Mahendra Mohan Choudhury Hospital",
+   "km_from_start": 1.3,
+   "off_road_m": 748,
+   "lat": 26.18543,
+   "lon": 91.74045,
+   "osm_url": "https://www.openstreetmap.org/node/1578252835"
+  },
+  {
+   "name": "Dr Bhubaneswar Borooah Cancer Institue",
+   "km_from_start": 2.0,
+   "off_road_m": 1392,
+   "lat": 26.16535,
+   "lon": 91.74706,
+   "osm_url": "https://www.openstreetmap.org/node/6913038510"
+  },
+  {
+   "name": "Vision hospital",
+   "km_from_start": 2.0,
+   "off_road_m": 18,
+   "lat": 26.17601,
+   "lon": 91.74002,
+   "osm_url": "https://www.openstreetmap.org/node/13523388563"
+  },
+  {
+   "name": "Marwari Hospital and Research Centre",
+   "km_from_start": 2.1,
+   "off_road_m": 435,
+   "lat": 26.17214,
+   "lon": 91.74041,
+   "osm_url": "https://www.openstreetmap.org/node/6913054967"
+  },
+  {
+   "name": "MARWARI HOSPITAL",
+   "km_from_start": 2.2,
+   "off_road_m": 467,
+   "lat": 26.17179,
+   "lon": 91.74031,
+   "osm_url": "https://www.openstreetmap.org/node/12976265036"
+  },
+  {
+   "name": "Guwahati Netralaya Eye Hospital",
+   "km_from_start": 2.4,
+   "off_road_m": 402,
+   "lat": 26.1715,
+   "lon": 91.73762,
+   "osm_url": "https://www.openstreetmap.org/node/6913054930"
+  },
+  {
+   "name": "Institute Of Human Reproduction",
+   "km_from_start": 3.2,
+   "off_road_m": 654,
+   "lat": 26.16692,
+   "lon": 91.73124,
+   "osm_url": "https://www.openstreetmap.org/node/6913054957"
+  },
+  {
+   "name": "Sanjevani Hospital",
+   "km_from_start": 4.0,
+   "off_road_m": 1614,
+   "lat": 26.16092,
+   "lon": 91.70943,
+   "osm_url": "https://www.openstreetmap.org/node/6205680429"
+  },
+  {
+   "name": "Swagat Super Speciality Surgical Institute",
+   "km_from_start": 4.0,
+   "off_road_m": 1819,
+   "lat": 26.16037,
+   "lon": 91.70736,
+   "osm_url": "https://www.openstreetmap.org/node/6205680430"
+  },
+  {
+   "name": "GNRC Institute of Medical Science",
+   "km_from_start": 8.7,
+   "off_road_m": 1581,
+   "lat": 26.20214,
+   "lon": 91.69395,
+   "osm_url": "https://www.openstreetmap.org/way/833415498"
+  },
+  {
+   "name": "Choudhury Eye Clinic",
+   "km_from_start": 62.7,
+   "off_road_m": 118,
+   "lat": 26.43657,
+   "lon": 92.0334,
+   "osm_url": "https://www.openstreetmap.org/way/806448412"
+  },
+  {
+   "name": null,
+   "km_from_start": 62.8,
+   "off_road_m": 1487,
+   "lat": 26.45123,
+   "lon": 92.02923,
+   "osm_url": "https://www.openstreetmap.org/node/11032189484"
+  },
+  {
+   "name": "Ceragem centre",
+   "km_from_start": 63.0,
+   "off_road_m": 818,
+   "lat": 26.44551,
+   "lon": 92.0341,
+   "osm_url": "https://www.openstreetmap.org/way/806448458"
+  },
+  {
+   "name": "Mangaldoi Civil Hospital Blood Bank",
+   "km_from_start": 63.2,
+   "off_road_m": 70,
+   "lat": 26.43745,
+   "lon": 92.03664,
+   "osm_url": "https://www.openstreetmap.org/way/735410640"
+  },
+  {
+   "name": "Civil Hospital, Mangaldai",
+   "km_from_start": 63.2,
+   "off_road_m": 34,
+   "lat": 26.43777,
+   "lon": 92.03664,
+   "osm_url": "https://www.openstreetmap.org/way/765906739"
+  },
+  {
+   "name": "Sirajuli Model Hospital",
+   "km_from_start": 117.0,
+   "off_road_m": 113,
+   "lat": 26.69947,
+   "lon": 92.40036,
+   "osm_url": "https://www.openstreetmap.org/node/7153386696"
+  },
+  {
+   "name": "Old Civil Hospital",
+   "km_from_start": 124.8,
+   "off_road_m": 92,
+   "lat": 26.70425,
+   "lon": 92.4771,
+   "osm_url": "https://www.openstreetmap.org/node/7537159840"
+  },
+  {
+   "name": "Dristidaan Eye Hospital",
+   "km_from_start": 124.9,
+   "off_road_m": 60,
+   "lat": 26.70293,
+   "lon": 92.47814,
+   "osm_url": "https://www.openstreetmap.org/node/7537159859"
+  },
+  {
+   "name": "Tezpur Medical College and Hospital",
+   "km_from_start": 143.7,
+   "off_road_m": 116,
+   "lat": 26.68036,
+   "lon": 92.65365,
+   "osm_url": "https://www.openstreetmap.org/way/662931043"
+  },
+  {
+   "name": "Civil Hospital, Milanpur",
+   "km_from_start": 152.7,
+   "off_road_m": 1850,
+   "lat": 26.68836,
+   "lon": 92.74036,
+   "osm_url": "https://www.openstreetmap.org/node/7153386700"
+  },
+  {
+   "name": "155 Base Hospital",
+   "km_from_start": 157.6,
+   "off_road_m": 1391,
+   "lat": 26.65558,
+   "lon": 92.78767,
+   "osm_url": "https://www.openstreetmap.org/node/7153386779"
+  },
+  {
+   "name": "Orthocare Hospital",
+   "km_from_start": 158.7,
+   "off_road_m": 1913,
+   "lat": 26.6514,
+   "lon": 92.79616,
+   "osm_url": "https://www.openstreetmap.org/node/13323617001"
+  },
+  {
+   "name": "Ananta Memorial Hospital",
+   "km_from_start": 159.5,
+   "off_road_m": 82,
+   "lat": 26.63516,
+   "lon": 92.78398,
+   "osm_url": "https://www.openstreetmap.org/node/7537159756"
+  },
+  {
+   "name": "Skylark Hospital",
+   "km_from_start": 161.3,
+   "off_road_m": 259,
+   "lat": 26.63024,
+   "lon": 92.79742,
+   "osm_url": "https://www.openstreetmap.org/node/6913293231"
+  },
+  {
+   "name": "Kanaklata Civil Hospital",
+   "km_from_start": 161.3,
+   "off_road_m": 98,
+   "lat": 26.62882,
+   "lon": 92.79694,
+   "osm_url": "https://www.openstreetmap.org/node/7153386671"
+  },
+  {
+   "name": "E M M Hospital And Research Centre",
+   "km_from_start": 161.8,
+   "off_road_m": 209,
+   "lat": 26.62183,
+   "lon": 92.79557,
+   "osm_url": "https://www.openstreetmap.org/node/6913293236"
+  },
+  {
+   "name": "B. K Memorial Hospital, Tezpur",
+   "km_from_start": 161.9,
+   "off_road_m": 348,
+   "lat": 26.62523,
+   "lon": 92.80041,
+   "osm_url": "https://www.openstreetmap.org/node/6913293278"
+  },
+  {
+   "name": "Baptist Christian Hospital",
+   "km_from_start": 166.6,
+   "off_road_m": 76,
+   "lat": 26.65235,
+   "lon": 92.77297,
+   "osm_url": "https://www.openstreetmap.org/node/6098806650"
+  },
+  {
+   "name": "Dekargaon Hospital",
+   "km_from_start": 169.8,
+   "off_road_m": 30,
+   "lat": 26.68018,
+   "lon": 92.76595,
+   "osm_url": "https://www.openstreetmap.org/node/7153386835"
+  },
+  {
+   "name": "District Hospital, Bomdila",
+   "km_from_start": 321.8,
+   "off_road_m": 117,
+   "lat": 27.26551,
+   "lon": 92.42015,
+   "osm_url": "https://www.openstreetmap.org/node/6938944732"
+  },
+  {
+   "name": "District Hospital, Tawang",
+   "km_from_start": 488.0,
+   "off_road_m": 7,
+   "lat": 27.58905,
+   "lon": 91.86464,
+   "osm_url": "https://www.openstreetmap.org/node/6908097600"
+  }
+ ],
+ "police": [
+  {
+   "name": "Latasil Police Station",
+   "km_from_start": 0.0,
+   "off_road_m": 1051,
+   "lat": 26.18993,
+   "lon": 91.75195,
+   "osm_url": "https://www.openstreetmap.org/node/1580625967"
+  },
+  {
+   "name": "state police accountability commission, assam",
+   "km_from_start": 0.3,
+   "off_road_m": 1191,
+   "lat": 26.17287,
+   "lon": 91.76335,
+   "osm_url": "https://www.openstreetmap.org/node/12973082004"
+  },
+  {
+   "name": "Fancy bazaar police out post",
+   "km_from_start": 1.8,
+   "off_road_m": 718,
+   "lat": 26.18256,
+   "lon": 91.73727,
+   "osm_url": "https://www.openstreetmap.org/node/13522423677"
+  },
+  {
+   "name": "Tezpur Police Station",
+   "km_from_start": 161.9,
+   "off_road_m": 36,
+   "lat": 26.62305,
+   "lon": 92.79697,
+   "osm_url": "https://www.openstreetmap.org/node/3555178742"
+  },
+  {
+   "name": null,
+   "km_from_start": 222.7,
+   "off_road_m": 1,
+   "lat": 27.01082,
+   "lon": 92.64607,
+   "osm_url": "https://www.openstreetmap.org/way/1217672059"
+  },
+  {
+   "name": "Bomdila Police Station",
+   "km_from_start": 322.6,
+   "off_road_m": 32,
+   "lat": 27.26535,
+   "lon": 92.42208,
+   "osm_url": "https://www.openstreetmap.org/node/6938944733"
+  }
+ ]
+}

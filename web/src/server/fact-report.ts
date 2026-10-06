@@ -2,7 +2,7 @@ import "server-only";
 
 import { z } from "zod";
 
-import { CHANGE_VALUES } from "@/lib/change-choices";
+import { CHANGE_VALUES, MIN_REASON, REASON_WORDS } from "@/lib/change-choices";
 import { getRoute } from "@/lib/content";
 import { indiaDay, shortName } from "@/lib/format";
 
@@ -56,8 +56,8 @@ export async function takeFactReport(form: FormData): Promise<FactReportAnswer> 
     return { ...blank, message: "Something needs fixing.", errors };
   }
   const input = parsed.data;
-  if (input.kind === "changed" && !input.note) {
-    return { ...blank, message: "Something needs fixing.", errors: { note: "Say what you saw, in a few words." } };
+  if (input.kind === "changed" && (input.note ?? "").length < MIN_REASON) {
+    return { ...blank, message: "Something needs fixing.", errors: { note: REASON_WORDS } };
   }
   const route = await getRoute(input.route);
   if (!route) return { ...blank, message: "That route is not on Meel." };

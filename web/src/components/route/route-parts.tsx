@@ -16,9 +16,12 @@ import {
   IconFuel,
   IconList,
   IconLock,
+  IconMap,
   IconPeak,
+  IconPhone,
   IconPlay,
   IconRight,
+  IconSend,
   IconShield,
   IconSignal,
   IconWrench,
@@ -217,7 +220,7 @@ export function OnThisPage({ view }: { view: RouteView }) {
 }
 
 /** Two rows that stand above the list: where to check the road today, and how to keep the page for the road. */
-export function FirstRows({ view, save }: { view: RouteView; save: ReactNode }) {
+export function FirstRows({ view, save, alerts = 0 }: { view: RouteView; save: ReactNode; alerts?: number }) {
   const open = view.sections.find((s) => s.id === "open");
   return (
     <div className="card flex flex-col">
@@ -227,11 +230,42 @@ export function FirstRows({ view, save }: { view: RouteView; save: ReactNode }) 
           icon={<IconFlag />}
           title="Is it open? Where to check today"
           sub={open.sub}
-          aside={open.warn.map((w) => <Pill key={w.words} words={w.words} tone={w.tone} />)}
+          aside={
+            alerts > 0 ? (
+              <Pill words={plural(alerts, "alert")} tone="stale" />
+            ) : (
+              open.warn.map((w) => <Pill key={w.words} words={w.words} tone={w.tone} />)
+            )
+          }
         />
       ) : null}
       {save}
     </div>
+  );
+}
+
+/** The three screens a rider opens the night before. Only for a route with a road line. */
+export function BeforeYouLeave({
+  view,
+  help,
+}: {
+  view: RouteView;
+  help: { hospitals: number; police: number } | null;
+}) {
+  if (view.route.line.length === 0) return null;
+  const top = `/routes/${view.route.slug}`;
+  const card = ["112", help ? plural(help.hospitals, "hospital") : null, help ? plural(help.police, "police station") : null]
+    .filter(Boolean)
+    .join(" · ");
+  return (
+    <section className="flex flex-col gap-1.5">
+      <h2 className="label">Before you leave</h2>
+      <div className="card flex flex-col">
+        <Row href={`${top}/map-apps`} icon={<IconMap />} title="Route file for your map app" sub="GPX · Organic Maps, OsmAnd, Google Maps" />
+        <Row href={`${top}/emergency`} icon={<IconPhone />} title="Emergency card" sub={card} />
+        <Row href={`${top}/tell-home`} icon={<IconSend />} title="Tell someone at home" sub="Your plan, in one message" />
+      </div>
+    </section>
   );
 }
 

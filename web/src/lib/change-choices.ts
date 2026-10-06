@@ -51,3 +51,7 @@ export const CHANGE_WORDS: Record<string, string> = Object.fromEntries(
 );
 
 export const CHANGE_VALUES = Object.keys(CHANGE_WORDS) as [string, ...string[]];
+
+/** "This has changed" needs a reason of at least this many letters, so the editor knows what was seen. */
+export const MIN_REASON = 8;
+export const REASON_WORDS = "Say what you saw, in a few words.";

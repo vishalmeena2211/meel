@@ -370,3 +370,31 @@ export interface Confirmation {
   /** The moment the editor applied it to the page. */
   applied_on?: string | null;
 }
+
+/** A district a route's road passes through, as the open map names it. From data/site/route-districts.json. */
+export interface RouteDistrict {
+  district: string;
+  state: string;
+  km_from: number;
+  km_to: number;
+  /** The government's own code for the district (Local Government Directory), from Wikidata. Null where none is known. */
+  lgd?: string | null;
+}
+
+/** A hospital or police station near the road, from the open map. Nobody has checked it. */
+export interface HelpPlace {
+  name: string | null;
+  km_from_start: number;
+  off_road_m: number;
+  lat: number;
+  lon: number;
+  osm_url: string;
+}
+
+/** What a route's emergency card lists. From data/site/route-help.json. */
+export interface RouteHelp {
+  hospitals: HelpPlace[];
+  police: HelpPlace[];
+  /** The longest stretch with no hospital on the map. */
+  hospital_gap: { from_km: number; to_km: number; gap_km: number } | null;
+}

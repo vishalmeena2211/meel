@@ -17,22 +17,26 @@ import {
   RulesSection,
   SourcesScreen,
   StaysSection,
+  type OpenLive,
   TripsOnRoute,
   VideosSection,
 } from "@/components/route/sections";
 import { SectionChips } from "@/components/route/route-parts";
 import { SinceLastVisit } from "@/components/route/since-last-visit";
 import { BackHead, Foot } from "@/components/shell";
+import { EmergencyCard, MapAppsScreen } from "@/components/tools/before-you-leave";
 import { FuelCheckScreen, type GapNote } from "@/components/tools/fuel-check";
 import { AltitudeScreen } from "@/components/tools/night-halts";
 import { PackingList } from "@/components/tools/packing-list";
+import { TellHome } from "@/components/tools/tell-home";
 import { TripCardView } from "@/components/trips/trip-card";
 import { Callout, SectionHeading } from "@/components/ui";
-import { getBikes, getIndex } from "@/lib/content";
-import { sayAge, daysBetween } from "@/lib/format";
+import { getBikes, getIndex, getRouteHelp } from "@/lib/content";
+import { sayAge, daysBetween, feet, km } from "@/lib/format";
 import { isSection, isTool, REPORTS_NEEDED, SECTION_NAMES, type SectionId, type ToolId } from "@/lib/sections";
 import { SITE_URL } from "@/lib/site";
 import { allSources } from "@/lib/sources";
+import { alertsFor, closuresFor, officeDates, weatherFor } from "@/server/live";
 import { routePaths } from "@/server/route-pages";
 import { getRouteView, type RouteView } from "@/server/route-view";
 import { openTrips } from "@/server/trips";
@@ -57,6 +61,9 @@ const TOOL_NAMES: Record<ToolId, string> = {
   "fuel-check": "Fuel check",
   trips: "Trips on this route",
   sources: "Sources",
+  "map-apps": "Route file",
+  emergency: "Emergency card",
+  "tell-home": "Tell someone at home",
 };
 
 export async function generateMetadata(props: PageProps<"/routes/[slug]/[section]">): Promise<Metadata> {
@@ -180,6 +187,28 @@ async function SectionBody(props: PageProps<"/routes/[slug]/[section]">) {
         </div>
       );
     }
+    if (section === "map-apps" || section === "emergency" || section === "tell-home") {
+      if (route.line.length === 0) notFound();
+      const help = section === "emergency" ? await getRouteHelp(slug) : null;
+      const gap = route.fuel.longest_gaps[0];
+      const highest = route.header.highest_point;
+      return (
+        <div className="flex flex-col gap-3">
+          <BackHead title={route.name} sub={TOOL_NAMES[section]} back={top} />
+          {section === "map-apps" ? <MapAppsScreen route={route} /> : null}
+          {section === "emergency" && help ? <EmergencyCard route={route} help={help.help} fetched={help.fetched} /> : null}
+          {section === "tell-home" ? (
+            <TellHome
+              routeName={route.name}
+              path={top}
+              places={route.waypoints.filter((w) => w.kind === "place").map((w) => w.name)}
+              gap={gap && route.fuel.listed && gap.gap_km >= 60 ? `No fuel for ${km(gap.gap_km)} after ${gap.near_from}.` : null}
+              highest={highest ? `Highest point ${feet(highest.altitude_m)}.` : null}
+            />
+          ) : null}
+        </div>
+      );
+    }
     return (
       <div className="flex flex-col gap-3">
         <BackHead title="Sources" sub={route.name} back={top} />
@@ -235,9 +264,17 @@ async function SectionBody(props: PageProps<"/routes/[slug]/[section]">) {
     );
   }
 
+  // "Is it open?" reads what some offices and a weather service say today. Each read is kept for an hour or more.
+  const live: OpenLive | undefined =
+    section === "open"
+      ? await Promise.all([alertsFor(route), officeDates(route), closuresFor(route), weatherFor(route)]).then(
+          ([alerts, offices, closures, weather]) => ({ alerts, offices, closures, weather }),
+        )
+      : undefined;
+
   const noun = OF_FACTS[section];
   const body: Record<Exclude<SectionId, "altitude">, () => ReactNode> = {
-    open: () => <OpenSection view={view} />,
+    open: () => <OpenSection view={view} live={live} />,
     fuel: () => <FuelSection view={view} />,
     rules: () => <RulesSection view={view} />,
     road: () => <RoadSection view={view} />,

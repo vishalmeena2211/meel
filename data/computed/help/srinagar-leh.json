@@ -1,0 +1,575 @@
+{
+ "fetched": "2026-10-06",
+ "hospitals": [
+  {
+   "name": "Ramzan Hospital",
+   "km_from_start": 0.0,
+   "off_road_m": 1790,
+   "lat": 34.06112,
+   "lon": 74.80982,
+   "osm_url": "https://www.openstreetmap.org/node/6911125823"
+  },
+  {
+   "name": "Tahira Khanams Hospital and Nursing Home",
+   "km_from_start": 0.0,
+   "off_road_m": 1811,
+   "lat": 34.06751,
+   "lon": 74.80278,
+   "osm_url": "https://www.openstreetmap.org/node/6911271677"
+  },
+  {
+   "name": "Max Superspeciality Hospital",
+   "km_from_start": 0.0,
+   "off_road_m": 1469,
+   "lat": 34.07187,
+   "lon": 74.80489,
+   "osm_url": "https://www.openstreetmap.org/node/7668785762"
+  },
+  {
+   "name": "T.K. Hospital",
+   "km_from_start": 0.0,
+   "off_road_m": 1817,
+   "lat": 34.06659,
+   "lon": 74.80328,
+   "osm_url": "https://www.openstreetmap.org/node/7668785790"
+  },
+  {
+   "name": "Shifa Medical Center",
+   "km_from_start": 0.0,
+   "off_road_m": 1869,
+   "lat": 34.06996,
+   "lon": 74.80099,
+   "osm_url": "https://www.openstreetmap.org/node/13633468033"
+  },
+  {
+   "name": "Lalla Ded Hospital",
+   "km_from_start": 0.0,
+   "off_road_m": 1461,
+   "lat": 34.06644,
+   "lon": 74.80804,
+   "osm_url": "https://www.openstreetmap.org/way/679551679"
+  },
+  {
+   "name": "Shifa Medical Centre",
+   "km_from_start": 0.0,
+   "off_road_m": 1869,
+   "lat": 34.06993,
+   "lon": 74.801,
+   "osm_url": "https://www.openstreetmap.org/way/1463163571"
+  },
+  {
+   "name": null,
+   "km_from_start": 0.1,
+   "off_road_m": 1577,
+   "lat": 34.07197,
+   "lon": 74.83808,
+   "osm_url": "https://www.openstreetmap.org/node/5936065436"
+  },
+  {
+   "name": "Modern Hospital",
+   "km_from_start": 0.1,
+   "off_road_m": 1202,
+   "lat": 34.06805,
+   "lon": 74.83153,
+   "osm_url": "https://www.openstreetmap.org/way/738104619"
+  },
+  {
+   "name": "Kidney Hospital",
+   "km_from_start": 0.1,
+   "off_road_m": 1608,
+   "lat": 34.07221,
+   "lon": 74.83847,
+   "osm_url": "https://www.openstreetmap.org/way/738120068"
+  },
+  {
+   "name": "Chest Diseases Hospital",
+   "km_from_start": 0.1,
+   "off_road_m": 944,
+   "lat": 34.07774,
+   "lon": 74.8309,
+   "osm_url": "https://www.openstreetmap.org/way/1463199711"
+  },
+  {
+   "name": "Paras Health",
+   "km_from_start": 0.1,
+   "off_road_m": 971,
+   "lat": 34.0745,
+   "lon": 74.83183,
+   "osm_url": "https://www.openstreetmap.org/way/1463372951"
+  },
+  {
+   "name": "Government Health Centre",
+   "km_from_start": 1.0,
+   "off_road_m": 1863,
+   "lat": 34.08448,
+   "lon": 74.83951,
+   "osm_url": "https://www.openstreetmap.org/node/7668785794"
+  },
+  {
+   "name": "Al-Aziz Hospital",
+   "km_from_start": 1.1,
+   "off_road_m": 131,
+   "lat": 34.08357,
+   "lon": 74.82072,
+   "osm_url": "https://www.openstreetmap.org/node/6911122339"
+  },
+  {
+   "name": "Khyber Medical Institute hospital",
+   "km_from_start": 1.1,
+   "off_road_m": 250,
+   "lat": 34.08421,
+   "lon": 74.82195,
+   "osm_url": "https://www.openstreetmap.org/way/570627901"
+  },
+  {
+   "name": "Sheikh Ul Alam Hospital",
+   "km_from_start": 1.8,
+   "off_road_m": 1634,
+   "lat": 34.08056,
+   "lon": 74.80149,
+   "osm_url": "https://www.openstreetmap.org/node/6911125801"
+  },
+  {
+   "name": "Government Super Speciality Hospital",
+   "km_from_start": 2.0,
+   "off_road_m": 1604,
+   "lat": 34.08831,
+   "lon": 74.79769,
+   "osm_url": "https://www.openstreetmap.org/way/678698274"
+  },
+  {
+   "name": "SMHS Hospital",
+   "km_from_start": 2.0,
+   "off_road_m": 1597,
+   "lat": 34.08669,
+   "lon": 74.79817,
+   "osm_url": "https://www.openstreetmap.org/way/1198176448"
+  },
+  {
+   "name": "JLNM Hospital Gate Entrance",
+   "km_from_start": 2.3,
+   "off_road_m": 652,
+   "lat": 34.09719,
+   "lon": 74.82188,
+   "osm_url": "https://www.openstreetmap.org/node/9144993692"
+  },
+  {
+   "name": "Jawahar Lal Nehru Memorial Hospital",
+   "km_from_start": 2.4,
+   "off_road_m": 641,
+   "lat": 34.09762,
+   "lon": 74.82102,
+   "osm_url": "https://www.openstreetmap.org/way/682755884"
+  },
+  {
+   "name": "Government Gousia Hospital Khanyar",
+   "km_from_start": 2.6,
+   "off_road_m": 233,
+   "lat": 34.09256,
+   "lon": 74.81345,
+   "osm_url": "https://www.openstreetmap.org/way/671792135"
+  },
+  {
+   "name": "Dr. Naseer's Unani & Panchkarma Hospital",
+   "km_from_start": 3.6,
+   "off_road_m": 1701,
+   "lat": 34.09577,
+   "lon": 74.79223,
+   "osm_url": "https://www.openstreetmap.org/node/7668785860"
+  },
+  {
+   "name": "Unani and Panchkarma Hospital",
+   "km_from_start": 3.6,
+   "off_road_m": 1695,
+   "lat": 34.09592,
+   "lon": 74.79223,
+   "osm_url": "https://www.openstreetmap.org/node/9113500901"
+  },
+  {
+   "name": "Institute of Mental Health and Neurosciences Kashmir",
+   "km_from_start": 4.4,
+   "off_road_m": 1144,
+   "lat": 34.10818,
+   "lon": 74.82165,
+   "osm_url": "https://www.openstreetmap.org/way/821328993"
+  },
+  {
+   "name": "Leprosy Hospital",
+   "km_from_start": 4.7,
+   "off_road_m": 1741,
+   "lat": 34.11539,
+   "lon": 74.82754,
+   "osm_url": "https://www.openstreetmap.org/way/1467285249"
+  },
+  {
+   "name": "Govt. Urban Primary Health Centre Lalbazar",
+   "km_from_start": 6.3,
+   "off_road_m": 880,
+   "lat": 34.12516,
+   "lon": 74.816,
+   "osm_url": "https://www.openstreetmap.org/way/821329053"
+  },
+  {
+   "name": "Sher-i-Kashmir Institute of Medical Sciences",
+   "km_from_start": 7.7,
+   "off_road_m": 268,
+   "lat": 34.13548,
+   "lon": 74.80021,
+   "osm_url": "https://www.openstreetmap.org/way/293517845"
+  },
+  {
+   "name": "Maternity Hospital SKIMS Soura",
+   "km_from_start": 7.7,
+   "off_road_m": 331,
+   "lat": 34.13906,
+   "lon": 74.80326,
+   "osm_url": "https://www.openstreetmap.org/way/1198015729"
+  },
+  {
+   "name": "Safa Marwah Hospital",
+   "km_from_start": 9.1,
+   "off_road_m": 45,
+   "lat": 34.14374,
+   "lon": 74.80883,
+   "osm_url": "https://www.openstreetmap.org/node/7668785843"
+  },
+  {
+   "name": "District Hospital, Ganderbal",
+   "km_from_start": 18.3,
+   "off_road_m": 707,
+   "lat": 34.20977,
+   "lon": 74.77682,
+   "osm_url": "https://www.openstreetmap.org/way/1466785628"
+  },
+  {
+   "name": "Meeran Memorial Hospital",
+   "km_from_start": 18.8,
+   "off_road_m": 620,
+   "lat": 34.21703,
+   "lon": 74.77311,
+   "osm_url": "https://www.openstreetmap.org/node/7668544158"
+  },
+  {
+   "name": "Government Maternity Hospital",
+   "km_from_start": 24.7,
+   "off_road_m": 37,
+   "lat": 34.26392,
+   "lon": 74.79523,
+   "osm_url": "https://www.openstreetmap.org/node/7668544075"
+  },
+  {
+   "name": "Kangan Trauma Hospital",
+   "km_from_start": 37.1,
+   "off_road_m": 101,
+   "lat": 34.2625,
+   "lon": 74.90186,
+   "osm_url": "https://www.openstreetmap.org/node/7668544121"
+  },
+  {
+   "name": "Mother and Child Care Hospital",
+   "km_from_start": 37.2,
+   "off_road_m": 80,
+   "lat": 34.26237,
+   "lon": 74.90239,
+   "osm_url": "https://www.openstreetmap.org/node/7668544131"
+  },
+  {
+   "name": "Government Hospital",
+   "km_from_start": 49.5,
+   "off_road_m": 167,
+   "lat": 34.22154,
+   "lon": 75.01587,
+   "osm_url": "https://www.openstreetmap.org/node/7668544146"
+  },
+  {
+   "name": "Base Camp Hospital",
+   "km_from_start": 94.2,
+   "off_road_m": 690,
+   "lat": 34.25667,
+   "lon": 75.41376,
+   "osm_url": "https://www.openstreetmap.org/node/7668544162"
+  },
+  {
+   "name": "Community Health Center Drass",
+   "km_from_start": 143.5,
+   "off_road_m": 24,
+   "lat": 34.43027,
+   "lon": 75.75438,
+   "osm_url": "https://www.openstreetmap.org/node/4369053859"
+  },
+  {
+   "name": "Old Kargil District Hospital",
+   "km_from_start": 201.3,
+   "off_road_m": 24,
+   "lat": 34.55934,
+   "lon": 76.12469,
+   "osm_url": "https://www.openstreetmap.org/way/1412272096"
+  },
+  {
+   "name": "Army hospital",
+   "km_from_start": 203.2,
+   "off_road_m": 197,
+   "lat": 34.55406,
+   "lon": 76.13181,
+   "osm_url": "https://www.openstreetmap.org/node/12465668386"
+  },
+  {
+   "name": "Qamar Ali Akhoon Memorial Hospital Kargil",
+   "km_from_start": 206.3,
+   "off_road_m": 1947,
+   "lat": 34.52114,
+   "lon": 76.14043,
+   "osm_url": "https://www.openstreetmap.org/way/1334492669"
+  },
+  {
+   "name": "Primary Health Centre Khaltsi",
+   "km_from_start": 324.6,
+   "off_road_m": 69,
+   "lat": 34.31965,
+   "lon": 76.88481,
+   "osm_url": "https://www.openstreetmap.org/node/6681344468"
+  },
+  {
+   "name": "Army Hospital Leh",
+   "km_from_start": 419.0,
+   "off_road_m": 1352,
+   "lat": 34.16143,
+   "lon": 77.56646,
+   "osm_url": "https://www.openstreetmap.org/way/158343131"
+  },
+  {
+   "name": "Sonam Norboo Memorial Hospital Leh",
+   "km_from_start": 419.4,
+   "off_road_m": 79,
+   "lat": 34.15394,
+   "lon": 77.58048,
+   "osm_url": "https://www.openstreetmap.org/way/27761109"
+  }
+ ],
+ "police": [
+  {
+   "name": "Police Station Rajbagh",
+   "km_from_start": 0.0,
+   "off_road_m": 988,
+   "lat": 34.06572,
+   "lon": 74.82146,
+   "osm_url": "https://www.openstreetmap.org/node/9002236401"
+  },
+  {
+   "name": "Police Station Kothibagh",
+   "km_from_start": 0.0,
+   "off_road_m": 295,
+   "lat": 34.07289,
+   "lon": 74.81802,
+   "osm_url": "https://www.openstreetmap.org/node/9052828230"
+  },
+  {
+   "name": "Jammu and Kashmir Armed Police Headquarters",
+   "km_from_start": 0.0,
+   "off_road_m": 1984,
+   "lat": 34.07339,
+   "lon": 74.799,
+   "osm_url": "https://www.openstreetmap.org/node/9073488316"
+  },
+  {
+   "name": "Crime Branch Headquarters Kashmir",
+   "km_from_start": 0.0,
+   "off_road_m": 1630,
+   "lat": 34.07143,
+   "lon": 74.80322,
+   "osm_url": "https://www.openstreetmap.org/node/9073523771"
+  },
+  {
+   "name": "Police Station Rajbagh",
+   "km_from_start": 0.0,
+   "off_road_m": 959,
+   "lat": 34.06601,
+   "lon": 74.82173,
+   "osm_url": "https://www.openstreetmap.org/node/9073527667"
+  },
+  {
+   "name": "Traffic Police Head Quarter",
+   "km_from_start": 0.1,
+   "off_road_m": 242,
+   "lat": 34.07273,
+   "lon": 74.82226,
+   "osm_url": "https://www.openstreetmap.org/node/5936064835"
+  },
+  {
+   "name": "Police Station Ram Munshi Bagh",
+   "km_from_start": 0.1,
+   "off_road_m": 1352,
+   "lat": 34.07298,
+   "lon": 74.83581,
+   "osm_url": "https://www.openstreetmap.org/node/9073521095"
+  },
+  {
+   "name": "police station shaheed Gunj",
+   "km_from_start": 0.5,
+   "off_road_m": 1512,
+   "lat": 34.07539,
+   "lon": 74.80389,
+   "osm_url": "https://www.openstreetmap.org/node/2835089031"
+  },
+  {
+   "name": "District Police Lines",
+   "km_from_start": 0.5,
+   "off_road_m": 2020,
+   "lat": 34.07562,
+   "lon": 74.79822,
+   "osm_url": "https://www.openstreetmap.org/node/9073526517"
+  },
+  {
+   "name": "Headquarters Jammu and Kashmir Armed Police",
+   "km_from_start": 0.5,
+   "off_road_m": 1955,
+   "lat": 34.07704,
+   "lon": 74.79872,
+   "osm_url": "https://www.openstreetmap.org/node/9113504586"
+  },
+  {
+   "name": "District Police Lines Srinagar",
+   "km_from_start": 0.5,
+   "off_road_m": 1992,
+   "lat": 34.07644,
+   "lon": 74.79839,
+   "osm_url": "https://www.openstreetmap.org/node/9113506297"
+  },
+  {
+   "name": "Police Station Kral Khud",
+   "km_from_start": 0.6,
+   "off_road_m": 878,
+   "lat": 34.07806,
+   "lon": 74.81035,
+   "osm_url": "https://www.openstreetmap.org/node/9113502524"
+  },
+  {
+   "name": "Police Building",
+   "km_from_start": 0.6,
+   "off_road_m": 1919,
+   "lat": 34.07728,
+   "lon": 74.79908,
+   "osm_url": "https://www.openstreetmap.org/way/169250683"
+  },
+  {
+   "name": "Police Station Fateh Kadal",
+   "km_from_start": 2.0,
+   "off_road_m": 736,
+   "lat": 34.08771,
+   "lon": 74.80759,
+   "osm_url": "https://www.openstreetmap.org/node/9107526536"
+  },
+  {
+   "name": "Khanyar Police Station",
+   "km_from_start": 2.7,
+   "off_road_m": 209,
+   "lat": 34.09308,
+   "lon": 74.81307,
+   "osm_url": "https://www.openstreetmap.org/way/671792136"
+  },
+  {
+   "name": "Police Station Maharaj Gunj",
+   "km_from_start": 2.9,
+   "off_road_m": 766,
+   "lat": 34.09293,
+   "lon": 74.80574,
+   "osm_url": "https://www.openstreetmap.org/node/11367092514"
+  },
+  {
+   "name": "Police Station Nowhatta",
+   "km_from_start": 3.0,
+   "off_road_m": 320,
+   "lat": 34.09908,
+   "lon": 74.81506,
+   "osm_url": "https://www.openstreetmap.org/node/9150688936"
+  },
+  {
+   "name": "Nowhatta Police Station",
+   "km_from_start": 3.0,
+   "off_road_m": 327,
+   "lat": 34.09885,
+   "lon": 74.8154,
+   "osm_url": "https://www.openstreetmap.org/node/10015295277"
+  },
+  {
+   "name": "Police Station Lalbazar",
+   "km_from_start": 6.4,
+   "off_road_m": 915,
+   "lat": 34.12599,
+   "lon": 74.81629,
+   "osm_url": "https://www.openstreetmap.org/way/1463142684"
+  },
+  {
+   "name": "Soura Police Station",
+   "km_from_start": 7.8,
+   "off_road_m": 25,
+   "lat": 34.13551,
+   "lon": 74.80362,
+   "osm_url": "https://www.openstreetmap.org/way/1463372954"
+  },
+  {
+   "name": null,
+   "km_from_start": 19.7,
+   "off_road_m": 1,
+   "lat": 34.22502,
+   "lon": 74.7761,
+   "osm_url": "https://www.openstreetmap.org/node/5936064829"
+  },
+  {
+   "name": "Kheerbawani Police station",
+   "km_from_start": 19.9,
+   "off_road_m": 1495,
+   "lat": 34.21963,
+   "lon": 74.76111,
+   "osm_url": "https://www.openstreetmap.org/node/7772070271"
+  },
+  {
+   "name": null,
+   "km_from_start": 79.9,
+   "off_road_m": 20,
+   "lat": 34.301,
+   "lon": 75.29469,
+   "osm_url": "https://www.openstreetmap.org/way/436594978"
+  },
+  {
+   "name": null,
+   "km_from_start": 117.4,
+   "off_road_m": 38,
+   "lat": 34.33048,
+   "lon": 75.57131,
+   "osm_url": "https://www.openstreetmap.org/node/4367210690"
+  },
+  {
+   "name": null,
+   "km_from_start": 142.7,
+   "off_road_m": 36,
+   "lat": 34.43031,
+   "lon": 75.75053,
+   "osm_url": "https://www.openstreetmap.org/way/439272629"
+  },
+  {
+   "name": null,
+   "km_from_start": 202.0,
+   "off_road_m": 126,
+   "lat": 34.55919,
+   "lon": 76.12723,
+   "osm_url": "https://www.openstreetmap.org/node/12465668643"
+  },
+  {
+   "name": "SSP and FRO",
+   "km_from_start": 420.7,
+   "off_road_m": 252,
+   "lat": 34.16088,
+   "lon": 77.58867,
+   "osm_url": "https://www.openstreetmap.org/node/2575456627"
+  },
+  {
+   "name": "Police station Leh",
+   "km_from_start": 421.1,
+   "off_road_m": 326,
+   "lat": 34.16602,
+   "lon": 77.58252,
+   "osm_url": "https://www.openstreetmap.org/node/9848099392"
+  }
+ ]
+}

@@ -1,0 +1,31 @@
+{
+ "fetched": "2026-10-06",
+ "hospitals": [
+  {
+   "name": "Community Health Center Padum",
+   "km_from_start": 144.6,
+   "off_road_m": 168,
+   "lat": 33.47032,
+   "lon": 76.87716,
+   "osm_url": "https://www.openstreetmap.org/way/1116132420"
+  }
+ ],
+ "police": [
+  {
+   "name": null,
+   "km_from_start": 2.7,
+   "off_road_m": 101,
+   "lat": 32.67435,
+   "lon": 77.20065,
+   "osm_url": "https://www.openstreetmap.org/node/299654019"
+  },
+  {
+   "name": "Registration post",
+   "km_from_start": 4.1,
+   "off_road_m": 15,
+   "lat": 32.68057,
+   "lon": 77.18843,
+   "osm_url": "https://www.openstreetmap.org/node/11199228646"
+  }
+ ]
+}

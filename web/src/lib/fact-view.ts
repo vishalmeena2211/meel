@@ -38,6 +38,8 @@ export interface FactView {
   link: FactLink | null;
   changes: Array<{ when: string; what: string; host: string | null; url: string | null }>;
   history: Array<{ when: string; what: string }>;
+  /** The last three answers the editor has read, newest first: a tick or a cross, and the day. No score. */
+  recent: Array<{ kind: "still-true" | "changed"; when: string }>;
   quote: { words: string; by: string; when: string } | null;
   sources: Array<{ title: string; words: string; url: string }>;
   ask: string | null;
@@ -232,6 +234,11 @@ export function factViews(route: Route, confirmations: Confirmation[], kinds: Fa
       link: m.link ?? null,
       changes: m.changes ?? [],
       history: historyOf(mine, verb, m.source),
+      recent: mine
+        .filter((c) => c.read !== false)
+        .sort((a, b) => b.seen_on.localeCompare(a.seen_on))
+        .slice(0, 3)
+        .map((c) => ({ kind: c.kind, when: sayDate(c.seen_on, true) ?? c.seen_on })),
       quote:
         state === "conflict" && latest && previous
           ? null

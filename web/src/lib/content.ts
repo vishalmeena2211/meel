@@ -10,6 +10,8 @@ import type {
   ImageCredit,
   PackingList,
   Route,
+  RouteDistrict,
+  RouteHelp,
   RouteIndex,
   RouteSummary,
   Terrain,
@@ -67,3 +69,26 @@ export const getImageCredits = cache(
   async (): Promise<Record<string, ImageCredit>> =>
     (await readJson<Record<string, ImageCredit>>("site", "image-credits.json")) ?? {},
 );
+
+const getDistrictFile = cache(
+  async () => (await readJson<{ routes: Record<string, RouteDistrict[]> }>("site", "route-districts.json"))?.routes ?? {},
+);
+
+/** The districts a route's road passes through, in order. Empty for a route outside India, or not yet worked out. */
+export async function getRouteDistricts(slug: string): Promise<RouteDistrict[]> {
+  return (await getDistrictFile())[slug] ?? [];
+}
+
+const getHelpFile = cache(
+  async () =>
+    (await readJson<{ routes: Record<string, RouteHelp>; fetched: string }>("site", "route-help.json")) ?? {
+      routes: {},
+      fetched: "",
+    },
+);
+
+/** Hospitals and police stations near a route's road, and the day they were read from the open map. */
+export async function getRouteHelp(slug: string): Promise<{ help: RouteHelp | null; fetched: string }> {
+  const file = await getHelpFile();
+  return { help: file.routes[slug] ?? null, fetched: file.fetched };
+}

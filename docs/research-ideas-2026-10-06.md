@@ -37,19 +37,19 @@ The best ideas are cheap and keep the rules:
 
 ## Build first (small, high value, no upkeep)
 
-- [ ] **1. Official alerts on each route** — *small*
+- [x] **1. Official alerts on each route** — *small*. **Built 6 October.** Matched by the government's district codes where an alert gives them (from Wikidata), else by the names in its words. On "Is it open?", with a count on the route page.
   - **What:** Show current official alerts for the districts a route passes through. These cover heavy rain, snow, avalanche danger and river levels. Each is shown in the issuer's words, with its issue time, its expiry and the issuer named.
   - **Source:** the NDMA SACHET feed, one per state: `https://sachet.ndma.gov.in/cap_public_website/rss/rss_<state>.xml` (for example `rss_himachal`, `rss_ladakh`, `rss_uttarakhand`, `rss_sikkim`, `rss_arunachal`). Each item links to a standard alert file (Common Alerting Protocol) carrying official district codes and an expiry time. The newest item seen was dated 6 Oct 2026. The feed declares itself public domain.
   - **How:** an hourly build step matches district codes to the districts each route crosses. The step drops expired alerts.
   - **Upkeep:** none. **Fits the rules:** yes. It quotes an official alert with its date, and never says a road is open or shut.
 
-- [ ] **2. Offices' "last spoke on" dates, read automatically** — *small to medium*
+- [x] **2. Offices' "last spoke on" dates, read automatically** — *small to medium*. **Built 6 October**, for Jammu and Kashmir's advisory file, Lahaul and Spiti's road status page and Uttarakhand's closure list. **Not done:** quoting the Zojila and Mughal Road paragraphs (needs a PDF reader), Nagaland's permit page (not linked from any route), HP PWD (no date of its own, and an unofficial address), Ladakh Police (no date on the page).
   - **Jammu and Kashmir Traffic Police:** a daily PDF at a fixed address, `https://trafficpolice.jk.gov.in/documents/Advisory/ADVISORY.pdf`. It covers Zojila (with cut-off times), the Mughal Road and NH 44. Its Last-Modified date is a true "last spoke on". The text extracts cleanly, so the Zojila and Mughal Road paragraphs can be quoted on Srinagar to Leh and the Mughal Road route.
   - **Uttarakhand PWD road closure dashboard:** `https://mis.pwduk.in/pwd/roadClosure`. Every closure since April is listed, with road, km, time closed and expected reopening. It covers PWD, BRO and NH roads, and the newest row was minutes old. Show closures on Meel's Uttarakhand roads as the office's own words with their time. Never treat the absence of a closure as "open".
   - **Footer dates:** the Nagaland permit site ("last updated 2026-07-15") and the Lahaul-Spiti road status page ("Last Updated: May 14, 2024", which is stale). Read them so each card shows its true age.
   - **Upkeep:** a page layout can change; the build should warn, not fail. **Fits the rules:** yes, if every line is shown as the office's words with its date.
 
-- [ ] **3. Route files for offline map apps** — *small*
+- [x] **3. Route files for offline map apps** — *small*. **Built 6 October**, with Organic Maps and Google Maps links. **Not done:** the gpx.studio link, as the site is still private and gpx.studio could not fetch the file.
   - **What:** a GPX file per route, written by the build with Python's own XML library. It holds the road line plus points for pumps, night halts, passes, checkposts and offices, with the map-data credit inside.
   - **Buttons:**
     - "Open in Organic Maps" (`om://` links; it also imports GPX).
@@ -59,7 +59,7 @@ The best ideas are cheap and keep the rules:
   - **Upkeep:** none. **Fits the rules:** yes. The rider's app draws the map, and none is embedded on Meel.
   - **Sources:** Organic Maps link format: omaps.app/api. Google Maps URL docs: developers.google.com/maps/documentation/urls. gpx.studio is MIT-licensed.
 
-- [ ] **4. Facts that age on their own** — *small*
+- [x] **4. Facts that age on their own** — *small*. **Mostly built before:** shelf lives, ageing, stale and "reports disagree" were already in place. **Added 6 October:** the last three answers on an opened fact, and a reason of at least a few words for "This has changed". **Not done:** a 14-day life for hazards. Meel's hazards come from published guides and hold for a season; riders' sightings, which should fade fast, do not exist yet.
   - **Shelf life:** one table gives each kind of fact a shelf life. A first proposal:
     - a hazard, 14 days;
     - a pass's season status, 7 days;
@@ -73,7 +73,7 @@ The best ideas are cheap and keep the rules:
   - **A reason for changes:** "This has changed" asks for one line of reason. iOverlander asks for at least 40 characters before an edit.
   - **Upkeep:** none. **Fits the rules:** yes.
 
-- [ ] **5. Weather at the passes, as a dated forecast** — *small*
+- [x] **5. Weather at the passes, as a dated forecast** — *small*. **Built 6 October**, read every three hours. **Not done:** the satellite picture link, whose address format was not confirmed.
   - **What:** for each pass and night halt, three days ahead:
     - freezing level and snowfall, in feet;
     - wind gusts;
@@ -84,7 +84,7 @@ The best ideas are cheap and keep the rules:
   - **Satellite link:** add a link to a free satellite viewer (Copernicus Browser or NASA Worldview) to see dated snow on a pass. *Link format not confirmed.* Only link out: imagery inside Meel would be a base map.
   - **Upkeep:** none. **Fits the rules:** yes, if worded as weather and never "clear".
 
-- [ ] **6. A plan for home, and an emergency card** — *small*
+- [x] **6. A plan for home, and an emergency card** — *small*. **Built 6 October.** Hospitals and police come from the open map, not the national hospital directory, whose download asks for a form. The satellite rule is sourced to the Embassy of India's notice.
   - **Plan for home:** a pre-written WhatsApp message to one person at home. It lists:
     - the route, each night's stop and the expected arrival times;
     - the stretches with no signal, from Meel's own data;
@@ -101,7 +101,7 @@ The best ideas are cheap and keep the rules:
   - **Satellite messengers:** the card says that devices such as Garmin inReach are illegal in India without the Department of Telecommunications' permission. *Seen once:* ExplorersWeb, January 2025.
   - **Upkeep:** none. **Fits the rules:** yes.
 
-- [ ] **7. More pumps from HP's own locator** — *small*
+- [x] **7. More pumps from HP's own locator** — *small*. **Done 6 October**: see the data notes for which routes changed.
   - **What:** HP's locator (`https://petrolpump.hpretail.in`) runs on the same platform as IndianOil's. Its robots file allows reading, and each outlet page carries coordinates.
   - **How:** reuse the Tawang script for every route where the map is thin, especially the North-East.
   - **Upkeep:** re-read once a season. **Fits the rules:** yes, with each pump citing its locator page.

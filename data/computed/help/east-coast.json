@@ -1,0 +1,2831 @@
+{
+ "fetched": "2026-10-06",
+ "hospitals": [
+  {
+   "name": "Vepery Hospital",
+   "km_from_start": 0.2,
+   "off_road_m": 1367,
+   "lat": 13.09218,
+   "lon": 80.25944,
+   "osm_url": "https://www.openstreetmap.org/node/2485567524"
+  },
+  {
+   "name": "Dr. U. Mohan Rau Memorial Hospital - Chennai",
+   "km_from_start": 0.2,
+   "off_road_m": 1447,
+   "lat": 13.07949,
+   "lon": 80.25728,
+   "osm_url": "https://www.openstreetmap.org/node/6914768088"
+  },
+  {
+   "name": "G K M Hospital Pvt Ltd",
+   "km_from_start": 0.2,
+   "off_road_m": 1324,
+   "lat": 13.08999,
+   "lon": 80.25852,
+   "osm_url": "https://www.openstreetmap.org/node/6926494067"
+  },
+  {
+   "name": "Narayanaa Hospital",
+   "km_from_start": 0.2,
+   "off_road_m": 1677,
+   "lat": 13.08938,
+   "lon": 80.25476,
+   "osm_url": "https://www.openstreetmap.org/node/6932966221"
+  },
+  {
+   "name": "Noble Hospital, Chennai",
+   "km_from_start": 0.2,
+   "off_road_m": 1784,
+   "lat": 13.08215,
+   "lon": 80.25324,
+   "osm_url": "https://www.openstreetmap.org/node/6933016136"
+  },
+  {
+   "name": "N.R. Medical Home Private Limited",
+   "km_from_start": 0.2,
+   "off_road_m": 1689,
+   "lat": 13.09659,
+   "lon": 80.25971,
+   "osm_url": "https://www.openstreetmap.org/node/6934325849"
+  },
+  {
+   "name": "K.J. Hospital",
+   "km_from_start": 0.2,
+   "off_road_m": 1932,
+   "lat": 13.079,
+   "lon": 80.25267,
+   "osm_url": "https://www.openstreetmap.org/node/6936669886"
+  },
+  {
+   "name": "Sudha Hospital, Chennai",
+   "km_from_start": 0.2,
+   "off_road_m": 1776,
+   "lat": 13.07915,
+   "lon": 80.25415,
+   "osm_url": "https://www.openstreetmap.org/node/6936695226"
+  },
+  {
+   "name": "V.K. Hospital",
+   "km_from_start": 0.2,
+   "off_road_m": 1896,
+   "lat": 13.08169,
+   "lon": 80.25228,
+   "osm_url": "https://www.openstreetmap.org/node/6936696196"
+  },
+  {
+   "name": "Chennai Corporation Hospital",
+   "km_from_start": 0.2,
+   "off_road_m": 1453,
+   "lat": 13.0887,
+   "lon": 80.25671,
+   "osm_url": "https://www.openstreetmap.org/node/7252333407"
+  },
+  {
+   "name": "Agm Hospital",
+   "km_from_start": 0.2,
+   "off_road_m": 1936,
+   "lat": 13.08021,
+   "lon": 80.25224,
+   "osm_url": "https://www.openstreetmap.org/node/7824965206"
+  },
+  {
+   "name": "Centre For Gastro Esophageal Disorders",
+   "km_from_start": 0.2,
+   "off_road_m": 1803,
+   "lat": 13.07864,
+   "lon": 80.25409,
+   "osm_url": "https://www.openstreetmap.org/node/7824965225"
+  },
+  {
+   "name": "An-Noor Eye Hospital",
+   "km_from_start": 0.2,
+   "off_road_m": 272,
+   "lat": 13.08496,
+   "lon": 80.267,
+   "osm_url": "https://www.openstreetmap.org/node/7824965232"
+  },
+  {
+   "name": "Amrit Hospital",
+   "km_from_start": 0.2,
+   "off_road_m": 1928,
+   "lat": 13.08119,
+   "lon": 80.25208,
+   "osm_url": "https://www.openstreetmap.org/node/7824965244"
+  },
+  {
+   "name": "Kola Saraswathi Agarwal Samaj Health Centre",
+   "km_from_start": 0.2,
+   "off_road_m": 1574,
+   "lat": 13.08133,
+   "lon": 80.2554,
+   "osm_url": "https://www.openstreetmap.org/node/7824965254"
+  },
+  {
+   "name": "Periyar Maniammai Hospital",
+   "km_from_start": 0.2,
+   "off_road_m": 899,
+   "lat": 13.08115,
+   "lon": 80.26208,
+   "osm_url": "https://www.openstreetmap.org/node/7824965262"
+  },
+  {
+   "name": "Commissioner of Police office, Greater chennai Police",
+   "km_from_start": 0.2,
+   "off_road_m": 792,
+   "lat": 13.08128,
+   "lon": 80.26312,
+   "osm_url": "https://www.openstreetmap.org/node/12146055740"
+  },
+  {
+   "name": null,
+   "km_from_start": 0.2,
+   "off_road_m": 1417,
+   "lat": 13.0921,
+   "lon": 80.25881,
+   "osm_url": "https://www.openstreetmap.org/node/12367559381"
+  },
+  {
+   "name": "Corporation Baby Hospital",
+   "km_from_start": 0.2,
+   "off_road_m": 1523,
+   "lat": 13.09718,
+   "lon": 80.27543,
+   "osm_url": "https://www.openstreetmap.org/way/217846762"
+  },
+  {
+   "name": "Naz Unani Hospital",
+   "km_from_start": 0.3,
+   "off_road_m": 48,
+   "lat": 13.08502,
+   "lon": 80.27,
+   "osm_url": "https://www.openstreetmap.org/node/7824965246"
+  },
+  {
+   "name": "Sugumar Hospital",
+   "km_from_start": 0.5,
+   "off_road_m": 17,
+   "lat": 13.08289,
+   "lon": 80.27099,
+   "osm_url": "https://www.openstreetmap.org/node/7824965211"
+  },
+  {
+   "name": "Meta Hospital",
+   "km_from_start": 0.5,
+   "off_road_m": 31,
+   "lat": 13.08267,
+   "lon": 80.27059,
+   "osm_url": "https://www.openstreetmap.org/node/7824965238"
+  },
+  {
+   "name": "Apollo Hospital",
+   "km_from_start": 0.6,
+   "off_road_m": 14,
+   "lat": 13.08257,
+   "lon": 80.27103,
+   "osm_url": "https://www.openstreetmap.org/node/7824965252"
+  },
+  {
+   "name": "Govt Maternity Hospital",
+   "km_from_start": 0.7,
+   "off_road_m": 1661,
+   "lat": 13.0721,
+   "lon": 80.25899,
+   "osm_url": "https://www.openstreetmap.org/node/320275820"
+  },
+  {
+   "name": "Institute of Child Health",
+   "km_from_start": 0.7,
+   "off_road_m": 1753,
+   "lat": 13.07355,
+   "lon": 80.25702,
+   "osm_url": "https://www.openstreetmap.org/node/320275824"
+  },
+  {
+   "name": "Institute of Obstetrics and Gynaecology dd",
+   "km_from_start": 0.7,
+   "off_road_m": 1555,
+   "lat": 13.07354,
+   "lon": 80.25915,
+   "osm_url": "https://www.openstreetmap.org/node/320275839"
+  },
+  {
+   "name": "Dr Venugopals' Sundaram Clini",
+   "km_from_start": 0.7,
+   "off_road_m": 573,
+   "lat": 13.07678,
+   "lon": 80.26834,
+   "osm_url": "https://www.openstreetmap.org/node/2296731456"
+  },
+  {
+   "name": "Dr Kabir's Clinic",
+   "km_from_start": 0.7,
+   "off_road_m": 597,
+   "lat": 13.07687,
+   "lon": 80.26784,
+   "osm_url": "https://www.openstreetmap.org/node/2296731781"
+  },
+  {
+   "name": "Dr Sridhars'Clinic",
+   "km_from_start": 0.7,
+   "off_road_m": 675,
+   "lat": 13.07643,
+   "lon": 80.26724,
+   "osm_url": "https://www.openstreetmap.org/node/2296732187"
+  },
+  {
+   "name": "Government Hospital",
+   "km_from_start": 0.7,
+   "off_road_m": 1435,
+   "lat": 13.06881,
+   "lon": 80.26721,
+   "osm_url": "https://www.openstreetmap.org/node/7252333383"
+  },
+  {
+   "name": "Tune 32 Hospital",
+   "km_from_start": 0.7,
+   "off_road_m": 1439,
+   "lat": 13.07155,
+   "lon": 80.26227,
+   "osm_url": "https://www.openstreetmap.org/node/7824965222"
+  },
+  {
+   "name": "Neuro Hospital",
+   "km_from_start": 0.7,
+   "off_road_m": 1432,
+   "lat": 13.07134,
+   "lon": 80.2626,
+   "osm_url": "https://www.openstreetmap.org/node/7824965241"
+  },
+  {
+   "name": "Mercury Hospital",
+   "km_from_start": 0.7,
+   "off_road_m": 1590,
+   "lat": 13.07183,
+   "lon": 80.26005,
+   "osm_url": "https://www.openstreetmap.org/node/7824965245"
+  },
+  {
+   "name": "S.K. Selvam Hospital",
+   "km_from_start": 0.7,
+   "off_road_m": 584,
+   "lat": 13.07613,
+   "lon": 80.26948,
+   "osm_url": "https://www.openstreetmap.org/node/7824965249"
+  },
+  {
+   "name": "Red Cross Hospital",
+   "km_from_start": 0.7,
+   "off_road_m": 854,
+   "lat": 13.0743,
+   "lon": 80.26757,
+   "osm_url": "https://www.openstreetmap.org/node/7824965264"
+  },
+  {
+   "name": "Egmore Government Hospital",
+   "km_from_start": 0.7,
+   "off_road_m": 1684,
+   "lat": 13.07265,
+   "lon": 80.25833,
+   "osm_url": "https://www.openstreetmap.org/way/29115463"
+  },
+  {
+   "name": "Egmore Eye Hospital",
+   "km_from_start": 0.7,
+   "off_road_m": 1717,
+   "lat": 13.07022,
+   "lon": 80.25998,
+   "osm_url": "https://www.openstreetmap.org/way/29116157"
+  },
+  {
+   "name": "Police Hospital",
+   "km_from_start": 0.7,
+   "off_road_m": 1491,
+   "lat": 13.0744,
+   "lon": 80.2593,
+   "osm_url": "https://www.openstreetmap.org/way/240472123"
+  },
+  {
+   "name": "Rajiv Gandhi Government General Hospital",
+   "km_from_start": 1.4,
+   "off_road_m": 105,
+   "lat": 13.0809,
+   "lon": 80.27733,
+   "osm_url": "https://www.openstreetmap.org/way/27618339"
+  },
+  {
+   "name": "Amrit Hospital",
+   "km_from_start": 1.8,
+   "off_road_m": 1116,
+   "lat": 13.0922,
+   "lon": 80.27929,
+   "osm_url": "https://www.openstreetmap.org/node/258978416"
+  },
+  {
+   "name": "Apollo Hospital",
+   "km_from_start": 1.9,
+   "off_road_m": 1807,
+   "lat": 13.0985,
+   "lon": 80.27962,
+   "osm_url": "https://www.openstreetmap.org/node/258978417"
+  },
+  {
+   "name": "Seven Wells Hospital",
+   "km_from_start": 1.9,
+   "off_road_m": 1892,
+   "lat": 13.09938,
+   "lon": 80.28254,
+   "osm_url": "https://www.openstreetmap.org/node/7252333381"
+  },
+  {
+   "name": null,
+   "km_from_start": 1.9,
+   "off_road_m": 287,
+   "lat": 13.08478,
+   "lon": 80.28268,
+   "osm_url": "https://www.openstreetmap.org/way/240385003"
+  },
+  {
+   "name": "Chennai National Hospital",
+   "km_from_start": 1.9,
+   "off_road_m": 1880,
+   "lat": 13.09637,
+   "lon": 80.29144,
+   "osm_url": "https://www.openstreetmap.org/way/363930311"
+  },
+  {
+   "name": "Chennai National Hospital Speciality Clinics",
+   "km_from_start": 1.9,
+   "off_road_m": 1741,
+   "lat": 13.09481,
+   "lon": 80.29146,
+   "osm_url": "https://www.openstreetmap.org/way/1104433136"
+  },
+  {
+   "name": "SA Hospital",
+   "km_from_start": 1.9,
+   "off_road_m": 1946,
+   "lat": 13.09914,
+   "lon": 80.28688,
+   "osm_url": "https://www.openstreetmap.org/way/1110191307"
+  },
+  {
+   "name": "Shaarave Hospital",
+   "km_from_start": 1.9,
+   "off_road_m": 1791,
+   "lat": 13.09839,
+   "lon": 80.27988,
+   "osm_url": "https://www.openstreetmap.org/way/1176875169"
+  },
+  {
+   "name": "The Arya Vysya Meternity Home and Child Welfare Centre",
+   "km_from_start": 1.9,
+   "off_road_m": 969,
+   "lat": 13.09109,
+   "lon": 80.28139,
+   "osm_url": "https://www.openstreetmap.org/way/1180926082"
+  },
+  {
+   "name": "Mint Hospital",
+   "km_from_start": 1.9,
+   "off_road_m": 1997,
+   "lat": 13.10023,
+   "lon": 80.28376,
+   "osm_url": "https://www.openstreetmap.org/way/1241298308"
+  },
+  {
+   "name": null,
+   "km_from_start": 1.9,
+   "off_road_m": 1808,
+   "lat": 13.09852,
+   "lon": 80.27961,
+   "osm_url": "https://www.openstreetmap.org/way/1263441145"
+  },
+  {
+   "name": "Tamil Nadu Government Multi Super Speciality Hospital",
+   "km_from_start": 3.8,
+   "off_road_m": 1136,
+   "lat": 13.06938,
+   "lon": 80.27415,
+   "osm_url": "https://www.openstreetmap.org/way/217960574"
+  },
+  {
+   "name": "Mysaan Hospital",
+   "km_from_start": 4.5,
+   "off_road_m": 1374,
+   "lat": 13.06413,
+   "lon": 80.27056,
+   "osm_url": "https://www.openstreetmap.org/node/6931566251"
+  },
+  {
+   "name": "hiba specility hospital",
+   "km_from_start": 4.6,
+   "off_road_m": 760,
+   "lat": 13.06152,
+   "lon": 80.27575,
+   "osm_url": "https://www.openstreetmap.org/node/5547728024"
+  },
+  {
+   "name": "Siva E N T Hospital",
+   "km_from_start": 4.6,
+   "off_road_m": 938,
+   "lat": 13.06198,
+   "lon": 80.27417,
+   "osm_url": "https://www.openstreetmap.org/node/7181684162"
+  },
+  {
+   "name": "Shifa Hospital And Reasearch Centre",
+   "km_from_start": 4.6,
+   "off_road_m": 902,
+   "lat": 13.06199,
+   "lon": 80.27451,
+   "osm_url": "https://www.openstreetmap.org/node/7252333330"
+  },
+  {
+   "name": "Hiba Hospital",
+   "km_from_start": 4.6,
+   "off_road_m": 757,
+   "lat": 13.06162,
+   "lon": 80.27579,
+   "osm_url": "https://www.openstreetmap.org/node/7252333371"
+  },
+  {
+   "name": "Triplicane Government Hospital",
+   "km_from_start": 4.7,
+   "off_road_m": 845,
+   "lat": 13.06099,
+   "lon": 80.2748,
+   "osm_url": "https://www.openstreetmap.org/node/7252333409"
+  },
+  {
+   "name": "Kasturibai Gandhi Hospital",
+   "km_from_start": 4.8,
+   "off_road_m": 425,
+   "lat": 13.05941,
+   "lon": 80.27843,
+   "osm_url": "https://www.openstreetmap.org/way/211423281"
+  },
+  {
+   "name": "RR Multispeciality Hospital",
+   "km_from_start": 4.9,
+   "off_road_m": 880,
+   "lat": 13.05847,
+   "lon": 80.27401,
+   "osm_url": "https://www.openstreetmap.org/node/6933910999"
+  },
+  {
+   "name": "Sakthi Hospital &Reasearch Centre Helath Care Organization",
+   "km_from_start": 5.0,
+   "off_road_m": 674,
+   "lat": 13.05727,
+   "lon": 80.27574,
+   "osm_url": "https://www.openstreetmap.org/node/7252333397"
+  },
+  {
+   "name": "Syma Hospital",
+   "km_from_start": 5.3,
+   "off_road_m": 440,
+   "lat": 13.05463,
+   "lon": 80.27748,
+   "osm_url": "https://www.openstreetmap.org/node/7823415087"
+  },
+  {
+   "name": "Sri Parthasarathy Hospital",
+   "km_from_start": 5.3,
+   "off_road_m": 637,
+   "lat": 13.05476,
+   "lon": 80.27565,
+   "osm_url": "https://www.openstreetmap.org/node/7823415088"
+  },
+  {
+   "name": null,
+   "km_from_start": 5.5,
+   "off_road_m": 67,
+   "lat": 13.05275,
+   "lon": 80.28064,
+   "osm_url": "https://www.openstreetmap.org/way/211436948"
+  },
+  {
+   "name": "The Crescent Hospital",
+   "km_from_start": 5.6,
+   "off_road_m": 912,
+   "lat": 13.05272,
+   "lon": 80.27273,
+   "osm_url": "https://www.openstreetmap.org/node/5336542921"
+  },
+  {
+   "name": "Dr Agarwals Eye Hospital, Triplicane",
+   "km_from_start": 5.6,
+   "off_road_m": 810,
+   "lat": 13.05249,
+   "lon": 80.27364,
+   "osm_url": "https://www.openstreetmap.org/node/7181721033"
+  },
+  {
+   "name": "Royapettah Government Hospital",
+   "km_from_start": 5.6,
+   "off_road_m": 1772,
+   "lat": 13.05417,
+   "lon": 80.26493,
+   "osm_url": "https://www.openstreetmap.org/relation/14377391"
+  },
+  {
+   "name": "A.R.A Hospital For Women",
+   "km_from_start": 5.8,
+   "off_road_m": 795,
+   "lat": 13.05088,
+   "lon": 80.27351,
+   "osm_url": "https://www.openstreetmap.org/node/7252333372"
+  },
+  {
+   "name": "Kalyani Hospital",
+   "km_from_start": 5.8,
+   "off_road_m": 833,
+   "lat": 13.05121,
+   "lon": 80.27321,
+   "osm_url": "https://www.openstreetmap.org/node/7823415037"
+  },
+  {
+   "name": "Vasantha Hospital",
+   "km_from_start": 6.0,
+   "off_road_m": 625,
+   "lat": 13.04906,
+   "lon": 80.2748,
+   "osm_url": "https://www.openstreetmap.org/node/7823415059"
+  },
+  {
+   "name": "Fousiya Hospital",
+   "km_from_start": 6.1,
+   "off_road_m": 638,
+   "lat": 13.04777,
+   "lon": 80.27445,
+   "osm_url": "https://www.openstreetmap.org/node/6926437416"
+  },
+  {
+   "name": "Seethapathy clinic & Hospital",
+   "km_from_start": 6.2,
+   "off_road_m": 1714,
+   "lat": 13.0487,
+   "lon": 80.26454,
+   "osm_url": "https://www.openstreetmap.org/node/7252333394"
+  },
+  {
+   "name": "Santhigiri Ayurveda and Siddha Hospital, Chennai",
+   "km_from_start": 6.3,
+   "off_road_m": 1683,
+   "lat": 13.04769,
+   "lon": 80.26466,
+   "osm_url": "https://www.openstreetmap.org/node/6927380447"
+  },
+  {
+   "name": "Vinayagam Laser Hospital, Chennai",
+   "km_from_start": 6.3,
+   "off_road_m": 1635,
+   "lat": 13.04761,
+   "lon": 80.2651,
+   "osm_url": "https://www.openstreetmap.org/node/7181711080"
+  },
+  {
+   "name": "Orthomed Hospital",
+   "km_from_start": 6.5,
+   "off_road_m": 1406,
+   "lat": 13.04547,
+   "lon": 80.26687,
+   "osm_url": "https://www.openstreetmap.org/node/7823415061"
+  },
+  {
+   "name": "CSI Kalyani Hospital",
+   "km_from_start": 6.6,
+   "off_road_m": 776,
+   "lat": 13.04333,
+   "lon": 80.2724,
+   "osm_url": "https://www.openstreetmap.org/way/211274279"
+  },
+  {
+   "name": "Avm Medical Ent Research Foundation Pvt Ltd",
+   "km_from_start": 6.7,
+   "off_road_m": 1720,
+   "lat": 13.04415,
+   "lon": 80.26371,
+   "osm_url": "https://www.openstreetmap.org/node/6936339822"
+  },
+  {
+   "name": "E V Kalyani Medical Centre",
+   "km_from_start": 6.7,
+   "off_road_m": 950,
+   "lat": 13.04278,
+   "lon": 80.27068,
+   "osm_url": "https://www.openstreetmap.org/node/6936695126"
+  },
+  {
+   "name": "Laksha Hospital",
+   "km_from_start": 6.8,
+   "off_road_m": 1717,
+   "lat": 13.04355,
+   "lon": 80.26363,
+   "osm_url": "https://www.openstreetmap.org/node/6932938089"
+  },
+  {
+   "name": "Saanvi Fertility Centre Urology and Stone Centre",
+   "km_from_start": 6.8,
+   "off_road_m": 1686,
+   "lat": 13.04366,
+   "lon": 80.26394,
+   "osm_url": "https://www.openstreetmap.org/node/7823415083"
+  },
+  {
+   "name": "EV Kalyani Hospital",
+   "km_from_start": 6.8,
+   "off_road_m": 914,
+   "lat": 13.04235,
+   "lon": 80.27094,
+   "osm_url": "https://www.openstreetmap.org/way/211423255"
+  },
+  {
+   "name": "Accu Hospital",
+   "km_from_start": 7.5,
+   "off_road_m": 1263,
+   "lat": 13.04125,
+   "lon": 80.26735,
+   "osm_url": "https://www.openstreetmap.org/node/7823415033"
+  },
+  {
+   "name": "Sinus And Nose Hospital - Mylapore, Chennai",
+   "km_from_start": 7.8,
+   "off_road_m": 14,
+   "lat": 13.03506,
+   "lon": 80.27785,
+   "osm_url": "https://www.openstreetmap.org/node/6934146446"
+  },
+  {
+   "name": "St. Isabel's Hospital",
+   "km_from_start": 7.8,
+   "off_road_m": 1717,
+   "lat": 13.03845,
+   "lon": 80.26225,
+   "osm_url": "https://www.openstreetmap.org/way/35312695"
+  },
+  {
+   "name": "Chennai Meenakshi Multispeciality Hospital Ltd",
+   "km_from_start": 7.9,
+   "off_road_m": 1725,
+   "lat": 13.03762,
+   "lon": 80.26196,
+   "osm_url": "https://www.openstreetmap.org/node/6930163175"
+  },
+  {
+   "name": "B.S.S. Hospital",
+   "km_from_start": 9.7,
+   "off_road_m": 744,
+   "lat": 13.02601,
+   "lon": 80.26552,
+   "osm_url": "https://www.openstreetmap.org/node/6929625895"
+  },
+  {
+   "name": "Apollo Specialty Hospitals Private Limited",
+   "km_from_start": 9.8,
+   "off_road_m": 346,
+   "lat": 13.0178,
+   "lon": 80.2711,
+   "osm_url": "https://www.openstreetmap.org/node/6936391765"
+  },
+  {
+   "name": "Yogi Vedha Kumari Hospital",
+   "km_from_start": 10.4,
+   "off_road_m": 889,
+   "lat": 13.02699,
+   "lon": 80.26316,
+   "osm_url": "https://www.openstreetmap.org/node/6936695172"
+  },
+  {
+   "name": "Sri Ranga Hospitals",
+   "km_from_start": 10.4,
+   "off_road_m": 1113,
+   "lat": 13.02905,
+   "lon": 80.26363,
+   "osm_url": "https://www.openstreetmap.org/node/7210911300"
+  },
+  {
+   "name": "Janamma Hospital",
+   "km_from_start": 10.5,
+   "off_road_m": 897,
+   "lat": 13.02695,
+   "lon": 80.26232,
+   "osm_url": "https://www.openstreetmap.org/node/6933010451"
+  },
+  {
+   "name": "Indira Eye Hospital",
+   "km_from_start": 10.5,
+   "off_road_m": 375,
+   "lat": 13.02221,
+   "lon": 80.26224,
+   "osm_url": "https://www.openstreetmap.org/node/6933038566"
+  },
+  {
+   "name": "Nandalala Medical Foundation",
+   "km_from_start": 10.5,
+   "off_road_m": 1559,
+   "lat": 13.03285,
+   "lon": 80.26152,
+   "osm_url": "https://www.openstreetmap.org/node/6934325882"
+  },
+  {
+   "name": "Navasuja Sankara Nethralaya",
+   "km_from_start": 10.6,
+   "off_road_m": 870,
+   "lat": 13.02651,
+   "lon": 80.26079,
+   "osm_url": "https://www.openstreetmap.org/node/6934340623"
+  },
+  {
+   "name": "Corporation Hospital",
+   "km_from_start": 10.7,
+   "off_road_m": 1723,
+   "lat": 13.03366,
+   "lon": 80.25725,
+   "osm_url": "https://www.openstreetmap.org/node/303590777"
+  },
+  {
+   "name": "Chennai Skin Foundation",
+   "km_from_start": 10.7,
+   "off_road_m": 292,
+   "lat": 13.02057,
+   "lon": 80.25947,
+   "osm_url": "https://www.openstreetmap.org/node/2587530810"
+  },
+  {
+   "name": "Chennai Kaliappa Hospital",
+   "km_from_start": 10.7,
+   "off_road_m": 1088,
+   "lat": 13.02685,
+   "lon": 80.25581,
+   "osm_url": "https://www.openstreetmap.org/node/6914880546"
+  },
+  {
+   "name": "Frontline Eye Hospital",
+   "km_from_start": 10.7,
+   "off_road_m": 1843,
+   "lat": 13.03235,
+   "lon": 80.25172,
+   "osm_url": "https://www.openstreetmap.org/node/6926437405"
+  },
+  {
+   "name": "Kaliappa Renal Center",
+   "km_from_start": 10.7,
+   "off_road_m": 1100,
+   "lat": 13.02746,
+   "lon": 80.25665,
+   "osm_url": "https://www.openstreetmap.org/node/6926953017"
+  },
+  {
+   "name": "Madras Ent Research Foundation",
+   "km_from_start": 10.7,
+   "off_road_m": 1199,
+   "lat": 13.02687,
+   "lon": 80.25414,
+   "osm_url": "https://www.openstreetmap.org/node/6928727073"
+  },
+  {
+   "name": "Chennai Skin Foundation and Yesudian Research Institute",
+   "km_from_start": 10.7,
+   "off_road_m": 343,
+   "lat": 13.02104,
+   "lon": 80.25929,
+   "osm_url": "https://www.openstreetmap.org/node/6930188138"
+  },
+  {
+   "name": "Motherhood Hospital",
+   "km_from_start": 10.7,
+   "off_road_m": 1773,
+   "lat": 13.0312,
+   "lon": 80.2512,
+   "osm_url": "https://www.openstreetmap.org/node/7257421557"
+  },
+  {
+   "name": "Helios Advanced Skin Hair & Laser Clinic Pvt Ltd",
+   "km_from_start": 10.7,
+   "off_road_m": 1924,
+   "lat": 13.03475,
+   "lon": 80.25474,
+   "osm_url": "https://www.openstreetmap.org/node/14105458201"
+  },
+  {
+   "name": "Apollo Clinic & Pharmacy",
+   "km_from_start": 10.7,
+   "off_road_m": 1986,
+   "lat": 13.0361,
+   "lon": 80.25726,
+   "osm_url": "https://www.openstreetmap.org/way/188445646"
+  },
+  {
+   "name": "Billroth Hospital",
+   "km_from_start": 10.7,
+   "off_road_m": 1084,
+   "lat": 13.02735,
+   "lon": 80.25675,
+   "osm_url": "https://www.openstreetmap.org/way/218149507"
+  },
+  {
+   "name": "Andhra Mahila Sabha",
+   "km_from_start": 10.9,
+   "off_road_m": 82,
+   "lat": 13.01768,
+   "lon": 80.25989,
+   "osm_url": "https://www.openstreetmap.org/way/217726810"
+  },
+  {
+   "name": "Fortis Malar Hospital",
+   "km_from_start": 11.7,
+   "off_road_m": 66,
+   "lat": 13.01016,
+   "lon": 80.25856,
+   "osm_url": "https://www.openstreetmap.org/way/218163938"
+  },
+  {
+   "name": "Mint Hospitals",
+   "km_from_start": 12.2,
+   "off_road_m": 614,
+   "lat": 13.00135,
+   "lon": 80.2588,
+   "osm_url": "https://www.openstreetmap.org/node/7823415065"
+  },
+  {
+   "name": "Gas Hospital",
+   "km_from_start": 12.5,
+   "off_road_m": 404,
+   "lat": 13.00303,
+   "lon": 80.2541,
+   "osm_url": "https://www.openstreetmap.org/node/7213449202"
+  },
+  {
+   "name": "Global Hospitals",
+   "km_from_start": 12.8,
+   "off_road_m": 341,
+   "lat": 13.00981,
+   "lon": 80.25152,
+   "osm_url": "https://www.openstreetmap.org/way/170104584"
+  },
+  {
+   "name": "Sri Kalyan Hospital",
+   "km_from_start": 12.9,
+   "off_road_m": 41,
+   "lat": 13.0064,
+   "lon": 80.25071,
+   "osm_url": "https://www.openstreetmap.org/node/6914764653"
+  },
+  {
+   "name": "Iswarya Fertility Center",
+   "km_from_start": 12.9,
+   "off_road_m": 31,
+   "lat": 13.00649,
+   "lon": 80.25048,
+   "osm_url": "https://www.openstreetmap.org/node/13096237915"
+  },
+  {
+   "name": "Cancer Hospital",
+   "km_from_start": 13.1,
+   "off_road_m": 281,
+   "lat": 13.00906,
+   "lon": 80.24849,
+   "osm_url": "https://www.openstreetmap.org/way/211900029"
+  },
+  {
+   "name": "Cancer Institute",
+   "km_from_start": 13.3,
+   "off_road_m": 821,
+   "lat": 13.00613,
+   "lon": 80.23988,
+   "osm_url": "https://www.openstreetmap.org/node/312000326"
+  },
+  {
+   "name": "HEALTH",
+   "km_from_start": 13.3,
+   "off_road_m": 1176,
+   "lat": 13.0136,
+   "lon": 80.23954,
+   "osm_url": "https://www.openstreetmap.org/node/4764302980"
+  },
+  {
+   "name": null,
+   "km_from_start": 13.3,
+   "off_road_m": 847,
+   "lat": 13.00542,
+   "lon": 80.23969,
+   "osm_url": "https://www.openstreetmap.org/way/28404807"
+  },
+  {
+   "name": "Health Centre",
+   "km_from_start": 13.3,
+   "off_road_m": 1196,
+   "lat": 13.01363,
+   "lon": 80.23932,
+   "osm_url": "https://www.openstreetmap.org/way/181579506"
+  },
+  {
+   "name": "VHS Multispeciality Hospital",
+   "km_from_start": 13.5,
+   "off_road_m": 148,
+   "lat": 13.00391,
+   "lon": 80.24629,
+   "osm_url": "https://www.openstreetmap.org/way/1410844331"
+  },
+  {
+   "name": "Dr.Kamakshi Memorial Hospital",
+   "km_from_start": 13.8,
+   "off_road_m": 449,
+   "lat": 13.00222,
+   "lon": 80.25209,
+   "osm_url": "https://www.openstreetmap.org/node/6928920472"
+  },
+  {
+   "name": "Padmapriya Hospital Pvt. Ltd.",
+   "km_from_start": 14.1,
+   "off_road_m": 550,
+   "lat": 12.99962,
+   "lon": 80.2537,
+   "osm_url": "https://www.openstreetmap.org/node/6934340766"
+  },
+  {
+   "name": "Government Hospital, Adyar",
+   "km_from_start": 14.4,
+   "off_road_m": 770,
+   "lat": 12.99795,
+   "lon": 80.25621,
+   "osm_url": "https://www.openstreetmap.org/node/7257421559"
+  },
+  {
+   "name": "Shivasundar Hospital",
+   "km_from_start": 14.4,
+   "off_road_m": 898,
+   "lat": 12.99777,
+   "lon": 80.25748,
+   "osm_url": "https://www.openstreetmap.org/way/374048313"
+  },
+  {
+   "name": "Lakshmi Maternity Hospital",
+   "km_from_start": 14.7,
+   "off_road_m": 307,
+   "lat": 12.99387,
+   "lon": 80.25284,
+   "osm_url": "https://www.openstreetmap.org/node/6936359940"
+  },
+  {
+   "name": "Chennai Clinical Centres",
+   "km_from_start": 14.7,
+   "off_road_m": 188,
+   "lat": 12.9942,
+   "lon": 80.25163,
+   "osm_url": "https://www.openstreetmap.org/way/328706398"
+  },
+  {
+   "name": "Tt Ranganathan Clinical Research Foundation",
+   "km_from_start": 15.0,
+   "off_road_m": 495,
+   "lat": 12.99237,
+   "lon": 80.25501,
+   "osm_url": "https://www.openstreetmap.org/way/29046387"
+  },
+  {
+   "name": "IMPCOPS Traditional Hospital",
+   "km_from_start": 15.9,
+   "off_road_m": 613,
+   "lat": 12.99308,
+   "lon": 80.25728,
+   "osm_url": "https://www.openstreetmap.org/way/29046742"
+  },
+  {
+   "name": "Jayam Polyclinc",
+   "km_from_start": 16.2,
+   "off_road_m": 945,
+   "lat": 12.99586,
+   "lon": 80.26033,
+   "osm_url": "https://www.openstreetmap.org/node/6933510877"
+  },
+  {
+   "name": "M N Eye Hospital",
+   "km_from_start": 16.2,
+   "off_road_m": 1047,
+   "lat": 12.99677,
+   "lon": 80.26036,
+   "osm_url": "https://www.openstreetmap.org/node/6934271111"
+  },
+  {
+   "name": "Corporation Hospital",
+   "km_from_start": 16.2,
+   "off_road_m": 512,
+   "lat": 12.99153,
+   "lon": 80.2615,
+   "osm_url": "https://www.openstreetmap.org/node/7823415020"
+  },
+  {
+   "name": "Uma Sankaran Siddha Hospital",
+   "km_from_start": 16.2,
+   "off_road_m": 577,
+   "lat": 12.99167,
+   "lon": 80.26245,
+   "osm_url": "https://www.openstreetmap.org/node/7823415056"
+  },
+  {
+   "name": "Ashwini Hospital",
+   "km_from_start": 16.2,
+   "off_road_m": 189,
+   "lat": 12.98902,
+   "lon": 80.25996,
+   "osm_url": "https://www.openstreetmap.org/node/7823415091"
+  },
+  {
+   "name": "Starlight Hospitals Pvt Ltd",
+   "km_from_start": 16.3,
+   "off_road_m": 39,
+   "lat": 12.98645,
+   "lon": 80.26016,
+   "osm_url": "https://www.openstreetmap.org/node/6926808792"
+  },
+  {
+   "name": "Santosh Hospital Pvt Ltd",
+   "km_from_start": 16.3,
+   "off_road_m": 1367,
+   "lat": 12.99523,
+   "lon": 80.26919,
+   "osm_url": "https://www.openstreetmap.org/node/6927769046"
+  },
+  {
+   "name": "SMK Hospital",
+   "km_from_start": 16.3,
+   "off_road_m": 43,
+   "lat": 12.98638,
+   "lon": 80.26019,
+   "osm_url": "https://www.openstreetmap.org/node/7823415049"
+  },
+  {
+   "name": "corporation hospital",
+   "km_from_start": 16.5,
+   "off_road_m": 253,
+   "lat": 12.98469,
+   "lon": 80.25734,
+   "osm_url": "https://www.openstreetmap.org/way/462740006"
+  },
+  {
+   "name": "Hale and Healthy Hospitals",
+   "km_from_start": 17.5,
+   "off_road_m": 6,
+   "lat": 12.97577,
+   "lon": 80.25901,
+   "osm_url": "https://www.openstreetmap.org/node/7823212570"
+  },
+  {
+   "name": "Promed Hospital",
+   "km_from_start": 17.6,
+   "off_road_m": 61,
+   "lat": 12.97514,
+   "lon": 80.25826,
+   "osm_url": "https://www.openstreetmap.org/node/7823212607"
+  },
+  {
+   "name": "Shakthi Hospital",
+   "km_from_start": 17.7,
+   "off_road_m": 485,
+   "lat": 12.97537,
+   "lon": 80.25432,
+   "osm_url": "https://www.openstreetmap.org/node/7823212559"
+  },
+  {
+   "name": "Ayurveda Hospital",
+   "km_from_start": 18.1,
+   "off_road_m": 232,
+   "lat": 12.97052,
+   "lon": 80.26012,
+   "osm_url": "https://www.openstreetmap.org/way/131961841"
+  },
+  {
+   "name": "Happy Clinic Hospital",
+   "km_from_start": 18.3,
+   "off_road_m": 117,
+   "lat": 12.96936,
+   "lon": 80.25661,
+   "osm_url": "https://www.openstreetmap.org/node/7823212610"
+  },
+  {
+   "name": "Bhadra Homeo",
+   "km_from_start": 18.8,
+   "off_road_m": 1029,
+   "lat": 12.96639,
+   "lon": 80.24747,
+   "osm_url": "https://www.openstreetmap.org/node/1446415367"
+  },
+  {
+   "name": "Sri Lakshmi Multi Speciality Hospital Pvt Ltd",
+   "km_from_start": 19.1,
+   "off_road_m": 1123,
+   "lat": 12.96408,
+   "lon": 80.24614,
+   "osm_url": "https://www.openstreetmap.org/node/6936271569"
+  },
+  {
+   "name": "Apollo Hospital",
+   "km_from_start": 19.2,
+   "off_road_m": 1145,
+   "lat": 12.96306,
+   "lon": 80.24574,
+   "osm_url": "https://www.openstreetmap.org/way/132073184"
+  },
+  {
+   "name": "London Harley Street Women And Fertility Centre",
+   "km_from_start": 19.5,
+   "off_road_m": 1484,
+   "lat": 12.96097,
+   "lon": 80.24215,
+   "osm_url": "https://www.openstreetmap.org/node/7213394742"
+  },
+  {
+   "name": "Jananam Fertility Centre",
+   "km_from_start": 19.7,
+   "off_road_m": 428,
+   "lat": 12.95691,
+   "lon": 80.25134,
+   "osm_url": "https://www.openstreetmap.org/node/11679595256"
+  },
+  {
+   "name": "Sahishnatha Indtitute Of Maternal And Child Health",
+   "km_from_start": 20.1,
+   "off_road_m": 108,
+   "lat": 12.95319,
+   "lon": 80.25416,
+   "osm_url": "https://www.openstreetmap.org/node/6950288001"
+  },
+  {
+   "name": "Santhi Hospital",
+   "km_from_start": 20.3,
+   "off_road_m": 13,
+   "lat": 12.95078,
+   "lon": 80.25519,
+   "osm_url": "https://www.openstreetmap.org/node/6932203729"
+  },
+  {
+   "name": "Chennai Urology & Robotics Institute",
+   "km_from_start": 20.6,
+   "off_road_m": 1494,
+   "lat": 12.95202,
+   "lon": 80.24123,
+   "osm_url": "https://www.openstreetmap.org/way/1373636356"
+  },
+  {
+   "name": "Jayam Hospital",
+   "km_from_start": 20.8,
+   "off_road_m": 1757,
+   "lat": 12.94987,
+   "lon": 80.23817,
+   "osm_url": "https://www.openstreetmap.org/node/7822260021"
+  },
+  {
+   "name": "Dhanvantri Multi Speciality",
+   "km_from_start": 21.7,
+   "off_road_m": 1264,
+   "lat": 12.94022,
+   "lon": 80.24123,
+   "osm_url": "https://www.openstreetmap.org/node/7822260033"
+  },
+  {
+   "name": "Sanjeevani Ayurvedic Hospital",
+   "km_from_start": 24.7,
+   "off_road_m": 130,
+   "lat": 12.91205,
+   "lon": 80.24898,
+   "osm_url": "https://www.openstreetmap.org/node/8197934476"
+  },
+  {
+   "name": "S B Hospital",
+   "km_from_start": 32.2,
+   "off_road_m": 1567,
+   "lat": 12.84611,
+   "lon": 80.22638,
+   "osm_url": "https://www.openstreetmap.org/node/9591995528"
+  },
+  {
+   "name": "Marhura hospital",
+   "km_from_start": 33.2,
+   "off_road_m": 1412,
+   "lat": 12.83693,
+   "lon": 80.22757,
+   "osm_url": "https://www.openstreetmap.org/node/5321368440"
+  },
+  {
+   "name": "Chennai Best Acupuncture Clinic in OMR Padur",
+   "km_from_start": 35.4,
+   "off_road_m": 1703,
+   "lat": 12.81249,
+   "lon": 80.22578,
+   "osm_url": "https://www.openstreetmap.org/node/9952825959"
+  },
+  {
+   "name": "Supreme Speciality Hospitals",
+   "km_from_start": 37.0,
+   "off_road_m": 1989,
+   "lat": 12.80632,
+   "lon": 80.22442,
+   "osm_url": "https://www.openstreetmap.org/node/7820874284"
+  },
+  {
+   "name": "Varam Health Care",
+   "km_from_start": 57.1,
+   "off_road_m": 26,
+   "lat": 12.63325,
+   "lon": 80.19617,
+   "osm_url": "https://www.openstreetmap.org/node/7820652158"
+  },
+  {
+   "name": "Suradeep Hospital",
+   "km_from_start": 58.8,
+   "off_road_m": 255,
+   "lat": 12.61782,
+   "lon": 80.19502,
+   "osm_url": "https://www.openstreetmap.org/node/2334799039"
+  },
+  {
+   "name": "Moorthy Hospital",
+   "km_from_start": 59.2,
+   "off_road_m": 23,
+   "lat": 12.62071,
+   "lon": 80.19203,
+   "osm_url": "https://www.openstreetmap.org/node/7820652205"
+  },
+  {
+   "name": "Government Hospital, Mahabalipuram",
+   "km_from_start": 60.4,
+   "off_road_m": 153,
+   "lat": 12.61773,
+   "lon": 80.18097,
+   "osm_url": "https://www.openstreetmap.org/node/7257518761"
+  },
+  {
+   "name": "DAE Hospital",
+   "km_from_start": 75.8,
+   "off_road_m": 1380,
+   "lat": 12.50373,
+   "lon": 80.15963,
+   "osm_url": "https://www.openstreetmap.org/node/353073527"
+  },
+  {
+   "name": "St.Mary'S Hospital",
+   "km_from_start": 75.8,
+   "off_road_m": 514,
+   "lat": 12.50271,
+   "lon": 80.15155,
+   "osm_url": "https://www.openstreetmap.org/node/7257518764"
+  },
+  {
+   "name": "Government Hospital, Marakkanam",
+   "km_from_start": 120.7,
+   "off_road_m": 23,
+   "lat": 12.19752,
+   "lon": 79.94971,
+   "osm_url": "https://www.openstreetmap.org/node/7262801895"
+  },
+  {
+   "name": "Pondicherry Institute of Medical Sciences",
+   "km_from_start": 140.5,
+   "off_road_m": 1547,
+   "lat": 12.04704,
+   "lon": 79.85557,
+   "osm_url": "https://www.openstreetmap.org/way/464766467"
+  },
+  {
+   "name": "கால்நடை சிறு மருந்தகம் புதிய கட்டிடம்",
+   "km_from_start": 141.5,
+   "off_road_m": 165,
+   "lat": 12.03221,
+   "lon": 79.8663,
+   "osm_url": "https://www.openstreetmap.org/node/8446094019"
+  },
+  {
+   "name": "Auroville Health Center",
+   "km_from_start": 147.5,
+   "off_road_m": 1279,
+   "lat": 11.98707,
+   "lon": 79.83426,
+   "osm_url": "https://www.openstreetmap.org/node/1690133289"
+  },
+  {
+   "name": "L.K. Nursing Home",
+   "km_from_start": 150.6,
+   "off_road_m": 1399,
+   "lat": 11.95883,
+   "lon": 79.82276,
+   "osm_url": "https://www.openstreetmap.org/node/8356485656"
+  },
+  {
+   "name": "33",
+   "km_from_start": 151.0,
+   "off_road_m": 228,
+   "lat": 11.95631,
+   "lon": 79.83465,
+   "osm_url": "https://www.openstreetmap.org/node/5327838410"
+  },
+  {
+   "name": "Padmavathi Hospital",
+   "km_from_start": 151.2,
+   "off_road_m": 461,
+   "lat": 11.9549,
+   "lon": 79.83212,
+   "osm_url": "https://www.openstreetmap.org/node/7210832075"
+  },
+  {
+   "name": "Govt Sub Centre",
+   "km_from_start": 151.3,
+   "off_road_m": 320,
+   "lat": 11.95262,
+   "lon": 79.83896,
+   "osm_url": "https://www.openstreetmap.org/node/5641888510"
+  },
+  {
+   "name": "AUM Hospital",
+   "km_from_start": 151.3,
+   "off_road_m": 65,
+   "lat": 11.95318,
+   "lon": 79.83668,
+   "osm_url": "https://www.openstreetmap.org/node/7629062777"
+  },
+  {
+   "name": null,
+   "km_from_start": 151.3,
+   "off_road_m": 72,
+   "lat": 11.95312,
+   "lon": 79.83673,
+   "osm_url": "https://www.openstreetmap.org/way/1192829601"
+  },
+  {
+   "name": "ECHS Polyclinic",
+   "km_from_start": 151.5,
+   "off_road_m": 1581,
+   "lat": 11.95421,
+   "lon": 79.8214,
+   "osm_url": "https://www.openstreetmap.org/node/5361839695"
+  },
+  {
+   "name": "Government Primary Health Centre, Lawspet",
+   "km_from_start": 151.6,
+   "off_road_m": 1875,
+   "lat": 11.95455,
+   "lon": 79.8187,
+   "osm_url": "https://www.openstreetmap.org/node/3596879689"
+  },
+  {
+   "name": "LifeLine Hospital",
+   "km_from_start": 152.6,
+   "off_road_m": 2067,
+   "lat": 11.95168,
+   "lon": 79.81614,
+   "osm_url": "https://www.openstreetmap.org/way/554515931"
+  },
+  {
+   "name": null,
+   "km_from_start": 152.9,
+   "off_road_m": 355,
+   "lat": 11.94072,
+   "lon": 79.82878,
+   "osm_url": "https://www.openstreetmap.org/way/1192802892"
+  },
+  {
+   "name": null,
+   "km_from_start": 153.2,
+   "off_road_m": 454,
+   "lat": 11.93668,
+   "lon": 79.83561,
+   "osm_url": "https://www.openstreetmap.org/way/1192560561"
+  },
+  {
+   "name": null,
+   "km_from_start": 153.3,
+   "off_road_m": 390,
+   "lat": 11.93533,
+   "lon": 79.83477,
+   "osm_url": "https://www.openstreetmap.org/way/1192553140"
+  },
+  {
+   "name": "General Hospital",
+   "km_from_start": 153.7,
+   "off_road_m": 233,
+   "lat": 11.93214,
+   "lon": 79.83273,
+   "osm_url": "https://www.openstreetmap.org/way/298331991"
+  },
+  {
+   "name": "Government General Hospital",
+   "km_from_start": 153.8,
+   "off_road_m": 213,
+   "lat": 11.93192,
+   "lon": 79.8325,
+   "osm_url": "https://www.openstreetmap.org/way/334271509"
+  },
+  {
+   "name": "Hôpital Saint-Joseph",
+   "km_from_start": 153.9,
+   "off_road_m": 404,
+   "lat": 11.9301,
+   "lon": 79.83395,
+   "osm_url": "https://www.openstreetmap.org/node/3406731009"
+  },
+  {
+   "name": "St. Josephs Hospital, Puducherry",
+   "km_from_start": 153.9,
+   "off_road_m": 436,
+   "lat": 11.93044,
+   "lon": 79.83431,
+   "osm_url": "https://www.openstreetmap.org/node/6907567985"
+  },
+  {
+   "name": "Certh India Hospital",
+   "km_from_start": 154.1,
+   "off_road_m": 745,
+   "lat": 11.92245,
+   "lon": 79.83083,
+   "osm_url": "https://www.openstreetmap.org/node/6908065228"
+  },
+  {
+   "name": "Senthil Women & Child Hospital",
+   "km_from_start": 154.3,
+   "off_road_m": 135,
+   "lat": 11.92823,
+   "lon": 79.82819,
+   "osm_url": "https://www.openstreetmap.org/node/7210876877"
+  },
+  {
+   "name": "East Coast Hospital",
+   "km_from_start": 154.5,
+   "off_road_m": 6,
+   "lat": 11.92985,
+   "lon": 79.82661,
+   "osm_url": "https://www.openstreetmap.org/node/5647992744"
+  },
+  {
+   "name": null,
+   "km_from_start": 154.5,
+   "off_road_m": 134,
+   "lat": 11.92868,
+   "lon": 79.82602,
+   "osm_url": "https://www.openstreetmap.org/way/1192547934"
+  },
+  {
+   "name": null,
+   "km_from_start": 154.5,
+   "off_road_m": 18,
+   "lat": 11.92996,
+   "lon": 79.82659,
+   "osm_url": "https://www.openstreetmap.org/way/1192563114"
+  },
+  {
+   "name": null,
+   "km_from_start": 154.6,
+   "off_road_m": 21,
+   "lat": 11.93014,
+   "lon": 79.82583,
+   "osm_url": "https://www.openstreetmap.org/way/737754786"
+  },
+  {
+   "name": null,
+   "km_from_start": 154.6,
+   "off_road_m": 307,
+   "lat": 11.93261,
+   "lon": 79.82658,
+   "osm_url": "https://www.openstreetmap.org/way/1192605925"
+  },
+  {
+   "name": "Sri Arunachalam Hospital",
+   "km_from_start": 154.7,
+   "off_road_m": 35,
+   "lat": 11.93046,
+   "lon": 79.8249,
+   "osm_url": "https://www.openstreetmap.org/node/6908083755"
+  },
+  {
+   "name": "Puducherry City Hospitals Pvt Ltd.",
+   "km_from_start": 154.7,
+   "off_road_m": 773,
+   "lat": 11.93418,
+   "lon": 79.81894,
+   "osm_url": "https://www.openstreetmap.org/node/6908100811"
+  },
+  {
+   "name": null,
+   "km_from_start": 154.7,
+   "off_road_m": 1002,
+   "lat": 11.93734,
+   "lon": 79.81915,
+   "osm_url": "https://www.openstreetmap.org/way/1192524503"
+  },
+  {
+   "name": null,
+   "km_from_start": 154.7,
+   "off_road_m": 35,
+   "lat": 11.93045,
+   "lon": 79.82496,
+   "osm_url": "https://www.openstreetmap.org/way/1192558684"
+  },
+  {
+   "name": null,
+   "km_from_start": 154.7,
+   "off_road_m": 418,
+   "lat": 11.93391,
+   "lon": 79.82513,
+   "osm_url": "https://www.openstreetmap.org/way/1192582611"
+  },
+  {
+   "name": null,
+   "km_from_start": 154.9,
+   "off_road_m": 12,
+   "lat": 11.92811,
+   "lon": 79.82453,
+   "osm_url": "https://www.openstreetmap.org/way/1192472560"
+  },
+  {
+   "name": "Relax Body Spa",
+   "km_from_start": 155.0,
+   "off_road_m": 241,
+   "lat": 11.92675,
+   "lon": 79.8267,
+   "osm_url": "https://www.openstreetmap.org/node/7927783881"
+  },
+  {
+   "name": "CERTH India",
+   "km_from_start": 155.3,
+   "off_road_m": 928,
+   "lat": 11.91926,
+   "lon": 79.82999,
+   "osm_url": "https://www.openstreetmap.org/node/7232510174"
+  },
+  {
+   "name": "Sai kiruba hospital",
+   "km_from_start": 155.5,
+   "off_road_m": 492,
+   "lat": 11.92861,
+   "lon": 79.81971,
+   "osm_url": "https://www.openstreetmap.org/node/5301940217"
+  },
+  {
+   "name": "V.K.N. Hospital",
+   "km_from_start": 156.5,
+   "off_road_m": 97,
+   "lat": 11.92189,
+   "lon": 79.81559,
+   "osm_url": "https://www.openstreetmap.org/node/7629062774"
+  },
+  {
+   "name": "Madhava Hospital",
+   "km_from_start": 156.5,
+   "off_road_m": 1222,
+   "lat": 11.93085,
+   "lon": 79.81018,
+   "osm_url": "https://www.openstreetmap.org/way/568646595"
+  },
+  {
+   "name": null,
+   "km_from_start": 157.8,
+   "off_road_m": 919,
+   "lat": 11.91435,
+   "lon": 79.80189,
+   "osm_url": "https://www.openstreetmap.org/way/1192576681"
+  },
+  {
+   "name": null,
+   "km_from_start": 157.8,
+   "off_road_m": 967,
+   "lat": 11.91395,
+   "lon": 79.80126,
+   "osm_url": "https://www.openstreetmap.org/way/1193544314"
+  },
+  {
+   "name": "Asha's Speech and Hearing Clinic",
+   "km_from_start": 157.9,
+   "off_road_m": 78,
+   "lat": 11.91058,
+   "lon": 79.80869,
+   "osm_url": "https://www.openstreetmap.org/way/1192837985"
+  },
+  {
+   "name": null,
+   "km_from_start": 158.4,
+   "off_road_m": 177,
+   "lat": 11.90514,
+   "lon": 79.80909,
+   "osm_url": "https://www.openstreetmap.org/way/1192568826"
+  },
+  {
+   "name": null,
+   "km_from_start": 159.4,
+   "off_road_m": 1689,
+   "lat": 11.9071,
+   "lon": 79.79038,
+   "osm_url": "https://www.openstreetmap.org/way/765727719"
+  },
+  {
+   "name": "Aravind Eye Hospital",
+   "km_from_start": 163.5,
+   "off_road_m": 191,
+   "lat": 11.86393,
+   "lon": 79.79099,
+   "osm_url": "https://www.openstreetmap.org/way/592770878"
+  },
+  {
+   "name": "Community Health Centre",
+   "km_from_start": 167.2,
+   "off_road_m": 1872,
+   "lat": 11.8649,
+   "lon": 79.74841,
+   "osm_url": "https://www.openstreetmap.org/node/7160176976"
+  },
+  {
+   "name": "Aarupadai Veedu Medical College & Hospital",
+   "km_from_start": 170.8,
+   "off_road_m": 2245,
+   "lat": 11.83025,
+   "lon": 79.78068,
+   "osm_url": "https://www.openstreetmap.org/way/645719826"
+  },
+  {
+   "name": "Mahatma Gandhi Medical College & Research Institute MGMCRI",
+   "km_from_start": 173.5,
+   "off_road_m": 2071,
+   "lat": 11.81253,
+   "lon": 79.77904,
+   "osm_url": "https://www.openstreetmap.org/node/5250702702"
+  },
+  {
+   "name": "Neocare Maternity and Kids Hospital",
+   "km_from_start": 178.4,
+   "off_road_m": 1432,
+   "lat": 11.76707,
+   "lon": 79.74439,
+   "osm_url": "https://www.openstreetmap.org/node/5224224264"
+  },
+  {
+   "name": null,
+   "km_from_start": 225.2,
+   "off_road_m": 564,
+   "lat": 11.39763,
+   "lon": 79.69617,
+   "osm_url": "https://www.openstreetmap.org/node/5658248494"
+  },
+  {
+   "name": "Kamaraj Government Hospital",
+   "km_from_start": 225.2,
+   "off_road_m": 1011,
+   "lat": 11.39512,
+   "lon": 79.69954,
+   "osm_url": "https://www.openstreetmap.org/node/6032167267"
+  },
+  {
+   "name": "K. R. Hospital",
+   "km_from_start": 225.5,
+   "off_road_m": 167,
+   "lat": 11.39825,
+   "lon": 79.68752,
+   "osm_url": "https://www.openstreetmap.org/node/6914768026"
+  },
+  {
+   "name": "Vallampadugai Government Hospital",
+   "km_from_start": 232.9,
+   "off_road_m": 749,
+   "lat": 11.34376,
+   "lon": 79.70905,
+   "osm_url": "https://www.openstreetmap.org/node/7257346773"
+  },
+  {
+   "name": "Vishnu Multispeciality Hospital",
+   "km_from_start": 235.6,
+   "off_road_m": 975,
+   "lat": 11.32708,
+   "lon": 79.71471,
+   "osm_url": "https://www.openstreetmap.org/node/5658255865"
+  },
+  {
+   "name": "Annai maruthuvamanai",
+   "km_from_start": 238.9,
+   "off_road_m": 966,
+   "lat": 11.29329,
+   "lon": 79.71656,
+   "osm_url": "https://www.openstreetmap.org/node/5658256006"
+  },
+  {
+   "name": "Kumar Hospital",
+   "km_from_start": 245.2,
+   "off_road_m": 1232,
+   "lat": 11.23998,
+   "lon": 79.73469,
+   "osm_url": "https://www.openstreetmap.org/node/7257346761"
+  },
+  {
+   "name": "Seera Hospital",
+   "km_from_start": 246.2,
+   "off_road_m": 1518,
+   "lat": 11.23832,
+   "lon": 79.73733,
+   "osm_url": "https://www.openstreetmap.org/node/7257346764"
+  },
+  {
+   "name": "Government Hospital, Sirkazhi",
+   "km_from_start": 246.4,
+   "off_road_m": 1274,
+   "lat": 11.23535,
+   "lon": 79.7354,
+   "osm_url": "https://www.openstreetmap.org/node/7257348877"
+  },
+  {
+   "name": "Government Hospital, Tharangambadi",
+   "km_from_start": 277.8,
+   "off_road_m": 406,
+   "lat": 11.03082,
+   "lon": 79.85188,
+   "osm_url": "https://www.openstreetmap.org/node/7257155915"
+  },
+  {
+   "name": "St. Theresa Hospital",
+   "km_from_start": 277.9,
+   "off_road_m": 382,
+   "lat": 11.02523,
+   "lon": 79.85305,
+   "osm_url": "https://www.openstreetmap.org/way/379742346"
+  },
+  {
+   "name": "Poraiyar Government Hospital",
+   "km_from_start": 279.1,
+   "off_road_m": 661,
+   "lat": 11.02416,
+   "lon": 79.83812,
+   "osm_url": "https://www.openstreetmap.org/node/7257183941"
+  },
+  {
+   "name": "Sacred Heart Physiotherapy Centre",
+   "km_from_start": 289.7,
+   "off_road_m": 683,
+   "lat": 10.93157,
+   "lon": 79.83819,
+   "osm_url": "https://www.openstreetmap.org/node/7257166774"
+  },
+  {
+   "name": "Sugam Priya Hospital, Karaikal",
+   "km_from_start": 290.1,
+   "off_road_m": 589,
+   "lat": 10.92771,
+   "lon": 79.83773,
+   "osm_url": "https://www.openstreetmap.org/node/6907555259"
+  },
+  {
+   "name": "KMC Hospital",
+   "km_from_start": 291.0,
+   "off_road_m": 53,
+   "lat": 10.91963,
+   "lon": 79.83363,
+   "osm_url": "https://www.openstreetmap.org/node/7629062788"
+  },
+  {
+   "name": "St. Rock`S Cluny Hospital",
+   "km_from_start": 291.2,
+   "off_road_m": 829,
+   "lat": 10.91628,
+   "lon": 79.82586,
+   "osm_url": "https://www.openstreetmap.org/node/6907555278"
+  },
+  {
+   "name": "Government General Hospital",
+   "km_from_start": 291.7,
+   "off_road_m": 302,
+   "lat": 10.9176,
+   "lon": 79.83745,
+   "osm_url": "https://www.openstreetmap.org/way/759412263"
+  },
+  {
+   "name": "Nagore Government Hospital",
+   "km_from_start": 303.6,
+   "off_road_m": 74,
+   "lat": 10.81877,
+   "lon": 79.83858,
+   "osm_url": "https://www.openstreetmap.org/node/7257166882"
+  },
+  {
+   "name": "Herbocare Hospital",
+   "km_from_start": 307.9,
+   "off_road_m": 26,
+   "lat": 10.78103,
+   "lon": 79.84001,
+   "osm_url": "https://www.openstreetmap.org/node/7832218594"
+  },
+  {
+   "name": "RJR Hospital",
+   "km_from_start": 308.3,
+   "off_road_m": 262,
+   "lat": 10.77708,
+   "lon": 79.83825,
+   "osm_url": "https://www.openstreetmap.org/node/7832218643"
+  },
+  {
+   "name": "Chandrasekar Hospital",
+   "km_from_start": 308.5,
+   "off_road_m": 264,
+   "lat": 10.77492,
+   "lon": 79.83842,
+   "osm_url": "https://www.openstreetmap.org/node/7832218617"
+  },
+  {
+   "name": "Psk Hospital",
+   "km_from_start": 308.6,
+   "off_road_m": 19,
+   "lat": 10.7749,
+   "lon": 79.84068,
+   "osm_url": "https://www.openstreetmap.org/node/7832218581"
+  },
+  {
+   "name": "Santhra Segar Hospital",
+   "km_from_start": 308.6,
+   "off_road_m": 127,
+   "lat": 10.77467,
+   "lon": 79.8397,
+   "osm_url": "https://www.openstreetmap.org/node/7832218597"
+  },
+  {
+   "name": "Murugappan Hospital",
+   "km_from_start": 308.6,
+   "off_road_m": 65,
+   "lat": 10.77471,
+   "lon": 79.84027,
+   "osm_url": "https://www.openstreetmap.org/node/7832218611"
+  },
+  {
+   "name": "Nagapattinam Government District Head Hospital",
+   "km_from_start": 308.9,
+   "off_road_m": 316,
+   "lat": 10.77246,
+   "lon": 79.84397,
+   "osm_url": "https://www.openstreetmap.org/node/7252225750"
+  },
+  {
+   "name": "Dr.A. Ansari Hospital",
+   "km_from_start": 309.5,
+   "off_road_m": 31,
+   "lat": 10.76609,
+   "lon": 79.84073,
+   "osm_url": "https://www.openstreetmap.org/node/6928936143"
+  },
+  {
+   "name": "Sri Harini Hospital",
+   "km_from_start": 309.5,
+   "off_road_m": 95,
+   "lat": 10.76615,
+   "lon": 79.84014,
+   "osm_url": "https://www.openstreetmap.org/node/7252225722"
+  },
+  {
+   "name": "V.P.N. Eye Hospital",
+   "km_from_start": 309.6,
+   "off_road_m": 19,
+   "lat": 10.76522,
+   "lon": 79.8408,
+   "osm_url": "https://www.openstreetmap.org/node/6933989616"
+  },
+  {
+   "name": "Amk Hospital",
+   "km_from_start": 309.6,
+   "off_road_m": 49,
+   "lat": 10.76523,
+   "lon": 79.84052,
+   "osm_url": "https://www.openstreetmap.org/node/7832218621"
+  },
+  {
+   "name": "Arthur Hospital",
+   "km_from_start": 310.0,
+   "off_road_m": 212,
+   "lat": 10.76448,
+   "lon": 79.84498,
+   "osm_url": "https://www.openstreetmap.org/node/7252225725"
+  },
+  {
+   "name": "Shek Dawth Hospital",
+   "km_from_start": 310.0,
+   "off_road_m": 108,
+   "lat": 10.76559,
+   "lon": 79.8424,
+   "osm_url": "https://www.openstreetmap.org/node/7832218634"
+  },
+  {
+   "name": "Sri Venkatswara Hospital",
+   "km_from_start": 310.1,
+   "off_road_m": 382,
+   "lat": 10.76083,
+   "lon": 79.84264,
+   "osm_url": "https://www.openstreetmap.org/node/7210948172"
+  },
+  {
+   "name": "Ramanan Hospital",
+   "km_from_start": 310.1,
+   "off_road_m": 74,
+   "lat": 10.7636,
+   "lon": 79.84268,
+   "osm_url": "https://www.openstreetmap.org/node/7832218586"
+  },
+  {
+   "name": "NSS Hospital",
+   "km_from_start": 310.1,
+   "off_road_m": 57,
+   "lat": 10.76383,
+   "lon": 79.84333,
+   "osm_url": "https://www.openstreetmap.org/node/7832218654"
+  },
+  {
+   "name": "Pentagon Hospital",
+   "km_from_start": 310.3,
+   "off_road_m": 48,
+   "lat": 10.76393,
+   "lon": 79.84079,
+   "osm_url": "https://www.openstreetmap.org/node/6937308626"
+  },
+  {
+   "name": "Srivaris Hospital",
+   "km_from_start": 310.9,
+   "off_road_m": 222,
+   "lat": 10.76209,
+   "lon": 79.8399,
+   "osm_url": "https://www.openstreetmap.org/node/7832218644"
+  },
+  {
+   "name": "Park Hospital",
+   "km_from_start": 311.0,
+   "off_road_m": 327,
+   "lat": 10.76105,
+   "lon": 79.8409,
+   "osm_url": "https://www.openstreetmap.org/node/7832218618"
+  },
+  {
+   "name": "Nagai Hospital",
+   "km_from_start": 312.5,
+   "off_road_m": 20,
+   "lat": 10.75693,
+   "lon": 79.8259,
+   "osm_url": "https://www.openstreetmap.org/node/6934325859"
+  },
+  {
+   "name": "Prathabaramapuram Goverment Hospital",
+   "km_from_start": 324.7,
+   "off_road_m": 1603,
+   "lat": 10.64893,
+   "lon": 79.83741,
+   "osm_url": "https://www.openstreetmap.org/node/7252225828"
+  },
+  {
+   "name": "N.V.K Hospital",
+   "km_from_start": 350.4,
+   "off_road_m": 1401,
+   "lat": 10.53574,
+   "lon": 79.63593,
+   "osm_url": "https://www.openstreetmap.org/node/6932019884"
+  },
+  {
+   "name": "Mani multispeciality Hospital",
+   "km_from_start": 350.4,
+   "off_road_m": 878,
+   "lat": 10.5324,
+   "lon": 79.64011,
+   "osm_url": "https://www.openstreetmap.org/node/7252324557"
+  },
+  {
+   "name": "Indira Hospital",
+   "km_from_start": 350.4,
+   "off_road_m": 838,
+   "lat": 10.53222,
+   "lon": 79.64046,
+   "osm_url": "https://www.openstreetmap.org/node/7832738785"
+  },
+  {
+   "name": "Jaya Child Care Hosptial",
+   "km_from_start": 350.4,
+   "off_road_m": 1501,
+   "lat": 10.53613,
+   "lon": 79.6351,
+   "osm_url": "https://www.openstreetmap.org/node/7832738797"
+  },
+  {
+   "name": "Sarathy Hospital",
+   "km_from_start": 350.4,
+   "off_road_m": 1182,
+   "lat": 10.53643,
+   "lon": 79.63834,
+   "osm_url": "https://www.openstreetmap.org/node/7832738807"
+  },
+  {
+   "name": "Athiyaman Hospital",
+   "km_from_start": 350.4,
+   "off_road_m": 1129,
+   "lat": 10.53499,
+   "lon": 79.63829,
+   "osm_url": "https://www.openstreetmap.org/node/7832738819"
+  },
+  {
+   "name": "Jeeva Hospital",
+   "km_from_start": 350.5,
+   "off_road_m": 828,
+   "lat": 10.53163,
+   "lon": 79.64048,
+   "osm_url": "https://www.openstreetmap.org/node/7832738808"
+  },
+  {
+   "name": "Government Hospital, Tiruthuraipoondi",
+   "km_from_start": 350.6,
+   "off_road_m": 478,
+   "lat": 10.53,
+   "lon": 79.6435,
+   "osm_url": "https://www.openstreetmap.org/node/7252324524"
+  },
+  {
+   "name": "Rukmani Hospital",
+   "km_from_start": 375.2,
+   "off_road_m": 1170,
+   "lat": 10.39986,
+   "lon": 79.49907,
+   "osm_url": "https://www.openstreetmap.org/node/7832738828"
+  },
+  {
+   "name": "Dr. Ganesan Hospital",
+   "km_from_start": 376.8,
+   "off_road_m": 1069,
+   "lat": 10.39996,
+   "lon": 79.49681,
+   "osm_url": "https://www.openstreetmap.org/node/7832738778"
+  },
+  {
+   "name": "அரசு மருத்துவமனை - முத்துப்பேட்டை",
+   "km_from_start": 376.8,
+   "off_road_m": 1063,
+   "lat": 10.39967,
+   "lon": 79.4967,
+   "osm_url": "https://www.openstreetmap.org/node/12705210701"
+  },
+  {
+   "name": "Yasoda Hospital",
+   "km_from_start": 376.9,
+   "off_road_m": 914,
+   "lat": 10.39943,
+   "lon": 79.49526,
+   "osm_url": "https://www.openstreetmap.org/node/7832738783"
+  },
+  {
+   "name": "Dr. Vijayakumar Hospital",
+   "km_from_start": 376.9,
+   "off_road_m": 1157,
+   "lat": 10.39938,
+   "lon": 79.49752,
+   "osm_url": "https://www.openstreetmap.org/node/7832738787"
+  },
+  {
+   "name": "Ponmalligai Multi Speciality Hospital",
+   "km_from_start": 376.9,
+   "off_road_m": 1125,
+   "lat": 10.39876,
+   "lon": 79.4971,
+   "osm_url": "https://www.openstreetmap.org/node/7832738802"
+  },
+  {
+   "name": "Mullai Hospital",
+   "km_from_start": 380.3,
+   "off_road_m": 21,
+   "lat": 10.38747,
+   "lon": 79.46161,
+   "osm_url": "https://www.openstreetmap.org/node/7836402165"
+  },
+  {
+   "name": "Ponmalligai Hospital",
+   "km_from_start": 380.3,
+   "off_road_m": 19,
+   "lat": 10.38739,
+   "lon": 79.46141,
+   "osm_url": "https://www.openstreetmap.org/node/7836402202"
+  },
+  {
+   "name": "Balakrishnan Hospital",
+   "km_from_start": 390.3,
+   "off_road_m": 158,
+   "lat": 10.34155,
+   "lon": 79.38723,
+   "osm_url": "https://www.openstreetmap.org/node/7836402210"
+  },
+  {
+   "name": "Dr. Hanif Hospital",
+   "km_from_start": 390.6,
+   "off_road_m": 469,
+   "lat": 10.34316,
+   "lon": 79.38394,
+   "osm_url": "https://www.openstreetmap.org/node/7836402188"
+  },
+  {
+   "name": "Government Hospital",
+   "km_from_start": 390.7,
+   "off_road_m": 336,
+   "lat": 10.34169,
+   "lon": 79.38358,
+   "osm_url": "https://www.openstreetmap.org/way/609984397"
+  },
+  {
+   "name": null,
+   "km_from_start": 390.7,
+   "off_road_m": 26,
+   "lat": 10.33921,
+   "lon": 79.38488,
+   "osm_url": "https://www.openstreetmap.org/way/611953452"
+  },
+  {
+   "name": "Shifa Hospital",
+   "km_from_start": 390.8,
+   "off_road_m": 1282,
+   "lat": 10.34886,
+   "lon": 79.37871,
+   "osm_url": "https://www.openstreetmap.org/way/630276098"
+  },
+  {
+   "name": "Government Hospital",
+   "km_from_start": 406.7,
+   "off_road_m": 78,
+   "lat": 10.2491,
+   "lon": 79.27911,
+   "osm_url": "https://www.openstreetmap.org/node/7830060159"
+  },
+  {
+   "name": "Nila Hosptial",
+   "km_from_start": 407.3,
+   "off_road_m": 54,
+   "lat": 10.24496,
+   "lon": 79.27582,
+   "osm_url": "https://www.openstreetmap.org/node/7830060202"
+  },
+  {
+   "name": "Ramajayam Hospital",
+   "km_from_start": 421.1,
+   "off_road_m": 28,
+   "lat": 10.13473,
+   "lon": 79.22214,
+   "osm_url": "https://www.openstreetmap.org/node/7831252076"
+  },
+  {
+   "name": "Senpagam Hospital",
+   "km_from_start": 430.5,
+   "off_road_m": 39,
+   "lat": 10.05279,
+   "lon": 79.23119,
+   "osm_url": "https://www.openstreetmap.org/node/7831252111"
+  },
+  {
+   "name": "Manamelkudi Government Hospital",
+   "km_from_start": 432.0,
+   "off_road_m": 61,
+   "lat": 10.03899,
+   "lon": 79.23147,
+   "osm_url": "https://www.openstreetmap.org/node/7252192159"
+  },
+  {
+   "name": "Sree Vijay Hospital",
+   "km_from_start": 432.5,
+   "off_road_m": 54,
+   "lat": 10.03454,
+   "lon": 79.23058,
+   "osm_url": "https://www.openstreetmap.org/node/6934703385"
+  },
+  {
+   "name": "Government Primary Health Center",
+   "km_from_start": 435.1,
+   "off_road_m": 64,
+   "lat": 10.01194,
+   "lon": 79.22715,
+   "osm_url": "https://www.openstreetmap.org/node/13903324501"
+  },
+  {
+   "name": "Guna Nature Cure Hospital",
+   "km_from_start": 448.4,
+   "off_road_m": 248,
+   "lat": 9.92459,
+   "lon": 79.14703,
+   "osm_url": "https://www.openstreetmap.org/node/7831252056"
+  },
+  {
+   "name": "Government Hospital, Thondi",
+   "km_from_start": 474.4,
+   "off_road_m": 35,
+   "lat": 9.7441,
+   "lon": 79.01803,
+   "osm_url": "https://www.openstreetmap.org/node/7252177974"
+  },
+  {
+   "name": "Annai Hospital",
+   "km_from_start": 474.9,
+   "off_road_m": 64,
+   "lat": 9.74225,
+   "lon": 79.01361,
+   "osm_url": "https://www.openstreetmap.org/node/7839655741"
+  },
+  {
+   "name": "Thiruppalaikudi Government Hospital",
+   "km_from_start": 500.3,
+   "off_road_m": 19,
+   "lat": 9.54423,
+   "lon": 78.91227,
+   "osm_url": "https://www.openstreetmap.org/node/7252142276"
+  },
+  {
+   "name": "Government Hospital, Devipattinam",
+   "km_from_start": 509.4,
+   "off_road_m": 15,
+   "lat": 9.46852,
+   "lon": 78.8911,
+   "osm_url": "https://www.openstreetmap.org/node/7252142358"
+  },
+  {
+   "name": "Government Hospital",
+   "km_from_start": 511.0,
+   "off_road_m": 1640,
+   "lat": 9.44838,
+   "lon": 78.89599,
+   "osm_url": "https://www.openstreetmap.org/node/7840023987"
+  },
+  {
+   "name": "Jawahar Hospital",
+   "km_from_start": 520.0,
+   "off_road_m": 1939,
+   "lat": 9.37314,
+   "lon": 78.84352,
+   "osm_url": "https://www.openstreetmap.org/node/7252142357"
+  },
+  {
+   "name": "Xavier Hospitals",
+   "km_from_start": 521.6,
+   "off_road_m": 1869,
+   "lat": 9.36354,
+   "lon": 78.84953,
+   "osm_url": "https://www.openstreetmap.org/node/7252142278"
+  },
+  {
+   "name": "Ak Salma Hospital",
+   "km_from_start": 521.8,
+   "off_road_m": 1891,
+   "lat": 9.36245,
+   "lon": 78.84986,
+   "osm_url": "https://www.openstreetmap.org/node/7840023936"
+  },
+  {
+   "name": "Aasi Multi Speciality Hospital",
+   "km_from_start": 522.0,
+   "off_road_m": 1584,
+   "lat": 9.36129,
+   "lon": 78.85359,
+   "osm_url": "https://www.openstreetmap.org/node/7840023992"
+  },
+  {
+   "name": "Kumaran Hospital",
+   "km_from_start": 540.4,
+   "off_road_m": 24,
+   "lat": 9.31073,
+   "lon": 79.01464,
+   "osm_url": "https://www.openstreetmap.org/node/7839794259"
+  },
+  {
+   "name": "Mandapam Camp Government Hospital",
+   "km_from_start": 554.9,
+   "off_road_m": 715,
+   "lat": 9.27473,
+   "lon": 79.13672,
+   "osm_url": "https://www.openstreetmap.org/node/7252142266"
+  },
+  {
+   "name": "Xavier Hospital",
+   "km_from_start": 564.0,
+   "off_road_m": 28,
+   "lat": 9.28463,
+   "lon": 79.21722,
+   "osm_url": "https://www.openstreetmap.org/node/7839794281"
+  },
+  {
+   "name": "Manikandan Hospital",
+   "km_from_start": 567.5,
+   "off_road_m": 5,
+   "lat": 9.28495,
+   "lon": 79.24862,
+   "osm_url": "https://www.openstreetmap.org/node/7839794282"
+  },
+  {
+   "name": "Goverment Hospital",
+   "km_from_start": 568.2,
+   "off_road_m": 12,
+   "lat": 9.28477,
+   "lon": 79.25514,
+   "osm_url": "https://www.openstreetmap.org/node/5144758421"
+  },
+  {
+   "name": "Government Malaria Hospital",
+   "km_from_start": 574.4,
+   "off_road_m": 5,
+   "lat": 9.28719,
+   "lon": 79.31041,
+   "osm_url": "https://www.openstreetmap.org/node/7839794291"
+  },
+  {
+   "name": "Aravind Eye Hospital",
+   "km_from_start": 574.7,
+   "off_road_m": 145,
+   "lat": 9.28757,
+   "lon": 79.31425,
+   "osm_url": "https://www.openstreetmap.org/node/7839794257"
+  },
+  {
+   "name": "Government Hospital, Rameswaram",
+   "km_from_start": 575.4,
+   "off_road_m": 25,
+   "lat": 9.28277,
+   "lon": 79.31217,
+   "osm_url": "https://www.openstreetmap.org/way/777208893"
+  }
+ ],
+ "police": [
+  {
+   "name": "C2 Elephant Gate Police Station",
+   "km_from_start": 0.4,
+   "off_road_m": 1046,
+   "lat": 13.09263,
+   "lon": 80.27501,
+   "osm_url": "https://www.openstreetmap.org/way/1105971900"
+  },
+  {
+   "name": "Periamet PS",
+   "km_from_start": 0.5,
+   "off_road_m": 14,
+   "lat": 13.08311,
+   "lon": 80.27091,
+   "osm_url": "https://www.openstreetmap.org/way/211435479"
+  },
+  {
+   "name": "Police Assistance Booth",
+   "km_from_start": 0.7,
+   "off_road_m": 1243,
+   "lat": 13.06993,
+   "lon": 80.27142,
+   "osm_url": "https://www.openstreetmap.org/node/5079397364"
+  },
+  {
+   "name": "F2 Egmore Police Station",
+   "km_from_start": 0.7,
+   "off_road_m": 1679,
+   "lat": 13.07507,
+   "lon": 80.25701,
+   "osm_url": "https://www.openstreetmap.org/way/241027985"
+  },
+  {
+   "name": "Office of the Deputy Commissioner of Police, Pudupet",
+   "km_from_start": 0.7,
+   "off_road_m": 1705,
+   "lat": 13.06864,
+   "lon": 80.26206,
+   "osm_url": "https://www.openstreetmap.org/way/1107911282"
+  },
+  {
+   "name": "Chintadripet",
+   "km_from_start": 0.8,
+   "off_road_m": 700,
+   "lat": 13.07491,
+   "lon": 80.2725,
+   "osm_url": "https://www.openstreetmap.org/node/966556101"
+  },
+  {
+   "name": "Chennai Central RPF",
+   "km_from_start": 1.0,
+   "off_road_m": 188,
+   "lat": 13.08306,
+   "lon": 80.2733,
+   "osm_url": "https://www.openstreetmap.org/node/320968578"
+  },
+  {
+   "name": "Central Station PS",
+   "km_from_start": 1.2,
+   "off_road_m": 23,
+   "lat": 13.08183,
+   "lon": 80.27551,
+   "osm_url": "https://www.openstreetmap.org/node/320968223"
+  },
+  {
+   "name": "Esplanade PS",
+   "km_from_start": 1.9,
+   "off_road_m": 605,
+   "lat": 13.08647,
+   "lon": 80.28537,
+   "osm_url": "https://www.openstreetmap.org/way/217637688"
+  },
+  {
+   "name": "B1 North Beach Police Station",
+   "km_from_start": 1.9,
+   "off_road_m": 1267,
+   "lat": 13.08992,
+   "lon": 80.29046,
+   "osm_url": "https://www.openstreetmap.org/way/1076586613"
+  },
+  {
+   "name": "C3 Seven Wells Police Station",
+   "km_from_start": 1.9,
+   "off_road_m": 1836,
+   "lat": 13.09889,
+   "lon": 80.28169,
+   "osm_url": "https://www.openstreetmap.org/way/1089835073"
+  },
+  {
+   "name": "C5 Kothavalchavadi Police Station",
+   "km_from_start": 1.9,
+   "off_road_m": 1359,
+   "lat": 13.09403,
+   "lon": 80.28546,
+   "osm_url": "https://www.openstreetmap.org/way/1089863482"
+  },
+  {
+   "name": "C1 Flower Bazaar Police Station",
+   "km_from_start": 1.9,
+   "off_road_m": 670,
+   "lat": 13.08841,
+   "lon": 80.2817,
+   "osm_url": "https://www.openstreetmap.org/way/1090653955"
+  },
+  {
+   "name": "C1 Flower Bazaar Police Booth",
+   "km_from_start": 1.9,
+   "off_road_m": 671,
+   "lat": 13.08837,
+   "lon": 80.28239,
+   "osm_url": "https://www.openstreetmap.org/way/1090653956"
+  },
+  {
+   "name": "B1 North Beach Police Station",
+   "km_from_start": 1.9,
+   "off_road_m": 1908,
+   "lat": 13.09662,
+   "lon": 80.29151,
+   "osm_url": "https://www.openstreetmap.org/way/1116154383"
+  },
+  {
+   "name": "C5 Kothavalchavadi Police Station",
+   "km_from_start": 1.9,
+   "off_road_m": 1445,
+   "lat": 13.09534,
+   "lon": 80.28072,
+   "osm_url": "https://www.openstreetmap.org/way/1176848837"
+  },
+  {
+   "name": "Indian Army DB AREA",
+   "km_from_start": 2.4,
+   "off_road_m": 580,
+   "lat": 13.07574,
+   "lon": 80.27759,
+   "osm_url": "https://www.openstreetmap.org/node/7060026186"
+  },
+  {
+   "name": "D1 Triplicane Police Station",
+   "km_from_start": 4.1,
+   "off_road_m": 1132,
+   "lat": 13.06725,
+   "lon": 80.27365,
+   "osm_url": "https://www.openstreetmap.org/way/217960575"
+  },
+  {
+   "name": null,
+   "km_from_start": 4.9,
+   "off_road_m": 1249,
+   "lat": 13.05905,
+   "lon": 80.27066,
+   "osm_url": "https://www.openstreetmap.org/way/211864592"
+  },
+  {
+   "name": "D5 Marina Police Station",
+   "km_from_start": 7.0,
+   "off_road_m": 17,
+   "lat": 13.03915,
+   "lon": 80.27932,
+   "osm_url": "https://www.openstreetmap.org/way/1112851437"
+  },
+  {
+   "name": null,
+   "km_from_start": 7.9,
+   "off_road_m": 1133,
+   "lat": 13.03694,
+   "lon": 80.26742,
+   "osm_url": "https://www.openstreetmap.org/node/416412274"
+  },
+  {
+   "name": "Railway Police",
+   "km_from_start": 7.9,
+   "off_road_m": 1183,
+   "lat": 13.03414,
+   "lon": 80.26644,
+   "osm_url": "https://www.openstreetmap.org/node/6780251054"
+  },
+  {
+   "name": "Mylapore E1 PS",
+   "km_from_start": 7.9,
+   "off_road_m": 821,
+   "lat": 13.03599,
+   "lon": 80.27014,
+   "osm_url": "https://www.openstreetmap.org/way/208569725"
+  },
+  {
+   "name": "E5 Foreshore Estate Police Station",
+   "km_from_start": 9.0,
+   "off_road_m": 36,
+   "lat": 13.02456,
+   "lon": 80.27482,
+   "osm_url": "https://www.openstreetmap.org/way/354469200"
+  },
+  {
+   "name": "Tamil Nadu Police Computer Communication Centre",
+   "km_from_start": 9.4,
+   "off_road_m": 43,
+   "lat": 13.02251,
+   "lon": 80.27139,
+   "osm_url": "https://www.openstreetmap.org/way/1131693908"
+  },
+  {
+   "name": "Tamil Nadu State Crime Records Bureau",
+   "km_from_start": 9.4,
+   "off_road_m": 52,
+   "lat": 13.02281,
+   "lon": 80.27163,
+   "osm_url": "https://www.openstreetmap.org/way/1131693910"
+  },
+  {
+   "name": "Abhiramapuram",
+   "km_from_start": 10.7,
+   "off_road_m": 1721,
+   "lat": 13.03326,
+   "lon": 80.25597,
+   "osm_url": "https://www.openstreetmap.org/way/241007895"
+  },
+  {
+   "name": "Shastri Nagar Police Station",
+   "km_from_start": 12.0,
+   "off_road_m": 1094,
+   "lat": 13.00061,
+   "lon": 80.26593,
+   "osm_url": "https://www.openstreetmap.org/node/1711627907"
+  },
+  {
+   "name": "Elliots Beach Police Outpost",
+   "km_from_start": 12.0,
+   "off_road_m": 1563,
+   "lat": 13.00071,
+   "lon": 80.27122,
+   "osm_url": "https://www.openstreetmap.org/way/1132145713"
+  },
+  {
+   "name": "Adyar J2",
+   "km_from_start": 14.4,
+   "off_road_m": 714,
+   "lat": 12.99781,
+   "lon": 80.25572,
+   "osm_url": "https://www.openstreetmap.org/node/312025133"
+  },
+  {
+   "name": "J6 Police Station",
+   "km_from_start": 15.8,
+   "off_road_m": 21,
+   "lat": 12.98746,
+   "lon": 80.25593,
+   "osm_url": "https://www.openstreetmap.org/node/2587520257"
+  },
+  {
+   "name": "Police Booth",
+   "km_from_start": 16.3,
+   "off_road_m": 1080,
+   "lat": 12.99319,
+   "lon": 80.26749,
+   "osm_url": "https://www.openstreetmap.org/node/6854765885"
+  },
+  {
+   "name": null,
+   "km_from_start": 16.5,
+   "off_road_m": 160,
+   "lat": 12.98459,
+   "lon": 80.26115,
+   "osm_url": "https://www.openstreetmap.org/way/677255714"
+  },
+  {
+   "name": "J9 Police Station",
+   "km_from_start": 20.9,
+   "off_road_m": 1346,
+   "lat": 12.94761,
+   "lon": 80.24163,
+   "osm_url": "https://www.openstreetmap.org/node/2061123092"
+  },
+  {
+   "name": "Thalambur Police Station",
+   "km_from_start": 32.1,
+   "off_road_m": 1484,
+   "lat": 12.8469,
+   "lon": 80.22718,
+   "osm_url": "https://www.openstreetmap.org/node/4450010503"
+  },
+  {
+   "name": "Traffic Police Station",
+   "km_from_start": 58.5,
+   "off_road_m": 127,
+   "lat": 12.62127,
+   "lon": 80.19555,
+   "osm_url": "https://www.openstreetmap.org/node/2154131305"
+  },
+  {
+   "name": "Police",
+   "km_from_start": 58.5,
+   "off_road_m": 5,
+   "lat": 12.62149,
+   "lon": 80.19427,
+   "osm_url": "https://www.openstreetmap.org/node/2375997491"
+  },
+  {
+   "name": "Kalpakkam Police Station",
+   "km_from_start": 75.8,
+   "off_road_m": 700,
+   "lat": 12.50377,
+   "lon": 80.15337,
+   "osm_url": "https://www.openstreetmap.org/node/353073504"
+  },
+  {
+   "name": "CISF barracks",
+   "km_from_start": 76.1,
+   "off_road_m": 1745,
+   "lat": 12.49043,
+   "lon": 80.15857,
+   "osm_url": "https://www.openstreetmap.org/node/4857137121"
+  },
+  {
+   "name": "B2 Kalapet PS",
+   "km_from_start": 141.7,
+   "off_road_m": 23,
+   "lat": 12.03122,
+   "lon": 79.864,
+   "osm_url": "https://www.openstreetmap.org/node/9121736851"
+  },
+  {
+   "name": "Prohibition Check Post",
+   "km_from_start": 147.5,
+   "off_road_m": 5,
+   "lat": 11.98271,
+   "lon": 79.84509,
+   "osm_url": "https://www.openstreetmap.org/node/5601012628"
+  },
+  {
+   "name": "Police booth",
+   "km_from_start": 152.6,
+   "off_road_m": 1257,
+   "lat": 11.94896,
+   "lon": 79.8232,
+   "osm_url": "https://www.openstreetmap.org/node/6072445930"
+  },
+  {
+   "name": "Police Booth",
+   "km_from_start": 153.2,
+   "off_road_m": 353,
+   "lat": 11.9365,
+   "lon": 79.83463,
+   "osm_url": "https://www.openstreetmap.org/node/5267976498"
+  },
+  {
+   "name": "All-Women's Police Station",
+   "km_from_start": 153.4,
+   "off_road_m": 146,
+   "lat": 11.93562,
+   "lon": 79.83254,
+   "osm_url": "https://www.openstreetmap.org/node/2153338931"
+  },
+  {
+   "name": "East Traffic Police Station",
+   "km_from_start": 153.4,
+   "off_road_m": 151,
+   "lat": 11.93565,
+   "lon": 79.8326,
+   "osm_url": "https://www.openstreetmap.org/node/12039713946"
+  },
+  {
+   "name": "Office Of The Deputy Inspector General Of Police",
+   "km_from_start": 153.8,
+   "off_road_m": 542,
+   "lat": 11.93081,
+   "lon": 79.83537,
+   "osm_url": "https://www.openstreetmap.org/way/332105886"
+  },
+  {
+   "name": "Beach Police Booth",
+   "km_from_start": 154.1,
+   "off_road_m": 588,
+   "lat": 11.92541,
+   "lon": 79.83387,
+   "osm_url": "https://www.openstreetmap.org/node/3419126289"
+  },
+  {
+   "name": "Odiensalai Police Station",
+   "km_from_start": 154.7,
+   "off_road_m": 74,
+   "lat": 11.9301,
+   "lon": 79.82406,
+   "osm_url": "https://www.openstreetmap.org/node/3514125525"
+  },
+  {
+   "name": "Crime Branch CID",
+   "km_from_start": 154.7,
+   "off_road_m": 1084,
+   "lat": 11.93495,
+   "lon": 79.81605,
+   "osm_url": "https://www.openstreetmap.org/node/5614785849"
+  },
+  {
+   "name": "Anti Human Trafficking",
+   "km_from_start": 154.7,
+   "off_road_m": 1083,
+   "lat": 11.9349,
+   "lon": 79.81604,
+   "osm_url": "https://www.openstreetmap.org/node/5614785851"
+  },
+  {
+   "name": "Orleanpet Police station",
+   "km_from_start": 154.7,
+   "off_road_m": 753,
+   "lat": 11.93121,
+   "lon": 79.8179,
+   "osm_url": "https://www.openstreetmap.org/way/577617421"
+  },
+  {
+   "name": "Mudaliyarpet E3 police station",
+   "km_from_start": 156.5,
+   "off_road_m": 81,
+   "lat": 11.92175,
+   "lon": 79.81554,
+   "osm_url": "https://www.openstreetmap.org/way/544347153"
+  },
+  {
+   "name": null,
+   "km_from_start": 160.2,
+   "off_road_m": 40,
+   "lat": 11.89138,
+   "lon": 79.80227,
+   "osm_url": "https://www.openstreetmap.org/node/12187054150"
+  },
+  {
+   "name": null,
+   "km_from_start": 225.2,
+   "off_road_m": 168,
+   "lat": 11.39763,
+   "lon": 79.69113,
+   "osm_url": "https://www.openstreetmap.org/node/3197680841"
+  },
+  {
+   "name": "Police Dept. Head Office",
+   "km_from_start": 291.1,
+   "off_road_m": 253,
+   "lat": 10.91825,
+   "lon": 79.83562,
+   "osm_url": "https://www.openstreetmap.org/node/2019360496"
+  },
+  {
+   "name": "Muthupet Police Station",
+   "km_from_start": 376.8,
+   "off_road_m": 1095,
+   "lat": 10.3996,
+   "lon": 79.49698,
+   "osm_url": "https://www.openstreetmap.org/node/12705216101"
+  },
+  {
+   "name": null,
+   "km_from_start": 380.5,
+   "off_road_m": 5,
+   "lat": 10.38678,
+   "lon": 79.46018,
+   "osm_url": "https://www.openstreetmap.org/node/12705216901"
+  },
+  {
+   "name": "Adirampattinam Police Station",
+   "km_from_start": 390.5,
+   "off_road_m": 119,
+   "lat": 10.34041,
+   "lon": 79.38553,
+   "osm_url": "https://www.openstreetmap.org/node/1988390146"
+  },
+  {
+   "name": "G3",
+   "km_from_start": 390.5,
+   "off_road_m": 142,
+   "lat": 10.34062,
+   "lon": 79.38548,
+   "osm_url": "https://www.openstreetmap.org/node/5893838815"
+  },
+  {
+   "name": "Temple Police Station",
+   "km_from_start": 574.3,
+   "off_road_m": 7,
+   "lat": 9.2871,
+   "lon": 79.30988,
+   "osm_url": "https://www.openstreetmap.org/node/7199661754"
+  },
+  {
+   "name": "Temple police station",
+   "km_from_start": 574.7,
+   "off_road_m": 646,
+   "lat": 9.28932,
+   "lon": 79.31853,
+   "osm_url": "https://www.openstreetmap.org/node/4471710291"
+  }
+ ]
+}

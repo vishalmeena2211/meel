@@ -1,0 +1,55 @@
+{
+ "fetched": "2026-10-06",
+ "hospitals": [
+  {
+   "name": "Old Kargil District Hospital",
+   "km_from_start": 0.0,
+   "off_road_m": 36,
+   "lat": 34.55934,
+   "lon": 76.12469,
+   "osm_url": "https://www.openstreetmap.org/way/1412272096"
+  },
+  {
+   "name": "Army hospital",
+   "km_from_start": 1.8,
+   "off_road_m": 280,
+   "lat": 34.55406,
+   "lon": 76.13181,
+   "osm_url": "https://www.openstreetmap.org/node/12465668386"
+  },
+  {
+   "name": "Qamar Ali Akhoon Memorial Hospital Kargil",
+   "km_from_start": 5.3,
+   "off_road_m": 690,
+   "lat": 34.52114,
+   "lon": 76.14043,
+   "osm_url": "https://www.openstreetmap.org/way/1334492669"
+  },
+  {
+   "name": "Community Health Center Padum",
+   "km_from_start": 231.2,
+   "off_road_m": 73,
+   "lat": 33.47032,
+   "lon": 76.87716,
+   "osm_url": "https://www.openstreetmap.org/way/1116132420"
+  }
+ ],
+ "police": [
+  {
+   "name": null,
+   "km_from_start": 0.2,
+   "off_road_m": 129,
+   "lat": 34.55919,
+   "lon": 76.12723,
+   "osm_url": "https://www.openstreetmap.org/node/12465668643"
+  },
+  {
+   "name": "Ladakh Police Check Post",
+   "km_from_start": 185.4,
+   "off_road_m": 14,
+   "lat": 33.71474,
+   "lon": 76.52652,
+   "osm_url": "https://www.openstreetmap.org/node/14191139301"
+  }
+ ]
+}

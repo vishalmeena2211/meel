@@ -2,9 +2,11 @@ import Image from "next/image";
 import Link from "next/link";
 import type { ReactNode } from "react";
 
-import { hostOf, hours as sayHours, km, monthName, plural, sayDate } from "@/lib/format";
+import type { FactView } from "@/lib/fact-view";
+import { daysBetween, hostOf, hours as sayHours, km, monthName, plural, sayAge, sayDate, sayMoment } from "@/lib/format";
 import { REPORTS_NEEDED } from "@/lib/sections";
 import type { LegHours, NetworkReport, SeasonYear, Video } from "@/lib/types";
+import { readableHost, type AlertsRead, type ClosuresRead, type OfficeRead, type WeatherRead } from "@/server/live";
 import type { RouteView } from "@/server/route-view";
 
 import { IconAlert, IconDown, IconExternal, IconFuel, IconPlay, IconPlus } from "../icons";
@@ -13,6 +15,7 @@ import { TripCardView } from "../trips/trip-card";
 import { Badge, Callout, Empty, SectionHeading, SourceLine } from "../ui";
 import { GapStrip } from "./drawings";
 import { FactRow } from "./fact-row";
+import { OfficialAlerts, PassWeather, PwdClosures } from "./live-parts";
 
 const GRID = "grid gap-2 lg:grid-cols-2";
 
@@ -76,8 +79,34 @@ function openingPattern(history: SeasonYear[]): { from: string; to: string; year
   return { from: say(first), to: say(last), years: days.length };
 }
 
-export function OpenSection({ view }: { view: RouteView }) {
+/** What "Is it open?" reads for itself each hour. Each part is null where the route has nothing to read. */
+export interface OpenLive {
+  alerts: AlertsRead | null;
+  /** Keyed by the host each reader speaks for. */
+  offices: Record<string, OfficeRead>;
+  closures: ClosuresRead | null;
+  weather: WeatherRead | null;
+}
+
+/** An office whose own date Meel reads: the row says that date, and when it was read. */
+export function liveOffice(view: FactView, read: OfficeRead | undefined, now: Date) {
+  if (!read) return { view, mark: undefined };
+  const days = Math.max(0, daysBetween(read.dated, now));
+  return {
+    view: { ...view, aside: null, line: `${read.said} · read ${sayMoment(read.read)}`, rowLink: read.link ?? view.rowLink },
+    mark: { words: `Dated ${sayAge(days)}`, tone: days > 30 ? ("stale" as const) : ("plain" as const) },
+  };
+}
+
+export function OpenSection({ view, live }: { view: RouteView; live?: OpenLive }) {
   const { route, views } = view;
+  const now = new Date();
+  const offices = views.open.map((v, i) => {
+    const a = route.authorities[i];
+    const host = a ? readableHost(a) : null;
+    return liveOffice(v, host ? live?.offices[host] : undefined, now);
+  });
+  const above = Boolean(live?.alerts || live?.closures);
   const history = route.season.history;
   const events = happenings(history);
   const newest = events[0];
@@ -103,17 +132,27 @@ export function OpenSection({ view }: { view: RouteView }) {
         </>
       ) : (
         <Callout tone="info" title="We do not say open or closed">
-          Conditions change by the hour. These are the offices that decide, and where each one announces it.
+          {live?.alerts
+            ? "Conditions change by the hour. Below are official alerts in force, and the offices that decide."
+            : "Conditions change by the hour. These are the offices that decide, and where each one announces it."}
         </Callout>
       )}
 
-      {views.open.length > 0 ? (
-        <ShowMore first={4} noun="offices" className={GRID}>
-          {views.open.map((v) => (
-            <FactRow key={v.slug} view={v} />
-          ))}
-        </ShowMore>
+      {live?.alerts ? <OfficialAlerts read={live.alerts} /> : null}
+      {live?.closures ? <PwdClosures read={live.closures} /> : null}
+
+      {offices.length > 0 ? (
+        <div className="flex flex-col gap-2">
+          {above ? <SectionHeading title="Who decides" /> : null}
+          <ShowMore first={4} noun="offices" className={GRID}>
+            {offices.map(({ view: v, mark }) => (
+              <FactRow key={v.slug} view={v} mark={mark} />
+            ))}
+          </ShowMore>
+        </div>
       ) : null}
+
+      {live?.weather ? <PassWeather read={live.weather} /> : null}
 
       <div className="flex flex-col gap-2">
         <SectionHeading title="Riders’ sightings" aside="Not official" />

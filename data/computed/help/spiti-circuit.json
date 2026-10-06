@@ -1,0 +1,439 @@
+{
+ "fetched": "2026-10-06",
+ "hospitals": [
+  {
+   "name": "Ripon Hospital",
+   "km_from_start": 0.1,
+   "off_road_m": 9,
+   "lat": 31.10357,
+   "lon": 77.17165,
+   "osm_url": "https://www.openstreetmap.org/node/1838479423"
+  },
+  {
+   "name": "Neuro Centre, Shimla",
+   "km_from_start": 0.2,
+   "off_road_m": 1456,
+   "lat": 31.09004,
+   "lon": 77.17112,
+   "osm_url": "https://www.openstreetmap.org/node/7012808159"
+  },
+  {
+   "name": "Lady Readings Hospital",
+   "km_from_start": 0.2,
+   "off_road_m": 813,
+   "lat": 31.09638,
+   "lon": 77.17498,
+   "osm_url": "https://www.openstreetmap.org/node/7642218112"
+  },
+  {
+   "name": "Kamla Nehru State Hospital For Mother & Child",
+   "km_from_start": 0.2,
+   "off_road_m": 813,
+   "lat": 31.09661,
+   "lon": 77.17557,
+   "osm_url": "https://www.openstreetmap.org/way/685690054"
+  },
+  {
+   "name": "Deen Dayal Upadhyaya Zonal Hospital",
+   "km_from_start": 0.3,
+   "off_road_m": 7,
+   "lat": 31.10349,
+   "lon": 77.17102,
+   "osm_url": "https://www.openstreetmap.org/node/6990555871"
+  },
+  {
+   "name": "Shimla Sanitarium and Hospital",
+   "km_from_start": 1.0,
+   "off_road_m": 777,
+   "lat": 31.10309,
+   "lon": 77.15591,
+   "osm_url": "https://www.openstreetmap.org/node/1012079617"
+  },
+  {
+   "name": "Tara Devi Hospital",
+   "km_from_start": 2.8,
+   "off_road_m": 116,
+   "lat": 31.10493,
+   "lon": 77.17582,
+   "osm_url": "https://www.openstreetmap.org/node/3040803166"
+  },
+  {
+   "name": "Dr.Jatinder Eye Hospital",
+   "km_from_start": 2.8,
+   "off_road_m": 195,
+   "lat": 31.10408,
+   "lon": 77.17528,
+   "osm_url": "https://www.openstreetmap.org/node/6993496872"
+  },
+  {
+   "name": "Indus Hospital",
+   "km_from_start": 4.2,
+   "off_road_m": 933,
+   "lat": 31.09652,
+   "lon": 77.18651,
+   "osm_url": "https://www.openstreetmap.org/node/3041370734"
+  },
+  {
+   "name": "Tender Care Hopsital",
+   "km_from_start": 4.3,
+   "off_road_m": 65,
+   "lat": 31.10567,
+   "lon": 77.18674,
+   "osm_url": "https://www.openstreetmap.org/node/3047109141"
+  },
+  {
+   "name": "Military Hospital",
+   "km_from_start": 4.6,
+   "off_road_m": 91,
+   "lat": 31.10795,
+   "lon": 77.18816,
+   "osm_url": "https://www.openstreetmap.org/node/3042942001"
+  },
+  {
+   "name": null,
+   "km_from_start": 4.6,
+   "off_road_m": 151,
+   "lat": 31.10851,
+   "lon": 77.18824,
+   "osm_url": "https://www.openstreetmap.org/way/685789336"
+  },
+  {
+   "name": "JNS Eye Centre",
+   "km_from_start": 5.3,
+   "off_road_m": 58,
+   "lat": 31.10455,
+   "lon": 77.19265,
+   "osm_url": "https://www.openstreetmap.org/node/6988130909"
+  },
+  {
+   "name": "Simla Hospital",
+   "km_from_start": 5.6,
+   "off_road_m": 27,
+   "lat": 31.10386,
+   "lon": 77.19596,
+   "osm_url": "https://www.openstreetmap.org/node/7642218140"
+  },
+  {
+   "name": "Tibetan Hospital",
+   "km_from_start": 6.3,
+   "off_road_m": 174,
+   "lat": 31.10494,
+   "lon": 77.20084,
+   "osm_url": "https://www.openstreetmap.org/node/3043607760"
+  },
+  {
+   "name": "Ayurvedic Hospital",
+   "km_from_start": 7.2,
+   "off_road_m": 23,
+   "lat": 31.10731,
+   "lon": 77.21002,
+   "osm_url": "https://www.openstreetmap.org/node/7642218152"
+  },
+  {
+   "name": "Government Hospital, Mashobra",
+   "km_from_start": 9.7,
+   "off_road_m": 1336,
+   "lat": 31.13078,
+   "lon": 77.22676,
+   "osm_url": "https://www.openstreetmap.org/node/7013038789"
+  },
+  {
+   "name": "Civil Hospital, Theog",
+   "km_from_start": 28.0,
+   "off_road_m": 34,
+   "lat": 31.12622,
+   "lon": 77.35242,
+   "osm_url": "https://www.openstreetmap.org/node/6993542869"
+  },
+  {
+   "name": "Civil Hospital, Kotgarh",
+   "km_from_start": 73.3,
+   "off_road_m": 1213,
+   "lat": 31.31053,
+   "lon": 77.47694,
+   "osm_url": "https://www.openstreetmap.org/node/6988114971"
+  },
+  {
+   "name": "Primary Health Centre, Rampur",
+   "km_from_start": 122.0,
+   "off_road_m": 11,
+   "lat": 31.44814,
+   "lon": 77.62956,
+   "osm_url": "https://www.openstreetmap.org/node/7010670228"
+  },
+  {
+   "name": "Dr. B K Arora Hospital",
+   "km_from_start": 124.4,
+   "off_road_m": 1,
+   "lat": 31.45327,
+   "lon": 77.65165,
+   "osm_url": "https://www.openstreetmap.org/node/7642218122"
+  },
+  {
+   "name": "Shrikhand Hospital",
+   "km_from_start": 126.2,
+   "off_road_m": 21,
+   "lat": 31.45881,
+   "lon": 77.66735,
+   "osm_url": "https://www.openstreetmap.org/node/7642218100"
+  },
+  {
+   "name": "Leelawati Nursing Home",
+   "km_from_start": 126.6,
+   "off_road_m": 16,
+   "lat": 31.46038,
+   "lon": 77.67021,
+   "osm_url": "https://www.openstreetmap.org/node/7642218136"
+  },
+  {
+   "name": null,
+   "km_from_start": 218.9,
+   "off_road_m": 88,
+   "lat": 31.53943,
+   "lon": 78.27143,
+   "osm_url": "https://www.openstreetmap.org/node/4780416526"
+  },
+  {
+   "name": "District Ayurvedic Hospital, Reckong Peo",
+   "km_from_start": 219.0,
+   "off_road_m": 377,
+   "lat": 31.53915,
+   "lon": 78.26784,
+   "osm_url": "https://www.openstreetmap.org/node/7012998941"
+  },
+  {
+   "name": "Sushil Clinic",
+   "km_from_start": 219.0,
+   "off_road_m": 69,
+   "lat": 31.54071,
+   "lon": 78.27052,
+   "osm_url": "https://www.openstreetmap.org/node/7637726881"
+  },
+  {
+   "name": "Reckong Peo Regional Hospital",
+   "km_from_start": 219.1,
+   "off_road_m": 422,
+   "lat": 31.53941,
+   "lon": 78.26704,
+   "osm_url": "https://www.openstreetmap.org/node/6990600592"
+  },
+  {
+   "name": "Ribba Government Hospital",
+   "km_from_start": 240.0,
+   "off_road_m": 0,
+   "lat": 31.58024,
+   "lon": 78.38002,
+   "osm_url": "https://www.openstreetmap.org/node/5907443727"
+  },
+  {
+   "name": "Hospital, Jangi",
+   "km_from_start": 250.3,
+   "off_road_m": 724,
+   "lat": 31.61144,
+   "lon": 78.42839,
+   "osm_url": "https://www.openstreetmap.org/node/7165506463"
+  },
+  {
+   "name": "Government Hospital, Chango",
+   "km_from_start": 339.3,
+   "off_road_m": 718,
+   "lat": 31.97225,
+   "lon": 78.59826,
+   "osm_url": "https://www.openstreetmap.org/node/7165541980"
+  },
+  {
+   "name": "Primary Health Centre",
+   "km_from_start": 384.5,
+   "off_road_m": 53,
+   "lat": 32.09302,
+   "lon": 78.38485,
+   "osm_url": "https://www.openstreetmap.org/way/454898753"
+  },
+  {
+   "name": "Civil Hospital",
+   "km_from_start": 433.3,
+   "off_road_m": 36,
+   "lat": 32.22913,
+   "lon": 78.06772,
+   "osm_url": "https://www.openstreetmap.org/node/7637784308"
+  },
+  {
+   "name": null,
+   "km_from_start": 449.7,
+   "off_road_m": 280,
+   "lat": 32.33162,
+   "lon": 78.00758,
+   "osm_url": "https://www.openstreetmap.org/node/3155760193"
+  },
+  {
+   "name": "Civil Hospital, Manali",
+   "km_from_start": 615.1,
+   "off_road_m": 507,
+   "lat": 32.23876,
+   "lon": 77.18777,
+   "osm_url": "https://www.openstreetmap.org/node/3042955724"
+  },
+  {
+   "name": "Manu Diagnostic Centre and Hospital",
+   "km_from_start": 615.2,
+   "off_road_m": 168,
+   "lat": 32.24184,
+   "lon": 77.18779,
+   "osm_url": "https://www.openstreetmap.org/node/7642218118"
+  },
+  {
+   "name": "Mission Hospital",
+   "km_from_start": 615.4,
+   "off_road_m": 56,
+   "lat": 32.24499,
+   "lon": 77.18862,
+   "osm_url": "https://www.openstreetmap.org/node/3041244957"
+  },
+  {
+   "name": "Dr Behl's Hospital",
+   "km_from_start": 615.4,
+   "off_road_m": 116,
+   "lat": 32.24533,
+   "lon": 77.18931,
+   "osm_url": "https://www.openstreetmap.org/node/3042985801"
+  },
+  {
+   "name": "Lady Willingdon Hospital",
+   "km_from_start": 615.4,
+   "off_road_m": 47,
+   "lat": 32.245,
+   "lon": 77.18853,
+   "osm_url": "https://www.openstreetmap.org/way/900573232"
+  },
+  {
+   "name": "Civil Hospital, Manali",
+   "km_from_start": 615.5,
+   "off_road_m": 144,
+   "lat": 32.24589,
+   "lon": 77.18597,
+   "osm_url": "https://www.openstreetmap.org/node/7007287760"
+  }
+ ],
+ "police": [
+  {
+   "name": "Sadar Solan Police Station",
+   "km_from_start": 0.2,
+   "off_road_m": 311,
+   "lat": 31.10252,
+   "lon": 77.17488,
+   "osm_url": "https://www.openstreetmap.org/node/2852707512"
+  },
+  {
+   "name": null,
+   "km_from_start": 0.2,
+   "off_road_m": 670,
+   "lat": 31.09852,
+   "lon": 77.17623,
+   "osm_url": "https://www.openstreetmap.org/node/12857643030"
+  },
+  {
+   "name": "Police Lines",
+   "km_from_start": 1.6,
+   "off_road_m": 107,
+   "lat": 31.10908,
+   "lon": 77.16379,
+   "osm_url": "https://www.openstreetmap.org/node/1012172559"
+  },
+  {
+   "name": "Thana Sadar",
+   "km_from_start": 2.8,
+   "off_road_m": 267,
+   "lat": 31.10344,
+   "lon": 77.17487,
+   "osm_url": "https://www.openstreetmap.org/node/1838482138"
+  },
+  {
+   "name": "Police Line Bharari",
+   "km_from_start": 3.4,
+   "off_road_m": 1551,
+   "lat": 31.12192,
+   "lon": 77.17769,
+   "osm_url": "https://www.openstreetmap.org/way/531937029"
+  },
+  {
+   "name": "Dhalli Police Station",
+   "km_from_start": 7.0,
+   "off_road_m": 75,
+   "lat": 31.10502,
+   "lon": 77.20814,
+   "osm_url": "https://www.openstreetmap.org/node/1834092597"
+  },
+  {
+   "name": "Police Station Theog",
+   "km_from_start": 28.5,
+   "off_road_m": 23,
+   "lat": 31.12376,
+   "lon": 77.35564,
+   "osm_url": "https://www.openstreetmap.org/node/2902874569"
+  },
+  {
+   "name": "Chaura Police Post",
+   "km_from_start": 155.9,
+   "off_road_m": 17,
+   "lat": 31.56502,
+   "lon": 77.84278,
+   "osm_url": "https://www.openstreetmap.org/node/627282368"
+  },
+  {
+   "name": "Police Station Bhabhanagar",
+   "km_from_start": 169.9,
+   "off_road_m": 12,
+   "lat": 31.5654,
+   "lon": 77.93465,
+   "osm_url": "https://www.openstreetmap.org/node/627290792"
+  },
+  {
+   "name": "Police checkpoint (Inner Line Permit begins)",
+   "km_from_start": 289.1,
+   "off_road_m": 6,
+   "lat": 31.75248,
+   "lon": 78.62687,
+   "osm_url": "https://www.openstreetmap.org/node/10127420517"
+  },
+  {
+   "name": "Police Station Kaza",
+   "km_from_start": 433.0,
+   "off_road_m": 397,
+   "lat": 32.22498,
+   "lon": 78.06752,
+   "osm_url": "https://www.openstreetmap.org/node/2903128631"
+  },
+  {
+   "name": "Kaza Police Station",
+   "km_from_start": 433.2,
+   "off_road_m": 165,
+   "lat": 32.22811,
+   "lon": 78.06701,
+   "osm_url": "https://www.openstreetmap.org/node/762051642"
+  },
+  {
+   "name": "Additional Deputy Commissioner (ADC) Office (Inner Line Permits)",
+   "km_from_start": 433.2,
+   "off_road_m": 229,
+   "lat": 32.22726,
+   "lon": 78.06714,
+   "osm_url": "https://www.openstreetmap.org/node/1934751077"
+  },
+  {
+   "name": "Police Assistance",
+   "km_from_start": 614.7,
+   "off_road_m": 71,
+   "lat": 32.24563,
+   "lon": 77.19,
+   "osm_url": "https://www.openstreetmap.org/node/2380691334"
+  },
+  {
+   "name": "Police Station Manali",
+   "km_from_start": 615.2,
+   "off_road_m": 733,
+   "lat": 32.23689,
+   "lon": 77.18632,
+   "osm_url": "https://www.openstreetmap.org/node/856402273"
+  }
+ ]
+}

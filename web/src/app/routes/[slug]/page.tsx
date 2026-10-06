@@ -6,6 +6,7 @@ import { IconFlag, IconList, IconRight } from "@/components/icons";
 import { breadcrumbs, JsonLd } from "@/components/json-ld";
 import { SaveRoute } from "@/components/offline/save-route";
 import {
+  BeforeYouLeave,
   FirstRows,
   levelWords,
   NotHereYet,
@@ -27,10 +28,11 @@ import { ShareButton } from "@/components/route/share-button";
 import { SinceLastVisit } from "@/components/route/since-last-visit";
 import { BackHead, Foot } from "@/components/shell";
 import { Callout, Empty } from "@/components/ui";
-import { getIndex } from "@/lib/content";
+import { getIndex, getRouteHelp } from "@/lib/content";
 import { km, feet, plural } from "@/lib/format";
 import { SITE_URL } from "@/lib/site";
 import { allSources } from "@/lib/sources";
+import { alertsFor } from "@/server/live";
 import { savedPages } from "@/server/route-pages";
 import { getRouteView } from "@/server/route-view";
 
@@ -86,6 +88,7 @@ export default async function RoutePage(props: PageProps<"/routes/[slug]">) {
   const sources = allSources(route);
 
   const places = route.waypoints.filter((w) => w.kind === "place");
+  const [alerts, help] = await Promise.all([unwritten ? null : alertsFor(route), getRouteHelp(slug)]);
 
   return (
     <div className="flex flex-col gap-4">
@@ -169,9 +172,10 @@ export default async function RoutePage(props: PageProps<"/routes/[slug]">) {
             </Callout>
           ) : null}
 
-          <div className="lg:hidden">
+          <div className="flex flex-col gap-4 lg:hidden">
             <FirstRows
               view={view}
+              alerts={alerts?.alerts.length ?? 0}
               save={
                 <SaveRoute
                   routeSlug={slug}
@@ -182,6 +186,10 @@ export default async function RoutePage(props: PageProps<"/routes/[slug]">) {
                   extras={saving.extras}
                 />
               }
+            />
+            <BeforeYouLeave
+              view={view}
+              help={help.help ? { hospitals: help.help.hospitals.length, police: help.help.police.length } : null}
             />
           </div>
           <div className="lg:hidden">

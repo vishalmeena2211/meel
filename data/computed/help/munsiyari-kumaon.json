@@ -1,0 +1,167 @@
+{
+ "fetched": "2026-10-06",
+ "hospitals": [
+  {
+   "name": "CRPF Hospital",
+   "km_from_start": 0.1,
+   "off_road_m": 1152,
+   "lat": 29.26007,
+   "lon": 79.554,
+   "osm_url": "https://www.openstreetmap.org/node/9378197600"
+  },
+  {
+   "name": "Amakona Hospital",
+   "km_from_start": 39.8,
+   "off_road_m": 48,
+   "lat": 29.38111,
+   "lon": 79.4663,
+   "osm_url": "https://www.openstreetmap.org/node/7485849811"
+  },
+  {
+   "name": "Ramsay Hospital",
+   "km_from_start": 39.9,
+   "off_road_m": 111,
+   "lat": 29.3821,
+   "lon": 79.46613,
+   "osm_url": "https://www.openstreetmap.org/node/7485849783"
+  },
+  {
+   "name": "Sitapur Hospital",
+   "km_from_start": 41.3,
+   "off_road_m": 379,
+   "lat": 29.39051,
+   "lon": 79.45756,
+   "osm_url": "https://www.openstreetmap.org/node/7485849803"
+  },
+  {
+   "name": "BD Pandey District Hospital",
+   "km_from_start": 41.3,
+   "off_road_m": 827,
+   "lat": 29.39265,
+   "lon": 79.4532,
+   "osm_url": "https://www.openstreetmap.org/way/1242240842"
+  },
+  {
+   "name": "The Leprosy Mission Hospital",
+   "km_from_start": 103.2,
+   "off_road_m": 158,
+   "lat": 29.58278,
+   "lon": 79.6416,
+   "osm_url": "https://www.openstreetmap.org/node/7479937315"
+  },
+  {
+   "name": "Govardhan Tiwari Rajkiya Base Hospital Almora",
+   "km_from_start": 103.8,
+   "off_road_m": 460,
+   "lat": 29.59293,
+   "lon": 79.63858,
+   "osm_url": "https://www.openstreetmap.org/node/6953552499"
+  },
+  {
+   "name": "Govardhan Tiwari Rajkiya Base Hospital Almora",
+   "km_from_start": 103.8,
+   "off_road_m": 513,
+   "lat": 29.59311,
+   "lon": 79.63766,
+   "osm_url": "https://www.openstreetmap.org/node/7127949303"
+  },
+  {
+   "name": "Sitapur Eye Hospital",
+   "km_from_start": 104.9,
+   "off_road_m": 11,
+   "lat": 29.5918,
+   "lon": 79.64953,
+   "osm_url": "https://www.openstreetmap.org/node/7479937241"
+  },
+  {
+   "name": "Jeewan Jyoti Women Hospital",
+   "km_from_start": 105.9,
+   "off_road_m": 2,
+   "lat": 29.59699,
+   "lon": 79.65677,
+   "osm_url": "https://www.openstreetmap.org/node/7479937237"
+  },
+  {
+   "name": "Pandit Hargovind Pant District Hospital",
+   "km_from_start": 106.1,
+   "off_road_m": 36,
+   "lat": 29.59797,
+   "lon": 79.65883,
+   "osm_url": "https://www.openstreetmap.org/node/6956686352"
+  },
+  {
+   "name": "Anjali Hospital",
+   "km_from_start": 291.2,
+   "off_road_m": 20,
+   "lat": 29.59707,
+   "lon": 79.65635,
+   "osm_url": "https://www.openstreetmap.org/node/6953689258"
+  },
+  {
+   "name": "M N Srivastava Hospital",
+   "km_from_start": 291.2,
+   "off_road_m": 688,
+   "lat": 29.60195,
+   "lon": 79.6523,
+   "osm_url": "https://www.openstreetmap.org/node/6953770681"
+  },
+  {
+   "name": "Government Medical College Hospital, Almora",
+   "km_from_start": 295.5,
+   "off_road_m": 479,
+   "lat": 29.60514,
+   "lon": 79.64586,
+   "osm_url": "https://www.openstreetmap.org/node/7479937213"
+  },
+  {
+   "name": "Shyam Lal Shah Gangola District Hospital",
+   "km_from_start": 363.2,
+   "off_road_m": 242,
+   "lat": 29.83953,
+   "lon": 79.77551,
+   "osm_url": "https://www.openstreetmap.org/node/6956959653"
+  },
+  {
+   "name": "Bageshwar Governnment Hospital",
+   "km_from_start": 363.3,
+   "off_road_m": 124,
+   "lat": 29.83998,
+   "lon": 79.77433,
+   "osm_url": "https://www.openstreetmap.org/node/7121752320"
+  }
+ ],
+ "police": [
+  {
+   "name": null,
+   "km_from_start": 0.1,
+   "off_road_m": 596,
+   "lat": 29.26546,
+   "lon": 79.55063,
+   "osm_url": "https://www.openstreetmap.org/node/9378214144"
+  },
+  {
+   "name": "Thana Kathgodam",
+   "km_from_start": 0.7,
+   "off_road_m": 3,
+   "lat": 29.27166,
+   "lon": 79.5444,
+   "osm_url": "https://www.openstreetmap.org/node/11379037685"
+  },
+  {
+   "name": "Reportingg Police Chawki Julikote",
+   "km_from_start": 16.0,
+   "off_road_m": 36,
+   "lat": 29.33979,
+   "lon": 79.48465,
+   "osm_url": "https://www.openstreetmap.org/node/11174260186"
+  },
+  {
+   "name": "Mallital Police Station",
+   "km_from_start": 41.3,
+   "off_road_m": 793,
+   "lat": 29.39128,
+   "lon": 79.4533,
+   "osm_url": "https://www.openstreetmap.org/node/9811866697"
+  }
+ ]
+}

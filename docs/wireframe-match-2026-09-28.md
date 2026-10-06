@@ -397,3 +397,29 @@ How heights are worked out: the data keeps metres, and the site says them in fee
 In the route data, heights written in the research notes were changed to feet. Where a note compares what sources say, the metres they gave stay in brackets. Lengths and depths stay in metres, such as "120 metres of road" and "half a metre deep". So does the size of the height grid, "a 90 m grid".
 
 How it was checked: in a real browser on the site running on this machine, at phone size, on ten pages and the altitude check itself.
+
+---
+
+## The "build first" research items, checked on 6 October 2026
+
+**Asked by:** Vishal: "do the build first items" (from `docs/research-ideas-2026-10-06.md`).
+**Drawn first:** two new screens, 34 "Is it open? What the offices say today" (4 frames) and 35 "Before you leave" (4 frames), and a fourth frame on screen 7 for the last three answers. The gallery now has 35 screens and 117 frames.
+
+| Frame | What it shows | Check | What differed | Now |
+|---|---|---|---|---|
+| 7.4 | An opened fact with its last three answers, ticks and crosses with dates | Matches | — | [x] |
+| 34.1 | Official alerts first, then "Who decides", with offices whose own date Meel reads | Matches | The badge says "Dated 2 years ago" like every other office, not "2 years old". The drawing was changed | [x] |
+| 34.2 | Weather at the passes, three days, with sunset | Matches | High places are not labelled "night halt"; the freezing line names the place. The drawing was changed | [x] |
+| 34.3 | Closures Uttarakhand's PWD lists, for Char Dham | Close | On the day, no main road in Char Dham's districts was listed as closed, so only the "none listed" state was seen live. Road names are the PWD's own, longer than drawn | [x] |
+| 34.4 | No alert in force; the forecast could not be read; the alert count on the route page | Close | "None in force" seen live on Manali to Leh. The "could not read" states were not seen live, as every source answered | [x] |
+| 35.1 | "Before you leave" rows on the route page | Matches | — | [x] |
+| 35.2 | Route file and map apps | Matches | — | [x] |
+| 35.3 | Emergency card | Matches | Police stations are listed in full, as hospitals are, and a "Where this came from" list was added. The drawing was changed | [x] |
+| 35.4 | Tell someone at home | Matches | — | [x] |
+
+What the checks found and fixed on the way:
+- **Alerts were being missed.** The alert files describe their areas in loose words: "8 districts of Uttarakhand", "uttarkashi,tehri,rudraprayag and chamoli", "ddn" for Dehradun. Matching by name alone missed an alert in force for Char Dham. Each route district now carries the government's own district code (from Wikidata, 389 of 404 districts), so an alert that gives codes is matched exactly. One that names districts is matched by name. One that names none is matched by the districts its own words mention, or else shown with its own words and "without naming them", so a warning is never hidden because Meel could not tell.
+- **Lahaul and Spiti's date was not read**, because the page puts it inside bold text. Fixed.
+- **The laptop side panel squeezed the route drawing** once the "Before you leave" links were added. The panel now scrolls instead.
+
+How it was checked: 38 checks in a real browser against the site running on this machine, at phone and laptop sizes, with the accessibility scan on four new pages. Three test answers were put on one pump for frame 7.4 and deleted afterwards.

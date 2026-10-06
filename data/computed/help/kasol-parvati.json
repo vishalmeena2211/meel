@@ -1,0 +1,23 @@
+{
+ "fetched": "2026-10-06",
+ "hospitals": [
+  {
+   "name": "Sri Harihar Hospital",
+   "km_from_start": 1.6,
+   "off_road_m": 28,
+   "lat": 31.89521,
+   "lon": 77.14998,
+   "osm_url": "https://www.openstreetmap.org/node/6982151179"
+  }
+ ],
+ "police": [
+  {
+   "name": "Police Post Jari",
+   "km_from_start": 23.5,
+   "off_road_m": 16,
+   "lat": 32.00225,
+   "lon": 77.25374,
+   "osm_url": "https://www.openstreetmap.org/node/540712765"
+  }
+ ]
+}

@@ -51,7 +51,8 @@ export default async function CreditsPage() {
             </a>
           </b>
           <span className="hint">
-            Positions of places, the line of each road, and every fuel pump. Used under the{" "}
+            Positions of places, the line of each road, fuel pumps, the hospitals and police stations on each emergency
+            card, and the districts each road crosses. Used under the{" "}
             <a className="link font-medium" href="https://opendatacommons.org/licenses/odbl/" target="_blank" rel="noreferrer noopener">
               Open Database Licence
             </a>
@@ -59,8 +60,47 @@ export default async function CreditsPage() {
             <a className="link font-medium" href="https://project-osrm.org/" target="_blank" rel="noreferrer noopener">
               Open Source Routing Machine
             </a>
-            , and pumps found with the Overpass service.
+            , and pumps found with the Overpass service. Where the map had no pump in a town, pumps come from the oil
+            company’s own locator, which each one names.
           </span>
+        </div>
+      </section>
+
+      <section className="flex flex-col gap-2">
+        <h2 className="display text-2xl">Read every hour</h2>
+        <div className="card flex flex-col">
+          <div className="flex flex-col gap-1 border-b border-line px-3 py-2.5 text-[0.9375rem]">
+            <b>
+              <a className="link" href="https://sachet.ndma.gov.in/" target="_blank" rel="noreferrer noopener">
+                NDMA SACHET
+              </a>
+            </b>
+            <span className="hint">
+              The government’s alert feed. Official alerts on “Is it open?” are its words, from the office that issued
+              them. Public domain, as the feed says.
+            </span>
+          </div>
+          <div className="flex flex-col gap-1 border-b border-line px-3 py-2.5 text-[0.9375rem]">
+            <b>
+              <a className="link" href="https://open-meteo.com/" target="_blank" rel="noreferrer noopener">
+                Open-Meteo
+              </a>
+            </b>
+            <span className="hint">
+              Weather at the passes. Used under the{" "}
+              <a className="link font-medium" href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noreferrer noopener">
+                CC BY 4.0
+              </a>{" "}
+              licence, free for a site with no ads and no subscriptions.
+            </span>
+          </div>
+          <div className="flex flex-col gap-1 px-3 py-2.5 text-[0.9375rem]">
+            <b>Offices’ own pages</b>
+            <span className="hint">
+              Uttarakhand PWD’s list of closed roads, the date on Jammu and Kashmir Traffic Police’s daily advisory, and
+              the date on Lahaul and Spiti’s road status page. Each is linked where it is shown.
+            </span>
+          </div>
         </div>
       </section>
 

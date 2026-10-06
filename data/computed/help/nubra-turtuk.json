@@ -1,0 +1,87 @@
+{
+ "fetched": "2026-10-06",
+ "hospitals": [
+  {
+   "name": "Sonam Norboo Memorial Hospital Leh",
+   "km_from_start": 0.1,
+   "off_road_m": 1134,
+   "lat": 34.15394,
+   "lon": 77.58048,
+   "osm_url": "https://www.openstreetmap.org/way/27761109"
+  },
+  {
+   "name": "Army Hospital Leh",
+   "km_from_start": 0.1,
+   "off_road_m": 1622,
+   "lat": 34.16143,
+   "lon": 77.56646,
+   "osm_url": "https://www.openstreetmap.org/way/158343131"
+  },
+  {
+   "name": "Community Health Center Nubra",
+   "km_from_start": 112.1,
+   "off_road_m": 11,
+   "lat": 34.54916,
+   "lon": 77.55298,
+   "osm_url": "https://www.openstreetmap.org/node/485594432"
+  },
+  {
+   "name": null,
+   "km_from_start": 121.0,
+   "off_road_m": 198,
+   "lat": 34.57777,
+   "lon": 77.47649,
+   "osm_url": "https://www.openstreetmap.org/node/2973880789"
+  },
+  {
+   "name": null,
+   "km_from_start": 183.1,
+   "off_road_m": 102,
+   "lat": 34.80343,
+   "lon": 77.03418,
+   "osm_url": "https://www.openstreetmap.org/way/1086530835"
+  },
+  {
+   "name": "Ayushman Arogya Mandir - Public Health Center Turtuk",
+   "km_from_start": 205.3,
+   "off_road_m": 231,
+   "lat": 34.84807,
+   "lon": 76.83178,
+   "osm_url": "https://www.openstreetmap.org/node/2973877903"
+  }
+ ],
+ "police": [
+  {
+   "name": "SSP and FRO",
+   "km_from_start": 0.0,
+   "off_road_m": 480,
+   "lat": 34.16088,
+   "lon": 77.58867,
+   "osm_url": "https://www.openstreetmap.org/node/2575456627"
+  },
+  {
+   "name": "Police station Leh",
+   "km_from_start": 0.4,
+   "off_road_m": 102,
+   "lat": 34.16602,
+   "lon": 77.58252,
+   "osm_url": "https://www.openstreetmap.org/node/9848099392"
+  },
+  {
+   "name": "J&K Police Check-Post@ South Pulu",
+   "km_from_start": 22.9,
+   "off_road_m": 20,
+   "lat": 34.24842,
+   "lon": 77.62009,
+   "osm_url": "https://www.openstreetmap.org/node/2418797752"
+  },
+  {
+   "name": "J&K Police-Check-Post @ North Pullu.",
+   "km_from_start": 52.4,
+   "off_road_m": 12,
+   "lat": 34.32958,
+   "lon": 77.64469,
+   "osm_url": "https://www.openstreetmap.org/node/2418807810"
+  }
+ ]
+}

@@ -1,0 +1,319 @@
+{
+ "fetched": "2026-10-06",
+ "hospitals": [
+  {
+   "name": "Metro Hospital, Dimapur",
+   "km_from_start": 0.4,
+   "off_road_m": 513,
+   "lat": 25.91403,
+   "lon": 93.71644,
+   "osm_url": "https://www.openstreetmap.org/node/6908445869"
+  },
+  {
+   "name": "Fellowship Nursing Home",
+   "km_from_start": 0.4,
+   "off_road_m": 1138,
+   "lat": 25.91423,
+   "lon": 93.70967,
+   "osm_url": "https://www.openstreetmap.org/node/7614502568"
+  },
+  {
+   "name": "JK Hospital",
+   "km_from_start": 0.4,
+   "off_road_m": 846,
+   "lat": 25.90974,
+   "lon": 93.7123,
+   "osm_url": "https://www.openstreetmap.org/node/7614502593"
+  },
+  {
+   "name": "Shamrock Hospital",
+   "km_from_start": 0.4,
+   "off_road_m": 1730,
+   "lat": 25.90835,
+   "lon": 93.7036,
+   "osm_url": "https://www.openstreetmap.org/node/7614502620"
+  },
+  {
+   "name": "Nikos Hospital And Research Centre",
+   "km_from_start": 0.6,
+   "off_road_m": 558,
+   "lat": 25.90864,
+   "lon": 93.71547,
+   "osm_url": "https://www.openstreetmap.org/node/6908120501"
+  },
+  {
+   "name": "Nagaland Multispeciality Hospital & Research Centre",
+   "km_from_start": 0.6,
+   "off_road_m": 452,
+   "lat": 25.90858,
+   "lon": 93.71655,
+   "osm_url": "https://www.openstreetmap.org/node/7614502573"
+  },
+  {
+   "name": "Faith Hospital",
+   "km_from_start": 0.7,
+   "off_road_m": 409,
+   "lat": 25.90511,
+   "lon": 93.71962,
+   "osm_url": "https://www.openstreetmap.org/node/6908120471"
+  },
+  {
+   "name": "District Hospital, Dimapur",
+   "km_from_start": 1.9,
+   "off_road_m": 246,
+   "lat": 25.90496,
+   "lon": 93.73152,
+   "osm_url": "https://www.openstreetmap.org/node/7100882264"
+  },
+  {
+   "name": "City Hospital",
+   "km_from_start": 1.9,
+   "off_road_m": 66,
+   "lat": 25.90663,
+   "lon": 93.73125,
+   "osm_url": "https://www.openstreetmap.org/node/7614502539"
+  },
+  {
+   "name": "Zion Hospital and Research Centre",
+   "km_from_start": 3.6,
+   "off_road_m": 998,
+   "lat": 25.91619,
+   "lon": 93.74761,
+   "osm_url": "https://www.openstreetmap.org/node/6908120476"
+  },
+  {
+   "name": "Dimapur Hospital and Research Centre",
+   "km_from_start": 3.9,
+   "off_road_m": 128,
+   "lat": 25.90551,
+   "lon": 93.75009,
+   "osm_url": "https://www.openstreetmap.org/node/7614502559"
+  },
+  {
+   "name": "Olive Christian Hospital and Reserch Centre",
+   "km_from_start": 6.0,
+   "off_road_m": 362,
+   "lat": 25.88729,
+   "lon": 93.75569,
+   "osm_url": "https://www.openstreetmap.org/node/7614502588"
+  },
+  {
+   "name": "Christian Institute of Health Sciences and Research Hospital",
+   "km_from_start": 8.1,
+   "off_road_m": 536,
+   "lat": 25.87004,
+   "lon": 93.75986,
+   "osm_url": "https://www.openstreetmap.org/way/666622185"
+  },
+  {
+   "name": "CHIS (referal hospital)",
+   "km_from_start": 9.8,
+   "off_road_m": 1155,
+   "lat": 25.86024,
+   "lon": 93.78043,
+   "osm_url": "https://www.openstreetmap.org/node/6255128239"
+  },
+  {
+   "name": "Referral Hospital",
+   "km_from_start": 16.8,
+   "off_road_m": 841,
+   "lat": 25.80138,
+   "lon": 93.78495,
+   "osm_url": "https://www.openstreetmap.org/node/7614502604"
+  },
+  {
+   "name": "CHC, Medziphema",
+   "km_from_start": 31.3,
+   "off_road_m": 79,
+   "lat": 25.76274,
+   "lon": 93.88446,
+   "osm_url": "https://www.openstreetmap.org/node/7100882279"
+  },
+  {
+   "name": "Naga Hospital",
+   "km_from_start": 69.5,
+   "off_road_m": 72,
+   "lat": 25.66942,
+   "lon": 94.09607,
+   "osm_url": "https://www.openstreetmap.org/node/6255303391"
+  },
+  {
+   "name": "Kohima Diagnostic Center",
+   "km_from_start": 72.9,
+   "off_road_m": 16,
+   "lat": 25.65569,
+   "lon": 94.09906,
+   "osm_url": "https://www.openstreetmap.org/node/10248459009"
+  },
+  {
+   "name": "Kohima Mental Hospital",
+   "km_from_start": 75.4,
+   "off_road_m": 519,
+   "lat": 25.64489,
+   "lon": 94.10329,
+   "osm_url": "https://www.openstreetmap.org/node/7614502599"
+  },
+  {
+   "name": "Government Hospital, Zakhama",
+   "km_from_start": 84.9,
+   "off_road_m": 79,
+   "lat": 25.60369,
+   "lon": 94.12252,
+   "osm_url": "https://www.openstreetmap.org/node/8205237694"
+  },
+  {
+   "name": "Oking Hospital And Research Clinic Pvt Ltd",
+   "km_from_start": 116.7,
+   "off_road_m": 20,
+   "lat": 25.66888,
+   "lon": 94.10566,
+   "osm_url": "https://www.openstreetmap.org/node/6763195716"
+  },
+  {
+   "name": "Wokha, District Hospital",
+   "km_from_start": 189.5,
+   "off_road_m": 363,
+   "lat": 26.0791,
+   "lon": 94.25912,
+   "osm_url": "https://www.openstreetmap.org/way/1090894532"
+  },
+  {
+   "name": "N.Ezung Hospital",
+   "km_from_start": 191.6,
+   "off_road_m": 32,
+   "lat": 26.09195,
+   "lon": 94.25775,
+   "osm_url": "https://www.openstreetmap.org/node/7614502562"
+  },
+  {
+   "name": "Unit Hospital",
+   "km_from_start": 247.7,
+   "off_road_m": 41,
+   "lat": 26.27046,
+   "lon": 94.44696,
+   "osm_url": "https://www.openstreetmap.org/node/7614502541"
+  },
+  {
+   "name": "Assamrifle Hospital",
+   "km_from_start": 259.0,
+   "off_road_m": 170,
+   "lat": 26.3176,
+   "lon": 94.50948,
+   "osm_url": "https://www.openstreetmap.org/node/7614502552"
+  },
+  {
+   "name": "Modern Clinic",
+   "km_from_start": 260.4,
+   "off_road_m": 1400,
+   "lat": 26.32408,
+   "lon": 94.52179,
+   "osm_url": "https://www.openstreetmap.org/node/2686563541"
+  },
+  {
+   "name": "Doctor's Clinic & Mediciner",
+   "km_from_start": 260.4,
+   "off_road_m": 1004,
+   "lat": 26.32435,
+   "lon": 94.51774,
+   "osm_url": "https://www.openstreetmap.org/node/2689917278"
+  },
+  {
+   "name": "Impur Mission Hospital Clinic",
+   "km_from_start": 260.4,
+   "off_road_m": 1433,
+   "lat": 26.32537,
+   "lon": 94.52241,
+   "osm_url": "https://www.openstreetmap.org/node/2696256995"
+  },
+  {
+   "name": "NPPC Hospital",
+   "km_from_start": 364.9,
+   "off_road_m": 405,
+   "lat": 26.71428,
+   "lon": 94.6351,
+   "osm_url": "https://www.openstreetmap.org/node/7614502613"
+  },
+  {
+   "name": "Amgoori Tea Estate Hospital",
+   "km_from_start": 374.5,
+   "off_road_m": 1015,
+   "lat": 26.75916,
+   "lon": 94.56616,
+   "osm_url": "https://www.openstreetmap.org/node/7153386687"
+  }
+ ],
+ "police": [
+  {
+   "name": "Police Station",
+   "km_from_start": 55.2,
+   "off_road_m": 30,
+   "lat": 25.72072,
+   "lon": 94.04244,
+   "osm_url": "https://www.openstreetmap.org/node/6255099036"
+  },
+  {
+   "name": "SP Office",
+   "km_from_start": 71.3,
+   "off_road_m": 217,
+   "lat": 25.66394,
+   "lon": 94.09882,
+   "osm_url": "https://www.openstreetmap.org/way/740874628"
+  },
+  {
+   "name": "South Police Station",
+   "km_from_start": 113.7,
+   "off_road_m": 59,
+   "lat": 25.6531,
+   "lon": 94.10165,
+   "osm_url": "https://www.openstreetmap.org/node/6255305453"
+  },
+  {
+   "name": "North Police Station",
+   "km_from_start": 117.6,
+   "off_road_m": 45,
+   "lat": 25.67577,
+   "lon": 94.1093,
+   "osm_url": "https://www.openstreetmap.org/node/6255324389"
+  },
+  {
+   "name": "CRPF Camp",
+   "km_from_start": 121.5,
+   "off_road_m": 1351,
+   "lat": 25.70636,
+   "lon": 94.10795,
+   "osm_url": "https://www.openstreetmap.org/node/6255339638"
+  },
+  {
+   "name": "PS-2",
+   "km_from_start": 260.4,
+   "off_road_m": 1110,
+   "lat": 26.32409,
+   "lon": 94.51877,
+   "osm_url": "https://www.openstreetmap.org/way/262879659"
+  },
+  {
+   "name": "Nagaland Police",
+   "km_from_start": 260.4,
+   "off_road_m": 1644,
+   "lat": 26.3252,
+   "lon": 94.52452,
+   "osm_url": "https://www.openstreetmap.org/way/1223794667"
+  },
+  {
+   "name": "Superintendent of Police Office",
+   "km_from_start": 260.4,
+   "off_road_m": 1633,
+   "lat": 26.32573,
+   "lon": 94.52447,
+   "osm_url": "https://www.openstreetmap.org/way/1223794669"
+  },
+  {
+   "name": "Amguri Police Station",
+   "km_from_start": 385.8,
+   "off_road_m": 283,
+   "lat": 26.81229,
+   "lon": 94.52088,
+   "osm_url": "https://www.openstreetmap.org/node/11357598691"
+  }
+ ]
+}

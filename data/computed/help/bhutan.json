@@ -1,0 +1,527 @@
+{
+ "fetched": "2026-10-06",
+ "hospitals": [
+  {
+   "name": "Phuntsholing Hospital",
+   "km_from_start": 2.1,
+   "off_road_m": 435,
+   "lat": 26.86763,
+   "lon": 89.38606,
+   "osm_url": "https://www.openstreetmap.org/way/462021004"
+  },
+  {
+   "name": "Jaigaon Primary Hospital",
+   "km_from_start": 6.2,
+   "off_road_m": 962,
+   "lat": 26.84184,
+   "lon": 89.38487,
+   "osm_url": "https://www.openstreetmap.org/node/10772536305"
+  },
+  {
+   "name": "College Infirmary",
+   "km_from_start": 6.5,
+   "off_road_m": 140,
+   "lat": 26.84989,
+   "lon": 89.39466,
+   "osm_url": "https://www.openstreetmap.org/way/408601215"
+  },
+  {
+   "name": "Gedu Hospital",
+   "km_from_start": 46.2,
+   "off_road_m": 379,
+   "lat": 26.919,
+   "lon": 89.5296,
+   "osm_url": "https://www.openstreetmap.org/way/394735720"
+  },
+  {
+   "name": "Tsimalakha Hospital",
+   "km_from_start": 89.3,
+   "off_road_m": 846,
+   "lat": 27.08712,
+   "lon": 89.53983,
+   "osm_url": "https://www.openstreetmap.org/way/1155358461"
+  },
+  {
+   "name": "Chapchha BHU",
+   "km_from_start": 103.7,
+   "off_road_m": 2010,
+   "lat": 27.19217,
+   "lon": 89.5465,
+   "osm_url": "https://www.openstreetmap.org/way/977550006"
+  },
+  {
+   "name": "Menlha Phramacy",
+   "km_from_start": 147.4,
+   "off_road_m": 0,
+   "lat": 27.45741,
+   "lon": 89.64713,
+   "osm_url": "https://www.openstreetmap.org/node/4428414097"
+  },
+  {
+   "name": "Padkar Diagnostic Center",
+   "km_from_start": 147.4,
+   "off_road_m": 3,
+   "lat": 27.45747,
+   "lon": 89.64705,
+   "osm_url": "https://www.openstreetmap.org/node/4428414291"
+  },
+  {
+   "name": "Jigme Dorji Wangchuck National Referral Hospital",
+   "km_from_start": 148.7,
+   "off_road_m": 87,
+   "lat": 27.46336,
+   "lon": 89.63859,
+   "osm_url": "https://www.openstreetmap.org/way/425635150"
+  },
+  {
+   "name": "doctor’s colony",
+   "km_from_start": 148.8,
+   "off_road_m": 307,
+   "lat": 27.46246,
+   "lon": 89.63648,
+   "osm_url": "https://www.openstreetmap.org/node/11936969769"
+  },
+  {
+   "name": "IMTART Hospital",
+   "km_from_start": 149.3,
+   "off_road_m": 223,
+   "lat": 27.46942,
+   "lon": 89.63852,
+   "osm_url": "https://www.openstreetmap.org/node/4370810245"
+  },
+  {
+   "name": "National Traditional Medicine Hospital",
+   "km_from_start": 150.2,
+   "off_road_m": 697,
+   "lat": 27.47974,
+   "lon": 89.62979,
+   "osm_url": "https://www.openstreetmap.org/way/435186557"
+  },
+  {
+   "name": "Menjong Diagnostic Center Pvt. Ltd.",
+   "km_from_start": 150.3,
+   "off_road_m": 371,
+   "lat": 27.47472,
+   "lon": 89.628,
+   "osm_url": "https://www.openstreetmap.org/node/11932055869"
+  },
+  {
+   "name": "HISC",
+   "km_from_start": 151.6,
+   "off_road_m": 248,
+   "lat": 27.46851,
+   "lon": 89.64029,
+   "osm_url": "https://www.openstreetmap.org/node/4357630389"
+  },
+  {
+   "name": "Doctor’s colony",
+   "km_from_start": 152.1,
+   "off_road_m": 187,
+   "lat": 27.46189,
+   "lon": 89.63867,
+   "osm_url": "https://www.openstreetmap.org/node/11930199173"
+  },
+  {
+   "name": "TV hospital",
+   "km_from_start": 152.1,
+   "off_road_m": 74,
+   "lat": 27.46245,
+   "lon": 89.63964,
+   "osm_url": "https://www.openstreetmap.org/node/11930199371"
+  },
+  {
+   "name": "Kidu guest house",
+   "km_from_start": 152.1,
+   "off_road_m": 92,
+   "lat": 27.46231,
+   "lon": 89.63954,
+   "osm_url": "https://www.openstreetmap.org/node/11930199770"
+  },
+  {
+   "name": "Faculty of Nursing and Public Health",
+   "km_from_start": 152.1,
+   "off_road_m": 101,
+   "lat": 27.46232,
+   "lon": 89.6394,
+   "osm_url": "https://www.openstreetmap.org/node/11936240669"
+  },
+  {
+   "name": "Department of Medical Products",
+   "km_from_start": 152.2,
+   "off_road_m": 100,
+   "lat": 27.46151,
+   "lon": 89.64037,
+   "osm_url": "https://www.openstreetmap.org/node/10758242213"
+  },
+  {
+   "name": "Kidu medical service center",
+   "km_from_start": 152.2,
+   "off_road_m": 22,
+   "lat": 27.46206,
+   "lon": 89.64086,
+   "osm_url": "https://www.openstreetmap.org/node/11930199369"
+  },
+  {
+   "name": "Satellite Health clinic",
+   "km_from_start": 154.3,
+   "off_road_m": 87,
+   "lat": 27.45271,
+   "lon": 89.65493,
+   "osm_url": "https://www.openstreetmap.org/node/4214868851"
+  },
+  {
+   "name": "Lungtenphu Army Hospital",
+   "km_from_start": 154.4,
+   "off_road_m": 673,
+   "lat": 27.4558,
+   "lon": 89.65986,
+   "osm_url": "https://www.openstreetmap.org/node/4369796989"
+  },
+  {
+   "name": "Military Hospital",
+   "km_from_start": 154.5,
+   "off_road_m": 688,
+   "lat": 27.45519,
+   "lon": 89.66078,
+   "osm_url": "https://www.openstreetmap.org/node/4421494773"
+  },
+  {
+   "name": "Druk pharmacy",
+   "km_from_start": 155.2,
+   "off_road_m": 38,
+   "lat": 27.44601,
+   "lon": 89.66059,
+   "osm_url": "https://www.openstreetmap.org/node/4499885846"
+  },
+  {
+   "name": "Hongtsho BHU",
+   "km_from_start": 169.0,
+   "off_road_m": 78,
+   "lat": 27.48911,
+   "lon": 89.72382,
+   "osm_url": "https://www.openstreetmap.org/way/1155418619"
+  },
+  {
+   "name": "Thinleygang BHU",
+   "km_from_start": 201.5,
+   "off_road_m": 143,
+   "lat": 27.52516,
+   "lon": 89.81664,
+   "osm_url": "https://www.openstreetmap.org/way/967878983"
+  },
+  {
+   "name": null,
+   "km_from_start": 222.4,
+   "off_road_m": 16,
+   "lat": 27.58453,
+   "lon": 89.85938,
+   "osm_url": "https://www.openstreetmap.org/way/999690894"
+  },
+  {
+   "name": "Kuenphen Rabten[pharmacy]",
+   "km_from_start": 289.5,
+   "off_road_m": 58,
+   "lat": 27.44528,
+   "lon": 89.66087,
+   "osm_url": "https://www.openstreetmap.org/node/4499885483"
+  },
+  {
+   "name": "Kidu-Medical-Service- Center",
+   "km_from_start": 292.5,
+   "off_road_m": 0,
+   "lat": 27.46217,
+   "lon": 89.64112,
+   "osm_url": "https://www.openstreetmap.org/node/11934858269"
+  },
+  {
+   "name": "Gyaltsuen Jetsuen Pema Mother and Child Hospital",
+   "km_from_start": 292.9,
+   "off_road_m": 300,
+   "lat": 27.46296,
+   "lon": 89.63614,
+   "osm_url": "https://www.openstreetmap.org/node/10758208398"
+  },
+  {
+   "name": "Ashi Jetsun mother and child hospital",
+   "km_from_start": 292.9,
+   "off_road_m": 336,
+   "lat": 27.46281,
+   "lon": 89.63581,
+   "osm_url": "https://www.openstreetmap.org/node/11930199574"
+  },
+  {
+   "name": "Jigme Dorji Wangchuck National  Referral  Hospital",
+   "km_from_start": 292.9,
+   "off_road_m": 153,
+   "lat": 27.46361,
+   "lon": 89.63744,
+   "osm_url": "https://www.openstreetmap.org/node/11930199672"
+  },
+  {
+   "name": "Doctor’s colony",
+   "km_from_start": 292.9,
+   "off_road_m": 263,
+   "lat": 27.46367,
+   "lon": 89.63608,
+   "osm_url": "https://www.openstreetmap.org/node/11934918770"
+  },
+  {
+   "name": "Staff Resident",
+   "km_from_start": 292.9,
+   "off_road_m": 279,
+   "lat": 27.46358,
+   "lon": 89.63595,
+   "osm_url": "https://www.openstreetmap.org/node/11936964970"
+  },
+  {
+   "name": "Eye Hospital",
+   "km_from_start": 292.9,
+   "off_road_m": 132,
+   "lat": 27.46439,
+   "lon": 89.63712,
+   "osm_url": "https://www.openstreetmap.org/node/11936965069"
+  },
+  {
+   "name": "Gyeltshuen Jetsuen Pema Mother and Child Hospital",
+   "km_from_start": 292.9,
+   "off_road_m": 230,
+   "lat": 27.4633,
+   "lon": 89.63674,
+   "osm_url": "https://www.openstreetmap.org/node/11937248469"
+  },
+  {
+   "name": "Doctor’s colony",
+   "km_from_start": 293.0,
+   "off_road_m": 162,
+   "lat": 27.46436,
+   "lon": 89.63679,
+   "osm_url": "https://www.openstreetmap.org/node/11934926069"
+  },
+  {
+   "name": "Doctor’s colony",
+   "km_from_start": 293.0,
+   "off_road_m": 141,
+   "lat": 27.46469,
+   "lon": 89.63681,
+   "osm_url": "https://www.openstreetmap.org/node/11934926169"
+  },
+  {
+   "name": "Staff Residents",
+   "km_from_start": 293.0,
+   "off_road_m": 209,
+   "lat": 27.46404,
+   "lon": 89.63645,
+   "osm_url": "https://www.openstreetmap.org/node/11936965169"
+  },
+  {
+   "name": "Dantak Hospital",
+   "km_from_start": 300.5,
+   "off_road_m": 339,
+   "lat": 27.43513,
+   "lon": 89.65732,
+   "osm_url": "https://www.openstreetmap.org/node/12003278269"
+  },
+  {
+   "name": "BHU",
+   "km_from_start": 338.1,
+   "off_road_m": 58,
+   "lat": 27.38458,
+   "lon": 89.45029,
+   "osm_url": "https://www.openstreetmap.org/node/11937240369"
+  },
+  {
+   "name": "Imtrat Hospital",
+   "km_from_start": 338.8,
+   "off_road_m": 131,
+   "lat": 27.3862,
+   "lon": 89.44471,
+   "osm_url": "https://www.openstreetmap.org/node/11937240273"
+  },
+  {
+   "name": "Imtrat Hospital",
+   "km_from_start": 343.5,
+   "off_road_m": 395,
+   "lat": 27.41231,
+   "lon": 89.4154,
+   "osm_url": "https://www.openstreetmap.org/node/11932875469"
+  },
+  {
+   "name": "Paro Hospital",
+   "km_from_start": 346.1,
+   "off_road_m": 836,
+   "lat": 27.42761,
+   "lon": 89.40534,
+   "osm_url": "https://www.openstreetmap.org/node/11936644669"
+  },
+  {
+   "name": "Paro Hospital",
+   "km_from_start": 346.1,
+   "off_road_m": 786,
+   "lat": 27.42783,
+   "lon": 89.40579,
+   "osm_url": "https://www.openstreetmap.org/way/1155375491"
+  }
+ ],
+ "police": [
+  {
+   "name": "Boarder Police",
+   "km_from_start": 1.5,
+   "off_road_m": 11,
+   "lat": 26.86113,
+   "lon": 89.38125,
+   "osm_url": "https://www.openstreetmap.org/node/4592400705"
+  },
+  {
+   "name": "Police Station",
+   "km_from_start": 3.3,
+   "off_road_m": 91,
+   "lat": 26.86202,
+   "lon": 89.38912,
+   "osm_url": "https://www.openstreetmap.org/way/444868970"
+  },
+  {
+   "name": "Chhukha Police Station",
+   "km_from_start": 92.9,
+   "off_road_m": 524,
+   "lat": 27.10943,
+   "lon": 89.5387,
+   "osm_url": "https://www.openstreetmap.org/node/4701214589"
+  },
+  {
+   "name": "Police station",
+   "km_from_start": 142.8,
+   "off_road_m": 180,
+   "lat": 27.43019,
+   "lon": 89.64218,
+   "osm_url": "https://www.openstreetmap.org/node/11935023471"
+  },
+  {
+   "name": "Community Police Center",
+   "km_from_start": 148.3,
+   "off_road_m": 232,
+   "lat": 27.45967,
+   "lon": 89.64057,
+   "osm_url": "https://www.openstreetmap.org/node/4428461919"
+  },
+  {
+   "name": "center box",
+   "km_from_start": 150.0,
+   "off_road_m": 494,
+   "lat": 27.47338,
+   "lon": 89.63887,
+   "osm_url": "https://www.openstreetmap.org/node/4361138379"
+  },
+  {
+   "name": "Royal Bhutan Police Division XI",
+   "km_from_start": 150.0,
+   "off_road_m": 511,
+   "lat": 27.47505,
+   "lon": 89.63887,
+   "osm_url": "https://www.openstreetmap.org/node/9888952133"
+  },
+  {
+   "name": "Detention Centre",
+   "km_from_start": 150.0,
+   "off_road_m": 490,
+   "lat": 27.47335,
+   "lon": 89.63882,
+   "osm_url": "https://www.openstreetmap.org/node/10569253769"
+  },
+  {
+   "name": "Thimphu Center Box",
+   "km_from_start": 150.0,
+   "off_road_m": 495,
+   "lat": 27.47338,
+   "lon": 89.63887,
+   "osm_url": "https://www.openstreetmap.org/way/217515762"
+  },
+  {
+   "name": "168 Norzin Zur Lam 17 SE, Norzin, Thimphu",
+   "km_from_start": 150.0,
+   "off_road_m": 500,
+   "lat": 27.47495,
+   "lon": 89.63877,
+   "osm_url": "https://www.openstreetmap.org/way/330789735"
+  },
+  {
+   "name": null,
+   "km_from_start": 150.0,
+   "off_road_m": 477,
+   "lat": 27.4732,
+   "lon": 89.63869,
+   "osm_url": "https://www.openstreetmap.org/way/801593901"
+  },
+  {
+   "name": "173 Norzin Zur Lam 29 SE, Norzin, Thimphu",
+   "km_from_start": 150.0,
+   "off_road_m": 457,
+   "lat": 27.47314,
+   "lon": 89.63849,
+   "osm_url": "https://www.openstreetmap.org/way/801593942"
+  },
+  {
+   "name": null,
+   "km_from_start": 150.0,
+   "off_road_m": 457,
+   "lat": 27.47332,
+   "lon": 89.63849,
+   "osm_url": "https://www.openstreetmap.org/way/801593943"
+  },
+  {
+   "name": "Community Police Office",
+   "km_from_start": 150.3,
+   "off_road_m": 531,
+   "lat": 27.47323,
+   "lon": 89.626,
+   "osm_url": "https://www.openstreetmap.org/node/7735689557"
+  },
+  {
+   "name": "Royal Bhutan Police Traffic Division",
+   "km_from_start": 151.6,
+   "off_road_m": 499,
+   "lat": 27.46783,
+   "lon": 89.6434,
+   "osm_url": "https://www.openstreetmap.org/node/10760537356"
+  },
+  {
+   "name": "RBP Headquarters",
+   "km_from_start": 151.9,
+   "off_road_m": 103,
+   "lat": 27.46486,
+   "lon": 89.63993,
+   "osm_url": "https://www.openstreetmap.org/way/433874026"
+  },
+  {
+   "name": "Community Police Station",
+   "km_from_start": 154.2,
+   "off_road_m": 35,
+   "lat": 27.45268,
+   "lon": 89.65418,
+   "osm_url": "https://www.openstreetmap.org/node/4273083789"
+  },
+  {
+   "name": "Police Outpost",
+   "km_from_start": 155.8,
+   "off_road_m": 95,
+   "lat": 27.44066,
+   "lon": 89.66179,
+   "osm_url": "https://www.openstreetmap.org/node/11935460769"
+  },
+  {
+   "name": "Royal Bhutan Police",
+   "km_from_start": 346.1,
+   "off_road_m": 1202,
+   "lat": 27.43675,
+   "lon": 89.40284,
+   "osm_url": "https://www.openstreetmap.org/node/6689970885"
+  },
+  {
+   "name": "Paro Police Station",
+   "km_from_start": 346.1,
+   "off_road_m": 85,
+   "lat": 27.43146,
+   "lon": 89.41257,
+   "osm_url": "https://www.openstreetmap.org/node/10752237960"
+  }
+ ]
+}

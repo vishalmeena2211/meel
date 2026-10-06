@@ -2,7 +2,7 @@
 
 import { type FormEvent, useEffect, useId, useRef, useState, useSyncExternalStore } from "react";
 
-import { CHANGE_CHOICES } from "@/lib/change-choices";
+import { CHANGE_CHOICES, MIN_REASON, REASON_WORDS } from "@/lib/change-choices";
 import type { FactView } from "@/lib/fact-view";
 import { indiaDay, sayDate } from "@/lib/format";
 import { keep } from "@/lib/outbox";
@@ -239,6 +239,11 @@ function ReportForm({
   async function send(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
     if (pending) return;
+    // A change needs a reason, in a few words, before it can be sent or kept for later.
+    if (changed && note.trim().length < MIN_REASON) {
+      setState({ ...START, message: "Something needs fixing.", errors: { note: REASON_WORDS } });
+      return;
+    }
     const body = new FormData(event.currentTarget);
     const fields = Object.fromEntries([...body.entries()].filter((e): e is [string, string] => typeof e[1] === "string"));
     // With no network the report waits on this phone, with the day the rider saw it.

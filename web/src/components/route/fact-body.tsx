@@ -1,6 +1,6 @@
 import type { FactView } from "@/lib/fact-view";
 
-import { IconExternal } from "../icons";
+import { IconCheck, IconExternal, IconX } from "../icons";
 import { Callout, StateBadge } from "../ui";
 
 /**
@@ -40,6 +40,27 @@ export function FactBody({ view, as: Title = "h3" }: { view: FactView; as?: "h1"
           <IconExternal />
           {view.link.label}
         </a>
+      ) : null}
+
+      {view.recent.length >= 2 ? (
+        <section className="flex flex-col gap-1">
+          <Part className="label">{view.recent.length === 3 ? "Last three answers" : "Last answers"}</Part>
+          <ul className="flex flex-wrap gap-1.5">
+            {view.recent.map((r, i) => (
+              <li
+                key={`${r.when}-${i}`}
+                className={`num inline-flex h-[26px] items-center gap-1 rounded-full px-2.5 text-xs ${
+                  r.kind === "still-true" ? "bg-fresh-bg text-fresh-fg" : "bg-stale-bg text-stale-fg"
+                }`}
+              >
+                {r.kind === "still-true" ? <IconCheck className="size-3.5" /> : <IconX className="size-3.5" />}
+                <span className="sr-only">{r.kind === "still-true" ? "Still true," : "Changed,"}</span>
+                {r.when}
+              </li>
+            ))}
+          </ul>
+          <p className="hint">Newest first. A tick is “still true”, a cross is “this has changed”. No score, no average.</p>
+        </section>
       ) : null}
 
       {view.changes.length > 0 ? (

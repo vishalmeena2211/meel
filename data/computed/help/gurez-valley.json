@@ -1,0 +1,527 @@
+{
+ "fetched": "2026-10-06",
+ "hospitals": [
+  {
+   "name": "Government Gousia Hospital Khanyar",
+   "km_from_start": 0.0,
+   "off_road_m": 2103,
+   "lat": 34.09256,
+   "lon": 74.81345,
+   "osm_url": "https://www.openstreetmap.org/way/671792135"
+  },
+  {
+   "name": null,
+   "km_from_start": 0.1,
+   "off_road_m": 1564,
+   "lat": 34.07197,
+   "lon": 74.83808,
+   "osm_url": "https://www.openstreetmap.org/node/5936065436"
+  },
+  {
+   "name": "Al-Aziz Hospital",
+   "km_from_start": 0.1,
+   "off_road_m": 992,
+   "lat": 34.08357,
+   "lon": 74.82072,
+   "osm_url": "https://www.openstreetmap.org/node/6911122339"
+  },
+  {
+   "name": "Khyber Medical Institute hospital",
+   "km_from_start": 0.1,
+   "off_road_m": 1061,
+   "lat": 34.08421,
+   "lon": 74.82195,
+   "osm_url": "https://www.openstreetmap.org/way/570627901"
+  },
+  {
+   "name": "Modern Hospital",
+   "km_from_start": 0.1,
+   "off_road_m": 1188,
+   "lat": 34.06805,
+   "lon": 74.83153,
+   "osm_url": "https://www.openstreetmap.org/way/738104619"
+  },
+  {
+   "name": "Kidney Hospital",
+   "km_from_start": 0.1,
+   "off_road_m": 1595,
+   "lat": 34.07221,
+   "lon": 74.83847,
+   "osm_url": "https://www.openstreetmap.org/way/738120068"
+  },
+  {
+   "name": "Chest Diseases Hospital",
+   "km_from_start": 0.1,
+   "off_road_m": 939,
+   "lat": 34.07774,
+   "lon": 74.8309,
+   "osm_url": "https://www.openstreetmap.org/way/1463199711"
+  },
+  {
+   "name": "Paras Health",
+   "km_from_start": 0.1,
+   "off_road_m": 960,
+   "lat": 34.0745,
+   "lon": 74.83183,
+   "osm_url": "https://www.openstreetmap.org/way/1463372951"
+  },
+  {
+   "name": "Ramzan Hospital",
+   "km_from_start": 1.3,
+   "off_road_m": 1170,
+   "lat": 34.06112,
+   "lon": 74.80982,
+   "osm_url": "https://www.openstreetmap.org/node/6911125823"
+  },
+  {
+   "name": "Lalla Ded Hospital",
+   "km_from_start": 1.4,
+   "off_road_m": 572,
+   "lat": 34.06644,
+   "lon": 74.80804,
+   "osm_url": "https://www.openstreetmap.org/way/679551679"
+  },
+  {
+   "name": "Max Superspeciality Hospital",
+   "km_from_start": 1.7,
+   "off_road_m": 39,
+   "lat": 34.07187,
+   "lon": 74.80489,
+   "osm_url": "https://www.openstreetmap.org/node/7668785762"
+  },
+  {
+   "name": "Tahira Khanams Hospital and Nursing Home",
+   "km_from_start": 1.8,
+   "off_road_m": 460,
+   "lat": 34.06751,
+   "lon": 74.80278,
+   "osm_url": "https://www.openstreetmap.org/node/6911271677"
+  },
+  {
+   "name": "T.K. Hospital",
+   "km_from_start": 1.8,
+   "off_road_m": 551,
+   "lat": 34.06659,
+   "lon": 74.80328,
+   "osm_url": "https://www.openstreetmap.org/node/7668785790"
+  },
+  {
+   "name": "Shifa Medical Center",
+   "km_from_start": 2.0,
+   "off_road_m": 283,
+   "lat": 34.06996,
+   "lon": 74.80099,
+   "osm_url": "https://www.openstreetmap.org/node/13633468033"
+  },
+  {
+   "name": "Shifa Medical Centre",
+   "km_from_start": 2.0,
+   "off_road_m": 285,
+   "lat": 34.06993,
+   "lon": 74.801,
+   "osm_url": "https://www.openstreetmap.org/way/1463163571"
+  },
+  {
+   "name": "J&K Police Hospital",
+   "km_from_start": 2.2,
+   "off_road_m": 367,
+   "lat": 34.07034,
+   "lon": 74.79806,
+   "osm_url": "https://www.openstreetmap.org/way/1463163572"
+  },
+  {
+   "name": "The New City Hospital",
+   "km_from_start": 2.7,
+   "off_road_m": 1857,
+   "lat": 34.06121,
+   "lon": 74.78425,
+   "osm_url": "https://www.openstreetmap.org/node/6911122344"
+  },
+  {
+   "name": "Dr. Farooq's Unani Hospital",
+   "km_from_start": 2.8,
+   "off_road_m": 663,
+   "lat": 34.07434,
+   "lon": 74.78765,
+   "osm_url": "https://www.openstreetmap.org/node/7668785831"
+  },
+  {
+   "name": "Albarq Multi Speciality Hospital",
+   "km_from_start": 2.8,
+   "off_road_m": 654,
+   "lat": 34.07419,
+   "lon": 74.7878,
+   "osm_url": "https://www.openstreetmap.org/node/7668785852"
+  },
+  {
+   "name": "Haya Unani Hospital",
+   "km_from_start": 3.0,
+   "off_road_m": 60,
+   "lat": 34.07764,
+   "lon": 74.79513,
+   "osm_url": "https://www.openstreetmap.org/node/7668785764"
+  },
+  {
+   "name": "Sheikh Ul Alam Hospital",
+   "km_from_start": 3.3,
+   "off_road_m": 669,
+   "lat": 34.08056,
+   "lon": 74.80149,
+   "osm_url": "https://www.openstreetmap.org/node/6911125801"
+  },
+  {
+   "name": "Government Super Speciality Hospital",
+   "km_from_start": 3.5,
+   "off_road_m": 876,
+   "lat": 34.08831,
+   "lon": 74.79769,
+   "osm_url": "https://www.openstreetmap.org/way/678698274"
+  },
+  {
+   "name": "SMHS Hospital",
+   "km_from_start": 3.5,
+   "off_road_m": 758,
+   "lat": 34.08669,
+   "lon": 74.79817,
+   "osm_url": "https://www.openstreetmap.org/way/1198176448"
+  },
+  {
+   "name": "Amandeep BR Medicity",
+   "km_from_start": 4.3,
+   "off_road_m": 1767,
+   "lat": 34.06682,
+   "lon": 74.77752,
+   "osm_url": "https://www.openstreetmap.org/way/1533821623"
+  },
+  {
+   "name": "ASG Eye Hospital",
+   "km_from_start": 5.4,
+   "off_road_m": 24,
+   "lat": 34.08969,
+   "lon": 74.77807,
+   "osm_url": "https://www.openstreetmap.org/node/7668785851"
+  },
+  {
+   "name": "Dr. Naseer's Unani & Panchkarma Hospital",
+   "km_from_start": 5.4,
+   "off_road_m": 1443,
+   "lat": 34.09577,
+   "lon": 74.79223,
+   "osm_url": "https://www.openstreetmap.org/node/7668785860"
+  },
+  {
+   "name": "Unani and Panchkarma Hospital",
+   "km_from_start": 5.4,
+   "off_road_m": 1452,
+   "lat": 34.09592,
+   "lon": 74.79223,
+   "osm_url": "https://www.openstreetmap.org/node/9113500901"
+  },
+  {
+   "name": "JVC SKIMS Medical College & Hospital",
+   "km_from_start": 5.7,
+   "off_road_m": 1648,
+   "lat": 34.08463,
+   "lon": 74.76126,
+   "osm_url": "https://www.openstreetmap.org/way/557619298"
+  },
+  {
+   "name": "Govt. Children Hospital Bemina Srinagar",
+   "km_from_start": 6.9,
+   "off_road_m": 1266,
+   "lat": 34.09112,
+   "lon": 74.7597,
+   "osm_url": "https://www.openstreetmap.org/way/1223869874"
+  },
+  {
+   "name": "Govt. Unani Hospital",
+   "km_from_start": 9.0,
+   "off_road_m": 182,
+   "lat": 34.10957,
+   "lon": 74.74956,
+   "osm_url": "https://www.openstreetmap.org/node/5936065431"
+  },
+  {
+   "name": "Government Unani Hospital Shalteng",
+   "km_from_start": 9.2,
+   "off_road_m": 27,
+   "lat": 34.10817,
+   "lon": 74.74755,
+   "osm_url": "https://www.openstreetmap.org/node/7668785779"
+  },
+  {
+   "name": "Noora Hospital",
+   "km_from_start": 10.3,
+   "off_road_m": 1014,
+   "lat": 34.11226,
+   "lon": 74.72554,
+   "osm_url": "https://www.openstreetmap.org/node/7668785829"
+  },
+  {
+   "name": "Kawoosa Medical Hospital",
+   "km_from_start": 14.5,
+   "off_road_m": 1549,
+   "lat": 34.1131,
+   "lon": 74.71838,
+   "osm_url": "https://www.openstreetmap.org/node/12738807210"
+  },
+  {
+   "name": "Kawoosa Hospital",
+   "km_from_start": 14.5,
+   "off_road_m": 1564,
+   "lat": 34.11297,
+   "lon": 74.7184,
+   "osm_url": "https://www.openstreetmap.org/node/13513781996"
+  },
+  {
+   "name": "Trauma Hospital",
+   "km_from_start": 15.5,
+   "off_road_m": 1824,
+   "lat": 34.11725,
+   "lon": 74.69926,
+   "osm_url": "https://www.openstreetmap.org/node/7668785795"
+  },
+  {
+   "name": "Kashmir Tibbia College Hospital & Research Centre",
+   "km_from_start": 24.9,
+   "off_road_m": 396,
+   "lat": 34.19922,
+   "lon": 74.6599,
+   "osm_url": "https://www.openstreetmap.org/node/7668544087"
+  },
+  {
+   "name": "Government Hospital",
+   "km_from_start": 53.2,
+   "off_road_m": 730,
+   "lat": 34.37413,
+   "lon": 74.6811,
+   "osm_url": "https://www.openstreetmap.org/node/7668544116"
+  },
+  {
+   "name": "New District Hospital Bandipora",
+   "km_from_start": 60.0,
+   "off_road_m": 115,
+   "lat": 34.41179,
+   "lon": 74.64112,
+   "osm_url": "https://www.openstreetmap.org/node/13624912086"
+  },
+  {
+   "name": null,
+   "km_from_start": 60.0,
+   "off_road_m": 103,
+   "lat": 34.41186,
+   "lon": 74.64129,
+   "osm_url": "https://www.openstreetmap.org/way/1486280279"
+  },
+  {
+   "name": "District Hospital",
+   "km_from_start": 60.7,
+   "off_road_m": 151,
+   "lat": 34.41825,
+   "lon": 74.64281,
+   "osm_url": "https://www.openstreetmap.org/node/7668544135"
+  },
+  {
+   "name": "Sub District hospital, Dawar",
+   "km_from_start": 140.8,
+   "off_road_m": 1242,
+   "lat": 34.63368,
+   "lon": 74.83,
+   "osm_url": "https://www.openstreetmap.org/node/7140654409"
+  }
+ ],
+ "police": [
+  {
+   "name": "Traffic Police Head Quarter",
+   "km_from_start": 0.1,
+   "off_road_m": 230,
+   "lat": 34.07273,
+   "lon": 74.82226,
+   "osm_url": "https://www.openstreetmap.org/node/5936064835"
+  },
+  {
+   "name": "Police Station Ram Munshi Bagh",
+   "km_from_start": 0.1,
+   "off_road_m": 1340,
+   "lat": 34.07298,
+   "lon": 74.83581,
+   "osm_url": "https://www.openstreetmap.org/node/9073521095"
+  },
+  {
+   "name": "Police Station Rajbagh",
+   "km_from_start": 0.3,
+   "off_road_m": 933,
+   "lat": 34.06601,
+   "lon": 74.82173,
+   "osm_url": "https://www.openstreetmap.org/node/9073527667"
+  },
+  {
+   "name": "Police Station Rajbagh",
+   "km_from_start": 0.4,
+   "off_road_m": 956,
+   "lat": 34.06572,
+   "lon": 74.82146,
+   "osm_url": "https://www.openstreetmap.org/node/9002236401"
+  },
+  {
+   "name": "Police Station Kothibagh",
+   "km_from_start": 0.5,
+   "off_road_m": 102,
+   "lat": 34.07289,
+   "lon": 74.81802,
+   "osm_url": "https://www.openstreetmap.org/node/9052828230"
+  },
+  {
+   "name": "Police Station Kral Khud",
+   "km_from_start": 1.0,
+   "off_road_m": 647,
+   "lat": 34.07806,
+   "lon": 74.81035,
+   "osm_url": "https://www.openstreetmap.org/node/9113502524"
+  },
+  {
+   "name": "Crime Branch Headquarters Kashmir",
+   "km_from_start": 1.8,
+   "off_road_m": 44,
+   "lat": 34.07143,
+   "lon": 74.80322,
+   "osm_url": "https://www.openstreetmap.org/node/9073523771"
+  },
+  {
+   "name": "SSP Office Srinagar",
+   "km_from_start": 1.8,
+   "off_road_m": 936,
+   "lat": 34.06325,
+   "lon": 74.80206,
+   "osm_url": "https://www.openstreetmap.org/way/1146736380"
+  },
+  {
+   "name": null,
+   "km_from_start": 1.8,
+   "off_road_m": 915,
+   "lat": 34.06339,
+   "lon": 74.80241,
+   "osm_url": "https://www.openstreetmap.org/way/1463447463"
+  },
+  {
+   "name": "police station shaheed Gunj",
+   "km_from_start": 2.0,
+   "off_road_m": 377,
+   "lat": 34.07539,
+   "lon": 74.80389,
+   "osm_url": "https://www.openstreetmap.org/node/2835089031"
+  },
+  {
+   "name": "Police control room",
+   "km_from_start": 2.1,
+   "off_road_m": 275,
+   "lat": 34.07078,
+   "lon": 74.79923,
+   "osm_url": "https://www.openstreetmap.org/node/7951226625"
+  },
+  {
+   "name": "Police Control Room",
+   "km_from_start": 2.2,
+   "off_road_m": 390,
+   "lat": 34.0699,
+   "lon": 74.79856,
+   "osm_url": "https://www.openstreetmap.org/way/1463163573"
+  },
+  {
+   "name": "Jammu and Kashmir Armed Police Headquarters",
+   "km_from_start": 2.3,
+   "off_road_m": 26,
+   "lat": 34.07339,
+   "lon": 74.799,
+   "osm_url": "https://www.openstreetmap.org/node/9073488316"
+  },
+  {
+   "name": "District Police Lines",
+   "km_from_start": 2.5,
+   "off_road_m": 163,
+   "lat": 34.07562,
+   "lon": 74.79822,
+   "osm_url": "https://www.openstreetmap.org/node/9073526517"
+  },
+  {
+   "name": "Headquarters Jammu and Kashmir Armed Police",
+   "km_from_start": 2.5,
+   "off_road_m": 324,
+   "lat": 34.07704,
+   "lon": 74.79872,
+   "osm_url": "https://www.openstreetmap.org/node/9113504586"
+  },
+  {
+   "name": "District Police Lines Srinagar",
+   "km_from_start": 2.5,
+   "off_road_m": 250,
+   "lat": 34.07644,
+   "lon": 74.79839,
+   "osm_url": "https://www.openstreetmap.org/node/9113506297"
+  },
+  {
+   "name": "Police Building",
+   "km_from_start": 2.5,
+   "off_road_m": 363,
+   "lat": 34.07728,
+   "lon": 74.79908,
+   "osm_url": "https://www.openstreetmap.org/way/169250683"
+  },
+  {
+   "name": null,
+   "km_from_start": 3.1,
+   "off_road_m": 81,
+   "lat": 34.07806,
+   "lon": 74.79532,
+   "osm_url": "https://www.openstreetmap.org/node/5936064833"
+  },
+  {
+   "name": "Police Station Fateh Kadal",
+   "km_from_start": 3.3,
+   "off_road_m": 1469,
+   "lat": 34.08771,
+   "lon": 74.80759,
+   "osm_url": "https://www.openstreetmap.org/node/9107526536"
+  },
+  {
+   "name": "Police Station Maharaj Gunj",
+   "km_from_start": 3.4,
+   "off_road_m": 1738,
+   "lat": 34.09293,
+   "lon": 74.80574,
+   "osm_url": "https://www.openstreetmap.org/node/11367092514"
+  },
+  {
+   "name": "J&K Police Station Housing Colony Bemina",
+   "km_from_start": 5.1,
+   "off_road_m": 9,
+   "lat": 34.08688,
+   "lon": 74.78019,
+   "osm_url": "https://www.openstreetmap.org/node/9087673782"
+  },
+  {
+   "name": "Police Station Safakadal",
+   "km_from_start": 5.2,
+   "off_road_m": 1362,
+   "lat": 34.09396,
+   "lon": 74.79245,
+   "osm_url": "https://www.openstreetmap.org/node/9113500900"
+  },
+  {
+   "name": "Police Post Noorbagh",
+   "km_from_start": 5.7,
+   "off_road_m": 923,
+   "lat": 34.09617,
+   "lon": 74.78546,
+   "osm_url": "https://www.openstreetmap.org/node/9107521689"
+  },
+  {
+   "name": "Police Station Parimpora",
+   "km_from_start": 8.2,
+   "off_road_m": 23,
+   "lat": 34.10568,
+   "lon": 74.75731,
+   "osm_url": "https://www.openstreetmap.org/node/9087703453"
+  }
+ ]
+}
