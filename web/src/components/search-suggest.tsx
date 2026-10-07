@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useEffect, useId, useMemo, useRef, useState, type KeyboardEvent, type ReactNode } from "react";
 
+import { track } from "@/lib/analytics";
 import { suggest, type SearchRoute, type Suggestion } from "@/lib/search";
 
 import { IconFlag, IconMap, IconSearch, IconX } from "./icons";
@@ -123,6 +124,7 @@ export function SearchSuggest({
   function go(row: number) {
     const href = hrefOf(row);
     if (!href) return;
+    track("Search suggestion picked", { kind: href.startsWith("/?") ? "all routes" : (found[row]?.kind ?? "route") });
     chosen();
     // Searching every route loads the front page afresh, so it reads the search from the address.
     if (href.startsWith("/?")) window.location.assign(href);
@@ -257,6 +259,8 @@ export function SearchSuggest({
                 onMouseDown={(e) => e.preventDefault()}
                 onMouseMove={() => setActive(at)}
                 onClick={chosen}
+                data-track="Search suggestion picked"
+                data-track-props={JSON.stringify({ kind: s.kind })}
                 className={`flex min-h-11 items-center gap-2.5 px-3 py-1.5 ${active === at ? "bg-sign-soft" : ""}`}
               >
                 {s.kind === "place" ? (
@@ -284,6 +288,8 @@ export function SearchSuggest({
             onMouseDown={(e) => e.preventDefault()}
             onMouseMove={() => setActive(found.length)}
             onClick={chosen}
+            data-track="Search suggestion picked"
+            data-track-props='{"kind":"all routes"}'
             className={`flex min-h-11 items-center gap-2.5 px-3 py-1.5 text-sm font-semibold text-sign ${
               found.length > 0 ? "border-t border-line" : ""
             } ${active === found.length ? "bg-sign-soft" : ""}`}

@@ -78,6 +78,17 @@ Put them in `web/.env.local` on your own machine, one per line, as `NAME=value`.
 | `MEEL_EDITOR_EMAILS` | The email of each editor, with commas between them | Nobody is an editor, and the inbox at `/editor` cannot be opened |
 | `MEEL_EDITOR_SIGNUP` | Set to `open` to let an editor's email sign up with a password | An editor's email cannot sign up with a password. Logging in with Google still works |
 | `NEXT_PUBLIC_MEEL_CHAT_NUMBER` | A WhatsApp number, with country code, digits only. Adds "Send from my chat app instead" to the report sheet | That button is not shown |
+| `NEXT_PUBLIC_MIXPANEL_TOKEN` | Another Mixpanel project's token, such as a test project's. See "Mixpanel" | Meel's own project, "Meel", whose token is in `src/lib/analytics-config.ts` |
+| `NEXT_PUBLIC_MIXPANEL_API_HOST` | Where that other project keeps its data: `https://api.mixpanel.com` for the US, `https://api-in.mixpanel.com` for India | `https://api-eu.mixpanel.com`, as Meel's project keeps its data in the EU |
+| `NEXT_PUBLIC_MIXPANEL_IN_DEVELOPMENT` | `1` to send events from your own machine too. Use a separate test project | On your own machine each event is written to the browser's console instead of being sent |
+
+### Mixpanel
+
+All of it is in `src/lib/analytics.ts`. The list of events, with what each one means, is `EVENTS` there; each is sent from the place a rider does the thing. Parts of a page made on the server name their event in the markup, as `data-track="Route file downloaded"`, and `src/components/analytics-start.tsx` counts the click.
+
+What is never sent: a name, an email, a phone number, anything typed into a box, or the part of an address after "?". Mixpanel's own automatic capture and screen recording are off. Its random visitor number is kept in the browser's storage, not a cookie. A browser set to "Do Not Track" is not counted. Logged-in riders are not identified.
+
+Where it counts: the project "Meel" in Vishal's own Mixpanel organisation, made on 7 October 2026, data kept in the EU, days in India's time. Only the live site counts: not this machine, and not Vercel's preview deployments. The token is in the code because it is public by design: every page carries it, and it can only send events, not read them.
 
 ### Setting up Google
 

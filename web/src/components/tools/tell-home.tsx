@@ -2,6 +2,7 @@
 
 import { useState, useSyncExternalStore } from "react";
 
+import { track } from "@/lib/analytics";
 import { indiaDay, sayDate } from "@/lib/format";
 import { SITE_URL } from "@/lib/site";
 
@@ -68,6 +69,7 @@ export function TellHome({
   async function copy() {
     try {
       await navigator.clipboard.writeText(message);
+      track("Message for home sent", { via: "copy" });
       setCopied(true);
       window.setTimeout(() => setCopied(false), 2500);
     } catch {
@@ -116,7 +118,14 @@ export function TellHome({
               "Copy"
             )}
           </button>
-          <a href={whatsapp} target="_blank" rel="noopener noreferrer" className="btn btn-primary">
+          <a
+            href={whatsapp}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn btn-primary"
+            data-track="Message for home sent"
+            data-track-props='{"via":"WhatsApp"}'
+          >
             <IconSend className="size-4" />
             Send on WhatsApp
           </a>

@@ -5,6 +5,7 @@ import { PageTitle } from "@/components/form";
 import { IconCheck, IconClock } from "@/components/icons";
 import { Callout, KmStone, StateBadge } from "@/components/ui";
 import { getFactKinds, getIndex } from "@/lib/content";
+import { ANALYTICS_ON } from "@/lib/analytics-config";
 
 export const metadata: Metadata = {
   title: "About Meel",
@@ -123,6 +124,9 @@ export default async function AboutPage() {
 
       <Callout title="Kept by one person, as a hobby">
         No advertising. No paid listings. If that ever changes, every paid link will be marked as such. Visits are counted with Vercel’s Web Analytics, which uses no cookies and keeps nothing that names you.
+        {ANALYTICS_ON
+          ? " Mixpanel counts which pages are read and which tools are used, such as the fuel check or the route file. It keeps a random number in your browser to tell visits apart, and never your name, your email or anything you type. A browser set to “Do Not Track” is not counted."
+          : null}
       </Callout>
 
       <nav className="flex flex-wrap gap-x-4 gap-y-1">

@@ -2,6 +2,7 @@
 
 import { useState, useSyncExternalStore } from "react";
 
+import { track } from "@/lib/analytics";
 import { SITE_URL } from "@/lib/site";
 
 import { IconCheck, IconSend } from "../icons";
@@ -34,6 +35,7 @@ export function ShareTrip({
   async function copy() {
     try {
       await navigator.clipboard.writeText(link);
+      track("Trip shared", { via: "copy" });
       setCopied(true);
       window.setTimeout(() => setCopied(false), 2500);
     } catch {
@@ -45,6 +47,8 @@ export function ShareTrip({
     <div className="flex flex-col gap-2">
       <a
         href={whatsapp}
+        data-track="Trip shared"
+        data-track-props='{"via":"WhatsApp"}'
         target="_blank"
         rel="noopener noreferrer"
         className={`btn btn-block ${primary ? "btn-primary" : "btn-outline"}`}

@@ -2,6 +2,7 @@
 
 import { type FormEvent, useEffect, useId, useRef, useState, useSyncExternalStore } from "react";
 
+import { track } from "@/lib/analytics";
 import { CHANGE_CHOICES, MIN_REASON, REASON_WORDS } from "@/lib/change-choices";
 import type { FactView } from "@/lib/fact-view";
 import { indiaDay, sayDate } from "@/lib/format";
@@ -247,9 +248,18 @@ function ReportForm({
     const body = new FormData(event.currentTarget);
     const fields = Object.fromEntries([...body.entries()].filter((e): e is [string, string] => typeof e[1] === "string"));
     // With no network the report waits on this phone, with the day the rider saw it.
-    const hold = () =>
+    const sent = (keptOffline: boolean) =>
+      track("Fact report sent", {
+        route: routeSlug,
+        section: view.section,
+        kind: changed ? "changed" : "still-true",
+        kept_offline: keptOffline,
+      });
+    const hold = () => {
+      const kept = keep(fields);
+      if (kept) sent(true);
       setState(
-        keep(fields)
+        kept
           ? {
               ok: true,
               errors: {},
@@ -257,6 +267,7 @@ function ReportForm({
             }
           : { ...START, message: "No network, and this phone would not keep the report. Try again when you have a signal." },
       );
+    };
     if (!navigator.onLine) {
       hold();
       return;
@@ -266,6 +277,7 @@ function ReportForm({
       const reply = await fetch("/api/fact-report", { method: "POST", body });
       const answer: unknown = await reply.json();
       setState(isAnswer(answer) ? answer : { ...START, message: "That did not go through. Try again." });
+      if (isAnswer(answer) && answer.ok) sent(false);
     } catch {
       hold();
     } finally {

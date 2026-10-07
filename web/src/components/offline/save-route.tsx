@@ -2,6 +2,7 @@
 
 import { useEffect, useRef, useState } from "react";
 
+import { track } from "@/lib/analytics";
 import { plural } from "@/lib/format";
 import { useStored } from "@/lib/use-stored";
 
@@ -121,6 +122,7 @@ export function SaveRoute({
       return;
     }
     setRaw(JSON.stringify({ at: new Date().toISOString(), bytes: result.bytes ?? 0, pages: result.saved ?? 0 }));
+    track("Route saved for no network", { route: routeSlug, pages: result.saved ?? 0 });
   }
 
   async function remove() {

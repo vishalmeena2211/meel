@@ -2342,6 +2342,7 @@ Rahul N. · seen 13 June 2027 · sent from the chat app at 9:12 pm</div>
         <div class="input">${ICON.search}<span>Search a route or place</span></div>`)}
       ${tabbar('')}`),
     notes: [
+      ['Counting visits', ['Visits are counted with Vercel’s Web Analytics: no cookies, nothing that names a rider.', 'Once Mixpanel is switched on (its token set), the callout adds one sentence: “Mixpanel counts which pages are read and which tools are used, such as the fuel check or the route file. It keeps a random number in your browser to tell visits apart, and never your name, your email or anything you type. A browser set to “Do Not Track” is not counted.”', 'The events are listed in web/src/lib/analytics.ts. No screen changes for them.']],
       ['Tools', ['The three tools are the same ones reached from a route page. Here the rider picks the route first.', 'Before a route is picked, tapping a tool opens the list of routes, and picking one goes straight to that tool for it.', 'They work with no network only on a route saved with “Save for the road”, and the line under the name says so.', 'The bike is kept on the phone, so the fuel check is one tap on any route. No account needed.']],
       ['About', ['Says plainly what the site does not do, and that most facts are unchecked at the start.', 'This is the page a careful rider reads before trusting a fuel gap with their trip.']],
       ['Not found', ['Says what happened and offers the two useful ways on: all routes, or search.']],

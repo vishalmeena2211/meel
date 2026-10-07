@@ -11,10 +11,12 @@ import { Callout, SectionHeading } from "../ui";
   The third, the message for home, is written in the browser: see tell-home.tsx.
 */
 
-function LinkRow({ href, title, sub }: { href: string; title: string; sub: string }) {
+function LinkRow({ href, title, sub, app }: { href: string; title: string; sub: string; app: string }) {
   return (
     <a
       href={href}
+      data-track="Map app opened"
+      data-track-props={JSON.stringify({ app })}
       target="_blank"
       rel="noreferrer noopener"
       className="flex min-h-12 items-center gap-2.5 border-b border-line px-3 py-2.5 last:border-b-0 hover:bg-surface-2"
@@ -42,7 +44,12 @@ export function MapAppsScreen({ route }: { route: Route }) {
       <Callout tone="info" title="Meel draws no map">
         Your map app draws the road on its own map. The file carries the road line and the places on it.
       </Callout>
-      <a className="btn btn-primary btn-block md:w-auto md:self-start" href={gpxPath(route.slug)} download={`${route.slug}.gpx`}>
+      <a
+        className="btn btn-primary btn-block md:w-auto md:self-start"
+        href={gpxPath(route.slug)}
+        download={`${route.slug}.gpx`}
+        data-track="Route file downloaded"
+      >
         <IconSave />
         Download the route file (GPX)
       </a>
@@ -56,11 +63,17 @@ export function MapAppsScreen({ route }: { route: Route }) {
           <h2 className="label">Or open it straight in an app</h2>
           <div className="card flex flex-col">
             {organic ? (
-              <LinkRow href={organic} title="Open in Organic Maps" sub="Free, works with no network once its map is downloaded" />
+              <LinkRow
+                href={organic}
+                app="Organic Maps"
+                title="Open in Organic Maps"
+                sub="Free, works with no network once its map is downloaded"
+              />
             ) : null}
             {google ? (
               <LinkRow
                 href={google}
+                app="Google Maps"
                 title="Open in Google Maps"
                 sub={stops > 0 ? `Two-wheeler directions through ${plural(stops, "place")} on the way` : "Two-wheeler directions"}
               />
@@ -122,7 +135,12 @@ export function EmergencyCard({ route, help, fetched }: { route: Route; help: Ro
   return (
     <div className="flex flex-col gap-3">
       <div className="grid gap-2 lg:grid-cols-2">
-        <a href="tel:112" className="card flex items-center gap-3 px-3 py-2.5 hover:bg-surface-2">
+        <a
+          href="tel:112"
+          data-track="Emergency number tapped"
+          data-track-props='{"number":"112"}'
+          className="card flex items-center gap-3 px-3 py-2.5 hover:bg-surface-2"
+        >
           <b className="display num min-w-16 text-[1.75rem] leading-none">112</b>
           <span className="min-w-0">
             <b className="block text-[0.9375rem] leading-5">Police, fire, ambulance</b>
@@ -130,7 +148,12 @@ export function EmergencyCard({ route, help, fetched }: { route: Route; help: Ro
           </span>
         </a>
         {highways.length > 0 ? (
-          <a href="tel:1033" className="card flex items-center gap-3 px-3 py-2.5 hover:bg-surface-2">
+          <a
+            href="tel:1033"
+            data-track="Emergency number tapped"
+            data-track-props='{"number":"1033"}'
+            className="card flex items-center gap-3 px-3 py-2.5 hover:bg-surface-2"
+          >
             <b className="display num min-w-16 text-[1.75rem] leading-none">1033</b>
             <span className="min-w-0">
               <b className="block text-[0.9375rem] leading-5">National highway helpline</b>

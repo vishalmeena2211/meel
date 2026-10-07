@@ -8,7 +8,7 @@ import { FactSheet } from "@/components/route/fact-sheet";
 import { HeadSlot, RouteNav, type NavItem } from "@/components/route/route-nav";
 import { SectionIcon } from "@/components/route/route-parts";
 import { Badge, SectionHeading } from "@/components/ui";
-import { daysBetween, plural, sayAge, sayDate } from "@/lib/format";
+import { daysBetween, hostOf, plural, sayAge, sayDate } from "@/lib/format";
 import { REPORTS_NEEDED } from "@/lib/sections";
 import { alertsFor, officeDates, readableHost } from "@/server/live";
 import { savedPages } from "@/server/route-pages";
@@ -110,6 +110,8 @@ export default async function RouteLayout(props: LayoutProps<"/routes/[slug]">) 
                 <li key={v.slug} className="border-b border-line last:border-b-0">
                   <a
                     href={seen[i]?.url ?? v.rowLink?.url ?? v.href}
+                    data-track={seen[i]?.url || v.rowLink ? "Office page opened" : undefined}
+                    data-track-props={JSON.stringify({ host: hostOf(seen[i]?.url ?? v.rowLink?.url ?? "") })}
                     target={seen[i]?.url || v.rowLink ? "_blank" : undefined}
                     rel={seen[i]?.url || v.rowLink ? "noreferrer noopener" : undefined}
                     className="flex min-h-12 items-center gap-2 px-3 py-2 hover:bg-surface-2"

@@ -1,10 +1,11 @@
 "use client";
 
 import Link from "next/link";
-import { useActionState, useRef, useState, useSyncExternalStore, type FormEvent } from "react";
+import { useActionState, useEffect, useRef, useState, useSyncExternalStore, type FormEvent } from "react";
 
 import { reportTrip, suggest } from "@/app/actions/reports";
 import type { FormState } from "@/components/form";
+import { track } from "@/lib/analytics";
 import { indiaMonth, km, sayDate } from "@/lib/format";
 
 import { Area, BLANK, ErrorSummary, Field, ListField, MonthField, routeGroups } from "../form";
@@ -113,6 +114,15 @@ function ReportSteps({ routes, startRoute, loggedInAs, chatNumber, openAt }: Pro
   const [missing, setMissing] = useState<Record<string, string>>({});
 
   const live: Values = { ...v, ...now };
+  const counted = useRef<FormState | null>(null);
+  const sentRoute = live.route ?? startRoute ?? null;
+  const sentMonth = live.month ?? null;
+  useEffect(() => {
+    // Counted once for each report the server accepted.
+    if (!state.ok || counted.current === state) return;
+    counted.current = state;
+    track("Trip report sent", { route: sentRoute, month: sentMonth });
+  }, [state, sentRoute, sentMonth]);
   const routeSlug = live.route ?? startRoute;
   const route = routes.find((r) => r.slug === routeSlug) ?? null;
   const groups = routeGroups(routes);

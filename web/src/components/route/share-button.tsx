@@ -2,6 +2,8 @@
 
 import { useState } from "react";
 
+import { track } from "@/lib/analytics";
+
 import { IconCheck, IconShare } from "../icons";
 
 /** Shares this page's address. Falls back to copying it where the phone has no share sheet. */
@@ -13,9 +15,11 @@ export function ShareButton({ title }: { title: string }) {
     try {
       if (typeof navigator.share === "function") {
         await navigator.share({ title, url });
+        track("Page shared", { via: "share sheet" });
         return;
       }
       await navigator.clipboard.writeText(url);
+      track("Page shared", { via: "copy" });
       setCopied(true);
       window.setTimeout(() => setCopied(false), 2500);
     } catch {

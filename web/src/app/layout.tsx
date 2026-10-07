@@ -1,4 +1,6 @@
 import { Analytics } from "@vercel/analytics/next";
+
+import { AnalyticsStart } from "@/components/analytics-start";
 import type { Metadata, Viewport } from "next";
 import { Barlow_Condensed, Hind } from "next/font/google";
 import Link from "next/link";
@@ -81,6 +83,8 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         <OutboxSender />
         {/* Counts page views on Vercel: no cookies, nothing that names a rider. Sends nothing in development. */}
         <Analytics />
+        {/* Mixpanel: pages and the tools riders use. Off until its token is set; see src/lib/analytics.ts. */}
+        <AnalyticsStart />
       </body>
     </html>
   );

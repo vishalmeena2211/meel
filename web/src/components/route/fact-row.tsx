@@ -1,4 +1,5 @@
 import type { FactView } from "@/lib/fact-view";
+import { hostOf } from "@/lib/format";
 
 import { IconCheck, IconExternal } from "../icons";
 import { Badge, StateBadge } from "../ui";
@@ -73,6 +74,8 @@ export function FactRow({
         <a
           className="btn btn-soft fact-over mt-1.5 self-start"
           href={view.rowLink.url}
+          data-track={view.section === "open" ? "Office page opened" : undefined}
+          data-track-props={view.section === "open" ? JSON.stringify({ host: hostOf(view.rowLink.url) }) : undefined}
           target="_blank"
           rel="noreferrer noopener"
         >

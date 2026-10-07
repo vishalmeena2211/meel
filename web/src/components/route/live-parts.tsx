@@ -69,7 +69,13 @@ export function OfficialAlerts({ read }: { read: AlertsRead }) {
                   Issued {sayMoment(a.sent)}
                   {a.expires ? ` · until ${sayMoment(a.expires)}` : ""}
                 </p>
-                <a className="link self-start text-sm" href={a.url} target="_blank" rel="noreferrer noopener">
+                <a
+                  className="link self-start text-sm"
+                  href={a.url}
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  data-track="Official alert opened"
+                >
                   Read it on SACHET
                 </a>
               </article>

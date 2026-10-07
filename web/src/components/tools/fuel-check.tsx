@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useMemo, useState } from "react";
 
+import { track } from "@/lib/analytics";
 import { km } from "@/lib/format";
 import type { Bike, FuelGap, Terrain } from "@/lib/types";
 import { parseStored, useStored } from "@/lib/use-stored";
@@ -104,6 +105,7 @@ export function FuelCheckScreen({
     };
     setRaw(JSON.stringify(value));
     setPicking(false);
+    track("Fuel check run", { route: routeSlug, bike: value.name, from: value.from });
   }
 
   // A bike on the list with a maker's figure has all the answer needs, so picking it shows the answer at once.
@@ -115,6 +117,7 @@ export function FuelCheckScreen({
     const value: SavedBike = { bikeId: b.id, name: `${b.maker} ${b.model}`, tank: b.tank_litres, kmpl: figure, from: "maker" };
     setRaw(JSON.stringify(value));
     setPicking(false);
+    track("Fuel check run", { route: routeSlug, bike: value.name, from: value.from });
   }
 
   // The button is needed only when the rider has something to type: their own bike, a bike with no maker's figure,
