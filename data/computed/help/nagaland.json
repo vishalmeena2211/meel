@@ -1,5 +1,5 @@
 {
- "fetched": "2026-10-06",
+ "fetched": "2026-10-07",
  "hospitals": [
   {
    "name": "Metro Hospital, Dimapur",
@@ -91,7 +91,7 @@
   },
   {
    "name": "Olive Christian Hospital and Reserch Centre",
-   "km_from_start": 6.0,
+   "km_from_start": 6.1,
    "off_road_m": 362,
    "lat": 25.88729,
    "lon": 93.75569,
@@ -99,7 +99,7 @@
   },
   {
    "name": "Christian Institute of Health Sciences and Research Hospital",
-   "km_from_start": 8.1,
+   "km_from_start": 8.2,
    "off_road_m": 536,
    "lat": 25.87004,
    "lon": 93.75986,
@@ -123,7 +123,7 @@
   },
   {
    "name": "CHC, Medziphema",
-   "km_from_start": 31.3,
+   "km_from_start": 31.4,
    "off_road_m": 79,
    "lat": 25.76274,
    "lon": 93.88446,
@@ -131,7 +131,7 @@
   },
   {
    "name": "Naga Hospital",
-   "km_from_start": 69.5,
+   "km_from_start": 69.8,
    "off_road_m": 72,
    "lat": 25.66942,
    "lon": 94.09607,
@@ -139,7 +139,7 @@
   },
   {
    "name": "Kohima Diagnostic Center",
-   "km_from_start": 72.9,
+   "km_from_start": 73.2,
    "off_road_m": 16,
    "lat": 25.65569,
    "lon": 94.09906,
@@ -147,7 +147,7 @@
   },
   {
    "name": "Kohima Mental Hospital",
-   "km_from_start": 75.4,
+   "km_from_start": 75.8,
    "off_road_m": 519,
    "lat": 25.64489,
    "lon": 94.10329,
@@ -155,7 +155,7 @@
   },
   {
    "name": "Government Hospital, Zakhama",
-   "km_from_start": 84.9,
+   "km_from_start": 85.3,
    "off_road_m": 79,
    "lat": 25.60369,
    "lon": 94.12252,
@@ -163,7 +163,7 @@
   },
   {
    "name": "Oking Hospital And Research Clinic Pvt Ltd",
-   "km_from_start": 116.7,
+   "km_from_start": 117.2,
    "off_road_m": 20,
    "lat": 25.66888,
    "lon": 94.10566,
@@ -171,7 +171,7 @@
   },
   {
    "name": "Wokha, District Hospital",
-   "km_from_start": 189.5,
+   "km_from_start": 190.3,
    "off_road_m": 363,
    "lat": 26.0791,
    "lon": 94.25912,
@@ -179,7 +179,7 @@
   },
   {
    "name": "N.Ezung Hospital",
-   "km_from_start": 191.6,
+   "km_from_start": 192.4,
    "off_road_m": 32,
    "lat": 26.09195,
    "lon": 94.25775,
@@ -187,7 +187,7 @@
   },
   {
    "name": "Unit Hospital",
-   "km_from_start": 247.7,
+   "km_from_start": 248.8,
    "off_road_m": 41,
    "lat": 26.27046,
    "lon": 94.44696,
@@ -195,57 +195,81 @@
   },
   {
    "name": "Assamrifle Hospital",
-   "km_from_start": 259.0,
-   "off_road_m": 170,
+   "km_from_start": 259.9,
+   "off_road_m": 54,
    "lat": 26.3176,
    "lon": 94.50948,
    "osm_url": "https://www.openstreetmap.org/node/7614502552"
   },
   {
-   "name": "Modern Clinic",
-   "km_from_start": 260.4,
-   "off_road_m": 1400,
-   "lat": 26.32408,
-   "lon": 94.52179,
-   "osm_url": "https://www.openstreetmap.org/node/2686563541"
-  },
-  {
    "name": "Doctor's Clinic & Mediciner",
-   "km_from_start": 260.4,
-   "off_road_m": 1004,
+   "km_from_start": 261.6,
+   "off_road_m": 2,
    "lat": 26.32435,
    "lon": 94.51774,
    "osm_url": "https://www.openstreetmap.org/node/2689917278"
   },
   {
+   "name": "Modern Clinic",
+   "km_from_start": 262.0,
+   "off_road_m": 16,
+   "lat": 26.32408,
+   "lon": 94.52179,
+   "osm_url": "https://www.openstreetmap.org/node/2686563541"
+  },
+  {
    "name": "Impur Mission Hospital Clinic",
-   "km_from_start": 260.4,
-   "off_road_m": 1433,
+   "km_from_start": 262.2,
+   "off_road_m": 19,
    "lat": 26.32537,
    "lon": 94.52241,
    "osm_url": "https://www.openstreetmap.org/node/2696256995"
   },
   {
-   "name": "NPPC Hospital",
-   "km_from_start": 364.9,
-   "off_road_m": 405,
-   "lat": 26.71428,
-   "lon": 94.6351,
-   "osm_url": "https://www.openstreetmap.org/node/7614502613"
+   "name": "Lenjem Hospital",
+   "km_from_start": 263.6,
+   "off_road_m": 16,
+   "lat": 26.33096,
+   "lon": 94.53099,
+   "osm_url": "https://www.openstreetmap.org/node/7614502531"
   },
   {
-   "name": "Amgoori Tea Estate Hospital",
-   "km_from_start": 374.5,
-   "off_road_m": 1015,
-   "lat": 26.75916,
-   "lon": 94.56616,
-   "osm_url": "https://www.openstreetmap.org/node/7153386687"
+   "name": "Longleng, District Hospital",
+   "km_from_start": 332.2,
+   "off_road_m": 48,
+   "lat": 26.49298,
+   "lon": 94.80426,
+   "osm_url": "https://www.openstreetmap.org/node/7100882252"
+  },
+  {
+   "name": "Pharmacy",
+   "km_from_start": 332.3,
+   "off_road_m": 28,
+   "lat": 26.49149,
+   "lon": 94.8048,
+   "osm_url": "https://www.openstreetmap.org/node/11356598277"
+  },
+  {
+   "name": "Rapha Hospital",
+   "km_from_start": 420.6,
+   "off_road_m": 255,
+   "lat": 26.72194,
+   "lon": 95.02892,
+   "osm_url": "https://www.openstreetmap.org/node/7614502589"
+  },
+  {
+   "name": "Mon, District Hospital",
+   "km_from_start": 421.1,
+   "off_road_m": 265,
+   "lat": 26.7239,
+   "lon": 95.02879,
+   "osm_url": "https://www.openstreetmap.org/node/7100882236"
   }
  ],
  "police": [
   {
    "name": "Police Station",
-   "km_from_start": 55.2,
+   "km_from_start": 55.4,
    "off_road_m": 30,
    "lat": 25.72072,
    "lon": 94.04244,
@@ -253,7 +277,7 @@
   },
   {
    "name": "SP Office",
-   "km_from_start": 71.3,
+   "km_from_start": 71.6,
    "off_road_m": 217,
    "lat": 25.66394,
    "lon": 94.09882,
@@ -261,7 +285,7 @@
   },
   {
    "name": "South Police Station",
-   "km_from_start": 113.7,
+   "km_from_start": 114.2,
    "off_road_m": 59,
    "lat": 25.6531,
    "lon": 94.10165,
@@ -269,7 +293,7 @@
   },
   {
    "name": "North Police Station",
-   "km_from_start": 117.6,
+   "km_from_start": 118.1,
    "off_road_m": 45,
    "lat": 25.67577,
    "lon": 94.1093,
@@ -277,7 +301,7 @@
   },
   {
    "name": "CRPF Camp",
-   "km_from_start": 121.5,
+   "km_from_start": 122.0,
    "off_road_m": 1351,
    "lat": 25.70636,
    "lon": 94.10795,
@@ -285,35 +309,27 @@
   },
   {
    "name": "PS-2",
-   "km_from_start": 260.4,
-   "off_road_m": 1110,
+   "km_from_start": 261.7,
+   "off_road_m": 37,
    "lat": 26.32409,
    "lon": 94.51877,
    "osm_url": "https://www.openstreetmap.org/way/262879659"
   },
   {
    "name": "Nagaland Police",
-   "km_from_start": 260.4,
-   "off_road_m": 1644,
+   "km_from_start": 262.2,
+   "off_road_m": 181,
    "lat": 26.3252,
    "lon": 94.52452,
    "osm_url": "https://www.openstreetmap.org/way/1223794667"
   },
   {
    "name": "Superintendent of Police Office",
-   "km_from_start": 260.4,
-   "off_road_m": 1633,
+   "km_from_start": 262.4,
+   "off_road_m": 167,
    "lat": 26.32573,
    "lon": 94.52447,
    "osm_url": "https://www.openstreetmap.org/way/1223794669"
-  },
-  {
-   "name": "Amguri Police Station",
-   "km_from_start": 385.8,
-   "off_road_m": 283,
-   "lat": 26.81229,
-   "lon": 94.52088,
-   "osm_url": "https://www.openstreetmap.org/node/11357598691"
   }
  ]
 }

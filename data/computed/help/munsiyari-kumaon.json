@@ -1,5 +1,5 @@
 {
- "fetched": "2026-10-06",
+ "fetched": "2026-10-07",
  "hospitals": [
   {
    "name": "CRPF Hospital",
@@ -11,7 +11,7 @@
   },
   {
    "name": "Amakona Hospital",
-   "km_from_start": 39.8,
+   "km_from_start": 39.9,
    "off_road_m": 48,
    "lat": 29.38111,
    "lon": 79.4663,
@@ -19,7 +19,7 @@
   },
   {
    "name": "Ramsay Hospital",
-   "km_from_start": 39.9,
+   "km_from_start": 40.0,
    "off_road_m": 111,
    "lat": 29.3821,
    "lon": 79.46613,
@@ -27,7 +27,7 @@
   },
   {
    "name": "Sitapur Hospital",
-   "km_from_start": 41.3,
+   "km_from_start": 41.4,
    "off_road_m": 379,
    "lat": 29.39051,
    "lon": 79.45756,
@@ -35,7 +35,7 @@
   },
   {
    "name": "BD Pandey District Hospital",
-   "km_from_start": 41.3,
+   "km_from_start": 41.4,
    "off_road_m": 827,
    "lat": 29.39265,
    "lon": 79.4532,
@@ -43,7 +43,7 @@
   },
   {
    "name": "The Leprosy Mission Hospital",
-   "km_from_start": 103.2,
+   "km_from_start": 103.4,
    "off_road_m": 158,
    "lat": 29.58278,
    "lon": 79.6416,
@@ -51,7 +51,7 @@
   },
   {
    "name": "Govardhan Tiwari Rajkiya Base Hospital Almora",
-   "km_from_start": 103.8,
+   "km_from_start": 104.1,
    "off_road_m": 460,
    "lat": 29.59293,
    "lon": 79.63858,
@@ -59,7 +59,7 @@
   },
   {
    "name": "Govardhan Tiwari Rajkiya Base Hospital Almora",
-   "km_from_start": 103.8,
+   "km_from_start": 104.1,
    "off_road_m": 513,
    "lat": 29.59311,
    "lon": 79.63766,
@@ -67,7 +67,7 @@
   },
   {
    "name": "Sitapur Eye Hospital",
-   "km_from_start": 104.9,
+   "km_from_start": 105.1,
    "off_road_m": 11,
    "lat": 29.5918,
    "lon": 79.64953,
@@ -75,7 +75,7 @@
   },
   {
    "name": "Jeewan Jyoti Women Hospital",
-   "km_from_start": 105.9,
+   "km_from_start": 106.1,
    "off_road_m": 2,
    "lat": 29.59699,
    "lon": 79.65677,
@@ -83,7 +83,7 @@
   },
   {
    "name": "Pandit Hargovind Pant District Hospital",
-   "km_from_start": 106.1,
+   "km_from_start": 106.4,
    "off_road_m": 36,
    "lat": 29.59797,
    "lon": 79.65883,
@@ -91,7 +91,7 @@
   },
   {
    "name": "Anjali Hospital",
-   "km_from_start": 291.2,
+   "km_from_start": 291.9,
    "off_road_m": 20,
    "lat": 29.59707,
    "lon": 79.65635,
@@ -99,7 +99,7 @@
   },
   {
    "name": "M N Srivastava Hospital",
-   "km_from_start": 291.2,
+   "km_from_start": 291.9,
    "off_road_m": 688,
    "lat": 29.60195,
    "lon": 79.6523,
@@ -107,27 +107,27 @@
   },
   {
    "name": "Government Medical College Hospital, Almora",
-   "km_from_start": 295.5,
+   "km_from_start": 296.2,
    "off_road_m": 479,
    "lat": 29.60514,
    "lon": 79.64586,
    "osm_url": "https://www.openstreetmap.org/node/7479937213"
   },
   {
-   "name": "Shyam Lal Shah Gangola District Hospital",
-   "km_from_start": 363.2,
-   "off_road_m": 242,
-   "lat": 29.83953,
-   "lon": 79.77551,
-   "osm_url": "https://www.openstreetmap.org/node/6956959653"
-  },
-  {
    "name": "Bageshwar Governnment Hospital",
-   "km_from_start": 363.3,
-   "off_road_m": 124,
+   "km_from_start": 364.2,
+   "off_road_m": 63,
    "lat": 29.83998,
    "lon": 79.77433,
    "osm_url": "https://www.openstreetmap.org/node/7121752320"
+  },
+  {
+   "name": "Shyam Lal Shah Gangola District Hospital",
+   "km_from_start": 364.3,
+   "off_road_m": 22,
+   "lat": 29.83953,
+   "lon": 79.77551,
+   "osm_url": "https://www.openstreetmap.org/node/6956959653"
   }
  ],
  "police": [
@@ -149,7 +149,7 @@
   },
   {
    "name": "Reportingg Police Chawki Julikote",
-   "km_from_start": 16.0,
+   "km_from_start": 16.1,
    "off_road_m": 36,
    "lat": 29.33979,
    "lon": 79.48465,
@@ -157,7 +157,7 @@
   },
   {
    "name": "Mallital Police Station",
-   "km_from_start": 41.3,
+   "km_from_start": 41.4,
    "off_road_m": 793,
    "lat": 29.39128,
    "lon": 79.4533,

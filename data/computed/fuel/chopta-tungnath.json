@@ -1,6 +1,6 @@
 {
  "slug": "chopta-tungnath",
- "fetched": "2026-10-06",
+ "fetched": "2026-10-07",
  "search_radius_m": 900,
  "pumps": [
   {
@@ -129,7 +129,7 @@
    "brand": null,
    "lat": 30.08444,
    "lon": 78.57507,
-   "km_from_start": 54.8,
+   "km_from_start": 54.7,
    "off_road_m": 47,
    "opening_hours": null,
    "petrol": null,
@@ -153,7 +153,7 @@
    "brand": null,
    "lat": 30.22591,
    "lon": 78.67838,
-   "km_from_start": 87.7,
+   "km_from_start": 87.6,
    "off_road_m": 27,
    "opening_hours": null,
    "petrol": null,
@@ -165,7 +165,7 @@
    "brand": null,
    "lat": 30.23078,
    "lon": 78.72509,
-   "km_from_start": 95.3,
+   "km_from_start": 95.2,
    "off_road_m": 30,
    "opening_hours": null,
    "petrol": null,
@@ -177,7 +177,7 @@
    "brand": null,
    "lat": 30.23037,
    "lon": 78.72553,
-   "km_from_start": 95.4,
+   "km_from_start": 95.3,
    "off_road_m": 37,
    "opening_hours": null,
    "petrol": null,
@@ -191,7 +191,7 @@
    "town": "Dungripanth",
    "lat": 30.2179,
    "lon": 78.76689,
-   "km_from_start": 101.0,
+   "km_from_start": 100.9,
    "off_road_m": 13,
    "opening_hours": null,
    "petrol": null,
@@ -202,7 +202,7 @@
     "kind": "official",
     "opened": true,
     "source_date": null,
-    "accessed": "2026-10-06"
+    "accessed": "2026-10-07"
    }
   },
   {
@@ -211,7 +211,7 @@
    "brand": null,
    "lat": 30.22767,
    "lon": 78.82243,
-   "km_from_start": 107.3,
+   "km_from_start": 107.2,
    "off_road_m": 2,
    "opening_hours": null,
    "petrol": null,
@@ -223,11 +223,33 @@
    "brand": "Indian Oil",
    "lat": 30.2676,
    "lon": 78.94802,
-   "km_from_start": 131.7,
+   "km_from_start": 131.6,
    "off_road_m": 7,
    "opening_hours": null,
    "petrol": null,
    "diesel": null
+  },
+  {
+   "osm": null,
+   "company_id": "iocl-238886",
+   "name": "Alaknanda Automobiles",
+   "brand": "Indian Oil",
+   "town": "Rudraprayag Market",
+   "lat": 30.2878,
+   "lon": 78.9859,
+   "km_from_start": 136.8,
+   "off_road_m": 64,
+   "opening_hours": null,
+   "petrol": null,
+   "diesel": null,
+   "source": {
+    "url": "https://locator.iocl.com/indianoil-alaknanda-automobiles-petrol-pump-rudraprayag-market-rudraprayag-238886/Home",
+    "title": "IndianOil locator: Alaknanda Automobiles, Rudraprayag Market",
+    "kind": "official",
+    "opened": true,
+    "source_date": null,
+    "accessed": "2026-10-07"
+   }
   },
   {
    "osm": null,
@@ -237,7 +259,7 @@
    "town": "Sandar",
    "lat": 30.30721,
    "lon": 78.98076,
-   "km_from_start": 139.1,
+   "km_from_start": 140.0,
    "off_road_m": 39,
    "opening_hours": null,
    "petrol": null,
@@ -248,7 +270,7 @@
     "kind": "official",
     "opened": true,
     "source_date": null,
-    "accessed": "2026-10-06"
+    "accessed": "2026-10-07"
    }
   },
   {
@@ -259,8 +281,8 @@
    "town": "Tilwara",
    "lat": 30.34029,
    "lon": 78.96833,
-   "km_from_start": 144.2,
-   "off_road_m": 9,
+   "km_from_start": 145.1,
+   "off_road_m": 1,
    "opening_hours": null,
    "petrol": null,
    "diesel": null,
@@ -270,7 +292,7 @@
     "kind": "official",
     "opened": true,
     "source_date": null,
-    "accessed": "2026-10-06"
+    "accessed": "2026-10-07"
    }
   },
   {
@@ -281,7 +303,7 @@
    "town": "Sisau",
    "lat": 30.36611,
    "lon": 78.99176,
-   "km_from_start": 148.9,
+   "km_from_start": 149.8,
    "off_road_m": 91,
    "opening_hours": null,
    "petrol": null,
@@ -292,29 +314,7 @@
     "kind": "official",
     "opened": true,
     "source_date": null,
-    "accessed": "2026-10-06"
-   }
-  },
-  {
-   "osm": null,
-   "company_id": "iocl-238212",
-   "name": "Amar Shaheed Govind Singh",
-   "brand": "Indian Oil",
-   "town": "Serabhardar",
-   "lat": 30.53816,
-   "lon": 79.08344,
-   "km_from_start": 176.4,
-   "off_road_m": 1019,
-   "opening_hours": null,
-   "petrol": null,
-   "diesel": null,
-   "source": {
-    "url": "https://locator.iocl.com/indianoil-amar-shaheed-govind-singh-petrol-pump-serabhardar-rudraprayag-238212/Home",
-    "title": "IndianOil locator: Amar Shaheed Govind Singh, Serabhardar",
-    "kind": "official",
-    "opened": true,
-    "source_date": null,
-    "accessed": "2026-10-06"
+    "accessed": "2026-10-07"
    }
   },
   {
@@ -325,8 +325,8 @@
    "town": "Bhainsari",
    "lat": 30.51358,
    "lon": 79.07126,
-   "km_from_start": 206.3,
-   "off_road_m": 21,
+   "km_from_start": 172.6,
+   "off_road_m": 1491,
    "opening_hours": null,
    "petrol": null,
    "diesel": null,
@@ -336,29 +336,29 @@
     "kind": "official",
     "opened": true,
     "source_date": null,
-    "accessed": "2026-10-06"
+    "accessed": "2026-10-07"
    }
   },
   {
    "osm": null,
-   "company_id": "hp-394321",
-   "name": "Chardham Filling Station",
-   "brand": "HP",
-   "town": "Kedarnath Road",
-   "lat": 30.5119,
-   "lon": 79.08558,
-   "km_from_start": 213.8,
-   "off_road_m": 10,
+   "company_id": "iocl-238212",
+   "name": "Amar Shaheed Govind Singh",
+   "brand": "Indian Oil",
+   "town": "Serabhardar",
+   "lat": 30.53816,
+   "lon": 79.08344,
+   "km_from_start": 175.2,
+   "off_road_m": 1377,
    "opening_hours": null,
    "petrol": null,
    "diesel": null,
    "source": {
-    "url": "https://petrolpump.hpretail.in/hindustan-petroleum-corporation-limited-chardham-filling-station-petrol-pump-kedarnath-road-rudraprayag-394321/Home",
-    "title": "HP locator: Chardham Filling Station, Kedarnath Road",
+    "url": "https://locator.iocl.com/indianoil-amar-shaheed-govind-singh-petrol-pump-serabhardar-rudraprayag-238212/Home",
+    "title": "IndianOil locator: Amar Shaheed Govind Singh, Serabhardar",
     "kind": "official",
     "opened": true,
     "source_date": null,
-    "accessed": "2026-10-06"
+    "accessed": "2026-10-07"
    }
   },
   {
@@ -369,7 +369,7 @@
    "town": "Kund",
    "lat": 30.5179,
    "lon": 79.09222,
-   "km_from_start": 225.4,
+   "km_from_start": 181.9,
    "off_road_m": 12,
    "opening_hours": null,
    "petrol": null,
@@ -380,7 +380,29 @@
     "kind": "official",
     "opened": true,
     "source_date": null,
-    "accessed": "2026-10-06"
+    "accessed": "2026-10-07"
+   }
+  },
+  {
+   "osm": null,
+   "company_id": "hp-394321",
+   "name": "Chardham Filling Station",
+   "brand": "HP",
+   "town": "Kedarnath Road",
+   "lat": 30.5119,
+   "lon": 79.08558,
+   "km_from_start": 186.2,
+   "off_road_m": 201,
+   "opening_hours": null,
+   "petrol": null,
+   "diesel": null,
+   "source": {
+    "url": "https://petrolpump.hpretail.in/hindustan-petroleum-corporation-limited-chardham-filling-station-petrol-pump-kedarnath-road-rudraprayag-394321/Home",
+    "title": "HP locator: Chardham Filling Station, Kedarnath Road",
+    "kind": "official",
+    "opened": true,
+    "source_date": null,
+    "accessed": "2026-10-07"
    }
   },
   {
@@ -391,7 +413,7 @@
    "town": "Pokhri",
    "lat": 30.34557,
    "lon": 79.20172,
-   "km_from_start": 297.0,
+   "km_from_start": 253.5,
    "off_road_m": 3,
    "opening_hours": null,
    "petrol": null,
@@ -402,7 +424,7 @@
     "kind": "official",
     "opened": true,
     "source_date": null,
-    "accessed": "2026-10-06"
+    "accessed": "2026-10-07"
    }
   },
   {
@@ -413,7 +435,7 @@
    "town": "Devsthan",
    "lat": 30.34125,
    "lon": 79.20652,
-   "km_from_start": 297.3,
+   "km_from_start": 253.7,
    "off_road_m": 534,
    "opening_hours": null,
    "petrol": null,
@@ -424,7 +446,7 @@
     "kind": "official",
     "opened": true,
     "source_date": null,
-    "accessed": "2026-10-06"
+    "accessed": "2026-10-07"
    }
   },
   {
@@ -435,7 +457,7 @@
    "town": "Sonla",
    "lat": 30.3208,
    "lon": 79.30407,
-   "km_from_start": 329.5,
+   "km_from_start": 285.9,
    "off_road_m": 2187,
    "opening_hours": null,
    "petrol": null,
@@ -446,7 +468,7 @@
     "kind": "official",
     "opened": true,
     "source_date": null,
-    "accessed": "2026-10-06"
+    "accessed": "2026-10-07"
    }
   },
   {
@@ -457,7 +479,7 @@
    "town": "Nandaprayag",
    "lat": 30.34137,
    "lon": 79.31736,
-   "km_from_start": 331.0,
+   "km_from_start": 287.5,
    "off_road_m": 1553,
    "opening_hours": null,
    "petrol": null,
@@ -468,7 +490,7 @@
     "kind": "official",
     "opened": true,
     "source_date": null,
-    "accessed": "2026-10-06"
+    "accessed": "2026-10-07"
    }
   },
   {
@@ -477,20 +499,20 @@
    "brand": null,
    "lat": 30.40848,
    "lon": 79.31947,
-   "km_from_start": 358.8,
+   "km_from_start": 315.2,
    "off_road_m": 11,
    "opening_hours": null,
    "petrol": null,
    "diesel": null
   }
  ],
- "pump_count": 30,
- "stops": 20,
+ "pump_count": 31,
+ "stops": 21,
  "longest_gaps": [
   {
-   "from_km": 225.4,
-   "to_km": 297.0,
-   "gap_km": 71.6,
+   "from_km": 186.2,
+   "to_km": 253.5,
+   "gap_km": 67.3,
    "from_is": "pump",
    "to_is": "pump",
    "near_from": "Ukhimath",
@@ -498,16 +520,16 @@
   },
   {
    "from_km": 15.1,
-   "to_km": 54.8,
-   "gap_km": 39.7,
+   "to_km": 54.7,
+   "gap_km": 39.6,
    "from_is": "pump",
    "to_is": "pump",
    "near_from": "Rishikesh",
    "near_to": "Devprayag"
   },
   {
-   "from_km": 297.3,
-   "to_km": 329.5,
+   "from_km": 253.7,
+   "to_km": 285.9,
    "gap_km": 32.2,
    "from_is": "pump",
    "to_is": "pump",
@@ -515,22 +537,22 @@
    "near_to": "Gopeshwar"
   },
   {
-   "from_km": 176.4,
-   "to_km": 206.3,
-   "gap_km": 29.9,
-   "from_is": "pump",
-   "to_is": "pump",
-   "near_from": "Rudraprayag",
-   "near_to": "Rudraprayag"
-  },
-  {
-   "from_km": 331.0,
-   "to_km": 358.8,
-   "gap_km": 27.8,
+   "from_km": 287.5,
+   "to_km": 315.2,
+   "gap_km": 27.7,
    "from_is": "pump",
    "to_is": "pump",
    "near_from": "Gopeshwar",
    "near_to": "Gopeshwar"
+  },
+  {
+   "from_km": 107.2,
+   "to_km": 131.6,
+   "gap_km": 24.4,
+   "from_is": "pump",
+   "to_is": "pump",
+   "near_from": "Rudraprayag",
+   "near_to": "Rudraprayag"
   }
  ],
  "source": {

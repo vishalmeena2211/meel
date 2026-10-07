@@ -106,6 +106,8 @@ STEEP_CHECKED = {
     ("jalori-tirthan", 55, 73): "28 Sep 2026: a smooth climb of about 1,000 m in 8 km to Jalori Pass, then down; no spike. "
                                 "The road is known for being very steep.",
     ("darjeeling-kalimpong-sandakphu", 506, 518): "28 Sep 2026: a smooth drop of about 1,200 m in 10 km to the Teesta; no spike.",
+    ("sach-pass-pangi", 127, 137): "7 Oct 2026: the hairpins below Sach Pass on the Pangi side, about 400 m down in 3 km of line. "
+                                   "No tunnel on the open map; a steep reading is expected on hairpins. Not checked on the ground.",
 }
 
 

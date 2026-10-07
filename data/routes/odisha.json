@@ -29,8 +29,8 @@
     "accessed": "2026-09-28"
    }
   },
-  "distance_km": 689.1,
-  "map_app_hours": 9.54,
+  "distance_km": 691.0,
+  "map_app_hours": 9.1,
   "usual_days": null,
   "highest_point": {
    "name": "Deomali",
@@ -105,18 +105,18 @@
   },
   {
    "name": "Koraput",
-   "lat": 19.0026,
-   "lon": 82.99871,
-   "km_from_start": 605.7,
-   "altitude_m": 819,
+   "lat": 18.81192,
+   "lon": 82.71368,
+   "km_from_start": 630.2,
+   "altitude_m": 894,
    "kind": "place",
-   "moved_to_road_m": 318
+   "moved_to_road_m": 118
   },
   {
    "name": "Deomali",
    "lat": 18.66875,
    "lon": 82.98929,
-   "km_from_start": 689.1,
+   "km_from_start": 691.0,
    "altitude_m": 1427,
    "kind": "place",
    "moved_to_road_m": 1102
@@ -154,15 +154,15 @@
   {
    "from": "Gopalpur",
    "to": "Koraput",
-   "distance_km": 306.2,
-   "map_app_hours": 3.85,
+   "distance_km": 330.7,
+   "map_app_hours": 4.01,
    "doubtful": false
   },
   {
    "from": "Koraput",
    "to": "Deomali",
-   "distance_km": 83.4,
-   "map_app_hours": 1.69,
+   "distance_km": 60.8,
+   "map_app_hours": 1.09,
    "doubtful": false
   }
  ],
@@ -176,363 +176,363 @@
    "m": 18
   },
   {
-   "km": 15.3,
-   "m": 17
-  },
-  {
-   "km": 22.9,
-   "m": 14
-  },
-  {
-   "km": 30.6,
-   "m": 12
-  },
-  {
-   "km": 38.3,
-   "m": 14
-  },
-  {
-   "km": 46.0,
-   "m": 11
-  },
-  {
-   "km": 53.6,
-   "m": 8
-  },
-  {
-   "km": 61.3,
-   "m": 9
-  },
-  {
-   "km": 68.9,
-   "m": 9
-  },
-  {
-   "km": 76.5,
-   "m": 10
-  },
-  {
-   "km": 84.2,
-   "m": 12
-  },
-  {
-   "km": 91.8,
-   "m": 14
-  },
-  {
-   "km": 99.6,
-   "m": 10
-  },
-  {
-   "km": 107.2,
-   "m": 12
-  },
-  {
-   "km": 114.9,
-   "m": 11
-  },
-  {
-   "km": 122.5,
-   "m": 11
-  },
-  {
-   "km": 130.2,
-   "m": 11
-  },
-  {
-   "km": 137.8,
+   "km": 15.4,
    "m": 16
   },
   {
-   "km": 145.4,
+   "km": 23.0,
    "m": 15
   },
   {
-   "km": 153.1,
-   "m": 45
+   "km": 30.7,
+   "m": 12
   },
   {
-   "km": 160.8,
-   "m": 57
+   "km": 38.4,
+   "m": 12
   },
   {
-   "km": 168.5,
-   "m": 46
+   "km": 46.1,
+   "m": 12
   },
   {
-   "km": 176.1,
-   "m": 24
+   "km": 53.8,
+   "m": 7
   },
   {
-   "km": 183.8,
-   "m": 19
+   "km": 61.4,
+   "m": 11
   },
   {
-   "km": 191.4,
-   "m": 55
-  },
-  {
-   "km": 199.1,
-   "m": 26
-  },
-  {
-   "km": 206.7,
-   "m": 22
-  },
-  {
-   "km": 214.3,
-   "m": 35
-  },
-  {
-   "km": 222.1,
-   "m": 18
-  },
-  {
-   "km": 229.7,
-   "m": 10
-  },
-  {
-   "km": 237.4,
-   "m": 26
-  },
-  {
-   "km": 245.0,
-   "m": 25
-  },
-  {
-   "km": 252.7,
-   "m": 40
-  },
-  {
-   "km": 260.3,
-   "m": 17
-  },
-  {
-   "km": 268.0,
-   "m": 19
-  },
-  {
-   "km": 275.6,
-   "m": 5
-  },
-  {
-   "km": 283.3,
-   "m": 23
-  },
-  {
-   "km": 291.0,
-   "m": 14
-  },
-  {
-   "km": 298.6,
+   "km": 69.1,
    "m": 9
   },
   {
-   "km": 306.3,
-   "m": 26
+   "km": 76.8,
+   "m": 10
   },
   {
-   "km": 313.9,
-   "m": 30
+   "km": 84.5,
+   "m": 11
   },
   {
-   "km": 321.6,
-   "m": 36
+   "km": 92.1,
+   "m": 13
   },
   {
-   "km": 329.2,
-   "m": 75
+   "km": 99.8,
+   "m": 16
   },
   {
-   "km": 336.9,
+   "km": 107.5,
+   "m": 10
+  },
+  {
+   "km": 115.1,
+   "m": 11
+  },
+  {
+   "km": 122.9,
+   "m": 10
+  },
+  {
+   "km": 130.5,
+   "m": 9
+  },
+  {
+   "km": 138.2,
+   "m": 15
+  },
+  {
+   "km": 145.9,
+   "m": 17
+  },
+  {
+   "km": 153.5,
+   "m": 45
+  },
+  {
+   "km": 161.3,
+   "m": 51
+  },
+  {
+   "km": 168.9,
+   "m": 54
+  },
+  {
+   "km": 176.6,
+   "m": 24
+  },
+  {
+   "km": 184.3,
+   "m": 29
+  },
+  {
+   "km": 191.9,
+   "m": 47
+  },
+  {
+   "km": 199.6,
+   "m": 27
+  },
+  {
+   "km": 207.3,
+   "m": 25
+  },
+  {
+   "km": 215.0,
+   "m": 34
+  },
+  {
+   "km": 222.6,
+   "m": 17
+  },
+  {
+   "km": 230.4,
+   "m": 11
+  },
+  {
+   "km": 238.0,
+   "m": 34
+  },
+  {
+   "km": 245.7,
+   "m": 19
+  },
+  {
+   "km": 253.4,
+   "m": 19
+  },
+  {
+   "km": 261.0,
+   "m": 24
+  },
+  {
+   "km": 268.8,
+   "m": 17
+  },
+  {
+   "km": 276.4,
+   "m": 6
+  },
+  {
+   "km": 284.0,
+   "m": 21
+  },
+  {
+   "km": 291.8,
+   "m": 16
+  },
+  {
+   "km": 299.4,
+   "m": 16
+  },
+  {
+   "km": 307.1,
+   "m": 20
+  },
+  {
+   "km": 314.8,
+   "m": 24
+  },
+  {
+   "km": 322.5,
+   "m": 40
+  },
+  {
+   "km": 330.2,
    "m": 58
   },
   {
-   "km": 344.6,
-   "m": 80
+   "km": 337.8,
+   "m": 69
   },
   {
-   "km": 352.2,
-   "m": 90
+   "km": 345.5,
+   "m": 92
   },
   {
-   "km": 359.9,
-   "m": 135
+   "km": 353.2,
+   "m": 91
   },
   {
-   "km": 367.5,
-   "m": 342
+   "km": 360.9,
+   "m": 139
   },
   {
-   "km": 375.2,
-   "m": 582
+   "km": 368.5,
+   "m": 426
   },
   {
-   "km": 382.8,
-   "m": 529
+   "km": 376.2,
+   "m": 568
   },
   {
-   "km": 390.5,
-   "m": 458
+   "km": 383.9,
+   "m": 506
   },
   {
-   "km": 398.1,
-   "m": 411
+   "km": 391.5,
+   "m": 455
   },
   {
-   "km": 405.8,
-   "m": 390
+   "km": 399.3,
+   "m": 400
   },
   {
-   "km": 413.5,
-   "m": 380
+   "km": 406.9,
+   "m": 407
   },
   {
-   "km": 421.1,
-   "m": 311
+   "km": 414.6,
+   "m": 366
   },
   {
-   "km": 428.8,
-   "m": 438
+   "km": 422.3,
+   "m": 335
   },
   {
-   "km": 436.4,
-   "m": 302
+   "km": 429.9,
+   "m": 430
   },
   {
-   "km": 444.1,
+   "km": 437.7,
+   "m": 274
+  },
+  {
+   "km": 445.3,
+   "m": 185
+  },
+  {
+   "km": 453.0,
+   "m": 153
+  },
+  {
+   "km": 460.7,
+   "m": 106
+  },
+  {
+   "km": 468.3,
    "m": 184
   },
   {
-   "km": 451.7,
-   "m": 141
+   "km": 476.0,
+   "m": 292
   },
   {
-   "km": 459.4,
-   "m": 112
+   "km": 483.7,
+   "m": 347
   },
   {
-   "km": 467.0,
-   "m": 198
+   "km": 491.4,
+   "m": 533
   },
   {
-   "km": 474.8,
-   "m": 235
+   "km": 499.0,
+   "m": 503
   },
   {
-   "km": 482.4,
-   "m": 330
+   "km": 506.8,
+   "m": 244
   },
   {
-   "km": 490.0,
-   "m": 544
+   "km": 514.4,
+   "m": 218
   },
   {
-   "km": 497.7,
-   "m": 642
+   "km": 522.1,
+   "m": 229
   },
   {
-   "km": 505.3,
-   "m": 265
+   "km": 529.8,
+   "m": 255
   },
   {
-   "km": 513.0,
-   "m": 227
+   "km": 537.4,
+   "m": 420
   },
   {
-   "km": 520.6,
-   "m": 227
+   "km": 545.2,
+   "m": 528
   },
   {
-   "km": 528.3,
-   "m": 249
+   "km": 552.8,
+   "m": 630
   },
   {
-   "km": 536.0,
-   "m": 357
+   "km": 560.4,
+   "m": 737
   },
   {
-   "km": 543.7,
-   "m": 554
+   "km": 568.2,
+   "m": 887
   },
   {
-   "km": 551.3,
-   "m": 596
+   "km": 575.8,
+   "m": 946
   },
   {
-   "km": 558.9,
-   "m": 702
+   "km": 583.5,
+   "m": 928
   },
   {
-   "km": 566.6,
-   "m": 892
+   "km": 591.2,
+   "m": 904
   },
   {
-   "km": 574.2,
-   "m": 918
+   "km": 598.9,
+   "m": 890
   },
   {
-   "km": 581.9,
-   "m": 916
+   "km": 606.5,
+   "m": 859
   },
   {
-   "km": 589.5,
-   "m": 886
+   "km": 614.2,
+   "m": 838
   },
   {
-   "km": 597.3,
+   "km": 621.9,
+   "m": 764
+  },
+  {
+   "km": 629.6,
    "m": 897
   },
   {
-   "km": 604.9,
-   "m": 796
+   "km": 637.3,
+   "m": 885
   },
   {
-   "km": 612.6,
-   "m": 851
+   "km": 644.9,
+   "m": 881
   },
   {
-   "km": 620.2,
-   "m": 921
+   "km": 652.6,
+   "m": 892
   },
   {
-   "km": 627.8,
-   "m": 947
+   "km": 660.3,
+   "m": 888
   },
   {
-   "km": 635.5,
-   "m": 922
+   "km": 667.9,
+   "m": 880
   },
   {
-   "km": 643.1,
-   "m": 891
+   "km": 675.7,
+   "m": 925
   },
   {
-   "km": 650.8,
-   "m": 917
+   "km": 683.3,
+   "m": 1000
   },
   {
-   "km": 658.5,
-   "m": 895
-  },
-  {
-   "km": 666.2,
-   "m": 886
-  },
-  {
-   "km": 673.8,
-   "m": 924
-  },
-  {
-   "km": 681.5,
-   "m": 1002
-  },
-  {
-   "km": 689.1,
+   "km": 691.0,
    "m": 1427
   },
   {
-   "km": 689.1,
+   "km": 691.0,
    "m": 1427
   }
  ],
@@ -3703,8 +3703,8 @@
    19.24983
   ],
   [
-   83.42823,
-   19.25015
+   83.42806,
+   19.25009
   ],
   [
    83.42193,
@@ -4423,12 +4423,16 @@
    18.96352
   ],
   [
-   83.01619,
-   18.96142
+   83.01712,
+   18.96229
   ],
   [
-   83.01427,
-   18.95543
+   83.01579,
+   18.96072
+  ],
+  [
+   83.01404,
+   18.95371
   ],
   [
    83.01407,
@@ -4451,16 +4455,20 @@
    18.93118
   ],
   [
-   83.01079,
-   18.92615
+   83.01101,
+   18.92692
   ],
   [
    83.01013,
    18.92475
   ],
   [
-   83.00493,
-   18.91895
+   83.00512,
+   18.91902
+  ],
+  [
+   83.00316,
+   18.91952
   ],
   [
    83.00245,
@@ -4471,624 +4479,548 @@
    18.92781
   ],
   [
-   82.99365,
-   18.9293
+   82.99386,
+   18.92926
   ],
   [
    82.99175,
    18.92799
   ],
   [
-   82.98989,
-   18.92802
+   82.98057,
+   18.9281
   ],
   [
-   82.9908,
-   18.93076
+   82.97219,
+   18.92986
   ],
   [
-   82.98716,
-   18.93496
+   82.96984,
+   18.93125
   ],
   [
-   82.98932,
-   18.93799
+   82.96713,
+   18.93205
   ],
   [
-   82.99074,
-   18.9415
+   82.96242,
+   18.93102
   ],
   [
-   82.99147,
-   18.94589
+   82.95993,
+   18.92836
   ],
   [
-   82.99074,
-   18.94799
+   82.9573,
+   18.92703
   ],
   [
-   82.99079,
-   18.9493
+   82.95736,
+   18.9232
   ],
   [
-   82.99187,
-   18.95119
+   82.95612,
+   18.92021
   ],
   [
-   82.99039,
-   18.95176
+   82.95525,
+   18.91957
   ],
   [
-   82.9878,
-   18.95395
+   82.95267,
+   18.91922
   ],
   [
-   82.98672,
-   18.95563
+   82.94939,
+   18.91563
   ],
   [
-   82.98656,
-   18.95807
+   82.94813,
+   18.91623
   ],
   [
-   82.98559,
-   18.95919
+   82.94686,
+   18.91608
   ],
   [
-   82.98532,
-   18.96073
+   82.94479,
+   18.91486
   ],
   [
-   82.98485,
-   18.96101
+   82.94379,
+   18.91272
   ],
   [
-   82.98359,
-   18.96057
+   82.94212,
+   18.91086
   ],
   [
-   82.9774,
-   18.96398
+   82.94122,
+   18.90872
   ],
   [
-   82.97222,
-   18.96459
+   82.94105,
+   18.90665
   ],
   [
-   82.97087,
-   18.96522
+   82.93388,
+   18.90075
   ],
   [
-   82.96957,
-   18.97305
+   82.93388,
+   18.89907
   ],
   [
-   82.97039,
-   18.97519
+   82.93566,
+   18.89657
   ],
   [
-   82.97039,
-   18.97753
+   82.9321,
+   18.88911
   ],
   [
-   82.97324,
-   18.9801
+   82.92701,
+   18.88802
   ],
   [
-   82.97476,
-   18.98467
+   82.91838,
+   18.88947
   ],
   [
-   82.97816,
-   18.98851
+   82.91617,
+   18.88882
   ],
   [
-   82.97856,
-   18.99019
+   82.91422,
+   18.88586
   ],
   [
-   82.98049,
-   18.98935
+   82.91426,
+   18.88356
   ],
   [
-   82.98054,
-   18.99038
+   82.9121,
+   18.88097
   ],
   [
-   82.98185,
-   18.99142
+   82.90832,
+   18.87843
   ],
   [
-   82.98471,
-   18.99051
+   82.90394,
+   18.87629
   ],
   [
-   82.98568,
-   18.99478
+   82.90327,
+   18.87548
   ],
   [
-   82.98553,
-   18.99661
+   82.90146,
+   18.875
   ],
   [
-   82.98445,
-   18.99836
+   82.89858,
+   18.87529
   ],
   [
-   82.98331,
-   18.99919
+   82.8891,
+   18.8735
   ],
   [
-   82.9883,
-   19.0003
+   82.88549,
+   18.87347
   ],
   [
-   82.99494,
-   18.99934
+   82.87754,
+   18.87204
   ],
   [
-   82.9957,
-   18.99971
+   82.87439,
+   18.8699
   ],
   [
-   82.99641,
-   19.00193
+   82.86763,
+   18.86837
   ],
   [
-   82.99771,
-   19.00191
+   82.86542,
+   18.86643
   ],
   [
-   82.99871,
-   19.0026
+   82.86221,
+   18.86109
   ],
   [
-   82.99771,
-   19.00191
+   82.85502,
+   18.85563
   ],
   [
-   82.99641,
-   19.00193
+   82.8482,
+   18.85435
   ],
   [
-   82.9957,
-   18.99971
+   82.84708,
+   18.85308
   ],
   [
-   82.99494,
-   18.99934
+   82.84295,
+   18.85082
   ],
   [
-   82.9883,
-   19.0003
+   82.83173,
+   18.84659
   ],
   [
-   82.98331,
-   18.99919
-  ],
-  [
-   82.98445,
-   18.99836
-  ],
-  [
-   82.98553,
-   18.99661
-  ],
-  [
-   82.98568,
-   18.99478
-  ],
-  [
-   82.98471,
-   18.99051
-  ],
-  [
-   82.98185,
-   18.99142
-  ],
-  [
-   82.98054,
-   18.99038
-  ],
-  [
-   82.98049,
-   18.98935
-  ],
-  [
-   82.97856,
-   18.99019
-  ],
-  [
-   82.97816,
-   18.98851
-  ],
-  [
-   82.97476,
-   18.98467
-  ],
-  [
-   82.97324,
-   18.9801
-  ],
-  [
-   82.97039,
-   18.97753
-  ],
-  [
-   82.97039,
-   18.97519
-  ],
-  [
-   82.96957,
-   18.97305
-  ],
-  [
-   82.97087,
-   18.96522
-  ],
-  [
-   82.97222,
-   18.96459
-  ],
-  [
-   82.9774,
-   18.96398
-  ],
-  [
-   82.98359,
-   18.96057
-  ],
-  [
-   82.98485,
-   18.96101
-  ],
-  [
-   82.98532,
-   18.96073
-  ],
-  [
-   82.98559,
-   18.95919
-  ],
-  [
-   82.98656,
-   18.95807
-  ],
-  [
-   82.98672,
-   18.95563
-  ],
-  [
-   82.9878,
-   18.95395
-  ],
-  [
-   82.99039,
-   18.95176
-  ],
-  [
-   82.99187,
-   18.95119
-  ],
-  [
-   82.99079,
-   18.9493
-  ],
-  [
-   82.99074,
-   18.94799
-  ],
-  [
-   82.99147,
-   18.94589
-  ],
-  [
-   82.99074,
-   18.9415
-  ],
-  [
-   82.98932,
-   18.93799
-  ],
-  [
-   82.98716,
-   18.93496
-  ],
-  [
-   82.9908,
-   18.93076
-  ],
-  [
-   82.98989,
-   18.92802
-  ],
-  [
-   82.99175,
-   18.92799
-  ],
-  [
-   82.99365,
-   18.9293
-  ],
-  [
-   82.99666,
-   18.92815
-  ],
-  [
-   82.9997,
-   18.92469
-  ],
-  [
-   83.00292,
-   18.91968
-  ],
-  [
-   83.00471,
-   18.91892
-  ],
-  [
-   83.00586,
-   18.91981
-  ],
-  [
-   83.00474,
-   18.91742
-  ],
-  [
-   83.0038,
-   18.90971
-  ],
-  [
-   83.00382,
-   18.90355
-  ],
-  [
-   83.00437,
-   18.89871
-  ],
-  [
-   83.00391,
-   18.89448
-  ],
-  [
-   83.00219,
-   18.88894
-  ],
-  [
-   82.99793,
-   18.88556
-  ],
-  [
-   82.99644,
-   18.88318
-  ],
-  [
-   82.99603,
-   18.88116
-  ],
-  [
-   82.99651,
-   18.8795
-  ],
-  [
-   82.99542,
-   18.87422
-  ],
-  [
-   82.99636,
-   18.87163
-  ],
-  [
-   82.99483,
-   18.86939
-  ],
-  [
-   82.99301,
-   18.86882
-  ],
-  [
-   82.9918,
-   18.8586
-  ],
-  [
-   82.99075,
-   18.85647
-  ],
-  [
-   82.98944,
-   18.85522
-  ],
-  [
-   82.98597,
-   18.85311
-  ],
-  [
-   82.98232,
-   18.8518
-  ],
-  [
-   82.98124,
-   18.85053
-  ],
-  [
-   82.97882,
-   18.85028
-  ],
-  [
-   82.9761,
-   18.84923
-  ],
-  [
-   82.97474,
-   18.84786
-  ],
-  [
-   82.97424,
+   82.82953,
    18.84506
   ],
   [
-   82.97467,
-   18.84409
+   82.81476,
+   18.84037
   ],
   [
-   82.97247,
-   18.84043
+   82.80871,
+   18.83719
   ],
   [
-   82.97036,
-   18.83851
+   82.80704,
+   18.8372
   ],
   [
-   82.97039,
-   18.8376
+   82.80469,
+   18.83802
   ],
   [
-   82.96889,
-   18.8357
+   82.80306,
+   18.83684
   ],
   [
-   82.9696,
-   18.83309
+   82.79827,
+   18.83735
   ],
   [
-   82.96739,
-   18.83047
+   82.78848,
+   18.83411
   ],
   [
-   82.96416,
-   18.82059
+   82.78482,
+   18.83592
   ],
   [
-   82.96101,
-   18.81632
+   82.78252,
+   18.83781
   ],
   [
-   82.95992,
-   18.81548
+   82.78129,
+   18.83781
   ],
   [
-   82.95634,
-   18.80887
+   82.77856,
+   18.83899
   ],
   [
-   82.95617,
-   18.80765
+   82.77658,
+   18.83836
   ],
   [
-   82.95237,
-   18.80505
+   82.77593,
+   18.83759
   ],
   [
-   82.94794,
-   18.7991
+   82.77609,
+   18.83617
   ],
   [
-   82.94306,
-   18.79421
+   82.77562,
+   18.83488
   ],
   [
-   82.94154,
-   18.79131
+   82.77205,
+   18.83175
   ],
   [
-   82.94008,
-   18.79034
+   82.76517,
+   18.82972
   ],
   [
-   82.93717,
-   18.78089
+   82.75836,
+   18.8314
   ],
   [
-   82.9373,
-   18.77919
+   82.7514,
+   18.82821
   ],
   [
-   82.93523,
-   18.77756
+   82.74636,
+   18.82462
   ],
   [
-   82.92811,
-   18.76564
+   82.74153,
+   18.8236
   ],
   [
-   82.92517,
-   18.76331
+   82.74007,
+   18.82204
   ],
   [
-   82.92443,
-   18.76106
+   82.73671,
+   18.82048
   ],
   [
-   82.91963,
-   18.75614
+   82.7347,
+   18.82089
   ],
   [
-   82.91903,
-   18.75448
+   82.73165,
+   18.81777
   ],
   [
-   82.91733,
-   18.75316
+   82.73063,
+   18.81552
   ],
   [
-   82.91226,
-   18.74059
+   82.72869,
+   18.81306
   ],
   [
-   82.91174,
-   18.73834
+   82.72698,
+   18.81179
   ],
   [
-   82.91003,
-   18.73548
+   82.72271,
+   18.81081
   ],
   [
-   82.90261,
-   18.73195
+   82.72127,
+   18.81267
   ],
   [
-   82.90212,
-   18.72856
+   82.72021,
+   18.81228
   ],
   [
-   82.90236,
-   18.72668
+   82.71891,
+   18.81307
   ],
   [
-   82.90133,
-   18.72461
+   82.7171,
+   18.81545
   ],
   [
-   82.89548,
-   18.71765
+   82.71323,
+   18.81683
   ],
   [
-   82.8922,
-   18.71277
+   82.71207,
+   18.81644
   ],
   [
-   82.88671,
-   18.70849
+   82.71249,
+   18.81551
   ],
   [
-   82.88255,
-   18.7028
+   82.71232,
+   18.81347
   ],
   [
-   82.87953,
-   18.70074
+   82.71294,
+   18.81315
   ],
   [
-   82.87867,
-   18.69851
+   82.71271,
+   18.81226
   ],
   [
-   82.87571,
-   18.6969
+   82.71368,
+   18.81192
   ],
   [
-   82.86924,
-   18.69728
+   82.71271,
+   18.81226
+  ],
+  [
+   82.71268,
+   18.81031
+  ],
+  [
+   82.71354,
+   18.80873
+  ],
+  [
+   82.71667,
+   18.80528
+  ],
+  [
+   82.71744,
+   18.80222
+  ],
+  [
+   82.72038,
+   18.7999
+  ],
+  [
+   82.7211,
+   18.7979
+  ],
+  [
+   82.72257,
+   18.79639
+  ],
+  [
+   82.72696,
+   18.79396
+  ],
+  [
+   82.7281,
+   18.79057
+  ],
+  [
+   82.73815,
+   18.78702
+  ],
+  [
+   82.73879,
+   18.78587
+  ],
+  [
+   82.73876,
+   18.78274
+  ],
+  [
+   82.73963,
+   18.78124
+  ],
+  [
+   82.74056,
+   18.78063
+  ],
+  [
+   82.74181,
+   18.78011
+  ],
+  [
+   82.74674,
+   18.78064
+  ],
+  [
+   82.75444,
+   18.77966
+  ],
+  [
+   82.76378,
+   18.77791
+  ],
+  [
+   82.76855,
+   18.77598
+  ],
+  [
+   82.77034,
+   18.77588
+  ],
+  [
+   82.77214,
+   18.77661
+  ],
+  [
+   82.77677,
+   18.78114
+  ],
+  [
+   82.77903,
+   18.78204
+  ],
+  [
+   82.78134,
+   18.78215
+  ],
+  [
+   82.78666,
+   18.781
+  ],
+  [
+   82.80038,
+   18.77632
+  ],
+  [
+   82.81327,
+   18.7695
+  ],
+  [
+   82.81618,
+   18.76147
+  ],
+  [
+   82.81744,
+   18.76062
+  ],
+  [
+   82.82037,
+   18.76004
+  ],
+  [
+   82.82147,
+   18.75934
+  ],
+  [
+   82.8243,
+   18.75435
+  ],
+  [
+   82.82369,
+   18.75163
+  ],
+  [
+   82.82397,
+   18.7505
+  ],
+  [
+   82.82486,
+   18.74962
+  ],
+  [
+   82.82806,
+   18.74852
+  ],
+  [
+   82.82986,
+   18.74705
+  ],
+  [
+   82.83135,
+   18.74289
+  ],
+  [
+   82.83135,
+   18.73963
+  ],
+  [
+   82.83983,
+   18.73034
+  ],
+  [
+   82.84058,
+   18.72852
+  ],
+  [
+   82.8404,
+   18.72597
+  ],
+  [
+   82.84088,
+   18.72342
+  ],
+  [
+   82.8436,
+   18.71845
+  ],
+  [
+   82.84787,
+   18.71626
+  ],
+  [
+   82.85175,
+   18.70872
   ],
   [
    82.86641,
@@ -5119,8 +5051,8 @@
    18.67567
   ],
   [
-   82.87888,
-   18.6669
+   82.87876,
+   18.66759
   ],
   [
    82.87864,
@@ -5131,12 +5063,8 @@
    18.66021
   ],
   [
-   82.87944,
-   18.65724
-  ],
-  [
-   82.87762,
-   18.65156
+   82.87882,
+   18.65479
   ],
   [
    82.87582,
@@ -5167,12 +5095,12 @@
    18.62308
   ],
   [
-   82.87762,
-   18.62073
+   82.87839,
+   18.62247
   ],
   [
-   82.87756,
-   18.61941
+   82.87742,
+   18.61984
   ],
   [
    82.87816,
@@ -5323,8 +5251,8 @@
    18.64481
   ],
   [
-   82.96886,
-   18.64778
+   82.96908,
+   18.64786
   ],
   [
    82.97242,
@@ -5335,12 +5263,8 @@
    18.64686
   ],
   [
-   82.97884,
-   18.64754
-  ],
-  [
-   82.98058,
-   18.64747
+   82.98038,
+   18.64751
   ],
   [
    82.98167,
@@ -5605,7 +5529,7 @@
     "name": "Shree Jagannath Petroleum",
     "brand": "Indian Oil",
     "near": "Bhubaneswar",
-    "km_from_start": 5.5,
+    "km_from_start": 5.4,
     "off_road_m": 54,
     "lat": 20.21686,
     "lon": 85.85207,
@@ -5735,7 +5659,7 @@
     "name": "Indian Oil",
     "brand": "Indian Oil",
     "near": "Konark",
-    "km_from_start": 35.5,
+    "km_from_start": 35.4,
     "off_road_m": 23,
     "lat": 20.06507,
     "lon": 85.99644,
@@ -5813,7 +5737,7 @@
     "name": "HP",
     "brand": "HP",
     "near": "Konark",
-    "km_from_start": 56.2,
+    "km_from_start": 56.1,
     "off_road_m": 18,
     "lat": 19.91316,
     "lon": 86.07443,
@@ -5865,7 +5789,7 @@
     "name": "Hindustan Gasoline",
     "brand": "HP",
     "near": "Puri",
-    "km_from_start": 92.6,
+    "km_from_start": 92.5,
     "off_road_m": 25,
     "lat": 19.82463,
     "lon": 85.8539,
@@ -5904,7 +5828,7 @@
     "name": "Bata Mangala Petrol Station",
     "brand": "HP",
     "near": "Puri",
-    "km_from_start": 100.9,
+    "km_from_start": 100.8,
     "off_road_m": 22,
     "lat": 19.83865,
     "lon": 85.83671,
@@ -5917,7 +5841,7 @@
     "name": "Indian Oil",
     "brand": "Indian Oil",
     "near": "Puri",
-    "km_from_start": 102.6,
+    "km_from_start": 102.5,
     "off_road_m": 87,
     "lat": 19.85367,
     "lon": 85.837,
@@ -5930,7 +5854,7 @@
     "name": "Gulu Gugu Filling Station",
     "brand": "HP",
     "near": "Puri",
-    "km_from_start": 107.9,
+    "km_from_start": 107.8,
     "off_road_m": 49,
     "lat": 19.88709,
     "lon": 85.80339,
@@ -5995,7 +5919,7 @@
     "name": "Shree Mahalaxmi Filling Station",
     "brand": "HP",
     "near": "Puri",
-    "km_from_start": 126.9,
+    "km_from_start": 126.8,
     "off_road_m": 74,
     "lat": 20.04456,
     "lon": 85.82762,
@@ -6021,7 +5945,7 @@
     "name": "Nayara",
     "brand": "Nayara",
     "near": "Puri",
-    "km_from_start": 134.8,
+    "km_from_start": 134.7,
     "off_road_m": 59,
     "lat": 20.11121,
     "lon": 85.84685,
@@ -6034,7 +5958,7 @@
     "name": "Indian Oil",
     "brand": "Indian Oil",
     "near": "Puri",
-    "km_from_start": 137.2,
+    "km_from_start": 137.1,
     "off_road_m": 320,
     "lat": 20.12284,
     "lon": 85.83774,
@@ -6047,7 +5971,7 @@
     "name": "Maa Mangala Filling Station",
     "brand": "Nayara",
     "near": "Puri",
-    "km_from_start": 139.2,
+    "km_from_start": 139.1,
     "off_road_m": 25,
     "lat": 20.11729,
     "lon": 85.82129,
@@ -6112,7 +6036,7 @@
     "name": "Jatni Filling Station",
     "brand": "HP",
     "near": "Puri",
-    "km_from_start": 153.3,
+    "km_from_start": 153.2,
     "off_road_m": 29,
     "lat": 20.16467,
     "lon": 85.69859,
@@ -6177,7 +6101,7 @@
     "name": "HP",
     "brand": "HP",
     "near": "Puri",
-    "km_from_start": 167.3,
+    "km_from_start": 167.2,
     "off_road_m": 32,
     "lat": 20.13859,
     "lon": 85.59527,
@@ -6190,7 +6114,7 @@
     "name": "Indian Oil",
     "brand": "Indian Oil",
     "near": "Puri",
-    "km_from_start": 169.9,
+    "km_from_start": 169.8,
     "off_road_m": 32,
     "lat": 20.1212,
     "lon": 85.57927,
@@ -6216,7 +6140,7 @@
     "name": "Indian Oil",
     "brand": "Indian Oil",
     "near": "Puri",
-    "km_from_start": 176.9,
+    "km_from_start": 176.8,
     "off_road_m": 51,
     "lat": 20.06677,
     "lon": 85.55007,
@@ -6229,7 +6153,7 @@
     "name": "Annapurna Filling Station",
     "brand": "Bharat Petroleum",
     "near": "Rambha",
-    "km_from_start": 179.7,
+    "km_from_start": 179.6,
     "off_road_m": 76,
     "lat": 20.04773,
     "lon": 85.53262,
@@ -6255,7 +6179,7 @@
     "name": "Indian Oil",
     "brand": "Indian Oil",
     "near": "Rambha",
-    "km_from_start": 196.2,
+    "km_from_start": 196.1,
     "off_road_m": 3,
     "lat": 19.95021,
     "lon": 85.41708,
@@ -6268,7 +6192,7 @@
     "name": "Petrol pump",
     "brand": null,
     "near": "Rambha",
-    "km_from_start": 208.9,
+    "km_from_start": 208.8,
     "off_road_m": 65,
     "lat": 19.87668,
     "lon": 85.33738,
@@ -6281,7 +6205,7 @@
     "name": "Indian Oil",
     "brand": "Indian Oil",
     "near": "Rambha",
-    "km_from_start": 214.0,
+    "km_from_start": 213.9,
     "off_road_m": 37,
     "lat": 19.84699,
     "lon": 85.3006,
@@ -6294,7 +6218,7 @@
     "name": "Indian Oil",
     "brand": "Indian Oil",
     "near": "Rambha",
-    "km_from_start": 238.9,
+    "km_from_start": 238.8,
     "off_road_m": 38,
     "lat": 19.68016,
     "lon": 85.17405,
@@ -6307,7 +6231,7 @@
     "name": "Indian Oil",
     "brand": "Indian Oil",
     "near": "Rambha",
-    "km_from_start": 246.9,
+    "km_from_start": 246.8,
     "off_road_m": 68,
     "lat": 19.62366,
     "lon": 85.12866,
@@ -6320,7 +6244,7 @@
     "name": "Indian Oil",
     "brand": "Indian Oil",
     "near": "Rambha",
-    "km_from_start": 257.0,
+    "km_from_start": 256.9,
     "off_road_m": 53,
     "lat": 19.54684,
     "lon": 85.08927,
@@ -6333,7 +6257,7 @@
     "name": "HP",
     "brand": "HP",
     "near": "Rambha",
-    "km_from_start": 262.5,
+    "km_from_start": 262.4,
     "off_road_m": 17,
     "lat": 19.49846,
     "lon": 85.08822,
@@ -6346,7 +6270,7 @@
     "name": "Manorama Fuel Point",
     "brand": "Indian Oil",
     "near": "Humma",
-    "km_from_start": 270.4,
+    "km_from_start": 270.3,
     "off_road_m": 543,
     "lat": 19.43039,
     "lon": 85.0704,
@@ -6358,7 +6282,7 @@
      "kind": "official",
      "opened": true,
      "source_date": null,
-     "accessed": "2026-10-06"
+     "accessed": "2026-10-07"
     }
    },
    {
@@ -6366,7 +6290,7 @@
     "name": "Jaga Filling Station",
     "brand": "Indian Oil",
     "near": "Palibandha",
-    "km_from_start": 274.4,
+    "km_from_start": 274.3,
     "off_road_m": 98,
     "lat": 19.39451,
     "lon": 85.06597,
@@ -6378,7 +6302,7 @@
      "kind": "official",
      "opened": true,
      "source_date": null,
-     "accessed": "2026-10-06"
+     "accessed": "2026-10-07"
     }
    },
    {
@@ -6386,7 +6310,7 @@
     "name": "Bharat Petroleum",
     "brand": null,
     "near": "Gopalpur",
-    "km_from_start": 284.8,
+    "km_from_start": 284.7,
     "off_road_m": 187,
     "lat": 19.35196,
     "lon": 84.98507,
@@ -6399,7 +6323,7 @@
     "name": "Indian Oil",
     "brand": "Indian Oil",
     "near": "Gopalpur",
-    "km_from_start": 285.6,
+    "km_from_start": 285.5,
     "off_road_m": 429,
     "lat": 19.35089,
     "lon": 84.97385,
@@ -6412,7 +6336,7 @@
     "name": "Pramod Kisan Seva Kendra",
     "brand": "Indian Oil",
     "near": "Badaputi",
-    "km_from_start": 301.8,
+    "km_from_start": 301.7,
     "off_road_m": 24,
     "lat": 19.26389,
     "lon": 84.89906,
@@ -6424,7 +6348,7 @@
      "kind": "official",
      "opened": true,
      "source_date": null,
-     "accessed": "2026-10-06"
+     "accessed": "2026-10-07"
     }
    },
    {
@@ -6432,7 +6356,7 @@
     "name": "Indian Oil",
     "brand": "Indian Oil",
     "near": "Gopalpur",
-    "km_from_start": 309.9,
+    "km_from_start": 309.7,
     "off_road_m": 240,
     "lat": 19.30933,
     "lon": 84.84705,
@@ -6445,7 +6369,7 @@
     "name": "Indian Oil",
     "brand": "Indian Oil",
     "near": "Gopalpur",
-    "km_from_start": 311.5,
+    "km_from_start": 311.4,
     "off_road_m": 42,
     "lat": 19.31111,
     "lon": 84.83338,
@@ -6458,7 +6382,7 @@
     "name": "Petrol pump",
     "brand": null,
     "near": "Gopalpur",
-    "km_from_start": 314.9,
+    "km_from_start": 314.8,
     "off_road_m": 34,
     "lat": 19.3114,
     "lon": 84.80358,
@@ -6471,7 +6395,7 @@
     "name": "Petrol pump",
     "brand": null,
     "near": "Gopalpur",
-    "km_from_start": 316.1,
+    "km_from_start": 316.0,
     "off_road_m": 303,
     "lat": 19.31224,
     "lon": 84.79394,
@@ -6484,7 +6408,7 @@
     "name": "Petrol pump",
     "brand": null,
     "near": "Gopalpur",
-    "km_from_start": 316.1,
+    "km_from_start": 316.0,
     "off_road_m": 352,
     "lat": 19.31189,
     "lon": 84.79336,
@@ -6497,7 +6421,7 @@
     "name": "Petrol pump",
     "brand": null,
     "near": "Gopalpur",
-    "km_from_start": 316.8,
+    "km_from_start": 316.7,
     "off_road_m": 797,
     "lat": 19.31173,
     "lon": 84.7857,
@@ -6510,7 +6434,7 @@
     "name": "Bharat Petroleum",
     "brand": "Bharat Petroleum",
     "near": "Gopalpur",
-    "km_from_start": 320.0,
+    "km_from_start": 319.8,
     "off_road_m": 833,
     "lat": 19.33457,
     "lon": 84.76872,
@@ -6523,7 +6447,7 @@
     "name": "Satyanarayan Filling Station",
     "brand": "Indian Oil",
     "near": "Gopinathpur",
-    "km_from_start": 336.0,
+    "km_from_start": 335.9,
     "off_road_m": 16,
     "lat": 19.37126,
     "lon": 84.6349,
@@ -6535,7 +6459,7 @@
      "kind": "official",
      "opened": true,
      "source_date": null,
-     "accessed": "2026-10-06"
+     "accessed": "2026-10-07"
     }
    },
    {
@@ -6543,7 +6467,7 @@
     "name": "Saikrupa Filling Station",
     "brand": "Indian Oil",
     "near": "Digapahandi",
-    "km_from_start": 343.8,
+    "km_from_start": 343.7,
     "off_road_m": 99,
     "lat": 19.38015,
     "lon": 84.56396,
@@ -6555,7 +6479,7 @@
      "kind": "official",
      "opened": true,
      "source_date": null,
-     "accessed": "2026-10-06"
+     "accessed": "2026-10-07"
     }
    },
    {
@@ -6563,7 +6487,7 @@
     "name": "Gouri Filling Station",
     "brand": "Indian Oil",
     "near": "Badakhani",
-    "km_from_start": 374.7,
+    "km_from_start": 374.6,
     "off_road_m": 38,
     "lat": 19.45527,
     "lon": 84.35892,
@@ -6575,7 +6499,7 @@
      "kind": "official",
      "opened": true,
      "source_date": null,
-     "accessed": "2026-10-06"
+     "accessed": "2026-10-07"
     }
    },
    {
@@ -6583,7 +6507,7 @@
     "name": "Purusottam Filling Station",
     "brand": "Indian Oil",
     "near": "Khilamunda",
-    "km_from_start": 452.3,
+    "km_from_start": 452.2,
     "off_road_m": 38,
     "lat": 19.26343,
     "lon": 83.84064,
@@ -6595,7 +6519,7 @@
      "kind": "official",
      "opened": true,
      "source_date": null,
-     "accessed": "2026-10-06"
+     "accessed": "2026-10-07"
     }
    },
    {
@@ -6603,7 +6527,7 @@
     "name": "Samaleswari Ksk",
     "brand": "Indian Oil",
     "near": "Akhusingi",
-    "km_from_start": 455.6,
+    "km_from_start": 455.4,
     "off_road_m": 1775,
     "lat": 19.23843,
     "lon": 83.82224,
@@ -6615,7 +6539,7 @@
      "kind": "official",
      "opened": true,
      "source_date": null,
-     "accessed": "2026-10-06"
+     "accessed": "2026-10-07"
     }
    },
    {
@@ -6623,7 +6547,7 @@
     "name": "Sri Jaganath Filling Station",
     "brand": "Indian Oil",
     "near": "Bhamini",
-    "km_from_start": 460.3,
+    "km_from_start": 460.1,
     "off_road_m": 39,
     "lat": 19.22668,
     "lon": 83.77813,
@@ -6635,7 +6559,7 @@
      "kind": "official",
      "opened": true,
      "source_date": null,
-     "accessed": "2026-10-06"
+     "accessed": "2026-10-07"
     }
    },
    {
@@ -6643,7 +6567,7 @@
     "name": "Amit Filling Station",
     "brand": "Indian Oil",
     "near": "Anakabadi",
-    "km_from_start": 491.0,
+    "km_from_start": 490.8,
     "off_road_m": 1,
     "lat": 19.24089,
     "lon": 83.57244,
@@ -6655,7 +6579,7 @@
      "kind": "official",
      "opened": true,
      "source_date": null,
-     "accessed": "2026-10-06"
+     "accessed": "2026-10-07"
     }
    },
    {
@@ -6663,7 +6587,7 @@
     "name": "Hemalata Filling Station",
     "brand": "Indian Oil",
     "near": "Kolnara",
-    "km_from_start": 507.3,
+    "km_from_start": 507.1,
     "off_road_m": 25,
     "lat": 19.25197,
     "lon": 83.46313,
@@ -6675,7 +6599,7 @@
      "kind": "official",
      "opened": true,
      "source_date": null,
-     "accessed": "2026-10-06"
+     "accessed": "2026-10-07"
     }
    },
    {
@@ -6683,8 +6607,8 @@
     "name": "Yeshvik Filling Station",
     "brand": "Indian Oil",
     "near": "J K Pur",
-    "km_from_start": 511.2,
-    "off_road_m": 541,
+    "km_from_start": 511.0,
+    "off_road_m": 548,
     "lat": 19.25491,
     "lon": 83.42931,
     "opening_hours": null,
@@ -6695,7 +6619,7 @@
      "kind": "official",
      "opened": true,
      "source_date": null,
-     "accessed": "2026-10-06"
+     "accessed": "2026-10-07"
     }
    },
    {
@@ -6703,8 +6627,8 @@
     "name": "Shri Jalaram Filling Station",
     "brand": "Indian Oil",
     "near": "Antamoda",
-    "km_from_start": 511.3,
-    "off_road_m": 1825,
+    "km_from_start": 511.1,
+    "off_road_m": 1831,
     "lat": 19.26653,
     "lon": 83.4271,
     "opening_hours": null,
@@ -6715,7 +6639,7 @@
      "kind": "official",
      "opened": true,
      "source_date": null,
-     "accessed": "2026-10-06"
+     "accessed": "2026-10-07"
     }
    },
    {
@@ -6723,7 +6647,7 @@
     "name": "Jio-bp",
     "brand": null,
     "near": "Koraput",
-    "km_from_start": 518.2,
+    "km_from_start": 518.0,
     "off_road_m": 32,
     "lat": 19.19431,
     "lon": 83.41773,
@@ -6736,7 +6660,7 @@
     "name": "Bharat Petroleum",
     "brand": null,
     "near": "Koraput",
-    "km_from_start": 521.1,
+    "km_from_start": 520.9,
     "off_road_m": 23,
     "lat": 19.16935,
     "lon": 83.41181,
@@ -6749,7 +6673,7 @@
     "name": "M S Gourishankar F Stn Ksk",
     "brand": "Indian Oil",
     "near": "Laxmipur",
-    "km_from_start": 573.3,
+    "km_from_start": 573.0,
     "off_road_m": 45,
     "lat": 18.98693,
     "lon": 83.1089,
@@ -6761,87 +6685,107 @@
      "kind": "official",
      "opened": true,
      "source_date": null,
-     "accessed": "2026-10-06"
+     "accessed": "2026-10-07"
     }
    },
    {
-    "id": "fuel:iocl-240203",
-    "name": "Indu Filling Station Ksk",
+    "id": "fuel:iocl-240011",
+    "name": "Annapurna Filling Station Ksk",
     "brand": "Indian Oil",
-    "near": "Bhitarguda",
-    "km_from_start": 644.5,
-    "off_road_m": 68,
-    "lat": 18.7469,
-    "lon": 82.9155,
+    "near": "Laxmipur",
+    "km_from_start": 610.9,
+    "off_road_m": 22,
+    "lat": 18.86489,
+    "lon": 82.86474,
     "opening_hours": null,
     "osm_url": null,
     "source": {
-     "url": "https://locator.iocl.com/indianoil-indu-filling-station-ksk-petrol-pump-bhitarguda-koraput-240203/Home",
-     "title": "IndianOil locator: Indu Filling Station Ksk, Bhitarguda",
+     "url": "https://locator.iocl.com/indianoil-annapurna-filling-station-ksk-petrol-pump-laxmipur-koraput-240011/Home",
+     "title": "IndianOil locator: Annapurna Filling Station Ksk, Laxmipur",
      "kind": "official",
      "opened": true,
      "source_date": null,
-     "accessed": "2026-10-06"
+     "accessed": "2026-10-07"
     }
    },
    {
-    "id": "fuel:iocl-240017",
-    "name": "Gupteswar Filling Station Ksk",
+    "id": "fuel:iocl-240393",
+    "name": "Tanveer Filling Station",
     "brand": "Indian Oil",
-    "near": "Semiliguda",
-    "km_from_start": 650.8,
-    "off_road_m": 37,
-    "lat": 18.7027,
-    "lon": 82.8818,
+    "near": "Jeypore Road",
+    "km_from_start": 630.0,
+    "off_road_m": 1884,
+    "lat": 18.81656,
+    "lon": 82.69417,
     "opening_hours": null,
     "osm_url": null,
     "source": {
-     "url": "https://locator.iocl.com/indianoil-gupteswar-filling-station-ksk-petrol-pump-semiliguda-koraput-240017/Home",
-     "title": "IndianOil locator: Gupteswar Filling Station Ksk, Semiliguda",
+     "url": "https://locator.iocl.com/indianoil-tanveer-filling-station-petrol-pump-jeypore-road-koraput-240393/Home",
+     "title": "IndianOil locator: Tanveer Filling Station, Jeypore Road",
      "kind": "official",
      "opened": true,
      "source_date": null,
-     "accessed": "2026-10-06"
+     "accessed": "2026-10-07"
     }
    },
    {
-    "id": "fuel:iocl-240183",
-    "name": "Jai Hanuman Filling Station",
-    "brand": "Indian Oil",
-    "near": "D Padar",
-    "km_from_start": 652.8,
-    "off_road_m": 1189,
-    "lat": 18.70295,
-    "lon": 82.85846,
+    "id": "fuel:hp-410915",
+    "name": "Theeda Ramaswamy",
+    "brand": "HP",
+    "near": "Jeypore Vizianagaram Road",
+    "km_from_start": 631.7,
+    "off_road_m": 17,
+    "lat": 18.80533,
+    "lon": 82.71682,
     "opening_hours": null,
     "osm_url": null,
     "source": {
-     "url": "https://locator.iocl.com/indianoil-jai-hanuman-filling-station-petrol-pump-d-padar-koraput-240183/Home",
-     "title": "IndianOil locator: Jai Hanuman Filling Station, D Padar",
+     "url": "https://petrolpump.hpretail.in/hindustan-petroleum-corporation-limited-m-s-theeda-ramaswamy-petrol-pump-jeypore-vizianagaram-road-koraput-410915/Home",
+     "title": "HP locator: Theeda Ramaswamy, Jeypore Vizianagaram Road",
      "kind": "official",
      "opened": true,
      "source_date": null,
-     "accessed": "2026-10-06"
+     "accessed": "2026-10-07"
     }
    },
    {
-    "id": "fuel:iocl-240080",
-    "name": "Shiv Shankar Filling Station",
-    "brand": "Indian Oil",
-    "near": "D Padar",
-    "km_from_start": 652.8,
-    "off_road_m": 149,
-    "lat": 18.69651,
-    "lon": 82.86567,
+    "id": "fuel:hp-410279",
+    "name": "Princess Petrol Pump",
+    "brand": "HP",
+    "near": "Duruguda",
+    "km_from_start": 637.8,
+    "off_road_m": 59,
+    "lat": 18.77917,
+    "lon": 82.75995,
     "opening_hours": null,
     "osm_url": null,
     "source": {
-     "url": "https://locator.iocl.com/indianoil-shiv-shankar-filling-station-petrol-pump-d-padar-koraput-240080/Home",
-     "title": "IndianOil locator: Shiv Shankar Filling Station, D Padar",
+     "url": "https://petrolpump.hpretail.in/hindustan-petroleum-corporation-limited-princess-petrol-pump-petrol-pump-duruguda-koraput-410279/Home",
+     "title": "HP locator: Princess Petrol Pump, Duruguda",
      "kind": "official",
      "opened": true,
      "source_date": null,
-     "accessed": "2026-10-06"
+     "accessed": "2026-10-07"
+    }
+   },
+   {
+    "id": "fuel:iocl-240186",
+    "name": "Jehovajireh Filling Station",
+    "brand": "Indian Oil",
+    "near": "A Malkangiri",
+    "km_from_start": 643.3,
+    "off_road_m": 33,
+    "lat": 18.77272,
+    "lon": 82.80655,
+    "opening_hours": null,
+    "osm_url": null,
+    "source": {
+     "url": "https://locator.iocl.com/indianoil-jehovajireh-filling-station-petrol-pump-a-malkangiri-koraput-240186/Home",
+     "title": "IndianOil locator: Jehovajireh Filling Station, A Malkangiri",
+     "kind": "official",
+     "opened": true,
+     "source_date": null,
+     "accessed": "2026-10-07"
     }
    },
    {
@@ -6849,8 +6793,8 @@
     "name": "Ranjan Filling Station",
     "brand": "HP",
     "near": "Semliguda",
-    "km_from_start": 652.8,
-    "off_road_m": 1700,
+    "km_from_start": 653.0,
+    "off_road_m": 22,
     "lat": 18.7061,
     "lon": 82.85492,
     "opening_hours": null,
@@ -6861,7 +6805,67 @@
      "kind": "official",
      "opened": true,
      "source_date": null,
-     "accessed": "2026-10-06"
+     "accessed": "2026-10-07"
+    }
+   },
+   {
+    "id": "fuel:iocl-240183",
+    "name": "Jai Hanuman Filling Station",
+    "brand": "Indian Oil",
+    "near": "D Padar",
+    "km_from_start": 653.6,
+    "off_road_m": 28,
+    "lat": 18.70295,
+    "lon": 82.85846,
+    "opening_hours": null,
+    "osm_url": null,
+    "source": {
+     "url": "https://locator.iocl.com/indianoil-jai-hanuman-filling-station-petrol-pump-d-padar-koraput-240183/Home",
+     "title": "IndianOil locator: Jai Hanuman Filling Station, D Padar",
+     "kind": "official",
+     "opened": true,
+     "source_date": null,
+     "accessed": "2026-10-07"
+    }
+   },
+   {
+    "id": "fuel:iocl-240080",
+    "name": "Shiv Shankar Filling Station",
+    "brand": "Indian Oil",
+    "near": "D Padar",
+    "km_from_start": 654.6,
+    "off_road_m": 38,
+    "lat": 18.69651,
+    "lon": 82.86567,
+    "opening_hours": null,
+    "osm_url": null,
+    "source": {
+     "url": "https://locator.iocl.com/indianoil-shiv-shankar-filling-station-petrol-pump-d-padar-koraput-240080/Home",
+     "title": "IndianOil locator: Shiv Shankar Filling Station, D Padar",
+     "kind": "official",
+     "opened": true,
+     "source_date": null,
+     "accessed": "2026-10-07"
+    }
+   },
+   {
+    "id": "fuel:iocl-240017",
+    "name": "Gupteswar Filling Station Ksk",
+    "brand": "Indian Oil",
+    "near": "Semiliguda",
+    "km_from_start": 654.8,
+    "off_road_m": 1815,
+    "lat": 18.7027,
+    "lon": 82.8818,
+    "opening_hours": null,
+    "osm_url": null,
+    "source": {
+     "url": "https://locator.iocl.com/indianoil-gupteswar-filling-station-ksk-petrol-pump-semiliguda-koraput-240017/Home",
+     "title": "IndianOil locator: Gupteswar Filling Station Ksk, Semiliguda",
+     "kind": "official",
+     "opened": true,
+     "source_date": null,
+     "accessed": "2026-10-07"
     }
    },
    {
@@ -6869,7 +6873,7 @@
     "name": "Gupteswar Fuel Station",
     "brand": "HP",
     "near": "Lunguri",
-    "km_from_start": 653.8,
+    "km_from_start": 655.8,
     "off_road_m": 26,
     "lat": 18.68811,
     "lon": 82.8719,
@@ -6881,7 +6885,7 @@
      "kind": "official",
      "opened": true,
      "source_date": null,
-     "accessed": "2026-10-06"
+     "accessed": "2026-10-07"
     }
    },
    {
@@ -6889,7 +6893,7 @@
     "name": "Gangeswari Filling Station",
     "brand": "Indian Oil",
     "near": "Ampawalli",
-    "km_from_start": 665.9,
+    "km_from_start": 667.8,
     "off_road_m": 1848,
     "lat": 18.5865,
     "lon": 82.91505,
@@ -6901,16 +6905,16 @@
      "kind": "official",
      "opened": true,
      "source_date": null,
-     "accessed": "2026-10-06"
+     "accessed": "2026-10-07"
     }
    }
   ],
-  "pump_count": 95,
-  "stops": 60,
+  "pump_count": 99,
+  "stops": 63,
   "longest_gaps": [
    {
-    "from_km": 374.7,
-    "to_km": 452.3,
+    "from_km": 374.6,
+    "to_km": 452.2,
     "gap_km": 77.6,
     "from_is": "pump",
     "to_is": "pump",
@@ -6918,35 +6922,35 @@
     "near_to": "Gopalpur"
    },
    {
-    "from_km": 573.3,
-    "to_km": 644.5,
-    "gap_km": 71.2,
+    "from_km": 520.9,
+    "to_km": 573.0,
+    "gap_km": 52.1,
     "from_is": "pump",
     "to_is": "pump",
     "near_from": "Koraput",
     "near_to": "Koraput"
    },
    {
-    "from_km": 521.1,
-    "to_km": 573.3,
-    "gap_km": 52.2,
+    "from_km": 573.0,
+    "to_km": 610.9,
+    "gap_km": 37.9,
     "from_is": "pump",
     "to_is": "pump",
     "near_from": "Koraput",
     "near_to": "Koraput"
    },
    {
-    "from_km": 56.2,
+    "from_km": 56.1,
     "to_km": 91.6,
-    "gap_km": 35.4,
+    "gap_km": 35.5,
     "from_is": "pump",
     "to_is": "pump",
     "near_from": "Konark",
     "near_to": "Puri"
    },
    {
-    "from_km": 343.8,
-    "to_km": 374.7,
+    "from_km": 343.7,
+    "to_km": 374.6,
     "gap_km": 30.9,
     "from_is": "pump",
     "to_is": "pump",
@@ -6955,7 +6959,7 @@
    }
   ],
   "note": "Pumps are those drawn on the open map within the search radius of the road, and, where the map has none, those on the oil companies' own locators. A pump missing from both is missing here, so each gap is a worst case.",
-  "fetched": "2026-10-06"
+  "fetched": "2026-10-07"
  },
  "rules": [
   {
@@ -7188,7 +7192,7 @@
   "Videos: the pages give upload dates, not filming dates, so 'filmed' is filled only where the title names a date. Uploads, in order: 2021-09, 2025-07."
  ],
  "counts": {
-  "facts": 121
+  "facts": 125
  },
- "built": "2026-10-06"
+ "built": "2026-10-07"
 }

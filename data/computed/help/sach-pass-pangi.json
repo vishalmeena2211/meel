@@ -1,41 +1,17 @@
 {
- "fetched": "2026-10-06",
+ "fetched": "2026-10-07",
  "hospitals": [
   {
-   "name": "Ayurvedic Hospital, Bharmour",
-   "km_from_start": 17.1,
-   "off_road_m": 1624,
-   "lat": 32.44329,
-   "lon": 76.54095,
-   "osm_url": "https://www.openstreetmap.org/node/773641430"
-  },
-  {
-   "name": "Civil Hospital, Bharmour",
-   "km_from_start": 17.1,
-   "off_road_m": 1503,
-   "lat": 32.44169,
-   "lon": 76.53781,
-   "osm_url": "https://www.openstreetmap.org/node/7016099611"
-  },
-  {
-   "name": "Hospital, Churi",
-   "km_from_start": 50.6,
-   "off_road_m": 58,
-   "lat": 32.47863,
-   "lon": 76.29164,
-   "osm_url": "https://www.openstreetmap.org/node/7165542027"
-  },
-  {
    "name": "Sukhmani Hospital, Chamba",
-   "km_from_start": 76.5,
-   "off_road_m": 149,
+   "km_from_start": 0.1,
+   "off_road_m": 175,
    "lat": 32.55494,
    "lon": 76.12327,
    "osm_url": "https://www.openstreetmap.org/node/6986550290"
   },
   {
    "name": "Regional Hospital, Chamba",
-   "km_from_start": 76.9,
+   "km_from_start": 0.4,
    "off_road_m": 12,
    "lat": 32.55869,
    "lon": 76.12211,
@@ -43,15 +19,15 @@
   },
   {
    "name": "District Civil Hosptial",
-   "km_from_start": 76.9,
-   "off_road_m": 48,
+   "km_from_start": 0.4,
+   "off_road_m": 47,
    "lat": 32.5588,
    "lon": 76.12278,
    "osm_url": "https://www.openstreetmap.org/way/302432572"
   },
   {
    "name": "T B Hosptial",
-   "km_from_start": 77.2,
+   "km_from_start": 0.7,
    "off_road_m": 768,
    "lat": 32.56175,
    "lon": 76.13046,
@@ -59,7 +35,7 @@
   },
   {
    "name": "Rana Hospital",
-   "km_from_start": 77.8,
+   "km_from_start": 1.4,
    "off_road_m": 614,
    "lat": 32.56427,
    "lon": 76.11372,
@@ -67,15 +43,15 @@
   },
   {
    "name": "District Ayurvedic Hospital, Chamba",
-   "km_from_start": 78.2,
-   "off_road_m": 18,
+   "km_from_start": 1.7,
+   "off_road_m": 11,
    "lat": 32.5682,
    "lon": 76.12065,
    "osm_url": "https://www.openstreetmap.org/node/6988324616"
   },
   {
    "name": "NHPC Hospital",
-   "km_from_start": 108.9,
+   "km_from_start": 32.5,
    "off_road_m": 825,
    "lat": 32.7254,
    "lon": 76.09067,
@@ -83,7 +59,7 @@
   },
   {
    "name": "Civil Hospital, Tissa",
-   "km_from_start": 137.3,
+   "km_from_start": 60.9,
    "off_road_m": 24,
    "lat": 32.83368,
    "lon": 76.15642,
@@ -91,7 +67,7 @@
   },
   {
    "name": "Ayurvedic Health Centre, Kilar",
-   "km_from_start": 237.2,
+   "km_from_start": 161.0,
    "off_road_m": 500,
    "lat": 33.08116,
    "lon": 76.40719,
@@ -99,7 +75,7 @@
   },
   {
    "name": "Civil Hospital, Killar",
-   "km_from_start": 237.2,
+   "km_from_start": 161.0,
    "off_road_m": 473,
    "lat": 33.08115,
    "lon": 76.40691,
@@ -107,7 +83,7 @@
   },
   {
    "name": "Government Tuberculosis Hospital",
-   "km_from_start": 355.2,
+   "km_from_start": 279.0,
    "off_road_m": 193,
    "lat": 33.31889,
    "lon": 75.76007,
@@ -115,7 +91,7 @@
   },
   {
    "name": "DTC Hospital",
-   "km_from_start": 356.2,
+   "km_from_start": 280.0,
    "off_road_m": 241,
    "lat": 33.31179,
    "lon": 75.76597,
@@ -123,7 +99,7 @@
   },
   {
    "name": "Chenab Hospital",
-   "km_from_start": 356.4,
+   "km_from_start": 280.2,
    "off_road_m": 449,
    "lat": 33.30939,
    "lon": 75.77394,
@@ -132,24 +108,16 @@
  ],
  "police": [
   {
-   "name": "Police Station Bharmaur",
-   "km_from_start": 17.1,
-   "off_road_m": 560,
-   "lat": 32.44661,
-   "lon": 76.52894,
-   "osm_url": "https://www.openstreetmap.org/node/2903021863"
-  },
-  {
    "name": "Police Station Sultanpur",
-   "km_from_start": 77.5,
-   "off_road_m": 362,
+   "km_from_start": 1.0,
+   "off_road_m": 358,
    "lat": 32.56031,
    "lon": 76.11754,
    "osm_url": "https://www.openstreetmap.org/node/716376701"
   },
   {
    "name": "Bhanodi Police Post",
-   "km_from_start": 175.4,
+   "km_from_start": 99.1,
    "off_road_m": 1022,
    "lat": 32.96226,
    "lon": 76.18058,

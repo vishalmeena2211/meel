@@ -1,5 +1,5 @@
 {
- "fetched": "2026-10-06",
+ "fetched": "2026-10-07",
  "hospitals": [
   {
    "name": "Government Hospital",
@@ -19,15 +19,15 @@
   },
   {
    "name": "General hospital",
-   "km_from_start": 666.8,
-   "off_road_m": 413,
+   "km_from_start": 303.0,
+   "off_road_m": 275,
    "lat": 28.16884,
    "lon": 94.80102,
    "osm_url": "https://www.openstreetmap.org/node/5320288022"
   },
   {
    "name": "Bakin Pertin Hospital, Pasighat",
-   "km_from_start": 767.0,
+   "km_from_start": 745.9,
    "off_road_m": 163,
    "lat": 28.07121,
    "lon": 95.32478,
@@ -35,7 +35,7 @@
   },
   {
    "name": "Community Health Centre",
-   "km_from_start": 831.7,
+   "km_from_start": 810.6,
    "off_road_m": 286,
    "lat": 28.267,
    "lon": 95.61366,
@@ -43,7 +43,7 @@
   },
   {
    "name": "Primary Health Center Etalin",
-   "km_from_start": 1040.3,
+   "km_from_start": 1019.3,
    "off_road_m": 11,
    "lat": 28.60759,
    "lon": 95.87123,
@@ -51,7 +51,7 @@
   },
   {
    "name": "District hospital",
-   "km_from_start": 1087.5,
+   "km_from_start": 1066.4,
    "off_road_m": 516,
    "lat": 28.79679,
    "lon": 95.91033,
@@ -59,7 +59,7 @@
   },
   {
    "name": "District Hospital",
-   "km_from_start": 1298.8,
+   "km_from_start": 1277.8,
    "off_road_m": 387,
    "lat": 28.14154,
    "lon": 95.84051,
@@ -67,7 +67,7 @@
   },
   {
    "name": "District Hospital",
-   "km_from_start": 1374.8,
+   "km_from_start": 1353.8,
    "off_road_m": 159,
    "lat": 27.92805,
    "lon": 96.15817,
@@ -75,7 +75,7 @@
   },
   {
    "name": "Hayuliang Hospital",
-   "km_from_start": 1466.8,
+   "km_from_start": 1445.8,
    "off_road_m": 176,
    "lat": 28.08211,
    "lon": 96.52456,
@@ -84,24 +84,24 @@
  ],
  "police": [
   {
+   "name": "Kamba Police Station",
+   "km_from_start": 327.4,
+   "off_road_m": 33,
+   "lat": 28.26619,
+   "lon": 94.67422,
+   "osm_url": "https://www.openstreetmap.org/node/9568801594"
+  },
+  {
    "name": null,
-   "km_from_start": 478.9,
+   "km_from_start": 474.6,
    "off_road_m": 14,
    "lat": 28.5993,
    "lon": 94.13598,
    "osm_url": "https://www.openstreetmap.org/node/5329822035"
   },
   {
-   "name": "Kamba Police Station",
-   "km_from_start": 625.4,
-   "off_road_m": 14,
-   "lat": 28.26619,
-   "lon": 94.67422,
-   "osm_url": "https://www.openstreetmap.org/node/9568801594"
-  },
-  {
    "name": "Aalo Police Station",
-   "km_from_start": 667.1,
+   "km_from_start": 646.0,
    "off_road_m": 2,
    "lat": 28.17313,
    "lon": 94.80002,
@@ -109,7 +109,7 @@
   },
   {
    "name": "Police Station",
-   "km_from_start": 831.7,
+   "km_from_start": 810.6,
    "off_road_m": 551,
    "lat": 28.26592,
    "lon": 95.61611,
@@ -117,7 +117,7 @@
   },
   {
    "name": "Superintendent of police office",
-   "km_from_start": 1086.6,
+   "km_from_start": 1065.5,
    "off_road_m": 88,
    "lat": 28.79444,
    "lon": 95.89886,

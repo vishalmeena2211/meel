@@ -1,5 +1,5 @@
 {
- "fetched": "2026-10-06",
+ "fetched": "2026-10-07",
  "hospitals": [
   {
    "name": "Jagannath Seva Sadan",
@@ -139,7 +139,7 @@
   },
   {
    "name": "Shree Hospitals",
-   "km_from_start": 1.5,
+   "km_from_start": 1.4,
    "off_road_m": 29,
    "lat": 20.24837,
    "lon": 85.84152,
@@ -211,7 +211,7 @@
   },
   {
    "name": "Mental Hospital",
-   "km_from_start": 91.5,
+   "km_from_start": 91.4,
    "off_road_m": 587,
    "lat": 19.83152,
    "lon": 85.862,
@@ -235,7 +235,7 @@
   },
   {
    "name": "Sanjeevani Hospital (Puri)",
-   "km_from_start": 94.5,
+   "km_from_start": 94.4,
    "off_road_m": 295,
    "lat": 19.81469,
    "lon": 85.84035,
@@ -251,7 +251,7 @@
   },
   {
    "name": "Kalara Hospital",
-   "km_from_start": 95.1,
+   "km_from_start": 95.0,
    "off_road_m": 224,
    "lat": 19.81249,
    "lon": 85.8346,
@@ -274,6 +274,14 @@
    "osm_url": "https://www.openstreetmap.org/node/7078980391"
   },
   {
+   "name": "Government Hospital, Puri",
+   "km_from_start": 95.4,
+   "off_road_m": 171,
+   "lat": 19.8144,
+   "lon": 85.8296,
+   "osm_url": "https://www.openstreetmap.org/node/7079268126"
+  },
+  {
    "name": "Apollo Hospital",
    "km_from_start": 95.4,
    "off_road_m": 112,
@@ -282,16 +290,8 @@
    "osm_url": "https://www.openstreetmap.org/node/7701568161"
   },
   {
-   "name": "Government Hospital, Puri",
-   "km_from_start": 95.5,
-   "off_road_m": 171,
-   "lat": 19.8144,
-   "lon": 85.8296,
-   "osm_url": "https://www.openstreetmap.org/node/7079268126"
-  },
-  {
    "name": "Patanjali Hospital",
-   "km_from_start": 96.0,
+   "km_from_start": 95.9,
    "off_road_m": 45,
    "lat": 19.8109,
    "lon": 85.8257,
@@ -331,7 +331,7 @@
   },
   {
    "name": "CHC, Chandanpur",
-   "km_from_start": 109.0,
+   "km_from_start": 108.9,
    "off_road_m": 217,
    "lat": 19.89557,
    "lon": 85.80802,
@@ -339,7 +339,7 @@
   },
   {
    "name": "Government Hospital, Pipli",
-   "km_from_start": 137.9,
+   "km_from_start": 137.8,
    "off_road_m": 690,
    "lat": 20.10883,
    "lon": 85.83437,
@@ -347,7 +347,7 @@
   },
   {
    "name": "Central Hospital",
-   "km_from_start": 137.9,
+   "km_from_start": 137.8,
    "off_road_m": 431,
    "lat": 20.11112,
    "lon": 85.83265,
@@ -363,7 +363,7 @@
   },
   {
    "name": "Sayeed Memorial Hospital",
-   "km_from_start": 151.3,
+   "km_from_start": 151.2,
    "off_road_m": 34,
    "lat": 20.15479,
    "lon": 85.7144,
@@ -371,7 +371,7 @@
   },
   {
    "name": "Railway Hospital",
-   "km_from_start": 152.2,
+   "km_from_start": 152.1,
    "off_road_m": 700,
    "lat": 20.15293,
    "lon": 85.70381,
@@ -379,7 +379,7 @@
   },
   {
    "name": "Kalinga Hospital",
-   "km_from_start": 153.6,
+   "km_from_start": 153.5,
    "off_road_m": 37,
    "lat": 20.16562,
    "lon": 85.69623,
@@ -395,11 +395,19 @@
   },
   {
    "name": "Parkland Hospital",
-   "km_from_start": 162.7,
+   "km_from_start": 162.6,
    "off_road_m": 512,
    "lat": 20.17506,
    "lon": 85.62017,
    "osm_url": "https://www.openstreetmap.org/node/7701568119"
+  },
+  {
+   "name": "Sahajog Hospital",
+   "km_from_start": 162.7,
+   "off_road_m": 1567,
+   "lat": 20.18187,
+   "lon": 85.61201,
+   "osm_url": "https://www.openstreetmap.org/node/7701568158"
   },
   {
    "name": "SAI SANJIBANI HOSPITAL",
@@ -410,16 +418,8 @@
    "osm_url": "https://www.openstreetmap.org/node/5858016552"
   },
   {
-   "name": "Sahajog Hospital",
-   "km_from_start": 162.8,
-   "off_road_m": 1567,
-   "lat": 20.18187,
-   "lon": 85.61201,
-   "osm_url": "https://www.openstreetmap.org/node/7701568158"
-  },
-  {
    "name": "Jeevan Jyoti Hospital",
-   "km_from_start": 163.7,
+   "km_from_start": 163.6,
    "off_road_m": 110,
    "lat": 20.16606,
    "lon": 85.61329,
@@ -443,7 +443,7 @@
   },
   {
    "name": "Sai Sanjeevani Hospital",
-   "km_from_start": 181.9,
+   "km_from_start": 181.8,
    "off_road_m": 148,
    "lat": 20.03418,
    "lon": 85.51798,
@@ -451,7 +451,7 @@
   },
   {
    "name": "Government Hospital, Badapokharia",
-   "km_from_start": 188.1,
+   "km_from_start": 188.0,
    "off_road_m": 59,
    "lat": 19.99421,
    "lon": 85.4781,
@@ -459,7 +459,7 @@
   },
   {
    "name": "Basanta Manjari General Hospital",
-   "km_from_start": 197.8,
+   "km_from_start": 197.7,
    "off_road_m": 601,
    "lat": 19.94128,
    "lon": 85.40515,
@@ -475,7 +475,7 @@
   },
   {
    "name": "C.H.C, Tangi",
-   "km_from_start": 201.9,
+   "km_from_start": 201.8,
    "off_road_m": 1189,
    "lat": 19.923,
    "lon": 85.39576,
@@ -483,7 +483,7 @@
   },
   {
    "name": "Rabindra Poly Clinic and Ultrasound Centre",
-   "km_from_start": 215.3,
+   "km_from_start": 215.2,
    "off_road_m": 303,
    "lat": 19.84469,
    "lon": 85.289,
@@ -491,7 +491,7 @@
   },
   {
    "name": "Nandighos Hospital",
-   "km_from_start": 230.4,
+   "km_from_start": 230.3,
    "off_road_m": 1744,
    "lat": 19.74576,
    "lon": 85.2024,
@@ -499,7 +499,7 @@
   },
   {
    "name": "Ayurvedic Hospital",
-   "km_from_start": 270.5,
+   "km_from_start": 270.4,
    "off_road_m": 104,
    "lat": 19.42913,
    "lon": 85.07438,
@@ -507,7 +507,7 @@
   },
   {
    "name": "Police Hospital",
-   "km_from_start": 284.0,
+   "km_from_start": 283.8,
    "off_road_m": 1188,
    "lat": 19.36116,
    "lon": 84.98292,
@@ -515,7 +515,7 @@
   },
   {
    "name": "Chatrapur Main Hospital",
-   "km_from_start": 284.1,
+   "km_from_start": 284.0,
    "off_road_m": 405,
    "lat": 19.35594,
    "lon": 84.98802,
@@ -523,7 +523,7 @@
   },
   {
    "name": "Sankara Eye Hospital Vision Care Centre",
-   "km_from_start": 285.5,
+   "km_from_start": 285.4,
    "off_road_m": 93,
    "lat": 19.35123,
    "lon": 84.97823,
@@ -531,7 +531,7 @@
   },
   {
    "name": "Government Hospital, Gopalpur",
-   "km_from_start": 300.8,
+   "km_from_start": 300.7,
    "off_road_m": 46,
    "lat": 19.26014,
    "lon": 84.90526,
@@ -539,7 +539,7 @@
   },
   {
    "name": "Nari Hospital",
-   "km_from_start": 312.2,
+   "km_from_start": 312.1,
    "off_road_m": 470,
    "lat": 19.31378,
    "lon": 84.8252,
@@ -547,7 +547,7 @@
   },
   {
    "name": "Ashutosh Hospital",
-   "km_from_start": 313.0,
+   "km_from_start": 312.9,
    "off_road_m": 15,
    "lat": 19.3078,
    "lon": 84.81935,
@@ -555,7 +555,7 @@
   },
   {
    "name": "Sri Ram Hospital, Ganjam",
-   "km_from_start": 313.1,
+   "km_from_start": 313.0,
    "off_road_m": 105,
    "lat": 19.30876,
    "lon": 84.81849,
@@ -563,7 +563,7 @@
   },
   {
    "name": "New Siva Sai Hospital",
-   "km_from_start": 313.4,
+   "km_from_start": 313.3,
    "off_road_m": 14,
    "lat": 19.30726,
    "lon": 84.81598,
@@ -571,7 +571,7 @@
   },
   {
    "name": "MKCG Medical College and Hospital",
-   "km_from_start": 313.7,
+   "km_from_start": 313.6,
    "off_road_m": 347,
    "lat": 19.30992,
    "lon": 84.81205,
@@ -579,71 +579,71 @@
   },
   {
    "name": "M.K.C.G. Medical College Hospital",
-   "km_from_start": 313.9,
+   "km_from_start": 313.8,
    "off_road_m": 147,
    "lat": 19.30796,
    "lon": 84.81112,
    "osm_url": "https://www.openstreetmap.org/way/245628815"
   },
   {
-   "name": "Berhampur Cardiac and Multi Speciality Hospital",
-   "km_from_start": 314.2,
-   "off_road_m": 18,
-   "lat": 19.3068,
-   "lon": 84.80851,
-   "osm_url": "https://www.openstreetmap.org/node/7715905857"
-  },
-  {
    "name": "Bansadhara Hospital",
-   "km_from_start": 314.3,
+   "km_from_start": 314.1,
    "off_road_m": 92,
    "lat": 19.30756,
    "lon": 84.80874,
    "osm_url": "https://www.openstreetmap.org/node/7085146068"
   },
   {
+   "name": "Berhampur Cardiac and Multi Speciality Hospital",
+   "km_from_start": 314.1,
+   "off_road_m": 18,
+   "lat": 19.3068,
+   "lon": 84.80851,
+   "osm_url": "https://www.openstreetmap.org/node/7715905857"
+  },
+  {
    "name": "Neelachala Hospital",
-   "km_from_start": 314.4,
+   "km_from_start": 314.3,
    "off_road_m": 201,
    "lat": 19.30669,
    "lon": 84.80583,
    "osm_url": "https://www.openstreetmap.org/node/7081521233"
   },
   {
-   "name": "Dr. Karunakar Hospital",
-   "km_from_start": 314.5,
-   "off_road_m": 648,
-   "lat": 19.30476,
-   "lon": 84.80196,
-   "osm_url": "https://www.openstreetmap.org/node/7715905918"
-  },
-  {
    "name": "Sun Healthcare Hospital",
-   "km_from_start": 314.5,
+   "km_from_start": 314.3,
    "off_road_m": 39,
    "lat": 19.30815,
    "lon": 84.80653,
    "osm_url": "https://www.openstreetmap.org/node/7715905925"
   },
   {
-   "name": "Ecos Eye Hospital",
-   "km_from_start": 314.6,
-   "off_road_m": 1477,
-   "lat": 19.30034,
-   "lon": 84.79556,
-   "osm_url": "https://www.openstreetmap.org/node/7079170768"
-  },
-  {
    "name": "Radha Soami Seva Sadan",
-   "km_from_start": 314.6,
+   "km_from_start": 314.4,
    "off_road_m": 13,
    "lat": 19.3089,
    "lon": 84.80616,
    "osm_url": "https://www.openstreetmap.org/node/7079232200"
   },
   {
+   "name": "Dr. Karunakar Hospital",
+   "km_from_start": 314.4,
+   "off_road_m": 648,
+   "lat": 19.30476,
+   "lon": 84.80196,
+   "osm_url": "https://www.openstreetmap.org/node/7715905918"
+  },
+  {
+   "name": "Ecos Eye Hospital",
+   "km_from_start": 314.5,
+   "off_road_m": 1477,
+   "lat": 19.30034,
+   "lon": 84.79556,
+   "osm_url": "https://www.openstreetmap.org/node/7079170768"
+  },
+  {
    "name": "KGN Sparsh Hospital",
-   "km_from_start": 314.6,
+   "km_from_start": 314.5,
    "off_road_m": 717,
    "lat": 19.30523,
    "lon": 84.80066,
@@ -651,47 +651,15 @@
   },
   {
    "name": "New Kalinga Hospital",
-   "km_from_start": 314.7,
+   "km_from_start": 314.6,
    "off_road_m": 12,
    "lat": 19.31027,
    "lon": 84.80521,
    "osm_url": "https://www.openstreetmap.org/node/7715905905"
   },
   {
-   "name": "Apollo Hospital",
-   "km_from_start": 314.8,
-   "off_road_m": 72,
-   "lat": 19.31125,
-   "lon": 84.80506,
-   "osm_url": "https://www.openstreetmap.org/node/7715905844"
-  },
-  {
-   "name": "Life Care Hospital",
-   "km_from_start": 314.8,
-   "off_road_m": 17,
-   "lat": 19.31063,
-   "lon": 84.80451,
-   "osm_url": "https://www.openstreetmap.org/node/7715905851"
-  },
-  {
-   "name": "Christian Hospital For Women And Children",
-   "km_from_start": 314.8,
-   "off_road_m": 882,
-   "lat": 19.30572,
-   "lon": 84.7981,
-   "osm_url": "https://www.openstreetmap.org/way/245995657"
-  },
-  {
-   "name": "Sahara Seva Sadan",
-   "km_from_start": 314.9,
-   "off_road_m": 12,
-   "lat": 19.31161,
-   "lon": 84.80396,
-   "osm_url": "https://www.openstreetmap.org/node/7068377996"
-  },
-  {
    "name": "Aastha Hospital, Ganjam",
-   "km_from_start": 314.9,
+   "km_from_start": 314.7,
    "off_road_m": 155,
    "lat": 19.31192,
    "lon": 84.80549,
@@ -699,15 +667,47 @@
   },
   {
    "name": "Divine Nursing Home",
-   "km_from_start": 314.9,
+   "km_from_start": 314.7,
    "off_road_m": 12,
    "lat": 19.31112,
    "lon": 84.80442,
    "osm_url": "https://www.openstreetmap.org/node/7085481944"
   },
   {
+   "name": "Apollo Hospital",
+   "km_from_start": 314.7,
+   "off_road_m": 72,
+   "lat": 19.31125,
+   "lon": 84.80506,
+   "osm_url": "https://www.openstreetmap.org/node/7715905844"
+  },
+  {
+   "name": "Life Care Hospital",
+   "km_from_start": 314.7,
+   "off_road_m": 17,
+   "lat": 19.31063,
+   "lon": 84.80451,
+   "osm_url": "https://www.openstreetmap.org/node/7715905851"
+  },
+  {
+   "name": "Christian Hospital For Women And Children",
+   "km_from_start": 314.7,
+   "off_road_m": 882,
+   "lat": 19.30572,
+   "lon": 84.7981,
+   "osm_url": "https://www.openstreetmap.org/way/245995657"
+  },
+  {
+   "name": "Sahara Seva Sadan",
+   "km_from_start": 314.8,
+   "off_road_m": 12,
+   "lat": 19.31161,
+   "lon": 84.80396,
+   "osm_url": "https://www.openstreetmap.org/node/7068377996"
+  },
+  {
    "name": "Narayan Jeevan Daan Hospitals",
-   "km_from_start": 315.0,
+   "km_from_start": 314.8,
    "off_road_m": 834,
    "lat": 19.30677,
    "lon": 84.79774,
@@ -715,15 +715,23 @@
   },
   {
    "name": "Kid Care",
-   "km_from_start": 315.1,
+   "km_from_start": 315.0,
    "off_road_m": 20,
    "lat": 19.31269,
    "lon": 84.80257,
    "osm_url": "https://www.openstreetmap.org/node/7715905933"
   },
   {
+   "name": "Ayush Hospital",
+   "km_from_start": 315.1,
+   "off_road_m": 420,
+   "lat": 19.31734,
+   "lon": 84.80307,
+   "osm_url": "https://www.openstreetmap.org/node/7715905878"
+  },
+  {
    "name": "Gurudev Hospital",
-   "km_from_start": 315.3,
+   "km_from_start": 315.2,
    "off_road_m": 81,
    "lat": 19.31449,
    "lon": 84.80195,
@@ -731,23 +739,15 @@
   },
   {
    "name": "Bishwanath Uro Care Hospital",
-   "km_from_start": 315.3,
+   "km_from_start": 315.2,
    "off_road_m": 46,
    "lat": 19.31426,
    "lon": 84.80164,
    "osm_url": "https://www.openstreetmap.org/node/7715905863"
   },
   {
-   "name": "Ayush Hospital",
-   "km_from_start": 315.3,
-   "off_road_m": 420,
-   "lat": 19.31734,
-   "lon": 84.80307,
-   "osm_url": "https://www.openstreetmap.org/node/7715905878"
-  },
-  {
    "name": "Divya Drushti Eye Hospital",
-   "km_from_start": 315.3,
+   "km_from_start": 315.2,
    "off_road_m": 65,
    "lat": 19.3145,
    "lon": 84.80143,
@@ -755,7 +755,7 @@
   },
   {
    "name": "Newcare Hospital",
-   "km_from_start": 315.4,
+   "km_from_start": 315.3,
    "off_road_m": 276,
    "lat": 19.31641,
    "lon": 84.80171,
@@ -763,7 +763,7 @@
   },
   {
    "name": "Abhaya Hospital",
-   "km_from_start": 315.4,
+   "km_from_start": 315.3,
    "off_road_m": 23,
    "lat": 19.31389,
    "lon": 84.80071,
@@ -771,7 +771,7 @@
   },
   {
    "name": "Mrityunjay Hospital",
-   "km_from_start": 315.4,
+   "km_from_start": 315.3,
    "off_road_m": 25,
    "lat": 19.31384,
    "lon": 84.80081,
@@ -779,7 +779,7 @@
   },
   {
    "name": "Namratha Hospital",
-   "km_from_start": 315.5,
+   "km_from_start": 315.4,
    "off_road_m": 82,
    "lat": 19.31518,
    "lon": 84.79975,
@@ -787,7 +787,7 @@
   },
   {
    "name": "Patro Hospital",
-   "km_from_start": 315.9,
+   "km_from_start": 315.7,
    "off_road_m": 649,
    "lat": 19.30902,
    "lon": 84.79614,
@@ -795,7 +795,7 @@
   },
   {
    "name": "Meenakshi Hospital, Ganjam",
-   "km_from_start": 316.1,
+   "km_from_start": 316.0,
    "off_road_m": 290,
    "lat": 19.31283,
    "lon": 84.7926,
@@ -803,7 +803,7 @@
   },
   {
    "name": "City Hospital",
-   "km_from_start": 316.1,
+   "km_from_start": 316.0,
    "off_road_m": 259,
    "lat": 19.31274,
    "lon": 84.79346,
@@ -811,7 +811,7 @@
   },
   {
    "name": "Tata Medica Hospital",
-   "km_from_start": 316.1,
+   "km_from_start": 316.0,
    "off_road_m": 23,
    "lat": 19.3148,
    "lon": 84.79407,
@@ -819,7 +819,7 @@
   },
   {
    "name": "Amit Hospital - Berhampur",
-   "km_from_start": 316.2,
+   "km_from_start": 316.1,
    "off_road_m": 75,
    "lat": 19.31486,
    "lon": 84.79317,
@@ -827,7 +827,7 @@
   },
   {
    "name": "Red Cross Hospital",
-   "km_from_start": 317.0,
+   "km_from_start": 316.9,
    "off_road_m": 449,
    "lat": 19.31488,
    "lon": 84.78616,
@@ -835,7 +835,7 @@
   },
   {
    "name": "Anuradha Hospital",
-   "km_from_start": 317.2,
+   "km_from_start": 317.1,
    "off_road_m": 556,
    "lat": 19.31409,
    "lon": 84.78399,
@@ -843,7 +843,7 @@
   },
   {
    "name": "Kalinga Hospital",
-   "km_from_start": 318.1,
+   "km_from_start": 318.0,
    "off_road_m": 601,
    "lat": 19.31433,
    "lon": 84.77597,
@@ -851,7 +851,7 @@
   },
   {
    "name": "Jasodhara Life Hospital and Maternity Centre",
-   "km_from_start": 318.7,
+   "km_from_start": 318.6,
    "off_road_m": 38,
    "lat": 19.32115,
    "lon": 84.77094,
@@ -859,7 +859,7 @@
   },
   {
    "name": "Government Hospital, Pudamari",
-   "km_from_start": 355.8,
+   "km_from_start": 355.6,
    "off_road_m": 140,
    "lat": 19.43628,
    "lon": 84.47018,
@@ -867,7 +867,7 @@
   },
   {
    "name": "Govt Hospital, Rayagada",
-   "km_from_start": 520.6,
+   "km_from_start": 520.4,
    "off_road_m": 1044,
    "lat": 19.17107,
    "lon": 83.42168,
@@ -875,7 +875,7 @@
   },
   {
    "name": "DH Rayagada",
-   "km_from_start": 521.6,
+   "km_from_start": 521.5,
    "off_road_m": 433,
    "lat": 19.16417,
    "lon": 83.40756,
@@ -883,16 +883,96 @@
   },
   {
    "name": null,
-   "km_from_start": 643.7,
-   "off_road_m": 1906,
-   "lat": 18.76022,
-   "lon": 82.90083,
-   "osm_url": "https://www.openstreetmap.org/way/231155057"
+   "km_from_start": 629.3,
+   "off_road_m": 187,
+   "lat": 18.81531,
+   "lon": 82.7194,
+   "osm_url": "https://www.openstreetmap.org/way/941692552"
+  },
+  {
+   "name": null,
+   "km_from_start": 629.4,
+   "off_road_m": 132,
+   "lat": 18.81576,
+   "lon": 82.71842,
+   "osm_url": "https://www.openstreetmap.org/way/941691248"
+  },
+  {
+   "name": null,
+   "km_from_start": 629.6,
+   "off_road_m": 47,
+   "lat": 18.81574,
+   "lon": 82.71503,
+   "osm_url": "https://www.openstreetmap.org/way/941661017"
+  },
+  {
+   "name": "Staatliches Krankenhaus",
+   "km_from_start": 629.7,
+   "off_road_m": 38,
+   "lat": 18.81582,
+   "lon": 82.71503,
+   "osm_url": "https://www.openstreetmap.org/node/6347848292"
+  },
+  {
+   "name": "City Primary Hospital",
+   "km_from_start": 630.0,
+   "off_road_m": 507,
+   "lat": 18.82083,
+   "lon": 82.71074,
+   "osm_url": "https://www.openstreetmap.org/node/7710220432"
+  },
+  {
+   "name": "Databya Ayurvedic Hospital",
+   "km_from_start": 630.9,
+   "off_road_m": 38,
+   "lat": 18.81068,
+   "lon": 82.71305,
+   "osm_url": "https://www.openstreetmap.org/node/7710220495"
+  },
+  {
+   "name": "Handicap Hospital",
+   "km_from_start": 631.5,
+   "off_road_m": 181,
+   "lat": 18.80726,
+   "lon": 82.71714,
+   "osm_url": "https://www.openstreetmap.org/node/7710220430"
+  },
+  {
+   "name": "HAL Hospital",
+   "km_from_start": 648.5,
+   "off_road_m": 1555,
+   "lat": 18.72946,
+   "lon": 82.82112,
+   "osm_url": "https://www.openstreetmap.org/way/231035866"
+  },
+  {
+   "name": "Government Hospital",
+   "km_from_start": 648.7,
+   "off_road_m": 166,
+   "lat": 18.73839,
+   "lon": 82.83457,
+   "osm_url": "https://www.openstreetmap.org/node/7048589271"
+  },
+  {
+   "name": "Urban Primary Health Centre",
+   "km_from_start": 652.6,
+   "off_road_m": 709,
+   "lat": 18.70579,
+   "lon": 82.84577,
+   "osm_url": "https://www.openstreetmap.org/way/1292007818"
+  },
+  {
+   "name": "Annapurna Medical",
+   "km_from_start": 652.7,
+   "off_road_m": 26,
+   "lat": 18.70816,
+   "lon": 82.85272,
+   "osm_url": "https://www.openstreetmap.org/way/1292010368"
   },
   {
    "name": "New Apollo Medical Store",
    "km_from_start": 652.8,
-   "off_road_m": 1933,
+   "off_road_m": 332,
    "lat": 18.70508,
    "lon": 82.8512,
    "osm_url": "https://www.openstreetmap.org/node/11980132016"
@@ -900,7 +980,7 @@
   {
    "name": "Dasarathi Doctors Plaza",
    "km_from_start": 652.8,
-   "off_road_m": 1980,
+   "off_road_m": 31,
    "lat": 18.7075,
    "lon": 82.85266,
    "osm_url": "https://www.openstreetmap.org/way/1292009583"
@@ -957,7 +1037,7 @@
   },
   {
    "name": "Puri Town Police Station",
-   "km_from_start": 97.3,
+   "km_from_start": 97.2,
    "off_road_m": 264,
    "lat": 19.80877,
    "lon": 85.82281,
@@ -965,7 +1045,7 @@
   },
   {
    "name": "Chandanpur Police Station",
-   "km_from_start": 106.9,
+   "km_from_start": 106.8,
    "off_road_m": 1212,
    "lat": 19.8898,
    "lon": 85.81745,
@@ -981,11 +1061,19 @@
   },
   {
    "name": "KHURDHA TOWN POLICE STATION",
-   "km_from_start": 162.2,
+   "km_from_start": 162.1,
    "off_road_m": 1642,
    "lat": 20.18602,
    "lon": 85.62155,
    "osm_url": "https://www.openstreetmap.org/way/617845621"
+  },
+  {
+   "name": "Khurdha Traffic Station",
+   "km_from_start": 163.0,
+   "off_road_m": 779,
+   "lat": 20.17455,
+   "lon": 85.61397,
+   "osm_url": "https://www.openstreetmap.org/way/619211088"
   },
   {
    "name": "SADAR POLICE KHURDHA  2",
@@ -994,14 +1082,6 @@
    "lat": 20.17422,
    "lon": 85.61226,
    "osm_url": "https://www.openstreetmap.org/way/618574359"
-  },
-  {
-   "name": "Khurdha Traffic Station",
-   "km_from_start": 163.1,
-   "off_road_m": 779,
-   "lat": 20.17455,
-   "lon": 85.61397,
-   "osm_url": "https://www.openstreetmap.org/way/619211088"
   },
   {
    "name": "Excise Department. Khordha",
@@ -1029,7 +1109,7 @@
   },
   {
    "name": "Superintendent of Police Khurda ( S P )",
-   "km_from_start": 163.8,
+   "km_from_start": 163.7,
    "off_road_m": 58,
    "lat": 20.16423,
    "lon": 85.61352,
@@ -1037,7 +1117,7 @@
   },
   {
    "name": "SADAR POLICE STATION KHORDHA",
-   "km_from_start": 166.7,
+   "km_from_start": 166.6,
    "off_road_m": 42,
    "lat": 20.1432,
    "lon": 85.59807,
@@ -1045,7 +1125,7 @@
   },
   {
    "name": "balugaon police station",
-   "km_from_start": 227.7,
+   "km_from_start": 227.6,
    "off_road_m": 1357,
    "lat": 19.76138,
    "lon": 85.21392,
@@ -1053,7 +1133,7 @@
   },
   {
    "name": "Odisha Special Armed Police (OSAP) 8th Batallion",
-   "km_from_start": 279.0,
+   "km_from_start": 278.9,
    "off_road_m": 526,
    "lat": 19.38006,
    "lon": 85.02658,
@@ -1061,7 +1141,7 @@
   },
   {
    "name": "District Reserve forces",
-   "km_from_start": 284.2,
+   "km_from_start": 284.1,
    "off_road_m": 515,
    "lat": 19.35605,
    "lon": 84.98673,
@@ -1069,7 +1149,7 @@
   },
   {
    "name": "Police Station",
-   "km_from_start": 284.6,
+   "km_from_start": 284.5,
    "off_road_m": 279,
    "lat": 19.35319,
    "lon": 84.98651,
@@ -1077,7 +1157,7 @@
   },
   {
    "name": "SP Office",
-   "km_from_start": 285.0,
+   "km_from_start": 284.9,
    "off_road_m": 363,
    "lat": 19.35358,
    "lon": 84.98326,
@@ -1085,7 +1165,7 @@
   },
   {
    "name": "Old SP Office",
-   "km_from_start": 285.0,
+   "km_from_start": 284.9,
    "off_road_m": 445,
    "lat": 19.35431,
    "lon": 84.98354,
@@ -1093,7 +1173,7 @@
   },
   {
    "name": "Chatrapur Main Police Station",
-   "km_from_start": 285.4,
+   "km_from_start": 285.3,
    "off_road_m": 154,
    "lat": 19.35176,
    "lon": 84.97947,
@@ -1101,7 +1181,7 @@
   },
   {
    "name": "RPF Chatrapur Outpost",
-   "km_from_start": 285.6,
+   "km_from_start": 285.5,
    "off_road_m": 1104,
    "lat": 19.35983,
    "lon": 84.97468,
@@ -1109,7 +1189,7 @@
   },
   {
    "name": "Baidyanathpur Police station",
-   "km_from_start": 314.3,
+   "km_from_start": 314.2,
    "off_road_m": 279,
    "lat": 19.30567,
    "lon": 84.80579,
@@ -1117,7 +1197,7 @@
   },
   {
    "name": "Town Thana",
-   "km_from_start": 317.4,
+   "km_from_start": 317.3,
    "off_road_m": 603,
    "lat": 19.31377,
    "lon": 84.78269,
@@ -1125,7 +1205,7 @@
   },
   {
    "name": "l. police station",
-   "km_from_start": 518.4,
+   "km_from_start": 518.2,
    "off_road_m": 700,
    "lat": 19.19412,
    "lon": 83.41041,
@@ -1133,7 +1213,7 @@
   },
   {
    "name": "RPF",
-   "km_from_start": 520.3,
+   "km_from_start": 520.2,
    "off_road_m": 224,
    "lat": 19.17609,
    "lon": 83.41054,
@@ -1141,11 +1221,27 @@
   },
   {
    "name": null,
-   "km_from_start": 521.8,
+   "km_from_start": 521.6,
    "off_road_m": 464,
    "lat": 19.1649,
    "lon": 83.40571,
    "osm_url": "https://www.openstreetmap.org/node/11671133570"
+  },
+  {
+   "name": "Koraput police station",
+   "km_from_start": 630.3,
+   "off_road_m": 84,
+   "lat": 18.81316,
+   "lon": 82.71159,
+   "osm_url": "https://www.openstreetmap.org/node/4532566915"
+  },
+  {
+   "name": "Landespolizei",
+   "km_from_start": 630.4,
+   "off_road_m": 53,
+   "lat": 18.81292,
+   "lon": 82.7134,
+   "osm_url": "https://www.openstreetmap.org/node/6347848298"
   }
  ]
 }

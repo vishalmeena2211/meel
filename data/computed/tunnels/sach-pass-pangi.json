@@ -1,17 +1,7 @@
 {
  "slug": "sach-pass-pangi",
- "fetched": "2026-09-28",
- "tunnels": [
-  {
-   "name": "Chamba Bharmour Road",
-   "osm": [
-    "way/57765811"
-   ],
-   "from_km": 29.8,
-   "to_km": 30.3,
-   "length_km": 0.5
-  }
- ],
+ "fetched": "2026-10-07",
+ "tunnels": [],
  "source": {
   "service": "Overpass API",
   "data": "OpenStreetMap contributors",

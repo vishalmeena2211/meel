@@ -1,6 +1,6 @@
 {
  "slug": "north-sikkim",
- "fetched": "2026-09-28",
+ "fetched": "2026-10-07",
  "search_radius_m": 900,
  "pumps": [
   {
@@ -45,7 +45,7 @@
    "brand": null,
    "lat": 27.46439,
    "lon": 88.52526,
-   "km_from_start": 56.2,
+   "km_from_start": 56.1,
    "off_road_m": 8,
    "opening_hours": null,
    "petrol": null,
@@ -57,7 +57,7 @@
    "brand": "Indian Oil",
    "lat": 27.49235,
    "lon": 88.52831,
-   "km_from_start": 64.1,
+   "km_from_start": 64.0,
    "off_road_m": 13,
    "opening_hours": null,
    "petrol": null,
@@ -68,31 +68,31 @@
  "stops": 4,
  "longest_gaps": [
   {
-   "from_km": 64.1,
-   "to_km": 394.5,
-   "gap_km": 330.4,
+   "from_km": 64.0,
+   "to_km": 326.6,
+   "gap_km": 262.6,
    "from_is": "pump",
    "to_is": "end of route",
-   "near_from": "Gangtok",
+   "near_from": "Mangan",
    "near_to": "Yumthang"
   },
   {
    "from_km": 5.7,
-   "to_km": 56.2,
-   "gap_km": 50.5,
+   "to_km": 56.1,
+   "gap_km": 50.4,
    "from_is": "pump",
    "to_is": "pump",
    "near_from": "Gangtok",
-   "near_to": "Gangtok"
+   "near_to": "Mangan"
   },
   {
-   "from_km": 56.2,
-   "to_km": 64.1,
+   "from_km": 56.1,
+   "to_km": 64.0,
    "gap_km": 7.9,
    "from_is": "pump",
    "to_is": "pump",
-   "near_from": "Gangtok",
-   "near_to": "Gangtok"
+   "near_from": "Mangan",
+   "near_to": "Mangan"
   },
   {
    "from_km": 0.8,

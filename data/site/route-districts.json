@@ -5,7 +5,7 @@
   "url": "https://www.wikidata.org/wiki/Property:P12746"
  },
  "note": "The districts each road line passes through, between which kilometres, as the open map names them. Positions every 20 km (40 km on a very long route) and at every named place, so a district the road crosses for only a few kilometres can be missed.",
- "fetched": "2026-10-06",
+ "fetched": "2026-10-07",
  "source": {
   "service": "Nominatim",
   "data": "OpenStreetMap contributors",
@@ -162,56 +162,56 @@
     "district": "West Siang",
     "state": "Arunachal Pradesh",
     "km_from": 280.5,
-    "km_to": 681.3,
+    "km_to": 662.8,
     "lgd": "243"
    },
    {
     "district": "Siang",
     "state": "Arunachal Pradesh",
-    "km_from": 360.3,
-    "km_to": 760.4,
+    "km_from": 320.3,
+    "km_to": 680.8,
     "lgd": "679"
    },
    {
     "district": "Shi Yomi",
     "state": "Arunachal Pradesh",
-    "km_from": 441.2,
-    "km_to": 520.6,
+    "km_from": 400.6,
+    "km_to": 522.1,
     "lgd": "725"
    },
    {
     "district": "East Siang",
     "state": "Arunachal Pradesh",
-    "km_from": 784.9,
-    "km_to": 801.0,
+    "km_from": 720.2,
+    "km_to": 801.1,
     "lgd": "232"
    },
    {
     "district": "Lower Dibang Valley",
     "state": "Arunachal Pradesh",
-    "km_from": 841.7,
-    "km_to": 1320.6,
+    "km_from": 843.4,
+    "km_to": 1291.5,
     "lgd": "235"
    },
    {
     "district": "Dibang Valley",
     "state": "Arunachal Pradesh",
-    "km_from": 1000.3,
-    "km_to": 1161.9,
+    "km_from": 961.5,
+    "km_to": 1161.2,
     "lgd": "230"
    },
    {
     "district": "Lohit",
     "state": "Arunachal Pradesh",
-    "km_from": 1362.0,
-    "km_to": 1400.2,
+    "km_from": 1325.0,
+    "km_to": 1400.4,
     "lgd": "234"
    },
    {
     "district": "Anjaw district",
     "state": "Arunachal Pradesh",
-    "km_from": 1440.6,
-    "km_to": 1569.5,
+    "km_from": 1440.5,
+    "km_to": 1548.5,
     "lgd": "628"
    }
   ],
@@ -264,35 +264,35 @@
     "district": "Dehradun",
     "state": "Uttarakhand",
     "km_from": 0.0,
-    "km_to": 42.5,
+    "km_to": 42.0,
     "lgd": "49"
    },
    {
     "district": "Tehri Garhwal",
     "state": "Uttarakhand",
-    "km_from": 81.2,
-    "km_to": 640.0,
+    "km_from": 80.2,
+    "km_to": 681.2,
     "lgd": "55"
    },
    {
     "district": "Uttarkashi",
     "state": "Uttarakhand",
-    "km_from": 120.0,
-    "km_to": 561.4,
+    "km_from": 120.5,
+    "km_to": 561.5,
     "lgd": "57"
    },
    {
     "district": "Rudraprayag",
     "state": "Uttarakhand",
-    "km_from": 681.5,
-    "km_to": 880.2,
+    "km_from": 720.3,
+    "km_to": 880.3,
     "lgd": "54"
    },
    {
     "district": "Chamoli",
     "state": "Uttarakhand",
-    "km_from": 920.7,
-    "km_to": 1057.0,
+    "km_from": 921.5,
+    "km_to": 1052.4,
     "lgd": "47"
    }
   ],
@@ -351,22 +351,22 @@
    {
     "district": "Pauri Garhwal",
     "state": "Uttarakhand",
-    "km_from": 100.2,
-    "km_to": 120.1,
+    "km_from": 100.1,
+    "km_to": 100.1,
     "lgd": "52"
    },
    {
     "district": "Rudraprayag",
     "state": "Uttarakhand",
-    "km_from": 140.2,
-    "km_to": 280.2,
+    "km_from": 120.3,
+    "km_to": 222.0,
     "lgd": "54"
    },
    {
     "district": "Chamoli",
     "state": "Uttarakhand",
-    "km_from": 300.1,
-    "km_to": 358.9,
+    "km_from": 240.1,
+    "km_to": 315.3,
     "lgd": "47"
    }
   ],
@@ -2306,13 +2306,13 @@
     "district": "Nainital",
     "state": "Uttarakhand",
     "km_from": 0.0,
-    "km_to": 260.4,
+    "km_to": 280.1,
     "lgd": "51"
    },
    {
     "district": "Almora",
     "state": "Uttarakhand",
-    "km_from": 80.4,
+    "km_from": 100.1,
     "km_to": 340.1,
     "lgd": "45"
    },
@@ -2320,14 +2320,14 @@
     "district": "Bageshwar",
     "state": "Uttarakhand",
     "km_from": 360.1,
-    "km_to": 440.2,
+    "km_to": 400.1,
     "lgd": "46"
    },
    {
     "district": "Pithoragarh district",
     "state": "Uttarakhand",
-    "km_from": 460.2,
-    "km_to": 558.2,
+    "km_from": 420.2,
+    "km_to": 511.2,
     "lgd": "53"
    }
   ],
@@ -2358,57 +2358,57 @@
    {
     "district": "Chümoukedima",
     "state": "Nagaland",
-    "km_from": 20.2,
-    "km_to": 40.1,
+    "km_from": 20.3,
+    "km_to": 40.0,
     "lgd": "758"
    },
    {
     "district": "Kohima",
     "state": "Nagaland",
-    "km_from": 60.0,
-    "km_to": 140.1,
+    "km_from": 60.1,
+    "km_to": 140.5,
     "lgd": "245"
    },
    {
     "district": "Tseminyü",
     "state": "Nagaland",
-    "km_from": 160.2,
-    "km_to": 160.2,
+    "km_from": 160.1,
+    "km_to": 160.1,
     "lgd": "757"
    },
    {
     "district": "Wokha",
     "state": "Nagaland",
     "km_from": 180.2,
-    "km_to": 200.2,
+    "km_to": 200.1,
     "lgd": "250"
    },
    {
     "district": "Zünheboto",
     "state": "Nagaland",
-    "km_from": 220.1,
-    "km_to": 220.1,
+    "km_from": 220.0,
+    "km_to": 220.0,
     "lgd": "251"
    },
    {
     "district": "Mokokchung",
     "state": "Nagaland",
-    "km_from": 240.5,
-    "km_to": 360.1,
+    "km_from": 240.2,
+    "km_to": 300.0,
     "lgd": "246"
    },
    {
-    "district": "Sivasagar",
-    "state": "Assam",
-    "km_from": 380.3,
-    "km_to": 420.9,
-    "lgd": "300"
+    "district": "Longleng",
+    "state": "Nagaland",
+    "km_from": 320.1,
+    "km_to": 340.1,
+    "lgd": "615"
    },
    {
     "district": "Mon",
     "state": "Nagaland",
-    "km_from": 440.1,
-    "km_to": 443.9,
+    "km_from": 360.1,
+    "km_to": 421.5,
     "lgd": "247"
    }
   ],
@@ -2468,7 +2468,7 @@
     "district": "Mangan",
     "state": "Sikkim",
     "km_from": 20.3,
-    "km_to": 394.5,
+    "km_to": 326.6,
     "lgd": "226"
    }
   ],
@@ -2493,42 +2493,42 @@
     "district": "Khordha",
     "state": "Odisha",
     "km_from": 0.0,
-    "km_to": 220.4,
+    "km_to": 220.3,
     "lgd": "362"
    },
    {
     "district": "Puri",
     "state": "Odisha",
-    "km_from": 20.0,
-    "km_to": 141.1,
+    "km_from": 20.3,
+    "km_to": 141.0,
     "lgd": "369"
    },
    {
     "district": "Ganjam",
     "state": "Odisha",
     "km_from": 241.3,
-    "km_to": 360.7,
+    "km_to": 360.6,
     "lgd": "354"
    },
    {
     "district": "Gajapati",
     "state": "Odisha",
-    "km_from": 380.3,
-    "km_to": 420.2,
+    "km_from": 380.1,
+    "km_to": 420.5,
     "lgd": "353"
    },
    {
     "district": "Rayagada",
     "state": "Odisha",
-    "km_from": 440.2,
-    "km_to": 540.1,
+    "km_from": 440.1,
+    "km_to": 540.0,
     "lgd": "370"
    },
    {
     "district": "Koraput",
     "state": "Odisha",
-    "km_from": 560.5,
-    "km_to": 689.1,
+    "km_from": 560.3,
+    "km_to": 691.0,
     "lgd": "363"
    }
   ],
@@ -2636,14 +2636,14 @@
     "district": "Chamba",
     "state": "Himachal Pradesh",
     "km_from": 0.0,
-    "km_to": 240.2,
+    "km_to": 162.2,
     "lgd": "16"
    },
    {
     "district": "Kishtwar",
     "state": "Jammu and Kashmir",
-    "km_from": 260.1,
-    "km_to": 356.4,
+    "km_from": 180.1,
+    "km_to": 280.2,
     "lgd": "620"
    }
   ],
