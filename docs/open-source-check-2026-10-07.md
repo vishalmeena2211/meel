@@ -28,7 +28,7 @@ Each of these is fixable in under an hour. Nothing has been changed yet.
   - **Fix:** rewrite the history so every commit carries your GitHub noreply address, or publish a fresh repository with the code as one first commit. Then set the noreply address for this folder (`git config user.email …`), and turn on GitHub's "Block command line pushes that expose my email".
   - Rewriting changes every commit's id. Nothing depends on the old ids except Vercel's list of past deployments.
 
-- [ ] **2. The research notes quote people word for word.** `docs/research-notes/` holds about 43,000 words of desk research. Among them:
+- [x] **2. The research notes quote people word for word.** *Done 7 October: `docs/research-notes/`, `docs/research-interim-findings.md` and `docs/knowledge-document.md` moved out of the repository to a private folder beside it, and removed from the history (item 1).* `docs/research-notes/` holds about 43,000 words of desk research. Among them:
   - posts from xBhp and Team-BHP forum members, quoted by their handles and in one case by a real name;
   - app-store reviews, quoted verbatim;
   - 13 quotations longer than 150 characters.
@@ -36,28 +36,28 @@ Each of these is fixable in under an hour. Nothing has been changed yet.
   That was fine for private planning. Published, it republishes other people's words without asking, and forum rules may forbid it. **History.**
   - **Fix:** take `docs/research-notes/` (and `docs/research-interim-findings.md`, `docs/knowledge-document.md`, which draw on it) out of the public repository, or rewrite them as summaries with no quotes and no handles. Because they are in history, the history rewrite in item 1 is where to remove them.
 
-- [ ] **3. A copy of Meel would count into your Mixpanel project.** `web/src/lib/analytics-config.ts` falls back to your project's token. Anyone who deploys their own copy, without setting their own token, sends their visitors' events to you. The token itself is not secret: every page already carries it.
+- [x] **3. A copy of Meel would count into your Mixpanel project.** *Done 7 October: the token now comes only from `NEXT_PUBLIC_MIXPANEL_TOKEN`, which Vercel has. The project id is gone from the README.* `web/src/lib/analytics-config.ts` falls back to your project's token. Anyone who deploys their own copy, without setting their own token, sends their visitors' events to you. The token itself is not secret: every page already carries it.
   - **Fix:** remove the fallback, so counting needs `NEXT_PUBLIC_MIXPANEL_TOKEN`. Vercel already has it (you added it on 7 October), so the live site carries on unchanged. The README line naming the project id can go too.
 
 ## Should
 
-- [ ] **4. Mentions of employer and your work machine.**
+- [x] **4. Mentions of employer and your work machine.** *Done 7 October: the wireframe file's first lines reworded; the morning report moved to the private folder. Both also cleaned out of the history. The Google Cloud project id is gone from the README too.*
   - The wireframe file's first lines say it was made with its employer's wireframe method.
   - `docs/morning-report-2026-09-28.md` gives the folder as `the project folder` and links a private Claude page.
 
   Nothing secret, but it ties a personal project to your employer in public. **Worth checking your employment contract's clause on side projects before publishing anything built alongside work.** That is a question for you, not something this check can answer.
   - **Fix:** take the two lines out of the wireframe file, and the folder path and the link out of the morning report (or drop that report: it is a one-day status note).
 
-- [ ] **5. An example email that could be a real person's.** The wireframes use `rahul@example.com` as a made-up rider. It may well be someone's real address.
+- [x] **5. An example email that could be a real person's.** *Done 7 October: `rahul@example.com`, in the files and in the history.* The wireframes use `rahul@example.com` as a made-up rider. It may well be someone's real address.
   - **Fix:** change it to `rahul@example.com`; `example.com` is reserved for this.
 
-- [ ] **6. Pumps copied from the oil companies' own locators.** `data/research/*.json` lists 453 IndianOil and HP outlets: name, town and position, each linking to its page on the company's locator. Publishing them as data is a step beyond showing them on the site. Their sites' terms of use were not read.
+- [x] **6. Pumps copied from the oil companies' own locators.** *Checked 7 October: neither site links any terms of use; HP's footer says "All Rights Reserved". Kept, as facts each credited to its own page. `data/LICENSE.md` now says they are not Meel's to license.* `data/research/*.json` lists 453 IndianOil and HP outlets: name, town and position, each linking to its page on the company's locator. Publishing them as data is a step beyond showing them on the site. Their sites' terms of use were not read.
   - **Fix:** read the terms on locator.iocl.com and petrolpump.hpretail.in, or keep the list in the site's data only and say where it came from (as now). Low risk either way: each pump names its source.
 
-- [ ] **7. Planning documents show how decisions were made.** `docs/plan.md`, the morning report, the audits and the research ideas are candid working notes, including ideas about earning money. Nothing leaks, but they will be read.
+- [x] **7. Planning documents show how decisions were made.** *Kept, 7 October. They were read again for quotes and names: none. The README now points newcomers to `docs/plan.md`.* `docs/plan.md`, the morning report, the audits and the research ideas are candid working notes, including ideas about earning money. Nothing leaks, but they will be read.
   - **Fix:** keep them (many open-source projects do), or move them to a private notes repository. Your call.
 
-- [ ] **8. Four dependency warnings.** `pnpm audit` reports 3 high and 1 moderate. All come from tools Meel does not use at run time:
+- [x] **8. Four dependency warnings.** *Done 7 October: pnpm overrides pin mysql2 3.24.5, source-map-js 1.2.2 and deepmerge-ts 8.0.2; `pnpm audit` now finds nothing, and the site builds.* `pnpm audit` reports 3 high and 1 moderate. All come from tools Meel does not use at run time:
   - Prisma's command-line tool bundles a MySQL driver, though Meel uses Postgres;
   - a build-time source-map reader;
   - a merge helper.
@@ -65,7 +65,7 @@ Each of these is fixable in under an hour. Nothing has been changed yet.
   Public repositories get these flagged by GitHub automatically.
   - **Fix:** update Prisma when a release with the newer MySQL driver is out, or pin the fixed versions with pnpm overrides.
 
-- [ ] **9. The README pictures are out of date.** `.github/readme/screens.png` shows heights in metres ("5,328 m") and the old fuel list. Not a leak.
+- [x] **9. The README pictures are out of date.** *Done 7 October: all three taken again from a production build of the site as it is now; the banner and the README say 4,294 facts.* `.github/readme/screens.png` shows heights in metres ("5,328 m") and the old fuel list. Not a leak.
   - **Fix:** take them again from the site as it is now.
 
 ## Fine: checked, nothing to do

@@ -78,8 +78,8 @@ Put them in `web/.env.local` on your own machine, one per line, as `NAME=value`.
 | `MEEL_EDITOR_EMAILS` | The email of each editor, with commas between them | Nobody is an editor, and the inbox at `/editor` cannot be opened |
 | `MEEL_EDITOR_SIGNUP` | Set to `open` to let an editor's email sign up with a password | An editor's email cannot sign up with a password. Logging in with Google still works |
 | `NEXT_PUBLIC_MEEL_CHAT_NUMBER` | A WhatsApp number, with country code, digits only. Adds "Send from my chat app instead" to the report sheet | That button is not shown |
-| `NEXT_PUBLIC_MIXPANEL_TOKEN` | Another Mixpanel project's token, such as a test project's. See "Mixpanel" | Meel's own project, "Meel", whose token is in `src/lib/analytics-config.ts` |
-| `NEXT_PUBLIC_MIXPANEL_API_HOST` | Where that other project keeps its data: `https://api.mixpanel.com` for the US, `https://api-in.mixpanel.com` for India | `https://api-eu.mixpanel.com`, as Meel's project keeps its data in the EU |
+| `NEXT_PUBLIC_MIXPANEL_TOKEN` | The Mixpanel project's token (Project settings → Access keys). Counts pages and the tools riders use. See "Mixpanel" | Nothing is sent to Mixpanel, and About does not mention it |
+| `NEXT_PUBLIC_MIXPANEL_API_HOST` | Where that project keeps its data: `https://api.mixpanel.com` for the US, `https://api-in.mixpanel.com` for India | `https://api-eu.mixpanel.com`, Mixpanel's EU servers |
 | `NEXT_PUBLIC_MIXPANEL_IN_DEVELOPMENT` | `1` to send events from your own machine too. Use a separate test project | On your own machine each event is written to the browser's console instead of being sent |
 
 ### Mixpanel
@@ -88,7 +88,7 @@ The list of events, with what each one means and the details it carries, is `src
 
 What is never sent: a name, an email, a phone number, anything typed into a box, or the part of an address after "?". Mixpanel's own automatic capture and screen recording are off. Its random visitor number is kept in the browser's storage, not a cookie. A browser set to "Do Not Track" is not counted. Logged-in riders are not identified.
 
-Where it counts: the project "Meel" in Vishal's own Mixpanel organisation, made on 7 October 2026, data kept in the EU, days in India's time. Only the live site counts: not this machine, and not Vercel's preview deployments. The token is in the code because it is public by design: every page carries it, and it can only send events, not read them.
+To switch it on: make a project in Mixpanel, put its token in `NEXT_PUBLIC_MIXPANEL_TOKEN` where the site is hosted (and `NEXT_PUBLIC_MIXPANEL_API_HOST` if its data is not kept in the EU), and build again. Only the live site counts: not your own machine, and not Vercel's preview deployments. The token is public by design: every page carries it, and it can only send events, not read them. It is not kept in the code, so a copy of Meel run by someone else never counts into this site's project.
 
 ### Setting up Google
 
@@ -103,7 +103,7 @@ Only you can do this, because it is done in your own Google account.
    - `https://rideplanner.in/api/auth/callback/google`
 5. Copy the client id into `AUTH_GOOGLE_ID` and the secret into `AUTH_GOOGLE_SECRET`, and restart the site. Google shows the secret only once, when the client is made: download its JSON file then, and keep it outside this folder.
 
-This was done on 28 September 2026, in the Google Cloud project `meel-project` (client "Meel website"). Both settings are on Vercel for production. The consent screen is still in testing, so only the test users listed under **Audience** can log in with Google. Publish it there when riders should.
+This was done on 28 September 2026, in a Google Cloud project of Meel's own. Both settings are on Vercel for production. The consent screen is still in testing, so only the test users listed under **Audience** can log in with Google. Publish it there when riders should.
 
 ### Making the editor's account
 
