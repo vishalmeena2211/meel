@@ -24,7 +24,7 @@ Each of these is fixable in under an hour. Nothing has been changed yet.
 
 ## Must, before going public
 
-- [ ] **1. Your email is on every commit.** All 64 commits were signed with your personal email address. On a public repository anyone can read it, and email-harvesting bots do. **History.**
+- [x] **1. Your email is on every commit.** *Done 7 October: the history was rewritten so every commit carries `144788069+vishalmeena2211@users.noreply.github.com`; the research notes, the two documents built on them and the morning report were removed from every past version; the example address, the employer's name, the work machine's path, the private link, the Google Cloud project id and the Mixpanel token and project id were scrubbed from every past file and commit message. Force-pushed to GitHub (main is now a new line of commits). A full backup of the old history is in `meel-private/` beside this folder, never pushed. This folder's git now commits with the noreply address. Still yours to do: in GitHub, Settings → Emails, turn on "Keep my email addresses private" and "Block command line pushes that expose my email"; and see "Before flipping the switch" below.* All 64 commits were signed with your personal email address. On a public repository anyone can read it, and email-harvesting bots do. **History.**
   - **Fix:** rewrite the history so every commit carries your GitHub noreply address, or publish a fresh repository with the code as one first commit. Then set the noreply address for this folder (`git config user.email …`), and turn on GitHub's "Block command line pushes that expose my email".
   - Rewriting changes every commit's id. Nothing depends on the old ids except Vercel's list of past deployments.
 
@@ -67,6 +67,12 @@ Each of these is fixable in under an hour. Nothing has been changed yet.
 
 - [x] **9. The README pictures are out of date.** *Done 7 October: all three taken again from a production build of the site as it is now; the banner and the README say 4,294 facts.* `.github/readme/screens.png` shows heights in metres ("5,328 m") and the old fuel list. Not a leak.
   - **Fix:** take them again from the site as it is now.
+
+## Before flipping the switch
+
+GitHub can keep the old commits it was sent before the rewrite, reachable by their ids for a while, even though no branch points at them any more. Two clean ways round it:
+- [ ] **Publish a new repository** from this folder (for example rename the private one to `meel-private` and push this history to a fresh public `meel`, then point Vercel's Git connection at it). Nothing old was ever in it.
+- [ ] **Or ask GitHub Support** to remove cached views and unreferenced commits from this repository before making it public, as their guide on removing sensitive data describes.
 
 ## Fine: checked, nothing to do
 
