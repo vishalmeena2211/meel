@@ -80,13 +80,22 @@ Put them in `web/.env.local` on your own machine, one per line, as `NAME=value`.
 | `NEXT_PUBLIC_MEEL_CHAT_NUMBER` | A WhatsApp number, with country code, digits only. Adds "Send from my chat app instead" to the report sheet | That button is not shown |
 | `NEXT_PUBLIC_MIXPANEL_TOKEN` | The Mixpanel project's token (Project settings → Access keys). Counts pages and the tools riders use. See "Mixpanel" | Nothing is sent to Mixpanel, and About does not mention it |
 | `NEXT_PUBLIC_MIXPANEL_API_HOST` | Where that project keeps its data: `https://api.mixpanel.com` for the US, `https://api-in.mixpanel.com` for India | `https://api-eu.mixpanel.com`, Mixpanel's EU servers |
+| `NEXT_PUBLIC_MIXPANEL_RECORD_PERCENT` | How many visits in 100 get a screen recording | 100. `0` turns recordings off |
 | `NEXT_PUBLIC_MIXPANEL_IN_DEVELOPMENT` | `1` to send events from your own machine too. Use a separate test project | On your own machine each event is written to the browser's console instead of being sent |
 
 ### Mixpanel
 
 The list of events, with what each one means and the details it carries, is `src/lib/analytics-events.ts`: about 40, from opening a fact to posting a trip. Each is sent from the place a rider does the thing. In the browser that is `track()` from `src/lib/analytics.ts`; parts of a page made on the server name their event in the markup instead, as `data-track="Route file downloaded"`, and `src/components/analytics-start.tsx` counts the click. What only the server sees finish (an account made, a login, a trip posted or answered) is sent by `trackOnServer()` in `src/server/analytics.ts`, after the page has answered, with no rider attached.
 
-What is never sent: a name, an email, a phone number, anything typed into a box, or the part of an address after "?". Mixpanel's own automatic capture and screen recording are off. Its random visitor number is kept in the browser's storage, not a cookie. A browser set to "Do Not Track" is not counted. Logged-in riders are not identified.
+What is never sent: a name, an email, a phone number, anything typed into a box, or the part of an address after "?". Mixpanel's own automatic click capture is off. Its random visitor number is kept in the browser's storage, not a cookie. A browser set to "Do Not Track" is not counted. Logged-in riders are not identified.
+
+**Screen recordings** (Mixpanel's Session Replay) are on for every visit, or the share set in `NEXT_PUBLIC_MIXPANEL_RECORD_PERCENT` (0 turns them off). A recording replays the page, not the screen. In it:
+- everything typed into a box is hidden;
+- text inside an element marked `data-private` is hidden;
+- an element marked `data-private-block` is left out whole, its link and labels too: the account badge in the header, a trip's chat link, the riders on a trip, the WhatsApp links that carry typed words;
+- pages about a rider's account, logging in, signing up, posting a trip, a leader's requests and the editor's desk are never recorded. The recording stops on the click that leads there. The list is `NOT_RECORDED` in `src/lib/analytics.ts`.
+
+**Anything new that shows a rider's name, contact or chat link needs `data-private` or `data-private-block`.**
 
 To switch it on: make a project in Mixpanel, put its token in `NEXT_PUBLIC_MIXPANEL_TOKEN` where the site is hosted (and `NEXT_PUBLIC_MIXPANEL_API_HOST` if its data is not kept in the EU), and build again. Only the live site counts: not your own machine, and not Vercel's preview deployments. The token is public by design: every page carries it, and it can only send events, not read them. It is not kept in the code, so a copy of Meel run by someone else never counts into this site's project.
 

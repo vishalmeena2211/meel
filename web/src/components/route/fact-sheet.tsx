@@ -460,6 +460,7 @@ function ReportForm({
           {chatNumber && !offline ? (
             <a
               className="link self-center text-sm"
+              data-private-block
               href={`https://wa.me/${chatNumber}?text=${encodeURIComponent(chatText)}`}
               target="_blank"
               rel="noreferrer noopener"

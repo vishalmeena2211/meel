@@ -1,8 +1,9 @@
 "use client";
 
+import { usePathname } from "next/navigation";
 import { useEffect } from "react";
 
-import { routeOfPage, startAnalytics, track, type EventName, type EventProps } from "@/lib/analytics";
+import { followRecording, routeOfPage, startAnalytics, track, type EventName, type EventProps } from "@/lib/analytics";
 
 /**
  * Starts Mixpanel once the page is up, and counts the links and buttons marked with data-track.
@@ -11,8 +12,25 @@ import { routeOfPage, startAnalytics, track, type EventName, type EventProps } f
  * The route comes from the page's address, so the markup need not repeat it.
  */
 export function AnalyticsStart() {
+  const path = usePathname();
+  // The recording follows the page. It stops before a page that may not be recorded is drawn: on the click that
+  // leads there, and on the browser's back button; this catches anything else.
+  useEffect(() => {
+    followRecording(path);
+  }, [path]);
+
   useEffect(() => {
     void startAnalytics();
+    function leaving(event: MouseEvent) {
+      const a = event.target instanceof Element ? event.target.closest<HTMLAnchorElement>("a[href]") : null;
+      if (!a || a.origin !== window.location.origin) return;
+      followRecording(a.pathname);
+    }
+    function back() {
+      followRecording(window.location.pathname);
+    }
+    document.addEventListener("click", leaving, { capture: true });
+    window.addEventListener("popstate", back);
     function counted(event: MouseEvent) {
       const el = event.target instanceof Element ? event.target.closest<HTMLElement>("[data-track]") : null;
       const name = el?.dataset.track;
@@ -26,7 +44,11 @@ export function AnalyticsStart() {
       track(name as EventName, { route: routeOfPage(), ...props });
     }
     document.addEventListener("click", counted, { capture: true });
-    return () => document.removeEventListener("click", counted, { capture: true });
+    return () => {
+      document.removeEventListener("click", counted, { capture: true });
+      document.removeEventListener("click", leaving, { capture: true });
+      window.removeEventListener("popstate", back);
+    };
   }, []);
   return null;
 }

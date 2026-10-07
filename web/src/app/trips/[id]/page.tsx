@@ -228,7 +228,7 @@ export default async function TripPage(props: PageProps<"/trips/[id]">) {
           <section className="flex flex-col gap-1.5">
             <h2 className="label">Reaching the group</h2>
             {trip.chat_link ? (
-              <div className="card flex flex-col">
+              <div className="card flex flex-col" data-private-block>
                 <a
                   href={trip.chat_link}
                   target="_blank"
@@ -356,7 +356,8 @@ export default async function TripPage(props: PageProps<"/trips/[id]">) {
           Going · {trip.going} of {trip.places}
         </h2>
         <Seats going={trip.going} places={trip.places} />
-        <ul className="card flex flex-col">
+        {/* Riders' names, bikes and home towns are left out of screen recordings. */}
+        <ul className="card flex flex-col" data-private-block>
           <li className="flex items-center gap-2.5 border-b border-line px-3 py-2.5 last:border-b-0">
             <Avatar name={trip.leader_name} />
             <span>

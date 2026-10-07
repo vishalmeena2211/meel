@@ -352,7 +352,9 @@ function ReportSteps({ routes, startRoute, loggedInAs, chatNumber, openAt }: Pro
           ))}
         </div>
         {loggedInAs ? (
-          <p className="hint">Sent as {loggedInAs}.</p>
+          <p className="hint" data-private>
+            Sent as {loggedInAs}.
+          </p>
         ) : (
           <Field
             label="Your name"

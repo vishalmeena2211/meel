@@ -80,6 +80,7 @@ export function MeBadge({ me }: { me?: Me | null }) {
   return who ? (
     <Link
       href="/account"
+      data-private-block
       aria-label={`Your account, ${who.name}`}
       className="font-display ml-1 grid size-11 shrink-0 place-items-center rounded-full border-[1.5px] border-stone-ink bg-stone text-sm font-bold text-stone-ink md:size-9"
     >

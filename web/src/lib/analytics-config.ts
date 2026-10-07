@@ -13,6 +13,12 @@ export const MIXPANEL_TOKEN = process.env.NEXT_PUBLIC_MIXPANEL_TOKEN ?? "";
 export const MIXPANEL_API_HOST = process.env.NEXT_PUBLIC_MIXPANEL_API_HOST || "https://api-eu.mixpanel.com";
 
 /**
+ * Screen recordings (Mixpanel's Session Replay), out of every 100 visits. 100 unless
+ * NEXT_PUBLIC_MIXPANEL_RECORD_PERCENT says otherwise; 0 turns them off. Mixpanel's free plan includes a monthly number.
+ */
+export const RECORD_PERCENT = Math.min(100, Math.max(0, Number(process.env.NEXT_PUBLIC_MIXPANEL_RECORD_PERCENT ?? "100") || 0));
+
+/**
  * Counting happens on the live site only: a production build, and on Vercel only its production deployment, so a
  * preview of a change is not counted. On this machine nothing is sent unless NEXT_PUBLIC_MIXPANEL_IN_DEVELOPMENT=1.
  */

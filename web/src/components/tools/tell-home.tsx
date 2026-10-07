@@ -100,7 +100,12 @@ export function TellHome({
       />
       <section className="flex flex-col gap-1.5">
         <h2 className="label">The message</h2>
-        <p className="rounded-lg border border-line bg-surface-2 px-3 py-2.5 text-sm leading-5 whitespace-pre-line">{message}</p>
+        <p
+          className="rounded-lg border border-line bg-surface-2 px-3 py-2.5 text-sm leading-5 whitespace-pre-line"
+          data-private
+        >
+          {message}
+        </p>
       </section>
       {/* Pinned to the foot of the screen on a phone, as every page's main buttons are. */}
       <div
@@ -123,6 +128,7 @@ export function TellHome({
             target="_blank"
             rel="noopener noreferrer"
             className="btn btn-primary"
+            data-private-block
             data-track="Message for home sent"
             data-track-props='{"via":"WhatsApp"}'
           >
