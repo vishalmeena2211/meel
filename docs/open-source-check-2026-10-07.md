@@ -71,8 +71,10 @@ Each of these is fixable in under an hour. Nothing has been changed yet.
 ## Before flipping the switch
 
 GitHub can keep the old commits it was sent before the rewrite, reachable by their ids for a while, even though no branch points at them any more. Two clean ways round it:
-- [ ] **Publish a new repository** from this folder (for example rename the private one to `meel-private` and push this history to a fresh public `meel`, then point Vercel's Git connection at it). Nothing old was ever in it.
-- [ ] **Or ask GitHub Support** to remove cached views and unreferenced commits from this repository before making it public, as their guide on removing sensitive data describes.
+- **Publish a new repository** from this folder. Nothing old was ever in it.
+- **Or ask GitHub Support** to remove cached views and unreferenced commits from this repository before making it public, as their guide on removing sensitive data describes.
+
+- [x] **Decided 7 October: neither.** Vishal is fine with the old commits staying reachable by their ids for a while, so this repository can be made public as it is, whenever he chooses. No file in the repository mentions an old commit's id; the repository's Activity page does, once it is public.
 
 ## Fine: checked, nothing to do
 
