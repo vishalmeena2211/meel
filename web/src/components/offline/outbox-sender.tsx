@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 
+import { track } from "@/lib/analytics";
 import { sendWaiting, waitingCount } from "@/lib/outbox";
 
 /** Sends reports kept on this phone as soon as there is a signal, and says so once they have gone. */
@@ -12,6 +13,7 @@ export function OutboxSender() {
     const go = () => {
       if (waitingCount() === 0) return;
       void sendWaiting().then((n) => {
+        if (n > 0) track("Offline reports sent", { count: n });
         if (live && n > 0) setSent(n);
       });
     };

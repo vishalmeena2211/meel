@@ -118,11 +118,15 @@ export function FactSheet({
       event.preventDefault();
       turn.current += 1;
       window.dispatchEvent(new Event("meel:load-facts"));
-      setAsked({ key, mode: report === "still-true" || report === "changed" ? report : "fact", turn: turn.current });
+      const mode = report === "still-true" || report === "changed" ? report : "fact";
+      setAsked({ key, mode, turn: turn.current });
+      const section = key.split("/")[0] ?? null;
+      if (mode === "fact") track("Fact opened", { route: routeSlug, section });
+      else track("Fact report started", { route: routeSlug, section, kind: mode });
     }
     document.addEventListener("click", onClick);
     return () => document.removeEventListener("click", onClick);
-  }, []);
+  }, [routeSlug]);
 
   useEffect(() => {
     const el = dialog.current;
@@ -160,7 +164,10 @@ export function FactSheet({
                   <button
                     type="button"
                     className="btn btn-soft"
-                    onClick={() => setAsked({ ...asked, mode: "still-true", turn: asked.turn + 1000 })}
+                    onClick={() => {
+                      setAsked({ ...asked, mode: "still-true", turn: asked.turn + 1000 });
+                      track("Fact report started", { route: routeSlug, section: view.section, kind: "still-true" });
+                    }}
                   >
                     <IconCheck />
                     Still true
@@ -168,7 +175,10 @@ export function FactSheet({
                   <button
                     type="button"
                     className="btn btn-outline"
-                    onClick={() => setAsked({ ...asked, mode: "changed", turn: asked.turn + 2000 })}
+                    onClick={() => {
+                      setAsked({ ...asked, mode: "changed", turn: asked.turn + 2000 });
+                      track("Fact report started", { route: routeSlug, section: view.section, kind: "changed" });
+                    }}
                   >
                     This has changed
                   </button>

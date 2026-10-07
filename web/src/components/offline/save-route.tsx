@@ -129,6 +129,7 @@ export function SaveRoute({
     const worker = await workerReady();
     if (worker) await ask(worker, { type: "remove", route: routeSlug });
     setRaw(null);
+    track("Saved route removed", { route: routeSlug });
   }
 
   return (

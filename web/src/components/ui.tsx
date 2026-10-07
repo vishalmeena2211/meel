@@ -153,7 +153,14 @@ export function SourceLine({ source, prefix = "From" }: { source: Source; prefix
   return (
     <p className="hint num">
       {prefix}{" "}
-      <a className="link font-medium" href={source.url} target="_blank" rel="noreferrer noopener">
+      <a
+        className="link font-medium"
+        href={source.url}
+        target="_blank"
+        rel="noreferrer noopener"
+        data-track="Source opened"
+        data-track-props={JSON.stringify({ host: hostOf(source.url) })}
+      >
         {hostOf(source.url)}
         <IconExternal className="ml-0.5 inline size-3 align-[-1px]" />
       </a>{" "}

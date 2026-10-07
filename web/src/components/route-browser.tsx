@@ -2,8 +2,9 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { useMemo, useState, useSyncExternalStore } from "react";
+import { useEffect, useMemo, useState, useSyncExternalStore } from "react";
 
+import { track } from "@/lib/analytics";
 import { km, plural } from "@/lib/format";
 import { useHomeView } from "@/lib/home-view";
 import { spelledLike } from "@/lib/search";
@@ -227,6 +228,15 @@ export function RouteBrowser({
     .filter((g) => g.routes.length > 0);
   const like = groups.length === 0 && query.trim() ? spelledLike(query, routes) : [];
 
+  // A search that finds nothing tells Meel which roads riders look for. Only how many letters were typed is sent,
+  // never what, and only once the rider has stopped typing.
+  const nothing = query.trim().length >= 3 && shown.length === 0 ? query.trim().length : 0;
+  useEffect(() => {
+    if (nothing === 0) return;
+    const later = window.setTimeout(() => track("Search found nothing", { letters: nothing }), 1500);
+    return () => window.clearTimeout(later);
+  }, [nothing, query]);
+
   return (
     <div className="flex flex-col gap-4">
       <SearchSuggest
@@ -263,7 +273,14 @@ export function RouteBrowser({
         <>
           {/* Sideways on a phone. From a tablet up the chips wrap, so a mouse can reach every region. */}
           <div className="scroll-row -mx-4 px-4 md:mx-0 md:flex-wrap md:overflow-visible md:px-0" role="group" aria-label="Region">
-            <button type="button" className="chip" aria-pressed={region === "all"} onClick={() => setRegion("all")}>
+            <button
+              type="button"
+              className="chip"
+              aria-pressed={region === "all"}
+              onClick={() => setRegion("all")}
+              data-track="Routes filtered by region"
+              data-track-props='{"region":"all"}'
+            >
               All
             </button>
             {regions.map((g) => (
@@ -273,6 +290,8 @@ export function RouteBrowser({
                 className="chip"
                 aria-pressed={region === g.id}
                 onClick={() => setRegion(g.id)}
+                data-track="Routes filtered by region"
+                data-track-props={JSON.stringify({ region: g.id })}
               >
                 {g.name}
               </button>

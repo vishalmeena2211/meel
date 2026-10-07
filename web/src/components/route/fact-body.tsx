@@ -1,4 +1,5 @@
 import type { FactView } from "@/lib/fact-view";
+import { hostOf } from "@/lib/format";
 
 import { IconCheck, IconExternal, IconX } from "../icons";
 import { Callout, StateBadge } from "../ui";
@@ -106,6 +107,8 @@ export function FactBody({ view, as: Title = "h3" }: { view: FactView; as?: "h1"
               <li key={s.url} className="border-b border-line last:border-b-0">
                 <a
                   href={s.url}
+                  data-track="Source opened"
+                  data-track-props={JSON.stringify({ host: hostOf(s.url) })}
                   target="_blank"
                   rel="noreferrer noopener"
                   className="flex min-h-12 items-center gap-2.5 px-3 py-2 hover:bg-surface-2"

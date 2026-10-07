@@ -1,36 +1,19 @@
 import type { Mixpanel } from "mixpanel-browser";
 
 import { ANALYTICS_ON, MIXPANEL_API_HOST, MIXPANEL_TOKEN } from "./analytics-config";
+import type { EventName, EventProps } from "./analytics-events";
 
 /*
   What Meel tells Mixpanel, in the browser only. Which project, and when counting is on: analytics-config.ts.
 
   It counts pages (by their path, never the part after "?") and the few things riders do with the tools, listed in
-  EVENTS below. It never sends a name, an email, a phone number or anything typed into a box. Mixpanel keeps a random
+  analytics-events.ts. It never sends a name, an email, a phone number or anything typed into a box. Mixpanel keeps a random
   number in the browser to tell one visitor from another. A browser set to "Do Not Track" is not counted.
 
   In development nothing is sent: each event is written to the browser's console instead, so the list can be checked.
 */
 
-/** Every event Meel sends, and what it means. Properties never name a person. */
-export const EVENTS = {
-  "Fuel check run": "A rider worked out fuel for a bike. route, bike, from (maker's figures or the rider's own).",
-  "Route saved for no network": "A route's pages were kept on the phone. route, pages.",
-  "Route file downloaded": "The GPX file was opened or downloaded. route.",
-  "Map app opened": "A route was sent to a map app. route, app.",
-  "Emergency number tapped": "A number on the emergency card was tapped. route, number.",
-  "Message for home sent": "The plan for home went to WhatsApp, or was copied. route, via. Never the message.",
-  "Fact report sent": "A rider said a fact is still true, or has changed. route, section, kind, kept_offline.",
-  "Office page opened": "A rider opened an office's own page from Is it open?. route, host.",
-  "Official alert opened": "A rider opened an official alert on SACHET. route.",
-  "Page shared": "The share button on a route or fact. via (share sheet or copy).",
-  "Trip shared": "A trip was sent to WhatsApp, or its link copied. via.",
-  "Search suggestion picked": "A suggestion was picked in a search box. kind (route or place).",
-  "Trip report sent": "A trip report was sent. route, month.",
-} as const;
-
-export type EventName = keyof typeof EVENTS;
-export type EventProps = Record<string, string | number | boolean | null>;
+export { EVENTS, type EventName, type EventProps } from "./analytics-events";
 
 const SEND = ANALYTICS_ON;
 

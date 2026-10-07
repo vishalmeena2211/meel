@@ -42,7 +42,15 @@ export function PackingList({
     <div className="flex flex-col gap-3">
       <div className="scroll-row" role="group" aria-label="Month of your ride">
         {offered.map((m) => (
-          <button key={m} type="button" className="chip" aria-pressed={m === month} onClick={() => setMonth(m)}>
+          <button
+            key={m}
+            type="button"
+            className="chip"
+            aria-pressed={m === month}
+            onClick={() => setMonth(m)}
+            data-track="Packing month picked"
+            data-track-props={JSON.stringify({ month: m })}
+          >
             {monthName(m, true)}
           </button>
         ))}

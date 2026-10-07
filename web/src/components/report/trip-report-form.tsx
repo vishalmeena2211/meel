@@ -160,6 +160,8 @@ function ReportSteps({ routes, startRoute, loggedInAs, chatNumber, openAt }: Pro
       }
     }
     setMoved({ since: state, step: to });
+    // Moving forward is counted, so Mixpanel can show where riders give up on the form.
+    if (to > 1) track("Trip report step reached", { step: to });
     window.scrollTo({ top: 0 });
   }
 

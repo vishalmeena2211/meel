@@ -220,7 +220,15 @@ export function OpenSection({ view, live }: { view: RouteView; live?: OpenLive }
                 <li key={y.year}>
                   <b className="text-ink">{y.year}.</b> {y.note}{" "}
                   {y.sources.map((s) => (
-                    <a key={s.url} className="link font-medium" href={s.url} target="_blank" rel="noreferrer noopener">
+                    <a
+                      key={s.url}
+                      className="link font-medium"
+                      href={s.url}
+                      target="_blank"
+                      rel="noreferrer noopener"
+                      data-track="Source opened"
+                      data-track-props={JSON.stringify({ host: hostOf(s.url) })}
+                    >
                       {hostOf(s.url)}{" "}
                     </a>
                   ))}
@@ -586,6 +594,7 @@ export function VideosSection({ view }: { view: RouteView }) {
                   href={v.url}
                   target="_blank"
                   rel="noreferrer noopener"
+                  data-track="Video opened"
                   className="card grid grid-cols-[120px_1fr] items-center gap-2.5 overflow-hidden hover:border-ink-2"
                 >
                   <span className="relative block h-[68px] bg-ink">

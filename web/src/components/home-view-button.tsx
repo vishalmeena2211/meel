@@ -1,5 +1,6 @@
 "use client";
 
+import { track } from "@/lib/analytics";
 import { setHomeView, useHomeView } from "@/lib/home-view";
 
 import { IconList, IconMap } from "./icons";
@@ -11,7 +12,10 @@ export function HomeViewButton() {
   return (
     <button
       type="button"
-      onClick={() => setHomeView(map ? "list" : "map")}
+      onClick={() => {
+        setHomeView(map ? "list" : "map");
+        track("Home view switched", { to: map ? "list" : "map" });
+      }}
       aria-label={map ? "Show the routes as a list" : "Show the routes drawn as roads"}
       className="grid size-11 shrink-0 place-items-center rounded-lg border border-line bg-surface hover:border-ink-2"
     >

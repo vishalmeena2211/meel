@@ -7,6 +7,7 @@ import { getRoute } from "@/lib/content";
 import { indiaMonth, shortName } from "@/lib/format";
 import { currentUser } from "@/server/auth";
 import { sendTripReport, suggestPlace } from "@/server/reports";
+import { trackOnServer } from "@/server/analytics";
 import { refreshRoute } from "@/server/refresh";
 
 const blank: FormState = { ok: false, message: "", errors: {} };
@@ -175,5 +176,6 @@ export async function suggest(_previous: FormState, form: FormData): Promise<For
     return { ...blank, message: "Something needs fixing.", errors: errorsOf(parsed.error), values };
   }
   await suggestPlace(parsed.data.place, parsed.data.note ?? null, parsed.data.name ? shortName(parsed.data.name) : null);
+  await trackOnServer("Place suggested");
   return { ok: true, errors: {}, message: `Sent. “${parsed.data.place}” is on the list to look at.` };
 }

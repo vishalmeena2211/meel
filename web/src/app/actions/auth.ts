@@ -19,6 +19,7 @@ import {
   signUp,
   updateProfile,
 } from "@/server/auth";
+import { trackOnServer } from "@/server/analytics";
 import { signIn } from "@/server/session";
 
 function errorsOf(error: z.ZodError): Record<string, string> {
@@ -103,6 +104,7 @@ export async function signUpAction(_previous: FormState, form: FormData): Promis
       values,
     };
   }
+  await trackOnServer("Signed up", { method: "password" });
   redirect(safeNext(text(form, "next")));
 }
 
@@ -134,6 +136,7 @@ export async function logInAction(_previous: FormState, form: FormData): Promise
           : "That email and password do not match. Check both and try again. After 5 tries the account rests for 15 minutes.",
     };
   }
+  await trackOnServer("Logged in", { method: "password" });
   // A one-time password is changed before anything else.
   if (result.mustChangePassword) redirect("/account#password");
   redirect(safeNext(text(form, "next")));
@@ -167,11 +170,14 @@ export async function finishProfileAction(_previous: FormState, form: FormData):
     return { ok: false, message: "Something needs fixing.", errors: errorsOf(parsed.error), values };
   }
   await updateProfile(user.id, { name: parsed.data.name, homeCity: parsed.data.home_city, bike: parsed.data.bike ?? null });
+  // A rider who came in through Google finishes making their account here.
+  await trackOnServer("Signed up", { method: "google" });
   redirect(next);
 }
 
 export async function logOutAction(): Promise<void> {
   await endSession();
+  await trackOnServer("Logged out");
   redirect("/");
 }
 
@@ -263,5 +269,6 @@ export async function deleteAccountAction(_previous: FormState, form: FormData):
     if (key.startsWith("hand:") && typeof value === "string" && value !== "withdraw") handTo[key.slice(5)] = value;
   }
   await deleteAccount(user.id, handTo);
+  await trackOnServer("Account deleted");
   redirect("/?gone=1");
 }

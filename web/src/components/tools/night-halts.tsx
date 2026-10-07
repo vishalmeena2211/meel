@@ -2,6 +2,7 @@
 
 import { useMemo, useState } from "react";
 
+import { track } from "@/lib/analytics";
 import { feet } from "@/lib/format";
 import type { ProfilePoint, Tunnel, Waypoint } from "@/lib/types";
 
@@ -243,7 +244,10 @@ export function AltitudeScreen({
           type="button"
           className="btn btn-primary btn-block"
           disabled={chosen.length < 2}
-          onClick={() => setChecked(true)}
+          onClick={() => {
+            setChecked(true);
+            track("Night halts checked", { route: routeSlug, nights: chosen.length });
+          }}
         >
           Check my night halts
         </button>

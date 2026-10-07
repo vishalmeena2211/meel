@@ -20,6 +20,7 @@ import {
   takeBack,
   withdrawTrip,
 } from "@/server/trips";
+import { trackOnServer } from "@/server/analytics";
 import { refreshRoute } from "@/server/refresh";
 
 function text(form: FormData, key: string): string {
@@ -131,6 +132,13 @@ export async function postTripAction(_previous: TripFormState, form: FormData): 
     isCompany: parsed.data.is_company === "yes",
   });
   refreshRoute(route.slug);
+  await trackOnServer("Trip posted", {
+    route: route.slug,
+    places: parsed.data.places,
+    pace: parsed.data.pace,
+    company: parsed.data.is_company === "yes",
+    status: made.status,
+  });
   redirect(`/trips/${made.id}?posted=${made.status === "open" ? "open" : "waiting"}`);
 }
 
@@ -146,6 +154,9 @@ export async function askAction(_previous: FormState, form: FormData): Promise<F
 
   const result = await askToJoin(tripId, user.id, parsed.data ?? null);
   revalidatePath(`/trips/${tripId}`);
+  if (result === "asked" || result === "waiting-for-place" || result === "already") {
+    await trackOnServer("Asked to join a trip", { route: (await getTrip(tripId))?.route_slug ?? null, result });
+  }
   switch (result) {
     case "asked":
       return { ok: true, errors: {}, message: "Asked. You will see the answer on this page." };
@@ -166,6 +177,7 @@ export async function takeBackAction(form: FormData): Promise<void> {
   if (!user) redirect(`/login?next=/trips/${tripId}`);
   await takeBack(tripId, user.id);
   revalidatePath(`/trips/${tripId}`);
+  await trackOnServer("Join request taken back", { route: (await getTrip(tripId))?.route_slug ?? null });
 }
 
 export async function leaveAction(form: FormData): Promise<void> {
@@ -176,17 +188,24 @@ export async function leaveAction(form: FormData): Promise<void> {
   revalidatePath(`/trips/${tripId}`);
   const trip = await getTrip(tripId);
   if (trip) refreshRoute(trip.route_slug);
+  await trackOnServer("Left a trip", { route: trip?.route_slug ?? null });
 }
 
 export async function answerAction(form: FormData): Promise<void> {
   const tripId = text(form, "trip");
   const user = await currentUser();
   if (!user) redirect(`/login?next=/trips/${tripId}/requests`);
-  const result = await answer(tripId, user.id, text(form, "rider"), text(form, "answer") === "accept");
+  const accept = text(form, "answer") === "accept";
+  const result = await answer(tripId, user.id, text(form, "rider"), accept);
   revalidatePath(`/trips/${tripId}`);
   revalidatePath(`/trips/${tripId}/requests`);
   const trip = await getTrip(tripId);
   if (trip) refreshRoute(trip.route_slug);
+  await trackOnServer("Join request answered", {
+    route: trip?.route_slug ?? null,
+    answer: accept ? "accepted" : "declined",
+    full: result === "full",
+  });
   if (result === "full") redirect(`/trips/${tripId}/requests?full=1`);
 }
 
@@ -197,6 +216,7 @@ export async function withdrawAction(form: FormData): Promise<void> {
   const trip = await getTrip(tripId);
   await withdrawTrip(tripId, user.id);
   if (trip) refreshRoute(trip.route_slug);
+  await trackOnServer("Trip withdrawn", { route: trip?.route_slug ?? null });
   redirect("/account");
 }
 
@@ -214,6 +234,7 @@ export async function flagAction(_previous: FormState, form: FormData): Promise<
   if (!(await getTrip(tripId))) return { ok: false, message: "This trip is no longer here.", errors: {} };
   await flagTrip(tripId, user.id, parsed.data.reason, parsed.data.note ?? null);
   revalidatePath(`/trips/${tripId}`);
+  await trackOnServer("Trip flagged", { route: (await getTrip(tripId))?.route_slug ?? null, reason: parsed.data.reason });
   return { ok: true, errors: {}, message: "Sent to the person who keeps Meel. The leader is not told who reported." };
 }
 

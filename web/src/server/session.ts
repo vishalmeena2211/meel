@@ -4,7 +4,9 @@ import NextAuth, { CredentialsSignin } from "next-auth";
 import Credentials from "next-auth/providers/credentials";
 import Google from "next-auth/providers/google";
 
+import { trackOnServer } from "./analytics";
 import { checkLogin, riderFromGoogle } from "./riders";
+
 
 /*
   Who is logged in on this phone, kept by Auth.js in a sealed cookie.
@@ -79,6 +81,8 @@ export const { handlers, auth, signIn, signOut } = NextAuth({
         });
         token.uid = rider.id;
         token.sv = rider.sessionVersion;
+        // A password login is counted by its own action; Google's ends here.
+        await trackOnServer("Logged in", { method: "google" });
       } else if (account?.provider === "credentials" && user?.id) {
         token.uid = user.id;
         token.sv = user.sv;

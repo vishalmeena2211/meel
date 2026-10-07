@@ -84,7 +84,7 @@ Put them in `web/.env.local` on your own machine, one per line, as `NAME=value`.
 
 ### Mixpanel
 
-All of it is in `src/lib/analytics.ts`. The list of events, with what each one means, is `EVENTS` there; each is sent from the place a rider does the thing. Parts of a page made on the server name their event in the markup, as `data-track="Route file downloaded"`, and `src/components/analytics-start.tsx` counts the click.
+The list of events, with what each one means and the details it carries, is `src/lib/analytics-events.ts`: about 40, from opening a fact to posting a trip. Each is sent from the place a rider does the thing. In the browser that is `track()` from `src/lib/analytics.ts`; parts of a page made on the server name their event in the markup instead, as `data-track="Route file downloaded"`, and `src/components/analytics-start.tsx` counts the click. What only the server sees finish (an account made, a login, a trip posted or answered) is sent by `trackOnServer()` in `src/server/analytics.ts`, after the page has answered, with no rider attached.
 
 What is never sent: a name, an email, a phone number, anything typed into a box, or the part of an address after "?". Mixpanel's own automatic capture and screen recording are off. Its random visitor number is kept in the browser's storage, not a cookie. A browser set to "Do Not Track" is not counted. Logged-in riders are not identified.
 
