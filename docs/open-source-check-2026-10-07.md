@@ -6,7 +6,7 @@
 **Short answer:** no secret has ever been committed: no key, password or database address, in the files today or anywhere in the history. What would become public that you may not want public:
 1. **Your Gmail address**, as the author of all 64 commits.
 2. **Internal research notes** that quote forum members word for word, by their handles.
-3. **Mentions of employer** and of your work machine.
+3. **Mentions of your employer** and of your work machine.
 4. **Mixpanel's token, built into the code.** It is public by design, but a copy of Meel that someone else runs would count into *your* Mixpanel project.
 
 Each of these is fixable in under an hour. Nothing has been changed yet.
@@ -24,12 +24,12 @@ Each of these is fixable in under an hour. Nothing has been changed yet.
 
 ## Must, before going public
 
-- [ ] **1. Your email is on every commit.** All 64 commits are signed "Vishal Meena <personal-email-removed>". On a public repository anyone can read it, and email-harvesting bots do. **History.**
+- [ ] **1. Your email is on every commit.** All 64 commits were signed with your personal email address. On a public repository anyone can read it, and email-harvesting bots do. **History.**
   - **Fix:** rewrite the history so every commit carries your GitHub noreply address, or publish a fresh repository with the code as one first commit. Then set the noreply address for this folder (`git config user.email …`), and turn on GitHub's "Block command line pushes that expose my email".
   - Rewriting changes every commit's id. Nothing depends on the old ids except Vercel's list of past deployments.
 
 - [x] **2. The research notes quote people word for word.** *Done 7 October: `docs/research-notes/`, `docs/research-interim-findings.md` and `docs/knowledge-document.md` moved out of the repository to a private folder beside it, and removed from the history (item 1).* `docs/research-notes/` holds about 43,000 words of desk research. Among them:
-  - posts from xBhp and Team-BHP forum members, quoted by their handles and in one case by a real name;
+  - posts from xBhp and Team-BHP forum members, quoted by their forum handles and in one case by a real name;
   - app-store reviews, quoted verbatim;
   - 13 quotations longer than 150 characters.
 
@@ -41,14 +41,14 @@ Each of these is fixable in under an hour. Nothing has been changed yet.
 
 ## Should
 
-- [x] **4. Mentions of employer and your work machine.** *Done 7 October: the wireframe file's first lines reworded; the morning report moved to the private folder. Both also cleaned out of the history. The Google Cloud project id is gone from the README too.*
-  - The wireframe file's first lines say it was made with its employer's wireframe method.
-  - `docs/morning-report-2026-09-28.md` gives the folder as `the project folder` and links a private Claude page.
+- [x] **4. Mentions of your employer and your work machine.** *Done 7 October: the wireframe file's first lines reworded; the morning report moved to the private folder. Both also cleaned out of the history. The Google Cloud project id is gone from the README too.*
+  - The wireframe file's first lines named your employer's wireframe method.
+  - `docs/morning-report-2026-09-28.md` gave the folder's path on your work machine and linked a private Claude page.
 
   Nothing secret, but it ties a personal project to your employer in public. **Worth checking your employment contract's clause on side projects before publishing anything built alongside work.** That is a question for you, not something this check can answer.
   - **Fix:** take the two lines out of the wireframe file, and the folder path and the link out of the morning report (or drop that report: it is a one-day status note).
 
-- [x] **5. An example email that could be a real person's.** *Done 7 October: `rahul@example.com`, in the files and in the history.* The wireframes use `rahul@example.com` as a made-up rider. It may well be someone's real address.
+- [x] **5. An example email that could be a real person's.** *Done 7 October: `rahul@example.com`, in the files and in the history.* The wireframes used a made-up rider's address at a real email provider. It may well be someone's real address.
   - **Fix:** change it to `rahul@example.com`; `example.com` is reserved for this.
 
 - [x] **6. Pumps copied from the oil companies' own locators.** *Checked 7 October: neither site links any terms of use; HP's footer says "All Rights Reserved". Kept, as facts each credited to its own page. `data/LICENSE.md` now says they are not Meel's to license.* `data/research/*.json` lists 453 IndianOil and HP outlets: name, town and position, each linking to its page on the company's locator. Publishing them as data is a step beyond showing them on the site. Their sites' terms of use were not read.
