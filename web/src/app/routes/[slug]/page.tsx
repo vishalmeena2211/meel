@@ -28,7 +28,7 @@ import { ShareButton } from "@/components/route/share-button";
 import { SinceLastVisit } from "@/components/route/since-last-visit";
 import { BackHead, Foot } from "@/components/shell";
 import { Callout, Empty } from "@/components/ui";
-import { getIndex, getRouteHelp } from "@/lib/content";
+import { getApproaches, getIndex, getRouteHelp } from "@/lib/content";
 import { km, feet, plural } from "@/lib/format";
 import { SITE_URL } from "@/lib/site";
 import { allSources } from "@/lib/sources";
@@ -88,7 +88,11 @@ export default async function RoutePage(props: PageProps<"/routes/[slug]">) {
   const sources = allSources(route);
 
   const places = route.waypoints.filter((w) => w.kind === "place");
-  const [alerts, help] = await Promise.all([unwritten ? null : alertsFor(route), getRouteHelp(slug)]);
+  const [alerts, help, approaches] = await Promise.all([
+    unwritten ? null : alertsFor(route),
+    getRouteHelp(slug),
+    getApproaches(),
+  ]);
 
   return (
     <div className="flex flex-col gap-4">
@@ -190,6 +194,8 @@ export default async function RoutePage(props: PageProps<"/routes/[slug]">) {
             <BeforeYouLeave
               view={view}
               help={help.help ? { hospitals: help.help.hospitals.length, police: help.help.police.length } : null}
+              approach={approaches.routes[slug] ?? null}
+              cities={approaches.cities.map(({ id, name }) => ({ id, name }))}
             />
           </div>
           <div className="lg:hidden">

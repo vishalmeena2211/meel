@@ -12,7 +12,7 @@
 | `routes/` | One file per route. This is what the website reads. | Put together from the three folders below |
 | `computed/` | Positions, distances, heights, fuel pumps and the line on the map | Worked out by script from open map data |
 | `research/` | Rules, permits, seasons, official sources, videos | Read from websites by research assistants, each with its link |
-| `site/` | Things entered once for the whole site: bikes, kinds of fact, regions, packing lists; the districts each road crosses (`route-districts.json`, by `tools/districts.py`) and the hospitals and police near it (`route-help.json`, by `tools/help_places.py`) | A mix; each file says |
+| `site/` | Things entered once for the whole site: bikes, kinds of fact, regions, packing lists; the districts each road crosses (`route-districts.json`, by `tools/districts.py`) the hospitals and police near it (`route-help.json`, by `tools/help_places.py`); and how far each route starts from twelve cities riders set out from, and ends back from them, with towns on the way (`route-approaches.json`, by `tools/approaches.py`) | A mix; each file says |
 | `images/` | One picture per route, with its author and licence | Wikimedia Commons |
 | `tools/` | The scripts that fetched and built everything | Written for this project |
 
@@ -45,6 +45,7 @@
 | Heights | SRTM, from NASA, served by Open Topo Data | Public domain. No requirement. |
 | Districts' government codes | Wikidata (property P12746, the Local Government Directory's district code) | CC0. No requirement. |
 | Hospitals and police on the emergency card | Open Database Licence, from OpenStreetMap | As for map data. |
+| Distances from cities, and the towns on the way (`site/route-approaches.json`) | Open Database Licence, from OpenStreetMap, worked out with OSRM and Nominatim | As for map data. |
 | Pictures | Creative Commons, per picture | Show the author and the licence beside or below each picture. `images/credits.json` holds both. |
 
 ---

@@ -2740,6 +2740,105 @@ rideplanner.in/routes/manali-leh</div>`)}
   ],
 });
 
+/* ── Riding from your city ────────────────────────────────────── */
+SCREENS.push({
+  group: 'Arriving', title: 'Riding from your city',
+  lede: 'Routes start at Manali, Shimla or Rishikesh, but riders leave from Delhi or Chandigarh. Pick where you ride from once, and every route says how far its start is from you, by road.',
+  render: () => {
+    const opt = (t, cls = '') => `<div class="oo ${cls}">${t}${cls.includes('on') ? ICON.check : ''}</div>`;
+    const card = (n, sub) => `<div class="rcard"><div class="r1"><b>${n}</b></div><span class="hint">${sub}</span></div>`;
+    const from = (city) => `<div class="field"><label>Riding from</label><div class="input filled pick">${city}${ICON.down}</div></div>`;
+    const chips = (on) => `<div class="hscroll">${['Nearest first', 'All', 'Ladakh', 'Himachal', 'Uttarakhand'].map((l) => `<span class="chip ${l === on ? 'on' : ''}">${l}</span>`).join('')}</div>`;
+    const leg = (title, km, lines) => `<div class="fact"><div class="fact-h"><b>${title}</b></div>
+      <div style="font:700 30px/1 var(--display)" class="num">${km}</div>${lines.map((l) => `<div class="fact-src">${l}</div>`).join('')}</div>`;
+    return phone('1. The front page, riding from Delhi', `
+        ${head('Meel', '50 routes · 13 regions', { back: false, right: `<span class="iconbtn">${ICON.map}</span>` })}
+        ${body(`
+          <div class="input">${ICON.search}<span>Search a route or place</span></div>
+          ${from('Delhi')}
+          ${chips('Nearest first')}
+          <div class="sec-h"><h3>Nearest to Delhi</h3><span class="hint">by road, to where each starts</span></div>
+          ${card('Mussoorie, Dhanaulti and Chakrata', '229 km from Delhi, to Dehradun · 35 facts')}
+          ${card('Char Dham', '248 km from Delhi, to Rishikesh · 132 facts')}
+          ${card('Chopta and Tungnath', '248 km from Delhi, to Rishikesh · 58 facts')}
+          ${card('Munsiyari and the Kumaon hills', '280 km from Delhi, to Kathgodam · 51 facts')}
+          ${card('Spiti circuit', '374 km from Delhi, to Shimla · 90 facts')}
+          ${card('Manali to Leh', '533 km from Delhi, to Manali · 79 facts')}`)}
+        ${tabbar('Routes')}`)
+      + phone('2. Picking where you ride from', `
+        ${head('Meel', '50 routes · 13 regions', { back: false, right: `<span class="iconbtn">${ICON.map}</span>` })}
+        ${body(`<div class="input">${ICON.search}<span>Search a route or place</span></div>${from('Delhi')}`)}
+        <div class="sheet-scrim"></div>
+        <div class="sheet" style="gap:6px;max-height:640px"><span class="grab"></span>
+          <div class="sh-h"><b>Riding from</b><span class="iconbtn">${ICON.x}</span></div>
+          <div class="input">${ICON.search}<span>Type to narrow the list</span></div>
+          <div class="optl">
+            <div class="oh">North</div>
+            ${opt('Delhi', 'on')}${opt('Chandigarh')}${opt('Jaipur')}${opt('Lucknow')}
+            <div class="oh">West</div>
+            ${opt('Ahmedabad')}${opt('Mumbai')}${opt('Pune')}
+            <div class="oh">South</div>
+            ${opt('Bengaluru')}${opt('Hyderabad')}${opt('Chennai')}
+            <div class="oh">East</div>
+            ${opt('Kolkata')}${opt('Guwahati')}
+            <div class="oh">Or</div>
+            ${opt('Nowhere in particular')}
+          </div>
+        </div>`)
+      + phone('3. On the route page', `
+        ${head('Manali to Leh', 'Basic page · 79 facts', { right: shareBtn })}
+        ${body(`
+          <div class="rows">
+            <div class="row"><span class="ic">${ICON.flag}</span><span class="grow"><b>Is it open? Where to check today</b><span class="hint">5 official sources · we link, we do not guess</span></span>${chev}</div>
+            <div class="row"><span class="ic">${ICON.save}</span><span class="grow"><b>Save for the road</b><span class="hint">Works with no network</span></span>${chev}</div>
+          </div>
+          <div class="lbl">Before you leave</div>
+          <div class="rows">
+            <div class="row"><span class="ic">${ICON.map}</span><span class="grow"><b>Getting there from Delhi</b><span class="hint">533 km to Manali · 944 km back from Leh</span></span>${chev}</div>
+            <div class="row"><span class="ic">${ICON.map}</span><span class="grow"><b>Route file for your map app</b><span class="hint">GPX · Organic Maps, OsmAnd, Google Maps</span></span>${chev}</div>
+            <div class="row"><span class="ic">${ICON.phone}</span><span class="grow"><b>Emergency card</b><span class="hint">112 · 6 hospitals · 9 police stations</span></span>${chev}</div>
+            <div class="row"><span class="ic">${ICON.send}</span><span class="grow"><b>Tell someone at home</b><span class="hint">Your plan, in one message</span></span>${chev}</div>
+          </div>
+          <span class="hint">With no city picked, the row says “Getting there” and its line names the nearest city: “271 km from Chandigarh to Manali”.</span>`)}`)
+      + phone('4. Getting there', `
+        ${head('Manali to Leh', 'Getting there')}
+        ${body(`
+          ${from('Delhi')}
+          <span class="hint">Not on the list? Pick the city nearest you. Remembered on this phone, not in an account.</span>
+          ${leg('Delhi to Manali', '533 km', ['A map app says 7 h 5 min: a car’s time on an empty road.', 'Through Panipat, Dera Bassi and Bilaspur. Halfway is Dera Bassi, 266 km.'])}
+          <div class="btns" style="display:grid;grid-template-columns:1fr 1fr;gap:8px">
+            <span class="btn btn-soft">${ICON.ext}Google Maps</span><span class="btn btn-soft">${ICON.ext}Organic Maps</span>
+          </div>
+          ${leg('Coming back: Leh to Delhi', '944 km', ['The shortest way by road, through Lahaul, Mandi and Ambala.'])}
+          <div class="lbl">From other cities, to Manali</div>
+          <div class="rows">
+            <div class="row"><span class="grow"><b>Chandigarh</b></span><span class="num">271 km</span></div>
+            <div class="row"><span class="grow"><b>Jaipur</b></span><span class="num">747 km</span></div>
+            <div class="row"><span class="grow"><b>Lucknow</b></span><span class="num">974 km</span></div>
+          </div>
+          <span class="hint">By road from the city’s centre to Manali, and from Leh back, worked out from the open map (OpenStreetMap, with the OSRM router; towns named by Nominatim) on 8 October 2026. Not checked by a rider.</span>`)}`)
+      + phone('5. A route that starts where another ends', `
+        ${head('Nubra valley and Turtuk', 'Getting there')}
+        ${body(`
+          ${from('Delhi')}
+          ${leg('Delhi to Leh', '958 km', ['A map app says 12 h 56 min: a car’s time on an empty road.', 'Through Ambala, Mandi and Lahaul. Halfway is Mandi, 479 km.'])}
+          <span class="hint">Then, as in frame 4: the map buttons, the way back from Turtuk (1,146 km) and the other cities. Last:</span>
+          <div class="callout info"><b>2 Meel routes end in Leh</b>Ride one of them to start this one, and read its page for the way up.</div>
+          <div class="rows">
+            <div class="row"><span class="ic">${ICON.map}</span><span class="grow"><b>Manali to Leh</b><span class="hint">434 km · starts 533 km from Delhi</span></span>${chev}</div>
+            <div class="row"><span class="ic">${ICON.map}</span><span class="grow"><b>Srinagar to Leh</b><span class="hint">421 km · starts 807 km from Delhi</span></span>${chev}</div>
+          </div>`)}`);
+  },
+  notes: [
+    ['Cities (frame 2)', ['Twelve to begin with, where riders set out from: Delhi and Chandigarh first, then Jaipur, Lucknow, Ahmedabad, Mumbai, Pune, Bengaluru, Hyderabad, Chennai, Kolkata and Guwahati. Decided 8 October 2026.', 'One list, kept with the data, so a city is added by adding a line and rebuilding.', 'Meel’s own list (screen 33), so with more than ten choices it has a box to narrow it.', '“Nowhere in particular” puts the front page back as it is today.', 'On Getting there, a line under the box says: “Not on the list? Pick the city nearest you. Remembered on this phone, not in an account.”']],
+    ['Front page (frame 1)', ['Picking a city adds “533 km from Delhi, to Manali” to every card, and a first chip, “Nearest first”, which lists every route in one list by that distance. The region chips still work, nearest first inside the region.', 'The choice is kept on this phone only (the browser’s storage), not in an account, and it is the same choice on every page.', 'With no city picked the front page is exactly as today.', 'A route that starts within 30 km of the city’s centre says “Starts in Delhi” instead of a distance (the Golden Quadrilateral), and comes first.']],
+    ['Route page (frames 3 to 5)', ['A new first row under “Before you leave”: “Getting there from Delhi”, with the distance to the start, and back from the end when the route ends somewhere else.', 'Getting there gives the distance by road from the city centre to the route’s first place, the map app’s time (labelled a car’s time, as the stretches on a route already are), three towns it passes and the town at halfway.', 'Google Maps and Organic Maps open with directions from the city to the start. Nothing is drawn by Meel.', 'Coming back is shown when the route ends more than 30 km from where it starts.', 'The three other cities nearest the start are listed, so a rider from Chandigarh sees their number too.', 'When a route starts within 5 km of where another Meel route ends (Nubra and Pangong start in Leh), it says so and links to them (frame 5).']],
+    ['What it never says', ['Where to stop for the night, how many days it takes, or which way is better. Those are riders’ judgements; trip reports can add them later.', 'Nothing about trains, buses or renting a bike at the start.']],
+    ['Data', ['Worked out when the data is built, like the road lines: each city to each route’s first place, and each route’s last place back to each city, by the OSRM road router on OpenStreetMap. About 1,200 lookups, once, kept in a cache.', 'Towns passed and halfway: the open map’s place name at a quarter, half and three quarters of the way (Nominatim), as the districts are found today. They are the towns the road really passes: Dera Bassi, not Chandigarh, where the road goes round it. Only on legs up to 1,500 km.', 'The router takes the shortest road whatever country it crosses: Kolkata to Shillong through Bangladesh, Delhi to Arunachal along Nepal’s highway. Such a road is sent instead by Indian towns (Siliguri; Purnia, Muzaffarpur or Gorakhpur; Pithoragarh or Champawat), and the leg says “By way of Siliguri, to stay in India: the shortest road crosses a border.” A road counts as crossing only where it runs 3 km or more inside: the borders are drawn to about 1 km, and Kumaon’s road runs right beside the Kali river.', 'Saved with the route for no network, like its pages.']],
+    ['Counting', ['A new event, “Riding from picked”, with the city. “Map app opened” gains where from.']],
+  ],
+});
+
 /* ── Gallery behaviour ────────────────────────────────────────── */
 const frame = document.getElementById('frame');
 const fit = document.getElementById('fit');
@@ -2801,5 +2900,3 @@ let start = 0;
 try { start = Number(localStorage.getItem('meel-wireframe')) || 0; } catch (e) {}
 show(start);
 </script>
-</body>
-</html>

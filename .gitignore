@@ -7,3 +7,6 @@ data/computed/locators/
 
 # Python's own compiled copies of the data tools.
 __pycache__/
+
+# Marks the end of a run of data/tools/approaches.py --roads, for the --towns run beside it.
+data/computed/approaches/roads.done

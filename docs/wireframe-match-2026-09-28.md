@@ -423,3 +423,24 @@ What the checks found and fixed on the way:
 - **The laptop side panel squeezed the route drawing** once the "Before you leave" links were added. The panel now scrolls instead.
 
 How it was checked: 38 checks in a real browser against the site running on this machine, at phone and laptop sizes, with the accessibility scan on four new pages. Three test answers were put on one pump for frame 7.4 and deleted afterwards.
+
+## Riding from your city, checked on 8 October 2026
+
+**Asked by:** Vishal: "can we add more places from, like delhi and chandigarh are the places, people visits the mountains from".
+**Drawn first:** a new screen, 36 "Riding from your city" (5 frames). Vishal chose "build as drawn", with all twelve cities: Delhi, Chandigarh, Jaipur, Lucknow, Ahmedabad, Mumbai, Pune, Bengaluru, Hyderabad, Chennai, Kolkata and Guwahati. The gallery now has 36 screens and 122 frames.
+
+| Frame | What it shows | Check | What differed | Now |
+|---|---|---|---|---|
+| 36.1 | The front page riding from Delhi, nearest first | Matches | Cards keep their picture and places, as every card does. The Golden Quadrilateral starts in Delhi, so it comes first and says "Starts in Delhi" instead of "5 km". The notes now say so | [x] |
+| 36.2 | Picking where you ride from | Matches | Meel's own list adds its "Type to narrow the list" box past ten choices, and "Nowhere in particular" sits under "Or". The drawing was changed | [x] |
+| 36.3 | The new first row under "Before you leave" | Matches | — | [x] |
+| 36.4 | Getting there, Delhi to Manali | Matches | The towns are the ones the road really passes: Panipat, Dera Bassi and Bilaspur, not Karnal, Chandigarh and Sundarnagar as first drawn. The way back names its towns too. The drawing was changed | [x] |
+| 36.5 | Nubra, a route that starts where others end | Matches | The built page also has the map buttons, the way back and the other cities, as in frame 4. The loop from Leh (Pangong) is not counted as a way to Leh. The drawing was changed | [x] |
+
+What the checks found and fixed on the way:
+- **The shortest road sometimes leaves India.** The road router takes the shortest road whatever country it crosses: Kolkata to Shillong through Bangladesh, Delhi to Arunachal along Nepal's highway. Every road near a neighbour was checked against the open map's outlines of Bangladesh, Nepal, Bhutan and Pakistan. 229 of the 984 roads are now sent by Indian towns instead (Siliguri; Purnia, Muzaffarpur, Gorakhpur, Bahraich, Lakhimpur or Pilibhit; Pithoragarh or Champawat), and the page says "By way of Siliguri, to stay in India: the shortest road crosses a border." Kolkata to Guwahati is 1,004 km this way. No road shown leaves India, except to the two routes that are themselves abroad (Nepal and Bhutan).
+- **False alarms along the Kali river.** The outlines are drawn to about 1 km, and Kumaon's road runs right beside the border river: Budhi and Tawaghat, both in India, tested as Nepal. A road now counts as crossing only where it runs 3 km or more inside a neighbour. This put 11 roads from Jolingkong back on their own, direct road.
+- **Office words in town names.** The open map names some areas with their office titles: "Ajjampura taluku", "Dirang ADC", "Jaipur Municipal Corporation". These are cut off: Ajjampura, Dirang, Jaipur.
+- **The router stopped answering twice.** Once with the laptop asleep, once over the newer kind of internet address (IPv6), which hung for half an hour while the older kind answered at once. The tool now gives up on any connection after 90 seconds and uses the older kind only.
+
+How it was checked: 44 checks in a real browser on a phone-size screen, against the site running on this machine with all twelve cities' data; 22 more at phone and laptop sizes, light and dark, with the accessibility scan on the front page and the Getting there page, which found nothing. The analytics event "Riding from picked" was seen firing, with the city and with none.

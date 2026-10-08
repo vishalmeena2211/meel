@@ -4,6 +4,7 @@ import type { ReactNode } from "react";
 
 import { km, feet, plural, stoneCap } from "@/lib/format";
 import { REPORTS_NEEDED, type SectionId } from "@/lib/sections";
+import type { RideCity, RouteApproach } from "@/lib/types";
 import type { RouteView } from "@/server/route-view";
 
 import {
@@ -27,6 +28,7 @@ import {
   IconWrench,
 } from "../icons";
 import { Badge, Callout, KeyFacts, KmStone, type KeyFact } from "../ui";
+import { GettingThereRow } from "./getting-there";
 import { ShowCurrentChip } from "./show-current-chip";
 
 export function SectionIcon({ id, className }: { id: SectionId; className?: string }) {
@@ -244,13 +246,18 @@ export function FirstRows({ view, save, alerts = 0 }: { view: RouteView; save: R
   );
 }
 
-/** The three screens a rider opens the night before. Only for a route with a road line. */
+/** The screens a rider opens the night before. Only for a route with a road line. */
 export function BeforeYouLeave({
   view,
   help,
+  approach,
+  cities,
 }: {
   view: RouteView;
   help: { hospitals: number; police: number } | null;
+  /** How far the route's start is from the cities riders set out from. Null until worked out. */
+  approach: RouteApproach | null;
+  cities: Pick<RideCity, "id" | "name">[];
 }) {
   if (view.route.line.length === 0) return null;
   const top = `/routes/${view.route.slug}`;
@@ -261,6 +268,7 @@ export function BeforeYouLeave({
     <section className="flex flex-col gap-1.5">
       <h2 className="label">Before you leave</h2>
       <div className="card flex flex-col">
+        {approach ? <GettingThereRow href={`${top}/getting-there`} approach={approach} cities={cities} /> : null}
         <Row href={`${top}/map-apps`} icon={<IconMap />} title="Route file for your map app" sub="GPX · Organic Maps, OsmAnd, Google Maps" />
         <Row href={`${top}/emergency`} icon={<IconPhone />} title="Emergency card" sub={card} />
         <Row href={`${top}/tell-home`} icon={<IconSend />} title="Tell someone at home" sub="Your plan, in one message" />

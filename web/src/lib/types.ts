@@ -391,6 +391,41 @@ export interface HelpPlace {
   osm_url: string;
 }
 
+/** A city riders set out from. From data/site/route-approaches.json. */
+export interface RideCity {
+  id: string;
+  name: string;
+  group: string;
+  lat: number;
+  lon: number;
+}
+
+/** One road between a city and a route's end, worked out from the open map. */
+export interface Leg {
+  km: number;
+  /** A map app's time: a car's, on an empty road. */
+  hours: number;
+  /** Towns the road passes, a quarter, half and three quarters of the way. Left out on a leg over 1,500 km. */
+  through?: string[];
+  halfway?: { name: string; km: number };
+  /** The Indian towns a road is sent by, where the shortest road runs through Bangladesh or Nepal. */
+  via?: string[];
+}
+
+/** How far a route's start is from each city, and its end back to it. From data/site/route-approaches.json. */
+export interface RouteApproach {
+  start: string;
+  end: string;
+  /** The route ends where it starts, so the way back is the way there. */
+  round_trip: boolean;
+  /** By city id: the road from the city to the route's start. */
+  to: Record<string, Leg>;
+  /** By city id: the road from the route's end back to the city. Empty for a round trip. */
+  back: Record<string, Leg>;
+  /** Routes that end where this one starts. */
+  after?: string[];
+}
+
 /** What a route's emergency card lists. From data/site/route-help.json. */
 export interface RouteHelp {
   hospitals: HelpPlace[];

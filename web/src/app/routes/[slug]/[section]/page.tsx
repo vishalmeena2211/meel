@@ -24,6 +24,7 @@ import {
 import { SectionChips } from "@/components/route/route-parts";
 import { SinceLastVisit } from "@/components/route/since-last-visit";
 import { BackHead, Foot } from "@/components/shell";
+import { GettingThereScreen, type RouteBefore } from "@/components/route/getting-there";
 import { EmergencyCard, MapAppsScreen } from "@/components/tools/before-you-leave";
 import { FuelCheckScreen, type GapNote } from "@/components/tools/fuel-check";
 import { AltitudeScreen } from "@/components/tools/night-halts";
@@ -31,7 +32,7 @@ import { PackingList } from "@/components/tools/packing-list";
 import { TellHome } from "@/components/tools/tell-home";
 import { TripCardView } from "@/components/trips/trip-card";
 import { Callout, SectionHeading } from "@/components/ui";
-import { getBikes, getIndex, getRouteHelp } from "@/lib/content";
+import { getApproaches, getBikes, getIndex, getRouteHelp } from "@/lib/content";
 import { sayAge, daysBetween, feet, km } from "@/lib/format";
 import { isSection, isTool, REPORTS_NEEDED, SECTION_NAMES, type SectionId, type ToolId } from "@/lib/sections";
 import { SITE_URL } from "@/lib/site";
@@ -61,6 +62,7 @@ const TOOL_NAMES: Record<ToolId, string> = {
   "fuel-check": "Fuel check",
   trips: "Trips on this route",
   sources: "Sources",
+  "getting-there": "Getting there",
   "map-apps": "Route file",
   emergency: "Emergency card",
   "tell-home": "Tell someone at home",
@@ -184,6 +186,34 @@ async function SectionBody(props: PageProps<"/routes/[slug]/[section]">) {
               Post a trip on this route
             </Link>
           </Foot>
+        </div>
+      );
+    }
+    if (section === "getting-there") {
+      const first = route.waypoints[0];
+      const approaches = await getApproaches();
+      const approach = approaches.routes[slug];
+      if (!first || route.line.length === 0) notFound();
+      const index = await getIndex();
+      const before: RouteBefore[] = (approach?.after ?? []).flatMap((s) => {
+        const r = index.routes.find((x) => x.slug === s);
+        const a = approaches.routes[s];
+        return r ? [{ slug: s, name: r.name, length_km: r.distance_km ?? null, km: Object.fromEntries(Object.entries(a?.to ?? {}).map(([c, l]) => [c, l.km])) }] : [];
+      });
+      return (
+        <div className="flex flex-col gap-3">
+          <BackHead title={route.name} sub={TOOL_NAMES[section]} back={top} />
+          {approach ? (
+            <GettingThereScreen
+              start={{ name: first.name, lat: first.lat, lon: first.lon }}
+              approach={approach}
+              cities={approaches.cities}
+              before={before}
+              built={approaches.built}
+            />
+          ) : (
+            <Callout title="Not worked out yet">How far this route is from the cities riders set out from has not been worked out yet.</Callout>
+          )}
         </div>
       );
     }

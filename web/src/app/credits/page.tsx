@@ -52,7 +52,8 @@ export default async function CreditsPage() {
           </b>
           <span className="hint">
             Positions of places, the line of each road, fuel pumps, the hospitals and police stations on each emergency
-            card, and the districts each road crosses. Used under the{" "}
+            card, the districts each road crosses, and how far each route starts from the cities riders set out from.
+            Used under the{" "}
             <a className="link font-medium" href="https://opendatacommons.org/licenses/odbl/" target="_blank" rel="noreferrer noopener">
               Open Database Licence
             </a>

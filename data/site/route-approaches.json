@@ -1,0 +1,10251 @@
+{
+ "routes": {
+  "manali-leh": {
+   "start": "Manali",
+   "end": "Leh",
+   "round_trip": false,
+   "to": {
+    "delhi": {
+     "km": 533,
+     "hours": 7.09,
+     "through": [
+      "Panipat",
+      "Dera Bassi",
+      "Bilaspur"
+     ],
+     "halfway": {
+      "name": "Dera Bassi",
+      "km": 266
+     }
+    },
+    "chandigarh": {
+     "km": 271,
+     "hours": 3.91,
+     "through": [
+      "Rupnagar",
+      "Sundarnagar",
+      "Aut"
+     ],
+     "halfway": {
+      "name": "Sundarnagar",
+      "km": 136
+     }
+    },
+    "jaipur": {
+     "km": 747,
+     "hours": 9.75,
+     "through": [
+      "Mahendragarh",
+      "Fatehpur Pundri",
+      "Rupnagar"
+     ],
+     "halfway": {
+      "name": "Fatehpur Pundri",
+      "km": 374
+     }
+    },
+    "lucknow": {
+     "km": 974,
+     "hours": 11.93,
+     "through": [
+      "Tilhar",
+      "Meerut",
+      "Panchkula"
+     ],
+     "halfway": {
+      "name": "Meerut",
+      "km": 487
+     }
+    },
+    "ahmedabad": {
+     "km": 1383,
+     "hours": 17.28,
+     "through": [
+      "Sanchore",
+      "Lunkaransar",
+      "Moga"
+     ],
+     "halfway": {
+      "name": "Lunkaransar",
+      "km": 692
+     }
+    },
+    "mumbai": {
+     "km": 1862,
+     "hours": 21.91
+    },
+    "pune": {
+     "km": 1867,
+     "hours": 22.82
+    },
+    "bengaluru": {
+     "km": 2565,
+     "hours": 31.23
+    },
+    "hyderabad": {
+     "km": 2068,
+     "hours": 26.17
+    },
+    "chennai": {
+     "km": 2643,
+     "hours": 33.8
+    },
+    "kolkata": {
+     "km": 1958,
+     "hours": 23.36
+    },
+    "guwahati": {
+     "km": 2349,
+     "hours": 28.13,
+     "via": [
+      "Purnia"
+     ]
+    }
+   },
+   "back": {
+    "delhi": {
+     "km": 944,
+     "hours": 13.07,
+     "through": [
+      "Lahaul",
+      "Mandi",
+      "Ambala"
+     ],
+     "halfway": {
+      "name": "Mandi",
+      "km": 472
+     }
+    },
+    "chandigarh": {
+     "km": 681,
+     "hours": 9.93,
+     "through": [
+      "Lahaul",
+      "Mandi"
+     ],
+     "halfway": {
+      "name": "Lahaul",
+      "km": 340
+     }
+    },
+    "jaipur": {
+     "km": 1160,
+     "hours": 15.83,
+     "through": [
+      "Lahaul",
+      "Kalka",
+      "Narnaul"
+     ],
+     "halfway": {
+      "name": "Kalka",
+      "km": 580
+     }
+    },
+    "lucknow": {
+     "km": 1384,
+     "hours": 17.92,
+     "through": [
+      "Lahaul",
+      "Yamunanagar",
+      "Hasanpur"
+     ],
+     "halfway": {
+      "name": "Yamunanagar",
+      "km": 692
+     }
+    },
+    "ahmedabad": {
+     "km": 1805,
+     "hours": 23.29
+    },
+    "mumbai": {
+     "km": 2269,
+     "hours": 27.78
+    },
+    "pune": {
+     "km": 2271,
+     "hours": 28.54
+    },
+    "bengaluru": {
+     "km": 2972,
+     "hours": 37.01
+    },
+    "hyderabad": {
+     "km": 2479,
+     "hours": 31.98
+    },
+    "chennai": {
+     "km": 3143,
+     "hours": 39.39
+    },
+    "kolkata": {
+     "km": 2348,
+     "hours": 28.97
+    },
+    "guwahati": {
+     "km": 2722,
+     "hours": 34.22,
+     "via": [
+      "Purnia"
+     ]
+    }
+   },
+   "after": [
+    "spiti-circuit"
+   ]
+  },
+  "adi-kailash-om-parvat": {
+   "start": "Pithoragarh",
+   "end": "Jolingkong",
+   "round_trip": false,
+   "to": {
+    "delhi": {
+     "km": 475,
+     "hours": 6.74,
+     "through": [
+      "Garhmukteshwar",
+      "Rampur",
+      "Khatima"
+     ],
+     "halfway": {
+      "name": "Rampur",
+      "km": 238
+     }
+    },
+    "chandigarh": {
+     "km": 660,
+     "hours": 9.26,
+     "through": [
+      "Gharaunda",
+      "Dhanaura",
+      "Kichha"
+     ],
+     "halfway": {
+      "name": "Dhanaura",
+      "km": 330
+     }
+    },
+    "jaipur": {
+     "km": 698,
+     "hours": 9.06,
+     "through": [
+      "Bharatpur",
+      "Etah",
+      "Pilibhit"
+     ],
+     "halfway": {
+      "name": "Etah",
+      "km": 349
+     }
+    },
+    "lucknow": {
+     "km": 466,
+     "hours": 6.14,
+     "through": [
+      "Hardoi",
+      "Bisalpur",
+      "Khatima"
+     ],
+     "halfway": {
+      "name": "Bisalpur",
+      "km": 233
+     }
+    },
+    "ahmedabad": {
+     "km": 1375,
+     "hours": 16.66,
+     "through": [
+      "Ratlam",
+      "Lalsot",
+      "Kasganj"
+     ],
+     "halfway": {
+      "name": "Lalsot",
+      "km": 688
+     }
+    },
+    "mumbai": {
+     "km": 1729,
+     "hours": 20.71
+    },
+    "pune": {
+     "km": 1735,
+     "hours": 21.62
+    },
+    "bengaluru": {
+     "km": 2284,
+     "hours": 28.83
+    },
+    "hyderabad": {
+     "km": 1697,
+     "hours": 21.47
+    },
+    "chennai": {
+     "km": 2288,
+     "hours": 28.79
+    },
+    "kolkata": {
+     "km": 1481,
+     "hours": 17.98,
+     "through": [
+      "Dumri",
+      "Aurai",
+      "Safipur"
+     ],
+     "halfway": {
+      "name": "Aurai",
+      "km": 740
+     }
+    },
+    "guwahati": {
+     "km": 1770,
+     "hours": 22.51,
+     "via": [
+      "Purnia",
+      "Gorakhpur",
+      "Bahraich",
+      "Lakhimpur"
+     ]
+    }
+   },
+   "back": {
+    "delhi": {
+     "km": 677,
+     "hours": 10.05,
+     "through": [
+      "Didihat",
+      "Purnagiri",
+      "Moradabad"
+     ],
+     "halfway": {
+      "name": "Purnagiri",
+      "km": 338
+     }
+    },
+    "chandigarh": {
+     "km": 838,
+     "hours": 12.5,
+     "through": [
+      "Munsiari",
+      "Tharali",
+      "Dehradun"
+     ],
+     "halfway": {
+      "name": "Tharali",
+      "km": 419
+     }
+    },
+    "jaipur": {
+     "km": 909,
+     "hours": 12.47,
+     "through": [
+      "Bareilly",
+      "Mathura"
+     ],
+     "halfway": {
+      "name": "Bareilly",
+      "km": 454
+     }
+    },
+    "lucknow": {
+     "km": 671,
+     "hours": 9.48,
+     "through": [
+      "Didihat",
+      "Purnagiri",
+      "Shahjahanpur"
+     ],
+     "halfway": {
+      "name": "Purnagiri",
+      "km": 336
+     }
+    },
+    "ahmedabad": {
+     "km": 1576,
+     "hours": 19.87
+    },
+    "mumbai": {
+     "km": 1929,
+     "hours": 23.86
+    },
+    "pune": {
+     "km": 1931,
+     "hours": 24.63
+    },
+    "bengaluru": {
+     "km": 2492,
+     "hours": 32.0
+    },
+    "hyderabad": {
+     "km": 1903,
+     "hours": 24.61
+    },
+    "chennai": {
+     "km": 2489,
+     "hours": 31.76
+    },
+    "kolkata": {
+     "km": 1662,
+     "hours": 20.89
+    },
+    "guwahati": {
+     "km": 1966,
+     "hours": 25.54,
+     "via": [
+      "Lakhimpur",
+      "Purnia"
+     ]
+    }
+   },
+   "after": []
+  },
+  "andhra-araku-gandikota": {
+   "start": "Visakhapatnam",
+   "end": "Gandikota",
+   "round_trip": false,
+   "to": {
+    "delhi": {
+     "km": 1713,
+     "hours": 21.14
+    },
+    "chandigarh": {
+     "km": 1973,
+     "hours": 24.26
+    },
+    "jaipur": {
+     "km": 1724,
+     "hours": 20.93
+    },
+    "lucknow": {
+     "km": 1373,
+     "hours": 17.43,
+     "through": [
+      "Rewa",
+      "Mungeli",
+      "Dharamgarh"
+     ],
+     "halfway": {
+      "name": "Mungeli",
+      "km": 686
+     }
+    },
+    "ahmedabad": {
+     "km": 1651,
+     "hours": 19.99
+    },
+    "mumbai": {
+     "km": 1288,
+     "hours": 15.83,
+     "through": [
+      "Madha",
+      "Patancheruvu",
+      "Sathupally"
+     ],
+     "halfway": {
+      "name": "Patancheruvu",
+      "km": 644
+     }
+    },
+    "pune": {
+     "km": 1144,
+     "hours": 13.92,
+     "through": [
+      "Tuljapur",
+      "Keesara",
+      "Sathupally"
+     ],
+     "halfway": {
+      "name": "Keesara",
+      "km": 572
+     }
+    },
+    "bengaluru": {
+     "km": 972,
+     "hours": 12.53,
+     "through": [
+      "Chinthakommadinne",
+      "Vinukonda",
+      "Devarapalle"
+     ],
+     "halfway": {
+      "name": "Vinukonda",
+      "km": 486
+     }
+    },
+    "hyderabad": {
+     "km": 574,
+     "hours": 7.39,
+     "through": [
+      "Chivvemla",
+      "Chintalapudi",
+      "Prathipadu"
+     ],
+     "halfway": {
+      "name": "Chintalapudi",
+      "km": 287
+     }
+    },
+    "chennai": {
+     "km": 809,
+     "hours": 10.35,
+     "through": [
+      "Dagadarthi",
+      "Guntur",
+      "Chagallu"
+     ],
+     "halfway": {
+      "name": "Guntur",
+      "km": 404
+     }
+    },
+    "kolkata": {
+     "km": 866,
+     "hours": 10.55,
+     "through": [
+      "Basta",
+      "Bhubaneswar",
+      "Sompeta"
+     ],
+     "halfway": {
+      "name": "Bhubaneswar",
+      "km": 433
+     }
+    },
+    "guwahati": {
+     "km": 1779,
+     "hours": 21.9,
+     "via": [
+      "Siliguri"
+     ]
+    }
+   },
+   "back": {
+    "delhi": {
+     "km": 1865,
+     "hours": 23.48
+    },
+    "chandigarh": {
+     "km": 2135,
+     "hours": 26.55
+    },
+    "jaipur": {
+     "km": 1684,
+     "hours": 21.59
+    },
+    "lucknow": {
+     "km": 1682,
+     "hours": 20.71
+    },
+    "ahmedabad": {
+     "km": 1379,
+     "hours": 16.74,
+     "through": [
+      "Kushtagi",
+      "Karmala",
+      "Kaparada"
+     ],
+     "halfway": {
+      "name": "Karmala",
+      "km": 690
+     }
+    },
+    "mumbai": {
+     "km": 939,
+     "hours": 11.54,
+     "through": [
+      "Hosapete",
+      "Jat",
+      "Phaltan"
+     ],
+     "halfway": {
+      "name": "Jat",
+      "km": 470
+     }
+    },
+    "pune": {
+     "km": 793,
+     "hours": 9.61,
+     "through": [
+      "Ballari",
+      "Bagalakote",
+      "Pandharpur"
+     ],
+     "halfway": {
+      "name": "Bagalakote",
+      "km": 396
+     }
+    },
+    "bengaluru": {
+     "km": 276,
+     "hours": 3.83,
+     "through": [
+      "Talupula",
+      "Gorantla",
+      "Chikkaballapura"
+     ],
+     "halfway": {
+      "name": "Gorantla",
+      "km": 138
+     }
+    },
+    "hyderabad": {
+     "km": 361,
+     "hours": 4.89,
+     "through": [
+      "Bethamcherla",
+      "Manopad",
+      "Jadcherla"
+     ],
+     "halfway": {
+      "name": "Manopad",
+      "km": 180
+     }
+    },
+    "chennai": {
+     "km": 342,
+     "hours": 4.23,
+     "through": [
+      "Kadapa",
+      "Kodur",
+      "Narayanavanam"
+     ],
+     "halfway": {
+      "name": "Kodur",
+      "km": 171
+     }
+    },
+    "kolkata": {
+     "km": 1606,
+     "hours": 19.74
+    },
+    "guwahati": {
+     "km": 2517,
+     "hours": 31.07,
+     "via": [
+      "Siliguri"
+     ]
+    }
+   },
+   "after": []
+  },
+  "arunachal-centre-east": {
+   "start": "Ziro",
+   "end": "Walong",
+   "round_trip": false,
+   "to": {
+    "delhi": {
+     "km": 2186,
+     "hours": 26.21,
+     "via": [
+      "Purnia"
+     ]
+    },
+    "chandigarh": {
+     "km": 2379,
+     "hours": 28.77,
+     "via": [
+      "Purnia"
+     ]
+    },
+    "jaipur": {
+     "km": 2268,
+     "hours": 27.48,
+     "via": [
+      "Purnia"
+     ]
+    },
+    "lucknow": {
+     "km": 1698,
+     "hours": 20.57,
+     "via": [
+      "Purnia"
+     ]
+    },
+    "ahmedabad": {
+     "km": 2793,
+     "hours": 33.56,
+     "via": [
+      "Purnia"
+     ]
+    },
+    "mumbai": {
+     "km": 2974,
+     "hours": 35.28,
+     "via": [
+      "Purnia"
+     ]
+    },
+    "pune": {
+     "km": 2883,
+     "hours": 34.63,
+     "via": [
+      "Purnia"
+     ]
+    },
+    "bengaluru": {
+     "km": 3098,
+     "hours": 38.36,
+     "via": [
+      "Siliguri"
+     ]
+    },
+    "hyderabad": {
+     "km": 2701,
+     "hours": 32.84,
+     "via": [
+      "Purnia",
+      "Siliguri"
+     ]
+    },
+    "chennai": {
+     "km": 2935,
+     "hours": 36.19,
+     "via": [
+      "Siliguri"
+     ]
+    },
+    "kolkata": {
+     "km": 1358,
+     "hours": 16.77,
+     "through": [
+      "Gazole",
+      "Falakata",
+      "Mangaldoi"
+     ],
+     "via": [
+      "Siliguri"
+     ],
+     "halfway": {
+      "name": "Falakata",
+      "km": 679
+     }
+    },
+    "guwahati": {
+     "km": 401,
+     "hours": 4.97,
+     "through": [
+      "Dalgaon",
+      "Na-Duar",
+      "Balijan"
+     ],
+     "halfway": {
+      "name": "Na-Duar",
+      "km": 200
+     }
+    }
+   },
+   "back": {
+    "delhi": {
+     "km": 2634,
+     "hours": 30.88,
+     "via": [
+      "Purnia"
+     ]
+    },
+    "chandigarh": {
+     "km": 2860,
+     "hours": 33.49,
+     "via": [
+      "Purnia"
+     ]
+    },
+    "jaipur": {
+     "km": 2724,
+     "hours": 32.37,
+     "via": [
+      "Purnia"
+     ]
+    },
+    "lucknow": {
+     "km": 2144,
+     "hours": 25.33,
+     "via": [
+      "Purnia"
+     ]
+    },
+    "ahmedabad": {
+     "km": 3206,
+     "hours": 38.38,
+     "via": [
+      "Purnia"
+     ]
+    },
+    "mumbai": {
+     "km": 3380,
+     "hours": 39.66,
+     "via": [
+      "Purnia"
+     ]
+    },
+    "pune": {
+     "km": 3283,
+     "hours": 39.05,
+     "via": [
+      "Purnia"
+     ]
+    },
+    "bengaluru": {
+     "km": 3508,
+     "hours": 43.01,
+     "via": [
+      "Siliguri"
+     ]
+    },
+    "hyderabad": {
+     "km": 3113,
+     "hours": 37.66,
+     "via": [
+      "Siliguri",
+      "Purnia"
+     ]
+    },
+    "chennai": {
+     "km": 3358,
+     "hours": 40.68,
+     "via": [
+      "Siliguri"
+     ]
+    },
+    "kolkata": {
+     "km": 1762,
+     "hours": 21.66,
+     "via": [
+      "Siliguri"
+     ]
+    },
+    "guwahati": {
+     "km": 796,
+     "hours": 9.45,
+     "through": [
+      "Lathao",
+      "Dimow",
+      "Kaliabor"
+     ],
+     "halfway": {
+      "name": "Dimow",
+      "km": 398
+     }
+    }
+   },
+   "after": []
+  },
+  "assam-kaziranga-majuli": {
+   "start": "Guwahati",
+   "end": "Kamalabari",
+   "round_trip": false,
+   "to": {
+    "delhi": {
+     "km": 1832,
+     "hours": 22.03,
+     "via": [
+      "Purnia"
+     ]
+    },
+    "chandigarh": {
+     "km": 2024,
+     "hours": 24.6,
+     "via": [
+      "Purnia"
+     ]
+    },
+    "jaipur": {
+     "km": 1913,
+     "hours": 23.3,
+     "via": [
+      "Purnia"
+     ]
+    },
+    "lucknow": {
+     "km": 1343,
+     "hours": 16.39,
+     "through": [
+      "Kasya",
+      "Madhepura",
+      "Dhupguri"
+     ],
+     "via": [
+      "Purnia"
+     ],
+     "halfway": {
+      "name": "Madhepura",
+      "km": 672
+     }
+    },
+    "ahmedabad": {
+     "km": 2439,
+     "hours": 29.39,
+     "via": [
+      "Purnia"
+     ]
+    },
+    "mumbai": {
+     "km": 2620,
+     "hours": 31.1,
+     "via": [
+      "Purnia"
+     ]
+    },
+    "pune": {
+     "km": 2529,
+     "hours": 30.46,
+     "via": [
+      "Purnia"
+     ]
+    },
+    "bengaluru": {
+     "km": 2743,
+     "hours": 34.19,
+     "via": [
+      "Siliguri"
+     ]
+    },
+    "hyderabad": {
+     "km": 2347,
+     "hours": 28.66,
+     "via": [
+      "Purnia",
+      "Siliguri"
+     ]
+    },
+    "chennai": {
+     "km": 2581,
+     "hours": 32.01,
+     "via": [
+      "Siliguri"
+     ]
+    },
+    "kolkata": {
+     "km": 1004,
+     "hours": 12.59,
+     "through": [
+      "Raghunathganj",
+      "Islampur",
+      "Tufanganj"
+     ],
+     "via": [
+      "Siliguri"
+     ],
+     "halfway": {
+      "name": "Islampur",
+      "km": 502
+     }
+    },
+    "guwahati": {
+     "km": 6,
+     "hours": 0.13,
+     "through": [
+      "Dispur"
+     ],
+     "halfway": {
+      "name": "Dispur",
+      "km": 3
+     }
+    }
+   },
+   "back": {
+    "delhi": {
+     "km": 2294,
+     "hours": 27.19,
+     "via": [
+      "Purnia"
+     ]
+    },
+    "chandigarh": {
+     "km": 2520,
+     "hours": 29.81,
+     "via": [
+      "Purnia"
+     ]
+    },
+    "jaipur": {
+     "km": 2384,
+     "hours": 28.69,
+     "via": [
+      "Purnia"
+     ]
+    },
+    "lucknow": {
+     "km": 1804,
+     "hours": 21.64,
+     "via": [
+      "Purnia"
+     ]
+    },
+    "ahmedabad": {
+     "km": 2866,
+     "hours": 34.69,
+     "via": [
+      "Purnia"
+     ]
+    },
+    "mumbai": {
+     "km": 3040,
+     "hours": 35.98,
+     "via": [
+      "Purnia"
+     ]
+    },
+    "pune": {
+     "km": 2943,
+     "hours": 35.37,
+     "via": [
+      "Purnia"
+     ]
+    },
+    "bengaluru": {
+     "km": 3168,
+     "hours": 39.32,
+     "via": [
+      "Siliguri"
+     ]
+    },
+    "hyderabad": {
+     "km": 2773,
+     "hours": 33.98,
+     "via": [
+      "Siliguri",
+      "Purnia"
+     ]
+    },
+    "chennai": {
+     "km": 3018,
+     "hours": 37.0,
+     "via": [
+      "Siliguri"
+     ]
+    },
+    "kolkata": {
+     "km": 1422,
+     "hours": 17.97,
+     "through": [
+      "Dhekiajuli",
+      "Alipurduar",
+      "Gazole"
+     ],
+     "via": [
+      "Siliguri"
+     ],
+     "halfway": {
+      "name": "Alipurduar",
+      "km": 711
+     }
+    },
+    "guwahati": {
+     "km": 479,
+     "hours": 6.12,
+     "through": [
+      "North Lakhimpur",
+      "Biswanath",
+      "Mazbat"
+     ],
+     "halfway": {
+      "name": "Biswanath",
+      "km": 240
+     }
+    }
+   },
+   "after": []
+  },
+  "bhutan": {
+   "start": "Jaigaon",
+   "end": "Paro",
+   "round_trip": false,
+   "to": {
+    "delhi": {
+     "km": 1551,
+     "hours": 18.68,
+     "via": [
+      "Purnia"
+     ]
+    },
+    "chandigarh": {
+     "km": 1744,
+     "hours": 21.24,
+     "via": [
+      "Purnia"
+     ]
+    },
+    "jaipur": {
+     "km": 1633,
+     "hours": 19.95,
+     "via": [
+      "Purnia"
+     ]
+    },
+    "lucknow": {
+     "km": 1063,
+     "hours": 13.04,
+     "through": [
+      "Gorakhpur",
+      "Bochaha",
+      "Baisi"
+     ],
+     "via": [
+      "Purnia"
+     ],
+     "halfway": {
+      "name": "Bochaha",
+      "km": 532
+     }
+    },
+    "ahmedabad": {
+     "km": 2158,
+     "hours": 26.04,
+     "via": [
+      "Purnia"
+     ]
+    },
+    "mumbai": {
+     "km": 2339,
+     "hours": 27.75,
+     "via": [
+      "Purnia"
+     ]
+    },
+    "pune": {
+     "km": 2248,
+     "hours": 27.1,
+     "via": [
+      "Purnia"
+     ]
+    },
+    "bengaluru": {
+     "km": 2463,
+     "hours": 30.84,
+     "via": [
+      "Siliguri"
+     ]
+    },
+    "hyderabad": {
+     "km": 2050,
+     "hours": 24.99,
+     "via": [
+      "Purnia"
+     ]
+    },
+    "chennai": {
+     "km": 2300,
+     "hours": 28.66,
+     "via": [
+      "Siliguri"
+     ]
+    },
+    "kolkata": {
+     "km": 724,
+     "hours": 9.24,
+     "through": [
+      "Beldanga",
+      "Gazole",
+      "Phansidewa"
+     ],
+     "via": [
+      "Siliguri"
+     ],
+     "halfway": {
+      "name": "Gazole",
+      "km": 362
+     }
+    },
+    "guwahati": {
+     "km": 334,
+     "hours": 4.06,
+     "through": [
+      "Barpeta",
+      "Sidli",
+      "Tufanganj"
+     ],
+     "halfway": {
+      "name": "Sidli",
+      "km": 167
+     }
+    }
+   },
+   "back": {
+    "delhi": {
+     "km": 1733,
+     "hours": 20.75,
+     "via": [
+      "Purnia"
+     ]
+    },
+    "chandigarh": {
+     "km": 1959,
+     "hours": 23.36,
+     "via": [
+      "Purnia"
+     ]
+    },
+    "jaipur": {
+     "km": 1823,
+     "hours": 22.24,
+     "via": [
+      "Purnia"
+     ]
+    },
+    "lucknow": {
+     "km": 1243,
+     "hours": 15.2,
+     "through": [
+      "Phansidewa",
+      "Begusarai",
+      "Ghazipur"
+     ],
+     "via": [
+      "Purnia"
+     ],
+     "halfway": {
+      "name": "Begusarai",
+      "km": 622
+     }
+    },
+    "ahmedabad": {
+     "km": 2305,
+     "hours": 28.25,
+     "via": [
+      "Purnia"
+     ]
+    },
+    "mumbai": {
+     "km": 2479,
+     "hours": 29.54,
+     "via": [
+      "Purnia"
+     ]
+    },
+    "pune": {
+     "km": 2382,
+     "hours": 28.92,
+     "via": [
+      "Purnia"
+     ]
+    },
+    "bengaluru": {
+     "km": 2607,
+     "hours": 32.88,
+     "via": [
+      "Siliguri"
+     ]
+    },
+    "hyderabad": {
+     "km": 2198,
+     "hours": 27.24,
+     "via": [
+      "Purnia"
+     ]
+    },
+    "chennai": {
+     "km": 2457,
+     "hours": 30.56,
+     "via": [
+      "Siliguri"
+     ]
+    },
+    "kolkata": {
+     "km": 861,
+     "hours": 11.53,
+     "through": [
+      "Dhupguri",
+      "Karandighi",
+      "Nabagram"
+     ],
+     "via": [
+      "Siliguri"
+     ],
+     "halfway": {
+      "name": "Karandighi",
+      "km": 430
+     }
+    },
+    "guwahati": {
+     "km": 478,
+     "hours": 6.29,
+     "through": [
+      "Kalchini",
+      "Gossaigaon",
+      "Barnagar"
+     ],
+     "halfway": {
+      "name": "Gossaigaon",
+      "km": 239
+     }
+    }
+   },
+   "after": []
+  },
+  "char-dham": {
+   "start": "Rishikesh",
+   "end": "Mana",
+   "round_trip": false,
+   "to": {
+    "delhi": {
+     "km": 248,
+     "hours": 3.42,
+     "through": [
+      "Baghpat",
+      "Muzaffarnagar",
+      "Laksar"
+     ],
+     "halfway": {
+      "name": "Muzaffarnagar",
+      "km": 124
+     }
+    },
+    "chandigarh": {
+     "km": 205,
+     "hours": 3.16,
+     "through": [
+      "Shahzadpur",
+      "Paonta Sahib",
+      "Vikasnagar"
+     ],
+     "halfway": {
+      "name": "Paonta Sahib",
+      "km": 102
+     }
+    },
+    "jaipur": {
+     "km": 536,
+     "hours": 6.64,
+     "through": [
+      "Lachhmangarh",
+      "Faridabad",
+      "Shamli"
+     ],
+     "halfway": {
+      "name": "Faridabad",
+      "km": 268
+     }
+    },
+    "lucknow": {
+     "km": 528,
+     "hours": 6.87,
+     "through": [
+      "Shahabad",
+      "Bareilly",
+      "Dhampur"
+     ],
+     "halfway": {
+      "name": "Bareilly",
+      "km": 264
+     }
+    },
+    "ahmedabad": {
+     "km": 1213,
+     "hours": 14.24,
+     "through": [
+      "Jaora",
+      "Digod",
+      "Nuh"
+     ],
+     "halfway": {
+      "name": "Digod",
+      "km": 606
+     }
+    },
+    "mumbai": {
+     "km": 1567,
+     "hours": 18.29
+    },
+    "pune": {
+     "km": 1572,
+     "hours": 19.2
+    },
+    "bengaluru": {
+     "km": 2270,
+     "hours": 27.61
+    },
+    "hyderabad": {
+     "km": 1760,
+     "hours": 21.97
+    },
+    "chennai": {
+     "km": 2352,
+     "hours": 29.28
+    },
+    "kolkata": {
+     "km": 1526,
+     "hours": 18.38
+    },
+    "guwahati": {
+     "km": 1867,
+     "hours": 23.12,
+     "via": [
+      "Purnia"
+     ]
+    }
+   },
+   "back": {
+    "delhi": {
+     "km": 614,
+     "hours": 10.52,
+     "through": [
+      "Karnaprayag",
+      "Dehradun",
+      "Shamli"
+     ],
+     "halfway": {
+      "name": "Dehradun",
+      "km": 307
+     }
+    },
+    "chandigarh": {
+     "km": 552,
+     "hours": 10.08,
+     "through": [
+      "Karnaprayag",
+      "Tehri",
+      "Paonta Sahib"
+     ],
+     "halfway": {
+      "name": "Tehri",
+      "km": 276
+     }
+    },
+    "jaipur": {
+     "km": 907,
+     "hours": 13.95,
+     "through": [
+      "Tehri",
+      "Baghpat",
+      "Rewari"
+     ],
+     "halfway": {
+      "name": "Baghpat",
+      "km": 454
+     }
+    },
+    "lucknow": {
+     "km": 746,
+     "hours": 12.61,
+     "through": [
+      "Garud",
+      "Lalkuan",
+      "Shahabad"
+     ],
+     "halfway": {
+      "name": "Lalkuan",
+      "km": 373
+     }
+    },
+    "ahmedabad": {
+     "km": 1583,
+     "hours": 21.34
+    },
+    "mumbai": {
+     "km": 1935,
+     "hours": 25.34
+    },
+    "pune": {
+     "km": 1937,
+     "hours": 26.1
+    },
+    "bengaluru": {
+     "km": 2638,
+     "hours": 34.58
+    },
+    "hyderabad": {
+     "km": 1977,
+     "hours": 27.75
+    },
+    "chennai": {
+     "km": 2563,
+     "hours": 34.9
+    },
+    "kolkata": {
+     "km": 1736,
+     "hours": 24.03
+    },
+    "guwahati": {
+     "km": 2066,
+     "hours": 28.68,
+     "via": [
+      "Lakhimpur",
+      "Purnia"
+     ]
+    }
+   },
+   "after": []
+  },
+  "chhattisgarh-bastar": {
+   "start": "Raipur",
+   "end": "Tirathgarh Falls",
+   "round_trip": false,
+   "to": {
+    "delhi": {
+     "km": 1135,
+     "hours": 14.14,
+     "through": [
+      "Gwalior",
+      "Tikamgarh",
+      "Mandla"
+     ],
+     "halfway": {
+      "name": "Tikamgarh",
+      "km": 568
+     }
+    },
+    "chandigarh": {
+     "km": 1395,
+     "hours": 17.26,
+     "through": [
+      "Hodal",
+      "Jhansi",
+      "Adhartal"
+     ],
+     "halfway": {
+      "name": "Jhansi",
+      "km": 698
+     }
+    },
+    "jaipur": {
+     "km": 1146,
+     "hours": 13.93,
+     "through": [
+      "Dhaulpur",
+      "Tikamgarh",
+      "Narayanganj"
+     ],
+     "halfway": {
+      "name": "Tikamgarh",
+      "km": 573
+     }
+    },
+    "lucknow": {
+     "km": 795,
+     "hours": 10.43,
+     "through": [
+      "Soraon",
+      "Shahdol",
+      "Bajag"
+     ],
+     "halfway": {
+      "name": "Shahdol",
+      "km": 398
+     }
+    },
+    "ahmedabad": {
+     "km": 1117,
+     "hours": 13.41,
+     "through": [
+      "Sardarpur",
+      "Rehatgarh",
+      "Ramtek"
+     ],
+     "halfway": {
+      "name": "Rehatgarh",
+      "km": 558
+     }
+    },
+    "mumbai": {
+     "km": 1060,
+     "hours": 12.48,
+     "through": [
+      "Vaijapur",
+      "Malegaon",
+      "Nagpur"
+     ],
+     "halfway": {
+      "name": "Malegaon",
+      "km": 530
+     }
+    },
+    "pune": {
+     "km": 969,
+     "hours": 11.83,
+     "through": [
+      "Chhatrapati Sambhajinagar",
+      "Karanja",
+      "Bhandara"
+     ],
+     "halfway": {
+      "name": "Karanja",
+      "km": 484
+     }
+    },
+    "bengaluru": {
+     "km": 1312,
+     "hours": 16.46,
+     "through": [
+      "Kurnool",
+      "Bhongiri",
+      "Chamorshi"
+     ],
+     "halfway": {
+      "name": "Bhongiri",
+      "km": 656
+     }
+    },
+    "hyderabad": {
+     "km": 735,
+     "hours": 9.14,
+     "through": [
+      "Parkal",
+      "Aheri",
+      "Manpur"
+     ],
+     "halfway": {
+      "name": "Aheri",
+      "km": 368
+     }
+    },
+    "chennai": {
+     "km": 1178,
+     "hours": 14.57,
+     "through": [
+      "Ongole",
+      "Kothagudem",
+      "Jagdalpur"
+     ],
+     "halfway": {
+      "name": "Kothagudem",
+      "km": 589
+     }
+    },
+    "kolkata": {
+     "km": 829,
+     "hours": 9.99,
+     "through": [
+      "Jharpokharia",
+      "Palalahada",
+      "Sohela"
+     ],
+     "halfway": {
+      "name": "Palalahada",
+      "km": 414
+     }
+    },
+    "guwahati": {
+     "km": 1612,
+     "hours": 19.58,
+     "via": [
+      "Siliguri",
+      "Purnia"
+     ]
+    }
+   },
+   "back": {
+    "delhi": {
+     "km": 1459,
+     "hours": 18.08,
+     "through": [
+      "Simga",
+      "Tendukheda",
+      "Chinour"
+     ],
+     "halfway": {
+      "name": "Tendukheda",
+      "km": 730
+     }
+    },
+    "chandigarh": {
+     "km": 1719,
+     "hours": 21.2
+    },
+    "jaipur": {
+     "km": 1450,
+     "hours": 17.76,
+     "through": [
+      "Armori",
+      "Shahpur",
+      "Jhalrapatan"
+     ],
+     "halfway": {
+      "name": "Shahpur",
+      "km": 725
+     }
+    },
+    "lucknow": {
+     "km": 1122,
+     "hours": 14.29,
+     "through": [
+      "Kurud",
+      "Bajag",
+      "Mangawan"
+     ],
+     "halfway": {
+      "name": "Bajag",
+      "km": 561
+     }
+    },
+    "ahmedabad": {
+     "km": 1349,
+     "hours": 16.72,
+     "through": [
+      "Gadchiroli",
+      "Betul",
+      "Dhar"
+     ],
+     "halfway": {
+      "name": "Betul",
+      "km": 674
+     }
+    },
+    "mumbai": {
+     "km": 1178,
+     "hours": 14.04,
+     "through": [
+      "Chennur",
+      "Bhokar",
+      "Pathardi"
+     ],
+     "halfway": {
+      "name": "Bhokar",
+      "km": 589
+     }
+    },
+    "pune": {
+     "km": 1031,
+     "hours": 12.35,
+     "through": [
+      "Sironcha",
+      "Yedapally",
+      "Dharashiv"
+     ],
+     "halfway": {
+      "name": "Yedapally",
+      "km": 516
+     }
+    },
+    "bengaluru": {
+     "km": 1021,
+     "hours": 13.08,
+     "through": [
+      "Kothagudem",
+      "Savalyapuram",
+      "Chinthakommadinne"
+     ],
+     "halfway": {
+      "name": "Savalyapuram",
+      "km": 510
+     }
+    },
+    "hyderabad": {
+     "km": 548,
+     "hours": 6.71,
+     "through": [
+      "Bijapur",
+      "Mahadevpur",
+      "Khaazipet"
+     ],
+     "halfway": {
+      "name": "Mahadevpur",
+      "km": 274
+     }
+    },
+    "chennai": {
+     "km": 858,
+     "hours": 10.78,
+     "through": [
+      "Etapaka",
+      "Guntur",
+      "Dagadarthi"
+     ],
+     "halfway": {
+      "name": "Guntur",
+      "km": 429
+     }
+    },
+    "kolkata": {
+     "km": 1007,
+     "hours": 12.13,
+     "through": [
+      "Kesinga",
+      "Reamal",
+      "Bisoi"
+     ],
+     "halfway": {
+      "name": "Reamal",
+      "km": 504
+     }
+    },
+    "guwahati": {
+     "km": 1903,
+     "hours": 23.43,
+     "via": [
+      "Purnia",
+      "Siliguri"
+     ]
+    }
+   },
+   "after": []
+  },
+  "chopta-tungnath": {
+   "start": "Rishikesh",
+   "end": "Gopeshwar",
+   "round_trip": false,
+   "to": {
+    "delhi": {
+     "km": 248,
+     "hours": 3.42,
+     "through": [
+      "Baghpat",
+      "Muzaffarnagar",
+      "Laksar"
+     ],
+     "halfway": {
+      "name": "Muzaffarnagar",
+      "km": 124
+     }
+    },
+    "chandigarh": {
+     "km": 205,
+     "hours": 3.16,
+     "through": [
+      "Shahzadpur",
+      "Paonta Sahib",
+      "Vikasnagar"
+     ],
+     "halfway": {
+      "name": "Paonta Sahib",
+      "km": 102
+     }
+    },
+    "jaipur": {
+     "km": 536,
+     "hours": 6.64,
+     "through": [
+      "Lachhmangarh",
+      "Faridabad",
+      "Shamli"
+     ],
+     "halfway": {
+      "name": "Faridabad",
+      "km": 268
+     }
+    },
+    "lucknow": {
+     "km": 528,
+     "hours": 6.87,
+     "through": [
+      "Shahabad",
+      "Bareilly",
+      "Dhampur"
+     ],
+     "halfway": {
+      "name": "Bareilly",
+      "km": 264
+     }
+    },
+    "ahmedabad": {
+     "km": 1213,
+     "hours": 14.24,
+     "through": [
+      "Jaora",
+      "Digod",
+      "Nuh"
+     ],
+     "halfway": {
+      "name": "Digod",
+      "km": 606
+     }
+    },
+    "mumbai": {
+     "km": 1567,
+     "hours": 18.29
+    },
+    "pune": {
+     "km": 1572,
+     "hours": 19.2
+    },
+    "bengaluru": {
+     "km": 2270,
+     "hours": 27.61
+    },
+    "hyderabad": {
+     "km": 1760,
+     "hours": 21.97
+    },
+    "chennai": {
+     "km": 2352,
+     "hours": 29.28
+    },
+    "kolkata": {
+     "km": 1526,
+     "hours": 18.38
+    },
+    "guwahati": {
+     "km": 1867,
+     "hours": 23.12,
+     "via": [
+      "Purnia"
+     ]
+    }
+   },
+   "back": {
+    "delhi": {
+     "km": 532,
+     "hours": 7.73,
+     "through": [
+      "Ghansali",
+      "Dehradun",
+      "Shamli"
+     ],
+     "halfway": {
+      "name": "Dehradun",
+      "km": 266
+     }
+    },
+    "chandigarh": {
+     "km": 471,
+     "hours": 7.28,
+     "through": [
+      "Jakholi",
+      "Dhanaulti",
+      "Paonta Sahib"
+     ],
+     "halfway": {
+      "name": "Dhanaulti",
+      "km": 236
+     }
+    },
+    "jaipur": {
+     "km": 825,
+     "hours": 11.16,
+     "through": [
+      "Dehradun",
+      "Baghpat",
+      "Rewari"
+     ],
+     "halfway": {
+      "name": "Baghpat",
+      "km": 412
+     }
+    },
+    "lucknow": {
+     "km": 625,
+     "hours": 9.86,
+     "through": [
+      "Kosya Kutauli",
+      "Pilibhit",
+      "Shahabad"
+     ],
+     "halfway": {
+      "name": "Pilibhit",
+      "km": 312
+     }
+    },
+    "ahmedabad": {
+     "km": 1501,
+     "hours": 18.55
+    },
+    "mumbai": {
+     "km": 1853,
+     "hours": 22.55
+    },
+    "pune": {
+     "km": 1855,
+     "hours": 23.31
+    },
+    "bengaluru": {
+     "km": 2556,
+     "hours": 31.78
+    },
+    "hyderabad": {
+     "km": 1857,
+     "hours": 24.99
+    },
+    "chennai": {
+     "km": 2443,
+     "hours": 32.14
+    },
+    "kolkata": {
+     "km": 1616,
+     "hours": 21.27
+    },
+    "guwahati": {
+     "km": 1946,
+     "hours": 25.93,
+     "via": [
+      "Lakhimpur",
+      "Purnia"
+     ]
+    }
+   },
+   "after": []
+  },
+  "darcha-shinku-la-padum": {
+   "start": "Darcha",
+   "end": "Padum",
+   "round_trip": false,
+   "to": {
+    "delhi": {
+     "km": 633,
+     "hours": 8.51,
+     "through": [
+      "Karnal",
+      "Morinda",
+      "Mandi"
+     ],
+     "halfway": {
+      "name": "Morinda",
+      "km": 316
+     }
+    },
+    "chandigarh": {
+     "km": 370,
+     "hours": 5.34,
+     "through": [
+      "Bilaspur",
+      "Mandi",
+      "Manali"
+     ],
+     "halfway": {
+      "name": "Mandi",
+      "km": 185
+     }
+    },
+    "jaipur": {
+     "km": 847,
+     "hours": 11.17,
+     "through": [
+      "Mahendragarh",
+      "Fatehpur Pundri",
+      "Bilaspur"
+     ],
+     "halfway": {
+      "name": "Fatehpur Pundri",
+      "km": 424
+     }
+    },
+    "lucknow": {
+     "km": 1073,
+     "hours": 13.36,
+     "through": [
+      "Budaun",
+      "Shamli",
+      "Nalagarh"
+     ],
+     "halfway": {
+      "name": "Shamli",
+      "km": 536
+     }
+    },
+    "ahmedabad": {
+     "km": 1482,
+     "hours": 18.71,
+     "through": [
+      "Sanchore",
+      "Lunkaransar",
+      "Moga"
+     ],
+     "halfway": {
+      "name": "Lunkaransar",
+      "km": 741
+     }
+    },
+    "mumbai": {
+     "km": 1962,
+     "hours": 23.33
+    },
+    "pune": {
+     "km": 1967,
+     "hours": 24.25
+    },
+    "bengaluru": {
+     "km": 2664,
+     "hours": 32.66
+    },
+    "hyderabad": {
+     "km": 2168,
+     "hours": 27.59
+    },
+    "chennai": {
+     "km": 2743,
+     "hours": 35.22
+    },
+    "kolkata": {
+     "km": 2058,
+     "hours": 24.79
+    },
+    "guwahati": {
+     "km": 2448,
+     "hours": 29.56,
+     "via": [
+      "Purnia"
+     ]
+    }
+   },
+   "back": {
+    "delhi": {
+     "km": 760,
+     "hours": 13.04,
+     "through": [
+      "Lahaul",
+      "Anandpur Sahib",
+      "Kurukshetra"
+     ],
+     "halfway": {
+      "name": "Anandpur Sahib",
+      "km": 380
+     }
+    },
+    "chandigarh": {
+     "km": 497,
+     "hours": 9.89,
+     "through": [
+      "Lahaul",
+      "Manali",
+      "Sundarnagar"
+     ],
+     "halfway": {
+      "name": "Manali",
+      "km": 248
+     }
+    },
+    "jaipur": {
+     "km": 976,
+     "hours": 15.8,
+     "through": [
+      "Bhuntar",
+      "Ambala",
+      "Narnaul"
+     ],
+     "halfway": {
+      "name": "Ambala",
+      "km": 488
+     }
+    },
+    "lucknow": {
+     "km": 1200,
+     "hours": 17.88,
+     "through": [
+      "Mandi",
+      "Saharanpur",
+      "Shahjahanpur"
+     ],
+     "halfway": {
+      "name": "Saharanpur",
+      "km": 600
+     }
+    },
+    "ahmedabad": {
+     "km": 1621,
+     "hours": 23.26
+    },
+    "mumbai": {
+     "km": 2085,
+     "hours": 27.74
+    },
+    "pune": {
+     "km": 2087,
+     "hours": 28.5
+    },
+    "bengaluru": {
+     "km": 2788,
+     "hours": 36.98
+    },
+    "hyderabad": {
+     "km": 2295,
+     "hours": 31.94
+    },
+    "chennai": {
+     "km": 2958,
+     "hours": 39.35
+    },
+    "kolkata": {
+     "km": 2164,
+     "hours": 28.94
+    },
+    "guwahati": {
+     "km": 2538,
+     "hours": 34.18,
+     "via": [
+      "Purnia"
+     ]
+    }
+   },
+   "after": []
+  },
+  "darjeeling-kalimpong-sandakphu": {
+   "start": "Siliguri",
+   "end": "Kalimpong",
+   "round_trip": false,
+   "to": {
+    "delhi": {
+     "km": 1426,
+     "hours": 17.22,
+     "through": [
+      "Sawayajpur",
+      "Khalilabad",
+      "Darbhanga"
+     ],
+     "via": [
+      "Purnia"
+     ],
+     "halfway": {
+      "name": "Khalilabad",
+      "km": 713
+     }
+    },
+    "chandigarh": {
+     "km": 1619,
+     "hours": 19.79,
+     "via": [
+      "Purnia"
+     ]
+    },
+    "jaipur": {
+     "km": 1508,
+     "hours": 18.5,
+     "via": [
+      "Purnia"
+     ]
+    },
+    "lucknow": {
+     "km": 938,
+     "hours": 11.59,
+     "through": [
+      "Khalilabad",
+      "Mehsi",
+      "Banmankhi"
+     ],
+     "via": [
+      "Purnia"
+     ],
+     "halfway": {
+      "name": "Mehsi",
+      "km": 469
+     }
+    },
+    "ahmedabad": {
+     "km": 2033,
+     "hours": 24.58,
+     "via": [
+      "Purnia"
+     ]
+    },
+    "mumbai": {
+     "km": 2214,
+     "hours": 26.29,
+     "via": [
+      "Purnia"
+     ]
+    },
+    "pune": {
+     "km": 2123,
+     "hours": 25.65,
+     "via": [
+      "Purnia"
+     ]
+    },
+    "bengaluru": {
+     "km": 2322,
+     "hours": 29.07
+    },
+    "hyderabad": {
+     "km": 1925,
+     "hours": 23.54,
+     "via": [
+      "Purnia"
+     ]
+    },
+    "chennai": {
+     "km": 2159,
+     "hours": 26.89
+    },
+    "kolkata": {
+     "km": 582,
+     "hours": 7.47,
+     "through": [
+      "Kaliganj",
+      "Farakka",
+      "Karandighi"
+     ],
+     "halfway": {
+      "name": "Farakka",
+      "km": 291
+     }
+    },
+    "guwahati": {
+     "km": 419,
+     "hours": 5.09,
+     "through": [
+      "Barnagar",
+      "Dotoma",
+      "Falakata"
+     ],
+     "halfway": {
+      "name": "Dotoma",
+      "km": 210
+     }
+    }
+   },
+   "back": {
+    "delhi": {
+     "km": 1523,
+     "hours": 17.79,
+     "via": [
+      "Purnia"
+     ]
+    },
+    "chandigarh": {
+     "km": 1749,
+     "hours": 20.41,
+     "via": [
+      "Purnia"
+     ]
+    },
+    "jaipur": {
+     "km": 1613,
+     "hours": 19.29,
+     "via": [
+      "Purnia"
+     ]
+    },
+    "lucknow": {
+     "km": 1033,
+     "hours": 12.25,
+     "through": [
+      "Korha",
+      "Fatwah",
+      "Sagri"
+     ],
+     "via": [
+      "Purnia"
+     ],
+     "halfway": {
+      "name": "Fatwah",
+      "km": 516
+     }
+    },
+    "ahmedabad": {
+     "km": 2096,
+     "hours": 25.3,
+     "via": [
+      "Purnia"
+     ]
+    },
+    "mumbai": {
+     "km": 2270,
+     "hours": 26.58,
+     "via": [
+      "Purnia"
+     ]
+    },
+    "pune": {
+     "km": 2172,
+     "hours": 25.97,
+     "via": [
+      "Purnia"
+     ]
+    },
+    "bengaluru": {
+     "km": 2382,
+     "hours": 29.63
+    },
+    "hyderabad": {
+     "km": 1988,
+     "hours": 24.28,
+     "via": [
+      "Purnia"
+     ]
+    },
+    "chennai": {
+     "km": 2232,
+     "hours": 27.3
+    },
+    "kolkata": {
+     "km": 636,
+     "hours": 8.27,
+     "through": [
+      "Kishanganj",
+      "Old Maldah",
+      "Kaliganj"
+     ],
+     "halfway": {
+      "name": "Old Maldah",
+      "km": 318
+     }
+    },
+    "guwahati": {
+     "km": 471,
+     "hours": 5.67,
+     "through": [
+      "Dhupguri",
+      "Gossaigaon",
+      "Barnagar"
+     ],
+     "halfway": {
+      "name": "Gossaigaon",
+      "km": 236
+     }
+    }
+   },
+   "after": []
+  },
+  "dharamshala-bir-billing": {
+   "start": "Dharamshala",
+   "end": "Billing",
+   "round_trip": false,
+   "to": {
+    "delhi": {
+     "km": 503,
+     "hours": 7.09,
+     "through": [
+      "Panipat",
+      "Ambala",
+      "Anandpur Sahib"
+     ],
+     "halfway": {
+      "name": "Ambala",
+      "km": 252
+     }
+    },
+    "chandigarh": {
+     "km": 241,
+     "hours": 3.91,
+     "through": [
+      "Rupnagar",
+      "Una",
+      "Rakkar"
+     ],
+     "halfway": {
+      "name": "Una",
+      "km": 120
+     }
+    },
+    "jaipur": {
+     "km": 717,
+     "hours": 9.75,
+     "through": [
+      "Narnaul",
+      "Alewa",
+      "Rupnagar"
+     ],
+     "halfway": {
+      "name": "Alewa",
+      "km": 358
+     }
+    },
+    "lucknow": {
+     "km": 944,
+     "hours": 11.93,
+     "through": [
+      "Tilhar",
+      "Meerut",
+      "Shahzadpur"
+     ],
+     "halfway": {
+      "name": "Meerut",
+      "km": 472
+     }
+    },
+    "ahmedabad": {
+     "km": 1299,
+     "hours": 16.37,
+     "through": [
+      "Sanchore",
+      "Bap",
+      "Bathinda"
+     ],
+     "halfway": {
+      "name": "Bap",
+      "km": 650
+     }
+    },
+    "mumbai": {
+     "km": 1832,
+     "hours": 21.91
+    },
+    "pune": {
+     "km": 1837,
+     "hours": 22.82
+    },
+    "bengaluru": {
+     "km": 2535,
+     "hours": 31.23
+    },
+    "hyderabad": {
+     "km": 2038,
+     "hours": 26.17
+    },
+    "chennai": {
+     "km": 2613,
+     "hours": 33.8
+    },
+    "kolkata": {
+     "km": 1928,
+     "hours": 23.36
+    },
+    "guwahati": {
+     "km": 2319,
+     "hours": 28.13,
+     "via": [
+      "Purnia"
+     ]
+    }
+   },
+   "back": {
+    "delhi": {
+     "km": 496,
+     "hours": 7.64,
+     "through": [
+      "Anandpur Sahib",
+      "Ambala",
+      "Panipat"
+     ],
+     "halfway": {
+      "name": "Ambala",
+      "km": 248
+     }
+    },
+    "chandigarh": {
+     "km": 233,
+     "hours": 4.5,
+     "through": [
+      "Sarkaghat",
+      "Bilaspur",
+      "Nalagarh"
+     ],
+     "halfway": {
+      "name": "Bilaspur",
+      "km": 116
+     }
+    },
+    "jaipur": {
+     "km": 712,
+     "hours": 10.4,
+     "through": [
+      "Kalka",
+      "Fatehpur Pundri",
+      "Narnaul"
+     ],
+     "halfway": {
+      "name": "Fatehpur Pundri",
+      "km": 356
+     }
+    },
+    "lucknow": {
+     "km": 937,
+     "hours": 12.49,
+     "through": [
+      "Saha",
+      "Meerut",
+      "Tilhar"
+     ],
+     "halfway": {
+      "name": "Meerut",
+      "km": 468
+     }
+    },
+    "ahmedabad": {
+     "km": 1358,
+     "hours": 17.86,
+     "through": [
+      "Bathinda",
+      "Bap",
+      "Sanchore"
+     ],
+     "halfway": {
+      "name": "Bap",
+      "km": 679
+     }
+    },
+    "mumbai": {
+     "km": 1821,
+     "hours": 22.35
+    },
+    "pune": {
+     "km": 1823,
+     "hours": 23.11
+    },
+    "bengaluru": {
+     "km": 2524,
+     "hours": 31.58
+    },
+    "hyderabad": {
+     "km": 2031,
+     "hours": 26.55
+    },
+    "chennai": {
+     "km": 2695,
+     "hours": 33.96
+    },
+    "kolkata": {
+     "km": 1901,
+     "hours": 23.54
+    },
+    "guwahati": {
+     "km": 2274,
+     "hours": 28.79,
+     "via": [
+      "Purnia"
+     ]
+    }
+   },
+   "after": []
+  },
+  "east-coast": {
+   "start": "Chennai",
+   "end": "Dhanushkodi",
+   "round_trip": false,
+   "to": {
+    "delhi": {
+     "km": 2101,
+     "hours": 26.43
+    },
+    "chandigarh": {
+     "km": 2464,
+     "hours": 29.55
+    },
+    "jaipur": {
+     "km": 2013,
+     "hours": 24.63
+    },
+    "lucknow": {
+     "km": 1883,
+     "hours": 23.05
+    },
+    "ahmedabad": {
+     "km": 1677,
+     "hours": 20.16
+    },
+    "mumbai": {
+     "km": 1225,
+     "hours": 14.95,
+     "through": [
+      "Malshiras",
+      "Kushtagi",
+      "Kondapuram"
+     ],
+     "halfway": {
+      "name": "Kushtagi",
+      "km": 612
+     }
+    },
+    "pune": {
+     "km": 1082,
+     "hours": 13.04,
+     "through": [
+      "Jat",
+      "Hosapete",
+      "Kadapa"
+     ],
+     "halfway": {
+      "name": "Hosapete",
+      "km": 541
+     }
+    },
+    "bengaluru": {
+     "km": 326,
+     "hours": 4.03,
+     "through": [
+      "Kolar Gold Field",
+      "Katpadi",
+      "Kanchipuram"
+     ],
+     "halfway": {
+      "name": "Katpadi",
+      "km": 163
+     }
+    },
+    "hyderabad": {
+     "km": 623,
+     "hours": 7.94,
+     "through": [
+      "Damaracherla",
+      "Ongole",
+      "Venkatachalam"
+     ],
+     "halfway": {
+      "name": "Ongole",
+      "km": 312
+     }
+    },
+    "chennai": {
+     "km": 0,
+     "hours": 0.0,
+     "through": []
+    },
+    "kolkata": {
+     "km": 1676,
+     "hours": 20.25
+    },
+    "guwahati": {
+     "km": 2588,
+     "hours": 31.59,
+     "via": [
+      "Siliguri"
+     ]
+    }
+   },
+   "back": {
+    "delhi": {
+     "km": 2605,
+     "hours": 32.11
+    },
+    "chandigarh": {
+     "km": 2875,
+     "hours": 35.18
+    },
+    "jaipur": {
+     "km": 2424,
+     "hours": 30.22
+    },
+    "lucknow": {
+     "km": 2446,
+     "hours": 30.54
+    },
+    "ahmedabad": {
+     "km": 2002,
+     "hours": 25.01
+    },
+    "mumbai": {
+     "km": 1561,
+     "hours": 19.81
+    },
+    "pune": {
+     "km": 1416,
+     "hours": 17.88,
+     "through": [
+      "Namakkal",
+      "Sira",
+      "Mangalvedhe"
+     ],
+     "halfway": {
+      "name": "Sira",
+      "km": 708
+     }
+    },
+    "bengaluru": {
+     "km": 571,
+     "hours": 8.01,
+     "through": [
+      "Tiruvadanai",
+      "Thottiyam",
+      "Nallampalli"
+     ],
+     "halfway": {
+      "name": "Thottiyam",
+      "km": 286
+     }
+    },
+    "hyderabad": {
+     "km": 1126,
+     "hours": 14.71,
+     "through": [
+      "Manachanallur",
+      "Puthalapattu",
+      "Nandyal"
+     ],
+     "halfway": {
+      "name": "Puthalapattu",
+      "km": 563
+     }
+    },
+    "chennai": {
+     "km": 575,
+     "hours": 7.73,
+     "through": [
+      "Karaikudi",
+      "Veppanthattai",
+      "Tindivanam"
+     ],
+     "halfway": {
+      "name": "Veppanthattai",
+      "km": 288
+     }
+    },
+    "kolkata": {
+     "km": 2245,
+     "hours": 28.06
+    },
+    "guwahati": {
+     "km": 3156,
+     "hours": 39.4,
+     "via": [
+      "Siliguri"
+     ]
+    }
+   },
+   "after": []
+  },
+  "east-sikkim-silk-route": {
+   "start": "Gangtok",
+   "end": "Rongli",
+   "round_trip": true,
+   "to": {
+    "delhi": {
+     "km": 1533,
+     "hours": 18.55,
+     "via": [
+      "Purnia"
+     ]
+    },
+    "chandigarh": {
+     "km": 1726,
+     "hours": 21.12,
+     "via": [
+      "Purnia"
+     ]
+    },
+    "jaipur": {
+     "km": 1615,
+     "hours": 19.83,
+     "via": [
+      "Purnia"
+     ]
+    },
+    "lucknow": {
+     "km": 1045,
+     "hours": 12.92,
+     "through": [
+      "Gorakhpur",
+      "Bochaha",
+      "Dagarua"
+     ],
+     "via": [
+      "Purnia"
+     ],
+     "halfway": {
+      "name": "Bochaha",
+      "km": 522
+     }
+    },
+    "ahmedabad": {
+     "km": 2140,
+     "hours": 25.91,
+     "via": [
+      "Purnia"
+     ]
+    },
+    "mumbai": {
+     "km": 2321,
+     "hours": 27.63,
+     "via": [
+      "Purnia"
+     ]
+    },
+    "pune": {
+     "km": 2230,
+     "hours": 26.98,
+     "via": [
+      "Purnia"
+     ]
+    },
+    "bengaluru": {
+     "km": 2429,
+     "hours": 30.4
+    },
+    "hyderabad": {
+     "km": 2032,
+     "hours": 24.87,
+     "via": [
+      "Purnia"
+     ]
+    },
+    "chennai": {
+     "km": 2266,
+     "hours": 28.22
+    },
+    "kolkata": {
+     "km": 689,
+     "hours": 8.8,
+     "through": [
+      "Beldanga",
+      "Old Maldah",
+      "Islampur"
+     ],
+     "halfway": {
+      "name": "Old Maldah",
+      "km": 344
+     }
+    },
+    "guwahati": {
+     "km": 518,
+     "hours": 6.26,
+     "through": [
+      "Barnagar",
+      "Tufanganj",
+      "Nagrakata"
+     ],
+     "halfway": {
+      "name": "Tufanganj",
+      "km": 259
+     }
+    }
+   },
+   "back": {},
+   "after": []
+  },
+  "goa-gokarna-karnataka-coast": {
+   "start": "Panaji",
+   "end": "Mangaluru",
+   "round_trip": false,
+   "to": {
+    "delhi": {
+     "km": 1726,
+     "hours": 20.61
+    },
+    "chandigarh": {
+     "km": 1988,
+     "hours": 23.58
+    },
+    "jaipur": {
+     "km": 1537,
+     "hours": 18.65
+    },
+    "lucknow": {
+     "km": 1826,
+     "hours": 21.78
+    },
+    "ahmedabad": {
+     "km": 1035,
+     "hours": 12.69,
+     "through": [
+      "Gandevi",
+      "Panvel",
+      "Sangameshwar"
+     ],
+     "halfway": {
+      "name": "Panvel",
+      "km": 518
+     }
+    },
+    "mumbai": {
+     "km": 541,
+     "hours": 6.88,
+     "through": [
+      "Mahad",
+      "Sangameshwar",
+      "Kankavli"
+     ],
+     "halfway": {
+      "name": "Sangameshwar",
+      "km": 270
+     }
+    },
+    "pune": {
+     "km": 472,
+     "hours": 5.91,
+     "through": [
+      "Phaltan",
+      "Sangli",
+      "Gadhinglaj"
+     ],
+     "halfway": {
+      "name": "Sangli",
+      "km": 236
+     }
+    },
+    "bengaluru": {
+     "km": 600,
+     "hours": 7.68,
+     "through": [
+      "Hiriyuru",
+      "Ranebennur",
+      "Dharwad"
+     ],
+     "halfway": {
+      "name": "Ranebennur",
+      "km": 300
+     }
+    },
+    "hyderabad": {
+     "km": 674,
+     "hours": 8.82,
+     "through": [
+      "Sedam",
+      "Devara Hipparagi",
+      "Chikodi"
+     ],
+     "halfway": {
+      "name": "Devara Hipparagi",
+      "km": 337
+     }
+    },
+    "chennai": {
+     "km": 902,
+     "hours": 11.28,
+     "through": [
+      "Vontimitta",
+      "Guntakal",
+      "Annigeri"
+     ],
+     "halfway": {
+      "name": "Guntakal",
+      "km": 451
+     }
+    },
+    "kolkata": {
+     "km": 2131,
+     "hours": 25.78
+    },
+    "guwahati": {
+     "km": 2856,
+     "hours": 34.37,
+     "via": [
+      "Purnia"
+     ]
+    }
+   },
+   "back": {
+    "delhi": {
+     "km": 2054,
+     "hours": 25.15
+    },
+    "chandigarh": {
+     "km": 2324,
+     "hours": 28.23
+    },
+    "jaipur": {
+     "km": 1873,
+     "hours": 23.26
+    },
+    "lucknow": {
+     "km": 2083,
+     "hours": 25.59
+    },
+    "ahmedabad": {
+     "km": 1387,
+     "hours": 18.02,
+     "through": [
+      "Bardez",
+      "Mahad",
+      "Valsad"
+     ],
+     "halfway": {
+      "name": "Mahad",
+      "km": 694
+     }
+    },
+    "mumbai": {
+     "km": 901,
+     "hours": 12.18,
+     "through": [
+      "Kumata",
+      "Kudal",
+      "Khed"
+     ],
+     "halfway": {
+      "name": "Kudal",
+      "km": 450
+     }
+    },
+    "pune": {
+     "km": 803,
+     "hours": 10.28,
+     "through": [
+      "Kumata",
+      "Kitturu",
+      "Khanapur"
+     ],
+     "halfway": {
+      "name": "Kitturu",
+      "km": 402
+     }
+    },
+    "bengaluru": {
+     "km": 363,
+     "hours": 4.81,
+     "through": [
+      "Kadaba",
+      "Hasana",
+      "Gubbi"
+     ],
+     "halfway": {
+      "name": "Hasana",
+      "km": 182
+     }
+    },
+    "hyderabad": {
+     "km": 788,
+     "hours": 9.98,
+     "through": [
+      "Ajjampura",
+      "D Hirehal",
+      "Krishna"
+     ],
+     "halfway": {
+      "name": "D Hirehal",
+      "km": 394
+     }
+    },
+    "chennai": {
+     "km": 689,
+     "hours": 8.58,
+     "through": [
+      "Hassan",
+      "Doddaballapura",
+      "Gudiyatham"
+     ],
+     "halfway": {
+      "name": "Doddaballapura",
+      "km": 344
+     }
+    },
+    "kolkata": {
+     "km": 2146,
+     "hours": 26.23
+    },
+    "guwahati": {
+     "km": 3057,
+     "hours": 37.56,
+     "via": [
+      "Siliguri"
+     ]
+    }
+   },
+   "after": [
+    "konkan-coast"
+   ]
+  },
+  "golden-quadrilateral": {
+   "start": "Delhi",
+   "end": "Delhi",
+   "round_trip": true,
+   "to": {
+    "delhi": {
+     "km": 5,
+     "hours": 0.14,
+     "through": [
+      "New Delhi"
+     ],
+     "halfway": {
+      "name": "New Delhi",
+      "km": 2
+     }
+    },
+    "chandigarh": {
+     "km": 269,
+     "hours": 3.36,
+     "through": [
+      "Ambala",
+      "Karnal",
+      "Sonipat"
+     ],
+     "halfway": {
+      "name": "Karnal",
+      "km": 134
+     }
+    },
+    "jaipur": {
+     "km": 294,
+     "hours": 3.4,
+     "through": [
+      "Dausa",
+      "Lachhmangarh",
+      "Nuh"
+     ],
+     "halfway": {
+      "name": "Lachhmangarh",
+      "km": 147
+     }
+    },
+    "lucknow": {
+     "km": 494,
+     "hours": 5.67,
+     "through": [
+      "Sawayajpur",
+      "Budaun",
+      "Hasanpur"
+     ],
+     "halfway": {
+      "name": "Budaun",
+      "km": 247
+     }
+    },
+    "ahmedabad": {
+     "km": 971,
+     "hours": 11.01,
+     "through": [
+      "Thandla",
+      "Bhanpura",
+      "Dausa"
+     ],
+     "halfway": {
+      "name": "Bhanpura",
+      "km": 486
+     }
+    },
+    "mumbai": {
+     "km": 1325,
+     "hours": 15.05,
+     "through": [
+      "Bharuch",
+      "Jaora",
+      "Lalsot"
+     ],
+     "halfway": {
+      "name": "Jaora",
+      "km": 662
+     }
+    },
+    "pune": {
+     "km": 1330,
+     "hours": 15.97,
+     "through": [
+      "Dhule",
+      "Indore",
+      "Lalsot"
+     ],
+     "halfway": {
+      "name": "Indore",
+      "km": 665
+     }
+    },
+    "bengaluru": {
+     "km": 2028,
+     "hours": 24.38
+    },
+    "hyderabad": {
+     "km": 1531,
+     "hours": 19.31
+    },
+    "chennai": {
+     "km": 2116,
+     "hours": 26.89
+    },
+    "kolkata": {
+     "km": 1478,
+     "hours": 17.1,
+     "through": [
+      "Barkatha",
+      "Aurai",
+      "Sawayajpur"
+     ],
+     "halfway": {
+      "name": "Aurai",
+      "km": 739
+     }
+    },
+    "guwahati": {
+     "km": 1869,
+     "hours": 21.87,
+     "via": [
+      "Purnia"
+     ]
+    }
+   },
+   "back": {},
+   "after": []
+  },
+  "gurez-valley": {
+   "start": "Srinagar",
+   "end": "Dawar",
+   "round_trip": false,
+   "to": {
+    "delhi": {
+     "km": 807,
+     "hours": 10.86,
+     "through": [
+      "Kurukshetra",
+      "Jalandhar",
+      "Samba"
+     ],
+     "halfway": {
+      "name": "Jalandhar",
+      "km": 404
+     }
+    },
+    "chandigarh": {
+     "km": 551,
+     "hours": 7.93,
+     "through": [
+      "Hoshiarpur",
+      "Kathua",
+      "Ramban"
+     ],
+     "halfway": {
+      "name": "Kathua",
+      "km": 276
+     }
+    },
+    "jaipur": {
+     "km": 980,
+     "hours": 13.19,
+     "through": [
+      "Dadri",
+      "Dhuri",
+      "Kathua"
+     ],
+     "halfway": {
+      "name": "Dhuri",
+      "km": 490
+     }
+    },
+    "lucknow": {
+     "km": 1227,
+     "hours": 15.87,
+     "through": [
+      "Hasanpur",
+      "Karnal",
+      "Indora"
+     ],
+     "halfway": {
+      "name": "Karnal",
+      "km": 614
+     }
+    },
+    "ahmedabad": {
+     "km": 1519,
+     "hours": 19.46
+    },
+    "mumbai": {
+     "km": 2094,
+     "hours": 25.31
+    },
+    "pune": {
+     "km": 2099,
+     "hours": 26.23
+    },
+    "bengaluru": {
+     "km": 2797,
+     "hours": 34.64
+    },
+    "hyderabad": {
+     "km": 2300,
+     "hours": 29.57
+    },
+    "chennai": {
+     "km": 2970,
+     "hours": 37.22
+    },
+    "kolkata": {
+     "km": 2212,
+     "hours": 27.29
+    },
+    "guwahati": {
+     "km": 2602,
+     "hours": 32.06,
+     "via": [
+      "Purnia"
+     ]
+    }
+   },
+   "back": {
+    "delhi": {
+     "km": 1067,
+     "hours": 14.46,
+     "through": [
+      "Nowshehra",
+      "Dasua",
+      "Ambala"
+     ],
+     "halfway": {
+      "name": "Dasua",
+      "km": 534
+     }
+    },
+    "chandigarh": {
+     "km": 811,
+     "hours": 11.49,
+     "through": [
+      "Surankote",
+      "Jammu",
+      "Dasua"
+     ],
+     "halfway": {
+      "name": "Jammu",
+      "km": 406
+     }
+    },
+    "jaipur": {
+     "km": 1243,
+     "hours": 16.9,
+     "through": [
+      "Reasi",
+      "Phagwara",
+      "Phillukhera"
+     ],
+     "halfway": {
+      "name": "Phagwara",
+      "km": 622
+     }
+    },
+    "lucknow": {
+     "km": 1483,
+     "hours": 19.44,
+     "through": [
+      "Samba",
+      "Ambala",
+      "Hasanpur"
+     ],
+     "halfway": {
+      "name": "Ambala",
+      "km": 742
+     }
+    },
+    "ahmedabad": {
+     "km": 1778,
+     "hours": 23.04
+    },
+    "mumbai": {
+     "km": 2351,
+     "hours": 28.81
+    },
+    "pune": {
+     "km": 2353,
+     "hours": 29.58
+    },
+    "bengaluru": {
+     "km": 3054,
+     "hours": 38.05
+    },
+    "hyderabad": {
+     "km": 2561,
+     "hours": 33.02
+    },
+    "chennai": {
+     "km": 3225,
+     "hours": 40.43
+    },
+    "kolkata": {
+     "km": 2447,
+     "hours": 30.49
+    },
+    "guwahati": {
+     "km": 2821,
+     "hours": 35.74,
+     "via": [
+      "Purnia"
+     ]
+    }
+   },
+   "after": []
+  },
+  "guwahati-tawang": {
+   "start": "Guwahati",
+   "end": "Tawang",
+   "round_trip": false,
+   "to": {
+    "delhi": {
+     "km": 1832,
+     "hours": 22.03,
+     "via": [
+      "Purnia"
+     ]
+    },
+    "chandigarh": {
+     "km": 2024,
+     "hours": 24.6,
+     "via": [
+      "Purnia"
+     ]
+    },
+    "jaipur": {
+     "km": 1913,
+     "hours": 23.3,
+     "via": [
+      "Purnia"
+     ]
+    },
+    "lucknow": {
+     "km": 1343,
+     "hours": 16.39,
+     "through": [
+      "Kasya",
+      "Madhepura",
+      "Dhupguri"
+     ],
+     "via": [
+      "Purnia"
+     ],
+     "halfway": {
+      "name": "Madhepura",
+      "km": 672
+     }
+    },
+    "ahmedabad": {
+     "km": 2439,
+     "hours": 29.39,
+     "via": [
+      "Purnia"
+     ]
+    },
+    "mumbai": {
+     "km": 2620,
+     "hours": 31.1,
+     "via": [
+      "Purnia"
+     ]
+    },
+    "pune": {
+     "km": 2529,
+     "hours": 30.46,
+     "via": [
+      "Purnia"
+     ]
+    },
+    "bengaluru": {
+     "km": 2743,
+     "hours": 34.19,
+     "via": [
+      "Siliguri"
+     ]
+    },
+    "hyderabad": {
+     "km": 2347,
+     "hours": 28.66,
+     "via": [
+      "Purnia",
+      "Siliguri"
+     ]
+    },
+    "chennai": {
+     "km": 2581,
+     "hours": 32.01,
+     "via": [
+      "Siliguri"
+     ]
+    },
+    "kolkata": {
+     "km": 1004,
+     "hours": 12.59,
+     "through": [
+      "Raghunathganj",
+      "Islampur",
+      "Tufanganj"
+     ],
+     "via": [
+      "Siliguri"
+     ],
+     "halfway": {
+      "name": "Islampur",
+      "km": 502
+     }
+    },
+    "guwahati": {
+     "km": 6,
+     "hours": 0.13,
+     "through": [
+      "Dispur"
+     ],
+     "halfway": {
+      "name": "Dispur",
+      "km": 3
+     }
+    }
+   },
+   "back": {
+    "delhi": {
+     "km": 2207,
+     "hours": 27.12,
+     "via": [
+      "Purnia"
+     ]
+    },
+    "chandigarh": {
+     "km": 2432,
+     "hours": 29.73,
+     "via": [
+      "Purnia"
+     ]
+    },
+    "jaipur": {
+     "km": 2296,
+     "hours": 28.61,
+     "via": [
+      "Purnia"
+     ]
+    },
+    "lucknow": {
+     "km": 1716,
+     "hours": 21.57,
+     "via": [
+      "Purnia"
+     ]
+    },
+    "ahmedabad": {
+     "km": 2779,
+     "hours": 34.62,
+     "via": [
+      "Purnia"
+     ]
+    },
+    "mumbai": {
+     "km": 2953,
+     "hours": 35.91,
+     "via": [
+      "Purnia"
+     ]
+    },
+    "pune": {
+     "km": 2856,
+     "hours": 35.29,
+     "via": [
+      "Purnia"
+     ]
+    },
+    "bengaluru": {
+     "km": 3081,
+     "hours": 39.25,
+     "via": [
+      "Siliguri"
+     ]
+    },
+    "hyderabad": {
+     "km": 2686,
+     "hours": 33.91,
+     "via": [
+      "Siliguri",
+      "Purnia"
+     ]
+    },
+    "chennai": {
+     "km": 2931,
+     "hours": 36.92,
+     "via": [
+      "Siliguri"
+     ]
+    },
+    "kolkata": {
+     "km": 1334,
+     "hours": 17.9,
+     "through": [
+      "Harisinga",
+      "Falakata",
+      "Old Maldah"
+     ],
+     "via": [
+      "Siliguri"
+     ],
+     "halfway": {
+      "name": "Falakata",
+      "km": 667
+     }
+    },
+    "guwahati": {
+     "km": 434,
+     "hours": 6.08,
+     "through": [
+      "Dirang",
+      "Kalaktang",
+      "Dalgaon"
+     ],
+     "halfway": {
+      "name": "Kalaktang",
+      "km": 217
+     }
+    }
+   },
+   "after": []
+  },
+  "hampi-badami": {
+   "start": "Hosapete",
+   "end": "Aihole",
+   "round_trip": false,
+   "to": {
+    "delhi": {
+     "km": 1712,
+     "hours": 20.31
+    },
+    "chandigarh": {
+     "km": 1974,
+     "hours": 23.28
+    },
+    "jaipur": {
+     "km": 1523,
+     "hours": 18.35
+    },
+    "lucknow": {
+     "km": 1755,
+     "hours": 20.76
+    },
+    "ahmedabad": {
+     "km": 1115,
+     "hours": 13.39,
+     "through": [
+      "Gandevi",
+      "Rahuri",
+      "Mangalvedhe"
+     ],
+     "halfway": {
+      "name": "Rahuri",
+      "km": 558
+     }
+    },
+    "mumbai": {
+     "km": 663,
+     "hours": 8.17,
+     "through": [
+      "Purandhar",
+      "Pandharpur",
+      "Nidagundi"
+     ],
+     "halfway": {
+      "name": "Pandharpur",
+      "km": 332
+     }
+    },
+    "pune": {
+     "km": 520,
+     "hours": 6.27,
+     "through": [
+      "Malshiras",
+      "Jat",
+      "Bagalakote"
+     ],
+     "halfway": {
+      "name": "Jat",
+      "km": 260
+     }
+    },
+    "bengaluru": {
+     "km": 326,
+     "hours": 4.02,
+     "through": [
+      "Tumkur",
+      "Hiriyuru",
+      "Kudligi"
+     ],
+     "halfway": {
+      "name": "Hiriyuru",
+      "km": 163
+     }
+    },
+    "hyderabad": {
+     "km": 377,
+     "hours": 5.28,
+     "through": [
+      "Mahbubnagar",
+      "Rayachuru",
+      "Sindhanuru"
+     ],
+     "halfway": {
+      "name": "Rayachuru",
+      "km": 188
+     }
+    },
+    "chennai": {
+     "km": 564,
+     "hours": 6.85,
+     "through": [
+      "Renigunta",
+      "Vallur",
+      "Gooty"
+     ],
+     "halfway": {
+      "name": "Vallur",
+      "km": 282
+     }
+    },
+    "kolkata": {
+     "km": 1782,
+     "hours": 21.66
+    },
+    "guwahati": {
+     "km": 2695,
+     "hours": 33.01,
+     "via": [
+      "Siliguri"
+     ]
+    }
+   },
+   "back": {
+    "delhi": {
+     "km": 1618,
+     "hours": 19.44
+    },
+    "chandigarh": {
+     "km": 1888,
+     "hours": 22.51
+    },
+    "jaipur": {
+     "km": 1437,
+     "hours": 17.54,
+     "through": [
+      "Nagar",
+      "Shirpur",
+      "Garoth"
+     ],
+     "halfway": {
+      "name": "Shirpur",
+      "km": 718
+     }
+    },
+    "lucknow": {
+     "km": 1637,
+     "hours": 19.76
+    },
+    "ahmedabad": {
+     "km": 1015,
+     "hours": 12.34,
+     "through": [
+      "Madha",
+      "Sinnar",
+      "Gandevi"
+     ],
+     "halfway": {
+      "name": "Sinnar",
+      "km": 508
+     }
+    },
+    "mumbai": {
+     "km": 575,
+     "hours": 7.13,
+     "through": [
+      "Jat",
+      "Malshiras",
+      "Pune"
+     ],
+     "halfway": {
+      "name": "Malshiras",
+      "km": 288
+     }
+    },
+    "pune": {
+     "km": 429,
+     "hours": 5.21,
+     "through": [
+      "Vijayapura",
+      "Pandharpur",
+      "Malshiras"
+     ],
+     "halfway": {
+      "name": "Pandharpur",
+      "km": 214
+     }
+    },
+    "bengaluru": {
+     "km": 444,
+     "hours": 5.51,
+     "through": [
+      "Koppala",
+      "Chitradurga",
+      "Sira"
+     ],
+     "halfway": {
+      "name": "Chitradurga",
+      "km": 222
+     }
+    },
+    "hyderabad": {
+     "km": 376,
+     "hours": 5.26,
+     "through": [
+      "Lingasuguru",
+      "Rayachuru",
+      "Mahbubnagar"
+     ],
+     "halfway": {
+      "name": "Rayachuru",
+      "km": 188
+     }
+    },
+    "chennai": {
+     "km": 686,
+     "hours": 8.39,
+     "through": [
+      "Kurugodu",
+      "Kondapuram",
+      "Kodur"
+     ],
+     "halfway": {
+      "name": "Kondapuram",
+      "km": 343
+     }
+    },
+    "kolkata": {
+     "km": 1803,
+     "hours": 22.47
+    },
+    "guwahati": {
+     "km": 2710,
+     "hours": 32.76,
+     "via": [
+      "Purnia",
+      "Siliguri"
+     ]
+    }
+   },
+   "after": []
+  },
+  "jalori-tirthan": {
+   "start": "Aut",
+   "end": "Anni",
+   "round_trip": false,
+   "to": {
+    "delhi": {
+     "km": 461,
+     "hours": 6.14,
+     "through": [
+      "Panipat",
+      "Ambala",
+      "Anandpur Sahib"
+     ],
+     "halfway": {
+      "name": "Ambala",
+      "km": 230
+     }
+    },
+    "chandigarh": {
+     "km": 199,
+     "hours": 2.96,
+     "through": [
+      "Rupnagar",
+      "Bilaspur",
+      "Sundarnagar"
+     ],
+     "halfway": {
+      "name": "Bilaspur",
+      "km": 100
+     }
+    },
+    "jaipur": {
+     "km": 675,
+     "hours": 8.8,
+     "through": [
+      "Narnaul",
+      "Alewa",
+      "Kharar"
+     ],
+     "halfway": {
+      "name": "Alewa",
+      "km": 338
+     }
+    },
+    "lucknow": {
+     "km": 902,
+     "hours": 10.98,
+     "through": [
+      "Tilhar",
+      "Meerut",
+      "Saha"
+     ],
+     "halfway": {
+      "name": "Meerut",
+      "km": 451
+     }
+    },
+    "ahmedabad": {
+     "km": 1311,
+     "hours": 16.33,
+     "through": [
+      "Sanchore",
+      "Lunkaransar",
+      "Bathinda"
+     ],
+     "halfway": {
+      "name": "Lunkaransar",
+      "km": 656
+     }
+    },
+    "mumbai": {
+     "km": 1790,
+     "hours": 20.96
+    },
+    "pune": {
+     "km": 1795,
+     "hours": 21.87
+    },
+    "bengaluru": {
+     "km": 2493,
+     "hours": 30.28
+    },
+    "hyderabad": {
+     "km": 1996,
+     "hours": 25.22
+    },
+    "chennai": {
+     "km": 2571,
+     "hours": 32.85
+    },
+    "kolkata": {
+     "km": 1887,
+     "hours": 22.41
+    },
+    "guwahati": {
+     "km": 2277,
+     "hours": 27.18,
+     "via": [
+      "Purnia"
+     ]
+    }
+   },
+   "back": {
+    "delhi": {
+     "km": 465,
+     "hours": 6.99,
+     "through": [
+      "Solan",
+      "Ambala",
+      "Panipat"
+     ],
+     "halfway": {
+      "name": "Ambala",
+      "km": 232
+     }
+    },
+    "chandigarh": {
+     "km": 257,
+     "hours": 3.9,
+     "through": [
+      "Bali Chowki",
+      "Sundarnagar",
+      "Nalagarh"
+     ],
+     "halfway": {
+      "name": "Sundarnagar",
+      "km": 128
+     }
+    },
+    "jaipur": {
+     "km": 681,
+     "hours": 9.75,
+     "through": [
+      "Dera Bassi",
+      "Fatehpur Pundri",
+      "Narnaul"
+     ],
+     "halfway": {
+      "name": "Fatehpur Pundri",
+      "km": 340
+     }
+    },
+    "lucknow": {
+     "km": 905,
+     "hours": 11.84,
+     "through": [
+      "Saraswati Nagar",
+      "Garhmukteshwar",
+      "Jalalabad"
+     ],
+     "halfway": {
+      "name": "Garhmukteshwar",
+      "km": 452
+     }
+    },
+    "ahmedabad": {
+     "km": 1381,
+     "hours": 17.27,
+     "through": [
+      "Moga",
+      "Lunkaransar",
+      "Sanchore"
+     ],
+     "halfway": {
+      "name": "Lunkaransar",
+      "km": 690
+     }
+    },
+    "mumbai": {
+     "km": 1790,
+     "hours": 21.7
+    },
+    "pune": {
+     "km": 1792,
+     "hours": 22.46
+    },
+    "bengaluru": {
+     "km": 2493,
+     "hours": 30.93
+    },
+    "hyderabad": {
+     "km": 2000,
+     "hours": 25.9
+    },
+    "chennai": {
+     "km": 2664,
+     "hours": 33.31
+    },
+    "kolkata": {
+     "km": 1869,
+     "hours": 22.89
+    },
+    "guwahati": {
+     "km": 2243,
+     "hours": 28.14,
+     "via": [
+      "Purnia"
+     ]
+    }
+   },
+   "after": []
+  },
+  "kargil-padum": {
+   "start": "Kargil",
+   "end": "Padum",
+   "round_trip": false,
+   "to": {
+    "delhi": {
+     "km": 1005,
+     "hours": 13.86,
+     "through": [
+      "Ambala",
+      "Pathankot",
+      "Dooru"
+     ],
+     "halfway": {
+      "name": "Pathankot",
+      "km": 502
+     }
+    },
+    "chandigarh": {
+     "km": 749,
+     "hours": 10.93,
+     "through": [
+      "Dasua",
+      "Udhampur",
+      "Srinagar"
+     ],
+     "halfway": {
+      "name": "Udhampur",
+      "km": 374
+     }
+    },
+    "jaipur": {
+     "km": 1178,
+     "hours": 16.19,
+     "through": [
+      "Phillukhera",
+      "Jalandhar",
+      "Ramban"
+     ],
+     "halfway": {
+      "name": "Jalandhar",
+      "km": 589
+     }
+    },
+    "lucknow": {
+     "km": 1425,
+     "hours": 18.87,
+     "through": [
+      "Hasanpur",
+      "Ambala",
+      "Udhampur"
+     ],
+     "halfway": {
+      "name": "Ambala",
+      "km": 712
+     }
+    },
+    "ahmedabad": {
+     "km": 1717,
+     "hours": 22.46
+    },
+    "mumbai": {
+     "km": 2292,
+     "hours": 28.32
+    },
+    "pune": {
+     "km": 2297,
+     "hours": 29.23
+    },
+    "bengaluru": {
+     "km": 2995,
+     "hours": 37.64
+    },
+    "hyderabad": {
+     "km": 2498,
+     "hours": 32.57
+    },
+    "chennai": {
+     "km": 3168,
+     "hours": 40.22
+    },
+    "kolkata": {
+     "km": 2410,
+     "hours": 30.3
+    },
+    "guwahati": {
+     "km": 2800,
+     "hours": 35.06,
+     "via": [
+      "Purnia"
+     ]
+    }
+   },
+   "back": {
+    "delhi": {
+     "km": 760,
+     "hours": 13.04,
+     "through": [
+      "Lahaul",
+      "Anandpur Sahib",
+      "Kurukshetra"
+     ],
+     "halfway": {
+      "name": "Anandpur Sahib",
+      "km": 380
+     }
+    },
+    "chandigarh": {
+     "km": 497,
+     "hours": 9.89,
+     "through": [
+      "Lahaul",
+      "Manali",
+      "Sundarnagar"
+     ],
+     "halfway": {
+      "name": "Manali",
+      "km": 248
+     }
+    },
+    "jaipur": {
+     "km": 976,
+     "hours": 15.8,
+     "through": [
+      "Bhuntar",
+      "Ambala",
+      "Narnaul"
+     ],
+     "halfway": {
+      "name": "Ambala",
+      "km": 488
+     }
+    },
+    "lucknow": {
+     "km": 1200,
+     "hours": 17.88,
+     "through": [
+      "Mandi",
+      "Saharanpur",
+      "Shahjahanpur"
+     ],
+     "halfway": {
+      "name": "Saharanpur",
+      "km": 600
+     }
+    },
+    "ahmedabad": {
+     "km": 1621,
+     "hours": 23.26
+    },
+    "mumbai": {
+     "km": 2085,
+     "hours": 27.74
+    },
+    "pune": {
+     "km": 2087,
+     "hours": 28.5
+    },
+    "bengaluru": {
+     "km": 2788,
+     "hours": 36.98
+    },
+    "hyderabad": {
+     "km": 2295,
+     "hours": 31.94
+    },
+    "chennai": {
+     "km": 2958,
+     "hours": 39.35
+    },
+    "kolkata": {
+     "km": 2164,
+     "hours": 28.94
+    },
+    "guwahati": {
+     "km": 2538,
+     "hours": 34.18,
+     "via": [
+      "Purnia"
+     ]
+    }
+   },
+   "after": []
+  },
+  "karnataka-hills": {
+   "start": "Bengaluru",
+   "end": "Bengaluru",
+   "round_trip": true,
+   "to": {
+    "delhi": {
+     "km": 2031,
+     "hours": 24.2
+    },
+    "chandigarh": {
+     "km": 2293,
+     "hours": 27.17
+    },
+    "jaipur": {
+     "km": 1842,
+     "hours": 22.24
+    },
+    "lucknow": {
+     "km": 1886,
+     "hours": 23.31
+    },
+    "ahmedabad": {
+     "km": 1434,
+     "hours": 17.28,
+     "through": [
+      "Kaparada",
+      "Karmala",
+      "Kushtagi"
+     ],
+     "halfway": {
+      "name": "Karmala",
+      "km": 717
+     }
+    },
+    "mumbai": {
+     "km": 982,
+     "hours": 12.06,
+     "through": [
+      "Malshiras",
+      "Nidagundi",
+      "Kudligi"
+     ],
+     "halfway": {
+      "name": "Nidagundi",
+      "km": 491
+     }
+    },
+    "pune": {
+     "km": 839,
+     "hours": 10.15,
+     "through": [
+      "Pandharpur",
+      "Kushtagi",
+      "Chitradurga"
+     ],
+     "halfway": {
+      "name": "Kushtagi",
+      "km": 420
+     }
+    },
+    "bengaluru": {
+     "km": 1,
+     "hours": 0.05,
+     "through": []
+    },
+    "hyderabad": {
+     "km": 566,
+     "hours": 7.64,
+     "through": [
+      "Pebbair",
+      "Dhone",
+      "Penukonda"
+     ],
+     "halfway": {
+      "name": "Dhone",
+      "km": 283
+     }
+    },
+    "chennai": {
+     "km": 328,
+     "hours": 4.14,
+     "through": [
+      "Kanchipuram",
+      "Katpadi",
+      "Kolar Gold Field"
+     ],
+     "halfway": {
+      "name": "Katpadi",
+      "km": 164
+     }
+    },
+    "kolkata": {
+     "km": 1827,
+     "hours": 22.61
+    },
+    "guwahati": {
+     "km": 2739,
+     "hours": 33.95,
+     "via": [
+      "Siliguri"
+     ]
+    }
+   },
+   "back": {},
+   "after": []
+  },
+  "kashmir-kanyakumari": {
+   "start": "Srinagar",
+   "end": "Kanyakumari",
+   "round_trip": false,
+   "to": {
+    "delhi": {
+     "km": 807,
+     "hours": 10.86,
+     "through": [
+      "Kurukshetra",
+      "Jalandhar",
+      "Samba"
+     ],
+     "halfway": {
+      "name": "Jalandhar",
+      "km": 404
+     }
+    },
+    "chandigarh": {
+     "km": 551,
+     "hours": 7.93,
+     "through": [
+      "Hoshiarpur",
+      "Kathua",
+      "Ramban"
+     ],
+     "halfway": {
+      "name": "Kathua",
+      "km": 276
+     }
+    },
+    "jaipur": {
+     "km": 980,
+     "hours": 13.19,
+     "through": [
+      "Dadri",
+      "Dhuri",
+      "Kathua"
+     ],
+     "halfway": {
+      "name": "Dhuri",
+      "km": 490
+     }
+    },
+    "lucknow": {
+     "km": 1227,
+     "hours": 15.87,
+     "through": [
+      "Hasanpur",
+      "Karnal",
+      "Indora"
+     ],
+     "halfway": {
+      "name": "Karnal",
+      "km": 614
+     }
+    },
+    "ahmedabad": {
+     "km": 1519,
+     "hours": 19.46
+    },
+    "mumbai": {
+     "km": 2094,
+     "hours": 25.31
+    },
+    "pune": {
+     "km": 2099,
+     "hours": 26.23
+    },
+    "bengaluru": {
+     "km": 2797,
+     "hours": 34.64
+    },
+    "hyderabad": {
+     "km": 2300,
+     "hours": 29.57
+    },
+    "chennai": {
+     "km": 2970,
+     "hours": 37.22
+    },
+    "kolkata": {
+     "km": 2212,
+     "hours": 27.29
+    },
+    "guwahati": {
+     "km": 2602,
+     "hours": 32.06,
+     "via": [
+      "Purnia"
+     ]
+    }
+   },
+   "back": {
+    "delhi": {
+     "km": 2675,
+     "hours": 32.92
+    },
+    "chandigarh": {
+     "km": 2945,
+     "hours": 35.99
+    },
+    "jaipur": {
+     "km": 2494,
+     "hours": 31.02
+    },
+    "lucknow": {
+     "km": 2524,
+     "hours": 31.99
+    },
+    "ahmedabad": {
+     "km": 2072,
+     "hours": 25.82
+    },
+    "mumbai": {
+     "km": 1631,
+     "hours": 20.61
+    },
+    "pune": {
+     "km": 1486,
+     "hours": 18.69,
+     "through": [
+      "Paramathi-Velur",
+      "Sira",
+      "Bagalakote"
+     ],
+     "halfway": {
+      "name": "Sira",
+      "km": 743
+     }
+    },
+    "bengaluru": {
+     "km": 641,
+     "hours": 8.82,
+     "through": [
+      "Sattur",
+      "Aravakurichi",
+      "Omalur"
+     ],
+     "halfway": {
+      "name": "Aravakurichi",
+      "km": 320
+     }
+    },
+    "hyderabad": {
+     "km": 1204,
+     "hours": 16.16,
+     "through": [
+      "Aravakurichi",
+      "Hosur",
+      "Garladinne"
+     ],
+     "halfway": {
+      "name": "Hosur",
+      "km": 602
+     }
+    },
+    "chennai": {
+     "km": 737,
+     "hours": 9.38,
+     "through": [
+      "Kadaladi",
+      "Kulathur",
+      "Ulundurpettai"
+     ],
+     "halfway": {
+      "name": "Kulathur",
+      "km": 368
+     }
+    },
+    "kolkata": {
+     "km": 2366,
+     "hours": 29.57
+    },
+    "guwahati": {
+     "km": 3277,
+     "hours": 40.91,
+     "via": [
+      "Siliguri"
+     ]
+    }
+   },
+   "after": []
+  },
+  "kashmir-valley": {
+   "start": "Srinagar",
+   "end": "Sonamarg",
+   "round_trip": false,
+   "to": {
+    "delhi": {
+     "km": 807,
+     "hours": 10.86,
+     "through": [
+      "Kurukshetra",
+      "Jalandhar",
+      "Samba"
+     ],
+     "halfway": {
+      "name": "Jalandhar",
+      "km": 404
+     }
+    },
+    "chandigarh": {
+     "km": 551,
+     "hours": 7.93,
+     "through": [
+      "Hoshiarpur",
+      "Kathua",
+      "Ramban"
+     ],
+     "halfway": {
+      "name": "Kathua",
+      "km": 276
+     }
+    },
+    "jaipur": {
+     "km": 980,
+     "hours": 13.19,
+     "through": [
+      "Dadri",
+      "Dhuri",
+      "Kathua"
+     ],
+     "halfway": {
+      "name": "Dhuri",
+      "km": 490
+     }
+    },
+    "lucknow": {
+     "km": 1227,
+     "hours": 15.87,
+     "through": [
+      "Hasanpur",
+      "Karnal",
+      "Indora"
+     ],
+     "halfway": {
+      "name": "Karnal",
+      "km": 614
+     }
+    },
+    "ahmedabad": {
+     "km": 1519,
+     "hours": 19.46
+    },
+    "mumbai": {
+     "km": 2094,
+     "hours": 25.31
+    },
+    "pune": {
+     "km": 2099,
+     "hours": 26.23
+    },
+    "bengaluru": {
+     "km": 2797,
+     "hours": 34.64
+    },
+    "hyderabad": {
+     "km": 2300,
+     "hours": 29.57
+    },
+    "chennai": {
+     "km": 2970,
+     "hours": 37.22
+    },
+    "kolkata": {
+     "km": 2212,
+     "hours": 27.29
+    },
+    "guwahati": {
+     "km": 2602,
+     "hours": 32.06,
+     "via": [
+      "Purnia"
+     ]
+    }
+   },
+   "back": {
+    "delhi": {
+     "km": 1014,
+     "hours": 13.54,
+     "through": [
+      "Nowshehra",
+      "Dasua",
+      "Ambala"
+     ],
+     "halfway": {
+      "name": "Dasua",
+      "km": 507
+     }
+    },
+    "chandigarh": {
+     "km": 757,
+     "hours": 10.57,
+     "through": [
+      "Surankote",
+      "Samba",
+      "Dasua"
+     ],
+     "halfway": {
+      "name": "Samba",
+      "km": 378
+     }
+    },
+    "jaipur": {
+     "km": 1190,
+     "hours": 15.98,
+     "through": [
+      "Reasi",
+      "Phagwara",
+      "Phillukhera"
+     ],
+     "halfway": {
+      "name": "Phagwara",
+      "km": 595
+     }
+    },
+    "lucknow": {
+     "km": 1430,
+     "hours": 18.51,
+     "through": [
+      "Samba",
+      "Ambala",
+      "Hasanpur"
+     ],
+     "halfway": {
+      "name": "Ambala",
+      "km": 715
+     }
+    },
+    "ahmedabad": {
+     "km": 1725,
+     "hours": 22.11
+    },
+    "mumbai": {
+     "km": 2298,
+     "hours": 27.89
+    },
+    "pune": {
+     "km": 2300,
+     "hours": 28.65
+    },
+    "bengaluru": {
+     "km": 3001,
+     "hours": 37.13
+    },
+    "hyderabad": {
+     "km": 2508,
+     "hours": 32.09
+    },
+    "chennai": {
+     "km": 3172,
+     "hours": 39.5
+    },
+    "kolkata": {
+     "km": 2394,
+     "hours": 29.57
+    },
+    "guwahati": {
+     "km": 2767,
+     "hours": 34.81,
+     "via": [
+      "Purnia"
+     ]
+    }
+   },
+   "after": []
+  },
+  "kasol-parvati": {
+   "start": "Bhuntar",
+   "end": "Barshaini",
+   "round_trip": false,
+   "to": {
+    "delhi": {
+     "km": 482,
+     "hours": 6.38,
+     "through": [
+      "Panipat",
+      "Ambala",
+      "Anandpur Sahib"
+     ],
+     "halfway": {
+      "name": "Ambala",
+      "km": 241
+     }
+    },
+    "chandigarh": {
+     "km": 220,
+     "hours": 3.21,
+     "through": [
+      "Rupnagar",
+      "Bilaspur",
+      "Mandi"
+     ],
+     "halfway": {
+      "name": "Bilaspur",
+      "km": 110
+     }
+    },
+    "jaipur": {
+     "km": 696,
+     "hours": 9.04,
+     "through": [
+      "Narnaul",
+      "Alewa",
+      "Kharar"
+     ],
+     "halfway": {
+      "name": "Alewa",
+      "km": 348
+     }
+    },
+    "lucknow": {
+     "km": 923,
+     "hours": 11.23,
+     "through": [
+      "Tilhar",
+      "Meerut",
+      "Saha"
+     ],
+     "halfway": {
+      "name": "Meerut",
+      "km": 462
+     }
+    },
+    "ahmedabad": {
+     "km": 1332,
+     "hours": 16.58,
+     "through": [
+      "Sanchore",
+      "Lunkaransar",
+      "Bathinda"
+     ],
+     "halfway": {
+      "name": "Lunkaransar",
+      "km": 666
+     }
+    },
+    "mumbai": {
+     "km": 1811,
+     "hours": 21.2
+    },
+    "pune": {
+     "km": 1816,
+     "hours": 22.12
+    },
+    "bengaluru": {
+     "km": 2514,
+     "hours": 30.53
+    },
+    "hyderabad": {
+     "km": 2017,
+     "hours": 25.46
+    },
+    "chennai": {
+     "km": 2592,
+     "hours": 33.09
+    },
+    "kolkata": {
+     "km": 1907,
+     "hours": 22.65
+    },
+    "guwahati": {
+     "km": 2298,
+     "hours": 27.42,
+     "via": [
+      "Purnia"
+     ]
+    }
+   },
+   "back": {
+    "delhi": {
+     "km": 517,
+     "hours": 8.3,
+     "through": [
+      "Bilaspur",
+      "Ambala",
+      "Panipat"
+     ],
+     "halfway": {
+      "name": "Ambala",
+      "km": 258
+     }
+    },
+    "chandigarh": {
+     "km": 254,
+     "hours": 5.15,
+     "through": [
+      "Mandi",
+      "Sundarnagar",
+      "Nalagarh"
+     ],
+     "halfway": {
+      "name": "Sundarnagar",
+      "km": 127
+     }
+    },
+    "jaipur": {
+     "km": 733,
+     "hours": 11.05,
+     "through": [
+      "Nalagarh",
+      "Fatehpur Pundri",
+      "Narnaul"
+     ],
+     "halfway": {
+      "name": "Fatehpur Pundri",
+      "km": 366
+     }
+    },
+    "lucknow": {
+     "km": 957,
+     "hours": 13.14,
+     "through": [
+      "Panchkula",
+      "Meerut",
+      "Tilhar"
+     ],
+     "halfway": {
+      "name": "Meerut",
+      "km": 478
+     }
+    },
+    "ahmedabad": {
+     "km": 1378,
+     "hours": 18.52,
+     "through": [
+      "Moga",
+      "Lunkaransar",
+      "Sanchore"
+     ],
+     "halfway": {
+      "name": "Lunkaransar",
+      "km": 689
+     }
+    },
+    "mumbai": {
+     "km": 1842,
+     "hours": 23.0
+    },
+    "pune": {
+     "km": 1844,
+     "hours": 23.76
+    },
+    "bengaluru": {
+     "km": 2545,
+     "hours": 32.24
+    },
+    "hyderabad": {
+     "km": 2052,
+     "hours": 27.2
+    },
+    "chennai": {
+     "km": 2715,
+     "hours": 34.61
+    },
+    "kolkata": {
+     "km": 1921,
+     "hours": 24.2
+    },
+    "guwahati": {
+     "km": 2295,
+     "hours": 29.44,
+     "via": [
+      "Purnia"
+     ]
+    }
+   },
+   "after": []
+  },
+  "kerala-hills": {
+   "start": "Kochi",
+   "end": "Kalpetta",
+   "round_trip": false,
+   "to": {
+    "delhi": {
+     "km": 2414,
+     "hours": 30.21
+    },
+    "chandigarh": {
+     "km": 2677,
+     "hours": 33.18
+    },
+    "jaipur": {
+     "km": 2226,
+     "hours": 28.25
+    },
+    "lucknow": {
+     "km": 2366,
+     "hours": 30.05
+    },
+    "ahmedabad": {
+     "km": 1818,
+     "hours": 23.28
+    },
+    "mumbai": {
+     "km": 1366,
+     "hours": 18.07,
+     "through": [
+      "Pandharpur",
+      "Kudligi",
+      "Pandavapura"
+     ],
+     "halfway": {
+      "name": "Kudligi",
+      "km": 683
+     }
+    },
+    "pune": {
+     "km": 1223,
+     "hours": 16.16,
+     "through": [
+      "Jat",
+      "Kudligi",
+      "Pandavapura"
+     ],
+     "halfway": {
+      "name": "Kudligi",
+      "km": 612
+     }
+    },
+    "bengaluru": {
+     "km": 506,
+     "hours": 7.31,
+     "through": [
+      "Nallampalli",
+      "Perundurai",
+      "Palakkad"
+     ],
+     "halfway": {
+      "name": "Perundurai",
+      "km": 253
+     }
+    },
+    "hyderabad": {
+     "km": 1046,
+     "hours": 14.38,
+     "through": [
+      "Adoni",
+      "Hiriyuru",
+      "Gundlupet"
+     ],
+     "halfway": {
+      "name": "Hiriyuru",
+      "km": 523
+     }
+    },
+    "chennai": {
+     "km": 692,
+     "hours": 9.45,
+     "through": [
+      "Polur",
+      "Salem South",
+      "Coimbatore South"
+     ],
+     "halfway": {
+      "name": "Salem South",
+      "km": 346
+     }
+    },
+    "kolkata": {
+     "km": 2273,
+     "hours": 28.48
+    },
+    "guwahati": {
+     "km": 3185,
+     "hours": 39.82,
+     "via": [
+      "Siliguri"
+     ]
+    }
+   },
+   "back": {
+    "delhi": {
+     "km": 2219,
+     "hours": 26.67
+    },
+    "chandigarh": {
+     "km": 2489,
+     "hours": 29.75
+    },
+    "jaipur": {
+     "km": 2038,
+     "hours": 24.78
+    },
+    "lucknow": {
+     "km": 2175,
+     "hours": 26.52
+    },
+    "ahmedabad": {
+     "km": 1616,
+     "hours": 19.57
+    },
+    "mumbai": {
+     "km": 1176,
+     "hours": 14.37,
+     "through": [
+      "Chikkanayakanahalli",
+      "Hosapete",
+      "Pandharpur"
+     ],
+     "halfway": {
+      "name": "Hosapete",
+      "km": 588
+     }
+    },
+    "pune": {
+     "km": 1030,
+     "hours": 12.44,
+     "through": [
+      "Turuvekere",
+      "Kushtagi",
+      "Jat"
+     ],
+     "halfway": {
+      "name": "Kushtagi",
+      "km": 515
+     }
+    },
+    "bengaluru": {
+     "km": 281,
+     "hours": 3.7,
+     "through": [
+      "Gundlupet",
+      "Mysuru",
+      "Channapattana"
+     ],
+     "halfway": {
+      "name": "Mysuru",
+      "km": 140
+     }
+    },
+    "hyderabad": {
+     "km": 854,
+     "hours": 10.7,
+     "through": [
+      "Nagamangala",
+      "Molakalmuru",
+      "Raichur"
+     ],
+     "halfway": {
+      "name": "Molakalmuru",
+      "km": 427
+     }
+    },
+    "chennai": {
+     "km": 604,
+     "hours": 7.66,
+     "through": [
+      "Srirangapattana",
+      "Hosakote",
+      "Gudiyatham"
+     ],
+     "halfway": {
+      "name": "Hosakote",
+      "km": 302
+     }
+    },
+    "kolkata": {
+     "km": 2105,
+     "hours": 26.42
+    },
+    "guwahati": {
+     "km": 3016,
+     "hours": 37.75,
+     "via": [
+      "Siliguri"
+     ]
+    }
+   },
+   "after": []
+  },
+  "kinnaur": {
+   "start": "Rampur",
+   "end": "Kalpa",
+   "round_trip": false,
+   "to": {
+    "delhi": {
+     "km": 494,
+     "hours": 7.1,
+     "through": [
+      "Shamli",
+      "Behat",
+      "Tyuni"
+     ],
+     "halfway": {
+      "name": "Behat",
+      "km": 247
+     }
+    },
+    "chandigarh": {
+     "km": 235,
+     "hours": 4.38,
+     "through": [
+      "Solan",
+      "Shimla",
+      "Kumharsain"
+     ],
+     "halfway": {
+      "name": "Shimla",
+      "km": 118
+     }
+    },
+    "jaipur": {
+     "km": 700,
+     "hours": 10.11,
+     "through": [
+      "Narnaul",
+      "Alewa",
+      "Dera Bassi"
+     ],
+     "halfway": {
+      "name": "Alewa",
+      "km": 350
+     }
+    },
+    "lucknow": {
+     "km": 908,
+     "hours": 11.55,
+     "through": [
+      "Shahjahanpur",
+      "Syana",
+      "Behat"
+     ],
+     "halfway": {
+      "name": "Syana",
+      "km": 454
+     }
+    },
+    "ahmedabad": {
+     "km": 1458,
+     "hours": 17.93,
+     "through": [
+      "Ratlam",
+      "Lalsot",
+      "Khekada"
+     ],
+     "halfway": {
+      "name": "Lalsot",
+      "km": 729
+     }
+    },
+    "mumbai": {
+     "km": 1812,
+     "hours": 21.98
+    },
+    "pune": {
+     "km": 1818,
+     "hours": 22.89
+    },
+    "bengaluru": {
+     "km": 2515,
+     "hours": 31.3
+    },
+    "hyderabad": {
+     "km": 2018,
+     "hours": 26.24
+    },
+    "chennai": {
+     "km": 2604,
+     "hours": 33.81
+    },
+    "kolkata": {
+     "km": 1892,
+     "hours": 22.98
+    },
+    "guwahati": {
+     "km": 2282,
+     "hours": 27.75,
+     "via": [
+      "Purnia"
+     ]
+    }
+   },
+   "back": {
+    "delhi": {
+     "km": 598,
+     "hours": 9.52,
+     "through": [
+      "Rohru",
+      "Paonta Sahib",
+      "Shamli"
+     ],
+     "halfway": {
+      "name": "Paonta Sahib",
+      "km": 299
+     }
+    },
+    "chandigarh": {
+     "km": 337,
+     "hours": 6.81,
+     "through": [
+      "Kumharsain",
+      "Kandaghat"
+     ],
+     "halfway": {
+      "name": "Kumharsain",
+      "km": 168
+     }
+    },
+    "jaipur": {
+     "km": 805,
+     "hours": 12.6,
+     "through": [
+      "Kandaghat",
+      "Fatehpur Pundri",
+      "Narnaul"
+     ],
+     "halfway": {
+      "name": "Fatehpur Pundri",
+      "km": 402
+     }
+    },
+    "lucknow": {
+     "km": 1008,
+     "hours": 13.95,
+     "through": [
+      "Paonta Sahib",
+      "Meerut",
+      "Shahjahanpur"
+     ],
+     "halfway": {
+      "name": "Meerut",
+      "km": 504
+     }
+    },
+    "ahmedabad": {
+     "km": 1446,
+     "hours": 20.28,
+     "through": [
+      "Ambala",
+      "Amber",
+      "Deogarh"
+     ],
+     "halfway": {
+      "name": "Amber",
+      "km": 723
+     }
+    },
+    "mumbai": {
+     "km": 1920,
+     "hours": 24.34
+    },
+    "pune": {
+     "km": 1922,
+     "hours": 25.1
+    },
+    "bengaluru": {
+     "km": 2623,
+     "hours": 33.58
+    },
+    "hyderabad": {
+     "km": 2130,
+     "hours": 28.54
+    },
+    "chennai": {
+     "km": 2695,
+     "hours": 35.84
+    },
+    "kolkata": {
+     "km": 1972,
+     "hours": 25.01
+    },
+    "guwahati": {
+     "km": 2345,
+     "hours": 30.25,
+     "via": [
+      "Purnia"
+     ]
+    }
+   },
+   "after": []
+  },
+  "konkan-coast": {
+   "start": "Mumbai",
+   "end": "Panaji",
+   "round_trip": false,
+   "to": {
+    "delhi": {
+     "km": 1331,
+     "hours": 15.03,
+     "through": [
+      "Lalsot",
+      "Jaora",
+      "Bharuch"
+     ],
+     "halfway": {
+      "name": "Jaora",
+      "km": 666
+     }
+    },
+    "chandigarh": {
+     "km": 1593,
+     "hours": 17.99
+    },
+    "jaipur": {
+     "km": 1142,
+     "hours": 13.07,
+     "through": [
+      "Bhanpura",
+      "Thandla",
+      "Bharuch"
+     ],
+     "halfway": {
+      "name": "Thandla",
+      "km": 571
+     }
+    },
+    "lucknow": {
+     "km": 1442,
+     "hours": 17.25,
+     "through": [
+      "Buxwaha",
+      "Khategaon",
+      "Shirpur"
+     ],
+     "halfway": {
+      "name": "Khategaon",
+      "km": 721
+     }
+    },
+    "ahmedabad": {
+     "km": 512,
+     "hours": 6.09,
+     "through": [
+      "Padra",
+      "Kamrej",
+      "Umbergaon"
+     ],
+     "halfway": {
+      "name": "Kamrej",
+      "km": 256
+     }
+    },
+    "mumbai": {
+     "km": 3,
+     "hours": 0.06,
+     "through": []
+    },
+    "pune": {
+     "km": 149,
+     "hours": 1.99,
+     "through": [
+      "Mawal",
+      "Khalapur",
+      "Panvel"
+     ],
+     "halfway": {
+      "name": "Khalapur",
+      "km": 74
+     }
+    },
+    "bengaluru": {
+     "km": 986,
+     "hours": 12.07,
+     "through": [
+      "Kudligi",
+      "Nidagundi",
+      "Malshiras"
+     ],
+     "halfway": {
+      "name": "Nidagundi",
+      "km": 493
+     }
+    },
+    "hyderabad": {
+     "km": 709,
+     "hours": 8.75,
+     "through": [
+      "Chittaguppa",
+      "Mohol",
+      "Daund"
+     ],
+     "halfway": {
+      "name": "Mohol",
+      "km": 354
+     }
+    },
+    "chennai": {
+     "km": 1229,
+     "hours": 14.97,
+     "through": [
+      "Kondapuram",
+      "Kushtagi",
+      "Malshiras"
+     ],
+     "halfway": {
+      "name": "Kushtagi",
+      "km": 614
+     }
+    },
+    "kolkata": {
+     "km": 1889,
+     "hours": 22.03
+    },
+    "guwahati": {
+     "km": 2613,
+     "hours": 30.62,
+     "via": [
+      "Purnia"
+     ]
+    }
+   },
+   "back": {
+    "delhi": {
+     "km": 1732,
+     "hours": 20.75
+    },
+    "chandigarh": {
+     "km": 2001,
+     "hours": 23.83
+    },
+    "jaipur": {
+     "km": 1551,
+     "hours": 18.86
+    },
+    "lucknow": {
+     "km": 1806,
+     "hours": 21.8
+    },
+    "ahmedabad": {
+     "km": 1026,
+     "hours": 12.73,
+     "through": [
+      "Sangameshwar",
+      "Panvel",
+      "Gandevi"
+     ],
+     "halfway": {
+      "name": "Panvel",
+      "km": 513
+     }
+    },
+    "mumbai": {
+     "km": 540,
+     "hours": 6.89,
+     "through": [
+      "Kankavli",
+      "Sangameshwar",
+      "Mahad"
+     ],
+     "halfway": {
+      "name": "Sangameshwar",
+      "km": 270
+     }
+    },
+    "pune": {
+     "km": 480,
+     "hours": 5.88,
+     "through": [
+      "Belagavi",
+      "Sangli",
+      "Phaltan"
+     ],
+     "halfway": {
+      "name": "Sangli",
+      "km": 240
+     }
+    },
+    "bengaluru": {
+     "km": 601,
+     "hours": 7.77,
+     "through": [
+      "Dharwad",
+      "Ranebennur",
+      "Hiriyuru"
+     ],
+     "halfway": {
+      "name": "Ranebennur",
+      "km": 300
+     }
+    },
+    "hyderabad": {
+     "km": 683,
+     "hours": 8.8,
+     "through": [
+      "Chikodi",
+      "Devara Hipparagi",
+      "Sedam"
+     ],
+     "halfway": {
+      "name": "Devara Hipparagi",
+      "km": 342
+     }
+    },
+    "chennai": {
+     "km": 902,
+     "hours": 11.3,
+     "through": [
+      "Annigeri",
+      "Guntakal",
+      "Vontimitta"
+     ],
+     "halfway": {
+      "name": "Guntakal",
+      "km": 451
+     }
+    },
+    "kolkata": {
+     "km": 2139,
+     "hours": 25.87
+    },
+    "guwahati": {
+     "km": 2862,
+     "hours": 34.48,
+     "via": [
+      "Purnia"
+     ]
+    }
+   },
+   "after": []
+  },
+  "madhya-pradesh": {
+   "start": "Bhopal",
+   "end": "Gwalior",
+   "round_trip": false,
+   "to": {
+    "delhi": {
+     "km": 772,
+     "hours": 8.72,
+     "through": [
+      "Reni",
+      "Digod",
+      "Aklera"
+     ],
+     "halfway": {
+      "name": "Digod",
+      "km": 386
+     }
+    },
+    "chandigarh": {
+     "km": 1034,
+     "hours": 11.68,
+     "through": [
+      "Bahadurgarh",
+      "Dausa",
+      "Ramganj Mandi"
+     ],
+     "halfway": {
+      "name": "Dausa",
+      "km": 517
+     }
+    },
+    "jaipur": {
+     "km": 583,
+     "hours": 6.76,
+     "through": [
+      "Sawai Madhopur",
+      "Ladpura",
+      "Khilchipur"
+     ],
+     "halfway": {
+      "name": "Ladpura",
+      "km": 292
+     }
+    },
+    "lucknow": {
+     "km": 614,
+     "hours": 7.41,
+     "through": [
+      "Hamirpur",
+      "Bijawar",
+      "Rahatgarh"
+     ],
+     "halfway": {
+      "name": "Bijawar",
+      "km": 307
+     }
+    },
+    "ahmedabad": {
+     "km": 574,
+     "hours": 8.12,
+     "through": [
+      "Godhra",
+      "Sardarpur",
+      "Dewas"
+     ],
+     "halfway": {
+      "name": "Sardarpur",
+      "km": 287
+     }
+    },
+    "mumbai": {
+     "km": 772,
+     "hours": 10.45,
+     "through": [
+      "Chandwad",
+      "Shirpur",
+      "Indore"
+     ],
+     "halfway": {
+      "name": "Shirpur",
+      "km": 386
+     }
+    },
+    "pune": {
+     "km": 832,
+     "hours": 10.21,
+     "through": [
+      "Gangapur",
+      "Buldhana",
+      "Bhimpur"
+     ],
+     "halfway": {
+      "name": "Buldhana",
+      "km": 416
+     }
+    },
+    "bengaluru": {
+     "km": 1439,
+     "hours": 17.59,
+     "through": [
+      "Hosapete",
+      "Dharashiv",
+      "Akot"
+     ],
+     "halfway": {
+      "name": "Dharashiv",
+      "km": 720
+     }
+    },
+    "hyderabad": {
+     "km": 864,
+     "hours": 10.79,
+     "through": [
+      "Biloli",
+      "Malegaon",
+      "Bhainsdehi"
+     ],
+     "halfway": {
+      "name": "Malegaon",
+      "km": 432
+     }
+    },
+    "chennai": {
+     "km": 1434,
+     "hours": 18.22,
+     "through": [
+      "Addanki",
+      "Manakondur",
+      "Savner"
+     ],
+     "halfway": {
+      "name": "Manakondur",
+      "km": 717
+     }
+    },
+    "kolkata": {
+     "km": 1421,
+     "hours": 17.13,
+     "through": [
+      "Kendujhar",
+      "Kharsia",
+      "Jabalpur"
+     ],
+     "halfway": {
+      "name": "Kharsia",
+      "km": 710
+     }
+    },
+    "guwahati": {
+     "km": 1857,
+     "hours": 22.35,
+     "via": [
+      "Purnia"
+     ]
+    }
+   },
+   "back": {
+    "delhi": {
+     "km": 320,
+     "hours": 4.56,
+     "through": [
+      "Sepau",
+      "Mathura",
+      "Hodal"
+     ],
+     "halfway": {
+      "name": "Mathura",
+      "km": 160
+     }
+    },
+    "chandigarh": {
+     "km": 580,
+     "hours": 7.69,
+     "through": [
+      "Mathura",
+      "Faridabad",
+      "Panipat"
+     ],
+     "halfway": {
+      "name": "Faridabad",
+      "km": 290
+     }
+    },
+    "jaipur": {
+     "km": 341,
+     "hours": 4.57,
+     "through": [
+      "Sepau",
+      "Nadbai",
+      "Dausa"
+     ],
+     "halfway": {
+      "name": "Nadbai",
+      "km": 170
+     }
+    },
+    "lucknow": {
+     "km": 334,
+     "hours": 4.21,
+     "through": [
+      "Bhind",
+      "Bidhuna",
+      "Safipur"
+     ],
+     "halfway": {
+      "name": "Bidhuna",
+      "km": 167
+     }
+    },
+    "ahmedabad": {
+     "km": 845,
+     "hours": 10.42,
+     "through": [
+      "Kishanganj",
+      "Bhanpura",
+      "Jhalod"
+     ],
+     "halfway": {
+      "name": "Bhanpura",
+      "km": 422
+     }
+    },
+    "mumbai": {
+     "km": 1198,
+     "hours": 14.42,
+     "through": [
+      "Ramganj Mandi",
+      "Thandla",
+      "Bharuch"
+     ],
+     "halfway": {
+      "name": "Thandla",
+      "km": 599
+     }
+    },
+    "pune": {
+     "km": 1168,
+     "hours": 14.78,
+     "through": [
+      "Khanpur",
+      "Pithampur",
+      "Malegaon"
+     ],
+     "halfway": {
+      "name": "Pithampur",
+      "km": 584
+     }
+    },
+    "bengaluru": {
+     "km": 1771,
+     "hours": 22.25
+    },
+    "hyderabad": {
+     "km": 1182,
+     "hours": 14.86,
+     "through": [
+      "Sagar",
+      "Mohkhed",
+      "Jainad"
+     ],
+     "halfway": {
+      "name": "Mohkhed",
+      "km": 591
+     }
+    },
+    "chennai": {
+     "km": 1768,
+     "hours": 22.01
+    },
+    "kolkata": {
+     "km": 1256,
+     "hours": 15.17,
+     "through": [
+      "Bindki",
+      "Durgawati",
+      "Dumri"
+     ],
+     "halfway": {
+      "name": "Durgawati",
+      "km": 628
+     }
+    },
+    "guwahati": {
+     "km": 1672,
+     "hours": 20.51,
+     "via": [
+      "Purnia"
+     ]
+    }
+   },
+   "after": []
+  },
+  "manipur-mizoram": {
+   "start": "Imphal",
+   "end": "Champhai",
+   "round_trip": false,
+   "to": {
+    "delhi": {
+     "km": 2292,
+     "hours": 27.65,
+     "via": [
+      "Purnia"
+     ]
+    },
+    "chandigarh": {
+     "km": 2485,
+     "hours": 30.21,
+     "via": [
+      "Purnia"
+     ]
+    },
+    "jaipur": {
+     "km": 2374,
+     "hours": 28.92,
+     "via": [
+      "Purnia"
+     ]
+    },
+    "lucknow": {
+     "km": 1804,
+     "hours": 22.01,
+     "via": [
+      "Purnia"
+     ]
+    },
+    "ahmedabad": {
+     "km": 2916,
+     "hours": 35.32,
+     "via": [
+      "Purnia",
+      "Siliguri"
+     ]
+    },
+    "mumbai": {
+     "km": 3097,
+     "hours": 37.03,
+     "via": [
+      "Purnia",
+      "Siliguri"
+     ]
+    },
+    "pune": {
+     "km": 3006,
+     "hours": 36.39,
+     "via": [
+      "Purnia",
+      "Siliguri"
+     ]
+    },
+    "bengaluru": {
+     "km": 3204,
+     "hours": 39.81,
+     "via": [
+      "Siliguri"
+     ]
+    },
+    "hyderabad": {
+     "km": 2808,
+     "hours": 34.28,
+     "via": [
+      "Purnia",
+      "Siliguri"
+     ]
+    },
+    "chennai": {
+     "km": 3041,
+     "hours": 37.63,
+     "via": [
+      "Siliguri"
+     ]
+    },
+    "kolkata": {
+     "km": 1465,
+     "hours": 18.21,
+     "through": [
+      "Gazole",
+      "Alipurduar",
+      "Marigaon"
+     ],
+     "via": [
+      "Siliguri"
+     ],
+     "halfway": {
+      "name": "Alipurduar",
+      "km": 732
+     }
+    },
+    "guwahati": {
+     "km": 473,
+     "hours": 5.92,
+     "through": [
+      "Nagaon",
+      "Phuloni",
+      "Jakhama"
+     ],
+     "halfway": {
+      "name": "Phuloni",
+      "km": 236
+     }
+    }
+   },
+   "back": {
+    "delhi": {
+     "km": 2523,
+     "hours": 29.8,
+     "via": [
+      "Siliguri",
+      "Purnia"
+     ]
+    },
+    "chandigarh": {
+     "km": 2749,
+     "hours": 32.42,
+     "via": [
+      "Siliguri",
+      "Purnia"
+     ]
+    },
+    "jaipur": {
+     "km": 2613,
+     "hours": 31.3,
+     "via": [
+      "Siliguri",
+      "Purnia"
+     ]
+    },
+    "lucknow": {
+     "km": 2033,
+     "hours": 24.26,
+     "via": [
+      "Siliguri",
+      "Purnia"
+     ]
+    },
+    "ahmedabad": {
+     "km": 3095,
+     "hours": 37.31,
+     "via": [
+      "Siliguri",
+      "Purnia"
+     ]
+    },
+    "mumbai": {
+     "km": 3269,
+     "hours": 38.59,
+     "via": [
+      "Siliguri",
+      "Purnia"
+     ]
+    },
+    "pune": {
+     "km": 3172,
+     "hours": 37.98,
+     "via": [
+      "Siliguri",
+      "Purnia"
+     ]
+    },
+    "bengaluru": {
+     "km": 3382,
+     "hours": 41.64,
+     "via": [
+      "Siliguri"
+     ]
+    },
+    "hyderabad": {
+     "km": 2987,
+     "hours": 36.29,
+     "via": [
+      "Siliguri",
+      "Purnia"
+     ]
+    },
+    "chennai": {
+     "km": 3232,
+     "hours": 39.31,
+     "via": [
+      "Siliguri"
+     ]
+    },
+    "kolkata": {
+     "km": 1636,
+     "hours": 20.28,
+     "via": [
+      "Siliguri"
+     ]
+    },
+    "guwahati": {
+     "km": 651,
+     "hours": 7.92,
+     "through": [
+      "'N' Thingdawl",
+      "Silchar",
+      "Thadlaskein"
+     ],
+     "halfway": {
+      "name": "Silchar",
+      "km": 326
+     }
+    }
+   },
+   "after": []
+  },
+  "meghalaya": {
+   "start": "Guwahati",
+   "end": "Shillong",
+   "round_trip": false,
+   "to": {
+    "delhi": {
+     "km": 1832,
+     "hours": 22.03,
+     "via": [
+      "Purnia"
+     ]
+    },
+    "chandigarh": {
+     "km": 2024,
+     "hours": 24.6,
+     "via": [
+      "Purnia"
+     ]
+    },
+    "jaipur": {
+     "km": 1913,
+     "hours": 23.3,
+     "via": [
+      "Purnia"
+     ]
+    },
+    "lucknow": {
+     "km": 1343,
+     "hours": 16.39,
+     "through": [
+      "Kasya",
+      "Madhepura",
+      "Dhupguri"
+     ],
+     "via": [
+      "Purnia"
+     ],
+     "halfway": {
+      "name": "Madhepura",
+      "km": 672
+     }
+    },
+    "ahmedabad": {
+     "km": 2439,
+     "hours": 29.39,
+     "via": [
+      "Purnia"
+     ]
+    },
+    "mumbai": {
+     "km": 2620,
+     "hours": 31.1,
+     "via": [
+      "Purnia"
+     ]
+    },
+    "pune": {
+     "km": 2529,
+     "hours": 30.46,
+     "via": [
+      "Purnia"
+     ]
+    },
+    "bengaluru": {
+     "km": 2743,
+     "hours": 34.19,
+     "via": [
+      "Siliguri"
+     ]
+    },
+    "hyderabad": {
+     "km": 2347,
+     "hours": 28.66,
+     "via": [
+      "Purnia",
+      "Siliguri"
+     ]
+    },
+    "chennai": {
+     "km": 2581,
+     "hours": 32.01,
+     "via": [
+      "Siliguri"
+     ]
+    },
+    "kolkata": {
+     "km": 1004,
+     "hours": 12.59,
+     "through": [
+      "Raghunathganj",
+      "Islampur",
+      "Tufanganj"
+     ],
+     "via": [
+      "Siliguri"
+     ],
+     "halfway": {
+      "name": "Islampur",
+      "km": 502
+     }
+    },
+    "guwahati": {
+     "km": 6,
+     "hours": 0.13,
+     "through": [
+      "Dispur"
+     ],
+     "halfway": {
+      "name": "Dispur",
+      "km": 3
+     }
+    }
+   },
+   "back": {
+    "delhi": {
+     "km": 1956,
+     "hours": 22.85,
+     "via": [
+      "Purnia"
+     ]
+    },
+    "chandigarh": {
+     "km": 2181,
+     "hours": 25.46,
+     "via": [
+      "Purnia"
+     ]
+    },
+    "jaipur": {
+     "km": 2045,
+     "hours": 24.34,
+     "via": [
+      "Purnia"
+     ]
+    },
+    "lucknow": {
+     "km": 1465,
+     "hours": 17.3,
+     "through": [
+      "Alipurduar",
+      "Gopalpur",
+      "Mohammadabad"
+     ],
+     "via": [
+      "Purnia"
+     ],
+     "halfway": {
+      "name": "Gopalpur",
+      "km": 732
+     }
+    },
+    "ahmedabad": {
+     "km": 2528,
+     "hours": 30.35,
+     "via": [
+      "Purnia"
+     ]
+    },
+    "mumbai": {
+     "km": 2717,
+     "hours": 31.93,
+     "via": [
+      "Siliguri",
+      "Purnia"
+     ]
+    },
+    "pune": {
+     "km": 2620,
+     "hours": 31.32,
+     "via": [
+      "Siliguri",
+      "Purnia"
+     ]
+    },
+    "bengaluru": {
+     "km": 2830,
+     "hours": 34.98,
+     "via": [
+      "Siliguri"
+     ]
+    },
+    "hyderabad": {
+     "km": 2435,
+     "hours": 29.63,
+     "via": [
+      "Siliguri",
+      "Purnia"
+     ]
+    },
+    "chennai": {
+     "km": 2680,
+     "hours": 32.65,
+     "via": [
+      "Siliguri"
+     ]
+    },
+    "kolkata": {
+     "km": 1084,
+     "hours": 13.63,
+     "through": [
+      "Dotoma",
+      "Chopra",
+      "Suti"
+     ],
+     "via": [
+      "Siliguri"
+     ],
+     "halfway": {
+      "name": "Chopra",
+      "km": 542
+     }
+    },
+    "guwahati": {
+     "km": 98,
+     "hours": 1.27,
+     "through": [
+      "Umsning",
+      "Umling",
+      "Sonapur"
+     ],
+     "halfway": {
+      "name": "Umling",
+      "km": 49
+     }
+    }
+   },
+   "after": []
+  },
+  "mughal-road": {
+   "start": "Srinagar",
+   "end": "Rajouri",
+   "round_trip": false,
+   "to": {
+    "delhi": {
+     "km": 807,
+     "hours": 10.86,
+     "through": [
+      "Kurukshetra",
+      "Jalandhar",
+      "Samba"
+     ],
+     "halfway": {
+      "name": "Jalandhar",
+      "km": 404
+     }
+    },
+    "chandigarh": {
+     "km": 551,
+     "hours": 7.93,
+     "through": [
+      "Hoshiarpur",
+      "Kathua",
+      "Ramban"
+     ],
+     "halfway": {
+      "name": "Kathua",
+      "km": 276
+     }
+    },
+    "jaipur": {
+     "km": 980,
+     "hours": 13.19,
+     "through": [
+      "Dadri",
+      "Dhuri",
+      "Kathua"
+     ],
+     "halfway": {
+      "name": "Dhuri",
+      "km": 490
+     }
+    },
+    "lucknow": {
+     "km": 1227,
+     "hours": 15.87,
+     "through": [
+      "Hasanpur",
+      "Karnal",
+      "Indora"
+     ],
+     "halfway": {
+      "name": "Karnal",
+      "km": 614
+     }
+    },
+    "ahmedabad": {
+     "km": 1519,
+     "hours": 19.46
+    },
+    "mumbai": {
+     "km": 2094,
+     "hours": 25.31
+    },
+    "pune": {
+     "km": 2099,
+     "hours": 26.23
+    },
+    "bengaluru": {
+     "km": 2797,
+     "hours": 34.64
+    },
+    "hyderabad": {
+     "km": 2300,
+     "hours": 29.57
+    },
+    "chennai": {
+     "km": 2970,
+     "hours": 37.22
+    },
+    "kolkata": {
+     "km": 2212,
+     "hours": 27.29
+    },
+    "guwahati": {
+     "km": 2602,
+     "hours": 32.06,
+     "via": [
+      "Purnia"
+     ]
+    }
+   },
+   "back": {
+    "delhi": {
+     "km": 757,
+     "hours": 9.52,
+     "through": [
+      "Kathua",
+      "Phagwara",
+      "Kurukshetra"
+     ],
+     "halfway": {
+      "name": "Phagwara",
+      "km": 378
+     }
+    },
+    "chandigarh": {
+     "km": 500,
+     "hours": 6.55,
+     "through": [
+      "Jammu",
+      "Indora",
+      "Garhshankar"
+     ],
+     "halfway": {
+      "name": "Indora",
+      "km": 250
+     }
+    },
+    "jaipur": {
+     "km": 933,
+     "hours": 11.96,
+     "through": [
+      "Kathua",
+      "Malerkotla",
+      "Narnaul"
+     ],
+     "halfway": {
+      "name": "Malerkotla",
+      "km": 466
+     }
+    },
+    "lucknow": {
+     "km": 1173,
+     "hours": 14.5,
+     "through": [
+      "Dasua",
+      "Karnal",
+      "Tilhar"
+     ],
+     "halfway": {
+      "name": "Karnal",
+      "km": 586
+     }
+    },
+    "ahmedabad": {
+     "km": 1468,
+     "hours": 18.1,
+     "through": [
+      "Shahkot",
+      "Lunkaransar",
+      "Sanchore"
+     ],
+     "halfway": {
+      "name": "Lunkaransar",
+      "km": 734
+     }
+    },
+    "mumbai": {
+     "km": 2041,
+     "hours": 23.87
+    },
+    "pune": {
+     "km": 2043,
+     "hours": 24.64
+    },
+    "bengaluru": {
+     "km": 2744,
+     "hours": 33.11
+    },
+    "hyderabad": {
+     "km": 2251,
+     "hours": 28.08
+    },
+    "chennai": {
+     "km": 2915,
+     "hours": 35.48
+    },
+    "kolkata": {
+     "km": 2137,
+     "hours": 25.55
+    },
+    "guwahati": {
+     "km": 2510,
+     "hours": 30.8,
+     "via": [
+      "Purnia"
+     ]
+    }
+   },
+   "after": []
+  },
+  "munsiyari-kumaon": {
+   "start": "Kathgodam",
+   "end": "Munsiyari",
+   "round_trip": false,
+   "to": {
+    "delhi": {
+     "km": 280,
+     "hours": 3.91,
+     "through": [
+      "Hapur",
+      "Amroha",
+      "Bilaspur"
+     ],
+     "halfway": {
+      "name": "Amroha",
+      "km": 140
+     }
+    },
+    "chandigarh": {
+     "km": 452,
+     "hours": 6.39,
+     "through": [
+      "Yamunanagar",
+      "Haridwar",
+      "Afzalgarh"
+     ],
+     "halfway": {
+      "name": "Haridwar",
+      "km": 226
+     }
+    },
+    "jaipur": {
+     "km": 578,
+     "hours": 7.01,
+     "through": [
+      "Lachhmangarh",
+      "Greater Noida",
+      "Dhanaura"
+     ],
+     "halfway": {
+      "name": "Greater Noida",
+      "km": 289
+     }
+    },
+    "lucknow": {
+     "km": 349,
+     "hours": 4.36,
+     "through": [
+      "Hardoi",
+      "Shahjahanpur",
+      "Pilibhit"
+     ],
+     "halfway": {
+      "name": "Shahjahanpur",
+      "km": 174
+     }
+    },
+    "ahmedabad": {
+     "km": 1255,
+     "hours": 14.62,
+     "through": [
+      "Ratlam",
+      "Digod",
+      "Palwal"
+     ],
+     "halfway": {
+      "name": "Digod",
+      "km": 628
+     }
+    },
+    "mumbai": {
+     "km": 1609,
+     "hours": 18.66
+    },
+    "pune": {
+     "km": 1615,
+     "hours": 19.57
+    },
+    "bengaluru": {
+     "km": 2167,
+     "hours": 27.05
+    },
+    "hyderabad": {
+     "km": 1580,
+     "hours": 19.69
+    },
+    "chennai": {
+     "km": 2172,
+     "hours": 27.01
+    },
+    "kolkata": {
+     "km": 1365,
+     "hours": 16.2,
+     "through": [
+      "Dumri",
+      "Durgawati",
+      "Safipur"
+     ],
+     "halfway": {
+      "name": "Durgawati",
+      "km": 682
+     }
+    },
+    "guwahati": {
+     "km": 1668,
+     "hours": 20.4,
+     "via": [
+      "Purnia"
+     ]
+    }
+   },
+   "back": {
+    "delhi": {
+     "km": 626,
+     "hours": 8.49,
+     "through": [
+      "Lohaghat",
+      "Rudrapur",
+      "Dhanaura"
+     ],
+     "halfway": {
+      "name": "Rudrapur",
+      "km": 313
+     }
+    },
+    "chandigarh": {
+     "km": 642,
+     "hours": 9.88,
+     "through": [
+      "Garud",
+      "Jakhani Dhar",
+      "Vikasnagar"
+     ],
+     "halfway": {
+      "name": "Jakhani Dhar",
+      "km": 321
+     }
+    },
+    "jaipur": {
+     "km": 859,
+     "hours": 10.91,
+     "through": [
+      "Purnagiri",
+      "Kasganj",
+      "Bharatpur"
+     ],
+     "halfway": {
+      "name": "Kasganj",
+      "km": 430
+     }
+    },
+    "lucknow": {
+     "km": 621,
+     "hours": 7.92,
+     "through": [
+      "Lohaghat",
+      "Pilibhit",
+      "Hardoi"
+     ],
+     "halfway": {
+      "name": "Pilibhit",
+      "km": 310
+     }
+    },
+    "ahmedabad": {
+     "km": 1525,
+     "hours": 18.31
+    },
+    "mumbai": {
+     "km": 1878,
+     "hours": 22.31
+    },
+    "pune": {
+     "km": 1880,
+     "hours": 23.07
+    },
+    "bengaluru": {
+     "km": 2441,
+     "hours": 30.45
+    },
+    "hyderabad": {
+     "km": 1852,
+     "hours": 23.05
+    },
+    "chennai": {
+     "km": 2438,
+     "hours": 30.2
+    },
+    "kolkata": {
+     "km": 1611,
+     "hours": 19.34
+    },
+    "guwahati": {
+     "km": 1915,
+     "hours": 23.98,
+     "via": [
+      "Lakhimpur",
+      "Purnia"
+     ]
+    }
+   },
+   "after": []
+  },
+  "mussoorie-dhanaulti-chakrata": {
+   "start": "Dehradun",
+   "end": "Chakrata",
+   "round_trip": false,
+   "to": {
+    "delhi": {
+     "km": 229,
+     "hours": 3.21,
+     "through": [
+      "Baghpat",
+      "Shamli",
+      "Saharanpur"
+     ],
+     "halfway": {
+      "name": "Shamli",
+      "km": 114
+     }
+    },
+    "chandigarh": {
+     "km": 166,
+     "hours": 2.54,
+     "through": [
+      "Shahzadpur",
+      "Nahan",
+      "Vikasnagar"
+     ],
+     "halfway": {
+      "name": "Nahan",
+      "km": 83
+     }
+    },
+    "jaipur": {
+     "km": 517,
+     "hours": 6.43,
+     "through": [
+      "Reni",
+      "Faridabad",
+      "Shamli"
+     ],
+     "halfway": {
+      "name": "Faridabad",
+      "km": 258
+     }
+    },
+    "lucknow": {
+     "km": 554,
+     "hours": 7.28,
+     "through": [
+      "Shahabad",
+      "Meerganj",
+      "Nagina"
+     ],
+     "halfway": {
+      "name": "Meerganj",
+      "km": 277
+     }
+    },
+    "ahmedabad": {
+     "km": 1194,
+     "hours": 14.03,
+     "through": [
+      "Jaora",
+      "Digod",
+      "Nuh"
+     ],
+     "halfway": {
+      "name": "Digod",
+      "km": 597
+     }
+    },
+    "mumbai": {
+     "km": 1548,
+     "hours": 18.08
+    },
+    "pune": {
+     "km": 1553,
+     "hours": 18.99
+    },
+    "bengaluru": {
+     "km": 2251,
+     "hours": 27.4
+    },
+    "hyderabad": {
+     "km": 1754,
+     "hours": 22.34
+    },
+    "chennai": {
+     "km": 2377,
+     "hours": 29.7
+    },
+    "kolkata": {
+     "km": 1552,
+     "hours": 18.79
+    },
+    "guwahati": {
+     "km": 1893,
+     "hours": 23.53,
+     "via": [
+      "Purnia"
+     ]
+    }
+   },
+   "back": {
+    "delhi": {
+     "km": 292,
+     "hours": 4.06,
+     "through": [
+      "Behat",
+      "Rampur Maniharan",
+      "Baghpat"
+     ],
+     "halfway": {
+      "name": "Rampur Maniharan",
+      "km": 146
+     }
+    },
+    "chandigarh": {
+     "km": 193,
+     "hours": 3.02,
+     "through": [
+      "Vikasnagar",
+      "Paonta Sahib",
+      "Shahzadpur"
+     ],
+     "halfway": {
+      "name": "Paonta Sahib",
+      "km": 96
+     }
+    },
+    "jaipur": {
+     "km": 576,
+     "hours": 7.4,
+     "through": [
+      "Shamli",
+      "Bahadurgarh",
+      "Behror"
+     ],
+     "halfway": {
+      "name": "Bahadurgarh",
+      "km": 288
+     }
+    },
+    "lucknow": {
+     "km": 701,
+     "hours": 8.49,
+     "through": [
+      "Shamli",
+      "Chandausi",
+      "Sawayajpur"
+     ],
+     "halfway": {
+      "name": "Chandausi",
+      "km": 350
+     }
+    },
+    "ahmedabad": {
+     "km": 1261,
+     "hours": 14.88,
+     "through": [
+      "Nuh",
+      "Digod",
+      "Ratlam"
+     ],
+     "halfway": {
+      "name": "Digod",
+      "km": 630
+     }
+    },
+    "mumbai": {
+     "km": 1613,
+     "hours": 18.87
+    },
+    "pune": {
+     "km": 1615,
+     "hours": 19.64
+    },
+    "bengaluru": {
+     "km": 2316,
+     "hours": 28.11
+    },
+    "hyderabad": {
+     "km": 1823,
+     "hours": 23.08
+    },
+    "chennai": {
+     "km": 2388,
+     "hours": 30.37
+    },
+    "kolkata": {
+     "km": 1665,
+     "hours": 19.54
+    },
+    "guwahati": {
+     "km": 2038,
+     "hours": 24.79,
+     "via": [
+      "Purnia"
+     ]
+    }
+   },
+   "after": []
+  },
+  "nagaland": {
+   "start": "Dimapur",
+   "end": "Mon",
+   "round_trip": false,
+   "to": {
+    "delhi": {
+     "km": 2086,
+     "hours": 25.15,
+     "via": [
+      "Purnia"
+     ]
+    },
+    "chandigarh": {
+     "km": 2278,
+     "hours": 27.72,
+     "via": [
+      "Purnia"
+     ]
+    },
+    "jaipur": {
+     "km": 2167,
+     "hours": 26.42,
+     "via": [
+      "Purnia"
+     ]
+    },
+    "lucknow": {
+     "km": 1597,
+     "hours": 19.52,
+     "via": [
+      "Purnia"
+     ]
+    },
+    "ahmedabad": {
+     "km": 2693,
+     "hours": 32.51,
+     "via": [
+      "Purnia"
+     ]
+    },
+    "mumbai": {
+     "km": 2890,
+     "hours": 34.54,
+     "via": [
+      "Purnia",
+      "Siliguri"
+     ]
+    },
+    "pune": {
+     "km": 2799,
+     "hours": 33.9,
+     "via": [
+      "Purnia",
+      "Siliguri"
+     ]
+    },
+    "bengaluru": {
+     "km": 2997,
+     "hours": 37.31,
+     "via": [
+      "Siliguri"
+     ]
+    },
+    "hyderabad": {
+     "km": 2601,
+     "hours": 31.78,
+     "via": [
+      "Purnia",
+      "Siliguri"
+     ]
+    },
+    "chennai": {
+     "km": 2835,
+     "hours": 35.13,
+     "via": [
+      "Siliguri"
+     ]
+    },
+    "kolkata": {
+     "km": 1258,
+     "hours": 15.71,
+     "through": [
+      "Farakka",
+      "Jalpaiguri",
+      "Chenga"
+     ],
+     "via": [
+      "Siliguri"
+     ],
+     "halfway": {
+      "name": "Jalpaiguri",
+      "km": 629
+     }
+    },
+    "guwahati": {
+     "km": 266,
+     "hours": 3.42,
+     "through": [
+      "Marigaon",
+      "Nagaon",
+      "Phuloni"
+     ],
+     "halfway": {
+      "name": "Nagaon",
+      "km": 133
+     }
+    }
+   },
+   "back": {
+    "delhi": {
+     "km": 2292,
+     "hours": 26.95,
+     "via": [
+      "Purnia"
+     ]
+    },
+    "chandigarh": {
+     "km": 2518,
+     "hours": 29.57,
+     "via": [
+      "Purnia"
+     ]
+    },
+    "jaipur": {
+     "km": 2382,
+     "hours": 28.45,
+     "via": [
+      "Purnia"
+     ]
+    },
+    "lucknow": {
+     "km": 1802,
+     "hours": 21.41,
+     "via": [
+      "Purnia"
+     ]
+    },
+    "ahmedabad": {
+     "km": 2864,
+     "hours": 34.46,
+     "via": [
+      "Purnia"
+     ]
+    },
+    "mumbai": {
+     "km": 3038,
+     "hours": 35.74,
+     "via": [
+      "Purnia"
+     ]
+    },
+    "pune": {
+     "km": 2941,
+     "hours": 35.13,
+     "via": [
+      "Purnia"
+     ]
+    },
+    "bengaluru": {
+     "km": 3166,
+     "hours": 39.09,
+     "via": [
+      "Siliguri"
+     ]
+    },
+    "hyderabad": {
+     "km": 2771,
+     "hours": 33.74,
+     "via": [
+      "Siliguri",
+      "Purnia"
+     ]
+    },
+    "chennai": {
+     "km": 3016,
+     "hours": 36.76,
+     "via": [
+      "Siliguri"
+     ]
+    },
+    "kolkata": {
+     "km": 1420,
+     "hours": 17.74,
+     "through": [
+      "Mazbat",
+      "Alipurduar",
+      "Gazole"
+     ],
+     "via": [
+      "Siliguri"
+     ],
+     "halfway": {
+      "name": "Alipurduar",
+      "km": 710
+     }
+    },
+    "guwahati": {
+     "km": 454,
+     "hours": 5.53,
+     "through": [
+      "Teok",
+      "Bokakhat",
+      "Nagaon"
+     ],
+     "halfway": {
+      "name": "Bokakhat",
+      "km": 227
+     }
+    }
+   },
+   "after": []
+  },
+  "nepal-mustang": {
+   "start": "Sunauli",
+   "end": "Muktinath",
+   "round_trip": false,
+   "to": {
+    "delhi": {
+     "km": 810,
+     "hours": 9.47,
+     "through": [
+      "Bisauli",
+      "Bilgram",
+      "Faizabad"
+     ],
+     "halfway": {
+      "name": "Bilgram",
+      "km": 405
+     }
+    },
+    "chandigarh": {
+     "km": 1003,
+     "hours": 12.04,
+     "through": [
+      "Meerut",
+      "Shahjahanpur",
+      "Rudauli"
+     ],
+     "halfway": {
+      "name": "Shahjahanpur",
+      "km": 502
+     }
+    },
+    "jaipur": {
+     "km": 892,
+     "hours": 10.74,
+     "through": [
+      "Agra",
+      "Kannauj",
+      "Rudauli"
+     ],
+     "halfway": {
+      "name": "Kannauj",
+      "km": 446
+     }
+    },
+    "lucknow": {
+     "km": 322,
+     "hours": 3.84,
+     "through": [
+      "Rudauli",
+      "Harraiya",
+      "Mehdawal"
+     ],
+     "halfway": {
+      "name": "Harraiya",
+      "km": 161
+     }
+    },
+    "ahmedabad": {
+     "km": 1470,
+     "hours": 17.45,
+     "through": [
+      "Jaora",
+      "Shivpuri",
+      "Purwa"
+     ],
+     "halfway": {
+      "name": "Shivpuri",
+      "km": 735
+     }
+    },
+    "mumbai": {
+     "km": 1752,
+     "hours": 20.32
+    },
+    "pune": {
+     "km": 1661,
+     "hours": 19.68
+    },
+    "bengaluru": {
+     "km": 2053,
+     "hours": 25.42
+    },
+    "hyderabad": {
+     "km": 1466,
+     "hours": 18.06,
+     "through": [
+      "Ralegaon",
+      "Jabalpur",
+      "Prayagraj"
+     ],
+     "halfway": {
+      "name": "Jabalpur",
+      "km": 733
+     }
+    },
+    "chennai": {
+     "km": 2057,
+     "hours": 25.38
+    },
+    "kolkata": {
+     "km": 934,
+     "hours": 11.36,
+     "through": [
+      "Asansol Kulti",
+      "Chauparan",
+      "Ballia"
+     ],
+     "halfway": {
+      "name": "Chauparan",
+      "km": 467
+     }
+    },
+    "guwahati": {
+     "km": 1166,
+     "hours": 14.39,
+     "through": [
+      "Alipurduar",
+      "Purnia",
+      "Kalyanpur"
+     ],
+     "via": [
+      "Purnia",
+      "Gorakhpur"
+     ],
+     "halfway": {
+      "name": "Purnia",
+      "km": 583
+     }
+    }
+   },
+   "back": {
+    "delhi": {
+     "km": 969,
+     "hours": 17.88,
+     "through": [
+      "Kapilvastu",
+      "Biswan",
+      "Budaun"
+     ],
+     "halfway": {
+      "name": "Biswan",
+      "km": 484
+     }
+    },
+    "chandigarh": {
+     "km": 1195,
+     "hours": 20.49,
+     "through": [
+      "Tulsipur",
+      "Shahjahanpur",
+      "Meerut"
+     ],
+     "halfway": {
+      "name": "Shahjahanpur",
+      "km": 598
+     }
+    },
+    "jaipur": {
+     "km": 1125,
+     "hours": 19.75,
+     "through": [
+      "Tulsipur",
+      "Hasanganj",
+      "Agra"
+     ],
+     "halfway": {
+      "name": "Hasanganj",
+      "km": 562
+     }
+    },
+    "lucknow": {
+     "km": 550,
+     "hours": 12.69,
+     "through": [
+      "Gulmi",
+      "Kapilvastu",
+      "Gonda"
+     ],
+     "halfway": {
+      "name": "Kapilvastu",
+      "km": 275
+     }
+    },
+    "ahmedabad": {
+     "km": 1697,
+     "hours": 26.32
+    },
+    "mumbai": {
+     "km": 2016,
+     "hours": 29.23
+    },
+    "pune": {
+     "km": 1919,
+     "hours": 28.61
+    },
+    "bengaluru": {
+     "km": 2322,
+     "hours": 34.54
+    },
+    "hyderabad": {
+     "km": 1733,
+     "hours": 27.14
+    },
+    "chennai": {
+     "km": 2319,
+     "hours": 34.29
+    },
+    "kolkata": {
+     "km": 1177,
+     "hours": 20.21,
+     "through": [
+      "Gorakhpur",
+      "Daudnagar",
+      "Dumri"
+     ],
+     "halfway": {
+      "name": "Daudnagar",
+      "km": 588
+     }
+    },
+    "guwahati": {
+     "km": 1208,
+     "hours": 20.6,
+     "through": [
+      "Makwanpur",
+      "Saptari",
+      "Alipurduar"
+     ],
+     "halfway": {
+      "name": "Saptari",
+      "km": 604
+     }
+    }
+   },
+   "after": []
+  },
+  "nilgiris": {
+   "start": "Bengaluru",
+   "end": "Coonoor",
+   "round_trip": false,
+   "to": {
+    "delhi": {
+     "km": 2031,
+     "hours": 24.2
+    },
+    "chandigarh": {
+     "km": 2293,
+     "hours": 27.17
+    },
+    "jaipur": {
+     "km": 1842,
+     "hours": 22.24
+    },
+    "lucknow": {
+     "km": 1886,
+     "hours": 23.31
+    },
+    "ahmedabad": {
+     "km": 1434,
+     "hours": 17.28,
+     "through": [
+      "Kaparada",
+      "Karmala",
+      "Kushtagi"
+     ],
+     "halfway": {
+      "name": "Karmala",
+      "km": 717
+     }
+    },
+    "mumbai": {
+     "km": 982,
+     "hours": 12.06,
+     "through": [
+      "Malshiras",
+      "Nidagundi",
+      "Kudligi"
+     ],
+     "halfway": {
+      "name": "Nidagundi",
+      "km": 491
+     }
+    },
+    "pune": {
+     "km": 839,
+     "hours": 10.15,
+     "through": [
+      "Pandharpur",
+      "Kushtagi",
+      "Chitradurga"
+     ],
+     "halfway": {
+      "name": "Kushtagi",
+      "km": 420
+     }
+    },
+    "bengaluru": {
+     "km": 1,
+     "hours": 0.05,
+     "through": []
+    },
+    "hyderabad": {
+     "km": 566,
+     "hours": 7.64,
+     "through": [
+      "Pebbair",
+      "Dhone",
+      "Penukonda"
+     ],
+     "halfway": {
+      "name": "Dhone",
+      "km": 283
+     }
+    },
+    "chennai": {
+     "km": 328,
+     "hours": 4.14,
+     "through": [
+      "Kanchipuram",
+      "Katpadi",
+      "Kolar Gold Field"
+     ],
+     "halfway": {
+      "name": "Katpadi",
+      "km": 164
+     }
+    },
+    "kolkata": {
+     "km": 1827,
+     "hours": 22.61
+    },
+    "guwahati": {
+     "km": 2739,
+     "hours": 33.95,
+     "via": [
+      "Siliguri"
+     ]
+    }
+   },
+   "back": {
+    "delhi": {
+     "km": 2255,
+     "hours": 27.32
+    },
+    "chandigarh": {
+     "km": 2525,
+     "hours": 30.39
+    },
+    "jaipur": {
+     "km": 2074,
+     "hours": 25.42
+    },
+    "lucknow": {
+     "km": 2211,
+     "hours": 27.17
+    },
+    "ahmedabad": {
+     "km": 1652,
+     "hours": 20.22
+    },
+    "mumbai": {
+     "km": 1212,
+     "hours": 15.01,
+     "through": [
+      "Chikkanayakanahalli",
+      "Hosapete",
+      "Pandharpur"
+     ],
+     "halfway": {
+      "name": "Hosapete",
+      "km": 606
+     }
+    },
+    "pune": {
+     "km": 1066,
+     "hours": 13.09,
+     "through": [
+      "Turuvekere",
+      "Kudligi",
+      "Jat"
+     ],
+     "halfway": {
+      "name": "Kudligi",
+      "km": 533
+     }
+    },
+    "bengaluru": {
+     "km": 317,
+     "hours": 4.35,
+     "through": [
+      "Gundlupet",
+      "Mysuru",
+      "Madduru"
+     ],
+     "halfway": {
+      "name": "Mysuru",
+      "km": 158
+     }
+    },
+    "hyderabad": {
+     "km": 890,
+     "hours": 11.35,
+     "through": [
+      "Nagamangala",
+      "Molakalmuru",
+      "Raichur"
+     ],
+     "halfway": {
+      "name": "Molakalmuru",
+      "km": 445
+     }
+    },
+    "chennai": {
+     "km": 544,
+     "hours": 7.25,
+     "through": [
+      "Erode",
+      "Harur",
+      "Tindivanam"
+     ],
+     "halfway": {
+      "name": "Harur",
+      "km": 272
+     }
+    },
+    "kolkata": {
+     "km": 2122,
+     "hours": 26.52
+    },
+    "guwahati": {
+     "km": 3033,
+     "hours": 37.85,
+     "via": [
+      "Siliguri"
+     ]
+    }
+   },
+   "after": []
+  },
+  "north-sikkim": {
+   "start": "Gangtok",
+   "end": "Yumthang",
+   "round_trip": false,
+   "to": {
+    "delhi": {
+     "km": 1533,
+     "hours": 18.55,
+     "via": [
+      "Purnia"
+     ]
+    },
+    "chandigarh": {
+     "km": 1726,
+     "hours": 21.12,
+     "via": [
+      "Purnia"
+     ]
+    },
+    "jaipur": {
+     "km": 1615,
+     "hours": 19.83,
+     "via": [
+      "Purnia"
+     ]
+    },
+    "lucknow": {
+     "km": 1045,
+     "hours": 12.92,
+     "through": [
+      "Gorakhpur",
+      "Bochaha",
+      "Dagarua"
+     ],
+     "via": [
+      "Purnia"
+     ],
+     "halfway": {
+      "name": "Bochaha",
+      "km": 522
+     }
+    },
+    "ahmedabad": {
+     "km": 2140,
+     "hours": 25.91,
+     "via": [
+      "Purnia"
+     ]
+    },
+    "mumbai": {
+     "km": 2321,
+     "hours": 27.63,
+     "via": [
+      "Purnia"
+     ]
+    },
+    "pune": {
+     "km": 2230,
+     "hours": 26.98,
+     "via": [
+      "Purnia"
+     ]
+    },
+    "bengaluru": {
+     "km": 2429,
+     "hours": 30.4
+    },
+    "hyderabad": {
+     "km": 2032,
+     "hours": 24.87,
+     "via": [
+      "Purnia"
+     ]
+    },
+    "chennai": {
+     "km": 2266,
+     "hours": 28.22
+    },
+    "kolkata": {
+     "km": 689,
+     "hours": 8.8,
+     "through": [
+      "Beldanga",
+      "Old Maldah",
+      "Islampur"
+     ],
+     "halfway": {
+      "name": "Old Maldah",
+      "km": 344
+     }
+    },
+    "guwahati": {
+     "km": 518,
+     "hours": 6.26,
+     "through": [
+      "Barnagar",
+      "Tufanganj",
+      "Nagrakata"
+     ],
+     "halfway": {
+      "name": "Tufanganj",
+      "km": 259
+     }
+    }
+   },
+   "back": {
+    "delhi": {
+     "km": 1662,
+     "hours": 20.52,
+     "via": [
+      "Purnia"
+     ]
+    },
+    "chandigarh": {
+     "km": 1888,
+     "hours": 23.13,
+     "via": [
+      "Purnia"
+     ]
+    },
+    "jaipur": {
+     "km": 1752,
+     "hours": 22.01,
+     "via": [
+      "Purnia"
+     ]
+    },
+    "lucknow": {
+     "km": 1172,
+     "hours": 14.97,
+     "through": [
+      "Baisi",
+      "Pandarak",
+      "Mau"
+     ],
+     "via": [
+      "Purnia"
+     ],
+     "halfway": {
+      "name": "Pandarak",
+      "km": 586
+     }
+    },
+    "ahmedabad": {
+     "km": 2234,
+     "hours": 28.02,
+     "via": [
+      "Purnia"
+     ]
+    },
+    "mumbai": {
+     "km": 2409,
+     "hours": 29.31,
+     "via": [
+      "Purnia"
+     ]
+    },
+    "pune": {
+     "km": 2311,
+     "hours": 28.69,
+     "via": [
+      "Purnia"
+     ]
+    },
+    "bengaluru": {
+     "km": 2521,
+     "hours": 32.35
+    },
+    "hyderabad": {
+     "km": 2127,
+     "hours": 27.0,
+     "via": [
+      "Purnia"
+     ]
+    },
+    "chennai": {
+     "km": 2371,
+     "hours": 30.02
+    },
+    "kolkata": {
+     "km": 775,
+     "hours": 11.0,
+     "through": [
+      "Phansidewa",
+      "Itahar",
+      "Berhampore"
+     ],
+     "halfway": {
+      "name": "Itahar",
+      "km": 388
+     }
+    },
+    "guwahati": {
+     "km": 610,
+     "hours": 8.4,
+     "through": [
+      "Kalimpong",
+      "Alipurduar",
+      "Bijni"
+     ],
+     "halfway": {
+      "name": "Alipurduar",
+      "km": 305
+     }
+    }
+   },
+   "after": []
+  },
+  "nubra-turtuk": {
+   "start": "Leh",
+   "end": "Turtuk",
+   "round_trip": false,
+   "to": {
+    "delhi": {
+     "km": 958,
+     "hours": 12.94,
+     "through": [
+      "Ambala",
+      "Mandi",
+      "Lahaul"
+     ],
+     "halfway": {
+      "name": "Mandi",
+      "km": 479
+     }
+    },
+    "chandigarh": {
+     "km": 695,
+     "hours": 9.76,
+     "through": [
+      "Mandi",
+      "Lahaul"
+     ],
+     "halfway": {
+      "name": "Lahaul",
+      "km": 348
+     }
+    },
+    "jaipur": {
+     "km": 1172,
+     "hours": 15.6,
+     "through": [
+      "Dadri",
+      "Morinda",
+      "Lahaul"
+     ],
+     "halfway": {
+      "name": "Morinda",
+      "km": 586
+     }
+    },
+    "lucknow": {
+     "km": 1399,
+     "hours": 17.78,
+     "through": [
+      "Hasanpur",
+      "Yamunanagar",
+      "Lahaul"
+     ],
+     "halfway": {
+      "name": "Yamunanagar",
+      "km": 700
+     }
+    },
+    "ahmedabad": {
+     "km": 1808,
+     "hours": 23.13
+    },
+    "mumbai": {
+     "km": 2287,
+     "hours": 27.76
+    },
+    "pune": {
+     "km": 2292,
+     "hours": 28.67
+    },
+    "bengaluru": {
+     "km": 2990,
+     "hours": 37.08
+    },
+    "hyderabad": {
+     "km": 2493,
+     "hours": 32.02
+    },
+    "chennai": {
+     "km": 3068,
+     "hours": 39.65
+    },
+    "kolkata": {
+     "km": 2383,
+     "hours": 29.21
+    },
+    "guwahati": {
+     "km": 2773,
+     "hours": 33.98,
+     "via": [
+      "Purnia"
+     ]
+    }
+   },
+   "back": {
+    "delhi": {
+     "km": 1146,
+     "hours": 17.3,
+     "through": [
+      "Bhuntar",
+      "Ambala"
+     ],
+     "halfway": {
+      "name": "Bhuntar",
+      "km": 573
+     }
+    },
+    "chandigarh": {
+     "km": 883,
+     "hours": 14.16,
+     "through": [
+      "Lahaul",
+      "Bhuntar"
+     ],
+     "halfway": {
+      "name": "Lahaul",
+      "km": 442
+     }
+    },
+    "jaipur": {
+     "km": 1362,
+     "hours": 20.06,
+     "through": [
+      "Bilaspur",
+      "Narnaul"
+     ],
+     "halfway": {
+      "name": "Bilaspur",
+      "km": 681
+     }
+    },
+    "lucknow": {
+     "km": 1587,
+     "hours": 22.15
+    },
+    "ahmedabad": {
+     "km": 2008,
+     "hours": 27.52
+    },
+    "mumbai": {
+     "km": 2472,
+     "hours": 32.0
+    },
+    "pune": {
+     "km": 2474,
+     "hours": 32.77
+    },
+    "bengaluru": {
+     "km": 3174,
+     "hours": 41.24
+    },
+    "hyderabad": {
+     "km": 2682,
+     "hours": 36.21
+    },
+    "chennai": {
+     "km": 3345,
+     "hours": 43.62
+    },
+    "kolkata": {
+     "km": 2551,
+     "hours": 33.2
+    },
+    "guwahati": {
+     "km": 2925,
+     "hours": 38.45,
+     "via": [
+      "Purnia"
+     ]
+    }
+   },
+   "after": [
+    "manali-leh",
+    "srinagar-leh"
+   ]
+  },
+  "odisha": {
+   "start": "Bhubaneswar",
+   "end": "Deomali",
+   "round_trip": false,
+   "to": {
+    "delhi": {
+     "km": 1634,
+     "hours": 19.02
+    },
+    "chandigarh": {
+     "km": 1826,
+     "hours": 21.59
+    },
+    "jaipur": {
+     "km": 1645,
+     "hours": 20.31
+    },
+    "lucknow": {
+     "km": 1142,
+     "hours": 13.89,
+     "through": [
+      "Pindra",
+      "Barhi",
+      "Jagannathpur"
+     ],
+     "halfway": {
+      "name": "Barhi",
+      "km": 571
+     }
+    },
+    "ahmedabad": {
+     "km": 1675,
+     "hours": 20.02
+    },
+    "mumbai": {
+     "km": 1618,
+     "hours": 19.09
+    },
+    "pune": {
+     "km": 1527,
+     "hours": 18.44
+    },
+    "bengaluru": {
+     "km": 1391,
+     "hours": 17.33,
+     "through": [
+      "Komarolu",
+      "Bapulapadu",
+      "Laveru"
+     ],
+     "halfway": {
+      "name": "Bapulapadu",
+      "km": 696
+     }
+    },
+    "hyderabad": {
+     "km": 993,
+     "hours": 12.19,
+     "through": [
+      "Sathupally",
+      "Nakkapalle",
+      "Sompeta"
+     ],
+     "halfway": {
+      "name": "Nakkapalle",
+      "km": 496
+     }
+    },
+    "chennai": {
+     "km": 1228,
+     "hours": 15.15,
+     "through": [
+      "Ongole",
+      "Rajanagaram",
+      "Palasa"
+     ],
+     "halfway": {
+      "name": "Rajanagaram",
+      "km": 614
+     }
+    },
+    "kolkata": {
+     "km": 439,
+     "hours": 5.39,
+     "through": [
+      "Kharagpur",
+      "Baleshwar",
+      "Bhandari Pokhari"
+     ],
+     "halfway": {
+      "name": "Baleshwar",
+      "km": 220
+     }
+    },
+    "guwahati": {
+     "km": 1352,
+     "hours": 16.73,
+     "through": [
+      "Dhupguri",
+      "Old Maldah",
+      "Medinipur"
+     ],
+     "via": [
+      "Siliguri"
+     ],
+     "halfway": {
+      "name": "Old Maldah",
+      "km": 676
+     }
+    }
+   },
+   "back": {
+    "delhi": {
+     "km": 1570,
+     "hours": 19.69
+    },
+    "chandigarh": {
+     "km": 1829,
+     "hours": 22.82
+    },
+    "jaipur": {
+     "km": 1583,
+     "hours": 19.64
+    },
+    "lucknow": {
+     "km": 1233,
+     "hours": 15.91,
+     "through": [
+      "Gariyaband",
+      "Pandariya",
+      "Mangawan"
+     ],
+     "halfway": {
+      "name": "Pandariya",
+      "km": 616
+     }
+    },
+    "ahmedabad": {
+     "km": 1483,
+     "hours": 18.61,
+     "through": [
+      "Durgkondal",
+      "Multai",
+      "Indore"
+     ],
+     "halfway": {
+      "name": "Multai",
+      "km": 742
+     }
+    },
+    "mumbai": {
+     "km": 1341,
+     "hours": 16.33,
+     "through": [
+      "Bijapur",
+      "Bhokar",
+      "Beed"
+     ],
+     "halfway": {
+      "name": "Bhokar",
+      "km": 670
+     }
+    },
+    "pune": {
+     "km": 1194,
+     "hours": 14.64,
+     "through": [
+      "Bijapur",
+      "Metpalli",
+      "Latur"
+     ],
+     "halfway": {
+      "name": "Metpalli",
+      "km": 597
+     }
+    },
+    "bengaluru": {
+     "km": 1123,
+     "hours": 14.74,
+     "through": [
+      "Thondangi",
+      "Narasaraopet",
+      "S.Mydukur"
+     ],
+     "halfway": {
+      "name": "Narasaraopet",
+      "km": 562
+     }
+    },
+    "hyderabad": {
+     "km": 654,
+     "hours": 8.69,
+     "through": [
+      "Malkangiri",
+      "Etapaka",
+      "Nellikudur"
+     ],
+     "halfway": {
+      "name": "Etapaka",
+      "km": 327
+     }
+    },
+    "chennai": {
+     "km": 973,
+     "hours": 12.41,
+     "through": [
+      "Tuni",
+      "Bantumilli",
+      "Dagadarthi"
+     ],
+     "halfway": {
+      "name": "Bantumilli",
+      "km": 486
+     }
+    },
+    "kolkata": {
+     "km": 889,
+     "hours": 11.88,
+     "through": [
+      "Sompeta",
+      "Basta"
+     ]
+    },
+    "guwahati": {
+     "km": 1800,
+     "hours": 23.21,
+     "via": [
+      "Siliguri"
+     ]
+    }
+   },
+   "after": []
+  },
+  "pangong-hanle-tso-moriri": {
+   "start": "Leh",
+   "end": "Leh",
+   "round_trip": true,
+   "to": {
+    "delhi": {
+     "km": 958,
+     "hours": 12.94,
+     "through": [
+      "Ambala",
+      "Mandi",
+      "Lahaul"
+     ],
+     "halfway": {
+      "name": "Mandi",
+      "km": 479
+     }
+    },
+    "chandigarh": {
+     "km": 695,
+     "hours": 9.76,
+     "through": [
+      "Mandi",
+      "Lahaul"
+     ],
+     "halfway": {
+      "name": "Lahaul",
+      "km": 348
+     }
+    },
+    "jaipur": {
+     "km": 1172,
+     "hours": 15.6,
+     "through": [
+      "Dadri",
+      "Morinda",
+      "Lahaul"
+     ],
+     "halfway": {
+      "name": "Morinda",
+      "km": 586
+     }
+    },
+    "lucknow": {
+     "km": 1399,
+     "hours": 17.78,
+     "through": [
+      "Hasanpur",
+      "Yamunanagar",
+      "Lahaul"
+     ],
+     "halfway": {
+      "name": "Yamunanagar",
+      "km": 700
+     }
+    },
+    "ahmedabad": {
+     "km": 1808,
+     "hours": 23.13
+    },
+    "mumbai": {
+     "km": 2287,
+     "hours": 27.76
+    },
+    "pune": {
+     "km": 2292,
+     "hours": 28.67
+    },
+    "bengaluru": {
+     "km": 2990,
+     "hours": 37.08
+    },
+    "hyderabad": {
+     "km": 2493,
+     "hours": 32.02
+    },
+    "chennai": {
+     "km": 3068,
+     "hours": 39.65
+    },
+    "kolkata": {
+     "km": 2383,
+     "hours": 29.21
+    },
+    "guwahati": {
+     "km": 2773,
+     "hours": 33.98,
+     "via": [
+      "Purnia"
+     ]
+    }
+   },
+   "back": {},
+   "after": [
+    "manali-leh",
+    "srinagar-leh"
+   ]
+  },
+  "rajasthan-desert": {
+   "start": "Jaipur",
+   "end": "Jaisalmer",
+   "round_trip": false,
+   "to": {
+    "delhi": {
+     "km": 298,
+     "hours": 3.38,
+     "through": [
+      "Nuh",
+      "Lachhmangarh",
+      "Baswa"
+     ],
+     "halfway": {
+      "name": "Lachhmangarh",
+      "km": 149
+     }
+    },
+    "chandigarh": {
+     "km": 471,
+     "hours": 5.81,
+     "through": [
+      "Fatehpur Pundri",
+      "Narnaul",
+      "Kotpuli"
+     ],
+     "halfway": {
+      "name": "Narnaul",
+      "km": 236
+     }
+    },
+    "jaipur": {
+     "km": 4,
+     "hours": 0.06,
+     "through": []
+    },
+    "lucknow": {
+     "km": 567,
+     "hours": 6.88,
+     "through": [
+      "Chhibramau",
+      "Firozabad",
+      "Bhusawar"
+     ],
+     "halfway": {
+      "name": "Firozabad",
+      "km": 284
+     }
+    },
+    "ahmedabad": {
+     "km": 654,
+     "hours": 7.93,
+     "through": [
+      "Kherwara",
+      "Rajsamand",
+      "Beawar"
+     ],
+     "halfway": {
+      "name": "Rajsamand",
+      "km": 327
+     }
+    },
+    "mumbai": {
+     "km": 1138,
+     "hours": 13.06,
+     "through": [
+      "Bharuch",
+      "Thandla",
+      "Bhanpura"
+     ],
+     "halfway": {
+      "name": "Thandla",
+      "km": 569
+     }
+    },
+    "pune": {
+     "km": 1144,
+     "hours": 13.98,
+     "through": [
+      "Malegaon",
+      "Pithampur",
+      "Digod"
+     ],
+     "halfway": {
+      "name": "Pithampur",
+      "km": 572
+     }
+    },
+    "bengaluru": {
+     "km": 1841,
+     "hours": 22.39
+    },
+    "hyderabad": {
+     "km": 1344,
+     "hours": 17.32,
+     "through": [
+      "Hingoli",
+      "Pandhana",
+      "Garoth"
+     ],
+     "halfway": {
+      "name": "Pandhana",
+      "km": 672
+     }
+    },
+    "chennai": {
+     "km": 2014,
+     "hours": 24.97
+    },
+    "kolkata": {
+     "km": 1520,
+     "hours": 18.25
+    },
+    "guwahati": {
+     "km": 1942,
+     "hours": 23.07,
+     "via": [
+      "Purnia"
+     ]
+    }
+   },
+   "back": {
+    "delhi": {
+     "km": 780,
+     "hours": 9.7,
+     "through": [
+      "Bap",
+      "Sri Dungargarh",
+      "Surajgarh"
+     ],
+     "halfway": {
+      "name": "Sri Dungargarh",
+      "km": 390
+     }
+    },
+    "chandigarh": {
+     "km": 863,
+     "hours": 10.47,
+     "through": [
+      "Bap",
+      "Lunkaransar",
+      "Bathinda"
+     ],
+     "halfway": {
+      "name": "Lunkaransar",
+      "km": 432
+     }
+    },
+    "jaipur": {
+     "km": 609,
+     "hours": 7.4,
+     "through": [
+      "Dechoo",
+      "Jodhpur",
+      "Ajmer"
+     ],
+     "halfway": {
+      "name": "Jodhpur",
+      "km": 304
+     }
+    },
+    "lucknow": {
+     "km": 1180,
+     "hours": 14.32,
+     "through": [
+      "Pipar City",
+      "Fatehabad"
+     ]
+    },
+    "ahmedabad": {
+     "km": 668,
+     "hours": 8.39,
+     "through": [
+      "Dechoo",
+      "Pachpadra",
+      "Deesa"
+     ],
+     "halfway": {
+      "name": "Pachpadra",
+      "km": 334
+     }
+    },
+    "mumbai": {
+     "km": 1180,
+     "hours": 14.35,
+     "through": [
+      "Balesar",
+      "Mahesana",
+      "Bharuch"
+     ],
+     "halfway": {
+      "name": "Mahesana",
+      "km": 590
+     }
+    },
+    "pune": {
+     "km": 1310,
+     "hours": 16.04,
+     "through": [
+      "Balesar",
+      "Gandhinagar",
+      "Valsad"
+     ],
+     "halfway": {
+      "name": "Gandhinagar",
+      "km": 655
+     }
+    },
+    "bengaluru": {
+     "km": 2104,
+     "hours": 25.6
+    },
+    "hyderabad": {
+     "km": 1765,
+     "hours": 22.01
+    },
+    "chennai": {
+     "km": 2347,
+     "hours": 28.47
+    },
+    "kolkata": {
+     "km": 2113,
+     "hours": 25.39
+    },
+    "guwahati": {
+     "km": 2517,
+     "hours": 30.62,
+     "via": [
+      "Purnia"
+     ]
+    }
+   },
+   "after": []
+  },
+  "rajasthan-hills": {
+   "start": "Udaipur",
+   "end": "Mount Abu",
+   "round_trip": false,
+   "to": {
+    "delhi": {
+     "km": 681,
+     "hours": 8.24,
+     "through": [
+      "Lachhmangarh",
+      "Niwai",
+      "Mandal"
+     ],
+     "halfway": {
+      "name": "Niwai",
+      "km": 340
+     }
+    },
+    "chandigarh": {
+     "km": 868,
+     "hours": 10.67,
+     "through": [
+      "Narnaul",
+      "Amber",
+      "Beawar"
+     ],
+     "halfway": {
+      "name": "Amber",
+      "km": 434
+     }
+    },
+    "jaipur": {
+     "km": 396,
+     "hours": 4.84,
+     "through": [
+      "Kishangarh",
+      "Beawar",
+      "Gadbor"
+     ],
+     "halfway": {
+      "name": "Beawar",
+      "km": 198
+     }
+    },
+    "lucknow": {
+     "km": 914,
+     "hours": 10.96,
+     "through": [
+      "Moth",
+      "Shahbad",
+      "Talera"
+     ],
+     "halfway": {
+      "name": "Shahbad",
+      "km": 457
+     }
+    },
+    "ahmedabad": {
+     "km": 253,
+     "hours": 3.12,
+     "through": [
+      "Prantij",
+      "Bhiloda",
+      "Rishabhdeo"
+     ],
+     "halfway": {
+      "name": "Bhiloda",
+      "km": 126
+     }
+    },
+    "mumbai": {
+     "km": 697,
+     "hours": 8.57,
+     "through": [
+      "Valsad",
+      "Bharuch",
+      "Dhansura"
+     ],
+     "halfway": {
+      "name": "Bharuch",
+      "km": 348
+     }
+    },
+    "pune": {
+     "km": 827,
+     "hours": 10.32,
+     "through": [
+      "Palghar",
+      "Kamrej",
+      "Bayad"
+     ],
+     "halfway": {
+      "name": "Kamrej",
+      "km": 414
+     }
+    },
+    "bengaluru": {
+     "km": 1619,
+     "hours": 19.77
+    },
+    "hyderabad": {
+     "km": 1225,
+     "hours": 15.79,
+     "through": [
+      "Kalamnuri",
+      "Edlabad",
+      "Bhavra"
+     ],
+     "halfway": {
+      "name": "Edlabad",
+      "km": 612
+     }
+    },
+    "chennai": {
+     "km": 1862,
+     "hours": 22.67
+    },
+    "kolkata": {
+     "km": 1831,
+     "hours": 21.86
+    },
+    "guwahati": {
+     "km": 2249,
+     "hours": 26.78,
+     "via": [
+      "Purnia"
+     ]
+    }
+   },
+   "back": {
+    "delhi": {
+     "km": 782,
+     "hours": 9.59,
+     "through": [
+      "Pali",
+      "Kishangarh",
+      "Baswa"
+     ],
+     "halfway": {
+      "name": "Kishangarh",
+      "km": 391
+     }
+    },
+    "chandigarh": {
+     "km": 975,
+     "hours": 11.98,
+     "through": [
+      "Jodhpur",
+      "Ladnu",
+      "Balsamand"
+     ],
+     "halfway": {
+      "name": "Ladnu",
+      "km": 488
+     }
+    },
+    "jaipur": {
+     "km": 489,
+     "hours": 6.25,
+     "through": [
+      "Sumerpur",
+      "Sojat",
+      "Ajmer"
+     ],
+     "halfway": {
+      "name": "Sojat",
+      "km": 244
+     }
+    },
+    "lucknow": {
+     "km": 1067,
+     "hours": 13.0,
+     "through": [
+      "Chittorgarh",
+      "Kishanganj",
+      "Moth"
+     ],
+     "halfway": {
+      "name": "Kishanganj",
+      "km": 534
+     }
+    },
+    "ahmedabad": {
+     "km": 224,
+     "hours": 3.44,
+     "through": [
+      "Amirgadh",
+      "Sidhpur",
+      "Kadi"
+     ],
+     "halfway": {
+      "name": "Sidhpur",
+      "km": 112
+     }
+    },
+    "mumbai": {
+     "km": 736,
+     "hours": 9.41,
+     "through": [
+      "Kalol",
+      "Padra",
+      "Valsad"
+     ],
+     "halfway": {
+      "name": "Padra",
+      "km": 368
+     }
+    },
+    "pune": {
+     "km": 866,
+     "hours": 11.1,
+     "through": [
+      "Gandhinagar",
+      "Ankleshwar",
+      "Palghar"
+     ],
+     "halfway": {
+      "name": "Ankleshwar",
+      "km": 433
+     }
+    },
+    "bengaluru": {
+     "km": 1661,
+     "hours": 20.65
+    },
+    "hyderabad": {
+     "km": 1335,
+     "hours": 17.17,
+     "through": [
+      "Dabhoi",
+      "Yawal",
+      "Kalamnuri"
+     ],
+     "halfway": {
+      "name": "Yawal",
+      "km": 668
+     }
+    },
+    "chennai": {
+     "km": 1903,
+     "hours": 23.53
+    },
+    "kolkata": {
+     "km": 1958,
+     "hours": 23.52
+    },
+    "guwahati": {
+     "km": 2400,
+     "hours": 28.93,
+     "via": [
+      "Purnia"
+     ]
+    }
+   },
+   "after": []
+  },
+  "rann-of-kutch": {
+   "start": "Bhuj",
+   "end": "Dholavira",
+   "round_trip": false,
+   "to": {
+    "delhi": {
+     "km": 1149,
+     "hours": 14.59,
+     "through": [
+      "Bassi",
+      "Pali",
+      "Tharad"
+     ],
+     "halfway": {
+      "name": "Pali",
+      "km": 574
+     }
+    },
+    "chandigarh": {
+     "km": 1247,
+     "hours": 15.59,
+     "through": [
+      "Dabwali",
+      "Pachpadra",
+      "Suigam"
+     ],
+     "halfway": {
+      "name": "Pachpadra",
+      "km": 624
+     }
+    },
+    "jaipur": {
+     "km": 849,
+     "hours": 11.17,
+     "through": [
+      "Sojat",
+      "Reodar",
+      "Suigam"
+     ],
+     "halfway": {
+      "name": "Reodar",
+      "km": 424
+     }
+    },
+    "lucknow": {
+     "km": 1418,
+     "hours": 18.08,
+     "through": [
+      "Kiraoli",
+      "Kishangarh",
+      "Dantiwada"
+     ],
+     "halfway": {
+      "name": "Kishangarh",
+      "km": 709
+     }
+    },
+    "ahmedabad": {
+     "km": 351,
+     "hours": 5.9,
+     "through": [
+      "Dasada",
+      "Maliya",
+      "Bhachau"
+     ],
+     "halfway": {
+      "name": "Maliya",
+      "km": 176
+     }
+    },
+    "mumbai": {
+     "km": 850,
+     "hours": 11.46,
+     "through": [
+      "Chikhli",
+      "Anand",
+      "Muli"
+     ],
+     "halfway": {
+      "name": "Anand",
+      "km": 425
+     }
+    },
+    "pune": {
+     "km": 980,
+     "hours": 13.21,
+     "through": [
+      "Umbergaon",
+      "Bharuch",
+      "Muli"
+     ],
+     "halfway": {
+      "name": "Bharuch",
+      "km": 490
+     }
+    },
+    "bengaluru": {
+     "km": 1772,
+     "hours": 22.65
+    },
+    "hyderabad": {
+     "km": 1475,
+     "hours": 19.23,
+     "through": [
+      "Kaij",
+      "Peth",
+      "Tarapur"
+     ],
+     "halfway": {
+      "name": "Peth",
+      "km": 738
+     }
+    },
+    "chennai": {
+     "km": 2015,
+     "hours": 25.55
+    },
+    "kolkata": {
+     "km": 2371,
+     "hours": 29.46
+    },
+    "guwahati": {
+     "km": 2793,
+     "hours": 34.28,
+     "via": [
+      "Purnia"
+     ]
+    }
+   },
+   "back": {
+    "delhi": {
+     "km": 1064,
+     "hours": 13.33,
+     "through": [
+      "Dantiwada",
+      "Sojat",
+      "Jamwa Ramgarh"
+     ],
+     "halfway": {
+      "name": "Sojat",
+      "km": 532
+     }
+    },
+    "chandigarh": {
+     "km": 1174,
+     "hours": 14.42,
+     "through": [
+      "Pachpadra",
+      "Lunkaransar",
+      "Dabwali"
+     ],
+     "halfway": {
+      "name": "Lunkaransar",
+      "km": 587
+     }
+    },
+    "jaipur": {
+     "km": 771,
+     "hours": 9.99,
+     "through": [
+      "Tharad",
+      "Sumerpur",
+      "Beawar"
+     ],
+     "halfway": {
+      "name": "Sumerpur",
+      "km": 386
+     }
+    },
+    "lucknow": {
+     "km": 1341,
+     "hours": 16.9,
+     "through": [
+      "Reodar",
+      "Kishangarh",
+      "Agra"
+     ],
+     "halfway": {
+      "name": "Kishangarh",
+      "km": 670
+     }
+    },
+    "ahmedabad": {
+     "km": 347,
+     "hours": 5.71,
+     "through": [
+      "Rapar",
+      "Radhanpur",
+      "Visnagar"
+     ],
+     "halfway": {
+      "name": "Radhanpur",
+      "km": 174
+     }
+    },
+    "mumbai": {
+     "km": 858,
+     "hours": 11.67,
+     "through": [
+      "Saraswati",
+      "Vadodara",
+      "Chikhli"
+     ],
+     "halfway": {
+      "name": "Vadodara",
+      "km": 429
+     }
+    },
+    "pune": {
+     "km": 988,
+     "hours": 13.36,
+     "through": [
+      "Unjha",
+      "Padra",
+      "Umbergaon"
+     ],
+     "halfway": {
+      "name": "Padra",
+      "km": 494
+     }
+    },
+    "bengaluru": {
+     "km": 1783,
+     "hours": 22.91
+    },
+    "hyderabad": {
+     "km": 1457,
+     "hours": 19.44,
+     "through": [
+      "Vatva",
+      "Shirpur",
+      "Hingoli"
+     ],
+     "halfway": {
+      "name": "Shirpur",
+      "km": 728
+     }
+    },
+    "chennai": {
+     "km": 2025,
+     "hours": 25.79
+    },
+    "kolkata": {
+     "km": 2287,
+     "hours": 27.88
+    },
+    "guwahati": {
+     "km": 2679,
+     "hours": 33.2,
+     "via": [
+      "Purnia"
+     ]
+    }
+   },
+   "after": []
+  },
+  "sach-pass-pangi": {
+   "start": "Chamba",
+   "end": "Kishtwar",
+   "round_trip": false,
+   "to": {
+    "delhi": {
+     "km": 622,
+     "hours": 8.83,
+     "through": [
+      "Karnal",
+      "Ludhiana",
+      "Dasua"
+     ],
+     "halfway": {
+      "name": "Ludhiana",
+      "km": 311
+     }
+    },
+    "chandigarh": {
+     "km": 366,
+     "hours": 5.89,
+     "through": [
+      "Nawanshahr",
+      "Hoshiarpur",
+      "Indora"
+     ],
+     "halfway": {
+      "name": "Hoshiarpur",
+      "km": 183
+     }
+    },
+    "jaipur": {
+     "km": 796,
+     "hours": 11.16,
+     "through": [
+      "Mahendragarh",
+      "Patran",
+      "Jalandhar"
+     ],
+     "halfway": {
+      "name": "Patran",
+      "km": 398
+     }
+    },
+    "lucknow": {
+     "km": 1042,
+     "hours": 13.83,
+     "through": [
+      "Budaun",
+      "Sardhana",
+      "Ludhiana"
+     ],
+     "halfway": {
+      "name": "Sardhana",
+      "km": 521
+     }
+    },
+    "ahmedabad": {
+     "km": 1334,
+     "hours": 17.43,
+     "through": [
+      "Sanchore",
+      "Bap",
+      "Bathinda"
+     ],
+     "halfway": {
+      "name": "Bap",
+      "km": 667
+     }
+    },
+    "mumbai": {
+     "km": 1910,
+     "hours": 23.28
+    },
+    "pune": {
+     "km": 1915,
+     "hours": 24.2
+    },
+    "bengaluru": {
+     "km": 2612,
+     "hours": 32.61
+    },
+    "hyderabad": {
+     "km": 2115,
+     "hours": 27.54
+    },
+    "chennai": {
+     "km": 2785,
+     "hours": 35.19
+    },
+    "kolkata": {
+     "km": 2027,
+     "hours": 25.26
+    },
+    "guwahati": {
+     "km": 2417,
+     "hours": 30.03,
+     "via": [
+      "Purnia"
+     ]
+    }
+   },
+   "back": {
+    "delhi": {
+     "km": 777,
+     "hours": 10.09,
+     "through": [
+      "Kathua",
+      "Phagwara",
+      "Kurukshetra"
+     ],
+     "halfway": {
+      "name": "Phagwara",
+      "km": 388
+     }
+    },
+    "chandigarh": {
+     "km": 520,
+     "hours": 7.12,
+     "through": [
+      "Udhampur",
+      "Indora",
+      "Garhshankar"
+     ],
+     "halfway": {
+      "name": "Indora",
+      "km": 260
+     }
+    },
+    "jaipur": {
+     "km": 953,
+     "hours": 12.53,
+     "through": [
+      "Indora",
+      "Malerkotla",
+      "Narnaul"
+     ],
+     "halfway": {
+      "name": "Malerkotla",
+      "km": 476
+     }
+    },
+    "lucknow": {
+     "km": 1193,
+     "hours": 15.06,
+     "through": [
+      "Jalandhar",
+      "Karnal",
+      "Tilhar"
+     ],
+     "halfway": {
+      "name": "Karnal",
+      "km": 596
+     }
+    },
+    "ahmedabad": {
+     "km": 1488,
+     "hours": 18.66,
+     "through": [
+      "Jalandhar",
+      "Lunkaransar",
+      "Sanchore"
+     ],
+     "halfway": {
+      "name": "Lunkaransar",
+      "km": 744
+     }
+    },
+    "mumbai": {
+     "km": 2061,
+     "hours": 24.44
+    },
+    "pune": {
+     "km": 2063,
+     "hours": 25.2
+    },
+    "bengaluru": {
+     "km": 2764,
+     "hours": 33.68
+    },
+    "hyderabad": {
+     "km": 2271,
+     "hours": 28.64
+    },
+    "chennai": {
+     "km": 2935,
+     "hours": 36.05
+    },
+    "kolkata": {
+     "km": 2157,
+     "hours": 26.12
+    },
+    "guwahati": {
+     "km": 2530,
+     "hours": 31.36,
+     "via": [
+      "Purnia"
+     ]
+    }
+   },
+   "after": []
+  },
+  "sahyadri-ghats": {
+   "start": "Mumbai",
+   "end": "Malshej Ghat",
+   "round_trip": false,
+   "to": {
+    "delhi": {
+     "km": 1331,
+     "hours": 15.03,
+     "through": [
+      "Lalsot",
+      "Jaora",
+      "Bharuch"
+     ],
+     "halfway": {
+      "name": "Jaora",
+      "km": 666
+     }
+    },
+    "chandigarh": {
+     "km": 1593,
+     "hours": 17.99
+    },
+    "jaipur": {
+     "km": 1142,
+     "hours": 13.07,
+     "through": [
+      "Bhanpura",
+      "Thandla",
+      "Bharuch"
+     ],
+     "halfway": {
+      "name": "Thandla",
+      "km": 571
+     }
+    },
+    "lucknow": {
+     "km": 1442,
+     "hours": 17.25,
+     "through": [
+      "Buxwaha",
+      "Khategaon",
+      "Shirpur"
+     ],
+     "halfway": {
+      "name": "Khategaon",
+      "km": 721
+     }
+    },
+    "ahmedabad": {
+     "km": 512,
+     "hours": 6.09,
+     "through": [
+      "Padra",
+      "Kamrej",
+      "Umbergaon"
+     ],
+     "halfway": {
+      "name": "Kamrej",
+      "km": 256
+     }
+    },
+    "mumbai": {
+     "km": 3,
+     "hours": 0.06,
+     "through": []
+    },
+    "pune": {
+     "km": 149,
+     "hours": 1.99,
+     "through": [
+      "Mawal",
+      "Khalapur",
+      "Panvel"
+     ],
+     "halfway": {
+      "name": "Khalapur",
+      "km": 74
+     }
+    },
+    "bengaluru": {
+     "km": 986,
+     "hours": 12.07,
+     "through": [
+      "Kudligi",
+      "Nidagundi",
+      "Malshiras"
+     ],
+     "halfway": {
+      "name": "Nidagundi",
+      "km": 493
+     }
+    },
+    "hyderabad": {
+     "km": 709,
+     "hours": 8.75,
+     "through": [
+      "Chittaguppa",
+      "Mohol",
+      "Daund"
+     ],
+     "halfway": {
+      "name": "Mohol",
+      "km": 354
+     }
+    },
+    "chennai": {
+     "km": 1229,
+     "hours": 14.97,
+     "through": [
+      "Kondapuram",
+      "Kushtagi",
+      "Malshiras"
+     ],
+     "halfway": {
+      "name": "Kushtagi",
+      "km": 614
+     }
+    },
+    "kolkata": {
+     "km": 1889,
+     "hours": 22.03
+    },
+    "guwahati": {
+     "km": 2613,
+     "hours": 30.62,
+     "via": [
+      "Purnia"
+     ]
+    }
+   },
+   "back": {
+    "delhi": {
+     "km": 1259,
+     "hours": 15.27,
+     "through": [
+      "Shirpur",
+      "Garoth",
+      "Lalsot"
+     ],
+     "halfway": {
+      "name": "Garoth",
+      "km": 630
+     }
+    },
+    "chandigarh": {
+     "km": 1529,
+     "hours": 18.34
+    },
+    "jaipur": {
+     "km": 1078,
+     "hours": 13.37,
+     "through": [
+      "Dhule",
+      "Indore",
+      "Digod"
+     ],
+     "halfway": {
+      "name": "Indore",
+      "km": 539
+     }
+    },
+    "lucknow": {
+     "km": 1461,
+     "hours": 17.11,
+     "through": [
+      "Sillod",
+      "Shahpur",
+      "Buxwaha"
+     ],
+     "halfway": {
+      "name": "Shahpur",
+      "km": 730
+     }
+    },
+    "ahmedabad": {
+     "km": 566,
+     "hours": 7.01,
+     "through": [
+      "Palghar",
+      "Gandevi",
+      "Padra"
+     ],
+     "halfway": {
+      "name": "Gandevi",
+      "km": 283
+     }
+    },
+    "mumbai": {
+     "km": 131,
+     "hours": 1.61,
+     "through": [
+      "Murbad",
+      "Kalyan",
+      "Bhiwandi"
+     ],
+     "halfway": {
+      "name": "Kalyan",
+      "km": 66
+     }
+    },
+    "pune": {
+     "km": 117,
+     "hours": 1.76,
+     "through": [
+      "Junnar",
+      "Ambegaon",
+      "Khed"
+     ],
+     "halfway": {
+      "name": "Ambegaon",
+      "km": 58
+     }
+    },
+    "bengaluru": {
+     "km": 938,
+     "hours": 11.4,
+     "through": [
+      "Karmala",
+      "Nidagundi",
+      "Chitradurga"
+     ],
+     "halfway": {
+      "name": "Nidagundi",
+      "km": 469
+     }
+    },
+    "hyderabad": {
+     "km": 638,
+     "hours": 7.93,
+     "through": [
+      "Ashti",
+      "Ambejogai",
+      "Bhalki"
+     ],
+     "halfway": {
+      "name": "Ambejogai",
+      "km": 319
+     }
+    },
+    "chennai": {
+     "km": 1180,
+     "hours": 14.28,
+     "through": [
+      "Pandharpur",
+      "Koppala",
+      "Kadapa"
+     ],
+     "halfway": {
+      "name": "Koppala",
+      "km": 590
+     }
+    },
+    "kolkata": {
+     "km": 1800,
+     "hours": 21.67
+    },
+    "guwahati": {
+     "km": 2523,
+     "hours": 30.28,
+     "via": [
+      "Purnia"
+     ]
+    }
+   },
+   "after": []
+  },
+  "spiti-circuit": {
+   "start": "Shimla",
+   "end": "Manali",
+   "round_trip": false,
+   "to": {
+    "delhi": {
+     "km": 374,
+     "hours": 4.62,
+     "through": [
+      "Panipat",
+      "Kurukshetra",
+      "Barwala"
+     ],
+     "halfway": {
+      "name": "Kurukshetra",
+      "km": 187
+     }
+    },
+    "chandigarh": {
+     "km": 114,
+     "hours": 1.57,
+     "through": [
+      "Kalka",
+      "Solan",
+      "Kandaghat"
+     ],
+     "halfway": {
+      "name": "Solan",
+      "km": 57
+     }
+    },
+    "jaipur": {
+     "km": 580,
+     "hours": 7.3,
+     "through": [
+      "Narnaul",
+      "Alewa",
+      "Ambala"
+     ],
+     "halfway": {
+      "name": "Alewa",
+      "km": 290
+     }
+    },
+    "lucknow": {
+     "km": 810,
+     "hours": 9.4,
+     "through": [
+      "Shahjahanpur",
+      "Syana",
+      "Saharanpur"
+     ],
+     "halfway": {
+      "name": "Syana",
+      "km": 405
+     }
+    },
+    "ahmedabad": {
+     "km": 1230,
+     "hours": 15.17,
+     "through": [
+      "Rajsamand",
+      "Jaipur",
+      "Dadri"
+     ],
+     "halfway": {
+      "name": "Jaipur",
+      "km": 615
+     }
+    },
+    "mumbai": {
+     "km": 1694,
+     "hours": 19.46
+    },
+    "pune": {
+     "km": 1700,
+     "hours": 20.37
+    },
+    "bengaluru": {
+     "km": 2397,
+     "hours": 28.79
+    },
+    "hyderabad": {
+     "km": 1900,
+     "hours": 23.72
+    },
+    "chennai": {
+     "km": 2484,
+     "hours": 31.33
+    },
+    "kolkata": {
+     "km": 1795,
+     "hours": 20.82
+    },
+    "guwahati": {
+     "km": 2185,
+     "hours": 25.59,
+     "via": [
+      "Purnia"
+     ]
+    }
+   },
+   "back": {
+    "delhi": {
+     "km": 519,
+     "hours": 7.21,
+     "through": [
+      "Bilaspur",
+      "Dera Bassi",
+      "Panipat"
+     ],
+     "halfway": {
+      "name": "Dera Bassi",
+      "km": 260
+     }
+    },
+    "chandigarh": {
+     "km": 256,
+     "hours": 4.07,
+     "through": [
+      "Aut",
+      "Sundarnagar",
+      "Anandpur Sahib"
+     ],
+     "halfway": {
+      "name": "Sundarnagar",
+      "km": 128
+     }
+    },
+    "jaipur": {
+     "km": 735,
+     "hours": 9.97,
+     "through": [
+      "Nalagarh",
+      "Fatehpur Pundri",
+      "Narnaul"
+     ],
+     "halfway": {
+      "name": "Fatehpur Pundri",
+      "km": 368
+     }
+    },
+    "lucknow": {
+     "km": 960,
+     "hours": 12.06,
+     "through": [
+      "Panchkula",
+      "Meerut",
+      "Tilhar"
+     ],
+     "halfway": {
+      "name": "Meerut",
+      "km": 480
+     }
+    },
+    "ahmedabad": {
+     "km": 1381,
+     "hours": 17.43,
+     "through": [
+      "Moga",
+      "Lunkaransar",
+      "Sanchore"
+     ],
+     "halfway": {
+      "name": "Lunkaransar",
+      "km": 690
+     }
+    },
+    "mumbai": {
+     "km": 1845,
+     "hours": 21.92
+    },
+    "pune": {
+     "km": 1847,
+     "hours": 22.68
+    },
+    "bengaluru": {
+     "km": 2547,
+     "hours": 31.15
+    },
+    "hyderabad": {
+     "km": 2055,
+     "hours": 26.12
+    },
+    "chennai": {
+     "km": 2718,
+     "hours": 33.53
+    },
+    "kolkata": {
+     "km": 1924,
+     "hours": 23.11
+    },
+    "guwahati": {
+     "km": 2298,
+     "hours": 28.36,
+     "via": [
+      "Purnia"
+     ]
+    }
+   },
+   "after": []
+  },
+  "srinagar-leh": {
+   "start": "Srinagar",
+   "end": "Leh",
+   "round_trip": false,
+   "to": {
+    "delhi": {
+     "km": 807,
+     "hours": 10.86,
+     "through": [
+      "Kurukshetra",
+      "Jalandhar",
+      "Samba"
+     ],
+     "halfway": {
+      "name": "Jalandhar",
+      "km": 404
+     }
+    },
+    "chandigarh": {
+     "km": 551,
+     "hours": 7.93,
+     "through": [
+      "Hoshiarpur",
+      "Kathua",
+      "Ramban"
+     ],
+     "halfway": {
+      "name": "Kathua",
+      "km": 276
+     }
+    },
+    "jaipur": {
+     "km": 980,
+     "hours": 13.19,
+     "through": [
+      "Dadri",
+      "Dhuri",
+      "Kathua"
+     ],
+     "halfway": {
+      "name": "Dhuri",
+      "km": 490
+     }
+    },
+    "lucknow": {
+     "km": 1227,
+     "hours": 15.87,
+     "through": [
+      "Hasanpur",
+      "Karnal",
+      "Indora"
+     ],
+     "halfway": {
+      "name": "Karnal",
+      "km": 614
+     }
+    },
+    "ahmedabad": {
+     "km": 1519,
+     "hours": 19.46
+    },
+    "mumbai": {
+     "km": 2094,
+     "hours": 25.31
+    },
+    "pune": {
+     "km": 2099,
+     "hours": 26.23
+    },
+    "bengaluru": {
+     "km": 2797,
+     "hours": 34.64
+    },
+    "hyderabad": {
+     "km": 2300,
+     "hours": 29.57
+    },
+    "chennai": {
+     "km": 2970,
+     "hours": 37.22
+    },
+    "kolkata": {
+     "km": 2212,
+     "hours": 27.29
+    },
+    "guwahati": {
+     "km": 2602,
+     "hours": 32.06,
+     "via": [
+      "Purnia"
+     ]
+    }
+   },
+   "back": {
+    "delhi": {
+     "km": 944,
+     "hours": 13.07,
+     "through": [
+      "Lahaul",
+      "Mandi",
+      "Ambala"
+     ],
+     "halfway": {
+      "name": "Mandi",
+      "km": 472
+     }
+    },
+    "chandigarh": {
+     "km": 681,
+     "hours": 9.93,
+     "through": [
+      "Lahaul",
+      "Mandi"
+     ],
+     "halfway": {
+      "name": "Lahaul",
+      "km": 340
+     }
+    },
+    "jaipur": {
+     "km": 1160,
+     "hours": 15.83,
+     "through": [
+      "Lahaul",
+      "Kalka",
+      "Narnaul"
+     ],
+     "halfway": {
+      "name": "Kalka",
+      "km": 580
+     }
+    },
+    "lucknow": {
+     "km": 1384,
+     "hours": 17.92,
+     "through": [
+      "Lahaul",
+      "Yamunanagar",
+      "Hasanpur"
+     ],
+     "halfway": {
+      "name": "Yamunanagar",
+      "km": 692
+     }
+    },
+    "ahmedabad": {
+     "km": 1805,
+     "hours": 23.29
+    },
+    "mumbai": {
+     "km": 2269,
+     "hours": 27.78
+    },
+    "pune": {
+     "km": 2271,
+     "hours": 28.54
+    },
+    "bengaluru": {
+     "km": 2972,
+     "hours": 37.01
+    },
+    "hyderabad": {
+     "km": 2479,
+     "hours": 31.98
+    },
+    "chennai": {
+     "km": 3143,
+     "hours": 39.39
+    },
+    "kolkata": {
+     "km": 2348,
+     "hours": 28.97
+    },
+    "guwahati": {
+     "km": 2722,
+     "hours": 34.22,
+     "via": [
+      "Purnia"
+     ]
+    }
+   },
+   "after": []
+  },
+  "tamil-nadu-hill-roads": {
+   "start": "Salem",
+   "end": "Kodaikanal",
+   "round_trip": false,
+   "to": {
+    "delhi": {
+     "km": 2224,
+     "hours": 26.7
+    },
+    "chandigarh": {
+     "km": 2486,
+     "hours": 29.66
+    },
+    "jaipur": {
+     "km": 2035,
+     "hours": 24.74
+    },
+    "lucknow": {
+     "km": 2069,
+     "hours": 25.71
+    },
+    "ahmedabad": {
+     "km": 1627,
+     "hours": 19.77
+    },
+    "mumbai": {
+     "km": 1176,
+     "hours": 14.55,
+     "through": [
+      "Malshiras",
+      "Kushtagi",
+      "Sira"
+     ],
+     "halfway": {
+      "name": "Kushtagi",
+      "km": 588
+     }
+    },
+    "pune": {
+     "km": 1032,
+     "hours": 12.65,
+     "through": [
+      "Mangalvedhe",
+      "Hosapete",
+      "Tumakuru"
+     ],
+     "halfway": {
+      "name": "Hosapete",
+      "km": 516
+     }
+    },
+    "bengaluru": {
+     "km": 185,
+     "hours": 2.7,
+     "through": [
+      "Hosur",
+      "Karimangalam",
+      "Nallampalli"
+     ],
+     "halfway": {
+      "name": "Karimangalam",
+      "km": 92
+     }
+    },
+    "hyderabad": {
+     "km": 749,
+     "hours": 10.03,
+     "through": [
+      "Undavelly",
+      "Anantapur",
+      "Hosakote"
+     ],
+     "halfway": {
+      "name": "Anantapur",
+      "km": 374
+     }
+    },
+    "chennai": {
+     "km": 347,
+     "hours": 4.45,
+     "through": [
+      "Kanchipuram",
+      "Polur",
+      "Harur"
+     ],
+     "halfway": {
+      "name": "Polur",
+      "km": 174
+     }
+    },
+    "kolkata": {
+     "km": 1928,
+     "hours": 23.48
+    },
+    "guwahati": {
+     "km": 2840,
+     "hours": 34.83,
+     "via": [
+      "Siliguri"
+     ]
+    }
+   },
+   "back": {
+    "delhi": {
+     "km": 2441,
+     "hours": 30.21
+    },
+    "chandigarh": {
+     "km": 2711,
+     "hours": 33.29
+    },
+    "jaipur": {
+     "km": 2260,
+     "hours": 28.32
+    },
+    "lucknow": {
+     "km": 2291,
+     "hours": 29.28
+    },
+    "ahmedabad": {
+     "km": 1838,
+     "hours": 23.11
+    },
+    "mumbai": {
+     "km": 1398,
+     "hours": 17.91,
+     "through": [
+      "Bangalore South",
+      "Kudligi",
+      "Pandharpur"
+     ],
+     "halfway": {
+      "name": "Kudligi",
+      "km": 699
+     }
+    },
+    "pune": {
+     "km": 1252,
+     "hours": 15.98,
+     "through": [
+      "Denkanikottai",
+      "Chitradurga",
+      "Mangalvedhe"
+     ],
+     "halfway": {
+      "name": "Chitradurga",
+      "km": 626
+     }
+    },
+    "bengaluru": {
+     "km": 407,
+     "hours": 6.11,
+     "through": [
+      "Dharapuram",
+      "Mettur",
+      "Palakkodu"
+     ],
+     "halfway": {
+      "name": "Mettur",
+      "km": 204
+     }
+    },
+    "hyderabad": {
+     "km": 970,
+     "hours": 13.46,
+     "through": [
+      "Mettur",
+      "Bagepalli",
+      "Kurnool"
+     ],
+     "halfway": {
+      "name": "Bagepalli",
+      "km": 485
+     }
+    },
+    "chennai": {
+     "km": 514,
+     "hours": 7.69,
+     "through": [
+      "Manapparai",
+      "Veppanthattai",
+      "Tindivanam"
+     ],
+     "halfway": {
+      "name": "Veppanthattai",
+      "km": 257
+     }
+    },
+    "kolkata": {
+     "km": 2145,
+     "hours": 27.12
+    },
+    "guwahati": {
+     "km": 3055,
+     "hours": 38.45,
+     "via": [
+      "Siliguri"
+     ]
+    }
+   },
+   "after": []
+  },
+  "umling-la": {
+   "start": "Hanle",
+   "end": "Umling La",
+   "round_trip": true,
+   "to": {
+    "delhi": {
+     "km": 995,
+     "hours": 14.68,
+     "through": [
+      "Ambala",
+      "Aut",
+      "Leh"
+     ],
+     "halfway": {
+      "name": "Aut",
+      "km": 498
+     }
+    },
+    "chandigarh": {
+     "km": 733,
+     "hours": 11.51,
+     "through": [
+      "Mandi",
+      "Lahaul",
+      "Leh"
+     ],
+     "halfway": {
+      "name": "Lahaul",
+      "km": 366
+     }
+    },
+    "jaipur": {
+     "km": 1209,
+     "hours": 17.34,
+     "through": [
+      "Dadri",
+      "Anandpur Sahib",
+      "Lahaul"
+     ],
+     "halfway": {
+      "name": "Anandpur Sahib",
+      "km": 604
+     }
+    },
+    "lucknow": {
+     "km": 1436,
+     "hours": 19.53,
+     "through": [
+      "Hasanpur",
+      "Saha",
+      "Lahaul"
+     ],
+     "halfway": {
+      "name": "Saha",
+      "km": 718
+     }
+    },
+    "ahmedabad": {
+     "km": 1845,
+     "hours": 24.88
+    },
+    "mumbai": {
+     "km": 2324,
+     "hours": 29.5
+    },
+    "pune": {
+     "km": 2329,
+     "hours": 30.42
+    },
+    "bengaluru": {
+     "km": 3027,
+     "hours": 38.83
+    },
+    "hyderabad": {
+     "km": 2530,
+     "hours": 33.76
+    },
+    "chennai": {
+     "km": 3105,
+     "hours": 41.39
+    },
+    "kolkata": {
+     "km": 2420,
+     "hours": 30.95
+    },
+    "guwahati": {
+     "km": 2811,
+     "hours": 35.72,
+     "via": [
+      "Purnia"
+     ]
+    }
+   },
+   "back": {},
+   "after": []
+  }
+ },
+ "built": "2026-10-08",
+ "about": "By road from each city's centre to each route's first place, and from its last place back. Hours are a map app's, a car's time on an empty road.",
+ "sources": [
+  {
+   "name": "OSRM demo server",
+   "data": "OpenStreetMap",
+   "licence": "Open Database Licence",
+   "url": "https://project-osrm.org/"
+  },
+  {
+   "name": "Nominatim",
+   "data": "OpenStreetMap",
+   "licence": "Open Database Licence",
+   "url": "https://nominatim.openstreetmap.org/"
+  }
+ ],
+ "cities": [
+  {
+   "id": "delhi",
+   "name": "Delhi",
+   "group": "North",
+   "lat": 28.6315,
+   "lon": 77.2167
+  },
+  {
+   "id": "chandigarh",
+   "name": "Chandigarh",
+   "group": "North",
+   "lat": 30.7333,
+   "lon": 76.7794
+  },
+  {
+   "id": "jaipur",
+   "name": "Jaipur",
+   "group": "North",
+   "lat": 26.9124,
+   "lon": 75.7873
+  },
+  {
+   "id": "lucknow",
+   "name": "Lucknow",
+   "group": "North",
+   "lat": 26.8467,
+   "lon": 80.9462
+  },
+  {
+   "id": "ahmedabad",
+   "name": "Ahmedabad",
+   "group": "West",
+   "lat": 23.0225,
+   "lon": 72.5714
+  },
+  {
+   "id": "mumbai",
+   "name": "Mumbai",
+   "group": "West",
+   "lat": 19.076,
+   "lon": 72.8777
+  },
+  {
+   "id": "pune",
+   "name": "Pune",
+   "group": "West",
+   "lat": 18.5204,
+   "lon": 73.8567
+  },
+  {
+   "id": "bengaluru",
+   "name": "Bengaluru",
+   "group": "South",
+   "lat": 12.9716,
+   "lon": 77.5946
+  },
+  {
+   "id": "hyderabad",
+   "name": "Hyderabad",
+   "group": "South",
+   "lat": 17.385,
+   "lon": 78.4867
+  },
+  {
+   "id": "chennai",
+   "name": "Chennai",
+   "group": "South",
+   "lat": 13.0827,
+   "lon": 80.2707
+  },
+  {
+   "id": "kolkata",
+   "name": "Kolkata",
+   "group": "East",
+   "lat": 22.5726,
+   "lon": 88.3639
+  },
+  {
+   "id": "guwahati",
+   "name": "Guwahati",
+   "group": "East",
+   "lat": 26.1445,
+   "lon": 91.7362
+  }
+ ]
+}

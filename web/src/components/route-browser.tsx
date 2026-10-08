@@ -2,17 +2,32 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { useEffect, useMemo, useState, useSyncExternalStore } from "react";
+import { useEffect, useState, useSyncExternalStore } from "react";
 
 import { track } from "@/lib/analytics";
 import { km, plural } from "@/lib/format";
 import { useHomeView } from "@/lib/home-view";
+import { IN_THE_CITY_KM, useRidingFrom } from "@/lib/riding-from";
 import { spelledLike } from "@/lib/search";
 import type { Region, RouteSummary } from "@/lib/types";
 
 import { IconSearch } from "./icons";
+import { RidingFromField, type CityName } from "./riding-from";
 import { SearchSuggest } from "./search-suggest";
 import { Badge, Callout } from "./ui";
+
+/** The cities riders set out from, and how far each route's start is from each, in km. */
+export interface FromCities {
+  cities: CityName[];
+  routes: Record<string, { start: string; km: Record<string, number> }>;
+}
+
+/** How far a route's start is from the rider's city. */
+interface FromCity {
+  km: number;
+  city: string;
+  start: string;
+}
 
 export interface RoadLine {
   slug: string;
@@ -26,8 +41,20 @@ function LevelBadge({ level }: { level: RouteSummary["level"] }) {
   return <Badge tone="unchecked">Not written yet</Badge>;
 }
 
-function RouteCard({ route, confirmed, showLevel }: { route: RouteSummary; confirmed: number; showLevel: boolean }) {
+function RouteCard({
+  route,
+  confirmed,
+  showLevel,
+  from,
+}: {
+  route: RouteSummary;
+  confirmed: number;
+  showLevel: boolean;
+  from?: FromCity | null;
+}) {
   const unwritten = route.level === "unwritten";
+  // With a city picked, the distance to the start says more than the route's own length.
+  const lead = from ? (from.km < IN_THE_CITY_KM ? `Starts in ${from.city}` : `${km(from.km)} from ${from.city}, to ${from.start}`) : null;
   return (
     <Link
       href={`/routes/${route.slug}`}
@@ -53,10 +80,10 @@ function RouteCard({ route, confirmed, showLevel }: { route: RouteSummary; confi
         <span className="hint line-clamp-2">{route.places.join(", ")}</span>
         <span className="hint num">
           {unwritten
-            ? "No page yet. Ridden it? Send a trip report."
+            ? `${lead ? `${lead} · ` : ""}No page yet. Ridden it? Send a trip report.`
             : confirmed > 0
-              ? `${plural(route.facts, "fact")} · ${confirmed} confirmed by riders this week`
-              : `${route.distance_km ? `${km(route.distance_km)} · ` : ""}${plural(route.facts, "fact")}`}
+              ? `${lead ? `${lead} · ` : ""}${plural(route.facts, "fact")} · ${confirmed} confirmed by riders this week`
+              : `${lead ?? (route.distance_km ? km(route.distance_km) : "")}${lead || route.distance_km ? " · " : ""}${plural(route.facts, "fact")}`}
         </span>
       </span>
     </Link>
@@ -191,15 +218,27 @@ export function RouteBrowser({
   routes,
   regions,
   lines,
+  fromCities,
   confirmed,
 }: {
   routes: RouteSummary[];
   regions: Region[];
   lines: RoadLine[];
+  fromCities: FromCities;
   /** For each route, how many facts riders confirmed in the last seven days. */
   confirmed: Record<string, number>;
 }) {
-  const [region, setRegion] = useState<string>("all");
+  // With a city picked, the list starts nearest first (wireframes, screen 36). A chip, once tapped, wins.
+  const picked = useRidingFrom();
+  const city = fromCities.cities.find((c) => c.id === picked) ?? null;
+  const cityId = city?.id ?? null;
+  const [chip, setRegion] = useState<string | null>(null);
+  const region = chip === "nearest" && !city ? "all" : (chip ?? (city ? "nearest" : "all"));
+  const fromHere = (slug: string): FromCity | null => {
+    const r = fromCities.routes[slug];
+    const d = city ? r?.km[city.id] : undefined;
+    return city && r && d !== undefined ? { km: d, city: city.name, start: r.start } : null;
+  };
   // On a phone, the list or the drawing, chosen in the header. From a tablet up, both.
   const view = useHomeView();
   // A card's badge says how fully a route is written. While every route is written the same way, it says nothing.
@@ -210,10 +249,11 @@ export function RouteBrowser({
   const query = typed ?? asked;
   const setQuery = setTyped;
 
-  const shown = useMemo(() => {
+  // Fifty routes: filtered and sorted afresh each time. The React Compiler keeps it from being redone needlessly.
+  const shown = (() => {
     const q = query.trim().toLowerCase();
-    return routes.filter((r) => {
-      if (region !== "all" && r.region !== region) return false;
+    const found = routes.filter((r) => {
+      if (region !== "all" && region !== "nearest" && r.region !== region) return false;
       if (!q) return true;
       return (
         r.name.toLowerCase().includes(q) ||
@@ -221,11 +261,15 @@ export function RouteBrowser({
         r.places.some((p) => p.toLowerCase().includes(q))
       );
     });
-  }, [routes, region, query]);
+    if (!cityId) return found;
+    const away = (slug: string) => fromCities.routes[slug]?.km[cityId] ?? Number.POSITIVE_INFINITY;
+    return [...found].sort((a, b) => away(a.slug) - away(b.slug));
+  })();
 
-  const groups = regions
-    .map((g) => ({ ...g, routes: shown.filter((r) => r.region === g.id) }))
-    .filter((g) => g.routes.length > 0);
+  const groups =
+    region === "nearest" && city
+      ? [{ id: "nearest", name: `Nearest to ${city.name}`, routes: shown }]
+      : regions.map((g) => ({ ...g, routes: shown.filter((r) => r.region === g.id) })).filter((g) => g.routes.length > 0);
   const like = groups.length === 0 && query.trim() ? spelledLike(query, routes) : [];
 
   // A search that finds nothing tells Meel which roads riders look for. Only how many letters were typed is sent,
@@ -249,6 +293,11 @@ export function RouteBrowser({
       >
         <IconSearch className="size-4 shrink-0 text-ink-2" />
       </SearchSuggest>
+      {fromCities.cities.length > 0 ? (
+        <div className="md:max-w-xs">
+          <RidingFromField cities={fromCities.cities} />
+        </div>
+      ) : null}
 
       {groups.length === 0 ? (
         <>
@@ -263,7 +312,13 @@ export function RouteBrowser({
               <h2 className="label">Routes with names like it</h2>
               <div className="grid gap-2 md:grid-cols-2">
                 {like.map((r) => (
-                  <RouteCard key={r.slug} route={r} confirmed={confirmed[r.slug] ?? 0} showLevel={showLevel} />
+                  <RouteCard
+                    key={r.slug}
+                    route={r}
+                    confirmed={confirmed[r.slug] ?? 0}
+                    showLevel={showLevel}
+                    from={fromHere(r.slug)}
+                  />
                 ))}
               </div>
             </section>
@@ -273,6 +328,18 @@ export function RouteBrowser({
         <>
           {/* Sideways on a phone. From a tablet up the chips wrap, so a mouse can reach every region. */}
           <div className="scroll-row -mx-4 px-4 md:mx-0 md:flex-wrap md:overflow-visible md:px-0" role="group" aria-label="Region">
+            {city ? (
+              <button
+                type="button"
+                className="chip"
+                aria-pressed={region === "nearest"}
+                onClick={() => setRegion("nearest")}
+                data-track="Routes filtered by region"
+                data-track-props='{"region":"nearest"}'
+              >
+                Nearest first
+              </button>
+            ) : null}
             <button
               type="button"
               className="chip"
@@ -311,11 +378,19 @@ export function RouteBrowser({
                     <h2 id={`region-${g.id}`} className="display text-2xl">
                       {g.name}
                     </h2>
-                    <span className="hint">{plural(g.routes.length, "route")}</span>
+                    <span className="hint">
+                      {g.id === "nearest" ? "by road, to where each starts" : plural(g.routes.length, "route")}
+                    </span>
                   </div>
                   <div className="grid gap-2 md:grid-cols-2">
                     {g.routes.map((r) => (
-                      <RouteCard key={r.slug} route={r} confirmed={confirmed[r.slug] ?? 0} showLevel={showLevel} />
+                      <RouteCard
+                        key={r.slug}
+                        route={r}
+                        confirmed={confirmed[r.slug] ?? 0}
+                        showLevel={showLevel}
+                        from={fromHere(r.slug)}
+                      />
                     ))}
                   </div>
                 </section>

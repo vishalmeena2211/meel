@@ -28,7 +28,8 @@ export const EVENTS = {
   "Route saved for no network": "A route's pages were kept on the phone. route, pages.",
   "Saved route removed": "A route kept on the phone was removed. route.",
   "Route file downloaded": "The GPX file was opened or downloaded. route.",
-  "Map app opened": "A route was sent to a map app. route, app.",
+  "Map app opened": "A route, or the road to its start, was sent to a map app. route, app, from (the city, for the road to the start).",
+  "Riding from picked": "A rider picked the city they set out from, or none. city.",
   "Emergency number tapped": "A number on the emergency card was tapped. route, number.",
   "Message for home sent": "The plan for home went to WhatsApp, or was copied. route, via. Never the message.",
 

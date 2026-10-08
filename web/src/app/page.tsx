@@ -3,9 +3,9 @@ import Link from "next/link";
 
 import { HomeViewButton } from "@/components/home-view-button";
 import { JsonLd } from "@/components/json-ld";
-import { RouteBrowser, type RoadLine } from "@/components/route-browser";
+import { RouteBrowser, type FromCities, type RoadLine } from "@/components/route-browser";
 import { TopHead } from "@/components/shell";
-import { getAllRoutes, getIndex } from "@/lib/content";
+import { getAllRoutes, getApproaches, getIndex } from "@/lib/content";
 import { SITE_LINE, SITE_NAME, SITE_URL } from "@/lib/site";
 import { confirmedLately } from "@/server/reports";
 
@@ -32,7 +32,17 @@ function round(n: number): number {
 }
 
 export default async function HomePage() {
-  const [index, routes] = await Promise.all([getIndex(), getAllRoutes()]);
+  const [index, routes, approaches] = await Promise.all([getIndex(), getAllRoutes(), getApproaches()]);
+  // Each route's distance from each city riders set out from: only the kilometres, to keep the page small.
+  const fromCities: FromCities = {
+    cities: approaches.cities.map(({ id, name, group }) => ({ id, name, group })),
+    routes: Object.fromEntries(
+      Object.entries(approaches.routes).map(([slug, a]) => [
+        slug,
+        { start: a.start, km: Object.fromEntries(Object.entries(a.to).map(([c, leg]) => [c, leg.km])) },
+      ]),
+    ),
+  };
   const full = index.routes.filter((r) => r.level === "full").length;
   const lines: RoadLine[] = routes.map((r) => ({ slug: r.slug, line: thin(r.line) }));
   // Until a route is written in full, the count of regions says more than "none written in full yet" does.
@@ -74,6 +84,7 @@ export default async function HomePage() {
         routes={index.routes}
         regions={index.regions}
         lines={lines}
+        fromCities={fromCities}
         confirmed={await confirmedLately()}
       />
     </div>

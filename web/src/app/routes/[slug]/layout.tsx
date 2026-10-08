@@ -145,6 +145,7 @@ export default async function RouteLayout(props: LayoutProps<"/routes/[slug]">) 
             <h2 className="label mt-1">Before you leave</h2>
             <ul className="card flex flex-col">
               {[
+                { href: `${top}/getting-there`, icon: <IconMap />, name: "Getting there" },
                 { href: `${top}/map-apps`, icon: <IconMap />, name: "Route file for your map app" },
                 { href: `${top}/emergency`, icon: <IconPhone />, name: "Emergency card" },
                 { href: `${top}/tell-home`, icon: <IconSend />, name: "Tell someone at home" },

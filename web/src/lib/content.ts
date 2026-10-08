@@ -9,7 +9,9 @@ import type {
   FactKind,
   ImageCredit,
   PackingList,
+  RideCity,
   Route,
+  RouteApproach,
   RouteDistrict,
   RouteHelp,
   RouteIndex,
@@ -86,6 +88,19 @@ const getHelpFile = cache(
       fetched: "",
     },
 );
+
+const getApproachFile = cache(
+  async () =>
+    (await readJson<{ cities: RideCity[]; routes: Record<string, RouteApproach>; built: string }>(
+      "site",
+      "route-approaches.json",
+    )) ?? { cities: [], routes: {}, built: "" },
+);
+
+/** The cities riders set out from, every route's distance from each, and the day they were worked out. */
+export async function getApproaches(): Promise<{ cities: RideCity[]; routes: Record<string, RouteApproach>; built: string }> {
+  return getApproachFile();
+}
 
 /** Hospitals and police stations near a route's road, and the day they were read from the open map. */
 export async function getRouteHelp(slug: string): Promise<{ help: RouteHelp | null; fetched: string }> {

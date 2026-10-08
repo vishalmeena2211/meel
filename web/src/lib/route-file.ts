@@ -89,6 +89,30 @@ export function googleMapsLink(route: Route): string | null {
   return `https://www.google.com/maps/dir/?${q.toString()}`;
 }
 
+/** A named place on a road: a city, or a route's first place. */
+export interface RoadEnd {
+  name: string;
+  lat: number;
+  lon: number;
+}
+
+/** The map apps' own links for the road from one place to another, such as from Delhi to Manali. */
+export function roadLinks(from: RoadEnd, to: RoadEnd): { google: string; organic: string } {
+  const at = (p: RoadEnd) => `${p.lat.toFixed(5)},${p.lon.toFixed(5)}`;
+  const google = new URLSearchParams({ api: "1", origin: at(from), destination: at(to), travelmode: "two-wheeler" });
+  const organic = new URLSearchParams({
+    origin: at(from),
+    origin_name: from.name,
+    destination: at(to),
+    destination_name: to.name,
+    mode: "drive",
+  });
+  return {
+    google: `https://www.google.com/maps/dir/?${google.toString()}`,
+    organic: `https://omaps.app/v2/dir?${organic.toString()}`,
+  };
+}
+
 /** Where the route file is served. */
 export function gpxPath(slug: string): string {
   return `/routes/${slug}/route.gpx`;
