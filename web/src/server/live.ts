@@ -484,6 +484,30 @@ const JK_ADVISORY = "https://trafficpolice.jk.gov.in/documents/Advisory/ADVISORY
 const LAHAUL_STATUS = "https://hplahaulspiti.nic.in/road-status/";
 const MONTHS = ["january", "february", "march", "april", "may", "june", "july", "august", "september", "october", "november", "december"];
 
+/**
+ * The day a page's "Last Updated:" line gives, as 2024-05-14, or null. The line has said "May 14, 2024" and, since
+ * October 2026, "14.05.2024": both are read, and the day comes first in the second form, as Indian pages write it.
+ */
+export function lastUpdated(html: string): string | null {
+  const after = /Last Updated:\s*(?:<[^>]+>\s*)*([^<]{6,40})/i.exec(html)?.[1]?.trim() ?? "";
+  let d = 0;
+  let m = 0;
+  let y = 0;
+  const worded = /^([A-Za-z]+)\s+(\d{1,2}),?\s*(\d{4})/.exec(after);
+  const numbered = /^(\d{1,2})[./-](\d{1,2})[./-](\d{4})/.exec(after);
+  if (worded) {
+    m = MONTHS.indexOf((worded[1] ?? "").toLowerCase()) + 1;
+    d = Number(worded[2]);
+    y = Number(worded[3]);
+  } else if (numbered) {
+    d = Number(numbered[1]);
+    m = Number(numbered[2]);
+    y = Number(numbered[3]);
+  }
+  if (m < 1 || m > 12 || d < 1 || d > 31 || y < 2000) return null;
+  return `${y}-${String(m).padStart(2, "0")}-${String(d).padStart(2, "0")}`;
+}
+
 const READERS: Record<string, () => Promise<OfficeRead>> = {
   // Jammu and Kashmir Traffic Police put out one advisory file a day at the same address. Its own date is the file's.
   "trafficpolice.jk.gov.in": async () => {
@@ -501,10 +525,8 @@ const READERS: Record<string, () => Promise<OfficeRead>> = {
   // Lahaul and Spiti's road status page says when it was last updated, at its foot.
   "hplahaulspiti.nic.in": async () => {
     const got = await readText(LAHAUL_STATUS, { timeoutMs: 15_000 });
-    const found = got ? /Last Updated:\s*(?:<[^>]+>\s*)*([A-Za-z]+)\s+(\d{1,2}),\s*(\d{4})/.exec(got.text) : null;
-    const month = found ? MONTHS.indexOf((found[1] ?? "").toLowerCase()) + 1 : 0;
-    if (!found || month === 0) throw new Error("no date on the road status page");
-    const day = `${found[3]}-${String(month).padStart(2, "0")}-${String(found[2]).padStart(2, "0")}`;
+    const day = got ? lastUpdated(got.text) : null;
+    if (!day) throw new Error("no date on the road status page");
     return {
       said: `Their page says “Last updated ${sayDate(day)}”`,
       dated: day,
