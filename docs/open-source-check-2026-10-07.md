@@ -2,6 +2,7 @@
 
 **Date:** 7 October 2026
 **Asked by:** Vishal: "what data we are storing in repo, that can leak, if we do open source now?"
+**Made public:** 9 October 2026, after a second check of everything committed since (5 commits: no secrets, every commit on the noreply address, no employer, email or private link). Its website link now points to https://rideplanner.in.
 
 **Short answer:** no secret has ever been committed: no key, password or database address, in the files today or anywhere in the history. What would become public that you may not want public:
 1. **Your Gmail address**, as the author of all 64 commits.
@@ -88,7 +89,7 @@ GitHub can keep the old commits it was sent before the rewrite, reachable by the
 - **Map data** (road lines, pumps, hospitals and police, districts) is OpenStreetMap's, under the Open Database Licence. `data/LICENSE.md` already says so, and that a changed copy must be shared under the same licence.
 - **District codes** come from Wikidata, which is public domain.
 - **The licences are already split right**: MIT for the code; the data keeps its sources' licences.
-- **Opening the code does not open the site.** The live site stays behind Vercel's login until you change that setting yourself.
+- **Opening the code does not open the site.** The two are separate settings. (The site itself was opened on 7 October and has been at rideplanner.in since 8 October.)
 - **Your name** appears in `LICENSE` ("Copyright (c) 2026 Vishal Meena") and in the docs ("Asked by: Vishal"). That is normal for an open-source project, but it is your name in public.
 
 ## What opening the code changes for the site, once the site is public too
