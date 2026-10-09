@@ -40,6 +40,7 @@ export const EVENTS = {
   "Trip report step reached": "A rider moved on in the trip report form. step.",
   "Trip report sent": "A trip report was sent. route, month.",
   "Place suggested": "A rider asked Meel to write about a place. Sent from the server.",
+  "Source code opened": "A rider opened Meel's code on GitHub. from (footer or about).",
 
   // ── accounts, from the server ─────────────────────────────────────
   "Signed up": "An account was made. method (password or google).",

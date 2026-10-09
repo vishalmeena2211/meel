@@ -2332,7 +2332,8 @@ Rahul N. · seen 13 June 2027 · sent from the chat app at 9:12 pm</div>
           <div class="check wait">${ICON.clock}<span>Most facts are marked “not yet checked”. They were gathered at a desk and await a rider.</span></div>
           <div class="check wait">${ICON.clock}<span>Meel never says a road is open. It links to the office that decides.</span></div>
         </div>
-        <div class="callout"><b>Kept by one person, as a hobby</b>No advertising. No paid listings. Visits are counted with Vercel’s Web Analytics, which uses no cookies and keeps nothing that names you.</div>`)}`)
+        <div class="callout"><b>Kept by one person, as a hobby</b>No advertising. No paid listings. Visits are counted with Vercel’s Web Analytics, which uses no cookies and keeps nothing that names you.</div>
+        <div class="callout info"><b>Open source</b>Meel’s code is on GitHub, under the MIT licence. Anyone can read how it works, run a copy, or help. <span class="link">See the code</span></div>`)}`)
     + phone('3. A page that does not exist', `
       ${head('Meel', 'rideplanner.in', { back: false })}
       ${body(`
@@ -2342,7 +2343,7 @@ Rahul N. · seen 13 June 2027 · sent from the chat app at 9:12 pm</div>
     notes: [
       ['Counting visits', ['Visits are counted with Vercel’s Web Analytics: no cookies, nothing that names a rider.', 'Once Mixpanel is switched on (its token set), the callout adds one sentence: “Mixpanel counts which pages are read and which tools are used, such as the fuel check or the route file. It keeps a random number in your browser to tell visits apart, and never your name, your email or anything you type. A browser set to “Do Not Track” is not counted.”', 'With screen recordings on, the sentence adds: “It also records how the pages are used, as a replay of the page, so that confusing parts can be fixed: what you type is hidden, riders’ names and chat links are left out, and pages about your account, logging in and posting a trip are never recorded.”', 'The events are listed in web/src/lib/analytics-events.ts. No screen changes for them.']],
       ['Tools', ['The three tools are the same ones reached from a route page. Here the rider picks the route first.', 'Before a route is picked, tapping a tool opens the list of routes, and picking one goes straight to that tool for it.', 'They work with no network only on a route saved with “Save for the road”, and the line under the name says so.', 'The bike is kept on the phone, so the fuel check is one tap on any route. No account needed.']],
-      ['About', ['Says plainly what the site does not do, and that most facts are unchecked at the start.', 'This is the page a careful rider reads before trusting a fuel gap with their trip.']],
+      ['About', ['Says plainly what the site does not do, and that most facts are unchecked at the start.', 'This is the page a careful rider reads before trusting a fuel gap with their trip.', 'Ends by saying the code is open (added 9 October 2026): “See the code” opens github.com/vishalmeena2211/meel in a new tab.']],
       ['Not found', ['Says what happened and offers the two useful ways on: all routes, or search.']],
     ],
   },
@@ -2402,7 +2403,7 @@ Rahul N. · seen 13 June 2027 · sent from the chat app at 9:12 pm</div>
       const cols = [
         col('Routes', ['All routes', 'Fuel, altitude and packing', 'Send a trip report']),
         col('Riding together', ['Trips riders are planning', 'Post a trip', 'Rules for riding together']),
-        col('Meel', ['About Meel', 'Credits and sources', 'Your account']),
+        col('Meel', ['About Meel', 'Credits and sources', 'Open source on GitHub', 'Your account']),
       ].join('');
       const brand = `<div class="fbrand"><div class="fmark">${mark()}<b>Meel</b></div><p>Dated facts for Indian motorcycle routes.</p><p class="fine">Kept by one person, as a hobby. No advertising.</p></div>`;
       const promise = `<p class="frule">Meel never says a road is open. It links to the office that decides.</p>`;
@@ -2457,6 +2458,7 @@ Rahul N. · seen 13 June 2027 · sent from the chat app at 9:12 pm</div>
       ['The one promise', ['“Meel never says a road is open” has a line of its own. It is the rule the whole site keeps, so every page says it.']],
       ['Credits', ['OpenStreetMap asks for “© OpenStreetMap contributors” wherever its data appears. Its data is on nearly every page, so the credit is in the foot of every page.', 'A picture’s credit still sits under the picture. The foot only says where the pictures come from.']],
       ['Behaviour', ['“Your account” opens the log-in page for a rider who is not logged in, and brings them back to their account afterwards.', 'Every link is a plain link: nothing to open, nothing that needs a script.']],
+      ['Open source (added 9 October 2026)', ['“Open source on GitHub” opens the code, github.com/vishalmeena2211/meel, in a new tab. It sits in the Meel group, after the credits, so a rider who wonders how the site works, or wants to help, can find it.']],
     ],
   },
   {

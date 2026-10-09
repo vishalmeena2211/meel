@@ -2,3 +2,5 @@
 export const SITE_URL = "https://rideplanner.in";
 export const SITE_NAME = "Meel";
 export const SITE_LINE = "Dated facts for Indian motorcycle routes";
+/** Meel's code, public under the MIT licence since 9 October 2026. */
+export const SOURCE_URL = "https://github.com/vishalmeena2211/meel";

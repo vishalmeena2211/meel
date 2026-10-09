@@ -1,5 +1,7 @@
 import Link from "next/link";
 
+import { SOURCE_URL } from "@/lib/site";
+
 import { KmStone } from "./ui";
 
 /*
@@ -29,6 +31,8 @@ const GROUPS: Array<{ title: string; links: Array<[href: string, words: string]>
     links: [
       ["/about", "About Meel"],
       ["/credits", "Credits and sources"],
+      // The code, on GitHub: the one link here that leaves the site, so it opens in a new tab.
+      [SOURCE_URL, "Open source on GitHub"],
       // A rider who is not logged in is taken to the log-in page, and brought back here afterwards.
       ["/account", "Your account"],
     ],
@@ -76,15 +80,29 @@ export function SiteFoot() {
               <h2 className="display text-[0.8125rem] font-semibold tracking-[0.12em] text-stone uppercase">
                 {group.title}
               </h2>
-              {group.links.map(([href, words]) => (
-                <Link
-                  key={href}
-                  href={href}
-                  className={`self-start font-medium text-on-tarmac underline-offset-2 hover:underline ${ON_TARMAC}`}
-                >
-                  {words}
-                </Link>
-              ))}
+              {group.links.map(([href, words]) =>
+                href.startsWith("http") ? (
+                  <a
+                    key={href}
+                    href={href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={`self-start font-medium text-on-tarmac underline-offset-2 hover:underline ${ON_TARMAC}`}
+                    data-track="Source code opened"
+                    data-track-props='{"from":"footer"}'
+                  >
+                    {words}
+                  </a>
+                ) : (
+                  <Link
+                    key={href}
+                    href={href}
+                    className={`self-start font-medium text-on-tarmac underline-offset-2 hover:underline ${ON_TARMAC}`}
+                  >
+                    {words}
+                  </Link>
+                ),
+              )}
             </nav>
           ))}
         </div>

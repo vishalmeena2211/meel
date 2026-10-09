@@ -4,8 +4,9 @@ import Link from "next/link";
 import { PageTitle } from "@/components/form";
 import { IconCheck, IconClock } from "@/components/icons";
 import { Callout, KmStone, StateBadge } from "@/components/ui";
-import { getFactKinds, getIndex } from "@/lib/content";
 import { ANALYTICS_ON, RECORD_PERCENT } from "@/lib/analytics-config";
+import { getFactKinds, getIndex } from "@/lib/content";
+import { SOURCE_URL } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "About Meel",
@@ -131,6 +132,20 @@ export default async function AboutPage() {
                 : ""
             } It keeps a random number in your browser to tell visits apart, and never your name, your email or anything you type. A browser set to “Do Not Track” is not counted.`
           : null}
+      </Callout>
+
+      <Callout tone="info" title="Open source">
+        Meel’s code is on GitHub, under the MIT licence. Anyone can read how it works, run a copy, or help.{" "}
+        <a
+          className="link font-medium"
+          href={SOURCE_URL}
+          target="_blank"
+          rel="noopener noreferrer"
+          data-track="Source code opened"
+          data-track-props='{"from":"about"}'
+        >
+          See the code
+        </a>
       </Callout>
 
       <nav className="flex flex-wrap gap-x-4 gap-y-1">
