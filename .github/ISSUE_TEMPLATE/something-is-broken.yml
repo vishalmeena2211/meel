@@ -1,0 +1,32 @@
+name: Something on the site is broken
+description: A page that does not load, a button that does nothing, or something that looks wrong.
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you. This page is public, so please leave out your name, email and phone number.
+        If a **fact** is wrong (a pump, a permit, a pass), use the "This has changed" button on that fact instead.
+  - type: input
+    id: page
+    attributes:
+      label: Which page
+      description: Its address, such as https://rideplanner.in/routes/manali-leh/fuel
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened, and what you expected
+    validations:
+      required: true
+  - type: input
+    id: device
+    attributes:
+      label: Phone or computer, and browser
+      placeholder: Android phone, Chrome
+  - type: textarea
+    id: picture
+    attributes:
+      label: A picture of the screen, if you have one
+      description: Drag it in here. Cover anything personal first.

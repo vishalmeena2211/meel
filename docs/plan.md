@@ -2,7 +2,10 @@
 
 **Date:** 28 September 2026
 **Status:** DRAFT, awaiting your decisions. **A first version of the site was built on 28 September 2026, at your request, ahead of this plan's timeline.** Read "What was built on 28 September 2026" first. Where that section and the rest of this plan disagree, that section is what happened.
-**Built on:** `reports/India rider platform research.md`, which is interim and has not been through a verification pass.
+**Built on:** `reports/India rider platform research.md`, which is interim and has not been through a verification pass. It quotes forum members word for word, so it is kept outside this repository.
+
+> [!NOTE]
+> **Where it stands, 9 October 2026.** The site is live at [rideplanner.in](https://rideplanner.in) (since 8 October), and this repository is public (since 9 October). Since this plan was written, the site has gained: official alerts and offices' own dates read every hour, weather at the passes, a route file for map apps, an emergency card, a message for someone at home, oil companies' pumps where the map had none, distances from twelve cities, and counting through Mixpanel. No rider has confirmed a fact yet. The rest of this document is the plan as written on 28 September 2026. For the site as it is today, read the [README](../README.md).
 
 ---
 
@@ -26,7 +29,7 @@ You asked for wireframes, then the data, then the site itself, built overnight w
 
 | What | Where |
 |---|---|
-| Everything | The folder `meel/`, and the private repository `vishalmeena2211/meel` on GitHub |
+| Everything | The folder `meel/`, and the repository `vishalmeena2211/meel` on GitHub (public since 9 October 2026) |
 | Wireframes, 30 screens | `design/meel-wireframes.html` |
 | Data for 50 routes | `data/`, explained in `data/README.md` |
 | The website | `web/`, explained in `web/README.md` |

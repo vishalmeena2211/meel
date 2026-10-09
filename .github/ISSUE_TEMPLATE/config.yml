@@ -1,0 +1,8 @@
+blank_issues_enabled: true
+contact_links:
+  - name: A fact is wrong or out of date
+    url: https://rideplanner.in
+    about: Every fact on rideplanner.in has "Still true" and "This has changed" buttons. Use them there. They need no account, and the editor reads every report.
+  - name: A security problem
+    url: https://github.com/vishalmeena2211/meel/security/advisories/new
+    about: Please report it privately, not in a public issue.

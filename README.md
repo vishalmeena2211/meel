@@ -16,18 +16,19 @@
 [![Auth.js](https://img.shields.io/badge/Auth.js-Google_and_email-0f5f4b)](https://authjs.dev)
 [![Hosted on Vercel](https://img.shields.io/badge/Vercel-Singapore-16201c?logo=vercel&logoColor=white)](https://vercel.com)
 <br>
+[![Live at rideplanner.in](https://img.shields.io/badge/live-rideplanner.in-0f5f4b)](https://rideplanner.in)
 [![Status: early](https://img.shields.io/badge/status-early,_facts_not_yet_confirmed_by_riders-f2b807)](#how-far-to-trust-it)
 [![Kept as a hobby](https://img.shields.io/badge/kept_by-one_person,_as_a_hobby-f2b807)](#the-rules-it-keeps)
 [![Licence: MIT for the code](https://img.shields.io/badge/licence-MIT_for_the_code-0f5f4b)](#licence)
 
-[What it does](#what-it-does) · [How far to trust it](#how-far-to-trust-it) · [How it works](#how-it-works) · [Run it yourself](#run-it-on-your-machine) · [The wireframes](design)
+**[Open rideplanner.in](https://rideplanner.in)** · [What it does](#what-it-does) · [How far to trust it](#how-far-to-trust-it) · [How it works](#how-it-works) · [What the live site counts](#what-the-live-site-counts) · [Run it yourself](#run-it-on-your-machine) · [Contributing](CONTRIBUTING.md)
 
 </div>
 
 <br>
 
 <p align="center">
-  <img src=".github/readme/screens.png" alt="Four phone screens: all fifty routes; the Manali to Leh route page; its fuel section, where each pump is dated and sourced; and the fuel check, which asks for your bike" width="100%">
+  <img src=".github/readme/screens.png" alt="Four phone screens: the routes nearest to Delhi, each with its distance by road; the Manali to Leh route page; its fuel section, where each pump is dated and sourced; and the fuel check, which asks for your bike" width="100%">
 </p>
 
 ## Why Meel
@@ -44,7 +45,7 @@ Meel is the memory those groups don't have. It keeps **one page per route**, spl
 
 | | |
 |---|---|
-| **50 routes, section by section** | From Manali to Leh and the Spiti circuit to the Konkan coast and the North-East: 13 regions and about 33,600 km of road. The highest point on any route is Umling La, at 19,030 ft. Heights are given in feet, as pass signboards give them. |
+| **50 routes, section by section** | From Manali to Leh and the Spiti circuit to the Konkan coast and the North-East: 13 regions and about 31,000 km of road. The highest point on any route is Umling La, at 19,030 ft. Heights are given in feet, as pass signboards give them. |
 | **Every fact dated and sourced** | 4,294 facts, each with its source, the day it was read, and a state: fresh, ageing, stale, not yet checked, or riders disagree. |
 | **Riding from your city** | Pick Delhi, Chandigarh or ten other cities once, and every route says how far its start is by road, nearest first. Each route's "Getting there" gives the towns on the way, the ride back, and links to open the road in a map app. |
 | **Fuel check** | Pick your bike, and the route says where your tank runs short and how much extra to carry. |
@@ -72,23 +73,28 @@ Meel is the memory those groups don't have. It keeps **one page per route**, spl
 ## How far to trust it
 
 > [!IMPORTANT]
-> **Meel is early.** Every fact was gathered at a desk, from official and published sources, in September 2026. **No rider has confirmed any of it yet**, which is why the screens above say "not yet checked". Riders' reports are what will turn these pages into something to rely on. Until then, treat each fact as a lead to check, and look at its date.
+> **Meel is early.** Every fact was gathered at a desk, from official and published sources, in September and October 2026. **No rider has confirmed any of it yet**, which is why the screens above say "not yet checked". Riders' reports are what will turn these pages into something to rely on. Until then, treat each fact as a lead to check, and look at its date.
 
-The site is not public yet. It runs privately while the facts are checked, and will open at **rideplanner.in**.
+The site has been live at **[rideplanner.in](https://rideplanner.in)** since 8 October 2026. Every fact there has two buttons, "Still true" and "This has changed", and neither needs an account.
 
 ## How it works
 
 ```mermaid
 flowchart LR
   subgraph sources ["Sources"]
-    OSM["OpenStreetMap"]
+    OSM["OpenStreetMap<br/>with Overpass, Nominatim, OSRM"]
     NASA["NASA heights"]
     WM["Wikimedia Commons"]
     GOV["Official pages"]
   end
   subgraph repo ["In this repository"]
     TOOLS["data/tools<br/>Python, no dependencies"]
-    DATA["data/routes<br/>one file per route"]
+    DATA["data/routes and data/site<br/>one file per route"]
+  end
+  subgraph live ["Read by the site every hour"]
+    ALERTS["Government alert feed<br/>NDMA SACHET"]
+    OFFICES["Offices' own pages<br/>and road closures"]
+    METEO["Open-Meteo forecast"]
   end
   subgraph site ["The website"]
     PAGES["Route, section and fact pages<br/>built ahead, rebuilt every hour"]
@@ -100,6 +106,9 @@ flowchart LR
   WM --> TOOLS
   GOV -->|desk research| DATA
   TOOLS --> DATA --> PAGES
+  ALERTS --> PAGES
+  OFFICES --> PAGES
+  METEO --> PAGES
   RIDER(("Rider")) -->|reads, no account| PAGES
   RIDER -->|reports a fact| DB
   RIDER -->|joins a trip| AUTH --> DB
@@ -109,14 +118,31 @@ flowchart LR
 
 Routes and facts live in files, in `data/`, so every change to a fact is a change you can read in git. Pages are built ahead and rebuilt every hour, so they load fast on a weak signal. Only what riders create lives in the database: accounts, trips, requests to join, and reports.
 
+Some things change by the hour, so the site reads them itself and shows each with the time it was read: official alerts for the districts a road crosses, the date on a few offices' own pages, Uttarakhand's list of closed roads, and a forecast for the passes, every three hours. None of it is ever turned into "open" or "closed".
+
+The distance from twelve cities to each route's start is worked out once, by `data/tools/approaches.py`. Where the shortest road would cross into Bangladesh or Nepal, the road is sent by an Indian town instead, and the page says so.
+
 | Part | What it uses |
 |---|---|
 | Website | [Next.js 16](https://nextjs.org) with the App Router, [React 19](https://react.dev), [Tailwind CSS 4](https://tailwindcss.com), TypeScript in strict mode |
 | Database | Postgres through [Prisma 7](https://www.prisma.io). Live: [Neon](https://neon.tech) in Singapore, beside the site's functions |
 | Logging in | [Auth.js](https://authjs.dev): Google, or an email and a password scrambled with scrypt |
 | Data tools | Python, standard library only, in `data/tools/` |
+| Read every hour | Each read has a time limit and never stops a page loading. Alerts are kept for half an hour, offices' pages and closures for an hour, the forecast for three |
+| Counting visits | [Mixpanel](https://mixpanel.com), on its EU servers, and Vercel's own page counts. See [what the live site counts](#what-the-live-site-counts) |
 | Hosting | [Vercel](https://vercel.com). Every push to `main` deploys, and database migrations run on each live build |
 | Offline | A service worker keeps a saved route. Reports made offline wait on the phone |
+
+## What the live site counts
+
+rideplanner.in counts visits, so its keeper can see which routes and tools are used. In plain words:
+
+- **Pages opened**, by their address up to the "?", and **the tools riders use**, such as the fuel check or a map app. The full list, about 40, with what each one carries, is [`web/src/lib/analytics-events.ts`](web/src/lib/analytics-events.ts). They go to Mixpanel, on its EU servers. Vercel also counts page views.
+- **Screen recordings** of how pages are used: a replay of the page, not a video of the screen. Everything typed is hidden, and so are riders' names and trip chat links. Pages about an account, logging in, posting a trip and the editor's desk are never recorded.
+- **Never sent:** a name, an email, a phone number, or anything typed into a box. Logged-in riders are not identified. A browser set to "Do Not Track" is not counted, and nor is a robot or a test tool.
+- **A copy you run yourself counts nothing.** Mixpanel's token comes from a setting, `NEXT_PUBLIC_MIXPANEL_TOKEN`, not from the code. Details are in [`web/README.md`](web/README.md#mixpanel).
+
+A privacy notice on the site itself is still to come.
 
 ## Run it on your machine
 
@@ -159,31 +185,42 @@ New here? Start with [`docs/plan.md`](docs/plan.md): its first part says what ex
 
 - [x] Fifty routes, with every fact dated and sourced
 - [x] Fuel, altitude and packing checks
+- [x] Official alerts, offices' own dates, road closures and pass weather, read every hour
+- [x] A route file for map apps, an emergency card, and a message for someone at home
+- [x] Distances from twelve cities, nearest first
 - [x] Fact reports and trip reports, and the editor's desk
 - [x] Trips board, with accounts through Google or email
 - [x] Saving a route for no network
+- [x] Open at rideplanner.in (8 October 2026), with this code public (9 October)
 - [ ] Riders confirming the facts: the step that matters most
-- [ ] Opening at rideplanner.in, with a privacy notice
+- [ ] A privacy notice on the site
+- [ ] Logging in with Google for everyone: while Google's consent screen is in testing, only listed accounts can
 - [ ] Password reset by email
 - [ ] Logging in with a phone number
 - [ ] Automatic tests
 
 ## Contributing
 
-**If you ride:** the most useful thing you can do is check a fact on a road you know, and say whether it is still true. That needs no account. When the site opens, every fact will have a button for it.
+**If you ride:** the most useful thing you can do is check a fact on a road you know. Every fact on [rideplanner.in](https://rideplanner.in) has two buttons, "Still true" and "This has changed", and neither needs an account. After a trip, a [trip report](https://rideplanner.in/report) takes about three minutes.
 
-**If you write code:** read [`web/README.md`](web/README.md) first. A change to a screen starts in the wireframes, in [`design/`](design), before it is built. Keep the words plain: the site talks to riders, not to developers.
+**If you write code or fix data:** read [`CONTRIBUTING.md`](CONTRIBUTING.md). In short: a change to a screen starts in the wireframes, a fact needs its source and a date, and the words stay plain, because the site talks to riders, not to developers.
+
+**Found a security problem?** Please don't open an issue. [`SECURITY.md`](SECURITY.md) says how to report it privately.
 
 ## Credits
 
 Meel stands on other people's work, and names it:
 
-- **Map data** © [OpenStreetMap contributors](https://www.openstreetmap.org/copyright), available under the Open Database Licence.
+- **Map data** © [OpenStreetMap contributors](https://www.openstreetmap.org/copyright), under the Open Database Licence: places, road lines, fuel pumps, hospitals and police stations, and the districts each road crosses. Read through [Overpass](https://overpass-api.de), [Nominatim](https://nominatim.org) and the [OSRM](https://project-osrm.org) road router, which also gives the distances from cities.
 - **Heights** from NASA's Shuttle Radar Topography Mission, served by [Open Topo Data](https://www.opentopodata.org).
+- **Weather at the passes** from [Open-Meteo](https://open-meteo.com), under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).
+- **Official alerts** from the government's alert feed, [NDMA SACHET](https://sachet.ndma.gov.in), in the issuer's own words.
+- **District codes** from [Wikidata](https://www.wikidata.org), which is public domain.
+- **Fuel pumps** missing from the map, from IndianOil's and HP's own pump locators. Each pump links to its page there.
 - **Pictures** from [Wikimedia Commons](https://commons.wikimedia.org), each credited beside it, with its author and licence.
 - **Fonts:** [Barlow Condensed](https://fonts.google.com/specimen/Barlow+Condensed) and [Hind](https://fonts.google.com/specimen/Hind), under the SIL Open Font Licence.
 
-The full list, source by source, is on the site's credits page, and in [`data/README.md`](data/README.md).
+The full list, source by source, is on the site's [credits page](https://rideplanner.in/credits), and in [`data/README.md`](data/README.md).
 
 ## Licence
 

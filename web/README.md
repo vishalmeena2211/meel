@@ -89,6 +89,8 @@ The list of events, with what each one means and the details it carries, is `src
 
 What is never sent: a name, an email, a phone number, anything typed into a box, or the part of an address after "?". Mixpanel's own automatic click capture is off. Its random visitor number is kept in the browser's storage, not a cookie. A browser set to "Do Not Track" is not counted. Logged-in riders are not identified.
 
+**Robots are not counted or recorded.** Mixpanel skips the crawlers it knows by name, but not a browser run by a program: headless Chrome, Google's page inspector, link previews, test tools. `looksAutomated()` in `src/lib/analytics.ts` checks the browser's own automation flag and the words only programs put in a browser's name; for such a visit Mixpanel is never loaded. To test counting with Playwright, give the page an ordinary phone's browser name and set `navigator.webdriver` to false, or nothing is sent.
+
 **Screen recordings** (Mixpanel's Session Replay) are on for every visit, or the share set in `NEXT_PUBLIC_MIXPANEL_RECORD_PERCENT` (0 turns them off). A recording replays the page, not the screen. In it:
 - everything typed into a box is hidden;
 - text inside an element marked `data-private` is hidden;
@@ -108,7 +110,7 @@ Only you can do this, because it is done in your own Google account.
 3. While the consent screen is in testing, only the Google accounts you list as test users can log in. Publish it when riders should.
 4. Under **Clients**, make a client of the type **Web application**. Under **Authorised redirect URIs**, add all three:
    - `http://localhost:3000/api/auth/callback/google`
-   - `https://meel-livid.vercel.app/api/auth/callback/google`, the address the site has on Vercel until the domain points at it
+   - `https://meel-livid.vercel.app/api/auth/callback/google`, the site's own address on Vercel, which still answers
    - `https://rideplanner.in/api/auth/callback/google`
 5. Copy the client id into `AUTH_GOOGLE_ID` and the secret into `AUTH_GOOGLE_SECRET`, and restart the site. Google shows the secret only once, when the client is made: download its JSON file then, and keep it outside this folder.
 
@@ -148,6 +150,8 @@ If someone logs in with Google and their email already has a Meel account made w
 | What | Where | In git |
 |---|---|---|
 | Routes, facts, sources, picture credits | `../data/` | Yes |
+| Distances from twelve cities, and the towns on the way | `../data/site/route-approaches.json`, made by `../data/tools/approaches.py` | Yes |
+| The city a rider rides from | That rider's own phone (`meel-riding-from` in the browser's storage) | No |
 | Accounts, trips, reports, Google links | The Postgres database in `DATABASE_URL` | No |
 | The shape of those tables | `prisma/schema.prisma` and `prisma/migrations/` | Yes |
 | Who is logged in on a phone | A sealed cookie on that phone. It holds the rider's id and a session number, nothing else | No |
@@ -230,12 +234,12 @@ dropdb meel_scratch
 ## Search engines
 
 - **Only rideplanner.in can be listed.** Every other address the site answers on (meel-livid.vercel.app, a deployment's own address, this machine) sends `X-Robots-Tag: noindex`. See `next.config.ts`.
-- `/robots.txt` and `/sitemap.xml` are made by `src/app/robots.ts` and `src/app/sitemap.ts`. The sitemap lists every route, section, tool and fact page, about 3,400 addresses.
+- `/robots.txt` and `/sitemap.xml` are made by `src/app/robots.ts` and `src/app/sitemap.ts`. The sitemap lists every route, section, tool and fact page: 3,993 addresses on 8 October 2026.
 - Every public page names its own address on rideplanner.in as the canonical one. Pages for one rider, and the pages on the way to logging in, say `noindex`.
 - Search results can show a trail (Meel › Manali to Leh › Fuel) and a search box, from structured data in the pages.
 - Share cards: every fact has its own, Meel has one for the site (`src/app/opengraph-image.tsx`), and a route uses its picture.
 
-**When the site goes public on rideplanner.in**, add it to [Google Search Console](https://search.google.com/search-console) and [Bing Webmaster Tools](https://www.bing.com/webmasters), prove you own the domain, and submit `https://rideplanner.in/sitemap.xml`. Until the domain points at the site, share cards made in production point at rideplanner.in and will not load.
+**Done on 8 and 9 October 2026:** rideplanner.in is in [Google Search Console](https://search.google.com/search-console), proven by a record in the domain's DNS, and in [Bing Webmaster Tools](https://www.bing.com/webmasters). `https://rideplanner.in/sitemap.xml` was submitted to both.
 
 ## Good to know
 
