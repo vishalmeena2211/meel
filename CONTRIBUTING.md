@@ -46,7 +46,7 @@ pnpm lint
 pnpm build
 ```
 
-In the pull request, say what changed, why, and how you checked it. For a change to a screen, add a picture of it on a phone.
+In the pull request, say what changed, why, and how you checked it. For a change to a screen, add a picture of it on a phone. The pull request's own form lists these checks.
 
 ## Licence of what you send
 
@@ -58,4 +58,4 @@ Please do not report them in an issue or a pull request. [`SECURITY.md`](SECURIT
 
 ## Being decent
 
-Be kind and patient with each other. Riders of every kind of bike, and every level of experience, are welcome here.
+Be kind and patient with each other. Riders of every kind of bike, and every level of experience, are welcome here. The [code of conduct](CODE_OF_CONDUCT.md) says what is expected, and how to report it when someone falls short.

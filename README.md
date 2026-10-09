@@ -207,6 +207,8 @@ New here? Start with [`docs/plan.md`](docs/plan.md): its first part says what ex
 
 **Found a security problem?** Please don't open an issue. [`SECURITY.md`](SECURITY.md) says how to report it privately.
 
+Everyone here keeps to the [code of conduct](CODE_OF_CONDUCT.md): be kind, argue with sources, and keep other people's details private.
+
 ## Credits
 
 Meel stands on other people's work, and names it:
