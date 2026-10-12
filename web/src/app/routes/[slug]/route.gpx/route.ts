@@ -17,6 +17,8 @@ export async function GET(_request: Request, context: RouteContext<"/routes/[slu
     headers: {
       "Content-Type": "application/gpx+xml; charset=utf-8",
       "Content-Disposition": `attachment; filename="${route.slug}.gpx"`,
+      // A file for a map app is no use to someone who finds it in a search result.
+      "X-Robots-Tag": "noindex",
     },
   });
 }

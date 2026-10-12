@@ -29,6 +29,11 @@ export interface FactView {
   aside: string | null;
   short: string | null;
   line: string;
+  /**
+   * The line under the link in a search result, and in a chat app's preview card: the answer first, then who last
+   * confirmed it and when. A rider who never taps the link still gets a dated fact.
+   */
+  snippet: string;
   long: string | null;
   meta: string | null;
   caution: string | null;
@@ -102,6 +107,27 @@ function lineOf(standing: FactStanding, source: Source | null, verb: string, ord
   return `${lead}${dated ? ` · dated ${dated}` : ""} · read ${sayDate(source.accessed)} · no rider has confirmed it`;
 }
 
+/** Words ending in a full stop, so the sentence after them does not run on. */
+function stop(words: string): string {
+  const trimmed = words.trim();
+  return /[.!?…”’)]$/.test(trimmed) ? trimmed : `${trimmed}.`;
+}
+
+/** How far to trust a fact, in one short sentence for the end of its search snippet. */
+function trustOf(standing: FactStanding, source: Source | null, verb: string): string {
+  const { state, latest, waiting, updated } = standing;
+  if (state === "pending" && waiting) return `A rider reported a change on ${sayDate(waiting.seen_on)}. Being checked.`;
+  if (state === "conflict" && latest) return `Riders’ reports disagree. The latest is from ${sayDate(latest.seen_on)}.`;
+  if (latest) {
+    return updated
+      ? `Updated from a rider’s report of ${sayDate(latest.seen_on)}.`
+      : `${verb} on ${sayDate(latest.seen_on)} by ${latest.by}.`;
+  }
+  if (!source) return "Not yet confirmed by a rider.";
+  const from = source.kind === "map" ? "From the open map" : `From ${hostOf(source.url)}`;
+  return `${from}, read ${sayDate(source.accessed)}. Not yet confirmed by a rider.`;
+}
+
 function explainOf(
   standing: FactStanding,
   kind: FactKind | undefined,
@@ -171,6 +197,8 @@ interface Made {
   section: FactSection;
   title: string;
   short: string | null;
+  /** The start of the search snippet, when the short line alone does not say enough. */
+  lead?: string;
   long: string | null;
   meta?: string | null;
   caution?: string | null;
@@ -226,6 +254,7 @@ export function factViews(route: Route, confirmations: Confirmation[], kinds: Fa
       aside: m.aside ?? null,
       short: rewritten ?? m.short,
       line: lineOf(standing, m.source, verb, m.order ?? true),
+      snippet: [stop(rewritten ?? m.lead ?? m.short ?? m.title), trustOf(standing, m.source, verb)].join(" "),
       long: rewritten ? `${rewritten} Before that: ${m.long ?? m.short ?? ""}`.trim() : m.long,
       meta: m.meta ?? null,
       caution: m.caution ?? null,
@@ -297,11 +326,31 @@ export function factViews(route: Route, confirmations: Confirmation[], kinds: Fa
         const off = p.off_road_m && p.off_road_m >= 500 ? `, ${km(p.off_road_m / 1000)} off the road` : "";
         // A pump from the oil company's own locator names it; every other pump is from the open map.
         const fromCompany = p.source ?? null;
+        // For a search result, the pump is placed by the stretch it is on: "467 km from Kochi" on a loop that passes
+        // Kochi twice reads like a mistake under "near Kochi".
+        const at = p.km_from_start;
+        const before = route.waypoints.findLast((w) => w.km_from_start <= at + 0.5);
+        const after = route.waypoints.find((w) => w.km_from_start > at + 0.5);
+        const onRoad =
+          at < 0.5
+            ? `at the start, in ${start}`
+            : total > 0 && total - at < 0.5
+              ? "at the end of the route"
+              : before && at - before.km_from_start < 1.5
+                ? `in ${before.name}`
+                : before && after
+                  ? `${km(at - before.km_from_start)} after ${before.name}, on the way to ${after.name}`
+                  : `${km(at)} from ${start}`;
+        const next = route.fuel.pumps.find((q) => q.km_from_start > at + 0.5);
+        const ahead = next
+          ? `Next pump ${km(next.km_from_start - at)} on${next.near ? `, near ${next.near}` : ""}.`
+          : "The last pump Meel lists on this route.";
         return make({
           id: p.id,
           section: "fuel",
           title: `${p.name}${p.near ? `, near ${p.near}` : ""}`,
           short: `${brand}${where}${off}.`,
+          lead: `${brand ? `${p.brand} pump` : "Fuel pump"} ${onRoad}${off}. ${ahead}`,
           long: `${brand}${where}${off}.${hours}`,
           source: fromCompany ?? {
             url: p.osm_url ?? "https://www.openstreetmap.org/copyright",

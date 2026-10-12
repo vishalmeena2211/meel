@@ -444,3 +444,15 @@ What the checks found and fixed on the way:
 - **The router stopped answering twice.** Once with the laptop asleep, once over the newer kind of internet address (IPv6), which hung for half an hour while the older kind answered at once. The tool now gives up on any connection after 90 seconds and uses the older kind only.
 
 How it was checked: 44 checks in a real browser on a phone-size screen, against the site running on this machine with all twelve cities' data; 22 more at phone and laptop sizes, light and dark, with the accessibility scan on the front page and the Getting there page, which found nothing. The analytics event "Riding from picked" was seen firing, with the city and with none.
+
+## A fact opened from a link, checked on 12 October 2026
+
+**Asked by:** Vishal, after a look at Google Search Console: "yes, do all of them".
+**Why:** each fact page repeated its whole section, so a pump page on a route with 225 pumps was about 98% the same as the next. Google left 2,634 such pages unfetched, and picked a different page as the main one for 8 more.
+**Drawn first:** screen 1, frame 2 "The link opens on that one fact": the pumps either side of the opened one, then "All 12 pumps on this route" and "All of Manali to Leh". The notes now also say the fact is the page's main heading, and what the line under a search result leads with.
+
+| Frame | What it shows | Check | What differed | Now |
+|---|---|---|---|---|
+| 1.2 | A pump opened from a link, with its neighbours | Matches | The drawing's "Check fuel for your bike" button and the gap strip were never built on this page, and are no longer drawn | [x] |
+
+How it was checked: the site built and run on this machine, with pictures at phone size of a Manali to Leh pump ("Pumps before and after it", 4 of 12) and a North Sikkim rule ("More in Rules for motorcycles", 4 of 12). A section of five facts or fewer still shows all of them ("Is it open?" on Darcha to Padum). A Kerala hills pump page went from 6,407 words to 477. Every fact page has one main heading, the fact's own title, and its search line leads with the answer: "Fuel pump 101 km after Kochi, on the way to Kalpetta. Next pump 1 km on, near Kochi. From the open map, read 28 September 2026. Not yet confirmed by a rider."

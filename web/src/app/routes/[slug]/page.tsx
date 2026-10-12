@@ -50,12 +50,20 @@ export async function generateMetadata(props: PageProps<"/routes/[slug]">): Prom
   if (!view) return { title: "No such route" };
   const { route } = view;
   const gap = route.fuel.longest_gaps[0];
+  // "Gandikota to Araku valley distance" is what riders search for, so the route's ends and stops are named.
+  const first = route.waypoints[0]?.name;
+  const last = route.waypoints.at(-1)?.name;
+  const by = [...new Set(route.places)].filter((p) => p !== first && p !== last).slice(0, 5);
+  const byWords = by.length > 1 ? `${by.slice(0, -1).join(", ")} and ${by.at(-1)}` : by[0];
+  const ends = !first || !last ? route.name : first === last ? `A loop from ${first}` : `${first} to ${last}`;
+  const length = route.header.distance_km ? `: ${km(route.header.distance_km)}` : "";
   const parts = [
-    route.header.distance_km ? km(route.header.distance_km) : null,
     route.header.highest_point ? `highest point ${feet(route.header.highest_point.altitude_m)}` : null,
     gap && gap.gap_km >= 60 ? `longest stretch with no pump ${km(gap.gap_km)}` : null,
   ].filter(Boolean);
-  const description = `${route.name}: ${parts.join(", ")}. ${plural(route.counts.facts, "fact")}, each with its source.`;
+  const description =
+    `${ends}${byWords ? ` by way of ${byWords}` : ""}${length}${parts.length ? `, ${parts.join(", ")}` : ""}. ` +
+    `${plural(route.counts.facts, "fact")}, each with its source.`;
   // "by motorcycle" is what riders type into a search box, and it is what the page is about.
   const title = `${route.name} by motorcycle`;
   const canonical = `/routes/${route.slug}`;

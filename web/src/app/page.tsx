@@ -12,8 +12,15 @@ import { confirmedLately } from "@/server/reports";
 // The count of facts confirmed this week is worked out when the page is built, not live. It is built again hourly.
 export const revalidate = 3600;
 
-// The title is the site's own, from the layout. Only the address is said here.
-export const metadata: Metadata = { alternates: { canonical: "/" } };
+// People who hear of the site by its address search for "rideplanner", so the search engines' title names it.
+// A shared link's card keeps the site's own title, as the wireframes draw it.
+const CARD_TITLE = "Meel · dated facts for Indian motorcycle routes";
+export const metadata: Metadata = {
+  title: { absolute: "Meel (rideplanner.in) · dated facts for Indian motorcycle routes" },
+  alternates: { canonical: "/" },
+  openGraph: { title: CARD_TITLE, siteName: "Meel", type: "website", locale: "en_IN" },
+  twitter: { card: "summary_large_image", title: CARD_TITLE },
+};
 
 /** A road thinned to a few dozen points. Enough to draw its shape on the front page. */
 function thin(line: [number, number][], keep = 28): [number, number][] {
@@ -56,7 +63,7 @@ export default async function HomePage() {
           "@context": "https://schema.org",
           "@type": "WebSite",
           name: SITE_NAME,
-          alternateName: "rideplanner.in",
+          alternateName: ["rideplanner.in", "Rideplanner"],
           url: `${SITE_URL}/`,
           description: `${SITE_LINE}. Fuel gaps, permits, passes and night halts, each with its source and the day it was last confirmed.`,
           inLanguage: "en-IN",

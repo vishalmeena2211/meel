@@ -33,12 +33,15 @@ export function BackHead({
   sub,
   back,
   right,
+  titleAs: Title = "h1",
 }: {
   title: string;
   sub?: string;
   /** Where the arrow leads. */
   back: string;
   right?: ReactNode;
+  /** "p" when the page's main heading is further down, as on a fact's own page. It looks the same. */
+  titleAs?: "h1" | "p";
 }) {
   return (
     <header data-head="back" data-inner className={BAR}>
@@ -50,7 +53,7 @@ export function BackHead({
         <IconBack className="size-[18px]" />
       </Link>
       <div className="min-w-0 flex-1">
-        <h1 className="truncate text-[1rem] leading-5 font-semibold">{title}</h1>
+        <Title className="truncate text-[1rem] leading-5 font-semibold">{title}</Title>
         {sub ? <p className="hint num truncate text-xs leading-4">{sub}</p> : null}
       </div>
       {right}

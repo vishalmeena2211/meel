@@ -8,7 +8,6 @@ import { FactButtons, FactRow } from "@/components/route/fact-row";
 import { ShareButton } from "@/components/route/share-button";
 import { BackHead } from "@/components/shell";
 import { Callout, SectionHeading } from "@/components/ui";
-import { STATE_WORDS } from "@/lib/facts";
 import { plural } from "@/lib/format";
 import { isSection, SECTION_NAMES } from "@/lib/sections";
 import { SITE_URL } from "@/lib/site";
@@ -16,6 +15,9 @@ import { getRouteView } from "@/server/route-view";
 
 // One fact has an address of its own, so it can be pasted into a chat group. Made when first asked for.
 export const revalidate = 3600;
+
+/** How many facts either side of the opened one its page shows. A section of five or fewer shows all of it. */
+const NEIGHBOURS = 2;
 
 async function find(slug: string, section: string, fact: string) {
   const view = await getRouteView(slug);
@@ -29,9 +31,9 @@ export async function generateMetadata(props: PageProps<"/routes/[slug]/[section
   const found = await find(slug, section, fact);
   if (!found) return { title: "No such fact" };
   const { view, fact: f } = found;
-  // The card a chat app shows carries the answer and its date, for a rider who never taps the link.
+  // The card a chat app shows, and the line under a search result, carry the answer and its date.
   const title = `${f.title} · ${view.route.name}`;
-  const description = [f.short, `${STATE_WORDS[f.state]}. ${f.line}`].filter(Boolean).join(" ");
+  const description = f.snippet;
   return {
     title,
     description,
@@ -47,7 +49,14 @@ export default async function FactPage(props: PageProps<"/routes/[slug]/[section
   if (!found) notFound();
   const { view, fact: f } = found;
   const names = SECTION_NAMES[found.section];
-  const rest = view.views.all.filter((v) => v.section === f.section && v.slug !== f.slug);
+  // Only the fact's neighbours, not its whole section: a page repeating 225 pumps is a copy of the next pump's page,
+  // and search engines leave such pages out. Fuel is in order along the road, so these are the pumps either side.
+  const list = view.views[f.section];
+  const at = list.findIndex((v) => v.slug === f.slug);
+  const from = Math.max(0, Math.min(at - NEIGHBOURS, list.length - 2 * NEIGHBOURS - 1));
+  const near = list.slice(from, from + 2 * NEIGHBOURS + 1).filter((v) => v.slug !== f.slug);
+  const cut = near.length < list.length - 1;
+  const fuel = f.section === "fuel";
 
   return (
     <div className="flex flex-col gap-3">
@@ -59,30 +68,42 @@ export default async function FactPage(props: PageProps<"/routes/[slug]/[section
           [f.title, f.href],
         ])}
       />
+      {/* The fact is the page's main heading. The bar names the route and the section, and looks as it always has. */}
       <BackHead
         title={view.route.name}
         sub={names.name}
         back={`/routes/${slug}/${f.section}`}
         right={<ShareButton title={`${f.title} · ${view.route.name}`} />}
+        titleAs="p"
       />
       <Callout tone="stone" title="You opened one fact from a link">
-        The rest of the route is below it.
+        {cut
+          ? `${fuel ? "The pumps either side of it" : "The facts next to it"} are below. The whole route is one tap away.`
+          : "The rest of this section is below. The whole route is one tap away."}
       </Callout>
 
       <article className="fact !gap-3 !p-3.5" data-hi="true">
-        <FactBody view={f} as="h2" />
+        <FactBody view={f} as="h1" />
         {f.report ? <FactButtons view={f} /> : null}
       </article>
 
-      {rest.length > 0 ? (
+      {near.length > 0 ? (
         <section className="flex flex-col gap-2">
-          <SectionHeading title={`${names.name}, on this route`} aside={plural(rest.length + 1, "fact")} />
+          <SectionHeading
+            title={cut ? (fuel ? "Pumps before and after it" : `More in ${names.name}`) : `${names.name}, on this route`}
+            aside={cut ? `${near.length} of ${list.length}` : plural(list.length, "fact")}
+          />
           <div className="grid gap-2 lg:grid-cols-2">
-            {rest.map((v) => (
+            {near.map((v) => (
               <FactRow key={v.slug} view={v} />
             ))}
           </div>
         </section>
+      ) : null}
+      {cut ? (
+        <Link className="btn btn-outline" href={`/routes/${slug}/${f.section}`}>
+          {fuel ? `All ${list.length} pumps on this route` : `All ${list.length} facts in ${names.name}`}
+        </Link>
       ) : null}
       <Link className="btn btn-outline self-start" href={`/routes/${slug}`}>
         All of {view.route.name}

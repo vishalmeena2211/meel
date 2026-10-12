@@ -714,13 +714,15 @@ const SCREENS = [
     + phone('2. The link opens on that one fact', `
       ${head('Manali to Leh', 'Fuel', { right: `<span class="iconbtn">${ICON.share}</span>` })}
       ${body(`
-        <div class="callout stone"><b>You opened one fact from a link</b>The rest of the route is below it.</div>
+        <div class="callout stone"><b>You opened one fact from a link</b>The pumps either side of it are below. The whole route is one tap away.</div>
         ${fact({ ...PUMPS[0], open: true, hi: true })}
-        <div class="sec-h"><h3>Fuel on this route</h3><span class="hint">4 pumps</span></div>
-        ${gapStrip}
-        <span class="btn btn-primary btn-block" style="height:46px">${ICON.fuel}Check fuel for your bike</span>
+        <div class="sec-h"><h3>Pumps before and after it</h3><span class="hint">4 of 12</span></div>
+        ${fact({ t: 'Manali, Indian Oil', d: 'At the start, in Manali.', state: 'unchecked', line: 'From the open map · read 28 September 2026 · no rider has confirmed it' })}
+        ${fact({ t: 'Sissu petrol pump', d: '38 km from Manali.', state: 'unchecked', line: 'From the open map · read 28 September 2026 · no rider has confirmed it' })}
         ${fact(PUMPS[1])}
-        ${fact(PUMPS[2])}`)}`)
+        ${fact(PUMPS[2])}
+        <span class="btn btn-outline btn-block">All 12 pumps on this route</span>
+        <span class="btn btn-outline" style="align-self:flex-start">All of Manali to Leh</span>`)}`)
     + phone('3. A link to Meel itself', `
       <div class="chat">
         <div class="chat-top">${ICON.back}<span class="chat-av">DR</span><span><b>Delhi Riders · Ladakh 2027</b><span>48 members</span></span></div>
@@ -736,8 +738,9 @@ const SCREENS = [
         <div class="chat-in"><span style="flex:1;color:var(--ink-2)">Message</span></div>
       </div>`, '9:05'),
     notes: [
-      ['Layout', ['The preview card carries the answer and its date, so a rider who never taps the link still gets a dated fact.', 'The opened page shows the linked fact first, outlined, with its two buttons already visible.', 'Everything else on the route sits below, so one link leads into the whole page.']],
-      ['Behaviour', ['Every fact has its own short address.', 'The preview text is fixed when the chat app first fetches it. It will not update later. That is acceptable because the date is written into the text.', 'The share button copies the fact’s address.']],
+      ['Layout', ['The preview card carries the answer and its date, so a rider who never taps the link still gets a dated fact.', 'The opened page shows the linked fact first, outlined, with its two buttons already visible.', 'Below it come its neighbours: the two facts before it and the two after it in the same section, which for fuel means along the road. Near either end of the list, the four nearest. A section of five facts or fewer shows all of them.', 'Then a button to the whole section ("All 12 pumps on this route") and one to the whole route, so one link still leads into the whole page.', 'The fact’s own title is the page’s main heading, for search engines and screen readers. The bar above it names the route and the section, and looks as before.']],
+      ['Behaviour', ['Every fact has its own short address.', 'The preview text, which is also the line under the link in a Google result, leads with the answer. For a pump: where it is on the route, by the stretch it is on ("101 km after Kochi, on the way to Kalpetta"), and how far on the next pump is. Then who last confirmed it and when, or the day its source was read.', 'The preview text is fixed when the chat app first fetches it. It will not update later. That is acceptable because the date is written into the text.', 'The share button copies the fact’s address.']],
+      ['Why only the neighbours (12 October 2026)', ['Each fact page used to repeat its whole section, so a pump page on a route with 225 pumps was 98% the same as the next. Google treated them as copies: 2,634 pages, nearly all pumps, were left unfetched.']],
       ['Meel itself (frame 3)', ['A link to rideplanner.in with no fact in it shows Meel’s own card: the stone, what Meel is, and how many routes it covers.', 'The number of routes is counted when the site is built, so the card never claims a route that is not there.']],
       ['Data', ['Per fact: a title, one line of detail, a state, who confirmed it, and the date.', 'Per fuel fact: distance to the next pump.', 'One preview picture per fact, made when the site is built.']],
     ],
