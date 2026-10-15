@@ -6059,6 +6059,38 @@
     "accessed": "2026-09-28"
    },
    "history": []
+  },
+  {
+   "id": "rule:roing-anini-two-wheeler-bar-tiger-2026",
+   "kind": "motorcycle-rule",
+   "title": "Roing to Anini: no two-wheelers at km 19 to 23",
+   "detail": "After a tiger was seen, Mehao sanctuary's forest officer barred two-wheelers on this stretch, above all at dawn, dusk and night. No end date given. The advisory was not read.",
+   "applies_to": "Two-wheelers",
+   "set_by": "Divisional Forest Officer, Mehao Wildlife Sanctuary",
+   "official_url": null,
+   "has_official_order": true,
+   "source": {
+    "url": "https://assamtribune.com/north-east/tiger-sighting-prompts-two-wheeler-ban-on-arunachals-roing-anini-road-1620298",
+    "title": "Tiger sighting prompts two-wheeler ban on Arunachal's Roing-Anini road",
+    "kind": "news",
+    "opened": true,
+    "source_date": "2026-10-15",
+    "accessed": "2026-10-15"
+   },
+   "history": [
+    {
+     "date": "2026-10-14",
+     "change": "Advisory issued after a tiger was sighted on the road.",
+     "source": {
+      "url": "https://assamtribune.com/north-east/tiger-sighting-prompts-two-wheeler-ban-on-arunachals-roing-anini-road-1620298",
+      "title": "Tiger sighting prompts two-wheeler ban on Arunachal's Roing-Anini road",
+      "kind": "news",
+      "opened": true,
+      "source_date": "2026-10-15",
+      "accessed": "2026-10-15"
+     }
+    }
+   ]
   }
  ],
  "season": {
@@ -6248,7 +6280,7 @@
   "Videos not collected."
  ],
  "counts": {
-  "facts": 38
+  "facts": 39
  },
- "built": "2026-10-07"
+ "built": "2026-10-15"
 }

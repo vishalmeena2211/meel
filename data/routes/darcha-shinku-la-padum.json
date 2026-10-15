@@ -2811,8 +2811,32 @@
     "connected": "2026-04",
     "open_to_motorcycles": null,
     "closed": null,
-    "note": "Open to four-wheel-drive vehicles on 12 March, blocked again on 15 March, four-wheel-drive only from 25 April. District formally opened it on 10 May. No source names motorcycles.",
+    "note": "Open to four-wheel-drive vehicles on 12 March, blocked again on 15 March, four-wheel-drive only from 25 April. District formally opened it on 10 May. No source names motorcycles. On 11 October heavy snow stranded riders near Shinku La; police brought them down and the district shut the road from Darcha to two-wheelers. On 15 October it was listed as closed by snow. The same day the Prime Minister dedicated the Nimmu–Padum–Darcha road; reports do not call it all-weather.",
     "sources": [
+     {
+      "url": "https://www.tribuneindia.com/news/himachal/stranded-amid-snowfall-tourists-bikers-rescued-from-shinku-la-top/",
+      "title": "Stranded amid snowfall, tourists & bikers rescued from Shinku La Top",
+      "kind": "news",
+      "opened": true,
+      "source_date": "2026-10-12",
+      "accessed": "2026-10-15"
+     },
+     {
+      "url": "https://www.amarujala.com/shimla/lahaul-spiti-snowfall-darcha-shinkula-gramphoo-batal-road-closed-october-15-2026-2026-10-15",
+      "title": "Lahaul-Spiti snowfall: Darcha, Shinku La and Gramphu–Batal roads closed (Amar Ujala)",
+      "kind": "news",
+      "opened": true,
+      "source_date": "2026-10-15",
+      "accessed": "2026-10-15"
+     },
+     {
+      "url": "https://www.indiatvnews.com/business/news/298-km-nimmu-padum-darcha-road-to-boost-military-mobility-strategic-infrastructure-in-ladakh-2026-10-15-1057006",
+      "title": "298-km Nimmu-Padum-Darcha road to boost military mobility, strategic infrastructure in Ladakh",
+      "kind": "news",
+      "opened": true,
+      "source_date": "2026-10-15",
+      "accessed": "2026-10-15"
+     },
      {
       "url": "https://discoverlehladakh.in/manali-darcha-shinkula-padum-zanskar-road-status.htm",
       "title": "Manali - Darcha - Shinkula - Padum (Zanskar) Road Status in 2026",
@@ -3174,6 +3198,22 @@
     "source_date": "2026-08-14",
     "accessed": "2026-09-28"
    }
+  },
+  {
+   "id": "hazard:riders-rescued-and-two-wheelers-stopped-october-2026",
+   "title": "Riders rescued and two-wheelers stopped, October 2026",
+   "detail": "Snow on 11 October 2026 stranded riders near Shinku La. Police brought them down and the road from Darcha was shut to two-wheelers.",
+   "months": [
+    10
+   ],
+   "source": {
+    "url": "https://www.tribuneindia.com/news/himachal/stranded-amid-snowfall-tourists-bikers-rescued-from-shinku-la-top/",
+    "title": "Stranded amid snowfall, tourists & bikers rescued from Shinku La Top",
+    "kind": "news",
+    "opened": true,
+    "source_date": "2026-10-12",
+    "accessed": "2026-10-15"
+   }
   }
  ],
  "videos": [
@@ -3225,7 +3265,7 @@
   "The first video gives no filming date; it was published on 14 June 2025."
  ],
  "counts": {
-  "facts": 42
+  "facts": 43
  },
- "built": "2026-10-06"
+ "built": "2026-10-15"
 }

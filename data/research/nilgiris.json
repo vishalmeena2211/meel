@@ -265,19 +265,19 @@
     {
       "id": "kalhatti-ghat-closed-to-visitors",
       "kind": "motorcycle-rule",
-      "title": "Kalhatti ghat: closed to visiting vehicles",
-      "detail": "Outside vehicles were already barred from riding down. For summer 2026 the collector barred them both ways; a hotel blog says motorcycles are included. Use Gudalur.",
+      "title": "Kalhatti ghat: visiting vehicles limited",
+      "detail": "Outside vehicles were barred from riding down, and in summer 2026 both ways. An October 2026 report says 200 tourist vehicles a day pass, checked at Mavanahalla.",
       "applies_to": "Vehicles registered outside the Nilgiris district",
       "set_by": "District Collector, the Nilgiris, following Madras High Court directions",
       "official_url": null,
       "has_official_order": true,
       "source": {
-        "url": "https://thechenabtimes.com/2026/04/29/nilgiris-district-imposes-tourist-ban-on-kalhatti-ghat-road-amidst-environmental-concerns/",
-        "title": "Nilgiris: Kalhatti Ghat Road Closed to Tourists",
+        "url": "https://www.onmanorama.com/news/kerala/2026/10/05/ooty-faces-severe-traffic-jams-amidst-tourist-surge.html",
+        "title": "Heavy traffic gridlock hits Gudalur-Ooty national highway as second season begins",
         "kind": "news",
         "opened": true,
-        "source_date": "2026-04-29",
-        "accessed": "2026-09-28"
+        "source_date": "2026-10-06",
+        "accessed": "2026-10-15"
       },
       "history": [
         {
@@ -302,6 +302,18 @@
             "opened": true,
             "source_date": "2026-05-08",
             "accessed": "2026-09-28"
+          }
+        },
+        {
+          "date": "2026-10-06",
+          "change": "A news report said only 200 tourist vehicles a day may use the ghat, under a High Court direction, checked at Mavanahalla. Two-wheelers were not mentioned.",
+          "source": {
+            "url": "https://www.onmanorama.com/news/kerala/2026/10/05/ooty-faces-severe-traffic-jams-amidst-tourist-surge.html",
+            "title": "Heavy traffic gridlock hits Gudalur-Ooty national highway as second season begins",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2026-10-06",
+            "accessed": "2026-10-15"
           }
         }
       ]
@@ -520,6 +532,21 @@
         "opened": true,
         "source_date": "2026-05-08",
         "accessed": "2026-09-28"
+      }
+    },
+    {
+      "title": "Road edge gave way at Kallar, October 2026",
+      "detail": "Heavy rain on 5 October 2026 collapsed part of the Mettupalayam to Coonoor road at Kallar. Boulders fell lower down, and a small slip hit near Burliar.",
+      "months": [
+        10
+      ],
+      "source": {
+        "url": "https://www.dtnext.in/news/tamilnadu/heavy-rains-trigger-tree-falls-landslides-in-the-nilgiris",
+        "title": "Heavy rains trigger tree falls, landslides in the Nilgiris",
+        "kind": "news",
+        "opened": true,
+        "source_date": "2026-10-05",
+        "accessed": "2026-10-15"
       }
     }
   ],

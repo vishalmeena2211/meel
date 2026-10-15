@@ -3552,6 +3552,38 @@
     "accessed": "2026-09-28"
    },
    "history": []
+  },
+  {
+   "id": "rule:nh10-sevoke-rangpo-night-closure-2026",
+   "kind": "timing",
+   "title": "NH 10, Sevoke to Rangpo: shut at night, autumn 2026",
+   "detail": "No vehicles from 9 pm to 6 am on 7 to 15 October and 26 October to 5 November 2026, for slope works. Reported in the news; the order was not read.",
+   "applies_to": "All vehicles",
+   "set_by": "Order under the national highways traffic law, as reported",
+   "official_url": null,
+   "has_official_order": true,
+   "source": {
+    "url": "https://www.voiceofsikkim.com/nh-10-night-closure-sevoke-rangpo-october-2026/",
+    "title": "NH-10 Night Closure Announced Between Sevoke and Rangpo in Two Phases From October 7",
+    "kind": "news",
+    "opened": true,
+    "source_date": "2026-10-04",
+    "accessed": "2026-10-15"
+   },
+   "history": [
+    {
+     "date": "2026-10-04",
+     "change": "Night closure announced in two phases, for excavation, slope protection and landslide works.",
+     "source": {
+      "url": "https://www.voiceofsikkim.com/nh-10-night-closure-sevoke-rangpo-october-2026/",
+      "title": "NH-10 Night Closure Announced Between Sevoke and Rangpo in Two Phases From October 7",
+      "kind": "news",
+      "opened": true,
+      "source_date": "2026-10-04",
+      "accessed": "2026-10-15"
+     }
+    }
+   ]
   }
  ],
  "season": {
@@ -3774,7 +3806,7 @@
   "Some stretch distances are doubtful. The open map may not know the road riders use, so the routing service went the long way round."
  ],
  "counts": {
-  "facts": 43
+  "facts": 44
  },
- "built": "2026-10-06"
+ "built": "2026-10-15"
 }

@@ -10377,8 +10377,32 @@
     "connected": "2026-05",
     "open_to_motorcycles": null,
     "closed": null,
-    "note": "Light four-wheel-drive vehicles allowed by 20 May. An unopened blog page gives 12 May. Season still running on 28 September 2026.",
+    "note": "Light four-wheel-drive vehicles allowed by 20 May. An unopened blog page gives 12 May. Season still running on 28 September 2026. Snow from 11 October: police stopped traffic over Kunzum La, and on 15 October the district listed Gramphu to Batal as closed by snow. No winter closure order found by 15 October.",
     "sources": [
+     {
+      "url": "https://www.amarujala.com/shimla/lahaul-spiti-snowfall-darcha-shinkula-gramphoo-batal-road-closed-october-15-2026-2026-10-15",
+      "title": "Lahaul-Spiti snowfall: Darcha, Shinku La and Gramphu–Batal roads closed (Amar Ujala)",
+      "kind": "news",
+      "opened": true,
+      "source_date": "2026-10-15",
+      "accessed": "2026-10-15"
+     },
+     {
+      "url": "https://www.thenorthnews.in/snowfall-shuts-3-key-passes-in-himachals-lahaul-spiti/",
+      "title": "Snowfall shuts 3 key passes in Himachal's Lahaul-Spiti",
+      "kind": "news",
+      "opened": true,
+      "source_date": "2026-10-15",
+      "accessed": "2026-10-15"
+     },
+     {
+      "url": "https://himbumail.com/latest/the-district-administration-shuts-highland-passes-for-movement",
+      "title": "The District Administration Shuts Highland Passes for Movement of Traffic in Lahaul-Spiti Due to Snowfall",
+      "kind": "news",
+      "opened": true,
+      "source_date": "2026-10-11",
+      "accessed": "2026-10-15"
+     },
      {
       "url": "https://www.tribuneindia.com/news/himachal/himachal-kunzum-pass-route-to-spiti-opens-after-6-month-closure/",
       "title": "Himachal: Kunzum Pass route to Spiti opens after 6-month closure",
@@ -10723,6 +10747,22 @@
     "source_date": "2025-10-14",
     "accessed": "2026-09-28"
    }
+  },
+  {
+   "id": "hazard:snow-shut-kunzum-la-october-2026",
+   "title": "Snow shut Kunzum La, October 2026",
+   "detail": "Police stopped traffic over Kunzum La after snow on 11 October 2026. On 15 October Gramphu to Batal was listed as closed by snow.",
+   "months": [
+    10
+   ],
+   "source": {
+    "url": "https://www.amarujala.com/shimla/lahaul-spiti-snowfall-darcha-shinkula-gramphoo-batal-road-closed-october-15-2026-2026-10-15",
+    "title": "Lahaul-Spiti snowfall: Darcha, Shinku La and Gramphu–Batal roads closed (Amar Ujala)",
+    "kind": "news",
+    "opened": true,
+    "source_date": "2026-10-15",
+    "accessed": "2026-10-15"
+   }
   }
  ],
  "videos": [
@@ -10773,7 +10813,7 @@
   "Videos: titles and channels were read from the video pages; filming dates and motorcycles are not confirmed unless the title states them."
  ],
  "counts": {
-  "facts": 90
+  "facts": 91
  },
- "built": "2026-10-06"
+ "built": "2026-10-15"
 }

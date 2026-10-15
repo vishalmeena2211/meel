@@ -6730,6 +6730,18 @@
       "source_date": "2026-09-14",
       "accessed": "2026-09-28"
      }
+    },
+    {
+     "date": "2026-10-02",
+     "change": "A news report said permits were being issued again at Dharchula.",
+     "source": {
+      "url": "https://www.dynamitenews.com/lifestyle-and-travel/landslide-blocks-adi-kailash-route-in-uttarakhand-over-350-pilgrims-halted-at-dharchula",
+      "title": "Landslide Blocks Adi Kailash Route in Uttarakhand, Over 350 Pilgrims Halted at Dharchula",
+      "kind": "news",
+      "opened": true,
+      "source_date": "2026-10-02",
+      "accessed": "2026-10-15"
+     }
     }
    ]
   },
@@ -6873,8 +6885,24 @@
     "connected": "2026-05",
     "open_to_motorcycles": null,
     "closed": null,
-    "note": "Operators give 1 May and 15 May for the opening. Permits paused 1 July; reopening reported for 15 to 20 September. Closing date not found.",
+    "note": "Operators give 1 May and 15 May for the opening. Permits paused 1 July; reopening reported for 15 to 20 September. Early October: a slide at Mangti Nala held pilgrims at Dharchula on 2 October. On 13 October the Army shut the walk to Old Lipulekh Pass for snow; Adi Kailash and Om Parvat visits went on. Closing date not found.",
     "sources": [
+     {
+      "url": "https://thenortherngazette.com/index.php/2026/10/13/old-lipulekh-pass-closed-for-pilgrims-due-to-snowfall/",
+      "title": "Old Lipulekh pass closed for pilgrims due to snowfall",
+      "kind": "news",
+      "opened": true,
+      "source_date": "2026-10-13",
+      "accessed": "2026-10-15"
+     },
+     {
+      "url": "https://www.dynamitenews.com/lifestyle-and-travel/landslide-blocks-adi-kailash-route-in-uttarakhand-over-350-pilgrims-halted-at-dharchula",
+      "title": "Landslide Blocks Adi Kailash Route in Uttarakhand, Over 350 Pilgrims Halted at Dharchula",
+      "kind": "news",
+      "opened": true,
+      "source_date": "2026-10-02",
+      "accessed": "2026-10-15"
+     },
      {
       "url": "https://gotrektravels.com/blogs/adi-kailash-yatra-status-monsoon-updates/",
       "title": "Adi Kailash Yatra 2026 Status: Monsoon Suspension & Reopening Update",
@@ -7105,5 +7133,5 @@
  "counts": {
   "facts": 44
  },
- "built": "2026-10-06"
+ "built": "2026-10-15"
 }

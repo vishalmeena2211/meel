@@ -150,7 +150,25 @@
   ],
   "season": {
     "note": "The Rann is a shallow seasonal wetland after the monsoon and dries to white salt by October or November; winter is the riding season.",
-    "history": []
+    "history": [
+      {
+        "year": 2026,
+        "connected": null,
+        "open_to_motorcycles": null,
+        "closed": null,
+        "note": "A travel magazine gives the Rann Utsav tent city at Dhordo as 1 November 2026 to 7 March 2027, citing no official source. The entry permit is still needed.",
+        "sources": [
+          {
+            "url": "https://www.outlooktraveller.com/responsible-tourism/rann-utsav-2026-27-everything-you-need-to-know-before-visiting-kutch",
+            "title": "Rann Utsav 2026-27: Dates, Things To Do And Travel Guide To Kutch",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2026-10-05",
+            "accessed": "2026-10-15"
+          }
+        ]
+      }
+    ]
   },
   "authorities": [
     {

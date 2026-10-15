@@ -6590,8 +6590,24 @@
     "connected": null,
     "open_to_motorcycles": "2026-04",
     "closed": null,
-    "note": "The pass stayed open past 28 February 2026 for the first time. Civilian and tourist traffic from mid-April; two-way by June. Motorcycles are not named in any source.",
+    "note": "The pass stayed open past 28 February 2026 for the first time. Civilian and tourist traffic from mid-April; two-way by June. Motorcycles are not named in any source. First autumn snow on Zoji La on 14 October. The 15 October advisory still let light vehicles cross both ways until 13:00, weather permitting, with anti-skid chains advised.",
     "sources": [
+     {
+      "url": "https://kashmirlife.net/jammu-srinagar-highway-traffic-police-issues-fresh-advisory-456699/",
+      "title": "Jammu-Srinagar Highway: Traffic Police Issues Fresh Advisory",
+      "kind": "news",
+      "opened": true,
+      "source_date": "2026-10-15",
+      "accessed": "2026-10-15"
+     },
+     {
+      "url": "https://kashmirobserver.net/2026/10/14/fresh-rain-snow-bring-chill-to-kashmir/",
+      "title": "Fresh Rain, Snow Bring Chill To Kashmir",
+      "kind": "news",
+      "opened": true,
+      "source_date": "2026-10-14",
+      "accessed": "2026-10-15"
+     },
      {
       "url": "https://www.tribuneindia.com/news/j-k/bro-breaks-record-zoji-la-pass-on-srinagar-leh-highway-stays-open-through-winter/",
       "title": "BRO breaks record: Zoji La pass stays open through winter",
@@ -7060,5 +7076,5 @@
  "counts": {
   "facts": 84
  },
- "built": "2026-10-06"
+ "built": "2026-10-15"
 }

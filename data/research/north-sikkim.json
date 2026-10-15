@@ -363,6 +363,38 @@
         "accessed": "2026-09-28"
       },
       "history": []
+    },
+    {
+      "id": "nh10-sevoke-rangpo-night-closure-2026",
+      "kind": "timing",
+      "title": "NH 10, Sevoke to Rangpo: shut at night, autumn 2026",
+      "detail": "No vehicles from 9 pm to 6 am on 7 to 15 October and 26 October to 5 November 2026, for slope works. Reported in the news; the order was not read.",
+      "applies_to": "All vehicles",
+      "set_by": "Order under the national highways traffic law, as reported",
+      "official_url": null,
+      "has_official_order": true,
+      "source": {
+        "url": "https://www.voiceofsikkim.com/nh-10-night-closure-sevoke-rangpo-october-2026/",
+        "title": "NH-10 Night Closure Announced Between Sevoke and Rangpo in Two Phases From October 7",
+        "kind": "news",
+        "opened": true,
+        "source_date": "2026-10-04",
+        "accessed": "2026-10-15"
+      },
+      "history": [
+        {
+          "date": "2026-10-04",
+          "change": "Night closure announced in two phases, for excavation, slope protection and landslide works.",
+          "source": {
+            "url": "https://www.voiceofsikkim.com/nh-10-night-closure-sevoke-rangpo-october-2026/",
+            "title": "NH-10 Night Closure Announced Between Sevoke and Rangpo in Two Phases From October 7",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2026-10-04",
+            "accessed": "2026-10-15"
+          }
+        }
+      ]
     }
   ],
   "season": {
@@ -398,8 +430,24 @@
         "connected": "2026-03-09",
         "open_to_motorcycles": null,
         "closed": null,
-        "note": "Blog: permits resumed 9 March, stopped again around June. News: road open to traffic by February, permits issued from 11 September. Motorcycles not mentioned.",
+        "note": "Blog: permits resumed 9 March, stopped again around June. News: road open to traffic by February, permits issued from 11 September. Motorcycles not mentioned. Late September: a slide at Chapten and snow on the Zero Point detour kept about 60 tourists in Lachen from 23 to 28 September. Mangan district's road status of 14 October listed Chungthang to Lachen as clear for light vehicles only, and the roads to Gurudongmar and Zero Point as clear.",
         "sources": [
+          {
+            "url": "https://mangan.nic.in/road-status/",
+            "title": "Road status, dated 14/10/26 (Mangan district)",
+            "kind": "official",
+            "opened": true,
+            "source_date": "2026-10-14",
+            "accessed": "2026-10-15"
+          },
+          {
+            "url": "https://northeastindia24.com/60-tourists-evacuated-from-lachen-after-five-days-of-severe-weather/",
+            "title": "60 Tourists Evacuated from Lachen After Five Days of Severe Weather",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2026-09-29",
+            "accessed": "2026-10-15"
+          },
           {
             "url": "https://discoverwithdheeraj.com/gurudongmar-lake-chopta-valley/",
             "title": "Gurudongmar Lake 2026: Status, Permits & Cost Guide",

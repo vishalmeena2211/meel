@@ -2989,8 +2989,16 @@
     "connected": null,
     "open_to_motorcycles": null,
     "closed": null,
-    "note": "Shut about 23 January; reopened 13 February for light vehicles, one direction a day, with chains. Suspended again on 7 March. Snow clearance under way on 25 April. Full opening date not found.",
+    "note": "Shut about 23 January; reopened 13 February for light vehicles, one direction a day, with chains. Suspended again on 7 March. Snow clearance under way on 25 April. Full opening date not found. In mid-October about five inches of snow at Razdan Top cut the road; Gurez's SDM said it reopened on 14 October.",
     "sources": [
+     {
+      "url": "https://www.greaterkashmir.com/kashmir/gurez-bandipora-road-reopened-after-snowfall-at-razdan-top-12673982",
+      "title": "Gurez-Bandipora road reopened after snowfall at Razdan Top",
+      "kind": "news",
+      "opened": true,
+      "source_date": "2026-10-14",
+      "accessed": "2026-10-15"
+     },
      {
       "url": "https://www.greaterkashmir.com/kashmir/bandipora-gurez-road-reopens-after-20-day-closure",
       "title": "Bandipora-Gurez road reopens after 20-day closure",
@@ -3324,5 +3332,5 @@
  "counts": {
   "facts": 57
  },
- "built": "2026-10-06"
+ "built": "2026-10-15"
 }

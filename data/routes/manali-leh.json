@@ -6803,8 +6803,32 @@
     "connected": "2026-05-12",
     "open_to_motorcycles": "2026-06-01",
     "closed": null,
-    "note": "Light vehicles from 14 May. 1 June is the date full two-way tourist traffic began; the source does not name motorcycles separately. Still open on 11 September 2026.",
+    "note": "Light vehicles from 14 May. 1 June is the date full two-way tourist traffic began; the source does not name motorcycles separately. Still open on 11 September 2026. Snow from 11 October: police stopped traffic over Baralacha La, and on 15 October the district listed Darcha to Sarchu as closed by snow, with no reopening time. No winter closure order found by 15 October.",
     "sources": [
+     {
+      "url": "https://www.amarujala.com/shimla/lahaul-spiti-snowfall-darcha-shinkula-gramphoo-batal-road-closed-october-15-2026-2026-10-15",
+      "title": "Lahaul-Spiti snowfall: Darcha, Shinku La and Gramphu–Batal roads closed (Amar Ujala)",
+      "kind": "news",
+      "opened": true,
+      "source_date": "2026-10-15",
+      "accessed": "2026-10-15"
+     },
+     {
+      "url": "https://www.thenorthnews.in/snowfall-shuts-3-key-passes-in-himachals-lahaul-spiti/",
+      "title": "Snowfall shuts 3 key passes in Himachal's Lahaul-Spiti",
+      "kind": "news",
+      "opened": true,
+      "source_date": "2026-10-15",
+      "accessed": "2026-10-15"
+     },
+     {
+      "url": "https://himbumail.com/latest/the-district-administration-shuts-highland-passes-for-movement",
+      "title": "The District Administration Shuts Highland Passes for Movement of Traffic in Lahaul-Spiti Due to Snowfall",
+      "kind": "news",
+      "opened": true,
+      "source_date": "2026-10-11",
+      "accessed": "2026-10-15"
+     },
      {
       "url": "https://discoverlehladakh.in/manali-leh-highway-status.htm",
       "title": "Manali Leh Highway Status in 2026",
@@ -7244,6 +7268,22 @@
     "source_date": "2026-06-09",
     "accessed": "2026-09-28"
    }
+  },
+  {
+   "id": "hazard:snow-shut-baralacha-la-october-2026",
+   "title": "Snow shut Baralacha La, October 2026",
+   "detail": "Police stopped traffic over Baralacha La after snow on 11 October 2026. On 15 October Darcha to Sarchu was listed as closed by snow, with no reopening time.",
+   "months": [
+    10
+   ],
+   "source": {
+    "url": "https://www.amarujala.com/shimla/lahaul-spiti-snowfall-darcha-shinkula-gramphoo-batal-road-closed-october-15-2026-2026-10-15",
+    "title": "Lahaul-Spiti snowfall: Darcha, Shinku La and Gramphu–Batal roads closed (Amar Ujala)",
+    "kind": "news",
+    "opened": true,
+    "source_date": "2026-10-15",
+    "accessed": "2026-10-15"
+   }
   }
  ],
  "videos": [
@@ -7299,7 +7339,7 @@
   "Video filming dates are not stated on the pages; they were published on 16 June 2025 and 3 March 2026."
  ],
  "counts": {
-  "facts": 79
+  "facts": 80
  },
- "built": "2026-10-06"
+ "built": "2026-10-15"
 }

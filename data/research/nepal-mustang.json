@@ -191,7 +191,25 @@
   ],
   "season": {
     "note": "No seasonal closure of the road to Jomsom and Muktinath was found; the monsoon from June to September is the difficult season.",
-    "history": []
+    "history": [
+      {
+        "year": 2026,
+        "connected": null,
+        "open_to_motorcycles": null,
+        "closed": null,
+        "note": "Floods shut the Beni to Jomsom road for about two weeks from late September; it reopened on the evening of 9 October.",
+        "sources": [
+          {
+            "url": "https://english.onlinekhabar.com/beni-jomsom-route-reopens-cargo-containers-starts-departing-for-destinations.html",
+            "title": "Beni-Jomsom route reopens, cargo containers starts departing for destinations",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2026-10-11",
+            "accessed": "2026-10-15"
+          }
+        ]
+      }
+    ]
   },
   "authorities": [
     {

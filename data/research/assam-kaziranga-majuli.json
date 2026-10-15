@@ -221,7 +221,25 @@
   ],
   "season": {
     "note": "No road on this route closes by season; the ferry to Majuli is disrupted by monsoon currents and winter fog.",
-    "history": []
+    "history": [
+      {
+        "year": 2026,
+        "connected": null,
+        "open_to_motorcycles": null,
+        "closed": null,
+        "note": "Kaziranga reopened for the 2026 to 2027 season on 3 October, with jeep safaris from 7:30 to 10 am and 1:30 to 3 pm. Elephant safaris were expected within about 20 days.",
+        "sources": [
+          {
+            "url": "https://theprint.in/india/kaziranga-reopens-for-tourists-after-annual-monsoon-closure/3061035/",
+            "title": "Kaziranga reopens for tourists after annual monsoon closure",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2026-10-03",
+            "accessed": "2026-10-15"
+          }
+        ]
+      }
+    ]
   },
   "authorities": [
     {

@@ -5152,6 +5152,18 @@
       "source_date": "2026-07-02",
       "accessed": "2026-09-28"
      }
+    },
+    {
+     "date": "2026-10-08",
+     "change": "After two days shut by snow, the road reopened to all vehicles. Churah's SDM advised crossing by day, not in the afternoon or at night.",
+     "source": {
+      "url": "https://www.etvbharat.com/hi/state/sach-pass-route-restored-for-all-vehicles-after-2-days-of-snowfall-hps26100802419",
+      "title": "Sach Pass route restored for all vehicles after two days of snowfall (ETV Bharat)",
+      "kind": "news",
+      "opened": true,
+      "source_date": "2026-10-08",
+      "accessed": "2026-10-15"
+     }
     }
    ]
   },
@@ -5252,8 +5264,24 @@
     "connected": "2026-05",
     "open_to_motorcycles": null,
     "closed": null,
-    "note": "A report of 11 May says light vehicles were let through that week; a July report says late April. Buses from 1 July. Season still running.",
+    "note": "A report of 11 May says light vehicles were let through that week; a July report says late April. Buses from 1 July. Snow shut the Bairagarh to Killar road from 6 October; it reopened to all vehicles on 8 October. Snow shut it again on 9 October. No winter closure order found by 15 October.",
     "sources": [
+     {
+      "url": "https://www.amarujala.com/video/himachal-pradesh/chamba/video-chamba-sach-pass-snowfall-bairagarh-killar-road-closed-pangi-2026-10-09",
+      "title": "Chamba: snowfall at Sach Pass cuts Pangi's road link (Amar Ujala)",
+      "kind": "news",
+      "opened": true,
+      "source_date": "2026-10-09",
+      "accessed": "2026-10-15"
+     },
+     {
+      "url": "https://www.etvbharat.com/hi/state/sach-pass-route-restored-for-all-vehicles-after-2-days-of-snowfall-hps26100802419",
+      "title": "Sach Pass route restored for all vehicles after two days of snowfall (ETV Bharat)",
+      "kind": "news",
+      "opened": true,
+      "source_date": "2026-10-08",
+      "accessed": "2026-10-15"
+     },
      {
       "url": "https://www.tribuneindia.com/news/himachal/after-seven-month-freeze-pangi-valleys-lifeline-sach-pass-opens-to-traffic/",
       "title": "After seven-month freeze, Pangi valley's lifeline Sach Pass opens to traffic",
@@ -5578,6 +5606,22 @@
     "source_date": "2026-08-25",
     "accessed": "2026-09-28"
    }
+  },
+  {
+   "id": "hazard:snow-shut-the-pass-twice-in-early-october-2026",
+   "title": "Snow shut the pass twice in early October 2026",
+   "detail": "Snow closed the Bairagarh to Killar road from 6 October 2026. It reopened on 8 October, with daytime crossings advised, and snow shut it again on 9 October.",
+   "months": [
+    10
+   ],
+   "source": {
+    "url": "https://www.amarujala.com/video/himachal-pradesh/chamba/video-chamba-sach-pass-snowfall-bairagarh-killar-road-closed-pangi-2026-10-09",
+    "title": "Chamba: snowfall at Sach Pass cuts Pangi's road link (Amar Ujala)",
+    "kind": "news",
+    "opened": true,
+    "source_date": "2026-10-09",
+    "accessed": "2026-10-15"
+   }
   }
  ],
  "videos": [
@@ -5628,7 +5672,7 @@
   "Not on the line: Bairagarh, between Tissa and Sach Pass: no position found on the open map"
  ],
  "counts": {
-  "facts": 48
+  "facts": 49
  },
- "built": "2026-10-07"
+ "built": "2026-10-15"
 }
