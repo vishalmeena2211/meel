@@ -153,6 +153,10 @@ def check_all(urls):
             if kind == "error":  # one more try, a little later, before calling it broken
                 time.sleep(5)
                 kind, code, reason = ask(u)
+            # An Indian government site that will not even answer is most often one that ignores requests from
+            # outside India, as GitHub's machines are. It is put with the refusals, not with the broken links.
+            if kind == "error" and code is None and (u.split("/")[2].endswith((".gov.in", ".nic.in"))):
+                kind, reason = "refused", "no answer; government sites often ignore requests from outside India"
             with lock:
                 answers[u] = {"kind": kind, "code": code, "reason": reason}
                 done = len(answers)
