@@ -580,6 +580,16 @@ export async function officeDates(route: Route): Promise<Record<string, OfficeRe
 
 const UK_CLOSURES = "https://mis.pwduk.in/pwd/roadClosure";
 export const UK_CLOSURES_PAGE = UK_CLOSURES;
+/**
+ * The PWD's own numbers for the kinds of road the site shows. The whole list, village roads included, is 6.6 MB
+ * and takes the PWD seconds to make; from the site's host it stopped arriving in time (October 2026). Asked one
+ * kind at a time, each part is a few hundred kilobytes and answers in under a second.
+ */
+const UK_ROAD_TYPES: Array<[id: string, name: string]> = [
+  ["1", "NH"],
+  ["2", "SH"],
+  ["3", "MDR"],
+];
 
 export interface Closure {
   road: string;
@@ -612,48 +622,58 @@ const STATUS_WORDS: Record<string, string> = {
   "partially opened": "Partly reopened",
 };
 
-/** Every main road the PWD lists as not open, across the state. Village roads are left out, and so are officers' names. */
+/** The main roads one part of the PWD's list shows as not open. Throws if the part has changed shape. */
+function closuresIn(text: string): Closure[] {
+  const start = text.indexOf('id="detail_table"');
+  if (start < 0) throw new Error("Uttarakhand PWD list has changed shape");
+  const table = text.slice(start, text.indexOf("</table>", start));
+  const rows = [...table.matchAll(/<tr[^>]*>([\s\S]*?)<\/tr>/g)].map((r) =>
+    [...(r[1] ?? "").matchAll(/<t[hd][^>]*>([\s\S]*?)<\/t[hd]>/g)].map((c) => decode((c[1] ?? "").replace(/<[^>]+>/g, " "))),
+  );
+  const head = rows[0] ?? [];
+  const col = (starts: string) => head.findIndex((h) => h.toLowerCase().startsWith(starts));
+  const at = {
+    road: col("name of road"),
+    km: col("km no"),
+    closed: col("road closed at"),
+    expected: col("expected time"),
+    status: col("status"),
+    district: col("district"),
+    type: col("road type"),
+  };
+  if (Object.values(at).some((i) => i < 0)) throw new Error("Uttarakhand PWD list has changed shape");
+  const closures: Closure[] = [];
+  for (const r of rows.slice(1)) {
+    if (r.length !== head.length) continue;
+    const status = STATUS_WORDS[(r[at.status] ?? "").toLowerCase()];
+    const roadType = r[at.type] ?? "";
+    if (!status || !["NH", "SH", "MDR"].includes(roadType)) continue;
+    closures.push({
+      road: (r[at.road] ?? "").replace(/\s*\[\d+\]\s*$/, "").replace(/\s*:\s*\.?\s*$/, ""),
+      km: (r[at.km] ?? "").replace(/\s*,\s*/g, ", "),
+      status,
+      closedAt: pwdMoment(r[at.closed] ?? ""),
+      expectedAt: pwdMoment(r[at.expected] ?? ""),
+      district: r[at.district] ?? "",
+      roadType,
+    });
+  }
+  return closures;
+}
+
+/**
+ * Every main road the PWD lists as not open, across the state. Village roads are left out, and so are officers'
+ * names. All three parts must arrive: a list missing its state highways would look like good news.
+ */
 const readClosures = unstable_cache(
   async (): Promise<{ closures: Closure[]; read: string }> => {
-    const got = await readText(UK_CLOSURES, { timeoutMs: 30_000 });
-    if (!got) throw new Error("Uttarakhand PWD list could not be read");
-    const start = got.text.indexOf('id="detail_table"');
-    if (start < 0) throw new Error("Uttarakhand PWD list has changed shape");
-    const table = got.text.slice(start, got.text.indexOf("</table>", start));
-    const rows = [...table.matchAll(/<tr[^>]*>([\s\S]*?)<\/tr>/g)].map((r) =>
-      [...(r[1] ?? "").matchAll(/<t[hd][^>]*>([\s\S]*?)<\/t[hd]>/g)].map((c) => decode((c[1] ?? "").replace(/<[^>]+>/g, " "))),
+    const parts = await Promise.all(
+      UK_ROAD_TYPES.map(([id]) => readText(`${UK_CLOSURES}?roadType=${id}&department=all`, { timeoutMs: 20_000 })),
     );
-    const head = rows[0] ?? [];
-    const col = (starts: string) => head.findIndex((h) => h.toLowerCase().startsWith(starts));
-    const at = {
-      road: col("name of road"),
-      km: col("km no"),
-      closed: col("road closed at"),
-      expected: col("expected time"),
-      status: col("status"),
-      district: col("district"),
-      type: col("road type"),
-    };
-    if (Object.values(at).some((i) => i < 0)) throw new Error("Uttarakhand PWD list has changed shape");
-    const closures: Closure[] = [];
-    for (const r of rows.slice(1)) {
-      if (r.length !== head.length) continue;
-      const status = STATUS_WORDS[(r[at.status] ?? "").toLowerCase()];
-      const roadType = r[at.type] ?? "";
-      if (!status || !["NH", "SH", "MDR"].includes(roadType)) continue;
-      closures.push({
-        road: (r[at.road] ?? "").replace(/\s*\[\d+\]\s*$/, "").replace(/\s*:\s*\.?\s*$/, ""),
-        km: (r[at.km] ?? "").replace(/\s*,\s*/g, ", "),
-        status,
-        closedAt: pwdMoment(r[at.closed] ?? ""),
-        expectedAt: pwdMoment(r[at.expected] ?? ""),
-        district: r[at.district] ?? "",
-        roadType,
-      });
-    }
-    return { closures, read: new Date().toISOString() };
+    if (parts.some((got) => !got)) throw new Error("Uttarakhand PWD list could not be read");
+    return { closures: parts.flatMap((got) => closuresIn(got?.text ?? "")), read: new Date().toISOString() };
   },
-  ["uk-closures-v1"],
+  ["uk-closures-v2"],
   { revalidate: 3600 },
 );
 
