@@ -1,0 +1,48 @@
+# Keeps each route page and its "Is it open?" page fresh.
+#
+# A page is built again at most once an hour, but only when someone asks for it: the first rider after the hour
+# still gets the old copy, and their visit is what starts the rebuild. On a quiet site that rider is nearly everyone,
+# so "Is it open?" showed alerts and a forecast from the day before. This asks for those pages every 20 minutes, so a
+# rebuild is always under way before a rider arrives and no page is much more than an hour old.
+#
+# Vercel's free plan runs its own scheduled jobs only once a day, so this runs on GitHub instead. GitHub turns off
+# scheduled workflows in a public repository after 60 days with no commits; "Run workflow" on the Actions tab, or
+# any commit, turns it back on.
+name: Keep pages fresh
+
+on:
+  schedule:
+    - cron: "7,27,47 * * * *"
+  workflow_dispatch:
+
+permissions: {}
+
+concurrency:
+  group: keep-pages-fresh
+  cancel-in-progress: false
+
+jobs:
+  ask:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Ask for every route page and "Is it open?" page
+        run: |
+          set -euo pipefail
+          # The sitemap lists only the routes that are written, so a new route is picked up by itself.
+          curl -fsS --retry 3 https://rideplanner.in/sitemap.xml \
+            | grep -o '<loc>[^<]*</loc>' | sed 's#</*loc>##g' \
+            | grep -E '^https://rideplanner\.in/routes/[^/]+(/open)?$' > pages.txt
+          total=$(wc -l < pages.txt)
+          echo "Asking for $total pages"
+          xargs -P 4 -n 1 curl -s --compressed -o /dev/null --max-time 60 \
+            -A "meel-keep-fresh (github.com/vishalmeena2211/meel)" \
+            -w '%{http_code} %{url}\n' < pages.txt > answers.txt || true
+          awk '{print $1}' answers.txt | sort | uniq -c
+          grep -v '^200 ' answers.txt || true
+          ok=$(grep -c '^200 ' answers.txt || true)
+          # A handful of slow answers is fine; most pages failing means the site is down, and that should show.
+          if [ "$ok" -lt $(( total * 9 / 10 )) ]; then
+            echo "Only $ok of $total pages answered."
+            exit 1
+          fi

@@ -243,6 +243,7 @@ dropdb meel_scratch
 
 ## Good to know
 
+- **A page is built again only when someone asks for it.** Route pages and their sections are kept for an hour, but the first visitor after that still gets the old copy, and their visit starts the rebuild. On a quiet site that left "Is it open?" a day old. A GitHub workflow, `.github/workflows/keep-pages-fresh.yml`, asks for every route page and "Is it open?" page every 20 minutes so a fresh copy is always waiting. It runs on GitHub because Vercel's free plan runs its own scheduled jobs only once a day. GitHub switches it off after 60 days with no commits; "Run workflow" on the Actions tab switches it back on.
 - **Logging out works on this phone only.** It removes this phone's cookie. A copy of that cookie taken from this phone would still work until it runs out after 30 days. Changing the password, or the editor setting a one-time password, logs out every phone at once.
 - **Pages that ask who is logged in read the cookie through `cookies()`, not Auth.js's `auth()`.** After a form logs a phone in, Next.js re-renders the page in the same request, and only `cookies()` already holds the new cookie. See `currentUser` in `src/server/auth.ts`.
 - **The Prisma CLI is pinned to 7.10.0.** On npm its "latest" tag has pointed at a release candidate of version 8.
