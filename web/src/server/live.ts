@@ -581,9 +581,13 @@ export async function officeDates(route: Route): Promise<Record<string, OfficeRe
 const UK_CLOSURES = "https://mis.pwduk.in/pwd/roadClosure";
 export const UK_CLOSURES_PAGE = UK_CLOSURES;
 /**
- * The PWD's own numbers for the kinds of road the site shows. The whole list, village roads included, is 6.6 MB
- * and takes the PWD seconds to make; from the site's host it stopped arriving in time (October 2026). Asked one
- * kind at a time, each part is a few hundred kilobytes and answers in under a second.
+ * The PWD's site turns away servers outside India, this site's among them (from October 2026), so the list is read
+ * through a small relay that runs in Mumbai and passes the PWD's page on unchanged. Its code is in ../relay.
+ */
+const UK_CLOSURES_RELAY = "https://meel-pwd-relay.vercel.app/api/pwd";
+/**
+ * The PWD's own numbers for the kinds of road the site shows. The whole list, village roads included, is 6.6 MB;
+ * asked one kind at a time, each part is a few hundred kilobytes and answers in under a second.
  */
 const UK_ROAD_TYPES: Array<[id: string, name: string]> = [
   ["1", "NH"],
@@ -668,7 +672,7 @@ function closuresIn(text: string): Closure[] {
 const readClosures = unstable_cache(
   async (): Promise<{ closures: Closure[]; read: string }> => {
     const parts = await Promise.all(
-      UK_ROAD_TYPES.map(([id]) => readText(`${UK_CLOSURES}?roadType=${id}&department=all`, { timeoutMs: 20_000 })),
+      UK_ROAD_TYPES.map(([id]) => readText(`${UK_CLOSURES_RELAY}?roadType=${id}`, { timeoutMs: 20_000 })),
     );
     if (parts.some((got) => !got)) throw new Error("Uttarakhand PWD list could not be read");
     return { closures: parts.flatMap((got) => closuresIn(got?.text ?? "")), read: new Date().toISOString() };
