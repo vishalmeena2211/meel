@@ -1,0 +1,61 @@
+# Every Monday, checks that every fact's source link still opens, and keeps one issue listing the ones that need a
+# person: links that are gone, and links that did not answer properly. Links a site refused (some Indian government
+# sites turn away programs, or requests from outside India, and GitHub's machines are in the United States) are
+# listed apart and folded away, so nobody removes a good source by mistake.
+#
+# The check itself is data/tools/check_links.py, which anyone can also run on their own machine.
+name: Check source links
+
+on:
+  schedule:
+    - cron: "17 3 * * 1" # Mondays, 08:47 in India
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+concurrency:
+  group: check-source-links
+  cancel-in-progress: false
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Check every source link
+        run: python3 data/tools/check_links.py --markdown report.md | tee run.log
+
+      - name: Keep the full report for a month
+        uses: actions/upload-artifact@v4
+        with:
+          name: link-report
+          path: data/computed/link-report.json
+          retention-days: 30
+
+      - name: Keep one issue up to date
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+        run: |
+          need=$(grep -o 'NEEDS_A_PERSON=[0-9]*' run.log | cut -d= -f2)
+          gh label create broken-links --color B60205 --description "Found by the weekly source link check" --force
+          num=$(gh issue list --label broken-links --state open --json number --jq '.[0].number // empty')
+          if [ "$need" -gt 0 ]; then
+            if [ -n "$num" ]; then
+              before=$(gh issue view "$num" --json body --jq .body | grep -o '^\*\*Gone:\*\* [0-9]* · \*\*Did not answer:\*\* [0-9]*' || true)
+              gh issue edit "$num" --body-file report.md
+              after=$(grep -o '^\*\*Gone:\*\* [0-9]* · \*\*Did not answer:\*\* [0-9]*' report.md || true)
+              if [ "$before" != "$after" ]; then
+                gh issue comment "$num" --body "This week's check changed the list: ${after//\*\*/}."
+              fi
+            else
+              gh issue create --title "Source links that no longer open" --label broken-links --body-file report.md
+            fi
+          elif [ -n "$num" ]; then
+            gh issue comment "$num" --body "Every source link opened in this week's check. Closing."
+            gh issue close "$num"
+          fi

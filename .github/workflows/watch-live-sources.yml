@@ -1,0 +1,48 @@
+# Every hour, reads each route's "Is it open?" page and looks for the notes the site shows when a source it reads
+# live did not answer: the government's alert feed, Uttarakhand PWD's list of closed roads, and the forecast. One
+# that keeps failing past its limit gets one issue, labelled live-source-down; the issue closes itself once every
+# source answers again. See .github/scripts/watch_live.py.
+#
+# It runs ten minutes after the job that keeps pages fresh, so it reads pages that were just rebuilt.
+name: Watch live sources
+
+on:
+  schedule:
+    - cron: "37 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+concurrency:
+  group: watch-live-sources
+  cancel-in-progress: false
+
+jobs:
+  watch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+
+      # Since when each source has been failing, carried from one run to the next.
+      - name: Remember the last run
+        uses: actions/cache/restore@v4
+        with:
+          path: state.json
+          key: live-watch-${{ github.run_id }}
+          restore-keys: live-watch-
+
+      - name: Read every "Is it open?" page
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+        run: python3 .github/scripts/watch_live.py state.json
+
+      - name: Keep this run for the next one
+        if: always()
+        uses: actions/cache/save@v4
+        with:
+          path: state.json
+          key: live-watch-${{ github.run_id }}
