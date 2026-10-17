@@ -6877,7 +6877,38 @@
    }
   }
  ],
- "videos": [],
+ "videos": [
+  {
+   "id": "KNcIhSpUY_g",
+   "url": "https://www.youtube.com/watch?v=KNcIhSpUY_g",
+   "title": "BHUTAN BIKE RIDE DAY 1: From Hot Plains to Himalayan Hills! (Phuentsholing to Thimphu)",
+   "channel": "360 PAYANA",
+   "stretch": "Phuentsholing to Thimphu",
+   "filmed": null,
+   "bike": null,
+   "checked": false
+  },
+  {
+   "id": "U3_rVLGto2I",
+   "url": "https://www.youtube.com/watch?v=U3_rVLGto2I",
+   "title": "Traveling from Thimphu to Punakha via Dochula Pass is a wonderful experience.#bhutan @yashwanth26 ",
+   "channel": "Yashwanth",
+   "stretch": "Thimphu to Punakha",
+   "filmed": null,
+   "bike": null,
+   "checked": false
+  },
+  {
+   "id": "QzGo7jnjzZA",
+   "url": "https://www.youtube.com/watch?v=QzGo7jnjzZA",
+   "title": "This Real Bhutan Will Make You Forget Everything Else | Ep-03 Road To Paro - Thimphu | Bhutan Ride",
+   "channel": "Deep Ranjan Sachan",
+   "stretch": "Thimphu to Paro",
+   "filmed": null,
+   "bike": null,
+   "checked": false
+  }
+ ],
  "image": {
   "file": "bhutan.jpg",
   "small": "bhutan-small.jpg",
@@ -6908,7 +6939,7 @@
   "Some stretch distances are doubtful. The open map may not know the road riders use, so the routing service went the long way round."
  ],
  "counts": {
-  "facts": 48
+  "facts": 51
  },
  "built": "2026-10-17"
 }

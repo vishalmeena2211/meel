@@ -4502,7 +4502,38 @@
    }
   }
  ],
- "videos": [],
+ "videos": [
+  {
+   "id": "Qkrm9msTSFs",
+   "url": "https://www.youtube.com/watch?v=Qkrm9msTSFs",
+   "title": "Dehradun → Mussoorie → Dhanaulti | Ek Beautiful Mountain Bike Ride ❤️ | Vlog 5",
+   "channel": "Sochta Musafir",
+   "stretch": "Dehradun to Dhanaulti",
+   "filmed": null,
+   "bike": null,
+   "checked": false
+  },
+  {
+   "id": "0RqvCg-gQUE",
+   "url": "https://www.youtube.com/watch?v=0RqvCg-gQUE",
+   "title": "Mussoorie to Chakrata by bike 🏍️ | Hidden Gem of Uttarakhand | Episode-2 |",
+   "channel": "Unmarried Traveler",
+   "stretch": "Mussoorie to Chakrata",
+   "filmed": null,
+   "bike": "Honda H'ness 350",
+   "checked": false
+  },
+  {
+   "id": "q1J-paip3QA",
+   "url": "https://www.youtube.com/watch?v=q1J-paip3QA",
+   "title": "Chasing MOUNTAINS Solo: Chakrata to Mussoorie",
+   "channel": "Manjeet Singh",
+   "stretch": "Chakrata to Mussoorie",
+   "filmed": null,
+   "bike": null,
+   "checked": false
+  }
+ ],
  "image": {
   "file": "mussoorie-dhanaulti-chakrata.jpg",
   "small": "mussoorie-dhanaulti-chakrata-small.jpg",
@@ -4528,7 +4559,7 @@
   "No rider videos collected; the search budget ran out before this route."
  ],
  "counts": {
-  "facts": 35
+  "facts": 38
  },
  "built": "2026-10-17"
 }

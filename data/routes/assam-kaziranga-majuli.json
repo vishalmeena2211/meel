@@ -3739,7 +3739,38 @@
    }
   }
  ],
- "videos": [],
+ "videos": [
+  {
+   "id": "5xe8T27UW9U",
+   "url": "https://www.youtube.com/watch?v=5xe8T27UW9U",
+   "title": "​Majuli to Guwahati Bike Ride! 🏍️ Crossing the Massive Brahmaputra on a Ferry",
+   "channel": "Travel With Prabhakar",
+   "stretch": null,
+   "filmed": null,
+   "bike": "Royal Enfield Himalayan",
+   "checked": false
+  },
+  {
+   "id": "RG7BdRtGdhI",
+   "url": "https://www.youtube.com/watch?v=RG7BdRtGdhI",
+   "title": "Guwahati to Kaziranga road trip | RR310 | EP7",
+   "channel": "Shubham das",
+   "stretch": "Guwahati to Kohora",
+   "filmed": null,
+   "bike": "TVS Apache RR 310",
+   "checked": false
+  },
+  {
+   "id": "itfc5XYlru4",
+   "url": "https://www.youtube.com/watch?v=itfc5XYlru4",
+   "title": "Loaded Our Bikes On Ferry To Reach World's Largest River Island | EP-10 Majuli Island Assam",
+   "channel": "Deep Ranjan Sachan",
+   "stretch": "Nimati Ghat to Kamalabari",
+   "filmed": null,
+   "bike": null,
+   "checked": false
+  }
+ ],
  "image": {
   "file": "assam-kaziranga-majuli.jpg",
   "small": "assam-kaziranga-majuli-small.jpg",
@@ -3766,7 +3797,7 @@
   "Videos not collected."
  ],
  "counts": {
-  "facts": 85
+  "facts": 88
  },
  "built": "2026-10-17"
 }

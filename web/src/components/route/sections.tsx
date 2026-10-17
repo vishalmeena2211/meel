@@ -536,7 +536,8 @@ interface Span {
 
 export function VideosSection({ view }: { view: RouteView }) {
   const { route } = view;
-  const at = (place: string) => route.waypoints.find((w) => w.name.toLowerCase() === place.trim().toLowerCase())?.km_from_start;
+  const kmsOf = (place: string) =>
+    route.waypoints.filter((w) => w.name.toLowerCase() === place.trim().toLowerCase()).map((w) => w.km_from_start);
 
   // A video names the stretch it shows, such as "Sarchu to Pang". Videos are grouped under those words.
   const groups = new Map<string, Video[]>();
@@ -544,12 +545,34 @@ export function VideosSection({ view }: { view: RouteView }) {
     const name = v.stretch ?? "The whole route";
     groups.set(name, [...(groups.get(name) ?? []), v]);
   }
+  // A loop passes its first town again at the end ("Leh" at km 0 and km 768), so a name can stand for two points.
+  // "Korzok to Leh" means the Leh after Korzok: of the pairs the two names allow, the shortest one running the
+  // route's way; only for a video ridden the other way ("Sarchu to Manali"), the shortest one running back.
   const spans: Span[] = [...groups.keys()].flatMap((name) => {
     const [a, b] = name.split(/ to /i);
-    const x = a ? at(a) : undefined;
-    const y = b ? at(b) : undefined;
-    return x === undefined || y === undefined ? [] : [{ name, from: Math.min(x, y), to: Math.max(x, y) }];
+    let best: { span: Span; forward: boolean } | undefined;
+    for (const x of a ? kmsOf(a) : []) {
+      for (const y of b ? kmsOf(b) : []) {
+        if (x === y) continue;
+        const forward = x < y;
+        const span = { name, from: Math.min(x, y), to: Math.max(x, y) };
+        const better =
+          !best ||
+          (forward && !best.forward) ||
+          (forward === best.forward && span.to - span.from < best.span.to - best.span.from);
+        if (better) best = { span, forward };
+      }
+    }
+    return best ? [best.span] : [];
   });
+  // A spur ridden out and back has the same road twice ("Salem to Yercaud", then "Yercaud to Salem"): a video
+  // named for those two places covers both.
+  const pairOf = (a: string, b: string) => [a, b].map((p) => p.trim().toLowerCase()).sort().join(" | ");
+  const named = new Set<string>();
+  for (const name of groups.keys()) {
+    const [a, b] = name.split(/ to /i);
+    if (a && b) named.add(pairOf(a, b));
+  }
   const lengthOf = (name: string) => spans.find((s) => s.name === name);
 
   // Stretches that no video covers, joined where they touch.
@@ -560,7 +583,9 @@ export function VideosSection({ view }: { view: RouteView }) {
     const to = kmAt + s.distance_km;
     kmAt = to;
     const covered =
-      groups.has("The whole route") || spans.some((sp) => sp.from <= from + 2 && sp.to >= to - 2);
+      groups.has("The whole route") ||
+      named.has(pairOf(s.from, s.to)) ||
+      spans.some((sp) => sp.from <= from + 2 && sp.to >= to - 2);
     if (covered) continue;
     const last = bare[bare.length - 1];
     if (last && last.to === s.from) {

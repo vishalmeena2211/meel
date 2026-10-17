@@ -386,7 +386,7 @@ If the answer is no, the plan changes here, at a cost of three weeks and no code
 - [ ] Gather the official-source facts for each route: permits, fees, motorcycle rules, distances, altitudes, season window — every one with a link and a date
 - [ ] Check each gathered fact, and mark any you have not checked as "not yet checked"
 - [ ] Record the distance between fuel pumps on each route
-- [ ] Pin three to five rider videos to each route, each with the date filmed and the rider credited
+- [x] Pin three to five rider videos to each route, each with the date filmed and the rider credited (17 October 2026: 210 videos, 3 to 5 on every route; the month filmed only where the rider says it)
 - [ ] Write the packing list for each route, by month
 
 **Full page, Manali to Leh:**

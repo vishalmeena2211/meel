@@ -6777,7 +6777,38 @@
    }
   }
  ],
- "videos": [],
+ "videos": [
+  {
+   "id": "pBh76KcwBHw",
+   "url": "https://www.youtube.com/watch?v=pBh76KcwBHw",
+   "title": "Gangtok to Lachen by Bike 2026 | Dangerous & Beautiful Roads of Sikkim | EP : 03",
+   "channel": "The Bong Wanderlust",
+   "stretch": "Gangtok to Lachen",
+   "filmed": "2026",
+   "bike": "Royal Enfield Himalayan 450",
+   "checked": false
+  },
+  {
+   "id": "9QPIutiJzfc",
+   "url": "https://www.youtube.com/watch?v=9QPIutiJzfc",
+   "title": "#gurudongmar  LAKE IS FINALLY OPEN! 🏔️ | #lachen  to Gurudongmar Lake Bike Trip | North Sikkim 2026",
+   "channel": "SubhaJoti's Journey",
+   "stretch": "Lachen to Gurudongmar Lake",
+   "filmed": "2026",
+   "bike": null,
+   "checked": false
+  },
+  {
+   "id": "KTlqGAO0oMI",
+   "url": "https://www.youtube.com/watch?v=KTlqGAO0oMI",
+   "title": "​Extreme Sikkim Bike Ride! ❄️ | Above 15,000ft to Zero Point & Yumthang Valley | Monsoon Season 2026",
+   "channel": "Arslaan Khan Official",
+   "stretch": "Lachung to Yumthang",
+   "filmed": "2026",
+   "bike": null,
+   "checked": false
+  }
+ ],
  "image": {
   "file": "north-sikkim.jpg",
   "small": "north-sikkim-small.jpg",
@@ -6807,7 +6838,7 @@
   "Videos not collected."
  ],
  "counts": {
-  "facts": 51
+  "facts": 54
  },
  "built": "2026-10-17"
 }

@@ -13045,7 +13045,38 @@
    }
   }
  ],
- "videos": [],
+ "videos": [
+  {
+   "id": "73KdVSjsz8g",
+   "url": "https://www.youtube.com/watch?v=73KdVSjsz8g",
+   "title": "BREAKFAST RIDE AT SENDRA - MY FIRST MOTOVLOG - HIMALAYAN 411",
+   "channel": "Gyaneshor KH",
+   "stretch": "Imphal to Moirang",
+   "filmed": null,
+   "bike": "Royal Enfield Himalayan 411",
+   "checked": false
+  },
+  {
+   "id": "YrKFlYe2mCA",
+   "url": "https://www.youtube.com/watch?v=YrKFlYe2mCA",
+   "title": "SOLO INTERSTATE POV 4K | Mizoram to Manipur | Peak Monsoon | Road condition | Ride in rain.",
+   "channel": "Binged Rider",
+   "stretch": "Moirang to Aizawl",
+   "filmed": null,
+   "bike": "Royal Enfield Interceptor 650",
+   "checked": false
+  },
+  {
+   "id": "vw58auuTCys",
+   "url": "https://www.youtube.com/watch?v=vw58auuTCys",
+   "title": "RIDE TO CHAMPHAI 4K, MIZORAM | HNAHSIN'S BLOOM SEASON.",
+   "channel": "Binged Rider",
+   "stretch": "Aizawl to Champhai",
+   "filmed": null,
+   "bike": "Royal Enfield Interceptor 650",
+   "checked": false
+  }
+ ],
  "image": {
   "file": "manipur-mizoram.jpg",
   "small": "manipur-mizoram-small.jpg",
@@ -13074,7 +13105,7 @@
   "Videos not collected."
  ],
  "counts": {
-  "facts": 51
+  "facts": 54
  },
  "built": "2026-10-17"
 }

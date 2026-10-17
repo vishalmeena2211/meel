@@ -10771,7 +10771,7 @@
    "url": "https://www.youtube.com/watch?v=bkEoDkNhqbA",
    "title": "Motorcycle Journey Through SPITI VALLEY | Riding the Deadliest Roads of the Spiti Circuit",
    "channel": "Ghumnewala",
-   "stretch": "Spiti circuit",
+   "stretch": null,
    "filmed": null,
    "bike": null,
    "checked": false
@@ -10781,8 +10781,38 @@
    "url": "https://www.youtube.com/watch?v=09BgvTQ8U4s",
    "title": "Kaza to Manali via Kunzum Pass | Spiti Valley | Part- 6 | Final Episode | Spiti Circuit 2022",
    "channel": "Harsh Koli",
-   "stretch": "Kaza to Manali over Kunzum La",
+   "stretch": "Kaza to Manali",
    "filmed": "2022",
+   "bike": null,
+   "checked": false
+  },
+  {
+   "id": "AMXbRaekClc",
+   "url": "https://www.youtube.com/watch?v=AMXbRaekClc",
+   "title": "Shimla to Reckong Peo | The Road to Spiti Starts Here! 🏔️ | On My Bmw Gs 310 | Ep-04",
+   "channel": "Sachin Shinde ",
+   "stretch": "Shimla to Reckong Peo",
+   "filmed": null,
+   "bike": "BMW G310GS",
+   "checked": false
+  },
+  {
+   "id": "C1RrmG9QDnw",
+   "url": "https://www.youtube.com/watch?v=C1RrmG9QDnw",
+   "title": "Spiti Valley Bike Trip 2026 | Kalpa To Kaza | Spiti Circuit | Ep - 2",
+   "channel": "Rider of Black Bull - Vlogs",
+   "stretch": "Reckong Peo to Kaza",
+   "filmed": "2026",
+   "bike": null,
+   "checked": false
+  },
+  {
+   "id": "YmUfyqSV2b0",
+   "url": "https://www.youtube.com/watch?v=YmUfyqSV2b0",
+   "title": "Kaza(Spiti valley) to Manali | 120 KM No Road, Pure Adventure 😱 | Solo Bike Ride",
+   "channel": "Vlogging Wale Baba",
+   "stretch": "Kaza to Manali",
+   "filmed": null,
    "bike": null,
    "checked": false
   }
@@ -10813,7 +10843,7 @@
   "Videos: titles and channels were read from the video pages; filming dates and motorcycles are not confirmed unless the title states them."
  ],
  "counts": {
-  "facts": 91
+  "facts": 94
  },
  "built": "2026-10-17"
 }

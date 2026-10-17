@@ -7359,7 +7359,38 @@
    }
   }
  ],
- "videos": [],
+ "videos": [
+  {
+   "id": "XyHDwkelLnM",
+   "url": "https://www.youtube.com/watch?v=XyHDwkelLnM",
+   "title": "Nepal Ride 2025 | Sonauli to Pokhara | Bike Ride |Hotels | Food | Views | @royalenfield | Ep-2",
+   "channel": "kAbiR PUNJABI",
+   "stretch": "Sunauli to Pokhara",
+   "filmed": "2025",
+   "bike": null,
+   "checked": false
+  },
+  {
+   "id": "xnOvsEa44DE",
+   "url": "https://www.youtube.com/watch?v=xnOvsEa44DE",
+   "title": "Pokhara to Muktinath Bike Ride- (Jomsom) 🏍️ | Lower Mustang by Bike- 2026 | Delhi to Nepal- Ep. 2",
+   "channel": "2Wheel_Monk",
+   "stretch": "Pokhara to Jomsom",
+   "filmed": "2026",
+   "bike": "Royal Enfield Interceptor 650",
+   "checked": false
+  },
+  {
+   "id": "-maBO0DTCLM",
+   "url": "https://www.youtube.com/watch?v=-maBO0DTCLM",
+   "title": "You May Never Return Back From This Place | Mustang - Muktinath | Ep-02 | Nepal Ride 2025",
+   "channel": "Deep Ranjan Sachan",
+   "stretch": "Jomsom to Muktinath",
+   "filmed": "2025",
+   "bike": null,
+   "checked": false
+  }
+ ],
  "image": {
   "file": "nepal-mustang.jpg",
   "small": "nepal-mustang-small.jpg",
@@ -7391,7 +7422,7 @@
   "Some stretch distances are doubtful. The open map may not know the road riders use, so the routing service went the long way round."
  ],
  "counts": {
-  "facts": 90
+  "facts": 93
  },
  "built": "2026-10-17"
 }
