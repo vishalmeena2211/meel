@@ -7,7 +7,8 @@ IndexNow, a shared address that passes the list on to all of them. ChatGPT's sea
 Run by .github/workflows/tell-search-engines.yml after each production deploy. It compares the route files of the
 deploy before with this one, fact by fact, and sends:
   - each fact page whose fact changed, or that is new;
-  - the section page and the route page around it;
+  - the section page and the route page around it, also for an item with no page of its own (a video) or one
+    that was removed;
   - every page of a route that is new.
 The live sitemap decides which addresses exist, so a fact that was removed is not sent.
 
@@ -33,6 +34,8 @@ ENDPOINT = "https://api.indexnow.org/indexnow"
 UA = "meel-tell-search-engines (github.com/vishalmeena2211/meel)"
 # The parts of a route file whose items each have a page of their own, found by their "id".
 LISTS = ("rules", "hazards", "authorities", "videos", "mechanics", "stays", "tunnels")
+# The section page each part of a route file is shown on. Videos have no page of their own, only their section's.
+SECTION = {"rules": "rules", "hazards": "road", "authorities": "open", "videos": "videos", "pumps": "fuel"}
 # Parts that change on every build without changing what a rider reads.
 IGNORED = ("built", "counts")
 
@@ -50,13 +53,13 @@ def route_at(sha, path):
 
 
 def items(route):
-    """Every item with a page of its own, by id, as text that compares equal when nothing changed."""
+    """Every item with an id, as (the part it belongs to, text that compares equal when nothing changed)."""
     found = {}
-    lists = [route.get(k) for k in LISTS] + [(route.get("fuel") or {}).get("pumps")]
-    for part in lists:
+    lists = [(k, route.get(k)) for k in LISTS] + [("pumps", (route.get("fuel") or {}).get("pumps"))]
+    for name, part in lists:
         for item in part or []:
             if isinstance(item, dict) and item.get("id"):
-                found[str(item["id"])] = json.dumps(item, sort_keys=True, ensure_ascii=False)
+                found[str(item["id"])] = (name, json.dumps(item, sort_keys=True, ensure_ascii=False))
     return found
 
 
@@ -89,13 +92,19 @@ def changed_pages(base, head, urls):
             pages |= {u for u in urls if u == top or u.startswith(top + "/")}
             continue
         before, after = items(old), items(new)
-        for fact_id in after:
-            if before.get(fact_id) == after[fact_id]:
+        for fact_id in set(before) | set(after):
+            if before.get(fact_id) == after.get(fact_id):
                 continue
             end = "/" + slug_of(fact_id)
-            for u in urls:
-                if u.startswith(top + "/") and u.endswith(end) and u.count("/") == top.count("/") + 2:
-                    pages |= {u, u.rsplit("/", 1)[0], top}
+            own = [u for u in urls if fact_id in after and u.startswith(top + "/") and u.endswith(end)
+                   and u.count("/") == top.count("/") + 2]
+            for u in own:
+                pages |= {u, u.rsplit("/", 1)[0], top}
+            # A video, or an item that was removed, has no page of its own to send: its section page changed.
+            if not own:
+                part = (after.get(fact_id) or before.get(fact_id))[0]
+                if part in SECTION:
+                    pages |= {f"{top}/{SECTION[part]}", top}
         if rest(old) != rest(new):
             pages.add(top)
             if json.dumps(old.get("season"), sort_keys=True) != json.dumps(new.get("season"), sort_keys=True):
