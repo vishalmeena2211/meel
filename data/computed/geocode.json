@@ -2175,5 +2175,40 @@
   "found_as": "Kanpur, Kanpur Nagar, Uttar Pradesh, 208012, India",
   "type": "place/city",
   "by": "nominatim"
+ },
+ "Chilling, Leh": {
+  "lat": 34.0385204,
+  "lon": 77.2028513,
+  "found_as": "Chilling, Sham, Ladakh, India",
+  "type": "place/hamlet",
+  "by": "nominatim"
+ },
+ "Nerak, Zanskar": {
+  "lat": null,
+  "lon": null,
+  "found_as": null,
+  "type": null,
+  "by": null
+ },
+ "Pidmo, Zanskar": {
+  "lat": 33.6920502,
+  "lon": 76.9228345,
+  "found_as": "Pidmo, Kargil district, Ladakh, India",
+  "type": "place/village",
+  "by": "nominatim"
+ },
+ "Zangla, Zanskar": {
+  "lat": 33.6585872,
+  "lon": 76.9914578,
+  "found_as": "Zangla, Kargil district, Ladakh, India",
+  "type": "place/village",
+  "by": "nominatim"
+ },
+ "Stongde, Zanskar": {
+  "lat": 33.5177873,
+  "lon": 76.9734891,
+  "found_as": "Stongde, Kargil district, Ladakh, India",
+  "type": "place/village",
+  "by": "nominatim"
  }
 }

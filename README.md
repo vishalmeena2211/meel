@@ -45,8 +45,8 @@ Meel is the memory those groups don't have. It keeps **one page per route**, spl
 
 | | |
 |---|---|
-| **50 routes, section by section** | From Manali to Leh and the Spiti circuit to the Konkan coast and the North-East: 13 regions and about 31,000 km of road. The highest point on any route is Umling La, at 19,030 ft. Heights are given in feet, as pass signboards give them. |
-| **Every fact dated and sourced** | 4,457 facts, each with its source, the day it was read, and a state: fresh, ageing, stale, not yet checked, or riders disagree. |
+| **51 routes, section by section** | From Manali to Leh and the Spiti circuit to the Konkan coast and the North-East: 13 regions and about 31,000 km of road. The highest point on any route is Umling La, at 19,030 ft. Heights are given in feet, as pass signboards give them. |
+| **Every fact dated and sourced** | 4,515 facts, each with its source, the day it was read, and a state: fresh, ageing, stale, not yet checked, or riders disagree. |
 | **Riding from your city** | Pick Delhi, Chandigarh or ten other cities once, and every route says how far its start is by road, nearest first. Each route's "Getting there" gives the towns on the way, the ride back, and links to open the road in a map app. |
 | **Fuel check** | Pick your bike, and the route says where your tank runs short and how much extra to carry. |
 | **Altitude check** | Choose where you will sleep, and the route warns you if a night climbs too fast for your body to cope. |
@@ -175,7 +175,7 @@ Then open http://localhost:3000. Every setting, how to add Google login, and how
 | Folder | What is in it |
 |---|---|
 | [`web/`](web) | The website |
-| [`data/`](data) | Everything the site shows, for fifty routes, with the source of every fact. See [`data/README.md`](data/README.md) |
+| [`data/`](data) | Everything the site shows, for 51 routes, with the source of every fact. See [`data/README.md`](data/README.md) |
 | [`design/`](design) | The wireframes: one frame for each situation a rider can be in, with build notes under each. Open `meel-wireframes.html` in a browser |
 | [`docs/`](docs) | The plan, the screen audits, and a frame-by-frame check that the site matches the drawings |
 

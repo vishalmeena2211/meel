@@ -1,0 +1,3418 @@
+{
+ "slug": "leh-padum",
+ "name": "Leh to Padum",
+ "region": "zanskar-kargil",
+ "region_name": "Zanskar and Kargil",
+ "batch": 1,
+ "terrain": "mountain",
+ "country": "in",
+ "level": "basic",
+ "one_line": "Ladakh, from Leh along the Indus to Nimmu, then up the Zanskar river gorge past Chilling and Nerak to Padum",
+ "places": [
+  "Leh",
+  "Nimmu",
+  "Chilling",
+  "Nerak",
+  "Pidmo",
+  "Zangla",
+  "Stongde",
+  "Padum"
+ ],
+ "header": {
+  "highway": {
+   "value": "Nimmu–Padum–Darcha Road; no national highway number found",
+   "source": {
+    "url": "https://www.pmindia.gov.in/en/news_updates/pm-to-inaugurate-and-dedicate-five-development-projects-worth-around-%E2%82%B93350-crore-in-ladakh-on-15-october/",
+    "title": "PM to Inaugurate and Dedicate Five Development Projects Worth Around ₹3,350 Crore in Ladakh on 15 October",
+    "kind": "official",
+    "opened": true,
+    "source_date": "2026-10-14",
+    "accessed": "2026-10-17"
+   }
+  },
+  "distance_km": 191.7,
+  "map_app_hours": 5.03,
+  "usual_days": {
+   "value": "1 day; about 5 hours from Padum to Leh, by a 2024 estimate",
+   "source": {
+    "url": "https://www.tribuneindia.com/news/himachal/boost-to-all-weather-connectivity-to-leh-darcha-nimmu-road-opens-605098",
+    "title": "Boost to all-weather connectivity to Leh, Darcha-Nimmu road opens",
+    "kind": "news",
+    "opened": true,
+    "source_date": "2024-03-29",
+    "accessed": "2026-10-17"
+   }
+  },
+  "highest_point": {
+   "name": "Padum",
+   "altitude_m": 3669,
+   "source": {
+    "url": "https://en.wikipedia.org/wiki/Padum",
+    "title": "Padum",
+    "kind": "encyclopedia",
+    "opened": true,
+    "source_date": null,
+    "accessed": "2026-10-17"
+   },
+   "computed": false
+  },
+  "usual_season": {
+   "value": "June to September",
+   "source": {
+    "url": "https://discoverwithdheeraj.com/plan-journey-zanskar-valley/",
+    "title": "Zanskar Valley Trip 2026: Routes, Budget and Permits",
+    "kind": "blog",
+    "opened": true,
+    "source_date": "2026-08-18",
+    "accessed": "2026-10-17"
+   }
+  }
+ },
+ "waypoints": [
+  {
+   "name": "Leh",
+   "lat": 34.16374,
+   "lon": 77.58475,
+   "km_from_start": 0.0,
+   "altitude_m": 3499,
+   "kind": "place",
+   "moved_to_road_m": 51
+  },
+  {
+   "name": "Nimmu",
+   "lat": 34.19547,
+   "lon": 77.33527,
+   "km_from_start": 36.3,
+   "altitude_m": 3140,
+   "kind": "place",
+   "moved_to_road_m": 97
+  },
+  {
+   "name": "Chilling",
+   "lat": 34.03784,
+   "lon": 77.2022,
+   "km_from_start": 66.3,
+   "altitude_m": 3214,
+   "kind": "place",
+   "moved_to_road_m": 97
+  },
+  {
+   "name": "Nerak",
+   "lat": 33.88999,
+   "lon": 76.91963,
+   "km_from_start": 114.8,
+   "altitude_m": 3327,
+   "kind": "place",
+   "moved_to_road_m": 0
+  },
+  {
+   "name": "Pidmo",
+   "lat": 33.69832,
+   "lon": 76.9253,
+   "km_from_start": 149.7,
+   "altitude_m": 3389,
+   "kind": "place",
+   "moved_to_road_m": 732
+  },
+  {
+   "name": "Zangla",
+   "lat": 33.65847,
+   "lon": 76.99119,
+   "km_from_start": 160.3,
+   "altitude_m": 3532,
+   "kind": "place",
+   "moved_to_road_m": 28
+  },
+  {
+   "name": "Stongde",
+   "lat": 33.51774,
+   "lon": 76.97352,
+   "km_from_start": 179.8,
+   "altitude_m": 3532,
+   "kind": "place",
+   "moved_to_road_m": 6
+  },
+  {
+   "name": "Padum",
+   "lat": 33.46887,
+   "lon": 76.87767,
+   "km_from_start": 191.7,
+   "altitude_m": 3566,
+   "kind": "place",
+   "moved_to_road_m": 56
+  }
+ ],
+ "stretches": [
+  {
+   "from": "Leh",
+   "to": "Nimmu",
+   "distance_km": 36.3,
+   "map_app_hours": 0.44,
+   "doubtful": false
+  },
+  {
+   "from": "Nimmu",
+   "to": "Chilling",
+   "distance_km": 30.0,
+   "map_app_hours": 0.46,
+   "doubtful": false
+  },
+  {
+   "from": "Chilling",
+   "to": "Nerak",
+   "distance_km": 48.5,
+   "map_app_hours": 1.5,
+   "doubtful": false
+  },
+  {
+   "from": "Nerak",
+   "to": "Pidmo",
+   "distance_km": 34.9,
+   "map_app_hours": 0.9,
+   "doubtful": false
+  },
+  {
+   "from": "Pidmo",
+   "to": "Zangla",
+   "distance_km": 10.6,
+   "map_app_hours": 0.45,
+   "doubtful": false
+  },
+  {
+   "from": "Zangla",
+   "to": "Stongde",
+   "distance_km": 19.5,
+   "map_app_hours": 0.79,
+   "doubtful": false
+  },
+  {
+   "from": "Stongde",
+   "to": "Padum",
+   "distance_km": 11.9,
+   "map_app_hours": 0.49,
+   "doubtful": false
+  }
+ ],
+ "profile": [
+  {
+   "km": 0.0,
+   "m": 3499
+  },
+  {
+   "km": 2.1,
+   "m": 3406
+  },
+  {
+   "km": 4.3,
+   "m": 3319
+  },
+  {
+   "km": 6.4,
+   "m": 3263
+  },
+  {
+   "km": 8.5,
+   "m": 3198
+  },
+  {
+   "km": 10.7,
+   "m": 3207
+  },
+  {
+   "km": 12.8,
+   "m": 3231
+  },
+  {
+   "km": 15.0,
+   "m": 3298
+  },
+  {
+   "km": 17.1,
+   "m": 3288
+  },
+  {
+   "km": 19.1,
+   "m": 3347
+  },
+  {
+   "km": 21.3,
+   "m": 3440
+  },
+  {
+   "km": 23.4,
+   "m": 3535
+  },
+  {
+   "km": 25.5,
+   "m": 3505
+  },
+  {
+   "km": 27.7,
+   "m": 3457
+  },
+  {
+   "km": 29.8,
+   "m": 3355
+  },
+  {
+   "km": 31.9,
+   "m": 3236
+  },
+  {
+   "km": 34.1,
+   "m": 3146
+  },
+  {
+   "km": 36.2,
+   "m": 3143
+  },
+  {
+   "km": 38.3,
+   "m": 3150
+  },
+  {
+   "km": 40.5,
+   "m": 3127
+  },
+  {
+   "km": 42.6,
+   "m": 3125
+  },
+  {
+   "km": 44.7,
+   "m": 3126
+  },
+  {
+   "km": 46.9,
+   "m": 3129
+  },
+  {
+   "km": 49.0,
+   "m": 3152
+  },
+  {
+   "km": 51.2,
+   "m": 3152
+  },
+  {
+   "km": 53.3,
+   "m": 3144
+  },
+  {
+   "km": 55.4,
+   "m": 3161
+  },
+  {
+   "km": 57.5,
+   "m": 3175
+  },
+  {
+   "km": 59.6,
+   "m": 3173
+  },
+  {
+   "km": 61.7,
+   "m": 3202
+  },
+  {
+   "km": 63.9,
+   "m": 3220
+  },
+  {
+   "km": 66.0,
+   "m": 3195
+  },
+  {
+   "km": 68.1,
+   "m": 3199
+  },
+  {
+   "km": 70.3,
+   "m": 3226
+  },
+  {
+   "km": 72.4,
+   "m": 3212
+  },
+  {
+   "km": 74.5,
+   "m": 3220
+  },
+  {
+   "km": 76.7,
+   "m": 3237
+  },
+  {
+   "km": 78.8,
+   "m": 3245
+  },
+  {
+   "km": 81.0,
+   "m": 3257
+  },
+  {
+   "km": 83.1,
+   "m": 3226
+  },
+  {
+   "km": 85.2,
+   "m": 3293
+  },
+  {
+   "km": 87.4,
+   "m": 3253
+  },
+  {
+   "km": 89.5,
+   "m": 3258
+  },
+  {
+   "km": 91.6,
+   "m": 3266
+  },
+  {
+   "km": 93.8,
+   "m": 3291
+  },
+  {
+   "km": 95.8,
+   "m": 3340
+  },
+  {
+   "km": 97.9,
+   "m": 3279
+  },
+  {
+   "km": 100.1,
+   "m": 3283
+  },
+  {
+   "km": 102.2,
+   "m": 3336
+  },
+  {
+   "km": 104.3,
+   "m": 3361
+  },
+  {
+   "km": 106.5,
+   "m": 3336
+  },
+  {
+   "km": 108.6,
+   "m": 3345
+  },
+  {
+   "km": 110.8,
+   "m": 3354
+  },
+  {
+   "km": 112.9,
+   "m": 3351
+  },
+  {
+   "km": 115.0,
+   "m": 3337
+  },
+  {
+   "km": 117.2,
+   "m": 3391
+  },
+  {
+   "km": 119.3,
+   "m": 3334
+  },
+  {
+   "km": 121.4,
+   "m": 3346
+  },
+  {
+   "km": 123.6,
+   "m": 3417
+  },
+  {
+   "km": 125.7,
+   "m": 3424
+  },
+  {
+   "km": 127.8,
+   "m": 3373
+  },
+  {
+   "km": 130.0,
+   "m": 3400
+  },
+  {
+   "km": 132.0,
+   "m": 3373
+  },
+  {
+   "km": 134.1,
+   "m": 3437
+  },
+  {
+   "km": 136.3,
+   "m": 3406
+  },
+  {
+   "km": 138.4,
+   "m": 3479
+  },
+  {
+   "km": 140.6,
+   "m": 3553
+  },
+  {
+   "km": 142.7,
+   "m": 3484
+  },
+  {
+   "km": 144.8,
+   "m": 3420
+  },
+  {
+   "km": 147.0,
+   "m": 3439
+  },
+  {
+   "km": 149.1,
+   "m": 3389
+  },
+  {
+   "km": 151.2,
+   "m": 3426
+  },
+  {
+   "km": 153.4,
+   "m": 3457
+  },
+  {
+   "km": 155.5,
+   "m": 3442
+  },
+  {
+   "km": 157.6,
+   "m": 3457
+  },
+  {
+   "km": 159.8,
+   "m": 3518
+  },
+  {
+   "km": 161.9,
+   "m": 3437
+  },
+  {
+   "km": 164.0,
+   "m": 3434
+  },
+  {
+   "km": 166.2,
+   "m": 3454
+  },
+  {
+   "km": 168.3,
+   "m": 3491
+  },
+  {
+   "km": 170.4,
+   "m": 3492
+  },
+  {
+   "km": 172.5,
+   "m": 3500
+  },
+  {
+   "km": 174.6,
+   "m": 3507
+  },
+  {
+   "km": 176.8,
+   "m": 3553
+  },
+  {
+   "km": 178.9,
+   "m": 3552
+  },
+  {
+   "km": 181.0,
+   "m": 3571
+  },
+  {
+   "km": 183.2,
+   "m": 3571
+  },
+  {
+   "km": 185.3,
+   "m": 3521
+  },
+  {
+   "km": 187.4,
+   "m": 3553
+  },
+  {
+   "km": 189.6,
+   "m": 3518
+  },
+  {
+   "km": 191.7,
+   "m": 3566
+  }
+ ],
+ "tunnels": [],
+ "line": [
+  [
+   77.58475,
+   34.16374
+  ],
+  [
+   77.58473,
+   34.16216
+  ],
+  [
+   77.58608,
+   34.16195
+  ],
+  [
+   77.5855,
+   34.1585
+  ],
+  [
+   77.58659,
+   34.15736
+  ],
+  [
+   77.58452,
+   34.15686
+  ],
+  [
+   77.58282,
+   34.1535
+  ],
+  [
+   77.5771,
+   34.15257
+  ],
+  [
+   77.576,
+   34.15192
+  ],
+  [
+   77.57347,
+   34.14868
+  ],
+  [
+   77.56918,
+   34.14652
+  ],
+  [
+   77.55873,
+   34.14258
+  ],
+  [
+   77.55418,
+   34.14652
+  ],
+  [
+   77.55365,
+   34.14655
+  ],
+  [
+   77.54937,
+   34.14481
+  ],
+  [
+   77.53325,
+   34.13453
+  ],
+  [
+   77.52861,
+   34.13418
+  ],
+  [
+   77.5262,
+   34.1313
+  ],
+  [
+   77.52515,
+   34.13073
+  ],
+  [
+   77.52384,
+   34.13134
+  ],
+  [
+   77.51808,
+   34.13215
+  ],
+  [
+   77.50503,
+   34.13721
+  ],
+  [
+   77.50368,
+   34.13694
+  ],
+  [
+   77.50147,
+   34.13528
+  ],
+  [
+   77.49928,
+   34.13555
+  ],
+  [
+   77.49852,
+   34.13752
+  ],
+  [
+   77.49161,
+   34.13979
+  ],
+  [
+   77.48788,
+   34.14211
+  ],
+  [
+   77.48404,
+   34.14167
+  ],
+  [
+   77.48278,
+   34.1407
+  ],
+  [
+   77.48193,
+   34.1407
+  ],
+  [
+   77.47432,
+   34.14629
+  ],
+  [
+   77.47283,
+   34.14875
+  ],
+  [
+   77.47264,
+   34.1503
+  ],
+  [
+   77.47136,
+   34.15025
+  ],
+  [
+   77.47081,
+   34.14766
+  ],
+  [
+   77.47043,
+   34.14756
+  ],
+  [
+   77.45865,
+   34.15294
+  ],
+  [
+   77.44939,
+   34.15827
+  ],
+  [
+   77.44155,
+   34.16016
+  ],
+  [
+   77.43907,
+   34.15981
+  ],
+  [
+   77.43026,
+   34.15694
+  ],
+  [
+   77.4283,
+   34.15762
+  ],
+  [
+   77.42454,
+   34.15991
+  ],
+  [
+   77.42032,
+   34.16345
+  ],
+  [
+   77.41223,
+   34.17293
+  ],
+  [
+   77.40317,
+   34.18118
+  ],
+  [
+   77.39397,
+   34.18646
+  ],
+  [
+   77.38941,
+   34.18773
+  ],
+  [
+   77.3843,
+   34.19022
+  ],
+  [
+   77.37832,
+   34.19145
+  ],
+  [
+   77.37226,
+   34.19099
+  ],
+  [
+   77.36941,
+   34.18898
+  ],
+  [
+   77.37286,
+   34.1883
+  ],
+  [
+   77.3689,
+   34.18716
+  ],
+  [
+   77.3695,
+   34.18575
+  ],
+  [
+   77.36751,
+   34.18573
+  ],
+  [
+   77.36546,
+   34.18482
+  ],
+  [
+   77.36392,
+   34.18478
+  ],
+  [
+   77.36289,
+   34.18393
+  ],
+  [
+   77.35877,
+   34.18238
+  ],
+  [
+   77.35541,
+   34.17718
+  ],
+  [
+   77.3546,
+   34.17421
+  ],
+  [
+   77.35227,
+   34.17037
+  ],
+  [
+   77.34837,
+   34.16699
+  ],
+  [
+   77.34883,
+   34.1624
+  ],
+  [
+   77.34571,
+   34.16105
+  ],
+  [
+   77.34207,
+   34.16055
+  ],
+  [
+   77.33825,
+   34.16534
+  ],
+  [
+   77.3345,
+   34.16721
+  ],
+  [
+   77.33386,
+   34.16825
+  ],
+  [
+   77.33449,
+   34.16938
+  ],
+  [
+   77.33654,
+   34.16991
+  ],
+  [
+   77.3352,
+   34.1711
+  ],
+  [
+   77.33699,
+   34.17449
+  ],
+  [
+   77.33794,
+   34.17895
+  ],
+  [
+   77.33947,
+   34.18112
+  ],
+  [
+   77.33931,
+   34.18205
+  ],
+  [
+   77.34395,
+   34.18904
+  ],
+  [
+   77.34174,
+   34.19158
+  ],
+  [
+   77.33527,
+   34.19547
+  ],
+  [
+   77.34174,
+   34.19158
+  ],
+  [
+   77.34395,
+   34.18904
+  ],
+  [
+   77.33931,
+   34.18205
+  ],
+  [
+   77.33947,
+   34.18112
+  ],
+  [
+   77.33636,
+   34.17675
+  ],
+  [
+   77.33395,
+   34.17057
+  ],
+  [
+   77.3328,
+   34.16894
+  ],
+  [
+   77.33269,
+   34.16727
+  ],
+  [
+   77.33323,
+   34.16639
+  ],
+  [
+   77.33649,
+   34.16444
+  ],
+  [
+   77.33903,
+   34.16099
+  ],
+  [
+   77.33828,
+   34.16058
+  ],
+  [
+   77.3357,
+   34.16352
+  ],
+  [
+   77.33309,
+   34.16422
+  ],
+  [
+   77.32542,
+   34.16163
+  ],
+  [
+   77.31833,
+   34.15726
+  ],
+  [
+   77.31443,
+   34.1524
+  ],
+  [
+   77.31151,
+   34.15146
+  ],
+  [
+   77.30947,
+   34.14992
+  ],
+  [
+   77.30711,
+   34.14549
+  ],
+  [
+   77.30132,
+   34.14289
+  ],
+  [
+   77.2987,
+   34.14106
+  ],
+  [
+   77.29366,
+   34.14296
+  ],
+  [
+   77.28856,
+   34.14291
+  ],
+  [
+   77.28436,
+   34.14225
+  ],
+  [
+   77.28286,
+   34.13974
+  ],
+  [
+   77.27987,
+   34.13717
+  ],
+  [
+   77.279,
+   34.13771
+  ],
+  [
+   77.27566,
+   34.13593
+  ],
+  [
+   77.27545,
+   34.13485
+  ],
+  [
+   77.27329,
+   34.13202
+  ],
+  [
+   77.27238,
+   34.12999
+  ],
+  [
+   77.2719,
+   34.12708
+  ],
+  [
+   77.27064,
+   34.12607
+  ],
+  [
+   77.26398,
+   34.12578
+  ],
+  [
+   77.26001,
+   34.12496
+  ],
+  [
+   77.25741,
+   34.12611
+  ],
+  [
+   77.25305,
+   34.12549
+  ],
+  [
+   77.25024,
+   34.12647
+  ],
+  [
+   77.24817,
+   34.12812
+  ],
+  [
+   77.24292,
+   34.12976
+  ],
+  [
+   77.23756,
+   34.12629
+  ],
+  [
+   77.23094,
+   34.12034
+  ],
+  [
+   77.22838,
+   34.11873
+  ],
+  [
+   77.22122,
+   34.11781
+  ],
+  [
+   77.21968,
+   34.1173
+  ],
+  [
+   77.21899,
+   34.11657
+  ],
+  [
+   77.21768,
+   34.11037
+  ],
+  [
+   77.21519,
+   34.10787
+  ],
+  [
+   77.21435,
+   34.10616
+  ],
+  [
+   77.21543,
+   34.10346
+  ],
+  [
+   77.2146,
+   34.09666
+  ],
+  [
+   77.21063,
+   34.09494
+  ],
+  [
+   77.20933,
+   34.09295
+  ],
+  [
+   77.21024,
+   34.08754
+  ],
+  [
+   77.21093,
+   34.08587
+  ],
+  [
+   77.21266,
+   34.0844
+  ],
+  [
+   77.21309,
+   34.08315
+  ],
+  [
+   77.21258,
+   34.07952
+  ],
+  [
+   77.21279,
+   34.07555
+  ],
+  [
+   77.21385,
+   34.07295
+  ],
+  [
+   77.21306,
+   34.07149
+  ],
+  [
+   77.20851,
+   34.07033
+  ],
+  [
+   77.20774,
+   34.0691
+  ],
+  [
+   77.20746,
+   34.06698
+  ],
+  [
+   77.20825,
+   34.06615
+  ],
+  [
+   77.20876,
+   34.06452
+  ],
+  [
+   77.21136,
+   34.0631
+  ],
+  [
+   77.21056,
+   34.05822
+  ],
+  [
+   77.21164,
+   34.05658
+  ],
+  [
+   77.21183,
+   34.05516
+  ],
+  [
+   77.21073,
+   34.05232
+  ],
+  [
+   77.211,
+   34.05081
+  ],
+  [
+   77.2129,
+   34.04838
+  ],
+  [
+   77.2127,
+   34.04704
+  ],
+  [
+   77.21016,
+   34.042
+  ],
+  [
+   77.21002,
+   34.04001
+  ],
+  [
+   77.20417,
+   34.03687
+  ],
+  [
+   77.20148,
+   34.037
+  ],
+  [
+   77.20256,
+   34.03743
+  ],
+  [
+   77.2022,
+   34.03784
+  ],
+  [
+   77.20256,
+   34.03743
+  ],
+  [
+   77.20148,
+   34.037
+  ],
+  [
+   77.19911,
+   34.03751
+  ],
+  [
+   77.19823,
+   34.03658
+  ],
+  [
+   77.19734,
+   34.03365
+  ],
+  [
+   77.1934,
+   34.03043
+  ],
+  [
+   77.19389,
+   34.02838
+  ],
+  [
+   77.19713,
+   34.0251
+  ],
+  [
+   77.19861,
+   34.01877
+  ],
+  [
+   77.20194,
+   34.01539
+  ],
+  [
+   77.20168,
+   34.0131
+  ],
+  [
+   77.20244,
+   34.01232
+  ],
+  [
+   77.20259,
+   34.01131
+  ],
+  [
+   77.2042,
+   34.01096
+  ],
+  [
+   77.20613,
+   34.00921
+  ],
+  [
+   77.20805,
+   34.00438
+  ],
+  [
+   77.21007,
+   34.00255
+  ],
+  [
+   77.2086,
+   34.00068
+  ],
+  [
+   77.2034,
+   33.99651
+  ],
+  [
+   77.20266,
+   33.99373
+  ],
+  [
+   77.20251,
+   33.98896
+  ],
+  [
+   77.20453,
+   33.98411
+  ],
+  [
+   77.2036,
+   33.97939
+  ],
+  [
+   77.20392,
+   33.97564
+  ],
+  [
+   77.2129,
+   33.96328
+  ],
+  [
+   77.21346,
+   33.96139
+  ],
+  [
+   77.21328,
+   33.95981
+  ],
+  [
+   77.20998,
+   33.95372
+  ],
+  [
+   77.20977,
+   33.95019
+  ],
+  [
+   77.20854,
+   33.94724
+  ],
+  [
+   77.20578,
+   33.9461
+  ],
+  [
+   77.20436,
+   33.94459
+  ],
+  [
+   77.20398,
+   33.94221
+  ],
+  [
+   77.20491,
+   33.93887
+  ],
+  [
+   77.20468,
+   33.93742
+  ],
+  [
+   77.1976,
+   33.9361
+  ],
+  [
+   77.19505,
+   33.93493
+  ],
+  [
+   77.1927,
+   33.93236
+  ],
+  [
+   77.18205,
+   33.93061
+  ],
+  [
+   77.18087,
+   33.92869
+  ],
+  [
+   77.18013,
+   33.92609
+  ],
+  [
+   77.18007,
+   33.92163
+  ],
+  [
+   77.17773,
+   33.91966
+  ],
+  [
+   77.17523,
+   33.91929
+  ],
+  [
+   77.17004,
+   33.92249
+  ],
+  [
+   77.16591,
+   33.92345
+  ],
+  [
+   77.164,
+   33.92317
+  ],
+  [
+   77.15545,
+   33.91727
+  ],
+  [
+   77.15278,
+   33.91786
+  ],
+  [
+   77.15151,
+   33.91874
+  ],
+  [
+   77.14862,
+   33.91774
+  ],
+  [
+   77.14735,
+   33.91662
+  ],
+  [
+   77.14399,
+   33.91496
+  ],
+  [
+   77.1432,
+   33.91498
+  ],
+  [
+   77.14286,
+   33.91591
+  ],
+  [
+   77.13956,
+   33.91589
+  ],
+  [
+   77.1382,
+   33.91454
+  ],
+  [
+   77.13779,
+   33.9105
+  ],
+  [
+   77.1365,
+   33.90874
+  ],
+  [
+   77.13475,
+   33.90855
+  ],
+  [
+   77.13055,
+   33.91046
+  ],
+  [
+   77.12754,
+   33.91051
+  ],
+  [
+   77.12602,
+   33.90993
+  ],
+  [
+   77.1232,
+   33.90763
+  ],
+  [
+   77.12195,
+   33.90596
+  ],
+  [
+   77.11744,
+   33.90678
+  ],
+  [
+   77.11434,
+   33.90492
+  ],
+  [
+   77.1119,
+   33.90835
+  ],
+  [
+   77.10974,
+   33.90934
+  ],
+  [
+   77.10623,
+   33.90828
+  ],
+  [
+   77.10198,
+   33.90926
+  ],
+  [
+   77.09764,
+   33.90828
+  ],
+  [
+   77.09092,
+   33.91016
+  ],
+  [
+   77.0865,
+   33.90893
+  ],
+  [
+   77.08301,
+   33.90971
+  ],
+  [
+   77.07916,
+   33.90924
+  ],
+  [
+   77.07485,
+   33.9098
+  ],
+  [
+   77.07295,
+   33.90929
+  ],
+  [
+   77.06701,
+   33.91043
+  ],
+  [
+   77.06346,
+   33.90997
+  ],
+  [
+   77.06534,
+   33.90994
+  ],
+  [
+   77.06443,
+   33.90951
+  ],
+  [
+   77.06255,
+   33.9099
+  ],
+  [
+   77.05921,
+   33.91163
+  ],
+  [
+   77.05769,
+   33.91369
+  ],
+  [
+   77.05516,
+   33.91449
+  ],
+  [
+   77.0527,
+   33.91634
+  ],
+  [
+   77.04812,
+   33.91727
+  ],
+  [
+   77.04264,
+   33.91514
+  ],
+  [
+   77.03664,
+   33.91595
+  ],
+  [
+   77.02893,
+   33.91243
+  ],
+  [
+   77.02615,
+   33.90947
+  ],
+  [
+   77.01992,
+   33.90952
+  ],
+  [
+   77.01503,
+   33.90763
+  ],
+  [
+   77.00986,
+   33.90488
+  ],
+  [
+   77.00488,
+   33.90433
+  ],
+  [
+   77.00142,
+   33.90227
+  ],
+  [
+   76.99949,
+   33.8994
+  ],
+  [
+   76.99895,
+   33.8977
+  ],
+  [
+   76.99708,
+   33.89752
+  ],
+  [
+   76.99361,
+   33.89808
+  ],
+  [
+   76.99011,
+   33.89739
+  ],
+  [
+   76.98885,
+   33.89675
+  ],
+  [
+   76.98745,
+   33.89491
+  ],
+  [
+   76.98695,
+   33.89257
+  ],
+  [
+   76.9861,
+   33.89231
+  ],
+  [
+   76.98137,
+   33.89285
+  ],
+  [
+   76.9775,
+   33.89216
+  ],
+  [
+   76.97613,
+   33.89167
+  ],
+  [
+   76.97312,
+   33.88884
+  ],
+  [
+   76.97131,
+   33.88879
+  ],
+  [
+   76.96533,
+   33.89194
+  ],
+  [
+   76.96006,
+   33.89263
+  ],
+  [
+   76.95794,
+   33.89224
+  ],
+  [
+   76.95528,
+   33.89087
+  ],
+  [
+   76.95546,
+   33.89157
+  ],
+  [
+   76.95503,
+   33.89156
+  ],
+  [
+   76.95227,
+   33.88979
+  ],
+  [
+   76.95123,
+   33.88813
+  ],
+  [
+   76.94963,
+   33.88772
+  ],
+  [
+   76.9462,
+   33.8894
+  ],
+  [
+   76.94369,
+   33.8897
+  ],
+  [
+   76.9406,
+   33.89193
+  ],
+  [
+   76.93765,
+   33.89222
+  ],
+  [
+   76.93538,
+   33.89361
+  ],
+  [
+   76.93253,
+   33.8943
+  ],
+  [
+   76.93457,
+   33.89415
+  ],
+  [
+   76.93413,
+   33.89437
+  ],
+  [
+   76.92927,
+   33.89455
+  ],
+  [
+   76.92698,
+   33.89632
+  ],
+  [
+   76.92657,
+   33.89592
+  ],
+  [
+   76.92723,
+   33.89524
+  ],
+  [
+   76.92612,
+   33.89446
+  ],
+  [
+   76.9254,
+   33.89736
+  ],
+  [
+   76.92487,
+   33.89732
+  ],
+  [
+   76.9243,
+   33.89524
+  ],
+  [
+   76.92481,
+   33.89334
+  ],
+  [
+   76.92323,
+   33.89295
+  ],
+  [
+   76.9224,
+   33.89198
+  ],
+  [
+   76.91843,
+   33.89143
+  ],
+  [
+   76.9216,
+   33.89112
+  ],
+  [
+   76.92158,
+   33.89063
+  ],
+  [
+   76.91963,
+   33.88999
+  ],
+  [
+   76.91802,
+   33.89002
+  ],
+  [
+   76.91511,
+   33.88793
+  ],
+  [
+   76.9131,
+   33.88742
+  ],
+  [
+   76.90926,
+   33.88788
+  ],
+  [
+   76.90766,
+   33.88747
+  ],
+  [
+   76.90511,
+   33.8857
+  ],
+  [
+   76.90385,
+   33.88561
+  ],
+  [
+   76.90364,
+   33.88616
+  ],
+  [
+   76.90181,
+   33.88651
+  ],
+  [
+   76.89944,
+   33.88635
+  ],
+  [
+   76.89791,
+   33.88567
+  ],
+  [
+   76.89589,
+   33.88245
+  ],
+  [
+   76.89064,
+   33.87734
+  ],
+  [
+   76.88877,
+   33.87374
+  ],
+  [
+   76.88609,
+   33.87187
+  ],
+  [
+   76.88533,
+   33.86946
+  ],
+  [
+   76.88247,
+   33.86891
+  ],
+  [
+   76.88146,
+   33.8678
+  ],
+  [
+   76.88205,
+   33.8659
+  ],
+  [
+   76.88437,
+   33.86383
+  ],
+  [
+   76.8844,
+   33.86225
+  ],
+  [
+   76.88348,
+   33.86101
+  ],
+  [
+   76.88057,
+   33.85932
+  ],
+  [
+   76.88021,
+   33.8582
+  ],
+  [
+   76.88088,
+   33.85603
+  ],
+  [
+   76.88356,
+   33.85182
+  ],
+  [
+   76.88413,
+   33.8493
+  ],
+  [
+   76.88331,
+   33.84619
+  ],
+  [
+   76.8841,
+   33.84187
+  ],
+  [
+   76.88571,
+   33.83827
+  ],
+  [
+   76.88654,
+   33.83803
+  ],
+  [
+   76.88582,
+   33.83582
+  ],
+  [
+   76.87907,
+   33.83141
+  ],
+  [
+   76.87795,
+   33.82914
+  ],
+  [
+   76.87616,
+   33.8273
+  ],
+  [
+   76.87172,
+   33.82484
+  ],
+  [
+   76.87109,
+   33.82127
+  ],
+  [
+   76.87035,
+   33.82067
+  ],
+  [
+   76.86738,
+   33.82019
+  ],
+  [
+   76.86442,
+   33.81356
+  ],
+  [
+   76.86154,
+   33.81033
+  ],
+  [
+   76.85885,
+   33.80886
+  ],
+  [
+   76.85767,
+   33.80601
+  ],
+  [
+   76.85386,
+   33.80484
+  ],
+  [
+   76.85083,
+   33.80303
+  ],
+  [
+   76.85091,
+   33.80087
+  ],
+  [
+   76.853,
+   33.79917
+  ],
+  [
+   76.85292,
+   33.79842
+  ],
+  [
+   76.85386,
+   33.79646
+  ],
+  [
+   76.85329,
+   33.79525
+  ],
+  [
+   76.8489,
+   33.79234
+  ],
+  [
+   76.84943,
+   33.78724
+  ],
+  [
+   76.8491,
+   33.78643
+  ],
+  [
+   76.84695,
+   33.78471
+  ],
+  [
+   76.84323,
+   33.78366
+  ],
+  [
+   76.84436,
+   33.78353
+  ],
+  [
+   76.84317,
+   33.78322
+  ],
+  [
+   76.84283,
+   33.78269
+  ],
+  [
+   76.8429,
+   33.78023
+  ],
+  [
+   76.84748,
+   33.77453
+  ],
+  [
+   76.84751,
+   33.77338
+  ],
+  [
+   76.84538,
+   33.76994
+  ],
+  [
+   76.84523,
+   33.76921
+  ],
+  [
+   76.84593,
+   33.76845
+  ],
+  [
+   76.84466,
+   33.76864
+  ],
+  [
+   76.84386,
+   33.76657
+  ],
+  [
+   76.84479,
+   33.76244
+  ],
+  [
+   76.84622,
+   33.75917
+  ],
+  [
+   76.848,
+   33.75784
+  ],
+  [
+   76.84842,
+   33.7566
+  ],
+  [
+   76.85312,
+   33.75359
+  ],
+  [
+   76.85537,
+   33.75141
+  ],
+  [
+   76.85592,
+   33.7494
+  ],
+  [
+   76.85565,
+   33.7477
+  ],
+  [
+   76.85679,
+   33.744
+  ],
+  [
+   76.85808,
+   33.74337
+  ],
+  [
+   76.85811,
+   33.74283
+  ],
+  [
+   76.85936,
+   33.74183
+  ],
+  [
+   76.85998,
+   33.7401
+  ],
+  [
+   76.86071,
+   33.73981
+  ],
+  [
+   76.86053,
+   33.73929
+  ],
+  [
+   76.86229,
+   33.7388
+  ],
+  [
+   76.86099,
+   33.73822
+  ],
+  [
+   76.85997,
+   33.73687
+  ],
+  [
+   76.86147,
+   33.73442
+  ],
+  [
+   76.8633,
+   33.73316
+  ],
+  [
+   76.86623,
+   33.73266
+  ],
+  [
+   76.86758,
+   33.73194
+  ],
+  [
+   76.86883,
+   33.73284
+  ],
+  [
+   76.86908,
+   33.73178
+  ],
+  [
+   76.87194,
+   33.73261
+  ],
+  [
+   76.87207,
+   33.73215
+  ],
+  [
+   76.87087,
+   33.73071
+  ],
+  [
+   76.87347,
+   33.7291
+  ],
+  [
+   76.87389,
+   33.72727
+  ],
+  [
+   76.87676,
+   33.72344
+  ],
+  [
+   76.87823,
+   33.72284
+  ],
+  [
+   76.87815,
+   33.7218
+  ],
+  [
+   76.88083,
+   33.72058
+  ],
+  [
+   76.8823,
+   33.71901
+  ],
+  [
+   76.88518,
+   33.71889
+  ],
+  [
+   76.88841,
+   33.71752
+  ],
+  [
+   76.89155,
+   33.71418
+  ],
+  [
+   76.89723,
+   33.71378
+  ],
+  [
+   76.89925,
+   33.71296
+  ],
+  [
+   76.90408,
+   33.71285
+  ],
+  [
+   76.90758,
+   33.71068
+  ],
+  [
+   76.9086,
+   33.7085
+  ],
+  [
+   76.9105,
+   33.70687
+  ],
+  [
+   76.91303,
+   33.70603
+  ],
+  [
+   76.91717,
+   33.70556
+  ],
+  [
+   76.92253,
+   33.70358
+  ],
+  [
+   76.92456,
+   33.7022
+  ],
+  [
+   76.9309,
+   33.69943
+  ],
+  [
+   76.93425,
+   33.69732
+  ],
+  [
+   76.93648,
+   33.69438
+  ],
+  [
+   76.9281,
+   33.69794
+  ],
+  [
+   76.9253,
+   33.69832
+  ],
+  [
+   76.9281,
+   33.69794
+  ],
+  [
+   76.93648,
+   33.69438
+  ],
+  [
+   76.93823,
+   33.69266
+  ],
+  [
+   76.9431,
+   33.69197
+  ],
+  [
+   76.94841,
+   33.68781
+  ],
+  [
+   76.95386,
+   33.68444
+  ],
+  [
+   76.96009,
+   33.67809
+  ],
+  [
+   76.96244,
+   33.67648
+  ],
+  [
+   76.9661,
+   33.67479
+  ],
+  [
+   76.97278,
+   33.67278
+  ],
+  [
+   76.97855,
+   33.66812
+  ],
+  [
+   76.98127,
+   33.65707
+  ],
+  [
+   76.98376,
+   33.65257
+  ],
+  [
+   76.99011,
+   33.6493
+  ],
+  [
+   76.99109,
+   33.64923
+  ],
+  [
+   76.99176,
+   33.64664
+  ],
+  [
+   76.99387,
+   33.64934
+  ],
+  [
+   76.99321,
+   33.64964
+  ],
+  [
+   76.99248,
+   33.65164
+  ],
+  [
+   76.99087,
+   33.65331
+  ],
+  [
+   76.99119,
+   33.65847
+  ],
+  [
+   76.99087,
+   33.65331
+  ],
+  [
+   76.99248,
+   33.65164
+  ],
+  [
+   76.99321,
+   33.64964
+  ],
+  [
+   76.99387,
+   33.64934
+  ],
+  [
+   76.98944,
+   33.64278
+  ],
+  [
+   76.9903,
+   33.64176
+  ],
+  [
+   76.98985,
+   33.64064
+  ],
+  [
+   76.99312,
+   33.63763
+  ],
+  [
+   76.99465,
+   33.63468
+  ],
+  [
+   76.99871,
+   33.6307
+  ],
+  [
+   77.00084,
+   33.62747
+  ],
+  [
+   77.00857,
+   33.61876
+  ],
+  [
+   77.00923,
+   33.61723
+  ],
+  [
+   77.00898,
+   33.61669
+  ],
+  [
+   77.0071,
+   33.61579
+  ],
+  [
+   77.00476,
+   33.6154
+  ],
+  [
+   77.00402,
+   33.60658
+  ],
+  [
+   77.00591,
+   33.60067
+  ],
+  [
+   77.00749,
+   33.59818
+  ],
+  [
+   77.01363,
+   33.59227
+  ],
+  [
+   77.01318,
+   33.59096
+  ],
+  [
+   77.00753,
+   33.58599
+  ],
+  [
+   77.00389,
+   33.58178
+  ],
+  [
+   77.00393,
+   33.58127
+  ],
+  [
+   77.00647,
+   33.58031
+  ],
+  [
+   77.00897,
+   33.57704
+  ],
+  [
+   77.00832,
+   33.57605
+  ],
+  [
+   77.00514,
+   33.57699
+  ],
+  [
+   77.00277,
+   33.57701
+  ],
+  [
+   77.00247,
+   33.5684
+  ],
+  [
+   76.99865,
+   33.55329
+  ],
+  [
+   76.99838,
+   33.54742
+  ],
+  [
+   76.99188,
+   33.53888
+  ],
+  [
+   76.99218,
+   33.53455
+  ],
+  [
+   76.99284,
+   33.53285
+  ],
+  [
+   76.98419,
+   33.52795
+  ],
+  [
+   76.98288,
+   33.52585
+  ],
+  [
+   76.98303,
+   33.52347
+  ],
+  [
+   76.97834,
+   33.51941
+  ],
+  [
+   76.97463,
+   33.51754
+  ],
+  [
+   76.97368,
+   33.51781
+  ],
+  [
+   76.97102,
+   33.51715
+  ],
+  [
+   76.97001,
+   33.51579
+  ],
+  [
+   76.97037,
+   33.51472
+  ],
+  [
+   76.96965,
+   33.51079
+  ],
+  [
+   76.96052,
+   33.50855
+  ],
+  [
+   76.95264,
+   33.50884
+  ],
+  [
+   76.94281,
+   33.50723
+  ],
+  [
+   76.93531,
+   33.50303
+  ],
+  [
+   76.92938,
+   33.49833
+  ],
+  [
+   76.92564,
+   33.49683
+  ],
+  [
+   76.92096,
+   33.49657
+  ],
+  [
+   76.90758,
+   33.4925
+  ],
+  [
+   76.90596,
+   33.49137
+  ],
+  [
+   76.90337,
+   33.48803
+  ],
+  [
+   76.9019,
+   33.48325
+  ],
+  [
+   76.89948,
+   33.48194
+  ],
+  [
+   76.89853,
+   33.4788
+  ],
+  [
+   76.89753,
+   33.47729
+  ],
+  [
+   76.89538,
+   33.47723
+  ],
+  [
+   76.89294,
+   33.47823
+  ],
+  [
+   76.88811,
+   33.47763
+  ],
+  [
+   76.88663,
+   33.47573
+  ],
+  [
+   76.88423,
+   33.47435
+  ],
+  [
+   76.88434,
+   33.47086
+  ],
+  [
+   76.88289,
+   33.4701
+  ],
+  [
+   76.88098,
+   33.46986
+  ],
+  [
+   76.87809,
+   33.46834
+  ],
+  [
+   76.87767,
+   33.46887
+  ]
+ ],
+ "fuel": {
+  "listed": true,
+  "pumps": [
+   {
+    "id": "fuel:way-1212069710",
+    "name": "HP Chubi Filling Station",
+    "brand": null,
+    "near": "Leh",
+    "km_from_start": 0.0,
+    "off_road_m": 757,
+    "lat": 34.16939,
+    "lon": 77.58933,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/way/1212069710",
+    "source": null
+   },
+   {
+    "id": "fuel:node-299707352",
+    "name": "Indian Oil",
+    "brand": "Indian Oil",
+    "near": "Leh",
+    "km_from_start": 2.0,
+    "off_road_m": 23,
+    "lat": 34.15228,
+    "lon": 77.57703,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/node/299707352",
+    "source": null
+   },
+   {
+    "id": "fuel:node-3699683117",
+    "name": "HP",
+    "brand": null,
+    "near": "Leh",
+    "km_from_start": 4.9,
+    "off_road_m": 28,
+    "lat": 34.14632,
+    "lon": 77.5524,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/node/3699683117",
+    "source": null
+   },
+   {
+    "id": "fuel:node-3699684025",
+    "name": "Indian Oil",
+    "brand": "Indian Oil",
+    "near": "Leh",
+    "km_from_start": 7.5,
+    "off_road_m": 50,
+    "lat": 34.13469,
+    "lon": 77.52939,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/node/3699684025",
+    "source": null
+   },
+   {
+    "id": "fuel:node-3699684026",
+    "name": "Indian Oil",
+    "brand": "Indian Oil",
+    "near": "Leh",
+    "km_from_start": 15.9,
+    "off_road_m": 28,
+    "lat": 34.15289,
+    "lon": 77.45821,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/node/3699684026",
+    "source": null
+   },
+   {
+    "id": "fuel:node-5936063633",
+    "name": "Petrol pump",
+    "brand": null,
+    "near": "Leh",
+    "km_from_start": 15.9,
+    "off_road_m": 1,
+    "lat": 34.15307,
+    "lon": 77.45844,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/node/5936063633",
+    "source": null
+   },
+   {
+    "id": "fuel:node-9880708641",
+    "name": "Petrol pump",
+    "brand": null,
+    "near": "Nimmu",
+    "km_from_start": 27.8,
+    "off_road_m": 29,
+    "lat": 34.18388,
+    "lon": 77.36197,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/node/9880708641",
+    "source": null
+   },
+   {
+    "id": "fuel:node-9888840329",
+    "name": "Petrol pump",
+    "brand": null,
+    "near": "Stongde",
+    "km_from_start": 184.3,
+    "off_road_m": 22,
+    "lat": 33.50208,
+    "lon": 76.93376,
+    "opening_hours": null,
+    "osm_url": "https://www.openstreetmap.org/node/9888840329",
+    "source": null
+   }
+  ],
+  "pump_count": 8,
+  "stops": 6,
+  "longest_gaps": [
+   {
+    "from_km": 27.8,
+    "to_km": 184.3,
+    "gap_km": 156.5,
+    "from_is": "pump",
+    "to_is": "pump",
+    "near_from": "Nimmu",
+    "near_to": "Stongde"
+   },
+   {
+    "from_km": 15.9,
+    "to_km": 27.8,
+    "gap_km": 11.9,
+    "from_is": "pump",
+    "to_is": "pump",
+    "near_from": "Leh",
+    "near_to": "Nimmu"
+   },
+   {
+    "from_km": 7.5,
+    "to_km": 15.9,
+    "gap_km": 8.4,
+    "from_is": "pump",
+    "to_is": "pump",
+    "near_from": "Leh",
+    "near_to": "Leh"
+   },
+   {
+    "from_km": 184.3,
+    "to_km": 191.7,
+    "gap_km": 7.4,
+    "from_is": "pump",
+    "to_is": "end of route",
+    "near_from": "Stongde",
+    "near_to": "Padum"
+   },
+   {
+    "from_km": 2.0,
+    "to_km": 4.9,
+    "gap_km": 2.9,
+    "from_is": "pump",
+    "to_is": "pump",
+    "near_from": "Leh",
+    "near_to": "Leh"
+   }
+  ],
+  "note": "Pumps are those drawn on the open map within the search radius of the road. A pump missing from the map is missing here, so each gap is a worst case.",
+  "fetched": "2026-10-17"
+ },
+ "rules": [
+  {
+   "id": "rule:ladakh-no-permit-indian-citizens",
+   "kind": "permit",
+   "title": "Ladakh: no permit for Indian citizens",
+   "detail": "Indian citizens carry identity proof and the fee receipt instead of a permit. A few border villages stay closed. The order itself was not found; news reports it.",
+   "applies_to": "Indian citizens",
+   "set_by": "Home Department, Union Territory of Ladakh",
+   "official_url": "https://www.lahdclehpermit.in/",
+   "has_official_order": true,
+   "source": {
+    "url": "https://www.freepressjournal.in/india/indian-tourists-visiting-ladakh-no-longer-require-inner-line-permit-heres-all-you-need-to-know",
+    "title": "Indian tourists visiting Ladakh no longer require Inner Line Permit",
+    "kind": "news",
+    "opened": true,
+    "source_date": "2021-08-07",
+    "accessed": "2026-09-28"
+   },
+   "history": [
+    {
+     "date": "2021-08",
+     "change": "Ladakh Home Department dropped the permit for Indian citizens visiting protected areas.",
+     "source": {
+      "url": "https://www.freepressjournal.in/india/indian-tourists-visiting-ladakh-no-longer-require-inner-line-permit-heres-all-you-need-to-know",
+      "title": "Indian tourists visiting Ladakh no longer require Inner Line Permit",
+      "kind": "news",
+      "opened": true,
+      "source_date": "2021-08-07",
+      "accessed": "2026-09-28"
+     }
+    },
+    {
+     "date": "2021-08",
+     "change": "Report lists border villages expected to stay closed, including Thang, Demchok and Chumar.",
+     "source": {
+      "url": "https://thefederal.com/states/north/jammu-and-kashmir/ladakh-scraps-inner-line-permit-system-for-indian-citizens",
+      "title": "Ladakh scraps Inner Line Permit system for Indian citizens",
+      "kind": "news",
+      "opened": true,
+      "source_date": "2021-08-09",
+      "accessed": "2026-09-28"
+     }
+    },
+    {
+     "date": "2021-08-10",
+     "change": "Leh council notice said the tourist fee continues as before.",
+     "source": {
+      "url": "https://leh.nic.in/green-fee-shall-continue-to-remain-in-effect-for-domestic-tourists-visiting-leh/",
+      "title": "Important update for domestic tourists visiting Leh",
+      "kind": "official",
+      "opened": true,
+      "source_date": "2021-08-10",
+      "accessed": "2026-09-28"
+     }
+    }
+   ]
+  },
+  {
+   "id": "rule:zanskar-no-permit-indian-citizens",
+   "kind": "permit",
+   "title": "Zanskar: no permit for Indian citizens",
+   "detail": "Guides say Indians need no separate permit or fee for Zanskar; checkpoints may still note traveller and vehicle details. No official page found.",
+   "applies_to": "Indian citizens",
+   "set_by": "Not established",
+   "official_url": null,
+   "has_official_order": false,
+   "source": {
+    "url": "https://discoverwithdheeraj.com/plan-journey-zanskar-valley/",
+    "title": "Zanskar Valley Trip 2026: Routes, Budget and Permits",
+    "kind": "blog",
+    "opened": true,
+    "source_date": "2026-08-18",
+    "accessed": "2026-10-17"
+   },
+   "history": [
+    {
+     "date": "2026-09-05",
+     "change": "Operator guide repeats that no separate Zanskar permit is needed and says checkpoints may record traveller and vehicle details.",
+     "source": {
+      "url": "https://travelcoffee.in/blog/nimmu-padum-darcha-road-manali-to-zanskar",
+      "title": "The New Manali to Zanskar Road: Nimmu Padum Darcha Route Explained (2026)",
+      "kind": "operator",
+      "opened": true,
+      "source_date": "2026-09-05",
+      "accessed": "2026-10-17"
+     }
+    }
+   ]
+  },
+  {
+   "id": "rule:ladakh-tourist-fee-receipt",
+   "kind": "fee",
+   "title": "Leh: tourist fee paid online, receipt carried",
+   "detail": "Tourists visiting Leh pay one online fee covering environment, Red Cross and wildlife charges. A blogger says Zanskar-only trips need none; the portal does not say.",
+   "applies_to": "Tourists visiting Leh district",
+   "set_by": "Ladakh Autonomous Hill Development Council, Leh, and District Administration Leh",
+   "official_url": "https://www.lahdclehpermit.in/",
+   "has_official_order": true,
+   "source": {
+    "url": "https://www.lahdclehpermit.in/",
+    "title": "Leh District Tourist Management System",
+    "kind": "official",
+    "opened": true,
+    "source_date": null,
+    "accessed": "2026-10-17"
+   },
+   "history": [
+    {
+     "date": "2021-08-10",
+     "change": "Notice confirmed the existing fee structure stays in force.",
+     "source": {
+      "url": "https://leh.nic.in/green-fee-shall-continue-to-remain-in-effect-for-domestic-tourists-visiting-leh/",
+      "title": "Important update for domestic tourists visiting Leh",
+      "kind": "official",
+      "opened": true,
+      "source_date": "2021-08-10",
+      "accessed": "2026-09-28"
+     }
+    },
+    {
+     "date": "2026-08-18",
+     "change": "Blogger says Indians need no fee for Zanskar itself, only when also visiting Nubra, Pangong, Tso Moriri or Hanle.",
+     "source": {
+      "url": "https://discoverwithdheeraj.com/plan-journey-zanskar-valley/",
+      "title": "Zanskar Valley Trip 2026: Routes, Budget and Permits",
+      "kind": "blog",
+      "opened": true,
+      "source_date": "2026-08-18",
+      "accessed": "2026-10-17"
+     }
+    }
+   ]
+  },
+  {
+   "id": "rule:zanskar-foreigners-permit-unclear",
+   "kind": "permit",
+   "title": "Foreign citizens: permit rules for Zanskar unclear",
+   "detail": "A guide says foreigners need a Protected Area Permit for Zanskar, through a Leh agent. No official list naming this road was found; rules were under review in 2026.",
+   "applies_to": "Foreign citizens",
+   "set_by": "Ministry of Home Affairs; issued through Leh district administration",
+   "official_url": "https://www.lahdclehpermit.in/",
+   "has_official_order": false,
+   "source": {
+    "url": "https://discoverwithdheeraj.com/plan-journey-zanskar-valley/",
+    "title": "Zanskar Valley Trip 2026: Routes, Budget and Permits",
+    "kind": "blog",
+    "opened": true,
+    "source_date": "2026-08-18",
+    "accessed": "2026-10-17"
+   },
+   "history": [
+    {
+     "date": "2026-08-24",
+     "change": "Operator guide reports the Ladakh administration was reviewing the foreign tourist permit system on this date.",
+     "source": {
+      "url": "https://travelcoffee.in/blog/nimmu-padum-darcha-road-manali-to-zanskar",
+      "title": "The New Manali to Zanskar Road: Nimmu Padum Darcha Route Explained (2026)",
+      "kind": "operator",
+      "opened": true,
+      "source_date": "2026-09-05",
+      "accessed": "2026-10-17"
+     }
+    }
+   ]
+  },
+  {
+   "id": "rule:leh-48-hour-acclimatisation",
+   "kind": "timing",
+   "title": "Leh: 48 hours of acclimatisation before going higher",
+   "detail": "Tourists arriving in Leh are told to rest two days before heading to places such as Khardung La and Pangong. No enforcement method was found.",
+   "applies_to": "Tourists arriving in Leh",
+   "set_by": "District Administration, Leh",
+   "official_url": "https://leh.nic.in/48-hours-acclimatization-for-tourists-arriving-in-leh/",
+   "has_official_order": true,
+   "source": {
+    "url": "https://leh.nic.in/48-hours-acclimatization-for-tourists-arriving-in-leh/",
+    "title": "48 hours acclimatization for tourists arriving in Leh",
+    "kind": "official",
+    "opened": true,
+    "source_date": null,
+    "accessed": "2026-09-28"
+   },
+   "history": [
+    {
+     "date": "2022",
+     "change": "Encyclopedia entry dates the two-day rule before crossing Khardung La to this year.",
+     "source": {
+      "url": "https://en.wikipedia.org/wiki/Khardung_La",
+      "title": "Khardung La",
+      "kind": "encyclopedia",
+      "opened": true,
+      "source_date": null,
+      "accessed": "2026-09-28"
+     }
+    }
+   ]
+  },
+  {
+   "id": "rule:nimmu-padum-movement-days",
+   "kind": "timing",
+   "title": "Nimmu to Padum: traffic reportedly allowed on set days",
+   "detail": "During road work, traffic between Padum and Nimmu was reported allowed only on certain days; July 2026 reports conflict. No official order found; ask in Padum.",
+   "applies_to": "All vehicles, Nimmu to Padum",
+   "set_by": "Not established",
+   "official_url": null,
+   "has_official_order": false,
+   "source": {
+    "url": "https://travelcoffee.in/blog/nimmu-padum-darcha-road-manali-to-zanskar",
+    "title": "The New Manali to Zanskar Road: Nimmu Padum Darcha Route Explained (2026)",
+    "kind": "operator",
+    "opened": true,
+    "source_date": "2026-09-05",
+    "accessed": "2026-10-17"
+   },
+   "history": [
+    {
+     "date": "2026-07",
+     "change": "Some reports gave Wednesday and Sunday as movement days; later travellers got through on other days.",
+     "source": {
+      "url": "https://travelcoffee.in/blog/nimmu-padum-darcha-road-manali-to-zanskar",
+      "title": "The New Manali to Zanskar Road: Nimmu Padum Darcha Route Explained (2026)",
+      "kind": "operator",
+      "opened": true,
+      "source_date": "2026-09-05",
+      "accessed": "2026-10-17"
+     }
+    }
+   ]
+  }
+ ],
+ "season": {
+  "note": "The road was connected in March 2024 and dedicated on 15 October 2026; no dated official opening or closing for traffic was found, and no winter plan was announced.",
+  "history": [
+   {
+    "year": 2026,
+    "connected": null,
+    "open_to_motorcycles": null,
+    "closed": null,
+    "note": "In March BRO told MPs it would inaugurate the road this year. Movement days were disputed in July. A guide listed the route open through September. Dedicated on 15 October while snow fell in Zanskar.",
+    "sources": [
+     {
+      "url": "https://www.deccanherald.com/india/ladakh/critical-road-near-line-of-actual-control-to-open-this-year-3939065",
+      "title": "Critical road near Line of Actual Control to open this year",
+      "kind": "news",
+      "opened": true,
+      "source_date": "2026-03-20",
+      "accessed": "2026-10-17"
+     },
+     {
+      "url": "https://travelcoffee.in/blog/nimmu-padum-darcha-road-manali-to-zanskar",
+      "title": "The New Manali to Zanskar Road: Nimmu Padum Darcha Route Explained (2026)",
+      "kind": "operator",
+      "opened": true,
+      "source_date": "2026-09-05",
+      "accessed": "2026-10-17"
+     },
+     {
+      "url": "https://discoverwithdheeraj.com/july-travel-update-exploring-the-himalayas-weather-and-road-conditions/",
+      "title": "Ladakh Spiti Zanskar Sept 2026: Roads OPEN | Weather",
+      "kind": "blog",
+      "opened": true,
+      "source_date": "2026-10-09",
+      "accessed": "2026-10-17"
+     },
+     {
+      "url": "https://www.pmindia.gov.in/en/news_updates/pm-to-inaugurate-and-dedicate-five-development-projects-worth-around-%E2%82%B93350-crore-in-ladakh-on-15-october/",
+      "title": "PM to Inaugurate and Dedicate Five Development Projects Worth Around ₹3,350 Crore in Ladakh on 15 October",
+      "kind": "official",
+      "opened": true,
+      "source_date": "2026-10-14",
+      "accessed": "2026-10-17"
+     },
+     {
+      "url": "https://www.pmindia.gov.in/en/news_updates/pms-speech-during-the-launch-of-development-projects-in-ladakh-via-video-conferencing/",
+      "title": "PM’s speech during the launch of development projects in Ladakh via Video Conferencing",
+      "kind": "official",
+      "opened": true,
+      "source_date": "2026-10-15",
+      "accessed": "2026-10-17"
+     }
+    ]
+   },
+   {
+    "year": 2025,
+    "connected": null,
+    "open_to_motorcycles": null,
+    "closed": null,
+    "note": "Nerak to Padum closed on 17 June after a washout at Lingshed nallah and reopened on 20 June, per a forum quoting Leh disaster authority orders.",
+    "sources": [
+     {
+      "url": "https://www.tripadvisor.in/ShowTopic-g297624-i10472-k15373032-NPD_Road_Update-Ladakh.html",
+      "title": "NPD Road Update - Ladakh Forum - Tripadvisor",
+      "kind": "forum",
+      "opened": false,
+      "source_date": null,
+      "accessed": "2026-10-17"
+     }
+    ]
+   },
+   {
+    "year": 2024,
+    "connected": "2024-03-25",
+    "open_to_motorcycles": null,
+    "closed": null,
+    "note": "BRO completed the connection on 25 March, working from the frozen Zanskar river in January. A Zanskar councillor expected year-round links to Leh. About 201 of 298 km was blacktopped by December.",
+    "sources": [
+     {
+      "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2016417",
+      "title": "BRO connects strategic Nimmu-Padam-Darcha road in Ladakh",
+      "kind": "official",
+      "opened": true,
+      "source_date": "2024-03-26",
+      "accessed": "2026-10-17"
+     },
+     {
+      "url": "https://www.tribuneindia.com/news/himachal/boost-to-all-weather-connectivity-to-leh-darcha-nimmu-road-opens-605098",
+      "title": "Boost to all-weather connectivity to Leh, Darcha-Nimmu road opens",
+      "kind": "news",
+      "opened": true,
+      "source_date": "2024-03-29",
+      "accessed": "2026-10-17"
+     },
+     {
+      "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2088180",
+      "title": "Year End Review 2024 (Ministry of Defence)",
+      "kind": "official",
+      "opened": true,
+      "source_date": "2024-12-26",
+      "accessed": "2026-10-17"
+     }
+    ]
+   },
+   {
+    "year": 2023,
+    "connected": null,
+    "open_to_motorcycles": null,
+    "closed": null,
+    "note": "In January the Zanskar sub-divisional magistrate asked BRO to clear the road from Zangla for winter-festival visitors, who were arriving on the Chadar trek.",
+    "sources": [
+     {
+      "url": "https://ladakh.gov.in/sdm-zanskar-inspects-condition-of-nimmu-padum-darcha-road/",
+      "title": "SDM Zanskar inspects condition of Nimmu–Padum–Darcha road",
+      "kind": "official",
+      "opened": true,
+      "source_date": "2023-01-30",
+      "accessed": "2026-10-17"
+     }
+    ]
+   }
+  ]
+ },
+ "authorities": [
+  {
+   "id": "authority:border-roads-organisation-project-yojak",
+   "office": "Border Roads Organisation, Project Yojak",
+   "announces": "Builds and maintains the road; took it over from Project Vijayak around 2021",
+   "stretch": "Nimmu to Padum, as part of the whole Nimmu–Padum–Darcha road",
+   "channel": "Statements to the press; no status page found",
+   "url": "https://bro.gov.in/",
+   "source": {
+    "url": "https://ladakh.gov.in/cec-dr-jaffer-visits-nimmu-padum-darcha-road-till-last-point-takes-assessment-of-road-construction/",
+    "title": "CEC Dr Jaffer visits Nimmu–Padum–Darcha road till last point, takes assessment of road construction",
+    "kind": "official",
+    "opened": true,
+    "source_date": "2024-03-15",
+    "accessed": "2026-10-17"
+   }
+  },
+  {
+   "id": "authority:district-disaster-management-authority-leh",
+   "office": "District Disaster Management Authority, Leh",
+   "announces": "Closes and reopens the road after damage",
+   "stretch": "Nerak to Padum",
+   "channel": "Advisories, seen quoted on a travel forum; official channel not found",
+   "url": "https://leh.nic.in/",
+   "source": {
+    "url": "https://www.tripadvisor.in/ShowTopic-g297624-i10472-k15373032-NPD_Road_Update-Ladakh.html",
+    "title": "NPD Road Update - Ladakh Forum - Tripadvisor",
+    "kind": "forum",
+    "opened": false,
+    "source_date": null,
+    "accessed": "2026-10-17"
+   }
+  },
+  {
+   "id": "authority:traffic-police-ladakh-police",
+   "office": "Traffic Police, Ladakh Police",
+   "announces": "Traffic management; headquartered in Kargil",
+   "stretch": "Leh to Nimmu and Leh district roads",
+   "channel": "Website and social media accounts",
+   "url": "https://police.ladakh.gov.in/pages/traffic.html",
+   "source": {
+    "url": "https://police.ladakh.gov.in/pages/traffic.html",
+    "title": "Traffic Police, Ladakh Police",
+    "kind": "official",
+    "opened": true,
+    "source_date": null,
+    "accessed": "2026-09-28"
+   }
+  },
+  {
+   "id": "authority:sub-divisional-magistrate-zanskar",
+   "office": "Sub-Divisional Magistrate, Zanskar",
+   "announces": "Inspected the road at Pidmo and asked BRO to clear it, January 2023",
+   "stretch": "Pidmo and Zangla",
+   "channel": "Press releases on the Ladakh administration website",
+   "url": "https://ladakh.gov.in/sdm-zanskar-inspects-condition-of-nimmu-padum-darcha-road/",
+   "source": {
+    "url": "https://ladakh.gov.in/sdm-zanskar-inspects-condition-of-nimmu-padum-darcha-road/",
+    "title": "SDM Zanskar inspects condition of Nimmu–Padum–Darcha road",
+    "kind": "official",
+    "opened": true,
+    "source_date": "2023-01-30",
+    "accessed": "2026-10-17"
+   }
+  },
+  {
+   "id": "authority:zanskar-district-administration-padum",
+   "office": "Zanskar district administration, Padum",
+   "announces": "District formed on 27 April 2026; its road announcements were not found",
+   "stretch": "Zangla to Padum",
+   "channel": "Not found",
+   "url": null,
+   "source": {
+    "url": "https://en.wikipedia.org/wiki/Zanskar_district",
+    "title": "Zanskar district",
+    "kind": "encyclopedia",
+    "opened": true,
+    "source_date": null,
+    "accessed": "2026-10-17"
+   }
+  }
+ ],
+ "hazards": [
+  {
+   "id": "hazard:rough-unfinished-stretches-between-padum-and-nimmu",
+   "title": "Rough, unfinished stretches between Padum and Nimmu",
+   "detail": "A 2026 guide says the road is not uniformly paved and the surface between Padum and Nimmu is variable, with widening and surfacing still under way.",
+   "months": [],
+   "source": {
+    "url": "https://travelcoffee.in/blog/nimmu-padum-darcha-road-manali-to-zanskar",
+    "title": "The New Manali to Zanskar Road: Nimmu Padum Darcha Route Explained (2026)",
+    "kind": "operator",
+    "opened": true,
+    "source_date": "2026-09-05",
+    "accessed": "2026-10-17"
+   }
+  },
+  {
+   "id": "hazard:road-work-slides-and-snow-can-stop-traffic-suddenly",
+   "title": "Road work, slides and snow can stop traffic suddenly",
+   "detail": "Snow, rain, landslides and active road work can change movement at short notice; guides advise keeping buffer days.",
+   "months": [],
+   "source": {
+    "url": "https://travelcoffee.in/blog/nimmu-padum-darcha-road-manali-to-zanskar",
+    "title": "The New Manali to Zanskar Road: Nimmu Padum Darcha Route Explained (2026)",
+    "kind": "operator",
+    "opened": true,
+    "source_date": "2026-09-05",
+    "accessed": "2026-10-17"
+   }
+  },
+  {
+   "id": "hazard:flash-flood-washout-at-lingshed-nallah",
+   "title": "Flash flood washout at Lingshed nallah",
+   "detail": "Water from Lingshed nallah cut the road at km 87.2, between Nerak and Padum, on 17 June 2025; surges may recur.",
+   "months": [
+    6
+   ],
+   "source": {
+    "url": "https://www.tripadvisor.in/ShowTopic-g297624-i10472-k15373032-NPD_Road_Update-Ladakh.html",
+    "title": "NPD Road Update - Ladakh Forum - Tripadvisor",
+    "kind": "forum",
+    "opened": false,
+    "source_date": null,
+    "accessed": "2026-10-17"
+   }
+  },
+  {
+   "id": "hazard:snow-in-zanskar-by-mid-october",
+   "title": "Snow in Zanskar by mid-October",
+   "detail": "Snow was falling in Zanskar on 15 October 2026, the day the road was dedicated.",
+   "months": [
+    10
+   ],
+   "source": {
+    "url": "https://www.pmindia.gov.in/en/news_updates/pms-speech-during-the-launch-of-development-projects-in-ladakh-via-video-conferencing/",
+    "title": "PM’s speech during the launch of development projects in Ladakh via Video Conferencing",
+    "kind": "official",
+    "opened": true,
+    "source_date": "2026-10-15",
+    "accessed": "2026-10-17"
+   }
+  },
+  {
+   "id": "hazard:mobile-signal-only-near-padum",
+   "title": "Mobile signal only near Padum",
+   "detail": "A 2026 guide says BSNL and Jio postpaid work only within about 15 to 20 km of Padum; Airtel and Vi have little or none.",
+   "months": [],
+   "source": {
+    "url": "https://discoverwithdheeraj.com/plan-journey-zanskar-valley/",
+    "title": "Zanskar Valley Trip 2026: Routes, Budget and Permits",
+    "kind": "blog",
+    "opened": true,
+    "source_date": "2026-08-18",
+    "accessed": "2026-10-17"
+   }
+  },
+  {
+   "id": "hazard:prepaid-mobile-connections-from-other-states-do-not-work",
+   "title": "Prepaid mobile connections from other states do not work",
+   "detail": "A blogger reports that only postpaid connections from outside work in Jammu and Kashmir and in Ladakh; no official source was found.",
+   "months": [],
+   "source": {
+    "url": "https://discoverwithdheeraj.com/mobile-phone-connectivity-in-leh-ladakh/",
+    "title": "Mobile phone connectivity in Leh Ladakh",
+    "kind": "blog",
+    "opened": true,
+    "source_date": "2026-08-14",
+    "accessed": "2026-09-28"
+   }
+  },
+  {
+   "id": "hazard:fuel-at-padum-is-limited",
+   "title": "Fuel at Padum is limited",
+   "detail": "Fuel at Padum is sometimes rationed, and a guide suggests carrying spare. No written source found listing a pump between Nimmu and Padum.",
+   "months": [],
+   "source": {
+    "url": "https://discoverwithdheeraj.com/plan-journey-zanskar-valley/",
+    "title": "Zanskar Valley Trip 2026: Routes, Budget and Permits",
+    "kind": "blog",
+    "opened": true,
+    "source_date": "2026-08-18",
+    "accessed": "2026-10-17"
+   }
+  },
+  {
+   "id": "hazard:altitude-sickness-can-be-fatal",
+   "title": "Altitude sickness can be fatal",
+   "detail": "Leh's tourist portal warns that high-altitude pulmonary and cerebral oedema can be life-threatening.",
+   "months": [],
+   "source": {
+    "url": "https://www.lahdclehpermit.in/",
+    "title": "Leh District Tourist Management System",
+    "kind": "official",
+    "opened": true,
+    "source_date": null,
+    "accessed": "2026-10-17"
+   }
+  }
+ ],
+ "videos": [
+  {
+   "id": "LAiU6Lb6D6w",
+   "url": "https://www.youtube.com/watch?v=LAiU6Lb6D6w",
+   "title": "New Route to Zanskar! Leh to Padum via Nimmu–Chilling | Ladakh Ride Ep.7 |",
+   "channel": "The Young Monk",
+   "stretch": null,
+   "filmed": null,
+   "bike": null,
+   "checked": false
+  },
+  {
+   "id": "CF2o5nyX3mw",
+   "url": "https://www.youtube.com/watch?v=CF2o5nyX3mw",
+   "title": "ZANSKAR- THIS PLACE IS NOT ON MAPS | PADUM–NIMMU CHILLING ROAD | EP 3| LADAKH BIKE RIDE",
+   "channel": "Twin Helmet Tales ",
+   "stretch": "Padum to Nimmu",
+   "filmed": null,
+   "bike": null,
+   "checked": false
+  },
+  {
+   "id": "rk06ZJUAuDo",
+   "url": "https://www.youtube.com/watch?v=rk06ZJUAuDo",
+   "title": "Insanely Beautiful Zanskar Valley | Padum to Leh via Nimmo | Ladakh Ride 2026 | Ep-7",
+   "channel": "Vaibhav Sharma",
+   "stretch": null,
+   "filmed": "2026",
+   "bike": null,
+   "checked": false
+  },
+  {
+   "id": "N5DIiNRmANk",
+   "url": "https://www.youtube.com/watch?v=N5DIiNRmANk",
+   "title": "RIDING THROUGH THE DANGEROUS VALLEY OF LADAKH | PADUM TO LEH ON HONDA CB350RS",
+   "channel": "PTR Deep",
+   "stretch": null,
+   "filmed": null,
+   "bike": "Honda CB350RS",
+   "checked": false
+  },
+  {
+   "id": "u8iJJV_8LdU",
+   "url": "https://www.youtube.com/watch?v=u8iJJV_8LdU",
+   "title": "Padum to Leh in Just 3 Hours! But Then the Front Brake Blew Up... (BMW G310R)",
+   "channel": "Ride With Shivu",
+   "stretch": null,
+   "filmed": null,
+   "bike": "BMW G 310 R",
+   "checked": false
+  }
+ ],
+ "image": {
+  "file": "leh-padum.jpg",
+  "small": "leh-padum-small.jpg",
+  "title": "Fields Zangla Zanskar River Ladakh Jun24 A7CR 00981.jpg",
+  "shows": "Zanskar River",
+  "author": "Timothy A. Gonsalves",
+  "licence": "CC BY-SA 4.0",
+  "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+  "source_page": "https://commons.wikimedia.org/wiki/File:Fields_Zangla_Zanskar_River_Ladakh_Jun24_A7CR_00981.jpg",
+  "source": "Wikimedia Commons",
+  "taken": "2024-06-07 11:01:19",
+  "changes": "Resized. Not otherwise changed.",
+  "fetched": "2026-10-17"
+ },
+ "gaps": [
+  "No official or news source says whether private vehicles and motorcycles are formally allowed between Nimmu and Padum; guides and riders' videos show them using it in 2025 and 2026.",
+  "No official order found for movement days or time windows between Nimmu and Padum; July 2026 reports conflict.",
+  "No official source says whether the road from Leh to Padum will be kept open in winter 2026–27; a Zanskar councillor expected year-round links in 2024, and guides still call the Chadar trek the winter route.",
+  "No dated official opening or closing for traffic was found for any year; 15 October 2026 was a dedication, not a traffic order.",
+  "How much of the Nimmu to Padum stretch is blacktopped in 2026 was not found; the last official figure is about 201 of 298 km for the whole road, December 2024. An encyclopedia calls the whole road paved; 2026 guides call it rough in patches.",
+  "No source names a pass between Leh and Padum; the government says the whole road crosses only Shinkun La, beyond Padum. Padum's altitude (3,669 m) is above the open map's 3,600 m top.",
+  "No source found for rockfall or slides specific to the Zanskar gorge between Chilling and Nerak, or the months they occur.",
+  "No written source lists fuel pumps between Leh and Padum; the 156 km gap is from the open map only.",
+  "No source found for mobile signal in the gorge between Nimmu and Zangla.",
+  "No source names a check post between Leh and Padum.",
+  "The Lingshed nallah closure of June 2025 comes from a forum quoting Leh disaster authority orders; the forum page could not be opened and the orders were not found.",
+  "No official channel found where the Leh disaster authority, Leh police or the new Zanskar district post status for this road; whether District Police Kargil still covers the Zanskar end was not established.",
+  "Whether foreign citizens need a Protected Area Permit for Chilling to Padum is not stated on any official page found.",
+  "Whether the Leh tourist fee applies to a Leh to Padum trip is unclear: the portal covers tourists visiting Leh, while a blogger says Zanskar-only trips need none.",
+  "Whether the restriction on rental motorcycles from outside Ladakh applies on this road was not found.",
+  "Usual season is a blogger's for Zanskar generally, not for this road.",
+  "Usual days rests on a 2024 newspaper estimate; the Prime Minister said a 12-hour journey now takes about 3 hours without naming it.",
+  "Video filming dates are not stated except 2026 in one title; four of the five run from Padum towards Leh."
+ ],
+ "counts": {
+  "facts": 55
+ },
+ "built": "2026-10-17"
+}

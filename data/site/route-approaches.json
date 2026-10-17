@@ -10144,9 +10144,195 @@
    },
    "back": {},
    "after": []
+  },
+  "leh-padum": {
+   "start": "Leh",
+   "end": "Padum",
+   "round_trip": false,
+   "to": {
+    "delhi": {
+     "km": 958,
+     "hours": 12.94,
+     "through": [
+      "Ambala",
+      "Mandi",
+      "Lahaul"
+     ],
+     "halfway": {
+      "name": "Mandi",
+      "km": 479
+     }
+    },
+    "chandigarh": {
+     "km": 695,
+     "hours": 9.76,
+     "through": [
+      "Mandi",
+      "Lahaul"
+     ],
+     "halfway": {
+      "name": "Lahaul",
+      "km": 348
+     }
+    },
+    "jaipur": {
+     "km": 1172,
+     "hours": 15.6,
+     "through": [
+      "Dadri",
+      "Morinda",
+      "Lahaul"
+     ],
+     "halfway": {
+      "name": "Morinda",
+      "km": 586
+     }
+    },
+    "lucknow": {
+     "km": 1399,
+     "hours": 17.78,
+     "through": [
+      "Hasanpur",
+      "Yamunanagar",
+      "Lahaul"
+     ],
+     "halfway": {
+      "name": "Yamunanagar",
+      "km": 700
+     }
+    },
+    "ahmedabad": {
+     "km": 1808,
+     "hours": 23.13
+    },
+    "mumbai": {
+     "km": 2287,
+     "hours": 27.76
+    },
+    "pune": {
+     "km": 2292,
+     "hours": 28.67
+    },
+    "bengaluru": {
+     "km": 2990,
+     "hours": 37.08
+    },
+    "hyderabad": {
+     "km": 2493,
+     "hours": 32.02
+    },
+    "chennai": {
+     "km": 3068,
+     "hours": 39.65
+    },
+    "kolkata": {
+     "km": 2383,
+     "hours": 29.21
+    },
+    "guwahati": {
+     "km": 2773,
+     "hours": 33.98,
+     "via": [
+      "Purnia"
+     ]
+    }
+   },
+   "back": {
+    "delhi": {
+     "km": 760,
+     "hours": 13.04,
+     "through": [
+      "Lahaul",
+      "Anandpur Sahib",
+      "Kurukshetra"
+     ],
+     "halfway": {
+      "name": "Anandpur Sahib",
+      "km": 380
+     }
+    },
+    "chandigarh": {
+     "km": 497,
+     "hours": 9.89,
+     "through": [
+      "Lahaul",
+      "Manali",
+      "Sundarnagar"
+     ],
+     "halfway": {
+      "name": "Manali",
+      "km": 248
+     }
+    },
+    "jaipur": {
+     "km": 976,
+     "hours": 15.8,
+     "through": [
+      "Bhuntar",
+      "Ambala",
+      "Narnaul"
+     ],
+     "halfway": {
+      "name": "Ambala",
+      "km": 488
+     }
+    },
+    "lucknow": {
+     "km": 1200,
+     "hours": 17.88,
+     "through": [
+      "Mandi",
+      "Saharanpur",
+      "Shahjahanpur"
+     ],
+     "halfway": {
+      "name": "Saharanpur",
+      "km": 600
+     }
+    },
+    "ahmedabad": {
+     "km": 1621,
+     "hours": 23.26
+    },
+    "mumbai": {
+     "km": 2085,
+     "hours": 27.74
+    },
+    "pune": {
+     "km": 2087,
+     "hours": 28.5
+    },
+    "bengaluru": {
+     "km": 2788,
+     "hours": 36.98
+    },
+    "hyderabad": {
+     "km": 2295,
+     "hours": 31.94
+    },
+    "chennai": {
+     "km": 2958,
+     "hours": 39.35
+    },
+    "kolkata": {
+     "km": 2164,
+     "hours": 28.94
+    },
+    "guwahati": {
+     "km": 2538,
+     "hours": 34.18,
+     "via": [
+      "Purnia"
+     ]
+    }
+   },
+   "after": [
+    "manali-leh",
+    "srinagar-leh"
+   ]
   }
  },
- "built": "2026-10-08",
+ "built": "2026-10-17",
  "about": "By road from each city's centre to each route's first place, and from its last place back. Hours are a map app's, a car's time on an empty road.",
  "sources": [
   {

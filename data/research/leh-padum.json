@@ -1,0 +1,651 @@
+{
+  "slug": "leh-padum",
+  "header": {
+    "highway": {
+      "value": "Nimmu–Padum–Darcha Road; no national highway number found",
+      "source": {
+        "url": "https://www.pmindia.gov.in/en/news_updates/pm-to-inaugurate-and-dedicate-five-development-projects-worth-around-%E2%82%B93350-crore-in-ladakh-on-15-october/",
+        "title": "PM to Inaugurate and Dedicate Five Development Projects Worth Around ₹3,350 Crore in Ladakh on 15 October",
+        "kind": "official",
+        "opened": true,
+        "source_date": "2026-10-14",
+        "accessed": "2026-10-17"
+      }
+    },
+    "highest_point": {
+      "name": "Padum",
+      "altitude_m": 3669,
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/Padum",
+        "title": "Padum",
+        "kind": "encyclopedia",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-10-17"
+      }
+    },
+    "usual_days": {
+      "value": "1 day; about 5 hours from Padum to Leh, by a 2024 estimate",
+      "source": {
+        "url": "https://www.tribuneindia.com/news/himachal/boost-to-all-weather-connectivity-to-leh-darcha-nimmu-road-opens-605098",
+        "title": "Boost to all-weather connectivity to Leh, Darcha-Nimmu road opens",
+        "kind": "news",
+        "opened": true,
+        "source_date": "2024-03-29",
+        "accessed": "2026-10-17"
+      }
+    },
+    "usual_season": {
+      "value": "June to September",
+      "source": {
+        "url": "https://discoverwithdheeraj.com/plan-journey-zanskar-valley/",
+        "title": "Zanskar Valley Trip 2026: Routes, Budget and Permits",
+        "kind": "blog",
+        "opened": true,
+        "source_date": "2026-08-18",
+        "accessed": "2026-10-17"
+      }
+    },
+    "one_line": "Ladakh, from Leh along the Indus to Nimmu, then up the Zanskar river gorge past Chilling and Nerak to Padum"
+  },
+  "rules": [
+    {
+      "id": "ladakh-no-permit-indian-citizens",
+      "kind": "permit",
+      "title": "Ladakh: no permit for Indian citizens",
+      "detail": "Indian citizens carry identity proof and the fee receipt instead of a permit. A few border villages stay closed. The order itself was not found; news reports it.",
+      "applies_to": "Indian citizens",
+      "set_by": "Home Department, Union Territory of Ladakh",
+      "official_url": "https://www.lahdclehpermit.in/",
+      "has_official_order": true,
+      "source": {
+        "url": "https://www.freepressjournal.in/india/indian-tourists-visiting-ladakh-no-longer-require-inner-line-permit-heres-all-you-need-to-know",
+        "title": "Indian tourists visiting Ladakh no longer require Inner Line Permit",
+        "kind": "news",
+        "opened": true,
+        "source_date": "2021-08-07",
+        "accessed": "2026-09-28"
+      },
+      "history": [
+        {
+          "date": "2021-08",
+          "change": "Ladakh Home Department dropped the permit for Indian citizens visiting protected areas.",
+          "source": {
+            "url": "https://www.freepressjournal.in/india/indian-tourists-visiting-ladakh-no-longer-require-inner-line-permit-heres-all-you-need-to-know",
+            "title": "Indian tourists visiting Ladakh no longer require Inner Line Permit",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2021-08-07",
+            "accessed": "2026-09-28"
+          }
+        },
+        {
+          "date": "2021-08",
+          "change": "Report lists border villages expected to stay closed, including Thang, Demchok and Chumar.",
+          "source": {
+            "url": "https://thefederal.com/states/north/jammu-and-kashmir/ladakh-scraps-inner-line-permit-system-for-indian-citizens",
+            "title": "Ladakh scraps Inner Line Permit system for Indian citizens",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2021-08-09",
+            "accessed": "2026-09-28"
+          }
+        },
+        {
+          "date": "2021-08-10",
+          "change": "Leh council notice said the tourist fee continues as before.",
+          "source": {
+            "url": "https://leh.nic.in/green-fee-shall-continue-to-remain-in-effect-for-domestic-tourists-visiting-leh/",
+            "title": "Important update for domestic tourists visiting Leh",
+            "kind": "official",
+            "opened": true,
+            "source_date": "2021-08-10",
+            "accessed": "2026-09-28"
+          }
+        }
+      ]
+    },
+    {
+      "id": "zanskar-no-permit-indian-citizens",
+      "kind": "permit",
+      "title": "Zanskar: no permit for Indian citizens",
+      "detail": "Guides say Indians need no separate permit or fee for Zanskar; checkpoints may still note traveller and vehicle details. No official page found.",
+      "applies_to": "Indian citizens",
+      "set_by": "Not established",
+      "official_url": null,
+      "has_official_order": false,
+      "source": {
+        "url": "https://discoverwithdheeraj.com/plan-journey-zanskar-valley/",
+        "title": "Zanskar Valley Trip 2026: Routes, Budget and Permits",
+        "kind": "blog",
+        "opened": true,
+        "source_date": "2026-08-18",
+        "accessed": "2026-10-17"
+      },
+      "history": [
+        {
+          "date": "2026-09-05",
+          "change": "Operator guide repeats that no separate Zanskar permit is needed and says checkpoints may record traveller and vehicle details.",
+          "source": {
+            "url": "https://travelcoffee.in/blog/nimmu-padum-darcha-road-manali-to-zanskar",
+            "title": "The New Manali to Zanskar Road: Nimmu Padum Darcha Route Explained (2026)",
+            "kind": "operator",
+            "opened": true,
+            "source_date": "2026-09-05",
+            "accessed": "2026-10-17"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ladakh-tourist-fee-receipt",
+      "kind": "fee",
+      "title": "Leh: tourist fee paid online, receipt carried",
+      "detail": "Tourists visiting Leh pay one online fee covering environment, Red Cross and wildlife charges. A blogger says Zanskar-only trips need none; the portal does not say.",
+      "applies_to": "Tourists visiting Leh district",
+      "set_by": "Ladakh Autonomous Hill Development Council, Leh, and District Administration Leh",
+      "official_url": "https://www.lahdclehpermit.in/",
+      "has_official_order": true,
+      "source": {
+        "url": "https://www.lahdclehpermit.in/",
+        "title": "Leh District Tourist Management System",
+        "kind": "official",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-10-17"
+      },
+      "history": [
+        {
+          "date": "2021-08-10",
+          "change": "Notice confirmed the existing fee structure stays in force.",
+          "source": {
+            "url": "https://leh.nic.in/green-fee-shall-continue-to-remain-in-effect-for-domestic-tourists-visiting-leh/",
+            "title": "Important update for domestic tourists visiting Leh",
+            "kind": "official",
+            "opened": true,
+            "source_date": "2021-08-10",
+            "accessed": "2026-09-28"
+          }
+        },
+        {
+          "date": "2026-08-18",
+          "change": "Blogger says Indians need no fee for Zanskar itself, only when also visiting Nubra, Pangong, Tso Moriri or Hanle.",
+          "source": {
+            "url": "https://discoverwithdheeraj.com/plan-journey-zanskar-valley/",
+            "title": "Zanskar Valley Trip 2026: Routes, Budget and Permits",
+            "kind": "blog",
+            "opened": true,
+            "source_date": "2026-08-18",
+            "accessed": "2026-10-17"
+          }
+        }
+      ]
+    },
+    {
+      "id": "zanskar-foreigners-permit-unclear",
+      "kind": "permit",
+      "title": "Foreign citizens: permit rules for Zanskar unclear",
+      "detail": "A guide says foreigners need a Protected Area Permit for Zanskar, through a Leh agent. No official list naming this road was found; rules were under review in 2026.",
+      "applies_to": "Foreign citizens",
+      "set_by": "Ministry of Home Affairs; issued through Leh district administration",
+      "official_url": "https://www.lahdclehpermit.in/",
+      "has_official_order": false,
+      "source": {
+        "url": "https://discoverwithdheeraj.com/plan-journey-zanskar-valley/",
+        "title": "Zanskar Valley Trip 2026: Routes, Budget and Permits",
+        "kind": "blog",
+        "opened": true,
+        "source_date": "2026-08-18",
+        "accessed": "2026-10-17"
+      },
+      "history": [
+        {
+          "date": "2026-08-24",
+          "change": "Operator guide reports the Ladakh administration was reviewing the foreign tourist permit system on this date.",
+          "source": {
+            "url": "https://travelcoffee.in/blog/nimmu-padum-darcha-road-manali-to-zanskar",
+            "title": "The New Manali to Zanskar Road: Nimmu Padum Darcha Route Explained (2026)",
+            "kind": "operator",
+            "opened": true,
+            "source_date": "2026-09-05",
+            "accessed": "2026-10-17"
+          }
+        }
+      ]
+    },
+    {
+      "id": "leh-48-hour-acclimatisation",
+      "kind": "timing",
+      "title": "Leh: 48 hours of acclimatisation before going higher",
+      "detail": "Tourists arriving in Leh are told to rest two days before heading to places such as Khardung La and Pangong. No enforcement method was found.",
+      "applies_to": "Tourists arriving in Leh",
+      "set_by": "District Administration, Leh",
+      "official_url": "https://leh.nic.in/48-hours-acclimatization-for-tourists-arriving-in-leh/",
+      "has_official_order": true,
+      "source": {
+        "url": "https://leh.nic.in/48-hours-acclimatization-for-tourists-arriving-in-leh/",
+        "title": "48 hours acclimatization for tourists arriving in Leh",
+        "kind": "official",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      },
+      "history": [
+        {
+          "date": "2022",
+          "change": "Encyclopedia entry dates the two-day rule before crossing Khardung La to this year.",
+          "source": {
+            "url": "https://en.wikipedia.org/wiki/Khardung_La",
+            "title": "Khardung La",
+            "kind": "encyclopedia",
+            "opened": true,
+            "source_date": null,
+            "accessed": "2026-09-28"
+          }
+        }
+      ]
+    },
+    {
+      "id": "nimmu-padum-movement-days",
+      "kind": "timing",
+      "title": "Nimmu to Padum: traffic reportedly allowed on set days",
+      "detail": "During road work, traffic between Padum and Nimmu was reported allowed only on certain days; July 2026 reports conflict. No official order found; ask in Padum.",
+      "applies_to": "All vehicles, Nimmu to Padum",
+      "set_by": "Not established",
+      "official_url": null,
+      "has_official_order": false,
+      "source": {
+        "url": "https://travelcoffee.in/blog/nimmu-padum-darcha-road-manali-to-zanskar",
+        "title": "The New Manali to Zanskar Road: Nimmu Padum Darcha Route Explained (2026)",
+        "kind": "operator",
+        "opened": true,
+        "source_date": "2026-09-05",
+        "accessed": "2026-10-17"
+      },
+      "history": [
+        {
+          "date": "2026-07",
+          "change": "Some reports gave Wednesday and Sunday as movement days; later travellers got through on other days.",
+          "source": {
+            "url": "https://travelcoffee.in/blog/nimmu-padum-darcha-road-manali-to-zanskar",
+            "title": "The New Manali to Zanskar Road: Nimmu Padum Darcha Route Explained (2026)",
+            "kind": "operator",
+            "opened": true,
+            "source_date": "2026-09-05",
+            "accessed": "2026-10-17"
+          }
+        }
+      ]
+    }
+  ],
+  "season": {
+    "note": "The road was connected in March 2024 and dedicated on 15 October 2026; no dated official opening or closing for traffic was found, and no winter plan was announced.",
+    "history": [
+      {
+        "year": 2026,
+        "connected": null,
+        "open_to_motorcycles": null,
+        "closed": null,
+        "note": "In March BRO told MPs it would inaugurate the road this year. Movement days were disputed in July. A guide listed the route open through September. Dedicated on 15 October while snow fell in Zanskar.",
+        "sources": [
+          {
+            "url": "https://www.deccanherald.com/india/ladakh/critical-road-near-line-of-actual-control-to-open-this-year-3939065",
+            "title": "Critical road near Line of Actual Control to open this year",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2026-03-20",
+            "accessed": "2026-10-17"
+          },
+          {
+            "url": "https://travelcoffee.in/blog/nimmu-padum-darcha-road-manali-to-zanskar",
+            "title": "The New Manali to Zanskar Road: Nimmu Padum Darcha Route Explained (2026)",
+            "kind": "operator",
+            "opened": true,
+            "source_date": "2026-09-05",
+            "accessed": "2026-10-17"
+          },
+          {
+            "url": "https://discoverwithdheeraj.com/july-travel-update-exploring-the-himalayas-weather-and-road-conditions/",
+            "title": "Ladakh Spiti Zanskar Sept 2026: Roads OPEN | Weather",
+            "kind": "blog",
+            "opened": true,
+            "source_date": "2026-10-09",
+            "accessed": "2026-10-17"
+          },
+          {
+            "url": "https://www.pmindia.gov.in/en/news_updates/pm-to-inaugurate-and-dedicate-five-development-projects-worth-around-%E2%82%B93350-crore-in-ladakh-on-15-october/",
+            "title": "PM to Inaugurate and Dedicate Five Development Projects Worth Around ₹3,350 Crore in Ladakh on 15 October",
+            "kind": "official",
+            "opened": true,
+            "source_date": "2026-10-14",
+            "accessed": "2026-10-17"
+          },
+          {
+            "url": "https://www.pmindia.gov.in/en/news_updates/pms-speech-during-the-launch-of-development-projects-in-ladakh-via-video-conferencing/",
+            "title": "PM’s speech during the launch of development projects in Ladakh via Video Conferencing",
+            "kind": "official",
+            "opened": true,
+            "source_date": "2026-10-15",
+            "accessed": "2026-10-17"
+          }
+        ]
+      },
+      {
+        "year": 2025,
+        "connected": null,
+        "open_to_motorcycles": null,
+        "closed": null,
+        "note": "Nerak to Padum closed on 17 June after a washout at Lingshed nallah and reopened on 20 June, per a forum quoting Leh disaster authority orders.",
+        "sources": [
+          {
+            "url": "https://www.tripadvisor.in/ShowTopic-g297624-i10472-k15373032-NPD_Road_Update-Ladakh.html",
+            "title": "NPD Road Update - Ladakh Forum - Tripadvisor",
+            "kind": "forum",
+            "opened": false,
+            "source_date": null,
+            "accessed": "2026-10-17"
+          }
+        ]
+      },
+      {
+        "year": 2024,
+        "connected": "2024-03-25",
+        "open_to_motorcycles": null,
+        "closed": null,
+        "note": "BRO completed the connection on 25 March, working from the frozen Zanskar river in January. A Zanskar councillor expected year-round links to Leh. About 201 of 298 km was blacktopped by December.",
+        "sources": [
+          {
+            "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2016417",
+            "title": "BRO connects strategic Nimmu-Padam-Darcha road in Ladakh",
+            "kind": "official",
+            "opened": true,
+            "source_date": "2024-03-26",
+            "accessed": "2026-10-17"
+          },
+          {
+            "url": "https://www.tribuneindia.com/news/himachal/boost-to-all-weather-connectivity-to-leh-darcha-nimmu-road-opens-605098",
+            "title": "Boost to all-weather connectivity to Leh, Darcha-Nimmu road opens",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2024-03-29",
+            "accessed": "2026-10-17"
+          },
+          {
+            "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2088180",
+            "title": "Year End Review 2024 (Ministry of Defence)",
+            "kind": "official",
+            "opened": true,
+            "source_date": "2024-12-26",
+            "accessed": "2026-10-17"
+          }
+        ]
+      },
+      {
+        "year": 2023,
+        "connected": null,
+        "open_to_motorcycles": null,
+        "closed": null,
+        "note": "In January the Zanskar sub-divisional magistrate asked BRO to clear the road from Zangla for winter-festival visitors, who were arriving on the Chadar trek.",
+        "sources": [
+          {
+            "url": "https://ladakh.gov.in/sdm-zanskar-inspects-condition-of-nimmu-padum-darcha-road/",
+            "title": "SDM Zanskar inspects condition of Nimmu–Padum–Darcha road",
+            "kind": "official",
+            "opened": true,
+            "source_date": "2023-01-30",
+            "accessed": "2026-10-17"
+          }
+        ]
+      }
+    ]
+  },
+  "authorities": [
+    {
+      "office": "Border Roads Organisation, Project Yojak",
+      "announces": "Builds and maintains the road; took it over from Project Vijayak around 2021",
+      "stretch": "Nimmu to Padum, as part of the whole Nimmu–Padum–Darcha road",
+      "channel": "Statements to the press; no status page found",
+      "url": "https://bro.gov.in/",
+      "source": {
+        "url": "https://ladakh.gov.in/cec-dr-jaffer-visits-nimmu-padum-darcha-road-till-last-point-takes-assessment-of-road-construction/",
+        "title": "CEC Dr Jaffer visits Nimmu–Padum–Darcha road till last point, takes assessment of road construction",
+        "kind": "official",
+        "opened": true,
+        "source_date": "2024-03-15",
+        "accessed": "2026-10-17"
+      }
+    },
+    {
+      "office": "District Disaster Management Authority, Leh",
+      "announces": "Closes and reopens the road after damage",
+      "stretch": "Nerak to Padum",
+      "channel": "Advisories, seen quoted on a travel forum; official channel not found",
+      "url": "https://leh.nic.in/",
+      "source": {
+        "url": "https://www.tripadvisor.in/ShowTopic-g297624-i10472-k15373032-NPD_Road_Update-Ladakh.html",
+        "title": "NPD Road Update - Ladakh Forum - Tripadvisor",
+        "kind": "forum",
+        "opened": false,
+        "source_date": null,
+        "accessed": "2026-10-17"
+      }
+    },
+    {
+      "office": "Traffic Police, Ladakh Police",
+      "announces": "Traffic management; headquartered in Kargil",
+      "stretch": "Leh to Nimmu and Leh district roads",
+      "channel": "Website and social media accounts",
+      "url": "https://police.ladakh.gov.in/pages/traffic.html",
+      "source": {
+        "url": "https://police.ladakh.gov.in/pages/traffic.html",
+        "title": "Traffic Police, Ladakh Police",
+        "kind": "official",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-09-28"
+      }
+    },
+    {
+      "office": "Sub-Divisional Magistrate, Zanskar",
+      "announces": "Inspected the road at Pidmo and asked BRO to clear it, January 2023",
+      "stretch": "Pidmo and Zangla",
+      "channel": "Press releases on the Ladakh administration website",
+      "url": "https://ladakh.gov.in/sdm-zanskar-inspects-condition-of-nimmu-padum-darcha-road/",
+      "source": {
+        "url": "https://ladakh.gov.in/sdm-zanskar-inspects-condition-of-nimmu-padum-darcha-road/",
+        "title": "SDM Zanskar inspects condition of Nimmu–Padum–Darcha road",
+        "kind": "official",
+        "opened": true,
+        "source_date": "2023-01-30",
+        "accessed": "2026-10-17"
+      }
+    },
+    {
+      "office": "Zanskar district administration, Padum",
+      "announces": "District formed on 27 April 2026; its road announcements were not found",
+      "stretch": "Zangla to Padum",
+      "channel": "Not found",
+      "url": null,
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/Zanskar_district",
+        "title": "Zanskar district",
+        "kind": "encyclopedia",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-10-17"
+      }
+    }
+  ],
+  "hazards": [
+    {
+      "title": "Rough, unfinished stretches between Padum and Nimmu",
+      "detail": "A 2026 guide says the road is not uniformly paved and the surface between Padum and Nimmu is variable, with widening and surfacing still under way.",
+      "months": [],
+      "source": {
+        "url": "https://travelcoffee.in/blog/nimmu-padum-darcha-road-manali-to-zanskar",
+        "title": "The New Manali to Zanskar Road: Nimmu Padum Darcha Route Explained (2026)",
+        "kind": "operator",
+        "opened": true,
+        "source_date": "2026-09-05",
+        "accessed": "2026-10-17"
+      }
+    },
+    {
+      "title": "Road work, slides and snow can stop traffic suddenly",
+      "detail": "Snow, rain, landslides and active road work can change movement at short notice; guides advise keeping buffer days.",
+      "months": [],
+      "source": {
+        "url": "https://travelcoffee.in/blog/nimmu-padum-darcha-road-manali-to-zanskar",
+        "title": "The New Manali to Zanskar Road: Nimmu Padum Darcha Route Explained (2026)",
+        "kind": "operator",
+        "opened": true,
+        "source_date": "2026-09-05",
+        "accessed": "2026-10-17"
+      }
+    },
+    {
+      "title": "Flash flood washout at Lingshed nallah",
+      "detail": "Water from Lingshed nallah cut the road at km 87.2, between Nerak and Padum, on 17 June 2025; surges may recur.",
+      "months": [
+        6
+      ],
+      "source": {
+        "url": "https://www.tripadvisor.in/ShowTopic-g297624-i10472-k15373032-NPD_Road_Update-Ladakh.html",
+        "title": "NPD Road Update - Ladakh Forum - Tripadvisor",
+        "kind": "forum",
+        "opened": false,
+        "source_date": null,
+        "accessed": "2026-10-17"
+      }
+    },
+    {
+      "title": "Snow in Zanskar by mid-October",
+      "detail": "Snow was falling in Zanskar on 15 October 2026, the day the road was dedicated.",
+      "months": [
+        10
+      ],
+      "source": {
+        "url": "https://www.pmindia.gov.in/en/news_updates/pms-speech-during-the-launch-of-development-projects-in-ladakh-via-video-conferencing/",
+        "title": "PM’s speech during the launch of development projects in Ladakh via Video Conferencing",
+        "kind": "official",
+        "opened": true,
+        "source_date": "2026-10-15",
+        "accessed": "2026-10-17"
+      }
+    },
+    {
+      "title": "Mobile signal only near Padum",
+      "detail": "A 2026 guide says BSNL and Jio postpaid work only within about 15 to 20 km of Padum; Airtel and Vi have little or none.",
+      "months": [],
+      "source": {
+        "url": "https://discoverwithdheeraj.com/plan-journey-zanskar-valley/",
+        "title": "Zanskar Valley Trip 2026: Routes, Budget and Permits",
+        "kind": "blog",
+        "opened": true,
+        "source_date": "2026-08-18",
+        "accessed": "2026-10-17"
+      }
+    },
+    {
+      "title": "Prepaid mobile connections from other states do not work",
+      "detail": "A blogger reports that only postpaid connections from outside work in Jammu and Kashmir and in Ladakh; no official source was found.",
+      "months": [],
+      "source": {
+        "url": "https://discoverwithdheeraj.com/mobile-phone-connectivity-in-leh-ladakh/",
+        "title": "Mobile phone connectivity in Leh Ladakh",
+        "kind": "blog",
+        "opened": true,
+        "source_date": "2026-08-14",
+        "accessed": "2026-09-28"
+      }
+    },
+    {
+      "title": "Fuel at Padum is limited",
+      "detail": "Fuel at Padum is sometimes rationed, and a guide suggests carrying spare. No written source found listing a pump between Nimmu and Padum.",
+      "months": [],
+      "source": {
+        "url": "https://discoverwithdheeraj.com/plan-journey-zanskar-valley/",
+        "title": "Zanskar Valley Trip 2026: Routes, Budget and Permits",
+        "kind": "blog",
+        "opened": true,
+        "source_date": "2026-08-18",
+        "accessed": "2026-10-17"
+      }
+    },
+    {
+      "title": "Altitude sickness can be fatal",
+      "detail": "Leh's tourist portal warns that high-altitude pulmonary and cerebral oedema can be life-threatening.",
+      "months": [],
+      "source": {
+        "url": "https://www.lahdclehpermit.in/",
+        "title": "Leh District Tourist Management System",
+        "kind": "official",
+        "opened": true,
+        "source_date": null,
+        "accessed": "2026-10-17"
+      }
+    }
+  ],
+  "videos": [
+    {
+      "url": "https://www.youtube.com/watch?v=LAiU6Lb6D6w",
+      "title": "New Route to Zanskar! Leh to Padum via Nimmu–Chilling | Ladakh Ride Ep.7 |",
+      "channel": "The Young Monk",
+      "stretch": null,
+      "filmed": null,
+      "bike": null
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=CF2o5nyX3mw",
+      "title": "ZANSKAR- THIS PLACE IS NOT ON MAPS | PADUM–NIMMU CHILLING ROAD | EP 3| LADAKH BIKE RIDE",
+      "channel": "Twin Helmet Tales ",
+      "stretch": "Padum to Nimmu",
+      "filmed": null,
+      "bike": null
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=rk06ZJUAuDo",
+      "title": "Insanely Beautiful Zanskar Valley | Padum to Leh via Nimmo | Ladakh Ride 2026 | Ep-7",
+      "channel": "Vaibhav Sharma",
+      "stretch": null,
+      "filmed": "2026",
+      "bike": null
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=N5DIiNRmANk",
+      "title": "RIDING THROUGH THE DANGEROUS VALLEY OF LADAKH | PADUM TO LEH ON HONDA CB350RS",
+      "channel": "PTR Deep",
+      "stretch": null,
+      "filmed": null,
+      "bike": "Honda CB350RS"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=u8iJJV_8LdU",
+      "title": "Padum to Leh in Just 3 Hours! But Then the Front Brake Blew Up... (BMW G310R)",
+      "channel": "Ride With Shivu",
+      "stretch": null,
+      "filmed": null,
+      "bike": "BMW G 310 R"
+    }
+  ],
+  "gaps": [
+    "No official or news source says whether private vehicles and motorcycles are formally allowed between Nimmu and Padum; guides and riders' videos show them using it in 2025 and 2026.",
+    "No official order found for movement days or time windows between Nimmu and Padum; July 2026 reports conflict.",
+    "No official source says whether the road from Leh to Padum will be kept open in winter 2026–27; a Zanskar councillor expected year-round links in 2024, and guides still call the Chadar trek the winter route.",
+    "No dated official opening or closing for traffic was found for any year; 15 October 2026 was a dedication, not a traffic order.",
+    "How much of the Nimmu to Padum stretch is blacktopped in 2026 was not found; the last official figure is about 201 of 298 km for the whole road, December 2024. An encyclopedia calls the whole road paved; 2026 guides call it rough in patches.",
+    "No source names a pass between Leh and Padum; the government says the whole road crosses only Shinkun La, beyond Padum. Padum's altitude (3,669 m) is above the open map's 3,600 m top.",
+    "No source found for rockfall or slides specific to the Zanskar gorge between Chilling and Nerak, or the months they occur.",
+    "No written source lists fuel pumps between Leh and Padum; the 156 km gap is from the open map only.",
+    "No source found for mobile signal in the gorge between Nimmu and Zangla.",
+    "No source names a check post between Leh and Padum.",
+    "The Lingshed nallah closure of June 2025 comes from a forum quoting Leh disaster authority orders; the forum page could not be opened and the orders were not found.",
+    "No official channel found where the Leh disaster authority, Leh police or the new Zanskar district post status for this road; whether District Police Kargil still covers the Zanskar end was not established.",
+    "Whether foreign citizens need a Protected Area Permit for Chilling to Padum is not stated on any official page found.",
+    "Whether the Leh tourist fee applies to a Leh to Padum trip is unclear: the portal covers tourists visiting Leh, while a blogger says Zanskar-only trips need none.",
+    "Whether the restriction on rental motorcycles from outside Ladakh applies on this road was not found.",
+    "Usual season is a blogger's for Zanskar generally, not for this road.",
+    "Usual days rests on a 2024 newspaper estimate; the Prime Minister said a 12-hour journey now takes about 3 hours without naming it.",
+    "Video filming dates are not stated except 2026 in one title; four of the five run from Padum towards Leh."
+  ]
+}

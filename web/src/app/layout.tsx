@@ -32,7 +32,7 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://rideplanner.in"),
   title: { default: "Meel · dated facts for Indian motorcycle routes", template: "%s · Meel" },
   description:
-    "Fuel gaps, permits, passes and night halts for fifty Indian motorcycle routes. Every fact shows where it came from and when it was last confirmed.",
+    "Fuel gaps, permits, passes and night halts for 51 Indian motorcycle routes. Every fact shows where it came from and when it was last confirmed.",
   applicationName: "Meel",
   openGraph: { siteName: "Meel", type: "website", locale: "en_IN" },
   // Big picture cards when a link is shared. Meel's own card is src/app/opengraph-image.tsx.

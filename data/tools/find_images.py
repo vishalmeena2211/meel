@@ -40,6 +40,7 @@ QUERIES = {
     "umling-la": ["Umling La", "Hanle Indian Astronomical Observatory", "Changthang Ladakh"],
     "darcha-shinku-la-padum": ["Shingo La", "Phugtal Monastery", "Zanskar valley", "Padum"],
     "kargil-padum": ["Drang Drung Glacier", "Pensi La", "Rangdum", "Suru valley"],
+    "leh-padum": ["Indus Zanskar confluence", "Zanskar River", "Chilling Ladakh", "Zangla", "Stongde Monastery"],
     "kashmir-valley": ["Gulmarg", "Pahalgam", "Sonamarg", "Dal Lake"],
     "gurez-valley": ["Gurez", "Habba Khatoon peak", "Razdan Pass"],
     "mughal-road": ["Mughal Road Kashmir", "Pir Ki Gali", "Peer Ki Gali"],

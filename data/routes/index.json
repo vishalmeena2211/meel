@@ -206,7 +206,7 @@
     "Padum"
    ],
    "distance_km": 144.6,
-   "facts": 46,
+   "facts": 47,
    "highest_m": 5091,
    "image": "darcha-shinku-la-padum-small.jpg",
    "has_line": true
@@ -229,9 +229,34 @@
     "Padum"
    ],
    "distance_km": 231.4,
-   "facts": 39,
+   "facts": 40,
    "highest_m": 4400,
    "image": "kargil-padum-small.jpg",
+   "has_line": true
+  },
+  {
+   "slug": "leh-padum",
+   "name": "Leh to Padum",
+   "region": "zanskar-kargil",
+   "region_name": "Zanskar and Kargil",
+   "batch": 1,
+   "terrain": "mountain",
+   "level": "basic",
+   "one_line": "Ladakh, from Leh along the Indus to Nimmu, then up the Zanskar river gorge past Chilling and Nerak to Padum",
+   "places": [
+    "Leh",
+    "Nimmu",
+    "Chilling",
+    "Nerak",
+    "Pidmo",
+    "Zangla",
+    "Stongde",
+    "Padum"
+   ],
+   "distance_km": 191.7,
+   "facts": 55,
+   "highest_m": 3669,
+   "image": "leh-padum-small.jpg",
    "has_line": true
   },
   {
@@ -725,7 +750,7 @@
     "Mon"
    ],
    "distance_km": 421.5,
-   "facts": 82,
+   "facts": 83,
    "highest_m": 1665,
    "image": "nagaland-small.jpg",
    "has_line": true

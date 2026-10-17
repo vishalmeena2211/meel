@@ -62,6 +62,12 @@ ROUTES = [
          places=[("Kargil", "Kargil, Ladakh"), ("Sankoo", "Sankoo, Kargil"), ("Panikhar", "Panikhar, Kargil"),
                  ("Rangdum", "Rangdum"), ("Pensi La", "Pensi La"), ("Padum", "Padum, Zanskar")],
          passes=["Pensi La"]),
+    # Added 17 October 2026: the Nimmu to Padum part of the Nimmu–Padum–Darcha road, opened on 15 October 2026.
+    # Darcha to Padum is its own route above, so the two together are the whole road.
+    dict(slug="leh-padum", name="Leh to Padum", region="zanskar-kargil", batch=1, terrain="mountain",
+         places=[("Leh", "Leh, Ladakh"), ("Nimmu", "Nimmoo, Leh"), ("Chilling", "Chilling, Leh"),
+                 ("Nerak", "Nerak, Zanskar"), ("Pidmo", "Pidmo, Zanskar"), ("Zangla", "Zangla, Zanskar"),
+                 ("Stongde", "Stongde, Zanskar"), ("Padum", "Padum, Zanskar")]),
     # ── Kashmir and Jammu ──────────────────────────────────────────────────
     dict(slug="kashmir-valley", name="Kashmir valley", region="kashmir-jammu", batch=1, terrain="mountain",
          places=[("Srinagar", "Srinagar, Jammu and Kashmir"), ("Tangmarg", "Tangmarg"), ("Gulmarg", "Gulmarg"),
@@ -251,5 +257,5 @@ ROUTES = [
                  ("Delhi", "New Delhi")]),
 ]
 
-assert len(ROUTES) == 50, len(ROUTES)
-assert len({r["slug"] for r in ROUTES}) == 50
+assert len(ROUTES) == 51, len(ROUTES)
+assert len({r["slug"] for r in ROUTES}) == 51

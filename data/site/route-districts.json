@@ -5,7 +5,7 @@
   "url": "https://www.wikidata.org/wiki/Property:P12746"
  },
  "note": "The districts each road line passes through, between which kilometres, as the open map names them. Positions every 20 km (40 km on a very long route) and at every named place, so a district the road crosses for only a few kilometres can be missed.",
- "fetched": "2026-10-07",
+ "fetched": "2026-10-17",
  "source": {
   "service": "Nominatim",
   "data": "OpenStreetMap contributors",
@@ -2809,6 +2809,36 @@
     "km_from": 0.0,
     "km_to": 96.2,
     "lgd": "9"
+   }
+  ],
+  "leh-padum": [
+   {
+    "district": "Leh district",
+    "state": "Ladakh",
+    "km_from": 0.0,
+    "km_to": 120.1,
+    "lgd": "9"
+   },
+   {
+    "district": "Sham",
+    "state": "Ladakh",
+    "km_from": 66.3,
+    "km_to": 66.3,
+    "lgd": null
+   },
+   {
+    "district": "Zanskar",
+    "state": "Ladakh",
+    "km_from": 140.0,
+    "km_to": 180.1,
+    "lgd": null
+   },
+   {
+    "district": "Kargil district",
+    "state": "Ladakh",
+    "km_from": 160.3,
+    "km_to": 191.7,
+    "lgd": "6"
    }
   ]
  }

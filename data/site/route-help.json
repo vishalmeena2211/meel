@@ -1,6 +1,6 @@
 {
  "note": "Hospitals and police stations drawn on the open map within 2 km of the road line, at most two in each 10 km of road. Nobody has checked them. A place missing from the map is missing here.",
- "fetched": "2026-10-07",
+ "fetched": "2026-10-17",
  "source": {
   "service": "Overpass API",
   "data": "OpenStreetMap contributors",
@@ -84735,6 +84735,65 @@
     "from_km": 0.0,
     "to_km": 96.2,
     "gap_km": 96.2
+   }
+  },
+  "leh-padum": {
+   "hospitals": [
+    {
+     "name": "Sonam Norboo Memorial Hospital Leh",
+     "km_from_start": 1.7,
+     "off_road_m": 90,
+     "lat": 34.15394,
+     "lon": 77.58048,
+     "osm_url": "https://www.openstreetmap.org/way/27761109"
+    },
+    {
+     "name": "Army Hospital Leh",
+     "km_from_start": 2.2,
+     "off_road_m": 1374,
+     "lat": 34.16143,
+     "lon": 77.56646,
+     "osm_url": "https://www.openstreetmap.org/way/158343131"
+    },
+    {
+     "name": "Community Health Center Padum",
+     "km_from_start": 191.7,
+     "off_road_m": 168,
+     "lat": 33.47032,
+     "lon": 76.87716,
+     "osm_url": "https://www.openstreetmap.org/way/1116132420"
+    }
+   ],
+   "police": [
+    {
+     "name": "Police station Leh",
+     "km_from_start": 0.0,
+     "off_road_m": 326,
+     "lat": 34.16602,
+     "lon": 77.58252,
+     "osm_url": "https://www.openstreetmap.org/node/9848099392"
+    },
+    {
+     "name": "SSP and FRO",
+     "km_from_start": 0.4,
+     "off_road_m": 252,
+     "lat": 34.16088,
+     "lon": 77.58867,
+     "osm_url": "https://www.openstreetmap.org/node/2575456627"
+    },
+    {
+     "name": "Check post",
+     "km_from_start": 156.9,
+     "off_road_m": 8,
+     "lat": 33.65652,
+     "lon": 76.98148,
+     "osm_url": "https://www.openstreetmap.org/node/11199214539"
+    }
+   ],
+   "hospital_gap": {
+    "from_km": 2.2,
+    "to_km": 191.7,
+    "gap_km": 189.5
    }
   }
  }
