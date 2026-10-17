@@ -1,0 +1,65 @@
+# After each production deploy, tells Bing and the other search engines that share IndexNow which pages changed,
+# so they fetch them now instead of whenever they next pass by. ChatGPT's search leans on Bing's index.
+# See .github/scripts/tell_search_engines.py.
+#
+# Vercel reports each deploy to GitHub; this runs when it reports a production deploy as ready. "Run workflow" on
+# the Actions tab sends every page in the sitemap instead, which is how the first list was sent.
+name: Tell search engines
+
+on:
+  deployment_status:
+  workflow_dispatch:
+    inputs:
+      all:
+        description: "Send every page in the sitemap, not only the changed ones"
+        type: boolean
+        default: true
+
+permissions:
+  contents: read
+  deployments: read
+
+concurrency:
+  group: tell-search-engines
+  cancel-in-progress: false
+
+jobs:
+  tell:
+    if: >-
+      github.event_name == 'workflow_dispatch' ||
+      (github.event.deployment_status.state == 'success' && github.event.deployment.environment == 'Production')
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Send every page
+        if: github.event_name == 'workflow_dispatch' && inputs.all
+        run: python3 .github/scripts/tell_search_engines.py --all
+
+      # The deploy before this one is the newest production deploy, made earlier, that Vercel reported as ready.
+      - name: Send the pages this deploy changed
+        if: github.event_name == 'deployment_status'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+          THIS_ID: ${{ github.event.deployment.id }}
+          THIS_MADE: ${{ github.event.deployment.created_at }}
+          THIS_SHA: ${{ github.event.deployment.sha }}
+        run: |
+          base=""
+          for id in $(gh api "repos/$GH_REPO/deployments?environment=Production&per_page=30" \
+                        --jq ".[] | select(.id != $THIS_ID and .created_at < \"$THIS_MADE\") | .id"); do
+            if [ "$(gh api "repos/$GH_REPO/deployments/$id/statuses?per_page=1" --jq '.[0].state')" = "success" ]; then
+              base=$(gh api "repos/$GH_REPO/deployments/$id" --jq .sha)
+              break
+            fi
+          done
+          if [ -z "$base" ]; then
+            echo "No earlier production deploy was found, so there is nothing to compare with."
+            exit 0
+          fi
+          echo "Comparing $base with $THIS_SHA"
+          python3 .github/scripts/tell_search_engines.py "$base" "$THIS_SHA"
