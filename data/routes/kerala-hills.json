@@ -10876,19 +10876,19 @@
   {
    "id": "rule:munnar-gap-road-rain-closures",
    "kind": "timing",
-   "title": "Munnar Gap Road: night closures in heavy rain",
-   "detail": "The Idukki district collector shuts the Gap Road at night, or fully after a slide, whenever a rain alert is in force. Parking on it is banned too.",
+   "title": "Munnar Gap Road: night travel bans on rain alerts",
+   "detail": "On several 2025 orange-alert days the Idukki collector banned night travel and parking on the Gap Road. Those orders were not found online, and no 2026 ban was found.",
    "applies_to": "All vehicles",
    "set_by": "District Collector, Idukki",
-   "official_url": null,
-   "has_official_order": true,
+   "official_url": "https://idukki.nic.in/en/document-category/disaster-management/",
+   "has_official_order": false,
    "source": {
-    "url": "https://www.onmanorama.com/news/kerala/2025/06/13/night-travel-banned-on-munnar-gap-road-until-june-17.html",
-    "title": "Night travel banned on Munnar gap road until June 17",
+    "url": "https://www.twentyfournews.com/2025/08/16/night-travel-ban-on-munnar-gap-road-on-kochi-dhanushkodi-national-highway.html",
+    "title": "Night travel ban on Munnar Gap Road on Kochi-Dhanushkodi National Highway",
     "kind": "news",
     "opened": true,
-    "source_date": "2025-06-13",
-    "accessed": "2026-09-28"
+    "source_date": "2025-08-16",
+    "accessed": "2026-10-17"
    },
    "history": [
     {
@@ -10929,26 +10929,62 @@
     },
     {
      "date": "2025-06-13",
-     "change": "Night travel banned until 17 June under an orange rain alert.",
+     "change": "Night travel banned until 17 June under an orange rain alert; parking banned day and night.",
      "source": {
       "url": "https://www.onmanorama.com/news/kerala/2025/06/13/night-travel-banned-on-munnar-gap-road-until-june-17.html",
       "title": "Night travel banned on Munnar gap road until June 17",
       "kind": "news",
       "opened": true,
       "source_date": "2025-06-13",
-      "accessed": "2026-09-28"
+      "accessed": "2026-10-17"
      }
     },
     {
-     "date": "2025-06-25",
-     "change": "Night travel banned again for a day of very heavy rain.",
+     "date": "2025-06-26",
+     "change": "Night travel banned again for a day of very heavy rain; parking banned day and night.",
      "source": {
       "url": "https://www.onmanorama.com/news/kerala/2025/06/25/idukki-rain-munnar-gap-road-traffic-ban.html",
       "title": "Night travel banned on Munnar gap road today",
       "kind": "news",
       "opened": true,
-      "source_date": "2025-06-25",
-      "accessed": "2026-09-28"
+      "source_date": "2025-06-26",
+      "accessed": "2026-10-17"
+     }
+    },
+    {
+     "date": "2025-08-16",
+     "change": "Night travel and parking banned on the Gap Road for two nights under an orange alert.",
+     "source": {
+      "url": "https://www.twentyfournews.com/2025/08/16/night-travel-ban-on-munnar-gap-road-on-kochi-dhanushkodi-national-highway.html",
+      "title": "Night travel ban on Munnar Gap Road on Kochi-Dhanushkodi National Highway",
+      "kind": "news",
+      "opened": true,
+      "source_date": "2025-08-16",
+      "accessed": "2026-10-17"
+     }
+    },
+    {
+     "date": "2026-06-05",
+     "change": "The collector's order for the 6 June orange alert stopped water sports, jeep safaris and adventure trips and asked people to limit hill-road travel; it named no Gap Road ban.",
+     "source": {
+      "url": "https://cdn.s3waas.gov.in/s3757b505cfd34c64c85ca5b5690ee5293/uploads/2026/06/17806583717790.pdf",
+      "title": "Orange Alert Idukki District : Precaution – 06 June 2026",
+      "kind": "official",
+      "opened": true,
+      "source_date": "2026-06-05",
+      "accessed": "2026-10-17"
+     }
+    },
+    {
+     "date": "2026-07-29",
+     "change": "Under an orange alert the collector curbed traffic near CSI Church in Munnar and cut a stretch near Head Works Dam to one lane after a slide; the Gap Road was not named.",
+     "source": {
+      "url": "https://www.onmanorama.com/news/kerala/2026/07/29/orange-alert-in-idukki-traffic-curbs-imposed-on-kochi-dhanushkodi-nh-in-munnar.html",
+      "title": "Orange alert in Idukki: Traffic curbs imposed on Kochi–Dhanushkodi NH in Munnar",
+      "kind": "news",
+      "opened": true,
+      "source_date": "2026-07-29",
+      "accessed": "2026-10-17"
      }
     },
     {
@@ -11290,5 +11326,5 @@
  "counts": {
   "facts": 251
  },
- "built": "2026-10-15"
+ "built": "2026-10-17"
 }

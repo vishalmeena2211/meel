@@ -52,19 +52,19 @@
     {
       "id": "kashmir-tourist-spots-closed-after-april-2025",
       "kind": "permit",
-      "title": "Kashmir: tourist spots shut in 2025, reopened in phases",
-      "detail": "After the attack near Pahalgam, 48 of 87 destinations were closed. Most have reopened by order of the Lieutenant Governor; check each place before riding to it.",
+      "title": "Kashmir 2025 closures: most reopened; Baisaran shut in August 2026",
+      "detail": "Mostly reopened: spots shut after the April 2025 Pahalgam attack reopened in phases, but Baisaran was still closed in August 2026. No published order found; check each place.",
       "applies_to": "All tourists",
       "set_by": "Lieutenant Governor's administration, Jammu and Kashmir",
       "official_url": null,
-      "has_official_order": true,
+      "has_official_order": false,
       "source": {
-        "url": "https://www.outlooktraveller.com/News/jammu-and-kashmir-reopens-14-tourist-spots-after-2025-pahalgam-attack",
-        "title": "Jammu and Kashmir reopens 14 tourist spots after 2025 Pahalgam attack",
+        "url": "https://www.greaterkashmir.com/politics/rafi-mir-demands-reopening-of-baisaran-for-tourists-seeks-relief-for-local-stakeholders-12237684",
+        "title": "Rafi Mir demands reopening of Baisaran for tourists, seeks relief for local stakeholders",
         "kind": "news",
         "opened": true,
-        "source_date": "2026-02-19",
-        "accessed": "2026-09-28"
+        "source_date": "2026-08-07",
+        "accessed": "2026-10-17"
       },
       "history": [
         {
@@ -80,6 +80,18 @@
           }
         },
         {
+          "date": "2025-06-14",
+          "change": "Sixteen spots reopened, among them Betaab Valley, Pahalgam's parks and the Verinag, Kokernag and Achabal gardens.",
+          "source": {
+            "url": "https://www.greaterkashmir.com/front-page-2/green-signal-for-tourism-jk-reopens-16-tourist-spots/",
+            "title": "GREEN SIGNAL FOR TOURISM: J&K reopens 16 tourist spots",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2025-06-15",
+            "accessed": "2026-10-17"
+          }
+        },
+        {
           "date": "2025-07",
           "change": "Gurez reopened to local and non-local tourists.",
           "source": {
@@ -92,15 +104,27 @@
           }
         },
         {
-          "date": "2026-02",
-          "change": "Fourteen more reopened, among them Thajwas Glacier, Pir Ki Gali and Dubjan.",
+          "date": "2025-09-29",
+          "change": "Twelve more reopened, seven in Kashmir including Aru Valley and five in Jammu division.",
           "source": {
-            "url": "https://www.outlooktraveller.com/News/jammu-and-kashmir-reopens-14-tourist-spots-after-2025-pahalgam-attack",
-            "title": "Jammu and Kashmir reopens 14 tourist spots after 2025 Pahalgam attack",
+            "url": "https://www.tribuneindia.com/news/j-k/12-tourist-spots-shut-since-pahalgam-attack-in-jk-to-open-from-september-29",
+            "title": "12 tourist spots shut since Pahalgam attack in J&K to open from September 29",
             "kind": "news",
             "opened": true,
-            "source_date": "2026-02-19",
-            "accessed": "2026-09-28"
+            "source_date": "2025-09-27",
+            "accessed": "2026-10-17"
+          }
+        },
+        {
+          "date": "2026-02-16",
+          "change": "Fourteen more reopened, among them Thajwas Glacier, Pir Ki Gali and Dubjan; Gurez, Athwatoo, Bangus and Ramkund were to follow after snow clearance.",
+          "source": {
+            "url": "https://www.dailyexcelsior.com/lg-sinha-orders-reopening-of-14-tourist-spots-across-jammu-and-kashmir/",
+            "title": "Asia's Largest Tulip Garden Among 14 Tourist Spots To Be Reopened In J&K, LG Sinha Announces",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2026-02-16",
+            "accessed": "2026-10-17"
           }
         },
         {
@@ -113,6 +137,18 @@
             "opened": true,
             "source_date": "2026-04-08",
             "accessed": "2026-09-28"
+          }
+        },
+        {
+          "date": "2026-08-07",
+          "change": "Baisaran meadow near Pahalgam reported still closed to tourists, with local stakeholders asking for it to reopen.",
+          "source": {
+            "url": "https://www.greaterkashmir.com/politics/rafi-mir-demands-reopening-of-baisaran-for-tourists-seeks-relief-for-local-stakeholders-12237684",
+            "title": "Rafi Mir demands reopening of Baisaran for tourists, seeks relief for local stakeholders",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2026-08-07",
+            "accessed": "2026-10-17"
           }
         }
       ]

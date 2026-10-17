@@ -2459,9 +2459,9 @@
   {
    "id": "rule:lahaul-spiti-e-aagman-vehicle-pass",
    "kind": "permit",
-   "title": "Lahaul and Spiti: online vehicle pass on e-Aagman",
-   "detail": "People entering the district with a vehicle are asked to apply online. The page speaks of vehicles in general and does not mention motorcycles. Enforcement on motorcycles was not confirmed.",
-   "applies_to": "Vehicles entering Lahaul and Spiti district",
+   "title": "e-Aagman pass for Lahaul and Spiti: motorcycles included",
+   "detail": "Every vehicle entering Lahaul and Spiti, motorcycles included, applies online: an e-permit for the Atal Tunnel–Koksar–Chandratal circuit, an e-ticket elsewhere. Whether motorcycles pay was not confirmed.",
+   "applies_to": "Every vehicle entering Lahaul and Spiti district, two-wheelers included",
    "set_by": "Government of Himachal Pradesh, Department of Information Technology",
    "official_url": "https://eaagman.hp.gov.in/",
    "has_official_order": true,
@@ -2471,28 +2471,78 @@
     "kind": "official",
     "opened": true,
     "source_date": null,
-    "accessed": "2026-09-28"
+    "accessed": "2026-10-17"
    },
-   "history": []
+   "history": [
+    {
+     "date": "2021-03-23",
+     "change": "e-Aagman launched for Lahaul and Spiti to issue entry permits online, linked to number-plate cameras and boom barriers.",
+     "source": {
+      "url": "http://www.himachalpr.gov.in/OnePressRelease.aspx?Language=1&ID=21334",
+      "title": "CM launches various e-Services for Lahaul-Spiti",
+      "kind": "official",
+      "opened": true,
+      "source_date": "2021-03-23",
+      "accessed": "2026-10-17"
+     }
+    }
+   ]
   },
   {
    "id": "rule:darcha-police-registration",
    "kind": "document",
-   "title": "Registration at Darcha police check post",
-   "detail": "Travellers heading beyond Darcha register at the police post there. No written order was found; the practice is described in an encyclopedia entry.",
+   "title": "Darcha police check post: limits on travel beyond it",
+   "detail": "Police at Darcha limit travel beyond it in snow; in spring 2026 only 4x4s went to Shinku La, 9 am to 1 pm. Registration here is reported, without an order.",
    "applies_to": "All travellers beyond Darcha",
-   "set_by": "Lahaul and Spiti Police",
+   "set_by": "Lahaul and Spiti Police and district administration",
    "official_url": null,
    "has_official_order": false,
    "source": {
-    "url": "https://en.wikipedia.org/wiki/Leh%E2%80%93Manali_Highway",
-    "title": "Leh-Manali Highway",
-    "kind": "encyclopedia",
+    "url": "https://hplahaulspiti.nic.in/tourist-places-in-lahaul/",
+    "title": "Tourist Places in Lahaul",
+    "kind": "official",
     "opened": true,
     "source_date": null,
-    "accessed": "2026-09-28"
+    "accessed": "2026-10-17"
    },
-   "history": []
+   "history": [
+    {
+     "date": "2024-12-06",
+     "change": "Last day of the season for tourist traffic towards Leh: departures from Jispa allowed 9 am to 1 pm, then traffic beyond stopped for winter, with police posted at Zingzingbar.",
+     "source": {
+      "url": "https://www.tribuneindia.com/news/himachal/traffic-beyond-darcha-to-be-allowed-only-for-today/",
+      "title": "Traffic beyond Darcha to be allowed only for today",
+      "kind": "news",
+      "opened": true,
+      "source_date": "2024-12-06",
+      "accessed": "2026-10-17"
+     }
+    },
+    {
+     "date": "2026-03-29",
+     "change": "Reported on this date: only 4x4 vehicles allowed between Darcha and Shinku La, 9 am to 1 pm, on alternate days.",
+     "source": {
+      "url": "https://www.tribuneindia.com/news/himachal/lahaul-zanskar-link-revived-as-snow-clears-at-shinkula/",
+      "title": "Lahaul-Zanskar link revived as snow clears at Shinkula",
+      "kind": "news",
+      "opened": true,
+      "source_date": "2026-03-29",
+      "accessed": "2026-10-17"
+     }
+    },
+    {
+     "date": "2026-10-15",
+     "change": "Reported on this date: after fresh snow, roads from Darcha to Shinku La and from Rohtang to Sarchu closed to all vehicles.",
+     "source": {
+      "url": "https://theprint.in/india/fresh-snowfall-in-himachals-higher-reaches-several-mountain-passes-closed/3072752/",
+      "title": "Fresh snowfall in Himachal's higher reaches; several mountain passes closed",
+      "kind": "news",
+      "opened": true,
+      "source_date": "2026-10-15",
+      "accessed": "2026-10-17"
+     }
+    }
+   ]
   },
   {
    "id": "rule:shinku-la-early-season-four-wheel-drive-only",
@@ -2749,21 +2799,33 @@
   {
    "id": "rule:shinku-la-winter-closure",
    "kind": "timing",
-   "title": "Winter closure, by order or by snow",
-   "detail": "The road has been closed with the Manali to Leh highway around 20 November, or left to shut when heavy snow arrives. It is not cleared in midwinter.",
+   "title": "Shinku La winter closure: snow shuts it, reopens in spring",
+   "detail": "Snow closed Shinku La to all vehicles on 15 October 2026; no reopening date was given. It officially reopened 8 April 2025 and 10 May 2026.",
    "applies_to": "All vehicles",
-   "set_by": "Deputy Commissioner, Lahaul and Spiti; Ladakh administration",
+   "set_by": "Deputy Commissioner and police, Lahaul and Spiti; Ladakh administration",
    "official_url": "https://hplahaulspiti.nic.in/road-status/",
    "has_official_order": true,
    "source": {
-    "url": "https://www.outlooktraveller.com/News/manali-leh-highway-shut-here-are-some-alternative-routes-to-take",
-    "title": "Manali-Leh Highway closes, alternative routes to opt for",
+    "url": "https://www.tribuneindia.com/news/himachal/himachal-100-vehicles-evacuated-from-gondhla-amid-heavy-snowfall-in-lahaul-spiti/",
+    "title": "Himachal: 100 vehicles evacuated from Gondhla amid heavy snowfall in Lahaul-Spiti",
     "kind": "news",
     "opened": true,
-    "source_date": "2023-11-24",
-    "accessed": "2026-09-28"
+    "source_date": "2026-10-15",
+    "accessed": "2026-10-17"
    },
    "history": [
+    {
+     "date": "2021-11-02",
+     "change": "Closed to all vehicles from this date until summer 2022, following a notice from the Lahaul and Spiti Deputy Commissioner.",
+     "source": {
+      "url": "https://ladakh.gov.in/nimu-padum-darcha-road-via-shinkunla-closed-for-traffic-till-summer-2022/",
+      "title": "Nimu-Padum-Darcha Road via Shinkunla closed for traffic till summer 2022",
+      "kind": "official",
+      "opened": true,
+      "source_date": "2021-11-03",
+      "accessed": "2026-10-17"
+     }
+    },
     {
      "date": "2023-11-20",
      "change": "Darcha to Shinku La closed along with the Manali to Leh highway.",
@@ -2798,6 +2860,54 @@
       "opened": true,
       "source_date": "2026-05-08",
       "accessed": "2026-09-28"
+     }
+    },
+    {
+     "date": "2025-04-08",
+     "change": "Padum to Darcha road officially reopened after the winter, with travel subject to advisories.",
+     "source": {
+      "url": "https://ladakh.gov.in/padum-darcha-road-officially-reopened-for-traffic/",
+      "title": "Padum-Darcha road officially reopened for traffic",
+      "kind": "official",
+      "opened": true,
+      "source_date": "2025-04-09",
+      "accessed": "2026-10-17"
+     }
+    },
+    {
+     "date": "2026-01-18",
+     "change": "Reported on this date: after midwinter tourist trips to the pass, police stopped tourist vehicles beyond Darcha following fresh snow.",
+     "source": {
+      "url": "https://www.tribuneindia.com/news/himachal/snow-shuts-darcha-shinkula-road/",
+      "title": "Snow shuts Darcha-Shinkula road",
+      "kind": "news",
+      "opened": true,
+      "source_date": "2026-01-18",
+      "accessed": "2026-10-17"
+     }
+    },
+    {
+     "date": "2026-05-10",
+     "change": "Officially opened to all vehicles, heavy and light, by the district disaster authority after snow clearance; police regulate by weather.",
+     "source": {
+      "url": "https://www.tribuneindia.com/news/himachal/strategic-darcha-shinkula-road-reopened-for-vehicles/",
+      "title": "Strategic Darcha-Shinkula road reopened for vehicles",
+      "kind": "news",
+      "opened": true,
+      "source_date": "2026-05-10",
+      "accessed": "2026-10-17"
+     }
+    },
+    {
+     "date": "2026-10-15",
+     "change": "Closed to all vehicles after continuous snowfall; further instructions promised when weather improves.",
+     "source": {
+      "url": "https://www.tribuneindia.com/news/himachal/himachal-100-vehicles-evacuated-from-gondhla-amid-heavy-snowfall-in-lahaul-spiti/",
+      "title": "Himachal: 100 vehicles evacuated from Gondhla amid heavy snowfall in Lahaul-Spiti",
+      "kind": "news",
+      "opened": true,
+      "source_date": "2026-10-15",
+      "accessed": "2026-10-17"
      }
     }
    ]
@@ -3267,5 +3377,5 @@
  "counts": {
   "facts": 43
  },
- "built": "2026-10-15"
+ "built": "2026-10-17"
 }

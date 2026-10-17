@@ -4848,18 +4848,18 @@
    "id": "rule:goa-helmet-rider-and-pillion",
    "kind": "motorcycle-rule",
    "title": "Goa: helmet compulsory for rider and pillion",
-   "detail": "Both people on a two-wheeler must wear a helmet. The Chief Minister told the assembly in January 2026 that the Transport Department has issued a circular.",
+   "detail": "Rider and pillion both. Central law makes a helmet compulsory for anyone over four on a two-wheeler; in January 2026 Goa said it would enforce the pillion rule in phases.",
    "applies_to": "All two-wheeler riders and pillion riders",
-   "set_by": "Directorate of Transport, Government of Goa, and Goa Traffic Police",
+   "set_by": "Parliament (Motor Vehicles Act, section 129); enforced by the Directorate of Transport, Government of Goa, and Goa Traffic Police",
    "official_url": null,
    "has_official_order": true,
    "source": {
-    "url": "https://www.prudentmedia.in/politics/helmets-mandatory-for-rider-and-pillion-cm/35481.html",
-    "title": "Helmets Mandatory for Rider and Pillion: CM",
-    "kind": "news",
+    "url": "https://prsindia.org/files/bills_acts/bills_parliament/2019/Motor%20Vehicles%20(Amendment)%20Act,%202019.pdf",
+    "title": "The Motor Vehicles (Amendment) Act, 2019",
+    "kind": "official",
     "opened": true,
-    "source_date": "2026-01-14",
-    "accessed": "2026-09-28"
+    "source_date": "2019-08-09",
+    "accessed": "2026-10-17"
    },
    "history": [
     {
@@ -4872,6 +4872,30 @@
       "opened": true,
       "source_date": "2017-06-21",
       "accessed": "2026-09-28"
+     }
+    },
+    {
+     "date": "2019-08-09",
+     "change": "Parliament's amendment to the Motor Vehicles Act required a helmet for everyone over four on a motorcycle, pillion included.",
+     "source": {
+      "url": "https://prsindia.org/files/bills_acts/bills_parliament/2019/Motor%20Vehicles%20(Amendment)%20Act,%202019.pdf",
+      "title": "The Motor Vehicles (Amendment) Act, 2019",
+      "kind": "official",
+      "opened": true,
+      "source_date": "2019-08-09",
+      "accessed": "2026-10-17"
+     }
+    },
+    {
+     "date": "2026-01-02",
+     "change": "Reported: Goa's State Road Safety Council decided to bring in pillion helmets in phases, with awareness first.",
+     "source": {
+      "url": "https://www.daijiworld.com/news/newsDisplay?newsID=1302541",
+      "title": "Phased helmet rule for pillion riders cleared in Goa",
+      "kind": "news",
+      "opened": true,
+      "source_date": "2026-01-02",
+      "accessed": "2026-10-17"
      }
     },
     {
@@ -5216,5 +5240,5 @@
  "counts": {
   "facts": 137
  },
- "built": "2026-10-15"
+ "built": "2026-10-17"
 }

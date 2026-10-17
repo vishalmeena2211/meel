@@ -5615,8 +5615,8 @@
   {
    "id": "rule:gandikota-fort-hours",
    "kind": "timing",
-   "title": "Gandikota fort: daytime entry, no entry fee",
-   "detail": "A travel blog gives fort hours as 9 am to 6 pm with free entry; camping and activities are charged by operators. No government page was found.",
+   "title": "Gandikota fort timings: daytime, about 9 am–6 pm",
+   "detail": "Roughly 9 am to 6 pm, according to a 2026 travel guide. Whether the fort charges entry is unclear. No government order or page giving hours was found.",
    "applies_to": "All visitors",
    "set_by": "Not stated",
    "official_url": null,
@@ -5627,7 +5627,7 @@
     "kind": "blog",
     "opened": true,
     "source_date": "2026-05",
-    "accessed": "2026-09-28"
+    "accessed": "2026-10-17"
    },
    "history": []
   }
@@ -5791,5 +5791,5 @@
  "counts": {
   "facts": 289
  },
- "built": "2026-10-15"
+ "built": "2026-10-17"
 }

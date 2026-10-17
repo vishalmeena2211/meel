@@ -6333,9 +6333,9 @@
   {
    "id": "rule:north-sikkim-toong-checkpost-cutoff",
    "kind": "timing",
-   "title": "North Sikkim: cross Toong check post by 4 pm",
-   "detail": "Reported on 11 September 2026: vehicles going up and coming down must pass the Toong (Tung) check post by 4 pm. Heavy vehicles use a separate road. Order not seen.",
-   "applies_to": "All vehicles",
+   "title": "North Sikkim: cross Toong (Tung) check post by 4 pm",
+   "detail": "Cross by 4 pm going up and coming down, under a Mangan district order reported on 11 September 2026; the order's text was not found. Carry your permit.",
+   "applies_to": "Tourist and light vehicles; heavy vehicles use a separate road",
    "set_by": "Mangan district administration",
    "official_url": null,
    "has_official_order": false,
@@ -6345,9 +6345,46 @@
     "kind": "news",
     "opened": true,
     "source_date": "2026-09-11",
-    "accessed": "2026-09-28"
+    "accessed": "2026-10-17"
    },
-   "history": []
+   "history": [
+    {
+     "date": "2025-09-08",
+     "change": "When Lachung, Yumthang and Zero Point reopened, tourists had to pass the Sanklang bridge check post by 1 pm going up and the Toong bridge by 2 pm coming back.",
+     "source": {
+      "url": "https://www.sikkim.gov.in/media/news-announcement/news-info?name=Tourism+Resumes+in+North+Sikkim+with+Key+Destinations+Welcoming+Visitors+from+September",
+      "title": "Tourism Resumes in North Sikkim with Key Destinations Welcoming Visitors from September",
+      "kind": "official",
+      "opened": true,
+      "source_date": "2025-09-07",
+      "accessed": "2026-10-17"
+     }
+    },
+    {
+     "date": "2026-03-14",
+     "change": "Tourism guidelines for the Lachen and Lachung axis: cross Toong before 4 pm both ways; permits a day ahead, valid three to six days.",
+     "source": {
+      "url": "https://www.voiceofsikkim.com/tourism-to-lachen-lachung-axis-resumes-with-new-permit-rules-and-safety-guidelines/",
+      "title": "Sikkim New Permit Rules for Visiting Gurudongmar Lake",
+      "kind": "news",
+      "opened": true,
+      "source_date": "2026-03-14",
+      "accessed": "2026-10-17"
+     }
+    },
+    {
+     "date": "2026-09-10",
+     "change": "After the Lachen road reopened, a Mangan district order set the 4 pm Toong cut-off in both directions until further notice.",
+     "source": {
+      "url": "https://thenewsmill.com/2026/09/lachen-reopens-for-tourists-with-new-vehicle-timing-rules-in-sikkim/",
+      "title": "Lachen reopens for tourists with new vehicle timing rules in Sikkim",
+      "kind": "news",
+      "opened": true,
+      "source_date": "2026-09-11",
+      "accessed": "2026-10-17"
+     }
+    }
+   ]
   },
   {
    "id": "rule:gurudongmar-two-night-minimum-claim",
@@ -6390,19 +6427,19 @@
   {
    "id": "rule:sikkim-aadhaar-not-proof-of-nationality",
    "kind": "document",
-   "title": "Sikkim: Aadhaar not accepted as proof of nationality",
-   "detail": "The official tourism page says an Aadhaar card is not accepted as proof of citizenship or nationality when applying for permits.",
+   "title": "Sikkim permits: Aadhaar not accepted, carry voter ID or passport",
+   "detail": "Not accepted for Protected Area Permits (Nathu La, Zuluk, North Sikkim). Bring passport, voter ID, driving licence or government ID, two photos; bikes apply a day ahead via registered operators.",
    "applies_to": "Indian citizens",
    "set_by": "Tourism and Civil Aviation Department, Government of Sikkim",
    "official_url": "https://www.sikkim.gov.in/department/departmentmenudetails?url=Menu%3Dtourism-civil-aviation-department%2Fgeneral-info",
    "has_official_order": true,
    "source": {
     "url": "https://www.sikkim.gov.in/department/departmentmenudetails?url=Menu%3Dtourism-civil-aviation-department%2Fgeneral-info",
-    "title": "Tourism and Civil Aviation Department: general information",
+    "title": "General Info",
     "kind": "official",
     "opened": true,
     "source_date": null,
-    "accessed": "2026-09-28"
+    "accessed": "2026-10-17"
    },
    "history": []
   },
@@ -6772,5 +6809,5 @@
  "counts": {
   "facts": 51
  },
- "built": "2026-10-15"
+ "built": "2026-10-17"
 }

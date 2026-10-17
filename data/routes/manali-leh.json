@@ -6439,9 +6439,9 @@
   {
    "id": "rule:lahaul-spiti-e-aagman-vehicle-pass",
    "kind": "permit",
-   "title": "Lahaul and Spiti: online vehicle pass on e-Aagman",
-   "detail": "People entering the district with a vehicle are asked to apply online. The page speaks of vehicles in general and does not mention motorcycles. Enforcement on motorcycles was not confirmed.",
-   "applies_to": "Vehicles entering Lahaul and Spiti district",
+   "title": "e-Aagman pass for Lahaul and Spiti: motorcycles included",
+   "detail": "Every vehicle entering Lahaul and Spiti, motorcycles included, applies online: an e-permit for the Atal Tunnel–Koksar–Chandratal circuit, an e-ticket elsewhere. Whether motorcycles pay was not confirmed.",
+   "applies_to": "Every vehicle entering Lahaul and Spiti district, two-wheelers included",
    "set_by": "Government of Himachal Pradesh, Department of Information Technology",
    "official_url": "https://eaagman.hp.gov.in/",
    "has_official_order": true,
@@ -6451,9 +6451,22 @@
     "kind": "official",
     "opened": true,
     "source_date": null,
-    "accessed": "2026-09-28"
+    "accessed": "2026-10-17"
    },
-   "history": []
+   "history": [
+    {
+     "date": "2021-03-23",
+     "change": "e-Aagman launched for Lahaul and Spiti to issue entry permits online, linked to number-plate cameras and boom barriers.",
+     "source": {
+      "url": "http://www.himachalpr.gov.in/OnePressRelease.aspx?Language=1&ID=21334",
+      "title": "CM launches various e-Services for Lahaul-Spiti",
+      "kind": "official",
+      "opened": true,
+      "source_date": "2021-03-23",
+      "accessed": "2026-10-17"
+     }
+    }
+   ]
   },
   {
    "id": "rule:manali-green-tax",
@@ -6502,21 +6515,58 @@
   {
    "id": "rule:darcha-police-registration",
    "kind": "document",
-   "title": "Registration at Darcha police check post",
-   "detail": "Travellers heading beyond Darcha register at the police post there. No written order was found; the practice is described in an encyclopedia entry.",
+   "title": "Darcha police check post: limits on travel beyond it",
+   "detail": "Police at Darcha limit travel beyond it in snow; in spring 2026 only 4x4s went to Shinku La, 9 am to 1 pm. Registration here is reported, without an order.",
    "applies_to": "All travellers beyond Darcha",
-   "set_by": "Lahaul and Spiti Police",
+   "set_by": "Lahaul and Spiti Police and district administration",
    "official_url": null,
    "has_official_order": false,
    "source": {
-    "url": "https://en.wikipedia.org/wiki/Leh%E2%80%93Manali_Highway",
-    "title": "Leh-Manali Highway",
-    "kind": "encyclopedia",
+    "url": "https://hplahaulspiti.nic.in/tourist-places-in-lahaul/",
+    "title": "Tourist Places in Lahaul",
+    "kind": "official",
     "opened": true,
     "source_date": null,
-    "accessed": "2026-09-28"
+    "accessed": "2026-10-17"
    },
-   "history": []
+   "history": [
+    {
+     "date": "2024-12-06",
+     "change": "Last day of the season for tourist traffic towards Leh: departures from Jispa allowed 9 am to 1 pm, then traffic beyond stopped for winter, with police posted at Zingzingbar.",
+     "source": {
+      "url": "https://www.tribuneindia.com/news/himachal/traffic-beyond-darcha-to-be-allowed-only-for-today/",
+      "title": "Traffic beyond Darcha to be allowed only for today",
+      "kind": "news",
+      "opened": true,
+      "source_date": "2024-12-06",
+      "accessed": "2026-10-17"
+     }
+    },
+    {
+     "date": "2026-03-29",
+     "change": "Reported on this date: only 4x4 vehicles allowed between Darcha and Shinku La, 9 am to 1 pm, on alternate days.",
+     "source": {
+      "url": "https://www.tribuneindia.com/news/himachal/lahaul-zanskar-link-revived-as-snow-clears-at-shinkula/",
+      "title": "Lahaul-Zanskar link revived as snow clears at Shinkula",
+      "kind": "news",
+      "opened": true,
+      "source_date": "2026-03-29",
+      "accessed": "2026-10-17"
+     }
+    },
+    {
+     "date": "2026-10-15",
+     "change": "Reported on this date: after fresh snow, roads from Darcha to Shinku La and from Rohtang to Sarchu closed to all vehicles.",
+     "source": {
+      "url": "https://theprint.in/india/fresh-snowfall-in-himachals-higher-reaches-several-mountain-passes-closed/3072752/",
+      "title": "Fresh snowfall in Himachal's higher reaches; several mountain passes closed",
+      "kind": "news",
+      "opened": true,
+      "source_date": "2026-10-15",
+      "accessed": "2026-10-17"
+     }
+    }
+   ]
   },
   {
    "id": "rule:manali-leh-early-season-motorcycle-bar",
@@ -7341,5 +7391,5 @@
  "counts": {
   "facts": 80
  },
- "built": "2026-10-15"
+ "built": "2026-10-17"
 }

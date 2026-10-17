@@ -4734,31 +4734,43 @@
   {
    "id": "rule:dhanushkodi-shut-on-sea-alerts",
    "kind": "timing",
-   "title": "Dhanushkodi: closed when the sea is rough",
-   "detail": "Police turn visitors back during swell and storm alerts. Read from a search summary only; the newspaper page could not be opened.",
+   "title": "Dhanushkodi: closed to tourists on rough-sea alert days",
+   "detail": "Shut only on alert days: when swell or rough-sea alerts are issued, police and the district administration turn tourists back before Arichal Munai. No published order was found.",
    "applies_to": "All visitors",
-   "set_by": "Ramanathapuram district police",
+   "set_by": "Ramanathapuram district administration; Ramanathapuram district police",
    "official_url": null,
    "has_official_order": false,
    "source": {
-    "url": "https://www.pressreader.com/india/dt-next/20260820/281522232926500",
-    "title": "State coasts on alert for swell surge; police bar tourists…",
+    "url": "https://www.tribuneindia.com/news/india/swell-surge-alert-in-kerala-tn-lakshadweep-beaches-shut-fishing-vessels-anchored/",
+    "title": "Swell surge alert in Kerala, TN, Lakshadweep; beaches shut, fishing vessels anchored",
     "kind": "news",
-    "opened": false,
+    "opened": true,
     "source_date": "2026-08-20",
-    "accessed": "2026-09-28"
+    "accessed": "2026-10-17"
    },
    "history": [
     {
-     "date": "2026-08-20",
-     "change": "Visitors barred during a swell surge alert along the coast.",
+     "date": "2024-04-01",
+     "change": "Tourists stopped on the stretch from MR Chatram to Arichal Munai after the sea turned rough; local fishermen still allowed.",
      "source": {
-      "url": "https://www.pressreader.com/india/dt-next/20260820/281522232926500",
-      "title": "State coasts on alert for swell surge; police bar tourists…",
+      "url": "https://www.dtnext.in/news/tamilnadu/tourists-visiting-dhanushkodi-temporarily-stopped-on-account-of-sudden-sea-rage-777398",
+      "title": "Sea turns rough, tourists temporarily stopped from visiting Dhanushkodi",
       "kind": "news",
-      "opened": false,
+      "opened": true,
+      "source_date": "2024-04-01",
+      "accessed": "2026-10-17"
+     }
+    },
+    {
+     "date": "2026-08-20",
+     "change": "Tourist access to Arichal Munai restricted during a swell surge alert along the Tamil Nadu coast.",
+     "source": {
+      "url": "https://www.tribuneindia.com/news/india/swell-surge-alert-in-kerala-tn-lakshadweep-beaches-shut-fishing-vessels-anchored/",
+      "title": "Swell surge alert in Kerala, TN, Lakshadweep; beaches shut, fishing vessels anchored",
+      "kind": "news",
+      "opened": true,
       "source_date": "2026-08-20",
-      "accessed": "2026-09-28"
+      "accessed": "2026-10-17"
      }
     }
    ]
@@ -4766,19 +4778,19 @@
   {
    "id": "rule:puducherry-helmets-rider-and-pillion",
    "kind": "motorcycle-rule",
-   "title": "Puducherry: helmets for rider and pillion",
-   "detail": "Police began enforcing compulsory helmets for both people on a two-wheeler in January 2025.",
+   "title": "Puducherry: helmets compulsory for rider and pillion",
+   "detail": "Rider and pillion must both wear helmets. Puducherry police have enforced this since 12 January 2025 and fine offenders. No published order was found.",
    "applies_to": "Two-wheeler riders and pillion riders",
    "set_by": "Government of Puducherry; Puducherry Police",
    "official_url": null,
-   "has_official_order": true,
+   "has_official_order": false,
    "source": {
     "url": "https://www.etvbharat.com/en/!state/helmet-rule-comes-into-force-in-puducherry-enn25011205085",
     "title": "Helmet Rule Comes Into Force In Puducherry",
     "kind": "news",
     "opened": true,
     "source_date": "2025-01-13",
-    "accessed": "2026-09-28"
+    "accessed": "2026-10-17"
    },
    "history": [
     {
@@ -5001,5 +5013,5 @@
  "counts": {
   "facts": 105
  },
- "built": "2026-10-15"
+ "built": "2026-10-17"
 }

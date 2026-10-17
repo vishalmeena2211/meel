@@ -4285,38 +4285,75 @@
   {
    "id": "rule:mussoorie-mall-road-evening-vehicle-ban",
    "kind": "timing",
-   "title": "Mussoorie Mall Road: no vehicles in the evening",
-   "detail": "An operator guide reports vehicles are kept off Mall Road from about 16:00 to 23:00, with hours changing by season. No official notice found.",
-   "applies_to": "All vehicles",
-   "set_by": "Mussoorie municipality, as reported",
+   "title": "Mussoorie Mall Road: no vehicles 4:30 pm to 10 pm",
+   "detail": "Vehicles are barred from Mall Road 4:30 pm–10 pm, says an October 2026 report; April 2026 council rules said from 5 pm. No bike exemption reported; no order found.",
+   "applies_to": "All vehicles; emergency vehicles exempt",
+   "set_by": "Mussoorie municipal council and Dehradun district administration, as reported",
    "official_url": null,
    "has_official_order": false,
    "source": {
-    "url": "https://www.waytoindia.com/travel-guide/uttarakhand/mussoorie",
-    "title": "Mussoorie Travel Guide: Best Time, How to Reach & Things to Do",
-    "kind": "operator",
+    "url": "https://www.amarujala.com/dehradun/mussoorie-high-tech-cameras-will-now-monitor-vehicles-violating-rules-on-mall-road-2026-10-16",
+    "title": "Mussoorie High-tech Cameras Will Now Monitor Vehicles Violating Rules On Mall Road",
+    "kind": "news",
     "opened": true,
-    "source_date": "2026-06",
-    "accessed": "2026-09-28"
+    "source_date": "2026-10-16",
+    "accessed": "2026-10-17"
    },
-   "history": []
+   "history": [
+    {
+     "date": "2026-04-17",
+     "change": "Reported on this date: the municipal council barred general vehicles from Mall Road after 5 pm, with limited pass-based exemptions for residents.",
+     "source": {
+      "url": "https://www.etvbharat.com/hi/state/municipal-council-has-taken-strict-decision-regarding-growing-traffic-problem-in-mussoorie-uttarakhand-news-uts26041700733",
+      "title": "मसूरी में शाम 5 बजे बाद वाहनों की आवाजाही रहेगी प्रतिबंधित, 6 बजे बाद इन्हें मिलेगी छूट",
+      "kind": "news",
+      "opened": true,
+      "source_date": "2026-04-17",
+      "accessed": "2026-10-17"
+     }
+    },
+    {
+     "date": "2026-05-02",
+     "change": "Reported on this date: the evening ban enforced at the Mall Road barrier with 20 staff deployed.",
+     "source": {
+      "url": "https://www.etvbharat.com/hi/state/entry-of-vehicles-banned-on-mussoorie-mall-road-during-restricted-hours-uts26050202458",
+      "title": "शाम 5 बजे बाद मसूरी माल रोड पर वाहनों की एंट्री बैन, 20 कर्मचारियों की हुई तैनाती, जानिये वजह",
+      "kind": "news",
+      "opened": true,
+      "source_date": "2026-05-02",
+      "accessed": "2026-10-17"
+     }
+    },
+    {
+     "date": "2026-10-16",
+     "change": "Reported on this date: ban hours given as 4:30 pm to 10 pm; administration plans number-plate cameras and three bollards to enforce them.",
+     "source": {
+      "url": "https://www.amarujala.com/dehradun/mussoorie-high-tech-cameras-will-now-monitor-vehicles-violating-rules-on-mall-road-2026-10-16",
+      "title": "Mussoorie High-tech Cameras Will Now Monitor Vehicles Violating Rules On Mall Road",
+      "kind": "news",
+      "opened": true,
+      "source_date": "2026-10-16",
+      "accessed": "2026-10-17"
+     }
+    }
+   ]
   },
   {
    "id": "rule:chakrata-foreign-citizens-restricted",
    "kind": "permit",
-   "title": "Chakrata: restricted for foreign citizens",
-   "detail": "Chakrata is a military cantonment with restricted access. A blog says foreign citizens need a permit in advance from the District Magistrate, Dehradun. Indian citizens show identity. No order found.",
+   "title": "Chakrata: foreigners need Home Ministry permission; Indians can visit",
+   "detail": "Foreigners need prior Home Ministry permission to enter Chakrata cantonment, a 2020 report says; Indians can visit. A 2026 blog names Dehradun's District Magistrate. No order found.",
    "applies_to": "Foreign citizens",
-   "set_by": "Not found; the cantonment is under the Ministry of Defence",
-   "official_url": "https://chakrata.cantt.gov.in/",
+   "set_by": "Union Ministry of Home Affairs, as reported; the cantonment is under the Ministry of Defence",
+   "official_url": null,
    "has_official_order": false,
    "source": {
-    "url": "https://en.wikipedia.org/wiki/Chakrata",
-    "title": "Chakrata",
-    "kind": "encyclopedia",
+    "url": "https://www.etvbharat.com/hindi/uttarakhand/state/dehradun/deadly-tutu-regiment-camp-in-chakrata/uttarakhand20200629163250804",
+    "title": "चकराता के इस क्षेत्र में रहते हैं 'घातक' कमांडो, जाने के लिए लेनी होती है विशेष परमिशन",
+    "kind": "news",
     "opened": true,
-    "source_date": null,
-    "accessed": "2026-09-28"
+    "source_date": "2020-06-29",
+    "accessed": "2026-10-17"
    },
    "history": [
     {
@@ -4493,5 +4530,5 @@
  "counts": {
   "facts": 35
  },
- "built": "2026-10-15"
+ "built": "2026-10-17"
 }

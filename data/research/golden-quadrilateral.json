@@ -31,21 +31,34 @@
     {
       "id": "mumbai-pune-expressway-no-two-wheelers",
       "kind": "motorcycle-rule",
-      "title": "Mumbai to Pune Expressway: no two-wheelers",
-      "detail": "Two-wheelers, three-wheelers and tractors are barred. Riders take the old national highway through Khandala and Lonavala. No government order was found.",
+      "title": "Mumbai–Pune Expressway: no two-wheelers, take old NH 48",
+      "detail": "Two-wheelers, three-wheelers and tractors are barred, the new Missing Link included. Ride the old highway, NH 48, via Khopoli, Khandala and Lonavala. No state order was found.",
       "applies_to": "Two-wheelers, three-wheelers, tractors",
       "set_by": "Maharashtra State Road Development Corporation",
       "official_url": null,
       "has_official_order": false,
       "source": {
-        "url": "https://en.wikipedia.org/wiki/Mumbai%E2%80%93Pune_Expressway",
-        "title": "Mumbai–Pune Expressway",
-        "kind": "encyclopedia",
+        "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=1777237",
+        "title": "USE OF TWO-WHEELERS ON EXPRESSWAYS",
+        "kind": "official",
         "opened": true,
-        "source_date": null,
-        "accessed": "2026-09-28"
+        "source_date": "2021-12-02",
+        "accessed": "2026-10-17"
       },
-      "history": []
+      "history": [
+        {
+          "date": "2026-05-01",
+          "change": "The Missing Link bypass of the Khandala ghat opened; two-wheelers are not allowed on it.",
+          "source": {
+            "url": "https://www.timeout.com/mumbai/news/the-new-missing-link-will-reduce-you-mumbai-pune-commute-by-up-to-30-minutes-042926",
+            "title": "After 7 Years, Mumbai-Pune's 'Missing Link' Is Ready to Roll",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2026-04-29",
+            "accessed": "2026-10-17"
+          }
+        }
+      ]
     },
     {
       "id": "delhi-mumbai-expressway-no-two-wheelers",
@@ -94,19 +107,19 @@
     {
       "id": "ahmedabad-vadodara-expressway-no-two-wheelers",
       "kind": "motorcycle-rule",
-      "title": "Ahmedabad to Vadodara Expressway: no two-wheelers",
-      "detail": "Two-wheelers of every kind have been barred since it opened. Riders use the national highway alongside. No government order was found.",
+      "title": "Ahmedabad–Vadodara Expressway: no two-wheelers, use NH 48",
+      "detail": "Two-wheelers are barred; ride NH 48 via Nadiad and Anand instead. The road ministry keeps two-wheelers off access-controlled expressways; no order naming this road was found.",
       "applies_to": "Two-wheelers",
       "set_by": "National Highways Authority of India",
       "official_url": null,
       "has_official_order": false,
       "source": {
-        "url": "https://en.wikipedia.org/wiki/Ahmedabad%E2%80%93Vadodara_Expressway",
-        "title": "Ahmedabad–Vadodara Expressway",
-        "kind": "encyclopedia",
+        "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=1777237",
+        "title": "USE OF TWO-WHEELERS ON EXPRESSWAYS",
+        "kind": "official",
         "opened": true,
-        "source_date": null,
-        "accessed": "2026-09-28"
+        "source_date": "2021-12-02",
+        "accessed": "2026-10-17"
       },
       "history": [
         {
