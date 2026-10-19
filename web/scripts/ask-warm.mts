@@ -23,12 +23,21 @@ let done = 0;
 let copied = 0;
 let failed = 0;
 for (const job of jobs) {
-  await runAsk(job, { who: "warm", loggedIn: true, warm: true }, (e) => {
-    if (e.t === "done") {
-      done += 1;
-      if (e.answer.copied) copied += 1;
-    } else if (e.t === "error") failed += 1;
-  });
+  try {
+    await runAsk(job, { who: "warm", loggedIn: true, warm: true }, (e) => {
+      if (e.t === "done") {
+        done += 1;
+        if (e.answer.copied) copied += 1;
+      } else if (e.t === "error") {
+        failed += 1;
+        console.error(`\nask-warm: no answer for "${job.question}"`);
+      }
+    });
+  } catch (error) {
+    // One question that throws (a dropped connection, say) must not stop the rest.
+    failed += 1;
+    console.error(`\nask-warm: "${job.question}" threw: ${error instanceof Error ? error.message.split("\n")[0] : String(error)}`);
+  }
   process.stdout.write(`\rask-warm: ${done + failed} of ${jobs.length}`);
   // Google gives a new project few requests a minute; this keeps well under it and leaves room for riders.
   await new Promise((r) => setTimeout(r, 3000));
