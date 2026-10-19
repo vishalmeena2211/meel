@@ -107,3 +107,17 @@ export const IconPlay = ({ className }: IconProps) => (
     <path d="M7 4v16l13-8z" />
   </svg>
 );
+
+/** Ask Meel in one line: the kilometre stone with a speech tail and a road inside. For use inside text. */
+export const IconAsk = icon(
+  <>
+    <path d="M5 22.5V10a7 7 0 0 1 14 0v6a2 2 0 0 1-2 2H9.5z" />
+    <path d="M5 11h14" />
+    <path d="M9 14.5h2M13 14.5h2" />
+  </>,
+);
+export const IconUp = icon(<path d="M12 19V5M5 12l7-7 7 7" />);
+export const IconThumb = icon(
+  <path d="M7 10v12M15 5.9 14 10h5.8a2 2 0 0 1 1.9 2.6l-2.3 8A2 2 0 0 1 17.5 22H4a2 2 0 0 1-2-2v-8a2 2 0 0 1 2-2h2.8a2 2 0 0 0 1.8-1.1L12 2a3.1 3.1 0 0 1 3 3.9z" />,
+);
+export const IconRetry = icon(<path d="M3 12a9 9 0 0 1 15-6.7L21 8M21 3v5h-5M21 12a9 9 0 0 1-15 6.7L3 16M3 21v-5h5" />);

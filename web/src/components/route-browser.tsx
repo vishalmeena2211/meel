@@ -11,6 +11,7 @@ import { IN_THE_CITY_KM, useRidingFrom } from "@/lib/riding-from";
 import { spelledLike } from "@/lib/search";
 import type { Region, RouteSummary } from "@/lib/types";
 
+import { AskMark } from "./ask/ask-mark";
 import { IconSearch } from "./icons";
 import { RidingFromField, type CityName } from "./riding-from";
 import { SearchSuggest } from "./search-suggest";
@@ -304,7 +305,14 @@ export function RouteBrowser({
           <Callout title={query ? `No route called “${query.trim()}” yet` : "No routes here yet"}>
             Meel has {routes.length} routes so far. Tell us about this one and it goes on the list.
           </Callout>
-          <Link className="btn btn-primary btn-block md:w-auto md:self-start" href={`/report?suggest=${encodeURIComponent(query.trim())}`}>
+          {/* A question typed here is better answered by Ask Meel than by a route list. */}
+          {query.trim().length >= 2 ? (
+            <Link className="btn btn-primary btn-block md:w-auto md:self-start" href={`/ask?from=search&q=${encodeURIComponent(query.trim())}`}>
+              <AskMark className="size-5" />
+              Ask Meel instead
+            </Link>
+          ) : null}
+          <Link className="btn btn-outline btn-block md:w-auto md:self-start" href={`/report?suggest=${encodeURIComponent(query.trim())}`}>
             Suggest this place
           </Link>
           {like.length > 0 ? (

@@ -23,6 +23,7 @@ import {
 } from "@/components/route/sections";
 import { SectionChips } from "@/components/route/route-parts";
 import { SinceLastVisit } from "@/components/route/since-last-visit";
+import { AskButton } from "@/components/ask/ask-button";
 import { BackHead, Foot } from "@/components/shell";
 import { GettingThereScreen, type RouteBefore } from "@/components/route/getting-there";
 import { EmergencyCard, MapAppsScreen } from "@/components/tools/before-you-leave";
@@ -338,6 +339,7 @@ async function SectionBody(props: PageProps<"/routes/[slug]/[section]">) {
         title={asTool ? names.name : route.name}
         sub={asTool ? route.name : names.name}
         back={top}
+        right={<AskButton route={slug} />}
       />
       {noun || section === "network" ? <SectionChips view={view} on={section} /> : null}
       {noun ? <SinceLastVisit routeSlug={slug} section={section} noun={noun} /> : null}

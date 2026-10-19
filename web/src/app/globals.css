@@ -504,3 +504,88 @@ body:has([data-form-page]) .site-foot .foot-line {
     scroll-behavior: auto !important;
   }
 }
+
+/*
+  Ask Meel. Its mark is the kilometre stone with a speech tail (components/ask/ask-mark.tsx).
+  At rest a glint crosses the yellow cap; while it thinks the road inside runs and the stone bobs.
+  Every animation here stops for a phone that asks for reduced motion (the rule above).
+*/
+.ask-mark .m-glint {
+  animation: ask-glint 5s ease-in-out infinite;
+}
+.ask-mark[data-think] .m-road {
+  animation: ask-road 0.55s linear infinite;
+}
+.ask-mark[data-think] .m-glint {
+  animation-duration: 1.6s;
+}
+.ask-mark[data-think] {
+  animation: ask-bob 1.1s ease-in-out infinite;
+}
+.ask-halo {
+  animation: ask-halo 2s ease-out infinite;
+}
+.ask-dash {
+  width: 18px;
+  height: 3px;
+  border-radius: 2px;
+  background: repeating-linear-gradient(90deg, var(--color-ink-2) 0 6px, transparent 6px 12px);
+  animation: ask-dash 0.6s linear infinite;
+}
+.ask-shimmer {
+  background: linear-gradient(90deg, var(--color-ink-2) 0%, var(--color-ink-2) 35%, var(--color-sign) 50%, var(--color-ink-2) 65%, var(--color-ink-2) 100%);
+  background-size: 200% 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: ask-shimmer 2s linear infinite;
+}
+.ask-skel {
+  height: 11px;
+  border-radius: 6px;
+  background: linear-gradient(90deg, var(--color-surface-2) 25%, var(--color-stone-soft) 50%, var(--color-surface-2) 75%);
+  background-size: 200% 100%;
+  animation: ask-shimmer 1.6s linear infinite;
+}
+.ask-caret {
+  display: inline-block;
+  width: 7px;
+  height: 15px;
+  margin-left: 2px;
+  vertical-align: -2px;
+  border-radius: 1px;
+  background: var(--color-sign);
+  animation: ask-blink 1s steps(1) infinite;
+}
+@keyframes ask-glint {
+  0%, 70% { transform: translateX(0); }
+  88%, 100% { transform: translateX(16px); }
+}
+@keyframes ask-road {
+  to { transform: translateX(-4.8px); }
+}
+@keyframes ask-bob {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-1.5px); }
+}
+@keyframes ask-halo {
+  0% { box-shadow: 0 0 0 0 color-mix(in srgb, var(--color-stone) 70%, transparent); }
+  80%, 100% { box-shadow: 0 0 0 12px color-mix(in srgb, var(--color-stone) 0%, transparent); }
+}
+@keyframes ask-dash {
+  to { background-position: -12px 0; }
+}
+@keyframes ask-shimmer {
+  from { background-position: 200% 0; }
+  to { background-position: -200% 0; }
+}
+@keyframes ask-blink {
+  50% { opacity: 0; }
+}
+
+/* On a phone the Ask page is a conversation with its box at the foot: the site's foot would sit in the middle of it. */
+@media (max-width: 767px) {
+  body:has([data-ask]) .site-foot {
+    display: none;
+  }
+}

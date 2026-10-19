@@ -48,6 +48,17 @@ export const EVENTS = {
   "Logged out": "A rider logged out.",
   "Account deleted": "A rider deleted their account.",
 
+  // ── Ask Meel ──────────────────────────────────────────────────────
+  "Ask Meel opened": "The Ask page was opened. from (top bar, search, route row, fact, shared answer).",
+  "Ask Meel asked": "A question was sent. kind, lang, route (or none), follow_up. Never the words typed.",
+  "Ask Meel answered": "An answer arrived. kind, lang, seconds, sources, no_fact, copied (given again), pictures.",
+  "Ask Meel source opened": "A source number in an answer was opened. kind.",
+  "Ask Meel marked useful": "Useful was pressed on an answer. kind.",
+  "Ask Meel marked wrong": "This answer is wrong was sent. kind, reason.",
+  "Ask Meel shared": "An answer's link was shared or copied. via.",
+  "Ask Meel limit reached": "A rider reached the day's questions. logged_in.",
+  "Ask Meel failed": "An answer did not arrive. why (error, offline).",
+
   // ── riding together, from the server ──────────────────────────────
   "Trip posted": "A trip was published, or sent to the editor. route, places, pace, company, status.",
   "Asked to join a trip": "A rider asked to join. route, result (asked, waiting for a place, already asked).",

@@ -5,6 +5,7 @@ import { HomeViewButton } from "@/components/home-view-button";
 import { JsonLd } from "@/components/json-ld";
 import { RouteBrowser, type FromCities, type RoadLine } from "@/components/route-browser";
 import { TopHead } from "@/components/shell";
+import { AskButton } from "@/components/ask/ask-button";
 import { getAllRoutes, getApproaches, getIndex } from "@/lib/content";
 import { SITE_LINE, SITE_NAME, SITE_URL } from "@/lib/site";
 import { confirmedLately } from "@/server/reports";
@@ -74,7 +75,7 @@ export default async function HomePage() {
           },
         }}
       />
-      <TopHead title="Meel" sub={sub} right={<HomeViewButton />} />
+      <TopHead title="Meel" sub={sub} right={<><AskButton /><HomeViewButton /></>} />
       <section className="flex flex-col gap-2">
         <p role="heading" aria-level={1} className="display hidden text-5xl uppercase md:block">
           Every fact has a date

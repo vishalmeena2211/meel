@@ -28,10 +28,13 @@ import { ShareButton } from "@/components/route/share-button";
 import { SinceLastVisit } from "@/components/route/since-last-visit";
 import { BackHead, Foot } from "@/components/shell";
 import { Callout, Empty } from "@/components/ui";
+import { AskButton } from "@/components/ask/ask-button";
+import { AskRouteRow } from "@/components/ask/ask-route-row";
 import { getApproaches, getIndex, getRouteHelp } from "@/lib/content";
 import { km, feet, plural } from "@/lib/format";
 import { SITE_URL } from "@/lib/site";
 import { allSources } from "@/lib/sources";
+import { startersFor } from "@/lib/ask/starters";
 import { alertsFor } from "@/server/live";
 import { savedPages } from "@/server/route-pages";
 import { getRouteView } from "@/server/route-view";
@@ -133,9 +136,10 @@ export default async function RoutePage(props: PageProps<"/routes/[slug]">) {
           },
         ]}
       />
-      <BackHead title={route.name} sub={levelWords(view)} back="/" right={<ShareButton title={`${route.name} · Meel`} />} />
+      <BackHead title={route.name} sub={levelWords(view)} back="/" right={<><AskButton route={route.slug} /><ShareButton title={`${route.name} · Meel`} /></>} />
       <RoutePicture view={view} />
       <RouteHead view={view} as="h2" />
+      {unwritten ? null : <AskRouteRow slug={route.slug} example={startersFor(route)[0] ?? null} />}
 
       {unwritten ? (
         <>
