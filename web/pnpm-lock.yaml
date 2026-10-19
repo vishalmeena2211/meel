@@ -23,10 +23,10 @@ importers:
         specifier: 2.0.1
         version: 2.0.1(next@16.3.6(@babel/core@7.29.7)(@types/node@24.19.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8))(react@19.2.8)
       '@vercel/oidc':
-        specifier: ^4.0.1
+        specifier: 4.0.1
         version: 4.0.1
       google-auth-library:
-        specifier: ^11.3.1
+        specifier: 11.3.1
         version: 11.3.1
       mixpanel-browser:
         specifier: 2.83.0
@@ -72,7 +72,7 @@ importers:
         specifier: ^4
         version: 4.3.3
       tsx:
-        specifier: ^4.23.15
+        specifier: 4.23.15
         version: 4.23.15
       typescript:
         specifier: ^5
