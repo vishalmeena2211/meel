@@ -237,9 +237,13 @@ export function AskChat({
   };
 
   return (
-    <div className="grid gap-4 lg:grid-cols-[240px_minmax(0,1fr)_340px] lg:items-start">
+    <div className="flex flex-col gap-4 lg:grid lg:h-[calc(100dvh-3.5rem-1px)] lg:grid-cols-[280px_minmax(0,1fr)_360px] lg:gap-0">
       {/* Laptop: past questions, kept in this browser only. */}
-      <nav aria-label="Your questions" className="sticky top-20 hidden flex-col gap-1 lg:flex">
+      <nav aria-label="Your questions" className="hidden min-h-0 flex-col gap-1 overflow-y-auto border-r border-line bg-surface-2 p-3 lg:flex">
+        <div className="flex items-center gap-2 px-1 pt-1 pb-3">
+          <AskMark className="size-7" />
+          <span className="display text-2xl leading-none">Ask Meel</span>
+        </div>
         <button
           type="button"
           className="btn btn-outline btn-block"
@@ -284,9 +288,14 @@ export function AskChat({
             </button>
           </span>
         ) : null}
+        <p className="hint mt-auto px-2 pt-6 text-xs leading-5">
+          Answers only from Meel’s facts, each with its source and its date. It never says a road is open or closed.
+        </p>
       </nav>
 
-      <section aria-label="Conversation" className="flex min-w-0 flex-col gap-4 pb-28 md:pb-4">
+      <div className="flex min-w-0 flex-col lg:min-h-0">
+      <section aria-label="Conversation" className="flex min-w-0 flex-col pb-28 md:pb-4 lg:flex-1 lg:overflow-y-auto lg:pb-0">
+        <div className="mx-auto flex w-full max-w-3xl flex-col gap-4 lg:min-h-full lg:px-6 lg:py-6">
         {!online ? (
           <p className="flex items-center gap-2 rounded-lg bg-tarmac px-3 py-2 text-[0.8125rem] text-on-tarmac">
             <IconCloudOff className="size-4 shrink-0 text-stone" />
@@ -295,7 +304,7 @@ export function AskChat({
         ) : null}
 
         {turns.length === 0 ? (
-          <div className="flex flex-col gap-3 py-2">
+          <div className="flex flex-col gap-3 py-2 lg:my-auto">
             {fact ? (
               <div className="rounded-lg border border-stone/60 bg-stone-soft px-3 py-2.5 text-sm leading-5">
                 <b className="block">Asking about one fact</b>
@@ -479,11 +488,46 @@ export function AskChat({
             </div>
           </div>
         ))}
-        <div ref={end} />
+          <div ref={end} />
+        </div>
       </section>
+      {/* The box to ask in: fixed to the foot of a phone; on a laptop, pinned under the conversation as in other chat apps. */}
+      <form
+        onSubmit={(e) => {
+          e.preventDefault();
+          if (!busy) void send(input);
+        }}
+        className="fixed inset-x-0 bottom-0 z-20 flex flex-col gap-1 border-t border-line bg-surface px-4 pt-2.5 pb-[max(0.75rem,env(safe-area-inset-bottom))] md:static md:border-0 md:bg-transparent md:p-0 lg:border-t lg:border-line lg:bg-surface lg:px-6 lg:py-4 lg:[&>*]:mx-auto lg:[&>*]:w-full lg:[&>*]:max-w-3xl"
+      >
+        <div className="flex items-center gap-2">
+          <label className="sr-only" htmlFor="ask-input">
+            Your question
+          </label>
+          <input
+            id="ask-input"
+            value={input}
+            onChange={(e) => setInput(e.target.value)}
+            maxLength={ASK_MAX_QUESTION}
+            placeholder={turns.length ? "Ask a follow-up" : scope && route ? `Ask about ${route.name.split(":")[0]}` : "Ask about a road, a pass, a pump or a rule"}
+            enterKeyHint="send"
+            autoComplete="off"
+            className="field-input flex-1 focus:shadow-[0_0_0_3px_var(--color-sign-soft)]"
+          />
+          <button
+            type="submit"
+            aria-label="Ask"
+            disabled={busy || input.trim().length < 2}
+            className="grid size-11 shrink-0 place-items-center rounded-lg bg-sign text-surface disabled:border disabled:border-line disabled:bg-surface-2 disabled:text-rule"
+          >
+            <IconUp className="size-[18px]" />
+          </button>
+        </div>
+        {left !== null && left <= 3 && left > 0 ? <p className="hint text-xs">{left} question{left === 1 ? "" : "s"} left today.</p> : null}
+      </form>
+      </div>
 
       {/* Laptop: the sources of the latest answer, beside it. */}
-      <aside aria-label="Sources" className="sticky top-20 hidden flex-col gap-2 lg:flex">
+      <aside aria-label="Sources" className="hidden min-h-0 flex-col gap-2 overflow-y-auto border-l border-line p-4 lg:flex">
         {lastDone?.answer?.sources.length ? (
           <>
             <div className="flex items-baseline justify-between">
@@ -517,39 +561,6 @@ export function AskChat({
         )}
       </aside>
 
-      {/* The box to ask in: fixed to the foot of a phone, under the conversation on a wider screen. */}
-      <form
-        onSubmit={(e) => {
-          e.preventDefault();
-          if (!busy) void send(input);
-        }}
-        className="fixed inset-x-0 bottom-0 z-20 flex flex-col gap-1 border-t border-line bg-surface px-4 pt-2.5 pb-[max(0.75rem,env(safe-area-inset-bottom))] md:static md:col-start-1 md:border-0 md:bg-transparent md:p-0 lg:col-start-2"
-      >
-        <div className="flex items-center gap-2">
-          <label className="sr-only" htmlFor="ask-input">
-            Your question
-          </label>
-          <input
-            id="ask-input"
-            value={input}
-            onChange={(e) => setInput(e.target.value)}
-            maxLength={ASK_MAX_QUESTION}
-            placeholder={turns.length ? "Ask a follow-up" : scope && route ? `Ask about ${route.name.split(":")[0]}` : "Ask about a road, a pass, a pump or a rule"}
-            enterKeyHint="send"
-            autoComplete="off"
-            className="field-input flex-1 focus:shadow-[0_0_0_3px_var(--color-sign-soft)]"
-          />
-          <button
-            type="submit"
-            aria-label="Ask"
-            disabled={busy || input.trim().length < 2}
-            className="grid size-11 shrink-0 place-items-center rounded-lg bg-sign text-surface disabled:border disabled:border-line disabled:bg-surface-2 disabled:text-rule"
-          >
-            <IconUp className="size-[18px]" />
-          </button>
-        </div>
-        {left !== null && left <= 3 && left > 0 ? <p className="hint text-xs">{left} question{left === 1 ? "" : "s"} left today.</p> : null}
-      </form>
 
       <SourceSheet source={source} onClose={() => setSource(null)} />
 

@@ -589,3 +589,18 @@ body:has([data-form-page]) .site-foot .foot-line {
     display: none;
   }
 }
+
+/* On a laptop Ask Meel fills the window under the site's bar, like other chat apps: no page margins, no foot. */
+@media (min-width: 1024px) {
+  main:has(> [data-ask]) {
+    max-width: none;
+    padding: 0;
+  }
+  body:has([data-ask]) .site-bar {
+    max-width: none;
+    padding-inline: 1.5rem;
+  }
+  body:has([data-ask]) .site-foot {
+    display: none;
+  }
+}

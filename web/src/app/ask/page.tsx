@@ -28,9 +28,10 @@ export default async function AskPage(props: PageProps<"/ask">) {
   const from = one(query.from) ?? "direct";
 
   return (
-    <div data-ask className="flex flex-col gap-3">
+    <div data-ask className="flex flex-col gap-3 lg:gap-0">
       <BackHead title="Ask Meel" sub="Answers only from Meel’s facts" back={route ? `/routes/${route.slug}` : "/"} />
-      <header className="hidden flex-col gap-1 md:flex">
+      {/* On a laptop the page is the app itself, as in other chat apps: the name sits at the top of the left column. */}
+      <header className="hidden flex-col gap-1 md:flex lg:hidden">
         <p className="display text-4xl" role="heading" aria-level={1}>
           Ask Meel
         </p>
