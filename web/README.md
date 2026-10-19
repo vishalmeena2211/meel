@@ -115,7 +115,7 @@ A text assistant at `/ask` that answers from Meel's own facts, with a source num
 How a question is answered, in `src/server/ask/answer.ts`:
 1. Word rules read the language, the kind of question and the places (`src/lib/ask/understand.ts`). "Is it open", feeling unwell, costs and bikes, and "which road" get fixed replies. No model.
 2. An earlier answer that means the same, on the same route, whose facts all read as they did, is given again. No model.
-3. The question is turned into numbers (embeddings, `gemini-embedding-001`) and compared with every fact in `content/ask/` in memory. Distances to pumps, between places and between night halts are worked out in code.
+3. The question is turned into numbers (embeddings, `gemini-embedding-2`) and compared with every fact in `content/ask/` in memory. Distances to pumps, between places and between night halts are worked out in code.
 4. Gemini 2.5 Flash-Lite writes two to four sentences from 6 to 8 numbered facts. A sentence without a real source number is dropped.
 5. Pictures (the fuel gap, the route photo, riders' videos, the stretches) are chosen by rule. Answers are kept 30 days in `ask_answers`.
 

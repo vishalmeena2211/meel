@@ -18,7 +18,8 @@ import { GoogleAuth, IdentityPoolClient } from "google-auth-library";
 export const PROJECT = process.env.GCP_PROJECT_ID ?? "meel-rideplanner";
 /** Gemini 2.5 Flash-Lite is served from Google's global endpoint, not from Mumbai. */
 export const ANSWER_MODEL = process.env.ASK_ANSWER_MODEL ?? "gemini-2.5-flash-lite";
-export const EMBED_MODEL = "gemini-embedding-001";
+/** gemini-embedding-2 allows 300,000 requests a minute on this project; gemini-embedding-001 allowed 5. */
+export const EMBED_MODEL = "gemini-embedding-2";
 export const EMBED_DIMS = 768;
 
 const SCOPE = "https://www.googleapis.com/auth/cloud-platform";
@@ -61,7 +62,7 @@ function base(location: string): string {
 
 export type EmbedTask = "RETRIEVAL_DOCUMENT" | "RETRIEVAL_QUERY" | "SEMANTIC_SIMILARITY";
 
-/** Numbers for each text, in order. Up to 100 texts a call. */
+/** Numbers for each text, in order. One request per text, a few at a time. */
 export async function embed(texts: string[], task: EmbedTask, signal?: AbortSignal): Promise<Float32Array[]> {
   if (texts.length === 0) return [];
   // ASK_EMBED_OFF=1: Ask Meel searches by words only. For when Google's embedding limit is the problem.
@@ -79,21 +80,21 @@ export async function embed(texts: string[], task: EmbedTask, signal?: AbortSign
 }
 
 async function embedOnce(texts: string[], task: EmbedTask, signal?: AbortSignal): Promise<Float32Array[]> {
-  const res = await fetch(`${base("us-central1")}/${EMBED_MODEL}:predict`, {
-    method: "POST",
-    headers: { Authorization: `Bearer ${await token()}`, "Content-Type": "application/json" },
-    body: JSON.stringify({
-      instances: texts.map((content) => ({ content, task_type: task })),
-      parameters: { outputDimensionality: EMBED_DIMS, autoTruncate: true },
-    }),
-    signal,
-  });
-  const body = (await res.json()) as {
-    predictions?: Array<{ embeddings: { values: number[] } }>;
-    error?: { message: string };
+  const auth = await token();
+  const one = async (text: string): Promise<Float32Array> => {
+    const res = await fetch(`${base("global")}/${EMBED_MODEL}:embedContent`, {
+      method: "POST",
+      headers: { Authorization: `Bearer ${auth}`, "Content-Type": "application/json" },
+      body: JSON.stringify({ content: { parts: [{ text }] }, taskType: task, outputDimensionality: EMBED_DIMS }),
+      signal,
+    });
+    const body = (await res.json()) as { embedding?: { values: number[] }; error?: { message: string } };
+    if (!res.ok || !body.embedding) throw new Error(`Embedding failed: ${res.status} ${body.error?.message ?? ""}`);
+    return Float32Array.from(body.embedding.values);
   };
-  if (!res.ok || !body.predictions) throw new Error(`Embedding failed: ${res.status} ${body.error?.message ?? ""}`);
-  return body.predictions.map((p) => Float32Array.from(p.embeddings.values));
+  const out: Float32Array[] = [];
+  for (let i = 0; i < texts.length; i += 10) out.push(...(await Promise.all(texts.slice(i, i + 10).map(one))));
+  return out;
 }
 
 export interface Usage {
@@ -111,19 +112,28 @@ export async function generate(
   onText: (piece: string) => void,
   { maxTokens = 260, signal }: { maxTokens?: number; signal?: AbortSignal } = {},
 ): Promise<Usage> {
-  const res = await fetch(`${base("global")}/${ANSWER_MODEL}:streamGenerateContent?alt=sse`, {
-    method: "POST",
-    headers: { Authorization: `Bearer ${await token()}`, "Content-Type": "application/json" },
-    body: JSON.stringify({
-      systemInstruction: { parts: [{ text: system }] },
-      contents: [{ role: "user", parts: [{ text: user }] }],
-      generationConfig: { maxOutputTokens: maxTokens, temperature: 0.2 },
-    }),
-    signal,
+  const body = JSON.stringify({
+    systemInstruction: { parts: [{ text: system }] },
+    contents: [{ role: "user", parts: [{ text: user }] }],
+    generationConfig: { maxOutputTokens: maxTokens, temperature: 0.2 },
   });
-  if (!res.ok || !res.body) {
-    const text = await res.text().catch(() => "");
-    throw new Error(`Answer failed: ${res.status} ${text.slice(0, 200)}`);
+  // Gemini on Vertex shares Google's capacity: a "too many" (429) is brief. Before any text has arrived, it is tried
+  // again on the US endpoint, then once more after a pause. Nothing has been shown to the rider yet.
+  let res: Response | null = null;
+  for (const [where, wait] of [["global", 0], ["us-central1", 300], ["global", 1500]] as const) {
+    if (wait) await new Promise((r) => setTimeout(r, wait));
+    res = await fetch(`${base(where)}/${ANSWER_MODEL}:streamGenerateContent?alt=sse`, {
+      method: "POST",
+      headers: { Authorization: `Bearer ${await token()}`, "Content-Type": "application/json" },
+      body,
+      signal,
+    });
+    if (res.status !== 429 && res.status !== 503) break;
+    await res.body?.cancel().catch(() => {});
+  }
+  if (!res || !res.ok || !res.body) {
+    const text = res ? await res.text().catch(() => "") : "";
+    throw new Error(`Answer failed: ${res?.status ?? "no reply"} ${text.slice(0, 200)}`);
   }
   const usage: Usage = { promptTokens: 0, outputTokens: 0 };
   const reader = res.body.getReader();

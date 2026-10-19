@@ -94,5 +94,5 @@ const file: IndexFile = {
 await mkdir(out, { recursive: true });
 await writeFile(path.join(out, "index.json"), JSON.stringify(file));
 await writeFile(path.join(out, "vectors.bin"), bytes);
-// About four characters to a token; $0.15 per million tokens for gemini-embedding-001.
+// About four characters to a token; $0.20 per million tokens for gemini-embedding-2.
 console.log(`ask-index: wrote ${chunks.length} rows (${(bytes.length / 1e6).toFixed(1)} MB). Sent about ${Math.round(chars / 4).toLocaleString("en-IN")} tokens.`);
