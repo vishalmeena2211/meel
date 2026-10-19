@@ -7,7 +7,7 @@ import { track } from "@/lib/analytics";
 import type { AskAnswer, AskPicture, AskSource } from "@/lib/ask/types";
 import { km } from "@/lib/format";
 
-import { IconExternal, IconPhone, IconPlay, IconPlus, IconRight, IconShare, IconThumb } from "../icons";
+import { IconExternal, IconFlag, IconPhone, IconPlay, IconPlus, IconRight, IconShare, IconThumb } from "../icons";
 import { StateBadge } from "../ui";
 
 import { AskMark } from "./ask-mark";
@@ -52,7 +52,7 @@ export function AnswerHead({ answer, thinking = false, sub }: { answer?: AskAnsw
   const label =
     sub ??
     (answer
-      ? [answer.sources.length ? `${answer.sources.length} fact${answer.sources.length === 1 ? "" : "s"}` : null, answer.route?.name.split(":")[0]]
+      ? [answer.sources.length ? `${answer.sources.length} fact${answer.sources.length === 1 ? "" : "s"}` : null, answer.route?.name.split(":")[0], answer.copied ? "asked before" : null]
           .filter(Boolean)
           .join(" · ")
       : "");
@@ -393,12 +393,14 @@ export function WrongSheet({ id, kind, open, onClose }: { id: string; kind: stri
 }
 
 export function Pictures({ answer }: { answer: AskAnswer }) {
-  if (answer.pictures.length === 0) return null;
+  if (!answer.pictures.some((p) => p.kind !== "tool")) return null;
   return (
     <div className="flex flex-col gap-2.5">
-      {answer.pictures.map((p, i) => (
-        <Picture key={i} p={p} slug={answer.route?.slug ?? null} />
-      ))}
+      {answer.pictures
+        .filter((p) => p.kind !== "tool")
+        .map((p, i) => (
+          <Picture key={i} p={p} slug={answer.route?.slug ?? null} />
+        ))}
     </div>
   );
 }
@@ -430,37 +432,35 @@ export function AnswerActions({ answer, extra }: { answer: AskAnswer; extra?: Re
     }
   }
 
+  // Three quiet icons, one row: the answer is the point, not the buttons around it.
   return (
-    <div className="flex flex-col gap-2">
-      <div className="flex flex-wrap items-center gap-1.5">
+    <div className="flex flex-col gap-1">
+      <div className="flex items-center gap-0.5">
         <button
           type="button"
           aria-pressed={useful}
           disabled={useful}
+          aria-label={useful ? "Marked useful" : "Useful"}
+          title={useful ? "Marked useful" : "Useful"}
           onClick={() => {
             setUseful(true);
             track("Ask Meel marked useful", { kind: answer.kind });
             void fetch("/api/ask/answer", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ action: "useful", id: answer.id, useful: true }) });
           }}
-          className="btn btn-outline !min-h-8 !px-2.5 text-[0.8125rem]"
+          className={`grid size-9 place-items-center rounded-lg text-ink-2 hover:bg-surface-2 hover:text-ink disabled:opacity-60 ${useful ? "!text-sign" : ""}`}
         >
-          <IconThumb className="size-3.5" />
-          {useful ? "Thanks" : "Useful"}
+          <IconThumb className="size-4" />
         </button>
-        <button type="button" disabled={sent} onClick={() => setWrong(true)} className="btn btn-outline !min-h-8 !px-2.5 text-[0.8125rem]">
-          {sent ? "Sent to the editor" : "This answer is wrong"}
+        <button type="button" disabled={sent} onClick={() => setWrong(true)} aria-label="This answer is wrong" title="This answer is wrong" className="grid size-9 place-items-center rounded-lg text-ink-2 hover:bg-surface-2 hover:text-ink disabled:opacity-60">
+          <IconFlag className="size-4" />
         </button>
-        <button type="button" onClick={share} className="btn btn-outline !min-h-8 !px-2.5 text-[0.8125rem]">
-          <IconShare className="size-3.5" />
-          {shared ?? "Share"}
+        <button type="button" onClick={share} aria-label="Share this answer" title="Share this answer" className="grid size-9 place-items-center rounded-lg text-ink-2 hover:bg-surface-2 hover:text-ink disabled:opacity-60">
+          <IconShare className="size-4" />
         </button>
+        {shared ? <span className="hint ml-1 text-xs">{shared}</span> : null}
         {extra}
       </div>
-      {sent ? (
-        <p className="rounded-lg border border-sign-line bg-sign-soft px-3 py-2.5 text-sm leading-5">
-          <b className="block">Thanks. Sent to the editor.</b>A fact changed by your report shows your name and date on the route page.
-        </p>
-      ) : null}
+      {sent ? <p className="hint text-xs">Sent to the editor. Thanks: a fact changed by your report shows your name on the route page.</p> : null}
       <WrongSheet
         id={answer.id}
         kind={answer.kind}

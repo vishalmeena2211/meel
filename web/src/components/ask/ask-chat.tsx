@@ -7,7 +7,7 @@ import { track } from "@/lib/analytics";
 import type { AskAnswer, AskEvent, AskRequest, AskSource } from "@/lib/ask/types";
 import { ASK_LIMIT_PHONE, ASK_MAX_QUESTION } from "@/lib/ask/types";
 
-import { IconCheck, IconCloudOff, IconPlus, IconRetry, IconUp } from "../icons";
+import { IconCheck, IconCloudOff, IconDown, IconPlus, IconRetry, IconUp } from "../icons";
 
 import { AnswerActions, AnswerHead, Cited, NoFactBox, Pictures, SourceRows, SourceSheet } from "./answer-view";
 import { AskMark } from "./ask-mark";
@@ -419,28 +419,22 @@ export function AskChat({
                       ))}
                     </div>
                   ) : null}
-                  {t.answer.copied ? <p className="hint text-xs">Answered before, and its facts haven’t changed since.</p> : null}
                   <Pictures answer={t.answer} />
-                  {t.answer.sources.length ? (
-                    <div className={`flex flex-col gap-1.5 ${t === lastDone ? "lg:hidden" : ""}`}>
-                      <p className="label">{t.answer.noFact ? "The closest facts Meel has" : "Where this comes from"}</p>
-                      <SourceRows sources={t.answer.sources} onOpen={setSource} />
-                    </div>
-                  ) : null}
                   {t.answer.noFact ? <NoFactBox question={t.question} /> : null}
-                  {!t.answer.choices.length ? <AnswerActions answer={t.answer} /> : null}
-                  {t.answer.next.length && t === lastDone ? (
-                    <div className="flex flex-col gap-1.5">
-                      <p className="label">Ask next</p>
-                      <div className="scroll-row -mx-4 px-4 md:mx-0 md:flex-wrap md:px-0">
-                        {t.answer.next.map((n) => (
-                          <button key={n} type="button" className="chip" onClick={() => void send(n)}>
-                            {n}
-                          </button>
-                        ))}
-                      </div>
-                    </div>
+                  {/* Sources fold into one line on a phone; on a laptop they are in the right-hand column. */}
+                  {t.answer.sources.length ? (
+                    <details className={`group flex flex-col gap-1.5 ${t === lastDone ? "lg:hidden" : ""}`}>
+                      <summary className="flex w-fit cursor-pointer list-none items-center gap-1.5 text-[0.8125rem] font-semibold text-sign [&::-webkit-details-marker]:hidden">
+                        {t.answer.noFact
+                          ? "The closest facts Meel has"
+                          : `${t.answer.sources.length} source${t.answer.sources.length === 1 ? "" : "s"}, with their dates`}
+                        <IconDown className="size-4 transition-transform group-open:rotate-180" />
+                      </summary>
+                      <SourceRows sources={t.answer.sources} onOpen={setSource} />
+                    </details>
                   ) : null}
+                  {!t.answer.choices.length ? <AnswerActions answer={t.answer} /> : null}
+                  {t === lastDone ? <NextRow answer={t.answer} onAsk={(n) => void send(n)} /> : null}
                 </>
               ) : null}
 
@@ -597,6 +591,27 @@ export function AskChat({
           </button>
         </div>
       </dialog>
+    </div>
+  );
+}
+
+/** At most three things to do next: the route's own tool, if the answer has one, then two questions. */
+function NextRow({ answer, onAsk }: { answer: AskAnswer; onAsk: (question: string) => void }) {
+  const tool = answer.pictures.find((p) => p.kind === "tool");
+  const questions = answer.next.filter((n) => !(tool && /fuel for my bike|altitude check/i.test(n))).slice(0, tool ? 2 : 3);
+  if (!tool && questions.length === 0) return null;
+  return (
+    <div className="scroll-row -mx-4 px-4 md:mx-0 md:flex-wrap md:px-0">
+      {tool && tool.kind === "tool" ? (
+        <Link href={tool.href} className="chip !border-sign-line !bg-sign-soft font-semibold !text-sign">
+          {tool.title}
+        </Link>
+      ) : null}
+      {questions.map((n) => (
+        <button key={n} type="button" className="chip" onClick={() => onAsk(n)}>
+          {n}
+        </button>
+      ))}
     </div>
   );
 }
