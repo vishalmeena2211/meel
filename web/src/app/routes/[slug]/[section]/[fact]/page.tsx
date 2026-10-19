@@ -8,6 +8,7 @@ import { FactButtons, FactRow } from "@/components/route/fact-row";
 import { ShareButton } from "@/components/route/share-button";
 import { BackHead } from "@/components/shell";
 import { Callout, SectionHeading } from "@/components/ui";
+import { AskButton } from "@/components/ask/ask-button";
 import { plural } from "@/lib/format";
 import { isSection, SECTION_NAMES } from "@/lib/sections";
 import { SITE_URL } from "@/lib/site";
@@ -73,7 +74,7 @@ export default async function FactPage(props: PageProps<"/routes/[slug]/[section
         title={view.route.name}
         sub={names.name}
         back={`/routes/${slug}/${f.section}`}
-        right={<ShareButton title={`${f.title} · ${view.route.name}`} />}
+        right={<><AskButton route={view.route.slug} /><ShareButton title={`${f.title} · ${view.route.name}`} /></>}
         titleAs="p"
       />
       <Callout tone="stone" title="You opened one fact from a link">

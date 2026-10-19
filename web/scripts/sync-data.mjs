@@ -27,6 +27,12 @@ await mkdir(content, { recursive: true });
 await cp(path.join(data, "routes"), path.join(content, "routes"), { recursive: true });
 await cp(path.join(data, "site"), path.join(content, "site"), { recursive: true });
 
+// Ask Meel's search index, built by `pnpm ask:index`. Without it Ask Meel says it is not ready, and the rest of the
+// site works as before.
+if (await exists(path.join(data, "computed", "ask", "index.json"))) {
+  await cp(path.join(data, "computed", "ask"), path.join(content, "ask"), { recursive: true });
+}
+
 await rm(images, { recursive: true, force: true });
 await mkdir(images, { recursive: true });
 let pictures = 0;

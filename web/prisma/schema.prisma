@@ -191,3 +191,71 @@ model Suggestion {
 
   @@map("suggestions")
 }
+
+/**
+ * Ask Meel. A question and its answer are kept for 30 days, with no phone, account or address, to learn what riders
+ * ask and what Meel is missing. A shared answer is kept while its link is in use (see server/ask/store.ts).
+ */
+
+/// One answer Ask Meel gave. Also the store of answers it can give again, and of shared links.
+model AskAnswer {
+  /// Short, and the address of a shared answer: /ask/a/<id>.
+  id           String   @id
+  routeSlug    String?  @map("route_slug")
+  /// fuel, distance, rule, season, open, health, off-topic and so on.
+  kind         String
+  /// en, hi or hinglish.
+  lang         String
+  question     String
+  /// What the rider saw: the text, its sources, pictures and next questions.
+  answer       Json
+  /// The facts it used and, for each, a fingerprint of the words and age shown. An answer is given again only while
+  /// every fingerprint still matches.
+  facts        Json
+  /// The question's meaning as 768 numbers, to find a later question that means the same. Null for fixed replies.
+  embedding    Bytes?
+  /// The answer this one was copied from, when it was given again.
+  copiedFrom   String?  @map("copied_from")
+  shared       Boolean  @default(false)
+  useful       Boolean?
+  promptTokens Int      @default(0) @map("prompt_tokens")
+  outputTokens Int      @default(0) @map("output_tokens")
+  createdAt    DateTime @default(now()) @map("created_at") @db.Timestamptz(3)
+
+  reports AskReport[]
+
+  @@index([routeSlug, kind, createdAt])
+  @@index([createdAt])
+  @@map("ask_answers")
+}
+
+/// How many questions one phone, one account, or the whole site asked on one day in India.
+model AskUse {
+  /// "2026-10-19"
+  day   String
+  /// "phone:<random id kept in a cookie>", "user:<id>" or "site".
+  who   String
+  count Int    @default(0)
+
+  @@id([day, who])
+  @@map("ask_uses")
+}
+
+/// "This answer is wrong", for the editor.
+model AskReport {
+  id        String    @id
+  answerId  String    @map("answer_id")
+  /// out-of-date, not-in-sources, wrong-question or other
+  reason    String
+  note      String?
+  userId    String?   @map("user_id")
+  /// new, applied or set-aside
+  status    String    @default("new")
+  createdAt DateTime  @default(now()) @map("created_at") @db.Timestamptz(3)
+  decidedAt DateTime? @map("decided_at") @db.Timestamptz(3)
+
+  answer AskAnswer @relation(fields: [answerId], references: [id], onDelete: Cascade)
+
+  @@index([status, createdAt])
+  @@map("ask_reports")
+}

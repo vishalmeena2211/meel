@@ -82,6 +82,13 @@ Put them in `web/.env.local` on your own machine, one per line, as `NAME=value`.
 | `NEXT_PUBLIC_MIXPANEL_API_HOST` | Where that project keeps its data: `https://api.mixpanel.com` for the US, `https://api-in.mixpanel.com` for India | `https://api-eu.mixpanel.com`, Mixpanel's EU servers |
 | `NEXT_PUBLIC_MIXPANEL_RECORD_PERCENT` | How many visits in 100 get a screen recording | 100. `0` turns recordings off |
 | `NEXT_PUBLIC_MIXPANEL_IN_DEVELOPMENT` | `1` to send events from your own machine too. Use a separate test project | On your own machine each event is written to the browser's console instead of being sent |
+| `GCP_PROJECT_NUMBER` | Ask Meel: the Google Cloud project's number, `318441655067` for `meel-rideplanner`. See "Ask Meel" | On your own machine, your own gcloud login is used. Where the site is hosted, Ask Meel cannot answer and says so |
+| `GCP_WORKLOAD_IDENTITY_POOL_ID` | Ask Meel: `vercel` | As above |
+| `GCP_WORKLOAD_IDENTITY_PROVIDER_ID` | Ask Meel: `vercel` | As above |
+| `GCP_SERVICE_ACCOUNT_EMAIL` | Ask Meel: `meel-ask@meel-rideplanner.iam.gserviceaccount.com` | As above |
+| `ASK_MEEL_OFF` | `1` switches Ask Meel off at once. The rest of the site is untouched | Ask Meel is on |
+| `ASK_ANSWER_MODEL` | Which Gemini model writes answers | `gemini-2.5-flash-lite` |
+| `ASK_EMBED_OFF` | `1` makes Ask Meel find facts by words instead of by meaning: no embedding calls to Google | Facts are found by meaning, falling back to words when Google's limit is reached |
 
 ### Mixpanel
 
@@ -100,6 +107,29 @@ What is never sent: a name, an email, a phone number, anything typed into a box,
 **Anything new that shows a rider's name, contact or chat link needs `data-private` or `data-private-block`.**
 
 To switch it on: make a project in Mixpanel, put its token in `NEXT_PUBLIC_MIXPANEL_TOKEN` where the site is hosted (and `NEXT_PUBLIC_MIXPANEL_API_HOST` if its data is not kept in the EU), and build again. Only the live site counts: not your own machine, and not Vercel's preview deployments. The token is public by design: every page carries it, and it can only send events, not read them. It is not kept in the code, so a copy of Meel run by someone else never counts into this site's project.
+
+### Ask Meel
+
+A text assistant at `/ask` that answers from Meel's own facts, with a source number on every sentence. The plan, the wireframes and the decisions are in `design/ask-meel-wireframes.html` (built by `design/build-ask-meel.py`).
+
+How a question is answered, in `src/server/ask/answer.ts`:
+1. Word rules read the language, the kind of question and the places (`src/lib/ask/understand.ts`). "Is it open", feeling unwell, costs and bikes, and "which road" get fixed replies. No model.
+2. An earlier answer that means the same, on the same route, whose facts all read as they did, is given again. No model.
+3. The question is turned into numbers (embeddings, `gemini-embedding-001`) and compared with every fact in `content/ask/` in memory. Distances to pumps, between places and between night halts are worked out in code.
+4. Gemini 2.5 Flash-Lite writes two to four sentences from 6 to 8 numbered facts. A sentence without a real source number is dropped.
+5. Pictures (the fuel gap, the route photo, riders' videos, the stretches) are chosen by rule. Answers are kept 30 days in `ask_answers`.
+
+Limits: 10 questions a day per phone, 40 logged in, 2,000 for the whole site (`src/lib/ask/types.ts`). "This answer is wrong" goes to the editor's inbox.
+
+**After the route data changes**, rebuild the search index and commit it. Only changed facts are sent to Google, so it costs paise:
+
+```bash
+pnpm ask:index
+```
+
+Other scripts: `pnpm ask:try "petrol pump in chitkul"` asks from the command line against your local database; `DATABASE_URL=… pnpm ask:warm` answers every starter question in advance (about 208, roughly ₹4).
+
+**Google Cloud.** Everything runs in the personal project `meel-rideplanner`, billed to the personal billing account, with a ₹500 monthly budget alert. On your own machine: `gcloud auth application-default login`. Where the site is hosted there is no key: Vercel's OIDC token is trusted by the workload identity pool `vercel`, which lets the project `meel` on the team `vishal-meenas-projects` act as the service account `meel-ask`, which may only call Vertex AI. In Vercel, turn on OIDC federation (Settings, Security, "Team" issuer) and set the four `GCP_` settings above.
 
 ### Setting up Google
 

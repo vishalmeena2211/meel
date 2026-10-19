@@ -11,6 +11,7 @@ import { SearchSuggest } from "@/components/search-suggest";
 import { SiteFoot } from "@/components/site-foot";
 import { SiteNav, TabBar } from "@/components/site-nav";
 import { KmStone } from "@/components/ui";
+import { AskHeadButton } from "@/components/ask/ask-head-button";
 
 import "./globals.css";
 
@@ -69,6 +70,9 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
               </SearchSuggest>
             </form>
             <div id="head-slot" className="ml-auto hidden items-center gap-2 lg:flex" />
+            <span className="ml-auto hidden md:inline-flex lg:ml-0">
+              <AskHeadButton />
+            </span>
             <SiteNav />
           </div>
         </header>

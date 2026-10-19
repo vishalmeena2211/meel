@@ -1,0 +1,1830 @@
+<!--
+  Meel wireframes, 28 September 2026. Meel (मील) is Hindi for mile; the site lives at rideplanner.in.
+  Method: one frame per state, the notes are the spec, and one example world throughout.
+  The look is taken from Indian road furniture: kilometre stones (white body, yellow cap,
+  black letters) and green highway signboards. It follows the phone's light or dark setting.
+-->
+<title>Ask Meel</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Hind:wght@400;500;600&display=swap">
+<style>
+:root {
+  color-scheme: light;
+  /* Proposed product palette */
+  --ink: #16201C;            /* tarmac: text */
+  --ink-2: #55615B;          /* secondary text */
+  --rule: #8A948F;           /* rules and decoration only */
+  --border: #D9DEDA;
+  --surface: #FFFFFF;
+  --surface-2: #F4F6F4;
+  --sign: #0F5F4B;           /* highway signboard green: primary actions and links */
+  --stone: #F2B807;          /* kilometre-stone yellow: fills only, never text */
+  --danger: #B42318;
+  /* Fact age: semantic, separate from the brand colours */
+  --fresh-bg: #E7F6EC;   --fresh-fg: #17663A;
+  --ageing-bg: #FFF4DB;  --ageing-fg: #8A4B06;
+  --stale-bg: #FDECEA;   --stale-fg: #A1241A;
+  --unchecked-bg: #EEF1F4; --unchecked-fg: #3F4A57;
+  --conflict-bg: #F1ECFB; --conflict-fg: #4E2F8F;
+  /* The chat app drawn in some frames (not our product) */
+  --chat-ground: #E9E3D8; --chat-out: #DDF3CB; --chat-in: #FFFFFF; --chat-bar: #1F3B33;
+  /* Derived */
+  --sign-soft: color-mix(in srgb, var(--sign) 9%, var(--surface));
+  --sign-line: color-mix(in srgb, var(--sign) 35%, var(--surface));
+  --stone-soft: color-mix(in srgb, var(--stone) 18%, var(--surface));
+  --overlay: color-mix(in srgb, var(--ink) 45%, transparent);
+  --ground: #E8ECE9;
+  --frame-shadow: 0 1px 2px color-mix(in srgb, var(--ink) 10%, transparent), 0 14px 34px color-mix(in srgb, var(--ink) 14%, transparent);
+  --curve: cubic-bezier(0.16, 1, 0.3, 1);
+  --display: "Barlow Condensed", "Arial Narrow", "Helvetica Neue", sans-serif;
+  --body: Hind, "Noto Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+/* At night (last screen): the same tokens, as the site redefines them when a phone is set to dark */
+.dark {
+  color-scheme: dark;
+  --ink: #E8ECE9; --ink-2: #A3AEA8; --rule: #6B7671; --border: #2E3935;
+  --surface: #18201D; --surface-2: #1F2925; --ground: #0F1513;
+  --sign: #5FC4A1; --stone: #F2B807; --danger: #F0776D;
+  --fresh-bg: #16301F;   --fresh-fg: #7FD49C;
+  --ageing-bg: #33270F;  --ageing-fg: #F0B861;
+  --stale-bg: #3A1A17;   --stale-fg: #F28B82;
+  --unchecked-bg: #252C33; --unchecked-fg: #B4BFCB;
+  --conflict-bg: #2A2140; --conflict-fg: #C3A8F5;
+  --sign-soft: #1C332B; --sign-line: #2F5C4D; --stone-soft: #3A3113;
+  --overlay: rgb(0 0 0 / 0.55);
+  color: var(--ink);
+  background: var(--surface);
+}
+.dark .pbody { background: var(--ground); }
+.dark .kstone { --surface: #FFFFFF; --ink: #16201C; color: #16201C; }
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--ground); color: var(--ink); font: 14px/1.45 var(--body); -webkit-font-smoothing: antialiased; }
+button { font: inherit; color: inherit; }
+:focus-visible { outline: 2px solid var(--sign); outline-offset: 2px; }
+
+/* ── Gallery chrome ───────────────────────────────────────────── */
+.doc { display: grid; grid-template-columns: 272px minmax(0, 1fr); min-height: 100vh; }
+.index { position: sticky; top: 0; height: 100vh; overflow-y: auto; padding: 22px 16px; background: var(--surface); border-right: 1px solid var(--border); display: flex; flex-direction: column; gap: 18px; }
+.index h1 { font: 700 24px/1.05 var(--display); letter-spacing: 0.01em; margin: 0; text-wrap: balance; text-transform: uppercase; }
+.index .lede { font-size: 12.5px; line-height: 18px; color: var(--ink-2); margin: 6px 0 0; }
+.group-label { font: 600 12px/1 var(--display); letter-spacing: 0.1em; text-transform: uppercase; color: var(--ink-2); margin: 0 0 6px 8px; }
+.index ol { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 2px; }
+.index button { width: 100%; text-align: left; border: 0; background: transparent; padding: 7px 8px; border-radius: 4px; font-size: 13px; line-height: 18px; cursor: pointer; display: flex; gap: 8px; align-items: baseline; }
+.index button:hover { background: var(--surface-2); }
+.index button[aria-current="true"] { background: var(--sign-soft); color: var(--sign); font-weight: 600; }
+.index .code { font-variant-numeric: tabular-nums; color: var(--ink-2); min-width: 20px; font-size: 12px; }
+.index .foot { margin-top: auto; font-size: 11.5px; line-height: 17px; color: var(--ink-2); border-top: 1px solid var(--border); padding-top: 12px; }
+.stage { padding: 24px 28px 48px; display: flex; flex-direction: column; gap: 16px; min-width: 0; }
+.stage-head { display: flex; justify-content: space-between; align-items: flex-end; gap: 16px; flex-wrap: wrap; }
+.eyebrow { font: 600 13px/1 var(--display); letter-spacing: 0.1em; text-transform: uppercase; color: var(--sign); }
+.stage-head h2 { margin: 4px 0 0; font: 700 30px/1.05 var(--display); text-wrap: balance; }
+.stage-head p { margin: 6px 0 0; color: var(--ink-2); max-width: 70ch; font-size: 13.5px; }
+.stage-nav { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
+.stage-nav button { height: 34px; padding: 0 12px; border-radius: 6px; border: 1px solid var(--border); background: var(--surface); font-size: 13px; font-weight: 500; cursor: pointer; }
+.stage-nav button:hover { border-color: var(--sign); }
+.sample-flag { font-size: 11.5px; color: var(--ink-2); background: var(--surface); border: 1px dashed var(--rule); border-radius: 4px; padding: 3px 8px; }
+.frame-fit { width: 100%; overflow: hidden; }
+.frame { width: max-content; transform-origin: top left; display: flex; gap: 32px; align-items: flex-start; padding: 6px 0 10px; }
+.frame.stacked { flex-direction: column; gap: 28px; }
+.frame.plain { width: 100%; display: block; padding: 0; }
+.pw { margin: 0; display: flex; flex-direction: column; gap: 10px; align-items: center; }
+.pw figcaption { font: 600 14px/1.2 var(--display); letter-spacing: 0.06em; text-transform: uppercase; color: var(--ink-2); text-align: center; max-width: 360px; }
+.notes { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 14px; }
+.note { background: var(--surface); border: 1px solid var(--border); border-radius: 6px; padding: 14px 16px; }
+.note h3 { margin: 0 0 6px; font: 600 13px/1 var(--display); letter-spacing: 0.1em; text-transform: uppercase; color: var(--ink-2); }
+.note.q h3 { color: var(--conflict-fg); }
+.note ul { margin: 0; padding-left: 18px; display: flex; flex-direction: column; gap: 5px; font-size: 13.5px; line-height: 20px; max-width: 65ch; }
+
+/* ── Phone shell ──────────────────────────────────────────────── */
+.phone { width: 390px; height: 820px; border-radius: 40px; border: 10px solid var(--ink); background: var(--surface); overflow: hidden; display: flex; flex-direction: column; font-size: 13.5px; box-shadow: var(--frame-shadow); position: relative; flex: none; }
+.status-bar { height: 34px; display: flex; justify-content: space-between; align-items: center; padding: 0 22px; font-size: 12px; font-weight: 600; flex: none; }
+.status-bar span:last-child { letter-spacing: 1px; }
+.ptop { min-height: 54px; border-bottom: 1px solid var(--border); display: flex; align-items: center; gap: 10px; padding: 0 12px; flex: none; }
+.ptop .ttl { flex: 1; min-width: 0; }
+.ptop .ttl b { font: 700 19px/1.1 var(--display); letter-spacing: 0.01em; display: block; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.ptop .ttl span { font-size: 11.5px; color: var(--ink-2); }
+.iconbtn { width: 44px; height: 44px; border-radius: 8px; border: 1px solid var(--border); display: grid; place-items: center; flex: none; }
+.iconbtn svg { width: 18px; height: 18px; stroke: var(--ink); }
+.mark { width: 34px; height: 38px; border-radius: 16px 16px 4px 4px; border: 2px solid var(--ink); overflow: hidden; display: flex; flex-direction: column; flex: none; background: var(--surface); }
+.mark i { height: 12px; background: var(--stone); border-bottom: 2px solid var(--ink); }
+.mark b { flex: 1; display: grid; place-items: center; font: 700 12px/1 var(--display); }
+.pbody { flex: 1; overflow: hidden; display: flex; flex-direction: column; min-height: 0; }
+.pscroll { padding: 12px; display: flex; flex-direction: column; gap: 12px; }
+.pfoot { border-top: 1px solid var(--border); padding: 10px 12px 22px; display: flex; flex-direction: column; gap: 8px; background: var(--surface); flex: none; }
+.pfoot .btns { display: grid; grid-template-columns: 1fr 1.3fr; gap: 8px; }
+.pfoot .btn { height: 46px; font-size: 14.5px; }
+
+/* ── Pieces ───────────────────────────────────────────────────── */
+.badge { display: inline-flex; align-items: center; border-radius: 4px; padding: 2px 7px; font: 600 11.5px/15px var(--display); letter-spacing: 0.08em; text-transform: uppercase; white-space: nowrap; flex: none; }
+.b-fresh { background: var(--fresh-bg); color: var(--fresh-fg); }
+.b-ageing { background: var(--ageing-bg); color: var(--ageing-fg); }
+.b-stale { background: var(--stale-bg); color: var(--stale-fg); }
+.b-unchecked { background: var(--unchecked-bg); color: var(--unchecked-fg); outline: 1px dashed var(--rule); outline-offset: -1px; }
+.b-conflict { background: var(--conflict-bg); color: var(--conflict-fg); }
+.b-plain { background: var(--surface-2); color: var(--ink-2); }
+.b-full { background: var(--sign); color: var(--surface); }
+.b-stone { background: var(--stone); color: var(--ink); }
+.btn { height: 38px; padding: 0 12px; border-radius: 8px; border: 1px solid transparent; font-size: 13.5px; font-weight: 600; display: inline-flex; align-items: center; justify-content: center; gap: 6px; white-space: nowrap; }
+.btn svg { width: 15px; height: 15px; stroke: currentColor; flex: none; }
+.btn-primary { background: var(--sign); color: var(--surface); }
+.btn-outline { background: var(--surface); color: var(--ink); border-color: var(--border); }
+.btn-soft { background: var(--sign-soft); color: var(--sign); border-color: var(--sign-line); }
+.btn-disabled { background: var(--surface-2); color: var(--rule); border-color: var(--border); }
+.btn-block { width: 100%; }
+/* Suggestions under a search box, as the rider types. */
+.sugg { border: 1px solid var(--border); border-radius: 10px; background: var(--surface); box-shadow: 0 10px 28px color-mix(in srgb, var(--ink) 16%, transparent); overflow: hidden; }
+.sugg .sh { font: 600 11.5px/1 var(--display); letter-spacing: .1em; text-transform: uppercase; color: var(--ink-2); padding: 10px 12px 4px; }
+.sugg .so { display: flex; align-items: center; gap: 10px; padding: 7px 12px; min-height: 44px; }
+.sugg .so svg { width: 16px; height: 16px; stroke: var(--ink-2); flex: none; }
+.sugg .so.on { background: var(--sign-soft); }
+.sugg .so .grow { flex: 1; min-width: 0; }
+.sugg .so b { display: block; font-weight: 600; font-size: 14px; line-height: 19px; }
+.sugg .so u { text-decoration-thickness: 2px; text-underline-offset: 2px; }
+.sugg .so .hint { display: block; }
+.sugg .all { border-top: 1px solid var(--border); color: var(--sign); font-weight: 600; }
+/* Meel's own lists, days and months, drawn instead of the browser's (last screen) */
+.input.pick > svg:last-child { width: 16px; height: 16px; stroke: var(--ink-2); margin-left: auto; flex: none; }
+.input.bad { border-color: var(--stale-fg); }
+.err { font-size: 12.5px; font-weight: 500; color: var(--stale-fg); }
+.input .clear { margin-left: auto; width: 26px; height: 26px; border-radius: 50%; background: var(--surface-2); display: grid; place-items: center; flex: none; }
+.input .clear svg { width: 13px; height: 13px; stroke: var(--ink-2); }
+.optl { display: flex; flex-direction: column; }
+.optl .oh { font: 600 11.5px/1 var(--display); letter-spacing: .1em; text-transform: uppercase; color: var(--ink-2); padding: 12px 8px 6px; }
+.optl .oo { display: flex; align-items: center; gap: 10px; min-height: 44px; padding: 0 8px; border-radius: 8px; font-size: 14px; }
+.optl .oo.on { font-weight: 600; }
+.optl .oo.act { background: var(--sign-soft); }
+.optl .oo svg { width: 16px; height: 16px; stroke: var(--sign); margin-left: auto; flex: none; }
+.sheet .sh-h { display: flex; align-items: center; justify-content: space-between; }
+.sheet .sh-h b { font: 700 20px/1.1 var(--display); }
+.sheet .sh-h .iconbtn svg, .pop .iconbtn svg { width: 16px; height: 16px; }
+.cal { display: flex; flex-direction: column; gap: 4px; }
+.cal .ch { display: flex; align-items: center; justify-content: space-between; padding-bottom: 4px; }
+.cal .ch b { font: 700 18px/1 var(--display); letter-spacing: .02em; }
+.cal .wk, .cal .dg { display: grid; grid-template-columns: repeat(7, 1fr); text-align: center; }
+.cal .wk span { font-size: 11.5px; color: var(--ink-2); font-weight: 600; padding: 4px 0; }
+.cal .dg span { width: 40px; height: 40px; margin: 1px auto; display: grid; place-items: center; font-size: 14px; border-radius: 50%; font-variant-numeric: tabular-nums; }
+.cal .dg .off { color: var(--rule); opacity: .55; }
+.cal .dg .today { box-shadow: inset 0 0 0 1.5px var(--ink-2); font-weight: 600; }
+.cal .dg .on { background: var(--sign); color: var(--surface); font-weight: 600; box-shadow: none; }
+.cal .dg .act { outline: 2px solid var(--sign); outline-offset: 2px; }
+.cal .said { font-size: 12.5px; color: var(--ink-2); text-align: center; padding-top: 4px; }
+.mg { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; }
+.mg span { height: 46px; display: grid; place-items: center; border: 1px solid var(--border); border-radius: 8px; font-size: 14px; }
+.mg .on { background: var(--sign); border-color: var(--sign); color: var(--surface); font-weight: 600; }
+.mg .off { color: var(--rule); background: var(--surface-2); }
+.pop { position: absolute; background: var(--surface); border: 1px solid var(--border); border-radius: 10px; box-shadow: 0 10px 28px color-mix(in srgb, var(--ink) 16%, transparent); padding: 8px; z-index: 2; }
+/* The foot of every page: a band the colour of tarmac, closed off by the dashed middle line of a road. */
+.sfoot { background: var(--ink); color: color-mix(in srgb, var(--surface) 78%, var(--ink)); display: flex; flex-direction: column; flex: none; }
+.sfoot p { margin: 0; }
+.sfoot .fmark { display: flex; align-items: center; gap: 8px; }
+.sfoot .mark b { color: var(--ink); }
+.sfoot .fmark > b { font: 700 20px/1 var(--display); letter-spacing: .06em; text-transform: uppercase; color: var(--surface); }
+.sfoot .fbrand { display: flex; flex-direction: column; gap: 6px; }
+.sfoot .fcol { display: flex; flex-direction: column; gap: 8px; }
+.sfoot .fh { font: 600 11.5px/1.2 var(--display); letter-spacing: .12em; text-transform: uppercase; color: var(--stone); }
+.sfoot .fl { color: var(--surface); font-weight: 500; }
+.sfoot .fl.u { text-decoration: underline; text-underline-offset: 2px; }
+.sfoot .road { border-top: 2px dashed color-mix(in srgb, var(--stone) 75%, var(--ink)); }
+.sfoot .frule { color: var(--surface); font-weight: 500; }
+.sfoot .fine { font-size: 11.5px; line-height: 17px; color: color-mix(in srgb, var(--surface) 62%, var(--ink)); }
+.sf-phone { padding: 18px 16px 16px; gap: 14px; font-size: 13px; line-height: 18px; }
+.sf-phone .fgrid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px 12px; }
+.sf-desk { padding: 26px 40px 22px; gap: 16px; font-size: 13.5px; line-height: 19px; }
+.sf-desk .frow { display: grid; grid-template-columns: 1.4fr 1fr 1fr 1fr; gap: 32px; }
+.sf-desk .fbottom { display: flex; justify-content: space-between; align-items: baseline; gap: 24px; }
+/* Google asks that its button stay white with its own mark. It is never recoloured to Meel's green. */
+.btn-google { background: var(--surface); color: var(--ink); border-color: var(--border); }
+.btn-google svg, .gm svg { width: 18px; height: 18px; flex: none; display: block; }
+.or { display: flex; align-items: center; gap: 10px; font-size: 12px; color: var(--ink-2); }
+.or::before, .or::after { content: ''; flex: 1; border-top: 1px solid var(--border); }
+.link { color: var(--sign); font-weight: 600; text-decoration: underline; text-underline-offset: 2px; }
+.input { height: 44px; border: 1px solid var(--border); border-radius: 8px; padding: 0 12px; display: flex; align-items: center; gap: 8px; color: var(--ink-2); background: var(--surface); }
+.input svg { width: 16px; height: 16px; stroke: var(--ink-2); flex: none; }
+.input.filled { color: var(--ink); }
+.input.focus { border-color: var(--sign); box-shadow: 0 0 0 3px var(--sign-soft); }
+.field { display: flex; flex-direction: column; gap: 5px; }
+.field > label { font-size: 12.5px; font-weight: 600; }
+.field > label em { font-style: normal; font-weight: 400; color: var(--ink-2); }
+.hint { font-size: 12px; line-height: 17px; color: var(--ink-2); }
+.lbl { font: 600 12.5px/1 var(--display); letter-spacing: 0.1em; text-transform: uppercase; color: var(--ink-2); }
+.hscroll { display: flex; gap: 6px; overflow: hidden; flex: none; }
+.chip { height: 40px; padding: 0 14px; border-radius: 20px; border: 1px solid var(--border); display: inline-flex; align-items: center; gap: 6px; font-size: 13px; background: var(--surface); flex: none; white-space: nowrap; }
+.chip.on { border-color: var(--sign); background: var(--sign-soft); color: var(--sign); font-weight: 600; }
+.chip svg { width: 14px; height: 14px; stroke: currentColor; }
+.callout { border-radius: 8px; padding: 10px 12px; font-size: 13px; line-height: 19px; border: 1px solid var(--border); background: var(--surface-2); }
+.callout b { display: block; margin-bottom: 1px; }
+.callout.info { background: var(--sign-soft); border-color: var(--sign-line); }
+.callout.warn { background: var(--ageing-bg); border-color: color-mix(in srgb, var(--ageing-fg) 30%, var(--surface)); }
+.callout.stone { background: var(--stone-soft); border-color: color-mix(in srgb, var(--stone) 60%, var(--surface)); }
+.sec-h { display: flex; justify-content: space-between; align-items: baseline; gap: 8px; }
+.sec-h h3 { margin: 0; font: 700 21px/1.1 var(--display); letter-spacing: 0.01em; }
+
+/* Route header: the kilometre stone */
+.khead { display: grid; grid-template-columns: 66px 1fr; gap: 12px; align-items: center; }
+.kstone { width: 66px; height: 82px; border-radius: 32px 32px 6px 6px; border: 2px solid var(--ink); overflow: hidden; display: flex; flex-direction: column; background: var(--surface); }
+.kstone .cap { height: 27px; background: var(--stone); border-bottom: 2px solid var(--ink); display: grid; place-items: end center; padding-bottom: 3px; font: 700 13px/1 var(--display); letter-spacing: 0.06em; }
+.kstone .km { flex: 1; display: grid; place-content: center; text-align: center; font: 700 22px/0.95 var(--display); font-variant-numeric: tabular-nums; }
+.kstone .km small { display: block; font-size: 12px; letter-spacing: 0.1em; font-weight: 600; }
+.khead h2 { margin: 0; font: 700 28px/1 var(--display); text-transform: uppercase; letter-spacing: 0.01em; }
+.khead p { margin: 4px 0 0; font-size: 12.5px; color: var(--ink-2); }
+.keys { display: grid; grid-template-columns: repeat(3, 1fr); border: 1px solid var(--border); border-radius: 8px; overflow: hidden; }
+.keys div { padding: 8px 10px; border-right: 1px solid var(--border); }
+.keys div:last-child { border-right: 0; }
+.keys span { display: block; font-size: 11.5px; color: var(--ink-2); }
+.keys b { font: 700 18px/1.15 var(--display); font-variant-numeric: tabular-nums; }
+.keys.four { grid-template-columns: repeat(2, 1fr); }
+.keys.four div:nth-child(2) { border-right: 0; }
+.keys.four div:nth-child(-n+2) { border-bottom: 1px solid var(--border); }
+.keys .gapk b { color: var(--stale-fg); }
+.steps-list { display: flex; flex-direction: column; gap: 8px; }
+.steps-list div { display: flex; gap: 10px; align-items: flex-start; font-size: 13px; line-height: 19px; }
+.steps-list i { font: 700 13px/22px var(--display); font-style: normal; width: 22px; height: 22px; border-radius: 50%; background: var(--stone); color: var(--ink); text-align: center; flex: none; }
+
+/* Facts */
+.fact { border: 1px solid var(--border); border-radius: 8px; padding: 10px 12px; display: flex; flex-direction: column; gap: 4px; background: var(--surface); }
+.fact.hi { border-color: var(--ink); box-shadow: 0 0 0 3px var(--stone-soft); }
+.fact-h { display: flex; justify-content: space-between; align-items: flex-start; gap: 8px; }
+.fact-h b { font-size: 14.5px; line-height: 19px; }
+.fact-d { font-size: 13px; line-height: 19px; }
+.fact-src { font-size: 12px; line-height: 17px; color: var(--ink-2); font-variant-numeric: tabular-nums; }
+.fact-a { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-top: 6px; }
+.fact-a .btn { height: 44px; }
+.rows { border: 1px solid var(--border); border-radius: 8px; background: var(--surface); }
+.row { display: flex; align-items: center; gap: 10px; padding: 10px 12px; border-bottom: 1px solid var(--border); min-height: 48px; }
+.row:last-child { border-bottom: 0; }
+.row .grow { flex: 1; min-width: 0; }
+.row b { display: block; font-size: 14px; line-height: 19px; }
+.row .hint { display: block; }
+.row > svg { width: 16px; height: 16px; stroke: var(--ink-2); flex: none; }
+.row .ic { width: 32px; height: 32px; border-radius: 6px; background: var(--surface-2); display: grid; place-items: center; flex: none; }
+.row .ic svg { width: 16px; height: 16px; stroke: var(--ink); }
+.num { font-variant-numeric: tabular-nums; }
+
+/* Fuel gap strip, drawn to scale */
+.gap-strip { position: relative; height: 96px; margin: 0 8px; }
+.gap-strip .line { position: absolute; left: 0; right: 0; top: 46px; height: 6px; background: var(--sign); border-radius: 3px; }
+.gap-strip .dry { position: absolute; top: 46px; height: 6px; background: repeating-linear-gradient(90deg, var(--stale-fg) 0 6px, var(--surface) 6px 10px); }
+.gap-strip .pt { position: absolute; top: 40px; width: 2px; height: 18px; background: var(--ink); }
+.gap-strip .pt span { position: absolute; left: 50%; transform: translateX(-50%); font-size: 11.5px; line-height: 13px; white-space: nowrap; text-align: center; font-weight: 600; }
+.gap-strip .pt.up span { bottom: 22px; }
+.gap-strip .pt.dn span { top: 22px; }
+.gap-strip .pt.first span { left: 0; transform: none; text-align: left; }
+.gap-strip .pt.last span { left: auto; right: 0; transform: none; text-align: right; }
+.gap-strip .pt.lab span { left: -22px; transform: none; text-align: left; }
+.gap-strip .pt small { display: block; font-size: 12px; font-weight: 400; color: var(--ink-2); font-variant-numeric: tabular-nums; }
+.gap-strip .tag { position: absolute; top: 58px; font: 600 12px/1 var(--display); letter-spacing: 0.08em; text-transform: uppercase; color: var(--stale-fg); transform: translateX(-50%); white-space: nowrap; }
+.meter { height: 12px; border-radius: 6px; background: var(--surface-2); border: 1px solid var(--border); position: relative; overflow: hidden; }
+.meter i { position: absolute; left: 0; top: 0; bottom: 0; background: var(--sign); }
+.meter i.short { background: var(--stale-fg); }
+.meter u { position: absolute; top: -2px; bottom: -2px; width: 2px; background: var(--ink); }
+.big { font: 700 34px/1 var(--display); font-variant-numeric: tabular-nums; }
+.big small { font: 500 13px/1 var(--body); color: var(--ink-2); }
+.result { border-radius: 10px; padding: 14px; display: flex; flex-direction: column; gap: 8px; border: 1px solid var(--border); }
+.result.bad { background: var(--stale-bg); border-color: color-mix(in srgb, var(--stale-fg) 30%, var(--surface)); }
+.result.ok { background: var(--fresh-bg); border-color: color-mix(in srgb, var(--fresh-fg) 30%, var(--surface)); }
+
+/* Map placeholder: a region, never a country outline */
+.map { height: 270px; border-radius: 10px; border: 1px solid var(--border); position: relative; overflow: hidden; background: var(--surface-2); flex: none; }
+.map svg { position: absolute; inset: 0; width: 100%; height: 100%; }
+.map .credit { position: absolute; right: 6px; bottom: 5px; font-size: 10.5px; color: var(--ink-2); background: color-mix(in srgb, var(--surface) 85%, transparent); padding: 1px 5px; border-radius: 3px; }
+.pin { position: absolute; transform: translate(-50%, -100%); font: 600 11.5px/1 var(--display); letter-spacing: 0.04em; white-space: nowrap; display: flex; flex-direction: column; align-items: center; gap: 2px; }
+.pin span { background: var(--surface); border: 1.5px solid var(--ink); border-radius: 4px; padding: 3px 6px; }
+.pin i { width: 8px; height: 8px; border-radius: 50%; background: var(--ink); border: 2px solid var(--surface); }
+.pin.full span { background: var(--sign); color: var(--surface); border-color: var(--sign); }
+.pin.none span { border-style: dashed; color: var(--ink-2); }
+
+/* Route cards */
+.rcard { border: 1px solid var(--border); border-radius: 8px; padding: 10px 12px; display: flex; flex-direction: column; gap: 3px; }
+.rcard.unwritten { border-style: dashed; background: var(--surface-2); }
+.rcard .r1 { display: flex; justify-content: space-between; gap: 8px; align-items: flex-start; }
+.rcard b { font: 700 18px/1.15 var(--display); letter-spacing: 0.01em; }
+
+/* Chat app frames */
+.chat { background: var(--chat-ground); flex: 1; display: flex; flex-direction: column; min-height: 0; }
+.chat-top { background: var(--chat-bar); color: var(--surface); min-height: 56px; display: flex; align-items: center; gap: 10px; padding: 0 12px; flex: none; }
+.chat-top svg { width: 20px; height: 20px; stroke: var(--surface); }
+.chat-top b { display: block; font-size: 15px; line-height: 19px; }
+.chat-top span { font-size: 11.5px; opacity: 0.8; }
+.chat-av { width: 36px; height: 36px; border-radius: 50%; background: var(--stone); color: var(--ink); display: grid; place-items: center; font: 700 14px/1 var(--display); flex: none; }
+.chat-body { flex: 1; padding: 12px 10px; display: flex; flex-direction: column; gap: 8px; overflow: hidden; }
+.msg { max-width: 84%; border-radius: 10px; padding: 6px 9px 5px; font-size: 13.5px; line-height: 19px; background: var(--chat-in); align-self: flex-start; box-shadow: 0 1px 0 color-mix(in srgb, var(--ink) 12%, transparent); }
+.msg.out { background: var(--chat-out); align-self: flex-end; }
+.msg .who { font-size: 12px; font-weight: 600; color: var(--sign); display: block; }
+.msg .t { display: block; text-align: right; font-size: 10.5px; color: var(--ink-2); font-variant-numeric: tabular-nums; }
+.preview { border-radius: 8px; overflow: hidden; background: color-mix(in srgb, var(--ink) 7%, var(--chat-out)); margin-bottom: 5px; }
+/* The card a chat app shows, as built: white, the stone on the left, the words on the right. */
+.preview .pic { height: 96px; background: var(--surface); color: var(--ink); display: flex; align-items: center; gap: 12px; padding: 0 14px; border-bottom: 1px solid var(--border); }
+.preview .pic strong { font: 700 22px/1.05 var(--display); letter-spacing: 0.01em; }
+.preview .pic em { display: block; font: 600 13px/1.2 var(--display); letter-spacing: 0.04em; color: var(--ink-2); font-style: normal; margin-top: 3px; }
+.preview .txt { padding: 7px 9px; }
+.preview .txt b { display: block; font-size: 13.5px; line-height: 18px; }
+.preview .txt span { display: block; font-size: 12px; line-height: 17px; color: var(--ink-2); }
+.chat-in { background: var(--surface); margin: 0 8px 10px; border-radius: 22px; min-height: 44px; padding: 10px 14px; font-size: 13.5px; line-height: 19px; flex: none; display: flex; gap: 8px; align-items: flex-end; }
+.chat-in .send { width: 30px; height: 30px; border-radius: 50%; background: var(--sign); display: grid; place-items: center; flex: none; margin: -3px -6px -3px 0; }
+.chat-in .send svg { width: 15px; height: 15px; stroke: var(--surface); }
+
+/* Sheets, toasts, lists */
+.sheet-scrim { position: absolute; inset: 0; background: var(--overlay); }
+.sheet { position: absolute; left: 0; right: 0; bottom: 0; background: var(--surface); border-radius: 18px 18px 0 0; padding: 8px 16px 24px; display: flex; flex-direction: column; gap: 12px; }
+.sheet .grab { width: 40px; height: 4px; border-radius: 2px; background: var(--border); align-self: center; margin-bottom: 2px; }
+.sheet h3 { margin: 0; font: 700 22px/1.1 var(--display); }
+.sheet p { margin: 0; font-size: 13.5px; line-height: 20px; color: var(--ink-2); }
+.radio-list { display: flex; flex-direction: column; border: 1px solid var(--border); border-radius: 8px; }
+.radio-list div { display: flex; align-items: center; gap: 10px; padding: 0 12px; min-height: 46px; border-bottom: 1px solid var(--border); font-size: 14px; }
+.radio-list div:last-child { border-bottom: 0; }
+.radio { width: 18px; height: 18px; border-radius: 50%; border: 1.5px solid var(--rule); flex: none; }
+.on > .radio { border: 5px solid var(--sign); }
+.box { width: 18px; height: 18px; border-radius: 4px; border: 1.5px solid var(--rule); flex: none; display: grid; place-items: center; }
+.box.on { background: var(--sign); border-color: var(--sign); }
+.box svg { width: 12px; height: 12px; stroke: var(--surface); }
+.quote { border-left: 3px solid var(--border); padding: 2px 0 2px 10px; font-size: 13px; line-height: 19px; color: var(--ink); white-space: pre-line; }
+.tl { display: flex; flex-direction: column; }
+.tl div { display: grid; grid-template-columns: 92px 1fr; gap: 10px; padding: 8px 0; border-bottom: 1px dashed var(--border); font-size: 13px; line-height: 18px; }
+.tl div:last-child { border-bottom: 0; }
+.tl span { color: var(--ink-2); font-variant-numeric: tabular-nums; }
+.acc { border: 1px solid var(--border); border-radius: 8px; }
+.acc-h { display: flex; justify-content: space-between; align-items: center; gap: 8px; padding: 0 12px; min-height: 46px; font-weight: 600; font-size: 14px; }
+.acc-h svg { width: 16px; height: 16px; stroke: var(--ink-2); flex: none; }
+.acc-h .hint { font-weight: 400; }
+.acc-b { padding: 0 12px 12px; display: flex; flex-direction: column; gap: 10px; }
+.steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 4px; }
+.steps i { height: 4px; border-radius: 2px; background: var(--border); }
+.steps i.on { background: var(--sign); }
+.vid { display: grid; grid-template-columns: 112px 1fr; gap: 10px; align-items: center; }
+.vid .thumb { height: 64px; border-radius: 6px; background: var(--ink); display: grid; place-items: center; position: relative; }
+.vid .thumb svg { width: 22px; height: 22px; fill: var(--surface); stroke: none; }
+.vid .thumb u { position: absolute; right: 4px; bottom: 4px; font-size: 10.5px; text-decoration: none; color: var(--surface); background: color-mix(in srgb, var(--ink) 70%, transparent); padding: 0 4px; border-radius: 3px; font-variant-numeric: tabular-nums; }
+.vid b { display: block; font-size: 13.5px; line-height: 18px; }
+.empty { border: 1px dashed var(--rule); border-radius: 8px; padding: 18px 14px; text-align: center; color: var(--ink-2); display: flex; flex-direction: column; gap: 8px; align-items: center; }
+/* Weather at the passes: one place a block, three days across. */
+.wx { border: 1px solid var(--border); border-radius: 8px; background: var(--surface); }
+.wx-h { display: flex; justify-content: space-between; align-items: baseline; gap: 8px; padding: 8px 12px 6px; }
+.wx-h b { font-size: 14px; }
+.wx-t { width: 100%; border-collapse: collapse; font-size: 12.5px; font-variant-numeric: tabular-nums; }
+.wx-t th { text-align: left; font-weight: 400; color: var(--ink-2); font-size: 11.5px; padding: 4px 12px 2px; border-top: 1px solid var(--border); }
+.wx-t td { padding: 4px 12px; border-top: 1px dashed var(--border); }
+.wx-t td:first-child { font-weight: 600; }
+.wx-t .snow { color: var(--stale-fg); font-weight: 600; }
+.wx-t .fl td { border-top: 0; padding-top: 0; color: var(--stale-fg); font-size: 11.5px; }
+/* The last three answers on a fact, newest first. */
+.ans { display: flex; gap: 6px; flex-wrap: wrap; }
+.ans span { display: inline-flex; align-items: center; gap: 4px; height: 26px; padding: 0 9px; border-radius: 13px; border: 1px solid var(--border); font-size: 12px; font-variant-numeric: tabular-nums; }
+.ans .y { background: var(--fresh-bg); color: var(--fresh-fg); border-color: transparent; }
+.ans .n { background: var(--stale-bg); color: var(--stale-fg); border-color: transparent; }
+/* The emergency card's numbers. */
+.sos { display: grid; grid-template-columns: 1fr; gap: 8px; }
+.sos div { display: flex; align-items: center; gap: 12px; border: 1px solid var(--border); border-radius: 8px; padding: 10px 12px; background: var(--surface); }
+.sos b.n { font: 700 28px/1 var(--display); font-variant-numeric: tabular-nums; min-width: 64px; }
+.sos .hint { display: block; }
+.msg-preview { border: 1px solid var(--border); border-radius: 8px; padding: 10px 12px; background: var(--surface-2); font-size: 13px; line-height: 19px; white-space: pre-line; }
+.empty b { color: var(--ink); font-size: 14.5px; }
+.bars { display: flex; flex-direction: column; gap: 9px; }
+.bar { display: grid; grid-template-columns: 1fr 34px; gap: 4px 8px; align-items: center; font-size: 13px; }
+.bar .track { grid-column: 1 / -1; height: 8px; background: var(--surface-2); border-radius: 4px; overflow: hidden; }
+.bar .fill { height: 100%; background: var(--sign); border-radius: 4px; }
+.bar .n { text-align: right; font-variant-numeric: tabular-nums; color: var(--ink-2); }
+.locked { opacity: 0.55; }
+
+
+.legend { display: flex; flex-wrap: wrap; gap: 4px 14px; font-size: 12px; color: var(--ink-2); }
+.legend span { display: inline-flex; align-items: center; gap: 6px; }
+.legend i { width: 22px; height: 0; border-top: 3px solid var(--sign); }
+.legend i.l-basic { border-top: 3px dotted var(--ink); }
+.legend i.l-none { border-top: 3px dashed var(--rule); }
+
+/* Elevation profile, drawn to one scale */
+.profile { border: 1px solid var(--border); border-radius: 8px; padding: 8px 6px 2px; background: var(--surface); }
+.profile svg { display: block; width: 100%; height: auto; overflow: visible; }
+.profile .grid { stroke: var(--border); stroke-width: 1; }
+.profile .area { fill: var(--sign-soft); stroke: none; }
+.profile .ln { fill: none; stroke: var(--sign); stroke-width: 2.5; stroke-linejoin: round; stroke-linecap: round; }
+.profile text { font: 600 12px var(--body); fill: var(--ink); }
+.profile text.ax { font-weight: 400; fill: var(--ink-2); }
+.profile .dot { fill: var(--surface); stroke: var(--ink); stroke-width: 2; }
+.profile .night { fill: var(--stone); stroke: var(--ink); stroke-width: 2; }
+.profile .night.bad { fill: var(--stale-fg); stroke: var(--ink); }
+.profile .pcap { margin: 2px 6px 6px; font-size: 11.5px; line-height: 16px; color: var(--ink-2); }
+.nights { border: 1px solid var(--border); border-radius: 8px; }
+.night-row { display: grid; grid-template-columns: 30px 1fr auto; gap: 10px; align-items: center; padding: 9px 12px; border-bottom: 1px solid var(--border); min-height: 52px; }
+.night-row:last-child { border-bottom: 0; }
+.night-row .n { width: 30px; height: 30px; border-radius: 50%; background: var(--stone); display: grid; place-items: center; font: 700 15px/1 var(--display); }
+.night-row b { display: block; font-size: 14px; line-height: 19px; }
+.gain { font: 700 17px/1 var(--display); font-variant-numeric: tabular-nums; text-align: right; }
+.gain small { display: block; font: 400 11px/14px var(--body); color: var(--ink-2); }
+.gain.bad { color: var(--stale-fg); } .gain.ok { color: var(--fresh-fg); } .gain.mid { color: var(--ageing-fg); }
+
+/* Network grid */
+.grid-net { border: 1px solid var(--border); border-radius: 8px; overflow: hidden; }
+.grid-net .gr { display: grid; grid-template-columns: 1.25fr 1fr 1fr 1fr; border-bottom: 1px solid var(--border); }
+.grid-net .gr:last-child { border-bottom: 0; }
+.grid-net .gr > span { padding: 7px 8px; font-size: 12.5px; line-height: 16px; border-right: 1px solid var(--border); }
+.grid-net .gr > span:last-child { border-right: 0; }
+.grid-net .gh > span { font: 600 12px/16px var(--display); letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-2); background: var(--surface-2); }
+.grid-net b { display: block; font-size: 13px; }
+.grid-net small { display: block; font-size: 11px; line-height: 14px; color: var(--ink-2); font-variant-numeric: tabular-nums; }
+.cy b { color: var(--fresh-fg); } .cn b { color: var(--stale-fg); } .cu b { color: var(--rule); font-weight: 400; }
+
+/* Riding hours: a range, drawn to one scale of 0 to 8 hours */
+.leg { border: 1px solid var(--border); border-radius: 8px; padding: 10px 12px; display: flex; flex-direction: column; gap: 4px; }
+.leg .r1 { display: flex; justify-content: space-between; align-items: baseline; gap: 8px; }
+.leg .r1 b { font-size: 14.5px; }
+.range { position: relative; height: 24px; }
+.range .track { position: absolute; left: 0; right: 0; top: 10px; height: 4px; background: var(--surface-2); border-radius: 2px; }
+.range .span { position: absolute; top: 7px; height: 10px; background: var(--sign-line); border-radius: 5px; }
+.range .typ { position: absolute; top: 3px; width: 4px; height: 18px; background: var(--sign); border-radius: 2px; margin-left: -2px; }
+.range .mapt { position: absolute; top: 2px; height: 20px; border-left: 2px dashed var(--ink-2); }
+.scale { display: flex; justify-content: space-between; font-size: 10.5px; color: var(--ink-2); font-variant-numeric: tabular-nums; }
+
+/* Offline banner */
+.offline { display: flex; gap: 8px; align-items: center; padding: 8px 12px; background: var(--ink); color: var(--surface); font-size: 12.5px; line-height: 17px; flex: none; }
+.offline svg { width: 16px; height: 16px; stroke: var(--stone); flex: none; }
+.map.gone { display: grid; place-items: center; text-align: center; color: var(--ink-2); font-size: 12.5px; height: 120px; border-style: dashed; }
+
+/* Laptop frames */
+.desk { width: 1280px; height: 800px; border-radius: 10px; overflow: hidden; background: var(--surface); box-shadow: var(--frame-shadow); display: flex; flex-direction: column; font-size: 14px; flex: none; border: 1px solid var(--border); }
+.desk-top { height: 62px; border-bottom: 1px solid var(--border); display: flex; align-items: center; gap: 16px; padding: 0 24px; flex: none; }
+.desk-top .brand { font: 700 22px/1 var(--display); text-transform: uppercase; letter-spacing: 0.02em; }
+.desk-top .input { width: 320px; height: 40px; }
+.desk-top .sp { flex: 1; }
+.desk-main { flex: 1; display: grid; grid-template-columns: 236px minmax(0, 1fr) 348px; min-height: 0; }
+.desk-nav { border-right: 1px solid var(--border); padding: 18px 12px; display: flex; flex-direction: column; gap: 2px; overflow: hidden; }
+.desk-nav .it { display: flex; align-items: center; gap: 10px; padding: 9px 10px; border-radius: 6px; font-weight: 500; font-size: 13.5px; }
+.desk-nav .it.on { background: var(--sign-soft); color: var(--sign); font-weight: 600; }
+.desk-nav .it svg { width: 16px; height: 16px; stroke: currentColor; flex: none; }
+.desk-nav .it .badge { margin-left: auto; }
+.desk-mid { padding: 22px 28px; display: flex; flex-direction: column; gap: 16px; overflow: hidden; min-width: 0; }
+.desk-side { border-left: 1px solid var(--border); background: var(--surface-2); padding: 20px; display: flex; flex-direction: column; gap: 14px; overflow: hidden; }
+.cols2 { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; align-items: start; }
+.msgrow { padding: 10px 12px; border-radius: 6px; display: flex; flex-direction: column; gap: 2px; border: 1px solid transparent; }
+.msgrow.on { background: var(--sign-soft); border-color: var(--sign-line); }
+.msgrow .r1 { display: flex; justify-content: space-between; gap: 8px; align-items: baseline; }
+.msgrow b { font-size: 13.5px; }
+.compare { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.compare > div { display: flex; flex-direction: column; gap: 6px; }
+.checks { display: flex; flex-direction: column; gap: 8px; }
+.check { display: flex; gap: 8px; align-items: flex-start; font-size: 13px; line-height: 19px; }
+.check svg { width: 16px; height: 16px; flex: none; margin-top: 2px; }
+.check.ok svg { stroke: var(--fresh-fg); } .check.wait svg { stroke: var(--ageing-fg); }
+
+
+/* Bottom bar */
+.tabbar { display: grid; grid-template-columns: repeat(4, 1fr); border-top: 1px solid var(--border); background: var(--surface); padding: 6px 4px 18px; flex: none; }
+.tabbar span { display: flex; flex-direction: column; align-items: center; gap: 2px; font-size: 11.5px; color: var(--ink-2); min-height: 44px; justify-content: center; }
+.tabbar span svg { width: 20px; height: 20px; stroke: currentColor; }
+.tabbar span.on { color: var(--sign); font-weight: 600; }
+
+/* Riding together */
+.av { width: 36px; height: 36px; border-radius: 50%; background: var(--stone); color: var(--ink); display: grid; place-items: center; font: 700 14px/1 var(--display); letter-spacing: 0.02em; flex: none; border: 1.5px solid var(--ink); }
+.seats { display: flex; align-items: center; gap: 4px; margin-top: 4px; }
+.seats i { width: 14px; height: 14px; border-radius: 50%; border: 1.5px solid var(--rule); }
+.seats i.on { background: var(--sign); border-color: var(--sign); }
+.seats .hint { margin-left: 6px; }
+
+
+/* Pictures and credit */
+.hero { height: 190px; flex: none; position: relative; display: flex; align-items: flex-end; background:
+  linear-gradient(180deg, color-mix(in srgb, var(--ink) 0%, transparent) 45%, color-mix(in srgb, var(--ink) 70%, transparent)),
+  linear-gradient(160deg, #9DB7C9 0%, #C9D6DC 38%, #8C8377 39%, #6E665C 62%, #4E5A48 63%, #39432F 100%); }
+.hero-cap { color: var(--surface); font: 600 15px/1.2 var(--display); letter-spacing: 0.04em; padding: 10px 12px; }
+.credit-line { font-size: 11.5px; line-height: 16px; color: var(--ink-2); padding: 5px 12px; border-bottom: 1px solid var(--border); flex: none; }
+.input.err { border-color: var(--stale-fg); }
+.hint.err { color: var(--stale-fg); font-weight: 500; }
+
+/* Data sheet (last screen) */
+.sheet-card { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; overflow: hidden; }
+.scroll-x { overflow-x: auto; }
+table.data { border-collapse: collapse; width: 100%; min-width: 760px; font-size: 13.5px; }
+table.data th { text-align: left; font: 600 12.5px/1.2 var(--display); letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-2); padding: 10px 12px; border-bottom: 1px solid var(--border); background: var(--surface-2); }
+table.data td { padding: 9px 12px; border-bottom: 1px solid var(--border); vertical-align: top; line-height: 19px; }
+table.data tr:last-child td { border-bottom: 0; }
+table.data td.n, table.data th.n { text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }
+table.data tr.sum td { font-weight: 600; background: var(--stone-soft); }
+.tiles { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 12px; margin-bottom: 14px; }
+.tile { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 12px 14px; }
+.tile .big { font-size: 38px; }
+.tile span { display: block; font-size: 12.5px; color: var(--ink-2); margin-top: 4px; }
+
+@media (prefers-reduced-motion: no-preference) {
+  .index button, .stage-nav button { transition: background-color 140ms var(--curve), border-color 140ms var(--curve); }
+}
+@media (max-width: 900px) {
+  .doc { grid-template-columns: minmax(0, 1fr); }
+  .index { position: static; height: auto; border-right: 0; border-bottom: 1px solid var(--border); padding: 16px; gap: 12px; }
+  .index #index-groups { display: flex; gap: 14px; overflow-x: auto; padding-bottom: 6px; }
+  .index #index-groups > div { flex: none; width: 210px; }
+  .index .foot { margin-top: 0; }
+  .stage { padding: 18px 16px 40px; }
+  .stage-head h2 { font-size: 26px; }
+}
+/* Ask Meel */
+.ask-q { align-self: flex-end; max-width: 84%; background: var(--sign-soft); border: 1px solid var(--sign-line); border-radius: 14px 14px 4px 14px; padding: 8px 12px; font-size: 14px; line-height: 20px; }
+.ask-a { display: flex; flex-direction: column; gap: 9px; font-size: 14px; line-height: 21px; }
+.ask-a p { margin: 0; }
+.ask-who { font: 600 12px/1 var(--display); letter-spacing: .1em; text-transform: uppercase; color: var(--ink-2); display: flex; align-items: center; gap: 6px; }
+.ask-who svg { width: 14px; height: 14px; stroke: var(--sign); }
+.ask-c { display: inline-grid; place-items: center; min-width: 18px; height: 18px; padding: 0 4px; border-radius: 4px; background: var(--surface-2); border: 1px solid var(--border); font-size: 11px; font-weight: 600; color: var(--sign); vertical-align: 1px; margin-left: 2px; font-variant-numeric: tabular-nums; }
+.ask-step { display: flex; align-items: center; gap: 8px; font-size: 13px; color: var(--ink-2); }
+.ask-step svg { width: 14px; height: 14px; stroke: var(--fresh-fg); flex: none; }
+.ask-step i { width: 8px; height: 8px; border-radius: 50%; background: var(--sign); flex: none; margin: 0 3px; }
+.ask-step.wait i { background: var(--border); }
+.ask-caret { display: inline-block; width: 7px; height: 15px; background: var(--sign); vertical-align: -2px; margin-left: 2px; }
+.ask-pic { border-radius: 8px; overflow: hidden; border: 1px solid var(--border); }
+.ask-pic .hero { height: 150px; }
+.ask-pic .credit-line { border-bottom: 0; }
+.ask-acts { display: flex; gap: 6px; align-items: center; flex-wrap: wrap; }
+.ask-acts .btn { height: 32px; font-size: 12.5px; padding: 0 10px; }
+.ask-row .row b { font-size: 13.5px; }
+.ask-src { font-size: 12px; line-height: 17px; color: var(--ink-2); }
+.ask-bar { display: flex; gap: 8px; align-items: center; }
+.ask-bar .input { flex: 1; }
+.ask-send { width: 44px; height: 44px; border-radius: 8px; background: var(--sign); display: grid; place-items: center; flex: none; }
+.ask-send svg { width: 18px; height: 18px; stroke: var(--surface); }
+.ask-send.off { background: var(--surface-2); border: 1px solid var(--border); }
+.ask-send.off svg { stroke: var(--rule); }
+.ask-starter { display: flex; flex-direction: column; gap: 8px; }
+.ask-starter .chip { justify-content: flex-start; height: auto; min-height: 40px; padding: 8px 14px; white-space: normal; text-align: left; line-height: 18px; border-radius: 12px; }
+/* Planning pages */
+.plan { display: flex; flex-direction: column; gap: 16px; max-width: 1040px; }
+.plan .lead { font-size: 15.5px; line-height: 24px; max-width: 68ch; margin: 0; }
+.plan h3 { margin: 6px 0 0; font: 700 22px/1.15 var(--display); letter-spacing: .01em; }
+.plan p { margin: 0; font-size: 14px; line-height: 21px; max-width: 70ch; }
+.plan .cols { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 12px; }
+.plan .card { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 14px 16px; display: flex; flex-direction: column; gap: 8px; }
+.plan .card h4 { margin: 0; font: 600 13px/1 var(--display); letter-spacing: .1em; text-transform: uppercase; color: var(--ink-2); }
+.plan .card ul { margin: 0; padding-left: 18px; display: flex; flex-direction: column; gap: 5px; font-size: 13.5px; line-height: 20px; }
+.plan .card.yes { border-color: var(--sign-line); }
+.plan .card.no { border-color: color-mix(in srgb, var(--stale-fg) 30%, var(--surface)); }
+.plan table.data { min-width: 720px; }
+.plan table.data td.num, .plan table.data th.num { text-align: right; font-variant-numeric: tabular-nums; }
+.plan .flow { display: grid; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); gap: 10px; counter-reset: st; }
+.plan .flow div { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 12px; font-size: 13px; line-height: 19px; display: flex; flex-direction: column; gap: 4px; }
+.plan .flow div::before { counter-increment: st; content: counter(st); width: 26px; height: 26px; border-radius: 50%; background: var(--stone); display: grid; place-items: center; font: 700 14px/1 var(--display); color: #16201C; }
+.plan .flow b { font-size: 14px; }
+.ask-tbl { width: 100%; border-collapse: collapse; font-size: 13px; }
+.ask-tbl th { text-align: left; font: 600 11.5px/1.2 var(--display); letter-spacing: .08em; text-transform: uppercase; color: var(--ink-2); padding: 7px 8px; border-bottom: 1px solid var(--border); background: var(--surface-2); }
+.ask-tbl td { padding: 7px 8px; border-bottom: 1px solid var(--border); font-variant-numeric: tabular-nums; }
+.ask-route { border: 1px solid var(--border); border-radius: 8px; background: var(--surface-2); height: 120px; position: relative; overflow: hidden; }
+.ask-route svg { width: 100%; height: 100%; display: block; }
+.ask-route .ln { fill: none; stroke: var(--sign); stroke-width: 3; stroke-linecap: round; }
+.ask-route .pt { fill: var(--surface); stroke: var(--ink); stroke-width: 2; }
+.ask-route text { font-size: 10.5px; fill: var(--ink-2); }
+/* ── The Ask Meel mark: a kilometre stone that talks ─────────── */
+.ask-mark { width: 22px; height: 22px; flex: none; overflow: visible; display: block; }
+.ask-mark .m-body { fill: var(--surface); }
+.ask-mark .m-cap { fill: var(--stone); }
+.ask-mark .m-glint { fill: #fff; opacity: .75; animation: m-glint 5s ease-in-out infinite; }
+.ask-mark .m-edge { fill: none; stroke: var(--ink); stroke-width: 1.8; stroke-linejoin: round; }
+.ask-mark .m-road { fill: none; stroke: var(--ink); stroke-width: 1.8; stroke-linecap: round; }
+.ask-mark.think .m-road { animation: m-road .55s linear infinite; }
+.ask-mark.think .m-glint { animation-duration: 1.6s; }
+.ask-mark.think { animation: m-bob 1.1s ease-in-out infinite; }
+.ask-mark.big { width: 64px; height: 64px; filter: drop-shadow(0 8px 14px color-mix(in srgb, var(--stone) 35%, transparent)); }
+.ask-mark.big .m-edge, .ask-mark.big .m-road { stroke-width: 1.5; }
+@keyframes m-glint { 0%, 70% { transform: translateX(0); } 88%, 100% { transform: translateX(16px); } }
+@keyframes m-road { to { transform: translateX(-4.8px); } }
+@keyframes m-bob { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-1.5px); } }
+@keyframes m-halo { 0% { box-shadow: 0 0 0 0 color-mix(in srgb, var(--stone) 70%, transparent); } 80%, 100% { box-shadow: 0 0 0 12px color-mix(in srgb, var(--stone) 0%, transparent); } }
+@keyframes m-dash { to { background-position: -12px 0; } }
+@keyframes m-shimmer { from { background-position: 200% 0; } to { background-position: -200% 0; } }
+@keyframes m-blink { 50% { opacity: 0; } }
+
+/* Top-bar icon */
+.iconbtn.ask-ico { background: var(--stone-soft); border-color: color-mix(in srgb, var(--stone) 55%, var(--surface)); }
+.iconbtn.ask-ico .ask-mark { width: 24px; height: 24px; }
+.iconbtn.ask-ico.new { animation: m-halo 2s ease-out infinite; }
+.ask-who { gap: 8px; }
+/* Thinking: a moving road, shimmering text, skeleton lines */
+.ask-step.wait i { width: 18px; height: 3px; border-radius: 2px; margin: 0; background: repeating-linear-gradient(90deg, var(--ink-2) 0 6px, transparent 6px 12px); animation: m-dash .6s linear infinite; }
+.ask-step.wait span { background: linear-gradient(90deg, var(--ink-2) 0%, var(--ink-2) 35%, var(--sign) 50%, var(--ink-2) 65%, var(--ink-2) 100%); background-size: 200% 100%; -webkit-background-clip: text; background-clip: text; color: transparent; animation: m-shimmer 2s linear infinite; }
+.ask-skel { height: 11px; border-radius: 6px; background: linear-gradient(90deg, var(--surface-2) 25%, var(--stone-soft) 50%, var(--surface-2) 75%); background-size: 200% 100%; animation: m-shimmer 1.6s linear infinite; }
+.ask-caret { background: var(--sign); border-radius: 1px; animation: m-blink 1s steps(1) infinite; }
+/* Input and send */
+.ask-bar .input.focus { border-color: var(--sign); box-shadow: 0 0 0 3px var(--sign-soft); }
+/* Small mentions: search suggestion, route row, starters, laptop button */
+.sugg .so.ask-so svg, .row .ic.ask-ic svg, .ask-starter .chip svg { stroke: var(--sign); }
+.row .ic.ask-ic { background: var(--stone-soft); }
+.row .ic.ask-ic .ask-mark { width: 22px; height: 22px; }
+.sugg .so.ask-so b { color: var(--sign); }
+.btn.ask-btn { background: var(--sign); color: var(--surface); border: 0; }
+.btn.ask-btn svg { stroke: var(--surface); }
+/* First-visit hint */
+.ask-tip { position: absolute; top: 90px; right: 58px; z-index: 3; width: 220px; background: var(--ink); color: var(--surface); border-radius: 8px; border-top: 3px solid var(--stone); padding: 10px 12px; font-size: 12.5px; line-height: 18px; box-shadow: 0 8px 22px color-mix(in srgb, var(--ink) 25%, transparent); }
+.ask-tip::before { content: ""; position: absolute; top: -8px; right: 16px; width: 12px; height: 12px; background: var(--stone); transform: rotate(45deg); z-index: -1; }
+.ask-tip b { display: block; font-size: 13px; margin-bottom: 2px; }
+.ask-tip span { color: var(--stone); font-weight: 600; }
+/* The options screen */
+.mark-opts { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 12px; }
+.mark-opt { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 14px; display: flex; flex-direction: column; gap: 10px; }
+.mark-opt.chosen { border: 2px solid var(--sign); }
+.mark-opt .sizes { display: flex; align-items: flex-end; gap: 14px; padding: 12px; background: var(--surface-2); border-radius: 6px; min-height: 92px; }
+.mark-opt .sizes .lab { font-size: 10.5px; color: var(--ink-2); text-align: center; display: flex; flex-direction: column; align-items: center; gap: 4px; }
+.mark-opt h4 { margin: 0; font: 700 17px/1.1 var(--display); }
+.mark-opt p { margin: 0; font-size: 13px; line-height: 19px; }
+.mark-opt .big64 svg { width: 64px; height: 64px; }
+.mark-opt .mono svg { width: 24px; height: 24px; stroke: var(--ink); fill: none; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+.alt-needle { transform-origin: 12px 12px; animation: alt-seek 2.4s ease-in-out infinite; }
+@keyframes alt-seek { 0% { transform: rotate(-40deg); } 30% { transform: rotate(25deg); } 55% { transform: rotate(-10deg); } 75%, 100% { transform: rotate(0); } }
+@media (prefers-reduced-motion: reduce) {
+  .ask-mark, .ask-mark *, .iconbtn.ask-ico.new, .ask-step.wait i, .ask-step.wait span, .ask-skel, .ask-caret, .alt-needle { animation: none !important; }
+}
+
+</style>
+
+<div class="doc">
+  <nav class="index" aria-label="Screens">
+    <div>
+      <h1>Ask Meel</h1>
+      <p class="lede">A text assistant for rideplanner.in that answers riders from Meel’s own facts, with a date and a source on every sentence. The plan first, then every screen and state.</p>
+    </div>
+    <div id="index-groups"></div>
+    <p class="foot">Wireframes only, nothing built. Questions are examples; the facts quoted are Meel’s real facts as of 17 October 2026, except the Manali to Leh altitude drawing, which reuses the main gallery’s example figures. Colours and type follow the main Meel wireframes.</p>
+  </nav>
+
+  <main class="stage">
+    <div class="stage-head">
+      <div>
+        <div class="eyebrow" id="screen-eyebrow"></div>
+        <h2 id="screen-title"></h2>
+        <p id="screen-lede"></p>
+      </div>
+      <div class="stage-nav">
+        <span class="sample-flag">Example data</span>
+        <button type="button" id="prev">← Previous</button>
+        <button type="button" id="next">Next →</button>
+      </div>
+    </div>
+    <div class="frame-fit" id="fit"><div class="frame" id="frame"></div></div>
+    <section class="notes" id="notes" aria-label="Notes for this screen"></section>
+  </main>
+</div>
+
+<script>
+/* ── Icons: one stroke set, lucide geometry ───────────────────── */
+const I = (d) => `<svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">${d}</svg>`;
+const ICON = {
+  back: I('<path d="m15 18-6-6 6-6"/>'),
+  right: I('<path d="m9 18 6-6-6-6"/>'),
+  down: I('<path d="m6 9 6 6 6-6"/>'),
+  search: I('<circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/>'),
+  check: I('<path d="M20 6 9 17l-5-5"/>'),
+  ext: I('<path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14 21 3"/>'),
+  fuel: I('<path d="M3 22V5a2 2 0 0 1 2-2h7a2 2 0 0 1 2 2v17M2 22h13M6 8h5M14 11h2a2 2 0 0 1 2 2v3a2 2 0 0 0 4 0V8l-3-3"/>'),
+  wrench: I('<path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.8-3.8a6 6 0 0 1-7.9 7.9l-6.9 6.9a2.1 2.1 0 0 1-3-3l6.9-6.9a6 6 0 0 1 7.9-7.9z"/>'),
+  signal: I('<path d="M2 20h.01M7 20v-4M12 20v-8M17 20V8M22 4v16"/>'),
+  peak: I('<path d="m8 3 4 8 5-5 5 15H2z"/>'),
+  bed: I('<path d="M2 4v16M2 8h18a2 2 0 0 1 2 2v10M2 17h20M6 8v9"/>'),
+  play: '<svg viewBox="0 0 24 24"><path d="M7 4v16l13-8z"/></svg>',
+  list: I('<path d="M8 6h13M8 12h13M8 18h13M3 6h.01M3 12h.01M3 18h.01"/>'),
+  map: I('<path d="M9 3 3 6v15l6-3 6 3 6-3V3l-6 3zM9 3v15M15 6v15"/>'),
+  clock: I('<circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/>'),
+  shield: I('<path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>'),
+  send: I('<path d="m22 2-7 20-4-9-9-4zM22 2 11 13"/>'),
+  bag: I('<path d="M6 7V6a6 6 0 0 1 12 0v1M4 7h16l-1 14H5z"/>'),
+  card: I('<rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/>'),
+  lock: I('<rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/>'),
+  phone: I('<path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/>'),
+  plus: I('<path d="M12 5v14M5 12h14"/>'),
+  share: I('<circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="m8.6 13.5 6.8 4M15.4 6.5l-6.8 4"/>'),
+  save: I('<path d="M12 3v12M7 10l5 5 5-5M5 21h14"/>'),
+  wifiOff: I('<path d="M2 2l20 20M8.5 16.4a5 5 0 0 1 7 0M5 12.9a10 10 0 0 1 5.2-2.7M19 12.9a10 10 0 0 0-2-1.5M2 8.8a15 15 0 0 1 4.2-2.6M22 8.8a15 15 0 0 0-11.3-3.9M12 20h.01"/>'),
+  inbox: I('<path d="M22 12h-6l-2 3h-4l-2-3H2"/><path d="M5.5 5.1 2 12v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-6l-3.5-6.9A2 2 0 0 0 16.8 4H7.2a2 2 0 0 0-1.7 1.1z"/>'),
+  flag: I('<path d="M4 22V4M4 4h13l-2 4 2 4H4"/>'),
+  cal: I('<rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/>'),
+  x: I('<path d="M18 6 6 18M6 6l12 12"/>'),
+};
+const esc = (s) => String(s).replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+
+/* ── Shell helpers ────────────────────────────────────────────── */
+const SITE = 'rideplanner.in';
+const statusBar = (t) => `<div class="status-bar"><span>${t}</span><span>●●● ▮</span></div>`;
+const mark = (t = 'M') => `<span class="mark"><i></i><b>${t}</b></span>`;
+const head = (title, sub, { back = true, right = '' } = {}) =>
+  `<div class="ptop">${back ? `<span class="iconbtn">${ICON.back}</span>` : mark()}<span class="ttl"><b>${title}</b>${sub ? `<span>${sub}</span>` : ''}</span>${right}</div>`;
+const body = (html) => `<div class="pbody"><div class="pscroll">${html}</div></div>`;
+const phone = (cap, inner, time = '4:26') => `<figure class="pw"><div class="phone">${statusBar(time)}${inner}</div><figcaption>${cap}</figcaption></figure>`;
+const chev = ICON.right;
+// Google's own mark in Google's colours. Used only beside the words "Google", as Google asks.
+const GMARK = `<svg viewBox="0 0 48 48" aria-hidden="true"><path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"/><path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"/><path fill="#FBBC05" d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z"/><path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"/></svg>`;
+const google = (words = 'Continue with Google') => `<span class="btn btn-google btn-block" style="height:46px">${GMARK}${words}</span>`;
+const or = (words = 'or') => `<div class="or">${words}</div>`;
+
+const STATE = {
+  fresh: ['Fresh', 'b-fresh'], ageing: ['Ageing', 'b-ageing'], stale: ['Stale', 'b-stale'],
+  unchecked: ['Not yet checked', 'b-unchecked'], conflict: ['Reports disagree', 'b-conflict'],
+  pending: ['Change reported', 'b-ageing'],
+};
+const badge = (k) => `<span class="badge ${STATE[k][1]}">${STATE[k][0]}</span>`;
+const twoButtons = `<div class="fact-a"><span class="btn btn-soft">${ICON.check}Still true</span><span class="btn btn-outline">This has changed</span></div>`;
+function fact({ t, d, state, line, open = false, hi = false, extra = '' }) {
+  return `<div class="fact ${hi ? 'hi' : ''}">
+    <div class="fact-h"><b>${t}</b>${badge(state)}</div>
+    ${d ? `<div class="fact-d">${d}</div>` : ''}
+    <div class="fact-src">${line}</div>${extra}${open ? twoButtons : ''}
+  </div>`;
+}
+
+/* ── Example world ────────────────────────────────────────────── */
+const ROUTE = 'Manali to Leh';
+const PUMPS = [
+  { t: 'Tandi petrol pump', d: 'Petrol and diesel. Open 7 am to 7 pm. 61 km from Manali.', state: 'fresh', line: 'Confirmed working by Imran S. · 12 June 2027 · 2 days ago' },
+  { t: 'Keylong petrol pump', d: 'Petrol and diesel. Last pump before a 323 km gap.', state: 'ageing', line: 'Confirmed working by Anjali T. · 30 May 2027 · 15 days ago' },
+  { t: 'Karu petrol pump', d: 'First pump after the gap. 35 km before Leh.', state: 'stale', line: 'Confirmed working by Dev R. · 2 October 2026 · 8 months ago' },
+  { t: 'Leh, two pumps in town', d: 'Petrol and diesel.', state: 'unchecked', line: 'From the oil company’s pump finder · entered 3 November 2026 · no rider has confirmed it' },
+];
+const gapStrip = `<div class="gap-strip" role="img" aria-label="Fuel pumps along the route, drawn to scale. No pump for 323 km between Keylong and Karu.">
+  <div class="line"></div><div class="dry" style="left:16.2%;width:75.6%"></div>
+  <div class="pt up first" style="left:0"><span>Manali<small>0 km</small></span></div>
+  <div class="pt dn" style="left:14.3%"></div>
+  <div class="pt dn lab" style="left:16.2%"><span>Tandi · Keylong<small>61 km · 69 km</small></span></div>
+  <div class="tag" style="left:54%;top:22px">323 km · no pump</div>
+  <div class="pt dn" style="left:91.8%"><span>Karu<small>392 km</small></span></div>
+  <div class="pt up last" style="left:calc(100% - 2px)"><span>Leh<small>427 km</small></span></div>
+</div>`;
+const routeHead = (name, nh, km, sub) => `<div class="khead">
+  <div class="kstone"><div class="cap">${nh}</div><div class="km">${km}<small>KM</small></div></div>
+  <div><h2>${name}</h2><p>${sub}</p></div></div>`;
+const sectionChips = (on) => `<div class="hscroll">${[['fuel', 'Fuel'], ['shield', 'Bike rules'], ['peak', 'Altitude'], ['signal', 'Network'], ['wrench', 'Mechanics']]
+  .map(([ic, l]) => `<span class="chip ${l === on ? 'on' : ''}">${ICON[ic]}${l}</span>`).join('')}</div>`;
+
+/* ── More of the example world ────────────────────────────────── */
+const shareBtn = `<span class="iconbtn">${ICON.share}</span>`;
+/* Place, distance from Manali in km, altitude in metres (shown in feet). Example figures. */
+const ALT = [
+  ['Manali', 0, 2050], ['Tandi', 61, 2570], ['Keylong', 69, 3080], ['Jispa', 91, 3310],
+  ['Baralacha La', 140, 4890], ['Sarchu', 175, 4290], ['Lachulung La', 229, 5059],
+  ['Pang', 250, 4600], ['Tanglang La', 319, 5328], ['Karu', 392, 3400], ['Leh', 427, 3500],
+];
+function profile(nights = [], bad = [], caption = '') {
+  const W = 346, H = 178, L = 36, R = 10, T = 24, B = 30;
+  const x = (km) => L + (km / 427) * (W - L - R);
+  const y = (m) => T + (1 - (m - 2000) / 3500) * (H - T - B);
+  const pts = ALT.map(([, km, m]) => `${x(km).toFixed(1)},${y(m).toFixed(1)}`).join(' ');
+  const lab = { 'Manali': [14, 'start'], 'Jispa': [15, 'middle'], 'Baralacha La': [-9, 'middle'], 'Sarchu': [16, 'middle'], 'Pang': [16, 'middle'], 'Tanglang La': [-9, 'middle'], 'Leh': [15, 'end'] };
+  // Heights are drawn in feet, as riders and pass signboards give them.
+  const grid = [8000, 12000, 16000].map((f) => { const m = f / 3.28084; return `<line class="grid" x1="${L}" x2="${W - R}" y1="${y(m)}" y2="${y(m)}"/><text class="ax" x="${L - 4}" y="${y(m) + 3}" text-anchor="end">${f.toLocaleString('en-IN')}</text>`; }).join('');
+  const ticks = [0, 100, 200, 300, 427].map((km) => `<text class="ax" x="${x(km)}" y="${H - 8}" text-anchor="${km === 0 ? 'start' : km === 427 ? 'end' : 'middle'}">${km}${km === 427 ? ' km' : ''}</text>`).join('');
+  const marks = ALT.map(([n, km, m]) => {
+    const ni = nights.indexOf(n);
+    const dot = ni >= 0
+      ? `<circle class="night ${bad.includes(n) ? 'bad' : ''}" cx="${x(km)}" cy="${y(m)}" r="7.5"/><text x="${x(km)}" y="${y(m) + 3.5}" text-anchor="middle" style="font-size:9px;${bad.includes(n) ? 'fill:var(--surface)' : ''}">${ni + 1}</text>`
+      : (lab[n] ? `<circle class="dot" cx="${x(km)}" cy="${y(m)}" r="3.5"/>` : '');
+    const off = lab[n] ? lab[n][0] + (ni >= 0 ? (lab[n][0] > 0 ? 5 : -5) : 0) : 0;
+    const t = lab[n] ? `<text x="${x(km)}" y="${y(m) + off}" text-anchor="${lab[n][1]}">${n}</text>` : '';
+    return dot + t;
+  }).join('');
+  return `<div class="profile"><svg viewBox="0 0 ${W} ${H}" role="img" aria-label="Altitude along the route from Manali to Leh, drawn to scale.">
+    ${grid}
+    <polygon class="area" points="${x(0)},${y(2000)} ${pts} ${x(427)},${y(2000)}"/>
+    <polyline class="ln" points="${pts}"/>
+    ${marks}${ticks}
+    <text class="ax" x="${L - 4}" y="12" text-anchor="end">feet</text>
+  </svg>${caption ? `<p class="pcap">${caption}</p>` : ''}</div>`;
+}
+const fmtH = (h) => { const m = Math.round(h * 60); return `${Math.floor(m / 60)} h${m % 60 ? ' ' + (m % 60) + ' min' : ''}`; };
+function leg(name, km, typ, lo, hi, mapt, n) {
+  const pc = (h) => `${(h / 8) * 100}%`;
+  return `<div class="leg"><div class="r1"><b>${name}</b><span class="hint num">${km} km</span></div>
+    <div class="range"><span class="track"></span><span class="span" style="left:${pc(lo)};width:${pc(hi - lo)}"></span><span class="mapt" style="left:${pc(mapt)}"></span><span class="typ" style="left:${pc(typ)}"></span></div>
+    <div class="fact-src">Riders usually took <b style="color:var(--ink)">${fmtH(typ)}</b> · quickest ${fmtH(lo)}, slowest ${fmtH(hi)} · ${n} reports<br>A map app says ${fmtH(mapt)}</div></div>`;
+}
+const trip = (route, when, from, by, going, places, pace, state) => `<div class="rcard"><div class="r1"><b>${route}</b>${state}</div>
+  <span class="fact-d">${when}</span>
+  <span class="hint">${from} · led by ${by} · ${pace}</span>
+  <div class="seats" role="img" aria-label="${going} of ${places} places taken">${Array.from({ length: places }, (_, i) => `<i class="${i < going ? 'on' : ''}"></i>`).join('')}<span class="hint num">${going} of ${places} going</span></div></div>`;
+const tabbar = (on) => `<div class="tabbar">${[['map', 'Routes'], ['flag', 'Trips'], ['fuel', 'Tools'], ['list', 'You']].map(([ic, l]) => `<span class="${l === on ? 'on' : ''}">${ICON[ic]}${l}</span>`).join('')}</div>`;
+const desk = (cap, inner) => `<figure class="pw"><div class="desk">${inner}</div><figcaption>${cap}</figcaption></figure>`;
+const deskTop = (right = '') => `<div class="desk-top">${mark()}<span class="brand">Meel</span><span class="input">${ICON.search}<span>Search a route or place</span></span><span class="sp"></span>${right}</div>`;
+
+/* ── Ask Meel: icons and helpers ─────────────────────────────── */
+/* The Ask Meel mark, one line: Meel's kilometre stone with a speech tail, a road inside. */
+ICON.ask = I('<path d="M5 22.5V10a7 7 0 0 1 14 0v6a2 2 0 0 1-2 2H9.5z"/><path d="M5 11h14"/><path d="M9 14.5h2M13 14.5h2"/>');
+ICON.up = I('<path d="M12 19V5M5 12l7-7 7 7"/>');
+ICON.thumb = I('<path d="M7 10v12M15 5.9 14 10h5.8a2 2 0 0 1 1.9 2.6l-2.3 8A2 2 0 0 1 17.5 22H4a2 2 0 0 1-2-2v-8a2 2 0 0 1 2-2h2.8a2 2 0 0 0 1.8-1.1L12 2a3.1 3.1 0 0 1 3 3.9z"/>');
+ICON.copy = I('<rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/>');
+ICON.retry = I('<path d="M3 12a9 9 0 0 1 15-6.7L21 8M21 3v5h-5M21 12a9 9 0 0 1-15 6.7L3 16M3 21v-5h5"/>');
+ICON.info = I('<circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/>');
+
+/* The Ask Meel mark in colour: white stone, yellow cap with a passing glint, a road that moves while it thinks. */
+const STONE = 'M5 22.5V10a7 7 0 0 1 14 0v6a2 2 0 0 1-2 2H9.5z';
+const askMark = (cls = '') => `<svg class="ask-mark ${cls}" viewBox="0 0 24 24" aria-hidden="true">
+  <defs><clipPath id="ask-cap"><path d="M5 11V10a7 7 0 0 1 14 0v1z"/></clipPath><clipPath id="ask-body"><path d="M6 12h12v5H6z"/></clipPath></defs>
+  <path class="m-body" d="${STONE}"/>
+  <g clip-path="url(#ask-cap)"><path class="m-cap" d="M4 11V2h16v9z"/><polygon class="m-glint" points="1,12 3.4,12 7.4,1 5,1"/></g>
+  <path class="m-edge" d="${STONE}M5 11h14"/>
+  <g clip-path="url(#ask-body)"><path class="m-road" d="M3.2 14.5h2.4M8 14.5h2.4M12.8 14.5h2.4M17.6 14.5h2.4M22.4 14.5h2.4"/></g>
+</svg>`;
+
+const ASK = {
+  q: (t) => `<div class="ask-q">${t}</div>`,
+  who: (sub = '', think = false) => `<div class="ask-who">${askMark(think ? 'think' : '')}Meel${sub ? `<span style="text-transform:none;letter-spacing:0;font-weight:400">· ${sub}</span>` : ''}</div>`,
+  c: (n) => `<span class="ask-c">${n}</span>`,
+  bar: (txt = 'Ask about a road, a pass, a pump or a rule', on = false) => `<div class="pfoot"><div class="ask-bar"><div class="input ${on ? 'filled focus' : ''}">${txt}</div><span class="ask-send ${on ? '' : 'off'}">${ICON.up}</span></div></div>`,
+  srcRow: (n, title, line, st) => `<div class="row"><span class="ask-c" style="margin:0">${n}</span><span class="grow"><b>${title}</b><span class="hint">${line}</span></span>${st ? badge(st) : ''}${chev}</div>`,
+  sources: (rows) => `<div class="lbl">Where this comes from</div><div class="rows ask-row">${rows.join('')}</div>`,
+  acts: (more = '') => `<div class="ask-acts"><span class="btn btn-outline">${ICON.thumb}Useful</span><span class="btn btn-outline">This answer is wrong</span><span class="btn btn-outline">${ICON.share}Share</span>${more}</div>`,
+  next: (list) => `<div class="lbl">Ask next</div><div class="hscroll">${list.map((l) => `<span class="chip">${l}</span>`).join('')}</div>`,
+  step: (t, done = true) => `<div class="ask-step ${done ? '' : 'wait'}">${done ? ICON.check : '<i></i>'}<span>${t}</span></div>`,
+  skel: (w) => `<div class="ask-skel" style="width:${w}%"></div>`,
+  top: (sub = 'Answers only from Meel’s facts', right = '') => head('Ask Meel', sub, { right }),
+};
+/* The Ask icon that sits in the phone top bar, left of the page’s own icon. */
+const askBtn = `<span class="iconbtn ask-ico" aria-label="Ask Meel">${askMark()}</span>`;
+
+/* The real Manali to Leh pumps, drawn to scale (434.1 km). Keylong 72.5 km, Karu 401.8 km. */
+const gapReal = `<div class="gap-strip" role="img" aria-label="Fuel pumps along Manali to Leh, drawn to scale. No pump for 329 km between Keylong and Karu.">
+  <div class="line"></div><div class="dry" style="left:16.7%;width:75.9%"></div>
+  <div class="pt up first" style="left:0"><span>Manali<small>0 km</small></span></div>
+  <div class="pt dn" style="left:9.4%"></div><div class="pt dn" style="left:14.1%"></div>
+  <div class="pt dn lab" style="left:16.7%"><span>Sissu · Tandi · Keylong<small>41 · 61 · 72 km</small></span></div>
+  <div class="tag" style="left:54%;top:22px">329 km · no pump</div>
+  <div class="pt dn" style="left:92.6%"><span>Karu<small>402 km</small></span></div>
+  <div class="pt up last" style="left:calc(100% - 2px)"><span>Leh<small>434 km</small></span></div>
+</div>`;
+
+/* Gandikota to Araku valley, the four stretches of Meel's Andhra route, drawn to scale (812.6 km). */
+const arakuLine = `<div class="ask-route" role="img" aria-label="Araku valley to Gandikota through Paderu, Lambasingi and Narsipatnam, 812.6 km.">
+  <svg viewBox="0 0 340 120" preserveAspectRatio="none">
+    <path class="ln" d="M20 30 L38 40 L57 52 L70 58 L320 92"/>
+    <circle class="pt" cx="20" cy="30" r="5"/><circle class="pt" cx="38" cy="40" r="4"/><circle class="pt" cx="57" cy="52" r="4"/><circle class="pt" cx="70" cy="58" r="4"/><circle class="pt" cx="320" cy="92" r="5"/>
+    <text x="14" y="18">Araku valley</text><text x="76" y="50">Paderu · Lambasingi · Narsipatnam</text><text x="260" y="112">Gandikota</text>
+    <text x="170" y="66">690.3 km</text>
+  </svg></div>`;
+
+const vidA = (t, by, stretch, when) => `<div class="fact"><div class="vid"><span class="thumb">${ICON.play}<u>video</u></span><span><b>${t}</b><span class="fact-src">${by} · ${stretch}<br>${when}</span></span></div></div>`;
+
+/* ── Screens ──────────────────────────────────────────────────── */
+const SCREENS = [
+  /* ── The plan ── */
+  {
+    group: 'The plan', title: 'What Ask Meel is for',
+    lede: 'A text assistant on rideplanner.in that answers a rider’s question from Meel’s own facts, shows where each sentence came from and how old it is, and shows Meel’s own pictures when they help.',
+    plain: true,
+    render: () => `<div class="plan">
+      <p class="lead">Riders already type questions into Google and land on Meel: “petrol pump in chitkul”, “toong check post”, “gandikota to araku valley distance”. Today they land on a long route page and have to find the line themselves. Ask Meel finds the line for them, and answers in a sentence with its date beside it.</p>
+      <div class="cols">
+        <div class="card yes"><h4>It does</h4><ul>
+          <li>Answers from Meel’s facts only: the 51 routes, 4,515 facts and their history.</li>
+          <li>Numbers every claim and links it to the fact it came from.</li>
+          <li>Says how old each fact is, in the same words as the site: fresh, ageing, stale, not yet checked.</li>
+          <li>Shows Meel’s own drawings (the fuel gap, the altitude line, the route line), the route photo with its credit, and riders’ videos.</li>
+          <li>Understands English, Hindi and Hinglish, and spelling mistakes.</li>
+          <li>Says “Meel has no fact on this” when it has none, and points to the closest fact it does have.</li>
+        </ul></div>
+        <div class="card no"><h4>It never</h4><ul>
+          <li>Says a road, pass or check post is open or closed. It gives the offices that announce it, as the route page does.</li>
+          <li>Answers from the open web or the model’s own memory.</li>
+          <li>Makes pictures, or shows photos from other sites.</li>
+          <li>Gives costs, ranks bikes, or gives medical advice beyond Meel’s altitude facts and the emergency number.</li>
+          <li>Needs an account to ask.</li>
+          <li>Gets its own tab or a floating button. It is an icon in the top bar.</li>
+          <li>Changes a fact. A rider’s “This answer is wrong” goes to the editor like any fact report.</li>
+        </ul></div>
+      </div>
+      <h3>Principles, in order</h3>
+      <div class="cols">
+        <div class="card"><h4>1 · True or silent</h4><p>A sentence with no fact behind it is not written. Better “Meel has no fact on this” than a guess about fuel in a 329 km gap.</p></div>
+        <div class="card"><h4>2 · Dated, always</h4><p>Every answer carries the dates of the facts it used. A stale fact is said to be stale inside the sentence, not only in a badge.</p></div>
+        <div class="card"><h4>3 · A way back to the page</h4><p>Every source opens the fact on its route page. Ask Meel is a faster way into the site, not a second site.</p></div>
+        <div class="card"><h4>4 · Short</h4><p>Read on a phone at a dhaba with one bar of signal. The answer first, in two to four sentences, then the detail.</p></div>
+      </div>
+      <h3>Not in this version</h3>
+      <div class="cols"><div class="card"><ul>
+        <li>Voice. Text only, as asked.</li>
+        <li>Planning a whole trip day by day. It answers questions about routes; it does not write itineraries.</li>
+        <li>Answers from riders’ trip reports and chat groups. Only checked facts, for now.</li>
+        <li>Working with no network. Asking needs a network; saved route pages still work offline.</li>
+      </ul></div></div>
+    </div>`,
+    notes: [
+      ['Why now', ['Search Console shows riders asking questions, not searching names. Of the top queries in October, most are a pump at a place, a check post, or the distance between two places.', 'Meel already holds the answers. They are spread across 51 long pages.']],
+      ['How it talks', ['A question, a few steps while it looks, an answer built from Meel’s facts, its sources at the foot.', 'It only reads. It has no actions and changes nothing.']],
+    ],
+  },
+  {
+    group: 'The plan', title: 'What riders ask, and how each is answered',
+    lede: 'Real searches that already bring riders to Meel, grouped by the kind of answer they need. Each kind gets its own answer layout in the frames that follow.',
+    plain: true,
+    render: () => {
+      const rows = [
+        ['A pump at a place', '“petrol pump in chitkul”, “anjali pump shillong”, “petrol pump near me”', 'Nearest pumps before and after the place, with distances and dates. The fuel-gap drawing.', 'Pumps', '10'],
+        ['Distance between two places', '“gandikota to araku valley distance”, “jaipur to longewala distance”, “thal to munsiyari”', 'Kilometres along Meel’s route, stretch by stretch, and what a map app says. The route line.', 'Stretches, route line', '13'],
+        ['A check post or permit', '“toong check post”, “eaagman”', 'The rule in one sentence, who set it, the date it was last seen, and how it changed.', 'Rules and their history', '15'],
+        ['Is it open?', '“zoji la open”, “manali leh road status”', 'Never open or closed. The offices that announce it, the season history, the last date Meel saw news.', 'Offices, season history', '16'],
+        ['Where to stop the night', '“where to stay between manali and leh”', 'Night halts by height, with the altitude drawing and the altitude facts.', 'Altitude, halts', '13'],
+        ['When to go', '“best time for spiti”, “tungnath closing date”', 'The usual season and the dated opening and closing of past years.', 'Season history', '17'],
+        ['Comparing routes', '“spiti or ladakh in october”', 'A small table of the same facts side by side, each with its date.', 'Route headers, season', '14'],
+        ['Off topic or unsafe', '“best bike for ladakh”, “ladakh trip cost”, “headache at sarchu”', 'Says what Meel does not cover, offers what it does. For health, the altitude facts and 112.', 'Altitude, emergency card', '18'],
+      ];
+      return `<div class="plan">
+        <p class="lead">The examples in quotation marks are real queries from Search Console, as typed (Meel’s top queries, read 17 to 18 October 2026), plus a few riders are certain to ask. The last column says which screen in this gallery shows that answer.</p>
+        <div class="sheet-card"><div class="scroll-x"><table class="data">
+          <thead><tr><th>Kind of question</th><th>As riders type it</th><th>What a good answer holds</th><th>Facts it reads</th><th class="n">Screen</th></tr></thead>
+          <tbody>${rows.map((r) => `<tr><td><b>${r[0]}</b></td><td>${r[1]}</td><td>${r[2]}</td><td>${r[3]}</td><td class="n">${r[4]}</td></tr>`).join('')}</tbody>
+        </table></div></div>
+        <h3>Questions about the place, not the road</h3>
+        <p>“Things to do in Chitkul”, hotels, food. Meel has a line about each place and its videos, nothing more. Ask Meel says so and offers the route facts. These are counted, so if riders keep asking, the plan can change.</p>
+      </div>`;
+    },
+    notes: [
+      ['How the list will grow', ['Every question asked is kept for 30 days, without the phone or account (see screen 5, the decisions).', 'Each week, questions that got “Meel has no fact on this” are listed for the editor. That list is the to-do list for new facts.']],
+      ['Spelling', ['“eaagman” is e-Aagman, Himachal’s entry pass. Riders type it as they hear it. Search by meaning finds it anyway.']],
+    ],
+  },
+  {
+    group: 'The plan', title: 'What it knows, and what it doesn’t',
+    lede: 'Everything on the site, counted from Meel’s data as of 17 October 2026. Each of these becomes searchable by meaning (embeddings), and each keeps its date and its source.',
+    plain: true,
+    render: () => {
+      const rows = [
+        ['Fuel pumps', '2,619', 'Name, brand, place, km from the start, hours if known', 'The open map; riders confirm', 'Yes'],
+        ['Fuel gaps', 'per route', 'From pump to pump, the longest first', 'Worked out from the pumps', 'Yes'],
+        ['Rules for motorcycles', '308', 'The rule in a sentence, who set it, the order if found, and each past change', 'Official sites and news', 'Yes'],
+        ['Hazards', '234', 'Water crossings, landslides, rough stretches, with where and when', 'News and official advisories', 'Yes'],
+        ['Offices that announce closures', '196', 'Who, what they announce, which stretch, where they post it', 'Official sites', 'Yes'],
+        ['Season years', '67', 'Connected, open to motorcycles, closed, with a source each', 'News and orders', 'Yes'],
+        ['Riders’ videos', '215', 'Title, channel, stretch, month filmed, bike', 'YouTube pages', 'Shown as cards'],
+        ['Route photos', '51', 'One per route, with photographer and licence', 'Wikimedia Commons', 'Shown with credit'],
+        ['Stretches and heights', 'every route', 'From, to, km, map-app hours; places with their height', 'Open map and encyclopedias', 'Drawn as a line'],
+        ['Route pages and tools', '51 + 4', 'Header, season note, gaps list, the fuel check, altitude plan, packing list', 'Meel', 'Linked'],
+      ];
+      return `<div class="plan">
+        <div class="tiles">
+          <div class="tile"><div class="big">51</div><span>routes, from Umling La to Kanyakumari.</span></div>
+          <div class="tile"><div class="big">4,515</div><span>facts with a date and a source. Each is one small piece Ask Meel can find.</span></div>
+          <div class="tile"><div class="big">266</div><span>photos and videos it may show, all already on the site with their credit.</span></div>
+          <div class="tile"><div class="big">0</div><span>facts from anywhere else. If it isn’t on Meel, Ask Meel doesn’t know it.</span></div>
+        </div>
+        <div class="sheet-card"><div class="scroll-x"><table class="data">
+          <thead><tr><th>What</th><th class="n">How many</th><th>Each one holds</th><th>Where it came from</th><th>In answers</th></tr></thead>
+          <tbody>${rows.map((r) => `<tr><td><b>${r[0]}</b></td><td class="n">${r[1]}</td><td>${r[2]}</td><td>${r[3]}</td><td>${r[4]}</td></tr>`).join('')}</tbody>
+        </table></div></div>
+        <div class="cols">
+          <div class="card no"><h4>It doesn’t know</h4><ul>
+            <li>Today’s road status. Nobody publishes it reliably; Meel links the offices instead.</li>
+            <li>Hotels, food, costs, which bike is best.</li>
+            <li>Anything said in chat groups or trip reports that the editor has not checked.</li>
+            <li>Places not on a Meel route. It says which routes come nearest.</li>
+          </ul></div>
+          <div class="card"><h4>The gaps Meel already admits</h4><ul>
+            <li>Every route lists what its researchers could not find, such as “No dated source found for winter closures of the Sangla to Chitkul road.”</li>
+            <li>Ask Meel reads these too, so it can say “Meel looked and found nothing” instead of just “no fact”.</li>
+          </ul></div>
+        </div>
+      </div>`;
+    },
+    notes: [
+      ['Kept fresh', ['The search index is rebuilt with every data rebuild, the same step that sends pages to search engines today. No separate job.', 'A fact’s age is worked out at the moment of the answer, not stored, so “15 days ago” is always right.']],
+      ['Counts', ['From data/routes on 17 October 2026, after the Leh to Padum route was added.']],
+    ],
+  },
+  {
+    group: 'The plan', title: 'How one question is answered',
+    lede: 'What happens between the rider pressing send and the first word appearing. The architecture comes next; this is the order of work the screens depend on.',
+    plain: true,
+    render: () => `<div class="plan">
+      <div class="flow">
+        <div><b>Read the question</b>Spelling fixed, Hinglish understood. If it names a route or a place, that is noted. If it is asked from a route page, that route comes first.</div>
+        <div><b>Is it a question Meel answers?</b>Off-topic, “is it open”, costs, bikes and health each have a fixed reply shape. These skip the search.</div>
+        <div><b>Already answered?</b>A starter question, or one that means nearly the same as an earlier answer on this route whose facts haven’t changed, gets that answer again. No model call.</div>
+        <div><b>Find the facts</b>Search by meaning across all 4,515 facts, plus exact matches on place names. The best 6 to 8 are kept, each as one short line.</div>
+        <div><b>Check them</b>Facts from the wrong route are dropped. If two disagree, both are kept and marked. Each fact’s age is worked out.</div>
+        <div><b>Write only from them</b>The model writes two to four sentences, each ending with the numbers of its facts. A sentence with no number is removed before it is shown.</div>
+        <div><b>Add pictures</b>Chosen by rule, not by the model: a fuel question gets the gap drawing, a distance gets the route line, a route gets its photo, and videos come when the stretch has some.</div>
+        <div><b>Show and keep</b>The answer appears word by word. Sources, pictures and next questions appear when it is done. The question is kept 30 days.</div>
+      </div>
+      <h3>What the rider sees while it works</h3>
+      <p>Three short lines: what it understood (“Fuel near Chitkul, on Kinnaur”), how many facts it found, then the answer as it is written. On a slow network these lines are the difference between waiting and leaving. Screen 10 shows them.</p>
+      <h3>Time it should take</h3>
+      <div class="cols">
+        <div class="card"><h4>First line on screen</h4><p>Under 1 second: “Looking in Kinnaur…”.</p></div>
+        <div class="card"><h4>First word of the answer</h4><p>Under 3 seconds on 4G.</p></div>
+        <div class="card"><h4>Whole answer</h4><p>Under 8 seconds. Past 15, the slow state shows (screen 22).</p></div>
+      </div>
+    </div>`,
+    notes: [
+      ['Why pictures are chosen by rule', ['The model could pick a wrong photo, or describe one that isn’t there. A rule can’t.', 'Each kind of question has one drawing it may show. The model only decides whether to mention it.']],
+      ['Cost', ['About ₹0.02 when Gemini is called (about 1,600 tokens in, 200 out). Fixed replies, starter questions and re-used answers cost nothing, so the average is about ₹0.01 to ₹0.015.', 'An earlier answer is re-used only when every fact it used is unchanged; a changed fact clears it.']],
+      ['Why the check after writing', ['Models sometimes write a confident sentence with nothing behind it. Removing any sentence without a source number is the cheapest way to stop that reaching a rider.']],
+    ],
+  },
+  {
+    group: 'The plan', title: 'Decisions to make',
+    lede: 'The wireframes assume an answer to each. Tick it as it stands, or change it. The model and cost wait for the architecture.',
+    plain: true,
+    render: () => {
+      const d = [
+        ['Name', '“Ask Meel”', 'Short, says what it is, and uses the brand.'],
+        ['Where it lives', 'No new tab. An Ask icon in the phone top bar on every page (an Ask button on a laptop), offered in the search box for questions, a row on every route page, and “Ask about this fact” on an opened fact.', 'Meel has four tabs and they are enough. The icon gives a way in from anywhere without covering facts.'],
+        ['What it may answer', 'Riding on Meel’s routes, from Meel’s facts only. Other topics get one line and an offer.', 'Anything else is the model talking, not Meel.'],
+        ['Open or closed', 'Never says it. Gives the offices, the season history and the last date seen.', 'The same rule the route page keeps. A wrong “open” could strand someone.'],
+        ['Pictures', 'Meel’s own drawings, route photos with credit, riders’ videos. Never AI-made pictures.', 'Every picture is already on the site and already credited.'],
+        ['Language', 'Understands English, Hindi and Hinglish. Answers in the language and script asked.', 'A large share of riders type Hinglish.'],
+        ['Accounts and limits', 'No account needed. 10 questions a day per phone, 40 when logged in.', 'Keeps the monthly cost known. The numbers can rise once cost per question is measured.'],
+        ['What is kept', 'Questions and answers 30 days, with no phone number, account or IP. Laptop history stays in the browser.', 'Enough to learn what is missing, nothing that names a rider.'],
+        ['Sharing', 'Each answer can get a link, frozen as written, with its date and a link to the live facts.', 'Riders share in chat groups. A frozen answer can’t quietly change under a forwarded link.'],
+        ['Wrong answers', '“This answer is wrong” goes to the editor’s inbox beside fact reports, with the question, the answer and the facts used.', 'One inbox, one routine.'],
+        ['Model and cost', 'Decided: Gemini 2.5 Flash-Lite, about ₹0.04 a question, on personal Google Cloud credits until 12 January 2027. Still to check that a new project can use it. Fallback: Gemini 3.1 Flash-Lite (₹0.12) or Claude Haiku 5.5. A site-wide cap of 2,000 questions a day keeps the worst month near ₹2,400. Personal keys only.', 'At today’s traffic a month costs about ₹6; at 1,000 questions a day about ₹1,200.'],
+      ];
+      return `<div class="plan">
+        <div class="sheet-card"><div class="scroll-x"><table class="data">
+          <thead><tr><th style="width:40px"></th><th>Decision</th><th>What the frames assume</th><th>Why</th></tr></thead>
+          <tbody>${d.map((r) => `<tr><td><span class="box"></span></td><td><b>${r[0]}</b></td><td>${r[1]}</td><td>${r[2]}</td></tr>`).join('')}</tbody>
+        </table></div></div>
+        <p>The same list, with checkboxes, is in meel-ask-meel-plan.md on the Desktop.</p>
+      </div>`;
+    },
+    notes: [['After these', ['The architecture: what is embedded and when, where it is stored (Neon with pgvector), the model, streaming, limits, and cost per question.', 'Then build, then check each frame against the built screen.']]],
+  },
+  {
+    group: 'The plan', title: 'How we’ll know it works',
+    lede: 'Before launch, Ask Meel answers a fixed set of real rider questions and is scored. After launch, a few numbers show whether riders trust it.',
+    plain: true,
+    render: () => `<div class="plan">
+      <h3>Before launch: the test set</h3>
+      <div class="cols">
+        <div class="card"><h4>The questions</h4><ul>
+          <li>120 questions: every Search Console query that fits, plus questions written for each kind on screen 2.</li>
+          <li>20 in Hinglish or Hindi, 15 spelt wrong, 15 that Meel has no fact for, 10 off-topic, 10 “is it open”.</li>
+          <li>Each has the facts a right answer must use, written down first.</li>
+        </ul></div>
+        <div class="card"><h4>Pass marks</h4><ul>
+          <li>No sentence without a source: 100%.</li>
+          <li>Never “open” or “closed”: 100%.</li>
+          <li>Right facts found: 90% or more.</li>
+          <li>“No fact” when there is none: 95% or more.</li>
+          <li>Answers in the language asked: 95% or more.</li>
+        </ul></div>
+      </div>
+      <h3>After launch: what to watch</h3>
+      <div class="sheet-card"><div class="scroll-x"><table class="data">
+        <thead><tr><th>Number</th><th>Why it matters</th><th>Worry if</th></tr></thead>
+        <tbody>
+          <tr><td><b>Sources opened per answer</b></td><td>Riders check, and reach the route page</td><td>Below 0.2</td></tr>
+          <tr><td><b>“This answer is wrong” per 100 answers</b></td><td>Direct sign of bad answers</td><td>Above 3</td></tr>
+          <tr><td><b>“No fact” answers per 100</b></td><td>What Meel is missing</td><td>Reviewed weekly, not a target</td></tr>
+          <tr><td><b>Follow-up questions per visit</b></td><td>Riders find it worth a second question</td><td>Below 1.2</td></tr>
+          <tr><td><b>Cost per answer</b></td><td>Keeps the limits honest</td><td>Above the figure set in the architecture</td></tr>
+        </tbody></table></div></div>
+      <h3>Events sent to Mixpanel</h3>
+      <p>ask_opened (from where), ask_sent (kind, language, route if any), ask_answered (seconds, facts used, no-fact or not), ask_source_opened, ask_marked_useful, ask_marked_wrong, ask_shared, ask_limit_reached. The question text itself is not sent to Mixpanel.</p>
+    </div>`,
+    notes: [['Running the test', ['The test runs on every change to the prompt or the search, before deploy.']]],
+  },
+
+  /* ── Finding it ── */
+  {
+    group: 'Finding it', title: 'A question typed into search',
+    lede: 'Most riders will meet Ask Meel without looking for it: they type a question into the search box they already use.',
+    render: () => phone('1. Typing a question on the front page', `
+      ${head('Meel', '51 routes', { back: false, right: askBtn + `<span class="iconbtn">${ICON.map}</span>` })}
+      ${body(`
+        <div class="input filled focus">${ICON.search}<span>petrol pump in chitkul</span></div>
+        <div class="sugg">
+          <div class="so on ask-so">${ICON.ask}<span class="grow"><b>Ask Meel: “petrol pump in chitkul”</b><span class="hint">An answer from Meel’s facts, with dates</span></span></div>
+          <div class="sh">Places</div>
+          <div class="so">${ICON.flag}<span class="grow"><b><u>Chitkul</u></b><span class="hint">On Kinnaur: Sangla, Chitkul and Kalpa</span></span></div>
+          <div class="sh">Routes</div>
+          <div class="so">${ICON.map}<span class="grow"><b>Kinnaur: Sangla, Chitkul and Kalpa</b><span class="hint">Himachal · 229 km</span></span></div>
+        </div>`)}
+      ${tabbar('Routes')}`)
+    + phone('2. A place name alone', `
+      ${head('Meel', '51 routes', { back: false, right: askBtn + `<span class="iconbtn">${ICON.map}</span>` })}
+      ${body(`
+        <div class="input filled focus">${ICON.search}<span>chitkul</span></div>
+        <div class="sugg">
+          <div class="so">${ICON.flag}<span class="grow"><b><u>Chitkul</u></b><span class="hint">On Kinnaur: Sangla, Chitkul and Kalpa</span></span></div>
+          <div class="so">${ICON.map}<span class="grow"><b>Kinnaur: Sangla, Chitkul and Kalpa</b><span class="hint">Himachal · 229 km</span></span></div>
+          <div class="so all ask-so">${ICON.ask}<span class="grow">Ask Meel about “chitkul”</span></div>
+        </div>`)}
+      ${tabbar('Routes')}`),
+    notes: [
+      ['When Ask Meel comes first', ['When the text reads as a question: three words or more, or a question word (what, where, how, kitna, kahan, kya), or words like pump, distance, permit, open, check post.', 'Otherwise it sits last, under the places and routes (frame 2). A name alone usually wants the page.']],
+      ['Behaviour', ['Enter with nothing picked does what it does today. Picking the Ask row opens frame 7 with the question already sent.', 'The rider’s words go across exactly as typed, spelling and all.']],
+      ['Data', ['Nothing new. The question words are a short fixed list.']],
+    ],
+  },
+  {
+    group: 'Finding it', title: 'The Ask icon, a route page, a fact',
+    lede: 'A rider who wants to ask something without searching first needs a way in on every page. The Ask icon sits in the top bar; route pages and facts add their own way to ask about what is on screen.',
+    render: () => phone('1. The Ask icon on the front page, first visit', `
+      ${head('Meel', '51 routes · 13 regions', { back: false, right: askBtn.replace('ask-ico', 'ask-ico new') + `<span class="iconbtn">${ICON.map}</span>` })}
+      ${body(`
+        <span class="hint" style="font-size:13px;color:var(--ink)">Dated facts for Indian motorcycle routes. Every fact shows who confirmed it, and when.</span>
+        <div class="input">${ICON.search}<span>Search a route or place</span></div>
+        <div class="hscroll">${['All', 'Ladakh', 'Himachal', 'Uttarakhand', 'North-East'].map((l) => `<span class="chip ${l === 'Himachal' ? 'on' : ''}">${l}</span>`).join('')}</div>
+        <div class="rcard"><div class="r1"><b>Kinnaur: Sangla, Chitkul and Kalpa</b></div><span class="hint">229 km · 44 facts</span></div>
+        <div class="rcard"><div class="r1"><b>Spiti circuit</b></div><span class="hint">612 km</span></div>
+        <div class="rcard"><div class="r1"><b>Manali to Leh</b></div><span class="hint">434 km</span></div>`)}
+      <div class="ask-tip"><b>New: ask Meel a question</b>Fuel, permits, passes, distances. Answers come from Meel’s facts, with their dates. <span>Got it</span></div>
+      ${tabbar('Routes')}`)
+    + phone('2. On every route page, and the row', `
+      ${head('Kinnaur', 'Sangla, Chitkul and Kalpa', { right: askBtn + shareBtn })}
+      ${body(`
+        ${routeHead('Kinnaur', 'NH 5', '229', 'Himachal Pradesh · up the Sutlej, then the Baspa valley to Chitkul')}
+        <div class="keys"><div><span>Highest</span><b>11,320 ft</b></div><div><span>Pumps</span><b>11</b></div><div><span>Facts</span><b>44</b></div></div>
+        <div class="rows"><div class="row"><span class="ic ask-ic">${askMark()}</span><span class="grow"><b>Ask about this route</b><span class="hint">“Where’s the last pump before Chitkul?”</span></span>${chev}</div></div>
+        ${sectionChips('Fuel')}`)}`)
+    + phone('3. “Ask about this fact” on an opened fact', `
+      ${head('North Sikkim', 'Rules for motorcycles', { right: askBtn })}
+      ${body(`
+        <div class="fact hi"><div class="fact-h"><b>Cross Toong check post by 4 pm</b>${badge('ageing')}</div>
+          <div class="fact-d">Going up and coming down, under a Mangan district order reported on 11 September 2026. The order’s text was not found. Carry your permit.</div>
+          <div class="fact-src">News report · 11 September 2026 · checked by the editor 17 October 2026</div>
+          <div class="fact-a"><span class="btn btn-soft">${ICON.check}Still true</span><span class="btn btn-outline">This has changed</span></div>
+          <span class="link" style="display:flex;gap:6px;align-items:center;font-size:13px">${ICON.ask.replace('<svg', '<svg width="15" height="15" stroke="currentColor"')}Ask about this fact</span>
+        </div>`)}`)
+    + phone('4. Opened from a route page: the route is set', `
+      ${ASK.top('Kinnaur first')}
+      ${body(`
+        <div class="callout stone"><b>Asking about Kinnaur</b>Answers come from this route first. <span class="link">Ask about all routes</span></div>
+        <div class="lbl">Riders often ask</div>
+        <div class="ask-starter">
+          <span class="chip">${ICON.ask}Where is the last pump before Chitkul?</span>
+          <span class="chip">${ICON.ask}Do I need a permit for Chitkul?</span>
+          <span class="chip">${ICON.ask}How far is Sangla from Rampur?</span>
+          <span class="chip">${ICON.ask}Is the Chitkul road shut in winter?</span>
+        </div>`)}
+      ${ASK.bar('Ask about Kinnaur')}`),
+    notes: [
+      ['The Ask icon (frames 1 to 3)', ['The talking kilometre stone (screen 24) on a soft yellow square. On the first visit a yellow halo pulses from it until the hint is closed (frame 1).', 'In the top bar of the front page, the route list and every route and section page, left of the page’s own icon (map, share).', 'Tinted green with the signboard colour, so it reads as different from the plain icons beside it. Read out as “Ask Meel” by screen readers.', 'From the front page it opens the empty Ask page (screen 9). From a route or section page it opens with that route set (frame 4).', 'Not shown on the Ask page itself, on account and log-in pages, or on the editor’s pages.', 'No fifth tab and no floating button: the four tabs stay, and nothing covers a fact.']],
+      ['First-visit hint (frame 1)', ['Shown once per browser, the first time the icon is on screen. Closes on “Got it”, on a tap anywhere, or when the icon is used, and never shows again.', 'Not shown to a rider who arrived on a shared fact link until their second page, so the fact they came for is seen first.', 'Remembered in the browser only.']],
+      ['Where the row sits (frame 2)', ['Under the route’s key figures, above the sections. One row, never a floating button: it must not cover facts.', 'It says the same as the icon but with an example question for this route, for riders who don’t notice icons.']],
+      ['From a fact (frame 3)', ['“Ask about this fact” opens Ask Meel with the fact attached, so “when did this change?” or “is there an order?” needs no more words.', 'The fact shows at the top of the conversation as a small card.']],
+      ['Starter questions (frame 4)', ['Four per route, written from what riders search for that route. Fixed per route, not made by the model, so they always have an answer.', 'Answered in advance at every data rebuild (about ₹2 for all 204), so a tap costs nothing.']],
+    ],
+  },
+
+  /* ── Before the first question ── */
+  {
+    group: 'Before the first question', title: 'The empty page, and how answers work',
+    lede: 'The first time, a rider needs to know two things: what it can answer, and how far to trust it.',
+    render: () => phone('1. Opened from the top bar or search', `
+      ${ASK.top('Answers only from Meel’s facts', `<span class="iconbtn">${ICON.info}</span>`)}
+      ${body(`
+        <div style="display:flex;flex-direction:column;gap:8px;padding:8px 0">
+          ${askMark('big')}
+          <h3 style="margin:0;font:700 26px/1.05 var(--display);text-transform:uppercase">Ask about a road</h3>
+          <span class="fact-d">Fuel, permits, check posts, passes, distances and seasons on Meel’s 51 routes. Every answer shows where it came from, and how old it is.</span>
+        </div>
+        <div class="lbl">Riders often ask</div>
+        <div class="ask-starter">
+          <span class="chip">${ICON.ask}Petrol pump in Chitkul?</span>
+          <span class="chip">${ICON.ask}Toong check post timing</span>
+          <span class="chip">${ICON.ask}Gandikota to Araku valley distance</span>
+          <span class="chip">${ICON.ask}e-Aagman pass bike ke liye chahiye?</span>
+        </div>
+        <span class="hint">10 questions a day without logging in.</span>`)}
+      ${ASK.bar()}`)
+    + phone('2. “How answers work”', `
+      ${ASK.top()}
+      ${body('')}
+      <div class="sheet-scrim"></div>
+      <div class="sheet"><span class="grab"></span>
+        <h3>How Ask Meel answers</h3>
+        <div class="rows">
+          <div class="row"><span class="ic">${ICON.list}</span><span class="grow"><b>Only from Meel’s facts</b><span class="hint">Never from the open web. If Meel has no fact, it says so.</span></span></div>
+          <div class="row"><span class="ic">${ICON.clock}</span><span class="grow"><b>Every fact has a date</b><span class="hint">The number after a sentence opens the fact, its source and when it was checked.</span></span></div>
+          <div class="row"><span class="ic">${ICON.flag}</span><span class="grow"><b>Never “open” or “closed”</b><span class="hint">For roads and passes it gives the offices that announce it.</span></span></div>
+          <div class="row"><span class="ic">${ICON.peak}</span><span class="grow"><b>Pictures are Meel’s own</b><span class="hint">Route photos with their credit, riders’ videos, Meel’s drawings.</span></span></div>
+        </div>
+        <div class="callout"><b>Your questions</b>Kept for 30 days to see what Meel is missing, without your phone number or account.</div>
+        <span class="btn btn-primary btn-block" style="height:46px">Got it</span>
+      </div>`),
+    notes: [
+      ['Look and motion', ['Ask Meel’s mark is Meel’s own kilometre stone with a speech tail: white body, yellow cap, and a short road inside. Screen 24 shows why, and three other ideas.', 'At rest a glint passes over the yellow cap every few seconds, like reflective paint on a real stone.', 'While it thinks, the road inside the stone moves and the stone bobs gently, as if on its way; the waiting step has a moving road dash, its words shimmer, and grey lines shimmer where the answer will be.', 'While it writes, a green caret blinks. The input gets a green edge while typing.', 'All motion stops for riders whose phone asks for reduced motion. Nothing ever starts hidden: every frame reads the same with motion off.']],
+      ['Starter questions', ['Taken from real searches, rewritten as a rider would ask. One in Hinglish, so riders see they can.', 'Tapping one sends it at once. Their answers are written in advance at each data rebuild, so a tap costs nothing and the answer appears at once (still with the short steps, for the same feel).']],
+      ['The sheet', ['Shown by itself the first time only, then from the ⓘ button. Remembered in the browser.']],
+      ['Limit line', ['Shows the day’s limit only when not logged in. After 7 questions it becomes “3 questions left today”.']],
+    ],
+  },
+
+  /* ── An answer, step by step ── */
+  {
+    group: 'An answer, step by step', title: 'While it looks, then the answer',
+    lede: 'The rider asked about fuel in Chitkul. First it says what it understood and what it found, then it writes, then the sources and the drawing appear.',
+    render: () => phone('1. Looking', `
+      ${ASK.top()}
+      ${body(`
+        ${ASK.q('petrol pump in chitkul')}
+        <div class="ask-a">
+          ${ASK.who('', true)}
+          ${ASK.step('Fuel near Chitkul, on Kinnaur')}
+          ${ASK.step('Found 6 facts: 11 pumps on the route, 1 gap note')}
+          ${ASK.step('Writing the answer', false)}
+          ${ASK.skel(92)}${ASK.skel(78)}${ASK.skel(55)}
+        </div>`)}
+      ${ASK.bar('Ask a follow-up')}`)
+    + phone('2. Writing', `
+      ${ASK.top()}
+      ${body(`
+        ${ASK.q('petrol pump in chitkul')}
+        <div class="ask-a">
+          ${ASK.who('6 facts', true)}
+          <p><b>There is no pump in Chitkul.</b> The nearest is at Batseri, 27 km before Chitkul on the Sangla road${ASK.c(1)}. Fill up there or at Karcham${ASK.c(2)}<span class="ask-caret"></span></p>
+        </div>`)}
+      ${ASK.bar('Ask a follow-up')}`)
+    + phone('3. The whole answer', `
+      ${ASK.top()}
+      ${body(`
+        ${ASK.q('petrol pump in chitkul')}
+        <div class="ask-a">
+          ${ASK.who('6 facts · Kinnaur')}
+          <p><b>There is no pump in Chitkul.</b> The nearest is at Batseri, 27 km before Chitkul on the Sangla road${ASK.c(1)}. Fill up there or at Karcham, 70 km before${ASK.c(2)}.</p>
+          <p>Going on to Kalpa, the next pump after Chitkul is at Tapri, 51 km back down the valley${ASK.c(3)}. None of these pumps has been confirmed by a rider yet; they come from the open map.</p>
+          ${ASK.sources([
+            ASK.srcRow(1, 'Petrol pump, Batseri', 'Kinnaur · km 94 · from the open map', 'unchecked'),
+            ASK.srcRow(2, 'Petrol pump, Karcham', 'Kinnaur · km 51 · from the open map', 'unchecked'),
+            ASK.srcRow(3, 'Petrol pump, Tapri', 'Kinnaur · km 172 · from the open map', 'unchecked'),
+          ])}
+          ${ASK.acts()}
+          ${ASK.next(['Is there a permit for Chitkul?', 'Pumps on the whole route', 'Check fuel for my bike'])}
+        </div>`)}
+      ${ASK.bar('Ask a follow-up')}`),
+    notes: [
+      ['The answer', ['The first sentence answers the question as asked, in bold. Then what to do. Then the caveat.', '“Not confirmed by a rider” is said in words, not only by the badge. A rider skimming must not miss it.', 'Distances are along Meel’s route line, rounded to the kilometre in the sentence and exact on the fact.']],
+      ['Steps (frame 1)', ['At most three. The first says the route Meel thinks is meant, so a wrong guess is visible at once.', 'They collapse to one line, “6 facts · Kinnaur”, when the answer starts.']],
+      ['Sources', ['Numbered in the order they appear. Each opens the fact (next screen). Badges use the site’s own age words.']],
+      ['Next questions', ['From a fixed list for each kind of question, never written by the model (it saves cost): a fuel answer always offers the fuel check.']],
+      ['Data', ['Real Meel facts: Batseri km 94.0, Karcham km 50.7, Tapri km 171.8, Chitkul km 121.1 on Kinnaur.']],
+    ],
+  },
+  {
+    group: 'An answer, step by step', title: 'A source number opens the fact',
+    lede: 'The numbers are the point. One tap shows the fact exactly as the route page shows it, with its date, its source, and the two buttons to confirm or report it.',
+    render: () => phone('1. Tapping ①', `
+      ${ASK.top()}
+      ${body(`
+        ${ASK.q('petrol pump in chitkul')}
+        <div class="ask-a">${ASK.who('6 facts · Kinnaur')}<p><b>There is no pump in Chitkul.</b> The nearest is at Batseri, 27 km before Chitkul${ASK.c(1)}.</p></div>`)}
+      <div class="sheet-scrim"></div>
+      <div class="sheet"><span class="grab"></span>
+        <span class="hint">Source 1 · Kinnaur · Fuel</span>
+        ${fact({ t: 'Petrol pump, Batseri', d: 'On the Sangla to Chitkul road. 94 km from Rampur, 27 km before Chitkul. Hours not known.', state: 'unchecked', line: 'From the open map (OpenStreetMap) · read 28 September 2026 · no rider has confirmed it', open: true })}
+        <span class="btn btn-outline btn-block">Open on the route page</span>
+      </div>`),
+    notes: [
+      ['Behaviour', ['The sheet is the same fact component as the route page, so Still true and This has changed work here too, and go to the same inbox.', '“Open on the route page” opens the fact’s own link, with its neighbours, as a shared fact link does today.', 'On a laptop the fact opens in the right column instead (screen 23).']],
+    ],
+  },
+
+  /* ── Pictures and drawings ── */
+  {
+    group: 'Pictures and drawings', title: 'Fuel gap, photo and videos',
+    lede: 'Answers about a route can show what the route page shows: its drawing, its photo with credit, and riders’ videos of the stretch asked about.',
+    render: () => phone('1. A fuel question gets the gap drawing', `
+      ${ASK.top()}
+      ${body(`
+        ${ASK.q('manali se leh kitna petrol chahiye? classic 350')}
+        <div class="ask-a">
+          ${ASK.who('7 facts · Manali to Leh')}
+          <p><b>Sabse lamba gap 329 km hai</b>, Keylong se Karu tak, beech mein koi pump nahi${ASK.c(1)}${ASK.c(2)}. Keylong mein tank full karein${ASK.c(1)}.</p>
+          <p>Classic 350 ke liye fuel check se dekh lijiye ki extra can chahiye ya nahi.</p>
+          ${gapReal}
+          <span class="btn btn-soft" style="align-self:flex-start">${ICON.fuel}Fuel check for Classic 350</span>
+          ${ASK.sources([
+            ASK.srcRow(1, 'Keylong petrol pump', 'Manali to Leh · km 72.5 · from the open map', 'unchecked'),
+            ASK.srcRow(2, 'No fuel pump between Keylong and Karu', 'Manali to Leh · hazard', 'ageing'),
+          ])}
+        </div>`)}
+      ${ASK.bar('Ask a follow-up')}`)
+    + phone('2. A route question gets its photo and videos', `
+      ${ASK.top()}
+      ${body(`
+        ${ASK.q('what is the road like from sarchu to leh')}
+        <div class="ask-a">
+          ${ASK.who('5 facts · Manali to Leh')}
+          <p>Between Sarchu and Pang the road is rough and unpaved in places${ASK.c(1)}, and it climbs the 21 bends of the Gata Loops. After Pang come the More plains, then Tanglang La at 17,480 ft before the drop to Leh${ASK.c(2)}.</p>
+          <div class="ask-pic"><div class="hero"><span class="hero-cap">The Tsarap river from the Gata Loops</span></div>
+            <div class="credit-line">Photo: Soumen Gomes · CC BY-SA 4.0 · <span class="link">Wikimedia Commons</span></div></div>
+          <div class="lbl">Riders’ videos of this stretch</div>
+          ${vidA('Sarchu to Leh Bike Ride | Baralacha La to Tanglang La', 'Miles with Munaf', 'Sarchu to Leh', 'Filmed 2026')}
+          ${vidA('Pang to Tanglang La & More Plains | Ladakh Ride 2026', 'Highway Horizon', 'Pang to Leh', 'Filmed 2026')}
+          ${ASK.acts()}
+        </div>`)}
+      ${ASK.bar('Ask a follow-up')}`),
+    notes: [
+      ['Which picture, by rule', ['Fuel question: the route’s gap drawing, with the gap asked about. Route or stretch: the route photo. Stretch named: up to two videos whose stretch matches, newest filming first.', 'Never more than one drawing and two videos in one answer. The answer is still read on a phone.']],
+      ['Photos', ['Always with the photographer, licence and source, as on the route page. The licences ask for it.']],
+      ['Videos', ['Play on YouTube in a new tab. Titles are shown as the rider wrote them, shortened.']],
+      ['Hinglish (frame 1)', ['Asked in Hinglish, answered in Hinglish, in Latin letters. Fact names and source lines stay in English, as on the site.']],
+      ['Data', ['Real: Keylong km 72.5, Karu km 401.8, gap 329.3 km; photo by Soumen Gomes; videos from the route’s list.']],
+    ],
+  },
+  {
+    group: 'Pictures and drawings', title: 'A distance, and where to stop the night',
+    lede: 'Distance questions get the route line stretch by stretch. Night-halt questions get the altitude drawing, with Meel’s altitude facts.',
+    render: () => phone('1. “gandikota to araku valley distance”', `
+      ${ASK.top()}
+      ${body(`
+        ${ASK.q('gandikota to araku valley distance')}
+        <div class="ask-a">
+          ${ASK.who('5 facts · Andhra Pradesh: Araku, Lambasingi, Gandikota')}
+          <p><b>812.6 km along Meel’s route</b>, through Paderu, Lambasingi and Narsipatnam${ASK.c(1)}. A map app says about 10 h 20 min of riding${ASK.c(1)}.</p>
+          ${arakuLine}
+          <table class="ask-tbl"><thead><tr><th>Stretch</th><th style="text-align:right">km</th><th style="text-align:right">Map app</th></tr></thead><tbody>
+            <tr><td>Araku valley to Paderu</td><td style="text-align:right">44.7</td><td style="text-align:right">33 min</td></tr>
+            <tr><td>Paderu to Lambasingi</td><td style="text-align:right">47.2</td><td style="text-align:right">34 min</td></tr>
+            <tr><td>Lambasingi to Narsipatnam</td><td style="text-align:right">30.4</td><td style="text-align:right">28 min</td></tr>
+            <tr><td>Narsipatnam to Gandikota</td><td style="text-align:right">690.3</td><td style="text-align:right">8 h 45 min</td></tr>
+          </tbody></table>
+          <p class="ask-src">The last stretch is 690 km, a long day by any count. Meel has no riders’ hours for it yet.</p>
+          ${ASK.sources([ASK.srcRow(1, 'Stretches of this route', 'From the open map · read 28 September 2026', 'unchecked')])}
+        </div>`)}
+      ${ASK.bar('Ask a follow-up')}`)
+    + phone('2. Where to stop the night', `
+      ${ASK.top()}
+      ${body(`
+        ${ASK.q('where should i stop the night between manali and leh')}
+        <div class="ask-a">
+          ${ASK.who('6 facts · Manali to Leh')}
+          <p><b>Jispa is the usual first night</b>, lower and with more stays. Sarchu is higher than most bodies like on a first night up${ASK.c(1)}.</p>
+          ${profile(['Jispa', 'Sarchu'], ['Sarchu'], 'Night halts marked on the route’s altitude line. Red: higher than the altitude facts advise for that night.')}
+          ${ASK.sources([
+            ASK.srcRow(1, 'Sleeping high: go up slowly', 'Altitude facts · health advisory', 'fresh'),
+            ASK.srcRow(2, 'Halts and their heights', 'Manali to Leh · from encyclopedias', 'unchecked'),
+          ])}
+          ${ASK.next(['Altitude plan for this route', 'Pumps between Jispa and Leh'])}
+        </div>`)}
+      ${ASK.bar('Ask a follow-up')}`),
+    notes: [
+      ['Distance', ['Along Meel’s own route line, never a straight line. The route asked about is named in the header so a rider can see which road was measured.', 'If the two places sit on different routes, it says so and gives the route that links them, or says Meel has none.', 'The line about a long stretch is a fixed line shown when a stretch is over 400 km. It states the distance only; it never claims what riders do.']],
+      ['Night halts', ['Uses the altitude plan’s own drawing and rule. It never says “safe”; it says what the altitude facts advise.']],
+      ['Data', ['Real stretches of the Andhra route (44.7, 47.2, 30.4, 690.3 km; 0.55, 0.56, 0.47, 8.75 hours). The altitude drawing reuses the route page’s drawing.', 'The altitude source title “Sleeping high: go up slowly” is a placeholder for the altitude plan’s real wording.']],
+    ],
+  },
+
+  /* ── Comparing and following up ── */
+  {
+    group: 'Comparing and following up', title: 'Two routes side by side',
+    lede: 'A comparison is a small table of the same facts for each route, each with its date. No “better” and no ranking.',
+    render: () => phone('1. “spiti or ladakh in late october?”', `
+      ${ASK.top()}
+      ${body(`
+        ${ASK.q('spiti or manali leh in late october?')}
+        <div class="ask-a">
+          ${ASK.who('8 facts · 2 routes')}
+          <p>Both are at the end of their season. On 15 October snow had closed Darcha to Sarchu on Manali–Leh${ASK.c(1)}. The Spiti circuit’s season runs June to October${ASK.c(2)}.</p>
+          <table class="ask-tbl"><thead><tr><th></th><th>Spiti circuit</th><th>Manali to Leh</th></tr></thead><tbody>
+            <tr><td><b>Usually open</b></td><td>Jun to Oct${ASK.c(2)}</td><td>Jun to Oct${ASK.c(3)}</td></tr>
+            <tr><td><b>Highest</b></td><td>Kunzum La, 14,930 ft</td><td>Tanglang La, 17,480 ft</td></tr>
+            <tr><td><b>Longest fuel gap</b></td><td>178.5 km${ASK.c(4)}</td><td>329.3 km${ASK.c(5)}</td></tr>
+            <tr><td><b>Last news seen</b></td><td>—</td><td>15 Oct 2026${ASK.c(1)}</td></tr>
+          </tbody></table>
+          <div class="callout warn"><b>Meel doesn’t say which is open</b>Check the offices on each route before you leave. <span class="link">Spiti offices</span> · <span class="link">Manali–Leh offices</span></div>
+          ${ASK.acts()}
+        </div>`)}
+      ${ASK.bar('Ask a follow-up')}`),
+    notes: [
+      ['Rules', ['The rows are fixed per kind of comparison: season, height, fuel gap, last news. The model fills them only from facts.', 'Up to three routes. More becomes a list of links to each route.', 'A dash means Meel has no fact for that cell, and says so on tap.']],
+    ],
+  },
+  {
+    group: 'Comparing and following up', title: 'A follow-up, and a Hinglish question',
+    lede: 'Follow-ups keep the route and the facts already found. Hindi and Hinglish are understood, and answered in kind.',
+    render: () => phone('1. A follow-up with no route named', `
+      ${ASK.top()}
+      ${body(`
+        ${ASK.q('toong check post timing')}
+        <div class="ask-a">${ASK.who('3 facts · North Sikkim')}<p><b>Cross Toong by 4 pm</b>, going up and coming down${ASK.c(1)}.</p></div>
+        ${ASK.q('kab se hai ye rule? pehle kya tha?')}
+        <div class="ask-a">
+          ${ASK.who('same route')}
+          <p>4 baje ka rule 10 September 2026 se hai, Mangan district ke order se${ASK.c(1)}. Iska text Meel ko nahi mila, sirf news report hai.</p>
+          <div class="tl">
+            <div><span>10 Sep 2026</span><b>4 pm both ways, Mangan district order</b></div>
+            <div><span>14 Mar 2026</span><b>Before 4 pm both ways; permits a day ahead</b></div>
+            <div><span>8 Sep 2025</span><b>Sanklang by 1 pm going up, Toong by 2 pm coming back</b></div>
+          </div>
+          ${ASK.sources([ASK.srcRow(1, 'Cross Toong check post by 4 pm', 'North Sikkim · news, 11 Sep 2026 · 3 past changes', 'ageing')])}
+        </div>`)}
+      ${ASK.bar('Ask a follow-up')}`)
+    + phone('2. Hindi in Devanagari', `
+      ${ASK.top()}
+      ${body(`
+        ${ASK.q('क्या बाइक के लिए ई-आगमन पास चाहिए?')}
+        <div class="ask-a">
+          ${ASK.who('2 facts · Manali to Leh, Spiti')}
+          <p><b>हाँ।</b> लाहौल और स्पीति में आने वाली हर गाड़ी, मोटरसाइकिल भी, ऑनलाइन आवेदन करती है${ASK.c(1)}। बाइक के लिए फीस है या नहीं, यह Meel को पक्का नहीं मिला।</p>
+          ${ASK.sources([ASK.srcRow(1, 'e-Aagman pass for Lahaul and Spiti: motorcycles included', 'Government of Himachal Pradesh · read 17 Oct 2026', 'fresh')])}
+          ${ASK.acts()}
+        </div>`)}
+      ${ASK.bar('Ask a follow-up')}`),
+    notes: [
+      ['Follow-ups', ['A follow-up with no place named uses the last route. The header says “same route” so the rider sees it.', 'A new place in the follow-up starts a new search. Only the previous question and its answer go with a follow-up, to keep each question cheap.']],
+      ['Rule history', ['When a rule has past changes, a “when / what before” question gets the history as a timeline, newest first, from the rule’s own history.']],
+      ['Language', ['Answered in the script asked. Fact titles stay as on the site (English).', 'What Meel couldn’t confirm is said in the rider’s language too.']],
+      ['Data', ['Real: the Toong rule and its three past changes; the e-Aagman rule.']],
+    ],
+  },
+
+  /* ── Is it open? ── */
+  {
+    group: 'Is it open?', title: '“Is Zoji La open?”',
+    lede: 'The most asked and most dangerous question. Ask Meel answers it the way the route page does: it never says open or closed, it says who to check with and what Meel last saw.',
+    render: () => phone('1. Asked straight', `
+      ${ASK.top()}
+      ${body(`
+        ${ASK.q('is zoji la open today')}
+        <div class="ask-a">
+          ${ASK.who('Srinagar to Leh')}
+          <p><b>Meel doesn’t say whether a pass is open.</b> It changes by the hour, and no office publishes it in one reliable place. These do announce it:</p>
+          <div class="rows">
+            <div class="row"><span class="grow"><b>Traffic Police Headquarters, J&amp;K</b><span class="hint">Daily traffic advisory · which way the road runs today</span></span>${ICON.ext}</div>
+            <div class="row"><span class="grow"><b>Border Roads Organisation, Project Beacon</b><span class="hint">Snow clearance and connection</span></span>${ICON.ext}</div>
+            <div class="row"><span class="grow"><b>District Police Kargil</b><span class="hint">The Kargil side</span></span>${ICON.ext}</div>
+          </div>
+          <p>What Meel knows: Zoji La is often shut on Fridays for maintenance${ASK.c(1)}, and has cut-off times and one-way running${ASK.c(2)}.</p>
+          ${ASK.sources([
+            ASK.srcRow(1, 'Zoji La: often shut on Fridays for maintenance', 'Srinagar to Leh · rule', 'ageing'),
+            ASK.srcRow(2, 'Zoji La: cut-off times and one-way running', 'Srinagar to Leh · rule', 'ageing'),
+          ])}
+          ${ASK.next(['When did Zoji La close last winter?', 'Rules for motorcycles on Zoji La'])}
+        </div>`)}
+      ${ASK.bar('Ask a follow-up')}`)
+    + phone('2. Pressed: “just tell me yes or no”', `
+      ${ASK.top()}
+      ${body(`
+        ${ASK.q('bhai bas haan ya na batao, khula hai?')}
+        <div class="ask-a">
+          ${ASK.who()}
+          <p>Haan ya na Meel nahi bata sakta. Galat “khula hai” se koi raste mein phans sakta hai. Upar diye offices aaj ki khabar dete hain; J&amp;K Traffic Police ki advisory sabse pehle aati hai.</p>
+        </div>`)}
+      ${ASK.bar('Ask a follow-up')}`),
+    notes: [
+      ['The rule', ['Words like open, closed, khula, band, status, today about a road, pass, tunnel or check post always get this shape. Decided before search, so the model can’t be talked out of it.', 'Season history and the last news date may be given, always as dated past facts (“on 15 October, snow had closed…”), never as now.']],
+      ['Pressed (frame 2)', ['Same answer, shorter, in the rider’s language, with the reason. No apology loop.']],
+      ['Data', ['Real offices and rules on Srinagar to Leh.']],
+    ],
+  },
+
+  /* ── Not sure ── */
+  {
+    group: 'When Meel isn’t sure', title: 'No fact, disagreeing facts, old facts',
+    lede: 'Three ways an honest answer is not a clean one. Each says what Meel has, what it doesn’t, and how a rider can help.',
+    render: () => phone('1. No fact on it', `
+      ${ASK.top()}
+      ${body(`
+        ${ASK.q('does the kaza pump take cards?')}
+        <div class="ask-a">
+          ${ASK.who('Spiti circuit')}
+          <p><b>Meel has no fact on whether the Kaza pump takes cards.</b> What it does have: the Kaza pump is Indian Oil’s, called the world’s highest retail pump, 433 km into the circuit${ASK.c(1)}, and after it there is no pump for 178.5 km${ASK.c(2)}.</p>
+          ${ASK.sources([
+            ASK.srcRow(1, 'Indian Oil, Kaza', 'Spiti circuit · km 433 · from the open map', 'unchecked'),
+            ASK.srcRow(2, 'Fuel gap Kaza to Manali', 'Worked out from the pumps', 'unchecked'),
+          ])}
+          <div class="empty"><b>Been there?</b><span>Tell Meel and it goes to the editor with your name and date.</span><span class="btn btn-soft">${ICON.plus}Add what you know</span></div>
+        </div>`)}
+      ${ASK.bar('Ask a follow-up')}`)
+    + phone('2. Reports disagree', `
+      ${ASK.top()}
+      ${body(`
+        ${ASK.q('winter closing date manali leh')}
+        <div class="ask-a">
+          ${ASK.who('5 facts · Manali to Leh')}
+          <p><b>Usually around 20 November</b>, by district order${ASK.c(1)}. This year is not settled: on 15 October the district listed Darcha to Sarchu as closed by snow, with no reopening time, and no winter order was found${ASK.c(2)}.</p>
+          <div class="callout warn"><b>Two things say different things</b>The season usually runs to late November; snow closed part of it on 15 October. Both are shown.</div>
+          ${ASK.sources([
+            ASK.srcRow(1, 'Winter closure by district order', '5 past years · news, 18 Nov 2025', 'ageing'),
+            ASK.srcRow(2, 'Season 2026: Darcha to Sarchu closed by snow', 'News, 15 Oct 2026', 'conflict'),
+          ])}
+        </div>`)}
+      ${ASK.bar('Ask a follow-up')}`)
+    + phone('3. Only old facts', `
+      ${ASK.top()}
+      ${body(`
+        ${ASK.q('darcha sarchu time window')}
+        <div class="ask-a">
+          ${ASK.who('2 facts · Manali to Leh')}
+          <p>At the start and end of the season, traffic must pass Darcha or Sarchu within set hours, sometimes one direction a day${ASK.c(1)}. <b>The hours change every year, and Meel’s newest source is from November 2024</b>, nearly two years old.</p>
+          ${ASK.sources([ASK.srcRow(1, 'Darcha to Sarchu: time windows', 'News, 19 Nov 2024 · 7 past changes', 'stale')])}
+          ${ASK.next(['Who announces the hours?'])}
+        </div>`)}
+      ${ASK.bar('Ask a follow-up')}`),
+    notes: [
+      ['No fact (frame 1)', ['First sentence says plainly there is no fact. Then the nearest facts it does have, only if they are about the same thing (the same pump).', '“Add what you know” opens the existing suggest-a-fact form, with the question attached.', 'The question is logged as no-fact for the weekly list.']],
+      ['Disagree (frame 2)', ['When two facts conflict, both are given with their dates, and the callout says so. Ask Meel never picks one.']],
+      ['Old (frame 3)', ['A stale fact’s age is said inside the sentence. The badge alone is not enough.']],
+      ['Data', ['Real: Kaza pump, the 178.5 km gap, the Manali–Leh season note and the Darcha–Sarchu rule.']],
+    ],
+  },
+
+  /* ── Handle with care ── */
+  {
+    group: 'Handle with care', title: 'Which one? Off topic. Feeling unwell.',
+    lede: 'Three questions where the right answer is not a search result: a place on two routes, a question Meel doesn’t cover, and a rider who may be in trouble.',
+    render: () => phone('1. A place on more than one route', `
+      ${ASK.top()}
+      ${body(`
+        ${ASK.q('padum petrol pump')}
+        <div class="ask-a">
+          ${ASK.who()}
+          <p>Padum is on three Meel routes. Which way are you coming?</p>
+          <div class="ask-starter">
+            <span class="chip">From Leh, on the new Nimmu road</span>
+            <span class="chip">From Kargil, over Pensi La</span>
+            <span class="chip">From Darcha, over Shinku La</span>
+          </div>
+        </div>`)}
+      ${ASK.bar('Ask a follow-up')}`)
+    + phone('2. Off topic', `
+      ${ASK.top()}
+      ${body(`
+        ${ASK.q('best bike for ladakh under 2 lakh and total trip cost')}
+        <div class="ask-a">
+          ${ASK.who()}
+          <p>Meel doesn’t rank bikes or give trip costs. It can tell you whether your bike’s tank covers the fuel gaps, and what the longest gap is on each Ladakh route.</p>
+          ${ASK.next(['Fuel check for my bike', 'Longest fuel gap to Leh'])}
+        </div>`)}
+      ${ASK.bar('Ask a follow-up')}`)
+    + phone('3. Feeling unwell at height', `
+      ${ASK.top()}
+      ${body(`
+        ${ASK.q('bad headache and vomiting at sarchu what to do')}
+        <div class="ask-a">
+          ${ASK.who()}
+          <div class="callout warn"><b>Call 112 if it is getting worse</b>Headache with vomiting at height can be serious. Going down is what helps most.</div>
+          <p>Meel is not medical advice. Its altitude facts say: if symptoms get worse, go lower, and don’t climb higher until they pass${ASK.c(1)}.</p>
+          <div class="rows">
+            <div class="row"><span class="ic">${ICON.phone}</span><span class="grow"><b>112</b><span class="hint">Emergency, works on any network with signal</span></span></div>
+            <div class="row"><span class="ic">${ICON.list}</span><span class="grow"><b>Emergency card for Manali to Leh</b><span class="hint">Nearest hospitals and police, saved for offline</span></span>${chev}</div>
+          </div>
+          ${ASK.sources([ASK.srcRow(1, 'Sleeping high: go up slowly', 'Altitude facts · health advisory', 'fresh')])}
+        </div>`)}
+      ${ASK.bar('Ask a follow-up')}`),
+    notes: [
+      ['Which one (frame 1)', ['When a place is on more than one route and the question depends on the road, it asks, with the routes as buttons. One tap answers.', 'When it doesn’t depend on the road, it just answers.']],
+      ['Off topic (frame 2)', ['One line saying what Meel doesn’t do, then what it can do instead. Never a lecture.', 'Questions entirely off riding (cricket, homework) get one line and no search.']],
+      ['Health (frame 3)', ['Words about symptoms skip the model’s own advice. The answer is a fixed template: 112 first, the altitude fact, the route’s emergency card.', 'The emergency card is the existing one, not a new screen.']],
+    ],
+  },
+
+  /* ── After an answer ── */
+  {
+    group: 'After an answer', title: '“This answer is wrong”',
+    lede: 'One tap, an optional line, sent to the editor with everything needed to check it.',
+    render: () => phone('1. Reporting', `
+      ${ASK.top()}
+      ${body(`${ASK.q('petrol pump in chitkul')}`)}
+      <div class="sheet-scrim"></div>
+      <div class="sheet"><span class="grab"></span>
+        <h3>What was wrong?</h3>
+        <div class="radio-list">
+          <div class="on"><span class="radio"></span>A fact is out of date</div>
+          <div><span class="radio"></span>It said something the sources don’t</div>
+          <div><span class="radio"></span>It answered a different question</div>
+          <div><span class="radio"></span>Something else</div>
+        </div>
+        <div class="field"><label>What did you see? <em>optional</em></label><div class="input filled" style="height:auto;padding:10px 12px;line-height:20px">There's a new pump at Sangla now, opened this year</div></div>
+        <div class="callout"><b>Goes to the editor</b>With the question, the answer and the facts it used. Your name only if you’re logged in.</div>
+        <span class="btn btn-primary btn-block" style="height:46px">${ICON.send}Send to the editor</span>
+      </div>`)
+    + phone('2. Sent', `
+      ${ASK.top()}
+      ${body(`
+        ${ASK.q('petrol pump in chitkul')}
+        <div class="ask-a">${ASK.who('6 facts · Kinnaur')}<p><b>There is no pump in Chitkul.</b> The nearest is at Batseri${ASK.c(1)}.</p>
+          <div class="callout info"><b>Thanks. Sent to the editor.</b>A fact changed by your report shows your name and date on the route page.</div></div>`)}
+      ${ASK.bar('Ask a follow-up')}`),
+    notes: [
+      ['In the editor’s inbox', ['A new kind beside This has changed, Still true and Trip report: “Answer marked wrong”.', 'It shows the question, the answer, each fact used with its age, the reason and the rider’s line. One tap opens each fact to edit.']],
+      ['Data', ['Kept with the reported answer: reason, line, logged-in rider if any. Not the phone.']],
+    ],
+  },
+  {
+    group: 'After an answer', title: 'Sharing an answer',
+    lede: 'Riders answer each other in chat groups. A shared answer is frozen as written, dated, and links back to the live facts.',
+    render: () => phone('1. Pasted into a group', `
+      <div class="chat">
+        <div class="chat-top">${ICON.back}<span class="chat-av">HR</span><span><b>Himachal Riders</b><span>112 members</span></span></div>
+        <div class="chat-body">
+          <div class="msg"><span class="who">Arjun K.</span>Chitkul mein petrol milega?<span class="t">7:02 pm</span></div>
+          <div class="msg out">
+            <div class="preview">
+              <div class="pic">${mark()}<span><strong>Ask Meel</strong><em>Answered 19 October 2026</em></span></div>
+              <div class="txt"><b>No pump in Chitkul. Nearest: Batseri, 27 km before.</b><span>From 6 Meel facts on Kinnaur, with their dates.</span><span>${SITE}</span></div>
+            </div>
+            <span class="link">${SITE}/ask/a/7Kq2xD</span><span class="t">7:04 pm</span></div>
+        </div>
+        <div class="chat-in"><span style="flex:1;color:var(--ink-2)">Message</span></div>
+      </div>`, '7:04')
+    + phone('2. The shared answer opened', `
+      ${head('Ask Meel', 'A shared answer', { back: false })}
+      ${body(`
+        <div class="callout stone"><b>Answered on 19 October 2026</b>Frozen as it was written. The facts may have changed since: <span class="link">see them now</span>.</div>
+        ${ASK.q('petrol pump in chitkul')}
+        <div class="ask-a">
+          ${ASK.who('6 facts · Kinnaur')}
+          <p><b>There is no pump in Chitkul.</b> The nearest is at Batseri, 27 km before Chitkul on the Sangla road${ASK.c(1)}. Fill up there or at Karcham, 70 km before${ASK.c(2)}.</p>
+          ${ASK.sources([
+            ASK.srcRow(1, 'Petrol pump, Batseri', 'Kinnaur · km 94', 'unchecked'),
+            ASK.srcRow(2, 'Petrol pump, Karcham', 'Kinnaur · km 51', 'unchecked'),
+          ])}
+        </div>
+        <span class="btn btn-primary btn-block" style="height:46px">${ICON.ask}Ask your own question</span>`)}`),
+    notes: [
+      ['Share link', ['Made only when the rider taps Share. The link holds the question and answer, not who asked.', 'The preview card carries the answer’s first sentence and its date, so the group gets the answer without opening it.']],
+      ['Frozen', ['The page never re-runs the question. If a source fact has changed since, the source row says “changed since” and links the live fact.']],
+      ['Search engines', ['Shared answers are not indexed. They would be thin copies of route pages.']],
+    ],
+  },
+
+  /* ── When it can't ── */
+  {
+    group: 'When it can’t', title: 'No network, limit reached',
+    lede: 'Asking needs a network and costs money per question. Both limits are said plainly, with what still works.',
+    render: () => phone('1. No network', `
+      ${ASK.top()}
+      <div class="offline">${ICON.wifiOff}<span>No network. Ask Meel needs signal. Saved route pages still open.</span></div>
+      ${body(`
+        ${ASK.q('pang to leh fuel')}
+        <div class="callout"><b>Not sent yet</b>Your question is kept and sent when signal returns, if this page is still open.</div>
+        <div class="lbl">Saved on this phone</div>
+        <div class="rows"><div class="row"><span class="ic">${ICON.save}</span><span class="grow"><b>Manali to Leh</b><span class="hint">Saved 17 October, 6:40 am · fuel section</span></span>${chev}</div></div>`)}
+      ${ASK.bar('pang to leh fuel', true)}`, '2:15')
+    + phone('2. Day’s limit reached', `
+      ${ASK.top()}
+      ${body(`
+        ${ASK.q('kunzum la height')}
+        <div class="empty"><b>That’s 10 questions today</b><span>More tomorrow, or log in for 40 a day. Every route page is still open to read.</span><span class="btn btn-soft">Log in</span></div>`)}
+      <div class="pfoot"><div class="ask-bar"><div class="input">Back tomorrow at midnight</div><span class="ask-send off">${ICON.up}</span></div></div>`),
+    notes: [
+      ['No network', ['The question stays in the box and is sent on reconnect, only while the page is open. Nothing is queued in the background.', 'Saved routes are listed, since they answer most questions offline.']],
+      ['Limit', ['Counted per phone (a random id in the browser) when logged out, per account when in. Resets at midnight India time.', 'The limit message never blocks reading the site.']],
+    ],
+  },
+  {
+    group: 'When it can’t', title: 'Failed, or slow',
+    lede: 'The model or the search can fail or crawl. The rider is told, can try again, and is pointed at the page that holds the answer.',
+    render: () => phone('1. Slow', `
+      ${ASK.top()}
+      ${body(`
+        ${ASK.q('rules for motorcycles in north sikkim')}
+        <div class="ask-a">
+          ${ASK.who('', true)}
+          ${ASK.step('Rules on North Sikkim')}
+          ${ASK.step('Found 9 facts')}
+          ${ASK.step('Writing is slow right now…', false)}
+          <div class="callout"><b>Taking longer than usual</b>The facts are found. <span class="link">Open them on the route page</span> while this finishes.</div>
+        </div>`)}
+      ${ASK.bar('Ask a follow-up')}`)
+    + phone('2. Failed', `
+      ${ASK.top()}
+      ${body(`
+        ${ASK.q('rules for motorcycles in north sikkim')}
+        <div class="ask-a">
+          ${ASK.who()}
+          <div class="callout warn"><b>Ask Meel couldn’t answer just now</b>This didn’t count towards your 10 a day.</div>
+          <div class="ask-acts"><span class="btn btn-primary">${ICON.retry}Try again</span><span class="btn btn-outline">North Sikkim rules</span></div>
+        </div>`)}
+      ${ASK.bar('Ask a follow-up')}`),
+    notes: [
+      ['Slow', ['After 15 seconds with no answer text, the callout shows. The facts found are linked, so the wait is never wasted.']],
+      ['Failed', ['A failed question is not counted. Try again re-sends it once; a second failure keeps the route link only.', 'Half-written answers are never shown as complete: if writing stops, the text so far is greyed and marked “stopped”.']],
+    ],
+  },
+
+  /* ── Laptop ── */
+  {
+    group: 'On a laptop', title: 'Answer in the middle, sources beside it',
+    lede: 'On a laptop there is room to keep the sources open. Past questions on the left stay in this browser only.',
+    desk: true,
+    render: () => desk('A Hinglish fuel question, with source 1 open', `
+      ${deskTop(`<span class="btn ask-btn">${ICON.ask}Ask Meel</span>`)}
+      <div class="desk-main" style="grid-template-columns:260px minmax(0,1fr) 360px">
+        <nav class="desk-nav" style="padding:16px 12px;gap:4px">
+          <span class="btn btn-outline btn-block">${ICON.plus}New question</span>
+          <div class="lbl" style="padding:14px 10px 6px">Today</div>
+          <div class="it on">${ICON.ask}<span>manali se leh kitna petrol</span></div>
+          <div class="it">${ICON.ask}<span>toong check post timing</span></div>
+          <div class="lbl" style="padding:14px 10px 6px">This week</div>
+          <div class="it">${ICON.ask}<span>gandikota to araku distance</span></div>
+          <div class="it">${ICON.ask}<span>is zoji la open</span></div>
+          <span class="hint" style="padding:14px 10px">Kept in this browser only.</span>
+        </nav>
+        <section class="desk-mid" style="max-width:720px">
+          ${ASK.q('manali se leh kitna petrol chahiye? classic 350')}
+          <div class="ask-a">
+            ${ASK.who('7 facts · Manali to Leh')}
+            <p><b>Sabse lamba gap 329 km hai</b>, Keylong se Karu tak, beech mein koi pump nahi${ASK.c(1)}${ASK.c(2)}. Keylong mein tank full karein${ASK.c(1)}. Classic 350 ke liye fuel check se dekh lijiye ki extra can chahiye ya nahi.</p>
+            ${gapReal}
+            ${ASK.acts(`<span class="btn btn-soft">${ICON.fuel}Fuel check for Classic 350</span>`)}
+            ${ASK.next(['Pumps in Leh', 'Darcha to Sarchu timings', 'Altitude plan'])}
+          </div>
+          <div class="ask-bar" style="margin-top:auto"><div class="input">Ask a follow-up</div><span class="ask-send off">${ICON.up}</span></div>
+        </section>
+        <aside class="desk-side">
+          <div class="sec-h"><h3>Sources</h3><span class="hint">2 facts</span></div>
+          ${fact({ t: 'Keylong petrol pump', d: 'Last pump before the 329 km gap. 72.5 km from Manali.', state: 'unchecked', line: 'From the open map · read 28 September 2026 · no rider has confirmed it', open: true, hi: true })}
+          ${fact({ t: 'No fuel pump between Keylong and Karu', d: 'Carry enough for the whole gap, with a margin for detours and cold.', state: 'ageing', line: 'Hazard · checked by the editor 28 September 2026' })}
+          <span class="btn btn-outline btn-block">Open Manali to Leh</span>
+        </aside>
+      </div>`),
+    notes: [
+      ['Layout', ['Three columns: past questions, the conversation, and the sources of the answer in view.', 'Tapping a number scrolls the right column to that fact and outlines it.', 'Below about 1,000 pixels the sources become the phone’s sheet.']],
+      ['History', ['Past questions are kept in the browser, not on the server, and can be cleared. Logged-in riders get the same, per browser.']],
+    ],
+  },
+  /* ── The mark ── */
+  {
+    group: 'The mark', title: 'A travel mark, not a sparkle',
+    lede: 'The sparkle is every AI product’s icon. Ask Meel’s mark comes from the road instead. The first is the one used on every screen; the other three are here to compare.',
+    plain: true,
+    render: () => {
+      const QPIN = '<svg viewBox="0 0 24 24"><path d="M8.5 8.5a3.5 3.5 0 1 1 5.2 3c-1 .6-1.7 1.4-1.7 2.5"/><path d="M12 22s-2.2-1.9-2.2-3.4a2.2 2.2 0 0 1 4.4 0C14.2 20.1 12 22 12 22z"/></svg>';
+      const QPIN_C = (w) => `<svg viewBox="0 0 24 24" width="${w}" height="${w}"><path d="M8.5 8.5a3.5 3.5 0 1 1 5.2 3c-1 .6-1.7 1.4-1.7 2.5" fill="none" stroke="var(--ink)" stroke-width="1.8" stroke-linecap="round"/><path d="M12 22.5s-2.6-2.2-2.6-4a2.6 2.6 0 0 1 5.2 0c0 1.8-2.6 4-2.6 4z" fill="var(--stone)" stroke="var(--ink)" stroke-width="1.5"/></svg>`;
+      const COMP = '<svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 6.5 14 12l-2 5.5-2-5.5z"/></svg>';
+      const COMP_C = (w) => `<svg viewBox="0 0 24 24" width="${w}" height="${w}"><circle cx="12" cy="12" r="9" fill="var(--surface)" stroke="var(--ink)" stroke-width="1.8"/><g class="alt-needle"><path d="M12 5.5 14.2 12h-4.4z" fill="var(--sign)"/><path d="M12 18.5 14.2 12h-4.4z" fill="var(--rule)"/></g><circle cx="12" cy="12" r="1.2" fill="var(--ink)"/></svg>`;
+      const SIGN = '<svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="12" rx="2"/><path d="M7 7h6M7 11h9M9 15v6M15 15v6"/></svg>';
+      const SIGN_C = (w) => `<svg viewBox="0 0 24 24" width="${w}" height="${w}"><path d="M9 15v6.5M15 15v6.5" stroke="var(--ink)" stroke-width="1.8"/><rect x="2.5" y="2.5" width="19" height="12.5" rx="2" fill="var(--sign)" stroke="var(--ink)" stroke-width="1.5"/><path d="M6.5 7h6M6.5 10.8h9" stroke="#fff" stroke-width="1.8" stroke-linecap="round"/></svg>`;
+      const opt = (name, chosen, mono, colour24, colour64, btn, why, cost) => `<div class="mark-opt ${chosen ? 'chosen' : ''}">
+        <div style="display:flex;justify-content:space-between;align-items:center;gap:8px"><h4>${name}</h4>${chosen ? '<span class="badge b-full">Used on every screen</span>' : '<span class="badge b-plain">To compare</span>'}</div>
+        <div class="sizes">
+          <span class="lab"><span class="mono">${mono}</span>In a line</span>
+          <span class="lab">${colour24}24 px</span>
+          <span class="lab"><span class="iconbtn ${chosen ? 'ask-ico' : ''}" style="${chosen ? '' : 'background:var(--surface)'}">${btn}</span>Top bar</span>
+          <span class="lab big64">${colour64}Ask page</span>
+        </div>
+        <p><b>Why:</b> ${why}</p><p class="hint" style="font-size:12.5px">${cost}</p></div>`;
+      return `<div class="plan">
+        <p class="lead">An assistant that only knows Meel’s roads should look like it belongs on the road. Each idea is drawn at the four sizes it is used: inside a line of text, at 24 pixels, in the phone’s top bar, and large on the empty Ask page.</p>
+        <div class="mark-opts">
+          ${opt('A · A talking kilometre stone', true, ICON.ask, askMark(), askMark('big'), askMark(), 'Meel’s own logo is a kilometre stone (Meel is Hindi for mile). Give it a speech tail and it says “the milestone answers you”. Nobody else can use it, and it ties the assistant to the brand.', 'Motion: a glint over the yellow cap at rest; the road inside moves while it thinks.')}
+          ${opt('B · A question mark ending in a pin', false, QPIN, QPIN_C(22), QPIN_C(64), QPIN_C(24), 'A question that ends in a place. Reads at once as “ask about somewhere”.', 'Weaker: question-mark icons usually mean help pages, and it doesn’t say Meel.')}
+          ${opt('C · A compass that finds the way', false, COMP, COMP_C(22), COMP_C(64), COMP_C(24), 'The needle swings while it looks and settles on the answer (watch it on the right). Good motion.', 'Weaker: compasses usually mean “explore” or maps, not “ask”. No link to Meel’s look.')}
+          ${opt('D · A highway signboard', false, SIGN, SIGN_C(22), SIGN_C(64), SIGN_C(24), 'The green signboard is the other half of Meel’s look. A sign is literally “information on the road”.', 'Weaker: at 22 pixels it is a green rectangle, and it looks like Meel’s route pages, not something to tap.')}
+        </div>
+        <h3>Thinking, side by side</h3>
+        <div class="cols">
+          <div class="card"><h4>A at rest</h4><div style="display:flex;gap:16px;align-items:center">${askMark('big')}<p>White stone, yellow cap, a still road. A glint crosses the cap every five seconds.</p></div></div>
+          <div class="card"><h4>A while thinking</h4><div style="display:flex;gap:16px;align-items:center">${askMark('big think')}<p>The road runs, the glint comes faster, the stone bobs. As if it is riding to the answer.</p></div></div>
+        </div>
+      </div>`;
+    },
+    notes: [
+      ['Choosing', ['A is drawn into every screen. Pick another and it replaces A everywhere; the motion rules stay the same.', 'Mark A in one line (the left-most size) is used inside text, on the search suggestion and on starter questions; the colour version everywhere it stands alone.']],
+      ['Rules for the mark', ['Only ever stands for Ask Meel. Meel’s own logo stays the plain stone with M, so the two are told apart by the speech tail.', 'Colours are the site’s own: the stone white, the cap yellow, the outline ink. It follows dark mode with the rest of the site.']],
+    ],
+  },
+];
+
+/* ── Gallery behaviour ────────────────────────────────────────── */
+const frame = document.getElementById('frame');
+const fit = document.getElementById('fit');
+let current = 0;
+
+function buildIndex() {
+  const groups = [];
+  SCREENS.forEach((s, i) => {
+    let g = groups.find((x) => x.name === s.group);
+    if (!g) groups.push((g = { name: s.group, items: [] }));
+    g.items.push([i, s.title]);
+  });
+  document.getElementById('index-groups').innerHTML = groups.map((g) => `
+    <div><div class="group-label">${esc(g.name)}</div><ol>
+      ${g.items.map(([i, t]) => `<li><button type="button" data-i="${i}"><span class="code">${String(i + 1).padStart(2, '0')}</span><span>${esc(t)}</span></button></li>`).join('')}
+    </ol></div>`).join('');
+  document.querySelectorAll('.index button').forEach((b) => b.addEventListener('click', () => show(Number(b.dataset.i))));
+}
+
+function scaleFrame() {
+  const s = SCREENS[current];
+  if (s.plain) { frame.style.transform = 'none'; frame.style.marginLeft = '0'; fit.style.height = 'auto'; return; }
+  frame.classList.toggle('stacked', fit.clientWidth < 760 && !s.desk);
+  frame.style.transform = 'none';
+  frame.style.marginLeft = '0';
+  const natural = frame.offsetWidth;
+  const k = Math.min(1, fit.clientWidth / natural);
+  frame.style.transform = `scale(${k})`;
+  frame.style.marginLeft = `${Math.max(0, (fit.clientWidth - natural * k) / 2)}px`;
+  fit.style.height = `${frame.offsetHeight * k}px`;
+}
+
+function show(i) {
+  current = (i + SCREENS.length) % SCREENS.length;
+  const s = SCREENS[current];
+  frame.className = 'frame' + (s.plain ? ' plain' : '');
+  frame.innerHTML = s.render();
+  document.getElementById('screen-eyebrow').textContent = `${s.group} · ${current + 1} of ${SCREENS.length}`;
+  document.getElementById('screen-title').textContent = s.title;
+  document.getElementById('screen-lede').textContent = s.lede || '';
+  document.getElementById('notes').innerHTML = (s.notes || []).map(([h, items, cls]) => `
+    <div class="note ${cls || ''}"><h3>${esc(h)}</h3><ul>${items.map((x) => `<li>${esc(x)}</li>`).join('')}</ul></div>`).join('');
+  document.querySelectorAll('.index button').forEach((b) => b.setAttribute('aria-current', String(Number(b.dataset.i) === current)));
+  try { localStorage.setItem('ask-meel-wireframe', String(current)); } catch (e) {}
+  requestAnimationFrame(scaleFrame);
+}
+
+document.getElementById('prev').addEventListener('click', () => show(current - 1));
+document.getElementById('next').addEventListener('click', () => show(current + 1));
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'ArrowRight') show(current + 1);
+  if (e.key === 'ArrowLeft') show(current - 1);
+});
+new ResizeObserver(scaleFrame).observe(fit);
+if (document.fonts && document.fonts.ready) document.fonts.ready.then(scaleFrame);
+
+buildIndex();
+let start = 0;
+try { start = Number(localStorage.getItem('ask-meel-wireframe')) || 0; } catch (e) {}
+show(start);
+</script>

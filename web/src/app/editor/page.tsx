@@ -3,7 +3,7 @@ import Link from "next/link";
 import { notFound, redirect } from "next/navigation";
 import type { ReactNode } from "react";
 
-import { decideFactAction, decideTripAction, decideTripReportAction } from "@/app/actions/editor";
+import { decideAskAction, decideFactAction, decideTripAction, decideTripReportAction } from "@/app/actions/editor";
 import { PageTitle } from "@/components/form";
 import { IconCheck, IconClock, IconRight } from "@/components/icons";
 import { FactRow } from "@/components/route/fact-row";
@@ -15,6 +15,8 @@ import { factViews, type FactView } from "@/lib/fact-view";
 import { dayOf, daysBetween, hours as sayHours, indiaDay, plural, sayAge, sayDate } from "@/lib/format";
 import { SECTION_NAMES } from "@/lib/sections";
 import { checkTrip } from "@/lib/trip-checks";
+import type { AskAnswer } from "@/lib/ask/types";
+import { askInbox } from "@/server/ask/store";
 import { currentUser } from "@/server/auth";
 import {
   confirmationsFor,
@@ -311,6 +313,80 @@ function TripReportDetail({ report, nameOf }: { report: TripReportRow; nameOf: (
   };
 }
 
+// ── an Ask Meel answer a rider marked wrong ────────────────────────────────
+
+const ASK_REASONS: Record<string, string> = {
+  "out-of-date": "A fact is out of date",
+  "not-in-sources": "It said something the sources don’t",
+  "wrong-question": "It answered a different question",
+  other: "Something else",
+};
+
+function AskDetail({ report }: { report: Awaited<ReturnType<typeof askInbox>>[number] }) {
+  const a = report.answer.answer as unknown as AskAnswer;
+  return {
+    head: report.answer.question,
+    mid: (
+      <>
+        <SectionHeading title="Answer marked wrong" aside={a.route?.name ?? "No route"} />
+        <p className="hint num">
+          Asked {when(report.answer.createdAt.toISOString())} · reported {when(report.createdAt.toISOString())}
+        </p>
+        <div className="flex flex-col gap-1">
+          <span className="label">The question</span>
+          <p className="text-[0.9375rem]">{report.answer.question}</p>
+        </div>
+        <div className="flex flex-col gap-1">
+          <span className="label">The answer</span>
+          <p className="text-[0.9375rem] leading-6">{a.text}</p>
+        </div>
+        {a.sources.length ? (
+          <div className="flex flex-col gap-1">
+            <span className="label">The facts it used</span>
+            <ol className="card flex flex-col text-sm">
+              {a.sources.map((s) => (
+                <li key={s.n} className="flex flex-col gap-0.5 border-b border-line px-3 py-2 last:border-b-0">
+                  <Link className="link font-semibold" href={s.href}>
+                    {s.n}. {s.title}
+                  </Link>
+                  <span className="hint">{s.line}</span>
+                </li>
+              ))}
+            </ol>
+          </div>
+        ) : null}
+      </>
+    ),
+    side: (
+      <>
+        <SectionHeading title="What the rider said" />
+        <Callout tone="warn" title={ASK_REASONS[report.reason] ?? report.reason}>
+          {report.note ? <span className="whitespace-pre-line">{report.note}</span> : "No words added."}
+        </Callout>
+        <Callout tone="info" title="What to do">
+          If a fact is wrong, correct it in the data files; the answer is not given again either way. If the answer
+          misread good facts, note the question for the test set.
+        </Callout>
+        <form action={decideAskAction} className="flex flex-col gap-2">
+          <input type="hidden" name="id" value={report.id} />
+          <input type="hidden" name="decision" value="apply" />
+          <button type="submit" className="btn btn-primary btn-block">
+            <IconCheck />
+            Mark as read and acted on
+          </button>
+        </form>
+        <form action={decideAskAction}>
+          <input type="hidden" name="id" value={report.id} />
+          <input type="hidden" name="decision" value="set-aside" />
+          <button type="submit" className="btn btn-outline btn-block">
+            Set aside
+          </button>
+        </form>
+      </>
+    ),
+  };
+}
+
 // ── one trip that waits, or that riders reported ─────────────────────────
 
 async function TripDetail({ card, nameOf }: { card: TripCard; nameOf: (slug: string) => string }) {
@@ -395,7 +471,7 @@ export default async function EditorPage(props: PageProps<"/editor">) {
   if (!user.is_editor) notFound();
 
   const query = await props.searchParams;
-  const [index, box, trips] = await Promise.all([getIndex(), inbox(), tripsForEditor()]);
+  const [index, box, trips, asks] = await Promise.all([getIndex(), inbox(), tripsForEditor(), askInbox()]);
   const nameOf = (slug: string) => index.routes.find((r) => r.slug === slug)?.name ?? slug;
 
   const items: Item[] = [
@@ -412,6 +488,13 @@ export default async function EditorPage(props: PageProps<"/editor">) {
       title: `${nameOf(r.route_slug)} · ${r.bike}`,
       who: r.name ?? "No name given",
       at: r.created_at,
+    })),
+    ...asks.map((r) => ({
+      key: `ask-${r.id}`,
+      kind: "Answer marked wrong",
+      title: r.answer.question,
+      who: r.userId ? "A logged-in rider" : "No name given",
+      at: r.createdAt.toISOString(),
     })),
     ...trips.map((t) => ({
       key: `trip-${t.id}`,
@@ -435,6 +518,10 @@ export default async function EditorPage(props: PageProps<"/editor">) {
     if (shown.key.startsWith("fact-") && fact) detail = await FactDetail({ report: fact, nameOf });
     else if (shown.key.startsWith("report-") && report) detail = TripReportDetail({ report, nameOf });
     else if (shown.key.startsWith("trip-") && trip) detail = await TripDetail({ card: trip, nameOf });
+    else if (shown.key.startsWith("ask-")) {
+      const ask = asks.find((r) => r.id === id);
+      if (ask) detail = AskDetail({ report: ask });
+    }
   }
 
   const today = new Intl.DateTimeFormat("en-GB", { timeZone: "Asia/Kolkata", weekday: "long", day: "numeric", month: "long", year: "numeric" }).format(new Date());

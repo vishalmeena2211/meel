@@ -4,6 +4,7 @@ import { revalidatePath } from "next/cache";
 import { redirect } from "next/navigation";
 
 import { currentUser, findRider, type RiderFound, setOneTimePassword } from "@/server/auth";
+import { decideAskReport } from "@/server/ask/store";
 import { decideFactReport, decideTripReport, factReport, tripReport } from "@/server/reports";
 import { getTrip, setTripStatus } from "@/server/trips";
 import { refreshRoute } from "@/server/refresh";
@@ -82,4 +83,11 @@ export async function letRiderInAction(_previous: LetInState, form: FormData): P
   const set = await setOneTimePassword(email);
   if (!set.ok) return { ...blank, error: NOBODY };
   return { ...blank, rider: found.rider, password: set.password };
+}
+
+/** An answer a rider marked wrong: read and acted on, or set aside. The answer is never given again either way. */
+export async function decideAskAction(form: FormData): Promise<void> {
+  await editorOnly();
+  await decideAskReport(text(form, "id"), text(form, "decision") === "apply" ? "applied" : "set-aside");
+  redirect("/editor");
 }

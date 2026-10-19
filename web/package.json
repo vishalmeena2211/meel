@@ -15,12 +15,17 @@
     "typecheck": "prisma generate --no-hints && next typegen && tsc --noEmit",
     "db:migrate": "prisma migrate dev",
     "db:deploy": "prisma migrate deploy",
-    "db:studio": "prisma studio"
+    "db:studio": "prisma studio",
+    "ask:index": "tsx scripts/ask-index.mts",
+    "ask:try": "tsx --conditions=react-server --require ./scripts/ask-try-preload.cjs scripts/ask-try.mts",
+    "ask:warm": "tsx --conditions=react-server --require ./scripts/ask-try-preload.cjs scripts/ask-warm.mts"
   },
   "dependencies": {
     "@prisma/adapter-pg": "7.10.0",
     "@prisma/client": "7.10.0",
     "@vercel/analytics": "2.0.1",
+    "@vercel/oidc": "4.0.1",
+    "google-auth-library": "11.3.1",
     "mixpanel-browser": "2.83.0",
     "next": "16.3.6",
     "next-auth": "5.0.0-beta.32",
@@ -37,6 +42,7 @@
     "eslint-config-next": "16.3.6",
     "prisma": "7.10.0",
     "tailwindcss": "^4",
+    "tsx": "4.23.15",
     "typescript": "^5"
   },
   "packageManager": "pnpm@9.15.4",

@@ -7,6 +7,7 @@ import { useEffect, useId, useMemo, useRef, useState, type KeyboardEvent, type R
 import { track } from "@/lib/analytics";
 import { suggest, type SearchRoute, type Suggestion } from "@/lib/search";
 
+import { AskMark } from "./ask/ask-mark";
 import { IconFlag, IconMap, IconSearch, IconX } from "./icons";
 
 /*
@@ -38,6 +39,16 @@ function Marked({ text, hit }: { text: string; hit: Suggestion["hit"] }) {
       <u className="decoration-2 underline-offset-2">{text.slice(hit[0], hit[1])}</u>
       {text.slice(hit[1])}
     </>
+  );
+}
+
+/** Reads as a question: three words or more, or a question word, or what riders ask about. Ask Meel then comes first. */
+function looksLikeQuestion(typed: string): boolean {
+  const t = typed.toLowerCase();
+  return (
+    t.split(/\s+/).filter(Boolean).length >= 3 ||
+    /\b(what|where|when|how|which|is|do|does|can|kitna|kitni|kahan|kya|kab|kaise|pump|petrol|fuel|distance|permit|open|closed|check ?post|rule)\b/.test(t) ||
+    t.endsWith("?")
   );
 }
 
@@ -89,7 +100,12 @@ export function SearchSuggest({
   const header = placement === "header";
   // A box in a search form ends its list with a row that searches every route: the front page, narrowed to it.
   const everywhere = name && typed.length >= 2 ? `/?q=${encodeURIComponent(typed)}` : null;
-  const rows = found.length + (everywhere ? 1 : 0);
+  // Ask Meel (wireframes, screen 7): first when the words read as a question, last when they are a name.
+  const ask = typed.length >= 2 ? `/ask?from=search&q=${encodeURIComponent(typed)}` : null;
+  const askFirst = Boolean(ask) && looksLikeQuestion(typed);
+  const off = askFirst ? 1 : 0;
+  const askRow = ask ? (askFirst ? 0 : found.length + (everywhere ? 1 : 0)) : -1;
+  const rows = found.length + (everywhere ? 1 : 0) + (ask ? 1 : 0);
   const shown = open && rows > 0;
 
   function setValue(next: string) {
@@ -105,9 +121,10 @@ export function SearchSuggest({
   }
 
   function hrefOf(row: number): string | null {
-    const s = found[row];
+    if (row === askRow) return ask;
+    const s = found[row - off];
     if (s) return `/routes/${s.slug}`;
-    return row === found.length ? everywhere : null;
+    return row - off === found.length ? everywhere : null;
   }
 
   function chosen() {
@@ -124,7 +141,7 @@ export function SearchSuggest({
   function go(row: number) {
     const href = hrefOf(row);
     if (!href) return;
-    track("Search suggestion picked", { kind: href.startsWith("/?") ? "all routes" : (found[row]?.kind ?? "route") });
+    track("Search suggestion picked", { kind: href.startsWith("/ask") ? "ask" : href.startsWith("/?") ? "all routes" : (found[row - off]?.kind ?? "route") });
     chosen();
     // Searching every route loads the front page afresh, so it reads the search from the address.
     if (href.startsWith("/?")) window.location.assign(href);
@@ -178,11 +195,36 @@ export function SearchSuggest({
 
   // Suggestions of one kind sit under one heading. Each keeps its place in the whole list, for the arrow keys.
   const groups: Array<{ kind: Suggestion["kind"]; items: Array<{ s: Suggestion; at: number }> }> = [];
-  found.forEach((s, at) => {
+  found.forEach((s, i) => {
+    const at = i + off;
     const last = groups.at(-1);
     if (last?.kind === s.kind) last.items.push({ s, at });
     else groups.push({ kind: s.kind, items: [{ s, at }] });
   });
+
+  const askOption = ask ? (
+    <Link
+      id={`${id}-${askRow}`}
+      href={ask}
+      role="option"
+      aria-selected={active === askRow}
+      tabIndex={-1}
+      onMouseDown={(e) => e.preventDefault()}
+      onMouseMove={() => setActive(askRow)}
+      onClick={chosen}
+      data-track="Search suggestion picked"
+      data-track-props='{"kind":"ask"}'
+      className={`flex min-h-11 items-center gap-2.5 px-3 py-1.5 ${askFirst ? "" : "border-t border-line"} ${active === askRow ? "bg-sign-soft" : ""}`}
+    >
+      <AskMark className="size-5" />
+      <span className="flex min-w-0 flex-1 flex-col">
+        <b className="truncate text-sm leading-5 font-semibold text-sign">
+          {askFirst ? `Ask Meel: “${typed}”` : `Ask Meel about “${typed}”`}
+        </b>
+        {askFirst ? <span className="hint truncate">An answer from Meel’s facts, with dates</span> : null}
+      </span>
+    </Link>
+  ) : null;
 
   return (
     <div className={`relative ${className ?? ""}`}>
@@ -239,6 +281,7 @@ export function SearchSuggest({
           header ? "w-[26rem] max-w-[calc(100vw-2rem)]" : "right-0"
         }`}
       >
+        {askFirst ? askOption : null}
         {groups.map((g, gi) => (
           <div key={`${g.kind}-${gi}`} role="group" aria-labelledby={`${id}-g${gi}`}>
             <div
@@ -280,24 +323,25 @@ export function SearchSuggest({
         ))}
         {everywhere ? (
           <a
-            id={`${id}-${found.length}`}
+            id={`${id}-${found.length + off}`}
             href={everywhere}
             role="option"
-            aria-selected={active === found.length}
+            aria-selected={active === found.length + off}
             tabIndex={-1}
             onMouseDown={(e) => e.preventDefault()}
-            onMouseMove={() => setActive(found.length)}
+            onMouseMove={() => setActive(found.length + off)}
             onClick={chosen}
             data-track="Search suggestion picked"
             data-track-props='{"kind":"all routes"}'
             className={`flex min-h-11 items-center gap-2.5 px-3 py-1.5 text-sm font-semibold text-sign ${
               found.length > 0 ? "border-t border-line" : ""
-            } ${active === found.length ? "bg-sign-soft" : ""}`}
+            } ${active === found.length + off ? "bg-sign-soft" : ""}`}
           >
             <IconSearch className="size-4 shrink-0" />
             <span className="min-w-0 flex-1 truncate">Search all routes for “{typed}”</span>
           </a>
         ) : null}
+        {askFirst ? null : askOption}
       </div>
       <p className="sr-only" role="status">
         {said}

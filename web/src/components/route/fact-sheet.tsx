@@ -9,7 +9,7 @@ import { indiaDay, sayDate } from "@/lib/format";
 import { keep } from "@/lib/outbox";
 import { useStored } from "@/lib/use-stored";
 
-import { IconCheck, IconSend } from "../icons";
+import { IconAsk, IconCheck, IconSend } from "../icons";
 import { DayPicker } from "../pickers";
 import { FactBody } from "./fact-body";
 
@@ -184,6 +184,14 @@ export function FactSheet({
                   </button>
                 </div>
               ) : null}
+              {/* Ask Meel with this fact attached (wireframes, screen 8, frame 3). */}
+              <a
+                href={`/ask?from=fact&route=${routeSlug}&fact=${encodeURIComponent(view.id)}&title=${encodeURIComponent(view.title)}`}
+                className="link flex items-center gap-1.5 self-start text-sm"
+              >
+                <IconAsk className="size-[15px]" />
+                Ask about this fact
+              </a>
               <button type="button" className="link self-center text-sm" onClick={close}>
                 Close
               </button>
