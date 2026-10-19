@@ -2,6 +2,7 @@ import Link from "next/link";
 
 import { SOURCE_URL } from "@/lib/site";
 
+import { ThemeChoice } from "./theme-switch";
 import { KmStone } from "./ui";
 
 /*
@@ -112,6 +113,11 @@ export function SiteFoot() {
         <div className="flex flex-col gap-1.5 md:flex-row md:items-baseline md:justify-between md:gap-6">
           <p className="font-medium text-on-tarmac">Meel never says a road is open. It links to the office that decides.</p>
           <p className="text-xs text-on-tarmac/60">rideplanner.in</p>
+        </div>
+
+        <div className="flex flex-col gap-1.5 md:flex-row md:items-center md:gap-3">
+          <span className="text-xs text-on-tarmac/60">Colours</span>
+          <ThemeChoice />
         </div>
 
         {/* OpenStreetMap asks for this wherever its data appears. Its data is on nearly every page. */}
