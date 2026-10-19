@@ -582,3 +582,10 @@ body:has([data-form-page]) .site-foot .foot-line {
 @keyframes ask-blink {
   50% { opacity: 0; }
 }
+
+/* On a phone the Ask page is a conversation with its box at the foot: the site's foot would sit in the middle of it. */
+@media (max-width: 767px) {
+  body:has([data-ask]) .site-foot {
+    display: none;
+  }
+}

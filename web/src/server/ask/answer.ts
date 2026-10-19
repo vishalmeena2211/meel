@@ -36,7 +36,7 @@ export interface AskContext {
 type Emit = (e: AskEvent) => void;
 
 /** Raised whenever the way answers are made changes, so answers made the old way are not given again. */
-const ASK_VERSION = "2026-10-19.6";
+const ASK_VERSION = "2026-10-19.8";
 
 const one = (n: number) => (Math.round(n * 10) / 10).toLocaleString("en-IN");
 const hm = (h: number) => {
@@ -313,7 +313,9 @@ export async function runAsk(req: AskRequest, ctx: AskContext, emit: Emit): Prom
   };
   if (slug) await viewsOf(slug);
   // The very same question, asked before: no call to Google at all.
-  let before = await reusable({ route: slug, kind, lang, embedding: null, question }, currentPrint);
+  // A question asked from one fact ("when did this change?") depends on that fact: it is never matched to another.
+  const reuse = !req.fact;
+  let before = reuse ? await reusable({ route: slug, kind, lang, embedding: null, question }, currentPrint) : null;
   let embedding: Float32Array | null = null;
   if (!before) {
     try {
@@ -322,7 +324,7 @@ export async function runAsk(req: AskRequest, ctx: AskContext, emit: Emit): Prom
       // Google's limit reached, or a fault: carry on, searching by words instead of meaning.
       console.error("ask: embedding failed, searching by words", error);
     }
-    if (embedding) before = await reusable({ route: slug, kind, lang, embedding, question }, currentPrint);
+    if (embedding && reuse) before = await reusable({ route: slug, kind, lang, embedding, question }, currentPrint);
   }
   if (before) {
     emit({ t: "step", text: "Asked before, and its facts haven’t changed" });
@@ -337,6 +339,15 @@ export async function runAsk(req: AskRequest, ctx: AskContext, emit: Emit): Prom
   // ── Find the facts.
   const facts = new Facts();
   const pictures: AskPicture[] = [];
+  // Asked from one fact: that fact comes first, and "this" in the question means it.
+  let about = "";
+  if (slug && req.fact) {
+    const own = ix.chunk(slug, req.fact);
+    if (own) {
+      facts.add(own, (await viewsOf(slug)).get(own.id) ?? null);
+      about = `The rider is asking about fact [1], "${own.title}". "This" in the question means that fact.\n\n`;
+    }
+  }
   const searchSlugs = slug ? [slug] : compare ?? (onRoutes.length ? onRoutes : null);
   if (compare) {
     for (const s of compare) {
@@ -518,14 +529,15 @@ export async function runAsk(req: AskRequest, ctx: AskContext, emit: Emit): Prom
   // ── Write only from them.
   const numbered = facts.list.map((f, i) => {
     const trust = f.view ? ` (${f.view.line})` : "";
-    return `[${i + 1}] ${f.title}: ${f.words}${trust}`.slice(0, 420);
+    // Long enough for a rule's past changes; the fact being asked about gets the most room.
+    return `[${i + 1}] ${f.title}: ${f.words}${trust}`.slice(0, i === 0 && about ? 1200 : 650);
   });
   const previous = req.previous ? `Previous question: ${req.previous.question.slice(0, 200)}\nPrevious answer: ${req.previous.answer.slice(0, 300)}\n\n` : "";
   // The place names in these facts, spelt out, so a Hindi answer does not turn "Lahaul" into "Ladakh".
   const names = [...new Set(ix.gazetteer.entries.filter((e) => facts.list.some((f) => f.words.includes(e.name))).map((e) => e.name))].slice(0, 20);
   const spelt = names.length ? `Place names, to copy exactly in Latin letters: ${names.join(", ")}.\n\n` : "";
   const hint = HINT[kind] ? `${HINT[kind]}\n\n` : "";
-  const user = `Facts:\n${numbered.join("\n")}\n\n${spelt}${hint}${previous}Question: ${question}`;
+  const user = `Facts:\n${numbered.join("\n")}\n\n${spelt}${hint}${about}${previous}Question: ${question}`;
 
   const writer = new SentenceWriter(facts.list.length, (s) => emit({ t: "text", text: s }));
   let usage = { promptTokens: 0, outputTokens: 0 };
@@ -560,7 +572,7 @@ export async function runAsk(req: AskRequest, ctx: AskContext, emit: Emit): Prom
       next: NEXT[kind](shortName),
       noFact: false,
     },
-    { embedding, facts: fingerprints(cited), promptTokens: usage.promptTokens, outputTokens: usage.outputTokens },
+    { embedding: reuse ? embedding : null, facts: fingerprints(cited), promptTokens: usage.promptTokens, outputTokens: usage.outputTokens },
   );
 }
 
@@ -642,6 +654,8 @@ class SentenceWriter {
 }
 
 function sourcesOf(list: Fact[], routes: Map<string, Route>): AskSource[] {
+  // Worked-out words start with the fact's own title ("Batseri pump: 27.1 km before…"); the row already shows it.
+  const untitled = (f: Fact) => (f.words.startsWith(`${f.chunk.title}: `) ? f.words.slice(f.chunk.title.length + 2) : f.words);
   return list.map((f, i) => ({
     n: i + 1,
     id: f.chunk.id,
@@ -649,7 +663,7 @@ function sourcesOf(list: Fact[], routes: Map<string, Route>): AskSource[] {
     routeName: routes.get(f.chunk.slug)?.name ?? "",
     title: f.title,
     // A worked-out fact shows the worked-out words; a fact from the page shows its own words and who confirmed it.
-    line: f.words !== f.chunk.text ? `${f.words}${f.view ? ` ${f.view.line}` : ""}` : f.view ? `${f.view.short ?? ""} ${f.view.line}`.trim() : f.chunk.text,
+    line: f.words !== f.chunk.text ? `${untitled(f)}${f.view ? ` ${f.view.line}` : ""}` : f.view ? `${f.view.short ?? ""} ${f.view.line}`.trim() : f.chunk.text,
     state: f.view?.state ?? null,
     href: f.view?.href ?? f.chunk.href,
   }));

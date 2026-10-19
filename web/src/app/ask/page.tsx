@@ -28,7 +28,7 @@ export default async function AskPage(props: PageProps<"/ask">) {
   const from = one(query.from) ?? "direct";
 
   return (
-    <div className="flex flex-col gap-3">
+    <div data-ask className="flex flex-col gap-3">
       <BackHead title="Ask Meel" sub="Answers only from Meel’s facts" back={route ? `/routes/${route.slug}` : "/"} />
       <header className="hidden flex-col gap-1 md:flex">
         <p className="display text-4xl" role="heading" aria-level={1}>

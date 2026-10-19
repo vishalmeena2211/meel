@@ -272,7 +272,7 @@ export function SourceRows({ sources, onOpen, hi }: { sources: AskSource[]; onOp
           </span>
           <span className="min-w-0 flex-1">
             <b className="block text-[0.8125rem] leading-[1.125rem]">{s.title}</b>
-            <span className="hint line-clamp-2 block text-xs">{s.line}</span>
+            <span className="hint line-clamp-2 text-xs">{s.line}</span>
           </span>
           {s.state ? <StateBadge state={s.state} /> : null}
           <IconRight className="size-4 shrink-0 text-ink-2" />
