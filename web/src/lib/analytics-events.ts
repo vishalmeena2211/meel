@@ -48,6 +48,8 @@ export const EVENTS = {
   "Logged out": "A rider logged out.",
   "Account deleted": "A rider deleted their account.",
 
+  "Theme picked": "Light, dark or the phone's setting was picked. theme.",
+
   // ── Ask Meel ──────────────────────────────────────────────────────
   "Ask Meel opened": "The Ask page was opened. from (top bar, search, route row, fact, shared answer).",
   "Ask Meel asked": "A question was sent. kind, lang, route (or none), follow_up. Never the words typed.",

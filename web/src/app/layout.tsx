@@ -12,6 +12,7 @@ import { SiteFoot } from "@/components/site-foot";
 import { SiteNav, TabBar } from "@/components/site-nav";
 import { KmStone } from "@/components/ui";
 import { AskHeadButton } from "@/components/ask/ask-head-button";
+import { THEME_SCRIPT, ThemeButton } from "@/components/theme-switch";
 
 import "./globals.css";
 
@@ -48,7 +49,11 @@ export const viewport: Viewport = {
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
-    <html lang="en-IN" className={`${display.variable} ${body.variable}`}>
+    // suppressHydrationWarning: THEME_SCRIPT may set data-theme on <html> before React takes over. Nothing else differs.
+    <html lang="en-IN" className={`${display.variable} ${body.variable}`} suppressHydrationWarning>
+      <head>
+        <script dangerouslySetInnerHTML={{ __html: THEME_SCRIPT }} />
+      </head>
       <body className="flex min-h-dvh flex-col">
         <a
           href="#main"
@@ -74,6 +79,9 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
               <AskHeadButton />
             </span>
             <SiteNav />
+            <span className="hidden md:inline-flex">
+              <ThemeButton />
+            </span>
           </div>
         </header>
 
