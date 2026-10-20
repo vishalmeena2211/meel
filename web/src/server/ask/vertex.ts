@@ -23,6 +23,8 @@ export const EMBED_MODEL = "gemini-embedding-2";
 export const EMBED_DIMS = 768;
 
 const SCOPE = "https://www.googleapis.com/auth/cloud-platform";
+// The daily report reads Search Console with the same service account (it is a Restricted user on the property).
+const SEARCH_SCOPE = "https://www.googleapis.com/auth/webmasters.readonly";
 
 type TokenSource = { getAccessToken(): Promise<{ token?: string | null } | string | null | undefined> };
 let source: TokenSource | null = null;
@@ -40,12 +42,17 @@ function tokenSource(): TokenSource {
       token_url: "https://sts.googleapis.com/v1/token",
       service_account_impersonation_url: `https://iamcredentials.googleapis.com/v1/projects/-/serviceAccounts/${account}:generateAccessToken`,
       subject_token_supplier: { getSubjectToken: () => getVercelOidcToken() },
-      scopes: [SCOPE],
+      scopes: [SCOPE, SEARCH_SCOPE],
     });
   } else {
-    source = new GoogleAuth({ scopes: [SCOPE] });
+    source = new GoogleAuth({ scopes: [SCOPE, SEARCH_SCOPE] });
   }
   return source;
+}
+
+/** An access token for Google APIs, signed in as described at the top of this file. */
+export async function googleToken(): Promise<string> {
+  return token();
 }
 
 async function token(): Promise<string> {
