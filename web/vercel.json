@@ -3,5 +3,11 @@
   "buildCommand": "if [ \"$VERCEL_ENV\" = \"production\" ]; then pnpm db:deploy; fi && pnpm build",
   "regions": [
     "sin1"
+  ],
+  "crons": [
+    {
+      "path": "/api/cron/report",
+      "schedule": "30 3 * * *"
+    }
   ]
 }

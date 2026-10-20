@@ -89,6 +89,11 @@ Put them in `web/.env.local` on your own machine, one per line, as `NAME=value`.
 | `ASK_MEEL_OFF` | `1` switches Ask Meel off at once. The rest of the site is untouched | Ask Meel is on |
 | `ASK_ANSWER_MODEL` | Which Gemini model writes answers | `gemini-2.5-flash-lite` |
 | `ASK_EMBED_OFF` | `1` makes Ask Meel find facts by words instead of by meaning: no embedding calls to Google | Facts are found by meaning, falling back to words when Google's limit is reached |
+| `TELEGRAM_BOT_TOKEN` | The daily visitor report: the token of @meel_report_bot, from @BotFather. Add it yourself in Vercel | No report is sent |
+| `TELEGRAM_CHAT_ID` | The editor's own Telegram chat. Only this chat gets the report and answers to "now" | No report is sent |
+| `MIXPANEL_SA_USER` | A Mixpanel service account (role Consumer, project Meel), for counting riders in the report | The report says riders are not connected |
+| `MIXPANEL_SA_SECRET` | Its secret | As above |
+| `REPORT_IGNORE_DEVICES` | Mixpanel device ids to leave out of the report, comma-separated beginnings: the editor's own devices | Every device counts |
 
 ### Mixpanel
 
@@ -130,6 +135,10 @@ pnpm ask:index
 Other scripts: `pnpm ask:try "petrol pump in chitkul"` asks from the command line against your local database; `DATABASE_URL=… pnpm ask:warm` answers every starter question in advance (about 208, roughly ₹4).
 
 **Google Cloud.** Everything runs in the personal project `meel-rideplanner`, billed to the personal billing account, with a ₹500 monthly budget alert. On your own machine: `gcloud auth application-default login`. Where the site is hosted there is no key: Vercel's OIDC token is trusted by the workload identity pool `vercel`, which lets the project `meel` on the team `vishal-meenas-projects` act as the service account `meel-ask`, which may only call Vertex AI. In Vercel, turn on OIDC federation (Settings, Security, "Team" issuer) and set the four `GCP_` settings above.
+
+### The daily report
+
+`/api/cron/report` sends the editor a Telegram message every day at 9:00 IST (`vercel.json`), and the week on Mondays: yesterday's real riders from Mixpanel, the last 7 days, Google search from Search Console, and Ask Meel's questions and spend. Reply "now" or "week" to @meel_report_bot for a fresh one (`/api/telegram`, only the editor's chat). Search Console is read as the service account `meel-ask`, a Restricted user on the property. A source that cannot be read becomes one line saying so.
 
 ### Setting up Google
 
