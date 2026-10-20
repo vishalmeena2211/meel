@@ -4,7 +4,7 @@
 
 <br>
 
-**Fuel gaps, permits, passes and night halts for 50 Indian motorcycle routes.<br>Every fact shows where it came from, and the day it was last confirmed.**
+**Fuel gaps, permits, passes and night halts for 51 Indian motorcycle routes.<br>Every fact shows where it came from, and the day it was last confirmed. Ask Meel answers from them.**
 
 <br>
 
@@ -15,13 +15,14 @@
 [![Postgres with Prisma](https://img.shields.io/badge/Postgres-Prisma_7-0f5f4b?logo=postgresql&logoColor=white)](https://www.prisma.io)
 [![Auth.js](https://img.shields.io/badge/Auth.js-Google_and_email-0f5f4b)](https://authjs.dev)
 [![Hosted on Vercel](https://img.shields.io/badge/Vercel-Singapore-16201c?logo=vercel&logoColor=white)](https://vercel.com)
+[![Ask Meel: Gemini on Vertex AI](https://img.shields.io/badge/Ask_Meel-Gemini_on_Vertex_AI-16201c?logo=googlegemini&logoColor=white)](#ask-meel)
 <br>
 [![Live at rideplanner.in](https://img.shields.io/badge/live-rideplanner.in-0f5f4b)](https://rideplanner.in)
 [![Status: early](https://img.shields.io/badge/status-early,_facts_not_yet_confirmed_by_riders-f2b807)](#how-far-to-trust-it)
 [![Kept as a hobby](https://img.shields.io/badge/kept_by-one_person,_as_a_hobby-f2b807)](#the-rules-it-keeps)
 [![Licence: MIT for the code](https://img.shields.io/badge/licence-MIT_for_the_code-0f5f4b)](#licence)
 
-**[Open rideplanner.in](https://rideplanner.in)** · [What it does](#what-it-does) · [How far to trust it](#how-far-to-trust-it) · [How it works](#how-it-works) · [What the live site counts](#what-the-live-site-counts) · [Run it yourself](#run-it-on-your-machine) · [Contributing](CONTRIBUTING.md)
+**[Open rideplanner.in](https://rideplanner.in)** · [What it does](#what-it-does) · [Ask Meel](#ask-meel) · [How far to trust it](#how-far-to-trust-it) · [How it works](#how-it-works) · [What the live site counts](#what-the-live-site-counts) · [Run it yourself](#run-it-on-your-machine) · [Contributing](CONTRIBUTING.md)
 
 </div>
 
@@ -54,11 +55,31 @@ Meel is the memory those groups don't have. It keeps **one page per route**, spl
 | **"Is it open?" without guessing** | Meel never says a road is open. It links to the office that decides, and to where that office announces it. |
 | **Reports with no account** | Anyone can say "still true" or "this has changed". The editor reads every report before it changes a fact. |
 | **Trips board** | Post a trip, ask to join one, and the leader decides. The chat group link is shown only to riders the leader has accepted. |
+| **Ask Meel** | Ask in English, Hindi or Hinglish, and get an answer built only from Meel's facts, with a source number on every sentence. See [Ask Meel](#ask-meel). |
 | **Share a single fact** | Every fact has its own address and preview card, so the answer to a chat group's question is one link, with its date written on it. |
 | **Save for the road** | Keep a route on your phone for the stretches with no network. A report made offline is sent when the signal returns. |
 
 <p align="center">
   <img src=".github/readme/laptop.png" alt="The fuel section of Manali to Leh on a laptop: sections on the left, the fuel gap and dated pumps in the middle" width="100%">
+</p>
+
+## Ask Meel
+
+Riders type questions, not names: "petrol pump in chitkul", "toong check post", "gandikota to araku valley distance". [Ask Meel](https://rideplanner.in/ask) answers them from Meel's own facts and nothing else. Every sentence carries a number that opens the fact it came from, with its source and its date.
+
+<p align="center">
+  <img src=".github/readme/ask-meel.png" alt="Four phone screens of Ask Meel: the starting page with questions riders often ask; an answer about fuel near Chitkul with numbered sources and the fuel gap drawn to scale; an answer about the road from Sarchu to Leh with the route photo and riders' videos; and the reply to 'is Zoji La open today', which lists the offices that announce it instead of saying open or closed" width="100%">
+</p>
+
+- **Only Meel's facts.** All 4,650 facts and notes are searched by meaning, so "kitna petrol" finds the fuel facts. If Meel has no fact, it says so and shows the closest ones it has.
+- **Numbers worked out in code.** Distances to pumps, between places and between night halts are counted from the route data. The model only writes the sentences, and a sentence without a real source number is dropped.
+- **Never "open" or "closed".** Asked whether a road or pass is open, it lists the offices that announce it, as the route pages do. Feeling unwell at height, costs and bike rankings get fixed replies, with no model involved.
+- **Meel's own pictures.** The fuel gap drawn to scale, the route photo with its credit, riders' videos of the stretch, a table of stretches. No AI-made pictures.
+- **Ten questions a day** without an account, forty with one. An answer is given again, free, while the facts behind it read the same. A question costs about one paisa.
+- **Asked from anywhere.** An Ask icon in the phone's top bar on the front page and every route page, an Ask Meel button on a laptop, the search box, and a row on each route page. An opened fact can start a question about itself.
+
+<p align="center">
+  <img src=".github/readme/ask-meel-laptop.png" alt="Ask Meel on a laptop, filling the window: past questions on the left, a Hinglish answer about fuel from Manali to Leh with the 329 km gap drawn in the middle, and its four sources on the right" width="100%">
 </p>
 
 ## The rules it keeps
@@ -110,6 +131,8 @@ flowchart LR
   OFFICES --> PAGES
   METEO --> PAGES
   RIDER(("Rider")) -->|reads, no account| PAGES
+  RIDER -->|asks a question| ASK["Ask Meel<br/>facts found by meaning,<br/>sentences by Gemini"]
+  DATA -->|embedded once| ASK
   RIDER -->|reports a fact| DB
   RIDER -->|joins a trip| AUTH --> DB
   EDITOR(("Editor")) -->|reads every report| DB
@@ -132,6 +155,7 @@ The distance from twelve cities to each route's start is worked out once, by `da
 | Counting visits | [Mixpanel](https://mixpanel.com), on its EU servers, and Vercel's own page counts. See [what the live site counts](#what-the-live-site-counts) |
 | Hosting | [Vercel](https://vercel.com). Every push to `main` deploys, and database migrations run on each live build |
 | Offline | A service worker keeps a saved route. Reports made offline wait on the phone |
+| Ask Meel | Facts embedded with `gemini-embedding-2` (`pnpm ask:index`, only changed facts are sent again) and searched in memory; answers written by Gemini 2.5 Flash-Lite on Vertex AI, reached from Vercel without a key. Code in `web/src/server/ask` |
 
 ## What the live site counts
 
@@ -140,6 +164,7 @@ rideplanner.in counts visits, so its keeper can see which routes and tools are u
 - **Pages opened**, by their address up to the "?", and **the tools riders use**, such as the fuel check or a map app. The full list, about 40, with what each one carries, is [`web/src/lib/analytics-events.ts`](web/src/lib/analytics-events.ts). They go to Mixpanel, on its EU servers. Vercel also counts page views.
 - **Screen recordings** of how pages are used: a replay of the page, not a video of the screen. Everything typed is hidden, and so are riders' names and trip chat links. Pages about an account, logging in, posting a trip and the editor's desk are never recorded.
 - **Never sent:** a name, an email, a phone number, or anything typed into a box. Logged-in riders are not identified. A browser set to "Do Not Track" is not counted, and nor is a robot or a test tool.
+- **Questions asked of Ask Meel** are kept for 30 days, with no phone number, account or address, to see what Meel is missing. The events about them carry the kind of question, never its words.
 - **A copy you run yourself counts nothing.** Mixpanel's token comes from a setting, `NEXT_PUBLIC_MIXPANEL_TOKEN`, not from the code. Details are in [`web/README.md`](web/README.md#mixpanel).
 
 A privacy notice on the site itself is still to come.
@@ -183,7 +208,7 @@ New here? Start with [`docs/plan.md`](docs/plan.md): its first part says what ex
 
 ## Roadmap
 
-- [x] Fifty routes, with every fact dated and sourced
+- [x] Fifty-one routes, with every fact dated and sourced
 - [x] Fuel, altitude and packing checks
 - [x] Official alerts, offices' own dates, road closures and pass weather, read every hour
 - [x] A route file for map apps, an emergency card, and a message for someone at home
@@ -192,6 +217,8 @@ New here? Start with [`docs/plan.md`](docs/plan.md): its first part says what ex
 - [x] Trips board, with accounts through Google or email
 - [x] Saving a route for no network
 - [x] Open at rideplanner.in (8 October 2026), with this code public (9 October)
+- [x] Ask Meel: questions answered from the facts, with sources (19 October 2026)
+- [x] Light and dark, or the phone's own setting
 - [ ] Riders confirming the facts: the step that matters most
 - [ ] A privacy notice on the site
 - [ ] Logging in with Google for everyone: while Google's consent screen is in testing, only listed accounts can
@@ -238,6 +265,7 @@ The full list, source by source, is on the site's [credits page](https://ridepla
 | **State** | How far to trust a fact today: fresh, ageing, stale, not yet checked, or riders disagree |
 | **Basic page** | A route whose facts come from desk research. A **full page** also has riders' reports |
 | **Section** | One part of a route page, such as fuel or rules, each on its own screen |
+| **Source number** | The small number after a sentence in an Ask Meel answer. It opens the fact the sentence came from |
 | **Editor** | The person who keeps Meel, reads reports, and approves a rider's first trip |
 
 <br>
