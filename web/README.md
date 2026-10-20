@@ -138,7 +138,7 @@ Other scripts: `pnpm ask:try "petrol pump in chitkul"` asks from the command lin
 
 ### The daily report
 
-`/api/cron/report` sends the editor a Telegram message every day at 9:00 IST (`vercel.json`), and the week on Mondays: yesterday's real riders from Mixpanel, the last 7 days, Google search from Search Console, and Ask Meel's questions and spend. Reply "now" or "week" to @meel_report_bot for a fresh one (`/api/telegram`, only the editor's chat). Search Console is read as the service account `meel-ask`, a Restricted user on the property. A source that cannot be read becomes one line saying so.
+`/api/cron/report` sends the editor a Telegram message every day at 9:00 IST (`vercel.json`), and the week on Mondays: yesterday's real riders from Mixpanel, the last 7 days, Google search from Search Console, and Ask Meel's questions and spend. Reply "now" or "week" to @meel_report_bot for a fresh one (`/api/telegram`, only the editor's chat, and only messages carrying the webhook secret Telegram was given; the secret comes from the bot token). Search Console is read as the service account `meel-ask`, a Restricted user on the property. A source that cannot be read becomes one line saying so.
 
 ### Setting up Google
 

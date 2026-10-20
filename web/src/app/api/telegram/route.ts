@@ -1,16 +1,17 @@
 import { buildReport, claimSend } from "@/server/report/build";
-import { sendToEditor, telegramReady } from "@/server/report/telegram";
+import { fromTelegram, sendToEditor, telegramReady } from "@/server/report/telegram";
 
 /*
   POST /api/telegram: messages to @meel_report_bot. Only the editor's own chat (TELEGRAM_CHAT_ID) is answered;
   anything from any other chat is ignored without a reply. "now" sends a fresh report, "week" the week's.
+  A message without the webhook secret did not come from Telegram and is ignored too.
 */
 
 export const maxDuration = 60;
 
 export async function POST(request: Request) {
   const ok = () => Response.json({ ok: true });
-  if (!telegramReady()) return ok();
+  if (!telegramReady() || !fromTelegram(request)) return ok();
   let update: { message?: { chat?: { id?: number }; text?: string } };
   try {
     update = await request.json();
