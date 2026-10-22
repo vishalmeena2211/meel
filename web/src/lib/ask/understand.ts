@@ -18,6 +18,8 @@ const RULES: Array<[AskKind, RegExp]> = [
   ["health", /\b(headache|head ache|vomit\w*|nausea|breathless\w*|breath(e|ing)? (problem|issue)|can'?t breathe|dizz\w*|faint\w*|ams|altitude sickness|mountain sickness|chest pain|unwell|sick|sar ?dard|ulti|chakkar|saans|bimar|tabiyat)\b|उल्टी|सिर दर्द|चक्कर|सांस/],
   ["off-topic", /\b(cost|costs|budget|price|prices|kharcha|kharch|expense\w*|how much money|best bike|which bike|konsi bike|kaunsi bike|bike for|bike suggest\w*|hotel\w*|homestay\w*|hostel\w*|restaurant\w*|dhaba recommend\w*|cricket|movie|song|weather forecast)\b|खर्च|होटल/],
   ["fuel", /\b(petrol|diesel|fuel|pump|pumps|tank|jerry ?can|jerrycan|refuel|bunk|tel)\b|पेट्रोल|पंप|डीजल/],
+  // "Plan a trip", "give me an itinerary", "Spiti kitne din": the legs of a route, worked out from its stretches.
+  ["plan", /\b(itinerar\w*|plan|planning|day ?by ?day|day ?wise|how many days|kitne din\w*|kitne dino|trip plan|schedule)\b|यात्रा योजना|कितने दिन/],
   ["distance", /\b(distance|how far|kitna door|kitni door|kitne door|km from|kms? (from|to|between)|kilomet\w*|duri)\b|दूरी|कितनी दूर/],
   ["rule", /\b(permit\w*|e-?aagman|eaagman|e aagman|ilp|inner line|fee|fees|toll\w*|tax|check ?post\w*|checkpost\w*|timing\w*|cut-?off|allowed|rule\w*|document\w*|papers|licen[cs]e|rental bike|rented bike|green tax|registration)\b|परमिट|नियम|पास/],
   ["season", /\b(when|best time|season|kab|closing|opening|opens|closes|snow\w*|winter|monsoon|month|january|february|march|april|may|june|july|august|september|october|november|december)\b|कब|मौसम/],
@@ -47,6 +49,8 @@ export interface PlaceHit {
   km: number | null;
   /** Where in the question it was found, to tell "from" from "to". */
   at: number;
+  /** Found inside a route's own name ("Mussoorie, Dhanaulti and Chakrata"): it names the route, not a stretch of it. */
+  inName?: boolean;
 }
 
 export interface Gazetteer {
@@ -92,20 +96,28 @@ export function placesIn(q: string, g: Gazetteer): PlaceHit[] {
   const text = ` ${norm(q)} `;
   const hits: PlaceHit[] = [];
   const taken: Array<[number, number]> = [];
-  // Places on the road first, longest names first. A route's own name ("Manali to Leh") never hides the places
-  // inside it: it is added as one more vote for that route, without taking up the words.
+  // A route's own name ("Manali to Leh") never hides the places inside it: it is one more vote for that route,
+  // without taking up the words. The places inside it are marked, so "Fuel stops on Mussoorie, Dhanaulti and
+  // Chakrata" is read as the whole route, not as Mussoorie to Dhanaulti.
+  const names: Array<[number, number, string]> = [];
   for (const e of g.entries) {
+    if (!e.route) continue;
+    const at = text.indexOf(` ${e.key} `);
+    if (at < 0) continue;
+    names.push([at, at + e.key.length + 1, e.slug]);
+    hits.push({ name: e.name, slug: e.slug, km: null, at });
+  }
+  // Places on the road, longest names first.
+  for (const e of g.entries) {
+    if (e.route) continue;
     const at = text.indexOf(` ${e.key} `);
     if (at < 0) continue;
     const end = at + e.key.length + 1;
-    if (e.route) {
-      hits.push({ name: e.name, slug: e.slug, km: null, at });
-      continue;
-    }
     const overlaps = taken.some(([a, b]) => at < b && end > a && !(a === at && b === end));
     if (overlaps) continue;
     taken.push([at, end]);
-    hits.push({ name: e.name, slug: e.slug, km: e.km, at });
+    const inName = names.some(([a, b, slug]) => slug === e.slug && at >= a && end <= b);
+    hits.push({ name: e.name, slug: e.slug, km: e.km, at, ...(inName ? { inName } : {}) });
   }
   return hits.sort((a, b) => a.at - b.at);
 }

@@ -434,7 +434,7 @@ export function AskChat({
                     </details>
                   ) : null}
                   {!t.answer.choices.length ? <AnswerActions answer={t.answer} /> : null}
-                  {t === lastDone ? <NextRow answer={t.answer} onAsk={(n) => void send(n)} /> : null}
+                  {t === lastDone ? <NextRow answer={t.answer} onAsk={(n) => void send(n, t.answer?.route ? { route: t.answer.route.slug } : {})} /> : null}
                 </>
               ) : null}
 

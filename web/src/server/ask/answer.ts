@@ -36,7 +36,7 @@ export interface AskContext {
 type Emit = (e: AskEvent) => void;
 
 /** Raised whenever the way answers are made changes, so answers made the old way are not given again. */
-const ASK_VERSION = "2026-10-19.8";
+const ASK_VERSION = "2026-10-22.6";
 
 const one = (n: number) => (Math.round(n * 10) / 10).toLocaleString("en-IN");
 const hm = (h: number) => {
@@ -82,6 +82,11 @@ const W = {
     hinglish: "Meel bikes ki ranking, trip ka kharcha ya hotels nahi batata. Yeh bata sakta hai ki aapki bike ka tank fuel gap cover karega ya nahi, aur har route ke rules, passes aur season.",
     hi: "Meel बाइक की रैंकिंग, यात्रा का ख़र्च या होटल नहीं बताता। यह बता सकता है कि आपकी बाइक का टैंक फ़्यूल गैप पूरा करेगा या नहीं, और हर रास्ते के नियम, दर्रे और मौसम।",
   },
+  whichRegion: {
+    en: (region: string, n: number) => `Meel has ${n} routes in ${region}. Which one are you planning?`,
+    hinglish: (region: string, n: number) => `${region} mein Meel ke ${n} routes hain. Kaunsa plan kar rahe hain?`,
+    hi: (region: string, n: number) => `${region} में Meel के ${n} रास्ते हैं। आप कौन-सा रास्ता सोच रहे हैं?`,
+  },
   which: {
     en: (place: string, n: number) => `${place} is on ${n} Meel routes. Which way are you going?`,
     hinglish: (place: string, n: number) => `${place} Meel ke ${n} routes par hai. Aap kis raste se ja rahe hain?`,
@@ -89,29 +94,38 @@ const W = {
   },
 } as const;
 
+/*
+  The next questions offered under an answer. They say "this route", never the route's name: a name such as
+  "Mussoorie, Dhanaulti and Chakrata" is a list of places, and was read back as "from Mussoorie to Dhanaulti".
+  The button sends the answer's route with the question (components/ask/ask-chat.tsx).
+*/
+const FUEL_HERE = "Fuel stops on this route";
 const NEXT: Record<AskKind, (route: string | null) => string[]> = {
-  fuel: (r) => ["Check fuel for my bike", r ? `Longest fuel gap on ${r}` : "Longest fuel gap on Manali to Leh", "Rules for motorcycles"],
-  distance: (r) => [r ? `Fuel stops on ${r}` : "Fuel stops on this route", "Where to stop the night?"],
-  rule: (r) => [r ? `Other rules on ${r}` : "Other rules on this route", "Who announces changes?"],
+  fuel: (r) => ["Check fuel for my bike", r ? "Longest fuel gap on this route" : "Longest fuel gap on Manali to Leh", "Rules for motorcycles"],
+  plan: () => [FUEL_HERE, "Rules for motorcycles", "Where to stop the night?"],
+  distance: () => [FUEL_HERE, "Where to stop the night?"],
+  rule: () => ["Other rules on this route", "Who announces changes?"],
   season: (r) => [r ? `Is ${r} open today?` : "Who announces closures?", "Rules for motorcycles"],
-  altitude: (r) => [r ? `Fuel stops on ${r}` : "Fuel stops on this route", "Emergency card"],
-  road: (r) => [r ? `Fuel stops on ${r}` : "Fuel stops on this route", "Rules for motorcycles"],
+  altitude: () => [FUEL_HERE, "Emergency card"],
+  road: () => [FUEL_HERE, "Rules for motorcycles"],
   video: (r) => [r ? `What is the road like on ${r}?` : "What is the road like?"],
   open: (r) => [r ? `When does ${r} usually close?` : "When do the passes close?", "Rules for motorcycles"],
   health: () => ["Emergency card", "Where to stop the night?"],
   "off-topic": () => ["Check fuel for my bike", "Longest fuel gap to Leh"],
-  general: (r) => [r ? `Fuel stops on ${r}` : "Petrol pump in Chitkul?", "Rules for motorcycles"],
+  general: (r) => [r ? FUEL_HERE : "Petrol pump in Chitkul?", r ? "Plan this trip" : "Rules for motorcycles"],
 };
 
 /** One line for the model about what a good answer of this kind says. */
 const HINT: Partial<Record<AskKind, string>> = {
   altitude: "For where to sleep: name the climbs from one halt to the next that are above Meel's limit, and say the altitude check tests the rider's own halts.",
-  fuel: "For fuel: say where the pumps are and the longest stretch with none, with the distances given.",
+  fuel: "For fuel: say how many pumps there are and the longest stretch with none, with the distances given.",
+  plan: "For a trip plan: give the riding legs in order with the km and times given, then the usual number of days if a fact gives it. Don't split the legs into days yourself and don't add stops.",
   season: "For seasons: give dates as past years' dates, never as a promise for this year.",
 };
 
 const KINDS_FOR: Partial<Record<AskKind, ChunkKind[]>> = {
   fuel: ["pump", "route", "gaps", "hazard"],
+  plan: ["route", "season", "rule", "hazard"],
   rule: ["rule", "office", "gaps"],
   season: ["season", "route", "office", "rule", "gaps"],
   distance: ["stretch", "route", "places"],
@@ -122,6 +136,7 @@ const KINDS_FOR: Partial<Record<AskKind, ChunkKind[]>> = {
 
 const WHAT: Record<AskKind, string> = {
   fuel: "Fuel",
+  plan: "Trip plan",
   distance: "Distance",
   rule: "Rules",
   season: "Season",
@@ -211,6 +226,9 @@ export async function runAsk(req: AskRequest, ctx: AskContext, emit: Emit): Prom
     const count = (s: string) => new Set(hits.filter((h) => h.slug === s).map((h) => h.name)).size;
     if (count(onRoutes[0]!) > count(onRoutes[1]!)) slug = onRoutes[0]!;
   }
+  // A plan for a state rather than a route ("plan batao Sikkim"): the routes there, to choose from.
+  const regionRoutes = kind === "plan" && !slug && !compare ? [...ix.routes.values()].filter((r) => inRegion(r, question)) : [];
+  if (regionRoutes.length === 1) slug = regionRoutes[0]!.slug;
   const route: Route | null = slug ? ix.routes.get(slug)! : null;
   const shortName = route ? route.name.split(":")[0]! : null;
 
@@ -250,6 +268,14 @@ export async function runAsk(req: AskRequest, ctx: AskContext, emit: Emit): Prom
       );
       return;
     }
+  }
+
+  if (!route && regionRoutes.length > 1) {
+    const region = regionRoutes[0]!.region_name;
+    const choices = regionRoutes.slice(0, 4).map((r) => ({ slug: r.slug, label: r.name }));
+    emit({ t: "step", text: `${regionRoutes.length} routes in ${region}` });
+    await finish({ kind, route: null, text: W.whichRegion[lang](region, regionRoutes.length), sources: [], pictures: [], next: [], noFact: false, choices }, { count: false });
+    return;
   }
 
   // ── Fixed replies.
@@ -293,7 +319,7 @@ export async function runAsk(req: AskRequest, ctx: AskContext, emit: Emit): Prom
   // ── Steps the rider sees while it works.
   const placeHere = (s: string | null) => hits.find((h) => h.slug === s && h.km !== null) ?? null;
   const place = placeHere(slug);
-  const two = dedupe(hits.filter((h) => !slug || h.slug === slug));
+  const two = dedupe(hits.filter((h) => (!slug || h.slug === slug) && !h.inName));
   emit({
     t: "step",
     text:
@@ -364,14 +390,22 @@ export async function runAsk(req: AskRequest, ctx: AskContext, emit: Emit): Prom
   const top = found[0]?.score ?? 0;
   const good = found.filter((h) => h.score >= Math.max(0.5, top - 0.12));
 
+  // What a good answer says, when it depends on the question rather than its kind.
+  let hintHere: string | null = null;
   // Worked out in code, never by the model: distances to pumps, and between places.
   if (route && kind === "fuel") {
     const views = await viewsOf(route.slug);
     const pumps = [...route.fuel.pumps].sort((a, b) => a.km_from_start - b.km_from_start);
     const chunkOf = (id: string) => ix.chunk(route.slug, id);
-    const between = dedupe(hits.filter((h) => h.slug === route.slug && h.km !== null));
+    // Places inside the route's own name only count as "from A to B" when they are its two ends ("Manali to Leh"):
+    // "Mussoorie, Dhanaulti and Chakrata" names the whole route, not Mussoorie to Dhanaulti.
+    const length = route.header.distance_km ?? pumps.at(-1)?.km_from_start ?? 0;
+    const named = dedupe(hits.filter((h) => h.slug === route.slug && h.km !== null));
+    const ends = named.length >= 2 && Math.abs(named[0]!.km! - named[1]!.km!) >= length * 0.9;
+    const between = ends ? named : named.filter((h) => !h.inName);
     if (between.length >= 2) {
       // From one place to another: how many pumps on the way, and the longest stretch without one.
+      hintHere = "For fuel from one place to another: say how many pumps are on the way and the longest stretch with none, with the distances given.";
       const lo = Math.min(between[0]!.km!, between[1]!.km!);
       const hi = Math.max(between[0]!.km!, between[1]!.km!);
       const [from, to] = between[0]!.km! <= between[1]!.km! ? [between[0]!, between[1]!] : [between[1]!, between[0]!];
@@ -396,7 +430,8 @@ export async function runAsk(req: AskRequest, ctx: AskContext, emit: Emit): Prom
         gap: ga && gb ? { from: gap.a, to: gap.b, fromName: ga.near ?? ga.name, toName: gb.near ?? gb.name } : null,
         place: null,
       });
-    } else if (place && place.km !== null) {
+    } else if (place && place.km !== null && !place.inName) {
+      hintHere = "For fuel at one place: say whether Meel lists a pump there, then the nearest pumps before and after it, with the distances given.";
       const at = place.km;
       const here = pumps.filter((p) => Math.abs(p.km_from_start - at) <= 1.5);
       const behind = pumps.filter((p) => p.km_from_start < at - 1.5).slice(-2).reverse();
@@ -423,8 +458,11 @@ export async function runAsk(req: AskRequest, ctx: AskContext, emit: Emit): Prom
         place: { km: at, name: place.name },
       });
     } else {
-      for (const g of route.fuel.longest_gaps.slice(0, 2)) {
-        facts.add(ix.chunk(route.slug, `route:${route.slug}`)!, null, `A gap of ${one(g.gap_km)} km with no pump on ${route.name}: from near ${g.near_from} (km ${one(g.from_km)}) to near ${g.near_to} (km ${one(g.to_km)}).`);
+      // The whole route: how many pumps, and the longest stretches with none.
+      facts.add(ix.chunk(route.slug, `route:${route.slug}`)!, null, fuelSummary(route), `Fuel on ${shortName}`);
+      const second = route.fuel.longest_gaps[1];
+      if (second) {
+        facts.add(ix.chunk(route.slug, `route:${route.slug}`)!, null, `The next longest stretch with no pump on ${route.name}: ${one(second.gap_km)} km, from near ${second.near_from} (km ${one(second.from_km)}) to near ${second.near_to} (km ${one(second.to_km)}).`);
       }
       const g = route.fuel.longest_gaps[0];
       pictures.push({
@@ -462,27 +500,41 @@ export async function runAsk(req: AskRequest, ctx: AskContext, emit: Emit): Prom
     }
   }
 
+  // A trip plan: the route's legs in order, its usual days, its longest stretch with no fuel, and steep climbs.
+  if (route && kind === "plan") {
+    const routeChunk = ix.chunk(route.slug, `route:${route.slug}`)!;
+    const legs = route.stretches;
+    if (legs.length) {
+      const total = route.header.distance_km ?? legs.reduce((t, s) => t + s.distance_km, 0);
+      const leg = (s: (typeof legs)[number]) => `${s.from} to ${s.to}, ${one(s.distance_km)} km${s.map_app_hours ? `, ${hm(s.map_app_hours)} on a map app` : ""}`;
+      // Up to six legs read well in a sentence; a longer route is its total and its longest legs. The picture shows every leg.
+      const words =
+        legs.length <= 6
+          ? `${route.name} in riding legs, in order (${one(total)} km in all): ${legs.map(leg).join("; ")}.`
+          : `${route.name}: ${one(total)} km in ${legs.length} legs, from ${legs[0]!.from} to ${legs.at(-1)!.to}. The longest legs: ${[...legs]
+              .sort((x, y) => y.distance_km - x.distance_km)
+              .slice(0, 3)
+              .map(leg)
+              .join("; ")}.`;
+      facts.add(ix.chunk(route.slug, `stretch:${route.slug}:0`) ?? routeChunk, null, words, `Legs of ${shortName}`);
+      pictures.push({ kind: "stretches", rows: legs.map((s) => ({ from: s.from, to: s.to, km: s.distance_km, hours: s.map_app_hours })), total });
+    }
+    // Its own words carry the usual number of days.
+    facts.add(routeChunk, null);
+    if (route.fuel.longest_gaps[0]) facts.add(routeChunk, null, fuelSummary(route), `Fuel on ${shortName}`);
+    const climbs = climbCheck(route, -1, Infinity);
+    if (climbs?.steep) facts.add(ix.chunk(route.slug, `places:${route.slug}`)!, null, climbs.check, "Meel’s altitude check");
+  }
+
   if (route && kind === "altitude") {
-    // The same rule as the route's altitude check (components/tools/night-halts.tsx).
-    const seen = new Set<string>();
-    const halts = route.waypoints.filter((w) => w.kind === "place" && w.altitude_m !== null && !seen.has(w.name) && seen.add(w.name));
     const named = dedupe(hits.filter((h) => h.slug === route.slug && h.km !== null));
     const lo = named.length >= 2 ? Math.min(named[0]!.km!, named[1]!.km!) : -1;
     const hi = named.length >= 2 ? Math.max(named[0]!.km!, named[1]!.km!) : Infinity;
-    const inside = halts.filter((w) => w.km_from_start >= lo - 0.5 && w.km_from_start <= hi + 0.5);
     const places = ix.chunk(route.slug, `places:${route.slug}`);
-    if (places && inside.length >= 2) {
-      const ft = (m: number) => Math.round(m * 3.28084).toLocaleString("en-IN");
-      facts.add(places, null, `Places riders sleep on ${route.name}, in order: ${inside.map((w) => `${w.name} ${ft(w.altitude_m!)} ft (km ${one(w.km_from_start)})`).join("; ")}.`, `Halts and heights on ${route.name.split(":")[0]}`);
-      const steep = inside.slice(1).map((w, i) => ({ from: inside[i]!, to: w, gain: w.altitude_m! - inside[i]!.altitude_m! })).filter((x) => x.gain > 500);
-      facts.add(
-        places,
-        null,
-        `Meel’s altitude check: walkers are told to sleep no more than about 1,600 ft (500 m) higher than the night before; it is a proposal, not medical advice.${
-          steep.length ? ` Climbs above that between one halt and the next: ${steep.map((x) => `${x.from.name} to ${x.to.name} +${ft(x.gain)} ft`).join("; ")}.` : " No climb from one halt to the next is above that."
-        } The highest halt is ${inside.reduce((a, b) => (b.altitude_m! > a.altitude_m! ? b : a)).name}.`,
-        "Meel’s altitude check",
-      );
+    const climbs = climbCheck(route, lo, hi);
+    if (places && climbs) {
+      facts.add(places, null, climbs.halts, `Halts and heights on ${shortName}`);
+      facts.add(places, null, climbs.check, "Meel’s altitude check");
     }
   }
 
@@ -536,7 +588,8 @@ export async function runAsk(req: AskRequest, ctx: AskContext, emit: Emit): Prom
   // The place names in these facts, spelt out, so a Hindi answer does not turn "Lahaul" into "Ladakh".
   const names = [...new Set(ix.gazetteer.entries.filter((e) => facts.list.some((f) => f.words.includes(e.name))).map((e) => e.name))].slice(0, 20);
   const spelt = names.length ? `Place names, to copy exactly in Latin letters: ${names.join(", ")}.\n\n` : "";
-  const hint = HINT[kind] ? `${HINT[kind]}\n\n` : "";
+  const hintLine = hintHere ?? HINT[kind];
+  const hint = hintLine ? `${hintLine}\n\n` : "";
   const user = `Facts:\n${numbered.join("\n")}\n\n${spelt}${hint}${about}${previous}Question: ${question}`;
 
   const writer = new SentenceWriter(facts.list.length, (s) => emit({ t: "text", text: s }));
@@ -591,11 +644,15 @@ function systemPrompt(lang: AskLang): string {
     "- Never say a road, pass, tunnel or check post is open or closed today.",
     "- Write every place name exactly as it is spelt in the facts, in Latin letters, even in a Hindi answer.",
     "- No costs, no bike rankings, no hotels, no advice beyond the facts.",
-    "- If the facts answer only part of the question, answer that part and say what Meel doesn't have.",
+    "- If the facts answer only part of the question, answer that part and leave the rest out. Never write that something is not specified, not mentioned or not given.",
     "- Only if no fact is about the question at all, reply with exactly: NO_FACT",
     `- Write in ${language}. Keep numbers and dates as in the facts.`,
   ].join("\n");
 }
+
+/** A sentence saying the facts don't say something, in English, Hinglish or Hindi. */
+const FILLER =
+  /\b(not (specified|mentioned|given|stated|listed|provided|available)|no (information|details|data) (is |are )?(given|available|provided)?|isn'?t (specified|mentioned|given)|doesn'?t (say|specify|mention)|do(es)? not (say|specify|mention)|nahi (bataya|diya|likha)|jaankari nahi|jankari nahi)\b|नहीं बताया|जानकारी नहीं|उल्लेख नहीं/i;
 
 /** Takes the model's text as it streams, keeps only sentences that cite real facts, and renumbers them. */
 class SentenceWriter {
@@ -642,6 +699,8 @@ class SentenceWriter {
     if (!sentence || this.noFact || this.kept.length >= 4) return;
     const nums = [...sentence.matchAll(/\[(\d+)\]/g)].map((x) => Number(x[1]));
     if (nums.length === 0 || nums.some((n) => n < 1 || n > this.count)) return;
+    // "The longest stretch is not specified [2]" cites a fact only to say it doesn't help: it reads as "Meel doesn't know".
+    if (FILLER.test(sentence)) return;
     const renumbered = sentence.replace(/\[(\d+)\]/g, (_, d: string) => {
       const n = Number(d);
       if (!this.order.includes(n)) this.order.push(n);
@@ -682,6 +741,56 @@ function firstSentences(text: string, n: number): string {
 
 function splitSentences(text: string): string[] {
   return text.split(/(?<=[.!?।](?:\s*\[\d+\])*)\s+/).filter(Boolean);
+}
+
+/** Words of a region's name that say where, not "and", "the" or a direction alone. */
+const REGION_SKIP = new Set(["and", "the", "ones", "long", "across", "border", "central", "east", "north", "south", "west"]);
+
+/** Whether a question names the region a route is in: "Sikkim", "Uttarakhand", "the North-East". */
+function inRegion(route: Route, question: string): boolean {
+  const q = ` ${question.toLowerCase().replace(/[^a-z]+/g, " ")} `;
+  if (route.region === "north-east" && /\bnorth ?-?east\b/i.test(question)) return true;
+  if (route.region === "south" && /\bsouth india\b/i.test(question)) return true;
+  return route.region_name
+    .toLowerCase()
+    .split(/[^a-z]+/)
+    .filter((w) => w.length >= 3 && !REGION_SKIP.has(w))
+    .some((w) => q.includes(` ${w} `));
+}
+
+/** A whole route's fuel in one line, worked out in code: how many pumps, and the longest stretch with none. */
+function fuelSummary(route: Route): string {
+  const total = route.header.distance_km ?? route.fuel.pumps.reduce((m, p) => Math.max(m, p.km_from_start), 0);
+  // A long route keeps only a count of its pumps, not each one (fuel.listed is false).
+  const n = route.fuel.pump_count;
+  const g = route.fuel.longest_gaps[0];
+  // No pump at all over a long route means its pumps were never looked up (Kashmir to Kanyakumari), not a
+  // 3,669 km stretch with none. A short one, such as Hanle to Umling La, really has none.
+  if (n === 0 && total > 300 && (!g || g.gap_km >= total * 0.9)) return `Meel hasn't mapped the pumps along ${route.name} yet.`;
+  const pumps = `${n} pump${n === 1 ? "" : "s"} along ${route.name}'s ${one(total)} km`;
+  return g
+    ? `${pumps}. The longest stretch with no pump is ${one(g.gap_km)} km, from near ${g.near_from} (km ${one(g.from_km)}) to near ${g.near_to} (km ${one(g.to_km)}): fill up near ${g.near_from}.`
+    : `${pumps}.`;
+}
+
+/**
+ * The places riders sleep between two points of a route, with their heights, and the climbs from one to the next
+ * above Meel's limit. The same rule as the route's altitude check (components/tools/night-halts.tsx).
+ */
+function climbCheck(route: Route, lo: number, hi: number): { halts: string; check: string; steep: boolean } | null {
+  const seen = new Set<string>();
+  const halts = route.waypoints.filter((w) => w.kind === "place" && w.altitude_m !== null && !seen.has(w.name) && seen.add(w.name));
+  const inside = halts.filter((w) => w.km_from_start >= lo - 0.5 && w.km_from_start <= hi + 0.5);
+  if (inside.length < 2) return null;
+  const ft = (m: number) => Math.round(m * 3.28084).toLocaleString("en-IN");
+  const steep = inside.slice(1).map((w, i) => ({ from: inside[i]!, to: w, gain: w.altitude_m! - inside[i]!.altitude_m! })).filter((x) => x.gain > 500);
+  return {
+    halts: `Places riders sleep on ${route.name}, in order: ${inside.map((w) => `${w.name} ${ft(w.altitude_m!)} ft (km ${one(w.km_from_start)})`).join("; ")}.`,
+    check: `Meel’s altitude check: walkers are told to sleep no more than about 1,600 ft (500 m) higher than the night before; it is a proposal, not medical advice.${
+      steep.length ? ` Climbs above that between one halt and the next: ${steep.map((x) => `${x.from.name} to ${x.to.name} +${ft(x.gain)} ft`).join("; ")}.` : " No climb from one halt to the next is above that."
+    } The highest halt is ${inside.reduce((a, b) => (b.altitude_m! > a.altitude_m! ? b : a)).name}.`,
+    steep: steep.length > 0,
+  };
 }
 
 function dedupe(hits: PlaceHit[]): PlaceHit[] {
