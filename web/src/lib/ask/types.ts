@@ -6,6 +6,7 @@ export type AskLang = "en" | "hi" | "hinglish";
 
 export type AskKind =
   | "fuel"
+  | "plan"
   | "distance"
   | "rule"
   | "season"
