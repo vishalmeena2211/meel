@@ -35,6 +35,7 @@ import { TripCardView } from "@/components/trips/trip-card";
 import { Callout, SectionHeading } from "@/components/ui";
 import { getApproaches, getBikes, getIndex, getRouteHelp } from "@/lib/content";
 import { sayAge, daysBetween, feet, km } from "@/lib/format";
+import { sectionSearchTitle } from "@/lib/search-titles";
 import { isSection, isTool, REPORTS_NEEDED, SECTION_NAMES, type SectionId, type ToolId } from "@/lib/sections";
 import { SITE_URL } from "@/lib/site";
 import { allSources } from "@/lib/sources";
@@ -76,7 +77,7 @@ export async function generateMetadata(props: PageProps<"/routes/[slug]/[section
   const name = isSection(section) ? SECTION_NAMES[section].name : TOOL_NAMES[section];
   const found = view.sections.find((s) => s.id === section);
   return {
-    title: `${name} · ${view.route.name}`,
+    title: isSection(section) ? sectionSearchTitle(section, view.route, `${name} · ${view.route.name}`) : `${name} · ${view.route.name}`,
     alternates: { canonical: `/routes/${slug}/${section}` },
     description: `${name} on ${view.route.name}${found ? `: ${found.sub}` : ""}. Every fact shows where it came from and when it was last confirmed.`,
   };

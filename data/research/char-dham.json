@@ -465,9 +465,41 @@
         "year": 2026,
         "connected": "2026-04-19",
         "open_to_motorcycles": null,
-        "closed": null,
-        "note": "Opened: Yamunotri and Gangotri 19 April, Kedarnath 22 April, Badrinath 23 April. Closing dates not yet declared; operator sites list tentative dates of 10 to 13 November.",
+        "closed": "2026-11-16",
+        "note": "Opened: Yamunotri and Gangotri 19 April, Kedarnath 22 April, Badrinath 23 April. Closing dates announced on Dussehra, 20 October: Gangotri 10 November at 12:05, Yamunotri 11 November at 10:28, Kedarnath 11 November at 8:30 am, Badrinath 16 November at 9:37 pm.",
         "sources": [
+          {
+            "url": "https://www.amarujala.com/uttarakhand/chamoli/badrinath-dham-door-close-for-winter-on-november-16-and-kedarnath-doors-to-shut-on-november-11-2026-10-20",
+            "title": "Badrinath Dham doors to close for winter on 16 November; Kedarnath date also announced on Dussehra (Amar Ujala)",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2026-10-20",
+            "accessed": "2026-10-25"
+          },
+          {
+            "url": "https://www.etvbharat.com/hi/bharat/doors-of-kedarnath-shrine-in-uttarakhand-will-close-on-november-11-utn26102001912",
+            "title": "Kedarnath doors to close on 11 November; Tungnath and Madmaheshwar dates (ETV Bharat)",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2026-10-20",
+            "accessed": "2026-10-25"
+          },
+          {
+            "url": "https://www.amarujala.com/uttarakhand/uttarkashi/gangotri-dham-temple-doors-to-close-on-november-10-at-12-05-pm-for-winter-uttarakhand-news-2026-10-19",
+            "title": "Gangotri Dham doors to close for winter on 10 November (Amar Ujala)",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2026-10-19",
+            "accessed": "2026-10-25"
+          },
+          {
+            "url": "https://uttarakhand.punjabkesari.in/national/news/the-portals-of-yamunotri-dham-will-close-on-november-11-2391609",
+            "title": "Yamunotri Dham doors to close on 11 November (Punjab Kesari)",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2026-10-20",
+            "accessed": "2026-10-25"
+          },
           {
             "url": "https://www.indiatvnews.com/lifestyle/travel/char-dham-yatra-2026-routes-new-rules-registration-process-kedarnath-badrinath-yamunotri-gangotri-2026-04-22-1038421",
             "title": "Char Dham Yatra 2026: Kedarnath opens; all about routes, registration, helicopter booking and new rules",

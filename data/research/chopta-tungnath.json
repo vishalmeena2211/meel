@@ -280,9 +280,25 @@
         "year": 2026,
         "connected": null,
         "open_to_motorcycles": null,
-        "closed": null,
-        "note": "One operator page gives both 22 April and 2 May 2026 for the opening. Closing date not yet declared.",
+        "closed": "2026-11-06",
+        "note": "One operator page gives both 22 April and 2 May 2026 for the opening. Closing date announced on Dussehra, 20 October: Tungnath temple closes for winter on 6 November, and the palanquin reaches Makkumath on 8 November. Madmaheshwar closes on 16 November.",
         "sources": [
+          {
+            "url": "https://www.amarujala.com/uttarakhand/rudraprayag/tungnath-temple-doors-to-close-for-winter-on-november-6-doli-to-reach-makku-math-on-november-8-rudraprayag-2026-10-20",
+            "title": "Tungnath doors to close for winter on 6 November; palanquin reaches Makkumath on 8 November (Amar Ujala)",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2026-10-20",
+            "accessed": "2026-10-25"
+          },
+          {
+            "url": "https://liveskgnews.com/uttarakhand/the-portals-of-kedarnath-will-close-on-november-11-the-closing-dates-for-the-portals-of-tungnath-and-madmaheshwar-dham-have-also-been-announced/",
+            "title": "Kedarnath closes 11 November; Tungnath and Madmaheshwar closing dates announced (liveskgnews)",
+            "kind": "news",
+            "opened": true,
+            "source_date": "2026-10-20",
+            "accessed": "2026-10-25"
+          },
           {
             "url": "https://www.pilgrimagetour.in/blog/tungnath-opening-closing-dates/",
             "title": "Tungnath Opening Closing Dates 2026",
