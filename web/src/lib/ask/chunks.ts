@@ -176,7 +176,7 @@ export function chunksOf(route: Route): AskChunk[] {
       text: `${name} in ${y.year}: ${[
         y.connected ? `connected ${y.connected}` : null,
         y.open_to_motorcycles ? `open to motorcycles from ${y.open_to_motorcycles}` : null,
-        y.closed ? `closed ${y.closed}` : "no closing date recorded",
+        y.closed ? `closing date ${y.closed}` : "no closing date recorded",
       ]
         .filter(Boolean)
         .join("; ")}. ${clean(y.note)}`,

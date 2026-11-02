@@ -6,6 +6,7 @@ import { JsonLd } from "@/components/json-ld";
 import { RouteBrowser, type FromCities, type RoadLine } from "@/components/route-browser";
 import { TopHead } from "@/components/shell";
 import { AskButton } from "@/components/ask/ask-button";
+import { HomeLinks } from "@/components/home-links";
 import { getAllRoutes, getApproaches, getIndex } from "@/lib/content";
 import { SITE_LINE, SITE_NAME, SITE_URL } from "@/lib/site";
 import { confirmedLately } from "@/server/reports";
@@ -95,6 +96,7 @@ export default async function HomePage() {
         fromCities={fromCities}
         confirmed={await confirmedLately()}
       />
+      <HomeLinks />
     </div>
   );
 }

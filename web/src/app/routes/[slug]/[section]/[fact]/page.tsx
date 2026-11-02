@@ -10,6 +10,7 @@ import { BackHead } from "@/components/shell";
 import { Callout, SectionHeading } from "@/components/ui";
 import { AskButton } from "@/components/ask/ask-button";
 import { plural } from "@/lib/format";
+import { factSearchTitle } from "@/lib/search-titles";
 import { isSection, SECTION_NAMES } from "@/lib/sections";
 import { SITE_URL } from "@/lib/site";
 import { getRouteView } from "@/server/route-view";
@@ -36,7 +37,8 @@ export async function generateMetadata(props: PageProps<"/routes/[slug]/[section
   const title = `${f.title} · ${view.route.name}`;
   const description = f.snippet;
   return {
-    title,
+    // The search result's title says the answer in the words riders search; the chat card keeps the fact's own title.
+    title: factSearchTitle(f, view.route),
     description,
     alternates: { canonical: f.href },
     openGraph: { title, description, url: f.href, type: "article", siteName: "Meel", locale: "en_IN" },

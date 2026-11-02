@@ -37,11 +37,16 @@ function shortDay(value: string | null): string | null {
   return /^\d{4}-\d{2}-\d{2}/.test(value) ? said.replace(/ \d{4}$/, "") : said.replace(/ \d{4}$/, "");
 }
 
-function yearWords(y: SeasonYear): string | null {
+/** A closing date can be announced weeks ahead (the Char Dham shrines on Dussehra): until that day it "closes". */
+function ahead(day: string, today: string): boolean {
+  return /^\d{4}-\d{2}-\d{2}/.test(day) && day.slice(0, 10) > today;
+}
+
+function yearWords(y: SeasonYear, today: string): string | null {
   const parts = [
     y.connected ? `Connected ${shortDay(y.connected)}` : null,
     y.open_to_motorcycles ? `open to bikes ${shortDay(y.open_to_motorcycles)}` : null,
-    y.closed ? `closed ${shortDay(y.closed)}` : null,
+    y.closed ? `${ahead(y.closed, today) ? "closes" : "closed"} ${shortDay(y.closed)}` : null,
   ].filter(Boolean);
   if (parts.length === 0) return null;
   const words = parts.join(" · ");
@@ -54,11 +59,11 @@ interface Happening {
   url: string | null;
 }
 
-function happenings(history: SeasonYear[]): Happening[] {
+function happenings(history: SeasonYear[], today: string): Happening[] {
   const out: Happening[] = [];
   for (const y of history) {
     const url = y.sources[0]?.url ?? null;
-    if (y.closed) out.push({ when: y.closed, words: "Closed for winter", url });
+    if (y.closed) out.push({ when: y.closed, words: ahead(y.closed, today) ? "Closes for winter, as announced" : "Closed for winter", url });
     if (y.open_to_motorcycles) out.push({ when: y.open_to_motorcycles, words: "Open to motorcycles", url });
     if (y.connected) out.push({ when: y.connected, words: "Connected. Motorcycles not yet allowed, or not named.", url });
   }
@@ -108,7 +113,8 @@ export function OpenSection({ view, live }: { view: RouteView; live?: OpenLive }
   });
   const above = Boolean(live?.alerts || live?.closures);
   const history = route.season.history;
-  const events = happenings(history);
+  const today = now.toISOString().slice(0, 10);
+  const events = happenings(history, today);
   const newest = events[0];
   const shut = newest?.words === "Closed for winter" ? newest : null;
   const pattern = openingPattern(history);
@@ -205,7 +211,7 @@ export function OpenSection({ view, live }: { view: RouteView; live?: OpenLive }
             {history.map((y) => (
               <li key={y.year}>
                 <span className="font-semibold !text-ink">{y.year}</span>
-                <span className={yearWords(y) ? "font-medium" : "text-ink-2"}>{yearWords(y) ?? "Not yet entered"}</span>
+                <span className={yearWords(y, today) ? "font-medium" : "text-ink-2"}>{yearWords(y, today) ?? "Not yet entered"}</span>
               </li>
             ))}
           </ol>
