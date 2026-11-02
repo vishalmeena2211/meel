@@ -5,10 +5,12 @@ import { SuggestForm, TripReportForm } from "@/components/report/trip-report-for
 import { getAllRoutes } from "@/lib/content";
 import { currentUser } from "@/server/auth";
 
+// A form, like signing up or posting a trip: kept out of search results. It was what Google showed for "ride planner",
+// in place of the home page.
 export const metadata: Metadata = {
   title: "Send a trip report",
-  alternates: { canonical: "/report" },
   description: "Rode one of these routes? Three fields are enough. Your report keeps the facts fresh for the next rider.",
+  robots: { index: false, follow: true },
 };
 
 export default async function ReportPage(props: PageProps<"/report">) {
