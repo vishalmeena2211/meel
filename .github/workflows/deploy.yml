@@ -1,0 +1,45 @@
+# Deploys rideplanner.in to web-1, the Google Cloud VM in Mumbai, after every push to main.
+#
+# The VM builds the commit in a new folder and only switches to it once it built cleanly and the home page answers;
+# otherwise the site stays on the release before. So a broken build never takes the site down.
+# "Run workflow" on the Actions tab deploys main again by hand.
+#
+# Needs the repository secrets DEPLOY_SSH_KEY and DEPLOY_KNOWN_HOSTS, and the variable DEPLOY_HOST
+# (vm-setup/setup-github-deploy.sh sets all three). The key can only run `deploy` on the VM, nothing else.
+name: Deploy
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: deploy
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    environment:
+      name: production
+      url: https://rideplanner.in
+    steps:
+      - name: Deploy on web-1
+        env:
+          DEPLOY_SSH_KEY: ${{ secrets.DEPLOY_SSH_KEY }}
+          DEPLOY_KNOWN_HOSTS: ${{ secrets.DEPLOY_KNOWN_HOSTS }}
+          DEPLOY_HOST: ${{ vars.DEPLOY_HOST }}
+        run: |
+          install -d -m 700 ~/.ssh
+          printf '%s\n' "$DEPLOY_SSH_KEY" > ~/.ssh/deploy_key
+          chmod 600 ~/.ssh/deploy_key
+          printf '%s\n' "$DEPLOY_KNOWN_HOSTS" > ~/.ssh/known_hosts
+          ssh -i ~/.ssh/deploy_key -o IdentitiesOnly=yes -o BatchMode=yes -o ServerAliveInterval=30 \
+            "deploy@$DEPLOY_HOST" "deploy $GITHUB_SHA"
+
+      - name: Check the live site
+        run: curl -fsS -o /dev/null --retry 5 --retry-delay 5 https://rideplanner.in/
