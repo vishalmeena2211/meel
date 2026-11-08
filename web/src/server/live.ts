@@ -723,6 +723,8 @@ export interface WeatherPlace {
   altitudeM: number;
   /** "18:59", the place's own clock. */
   sunset: string | null;
+  /** Snow lying on the ground this hour, in cm, as the weather model has it. Null when the model gave none. */
+  groundSnowCm: number | null;
   days: WeatherDay[];
 }
 
@@ -753,7 +755,8 @@ interface MeteoAnswer {
     wind_gusts_10m_max: number[];
     temperature_2m_min: number[];
   };
-  hourly?: { time: string[]; freezing_level_height: Array<number | null> };
+  hourly?: { time: string[]; freezing_level_height: Array<number | null>; snow_depth?: Array<number | null> };
+  utc_offset_seconds?: number;
 }
 
 const readWeather = unstable_cache(
@@ -763,7 +766,7 @@ const readWeather = unstable_cache(
       longitude: places.map((p) => p.lon.toFixed(4)).join(","),
       elevation: places.map((p) => Math.round(p.altitudeM)).join(","),
       daily: "sunset,snowfall_sum,wind_gusts_10m_max,temperature_2m_min",
-      hourly: "freezing_level_height",
+      hourly: "freezing_level_height,snow_depth",
       timezone: "auto",
       forecast_days: "3",
     });
@@ -772,10 +775,22 @@ const readWeather = unstable_cache(
     const parsed = JSON.parse(got.text) as MeteoAnswer | MeteoAnswer[];
     return { answers: Array.isArray(parsed) ? parsed : [parsed], read: new Date().toISOString() };
   },
-  ["open-meteo-v1"],
+  ["open-meteo-v2"],
   // Weather models are run every six hours. Three hours keeps Meel well inside the free service's daily limit.
   { revalidate: 10_800 },
 );
+
+/** Snow on the ground at the hour the forecast was read, in cm: the model's snow depth, which it gives in metres. */
+function groundSnow(a: MeteoAnswer, read: string): number | null {
+  const times = a.hourly?.time ?? [];
+  const depths = a.hourly?.snow_depth ?? [];
+  if (times.length === 0 || depths.length === 0) return null;
+  // Open-Meteo's hours are the place's own clock; the hour the forecast was read, on that clock.
+  const local = new Date(Date.parse(read) + (a.utc_offset_seconds ?? 0) * 1000).toISOString().slice(0, 13);
+  const at = Math.max(0, times.findIndex((t) => t.slice(0, 13) === local));
+  const metres = depths[at];
+  return typeof metres === "number" ? Math.round(metres * 100) : null;
+}
 
 /** A three-day forecast for each pass and high night halt. Null for a route with none. */
 export async function weatherFor(route: Route): Promise<WeatherRead | null> {
@@ -808,7 +823,14 @@ export async function weatherFor(route: Route): Promise<WeatherRead | null> {
           freezingBelow: levels.length > 0 && Math.min(...levels) < p.altitudeM,
         };
       });
-      return { name: p.name, kind: p.kind, altitudeM: p.altitudeM, sunset: d?.sunset[0]?.slice(11, 16) ?? null, days };
+      return {
+        name: p.name,
+        kind: p.kind,
+        altitudeM: p.altitudeM,
+        sunset: d?.sunset[0]?.slice(11, 16) ?? null,
+        groundSnowCm: groundSnow(a, got.read),
+        days,
+      };
     }),
   };
 }

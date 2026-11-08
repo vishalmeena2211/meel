@@ -189,6 +189,11 @@ function PlaceWeather({ place }: { place: WeatherPlace }) {
           {place.sunset ? ` · sunset ${clock(place.sunset)}` : ""}
         </span>
       </div>
+      {place.groundSnowCm !== null ? (
+        <p className={`num px-3 pb-1.5 text-xs ${place.groundSnowCm >= 5 ? "font-semibold text-stale-fg" : "text-ink-2"}`}>
+          {place.groundSnowCm >= 1 ? `About ${place.groundSnowCm} cm of snow on the ground now` : "No snow on the ground now"}
+        </p>
+      ) : null}
       <table className="num w-full text-sm">
         <thead>
           <tr className="border-t border-line text-left text-xs text-ink-2">
@@ -253,7 +258,7 @@ export function PassWeather({ read }: { read: WeatherRead }) {
               Open-Meteo
             </a>
             , read {sayMoment(read.read)}, under the CC BY 4.0 licence. Global weather models, a grid about 10 km apart:
-            a pass can be colder and windier than this.
+            a pass can be colder and windier than this. Snow on the ground is the model’s estimate, not a measurement.
           </p>
         </>
       )}

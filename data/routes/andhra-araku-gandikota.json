@@ -5826,6 +5826,332 @@
  "counts": {
   "facts": 370
  },
+ "daylight": [
+  {
+   "name": "Visakhapatnam",
+   "km_from_start": 0.0,
+   "months": [
+    [
+     "06:30",
+     "17:41"
+    ],
+    [
+     "06:24",
+     "17:58"
+    ],
+    [
+     "06:06",
+     "18:07"
+    ],
+    [
+     "05:41",
+     "18:13"
+    ],
+    [
+     "05:24",
+     "18:21"
+    ],
+    [
+     "05:21",
+     "18:32"
+    ],
+    [
+     "05:30",
+     "18:36"
+    ],
+    [
+     "05:39",
+     "18:24"
+    ],
+    [
+     "05:44",
+     "18:00"
+    ],
+    [
+     "05:49",
+     "17:35"
+    ],
+    [
+     "06:02",
+     "17:21"
+    ],
+    [
+     "06:20",
+     "17:24"
+    ]
+   ]
+  },
+  {
+   "name": "Araku Valley",
+   "km_from_start": 115.2,
+   "months": [
+    [
+     "06:33",
+     "17:41"
+    ],
+    [
+     "06:27",
+     "17:59"
+    ],
+    [
+     "06:08",
+     "18:08"
+    ],
+    [
+     "05:42",
+     "18:15"
+    ],
+    [
+     "05:25",
+     "18:24"
+    ],
+    [
+     "05:22",
+     "18:35"
+    ],
+    [
+     "05:30",
+     "18:38"
+    ],
+    [
+     "05:40",
+     "18:26"
+    ],
+    [
+     "05:46",
+     "18:02"
+    ],
+    [
+     "05:51",
+     "17:37"
+    ],
+    [
+     "06:05",
+     "17:22"
+    ],
+    [
+     "06:22",
+     "17:25"
+    ]
+   ]
+  },
+  {
+   "name": "Paderu",
+   "km_from_start": 159.9,
+   "months": [
+    [
+     "06:33",
+     "17:43"
+    ],
+    [
+     "06:27",
+     "18:00"
+    ],
+    [
+     "06:09",
+     "18:09"
+    ],
+    [
+     "05:44",
+     "18:16"
+    ],
+    [
+     "05:26",
+     "18:24"
+    ],
+    [
+     "05:23",
+     "18:36"
+    ],
+    [
+     "05:32",
+     "18:39"
+    ],
+    [
+     "05:41",
+     "18:27"
+    ],
+    [
+     "05:47",
+     "18:03"
+    ],
+    [
+     "05:52",
+     "17:38"
+    ],
+    [
+     "06:05",
+     "17:23"
+    ],
+    [
+     "06:23",
+     "17:26"
+    ]
+   ]
+  },
+  {
+   "name": "Lambasingi",
+   "km_from_start": 207.1,
+   "months": [
+    [
+     "06:34",
+     "17:44"
+    ],
+    [
+     "06:28",
+     "18:01"
+    ],
+    [
+     "06:09",
+     "18:10"
+    ],
+    [
+     "05:44",
+     "18:16"
+    ],
+    [
+     "05:27",
+     "18:25"
+    ],
+    [
+     "05:24",
+     "18:36"
+    ],
+    [
+     "05:33",
+     "18:39"
+    ],
+    [
+     "05:42",
+     "18:27"
+    ],
+    [
+     "05:48",
+     "18:03"
+    ],
+    [
+     "05:53",
+     "17:39"
+    ],
+    [
+     "06:06",
+     "17:24"
+    ],
+    [
+     "06:23",
+     "17:27"
+    ]
+   ]
+  },
+  {
+   "name": "Narsipatnam",
+   "km_from_start": 237.5,
+   "months": [
+    [
+     "06:33",
+     "17:43"
+    ],
+    [
+     "06:27",
+     "18:01"
+    ],
+    [
+     "06:09",
+     "18:10"
+    ],
+    [
+     "05:44",
+     "18:16"
+    ],
+    [
+     "05:27",
+     "18:24"
+    ],
+    [
+     "05:24",
+     "18:35"
+    ],
+    [
+     "05:32",
+     "18:38"
+    ],
+    [
+     "05:42",
+     "18:27"
+    ],
+    [
+     "05:47",
+     "18:03"
+    ],
+    [
+     "05:52",
+     "17:38"
+    ],
+    [
+     "06:05",
+     "17:24"
+    ],
+    [
+     "06:22",
+     "17:27"
+    ]
+   ]
+  },
+  {
+   "name": "Gandikota",
+   "km_from_start": 927.8,
+   "months": [
+    [
+     "06:45",
+     "18:06"
+    ],
+    [
+     "06:42",
+     "18:21"
+    ],
+    [
+     "06:26",
+     "18:27"
+    ],
+    [
+     "06:03",
+     "18:31"
+    ],
+    [
+     "05:49",
+     "18:37"
+    ],
+    [
+     "05:47",
+     "18:47"
+    ],
+    [
+     "05:55",
+     "18:50"
+    ],
+    [
+     "06:03",
+     "18:41"
+    ],
+    [
+     "06:05",
+     "18:19"
+    ],
+    [
+     "06:08",
+     "17:57"
+    ],
+    [
+     "06:18",
+     "17:45"
+    ],
+    [
+     "06:34",
+     "17:50"
+    ]
+   ]
+  }
+ ],
  "built": "2026-11-08",
  "mechanics": [
   {
@@ -7079,6 +7405,120 @@
    }
   }
  ],
+ "cash": {
+  "by_halt": [
+   {
+    "near": "Visakhapatnam",
+    "km_from_start": 0.0,
+    "atms": 40,
+    "banks": 75,
+    "names": [
+     "Akkayapalem, Vizag",
+     "Alankit",
+     "Andhra Bank ATM",
+     "Andhra Pradesh Grameena Vikas Bank",
+     "Andhra Pradesh Grameena Vikas Bank-Town Kotha Road",
+     "Axis Bank"
+    ]
+   },
+   {
+    "near": "Between Visakhapatnam and Araku Valley",
+    "km_from_start": 28,
+    "atms": 5,
+    "banks": 13,
+    "names": [
+     "Andhra Pradesh Grameena Vikas Bank-Chowduwada",
+     "Axis Bank ATM",
+     "Axis Bank Branch",
+     "Bank of Baroda",
+     "Bank of Maharashtra - Kothavalasa Branch",
+     "CSB BANK LTD"
+    ]
+   },
+   {
+    "near": "Araku Valley",
+    "km_from_start": 115.2,
+    "atms": 3,
+    "banks": 0,
+    "names": [
+     "India 1 ATM",
+     "India one",
+     "State Bank of india ATM"
+    ]
+   },
+   {
+    "near": "Paderu",
+    "km_from_start": 159.9,
+    "atms": 2,
+    "banks": 4,
+    "names": [
+     "Andhra Pradesh Grameena Vikas Bank-Paderu",
+     "Bank of Baroda",
+     "HDFC Bank",
+     "HDFC Bank ATM",
+     "India1 ATM",
+     "Punjab National Bank"
+    ]
+   },
+   {
+    "near": "Lambasingi",
+    "km_from_start": 207.1,
+    "atms": 0,
+    "banks": 1,
+    "names": [
+     "ICICI Bank"
+    ]
+   },
+   {
+    "near": "Narsipatnam",
+    "km_from_start": 237.5,
+    "atms": 4,
+    "banks": 13,
+    "names": [
+     "Andhra Bank",
+     "Axis Bank ATM",
+     "Axis Bank Branch",
+     "Bank of Baroda",
+     "CSB BANK LTD",
+     "Central Bank of India Narsipatnam Branch"
+    ]
+   },
+   {
+    "near": "Between Narsipatnam and Gandikota",
+    "km_from_start": 271,
+    "atms": 103,
+    "banks": 224,
+    "names": [
+     "APCOB Premises",
+     "Alankit",
+     "Amaravati Mmacs Tuni",
+     "Andhra Bank",
+     "Andhra Bank Kannavari Thota Branch",
+     "Andhra Bank Patnam Bazaar"
+    ]
+   },
+   {
+    "near": "Gandikota",
+    "km_from_start": 927.8,
+    "atms": 1,
+    "banks": 4,
+    "names": [
+     "City Union Bank Jammalamadugu",
+     "HDFC Bank ATM",
+     "Punjab National Bank",
+     "State Bank of India",
+     "Syndicate Bank"
+    ]
+   }
+  ],
+  "longest_gaps": [
+   {
+    "from": "Between Narsipatnam and Gandikota",
+    "to": "Between Narsipatnam and Gandikota",
+    "gap_km": 65
+   }
+  ]
+ },
  "mechanics_left_out": [
   {
    "near": "Visakhapatnam",

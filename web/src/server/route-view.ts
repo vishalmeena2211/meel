@@ -105,14 +105,16 @@ export const getRouteView = cache(async (slug: string): Promise<RouteView | null
   const gap = route.fuel.longest_gaps[0];
   const legs = new Set((route.leg_hours ?? []).map((l) => `${l.from}|${l.to}`)).size;
   const netHalts = new Set((route.network ?? []).map((n) => n.halt)).size;
+  const towerHalts = route.towers?.halts.length ?? 0;
+  const photos = route.photos?.length ?? 0;
 
   const has: Record<SectionId, boolean> = {
     open: route.authorities.length > 0 || route.season.history.length > 0 || (route.sightings?.length ?? 0) > 0,
     fuel: route.line.length > 0,
     rules: route.rules.length > 0,
     altitude: highEnough,
-    road: route.hazards.length > 0,
-    network: netHalts > 0,
+    road: route.hazards.length > 0 || photos > 0,
+    network: netHalts > 0 || towerHalts > 0,
     mechanics: views.mechanics.length > 0,
     hours: legs > 0,
     stays: views.stays.length > 0,
@@ -130,8 +132,11 @@ export const getRouteView = cache(async (slug: string): Promise<RouteView | null
         : "No pumps on the open map",
     rules: `${ruleWords(route)} · ${plural(route.rules.length, "fact")}`,
     altitude: plural(halts, "halt"),
-    road: `${plural(route.hazards.length, "warning")} · from published guides`,
-    network: plural(netHalts, "halt"),
+    road:
+      route.hazards.length > 0
+        ? `${plural(route.hazards.length, "warning")} · from published guides${photos > 0 ? ` · ${plural(photos, "photo")}` : ""}`
+        : plural(photos, "recent photo"),
+    network: netHalts > 0 ? plural(netHalts, "halt") : `${plural(towerHalts, "halt")} · towers on the map`,
     mechanics: `${plural(views.mechanics.length, "shop")}${fromMap(route.mechanics)}`,
     hours: `${plural(legs, "leg")} · from ${plural(used.length, "trip report")}`,
     stays: `${plural(views.stays.length, "place")}${fromMap(route.stays)}`,

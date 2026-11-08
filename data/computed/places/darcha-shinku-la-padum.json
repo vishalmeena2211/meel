@@ -143,6 +143,22 @@
  "stays_left_out": [],
  "mechanics": [],
  "mechanics_left_out": [],
+ "cash_radius_m": 2000,
+ "cash": [
+  {
+   "id": "ffd65aaa-5742-47e6-90ed-acf10163aff9",
+   "name": "J&K Bank",
+   "category": "bank_or_credit_union",
+   "kind": "bank",
+   "confidence": 0.77,
+   "lat": 33.46018,
+   "lon": 76.87999,
+   "km_from_start": 143.7,
+   "off_road_m": 139,
+   "near": "Padum",
+   "what": "Bank"
+  }
+ ],
  "bytes_billed": 0,
  "source": {
   "service": "BigQuery public dataset",

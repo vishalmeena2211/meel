@@ -9640,6 +9640,278 @@
  "counts": {
   "facts": 141
  },
+ "daylight": [
+  {
+   "name": "Dimapur",
+   "km_from_start": 0.0,
+   "months": [
+    [
+     "06:03",
+     "16:44"
+    ],
+    [
+     "05:51",
+     "17:08"
+    ],
+    [
+     "05:26",
+     "17:24"
+    ],
+    [
+     "04:53",
+     "17:38"
+    ],
+    [
+     "04:29",
+     "17:53"
+    ],
+    [
+     "04:23",
+     "18:08"
+    ],
+    [
+     "04:32",
+     "18:09"
+    ],
+    [
+     "04:48",
+     "17:52"
+    ],
+    [
+     "05:00",
+     "17:21"
+    ],
+    [
+     "05:13",
+     "16:48"
+    ],
+    [
+     "05:33",
+     "16:27"
+    ],
+    [
+     "05:54",
+     "16:26"
+    ]
+   ]
+  },
+  {
+   "name": "Kohima",
+   "km_from_start": 70.6,
+   "months": [
+    [
+     "06:01",
+     "16:43"
+    ],
+    [
+     "05:49",
+     "17:06"
+    ],
+    [
+     "05:24",
+     "17:22"
+    ],
+    [
+     "04:52",
+     "17:36"
+    ],
+    [
+     "04:28",
+     "17:51"
+    ],
+    [
+     "04:22",
+     "18:05"
+    ],
+    [
+     "04:31",
+     "18:07"
+    ],
+    [
+     "04:46",
+     "17:50"
+    ],
+    [
+     "04:59",
+     "17:19"
+    ],
+    [
+     "05:11",
+     "16:47"
+    ],
+    [
+     "05:31",
+     "16:26"
+    ],
+    [
+     "05:52",
+     "16:25"
+    ]
+   ]
+  },
+  {
+   "name": "Viswema",
+   "km_from_start": 92.7,
+   "months": [
+    [
+     "06:01",
+     "16:43"
+    ],
+    [
+     "05:49",
+     "17:06"
+    ],
+    [
+     "05:24",
+     "17:22"
+    ],
+    [
+     "04:52",
+     "17:36"
+    ],
+    [
+     "04:28",
+     "17:51"
+    ],
+    [
+     "04:22",
+     "18:05"
+    ],
+    [
+     "04:31",
+     "18:07"
+    ],
+    [
+     "04:46",
+     "17:50"
+    ],
+    [
+     "04:59",
+     "17:19"
+    ],
+    [
+     "05:11",
+     "16:47"
+    ],
+    [
+     "05:31",
+     "16:26"
+    ],
+    [
+     "05:52",
+     "16:25"
+    ]
+   ]
+  },
+  {
+   "name": "Mokokchung",
+   "km_from_start": 260.4,
+   "months": [
+    [
+     "06:01",
+     "16:40"
+    ],
+    [
+     "05:48",
+     "17:04"
+    ],
+    [
+     "05:23",
+     "17:20"
+    ],
+    [
+     "04:49",
+     "17:35"
+    ],
+    [
+     "04:25",
+     "17:50"
+    ],
+    [
+     "04:19",
+     "18:05"
+    ],
+    [
+     "04:28",
+     "18:07"
+    ],
+    [
+     "04:44",
+     "17:50"
+    ],
+    [
+     "04:57",
+     "17:18"
+    ],
+    [
+     "05:10",
+     "16:45"
+    ],
+    [
+     "05:30",
+     "16:23"
+    ],
+    [
+     "05:52",
+     "16:22"
+    ]
+   ]
+  },
+  {
+   "name": "Mon",
+   "km_from_start": 421.5,
+   "months": [
+    [
+     "06:00",
+     "16:37"
+    ],
+    [
+     "05:47",
+     "17:01"
+    ],
+    [
+     "05:21",
+     "17:18"
+    ],
+    [
+     "04:47",
+     "17:33"
+    ],
+    [
+     "04:23",
+     "17:49"
+    ],
+    [
+     "04:16",
+     "18:04"
+    ],
+    [
+     "04:25",
+     "18:06"
+    ],
+    [
+     "04:41",
+     "17:48"
+    ],
+    [
+     "04:55",
+     "17:16"
+    ],
+    [
+     "05:08",
+     "16:43"
+    ],
+    [
+     "05:29",
+     "16:20"
+    ],
+    [
+     "05:51",
+     "16:19"
+    ]
+   ]
+  }
+ ],
  "built": "2026-11-08",
  "mechanics": [
   {
@@ -10573,6 +10845,114 @@
    }
   }
  ],
+ "cash": {
+  "by_halt": [
+   {
+    "near": "Dimapur",
+    "km_from_start": 0.0,
+    "atms": 10,
+    "banks": 26,
+    "names": [
+     "Axis Bank",
+     "Axis Bank ATM",
+     "Axis Bank Branch",
+     "Bank Colony",
+     "Bank of Baroda",
+     "Bank of Maharashtra"
+    ]
+   },
+   {
+    "near": "Between Dimapur and Kohima",
+    "km_from_start": 33,
+    "atms": 1,
+    "banks": 0,
+    "names": [
+     "State Bank of India ATM"
+    ]
+   },
+   {
+    "near": "Viswema",
+    "km_from_start": 92.7,
+    "atms": 1,
+    "banks": 0,
+    "names": [
+     "Axis Bank"
+    ]
+   },
+   {
+    "near": "Kohima",
+    "km_from_start": 114.9,
+    "atms": 6,
+    "banks": 11,
+    "names": [
+     "Axis Bank",
+     "Axis Bank ATM",
+     "Axis Bank Branch",
+     "Bank of Baroda",
+     "Bank of Maharashtra - Kohima Branch",
+     "Central Bank Of India - Atm"
+    ]
+   },
+   {
+    "near": "Between Kohima and Mokokchung",
+    "km_from_start": 149,
+    "atms": 2,
+    "banks": 8,
+    "names": [
+     "Axis Bank",
+     "Axis Bank Branch",
+     "Bank of Baroda",
+     "HDFC Bank",
+     "HDFC Bank ATM",
+     "ICICI Bank"
+    ]
+   },
+   {
+    "near": "Mokokchung",
+    "km_from_start": 260.4,
+    "atms": 3,
+    "banks": 4,
+    "names": [
+     "Axis Bank ATM",
+     "Bank of Baroda",
+     "Canara Bank ATM",
+     "HDFC Bank",
+     "ICICI Bank Mokokchung-Branch & ATM",
+     "Nagaland Rural Bank"
+    ]
+   },
+   {
+    "near": "Between Mokokchung and Mon",
+    "km_from_start": 335,
+    "atms": 0,
+    "banks": 1,
+    "names": [
+     "State Bank of India"
+    ]
+   },
+   {
+    "near": "Mon",
+    "km_from_start": 421.5,
+    "atms": 1,
+    "banks": 0,
+    "names": [
+     "Axis Bank"
+    ]
+   }
+  ],
+  "longest_gaps": [
+   {
+    "from": "Between Mokokchung and Mon",
+    "to": "Mon",
+    "gap_km": 85
+   },
+   {
+    "from": "Mokokchung",
+    "to": "Between Mokokchung and Mon",
+    "gap_km": 70
+   }
+  ]
+ },
  "mechanics_left_out": [
   {
    "near": "Dimapur",

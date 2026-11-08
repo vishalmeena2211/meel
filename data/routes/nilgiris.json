@@ -6111,6 +6111,332 @@
  "counts": {
   "facts": 231
  },
+ "daylight": [
+  {
+   "name": "Bengaluru",
+   "km_from_start": 0.0,
+   "months": [
+    [
+     "06:45",
+     "18:11"
+    ],
+    [
+     "06:43",
+     "18:25"
+    ],
+    [
+     "06:28",
+     "18:30"
+    ],
+    [
+     "06:08",
+     "18:32"
+    ],
+    [
+     "05:54",
+     "18:37"
+    ],
+    [
+     "05:53",
+     "18:46"
+    ],
+    [
+     "06:01",
+     "18:50"
+    ],
+    [
+     "06:08",
+     "18:42"
+    ],
+    [
+     "06:08",
+     "18:22"
+    ],
+    [
+     "06:09",
+     "18:01"
+    ],
+    [
+     "06:18",
+     "17:51"
+    ],
+    [
+     "06:34",
+     "17:56"
+    ]
+   ]
+  },
+  {
+   "name": "Mysuru",
+   "km_from_start": 141.5,
+   "months": [
+    [
+     "06:48",
+     "18:16"
+    ],
+    [
+     "06:46",
+     "18:30"
+    ],
+    [
+     "06:32",
+     "18:34"
+    ],
+    [
+     "06:12",
+     "18:35"
+    ],
+    [
+     "05:59",
+     "18:40"
+    ],
+    [
+     "05:58",
+     "18:49"
+    ],
+    [
+     "06:06",
+     "18:53"
+    ],
+    [
+     "06:12",
+     "18:45"
+    ],
+    [
+     "06:12",
+     "18:25"
+    ],
+    [
+     "06:13",
+     "18:05"
+    ],
+    [
+     "06:21",
+     "17:55"
+    ],
+    [
+     "06:36",
+     "18:01"
+    ]
+   ]
+  },
+  {
+   "name": "Bandipur",
+   "km_from_start": 219.1,
+   "months": [
+    [
+     "06:47",
+     "18:17"
+    ],
+    [
+     "06:45",
+     "18:30"
+    ],
+    [
+     "06:32",
+     "18:35"
+    ],
+    [
+     "06:12",
+     "18:35"
+    ],
+    [
+     "06:00",
+     "18:39"
+    ],
+    [
+     "05:59",
+     "18:48"
+    ],
+    [
+     "06:07",
+     "18:52"
+    ],
+    [
+     "06:13",
+     "18:44"
+    ],
+    [
+     "06:13",
+     "18:25"
+    ],
+    [
+     "06:12",
+     "18:06"
+    ],
+    [
+     "06:20",
+     "17:56"
+    ],
+    [
+     "06:35",
+     "18:02"
+    ]
+   ]
+  },
+  {
+   "name": "Masinagudi",
+   "km_from_start": 238.3,
+   "months": [
+    [
+     "06:47",
+     "18:17"
+    ],
+    [
+     "06:45",
+     "18:30"
+    ],
+    [
+     "06:32",
+     "18:34"
+    ],
+    [
+     "06:12",
+     "18:35"
+    ],
+    [
+     "06:00",
+     "18:39"
+    ],
+    [
+     "06:00",
+     "18:47"
+    ],
+    [
+     "06:07",
+     "18:52"
+    ],
+    [
+     "06:13",
+     "18:44"
+    ],
+    [
+     "06:13",
+     "18:25"
+    ],
+    [
+     "06:12",
+     "18:06"
+    ],
+    [
+     "06:20",
+     "17:56"
+    ],
+    [
+     "06:35",
+     "18:02"
+    ]
+   ]
+  },
+  {
+   "name": "Ooty",
+   "km_from_start": 312.5,
+   "months": [
+    [
+     "06:46",
+     "18:17"
+    ],
+    [
+     "06:45",
+     "18:30"
+    ],
+    [
+     "06:31",
+     "18:34"
+    ],
+    [
+     "06:12",
+     "18:35"
+    ],
+    [
+     "06:00",
+     "18:39"
+    ],
+    [
+     "06:00",
+     "18:47"
+    ],
+    [
+     "06:07",
+     "18:51"
+    ],
+    [
+     "06:13",
+     "18:43"
+    ],
+    [
+     "06:12",
+     "18:25"
+    ],
+    [
+     "06:12",
+     "18:06"
+    ],
+    [
+     "06:20",
+     "17:56"
+    ],
+    [
+     "06:34",
+     "18:02"
+    ]
+   ]
+  },
+  {
+   "name": "Coonoor",
+   "km_from_start": 330.0,
+   "months": [
+    [
+     "06:46",
+     "18:17"
+    ],
+    [
+     "06:44",
+     "18:30"
+    ],
+    [
+     "06:31",
+     "18:34"
+    ],
+    [
+     "06:12",
+     "18:34"
+    ],
+    [
+     "06:00",
+     "18:38"
+    ],
+    [
+     "05:59",
+     "18:46"
+    ],
+    [
+     "06:07",
+     "18:51"
+    ],
+    [
+     "06:12",
+     "18:43"
+    ],
+    [
+     "06:12",
+     "18:24"
+    ],
+    [
+     "06:12",
+     "18:05"
+    ],
+    [
+     "06:19",
+     "17:56"
+    ],
+    [
+     "06:34",
+     "18:02"
+    ]
+   ]
+  }
+ ],
  "built": "2026-11-08",
  "mechanics": [
   {
@@ -6772,6 +7098,122 @@
    }
   }
  ],
+ "cash": {
+  "by_halt": [
+   {
+    "near": "Bengaluru",
+    "km_from_start": 0.0,
+    "atms": 102,
+    "banks": 194,
+    "names": [
+     "Aawati Sowhardha Credit Cooperative",
+     "Allahabad Bank",
+     "Allahabad Bank Chamarajpet Branch",
+     "Andhra Bank",
+     "Andhra Bank Chamarajpet Branch",
+     "Apex Bank Head Office"
+    ]
+   },
+   {
+    "near": "Between Bengaluru and Mysuru",
+    "km_from_start": 25,
+    "atms": 21,
+    "banks": 40,
+    "names": [
+     "Axis Bank",
+     "Axis Bank ATM",
+     "Axis Bank Branch",
+     "Bank of Baroda",
+     "Bidadi Branch ATM",
+     "Canara Bank"
+    ]
+   },
+   {
+    "near": "Mysuru",
+    "km_from_start": 141.5,
+    "atms": 26,
+    "banks": 43,
+    "names": [
+     "Apollo pharmacy Vidyaranyapuram Mysore",
+     "Axis Bank",
+     "Axis Bank ATM",
+     "Axis Bank Branch",
+     "Bajaj Finserv",
+     "Bank Note Paper Mill india ltd"
+    ]
+   },
+   {
+    "near": "Between Mysuru and Bandipur",
+    "km_from_start": 168,
+    "atms": 2,
+    "banks": 9,
+    "names": [
+     "Axis Bank Branch",
+     "Bank of Baroda",
+     "CSB BANK LTD",
+     "Canara Bank",
+     "Fedbank Financial Services Limited",
+     "HDFC Bank ATM"
+    ]
+   },
+   {
+    "near": "Bandipur",
+    "km_from_start": 219.1,
+    "atms": 2,
+    "banks": 5,
+    "names": [
+     "Bank of Baroda",
+     "Fedbank Financial Services Limited",
+     "HDFC Bank ATM",
+     "Karnataka Bank - Gundlupet Branch",
+     "Karnataka Bank ATM - Gundlupet",
+     "Kaveri Bank-Sri Hangala"
+    ]
+   },
+   {
+    "near": "Between Masinagudi and Ooty",
+    "km_from_start": 267,
+    "atms": 0,
+    "banks": 5,
+    "names": [
+     "CSB BANK LTD",
+     "HDFC Bank",
+     "South Indian Bank",
+     "State Bank of India Gudalur",
+     "Tamilnad Mercantile Bank"
+    ]
+   },
+   {
+    "near": "Ooty",
+    "km_from_start": 312.5,
+    "atms": 4,
+    "banks": 11,
+    "names": [
+     "Axis Bank",
+     "Bank of Baroda",
+     "Bank of Maharashtra",
+     "HDFC Bank",
+     "HDFC Bank ATM",
+     "ICICI Bank"
+    ]
+   },
+   {
+    "near": "Coonoor",
+    "km_from_start": 330.0,
+    "atms": 3,
+    "banks": 10,
+    "names": [
+     "Axis Bank",
+     "Axis Bank ATM",
+     "Bank of Baroda",
+     "Canara Bank Aruvankadu",
+     "HDFC Bank",
+     "ICICI Bank"
+    ]
+   }
+  ],
+  "longest_gaps": []
+ },
  "mechanics_left_out": [
   {
    "near": "Bengaluru",
@@ -6785,7 +7227,7 @@
  "stays_left_out": [
   {
    "near": "Bengaluru",
-   "count": 1339
+   "count": 1338
   },
   {
    "near": "Ooty",
@@ -6802,6 +7244,32 @@
   {
    "near": "Masinagudi",
    "count": 42
+  }
+ ],
+ "photos": [
+  {
+   "near": "Ooty",
+   "kind": "place",
+   "km_from_start": 312.5,
+   "title": "Old Stamen Crinum Moorei Ooty Sep26 A7CR 13386-413 zsp",
+   "page": "https://commons.wikimedia.org/wiki/File:Old_Stamen_Crinum_Moorei_Ooty_Sep26_A7CR_13386-413_zsp.jpg",
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d0/Old_Stamen_Crinum_Moorei_Ooty_Sep26_A7CR_13386-413_zsp.jpg/500px-Old_Stamen_Crinum_Moorei_Ooty_Sep26_A7CR_13386-413_zsp.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "taken": "2026-09-13",
+   "author": "Timothy A. Gonsalves",
+   "licence": "CC BY-SA 4.0",
+   "licence_url": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  {
+   "near": "Ooty",
+   "kind": "place",
+   "km_from_start": 312.5,
+   "title": "Flower Stamens Pollen Pistil Crinum Moorei Ooty Sep26 A7CR 12809",
+   "page": "https://commons.wikimedia.org/wiki/File:Flower_Stamens_Pollen_Pistil_Crinum_Moorei_Ooty_Sep26_A7CR_12809.jpg",
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8c/Flower_Stamens_Pollen_Pistil_Crinum_Moorei_Ooty_Sep26_A7CR_12809.jpg/500px-Flower_Stamens_Pollen_Pistil_Crinum_Moorei_Ooty_Sep26_A7CR_12809.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "taken": "2026-09-12",
+   "author": "Timothy A. Gonsalves",
+   "licence": "CC BY-SA 4.0",
+   "licence_url": "https://creativecommons.org/licenses/by-sa/4.0"
   }
  ]
 }

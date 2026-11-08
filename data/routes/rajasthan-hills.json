@@ -4063,6 +4063,224 @@
  "counts": {
   "facts": 85
  },
+ "daylight": [
+  {
+   "name": "Udaipur",
+   "km_from_start": 0.0,
+   "months": [
+    [
+     "07:21",
+     "18:07"
+    ],
+    [
+     "07:10",
+     "18:29"
+    ],
+    [
+     "06:46",
+     "18:44"
+    ],
+    [
+     "06:14",
+     "18:57"
+    ],
+    [
+     "05:52",
+     "19:11"
+    ],
+    [
+     "05:46",
+     "19:25"
+    ],
+    [
+     "05:55",
+     "19:27"
+    ],
+    [
+     "06:10",
+     "19:11"
+    ],
+    [
+     "06:21",
+     "18:40"
+    ],
+    [
+     "06:32",
+     "18:09"
+    ],
+    [
+     "06:51",
+     "17:49"
+    ],
+    [
+     "07:12",
+     "17:49"
+    ]
+   ]
+  },
+  {
+   "name": "Kumbhalgarh",
+   "km_from_start": 97.0,
+   "months": [
+    [
+     "07:22",
+     "18:06"
+    ],
+    [
+     "07:11",
+     "18:29"
+    ],
+    [
+     "06:46",
+     "18:44"
+    ],
+    [
+     "06:14",
+     "18:58"
+    ],
+    [
+     "05:51",
+     "19:12"
+    ],
+    [
+     "05:45",
+     "19:26"
+    ],
+    [
+     "05:54",
+     "19:28"
+    ],
+    [
+     "06:09",
+     "19:12"
+    ],
+    [
+     "06:21",
+     "18:41"
+    ],
+    [
+     "06:33",
+     "18:09"
+    ],
+    [
+     "06:52",
+     "17:49"
+    ],
+    [
+     "07:13",
+     "17:48"
+    ]
+   ]
+  },
+  {
+   "name": "Ranakpur",
+   "km_from_start": 130.5,
+   "months": [
+    [
+     "07:23",
+     "18:07"
+    ],
+    [
+     "07:11",
+     "18:29"
+    ],
+    [
+     "06:47",
+     "18:45"
+    ],
+    [
+     "06:15",
+     "18:58"
+    ],
+    [
+     "05:52",
+     "19:13"
+    ],
+    [
+     "05:45",
+     "19:27"
+    ],
+    [
+     "05:55",
+     "19:29"
+    ],
+    [
+     "06:10",
+     "19:12"
+    ],
+    [
+     "06:22",
+     "18:41"
+    ],
+    [
+     "06:34",
+     "18:10"
+    ],
+    [
+     "06:53",
+     "17:49"
+    ],
+    [
+     "07:14",
+     "17:49"
+    ]
+   ]
+  },
+  {
+   "name": "Mount Abu",
+   "km_from_start": 276.3,
+   "months": [
+    [
+     "07:25",
+     "18:11"
+    ],
+    [
+     "07:14",
+     "18:33"
+    ],
+    [
+     "06:50",
+     "18:48"
+    ],
+    [
+     "06:18",
+     "19:01"
+    ],
+    [
+     "05:56",
+     "19:15"
+    ],
+    [
+     "05:50",
+     "19:29"
+    ],
+    [
+     "05:59",
+     "19:31"
+    ],
+    [
+     "06:13",
+     "19:15"
+    ],
+    [
+     "06:25",
+     "18:44"
+    ],
+    [
+     "06:36",
+     "18:13"
+    ],
+    [
+     "06:55",
+     "17:53"
+    ],
+    [
+     "07:15",
+     "17:53"
+    ]
+   ]
+  }
+ ],
  "built": "2026-11-08",
  "mechanics": [
   {
@@ -4548,6 +4766,91 @@
    }
   }
  ],
+ "cash": {
+  "by_halt": [
+   {
+    "near": "Udaipur",
+    "km_from_start": 0.0,
+    "atms": 27,
+    "banks": 46,
+    "names": [
+     "Aavas Financiers Limited",
+     "Adarsh Co-operative Bank Ltd",
+     "Andhra Bank",
+     "Axis Bank",
+     "Axis Bank ATM",
+     "Axis Bank Branch"
+    ]
+   },
+   {
+    "near": "Between Udaipur and Kumbhalgarh",
+    "km_from_start": 45,
+    "atms": 4,
+    "banks": 7,
+    "names": [
+     "Axis Bank",
+     "Axis Bank ATM",
+     "Axis Bank Branch",
+     "Bank of Baroda",
+     "HDFC Bank ATM",
+     "ICICI Bank"
+    ]
+   },
+   {
+    "near": "Kumbhalgarh",
+    "km_from_start": 97.0,
+    "atms": 0,
+    "banks": 1,
+    "names": [
+     "Bank of Baroda"
+    ]
+   },
+   {
+    "near": "Ranakpur",
+    "km_from_start": 130.5,
+    "atms": 1,
+    "banks": 1,
+    "names": [
+     "HDFC Bank ATM",
+     "ICICI Bank"
+    ]
+   },
+   {
+    "near": "Between Ranakpur and Mount Abu",
+    "km_from_start": 210,
+    "atms": 3,
+    "banks": 9,
+    "names": [
+     "Axis Bank",
+     "Axis Bank ATM",
+     "Axis Bank Branch",
+     "Bank of Baroda",
+     "HDFC Bank",
+     "HDFC Bank ATM"
+    ]
+   },
+   {
+    "near": "Mount Abu",
+    "km_from_start": 276.3,
+    "atms": 3,
+    "banks": 3,
+    "names": [
+     "Axis Bank ATM",
+     "Axis Bank Branch",
+     "Bank of Baroda",
+     "Punjab National Bank - ATM",
+     "State Bank of India"
+    ]
+   }
+  ],
+  "longest_gaps": [
+   {
+    "from": "Ranakpur",
+    "to": "Between Ranakpur and Mount Abu",
+    "gap_km": 72
+   }
+  ]
+ },
  "mechanics_left_out": [
   {
    "near": "Udaipur",

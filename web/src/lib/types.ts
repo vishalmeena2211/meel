@@ -234,6 +234,40 @@ export interface Sighting {
 }
 
 /** Whether one operator's network worked at one halt, in one month. */
+export interface CashAlong {
+  by_halt: { near: string; km_from_start: number; atms: number; banks: number; names: string[] }[];
+  longest_gaps: { from: string; to: string; gap_km: number }[];
+}
+
+export interface Daylight {
+  name: string;
+  km_from_start: number;
+  /** [sunrise, sunset] as "06:35", the country's own clock. */
+  months: [string, string][];
+}
+
+export interface RoadPhoto {
+  near: string;
+  kind: "pass" | "place";
+  km_from_start: number;
+  title: string;
+  page: string;
+  thumb: string;
+  /** The day the camera recorded. */
+  taken: string;
+  author: string;
+  licence: string;
+  licence_url: string | null;
+}
+
+export interface TowerHalt {
+  halt: string;
+  km_from_start: number;
+  towers: number;
+  /** Operator name to the radios seen, such as ["2G", "4G"]. */
+  operators: Record<string, string[]>;
+}
+
 export interface NetworkReport {
   halt: string;
   operator: string;
@@ -288,6 +322,14 @@ export interface Route {
   stays_left_out?: { near: string; count: number }[];
   /** Towns with too many repair shops on the map to list, and how many it has. */
   mechanics_left_out?: { near: string; count: number }[];
+  /** ATMs and banks within 2 km of the road, by halt, and the longest stretches with neither. Null: not read. */
+  cash?: CashAlong | null;
+  /** Sunrise and sunset on the 15th of each month, January first, at each place to stop. */
+  daylight?: Daylight[];
+  /** Recent dated photos near the passes and high halts, from Wikimedia Commons. */
+  photos?: RoadPhoto[];
+  /** Operators with cell towers near each halt, from OpenCelliD. */
+  towers?: { read: string | null; halts: TowerHalt[] };
   sightings?: Sighting[];
   network?: NetworkReport[];
   leg_hours?: LegHours[];

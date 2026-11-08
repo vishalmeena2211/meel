@@ -7009,6 +7009,332 @@
  "counts": {
   "facts": 114
  },
+ "daylight": [
+  {
+   "name": "Rishikesh",
+   "km_from_start": 0.0,
+   "months": [
+    [
+     "07:13",
+     "17:38"
+    ],
+    [
+     "06:58",
+     "18:04"
+    ],
+    [
+     "06:28",
+     "18:25"
+    ],
+    [
+     "05:51",
+     "18:43"
+    ],
+    [
+     "05:24",
+     "19:02"
+    ],
+    [
+     "05:15",
+     "19:19"
+    ],
+    [
+     "05:25",
+     "19:20"
+    ],
+    [
+     "05:44",
+     "19:00"
+    ],
+    [
+     "06:01",
+     "18:24"
+    ],
+    [
+     "06:18",
+     "17:47"
+    ],
+    [
+     "06:42",
+     "17:22"
+    ],
+    [
+     "07:05",
+     "17:19"
+    ]
+   ]
+  },
+  {
+   "name": "Devprayag",
+   "km_from_start": 70.3,
+   "months": [
+    [
+     "07:12",
+     "17:36"
+    ],
+    [
+     "06:57",
+     "18:03"
+    ],
+    [
+     "06:27",
+     "18:23"
+    ],
+    [
+     "05:50",
+     "18:42"
+    ],
+    [
+     "05:22",
+     "19:01"
+    ],
+    [
+     "05:13",
+     "19:18"
+    ],
+    [
+     "05:24",
+     "19:19"
+    ],
+    [
+     "05:42",
+     "18:59"
+    ],
+    [
+     "05:59",
+     "18:23"
+    ],
+    [
+     "06:17",
+     "17:46"
+    ],
+    [
+     "06:41",
+     "17:20"
+    ],
+    [
+     "07:04",
+     "17:17"
+    ]
+   ]
+  },
+  {
+   "name": "Rudraprayag",
+   "km_from_start": 135.6,
+   "months": [
+    [
+     "07:11",
+     "17:34"
+    ],
+    [
+     "06:55",
+     "18:01"
+    ],
+    [
+     "06:26",
+     "18:22"
+    ],
+    [
+     "05:48",
+     "18:41"
+    ],
+    [
+     "05:20",
+     "19:00"
+    ],
+    [
+     "05:12",
+     "19:17"
+    ],
+    [
+     "05:22",
+     "19:18"
+    ],
+    [
+     "05:41",
+     "18:57"
+    ],
+    [
+     "05:58",
+     "18:21"
+    ],
+    [
+     "06:15",
+     "17:44"
+    ],
+    [
+     "06:39",
+     "17:19"
+    ],
+    [
+     "07:03",
+     "17:15"
+    ]
+   ]
+  },
+  {
+   "name": "Ukhimath",
+   "km_from_start": 178.8,
+   "months": [
+    [
+     "07:11",
+     "17:33"
+    ],
+    [
+     "06:55",
+     "18:01"
+    ],
+    [
+     "06:25",
+     "18:21"
+    ],
+    [
+     "05:47",
+     "18:40"
+    ],
+    [
+     "05:20",
+     "19:00"
+    ],
+    [
+     "05:11",
+     "19:17"
+    ],
+    [
+     "05:21",
+     "19:18"
+    ],
+    [
+     "05:40",
+     "18:57"
+    ],
+    [
+     "05:57",
+     "18:21"
+    ],
+    [
+     "06:15",
+     "17:44"
+    ],
+    [
+     "06:39",
+     "17:18"
+    ],
+    [
+     "07:03",
+     "17:14"
+    ]
+   ]
+  },
+  {
+   "name": "Chopta",
+   "km_from_start": 222.0,
+   "months": [
+    [
+     "07:11",
+     "17:34"
+    ],
+    [
+     "06:55",
+     "18:01"
+    ],
+    [
+     "06:25",
+     "18:22"
+    ],
+    [
+     "05:48",
+     "18:40"
+    ],
+    [
+     "05:20",
+     "19:00"
+    ],
+    [
+     "05:11",
+     "19:17"
+    ],
+    [
+     "05:22",
+     "19:18"
+    ],
+    [
+     "05:40",
+     "18:57"
+    ],
+    [
+     "05:57",
+     "18:21"
+    ],
+    [
+     "06:15",
+     "17:44"
+    ],
+    [
+     "06:39",
+     "17:18"
+    ],
+    [
+     "07:03",
+     "17:15"
+    ]
+   ]
+  },
+  {
+   "name": "Gopeshwar",
+   "km_from_start": 315.3,
+   "months": [
+    [
+     "07:10",
+     "17:33"
+    ],
+    [
+     "06:54",
+     "18:00"
+    ],
+    [
+     "06:24",
+     "18:21"
+    ],
+    [
+     "05:47",
+     "18:39"
+    ],
+    [
+     "05:19",
+     "18:59"
+    ],
+    [
+     "05:10",
+     "19:16"
+    ],
+    [
+     "05:20",
+     "19:17"
+    ],
+    [
+     "05:39",
+     "18:56"
+    ],
+    [
+     "05:56",
+     "18:20"
+    ],
+    [
+     "06:14",
+     "17:43"
+    ],
+    [
+     "06:38",
+     "17:17"
+    ],
+    [
+     "07:02",
+     "17:14"
+    ]
+   ]
+  }
+ ],
  "built": "2026-11-08",
  "mechanics": [
   {
@@ -7862,6 +8188,104 @@
    }
   }
  ],
+ "cash": {
+  "by_halt": [
+   {
+    "near": "Rishikesh",
+    "km_from_start": 0.0,
+    "atms": 9,
+    "banks": 16,
+    "names": [
+     "Alankit",
+     "Axis Bank",
+     "Axis Bank ATM",
+     "Bandhan Bank",
+     "Bank of Baroda",
+     "Bank of Maharashtra - Rishikesh Branch"
+    ]
+   },
+   {
+    "near": "Devprayag",
+    "km_from_start": 70.3,
+    "atms": 0,
+    "banks": 3,
+    "names": [
+     "Bank of Baroda",
+     "HDFC Bank",
+     "Punjab National Bank"
+    ]
+   },
+   {
+    "near": "Between Devprayag and Rudraprayag",
+    "km_from_start": 98,
+    "atms": 4,
+    "banks": 7,
+    "names": [
+     "Axis Bank ATM",
+     "Axis Bank Branch",
+     "Bank of Baroda",
+     "HDFC Bank",
+     "ICICI Bank",
+     "ICICI Bank Badrinath Road, Srinagar-Branch & ATM"
+    ]
+   },
+   {
+    "near": "Rudraprayag",
+    "km_from_start": 135.6,
+    "atms": 3,
+    "banks": 5,
+    "names": [
+     "Axis Bank ATM",
+     "Bank of Baroda",
+     "HDFC Bank",
+     "HDFC Bank ATM",
+     "Indian Overseas Bank",
+     "IndusInd Bank"
+    ]
+   },
+   {
+    "near": "Ukhimath",
+    "km_from_start": 178.8,
+    "atms": 1,
+    "banks": 2,
+    "names": [
+     "Axis Bank",
+     "Punjab National Bank",
+     "Punjab National Bank - ATM"
+    ]
+   },
+   {
+    "near": "Chopta",
+    "km_from_start": 222.0,
+    "atms": 0,
+    "banks": 1,
+    "names": [
+     "Punjab National Bank"
+    ]
+   },
+   {
+    "near": "Gopeshwar",
+    "km_from_start": 315.3,
+    "atms": 2,
+    "banks": 7,
+    "names": [
+     "Axis Bank ATM",
+     "Bank of Baroda",
+     "Chamoli Zila Sahkari Bank Limited",
+     "HDFC Bank",
+     "IndusInd Bank",
+     "NEH Production"
+    ]
+   }
+  ],
+  "longest_gaps": [
+   {
+    "from": "Chopta",
+    "to": "Gopeshwar",
+    "gap_km": 90
+   }
+  ]
+ },
  "mechanics_left_out": [
   {
    "near": "Rishikesh",

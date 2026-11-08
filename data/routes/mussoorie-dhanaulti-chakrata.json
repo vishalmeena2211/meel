@@ -4564,6 +4564,278 @@
  "counts": {
   "facts": 76
  },
+ "daylight": [
+  {
+   "name": "Dehradun",
+   "km_from_start": 0.0,
+   "months": [
+    [
+     "07:15",
+     "17:38"
+    ],
+    [
+     "06:59",
+     "18:05"
+    ],
+    [
+     "06:29",
+     "18:26"
+    ],
+    [
+     "05:52",
+     "18:44"
+    ],
+    [
+     "05:24",
+     "19:04"
+    ],
+    [
+     "05:15",
+     "19:21"
+    ],
+    [
+     "05:26",
+     "19:22"
+    ],
+    [
+     "05:44",
+     "19:01"
+    ],
+    [
+     "06:01",
+     "18:25"
+    ],
+    [
+     "06:19",
+     "17:48"
+    ],
+    [
+     "06:43",
+     "17:22"
+    ],
+    [
+     "07:07",
+     "17:19"
+    ]
+   ]
+  },
+  {
+   "name": "Mussoorie",
+   "km_from_start": 29.3,
+   "months": [
+    [
+     "07:15",
+     "17:38"
+    ],
+    [
+     "06:59",
+     "18:05"
+    ],
+    [
+     "06:29",
+     "18:25"
+    ],
+    [
+     "05:51",
+     "18:44"
+    ],
+    [
+     "05:24",
+     "19:04"
+    ],
+    [
+     "05:15",
+     "19:21"
+    ],
+    [
+     "05:25",
+     "19:22"
+    ],
+    [
+     "05:44",
+     "19:01"
+    ],
+    [
+     "06:01",
+     "18:25"
+    ],
+    [
+     "06:19",
+     "17:48"
+    ],
+    [
+     "06:43",
+     "17:22"
+    ],
+    [
+     "07:07",
+     "17:19"
+    ]
+   ]
+  },
+  {
+   "name": "Dhanaulti",
+   "km_from_start": 59.0,
+   "months": [
+    [
+     "07:14",
+     "17:37"
+    ],
+    [
+     "06:58",
+     "18:04"
+    ],
+    [
+     "06:29",
+     "18:25"
+    ],
+    [
+     "05:51",
+     "18:44"
+    ],
+    [
+     "05:23",
+     "19:03"
+    ],
+    [
+     "05:14",
+     "19:20"
+    ],
+    [
+     "05:25",
+     "19:21"
+    ],
+    [
+     "05:43",
+     "19:00"
+    ],
+    [
+     "06:01",
+     "18:24"
+    ],
+    [
+     "06:18",
+     "17:47"
+    ],
+    [
+     "06:43",
+     "17:21"
+    ],
+    [
+     "07:06",
+     "17:18"
+    ]
+   ]
+  },
+  {
+   "name": "Kempty Falls",
+   "km_from_start": 102.4,
+   "months": [
+    [
+     "07:15",
+     "17:38"
+    ],
+    [
+     "06:59",
+     "18:05"
+    ],
+    [
+     "06:29",
+     "18:26"
+    ],
+    [
+     "05:52",
+     "18:45"
+    ],
+    [
+     "05:24",
+     "19:04"
+    ],
+    [
+     "05:15",
+     "19:21"
+    ],
+    [
+     "05:25",
+     "19:22"
+    ],
+    [
+     "05:44",
+     "19:01"
+    ],
+    [
+     "06:01",
+     "18:25"
+    ],
+    [
+     "06:19",
+     "17:48"
+    ],
+    [
+     "06:43",
+     "17:22"
+    ],
+    [
+     "07:07",
+     "17:19"
+    ]
+   ]
+  },
+  {
+   "name": "Chakrata",
+   "km_from_start": 167.2,
+   "months": [
+    [
+     "07:16",
+     "17:38"
+    ],
+    [
+     "07:00",
+     "18:05"
+    ],
+    [
+     "06:30",
+     "18:26"
+    ],
+    [
+     "05:52",
+     "18:45"
+    ],
+    [
+     "05:24",
+     "19:05"
+    ],
+    [
+     "05:15",
+     "19:22"
+    ],
+    [
+     "05:25",
+     "19:23"
+    ],
+    [
+     "05:45",
+     "19:02"
+    ],
+    [
+     "06:02",
+     "18:26"
+    ],
+    [
+     "06:20",
+     "17:48"
+    ],
+    [
+     "06:45",
+     "17:22"
+    ],
+    [
+     "07:08",
+     "17:19"
+    ]
+   ]
+  }
+ ],
  "built": "2026-11-08",
  "mechanics": [
   {
@@ -5177,6 +5449,78 @@
    }
   }
  ],
+ "cash": {
+  "by_halt": [
+   {
+    "near": "Dehradun",
+    "km_from_start": 0.0,
+    "atms": 23,
+    "banks": 54,
+    "names": [
+     "Aavas Financiers Limited",
+     "Allahabad Bank",
+     "Almora Urban Cooperative Bank",
+     "Axis Bank",
+     "Axis Bank ATM",
+     "Axis Bank Branch"
+    ]
+   },
+   {
+    "near": "Dhanaulti",
+    "km_from_start": 59.0,
+    "atms": 0,
+    "banks": 1,
+    "names": [
+     "Uttarakhand Gramin Bank Dhanolti Branch"
+    ]
+   },
+   {
+    "near": "Mussoorie",
+    "km_from_start": 88.7,
+    "atms": 6,
+    "banks": 8,
+    "names": [
+     "Allahabad Bank",
+     "Axis Bank ATM",
+     "Axis Bank Branch",
+     "Bank of Baroda",
+     "HDFC Bank",
+     "HDFC Bank ATM"
+    ]
+   },
+   {
+    "near": "Kempty Falls",
+    "km_from_start": 102.4,
+    "atms": 1,
+    "banks": 3,
+    "names": [
+     "HDFC Bank ATM",
+     "Punjab National Bank"
+    ]
+   },
+   {
+    "near": "Between Kempty Falls and Chakrata",
+    "km_from_start": 137,
+    "atms": 0,
+    "banks": 1,
+    "names": [
+     "Punjab National Bank"
+    ]
+   },
+   {
+    "near": "Chakrata",
+    "km_from_start": 167.2,
+    "atms": 0,
+    "banks": 4,
+    "names": [
+     "Punjab National Bank",
+     "State Bank Of India-Chakrata",
+     "Uttarakhand Gramin Bank-Makhtipokhari"
+    ]
+   }
+  ],
+  "longest_gaps": []
+ },
  "mechanics_left_out": [
   {
    "near": "Dehradun",
@@ -5199,6 +5543,56 @@
   {
    "near": "Chakrata",
    "count": 64
+  }
+ ],
+ "photos": [
+  {
+   "near": "Mussoorie",
+   "kind": "place",
+   "km_from_start": 29.3,
+   "title": "Dehradun from Mussoorie",
+   "page": "https://commons.wikimedia.org/wiki/File:Dehradun_from_Mussoorie.jpg",
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/69/Dehradun_from_Mussoorie.jpg/500px-Dehradun_from_Mussoorie.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "taken": "2021-07-31",
+   "author": "Varunpai11",
+   "licence": "CC BY-SA 4.0",
+   "licence_url": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  {
+   "near": "Dhanaulti",
+   "kind": "place",
+   "km_from_start": 59.0,
+   "title": "Dhanaulti adventure park, near mussoorie India",
+   "page": "https://commons.wikimedia.org/wiki/File:Dhanaulti_adventure_park,_near_mussoorie_India.jpg",
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d9/Dhanaulti_adventure_park%2C_near_mussoorie_India.jpg/500px-Dhanaulti_adventure_park%2C_near_mussoorie_India.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "taken": "2017-06-08",
+   "author": "Keshariiiitm",
+   "licence": "CC BY-SA 4.0",
+   "licence_url": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  {
+   "near": "Dhanaulti",
+   "kind": "place",
+   "km_from_start": 59.0,
+   "title": "Mountain view from eco park dhanaulti, near mussoorie India",
+   "page": "https://commons.wikimedia.org/wiki/File:Mountain_view_from_eco_park_dhanaulti,_near_mussoorie_India.jpg",
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8c/Mountain_view_from_eco_park_dhanaulti%2C_near_mussoorie_India.jpg/500px-Mountain_view_from_eco_park_dhanaulti%2C_near_mussoorie_India.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "taken": "2017-06-04",
+   "author": "Keshariiiitm",
+   "licence": "CC BY-SA 4.0",
+   "licence_url": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  {
+   "near": "Chakrata",
+   "kind": "place",
+   "km_from_start": 167.2,
+   "title": "Trachycarpus takil, Chakrata, Uttarakhand 1",
+   "page": "https://commons.wikimedia.org/wiki/File:Trachycarpus_takil,_Chakrata,_Uttarakhand_1.jpg",
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/df/Trachycarpus_takil%2C_Chakrata%2C_Uttarakhand_1.jpg/500px-Trachycarpus_takil%2C_Chakrata%2C_Uttarakhand_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "taken": "2023-06-22",
+   "author": "trsraman",
+   "licence": "CC BY 4.0",
+   "licence_url": "https://creativecommons.org/licenses/by/4.0"
   }
  ]
 }

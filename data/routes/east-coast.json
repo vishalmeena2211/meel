@@ -5047,6 +5047,386 @@
  "counts": {
   "facts": 152
  },
+ "daylight": [
+  {
+   "name": "Chennai",
+   "km_from_start": 0.0,
+   "months": [
+    [
+     "06:35",
+     "18:00"
+    ],
+    [
+     "06:32",
+     "18:14"
+    ],
+    [
+     "06:17",
+     "18:20"
+    ],
+    [
+     "05:57",
+     "18:22"
+    ],
+    [
+     "05:43",
+     "18:27"
+    ],
+    [
+     "05:42",
+     "18:36"
+    ],
+    [
+     "05:50",
+     "18:40"
+    ],
+    [
+     "05:57",
+     "18:31"
+    ],
+    [
+     "05:58",
+     "18:11"
+    ],
+    [
+     "05:59",
+     "17:50"
+    ],
+    [
+     "06:08",
+     "17:40"
+    ],
+    [
+     "06:23",
+     "17:45"
+    ]
+   ]
+  },
+  {
+   "name": "Mahabalipuram",
+   "km_from_start": 58.8,
+   "months": [
+    [
+     "06:34",
+     "18:02"
+    ],
+    [
+     "06:32",
+     "18:15"
+    ],
+    [
+     "06:18",
+     "18:20"
+    ],
+    [
+     "05:57",
+     "18:22"
+    ],
+    [
+     "05:44",
+     "18:26"
+    ],
+    [
+     "05:43",
+     "18:35"
+    ],
+    [
+     "05:51",
+     "18:39"
+    ],
+    [
+     "05:57",
+     "18:31"
+    ],
+    [
+     "05:58",
+     "18:11"
+    ],
+    [
+     "05:59",
+     "17:51"
+    ],
+    [
+     "06:07",
+     "17:41"
+    ],
+    [
+     "06:23",
+     "17:46"
+    ]
+   ]
+  },
+  {
+   "name": "Puducherry",
+   "km_from_start": 153.5,
+   "months": [
+    [
+     "06:35",
+     "18:04"
+    ],
+    [
+     "06:33",
+     "18:17"
+    ],
+    [
+     "06:19",
+     "18:22"
+    ],
+    [
+     "05:59",
+     "18:22"
+    ],
+    [
+     "05:47",
+     "18:27"
+    ],
+    [
+     "05:46",
+     "18:35"
+    ],
+    [
+     "05:54",
+     "18:39"
+    ],
+    [
+     "06:00",
+     "18:31"
+    ],
+    [
+     "06:00",
+     "18:12"
+    ],
+    [
+     "06:00",
+     "17:53"
+    ],
+    [
+     "06:08",
+     "17:43"
+    ],
+    [
+     "06:23",
+     "17:49"
+    ]
+   ]
+  },
+  {
+   "name": "Chidambaram",
+   "km_from_start": 225.0,
+   "months": [
+    [
+     "06:34",
+     "18:06"
+    ],
+    [
+     "06:33",
+     "18:18"
+    ],
+    [
+     "06:19",
+     "18:22"
+    ],
+    [
+     "06:00",
+     "18:23"
+    ],
+    [
+     "05:48",
+     "18:27"
+    ],
+    [
+     "05:48",
+     "18:35"
+    ],
+    [
+     "05:55",
+     "18:39"
+    ],
+    [
+     "06:01",
+     "18:31"
+    ],
+    [
+     "06:00",
+     "18:13"
+    ],
+    [
+     "06:00",
+     "17:54"
+    ],
+    [
+     "06:08",
+     "17:44"
+    ],
+    [
+     "06:22",
+     "17:50"
+    ]
+   ]
+  },
+  {
+   "name": "Nagapattinam",
+   "km_from_start": 309.9,
+   "months": [
+    [
+     "06:33",
+     "18:06"
+    ],
+    [
+     "06:31",
+     "18:18"
+    ],
+    [
+     "06:19",
+     "18:22"
+    ],
+    [
+     "06:00",
+     "18:22"
+    ],
+    [
+     "05:48",
+     "18:25"
+    ],
+    [
+     "05:48",
+     "18:33"
+    ],
+    [
+     "05:55",
+     "18:37"
+    ],
+    [
+     "06:01",
+     "18:30"
+    ],
+    [
+     "06:00",
+     "18:12"
+    ],
+    [
+     "05:59",
+     "17:53"
+    ],
+    [
+     "06:06",
+     "17:45"
+    ],
+    [
+     "06:21",
+     "17:51"
+    ]
+   ]
+  },
+  {
+   "name": "Rameswaram",
+   "km_from_start": 575.2,
+   "months": [
+    [
+     "06:32",
+     "18:10"
+    ],
+    [
+     "06:32",
+     "18:22"
+    ],
+    [
+     "06:21",
+     "18:24"
+    ],
+    [
+     "06:03",
+     "18:23"
+    ],
+    [
+     "05:53",
+     "18:25"
+    ],
+    [
+     "05:53",
+     "18:33"
+    ],
+    [
+     "06:00",
+     "18:37"
+    ],
+    [
+     "06:05",
+     "18:31"
+    ],
+    [
+     "06:03",
+     "18:14"
+    ],
+    [
+     "06:00",
+     "17:56"
+    ],
+    [
+     "06:06",
+     "17:49"
+    ],
+    [
+     "06:20",
+     "17:55"
+    ]
+   ]
+  },
+  {
+   "name": "Dhanushkodi",
+   "km_from_start": 593.4,
+   "months": [
+    [
+     "06:32",
+     "18:10"
+    ],
+    [
+     "06:32",
+     "18:22"
+    ],
+    [
+     "06:20",
+     "18:24"
+    ],
+    [
+     "06:03",
+     "18:22"
+    ],
+    [
+     "05:52",
+     "18:25"
+    ],
+    [
+     "05:53",
+     "18:32"
+    ],
+    [
+     "06:00",
+     "18:36"
+    ],
+    [
+     "06:04",
+     "18:30"
+    ],
+    [
+     "06:02",
+     "18:13"
+    ],
+    [
+     "06:00",
+     "17:56"
+    ],
+    [
+     "06:06",
+     "17:49"
+    ],
+    [
+     "06:20",
+     "17:55"
+    ]
+   ]
+  }
+ ],
  "built": "2026-11-08",
  "mechanics": [
   {
@@ -5756,6 +6136,162 @@
    }
   }
  ],
+ "cash": {
+  "by_halt": [
+   {
+    "near": "Chennai",
+    "km_from_start": 0.0,
+    "atms": 80,
+    "banks": 203,
+    "names": [
+     "Adithya Safe Deposit Lockers",
+     "Allahabad Bank",
+     "Allahabad Bank George Town Branch",
+     "Andhra Bank",
+     "Axis Bank",
+     "Axis Bank ATM"
+    ]
+   },
+   {
+    "near": "Between Chennai and Mahabalipuram",
+    "km_from_start": 26,
+    "atms": 13,
+    "banks": 15,
+    "names": [
+     "Axis Bank",
+     "Axis Bank ATM",
+     "Axis Bank Branch",
+     "Bank of Baroda",
+     "Chennai - Karapakkam Offsite ATM",
+     "Chennai- Siruseri Branch Cash Deposit Machine"
+    ]
+   },
+   {
+    "near": "Mahabalipuram",
+    "km_from_start": 58.8,
+    "atms": 10,
+    "banks": 9,
+    "names": [
+     "Adayar, Chennai",
+     "Axis Bank ATM",
+     "Axis Bank Branch",
+     "HDFC Bank ATM",
+     "ICICI Bank",
+     "IDFC FIRST Bank"
+    ]
+   },
+   {
+    "near": "Between Mahabalipuram and Puducherry",
+    "km_from_start": 121,
+    "atms": 1,
+    "banks": 2,
+    "names": [
+     "Axis Bank",
+     "Central Bank of India-Marakkanam",
+     "Indian Overseas Bank"
+    ]
+   },
+   {
+    "near": "Puducherry",
+    "km_from_start": 153.5,
+    "atms": 30,
+    "banks": 37,
+    "names": [
+     "Axis Bank",
+     "Axis Bank ATM",
+     "Bajaj Finserv Service Branch",
+     "Bank of Baroda",
+     "Bank of India",
+     "Bank of Maharashtra"
+    ]
+   },
+   {
+    "near": "Between Puducherry and Chidambaram",
+    "km_from_start": 180,
+    "atms": 3,
+    "banks": 4,
+    "names": [
+     "Axis Bank",
+     "Axis Bank ATM",
+     "Bank of Baroda",
+     "Federal Bank",
+     "HDB Financial Services Limited",
+     "Indian Overseas Bank - ATM"
+    ]
+   },
+   {
+    "near": "Chidambaram",
+    "km_from_start": 225.0,
+    "atms": 12,
+    "banks": 23,
+    "names": [
+     "Axis Bank ATM",
+     "Axis Bank Branch",
+     "Bank of Baroda",
+     "CSB BANK LTD",
+     "CSB BANK LTD ATM",
+     "Canara Bank"
+    ]
+   },
+   {
+    "near": "Between Chidambaram and Nagapattinam",
+    "km_from_start": 261,
+    "atms": 2,
+    "banks": 5,
+    "names": [
+     "Canara Bank - Poovam",
+     "Canara Bank ATM",
+     "City Union Bank",
+     "City Union Bank Kidarankondan",
+     "City Union Bank Porayar",
+     "Indian Overseas Bank"
+    ]
+   },
+   {
+    "near": "Nagapattinam",
+    "km_from_start": 309.9,
+    "atms": 13,
+    "banks": 34,
+    "names": [
+     "Axis Bank",
+     "Axis Bank ATM",
+     "Axis Bank Branch",
+     "Bank of Baroda",
+     "Bank of India",
+     "Bank of Maharashtra - Karaikal Branch"
+    ]
+   },
+   {
+    "near": "Between Nagapattinam and Rameswaram",
+    "km_from_start": 349,
+    "atms": 16,
+    "banks": 24,
+    "names": [
+     "Axis Bank",
+     "Axis Bank ATM",
+     "Axis Bank Branch",
+     "CSB BANK LTD ATM",
+     "Canara Bank",
+     "City Union Bank ATM"
+    ]
+   },
+   {
+    "near": "Rameswaram",
+    "km_from_start": 575.2,
+    "atms": 3,
+    "banks": 9,
+    "names": [
+     "Bank of Baroda",
+     "City Union Bank Rameswaram",
+     "HDFC Bank",
+     "HDFC Bank ATM",
+     "ICICI Bank",
+     "Indian Overseas Bank"
+    ]
+   }
+  ],
+  "longest_gaps": []
+ },
  "mechanics_left_out": [
   {
    "near": "Chennai",

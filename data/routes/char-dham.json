@@ -6024,6 +6024,602 @@
  "counts": {
   "facts": 178
  },
+ "daylight": [
+  {
+   "name": "Rishikesh",
+   "km_from_start": 0.0,
+   "months": [
+    [
+     "07:13",
+     "17:38"
+    ],
+    [
+     "06:58",
+     "18:04"
+    ],
+    [
+     "06:28",
+     "18:25"
+    ],
+    [
+     "05:51",
+     "18:43"
+    ],
+    [
+     "05:24",
+     "19:02"
+    ],
+    [
+     "05:15",
+     "19:19"
+    ],
+    [
+     "05:25",
+     "19:20"
+    ],
+    [
+     "05:44",
+     "19:00"
+    ],
+    [
+     "06:01",
+     "18:24"
+    ],
+    [
+     "06:18",
+     "17:47"
+    ],
+    [
+     "06:42",
+     "17:22"
+    ],
+    [
+     "07:05",
+     "17:19"
+    ]
+   ]
+  },
+  {
+   "name": "Barkot",
+   "km_from_start": 157.5,
+   "months": [
+    [
+     "07:15",
+     "17:36"
+    ],
+    [
+     "06:59",
+     "18:04"
+    ],
+    [
+     "06:29",
+     "18:25"
+    ],
+    [
+     "05:51",
+     "18:44"
+    ],
+    [
+     "05:23",
+     "19:04"
+    ],
+    [
+     "05:13",
+     "19:21"
+    ],
+    [
+     "05:24",
+     "19:22"
+    ],
+    [
+     "05:43",
+     "19:01"
+    ],
+    [
+     "06:01",
+     "18:24"
+    ],
+    [
+     "06:19",
+     "17:47"
+    ],
+    [
+     "06:43",
+     "17:21"
+    ],
+    [
+     "07:07",
+     "17:17"
+    ]
+   ]
+  },
+  {
+   "name": "Janki Chatti",
+   "km_from_start": 202.6,
+   "months": [
+    [
+     "07:15",
+     "17:35"
+    ],
+    [
+     "06:58",
+     "18:03"
+    ],
+    [
+     "06:28",
+     "18:24"
+    ],
+    [
+     "05:50",
+     "18:43"
+    ],
+    [
+     "05:21",
+     "19:03"
+    ],
+    [
+     "05:12",
+     "19:21"
+    ],
+    [
+     "05:23",
+     "19:22"
+    ],
+    [
+     "05:42",
+     "19:00"
+    ],
+    [
+     "06:00",
+     "18:24"
+    ],
+    [
+     "06:18",
+     "17:46"
+    ],
+    [
+     "06:43",
+     "17:19"
+    ],
+    [
+     "07:07",
+     "17:16"
+    ]
+   ]
+  },
+  {
+   "name": "Uttarkashi",
+   "km_from_start": 326.1,
+   "months": [
+    [
+     "07:14",
+     "17:36"
+    ],
+    [
+     "06:58",
+     "18:03"
+    ],
+    [
+     "06:28",
+     "18:24"
+    ],
+    [
+     "05:50",
+     "18:43"
+    ],
+    [
+     "05:22",
+     "19:03"
+    ],
+    [
+     "05:13",
+     "19:20"
+    ],
+    [
+     "05:23",
+     "19:21"
+    ],
+    [
+     "05:42",
+     "19:00"
+    ],
+    [
+     "06:00",
+     "18:23"
+    ],
+    [
+     "06:18",
+     "17:46"
+    ],
+    [
+     "06:42",
+     "17:20"
+    ],
+    [
+     "07:06",
+     "17:17"
+    ]
+   ]
+  },
+  {
+   "name": "Gangotri",
+   "km_from_start": 424.2,
+   "months": [
+    [
+     "07:13",
+     "17:33"
+    ],
+    [
+     "06:56",
+     "18:01"
+    ],
+    [
+     "06:26",
+     "18:22"
+    ],
+    [
+     "05:47",
+     "18:41"
+    ],
+    [
+     "05:19",
+     "19:01"
+    ],
+    [
+     "05:10",
+     "19:19"
+    ],
+    [
+     "05:20",
+     "19:20"
+    ],
+    [
+     "05:40",
+     "18:58"
+    ],
+    [
+     "05:58",
+     "18:22"
+    ],
+    [
+     "06:16",
+     "17:44"
+    ],
+    [
+     "06:41",
+     "17:17"
+    ],
+    [
+     "07:05",
+     "17:14"
+    ]
+   ]
+  },
+  {
+   "name": "Rudraprayag",
+   "km_from_start": 721.0,
+   "months": [
+    [
+     "07:11",
+     "17:34"
+    ],
+    [
+     "06:55",
+     "18:01"
+    ],
+    [
+     "06:26",
+     "18:22"
+    ],
+    [
+     "05:48",
+     "18:41"
+    ],
+    [
+     "05:20",
+     "19:00"
+    ],
+    [
+     "05:12",
+     "19:17"
+    ],
+    [
+     "05:22",
+     "19:18"
+    ],
+    [
+     "05:41",
+     "18:57"
+    ],
+    [
+     "05:58",
+     "18:21"
+    ],
+    [
+     "06:15",
+     "17:44"
+    ],
+    [
+     "06:39",
+     "17:19"
+    ],
+    [
+     "07:03",
+     "17:15"
+    ]
+   ]
+  },
+  {
+   "name": "Guptkashi",
+   "km_from_start": 763.9,
+   "months": [
+    [
+     "07:11",
+     "17:33"
+    ],
+    [
+     "06:55",
+     "18:01"
+    ],
+    [
+     "06:25",
+     "18:21"
+    ],
+    [
+     "05:47",
+     "18:40"
+    ],
+    [
+     "05:20",
+     "19:00"
+    ],
+    [
+     "05:11",
+     "19:17"
+    ],
+    [
+     "05:21",
+     "19:18"
+    ],
+    [
+     "05:40",
+     "18:57"
+    ],
+    [
+     "05:57",
+     "18:21"
+    ],
+    [
+     "06:15",
+     "17:44"
+    ],
+    [
+     "06:39",
+     "17:18"
+    ],
+    [
+     "07:03",
+     "17:14"
+    ]
+   ]
+  },
+  {
+   "name": "Sonprayag",
+   "km_from_start": 790.8,
+   "months": [
+    [
+     "07:12",
+     "17:34"
+    ],
+    [
+     "06:56",
+     "18:01"
+    ],
+    [
+     "06:26",
+     "18:22"
+    ],
+    [
+     "05:48",
+     "18:41"
+    ],
+    [
+     "05:20",
+     "19:00"
+    ],
+    [
+     "05:11",
+     "19:17"
+    ],
+    [
+     "05:21",
+     "19:18"
+    ],
+    [
+     "05:40",
+     "18:58"
+    ],
+    [
+     "05:58",
+     "18:21"
+    ],
+    [
+     "06:15",
+     "17:44"
+    ],
+    [
+     "06:40",
+     "17:18"
+    ],
+    [
+     "07:04",
+     "17:15"
+    ]
+   ]
+  },
+  {
+   "name": "Joshimath",
+   "km_from_start": 973.6,
+   "months": [
+    [
+     "07:09",
+     "17:31"
+    ],
+    [
+     "06:53",
+     "17:59"
+    ],
+    [
+     "06:23",
+     "18:20"
+    ],
+    [
+     "05:45",
+     "18:39"
+    ],
+    [
+     "05:18",
+     "18:58"
+    ],
+    [
+     "05:09",
+     "19:15"
+    ],
+    [
+     "05:19",
+     "19:16"
+    ],
+    [
+     "05:38",
+     "18:55"
+    ],
+    [
+     "05:55",
+     "18:19"
+    ],
+    [
+     "06:13",
+     "17:42"
+    ],
+    [
+     "06:38",
+     "17:16"
+    ],
+    [
+     "07:01",
+     "17:12"
+    ]
+   ]
+  },
+  {
+   "name": "Badrinath",
+   "km_from_start": 1017.0,
+   "months": [
+    [
+     "07:10",
+     "17:31"
+    ],
+    [
+     "06:54",
+     "17:59"
+    ],
+    [
+     "06:24",
+     "18:20"
+    ],
+    [
+     "05:46",
+     "18:39"
+    ],
+    [
+     "05:18",
+     "18:59"
+    ],
+    [
+     "05:08",
+     "19:16"
+    ],
+    [
+     "05:19",
+     "19:17"
+    ],
+    [
+     "05:38",
+     "18:56"
+    ],
+    [
+     "05:56",
+     "18:19"
+    ],
+    [
+     "06:13",
+     "17:42"
+    ],
+    [
+     "06:38",
+     "17:16"
+    ],
+    [
+     "07:02",
+     "17:12"
+    ]
+   ]
+  },
+  {
+   "name": "Mana",
+   "km_from_start": 1052.4,
+   "months": [
+    [
+     "07:11",
+     "17:31"
+    ],
+    [
+     "06:54",
+     "17:59"
+    ],
+    [
+     "06:24",
+     "18:20"
+    ],
+    [
+     "05:46",
+     "18:40"
+    ],
+    [
+     "05:17",
+     "18:59"
+    ],
+    [
+     "05:08",
+     "19:17"
+    ],
+    [
+     "05:19",
+     "19:18"
+    ],
+    [
+     "05:38",
+     "18:56"
+    ],
+    [
+     "05:56",
+     "18:20"
+    ],
+    [
+     "06:14",
+     "17:42"
+    ],
+    [
+     "06:39",
+     "17:16"
+    ],
+    [
+     "07:03",
+     "17:12"
+    ]
+   ]
+  }
+ ],
  "built": "2026-11-08",
  "mechanics": [
   {
@@ -6701,6 +7297,184 @@
    }
   }
  ],
+ "cash": {
+  "by_halt": [
+   {
+    "near": "Rishikesh",
+    "km_from_start": 0.0,
+    "atms": 12,
+    "banks": 26,
+    "names": [
+     "Alankit",
+     "Axis Bank",
+     "Axis Bank ATM",
+     "Axis Bank Branch",
+     "Bandhan Bank",
+     "Bank of Baroda"
+    ]
+   },
+   {
+    "near": "Between Rishikesh and Barkot",
+    "km_from_start": 33,
+    "atms": 36,
+    "banks": 83,
+    "names": [
+     "Aavas Financiers Limited",
+     "Allahabad Bank",
+     "Almora Urban Cooperative Bank",
+     "Axis Bank",
+     "Axis Bank ATM",
+     "Axis Bank Branch"
+    ]
+   },
+   {
+    "near": "Barkot",
+    "km_from_start": 157.5,
+    "atms": 0,
+    "banks": 4,
+    "names": [
+     "Punjab National Bank",
+     "Uttarakhand Gramin Bank",
+     "Uttarakhand Gramin Bank-Lakhmandal"
+    ]
+   },
+   {
+    "near": "Janki Chatti",
+    "km_from_start": 202.6,
+    "atms": 1,
+    "banks": 1,
+    "names": [
+     "HDFC Bank ATM",
+     "Punjab National Bank"
+    ]
+   },
+   {
+    "near": "Gangotri",
+    "km_from_start": 424.2,
+    "atms": 1,
+    "banks": 0,
+    "names": [
+     "HDFC Bank ATM"
+    ]
+   },
+   {
+    "near": "Uttarkashi",
+    "km_from_start": 522.3,
+    "atms": 1,
+    "banks": 11,
+    "names": [
+     "Axis Bank ATM",
+     "Axis Bank Branch",
+     "Bank of Baroda",
+     "HDFC Bank",
+     "IndusInd Bank",
+     "Punjab National Bank"
+    ]
+   },
+   {
+    "near": "Between Uttarkashi and Rudraprayag",
+    "km_from_start": 558,
+    "atms": 6,
+    "banks": 19,
+    "names": [
+     "Axis Bank ATM",
+     "Axis Bank Branch",
+     "Bank of Baroda",
+     "HDFC Bank",
+     "HDFC Bank ATM",
+     "ICICI Bank"
+    ]
+   },
+   {
+    "near": "Guptkashi",
+    "km_from_start": 763.9,
+    "atms": 1,
+    "banks": 1,
+    "names": [
+     "Axis Bank",
+     "Punjab National Bank - ATM"
+    ]
+   },
+   {
+    "near": "Between Sonprayag and Rudraprayag",
+    "km_from_start": 818,
+    "atms": 0,
+    "banks": 1,
+    "names": [
+     "Punjab National Bank"
+    ]
+   },
+   {
+    "near": "Rudraprayag",
+    "km_from_start": 860.3,
+    "atms": 3,
+    "banks": 8,
+    "names": [
+     "Axis Bank ATM",
+     "Bank of Baroda",
+     "HDFC Bank",
+     "HDFC Bank ATM",
+     "Indian Overseas Bank",
+     "IndusInd Bank"
+    ]
+   },
+   {
+    "near": "Between Rudraprayag and Joshimath",
+    "km_from_start": 886,
+    "atms": 3,
+    "banks": 14,
+    "names": [
+     "Axis Bank ATM",
+     "Bank of Baroda",
+     "Chamoli Zila Sahkari Bank Limited",
+     "DK Electronics",
+     "HDFC Bank",
+     "HDFC Bank ATM"
+    ]
+   },
+   {
+    "near": "Joshimath",
+    "km_from_start": 973.6,
+    "atms": 0,
+    "banks": 6,
+    "names": [
+     "Axis Bank",
+     "Bank of Baroda",
+     "HDFC Bank",
+     "Indian Overseas Bank",
+     "Punjab National Bank",
+     "Uttaranchal Gramin Bank-Helang"
+    ]
+   },
+   {
+    "near": "Badrinath",
+    "km_from_start": 1017.0,
+    "atms": 2,
+    "banks": 0,
+    "names": [
+     "HDFC Bank ATM",
+     "Punjab National Bank - ATM"
+    ]
+   }
+  ],
+  "longest_gaps": [
+   {
+    "from": "Janki Chatti",
+    "to": "Uttarkashi",
+    "gap_km": 109
+   },
+   {
+    "from": "Uttarkashi",
+    "to": "Gangotri",
+    "gap_km": 101
+   },
+   {
+    "from": "Gangotri",
+    "to": "Uttarkashi",
+    "gap_km": 100
+   }
+  ]
+ },
  "mechanics_left_out": [
   {
    "near": "Rishikesh",
@@ -6733,12 +7507,38 @@
    "count": 54
   },
   {
-   "near": "Sonprayag",
+   "near": "Badrinath",
    "count": 44
   },
   {
-   "near": "Badrinath",
+   "near": "Sonprayag",
    "count": 44
+  }
+ ],
+ "photos": [
+  {
+   "near": "Badrinath",
+   "kind": "place",
+   "km_from_start": 1017.0,
+   "title": "Badrinath Temple Tapt Kund hot springs",
+   "page": "https://commons.wikimedia.org/wiki/File:Badrinath_Temple_Tapt_Kund_hot_springs.jpg",
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f7/Badrinath_Temple_Tapt_Kund_hot_springs.jpg/500px-Badrinath_Temple_Tapt_Kund_hot_springs.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "taken": "2026-05-17",
+   "author": "Shobhit Gosain",
+   "licence": "CC0",
+   "licence_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+  },
+  {
+   "near": "Badrinath",
+   "kind": "place",
+   "km_from_start": 1017.0,
+   "title": "Badrinath Himalayas",
+   "page": "https://commons.wikimedia.org/wiki/File:Badrinath_Himalayas.jpg",
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/92/Badrinath_Himalayas.jpg/500px-Badrinath_Himalayas.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "taken": "2025-05-28",
+   "author": "AjjuSinghkarwi",
+   "licence": "CC0",
+   "licence_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
   }
  ]
 }

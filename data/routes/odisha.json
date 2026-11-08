@@ -7229,6 +7229,386 @@
  "counts": {
   "facts": 199
  },
+ "daylight": [
+  {
+   "name": "Bhubaneswar",
+   "km_from_start": 0.0,
+   "months": [
+    [
+     "06:24",
+     "17:26"
+    ],
+    [
+     "06:17",
+     "17:45"
+    ],
+    [
+     "05:56",
+     "17:56"
+    ],
+    [
+     "05:29",
+     "18:05"
+    ],
+    [
+     "05:10",
+     "18:15"
+    ],
+    [
+     "05:06",
+     "18:27"
+    ],
+    [
+     "05:15",
+     "18:30"
+    ],
+    [
+     "05:26",
+     "18:17"
+    ],
+    [
+     "05:33",
+     "17:50"
+    ],
+    [
+     "05:41",
+     "17:24"
+    ],
+    [
+     "05:56",
+     "17:07"
+    ],
+    [
+     "06:14",
+     "17:09"
+    ]
+   ]
+  },
+  {
+   "name": "Konark",
+   "km_from_start": 60.1,
+   "months": [
+    [
+     "06:23",
+     "17:26"
+    ],
+    [
+     "06:15",
+     "17:44"
+    ],
+    [
+     "05:55",
+     "17:55"
+    ],
+    [
+     "05:28",
+     "18:03"
+    ],
+    [
+     "05:10",
+     "18:14"
+    ],
+    [
+     "05:06",
+     "18:25"
+    ],
+    [
+     "05:14",
+     "18:28"
+    ],
+    [
+     "05:26",
+     "18:15"
+    ],
+    [
+     "05:33",
+     "17:49"
+    ],
+    [
+     "05:40",
+     "17:23"
+    ],
+    [
+     "05:54",
+     "17:07"
+    ],
+    [
+     "06:13",
+     "17:09"
+    ]
+   ]
+  },
+  {
+   "name": "Puri",
+   "km_from_start": 96.4,
+   "months": [
+    [
+     "06:24",
+     "17:27"
+    ],
+    [
+     "06:16",
+     "17:46"
+    ],
+    [
+     "05:56",
+     "17:56"
+    ],
+    [
+     "05:30",
+     "18:04"
+    ],
+    [
+     "05:11",
+     "18:15"
+    ],
+    [
+     "05:07",
+     "18:26"
+    ],
+    [
+     "05:16",
+     "18:29"
+    ],
+    [
+     "05:27",
+     "18:16"
+    ],
+    [
+     "05:34",
+     "17:50"
+    ],
+    [
+     "05:41",
+     "17:24"
+    ],
+    [
+     "05:55",
+     "17:08"
+    ],
+    [
+     "06:13",
+     "17:10"
+    ]
+   ]
+  },
+  {
+   "name": "Rambha",
+   "km_from_start": 259.3,
+   "months": [
+    [
+     "06:26",
+     "17:30"
+    ],
+    [
+     "06:19",
+     "17:49"
+    ],
+    [
+     "05:59",
+     "17:59"
+    ],
+    [
+     "05:33",
+     "18:07"
+    ],
+    [
+     "05:14",
+     "18:17"
+    ],
+    [
+     "05:11",
+     "18:29"
+    ],
+    [
+     "05:19",
+     "18:32"
+    ],
+    [
+     "05:30",
+     "18:19"
+    ],
+    [
+     "05:37",
+     "17:53"
+    ],
+    [
+     "05:43",
+     "17:27"
+    ],
+    [
+     "05:58",
+     "17:11"
+    ],
+    [
+     "06:16",
+     "17:14"
+    ]
+   ]
+  },
+  {
+   "name": "Gopalpur",
+   "km_from_start": 299.4,
+   "months": [
+    [
+     "06:26",
+     "17:32"
+    ],
+    [
+     "06:19",
+     "17:50"
+    ],
+    [
+     "06:00",
+     "18:00"
+    ],
+    [
+     "05:34",
+     "18:08"
+    ],
+    [
+     "05:16",
+     "18:17"
+    ],
+    [
+     "05:12",
+     "18:29"
+    ],
+    [
+     "05:20",
+     "18:32"
+    ],
+    [
+     "05:31",
+     "18:19"
+    ],
+    [
+     "05:38",
+     "17:54"
+    ],
+    [
+     "05:44",
+     "17:28"
+    ],
+    [
+     "05:58",
+     "17:12"
+    ],
+    [
+     "06:16",
+     "17:15"
+    ]
+   ]
+  },
+  {
+   "name": "Koraput",
+   "km_from_start": 630.2,
+   "months": [
+    [
+     "06:34",
+     "17:41"
+    ],
+    [
+     "06:28",
+     "17:59"
+    ],
+    [
+     "06:09",
+     "18:09"
+    ],
+    [
+     "05:43",
+     "18:16"
+    ],
+    [
+     "05:25",
+     "18:25"
+    ],
+    [
+     "05:22",
+     "18:37"
+    ],
+    [
+     "05:30",
+     "18:40"
+    ],
+    [
+     "05:40",
+     "18:28"
+    ],
+    [
+     "05:46",
+     "18:03"
+    ],
+    [
+     "05:52",
+     "17:37"
+    ],
+    [
+     "06:06",
+     "17:22"
+    ],
+    [
+     "06:24",
+     "17:24"
+    ]
+   ]
+  },
+  {
+   "name": "Deomali",
+   "km_from_start": 691.0,
+   "months": [
+    [
+     "06:33",
+     "17:40"
+    ],
+    [
+     "06:27",
+     "17:58"
+    ],
+    [
+     "06:07",
+     "18:08"
+    ],
+    [
+     "05:42",
+     "18:15"
+    ],
+    [
+     "05:24",
+     "18:24"
+    ],
+    [
+     "05:21",
+     "18:35"
+    ],
+    [
+     "05:29",
+     "18:38"
+    ],
+    [
+     "05:40",
+     "18:26"
+    ],
+    [
+     "05:45",
+     "18:01"
+    ],
+    [
+     "05:51",
+     "17:36"
+    ],
+    [
+     "06:05",
+     "17:21"
+    ],
+    [
+     "06:23",
+     "17:24"
+    ]
+   ]
+  }
+ ],
  "built": "2026-11-08",
  "mechanics": [
   {
@@ -8370,6 +8750,132 @@
    }
   }
  ],
+ "cash": {
+  "by_halt": [
+   {
+    "near": "Bhubaneswar",
+    "km_from_start": 0.0,
+    "atms": 18,
+    "banks": 54,
+    "names": [
+     "Andhra Bank",
+     "Axis Bank",
+     "Axis Bank ATM",
+     "Axis Bank Branch",
+     "Bandhan Bank Limited",
+     "Bank of Baroda"
+    ]
+   },
+   {
+    "near": "Between Bhubaneswar and Konark",
+    "km_from_start": 26,
+    "atms": 0,
+    "banks": 1,
+    "names": [
+     "Bank of Baroda"
+    ]
+   },
+   {
+    "near": "Konark",
+    "km_from_start": 60.1,
+    "atms": 4,
+    "banks": 12,
+    "names": [
+     "Axis Bank ATM",
+     "Axis Bank Branch",
+     "Canara Bank",
+     "Canara Bank Konark Branch",
+     "HDFC Bank",
+     "ICICI Bank"
+    ]
+   },
+   {
+    "near": "Puri",
+    "km_from_start": 96.4,
+    "atms": 11,
+    "banks": 16,
+    "names": [
+     "Axis Bank",
+     "Axis Bank ATM",
+     "Axis Bank Branch",
+     "Bank of Baroda",
+     "Bank of Maharashtra - Puri Branch",
+     "Bank of Maharashtra ATM"
+    ]
+   },
+   {
+    "near": "Between Puri and Rambha",
+    "km_from_start": 128,
+    "atms": 24,
+    "banks": 35,
+    "names": [
+     "Axis Bank",
+     "Axis Bank ATM",
+     "Axis Bank Branch",
+     "Bank Of Baroda",
+     "Bank of Baroda",
+     "Bank of Baroda ATM"
+    ]
+   },
+   {
+    "near": "Rambha",
+    "km_from_start": 259.3,
+    "atms": 4,
+    "banks": 6,
+    "names": [
+     "Axis Bank",
+     "Axis Bank ATM",
+     "Berhampur",
+     "HDFC Bank",
+     "HDFC Bank ATM",
+     "ICICI Bank"
+    ]
+   },
+   {
+    "near": "Gopalpur",
+    "km_from_start": 299.4,
+    "atms": 19,
+    "banks": 31,
+    "names": [
+     "Aavas Financiers Limited",
+     "Andhra Bank Bhabinipur",
+     "Andhra Bank Chatrapur",
+     "Axis Bank",
+     "Axis Bank ATM",
+     "Axis Bank Branch"
+    ]
+   },
+   {
+    "near": "Between Gopalpur and Koraput",
+    "km_from_start": 345,
+    "atms": 16,
+    "banks": 26,
+    "names": [
+     "Andhra Bank",
+     "Andhra Pradesh State Cooperative Bank",
+     "Axis Bank",
+     "Axis Bank ATM",
+     "Axis Bank ATM Ramnaguda Chowk",
+     "Axis Bank Branch"
+    ]
+   },
+   {
+    "near": "Koraput",
+    "km_from_start": 630.2,
+    "atms": 5,
+    "banks": 11,
+    "names": [
+     "Axis Bank",
+     "Axis Bank ATM",
+     "Axis Bank Branch",
+     "Bank of India",
+     "Bank of Maharashtra - Koraput Branch",
+     "Bank of Maharashtra ATM"
+    ]
+   }
+  ],
+  "longest_gaps": []
+ },
  "mechanics_left_out": [
   {
    "near": "Bhubaneswar",

@@ -2354,6 +2354,332 @@
  "counts": {
   "facts": 78
  },
+ "daylight": [
+  {
+   "name": "Dharamshala",
+   "km_from_start": 0.0,
+   "months": [
+    [
+     "07:26",
+     "17:41"
+    ],
+    [
+     "07:08",
+     "18:10"
+    ],
+    [
+     "06:37",
+     "18:32"
+    ],
+    [
+     "05:57",
+     "18:53"
+    ],
+    [
+     "05:27",
+     "19:14"
+    ],
+    [
+     "05:17",
+     "19:32"
+    ],
+    [
+     "05:28",
+     "19:33"
+    ],
+    [
+     "05:48",
+     "19:11"
+    ],
+    [
+     "06:08",
+     "18:32"
+    ],
+    [
+     "06:27",
+     "17:53"
+    ],
+    [
+     "06:53",
+     "17:26"
+    ],
+    [
+     "07:18",
+     "17:22"
+    ]
+   ]
+  },
+  {
+   "name": "McLeod Ganj",
+   "km_from_start": 4.8,
+   "months": [
+    [
+     "07:26",
+     "17:41"
+    ],
+    [
+     "07:08",
+     "18:10"
+    ],
+    [
+     "06:37",
+     "18:32"
+    ],
+    [
+     "05:57",
+     "18:53"
+    ],
+    [
+     "05:27",
+     "19:14"
+    ],
+    [
+     "05:17",
+     "19:32"
+    ],
+    [
+     "05:28",
+     "19:33"
+    ],
+    [
+     "05:48",
+     "19:11"
+    ],
+    [
+     "06:08",
+     "18:32"
+    ],
+    [
+     "06:27",
+     "17:53"
+    ],
+    [
+     "06:53",
+     "17:26"
+    ],
+    [
+     "07:18",
+     "17:21"
+    ]
+   ]
+  },
+  {
+   "name": "Palampur",
+   "km_from_start": 45.6,
+   "months": [
+    [
+     "07:25",
+     "17:40"
+    ],
+    [
+     "07:07",
+     "18:09"
+    ],
+    [
+     "06:36",
+     "18:31"
+    ],
+    [
+     "05:56",
+     "18:52"
+    ],
+    [
+     "05:27",
+     "19:13"
+    ],
+    [
+     "05:17",
+     "19:31"
+    ],
+    [
+     "05:28",
+     "19:32"
+    ],
+    [
+     "05:48",
+     "19:10"
+    ],
+    [
+     "06:07",
+     "18:32"
+    ],
+    [
+     "06:26",
+     "17:53"
+    ],
+    [
+     "06:52",
+     "17:25"
+    ],
+    [
+     "07:17",
+     "17:21"
+    ]
+   ]
+  },
+  {
+   "name": "Baijnath",
+   "km_from_start": 62.1,
+   "months": [
+    [
+     "07:24",
+     "17:40"
+    ],
+    [
+     "07:07",
+     "18:09"
+    ],
+    [
+     "06:35",
+     "18:31"
+    ],
+    [
+     "05:56",
+     "18:52"
+    ],
+    [
+     "05:26",
+     "19:13"
+    ],
+    [
+     "05:16",
+     "19:30"
+    ],
+    [
+     "05:27",
+     "19:31"
+    ],
+    [
+     "05:47",
+     "19:09"
+    ],
+    [
+     "06:06",
+     "18:31"
+    ],
+    [
+     "06:26",
+     "17:52"
+    ],
+    [
+     "06:52",
+     "17:25"
+    ],
+    [
+     "07:16",
+     "17:21"
+    ]
+   ]
+  },
+  {
+   "name": "Bir",
+   "km_from_start": 74.9,
+   "months": [
+    [
+     "07:24",
+     "17:40"
+    ],
+    [
+     "07:06",
+     "18:08"
+    ],
+    [
+     "06:35",
+     "18:31"
+    ],
+    [
+     "05:55",
+     "18:51"
+    ],
+    [
+     "05:26",
+     "19:12"
+    ],
+    [
+     "05:16",
+     "19:30"
+    ],
+    [
+     "05:27",
+     "19:31"
+    ],
+    [
+     "05:47",
+     "19:09"
+    ],
+    [
+     "06:06",
+     "18:31"
+    ],
+    [
+     "06:25",
+     "17:52"
+    ],
+    [
+     "06:52",
+     "17:24"
+    ],
+    [
+     "07:16",
+     "17:20"
+    ]
+   ]
+  },
+  {
+   "name": "Billing",
+   "km_from_start": 88.4,
+   "months": [
+    [
+     "07:24",
+     "17:40"
+    ],
+    [
+     "07:06",
+     "18:08"
+    ],
+    [
+     "06:35",
+     "18:30"
+    ],
+    [
+     "05:55",
+     "18:51"
+    ],
+    [
+     "05:26",
+     "19:12"
+    ],
+    [
+     "05:16",
+     "19:30"
+    ],
+    [
+     "05:27",
+     "19:31"
+    ],
+    [
+     "05:47",
+     "19:09"
+    ],
+    [
+     "06:06",
+     "18:31"
+    ],
+    [
+     "06:25",
+     "17:52"
+    ],
+    [
+     "06:51",
+     "17:24"
+    ],
+    [
+     "07:16",
+     "17:20"
+    ]
+   ]
+  }
+ ],
  "built": "2026-11-08",
  "mechanics": [
   {
@@ -2935,6 +3261,73 @@
    }
   }
  ],
+ "cash": {
+  "by_halt": [
+   {
+    "near": "Dharamshala",
+    "km_from_start": 0.0,
+    "atms": 1,
+    "banks": 2,
+    "names": [
+     "Punjab National Bank",
+     "State Bank of India ATM",
+     "State Bank of India Head Office"
+    ]
+   },
+   {
+    "near": "McLeod Ganj",
+    "km_from_start": 4.8,
+    "atms": 8,
+    "banks": 18,
+    "names": [
+     "Axis Bank",
+     "Axis Bank Branch",
+     "Bank of Baroda",
+     "Bank of Maharashtra",
+     "Central Bank of India",
+     "Dharmshala - Chelian"
+    ]
+   },
+   {
+    "near": "Palampur",
+    "km_from_start": 45.6,
+    "atms": 7,
+    "banks": 11,
+    "names": [
+     "Axis Bank ATM",
+     "Axis Bank Branch",
+     "Bank of Baroda",
+     "HDFC Bank",
+     "HDFC Bank ATM",
+     "HDFC Securities"
+    ]
+   },
+   {
+    "near": "Baijnath",
+    "km_from_start": 62.1,
+    "atms": 3,
+    "banks": 4,
+    "names": [
+     "Axis Bank ATM",
+     "HDFC Bank",
+     "HDFC Bank ATM",
+     "ICICI Bank",
+     "Punjab National Bank",
+     "Punjab National Bank - ATM"
+    ]
+   },
+   {
+    "near": "Bir",
+    "km_from_start": 74.9,
+    "atms": 1,
+    "banks": 0,
+    "names": [
+     "Punjab National Bank - ATM"
+    ]
+   }
+  ],
+  "longest_gaps": []
+ },
  "mechanics_left_out": [],
  "stays_left_out": [
   {
@@ -2952,6 +3345,32 @@
   {
    "near": "Dharamshala",
    "count": 55
+  }
+ ],
+ "photos": [
+  {
+   "near": "Billing",
+   "kind": "place",
+   "km_from_start": 88.4,
+   "title": "Best cottage stay in Bir Billing",
+   "page": "https://commons.wikimedia.org/wiki/File:Best_cottage_stay_in_Bir_Billing.jpg",
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5f/Best_cottage_stay_in_Bir_Billing.jpg/500px-Best_cottage_stay_in_Bir_Billing.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "taken": "2025-03-12",
+   "author": "Panchkaranvarun",
+   "licence": "CC BY 4.0",
+   "licence_url": "https://creativecommons.org/licenses/by/4.0"
+  },
+  {
+   "near": "Billing",
+   "kind": "place",
+   "km_from_start": 88.4,
+   "title": "Camping area view with Bonfire in Bir Billing",
+   "page": "https://commons.wikimedia.org/wiki/File:Camping_area_view_with_Bonfire_in_Bir_Billing.jpg",
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/15/Camping_area_view_with_Bonfire_in_Bir_Billing.jpg/500px-Camping_area_view_with_Bonfire_in_Bir_Billing.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "taken": "2025-03-11",
+   "author": "Panchkaranvarun",
+   "licence": "CC BY 4.0",
+   "licence_url": "https://creativecommons.org/licenses/by/4.0"
   }
  ]
 }

@@ -3885,6 +3885,332 @@
  "counts": {
   "facts": 99
  },
+ "daylight": [
+  {
+   "name": "Leh",
+   "km_from_start": 0.0,
+   "months": [
+    [
+     "07:25",
+     "17:31"
+    ],
+    [
+     "07:06",
+     "18:02"
+    ],
+    [
+     "06:32",
+     "18:27"
+    ],
+    [
+     "05:50",
+     "18:50"
+    ],
+    [
+     "05:18",
+     "19:13"
+    ],
+    [
+     "05:07",
+     "19:32"
+    ],
+    [
+     "05:18",
+     "19:33"
+    ],
+    [
+     "05:40",
+     "19:09"
+    ],
+    [
+     "06:02",
+     "18:28"
+    ],
+    [
+     "06:24",
+     "17:47"
+    ],
+    [
+     "06:52",
+     "17:17"
+    ],
+    [
+     "07:18",
+     "17:12"
+    ]
+   ]
+  },
+  {
+   "name": "Khardung",
+   "km_from_start": 69.2,
+   "months": [
+    [
+     "07:25",
+     "17:31"
+    ],
+    [
+     "07:06",
+     "18:02"
+    ],
+    [
+     "06:32",
+     "18:26"
+    ],
+    [
+     "05:49",
+     "18:50"
+    ],
+    [
+     "05:18",
+     "19:13"
+    ],
+    [
+     "05:06",
+     "19:33"
+    ],
+    [
+     "05:18",
+     "19:33"
+    ],
+    [
+     "05:40",
+     "19:09"
+    ],
+    [
+     "06:02",
+     "18:28"
+    ],
+    [
+     "06:24",
+     "17:46"
+    ],
+    [
+     "06:52",
+     "17:16"
+    ],
+    [
+     "07:18",
+     "17:11"
+    ]
+   ]
+  },
+  {
+   "name": "Khalsar",
+   "km_from_start": 93.1,
+   "months": [
+    [
+     "07:25",
+     "17:30"
+    ],
+    [
+     "07:06",
+     "18:01"
+    ],
+    [
+     "06:31",
+     "18:26"
+    ],
+    [
+     "05:49",
+     "18:50"
+    ],
+    [
+     "05:17",
+     "19:13"
+    ],
+    [
+     "05:06",
+     "19:33"
+    ],
+    [
+     "05:17",
+     "19:33"
+    ],
+    [
+     "05:39",
+     "19:09"
+    ],
+    [
+     "06:01",
+     "18:28"
+    ],
+    [
+     "06:23",
+     "17:46"
+    ],
+    [
+     "06:52",
+     "17:16"
+    ],
+    [
+     "07:18",
+     "17:10"
+    ]
+   ]
+  },
+  {
+   "name": "Diskit",
+   "km_from_start": 113.1,
+   "months": [
+    [
+     "07:26",
+     "17:31"
+    ],
+    [
+     "07:06",
+     "18:02"
+    ],
+    [
+     "06:32",
+     "18:27"
+    ],
+    [
+     "05:49",
+     "18:51"
+    ],
+    [
+     "05:18",
+     "19:14"
+    ],
+    [
+     "05:06",
+     "19:33"
+    ],
+    [
+     "05:18",
+     "19:34"
+    ],
+    [
+     "05:40",
+     "19:09"
+    ],
+    [
+     "06:02",
+     "18:28"
+    ],
+    [
+     "06:24",
+     "17:47"
+    ],
+    [
+     "06:53",
+     "17:16"
+    ],
+    [
+     "07:19",
+     "17:11"
+    ]
+   ]
+  },
+  {
+   "name": "Hunder",
+   "km_from_start": 123.1,
+   "months": [
+    [
+     "07:27",
+     "17:31"
+    ],
+    [
+     "07:07",
+     "18:02"
+    ],
+    [
+     "06:32",
+     "18:27"
+    ],
+    [
+     "05:50",
+     "18:51"
+    ],
+    [
+     "05:18",
+     "19:14"
+    ],
+    [
+     "05:06",
+     "19:34"
+    ],
+    [
+     "05:18",
+     "19:34"
+    ],
+    [
+     "05:40",
+     "19:10"
+    ],
+    [
+     "06:02",
+     "18:29"
+    ],
+    [
+     "06:24",
+     "17:47"
+    ],
+    [
+     "06:53",
+     "17:17"
+    ],
+    [
+     "07:19",
+     "17:11"
+    ]
+   ]
+  },
+  {
+   "name": "Turtuk",
+   "km_from_start": 205.5,
+   "months": [
+    [
+     "07:30",
+     "17:33"
+    ],
+    [
+     "07:10",
+     "18:04"
+    ],
+    [
+     "06:35",
+     "18:30"
+    ],
+    [
+     "05:52",
+     "18:54"
+    ],
+    [
+     "05:20",
+     "19:18"
+    ],
+    [
+     "05:08",
+     "19:37"
+    ],
+    [
+     "05:20",
+     "19:37"
+    ],
+    [
+     "05:42",
+     "19:13"
+    ],
+    [
+     "06:05",
+     "18:31"
+    ],
+    [
+     "06:27",
+     "17:49"
+    ],
+    [
+     "06:56",
+     "17:19"
+    ],
+    [
+     "07:23",
+     "17:13"
+    ]
+   ]
+  }
+ ],
  "built": "2026-11-08",
  "mechanics": [
   {
@@ -4722,11 +5048,168 @@
    }
   }
  ],
+ "cash": {
+  "by_halt": [
+   {
+    "near": "Leh",
+    "km_from_start": 0.0,
+    "atms": 4,
+    "banks": 10,
+    "names": [
+     "Axis Bank ATM",
+     "Axis Bank Branch",
+     "Bank of Baroda",
+     "HDFC Bank",
+     "HDFC Bank ATM",
+     "ICICI Bank"
+    ]
+   },
+   {
+    "near": "Khardung",
+    "km_from_start": 69.2,
+    "atms": 0,
+    "banks": 1,
+    "names": [
+     "J&K Bank - Small Branch"
+    ]
+   },
+   {
+    "near": "Diskit",
+    "km_from_start": 113.1,
+    "atms": 0,
+    "banks": 1,
+    "names": [
+     "J&K Bank"
+    ]
+   },
+   {
+    "near": "Hunder",
+    "km_from_start": 123.1,
+    "atms": 0,
+    "banks": 3,
+    "names": [
+     "J&K Bank",
+     "J&K Bank - Small Branch"
+    ]
+   },
+   {
+    "near": "Between Hunder and Turtuk",
+    "km_from_start": 151,
+    "atms": 0,
+    "banks": 1,
+    "names": [
+     "J&K Bank - Small Branch"
+    ]
+   },
+   {
+    "near": "Turtuk",
+    "km_from_start": 205.5,
+    "atms": 0,
+    "banks": 2,
+    "names": [
+     "J&K Bank"
+    ]
+   }
+  ],
+  "longest_gaps": [
+   {
+    "from": "Leh",
+    "to": "Khardung",
+    "gap_km": 66
+   }
+  ]
+ },
  "mechanics_left_out": [],
  "stays_left_out": [
   {
    "near": "Leh",
    "count": 414
+  }
+ ],
+ "photos": [
+  {
+   "near": "Leh",
+   "kind": "place",
+   "km_from_start": 0.0,
+   "title": "Leh Market Square (48975337958)",
+   "page": "https://commons.wikimedia.org/wiki/File:Leh_Market_Square_(48975337958).jpg",
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1d/Leh_Market_Square_%2848975337958%29.jpg/500px-Leh_Market_Square_%2848975337958%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "taken": "2018-07-02",
+   "author": "Chris Hunkeler from Carlsbad",
+   "licence": "CC BY-SA 2.0",
+   "licence_url": "https://creativecommons.org/licenses/by-sa/2.0"
+  },
+  {
+   "near": "Leh",
+   "kind": "place",
+   "km_from_start": 0.0,
+   "title": "Leh - Main Bazaar Road",
+   "page": "https://commons.wikimedia.org/wiki/File:Leh_-_Main_Bazaar_Road.jpg",
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fc/Leh_-_Main_Bazaar_Road.jpg/500px-Leh_-_Main_Bazaar_Road.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "taken": "2018-05-29",
+   "author": "Ingo Mehling",
+   "licence": "CC BY-SA 3.0",
+   "licence_url": "https://creativecommons.org/licenses/by-sa/3.0"
+  },
+  {
+   "near": "Khardung",
+   "kind": "place",
+   "km_from_start": 69.2,
+   "title": "Kardhung La (28321897710)",
+   "page": "https://commons.wikimedia.org/wiki/File:Kardhung_La_(28321897710).jpg",
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7c/Kardhung_La_%2828321897710%29.jpg/500px-Kardhung_La_%2828321897710%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "taken": "2016-07-05",
+   "author": "Ashwin Kumar from Bangalore",
+   "licence": "CC BY-SA 2.0",
+   "licence_url": "https://creativecommons.org/licenses/by-sa/2.0"
+  },
+  {
+   "near": "Diskit",
+   "kind": "place",
+   "km_from_start": 113.1,
+   "title": "Diskit gompa statue",
+   "page": "https://commons.wikimedia.org/wiki/File:Diskit_gompa_statue.jpg",
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d3/Diskit_gompa_statue.jpg/500px-Diskit_gompa_statue.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "taken": "2024-06-18",
+   "author": "Poojaojha3100",
+   "licence": "CC BY 4.0",
+   "licence_url": "https://creativecommons.org/licenses/by/4.0"
+  },
+  {
+   "near": "Diskit",
+   "kind": "place",
+   "km_from_start": 113.1,
+   "title": "Maitreya Buddha statue, Diskit, Nubra Valley, Leh, Ladakh, Kashmir, India (2018)",
+   "page": "https://commons.wikimedia.org/wiki/File:Maitreya_Buddha_statue,_Diskit,_Nubra_Valley,_Leh,_Ladakh,_Kashmir,_India_(2018).jpg",
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6e/Maitreya_Buddha_statue%2C_Diskit%2C_Nubra_Valley%2C_Leh%2C_Ladakh%2C_Kashmir%2C_India_%282018%29.jpg/500px-Maitreya_Buddha_statue%2C_Diskit%2C_Nubra_Valley%2C_Leh%2C_Ladakh%2C_Kashmir%2C_India_%282018%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "taken": "2018-08-19",
+   "author": "Na07mi",
+   "licence": "CC BY-SA 4.0",
+   "licence_url": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  {
+   "near": "Hunder",
+   "kind": "place",
+   "km_from_start": 123.1,
+   "title": "Hunder Nubra Valley",
+   "page": "https://commons.wikimedia.org/wiki/File:Hunder_Nubra_Valley.jpg",
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4a/Hunder_Nubra_Valley.jpg/500px-Hunder_Nubra_Valley.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "taken": "2024-09-15",
+   "author": "HiranmoyPAC",
+   "licence": "CC BY-SA 4.0",
+   "licence_url": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  {
+   "near": "Hunder",
+   "kind": "place",
+   "km_from_start": 123.1,
+   "title": "Sand dunes and poplars Nubra Valley Ladakh",
+   "page": "https://commons.wikimedia.org/wiki/File:Sand_dunes_and_poplars_Nubra_Valley_Ladakh.jpg",
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8a/Sand_dunes_and_poplars_Nubra_Valley_Ladakh.jpg/500px-Sand_dunes_and_poplars_Nubra_Valley_Ladakh.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "taken": "2017-07-26",
+   "author": "Lianguanlun",
+   "licence": "CC BY 4.0",
+   "licence_url": "https://creativecommons.org/licenses/by/4.0"
   }
  ]
 }

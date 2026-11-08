@@ -13110,6 +13110,224 @@
  "counts": {
   "facts": 71
  },
+ "daylight": [
+  {
+   "name": "Imphal",
+   "km_from_start": 0.0,
+   "months": [
+    [
+     "06:00",
+     "16:45"
+    ],
+    [
+     "05:49",
+     "17:08"
+    ],
+    [
+     "05:25",
+     "17:23"
+    ],
+    [
+     "04:53",
+     "17:36"
+    ],
+    [
+     "04:30",
+     "17:50"
+    ],
+    [
+     "04:24",
+     "18:04"
+    ],
+    [
+     "04:34",
+     "18:06"
+    ],
+    [
+     "04:48",
+     "17:50"
+    ],
+    [
+     "05:00",
+     "17:19"
+    ],
+    [
+     "05:11",
+     "16:48"
+    ],
+    [
+     "05:30",
+     "16:28"
+    ],
+    [
+     "05:51",
+     "16:28"
+    ]
+   ]
+  },
+  {
+   "name": "Moirang",
+   "km_from_start": 42.9,
+   "months": [
+    [
+     "06:00",
+     "16:47"
+    ],
+    [
+     "05:49",
+     "17:09"
+    ],
+    [
+     "05:25",
+     "17:24"
+    ],
+    [
+     "04:54",
+     "17:36"
+    ],
+    [
+     "04:32",
+     "17:50"
+    ],
+    [
+     "04:26",
+     "18:04"
+    ],
+    [
+     "04:35",
+     "18:06"
+    ],
+    [
+     "04:49",
+     "17:50"
+    ],
+    [
+     "05:00",
+     "17:20"
+    ],
+    [
+     "05:12",
+     "16:49"
+    ],
+    [
+     "05:31",
+     "16:29"
+    ],
+    [
+     "05:51",
+     "16:29"
+    ]
+   ]
+  },
+  {
+   "name": "Aizawl",
+   "km_from_start": 424.1,
+   "months": [
+    [
+     "06:03",
+     "16:52"
+    ],
+    [
+     "05:53",
+     "17:14"
+    ],
+    [
+     "05:29",
+     "17:28"
+    ],
+    [
+     "04:59",
+     "17:40"
+    ],
+    [
+     "04:37",
+     "17:53"
+    ],
+    [
+     "04:31",
+     "18:07"
+    ],
+    [
+     "04:41",
+     "18:09"
+    ],
+    [
+     "04:54",
+     "17:54"
+    ],
+    [
+     "05:05",
+     "17:24"
+    ],
+    [
+     "05:16",
+     "16:54"
+    ],
+    [
+     "05:34",
+     "16:34"
+    ],
+    [
+     "05:54",
+     "16:35"
+    ]
+   ]
+  },
+  {
+   "name": "Champhai",
+   "km_from_start": 609.4,
+   "months": [
+    [
+     "06:00",
+     "16:50"
+    ],
+    [
+     "05:50",
+     "17:12"
+    ],
+    [
+     "05:27",
+     "17:26"
+    ],
+    [
+     "04:57",
+     "17:37"
+    ],
+    [
+     "04:35",
+     "17:50"
+    ],
+    [
+     "04:30",
+     "18:04"
+    ],
+    [
+     "04:39",
+     "18:06"
+    ],
+    [
+     "04:52",
+     "17:51"
+    ],
+    [
+     "05:03",
+     "17:22"
+    ],
+    [
+     "05:13",
+     "16:52"
+    ],
+    [
+     "05:31",
+     "16:32"
+    ],
+    [
+     "05:51",
+     "16:33"
+    ]
+   ]
+  }
+ ],
  "built": "2026-11-08",
  "mechanics": [
   {
@@ -13387,6 +13605,101 @@
    }
   }
  ],
+ "cash": {
+  "by_halt": [
+   {
+    "near": "Imphal",
+    "km_from_start": 0.0,
+    "atms": 10,
+    "banks": 23,
+    "names": [
+     "Alankit",
+     "Alankit (Imphal Office)",
+     "Axis Bank",
+     "Axis Bank ATM",
+     "Bandhan Bank",
+     "Bank of Baroda"
+    ]
+   },
+   {
+    "near": "Moirang",
+    "km_from_start": 42.9,
+    "atms": 2,
+    "banks": 7,
+    "names": [
+     "Axis Bank ATM",
+     "Axis Bank Branch",
+     "HDFC Bank ATM",
+     "HDFC Securities - Bishnupur - Mnipur",
+     "ICICI Bank",
+     "Punjab National Bank"
+    ]
+   },
+   {
+    "near": "Between Moirang and Aizawl",
+    "km_from_start": 70,
+    "atms": 1,
+    "banks": 7,
+    "names": [
+     "Axis Bank ATM",
+     "Axis Bank Branch",
+     "Bank of Baroda",
+     "Canara Bank",
+     "ICICI Bank Churachandpur",
+     "Mizoram Rural Bank-Seling"
+    ]
+   },
+   {
+    "near": "Aizawl",
+    "km_from_start": 424.1,
+    "atms": 10,
+    "banks": 19,
+    "names": [
+     "Axis Bank",
+     "Axis Bank ATM",
+     "Axis Bank Branch",
+     "Bandhan Bank",
+     "Bank of Baroda",
+     "Bank of Maharashtra"
+    ]
+   },
+   {
+    "near": "Between Aizawl and Champhai",
+    "km_from_start": 569,
+    "atms": 1,
+    "banks": 1,
+    "names": [
+     "Axis Bank ATM",
+     "Mizoram Rural Bank Khawzawl Branch"
+    ]
+   },
+   {
+    "near": "Champhai",
+    "km_from_start": 609.4,
+    "atms": 0,
+    "banks": 5,
+    "names": [
+     "Axis Bank Branch",
+     "HDFC Bank",
+     "ICICI Bank Champhai",
+     "Punjab National Bank",
+     "State Bank of India"
+    ]
+   }
+  ],
+  "longest_gaps": [
+   {
+    "from": "Between Moirang and Aizawl",
+    "to": "Between Moirang and Aizawl",
+    "gap_km": 318
+   },
+   {
+    "from": "Aizawl",
+    "to": "Between Aizawl and Champhai",
+    "gap_km": 136
+   }
+  ]
+ },
  "mechanics_left_out": [
   {
    "near": "Aizawl",

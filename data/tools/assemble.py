@@ -7,6 +7,7 @@ Safe to run again at any time: it only reads the other folders.
 Usage:  python3 assemble.py
 """
 import json
+import math
 import os
 import re
 import sys
@@ -120,6 +121,70 @@ def steep(slug, profile):
             if any(s == slug and lo <= a["km"] and b["km"] <= hi for (s, lo, hi) in STEEP_CHECKED):
                 continue
             print(f"  check {slug}: {a['m']} m at km {a['km']} to {b['m']} m at km {b['km']}")
+
+
+# The clock each country keeps, in minutes ahead of UTC.
+CLOCKS = {"in": 330, "np": 345, "bt": 360}
+
+
+def sun_times(lat, lon, month, clock_min):
+    """Sunrise and sunset ("06:35", "17:50") on the 15th of a month, on the country's clock, for flat ground: a
+    valley wall can hide the sun for longer. NOAA's short formula, good to a minute or two."""
+    n = [15, 46, 74, 105, 135, 166, 196, 227, 258, 288, 319, 349][month - 1]  # day of the year of the 15th
+    g = 2 * math.pi / 365 * (n - 1)
+    eq = 229.18 * (0.000075 + 0.001868 * math.cos(g) - 0.032077 * math.sin(g) - 0.014615 * math.cos(2 * g)
+                   - 0.040849 * math.sin(2 * g))
+    dec = (0.006918 - 0.399912 * math.cos(g) + 0.070257 * math.sin(g) - 0.006758 * math.cos(2 * g)
+           + 0.000907 * math.sin(2 * g) - 0.002697 * math.cos(3 * g) + 0.00148 * math.sin(3 * g))
+    la = math.radians(lat)
+    x = math.cos(math.radians(90.833)) / (math.cos(la) * math.cos(dec)) - math.tan(la) * math.tan(dec)
+    if not -1 <= x <= 1:
+        return None
+    ha = math.degrees(math.acos(x))
+
+    def clock(minutes_utc):
+        m = round(minutes_utc + clock_min) % 1440
+        return f"{m // 60:02d}:{m % 60:02d}"
+
+    return [clock(720 - 4 * (lon + ha) - eq), clock(720 - 4 * (lon - ha) - eq)]
+
+
+def daylight_at(waypoints, country):
+    """Sunrise and sunset in each month at each place to stop, in road order."""
+    clock_min = CLOCKS.get(country, 330)
+    out, seen = [], set()
+    for w in waypoints:
+        if w.get("kind") != "place" or w["name"] in seen:
+            continue
+        seen.add(w["name"])
+        months = [sun_times(w["lat"], w["lon"], m, clock_min) for m in range(1, 13)]
+        if all(months):
+            out.append({"name": w["name"], "km_from_start": w["km_from_start"], "months": months})
+    return out
+
+
+def cash_along(points, waypoints, total_km):
+    """ATMs and banks by halt, and the longest stretches of road with neither."""
+    halts = {w["name"]: w["km_from_start"] for w in waypoints if w.get("kind") == "place"}
+    by = {}
+    for p in points:
+        h = by.setdefault(p["near"], {"near": p["near"], "km_from_start": halts.get(p["near"], round(p["km_from_start"])),
+                                      "atms": 0, "banks": 0, "names": []})
+        h["atms" if p["what"] == "ATM" else "banks"] += 1
+        generic = re.fullmatch(r"(atm|bank|branch|cash point)s?", p["name"].strip().lower())
+        h["names"].append(p["what"] if generic else p["name"])
+    by_halt = sorted(by.values(), key=lambda h: h["km_from_start"])
+    for h in by_halt:
+        h["names"] = sorted(set(h["names"]))[:6]
+    # The stretches between one cash point and the next, measured from where each one is, as fuel gaps are.
+    gaps = []
+    spots = sorted((p["km_from_start"], p["near"]) for p in points)
+    stops = [(0.0, "start of route")] + spots + [(total_km or 0.0, "end of route")]
+    for (ka, a), (kb, b) in zip(stops, stops[1:]):
+        if kb - ka >= 60:
+            gaps.append({"from": a, "to": b, "gap_km": round(kb - ka)})
+    gaps.sort(key=lambda g: -g["gap_km"])
+    return {"by_halt": by_halt, "longest_gaps": gaps[:3]}
 
 
 def build(r):
@@ -308,7 +373,21 @@ def build(r):
     stays = [{"id": unique("stay:" + slugify(f"{p['name']} {p['near']}")), "name": p["name"], "village": p["near"],
               "notes": what(p), "phone": None, "phone_agreed": False, "source": listed(p)}
              for p in pl.get("stays", [])]
-    places = {"mechanics": mechanics, "stays": stays,
+    # A road the places reader skipped (too long, city to city) was not looked at, so it has no cash list at all.
+    read_cash = pl and pl.get("cash") is not None and not pl.get("note")
+    cash = cash_along(pl["cash"], waypoints, header.get("distance_km")) if read_cash else None
+
+    # ── photos near the passes and high halts (photos.py), and towers at each halt (network.py) ──
+    ph = load(os.path.join(DATA, "computed", "photos", slug + ".json"), {}) or {}
+    nw = load(os.path.join(DATA, "computed", "network", slug + ".json"), {}) or {}
+    extras = {}
+    if ph.get("photos"):
+        extras["photos"] = [{k: p[k] for k in ("near", "kind", "km_from_start", "title", "page", "thumb", "taken",
+                                                "author", "licence", "licence_url")} for p in ph["photos"]]
+    if any(h.get("operators") for h in nw.get("halts", [])):
+        extras["towers"] = {"read": nw.get("fetched"),
+                            "halts": [h for h in nw["halts"] if h.get("operators")]}
+    places = {"mechanics": mechanics, "stays": stays, "cash": cash,
               "mechanics_left_out": [{"near": x["near"], "count": x["count"]} for x in pl.get("mechanics_left_out", [])],
               "stays_left_out": [{"near": x["near"], "count": x["count"]} for x in pl.get("stays_left_out", [])]} if pl else {}
 
@@ -326,8 +405,9 @@ def build(r):
         "fuel": fuel, "rules": rules, "season": {"note": se.get("note") or None, "history": years},
         "authorities": authorities, "hazards": hazards, "videos": videos,
         "image": credits.get(slug), "gaps": gaps, "counts": {"facts": facts},
+        "daylight": daylight_at(waypoints, r.get("country", "in")),
         "built": TODAY,
-    } | places
+    } | places | extras
 
 
 def main():

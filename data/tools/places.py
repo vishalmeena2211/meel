@@ -9,6 +9,8 @@ This asks it, once per route, for places within a corridor around the road, and 
              A town with more than TOWN_LIMIT is left out and named instead: a rider needs no list of Manali's hotels.
   mechanics  motorcycle repair, tyre shops, and the bike makers' own service centres. Not rentals, car dealers or
              car washes. A town with more than MECHANIC_TOWN_LIMIT is named instead, as for stays.
+  cash       ATMs and banks within CASH_RADIUS_M of the road. Cards and UPI often fail in the high valleys, so the
+             last cash before a long empty stretch matters as much as the last pump.
 
 Each place is named after the halt nearest it along the road, and kept only within NEAR_HALT_KM of one. Roads of
 LONGEST_KM or more, which run city to city, get no lists.
@@ -45,6 +47,7 @@ TODAY = time.strftime("%Y-%m-%d")
 
 STAY_RADIUS_M = 3000
 MECHANIC_RADIUS_M = 2000
+CASH_RADIUS_M = 2000
 MIN_CONFIDENCE = 0.5
 TOWN_LIMIT = 40
 MECHANIC_TOWN_LIMIT = 10
@@ -125,7 +128,8 @@ WHERE ST_DWITHIN(p.geometry, road.g, {STAY_RADIUS_M})
   AND (p.basic_category IN ({cats})
        OR REGEXP_CONTAINS(IFNULL(p.taxonomy.primary, ''),
                           r'guest_house|homestay|hostel|campground|campsite|motorcycle_repair|motorcycle_dealer|tire|automotive_repair|automotive_service')
-       OR p.basic_category IN ('automotive_service', 'vehicle_service'))"""
+       OR p.basic_category IN ('automotive_service', 'vehicle_service', 'atm', 'bank_or_credit_union')
+       OR REGEXP_CONTAINS(IFNULL(p.taxonomy.primary, ''), r'(^|_)atm($|_)|bank'))"""
 
 
 def tidy(name):
@@ -149,6 +153,19 @@ def mechanic_words(p):
         return "Showroom and service centre"
     if kind in ("automotive_repair", "automotive_service") or p["category"] in ("automotive_service", "vehicle_service"):
         return "Vehicle repair" if re.search(BIKE_WORDS, name) else None
+    return None
+
+
+def cash_words(p):
+    """"ATM" or "Bank", or None when the place is not somewhere to draw cash."""
+    kind = (p["kind"] or "").lower()
+    name = p["name"].lower()
+    if re.search(r"insurance|finance|loan|co-?operative society|microfinance|investment", name):
+        return None
+    if p["category"] == "atm" or re.search(r"(^|_)atm($|_)", kind) or re.search(r"\batm\b", name):
+        return "ATM"
+    if p["category"] == "bank_or_credit_union" or "bank" in kind:
+        return "Bank"
     return None
 
 
@@ -202,7 +219,7 @@ def places(args):
         line, total = rt["line"], rt["distance_km"]
         if total >= LONGEST_KM:
             save(path, {"slug": r["slug"], "fetched": TODAY, "overture_release": release, "stays": [], "stays_left_out": [],
-                        "mechanics": [], "mechanics_left_out": [], "bytes_billed": 0,
+                        "mechanics": [], "mechanics_left_out": [], "cash": [], "bytes_billed": 0,
                         "note": f"Not read: a road of {total:.0f} km runs city to city, with nothing to list between."})
             print(f"places {r['slug']}: skipped, {total:.0f} km")
             continue
@@ -223,30 +240,40 @@ def places(args):
             continue
 
         halts = [w for w in rt["waypoints"] if w.get("kind") == "place"] or rt["waypoints"]
-        stays, mechanics = [], []
+        stays, mechanics, cash = [], [], []
         for row in rows:
             p = {"id": row["id"], "name": tidy(row["name"] or ""), "category": row["category"], "kind": row["kind"],
                  "confidence": round(float(row["confidence"] or 0), 2), "lat": round(float(row["lat"]), 5),
                  "lon": round(float(row["lon"]), 5)}
             if not p["name"]:
                 continue
-            fixes = mechanic_words(p)
-            what = None if fixes else stay_words(p)
-            if not (fixes or what):
+            money = cash_words(p)
+            fixes = None if money else mechanic_words(p)
+            what = None if money or fixes else stay_words(p)
+            if not (money or fixes or what):
                 continue
             km, off = project(line, cum, (p["lat"], p["lon"]))
             km = round(km * scale, 1)
             # The halt nearest along the road, as fuel pumps are placed, not the nearest as the crow flies.
             halt = min(halts, key=lambda w: abs(w["km_from_start"] - km))
-            if abs(halt["km_from_start"] - km) > NEAR_HALT_KM:
+            # Cash counts wherever it is on the road: the stretches without it are measured from each ATM's own spot.
+            if abs(halt["km_from_start"] - km) > NEAR_HALT_KM and not money:
                 continue
-            p |= {"km_from_start": km, "off_road_m": round(off), "near": halt["name"]}
-            if fixes and off <= MECHANIC_RADIUS_M:
+            name = halt["name"]
+            if abs(halt["km_from_start"] - km) > NEAR_HALT_KM:
+                before = [w for w in halts if w["km_from_start"] <= km]
+                after = [w for w in halts if w["km_from_start"] >= km]
+                if before and after:
+                    name = f"Between {before[-1]['name']} and {after[0]['name']}"
+            p |= {"km_from_start": km, "off_road_m": round(off), "near": name}
+            if money and off <= CASH_RADIUS_M:
+                cash.append(p | {"what": money})
+            elif fixes and off <= MECHANIC_RADIUS_M:
                 mechanics.append(p | {"what": fixes})
             elif what and off <= STAY_RADIUS_M:
                 stays.append(p | {"what": what})
 
-        stays, mechanics = without_repeats(stays), without_repeats(mechanics)
+        stays, mechanics, cash = without_repeats(stays), without_repeats(mechanics), without_repeats(cash)
         stays, left_out = thinned(stays, TOWN_LIMIT)
         mechanics, mechanics_left_out = thinned(mechanics, MECHANIC_TOWN_LIMIT)
 
@@ -256,11 +283,12 @@ def places(args):
                     "mechanic_town_limit": MECHANIC_TOWN_LIMIT, "near_halt_km": NEAR_HALT_KM,
                     "stays": stays, "stays_left_out": left_out,
                     "mechanics": mechanics, "mechanics_left_out": mechanics_left_out,
+                    "cash_radius_m": CASH_RADIUS_M, "cash": cash,
                     "bytes_billed": billed,
                     "source": {"service": "BigQuery public dataset", "data": "Overture Maps Foundation, places theme",
                                "licence": "Community Data License Agreement, Permissive 2.0",
                                "url": "https://docs.overturemaps.org/attribution/"}})
-        print(f"places {r['slug']}: {len(stays)} stays, {len(mechanics)} mechanics; left out in "
+        print(f"places {r['slug']}: {len(stays)} stays, {len(mechanics)} mechanics, {len(cash)} cash points; left out in "
               f"{', '.join(x['near'] for x in left_out + mechanics_left_out) or 'no town'} · {billed / 1e6:.1f} MB")
 
 
