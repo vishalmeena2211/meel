@@ -489,8 +489,8 @@ export function DaylightTable({ daylight, months }: { daylight: Daylight[]; mont
   const shown = months && months.length > 0 ? months : [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
   if (daylight.length === 0) return null;
   const clock = (t: string) => {
-    const [h, m] = t.split(":").map(Number);
-    return `${((h ?? 0) % 12 || 12)}:${String(m ?? 0).padStart(2, "0")}`;
+    const [h = 0, m = 0] = t.split(":").map(Number);
+    return `${h % 12 || 12}:${String(m).padStart(2, "0")} ${h < 12 ? "am" : "pm"}`;
   };
   return (
     <section className="flex flex-col gap-2">
