@@ -3797,7 +3797,259 @@
   "Videos not collected."
  ],
  "counts": {
-  "facts": 88
+  "facts": 102
  },
- "built": "2026-10-17"
+ "built": "2026-11-08",
+ "mechanics": [
+  {
+   "id": "mechanic:hero-afrin-motors-bokakhat-kohora",
+   "name": "Hero Afrin Motors Bokakhat",
+   "village": "Kohora",
+   "fixes": "Showroom and service centre",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/26.58972/93.40324",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "mechanic:royal-enfield-showroom-achharsingh-royal-kamalabari",
+   "name": "Royal Enfield Showroom - Achharsingh Royal",
+   "village": "Kamalabari",
+   "fixes": "Showroom and service centre",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/26.95069/94.16608",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  }
+ ],
+ "stays": [
+  {
+   "id": "stay:bahona-college-boys-hostel-bcbh-nimati-ghat",
+   "name": "Bahona College Boys' Hostel -BCBH",
+   "village": "Nimati Ghat",
+   "notes": "Hostel",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/26.80975/94.24072",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:tsangpo-a-river-tourism-venture-nimati-ghat",
+   "name": "Tsangpo - A River Tourism Venture",
+   "village": "Nimati Ghat",
+   "notes": "Hotel",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/26.86144/94.23513",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:green-meadows-eco-camp-kamalabari",
+   "name": "Green Meadows Eco Camp",
+   "village": "Kamalabari",
+   "notes": "Campsite, 2.8 km off the road",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/26.92533/94.12948",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:prashaanti-log-hut-kamalabari-majuli-kamalabari",
+   "name": "Prashaanti log hut, kamalabari,Majuli",
+   "village": "Kamalabari",
+   "notes": "Lodging",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/26.9176/94.16169",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:ane-ruying-bamboo-cottage-kamalabari",
+   "name": "Ane Ruying Bamboo Cottage",
+   "village": "Kamalabari",
+   "notes": "Cottage, 1.9 km off the road",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/26.96315/94.162",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:ayang-okum-river-bank-bamboo-cottage-majuli-kamalabari",
+   "name": "Ayang Okum River Bank Bamboo Cottage, Majuli",
+   "village": "Kamalabari",
+   "notes": "Cottage, 1.9 km off the road",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/26.96315/94.162",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:la-lolat-eco-camp-kamalabari",
+   "name": "La Lolat Eco Camp",
+   "village": "Kamalabari",
+   "notes": "Campsite, 1.9 km off the road",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/26.96315/94.162",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:la-maison-de-ananda-kamalabari",
+   "name": "La Maison de Ananda",
+   "village": "Kamalabari",
+   "notes": "Bed and breakfast, 1.9 km off the road",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/26.96315/94.162",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:majuli-pushpa-bilash-bamboo-resort-kamalabari",
+   "name": "Majuli Pushpa Bilash Bamboo Resort",
+   "village": "Kamalabari",
+   "notes": "Resort, 1.1 km off the road",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/26.95532/94.17139",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:okegiga-homes-majuli-garamur-assam-kamalabari",
+   "name": "Okegiga Homes, Majuli - Garamur, Assam",
+   "village": "Kamalabari",
+   "notes": "Hotel, 1.9 km off the road",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/26.96315/94.162",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:sarangi-stay-kamalabari",
+   "name": "Sarangi Stay",
+   "village": "Kamalabari",
+   "notes": "Hotel, 1.9 km off the road",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/26.96315/94.162",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:ygdrasill-bamboo-cottage-kamalabari",
+   "name": "Ygdrasill Bamboo Cottage",
+   "village": "Kamalabari",
+   "notes": "Cottage, 2.2 km off the road",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/26.96549/94.15889",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  }
+ ],
+ "mechanics_left_out": [
+  {
+   "near": "Guwahati",
+   "count": 56
+  },
+  {
+   "near": "Jorhat",
+   "count": 23
+  }
+ ],
+ "stays_left_out": [
+  {
+   "near": "Guwahati",
+   "count": 772
+  },
+  {
+   "near": "Kohora",
+   "count": 115
+  },
+  {
+   "near": "Jorhat",
+   "count": 113
+  }
+ ]
 }

@@ -10843,7 +10843,870 @@
   "Videos: titles and channels were read from the video pages; filming dates and motorcycles are not confirmed unless the title states them."
  ],
  "counts": {
-  "facts": 94
+  "facts": 146
  },
- "built": "2026-10-17"
+ "built": "2026-11-08",
+ "mechanics": [
+  {
+   "id": "mechanic:himalayan-honda-shimla-shimla",
+   "name": "Himalayan Honda Shimla",
+   "village": "Shimla",
+   "fixes": "Vehicle repair",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/31.09524/77.17015",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "mechanic:apollo-tyres-auto-world-shimla",
+   "name": "Apollo Tyres - Auto World",
+   "village": "Shimla",
+   "fixes": "Vehicle repair",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/31.10873/77.20642",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "mechanic:jk-tyre-steel-wheels-city-wheels-shimla",
+   "name": "JK Tyre Steel Wheels, City Wheels",
+   "village": "Shimla",
+   "fixes": "Tyres and punctures",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/31.1093/77.21358",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "mechanic:jk-tyre-xpress-wheels-city-wheels-shimla",
+   "name": "JK Tyre Xpress Wheels, City Wheels",
+   "village": "Shimla",
+   "fixes": "Tyres and punctures",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/31.10932/77.2136",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "mechanic:jk-tyre-rampur",
+   "name": "JK Tyre",
+   "village": "Rampur",
+   "fixes": "Tyres and punctures, 1.7 km off the road",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/31.37268/77.61399",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "mechanic:jk-tyre-steel-wheels-sai-enterprises-rampur",
+   "name": "JK Tyre Steel Wheels, Sai Enterprises",
+   "village": "Rampur",
+   "fixes": "Tyres and punctures",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/31.45367/77.64705",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "mechanic:royal-enfield-showroom-rampur",
+   "name": "Royal Enfield Showroom",
+   "village": "Rampur",
+   "fixes": "Showroom and service centre",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/31.45404/77.65339",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "mechanic:apollo-tyres-monica-automobile-rampur",
+   "name": "Apollo Tyres - Monica Automobile",
+   "village": "Rampur",
+   "fixes": "Tyres and punctures",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/31.4596/77.66734",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "mechanic:two-wheel-himalayas-manali",
+   "name": "Two Wheel Himalayas",
+   "village": "Manali",
+   "fixes": "Vehicle repair",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/32.2462/77.18938",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "mechanic:himalayan-sentinel-manali",
+   "name": "Himalayan Sentinel",
+   "village": "Manali",
+   "fixes": "Motorcycle repair",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/32.23619/77.19462",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "mechanic:royal-enfield-kullu-manali-bnt-motors-manali",
+   "name": "Royal Enfield Kullu Manali - BNT Motors",
+   "village": "Manali",
+   "fixes": "Showroom and service centre",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/32.24096/77.18619",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "mechanic:yokohama-club-network-chamunda-motors-manali",
+   "name": "Yokohama Club Network - Chamunda Motors",
+   "village": "Manali",
+   "fixes": "Tyres and punctures, 1.2 km off the road",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/32.2327/77.18792",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  }
+ ],
+ "stays": [
+  {
+   "id": "stay:spillo-pooh",
+   "name": "Spillo",
+   "village": "Pooh",
+   "notes": "Lodging",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/31.65774/78.4431",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:river-view-home-stay-pooh",
+   "name": "River view Home Stay",
+   "village": "Pooh",
+   "notes": "Homestay",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/31.65885/78.44383",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:thakur-guest-house-pooh",
+   "name": "Thakur Guest House",
+   "village": "Pooh",
+   "notes": "Guest house",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/31.65889/78.4428",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:giri-camps-pooh",
+   "name": "Giri Camps",
+   "village": "Pooh",
+   "notes": "Campsite",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/31.73751/78.56323",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:om-guest-house-pooh",
+   "name": "Om Guest House",
+   "village": "Pooh",
+   "notes": "Guest house",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/31.76037/78.58408",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:nako-regency-nako",
+   "name": "Nako Regency",
+   "village": "Nako",
+   "notes": "Hotel",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/31.82119/78.64006",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:hotel-reo-purguil-nako",
+   "name": "Hotel Reo Purguil",
+   "village": "Nako",
+   "notes": "Hotel",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/31.8833/78.6167",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:zambala-hotel-nako-nako",
+   "name": "Zambala Hotel Nako",
+   "village": "Nako",
+   "notes": "Hotel",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/31.88094/78.62465",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:rikpa-home-stay-nako",
+   "name": "Rikpa Home Stay",
+   "village": "Nako",
+   "notes": "Homestay",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/31.88142/78.62568",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:lake-view-hotel-and-restaurant-nako",
+   "name": "Lake View Hotel and Restaurant",
+   "village": "Nako",
+   "notes": "Hotel",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/31.88046/78.62762",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:himalayan-paradise-hotel-nako-nako",
+   "name": "Himalayan Paradise Hotel - Nako",
+   "village": "Nako",
+   "notes": "Hotel",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/31.88084/78.62925",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:hotel-tiger-den-tabo-hp-india-nako",
+   "name": "Hotel Tiger Den Tabo HP India",
+   "village": "Nako",
+   "notes": "Hotel",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/31.90199/78.62026",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:dewachen-retreats-tabo",
+   "name": "Dewachen Retreats",
+   "village": "Tabo",
+   "notes": "Hotel",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/32.0863/78.42902",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:gakyi-khangsar-hotel-tabo",
+   "name": "Gakyi Khangsar hotel",
+   "village": "Tabo",
+   "notes": "Hotel",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/32.08288/78.41818",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:norbu-house-tabo-tabo",
+   "name": "Norbu House Tabo",
+   "village": "Tabo",
+   "notes": "Hotel",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/32.09439/78.38573",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:dewachen-retreat-tabo",
+   "name": "Dewachen Retreat",
+   "village": "Tabo",
+   "notes": "Hotel",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/32.0933/78.38569",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:tow-dhey-himalaya-hotel-tabo",
+   "name": "Tow Dhey Himalaya Hotel",
+   "village": "Tabo",
+   "notes": "Hotel",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/32.09315/78.38526",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:hotel-maitreya-regency-tabo",
+   "name": "Hotel Maitreya Regency",
+   "village": "Tabo",
+   "notes": "Hotel",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/32.09341/78.38415",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:hotel-maitreya-residency-tabo",
+   "name": "Hotel Maitreya Residency",
+   "village": "Tabo",
+   "notes": "Hotel",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/32.09353/78.38427",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:spiti-mud-huts-tabo-tabo",
+   "name": "Spiti Mud Huts Tabo",
+   "village": "Tabo",
+   "notes": "Hotel",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/32.09219/78.38207",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:hotel-khawa-karpo-tabo",
+   "name": "Hotel Khawa Karpo",
+   "village": "Tabo",
+   "notes": "Hotel",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/32.09449/78.38374",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:kunzominn-tabo-tabo",
+   "name": "kunzominn.tabo",
+   "village": "Tabo",
+   "notes": "Hotel",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/32.09386/78.38361",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:hotel-mentok-dumra-tabo",
+   "name": "Hotel Mentok Dumra",
+   "village": "Tabo",
+   "notes": "Hotel",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/32.0949/78.3858",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:go-chill-camps-cafe-spiti-valley-tabo",
+   "name": "Go Chill Camps & Cafe Spiti Valley",
+   "village": "Tabo",
+   "notes": "Campsite",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/32.0958/78.38491",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:the-spiti-villa-tabo-tabo",
+   "name": "The Spiti Villa Tabo",
+   "village": "Tabo",
+   "notes": "Resort",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/32.0958/78.38491",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:zamling-donkhang-hotel-tabo-tabo",
+   "name": "Zamling Donkhang Hotel Tabo",
+   "village": "Tabo",
+   "notes": "Hotel",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/32.0958/78.38491",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:sonam-hotel-and-guest-house-tabo",
+   "name": "Sonam Hotel and Guest House",
+   "village": "Tabo",
+   "notes": "Guest house",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/32.09438/78.38281",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:namsa-kieeta-tabo",
+   "name": "Namsa kieeta",
+   "village": "Tabo",
+   "notes": "Hotel",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/32.09511/78.37885",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:spiti-sojourn-losar",
+   "name": "Spiti Sojourn",
+   "village": "Losar",
+   "notes": "Homestay",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/32.42518/77.93839",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:the-nomad-s-cottage-losar-spiti-valley-losar",
+   "name": "The Nomad's Cottage, Losar / Spiti valley",
+   "village": "Losar",
+   "notes": "Cottage",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/32.43866/77.7568",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:hotel-samsong-losar",
+   "name": "Hotel samsong",
+   "village": "Losar",
+   "notes": "Hotel",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/32.43786/77.75013",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:himalaya-gramphu",
+   "name": "Himalaya",
+   "village": "Gramphu",
+   "notes": "Resort",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/32.31762/77.3711",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:bulevar-gramphu",
+   "name": "Bulevar",
+   "village": "Gramphu",
+   "notes": "Resort",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/32.40882/77.24416",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:chandra-valley-camping-koksar-gramphu",
+   "name": "Chandra Valley Camping Koksar",
+   "village": "Gramphu",
+   "notes": "Campsite",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/32.41429/77.23505",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:keshing-homestay-camps-gramphu",
+   "name": "Keshing Homestay & Camps",
+   "village": "Gramphu",
+   "notes": "Homestay",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/32.4144/77.23519",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:koksar-valley-homestay-gramphu",
+   "name": "Koksar Valley Homestay",
+   "village": "Gramphu",
+   "notes": "Homestay",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/32.41473/77.23463",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:sher-e-punjab-camping-foods-himachal-gramphu",
+   "name": "Sher-E-Punjab Camping & Foods Himachal",
+   "village": "Gramphu",
+   "notes": "Campsite",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/32.41473/77.23463",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:cypress-homestay-gramphu",
+   "name": "Cypress Homestay",
+   "village": "Gramphu",
+   "notes": "Homestay, 1.5 km off the road",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/32.4508/77.15604",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:devallaya-inn-lahaul-gramphu",
+   "name": "Devallaya Inn Lahaul",
+   "village": "Gramphu",
+   "notes": "Hotel, 2.0 km off the road",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/32.45605/77.1551",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:wwf-lahaul-gramphu",
+   "name": "WWF Lahaul",
+   "village": "Gramphu",
+   "notes": "Lodging, 1.0 km off the road",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/32.4478/77.1594",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  }
+ ],
+ "mechanics_left_out": [],
+ "stays_left_out": [
+  {
+   "near": "Manali",
+   "count": 1517
+  },
+  {
+   "near": "Shimla",
+   "count": 811
+  },
+  {
+   "near": "Kaza",
+   "count": 69
+  },
+  {
+   "near": "Reckong Peo",
+   "count": 67
+  },
+  {
+   "near": "Narkanda",
+   "count": 67
+  },
+  {
+   "near": "Rampur",
+   "count": 49
+  }
+ ]
 }

@@ -9635,7 +9635,951 @@
   "Videos not collected."
  ],
  "counts": {
-  "facts": 83
+  "facts": 141
  },
- "built": "2026-10-17"
+ "built": "2026-11-08",
+ "mechanics": [
+  {
+   "id": "mechanic:ceat-shoppe-new-gold-star-tyres-kohima",
+   "name": "CEAT Shoppe, New Gold Star Tyres",
+   "village": "Kohima",
+   "fixes": "Tyres and punctures",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/25.68374/94.10482",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "mechanic:royal-enfield-kohima",
+   "name": "Royal Enfield",
+   "village": "Kohima",
+   "fixes": "Showroom and service centre",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/25.69068/94.10064",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  }
+ ],
+ "stays": [
+  {
+   "id": "stay:the-track-ubc-kohima",
+   "name": "The Track UBC",
+   "village": "Kohima",
+   "notes": "Campsite, 1.3 km off the road",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/25.74062/94.03409",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:lake-view-hostel-kohima",
+   "name": "Lake View Hostel",
+   "village": "Kohima",
+   "notes": "Hostel, 1.2 km off the road",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/25.66388/94.076",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:crescent-international-hotel-kohima",
+   "name": "Crescent International Hotel",
+   "village": "Kohima",
+   "notes": "Hotel",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/25.66286/94.09307",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:the-blue-bayou-kohima",
+   "name": "The Blue Bayou",
+   "village": "Kohima",
+   "notes": "Hotel",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/25.66707/94.1039",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:hotel-lavisto-kohima",
+   "name": "Hotel Lavisto",
+   "village": "Kohima",
+   "notes": "Hotel",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/25.66692/94.10354",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:2k-hotel-kohima",
+   "name": "2K Hotel",
+   "village": "Kohima",
+   "notes": "Hotel",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/25.66477/94.09894",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:the-heritage-kohima",
+   "name": "The Heritage",
+   "village": "Kohima",
+   "notes": "Hotel",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/25.66406/94.09967",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:hotel-ura-kohima",
+   "name": "Hotel URA",
+   "village": "Kohima",
+   "notes": "Hotel",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/25.66139/94.1002",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:la-colline-resort-kohima",
+   "name": "La Colline Resort",
+   "village": "Kohima",
+   "notes": "Resort",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/25.65675/94.09305",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:view-point-hotel-kohima",
+   "name": "View Point Hotel",
+   "village": "Kohima",
+   "notes": "Hotel",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/25.65847/94.09869",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:hotel-japfu-kohima",
+   "name": "Hotel Japfu",
+   "village": "Kohima",
+   "notes": "Hotel",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/25.65762/94.09925",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:the-guardian-kohima-kohima",
+   "name": "The Guardian kohima",
+   "village": "Kohima",
+   "notes": "Hotel",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/25.65758/94.10016",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:grandeur-hotel-kohima",
+   "name": "Grandeur Hotel",
+   "village": "Kohima",
+   "notes": "Hotel",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/25.65607/94.09901",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:the-penthouse-bed-breakfast-kohima",
+   "name": "The Penthouse - Bed & breakfast",
+   "village": "Kohima",
+   "notes": "Bed and breakfast",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/25.65663/94.0956",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:cimorb-hotel-kohima",
+   "name": "Cimorb Hotel",
+   "village": "Kohima",
+   "notes": "Hotel",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/25.65584/94.09546",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:imchen-guest-house-kohima",
+   "name": "Imchen Guest House",
+   "village": "Kohima",
+   "notes": "Guest house",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/25.6517/94.09837",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:hotel-millennium-kohima",
+   "name": "Hotel Millennium",
+   "village": "Kohima",
+   "notes": "Hotel",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/25.64985/94.10247",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:doiphana-girls-hostel-kohima",
+   "name": "Doiphana Girls Hostel",
+   "village": "Kohima",
+   "notes": "Hostel",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/25.65197/94.10279",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:the-palm-guest-house-kohima",
+   "name": "The Palm Guest House",
+   "village": "Kohima",
+   "notes": "Guest house",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/25.65302/94.1131",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:niraamaya-retreats-kohima",
+   "name": "Niraamaya Retreats",
+   "village": "Kohima",
+   "notes": "Hotel",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/25.64833/94.10397",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:rhododendron-resort-viswema",
+   "name": "Rhododendron Resort",
+   "village": "Viswema",
+   "notes": "Resort",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/25.62174/94.10988",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:lalhou-s-homestay-viswema",
+   "name": "Lalhou's Homestay",
+   "village": "Viswema",
+   "notes": "Homestay",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/25.61385/94.11628",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:hornbill-view-cottages-viswema",
+   "name": "Hornbill view Cottages",
+   "village": "Viswema",
+   "notes": "Cottage",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/25.61247/94.11262",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:native-stories-viswema",
+   "name": "Native Stories",
+   "village": "Viswema",
+   "notes": "Hotel",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/25.60466/94.11433",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:abi-homestay-kigwema-viswema",
+   "name": "ABI Homestay kigwema",
+   "village": "Viswema",
+   "notes": "Homestay, 1.3 km off the road",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/25.61082/94.13408",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:alder-retreat-viswema",
+   "name": "Alder Retreat",
+   "village": "Viswema",
+   "notes": "Hotel, 1.0 km off the road",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/25.60091/94.13553",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:sere-s-resort-viswema",
+   "name": "Sere's resort",
+   "village": "Viswema",
+   "notes": "Resort",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/25.59467/94.12485",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:campsite-yedikha-viswema",
+   "name": "Campsite Yedikha",
+   "village": "Viswema",
+   "notes": "Campsite",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/25.58713/94.12784",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:camp-easy-viswema",
+   "name": "Camp Easy",
+   "village": "Viswema",
+   "notes": "Campsite",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/25.5899/94.12189",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:morung-lodge-kohima",
+   "name": "Morung Lodge",
+   "village": "Kohima",
+   "notes": "Lodging",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/25.66856/94.10613",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:pine-hotel-kohima",
+   "name": "Pine Hotel",
+   "village": "Kohima",
+   "notes": "Hotel",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/25.6688/94.10609",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:hotel-legacy-kohima",
+   "name": "Hotel Legacy",
+   "village": "Kohima",
+   "notes": "Hotel, 1.1 km off the road",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/25.6667/94.1167",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:old-mla-hostel-kohima",
+   "name": "Old MLA Hostel",
+   "village": "Kohima",
+   "notes": "Hostel",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/25.6695/94.10692",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:the-concord-hotel-kohima",
+   "name": "The Concord Hotel",
+   "village": "Kohima",
+   "notes": "Hotel",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/25.67125/94.10679",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:capital-hotel-kohima",
+   "name": "Capital Hotel",
+   "village": "Kohima",
+   "notes": "Hotel",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/25.67248/94.10751",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:galaxy-hotel-kohima",
+   "name": "Galaxy Hotel",
+   "village": "Kohima",
+   "notes": "Hotel",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/25.67223/94.10738",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:crescent-international-hotel-restaurant-kohima",
+   "name": "Crescent International Hotel & Restaurant",
+   "village": "Kohima",
+   "notes": "Hotel",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/25.67291/94.10758",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:jn-hotel-kohima",
+   "name": "Jn Hotel",
+   "village": "Kohima",
+   "notes": "Hotel",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/25.67301/94.10912",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:medom-s-bnb-kohima",
+   "name": "Medom's BnB",
+   "village": "Kohima",
+   "notes": "Bed and breakfast",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/25.67383/94.11064",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:ecostay-hostel-kohima",
+   "name": "EcoStay Hostel",
+   "village": "Kohima",
+   "notes": "Hostel",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/25.67678/94.10938",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:razhu-pru-kohima",
+   "name": "Razhu Pru",
+   "village": "Kohima",
+   "notes": "Hotel",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/25.67626/94.11167",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:the-savi-cabins-kohima",
+   "name": "The Savi Cabins",
+   "village": "Kohima",
+   "notes": "Lodging",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/25.67878/94.1185",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:dzukou-retreat-kohima",
+   "name": "Dzukou Retreat",
+   "village": "Kohima",
+   "notes": "Lodging",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/25.68353/94.10555",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:de-oriental-grand-kohima",
+   "name": "de Oriental Grand",
+   "village": "Kohima",
+   "notes": "Hotel",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/25.68482/94.10303",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:vivid-restaurant-and-lodging-kohima",
+   "name": "VIVID Restaurant and Lodging",
+   "village": "Kohima",
+   "notes": "Hotel",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/25.68824/94.10224",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:hotel-ariel-kohima",
+   "name": "Hotel Ariel",
+   "village": "Kohima",
+   "notes": "Hotel",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/25.6875/94.10093",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:hotel-vivor-kohima",
+   "name": "Hotel Vivor",
+   "village": "Kohima",
+   "notes": "Hotel",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/25.69808/94.09799",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:jentisang-resort-mokokchung",
+   "name": "Jentisang Resort",
+   "village": "Mokokchung",
+   "notes": "Resort",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/26.29705/94.5119",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:whispering-winds-mokokchung",
+   "name": "Whispering Winds",
+   "village": "Mokokchung",
+   "notes": "Hotel",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/26.32071/94.51444",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:hotel-towncentre-mokokchung",
+   "name": "Hotel Towncentre",
+   "village": "Mokokchung",
+   "notes": "Hotel",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/26.32326/94.51372",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:marvel-guest-house-mokokchung",
+   "name": "Marvel Guest House",
+   "village": "Mokokchung",
+   "notes": "Guest house",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/26.32326/94.51372",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:hotel-metsuben-mokokchung",
+   "name": "Hotel Metsuben",
+   "village": "Mokokchung",
+   "notes": "Hotel",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/26.32478/94.52489",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:eliseus-co-educational-hostel-mokokchung",
+   "name": "Eliseus Co-educational Hostel",
+   "village": "Mokokchung",
+   "notes": "Hostel",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/26.3333/94.5333",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:vinngoi-mon",
+   "name": "Vinngoi",
+   "village": "Mon",
+   "notes": "Hotel",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/26.71824/95.0213",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:walo-government-guest-house-mon",
+   "name": "Walo Government Guest House",
+   "village": "Mon",
+   "notes": "Guest house",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/26.72323/95.03062",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:helsa-cottage-mon",
+   "name": "Helsa Cottage",
+   "village": "Mon",
+   "notes": "Cottage",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/26.72564/95.02966",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  }
+ ],
+ "mechanics_left_out": [
+  {
+   "near": "Dimapur",
+   "count": 14
+  }
+ ],
+ "stays_left_out": [
+  {
+   "near": "Dimapur",
+   "count": 62
+  }
+ ]
 }

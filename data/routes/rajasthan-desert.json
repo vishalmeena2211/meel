@@ -3356,7 +3356,687 @@
   "Videos: the pages give upload dates, not filming dates, so 'filmed' is filled only where the title names a date. Uploads, in order: 2024-12, 2020-02."
  ],
  "counts": {
-  "facts": 118
+  "facts": 159
  },
- "built": "2026-10-17"
+ "built": "2026-11-08",
+ "mechanics": [
+  {
+   "id": "mechanic:shell-advance-honda-service-center-jodhpur",
+   "name": "Shell Advance - Honda Service Center",
+   "village": "Jodhpur",
+   "fixes": "Vehicle repair, 1.9 km off the road",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/26.27694/73.01717",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "mechanic:mobil-india-mobil-bike-care-sonu-auto-repair-jodhpur",
+   "name": "Mobil India - Mobil Bike Care, SONU AUTO REPAIR",
+   "village": "Jodhpur",
+   "fixes": "Vehicle repair, 1.7 km off the road",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/26.29538/73.02005",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "mechanic:mobil-india-mobil-bike-care-jodhpur",
+   "name": "Mobil India - Mobil Bike Care",
+   "village": "Jodhpur",
+   "fixes": "Vehicle repair",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/26.30273/73.04798",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "mechanic:tvs-sunita-motors-jodhpur",
+   "name": "TVS - Sunita Motors",
+   "village": "Jodhpur",
+   "fixes": "Showroom and service centre",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/26.30454/73.03829",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "mechanic:bjs-jodhpur",
+   "name": "Bjs",
+   "village": "Jodhpur",
+   "fixes": "Tyres and punctures, 1.8 km off the road",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/26.30541/73.05621",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "mechanic:jai-parihar-honda-jodhpur",
+   "name": "Jai Parihar Honda",
+   "village": "Jodhpur",
+   "fixes": "Showroom and service centre, 1.4 km off the road",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/26.32031/73.059",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "mechanic:jk-truck-wheels-power-wheel-jodhpur",
+   "name": "JK Truck Wheels, Power wheel",
+   "village": "Jodhpur",
+   "fixes": "Tyres and punctures",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/26.33941/73.04945",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "mechanic:pranika-tvs-jodhpur",
+   "name": "Pranika TVS",
+   "village": "Jodhpur",
+   "fixes": "Showroom and service centre, 1.2 km off the road",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/26.31874/73.0002",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "mechanic:royal-enfield-pokhran-devrath-motors-pokhran",
+   "name": "Royal Enfield Pokhran-Devrath Motors",
+   "village": "Pokhran",
+   "fixes": "Showroom and service centre",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/26.91862/71.92173",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "mechanic:royal-enfield-showroom-devrath-motors-private-limited-pokhra",
+   "name": "Royal Enfield Showroom - Devrath Motors Private Limited",
+   "village": "Pokhran",
+   "fixes": "Showroom and service centre",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/26.91849/71.92147",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "mechanic:bridgestone-select-swastik-tyres-and-service-centre-jaisalme",
+   "name": "Bridgestone Select - Swastik Tyres and Service Centre",
+   "village": "Jaisalmer",
+   "fixes": "Tyres and punctures",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/26.91273/70.93946",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "mechanic:honda-sakshi-honda-two-wheeler-service-centre-jaisalmer",
+   "name": "Honda Sakshi Honda Two Wheeler Service Centre",
+   "village": "Jaisalmer",
+   "fixes": "Vehicle repair",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/26.91169/70.9187",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "mechanic:m-s-shri-ram-motors-hero-motocorp-jaisalmer",
+   "name": "M/S Shri Ram Motors - Hero MotoCorp",
+   "village": "Jaisalmer",
+   "fixes": "Showroom and service centre",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/26.90964/70.91799",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "mechanic:rs-mateshwari-tyres-jaisalmer-jaisalmer",
+   "name": "RS Mateshwari Tyres Jaisalmer",
+   "village": "Jaisalmer",
+   "fixes": "Vehicle repair",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/26.91009/70.91055",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "mechanic:royal-enfield-showroom-devrath-motors-private-limited-jaisal",
+   "name": "Royal Enfield Showroom - Devrath Motors Private Limited",
+   "village": "Jaisalmer",
+   "fixes": "Showroom and service centre",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/26.90792/70.90846",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "mechanic:shree-jawan-auto-parts-welding-works-jaisalmer",
+   "name": "Shree Jawan Auto Parts & Welding Works",
+   "village": "Jaisalmer",
+   "fixes": "Vehicle repair",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/26.9165/70.91596",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "mechanic:shri-ram-motors-hero-motocorp-jaisalmer",
+   "name": "Shri Ram Motors - Hero MotoCorp",
+   "village": "Jaisalmer",
+   "fixes": "Vehicle repair",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/26.92/70.9",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "mechanic:suzuki-motorcycle-sumit-motors-llp-jodhpur-jaisalmer-jaisalm",
+   "name": "Suzuki Motorcycle (Sumit Motors Llp, Jodhpur, Jaisalmer)",
+   "village": "Jaisalmer",
+   "fixes": "Showroom and service centre",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/26.91169/70.9106",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  }
+ ],
+ "stays": [
+  {
+   "id": "stay:hotel-royal-park-pokhran",
+   "name": "HOTEL ROYAL PARk",
+   "village": "Pokhran",
+   "notes": "Hotel",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/26.91776/71.92711",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:hotel-marudhara-restaurant-pokaran-pokhran",
+   "name": "Hotel marudhara restaurant pokaran",
+   "village": "Pokhran",
+   "notes": "Hotel",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/26.9203/71.92316",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:patel-bhawan-ramdevra-pokhran",
+   "name": "Patel bhawan, Ramdevra",
+   "village": "Pokhran",
+   "notes": "Lodging",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/26.9203/71.92316",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:pokran-desert-resort-pokhran",
+   "name": "Pokran desert resort",
+   "village": "Pokhran",
+   "notes": "Resort",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/26.92029/71.92316",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:hotel-ganga-palace-pokhran",
+   "name": "Hotel Ganga Palace",
+   "village": "Pokhran",
+   "notes": "Hotel",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/26.92157/71.92128",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:hotel-sunrise-palace-pokhran",
+   "name": "Hotel Sunrise Palace",
+   "village": "Pokhran",
+   "notes": "Hotel",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/26.92241/71.92049",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:madhav-hostel-pg-pokaran-pokhran",
+   "name": "Madhav Hostel & PG pokaran",
+   "village": "Pokhran",
+   "notes": "Hostel",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/26.91332/71.91913",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:the-fort-pokaran-pokhran",
+   "name": "The Fort Pokaran",
+   "village": "Pokhran",
+   "notes": "Hotel",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/26.92091/71.91517",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:hotel-sawagatam-pokhran",
+   "name": "Hotel Sawagatam",
+   "village": "Pokhran",
+   "notes": "Hotel",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/26.92374/71.91907",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:hotel-suraj-palace-pokhran",
+   "name": "Hotel Suraj Palace",
+   "village": "Pokhran",
+   "notes": "Hotel",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/26.92668/71.91983",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:hotel-krishna-and-restaurant-pokhran",
+   "name": "Hotel Krishna and Restaurant",
+   "village": "Pokhran",
+   "notes": "Hotel",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/26.93198/71.90775",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:hotel-golden-palace-and-restaurant-pokhran",
+   "name": "Hotel Golden Palace and Restaurant",
+   "village": "Pokhran",
+   "notes": "Hotel, 1.8 km off the road",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/26.9471/71.89772",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:hotel-gomat-heritage-and-restaurant-pokhran",
+   "name": "Hotel Gomat Heritage and Restaurant",
+   "village": "Pokhran",
+   "notes": "Hotel, 1.9 km off the road",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/26.94783/71.89771",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:mehran-gadh-hotel-pokhran",
+   "name": "Mehran Gadh Hotel",
+   "village": "Pokhran",
+   "notes": "Hotel, 1.6 km off the road",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/26.94582/71.89819",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:rtdc-hotel-pokaran-godawan-midway-pokhran",
+   "name": "RTDC Hotel Pokaran Godawan Midway",
+   "village": "Pokhran",
+   "notes": "Hotel",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/26.93213/71.8986",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:trilochana-hotel-restaurant-pokhran",
+   "name": "Trilochana Hotel & Restaurant",
+   "village": "Pokhran",
+   "notes": "Hotel",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/26.93069/71.88531",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:hotel-shakti-palace-pokhran",
+   "name": "Hotel Shakti Palace",
+   "village": "Pokhran",
+   "notes": "Hotel",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/26.93174/71.87996",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:new-rajasthan-hotel-pokhran",
+   "name": "New Rajasthan Hotel",
+   "village": "Pokhran",
+   "notes": "Hotel",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/26.93094/71.8791",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:highway-konig-hotel-n-restaurant-pokhran",
+   "name": "Highway Konig Hotel N Restaurant",
+   "village": "Pokhran",
+   "notes": "Hotel",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/26.97134/71.76066",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:hotel-raj-restaurant-pokhran",
+   "name": "Hotel Raj & Restaurant",
+   "village": "Pokhran",
+   "notes": "Hotel",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/26.97292/71.75825",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:maya-hotel-ramgarh-jaisalmer-rajasthan-ramgarh",
+   "name": "Maya Hotel Ramgarh Jaisalmer Rajasthan",
+   "village": "Ramgarh",
+   "notes": "Hotel",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/27.37041/70.49706",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:himmatgarh-palace-tanot",
+   "name": "Himmatgarh Palace",
+   "village": "Tanot",
+   "notes": "Hotel",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/27.62704/70.45228",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:tanot-rai-guest-hall-tanot",
+   "name": "Tanot Rai Guest Hall",
+   "village": "Tanot",
+   "notes": "Hotel",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/27.79491/70.35258",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  }
+ ],
+ "mechanics_left_out": [
+  {
+   "near": "Jaipur",
+   "count": 79
+  }
+ ],
+ "stays_left_out": [
+  {
+   "near": "Jaipur",
+   "count": 1541
+  },
+  {
+   "near": "Jaisalmer",
+   "count": 589
+  },
+  {
+   "near": "Jodhpur",
+   "count": 464
+  }
+ ]
 }

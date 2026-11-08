@@ -277,8 +277,41 @@ def build(r):
                 "stops": fu.get("stops", 0), "longest_gaps": fu.get("longest_gaps", []),
                 "note": fu.get("note"), "fetched": fu.get("fetched")}
 
+    # ── stays and mechanics, from Overture's list of places (places.py) ──────
+    # A seed list for riders to confirm, like the pumps from the open map. No phone: Meel shows one only when its
+    # owner agreed to it, and a map listing is not that.
+    pl = load(os.path.join(DATA, "computed", "places", slug + ".json"), {}) or {}
+    used_ids = set()
+
+    def unique(base):
+        fact_id, n = base, 2
+        while fact_id in used_ids:
+            fact_id, n = f"{base}-{n}", n + 1
+        used_ids.add(fact_id)
+        return fact_id
+
+    def listed(p):
+        return {"url": f"https://explore.overturemaps.org/#17/{p['lat']}/{p['lon']}", "title": "Overture Maps, places",
+                "kind": "map", "opened": True, "source_date": pl.get("overture_release"),
+                "accessed": pl.get("fetched") or TODAY}
+
+    def what(p):
+        off = p.get("off_road_m") or 0
+        return p["what"] + (f", {off / 1000:.1f} km off the road" if off >= 1000 else "")
+
+    mechanics = [{"id": unique("mechanic:" + slugify(f"{p['name']} {p['near']}")), "name": p["name"], "village": p["near"],
+                  "fixes": what(p), "phone": None, "phone_agreed": False, "source": listed(p)}
+                 for p in pl.get("mechanics", [])]
+    stays = [{"id": unique("stay:" + slugify(f"{p['name']} {p['near']}")), "name": p["name"], "village": p["near"],
+              "notes": what(p), "phone": None, "phone_agreed": False, "source": listed(p)}
+             for p in pl.get("stays", [])]
+    places = {"mechanics": mechanics, "stays": stays,
+              "mechanics_left_out": [{"near": x["near"], "count": x["count"]} for x in pl.get("mechanics_left_out", [])],
+              "stays_left_out": [{"near": x["near"], "count": x["count"]} for x in pl.get("stays_left_out", [])]} if pl else {}
+
     facts = len(rules) + len(years) + len(authorities) + len(hazards) + len(fuel["pumps"]) + len(videos) \
-        + len(waypoints) + len(stretches) + sum(1 for k in ("highway", "usual_days", "usual_season", "highest_point") if header.get(k))
+        + len(waypoints) + len(stretches) + sum(1 for k in ("highway", "usual_days", "usual_season", "highest_point") if header.get(k)) \
+        + len(mechanics) + len(stays)
     written = bool(rt) and (len(rules) + len(authorities) + len(hazards) > 0 or fuel["listed"])
     one_line = h.get("one_line") if isinstance(h.get("one_line"), str) else None
 
@@ -291,7 +324,7 @@ def build(r):
         "authorities": authorities, "hazards": hazards, "videos": videos,
         "image": credits.get(slug), "gaps": gaps, "counts": {"facts": facts},
         "built": TODAY,
-    }
+    } | places
 
 
 def main():

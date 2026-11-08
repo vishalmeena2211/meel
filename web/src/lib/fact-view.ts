@@ -432,7 +432,10 @@ export function factViews(route: Route, confirmations: Confirmation[], kinds: Fa
       meta: m.phone && m.phone_agreed ? `Phone, given with the shop’s agreement: ${m.phone}` : null,
       source: m.source,
       noun: "shop",
-      unchecked: "A rider named this shop. Nobody has confirmed it since.",
+      unchecked:
+        m.source?.kind === "map"
+          ? "No rider has confirmed this shop. It is listed on a public map, which is not the same as being open."
+          : "A rider named this shop. Nobody has confirmed it since.",
       choices: "shop",
       question: "is still open?",
     }),
@@ -449,7 +452,10 @@ export function factViews(route: Route, confirmations: Confirmation[], kinds: Fa
       source: s.source,
       verb: "Stayed and confirmed",
       noun: "stay",
-      unchecked: "A rider named this place. Nobody has confirmed it since.",
+      unchecked:
+        s.source?.kind === "map"
+          ? "No rider has confirmed this place. It is listed on a public map, which is not the same as being open."
+          : "A rider named this place. Nobody has confirmed it since.",
       choices: "stay",
       question: "is still open?",
     }),

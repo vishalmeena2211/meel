@@ -9566,7 +9566,546 @@
   "Some stretch distances are doubtful. The open map may not know the road riders use, so the routing service went the long way round."
  ],
  "counts": {
-  "facts": 71
+  "facts": 104
  },
- "built": "2026-10-17"
+ "built": "2026-11-08",
+ "mechanics": [
+  {
+   "id": "mechanic:inline-4-lo-motore-leh",
+   "name": "#inline 4_lo_motore",
+   "village": "Leh",
+   "fixes": "Motorcycle repair",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/34.16382/77.5813",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "mechanic:juma-automobiles-leh",
+   "name": "Juma Automobiles",
+   "village": "Leh",
+   "fixes": "Motorcycle repair",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/34.16939/77.58357",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "mechanic:ladakh-f2-motors-leh",
+   "name": "Ladakh F2 Motors",
+   "village": "Leh",
+   "fixes": "Motorcycle repair",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/34.16424/77.5832",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "mechanic:royal-enfield-showroom-leh",
+   "name": "Royal Enfield Showroom",
+   "village": "Leh",
+   "fixes": "Showroom and service centre",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/34.14308/77.58411",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "mechanic:yokohama-club-network-chamunda-trading-company-skalzalgling-",
+   "name": "Yokohama Club Network - Chamunda Trading Company, Skalzalgling",
+   "village": "Leh",
+   "fixes": "Tyres and punctures",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/34.14734/77.57072",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "mechanic:ktm-husqvarna-leh-leh",
+   "name": "KTM Husqvarna Leh",
+   "village": "Leh",
+   "fixes": "Showroom and service centre",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/34.1608/77.5768",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  }
+ ],
+ "stays": [
+  {
+   "id": "stay:amir-homestay-ladakh-karu",
+   "name": "Amir Homestay Ladakh",
+   "village": "Karu",
+   "notes": "Homestay",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/34.03589/77.65223",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:chamba-camp-thiksey-karu",
+   "name": "Chamba Camp Thiksey",
+   "village": "Karu",
+   "notes": "Campsite, 1.8 km off the road",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/34.04422/77.67066",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:hotel-galwan-palace-karu",
+   "name": "Hotel Galwan Palace",
+   "village": "Karu",
+   "notes": "Resort, 1.0 km off the road",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/34.02796/77.67907",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:nine-palace-guest-house-karu",
+   "name": "Nine Palace Guest House",
+   "village": "Karu",
+   "notes": "Guest house",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/33.92508/77.73476",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:hotel-pangong-residency-durbuk",
+   "name": "Hotel Pangong Residency",
+   "village": "Durbuk",
+   "notes": "Hotel",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/34.03629/78.16729",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:pangong-inn-spangmik",
+   "name": "Pangong Inn",
+   "village": "Spangmik",
+   "notes": "Hotel",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/33.96398/78.4209",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:the-regal-camp-spangmik",
+   "name": "The Regal Camp",
+   "village": "Spangmik",
+   "notes": "Campsite",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/33.96166/78.42251",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:mentsel-cottage-and-restaurant-spangmik",
+   "name": "Mentsel Cottage and Restaurant",
+   "village": "Spangmik",
+   "notes": "Cottage",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/33.95789/78.42699",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:snow-pine-cottage-pangong-spangmik",
+   "name": "Snow Pine Cottage - Pangong",
+   "village": "Spangmik",
+   "notes": "Cottage",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/33.95784/78.43016",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:high-lake-pangong-camp-retreat-and-cottages-spangmik",
+   "name": "High Lake Pangong - Camp, Retreat And Cottages",
+   "village": "Spangmik",
+   "notes": "Campsite",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/33.92965/78.445",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:world-attic-camp-spangmik",
+   "name": "World Attic Camp",
+   "village": "Spangmik",
+   "notes": "Campsite",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/33.93063/78.44993",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:polaris-cottage-pangong-spangmik",
+   "name": "Polaris Cottage Pangong",
+   "village": "Spangmik",
+   "notes": "Cottage",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/33.91453/78.45284",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:tso-camp-spangmik",
+   "name": "Tso Camp",
+   "village": "Spangmik",
+   "notes": "Campsite",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/33.91141/78.4542",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:pangong-vista-resort-spangmik",
+   "name": "Pangong Vista Resort",
+   "village": "Spangmik",
+   "notes": "Resort",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/33.90957/78.45911",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:pangong-panorama-resort-spangmik",
+   "name": "Pangong Panorama Resort",
+   "village": "Spangmik",
+   "notes": "Resort",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/33.90688/78.45761",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:pangong-retreat-camp-spangmik",
+   "name": "Pangong Retreat Camp",
+   "village": "Spangmik",
+   "notes": "Campsite",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/33.90569/78.4556",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:mystic-pangong-spangmik",
+   "name": "Mystic Pangong",
+   "village": "Spangmik",
+   "notes": "Lodging",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/33.90765/78.46055",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:pangong-delight-camp-spangmik",
+   "name": "Pangong Delight Camp",
+   "village": "Spangmik",
+   "notes": "Campsite",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/33.90889/78.46207",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:pangong-lake-view-camp-spangmik",
+   "name": "Pangong Lake View Camp",
+   "village": "Spangmik",
+   "notes": "Campsite",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/33.90874/78.46184",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:ser-bhum-tso-resort-pangong-spangmik",
+   "name": "Ser Bhum Tso Resort Pangong",
+   "village": "Spangmik",
+   "notes": "Resort, 1.1 km off the road",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/33.9167/78.4667",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:watermark-camp-pangong-spangmik",
+   "name": "Watermark Camp Pangong",
+   "village": "Spangmik",
+   "notes": "Campsite, 1.1 km off the road",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/33.9167/78.4667",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:crystal-lake-resort-spangmik",
+   "name": "Crystal Lake Resort",
+   "village": "Spangmik",
+   "notes": "Resort",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/33.8616/78.52732",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:wonderland-camp-pangong-spangmik",
+   "name": "Wonderland Camp, Pangong",
+   "village": "Spangmik",
+   "notes": "Campsite",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/33.86181/78.52624",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:alpine-huts-pangong-spangmik",
+   "name": "Alpine Huts Pangong",
+   "village": "Spangmik",
+   "notes": "Hotel",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/33.84305/78.56049",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:horizon-ladakh-camp-spangmik",
+   "name": "Horizon Ladakh Camp",
+   "village": "Spangmik",
+   "notes": "Campsite",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/33.80567/78.5884",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:the-horizon-pangong-spangmik",
+   "name": "The Horizon Pangong",
+   "village": "Spangmik",
+   "notes": "Resort",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/33.80567/78.5884",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:mentsel-merak-cottage-pangong-lake-spangmik",
+   "name": "Mentsel Merak Cottage Pangong Lake",
+   "village": "Spangmik",
+   "notes": "Cottage",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/33.80007/78.59576",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  }
+ ],
+ "mechanics_left_out": [],
+ "stays_left_out": [
+  {
+   "near": "Leh",
+   "count": 435
+  }
+ ]
 }

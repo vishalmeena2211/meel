@@ -11354,7 +11354,118 @@
   "Filming dates of the two videos are not known, and the motorcycle in the second is not named."
  ],
  "counts": {
-  "facts": 254
+  "facts": 259
  },
- "built": "2026-10-17"
+ "built": "2026-11-08",
+ "mechanics": [
+  {
+   "id": "mechanic:moolethottiyil-tvs-adimaly-munnar",
+   "name": "Moolethottiyil TVS Adimaly",
+   "village": "Munnar",
+   "fixes": "Showroom and service centre",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/9.98268/76.99891",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "mechanic:high-range-residency-kumily-kumily",
+   "name": "High Range Residency-Kumily",
+   "village": "Kumily",
+   "fixes": "Tyres and punctures",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/9.60663/77.16786",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "mechanic:kallumkal-voc-kumily-kumily",
+   "name": "Kallumkal VOC kumily",
+   "village": "Kumily",
+   "fixes": "Motorcycle repair, 1.3 km off the road",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/9.59669/77.17348",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "mechanic:mobilsm-bike-care-udayam-motors-kalpeta-kalpetta",
+   "name": "MobilSM Bike Care - Udayam Motors, Kalpeta",
+   "village": "Kalpetta",
+   "fixes": "Vehicle repair",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/11.60443/76.08433",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "mechanic:mr-tyres-batteries-kalpetta",
+   "name": "MR Tyres & Batteries",
+   "village": "Kalpetta",
+   "fixes": "Tyres and punctures, 1.8 km off the road",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/11.62562/76.08703",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  }
+ ],
+ "stays": [],
+ "mechanics_left_out": [
+  {
+   "near": "Kochi",
+   "count": 41
+  }
+ ],
+ "stays_left_out": [
+  {
+   "near": "Kochi",
+   "count": 677
+  },
+  {
+   "near": "Munnar",
+   "count": 629
+  },
+  {
+   "near": "Kalpetta",
+   "count": 288
+  },
+  {
+   "near": "Kumily",
+   "count": 218
+  },
+  {
+   "near": "Vagamon",
+   "count": 150
+  }
+ ]
 }

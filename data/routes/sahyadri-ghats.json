@@ -7886,7 +7886,1019 @@
   "Videos: the pages give upload dates, not filming dates, so 'filmed' is filled only where the title names a date. Uploads, in order: 2025-11, 2021-07."
  ],
  "counts": {
-  "facts": 206
+  "facts": 267
  },
- "built": "2026-10-17"
+ "built": "2026-11-08",
+ "mechanics": [
+  {
+   "id": "mechanic:bridgestone-select-tyre-destination-lonavala",
+   "name": "Bridgestone Select - Tyre Destination",
+   "village": "Lonavala",
+   "fixes": "Tyres and punctures",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/18.81049/73.31483",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "mechanic:enfield-bullet-spares-and-repair-rishabh-automobile-pen-raig",
+   "name": "Enfield Bullet Spares And Repair-Rishabh Automobile Pen Raigad Maharashtra",
+   "village": "Lonavala",
+   "fixes": "Vehicle repair",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/18.79057/73.34292",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "mechanic:mrf-tyres-exclusive-guru-nanak-tyres-lonavala",
+   "name": "MRF Tyres Exclusive - Guru Nanak Tyres",
+   "village": "Lonavala",
+   "fixes": "Tyres and punctures, 1.3 km off the road",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/18.74809/73.42122",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "mechanic:balaji-auto-link-hero-motocorp-lonavala",
+   "name": "Balaji Auto Link - Hero MotoCorp",
+   "village": "Lonavala",
+   "fixes": "Vehicle repair",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/18.75996/73.43813",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "mechanic:hero-motocorp-lonavala",
+   "name": "Hero MotoCorp",
+   "village": "Lonavala",
+   "fixes": "Showroom and service centre",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/18.76682/73.55233",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "mechanic:mrf-tyres-exclusive-shree-tyres-lonavala",
+   "name": "MRF Tyres Exclusive - Shree Tyres",
+   "village": "Lonavala",
+   "fixes": "Tyres and punctures",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/18.75946/73.55271",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "mechanic:apollo-tyres-new-laxmi-tyres-mulshi",
+   "name": "Apollo Tyres - New Laxmi Tyres",
+   "village": "Mulshi",
+   "fixes": "Tyres and punctures",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/18.51121/73.68787",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "mechanic:unique-auto-spares-and-garage-malshej-ghat",
+   "name": "Unique Auto Spares and Garage",
+   "village": "Malshej Ghat",
+   "fixes": "Motorcycle repair",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/19.20624/73.87525",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "mechanic:sarvesh-honda-otur-malshej-ghat",
+   "name": "Sarvesh Honda OTUR",
+   "village": "Malshej Ghat",
+   "fixes": "Vehicle repair",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/19.20444/73.87251",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "mechanic:apollo-tyres-sakhala-tyres-malshej-ghat",
+   "name": "Apollo Tyres - Sakhala Tyres",
+   "village": "Malshej Ghat",
+   "fixes": "Tyres and punctures",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/19.20499/73.87213",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  }
+ ],
+ "stays": [
+  {
+   "id": "stay:green-gate-resort-tamhini-ghat",
+   "name": "Green Gate Resort",
+   "village": "Tamhini Ghat",
+   "notes": "Resort",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/18.47481/73.47027",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:sapphire-cottage-tamhini-ghat",
+   "name": "Sapphire Cottage",
+   "village": "Tamhini Ghat",
+   "notes": "Cottage",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/18.47072/73.47134",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:hotel-durva-special-matan-bhakri-tamhini-ghat",
+   "name": "Hotel durva special matan bhakri",
+   "village": "Tamhini Ghat",
+   "notes": "Hotel",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/18.46641/73.46446",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:tib-homes-tamhini-ghat",
+   "name": "Tib_homes",
+   "village": "Tamhini Ghat",
+   "notes": "Hotel, 1.3 km off the road",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/18.43837/73.43953",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:mulshi-tourism-tamhini-ghat",
+   "name": "मुळशी पर्यटन Mulshi Tourism",
+   "village": "Tamhini Ghat",
+   "notes": "Hotel",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/18.44844/73.43054",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:casa-rossa-resort-tamhini-ghat",
+   "name": "Casa Rossa Resort",
+   "village": "Tamhini Ghat",
+   "notes": "Resort",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/18.46559/73.43666",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:raan-machi-tamhini-ghat",
+   "name": "Raan Machi",
+   "village": "Tamhini Ghat",
+   "notes": "Campsite",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/18.46556/73.43667",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:encore-a-boutique-resort-tamhini-ghat",
+   "name": "Encore A Boutique Resort",
+   "village": "Tamhini Ghat",
+   "notes": "Resort",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/18.4767/73.4436",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:sai-resorts-tamhini-ghat",
+   "name": "Sai Resorts",
+   "village": "Tamhini Ghat",
+   "notes": "Resort",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/18.47673/73.43962",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:tourbugs-nest-camping-tamhini-ghat",
+   "name": "Tourbugs Nest - Camping",
+   "village": "Tamhini Ghat",
+   "notes": "Campsite, 1.3 km off the road",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/18.49641/73.44186",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:one-earth-tamhini-ghat",
+   "name": "One Earth",
+   "village": "Tamhini Ghat",
+   "notes": "Hotel",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/18.48935/73.43101",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:j-v-cottage-tamhini-ghat",
+   "name": "J V Cottage",
+   "village": "Tamhini Ghat",
+   "notes": "Cottage",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/18.49517/73.43049",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:hotel-chaitanyatej-tamhini-ghat",
+   "name": "Hotel chaitanyatej",
+   "village": "Tamhini Ghat",
+   "notes": "Hotel, 1.9 km off the road",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/18.50947/73.42657",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:andharban-homestay-tamhini-ghat",
+   "name": "Andharban Homestay",
+   "village": "Tamhini Ghat",
+   "notes": "Homestay",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/18.49454/73.41406",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:encore-a-boutique-resort-tamhini-ghat-2",
+   "name": "Encore - A Boutique Resort",
+   "village": "Tamhini Ghat",
+   "notes": "Resort",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/18.4646/73.40743",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:plus-valley-pune-tamhini-ghat",
+   "name": "Plus Valley,pune",
+   "village": "Tamhini Ghat",
+   "notes": "Hotel",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/18.4646/73.40743",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:taman-resort-tamhini-ghat",
+   "name": "Taman Resort",
+   "village": "Tamhini Ghat",
+   "notes": "Resort",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/18.4646/73.40743",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:indraprastha-farm-mulshi-tamhini-ghat",
+   "name": "Indraprastha Farm Mulshi",
+   "village": "Tamhini Ghat",
+   "notes": "Homestay",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/18.45341/73.40744",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:spyra-restaurant-and-camping-tamhini-ghat",
+   "name": "Spyra Restaurant and Camping",
+   "village": "Tamhini Ghat",
+   "notes": "Campsite",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/18.41773/73.40103",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:hotel-daryaghat-malshej-ghat",
+   "name": "Hotel Daryaghat",
+   "village": "Malshej Ghat",
+   "notes": "Hotel",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/19.20457/73.87373",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:hotel-anand-executive-junnar-malshej-ghat",
+   "name": "HoteL AnanD ExecutivE,JunnaR",
+   "village": "Malshej Ghat",
+   "notes": "Hotel",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/19.20444/73.87251",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:hotel-shreemalhar-malshej-ghat",
+   "name": "Hotel Shreemalhar",
+   "village": "Malshej Ghat",
+   "notes": "Hotel",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/19.20444/73.87251",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:majestic-biryani-point-malshej-ghat",
+   "name": "Majestic Biryani Point",
+   "village": "Malshej Ghat",
+   "notes": "Hotel",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/19.20444/73.87251",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:umbartha-resort-malshej-ghat",
+   "name": "Umbartha_Resort_",
+   "village": "Malshej Ghat",
+   "notes": "Resort",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/19.20443/73.8725",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:shivaji-hotel-junnar-malshej-ghat",
+   "name": "Shivaji Hotel-Junnar",
+   "village": "Malshej Ghat",
+   "notes": "Hotel",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/19.20562/73.87094",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:hotel-ekant-tourist-resort-malshej-ghat",
+   "name": "Hotel Ekant Tourist Resort",
+   "village": "Malshej Ghat",
+   "notes": "Resort, 2.7 km off the road",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/19.18167/73.86619",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:jai-tulja-bhawani-hotel-malshej-ghat",
+   "name": "Jai Tulja Bhawani Hotel",
+   "village": "Malshej Ghat",
+   "notes": "Hotel",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/19.20565/73.87001",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:hotel-ashiyana-malshej-ghat",
+   "name": "Hotel Ashiyana",
+   "village": "Malshej Ghat",
+   "notes": "Bed and breakfast",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/19.20574/73.86874",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:multi-spice-junnar-malshej-ghat",
+   "name": "Multi spice Junnar",
+   "village": "Malshej Ghat",
+   "notes": "Lodging",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/19.20753/73.86662",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:poonam-hotel-junnar-malshej-ghat",
+   "name": "Poonam Hotel-Junnar",
+   "village": "Malshej Ghat",
+   "notes": "Hotel",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/19.2069/73.86675",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:hotel-rajanigandha-restro-and-bar-junnar-malshej-ghat",
+   "name": "Hotel Rajanigandha ,Restro and Bar,Junnar",
+   "village": "Malshej Ghat",
+   "notes": "Hotel",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/19.20856/73.86816",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:kaveri-lawns-malshej-ghat",
+   "name": "Kaveri Lawns",
+   "village": "Malshej Ghat",
+   "notes": "Resort, 1.8 km off the road",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/19.20243/73.84955",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:mayurangan-malshej-ghat",
+   "name": "Mayurangan",
+   "village": "Malshej Ghat",
+   "notes": "Hotel",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/19.20757/73.85762",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:hotel-anand-executive-malshej-ghat",
+   "name": "Hotel Anand Executive",
+   "village": "Malshej Ghat",
+   "notes": "Hotel",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/19.21443/73.86489",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:lenyadri-international-hotel-malshej-ghat",
+   "name": "Lenyadri International Hotel",
+   "village": "Malshej Ghat",
+   "notes": "Hotel, 2.5 km off the road",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/19.23861/73.88629",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:hotel-devendra-malshej-ghat",
+   "name": "Hotel Devendra",
+   "village": "Malshej Ghat",
+   "notes": "Hotel",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/19.29049/73.82348",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:spot-on-hotel-swad-nisarg-malshej-ghat",
+   "name": "SPOT ON Hotel Swad Nisarg",
+   "village": "Malshej Ghat",
+   "notes": "Hotel",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/19.29469/73.8208",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:devlata-villa-malshej-ghat",
+   "name": "Devlata Villa",
+   "village": "Malshej Ghat",
+   "notes": "Homestay",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/19.31581/73.82294",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:sumit-malshej-lakeside-camping-malshej-ghat",
+   "name": "Sumit Malshej Lakeside Camping",
+   "village": "Malshej Ghat",
+   "notes": "Campsite",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/19.32176/73.8138",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:saj-resort-malshej-malshej-ghat",
+   "name": "Saj Resort Malshej",
+   "village": "Malshej Ghat",
+   "notes": "Resort",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/19.3277/73.81239",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:saj-by-the-lake-malshej-ghat",
+   "name": "Saj by The Lake",
+   "village": "Malshej Ghat",
+   "notes": "Resort",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/19.32761/73.81249",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:dosti-lakewood-hill-station-malshej-ghat",
+   "name": "Dosti Lakewood Hill Station",
+   "village": "Malshej Ghat",
+   "notes": "Hotel",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/19.32777/73.80806",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:greenscapein-camping-malshej-ghat",
+   "name": "Greenscapein Camping",
+   "village": "Malshej Ghat",
+   "notes": "Campsite",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/19.33104/73.81038",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:blu-water-resort-malshej-malshej-ghat",
+   "name": "Blu Water Resort Malshej",
+   "village": "Malshej Ghat",
+   "notes": "Resort",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/19.33116/73.80894",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:malshej-farms-malshej-ghat",
+   "name": "Malshej Farms",
+   "village": "Malshej Ghat",
+   "notes": "Hotel",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/19.33389/73.80664",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:malshej-nature-camp-malshej-ghat",
+   "name": "Malshej Nature Camp",
+   "village": "Malshej Ghat",
+   "notes": "Campsite, 1.6 km off the road",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/19.33609/73.77628",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:subhi-hotel-resort-malshej-ghat",
+   "name": "Subhi Hotel & Resort",
+   "village": "Malshej Ghat",
+   "notes": "Resort",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/19.33739/73.78281",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:hotel-sarika-malshej-ghat",
+   "name": "Hotel Sarika",
+   "village": "Malshej Ghat",
+   "notes": "Hotel, 2.2 km off the road",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/19.34239/73.76982",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:hriday-villa-malshej-ghat",
+   "name": "Hriday Villa",
+   "village": "Malshej Ghat",
+   "notes": "Hotel, 2.6 km off the road",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/19.34336/73.76648",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:riverglen-holiday-home-malshej-ghat",
+   "name": "Riverglen holiday home",
+   "village": "Malshej Ghat",
+   "notes": "Homestay, 2.6 km off the road",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/19.34336/73.76648",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:thitabi-nature-tourism-center-malshej-ghat",
+   "name": "Thitabi Nature Tourism Center",
+   "village": "Malshej Ghat",
+   "notes": "Hotel, 2.6 km off the road",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/19.34336/73.76648",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  }
+ ],
+ "mechanics_left_out": [
+  {
+   "near": "Pune",
+   "count": 237
+  },
+  {
+   "near": "Mumbai",
+   "count": 82
+  }
+ ],
+ "stays_left_out": [
+  {
+   "near": "Pune",
+   "count": 1959
+  },
+  {
+   "near": "Mumbai",
+   "count": 940
+  },
+  {
+   "near": "Lonavala",
+   "count": 851
+  },
+  {
+   "near": "Mahabaleshwar",
+   "count": 779
+  },
+  {
+   "near": "Mulshi",
+   "count": 66
+  }
+ ]
 }

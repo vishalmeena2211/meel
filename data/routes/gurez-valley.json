@@ -3396,7 +3396,230 @@
   "Only one rider video could be checked; a second, on crossing Razdan Pass in April 2025, could not be read."
  ],
  "counts": {
-  "facts": 60
+  "facts": 73
  },
- "built": "2026-10-17"
+ "built": "2026-11-08",
+ "mechanics": [],
+ "stays": [
+  {
+   "id": "stay:afsara-hotel-and-restaurant-dawar",
+   "name": "Afsara Hotel and Restaurant",
+   "village": "Dawar",
+   "notes": "Hotel, 2.2 km off the road",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/34.65676/74.68496",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:gurez-camping-margs-dawar",
+   "name": "Gurez Camping Margs",
+   "village": "Dawar",
+   "notes": "Campsite",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/34.65372/74.77183",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:calm-n-peace-dawar",
+   "name": "Calm-n-peace",
+   "village": "Dawar",
+   "notes": "Hotel",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/34.65577/74.78872",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:guest-house-gurez-al-mukhtar-dawar",
+   "name": "Guest house gurez al mukhtar",
+   "village": "Dawar",
+   "notes": "Guest house",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/34.63271/74.80548",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:gurez-guest-house-dawar",
+   "name": "Gurez Guest House",
+   "village": "Dawar",
+   "notes": "Guest house",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/34.63447/74.80835",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:gurez-retreat-dawar",
+   "name": "Gurez Retreat",
+   "village": "Dawar",
+   "notes": "Hotel",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/34.63635/74.81343",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:d-sheikh-s-resort-gurez-dawar",
+   "name": "D sheikh's Resort Gurez",
+   "village": "Dawar",
+   "notes": "Resort, 1.9 km off the road",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/34.63447/74.83691",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:d-shiekh-s-re7ort-dawar",
+   "name": "D' SHIEKH's Re7ort",
+   "village": "Dawar",
+   "notes": "Hotel, 1.2 km off the road",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/34.63304/74.82934",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:gurez-tourist-rest-house-dawar",
+   "name": "Gurez Tourist Rest House",
+   "village": "Dawar",
+   "notes": "Hotel, 2.1 km off the road",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/34.63249/74.83902",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:gurez-valley-trekkers-dawar",
+   "name": "Gurez Valley Trekkers",
+   "village": "Dawar",
+   "notes": "Campsite, 2.1 km off the road",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/34.63445/74.83965",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:kaka-palace-guest-house-and-hotels-dawar",
+   "name": "Kaka Palace Guest House and Hotels",
+   "village": "Dawar",
+   "notes": "Guest house, 1.8 km off the road",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/34.633/74.83549",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:kaka-palace-hotel-and-restaurant-dawar",
+   "name": "Kaka Palace Hotel and Restaurant",
+   "village": "Dawar",
+   "notes": "Lodging, 1.9 km off the road",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/34.63402/74.83694",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:the-gurez-inn-dawar",
+   "name": "The Gurez Inn",
+   "village": "Dawar",
+   "notes": "Hotel, 1.4 km off the road",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/34.63316/74.83168",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  }
+ ],
+ "mechanics_left_out": [
+  {
+   "near": "Srinagar",
+   "count": 29
+  }
+ ],
+ "stays_left_out": [
+  {
+   "near": "Srinagar",
+   "count": 616
+  }
+ ]
 }

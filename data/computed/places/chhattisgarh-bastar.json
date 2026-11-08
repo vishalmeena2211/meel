@@ -1,0 +1,328 @@
+{
+ "slug": "chhattisgarh-bastar",
+ "fetched": "2026-11-08",
+ "overture_release": "2026-10-22",
+ "stay_radius_m": 3000,
+ "mechanic_radius_m": 2000,
+ "min_confidence": 0.5,
+ "town_limit": 40,
+ "mechanic_town_limit": 10,
+ "near_halt_km": 25,
+ "stays": [
+  {
+   "id": "c950ea7c-248b-47b4-a7ef-eb097b6ea7f7",
+   "name": "Makdi Hotel",
+   "category": "hotel",
+   "kind": "hotel",
+   "confidence": 0.71,
+   "lat": 20.31493,
+   "lon": 81.46356,
+   "km_from_start": 133.0,
+   "off_road_m": 9,
+   "near": "Kanker",
+   "what": "Hotel"
+  },
+  {
+   "id": "bac4db0c-b324-411d-8998-ef4c8b72eed7",
+   "name": "Hotel Green Palm",
+   "category": "hotel",
+   "kind": "hotel",
+   "confidence": 0.97,
+   "lat": 20.28366,
+   "lon": 81.4839,
+   "km_from_start": 137.2,
+   "off_road_m": 43,
+   "near": "Kanker",
+   "what": "Hotel"
+  },
+  {
+   "id": "27665439-eb7c-4252-9f05-724181cfe867",
+   "name": "Ramdas Bada Meshram Son Society",
+   "category": "lodging",
+   "kind": "lodge",
+   "confidence": 0.53,
+   "lat": 20.2744,
+   "lon": 81.48623,
+   "km_from_start": 138.5,
+   "off_road_m": 612,
+   "near": "Kanker",
+   "what": "Lodging"
+  },
+  {
+   "id": "707b6ded-bce4-44c0-8fcb-84f03eeb54c5",
+   "name": "Kanker Palace Cottages",
+   "category": "lodging",
+   "kind": "cottage",
+   "confidence": 0.88,
+   "lat": 20.27306,
+   "lon": 81.49376,
+   "km_from_start": 138.8,
+   "off_road_m": 98,
+   "near": "Kanker",
+   "what": "Cottage"
+  },
+  {
+   "id": "e89b33aa-0dce-45ca-94f3-8eb9f0e27cc4",
+   "name": "Kanker Palace Heritage",
+   "category": "hotel",
+   "kind": "hotel",
+   "confidence": 0.69,
+   "lat": 20.27319,
+   "lon": 81.49467,
+   "km_from_start": 138.8,
+   "off_road_m": 193,
+   "near": "Kanker",
+   "what": "Hotel"
+  },
+  {
+   "id": "1e22a94f-41f0-4b71-9cfb-7a54645c3a3d",
+   "name": "Hotel Lake View",
+   "category": "hotel",
+   "kind": "hotel",
+   "confidence": 0.74,
+   "lat": 20.27236,
+   "lon": 81.49255,
+   "km_from_start": 138.9,
+   "off_road_m": 3,
+   "near": "Kanker",
+   "what": "Hotel"
+  },
+  {
+   "id": "7c5b1103-703c-46f3-8ca9-4486bb4e1e49",
+   "name": "Hotel Sundaram",
+   "category": "hotel",
+   "kind": "hotel",
+   "confidence": 0.77,
+   "lat": 20.26893,
+   "lon": 81.49079,
+   "km_from_start": 139.3,
+   "off_road_m": 38,
+   "near": "Kanker",
+   "what": "Hotel"
+  },
+  {
+   "id": "7ccf0648-ca7a-4bd1-9e6f-0c55395817ee",
+   "name": "Sunderm Hotel",
+   "category": "hotel",
+   "kind": "hotel",
+   "confidence": 0.52,
+   "lat": 20.26618,
+   "lon": 81.48973,
+   "km_from_start": 139.4,
+   "off_road_m": 260,
+   "near": "Kanker",
+   "what": "Hotel"
+  },
+  {
+   "id": "12571f1a-e54b-4827-9ffd-1bcc3a63b6fa",
+   "name": "Hotel Lake View & 7-Eleven Apka Apna Daily Bajar",
+   "category": "hotel",
+   "kind": "hotel",
+   "confidence": 0.53,
+   "lat": 20.2642,
+   "lon": 81.49715,
+   "km_from_start": 140.6,
+   "off_road_m": 12,
+   "near": "Kanker",
+   "what": "Hotel"
+  },
+  {
+   "id": "751ed3ed-b5e0-4084-b8dd-7869fab61012",
+   "name": "Makri Hotel Punjabi Dhaba",
+   "category": "hotel",
+   "kind": "hotel",
+   "confidence": 0.76,
+   "lat": 20.2642,
+   "lon": 81.49715,
+   "km_from_start": 140.6,
+   "off_road_m": 12,
+   "near": "Kanker",
+   "what": "Hotel"
+  },
+  {
+   "id": "e975e513-89ff-4804-a454-4b08a50093a3",
+   "name": "Zam Zam Hotel Veg & Non Veg",
+   "category": "hotel",
+   "kind": "hotel",
+   "confidence": 0.52,
+   "lat": 20.26466,
+   "lon": 81.49915,
+   "km_from_start": 140.8,
+   "off_road_m": 84,
+   "near": "Kanker",
+   "what": "Hotel"
+  },
+  {
+   "id": "ceadd93b-7cd7-472a-a77b-e651796cdc34",
+   "name": "Hotel Anandam",
+   "category": "hotel",
+   "kind": "hotel",
+   "confidence": 0.89,
+   "lat": 20.26344,
+   "lon": 81.5019,
+   "km_from_start": 141.1,
+   "off_road_m": 22,
+   "near": "Kanker",
+   "what": "Hotel"
+  },
+  {
+   "id": "56b4487d-a7d8-4da7-8630-30ebe9c2518e",
+   "name": "Hotel Bafna Lawn",
+   "category": "hotel",
+   "kind": "hotel",
+   "confidence": 0.87,
+   "lat": 20.2532,
+   "lon": 81.50765,
+   "km_from_start": 142.7,
+   "off_road_m": 98,
+   "near": "Kanker",
+   "what": "Hotel"
+  },
+  {
+   "id": "3b681ffc-d4c1-4dce-8b75-eba3d57357e4",
+   "name": "Bafna Resort",
+   "category": "hotel",
+   "kind": "hotel",
+   "confidence": 0.96,
+   "lat": 20.1562,
+   "lon": 81.52306,
+   "km_from_start": 154.4,
+   "off_road_m": 50,
+   "near": "Keshkal",
+   "what": "Resort"
+  },
+  {
+   "id": "6da88f47-7576-44fe-b677-7cf86d433fe9",
+   "name": "Goldy Dhaba",
+   "category": "hotel",
+   "kind": "hotel",
+   "confidence": 0.54,
+   "lat": 20.09579,
+   "lon": 81.59395,
+   "km_from_start": 167.6,
+   "off_road_m": 260,
+   "near": "Keshkal",
+   "what": "Hotel"
+  },
+  {
+   "id": "acf2d74c-9521-4215-8a65-635bc852c2ba",
+   "name": "Dandami Luxury Resort",
+   "category": "hotel",
+   "kind": "hotel",
+   "confidence": 0.94,
+   "lat": 19.20287,
+   "lon": 81.69299,
+   "km_from_start": 335.1,
+   "off_road_m": 748,
+   "near": "Chitrakote Falls",
+   "what": "Resort"
+  },
+  {
+   "id": "5676bb16-dbe9-4994-89c5-2c555e38beda",
+   "name": "Hotel Aaradhya International",
+   "category": "hotel",
+   "kind": "hotel",
+   "confidence": 0.84,
+   "lat": 19.01873,
+   "lon": 81.91692,
+   "km_from_start": 376.3,
+   "off_road_m": 5,
+   "near": "Tirathgarh Falls",
+   "what": "Hotel"
+  }
+ ],
+ "stays_left_out": [
+  {
+   "near": "Raipur",
+   "count": 319
+  },
+  {
+   "near": "Jagdalpur",
+   "count": 44
+  }
+ ],
+ "mechanics": [
+  {
+   "id": "7eea1995-95ba-4521-9cbe-50dada9c13fa",
+   "name": "Aayesha Motors",
+   "category": "vehicle_service",
+   "kind": "motorcycle_repair",
+   "confidence": 0.72,
+   "lat": 20.27344,
+   "lon": 81.49288,
+   "km_from_start": 138.8,
+   "off_road_m": 20,
+   "near": "Kanker",
+   "what": "Motorcycle repair"
+  },
+  {
+   "id": "4351e399-9027-4987-a75c-afec02bf3eae",
+   "name": "Royal Enfield",
+   "category": "vehicle_dealer",
+   "kind": "motorcycle_dealer",
+   "confidence": 0.78,
+   "lat": 20.27344,
+   "lon": 81.49288,
+   "km_from_start": 138.8,
+   "off_road_m": 20,
+   "near": "Kanker",
+   "what": "Showroom and service centre"
+  },
+  {
+   "id": "88f1ec38-ba7d-4139-8420-874e4a3d58c9",
+   "name": "Neelam Trading Company Suzuki Showroom",
+   "category": "vehicle_dealer",
+   "kind": "motorcycle_dealer",
+   "confidence": 0.75,
+   "lat": 20.27148,
+   "lon": 81.49157,
+   "km_from_start": 139.0,
+   "off_road_m": 63,
+   "near": "Kanker",
+   "what": "Showroom and service centre"
+  },
+  {
+   "id": "d4c0628f-3f61-476c-9457-6308b337884d",
+   "name": "TVS iQube - Aayesha Tvs",
+   "category": "vehicle_dealer",
+   "kind": "motorcycle_dealer",
+   "confidence": 0.77,
+   "lat": 20.25299,
+   "lon": 81.50806,
+   "km_from_start": 142.7,
+   "off_road_m": 59,
+   "near": "Kanker",
+   "what": "Showroom and service centre"
+  },
+  {
+   "id": "b706b3bc-699b-43f4-b03a-e3ff92152a89",
+   "name": "Honda Chhattisgarh Honda Two Wheeler Service Centre",
+   "category": "automotive_service",
+   "kind": "automotive_repair",
+   "confidence": 0.51,
+   "lat": 20.07999,
+   "lon": 81.58778,
+   "km_from_start": 169.3,
+   "off_road_m": 25,
+   "near": "Keshkal",
+   "what": "Vehicle repair"
+  }
+ ],
+ "mechanics_left_out": [
+  {
+   "near": "Raipur",
+   "count": 47
+  },
+  {
+   "near": "Jagdalpur",
+   "count": 18
+  }
+ ],
+ "bytes_billed": 0,
+ "source": {
+  "service": "BigQuery public dataset",
+  "data": "Overture Maps Foundation, places theme",
+  "licence": "Community Data License Agreement, Permissive 2.0",
+  "url": "https://docs.overturemaps.org/attribution/"
+ }
+}

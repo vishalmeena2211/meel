@@ -73,6 +73,11 @@ const RULE_KINDS: Array<[string, string]> = [
   ["document", "papers"],
 ];
 
+/** " · from a public map" when every entry came from a map listing, so the list is not mistaken for riders' word. */
+function fromMap(items: { source: { kind: string } | null }[] | undefined): string {
+  return items && items.length > 0 && items.every((i) => i.source?.kind === "map") ? " · from a public map" : "";
+}
+
 function ruleWords(route: Route): string {
   const have = RULE_KINDS.filter(([kind]) => route.rules.some((r) => r.kind === kind)).map(([, word]) => word);
   const words = have.slice(0, 3).join(", ");
@@ -127,9 +132,9 @@ export const getRouteView = cache(async (slug: string): Promise<RouteView | null
     altitude: plural(halts, "halt"),
     road: `${plural(route.hazards.length, "warning")} · from published guides`,
     network: plural(netHalts, "halt"),
-    mechanics: plural(views.mechanics.length, "shop"),
+    mechanics: `${plural(views.mechanics.length, "shop")}${fromMap(route.mechanics)}`,
     hours: `${plural(legs, "leg")} · from ${plural(used.length, "trip report")}`,
-    stays: plural(views.stays.length, "place"),
+    stays: `${plural(views.stays.length, "place")}${fromMap(route.stays)}`,
     packing: "By month",
     videos: route.videos.length > 0 ? plural(route.videos.length, "rider video") : "None yet",
     bikes: `From ${plural(used.length, "trip report")}`,

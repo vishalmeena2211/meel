@@ -3837,7 +3837,674 @@
   "Some stretch distances are doubtful. The open map may not know the road riders use, so the routing service went the long way round."
  ],
  "counts": {
-  "facts": 47
+  "facts": 88
  },
- "built": "2026-10-17"
+ "built": "2026-11-08",
+ "mechanics": [
+  {
+   "id": "mechanic:ktm-gangtok-gangtok",
+   "name": "KTM Gangtok",
+   "village": "Gangtok",
+   "fixes": "Showroom and service centre",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/27.32715/88.61074",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "mechanic:lower-tathangchen-gangtok",
+   "name": "Lower Tathangchen",
+   "village": "Gangtok",
+   "fixes": "Tyres and punctures",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/27.32898/88.61933",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "mechanic:the-motorcycle-garage-gangtok",
+   "name": "The Motorcycle Garage",
+   "village": "Gangtok",
+   "fixes": "Motorcycle repair",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/27.3348/88.61942",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "mechanic:top-gear-automobile-smart-garage-ranipool-gangtok",
+   "name": "Top Gear Automobile Smart Garage Ranipool",
+   "village": "Gangtok",
+   "fixes": "Motorcycle repair",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/27.34068/88.62713",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  }
+ ],
+ "stays": [
+  {
+   "id": "stay:gyalbo-homestay-lungchok-east-sikkim-kupup",
+   "name": "Gyalbo Homestay, Lungchok, East Sikkim",
+   "village": "Kupup",
+   "notes": "Homestay, 2.1 km off the road",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/27.35659/88.81039",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:misty-mountains-homestay-kupup",
+   "name": "Misty Mountains Homestay",
+   "village": "Kupup",
+   "notes": "Homestay, 2.1 km off the road",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/27.35659/88.81039",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:situng-jong-homestay-bhakutar-east-sikkim-kupup",
+   "name": "Situng Jong Homestay, Bhakutar East Sikkim",
+   "village": "Kupup",
+   "notes": "Homestay, 2.1 km off the road",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/27.35659/88.81039",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:silk-route-gateway-resorts-kupup",
+   "name": "Silk Route Gateway Resorts",
+   "village": "Kupup",
+   "notes": "Resort, 1.2 km off the road",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/27.30564/88.80635",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:nathang-valley-golden-trout-residency-kupup",
+   "name": "Nathang Valley Golden Trout Residency",
+   "village": "Kupup",
+   "notes": "Hotel",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/27.29849/88.81731",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:golden-trout-residency-kupup",
+   "name": "Golden Trout Residency",
+   "village": "Kupup",
+   "notes": "Lodging",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/27.29777/88.81662",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:zuluk-dil-maya-homestay-zuluk",
+   "name": "Zuluk Dil Maya Homestay",
+   "village": "Zuluk",
+   "notes": "Homestay",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/27.25178/88.77746",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:zuluk-snow-lion-zuluk",
+   "name": "Zuluk Snow Lion",
+   "village": "Zuluk",
+   "notes": "Hotel",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/27.25104/88.77804",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:zuluk-hidden-paradise-homestay-zuluk",
+   "name": "Zuluk Hidden Paradise Homestay",
+   "village": "Zuluk",
+   "notes": "Homestay",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/27.25212/88.77618",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:lamakhang-zuluk",
+   "name": "Lamakhang",
+   "village": "Zuluk",
+   "notes": "Hotel",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/27.23745/88.76765",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:ice-land-homestay-zuluk",
+   "name": "Ice Land Homestay",
+   "village": "Zuluk",
+   "notes": "Homestay",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/27.23658/88.7672",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:montana-homestay-zuluk",
+   "name": "Montana Homestay",
+   "village": "Zuluk",
+   "notes": "Homestay",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/27.23622/88.76915",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:silent-wood-retreat-zuluk",
+   "name": "Silent Wood Retreat",
+   "village": "Zuluk",
+   "notes": "Hotel",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/27.23304/88.76723",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:hill-homestay-zuluk",
+   "name": "Hill Homestay",
+   "village": "Zuluk",
+   "notes": "Homestay",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/27.23368/88.76213",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:samridhi-homestay-zuluk",
+   "name": "Samridhi Homestay",
+   "village": "Zuluk",
+   "notes": "Homestay",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/27.2336/88.76199",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:silk-route-farm-house-rongli",
+   "name": "Silk Route Farm-House",
+   "village": "Rongli",
+   "notes": "Hotel",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/27.23194/88.73331",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:keatel-crans-retreat-rongli",
+   "name": "KEATEL CRANS RETREAT",
+   "village": "Rongli",
+   "notes": "Hotel",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/27.22278/88.73726",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:salakha-home-stay-rongli",
+   "name": "Salakha Home Stay",
+   "village": "Rongli",
+   "notes": "Homestay",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/27.22702/88.72717",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:hotel-assampa-retreat-rongli",
+   "name": "Hotel Assampa Retreat",
+   "village": "Rongli",
+   "notes": "Hotel, 1.8 km off the road",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/27.2333/88.7167",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:village-paradise-resort-rongli",
+   "name": "Village Paradise Resort",
+   "village": "Rongli",
+   "notes": "Resort",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/27.20329/88.70825",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:takchi-homestay-phadamchen-rongli",
+   "name": "Takchi Homestay Phadamchen",
+   "village": "Rongli",
+   "notes": "Homestay",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/27.20351/88.70184",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:wild-yeti-s-homestay-travels-sikkim-rongli",
+   "name": "Wild Yeti’s Homestay & Travels, Sikkim",
+   "village": "Rongli",
+   "notes": "Homestay",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/27.20357/88.70187",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:akshat-home-stay-rongli",
+   "name": "Akshat Home Stay",
+   "village": "Rongli",
+   "notes": "Homestay, 1.9 km off the road",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/27.20289/88.68183",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:ashraya-boutique-homestay-rongli",
+   "name": "Ashraya Boutique Homestay",
+   "village": "Rongli",
+   "notes": "Homestay, 1.5 km off the road",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/27.21059/88.68801",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:attic-homestay-lungchok-valley-rongli-east-sikkim-rongli",
+   "name": "Attic Homestay Lungchok Valley. Rongli East Sikkim",
+   "village": "Rongli",
+   "notes": "Homestay",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/27.2071/88.69229",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:buddha-waterfalls-homestay-rongli",
+   "name": "Buddha Waterfalls Homestay",
+   "village": "Rongli",
+   "notes": "Homestay",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/27.2071/88.69229",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:cardamom-blues-rongli",
+   "name": "Cardamom Blues",
+   "village": "Rongli",
+   "notes": "Hotel, 3.0 km off the road",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/27.18973/88.67496",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:global-valley-resorts-rongli",
+   "name": "Global Valley Resorts",
+   "village": "Rongli",
+   "notes": "Resort",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/27.20326/88.7003",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:kanchanjunga-mirror-homestay-rongli",
+   "name": "Kanchanjunga Mirror Homestay",
+   "village": "Rongli",
+   "notes": "Homestay, 2.8 km off the road",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/27.18573/88.6809",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:mangaldeep-resort-rongli",
+   "name": "Mangaldeep Resort",
+   "village": "Rongli",
+   "notes": "Resort",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/27.20401/88.69317",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:river-waves-homestay-cafe-rongli",
+   "name": "River waves homestay & cafe",
+   "village": "Rongli",
+   "notes": "Homestay, 1.9 km off the road",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/27.20289/88.68183",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:rongli-hostel-rongli",
+   "name": "Rongli Hostel",
+   "village": "Rongli",
+   "notes": "Hostel",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/27.20338/88.70056",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:roof-top-resort-rongli",
+   "name": "Roof Top Resort",
+   "village": "Rongli",
+   "notes": "Resort",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/27.20542/88.69374",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:shanti-kunja-rongli",
+   "name": "Shanti Kunja",
+   "village": "Rongli",
+   "notes": "Resort, 2.7 km off the road",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/27.18638/88.68144",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:silk-route-resort-rongli",
+   "name": "Silk Route Resort",
+   "village": "Rongli",
+   "notes": "Resort",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/27.2071/88.69229",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:syangdan-homestay-rongli-east-sikkim-rongli",
+   "name": "Syangdan Homestay Rongli East Sikkim",
+   "village": "Rongli",
+   "notes": "Homestay",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/27.20562/88.69398",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:zuluk-hidden-paradise-homestay-rongli",
+   "name": "Zuluk Hidden Paradise Homestay",
+   "village": "Rongli",
+   "notes": "Homestay",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/27.2071/88.69229",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  }
+ ],
+ "mechanics_left_out": [],
+ "stays_left_out": [
+  {
+   "near": "Gangtok",
+   "count": 786
+  }
+ ]
 }

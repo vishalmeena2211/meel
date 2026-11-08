@@ -3419,7 +3419,172 @@
   "The first video gives no filming date; it was published on 14 June 2025."
  ],
  "counts": {
-  "facts": 47
+  "facts": 57
  },
- "built": "2026-10-17"
+ "built": "2026-11-08",
+ "mechanics": [],
+ "stays": [
+  {
+   "id": "stay:camp-himalayan-spirit-darcha",
+   "name": "Camp himalayan spirit",
+   "village": "Darcha",
+   "notes": "Campsite, 2.1 km off the road",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/32.65424/77.20392",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:darcha-sumdo-camps-darcha",
+   "name": "Darcha Sumdo Camps",
+   "village": "Darcha",
+   "notes": "Campsite",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/32.67306/77.21057",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:dolma-camps-and-cottages-purne",
+   "name": "Dolma Camps and Cottages",
+   "village": "Purne",
+   "notes": "Campsite",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/33.23132/77.14407",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:namkha-resort-padum",
+   "name": "Namkha Resort",
+   "village": "Padum",
+   "notes": "Resort, 1.0 km off the road",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/33.4558/76.87049",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:alpine-guest-house-padum",
+   "name": "Alpine Guest House",
+   "village": "Padum",
+   "notes": "Guest house",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/33.45877/76.88026",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:padum-guesthouse-padum",
+   "name": "Padum guesthouse",
+   "village": "Padum",
+   "notes": "Guest house",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/33.46369/76.88365",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:padmaling-guest-house-and-camp-padum",
+   "name": "Padmaling guest house and camp",
+   "village": "Padum",
+   "notes": "Guest house",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/33.46512/76.87521",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:hotel-rigyal-padum",
+   "name": "Hotel Rigyal",
+   "village": "Padum",
+   "notes": "Hotel",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/33.46899/76.87832",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:omasila-hotel-and-restaurant-padum",
+   "name": "Omasila Hotel and Restaurant",
+   "village": "Padum",
+   "notes": "Hotel, 1.5 km off the road",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/33.47843/76.88937",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:shingkula-guest-house-padum",
+   "name": "Shingkula Guest House",
+   "village": "Padum",
+   "notes": "Guest house",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/33.47251/76.88418",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  }
+ ],
+ "mechanics_left_out": [],
+ "stays_left_out": []
 }

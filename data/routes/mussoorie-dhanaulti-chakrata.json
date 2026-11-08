@@ -4559,7 +4559,643 @@
   "No rider videos collected; the search budget ran out before this route."
  ],
  "counts": {
-  "facts": 38
+  "facts": 76
  },
- "built": "2026-10-17"
+ "built": "2026-11-08",
+ "mechanics": [
+  {
+   "id": "mechanic:tvs-hills-auto-mussoorie",
+   "name": "Tvs Hills Auto",
+   "village": "Mussoorie",
+   "fixes": "Showroom and service centre, 1.2 km off the road",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/30.43907/78.11358",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  }
+ ],
+ "stays": [
+  {
+   "id": "stay:capital-o-5248-surbee-resorts-kempty-falls",
+   "name": "Capital O 5248 Surbee Resorts",
+   "village": "Kempty Falls",
+   "notes": "Resort",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/30.48168/78.04457",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:home-peaceful-2bhk-villa-kempty-fall-kempty-falls",
+   "name": "Home Peaceful 2BHK Villa Kempty Fall",
+   "village": "Kempty Falls",
+   "notes": "Hotel",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/30.48168/78.04457",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:hotel-m-v-acosta-kempty-falls",
+   "name": "Hotel M V Acosta",
+   "village": "Kempty Falls",
+   "notes": "Hotel",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/30.48131/78.04415",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:ramola-guest-house-kempty-falls",
+   "name": "Ramola Guest House",
+   "village": "Kempty Falls",
+   "notes": "Guest house",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/30.48168/78.04457",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:hotel-o-banglow-ki-kandi-kempty-falls",
+   "name": "Hotel O Banglow Ki Kandi",
+   "village": "Kempty Falls",
+   "notes": "Hotel",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/30.48244/78.03781",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:binog-breeze-hotel-kempty-falls",
+   "name": "Binog Breeze Hotel",
+   "village": "Kempty Falls",
+   "notes": "Hotel",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/30.48247/78.03721",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:mannat-resort-kempty-falls",
+   "name": "Mannat Resort",
+   "village": "Kempty Falls",
+   "notes": "Resort",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/30.48108/78.03635",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:brentwood-sanctuary-kempty-falls",
+   "name": "Brentwood Sanctuary",
+   "village": "Kempty Falls",
+   "notes": "Resort, 1.4 km off the road",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/30.4698/78.03302",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:ever-radiant-hotel-kempty-falls",
+   "name": "Ever Radiant Hotel",
+   "village": "Kempty Falls",
+   "notes": "Guest house",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/30.47958/78.03638",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:jaadooghar-rainbow-farms-two-bedroom-house-kempty-falls",
+   "name": "Jaadooghar Rainbow Farms - Two-Bedroom House",
+   "village": "Kempty Falls",
+   "notes": "Homestay",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/30.48069/78.03583",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:kandi-orchards-resort-kempty-falls",
+   "name": "Kandi Orchards Resort",
+   "village": "Kempty Falls",
+   "notes": "Resort, 1.2 km off the road",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/30.47138/78.03407",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:knock-george-camp-resorts-in-mussoorie-george-everest-mussoo",
+   "name": "Knock George Camp - resorts in mussoorie | george everest mussoorie camping | camping in mussoorie | adventure camp",
+   "village": "Kempty Falls",
+   "notes": "Campsite, 2.7 km off the road",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/30.45909/78.02632",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:nature-walk-resort-kempty-falls",
+   "name": "Nature Walk Resort",
+   "village": "Kempty Falls",
+   "notes": "Resort, 1.2 km off the road",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/30.47135/78.03401",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:stayvista-at-everest-base-camp-7-bhk-premium-villa-kempty-fa",
+   "name": "StayVista at Everest Base Camp | 7 BHK Premium Villa",
+   "village": "Kempty Falls",
+   "notes": "Campsite, 2.7 km off the road",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/30.45929/78.02531",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:sun-village-kempty-falls",
+   "name": "Sun Village",
+   "village": "Kempty Falls",
+   "notes": "Hotel",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/30.48182/78.0354",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:the-english-country-house-resort-spa-kempty-falls",
+   "name": "The English country house Resort & Spa",
+   "village": "Kempty Falls",
+   "notes": "Resort",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/30.48211/78.03572",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:the-hosteller-mussoorie-by-the-streamside-kempty-kempty-fall",
+   "name": "The Hosteller Mussoorie By The Streamside, Kempty",
+   "village": "Kempty Falls",
+   "notes": "Hostel",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/30.48123/78.03374",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:the-stream-side-hostel-kempty-falls",
+   "name": "The Stream Side Hostel",
+   "village": "Kempty Falls",
+   "notes": "Hostel",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/30.48239/78.03417",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:zostel-plus-mussoorie-kempty-kempty-falls",
+   "name": "Zostel Plus Mussoorie (Kempty)",
+   "village": "Kempty Falls",
+   "notes": "Hostel",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/30.48064/78.03542",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:the-kempty-fall-resort-kempty-falls",
+   "name": "The Kempty Fall Resort",
+   "village": "Kempty Falls",
+   "notes": "Resort",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/30.48269/78.03623",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:pizza-by-icebergs-kempty-falls",
+   "name": "Pizza by Icebergs",
+   "village": "Kempty Falls",
+   "notes": "Hotel",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/30.48334/78.03761",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:near-kempty-falls-kempty-falls",
+   "name": "near Kempty Falls",
+   "village": "Kempty Falls",
+   "notes": "Hotel",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/30.48332/78.03835",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:oyo-adventure-tour-resort-kempty-falls",
+   "name": "OYO Adventure Tour Resort",
+   "village": "Kempty Falls",
+   "notes": "Resort",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/30.49579/78.04449",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:hotel-kempty-residency-kempty-falls",
+   "name": "Hotel Kempty Residency",
+   "village": "Kempty Falls",
+   "notes": "Resort",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/30.4925/78.0381",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:dobasu-village-homestay-kempty-falls",
+   "name": "Dobasu Village Homestay",
+   "village": "Kempty Falls",
+   "notes": "Homestay",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/30.48989/78.04016",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:spot-on-46444-ashirwad-guest-house-kempty-falls",
+   "name": "SPOT ON 46444 Ashirwad Guest House",
+   "village": "Kempty Falls",
+   "notes": "Guest house",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/30.48643/78.03791",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:hill-view-2bhk-kempty-fall-kempty-falls",
+   "name": "Hill View 2BHK Kempty Fall",
+   "village": "Kempty Falls",
+   "notes": "Hotel",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/30.48725/78.03649",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:oyo-eat-well-kempty-falls",
+   "name": "OYO Eat Well",
+   "village": "Kempty Falls",
+   "notes": "Resort",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/30.48912/78.03485",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:oyo-home-62168-cheerful-stay-kempty-kempty-falls",
+   "name": "OYO Home 62168 Cheerful Stay Kempty",
+   "village": "Kempty Falls",
+   "notes": "Guest house",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/30.48953/78.03372",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:the-brigadiers-cottage-kempty-falls",
+   "name": "The Brigadiers Cottage",
+   "village": "Kempty Falls",
+   "notes": "Cottage",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/30.49032/78.03303",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:hotel-prithvi-resort-kempty-falls",
+   "name": "Hotel Prithvi Resort",
+   "village": "Kempty Falls",
+   "notes": "Resort",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/30.48713/78.03166",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:hotel-crown-plaza-kempty-falls",
+   "name": "Hotel Crown Plaza",
+   "village": "Kempty Falls",
+   "notes": "Hotel",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/30.49581/78.02709",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:woodhill-resort-kempty-falls",
+   "name": "Woodhill Resort",
+   "village": "Kempty Falls",
+   "notes": "Resort",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/30.50354/77.99867",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:brv-resorts-kempty-falls",
+   "name": "BRV Resorts",
+   "village": "Kempty Falls",
+   "notes": "Resort",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/30.51058/77.99362",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:v-resorts-mussoorie-kempty-falls",
+   "name": "V Resorts Mussoorie",
+   "village": "Kempty Falls",
+   "notes": "Resort",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/30.51126/77.99433",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:kanatal-camp-kempty-falls",
+   "name": "Kanatal Camp",
+   "village": "Kempty Falls",
+   "notes": "Campsite",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/30.51081/77.98734",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:dandelion-by-the-hills-kempty-falls",
+   "name": "Dandelion by the Hills",
+   "village": "Kempty Falls",
+   "notes": "Resort",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/30.5281/77.9682",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  }
+ ],
+ "mechanics_left_out": [
+  {
+   "near": "Dehradun",
+   "count": 29
+  }
+ ],
+ "stays_left_out": [
+  {
+   "near": "Mussoorie",
+   "count": 672
+  },
+  {
+   "near": "Dehradun",
+   "count": 606
+  },
+  {
+   "near": "Dhanaulti",
+   "count": 73
+  },
+  {
+   "near": "Chakrata",
+   "count": 64
+  }
+ ]
 }

@@ -13105,7 +13105,303 @@
   "Videos not collected."
  ],
  "counts": {
-  "facts": 54
+  "facts": 71
  },
- "built": "2026-10-17"
+ "built": "2026-11-08",
+ "mechanics": [
+  {
+   "id": "mechanic:haopu-bajaj-works-moirang",
+   "name": "Haopu Bajaj Works",
+   "village": "Moirang",
+   "fixes": "Vehicle repair",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/24.37919/93.70587",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  }
+ ],
+ "stays": [
+  {
+   "id": "stay:nhpc-guest-house-moirang",
+   "name": "NHPC Guest House",
+   "village": "Moirang",
+   "notes": "Guest house, 2.9 km off the road",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/24.58318/93.73673",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:phubala-tourist-home-moirang",
+   "name": "Phubala Tourist Home",
+   "village": "Moirang",
+   "notes": "Hotel",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/24.53632/93.76219",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:sangai-moonlight-camping-moirang",
+   "name": "Sangai MoonLight Camping",
+   "village": "Moirang",
+   "notes": "Campsite",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/24.49814/93.77021",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:budha-loktak-homestays-sendra-thanga-manipur-india-moirang",
+   "name": "Budha Loktak Homestays, Sendra Thanga Manipur India",
+   "village": "Moirang",
+   "notes": "Homestay, 2.4 km off the road",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/24.51545/93.79397",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:loktak-aquamarine-floating-homestay-and-campsite-moirang",
+   "name": "Loktak Aquamarine Floating Homestay and Campsite",
+   "village": "Moirang",
+   "notes": "Homestay, 2.6 km off the road",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/24.51574/93.79613",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:loktak-yaibikon-sanglen-thanga-moirang",
+   "name": "Loktak Yaibikon Sanglen Thanga",
+   "village": "Moirang",
+   "notes": "Lodging, 2.4 km off the road",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/24.51475/93.79468",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:moirang-coaching-institute-and-accommodation-moirang",
+   "name": "Moirang Coaching Institute and Accommodation",
+   "village": "Moirang",
+   "notes": "Hostel",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/24.49866/93.77801",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:sendra-park-and-resort-moirang",
+   "name": "Sendra Park and Resort",
+   "village": "Moirang",
+   "notes": "Resort, 2.5 km off the road",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/24.51525/93.79517",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:sendra-tourists-resort-moirang",
+   "name": "Sendra Tourists Resort",
+   "village": "Moirang",
+   "notes": "Resort, 2.2 km off the road",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/24.51297/93.79403",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:hotel-lake-view-moirang",
+   "name": "Hotel Lake View",
+   "village": "Moirang",
+   "notes": "Hotel",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/24.49721/93.76522",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:jati-hotel-moirang",
+   "name": "Jati Hotel",
+   "village": "Moirang",
+   "notes": "Hotel",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/24.49689/93.76529",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:loktak-floating-rest-hut-moirang",
+   "name": "Loktak Floating Rest Hut",
+   "village": "Moirang",
+   "notes": "Hotel",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/24.49721/93.76522",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:k-khomunnom-moirang",
+   "name": "K Khomunnom",
+   "village": "Moirang",
+   "notes": "Hotel",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/24.394/93.69891",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:chawngthu-plaza-champhai",
+   "name": "Chawngthu Plaza",
+   "village": "Champhai",
+   "notes": "Hotel",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/23.47784/93.32393",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:hotel-chawngthu-champhai",
+   "name": "Hotel Chawngthu",
+   "village": "Champhai",
+   "notes": "Hotel",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/23.47795/93.32521",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:tourist-lodge-champhai",
+   "name": "Tourist Lodge",
+   "village": "Champhai",
+   "notes": "Hotel",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/23.4745/93.33281",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  }
+ ],
+ "mechanics_left_out": [
+  {
+   "near": "Aizawl",
+   "count": 19
+  },
+  {
+   "near": "Imphal",
+   "count": 16
+  }
+ ],
+ "stays_left_out": [
+  {
+   "near": "Imphal",
+   "count": 62
+  },
+  {
+   "near": "Aizawl",
+   "count": 52
+  }
+ ]
 }

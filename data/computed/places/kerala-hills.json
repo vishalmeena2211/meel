@@ -1,0 +1,114 @@
+{
+ "slug": "kerala-hills",
+ "fetched": "2026-11-08",
+ "overture_release": "2026-10-22",
+ "stay_radius_m": 3000,
+ "mechanic_radius_m": 2000,
+ "min_confidence": 0.5,
+ "town_limit": 40,
+ "mechanic_town_limit": 10,
+ "near_halt_km": 25,
+ "stays": [],
+ "stays_left_out": [
+  {
+   "near": "Kochi",
+   "count": 677
+  },
+  {
+   "near": "Munnar",
+   "count": 629
+  },
+  {
+   "near": "Kalpetta",
+   "count": 288
+  },
+  {
+   "near": "Kumily",
+   "count": 218
+  },
+  {
+   "near": "Vagamon",
+   "count": 150
+  }
+ ],
+ "mechanics": [
+  {
+   "id": "e1d126ba-ad1e-4378-858d-3759e001f330",
+   "name": "Moolethottiyil TVS Adimaly",
+   "category": "vehicle_dealer",
+   "kind": "motorcycle_dealer",
+   "confidence": 0.53,
+   "lat": 9.98268,
+   "lon": 76.99891,
+   "km_from_start": 111.5,
+   "off_road_m": 103,
+   "near": "Munnar",
+   "what": "Showroom and service centre"
+  },
+  {
+   "id": "98752655-9175-4f63-a90f-000c4bfd8b34",
+   "name": "High Range Residency-Kumily",
+   "category": "senior_living_facility",
+   "kind": "retirement_home",
+   "confidence": 0.59,
+   "lat": 9.60663,
+   "lon": 77.16786,
+   "km_from_start": 210.5,
+   "off_road_m": 66,
+   "near": "Kumily",
+   "what": "Tyres and punctures"
+  },
+  {
+   "id": "86034af0-7287-4700-83a0-ab377dcb51dd",
+   "name": "Kallumkal VOC kumily",
+   "category": "vehicle_service",
+   "kind": "motorcycle_repair",
+   "confidence": 0.59,
+   "lat": 9.59669,
+   "lon": 77.17348,
+   "km_from_start": 210.5,
+   "off_road_m": 1268,
+   "near": "Kumily",
+   "what": "Motorcycle repair"
+  },
+  {
+   "id": "b0e0f13f-c184-4ffa-aad1-3923aa6ebb3e",
+   "name": "MobilSM Bike Care - Udayam Motors, Kalpeta",
+   "category": "automotive_service",
+   "kind": "automotive_repair",
+   "confidence": 0.77,
+   "lat": 11.60443,
+   "lon": 76.08433,
+   "km_from_start": 604.0,
+   "off_road_m": 96,
+   "near": "Kalpetta",
+   "what": "Vehicle repair"
+  },
+  {
+   "id": "80df805b-cbcb-4a9e-91d0-69dbfae732ca",
+   "name": "MR Tyres & Batteries",
+   "category": "automotive_service",
+   "kind": "tire_dealer_and_repair",
+   "confidence": 0.61,
+   "lat": 11.62562,
+   "lon": 76.08703,
+   "km_from_start": 604.7,
+   "off_road_m": 1767,
+   "near": "Kalpetta",
+   "what": "Tyres and punctures"
+  }
+ ],
+ "mechanics_left_out": [
+  {
+   "near": "Kochi",
+   "count": 41
+  }
+ ],
+ "bytes_billed": 0,
+ "source": {
+  "service": "BigQuery public dataset",
+  "data": "Overture Maps Foundation, places theme",
+  "licence": "Community Data License Agreement, Permissive 2.0",
+  "url": "https://docs.overturemaps.org/attribution/"
+ }
+}

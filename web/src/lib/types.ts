@@ -282,6 +282,10 @@ export interface Route {
   built: string;
   mechanics?: Mechanic[];
   stays?: Stay[];
+  /** Towns with too many stays on the map to list, and how many it has. */
+  stays_left_out?: { near: string; count: number }[];
+  /** Towns with too many repair shops on the map to list, and how many it has. */
+  mechanics_left_out?: { near: string; count: number }[];
   sightings?: Sighting[];
   network?: NetworkReport[];
   leg_hours?: LegHours[];
