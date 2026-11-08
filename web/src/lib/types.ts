@@ -159,6 +159,8 @@ export interface Video {
   channel: string | null;
   stretch: string | null;
   filmed: string | null;
+  /** The day YouTube says it was posted. The footage is at least that old. */
+  posted?: string | null;
   bike: string | null;
   checked: boolean;
 }

@@ -42,7 +42,7 @@ export type AskPicture =
       place: { km: number; name: string } | null;
     }
   | { kind: "photo"; src: string; caption: string; credit: string; sourceUrl: string }
-  | { kind: "videos"; items: Array<{ title: string; url: string; channel: string | null; stretch: string | null; filmed: string | null; thumb: string }> }
+  | { kind: "videos"; items: Array<{ title: string; url: string; channel: string | null; stretch: string | null; filmed: string | null; posted?: string | null; thumb: string }> }
   | { kind: "stretches"; rows: Array<{ from: string; to: string; km: number; hours: number }>; total: number }
   | { kind: "offices"; rows: Array<{ title: string; line: string; url: string | null }> }
   | { kind: "call"; number: string; words: string; href: string | null }
