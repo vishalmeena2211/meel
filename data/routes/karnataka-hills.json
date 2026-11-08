@@ -6707,7 +6707,675 @@
   "No video kept for the Agumbe ghat or Coorg; filming dates of the two videos are not known."
  ],
  "counts": {
-  "facts": 350
+  "facts": 390
  },
- "built": "2026-10-17"
+ "built": "2026-11-08",
+ "mechanics": [
+  {
+   "id": "mechanic:royal-enfield-showroom-chikmangaluru-motors-chikkamagaluru",
+   "name": "Royal Enfield Showroom - Chikmangaluru Motors",
+   "village": "Chikkamagaluru",
+   "fixes": "Showroom and service centre, 1.1 km off the road",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/13.32089/75.79375",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "mechanic:bridgestone-select-fast-track-tyres-chikkamagaluru",
+   "name": "Bridgestone Select - Fast Track Tyres",
+   "village": "Chikkamagaluru",
+   "fixes": "Tyres and punctures, 1.0 km off the road",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/13.32693/75.76297",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "mechanic:nayana-motors-hero-motocorp-chikkamagaluru",
+   "name": "Nayana Motors - Hero MotoCorp",
+   "village": "Chikkamagaluru",
+   "fixes": "Showroom and service centre",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/13.32759/75.76434",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "mechanic:tvs-tag-wheels-llp-chikkamagaluru",
+   "name": "TVS - Tag Wheels LLP",
+   "village": "Chikkamagaluru",
+   "fixes": "Vehicle repair",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/13.32767/75.76645",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "mechanic:supreme-bajaj-chikkamagaluru",
+   "name": "Supreme Bajaj",
+   "village": "Chikkamagaluru",
+   "fixes": "Showroom and service centre",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/13.32837/75.77246",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "mechanic:hero-electric-at-chikmagalur-shimoga-mullayanagiri",
+   "name": "Hero Electric at Chikmagalur & Shimoga",
+   "village": "Mullayanagiri",
+   "fixes": "Showroom and service centre",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/13.32923/75.77422",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "mechanic:sona-tvs-madkeri-madikeri",
+   "name": "Sona TVS Madkeri",
+   "village": "Madikeri",
+   "fixes": "Vehicle repair",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/12.42254/75.7385",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "mechanic:yokohama-club-network-c-mohan-service-station-and-sales-dech",
+   "name": "Yokohama Club Network - C Mohan Service Station And Sales, Dechoor",
+   "village": "Madikeri",
+   "fixes": "Tyres and punctures",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/12.42321/75.74127",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "mechanic:yokohama-club-network-coorg-wheel-alignment-madikeri",
+   "name": "Yokohama Club Network - Coorg Wheel Alignment",
+   "village": "Madikeri",
+   "fixes": "Tyres and punctures",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/12.45102/75.94481",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "mechanic:royal-enfield-showroom-madikeri",
+   "name": "Royal Enfield Showroom",
+   "village": "Madikeri",
+   "fixes": "Showroom and service centre",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/12.4547/75.95319",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "mechanic:jk-tyre-steel-wheels-safe-wheel-tyre-care-madikeri",
+   "name": "JK Tyre Steel Wheels, Safe Wheel Tyre Care",
+   "village": "Madikeri",
+   "fixes": "Tyres and punctures",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/12.45552/75.95702",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "mechanic:apollo-tyres-h-a-tyres-madikeri",
+   "name": "Apollo Tyres - H A Tyres",
+   "village": "Madikeri",
+   "fixes": "Tyres and punctures",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/12.45748/75.96572",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "mechanic:vredestein-tyres-madikeri",
+   "name": "Vredestein Tyres",
+   "village": "Madikeri",
+   "fixes": "Tyres and punctures",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/12.45416/75.96343",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "mechanic:apollo-tyres-and-accuracy-wheel-alignment-madikeri",
+   "name": "Apollo Tyres and Accuracy Wheel Alignment",
+   "village": "Madikeri",
+   "fixes": "Tyres and punctures",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/12.45383/75.96374",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "mechanic:abhyuday-motors-royal-enfield-madikeri",
+   "name": "Abhyuday Motors - Royal Enfield",
+   "village": "Madikeri",
+   "fixes": "Showroom and service centre",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/12.45195/75.9672",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  }
+ ],
+ "stays": [
+  {
+   "id": "stay:prakruthi-home-stay-sringeri",
+   "name": "Prakruthi Home Stay",
+   "village": "Sringeri",
+   "notes": "Homestay",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/13.36596/75.40408",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:prakruthi-homestay-sringeri",
+   "name": "Prakruthi Homestay",
+   "village": "Sringeri",
+   "notes": "Homestay, 1.2 km off the road",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/13.361/75.39108",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:delightful-homestay-standard-double-or-twin-room-sringeri",
+   "name": "DELIGHTFUL HOMESTAY - Standard Double Or Twin Room",
+   "village": "Sringeri",
+   "notes": "Homestay",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/13.40515/75.37185",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:keremane-home-stay-sringeri",
+   "name": "Keremane Home Stay",
+   "village": "Sringeri",
+   "notes": "Homestay, 1.3 km off the road",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/13.42389/75.28675",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:bhide-homestay-sringeri",
+   "name": "Bhide Homestay",
+   "village": "Sringeri",
+   "notes": "Homestay",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/13.41721/75.27224",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:hotel-advaith-lancer-sringeri",
+   "name": "Hotel Advaith Lancer",
+   "village": "Sringeri",
+   "notes": "Hotel",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/13.42268/75.26198",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:shree-poorna-lodge-sringeri",
+   "name": "Shree Poorna Lodge",
+   "village": "Sringeri",
+   "notes": "Lodging",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/13.41739/75.25345",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:hegde-residency-sringeri",
+   "name": "Hegde Residency",
+   "village": "Sringeri",
+   "notes": "Hotel, 1.4 km off the road",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/13.41999/75.24464",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:hosamane-farm-inn-sringeri",
+   "name": "Hosamane Farm Inn",
+   "village": "Sringeri",
+   "notes": "Hotel",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/13.42379/75.25134",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:hotel-hoysala-grand-sringeri",
+   "name": "Hotel Hoysala Grand",
+   "village": "Sringeri",
+   "notes": "Hotel, 1.1 km off the road",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/13.42129/75.24663",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:hotel-sri-ganesh-sringeri",
+   "name": "Hotel Sri Ganesh",
+   "village": "Sringeri",
+   "notes": "Hotel",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/13.41734/75.25253",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:hotel-suprabatha-sringeri",
+   "name": "Hotel Suprabatha",
+   "village": "Sringeri",
+   "notes": "Hotel",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/13.41766/75.25227",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:kanyakumari-lodge-sringeri",
+   "name": "Kanyakumari Lodge",
+   "village": "Sringeri",
+   "notes": "Lodging",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/13.41881/75.25332",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:sooryalaya-service-apartments-sringeri",
+   "name": "Sooryalaya Service Apartments",
+   "village": "Sringeri",
+   "notes": "Hotel, 1.1 km off the road",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/13.41711/75.25027",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:kanaka-heritage-sringeri",
+   "name": "Kanaka Heritage",
+   "village": "Sringeri",
+   "notes": "Hotel",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/13.4258/75.2535",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:hotel-sharada-comforts-sringeri",
+   "name": "Hotel Sharada Comforts",
+   "village": "Sringeri",
+   "notes": "Hotel",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/13.42859/75.25615",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:krushikoota-homestay-sringeri",
+   "name": "Krushikoota Homestay",
+   "village": "Sringeri",
+   "notes": "Homestay",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/13.4889/75.19814",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:hiremane-residency-sringeri",
+   "name": "Hiremane residency - ಹಿರೇಮನೆ ರೆಸಿಡೆನ್ಸಿ",
+   "village": "Sringeri",
+   "notes": "Lodging",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/13.50021/75.20172",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:spot-on-46700-samrat-residency-agumbe-agumbe",
+   "name": "SPOT ON 46700 Samrat Residency Agumbe",
+   "village": "Agumbe",
+   "notes": "Resort",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/13.50777/75.18292",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:mallya-residency-agumbe",
+   "name": "Mallya Residency",
+   "village": "Agumbe",
+   "notes": "Hotel",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/13.50977/75.09637",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:dodda-mane-agumbe",
+   "name": "Dodda Mane",
+   "village": "Agumbe",
+   "notes": "Hotel",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/13.50935/75.09594",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:agumbe-forest-guest-house-agumbe",
+   "name": "Agumbe Forest Guest House",
+   "village": "Agumbe",
+   "notes": "Guest house",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/13.50555/75.09147",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:hotel-seethanadi-agumbe",
+   "name": "Hotel Seethanadi",
+   "village": "Agumbe",
+   "notes": "Hotel",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/13.47598/75.02978",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:sita-nadi-nature-camp-agumbe",
+   "name": "Sita Nadi Nature Camp",
+   "village": "Agumbe",
+   "notes": "Campsite",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/13.4759/75.02979",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:seethanadi-nature-camp-agumbe",
+   "name": "Seethanadi Nature Camp",
+   "village": "Agumbe",
+   "notes": "Campsite, 1.0 km off the road",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/13.4798/75.01882",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  }
+ ],
+ "mechanics_left_out": [
+  {
+   "near": "Bengaluru",
+   "count": 202
+  }
+ ],
+ "stays_left_out": [
+  {
+   "near": "Bengaluru",
+   "count": 1575
+  },
+  {
+   "near": "Madikeri",
+   "count": 477
+  },
+  {
+   "near": "Chikkamagaluru",
+   "count": 141
+  },
+  {
+   "near": "Mullayanagiri",
+   "count": 69
+  }
+ ]
 }

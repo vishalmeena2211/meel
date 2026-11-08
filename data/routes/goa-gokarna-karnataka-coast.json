@@ -5268,7 +5268,458 @@
   "Videos: the pages give upload dates, not filming dates, so 'filmed' is filled only where the title names a date. Uploads, in order: 2025-12, 2022-02."
  ],
  "counts": {
-  "facts": 140
+  "facts": 165
  },
- "built": "2026-10-17"
+ "built": "2026-11-08",
+ "mechanics": [
+  {
+   "id": "mechanic:mobilsm-bike-care-abdul-stores-palolem",
+   "name": "MobilSM Bike Care - Abdul Stores",
+   "village": "Palolem",
+   "fixes": "Vehicle repair",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/15.17884/73.99821",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "mechanic:royal-enfield-showroom-saini-motors-palolem",
+   "name": "Royal Enfield Showroom - Saini Motors",
+   "village": "Palolem",
+   "fixes": "Showroom and service centre",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/15.03395/74.02784",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "mechanic:palolem-palolem",
+   "name": "Palolem",
+   "village": "Palolem",
+   "fixes": "Motorcycle repair",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/15.01206/74.02145",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "mechanic:royal-enfield-service-center-karwar",
+   "name": "Royal Enfield Service Center",
+   "village": "Karwar",
+   "fixes": "Motorcycle repair, 1.5 km off the road",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/14.81152/74.14583",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "mechanic:royal-enfield-showroom-torq-motors-karwar",
+   "name": "Royal Enfield Showroom - Torq Motors",
+   "village": "Karwar",
+   "fixes": "Showroom and service centre, 1.5 km off the road",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/14.81151/74.14584",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "mechanic:mrf-tyres-exclusive-anmol-tyres-karwar",
+   "name": "MRF Tyres Exclusive - Anmol Tyres",
+   "village": "Karwar",
+   "fixes": "Tyres and punctures",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/14.81063/74.12941",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "mechanic:mrf-tyres-exclusive-vishwashanti-tyres-gokarna",
+   "name": "MRF Tyres Exclusive - Vishwashanti Tyres",
+   "village": "Gokarna",
+   "fixes": "Tyres and punctures",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/14.65682/74.31363",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "mechanic:mobilsm-bike-care-thirupathi-auto-spares-gokarna",
+   "name": "MobilSM Bike Care - Thirupathi Auto Spares",
+   "village": "Gokarna",
+   "fixes": "Vehicle repair",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/14.54785/74.32156",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "mechanic:s-k-motor-bajaj-murudeshwar",
+   "name": "S K Motor Bajaj",
+   "village": "Murudeshwar",
+   "fixes": "Showroom and service centre",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/14.18351/74.48305",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "mechanic:jeevottam-tvs-murudeshwar",
+   "name": "Jeevottam TVS",
+   "village": "Murudeshwar",
+   "fixes": "Showroom and service centre",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/14.03065/74.52794",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "mechanic:royal-enfield-showroom-brahmi-motors-murudeshwar",
+   "name": "Royal Enfield Showroom - Brahmi Motors",
+   "village": "Murudeshwar",
+   "fixes": "Showroom and service centre",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/14.01337/74.53355",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "mechanic:jk-tyre-steel-wheels-wheel-mart-murudeshwar",
+   "name": "JK Tyre Steel Wheels, Wheel Mart",
+   "village": "Murudeshwar",
+   "fixes": "Tyres and punctures",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/14.00353/74.53902",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "mechanic:enfield-town-bhatkal-murudeshwar",
+   "name": "Enfield Town Bhatkal",
+   "village": "Murudeshwar",
+   "fixes": "Vehicle repair",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/13.99363/74.55087",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "mechanic:mrf-tyres-exclusive-united-tyres-murudeshwar",
+   "name": "MRF Tyres Exclusive - United Tyres",
+   "village": "Murudeshwar",
+   "fixes": "Tyres and punctures",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/13.99249/74.5568",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "mechanic:cars-murudeshwar",
+   "name": "CARS",
+   "village": "Murudeshwar",
+   "fixes": "Tyres and punctures",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/13.99324/74.5586",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "mechanic:girija-tvs-motors-maravanthe",
+   "name": "Girija TVS Motors",
+   "village": "Maravanthe",
+   "fixes": "Showroom and service centre",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/13.85852/74.62918",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "mechanic:ideal-tyres-maravanthe",
+   "name": "Ideal Tyres",
+   "village": "Maravanthe",
+   "fixes": "Tyres and punctures",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/13.68833/74.65407",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "mechanic:apollo-tyres-kamath-kamath-maravanthe",
+   "name": "Apollo Tyres - Kamath & Kamath",
+   "village": "Maravanthe",
+   "fixes": "Tyres and punctures",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/13.63559/74.69775",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "mechanic:kamath-sons-maravanthe",
+   "name": "Kamath & Sons",
+   "village": "Maravanthe",
+   "fixes": "Tyres and punctures",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/13.62623/74.69351",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "mechanic:mrf-tyres-exclusive-shri-siddhi-vinayaka-tyre-maravanthe",
+   "name": "MRF Tyres Exclusive - Shri Siddhi Vinayaka Tyre",
+   "village": "Maravanthe",
+   "fixes": "Tyres and punctures",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/13.60355/74.69503",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "mechanic:vinayaka-suzuki-maravanthe",
+   "name": "Vinayaka Suzuki",
+   "village": "Maravanthe",
+   "fixes": "Motorcycle repair",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/13.6033/74.69489",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "mechanic:kediyoor-honda-showroom-maravanthe",
+   "name": "Kediyoor Honda Showroom",
+   "village": "Maravanthe",
+   "fixes": "Showroom and service centre",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/13.60071/74.6956",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "mechanic:sai-radha-tvs-maravanthe",
+   "name": "Sai Radha TVS",
+   "village": "Maravanthe",
+   "fixes": "Showroom and service centre",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/13.59708/74.69517",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "mechanic:kediyoor-honda-maravanthe",
+   "name": "Kediyoor Honda",
+   "village": "Maravanthe",
+   "fixes": "Showroom and service centre",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/13.58388/74.69859",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "mechanic:harish-tyre-works-maravanthe",
+   "name": "Harish tyre works",
+   "village": "Maravanthe",
+   "fixes": "Tyres and punctures",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/13.55494/74.70128",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  }
+ ],
+ "stays": [],
+ "mechanics_left_out": [
+  {
+   "near": "Mangaluru",
+   "count": 43
+  },
+  {
+   "near": "Udupi",
+   "count": 19
+  },
+  {
+   "near": "Panaji",
+   "count": 15
+  }
+ ],
+ "stays_left_out": [
+  {
+   "near": "Panaji",
+   "count": 311
+  },
+  {
+   "near": "Mangaluru",
+   "count": 238
+  },
+  {
+   "near": "Palolem",
+   "count": 220
+  },
+  {
+   "near": "Udupi",
+   "count": 122
+  },
+  {
+   "near": "Gokarna",
+   "count": 83
+  },
+  {
+   "near": "Maravanthe",
+   "count": 62
+  },
+  {
+   "near": "Karwar",
+   "count": 49
+  },
+  {
+   "near": "Murudeshwar",
+   "count": 41
+  }
+ ]
 }

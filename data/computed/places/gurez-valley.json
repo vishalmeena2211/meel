@@ -1,0 +1,202 @@
+{
+ "slug": "gurez-valley",
+ "fetched": "2026-11-08",
+ "overture_release": "2026-10-22",
+ "stay_radius_m": 3000,
+ "mechanic_radius_m": 2000,
+ "min_confidence": 0.5,
+ "town_limit": 40,
+ "mechanic_town_limit": 10,
+ "near_halt_km": 25,
+ "stays": [
+  {
+   "id": "fd73bd7a-30ee-48db-98da-c5de3be1ac0c",
+   "name": "Afsara Hotel and Restaurant",
+   "category": "hotel",
+   "kind": "hotel",
+   "confidence": 0.62,
+   "lat": 34.65676,
+   "lon": 74.68496,
+   "km_from_start": 126.5,
+   "off_road_m": 2169,
+   "near": "Dawar",
+   "what": "Hotel"
+  },
+  {
+   "id": "9300280a-2305-49bc-86ee-684c437572ff",
+   "name": "Gurez Camping Margs",
+   "category": "campground",
+   "kind": "campground",
+   "confidence": 0.54,
+   "lat": 34.65372,
+   "lon": 74.77183,
+   "km_from_start": 133.9,
+   "off_road_m": 438,
+   "near": "Dawar",
+   "what": "Campsite"
+  },
+  {
+   "id": "0d31d453-4de2-474f-8f75-1b46f716f175",
+   "name": "Calm-n-peace",
+   "category": "hotel",
+   "kind": "hotel",
+   "confidence": 0.58,
+   "lat": 34.65577,
+   "lon": 74.78872,
+   "km_from_start": 136.9,
+   "off_road_m": 315,
+   "near": "Dawar",
+   "what": "Hotel"
+  },
+  {
+   "id": "1507e86e-a1ca-4397-b84c-77809b6250dc",
+   "name": "Guest house gurez al mukhtar",
+   "category": "hotel",
+   "kind": "hotel",
+   "confidence": 0.59,
+   "lat": 34.63271,
+   "lon": 74.80548,
+   "km_from_start": 140.0,
+   "off_road_m": 698,
+   "near": "Dawar",
+   "what": "Guest house"
+  },
+  {
+   "id": "44404d50-54e8-46da-9afc-009200508926",
+   "name": "Gurez Guest House",
+   "category": "lodging",
+   "kind": "lodging",
+   "confidence": 0.93,
+   "lat": 34.63447,
+   "lon": 74.80835,
+   "km_from_start": 140.1,
+   "off_road_m": 401,
+   "near": "Dawar",
+   "what": "Guest house"
+  },
+  {
+   "id": "e4cb3798-e68e-4516-b664-84b00346a756",
+   "name": "Gurez Retreat",
+   "category": "hotel",
+   "kind": "hotel",
+   "confidence": 0.58,
+   "lat": 34.63635,
+   "lon": 74.81343,
+   "km_from_start": 140.5,
+   "off_road_m": 5,
+   "near": "Dawar",
+   "what": "Hotel"
+  },
+  {
+   "id": "d02ac548-8116-4964-9bc5-08e3653bb190",
+   "name": "D sheikh's Resort Gurez",
+   "category": "hotel",
+   "kind": "hotel",
+   "confidence": 0.74,
+   "lat": 34.63447,
+   "lon": 74.83691,
+   "km_from_start": 140.8,
+   "off_road_m": 1867,
+   "near": "Dawar",
+   "what": "Resort"
+  },
+  {
+   "id": "6f3091ac-6b4d-44c9-869e-de620713fa4c",
+   "name": "D' SHIEKH's Re7ort",
+   "category": "hotel",
+   "kind": "hotel",
+   "confidence": 0.72,
+   "lat": 34.63304,
+   "lon": 74.82934,
+   "km_from_start": 140.8,
+   "off_road_m": 1193,
+   "near": "Dawar",
+   "what": "Hotel"
+  },
+  {
+   "id": "dd9c1efe-c117-4302-82b9-0b24cbb946dc",
+   "name": "Gurez Tourist Rest House",
+   "category": "hotel",
+   "kind": "hotel",
+   "confidence": 0.54,
+   "lat": 34.63249,
+   "lon": 74.83902,
+   "km_from_start": 140.8,
+   "off_road_m": 2077,
+   "near": "Dawar",
+   "what": "Hotel"
+  },
+  {
+   "id": "ecbb1701-7766-419e-b822-f427ee424e40",
+   "name": "Gurez Valley Trekkers",
+   "category": "campground",
+   "kind": "campground",
+   "confidence": 0.5,
+   "lat": 34.63445,
+   "lon": 74.83965,
+   "km_from_start": 140.8,
+   "off_road_m": 2118,
+   "near": "Dawar",
+   "what": "Campsite"
+  },
+  {
+   "id": "e0f16631-f88e-4dd7-afa3-ad7bb76cf123",
+   "name": "Kaka Palace Guest House and Hotels",
+   "category": "resort",
+   "kind": "resort",
+   "confidence": 0.85,
+   "lat": 34.633,
+   "lon": 74.83549,
+   "km_from_start": 140.8,
+   "off_road_m": 1750,
+   "near": "Dawar",
+   "what": "Guest house"
+  },
+  {
+   "id": "0abb264d-aedb-4d31-9c2d-ffbb96e4835b",
+   "name": "Kaka Palace Hotel and Restaurant",
+   "category": "lodging",
+   "kind": "lodging",
+   "confidence": 0.98,
+   "lat": 34.63402,
+   "lon": 74.83694,
+   "km_from_start": 140.8,
+   "off_road_m": 1872,
+   "near": "Dawar",
+   "what": "Lodging"
+  },
+  {
+   "id": "6ecce47e-3dfd-4e43-966f-4b4c347678bc",
+   "name": "The Gurez Inn",
+   "category": "hotel",
+   "kind": "hotel",
+   "confidence": 0.87,
+   "lat": 34.63316,
+   "lon": 74.83168,
+   "km_from_start": 140.8,
+   "off_road_m": 1402,
+   "near": "Dawar",
+   "what": "Hotel"
+  }
+ ],
+ "stays_left_out": [
+  {
+   "near": "Srinagar",
+   "count": 616
+  }
+ ],
+ "mechanics": [],
+ "mechanics_left_out": [
+  {
+   "near": "Srinagar",
+   "count": 29
+  }
+ ],
+ "bytes_billed": 0,
+ "source": {
+  "service": "BigQuery public dataset",
+  "data": "Overture Maps Foundation, places theme",
+  "licence": "Community Data License Agreement, Permissive 2.0",
+  "url": "https://docs.overturemaps.org/attribution/"
+ }
+}

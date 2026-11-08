@@ -8,7 +8,10 @@ This asks it, once per route, for places within a corridor around the road, and 
   stays      hotels, guest houses, homestays, hostels, campsites, near a halt that has only a few of them.
              A town with more than TOWN_LIMIT is left out and named instead: a rider needs no list of Manali's hotels.
   mechanics  motorcycle repair, tyre shops, and the bike makers' own service centres. Not rentals, car dealers or
-             car washes.
+             car washes. A town with more than MECHANIC_TOWN_LIMIT is named instead, as for stays.
+
+Each place is named after the halt nearest it along the road, and kept only within NEAR_HALT_KM of one. Roads of
+LONGEST_KM or more, which run city to city, get no lists.
 
 Places below MIN_CONFIDENCE, or marked as closed, are dropped, and so is a second listing of the same place: the same
 name within 3 km, or one name starting like the other within 1 km. Phone numbers are not kept: Meel shows a phone
@@ -44,6 +47,13 @@ STAY_RADIUS_M = 3000
 MECHANIC_RADIUS_M = 2000
 MIN_CONFIDENCE = 0.5
 TOWN_LIMIT = 40
+MECHANIC_TOWN_LIMIT = 10
+# A place is named after a halt only when it is this close to it along the road. On a long road through the plains the
+# halts are cities hundreds of kilometres apart, and a shop between them is near neither.
+NEAR_HALT_KM = 25
+# Roads this long run city to city across the country. Their halts are big cities, so there is nothing to list, as
+# fuel pumps are not listed one by one on long roads either.
+LONGEST_KM = 3000
 SAME_PLACE_M = 1000
 
 STAY_CATEGORIES = ("hotel", "resort", "lodging", "private_lodging", "campground", "bed_and_breakfast")
@@ -56,7 +66,8 @@ STAY_WORDS = {
 }
 BIKE_MAKERS = r"enfield|ktm|husqvarna|bajaj|hero|honda|tvs|yamaha|suzuki|kawasaki|triumph|harley|jawa|yezdi|benelli|bmw motorrad"
 BIKE_WORDS = r"bike|motor ?cycle|two.?wheel|2.?wheel|puncture|tyre|tire|" + BIKE_MAKERS
-NOT_A_MECHANIC = r"rent|rental|hire|tour|travels|car wash|maruti|hyundai|toyota|ford|mahindra|tata motors|kia|skoda"
+NOT_A_MECHANIC = (r"rent|rental|hire|tour|travels|car wash|maruti|hyundai|toyota|ford|mahindra|tata motors|kia|skoda|"
+                  r"hospital|nursing|clinic|school|college|hotel|restaurant|bank|temple|church|mosque")
 # A stay's own name says what it is more often than its category does: "Snowtown Homestay" is listed as a hotel.
 NAME_WORDS = [(r"home ?stay", "Homestay"), (r"guest ?house", "Guest house"), (r"hostel", "Hostel"),
               (r"\bcamps?\b|camping|\btents?\b", "Campsite"), (r"cottage", "Cottage"), (r"resort", "Resort")]
@@ -189,11 +200,20 @@ def places(args):
         release = release or release_date()
         rt = load(rpath, None)
         line, total = rt["line"], rt["distance_km"]
+        if total >= LONGEST_KM:
+            save(path, {"slug": r["slug"], "fetched": TODAY, "overture_release": release, "stays": [], "stays_left_out": [],
+                        "mechanics": [], "mechanics_left_out": [], "bytes_billed": 0,
+                        "note": f"Not read: a road of {total:.0f} km runs city to city, with nothing to list between."})
+            print(f"places {r['slug']}: skipped, {total:.0f} km")
+            continue
+        q_line = rdp(line, 0.004 if total < 800 else 0.02)
+        # Places are measured against a lightly thinned line (within about 100 m of the road), so a long route with
+        # thousands of listings takes seconds rather than many minutes.
+        line = rdp(line, 0.001)
         cum = [0.0]
         for a, b in zip(line, line[1:]):
             cum.append(cum[-1] + hav((a[1], a[0]), (b[1], b[0])))
         scale = total / cum[-1] if cum[-1] else 1.0
-        q_line = rdp(line, 0.004 if total < 800 else 0.02)
         if len(q_line) > 400:
             q_line = q_line[:: math.ceil(len(q_line) / 400)] + [q_line[-1]]
         try:
@@ -210,38 +230,48 @@ def places(args):
                  "lon": round(float(row["lon"]), 5)}
             if not p["name"]:
                 continue
+            fixes = mechanic_words(p)
+            what = None if fixes else stay_words(p)
+            if not (fixes or what):
+                continue
             km, off = project(line, cum, (p["lat"], p["lon"]))
             km = round(km * scale, 1)
             # The halt nearest along the road, as fuel pumps are placed, not the nearest as the crow flies.
             halt = min(halts, key=lambda w: abs(w["km_from_start"] - km))
+            if abs(halt["km_from_start"] - km) > NEAR_HALT_KM:
+                continue
             p |= {"km_from_start": km, "off_road_m": round(off), "near": halt["name"]}
-            fixes = mechanic_words(p)
             if fixes and off <= MECHANIC_RADIUS_M:
                 mechanics.append(p | {"what": fixes})
-                continue
-            what = stay_words(p)
-            if what and off <= STAY_RADIUS_M:
+            elif what and off <= STAY_RADIUS_M:
                 stays.append(p | {"what": what})
 
         stays, mechanics = without_repeats(stays), without_repeats(mechanics)
-        by_halt = {}
-        for s in stays:
-            by_halt[s["near"]] = by_halt.get(s["near"], 0) + 1
-        crowded = {h for h, n in by_halt.items() if n > TOWN_LIMIT}
-        left_out = [{"near": h, "count": by_halt[h]} for h in sorted(crowded, key=lambda h: -by_halt[h])]
-        stays = [s for s in stays if s["near"] not in crowded]
+        stays, left_out = thinned(stays, TOWN_LIMIT)
+        mechanics, mechanics_left_out = thinned(mechanics, MECHANIC_TOWN_LIMIT)
 
         save(path, {"slug": r["slug"], "fetched": TODAY, "overture_release": release,
                     "stay_radius_m": STAY_RADIUS_M, "mechanic_radius_m": MECHANIC_RADIUS_M,
                     "min_confidence": MIN_CONFIDENCE, "town_limit": TOWN_LIMIT,
-                    "stays": stays, "stays_left_out": left_out, "mechanics": mechanics,
+                    "mechanic_town_limit": MECHANIC_TOWN_LIMIT, "near_halt_km": NEAR_HALT_KM,
+                    "stays": stays, "stays_left_out": left_out,
+                    "mechanics": mechanics, "mechanics_left_out": mechanics_left_out,
                     "bytes_billed": billed,
                     "source": {"service": "BigQuery public dataset", "data": "Overture Maps Foundation, places theme",
                                "licence": "Community Data License Agreement, Permissive 2.0",
                                "url": "https://docs.overturemaps.org/attribution/"}})
-        print(f"places {r['slug']}: {len(stays)} stays, {len(mechanics)} mechanics, "
-              f"{sum(x['count'] for x in left_out)} stays left out in {', '.join(x['near'] for x in left_out) or 'no town'}"
-              f" · {billed / 1e6:.1f} MB")
+        print(f"places {r['slug']}: {len(stays)} stays, {len(mechanics)} mechanics; left out in "
+              f"{', '.join(x['near'] for x in left_out + mechanics_left_out) or 'no town'} · {billed / 1e6:.1f} MB")
+
+
+def thinned(items, limit):
+    """Items at halts with no more than limit of them; and, for each halt with more, its name and count."""
+    by_halt = {}
+    for x in items:
+        by_halt[x["near"]] = by_halt.get(x["near"], 0) + 1
+    crowded = {h for h, n in by_halt.items() if n > limit}
+    left_out = [{"near": h, "count": by_halt[h]} for h in sorted(crowded, key=lambda h: -by_halt[h])]
+    return [x for x in items if x["near"] not in crowded], left_out
 
 
 if __name__ == "__main__":

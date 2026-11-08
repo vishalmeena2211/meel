@@ -1,0 +1,246 @@
+{
+ "slug": "konkan-coast",
+ "fetched": "2026-11-08",
+ "overture_release": "2026-10-22",
+ "stay_radius_m": 3000,
+ "mechanic_radius_m": 2000,
+ "min_confidence": 0.5,
+ "town_limit": 40,
+ "mechanic_town_limit": 10,
+ "near_halt_km": 25,
+ "stays": [],
+ "stays_left_out": [
+  {
+   "near": "Mumbai",
+   "count": 589
+  },
+  {
+   "near": "Alibag",
+   "count": 557
+  },
+  {
+   "near": "Panaji",
+   "count": 534
+  },
+  {
+   "near": "Malvan",
+   "count": 186
+  },
+  {
+   "near": "Dapoli",
+   "count": 178
+  },
+  {
+   "near": "Murud",
+   "count": 114
+  },
+  {
+   "near": "Ratnagiri",
+   "count": 92
+  },
+  {
+   "near": "Ganpatipule",
+   "count": 84
+  },
+  {
+   "near": "Guhagar",
+   "count": 58
+  },
+  {
+   "near": "Harihareshwar",
+   "count": 51
+  }
+ ],
+ "mechanics": [
+  {
+   "id": "70cdc346-112c-4927-aff4-ba16be4817c8",
+   "name": "MRF Tyres Exclusive - Pooja Tyres",
+   "category": "automotive_service",
+   "kind": "tire_shop",
+   "confidence": 0.77,
+   "lat": 18.33278,
+   "lon": 72.96565,
+   "km_from_start": 141.2,
+   "off_road_m": 1100,
+   "near": "Murud",
+   "what": "Tyres and punctures"
+  },
+  {
+   "id": "04d0a113-7ca7-4995-a093-f759fb106b48",
+   "name": "MRF Tyres Exclusive - United Tyre Center",
+   "category": "automotive_service",
+   "kind": "tire_shop",
+   "confidence": 0.77,
+   "lat": 17.75953,
+   "lon": 73.17814,
+   "km_from_start": 276.0,
+   "off_road_m": 0,
+   "near": "Dapoli",
+   "what": "Tyres and punctures"
+  },
+  {
+   "id": "56a228e4-12f4-4f0c-bda0-ee49cf86909e",
+   "name": "TVS - Karmarkar Auto",
+   "category": "automotive_service",
+   "kind": "automotive_service",
+   "confidence": 0.89,
+   "lat": 17.75896,
+   "lon": 73.18185,
+   "km_from_start": 276.4,
+   "off_road_m": 19,
+   "near": "Dapoli",
+   "what": "Vehicle repair"
+  },
+  {
+   "id": "4f5a6034-891f-4489-bd15-221863e48ad0",
+   "name": "Jagrut Honda Ratnagiri",
+   "category": "vehicle_dealer",
+   "kind": "motorcycle_dealer",
+   "confidence": 0.84,
+   "lat": 16.9923,
+   "lon": 73.29217,
+   "km_from_start": 393.8,
+   "off_road_m": 190,
+   "near": "Ratnagiri",
+   "what": "Showroom and service centre"
+  },
+  {
+   "id": "3586ce97-c2d3-4e2f-9e43-2c8a77a43974",
+   "name": "CEAT Shoppe, Laxmi Tyre Service",
+   "category": "automotive_service",
+   "kind": "tire_shop",
+   "confidence": 0.85,
+   "lat": 16.99165,
+   "lon": 73.32305,
+   "km_from_start": 397.4,
+   "off_road_m": 24,
+   "near": "Ratnagiri",
+   "what": "Tyres and punctures"
+  },
+  {
+   "id": "251f548a-6b41-4eae-b447-d31e44553927",
+   "name": "TVS iQube - R K MOTORS",
+   "category": "vehicle_dealer",
+   "kind": "motorcycle_dealer",
+   "confidence": 0.77,
+   "lat": 16.99645,
+   "lon": 73.33363,
+   "km_from_start": 398.7,
+   "off_road_m": 67,
+   "near": "Ratnagiri",
+   "what": "Showroom and service centre"
+  },
+  {
+   "id": "c2154d01-93d2-44a2-8ab1-a2b3392c0c8b",
+   "name": "Continental Tyres - Laxmi Tyre Service",
+   "category": "automotive_service",
+   "kind": "tire_shop",
+   "confidence": 0.85,
+   "lat": 16.99595,
+   "lon": 73.33442,
+   "km_from_start": 398.8,
+   "off_road_m": 10,
+   "near": "Ratnagiri",
+   "what": "Tyres and punctures"
+  },
+  {
+   "id": "3cf28286-b01c-4678-bdd5-c29672a5cd74",
+   "name": "Yokohama Club Network - Shree Swami Samarth Tyres",
+   "category": "automotive_service",
+   "kind": "tire_shop",
+   "confidence": 0.85,
+   "lat": 16.99576,
+   "lon": 73.33994,
+   "km_from_start": 399.4,
+   "off_road_m": 21,
+   "near": "Ratnagiri",
+   "what": "Tyres and punctures"
+  },
+  {
+   "id": "c4a9d6a2-8bd8-4309-94d9-52a79cd41117",
+   "name": "Royal Enfield Showroom",
+   "category": "vehicle_dealer",
+   "kind": "motorcycle_dealer",
+   "confidence": 1.0,
+   "lat": 16.99663,
+   "lon": 73.3444,
+   "km_from_start": 399.9,
+   "off_road_m": 67,
+   "near": "Ratnagiri",
+   "what": "Showroom and service centre"
+  },
+  {
+   "id": "be9276c7-7eaa-4895-be4b-b95e4800e383",
+   "name": "RK TVS Ratnagiri",
+   "category": "vehicle_dealer",
+   "kind": "motorcycle_dealer",
+   "confidence": 0.91,
+   "lat": 17.02062,
+   "lon": 73.36987,
+   "km_from_start": 403.9,
+   "off_road_m": 1951,
+   "near": "Ratnagiri",
+   "what": "Showroom and service centre"
+  },
+  {
+   "id": "a27e11cd-5329-452d-82e9-9c0376196e8f",
+   "name": "CEAT Tyres",
+   "category": "automotive_service",
+   "kind": "tire_dealer_and_repair",
+   "confidence": 0.71,
+   "lat": 16.9833,
+   "lon": 73.4833,
+   "km_from_start": 417.8,
+   "off_road_m": 445,
+   "near": "Ratnagiri",
+   "what": "Tyres and punctures"
+  },
+  {
+   "id": "62f5b7bd-0fe0-4109-b6aa-01ca774d3045",
+   "name": "Shree Ram Tyres 3D Wheel Alignment,Katta,Malvan",
+   "category": "automotive_service",
+   "kind": "tire_dealer_and_repair",
+   "confidence": 0.72,
+   "lat": 16.08559,
+   "lon": 73.61719,
+   "km_from_start": 548.6,
+   "off_road_m": 17,
+   "near": "Malvan",
+   "what": "Tyres and punctures"
+  },
+  {
+   "id": "9f544c19-e843-4fd9-9b24-22b555b5a967",
+   "name": "TVS - Malvan",
+   "category": "automotive_service",
+   "kind": "automotive_service",
+   "confidence": 0.85,
+   "lat": 16.06074,
+   "lon": 73.50334,
+   "km_from_start": 563.3,
+   "off_road_m": 43,
+   "near": "Malvan",
+   "what": "Vehicle repair"
+  }
+ ],
+ "mechanics_left_out": [
+  {
+   "near": "Mumbai",
+   "count": 45
+  },
+  {
+   "near": "Panaji",
+   "count": 32
+  },
+  {
+   "near": "Alibag",
+   "count": 14
+  }
+ ],
+ "bytes_billed": 0,
+ "source": {
+  "service": "BigQuery public dataset",
+  "data": "Overture Maps Foundation, places theme",
+  "licence": "Community Data License Agreement, Permissive 2.0",
+  "url": "https://docs.overturemaps.org/attribution/"
+ }
+}

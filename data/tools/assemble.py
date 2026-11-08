@@ -306,6 +306,7 @@ def build(r):
               "notes": what(p), "phone": None, "phone_agreed": False, "source": listed(p)}
              for p in pl.get("stays", [])]
     places = {"mechanics": mechanics, "stays": stays,
+              "mechanics_left_out": [{"near": x["near"], "count": x["count"]} for x in pl.get("mechanics_left_out", [])],
               "stays_left_out": [{"near": x["near"], "count": x["count"]} for x in pl.get("stays_left_out", [])]} if pl else {}
 
     facts = len(rules) + len(years) + len(authorities) + len(hazards) + len(fuel["pumps"]) + len(videos) \

@@ -1,0 +1,79 @@
+{
+ "slug": "madhya-pradesh",
+ "fetched": "2026-11-08",
+ "overture_release": "2026-10-22",
+ "stay_radius_m": 3000,
+ "mechanic_radius_m": 2000,
+ "min_confidence": 0.5,
+ "town_limit": 40,
+ "mechanic_town_limit": 10,
+ "near_halt_km": 25,
+ "stays": [],
+ "stays_left_out": [
+  {
+   "near": "Bhopal",
+   "count": 679
+  },
+  {
+   "near": "Gwalior",
+   "count": 220
+  },
+  {
+   "near": "Orchha",
+   "count": 93
+  },
+  {
+   "near": "Pachmarhi",
+   "count": 90
+  },
+  {
+   "near": "Khajuraho",
+   "count": 73
+  }
+ ],
+ "mechanics": [
+  {
+   "id": "d517eb6c-8008-4546-aff1-942b051fca8e",
+   "name": "Castle Honda",
+   "category": "automotive_service",
+   "kind": "automotive_service",
+   "confidence": 0.99,
+   "lat": 25.46871,
+   "lon": 78.6608,
+   "km_from_start": 827.6,
+   "off_road_m": 994,
+   "near": "Orchha",
+   "what": "Vehicle repair"
+  },
+  {
+   "id": "a6e9d1f5-849f-49e9-890d-ba3983509b5c",
+   "name": "CEAT Shoppe, Neeraj Traders",
+   "category": "automotive_service",
+   "kind": "tire_shop",
+   "confidence": 0.85,
+   "lat": 25.45642,
+   "lon": 78.60792,
+   "km_from_start": 831.9,
+   "off_road_m": 1694,
+   "near": "Orchha",
+   "what": "Tyres and punctures"
+  }
+ ],
+ "mechanics_left_out": [
+  {
+   "near": "Bhopal",
+   "count": 55
+  },
+  {
+   "near": "Gwalior",
+   "count": 16
+  }
+ ],
+ "bytes_billed": 0,
+ "source": {
+  "service": "BigQuery public dataset",
+  "data": "Overture Maps Foundation, places theme",
+  "licence": "Community Data License Agreement, Permissive 2.0",
+  "url": "https://docs.overturemaps.org/attribution/"
+ }
+}

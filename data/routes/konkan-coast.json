@@ -9364,7 +9364,274 @@
   "Videos: the pages give upload dates, not filming dates, so 'filmed' is filled only where the title names a date. Uploads, in order: 2025-12, 2019-12."
  ],
  "counts": {
-  "facts": 124
+  "facts": 137
  },
- "built": "2026-10-17"
+ "built": "2026-11-08",
+ "mechanics": [
+  {
+   "id": "mechanic:mrf-tyres-exclusive-pooja-tyres-murud",
+   "name": "MRF Tyres Exclusive - Pooja Tyres",
+   "village": "Murud",
+   "fixes": "Tyres and punctures, 1.1 km off the road",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/18.33278/72.96565",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "mechanic:mrf-tyres-exclusive-united-tyre-center-dapoli",
+   "name": "MRF Tyres Exclusive - United Tyre Center",
+   "village": "Dapoli",
+   "fixes": "Tyres and punctures",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/17.75953/73.17814",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "mechanic:tvs-karmarkar-auto-dapoli",
+   "name": "TVS - Karmarkar Auto",
+   "village": "Dapoli",
+   "fixes": "Vehicle repair",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/17.75896/73.18185",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "mechanic:jagrut-honda-ratnagiri-ratnagiri",
+   "name": "Jagrut Honda Ratnagiri",
+   "village": "Ratnagiri",
+   "fixes": "Showroom and service centre",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/16.9923/73.29217",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "mechanic:ceat-shoppe-laxmi-tyre-service-ratnagiri",
+   "name": "CEAT Shoppe, Laxmi Tyre Service",
+   "village": "Ratnagiri",
+   "fixes": "Tyres and punctures",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/16.99165/73.32305",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "mechanic:tvs-iqube-r-k-motors-ratnagiri",
+   "name": "TVS iQube - R K MOTORS",
+   "village": "Ratnagiri",
+   "fixes": "Showroom and service centre",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/16.99645/73.33363",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "mechanic:continental-tyres-laxmi-tyre-service-ratnagiri",
+   "name": "Continental Tyres - Laxmi Tyre Service",
+   "village": "Ratnagiri",
+   "fixes": "Tyres and punctures",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/16.99595/73.33442",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "mechanic:yokohama-club-network-shree-swami-samarth-tyres-ratnagiri",
+   "name": "Yokohama Club Network - Shree Swami Samarth Tyres",
+   "village": "Ratnagiri",
+   "fixes": "Tyres and punctures",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/16.99576/73.33994",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "mechanic:royal-enfield-showroom-ratnagiri",
+   "name": "Royal Enfield Showroom",
+   "village": "Ratnagiri",
+   "fixes": "Showroom and service centre",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/16.99663/73.3444",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "mechanic:rk-tvs-ratnagiri-ratnagiri",
+   "name": "RK TVS Ratnagiri",
+   "village": "Ratnagiri",
+   "fixes": "Showroom and service centre, 2.0 km off the road",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/17.02062/73.36987",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "mechanic:ceat-tyres-ratnagiri",
+   "name": "CEAT Tyres",
+   "village": "Ratnagiri",
+   "fixes": "Tyres and punctures",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/16.9833/73.4833",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "mechanic:shree-ram-tyres-3d-wheel-alignment-katta-malvan-malvan",
+   "name": "Shree Ram Tyres 3D Wheel Alignment,Katta,Malvan",
+   "village": "Malvan",
+   "fixes": "Tyres and punctures",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/16.08559/73.61719",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "mechanic:tvs-malvan-malvan",
+   "name": "TVS - Malvan",
+   "village": "Malvan",
+   "fixes": "Vehicle repair",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/16.06074/73.50334",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  }
+ ],
+ "stays": [],
+ "mechanics_left_out": [
+  {
+   "near": "Mumbai",
+   "count": 45
+  },
+  {
+   "near": "Panaji",
+   "count": 32
+  },
+  {
+   "near": "Alibag",
+   "count": 14
+  }
+ ],
+ "stays_left_out": [
+  {
+   "near": "Mumbai",
+   "count": 589
+  },
+  {
+   "near": "Alibag",
+   "count": 557
+  },
+  {
+   "near": "Panaji",
+   "count": 534
+  },
+  {
+   "near": "Malvan",
+   "count": 186
+  },
+  {
+   "near": "Dapoli",
+   "count": 178
+  },
+  {
+   "near": "Murud",
+   "count": 114
+  },
+  {
+   "near": "Ratnagiri",
+   "count": 92
+  },
+  {
+   "near": "Ganpatipule",
+   "count": 84
+  },
+  {
+   "near": "Guhagar",
+   "count": 58
+  },
+  {
+   "near": "Harihareshwar",
+   "count": 51
+  }
+ ]
 }

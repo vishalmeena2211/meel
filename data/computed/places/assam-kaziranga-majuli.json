@@ -1,0 +1,228 @@
+{
+ "slug": "assam-kaziranga-majuli",
+ "fetched": "2026-11-08",
+ "overture_release": "2026-10-22",
+ "stay_radius_m": 3000,
+ "mechanic_radius_m": 2000,
+ "min_confidence": 0.5,
+ "town_limit": 40,
+ "mechanic_town_limit": 10,
+ "near_halt_km": 25,
+ "stays": [
+  {
+   "id": "e0db52fe-8d17-47d5-98da-beeda65e49bd",
+   "name": "Bahona College Boys' Hostel -BCBH",
+   "category": "lodging",
+   "kind": "hostel",
+   "confidence": 0.64,
+   "lat": 26.80975,
+   "lon": 94.24072,
+   "km_from_start": 310.6,
+   "off_road_m": 2,
+   "near": "Nimati Ghat",
+   "what": "Hostel"
+  },
+  {
+   "id": "27806d64-82a9-4685-bf2d-a70ed74eb124",
+   "name": "Tsangpo - A River Tourism Venture",
+   "category": "hotel",
+   "kind": "hotel",
+   "confidence": 0.81,
+   "lat": 26.86144,
+   "lon": 94.23513,
+   "km_from_start": 317.8,
+   "off_road_m": 321,
+   "near": "Nimati Ghat",
+   "what": "Hotel"
+  },
+  {
+   "id": "74b542f4-dfc2-4c47-a246-dd14ac3f688d",
+   "name": "Green Meadows Eco Camp",
+   "category": "campground",
+   "kind": "campground",
+   "confidence": 0.85,
+   "lat": 26.92533,
+   "lon": 94.12948,
+   "km_from_start": 329.0,
+   "off_road_m": 2760,
+   "near": "Kamalabari",
+   "what": "Campsite"
+  },
+  {
+   "id": "90a42c38-6499-457e-b891-6a945bc322cb",
+   "name": "Prashaanti log hut, kamalabari,Majuli",
+   "category": "lodging",
+   "kind": "lodging",
+   "confidence": 0.61,
+   "lat": 26.9176,
+   "lon": 94.16169,
+   "km_from_start": 329.9,
+   "off_road_m": 125,
+   "near": "Kamalabari",
+   "what": "Lodging"
+  },
+  {
+   "id": "8ef10161-2268-4dae-9dc3-2723320e9c8c",
+   "name": "Ane Ruying Bamboo Cottage",
+   "category": "hotel",
+   "kind": "hotel",
+   "confidence": 0.69,
+   "lat": 26.96315,
+   "lon": 94.162,
+   "km_from_start": 333.4,
+   "off_road_m": 1882,
+   "near": "Kamalabari",
+   "what": "Cottage"
+  },
+  {
+   "id": "5b576ed1-6986-4a4c-99f9-9adc7fdaf5e8",
+   "name": "Ayang Okum River Bank Bamboo Cottage, Majuli",
+   "category": "hotel",
+   "kind": "hotel",
+   "confidence": 0.94,
+   "lat": 26.96315,
+   "lon": 94.162,
+   "km_from_start": 333.4,
+   "off_road_m": 1882,
+   "near": "Kamalabari",
+   "what": "Cottage"
+  },
+  {
+   "id": "fb447977-74f9-43a2-bd78-c4d22a58ee5c",
+   "name": "La Lolat Eco Camp",
+   "category": "hotel",
+   "kind": "hotel",
+   "confidence": 0.57,
+   "lat": 26.96315,
+   "lon": 94.162,
+   "km_from_start": 333.4,
+   "off_road_m": 1882,
+   "near": "Kamalabari",
+   "what": "Campsite"
+  },
+  {
+   "id": "cca77b3c-9070-4586-8767-1f3591a72a7a",
+   "name": "La Maison de Ananda",
+   "category": "bed_and_breakfast",
+   "kind": "bed_and_breakfast",
+   "confidence": 0.73,
+   "lat": 26.96315,
+   "lon": 94.162,
+   "km_from_start": 333.4,
+   "off_road_m": 1882,
+   "near": "Kamalabari",
+   "what": "Bed and breakfast"
+  },
+  {
+   "id": "e2815fc2-ecf0-4c0f-9e5d-81f67d11345b",
+   "name": "Majuli Pushpa Bilash Bamboo Resort",
+   "category": "lodging",
+   "kind": "lodge",
+   "confidence": 0.51,
+   "lat": 26.95532,
+   "lon": 94.17139,
+   "km_from_start": 333.4,
+   "off_road_m": 1122,
+   "near": "Kamalabari",
+   "what": "Resort"
+  },
+  {
+   "id": "c803d778-ad33-4842-a847-7ea8c3494c0b",
+   "name": "Okegiga Homes, Majuli - Garamur, Assam",
+   "category": "hotel",
+   "kind": "hotel",
+   "confidence": 0.93,
+   "lat": 26.96315,
+   "lon": 94.162,
+   "km_from_start": 333.4,
+   "off_road_m": 1882,
+   "near": "Kamalabari",
+   "what": "Hotel"
+  },
+  {
+   "id": "ca35b5db-08b5-4bcd-b2cd-677a1085f255",
+   "name": "Sarangi Stay",
+   "category": "hotel",
+   "kind": "hotel",
+   "confidence": 0.8,
+   "lat": 26.96315,
+   "lon": 94.162,
+   "km_from_start": 333.4,
+   "off_road_m": 1882,
+   "near": "Kamalabari",
+   "what": "Hotel"
+  },
+  {
+   "id": "152f324a-3acb-4c34-8ad4-6614dfa266ea",
+   "name": "Ygdrasill Bamboo Cottage",
+   "category": "hotel",
+   "kind": "hotel",
+   "confidence": 0.9,
+   "lat": 26.96549,
+   "lon": 94.15889,
+   "km_from_start": 333.4,
+   "off_road_m": 2213,
+   "near": "Kamalabari",
+   "what": "Cottage"
+  }
+ ],
+ "stays_left_out": [
+  {
+   "near": "Guwahati",
+   "count": 772
+  },
+  {
+   "near": "Kohora",
+   "count": 115
+  },
+  {
+   "near": "Jorhat",
+   "count": 113
+  }
+ ],
+ "mechanics": [
+  {
+   "id": "e84f1c9b-7629-4066-b403-15337df0f819",
+   "name": "Hero Afrin Motors Bokakhat",
+   "category": "vehicle_dealer",
+   "kind": "motorcycle_dealer",
+   "confidence": 0.92,
+   "lat": 26.58972,
+   "lon": 93.40324,
+   "km_from_start": 213.6,
+   "off_road_m": 55,
+   "near": "Kohora",
+   "what": "Showroom and service centre"
+  },
+  {
+   "id": "3ee123c5-65b9-4d18-b7c2-bd475230d949",
+   "name": "Royal Enfield Showroom - Achharsingh Royal",
+   "category": "vehicle_dealer",
+   "kind": "motorcycle_dealer",
+   "confidence": 0.77,
+   "lat": 26.95069,
+   "lon": 94.16608,
+   "km_from_start": 333.4,
+   "off_road_m": 460,
+   "near": "Kamalabari",
+   "what": "Showroom and service centre"
+  }
+ ],
+ "mechanics_left_out": [
+  {
+   "near": "Guwahati",
+   "count": 56
+  },
+  {
+   "near": "Jorhat",
+   "count": 23
+  }
+ ],
+ "bytes_billed": 0,
+ "source": {
+  "service": "BigQuery public dataset",
+  "data": "Overture Maps Foundation, places theme",
+  "licence": "Community Data License Agreement, Permissive 2.0",
+  "url": "https://docs.overturemaps.org/attribution/"
+ }
+}

@@ -1,0 +1,263 @@
+{
+ "slug": "manipur-mizoram",
+ "fetched": "2026-11-08",
+ "overture_release": "2026-10-22",
+ "stay_radius_m": 3000,
+ "mechanic_radius_m": 2000,
+ "min_confidence": 0.5,
+ "town_limit": 40,
+ "mechanic_town_limit": 10,
+ "near_halt_km": 25,
+ "stays": [
+  {
+   "id": "c33b5380-ed4e-4760-999f-c1311e820ba7",
+   "name": "NHPC Guest House",
+   "category": "lodging",
+   "kind": "lodge",
+   "confidence": 0.68,
+   "lat": 24.58318,
+   "lon": 93.73673,
+   "km_from_start": 36.4,
+   "off_road_m": 2855,
+   "near": "Moirang",
+   "what": "Guest house"
+  },
+  {
+   "id": "fe2779ff-0c8f-44d2-8553-c5f757d8d625",
+   "name": "Phubala Tourist Home",
+   "category": "hotel",
+   "kind": "hotel",
+   "confidence": 0.55,
+   "lat": 24.53632,
+   "lon": 93.76219,
+   "km_from_start": 42.0,
+   "off_road_m": 519,
+   "near": "Moirang",
+   "what": "Hotel"
+  },
+  {
+   "id": "e8a6e2fd-529b-45a4-921b-d8e849487cdd",
+   "name": "Sangai MoonLight Camping",
+   "category": "hotel",
+   "kind": "hotel",
+   "confidence": 0.79,
+   "lat": 24.49814,
+   "lon": 93.77021,
+   "km_from_start": 47.8,
+   "off_road_m": 1,
+   "near": "Moirang",
+   "what": "Campsite"
+  },
+  {
+   "id": "3a6070d4-412b-4dae-8ab8-b696c6017a38",
+   "name": "Budha Loktak Homestays, Sendra Thanga Manipur India",
+   "category": "hotel",
+   "kind": "hotel",
+   "confidence": 0.84,
+   "lat": 24.51545,
+   "lon": 93.79397,
+   "km_from_start": 48.6,
+   "off_road_m": 2421,
+   "near": "Moirang",
+   "what": "Homestay"
+  },
+  {
+   "id": "a6e3f0e4-eafd-4656-89c4-49f387d63709",
+   "name": "Loktak Aquamarine Floating Homestay and Campsite",
+   "category": "resort",
+   "kind": "resort",
+   "confidence": 0.63,
+   "lat": 24.51574,
+   "lon": 93.79613,
+   "km_from_start": 48.6,
+   "off_road_m": 2607,
+   "near": "Moirang",
+   "what": "Homestay"
+  },
+  {
+   "id": "5bf86d36-8bb2-4fa6-a581-5d3a40143caf",
+   "name": "Loktak Yaibikon Sanglen Thanga",
+   "category": "lodging",
+   "kind": "lodging",
+   "confidence": 0.55,
+   "lat": 24.51475,
+   "lon": 93.79468,
+   "km_from_start": 48.6,
+   "off_road_m": 2424,
+   "near": "Moirang",
+   "what": "Lodging"
+  },
+  {
+   "id": "d535605a-1c97-4c7b-8d8c-695264ed9ebf",
+   "name": "Moirang Coaching Institute and Accommodation",
+   "category": "lodging",
+   "kind": "hostel",
+   "confidence": 0.55,
+   "lat": 24.49866,
+   "lon": 93.77801,
+   "km_from_start": 48.6,
+   "off_road_m": 292,
+   "near": "Moirang",
+   "what": "Hostel"
+  },
+  {
+   "id": "af2ac463-6bfc-4fa0-9610-a51d76cab3fa",
+   "name": "Sendra Park and Resort",
+   "category": "resort",
+   "kind": "resort",
+   "confidence": 0.79,
+   "lat": 24.51525,
+   "lon": 93.79517,
+   "km_from_start": 48.6,
+   "off_road_m": 2497,
+   "near": "Moirang",
+   "what": "Resort"
+  },
+  {
+   "id": "857f3684-3ba7-4823-975f-6919011f7488",
+   "name": "Sendra Tourists Resort",
+   "category": "resort",
+   "kind": "resort",
+   "confidence": 0.62,
+   "lat": 24.51297,
+   "lon": 93.79403,
+   "km_from_start": 48.6,
+   "off_road_m": 2249,
+   "near": "Moirang",
+   "what": "Resort"
+  },
+  {
+   "id": "bbed0f75-32de-4537-9097-0f38edbc4fa1",
+   "name": "Hotel Lake View",
+   "category": "hotel",
+   "kind": "hotel",
+   "confidence": 0.74,
+   "lat": 24.49721,
+   "lon": 93.76522,
+   "km_from_start": 49.9,
+   "off_road_m": 19,
+   "near": "Moirang",
+   "what": "Hotel"
+  },
+  {
+   "id": "87d6e837-995b-4393-bb90-16f405f801c0",
+   "name": "Jati Hotel",
+   "category": "hotel",
+   "kind": "hotel",
+   "confidence": 0.54,
+   "lat": 24.49689,
+   "lon": 93.76529,
+   "km_from_start": 49.9,
+   "off_road_m": 7,
+   "near": "Moirang",
+   "what": "Hotel"
+  },
+  {
+   "id": "c55f5ff4-cf90-4c8c-8772-67e1783c9e76",
+   "name": "Loktak Floating Rest Hut",
+   "category": "hotel",
+   "kind": "hotel",
+   "confidence": 0.65,
+   "lat": 24.49721,
+   "lon": 93.76522,
+   "km_from_start": 49.9,
+   "off_road_m": 19,
+   "near": "Moirang",
+   "what": "Hotel"
+  },
+  {
+   "id": "8e698c3e-286a-4a68-85f2-5d505736672c",
+   "name": "K Khomunnom",
+   "category": "hotel",
+   "kind": "hotel",
+   "confidence": 0.52,
+   "lat": 24.394,
+   "lon": 93.69891,
+   "km_from_start": 64.9,
+   "off_road_m": 519,
+   "near": "Moirang",
+   "what": "Hotel"
+  },
+  {
+   "id": "e79eda84-fecb-4a9c-a012-d72f9481343e",
+   "name": "Chawngthu Plaza",
+   "category": "hotel",
+   "kind": "hotel",
+   "confidence": 0.8,
+   "lat": 23.47784,
+   "lon": 93.32393,
+   "km_from_start": 608.9,
+   "off_road_m": 60,
+   "near": "Champhai",
+   "what": "Hotel"
+  },
+  {
+   "id": "d228cc40-6e48-4b19-8365-c4c9774038b9",
+   "name": "Hotel Chawngthu",
+   "category": "hotel",
+   "kind": "hotel",
+   "confidence": 0.86,
+   "lat": 23.47795,
+   "lon": 93.32521,
+   "km_from_start": 608.9,
+   "off_road_m": 171,
+   "near": "Champhai",
+   "what": "Hotel"
+  },
+  {
+   "id": "cb3f529d-87b3-4aaa-98f6-6d75a23bea3f",
+   "name": "Tourist Lodge",
+   "category": "hotel",
+   "kind": "hotel",
+   "confidence": 0.8,
+   "lat": 23.4745,
+   "lon": 93.33281,
+   "km_from_start": 608.9,
+   "off_road_m": 986,
+   "near": "Champhai",
+   "what": "Hotel"
+  }
+ ],
+ "stays_left_out": [
+  {
+   "near": "Imphal",
+   "count": 62
+  },
+  {
+   "near": "Aizawl",
+   "count": 52
+  }
+ ],
+ "mechanics": [
+  {
+   "id": "a505172f-3945-49ff-a03e-3d73064c275f",
+   "name": "Haopu Bajaj Works",
+   "category": "automotive_service",
+   "kind": "automotive_repair",
+   "confidence": 0.58,
+   "lat": 24.37919,
+   "lon": 93.70587,
+   "km_from_start": 66.8,
+   "off_road_m": 61,
+   "near": "Moirang",
+   "what": "Vehicle repair"
+  }
+ ],
+ "mechanics_left_out": [
+  {
+   "near": "Aizawl",
+   "count": 19
+  },
+  {
+   "near": "Imphal",
+   "count": 16
+  }
+ ],
+ "bytes_billed": 0,
+ "source": {
+  "service": "BigQuery public dataset",
+  "data": "Overture Maps Foundation, places theme",
+  "licence": "Community Data License Agreement, Permissive 2.0",
+  "url": "https://docs.overturemaps.org/attribution/"
+ }
+}

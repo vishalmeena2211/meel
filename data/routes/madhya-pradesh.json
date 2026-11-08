@@ -3791,7 +3791,74 @@
   "Videos: the pages give upload dates, not filming dates, so 'filmed' is filled only where the title names a date. Uploads, in order: 2022-10, 2023-02."
  ],
  "counts": {
-  "facts": 127
+  "facts": 129
  },
- "built": "2026-10-17"
+ "built": "2026-11-08",
+ "mechanics": [
+  {
+   "id": "mechanic:castle-honda-orchha",
+   "name": "Castle Honda",
+   "village": "Orchha",
+   "fixes": "Vehicle repair",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/25.46871/78.6608",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "mechanic:ceat-shoppe-neeraj-traders-orchha",
+   "name": "CEAT Shoppe, Neeraj Traders",
+   "village": "Orchha",
+   "fixes": "Tyres and punctures, 1.7 km off the road",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/25.45642/78.60792",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  }
+ ],
+ "stays": [],
+ "mechanics_left_out": [
+  {
+   "near": "Bhopal",
+   "count": 55
+  },
+  {
+   "near": "Gwalior",
+   "count": 16
+  }
+ ],
+ "stays_left_out": [
+  {
+   "near": "Bhopal",
+   "count": 679
+  },
+  {
+   "near": "Gwalior",
+   "count": 220
+  },
+  {
+   "near": "Orchha",
+   "count": 93
+  },
+  {
+   "near": "Pachmarhi",
+   "count": 90
+  },
+  {
+   "near": "Khajuraho",
+   "count": 73
+  }
+ ]
 }

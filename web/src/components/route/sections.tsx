@@ -362,9 +362,16 @@ export function RoadSection({ view }: { view: RouteView }) {
 }
 
 export function MechanicsSection({ view }: { view: RouteView }) {
+  const left = view.route.mechanics_left_out ?? [];
   return (
     <Section id="mechanics">
       <SectionHeading id="mechanics-name" title="Mechanics" aside={plural(view.views.mechanics.length, "shop")} />
+      {left.length > 0 ? (
+        <p className="hint num">
+          Not listed: {left.map((t) => `${t.near} (${plural(t.count, "shop")} on the map)`).join(", ")}. This list is for
+          the halts between, where repair shops are few.
+        </p>
+      ) : null}
       <div className={GRID}>
         {view.views.mechanics.map((v) => (
           <FactRow key={v.slug} view={v} full />
@@ -381,8 +388,8 @@ export function StaysSection({ view }: { view: RouteView }) {
       <SectionHeading id="stays-name" title="Stays" aside={plural(view.views.stays.length, "place")} />
       {left.length > 0 ? (
         <p className="hint num">
-          Not listed: {left.map((t) => `${t.near} (${plural(t.count, "place")} on the map)`).join(" and ")}. This list is
-          for the halts between, where rooms are few.
+          Not listed: {left.map((t) => `${t.near} (${plural(t.count, "place")} on the map)`).join(", ")}. This list is for
+          the halts between, where rooms are few.
         </p>
       ) : null}
       <div className={GRID}>

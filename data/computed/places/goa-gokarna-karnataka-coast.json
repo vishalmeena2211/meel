@@ -1,0 +1,394 @@
+{
+ "slug": "goa-gokarna-karnataka-coast",
+ "fetched": "2026-11-08",
+ "overture_release": "2026-10-22",
+ "stay_radius_m": 3000,
+ "mechanic_radius_m": 2000,
+ "min_confidence": 0.5,
+ "town_limit": 40,
+ "mechanic_town_limit": 10,
+ "near_halt_km": 25,
+ "stays": [],
+ "stays_left_out": [
+  {
+   "near": "Panaji",
+   "count": 311
+  },
+  {
+   "near": "Mangaluru",
+   "count": 238
+  },
+  {
+   "near": "Palolem",
+   "count": 220
+  },
+  {
+   "near": "Udupi",
+   "count": 122
+  },
+  {
+   "near": "Gokarna",
+   "count": 83
+  },
+  {
+   "near": "Maravanthe",
+   "count": 62
+  },
+  {
+   "near": "Karwar",
+   "count": 49
+  },
+  {
+   "near": "Murudeshwar",
+   "count": 41
+  }
+ ],
+ "mechanics": [
+  {
+   "id": "d3dffa32-3e0b-4cf9-a161-174561b61502",
+   "name": "MobilSM Bike Care - Abdul Stores",
+   "category": "automotive_service",
+   "kind": "automotive_repair",
+   "confidence": 0.77,
+   "lat": 15.17884,
+   "lon": 73.99821,
+   "km_from_start": 46.0,
+   "off_road_m": 26,
+   "near": "Palolem",
+   "what": "Vehicle repair"
+  },
+  {
+   "id": "9c0ccb06-3a75-4b34-9f05-b531190afeff",
+   "name": "Royal Enfield Showroom - Saini Motors",
+   "category": "vehicle_dealer",
+   "kind": "motorcycle_dealer",
+   "confidence": 0.97,
+   "lat": 15.03395,
+   "lon": 74.02784,
+   "km_from_start": 65.3,
+   "off_road_m": 355,
+   "near": "Palolem",
+   "what": "Showroom and service centre"
+  },
+  {
+   "id": "2e93a47d-ad2a-4b50-a969-06194c97cca2",
+   "name": "Palolem",
+   "category": "vehicle_service",
+   "kind": "motorcycle_repair",
+   "confidence": 0.85,
+   "lat": 15.01206,
+   "lon": 74.02145,
+   "km_from_start": 69.9,
+   "off_road_m": 101,
+   "near": "Palolem",
+   "what": "Motorcycle repair"
+  },
+  {
+   "id": "5af01b6f-3866-4a24-b733-6d9a8fa8c598",
+   "name": "Royal Enfield Service Center",
+   "category": "vehicle_service",
+   "kind": "motorcycle_repair",
+   "confidence": 0.82,
+   "lat": 14.81152,
+   "lon": 74.14583,
+   "km_from_start": 99.4,
+   "off_road_m": 1455,
+   "near": "Karwar",
+   "what": "Motorcycle repair"
+  },
+  {
+   "id": "6e70fdc1-f087-4a1d-9b45-1bb0189cba07",
+   "name": "Royal Enfield Showroom - Torq Motors",
+   "category": "vehicle_dealer",
+   "kind": "motorcycle_dealer",
+   "confidence": 0.98,
+   "lat": 14.81151,
+   "lon": 74.14584,
+   "km_from_start": 99.4,
+   "off_road_m": 1456,
+   "near": "Karwar",
+   "what": "Showroom and service centre"
+  },
+  {
+   "id": "d522531a-cc7b-43ed-b9d4-e5cba4c702c9",
+   "name": "MRF Tyres Exclusive - Anmol Tyres",
+   "category": "automotive_service",
+   "kind": "tire_shop",
+   "confidence": 0.77,
+   "lat": 14.81063,
+   "lon": 74.12941,
+   "km_from_start": 99.7,
+   "off_road_m": 193,
+   "near": "Karwar",
+   "what": "Tyres and punctures"
+  },
+  {
+   "id": "69a84b85-787f-4d55-80e4-ee3a185d21ef",
+   "name": "MRF Tyres Exclusive - Vishwashanti Tyres",
+   "category": "automotive_service",
+   "kind": "tire_shop",
+   "confidence": 0.77,
+   "lat": 14.65682,
+   "lon": 74.31363,
+   "km_from_start": 131.7,
+   "off_road_m": 90,
+   "near": "Gokarna",
+   "what": "Tyres and punctures"
+  },
+  {
+   "id": "485129f5-4d6b-406e-8ec9-99b6ce92db8f",
+   "name": "MobilSM Bike Care - Thirupathi Auto Spares",
+   "category": "automotive_service",
+   "kind": "automotive_repair",
+   "confidence": 0.77,
+   "lat": 14.54785,
+   "lon": 74.32156,
+   "km_from_start": 154.9,
+   "off_road_m": 11,
+   "near": "Gokarna",
+   "what": "Vehicle repair"
+  },
+  {
+   "id": "3fb64ca8-dd52-4708-ad87-459215e951a9",
+   "name": "S K Motor Bajaj",
+   "category": "vehicle_dealer",
+   "kind": "motorcycle_dealer",
+   "confidence": 0.56,
+   "lat": 14.18351,
+   "lon": 74.48305,
+   "km_from_start": 220.4,
+   "off_road_m": 236,
+   "near": "Murudeshwar",
+   "what": "Showroom and service centre"
+  },
+  {
+   "id": "c33b4f29-e02b-4c20-9ddf-df91d7cb29f2",
+   "name": "Jeevottam TVS",
+   "category": "vehicle_dealer",
+   "kind": "motorcycle_dealer",
+   "confidence": 0.56,
+   "lat": 14.03065,
+   "lon": 74.52794,
+   "km_from_start": 241.3,
+   "off_road_m": 31,
+   "near": "Murudeshwar",
+   "what": "Showroom and service centre"
+  },
+  {
+   "id": "d3f7b528-ea8a-4300-8e10-e660d34992aa",
+   "name": "Royal Enfield Showroom - Brahmi Motors",
+   "category": "vehicle_dealer",
+   "kind": "motorcycle_dealer",
+   "confidence": 0.99,
+   "lat": 14.01337,
+   "lon": 74.53355,
+   "km_from_start": 243.3,
+   "off_road_m": 91,
+   "near": "Murudeshwar",
+   "what": "Showroom and service centre"
+  },
+  {
+   "id": "e57534bf-83e3-4119-be44-2237a5e22d29",
+   "name": "JK Tyre Steel Wheels, Wheel Mart",
+   "category": "automotive_service",
+   "kind": "tire_shop",
+   "confidence": 0.99,
+   "lat": 14.00353,
+   "lon": 74.53902,
+   "km_from_start": 244.6,
+   "off_road_m": 18,
+   "near": "Murudeshwar",
+   "what": "Tyres and punctures"
+  },
+  {
+   "id": "b1e4d78e-f664-4254-9ea1-7e1e797bfc11",
+   "name": "Enfield Town Bhatkal",
+   "category": "automotive_service",
+   "kind": "automotive_repair",
+   "confidence": 0.67,
+   "lat": 13.99363,
+   "lon": 74.55087,
+   "km_from_start": 246.3,
+   "off_road_m": 55,
+   "near": "Murudeshwar",
+   "what": "Vehicle repair"
+  },
+  {
+   "id": "a0f1823b-e46f-4bbf-86b1-bab2680def6c",
+   "name": "MRF Tyres Exclusive - United Tyres",
+   "category": "automotive_service",
+   "kind": "tire_shop",
+   "confidence": 0.77,
+   "lat": 13.99249,
+   "lon": 74.5568,
+   "km_from_start": 247.1,
+   "off_road_m": 34,
+   "near": "Murudeshwar",
+   "what": "Tyres and punctures"
+  },
+  {
+   "id": "a7d571f3-84c1-4aec-9c45-0c2f1a334f6f",
+   "name": "CARS",
+   "category": "automotive_service",
+   "kind": "tire_dealer_and_repair",
+   "confidence": 0.97,
+   "lat": 13.99324,
+   "lon": 74.5586,
+   "km_from_start": 247.2,
+   "off_road_m": 161,
+   "near": "Murudeshwar",
+   "what": "Tyres and punctures"
+  },
+  {
+   "id": "6a4f9870-0dcd-42ff-9146-88e2d5b7910a",
+   "name": "Girija TVS Motors",
+   "category": "vehicle_dealer",
+   "kind": "motorcycle_dealer",
+   "confidence": 0.86,
+   "lat": 13.85852,
+   "lon": 74.62918,
+   "km_from_start": 265.6,
+   "off_road_m": 107,
+   "near": "Maravanthe",
+   "what": "Showroom and service centre"
+  },
+  {
+   "id": "ff87a4eb-4fb0-4430-8f30-52edf28dbae9",
+   "name": "Ideal Tyres",
+   "category": "automotive_service",
+   "kind": "tire_dealer_and_repair",
+   "confidence": 0.93,
+   "lat": 13.68833,
+   "lon": 74.65407,
+   "km_from_start": 291.3,
+   "off_road_m": 47,
+   "near": "Maravanthe",
+   "what": "Tyres and punctures"
+  },
+  {
+   "id": "7042bec3-30f4-4e4b-af53-91f70de3e024",
+   "name": "Apollo Tyres - Kamath & Kamath",
+   "category": "automotive_service",
+   "kind": "tire_dealer_and_repair",
+   "confidence": 0.73,
+   "lat": 13.63559,
+   "lon": 74.69775,
+   "km_from_start": 301.8,
+   "off_road_m": 392,
+   "near": "Maravanthe",
+   "what": "Tyres and punctures"
+  },
+  {
+   "id": "0c66c8b8-02ba-4cd7-a0d7-d04642590991",
+   "name": "Kamath & Sons",
+   "category": "automotive_service",
+   "kind": "tire_dealer_and_repair",
+   "confidence": 0.59,
+   "lat": 13.62623,
+   "lon": 74.69351,
+   "km_from_start": 303.3,
+   "off_road_m": 51,
+   "near": "Maravanthe",
+   "what": "Tyres and punctures"
+  },
+  {
+   "id": "7f4cddd1-a72b-4517-b778-3845ae780f5e",
+   "name": "MRF Tyres Exclusive - Shri Siddhi Vinayaka Tyre",
+   "category": "automotive_service",
+   "kind": "tire_shop",
+   "confidence": 0.77,
+   "lat": 13.60355,
+   "lon": 74.69503,
+   "km_from_start": 305.8,
+   "off_road_m": 33,
+   "near": "Maravanthe",
+   "what": "Tyres and punctures"
+  },
+  {
+   "id": "9170b053-cd8b-482e-b465-479f7650a93f",
+   "name": "Vinayaka Suzuki",
+   "category": "vehicle_service",
+   "kind": "motorcycle_repair",
+   "confidence": 0.94,
+   "lat": 13.6033,
+   "lon": 74.69489,
+   "km_from_start": 305.9,
+   "off_road_m": 14,
+   "near": "Maravanthe",
+   "what": "Motorcycle repair"
+  },
+  {
+   "id": "687e74af-618a-4df8-95a5-a051291bd00d",
+   "name": "Kediyoor Honda Showroom",
+   "category": "vehicle_dealer",
+   "kind": "motorcycle_dealer",
+   "confidence": 0.93,
+   "lat": 13.60071,
+   "lon": 74.6956,
+   "km_from_start": 306.2,
+   "off_road_m": 50,
+   "near": "Maravanthe",
+   "what": "Showroom and service centre"
+  },
+  {
+   "id": "96a316ef-a7fa-4e8f-b878-8d0a090e8fa0",
+   "name": "Sai Radha TVS",
+   "category": "vehicle_dealer",
+   "kind": "motorcycle_dealer",
+   "confidence": 0.52,
+   "lat": 13.59708,
+   "lon": 74.69517,
+   "km_from_start": 306.6,
+   "off_road_m": 54,
+   "near": "Maravanthe",
+   "what": "Showroom and service centre"
+  },
+  {
+   "id": "2ddae9b9-6536-49d5-a21c-b54250d6dc33",
+   "name": "Kediyoor Honda",
+   "category": "vehicle_dealer",
+   "kind": "motorcycle_dealer",
+   "confidence": 0.71,
+   "lat": 13.58388,
+   "lon": 74.69859,
+   "km_from_start": 308.1,
+   "off_road_m": 88,
+   "near": "Maravanthe",
+   "what": "Showroom and service centre"
+  },
+  {
+   "id": "fb1c20bf-eb85-403a-9966-bee474b5cb9a",
+   "name": "Harish tyre works",
+   "category": "automotive_service",
+   "kind": "tire_dealer_and_repair",
+   "confidence": 0.63,
+   "lat": 13.55494,
+   "lon": 74.70128,
+   "km_from_start": 311.5,
+   "off_road_m": 68,
+   "near": "Maravanthe",
+   "what": "Tyres and punctures"
+  }
+ ],
+ "mechanics_left_out": [
+  {
+   "near": "Mangaluru",
+   "count": 43
+  },
+  {
+   "near": "Udupi",
+   "count": 19
+  },
+  {
+   "near": "Panaji",
+   "count": 15
+  }
+ ],
+ "bytes_billed": 0,
+ "source": {
+  "service": "BigQuery public dataset",
+  "data": "Overture Maps Foundation, places theme",
+  "licence": "Community Data License Agreement, Permissive 2.0",
+  "url": "https://docs.overturemaps.org/attribution/"
+ }
+}

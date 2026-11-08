@@ -7650,22 +7650,6 @@
    }
   },
   {
-   "id": "stay:himalayan-hermitage-sissu",
-   "name": "Himalayan Hermitage",
-   "village": "Sissu",
-   "notes": "Hotel",
-   "phone": null,
-   "phone_agreed": false,
-   "source": {
-    "url": "https://explore.overturemaps.org/#17/32.46737/77.13288",
-    "title": "Overture Maps, places",
-    "kind": "map",
-    "opened": true,
-    "source_date": "2026-10-22",
-    "accessed": "2026-11-08"
-   }
-  },
-  {
    "id": "stay:fabhotel-sissu-regency-sissu",
    "name": "FabHotel Sissu Regency",
    "village": "Sissu",
@@ -7674,6 +7658,22 @@
    "phone_agreed": false,
    "source": {
     "url": "https://explore.overturemaps.org/#17/32.46775/77.13316",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:himalayan-hermitage-sissu",
+   "name": "Himalayan Hermitage",
+   "village": "Sissu",
+   "notes": "Hotel",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/32.46737/77.13288",
     "title": "Overture Maps, places",
     "kind": "map",
     "opened": true,
@@ -7746,22 +7746,6 @@
    }
   },
   {
-   "id": "stay:triveni-hotel-restaurant-sissu",
-   "name": "Triveni Hotel & Restaurant",
-   "village": "Sissu",
-   "notes": "Hotel",
-   "phone": null,
-   "phone_agreed": false,
-   "source": {
-    "url": "https://explore.overturemaps.org/#17/32.48029/77.12213",
-    "title": "Overture Maps, places",
-    "kind": "map",
-    "opened": true,
-    "source_date": "2026-10-22",
-    "accessed": "2026-11-08"
-   }
-  },
-  {
    "id": "stay:north-way-adventure-n-camps-sissu",
    "name": "North Way Adventure n Camps",
    "village": "Sissu",
@@ -7770,6 +7754,22 @@
    "phone_agreed": false,
    "source": {
     "url": "https://explore.overturemaps.org/#17/32.48047/77.12208",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:triveni-hotel-restaurant-sissu",
+   "name": "Triveni Hotel & Restaurant",
+   "village": "Sissu",
+   "notes": "Hotel",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/32.48029/77.12213",
     "title": "Overture Maps, places",
     "kind": "map",
     "opened": true,
@@ -7906,22 +7906,6 @@
    }
   },
   {
-   "id": "stay:drilbu-homestay-tandi",
-   "name": "Drilbu homestay",
-   "village": "Tandi",
-   "notes": "Homestay",
-   "phone": null,
-   "phone_agreed": false,
-   "source": {
-    "url": "https://explore.overturemaps.org/#17/32.51354/77.0135",
-    "title": "Overture Maps, places",
-    "kind": "map",
-    "opened": true,
-    "source_date": "2026-10-22",
-    "accessed": "2026-11-08"
-   }
-  },
-  {
    "id": "stay:sila-view-homestay-tandi",
    "name": "Sila view homestay",
    "village": "Tandi",
@@ -7938,14 +7922,14 @@
    }
   },
   {
-   "id": "stay:chanderbhaga-camps-tandi",
-   "name": "Chanderbhaga Camps",
+   "id": "stay:drilbu-homestay-tandi",
+   "name": "Drilbu homestay",
    "village": "Tandi",
-   "notes": "Campsite",
+   "notes": "Homestay",
    "phone": null,
    "phone_agreed": false,
    "source": {
-    "url": "https://explore.overturemaps.org/#17/32.55256/76.97618",
+    "url": "https://explore.overturemaps.org/#17/32.51354/77.0135",
     "title": "Overture Maps, places",
     "kind": "map",
     "opened": true,
@@ -8002,6 +7986,22 @@
    }
   },
   {
+   "id": "stay:chanderbhaga-camps-tandi",
+   "name": "Chanderbhaga Camps",
+   "village": "Tandi",
+   "notes": "Campsite",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/32.55256/76.97618",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
    "id": "stay:juniper-valley-camps-keylong",
    "name": "Juniper valley camps",
    "village": "Keylong",
@@ -8026,22 +8026,6 @@
    "phone_agreed": false,
    "source": {
     "url": "https://explore.overturemaps.org/#17/32.56698/77.01879",
-    "title": "Overture Maps, places",
-    "kind": "map",
-    "opened": true,
-    "source_date": "2026-10-22",
-    "accessed": "2026-11-08"
-   }
-  },
-  {
-   "id": "stay:drilbu-ri-homestay-keylong-keylong",
-   "name": "Drilbu Ri Homestay Keylong",
-   "village": "Keylong",
-   "notes": "Homestay",
-   "phone": null,
-   "phone_agreed": false,
-   "source": {
-    "url": "https://explore.overturemaps.org/#17/32.57292/77.02416",
     "title": "Overture Maps, places",
     "kind": "map",
     "opened": true,
@@ -8082,14 +8066,14 @@
    }
   },
   {
-   "id": "stay:flying-monk-huts-restaurant-keylong",
-   "name": "Flying Monk Huts & Restaurant",
+   "id": "stay:drilbu-ri-homestay-keylong-keylong",
+   "name": "Drilbu Ri Homestay Keylong",
    "village": "Keylong",
-   "notes": "Lodging",
+   "notes": "Homestay",
    "phone": null,
    "phone_agreed": false,
    "source": {
-    "url": "https://explore.overturemaps.org/#17/32.57304/77.02558",
+    "url": "https://explore.overturemaps.org/#17/32.57292/77.02416",
     "title": "Overture Maps, places",
     "kind": "map",
     "opened": true,
@@ -8106,6 +8090,22 @@
    "phone_agreed": false,
    "source": {
     "url": "https://explore.overturemaps.org/#17/32.57237/77.02479",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:flying-monk-huts-restaurant-keylong",
+   "name": "Flying Monk Huts & Restaurant",
+   "village": "Keylong",
+   "notes": "Lodging",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/32.57304/77.02558",
     "title": "Overture Maps, places",
     "kind": "map",
     "opened": true,
@@ -8274,6 +8274,22 @@
    }
   },
   {
+   "id": "stay:hotel-valley-view-keylong",
+   "name": "Hotel Valley View",
+   "village": "Keylong",
+   "notes": "Hotel",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/32.57091/77.03156",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
    "id": "stay:hotel-ranika-inn-and-restaurant-keylong",
    "name": "Hotel Ranika Inn and Restaurant",
    "village": "Keylong",
@@ -8290,14 +8306,14 @@
    }
   },
   {
-   "id": "stay:hotel-valley-view-keylong",
-   "name": "Hotel Valley View",
+   "id": "stay:hotel-snowland-keylong",
+   "name": "Hotel Snowland",
    "village": "Keylong",
    "notes": "Hotel",
    "phone": null,
    "phone_agreed": false,
    "source": {
-    "url": "https://explore.overturemaps.org/#17/32.57091/77.03156",
+    "url": "https://explore.overturemaps.org/#17/32.57144/77.03255",
     "title": "Overture Maps, places",
     "kind": "map",
     "opened": true,
@@ -8338,30 +8354,14 @@
    }
   },
   {
-   "id": "stay:hotel-snowland-keylong",
-   "name": "Hotel Snowland",
+   "id": "stay:hotel-dekyid-keylong",
+   "name": "Hotel Dekyid",
    "village": "Keylong",
    "notes": "Hotel",
    "phone": null,
    "phone_agreed": false,
    "source": {
-    "url": "https://explore.overturemaps.org/#17/32.57144/77.03255",
-    "title": "Overture Maps, places",
-    "kind": "map",
-    "opened": true,
-    "source_date": "2026-10-22",
-    "accessed": "2026-11-08"
-   }
-  },
-  {
-   "id": "stay:mount-meru-guest-house-keylong",
-   "name": "Mount Meru Guest House",
-   "village": "Keylong",
-   "notes": "Guest house",
-   "phone": null,
-   "phone_agreed": false,
-   "source": {
-    "url": "https://explore.overturemaps.org/#17/32.57174/77.03306",
+    "url": "https://explore.overturemaps.org/#17/32.5693/77.03461",
     "title": "Overture Maps, places",
     "kind": "map",
     "opened": true,
@@ -8386,14 +8386,14 @@
    }
   },
   {
-   "id": "stay:hotel-dekyid-keylong",
-   "name": "Hotel Dekyid",
+   "id": "stay:mount-meru-guest-house-keylong",
+   "name": "Mount Meru Guest House",
    "village": "Keylong",
-   "notes": "Hotel",
+   "notes": "Guest house",
    "phone": null,
    "phone_agreed": false,
    "source": {
-    "url": "https://explore.overturemaps.org/#17/32.5693/77.03461",
+    "url": "https://explore.overturemaps.org/#17/32.57174/77.03306",
     "title": "Overture Maps, places",
     "kind": "map",
     "opened": true,
@@ -8434,22 +8434,6 @@
    }
   },
   {
-   "id": "stay:lahaul-spiti-keylong-hotel-keylinga-keylong",
-   "name": "Lahaul spiti keylong hotel keylinga",
-   "village": "Keylong",
-   "notes": "Hotel",
-   "phone": null,
-   "phone_agreed": false,
-   "source": {
-    "url": "https://explore.overturemaps.org/#17/32.57253/77.03384",
-    "title": "Overture Maps, places",
-    "kind": "map",
-    "opened": true,
-    "source_date": "2026-10-22",
-    "accessed": "2026-11-08"
-   }
-  },
-  {
    "id": "stay:rup-chen-inn-keylong",
    "name": "Rup Chen Inn",
    "village": "Keylong",
@@ -8458,6 +8442,22 @@
    "phone_agreed": false,
    "source": {
     "url": "https://explore.overturemaps.org/#17/32.5722/77.03374",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:lahaul-spiti-keylong-hotel-keylinga-keylong",
+   "name": "Lahaul spiti keylong hotel keylinga",
+   "village": "Keylong",
+   "notes": "Hotel",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/32.57253/77.03384",
     "title": "Overture Maps, places",
     "kind": "map",
     "opened": true,
@@ -8610,22 +8610,6 @@
    }
   },
   {
-   "id": "stay:jispa-home-stay-jispa",
-   "name": "Jispa Home Stay",
-   "village": "Jispa",
-   "notes": "Homestay",
-   "phone": null,
-   "phone_agreed": false,
-   "source": {
-    "url": "https://explore.overturemaps.org/#17/32.63094/77.16967",
-    "title": "Overture Maps, places",
-    "kind": "map",
-    "opened": true,
-    "source_date": "2026-10-22",
-    "accessed": "2026-11-08"
-   }
-  },
-  {
    "id": "stay:karma-cottage-camp-and-huts-jispa",
    "name": "Karma Cottage Camp and Huts",
    "village": "Jispa",
@@ -8642,14 +8626,14 @@
    }
   },
   {
-   "id": "stay:camp-paramount-journeys-feel-with-the-mountains-jispa",
-   "name": "CAMP PARAMOUNT JOURNEYS-feel with the Mountains",
+   "id": "stay:jispa-home-stay-jispa",
+   "name": "Jispa Home Stay",
    "village": "Jispa",
-   "notes": "Campsite",
+   "notes": "Homestay",
    "phone": null,
    "phone_agreed": false,
    "source": {
-    "url": "https://explore.overturemaps.org/#17/32.6333/77.1667",
+    "url": "https://explore.overturemaps.org/#17/32.63094/77.16967",
     "title": "Overture Maps, places",
     "kind": "map",
     "opened": true,
@@ -8666,6 +8650,22 @@
    "phone_agreed": false,
    "source": {
     "url": "https://explore.overturemaps.org/#17/32.63159/77.16944",
+    "title": "Overture Maps, places",
+    "kind": "map",
+    "opened": true,
+    "source_date": "2026-10-22",
+    "accessed": "2026-11-08"
+   }
+  },
+  {
+   "id": "stay:camp-paramount-journeys-feel-with-the-mountains-jispa",
+   "name": "CAMP PARAMOUNT JOURNEYS-feel with the Mountains",
+   "village": "Jispa",
+   "notes": "Campsite",
+   "phone": null,
+   "phone_agreed": false,
+   "source": {
+    "url": "https://explore.overturemaps.org/#17/32.6333/77.1667",
     "title": "Overture Maps, places",
     "kind": "map",
     "opened": true,
@@ -8914,6 +8914,7 @@
    }
   }
  ],
+ "mechanics_left_out": [],
  "stays_left_out": [
   {
    "near": "Manali",
