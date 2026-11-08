@@ -10,7 +10,7 @@
 | Folder | What is in it | Where it came from |
 |---|---|---|
 | `routes/` | One file per route. This is what the website reads. | Put together from the three folders below |
-| `computed/` | Positions, distances, heights, fuel pumps and the line on the map | Worked out by script from open map data |
+| `computed/` | Positions, distances, heights, fuel pumps and the line on the map; stays and mechanics near the road (`places/`, by `tools/places.py`) | Worked out by script from open map data; stays and mechanics from Overture Maps' list of places, read from Google BigQuery |
 | `research/` | Rules, permits, seasons, official sources, videos | Read from websites by research assistants, each with its link |
 | `site/` | Things entered once for the whole site: bikes, kinds of fact, regions, packing lists; the districts each road crosses (`route-districts.json`, by `tools/districts.py`) the hospitals and police near it (`route-help.json`, by `tools/help_places.py`); and how far each route starts from twelve cities riders set out from, and ends back from them, with towns on the way (`route-approaches.json`, by `tools/approaches.py`) | A mix; each file says |
 | `images/` | One picture per route, with its author and licence | Wikimedia Commons |
@@ -32,7 +32,8 @@
 
 - **Phone numbers and names of private people.** Mechanics, homestay owners and riders are not listed. The wireframes raise the question of whether a shop's number should be public; until you decide, none is collected.
 - **Text copied from other sites.** Facts are recorded in our own words, with a link. Nothing is pasted.
-- **Anything a rider must supply.** Mobile network by halt, real riding hours, stays and riders' sightings stay empty. They come from trip reports.
+- **Anything a rider must supply.** Mobile network by halt, real riding hours and riders' sightings stay empty. They come from trip reports.
+- **Stays and mechanics start as a map's list, not riders' word.** `tools/places.py` reads Overture Maps' places near each road: stays at the small halts (a town with more than 40 is named, not listed) and shops that fix motorcycles. Each shows as "listed on a public map" until a rider confirms it. Phone numbers are not taken, though the listings have them. To refresh, once a month: `python3 tools/places.py --force` then `python3 tools/assemble.py`. It needs a Google Cloud login (`gcloud auth login`) and reads a few megabytes per route, inside BigQuery's free terabyte a month.
 - **Fee amounts that only tour operators quote.** Where an official page gives the amount, it is recorded. Otherwise the fee is noted as existing, with no figure.
 
 ---
@@ -46,6 +47,7 @@
 | Districts' government codes | Wikidata (property P12746, the Local Government Directory's district code) | CC0. No requirement. |
 | Hospitals and police on the emergency card | Open Database Licence, from OpenStreetMap | As for map data. |
 | Distances from cities, and the towns on the way (`site/route-approaches.json`) | Open Database Licence, from OpenStreetMap, worked out with OSRM and Nominatim | As for map data. |
+| Stays and mechanics (`computed/places/`) | Community Data License Agreement, Permissive 2.0, from the Overture Maps Foundation | Credit "Overture Maps Foundation" where the data appears. The site footer does. |
 | Pictures | Creative Commons, per picture | Show the author and the licence beside or below each picture. `images/credits.json` holds both. |
 
 ---

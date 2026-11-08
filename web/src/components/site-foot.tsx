@@ -131,6 +131,15 @@ export function SiteFoot() {
           >
             OpenStreetMap contributors
           </a>{" "}
+          · Stays and mechanics from{" "}
+          <a
+            className={`font-medium text-on-tarmac underline underline-offset-2 ${ON_TARMAC}`}
+            href="https://docs.overturemaps.org/attribution/"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
+            Overture Maps Foundation
+          </a>{" "}
           · Heights from NASA · Pictures from Wikimedia Commons, credited beside each one
         </p>
       </div>

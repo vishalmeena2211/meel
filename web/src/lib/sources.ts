@@ -6,6 +6,10 @@ export function allSources(route: Route): Source[] {
   const add = (s: Source | null | undefined) => {
     if (s && !found.some((f) => f.url === s.url)) found.push(s);
   };
+  // Each stay or shop from a map listing links to its own spot on that map. In the list of sources the map is one
+  // source, not one per listing.
+  const addMap = (s: Source | null | undefined) =>
+    add(s && s.kind === "map" ? { ...s, url: `${new URL(s.url).origin}/` } : s);
   add(route.header.highway?.source);
   add(route.header.usual_days?.source);
   add(route.header.usual_season?.source);
@@ -17,8 +21,8 @@ export function allSources(route: Route): Source[] {
   for (const y of route.season.history) for (const s of y.sources) add(s);
   for (const a of route.authorities) add(a.source);
   for (const z of route.hazards) add(z.source);
-  for (const m of route.mechanics ?? []) add(m.source);
-  for (const s of route.stays ?? []) add(s.source);
+  for (const m of route.mechanics ?? []) addMap(m.source);
+  for (const s of route.stays ?? []) addMap(s.source);
   // Pumps taken from an oil company's own locator, where the open map had none.
   for (const p of route.fuel.pumps) add(p.source);
   return found;
