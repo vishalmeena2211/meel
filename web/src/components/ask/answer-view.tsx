@@ -5,7 +5,7 @@ import { useState, type ReactNode } from "react";
 
 import { track } from "@/lib/analytics";
 import type { AskAnswer, AskPicture, AskSource } from "@/lib/ask/types";
-import { km } from "@/lib/format";
+import { km, sayDate } from "@/lib/format";
 
 import { IconExternal, IconFlag, IconPhone, IconPlay, IconPlus, IconRight, IconShare, IconThumb } from "../icons";
 import { StateBadge } from "../ui";
@@ -157,7 +157,9 @@ function Picture({ p, slug }: { p: AskPicture; slug: string | null }) {
               <span className="min-w-0">
                 <b className="line-clamp-2 block text-[0.8125rem] leading-[1.125rem]">{v.title}</b>
                 <span className="hint block text-xs">
-                  {[v.channel, v.stretch, v.filmed ? `filmed ${v.filmed}` : null].filter(Boolean).join(" · ")}
+                  {[v.channel, v.stretch, v.filmed ? `filmed ${sayDate(v.filmed)}` : v.posted ? `posted ${sayDate(v.posted)}` : null]
+                    .filter(Boolean)
+                    .join(" · ")}
                 </span>
               </span>
             </a>

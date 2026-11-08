@@ -567,7 +567,7 @@ export async function runAsk(req: AskRequest, ctx: AskContext, emit: Emit): Prom
       .slice(0, 2);
     const pick = vids.length ? vids : route.videos.slice(0, 2);
     if (pick.length) {
-      pictures.push({ kind: "videos", items: pick.map((v) => ({ title: v.title, url: v.url, channel: v.channel, stretch: v.stretch, filmed: v.filmed, thumb: `https://i.ytimg.com/vi/${v.id}/mqdefault.jpg` })) });
+      pictures.push({ kind: "videos", items: pick.map((v) => ({ title: v.title, url: v.url, channel: v.channel, stretch: v.stretch, filmed: v.filmed, posted: v.posted ?? null, thumb: `https://i.ytimg.com/vi/${v.id}/mqdefault.jpg` })) });
     }
   }
 

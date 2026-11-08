@@ -234,12 +234,15 @@ def build(r):
             hazards.append({"id": "hazard:" + slugify(x["title"]), "title": str(x["title"]),
                             "detail": str(x.get("detail") or ""), "months": months, "source": src})
     videos = []
+    # The day YouTube says each video was posted (video_dates.py). Filmed is from the video itself, and rarer.
+    posted = load(os.path.join(DATA, "computed", "video-dates.json"), {}) or {}
     for v in rs.get("videos", []) or []:
         m = re.search(r"(?:v=|youtu\.be/|/shorts/|/embed/)([A-Za-z0-9_-]{11})", str(v.get("url") or ""))
         if m:
             videos.append({"id": m.group(1), "url": f"https://www.youtube.com/watch?v={m.group(1)}",
                            "title": str(v.get("title") or "Video"), "channel": v.get("channel") or None,
                            "stretch": v.get("stretch") or None, "filmed": v.get("filmed") or None,
+                           "posted": posted.get(m.group(1)),
                            "bike": v.get("bike") or None, "checked": bool(v.get("checked", False))})
     extra_videos = load(os.path.join(DATA, "computed", "videos", slug + ".json"), {}) or {}
     have = {v["id"] for v in videos}

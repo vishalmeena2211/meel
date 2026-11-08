@@ -662,7 +662,13 @@ export function VideosSection({ view }: { view: RouteView }) {
                       {v.bike ? ` · ${v.bike}` : ""}
                     </span>
                     <span className="mt-0.5 inline-block">
-                      <Badge>{v.filmed ? `Filmed ${sayDate(v.filmed)}` : "Date filmed not known"}</Badge>
+                      <Badge>
+                        {v.filmed
+                          ? `Filmed ${sayDate(v.filmed)}`
+                          : v.posted
+                            ? `Posted ${sayDate(v.posted)}`
+                            : "Date not known"}
+                      </Badge>
                     </span>
                   </span>
                 </a>
