@@ -2,7 +2,7 @@ import type { MetadataRoute } from "next";
 
 import { getIndex } from "@/lib/content";
 import { SITE_URL } from "@/lib/site";
-import { routePaths } from "@/server/route-pages";
+import { noTripsYet, routePaths } from "@/server/route-pages";
 import { getRouteView } from "@/server/route-view";
 
 /*
@@ -33,6 +33,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     const lastModified = new Date(`${view.route.built}T00:00:00Z`);
     const top = `/routes/${view.route.slug}`;
     for (const path of routePaths(view)) {
+      if (path === `${top}/trips` && noTripsYet(view)) continue;
       add({ url: SITE_URL + path, lastModified, changeFrequency: "weekly", priority: path === top ? 0.9 : 0.6 });
     }
     for (const fact of view.views.all) {

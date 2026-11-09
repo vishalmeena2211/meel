@@ -9,7 +9,8 @@ import {
   BeforeYouLeave,
   FirstRows,
   levelWords,
-  NotHereYet,
+  RiddenIt,
+  UncheckedNote,
   OnThisPage,
   RouteHead,
   RoutePicture,
@@ -177,16 +178,7 @@ export default async function RoutePage(props: PageProps<"/routes/[slug]">) {
         </>
       ) : (
         <>
-          {route.level === "basic" ? (
-            <Callout title="This is a basic page">
-              {confirmed === 0
-                ? "No rider has reported on this route yet. What is here comes from official and published sources."
-                : `Riders have confirmed ${confirmed} of its ${route.counts.facts} facts. The rest comes from official and published sources.`}{" "}
-              <Link className="link font-medium" href="/about#trust">
-                How far to trust it
-              </Link>
-            </Callout>
-          ) : null}
+          <UncheckedNote confirmed={confirmed} facts={route.counts.facts} />
 
           <div className="flex flex-col gap-4 lg:hidden">
             <FirstRows
@@ -227,7 +219,33 @@ export default async function RoutePage(props: PageProps<"/routes/[slug]">) {
             {has("videos") ? <VideosSection view={view} /> : null}
           </div>
 
-          <NotHereYet view={view} />
+          {nearby.length > 0 ? (
+            <section className="flex flex-col gap-1.5" aria-labelledby="nearby-routes">
+              <h2 id="nearby-routes" className="label">
+                Nearby routes
+              </h2>
+              <div className="card flex flex-col">
+                {nearby.map((r) => (
+                  <Link
+                    key={r.slug}
+                    href={`/routes/${r.slug}`}
+                    className="flex min-h-12 items-center gap-2.5 border-b border-line px-3 py-2.5 last:border-b-0 hover:bg-surface-2"
+                  >
+                    <span className="min-w-0 flex-1">
+                      <b className="block text-[0.9375rem] leading-5">{r.name}</b>
+                      <span className="hint num">
+                        {r.distance_km ? `${km(r.distance_km)} · ` : ""}
+                        {plural(r.facts, "fact")}
+                      </span>
+                    </span>
+                    <IconRight className="size-4 shrink-0 text-ink-2" />
+                  </Link>
+                ))}
+              </div>
+            </section>
+          ) : null}
+
+          <RiddenIt view={view} />
 
           <section className="flex flex-col gap-1.5 lg:hidden">
             <h2 className="label">Also</h2>
@@ -242,7 +260,7 @@ export default async function RoutePage(props: PageProps<"/routes/[slug]">) {
                 <span className="min-w-0 flex-1">
                   <b className="block text-[0.9375rem] leading-5">Trips on this route</b>
                   <span className="hint num">
-                    {view.trips.length > 0 ? `${plural(view.trips.length, "trip")} planned` : "None planned yet"}
+                    {view.trips.length > 0 ? `${plural(view.trips.length, "trip")} planned` : "Post your dates and find riders"}
                   </span>
                 </span>
                 <IconRight className="size-4 shrink-0 text-ink-2" />
@@ -277,16 +295,7 @@ export default async function RoutePage(props: PageProps<"/routes/[slug]">) {
             I have ridden this · send a trip report
           </Link>
         </Foot>
-      ) : (
-        <div className="flex flex-col gap-1.5 md:items-start">
-          <p className="hint">
-            {plural(view.reports, "trip report")} for {route.name} so far
-          </p>
-          <Link className="btn btn-outline btn-block md:w-auto" href={`/report?route=${slug}`}>
-            Ridden it? Send a trip report
-          </Link>
-        </div>
-      )}
+      ) : null}
     </div>
   );
 }

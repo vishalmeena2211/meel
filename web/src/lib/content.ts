@@ -4,6 +4,8 @@ import { readFile } from "node:fs/promises";
 import path from "node:path";
 import { cache } from "react";
 
+import type { SeasonFile } from "./seasons";
+
 import type {
   Bike,
   FactKind,
@@ -31,9 +33,13 @@ async function readJson<T>(...parts: string[]): Promise<T | null> {
   }
 }
 
+export const getSeasons = cache(async (): Promise<SeasonFile["routes"]> => (await readJson<SeasonFile>("site", "seasons.json"))?.routes ?? {});
+
 export const getIndex = cache(async (): Promise<RouteIndex> => {
-  const index = await readJson<RouteIndex>("routes", "index.json");
-  return index ?? { built: "", regions: [], routes: [] };
+  const [index, seasons] = await Promise.all([readJson<RouteIndex>("routes", "index.json"), getSeasons()]);
+  if (!index) return { built: "", regions: [], routes: [] };
+  // Each route card carries its months, for its season chip and the "In season now" list.
+  return { ...index, routes: index.routes.map((r) => ({ ...r, season: seasons[r.slug]?.months ?? null })) };
 });
 
 export const getRoute = cache(async (slug: string): Promise<Route | null> => {

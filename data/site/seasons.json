@@ -1,0 +1,604 @@
+{
+  "_about": "The months each route is usually ridden, for the season chip on route cards and the 'In season now' list. Drafted on 9 Nov 2026 from each route's own 'usual season' fact ('said'), read by hand because the wording varies too much to read automatically. 'from': 'route' means it follows that fact; 'general' means the route has no season fact and the months are general knowledge, to be checked by the editor. Months are 1 (January) to 12. A month counts when most of it is in season: 'late May' starts the season in June, 'early November' ends it in October.",
+  "routes": {
+    "adi-kailash-om-parvat": {
+      "months": [
+        5,
+        6,
+        9,
+        10
+      ],
+      "from": "route",
+      "said": "May and June, then mid-September to early November; permits pause in the monsoon"
+    },
+    "andhra-araku-gandikota": {
+      "months": [
+        10,
+        11,
+        12,
+        1,
+        2
+      ],
+      "from": "route",
+      "said": "October to February"
+    },
+    "arunachal-centre-east": {
+      "months": [
+        4,
+        5,
+        10,
+        11
+      ],
+      "from": "route",
+      "said": "Late October to early November, and April to May"
+    },
+    "assam-kaziranga-majuli": {
+      "months": [
+        10,
+        11,
+        12,
+        1,
+        2,
+        3
+      ],
+      "from": "route",
+      "said": "October to March"
+    },
+    "bhutan": {
+      "months": [
+        10,
+        11
+      ],
+      "from": "route",
+      "said": "Late September to late November; open all year"
+    },
+    "char-dham": {
+      "months": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "from": "route",
+      "said": "Late April or May to early November, while the shrines are open"
+    },
+    "chhattisgarh-bastar": {
+      "months": [
+        11,
+        12,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "from": "route",
+      "said": "November to June; the waterfalls are fullest from July to October"
+    },
+    "chopta-tungnath": {
+      "months": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "from": "route",
+      "said": "May to early November, while Tungnath temple is open; snow from November to March"
+    },
+    "darcha-shinku-la-padum": {
+      "months": [
+        6,
+        7,
+        8,
+        9
+      ],
+      "from": "route",
+      "said": "June to September"
+    },
+    "darjeeling-kalimpong-sandakphu": {
+      "months": [
+        3,
+        4,
+        5,
+        10,
+        11,
+        12
+      ],
+      "from": "route",
+      "said": "March to May and October to December"
+    },
+    "dharamshala-bir-billing": {
+      "months": [
+        3,
+        4,
+        5,
+        6,
+        9,
+        10,
+        11
+      ],
+      "from": "route",
+      "said": "March to June and September to November"
+    },
+    "east-coast": {
+      "months": [
+        10,
+        11,
+        12,
+        1,
+        2,
+        3
+      ],
+      "from": "route",
+      "said": "October to March"
+    },
+    "east-sikkim-silk-route": {
+      "months": [
+        3,
+        4,
+        5,
+        9,
+        10,
+        11
+      ],
+      "from": "route",
+      "said": "September to November, and March to May"
+    },
+    "goa-gokarna-karnataka-coast": {
+      "months": [
+        10,
+        11,
+        12,
+        1,
+        2,
+        3
+      ],
+      "from": "general",
+      "said": null
+    },
+    "golden-quadrilateral": {
+      "months": [
+        10,
+        11,
+        12,
+        1,
+        2
+      ],
+      "from": "route",
+      "said": "October to February"
+    },
+    "gurez-valley": {
+      "months": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "from": "route",
+      "said": "May to October"
+    },
+    "guwahati-tawang": {
+      "months": [
+        10,
+        11,
+        12,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "from": "route",
+      "said": "October to May; June to September brings landslides"
+    },
+    "hampi-badami": {
+      "months": [
+        10,
+        11,
+        12,
+        1,
+        2,
+        3
+      ],
+      "from": "route",
+      "said": "October to March"
+    },
+    "jalori-tirthan": {
+      "months": [
+        3,
+        4,
+        5,
+        6,
+        9,
+        10,
+        11
+      ],
+      "from": "route",
+      "said": "March to June and September to November"
+    },
+    "kargil-padum": {
+      "months": [
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "from": "route",
+      "said": "June to October"
+    },
+    "karnataka-hills": {
+      "months": [
+        11,
+        12,
+        1,
+        2
+      ],
+      "from": "route",
+      "said": "November to February"
+    },
+    "kashmir-kanyakumari": {
+      "months": [
+        3,
+        4,
+        10,
+        11
+      ],
+      "from": "general",
+      "said": null
+    },
+    "kashmir-valley": {
+      "months": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "from": "route",
+      "said": "All year; snow chains needed for Gulmarg in winter"
+    },
+    "kasol-parvati": {
+      "months": [
+        3,
+        4,
+        5,
+        6,
+        9,
+        10,
+        11
+      ],
+      "from": "route",
+      "said": "March to June and September to November"
+    },
+    "kerala-hills": {
+      "months": [
+        9,
+        10,
+        11,
+        12,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "from": "general",
+      "said": null
+    },
+    "kinnaur": {
+      "months": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "from": "route",
+      "said": "April to October"
+    },
+    "konkan-coast": {
+      "months": [
+        10,
+        11,
+        12,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "from": "general",
+      "said": null
+    },
+    "leh-padum": {
+      "months": [
+        6,
+        7,
+        8,
+        9
+      ],
+      "from": "route",
+      "said": "June to September"
+    },
+    "madhya-pradesh": {
+      "months": [
+        10,
+        11,
+        12,
+        1,
+        2,
+        3
+      ],
+      "from": "route",
+      "said": "October to March; Pachmarhi itself is open all year"
+    },
+    "manali-leh": {
+      "months": [
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "from": "route",
+      "said": "June to October"
+    },
+    "manipur-mizoram": {
+      "months": [
+        10,
+        11,
+        12,
+        1,
+        2,
+        3,
+        4
+      ],
+      "from": "general",
+      "said": null
+    },
+    "meghalaya": {
+      "months": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "from": "route",
+      "said": "All year; March to May is mild, June to September brings heavy rain"
+    },
+    "mughal-road": {
+      "months": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "from": "route",
+      "said": "May to November"
+    },
+    "munsiyari-kumaon": {
+      "months": [
+        3,
+        4,
+        5,
+        6,
+        9,
+        10,
+        11
+      ],
+      "from": "route",
+      "said": "March to June and September to November"
+    },
+    "mussoorie-dhanaulti-chakrata": {
+      "months": [
+        3,
+        4,
+        5,
+        6,
+        9,
+        10,
+        11
+      ],
+      "from": "route",
+      "said": "March to June and September to November"
+    },
+    "nagaland": {
+      "months": [
+        10,
+        11,
+        12,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "from": "route",
+      "said": "October to May"
+    },
+    "nepal-mustang": {
+      "months": [
+        3,
+        4,
+        5,
+        10,
+        11
+      ],
+      "from": "route",
+      "said": "Spring, and October to November; the monsoon runs June to September"
+    },
+    "nilgiris": {
+      "months": [
+        3,
+        4,
+        5,
+        6
+      ],
+      "from": "route",
+      "said": "March to June"
+    },
+    "north-sikkim": {
+      "months": [
+        5,
+        6,
+        9,
+        10,
+        11
+      ],
+      "from": "route",
+      "said": "May to June and September to November"
+    },
+    "nubra-turtuk": {
+      "months": [
+        6,
+        7,
+        8,
+        9
+      ],
+      "from": "route",
+      "said": "June to September"
+    },
+    "odisha": {
+      "months": [
+        10,
+        11,
+        12,
+        1,
+        2
+      ],
+      "from": "route",
+      "said": "October to February"
+    },
+    "pangong-hanle-tso-moriri": {
+      "months": [
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "from": "route",
+      "said": "Late May to late October"
+    },
+    "rajasthan-desert": {
+      "months": [
+        10,
+        11,
+        12,
+        1,
+        2
+      ],
+      "from": "route",
+      "said": "October to February"
+    },
+    "rajasthan-hills": {
+      "months": [
+        12,
+        1,
+        2,
+        3
+      ],
+      "from": "route",
+      "said": "December to March (stated for the Kumbhalgarh sanctuary)"
+    },
+    "rann-of-kutch": {
+      "months": [
+        12,
+        1,
+        2
+      ],
+      "from": "route",
+      "said": "December to February, the months of the Rann Utsav festival"
+    },
+    "sach-pass-pangi": {
+      "months": [
+        7,
+        8,
+        9
+      ],
+      "from": "route",
+      "said": "July to September"
+    },
+    "sahyadri-ghats": {
+      "months": [
+        10,
+        11,
+        12
+      ],
+      "from": "route",
+      "said": "October to December (stated for Tamhini Ghat)"
+    },
+    "spiti-circuit": {
+      "months": [
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "from": "route",
+      "said": "June to October for the full circuit over Kunzum La"
+    },
+    "srinagar-leh": {
+      "months": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "from": "route",
+      "said": "Mid-April to November"
+    },
+    "tamil-nadu-hill-roads": {
+      "months": [
+        4,
+        5,
+        6
+      ],
+      "from": "route",
+      "said": "April to June for Kodaikanal"
+    },
+    "umling-la": {
+      "months": [
+        6,
+        7,
+        8,
+        9
+      ],
+      "from": "route",
+      "said": "Late May to early October"
+    }
+  }
+}

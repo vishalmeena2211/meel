@@ -8,6 +8,7 @@ import { TopHead } from "@/components/shell";
 import { AskButton } from "@/components/ask/ask-button";
 import { HomeLinks } from "@/components/home-links";
 import { getAllRoutes, getApproaches, getIndex } from "@/lib/content";
+import { indiaDay } from "@/lib/format";
 import { SITE_LINE, SITE_NAME, SITE_URL } from "@/lib/site";
 import { confirmedLately } from "@/server/reports";
 
@@ -82,7 +83,7 @@ export default async function HomePage() {
           Every fact has a date
         </p>
         <p className="max-w-[60ch] text-[0.9375rem]">
-          Dated facts for Indian motorcycle routes. Every fact shows who confirmed it, and when.{" "}
+          Dated facts for Indian motorcycle routes. Every fact shows where it came from, and when.{" "}
           <Link className="link" href="/about">
             How far to trust it
           </Link>
@@ -95,6 +96,7 @@ export default async function HomePage() {
         lines={lines}
         fromCities={fromCities}
         confirmed={await confirmedLately()}
+        month={Number(indiaDay().slice(5, 7))}
       />
       <HomeLinks />
     </div>

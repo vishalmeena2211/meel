@@ -3,7 +3,7 @@ import Link from "next/link";
 import type { ReactNode } from "react";
 
 import { km, feet, plural, stoneCap } from "@/lib/format";
-import { REPORTS_NEEDED, type SectionId } from "@/lib/sections";
+import type { SectionId } from "@/lib/sections";
 import type { RideCity, RouteApproach } from "@/lib/types";
 import type { RouteView } from "@/server/route-view";
 
@@ -16,7 +16,6 @@ import {
   IconFlag,
   IconFuel,
   IconList,
-  IconLock,
   IconMap,
   IconPeak,
   IconPhone,
@@ -65,8 +64,9 @@ export function SectionIcon({ id, className }: { id: SectionId; className?: stri
 
 export function levelWords(view: RouteView): string {
   const { route } = view;
-  const level = route.level === "full" ? "Full page" : route.level === "unwritten" ? "Not written yet" : "Basic page";
-  return route.level === "unwritten" ? level : `${level} · ${plural(route.counts.facts, "fact")}`;
+  // "Basic page" said nothing while every route was basic, so only a full page and an unwritten one are named.
+  if (route.level === "unwritten") return "Not written yet";
+  return route.level === "full" ? `Full page · ${plural(route.counts.facts, "fact")}` : plural(route.counts.facts, "fact");
 }
 
 /** The picture of the road, with the name of whoever took it directly beneath. */
@@ -292,67 +292,50 @@ export function SectionChips({ view, on }: { view: RouteView; on: SectionId | nu
   );
 }
 
-/** What the page does not know yet, said plainly, with how it will arrive. */
-export function NotHereYet({ view }: { view: RouteView }) {
+/**
+ * The one ask at the end of a written route. It used to list every section still waiting for riders, with locks and a
+ * progress bar at 0 of 10, on every route: a page of empty boxes. Now it is one card; each section shows itself once
+ * riders have filled it.
+ */
+export function RiddenIt({ view }: { view: RouteView }) {
   const { route, missing, reports } = view;
-  if (missing.length === 0) return null;
-  const fromRiders = missing.filter((m) => m.id !== "bikes" && m.id !== "costs");
-  const fromReports = missing.filter((m) => m.id === "bikes" || m.id === "costs");
-  const done = Math.min(reports, REPORTS_NEEDED);
+  const waiting = missing.map((m) => m.name.toLowerCase());
+  const fills = waiting.length > 0 ? `It fills in ${listWords(waiting.slice(0, 4))} for the next rider.` : "It keeps this page right for the next rider.";
   return (
-    <section className="flex flex-col gap-2">
-      <h2 className="label">Not here yet</h2>
-      {fromRiders.length > 0 ? (
-        <div className="card flex flex-col">
-          {fromRiders.map((m) => (
-            <div key={m.id} className="flex min-h-12 items-center gap-2.5 border-b border-line px-3 py-2.5 text-ink-2 last:border-b-0">
-              <span className="grid size-8 shrink-0 place-items-center rounded-md bg-surface-2">
-                <SectionIcon id={m.id} />
-              </span>
-              <b className="min-w-0 flex-1 text-[0.9375rem] leading-5">{m.name}</b>
-              <IconLock className="size-4 shrink-0" />
-            </div>
-          ))}
-        </div>
-      ) : null}
-      <Callout tone="info" title="These come from riders, not from us">
-        They appear when riders who have done this route send a trip report. It takes about three minutes.
-      </Callout>
-
-      <h3 className="label mt-1">What a trip report asks</h3>
-      <div className="card flex flex-col">
-        <div className="flex items-center gap-2.5 border-b border-line px-3 py-2.5">
-          <b className="min-w-0 flex-1 text-[0.9375rem] leading-5">Route, month and bike</b>
-          <Badge tone="fresh">Needed</Badge>
-        </div>
-        <div className="px-3 py-2.5">
-          <b className="block text-[0.9375rem] leading-5">Riding hours, fuel stops, mechanics, gear, cost, a video</b>
-          <span className="hint">Optional. Fill in what you remember.</span>
-        </div>
-      </div>
-
-      {fromReports.length > 0 ? (
-        <div className="card flex flex-col gap-1.5 px-3 py-2.5">
-          <b className="text-[0.9375rem] leading-5">Bikes, gear and costs show after {REPORTS_NEEDED} trip reports</b>
-          <span className="hint">
-            With fewer, this would be a handful of opinions, not a pattern.
-          </span>
-          <div
-            role="img"
-            aria-label={`${done} of ${REPORTS_NEEDED} trip reports`}
-            className="h-2 overflow-hidden rounded-full bg-surface-2"
-          >
-            <span className="block h-full bg-sign" style={{ width: `${(done / REPORTS_NEEDED) * 100}%` }} />
-          </div>
-          <span className="hint num">
-            {done} of {REPORTS_NEEDED} reports
-          </span>
-        </div>
-      ) : null}
-      <p className="hint num text-center">
-        {plural(reports, "trip report")} for {route.name} so far
+    <section className="card flex flex-col gap-2 p-3" aria-labelledby="ridden-it">
+      <h2 id="ridden-it" className="text-[0.9375rem] leading-5 font-semibold">
+        Ridden {route.name}?
+      </h2>
+      <p className="text-sm leading-5">
+        A trip report takes about three minutes. {fills} Or tap &ldquo;Still true&rdquo; on any fact you saw yourself.
       </p>
+      <Link className="btn btn-primary self-start" href={`/report?route=${route.slug}`}>
+        Send a trip report
+      </Link>
+      {reports > 0 ? <p className="hint num">{plural(reports, "trip report")} so far</p> : null}
     </section>
+  );
+}
+
+/** "a, b and c". */
+function listWords(words: string[]): string {
+  return words.length <= 1 ? (words[0] ?? "") : `${words.slice(0, -1).join(", ")} and ${words.at(-1)}`;
+}
+
+/**
+ * Said once at the top of a route, not under every fact: until a rider has confirmed something, every fact is
+ * "not yet checked", and saying it 130 times on one page drowns the facts.
+ */
+export function UncheckedNote({ confirmed, facts }: { confirmed: number; facts: number }) {
+  return (
+    <Callout title={confirmed === 0 ? "No rider has checked these facts yet" : `Riders have confirmed ${confirmed} of ${plural(facts, "fact")}`}>
+      {confirmed === 0
+        ? "Each one shows where it came from and when. Ridden it? Tap “Still true” on what you saw, or “This has changed”."
+        : "The rest show where they came from and when, and say they are not yet checked."}{" "}
+      <Link className="link font-medium" href="/about#trust">
+        How far to trust it
+      </Link>
+    </Callout>
   );
 }
 

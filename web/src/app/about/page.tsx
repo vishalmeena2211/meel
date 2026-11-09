@@ -34,7 +34,8 @@ export default async function AboutPage() {
           Khardung La? The answers live in chat groups, and are lost by the next year.
         </p>
         <p>
-          Meel writes them down, with the date and the name of whoever saw it. It does not replace your group. It is the
+          Meel writes them down, with the date and where each one came from, and riders who have been there mark them as still true
+          or changed. It does not replace your group. It is the
           link someone pastes into the group when the question comes up.
         </p>
         <p>

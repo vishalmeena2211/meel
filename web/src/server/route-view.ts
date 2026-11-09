@@ -2,13 +2,14 @@ import "server-only";
 
 import { cache } from "react";
 
-import { getFactKinds, getIndex, getPackingList, getRoute, getShop } from "@/lib/content";
+import { getFactKinds, getIndex, getPackingList, getRoute, getSeasons, getShop } from "@/lib/content";
 import { factViews, warningsIn, type FactView, type FactViews } from "@/lib/fact-view";
 import { km, plural } from "@/lib/format";
 import { FROM_REPORTS, FROM_RIDERS, REPORTS_NEEDED, SECTION_NAMES, SECTION_ORDER, type SectionId } from "@/lib/sections";
 import { monthsFrom } from "@/lib/trip-checks";
 import type { PackingList, Route, RouteSummary } from "@/lib/types";
 
+import { nearbyRoutes } from "./nearby";
 import { packingForRoute } from "./packing-view";
 import { confirmationsFor, tripReportCount, tripReportsUsed } from "./reports";
 import { openTripsOnRoute, pastTripsOnRoute, type TripCard } from "./trips";
@@ -89,7 +90,7 @@ function ruleWords(route: Route): string {
 export const getRouteView = cache(async (slug: string): Promise<RouteView | null> => {
   const route = await getRoute(slug);
   if (!route) return null;
-  const [kinds, index, list, shop, confirmations, used, reportCount, trips, pastTrips] = await Promise.all([
+  const [kinds, index, list, shop, confirmations, used, reportCount, trips, pastTrips, seasons] = await Promise.all([
     getFactKinds(),
     getIndex(),
     getPackingList(route.terrain),
@@ -99,6 +100,7 @@ export const getRouteView = cache(async (slug: string): Promise<RouteView | null
     tripReportCount(slug),
     openTripsOnRoute(slug),
     pastTripsOnRoute(slug),
+    getSeasons(),
   ]);
   const packing = packingForRoute(list, route, shop);
   const views = factViews(route, confirmations, kinds, new Date());
@@ -118,9 +120,10 @@ export const getRouteView = cache(async (slug: string): Promise<RouteView | null
     altitude: highEnough,
     road: route.hazards.length > 0 || photos > 0,
     network: netHalts > 0 || towerHalts > 0,
-    mechanics: views.mechanics.length > 0,
+    // A route whose halts all have plenty of shops or rooms lists none, on purpose: the section says so.
+    mechanics: views.mechanics.length > 0 || (route.mechanics_left_out?.length ?? 0) > 0,
     hours: legs > 0,
-    stays: views.stays.length > 0,
+    stays: views.stays.length > 0 || (route.stays_left_out?.length ?? 0) > 0,
     packing: packing !== null,
     videos: route.level !== "unwritten",
     bikes: used.length >= REPORTS_NEEDED,
@@ -140,9 +143,9 @@ export const getRouteView = cache(async (slug: string): Promise<RouteView | null
         ? `${plural(route.hazards.length, "warning")} · from published guides${photos > 0 ? ` · ${plural(photos, "photo")}` : ""}`
         : plural(photos, "recent photo"),
     network: netHalts > 0 ? plural(netHalts, "halt") : `${plural(towerHalts, "halt")} · towers on the map`,
-    mechanics: `${plural(views.mechanics.length, "shop")}${fromMap(route.mechanics)}`,
+    mechanics: views.mechanics.length > 0 ? `${plural(views.mechanics.length, "shop")}${fromMap(route.mechanics)}` : "Plenty at every halt",
     hours: `${plural(legs, "leg")} · from ${plural(used.length, "trip report")}`,
-    stays: `${plural(views.stays.length, "place")}${fromMap(route.stays)}`,
+    stays: views.stays.length > 0 ? `${plural(views.stays.length, "place")}${fromMap(route.stays)}` : "Plenty at every halt",
     packing: "By month",
     videos: route.videos.length > 0 ? plural(route.videos.length, "rider video") : "None yet",
     bikes: `From ${plural(used.length, "trip report")}`,
@@ -172,9 +175,7 @@ export const getRouteView = cache(async (slug: string): Promise<RouteView | null
 
   const season = route.header.usual_season?.value;
   const mine = index.routes.find((r) => r.slug === slug);
-  const nearby = index.routes
-    .filter((r) => r.slug !== slug && r.region === (mine?.region ?? route.region) && r.level !== "unwritten")
-    .slice(0, 3);
+  const nearby = await nearbyRoutes(slug, mine?.region ?? route.region);
 
   return {
     route,
@@ -182,7 +183,8 @@ export const getRouteView = cache(async (slug: string): Promise<RouteView | null
     sections,
     missing,
     packing,
-    seasonMonths: season ? monthsFrom(season) : null,
+    // The hand-read months first; the words of the season fact only where the file has nothing.
+    seasonMonths: seasons[slug]?.months ?? (season ? monthsFrom(season) : null),
     reports: Math.max(used.length, reportCount),
     used,
     trips,

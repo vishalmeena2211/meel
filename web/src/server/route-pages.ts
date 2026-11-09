@@ -30,3 +30,8 @@ export function savedPages(view: RouteView): { pages: string[]; extras: string[]
     tools,
   };
 }
+
+/** No trip, planned or past, has been posted on this route. Its trips page is then left out of search. */
+export function noTripsYet(view: RouteView): boolean {
+  return view.trips.length === 0 && view.pastTrips.length === 0;
+}

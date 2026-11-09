@@ -30,6 +30,11 @@ export interface FactView {
   short: string | null;
   line: string;
   /**
+   * True when no fact on this route has been checked by a rider yet. The route says so once at the top, so the row
+   * leaves out its own "not yet checked" badge and words.
+   */
+  quiet: boolean;
+  /**
    * The line under the link in a search result, and in a chat app's preview card: the answer first, then who last
    * confirmed it and when. A rider who never taps the link still gets a dated fact.
    */
@@ -105,6 +110,11 @@ function lineOf(standing: FactStanding, source: Source | null, verb: string, ord
   const lead = order ? from : `No government order found · ${from.charAt(0).toLowerCase()}${from.slice(1)}`;
   const dated = sayDate(source.source_date);
   return `${lead}${dated ? ` · dated ${dated}` : ""} · read ${sayDate(source.accessed)} · no rider has confirmed it`;
+}
+
+/** A row's line without its "no rider has confirmed it" ending, when the route has said that once for all. */
+function quietLine(line: string, quiet: boolean): string {
+  return quiet ? line.replace(/ · no rider has confirmed it$/, "") : line;
 }
 
 /** Words ending in a full stop, so the sentence after them does not run on. */
@@ -231,6 +241,9 @@ export interface FactViews {
 export function factViews(route: Route, confirmations: Confirmation[], kinds: FactKind[], today: Date): FactViews {
   const start = route.waypoints[0]?.name ?? route.places[0] ?? "the start";
 
+  // Until any rider's report on this route has been read, every fact here is unchecked, and the route says so once.
+  const routeUnchecked = !confirmations.some((c) => c.read);
+
   const make = (m: Made): FactView => {
     const mine = confirmations.filter((c) => c.fact_id === m.id);
     const kind = kinds.find((k) => k.id === kindIdOf(m.id));
@@ -253,7 +266,8 @@ export function factViews(route: Route, confirmations: Confirmation[], kinds: Fa
       state,
       aside: m.aside ?? null,
       short: rewritten ?? m.short,
-      line: lineOf(standing, m.source, verb, m.order ?? true),
+      line: quietLine(lineOf(standing, m.source, verb, m.order ?? true), routeUnchecked && state === "unchecked"),
+      quiet: routeUnchecked && state === "unchecked",
       snippet: [stop(rewritten ?? m.lead ?? m.short ?? m.title), trustOf(standing, m.source, verb)].join(" "),
       long: rewritten ? `${rewritten} Before that: ${m.long ?? m.short ?? ""}`.trim() : m.long,
       meta: m.meta ?? null,

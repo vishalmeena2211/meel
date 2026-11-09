@@ -22,7 +22,7 @@ import {
   TripsOnRoute,
   VideosSection,
 } from "@/components/route/sections";
-import { SectionChips } from "@/components/route/route-parts";
+import { SectionChips, UncheckedNote } from "@/components/route/route-parts";
 import { SinceLastVisit } from "@/components/route/since-last-visit";
 import { AskButton } from "@/components/ask/ask-button";
 import { BackHead, Foot } from "@/components/shell";
@@ -46,7 +46,7 @@ import { isSection, isTool, REPORTS_NEEDED, SECTION_NAMES, type SectionId, type 
 import { SITE_URL } from "@/lib/site";
 import { allSources } from "@/lib/sources";
 import { alertsFor, closuresFor, officeDates, weatherFor } from "@/server/live";
-import { routePaths } from "@/server/route-pages";
+import { noTripsYet, routePaths } from "@/server/route-pages";
 import { getRouteView, type RouteView } from "@/server/route-view";
 import { openTrips } from "@/server/trips";
 
@@ -83,7 +83,7 @@ export async function generateMetadata(props: PageProps<"/routes/[slug]/[section
   const name = isSection(section) ? SECTION_NAMES[section].name : TOOL_NAMES[section];
   const found = view.sections.find((s) => s.id === section);
   const plainTitle = `${name} · ${view.route.name}`;
-  const plainDescription = `${name} on ${view.route.name}${found ? `: ${found.sub}` : ""}. Every fact shows where it came from and when it was last confirmed.`;
+  const plainDescription = `${name} on ${view.route.name}${found ? `: ${found.sub}` : ""}. Every fact shows where it came from, and when.`;
   let title = plainTitle;
   let description = plainDescription;
   if (section === "packing") {
@@ -95,7 +95,15 @@ export async function generateMetadata(props: PageProps<"/routes/[slug]/[section
   } else if (isSection(section)) {
     title = sectionSearchTitle(section, view.route, plainTitle);
   }
-  return { title, alternates: { canonical: `/routes/${slug}/${section}` }, description };
+  // A route's trips page with no trips on it is an empty page to a search engine. It stays for riders who follow a
+  // link to it, and goes back into search once a trip is posted.
+  const emptyTrips = section === "trips" && noTripsYet(view);
+  return {
+    title,
+    alternates: { canonical: `/routes/${slug}/${section}` },
+    description,
+    ...(emptyTrips ? { robots: { index: false, follow: true } } : {}),
+  };
 }
 
 /** Sections made of facts. They carry the row of chips, and say what changed since the rider's last visit. */
@@ -362,6 +370,7 @@ async function SectionBody(props: PageProps<"/routes/[slug]/[section]">) {
       />
       {noun || section === "network" ? <SectionChips view={view} on={section} /> : null}
       {noun ? <SinceLastVisit routeSlug={slug} section={section} noun={noun} /> : null}
+      {noun && view.confirmed === 0 ? <UncheckedNote confirmed={0} facts={route.counts.facts} /> : null}
       {body[section]()}
       {noun && newest ? (
         <p className="hint num">
