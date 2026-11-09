@@ -262,6 +262,16 @@ body {
       background-color 140ms var(--ease-out-soft),
       border-color 140ms var(--ease-out-soft);
   }
+  /*
+    In the bar at the top, every control is one height (40px, like the theme button) and one text size, so the
+    route's own buttons (Save for the road, Send a trip report) line up with Ask Meel, the links and Log in.
+  */
+  #head-slot > .btn {
+    min-height: 2.5rem;
+    padding-inline: 0.75rem;
+    gap: 0.375rem;
+    font-size: 0.875rem;
+  }
   .btn:disabled,
   .btn[aria-disabled="true"] {
     cursor: not-allowed;

@@ -55,7 +55,7 @@ export function SiteNav() {
             key={t.href}
             href={t.href}
             aria-current={t.match(pathname) ? "page" : undefined}
-            className="rounded-md px-3 py-2 text-[0.9375rem] font-medium text-ink-2 hover:bg-surface-2 aria-[current=page]:bg-sign-soft aria-[current=page]:font-semibold aria-[current=page]:text-sign"
+            className="inline-flex min-h-10 items-center rounded-md px-3 text-sm font-medium text-ink-2 hover:bg-surface-2 aria-[current=page]:bg-sign-soft aria-[current=page]:font-semibold aria-[current=page]:text-sign"
           >
             {t.label}
           </Link>
@@ -63,7 +63,7 @@ export function SiteNav() {
         <Link
           href="/about"
           aria-current={pathname.startsWith("/about") ? "page" : undefined}
-          className="rounded-md px-3 py-2 text-[0.9375rem] font-medium text-ink-2 hover:bg-surface-2 aria-[current=page]:bg-sign-soft aria-[current=page]:font-semibold aria-[current=page]:text-sign"
+          className="inline-flex min-h-10 items-center rounded-md px-3 text-sm font-medium text-ink-2 hover:bg-surface-2 aria-[current=page]:bg-sign-soft aria-[current=page]:font-semibold aria-[current=page]:text-sign"
         >
           About
         </Link>
@@ -82,12 +82,12 @@ export function MeBadge({ me }: { me?: Me | null }) {
       href="/account"
       data-private-block
       aria-label={`Your account, ${who.name}`}
-      className="font-display ml-1 grid size-11 shrink-0 place-items-center rounded-full border-[1.5px] border-stone-ink bg-stone text-sm font-bold text-stone-ink md:size-9"
+      className="font-display ml-1 grid size-11 shrink-0 place-items-center rounded-full border-[1.5px] border-stone-ink bg-stone text-sm font-bold text-stone-ink md:size-10"
     >
       {who.initials}
     </Link>
   ) : (
-    <Link href="/login" className="btn btn-outline ml-1 !min-h-11 shrink-0 px-3 text-sm md:!min-h-9">
+    <Link href="/login" className="btn btn-outline ml-1 !min-h-11 shrink-0 px-3 text-sm md:!min-h-10">
       Log in
     </Link>
   );
