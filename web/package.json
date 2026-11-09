@@ -16,6 +16,7 @@
     "db:migrate": "prisma migrate dev",
     "db:deploy": "prisma migrate deploy",
     "db:studio": "prisma studio",
+    "titles:check": "tsx scripts/titles-check.mts",
     "ask:index": "tsx scripts/ask-index.mts",
     "ask:try": "tsx --conditions=react-server --require ./scripts/ask-try-preload.cjs scripts/ask-try.mts",
     "ask:warm": "tsx --conditions=react-server --require ./scripts/ask-try-preload.cjs scripts/ask-warm.mts"

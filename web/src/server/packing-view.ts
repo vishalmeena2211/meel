@@ -1,6 +1,7 @@
 import "server-only";
 
 import { clock12, feet, km, monthName, stretchWords } from "@/lib/format";
+import { coldHalts, longCashGap, longFuelGap } from "@/lib/road-facts";
 import type { PackingItem, PackingList, Route, ShopFile } from "@/lib/types";
 
 /*
@@ -11,11 +12,6 @@ import type { PackingItem, PackingList, Route, ShopFile } from "@/lib/types";
   rewrites why, and says where to buy.
 */
 
-/** Stretches shorter than these are ordinary, and keep the list's general reason. */
-const CASH_GAP_KM = 100;
-const FUEL_GAP_KM = 100;
-/** Halts this high or higher are named in the reason for warm layers. */
-const COLD_HALT_M = 3500;
 /** A sunset before this, on the country's own clock, is named in the reason for a head lamp. */
 const EARLY_SUNSET = "18:00";
 
@@ -26,25 +22,19 @@ function stretch(from: string, to: string): string {
 }
 
 function cashReason(route: Route): string | undefined {
-  const gap = route.cash?.longest_gaps[0];
-  if (!gap || gap.gap_km < CASH_GAP_KM) return undefined;
+  const gap = longCashGap(route);
+  if (!gap) return undefined;
   return `No ATM or bank on the map for ${km(gap.gap_km)}, ${stretch(gap.from, gap.to)} Card machines and phone payments need a network.`;
 }
 
 function fuelReason(route: Route): string | undefined {
-  const gap = route.fuel.longest_gaps[0];
-  if (!gap || gap.gap_km < FUEL_GAP_KM) return undefined;
+  const gap = longFuelGap(route);
+  if (!gap) return undefined;
   return `${km(gap.gap_km)} between pumps, ${stretch(gap.near_from, gap.near_to)} Only if the fuel check says so for your bike.`;
 }
 
 function coldReason(route: Route): string | undefined {
-  const seen = new Set<string>();
-  const high = route.waypoints
-    .filter((w) => w.kind === "place" && (w.altitude_m ?? 0) >= COLD_HALT_M)
-    .sort((a, b) => (b.altitude_m ?? 0) - (a.altitude_m ?? 0))
-    .filter((w) => !seen.has(w.name) && seen.add(w.name))
-    .slice(0, 2)
-    .map((w) => `${w.name} (${feet(w.altitude_m)})`);
+  const high = coldHalts(route).map((w) => `${w.name} (${feet(w.altitude_m)})`);
   if (high.length === 0) return undefined;
   return `${high.join(" and ")} can drop below freezing at night, even in summer.`;
 }
