@@ -1,5 +1,6 @@
 import type { FactView } from "./fact-view";
-import { sayDate } from "./format";
+import { feet, km, sayDate, stretchWords } from "./format";
+import { coldHalts, fuelGap, longCashGap, longFuelGap } from "./road-facts";
 import type { SectionId } from "./sections";
 import type { Route } from "./types";
 
@@ -58,7 +59,7 @@ export function factSearchTitle(f: FactView, route: Route): string {
   return fit(f.title, when ? ` (${when})` : null, namesRoute(f.title, route) ? null : ` · ${short}`);
 }
 
-/** Sections of facts get a title in the words riders search; tools keep their plain name. */
+/** Sections of facts get a title in the words riders search; so do the packing list and the fuel check. */
 export function sectionSearchTitle(section: SectionId, route: Route, fallback: string): string {
   const short = shortRouteName(route);
   const year = route.built.slice(0, 4);
@@ -77,7 +78,100 @@ export function sectionSearchTitle(section: SectionId, route: Route, fallback: s
       return fit(`${short}: road warnings and trouble spots`, ` (${year})`);
     case "altitude":
       return fit(`${short}: altitude and where to sleep`, ` (${year})`);
+    case "packing":
+      return packingSearchTitle(route);
     default:
       return fallback;
   }
+}
+
+/** The first title that fits; the last one if none does. */
+function firstThatFits(...titles: string[]): string {
+  return titles.find((t) => t.length <= ROOM) ?? titles.at(-1)!;
+}
+
+/** Sentences added in order, skipping any that would push the description past what Google shows. */
+function sentences(...parts: Array<string | null | undefined>): string {
+  let out = "";
+  for (const p of parts) {
+    if (!p) continue;
+    const next = out ? `${out} ${p}` : p;
+    if (next.length <= DESCRIPTION_ROOM) out = next;
+  }
+  return out;
+}
+
+const DESCRIPTION_ROOM = 160;
+
+/** "From Keylong to Upshi." as "from Keylong to Upshi". */
+function stretchPart(from: string, to: string): string {
+  const words = stretchWords(from, to).replace(/\.$/, "");
+  return words.charAt(0).toLowerCase() + words.slice(1);
+}
+
+/*
+  Searched as "manali to leh bike trip packing list" or "what to carry for spiti". The title adds the one fact about
+  this road that most changes what to pack, picked in the same order a rider would worry about it: freezing nights,
+  then no ATM, then no pump.
+*/
+export function packingSearchTitle(route: Route): string {
+  const short = shortRouteName(route);
+  const cold = coldHalts(route, 1)[0];
+  const cash = longCashGap(route);
+  const fuel = longFuelGap(route);
+  const base = firstThatFits(`${short} bike trip packing list`, `${short} packing list`);
+  const hooks = [
+    cold ? `: freezing nights at ${cold.name}` : null,
+    cash ? `: no ATM for ${km(cash.gap_km)}` : null,
+    fuel ? `: ${km(fuel.gap_km)} between pumps` : null,
+    ", month by month",
+  ].filter((h): h is string => h !== null);
+  const hook = hooks.find((h) => (base + h).length <= ROOM);
+  return hook ? base + hook : base;
+}
+
+export function packingDescription(route: Route): string {
+  const short = shortRouteName(route);
+  const cold = coldHalts(route);
+  const cash = longCashGap(route);
+  const fuel = longFuelGap(route);
+  const coldWords = cold.map((w) => `${w.name} (${feet(w.altitude_m)})`).join(" and ");
+  return sentences(
+    `What to carry on ${short} by bike, month by month.`,
+    cold.length ? `${coldWords} can drop below freezing at night, even in summer.` : null,
+    cash ? `No ATM or bank for ${km(cash.gap_km)}, ${stretchPart(cash.from, cash.to)}.` : null,
+    fuel ? `${km(fuel.gap_km)} between pumps, ${stretchPart(fuel.near_from, fuel.near_to)}.` : null,
+    "A list you can tick off and keep on your phone.",
+  );
+}
+
+/*
+  The Fuel section already answers "petrol pumps on Manali to Leh". The fuel check answers the other question riders
+  search: will my bike make it? So its title asks that, with the longest gap when it is long enough to worry about.
+  A route with no pumps listed keeps the plain name: there is nothing to check against.
+*/
+export function fuelCheckSearchTitle(route: Route, fallback: string): string {
+  const short = shortRouteName(route);
+  if (!fuelGap(route)) return fallback;
+  const long = longFuelGap(route);
+  if (long) return firstThatFits(`${short}: can your tank do ${km(long.gap_km)}?`, `${short}: fuel range for your bike`, fallback);
+  return firstThatFits(`${short}: fuel range for your bike`, `${short}: fuel range by bike`, fallback);
+}
+
+export function fuelCheckDescription(route: Route, bikeCount: number, fallback: string): string {
+  const short = shortRouteName(route);
+  const gap = fuelGap(route);
+  if (!gap) return fallback;
+  const bikes = bikeCount > 0 ? `${bikeCount} bikes to pick from, or enter your own tank and mileage.` : null;
+  const long = longFuelGap(route);
+  if (long) {
+    return sentences(
+      `Pick your bike and see if one tank covers the ${km(long.gap_km)} ${stretchPart(long.near_from, long.near_to)}, the longest stretch without a pump on ${short}.`,
+      bikes,
+    );
+  }
+  return sentences(
+    `Pick your bike and see how far one tank goes on ${short}. The longest stretch without a pump is ${km(gap.gap_km)}.`,
+    bikes,
+  );
 }
