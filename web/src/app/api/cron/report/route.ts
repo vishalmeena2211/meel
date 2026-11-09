@@ -4,7 +4,8 @@ import { buildReport, claimSend } from "@/server/report/build";
 import { registerWebhook, sendToEditor, telegramReady } from "@/server/report/telegram";
 
 /*
-  GET /api/cron/report. Vercel's cron calls it every day at 9:00 IST (web/vercel.json). On Mondays it sends the week.
+  GET /api/cron/report. The "Daily report" GitHub workflow calls it every day at 9:00 IST
+  (.github/workflows/daily-report.yml). On Mondays it sends the week.
   It needs no secret: whoever calls it, the report only ever goes to the editor's own chat, at most once a day.
 */
 

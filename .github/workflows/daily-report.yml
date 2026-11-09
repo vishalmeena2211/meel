@@ -1,0 +1,36 @@
+# Sends the editor's daily report on Telegram: what riders sent that is waiting to be read, visitors, Google search
+# and Ask Meel. Mondays add the week.
+#
+# This used to be a Vercel cron (web/vercel.json). The site now runs on its own server, where nothing called it, so it
+# runs here instead, like "Keep pages fresh". The address needs no secret: it only ever sends to the editor's own chat,
+# and at most once a day, so a retried run does not send twice. "Run workflow" sends it now (unless it was already sent
+# today).
+#
+# GitHub turns off scheduled workflows in a public repository after 60 days with no commits; "Run workflow" on the
+# Actions tab, or any commit, turns it back on.
+name: Daily report
+
+on:
+  schedule:
+    - cron: "30 3 * * *" # 09:00 in India
+  workflow_dispatch:
+
+permissions: {}
+
+concurrency:
+  group: daily-report
+  cancel-in-progress: false
+
+jobs:
+  send:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Ask the site to send the report
+        run: |
+          body=$(curl -sS --retry 3 --retry-delay 10 --max-time 90 https://rideplanner.in/api/cron/report)
+          echo "$body"
+          case "$body" in
+            *'"sent":true'*|*'already sent today'*) ;;
+            *) echo "::warning::The daily report was not sent: $body" ;;
+          esac
