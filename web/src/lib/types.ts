@@ -382,12 +382,29 @@ export interface PackingItem {
   /** Months 1 to 12. Empty means every month. */
   months: number[];
   links_to?: "fuel-check" | "rules" | "save";
+  /** A key in site/shop.json, for things a rider can buy. Never on papers, permits, cash or medicines. */
+  shop?: string;
+  /** This road's own reason, worked out on the server from the route's data. Shown instead of `reason`. */
+  road_reason?: string;
+  /** This road's own reason for one month (1 to 12), such as an early sunset. Shown before `road_reason`. */
+  month_reasons?: Record<number, string>;
+  /** Where the shop link goes, worked out on the server. Absent while the store has no tag. */
+  shop_link?: { store: string; href: string };
 }
 
 export interface PackingList {
   terrain: Terrain;
   written_by: string;
   items: PackingItem[];
+  /** The store's own sentence, shown under the list when any item has a shop link. */
+  shop_disclosure?: string;
+}
+
+/** site/shop.json: the store, and what each shop key searches for or points at. */
+export interface ShopFile {
+  store: { name: string; host: string; tag: string };
+  disclosure: string;
+  items: Record<string, { search?: string; url?: string }>;
 }
 
 export interface FactKind {

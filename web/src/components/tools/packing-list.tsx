@@ -37,6 +37,7 @@ export function PackingList({
   }
 
   const items = list.items.filter((i) => i.months.length === 0 || i.months.includes(month));
+  const shops = items.some((i) => i.shop_link);
 
   return (
     <div className="flex flex-col gap-3">
@@ -56,6 +57,11 @@ export function PackingList({
         ))}
       </div>
       <p className="label">For this route in {monthName(month)}</p>
+      {shops ? (
+        <p className="hint">
+          Meel may earn a small commission if you buy through a shop link. It never changes what is on the list.
+        </p>
+      ) : null}
       <ul className="card flex flex-col">
         {items.map((i) => {
           const link = i.links_to ? LINK_WORDS[i.links_to] : undefined;
@@ -72,7 +78,7 @@ export function PackingList({
               <label htmlFor={id} className="min-w-0 flex-1">
                 <b className="block text-[0.9375rem] leading-5">{i.item}</b>
                 <span className="hint block">
-                  {i.reason}
+                  {i.month_reasons?.[month] ?? i.road_reason ?? i.reason}
                   {link ? (
                     <>
                       {" "}
@@ -82,6 +88,16 @@ export function PackingList({
                     </>
                   ) : null}
                 </span>
+                {i.shop_link ? (
+                  <a
+                    className="link mt-1 inline-block text-sm font-medium"
+                    href={i.shop_link.href}
+                    target="_blank"
+                    rel="sponsored nofollow noopener"
+                  >
+                    Shop on {i.shop_link.store} ↗
+                  </a>
+                ) : null}
               </label>
             </li>
           );
@@ -90,6 +106,7 @@ export function PackingList({
       <p className="hint">
         {items.filter((i) => ticked.includes(i.item)).length} of {items.length} ticked. Your ticks are kept on this phone only. {list.written_by}
       </p>
+      {shops && list.shop_disclosure ? <p className="hint">{list.shop_disclosure}</p> : null}
     </div>
   );
 }

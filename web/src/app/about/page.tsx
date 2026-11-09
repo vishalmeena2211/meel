@@ -5,7 +5,7 @@ import { PageTitle } from "@/components/form";
 import { IconCheck, IconClock } from "@/components/icons";
 import { Callout, KmStone, StateBadge } from "@/components/ui";
 import { ANALYTICS_ON, RECORD_PERCENT } from "@/lib/analytics-config";
-import { getFactKinds, getIndex } from "@/lib/content";
+import { getFactKinds, getIndex, getShop } from "@/lib/content";
 import { SOURCE_URL } from "@/lib/site";
 
 export const metadata: Metadata = {
@@ -15,7 +15,8 @@ export const metadata: Metadata = {
 };
 
 export default async function AboutPage() {
-  const [index, kinds] = await Promise.all([getIndex(), getFactKinds()]);
+  const [index, kinds, shop] = await Promise.all([getIndex(), getFactKinds(), getShop()]);
+  const shopLinks = Boolean(shop?.store.tag.trim());
   return (
     <div className="mx-auto flex w-full max-w-2xl flex-col gap-6">
       <div className="flex items-center gap-3">
@@ -124,7 +125,11 @@ export default async function AboutPage() {
       </section>
 
       <Callout title="Kept by one person, as a hobby">
-        No advertising. No paid listings. If that ever changes, every paid link will be marked as such. Visits are counted with Vercel’s Web Analytics, which uses no cookies and keeps nothing that names you.
+        No advertising. No paid listings.
+        {shopLinks && shop
+          ? ` The packing lists have shop links beside things you can buy. If you buy through one, Meel may earn a small commission, which helps pay for the server. Each says which shop it opens, and none decides what is on a list: an item is there because the road needs it. ${shop.disclosure}`
+          : " If that ever changes, every paid link will be marked as such."}{" "}
+        Visits are counted with Vercel’s Web Analytics, which uses no cookies and keeps nothing that names you.
         {ANALYTICS_ON
           ? ` Mixpanel counts which pages are read and which tools are used, such as the fuel check or the route file.${
               RECORD_PERCENT > 0

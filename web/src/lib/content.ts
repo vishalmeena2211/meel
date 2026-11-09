@@ -16,6 +16,7 @@ import type {
   RouteHelp,
   RouteIndex,
   RouteSummary,
+  ShopFile,
   Terrain,
 } from "./types";
 
@@ -61,6 +62,8 @@ export const getPackingList = cache(
   async (terrain: Terrain): Promise<PackingList | null> =>
     readJson<PackingList>("site", "packing", `${terrain}.json`),
 );
+
+export const getShop = cache(async (): Promise<ShopFile | null> => readJson<ShopFile>("site", "shop.json"));
 
 export const getFactKinds = cache(async (): Promise<FactKind[]> => {
   const file = await readJson<{ kinds: FactKind[] }>("site", "fact-kinds.json");
