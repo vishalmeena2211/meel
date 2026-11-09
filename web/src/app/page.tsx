@@ -82,7 +82,7 @@ export default async function HomePage() {
           Every fact has a date
         </p>
         <p className="max-w-[60ch] text-[0.9375rem]">
-          Dated facts for Indian motorcycle routes. Every fact shows who confirmed it, and when.{" "}
+          Dated facts for Indian motorcycle routes. Every fact shows where it came from, and when.{" "}
           <Link className="link" href="/about">
             How far to trust it
           </Link>

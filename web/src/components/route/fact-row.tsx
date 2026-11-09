@@ -64,7 +64,7 @@ export function FactRow({
           <Badge tone={mark.tone}>{mark.words}</Badge>
         ) : view.aside ? (
           <Badge>{view.aside}</Badge>
-        ) : short ? null : (
+        ) : short || view.quiet ? null : (
           <StateBadge state={view.state} />
         )}
       </div>
