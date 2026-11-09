@@ -7427,6 +7427,386 @@
  "counts": {
   "facts": 188
  },
+ "daylight": [
+  {
+   "name": "Sunauli",
+   "km_from_start": 0.0,
+   "months": [
+    [
+     "07:02",
+     "17:37"
+    ],
+    [
+     "06:49",
+     "18:02"
+    ],
+    [
+     "06:22",
+     "18:19"
+    ],
+    [
+     "05:48",
+     "18:35"
+    ],
+    [
+     "05:23",
+     "18:52"
+    ],
+    [
+     "05:15",
+     "19:07"
+    ],
+    [
+     "05:25",
+     "19:09"
+    ],
+    [
+     "05:42",
+     "18:50"
+    ],
+    [
+     "05:56",
+     "18:17"
+    ],
+    [
+     "06:10",
+     "17:43"
+    ],
+    [
+     "06:32",
+     "17:20"
+    ],
+    [
+     "06:54",
+     "17:19"
+    ]
+   ]
+  },
+  {
+   "name": "Butwal",
+   "km_from_start": 26.8,
+   "months": [
+    [
+     "07:03",
+     "17:37"
+    ],
+    [
+     "06:49",
+     "18:02"
+    ],
+    [
+     "06:22",
+     "18:19"
+    ],
+    [
+     "05:47",
+     "18:35"
+    ],
+    [
+     "05:22",
+     "18:52"
+    ],
+    [
+     "05:15",
+     "19:08"
+    ],
+    [
+     "05:25",
+     "19:09"
+    ],
+    [
+     "05:41",
+     "18:51"
+    ],
+    [
+     "05:56",
+     "18:17"
+    ],
+    [
+     "06:10",
+     "17:43"
+    ],
+    [
+     "06:32",
+     "17:20"
+    ],
+    [
+     "06:54",
+     "17:18"
+    ]
+   ]
+  },
+  {
+   "name": "Pokhara",
+   "km_from_start": 184.5,
+   "months": [
+    [
+     "07:02",
+     "17:34"
+    ],
+    [
+     "06:48",
+     "17:59"
+    ],
+    [
+     "06:20",
+     "18:17"
+    ],
+    [
+     "05:45",
+     "18:34"
+    ],
+    [
+     "05:19",
+     "18:51"
+    ],
+    [
+     "05:11",
+     "19:07"
+    ],
+    [
+     "05:21",
+     "19:08"
+    ],
+    [
+     "05:39",
+     "18:49"
+    ],
+    [
+     "05:53",
+     "18:15"
+    ],
+    [
+     "06:09",
+     "17:41"
+    ],
+    [
+     "06:31",
+     "17:17"
+    ],
+    [
+     "06:53",
+     "17:15"
+    ]
+   ]
+  },
+  {
+   "name": "Beni",
+   "km_from_start": 266.8,
+   "months": [
+    [
+     "07:04",
+     "17:35"
+    ],
+    [
+     "06:50",
+     "18:00"
+    ],
+    [
+     "06:22",
+     "18:19"
+    ],
+    [
+     "05:46",
+     "18:36"
+    ],
+    [
+     "05:21",
+     "18:53"
+    ],
+    [
+     "05:13",
+     "19:09"
+    ],
+    [
+     "05:23",
+     "19:10"
+    ],
+    [
+     "05:40",
+     "18:51"
+    ],
+    [
+     "05:55",
+     "18:17"
+    ],
+    [
+     "06:10",
+     "17:42"
+    ],
+    [
+     "06:33",
+     "17:19"
+    ],
+    [
+     "06:55",
+     "17:17"
+    ]
+   ]
+  },
+  {
+   "name": "Tatopani",
+   "km_from_start": 274.6,
+   "months": [
+    [
+     "07:04",
+     "17:35"
+    ],
+    [
+     "06:50",
+     "18:01"
+    ],
+    [
+     "06:22",
+     "18:19"
+    ],
+    [
+     "05:47",
+     "18:36"
+    ],
+    [
+     "05:21",
+     "18:53"
+    ],
+    [
+     "05:13",
+     "19:09"
+    ],
+    [
+     "05:23",
+     "19:10"
+    ],
+    [
+     "05:40",
+     "18:51"
+    ],
+    [
+     "05:55",
+     "18:17"
+    ],
+    [
+     "06:11",
+     "17:42"
+    ],
+    [
+     "06:33",
+     "17:19"
+    ],
+    [
+     "06:55",
+     "17:17"
+    ]
+   ]
+  },
+  {
+   "name": "Jomsom",
+   "km_from_start": 353.5,
+   "months": [
+    [
+     "07:04",
+     "17:33"
+    ],
+    [
+     "06:49",
+     "17:59"
+    ],
+    [
+     "06:21",
+     "18:18"
+    ],
+    [
+     "05:45",
+     "18:35"
+    ],
+    [
+     "05:19",
+     "18:53"
+    ],
+    [
+     "05:11",
+     "19:09"
+    ],
+    [
+     "05:21",
+     "19:10"
+    ],
+    [
+     "05:39",
+     "18:51"
+    ],
+    [
+     "05:54",
+     "18:17"
+    ],
+    [
+     "06:10",
+     "17:41"
+    ],
+    [
+     "06:33",
+     "17:17"
+    ],
+    [
+     "06:55",
+     "17:15"
+    ]
+   ]
+  },
+  {
+   "name": "Muktinath",
+   "km_from_start": 366.7,
+   "months": [
+    [
+     "07:04",
+     "17:33"
+    ],
+    [
+     "06:49",
+     "17:59"
+    ],
+    [
+     "06:21",
+     "18:18"
+    ],
+    [
+     "05:45",
+     "18:35"
+    ],
+    [
+     "05:19",
+     "18:53"
+    ],
+    [
+     "05:11",
+     "19:09"
+    ],
+    [
+     "05:21",
+     "19:10"
+    ],
+    [
+     "05:39",
+     "18:51"
+    ],
+    [
+     "05:54",
+     "18:16"
+    ],
+    [
+     "06:10",
+     "17:41"
+    ],
+    [
+     "06:33",
+     "17:17"
+    ],
+    [
+     "06:55",
+     "17:15"
+    ]
+   ]
+  }
+ ],
  "built": "2026-11-08",
  "mechanics": [
   {
@@ -8952,6 +9332,74 @@
    }
   }
  ],
+ "cash": {
+  "by_halt": [
+   {
+    "near": "Sunauli",
+    "km_from_start": 0.0,
+    "atms": 1,
+    "banks": 6,
+    "names": [
+     "Agricultural Development Bank Ltd. Banking Office",
+     "Agricultural Development Bank, Bhairahawa",
+     "NIC Asia Bank Bhairahawa Branch",
+     "Nepal Rastra Bank Bhairahwa",
+     "Punjab National Bank",
+     "Siddhartha Bank Limited"
+    ]
+   },
+   {
+    "near": "Butwal",
+    "km_from_start": 26.8,
+    "atms": 2,
+    "banks": 12,
+    "names": [
+     "ADBL RTC Maglapur Rupandehi",
+     "Butwal Branch",
+     "Everest Bank",
+     "Gandaki Bikas Bank Ltd",
+     "Global IME Bank Ltd. ATM",
+     "Himalayan Bank Limited"
+    ]
+   },
+   {
+    "near": "Pokhara",
+    "km_from_start": 184.5,
+    "atms": 4,
+    "banks": 13,
+    "names": [
+     "ATM Lounge, Centre Point",
+     "British Gurkhas, PPO Pokhara Extension Counter",
+     "Devisfall Saving and Credit Cooperative Ltd",
+     "Dudh Pokhari Saving & Credit Co Operative Ltd",
+     "Machhapuchchhre Bank Ltd",
+     "Mega Bank Nepal Ltd, Pokhara"
+    ]
+   },
+   {
+    "near": "Beni",
+    "km_from_start": 266.8,
+    "atms": 0,
+    "banks": 2,
+    "names": [
+     "NESDO Sambridha Laghubitta Bittiya Sanstha Ltd",
+     "Prabhu Bank Limited Baglung"
+    ]
+   }
+  ],
+  "longest_gaps": [
+   {
+    "from": "Butwal",
+    "to": "Pokhara",
+    "gap_km": 148
+   },
+   {
+    "from": "Beni",
+    "to": "end of route",
+    "gap_km": 112
+   }
+  ]
+ },
  "mechanics_left_out": [
   {
    "near": "Pokhara",
@@ -8974,6 +9422,32 @@
   {
    "near": "Sunauli",
    "count": 59
+  }
+ ],
+ "photos": [
+  {
+   "near": "Jomsom",
+   "kind": "place",
+   "km_from_start": 353.5,
+   "title": "JOMSOM AIRPORT",
+   "page": "https://commons.wikimedia.org/wiki/File:JOMSOM_AIRPORT.jpg",
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/03/JOMSOM_AIRPORT.jpg/500px-JOMSOM_AIRPORT.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "taken": "2025-05-17",
+   "author": "Aastha Stha",
+   "licence": "CC0",
+   "licence_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+  },
+  {
+   "near": "Jomsom",
+   "kind": "place",
+   "km_from_start": 353.5,
+   "title": "Nilgiri Himal, elevation 6,940 m (22,770 ft), from Jomsom, Nepal",
+   "page": "https://commons.wikimedia.org/wiki/File:Nilgiri_Himal,_elevation_6,940_m_(22,770_ft),_from_Jomsom,_Nepal.jpg",
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e3/Nilgiri_Himal%2C_elevation_6%2C940_m_%2822%2C770_ft%29%2C_from_Jomsom%2C_Nepal.jpg/500px-Nilgiri_Himal%2C_elevation_6%2C940_m_%2822%2C770_ft%29%2C_from_Jomsom%2C_Nepal.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "taken": "2024-10-12",
+   "author": "Saddam19",
+   "licence": "CC BY-SA 4.0",
+   "licence_url": "https://creativecommons.org/licenses/by-sa/4.0"
   }
  ]
 }

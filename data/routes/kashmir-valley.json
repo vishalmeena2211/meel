@@ -4569,6 +4569,332 @@
  "counts": {
   "facts": 121
  },
+ "daylight": [
+  {
+   "name": "Srinagar",
+   "km_from_start": 0.0,
+   "months": [
+    [
+     "07:36",
+     "17:43"
+    ],
+    [
+     "07:17",
+     "18:13"
+    ],
+    [
+     "06:43",
+     "18:38"
+    ],
+    [
+     "06:01",
+     "19:01"
+    ],
+    [
+     "05:30",
+     "19:24"
+    ],
+    [
+     "05:18",
+     "19:43"
+    ],
+    [
+     "05:30",
+     "19:43"
+    ],
+    [
+     "05:52",
+     "19:20"
+    ],
+    [
+     "06:13",
+     "18:39"
+    ],
+    [
+     "06:35",
+     "17:58"
+    ],
+    [
+     "07:03",
+     "17:28"
+    ],
+    [
+     "07:29",
+     "17:23"
+    ]
+   ]
+  },
+  {
+   "name": "Tangmarg",
+   "km_from_start": 40.6,
+   "months": [
+    [
+     "07:38",
+     "17:44"
+    ],
+    [
+     "07:18",
+     "18:15"
+    ],
+    [
+     "06:45",
+     "18:39"
+    ],
+    [
+     "06:03",
+     "19:03"
+    ],
+    [
+     "05:31",
+     "19:26"
+    ],
+    [
+     "05:20",
+     "19:45"
+    ],
+    [
+     "05:31",
+     "19:45"
+    ],
+    [
+     "05:53",
+     "19:21"
+    ],
+    [
+     "06:15",
+     "18:41"
+    ],
+    [
+     "06:36",
+     "18:00"
+    ],
+    [
+     "07:05",
+     "17:30"
+    ],
+    [
+     "07:30",
+     "17:25"
+    ]
+   ]
+  },
+  {
+   "name": "Gulmarg",
+   "km_from_start": 52.1,
+   "months": [
+    [
+     "07:38",
+     "17:45"
+    ],
+    [
+     "07:18",
+     "18:15"
+    ],
+    [
+     "06:45",
+     "18:39"
+    ],
+    [
+     "06:03",
+     "19:03"
+    ],
+    [
+     "05:31",
+     "19:26"
+    ],
+    [
+     "05:20",
+     "19:45"
+    ],
+    [
+     "05:31",
+     "19:45"
+    ],
+    [
+     "05:53",
+     "19:21"
+    ],
+    [
+     "06:15",
+     "18:41"
+    ],
+    [
+     "06:36",
+     "18:00"
+    ],
+    [
+     "07:05",
+     "17:30"
+    ],
+    [
+     "07:30",
+     "17:25"
+    ]
+   ]
+  },
+  {
+   "name": "Anantnag",
+   "km_from_start": 159.1,
+   "months": [
+    [
+     "07:34",
+     "17:42"
+    ],
+    [
+     "07:15",
+     "18:12"
+    ],
+    [
+     "06:42",
+     "18:37"
+    ],
+    [
+     "06:00",
+     "18:59"
+    ],
+    [
+     "05:29",
+     "19:22"
+    ],
+    [
+     "05:18",
+     "19:41"
+    ],
+    [
+     "05:29",
+     "19:41"
+    ],
+    [
+     "05:51",
+     "19:18"
+    ],
+    [
+     "06:12",
+     "18:38"
+    ],
+    [
+     "06:33",
+     "17:57"
+    ],
+    [
+     "07:01",
+     "17:28"
+    ],
+    [
+     "07:27",
+     "17:22"
+    ]
+   ]
+  },
+  {
+   "name": "Pahalgam",
+   "km_from_start": 202.9,
+   "months": [
+    [
+     "07:34",
+     "17:41"
+    ],
+    [
+     "07:15",
+     "18:11"
+    ],
+    [
+     "06:41",
+     "18:36"
+    ],
+    [
+     "05:59",
+     "18:59"
+    ],
+    [
+     "05:28",
+     "19:22"
+    ],
+    [
+     "05:17",
+     "19:41"
+    ],
+    [
+     "05:28",
+     "19:41"
+    ],
+    [
+     "05:50",
+     "19:17"
+    ],
+    [
+     "06:11",
+     "18:37"
+    ],
+    [
+     "06:33",
+     "17:56"
+    ],
+    [
+     "07:01",
+     "17:26"
+    ],
+    [
+     "07:27",
+     "17:21"
+    ]
+   ]
+  },
+  {
+   "name": "Sonamarg",
+   "km_from_start": 379.5,
+   "months": [
+    [
+     "07:35",
+     "17:40"
+    ],
+    [
+     "07:15",
+     "18:11"
+    ],
+    [
+     "06:41",
+     "18:36"
+    ],
+    [
+     "05:59",
+     "18:59"
+    ],
+    [
+     "05:27",
+     "19:23"
+    ],
+    [
+     "05:16",
+     "19:42"
+    ],
+    [
+     "05:27",
+     "19:42"
+    ],
+    [
+     "05:49",
+     "19:18"
+    ],
+    [
+     "06:11",
+     "18:37"
+    ],
+    [
+     "06:33",
+     "17:56"
+    ],
+    [
+     "07:01",
+     "17:26"
+    ],
+    [
+     "07:27",
+     "17:20"
+    ]
+   ]
+  }
+ ],
  "built": "2026-11-08",
  "mechanics": [
   {
@@ -5086,6 +5412,139 @@
    }
   }
  ],
+ "cash": {
+  "by_halt": [
+   {
+    "near": "Tangmarg",
+    "km_from_start": 40.6,
+    "atms": 0,
+    "banks": 4,
+    "names": [
+     "HDFC Bank",
+     "ICICI Bank",
+     "J&K Bank",
+     "Punjab National Bank"
+    ]
+   },
+   {
+    "near": "Gulmarg",
+    "km_from_start": 52.1,
+    "atms": 4,
+    "banks": 5,
+    "names": [
+     "ATM",
+     "Bank",
+     "EBU",
+     "J&K Bank",
+     "J&K Bank - ATM",
+     "Jammu and Kashmir Bank"
+    ]
+   },
+   {
+    "near": "Between Gulmarg and Srinagar",
+    "km_from_start": 78,
+    "atms": 1,
+    "banks": 1,
+    "names": [
+     "Axis Bank",
+     "State Bank of India Magam Budgam Branch"
+    ]
+   },
+   {
+    "near": "Between Srinagar and Anantnag",
+    "km_from_start": 130,
+    "atms": 2,
+    "banks": 3,
+    "names": [
+     "Axis Bank",
+     "HDFC Bank",
+     "J&K Bank - ATM",
+     "J&K Bank - CRM"
+    ]
+   },
+   {
+    "near": "Anantnag",
+    "km_from_start": 159.1,
+    "atms": 7,
+    "banks": 22,
+    "names": [
+     "Axis Bank",
+     "Axis Bank Branch",
+     "Bank",
+     "Canara Bank",
+     "Central Bank of India",
+     "HDFC Bank"
+    ]
+   },
+   {
+    "near": "Pahalgam",
+    "km_from_start": 202.9,
+    "atms": 2,
+    "banks": 2,
+    "names": [
+     "Central Cooperative Bank-Pahalgam",
+     "HDFC Bank ATM",
+     "J&K Bank",
+     "J&K Bank - ATM"
+    ]
+   },
+   {
+    "near": "Between Pahalgam and Srinagar",
+    "km_from_start": 246,
+    "atms": 6,
+    "banks": 3,
+    "names": [
+     "Axis Bank ATM",
+     "Axis Bank Branch",
+     "HDFC Bank ATM",
+     "J&K Bank - ATM",
+     "J&K Bank - CRM",
+     "J&K Bank - Extended Counter"
+    ]
+   },
+   {
+    "near": "Srinagar",
+    "km_from_start": 300.0,
+    "atms": 41,
+    "banks": 77,
+    "names": [
+     "ATM",
+     "Axis Bank",
+     "Axis Bank ATM",
+     "Axis Bank Branch",
+     "Bank",
+     "Bank of Baroda"
+    ]
+   },
+   {
+    "near": "Between Srinagar and Sonamarg",
+    "km_from_start": 327,
+    "atms": 4,
+    "banks": 6,
+    "names": [
+     "ATM",
+     "EBU",
+     "HDFC Bank",
+     "J&K Bank",
+     "J&K Bank - ATM",
+     "J&K Bank - CRM"
+    ]
+   },
+   {
+    "near": "Sonamarg",
+    "km_from_start": 379.5,
+    "atms": 2,
+    "banks": 3,
+    "names": [
+     "ATM",
+     "Bank",
+     "J&K Bank",
+     "J&K Bank - Small Business Unit"
+    ]
+   }
+  ],
+  "longest_gaps": []
+ },
  "mechanics_left_out": [
   {
    "near": "Srinagar",
@@ -5108,6 +5567,68 @@
   {
    "near": "Sonamarg",
    "count": 48
+  }
+ ],
+ "photos": [
+  {
+   "near": "Gulmarg",
+   "kind": "place",
+   "km_from_start": 52.1,
+   "title": "Inner view of St Mary's Church in the valley of Shepherds in Gulmarg 02",
+   "page": "https://commons.wikimedia.org/wiki/File:Inner_view_of_St_Mary%27s_Church_in_the_valley_of_Shepherds_in_Gulmarg_02.jpg",
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/47/Inner_view_of_St_Mary%27s_Church_in_the_valley_of_Shepherds_in_Gulmarg_02.jpg/500px-Inner_view_of_St_Mary%27s_Church_in_the_valley_of_Shepherds_in_Gulmarg_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "taken": "2024-09-19",
+   "author": "Harvinder Chandigarh",
+   "licence": "CC BY 4.0",
+   "licence_url": "https://creativecommons.org/licenses/by/4.0"
+  },
+  {
+   "near": "Gulmarg",
+   "kind": "place",
+   "km_from_start": 52.1,
+   "title": "Srinagar to Gulmarg - vrvvkbjk2k23iph (266)",
+   "page": "https://commons.wikimedia.org/wiki/File:Srinagar_to_Gulmarg_-_vrvvkbjk2k23iph_(266).jpg",
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/ff/Srinagar_to_Gulmarg_-_vrvvkbjk2k23iph_%28266%29.jpg/500px-Srinagar_to_Gulmarg_-_vrvvkbjk2k23iph_%28266%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "taken": "2023-04-26",
+   "author": "Vinayaraj",
+   "licence": "CC BY-SA 4.0",
+   "licence_url": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  {
+   "near": "Pahalgam",
+   "kind": "place",
+   "km_from_start": 202.9,
+   "title": "Pahalgam botanical garden Jammu and Kashmir",
+   "page": "https://commons.wikimedia.org/wiki/File:Pahalgam_botanical_garden_Jammu_and_Kashmir.jpg",
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/66/Pahalgam_botanical_garden_Jammu_and_Kashmir.jpg/500px-Pahalgam_botanical_garden_Jammu_and_Kashmir.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "taken": "2025-10-02",
+   "author": "KahkashaaN",
+   "licence": "CC BY-SA 4.0",
+   "licence_url": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  {
+   "near": "Pahalgam",
+   "kind": "place",
+   "km_from_start": 202.9,
+   "title": "Srinagar to Pahalgam - vrvvkbjk2k23iph (617)",
+   "page": "https://commons.wikimedia.org/wiki/File:Srinagar_to_Pahalgam_-_vrvvkbjk2k23iph_(617).jpg",
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5b/Srinagar_to_Pahalgam_-_vrvvkbjk2k23iph_%28617%29.jpg/500px-Srinagar_to_Pahalgam_-_vrvvkbjk2k23iph_%28617%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "taken": "2023-04-24",
+   "author": "Vinayaraj",
+   "licence": "CC BY-SA 4.0",
+   "licence_url": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  {
+   "near": "Sonamarg",
+   "kind": "place",
+   "km_from_start": 379.5,
+   "title": "Srinagar to Sonamarg - vrvvkbjk2k23iph (10)",
+   "page": "https://commons.wikimedia.org/wiki/File:Srinagar_to_Sonamarg_-_vrvvkbjk2k23iph_(10).jpg",
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c3/Srinagar_to_Sonamarg_-_vrvvkbjk2k23iph_%2810%29.jpg/500px-Srinagar_to_Sonamarg_-_vrvvkbjk2k23iph_%2810%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "taken": "2023-04-25",
+   "author": "Vinayaraj",
+   "licence": "CC BY-SA 4.0",
+   "licence_url": "https://creativecommons.org/licenses/by-sa/4.0"
   }
  ]
 }

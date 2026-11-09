@@ -3797,6 +3797,278 @@
  "counts": {
   "facts": 129
  },
+ "daylight": [
+  {
+   "name": "Bhopal",
+   "km_from_start": 0.0,
+   "months": [
+    [
+     "07:04",
+     "17:54"
+    ],
+    [
+     "06:54",
+     "18:16"
+    ],
+    [
+     "06:31",
+     "18:29"
+    ],
+    [
+     "06:00",
+     "18:41"
+    ],
+    [
+     "05:39",
+     "18:54"
+    ],
+    [
+     "05:34",
+     "19:07"
+    ],
+    [
+     "05:43",
+     "19:09"
+    ],
+    [
+     "05:56",
+     "18:54"
+    ],
+    [
+     "06:06",
+     "18:25"
+    ],
+    [
+     "06:17",
+     "17:55"
+    ],
+    [
+     "06:34",
+     "17:36"
+    ],
+    [
+     "06:54",
+     "17:37"
+    ]
+   ]
+  },
+  {
+   "name": "Pachmarhi",
+   "km_from_start": 221.4,
+   "months": [
+    [
+     "06:58",
+     "17:52"
+    ],
+    [
+     "06:49",
+     "18:12"
+    ],
+    [
+     "06:26",
+     "18:25"
+    ],
+    [
+     "05:57",
+     "18:36"
+    ],
+    [
+     "05:36",
+     "18:48"
+    ],
+    [
+     "05:31",
+     "19:01"
+    ],
+    [
+     "05:40",
+     "19:04"
+    ],
+    [
+     "05:53",
+     "18:49"
+    ],
+    [
+     "06:02",
+     "18:21"
+    ],
+    [
+     "06:12",
+     "17:52"
+    ],
+    [
+     "06:29",
+     "17:33"
+    ],
+    [
+     "06:48",
+     "17:34"
+    ]
+   ]
+  },
+  {
+   "name": "Khajuraho",
+   "km_from_start": 640.8,
+   "months": [
+    [
+     "06:56",
+     "17:41"
+    ],
+    [
+     "06:45",
+     "18:04"
+    ],
+    [
+     "06:21",
+     "18:19"
+    ],
+    [
+     "05:49",
+     "18:32"
+    ],
+    [
+     "05:26",
+     "18:46"
+    ],
+    [
+     "05:20",
+     "19:00"
+    ],
+    [
+     "05:30",
+     "19:03"
+    ],
+    [
+     "05:44",
+     "18:46"
+    ],
+    [
+     "05:56",
+     "18:16"
+    ],
+    [
+     "06:08",
+     "17:44"
+    ],
+    [
+     "06:26",
+     "17:24"
+    ],
+    [
+     "06:47",
+     "17:24"
+    ]
+   ]
+  },
+  {
+   "name": "Orchha",
+   "km_from_start": 814.7,
+   "months": [
+    [
+     "07:03",
+     "17:46"
+    ],
+    [
+     "06:51",
+     "18:08"
+    ],
+    [
+     "06:26",
+     "18:24"
+    ],
+    [
+     "05:54",
+     "18:38"
+    ],
+    [
+     "05:31",
+     "18:52"
+    ],
+    [
+     "05:24",
+     "19:07"
+    ],
+    [
+     "05:34",
+     "19:09"
+    ],
+    [
+     "05:49",
+     "18:52"
+    ],
+    [
+     "06:01",
+     "18:21"
+    ],
+    [
+     "06:13",
+     "17:49"
+    ],
+    [
+     "06:32",
+     "17:28"
+    ],
+    [
+     "06:53",
+     "17:28"
+    ]
+   ]
+  },
+  {
+   "name": "Gwalior",
+   "km_from_start": 935.4,
+   "months": [
+    [
+     "07:06",
+     "17:46"
+    ],
+    [
+     "06:54",
+     "18:09"
+    ],
+    [
+     "06:28",
+     "18:26"
+    ],
+    [
+     "05:55",
+     "18:40"
+    ],
+    [
+     "05:31",
+     "18:56"
+    ],
+    [
+     "05:24",
+     "19:10"
+    ],
+    [
+     "05:34",
+     "19:12"
+    ],
+    [
+     "05:50",
+     "18:55"
+    ],
+    [
+     "06:02",
+     "18:23"
+    ],
+    [
+     "06:16",
+     "17:50"
+    ],
+    [
+     "06:36",
+     "17:29"
+    ],
+    [
+     "06:57",
+     "17:28"
+    ]
+   ]
+  }
+ ],
  "built": "2026-11-08",
  "mechanics": [
   {
@@ -3833,6 +4105,132 @@
   }
  ],
  "stays": [],
+ "cash": {
+  "by_halt": [
+   {
+    "near": "Bhopal",
+    "km_from_start": 0.0,
+    "atms": 50,
+    "banks": 104,
+    "names": [
+     "Aavas Financiers Limited",
+     "Alankit",
+     "All India Allahabad Bank Pensioners & Retirees Association",
+     "Allahabad Bank",
+     "Allahabad Bank ATM",
+     "Axis Bank"
+    ]
+   },
+   {
+    "near": "Between Bhopal and Pachmarhi",
+    "km_from_start": 26,
+    "atms": 10,
+    "banks": 28,
+    "names": [
+     "Anant Spinning Mills - Worksite ATM",
+     "Axis Bank",
+     "Axis Bank ATM",
+     "Axis Bank Branch",
+     "Bank Of India",
+     "Bank of Baroda"
+    ]
+   },
+   {
+    "near": "Pachmarhi",
+    "km_from_start": 221.4,
+    "atms": 1,
+    "banks": 0,
+    "names": [
+     "Axis Bank ATM"
+    ]
+   },
+   {
+    "near": "Between Pachmarhi and Khajuraho",
+    "km_from_start": 274,
+    "atms": 12,
+    "banks": 37,
+    "names": [
+     "Aavas Financiers Limited",
+     "Alankit",
+     "Allahabad Bank",
+     "Axis Bank",
+     "Axis Bank ATM",
+     "Axis Bank Branch"
+    ]
+   },
+   {
+    "near": "Khajuraho",
+    "km_from_start": 640.8,
+    "atms": 2,
+    "banks": 5,
+    "names": [
+     "Axis Bank",
+     "Axis Bank ATM",
+     "Axis Bank Branch",
+     "HDFC Bank ATM",
+     "Punjab National Bank",
+     "State Bank of India Khajuraho Branch"
+    ]
+   },
+   {
+    "near": "Between Khajuraho and Orchha",
+    "km_from_start": 682,
+    "atms": 2,
+    "banks": 5,
+    "names": [
+     "Axis Bank ATM",
+     "Axis Bank Branch",
+     "Bank of Baroda",
+     "HDFC Bank",
+     "HDFC Bank ATM",
+     "Punjab National Bank"
+    ]
+   },
+   {
+    "near": "Orchha",
+    "km_from_start": 814.7,
+    "atms": 5,
+    "banks": 11,
+    "names": [
+     "Axis Bank ATM",
+     "Axis Bank Branch",
+     "Bank of Maharashtra",
+     "Central Bank of India",
+     "HDFC Bank",
+     "HDFC Bank ATM"
+    ]
+   },
+   {
+    "near": "Between Orchha and Gwalior",
+    "km_from_start": 860,
+    "atms": 8,
+    "banks": 15,
+    "names": [
+     "Axis Bank",
+     "Axis Bank ATM",
+     "Axis Bank Branch",
+     "Bank of Baroda",
+     "Bank of India",
+     "Bank of Maharashtra - Datia Branch"
+    ]
+   },
+   {
+    "near": "Gwalior",
+    "km_from_start": 935.4,
+    "atms": 10,
+    "banks": 32,
+    "names": [
+     "Aavas Financiers Limited",
+     "Alankit",
+     "Axis Bank",
+     "Axis Bank ATM",
+     "Axis Bank Branch",
+     "Bank of Baroda"
+    ]
+   }
+  ],
+  "longest_gaps": []
+ },
  "mechanics_left_out": [
   {
    "near": "Bhopal",

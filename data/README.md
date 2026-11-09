@@ -34,6 +34,7 @@
 - **Text copied from other sites.** Facts are recorded in our own words, with a link. Nothing is pasted.
 - **Anything a rider must supply.** Mobile network by halt, real riding hours and riders' sightings stay empty. They come from trip reports.
 - **Stays and mechanics start as a map's list, not riders' word.** `tools/places.py` reads Overture Maps' places near each road: stays at the small halts (a town with more than 40 is named, not listed) and shops that fix motorcycles. Each shows as "listed on a public map" until a rider confirms it. Phone numbers are not taken, though the listings have them. To refresh, once a month: `python3 tools/places.py --force` then `python3 tools/assemble.py`.
+- **Cash, daylight, photos and towers.** `tools/places.py` also keeps ATMs and banks within 2 km of the road; `assemble.py` counts them by halt and finds the longest stretches with neither. `assemble.py` works out sunrise and sunset on the 15th of each month at each place to stop, with no service. `tools/photos.py` takes the newest dated photos near each pass and halt above 2,000 m from Wikimedia Commons (no key). `tools/network.py` reads cell towers near each halt from OpenCelliD and needs a free token in `OPENCELLID_TOKEN` or `~/.config/meel/opencellid-token`; until it has run, the Mobile network section shows riders' reports only.
 - **Each video's posting day comes from YouTube.** `tools/video_dates.py` asks the YouTube Data API (a read-only key in `YOUTUBE_API_KEY` or `~/.config/meel/youtube-api-key`) and writes `computed/video-dates.json`. The site shows "Filmed" when the video says when it was filmed, and "Posted" otherwise. Run it after adding videos, then `assemble.py`. It needs a Google Cloud login (`gcloud auth login`) and reads a few megabytes per route, inside BigQuery's free terabyte a month.
 - **Fee amounts that only tour operators quote.** Where an official page gives the amount, it is recorded. Otherwise the fee is noted as existing, with no figure.
 
@@ -49,6 +50,8 @@
 | Hospitals and police on the emergency card | Open Database Licence, from OpenStreetMap | As for map data. |
 | Distances from cities, and the towns on the way (`site/route-approaches.json`) | Open Database Licence, from OpenStreetMap, worked out with OSRM and Nominatim | As for map data. |
 | Stays and mechanics (`computed/places/`) | Community Data License Agreement, Permissive 2.0, from the Overture Maps Foundation | Credit "Overture Maps Foundation" where the data appears. The site footer does. |
+| Photos near the road (`computed/photos/`) | Creative Commons, per photo, from Wikimedia Commons | Show the author and the licence beside each photo. The Road section does. |
+| Cell towers (`computed/network/`) | Creative Commons Attribution-ShareAlike 4.0, from OpenCelliD | Credit OpenCelliD where the towers appear. The Mobile network section does. |
 | Pictures | Creative Commons, per picture | Show the author and the licence beside or below each picture. `images/credits.json` holds both. |
 
 ---

@@ -4549,6 +4549,332 @@
  "counts": {
   "facts": 208
  },
+ "daylight": [
+  {
+   "name": "Rampur",
+   "km_from_start": 0.0,
+   "months": [
+    [
+     "07:19",
+     "17:37"
+    ],
+    [
+     "07:02",
+     "18:05"
+    ],
+    [
+     "06:31",
+     "18:27"
+    ],
+    [
+     "05:52",
+     "18:47"
+    ],
+    [
+     "05:24",
+     "19:07"
+    ],
+    [
+     "05:14",
+     "19:25"
+    ],
+    [
+     "05:25",
+     "19:26"
+    ],
+    [
+     "05:44",
+     "19:04"
+    ],
+    [
+     "06:03",
+     "18:27"
+    ],
+    [
+     "06:21",
+     "17:49"
+    ],
+    [
+     "06:47",
+     "17:22"
+    ],
+    [
+     "07:11",
+     "17:18"
+    ]
+   ]
+  },
+  {
+   "name": "Karcham",
+   "km_from_start": 60.8,
+   "months": [
+    [
+     "07:18",
+     "17:36"
+    ],
+    [
+     "07:01",
+     "18:04"
+    ],
+    [
+     "06:30",
+     "18:25"
+    ],
+    [
+     "05:51",
+     "18:46"
+    ],
+    [
+     "05:22",
+     "19:06"
+    ],
+    [
+     "05:12",
+     "19:24"
+    ],
+    [
+     "05:23",
+     "19:25"
+    ],
+    [
+     "05:43",
+     "19:03"
+    ],
+    [
+     "06:01",
+     "18:25"
+    ],
+    [
+     "06:20",
+     "17:47"
+    ],
+    [
+     "06:45",
+     "17:20"
+    ],
+    [
+     "07:10",
+     "17:16"
+    ]
+   ]
+  },
+  {
+   "name": "Sangla",
+   "km_from_start": 97.5,
+   "months": [
+    [
+     "07:16",
+     "17:35"
+    ],
+    [
+     "06:59",
+     "18:03"
+    ],
+    [
+     "06:29",
+     "18:25"
+    ],
+    [
+     "05:50",
+     "18:45"
+    ],
+    [
+     "05:21",
+     "19:05"
+    ],
+    [
+     "05:12",
+     "19:22"
+    ],
+    [
+     "05:22",
+     "19:23"
+    ],
+    [
+     "05:42",
+     "19:02"
+    ],
+    [
+     "06:00",
+     "18:24"
+    ],
+    [
+     "06:19",
+     "17:46"
+    ],
+    [
+     "06:44",
+     "17:19"
+    ],
+    [
+     "07:08",
+     "17:16"
+    ]
+   ]
+  },
+  {
+   "name": "Chitkul",
+   "km_from_start": 121.1,
+   "months": [
+    [
+     "07:15",
+     "17:34"
+    ],
+    [
+     "06:59",
+     "18:02"
+    ],
+    [
+     "06:28",
+     "18:24"
+    ],
+    [
+     "05:49",
+     "18:44"
+    ],
+    [
+     "05:21",
+     "19:04"
+    ],
+    [
+     "05:11",
+     "19:21"
+    ],
+    [
+     "05:22",
+     "19:22"
+    ],
+    [
+     "05:41",
+     "19:01"
+    ],
+    [
+     "06:00",
+     "18:24"
+    ],
+    [
+     "06:18",
+     "17:46"
+    ],
+    [
+     "06:43",
+     "17:19"
+    ],
+    [
+     "07:08",
+     "17:15"
+    ]
+   ]
+  },
+  {
+   "name": "Reckong Peo",
+   "km_from_start": 219.6,
+   "months": [
+    [
+     "07:17",
+     "17:35"
+    ],
+    [
+     "07:00",
+     "18:03"
+    ],
+    [
+     "06:29",
+     "18:24"
+    ],
+    [
+     "05:50",
+     "18:45"
+    ],
+    [
+     "05:21",
+     "19:05"
+    ],
+    [
+     "05:11",
+     "19:23"
+    ],
+    [
+     "05:22",
+     "19:23"
+    ],
+    [
+     "05:42",
+     "19:02"
+    ],
+    [
+     "06:00",
+     "18:24"
+    ],
+    [
+     "06:19",
+     "17:46"
+    ],
+    [
+     "06:44",
+     "17:19"
+    ],
+    [
+     "07:09",
+     "17:15"
+    ]
+   ]
+  },
+  {
+   "name": "Kalpa",
+   "km_from_start": 228.8,
+   "months": [
+    [
+     "07:17",
+     "17:35"
+    ],
+    [
+     "07:00",
+     "18:03"
+    ],
+    [
+     "06:29",
+     "18:25"
+    ],
+    [
+     "05:50",
+     "18:45"
+    ],
+    [
+     "05:21",
+     "19:05"
+    ],
+    [
+     "05:11",
+     "19:23"
+    ],
+    [
+     "05:22",
+     "19:24"
+    ],
+    [
+     "05:42",
+     "19:02"
+    ],
+    [
+     "06:00",
+     "18:24"
+    ],
+    [
+     "06:19",
+     "17:46"
+    ],
+    [
+     "06:45",
+     "17:19"
+    ],
+    [
+     "07:09",
+     "17:15"
+    ]
+   ]
+  }
+ ],
  "built": "2026-11-08",
  "mechanics": [
   {
@@ -7178,6 +7504,99 @@
    }
   }
  ],
+ "cash": {
+  "by_halt": [
+   {
+    "near": "Rampur",
+    "km_from_start": 0.0,
+    "atms": 1,
+    "banks": 8,
+    "names": [
+     "Axis Bank ATM",
+     "Bank of Baroda",
+     "Central Bank of India - Rampur Busher",
+     "HDFC Bank",
+     "ICICI Bank",
+     "Punjab National Bank"
+    ]
+   },
+   {
+    "near": "Sangla",
+    "km_from_start": 97.5,
+    "atms": 0,
+    "banks": 1,
+    "names": [
+     "Punjab National Bank"
+    ]
+   },
+   {
+    "near": "Karcham",
+    "km_from_start": 180.8,
+    "atms": 0,
+    "banks": 1,
+    "names": [
+     "Punjab National Bank"
+    ]
+   },
+   {
+    "near": "Reckong Peo",
+    "km_from_start": 219.6,
+    "atms": 1,
+    "banks": 3,
+    "names": [
+     "HDFC Bank ATM",
+     "ICICI Bank",
+     "Punjab National Bank",
+     "UCO Bank"
+    ]
+   }
+  ],
+  "longest_gaps": [
+   {
+    "from": "Sangla",
+    "to": "Reckong Peo",
+    "gap_km": 140
+   }
+  ]
+ },
  "mechanics_left_out": [],
- "stays_left_out": []
+ "stays_left_out": [],
+ "photos": [
+  {
+   "near": "Sangla",
+   "kind": "place",
+   "km_from_start": 97.5,
+   "title": "Shree Bering Nag Ji Temple, Sangla, Himachal Pradesh",
+   "page": "https://commons.wikimedia.org/wiki/File:Shree_Bering_Nag_Ji_Temple,_Sangla,_Himachal_Pradesh.jpg",
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/69/Shree_Bering_Nag_Ji_Temple%2C_Sangla%2C_Himachal_Pradesh.jpg/500px-Shree_Bering_Nag_Ji_Temple%2C_Sangla%2C_Himachal_Pradesh.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "taken": "2025-10-10",
+   "author": "Amitabha Gupta",
+   "licence": "CC BY-SA 4.0",
+   "licence_url": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  {
+   "near": "Sangla",
+   "kind": "place",
+   "km_from_start": 97.5,
+   "title": "Bering Nag Temple, Sangla, Himachal Pradesh, India",
+   "page": "https://commons.wikimedia.org/wiki/File:Bering_Nag_Temple,_Sangla,_Himachal_Pradesh,_India.jpg",
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cb/Bering_Nag_Temple%2C_Sangla%2C_Himachal_Pradesh%2C_India.jpg/500px-Bering_Nag_Temple%2C_Sangla%2C_Himachal_Pradesh%2C_India.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "taken": "2025-09-25",
+   "author": "UnpetitproleX",
+   "licence": "CC BY-SA 4.0",
+   "licence_url": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  {
+   "near": "Chitkul",
+   "kind": "place",
+   "km_from_start": 121.1,
+   "title": "Chitkul Fort, Chitkul Village, Himachal Pradesh",
+   "page": "https://commons.wikimedia.org/wiki/File:Chitkul_Fort,_Chitkul_Village,_Himachal_Pradesh.jpg",
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/26/Chitkul_Fort%2C_Chitkul_Village%2C_Himachal_Pradesh.jpg/500px-Chitkul_Fort%2C_Chitkul_Village%2C_Himachal_Pradesh.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "taken": "2025-10-09",
+   "author": "Amitabha Gupta",
+   "licence": "CC BY-SA 4.0",
+   "licence_url": "https://creativecommons.org/licenses/by-sa/4.0"
+  }
+ ]
 }

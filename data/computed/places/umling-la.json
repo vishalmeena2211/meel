@@ -12,6 +12,22 @@
  "stays_left_out": [],
  "mechanics": [],
  "mechanics_left_out": [],
+ "cash_radius_m": 2000,
+ "cash": [
+  {
+   "id": "30489d8a-e4b2-4d72-a598-565ff497c795",
+   "name": "J&K Bank - Small Business Unit",
+   "category": "bank_or_credit_union",
+   "kind": "bank",
+   "confidence": 0.77,
+   "lat": 32.77219,
+   "lon": 78.98238,
+   "km_from_start": 0.1,
+   "off_road_m": 54,
+   "near": "Hanle",
+   "what": "Bank"
+  }
+ ],
  "bytes_billed": 0,
  "source": {
   "service": "BigQuery public dataset",

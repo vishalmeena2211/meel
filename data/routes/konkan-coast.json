@@ -9371,6 +9371,548 @@
  "counts": {
   "facts": 137
  },
+ "daylight": [
+  {
+   "name": "Mumbai",
+   "km_from_start": 0.0,
+   "months": [
+    [
+     "07:14",
+     "18:20"
+    ],
+    [
+     "07:07",
+     "18:38"
+    ],
+    [
+     "06:48",
+     "18:48"
+    ],
+    [
+     "06:22",
+     "18:56"
+    ],
+    [
+     "06:04",
+     "19:05"
+    ],
+    [
+     "06:00",
+     "19:17"
+    ],
+    [
+     "06:09",
+     "19:20"
+    ],
+    [
+     "06:20",
+     "19:07"
+    ],
+    [
+     "06:26",
+     "18:42"
+    ],
+    [
+     "06:32",
+     "18:16"
+    ],
+    [
+     "06:46",
+     "18:01"
+    ],
+    [
+     "07:04",
+     "18:03"
+    ]
+   ]
+  },
+  {
+   "name": "Alibag",
+   "km_from_start": 90.7,
+   "months": [
+    [
+     "07:14",
+     "18:21"
+    ],
+    [
+     "07:07",
+     "18:39"
+    ],
+    [
+     "06:48",
+     "18:48"
+    ],
+    [
+     "06:22",
+     "18:55"
+    ],
+    [
+     "06:05",
+     "19:05"
+    ],
+    [
+     "06:01",
+     "19:16"
+    ],
+    [
+     "06:10",
+     "19:19"
+    ],
+    [
+     "06:20",
+     "19:07"
+    ],
+    [
+     "06:26",
+     "18:42"
+    ],
+    [
+     "06:32",
+     "18:16"
+    ],
+    [
+     "06:45",
+     "18:01"
+    ],
+    [
+     "07:03",
+     "18:04"
+    ]
+   ]
+  },
+  {
+   "name": "Murud",
+   "km_from_start": 139.9,
+   "months": [
+    [
+     "07:13",
+     "18:21"
+    ],
+    [
+     "07:06",
+     "18:39"
+    ],
+    [
+     "06:48",
+     "18:48"
+    ],
+    [
+     "06:22",
+     "18:55"
+    ],
+    [
+     "06:05",
+     "19:04"
+    ],
+    [
+     "06:02",
+     "19:15"
+    ],
+    [
+     "06:10",
+     "19:18"
+    ],
+    [
+     "06:20",
+     "19:06"
+    ],
+    [
+     "06:26",
+     "18:41"
+    ],
+    [
+     "06:31",
+     "18:16"
+    ],
+    [
+     "06:44",
+     "18:02"
+    ],
+    [
+     "07:02",
+     "18:04"
+    ]
+   ]
+  },
+  {
+   "name": "Harihareshwar",
+   "km_from_start": 215.9,
+   "months": [
+    [
+     "07:12",
+     "18:21"
+    ],
+    [
+     "07:06",
+     "18:39"
+    ],
+    [
+     "06:47",
+     "18:48"
+    ],
+    [
+     "06:22",
+     "18:54"
+    ],
+    [
+     "06:05",
+     "19:03"
+    ],
+    [
+     "06:02",
+     "19:14"
+    ],
+    [
+     "06:10",
+     "19:17"
+    ],
+    [
+     "06:20",
+     "19:05"
+    ],
+    [
+     "06:25",
+     "18:41"
+    ],
+    [
+     "06:31",
+     "18:16"
+    ],
+    [
+     "06:44",
+     "18:02"
+    ],
+    [
+     "07:01",
+     "18:05"
+    ]
+   ]
+  },
+  {
+   "name": "Dapoli",
+   "km_from_start": 278.2,
+   "months": [
+    [
+     "07:11",
+     "18:21"
+    ],
+    [
+     "07:05",
+     "18:38"
+    ],
+    [
+     "06:47",
+     "18:47"
+    ],
+    [
+     "06:22",
+     "18:53"
+    ],
+    [
+     "06:05",
+     "19:02"
+    ],
+    [
+     "06:02",
+     "19:13"
+    ],
+    [
+     "06:10",
+     "19:16"
+    ],
+    [
+     "06:20",
+     "19:04"
+    ],
+    [
+     "06:25",
+     "18:40"
+    ],
+    [
+     "06:30",
+     "18:16"
+    ],
+    [
+     "06:43",
+     "18:01"
+    ],
+    [
+     "07:00",
+     "18:05"
+    ]
+   ]
+  },
+  {
+   "name": "Guhagar",
+   "km_from_start": 320.7,
+   "months": [
+    [
+     "07:10",
+     "18:21"
+    ],
+    [
+     "07:05",
+     "18:38"
+    ],
+    [
+     "06:46",
+     "18:47"
+    ],
+    [
+     "06:22",
+     "18:53"
+    ],
+    [
+     "06:05",
+     "19:01"
+    ],
+    [
+     "06:02",
+     "19:12"
+    ],
+    [
+     "06:10",
+     "19:16"
+    ],
+    [
+     "06:20",
+     "19:04"
+    ],
+    [
+     "06:25",
+     "18:40"
+    ],
+    [
+     "06:30",
+     "18:16"
+    ],
+    [
+     "06:42",
+     "18:02"
+    ],
+    [
+     "07:00",
+     "18:05"
+    ]
+   ]
+  },
+  {
+   "name": "Ganpatipule",
+   "km_from_start": 374.8,
+   "months": [
+    [
+     "07:09",
+     "18:22"
+    ],
+    [
+     "07:04",
+     "18:38"
+    ],
+    [
+     "06:46",
+     "18:47"
+    ],
+    [
+     "06:22",
+     "18:53"
+    ],
+    [
+     "06:05",
+     "19:01"
+    ],
+    [
+     "06:03",
+     "19:11"
+    ],
+    [
+     "06:11",
+     "19:15"
+    ],
+    [
+     "06:20",
+     "19:03"
+    ],
+    [
+     "06:25",
+     "18:40"
+    ],
+    [
+     "06:29",
+     "18:16"
+    ],
+    [
+     "06:42",
+     "18:02"
+    ],
+    [
+     "06:59",
+     "18:05"
+    ]
+   ]
+  },
+  {
+   "name": "Ratnagiri",
+   "km_from_start": 397.7,
+   "months": [
+    [
+     "07:09",
+     "18:22"
+    ],
+    [
+     "07:04",
+     "18:39"
+    ],
+    [
+     "06:46",
+     "18:47"
+    ],
+    [
+     "06:22",
+     "18:52"
+    ],
+    [
+     "06:05",
+     "19:00"
+    ],
+    [
+     "06:03",
+     "19:11"
+    ],
+    [
+     "06:11",
+     "19:14"
+    ],
+    [
+     "06:20",
+     "19:03"
+    ],
+    [
+     "06:25",
+     "18:40"
+    ],
+    [
+     "06:29",
+     "18:16"
+    ],
+    [
+     "06:41",
+     "18:02"
+    ],
+    [
+     "06:58",
+     "18:06"
+    ]
+   ]
+  },
+  {
+   "name": "Malvan",
+   "km_from_start": 569.2,
+   "months": [
+    [
+     "07:07",
+     "18:23"
+    ],
+    [
+     "07:02",
+     "18:39"
+    ],
+    [
+     "06:45",
+     "18:46"
+    ],
+    [
+     "06:22",
+     "18:51"
+    ],
+    [
+     "06:06",
+     "18:58"
+    ],
+    [
+     "06:04",
+     "19:08"
+    ],
+    [
+     "06:12",
+     "19:12"
+    ],
+    [
+     "06:21",
+     "19:01"
+    ],
+    [
+     "06:24",
+     "18:39"
+    ],
+    [
+     "06:28",
+     "18:16"
+    ],
+    [
+     "06:39",
+     "18:03"
+    ],
+    [
+     "06:56",
+     "18:07"
+    ]
+   ]
+  },
+  {
+   "name": "Panaji",
+   "km_from_start": 673.1,
+   "months": [
+    [
+     "07:04",
+     "18:22"
+    ],
+    [
+     "07:00",
+     "18:38"
+    ],
+    [
+     "06:44",
+     "18:45"
+    ],
+    [
+     "06:21",
+     "18:49"
+    ],
+    [
+     "06:06",
+     "18:56"
+    ],
+    [
+     "06:04",
+     "19:06"
+    ],
+    [
+     "06:11",
+     "19:10"
+    ],
+    [
+     "06:20",
+     "18:59"
+    ],
+    [
+     "06:23",
+     "18:37"
+    ],
+    [
+     "06:26",
+     "18:15"
+    ],
+    [
+     "06:37",
+     "18:02"
+    ],
+    [
+     "06:53",
+     "18:06"
+    ]
+   ]
+  }
+ ],
  "built": "2026-11-08",
  "mechanics": [
   {
@@ -9583,6 +10125,194 @@
   }
  ],
  "stays": [],
+ "cash": {
+  "by_halt": [
+   {
+    "near": "Mumbai",
+    "km_from_start": 0.0,
+    "atms": 57,
+    "banks": 144,
+    "names": [
+     "Aavas Financiers Limited",
+     "Abhyudaya Bank",
+     "Abhyudaya Cooperative Bank",
+     "Alankit (Raigarh Office)",
+     "Andhra Bank",
+     "Andhra Bank ATM"
+    ]
+   },
+   {
+    "near": "Between Mumbai and Alibag",
+    "km_from_start": 28,
+    "atms": 11,
+    "banks": 14,
+    "names": [
+     "Aavas Financiers Limited",
+     "Axis Bank",
+     "Axis Bank ATM",
+     "Axis Bank Branch",
+     "Bank Of India",
+     "Bank of Baroda"
+    ]
+   },
+   {
+    "near": "Alibag",
+    "km_from_start": 90.7,
+    "atms": 12,
+    "banks": 20,
+    "names": [
+     "Alibag BloodBank",
+     "Axis Bank",
+     "Axis Bank ATM",
+     "Bank of Baroda",
+     "Bank of India Revadanda Branch",
+     "Bank of Maharashtra"
+    ]
+   },
+   {
+    "near": "Murud",
+    "km_from_start": 139.9,
+    "atms": 3,
+    "banks": 2,
+    "names": [
+     "Bank of Maharashtra",
+     "Bank of Maharashtra ATM",
+     "HDFC Bank",
+     "HDFC Bank ATM",
+     "ICICI Bank"
+    ]
+   },
+   {
+    "near": "Between Murud and Harihareshwar",
+    "km_from_start": 186,
+    "atms": 1,
+    "banks": 0,
+    "names": [
+     "HDFC Bank ATM"
+    ]
+   },
+   {
+    "near": "Harihareshwar",
+    "km_from_start": 215.9,
+    "atms": 1,
+    "banks": 2,
+    "names": [
+     "Bank of Maharashtra",
+     "Bank of Maharashtra - Bagmandale Branch",
+     "HDFC Bank ATM"
+    ]
+   },
+   {
+    "near": "Dapoli",
+    "km_from_start": 278.2,
+    "atms": 3,
+    "banks": 8,
+    "names": [
+     "Axis Bank ATM",
+     "Axis Bank Branch",
+     "Bank of Maharashtra",
+     "Bank of Maharashtra ATM",
+     "HDFC Bank",
+     "ICICI Bank"
+    ]
+   },
+   {
+    "near": "Guhagar",
+    "km_from_start": 320.7,
+    "atms": 0,
+    "banks": 3,
+    "names": [
+     "Bank of Maharashtra",
+     "Bank of Maharashtra - Hedvi Branch",
+     "RDCC Bank"
+    ]
+   },
+   {
+    "near": "Ganpatipule",
+    "km_from_start": 374.8,
+    "atms": 6,
+    "banks": 0,
+    "names": [
+     "Axis Bank",
+     "Bank of Maharashtra",
+     "Bank of Maharashtra - Ganpatipule Malgund Branch",
+     "Bank of Maharashtra - Jaigad",
+     "Bank of Maharashtra ATM"
+    ]
+   },
+   {
+    "near": "Ratnagiri",
+    "km_from_start": 397.7,
+    "atms": 12,
+    "banks": 30,
+    "names": [
+     "Aavas Financiers Limited",
+     "Alankit",
+     "Axis Bank",
+     "Axis Bank ATM",
+     "Axis Bank Branch",
+     "Bank of Baroda"
+    ]
+   },
+   {
+    "near": "Between Ratnagiri and Malvan",
+    "km_from_start": 434,
+    "atms": 7,
+    "banks": 19,
+    "names": [
+     "Axis Bank ATM",
+     "Bank of Baroda",
+     "Bank of Maharashtra",
+     "Bank of Maharashtra - Kasal Branch",
+     "Bank of Maharashtra ATM",
+     "Federal Bank ATM"
+    ]
+   },
+   {
+    "near": "Malvan",
+    "km_from_start": 569.2,
+    "atms": 2,
+    "banks": 6,
+    "names": [
+     "Bank of Baroda",
+     "Bank of Maharashtra - Katta (Pendur) Branch",
+     "Bank of Maharashtra - Malvan Branch",
+     "HDFC Bank",
+     "HDFC Bank ATM",
+     "Kotak Mahindra"
+    ]
+   },
+   {
+    "near": "Between Malvan and Panaji",
+    "km_from_start": 596,
+    "atms": 7,
+    "banks": 11,
+    "names": [
+     "Axis Bank ATM",
+     "Axis Bank Branch",
+     "Bank of Maharashtra",
+     "Bank of Maharashtra - Prenem Branch",
+     "HDFC Bank",
+     "HDFC Bank ATM"
+    ]
+   },
+   {
+    "near": "Panaji",
+    "km_from_start": 673.1,
+    "atms": 33,
+    "banks": 65,
+    "names": [
+     "Accelya Solutions India Limited",
+     "Attic Sapphire, Prime Commercial cum Residential Complex",
+     "Axis Bank",
+     "Axis Bank ATM",
+     "Axis Bank Branch",
+     "Bajaj Finserv"
+    ]
+   }
+  ],
+  "longest_gaps": []
+ },
  "mechanics_left_out": [
   {
    "near": "Mumbai",

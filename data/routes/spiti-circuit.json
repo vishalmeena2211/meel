@@ -10850,6 +10850,656 @@
  "counts": {
   "facts": 146
  },
+ "daylight": [
+  {
+   "name": "Shimla",
+   "km_from_start": 0.0,
+   "months": [
+    [
+     "07:20",
+     "17:40"
+    ],
+    [
+     "07:03",
+     "18:08"
+    ],
+    [
+     "06:33",
+     "18:29"
+    ],
+    [
+     "05:54",
+     "18:49"
+    ],
+    [
+     "05:26",
+     "19:09"
+    ],
+    [
+     "05:17",
+     "19:26"
+    ],
+    [
+     "05:27",
+     "19:27"
+    ],
+    [
+     "05:47",
+     "19:06"
+    ],
+    [
+     "06:05",
+     "18:29"
+    ],
+    [
+     "06:23",
+     "17:51"
+    ],
+    [
+     "06:48",
+     "17:24"
+    ],
+    [
+     "07:12",
+     "17:21"
+    ]
+   ]
+  },
+  {
+   "name": "Narkanda",
+   "km_from_start": 61.1,
+   "months": [
+    [
+     "07:19",
+     "17:38"
+    ],
+    [
+     "07:02",
+     "18:06"
+    ],
+    [
+     "06:32",
+     "18:28"
+    ],
+    [
+     "05:53",
+     "18:48"
+    ],
+    [
+     "05:25",
+     "19:08"
+    ],
+    [
+     "05:15",
+     "19:25"
+    ],
+    [
+     "05:26",
+     "19:26"
+    ],
+    [
+     "05:45",
+     "19:05"
+    ],
+    [
+     "06:03",
+     "18:28"
+    ],
+    [
+     "06:22",
+     "17:50"
+    ],
+    [
+     "06:47",
+     "17:23"
+    ],
+    [
+     "07:11",
+     "17:19"
+    ]
+   ]
+  },
+  {
+   "name": "Rampur",
+   "km_from_start": 122.9,
+   "months": [
+    [
+     "07:19",
+     "17:37"
+    ],
+    [
+     "07:02",
+     "18:05"
+    ],
+    [
+     "06:31",
+     "18:27"
+    ],
+    [
+     "05:52",
+     "18:47"
+    ],
+    [
+     "05:24",
+     "19:07"
+    ],
+    [
+     "05:14",
+     "19:25"
+    ],
+    [
+     "05:25",
+     "19:26"
+    ],
+    [
+     "05:44",
+     "19:04"
+    ],
+    [
+     "06:03",
+     "18:27"
+    ],
+    [
+     "06:21",
+     "17:49"
+    ],
+    [
+     "06:47",
+     "17:22"
+    ],
+    [
+     "07:11",
+     "17:18"
+    ]
+   ]
+  },
+  {
+   "name": "Reckong Peo",
+   "km_from_start": 220.0,
+   "months": [
+    [
+     "07:17",
+     "17:35"
+    ],
+    [
+     "07:00",
+     "18:03"
+    ],
+    [
+     "06:29",
+     "18:24"
+    ],
+    [
+     "05:50",
+     "18:45"
+    ],
+    [
+     "05:21",
+     "19:05"
+    ],
+    [
+     "05:11",
+     "19:23"
+    ],
+    [
+     "05:22",
+     "19:23"
+    ],
+    [
+     "05:42",
+     "19:02"
+    ],
+    [
+     "06:00",
+     "18:24"
+    ],
+    [
+     "06:19",
+     "17:46"
+    ],
+    [
+     "06:44",
+     "17:19"
+    ],
+    [
+     "07:09",
+     "17:15"
+    ]
+   ]
+  },
+  {
+   "name": "Pooh",
+   "km_from_start": 283.1,
+   "months": [
+    [
+     "07:16",
+     "17:33"
+    ],
+    [
+     "06:59",
+     "18:01"
+    ],
+    [
+     "06:27",
+     "18:23"
+    ],
+    [
+     "05:48",
+     "18:44"
+    ],
+    [
+     "05:19",
+     "19:04"
+    ],
+    [
+     "05:09",
+     "19:22"
+    ],
+    [
+     "05:20",
+     "19:23"
+    ],
+    [
+     "05:40",
+     "19:01"
+    ],
+    [
+     "05:59",
+     "18:23"
+    ],
+    [
+     "06:18",
+     "17:45"
+    ],
+    [
+     "06:44",
+     "17:17"
+    ],
+    [
+     "07:08",
+     "17:14"
+    ]
+   ]
+  },
+  {
+   "name": "Nako",
+   "km_from_start": 322.3,
+   "months": [
+    [
+     "07:16",
+     "17:32"
+    ],
+    [
+     "06:59",
+     "18:01"
+    ],
+    [
+     "06:27",
+     "18:23"
+    ],
+    [
+     "05:48",
+     "18:44"
+    ],
+    [
+     "05:19",
+     "19:04"
+    ],
+    [
+     "05:09",
+     "19:22"
+    ],
+    [
+     "05:20",
+     "19:23"
+    ],
+    [
+     "05:40",
+     "19:01"
+    ],
+    [
+     "05:59",
+     "18:23"
+    ],
+    [
+     "06:18",
+     "17:44"
+    ],
+    [
+     "06:44",
+     "17:17"
+    ],
+    [
+     "07:08",
+     "17:13"
+    ]
+   ]
+  },
+  {
+   "name": "Tabo",
+   "km_from_start": 385.2,
+   "months": [
+    [
+     "07:17",
+     "17:33"
+    ],
+    [
+     "07:00",
+     "18:02"
+    ],
+    [
+     "06:28",
+     "18:24"
+    ],
+    [
+     "05:49",
+     "18:45"
+    ],
+    [
+     "05:19",
+     "19:06"
+    ],
+    [
+     "05:09",
+     "19:24"
+    ],
+    [
+     "05:20",
+     "19:24"
+    ],
+    [
+     "05:40",
+     "19:02"
+    ],
+    [
+     "05:59",
+     "18:24"
+    ],
+    [
+     "06:19",
+     "17:45"
+    ],
+    [
+     "06:45",
+     "17:18"
+    ],
+    [
+     "07:10",
+     "17:14"
+    ]
+   ]
+  },
+  {
+   "name": "Kaza",
+   "km_from_start": 432.3,
+   "months": [
+    [
+     "07:19",
+     "17:34"
+    ],
+    [
+     "07:01",
+     "18:03"
+    ],
+    [
+     "06:30",
+     "18:25"
+    ],
+    [
+     "05:50",
+     "18:46"
+    ],
+    [
+     "05:20",
+     "19:07"
+    ],
+    [
+     "05:10",
+     "19:25"
+    ],
+    [
+     "05:21",
+     "19:26"
+    ],
+    [
+     "05:41",
+     "19:04"
+    ],
+    [
+     "06:01",
+     "18:25"
+    ],
+    [
+     "06:20",
+     "17:46"
+    ],
+    [
+     "06:46",
+     "17:19"
+    ],
+    [
+     "07:11",
+     "17:14"
+    ]
+   ]
+  },
+  {
+   "name": "Losar",
+   "km_from_start": 490.9,
+   "months": [
+    [
+     "07:21",
+     "17:35"
+    ],
+    [
+     "07:03",
+     "18:04"
+    ],
+    [
+     "06:31",
+     "18:26"
+    ],
+    [
+     "05:51",
+     "18:48"
+    ],
+    [
+     "05:21",
+     "19:09"
+    ],
+    [
+     "05:11",
+     "19:27"
+    ],
+    [
+     "05:22",
+     "19:28"
+    ],
+    [
+     "05:42",
+     "19:05"
+    ],
+    [
+     "06:02",
+     "18:27"
+    ],
+    [
+     "06:22",
+     "17:48"
+    ],
+    [
+     "06:48",
+     "17:20"
+    ],
+    [
+     "07:13",
+     "17:15"
+    ]
+   ]
+  },
+  {
+   "name": "Batal",
+   "km_from_start": 519.4,
+   "months": [
+    [
+     "07:21",
+     "17:35"
+    ],
+    [
+     "07:03",
+     "18:04"
+    ],
+    [
+     "06:31",
+     "18:27"
+    ],
+    [
+     "05:51",
+     "18:48"
+    ],
+    [
+     "05:22",
+     "19:09"
+    ],
+    [
+     "05:12",
+     "19:27"
+    ],
+    [
+     "05:23",
+     "19:28"
+    ],
+    [
+     "05:43",
+     "19:06"
+    ],
+    [
+     "06:02",
+     "18:27"
+    ],
+    [
+     "06:22",
+     "17:48"
+    ],
+    [
+     "06:49",
+     "17:20"
+    ],
+    [
+     "07:13",
+     "17:16"
+    ]
+   ]
+  },
+  {
+   "name": "Gramphu",
+   "km_from_start": 568.8,
+   "months": [
+    [
+     "07:22",
+     "17:37"
+    ],
+    [
+     "07:05",
+     "18:06"
+    ],
+    [
+     "06:33",
+     "18:28"
+    ],
+    [
+     "05:53",
+     "18:50"
+    ],
+    [
+     "05:23",
+     "19:11"
+    ],
+    [
+     "05:13",
+     "19:29"
+    ],
+    [
+     "05:24",
+     "19:30"
+    ],
+    [
+     "05:44",
+     "19:07"
+    ],
+    [
+     "06:04",
+     "18:29"
+    ],
+    [
+     "06:24",
+     "17:50"
+    ],
+    [
+     "06:50",
+     "17:22"
+    ],
+    [
+     "07:15",
+     "17:17"
+    ]
+   ]
+  },
+  {
+   "name": "Manali",
+   "km_from_start": 615.5,
+   "months": [
+    [
+     "07:22",
+     "17:37"
+    ],
+    [
+     "07:05",
+     "18:06"
+    ],
+    [
+     "06:33",
+     "18:29"
+    ],
+    [
+     "05:53",
+     "18:50"
+    ],
+    [
+     "05:24",
+     "19:11"
+    ],
+    [
+     "05:14",
+     "19:29"
+    ],
+    [
+     "05:25",
+     "19:29"
+    ],
+    [
+     "05:45",
+     "19:07"
+    ],
+    [
+     "06:04",
+     "18:29"
+    ],
+    [
+     "06:24",
+     "17:50"
+    ],
+    [
+     "06:50",
+     "17:22"
+    ],
+    [
+     "07:15",
+     "17:18"
+    ]
+   ]
+  }
+ ],
  "built": "2026-11-08",
  "mechanics": [
   {
@@ -11687,6 +12337,118 @@
    }
   }
  ],
+ "cash": {
+  "by_halt": [
+   {
+    "near": "Shimla",
+    "km_from_start": 0.0,
+    "atms": 8,
+    "banks": 21,
+    "names": [
+     "Alankit",
+     "Axis Bank ATM",
+     "Axis Bank Branch",
+     "Bank of Baroda",
+     "Central Bank Of India",
+     "HDFC Bank"
+    ]
+   },
+   {
+    "near": "Between Shimla and Narkanda",
+    "km_from_start": 28,
+    "atms": 1,
+    "banks": 1,
+    "names": [
+     "HDFC Bank ATM",
+     "Punjab National Bank"
+    ]
+   },
+   {
+    "near": "Narkanda",
+    "km_from_start": 61.1,
+    "atms": 1,
+    "banks": 6,
+    "names": [
+     "HDFC Bank",
+     "HDFC Bank ATM",
+     "Punjab National Bank",
+     "The HP State Co-operative Bank",
+     "The Himachal Pradesh State Cooperative Bank",
+     "Union Bank of India"
+    ]
+   },
+   {
+    "near": "Rampur",
+    "km_from_start": 122.9,
+    "atms": 1,
+    "banks": 9,
+    "names": [
+     "Axis Bank ATM",
+     "Bank of Baroda",
+     "Central Bank of India - Rampur Busher",
+     "HDFC Bank",
+     "ICICI Bank",
+     "Punjab National Bank"
+    ]
+   },
+   {
+    "near": "Between Rampur and Reckong Peo",
+    "km_from_start": 162,
+    "atms": 0,
+    "banks": 1,
+    "names": [
+     "Punjab National Bank"
+    ]
+   },
+   {
+    "near": "Reckong Peo",
+    "km_from_start": 220.0,
+    "atms": 1,
+    "banks": 4,
+    "names": [
+     "HDFC Bank ATM",
+     "ICICI Bank",
+     "Punjab National Bank",
+     "UCO Bank"
+    ]
+   },
+   {
+    "near": "Pooh",
+    "km_from_start": 283.1,
+    "atms": 0,
+    "banks": 1,
+    "names": [
+     "Punjab National Bank"
+    ]
+   },
+   {
+    "near": "Manali",
+    "km_from_start": 615.5,
+    "atms": 2,
+    "banks": 11,
+    "names": [
+     "Axis Bank",
+     "Bank of Baroda",
+     "HDFC Bank",
+     "ICICI Bank",
+     "J&K Bank",
+     "Jammu and Kashmir Bank ATM"
+    ]
+   }
+  ],
+  "longest_gaps": [
+   {
+    "from": "Pooh",
+    "to": "Manali",
+    "gap_km": 322
+   },
+   {
+    "from": "Reckong Peo",
+    "to": "Pooh",
+    "gap_km": 64
+   }
+  ]
+ },
  "mechanics_left_out": [],
  "stays_left_out": [
   {
@@ -11702,16 +12464,102 @@
    "count": 69
   },
   {
-   "near": "Reckong Peo",
+   "near": "Narkanda",
    "count": 67
   },
   {
-   "near": "Narkanda",
+   "near": "Reckong Peo",
    "count": 67
   },
   {
    "near": "Rampur",
    "count": 49
+  }
+ ],
+ "photos": [
+  {
+   "near": "Shimla",
+   "kind": "place",
+   "km_from_start": 0.0,
+   "title": "St. Michael’s Cathedral in Shimla at dusk,2",
+   "page": "https://commons.wikimedia.org/wiki/File:St._Michael%E2%80%99s_Cathedral_in_Shimla_at_dusk,2.jpg",
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e0/St._Michael%E2%80%99s_Cathedral_in_Shimla_at_dusk%2C2.jpg/500px-St._Michael%E2%80%99s_Cathedral_in_Shimla_at_dusk%2C2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "taken": "2026-05-09",
+   "author": "Rajani Gairshail",
+   "licence": "CC BY-SA 4.0",
+   "licence_url": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  {
+   "near": "Shimla",
+   "kind": "place",
+   "km_from_start": 0.0,
+   "title": "Old picture of Sanjauli, Shimla",
+   "page": "https://commons.wikimedia.org/wiki/File:Old_picture_of_Sanjauli,_Shimla.jpg",
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ec/Old_picture_of_Sanjauli%2C_Shimla.jpg/500px-Old_picture_of_Sanjauli%2C_Shimla.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "taken": "2026-04-15",
+   "author": "गपशप",
+   "licence": "CC BY-SA 4.0",
+   "licence_url": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  {
+   "near": "Tabo",
+   "kind": "place",
+   "km_from_start": 385.2,
+   "title": "Tabo Monastery premises, Spiti Valley, Himachal Pradesh 01",
+   "page": "https://commons.wikimedia.org/wiki/File:Tabo_Monastery_premises,_Spiti_Valley,_Himachal_Pradesh_01.jpg",
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ab/Tabo_Monastery_premises%2C_Spiti_Valley%2C_Himachal_Pradesh_01.jpg/500px-Tabo_Monastery_premises%2C_Spiti_Valley%2C_Himachal_Pradesh_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "taken": "2025-10-14",
+   "author": "Amitabha Gupta",
+   "licence": "CC BY-SA 4.0",
+   "licence_url": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  {
+   "near": "Tabo",
+   "kind": "place",
+   "km_from_start": 385.2,
+   "title": "Majestic Tabo Monastery and the Photographer",
+   "page": "https://commons.wikimedia.org/wiki/File:Majestic_Tabo_Monastery_and_the_Photographer.jpg",
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9b/Majestic_Tabo_Monastery_and_the_Photographer.jpg/500px-Majestic_Tabo_Monastery_and_the_Photographer.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "taken": "2019-10-01",
+   "author": "Akhila Srikanta Rao",
+   "licence": "CC BY-SA 4.0",
+   "licence_url": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  {
+   "near": "Kaza",
+   "kind": "place",
+   "km_from_start": 432.3,
+   "title": "Spiti River Kaza Himachal Jun18 D72 7232",
+   "page": "https://commons.wikimedia.org/wiki/File:Spiti_River_Kaza_Himachal_Jun18_D72_7232.jpg",
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3f/Spiti_River_Kaza_Himachal_Jun18_D72_7232.jpg/500px-Spiti_River_Kaza_Himachal_Jun18_D72_7232.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "taken": "2018-06-20",
+   "author": "Timothy A. Gonsalves",
+   "licence": "CC BY-SA 4.0",
+   "licence_url": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  {
+   "near": "Kaza",
+   "kind": "place",
+   "km_from_start": 432.3,
+   "title": "Kaza monastery",
+   "page": "https://commons.wikimedia.org/wiki/File:Kaza_monastery.jpg",
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e6/Kaza_monastery.jpg/500px-Kaza_monastery.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "taken": "2016-05-06",
+   "author": "Theo10011",
+   "licence": "CC BY-SA 4.0",
+   "licence_url": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  {
+   "near": "Gramphu",
+   "kind": "place",
+   "km_from_start": 568.8,
+   "title": "Rohtang pass road to Atal Tunnel vrtmrgmpksk (291)",
+   "page": "https://commons.wikimedia.org/wiki/File:Rohtang_pass_road_to_Atal_Tunnel_vrtmrgmpksk_(291).jpg",
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bf/Rohtang_pass_road_to_Atal_Tunnel_vrtmrgmpksk_%28291%29.jpg/500px-Rohtang_pass_road_to_Atal_Tunnel_vrtmrgmpksk_%28291%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "taken": "2022-09-07",
+   "author": "Vinayaraj",
+   "licence": "CC BY-SA 4.0",
+   "licence_url": "https://creativecommons.org/licenses/by-sa/4.0"
   }
  ]
 }

@@ -7111,6 +7111,494 @@
  "counts": {
   "facts": 151
  },
+ "daylight": [
+  {
+   "name": "Srinagar",
+   "km_from_start": 0.0,
+   "months": [
+    [
+     "07:36",
+     "17:43"
+    ],
+    [
+     "07:17",
+     "18:13"
+    ],
+    [
+     "06:43",
+     "18:38"
+    ],
+    [
+     "06:01",
+     "19:01"
+    ],
+    [
+     "05:30",
+     "19:24"
+    ],
+    [
+     "05:18",
+     "19:43"
+    ],
+    [
+     "05:30",
+     "19:43"
+    ],
+    [
+     "05:52",
+     "19:20"
+    ],
+    [
+     "06:13",
+     "18:39"
+    ],
+    [
+     "06:35",
+     "17:58"
+    ],
+    [
+     "07:03",
+     "17:28"
+    ],
+    [
+     "07:29",
+     "17:23"
+    ]
+   ]
+  },
+  {
+   "name": "Sonamarg",
+   "km_from_start": 79.5,
+   "months": [
+    [
+     "07:35",
+     "17:40"
+    ],
+    [
+     "07:15",
+     "18:11"
+    ],
+    [
+     "06:41",
+     "18:36"
+    ],
+    [
+     "05:59",
+     "18:59"
+    ],
+    [
+     "05:27",
+     "19:23"
+    ],
+    [
+     "05:16",
+     "19:42"
+    ],
+    [
+     "05:27",
+     "19:42"
+    ],
+    [
+     "05:49",
+     "19:18"
+    ],
+    [
+     "06:11",
+     "18:37"
+    ],
+    [
+     "06:33",
+     "17:56"
+    ],
+    [
+     "07:01",
+     "17:26"
+    ],
+    [
+     "07:27",
+     "17:20"
+    ]
+   ]
+  },
+  {
+   "name": "Drass",
+   "km_from_start": 142.2,
+   "months": [
+    [
+     "07:33",
+     "17:38"
+    ],
+    [
+     "07:13",
+     "18:09"
+    ],
+    [
+     "06:39",
+     "18:34"
+    ],
+    [
+     "05:57",
+     "18:58"
+    ],
+    [
+     "05:25",
+     "19:21"
+    ],
+    [
+     "05:14",
+     "19:40"
+    ],
+    [
+     "05:25",
+     "19:41"
+    ],
+    [
+     "05:47",
+     "19:16"
+    ],
+    [
+     "06:09",
+     "18:36"
+    ],
+    [
+     "06:31",
+     "17:54"
+    ],
+    [
+     "07:00",
+     "17:24"
+    ],
+    [
+     "07:26",
+     "17:18"
+    ]
+   ]
+  },
+  {
+   "name": "Kargil",
+   "km_from_start": 200.2,
+   "months": [
+    [
+     "07:32",
+     "17:36"
+    ],
+    [
+     "07:12",
+     "18:07"
+    ],
+    [
+     "06:38",
+     "18:32"
+    ],
+    [
+     "05:55",
+     "18:56"
+    ],
+    [
+     "05:23",
+     "19:20"
+    ],
+    [
+     "05:12",
+     "19:39"
+    ],
+    [
+     "05:23",
+     "19:39"
+    ],
+    [
+     "05:46",
+     "19:15"
+    ],
+    [
+     "06:08",
+     "18:34"
+    ],
+    [
+     "06:30",
+     "17:52"
+    ],
+    [
+     "06:59",
+     "17:22"
+    ],
+    [
+     "07:25",
+     "17:16"
+    ]
+   ]
+  },
+  {
+   "name": "Mulbekh",
+   "km_from_start": 239.5,
+   "months": [
+    [
+     "07:30",
+     "17:36"
+    ],
+    [
+     "07:11",
+     "18:07"
+    ],
+    [
+     "06:37",
+     "18:32"
+    ],
+    [
+     "05:54",
+     "18:55"
+    ],
+    [
+     "05:23",
+     "19:18"
+    ],
+    [
+     "05:11",
+     "19:38"
+    ],
+    [
+     "05:23",
+     "19:38"
+    ],
+    [
+     "05:45",
+     "19:14"
+    ],
+    [
+     "06:07",
+     "18:33"
+    ],
+    [
+     "06:29",
+     "17:52"
+    ],
+    [
+     "06:57",
+     "17:21"
+    ],
+    [
+     "07:23",
+     "17:16"
+    ]
+   ]
+  },
+  {
+   "name": "Lamayuru",
+   "km_from_start": 306.1,
+   "months": [
+    [
+     "07:29",
+     "17:34"
+    ],
+    [
+     "07:09",
+     "18:05"
+    ],
+    [
+     "06:35",
+     "18:30"
+    ],
+    [
+     "05:53",
+     "18:53"
+    ],
+    [
+     "05:21",
+     "19:17"
+    ],
+    [
+     "05:10",
+     "19:36"
+    ],
+    [
+     "05:21",
+     "19:36"
+    ],
+    [
+     "05:44",
+     "19:12"
+    ],
+    [
+     "06:05",
+     "18:31"
+    ],
+    [
+     "06:27",
+     "17:50"
+    ],
+    [
+     "06:56",
+     "17:20"
+    ],
+    [
+     "07:21",
+     "17:15"
+    ]
+   ]
+  },
+  {
+   "name": "Khaltse",
+   "km_from_start": 324.5,
+   "months": [
+    [
+     "07:28",
+     "17:34"
+    ],
+    [
+     "07:09",
+     "18:05"
+    ],
+    [
+     "06:35",
+     "18:29"
+    ],
+    [
+     "05:52",
+     "18:53"
+    ],
+    [
+     "05:21",
+     "19:16"
+    ],
+    [
+     "05:10",
+     "19:35"
+    ],
+    [
+     "05:21",
+     "19:36"
+    ],
+    [
+     "05:43",
+     "19:12"
+    ],
+    [
+     "06:05",
+     "18:31"
+    ],
+    [
+     "06:27",
+     "17:50"
+    ],
+    [
+     "06:55",
+     "17:19"
+    ],
+    [
+     "07:21",
+     "17:14"
+    ]
+   ]
+  },
+  {
+   "name": "Nimmu",
+   "km_from_start": 384.8,
+   "months": [
+    [
+     "07:26",
+     "17:32"
+    ],
+    [
+     "07:07",
+     "18:03"
+    ],
+    [
+     "06:33",
+     "18:28"
+    ],
+    [
+     "05:51",
+     "18:51"
+    ],
+    [
+     "05:19",
+     "19:14"
+    ],
+    [
+     "05:08",
+     "19:33"
+    ],
+    [
+     "05:19",
+     "19:34"
+    ],
+    [
+     "05:41",
+     "19:10"
+    ],
+    [
+     "06:03",
+     "18:29"
+    ],
+    [
+     "06:25",
+     "17:48"
+    ],
+    [
+     "06:53",
+     "17:18"
+    ],
+    [
+     "07:19",
+     "17:13"
+    ]
+   ]
+  },
+  {
+   "name": "Leh",
+   "km_from_start": 421.1,
+   "months": [
+    [
+     "07:25",
+     "17:31"
+    ],
+    [
+     "07:06",
+     "18:02"
+    ],
+    [
+     "06:32",
+     "18:27"
+    ],
+    [
+     "05:50",
+     "18:50"
+    ],
+    [
+     "05:18",
+     "19:13"
+    ],
+    [
+     "05:07",
+     "19:32"
+    ],
+    [
+     "05:18",
+     "19:33"
+    ],
+    [
+     "05:40",
+     "19:09"
+    ],
+    [
+     "06:02",
+     "18:28"
+    ],
+    [
+     "06:24",
+     "17:47"
+    ],
+    [
+     "06:52",
+     "17:17"
+    ],
+    [
+     "07:18",
+     "17:12"
+    ]
+   ]
+  }
+ ],
  "built": "2026-11-08",
  "mechanics": [
   {
@@ -8140,6 +8628,129 @@
    }
   }
  ],
+ "cash": {
+  "by_halt": [
+   {
+    "near": "Srinagar",
+    "km_from_start": 0.0,
+    "atms": 24,
+    "banks": 48,
+    "names": [
+     "ATM",
+     "Axis Bank",
+     "Axis Bank ATM",
+     "Axis Bank Branch",
+     "Bank",
+     "Bank of Baroda"
+    ]
+   },
+   {
+    "near": "Between Srinagar and Sonamarg",
+    "km_from_start": 28,
+    "atms": 4,
+    "banks": 6,
+    "names": [
+     "ATM",
+     "EBU",
+     "HDFC Bank",
+     "J&K Bank",
+     "J&K Bank - ATM",
+     "J&K Bank - CRM"
+    ]
+   },
+   {
+    "near": "Sonamarg",
+    "km_from_start": 79.5,
+    "atms": 3,
+    "banks": 3,
+    "names": [
+     "ATM",
+     "Bank",
+     "J&K Bank",
+     "J&K Bank - Small Business Unit"
+    ]
+   },
+   {
+    "near": "Drass",
+    "km_from_start": 142.2,
+    "atms": 3,
+    "banks": 0,
+    "names": [
+     "HDFC Bank ATM",
+     "J&K Bank - ATM",
+     "State Bank of India ATM"
+    ]
+   },
+   {
+    "near": "Kargil",
+    "km_from_start": 200.2,
+    "atms": 3,
+    "banks": 10,
+    "names": [
+     "Axis Bank ATM",
+     "Axis Bank Branch",
+     "HDFC Bank",
+     "ICICI Bank",
+     "IndusInd Bank",
+     "J&K Bank"
+    ]
+   },
+   {
+    "near": "Between Mulbekh and Lamayuru",
+    "km_from_start": 265,
+    "atms": 0,
+    "banks": 1,
+    "names": [
+     "J&K Bank"
+    ]
+   },
+   {
+    "near": "Lamayuru",
+    "km_from_start": 306.1,
+    "atms": 0,
+    "banks": 1,
+    "names": [
+     "J&K Bank - Small Branch"
+    ]
+   },
+   {
+    "near": "Khaltse",
+    "km_from_start": 324.5,
+    "atms": 1,
+    "banks": 2,
+    "names": [
+     "Axis Bank ATM",
+     "Axis Bank Branch",
+     "J&K Bank"
+    ]
+   },
+   {
+    "near": "Nimmu",
+    "km_from_start": 384.8,
+    "atms": 0,
+    "banks": 3,
+    "names": [
+     "J&K Bank",
+     "J&K Bank - Small Business Unit"
+    ]
+   },
+   {
+    "near": "Leh",
+    "km_from_start": 421.1,
+    "atms": 6,
+    "banks": 14,
+    "names": [
+     "Axis Bank ATM",
+     "Axis Bank Branch",
+     "Bank of Baroda",
+     "HDFC Bank",
+     "HDFC Bank ATM",
+     "ICICI Bank"
+    ]
+   }
+  ],
+  "longest_gaps": []
+ },
  "mechanics_left_out": [
   {
    "near": "Srinagar",
@@ -8158,6 +8769,92 @@
   {
    "near": "Sonamarg",
    "count": 49
+  }
+ ],
+ "photos": [
+  {
+   "near": "Sonamarg",
+   "kind": "place",
+   "km_from_start": 79.5,
+   "title": "Srinagar to Sonamarg - vrvvkbjk2k23iph (10)",
+   "page": "https://commons.wikimedia.org/wiki/File:Srinagar_to_Sonamarg_-_vrvvkbjk2k23iph_(10).jpg",
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c3/Srinagar_to_Sonamarg_-_vrvvkbjk2k23iph_%2810%29.jpg/500px-Srinagar_to_Sonamarg_-_vrvvkbjk2k23iph_%2810%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "taken": "2023-04-25",
+   "author": "Vinayaraj",
+   "licence": "CC BY-SA 4.0",
+   "licence_url": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  {
+   "near": "Namika La",
+   "kind": "pass",
+   "km_from_start": 254.2,
+   "title": "Namikala Pass",
+   "page": "https://commons.wikimedia.org/wiki/File:Namikala_Pass.jpg",
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a2/Namikala_Pass.jpg/500px-Namikala_Pass.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "taken": "2023-03-28",
+   "author": "Doctorkd",
+   "licence": "CC BY-SA 4.0",
+   "licence_url": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  {
+   "near": "Fotu La",
+   "kind": "pass",
+   "km_from_start": 290.7,
+   "title": "Landscape on kargil to leh road (2)",
+   "page": "https://commons.wikimedia.org/wiki/File:Landscape_on_kargil_to_leh_road_(2).jpg",
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fd/Landscape_on_kargil_to_leh_road_%282%29.jpg/500px-Landscape_on_kargil_to_leh_road_%282%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "taken": "2016-06-03",
+   "author": "Avantika1988",
+   "licence": "CC BY-SA 4.0",
+   "licence_url": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  {
+   "near": "Lamayuru",
+   "kind": "place",
+   "km_from_start": 306.1,
+   "title": "Lamayuru view - 2",
+   "page": "https://commons.wikimedia.org/wiki/File:Lamayuru_view_-_2.jpg",
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c0/Lamayuru_view_-_2.jpg/500px-Lamayuru_view_-_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "taken": "2018-05-22",
+   "author": "Ingo Mehling",
+   "licence": "CC BY-SA 4.0",
+   "licence_url": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  {
+   "near": "Lamayuru",
+   "kind": "place",
+   "km_from_start": 306.1,
+   "title": "Lamayuru Monastery 01",
+   "page": "https://commons.wikimedia.org/wiki/File:Lamayuru_Monastery_01.jpg",
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/19/Lamayuru_Monastery_01.jpg/500px-Lamayuru_Monastery_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "taken": "2018-05-11",
+   "author": "Bernard Gagnon",
+   "licence": "CC BY-SA 4.0",
+   "licence_url": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  {
+   "near": "Leh",
+   "kind": "place",
+   "km_from_start": 421.1,
+   "title": "Leh Market Square (48975337958)",
+   "page": "https://commons.wikimedia.org/wiki/File:Leh_Market_Square_(48975337958).jpg",
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1d/Leh_Market_Square_%2848975337958%29.jpg/500px-Leh_Market_Square_%2848975337958%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "taken": "2018-07-02",
+   "author": "Chris Hunkeler from Carlsbad",
+   "licence": "CC BY-SA 2.0",
+   "licence_url": "https://creativecommons.org/licenses/by-sa/2.0"
+  },
+  {
+   "near": "Leh",
+   "kind": "place",
+   "km_from_start": 421.1,
+   "title": "Leh - Main Bazaar Road",
+   "page": "https://commons.wikimedia.org/wiki/File:Leh_-_Main_Bazaar_Road.jpg",
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fc/Leh_-_Main_Bazaar_Road.jpg/500px-Leh_-_Main_Bazaar_Road.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "taken": "2018-05-29",
+   "author": "Ingo Mehling",
+   "licence": "CC BY-SA 3.0",
+   "licence_url": "https://creativecommons.org/licenses/by-sa/3.0"
   }
  ]
 }

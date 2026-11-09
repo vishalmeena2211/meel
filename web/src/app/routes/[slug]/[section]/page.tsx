@@ -8,6 +8,7 @@ import { breadcrumbs, JsonLd } from "@/components/json-ld";
 import {
   BikesSection,
   CostsSection,
+  DaylightTable,
   FuelSection,
   HoursSection,
   MechanicsSection,
@@ -284,15 +285,18 @@ async function SectionBody(props: PageProps<"/routes/[slug]/[section]">) {
       .filter((w) => w.kind === "place" && w.altitude_m !== null)
       .sort((a, b) => (b.altitude_m ?? 0) - (a.altitude_m ?? 0))[0];
     return (
-      <AltitudeScreen
-        waypoints={route.waypoints}
-        profile={route.profile}
-        tunnels={route.tunnels ?? []}
-        distanceKm={route.header.distance_km ?? 0}
-        routeName={route.name}
-        routeSlug={slug}
-        highest={highest?.name ?? null}
-      />
+      <div className="flex flex-col gap-4">
+        <AltitudeScreen
+          waypoints={route.waypoints}
+          profile={route.profile}
+          tunnels={route.tunnels ?? []}
+          distanceKm={route.header.distance_km ?? 0}
+          routeName={route.name}
+          routeSlug={slug}
+          highest={highest?.name ?? null}
+        />
+        <DaylightTable daylight={route.daylight ?? []} months={view.seasonMonths} />
+      </div>
     );
   }
 

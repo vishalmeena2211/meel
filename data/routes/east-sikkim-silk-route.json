@@ -3842,6 +3842,224 @@
  "counts": {
   "facts": 88
  },
+ "daylight": [
+  {
+   "name": "Gangtok",
+   "km_from_start": 0.0,
+   "months": [
+    [
+     "06:27",
+     "17:02"
+    ],
+    [
+     "06:13",
+     "17:26"
+    ],
+    [
+     "05:46",
+     "17:44"
+    ],
+    [
+     "05:12",
+     "17:59"
+    ],
+    [
+     "04:47",
+     "18:16"
+    ],
+    [
+     "04:40",
+     "18:31"
+    ],
+    [
+     "04:50",
+     "18:33"
+    ],
+    [
+     "05:06",
+     "18:15"
+    ],
+    [
+     "05:20",
+     "17:42"
+    ],
+    [
+     "05:34",
+     "17:08"
+    ],
+    [
+     "05:56",
+     "16:45"
+    ],
+    [
+     "06:18",
+     "16:44"
+    ]
+   ]
+  },
+  {
+   "name": "Kupup",
+   "km_from_start": 70.1,
+   "months": [
+    [
+     "06:26",
+     "17:01"
+    ],
+    [
+     "06:12",
+     "17:25"
+    ],
+    [
+     "05:46",
+     "17:43"
+    ],
+    [
+     "05:11",
+     "17:59"
+    ],
+    [
+     "04:46",
+     "18:15"
+    ],
+    [
+     "04:39",
+     "18:30"
+    ],
+    [
+     "04:49",
+     "18:32"
+    ],
+    [
+     "05:05",
+     "18:14"
+    ],
+    [
+     "05:19",
+     "17:41"
+    ],
+    [
+     "05:34",
+     "17:07"
+    ],
+    [
+     "05:55",
+     "16:44"
+    ],
+    [
+     "06:17",
+     "16:43"
+    ]
+   ]
+  },
+  {
+   "name": "Zuluk",
+   "km_from_start": 102.7,
+   "months": [
+    [
+     "06:26",
+     "17:01"
+    ],
+    [
+     "06:12",
+     "17:26"
+    ],
+    [
+     "05:46",
+     "17:43"
+    ],
+    [
+     "05:12",
+     "17:59"
+    ],
+    [
+     "04:47",
+     "18:15"
+    ],
+    [
+     "04:40",
+     "18:30"
+    ],
+    [
+     "04:49",
+     "18:32"
+    ],
+    [
+     "05:06",
+     "18:14"
+    ],
+    [
+     "05:20",
+     "17:41"
+    ],
+    [
+     "05:34",
+     "17:07"
+    ],
+    [
+     "05:55",
+     "16:45"
+    ],
+    [
+     "06:17",
+     "16:43"
+    ]
+   ]
+  },
+  {
+   "name": "Rongli",
+   "km_from_start": 134.2,
+   "months": [
+    [
+     "06:26",
+     "17:02"
+    ],
+    [
+     "06:13",
+     "17:26"
+    ],
+    [
+     "05:46",
+     "17:44"
+    ],
+    [
+     "05:12",
+     "17:59"
+    ],
+    [
+     "04:47",
+     "18:15"
+    ],
+    [
+     "04:40",
+     "18:31"
+    ],
+    [
+     "04:50",
+     "18:32"
+    ],
+    [
+     "05:06",
+     "18:14"
+    ],
+    [
+     "05:20",
+     "17:41"
+    ],
+    [
+     "05:34",
+     "17:08"
+    ],
+    [
+     "05:55",
+     "16:45"
+    ],
+    [
+     "06:17",
+     "16:43"
+    ]
+   ]
+  }
+ ],
  "built": "2026-11-08",
  "mechanics": [
   {
@@ -4503,11 +4721,107 @@
    }
   }
  ],
+ "cash": {
+  "by_halt": [
+   {
+    "near": "Gangtok",
+    "km_from_start": 0.0,
+    "atms": 8,
+    "banks": 18,
+    "names": [
+     "Axis Bank",
+     "Axis Bank ATM",
+     "Axis Bank Branch",
+     "Bandhan Bank ATM",
+     "Bank of Baroda",
+     "Bank of Maharashtra - Gangtok Branch"
+    ]
+   },
+   {
+    "near": "Rongli",
+    "km_from_start": 134.2,
+    "atms": 0,
+    "banks": 1,
+    "names": [
+     "Axis Bank Branch"
+    ]
+   }
+  ],
+  "longest_gaps": [
+   {
+    "from": "Gangtok",
+    "to": "Rongli",
+    "gap_km": 131
+   }
+  ]
+ },
  "mechanics_left_out": [],
  "stays_left_out": [
   {
    "near": "Gangtok",
    "count": 786
+  }
+ ],
+ "photos": [
+  {
+   "near": "Tsomgo Lake",
+   "kind": "pass",
+   "km_from_start": 41.9,
+   "title": "Yak near Tsomgo Lake, Sikkim",
+   "page": "https://commons.wikimedia.org/wiki/File:Yak_near_Tsomgo_Lake,_Sikkim.jpg",
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/70/Yak_near_Tsomgo_Lake%2C_Sikkim.jpg/500px-Yak_near_Tsomgo_Lake%2C_Sikkim.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "taken": "2026-04-04",
+   "author": "Rajani Gairshail",
+   "licence": "CC BY-SA 4.0",
+   "licence_url": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  {
+   "near": "Tsomgo Lake",
+   "kind": "pass",
+   "km_from_start": 41.9,
+   "title": "Changu (Tsomgo) Lake",
+   "page": "https://commons.wikimedia.org/wiki/File:Changu_(Tsomgo)_Lake.jpg",
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/96/Changu_%28Tsomgo%29_Lake.jpg/500px-Changu_%28Tsomgo%29_Lake.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "taken": "2026-04-03",
+   "author": "Kuldeepburjbhalaike",
+   "licence": "CC BY-SA 4.0",
+   "licence_url": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  {
+   "near": "Nathu La",
+   "kind": "pass",
+   "km_from_start": 58.6,
+   "title": "Watershed Martyr's Memorial premises at Sherathang near Nathu La, East Sikkim 08",
+   "page": "https://commons.wikimedia.org/wiki/File:Watershed_Martyr%27s_Memorial_premises_at_Sherathang_near_Nathu_La,_East_Sikkim_08.jpg",
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/18/Watershed_Martyr%27s_Memorial_premises_at_Sherathang_near_Nathu_La%2C_East_Sikkim_08.jpg/500px-Watershed_Martyr%27s_Memorial_premises_at_Sherathang_near_Nathu_La%2C_East_Sikkim_08.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "taken": "2024-04-22",
+   "author": "Amitabha Gupta",
+   "licence": "CC BY 4.0",
+   "licence_url": "https://creativecommons.org/licenses/by/4.0"
+  },
+  {
+   "near": "Nathu La",
+   "kind": "pass",
+   "km_from_start": 58.6,
+   "title": "Nathula Pass, Sikkim",
+   "page": "https://commons.wikimedia.org/wiki/File:Nathula_Pass,_Sikkim.jpg",
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1c/Nathula_Pass%2C_Sikkim.jpg/500px-Nathula_Pass%2C_Sikkim.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "taken": "2023-09-30",
+   "author": "Delphinium18",
+   "licence": "CC BY-SA 4.0",
+   "licence_url": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  {
+   "near": "Kupup",
+   "kind": "place",
+   "km_from_start": 70.1,
+   "title": "Baba Mandir Snow",
+   "page": "https://commons.wikimedia.org/wiki/File:Baba_Mandir_Snow.jpg",
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/40/Baba_Mandir_Snow.jpg/500px-Baba_Mandir_Snow.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "taken": "2017-05-15",
+   "author": "ShreyasiD",
+   "licence": "CC BY-SA 4.0",
+   "licence_url": "https://creativecommons.org/licenses/by-sa/4.0"
   }
  ]
 }

@@ -6714,6 +6714,332 @@
  "counts": {
   "facts": 390
  },
+ "daylight": [
+  {
+   "name": "Bengaluru",
+   "km_from_start": 0.0,
+   "months": [
+    [
+     "06:45",
+     "18:11"
+    ],
+    [
+     "06:43",
+     "18:25"
+    ],
+    [
+     "06:28",
+     "18:30"
+    ],
+    [
+     "06:08",
+     "18:32"
+    ],
+    [
+     "05:54",
+     "18:37"
+    ],
+    [
+     "05:53",
+     "18:46"
+    ],
+    [
+     "06:01",
+     "18:50"
+    ],
+    [
+     "06:08",
+     "18:42"
+    ],
+    [
+     "06:08",
+     "18:22"
+    ],
+    [
+     "06:09",
+     "18:01"
+    ],
+    [
+     "06:18",
+     "17:51"
+    ],
+    [
+     "06:34",
+     "17:56"
+    ]
+   ]
+  },
+  {
+   "name": "Chikkamagaluru",
+   "km_from_start": 249.6,
+   "months": [
+    [
+     "06:53",
+     "18:18"
+    ],
+    [
+     "06:50",
+     "18:32"
+    ],
+    [
+     "06:35",
+     "18:38"
+    ],
+    [
+     "06:15",
+     "18:40"
+    ],
+    [
+     "06:01",
+     "18:45"
+    ],
+    [
+     "06:00",
+     "18:54"
+    ],
+    [
+     "06:07",
+     "18:58"
+    ],
+    [
+     "06:14",
+     "18:49"
+    ],
+    [
+     "06:16",
+     "18:29"
+    ],
+    [
+     "06:17",
+     "18:08"
+    ],
+    [
+     "06:26",
+     "17:57"
+    ],
+    [
+     "06:42",
+     "18:02"
+    ]
+   ]
+  },
+  {
+   "name": "Mullayanagiri",
+   "km_from_start": 271.2,
+   "months": [
+    [
+     "06:53",
+     "18:18"
+    ],
+    [
+     "06:50",
+     "18:32"
+    ],
+    [
+     "06:36",
+     "18:38"
+    ],
+    [
+     "06:15",
+     "18:40"
+    ],
+    [
+     "06:01",
+     "18:45"
+    ],
+    [
+     "06:00",
+     "18:54"
+    ],
+    [
+     "06:07",
+     "18:58"
+    ],
+    [
+     "06:15",
+     "18:49"
+    ],
+    [
+     "06:16",
+     "18:29"
+    ],
+    [
+     "06:17",
+     "18:08"
+    ],
+    [
+     "06:26",
+     "17:58"
+    ],
+    [
+     "06:42",
+     "18:02"
+    ]
+   ]
+  },
+  {
+   "name": "Sringeri",
+   "km_from_start": 378.5,
+   "months": [
+    [
+     "06:55",
+     "18:20"
+    ],
+    [
+     "06:52",
+     "18:34"
+    ],
+    [
+     "06:38",
+     "18:40"
+    ],
+    [
+     "06:17",
+     "18:42"
+    ],
+    [
+     "06:03",
+     "18:47"
+    ],
+    [
+     "06:02",
+     "18:56"
+    ],
+    [
+     "06:09",
+     "19:00"
+    ],
+    [
+     "06:16",
+     "18:51"
+    ],
+    [
+     "06:18",
+     "18:31"
+    ],
+    [
+     "06:19",
+     "18:10"
+    ],
+    [
+     "06:28",
+     "17:59"
+    ],
+    [
+     "06:44",
+     "18:04"
+    ]
+   ]
+  },
+  {
+   "name": "Agumbe",
+   "km_from_start": 403.8,
+   "months": [
+    [
+     "06:56",
+     "18:20"
+    ],
+    [
+     "06:53",
+     "18:35"
+    ],
+    [
+     "06:38",
+     "18:40"
+    ],
+    [
+     "06:17",
+     "18:43"
+    ],
+    [
+     "06:03",
+     "18:48"
+    ],
+    [
+     "06:02",
+     "18:57"
+    ],
+    [
+     "06:10",
+     "19:01"
+    ],
+    [
+     "06:17",
+     "18:52"
+    ],
+    [
+     "06:18",
+     "18:32"
+    ],
+    [
+     "06:20",
+     "18:11"
+    ],
+    [
+     "06:29",
+     "18:00"
+    ],
+    [
+     "06:45",
+     "18:05"
+    ]
+   ]
+  },
+  {
+   "name": "Madikeri",
+   "km_from_start": 617.6,
+   "months": [
+    [
+     "06:52",
+     "18:20"
+    ],
+    [
+     "06:49",
+     "18:33"
+    ],
+    [
+     "06:35",
+     "18:38"
+    ],
+    [
+     "06:15",
+     "18:39"
+    ],
+    [
+     "06:02",
+     "18:44"
+    ],
+    [
+     "06:02",
+     "18:53"
+    ],
+    [
+     "06:09",
+     "18:57"
+    ],
+    [
+     "06:16",
+     "18:48"
+    ],
+    [
+     "06:16",
+     "18:29"
+    ],
+    [
+     "06:16",
+     "18:09"
+    ],
+    [
+     "06:25",
+     "17:59"
+    ],
+    [
+     "06:40",
+     "18:04"
+    ]
+   ]
+  }
+ ],
  "built": "2026-11-08",
  "mechanics": [
   {
@@ -7359,6 +7685,132 @@
    }
   }
  ],
+ "cash": {
+  "by_halt": [
+   {
+    "near": "Between Bengaluru and Chikkamagaluru",
+    "km_from_start": 26,
+    "atms": 36,
+    "banks": 59,
+    "names": [
+     "Alankit",
+     "Allahabad Bank Tumkur Branch",
+     "Axis Bank",
+     "Axis Bank ATM",
+     "Axis Bank Branch",
+     "Bank Of India"
+    ]
+   },
+   {
+    "near": "Chikkamagaluru",
+    "km_from_start": 249.6,
+    "atms": 8,
+    "banks": 10,
+    "names": [
+     "Axis Bank ATM",
+     "Bank of Maharashtra",
+     "Chickmagalur - I. G. Road. Branch ATM",
+     "Fedbank Financial Service Limited",
+     "Fedbank Financial Services Limited",
+     "HDFC Bank"
+    ]
+   },
+   {
+    "near": "Between Mullayanagiri and Sringeri",
+    "km_from_start": 297,
+    "atms": 3,
+    "banks": 10,
+    "names": [
+     "Axis Bank",
+     "Bank of Baroda",
+     "Bank of India-Mullayanagiri",
+     "Bank of Maharashtra ATM",
+     "Central Bank of India Chikmagalur Branch",
+     "Chikmagalore District Co-Operative Central Bank-Balehonnur"
+    ]
+   },
+   {
+    "near": "Sringeri",
+    "km_from_start": 378.5,
+    "atms": 0,
+    "banks": 6,
+    "names": [
+     "Bank of Baroda",
+     "Chikamagalore Bank-Sringeri",
+     "Indian Overseas Bank",
+     "Karnataka Bank - Jayapura Branch",
+     "Karnataka Bank - Sringeri Branch",
+     "State Bank of India-Sringeri Rural"
+    ]
+   },
+   {
+    "near": "Agumbe",
+    "km_from_start": 403.8,
+    "atms": 0,
+    "banks": 1,
+    "names": [
+     "Indian Overseas Bank"
+    ]
+   },
+   {
+    "near": "Between Agumbe and Madikeri",
+    "km_from_start": 446,
+    "atms": 23,
+    "banks": 52,
+    "names": [
+     "Axis Bank",
+     "Axis Bank ATM",
+     "Axis Bank Branch",
+     "Bank of Baroda",
+     "Bank of Maharashtra",
+     "C. A. Bank Complex"
+    ]
+   },
+   {
+    "near": "Madikeri",
+    "km_from_start": 617.6,
+    "atms": 7,
+    "banks": 18,
+    "names": [
+     "Axis Bank",
+     "Axis Bank ATM",
+     "Axis Bank Branch",
+     "Bank of Baroda",
+     "Bank of Maharashtra - Madikeri Branch",
+     "CSB BANK LTD"
+    ]
+   },
+   {
+    "near": "Between Madikeri and Bengaluru",
+    "km_from_start": 648,
+    "atms": 45,
+    "banks": 68,
+    "names": [
+     "Axis Bank",
+     "Axis Bank ATM",
+     "Axis Bank Branch",
+     "Bank of Baroda",
+     "Bidadi Branch ATM",
+     "Canara Bank"
+    ]
+   },
+   {
+    "near": "Bengaluru",
+    "km_from_start": 873.1,
+    "atms": 151,
+    "banks": 300,
+    "names": [
+     "Aawati Sowhardha Credit Cooperative",
+     "Allahabad Bank",
+     "Allahabad Bank Chamarajpet Branch",
+     "Andhra Bank",
+     "Andhra Bank Chamarajpet Branch",
+     "Apex Bank Head Office"
+    ]
+   }
+  ],
+  "longest_gaps": []
+ },
  "mechanics_left_out": [
   {
    "near": "Bengaluru",

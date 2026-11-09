@@ -7426,6 +7426,656 @@
  "counts": {
   "facts": 176
  },
+ "daylight": [
+  {
+   "name": "Manali",
+   "km_from_start": 0.0,
+   "months": [
+    [
+     "07:22",
+     "17:37"
+    ],
+    [
+     "07:05",
+     "18:06"
+    ],
+    [
+     "06:33",
+     "18:29"
+    ],
+    [
+     "05:53",
+     "18:50"
+    ],
+    [
+     "05:24",
+     "19:11"
+    ],
+    [
+     "05:14",
+     "19:29"
+    ],
+    [
+     "05:25",
+     "19:29"
+    ],
+    [
+     "05:45",
+     "19:07"
+    ],
+    [
+     "06:04",
+     "18:29"
+    ],
+    [
+     "06:24",
+     "17:50"
+    ],
+    [
+     "06:50",
+     "17:22"
+    ],
+    [
+     "07:15",
+     "17:18"
+    ]
+   ]
+  },
+  {
+   "name": "Sissu",
+   "km_from_start": 37.9,
+   "months": [
+    [
+     "07:23",
+     "17:37"
+    ],
+    [
+     "07:05",
+     "18:06"
+    ],
+    [
+     "06:33",
+     "18:29"
+    ],
+    [
+     "05:53",
+     "18:50"
+    ],
+    [
+     "05:24",
+     "19:11"
+    ],
+    [
+     "05:13",
+     "19:30"
+    ],
+    [
+     "05:24",
+     "19:30"
+    ],
+    [
+     "05:45",
+     "19:08"
+    ],
+    [
+     "06:04",
+     "18:29"
+    ],
+    [
+     "06:24",
+     "17:50"
+    ],
+    [
+     "06:51",
+     "17:22"
+    ],
+    [
+     "07:15",
+     "17:18"
+    ]
+   ]
+  },
+  {
+   "name": "Tandi",
+   "km_from_start": 65.0,
+   "months": [
+    [
+     "07:24",
+     "17:38"
+    ],
+    [
+     "07:06",
+     "18:07"
+    ],
+    [
+     "06:34",
+     "18:29"
+    ],
+    [
+     "05:54",
+     "18:51"
+    ],
+    [
+     "05:24",
+     "19:12"
+    ],
+    [
+     "05:14",
+     "19:30"
+    ],
+    [
+     "05:25",
+     "19:31"
+    ],
+    [
+     "05:45",
+     "19:09"
+    ],
+    [
+     "06:05",
+     "18:30"
+    ],
+    [
+     "06:25",
+     "17:51"
+    ],
+    [
+     "06:51",
+     "17:22"
+    ],
+    [
+     "07:16",
+     "17:18"
+    ]
+   ]
+  },
+  {
+   "name": "Keylong",
+   "km_from_start": 73.9,
+   "months": [
+    [
+     "07:24",
+     "17:37"
+    ],
+    [
+     "07:06",
+     "18:06"
+    ],
+    [
+     "06:34",
+     "18:29"
+    ],
+    [
+     "05:54",
+     "18:51"
+    ],
+    [
+     "05:24",
+     "19:12"
+    ],
+    [
+     "05:14",
+     "19:30"
+    ],
+    [
+     "05:24",
+     "19:31"
+    ],
+    [
+     "05:45",
+     "19:08"
+    ],
+    [
+     "06:05",
+     "18:30"
+    ],
+    [
+     "06:25",
+     "17:50"
+    ],
+    [
+     "06:51",
+     "17:22"
+    ],
+    [
+     "07:16",
+     "17:18"
+    ]
+   ]
+  },
+  {
+   "name": "Jispa",
+   "km_from_start": 95.5,
+   "months": [
+    [
+     "07:23",
+     "17:37"
+    ],
+    [
+     "07:05",
+     "18:06"
+    ],
+    [
+     "06:33",
+     "18:29"
+    ],
+    [
+     "05:53",
+     "18:50"
+    ],
+    [
+     "05:23",
+     "19:12"
+    ],
+    [
+     "05:13",
+     "19:30"
+    ],
+    [
+     "05:24",
+     "19:30"
+    ],
+    [
+     "05:44",
+     "19:08"
+    ],
+    [
+     "06:04",
+     "18:29"
+    ],
+    [
+     "06:24",
+     "17:50"
+    ],
+    [
+     "06:51",
+     "17:21"
+    ],
+    [
+     "07:16",
+     "17:17"
+    ]
+   ]
+  },
+  {
+   "name": "Darcha",
+   "km_from_start": 104.9,
+   "months": [
+    [
+     "07:23",
+     "17:36"
+    ],
+    [
+     "07:05",
+     "18:06"
+    ],
+    [
+     "06:33",
+     "18:28"
+    ],
+    [
+     "05:53",
+     "18:50"
+    ],
+    [
+     "05:23",
+     "19:12"
+    ],
+    [
+     "05:13",
+     "19:30"
+    ],
+    [
+     "05:23",
+     "19:30"
+    ],
+    [
+     "05:44",
+     "19:08"
+    ],
+    [
+     "06:04",
+     "18:29"
+    ],
+    [
+     "06:24",
+     "17:49"
+    ],
+    [
+     "06:51",
+     "17:21"
+    ],
+    [
+     "07:16",
+     "17:17"
+    ]
+   ]
+  },
+  {
+   "name": "Zingzingbar",
+   "km_from_start": 130.9,
+   "months": [
+    [
+     "07:23",
+     "17:36"
+    ],
+    [
+     "07:05",
+     "18:05"
+    ],
+    [
+     "06:33",
+     "18:28"
+    ],
+    [
+     "05:52",
+     "18:50"
+    ],
+    [
+     "05:22",
+     "19:11"
+    ],
+    [
+     "05:12",
+     "19:30"
+    ],
+    [
+     "05:23",
+     "19:30"
+    ],
+    [
+     "05:44",
+     "19:08"
+    ],
+    [
+     "06:03",
+     "18:29"
+    ],
+    [
+     "06:24",
+     "17:49"
+    ],
+    [
+     "06:51",
+     "17:21"
+    ],
+    [
+     "07:15",
+     "17:16"
+    ]
+   ]
+  },
+  {
+   "name": "Sarchu",
+   "km_from_start": 183.5,
+   "months": [
+    [
+     "07:22",
+     "17:34"
+    ],
+    [
+     "07:04",
+     "18:04"
+    ],
+    [
+     "06:32",
+     "18:27"
+    ],
+    [
+     "05:51",
+     "18:49"
+    ],
+    [
+     "05:21",
+     "19:11"
+    ],
+    [
+     "05:11",
+     "19:29"
+    ],
+    [
+     "05:21",
+     "19:29"
+    ],
+    [
+     "05:42",
+     "19:07"
+    ],
+    [
+     "06:02",
+     "18:28"
+    ],
+    [
+     "06:23",
+     "17:48"
+    ],
+    [
+     "06:50",
+     "17:19"
+    ],
+    [
+     "07:15",
+     "17:15"
+    ]
+   ]
+  },
+  {
+   "name": "Pang",
+   "km_from_start": 259.3,
+   "months": [
+    [
+     "07:22",
+     "17:33"
+    ],
+    [
+     "07:04",
+     "18:03"
+    ],
+    [
+     "06:31",
+     "18:26"
+    ],
+    [
+     "05:50",
+     "18:48"
+    ],
+    [
+     "05:20",
+     "19:10"
+    ],
+    [
+     "05:09",
+     "19:29"
+    ],
+    [
+     "05:20",
+     "19:29"
+    ],
+    [
+     "05:41",
+     "19:06"
+    ],
+    [
+     "06:01",
+     "18:27"
+    ],
+    [
+     "06:22",
+     "17:47"
+    ],
+    [
+     "06:49",
+     "17:18"
+    ],
+    [
+     "07:14",
+     "17:13"
+    ]
+   ]
+  },
+  {
+   "name": "Upshi",
+   "km_from_start": 385.9,
+   "months": [
+    [
+     "07:23",
+     "17:31"
+    ],
+    [
+     "07:04",
+     "18:02"
+    ],
+    [
+     "06:31",
+     "18:26"
+    ],
+    [
+     "05:49",
+     "18:49"
+    ],
+    [
+     "05:18",
+     "19:12"
+    ],
+    [
+     "05:07",
+     "19:30"
+    ],
+    [
+     "05:18",
+     "19:31"
+    ],
+    [
+     "05:40",
+     "19:07"
+    ],
+    [
+     "06:01",
+     "18:27"
+    ],
+    [
+     "06:22",
+     "17:46"
+    ],
+    [
+     "06:51",
+     "17:17"
+    ],
+    [
+     "07:16",
+     "17:12"
+    ]
+   ]
+  },
+  {
+   "name": "Karu",
+   "km_from_start": 399.7,
+   "months": [
+    [
+     "07:24",
+     "17:31"
+    ],
+    [
+     "07:05",
+     "18:02"
+    ],
+    [
+     "06:31",
+     "18:26"
+    ],
+    [
+     "05:49",
+     "18:49"
+    ],
+    [
+     "05:18",
+     "19:12"
+    ],
+    [
+     "05:07",
+     "19:31"
+    ],
+    [
+     "05:18",
+     "19:31"
+    ],
+    [
+     "05:40",
+     "19:08"
+    ],
+    [
+     "06:01",
+     "18:27"
+    ],
+    [
+     "06:23",
+     "17:46"
+    ],
+    [
+     "06:51",
+     "17:17"
+    ],
+    [
+     "07:17",
+     "17:12"
+    ]
+   ]
+  },
+  {
+   "name": "Leh",
+   "km_from_start": 434.1,
+   "months": [
+    [
+     "07:25",
+     "17:31"
+    ],
+    [
+     "07:06",
+     "18:02"
+    ],
+    [
+     "06:32",
+     "18:27"
+    ],
+    [
+     "05:50",
+     "18:50"
+    ],
+    [
+     "05:18",
+     "19:13"
+    ],
+    [
+     "05:07",
+     "19:32"
+    ],
+    [
+     "05:18",
+     "19:33"
+    ],
+    [
+     "05:40",
+     "19:09"
+    ],
+    [
+     "06:02",
+     "18:28"
+    ],
+    [
+     "06:24",
+     "17:47"
+    ],
+    [
+     "06:52",
+     "17:17"
+    ],
+    [
+     "07:18",
+     "17:12"
+    ]
+   ]
+  }
+ ],
  "built": "2026-11-08",
  "mechanics": [
   {
@@ -8919,6 +9569,85 @@
    }
   }
  ],
+ "cash": {
+  "by_halt": [
+   {
+    "near": "Manali",
+    "km_from_start": 0.0,
+    "atms": 2,
+    "banks": 11,
+    "names": [
+     "Axis Bank",
+     "Bank of Baroda",
+     "HDFC Bank",
+     "ICICI Bank",
+     "J&K Bank",
+     "Jammu and Kashmir Bank ATM"
+    ]
+   },
+   {
+    "near": "Sissu",
+    "km_from_start": 37.9,
+    "atms": 1,
+    "banks": 0,
+    "names": [
+     "State Bank of India ATM"
+    ]
+   },
+   {
+    "near": "Keylong",
+    "km_from_start": 73.9,
+    "atms": 1,
+    "banks": 2,
+    "names": [
+     "HDFC Bank ATM",
+     "ICICI Bank",
+     "Punjab National Bank"
+    ]
+   },
+   {
+    "near": "Upshi",
+    "km_from_start": 385.9,
+    "atms": 0,
+    "banks": 1,
+    "names": [
+     "J&K Bank"
+    ]
+   },
+   {
+    "near": "Karu",
+    "km_from_start": 399.7,
+    "atms": 1,
+    "banks": 2,
+    "names": [
+     "ATM",
+     "Bank",
+     "Punjab National Bank"
+    ]
+   },
+   {
+    "near": "Leh",
+    "km_from_start": 434.1,
+    "atms": 6,
+    "banks": 15,
+    "names": [
+     "Axis Bank",
+     "Axis Bank ATM",
+     "Axis Bank Branch",
+     "Bank of Baroda",
+     "HDFC Bank",
+     "HDFC Bank ATM"
+    ]
+   }
+  ],
+  "longest_gaps": [
+   {
+    "from": "Keylong",
+    "to": "Upshi",
+    "gap_km": 310
+   }
+  ]
+ },
  "mechanics_left_out": [],
  "stays_left_out": [
   {
@@ -8928,6 +9657,200 @@
   {
    "near": "Leh",
    "count": 435
+  }
+ ],
+ "photos": [
+  {
+   "near": "Sissu",
+   "kind": "place",
+   "km_from_start": 37.9,
+   "title": "Sissu Lake, Lahaul, Himachal Pradesh, India",
+   "page": "https://commons.wikimedia.org/wiki/File:Sissu_Lake,_Lahaul,_Himachal_Pradesh,_India.jpg",
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/59/Sissu_Lake%2C_Lahaul%2C_Himachal_Pradesh%2C_India.jpg/500px-Sissu_Lake%2C_Lahaul%2C_Himachal_Pradesh%2C_India.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "taken": "2026-10-19",
+   "author": "UnpetitproleX",
+   "licence": "CC BY-SA 4.0",
+   "licence_url": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  {
+   "near": "Sissu",
+   "kind": "place",
+   "km_from_start": 37.9,
+   "title": "Top View of Sissu , Lahaul",
+   "page": "https://commons.wikimedia.org/wiki/File:Top_View_of_Sissu_,_Lahaul.jpg",
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/40/Top_View_of_Sissu_%2C_Lahaul.jpg/500px-Top_View_of_Sissu_%2C_Lahaul.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "taken": "2020-11-07",
+   "author": "Navneet Sharma",
+   "licence": "CC BY-SA 4.0",
+   "licence_url": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  {
+   "near": "Tandi",
+   "kind": "place",
+   "km_from_start": 65.0,
+   "title": "Tandi Bridge Downstream Bhaga Lahaul Oct22 A7C 03371",
+   "page": "https://commons.wikimedia.org/wiki/File:Tandi_Bridge_Downstream_Bhaga_Lahaul_Oct22_A7C_03371.jpg",
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4a/Tandi_Bridge_Downstream_Bhaga_Lahaul_Oct22_A7C_03371.jpg/500px-Tandi_Bridge_Downstream_Bhaga_Lahaul_Oct22_A7C_03371.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "taken": "2022-10-02",
+   "author": "Timothy A. Gonsalves",
+   "licence": "CC BY-SA 4.0",
+   "licence_url": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  {
+   "near": "Keylong",
+   "kind": "place",
+   "km_from_start": 73.9,
+   "title": "Keylong West Lahaul Himachal Oct22 A7C 03375",
+   "page": "https://commons.wikimedia.org/wiki/File:Keylong_West_Lahaul_Himachal_Oct22_A7C_03375.jpg",
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e8/Keylong_West_Lahaul_Himachal_Oct22_A7C_03375.jpg/500px-Keylong_West_Lahaul_Himachal_Oct22_A7C_03375.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "taken": "2022-10-02",
+   "author": "Timothy A. Gonsalves",
+   "licence": "CC BY-SA 4.0",
+   "licence_url": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  {
+   "near": "Darcha",
+   "kind": "place",
+   "km_from_start": 104.9,
+   "title": "Darcha Bridge on Jankar Nala, Lahaul, Himachal Pradesh",
+   "page": "https://commons.wikimedia.org/wiki/File:Darcha_Bridge_on_Jankar_Nala,_Lahaul,_Himachal_Pradesh.jpg",
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d8/Darcha_Bridge_on_Jankar_Nala%2C_Lahaul%2C_Himachal_Pradesh.jpg/500px-Darcha_Bridge_on_Jankar_Nala%2C_Lahaul%2C_Himachal_Pradesh.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "taken": "2025-10-04",
+   "author": "In Transit",
+   "licence": "CC BY-SA 4.0",
+   "licence_url": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  {
+   "near": "Darcha",
+   "kind": "place",
+   "km_from_start": 104.9,
+   "title": "Darcha Bridge NW Lahaul Himachal India Oct22 A7C 03526",
+   "page": "https://commons.wikimedia.org/wiki/File:Darcha_Bridge_NW_Lahaul_Himachal_India_Oct22_A7C_03526.jpg",
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0e/Darcha_Bridge_NW_Lahaul_Himachal_India_Oct22_A7C_03526.jpg/500px-Darcha_Bridge_NW_Lahaul_Himachal_India_Oct22_A7C_03526.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "taken": "2022-10-04",
+   "author": "Timothy A. Gonsalves",
+   "licence": "CC BY-SA 4.0",
+   "licence_url": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  {
+   "near": "Zingzingbar",
+   "kind": "place",
+   "km_from_start": 130.9,
+   "title": "Zingzingbar approach road from Keylong",
+   "page": "https://commons.wikimedia.org/wiki/File:Zingzingbar_approach_road_from_Keylong.jpg",
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/30/Zingzingbar_approach_road_from_Keylong.jpg/500px-Zingzingbar_approach_road_from_Keylong.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "taken": "2019-06-18",
+   "author": "Encodedkamal",
+   "licence": "CC BY-SA 4.0",
+   "licence_url": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  {
+   "near": "Baralacha La",
+   "kind": "pass",
+   "km_from_start": 152.5,
+   "title": "Baralacha monsoon",
+   "page": "https://commons.wikimedia.org/wiki/File:Baralacha_monsoon.jpg",
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9e/Baralacha_monsoon.jpg/500px-Baralacha_monsoon.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "taken": "2021-07-15",
+   "author": "Jaswanth141199",
+   "licence": "CC BY-SA 4.0",
+   "licence_url": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  {
+   "near": "Baralacha La",
+   "kind": "pass",
+   "km_from_start": 152.5,
+   "title": "Baralacha La towards Leh Jul19 D72 10848",
+   "page": "https://commons.wikimedia.org/wiki/File:Baralacha_La_towards_Leh_Jul19_D72_10848.jpg",
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/54/Baralacha_La_towards_Leh_Jul19_D72_10848.jpg/500px-Baralacha_La_towards_Leh_Jul19_D72_10848.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "taken": "2019-07-04",
+   "author": "Timothy Gonsalves",
+   "licence": "CC BY-SA 4.0",
+   "licence_url": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  {
+   "near": "Sarchu",
+   "kind": "place",
+   "km_from_start": 183.5,
+   "title": "Royal Enfield Bullet 500, Leh-Manali Highway",
+   "page": "https://commons.wikimedia.org/wiki/File:Royal_Enfield_Bullet_500,_Leh-Manali_Highway.jpg",
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1b/Royal_Enfield_Bullet_500%2C_Leh-Manali_Highway.jpg/500px-Royal_Enfield_Bullet_500%2C_Leh-Manali_Highway.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "taken": "2018-08-07",
+   "author": "Yann Forget",
+   "licence": "CC BY-SA 3.0",
+   "licence_url": "https://creativecommons.org/licenses/by-sa/3.0"
+  },
+  {
+   "near": "Sarchu",
+   "kind": "place",
+   "km_from_start": 183.5,
+   "title": "Running on Rohtang La",
+   "page": "https://commons.wikimedia.org/wiki/File:Running_on_Rohtang_La.jpg",
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/10/Running_on_Rohtang_La.jpg/500px-Running_on_Rohtang_La.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "taken": "2016-06-11",
+   "author": "TheHellRace",
+   "licence": "CC BY-SA 4.0",
+   "licence_url": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  {
+   "near": "Pang",
+   "kind": "place",
+   "km_from_start": 259.3,
+   "title": "More Plains, Ladakh",
+   "page": "https://commons.wikimedia.org/wiki/File:More_Plains,_Ladakh.jpg",
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ec/More_Plains%2C_Ladakh.jpg/500px-More_Plains%2C_Ladakh.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "taken": "2024-08-13",
+   "author": "PKD16",
+   "licence": "CC BY-SA 4.0",
+   "licence_url": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  {
+   "near": "Tanglang La",
+   "kind": "pass",
+   "km_from_start": 325.2,
+   "title": "Tanglang La Pass",
+   "page": "https://commons.wikimedia.org/wiki/File:Tanglang_La_Pass.jpg",
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/06/Tanglang_La_Pass.jpg/500px-Tanglang_La_Pass.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "taken": "2024-06-20",
+   "author": "Kartiktiktik",
+   "licence": "CC BY-SA 4.0",
+   "licence_url": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  {
+   "near": "Tanglang La",
+   "kind": "pass",
+   "km_from_start": 325.2,
+   "title": "Prayer flags at Tanglang La, Ladakh",
+   "page": "https://commons.wikimedia.org/wiki/File:Prayer_flags_at_Tanglang_La,_Ladakh.jpg",
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ad/Prayer_flags_at_Tanglang_La%2C_Ladakh.jpg/500px-Prayer_flags_at_Tanglang_La%2C_Ladakh.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "taken": "2017-07-23",
+   "author": "Lianguanlun",
+   "licence": "CC BY 4.0",
+   "licence_url": "https://creativecommons.org/licenses/by/4.0"
+  },
+  {
+   "near": "Leh",
+   "kind": "place",
+   "km_from_start": 434.1,
+   "title": "Leh Market Square (48975337958)",
+   "page": "https://commons.wikimedia.org/wiki/File:Leh_Market_Square_(48975337958).jpg",
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1d/Leh_Market_Square_%2848975337958%29.jpg/500px-Leh_Market_Square_%2848975337958%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "taken": "2018-07-02",
+   "author": "Chris Hunkeler from Carlsbad",
+   "licence": "CC BY-SA 2.0",
+   "licence_url": "https://creativecommons.org/licenses/by-sa/2.0"
+  },
+  {
+   "near": "Leh",
+   "kind": "place",
+   "km_from_start": 434.1,
+   "title": "Leh - Main Bazaar Road",
+   "page": "https://commons.wikimedia.org/wiki/File:Leh_-_Main_Bazaar_Road.jpg",
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fc/Leh_-_Main_Bazaar_Road.jpg/500px-Leh_-_Main_Bazaar_Road.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "taken": "2018-05-29",
+   "author": "Ingo Mehling",
+   "licence": "CC BY-SA 3.0",
+   "licence_url": "https://creativecommons.org/licenses/by-sa/3.0"
   }
  ]
 }

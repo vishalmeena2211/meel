@@ -6944,6 +6944,278 @@
  "counts": {
   "facts": 98
  },
+ "daylight": [
+  {
+   "name": "Jaigaon",
+   "km_from_start": 0.0,
+   "months": [
+    [
+     "06:53",
+     "17:30"
+    ],
+    [
+     "06:40",
+     "17:54"
+    ],
+    [
+     "06:13",
+     "18:11"
+    ],
+    [
+     "05:40",
+     "18:26"
+    ],
+    [
+     "05:15",
+     "18:42"
+    ],
+    [
+     "05:08",
+     "18:57"
+    ],
+    [
+     "05:18",
+     "18:59"
+    ],
+    [
+     "05:34",
+     "18:41"
+    ],
+    [
+     "05:47",
+     "18:08"
+    ],
+    [
+     "06:01",
+     "17:35"
+    ],
+    [
+     "06:22",
+     "17:13"
+    ],
+    [
+     "06:44",
+     "17:12"
+    ]
+   ]
+  },
+  {
+   "name": "Phuentsholing",
+   "km_from_start": 2.1,
+   "months": [
+    [
+     "06:53",
+     "17:30"
+    ],
+    [
+     "06:40",
+     "17:54"
+    ],
+    [
+     "06:13",
+     "18:11"
+    ],
+    [
+     "05:39",
+     "18:26"
+    ],
+    [
+     "05:15",
+     "18:42"
+    ],
+    [
+     "05:08",
+     "18:57"
+    ],
+    [
+     "05:18",
+     "18:59"
+    ],
+    [
+     "05:34",
+     "18:41"
+    ],
+    [
+     "05:47",
+     "18:08"
+    ],
+    [
+     "06:01",
+     "17:35"
+    ],
+    [
+     "06:22",
+     "17:13"
+    ],
+    [
+     "06:44",
+     "17:11"
+    ]
+   ]
+  },
+  {
+   "name": "Thimphu",
+   "km_from_start": 149.6,
+   "months": [
+    [
+     "06:53",
+     "17:27"
+    ],
+    [
+     "06:39",
+     "17:52"
+    ],
+    [
+     "06:12",
+     "18:10"
+    ],
+    [
+     "05:38",
+     "18:25"
+    ],
+    [
+     "05:13",
+     "18:42"
+    ],
+    [
+     "05:06",
+     "18:57"
+    ],
+    [
+     "05:15",
+     "18:59"
+    ],
+    [
+     "05:32",
+     "18:41"
+    ],
+    [
+     "05:46",
+     "18:08"
+    ],
+    [
+     "06:00",
+     "17:34"
+    ],
+    [
+     "06:22",
+     "17:11"
+    ],
+    [
+     "06:44",
+     "17:09"
+    ]
+   ]
+  },
+  {
+   "name": "Punakha",
+   "km_from_start": 222.7,
+   "months": [
+    [
+     "06:52",
+     "17:26"
+    ],
+    [
+     "06:39",
+     "17:51"
+    ],
+    [
+     "06:12",
+     "18:09"
+    ],
+    [
+     "05:37",
+     "18:25"
+    ],
+    [
+     "05:12",
+     "18:41"
+    ],
+    [
+     "05:04",
+     "18:57"
+    ],
+    [
+     "05:14",
+     "18:58"
+    ],
+    [
+     "05:31",
+     "18:40"
+    ],
+    [
+     "05:45",
+     "18:07"
+    ],
+    [
+     "06:00",
+     "17:33"
+    ],
+    [
+     "06:21",
+     "17:10"
+    ],
+    [
+     "06:43",
+     "17:08"
+    ]
+   ]
+  },
+  {
+   "name": "Paro",
+   "km_from_start": 346.1,
+   "months": [
+    [
+     "06:54",
+     "17:28"
+    ],
+    [
+     "06:40",
+     "17:53"
+    ],
+    [
+     "06:13",
+     "18:11"
+    ],
+    [
+     "05:39",
+     "18:26"
+    ],
+    [
+     "05:14",
+     "18:43"
+    ],
+    [
+     "05:07",
+     "18:58"
+    ],
+    [
+     "05:16",
+     "19:00"
+    ],
+    [
+     "05:33",
+     "18:42"
+    ],
+    [
+     "05:47",
+     "18:08"
+    ],
+    [
+     "06:01",
+     "17:35"
+    ],
+    [
+     "06:23",
+     "17:12"
+    ],
+    [
+     "06:45",
+     "17:10"
+    ]
+   ]
+  }
+ ],
  "built": "2026-11-08",
  "mechanics": [
   {
@@ -7701,6 +7973,74 @@
    }
   }
  ],
+ "cash": {
+  "by_halt": [
+   {
+    "near": "Jaigaon",
+    "km_from_start": 0.0,
+    "atms": 1,
+    "banks": 3,
+    "names": [
+     "Axis Bank Branch",
+     "HDFC Bank ATM",
+     "ICICI Bank",
+     "Punjab National Bank"
+    ]
+   },
+   {
+    "near": "Phuentsholing",
+    "km_from_start": 2.1,
+    "atms": 3,
+    "banks": 2,
+    "names": [
+     "Axis Bank ATM",
+     "Central Bank of India ATM",
+     "HDFC Bank",
+     "IndusInd Bank ATM",
+     "State Bank of India"
+    ]
+   },
+   {
+    "near": "Punakha",
+    "km_from_start": 222.7,
+    "atms": 1,
+    "banks": 0,
+    "names": [
+     "Wangdue Phodrang Samthang"
+    ]
+   },
+   {
+    "near": "Thimphu",
+    "km_from_start": 294.7,
+    "atms": 1,
+    "banks": 4,
+    "names": [
+     "Bank of Bhutan Ltd",
+     "Bhutan Development Bank",
+     "Bhutan National Bank Head Office",
+     "Royal Monetary Authority",
+     "T Bank Ltd"
+    ]
+   }
+  ],
+  "longest_gaps": [
+   {
+    "from": "Phuentsholing",
+    "to": "Thimphu",
+    "gap_km": 145
+   },
+   {
+    "from": "Punakha",
+    "to": "end of route",
+    "gap_km": 132
+   },
+   {
+    "from": "Thimphu",
+    "to": "Punakha",
+    "gap_km": 63
+   }
+  ]
+ },
  "mechanics_left_out": [],
  "stays_left_out": [
   {
@@ -7714,6 +8054,56 @@
   {
    "near": "Phuentsholing",
    "count": 44
+  }
+ ],
+ "photos": [
+  {
+   "near": "Thimphu",
+   "kind": "place",
+   "km_from_start": 149.6,
+   "title": "Thimphu main traffic 2021-08-08",
+   "page": "https://commons.wikimedia.org/wiki/File:Thimphu_main_traffic_2021-08-08.jpg",
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fb/Thimphu_main_traffic_2021-08-08.jpg/500px-Thimphu_main_traffic_2021-08-08.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "taken": "2021-08-08",
+   "author": "Christpher J. Fynn",
+   "licence": "CC BY-SA 4.0",
+   "licence_url": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  {
+   "near": "Dochula",
+   "kind": "pass",
+   "km_from_start": 173.3,
+   "title": "Dochula Pass September 2023",
+   "page": "https://commons.wikimedia.org/wiki/File:Dochula_Pass_September_2023.jpg",
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9f/Dochula_Pass_September_2023.jpg/500px-Dochula_Pass_September_2023.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "taken": "2023-09-20",
+   "author": "Mussi Katz",
+   "licence": "CC0",
+   "licence_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+  },
+  {
+   "near": "Paro",
+   "kind": "place",
+   "km_from_start": 346.1,
+   "title": "Horses in Paro 1",
+   "page": "https://commons.wikimedia.org/wiki/File:Horses_in_Paro_1.jpg",
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/93/Horses_in_Paro_1.jpg/500px-Horses_in_Paro_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "taken": "2026-06-09",
+   "author": "Dipa Pandey",
+   "licence": "CC BY-SA 4.0",
+   "licence_url": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  {
+   "near": "Paro",
+   "kind": "place",
+   "km_from_start": 346.1,
+   "title": "View of Paro, Bhutan - 2026 (59)",
+   "page": "https://commons.wikimedia.org/wiki/File:View_of_Paro,_Bhutan_-_2026_(59).jpg",
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fe/View_of_Paro%2C_Bhutan_-_2026_%2859%29.jpg/500px-View_of_Paro%2C_Bhutan_-_2026_%2859%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "taken": "2026-06-09",
+   "author": "Nabin K. Sapkota",
+   "licence": "CC BY-SA 4.0",
+   "licence_url": "https://creativecommons.org/licenses/by-sa/4.0"
   }
  ]
 }

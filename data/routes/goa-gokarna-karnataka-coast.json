@@ -5275,6 +5275,440 @@
  "counts": {
   "facts": 165
  },
+ "daylight": [
+  {
+   "name": "Panaji",
+   "km_from_start": 0.0,
+   "months": [
+    [
+     "07:04",
+     "18:22"
+    ],
+    [
+     "07:00",
+     "18:38"
+    ],
+    [
+     "06:44",
+     "18:45"
+    ],
+    [
+     "06:21",
+     "18:49"
+    ],
+    [
+     "06:06",
+     "18:56"
+    ],
+    [
+     "06:04",
+     "19:06"
+    ],
+    [
+     "06:11",
+     "19:10"
+    ],
+    [
+     "06:20",
+     "18:59"
+    ],
+    [
+     "06:23",
+     "18:37"
+    ],
+    [
+     "06:26",
+     "18:15"
+    ],
+    [
+     "06:37",
+     "18:02"
+    ],
+    [
+     "06:53",
+     "18:06"
+    ]
+   ]
+  },
+  {
+   "name": "Palolem",
+   "km_from_start": 70.3,
+   "months": [
+    [
+     "07:03",
+     "18:22"
+    ],
+    [
+     "06:59",
+     "18:38"
+    ],
+    [
+     "06:43",
+     "18:44"
+    ],
+    [
+     "06:20",
+     "18:48"
+    ],
+    [
+     "06:06",
+     "18:54"
+    ],
+    [
+     "06:04",
+     "19:04"
+    ],
+    [
+     "06:11",
+     "19:08"
+    ],
+    [
+     "06:20",
+     "18:58"
+    ],
+    [
+     "06:22",
+     "18:36"
+    ],
+    [
+     "06:25",
+     "18:14"
+    ],
+    [
+     "06:35",
+     "18:02"
+    ],
+    [
+     "06:52",
+     "18:06"
+    ]
+   ]
+  },
+  {
+   "name": "Karwar",
+   "km_from_start": 99.9,
+   "months": [
+    [
+     "07:02",
+     "18:22"
+    ],
+    [
+     "06:58",
+     "18:37"
+    ],
+    [
+     "06:42",
+     "18:44"
+    ],
+    [
+     "06:20",
+     "18:47"
+    ],
+    [
+     "06:05",
+     "18:54"
+    ],
+    [
+     "06:04",
+     "19:03"
+    ],
+    [
+     "06:11",
+     "19:07"
+    ],
+    [
+     "06:19",
+     "18:57"
+    ],
+    [
+     "06:22",
+     "18:36"
+    ],
+    [
+     "06:24",
+     "18:14"
+    ],
+    [
+     "06:35",
+     "18:02"
+    ],
+    [
+     "06:51",
+     "18:06"
+    ]
+   ]
+  },
+  {
+   "name": "Gokarna",
+   "km_from_start": 156.6,
+   "months": [
+    [
+     "07:01",
+     "18:22"
+    ],
+    [
+     "06:57",
+     "18:37"
+    ],
+    [
+     "06:41",
+     "18:43"
+    ],
+    [
+     "06:20",
+     "18:46"
+    ],
+    [
+     "06:05",
+     "18:53"
+    ],
+    [
+     "06:03",
+     "19:02"
+    ],
+    [
+     "06:11",
+     "19:06"
+    ],
+    [
+     "06:19",
+     "18:56"
+    ],
+    [
+     "06:21",
+     "18:35"
+    ],
+    [
+     "06:23",
+     "18:13"
+    ],
+    [
+     "06:34",
+     "18:02"
+    ],
+    [
+     "06:50",
+     "18:06"
+    ]
+   ]
+  },
+  {
+   "name": "Murudeshwar",
+   "km_from_start": 233.6,
+   "months": [
+    [
+     "06:59",
+     "18:22"
+    ],
+    [
+     "06:56",
+     "18:37"
+    ],
+    [
+     "06:41",
+     "18:43"
+    ],
+    [
+     "06:19",
+     "18:45"
+    ],
+    [
+     "06:05",
+     "18:51"
+    ],
+    [
+     "06:03",
+     "19:01"
+    ],
+    [
+     "06:11",
+     "19:04"
+    ],
+    [
+     "06:19",
+     "18:55"
+    ],
+    [
+     "06:21",
+     "18:34"
+    ],
+    [
+     "06:22",
+     "18:13"
+    ],
+    [
+     "06:32",
+     "18:01"
+    ],
+    [
+     "06:48",
+     "18:06"
+    ]
+   ]
+  },
+  {
+   "name": "Maravanthe",
+   "km_from_start": 288.6,
+   "months": [
+    [
+     "06:58",
+     "18:22"
+    ],
+    [
+     "06:55",
+     "18:36"
+    ],
+    [
+     "06:40",
+     "18:42"
+    ],
+    [
+     "06:19",
+     "18:44"
+    ],
+    [
+     "06:05",
+     "18:50"
+    ],
+    [
+     "06:04",
+     "18:59"
+    ],
+    [
+     "06:11",
+     "19:03"
+    ],
+    [
+     "06:18",
+     "18:54"
+    ],
+    [
+     "06:20",
+     "18:33"
+    ],
+    [
+     "06:22",
+     "18:12"
+    ],
+    [
+     "06:31",
+     "18:01"
+    ],
+    [
+     "06:47",
+     "18:06"
+    ]
+   ]
+  },
+  {
+   "name": "Udupi",
+   "km_from_start": 340.7,
+   "months": [
+    [
+     "06:57",
+     "18:22"
+    ],
+    [
+     "06:54",
+     "18:36"
+    ],
+    [
+     "06:40",
+     "18:42"
+    ],
+    [
+     "06:19",
+     "18:44"
+    ],
+    [
+     "06:05",
+     "18:49"
+    ],
+    [
+     "06:04",
+     "18:58"
+    ],
+    [
+     "06:11",
+     "19:02"
+    ],
+    [
+     "06:18",
+     "18:53"
+    ],
+    [
+     "06:20",
+     "18:33"
+    ],
+    [
+     "06:21",
+     "18:12"
+    ],
+    [
+     "06:30",
+     "18:01"
+    ],
+    [
+     "06:46",
+     "18:06"
+    ]
+   ]
+  },
+  {
+   "name": "Mangaluru",
+   "km_from_start": 398.3,
+   "months": [
+    [
+     "06:56",
+     "18:23"
+    ],
+    [
+     "06:53",
+     "18:36"
+    ],
+    [
+     "06:39",
+     "18:41"
+    ],
+    [
+     "06:19",
+     "18:43"
+    ],
+    [
+     "06:05",
+     "18:48"
+    ],
+    [
+     "06:04",
+     "18:57"
+    ],
+    [
+     "06:12",
+     "19:01"
+    ],
+    [
+     "06:19",
+     "18:52"
+    ],
+    [
+     "06:19",
+     "18:32"
+    ],
+    [
+     "06:20",
+     "18:12"
+    ],
+    [
+     "06:29",
+     "18:02"
+    ],
+    [
+     "06:44",
+     "18:07"
+    ]
+   ]
+  }
+ ],
  "built": "2026-11-08",
  "mechanics": [
   {
@@ -5679,6 +6113,192 @@
   }
  ],
  "stays": [],
+ "cash": {
+  "by_halt": [
+   {
+    "near": "Panaji",
+    "km_from_start": 0.0,
+    "atms": 20,
+    "banks": 47,
+    "names": [
+     "Axis Bank",
+     "Axis Bank ATM",
+     "Axis Bank Branch",
+     "Bajaj Finserv",
+     "Bank of Baroda",
+     "Bank of Maharashtra"
+    ]
+   },
+   {
+    "near": "Between Panaji and Palolem",
+    "km_from_start": 26,
+    "atms": 14,
+    "banks": 35,
+    "names": [
+     "Allahabad Bank",
+     "Axis Bank",
+     "Axis Bank ATM",
+     "Axis Bank Branch",
+     "Bajaj Finserv",
+     "Bandhan Bank ATM"
+    ]
+   },
+   {
+    "near": "Palolem",
+    "km_from_start": 70.3,
+    "atms": 4,
+    "banks": 7,
+    "names": [
+     "Axis Bank",
+     "Axis Bank ATM",
+     "Axis Bank Branch",
+     "Bank of Baroda",
+     "Bank of Maharashtra",
+     "Canara Bank"
+    ]
+   },
+   {
+    "near": "Karwar",
+    "km_from_start": 99.9,
+    "atms": 11,
+    "banks": 7,
+    "names": [
+     "Axis Bank",
+     "Axis Bank ATM",
+     "Bank of Baroda",
+     "Bank of Maharashtra",
+     "Canara Bank",
+     "Federal Bank ATM"
+    ]
+   },
+   {
+    "near": "Between Karwar and Gokarna",
+    "km_from_start": 131,
+    "atms": 1,
+    "banks": 1,
+    "names": [
+     "Axis Bank Branch",
+     "Indian Overseas Bank - ATM"
+    ]
+   },
+   {
+    "near": "Gokarna",
+    "km_from_start": 156.6,
+    "atms": 2,
+    "banks": 3,
+    "names": [
+     "Axis Bank ATM",
+     "Bank of Baroda",
+     "ICICI Bank",
+     "ICICI Bank Mirjan-Branch & ATM"
+    ]
+   },
+   {
+    "near": "Between Gokarna and Murudeshwar",
+    "km_from_start": 187,
+    "atms": 4,
+    "banks": 11,
+    "names": [
+     "Axis Bank",
+     "Axis Bank ATM",
+     "Axis Bank Branch",
+     "Bank of Baroda",
+     "HDFC Bank",
+     "HDFC Bank ATM"
+    ]
+   },
+   {
+    "near": "Murudeshwar",
+    "km_from_start": 233.6,
+    "atms": 4,
+    "banks": 10,
+    "names": [
+     "Axis Bank",
+     "Axis Bank Branch",
+     "Bank of Baroda",
+     "Bhatkal Agriculture & Rural Development Co-Operative Bank-Murudeshwara",
+     "Federal Bank ATM",
+     "HDFC Bank"
+    ]
+   },
+   {
+    "near": "Between Murudeshwar and Maravanthe",
+    "km_from_start": 264,
+    "atms": 1,
+    "banks": 0,
+    "names": [
+     "Axis Bank"
+    ]
+   },
+   {
+    "near": "Maravanthe",
+    "km_from_start": 288.6,
+    "atms": 9,
+    "banks": 15,
+    "names": [
+     "Axis Bank",
+     "Axis Bank Branch",
+     "Bank of Baroda",
+     "Federal Bank",
+     "HDFC Bank",
+     "HDFC Bank ATM"
+    ]
+   },
+   {
+    "near": "Between Maravanthe and Udupi",
+    "km_from_start": 314,
+    "atms": 2,
+    "banks": 3,
+    "names": [
+     "Bank of Baroda",
+     "HDFC Bank",
+     "HDFC Bank ATM",
+     "Karnataka Bank - Kota Branch",
+     "Karnataka Bank ATM"
+    ]
+   },
+   {
+    "near": "Udupi",
+    "km_from_start": 340.7,
+    "atms": 17,
+    "banks": 37,
+    "names": [
+     "Annapoorna Renovation & Interior Designer Udupi",
+     "Axis Bank",
+     "Axis Bank ATM",
+     "Axis Bank Branch",
+     "Axis Bank Brank",
+     "Bajaj Finserv"
+    ]
+   },
+   {
+    "near": "Between Udupi and Mangaluru",
+    "km_from_start": 371,
+    "atms": 1,
+    "banks": 2,
+    "names": [
+     "Axis Bank ATM",
+     "Axis Bank Branch",
+     "HDFC Bank"
+    ]
+   },
+   {
+    "near": "Mangaluru",
+    "km_from_start": 398.3,
+    "atms": 30,
+    "banks": 64,
+    "names": [
+     "Axis Bank",
+     "Axis Bank ATM",
+     "Axis Bank Branch",
+     "Bajaj Finserv",
+     "Bank of Baroda",
+     "Bank of Maharashtra - Mangalore Branch"
+    ]
+   }
+  ],
+  "longest_gaps": []
+ },
  "mechanics_left_out": [
   {
    "near": "Mangaluru",

@@ -194,7 +194,7 @@ export function chunksOf(route: Route): AskChunk[] {
       kind: "video",
       title: v.title,
       href: `${at}/videos`,
-      text: `Rider's video of ${name}${v.stretch ? `, ${v.stretch}` : ""}: "${clean(v.title)}"${v.channel ? ` by ${v.channel}` : ""}${v.filmed ? `, filmed ${v.filmed}` : ""}${v.bike ? `, on a ${v.bike}` : ""}.`,
+      text: `Rider's video of ${name}${v.stretch ? `, ${v.stretch}` : ""}: "${clean(v.title)}"${v.channel ? ` by ${v.channel}` : ""}${v.filmed ? `, filmed ${v.filmed}` : ""}${v.posted ? `, posted on YouTube ${v.posted}` : ""}${v.bike ? `, on a ${v.bike}` : ""}.`,
     });
   }
 

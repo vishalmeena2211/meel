@@ -7893,6 +7893,386 @@
  "counts": {
   "facts": 267
  },
+ "daylight": [
+  {
+   "name": "Mumbai",
+   "km_from_start": 0.0,
+   "months": [
+    [
+     "07:14",
+     "18:20"
+    ],
+    [
+     "07:07",
+     "18:38"
+    ],
+    [
+     "06:48",
+     "18:48"
+    ],
+    [
+     "06:22",
+     "18:56"
+    ],
+    [
+     "06:04",
+     "19:05"
+    ],
+    [
+     "06:00",
+     "19:17"
+    ],
+    [
+     "06:09",
+     "19:20"
+    ],
+    [
+     "06:20",
+     "19:07"
+    ],
+    [
+     "06:26",
+     "18:42"
+    ],
+    [
+     "06:32",
+     "18:16"
+    ],
+    [
+     "06:46",
+     "18:01"
+    ],
+    [
+     "07:04",
+     "18:03"
+    ]
+   ]
+  },
+  {
+   "name": "Lonavala",
+   "km_from_start": 84.1,
+   "months": [
+    [
+     "07:12",
+     "18:18"
+    ],
+    [
+     "07:05",
+     "18:36"
+    ],
+    [
+     "06:46",
+     "18:46"
+    ],
+    [
+     "06:20",
+     "18:53"
+    ],
+    [
+     "06:02",
+     "19:03"
+    ],
+    [
+     "05:59",
+     "19:14"
+    ],
+    [
+     "06:07",
+     "19:17"
+    ],
+    [
+     "06:18",
+     "19:05"
+    ],
+    [
+     "06:24",
+     "18:40"
+    ],
+    [
+     "06:30",
+     "18:14"
+    ],
+    [
+     "06:43",
+     "17:59"
+    ],
+    [
+     "07:01",
+     "18:02"
+    ]
+   ]
+  },
+  {
+   "name": "Pune",
+   "km_from_start": 147.7,
+   "months": [
+    [
+     "07:09",
+     "18:17"
+    ],
+    [
+     "07:03",
+     "18:35"
+    ],
+    [
+     "06:44",
+     "18:44"
+    ],
+    [
+     "06:18",
+     "18:51"
+    ],
+    [
+     "06:01",
+     "19:00"
+    ],
+    [
+     "05:58",
+     "19:12"
+    ],
+    [
+     "06:06",
+     "19:15"
+    ],
+    [
+     "06:16",
+     "19:03"
+    ],
+    [
+     "06:22",
+     "18:38"
+    ],
+    [
+     "06:28",
+     "18:13"
+    ],
+    [
+     "06:41",
+     "17:58"
+    ],
+    [
+     "06:59",
+     "18:00"
+    ]
+   ]
+  },
+  {
+   "name": "Mulshi",
+   "km_from_start": 191.1,
+   "months": [
+    [
+     "07:11",
+     "18:18"
+    ],
+    [
+     "07:04",
+     "18:36"
+    ],
+    [
+     "06:45",
+     "18:46"
+    ],
+    [
+     "06:20",
+     "18:53"
+    ],
+    [
+     "06:02",
+     "19:02"
+    ],
+    [
+     "05:59",
+     "19:13"
+    ],
+    [
+     "06:07",
+     "19:16"
+    ],
+    [
+     "06:18",
+     "19:04"
+    ],
+    [
+     "06:23",
+     "18:39"
+    ],
+    [
+     "06:29",
+     "18:14"
+    ],
+    [
+     "06:42",
+     "17:59"
+    ],
+    [
+     "07:00",
+     "18:02"
+    ]
+   ]
+  },
+  {
+   "name": "Tamhini Ghat",
+   "km_from_start": 205.9,
+   "months": [
+    [
+     "07:11",
+     "18:19"
+    ],
+    [
+     "07:05",
+     "18:37"
+    ],
+    [
+     "06:46",
+     "18:46"
+    ],
+    [
+     "06:20",
+     "18:53"
+    ],
+    [
+     "06:03",
+     "19:02"
+    ],
+    [
+     "05:59",
+     "19:13"
+    ],
+    [
+     "06:08",
+     "19:16"
+    ],
+    [
+     "06:18",
+     "19:04"
+    ],
+    [
+     "06:24",
+     "18:40"
+    ],
+    [
+     "06:29",
+     "18:14"
+    ],
+    [
+     "06:43",
+     "18:00"
+    ],
+    [
+     "07:00",
+     "18:02"
+    ]
+   ]
+  },
+  {
+   "name": "Mahabaleshwar",
+   "km_from_start": 347.2,
+   "months": [
+    [
+     "07:09",
+     "18:19"
+    ],
+    [
+     "07:03",
+     "18:36"
+    ],
+    [
+     "06:45",
+     "18:45"
+    ],
+    [
+     "06:20",
+     "18:52"
+    ],
+    [
+     "06:03",
+     "19:00"
+    ],
+    [
+     "06:00",
+     "19:11"
+    ],
+    [
+     "06:08",
+     "19:14"
+    ],
+    [
+     "06:18",
+     "19:03"
+    ],
+    [
+     "06:23",
+     "18:39"
+    ],
+    [
+     "06:28",
+     "18:14"
+    ],
+    [
+     "06:41",
+     "17:59"
+    ],
+    [
+     "06:59",
+     "18:02"
+    ]
+   ]
+  },
+  {
+   "name": "Malshej Ghat",
+   "km_from_start": 580.2,
+   "months": [
+    [
+     "07:11",
+     "18:16"
+    ],
+    [
+     "07:04",
+     "18:34"
+    ],
+    [
+     "06:44",
+     "18:45"
+    ],
+    [
+     "06:18",
+     "18:52"
+    ],
+    [
+     "06:00",
+     "19:02"
+    ],
+    [
+     "05:56",
+     "19:14"
+    ],
+    [
+     "06:05",
+     "19:17"
+    ],
+    [
+     "06:16",
+     "19:04"
+    ],
+    [
+     "06:22",
+     "18:38"
+    ],
+    [
+     "06:28",
+     "18:12"
+    ],
+    [
+     "06:43",
+     "17:57"
+    ],
+    [
+     "07:01",
+     "17:59"
+    ]
+   ]
+  }
+ ],
  "built": "2026-11-08",
  "mechanics": [
   {
@@ -8874,6 +9254,163 @@
    }
   }
  ],
+ "cash": {
+  "by_halt": [
+   {
+    "near": "Mumbai",
+    "km_from_start": 0.0,
+    "atms": 91,
+    "banks": 235,
+    "names": [
+     "Aanasaheb Patil Mathadi Kamgar Sahakari Patpedhi-Vashi",
+     "Aavas Financiers Limited - Corporate office Kurla Mumbai",
+     "Abhyudaya Bank",
+     "Abhyudaya Bank Vashi",
+     "Abhyudaya Cooperative Bank ATM",
+     "Andhra Bank"
+    ]
+   },
+   {
+    "near": "Between Mumbai and Lonavala",
+    "km_from_start": 25,
+    "atms": 50,
+    "banks": 82,
+    "names": [
+     "Aavas Financiers Limited",
+     "Abhyudaya Cooperative Bank",
+     "Adai – New Panvel",
+     "Apna Sahakari Bank",
+     "Axis Bank",
+     "Axis Bank ATM"
+    ]
+   },
+   {
+    "near": "Lonavala",
+    "km_from_start": 84.1,
+    "atms": 14,
+    "banks": 22,
+    "names": [
+     "Axis Bank",
+     "Axis Bank ATM",
+     "Axis Bank Branch",
+     "Bank of Baroda",
+     "Bank of Maharashtra",
+     "Bank of Maharashtra - Kamshet-Pune Mumbai Rd. Branch"
+    ]
+   },
+   {
+    "near": "Between Lonavala and Pune",
+    "km_from_start": 112,
+    "atms": 13,
+    "banks": 15,
+    "names": [
+     "Axis Bank ATM",
+     "Bank of Baroda",
+     "Bank of Maharashtra - Somathane Phata Branch",
+     "Bank of Maharashtra - Talegaon Dabhade Branch",
+     "Bank of Maharashtra - Vadgaon Maval Branch",
+     "Bank of Maharashtra ATM"
+    ]
+   },
+   {
+    "near": "Mulshi",
+    "km_from_start": 191.1,
+    "atms": 3,
+    "banks": 12,
+    "names": [
+     "Axis Bank",
+     "Axis Bank ATM",
+     "Axis Bank Branch",
+     "Bank of Maharashtra",
+     "Bank of Maharashtra - Pune Branch",
+     "CSB BANK LTD"
+    ]
+   },
+   {
+    "near": "Between Tamhini Ghat and Mahabaleshwar",
+    "km_from_start": 250,
+    "atms": 7,
+    "banks": 19,
+    "names": [
+     "Axis Bank ATM",
+     "Axis Bank Branch",
+     "Bank of Baroda",
+     "Bank of Maharashtra",
+     "Bank of Maharashtra - Mahad Branch",
+     "Bank of Maharashtra - Mangaon Branch"
+    ]
+   },
+   {
+    "near": "Mahabaleshwar",
+    "km_from_start": 347.2,
+    "atms": 4,
+    "banks": 2,
+    "names": [
+     "Bank of Maharashtra ATM",
+     "HDFC Bank",
+     "HDFC Bank ATM",
+     "IDBI BANK (Panchgani branch)"
+    ]
+   },
+   {
+    "near": "Between Mahabaleshwar and Pune",
+    "km_from_start": 376,
+    "atms": 16,
+    "banks": 24,
+    "names": [
+     "Axis Bank",
+     "Axis Bank ATM",
+     "Axis Bank Branch",
+     "Bank of Baroda",
+     "Bank of Maharashtra - Khandala (Satara) Branch",
+     "Bank of Maharashtra - Wai Branch"
+    ]
+   },
+   {
+    "near": "Pune",
+    "km_from_start": 463.7,
+    "atms": 211,
+    "banks": 332,
+    "names": [
+     "AMS Bank",
+     "Aavas Financiers Limited",
+     "Abhyudaya Co-operative Bank - Sinhagad Road Branch",
+     "Ahmednagar Shahar Sahakari Bank Narayan Peth Branch",
+     "Ahmednagar Shahar Sahakari Bank Singhgad Road",
+     "Alankit"
+    ]
+   },
+   {
+    "near": "Between Pune and Malshej Ghat",
+    "km_from_start": 490,
+    "atms": 26,
+    "banks": 50,
+    "names": [
+     "Aavas Financiers Limited",
+     "Axis Bank",
+     "Axis Bank ATM",
+     "Axis Bank Branch",
+     "Bajaj Finserv Service Branch",
+     "Bank of Baroda"
+    ]
+   },
+   {
+    "near": "Malshej Ghat",
+    "km_from_start": 580.2,
+    "atms": 2,
+    "banks": 5,
+    "names": [
+     "Bank of Maharashtra - Junnar Branch",
+     "Bank of Maharashtra ATM",
+     "HDFC Bank",
+     "IndusInd Bank",
+     "Kotak Mahindra",
+     "State Bank Of India"
+    ]
+   }
+  ],
+  "longest_gaps": []
+ },
  "mechanics_left_out": [
   {
    "near": "Pune",

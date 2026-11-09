@@ -3802,6 +3802,278 @@
  "counts": {
   "facts": 102
  },
+ "daylight": [
+  {
+   "name": "Guwahati",
+   "km_from_start": 0.0,
+   "months": [
+    [
+     "06:12",
+     "16:52"
+    ],
+    [
+     "05:59",
+     "17:15"
+    ],
+    [
+     "05:34",
+     "17:32"
+    ],
+    [
+     "05:01",
+     "17:46"
+    ],
+    [
+     "04:37",
+     "18:01"
+    ],
+    [
+     "04:30",
+     "18:16"
+    ],
+    [
+     "04:40",
+     "18:18"
+    ],
+    [
+     "04:55",
+     "18:01"
+    ],
+    [
+     "05:08",
+     "17:29"
+    ],
+    [
+     "05:21",
+     "16:56"
+    ],
+    [
+     "05:41",
+     "16:34"
+    ],
+    [
+     "06:03",
+     "16:33"
+    ]
+   ]
+  },
+  {
+   "name": "Kohora",
+   "km_from_start": 214.0,
+   "months": [
+    [
+     "06:06",
+     "16:44"
+    ],
+    [
+     "05:53",
+     "17:08"
+    ],
+    [
+     "05:27",
+     "17:25"
+    ],
+    [
+     "04:54",
+     "17:40"
+    ],
+    [
+     "04:29",
+     "17:55"
+    ],
+    [
+     "04:22",
+     "18:10"
+    ],
+    [
+     "04:32",
+     "18:12"
+    ],
+    [
+     "04:48",
+     "17:54"
+    ],
+    [
+     "05:01",
+     "17:22"
+    ],
+    [
+     "05:15",
+     "16:49"
+    ],
+    [
+     "05:35",
+     "16:27"
+    ],
+    [
+     "05:57",
+     "16:26"
+    ]
+   ]
+  },
+  {
+   "name": "Jorhat",
+   "km_from_start": 301.6,
+   "months": [
+    [
+     "06:03",
+     "16:41"
+    ],
+    [
+     "05:50",
+     "17:05"
+    ],
+    [
+     "05:24",
+     "17:22"
+    ],
+    [
+     "04:50",
+     "17:37"
+    ],
+    [
+     "04:26",
+     "17:52"
+    ],
+    [
+     "04:19",
+     "18:07"
+    ],
+    [
+     "04:29",
+     "18:09"
+    ],
+    [
+     "04:45",
+     "17:51"
+    ],
+    [
+     "04:58",
+     "17:19"
+    ],
+    [
+     "05:12",
+     "16:46"
+    ],
+    [
+     "05:32",
+     "16:24"
+    ],
+    [
+     "05:54",
+     "16:22"
+    ]
+   ]
+  },
+  {
+   "name": "Nimati Ghat",
+   "km_from_start": 316.0,
+   "months": [
+    [
+     "06:03",
+     "16:40"
+    ],
+    [
+     "05:50",
+     "17:04"
+    ],
+    [
+     "05:24",
+     "17:21"
+    ],
+    [
+     "04:50",
+     "17:36"
+    ],
+    [
+     "04:26",
+     "17:53"
+    ],
+    [
+     "04:19",
+     "18:08"
+    ],
+    [
+     "04:28",
+     "18:09"
+    ],
+    [
+     "04:44",
+     "17:51"
+    ],
+    [
+     "04:58",
+     "17:19"
+    ],
+    [
+     "05:12",
+     "16:46"
+    ],
+    [
+     "05:32",
+     "16:23"
+    ],
+    [
+     "05:54",
+     "16:22"
+    ]
+   ]
+  },
+  {
+   "name": "Kamalabari",
+   "km_from_start": 333.4,
+   "months": [
+    [
+     "06:04",
+     "16:40"
+    ],
+    [
+     "05:51",
+     "17:05"
+    ],
+    [
+     "05:24",
+     "17:22"
+    ],
+    [
+     "04:50",
+     "17:37"
+    ],
+    [
+     "04:26",
+     "17:53"
+    ],
+    [
+     "04:19",
+     "18:08"
+    ],
+    [
+     "04:28",
+     "18:10"
+    ],
+    [
+     "04:45",
+     "17:52"
+    ],
+    [
+     "04:58",
+     "17:19"
+    ],
+    [
+     "05:12",
+     "16:46"
+    ],
+    [
+     "05:33",
+     "16:23"
+    ],
+    [
+     "05:55",
+     "16:22"
+    ]
+   ]
+  }
+ ],
  "built": "2026-11-08",
  "mechanics": [
   {
@@ -4031,6 +4303,94 @@
    }
   }
  ],
+ "cash": {
+  "by_halt": [
+   {
+    "near": "Guwahati",
+    "km_from_start": 0.0,
+    "atms": 48,
+    "banks": 88,
+    "names": [
+     "Adda247 Guwahati",
+     "Alankit",
+     "Allahabad Bank - Pan Bazar Branch",
+     "Allahabad Bank ATM",
+     "Allahabad Bank Guwahati",
+     "Apex Bank ATM"
+    ]
+   },
+   {
+    "near": "Between Guwahati and Kohora",
+    "km_from_start": 26,
+    "atms": 9,
+    "banks": 17,
+    "names": [
+     "Assam Gramin Vikash Bank Telahi Branch",
+     "Axis Bank",
+     "Axis Bank ATM",
+     "Axis Bank Branch",
+     "Bank of Baroda",
+     "Corporation Bank"
+    ]
+   },
+   {
+    "near": "Kohora",
+    "km_from_start": 214.0,
+    "atms": 2,
+    "banks": 4,
+    "names": [
+     "Axis Bank ATM",
+     "Axis Bank Branch",
+     "Bank of Baroda",
+     "HDFC Bank ATM",
+     "ICICI Bank",
+     "Punjab National Bank"
+    ]
+   },
+   {
+    "near": "Between Kohora and Jorhat",
+    "km_from_start": 252,
+    "atms": 2,
+    "banks": 2,
+    "names": [
+     "HDFC Bank ATM",
+     "ICICI Bank",
+     "Punjab National Bank",
+     "Punjab National Bank - ATM"
+    ]
+   },
+   {
+    "near": "Jorhat",
+    "km_from_start": 301.6,
+    "atms": 8,
+    "banks": 21,
+    "names": [
+     "Alankit",
+     "Axis Bank",
+     "Axis Bank ATM",
+     "Axis Bank Branch",
+     "Bandhan Bank",
+     "Bank of Baroda"
+    ]
+   },
+   {
+    "near": "Kamalabari",
+    "km_from_start": 333.4,
+    "atms": 0,
+    "banks": 1,
+    "names": [
+     "Punjab National Bank"
+    ]
+   }
+  ],
+  "longest_gaps": [
+   {
+    "from": "Between Guwahati and Kohora",
+    "to": "Kohora",
+    "gap_km": 65
+   }
+  ]
+ },
  "mechanics_left_out": [
   {
    "near": "Guwahati",

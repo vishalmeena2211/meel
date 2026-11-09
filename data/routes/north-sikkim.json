@@ -6843,6 +6843,386 @@
  "counts": {
   "facts": 103
  },
+ "daylight": [
+  {
+   "name": "Gangtok",
+   "km_from_start": 0.0,
+   "months": [
+    [
+     "06:27",
+     "17:02"
+    ],
+    [
+     "06:13",
+     "17:26"
+    ],
+    [
+     "05:46",
+     "17:44"
+    ],
+    [
+     "05:12",
+     "17:59"
+    ],
+    [
+     "04:47",
+     "18:16"
+    ],
+    [
+     "04:40",
+     "18:31"
+    ],
+    [
+     "04:50",
+     "18:33"
+    ],
+    [
+     "05:06",
+     "18:15"
+    ],
+    [
+     "05:20",
+     "17:42"
+    ],
+    [
+     "05:34",
+     "17:08"
+    ],
+    [
+     "05:56",
+     "16:45"
+    ],
+    [
+     "06:18",
+     "16:44"
+    ]
+   ]
+  },
+  {
+   "name": "Mangan",
+   "km_from_start": 65.8,
+   "months": [
+    [
+     "06:27",
+     "17:02"
+    ],
+    [
+     "06:14",
+     "17:26"
+    ],
+    [
+     "05:47",
+     "17:44"
+    ],
+    [
+     "05:12",
+     "18:00"
+    ],
+    [
+     "04:47",
+     "18:16"
+    ],
+    [
+     "04:40",
+     "18:32"
+    ],
+    [
+     "04:50",
+     "18:34"
+    ],
+    [
+     "05:06",
+     "18:15"
+    ],
+    [
+     "05:20",
+     "17:42"
+    ],
+    [
+     "05:35",
+     "17:08"
+    ],
+    [
+     "05:56",
+     "16:45"
+    ],
+    [
+     "06:18",
+     "16:43"
+    ]
+   ]
+  },
+  {
+   "name": "Chungthang",
+   "km_from_start": 95.6,
+   "months": [
+    [
+     "06:27",
+     "17:01"
+    ],
+    [
+     "06:13",
+     "17:26"
+    ],
+    [
+     "05:46",
+     "17:44"
+    ],
+    [
+     "05:12",
+     "18:00"
+    ],
+    [
+     "04:47",
+     "18:16"
+    ],
+    [
+     "04:39",
+     "18:32"
+    ],
+    [
+     "04:49",
+     "18:33"
+    ],
+    [
+     "05:06",
+     "18:15"
+    ],
+    [
+     "05:20",
+     "17:42"
+    ],
+    [
+     "05:35",
+     "17:07"
+    ],
+    [
+     "05:56",
+     "16:44"
+    ],
+    [
+     "06:18",
+     "16:43"
+    ]
+   ]
+  },
+  {
+   "name": "Lachen",
+   "km_from_start": 124.2,
+   "months": [
+    [
+     "06:28",
+     "17:01"
+    ],
+    [
+     "06:14",
+     "17:26"
+    ],
+    [
+     "05:47",
+     "17:44"
+    ],
+    [
+     "05:12",
+     "18:00"
+    ],
+    [
+     "04:47",
+     "18:17"
+    ],
+    [
+     "04:39",
+     "18:32"
+    ],
+    [
+     "04:49",
+     "18:34"
+    ],
+    [
+     "05:06",
+     "18:15"
+    ],
+    [
+     "05:20",
+     "17:42"
+    ],
+    [
+     "05:35",
+     "17:08"
+    ],
+    [
+     "05:57",
+     "16:45"
+    ],
+    [
+     "06:19",
+     "16:43"
+    ]
+   ]
+  },
+  {
+   "name": "Thangu",
+   "km_from_start": 154.6,
+   "months": [
+    [
+     "06:28",
+     "17:01"
+    ],
+    [
+     "06:14",
+     "17:26"
+    ],
+    [
+     "05:47",
+     "17:44"
+    ],
+    [
+     "05:12",
+     "18:00"
+    ],
+    [
+     "04:47",
+     "18:17"
+    ],
+    [
+     "04:39",
+     "18:33"
+    ],
+    [
+     "04:49",
+     "18:34"
+    ],
+    [
+     "05:06",
+     "18:16"
+    ],
+    [
+     "05:20",
+     "17:42"
+    ],
+    [
+     "05:35",
+     "17:08"
+    ],
+    [
+     "05:57",
+     "16:44"
+    ],
+    [
+     "06:19",
+     "16:43"
+    ]
+   ]
+  },
+  {
+   "name": "Lachung",
+   "km_from_start": 304.1,
+   "months": [
+    [
+     "06:27",
+     "17:01"
+    ],
+    [
+     "06:13",
+     "17:25"
+    ],
+    [
+     "05:46",
+     "17:43"
+    ],
+    [
+     "05:11",
+     "17:59"
+    ],
+    [
+     "04:46",
+     "18:16"
+    ],
+    [
+     "04:39",
+     "18:31"
+    ],
+    [
+     "04:49",
+     "18:33"
+    ],
+    [
+     "05:05",
+     "18:15"
+    ],
+    [
+     "05:20",
+     "17:41"
+    ],
+    [
+     "05:34",
+     "17:07"
+    ],
+    [
+     "05:56",
+     "16:44"
+    ],
+    [
+     "06:18",
+     "16:42"
+    ]
+   ]
+  },
+  {
+   "name": "Yumthang",
+   "km_from_start": 326.6,
+   "months": [
+    [
+     "06:27",
+     "17:01"
+    ],
+    [
+     "06:13",
+     "17:25"
+    ],
+    [
+     "05:46",
+     "17:43"
+    ],
+    [
+     "05:11",
+     "17:59"
+    ],
+    [
+     "04:46",
+     "18:16"
+    ],
+    [
+     "04:39",
+     "18:32"
+    ],
+    [
+     "04:48",
+     "18:33"
+    ],
+    [
+     "05:05",
+     "18:15"
+    ],
+    [
+     "05:20",
+     "17:41"
+    ],
+    [
+     "05:34",
+     "17:07"
+    ],
+    [
+     "05:56",
+     "16:44"
+    ],
+    [
+     "06:18",
+     "16:42"
+    ]
+   ]
+  }
+ ],
  "built": "2026-11-08",
  "mechanics": [
   {
@@ -7632,6 +8012,59 @@
    }
   }
  ],
+ "cash": {
+  "by_halt": [
+   {
+    "near": "Gangtok",
+    "km_from_start": 0.0,
+    "atms": 8,
+    "banks": 19,
+    "names": [
+     "Axis Bank",
+     "Axis Bank ATM",
+     "Axis Bank Branch",
+     "Bandhan Bank ATM",
+     "Bank of Baroda",
+     "Bank of Maharashtra - Gangtok Branch"
+    ]
+   },
+   {
+    "near": "Mangan",
+    "km_from_start": 65.8,
+    "atms": 1,
+    "banks": 5,
+    "names": [
+     "Axis Bank Branch",
+     "Central Bank of India",
+     "HDFC Bank ATM",
+     "State Bank of India",
+     "State Bank of Sikkim"
+    ]
+   },
+   {
+    "near": "Between Thangu and Chungthang",
+    "km_from_start": 258,
+    "atms": 1,
+    "banks": 1,
+    "names": [
+     "Axis Bank ATM",
+     "Axis Bank Branch"
+    ]
+   }
+  ],
+  "longest_gaps": [
+   {
+    "from": "Mangan",
+    "to": "Between Thangu and Chungthang",
+    "gap_km": 192
+   },
+   {
+    "from": "Between Thangu and Chungthang",
+    "to": "end of route",
+    "gap_km": 68
+   }
+  ]
+ },
  "mechanics_left_out": [],
  "stays_left_out": [
   {
@@ -7641,6 +8074,104 @@
   {
    "near": "Lachung",
    "count": 64
+  }
+ ],
+ "photos": [
+  {
+   "near": "Lachen",
+   "kind": "place",
+   "km_from_start": 124.2,
+   "title": "A women weaving at Lachen",
+   "page": "https://commons.wikimedia.org/wiki/File:A_women_weaving_at_Lachen.jpg",
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f6/A_women_weaving_at_Lachen.jpg/500px-A_women_weaving_at_Lachen.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "taken": "2026-03-30",
+   "author": "Jirah P Lepcha",
+   "licence": "CC BY-SA 4.0",
+   "licence_url": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  {
+   "near": "Lachen",
+   "kind": "place",
+   "km_from_start": 124.2,
+   "title": "Lachen Monastery in Lachen village, North Sikkim, India 01",
+   "page": "https://commons.wikimedia.org/wiki/File:Lachen_Monastery_in_Lachen_village,_North_Sikkim,_India_01.jpg",
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2e/Lachen_Monastery_in_Lachen_village%2C_North_Sikkim%2C_India_01.jpg/500px-Lachen_Monastery_in_Lachen_village%2C_North_Sikkim%2C_India_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "taken": "2025-04-15",
+   "author": "Amitabha Gupta",
+   "licence": "CC BY 4.0",
+   "licence_url": "https://creativecommons.org/licenses/by/4.0"
+  },
+  {
+   "near": "Gurudongmar Lake",
+   "kind": "pass",
+   "km_from_start": 189.7,
+   "title": "Sanglaphu Peak as seen from the right bank of Gurudongmar Lake, North Sikkim, India 01",
+   "page": "https://commons.wikimedia.org/wiki/File:Sanglaphu_Peak_as_seen_from_the_right_bank_of_Gurudongmar_Lake,_North_Sikkim,_India_01.jpg",
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/77/Sanglaphu_Peak_as_seen_from_the_right_bank_of_Gurudongmar_Lake%2C_North_Sikkim%2C_India_01.jpg/500px-Sanglaphu_Peak_as_seen_from_the_right_bank_of_Gurudongmar_Lake%2C_North_Sikkim%2C_India_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "taken": "2025-04-16",
+   "author": "Amitabha Gupta",
+   "licence": "CC BY 4.0",
+   "licence_url": "https://creativecommons.org/licenses/by/4.0"
+  },
+  {
+   "near": "Gurudongmar Lake",
+   "kind": "pass",
+   "km_from_start": 189.7,
+   "title": "Gurudongmar Lake, India (Unsplash)",
+   "page": "https://commons.wikimedia.org/wiki/File:Gurudongmar_Lake,_India_(Unsplash).jpg",
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dc/Gurudongmar_Lake%2C_India_%28Unsplash%29.jpg/500px-Gurudongmar_Lake%2C_India_%28Unsplash%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "taken": "2016-07-03",
+   "author": "Sudarshan Bhat sudarshanpbhat",
+   "licence": "CC0",
+   "licence_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+  },
+  {
+   "near": "Lachung",
+   "kind": "place",
+   "km_from_start": 304.1,
+   "title": "Open wing basking position of Chonala masoni (Elwes, 1882) - Chumbi Wall WLB IMG 6194",
+   "page": "https://commons.wikimedia.org/wiki/File:Open_wing_basking_position_of_Chonala_masoni_(Elwes,_1882)_-_Chumbi_Wall_WLB_IMG_6194.jpg",
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f6/Open_wing_basking_position_of_Chonala_masoni_%28Elwes%2C_1882%29_-_Chumbi_Wall_WLB_IMG_6194.jpg/500px-Open_wing_basking_position_of_Chonala_masoni_%28Elwes%2C_1882%29_-_Chumbi_Wall_WLB_IMG_6194.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "taken": "2025-09-12",
+   "author": "Thamblyok",
+   "licence": "CC BY-SA 4.0",
+   "licence_url": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  {
+   "near": "Lachung",
+   "kind": "place",
+   "km_from_start": 304.1,
+   "title": "Lachung Monastery at Lachung Valley in North Sikkim, India 02",
+   "page": "https://commons.wikimedia.org/wiki/File:Lachung_Monastery_at_Lachung_Valley_in_North_Sikkim,_India_02.jpg",
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fc/Lachung_Monastery_at_Lachung_Valley_in_North_Sikkim%2C_India_02.jpg/500px-Lachung_Monastery_at_Lachung_Valley_in_North_Sikkim%2C_India_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "taken": "2025-04-17",
+   "author": "Amitabha Gupta",
+   "licence": "CC BY 4.0",
+   "licence_url": "https://creativecommons.org/licenses/by/4.0"
+  },
+  {
+   "near": "Yumthang",
+   "kind": "place",
+   "km_from_start": 326.6,
+   "title": "Yumthang Valley at North Sikkim, India 03",
+   "page": "https://commons.wikimedia.org/wiki/File:Yumthang_Valley_at_North_Sikkim,_India_03.jpg",
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/22/Yumthang_Valley_at_North_Sikkim%2C_India_03.jpg/500px-Yumthang_Valley_at_North_Sikkim%2C_India_03.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "taken": "2025-04-17",
+   "author": "Amitabha Gupta",
+   "licence": "CC BY 4.0",
+   "licence_url": "https://creativecommons.org/licenses/by/4.0"
+  },
+  {
+   "near": "Yumthang",
+   "kind": "place",
+   "km_from_start": 326.6,
+   "title": "Bridge over the river in Yumthang Valley, North Sikkim, India",
+   "page": "https://commons.wikimedia.org/wiki/File:Bridge_over_the_river_in_Yumthang_Valley,_North_Sikkim,_India.jpg",
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2d/Bridge_over_the_river_in_Yumthang_Valley%2C_North_Sikkim%2C_India.jpg/500px-Bridge_over_the_river_in_Yumthang_Valley%2C_North_Sikkim%2C_India.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "taken": "2020-12-14",
+   "author": "Mananjpatel1996",
+   "licence": "CC BY-SA 4.0",
+   "licence_url": "https://creativecommons.org/licenses/by-sa/4.0"
   }
  ]
 }

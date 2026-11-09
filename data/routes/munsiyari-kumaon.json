@@ -10660,6 +10660,440 @@
  "counts": {
   "facts": 115
  },
+ "daylight": [
+  {
+   "name": "Kathgodam",
+   "km_from_start": 0.0,
+   "months": [
+    [
+     "07:07",
+     "17:34"
+    ],
+    [
+     "06:52",
+     "18:00"
+    ],
+    [
+     "06:23",
+     "18:20"
+    ],
+    [
+     "05:47",
+     "18:37"
+    ],
+    [
+     "05:20",
+     "18:56"
+    ],
+    [
+     "05:12",
+     "19:12"
+    ],
+    [
+     "05:22",
+     "19:13"
+    ],
+    [
+     "05:40",
+     "18:54"
+    ],
+    [
+     "05:56",
+     "18:19"
+    ],
+    [
+     "06:12",
+     "17:43"
+    ],
+    [
+     "06:35",
+     "17:18"
+    ],
+    [
+     "06:58",
+     "17:16"
+    ]
+   ]
+  },
+  {
+   "name": "Nainital",
+   "km_from_start": 41.5,
+   "months": [
+    [
+     "07:07",
+     "17:34"
+    ],
+    [
+     "06:52",
+     "18:01"
+    ],
+    [
+     "06:23",
+     "18:20"
+    ],
+    [
+     "05:47",
+     "18:38"
+    ],
+    [
+     "05:20",
+     "18:56"
+    ],
+    [
+     "05:12",
+     "19:13"
+    ],
+    [
+     "05:22",
+     "19:14"
+    ],
+    [
+     "05:40",
+     "18:54"
+    ],
+    [
+     "05:56",
+     "18:19"
+    ],
+    [
+     "06:13",
+     "17:43"
+    ],
+    [
+     "06:36",
+     "17:18"
+    ],
+    [
+     "06:59",
+     "17:16"
+    ]
+   ]
+  },
+  {
+   "name": "Almora",
+   "km_from_start": 107.0,
+   "months": [
+    [
+     "07:07",
+     "17:33"
+    ],
+    [
+     "06:52",
+     "18:00"
+    ],
+    [
+     "06:23",
+     "18:19"
+    ],
+    [
+     "05:46",
+     "18:37"
+    ],
+    [
+     "05:19",
+     "18:56"
+    ],
+    [
+     "05:10",
+     "19:12"
+    ],
+    [
+     "05:21",
+     "19:14"
+    ],
+    [
+     "05:39",
+     "18:54"
+    ],
+    [
+     "05:55",
+     "18:18"
+    ],
+    [
+     "06:12",
+     "17:42"
+    ],
+    [
+     "06:35",
+     "17:17"
+    ],
+    [
+     "06:59",
+     "17:14"
+    ]
+   ]
+  },
+  {
+   "name": "Binsar",
+   "km_from_start": 125.0,
+   "months": [
+    [
+     "07:07",
+     "17:33"
+    ],
+    [
+     "06:52",
+     "17:59"
+    ],
+    [
+     "06:23",
+     "18:19"
+    ],
+    [
+     "05:46",
+     "18:37"
+    ],
+    [
+     "05:19",
+     "18:56"
+    ],
+    [
+     "05:10",
+     "19:12"
+    ],
+    [
+     "05:20",
+     "19:14"
+    ],
+    [
+     "05:39",
+     "18:53"
+    ],
+    [
+     "05:55",
+     "18:18"
+    ],
+    [
+     "06:12",
+     "17:42"
+    ],
+    [
+     "06:35",
+     "17:17"
+    ],
+    [
+     "06:59",
+     "17:14"
+    ]
+   ]
+  },
+  {
+   "name": "Kausani",
+   "km_from_start": 218.5,
+   "months": [
+    [
+     "07:07",
+     "17:34"
+    ],
+    [
+     "06:52",
+     "18:00"
+    ],
+    [
+     "06:23",
+     "18:20"
+    ],
+    [
+     "05:47",
+     "18:38"
+    ],
+    [
+     "05:20",
+     "18:56"
+    ],
+    [
+     "05:12",
+     "19:12"
+    ],
+    [
+     "05:22",
+     "19:14"
+    ],
+    [
+     "05:40",
+     "18:54"
+    ],
+    [
+     "05:56",
+     "18:19"
+    ],
+    [
+     "06:12",
+     "17:43"
+    ],
+    [
+     "06:36",
+     "17:18"
+    ],
+    [
+     "06:59",
+     "17:16"
+    ]
+   ]
+  },
+  {
+   "name": "Bageshwar",
+   "km_from_start": 363.8,
+   "months": [
+    [
+     "07:07",
+     "17:32"
+    ],
+    [
+     "06:52",
+     "17:59"
+    ],
+    [
+     "06:22",
+     "18:19"
+    ],
+    [
+     "05:45",
+     "18:37"
+    ],
+    [
+     "05:18",
+     "18:56"
+    ],
+    [
+     "05:09",
+     "19:12"
+    ],
+    [
+     "05:20",
+     "19:14"
+    ],
+    [
+     "05:38",
+     "18:53"
+    ],
+    [
+     "05:55",
+     "18:18"
+    ],
+    [
+     "06:12",
+     "17:41"
+    ],
+    [
+     "06:35",
+     "17:16"
+    ],
+    [
+     "06:59",
+     "17:13"
+    ]
+   ]
+  },
+  {
+   "name": "Thal",
+   "km_from_start": 430.7,
+   "months": [
+    [
+     "07:05",
+     "17:31"
+    ],
+    [
+     "06:50",
+     "17:57"
+    ],
+    [
+     "06:21",
+     "18:17"
+    ],
+    [
+     "05:44",
+     "18:36"
+    ],
+    [
+     "05:17",
+     "18:54"
+    ],
+    [
+     "05:08",
+     "19:11"
+    ],
+    [
+     "05:18",
+     "19:12"
+    ],
+    [
+     "05:37",
+     "18:52"
+    ],
+    [
+     "05:53",
+     "18:16"
+    ],
+    [
+     "06:10",
+     "17:40"
+    ],
+    [
+     "06:34",
+     "17:15"
+    ],
+    [
+     "06:57",
+     "17:12"
+    ]
+   ]
+  },
+  {
+   "name": "Munsiyari",
+   "km_from_start": 511.2,
+   "months": [
+    [
+     "07:06",
+     "17:30"
+    ],
+    [
+     "06:50",
+     "17:57"
+    ],
+    [
+     "06:20",
+     "18:17"
+    ],
+    [
+     "05:43",
+     "18:35"
+    ],
+    [
+     "05:16",
+     "18:54"
+    ],
+    [
+     "05:07",
+     "19:11"
+    ],
+    [
+     "05:17",
+     "19:12"
+    ],
+    [
+     "05:36",
+     "18:52"
+    ],
+    [
+     "05:53",
+     "18:16"
+    ],
+    [
+     "06:10",
+     "17:39"
+    ],
+    [
+     "06:34",
+     "17:14"
+    ],
+    [
+     "06:57",
+     "17:11"
+    ]
+   ]
+  }
+ ],
  "built": "2026-11-08",
  "mechanics": [
   {
@@ -11641,6 +12075,131 @@
    }
   }
  ],
+ "cash": {
+  "by_halt": [
+   {
+    "near": "Kathgodam",
+    "km_from_start": 0.0,
+    "atms": 0,
+    "banks": 5,
+    "names": [
+     "Bank of Baroda",
+     "ICICI Bank",
+     "State Bank of India",
+     "State Bank of India-Ranibagh",
+     "The Nainital Bank-Kathgodam"
+    ]
+   },
+   {
+    "near": "Nainital",
+    "km_from_start": 41.5,
+    "atms": 3,
+    "banks": 13,
+    "names": [
+     "Axis Bank ATM",
+     "Axis Bank Branch",
+     "Bank of Baroda",
+     "HDFC Bank",
+     "ICICI Bank",
+     "Indian Overseas Bank"
+    ]
+   },
+   {
+    "near": "Almora",
+    "km_from_start": 107.0,
+    "atms": 0,
+    "banks": 7,
+    "names": [
+     "Almora Urban Cooperative Bank",
+     "Almora Zilla Sahakari Bank",
+     "ICICI Bank Limited",
+     "Indian Bank",
+     "Punjab National Bank",
+     "State Bank of India, Dharanula"
+    ]
+   },
+   {
+    "near": "Binsar",
+    "km_from_start": 125.0,
+    "atms": 1,
+    "banks": 4,
+    "names": [
+     "Axis Bank ATM",
+     "Axis Bank Branch",
+     "Bank of Baroda",
+     "HDB Financial Services Limited",
+     "IndusInd Bank"
+    ]
+   },
+   {
+    "near": "Between Binsar and Kausani",
+    "km_from_start": 178,
+    "atms": 0,
+    "banks": 1,
+    "names": [
+     "Bank of Baroda"
+    ]
+   },
+   {
+    "near": "Between Kausani and Bageshwar",
+    "km_from_start": 291,
+    "atms": 1,
+    "banks": 4,
+    "names": [
+     "Bank of Baroda",
+     "HDFC Bank",
+     "HDFC Bank ATM",
+     "ICICI Bank",
+     "Punjab National Bank"
+    ]
+   },
+   {
+    "near": "Bageshwar",
+    "km_from_start": 363.8,
+    "atms": 1,
+    "banks": 7,
+    "names": [
+     "Axis Bank ATM",
+     "Axis Bank Branch",
+     "Bank of Baroda",
+     "HDFC Bank",
+     "Indian Overseas Bank",
+     "IndusInd Bank"
+    ]
+   },
+   {
+    "near": "Thal",
+    "km_from_start": 430.7,
+    "atms": 0,
+    "banks": 1,
+    "names": [
+     "Pithoragarh Geela Sahakari Bank-Thal"
+    ]
+   },
+   {
+    "near": "Munsiyari",
+    "km_from_start": 511.2,
+    "atms": 0,
+    "banks": 2,
+    "names": [
+     "Punjab National Bank (PNB)",
+     "State Bank of India"
+    ]
+   }
+  ],
+  "longest_gaps": [
+   {
+    "from": "Between Binsar and Kausani",
+    "to": "Between Kausani and Bageshwar",
+    "gap_km": 113
+   },
+   {
+    "from": "Thal",
+    "to": "Munsiyari",
+    "gap_km": 71
+   }
+  ]
+ },
  "mechanics_left_out": [],
  "stays_left_out": [
   {
@@ -11662,6 +12221,32 @@
   {
    "near": "Binsar",
    "count": 60
+  }
+ ],
+ "photos": [
+  {
+   "near": "Nainital",
+   "kind": "place",
+   "km_from_start": 41.5,
+   "title": "Durga Lal Shah Municipal Public Library, Nainital, Uttarakhand, India",
+   "page": "https://commons.wikimedia.org/wiki/File:Durga_Lal_Shah_Municipal_Public_Library,_Nainital,_Uttarakhand,_India.jpg",
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8e/Durga_Lal_Shah_Municipal_Public_Library%2C_Nainital%2C_Uttarakhand%2C_India.jpg/500px-Durga_Lal_Shah_Municipal_Public_Library%2C_Nainital%2C_Uttarakhand%2C_India.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "taken": "2021-04-30",
+   "author": "Photographer Praveen Singh Bisht",
+   "licence": "CC BY-SA 4.0",
+   "licence_url": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  {
+   "near": "Nainital",
+   "kind": "place",
+   "km_from_start": 41.5,
+   "title": "View of Nainital from Snow View Point",
+   "page": "https://commons.wikimedia.org/wiki/File:View_of_Nainital_from_Snow_View_Point.jpg",
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d5/View_of_Nainital_from_Snow_View_Point.jpg/500px-View_of_Nainital_from_Snow_View_Point.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "taken": "2019-01-06",
+   "author": "Slyronit",
+   "licence": "CC BY-SA 4.0",
+   "licence_url": "https://creativecommons.org/licenses/by-sa/4.0"
   }
  ]
 }

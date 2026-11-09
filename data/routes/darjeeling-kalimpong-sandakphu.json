@@ -11634,6 +11634,278 @@
  "counts": {
   "facts": 100
  },
+ "daylight": [
+  {
+   "name": "Siliguri",
+   "km_from_start": 0.0,
+   "months": [
+    [
+     "06:26",
+     "17:04"
+    ],
+    [
+     "06:13",
+     "17:28"
+    ],
+    [
+     "05:47",
+     "17:45"
+    ],
+    [
+     "05:13",
+     "18:00"
+    ],
+    [
+     "04:49",
+     "18:16"
+    ],
+    [
+     "04:42",
+     "18:31"
+    ],
+    [
+     "04:52",
+     "18:32"
+    ],
+    [
+     "05:08",
+     "18:15"
+    ],
+    [
+     "05:21",
+     "17:42"
+    ],
+    [
+     "05:35",
+     "17:09"
+    ],
+    [
+     "05:55",
+     "16:47"
+    ],
+    [
+     "06:17",
+     "16:46"
+    ]
+   ]
+  },
+  {
+   "name": "Kurseong",
+   "km_from_start": 36.4,
+   "months": [
+    [
+     "06:27",
+     "17:04"
+    ],
+    [
+     "06:14",
+     "17:28"
+    ],
+    [
+     "05:48",
+     "17:45"
+    ],
+    [
+     "05:14",
+     "18:00"
+    ],
+    [
+     "04:49",
+     "18:16"
+    ],
+    [
+     "04:42",
+     "18:31"
+    ],
+    [
+     "04:52",
+     "18:33"
+    ],
+    [
+     "05:08",
+     "18:15"
+    ],
+    [
+     "05:22",
+     "17:43"
+    ],
+    [
+     "05:35",
+     "17:09"
+    ],
+    [
+     "05:56",
+     "16:47"
+    ],
+    [
+     "06:18",
+     "16:46"
+    ]
+   ]
+  },
+  {
+   "name": "Darjeeling",
+   "km_from_start": 67.1,
+   "months": [
+    [
+     "06:27",
+     "17:04"
+    ],
+    [
+     "06:14",
+     "17:28"
+    ],
+    [
+     "05:48",
+     "17:45"
+    ],
+    [
+     "05:14",
+     "18:01"
+    ],
+    [
+     "04:49",
+     "18:17"
+    ],
+    [
+     "04:42",
+     "18:32"
+    ],
+    [
+     "04:52",
+     "18:34"
+    ],
+    [
+     "05:08",
+     "18:16"
+    ],
+    [
+     "05:22",
+     "17:43"
+    ],
+    [
+     "05:36",
+     "17:09"
+    ],
+    [
+     "05:57",
+     "16:47"
+    ],
+    [
+     "06:18",
+     "16:46"
+    ]
+   ]
+  },
+  {
+   "name": "Manebhanjan",
+   "km_from_start": 95.2,
+   "months": [
+    [
+     "06:28",
+     "17:05"
+    ],
+    [
+     "06:15",
+     "17:29"
+    ],
+    [
+     "05:48",
+     "17:46"
+    ],
+    [
+     "05:14",
+     "18:01"
+    ],
+    [
+     "04:50",
+     "18:17"
+    ],
+    [
+     "04:43",
+     "18:32"
+    ],
+    [
+     "04:53",
+     "18:34"
+    ],
+    [
+     "05:09",
+     "18:16"
+    ],
+    [
+     "05:22",
+     "17:43"
+    ],
+    [
+     "05:36",
+     "17:10"
+    ],
+    [
+     "05:57",
+     "16:48"
+    ],
+    [
+     "06:19",
+     "16:46"
+    ]
+   ]
+  },
+  {
+   "name": "Kalimpong",
+   "km_from_start": 533.4,
+   "months": [
+    [
+     "06:27",
+     "17:03"
+    ],
+    [
+     "06:14",
+     "17:27"
+    ],
+    [
+     "05:47",
+     "17:45"
+    ],
+    [
+     "05:13",
+     "18:00"
+    ],
+    [
+     "04:48",
+     "18:16"
+    ],
+    [
+     "04:41",
+     "18:31"
+    ],
+    [
+     "04:51",
+     "18:33"
+    ],
+    [
+     "05:07",
+     "18:15"
+    ],
+    [
+     "05:21",
+     "17:42"
+    ],
+    [
+     "05:35",
+     "17:09"
+    ],
+    [
+     "05:56",
+     "16:46"
+    ],
+    [
+     "06:18",
+     "16:45"
+    ]
+   ]
+  }
+ ],
  "built": "2026-11-08",
  "mechanics": [
   {
@@ -12391,6 +12663,82 @@
    }
   }
  ],
+ "cash": {
+  "by_halt": [
+   {
+    "near": "Siliguri",
+    "km_from_start": 0.0,
+    "atms": 19,
+    "banks": 45,
+    "names": [
+     "Allahabad Bank",
+     "Axis Bank",
+     "Axis Bank ATM",
+     "Axis Bank Branch",
+     "Bajaj Finserv AMC Partner - Bidhan Road",
+     "Bandhan Bank"
+    ]
+   },
+   {
+    "near": "Kurseong",
+    "km_from_start": 36.4,
+    "atms": 1,
+    "banks": 4,
+    "names": [
+     "Axis Bank ATM",
+     "Axis Bank Branch",
+     "Bank of Baroda",
+     "HDFC Bank",
+     "ICICI Bank"
+    ]
+   },
+   {
+    "near": "Manebhanjan",
+    "km_from_start": 95.2,
+    "atms": 2,
+    "banks": 0,
+    "names": [
+     "Axis Bank ATM",
+     "HDFC Bank ATM"
+    ]
+   },
+   {
+    "near": "Darjeeling",
+    "km_from_start": 481.9,
+    "atms": 6,
+    "banks": 10,
+    "names": [
+     "Axis Bank",
+     "Axis Bank ATM",
+     "Bank of Baroda",
+     "Bank of India",
+     "Bubble Beds Darjeeling",
+     "HDFC Bank"
+    ]
+   },
+   {
+    "near": "Kalimpong",
+    "km_from_start": 533.4,
+    "atms": 5,
+    "banks": 8,
+    "names": [
+     "Axis Bank",
+     "Bandhan Bank",
+     "Bank of Baroda",
+     "Darjeeling District Central Cooperative Bank ATM",
+     "HDFC Bank",
+     "HDFC Bank ATM"
+    ]
+   }
+  ],
+  "longest_gaps": [
+   {
+    "from": "Manebhanjan",
+    "to": "Darjeeling",
+    "gap_km": 384
+   }
+  ]
+ },
  "mechanics_left_out": [
   {
    "near": "Siliguri",
@@ -12413,6 +12761,44 @@
   {
    "near": "Kurseong",
    "count": 81
+  }
+ ],
+ "photos": [
+  {
+   "near": "Darjeeling",
+   "kind": "place",
+   "km_from_start": 67.1,
+   "title": "Darjeeling railway station of Darjeeling Himalayan Railway 01",
+   "page": "https://commons.wikimedia.org/wiki/File:Darjeeling_railway_station_of_Darjeeling_Himalayan_Railway_01.jpg",
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/01/Darjeeling_railway_station_of_Darjeeling_Himalayan_Railway_01.jpg/500px-Darjeeling_railway_station_of_Darjeeling_Himalayan_Railway_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "taken": "2023-05-06",
+   "author": "Amitabha Gupta",
+   "licence": "CC BY 4.0",
+   "licence_url": "https://creativecommons.org/licenses/by/4.0"
+  },
+  {
+   "near": "Darjeeling",
+   "kind": "place",
+   "km_from_start": 67.1,
+   "title": "Darjeeling Himalayan Railway Engine",
+   "page": "https://commons.wikimedia.org/wiki/File:Darjeeling_Himalayan_Railway_Engine.jpg",
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/da/Darjeeling_Himalayan_Railway_Engine.jpg/500px-Darjeeling_Himalayan_Railway_Engine.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "taken": "2020-03-17",
+   "author": "Souviksen",
+   "licence": "CC BY-SA 4.0",
+   "licence_url": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  {
+   "near": "Sandakphu",
+   "kind": "pass",
+   "km_from_start": 277.4,
+   "title": "View of a sunrise-Sandakphu",
+   "page": "https://commons.wikimedia.org/wiki/File:View_of_a_sunrise-Sandakphu.jpg",
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1b/View_of_a_sunrise-Sandakphu.jpg/500px-View_of_a_sunrise-Sandakphu.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "taken": "2021-12-12",
+   "author": "bops92",
+   "licence": "CC BY-SA 4.0",
+   "licence_url": "https://creativecommons.org/licenses/by-sa/4.0"
   }
  ]
 }

@@ -3599,6 +3599,278 @@
  "counts": {
   "facts": 86
  },
+ "daylight": [
+  {
+   "name": "Kargil",
+   "km_from_start": 0.0,
+   "months": [
+    [
+     "07:32",
+     "17:36"
+    ],
+    [
+     "07:12",
+     "18:07"
+    ],
+    [
+     "06:38",
+     "18:32"
+    ],
+    [
+     "05:55",
+     "18:56"
+    ],
+    [
+     "05:23",
+     "19:20"
+    ],
+    [
+     "05:12",
+     "19:39"
+    ],
+    [
+     "05:23",
+     "19:39"
+    ],
+    [
+     "05:46",
+     "19:15"
+    ],
+    [
+     "06:08",
+     "18:34"
+    ],
+    [
+     "06:30",
+     "17:52"
+    ],
+    [
+     "06:59",
+     "17:22"
+    ],
+    [
+     "07:25",
+     "17:16"
+    ]
+   ]
+  },
+  {
+   "name": "Sankoo",
+   "km_from_start": 40.7,
+   "months": [
+    [
+     "07:32",
+     "17:38"
+    ],
+    [
+     "07:12",
+     "18:08"
+    ],
+    [
+     "06:38",
+     "18:33"
+    ],
+    [
+     "05:56",
+     "18:57"
+    ],
+    [
+     "05:25",
+     "19:20"
+    ],
+    [
+     "05:13",
+     "19:39"
+    ],
+    [
+     "05:25",
+     "19:39"
+    ],
+    [
+     "05:47",
+     "19:15"
+    ],
+    [
+     "06:08",
+     "18:35"
+    ],
+    [
+     "06:30",
+     "17:53"
+    ],
+    [
+     "06:59",
+     "17:23"
+    ],
+    [
+     "07:25",
+     "17:18"
+    ]
+   ]
+  },
+  {
+   "name": "Panikhar",
+   "km_from_start": 66.8,
+   "months": [
+    [
+     "07:32",
+     "17:38"
+    ],
+    [
+     "07:12",
+     "18:09"
+    ],
+    [
+     "06:38",
+     "18:33"
+    ],
+    [
+     "05:56",
+     "18:57"
+    ],
+    [
+     "05:25",
+     "19:20"
+    ],
+    [
+     "05:14",
+     "19:39"
+    ],
+    [
+     "05:25",
+     "19:39"
+    ],
+    [
+     "05:47",
+     "19:15"
+    ],
+    [
+     "06:08",
+     "18:35"
+    ],
+    [
+     "06:30",
+     "17:53"
+    ],
+    [
+     "06:59",
+     "17:24"
+    ],
+    [
+     "07:24",
+     "17:18"
+    ]
+   ]
+  },
+  {
+   "name": "Rangdum",
+   "km_from_start": 128.4,
+   "months": [
+    [
+     "07:30",
+     "17:37"
+    ],
+    [
+     "07:10",
+     "18:07"
+    ],
+    [
+     "06:37",
+     "18:32"
+    ],
+    [
+     "05:55",
+     "18:55"
+    ],
+    [
+     "05:23",
+     "19:18"
+    ],
+    [
+     "05:12",
+     "19:37"
+    ],
+    [
+     "05:24",
+     "19:37"
+    ],
+    [
+     "05:46",
+     "19:13"
+    ],
+    [
+     "06:07",
+     "18:33"
+    ],
+    [
+     "06:28",
+     "17:52"
+    ],
+    [
+     "06:57",
+     "17:22"
+    ],
+    [
+     "07:22",
+     "17:17"
+    ]
+   ]
+  },
+  {
+   "name": "Padum",
+   "km_from_start": 231.4,
+   "months": [
+    [
+     "07:26",
+     "17:36"
+    ],
+    [
+     "07:08",
+     "18:06"
+    ],
+    [
+     "06:35",
+     "18:30"
+    ],
+    [
+     "05:53",
+     "18:52"
+    ],
+    [
+     "05:23",
+     "19:15"
+    ],
+    [
+     "05:12",
+     "19:33"
+    ],
+    [
+     "05:23",
+     "19:34"
+    ],
+    [
+     "05:44",
+     "19:10"
+    ],
+    [
+     "06:05",
+     "18:31"
+    ],
+    [
+     "06:26",
+     "17:50"
+    ],
+    [
+     "06:54",
+     "17:21"
+    ],
+    [
+     "07:19",
+     "17:16"
+    ]
+   ]
+  }
+ ],
  "built": "2026-11-08",
  "mechanics": [
   {
@@ -4340,6 +4612,112 @@
    }
   }
  ],
+ "cash": {
+  "by_halt": [
+   {
+    "near": "Kargil",
+    "km_from_start": 0.0,
+    "atms": 4,
+    "banks": 9,
+    "names": [
+     "Axis Bank ATM",
+     "Axis Bank Branch",
+     "HDFC Bank",
+     "ICICI Bank",
+     "IndusInd Bank",
+     "J&K Bank"
+    ]
+   },
+   {
+    "near": "Sankoo",
+    "km_from_start": 40.7,
+    "atms": 3,
+    "banks": 3,
+    "names": [
+     "ATM",
+     "Bank",
+     "J&K Bank",
+     "J&K Bank - ATM",
+     "Punjab National Bank"
+    ]
+   },
+   {
+    "near": "Panikhar",
+    "km_from_start": 66.8,
+    "atms": 0,
+    "banks": 1,
+    "names": [
+     "J&K Bank"
+    ]
+   },
+   {
+    "near": "Padum",
+    "km_from_start": 231.4,
+    "atms": 0,
+    "banks": 1,
+    "names": [
+     "J&K Bank"
+    ]
+   }
+  ],
+  "longest_gaps": [
+   {
+    "from": "Panikhar",
+    "to": "Padum",
+    "gap_km": 166
+   }
+  ]
+ },
  "mechanics_left_out": [],
- "stays_left_out": []
+ "stays_left_out": [],
+ "photos": [
+  {
+   "near": "Pensi La",
+   "kind": "pass",
+   "km_from_start": 154.3,
+   "title": "Pensi La pass",
+   "page": "https://commons.wikimedia.org/wiki/File:Pensi_La_pass.jpg",
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/74/Pensi_La_pass.jpg/500px-Pensi_La_pass.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "taken": "2019-06-21",
+   "author": "Srishtisudhassk",
+   "licence": "CC BY-SA 4.0",
+   "licence_url": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  {
+   "near": "Pensi La",
+   "kind": "pass",
+   "km_from_start": 154.3,
+   "title": "Tibetan Prayer Flags at Pensi la pass",
+   "page": "https://commons.wikimedia.org/wiki/File:Tibetan_Prayer_Flags_at_Pensi_la_pass.jpg",
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f1/Tibetan_Prayer_Flags_at_Pensi_la_pass.jpg/500px-Tibetan_Prayer_Flags_at_Pensi_la_pass.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "taken": "2019-06-18",
+   "author": "Srishtisudhassk",
+   "licence": "CC BY-SA 4.0",
+   "licence_url": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  {
+   "near": "Padum",
+   "kind": "place",
+   "km_from_start": 231.4,
+   "title": "Entrance New Hall Stakrimo Padum Jun24 A7CR 01099",
+   "page": "https://commons.wikimedia.org/wiki/File:Entrance_New_Hall_Stakrimo_Padum_Jun24_A7CR_01099.jpg",
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b4/Entrance_New_Hall_Stakrimo_Padum_Jun24_A7CR_01099.jpg/500px-Entrance_New_Hall_Stakrimo_Padum_Jun24_A7CR_01099.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "taken": "2024-06-07",
+   "author": "Timothy A. Gonsalves",
+   "licence": "CC BY-SA 4.0",
+   "licence_url": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  {
+   "near": "Padum",
+   "kind": "place",
+   "km_from_start": 231.4,
+   "title": "South Jama Masjid Padum Zanskar Jun24 A7CR 00689",
+   "page": "https://commons.wikimedia.org/wiki/File:South_Jama_Masjid_Padum_Zanskar_Jun24_A7CR_00689.jpg",
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/10/South_Jama_Masjid_Padum_Zanskar_Jun24_A7CR_00689.jpg/500px-South_Jama_Masjid_Padum_Zanskar_Jun24_A7CR_00689.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "taken": "2024-06-05",
+   "author": "Timothy A. Gonsalves",
+   "licence": "CC BY-SA 4.0",
+   "licence_url": "https://creativecommons.org/licenses/by-sa/4.0"
+  }
+ ]
 }

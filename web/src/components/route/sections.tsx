@@ -5,7 +5,7 @@ import type { ReactNode } from "react";
 import type { FactView } from "@/lib/fact-view";
 import { daysBetween, hostOf, hours as sayHours, km, monthName, plural, sayAge, sayDate, sayMoment } from "@/lib/format";
 import { REPORTS_NEEDED } from "@/lib/sections";
-import type { LegHours, NetworkReport, SeasonYear, Video } from "@/lib/types";
+import type { CashAlong, Daylight, LegHours, NetworkReport, RoadPhoto, SeasonYear, TowerHalt, Video } from "@/lib/types";
 import { readableHost, type AlertsRead, type ClosuresRead, type OfficeRead, type WeatherRead } from "@/server/live";
 import type { RouteView } from "@/server/route-view";
 
@@ -71,17 +71,28 @@ function happenings(history: SeasonYear[], today: string): Happening[] {
 }
 
 /** The earliest and latest day of the year on which the road opened to motorcycles, in the years on record. */
-function openingPattern(history: SeasonYear[]): { from: string; to: string; years: number } | null {
+/** The earliest and latest day of the year one kind of date fell on, across the years on record. */
+function datePattern(history: SeasonYear[], pick: (y: SeasonYear) => string | null, winter = false) {
+  // A closing in January or February belongs to the season before, so it sorts after December.
+  const order = (md: string) => (winter && md < "07" ? `1${md}` : `0${md}`);
   const days = history
-    .map((y) => y.open_to_motorcycles)
+    .map(pick)
     .filter((d): d is string => typeof d === "string" && /^\d{4}-\d{2}-\d{2}$/.test(d))
     .map((d) => d.slice(5))
-    .sort();
+    .sort((a, b) => order(a).localeCompare(order(b)));
   const first = days[0];
   const last = days[days.length - 1];
   if (!first || !last || days.length < 2) return null;
   const say = (md: string) => (sayDate(`2000-${md}`) ?? md).replace(" 2000", "");
   return { from: say(first), to: say(last), years: days.length };
+}
+
+function openingPattern(history: SeasonYear[]): { from: string; to: string; years: number } | null {
+  return datePattern(history, (y) => y.open_to_motorcycles);
+}
+
+function closingPattern(history: SeasonYear[]): { from: string; to: string; years: number } | null {
+  return datePattern(history, (y) => y.closed, true);
 }
 
 /** What "Is it open?" reads for itself each hour. Each part is null where the route has nothing to read. */
@@ -118,6 +129,7 @@ export function OpenSection({ view, live }: { view: RouteView; live?: OpenLive }
   const newest = events[0];
   const shut = newest?.words === "Closed for winter" ? newest : null;
   const pattern = openingPattern(history);
+  const closing = closingPattern(history);
   const sightings = route.sightings ?? [];
 
   return (
@@ -246,11 +258,19 @@ export function OpenSection({ view, live }: { view: RouteView; live?: OpenLive }
         </div>
       ) : null}
 
-      {pattern ? (
+      {pattern || closing ? (
         <Callout title="Planning for next season?">
-          {pattern.from === pattern.to
-            ? `The road opened to motorcycles on ${pattern.from} in each of the ${pattern.years} years we have on record.`
-            : `In the ${pattern.years} years we have on record, the road opened to motorcycles between ${pattern.from} and ${pattern.to}.`}
+          {pattern
+            ? pattern.from === pattern.to
+              ? `The road opened to motorcycles on ${pattern.from} in each of the ${pattern.years} years we have on record.`
+              : `In the ${pattern.years} years we have on record, the road opened to motorcycles between ${pattern.from} and ${pattern.to}.`
+            : ""}
+          {pattern && closing ? " " : ""}
+          {closing
+            ? closing.from === closing.to
+              ? `It closed for winter on ${closing.from} in each of the ${closing.years} years with a closing date.`
+              : `It closed for winter between ${closing.from} and ${closing.to} in the ${closing.years} years with a closing date.`
+            : ""}
         </Callout>
       ) : null}
     </Section>
@@ -326,6 +346,7 @@ export function FuelSection({ view }: { view: RouteView }) {
           counted and not listed.
         </p>
       ) : null}
+      {route.cash ? <CashOnTheWay cash={route.cash} /> : null}
     </Section>
   );
 }
@@ -345,19 +366,171 @@ export function RulesSection({ view }: { view: RouteView }) {
   );
 }
 
+function where(stop: string): string {
+  if (stop === "start of route") return "the start";
+  if (stop === "end of route") return "the end of the road";
+  return stop.startsWith("Between ") ? `the road ${stop.charAt(0).toLowerCase()}${stop.slice(1)}` : stop;
+}
+
+/** "From Keylong to Upshi." On a loop, or between the same two halts, the ends can share a name. */
+function stretchWords(from: string, to: string): string {
+  if (from !== to) return `From ${where(from)} to ${where(to)}.`;
+  return from.startsWith("Between ") ? `On ${where(from)}.` : `On the road out of ${from} and back.`;
+}
+
+/** ATMs and banks by halt, under the fuel stops: cards and UPI often fail where the pumps are far apart. */
+function CashOnTheWay({ cash }: { cash: CashAlong }) {
+  const gap = cash.longest_gaps[0];
+  return (
+    <div className="flex flex-col gap-2">
+      <SectionHeading title="Cash: ATMs and banks" aside={plural(cash.by_halt.length, "halt")} />
+      {gap ? (
+        <Callout tone="warn" title={`No ATM or bank on the map for ${km(gap.gap_km)}`}>
+          {stretchWords(gap.from, gap.to)} Cards and UPI often fail in the high valleys: carry the cash you need for
+          this stretch before you set off.
+        </Callout>
+      ) : null}
+      {cash.by_halt.length > 0 ? (
+        <div className="card overflow-x-auto" tabIndex={0} role="region" aria-label="ATMs and banks by halt">
+          <table className="num w-full border-collapse text-sm">
+            <thead>
+              <tr className="bg-surface-2 text-left">
+                <th className="label px-3 py-2">Halt</th>
+                <th className="label px-2 py-2">ATMs</th>
+                <th className="label px-2 py-2">Banks</th>
+              </tr>
+            </thead>
+            <tbody>
+              {cash.by_halt.map((h) => (
+                <tr key={h.near} className="border-t border-line align-top">
+                  <th scope="row" className="px-3 py-2 text-left font-semibold">
+                    {h.near}
+                    <span className="hint block text-xs font-normal">{h.names.join(", ")}</span>
+                  </th>
+                  <td className="px-2 py-2">{h.atms}</td>
+                  <td className="px-2 py-2">{h.banks}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      ) : (
+        <p className="hint">No ATM or bank is on the map within 2 km of this road.</p>
+      )}
+      <p className="hint">
+        Listed on a public map (Overture Maps). An ATM on the map can be empty or out of order, and no rider has
+        confirmed these yet.
+      </p>
+    </div>
+  );
+}
+
+/** Recent photos near the passes and high halts, each with the day it was taken and its author's licence. */
+function RoadPhotos({ photos }: { photos: RoadPhoto[] }) {
+  return (
+    <div className="flex flex-col gap-2">
+      <SectionHeading title="Recent photos near the road" aside={plural(photos.length, "photo")} />
+      <div className="grid grid-cols-2 gap-2 md:grid-cols-3 lg:grid-cols-4">
+        {photos.map((p) => (
+          <figure key={p.page} className="card overflow-hidden">
+            <a href={p.page} target="_blank" rel="noreferrer noopener" className="block">
+              {/* eslint-disable-next-line @next/next/no-img-element -- Wikimedia Commons' own thumbnail */}
+              <img src={p.thumb} alt={p.title} loading="lazy" className="aspect-[4/3] w-full object-cover" />
+            </a>
+            <figcaption className="flex flex-col gap-0.5 px-2 py-1.5">
+              <b className="text-sm leading-5">{p.near}</b>
+              <span className="num text-xs font-medium">Taken {sayDate(p.taken)}</span>
+              <span className="hint text-xs">
+                {p.author} ·{" "}
+                {p.licence_url ? (
+                  <a className="link" href={p.licence_url} target="_blank" rel="noreferrer noopener">
+                    {p.licence}
+                  </a>
+                ) : (
+                  p.licence
+                )}
+              </span>
+            </figcaption>
+          </figure>
+        ))}
+      </div>
+      <p className="hint">
+        From Wikimedia Commons, the newest dated photo near each pass and high halt. A photo shows the road on the day
+        it was taken, not today.
+      </p>
+    </div>
+  );
+}
+
 export function RoadSection({ view }: { view: RouteView }) {
+  const photos = view.route.photos ?? [];
   return (
     <Section id="road">
       <SectionHeading id="road-name" title="Trouble on the road" aside={plural(view.views.road.length, "warning")} />
-      <Callout title="From published guides, not from riders">
-        Each warning names the months it applies to. None has been seen by a rider this season unless it says so.
-      </Callout>
-      <div className={GRID}>
-        {view.views.road.map((v) => (
-          <FactRow key={v.slug} view={v} />
-        ))}
-      </div>
+      {view.views.road.length > 0 ? (
+        <>
+          <Callout title="From published guides, not from riders">
+            Each warning names the months it applies to. None has been seen by a rider this season unless it says so.
+          </Callout>
+          <div className={GRID}>
+            {view.views.road.map((v) => (
+              <FactRow key={v.slug} view={v} />
+            ))}
+          </div>
+        </>
+      ) : null}
+      {photos.length > 0 ? <RoadPhotos photos={photos} /> : null}
     </Section>
+  );
+}
+
+/** Sunrise and sunset at each place to stop, for the months people ride the road. */
+export function DaylightTable({ daylight, months }: { daylight: Daylight[]; months: number[] | null }) {
+  const shown = months && months.length > 0 ? months : [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
+  if (daylight.length === 0) return null;
+  const clock = (t: string) => {
+    const [h = 0, m = 0] = t.split(":").map(Number);
+    return `${h % 12 || 12}:${String(m).padStart(2, "0")} ${h < 12 ? "am" : "pm"}`;
+  };
+  return (
+    <section className="flex flex-col gap-2">
+      <SectionHeading title="Daylight at each halt" aside="Sunrise to sunset, mid-month" />
+      <div className="card overflow-x-auto" tabIndex={0} role="region" aria-label="Sunrise and sunset at each halt">
+        <table className="num w-full border-collapse text-sm">
+          <thead>
+            <tr className="bg-surface-2 text-left">
+              <th className="label px-3 py-2">Halt</th>
+              {shown.map((m) => (
+                <th key={m} className="label px-2 py-2 whitespace-nowrap">
+                  {monthName(m, true)}
+                </th>
+              ))}
+            </tr>
+          </thead>
+          <tbody>
+            {daylight.map((d) => (
+              <tr key={d.name} className="border-t border-line align-top">
+                <th scope="row" className="px-3 py-2 text-left font-semibold whitespace-nowrap">
+                  {d.name}
+                </th>
+                {shown.map((m) => {
+                  const t = d.months[m - 1];
+                  return (
+                    <td key={m} className="px-2 py-2 whitespace-nowrap">
+                      {t ? `${clock(t[0])}–${clock(t[1])}` : "–"}
+                    </td>
+                  );
+                })}
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+      <p className="hint">
+        For flat ground. In a deep valley the sun goes behind the mountains earlier. Plan to be at your halt before
+        dark: most falls and wrong turns in the hills happen after sunset.
+      </p>
+    </section>
   );
 }
 
@@ -409,26 +582,12 @@ function shortMonth(month: string): string {
   return `${monthName(Number(m), true)} ${year}`;
 }
 
-export function NetworkSection({ view }: { view: RouteView }) {
-  const reports = view.route.network ?? [];
-  const halts = [...new Set(reports.map((r) => r.halt))];
-  const operators = [...new Set(reports.map((r) => r.operator))];
-  const newest = (halt: string, operator: string): NetworkReport | null =>
-    reports
-      .filter((r) => r.halt === halt && r.operator === operator)
-      .sort((a, b) => b.month.localeCompare(a.month))[0] ?? null;
+function TowersTable({ halts, read }: { halts: TowerHalt[]; read: string | null }) {
+  const operators = [...new Set(halts.flatMap((h) => Object.keys(h.operators)))].sort();
   return (
-    <Section id="network">
-      <SectionHeading id="network-name" title="Mobile network" aside={plural(halts.length, "halt")} />
-      {view.views.road
-        .filter((v) => /\b(sim|prepaid|postpaid|mobile|signal|network)\b/i.test(v.title))
-        .slice(0, 1)
-        .map((v) => (
-          <Callout key={v.slug} tone="warn" title={v.title}>
-            {v.short} <span className="hint">{v.line}</span>
-          </Callout>
-        ))}
-      <div className="card overflow-x-auto">
+    <div className="flex flex-col gap-2">
+      <SectionHeading title="Towers on the map" aside={plural(halts.length, "halt")} />
+      <div className="card overflow-x-auto" tabIndex={0} role="region" aria-label="Operators with towers at each halt">
         <table className="num w-full border-collapse text-sm">
           <thead>
             <tr className="bg-surface-2 text-left">
@@ -442,33 +601,98 @@ export function NetworkSection({ view }: { view: RouteView }) {
           </thead>
           <tbody>
             {halts.map((h) => (
-              <tr key={h} className="border-t border-line align-top">
+              <tr key={h.halt} className="border-t border-line align-top">
                 <th scope="row" className="px-3 py-2 text-left font-semibold">
-                  {h}
+                  {h.halt}
                 </th>
-                {operators.map((o) => {
-                  const r = newest(h, o);
-                  return (
-                    <td key={o} className="px-2 py-2">
-                      {r ? (
-                        <>
-                          <b className={r.worked ? "text-fresh-fg" : "text-stale-fg"}>{r.worked ? "Worked" : "No signal"}</b>
-                          <span className="hint block text-xs">{shortMonth(r.month)}</span>
-                        </>
-                      ) : (
-                        <span className="text-ink-2">No report</span>
-                      )}
-                    </td>
-                  );
-                })}
+                {operators.map((o) => (
+                  <td key={o} className="px-2 py-2">
+                    {h.operators[o] ? <b>{h.operators[o].join(", ")}</b> : <span className="text-ink-2">None seen</span>}
+                  </td>
+                ))}
               </tr>
             ))}
           </tbody>
         </table>
       </div>
       <p className="hint">
-        Each cell is the newest report. “No report” is a gap in what we know. “No signal” is what a rider found.
+        Towers within about a kilometre of each halt, from OpenCelliD (CC BY-SA 4.0)
+        {read ? `, read ${sayDate(read)}` : ""}, which phones record. A tower is a good sign, not a promise of signal. “None seen” means none on the map.
       </p>
+    </div>
+  );
+}
+
+export function NetworkSection({ view }: { view: RouteView }) {
+  const towers = view.route.towers;
+  const reports = view.route.network ?? [];
+  const halts = [...new Set(reports.map((r) => r.halt))];
+  const operators = [...new Set(reports.map((r) => r.operator))];
+  const newest = (halt: string, operator: string): NetworkReport | null =>
+    reports
+      .filter((r) => r.halt === halt && r.operator === operator)
+      .sort((a, b) => b.month.localeCompare(a.month))[0] ?? null;
+  return (
+    <Section id="network">
+      <SectionHeading
+        id="network-name"
+        title="Mobile network"
+        aside={plural(halts.length || (towers?.halts.length ?? 0), "halt")}
+      />
+      {view.views.road
+        .filter((v) => /\b(sim|prepaid|postpaid|mobile|signal|network)\b/i.test(v.title))
+        .slice(0, 1)
+        .map((v) => (
+          <Callout key={v.slug} tone="warn" title={v.title}>
+            {v.short} <span className="hint">{v.line}</span>
+          </Callout>
+        ))}
+      {reports.length > 0 ? (
+          <>
+          <div className="card overflow-x-auto">
+            <table className="num w-full border-collapse text-sm">
+              <thead>
+                <tr className="bg-surface-2 text-left">
+                  <th className="label px-3 py-2">Halt</th>
+                  {operators.map((o) => (
+                    <th key={o} className="label px-2 py-2">
+                      {o}
+                    </th>
+                  ))}
+                </tr>
+              </thead>
+              <tbody>
+                {halts.map((h) => (
+                  <tr key={h} className="border-t border-line align-top">
+                    <th scope="row" className="px-3 py-2 text-left font-semibold">
+                      {h}
+                    </th>
+                    {operators.map((o) => {
+                      const r = newest(h, o);
+                      return (
+                        <td key={o} className="px-2 py-2">
+                          {r ? (
+                            <>
+                              <b className={r.worked ? "text-fresh-fg" : "text-stale-fg"}>{r.worked ? "Worked" : "No signal"}</b>
+                              <span className="hint block text-xs">{shortMonth(r.month)}</span>
+                            </>
+                          ) : (
+                            <span className="text-ink-2">No report</span>
+                          )}
+                        </td>
+                      );
+                    })}
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+          <p className="hint">
+            Each cell is the newest report. “No report” is a gap in what we know. “No signal” is what a rider found.
+          </p>
+          </>
+      ) : null}
+      {towers && towers.halts.length > 0 ? <TowersTable halts={towers.halts} read={towers.read} /> : null}
     </Section>
   );
 }

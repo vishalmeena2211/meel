@@ -11361,6 +11361,278 @@
  "counts": {
   "facts": 259
  },
+ "daylight": [
+  {
+   "name": "Kochi",
+   "km_from_start": 0.0,
+   "months": [
+    [
+     "06:46",
+     "18:22"
+    ],
+    [
+     "06:45",
+     "18:33"
+    ],
+    [
+     "06:33",
+     "18:36"
+    ],
+    [
+     "06:15",
+     "18:35"
+    ],
+    [
+     "06:04",
+     "18:38"
+    ],
+    [
+     "06:04",
+     "18:46"
+    ],
+    [
+     "06:11",
+     "18:50"
+    ],
+    [
+     "06:16",
+     "18:44"
+    ],
+    [
+     "06:15",
+     "18:26"
+    ],
+    [
+     "06:13",
+     "18:08"
+    ],
+    [
+     "06:20",
+     "18:00"
+    ],
+    [
+     "06:34",
+     "18:06"
+    ]
+   ]
+  },
+  {
+   "name": "Munnar",
+   "km_from_start": 131.3,
+   "months": [
+    [
+     "06:43",
+     "18:18"
+    ],
+    [
+     "06:42",
+     "18:30"
+    ],
+    [
+     "06:30",
+     "18:33"
+    ],
+    [
+     "06:12",
+     "18:32"
+    ],
+    [
+     "06:00",
+     "18:35"
+    ],
+    [
+     "06:01",
+     "18:43"
+    ],
+    [
+     "06:08",
+     "18:47"
+    ],
+    [
+     "06:13",
+     "18:41"
+    ],
+    [
+     "06:11",
+     "18:23"
+    ],
+    [
+     "06:10",
+     "18:05"
+    ],
+    [
+     "06:17",
+     "17:57"
+    ],
+    [
+     "06:31",
+     "18:03"
+    ]
+   ]
+  },
+  {
+   "name": "Kumily",
+   "km_from_start": 214.0,
+   "months": [
+    [
+     "06:41",
+     "18:18"
+    ],
+    [
+     "06:41",
+     "18:30"
+    ],
+    [
+     "06:29",
+     "18:33"
+    ],
+    [
+     "06:12",
+     "18:31"
+    ],
+    [
+     "06:01",
+     "18:34"
+    ],
+    [
+     "06:01",
+     "18:42"
+    ],
+    [
+     "06:08",
+     "18:46"
+    ],
+    [
+     "06:13",
+     "18:40"
+    ],
+    [
+     "06:11",
+     "18:22"
+    ],
+    [
+     "06:09",
+     "18:05"
+    ],
+    [
+     "06:15",
+     "17:57"
+    ],
+    [
+     "06:29",
+     "18:03"
+    ]
+   ]
+  },
+  {
+   "name": "Vagamon",
+   "km_from_start": 256.9,
+   "months": [
+    [
+     "06:43",
+     "18:19"
+    ],
+    [
+     "06:42",
+     "18:31"
+    ],
+    [
+     "06:30",
+     "18:34"
+    ],
+    [
+     "06:13",
+     "18:33"
+    ],
+    [
+     "06:02",
+     "18:35"
+    ],
+    [
+     "06:02",
+     "18:43"
+    ],
+    [
+     "06:09",
+     "18:47"
+    ],
+    [
+     "06:14",
+     "18:41"
+    ],
+    [
+     "06:12",
+     "18:23"
+    ],
+    [
+     "06:10",
+     "18:06"
+    ],
+    [
+     "06:17",
+     "17:58"
+    ],
+    [
+     "06:31",
+     "18:04"
+    ]
+   ]
+  },
+  {
+   "name": "Kalpetta",
+   "km_from_start": 604.7,
+   "months": [
+    [
+     "06:49",
+     "18:20"
+    ],
+    [
+     "06:47",
+     "18:33"
+    ],
+    [
+     "06:34",
+     "18:37"
+    ],
+    [
+     "06:15",
+     "18:37"
+    ],
+    [
+     "06:02",
+     "18:41"
+    ],
+    [
+     "06:02",
+     "18:50"
+    ],
+    [
+     "06:09",
+     "18:54"
+    ],
+    [
+     "06:15",
+     "18:46"
+    ],
+    [
+     "06:15",
+     "18:27"
+    ],
+    [
+     "06:15",
+     "18:08"
+    ],
+    [
+     "06:23",
+     "17:59"
+    ],
+    [
+     "06:37",
+     "18:04"
+    ]
+   ]
+  }
+ ],
  "built": "2026-11-08",
  "mechanics": [
   {
@@ -11445,6 +11717,137 @@
   }
  ],
  "stays": [],
+ "cash": {
+  "by_halt": [
+   {
+    "near": "Between Kochi and Munnar",
+    "km_from_start": 27,
+    "atms": 9,
+    "banks": 31,
+    "names": [
+     "Axis Bank ATM",
+     "Axis Bank Branch",
+     "Bank of Baroda",
+     "Bank of Maharashtra",
+     "Bank of Maharashtra - Muvattuppuzha Branch",
+     "CSB BANK LTD"
+    ]
+   },
+   {
+    "near": "Munnar",
+    "km_from_start": 131.3,
+    "atms": 2,
+    "banks": 5,
+    "names": [
+     "CSB BANK LTD",
+     "City Union Bank Batlagundu",
+     "Federal Bank ATM cum CDM",
+     "HDFC Bank ATM",
+     "IndusInd Bank",
+     "South Indian Bank"
+    ]
+   },
+   {
+    "near": "Between Munnar and Kumily",
+    "km_from_start": 179,
+    "atms": 3,
+    "banks": 8,
+    "names": [
+     "Axis Bank ATM",
+     "Axis Bank Branch",
+     "Bank of Baroda",
+     "Federal Bank",
+     "Federal Bank ATM",
+     "HDFC Bank ATM"
+    ]
+   },
+   {
+    "near": "Kumily",
+    "km_from_start": 214.0,
+    "atms": 1,
+    "banks": 2,
+    "names": [
+     "Federal Bank",
+     "Indian Overseas Bank - ATM",
+     "South Indian Bank"
+    ]
+   },
+   {
+    "near": "Vagamon",
+    "km_from_start": 256.9,
+    "atms": 1,
+    "banks": 2,
+    "names": [
+     "Axis Bank",
+     "Kudayathoor Service Cooperative Bank",
+     "Kudayathoor Service Sahakarana Bank-Kanjar"
+    ]
+   },
+   {
+    "near": "Between Vagamon and Kochi",
+    "km_from_start": 284,
+    "atms": 9,
+    "banks": 35,
+    "names": [
+     "Axis Bank ATM",
+     "Axis Bank Branch",
+     "Bank of Baroda",
+     "CSB BANK LTD",
+     "Ernakulam Karshika Sahagarana Bank",
+     "Federal Bank"
+    ]
+   },
+   {
+    "near": "Kochi",
+    "km_from_start": 365.9,
+    "atms": 36,
+    "banks": 77,
+    "names": [
+     "Axis Bank",
+     "Axis Bank ATM",
+     "Axis Bank Branch",
+     "Bank Junction",
+     "Bank of Baroda",
+     "Bank of India"
+    ]
+   },
+   {
+    "near": "Between Kochi and Kalpetta",
+    "km_from_start": 391,
+    "atms": 60,
+    "banks": 139,
+    "names": [
+     "Alookaran Bankers",
+     "Areacode Service Co-operative Bank",
+     "Axis Bank",
+     "Axis Bank ATM",
+     "Axis Bank Branch",
+     "Bank of Baroda"
+    ]
+   },
+   {
+    "near": "Kalpetta",
+    "km_from_start": 604.7,
+    "atms": 3,
+    "banks": 13,
+    "names": [
+     "Axis Bank ATM",
+     "Axis Bank Branch",
+     "Bank of Baroda",
+     "CSB BANK LTD",
+     "Federal Bank",
+     "HDFC Bank"
+    ]
+   }
+  ],
+  "longest_gaps": [
+   {
+    "from": "Kumily",
+    "to": "Vagamon",
+    "gap_km": 61
+   }
+  ]
+ },
  "mechanics_left_out": [
   {
    "near": "Kochi",

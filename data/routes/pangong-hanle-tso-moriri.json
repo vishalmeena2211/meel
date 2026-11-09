@@ -9573,6 +9573,656 @@
  "counts": {
   "facts": 104
  },
+ "daylight": [
+  {
+   "name": "Leh",
+   "km_from_start": 0.0,
+   "months": [
+    [
+     "07:25",
+     "17:31"
+    ],
+    [
+     "07:06",
+     "18:02"
+    ],
+    [
+     "06:32",
+     "18:27"
+    ],
+    [
+     "05:50",
+     "18:50"
+    ],
+    [
+     "05:18",
+     "19:13"
+    ],
+    [
+     "05:07",
+     "19:32"
+    ],
+    [
+     "05:18",
+     "19:33"
+    ],
+    [
+     "05:40",
+     "19:09"
+    ],
+    [
+     "06:02",
+     "18:28"
+    ],
+    [
+     "06:24",
+     "17:47"
+    ],
+    [
+     "06:52",
+     "17:17"
+    ],
+    [
+     "07:18",
+     "17:12"
+    ]
+   ]
+  },
+  {
+   "name": "Karu",
+   "km_from_start": 33.9,
+   "months": [
+    [
+     "07:24",
+     "17:31"
+    ],
+    [
+     "07:05",
+     "18:02"
+    ],
+    [
+     "06:31",
+     "18:26"
+    ],
+    [
+     "05:49",
+     "18:49"
+    ],
+    [
+     "05:18",
+     "19:12"
+    ],
+    [
+     "05:07",
+     "19:31"
+    ],
+    [
+     "05:18",
+     "19:31"
+    ],
+    [
+     "05:40",
+     "19:08"
+    ],
+    [
+     "06:01",
+     "18:27"
+    ],
+    [
+     "06:23",
+     "17:46"
+    ],
+    [
+     "06:51",
+     "17:17"
+    ],
+    [
+     "07:17",
+     "17:12"
+    ]
+   ]
+  },
+  {
+   "name": "Durbuk",
+   "km_from_start": 109.1,
+   "months": [
+    [
+     "07:23",
+     "17:29"
+    ],
+    [
+     "07:03",
+     "18:00"
+    ],
+    [
+     "06:30",
+     "18:25"
+    ],
+    [
+     "05:48",
+     "18:48"
+    ],
+    [
+     "05:16",
+     "19:11"
+    ],
+    [
+     "05:05",
+     "19:30"
+    ],
+    [
+     "05:16",
+     "19:30"
+    ],
+    [
+     "05:38",
+     "19:06"
+    ],
+    [
+     "06:00",
+     "18:26"
+    ],
+    [
+     "06:21",
+     "17:45"
+    ],
+    [
+     "06:50",
+     "17:15"
+    ],
+    [
+     "07:15",
+     "17:10"
+    ]
+   ]
+  },
+  {
+   "name": "Tangtse",
+   "km_from_start": 147.7,
+   "months": [
+    [
+     "07:21",
+     "17:29"
+    ],
+    [
+     "07:02",
+     "18:00"
+    ],
+    [
+     "06:29",
+     "18:24"
+    ],
+    [
+     "05:47",
+     "18:47"
+    ],
+    [
+     "05:16",
+     "19:09"
+    ],
+    [
+     "05:05",
+     "19:28"
+    ],
+    [
+     "05:16",
+     "19:29"
+    ],
+    [
+     "05:38",
+     "19:05"
+    ],
+    [
+     "05:59",
+     "18:25"
+    ],
+    [
+     "06:20",
+     "17:44"
+    ],
+    [
+     "06:48",
+     "17:15"
+    ],
+    [
+     "07:14",
+     "17:09"
+    ]
+   ]
+  },
+  {
+   "name": "Spangmik",
+   "km_from_start": 222.0,
+   "months": [
+    [
+     "07:21",
+     "17:29"
+    ],
+    [
+     "07:02",
+     "17:59"
+    ],
+    [
+     "06:28",
+     "18:23"
+    ],
+    [
+     "05:47",
+     "18:46"
+    ],
+    [
+     "05:15",
+     "19:09"
+    ],
+    [
+     "05:04",
+     "19:28"
+    ],
+    [
+     "05:16",
+     "19:28"
+    ],
+    [
+     "05:37",
+     "19:05"
+    ],
+    [
+     "05:59",
+     "18:25"
+    ],
+    [
+     "06:20",
+     "17:44"
+    ],
+    [
+     "06:48",
+     "17:14"
+    ],
+    [
+     "07:14",
+     "17:09"
+    ]
+   ]
+  },
+  {
+   "name": "Chushul",
+   "km_from_start": 271.7,
+   "months": [
+    [
+     "07:20",
+     "17:29"
+    ],
+    [
+     "07:01",
+     "17:59"
+    ],
+    [
+     "06:28",
+     "18:23"
+    ],
+    [
+     "05:46",
+     "18:45"
+    ],
+    [
+     "05:15",
+     "19:08"
+    ],
+    [
+     "05:04",
+     "19:26"
+    ],
+    [
+     "05:16",
+     "19:27"
+    ],
+    [
+     "05:37",
+     "19:03"
+    ],
+    [
+     "05:58",
+     "18:24"
+    ],
+    [
+     "06:19",
+     "17:43"
+    ],
+    [
+     "06:47",
+     "17:14"
+    ],
+    [
+     "07:12",
+     "17:09"
+    ]
+   ]
+  },
+  {
+   "name": "Hanle",
+   "km_from_start": 390.1,
+   "months": [
+    [
+     "07:16",
+     "17:29"
+    ],
+    [
+     "06:58",
+     "17:58"
+    ],
+    [
+     "06:26",
+     "18:21"
+    ],
+    [
+     "05:46",
+     "18:43"
+    ],
+    [
+     "05:16",
+     "19:05"
+    ],
+    [
+     "05:05",
+     "19:23"
+    ],
+    [
+     "05:16",
+     "19:24"
+    ],
+    [
+     "05:37",
+     "19:01"
+    ],
+    [
+     "05:57",
+     "18:22"
+    ],
+    [
+     "06:17",
+     "17:42"
+    ],
+    [
+     "06:44",
+     "17:14"
+    ],
+    [
+     "07:09",
+     "17:09"
+    ]
+   ]
+  },
+  {
+   "name": "Nyoma",
+   "km_from_start": 467.5,
+   "months": [
+    [
+     "07:19",
+     "17:29"
+    ],
+    [
+     "07:00",
+     "17:59"
+    ],
+    [
+     "06:27",
+     "18:23"
+    ],
+    [
+     "05:46",
+     "18:45"
+    ],
+    [
+     "05:16",
+     "19:07"
+    ],
+    [
+     "05:05",
+     "19:25"
+    ],
+    [
+     "05:16",
+     "19:26"
+    ],
+    [
+     "05:38",
+     "19:03"
+    ],
+    [
+     "05:58",
+     "18:24"
+    ],
+    [
+     "06:19",
+     "17:43"
+    ],
+    [
+     "06:46",
+     "17:15"
+    ],
+    [
+     "07:11",
+     "17:10"
+    ]
+   ]
+  },
+  {
+   "name": "Mahe",
+   "km_from_start": 488.3,
+   "months": [
+    [
+     "07:19",
+     "17:30"
+    ],
+    [
+     "07:01",
+     "18:00"
+    ],
+    [
+     "06:28",
+     "18:23"
+    ],
+    [
+     "05:47",
+     "18:45"
+    ],
+    [
+     "05:17",
+     "19:08"
+    ],
+    [
+     "05:06",
+     "19:26"
+    ],
+    [
+     "05:17",
+     "19:27"
+    ],
+    [
+     "05:38",
+     "19:04"
+    ],
+    [
+     "05:59",
+     "18:24"
+    ],
+    [
+     "06:19",
+     "17:44"
+    ],
+    [
+     "06:47",
+     "17:15"
+    ],
+    [
+     "07:12",
+     "17:10"
+    ]
+   ]
+  },
+  {
+   "name": "Korzok",
+   "km_from_start": 550.5,
+   "months": [
+    [
+     "07:19",
+     "17:31"
+    ],
+    [
+     "07:01",
+     "18:01"
+    ],
+    [
+     "06:29",
+     "18:24"
+    ],
+    [
+     "05:48",
+     "18:46"
+    ],
+    [
+     "05:18",
+     "19:08"
+    ],
+    [
+     "05:07",
+     "19:26"
+    ],
+    [
+     "05:18",
+     "19:27"
+    ],
+    [
+     "05:39",
+     "19:04"
+    ],
+    [
+     "05:59",
+     "18:25"
+    ],
+    [
+     "06:20",
+     "17:45"
+    ],
+    [
+     "06:47",
+     "17:16"
+    ],
+    [
+     "07:12",
+     "17:12"
+    ]
+   ]
+  },
+  {
+   "name": "Chumathang",
+   "km_from_start": 629.1,
+   "months": [
+    [
+     "07:20",
+     "17:30"
+    ],
+    [
+     "07:02",
+     "18:00"
+    ],
+    [
+     "06:29",
+     "18:24"
+    ],
+    [
+     "05:48",
+     "18:46"
+    ],
+    [
+     "05:17",
+     "19:08"
+    ],
+    [
+     "05:06",
+     "19:27"
+    ],
+    [
+     "05:17",
+     "19:28"
+    ],
+    [
+     "05:39",
+     "19:04"
+    ],
+    [
+     "05:59",
+     "18:25"
+    ],
+    [
+     "06:20",
+     "17:44"
+    ],
+    [
+     "06:48",
+     "17:16"
+    ],
+    [
+     "07:13",
+     "17:11"
+    ]
+   ]
+  },
+  {
+   "name": "Upshi",
+   "km_from_start": 719.5,
+   "months": [
+    [
+     "07:23",
+     "17:31"
+    ],
+    [
+     "07:04",
+     "18:02"
+    ],
+    [
+     "06:31",
+     "18:26"
+    ],
+    [
+     "05:49",
+     "18:49"
+    ],
+    [
+     "05:18",
+     "19:12"
+    ],
+    [
+     "05:07",
+     "19:30"
+    ],
+    [
+     "05:18",
+     "19:31"
+    ],
+    [
+     "05:40",
+     "19:07"
+    ],
+    [
+     "06:01",
+     "18:27"
+    ],
+    [
+     "06:22",
+     "17:46"
+    ],
+    [
+     "06:51",
+     "17:17"
+    ],
+    [
+     "07:16",
+     "17:12"
+    ]
+   ]
+  }
+ ],
  "built": "2026-11-08",
  "mechanics": [
   {
@@ -10106,11 +10756,204 @@
    }
   }
  ],
+ "cash": {
+  "by_halt": [
+   {
+    "near": "Karu",
+    "km_from_start": 33.9,
+    "atms": 1,
+    "banks": 4,
+    "names": [
+     "ATM",
+     "Bank",
+     "J&K Bank",
+     "J&K Bank - Small Business Unit",
+     "Punjab National Bank"
+    ]
+   },
+   {
+    "near": "Durbuk",
+    "km_from_start": 109.1,
+    "atms": 1,
+    "banks": 1,
+    "names": [
+     "ATM",
+     "Bank"
+    ]
+   },
+   {
+    "near": "Tangtse",
+    "km_from_start": 147.7,
+    "atms": 0,
+    "banks": 1,
+    "names": [
+     "EBU"
+    ]
+   },
+   {
+    "near": "Spangmik",
+    "km_from_start": 222.0,
+    "atms": 0,
+    "banks": 1,
+    "names": [
+     "EBU"
+    ]
+   },
+   {
+    "near": "Chushul",
+    "km_from_start": 271.7,
+    "atms": 0,
+    "banks": 1,
+    "names": [
+     "EBU"
+    ]
+   },
+   {
+    "near": "Between Chushul and Hanle",
+    "km_from_start": 310,
+    "atms": 0,
+    "banks": 1,
+    "names": [
+     "J&K Bank - Small Business Unit"
+    ]
+   },
+   {
+    "near": "Hanle",
+    "km_from_start": 390.1,
+    "atms": 0,
+    "banks": 1,
+    "names": [
+     "J&K Bank - Small Business Unit"
+    ]
+   },
+   {
+    "near": "Nyoma",
+    "km_from_start": 467.5,
+    "atms": 0,
+    "banks": 1,
+    "names": [
+     "J&K Bank"
+    ]
+   },
+   {
+    "near": "Between Chumathang and Upshi",
+    "km_from_start": 687,
+    "atms": 0,
+    "banks": 1,
+    "names": [
+     "J&K Bank"
+    ]
+   },
+   {
+    "near": "Upshi",
+    "km_from_start": 719.5,
+    "atms": 0,
+    "banks": 2,
+    "names": [
+     "J&K Bank",
+     "J&K Bank - Small Business Unit"
+    ]
+   },
+   {
+    "near": "Leh",
+    "km_from_start": 767.6,
+    "atms": 6,
+    "banks": 15,
+    "names": [
+     "Axis Bank",
+     "Axis Bank ATM",
+     "Axis Bank Branch",
+     "Bank of Baroda",
+     "HDFC Bank",
+     "HDFC Bank ATM"
+    ]
+   }
+  ],
+  "longest_gaps": [
+   {
+    "from": "Nyoma",
+    "to": "Between Chumathang and Upshi",
+    "gap_km": 219
+   },
+   {
+    "from": "Tangtse",
+    "to": "Spangmik",
+    "gap_km": 91
+   },
+   {
+    "from": "Between Chushul and Hanle",
+    "to": "Hanle",
+    "gap_km": 80
+   }
+  ]
+ },
  "mechanics_left_out": [],
  "stays_left_out": [
   {
    "near": "Leh",
    "count": 435
+  }
+ ],
+ "photos": [
+  {
+   "near": "Leh",
+   "kind": "place",
+   "km_from_start": 0.0,
+   "title": "Leh Market Square (48975337958)",
+   "page": "https://commons.wikimedia.org/wiki/File:Leh_Market_Square_(48975337958).jpg",
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1d/Leh_Market_Square_%2848975337958%29.jpg/500px-Leh_Market_Square_%2848975337958%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "taken": "2018-07-02",
+   "author": "Chris Hunkeler from Carlsbad",
+   "licence": "CC BY-SA 2.0",
+   "licence_url": "https://creativecommons.org/licenses/by-sa/2.0"
+  },
+  {
+   "near": "Leh",
+   "kind": "place",
+   "km_from_start": 0.0,
+   "title": "Leh - Main Bazaar Road",
+   "page": "https://commons.wikimedia.org/wiki/File:Leh_-_Main_Bazaar_Road.jpg",
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fc/Leh_-_Main_Bazaar_Road.jpg/500px-Leh_-_Main_Bazaar_Road.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "taken": "2018-05-29",
+   "author": "Ingo Mehling",
+   "licence": "CC BY-SA 3.0",
+   "licence_url": "https://creativecommons.org/licenses/by-sa/3.0"
+  },
+  {
+   "near": "Chang La",
+   "kind": "pass",
+   "km_from_start": 76.4,
+   "title": "Leh Changla pass june 2026 2",
+   "page": "https://commons.wikimedia.org/wiki/File:Leh_Changla_pass_june_2026_2.jpg",
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ef/Leh_Changla_pass_june_2026_2.jpg/500px-Leh_Changla_pass_june_2026_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "taken": "2026-06-20",
+   "author": "Puneetripti",
+   "licence": "CC0",
+   "licence_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+  },
+  {
+   "near": "Chang La",
+   "kind": "pass",
+   "km_from_start": 76.4,
+   "title": "Chang La Pass (27989968543)",
+   "page": "https://commons.wikimedia.org/wiki/File:Chang_La_Pass_(27989968543).jpg",
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/37/Chang_La_Pass_%2827989968543%29.jpg/500px-Chang_La_Pass_%2827989968543%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "taken": "2016-07-06",
+   "author": "Ashwin Kumar from Bangalore",
+   "licence": "CC BY-SA 2.0",
+   "licence_url": "https://creativecommons.org/licenses/by-sa/2.0"
+  },
+  {
+   "near": "Spangmik",
+   "kind": "place",
+   "km_from_start": 222.0,
+   "title": "Panoramic view of Pnagong lake, Pangong Tso, view form Spangmik area, july 2022",
+   "page": "https://commons.wikimedia.org/wiki/File:Panoramic_view_of_Pnagong_lake,_Pangong_Tso,_view_form_Spangmik_area,_july_2022.jpg",
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ee/Panoramic_view_of_Pnagong_lake%2C_Pangong_Tso%2C_view_form_Spangmik_area%2C_july_2022.jpg/500px-Panoramic_view_of_Pnagong_lake%2C_Pangong_Tso%2C_view_form_Spangmik_area%2C_july_2022.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "taken": "2022-07-04",
+   "author": "Krzysztof Popławski",
+   "licence": "CC BY 4.0",
+   "licence_url": "https://creativecommons.org/licenses/by/4.0"
   }
  ]
 }
