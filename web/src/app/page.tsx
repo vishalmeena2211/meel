@@ -8,6 +8,7 @@ import { TopHead } from "@/components/shell";
 import { AskButton } from "@/components/ask/ask-button";
 import { HomeLinks } from "@/components/home-links";
 import { getAllRoutes, getApproaches, getIndex } from "@/lib/content";
+import { indiaDay } from "@/lib/format";
 import { SITE_LINE, SITE_NAME, SITE_URL } from "@/lib/site";
 import { confirmedLately } from "@/server/reports";
 
@@ -95,6 +96,7 @@ export default async function HomePage() {
         lines={lines}
         fromCities={fromCities}
         confirmed={await confirmedLately()}
+        month={Number(indiaDay().slice(5, 7))}
       />
       <HomeLinks />
     </div>

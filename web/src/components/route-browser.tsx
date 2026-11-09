@@ -9,6 +9,7 @@ import { km, plural } from "@/lib/format";
 import { useHomeView } from "@/lib/home-view";
 import { IN_THE_CITY_KM, useRidingFrom } from "@/lib/riding-from";
 import { spelledLike } from "@/lib/search";
+import { inSeason, monthsLeft, seasonWords } from "@/lib/seasons";
 import type { Region, RouteSummary } from "@/lib/types";
 
 import { AskMark } from "./ask/ask-mark";
@@ -47,12 +48,17 @@ function RouteCard({
   confirmed,
   showLevel,
   from,
+  month,
 }: {
   route: RouteSummary;
   confirmed: number;
   showLevel: boolean;
   from?: FromCity | null;
+  /** This month in India, 1 to 12, for the "In season" chip. */
+  month: number;
 }) {
+  const season = seasonWords(route.season);
+  const now = inSeason(route.season, month);
   const unwritten = route.level === "unwritten";
   // With a city picked, the distance to the start says more than the route's own length.
   const lead = from ? (from.km < IN_THE_CITY_KM ? `Starts in ${from.city}` : `${km(from.km)} from ${from.city}, to ${from.start}`) : null;
@@ -86,6 +92,12 @@ function RouteCard({
               ? `${lead ? `${lead} · ` : ""}${plural(route.facts, "fact")} · ${confirmed} confirmed by riders this week`
               : `${lead ?? (route.distance_km ? km(route.distance_km) : "")}${lead || route.distance_km ? " · " : ""}${plural(route.facts, "fact")}`}
         </span>
+        {season && !unwritten ? (
+          <span className="flex flex-wrap items-center gap-1.5">
+            {now ? <Badge tone="fresh">In season</Badge> : null}
+            <span className="hint num">{season === "All year" ? "Ridden all year" : `Usually ${season}`}</span>
+          </span>
+        ) : null}
       </span>
     </Link>
   );
@@ -221,6 +233,7 @@ export function RouteBrowser({
   lines,
   fromCities,
   confirmed,
+  month,
 }: {
   routes: RouteSummary[];
   regions: Region[];
@@ -228,6 +241,8 @@ export function RouteBrowser({
   fromCities: FromCities;
   /** For each route, how many facts riders confirmed in the last seven days. */
   confirmed: Record<string, number>;
+  /** This month in India, 1 to 12. Routes in season come first on the full list. */
+  month: number;
 }) {
   // With a city picked, the list starts nearest first (wireframes, screen 36). A chip, once tapped, wins.
   const picked = useRidingFrom();
@@ -267,10 +282,22 @@ export function RouteBrowser({
     return [...found].sort((a, b) => away(a.slug) - away(b.slug));
   })();
 
+  // On the full list with nothing typed, routes in season this month come first, so a shut road is not the first
+  // thing a rider sees in November. Each route appears once: in season, or under its region.
+  const seasonFirst = region === "all" && !query.trim();
+  const now = seasonFirst
+    ? shown
+        .filter((r) => r.level !== "unwritten" && inSeason(r.season, month))
+        .sort((a, b) => monthsLeft(b.season, month) - monthsLeft(a.season, month))
+    : [];
+  const rest = shown.filter((r) => !now.includes(r));
   const groups =
     region === "nearest" && city
       ? [{ id: "nearest", name: `Nearest to ${city.name}`, routes: shown }]
-      : regions.map((g) => ({ ...g, routes: shown.filter((r) => r.region === g.id) })).filter((g) => g.routes.length > 0);
+      : [
+          ...(now.length > 0 ? [{ id: "in-season", name: "In season now", routes: now }] : []),
+          ...regions.map((g) => ({ ...g, routes: rest.filter((r) => r.region === g.id) })),
+        ].filter((g) => g.routes.length > 0);
   const like = groups.length === 0 && query.trim() ? spelledLike(query, routes) : [];
 
   // A search that finds nothing tells Meel which roads riders look for. Only how many letters were typed is sent,
@@ -326,6 +353,7 @@ export function RouteBrowser({
                     confirmed={confirmed[r.slug] ?? 0}
                     showLevel={showLevel}
                     from={fromHere(r.slug)}
+                    month={month}
                   />
                 ))}
               </div>
@@ -398,6 +426,7 @@ export function RouteBrowser({
                         confirmed={confirmed[r.slug] ?? 0}
                         showLevel={showLevel}
                         from={fromHere(r.slug)}
+                    month={month}
                       />
                     ))}
                   </div>

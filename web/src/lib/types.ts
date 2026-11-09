@@ -350,6 +350,8 @@ export interface RouteSummary {
   highest_m: number | null;
   image: string | null;
   has_line: boolean;
+  /** Months it is usually ridden, 1 to 12, from data/site/seasons.json. Added when the index is read. */
+  season?: number[] | null;
 }
 
 export interface Region {

@@ -536,7 +536,7 @@ export function MechanicsSection({ view }: { view: RouteView }) {
     <Section id="mechanics">
       <SectionHeading id="mechanics-name" title="Mechanics" aside={plural(view.views.mechanics.length, "shop")} />
       {view.views.mechanics.length === 0 && left.length > 0 ? (
-        <PlentyAtEveryHalt left={left} noun="repair shop" />
+        <PlentyAtEveryHalt left={left} noun={["repair shop", "repair shops"]} />
       ) : left.length > 0 ? (
         <p className="hint num">
           Not listed: {left.map((t) => `${t.near} (${plural(t.count, "shop")} on the map)`).join(", ")}. This list is for
@@ -556,12 +556,12 @@ export function MechanicsSection({ view }: { view: RouteView }) {
  * For a route where every halt has plenty: no list, on purpose. Said plainly, with the counts from the open map,
  * so it does not read as "nobody has looked".
  */
-function PlentyAtEveryHalt({ left, noun }: { left: { near: string; count: number }[]; noun: string }) {
+function PlentyAtEveryHalt({ left, noun }: { left: { near: string; count: number }[]; noun: [one: string, many: string] }) {
   const top = [...left].sort((a, b) => b.count - a.count).slice(0, 5);
   return (
     <Callout tone="info" title="Plenty at every halt">
       Every halt on this route has many, so Meel does not list them one by one. On the open map:{" "}
-      {top.map((t) => `${t.near} ${plural(t.count, noun)}`).join(", ")}
+      {top.map((t) => `${t.near} ${plural(t.count, noun[0], noun[1])}`).join(", ")}
       {left.length > top.length ? `, and ${plural(left.length - top.length, "more halt")}` : ""}.
     </Callout>
   );
@@ -573,7 +573,7 @@ export function StaysSection({ view }: { view: RouteView }) {
     <Section id="stays">
       <SectionHeading id="stays-name" title="Stays" aside={plural(view.views.stays.length, "place")} />
       {view.views.stays.length === 0 && left.length > 0 ? (
-        <PlentyAtEveryHalt left={left} noun="place to stay" />
+        <PlentyAtEveryHalt left={left} noun={["place to stay", "places to stay"]} />
       ) : left.length > 0 ? (
         <p className="hint num">
           Not listed: {left.map((t) => `${t.near} (${plural(t.count, "place")} on the map)`).join(", ")}. This list is for
