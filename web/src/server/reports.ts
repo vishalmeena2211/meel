@@ -297,3 +297,98 @@ export async function recordOf(userId: string | null, name: string | null): Prom
   ]);
   return { sent, applied };
 }
+
+/** What is waiting for the editor, for the top of the daily report. */
+export interface Waiting {
+  stillTrue: number;
+  changed: number;
+  /** When the oldest unread fact report came in. */
+  oldestFact: string | null;
+  tripReports: number;
+  tripsToCheck: number;
+  /** Riders who asked to join a trip and have had no answer from its leader for two days or more. */
+  joinsUnanswered: number;
+  askReports: number;
+  places: number;
+}
+
+export async function waitingForEditor(now = new Date()): Promise<Waiting> {
+  const twoDaysAgo = new Date(now.getTime() - 2 * 86_400_000);
+  const weekAgo = new Date(now.getTime() - 7 * 86_400_000);
+  const [stillTrue, changed, oldest, tripReports, tripsToCheck, joinsUnanswered, askReports, places] = await Promise.all([
+    db().factReport.count({ where: { status: "new", kind: "still-true" } }),
+    db().factReport.count({ where: { status: "new", kind: "changed" } }),
+    db().factReport.findFirst({ where: { status: "new" }, orderBy: { createdAt: "asc" }, select: { createdAt: true } }),
+    db().tripReport.count({ where: { status: "new" } }),
+    db().trip.count({ where: { status: { in: ["waiting-for-editor", "hidden"] } } }),
+    db().tripMember.count({ where: { status: "asked", askedAt: { lt: twoDaysAgo } } }),
+    db().askReport.count({ where: { status: "new" } }),
+    db().suggestion.count({ where: { createdAt: { gt: weekAgo } } }),
+  ]);
+  return {
+    stillTrue,
+    changed,
+    oldestFact: oldest ? asMoment(oldest.createdAt) : null,
+    tripReports,
+    tripsToCheck,
+    joinsUnanswered,
+    askReports,
+    places,
+  };
+}
+
+/** Applies every unread "still true" report on one route at once. Reports of a change are left to be read one by one. */
+export async function applyAllStillTrue(routeSlug: string): Promise<number> {
+  const r = await db().factReport.updateMany({
+    where: { routeSlug, status: "new", kind: "still-true" },
+    data: { status: "applied", decidedAt: new Date() },
+  });
+  return r.count;
+}
+
+/** Unread "still true" reports, counted by route. */
+export async function stillTrueByRoute(): Promise<Array<{ routeSlug: string; count: number }>> {
+  const rows = await db().factReport.groupBy({
+    by: ["routeSlug"],
+    where: { status: "new", kind: "still-true" },
+    _count: { _all: true },
+  });
+  return rows.map((r) => ({ routeSlug: r.routeSlug, count: r._count._all })).sort((a, b) => b.count - a.count);
+}
+
+/**
+ * The editor's own ride: facts they saw themselves, saved as read "still true" reports in their name, the same as a
+ * rider's report once the editor has applied it. A fact the editor already confirmed on that same day is skipped.
+ */
+export async function confirmOwnRide(input: {
+  routeSlug: string;
+  seenOn: string;
+  facts: Array<{ id: string; title: string }>;
+  name: string;
+  userId: string;
+}): Promise<number> {
+  const seenOn = asDate(input.seenOn);
+  const already = await db().factReport.findMany({
+    where: { routeSlug: input.routeSlug, userId: input.userId, seenOn, kind: "still-true" },
+    select: { factId: true },
+  });
+  const done = new Set(already.map((r) => r.factId));
+  const now = new Date();
+  const rows = input.facts
+    .filter((f) => !done.has(f.id))
+    .map((f) => ({
+      id: newId(),
+      routeSlug: input.routeSlug,
+      factId: f.id,
+      factTitle: f.title.slice(0, 160),
+      kind: "still-true",
+      seenOn,
+      name: input.name,
+      userId: input.userId,
+      status: "applied",
+      decidedAt: now,
+    }));
+  if (rows.length === 0) return 0;
+  const r = await db().factReport.createMany({ data: rows });
+  return r.count;
+}

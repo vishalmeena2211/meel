@@ -1,14 +1,18 @@
 import "server-only";
 
+import { SITE_URL } from "@/lib/site";
+
 import { db } from "../db";
 import { indiaDay } from "../ask/store";
+import { waitingForEditor, type Waiting } from "../reports";
 
 import { mixpanelReady, riders, type Rider } from "./riders";
 import { searchWeek, type SearchWeek } from "./search";
 
 /*
   The visitor report sent to the editor on Telegram (plan: meel-daily-report-plan.md).
-  Every day: yesterday's real riders, the last 7 days, Google search, Ask Meel. Mondays add the week in detail.
+  Every day: what riders sent that is waiting to be read, then yesterday's real riders, the last 7 days, Google search,
+  Ask Meel. Mondays add the week in detail.
   A source that cannot be read becomes one line saying so; the rest still goes out.
 */
 
@@ -47,10 +51,17 @@ export async function buildReport({ weekly = false, now = new Date() }: { weekly
   const weekFrom = shift(today, -7);
   const lines: string[] = [`<b>Meel · ${esc(dayName(today))}</b>${weekly ? " · the week" : ""}`];
 
+  // What riders sent. First, because nothing a rider says counts on the site until the editor has read it.
+  try {
+    lines.push("", ...waitingLines(await waitingForEditor(now), now));
+  } catch {
+    lines.push("", "Waiting for you: could not read the database.");
+  }
+
   // Riders.
   let week: Rider[] | null = null;
   if (!mixpanelReady()) {
-    lines.push("", "Riders: Mixpanel is not connected yet (MIXPANEL_SA_USER and MIXPANEL_SA_SECRET in Vercel).");
+    lines.push("", "Riders: Mixpanel is not connected yet (MIXPANEL_SA_USER and MIXPANEL_SA_SECRET on the server).");
   } else {
     try {
       week = await riders(weekFrom, yesterday);
@@ -104,6 +115,26 @@ export async function buildReport({ weekly = false, now = new Date() }: { weekly
 
   lines.push("", `<i>Reply "now" for a fresh report, "week" for the week.</i>`);
   return lines.join("\n");
+}
+
+/** The "Waiting for you" lines. Says so plainly when nothing is waiting, so a quiet day reads as quiet, not broken. */
+export function waitingLines(w: Waiting, now = new Date()): string[] {
+  const parts: string[] = [];
+  const facts = w.stillTrue + w.changed;
+  if (facts > 0) {
+    const split = [w.stillTrue ? `${n(w.stillTrue)} still true` : null, w.changed ? `${n(w.changed)} changed` : null].filter(Boolean).join(", ");
+    const days = w.oldestFact ? Math.floor((now.getTime() - new Date(w.oldestFact).getTime()) / 86_400_000) : 0;
+    parts.push(` • ${n(facts)} fact report${facts === 1 ? "" : "s"} (${split})${days >= 1 ? `, oldest ${days} day${days === 1 ? "" : "s"} old` : ""}`);
+  }
+  if (w.tripReports) parts.push(` • ${n(w.tripReports)} trip report${w.tripReports === 1 ? "" : "s"}`);
+  if (w.tripsToCheck) parts.push(` • ${n(w.tripsToCheck)} trip${w.tripsToCheck === 1 ? "" : "s"} to check before riders see ${w.tripsToCheck === 1 ? "it" : "them"}`);
+  if (w.askReports) parts.push(` • ${n(w.askReports)} Ask Meel answer${w.askReports === 1 ? "" : "s"} marked wrong`);
+  if (w.places) parts.push(` • ${n(w.places)} place${w.places === 1 ? "" : "s"} suggested this week`);
+  if (w.joinsUnanswered) {
+    parts.push(` • ${n(w.joinsUnanswered)} rider${w.joinsUnanswered === 1 ? " has" : "s have"} asked to join a trip and heard nothing for 2 days (the leader answers, not you)`);
+  }
+  if (parts.length === 0) return ["<b>Waiting for you:</b> nothing."];
+  return [`<b>Waiting for you</b> · <a href="${SITE_URL}/editor">open the inbox</a>`, ...parts];
 }
 
 /**

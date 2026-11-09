@@ -3,7 +3,13 @@ import Link from "next/link";
 import { notFound, redirect } from "next/navigation";
 import type { ReactNode } from "react";
 
-import { decideAskAction, decideFactAction, decideTripAction, decideTripReportAction } from "@/app/actions/editor";
+import {
+  applyAllStillTrueAction,
+  decideAskAction,
+  decideFactAction,
+  decideTripAction,
+  decideTripReportAction,
+} from "@/app/actions/editor";
 import { PageTitle } from "@/components/form";
 import { IconCheck, IconClock, IconRight } from "@/components/icons";
 import { FactRow } from "@/components/route/fact-row";
@@ -23,6 +29,7 @@ import {
   inbox,
   othersSaying,
   recordOf,
+  stillTrueByRoute,
   type FactReportRow,
   type TripReportRow,
 } from "@/server/reports";
@@ -471,7 +478,7 @@ export default async function EditorPage(props: PageProps<"/editor">) {
   if (!user.is_editor) notFound();
 
   const query = await props.searchParams;
-  const [index, box, trips, asks] = await Promise.all([getIndex(), inbox(), tripsForEditor(), askInbox()]);
+  const [index, box, trips, asks, stillTrue] = await Promise.all([getIndex(), inbox(), tripsForEditor(), askInbox(), stillTrueByRoute()]);
   const nameOf = (slug: string) => index.routes.find((r) => r.slug === slug)?.name ?? slug;
 
   const items: Item[] = [
@@ -538,6 +545,35 @@ export default async function EditorPage(props: PageProps<"/editor">) {
           phone={{ title: "Editor", sub: `${items.length} to read`, back: "/account" }}
         />
         <p className="hint num px-1 pb-1">{today}</p>
+        {typeof query.applied === "string" ? (
+          <Callout tone="info" title={`${plural(Number(query.applied) || 0, "report")} applied`}>
+            {typeof query.route === "string" ? `“Still true” on ${nameOf(query.route)}. ` : ""}The route page shows the new dates
+            within a minute.
+          </Callout>
+        ) : null}
+        {stillTrue.length > 0 ? (
+          <>
+            <span className="label px-1 pt-2 pb-1">“Still true”, by route</span>
+            <div className="card flex flex-col">
+              {stillTrue.map((r) => (
+                <form
+                  key={r.routeSlug}
+                  action={applyAllStillTrueAction}
+                  className="flex min-h-12 items-center gap-2.5 border-b border-line px-3 py-2 last:border-b-0"
+                >
+                  <input type="hidden" name="route" value={r.routeSlug} />
+                  <span className="min-w-0 flex-1">
+                    <b className="block text-[0.9375rem] leading-5">{nameOf(r.routeSlug)}</b>
+                    <span className="hint">{plural(r.count, "report")}. Each is listed below to read first.</span>
+                  </span>
+                  <button type="submit" className="btn btn-soft shrink-0">
+                    Apply all
+                  </button>
+                </form>
+              ))}
+            </div>
+          </>
+        ) : null}
         <span className="label px-1 pt-2 pb-1">To read · {items.length}</span>
         {items.length === 0 ? <Empty title="Nothing to read" /> : null}
         {items.map((i) => (
@@ -572,6 +608,13 @@ export default async function EditorPage(props: PageProps<"/editor">) {
         ) : null}
 
         <span className="label px-1 pt-4 pb-1">Also</span>
+        <Link href="/editor/rode" className="card flex min-h-12 items-center gap-2.5 px-3 py-2.5 hover:border-ink-2">
+          <span className="min-w-0 flex-1">
+            <b className="block text-[0.9375rem] leading-5">I rode this</b>
+            <span className="hint">Confirm the facts you saw on your own ride</span>
+          </span>
+          <IconRight className="size-4 shrink-0 text-ink-2" />
+        </Link>
         <Link
           href="/editor/let-in"
           className="card flex min-h-12 items-center gap-2.5 px-3 py-2.5 hover:border-ink-2"
