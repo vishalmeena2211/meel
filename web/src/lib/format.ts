@@ -175,6 +175,24 @@ export function hostOf(url: string): string {
   }
 }
 
+/** "17:50" on the country's own clock, said as "5:50 pm". */
+export function clock12(hhmm: string): string {
+  const [h = 0, m = 0] = hhmm.split(":").map(Number);
+  return `${h % 12 || 12}:${String(m).padStart(2, "0")} ${h < 12 ? "am" : "pm"}`;
+}
+
+function whereOnRoad(stop: string): string {
+  if (stop === "start of route") return "the start";
+  if (stop === "end of route") return "the end of the road";
+  return stop.startsWith("Between ") ? `the road ${stop.charAt(0).toLowerCase()}${stop.slice(1)}` : stop;
+}
+
+/** "From Keylong to Upshi." On a loop, or between the same two halts, the ends can share a name. */
+export function stretchWords(from: string, to: string): string {
+  if (from !== to) return `From ${whereOnRoad(from)} to ${whereOnRoad(to)}.`;
+  return from.startsWith("Between ") ? `On ${whereOnRoad(from)}.` : `On the road out of ${from} and back.`;
+}
+
 export function plural(count: number, one: string, many = `${one}s`): string {
   return `${count.toLocaleString("en-IN")} ${count === 1 ? one : many}`;
 }

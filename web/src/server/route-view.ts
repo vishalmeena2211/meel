@@ -2,13 +2,14 @@ import "server-only";
 
 import { cache } from "react";
 
-import { getFactKinds, getIndex, getPackingList, getRoute } from "@/lib/content";
+import { getFactKinds, getIndex, getPackingList, getRoute, getShop } from "@/lib/content";
 import { factViews, warningsIn, type FactView, type FactViews } from "@/lib/fact-view";
 import { km, plural } from "@/lib/format";
 import { FROM_REPORTS, FROM_RIDERS, REPORTS_NEEDED, SECTION_NAMES, SECTION_ORDER, type SectionId } from "@/lib/sections";
 import { monthsFrom } from "@/lib/trip-checks";
 import type { PackingList, Route, RouteSummary } from "@/lib/types";
 
+import { packingForRoute } from "./packing-view";
 import { confirmationsFor, tripReportCount, tripReportsUsed } from "./reports";
 import { openTripsOnRoute, pastTripsOnRoute, type TripCard } from "./trips";
 
@@ -88,16 +89,18 @@ function ruleWords(route: Route): string {
 export const getRouteView = cache(async (slug: string): Promise<RouteView | null> => {
   const route = await getRoute(slug);
   if (!route) return null;
-  const [kinds, index, packing, confirmations, used, reportCount, trips, pastTrips] = await Promise.all([
+  const [kinds, index, list, shop, confirmations, used, reportCount, trips, pastTrips] = await Promise.all([
     getFactKinds(),
     getIndex(),
     getPackingList(route.terrain),
+    getShop(),
     confirmationsFor(slug),
     tripReportsUsed(slug),
     tripReportCount(slug),
     openTripsOnRoute(slug),
     pastTripsOnRoute(slug),
   ]);
+  const packing = packingForRoute(list, route, shop);
   const views = factViews(route, confirmations, kinds, new Date());
 
   const halts = new Set(route.waypoints.filter((w) => w.kind === "place" && w.altitude_m !== null).map((w) => w.name)).size;

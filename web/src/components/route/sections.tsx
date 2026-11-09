@@ -3,7 +3,19 @@ import Link from "next/link";
 import type { ReactNode } from "react";
 
 import type { FactView } from "@/lib/fact-view";
-import { daysBetween, hostOf, hours as sayHours, km, monthName, plural, sayAge, sayDate, sayMoment } from "@/lib/format";
+import {
+  clock12,
+  daysBetween,
+  hostOf,
+  hours as sayHours,
+  km,
+  monthName,
+  plural,
+  sayAge,
+  sayDate,
+  sayMoment,
+  stretchWords,
+} from "@/lib/format";
 import { REPORTS_NEEDED } from "@/lib/sections";
 import type { CashAlong, Daylight, LegHours, NetworkReport, RoadPhoto, SeasonYear, TowerHalt, Video } from "@/lib/types";
 import { readableHost, type AlertsRead, type ClosuresRead, type OfficeRead, type WeatherRead } from "@/server/live";
@@ -366,18 +378,6 @@ export function RulesSection({ view }: { view: RouteView }) {
   );
 }
 
-function where(stop: string): string {
-  if (stop === "start of route") return "the start";
-  if (stop === "end of route") return "the end of the road";
-  return stop.startsWith("Between ") ? `the road ${stop.charAt(0).toLowerCase()}${stop.slice(1)}` : stop;
-}
-
-/** "From Keylong to Upshi." On a loop, or between the same two halts, the ends can share a name. */
-function stretchWords(from: string, to: string): string {
-  if (from !== to) return `From ${where(from)} to ${where(to)}.`;
-  return from.startsWith("Between ") ? `On ${where(from)}.` : `On the road out of ${from} and back.`;
-}
-
 /** ATMs and banks by halt, under the fuel stops: cards and UPI often fail where the pumps are far apart. */
 function CashOnTheWay({ cash }: { cash: CashAlong }) {
   const gap = cash.longest_gaps[0];
@@ -488,10 +488,6 @@ export function RoadSection({ view }: { view: RouteView }) {
 export function DaylightTable({ daylight, months }: { daylight: Daylight[]; months: number[] | null }) {
   const shown = months && months.length > 0 ? months : [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
   if (daylight.length === 0) return null;
-  const clock = (t: string) => {
-    const [h = 0, m = 0] = t.split(":").map(Number);
-    return `${h % 12 || 12}:${String(m).padStart(2, "0")} ${h < 12 ? "am" : "pm"}`;
-  };
   return (
     <section className="flex flex-col gap-2">
       <SectionHeading title="Daylight at each halt" aside="Sunrise to sunset, mid-month" />
@@ -517,7 +513,7 @@ export function DaylightTable({ daylight, months }: { daylight: Daylight[]; mont
                   const t = d.months[m - 1];
                   return (
                     <td key={m} className="px-2 py-2 whitespace-nowrap">
-                      {t ? `${clock(t[0])}–${clock(t[1])}` : "–"}
+                      {t ? `${clock12(t[0])}–${clock12(t[1])}` : "–"}
                     </td>
                   );
                 })}
