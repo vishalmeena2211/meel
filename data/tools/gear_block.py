@@ -43,7 +43,8 @@ def main(args):
         print(f"• {i['item']}: {SITE}/go/{i['shop']}?route={slug}&from=youtube")
     print()
     print(f"The full packing list for this road, with why each thing is on it: {SITE}/routes/{slug}/packing")
-    print(f"These are {shop['store']['name']} links. {shop['disclosure']}")
+    # Said in the creator's own voice: the video description is theirs, and so is the Associates account.
+    print(f"These are {shop['store']['name']} links. As an {shop['store']['name']} Associate I earn from qualifying purchases.")
 
 
 if __name__ == "__main__":
