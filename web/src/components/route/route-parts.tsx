@@ -345,3 +345,27 @@ export function fuelWords(view: RouteView): string {
   if (fuel.pump_count === 0) return "No pumps on the map";
   return `${plural(fuel.pump_count, "pump")}${gap ? ` · longest gap ${km(gap.gap_km)}` : ""}`;
 }
+
+/**
+ * A way to the route's packing list from the pages people land on from search: a fact, a section, the route itself.
+ * Most riders arrive on one fact and leave from it; the list, by month and with this road's own reasons, is the
+ * next thing worth reading before a ride.
+ */
+export function PackingRow({ view }: { view: RouteView }) {
+  if (!view.packing) return null;
+  return (
+    <Link
+      href={`/routes/${view.route.slug}/packing`}
+      className="card flex min-h-12 items-center gap-2.5 px-3 py-2.5 hover:border-ink-2"
+    >
+      <span className="grid size-8 shrink-0 place-items-center rounded-md bg-surface-2">
+        <SectionIcon id="packing" />
+      </span>
+      <span className="min-w-0 flex-1">
+        <b className="block text-[0.9375rem] leading-5">Packing list for this route</b>
+        <span className="hint">By month, with this road&rsquo;s own reasons</span>
+      </span>
+      <IconRight className="size-4 shrink-0 text-ink-2" />
+    </Link>
+  );
+}

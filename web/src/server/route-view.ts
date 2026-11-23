@@ -6,8 +6,9 @@ import { getFactKinds, getIndex, getPackingList, getRoute, getSeasons, getShop }
 import { factViews, warningsIn, type FactView, type FactViews } from "@/lib/fact-view";
 import { km, plural } from "@/lib/format";
 import { FROM_REPORTS, FROM_RIDERS, REPORTS_NEEDED, SECTION_NAMES, SECTION_ORDER, type SectionId } from "@/lib/sections";
+import { shopOffer } from "@/lib/shop";
 import { monthsFrom } from "@/lib/trip-checks";
-import type { PackingList, Route, RouteSummary } from "@/lib/types";
+import type { PackingList, Route, RouteSummary, ShopOffer } from "@/lib/types";
 
 import { nearbyRoutes } from "./nearby";
 import { packingForRoute } from "./packing-view";
@@ -51,6 +52,8 @@ export interface RouteView {
   /** Facts a rider or the editor has confirmed. */
   confirmed: number;
   nearby: RouteSummary[];
+  /** Shop links for this route, by item, and the store's own line to show beside them. Empty while there is no tag. */
+  shop: { offers: Partial<Record<string, ShopOffer>>; disclosure: string | null };
   halts: number;
   start: string;
   end: string;
@@ -177,9 +180,16 @@ export const getRouteView = cache(async (slug: string): Promise<RouteView | null
   const mine = index.routes.find((r) => r.slug === slug);
   const nearby = await nearbyRoutes(slug, mine?.region ?? route.region);
 
+  const offers: Partial<Record<string, ShopOffer>> = {};
+  for (const key of Object.keys(shop?.items ?? {})) {
+    const offer = shopOffer(shop, key, slug);
+    if (offer) offers[key] = offer;
+  }
+
   return {
     route,
     views,
+    shop: { offers, disclosure: Object.keys(offers).length > 0 ? (shop?.disclosure ?? null) : null },
     sections,
     missing,
     packing,

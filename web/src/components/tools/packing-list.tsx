@@ -5,6 +5,7 @@ import { useState } from "react";
 import { monthName } from "@/lib/format";
 import type { PackingList as List } from "@/lib/types";
 import { parseStored, useStored } from "@/lib/use-stored";
+import { ShopLink } from "../shop-link";
 
 const LINK_WORDS: Record<string, { label: string; to: string }> = {
   "fuel-check": { label: "Fuel check", to: "fuel-check" },
@@ -89,14 +90,9 @@ export function PackingList({
                   ) : null}
                 </span>
                 {i.shop_link ? (
-                  <a
-                    className="link mt-1 inline-block text-sm font-medium"
-                    href={i.shop_link.href}
-                    target="_blank"
-                    rel="sponsored nofollow noopener"
-                  >
-                    Shop on {i.shop_link.store} ↗
-                  </a>
+                  <span className="mt-1.5 block">
+                    <ShopLink offer={i.shop_link} from="packing" />
+                  </span>
                 ) : null}
               </label>
             </li>

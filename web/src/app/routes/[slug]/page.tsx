@@ -9,6 +9,7 @@ import {
   BeforeYouLeave,
   FirstRows,
   levelWords,
+  PackingRow,
   RiddenIt,
   UncheckedNote,
   OnThisPage,
@@ -218,6 +219,8 @@ export default async function RoutePage(props: PageProps<"/routes/[slug]">) {
             {has("stays") ? <StaysSection view={view} /> : null}
             {has("videos") ? <VideosSection view={view} /> : null}
           </div>
+
+          <PackingRow view={view} />
 
           {nearby.length > 0 ? (
             <section className="flex flex-col gap-1.5" aria-labelledby="nearby-routes">

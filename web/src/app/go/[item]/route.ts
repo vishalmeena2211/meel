@@ -1,4 +1,5 @@
 import { getShop } from "@/lib/content";
+import { SHOP_FROM } from "@/lib/shop";
 import { trackOnServer } from "@/server/analytics";
 
 /*
@@ -10,7 +11,7 @@ import { trackOnServer } from "@/server/analytics";
   Search engines are kept out (robots.ts, and the header below): these links are paid ones.
 */
 
-const SOURCES = new Set(["page", "youtube"]);
+const SOURCES = new Set<string>(SHOP_FROM);
 
 function notHere(): Response {
   return new Response("No shop link here.", {
