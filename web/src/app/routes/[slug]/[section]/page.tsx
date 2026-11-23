@@ -22,7 +22,7 @@ import {
   TripsOnRoute,
   VideosSection,
 } from "@/components/route/sections";
-import { SectionChips, UncheckedNote } from "@/components/route/route-parts";
+import { PackingRow, SectionChips, UncheckedNote } from "@/components/route/route-parts";
 import { SinceLastVisit } from "@/components/route/since-last-visit";
 import { AskButton } from "@/components/ask/ask-button";
 import { BackHead, Foot } from "@/components/shell";
@@ -35,7 +35,9 @@ import { TellHome } from "@/components/tools/tell-home";
 import { TripCardView } from "@/components/trips/trip-card";
 import { Callout, SectionHeading } from "@/components/ui";
 import { getApproaches, getBikes, getIndex, getRouteHelp } from "@/lib/content";
-import { sayAge, daysBetween, feet, km } from "@/lib/format";
+import { sayAge, clock12, daysBetween, feet, km, monthName } from "@/lib/format";
+import { coldHalts } from "@/lib/road-facts";
+import type { Route, ShopOffer } from "@/lib/types";
 import {
   fuelCheckDescription,
   fuelCheckSearchTitle,
@@ -48,6 +50,7 @@ import { allSources } from "@/lib/sources";
 import { alertsFor, closuresFor, officeDates, weatherFor } from "@/server/live";
 import { noTripsYet, routePaths } from "@/server/route-pages";
 import { getRouteView, type RouteView } from "@/server/route-view";
+import { ShopNeed } from "@/components/shop-link";
 import { openTrips } from "@/server/trips";
 
 export const revalidate = 3600;
@@ -104,6 +107,27 @@ export async function generateMetadata(props: PageProps<"/routes/[slug]/[section
     description,
     ...(emptyTrips ? { robots: { index: false, follow: true } } : {}),
   };
+}
+
+/** The shop links for these items on this route, in this order, leaving out any the store does not have. */
+function offersFor(view: RouteView, keys: string[]): ShopOffer[] {
+  return keys.map((k) => view.shop.offers[k]).filter((o): o is ShopOffer => !!o);
+}
+
+/** A head lamp is offered only when a halt's sunset is this early in a month people ride the road. */
+const DARK_BY = "17:30";
+
+/** The earliest sunset at any halt, in the months the road is ridden, when it is before DARK_BY. */
+function earliestDark(route: Route, months: number[] | null): { name: string; set: string; month: number } | null {
+  const shown = months && months.length > 0 ? months : [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
+  let found: { name: string; set: string; month: number } | null = null;
+  for (const h of route.daylight ?? []) {
+    for (const m of shown) {
+      const set = h.months[m - 1]?.[1];
+      if (set && set < DARK_BY && (!found || set < found.set)) found = { name: h.name, set, month: m };
+    }
+  }
+  return found;
 }
 
 /** Sections made of facts. They carry the row of chips, and say what changed since the rider's last visit. */
@@ -181,6 +205,8 @@ async function SectionBody(props: PageProps<"/routes/[slug]/[section]">) {
           routeSlug={slug}
           note={gapNote(view)}
           popular={popular}
+          fuelCan={view.shop.offers["fuel-can"] ?? null}
+          disclosure={view.shop.disclosure}
         />
       );
     }
@@ -303,6 +329,8 @@ async function SectionBody(props: PageProps<"/routes/[slug]/[section]">) {
   }
 
   if (section === "altitude") {
+    const cold = coldHalts(route);
+    const dark = earliestDark(route, view.seasonMonths);
     const highest = route.waypoints
       .filter((w) => w.kind === "place" && w.altitude_m !== null)
       .sort((a, b) => (b.altitude_m ?? 0) - (a.altitude_m ?? 0))[0];
@@ -317,7 +345,19 @@ async function SectionBody(props: PageProps<"/routes/[slug]/[section]">) {
           routeSlug={slug}
           highest={highest?.name ?? null}
         />
+        {cold.length > 0 ? (
+          <ShopNeed offers={offersFor(view, ["warm-layer", "winter-gloves"])} from="altitude" disclosure={view.shop.disclosure}>
+            {cold.map((w) => `${w.name} (${feet(w.altitude_m)})`).join(" and ")} can drop below freezing at night, even in
+            summer.
+          </ShopNeed>
+        ) : null}
         <DaylightTable daylight={route.daylight ?? []} months={view.seasonMonths} />
+        {dark ? (
+          <ShopNeed offers={offersFor(view, ["head-lamp"])} from="daylight" disclosure={view.shop.disclosure}>
+            Sunset at {dark.name} is {clock12(dark.set)} in {monthName(dark.month)}. Plan to be in before dark; a head lamp
+            helps if you are not.
+          </ShopNeed>
+        ) : null}
       </div>
     );
   }
@@ -377,6 +417,7 @@ async function SectionBody(props: PageProps<"/routes/[slug]/[section]">) {
           Newest change in this section: {sayAge(daysBetween(newest.slice(0, 10), new Date()))}.
         </p>
       ) : null}
+      {section !== "packing" ? <PackingRow view={view} /> : null}
     </div>
   );
 }

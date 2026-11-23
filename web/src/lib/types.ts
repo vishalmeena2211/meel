@@ -391,7 +391,7 @@ export interface PackingItem {
   /** This road's own reason for one month (1 to 12), such as an early sunset. Shown before `road_reason`. */
   month_reasons?: Record<number, string>;
   /** Where the shop link goes, worked out on the server. Absent while the store has no tag. */
-  shop_link?: { store: string; href: string };
+  shop_link?: ShopOffer;
 }
 
 export interface PackingList {
@@ -403,10 +403,19 @@ export interface PackingList {
 }
 
 /** site/shop.json: the store, and what each shop key searches for or points at. */
+/** One shop link, ready to show: "See winter gloves on Amazon", going through Meel's own /go/ address. */
+export interface ShopOffer {
+  store: string;
+  /** "winter gloves". */
+  name: string;
+  /** /go/<item>?route=<slug>. The place it is shown adds its own "from". */
+  href: string;
+}
+
 export interface ShopFile {
   store: { name: string; host: string; tag: string };
   disclosure: string;
-  items: Record<string, { search?: string; url?: string }>;
+  items: Record<string, { search?: string; url?: string; name?: string }>;
 }
 
 export interface FactKind {

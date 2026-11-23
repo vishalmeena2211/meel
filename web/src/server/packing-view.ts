@@ -2,6 +2,7 @@ import "server-only";
 
 import { clock12, feet, km, monthName, stretchWords } from "@/lib/format";
 import { coldHalts, longCashGap, longFuelGap } from "@/lib/road-facts";
+import { shopOffer } from "@/lib/shop";
 import type { PackingItem, PackingList, Route, ShopFile } from "@/lib/types";
 
 /*
@@ -65,12 +66,6 @@ function withPeriod(text: string): string {
   return /[.!?]$/.test(text) ? text : `${text}.`;
 }
 
-/** Where a shop key's link goes on Meel's own address. Null while the store has no tag, or the key is unknown. */
-export function shopHref(shop: ShopFile | null, key: string | undefined, routeSlug: string): string | null {
-  if (!shop || !key || !shop.store.tag.trim() || !shop.items[key]) return null;
-  return `/go/${key}?route=${encodeURIComponent(routeSlug)}`;
-}
-
 export function packingForRoute(list: PackingList | null, route: Route, shop: ShopFile | null): PackingList | null {
   if (!list) return null;
   const items: PackingItem[] = list.items.map((item) => {
@@ -83,12 +78,12 @@ export function packingForRoute(list: PackingList | null, route: Route, shop: Sh
     else if (item.shop === "head-lamp") month_reasons = sunsetReasons(route, general);
     else if (item.shop === "waterproof-boots") road_reason = waterReason(route, general);
 
-    const href = shopHref(shop, item.shop, route.slug);
+    const offer = shopOffer(shop, item.shop, route.slug);
     return {
       ...item,
       ...(road_reason ? { road_reason } : {}),
       ...(month_reasons ? { month_reasons } : {}),
-      ...(href && shop ? { shop_link: { store: shop.store.name, href } } : {}),
+      ...(offer ? { shop_link: offer } : {}),
     };
   });
   const anyShop = items.some((i) => i.shop_link);

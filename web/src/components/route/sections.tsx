@@ -28,6 +28,7 @@ import { Badge, Callout, Empty, SectionHeading, SourceLine } from "../ui";
 import { GapStrip } from "./drawings";
 import { FactRow } from "./fact-row";
 import { OfficialAlerts, PassWeather, PwdClosures } from "./live-parts";
+import { ShopNeed } from "../shop-link";
 
 const GRID = "grid gap-2 lg:grid-cols-2";
 
@@ -464,6 +465,9 @@ function RoadPhotos({ photos }: { photos: RoadPhoto[] }) {
 
 export function RoadSection({ view }: { view: RouteView }) {
   const photos = view.route.photos ?? [];
+  // The same water-crossing warning the packing list names for waterproof boots.
+  const crossing = view.route.hazards.find((h) => /water crossing/i.test(h.title));
+  const boots = view.shop.offers["waterproof-boots"];
   return (
     <Section id="road">
       <SectionHeading id="road-name" title="Trouble on the road" aside={plural(view.views.road.length, "warning")} />
@@ -478,6 +482,11 @@ export function RoadSection({ view }: { view: RouteView }) {
             ))}
           </div>
         </>
+      ) : null}
+      {crossing && boots ? (
+        <ShopNeed offers={[boots]} from="road" disclosure={view.shop.disclosure}>
+          {crossing.title}. Wet boots at height mean cold feet for the rest of the day.
+        </ShopNeed>
       ) : null}
       {photos.length > 0 ? <RoadPhotos photos={photos} /> : null}
     </Section>

@@ -1,5 +1,5 @@
 {
-  "about": "Shop links on the packing lists. Each item here is something a rider can buy; the packing lists name it by key. Links open a search on the store, or a product picked by hand (\"url\", which must be on the store's own host). The tag is the store's affiliate tag. It is public: it appears in every link. While it is empty, no shop link is shown anywhere.",
+  "about": "Shop links on the packing lists. Each item here is something a rider can buy; the packing lists name it by key. Links open a search on the store, or a product picked by hand (\"url\", which must be on the store's own host). The tag is the store's affiliate tag. It is public: it appears in every link. While it is empty, no shop link is shown anywhere. \"name\" is how the item is said on its button: \"See winter gloves on Amazon\".",
   "store": {
     "name": "Amazon",
     "host": "www.amazon.in",
@@ -7,21 +7,69 @@
   },
   "disclosure": "As an Amazon Associate Meel earns from qualifying purchases.",
   "items": {
-    "waterproof-boots": { "search": "waterproof motorcycle riding boots" },
-    "winter-gloves": { "search": "winter motorcycle riding gloves waterproof" },
-    "warm-layer": { "search": "thermal base layer for riding" },
-    "rain-suit": { "search": "motorcycle rain suit" },
-    "mesh-jacket": { "search": "mesh motorcycle riding jacket CE armour" },
-    "puncture-kit": { "search": "tubeless tyre puncture repair kit with mini air pump" },
-    "chain-lube": { "search": "motorcycle chain lube spray" },
-    "fuel-can": { "search": "metal fuel can 5 litre" },
-    "clear-glasses": { "search": "clear anti fog riding glasses" },
-    "sun-care": { "search": "sunscreen SPF 50 and UV400 sunglasses" },
-    "hydration-pack": { "search": "hydration backpack 2 litre" },
-    "head-lamp": { "search": "rechargeable head lamp" },
-    "bungee-cords": { "search": "motorcycle bungee cords luggage net" },
-    "ear-plugs": { "search": "motorcycle riding ear plugs" },
-    "reflective-vest": { "search": "reflective safety vest for bikers" },
-    "bike-wash": { "search": "motorcycle wash shampoo" }
+    "waterproof-boots": {
+      "search": "waterproof motorcycle riding boots",
+      "name": "waterproof boots"
+    },
+    "winter-gloves": {
+      "search": "winter motorcycle riding gloves waterproof",
+      "name": "winter gloves"
+    },
+    "warm-layer": {
+      "search": "thermal base layer for riding",
+      "name": "thermal layers"
+    },
+    "rain-suit": {
+      "search": "motorcycle rain suit",
+      "name": "rain suits"
+    },
+    "mesh-jacket": {
+      "search": "mesh motorcycle riding jacket CE armour",
+      "name": "mesh jackets"
+    },
+    "puncture-kit": {
+      "search": "tubeless tyre puncture repair kit with mini air pump",
+      "name": "puncture kits"
+    },
+    "chain-lube": {
+      "search": "motorcycle chain lube spray",
+      "name": "chain lube"
+    },
+    "fuel-can": {
+      "search": "metal fuel can 5 litre",
+      "name": "fuel cans"
+    },
+    "clear-glasses": {
+      "search": "clear anti fog riding glasses",
+      "name": "clear riding glasses"
+    },
+    "sun-care": {
+      "search": "sunscreen SPF 50 and UV400 sunglasses",
+      "name": "sunscreen"
+    },
+    "hydration-pack": {
+      "search": "hydration backpack 2 litre",
+      "name": "hydration packs"
+    },
+    "head-lamp": {
+      "search": "rechargeable head lamp",
+      "name": "head lamps"
+    },
+    "bungee-cords": {
+      "search": "motorcycle bungee cords luggage net",
+      "name": "bungee cords"
+    },
+    "ear-plugs": {
+      "search": "motorcycle riding ear plugs",
+      "name": "ear plugs"
+    },
+    "reflective-vest": {
+      "search": "reflective safety vest for bikers",
+      "name": "reflective vests"
+    },
+    "bike-wash": {
+      "search": "motorcycle wash shampoo",
+      "name": "bike wash"
+    }
   }
 }

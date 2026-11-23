@@ -5,12 +5,13 @@ import { useMemo, useState } from "react";
 
 import { track } from "@/lib/analytics";
 import { km } from "@/lib/format";
-import type { Bike, FuelGap, Terrain } from "@/lib/types";
+import type { Bike, FuelGap, ShopOffer, Terrain } from "@/lib/types";
 import { parseStored, useStored } from "@/lib/use-stored";
 
 import { IconSearch } from "../icons";
 import { BackHead, Foot } from "../shell";
 import { Callout } from "../ui";
+import { ShopNeed } from "../shop-link";
 
 const RESERVE = 0.2; // one fifth of the tank is never counted
 
@@ -58,6 +59,8 @@ export function FuelCheckScreen({
   routeSlug,
   note,
   popular,
+  fuelCan = null,
+  disclosure = null,
 }: {
   bikes: Bike[];
   gaps: FuelGap[];
@@ -67,6 +70,9 @@ export function FuelCheckScreen({
   note: GapNote;
   /** Bike names from trip reports on this route, most taken first. Empty until riders report. */
   popular: string[];
+  /** The fuel can's shop link, offered only when the rider's tank does not cover the gap. */
+  fuelCan?: ShopOffer | null;
+  disclosure?: string | null;
 }) {
   const [raw, setRaw] = useStored("meel:bike");
   const saved = parseStored(raw, isSavedBike);
@@ -224,11 +230,19 @@ export function FuelCheckScreen({
         </dl>
 
         {bad ? (
-          <Callout tone="warn" title={`Fill up at ${longest.near_from}`}>
-            {note.pumpWords
-              ? `The pump there ${note.pumpWords}. Check it before you count on it.`
-              : "It is the last pump on the open map before the gap. Check it before you count on it."}
-          </Callout>
+          <>
+            <Callout tone="warn" title={`Fill up at ${longest.near_from}`}>
+              {note.pumpWords
+                ? `The pump there ${note.pumpWords}. Check it before you count on it.`
+                : "It is the last pump on the open map before the gap. Check it before you count on it."}
+            </Callout>
+            {fuelCan ? (
+              <ShopNeed offers={[fuelCan]} from="fuel-check" disclosure={disclosure}>
+                You need room for {carry} more litres on this stretch. Fuel cans come in 5, 10 and 20 litres; strap one low and
+                away from the exhaust.
+              </ShopNeed>
+            ) : null}
+          </>
         ) : (
           <Callout title="This assumes every pump is working">
             {note.before

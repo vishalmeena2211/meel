@@ -14,6 +14,7 @@ import { factSearchTitle } from "@/lib/search-titles";
 import { isSection, SECTION_NAMES } from "@/lib/sections";
 import { SITE_URL } from "@/lib/site";
 import { getRouteView } from "@/server/route-view";
+import { PackingRow } from "@/components/route/route-parts";
 
 // One fact has an address of its own, so it can be pasted into a chat group. Made when first asked for.
 export const revalidate = 3600;
@@ -108,6 +109,7 @@ export default async function FactPage(props: PageProps<"/routes/[slug]/[section
           {fuel ? `All ${list.length} pumps on this route` : `All ${list.length} facts in ${names.name}`}
         </Link>
       ) : null}
+      <PackingRow view={view} />
       <Link className="btn btn-outline self-start" href={`/routes/${slug}`}>
         All of {view.route.name}
       </Link>
