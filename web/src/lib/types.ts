@@ -405,6 +405,8 @@ export interface PackingList {
 /** site/shop.json: the store, and what each shop key searches for or points at. */
 /** One shop link, ready to show: "See winter gloves on Amazon", going through Meel's own /go/ address. */
 export interface ShopOffer {
+  /** The item's key in site/shop.json: "winter-gloves". */
+  item: string;
   store: string;
   /** "winter gloves". */
   name: string;
