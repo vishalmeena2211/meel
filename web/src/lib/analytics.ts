@@ -2,6 +2,7 @@ import type { Mixpanel } from "mixpanel-browser";
 
 import { ANALYTICS_ON, MIXPANEL_API_HOST, MIXPANEL_TOKEN, RECORD_PERCENT } from "./analytics-config";
 import type { EventName, EventProps } from "./analytics-events";
+import { isRobotName } from "./robots";
 
 /*
   What Meel tells Mixpanel, in the browser only. Which project, and when counting is on: analytics-config.ts.
@@ -25,17 +26,10 @@ const SEND = ANALYTICS_ON;
 
 let started: Promise<Mixpanel | null> | null = null;
 
-// Words in the browser's name that only programs use. Mixpanel skips the crawlers it knows by name (Googlebot,
-// Bingbot), but not a browser run by a program: headless Chrome, Google's own page inspector, SEO crawlers, link
-// previews, test tools. On 8 October 2026 these were 12 of Meel's first 17 "visitors".
-const ROBOT = /bot\b|bot\/|crawl|spider|slurp|headless|lighthouse|inspectiontool|pagespeed|preview|phantom|selenium|puppeteer|playwright/i;
-
-/** A browser run by a program, not a person. Such a visit is neither counted nor recorded. */
+/** A browser run by a program, not a person (robots.ts). Such a visit is neither counted nor recorded. */
 export function looksAutomated(): boolean {
   try {
-    const ua = navigator.userAgent;
-    // A phone named Cubot carries "bot" in its name; its owner is a person.
-    return navigator.webdriver === true || (ROBOT.test(ua) && !/cubot/i.test(ua));
+    return navigator.webdriver === true || isRobotName(navigator.userAgent);
   } catch {
     return false;
   }

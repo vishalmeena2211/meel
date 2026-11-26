@@ -25,7 +25,8 @@ export const EVENTS = {
   "Fuel check run": "A rider worked out fuel for a bike. route, bike, from (maker's figures or the rider's own).",
   "Night halts checked": "The altitude check was run on chosen night halts. route, nights.",
   "Packing month picked": "A month was picked on a packing list. route, month.",
-  "Shop link opened": "A shop link on a packing list was opened. Sent from the server. item, store, route, from (page or youtube).",
+  "Shop link opened":
+    "A shop link was opened. Counted by the rider's browser for a link pressed on Meel's pages; by the server only for a link from outside Meel (a video's description), from a person's browser. item, store, route, from (packing, fuel-check, altitude, daylight, road or youtube), counted_by (browser or server). Counts made before 28 November 2026 have no counted_by and are mostly robots.",
   "Route saved for no network": "A route's pages were kept on the phone. route, pages.",
   "Saved route removed": "A route kept on the phone was removed. route.",
   "Route file downloaded": "The GPX file was opened or downloaded. route.",
