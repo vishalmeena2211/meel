@@ -9,8 +9,9 @@ import { ShareButton } from "@/components/route/share-button";
 import { BackHead } from "@/components/shell";
 import { Callout, SectionHeading } from "@/components/ui";
 import { AskButton } from "@/components/ask/ask-button";
+import { getFactRoutes, getSearchTitles } from "@/lib/content";
 import { plural } from "@/lib/format";
-import { factSearchTitle } from "@/lib/search-titles";
+import { factCanonical, factSearchDescription, factSearchTitle } from "@/lib/search-titles";
 import { isSection, SECTION_NAMES } from "@/lib/sections";
 import { SITE_URL } from "@/lib/site";
 import { getRouteView } from "@/server/route-view";
@@ -34,14 +35,17 @@ export async function generateMetadata(props: PageProps<"/routes/[slug]/[section
   const found = await find(slug, section, fact);
   if (!found) return { title: "No such fact" };
   const { view, fact: f } = found;
-  // The card a chat app shows, and the line under a search result, carry the answer and its date.
+  const [searchTitles, factRoutes] = await Promise.all([getSearchTitles(), getFactRoutes()]);
+  const override = searchTitles?.pages[f.href];
+  // The card a chat app shows keeps the fact's own title and its full answer with who confirmed it and when.
   const title = `${f.title} · ${view.route.name}`;
   const description = f.snippet;
   return {
-    // The search result's title says the answer in the words riders search; the chat card keeps the fact's own title.
-    title: factSearchTitle(f, view.route),
-    description,
-    alternates: { canonical: f.href },
+    // A search result says the answer in the words riders search, in the room Google gives it.
+    title: factSearchTitle(f, view.route, override),
+    description: factSearchDescription(f, override),
+    // A rule repeated on several routes is one page to Google, so the copies don't compete for the same search.
+    alternates: { canonical: factCanonical(f, searchTitles, factRoutes.get(f.id) ?? []) },
     openGraph: { title, description, url: f.href, type: "article", siteName: "Meel", locale: "en_IN" },
     twitter: { card: "summary_large_image", title, description },
   };

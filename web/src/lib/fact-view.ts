@@ -39,6 +39,13 @@ export interface FactView {
    * confirmed it and when. A rider who never taps the link still gets a dated fact.
    */
   snippet: string;
+  /** The snippet's answer on its own, without the sentence on how far to trust it. */
+  answer: string;
+  /**
+   * How far to trust it, short enough for the end of a search result: a rider's word or a pending change in full,
+   * otherwise only where it is from and the month ("Source: carferry.in, Sept 2026.").
+   */
+  trustShort: string | null;
   long: string | null;
   meta: string | null;
   caution: string | null;
@@ -136,6 +143,21 @@ function trustOf(standing: FactStanding, source: Source | null, verb: string): s
   if (!source) return "Not yet confirmed by a rider.";
   const from = source.kind === "map" ? "From the open map" : `From ${hostOf(source.url)}`;
   return `${from}, read ${sayDate(source.accessed)}. Not yet confirmed by a rider.`;
+}
+
+/**
+ * The trust sentence for a search result, where about 155 letters show. What a rider said, or a change being
+ * checked, is kept whole. An unchecked fact gives only its source and month: "Not yet confirmed by a rider" stays on
+ * the page, where the rider reads it before relying on the fact.
+ */
+function trustShortOf(standing: FactStanding, source: Source | null, verb: string): string | null {
+  if (standing.latest || (standing.state === "pending" && standing.waiting) || standing.state === "conflict") {
+    return trustOf(standing, source, verb);
+  }
+  if (!source) return null;
+  const from = source.kind === "map" ? "the open map" : hostOf(source.url);
+  const month = source.accessed ? sayDate(source.accessed.slice(0, 7), true) : null;
+  return `Source: ${from}${month ? `, ${month}` : ""}.`;
 }
 
 function explainOf(
@@ -269,6 +291,8 @@ export function factViews(route: Route, confirmations: Confirmation[], kinds: Fa
       line: quietLine(lineOf(standing, m.source, verb, m.order ?? true), routeUnchecked && state === "unchecked"),
       quiet: routeUnchecked && state === "unchecked",
       snippet: [stop(rewritten ?? m.lead ?? m.short ?? m.title), trustOf(standing, m.source, verb)].join(" "),
+      answer: stop(rewritten ?? m.lead ?? m.short ?? m.title),
+      trustShort: trustShortOf(standing, m.source, verb),
       long: rewritten ? `${rewritten} Before that: ${m.long ?? m.short ?? ""}`.trim() : m.long,
       meta: m.meta ?? null,
       caution: m.caution ?? null,
