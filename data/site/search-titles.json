@@ -1,0 +1,120 @@
+{
+  "_about": "What Google shows for Meel's most-searched pages, written by hand in the words riders search (Search Console, the 28 days to 24 November 2026). Kept out of data/routes because those files are rebuilt by data/tools. `pnpm titles:check` fails when a number in a title or lead is not in the fact itself, so a changed fact forces its title to change too.",
+  "pages": {
+    "/routes/andhra-araku-gandikota": {
+      "title": "Vizag to Gandikota by bike via Araku: 928 km route guide"
+    },
+    "/routes/assam-kaziranga-majuli/rules/majuli-ferry-online-ticket": {
+      "title": "Majuli ferry tickets: online or at the ghat counter",
+      "lead": "Book on the state ferry portal, which lists Nimati and Kamalabari and sells tickets in advance, or at the counter. Online tickets began at Nimati Ghat in 2021."
+    },
+    "/routes/assam-kaziranga-majuli/rules/majuli-ferry-timings": {
+      "title": "Majuli ferry timings: 7:30 am to 3:30 pm from Nimati",
+      "lead": "Ferries from Nimati Ghat to Kamalabari or Aphalamukh run 7:30 am to 3:30 pm, says the district site. Book ahead; winter timings are shorter."
+    },
+    "/routes/darcha-shinku-la-padum/rules/lahaul-spiti-e-aagman-vehicle-pass": {
+      "title": "e-Aagman pass for Lahaul–Spiti: bikes need one too",
+      "lead": "Every vehicle entering Lahaul and Spiti, motorcycles included, applies online: an e-permit for the Atal Tunnel–Chandratal circuit, an e-ticket elsewhere."
+    },
+    "/routes/goa-gokarna-karnataka-coast/rules/goa-helmet-rider-and-pillion": {
+      "title": "Goa helmet rule: compulsory for rider and pillion",
+      "lead": "Both rider and pillion. Central law says anyone over four on a two-wheeler wears a helmet; Goa said in January 2026 it would enforce the pillion rule."
+    },
+    "/routes/golden-quadrilateral/rules/ahmedabad-vadodara-expressway-no-two-wheelers": {
+      "title": "Bikes on Ahmedabad–Vadodara Expressway? No, ride NH 48",
+      "lead": "No. Two-wheelers are barred; ride NH 48 via Nadiad and Anand instead."
+    },
+    "/routes/golden-quadrilateral/rules/delhi-mumbai-expressway-no-two-wheelers": {
+      "title": "Bikes on Delhi–Mumbai Expressway? Not allowed",
+      "lead": "No. Motorcycles, scooters, three-wheelers and tractors are barred by gazette notice. Ride the old highway through Jaipur instead."
+    },
+    "/routes/golden-quadrilateral/rules/mumbai-pune-expressway-no-two-wheelers": {
+      "title": "Bikes on Mumbai–Pune Expressway? No, take old NH 48",
+      "lead": "No. Two-wheelers are barred, the new Missing Link included. Ride the old highway, NH 48, via Khopoli, Khandala and Lonavala."
+    },
+    "/routes/konkan-coast/fuel/node-13786285001": {
+      "title": "Malvan CNG pump: Bharat Petroleum, 29 km on the Goa road",
+      "lead": "Bharat Petroleum pump with petrol and CNG, 29 km after Malvan on the way to Panaji. Next pump 1 km on."
+    },
+    "/routes/konkan-coast/rules/atal-setu-two-wheelers-barred": {
+      "title": "Are bikes allowed on Atal Setu? No, two-wheelers barred",
+      "lead": "No. Two-wheelers, three-wheelers, cycles and animal carts may not enter the Sewri to Nhava Sheva sea link. Use another road or the ferry."
+    },
+    "/routes/konkan-coast/rules/ferry-agardanda-dighi": {
+      "title": "Agardanda–Dighi ferry timings: 8 am to 9 pm, hourly",
+      "lead": "Boats about hourly: from Agardanda 8 am to 8.30 pm, from Dighi 8 am to 9 pm; two operators alternate. Motorcycles go with their rider."
+    },
+    "/routes/konkan-coast/rules/ferry-dabhol-dhopave": {
+      "title": "Dabhol–Dhopave ferry timings: 6.30 am–10.10 pm, bikes go",
+      "lead": "Boats about every 45 minutes: from Dabhol 6.30 am to 10 pm, from Dhopave 6.45 am to 10.10 pm. Motorcycles go with their rider."
+    },
+    "/routes/konkan-coast/rules/ferry-tavsal-jaigad": {
+      "title": "Tavsal–Jaigad ferry timings: 6.40 am to 10 pm, bikes go",
+      "lead": "Boats roughly hourly: from Tavsal 6.40 am to 9.40 pm, from Jaigad 7 am to 10 pm. Motorcycles go with their rider."
+    },
+    "/routes/konkan-coast/rules/mumbai-coastal-road-two-wheelers-barred": {
+      "title": "Bikes on Mumbai Coastal Road? No, cars and buses only",
+      "lead": "No. Only cars and buses may use the Coastal Road from Marine Lines to Worli."
+    },
+    "/routes/mussoorie-dhanaulti-chakrata/rules/mussoorie-mall-road-evening-vehicle-ban": {
+      "title": "Mussoorie Mall Road timings: no vehicles 4:30 to 10 pm",
+      "lead": "No vehicles on Mall Road from 4:30 pm to 10 pm, says an October 2026 report; earlier rules said from 5 pm. No bike exemption reported."
+    },
+    "/routes/north-sikkim/rules/north-sikkim-toong-checkpost-cutoff": {
+      "title": "Toong (Tung) check post timing: cross by 4 pm",
+      "lead": "Cross Toong (Tung) check post by 4 pm, going up and coming down, under a Mangan district order. Carry your permit."
+    },
+    "/routes/north-sikkim/rules/sikkim-aadhaar-not-proof-of-nationality": {
+      "title": "Sikkim permit: Aadhaar not accepted, carry voter ID",
+      "lead": "Aadhaar is not accepted for Protected Area Permits (Nathu La, Zuluk, North Sikkim). Bring a passport, voter ID or driving licence, and two photos."
+    },
+    "/routes/rajasthan-desert/rules/bawliyanwala-border-pass-online": {
+      "title": "Tanot border pass: book online for Bawliyanwala",
+      "lead": "Every adult needs a pass, booked online on the Tanot temple trust website, to go past Tanot to the Bawliyanwala border point."
+    }
+  },
+  "canonical": {
+    "/routes/sahyadri-ghats/rules/mumbai-pune-expressway-two-wheelers-barred": "/routes/golden-quadrilateral/rules/mumbai-pune-expressway-no-two-wheelers"
+  },
+  "_primary_route_about": "A rule repeated on several routes is one page to Google: the others name this route's page as the main one. Picked by which copy Google showed most in the 90 days to 24 November 2026; by hand where Google had shown none. A repeated rule missing here falls back to the first route in alphabetical order.",
+  "primary_route": {
+    "rule:uttarakhand-green-cess-two-wheelers-exempt": "char-dham",
+    "rule:arunachal-inner-line-permit": "guwahati-tawang",
+    "rule:arunachal-inner-line-permit-counters": "guwahati-tawang",
+    "rule:arunachal-foreigners-protected-area-permit": "guwahati-tawang",
+    "rule:char-dham-night-travel-ban": "char-dham",
+    "rule:zanskar-no-permit-indian-citizens": "leh-padum",
+    "rule:lahaul-spiti-e-aagman-vehicle-pass": "darcha-shinku-la-padum",
+    "rule:darcha-police-registration": "manali-leh",
+    "rule:nh10-sevoke-rangpo-night-closure-2026": "darjeeling-kalimpong-sandakphu",
+    "rule:himachal-entry-toll-other-state-vehicles": "jalori-tirthan",
+    "rule:sikkim-protected-area-permit": "north-sikkim",
+    "rule:sikkim-own-motorcycle-only": "north-sikkim",
+    "rule:sikkim-rented-motorcycle-through-operator": "north-sikkim",
+    "rule:sikkim-two-wheeler-bar-proposal-2026": "east-sikkim-silk-route",
+    "rule:sikkim-150cc-minimum-claim": "north-sikkim",
+    "rule:sikkim-aadhaar-not-proof-of-nationality": "north-sikkim",
+    "rule:sikkim-motorcycle-permit-documents-claim": "north-sikkim",
+    "rule:sikkim-foreigners-restricted-area-permit": "north-sikkim",
+    "rule:sikkim-foreigners-international-driving-licence": "east-sikkim-silk-route",
+    "rule:yamuna-expressway-two-wheelers-and-winter-speed": "golden-quadrilateral",
+    "rule:national-highways-no-toll-for-two-wheelers": "kashmir-kanyakumari",
+    "rule:delhi-old-vehicles-refused-fuel": "golden-quadrilateral",
+    "rule:kashmir-tourist-spots-closed-after-april-2025": "gurez-valley",
+    "rule:bengaluru-mysuru-expressway-no-two-wheelers": "karnataka-hills",
+    "rule:kinnaur-spiti-no-permit-indian-citizens": "kinnaur",
+    "rule:kinnaur-spiti-protected-area-permit-foreign-citizens": "kinnaur",
+    "rule:kinnaur-identity-card-and-out-of-bounds-roads": "spiti-circuit",
+    "rule:atal-setu-two-wheelers-barred": "konkan-coast",
+    "rule:ladakh-no-permit-indian-citizens": "leh-padum",
+    "rule:ladakh-tourist-fee-receipt": "umling-la",
+    "rule:leh-48-hour-acclimatisation": "leh-padum",
+    "rule:ladakh-protected-area-permit-foreigners": "umling-la",
+    "rule:ladakh-outside-rental-motorcycles": "umling-la",
+    "rule:manali-green-tax": "manali-leh",
+    "rule:northeast-foreigners-protected-area-permit-2024": "manipur-mizoram",
+    "rule:ladakh-circuit-named-on-receipt": "pangong-hanle-tso-moriri",
+    "rule:changthang-army-check-posts": "umling-la",
+    "rule:hanle-dark-sky-no-high-beam": "pangong-hanle-tso-moriri"
+  }
+}

@@ -1,6 +1,7 @@
 import type { MetadataRoute } from "next";
 
-import { getIndex } from "@/lib/content";
+import { getFactRoutes, getIndex, getSearchTitles } from "@/lib/content";
+import { factCanonical } from "@/lib/search-titles";
 import { SITE_URL } from "@/lib/site";
 import { noTripsYet, routePaths } from "@/server/route-pages";
 import { getRouteView } from "@/server/route-view";
@@ -26,7 +27,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     pages.push(entry);
   };
 
-  const index = await getIndex();
+  const [index, searchTitles, factRoutes] = await Promise.all([getIndex(), getSearchTitles(), getFactRoutes()]);
   for (const summary of index.routes) {
     const view = await getRouteView(summary.slug);
     if (!view || view.route.level === "unwritten") continue;
@@ -37,6 +38,9 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       add({ url: SITE_URL + path, lastModified, changeFrequency: "weekly", priority: path === top ? 0.9 : 0.6 });
     }
     for (const fact of view.views.all) {
+      // A copy of a rule whose main page is on another route is left out: the sitemap lists only the pages Google
+      // should show.
+      if (factCanonical(fact, searchTitles, factRoutes.get(fact.id) ?? []) !== fact.href) continue;
       add({ url: SITE_URL + fact.href, lastModified, changeFrequency: "weekly", priority: 0.4 });
     }
   }

@@ -4,6 +4,7 @@ import { readFile } from "node:fs/promises";
 import path from "node:path";
 import { cache } from "react";
 
+import type { SearchTitlesFile } from "./search-titles";
 import type { SeasonFile } from "./seasons";
 
 import type {
@@ -70,6 +71,26 @@ export const getPackingList = cache(
 );
 
 export const getShop = cache(async (): Promise<ShopFile | null> => readJson<ShopFile>("site", "shop.json"));
+
+/** Hand-written search titles, and which copy of a repeated rule Google should show (data/site/search-titles.json). */
+export const getSearchTitles = cache(
+  async (): Promise<SearchTitlesFile | null> => readJson<SearchTitlesFile>("site", "search-titles.json"),
+);
+
+// Read once per server: route files only change with a new release, and every fact page needs this.
+let factRoutes: Promise<Map<string, string[]>> | null = null;
+
+/** For each rule, the routes it is on: most are on one, some (Ladakh's permits, say) on several. */
+export function getFactRoutes(): Promise<Map<string, string[]>> {
+  factRoutes ??= getAllRoutes().then((routes) => {
+    const map = new Map<string, string[]>();
+    for (const route of routes) {
+      for (const rule of route.rules) map.set(rule.id, [...(map.get(rule.id) ?? []), route.slug]);
+    }
+    return map;
+  });
+  return factRoutes;
+}
 
 export const getFactKinds = cache(async (): Promise<FactKind[]> => {
   const file = await readJson<{ kinds: FactKind[] }>("site", "fact-kinds.json");

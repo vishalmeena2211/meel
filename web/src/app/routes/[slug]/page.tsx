@@ -32,8 +32,9 @@ import { BackHead, Foot } from "@/components/shell";
 import { Callout, Empty } from "@/components/ui";
 import { AskButton } from "@/components/ask/ask-button";
 import { AskRouteRow } from "@/components/ask/ask-route-row";
-import { getApproaches, getIndex, getRouteHelp } from "@/lib/content";
+import { getApproaches, getIndex, getRouteHelp, getSearchTitles } from "@/lib/content";
 import { km, feet, plural } from "@/lib/format";
+import { routeSearchTitle } from "@/lib/search-titles";
 import { SITE_URL } from "@/lib/site";
 import { allSources } from "@/lib/sources";
 import { startersFor } from "@/lib/ask/starters";
@@ -69,8 +70,8 @@ export async function generateMetadata(props: PageProps<"/routes/[slug]">): Prom
   const description =
     `${ends}${byWords ? ` by way of ${byWords}` : ""}${length}${parts.length ? `, ${parts.join(", ")}` : ""}. ` +
     `${plural(route.counts.facts, "fact")}, each with its source.`;
-  // "by motorcycle" is what riders type into a search box, and it is what the page is about.
-  const title = `${route.name} by motorcycle`;
+  // Searched as "vizag to gandikota distance" and "manali to leh by bike": the ends, a stop and how far.
+  const title = routeSearchTitle(route, (await getSearchTitles())?.pages[`/routes/${route.slug}`]);
   const canonical = `/routes/${route.slug}`;
   return {
     title,
